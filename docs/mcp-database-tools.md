@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "MCP (Management Control Panel) Tools for Database Analysis"
 type: concept
@@ -22,6 +23,12 @@ related:
 
 ## Overview
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
+=======
+# MCP (Management Control Panel) Tools for Database Analysis
+
+## Overview
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the Quaeris_survey database used in the Limesurvey integration.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Available MCP Tools for Database Work
 
@@ -37,7 +44,11 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 }
 ```
 
+<<<<<<< HEAD
 **Use Cases for survey Database**:
+=======
+**Use Cases for Quaeris_survey Database**:
+>>>>>>> 350420cb (Check & fix styling)
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -71,7 +82,11 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 
 ### Direct Database Queries (using MySQL MCP)
 ```sql
+<<<<<<< HEAD
 -- List all survey tables in app_survey database
+=======
+-- List all survey tables in Quaeris_survey database
+>>>>>>> 350420cb (Check & fix styling)
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -113,12 +128,20 @@ Ensure database connections are properly configured in:
 ## MCP Configuration File
 Location: `~/.cursor/mcp.json`
 
+<<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the app_survey database without additional configuration.
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the Quaeris_survey database without additional configuration.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
+<<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for app_survey database)
+=======
+2. **Use proper connection** (`limesurvey` connection for Quaeris_survey database)
+>>>>>>> 350420cb (Check & fix styling)
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

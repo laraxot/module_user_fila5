@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione del Logout"
 type: concept
@@ -20,6 +21,9 @@ related:
 
 # Implementazione del Logout
 # Implementazione del Logout 
+=======
+# Implementazione del Logout
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -223,11 +227,14 @@ mount(function() {
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
+<<<<<<< HEAD
         
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
     
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });

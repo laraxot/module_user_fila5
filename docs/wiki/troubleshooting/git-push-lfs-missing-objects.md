@@ -7,6 +7,7 @@ created: 2026-07-08
 updated: 2026-07-08
 qmd: "git push LFS missing objects module User risoluzione squash rebase"
 related:
+<<<<<<< HEAD
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"
   - "./git-merge-conflict-inventory.md"
@@ -14,6 +15,11 @@ related:
   - "./phpstan-widget-property-types-1.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
+=======
+  - ./git-merge-conflict-inventory.md
+  - ../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md
+  - ../concepts/module-root-folder-violations.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Git push — oggetti LFS mancanti

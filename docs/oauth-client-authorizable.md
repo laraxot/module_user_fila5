@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "OauthClient - Authorizable e HasRoles"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # OauthClient - Authorizable e HasRoles
 
 **Riferimento**: [aurmich/sample_passport Client.php](https://github.com/aurmich/sample_passport/blob/develop/app/Models/Client.php)

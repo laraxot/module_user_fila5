@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot
 
 ## Panoramica

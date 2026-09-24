@@ -2,6 +2,7 @@
 name: XotBaseField view rule
 description: Components extending XotBaseField must not define a protected string $view; view is resolved dynamically via Spatie Queryable actions (getViewBy...).
 type: concept
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -11,6 +12,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # XotBaseField View Calculation Rule

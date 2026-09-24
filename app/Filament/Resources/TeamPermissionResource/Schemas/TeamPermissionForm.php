@@ -15,7 +15,11 @@ class TeamPermissionForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'section01' => Section::make([

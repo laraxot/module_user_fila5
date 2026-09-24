@@ -1,6 +1,7 @@
 ---
 name: user-policy-structure
 description: Policy architecture for User module vs Xot base policy
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -10,6 +11,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 # User vs Xot Policy Structure
 

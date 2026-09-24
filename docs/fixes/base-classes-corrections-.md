@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione Estensioni Classi Base - Modulo User"
 type: concept
@@ -20,6 +21,8 @@ related:
   - "./phpstanes.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -246,7 +249,11 @@ php artisan test --filter=ModelTest
    - Esempi pratici
    - Checklist per nuovi modelli
 
+<<<<<<< HEAD
 2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
+=======
+2. **`docs/fixes/base-classes-corrections-2025-10-15.md`** (QUESTO FILE)
+>>>>>>> 350420cb (Check & fix styling)
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons
@@ -315,7 +322,11 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< HEAD
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+=======
+- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> 350420cb (Check & fix styling)
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

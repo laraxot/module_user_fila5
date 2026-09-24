@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali

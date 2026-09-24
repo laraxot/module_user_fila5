@@ -13,10 +13,17 @@ class ListRoles extends XotBaseListRecords
 {
     protected static string $resource = RoleResource::class;
 
+<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
+=======
+    /**
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -28,6 +35,12 @@ class ListRoles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, \Filament\Tables\Filters\BaseFilter>
+     */
+>>>>>>> 350420cb (Check & fix styling)
     #[\Override]
     public function getTableFilters(): array
     {

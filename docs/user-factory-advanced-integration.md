@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
 type: concept
@@ -24,6 +25,11 @@ related:
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
+=======
+# UserFactory Advanced Integration - Modulo User & <nome progetto>
+
+## Post Deep-Study Analysis
+>>>>>>> 350420cb (Check & fix styling)
 
 Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integrazione UserFactory ha raggiunto un livello di eccellenza enterprise-grade con supporto completo per:
 
@@ -309,9 +315,15 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
+<<<<<<< HEAD
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+=======
+- [User Factory Integration](./user_factory_integration.md)
+- [Traits Complete Guide](./traits_complete_guide.md)
+- [BaseUser Architecture](./parental_inheritance.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -604,9 +616,15 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
+<<<<<<< HEAD
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+=======
+- [User Factory Integration](./user_factory_integration.md)
+- [Traits Complete Guide](./traits_complete_guide.md)
+- [BaseUser Architecture](./parental_inheritance.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)

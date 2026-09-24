@@ -34,9 +34,13 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 
 - La sorgente di verita' per le Memories e' sempre il wiki locale
 - Non embeddare Memories nei prompt di avvio
+<<<<<<< HEAD
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
 
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
+=======
+- Per Memories globali, consulta il [wiki root](../../../../../../docs/wiki/memories/INDEX.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Aggiungere una Nuova MEMORIES
 

@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Database\Eloquent\Model;
@@ -57,9 +65,14 @@ class CreateUserAction
         );
 
         // Return the refreshed user instance
+<<<<<<< HEAD
         /** @var UserContract $refreshedUser */
         $refreshedUser = $newlyCreatedUser->refresh();
 
         return $refreshedUser;
+=======
+        /* @var UserContract $refreshedUser */
+        return $newlyCreatedUser->refresh();
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

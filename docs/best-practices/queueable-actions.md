@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Queueable Actions Best Practices"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Queueable Actions Best Practices
 
 ## Why Queueable Actions?

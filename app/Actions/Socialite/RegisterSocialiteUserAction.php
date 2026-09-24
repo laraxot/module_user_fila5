@@ -1,11 +1,19 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  * ---
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;

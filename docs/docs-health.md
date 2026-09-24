@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Docs Health - User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Docs Health - User
 
 ## Snapshot

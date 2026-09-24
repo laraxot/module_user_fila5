@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "repos"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # repos
 
 <!-- Contenuto migrato da _docs/repos.txt -->

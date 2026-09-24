@@ -9,7 +9,10 @@ use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -24,9 +27,15 @@ use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * @property Schema $form
  * @property Schema $editProfileForm
  * @property Schema $editPasswordForm
+=======
+ * @property \Filament\Schemas\Schema $form
+ * @property \Filament\Schemas\Schema $editProfileForm
+ * @property \Filament\Schemas\Schema $editPasswordForm
+>>>>>>> 350420cb (Check & fix styling)
  */
 class PasswordExpired extends XotBasePage
 {

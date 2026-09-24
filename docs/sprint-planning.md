@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Sprint Planning"
 module: user
@@ -97,6 +98,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Sprint Planning: User Auth
 
 ## 🏁 Sprint Goal

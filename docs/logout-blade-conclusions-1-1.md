@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Conclusioni e Raccomandazioni per logout.blade.php"
 type: concept
@@ -18,15 +19,25 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< HEAD
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
 - [Logout Blade Analysis](./logout-blade-analysis.md)
 - [Convenzioni Path](./path-conventions.md)
+=======
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Sintesi dell'Analisi
 

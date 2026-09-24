@@ -6,9 +6,13 @@ confidence: medium
 created: {{date}}
 updated: {{date}}
 tags: [tag1, tag2]
+<<<<<<< HEAD
 related:
   - "./entity.md"
   - "./source.md"
+=======
+related: []
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # {{title}}

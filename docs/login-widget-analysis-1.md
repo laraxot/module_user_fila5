@@ -1,6 +1,7 @@
 ---
 module: theme
 topic: login-widget-analysis-1
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/login-widget-analysis-2.md
 related:
   - "./00-index-1.md"
@@ -14,3 +15,9 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis-2.md
+=======
+canonical: ../../../Themes/docs/shared-components/login_widget_analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login_widget_analysis.md
+>>>>>>> 350420cb (Check & fix styling)

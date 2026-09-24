@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Colli di Bottiglia e Soluzioni - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Colli di Bottiglia e Soluzioni - Modulo User
 
 ## Panoramica
@@ -429,9 +432,15 @@ class AuthLogAnalyticsService
 Implementando queste soluzioni, il modulo User potrà superare i principali colli di bottiglia e migliorare significativamente le performance dell'applicazione. È consigliabile implementare le soluzioni in modo incrementale, misurando l'impatto di ciascuna modifica per garantire miglioramenti effettivi.
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< HEAD
 - [Best Practices Filament](./filament-best-practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module-structure-2.md)
+=======
+- [Best Practices Filament](./filament_best_practices.md)
+- [Best Practices Widget](./best-practices/filament-widgets.md)
+- [Struttura Moduli](../xot/docs/module_structure.md)
+>>>>>>> 350420cb (Check & fix styling)
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../xot/docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/docs/bottlenecks.md)
@@ -458,7 +467,11 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
+<<<<<<< HEAD
 - [Struttura Moduli](../xot/project_docs/module-structure-2.md)
+=======
+- [Struttura Moduli](../xot/project_docs/module_structure.md)
+>>>>>>> 350420cb (Check & fix styling)
 * [BOTTLENECKS.md](../../../xot/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Coverage — User
 
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.
@@ -19,3 +20,29 @@ Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.
 
 Prossimo agente con DB raggiungibile: rilanciare `./vendor/bin/pest` e aggiornare
 questo file col numero reale.
+=======
+# Code Coverage: User
+
+**Lines Coverage:** N/A
+**Methods Coverage:** N/A
+**Classes Coverage:** N/A
+**Functions Coverage:** N/A
+**Test Status:** ⚠️  OTHER ERROR
+
+## Summary
+
+This module contains User functionality for the application.
+
+## Coverage Reflections
+
+- ⚠️  **Low Coverage**: The module has low test coverage, indicating potential risks in production
+- Tests are not fully executed
+- 🏗️  **Foundation Module**: User module is critical as it provides base functionality for all other modules
+- 📋 **Module Size**: Medium complexity with multiple components
+
+- 🔍 **Recommendations**: Focus on integration tests for complex workflows
+- 🔐 **Security Critical**: User management module requires comprehensive testing
+- 📋 **Module Size**: Medium complexity with multiple components
+
+- 🔍 **Recommendations**: Focus on integration tests for complex workflows
+>>>>>>> 350420cb (Check & fix styling)

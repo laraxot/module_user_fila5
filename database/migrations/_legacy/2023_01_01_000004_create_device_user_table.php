@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_H7VWUB
 
 =======
 >>>>>>> .merge_file_s2iA1M
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;

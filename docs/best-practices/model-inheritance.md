@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole di Ereditarietà dei Modelli - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Contesto**: Refactoring per garantire la corretta gerarchia di ereditarietà dei modelli

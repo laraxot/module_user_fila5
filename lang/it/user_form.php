@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/user_form.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'fields' => [
         'first_name' => ['label' => 'Nome', 'placeholder' => 'Mario', 'helper_text' => 'Il tuo nome di battesimo', 'description' => 'Nome'],

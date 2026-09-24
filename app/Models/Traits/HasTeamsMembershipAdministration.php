@@ -9,7 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 
+<<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
+=======
+>>>>>>> 350420cb (Check & fix styling)
 trait HasTeamsMembershipAdministration
 {
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool

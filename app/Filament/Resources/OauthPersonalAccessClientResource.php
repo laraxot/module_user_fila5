@@ -4,6 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\Select;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+use Filament\Tables;
+use Filament\Tables\Table;
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -26,6 +40,97 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
+<<<<<<< HEAD
+=======
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')
+                ->schema([
+                    Select::make('client_id')
+                        ->label('Client')
+                        ->relationship('client', 'name')
+                        ->required()
+                        ->searchable()
+                        ->helperText('Associated OAuth client'),
+                ])
+                ->columns(2),
+        ];
+    }
+
+    /**
+     * Get the table columns for the resource.
+     *
+     * @return array<string, Tables\Columns\Column>
+     */
+    public static function getTableColumns(): array
+    {
+        return [
+            'id' => Tables\Columns\TextColumn::make('id')
+                ->label('ID')
+                ->sortable()
+                ->searchable(),
+            'client' => Tables\Columns\TextColumn::make('client.name')
+                ->label('Client')
+                ->sortable()
+                ->searchable(),
+            'created_at' => Tables\Columns\TextColumn::make('created_at')
+                ->label('Created At')
+                ->dateTime()
+                ->sortable(),
+            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
+                ->label('Updated At')
+                ->dateTime()
+                ->sortable(),
+        ];
+    }
+
+    /**
+     * Get the table filters for the resource.
+     *
+     * @return array<string, Tables\Filters\BaseFilter>
+     */
+    public static function getTableFilters(): array
+    {
+        return [
+            'client_id' => Tables\Filters\SelectFilter::make('client_id')
+                ->label('Client')
+                ->relationship('client', 'name'),
+        ];
+    }
+
+    /**
+     * Get the table actions for the resource.
+     *
+     * @return array<string, Action>
+     */
+    public static function getTableActions(): array
+    {
+        return [
+            'edit' => EditAction::make(),
+            'delete' => DeleteAction::make(),
+        ];
+    }
+
+    /**
+     * Get the table bulk actions for the resource.
+     *
+     * @return array<string, Action|ActionGroup>
+     */
+    public static function getTableBulkActions(): array
+    {
+        return [
+            'delete' => BulkActionGroup::make([
+                DeleteBulkAction::make(),
+            ]),
+        ];
+    }
+
+    /**
+>>>>>>> 350420cb (Check & fix styling)
      * Configure the model query.
      */
     public static function getEloquentQuery(): Builder

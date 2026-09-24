@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Laravel 13 auth Composer notes"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Laravel 13 auth Composer notes
 
 ## Purpose

@@ -4,11 +4,14 @@ type: redundancy
 owner: Modules/User
 severity: high
 created: 2026-05-21
+<<<<<<< HEAD
 related:
   - "./duplicated-auth-widgets.md"
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Duplicated ProfileForm and OAuth Forms (User Module)

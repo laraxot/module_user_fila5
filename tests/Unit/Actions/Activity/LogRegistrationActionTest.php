@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Facades\DB;
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Models\User;
@@ -36,8 +40,12 @@ test('it logs registration with custom properties', function (): void {
 
     $row = DB::connection('user')->table('activity_log')->orderByDesc('id')->first();
     Assert::assertNotNull($row);
+<<<<<<< HEAD
     $properties = $row->properties;
     Assert::assertStringContainsString('newsletter', is_string($properties) ? $properties : '');
+=======
+    Assert::assertStringContainsString((string) 'newsletter', (string) (string) $row->properties);
+>>>>>>> 350420cb (Check & fix styling)
 });
 
 test('it logs registration with different user types', function (): void {

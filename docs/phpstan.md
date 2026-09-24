@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi PHPStan del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Analisi PHPStan del Modulo User
 
 ## Stato Attuale
@@ -26,22 +29,38 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 ## Problemi e Soluzioni
 
 ### Team e BaseTeam
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#team-php-e-baseteam-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#team-php-e-baseteam-php)
+>>>>>>> 350420cb (Check & fix styling)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamInvitation
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teaminvitation-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#teaminvitation-php)
+>>>>>>> 350420cb (Check & fix styling)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamUser e BasePivot
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teamuser-php-e-basepivot-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#teamuser-php-e-basepivot-php)
+>>>>>>> 350420cb (Check & fix styling)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### BaseUser
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#baseuser-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#baseuser-php)
+>>>>>>> 350420cb (Check & fix styling)
 - Stato: 🔄 In Corso
 - Problemi rimanenti:
   - Proprietà non definite

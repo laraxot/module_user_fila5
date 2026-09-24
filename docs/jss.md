@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione dei Conflitti nei File JavaScript del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema

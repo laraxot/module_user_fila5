@@ -1,27 +1,47 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 namespace Modules\User\Filament\Actions\Profile;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Model;
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Filament\Actions\Profile;
+
+use Filament\Actions\Action;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * ---.
  */
+<<<<<<< HEAD
 final class ChangeProfilePasswordAction extends XotBaseAction
+=======
+final class ChangeProfilePasswordAction extends Action
+>>>>>>> 350420cb (Check & fix styling)
 {
     protected function setUp(): void
     {
@@ -31,13 +51,18 @@ final class ChangeProfilePasswordAction extends XotBaseAction
             ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
+<<<<<<< HEAD
                 $profileData = Arr::except($record->toArray(), ['id']);
+=======
+                $profile_data = Arr::except($record->toArray(), ['id']);
+>>>>>>> 350420cb (Check & fix styling)
                 if (null === $user) {
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
                 if (null === $user) {
+<<<<<<< HEAD
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
                 }
@@ -46,6 +71,13 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                     $user->profile()->save($record);
                 }
 
+=======
+                    /** @var array<string, mixed> $profile_data */
+                    $user = $record->user()->create($profile_data);
+                }
+                // @phpstan-ignore argument.type, method.notFound
+                $user->profile()->save($record);
+>>>>>>> 350420cb (Check & fix styling)
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*
                  * @var ProfileContract $record

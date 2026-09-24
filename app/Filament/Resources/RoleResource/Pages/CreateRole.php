@@ -12,6 +12,10 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 class CreateRole extends XotBaseCreateRecord
 {
+<<<<<<< HEAD
+=======
+    // //
+>>>>>>> 350420cb (Check & fix styling)
     /** @var Collection<int, string> */
     public Collection $permissions;
 

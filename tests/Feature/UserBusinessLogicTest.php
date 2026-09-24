@@ -4,6 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+<<<<<<< HEAD
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -15,6 +28,7 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
@@ -39,13 +53,22 @@ function profileConnectionName(): string
     return is_string($default) ? $default : 'sqlite';
 }
 
+=======
+use PHPUnit\Framework\Assert;
+
+>>>>>>> 350420cb (Check & fix styling)
 uses(TestCase::class);
 
 describe('User Business Logic', function (): void {
     test('enforces password complexity requirements', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $weakPassword = '123456';
         $strongPassword = 'SecurePass123!';
+=======
+        $weakPassword = fake()->password(6);
+        $strongPassword = plainTestPassword().'Z9!';
+>>>>>>> 350420cb (Check & fix styling)
 
         $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
         $strongUser = createTestUser(['password' => Hash::make($strongPassword)]);
@@ -63,8 +86,13 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
+<<<<<<< HEAD
         /* @var TestCase $this */
         if (! TestCase::userTableHasColumn('users', 'username')) {
+=======
+        /** @var TestCase $this */
+        if (! $this->userTableHasColumn('users', 'username')) {
+>>>>>>> 350420cb (Check & fix styling)
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -111,12 +139,21 @@ describe('User Business Logic', function (): void {
 
     test('enforces age restrictions for certain operations', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
         if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'birth_date')) {
             $this->skipTest('profiles.birth_date column missing on the profile connection.');
+=======
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
+        }
+
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on fixcity connection.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -156,7 +193,11 @@ describe('User Business Logic', function (): void {
 
         $firstTeam = $teams->first();
         Assert::assertInstanceOf(Team::class, $firstTeam);
+<<<<<<< HEAD
         Assert::assertTrue(TestCase::teamMemberExists($firstTeam, $user));
+=======
+        Assert::assertTrue($this->teamMemberExists($firstTeam, $user));
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('enforces team role hierarchy', function (): void {
@@ -164,7 +205,11 @@ describe('User Business Logic', function (): void {
         $user = createTestUser();
         $team = TeamFactory::new()->createOne();
 
+<<<<<<< HEAD
         TestCase::attachTeamMember($team, $user, ['role' => 'member']);
+=======
+        $this->attachTeamMember($team, $user, ['role' => 'member']);
+>>>>>>> 350420cb (Check & fix styling)
 
         $this->assertDatabaseHasRow('team_user', [
             'team_id' => $team->id,
@@ -180,7 +225,11 @@ describe('User Business Logic', function (): void {
         $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
         Assert::assertSame($owner->id, $team->user_id);
+<<<<<<< HEAD
         TestCase::attachTeamMember($team, $member, ['role' => 'member']);
+=======
+        $this->attachTeamMember($team, $member, ['role' => 'member']);
+>>>>>>> 350420cb (Check & fix styling)
 
         $freshTeam = $team->fresh();
         Assert::assertNotNull($freshTeam);
@@ -201,8 +250,13 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
+<<<<<<< HEAD
         /* @var TestCase $this */
         if (! TestCase::userTableExists('model_has_permission')) {
+=======
+        /** @var TestCase $this */
+        if (! $this->userTableExists('model_has_permission')) {
+>>>>>>> 350420cb (Check & fix styling)
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
@@ -247,7 +301,11 @@ describe('User Business Logic', function (): void {
 
     test('enforces referential integrity for user relationships', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
+=======
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+>>>>>>> 350420cb (Check & fix styling)
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 

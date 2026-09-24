@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Fix: Duplicate Entry Error in team_user Table (DEPRECATO)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.
@@ -168,3 +171,7 @@ Quando si crea un modello pivot che usa UUID come PRIMARY KEY:
 - [BasePivot Model](../../app/Models/BasePivot.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)

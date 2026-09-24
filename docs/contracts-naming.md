@@ -5,6 +5,7 @@ created: 2026-07-12
 updated: 2026-07-12
 tags: [contract, naming, architecture, laraxot, user]
 related:
+<<<<<<< HEAD
   - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
@@ -13,6 +14,9 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - ../../../../docs/wiki/rules/module-contracts-naming-placement.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Contracts Naming & Placement in User

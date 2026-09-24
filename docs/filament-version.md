@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament Version Declaration — User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Filament Version Declaration — User
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

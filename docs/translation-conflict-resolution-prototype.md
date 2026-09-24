@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Translation Conflict Resolution Prototype"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Translation Conflict Resolution Prototype
 
 ## Overview

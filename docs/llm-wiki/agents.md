@@ -8,8 +8,12 @@ qmd: "istruzioni agenti LLM wiki modulo"
 issues: []
 discussions: []
 related:
+<<<<<<< HEAD
   - "./index.md"
   - "./log.md"
+=======
+  - ./coding-agent-manifests.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User {{TYPE^}} LLM Wiki Agent Instructions
@@ -152,6 +156,7 @@ Related:
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)
+<<<<<<< HEAD
 
 
 ---
@@ -298,3 +303,5 @@ Related:
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/agents.md)
 - [Module Documentation](../README.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)

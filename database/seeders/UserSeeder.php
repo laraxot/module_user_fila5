@@ -7,7 +7,10 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\User\Database\Factories\TeamFactory;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -180,7 +183,11 @@ class UserSeeder extends Seeder
 
     private function createTeam(string $name): Team
     {
+<<<<<<< HEAD
         $factory = TeamFactory::new();
+=======
+        $factory = \Modules\User\Database\Factories\TeamFactory::new();
+>>>>>>> 350420cb (Check & fix styling)
         /** @var Team $team */
         $team = $factory->create([
             'name' => $name,

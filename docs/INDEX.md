@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Documentation Index
 
 ## -integration
@@ -3418,6 +3419,8 @@
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module Documentation
 
 ## Overview
@@ -3460,12 +3463,21 @@ This document serves as the central index for the User module, providing guidanc
 - **Authentication Failures**: Ensure correct configuration of auth providers and middleware for user routes.
 - **Permission Conflicts**: Verify role and permission assignments to avoid access issues.
 - **Session Expiry**: Implement proper session management to handle user logout and timeouts securely.
+<<<<<<< HEAD
+=======
+- **Git "path does not have our version"**: Durante rebase, file "deleted by us" (OauthAccessToken pages). Vedi [git-path-does-not-have-our-version-fix](./git-path-does-not-have-our-version-fix.md).
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Documentation and Updates
 - Document any custom implementations or deviations from standard User module practices in the relevant documentation folder.
 - Update this index if new features or significant changes are introduced to the User module.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
+=======
+- [Composer Dependencies](./composer-dependencies.md) - Dipendenze OAuth/login in Modules/User/composer.json (mai nel root)
+- [Auth Social Login Translations](./auth-social-login-translations.md) - Traduzioni e UI pulsanti social (Google, GitHub, Microsoft)
+>>>>>>> 350420cb (Check & fix styling)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Profile Management](./PROFILE_MANAGEMENT.md)
@@ -3493,6 +3505,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 # Indice Documentazione User
 
 - [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+<<<<<<< HEAD
 # Documentation Index
 
 ## -integration
@@ -6913,3 +6926,5 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
 
+=======
+>>>>>>> 350420cb (Check & fix styling)

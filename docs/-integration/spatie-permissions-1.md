@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "spatie_permissions"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # spatie_permissions
 
 <!-- Contenuto migrato da _docs/spatie_permissions.txt -->

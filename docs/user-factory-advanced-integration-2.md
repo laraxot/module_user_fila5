@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "UserFactory Advanced Integration - Modulo User & Quaeris"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # UserFactory Advanced Integration - Modulo User & Quaeris
 
 ## Post Deep-Study Analysis 
@@ -306,9 +309,15 @@ public function run(): void
 - [Model States](../../Quaeris/docs/models/states.md)
 
 ### User Module
+<<<<<<< HEAD
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+=======
+- [User Factory Integration](./user_factory_integration.md)
+- [Traits Complete Guide](./traits_complete_guide.md)
+- [BaseUser Architecture](./parental_inheritance.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ### Root Documentation  
 - [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)

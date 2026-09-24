@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Fixes Progress - 2026-01-09"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # PHPStan Fixes Progress - 2026-01-09
 
 **Start Time**: 14:00

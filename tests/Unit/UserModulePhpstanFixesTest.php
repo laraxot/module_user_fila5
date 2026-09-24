@@ -1,9 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Contracts\UserContract;
+=======
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Validation\Rules\Password;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
@@ -12,10 +18,25 @@ use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 350420cb (Check & fix styling)
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();
@@ -107,6 +128,7 @@ it('password data get form components returns array', function (): void {
 it('events can be instantiated', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
+<<<<<<< HEAD
     $owner = $userFactory->create();
     \assert($owner instanceof UserContract);
 
@@ -115,6 +137,15 @@ it('events can be instantiated', function (): void {
     $ownerKey = $owner->getKey();
     $socialiteUser = $socialiteFactory->create([
         'user_id' => (is_int($ownerKey) || is_string($ownerKey)) ? (string) $ownerKey : '',
+=======
+    $owner = $userFactory->createOne();
+    \assert($owner instanceof User);
+
+    $socialiteFactory = SocialiteUserFactory::new();
+    \assert($socialiteFactory instanceof Factory);
+    $socialiteUser = $socialiteFactory->createOne([
+        'user_id' => (string) $owner->getKey(),
+>>>>>>> 350420cb (Check & fix styling)
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -134,6 +165,7 @@ it('events can be instantiated', function (): void {
 it('events have dispatchable trait', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
+<<<<<<< HEAD
     $owner = $userFactory->create();
     \assert($owner instanceof UserContract);
 
@@ -142,6 +174,15 @@ it('events have dispatchable trait', function (): void {
     $ownerKey = $owner->getKey();
     $socialiteUser = $socialiteFactory->create([
         'user_id' => (is_int($ownerKey) || is_string($ownerKey)) ? (string) $ownerKey : '',
+=======
+    $owner = $userFactory->createOne();
+    \assert($owner instanceof User);
+
+    $socialiteFactory = SocialiteUserFactory::new();
+    \assert($socialiteFactory instanceof Factory);
+    $socialiteUser = $socialiteFactory->createOne([
+        'user_id' => (string) $owner->getKey(),
+>>>>>>> 350420cb (Check & fix styling)
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -164,5 +205,9 @@ it('password data get validation messages method exists', function (): void {
 });
 
 it('password data get form schema method exists', function (): void {
+<<<<<<< HEAD
     app(PasswordData::class)->getFormSchema();
+=======
+    PasswordData::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
 });

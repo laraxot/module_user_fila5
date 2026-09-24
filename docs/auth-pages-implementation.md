@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -18,16 +19,25 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
+=======
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Introduzione
 
@@ -487,10 +497,17 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
+=======
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Introduzione
 

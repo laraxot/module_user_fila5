@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -132,7 +135,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ## 🔗 Collegamenti
 
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+<<<<<<< HEAD
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
+=======
+- [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 

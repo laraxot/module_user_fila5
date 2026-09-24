@@ -4,6 +4,7 @@ module: User
 confidence: high
 updated: 2026-04-20
 sources:
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -13,6 +14,11 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - ../../../app/Filament/Resources/SocialProviderResource.php
+  - ../../../resources/views/filament/widgets/auth/login.blade.php
+  - ../../../routes/socialite.php
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # socialite backoffice google setup

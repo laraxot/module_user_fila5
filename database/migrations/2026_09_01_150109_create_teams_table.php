@@ -1,18 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_ozcIZg
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 /**
  * ---.
  */
 >>>>>>> .merge_file_B7scwV
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

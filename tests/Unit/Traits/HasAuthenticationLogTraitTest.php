@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Models\AuthenticationLog;
@@ -9,6 +10,17 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
+=======
+use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * @param array<string, mixed> $attributes
@@ -25,6 +37,7 @@ function makeAuthenticationLogFor(User $user, array $attributes = []): Authentic
     ], $attributes));
     $log->save();
 
+<<<<<<< HEAD
     return $log->refresh();
 }
 
@@ -41,6 +54,24 @@ it('returns null for lastLoginAt when user has no authentication logs', function
 
 it('returns the most recent login timestamp and ip', function (): void {
     $user = TestCase::createTestUser();
+=======
+    return $log->fresh() ?? $log;
+}
+
+it('returns null for lastLoginAt when user has no authentication logs', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+
+    Assert::assertNull($user->lastLoginAt());
+    Assert::assertNull($user->lastLoginIp());
+    Assert::assertNull($user->lastSuccessfulLoginAt());
+    Assert::assertNull($user->lastSuccessfulLoginIp());
+    Assert::assertNull($user->previousLoginAt());
+    Assert::assertNull($user->previousLoginIp());
+});
+
+it('returns the most recent login timestamp and ip', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+>>>>>>> 350420cb (Check & fix styling)
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.1',
@@ -53,12 +84,21 @@ it('returns the most recent login timestamp and ip', function (): void {
         'login_successful' => true,
     ]);
 
+<<<<<<< HEAD
     expect($user->refresh()->lastLoginIp())->toBe('10.0.0.2');
     expect($user->refresh()->lastLoginAt())->not->toBeNull();
 });
 
 it('distinguishes successful logins from failed ones', function (): void {
     $user = TestCase::createTestUser();
+=======
+    Assert::assertSame('10.0.0.2', $user->fresh()->lastLoginIp());
+    Assert::assertNotNull($user->fresh()->lastLoginAt());
+});
+
+it('distinguishes successful logins from failed ones', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+>>>>>>> 350420cb (Check & fix styling)
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.3',
@@ -71,6 +111,7 @@ it('distinguishes successful logins from failed ones', function (): void {
         'login_successful' => true,
     ]);
 
+<<<<<<< HEAD
     $fresh = $user->refresh();
 
     expect($fresh->lastLoginIp())->toBe('10.0.0.4');
@@ -79,6 +120,16 @@ it('distinguishes successful logins from failed ones', function (): void {
 
 it('returns the previous login when at least two logins exist', function (): void {
     $user = TestCase::createTestUser();
+=======
+    $fresh = $user->fresh();
+
+    Assert::assertSame('10.0.0.4', $fresh->lastLoginIp());
+    Assert::assertSame('10.0.0.4', $fresh->lastSuccessfulLoginIp());
+});
+
+it('returns the previous login when at least two logins exist', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+>>>>>>> 350420cb (Check & fix styling)
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.5',
@@ -89,6 +140,7 @@ it('returns the previous login when at least two logins exist', function (): voi
         'login_at' => now()->subDay(),
     ]);
 
+<<<<<<< HEAD
     $fresh = $user->refresh();
 
     expect($fresh->previousLoginIp())->toBe('10.0.0.5');
@@ -97,11 +149,22 @@ it('returns the previous login when at least two logins exist', function (): voi
 
 it('counts consecutive days of login starting today', function (): void {
     $user = TestCase::createTestUser();
+=======
+    $fresh = $user->fresh();
+
+    Assert::assertSame('10.0.0.5', $fresh->previousLoginIp());
+    Assert::assertNotNull($fresh->previousLoginAt());
+});
+
+it('counts consecutive days of login starting today', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+>>>>>>> 350420cb (Check & fix styling)
 
     makeAuthenticationLogFor($user, ['login_at' => now()]);
     makeAuthenticationLogFor($user, ['login_at' => now()->subDay()]);
     makeAuthenticationLogFor($user, ['login_at' => now()->subDays(2)]);
 
+<<<<<<< HEAD
     expect($user->refresh()->consecutiveDaysLogin())->toBe(3);
 });
 
@@ -111,4 +174,15 @@ it('returns zero consecutive days when there is no login today', function (): vo
     makeAuthenticationLogFor($user, ['login_at' => now()->subDays(5)]);
 
     expect($user->refresh()->consecutiveDaysLogin())->toBe(0);
+=======
+    Assert::assertSame(3, $user->fresh()->consecutiveDaysLogin());
+});
+
+it('returns zero consecutive days when there is no login today', function (): void {
+    $user = Modules\User\Tests\TestCase::createTestUser();
+
+    makeAuthenticationLogFor($user, ['login_at' => now()->subDays(5)]);
+
+    Assert::assertSame(0, $user->fresh()->consecutiveDaysLogin());
+>>>>>>> 350420cb (Check & fix styling)
 });

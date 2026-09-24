@@ -31,11 +31,19 @@ class Otp extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< HEAD
      * @param object $_notifiable L'entità da notificare (modello o AnonymousNotifiable)
      *
      * @return array<int, string>
      */
     public function via(object $_notifiable): array
+=======
+     * @param mixed $_notifiable L'entità da notificare
+     *
+     * @return array<int, string>
+     */
+    public function via(mixed $_notifiable): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return ['mail']; // Puoi aggiungere anche 'database', 'slack', ecc. se vuoi supportare altri canali.
     }
@@ -63,9 +71,14 @@ class Otp extends Notification implements ShouldQueue
 
     /**
      * Get the array representation of the notification.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
      */
+=======
+     */
+    /** @return array<string, mixed> */
+>>>>>>> 350420cb (Check & fix styling)
     public function toArray(UserContract $notifiable): array
     {
         return [];

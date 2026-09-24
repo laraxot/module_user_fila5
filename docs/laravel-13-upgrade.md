@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Upgrade Laravel 13 - User 🐄✨"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Upgrade Laravel 13 - User 🐄✨
 
 ## 🎯 Visione Architetturale

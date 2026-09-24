@@ -1,6 +1,16 @@
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+=======
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
@@ -13,6 +23,13 @@
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 
+<<<<<<< HEAD
+=======
+## Introduzione
+
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di Quaeris, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+
+>>>>>>> 350420cb (Check & fix styling)
 ## Struttura delle Directory
 
 ```
@@ -157,7 +174,11 @@ laravel/Themes/One/resources/views/pages/auth/
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Hash;
     use Illuminate\Auth\Events\Registered;
+<<<<<<< HEAD
     use Modules\Xot\Contracts\UserContract;
+=======
+    use Modules\User\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
     use function Livewire\Volt\{state, rules, mount};
 
     state([
@@ -460,4 +481,8 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 
 - [Documentazione ufficiale Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+<<<<<<< HEAD
 - [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+=======
+- [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+>>>>>>> 350420cb (Check & fix styling)

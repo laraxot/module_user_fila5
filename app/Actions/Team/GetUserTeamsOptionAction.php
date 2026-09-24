@@ -11,6 +11,7 @@ class GetUserTeamsOptionAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return array<int|string, string>
      */
@@ -25,5 +26,25 @@ class GetUserTeamsOptionAction
         }
 
         return $result;
+=======
+    /** @return array<int|string, string> */
+    public function execute(): array
+    {
+        $teams = TeamUser::where('user_id', authId())->get();
+
+        /** @var array<int|string, string> $options */
+        $options = ['' => '--- Select ---'];
+
+        foreach ($teams as $teamUser) {
+            $team = $teamUser->team;
+            if (null === $team) {
+                continue;
+            }
+
+            $options[(string) $team->getKey()] = (string) $team->getAttribute('name');
+        }
+
+        return $options;
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

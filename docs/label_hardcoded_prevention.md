@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Prevenzione ->label() Hardcoded - Modulo User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -195,13 +198,23 @@ return [
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../docs/best-practices.md)
+=======
+- [Translation Standards](../../../docs/translation-standards.md)
+- [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../../docs/best-practices.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
+<<<<<<< HEAD
 **✅ Status**: Prevenzione attiva e monitorata
+=======
+**✅ Status**: Prevenzione attiva e monitorata
+>>>>>>> 350420cb (Check & fix styling)

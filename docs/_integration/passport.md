@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: passport
@@ -14,8 +15,15 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # passport
 
 <!-- Contenuto migrato da _docs/passport.txt -->
 
 https://medium.com/@mrcyna/laravel-passport-and-microservice-architecture-ef6be7fcc79f
+<<<<<<< HEAD
+=======
+
+See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
+>>>>>>> 350420cb (Check & fix styling)

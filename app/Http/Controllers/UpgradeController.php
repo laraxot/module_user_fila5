@@ -1,23 +1,40 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * --.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 class UpgradeController extends Controller
 {
     public function __invoke(Request $_request): void
     {
+<<<<<<< HEAD
         $user_class = XotData::make()->getUserClass();
         $users = $user_class::get();
         /* da id a uuid
+=======
+        /* da id a uuid
+         * $user_class = XotData::make()->getUserClass();
+         * $users = $user_class::get();
+>>>>>>> 350420cb (Check & fix styling)
          * foreach ($users as $user) {
          * if (strlen(is_string($user) ? $user : (string) $user->) >= 32) { // gia' convertito
          * continue;

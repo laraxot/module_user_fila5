@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_2ExVM5
 
 =======
 >>>>>>> .merge_file_6ImDLC
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://laravel.com/docs/11.x/pennant
  */

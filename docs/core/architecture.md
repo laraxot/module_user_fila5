@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architettura Modulo User"
 type: concept
@@ -10,6 +11,8 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Architettura Modulo User
 
 ## 🏗️ Panoramica Architetturale

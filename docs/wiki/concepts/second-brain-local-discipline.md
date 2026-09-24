@@ -7,6 +7,7 @@ created: 2026-06-05
 updated: 2026-06-05
 qmd: "user second brain stub canonical xot harness hackernoon llm-wiki"
 issues:
+<<<<<<< HEAD
 discussions:
 related:
   - "./ai-harness-user-discipline.md"
@@ -17,6 +18,17 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+  - ../../../../Xot/docs/wiki/concepts/second-brain-local-discipline.md
+  - ../../../../docs/wiki/concepts/ai-harness-module-discipline.md
+  - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../../bashscripts/tools/prompts/llm-wiki.txt
+  - ./ai-harness-user-discipline.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Contratto wiki locale — stub User

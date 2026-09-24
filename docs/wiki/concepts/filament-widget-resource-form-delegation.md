@@ -3,6 +3,7 @@ title: "Filament widget — delega schema a *ResourceForm"
 type: concept
 confidence: high
 created: 2026-06-04
+<<<<<<< HEAD
 updated: 2026-07-24
 tags: [user, filament, dry, register, widget, auth-forms, schema]
 related:
@@ -16,16 +17,29 @@ related:
   - "./folio-pages-owner-pattern.md"
   - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
   - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
+=======
+updated: 2026-07-13
+tags: [user, filament, dry, register, widget, auth-forms]
+related:
+  - filament-widget-no-validate-form.md
+  - ../../../../Fixcity/docs/wiki/concepts/ticketform-pattern-reference.md
+  - ../../../../../Modules/Xot/docs/wiki/concepts/xotbase-resourceform-zen-pattern.md
+  - register-widget.md
+  - ../rules/filament-widget-resource-form.mdc
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Widget Filament → schema in `*Form` (SSoT)
 
+<<<<<<< HEAD
 Allineato a Filament 5:
 - [Schema](https://filamentphp.com/docs/5.x/components/schema) → `HasSchemas`, render `{{ $this->{method} }}`
 - [Form](https://filamentphp.com/docs/5.x/components/form) → widget `XotBaseSchemaWidget`, submit `$this->form->getState()`, Blade `<form wire:submit>` + `{{ $this->form }}`
 - Chiusura: `php artisan view:cache`
 - Canon: [schema](../../../../../../docs/wiki/concepts/filament-v5-schema-in-blade.md) · [form](../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md)
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## Regola
 
 I widget FO (auth, wizard, registrazione) **non** definiscono campi `TextInput` inline. Delegano a `Modules\{Modulo}\Filament\Resources\{Resource}\Schemas\{Entity}Form`.

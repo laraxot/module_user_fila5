@@ -1,6 +1,10 @@
 import { test, expect } from '@playwright/test';
 
+<<<<<<< HEAD
 const STRONG_PASSWORD = 'Password1!Secure';
+=======
+const STRONG_PASSWORD = process.env.E2E_TEST_PASSWORD ?? `Pw${Date.now()}!Aa1`;
+>>>>>>> 350420cb (Check & fix styling)
 
 test.describe('FO auth register e2e', () => {
     test.beforeEach(async ({ page }) => {

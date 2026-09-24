@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Directory Structure Rules"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Directory Structure Rules
 
 Per il modulo User valgono queste regole:

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - User Research"
 module: user
@@ -114,6 +115,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Research: User Module
 
 ## 🔬 Research Goals

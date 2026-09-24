@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione coerente di roles, permissions e guard_name"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

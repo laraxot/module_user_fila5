@@ -16,7 +16,11 @@ FullCalendar Scheduler requires a valid license key for use in production enviro
    - Removes the red banner
    - Available for purchase from [FullCalendar's pricing page](https://fullcalendar.io/pricing/)
 
+<<<<<<< HEAD
 ## Configuration in SaluteOra
+=======
+## Configuration in Quaeris
+>>>>>>> 350420cb (Check & fix styling)
 
 ### Setting the License Key
 
@@ -78,4 +82,8 @@ For license-related issues, contact FullCalendar support:
 
 ## Version Compatibility
 
+<<<<<<< HEAD
 Ensure your license key is compatible with the version of FullCalendar Scheduler you're using. Check the [changelog](https://fullcalendar.io/changelog/) for version-specific requirements.
+=======
+Ensure your license key is compatible with the version of FullCalendar Scheduler you're using. Check the [changelog](https://fullcalendar.io/changelog/) for version-specific requirements.
+>>>>>>> 350420cb (Check & fix styling)

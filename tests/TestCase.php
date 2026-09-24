@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
 use Filament\Panel;
@@ -13,30 +14,50 @@ use Filament\Schemas\Components\Section;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+use Filament\Facades\Filament;
+use Filament\Panel;
+use Filament\Widgets\Widget;
+use Illuminate\Console\Command;
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\Device;
+<<<<<<< HEAD
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
+=======
+use Modules\User\Models\Team;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
+<<<<<<< HEAD
+=======
+use Modules\User\Tests\Concerns\UserTestCaseOAuthTeamConcern;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
+<<<<<<< HEAD
 use function Safe\json_encode;
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * Base test case for User module.
  *
@@ -65,6 +86,7 @@ use function Safe\json_encode;
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
+<<<<<<< HEAD
 
     protected function setUp(): void
     {
@@ -79,18 +101,31 @@ abstract class TestCase extends XotBaseTestCase
 
         parent::setUp();
     }
+=======
+    use UserTestCaseOAuthTeamConcern;
+>>>>>>> 350420cb (Check & fix styling)
 
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
+<<<<<<< HEAD
     protected function getPackageProviders(Application $app): array
     {
+=======
+    protected function getPackageProviders(mixed $app): array
+    {
+        if (! $app instanceof Application) {
+            throw new \InvalidArgumentException('Expected Illuminate\Foundation\Application.');
+        }
+
+>>>>>>> 350420cb (Check & fix styling)
         return [
             ...parent::getPackageProviders($app),
             UserServiceProvider::class,
         ];
     }
 
+<<<<<<< HEAD
     public static ?User $user = null;
 
     public static ?User $owner = null;
@@ -122,6 +157,58 @@ abstract class TestCase extends XotBaseTestCase
 
     /** @var list<string> */
     protected $connectionsToTransact = ['mysql', 'user'];
+=======
+    public ?User $user = null;
+
+    public ?User $owner = null;
+
+    public ?User $member = null;
+
+    public ?User $admin = null;
+
+    public ?User $baseUser = null;
+
+    public ?Team $team = null;
+
+    public ?Tenant $tenant1 = null;
+
+    public ?Tenant $tenant2 = null;
+
+    public ?Device $device = null;
+
+    public ?Google2FA $google2fa = null;
+
+    public ?Command $command = null;
+
+    public ?CreateUser $createUserPage = null;
+
+    public ?ListUsers $listUsersPage = null;
+
+    /** @var Collection<int, User>|null */
+    public ?Collection $users = null;
+
+    /** @var list<string> */
+    protected $connectionsToTransact = ['sqlite', 'user'];
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+    }
+>>>>>>> 350420cb (Check & fix styling)
 
     public function setupFilamentAdminPanel(): void
     {
@@ -136,121 +223,217 @@ abstract class TestCase extends XotBaseTestCase
         Filament::setCurrentPanel($panel);
     }
 
+<<<<<<< HEAD
     public static function freshUser(User $user): User
     {
         $fresh = $user->fresh();
         if (null === $fresh) {
             Assert::fail('User model could not be refreshed.');
+=======
+    public function freshUser(User $user): User
+    {
+        $fresh = $user->fresh();
+        if (null === $fresh) {
+            $this->fail('User model could not be refreshed.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $fresh;
     }
 
+<<<<<<< HEAD
     public static function requireUser(): User
     {
         $user = self::$user;
         if (null === $user) {
             Assert::fail('User test property is not initialized.');
+=======
+    public function requireUser(): User
+    {
+        $user = $this->user;
+        if (null === $user) {
+            $this->fail('User test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $user;
     }
 
+<<<<<<< HEAD
     public static function requireOwner(): User
     {
         $owner = self::$owner;
         if (null === $owner) {
             Assert::fail('Owner test property is not initialized.');
+=======
+    public function requireOwner(): User
+    {
+        $owner = $this->owner;
+        if (null === $owner) {
+            $this->fail('Owner test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $owner;
     }
 
+<<<<<<< HEAD
     public static function requireMember(): User
     {
         $member = self::$member;
         if (null === $member) {
             Assert::fail('Member test property is not initialized.');
+=======
+    public function requireMember(): User
+    {
+        $member = $this->member;
+        if (null === $member) {
+            $this->fail('Member test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $member;
     }
 
+<<<<<<< HEAD
     public static function requireAdmin(): User
     {
         $admin = self::$admin;
         if (null === $admin) {
             Assert::fail('Admin test property is not initialized.');
+=======
+    public function requireAdmin(): User
+    {
+        $admin = $this->admin;
+        if (null === $admin) {
+            $this->fail('Admin test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $admin;
     }
 
+<<<<<<< HEAD
     public static function requireBaseUser(): User
     {
         $baseUser = self::$baseUser;
         if (null === $baseUser) {
             Assert::fail('BaseUser test property is not initialized.');
+=======
+    public function requireBaseUser(): User
+    {
+        $baseUser = $this->baseUser;
+        if (null === $baseUser) {
+            $this->fail('BaseUser test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $baseUser;
     }
 
+<<<<<<< HEAD
     public static function requireTeam(): Team
     {
         $team = self::$team;
         if (null === $team) {
             Assert::fail('Team test property is not initialized.');
+=======
+    public function requireTeam(): Team
+    {
+        $team = $this->team;
+        if (null === $team) {
+            $this->fail('Team test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $team;
     }
 
+<<<<<<< HEAD
     public static function requireTenant1(): Tenant
     {
         $tenant1 = self::$tenant1;
         if (null === $tenant1) {
             Assert::fail('Tenant1 test property is not initialized.');
+=======
+    public function requireTenant1(): Tenant
+    {
+        $tenant1 = $this->tenant1;
+        if (null === $tenant1) {
+            $this->fail('Tenant1 test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $tenant1;
     }
 
+<<<<<<< HEAD
     public static function requireTenant2(): Tenant
     {
         $tenant2 = self::$tenant2;
         if (null === $tenant2) {
             Assert::fail('Tenant2 test property is not initialized.');
+=======
+    public function requireTenant2(): Tenant
+    {
+        $tenant2 = $this->tenant2;
+        if (null === $tenant2) {
+            $this->fail('Tenant2 test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $tenant2;
     }
 
+<<<<<<< HEAD
     public static function requireGoogle2fa(): Google2FA
     {
         $google2fa = self::$google2fa;
         if (null === $google2fa) {
             Assert::fail('Google2FA test property is not initialized.');
+=======
+    public function requireGoogle2fa(): Google2FA
+    {
+        $google2fa = $this->google2fa;
+        if (null === $google2fa) {
+            $this->fail('Google2FA test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $google2fa;
     }
 
+<<<<<<< HEAD
     public static function requireDevice(): Device
     {
         $device = self::$device;
         if (null === $device) {
             Assert::fail('Device test property is not initialized.');
+=======
+    public function requireDevice(): Device
+    {
+        $device = $this->device;
+        if (null === $device) {
+            $this->fail('Device test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $device;
     }
 
+<<<<<<< HEAD
     public static function requireCommand(): Command
     {
         $command = self::$command;
         if (null === $command) {
             Assert::fail('Command test property is not initialized.');
+=======
+    public function requireCommand(): Command
+    {
+        $command = $this->command;
+        if (null === $command) {
+            $this->fail('Command test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $command;
@@ -283,21 +466,37 @@ abstract class TestCase extends XotBaseTestCase
         return $widget;
     }
 
+<<<<<<< HEAD
     public static function requireCreateUserPage(): CreateUser
     {
         $createUserPage = self::$createUserPage;
         if (null === $createUserPage) {
             Assert::fail('CreateUser page test property is not initialized.');
+=======
+    public function requireCreateUserPage(): CreateUser
+    {
+        $createUserPage = $this->createUserPage;
+        if (null === $createUserPage) {
+            $this->fail('CreateUser page test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $createUserPage;
     }
 
+<<<<<<< HEAD
     public static function requireListUsersPage(): ListUsers
     {
         $listUsersPage = self::$listUsersPage;
         if (null === $listUsersPage) {
             Assert::fail('ListUsers page test property is not initialized.');
+=======
+    public function requireListUsersPage(): ListUsers
+    {
+        $listUsersPage = $this->listUsersPage;
+        if (null === $listUsersPage) {
+            $this->fail('ListUsers page test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $listUsersPage;
@@ -306,21 +505,34 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @return Collection<int, User>
      */
+<<<<<<< HEAD
     public static function requireUsers(): Collection
     {
         $users = self::$users;
         if (null === $users) {
             Assert::fail('Users test property is not initialized.');
+=======
+    public function requireUsers(): Collection
+    {
+        $users = $this->users;
+        if (null === $users) {
+            $this->fail('Users test property is not initialized.');
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         return $users;
     }
 
+<<<<<<< HEAD
     public static function userTableHasColumn(string $table, string $column): bool
+=======
+    public function userTableHasColumn(string $table, string $column): bool
+>>>>>>> 350420cb (Check & fix styling)
     {
         return Schema::connection('user')->hasColumn($table, $column);
     }
 
+<<<<<<< HEAD
     public static function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
     {
         if (! self::userTableHasColumn($table, $column)) {
@@ -329,10 +541,21 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     public static function userTableExists(string $table): bool
+=======
+    public function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
+    {
+        if (! $this->userTableHasColumn($table, $column)) {
+            $this->skipTest('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+        }
+    }
+
+    public function userTableExists(string $table): bool
+>>>>>>> 350420cb (Check & fix styling)
     {
         return Schema::connection('user')->hasTable($table);
     }
 
+<<<<<<< HEAD
     public static function skipUnlessUserTable(string $table, string $reason = ''): void
     {
         if (! self::userTableExists($table)) {
@@ -381,11 +604,62 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     public static function skipLegacyRedirectPersistence(): void
+=======
+    public function skipUnlessUserTable(string $table, string $reason = ''): void
+    {
+        if (! $this->userTableExists($table)) {
+            $this->skipTest('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+        }
+    }
+
+    public function skipUnlessTenantColumn(string $column, string $reason = ''): void
+    {
+        $this->skipUnlessUserColumn('tenants', $column, $reason);
+    }
+
+    public function skipUnlessUsersTableReady(string $reason = ''): void
+    {
+        $this->skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+    }
+
+    public function skipUnlessRoleAssignmentSupported(string $reason = ''): void
+    {
+        $table = $this->permissionRolePivotTable();
+        $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+    }
+
+    public function skipUnlessDirectPermissionSupported(string $reason = ''): void
+    {
+        $table = $this->permissionPivotTable();
+        $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+    }
+
+    public function skipUnlessUserSoftDeletes(string $reason = ''): void
+    {
+        if (! in_array(
+            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            \class_uses_recursive(User::class),
+            true
+        )) {
+            $this->skipTest('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
+        }
+    }
+
+    public function skipUnlessTeamUsersRelationSupported(): void
+    {
+        if (! $this->userTableHasColumn('team_user', 'permissions')) {
+            $this->skipTest('team_user.permissions column missing — Team::users() pivot not loadable.');
+        }
+    }
+
+    public function skipLegacyRedirectPersistence(): void
+>>>>>>> 350420cb (Check & fix styling)
     {
         if (
             Schema::connection('user')->hasColumn('oauth_clients', 'redirect')
             && Schema::connection('user')->hasColumn('oauth_clients', 'redirect_uris')
         ) {
+<<<<<<< HEAD
             Assert::markTestSkipped('oauth_clients legacy redirect columns require redirect_uris sync not performed by Create*ClientAction.');
         }
     }
@@ -572,4 +846,9 @@ abstract class TestCase extends XotBaseTestCase
 
         return $invitation->fresh() ?? $invitation;
     }
+=======
+            $this->skipTest('oauth_clients legacy redirect columns require redirect_uris sync not performed by Create*ClientAction.');
+        }
+    }
+>>>>>>> 350420cb (Check & fix styling)
 }

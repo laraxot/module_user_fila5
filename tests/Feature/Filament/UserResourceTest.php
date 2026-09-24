@@ -17,17 +17,29 @@ beforeEach(function (): void {
     /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
+<<<<<<< HEAD
     TestCase::$admin = UserFactory::new()->createOne([
+=======
+    $this->admin = UserFactory::new()->createOne([
+>>>>>>> 350420cb (Check & fix styling)
         'type' => UserType::MasterAdmin,
         'name' => 'Admin Test',
         'email' => 'admin-'.uniqid('', true).'@example.com',
     ]);
+<<<<<<< HEAD
     TestCase::$user = UserFactory::new()->createOne([
+=======
+    $this->user = UserFactory::new()->createOne([
+>>>>>>> 350420cb (Check & fix styling)
         'name' => 'User Test',
         'email' => 'user-'.uniqid('', true).'@example.com',
     ]);
 
+<<<<<<< HEAD
     $this->actingAs(TestCase::requireAdmin());
+=======
+    $this->actingAs($this->requireAdmin());
+>>>>>>> 350420cb (Check & fix styling)
 });
 
 describe('User Resource', function (): void {

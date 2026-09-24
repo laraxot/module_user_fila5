@@ -5,11 +5,15 @@ type: reference
 slug: git-reset
 description: 'git submodule add -f $url $path done'
 tags: [migrato-da-txt, user]
+<<<<<<< HEAD
 <<<<<<< .merge_file_RAZMB8
 converted_from: git-reset.txt
 =======
 converted_from: git_reset.txt
 >>>>>>> .merge_file_P1rQZ6
+=======
+converted_from: git-reset.txt
+>>>>>>> 350420cb (Check & fix styling)
 created: 2026-08-24
 updated: 2026-08-24
 ---

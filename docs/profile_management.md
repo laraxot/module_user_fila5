@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Profile Management in Laravel Modules"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -74,9 +77,16 @@ This document outlines the best practices for managing user profiles within a La
 
 ## Links to Related Documentation
 - [User Module Index](./index.md)
+<<<<<<< HEAD
 
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
+=======
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth_pages_implementation.md)
+- [Routing Best Practices](./routing_best_practices.md)
+- [Session Management](./session_management.md)
+>>>>>>> 350420cb (Check & fix styling)

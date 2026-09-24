@@ -126,6 +126,7 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Data**: 2025-01-15
 **Versione**: 1.0
 **Stato**: Completato
+<<<<<<< HEAD
 ---
 module: theme
 topic: translation-syntax-fixes-
@@ -142,3 +143,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

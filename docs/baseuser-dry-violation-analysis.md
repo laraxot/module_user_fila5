@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "BaseUser - Analisi Violazione Principio DRY"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # BaseUser - Analisi Violazione Principio DRY
 
 **Data**: 15 Ottobre 2025  

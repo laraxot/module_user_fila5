@@ -6,6 +6,7 @@ created: 2026-06-12
 updated: 2026-06-12
 qmd: "User module local mysql marco fixcity_user provision migrate login"
 issues:
+<<<<<<< HEAD
 discussions:
 related:
   - "./ai-harness-user-discipline.md"
@@ -16,6 +17,14 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/364"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/365"
+related:
+  - ../../../../../../bashscripts/tools/provision-local-mysql.sh
+  - ../../../../Xot/docs/wiki/concepts/env-testing-parity-copy-env.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Connessione `user` e login FO

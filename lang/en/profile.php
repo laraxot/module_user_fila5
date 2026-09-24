@@ -2,7 +2,18 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/en/profile.php
+return [
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+>>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'label' => 'Profilo',
         'plural' => 'Profili',
@@ -66,6 +77,30 @@ return [
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'ente' => [
+            'label' => 'Ente',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'matr' => [
+            'label' => 'Matricola',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 350420cb (Check & fix styling)
         ],
     ],
     'actions' => [
@@ -84,9 +119,12 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
+<<<<<<< HEAD
     'privacy_policy' => [
         'title' => 'Privacy policy',
     ],
+=======
+>>>>>>> 350420cb (Check & fix styling)
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "RegistrationWidget FileUpload Fix"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

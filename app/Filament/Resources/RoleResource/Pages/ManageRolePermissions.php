@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Actions\AssociateAction;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\CreateAction;
@@ -15,6 +18,7 @@ use Filament\Actions\DissociateAction;
 use Filament\Actions\DissociateBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -27,14 +31,26 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
  * mai un override di `table()` per intero.
  */
 class ManageRolePermissions extends XotBaseManageRelatedRecords
+=======
+use Filament\Resources\Pages\ManageRelatedRecords;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+use Modules\User\Filament\Resources\RoleResource;
+
+class ManageRolePermissions extends ManageRelatedRecords
+>>>>>>> 350420cb (Check & fix styling)
 {
     protected static string $resource = RoleResource::class;
 
     protected static string $relationship = 'permissions';
 
+<<<<<<< HEAD
     /**
      * @return array<int, TextInput>
      */
+=======
+    /** @return array<int|string, mixed> */
+>>>>>>> 350420cb (Check & fix styling)
     public function getFormSchema(): array
     {
         return [
@@ -42,6 +58,7 @@ class ManageRolePermissions extends XotBaseManageRelatedRecords
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Column>
      */
@@ -94,5 +111,30 @@ class ManageRolePermissions extends XotBaseManageRelatedRecords
     public function getTableFilters(): array
     {
         return [];
+=======
+    public function table(Table $table): Table
+    {
+        return $table
+            ->recordTitleAttribute('name')
+            ->columns([
+                TextColumn::make('name'),
+            ])
+            ->filters([])
+            ->headerActions([
+                CreateAction::make(),
+                AssociateAction::make(),
+            ])
+            ->recordActions([
+                EditAction::make(),
+                DissociateAction::make(),
+                DeleteAction::make(),
+            ])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DissociateBulkAction::make(),
+                    DeleteBulkAction::make(),
+                ]),
+            ]);
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

@@ -33,6 +33,7 @@ Within the list or view pages of a client, you can:
 ## Token Management
 
 - **Revoke All for User**: Available in `OauthAccessTokenResource`. Allows an administrator to revoke all active tokens for a specific user, effectively forcing a logout across all devices.
+<<<<<<< HEAD
 ---
 module: theme
 topic: passport-admin-actions
@@ -49,3 +50,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-admin-actions.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

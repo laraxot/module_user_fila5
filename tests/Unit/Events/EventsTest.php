@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 use Modules\User\Events\Login;
@@ -12,10 +16,16 @@ use Modules\User\Events\UserNotAllowed;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 test('Login event can be instantiated', function () {
     $socialiteUser = SocialiteUser::query()->first() ?? new SocialiteUser([

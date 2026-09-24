@@ -18,11 +18,21 @@ class AssignModuleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:assign-module';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Assign or revoke modules to/from user';
 

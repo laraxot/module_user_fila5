@@ -2,6 +2,7 @@
 module: theme
 topic: redundancy-fixes-january-1
 canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january-2026.md
+<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -11,6 +12,8 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january-2026.md

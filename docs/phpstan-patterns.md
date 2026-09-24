@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Patterns - User Module"
 type: pattern
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # PHPStan Level 10 Patterns - User Module
 
 **Last Updated**: 2026-02-16  

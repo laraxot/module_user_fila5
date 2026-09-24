@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione dei Server MCP con il Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Integrazione dei Server MCP con il Modulo User
 
 ## Panoramica

@@ -82,12 +82,19 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     ];
 
     /**
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, Model>
+=======
+     * Get the owner of the team.
+     *
+     * @return BelongsTo<Model&UserContract, $this>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function owner(): BelongsTo
     {
         $xotData = XotData::make();
+<<<<<<< HEAD
         /** @var class-string<Model> */
         $user_class = $xotData->getUserClass();
 
@@ -95,6 +102,12 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         $relation = $this->belongsTo($user_class, 'user_id');
 
         return $relation;
+=======
+        /** @var class-string<Model&UserContract> $user_class */
+        $user_class = $xotData->getUserClass();
+
+        return $this->belongsTo($user_class, 'user_id');
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -105,6 +118,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function allUsers(): Collection
     {
+<<<<<<< HEAD
         if (! $this->owner instanceof Model || ! $this->owner instanceof UserContract) {
             return $this->users;
         }
@@ -114,11 +128,25 @@ abstract class BaseTeam extends BaseModel implements TeamContract
 
     /**
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+=======
+        if (! $this->owner instanceof User) {
+            return collect($this->users);
+        }
+
+        return collect($this->users)->merge([$this->owner]);
+    }
+
+    /**
+     * Get all of the users that belong to the team.
+     *
+     * @return BelongsToMany<Model&UserContract, $this, TeamUser, 'pivot'>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function users(): BelongsToMany
     {
         $xotData = XotData::make();
+<<<<<<< HEAD
         /** @var class-string<Model> */
         $userClass = $xotData->getUserClass();
 
@@ -128,6 +156,14 @@ abstract class BaseTeam extends BaseModel implements TeamContract
             ->withPivot(['role', 'permissions']);
 
         return $relation;
+=======
+        /** @var class-string<Model&UserContract> $userClass */
+        $userClass = $xotData->getUserClass();
+
+        return $this->belongsToManyX($userClass)
+            ->using(TeamUser::class)
+            ->withPivot(['role', 'permissions']);
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -141,7 +177,13 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
+<<<<<<< HEAD
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+=======
+     * Ottiene tutti i membri del team (alias di users).
+     *
+     * @return BelongsToMany<Model&UserContract, $this, TeamUser, 'pivot'>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function members(): BelongsToMany
@@ -178,7 +220,11 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function hasUserWithEmail(string $email): bool
     {
+<<<<<<< HEAD
         return $this->allUsers()->contains(static function (Model&UserContract $user) use ($email): bool {
+=======
+        return $this->allUsers()->contains(static function (UserContract $user) use ($email): bool {
+>>>>>>> 350420cb (Check & fix styling)
             return ($user->email ?? null) === $email;
         });
     }
@@ -198,15 +244,25 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
+<<<<<<< HEAD
      * @return HasMany<TeamInvitation, Model>
+=======
+     * Ottiene tutti gli inviti utente pendenti per il team.
+     *
+     * @return HasMany<TeamInvitation, $this>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function teamInvitations(): HasMany
     {
+<<<<<<< HEAD
         /** @var HasMany<TeamInvitation, Model> $relation */
         $relation = $this->hasMany(TeamInvitation::class);
 
         return $relation;
+=======
+        return $this->hasMany(TeamInvitation::class);
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**

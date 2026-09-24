@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Policy Inheritance Strategy in Laraxot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Policy Inheritance Strategy in Laraxot
 
 ## REGOLA PERMANENTE: Gerarchia corretta delle Policy Base

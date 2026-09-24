@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo
@@ -283,6 +286,7 @@ per garantire che:
 6. La connessione è **`'user'`** (non `mysql` generico) per le tabelle del modulo User?
 
 Se una delle risposte è "no", la migration **non rispetta la filosofia Laraxot** e va corretta prima di eseguire `composer go` / `php artisan migrate`.
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-best-practices
@@ -299,3 +303,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-best-practices-Modules.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Composer Dependencies - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Composer Dependencies - Modulo User
 
 ## Regola Fondamentale

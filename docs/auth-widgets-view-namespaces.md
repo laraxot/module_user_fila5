@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Widget di Autenticazione: Namespace delle View"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**

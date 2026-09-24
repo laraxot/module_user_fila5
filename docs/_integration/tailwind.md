@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "tailwind"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # tailwind
 
 <!-- Contenuto migrato da _docs/tailwind.txt -->

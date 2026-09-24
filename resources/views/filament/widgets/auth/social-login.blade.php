@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> 350420cb (Check & fix styling)
 {{--
     SocialLoginWidget: pulsanti OAuth riutilizzabili (Google, Microsoft, GitHub).
     CRITICO: Livewire richiede SEMPRE un root tag HTML con contenuto.
@@ -25,7 +28,11 @@ declare(strict_types=1);
             </div>
             <div class="relative flex justify-center text-sm">
                 <span class="bg-white px-4 text-slate-400 italic">
+<<<<<<< HEAD
                     {{ __('user::auth.login.or_continue_with.text') }}
+=======
+                    {{ __('user::auth.login.or_continue_with') }}
+>>>>>>> 350420cb (Check & fix styling)
                 </span>
             </div>
         </div>
@@ -37,7 +44,11 @@ declare(strict_types=1);
                 >
                     <x-filament::icon icon="ui-google" class="w-5 h-5 flex-shrink-0" />
                     <span class="font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
+<<<<<<< HEAD
                         {{ __('user::auth.login.google.text') }}
+=======
+                        {{ __('user::auth.login.google') }}
+>>>>>>> 350420cb (Check & fix styling)
                     </span>
                 </a>
             @endif
@@ -48,7 +59,11 @@ declare(strict_types=1);
                 >
                     <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
                     <span class="font-medium text-white transition-colors">
+<<<<<<< HEAD
                         {{ __('user::auth.login.microsoft.text') }}
+=======
+                        {{ __('user::auth.login.microsoft') }}
+>>>>>>> 350420cb (Check & fix styling)
                     </span>
                 </a>
             @endif
@@ -59,7 +74,11 @@ declare(strict_types=1);
                 >
                     <x-filament::icon icon="ui-brands.github" class="w-5 h-5 flex-shrink-0 text-white" />
                     <span class="font-medium text-white transition-colors">
+<<<<<<< HEAD
                         {{ __('user::auth.login.github.text') }}
+=======
+                        {{ __('user::auth.login.github') }}
+>>>>>>> 350420cb (Check & fix styling)
                     </span>
                 </a>
             @endif

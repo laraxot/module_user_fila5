@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Ottimizzazioni Super DRY + KISS - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica

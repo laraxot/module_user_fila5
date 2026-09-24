@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Product Roadmap
 
 **Module:** User  
@@ -128,6 +129,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User - Product Roadmap
 
 > Documento vivente. Modulo.

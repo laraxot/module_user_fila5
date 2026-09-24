@@ -11,6 +11,12 @@ use Illuminate\Database\Seeder;
  */
 class UserDatabaseSeeder extends Seeder
 {
+<<<<<<< HEAD
+=======
+    /**
+     * Run the database seeds.
+     */
+>>>>>>> 350420cb (Check & fix styling)
     public function run(): void
     {
         if (null !== $this->command) {

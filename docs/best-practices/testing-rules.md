@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Rules Summary"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

@@ -1,15 +1,25 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Console\Commands\AssignRoleCommand;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Console\Commands\CreateTeamCommand;
 use Modules\User\Console\Commands\CreateTenantCommand;
 use Modules\User\Console\Commands\SuperAdminCommand;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 test('AssignRoleCommand can be instantiated', function () {
     try {

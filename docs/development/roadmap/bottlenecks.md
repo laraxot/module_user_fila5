@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Colli di Bottiglia - Modulo User"
 type: concept
@@ -11,6 +12,8 @@ related:
   - "./2fa.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Colli di Bottiglia - Modulo User
 
 ## 1. Autenticazione 2FA [70%]

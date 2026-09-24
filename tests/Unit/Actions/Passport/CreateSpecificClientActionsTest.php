@@ -1,14 +1,25 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+use Mockery;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Models\OauthClient;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 describe('Create specific passport client actions', function (): void {
     afterEach(function (): void {

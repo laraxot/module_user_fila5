@@ -4,6 +4,7 @@ type: "rule"
 tags: [user, context-mode, atomic-wiki, filament-translations]
 created: 2026-05-12
 updated: 2026-05-12
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -13,6 +14,8 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User Module — Context-Mode Discipline

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole per la Verifica dei Componenti Blade"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

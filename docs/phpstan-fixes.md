@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: concept
@@ -29,13 +30,54 @@ related:
 **Errori critici risolti**: 7 (syntax errors)
 
 ---
+=======
+# User Module - PHPStan Fixes Session 2025-10-01
+
+**Last Updated**: 2026-07-07  
+**Status**: ✅ Zero Errors (residual: unmatched global ignore pattern, see below)  
+**PHPStan Level**: max
+
+**Data correzione (sessione iniziale)**: 1 Ottobre 2025  
+**Analizzati**: ~400 file  
+**Errori iniziali**: ~100+ (bloccavano analisi)  
+**Errori attuali (sessione 1 Ottobre 2025)**: 95 (poi risolti a 0 nella sessione 2026-07-07, vedi sotto)  
+**Errori critici risolti**: 7 (syntax errors)
+
+### 0. Batch Fix — 24 Errors (2026-07-07)
+
+| File | Errors | Fix |
+|---|---|---|
+| `app/Models/OauthAccessToken.php` | 6 | `@method` PHPDoc: `array` → `array<string, mixed>` (create/firstOrCreate/updateOrCreate), `array<int, string>` (existsIn) |
+| `app/Models/Passport/Client.php` | 1 | `@method existsIn(array $haystack)` → `array<int, string>` |
+| `app/Models/Permission.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
+| `app/Models/Role.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
+| `app/Models/Team.php` | 5 | Same array generics on create/firstOrCreate/updateOrCreate |
+| `app/Traits/PasswordValidationRules.php` | 1 | `@return array<int, Password\|array\|string>` → `array<int, Password\|string>` (no nested array ever returned) |
+| `routes/web.php` | 1 | `$xotData->register_pub_theme ?? false` → `$xotData->register_pub_theme` (property is non-nullable `bool`, `??` was flagged as dead) |
+| `app/Models/Traits/HasTeams.php` | 1 | `teams()` return generic: `BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>` → `BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>`. `BaseUser` aliases `HasTeams::teams as membershipTeams`, and `Xot\Contracts\UserContract::membershipTeams()` requires the declaring-model generic to be `$this`, not a generic `Model`. Removed the now-unneeded `@phpstan-ignore return.type`. |
+
+**Residual (not fixable within constraints)**: running PHPStan scoped to `Modules/User` alone reports:
+```
+Ignored error pattern larastan.noEnvCallsOutsideOfConfig was not matched in reported errors.
+```
+This is a global `ignoreErrors` pattern in `phpstan.neon` (untouchable) written for whole-project analysis; no file inside `Modules/User` triggers an `env()`-outside-config call, so the pattern is legitimately unmatched when the module is analyzed in isolation. Not a Modules/User defect — reproduces identically on a pristine checkout scoped the same way.
+
+## Issues Resolved (earlier sessions)
+
+### 1. Pest Closure Scope Type Hints
+>>>>>>> 350420cb (Check & fix styling)
 
 ## 🛠️ Correzioni Implementate
 
 ### 1. BaseUser.php - Rimozione Codice Orfano (CRITICO)
 
+<<<<<<< HEAD
 **File**: `app/Models/BaseUser.php`
 **Linee**: 377-419
+=======
+**File**: `app/Models/BaseUser.php`  
+**Linee**: 377-419  
+>>>>>>> 350420cb (Check & fix styling)
 **Problema**: Blocchi di codice senza dichiarazione di metodo che causavano 7 errori di sintassi e bloccavano l'intera analisi PHPStan
 
 **Codice rimosso**:
@@ -56,15 +98,24 @@ related:
 }
 ```
 
+<<<<<<< HEAD
 **Impatto**:
+=======
+**Impatto**: 
+>>>>>>> 350420cb (Check & fix styling)
 - ✅ Eliminati 7 errori di sintassi
 - ✅ Sbloccata l'analisi PHPStan su TUTTI i moduli
 - ✅ Permesso il proseguimento delle correzioni
 
 ### 2. BaseUser.php - Aggiunta Metodi Teams e Tenants
 
+<<<<<<< HEAD
 **Data**: 1 Ottobre 2025 (sera)
 **Autore**: Utente
+=======
+**Data**: 1 Ottobre 2025 (sera)  
+**Autore**: Utente  
+>>>>>>> 350420cb (Check & fix styling)
 
 Aggiunti metodi per gestione Teams e Tenants:
 
@@ -224,10 +275,17 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
+=======
+- [← User Module README](./README.md)
+- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Root Documentation](../../../docs/index.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 
@@ -246,6 +304,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ---
 
+<<<<<<< HEAD
 **Status**: ⚠️ IN PROGRESS
 **PHPStan Level**: 9
 **Prossima sessione**: 2 Ottobre 2025
@@ -966,3 +1025,11 @@ it('test name', function (): void {
 
 - [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
 - [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+=======
+**Status**: ⚠️ IN PROGRESS  
+**PHPStan Level**: 9  
+**Prossima sessione**: 2 Ottobre 2025  
+**Obiettivo**: 0 errori User + Xot
+
+
+>>>>>>> 350420cb (Check & fix styling)

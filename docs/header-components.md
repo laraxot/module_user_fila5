@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Componenti Header"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -107,4 +110,8 @@ related:
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md) 
+=======
+- [Gestione Sessione](./session_management.md) 
+>>>>>>> 350420cb (Check & fix styling)

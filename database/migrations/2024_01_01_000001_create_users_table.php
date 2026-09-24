@@ -1,8 +1,13 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+=======
+
+use Illuminate\Database\Schema\Blueprint;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*

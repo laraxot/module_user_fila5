@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filosofia e Politica: Implementazione del Cluster Passport"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Filosofia e Politica: Implementazione del Cluster Passport
 
 ## Logica e Business Logic

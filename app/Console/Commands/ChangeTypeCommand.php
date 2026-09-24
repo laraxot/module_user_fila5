@@ -26,11 +26,21 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -72,7 +82,11 @@ class ChangeTypeCommand extends Command
                 $typeLabel = $label;
             } elseif ($label instanceof Htmlable) {
                 $typeLabel = $label->toHtml();
+<<<<<<< HEAD
             } elseif (\is_scalar($label) || $label instanceof \Stringable) {
+=======
+            } else {
+>>>>>>> 350420cb (Check & fix styling)
                 $typeLabel = (string) $label;
             }
         }
@@ -91,8 +105,12 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
+<<<<<<< HEAD
                 $label = $item->getLabel();
                 $options[$value] = \is_scalar($label) || $label instanceof \Stringable ? (string) $label : 'Unknown';
+=======
+                $options[$value] = (string) $item->getLabel();
+>>>>>>> 350420cb (Check & fix styling)
             } else {
                 $options[(string) $key] = 'Unknown';
             }
@@ -102,7 +120,11 @@ class ChangeTypeCommand extends Command
 
         $newTypeEnum = $typeClass::tryFrom($newType);
         if (null === $newTypeEnum) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException('Invalid user type selected.');
+=======
+            throw new \UnexpectedValueException('Invalid user type selected: '.$newType);
+>>>>>>> 350420cb (Check & fix styling)
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);

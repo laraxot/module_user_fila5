@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Roadmap (2025 Q4)"
 type: concept
@@ -21,6 +22,8 @@ related:
   - "./03-later.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module Roadmap (2025 Q4)
 
 ## Vision & Scope

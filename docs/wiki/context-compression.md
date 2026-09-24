@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Context Compression - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./socialite-architecture.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Context Compression - User Module
 
 ## Overview

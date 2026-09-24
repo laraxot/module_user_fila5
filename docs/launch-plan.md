@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Product Launch Plan: User Module v1.0"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Product Launch Plan: User Module v1.0
 
 ## 🚀 Launch Overview

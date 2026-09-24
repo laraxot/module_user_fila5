@@ -7,7 +7,10 @@ namespace Modules\User\Tests\Feature\Filament\Pages;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Filament\Tables\Table;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Collection;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
@@ -33,6 +36,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$listUsersPage = new ListUsers();
 
     $users = UserFactory::new()
@@ -42,6 +46,17 @@ beforeEach(function (): void {
         ]);
 
     TestCase::$users = new Collection($users->all());
+=======
+    $this->listUsersPage = new ListUsers();
+
+    $users = UserFactory::new()
+        ->count(3)
+        ->createOne([
+            'type' => UserType::MasterAdmin,
+        ]);
+
+    $this->users = new Collection($users->all());
+>>>>>>> 350420cb (Check & fix styling)
 });
 
 describe('List Users', function (): void {
@@ -51,21 +66,34 @@ describe('List Users', function (): void {
 
     test('list users page extends correct base class', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+>>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
     });
 
     test('list users page can be instantiated', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+>>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
     });
 
     test('list users page has correct table columns', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
         $table = $listUsersPage->table(Table::make($listUsersPage));
         $columns = $table->getColumns();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+        $columns = $listUsersPage->getTableColumns();
+>>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertArrayHasKey('name', $columns);
         Assert::assertArrayHasKey('email', $columns);
@@ -81,15 +109,21 @@ describe('List Users', function (): void {
 
     test('list users page has correct table filters', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
         $table = $listUsersPage->table(Table::make($listUsersPage));
         $filters = $table->getFilters();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+        $filters = $listUsersPage->getTableFilters();
+>>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertCount(0, $filters);
     });
 
     test('list users page has correct table actions', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
         $table = $listUsersPage->table(Table::make($listUsersPage));
         $actions = $table->getRecordActions();
@@ -103,12 +137,24 @@ describe('List Users', function (): void {
             }
         }
 
+=======
+        $listUsersPage = $this->requireListUsersPage();
+        $actions = $listUsersPage->getTableActions();
+
+        Assert::assertArrayHasKey('change_password', $actions);
+
+        $changePasswordAction = $actions['change_password'];
+>>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(ChangePasswordAction::class, $changePasswordAction);
     });
 
     test('list users page can display users', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $users = TestCase::requireUsers();
+=======
+        $users = $this->requireUsers();
+>>>>>>> 350420cb (Check & fix styling)
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
 
@@ -125,21 +171,33 @@ describe('List Users', function (): void {
 
     test('list users page has correct navigation label', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+>>>>>>> 350420cb (Check & fix styling)
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
     });
 
     test('list users page has correct title', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+>>>>>>> 350420cb (Check & fix styling)
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
     });
 
     test('list users page has correct breadcrumbs', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+>>>>>>> 350420cb (Check & fix styling)
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
@@ -149,9 +207,14 @@ describe('List Users', function (): void {
 
     test('list users page can handle search', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $listUsersPage = TestCase::requireListUsersPage();
         $table = $listUsersPage->table(Table::make($listUsersPage));
         $columns = $table->getColumns();
+=======
+        $listUsersPage = $this->requireListUsersPage();
+        $columns = $listUsersPage->getTableColumns();
+>>>>>>> 350420cb (Check & fix styling)
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];
 

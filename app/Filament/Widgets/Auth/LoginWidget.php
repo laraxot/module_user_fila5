@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,23 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
      * @return class-string<UserForm>
      */
+=======
+use Illuminate\Support\Facades\Auth;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * Login FO — schema SSoT in `Resources\UserResource\Schemas\UserForm::getLoginFormSchema()`.
+ *
+ * Estende {@see XotBaseSchemaWidget} — eredita `public array $data` da {@see XotBaseWidget}
+ * per `statePath('data')` e `wire:model="data.*"`.
+ *
+ * Vista: `pub_theme::filament.widgets.auth.login` via {@see XotBaseWidget::resolveView()}.
+ */
+class LoginWidget extends XotBaseSchemaWidget
+{
+>>>>>>> 350420cb (Check & fix styling)
     protected static function formClass(): string
     {
         return UserForm::class;
@@ -37,6 +55,19 @@ class LoginWidget extends XotBaseSchemaWidget
         return 'getLoginFormSchema';
     }
 
+<<<<<<< HEAD
+=======
+    public static function canView(): bool
+    {
+        return ! Auth::check();
+    }
+
+    public function save(): void
+    {
+        $this->login();
+    }
+
+>>>>>>> 350420cb (Check & fix styling)
     public function login(): void
     {
         /** @var array<string, mixed> $data */
@@ -51,6 +82,7 @@ class LoginWidget extends XotBaseSchemaWidget
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
+<<<<<<< HEAD
             $redirectUrl = Route::has('dashboard')
                 ? route('dashboard')
                 : url('/'.app()->getLocale());
@@ -66,5 +98,16 @@ class LoginWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->login();
+=======
+
+            $redirectUrl = LaravelLocalization::localizeURL('/');
+
+            $this->redirect($redirectUrl);
+
+            return;
+        }
+
+        $this->addError('data.email', __('auth.failed'));
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

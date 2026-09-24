@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/base_profile.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'model' => [
         'label' => 'Profilo Base',
@@ -17,4 +24,40 @@ return [
         'sort' => 31,
         'icon' => 'user-user-permission',
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Base Profile',
+    'plural_label' => 'Base Profile (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Base Profile',
+        ],
+        'edit' => [
+            'label' => 'Modifica Base Profile',
+        ],
+        'delete' => [
+            'label' => 'Elimina Base Profile',
+        ],
+    ],
+>>>>>>> 350420cb (Check & fix styling)
 ];

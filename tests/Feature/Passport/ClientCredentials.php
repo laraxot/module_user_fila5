@@ -6,11 +6,16 @@ namespace Modules\User\Tests\Feature\Passport;
 
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
+<<<<<<< HEAD
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
+=======
+use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+>>>>>>> 350420cb (Check & fix styling)
 
 uses(TestCase::class);
 
@@ -20,6 +25,7 @@ uses(TestCase::class);
 function createPassportClient(): array
 {
     $repository = app(ClientRepository::class);
+<<<<<<< HEAD
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
     $secret = $client->plainSecret ?? SafeStringCastAction::cast($client->getAttribute('secret'));
@@ -32,6 +38,15 @@ function createPassportClient(): array
 
 test('client credentials grant returns token', function (): void {
     /* @var TestCase $this */
+=======
+
+    $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
+
+    return ['client' => $client, 'secret' => $client->plainSecret ?? $client->secret];
+}
+
+test('client credentials grant returns token', function (): void {
+>>>>>>> 350420cb (Check & fix styling)
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
     $response = $this->post('/oauth/token', [
@@ -47,20 +62,36 @@ test('client credentials grant returns token', function (): void {
 });
 
 test('client credentials can be associated to a specific user', function (): void {
+<<<<<<< HEAD
     /* @var TestCase $this */
     ['client' => $client] = createPassportClient();
     $user = UserFactory::new()->createOne();
+=======
+    ['client' => $client] = createPassportClient();
+    $user = User::factory()->create();
+>>>>>>> 350420cb (Check & fix styling)
 
     $client->owner()->associate($user);
     $client->forceFill([
         'user_id' => $user->getKey(),
+<<<<<<< HEAD
         'owner_id' => SafeStringCastAction::cast($user->getKey()),
         'owner_type' => User::class,
+=======
+        'owner_id' => (string) $user->getKey(),
+        'owner_type' => $user::class,
+>>>>>>> 350420cb (Check & fix styling)
     ]);
     $client->save();
     $client->refresh();
 
+<<<<<<< HEAD
     Assert::assertNotNull($client->owner);
     Assert::assertTrue($client->owner->is($user));
     Assert::assertSame($user->getKey(), $client->getAttribute('user_id'));
+=======
+    expect($client->owner)->not->toBeNull()
+        ->and($client->owner->is($user))->toBeTrue()
+        ->and($client->user_id)->toBe($user->getKey());
+>>>>>>> 350420cb (Check & fix styling)
 });

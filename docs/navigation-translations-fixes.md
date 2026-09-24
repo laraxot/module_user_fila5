@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -184,9 +187,12 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Regole Applicate
 
 ### DRY (Don't Repeat Yourself)
+<<<<<<< HEAD
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](README.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)
 - Eliminata duplicazione di chiavi placeholder
 - Raggruppamento logico coerente
 - Icone standard Heroicons per consistenza

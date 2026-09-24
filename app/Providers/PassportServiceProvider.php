@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Providers;
 
 use Carbon\CarbonInterval;
+<<<<<<< HEAD
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\AuthCode;
 use Laravel\Passport\Client;
@@ -12,6 +13,11 @@ use Laravel\Passport\DeviceCode;
 use Laravel\Passport\Passport;
 use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
+=======
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -76,6 +82,7 @@ class PassportServiceProvider extends ServiceProvider
         $tokens = config('user.passport.tokens', []);
         Assert::isArray($tokens);
 
+<<<<<<< HEAD
         $accessToken = $tokens['access_token'] ?? 15;
         Assert::integer($accessToken);
         $refreshToken = $tokens['refresh_token'] ?? 30;
@@ -93,6 +100,18 @@ class PassportServiceProvider extends ServiceProvider
 
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months($personalAccessToken)
+=======
+        Passport::tokensExpireIn(
+            CarbonInterval::days((int) ($tokens['access_token'] ?? 15))
+        );
+
+        Passport::refreshTokensExpireIn(
+            CarbonInterval::days((int) ($tokens['refresh_token'] ?? 30))
+        );
+
+        Passport::personalAccessTokensExpireIn(
+            CarbonInterval::months((int) ($tokens['personal_access_token'] ?? 6))
+>>>>>>> 350420cb (Check & fix styling)
         );
     }
 
@@ -109,6 +128,7 @@ class PassportServiceProvider extends ServiceProvider
 
         $tokenModel = $models['token'] ?? OauthToken::class;
         Assert::stringNotEmpty($tokenModel);
+<<<<<<< HEAD
         Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
@@ -122,16 +142,41 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, Client::class);
+=======
+        Assert::subclassOf($tokenModel, \Laravel\Passport\Token::class);
+
+        $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
+        Assert::stringNotEmpty($refreshTokenModel);
+        Assert::subclassOf($refreshTokenModel, \Laravel\Passport\RefreshToken::class);
+
+        $authCodeModel = $models['auth_code'] ?? OauthAuthCode::class;
+        Assert::stringNotEmpty($authCodeModel);
+        Assert::subclassOf($authCodeModel, \Laravel\Passport\AuthCode::class);
+
+        $clientModel = config('user.passport.client_model', OauthClient::class);
+        Assert::stringNotEmpty($clientModel);
+        Assert::subclassOf($clientModel, \Laravel\Passport\Client::class);
+>>>>>>> 350420cb (Check & fix styling)
 
         Passport::useTokenModel($tokenModel);
         Passport::useRefreshTokenModel($refreshTokenModel);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
 
+<<<<<<< HEAD
         $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
+=======
+        // @phpstan-ignore-next-line - method_exists check kept for backward compatibility with older Passport versions
+        if (method_exists(Passport::class, 'useDeviceCodeModel')) {
+            $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
+            Assert::stringNotEmpty($deviceCodeModel);
+            Assert::subclassOf($deviceCodeModel, \Laravel\Passport\DeviceCode::class);
+            Passport::useDeviceCodeModel($deviceCodeModel);
+        }
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -158,7 +203,14 @@ class PassportServiceProvider extends ServiceProvider
         }
 
         if (! empty($scopes)) {
+<<<<<<< HEAD
             Passport::tokensCan($scopes);
+=======
+            // PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
+            /** @var non-empty-array<non-empty-string, non-empty-string> $typedScopes */
+            $typedScopes = $scopes;
+            Passport::tokensCan($typedScopes);
+>>>>>>> 350420cb (Check & fix styling)
         }
     }
 

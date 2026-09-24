@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 <x-ui.link
     {{ $attributes->except('wire:navigate') }}

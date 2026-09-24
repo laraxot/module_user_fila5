@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Complete Roadmap 2026"
 type: concept
@@ -21,6 +22,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -955,8 +958,11 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ### 🎫 Fixcity Module
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations

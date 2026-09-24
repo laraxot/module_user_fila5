@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Third-Party Model Patterns"
 type: pattern
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -245,8 +248,11 @@ $this->tableCreate(function (Blueprint $table) {
 - [Package Configuration](https://spatie.be/docs/laravel-permission/v5/installation-setup)
 
 ### Laraxot Philosophy
+<<<<<<< HEAD
 - [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../Xot/docs/models/MODEL_ARCHITECTURE.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../xot/docs/models/model_architecture.md)
 

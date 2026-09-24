@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Widget Translation Rules - Quaeris Project"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Widget Translation Rules - Quaeris Project
 
 ## Core Principles
@@ -203,7 +206,11 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+=======
+- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

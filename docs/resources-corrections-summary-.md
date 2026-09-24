@@ -155,6 +155,7 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 - [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
+<<<<<<< HEAD
 ---
 module: theme
 topic: resources-corrections-summary-
@@ -171,3 +172,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

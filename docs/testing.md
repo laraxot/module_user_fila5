@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Rules Summary"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -121,6 +124,7 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+<<<<<<< HEAD
 # User Module Testing
 
 ## Overview
@@ -478,3 +482,5 @@ jobs:
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
+=======
+>>>>>>> 350420cb (Check & fix styling)

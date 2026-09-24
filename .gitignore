@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
@@ -46,23 +47,45 @@ docs/phpstan/
 # ====
 # DEPENDENCIES & PACKAGES
 # ====
+=======
+# ==============================================
+# LARAXOT MODULE USER - .GITIGNORE
+# ==============================================
+# Modulo User Laraxot - Template standardizzato
+# Ultimo aggiornamento: 2025-01-06
+# ==============================================
+
+# ==============================================
+# DEPENDENCIES & PACKAGES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 vendor/
 /vendor/
 node_modules/
 /node_modules/
+<<<<<<< HEAD
 /docs/vendor/
+=======
+>>>>>>> 350420cb (Check & fix styling)
 package-lock.json
 yarn.lock
 yarn-error.log
 composer.lock
 
+<<<<<<< HEAD
 # ====
 # BUILD & COMPILED FILES
 # ====
+=======
+# ==============================================
+# BUILD & COMPILED FILES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 /build
 /build/
 build/
 dist/
+<<<<<<< HEAD
 docs/cache/
 cache/*
 
@@ -109,6 +132,13 @@ cache/*
 docs/cache/
 docs/phpstan/
 # --- Cache & temporary ---
+=======
+cache/*
+
+# ==============================================
+# CACHE & TEMPORARY FILES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 *.cache
 *.lock
 *.phar
@@ -123,6 +153,7 @@ v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
 
+<<<<<<< HEAD
 
 
 
@@ -142,6 +173,11 @@ lerna-debug.log*
 # ====
 # LOG FILES
 # ====
+=======
+# ==============================================
+# LOG FILES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 *.log
 error_log
 npm-debug.log*
@@ -149,6 +185,7 @@ npm-debug.log
 yarn-error.log*
 lerna-debug.log*
 
+<<<<<<< HEAD
 # ====
 # LARAVEL SPECIFIC
 # ====
@@ -168,12 +205,19 @@ lerna-debug.log*
 
 
 
+=======
+# ==============================================
+# LARAVEL SPECIFIC
+# ==============================================
+bootstrap/compiled.php
+>>>>>>> 350420cb (Check & fix styling)
 app/storage/
 public/storage
 public/hot
 public_html/storage
 public_html/hot
 storage/*.key
+<<<<<<< HEAD
 
 
 
@@ -190,10 +234,13 @@ storage/framework/views/
 
 
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 .env
 .env.*
 !.env.example
 
+<<<<<<< HEAD
 # ====
 # ENVIRONMENT & CONFIGURATION
 # ====
@@ -212,12 +259,18 @@ storage/framework/views/
 
 
 
+=======
+# ==============================================
+# ENVIRONMENT & CONFIGURATION
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 
+<<<<<<< HEAD
 
 
 
@@ -245,10 +298,16 @@ Homestead.json
 # ====
 # GIT SPECIFIC
 # ====
+=======
+# ==============================================
+# GIT SPECIFIC
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
 
+<<<<<<< HEAD
 # ====
 # SYSTEM FILES
 # ====
@@ -275,6 +334,11 @@ Homestead.json
 
 
 
+=======
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 .DS_Store
 .DS_Store?
 ._*
@@ -283,6 +347,7 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 
+<<<<<<< HEAD
 
 
 agentdb.rvf
@@ -306,11 +371,17 @@ agentdb.rvf
 agentdb.rvf
 # --- Backup / old files ---
 
+=======
+# ==============================================
+# BACKUP FILES
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 *.old
 *.old1
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 
 
 
@@ -370,17 +441,26 @@ tests/Unit/graphify-out/
 
 
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 *.bak
 *.bakcup
 *.new
 
+<<<<<<< HEAD
 # ====
 # DEVELOPMENT TOOLS
 # ====
+=======
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 .windsurf/
 .cursor/
 .phpstorm.meta.php
 
+<<<<<<< HEAD
 # ====
 # DOCUMENTATION CACHE
 # ====
@@ -390,6 +470,17 @@ docs/cache/
 # ====
 # OLD DIRECTORIES (LEGACY CLEANUP)
 # ====
+=======
+# ==============================================
+# DOCUMENTATION CACHE
+# ==============================================
+docs/phpstan/
+docs/cache/
+
+# ==============================================
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 resources/views/Components_old/
 resources/views/Components_old
 database/Migrations_old/
@@ -402,9 +493,15 @@ database/Factories_
 database_old/
 database_old
 
+<<<<<<< HEAD
 # ====
 # MODULE SPECIFIC - USER
 # ====
+=======
+# ==============================================
+# MODULE SPECIFIC - USER
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 # File di configurazione locale
 config/local.php
 config/development.php
@@ -418,14 +515,21 @@ storage/framework/views/
 test_users.json
 user_test_data.csv
 
+<<<<<<< HEAD
 # ====
 # END OF USER .GITIGNORE
 # ====
+=======
+# ==============================================
+# END OF USER .GITIGNORE
+# ==============================================
+>>>>>>> 350420cb (Check & fix styling)
 
 # 🚫 File specifici del progetto
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 
 
 
@@ -499,3 +603,34 @@ app/Models/Models
 
 node_modules
 graphify-out/
+=======
+lang/lang/
+_docs/
+_docs/
+docs/archive/
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+**/docs/archive/
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+agentdb.rvf
+test-results/
+
+# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
+/Tests/
+
+# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
+!tests/
+!tests/**
+!audit-coverage/
+!audit-coverage/**
+docs/legacy
+tests/AuditCoverage
+>>>>>>> 350420cb (Check & fix styling)

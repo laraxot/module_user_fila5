@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "path_conventions - User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # path_conventions - User
 
 ## Overview

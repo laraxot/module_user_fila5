@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # Widget Translation Rules - SaluteOra Project
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -264,6 +267,7 @@ class EditUserWidget extends XotBaseWidget
     <h2 class="text-xl font-semibold mb-4">
         {{ __('user::widgets.edit_user.title') }}
     </h2>
+<<<<<<< HEAD
     
     <p class="text-gray-600 mb-6">
         {{ __('user::widgets.edit_user.description') }}
@@ -271,6 +275,15 @@ class EditUserWidget extends XotBaseWidget
     
     {{ $this->form }}
     
+=======
+
+    <p class="text-gray-600 mb-6">
+        {{ __('user::widgets.edit_user.description') }}
+    </p>
+
+    {{ $this->form }}
+
+>>>>>>> 350420cb (Check & fix styling)
     <div class="mt-6 flex justify-end space-x-3">
         <button type="button" class="btn-secondary">
             {{ __('user::widgets.edit_user.actions.cancel.label') }}
@@ -334,10 +347,17 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+=======
+- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Memory Integration
 
@@ -347,6 +367,7 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
+<<<<<<< HEAD
 All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
 ---
 module: theme
@@ -364,3 +385,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+=======
+All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
+>>>>>>> 350420cb (Check & fix styling)

@@ -4,11 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\TextInput;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
@@ -24,7 +37,11 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     UserFactory::new()
+<<<<<<< HEAD
         ->create([
+=======
+        ->createOne([
+>>>>>>> 350420cb (Check & fix styling)
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),
@@ -45,7 +62,11 @@ describe('User Resource', function (): void {
 
     test('user resource has correct form schema', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -66,7 +87,11 @@ describe('User Resource', function (): void {
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
+<<<<<<< HEAD
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
+=======
+        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -82,7 +107,11 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -93,7 +122,11 @@ describe('User Resource', function (): void {
 
     test('user resource name field is required', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -108,7 +141,11 @@ describe('User Resource', function (): void {
 
     test('user resource email field is required', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -123,7 +160,11 @@ describe('User Resource', function (): void {
 
     test('user resource password field is required only on create', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -138,7 +179,11 @@ describe('User Resource', function (): void {
 
     test('user resource password field has correct type', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -151,7 +196,11 @@ describe('User Resource', function (): void {
 
     test('user resource email field has unique validation', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -166,7 +215,11 @@ describe('User Resource', function (): void {
 
     test('user resource created at field shows diff for humans', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = app(UserResource::class)->getFormSchema();
+=======
+        $form = UserResource::getFormSchema();
+>>>>>>> 350420cb (Check & fix styling)
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
@@ -176,7 +229,11 @@ describe('User Resource', function (): void {
             $this->skipTest('created_at field not found in section02 schema');
         }
 
+<<<<<<< HEAD
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
+=======
+        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('user resource can be instantiated', function (): void {

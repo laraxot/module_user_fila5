@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Migration Lang Column - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Migration Lang Column - User Module
 
 ## Aggiunta Colonna lang alla Tabella users

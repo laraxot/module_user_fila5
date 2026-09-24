@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "RegistrationWidget FileUpload Error Fix"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./registration-widget.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # RegistrationWidget FileUpload Error Fix
 
 ## Problema Identificato

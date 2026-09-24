@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 // //use Laravel\Scout\Searchable;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Traits\Updater;
 
@@ -18,12 +22,18 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
     // use Searchable;
     // //use Cachable;
+<<<<<<< HEAD
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    use HasXotFactory;
+>>>>>>> 350420cb (Check & fix styling)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      */
     public static $snakeAttributes = true;
 
@@ -37,6 +47,29 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
     protected $perPage = 30;
 
+=======
+     *
+     * @var bool
+     */
+    public static $snakeAttributes = true;
+
+    /** @var bool */
+    public $incrementing = false;
+
+    /** @var bool */
+    public $timestamps = true;
+
+    /** @var string */
+    protected $keyType = 'string';
+
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var int */
+    protected $perPage = 30;
+
+    /** @var string */
+>>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 
     /** @var list<string> */

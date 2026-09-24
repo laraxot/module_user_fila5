@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "dependency-rules"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # dependency-rules
 
 ## Principle (MANDATORY)

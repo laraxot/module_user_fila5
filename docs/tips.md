@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: tips
@@ -14,3 +15,10 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tips.md
+=======
+# tips
+
+<!-- Contenuto migrato da _docs/tips.txt -->
+
+https://medium.com/@prevailexcellent/deep-dive-into-eloquent-40-rarely-used-eloquent-orm-methods-every-laravel-developer-must-know-9c75b58f456b
+>>>>>>> 350420cb (Check & fix styling)

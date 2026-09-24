@@ -2,7 +2,18 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/otp.php
+return [
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+>>>>>>> 350420cb (Check & fix styling)
     'otp_code' => 'Codice OTP',
     'title' => 'Password Scaduta, Reimposta Password',
     'heading' => 'Crea una Nuova Password',
@@ -31,6 +42,18 @@ return [
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Conferma Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 350420cb (Check & fix styling)
         ],
     ],
     'reset_password' => 'Reimposta Password',

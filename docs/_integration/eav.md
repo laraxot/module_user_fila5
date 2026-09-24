@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "eav"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # eav
 
 <!-- Contenuto migrato da _docs/eav.txt -->

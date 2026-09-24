@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User vs Profile: Guida Completa alla Progettazione"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User vs Profile: Guida Completa alla Progettazione
 
 ## Sommario
@@ -347,5 +350,22 @@ Per **<nome progetto>** la separazione attuale ha senso perché:
 
 ---
 
+<<<<<<< HEAD
 *Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
 *Data: [DATE]*
+=======
+
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+*Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
+
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+
+*Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+*Data: [DATE]*
+
+>>>>>>> 350420cb (Check & fix styling)

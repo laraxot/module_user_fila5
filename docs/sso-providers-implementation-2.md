@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module - SSO Providers Implementation
 
 ## Overview

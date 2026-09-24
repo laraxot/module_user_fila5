@@ -24,6 +24,10 @@
   "extra": {
     "laravel": {
       "providers": [
+<<<<<<< HEAD
+=======
+        "Livewire\\LivewireServiceProvider",
+>>>>>>> 350420cb (Check & fix styling)
         "Modules\\User\\Providers\\UserServiceProvider",
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider",
         "Modules\\User\\Providers\\PassportServiceProvider",
@@ -42,6 +46,7 @@
   "autoload-dev": {
     "psr-4": {
       "Modules\\User\\Tests\\": "tests/"
+<<<<<<< HEAD
     },
     "files": [
       "tests/Support/helpers.php"
@@ -59,6 +64,19 @@
     "phpstan/phpstan": "^2.1",
     "phpstan/phpstan-deprecation-rules": "^2.0"
   },
+=======
+    }
+  },
+  "require": {
+    "flowframe/laravel-trend": "^0.5",
+    "jenssegers/agent": "^2.6",
+    "laravel/passport": "^13.0",
+    "socialiteproviders/auth0": "^4.2",
+    "spatie/laravel-personal-data-export": "^4.3",
+    "socialiteproviders/microsoft": "^4.8"
+  },
+  "require-dev": {},
+>>>>>>> 350420cb (Check & fix styling)
   "repositories": [
     {
       "type": "path",

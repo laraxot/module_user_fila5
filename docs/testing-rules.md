@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)
@@ -38,6 +39,8 @@ From the `laravel/` directory:
 ## Troubleshooting
 *   **Missing Features in Tests**: Check if the test is outdated. Do not implement new features just to satisfy a broken test.
 *   **Autoloading Issues**: If classes are not found, check `composer.json` (ensure `Modules\\` is NOT in `autoload-dev` if using merge-plugin) and run `composer dump-autoload`.
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -141,6 +144,7 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+<<<<<<< HEAD
 ---
 module: theme
 topic: testing-rules
@@ -157,3 +161,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

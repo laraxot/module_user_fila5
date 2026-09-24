@@ -11,6 +11,10 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
+<<<<<<< HEAD
+=======
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+>>>>>>> 350420cb (Check & fix styling)
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
 
 ## Punti di Integrazione
@@ -21,6 +25,11 @@ Per dettagli specifici, consulta:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
+=======
+- [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
 
@@ -40,5 +49,9 @@ Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
 * [cms-link.md](../../../Xot/docs/cms-link.md)
 * [cms-link.md](../../../User/docs/cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
+<<<<<<< HEAD
 * [cms-link.md](../../../Lang/docs/cms-link.md)
 
+=======
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+>>>>>>> 350420cb (Check & fix styling)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Audit Logging"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-traits.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Audit Logging
 
 ## Overview

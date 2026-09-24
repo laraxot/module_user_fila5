@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Root files hygiene"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Root files hygiene
 
 ## 2026-07-08 16:48

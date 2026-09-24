@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -324,7 +327,11 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+=======
+- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

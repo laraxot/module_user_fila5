@@ -25,6 +25,7 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'first_name' => $this->faker->firstName(),
             'last_name' => $this->faker->lastName(),
             'user_name' => $this->faker->unique()->userName(),
@@ -34,6 +35,18 @@ class ProfileFactory extends Factory
             'phone' => $this->faker->phoneNumber(),
             'birth_date' => $this->faker->date(),
             'status' => 'active',
+=======
+            'bio' => $this->faker->text(200),
+            'avatar' => '/avatars/'.$this->faker->word(),
+            'phone' => $this->faker->phoneNumber(),
+            'date_of_birth' => $this->faker->date(),
+            'location' => $this->faker->city(),
+            'website' => $this->faker->url(),
+            'twitter' => $this->faker->userName(),
+            'facebook' => $this->faker->userName(),
+            'linkedin' => $this->faker->userName(),
+            'github' => $this->faker->userName(),
+>>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

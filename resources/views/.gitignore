@@ -6,7 +6,11 @@
 
 # Backup files
 *.bak
+<<<<<<< HEAD
 -e
+=======
+-e 
+>>>>>>> 350420cb (Check & fix styling)
 # PHPStan documentation
 docs/phpstan/
 _docs/
@@ -17,6 +21,7 @@ _docs/
 *.backup-*
 *.backup_*
 agentdb.rvf
+<<<<<<< HEAD
 
 
 
@@ -26,3 +31,5 @@ agentdb.rvf
 
 
 
+=======
+>>>>>>> 350420cb (Check & fix styling)

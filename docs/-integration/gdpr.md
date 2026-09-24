@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "gdpr"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # gdpr
 
 <!-- Contenuto migrato da _docs/gdpr.txt -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -20,7 +23,11 @@ updated: 2026-08-24
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
 #### 2. Riusabilità Compromessa  
+<<<<<<< HEAD
 - **141+ occorrenze hardcoded** di "saluteora" 
+=======
+- **141+ occorrenze hardcoded** di "Quaeris"
+>>>>>>> 350420cb (Check & fix styling)
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -134,7 +141,11 @@ User/docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\User;
+=======
+use Modules\Quaeris\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -153,7 +164,11 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
+<<<<<<< HEAD
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/saluteora/`
+=======
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
+>>>>>>> 350420cb (Check & fix styling)
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -221,7 +236,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
+<<<<<<< HEAD
 - [ ] **0 occorrenze** hardcoded "saluteora"
+=======
+- [ ] **0 occorrenze** hardcoded "Quaeris"
+>>>>>>> 350420cb (Check & fix styling)
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -256,7 +275,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
+<<<<<<< HEAD
 grep -r -i "saluteora" Modules/User/ --include="*.php" | wc -l
+=======
+grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
+>>>>>>> 350420cb (Check & fix styling)
 ```
 
 ### Post-Implementazione
@@ -280,8 +303,24 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
+- [Best Practices User](best-practices/)
+
+*Ultimo aggiornamento: gennaio 2025*
+
+---
+module: theme
+topic: optimization_recommendations
+canonical: ../../../Themes/docs/shared-components/optimization_recommendations.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization_recommendations.md
+>>>>>>> 350420cb (Check & fix styling)

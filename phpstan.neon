@@ -1,6 +1,10 @@
 includes:
     - ./phpstan-baseline.neon
+<<<<<<< HEAD
     #- ./../../../vendor/larastan/larastan/extension.neon
+=======
+    #- ./../../vendor/larastan/larastan/extension.neon
+>>>>>>> 350420cb (Check & fix styling)
     #- ./../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -75,8 +79,22 @@ parameters:
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
     tmpDir: ./build/phpstan
+<<<<<<< HEAD
+=======
+    checkUnusedViews: false
+>>>>>>> 350420cb (Check & fix styling)
     # checkMissingIterableValueType: false
     # checkGenericClassInNonGenericObjectType: false
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
+<<<<<<< HEAD
     checkModelProperties: false
+=======
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+    bootstrapFiles:
+        - ./phpstan_constants.php
+        - ../../vendor/autoload.php
+    bootstrapped: false
+
+>>>>>>> 350420cb (Check & fix styling)

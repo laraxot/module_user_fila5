@@ -6,6 +6,7 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "User module no app Support business logic QueueableAction Otp Socialite Notification"
 issues:
+<<<<<<< HEAD
 discussions:
 related:
   - "./ai-harness-user-discipline.md"
@@ -16,6 +17,14 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+  - ../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
+  - notifications-runtime-model.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # no `app/Support/` — business logic in QueueableAction

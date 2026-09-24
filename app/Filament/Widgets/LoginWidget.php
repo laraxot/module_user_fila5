@@ -12,7 +12,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -23,7 +27,11 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  *
  * @property array<string, mixed>|null $data
  */
+<<<<<<< HEAD
 class LoginWidget extends XotBaseSchemaWidget
+=======
+class LoginWidget extends XotBaseWidget
+>>>>>>> 350420cb (Check & fix styling)
 {
     /**
      * @var view-string
@@ -52,6 +60,10 @@ class LoginWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     public function getFormSchema(): array
     {
         return [
@@ -72,6 +84,10 @@ class LoginWidget extends XotBaseSchemaWidget
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     public function getFormFill(): array
     {
         return [
@@ -83,6 +99,10 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
      * Handle login form submission.
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     public function save(): void
     {
         try {
@@ -93,7 +113,11 @@ class LoginWidget extends XotBaseSchemaWidget
             $attempt_data = Arr::only($data, ['email', 'password']);
 
             if (! Auth::attempt($attempt_data, $remember)) {
+<<<<<<< HEAD
                 throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
+=======
+                throw ValidationException::withMessages(['email' => [__('user::messages.credentials_incorrect')]]);
+>>>>>>> 350420cb (Check & fix styling)
             }
 
             session()->regenerate();
@@ -116,15 +140,23 @@ class LoginWidget extends XotBaseSchemaWidget
             // $this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
+<<<<<<< HEAD
                 // PHPStan Level 10: Ensure messages is array of strings
+=======
+                // PHPStan Level 10: Ensure messages is array
+>>>>>>> 350420cb (Check & fix styling)
                 if (! is_array($messages)) {
                     $messages = [$messages];
                 }
 
+<<<<<<< HEAD
                 $this->addError($field, implode(' ', array_map(
                     static fn (mixed $v): string => \is_scalar($v) || $v instanceof \Stringable ? (string) $v : '',
                     $messages
                 )));
+=======
+                $this->addError($field, implode(' ', array_map(static fn (mixed $message): string => (string) $message, $messages)));
+>>>>>>> 350420cb (Check & fix styling)
             }
         } catch (\Exception $e) {
             report($e);
@@ -146,6 +178,10 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
      * Get the form model.
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     protected function getFormModel(): ?Model
     {
         return null;

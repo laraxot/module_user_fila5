@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Trait HasAuthenticationLogTrait"
 type: concept
@@ -12,6 +13,8 @@ related:
   - "./has-tenants.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

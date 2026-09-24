@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "socialite"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->

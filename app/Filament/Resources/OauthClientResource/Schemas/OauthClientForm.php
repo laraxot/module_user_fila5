@@ -14,7 +14,11 @@ class OauthClientForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'name' => TextInput::make('name')

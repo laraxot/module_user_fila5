@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 /*
 Route::prefix('{lang}')->group(function () {
     Route::middleware('guest')->group(function () {

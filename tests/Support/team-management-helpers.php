@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
@@ -10,8 +14,11 @@ use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\User;
 
+<<<<<<< HEAD
 use function Safe\json_encode;
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 function teamMgmtUserTableHasColumn(string $table, string $column): bool
 {
     return Schema::connection('user')->hasColumn($table, $column);

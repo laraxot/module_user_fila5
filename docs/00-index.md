@@ -15,10 +15,13 @@
 - 🧷 **[Passport Model Wrappers](./passport-model-wrappers.md)** - Mappa obbligatoria tra model vendor Passport e wrapper `Oauth*` locali.
 - 🛡️ **[2FA Guide](./2fa-guide.md)** - Implementazione dell'autenticazione a due fattori.
 
+<<<<<<< HEAD
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
 - ⚖️ **[Moderation Strategy](./user-moderation-strategy.md)** - Workflow per approvazione e ban (dentisti, cliniche, utenti).
@@ -54,8 +57,88 @@
 - [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
+<<<<<<< HEAD
+=======
+# User Module Documentation Index
+
+**Last Update**: 18 Dicembre 2025  
+**Status**: ✅ PHPStan Level 10 Compliant  
+**Module Version**: 1.0
+
+## 📚 Quick Navigation
+
+### 🎯 Essential Reading
+1. [README.md](./README.md) - Overview completo del modulo
+2. [phpstan-level-10-compliance.md](./phpstan-level-10-compliance.md) - Compliance status
+
+### 🏗️ Architecture & Patterns
+- [User Model Structure](./user-model-structure.md) - Struttura modello User
+- [Authentication Flow](./authentication-flow.md) - Flusso autenticazione
+- [Permission System](./permission-system.md) - Sistema permessi e ruoli
+- [User Relationships](./user-relationships.md) - Relazioni con altri modelli
+
+### 🧩 Core Components
+- [User Model](../../app/Models/User.php) - Modello principale User
+- [User Factory](../../database/factories/UserFactory.php) - Factory per test
+- [User Seeder](../../database/seeders/UserSeeder.php) - Seeder dati iniziali
+
+### 🔧 Implementation Guides
+- [User Registration](./user-registration.md) - Processo registrazione utente
+- [User Profile Management](./user-profile-management.md) - Gestione profilo
+- [Password Management](./password-management.md) - Gestione password
+- [Session Management](./session-management.md) - Gestione sessioni
+
+### 🧪 Testing
+- [Test Suite](../../tests/) - Suite di test per il modulo User
+- [Feature Tests](../../tests/Feature/) - Test funzionali
+- [Integration Tests](../../tests/Integration/) - Test di integrazione
+- [Unit Tests](../../tests/Unit/) - Test unitari
+
+### 🐛 Troubleshooting & Fixes
+- [Common Issues](./common-issues.md) - Problemi comuni e soluzioni
+- [Authentication Troubleshooting](./authentication-troubleshooting.md) - Debug autenticazione
+- [LoginWidget Form Data Binding Fix](./login-widget-fix.md) - Fix per campi form non popolati
+- [Login Issue Resolution](./login-issue-resolution-report.md) - Report tecnico risoluzione login
+- [Livewire StatePath Issue](./livewire-form-statepath-issue.md) - Analisi problemi binding
+
+### 📊 Code Quality
+- [PHPStan Analysis](./phpstan-analysis.md) - PHPStan reports
+- [Code Quality Metrics](./quality-metrics.md) - Metriche di qualità
+
+### 🚀 Deployment
+- [User Module Deployment](./deployment.md) - Linee guida per deploy
+- [Environment Configuration](./environment-config.md) - Configurazione ambiente
+
+## 📈 Module Statistics
+
+- **Total Docs**: 8 files
+- **PHPStan Compliance**: ✅ Level 10
+- **Architecture**: XotBase compliant
+- **Type Safety**: 100%
+
+## 🔗 Related Modules
+
+- [Xot](../../Xot/docs/README.md) - Core framework
+- [Tenant](../../Tenant/docs/README.md) - Multi-tenancy support
+- [Notify](../../Notify/docs/README.md) - Sistemi di notifica
+
+## 🎯 Quick Start
+
+1. Leggi [README.md](./README.md) per overview
+2. Studia [user-model-structure.md](./user-model-structure.md)
+3. Consulta [authentication-flow.md](./authentication-flow.md)
+4. Verifica [phpstan-level-10-compliance.md](./phpstan-level-10-compliance.md)
+
+---
+
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 350420cb (Check & fix styling)
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 350420cb (Check & fix styling)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "TRANSLATION KEY PROTOTYPE"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'
@@ -25,4 +28,8 @@ Action performed:
 
 Follow-ups:
 - Run a repo-wide grep for occurrences of less-structured keys and standardize them.
+<<<<<<< HEAD
 - Add CI check to enforce prototype for new keys.
+=======
+- Add CI check to enforce prototype for new keys.
+>>>>>>> 350420cb (Check & fix styling)

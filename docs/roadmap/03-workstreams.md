@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Workstreams - User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-later.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Workstreams - User
 
 ## WS1 Architecture

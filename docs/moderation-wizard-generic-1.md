@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Moderazione e Wizard di Registrazione Generici per User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa

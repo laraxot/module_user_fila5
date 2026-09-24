@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Wiki Index"
 type: concept
@@ -12,6 +13,8 @@ related:
   - "./log.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module Wiki Index
 
 > **Module**: User

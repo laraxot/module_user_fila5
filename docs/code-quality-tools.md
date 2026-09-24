@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔍 Code Quality Tools - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  

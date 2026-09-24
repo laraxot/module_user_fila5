@@ -7,7 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\ModelHasPermission.
@@ -55,6 +58,7 @@ class ModelHasPermission extends BaseMorphPivot
      * @psalm-var list{'permission_id', 'model_type', 'model_id'}
      */
     protected $fillable = ['permission_id', 'model_type', 'model_id'];
+<<<<<<< HEAD
 
     /**
      * Read from config on every call — never hardcode, the value can change
@@ -67,4 +71,6 @@ class ModelHasPermission extends BaseMorphPivot
 
         return $table;
     }
+=======
+>>>>>>> 350420cb (Check & fix styling)
 }

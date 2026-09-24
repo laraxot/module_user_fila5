@@ -4,16 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Schemas;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class SocialProviderForm extends XotBaseResourceForm
 {
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
      */
     #[\Override]
@@ -41,6 +48,16 @@ class SocialProviderForm extends XotBaseResourceForm
             'enabled' => Toggle::make('enabled'),
             'svg' => Textarea::make('svg')
                 ->columnSpanFull(),
+=======
+     * @return array<int|string, Component>
+     */
+    public static function getFormSchema(): array
+    {
+        return [
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
+>>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

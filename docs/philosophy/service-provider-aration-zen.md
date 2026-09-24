@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica"
 type: concept
@@ -11,6 +12,8 @@ related:
   - "./service-provider-separation-zen.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
 ## La Storia

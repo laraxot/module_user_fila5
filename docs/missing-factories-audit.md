@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Factory Mancanti - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Later (Module User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-workstreams.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Later (Module User)
 
 ## Longer-term ideas

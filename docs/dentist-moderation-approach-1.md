@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dentist Moderation Approach in User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Dentist Moderation Approach in User Module
 
 ## Overview

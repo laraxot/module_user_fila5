@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Errori Comuni in Volt e Soluzioni"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -204,4 +207,8 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
+<<<<<<< HEAD
 - [Routing Best Practices](../routing-best-practices-2.md) 
+=======
+- [Routing Best Practices](../routing_best_practices.md) 
+>>>>>>> 350420cb (Check & fix styling)

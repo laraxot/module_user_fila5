@@ -9,19 +9,35 @@ use Illuminate\Console\Command;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\User\Models\BaseUser;
+use Modules\Xot\Datas\XotData;
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 350420cb (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Assign a team to user';
 
@@ -37,7 +53,11 @@ class AssignTeamCommand extends Command
         $xot = XotData::make();
         $email = text('email ?');
         $user = XotData::make()->getUserByEmail($email);
+<<<<<<< HEAD
         Assert::isInstanceOf($user, UserContract::class);
+=======
+        Assert::isInstanceOf($user, BaseUser::class);
+>>>>>>> 350420cb (Check & fix styling)
 
         $teamClass = $xot->getTeamClass();
 

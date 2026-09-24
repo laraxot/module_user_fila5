@@ -19,12 +19,20 @@ use Spatie\QueueableAction\QueueableAction;
  * @see AGENTS.md#🏗️-ARCHITETTURA-LARAXOT---Queueable-Actions-Rules
  * @see AGENTS.md#🚨-COMANDO-CRITICO-GIT-git-remote--v - RICORDATI SEMPRE git remote -v prima di ogni push/pull!
  */
+<<<<<<< HEAD
 class CreateUserAction
+=======
+final class CreateUserAction
+>>>>>>> 350420cb (Check & fix styling)
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed>|null $data
+=======
+     * @param array<string, bool|int|string|null>|null $data
+>>>>>>> 350420cb (Check & fix styling)
      */
     public function __construct(
         protected string $name,
@@ -33,7 +41,11 @@ class CreateUserAction
         protected ?array $data = null,
     ) {
         // Validazione input nel costruttore
+<<<<<<< HEAD
         if (empty($this->name) || empty($this->email)) {
+=======
+        if ('' === $this->name || '' === $this->email) {
+>>>>>>> 350420cb (Check & fix styling)
             throw new \InvalidArgumentException('Nome e email sono obbligatori');
         }
 
@@ -42,9 +54,15 @@ class CreateUserAction
         }
     }
 
+<<<<<<< HEAD
     public function handle(): User
     {
         /** @var array<string, mixed> $attributes */
+=======
+    public function execute(): User
+    {
+        /** @var array<string, bool|int|string|null> $attributes */
+>>>>>>> 350420cb (Check & fix styling)
         $attributes = [
             'name' => $this->name,
             'email' => $this->email,
@@ -63,10 +81,22 @@ class CreateUserAction
         return $user;
     }
 
+<<<<<<< HEAD
     private function sendWelcomeEmail(User $user): void
     {
         // Logica per inviare email di benvenuto
         Log::info('Invio email di benvenuto a '.$user->email);
+=======
+    public function handle(): User
+    {
+        return $this->execute();
+    }
+
+    private function sendWelcomeEmail(User $user): void
+    {
+        // Logica per inviare email di benvenuto
+        Log::info("Invio email di benvenuto a {$user->email}");
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     private function createAuditLog(User $user): void

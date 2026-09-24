@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Invitation"
 type: concept
@@ -18,5 +19,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invitations
 

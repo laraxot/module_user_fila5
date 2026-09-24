@@ -1,6 +1,7 @@
 ---
 module: theme
 topic: user-invitation-1
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/user-invitation-2.md
 related:
   - "./00-index-1.md"
@@ -14,3 +15,9 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-invitation-2.md
+=======
+canonical: ../../../Themes/docs/shared-components/user_invitation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user_invitation.md
+>>>>>>> 350420cb (Check & fix styling)

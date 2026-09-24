@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * Handles the email verification process for authenticated users.
  *
@@ -17,6 +20,10 @@ declare(strict_types=1);
  *
  * @return RedirectResponse a redirect response to the home page
  */
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> 350420cb (Check & fix styling)
 
 namespace Modules\User\Http\Controllers\Auth;
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Two-Factor Authentication - 70% Completato"
 type: concept
@@ -11,6 +12,8 @@ related:
   - "./bottlenecks.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Two-Factor Authentication - 70% Completato
 
 ## Descrizione

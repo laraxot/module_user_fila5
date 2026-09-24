@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Next (Module User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-workstreams.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Next (Module User)
 
 ## Features

@@ -6,9 +6,13 @@ confidence: high
 created: {{date}}
 updated: {{date}}
 tags: [person, organization, module]
+<<<<<<< HEAD
 related:
   - "./concept.md"
   - "./source.md"
+=======
+related: []
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # {{title}}

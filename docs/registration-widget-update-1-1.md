@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Aggiornamento relativo a DoctorResource.php"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025

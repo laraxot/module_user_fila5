@@ -1,9 +1,16 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * --.
  */
+=======
+/**
+ * --.
+ */
+declare(strict_types=1);
+>>>>>>> 350420cb (Check & fix styling)
 
 namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;
 

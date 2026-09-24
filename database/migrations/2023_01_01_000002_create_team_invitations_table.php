@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -26,6 +30,20 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
+=======
+            if (! $this->hasColumn('accepted_at')) {
+                $table->timestamp('accepted_at')->nullable();
+            }
+            if (! $this->hasColumn('declined_at')) {
+                $table->timestamp('declined_at')->nullable();
+            }
+            if (! $this->hasColumn('user_id')) {
+                $table->string('user_id')->nullable()->index();
+            }
+
+            // if ($hasIndexName('team_invitations_team_id_foreign'))
+>>>>>>> 350420cb (Check & fix styling)
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
 

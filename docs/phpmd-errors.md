@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Phpmd Errors"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CyclomaticComplexity    The method execute() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              NPathComplexity         The method execute() has an NPath complexity of 640. The configured NPath complexity threshold is 200.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CamelCaseParameterName  The parameter $mobile_id is not named in camelCase.

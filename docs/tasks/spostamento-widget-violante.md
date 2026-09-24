@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Spostamento Widget Violante"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./tasks-index.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Task: Spostamento Widget Violante
 
 **Modulo**: User  
@@ -27,12 +30,20 @@ related:
 
 ## Obiettivo
 
+<<<<<<< HEAD
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
+=======
+Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. Quaeris). User non può dipendere da moduli business specifici.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Sottotask
 
 - [ ] Identificare widget `UserTypeRegistrationsChartWidget` e sue dipendenze
+<<<<<<< HEAD
 - [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
+=======
+- [ ] Analizzare dove collocarlo (Quaeris o altro modulo)
+>>>>>>> 350420cb (Check & fix styling)
 - [ ] Spostare widget e aggiornare namespace
 - [ ] Rimuovere file originale da User
 - [ ] Verificare con script controllo dipendenze

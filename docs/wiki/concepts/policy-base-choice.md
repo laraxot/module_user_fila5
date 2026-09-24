@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Policy Base Choice"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Policy Base Choice
 
 ## Scopo

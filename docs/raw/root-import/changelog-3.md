@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Changelog"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./pest-test-report-1.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

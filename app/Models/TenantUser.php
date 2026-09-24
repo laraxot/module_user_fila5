@@ -7,6 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\TenantUser.
@@ -51,6 +55,12 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class TenantUser extends BasePivot
 {
+<<<<<<< HEAD
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    use HasXotFactory;
+
+>>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 
     // public $incrementing = false;

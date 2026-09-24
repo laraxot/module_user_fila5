@@ -12,9 +12,15 @@ use Webmozart\Assert\Assert;
 
 class FetchUserApiTokenCommand extends Command
 {
+<<<<<<< HEAD
     private const int INVALID_ENV = 1;
 
     private const int USER_NOT_FOUND = 2;
+=======
+    private const INVALID_ENV = 1;
+
+    private const USER_NOT_FOUND = 2;
+>>>>>>> 350420cb (Check & fix styling)
 
     protected $signature = 'passport:fetch-user-token
                             {email : The email of the user to impersonate}';
@@ -35,7 +41,10 @@ class FetchUserApiTokenCommand extends Command
             $userEmail = trim($userEmail);
         }
 
+<<<<<<< HEAD
         $user_class = XotData::make()->getUserClass();
+=======
+>>>>>>> 350420cb (Check & fix styling)
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($userEmail);
 

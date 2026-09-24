@@ -1,6 +1,7 @@
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -8,6 +9,15 @@
 - [Analisi Errore Logout](LOGOUT_IMPLEMENTATION_ERROR.md)
 - [Struttura Widget](WIDGETS_STRUCTURE.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+=======
+- [Documentazione centrale](/docs/readme.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Errore Logout](logout_implementation_error.md)
+- [Struttura Widget](widgets_structure.md)
+- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Introduzione
 
@@ -223,11 +233,19 @@ FilamentView::registerRenderHook(
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
+<<<<<<< HEAD
 5. **Conformità alle convenzioni**: Segue le convenzioni di SaluteOra per i widget Filament.
 
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+5. **Conformità alle convenzioni**: Segue le convenzioni di Quaeris per i widget Filament.
+
+## Alternativa: Logout Immediato
+
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Conclusione
 

@@ -2,7 +2,18 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/errors.php
+return [
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+>>>>>>> 350420cb (Check & fix styling)
     'passwords' => [
         'user' => [
             'label' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
@@ -64,4 +75,51 @@ return [
             'description' => 'Il valore inserito è troppo corto.',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'name' => 'Errors',
+        'plural' => 'Errors',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Errors',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Errors',
+    'plural_label' => 'Errors (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Errors',
+        ],
+        'edit' => [
+            'label' => 'Modifica Errors',
+        ],
+        'delete' => [
+            'label' => 'Elimina Errors',
+        ],
+    ],
+>>>>>>> 350420cb (Check & fix styling)
 ];

@@ -21,8 +21,13 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
+<<<<<<< HEAD
     TestCase::skipUnlessUsersTableReady();
     TestCase::skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
+=======
+    $this->skipUnlessUsersTableReady();
+    $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
+>>>>>>> 350420cb (Check & fix styling)
 
     app()->register(AdminPanelProvider::class);
     app()->register(SchemasServiceProvider::class);

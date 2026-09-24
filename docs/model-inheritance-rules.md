@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole di Ereditarietà dei Modelli - Modulo User"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Data**: 2025-10-15

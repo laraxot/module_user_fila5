@@ -11,6 +11,7 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @property string                  $access_token_id
  * @property bool                    $revoked
  * @property \DateTimeInterface|null $expires_at
+<<<<<<< HEAD
  * @property OauthToken|null         $accessToken
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newModelQuery()
@@ -25,5 +26,11 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  */
 class OauthRefreshToken extends PassportRefreshToken
 {
+=======
+ */
+class OauthRefreshToken extends PassportRefreshToken
+{
+    /** @var string */
+>>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 }

@@ -349,16 +349,25 @@ trait HasTeams
 - [jetstream_vs_laraxot_philosophy.md](jetstream_vs_laraxot_philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
+<<<<<<< HEAD
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../Xot/docs/RELATION_X_USAGE.md)
 - [docs/USER_TRAITS_GUIDELINES.md](../../docs/USER_TRAITS_GUIDELINES.md)
 
 *Ultimo aggiornamento: 10 giugno 2025 - HasTeams trait completamente corretto e implementato*
+=======
+- [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
+- [docs/USER_TRAITS_GUIDELINES.md](../../../docs/user_traits_guidelines.md)
+
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Analisi del Conflitto con HasTeamsContract
 
 Il contratto `HasTeamsContract` definisce:
+<<<<<<< HEAD
 ```
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ```php
 public function teamRole(TeamContract $teamContract): ?Role;
 ```
@@ -413,4 +422,8 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 #### Conflitto HasTeamsContract ✅ **RISOLTO**
 - **teamRole() contratto**: CORRETTO - ora restituisce `?Role` invece di `?string`
 - **teamRoleName() helper**: AGGIUNTO - per ottenere stringa del ruolo
+<<<<<<< HEAD
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+=======
+- **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+>>>>>>> 350420cb (Check & fix styling)

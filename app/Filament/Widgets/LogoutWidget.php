@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Provides a widget for user logout functionality within Filament admin panels.
@@ -30,7 +34,11 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * @property array<string, mixed>|null $data         Widget data array managed by XotBaseWidget.
  * @property bool                      $isLoggingOut Flag indicating if logout is in progress.
  */
+<<<<<<< HEAD
 class LogoutWidget extends XotBaseSchemaWidget
+=======
+class LogoutWidget extends XotBaseWidget
+>>>>>>> 350420cb (Check & fix styling)
 {
     /**
      * Widget data array.
@@ -40,7 +48,10 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @var array<string, mixed>|null
      */
+<<<<<<< HEAD
     public ?array $data = [];
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
     /**
      * Indicates if the logout process is in progress.
@@ -48,6 +59,18 @@ class LogoutWidget extends XotBaseSchemaWidget
     public bool $isLoggingOut = false;
 
     /**
+<<<<<<< HEAD
+=======
+     * The view to render the widget.
+     *
+     * IMPORTANT: When using @livewire() directly in Blade templates,
+     * the path should be without the module namespace.
+     */
+    /** @phpstan-ignore-next-line property.defaultValue */
+    protected string $view = 'user::widgets.logout';
+
+    /**
+>>>>>>> 350420cb (Check & fix styling)
      * Mount the widget and initialize the form.
      */
     public function mount(): void
@@ -63,10 +86,21 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
     {
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+=======
+    #[\Override]
+    public function getFormSchema(): array
+    {
+        /** @var view-string $view */
+        $view = 'filament.widgets.auth.logout-message';
+
+        return [
+            'message' => View::make($view)->columnSpanFull(),
+>>>>>>> 350420cb (Check & fix styling)
         ];
     }
 
@@ -112,6 +146,10 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Action>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 350420cb (Check & fix styling)
     public function getFormActions(): array
     {
         return [

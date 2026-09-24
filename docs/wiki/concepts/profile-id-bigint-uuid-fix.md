@@ -55,6 +55,7 @@ Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema
 php artisan migrate
 # SHOW COLUMNS: id bigint unsigned auto_increment
 ```
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ey76iS
 =======
 
@@ -87,3 +88,5 @@ Correzioni:
 
 Verifica login funzionante → composer/pint/phpstan green sui file chiave.
 >>>>>>> .merge_file_tOdVH0
+=======
+>>>>>>> 350420cb (Check & fix styling)

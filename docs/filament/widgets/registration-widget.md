@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "RegistrationWidget: Widget generico per la registrazione utente"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./registration-widget-fileupload.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # RegistrationWidget: Widget generico per la registrazione utente
 
 ## Scopo e filosofia

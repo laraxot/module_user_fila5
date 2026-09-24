@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/socialite.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'navigation' => [
         'label' => 'Accesso con social',
@@ -47,7 +54,10 @@ return [
             'label' => 'Disconnetti',
             'tooltip' => 'Disconnetti account social',
         ],
+<<<<<<< HEAD
         'save' => 'Salva configurazione',
+=======
+>>>>>>> 350420cb (Check & fix styling)
     ],
     'messages' => [
         'connected' => 'Account social connesso con successo',

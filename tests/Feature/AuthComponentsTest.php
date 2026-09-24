@@ -7,15 +7,25 @@ namespace Modules\User\Tests\Feature;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
+=======
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\Profile;
+use Modules\User\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
@@ -45,11 +55,17 @@ describe('Auth Components Tests', function (): void {
 
     test('auth-session-status component renders correctly', function (): void {
         // Test the existing auth-session-status component rendering
+<<<<<<< HEAD
         /** @var view-string $view */
         $view = 'components.auth-session-status';
         $html = View::make($view, ['status' => 'Test status'])->render();
 
         expect(strlen($html))->toBeGreaterThanOrEqual(0);
+=======
+        $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
+
+        expect($html)->toBeString();
+>>>>>>> 350420cb (Check & fix styling)
         expect($html)->not->toBeEmpty();
     });
 
@@ -57,9 +73,13 @@ describe('Auth Components Tests', function (): void {
         // Test the auth header component that exists
         expect(View::exists('components.auth-header'))->toBeTrue();
 
+<<<<<<< HEAD
         /** @var view-string $view */
         $view = 'components.auth-header';
         $html = View::make($view, [
+=======
+        $html = View::make('components.auth-header', [
+>>>>>>> 350420cb (Check & fix styling)
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
@@ -79,8 +99,13 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+<<<<<<< HEAD
         $user = UserFactory::new()->createOne();
         \assert($user instanceof UserContract);
+=======
+        $user = UserFactory::new()->create();
+        \assert($user instanceof User);
+>>>>>>> 350420cb (Check & fix styling)
 
         if (class_exists(Profile::class)) {
             // Skip if profiles table doesn't have uuid column

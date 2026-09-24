@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Roadmap overview (Module User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-workstreams.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Roadmap overview (Module User)
 
 ## Scope

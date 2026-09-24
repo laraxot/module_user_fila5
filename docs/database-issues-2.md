@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table

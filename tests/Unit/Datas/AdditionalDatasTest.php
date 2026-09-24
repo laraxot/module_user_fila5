@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -12,10 +16,16 @@ use Modules\User\Datas\PermissionTableNamesData;
 use Modules\User\Datas\ShieldResourceData;
 use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 test('PermissionTableNamesData can be instantiated', function () {
     try {

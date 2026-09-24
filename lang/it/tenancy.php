@@ -2,12 +2,40 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/tenancy.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'navigation' => [
         'register' => 'Registra negozio',
         'edit' => 'Modifica dati negozio',
     ],
     'fields' => [
+<<<<<<< HEAD
+=======
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'phone' => [
+            'label' => 'Telefono',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> 350420cb (Check & fix styling)
     ],
     'actions' => [
         'register_tenant' => [

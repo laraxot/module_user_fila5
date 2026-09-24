@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Git Reset"
 type: concept
@@ -11,6 +12,8 @@ related:
   - "./pest-test-report.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

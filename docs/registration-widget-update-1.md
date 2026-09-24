@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Aggiornamento relativo a DoctorResource.php"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15
@@ -38,4 +41,8 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 **Collegamenti correlati**:
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+<<<<<<< HEAD
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)
+=======
+- [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)
+>>>>>>> 350420cb (Check & fix styling)

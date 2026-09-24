@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dibattito Filosofico: Risoluzione Errori PHPStan"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Dibattito Filosofico: Risoluzione Errori PHPStan
 
 **Data Creazione**: [DATE]

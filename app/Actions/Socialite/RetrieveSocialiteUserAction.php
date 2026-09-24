@@ -1,12 +1,23 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
+<<<<<<< HEAD
 namespace Modules\User\Actions\Socialite;
 
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Actions\Socialite;
+
+// use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
+>>>>>>> 350420cb (Check & fix styling)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 use Spatie\QueueableAction\QueueableAction;
@@ -39,6 +50,7 @@ class RetrieveSocialiteUserAction
             return null;
         }
 
+<<<<<<< HEAD
         // Accesso sicuro alla proprietà token in modo type-safe
         $token = '';
 
@@ -78,6 +90,12 @@ class RetrieveSocialiteUserAction
         if (empty($token)) {
             // Se non riusciamo a ottenere un token valido, utilizziamo un valore predefinito
             $token = 'no_token_'.time();
+=======
+        $token = $this->resolveOAuthToken($user);
+
+        if ('' === $token) {
+            throw new \RuntimeException('Impossibile recuperare il token OAuth dal provider '.$provider);
+>>>>>>> 350420cb (Check & fix styling)
         }
 
         $res->update([
@@ -86,4 +104,23 @@ class RetrieveSocialiteUserAction
 
         return $res;
     }
+<<<<<<< HEAD
+=======
+
+    private function resolveOAuthToken(SocialiteUserContract $user): string
+    {
+        if (isset($user->token) && is_string($user->token) && '' !== $user->token) {
+            return $user->token;
+        }
+
+        if (method_exists($user, 'getToken')) {
+            $tokenValue = $user->getToken();
+            if (is_string($tokenValue) && '' !== $tokenValue) {
+                return $tokenValue;
+            }
+        }
+
+        return '';
+    }
+>>>>>>> 350420cb (Check & fix styling)
 }

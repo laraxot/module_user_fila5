@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** [DATE]

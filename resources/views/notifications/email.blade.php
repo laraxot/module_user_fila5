@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 @props([
     'level' => 'success',
@@ -26,6 +30,10 @@ declare(strict_types=1);
     @isset($actionText)
         <?php
 
+<<<<<<< HEAD
+=======
+        // @phpstan-ignore variable.undefined
+>>>>>>> 350420cb (Check & fix styling)
         $color = match ($level) {
             'success', 'error' => $level,
             default => 'primary',

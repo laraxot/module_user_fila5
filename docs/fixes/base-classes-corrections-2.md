@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione Estensioni Classi Base - Modulo User"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./phpstanes.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -243,7 +246,11 @@ php artisan test --filter=ModelTest
    - Esempi pratici
    - Checklist per nuovi modelli
 
+<<<<<<< HEAD
 2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
+=======
+2. **`docs/fixes/base-classes-corrections-2025-10-15.md`** (QUESTO FILE)
+>>>>>>> 350420cb (Check & fix styling)
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons

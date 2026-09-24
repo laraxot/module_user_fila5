@@ -221,6 +221,7 @@ Modules/User/app/View/Pages/ProfileEditVoltComponent.php --no-progress
 
 File toccati in questo aggiornamento: solo
 `laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php`.
+<<<<<<< HEAD
 <<<<<<< .merge_file_Xcu1hA
 =======
 
@@ -348,3 +349,5 @@ vietare `instanceof \Modules\User\Models\User` / `Assert::isInstanceOf(..., \Mod
 punto, senza prescrivere quale delle due alternative usare (dipende dal caso d'uso a
 valle).
 >>>>>>> .merge_file_8kHiVW
+=======
+>>>>>>> 350420cb (Check & fix styling)

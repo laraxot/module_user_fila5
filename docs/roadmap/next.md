@@ -2,6 +2,7 @@
 module: theme
 topic: next
 canonical: ../../../../Themes/docs/shared-components/02-next.md
+<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -11,6 +12,8 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/02-next.md

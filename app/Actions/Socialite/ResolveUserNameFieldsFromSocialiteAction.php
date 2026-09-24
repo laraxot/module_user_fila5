@@ -14,9 +14,15 @@ final class ResolveUserNameFieldsFromSocialiteAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
+=======
+    private const NAME_SEARCH = 'before';
+
+    private const SURNAME_SEARCH = 'after';
+>>>>>>> 350420cb (Check & fix styling)
 
     public function execute(User $oauthUser): SocialiteNameFieldsData
     {

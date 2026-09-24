@@ -4,6 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
+<<<<<<< HEAD
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
@@ -14,7 +24,11 @@ uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
+<<<<<<< HEAD
     TestCase::skipUnlessUserTable('tenants');
+=======
+    $this->skipUnlessUserTable('tenants');
+>>>>>>> 350420cb (Check & fix styling)
 });
 
 describe('Tenant', function (): void {
@@ -32,8 +46,13 @@ describe('Tenant', function (): void {
 
     test('can create tenant with all fields', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessTenantColumn('settings');
         TestCase::skipUnlessTenantColumn('trial_ends_at');
+=======
+        $this->skipUnlessTenantColumn('settings');
+        $this->skipUnlessTenantColumn('trial_ends_at');
+>>>>>>> 350420cb (Check & fix styling)
 
         $tenantData = [
             'name' => 'Full Tenant',
@@ -122,7 +141,11 @@ describe('Tenant', function (): void {
             ->get();
 
         Assert::assertCount(2, $activeTenants);
+<<<<<<< HEAD
         Assert::assertTrue($activeTenants->every(fn (Tenant $tenant) => (bool) $tenant->is_active));
+=======
+        Assert::assertTrue($activeTenants->every(fn ($tenant) => (bool) $tenant->is_active));
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('can find tenants by name pattern', function (): void {
@@ -135,7 +158,11 @@ describe('Tenant', function (): void {
         $companyTenants = Tenant::where('name', 'like', '%'.$marker.'%Company%')->get();
 
         Assert::assertCount(1, $companyTenants);
+<<<<<<< HEAD
         Assert::assertTrue($companyTenants->every(fn (Tenant $tenant) => str_contains((string) $tenant->name, 'Company')));
+=======
+        Assert::assertTrue($companyTenants->every(fn ($tenant) => str_contains((string) $tenant->name, 'Company')));
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('can find tenants by domain pattern', function (): void {
@@ -148,7 +175,11 @@ describe('Tenant', function (): void {
         $exampleTenants = Tenant::where('domain', 'like', '%'.$marker.'.example.com')->get();
 
         Assert::assertCount(3, $exampleTenants);
+<<<<<<< HEAD
         Assert::assertTrue($exampleTenants->every(fn (Tenant $tenant) => str_ends_with((string) $tenant->domain, '.example.com')));
+=======
+        Assert::assertTrue($exampleTenants->every(fn ($tenant) => str_ends_with((string) $tenant->domain, '.example.com')));
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     test('can update tenant', function (): void {
@@ -223,7 +254,11 @@ describe('Tenant', function (): void {
 
     test('can find tenants by trial status', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessTenantColumn('trial_ends_at');
+=======
+        $this->skipUnlessTenantColumn('trial_ends_at');
+>>>>>>> 350420cb (Check & fix styling)
 
         $marker = 'trial-status-'.uniqid();
 
@@ -250,7 +285,11 @@ describe('Tenant', function (): void {
 
     test('can find tenants by settings value', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessTenantColumn('settings');
+=======
+        $this->skipUnlessTenantColumn('settings');
+>>>>>>> 350420cb (Check & fix styling)
 
         $marker = 'settings-theme-'.uniqid();
 

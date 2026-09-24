@@ -14,7 +14,11 @@ class OauthAuthCodeForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'user_id' => Select::make('user_id')

@@ -139,6 +139,7 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
@@ -158,3 +159,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
+=======
+- [Header Components](./header_components.md)
+- [Security Best Practices](./security_best_practices.md)
+- [Session Management](./session_management.md) 
+>>>>>>> 350420cb (Check & fix styling)

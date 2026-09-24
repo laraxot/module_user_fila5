@@ -7,6 +7,10 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\SoftDeletes;
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
@@ -50,6 +54,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property UserContract|null                                         $user
  * @property string|null                                               $user_name
  *
+<<<<<<< HEAD
  * @method static Builder<static> newModelQuery()
  * @method static Builder<static> newQuery()
  * @method static Builder<static> permission($permissions, $without = false)
@@ -59,6 +64,17 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder<static> withExtraAttributes()
  * @method static Builder<static> withoutPermission($permissions)
  * @method static Builder<static> withoutRole($roles, $guard = null)
+=======
+ * @method static Builder<static>|ProfileContract newModelQuery()
+ * @method static Builder<static>|ProfileContract newQuery()
+ * @method static Builder<static>|ProfileContract permission($permissions, $without = false)
+ * @method static Builder<static>|ProfileContract query()
+ * @method static Builder<static>|ProfileContract role($roles, $guard = null, $without = false)
+ * @method static Builder<static>|ProfileContract byUuid(string $uuid)
+ * @method static Builder<static>|BaseProfile     withExtraAttributes()
+ * @method static Builder<static>|ProfileContract withoutPermission($permissions)
+ * @method static Builder<static>|ProfileContract withoutRole($roles, $guard = null)
+>>>>>>> 350420cb (Check & fix styling)
  *
  * @mixin \Eloquent
  */
@@ -73,6 +89,35 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
+<<<<<<< HEAD
+=======
+    // use SoftDeletes;
+
+    /**
+     * The "booted" method of the model.
+     */
+    protected static function booted(): void
+    {
+        static::creating(static function (self $model): void {
+            if (empty($model->uuid)) {
+                $model->uuid = (string) Str::uuid();
+            }
+        });
+    }
+
+    /**
+     * Scope per lookup da API/Android/Postgres (usa uuid, non id).
+     */
+    /**
+     * @param Builder<static> $query
+     *
+     * @return Builder<static>
+     */
+    public function scopeByUuid(Builder $query, string $uuid): Builder
+    {
+        return $query->where('uuid', $uuid);
+    }
+>>>>>>> 350420cb (Check & fix styling)
 
     /**
      * Undocumented variable.
@@ -112,6 +157,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
+<<<<<<< HEAD
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -129,6 +175,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         return $query->where('uuid', $uuid);
     }
 
+=======
+    /** @var array<int, string> */
+    protected $formlessAttributes = [
+        'extra',
+    ];
+
+>>>>>>> 350420cb (Check & fix styling)
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
@@ -185,6 +238,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
         return $userLang;
     }
+<<<<<<< HEAD
     // use SoftDeletes;
 
     /**
@@ -198,6 +252,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             }
         });
     }
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
     /** @return array<string, string> */
     #[\Override]

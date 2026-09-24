@@ -7,7 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\RoleHasPermission.
@@ -47,6 +50,7 @@ class RoleHasPermission extends BasePivot
      * @psalm-var list{'permission_id', 'role_id'}
      */
     protected $fillable = ['permission_id', 'role_id'];
+<<<<<<< HEAD
 
     /**
      * Laravel's non-morph Pivot base class singularizes the table name by
@@ -61,4 +65,6 @@ class RoleHasPermission extends BasePivot
 
         return $table;
     }
+=======
+>>>>>>> 350420cb (Check & fix styling)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Root file policy"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Root file policy
 
 Updated: 2026-07-08

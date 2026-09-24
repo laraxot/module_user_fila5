@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "XotBasePage Inheritance Architecture"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # XotBasePage Inheritance Architecture
 
 ## Overview

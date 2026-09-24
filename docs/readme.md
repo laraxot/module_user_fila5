@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Authentication & Authorization"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module - Authentication & Authorization
 
 **Last Update**: 2025-12-05
@@ -1075,7 +1078,11 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
+<<<<<<< HEAD
 See [ROADMAP.md](./roadmap.md) for details.
+=======
+See [ROADMAP.md](./ROADMAP.md) for details.
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 

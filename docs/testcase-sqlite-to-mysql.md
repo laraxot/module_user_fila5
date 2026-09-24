@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "TestCase SQLite to MySQL Fix - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # TestCase SQLite to MySQL Fix - User Module
 
 ## Problema Identificato

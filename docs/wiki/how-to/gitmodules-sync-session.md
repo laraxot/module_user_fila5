@@ -17,6 +17,7 @@ related:
 
 Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md` (v5.1) e da **STORY-003**.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_wzpEPb
 ## Cosa fare su questo owner
 
@@ -31,6 +32,11 @@ dalla root e mai tramite Shell `working_directory`. Verificare
 
 1. `git -C . remote -v` — remote reale del modulo (`laraxot/module_user_fila5`), non la root.
 >>>>>>> .merge_file_PKnPrj
+=======
+## Cosa fare su questo owner
+
+1. `git remote -v` — sync **tutte** le organizzazioni (`fetch` + `pull --ff-only` + `push`, mai `--force`).
+>>>>>>> 350420cb (Check & fix styling)
 2. Quality gates da `laravel/`: phpstan → phpmd → phpinsights (`--composer=composer.lock`).
 3. Marker Git: risoluzione manuale forward-only (no `git restore`).
 

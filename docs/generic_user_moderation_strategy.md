@@ -211,7 +211,11 @@ This document outlines a comprehensive strategy for implementing a generic moder
 
 ## Addressing Specific Needs Without Hardcoding
 - **Project-Specific Customizations**: Projects using the `User` module can override or extend moderation profiles via their own configuration files or by registering custom validation rules or workflow steps in a service provider.
+<<<<<<< HEAD
 - **Example for SaluteOra**: In the context of the SaluteOra project, a user type of 'dentist' can be configured with specific moderation requirements (like license verification) in the project's configuration, without altering the `User` module's generic approach. Similarly, other user types can have their own rules.
+=======
+- **Example for Quaeris**: In the context of the Quaeris project, a user type of 'dentist' can be configured with specific moderation requirements (like license verification) in the project's configuration, without altering the `User` module's generic approach. Similarly, other user types can have their own rules.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Benefits of This Approach
 - **Unified System**: Aligns with the philosophy of a unique registration wizard by providing a unique moderation system adaptable to all user types.
@@ -224,4 +228,8 @@ This document outlines a comprehensive strategy for implementing a generic moder
 - **Moderation Dashboard**: Enhance the Filament interface with analytics and reporting on moderation activities.
 
 ## Conclusion
+<<<<<<< HEAD
 By implementing a generic, configuration-driven moderation system within the `User` module, we achieve a reusable, maintainable, and scalable solution that aligns with the unified registration approach. This strategy ensures the module remains agnostic to specific user types, making it suitable for diverse projects while allowing individual applications to define their moderation requirements through configuration.
+=======
+By implementing a generic, configuration-driven moderation system within the `User` module, we achieve a reusable, maintainable, and scalable solution that aligns with the unified registration approach. This strategy ensures the module remains agnostic to specific user types, making it suitable for diverse projects while allowing individual applications to define their moderation requirements through configuration.
+>>>>>>> 350420cb (Check & fix styling)

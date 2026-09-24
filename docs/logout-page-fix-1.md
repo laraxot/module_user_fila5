@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione Logout Page nel Theme TwentyOne"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato

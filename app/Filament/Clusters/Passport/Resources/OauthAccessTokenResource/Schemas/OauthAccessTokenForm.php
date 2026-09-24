@@ -4,16 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Schemas;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class OauthAccessTokenForm extends XotBaseResourceForm
 {
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
      */
     #[\Override]
@@ -40,6 +46,16 @@ class OauthAccessTokenForm extends XotBaseResourceForm
                             'scopes' => TextInput::make('scopes'),
                         ]),
                 ]),
+=======
+     * @return array<int|string, Component>
+     */
+    public static function getFormSchema(): array
+    {
+        return [
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
+>>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

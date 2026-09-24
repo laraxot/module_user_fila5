@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -400,7 +403,11 @@ app/Notifications/Auth
 app/Providers
 app/Providers/Filament
 app/Rules
+<<<<<<< HEAD
 app/Support
+=======
+# app/Support — eliminato 2026-07-12 → Actions/Adapters/Datas
+>>>>>>> 350420cb (Check & fix styling)
 app/Traits
 app/View
 app/View/Components

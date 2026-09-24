@@ -7,7 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\ModelHasRole.
@@ -49,6 +52,7 @@ use Webmozart\Assert\Assert;
  */
 class ModelRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
     #[\Override]
     public function getTable(): string
     {
@@ -56,4 +60,8 @@ class ModelRole extends BaseMorphPivot
 
         return $table;
     }
+=======
+    /** @var string */
+    protected $table = 'model_has_role';
+>>>>>>> 350420cb (Check & fix styling)
 }

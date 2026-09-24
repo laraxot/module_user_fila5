@@ -1,13 +1,22 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Tests\TestCase;
+=======
+
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 350420cb (Check & fix styling)
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 test('every vendor passport eloquent model has a local oauth wrapper', function (): void {
     $passportSrc = base_path('vendor/laravel/passport/src');
@@ -19,7 +28,11 @@ test('every vendor passport eloquent model has a local oauth wrapper', function 
     }
 
     $vendorModelClasses = collect($passportFiles)
+<<<<<<< HEAD
         ->map(function (string $file): string {
+=======
+        ->map(function (mixed $file): string {
+>>>>>>> 350420cb (Check & fix styling)
             return 'Laravel\\Passport\\'.pathinfo((string) $file, PATHINFO_FILENAME);
         })
         ->filter(function (string $class): bool {

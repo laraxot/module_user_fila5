@@ -7,6 +7,11 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -29,6 +34,32 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the form schema for the resource.
+     *
+     * @return array<string, Select|TextInput>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'user_id' => Select::make('user_id')
+                ->relationship('user', 'name')
+                ->searchable(),
+            'client_id' => Select::make('client_id')
+                ->relationship('client', 'name')
+                ->searchable()
+                ->required(),
+            'scopes' => TextInput::make('scopes'),
+            'revoked' => TextInput::make('revoked')
+                ->numeric()
+                ->required(),
+        ];
+    }
+
+    /**
+>>>>>>> 350420cb (Check & fix styling)
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
@@ -40,7 +71,11 @@ class OauthAuthCodeResource extends XotBaseResource
                 TextColumn::make('id')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->formatStateUsing(function (string|int|null $state): string {
+=======
+                    ->formatStateUsing(function (mixed $state): string {
+>>>>>>> 350420cb (Check & fix styling)
                         if (! is_string($state)) {
                             return '';
                         }

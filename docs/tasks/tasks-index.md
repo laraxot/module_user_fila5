@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Indice task - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.

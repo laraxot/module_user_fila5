@@ -6,6 +6,7 @@ created: 2026-04-20
 updated: 2026-04-20
 tags: [login, auth, design-comuni, bootstrap-italia, ui, ux, filament]
 sources:
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -15,6 +16,14 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - https://italia.github.io/design-comuni-pagine-statiche/servizi/index.html
+  - laravel/Modules/User/app/Filament/Widgets/Auth/LoginWidget.php
+  - laravel/Themes/Sixteen/resources/views/pages/auth/login.blade.php
+related:
+  - ../../../../docs/wiki/concepts/ui-consistency.md
+  - ./widget-filament-pattern.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Login Page - Design Comuni Italiani Alignment

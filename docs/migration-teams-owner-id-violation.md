@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Violazione Filosofia Laraxot - Migration Teams"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Analisi Violazione Filosofia Laraxot - Migration Teams
 
 ## Data

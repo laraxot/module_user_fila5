@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/en/base_profile.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'model' => [
         'label' => 'Profilo Base',
@@ -17,4 +24,13 @@ return [
         'sort' => '31',
         'icon' => 'user-user-permission',
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 350420cb (Check & fix styling)
 ];

@@ -92,6 +92,11 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+
+>>>>>>> 350420cb (Check & fix styling)

@@ -6,7 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -27,6 +30,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission newQuery()
  * @method static Builder<static>|TeamPermission query()
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
@@ -35,6 +39,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null          $created_by
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
+=======
+ * @property ProfileContract|null            $creator
+ * @property ProfileContract|null            $deleter
+ * @property ProfileContract|null            $updater
+ * @property string|null                     $name
+ * @property string|null                     $updated_by
+ * @property string|null                     $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null                     $deleted_by
+>>>>>>> 350420cb (Check & fix styling)
  *
  * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamPermission                         whereCreatedAt($value)
@@ -54,6 +68,11 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $connection = 'user';
 
@@ -69,6 +88,11 @@ class TeamPermission extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the team that owns the permission.
+     *
+>>>>>>> 350420cb (Check & fix styling)
      * @return BelongsTo<Team, $this>
      */
     public function team(): BelongsTo
@@ -77,6 +101,11 @@ class TeamPermission extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the user that owns the permission.
+     *
+>>>>>>> 350420cb (Check & fix styling)
      * @return BelongsTo<User, $this>
      */
     public function user(): BelongsTo

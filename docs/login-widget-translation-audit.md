@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "LoginWidget Translation Audit - Gennaio 2025"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -82,9 +85,12 @@ return [
 ];
 ```
 
+<<<<<<< HEAD
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 
@@ -220,4 +226,8 @@ Il pattern può essere applicato a tutti i widget del sistema per garantire cons
 **Audit completato**: Gennaio 2025  
 **File modificati**: 3 (it/messages.php, en/messages.php, de/messages.php)  
 **Translation keys aggiunte**: 60+ per lingua  
+<<<<<<< HEAD
 **LoginWidget status**: ✅ Fully functional in all languages
+=======
+**LoginWidget status**: ✅ Fully functional in all languages
+>>>>>>> 350420cb (Check & fix styling)

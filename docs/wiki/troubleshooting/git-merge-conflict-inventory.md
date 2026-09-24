@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Git — inventario conflitti merge (User)"
 type: troubleshooting
@@ -62,3 +63,23 @@ File con marker (da risolvere forward-only se riappaiono):
   apertura, la causa reale della recidiva 2026-09-22).
 - Non risolvere in parallelo senza lock; preferire wiki canonico `docs/wiki/` rispetto a duplicati root `docs/*.md`.
 - Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`
+=======
+# Git Conflict Inventory
+
+- Date: 2026-04-28
+- Owner: Modules/User
+- Files with conflict markers: 5
+
+## Files
+
+- docs/archive/historical/volt-folio-logout-error.md
+- docs/archive/historical/volt-folio-logout.md
+- docs/phpstan-fixes-roadmap.md
+- docs/volt-folio-logout-error.md
+- docs/wiki/README.md
+
+## Notes
+
+- Inventory generated from `rg -l "^(<<<<<<<|=======|>>>>>>>)"`.
+- Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
+>>>>>>> 350420cb (Check & fix styling)

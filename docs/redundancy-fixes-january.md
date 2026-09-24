@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Correzioni Ridondanze - Gennaio 2026
 
 ## Problema Identificato
@@ -126,6 +129,7 @@ Prima di committare, verifica:
 ## Collegamenti
 
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
+<<<<<<< HEAD
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
@@ -138,3 +142,8 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+=======
+- [Service Provider Architecture](./service_provider_architecture.md)
+- [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
+
+>>>>>>> 350420cb (Check & fix styling)

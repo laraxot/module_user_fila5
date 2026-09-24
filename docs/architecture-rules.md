@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architectural Rules & Guidelines"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -33,7 +36,12 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 1. **DRY & KISS**: Don't repeat yourself, keep it simple.
 2. **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3. **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
+<<<<<<< HEAD
 4. **Directory Structure**: All domain logic must reside within `app/` and database migrations within `database/`. See the structure section below.
+=======
+4. **Translations**: Use `LangServiceProvider` for automatic label resolution.
+5. **Directory Structure**: All domain logic must reside within `app/` and database migrations within `database/`. See the structure section below.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Directory Structure
 

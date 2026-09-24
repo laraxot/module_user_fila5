@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Contracts\View\Factory;
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
@@ -24,13 +28,18 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
+<<<<<<< HEAD
     public function render(): View
+=======
+    public function render(): View|Factory
+>>>>>>> 350420cb (Check & fix styling)
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
         app(ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
 
+<<<<<<< HEAD
         /** @var view-string */
         $view = 'pub_theme::livewire.auth.passwords.confirm';
 
@@ -40,5 +49,16 @@ class Confirm extends Component
         $res->extends('pub_theme::layouts.auth');
 
         return $res;
+=======
+        /**
+         * @phpstan-var view-string
+         */
+        $view = 'pub_theme::livewire.auth.passwords.confirm';
+
+        /** @var View $result */
+        $result = view($view)->extends('pub_theme::layouts.auth');
+
+        return $result;
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

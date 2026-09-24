@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/password-data.php
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'fields' => [
         'password' => [
@@ -27,6 +34,36 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
                 'same' => 'Le password non coincidono',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'navigation' => [
+        'name' => 'Password Data',
+        'plural' => 'Password Data',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Password Data',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Password Data',
+    'plural_label' => 'Password Data (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Password Data',
+        ],
+        'edit' => [
+            'label' => 'Modifica Password Data',
+        ],
+        'delete' => [
+            'label' => 'Elimina Password Data',
+>>>>>>> 350420cb (Check & fix styling)
         ],
     ],
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "UserFactory Advanced Implementation - COMPLETE ✅"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -308,7 +311,11 @@ $gdprTests = [
 
 ### Primary Documentation
 - [Quaeris Factory Implementation](../laravel/modules/Quaeris/docs/factories/userfactory-implementation-final.md)
+<<<<<<< HEAD
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
+=======
+- [User Module Integration](../laravel/modules/user/docs/user_factory_advanced_integration.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Advanced Analysis](../laravel/modules/Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

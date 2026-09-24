@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Case Sensitivity Rules - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem

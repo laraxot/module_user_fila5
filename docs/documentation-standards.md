@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Standard di Documentazione"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Standard di Documentazione
 
 ## Convenzioni di Naming

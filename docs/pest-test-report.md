@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

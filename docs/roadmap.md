@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Complete Roadmap 2026"
 type: concept
@@ -511,6 +512,15 @@ User Module Dependencies:
 **Priority**: HIGH
 **PHPStan**: ✅ Level 10 (0 errori)
 **Filament**: ✅ 4.x Compatibile
+=======
+# 👥 USER MODULE - ROADMAP 2025
+
+**Modulo**: User (Authentication & Authorization)  
+**Status**: 90% COMPLETATO  
+**Priority**: HIGH  
+**PHPStan**: ✅ Level 10 (0 errori)  
+**Filament**: ✅ 4.x Compatibile  
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 
@@ -601,7 +611,11 @@ User Module
 ## 🚧 IN PROGRESS FEATURES
 
 ### 🌐 Social Login Integration (Priority: MEDIUM)
+<<<<<<< HEAD
 **Status**: 40% COMPLETATO
+=======
+**Status**: 40% COMPLETATO  
+>>>>>>> 350420cb (Check & fix styling)
 **Timeline**: Q1 2025
 
 #### 📋 Tasks
@@ -631,7 +645,11 @@ User Module
 - [ ] GDPR compliance verified
 
 ### 📱 Mobile Authentication (Priority: HIGH)
+<<<<<<< HEAD
 **Status**: 30% COMPLETATO
+=======
+**Status**: 30% COMPLETATO  
+>>>>>>> 350420cb (Check & fix styling)
 **Timeline**: Q1 2025
 
 #### 📋 Tasks
@@ -978,12 +996,18 @@ User Module
 
 ---
 
+<<<<<<< HEAD
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
+=======
+**Status**: 🚧 ACTIVE DEVELOPMENT  
+**Confidence Level**: 98%  
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+<<<<<<< HEAD
 # User Module Roadmap
 
 "Proteggere l'identità: il fondamento della fiducia."
@@ -1060,3 +1084,5 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
+=======
+>>>>>>> 350420cb (Check & fix styling)

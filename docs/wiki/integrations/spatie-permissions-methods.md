@@ -144,6 +144,7 @@ $user->hasPermissionTo('edit articles');
 $user->hasPermissionTo('delete users');
 ```
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_1nZUez
 =======
 Un permesso **mancante in DB** fa esplodere `PermissionDoesNotExist` (500). Per le Policy Filament usare `hasPermissionToOrCreate()`.
@@ -166,6 +167,8 @@ public function hasPermissionToOrCreate(
 Permesso nuovo → accesso negato finché un ruolo non lo riceve. `hasPermissionTo()` resta invariato.
 
 >>>>>>> .merge_file_c3HJFt
+=======
+>>>>>>> 350420cb (Check & fix styling)
 #### 2. `hasAnyPermission($permissions): bool`
 
 Verifica se l'utente ha ALMENO UNO dei permessi specificati.

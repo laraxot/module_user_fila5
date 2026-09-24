@@ -13,7 +13,11 @@ use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
 
 /**
+<<<<<<< HEAD
  * Utenti demo deterministici per il front-office del progetto ospite (login + owner).
+=======
+ * Utenti demo deterministici per FO Fixcity (login + owner ticket).
+>>>>>>> 350420cb (Check & fix styling)
  *
  * Idempotente: updateOrCreate su email.
  */
@@ -43,7 +47,11 @@ class DemoUserSeeder extends Seeder
                 'role' => 'super-admin',
             ],
             [
+<<<<<<< HEAD
                 'email' => 'cittadino@example.test',
+=======
+                'email' => 'cittadino@fixcity.demo',
+>>>>>>> 350420cb (Check & fix styling)
                 'name' => 'Cittadino Demo',
                 'password' => 'password123',
                 'type' => 'customer_user',

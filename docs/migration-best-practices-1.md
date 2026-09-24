@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

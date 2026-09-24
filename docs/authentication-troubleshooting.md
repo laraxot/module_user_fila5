@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Debug Autenticazione - Login Widget"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Debug Autenticazione - Login Widget
 
 ## Introduzione

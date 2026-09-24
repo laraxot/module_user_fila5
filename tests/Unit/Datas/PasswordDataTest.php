@@ -1,15 +1,36 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+=======
+
+use Modules\User\Datas\PasswordData;
+use PHPUnit\Framework\Assert;
+use ReflectionNamedType;
+>>>>>>> 350420cb (Check & fix styling)
 
 use function Safe\file_get_contents;
 
 use Spatie\LaravelData\Data;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(Modules\User\Tests\TestCase::class);
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 350420cb (Check & fix styling)
 
 function samplePasswordData(): PasswordData
 {

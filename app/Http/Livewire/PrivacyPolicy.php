@@ -7,9 +7,18 @@ namespace Modules\User\Http\Livewire;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Livewire\Component;
+<<<<<<< HEAD
 
 use function Safe\file_get_contents;
 
+=======
+use Modules\Tenant\Actions\Markdown\GetLocalizedMarkdownPathAction;
+
+use function Safe\file_get_contents;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> 350420cb (Check & fix styling)
 class PrivacyPolicy extends Component
 {
     /**
@@ -17,6 +26,7 @@ class PrivacyPolicy extends Component
      */
     public function render(): View
     {
+<<<<<<< HEAD
         /** @var view-string $viewName */
         $viewName = 'user::livewire.privacy-policy';
         $policyFile = resource_path('markdown/privacy-policy.md');
@@ -27,6 +37,24 @@ class PrivacyPolicy extends Component
 
         $view->layout('filament::components.layouts.base', [
             'title' => __('user::profile.privacy_policy.title'),
+=======
+        $policyFile = app(GetLocalizedMarkdownPathAction::class)->execute('policy.md');
+        Assert::string($policyFile, 'Policy file path must be a string');
+        if ('' === $policyFile || '#' === $policyFile) {
+            throw new \RuntimeException('Policy file path is empty or invalid');
+        }
+        /**
+         * @phpstan-var view-string
+         */
+        $view_name = 'filament-jet::livewire.privacy-policy';
+        $view_params = [
+            'terms' => Str::markdown(file_get_contents($policyFile)),
+        ];
+        $view = view($view_name, $view_params);
+
+        $view->layout('filament::components.layouts.base', [
+            'title' => __('filament-jet::registration.privacy_policy'),
+>>>>>>> 350420cb (Check & fix styling)
         ]);
 
         return $view;

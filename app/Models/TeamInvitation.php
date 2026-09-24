@@ -63,6 +63,10 @@ use Modules\Xot\Datas\XotData;
  */
 class TeamInvitation extends BaseModel
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -75,12 +79,24 @@ class TeamInvitation extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
      * @return BelongsTo<Model, $this>
      */
     public function team(): BelongsTo
     {
         $xotData = XotData::make();
         /** @var class-string<Model> */
+=======
+     * Get the team that the invitation belongs to.
+     *  BelongsTo<the related model, the current model>
+     * -return BelongsTo<TeamContract, TeamInvitation> No TeamContract ..
+     */
+    /** @return BelongsTo<Team, $this> */
+    public function team(): BelongsTo
+    {
+        $xotData = XotData::make();
+        /** @var class-string<Team> */
+>>>>>>> 350420cb (Check & fix styling)
         $team_class = $xotData->getTeamClass();
 
         return $this->belongsTo($team_class);

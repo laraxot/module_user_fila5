@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "No Filament Labels Rule"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./no-notifications-migration-in-user-module.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # No Filament Labels Rule
 
 **REGOLA PERMANENTE**: Nessun utilizzo di `->label()`, `->placeholder()`, o `->helperText()` nei widget Filament.

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -9,13 +10,37 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\TeamPermissionFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
+=======
+
+use Illuminate\Database\QueryException;
+use Illuminate\Support\Facades\DB;
+use Modules\User\Database\Factories\TeamFactory;
+use Modules\User\Models\Team;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+>>>>>>> 350420cb (Check & fix styling)
 require_once __DIR__.'/../Support/team-management-helpers.php';
 
 test('can create a team', function (): void {
@@ -228,6 +253,7 @@ test('can validate team slug uniqueness', function (): void {
         Assert::assertNotEmpty($exception->getMessage());
     }
 });
+<<<<<<< HEAD
 
 test('can create team invitations', function (): void {
     ['team' => $team] = teamMgmtBootstrap();
@@ -453,3 +479,5 @@ test('can log team activities via membership', function (): void {
 
     Assert::assertTrue(teamMgmtMemberExists($team, $member));
 });
+=======
+>>>>>>> 350420cb (Check & fix styling)

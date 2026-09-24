@@ -6,6 +6,7 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "notifications folio route name english area-personale notifiche forbidden folio list"
 issues:
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -15,6 +16,13 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - https://github.com/laraxot/base_fixcity_fila5/issues/289
+related:
+  - notifications-folio-page.md
+  - notifications-runtime-model.md
+  - ../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # notifications — named route Folio FO

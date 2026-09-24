@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-report-initial
@@ -16,3 +17,8 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
 
  [OK] No errors        
+=======
+
+ [OK] No errors        
+
+>>>>>>> 350420cb (Check & fix styling)

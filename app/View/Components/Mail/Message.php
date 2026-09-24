@@ -28,7 +28,11 @@ class Message extends Component
         $metatag = MetatagData::make();
         $view = 'user::components.mail.html.message';
         $view_params = [
+<<<<<<< HEAD
             'logo' => asset($metatag->getBrandLogo()),
+=======
+            'logo' => asset($metatag->getLogoHeader()),
+>>>>>>> 350420cb (Check & fix styling)
         ];
 
         return view($view, $view_params);

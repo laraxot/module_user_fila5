@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Laraxot Migration Philosophy & Strategy"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Laraxot Migration Philosophy & Strategy
 
 ## Core Principles

@@ -1,8 +1,88 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+@endphp
+
+@php
+@endphp
+
+@php
+@endphp
+
+@php
+@endphp
+
+@php
+@endphp
+
+@php
+@endphp
+
+>>>>>>> 350420cb (Check & fix styling)
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <!-- Basic Information Section -->
     <div class="bg-white rounded-lg shadow p-6">
@@ -201,4 +281,8 @@ declare(strict_types=1);
         </dl>
     </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 350420cb (Check & fix styling)

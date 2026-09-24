@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Accessor Delegation Pattern (SACRO)"
 type: pattern
@@ -18,6 +19,8 @@ related:
   - "./actions-structure-1.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Accessor Delegation Pattern (SACRO)
 
 Questo documento descrive il pattern di delegazione per gli accessor Eloquent con auto-persistenza, utilizzato per garantire performance e pulizia nei modelli del modulo User (es. BaseUser).

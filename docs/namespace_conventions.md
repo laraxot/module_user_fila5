@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -198,10 +201,17 @@ Se l'override del tema non funziona:
 
 - [Documentazione Laravel View](https://laravel.com/docs/views)
 - [Regole Struttura Directory Auth](../../../.windsurf/rules/translations.md#regola-critica-struttura-directory-auth-laravel)
+<<<<<<< HEAD
 - [Documentazione Tema One](../../../Themes/One/docs/README.md)
+=======
+- [Documentazione Tema One](../../../themes/one/docs/readme.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 
 *Documento creato: Dicembre 2024*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+>>>>>>> 350420cb (Check & fix styling)
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -202,8 +205,14 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
+<<<<<<< HEAD
 - [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
 - [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-2.md)
 - [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-2.md)
+=======
+- [Quaeris Module](../../Quaeris/docs/modelli_factory_seeder_analisi.md)
+- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

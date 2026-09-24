@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "No Log calls in production PHP code"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # No Log calls in production PHP code
 
 ## Rule

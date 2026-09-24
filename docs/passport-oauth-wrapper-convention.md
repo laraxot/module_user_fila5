@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport OAuth Wrapper Convention"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Passport OAuth Wrapper Convention
 
 ## Rule

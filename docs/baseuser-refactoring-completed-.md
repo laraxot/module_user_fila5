@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -21,6 +22,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025
@@ -261,18 +264,24 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
+<<<<<<< HEAD
 - [User Module README](./README.md)
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 - [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
+<<<<<<< HEAD
 - [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

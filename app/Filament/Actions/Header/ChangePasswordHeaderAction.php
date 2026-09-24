@@ -1,22 +1,39 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
 namespace Modules\User\Filament\Actions\Header;
 
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Filament\Actions\Header;
+
+use Filament\Actions\Action;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 final class ChangePasswordHeaderAction extends XotBaseAction
+=======
+use Webmozart\Assert\Assert;
+
+final class ChangePasswordHeaderAction extends Action
+>>>>>>> 350420cb (Check & fix styling)
 {
     protected function setUp(): void
     {

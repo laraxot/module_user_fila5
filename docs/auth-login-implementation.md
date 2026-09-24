@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: concept
@@ -18,14 +19,22 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Implementazione Corretta della Pagina di Login
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+=======
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
+- [Implementazione Auth Pages](/laravel/modules/user/docs/auth_pages_implementation.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt_folio_auth_implementation.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -224,9 +233,15 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+=======
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
+- [Implementazione Auth Pages](/laravel/modules/user/docs/auth_pages_implementation.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt_folio_auth_implementation.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -254,7 +269,10 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     required
 >
     <x-filament::input
+<<<<<<< HEAD
     <x-filament::input 
+=======
+>>>>>>> 350420cb (Check & fix styling)
         type="email"
         id="email"
         name="email"

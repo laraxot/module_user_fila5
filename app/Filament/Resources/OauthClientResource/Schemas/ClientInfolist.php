@@ -7,18 +7,30 @@ namespace Modules\User\Filament\Resources\OauthClientResource\Schemas;
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
+=======
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
+use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+>>>>>>> 350420cb (Check & fix styling)
 
 class ClientInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
     {
         return [
             'oauth_info' => Section::make('OAuth Client Information')
+=======
+    public static function getInfolistSchema(): array
+    {
+        return [
+            'oauth_info' => XotBaseSection::make('OAuth Client Information')
+>>>>>>> 350420cb (Check & fix styling)
                 ->schema([
                     'name' => TextEntry::make('name'),
                     'user' => TextEntry::make('user.name'),

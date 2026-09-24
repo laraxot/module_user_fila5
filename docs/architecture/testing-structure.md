@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -311,3 +314,13 @@ dump($variable);
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 350420cb (Check & fix styling)

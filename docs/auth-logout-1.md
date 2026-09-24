@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Componente di Logout"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Componente di Logout
 
 ## Problemi Identificati

@@ -4,6 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
+<<<<<<< HEAD
 updated: 2026-09-21
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
@@ -17,18 +18,34 @@ related:
   - "./log.md"
   - "./overview.md"
   - "./socialite-architecture.md"
+=======
+updated: 2026-06-18
+qmd: "user module wiki index auth socialite permissions filament forms"
+issues:
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../docs/wiki/bmad/architecture.md
+  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ./concepts/second-brain-local-discipline.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User Module LLM Wiki
 
 Indice operativo del wiki User.
 
+<<<<<<< HEAD
 ## BMAD — SuperAdmin widget (Epic 9, solo docs)
 
 - [bmad README](../bmad/README.md) — indice slice
 - [tech-spec](../bmad/tech-spec.md) — modifiche `AdminPanelProvider`
 - [epics](../bmad/epics.md) · [9.2 hook](../stories/9.2.admin-panel-provider-hook.story.md)
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
@@ -46,8 +63,11 @@ Indice operativo del wiki User.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
+<<<<<<< HEAD
   - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
   - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
+=======
+>>>>>>> 350420cb (Check & fix styling)
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.
 
@@ -63,6 +83,7 @@ Indice operativo del wiki User.
 
 Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
+<<<<<<< HEAD
 ## Runtime config & schema (2026-07-27)
 
 | Pagina | Argomento |
@@ -73,6 +94,8 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md) | Profiles id/uuid |
 | [migration-naming-religion-user](./concepts/migration-naming-religion-user.md) | Naming migrazioni User |
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
@@ -101,7 +124,11 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [socialite-github-tenant](./concepts/socialite-github-tenant.md) | Concept | OAuth GitHub | 2026-04-27 |
 | [socialite-facebook-tenant](./concepts/socialite-facebook-tenant.md) | Concept | OAuth Facebook | 2026-04-27 |
 | [socialite-linkedin-tenant](./concepts/socialite-linkedin-tenant.md) | Concept | OAuth LinkedIn | 2026-04-27 |
+<<<<<<< HEAD
 | [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-.md.md) | Troubleshooting | Widget property types PHPStan | 2026-05-06 |
+=======
+| [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-2026-05-06.md) | Troubleshooting | Widget property types PHPStan | 2026-05-06 |
+>>>>>>> 350420cb (Check & fix styling)
 | [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali | 2026-06-18 |
 | [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 24 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
 
@@ -116,8 +143,12 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
+<<<<<<< HEAD
 - NON modificare `laravel/config/permission.php` → `table_names` per fix 1146 (vedi [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md))
 - NON hardcodare nomi tabella pivot su modelli (`$table`) — usare `getTable()` da config
+=======
+- NON hardcodare password - usare `.env` (vedi [laravel-security-audit](../../../../docs/wiki/concepts/laravel-security-audit.md))
+>>>>>>> 350420cb (Check & fix styling)
 
 ## False Friends
 
@@ -130,7 +161,14 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 |--------|------|-----------|
 | [socialite-development](./concepts/socialite-development.md) | Concept | Socialite troubleshooting |
 | [spatie-permission-team-model-not-configured](./troubleshooting/spatie-permission-team-model-not-configured.md) | Troubleshooting | Team model mancante in config permission |
+<<<<<<< HEAD
 | [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-.md.md) | Troubleshooting | Tipizzazione widget Livewire/Filament |
 | [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali |
 
 Aggiornato: 2026-07-27
+=======
+| [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-2026-05-06.md) | Troubleshooting | Tipizzazione widget Livewire/Filament |
+| [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali |
+
+Aggiornato: 2026-05-06
+>>>>>>> 350420cb (Check & fix styling)

@@ -1,14 +1,34 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
  * @see https://github.com/3x1io/filament-user/blob/main/src/resources/UserResource.php
  */
 
+<<<<<<< HEAD
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
+=======
+declare(strict_types=1);
+
+namespace Modules\User\Filament\Resources;
+
+use Carbon\Carbon;
+use Carbon\CarbonInterface;
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Section;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\HtmlString;
+use Modules\User\Filament\Forms\Components\UserSection;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -27,6 +47,60 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'worker' => UserSection::make('worker'),
+            'section01' => Section::make([
+                'name' => TextInput::make('name')->required(),
+                // 'email' => TextInput::make('email')->required()->unique(ignoreRecord: true),
+                'password' => TextInput::make('password')
+                    ->password()
+                    ->dehydrateStateUsing(function ($state): ?string {
+                        // Type narrowing for PHPStan Level 10
+                        if (! is_string($state) || empty($state)) {
+                            return null;
+                        }
+
+                        return Hash::make($state);
+                    })
+                    ->required(fn ($livewire) => $livewire instanceof CreateUser),
+            ])->columnSpan(8),
+            'section02' => Section::make([
+                'created_at' => Placeholder::make('created_at')->content(static function ($record) {
+                    // Type narrowing for PHPStan Level 10
+                    if (! $record instanceof Model) {
+                        return new HtmlString('&mdash;');
+                    }
+
+                    // PHPStan Level 10: hasAttribute() invece di property_exists() per Eloquent
+                    if (! $record->hasAttribute('created_at')) {
+                        return new HtmlString('&mdash;');
+                    }
+
+                    /** @var Carbon|null $createdAt */
+                    $createdAt = $record->getAttribute('created_at');
+
+                    if (null === $createdAt) {
+                        return new HtmlString('&mdash;');
+                    }
+                    if ($createdAt instanceof CarbonInterface) {
+                        return $createdAt->diffForHumans();
+                    }
+                    if ($createdAt instanceof \DateTimeInterface) {
+                        return $createdAt->format('Y-m-d H:i:s');
+                    }
+
+                    return new HtmlString('&mdash;');
+                }),
+            ])->columnSpan(4),
+        ];
+    }
+
+>>>>>>> 350420cb (Check & fix styling)
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;
@@ -46,11 +120,23 @@ class UserResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the model class name for this resource.
+     *
+>>>>>>> 350420cb (Check & fix styling)
      * @return class-string<Model>
      */
     #[\Override]
     public static function getModel(): string
     {
+<<<<<<< HEAD
         return XotData::make()->getUserClass();
+=======
+        $xot = XotData::make();
+
+        /* @var class-string<Model> */
+        return $xot->getUserClass();
+>>>>>>> 350420cb (Check & fix styling)
     }
 }

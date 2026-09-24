@@ -4,6 +4,7 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
+<<<<<<< HEAD
 updated: 2026-09-21
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
@@ -25,6 +26,21 @@ related:
 - 2026-09-21: runtime `/admin` — `No hint path defined for [filament-jet]`: SuperAdmin e gemelli Livewire usano `user::` (viste nel modulo). FilamentJet non è una dipendenza. Doc: [filament_errors.md](../filament_errors.md).
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
+=======
+updated: 2026-07-13
+qmd: "user module wiki log phpstan no comment dependency"
+issues:
+  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+  - ./concepts/no-comment-module-dependency.md
+  - ./rules/can-comment-retired-wrong-placement.md
+---
+
+- 2026-07-13: `phpstan analyse Modules` (6740 file, cache cleared) → **0 errori**. Fix widget: `EnvWidget::$data` tipizzato; `RegistrationWidget` proprietà Livewire allineate a `XotBaseWidget`.
+- 2026-07-13: eliminato duplicato `Widgets/Auth/Schemas/UserForm.php` — SSoT unico `Resources/UserResource/Schemas/UserForm.php` (`getFormSchema` BO + `get*FormSchema` FO). Login/RegisterWidget già delegano via `formClass()`/`schemaMethod()`.
+>>>>>>> 350420cb (Check & fix styling)
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
@@ -55,7 +71,11 @@ related:
 - risolti errori PHPStan mirati su `PassportDashboard`, `EditUserWidget` e `RegistrationWidget`.
 - regola documentata: proprieta' Livewire tipizzate, `class-string` validati prima dell'assegnazione, nessun default stringa vuota per `class-string`.
 - evitato override locale di `$view` nei widget quando `XotBaseWidget::resolveView()` puo' calcolare la vista.
+<<<<<<< HEAD
 - nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-.md.md`.
+=======
+- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-2026-05-06.md`.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## [2026-04-28] fix | spatie permission team model config missing su route admin
 - errore runtime gestito: `Spatie\Permission\Exceptions\TeamModelNotConfigured` su `/admin`.
@@ -153,9 +173,21 @@ related:
 - Enhancements proposti: canAny(), canAll(), scope(), after() hooks
 - Commit: docs: document policy inheritance boundary decision
 
+<<<<<<< HEAD
 ## 2026-06-10 — session learnings
 
 - Notifiche: runtime User, schema Notify; `NotificationSchema::isReadable()` per guard FO
+=======
+## 2026-07-12 — app/Support eliminato → QueueableAction
+
+- Rimossa `app/Support/` (Hasher, Socialite utils, NotificationSchema, AuthenticationLogQuery, Utils Shield dead code)
+- Azioni: `HashOtpValueAction`, `ResolveUserNameFieldsFromSocialiteAction`, `AnalyzeSocialiteEmailDomainAction`, `IsNotificationSchemaReadableAction`, `GetAuthenticationLogQueryForAuthenticatableAction`
+- Canon: [no-app-support-queueable-actions](concepts/no-app-support-queueable-actions.md)
+
+## 2026-06-10 — session learnings
+
+- Notifiche: runtime User, schema Notify; `IsNotificationSchemaReadableAction` per guard FO
+>>>>>>> 350420cb (Check & fix styling)
 - Folio: `name('notifications')`; vietato `area-personale.notifiche`
 - `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
 - Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
@@ -164,3 +196,8 @@ related:
 
 - INDEX Folio FO con cross-link Cms
 - Catena notifications: Notify schema → User page → Sixteen link
+<<<<<<< HEAD
+=======
+
+- 2026-07-13: PHPStan L10: `RegistrationWidget` non deve lasciare variabili locali inutilizzate dopo `execute()`; gli state bag form vanno tipizzati in coerenza con `XotBaseWidget`.
+>>>>>>> 350420cb (Check & fix styling)

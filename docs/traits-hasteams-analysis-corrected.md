@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -547,5 +550,9 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
+<<<<<<< HEAD
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+=======
+- [docs/phpstan_fixes.md](../../../../docs/project/phpstan_fixes.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)

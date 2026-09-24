@@ -5,6 +5,7 @@ status: approved
 tags: [agent, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
+<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
 related:
   - "./00-index-1.md"
@@ -15,6 +16,11 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+related:
+  - "../../Xot/docs/wiki/concepts/agent-confidence-discipline.md"
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Disciplina agenti per massimizzare la confidenza

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "user module code and documentation optimization analysis"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -48,7 +51,11 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
+<<<<<<< HEAD
 │   ├── profile-management-2.md
+=======
+│   ├── profile_management.md
+>>>>>>> 350420cb (Check & fix styling)
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -59,8 +66,13 @@ docs/
 ├── integrations/
 │   ├── socialite.md
 │   ├── passport.md
+<<<<<<< HEAD
 │   ├── spatie-permissions-2.md
 │   └── two-factor-2.md
+=======
+│   ├── spatie_permissions.md
+│   └── two_factor.md
+>>>>>>> 350420cb (Check & fix styling)
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

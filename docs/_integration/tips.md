@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "tips"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # tips
 
 <!-- Contenuto migrato da _docs/tips.txt -->

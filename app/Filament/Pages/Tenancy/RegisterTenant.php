@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages\Tenancy;
 
+<<<<<<< HEAD
+=======
+use Filament\Pages\Tenancy\RegisterTenant as BaseRegisterTenant;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -11,11 +15,18 @@ use Illuminate\Support\Str;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\BaseTenant;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
 class RegisterTenant extends XotBaseRegisterTenant
+=======
+use Modules\Xot\Filament\Traits\TransTrait;
+use Webmozart\Assert\Assert;
+
+class RegisterTenant extends BaseRegisterTenant
+>>>>>>> 350420cb (Check & fix styling)
 {
     use TransTrait;
 
@@ -49,11 +60,16 @@ class RegisterTenant extends XotBaseRegisterTenant
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string, Component>
+=======
+     * @return array<Component>
+>>>>>>> 350420cb (Check & fix styling)
      */
     public function getFormSchema(): array
     {
         $resourceClass = $this->resolveResourceClass();
+<<<<<<< HEAD
         $schema = $resourceClass::getFormSchema();
         Assert::isArray($schema);
 
@@ -64,6 +80,15 @@ class RegisterTenant extends XotBaseRegisterTenant
         }
 
         return $components;
+=======
+
+        $schemaRaw = $resourceClass::getFormSchema();
+
+        /** @var array<Component> $schema */
+        $schema = $schemaRaw;
+
+        return $schema;
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**

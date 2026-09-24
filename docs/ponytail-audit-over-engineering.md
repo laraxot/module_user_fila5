@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Ponytail audit — User (over-engineering)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Ponytail audit — User (over-engineering)
 
 **Ultimo run:** 2026-07-01  
@@ -50,5 +53,9 @@ related:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [00-index-1.md](./00-index-1.md)
+=======
+- [00-INDEX.md](./00-INDEX.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)

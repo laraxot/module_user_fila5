@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Case Sensitivity Rules - User Module"
 type: rule
@@ -18,13 +19,18 @@ related:
   - "./dependency.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
+<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> 350420cb (Check & fix styling)
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
 
 ## File/Directory Rimossi da User Module

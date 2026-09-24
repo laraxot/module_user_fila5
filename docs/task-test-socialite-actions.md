@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Test Copertura Socialite Actions - User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Task: Test Copertura Socialite Actions - User
 
 **Modulo**: User

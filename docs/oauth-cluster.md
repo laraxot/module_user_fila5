@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "OAuth Cluster - Analisi Errore e Correzione"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Problema**: Cluster Passport vuoto e file duplicato

@@ -7,6 +7,7 @@ created: 2026-05-07
 updated: 2026-05-07
 tags: [xotbase, filament, tables, enforcement]
 related:
+<<<<<<< HEAD
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
   - "./code-redundancy-user.md"
@@ -15,6 +16,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+  - ../../../../../../docs/wiki/concepts/xotbase-table-columns-enforcement.md
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User Module: XotBaseResourceTable Columns

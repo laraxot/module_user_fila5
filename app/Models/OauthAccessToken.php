@@ -7,7 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
+<<<<<<< HEAD
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\OauthAccessToken.
@@ -56,7 +59,10 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  */
 class OauthAccessToken extends PassportToken
 {
+<<<<<<< HEAD
     use ResolvesPassportTokenUserRelation;
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 }

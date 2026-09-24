@@ -1,10 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 <x-filament::widget>
     <x-filament::card>
         {{-- Widget content --}}
+<<<<<<< HEAD
         @php
             // Debug information if needed
             // dddx([
@@ -14,5 +19,8 @@ declare(strict_types=1);
             // ]);
         @endphp
         {{ $record->name ?? 'Utente' }}
+=======
+                {{ $record->name ?? 'Utente' }}
+>>>>>>> 350420cb (Check & fix styling)
     </x-filament::card>
 </x-filament::widget>

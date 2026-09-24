@@ -16,7 +16,11 @@ class ProfileInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model Profile.php -> id, uuid, user_id, type, first_name, last_name, email, phone, address, bio, avatar, timezone, locale, status, is_active, preferences
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'id' => TextEntry::make('id'),

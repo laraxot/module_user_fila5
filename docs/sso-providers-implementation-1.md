@@ -1,6 +1,7 @@
 ---
 module: theme
 topic: sso-providers-implementation-1
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/sso-providers-implementation-5.md
 related:
   - "./00-index-1.md"
@@ -14,3 +15,9 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso-providers-implementation-5.md
+=======
+canonical: ../../../Themes/docs/shared-components/sso_providers_implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sso_providers_implementation.md
+>>>>>>> 350420cb (Check & fix styling)

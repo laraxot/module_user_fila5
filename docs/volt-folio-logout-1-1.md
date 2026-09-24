@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: concept
@@ -18,12 +19,19 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions.md)
 - [Analisi Logout Blade](./logout-blade-analysis.md)
+=======
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Panoramica

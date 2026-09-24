@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Profile UUID Philosophy - Zen Approach
 
 ## Il Problema (What)
@@ -291,3 +292,12 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
+=======
+---
+module: theme
+topic: profile-uuid-philosophy
+canonical: ../../../../Themes/docs/shared-components/PROFILE_UUID_PHILOSOPHY.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/PROFILE_UUID_PHILOSOPHY.md
+>>>>>>> 350420cb (Check & fix styling)

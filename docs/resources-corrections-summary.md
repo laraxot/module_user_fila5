@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Resources Corrections Summary - 2025-01-22"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo

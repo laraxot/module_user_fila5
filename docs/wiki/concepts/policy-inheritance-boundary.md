@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Policy Inheritance Boundary"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Policy Inheritance Boundary
 
 > Quando estendere `UserBasePolicy` vs `XotBasePolicy` - Decisione architetturale documentata

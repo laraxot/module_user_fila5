@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament 5 Panel Governance Rule"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Filament 5 Panel Governance Rule
 
 ## Fonte

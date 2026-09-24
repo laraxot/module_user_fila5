@@ -137,24 +137,38 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property Collection<int, OauthClient> $oauthApps
  * @property int|null                     $oauth_apps_count
  *
+<<<<<<< HEAD
  * @method static Builder<static>|User childrenWith(array<int|string, mixed> $relations)
  * @method static Builder<static>|User childrenWithCount(array<int|string, mixed> $relations)
+=======
+ * @method static Builder<static>|User childrenWith(array<int|string, string> $relations)
+ * @method static Builder<static>|User childrenWithCount(array<int|string, string> $relations)
+>>>>>>> 350420cb (Check & fix styling)
  * @method static Builder<static>|User whereSurname($value)
  * @method static Builder<static>|User whereTwoFactorConfirmedAt($value)
  * @method static Builder<static>|User whereTwoFactorRecoveryCodes($value)
  * @method static Builder<static>|User whereTwoFactorSecret($value)
  * @method static Builder<static>|User whereUuid($value)
  *
+<<<<<<< HEAD
  * @property Collection<int, Team> $membershipTeams
  * @property int|null              $membership_teams_count
  *
  * @method static Builder<static>|User team($teams, bool $without = false)
  * @method static Builder<static>|User withoutTeam($teams)
  *
+=======
+>>>>>>> 350420cb (Check & fix styling)
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+    public $connection = 'user';
+
+>>>>>>> 350420cb (Check & fix styling)
     /** @var array<string, class-string> */
     protected $childTypes = [
         'master_admin' => self::class,

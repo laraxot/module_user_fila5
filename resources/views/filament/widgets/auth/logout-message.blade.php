@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 <div class="text-center">
     <h2 class="mt-2 text-2xl font-bold tracking-tight text-gray-900">

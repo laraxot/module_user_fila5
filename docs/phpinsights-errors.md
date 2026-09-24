@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Phpinsights Errors"
 type: concept
@@ -17,6 +18,10 @@ related:
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
+=======
+
+
+>>>>>>> 350420cb (Check & fix styling)
 
 [[DATE] 21:05:06] `Modules/User/app`
 

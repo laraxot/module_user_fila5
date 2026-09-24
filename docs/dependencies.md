@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dependencies (Module User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Dependencies (Module User)
 
 Canonical dependency map:

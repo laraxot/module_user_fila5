@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "OAuth Cluster Implementation Summary"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # OAuth Cluster Implementation Summary
 
 **Metodologia**: Super Mucca

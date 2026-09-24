@@ -11,5 +11,9 @@ use Modules\User\Models\User;
  */
 trait HasUserTestCase
 {
+<<<<<<< HEAD
     protected User $user;
+=======
+    public ?User $user = null;
+>>>>>>> 350420cb (Check & fix styling)
 }

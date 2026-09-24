@@ -1,6 +1,7 @@
 ---
 module: theme
 topic: spatie-permissions-methods-1
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-methods-5.md
 related:
   - "./00-index-1.md"
@@ -14,3 +15,9 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-methods-5.md
+=======
+canonical: ../../../Themes/docs/shared-components/spatie_permissions_methods.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/spatie_permissions_methods.md
+>>>>>>> 350420cb (Check & fix styling)

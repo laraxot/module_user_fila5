@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Authentication Performance Optimization - User Module"
 type: concept
@@ -15,6 +16,8 @@ related:
   - "./authentication-performance-optimization.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified

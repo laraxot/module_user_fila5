@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
@@ -56,7 +59,11 @@ related:
 5. **PersonalAccessTokenResource**
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
+<<<<<<< HEAD
 ### Modulo ExternalProject
+=======
+### Modulo Quaeris
+>>>>>>> 350420cb (Check & fix styling)
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

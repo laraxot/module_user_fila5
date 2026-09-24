@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 @props([
     'content' => 'I dati personali forniti saranno trattati nel rispetto della normativa sulla privacy.',

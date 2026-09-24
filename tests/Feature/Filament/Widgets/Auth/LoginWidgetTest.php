@@ -15,11 +15,15 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_zqvPaK
 /**
 =======
 /*
 >>>>>>> .merge_file_rXWJib
+=======
+/*
+>>>>>>> 350420cb (Check & fix styling)
  * Coverage for `Modules\User\Filament\Widgets\Auth\LoginWidget`, the SSoT login
  * widget registered by `UserServiceProvider::registerLivewireAuthWidgets()`.
  *

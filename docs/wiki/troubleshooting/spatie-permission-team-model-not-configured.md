@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Spatie Permission Team Model Not Configured"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./phpstan-widget-property-types.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Spatie Permission Team Model Not Configured
 
 ## Context

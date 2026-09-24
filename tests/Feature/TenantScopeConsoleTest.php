@@ -4,6 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+<<<<<<< HEAD
+=======
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Foundation\Application;
@@ -22,9 +32,15 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
+<<<<<<< HEAD
     TestCase::skipUnlessUsersTableReady();
     TestCase::$tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
     TestCase::$tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
+=======
+    $this->skipUnlessUsersTableReady();
+    $this->tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
+    $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
+>>>>>>> 350420cb (Check & fix styling)
 });
 
 describe('Tenant Scope Console', function (): void {
@@ -66,9 +82,15 @@ describe('Tenant Scope Console', function (): void {
 
     test('allows querying all users in console context without tenant filter', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $tenant1 = TestCase::requireTenant1();
         $tenant2 = TestCase::requireTenant2();
         TestCase::skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+=======
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+>>>>>>> 350420cb (Check & fix styling)
 
         $user1 = UserFactory::new()->createOne([
             'name' => 'Tenant 1 User',
@@ -89,8 +111,13 @@ describe('Tenant Scope Console', function (): void {
 
     test('automatically sets tenant id when creating user in http context', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $tenant1 = TestCase::requireTenant1();
         TestCase::skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+=======
+        $tenant1 = $this->requireTenant1();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+>>>>>>> 350420cb (Check & fix styling)
 
         actingAs(UserFactory::new()->createOne());
 
@@ -109,9 +136,15 @@ describe('Tenant Scope Console', function (): void {
 
     test('filters users by tenant in http context', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $tenant1 = TestCase::requireTenant1();
         $tenant2 = TestCase::requireTenant2();
         TestCase::skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+=======
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+>>>>>>> 350420cb (Check & fix styling)
 
         $user1 = UserFactory::new()->createOne([
             'name' => 'Tenant 1 User Only',
@@ -164,8 +197,13 @@ describe('Tenant Scope Console', function (): void {
 
     test('allows manual tenant id assignment in console context', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $tenant1 = TestCase::requireTenant1();
         TestCase::skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+=======
+        $tenant1 = $this->requireTenant1();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+>>>>>>> 350420cb (Check & fix styling)
 
         $email = 'manual-tenant-'.uniqid('', true).'@example.com';
         $user = User::create([
@@ -182,9 +220,15 @@ describe('Tenant Scope Console', function (): void {
 
     test('allows querying users by specific tenant in console', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $tenant1 = TestCase::requireTenant1();
         $tenant2 = TestCase::requireTenant2();
         TestCase::skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+=======
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+>>>>>>> 350420cb (Check & fix styling)
 
         UserFactory::new()->count(3)->create(['tenant_id' => $tenant1->id]);
         UserFactory::new()->count(2)->create(['tenant_id' => $tenant2->id]);
@@ -204,7 +248,11 @@ describe('Tenant Scope Console', function (): void {
 
     test('does not crash when booting in console context', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $email = 'boot-test-'.uniqid('', true).'@example.com';
         $user = new User([
@@ -221,7 +269,11 @@ describe('Tenant Scope Console', function (): void {
 
     test('skips tenant assignment in console context during creating event', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $email = 'creating-event-'.uniqid('', true).'@example.com';
         $user = User::create([

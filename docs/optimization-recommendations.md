@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -571,3 +574,7 @@ php artisan user:benchmark  # Target: < 100ms
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)

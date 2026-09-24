@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Activity Log"
 type: concept
@@ -12,6 +13,8 @@ related:
   - "./index.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Activity Log
 
 > **Module**: User

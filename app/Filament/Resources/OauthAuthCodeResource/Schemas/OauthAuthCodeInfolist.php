@@ -16,7 +16,11 @@ class OauthAuthCodeInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model OauthAuthCode.php -> id, user_id, client_id, scopes, revoked, expires_at
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'id' => TextEntry::make('id'),

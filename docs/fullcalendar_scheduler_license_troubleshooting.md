@@ -187,7 +187,11 @@ return [
 ```php
 <?php
 
+<<<<<<< HEAD
 namespace Modules\SaluteOra\app\Providers\Filament;
+=======
+namespace Modules\Quaeris\app\Providers\Filament;
+>>>>>>> 350420cb (Check & fix styling)
 
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 
@@ -234,7 +238,11 @@ class AdminPanelProvider extends XotBasePanelProvider
                 'resourceTimeGrid',
             ],
             
+<<<<<<< HEAD
             // Configurazioni specifiche per SaluteOra
+=======
+// Configurazioni specifiche per Quaeris
+>>>>>>> 350420cb (Check & fix styling)
             'locale' => 'it',
             'timezone' => 'Europe/Rome',
             'firstDay' => 1,
@@ -316,7 +324,11 @@ class FullCalendarDebug extends Command
 }
 ```
 
+<<<<<<< HEAD
 ## Best Practices per SaluteOra
+=======
+## Best Practices per Quaeris
+>>>>>>> 350420cb (Check & fix styling)
 
 ### 1. Sicurezza Licenza
 ```php
@@ -409,11 +421,19 @@ const calendarOptions = {
 
 ## Conclusioni
 
+<<<<<<< HEAD
 La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come SaluteOra. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
+=======
+La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come Quaeris. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.
+>>>>>>> 350420cb (Check & fix styling)
 
 **Punti Chiave:**
 1. **Licenza obbligatoria** per uso commerciale in produzione
 2. **Plugin premium richiesti** per `schedulerLicenseKey`
 3. **Workaround disponibili** per bug noti nelle versioni 5.x-6.x
 4. **Configurazione ambiente-specifica** per sviluppo vs produzione
+<<<<<<< HEAD
 5. **Monitoring e logging** per troubleshooting proattivo 
+=======
+5. **Monitoring e logging** per troubleshooting proattivo 
+>>>>>>> 350420cb (Check & fix styling)

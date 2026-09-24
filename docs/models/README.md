@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Model Documentation"
 type: concept
@@ -16,6 +17,8 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Module - Model Documentation
 
 **Modulo**: User

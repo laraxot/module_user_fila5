@@ -1,14 +1,24 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 function createMockSocialiteUserForDomain(?string $email): SocialiteUser
 {
@@ -26,12 +36,17 @@ describe('AnalyzeSocialiteEmailDomainAction', function () {
     it('throws for empty provider', function () {
         $ssoUser = createMockSocialiteUserForDomain('user@example.com');
 
+<<<<<<< HEAD
         try {
             app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, '');
             Assert::fail('Expected InvalidArgumentException');
         } catch (InvalidArgumentException $exception) {
             Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
         }
+=======
+        expect(fn () => app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, ''))
+            ->toThrow(InvalidArgumentException::class);
+>>>>>>> 350420cb (Check & fix styling)
     });
 
     it('detects first party domain', function () {

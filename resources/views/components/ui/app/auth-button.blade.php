@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> 350420cb (Check & fix styling)
 @php
     $user = auth()->user();
     $locale = app()->getLocale();

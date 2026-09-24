@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
@@ -15,13 +16,23 @@ use Laravel\Passport\ClientRepository;
 use Laravel\Passport\Passport;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
+=======
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Mockery\MockInterface;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -79,7 +90,11 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
+<<<<<<< HEAD
         SoftDeletes::class,
+=======
+        Illuminate\Database\Eloquent\SoftDeletes::class,
+>>>>>>> 350420cb (Check & fix styling)
         $traits,
         true
     );
@@ -106,8 +121,13 @@ function setupFilamentAdminPanel(): void
     try {
         $panel = $filament::getPanel('user::admin');
     } catch (Throwable) {
+<<<<<<< HEAD
         $panelProvider = new AdminPanelProvider(app());
         $panel = $panelProvider->panel(Panel::make());
+=======
+        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Filament\Panel::make());
+>>>>>>> 350420cb (Check & fix styling)
         $filament::registerPanel($panel);
     }
 
@@ -181,9 +201,15 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
     });
 }
 
+<<<<<<< HEAD
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
     return new IsUserAllowedAction();
+=======
+function makeIsUserAllowedAction(): Modules\User\Actions\Socialite\IsUserAllowedAction
+{
+    return new Modules\User\Actions\Socialite\IsUserAllowedAction();
+>>>>>>> 350420cb (Check & fix styling)
 }
 
 /**
@@ -216,34 +242,59 @@ function skipLegacyRedirectPersistenceCheck(): void
 
 function ensurePersonalAccessClient(): void
 {
+<<<<<<< HEAD
     $clientModel = Passport::client();
+=======
+    $clientModel = Laravel\Passport\Passport::client();
+>>>>>>> 350420cb (Check & fix styling)
 
     if ($clientModel->newQuery()->where('revoked', false)->exists()) {
         return;
     }
 
+<<<<<<< HEAD
     $repository = app(ClientRepository::class);
+=======
+    $repository = app(Laravel\Passport\ClientRepository::class);
+>>>>>>> 350420cb (Check & fix styling)
     $repository->createPersonalAccessGrantClient('Test Personal Access Client');
 }
 
 /**
+<<<<<<< HEAD
  * @return array<int, Component|Action|ActionGroup>
  */
 function userResourceSectionComponents(TestCase $testCase, Component $section): array
 {
     Assert::assertInstanceOf(Section::class, $section);
+=======
+ * @return array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup>
+ */
+function userResourceSectionComponents(Modules\User\Tests\TestCase $testCase, Filament\Schemas\Components\Component $section): array
+{
+    Assert::assertInstanceOf(Filament\Schemas\Components\Section::class, $section);
+>>>>>>> 350420cb (Check & fix styling)
 
     /* @var \Filament\Schemas\Components\Section $section */
     return $testCase->filamentSectionChildComponents($section);
 }
 
 /**
+<<<<<<< HEAD
  * @param array<int, Component|Action|ActionGroup> $components
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
     foreach ($components as $component) {
         if (! $component instanceof Field) {
+=======
+ * @param array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup> $components
+ */
+function userResourceFindComponentByName(array $components, string $name): ?Filament\Schemas\Components\Component
+{
+    foreach ($components as $component) {
+        if (! $component instanceof Filament\Forms\Components\Field) {
+>>>>>>> 350420cb (Check & fix styling)
             continue;
         }
 
@@ -290,8 +341,12 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
 {
     $secret = (string) $google2fa->generateSecretKey();
+<<<<<<< HEAD
     $appName = config('app.name');
     $qrCode = $google2fa->getQRCodeUrl(is_string($appName) ? $appName : '', $user->email, $secret);
+=======
+    $qrCode = $google2fa->getQRCodeUrl((string) config('app.name'), $user->email, $secret);
+>>>>>>> 350420cb (Check & fix styling)
 
     $recoveryCodes = array_map(
         static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
@@ -327,8 +382,12 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
+<<<<<<< HEAD
     $decrypted = decrypt($user->two_factor_secret);
     $secret = is_string($decrypted) ? $decrypted : '';
+=======
+    $secret = (string) decrypt($user->two_factor_secret);
+>>>>>>> 350420cb (Check & fix styling)
 
     return false !== $google2fa->verifyKey($secret, $code);
 }
@@ -347,13 +406,21 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
+<<<<<<< HEAD
     $decrypted = decrypt($user->two_factor_recovery_codes);
     $codes = json_decode(is_string($decrypted) ? $decrypted : '', true);
+=======
+    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+>>>>>>> 350420cb (Check & fix styling)
     if (! is_array($codes)) {
         return false;
     }
 
+<<<<<<< HEAD
     $codes = array_values(array_filter($codes, static fn (mixed $c): bool => $c !== $code));
+=======
+    $codes = array_values(array_filter($codes, static fn ($c): bool => $c !== $code));
+>>>>>>> 350420cb (Check & fix styling)
     $user->two_factor_recovery_codes = encrypt(json_encode($codes));
     $user->save();
 
@@ -369,8 +436,12 @@ function readStoredRecoveryCodes(User $user): array
         return [];
     }
 
+<<<<<<< HEAD
     $decrypted = decrypt($user->two_factor_recovery_codes);
     $codes = json_decode(is_string($decrypted) ? $decrypted : '', true);
+=======
+    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+>>>>>>> 350420cb (Check & fix styling)
     if (! is_array($codes)) {
         return [];
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Moderation Strategy"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Moderation Strategy
 
 ## Overview

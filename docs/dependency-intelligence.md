@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dependency Intelligence - Module User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Dependency Intelligence - Module User
 
 Aggiornato da `composer show` il 2026-03-02.

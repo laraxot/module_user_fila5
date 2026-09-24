@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Facades\Password;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;

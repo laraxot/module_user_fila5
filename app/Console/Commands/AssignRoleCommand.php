@@ -12,16 +12,30 @@ use function Laravel\Prompts\text;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 350420cb (Check & fix styling)
 
 class AssignRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:assign-role';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Assign a module to user';
 
@@ -35,7 +49,10 @@ class AssignRoleCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
+<<<<<<< HEAD
         $user_class = XotData::make()->getUserClass();
+=======
+>>>>>>> 350420cb (Check & fix styling)
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         /**

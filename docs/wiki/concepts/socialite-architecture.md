@@ -3,6 +3,7 @@ title: Socialite Architecture — No google_id Column Rule
 type: concept
 module: User
 updated: 2026-04-20
+<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -12,6 +13,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Socialite Architecture

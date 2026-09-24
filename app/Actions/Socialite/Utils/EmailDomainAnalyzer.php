@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite\Utils;
 
+<<<<<<< HEAD
+=======
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;

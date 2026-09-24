@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Migration Philosophy"
 type: concept
@@ -11,6 +12,8 @@ discussions:
 related:
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Migration philosophy
 
 This document captures the four critical architectural rules governing database migrations in Laraxot. These rules emerged from real production experience and must be followed without exception.
@@ -34,6 +37,7 @@ Multiple migrations for the same table create debt:
 - Rollbacks become impossible to reason about
 - DRY is violated: the schema truth is scattered across multiple files
 
+<<<<<<< HEAD
 ### Connection convention
 
 All module migrations extend `XotBaseMigration`, so they do not define `$connection` or `$model_class`. `XotBaseMigration` resolves the model from the migration filename (`create_teams_table` → `Team`), then gets table and database connection from the model. This keeps model, table, and connection ownership in one place: the model.
@@ -48,6 +52,8 @@ protected ?string $model_class = Team::class;
 
 If filename-to-model resolution fails, fix the filename/model/table naming mismatch instead of adding overrides to the migration.
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ### Correct naming convention
 
 ```

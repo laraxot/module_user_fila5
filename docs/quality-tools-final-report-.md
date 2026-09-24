@@ -161,6 +161,7 @@ $user_class = XotData::make()->getUserClass();
 ---
 
 **Status**: ✅ **COMPLETATO** - Modulo User: 0 errori PHPStan, 0 errori critici PHPMD, warning PHP Insights accettabili.
+<<<<<<< HEAD
 ---
 module: theme
 topic: quality-tools-final-report-
@@ -177,3 +178,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-final-report-.md
+=======
+>>>>>>> 350420cb (Check & fix styling)

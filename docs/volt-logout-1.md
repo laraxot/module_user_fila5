@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione del Logout con Volt"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -236,5 +239,10 @@ public function test_logout_clears_session()
 ## Collegamenti
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
+<<<<<<< HEAD
 - [Best Practices Filament](./filament-best-practices.md)
 - [Routing Best Practices](./routing-best-practices-2.md) 
+=======
+- [Best Practices Filament](./filament_best_practices.md)
+- [Routing Best Practices](./routing_best_practices.md) 
+>>>>>>> 350420cb (Check & fix styling)

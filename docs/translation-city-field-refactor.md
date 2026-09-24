@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -18,11 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
 
+<<<<<<< HEAD
 Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot <nome progetto>.
+=======
+Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot SaluteOra.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## File Corretti
 
@@ -177,9 +184,15 @@ Tutti i file corretti mantengono:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
 - [<nome progetto> Translation Audit](../../<nome progetto>/docs/translation_audit_city_fields.md)
 - [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
+=======
+- [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
+- [SaluteOra Translation Audit](../../SaluteOra/docs/translation_audit_city_fields.md)
+- [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
+>>>>>>> 350420cb (Check & fix styling)
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
 ## Prevenzione Futura
@@ -194,11 +207,16 @@ grep -A 10 -B 2 "label.*City\|label.*Stadt" laravel/Modules/*/lang/
 ```
 
 ### Template di Riferimento
+<<<<<<< HEAD
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+=======
+Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Ultimo Aggiornamento
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
+<<<<<<< HEAD
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot <nome progetto>*
 ---
 module: theme
@@ -216,3 +234,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+=======
+*Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot SaluteOra*
+>>>>>>> 350420cb (Check & fix styling)

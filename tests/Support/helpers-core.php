@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\TeamFactory;
@@ -61,7 +65,11 @@ function plainTestPassword(): string
 {
     static $password = null;
 
+<<<<<<< HEAD
     if (! is_string($password)) {
+=======
+    if (null === $password) {
+>>>>>>> 350420cb (Check & fix styling)
         $password = fake()->password(12).'Aa1!';
     }
 
@@ -119,16 +127,24 @@ function skipUnlessUserTable(string $table, string $reason = ''): void
 
 function permissionRolePivotTable(): string
 {
+<<<<<<< HEAD
     $value = config('permission.table_names.model_has_roles', 'model_has_role');
 
     return is_string($value) ? $value : 'model_has_role';
+=======
+    return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+>>>>>>> 350420cb (Check & fix styling)
 }
 
 function permissionPivotTable(): string
 {
+<<<<<<< HEAD
     $value = config('permission.table_names.model_has_permissions', 'model_has_permission');
 
     return is_string($value) ? $value : 'model_has_permission';
+=======
+    return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+>>>>>>> 350420cb (Check & fix styling)
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void

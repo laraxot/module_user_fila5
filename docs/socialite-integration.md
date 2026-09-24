@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Socialite Integration"
 type: concept
 tags: [socialite, integration]
@@ -19,6 +20,8 @@ related:
 ---
 
 ---
+=======
+>>>>>>> 350420cb (Check & fix styling)
 name: socialite-integration-guide
 description: **Guide**: Implementing social authentication without cluttering User table
 **Applies to**: laravel/Modules/User

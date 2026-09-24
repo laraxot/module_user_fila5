@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Redundancy Report — Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Redundancy Report — Modulo User
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

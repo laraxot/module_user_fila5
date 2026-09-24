@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -238,7 +241,11 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
+<<<<<<< HEAD
 - [Roles and Permissions](roles-permissions-3.md)
+=======
+- [Roles and Permissions](roles_permissions.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

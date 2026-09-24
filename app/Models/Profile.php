@@ -6,8 +6,11 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
@@ -134,8 +137,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $campground_short
  *
  * @method static Builder<static>|Profile byUuid(string $uuid)
+<<<<<<< HEAD
  * @method static Builder<static>|Profile childrenWith(list<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(list<string> $relations)
+=======
+ * @method static Builder<static>|Profile childrenWith(array<int|string, string> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int|string, string> $relations)
+>>>>>>> 350420cb (Check & fix styling)
  * @method static Builder<static>|Profile whereAddress($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1Short($value)
@@ -185,8 +193,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereIsActive($value)
  * @method static Builder<static>|Profile whereType($value)
  * @method static Builder<static>|Profile whereUserName($value)
+<<<<<<< HEAD
  * @method static Builder<static>|Profile team($teams, bool $without = false)
  * @method static Builder<static>|Profile withoutTeam($teams)
+=======
+>>>>>>> 350420cb (Check & fix styling)
  *
  * @mixin \Eloquent
  */
@@ -197,6 +208,7 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
+<<<<<<< HEAD
      * The table associated with the model.
      */
     protected $table = 'profiles';
@@ -207,15 +219,27 @@ class Profile extends BaseProfile implements HasMedia
      * @return BelongsToMany<Team, $this, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
+=======
+     * Get the teams that the profile belongs to.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<Team, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     */
+    public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+>>>>>>> 350420cb (Check & fix styling)
     {
         return $this->belongsToManyX(Team::class);
     }
 
     /**
      * Scope a query to include schemaless attributes.
+<<<<<<< HEAD
      *
      * @param Builder<static> $query
      *
+=======
+     */
+    /** @param Builder<static> $query
+>>>>>>> 350420cb (Check & fix styling)
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -236,6 +260,16 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'profiles';
+
+    /**
+>>>>>>> 350420cb (Check & fix styling)
      * Generate Schema.org ProfilePage/Person JSON-LD structured data.
      *
      * @see https://schema.org/Person

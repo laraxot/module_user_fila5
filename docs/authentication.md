@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Autenticazione in <nome progetto>"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Autenticazione in <nome progetto>
 
 ## Panoramica
@@ -148,4 +151,8 @@ Route::middleware('guest')->group(function () {
 ## Implementazioni Specifiche
 
 ### Logout con Volt e Folio
+<<<<<<< HEAD
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
+=======
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt_folio_logout_error.md). 
+>>>>>>> 350420cb (Check & fix styling)

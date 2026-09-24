@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Checklist qualità - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-later.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Checklist qualità - User Module
 
 - [x] PHPStan Level 10

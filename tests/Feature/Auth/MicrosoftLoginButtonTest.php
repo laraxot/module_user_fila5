@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -12,10 +13,24 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => 'test-client-id']);
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
+=======
+
+namespace Modules\User\Tests\Feature\Auth;
+
+use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
+use Modules\Xot\Tests\TestCase;
+
+uses(TestCase::class);
+
+describe('Microsoft Login Button', function () {
+    test('social login widget renders correctly when microsoft is configured', function () {
+        config(['services.microsoft.client_id' => 'test-client-id']);
+>>>>>>> 350420cb (Check & fix styling)
 
         $widget = new SocialLoginWidget();
         $providers = $widget->getProviders();
 
+<<<<<<< HEAD
         Assert::assertCount(1, $providers);
         Assert::assertSame('microsoft', $providers[0]['driver']);
     });
@@ -34,6 +49,14 @@ describe('Social Login Widget', function () {
     });
 
     test('widget returns empty when no providers configured', function () {
+=======
+        expect($providers)->toHaveCount(1);
+        expect($providers[0]['driver'])->toBe('microsoft');
+        expect($providers[0]['label'])->toBe(__('user::auth.social.microsoft'));
+    });
+
+    test('social login widget returns empty when no providers configured', function () {
+>>>>>>> 350420cb (Check & fix styling)
         config(['services.microsoft.client_id' => null]);
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
@@ -41,6 +64,7 @@ describe('Social Login Widget', function () {
         $widget = new SocialLoginWidget();
         $providers = $widget->getProviders();
 
+<<<<<<< HEAD
         Assert::assertEmpty($providers);
     });
 
@@ -84,5 +108,13 @@ describe('Socialite routes', function () {
     test('shared callback route is accessible', function () {
         $url = route('socialite.oauth.callback', ['provider' => 'google']);
         Assert::assertStringContainsString('/sso/google/callback', (string) $url);
+=======
+        expect($providers)->toBeEmpty();
+    });
+
+    test('socialite microsoft redirect route exists', function () {
+        $url = route('socialite.oauth.redirect', ['provider' => 'microsoft']);
+        expect($url)->toContain('microsoft');
+>>>>>>> 350420cb (Check & fix styling)
     });
 });

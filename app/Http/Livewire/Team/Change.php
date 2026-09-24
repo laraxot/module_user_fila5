@@ -22,12 +22,21 @@ class Change extends Component
 {
     // use HasUserProperty;
 
+<<<<<<< HEAD
     /** @var array<int, array<string, mixed>> */
+=======
+    /** @var array<int|string, mixed> */
+>>>>>>> 350420cb (Check & fix styling)
     public array $teams = [];
 
     public XotData $xot;
 
+<<<<<<< HEAD
     public UserContract $user;
+=======
+    /** @var UserContract */
+    public $user;
+>>>>>>> 350420cb (Check & fix styling)
 
     public function mount(): void
     {
@@ -42,10 +51,14 @@ class Change extends Component
         $this->user = $authUser;
         /** @var Collection<int, TeamContract> $allTeams */
         $allTeams = $this->user->allTeams();
+<<<<<<< HEAD
         $this->teams = $allTeams
             ->values()
             ->map(static fn (TeamContract $team): array => $team->toArray())
             ->all();
+=======
+        $this->teams = $allTeams->toArray();
+>>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -78,13 +91,19 @@ class Change extends Component
 
     public function render(): View
     {
+<<<<<<< HEAD
         /** @phpstan-var view-string */
+=======
+>>>>>>> 350420cb (Check & fix styling)
         $view = 'user::livewire.team.change';
         $view_params = [
             'view' => $view,
         ];
         if ([] === $this->teams) {
+<<<<<<< HEAD
             /** @phpstan-var view-string */
+=======
+>>>>>>> 350420cb (Check & fix styling)
             $view = 'ui::livewire.empty';
         }
 

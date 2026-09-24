@@ -61,12 +61,24 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Membership extends BasePivot
 {
+<<<<<<< HEAD
     protected $connection = 'user';
 
+=======
+    /** @var string */
+    protected $connection = 'user';
+
+    /** @var string */
+>>>>>>> 350420cb (Check & fix styling)
     protected $table = 'team_user';
 
     /**
      * The "type" of the primary key ID.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 350420cb (Check & fix styling)
      */
     protected $keyType = 'int';
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Conversione Livewire Auth/Login a Filament LoginWidget"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Traits Implementation"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-analytics.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # User Traits Implementation
 
 ## Overview

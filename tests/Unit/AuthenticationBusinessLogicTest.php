@@ -1,11 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+
+use Carbon\Carbon;
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 350420cb (Check & fix styling)
 
 function authBizSuspiciousLogin(): bool
 {
@@ -13,6 +21,7 @@ function authBizSuspiciousLogin(): bool
 }
 
 /**
+<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     name: string,
@@ -28,6 +37,9 @@ function authBizSuspiciousLogin(): bool
  *     failed_login_attempts: int,
  *     locked_until: Carbon|null,
  * }
+=======
+ * @return array<string, mixed>
+>>>>>>> 350420cb (Check & fix styling)
  */
 function authBizUserData(): array
 {
@@ -49,6 +61,7 @@ function authBizUserData(): array
 }
 
 /**
+<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     name: string,
@@ -57,6 +70,9 @@ function authBizUserData(): array
  *     is_active: bool,
  *     settings: array{timezone: string, language: string, notification_preferences: list<string>},
  * }
+=======
+ * @return array<string, mixed>
+>>>>>>> 350420cb (Check & fix styling)
  */
 function authBizTeamData(): array
 {
@@ -118,6 +134,7 @@ function authBizOauthData(): array
 }
 
 /**
+<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     user_id: int,
@@ -128,6 +145,9 @@ function authBizOauthData(): array
  *     last_active: Carbon,
  *     is_trusted: bool,
  * }
+=======
+ * @return array<string, mixed>
+>>>>>>> 350420cb (Check & fix styling)
  */
 function authBizDeviceData(): array
 {
@@ -155,7 +175,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('validates email format and verification', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $email = $user['email'];
+=======
+            $email = (string) $user['email'];
+>>>>>>> 350420cb (Check & fix styling)
             $verifiedAt = $user['email_verified_at'];
             Assert::assertInstanceOf(Carbon::class, $verifiedAt);
 
@@ -165,7 +189,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles password security requirements', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $password = $user['password'];
+=======
+            $password = (string) $user['password'];
+>>>>>>> 350420cb (Check & fix styling)
             $expiresAt = $user['password_expires_at'];
             Assert::assertInstanceOf(Carbon::class, $expiresAt);
 
@@ -179,7 +207,11 @@ describe('Authentication Business Logic', function (): void {
             $maxAttempts = 5;
             $lockoutMinutes = 30;
 
+<<<<<<< HEAD
             Assert::assertLessThan($maxAttempts, $user['failed_login_attempts']);
+=======
+            Assert::assertLessThan($maxAttempts, (int) $user['failed_login_attempts']);
+>>>>>>> 350420cb (Check & fix styling)
             Assert::assertNull($user['locked_until']);
 
             $userLocked = array_merge(authBizUserData(), [
@@ -195,7 +227,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('manages session and remember tokens', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $rememberToken = $user['remember_token'];
+=======
+            $rememberToken = (string) $user['remember_token'];
+>>>>>>> 350420cb (Check & fix styling)
 
             Assert::assertGreaterThan(10, strlen($rememberToken));
             Assert::assertInstanceOf(Carbon::class, $user['last_login_at']);
@@ -204,8 +240,13 @@ describe('Authentication Business Logic', function (): void {
         it('validates profile completeness', function (): void {
             $user = authBizUserData();
 
+<<<<<<< HEAD
             Assert::assertNotSame('', $user['name']);
             Assert::assertNotSame('', $user['email']);
+=======
+            Assert::assertNotSame('', (string) $user['name']);
+            Assert::assertNotSame('', (string) $user['email']);
+>>>>>>> 350420cb (Check & fix styling)
 
             $profileScore = 0;
             if ('' !== $user['name']) {
@@ -239,7 +280,11 @@ describe('Authentication Business Logic', function (): void {
             $team = authBizTeamData();
 
             Assert::assertFalse((bool) $team['personal_team']);
+<<<<<<< HEAD
             Assert::assertStringNotContainsString('Personal', $team['name']);
+=======
+            Assert::assertStringNotContainsString('Personal', (string) $team['name']);
+>>>>>>> 350420cb (Check & fix styling)
 
             $personalTeam = [
                 'name' => 'Mario Rossi (Personal)',
@@ -248,7 +293,11 @@ describe('Authentication Business Logic', function (): void {
             ];
 
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
+<<<<<<< HEAD
             Assert::assertStringContainsString('Personal', $personalTeam['name']);
+=======
+            Assert::assertStringContainsString('Personal', (string) $personalTeam['name']);
+>>>>>>> 350420cb (Check & fix styling)
         });
 
         it('validates team settings and preferences', function (): void {
@@ -395,7 +444,11 @@ describe('Authentication Business Logic', function (): void {
             $device = authBizDeviceData();
 
             if ('mobile' === $device['device_type']) {
+<<<<<<< HEAD
                 $pushToken = $device['push_token'];
+=======
+                $pushToken = (string) $device['push_token'];
+>>>>>>> 350420cb (Check & fix styling)
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }
         });

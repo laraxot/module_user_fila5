@@ -3,15 +3,20 @@ title: "concepts index — User"
 type: index
 tags: [concepts, User]
 created: 2026-05-11
+<<<<<<< HEAD
 updated: 2026-08-19
 
 updated: 2026-07-27
+=======
+updated: 2026-07-12
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # concepts Index — User
 
 Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
 
+<<<<<<< HEAD
 ## Runtime config & RBAC (2026-07-27)
 
 - [bugfix-permission-table-names-singular](../../bugfix-permission-table-names-singular.md) — **`permission.php` `table_names` immutabili**; schema segue config
@@ -21,16 +26,21 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [profile-migration-uuid-contract](profile-migration-uuid-contract.md) — owner migrazione profiles
 - [migration-naming-religion-user](migration-naming-religion-user.md) — 1 model = 1 `create_*`
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## Filament auth FO
 
 - [filament-widget-no-validate-form](filament-widget-no-validate-form.md) — validazione solo in `UserForm`; submit = `getState()`, no `validateForm()`
 - [filament-widget-linear-crud-model-create](filament-widget-linear-crud-model-create.md) — `getUserClass()::create($data)`, no Action banale
 - [filament-widget-resource-form-delegation](filament-widget-resource-form-delegation.md) — widget → `UserForm::get*FormSchema()`
 
+<<<<<<< HEAD
 ## Testing
 
 - [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Da 1264 a 0 errori PHPStan sul modulo.
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ## Altro
 - [notifications-folio-page](notifications-folio-page.md) — pagina `/notifications`, owner User
 - [notifications-folio-route](notifications-folio-route.md) — quick ref `route('notifications')`
@@ -39,10 +49,16 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 ## Notifiche e profili (2026-06-10)
 
+<<<<<<< HEAD
 - [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner <nome progetto>
 
+=======
+- [no-app-support-queueable-actions](no-app-support-queueable-actions.md) — vietato `app/Support/` per business logic; solo QueueableAction
+- [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `IsNotificationSchemaReadableAction`
+- [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
+>>>>>>> 350420cb (Check & fix styling)
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
 
@@ -58,7 +74,11 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [folio-pages-owner-pattern](folio-pages-owner-pattern.md) — `pages/` nel modulo, mount Cms, zero `web.php`
 - [notifications-folio-page](notifications-folio-page.md) — centro notifiche in-app
 - [notifications-folio-route](notifications-folio-route.md) — `route('notifications')` quick ref
+<<<<<<< HEAD
 - [notifications-runtime-model](notifications-runtime-model.md) — model + `NotificationSchema`
+=======
+- [notifications-runtime-model](notifications-runtime-model.md) — model + `IsNotificationSchemaReadableAction`
+>>>>>>> 350420cb (Check & fix styling)
 - Cms: [folio-list-vs-route-list](../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md) — `folio:list` audit
 - Cms: [folio-filesystem-routing-no-web-php](../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md) — religione routing
 

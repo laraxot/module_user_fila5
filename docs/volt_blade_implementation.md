@@ -1,10 +1,17 @@
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 - [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
+=======
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Introduzione
 
@@ -23,7 +30,11 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
 ## Struttura delle Directory
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/
+=======
+/var/www/html/Quaeris/laravel/
+>>>>>>> 350420cb (Check & fix styling)
 ├── Modules/
 │   └── User/
 │       └── app/
@@ -195,7 +206,11 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class RegisterFormWidget extends XotBaseWidget
@@ -282,6 +297,12 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+=======
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session_management.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md) 
+>>>>>>> 350420cb (Check & fix styling)

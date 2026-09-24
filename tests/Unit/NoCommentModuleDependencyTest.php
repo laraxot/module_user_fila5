@@ -25,9 +25,15 @@ test('it does not reference the comment module anywhere under user app', functio
         $contents = file_get_contents($file->getPathname());
 
         expect($contents)
+<<<<<<< HEAD
             ->not()->toContain('Modules\\Comment\\')
             ->not()->toContain('InteractsWithComments')
             ->not()->toContain('HasCommentatorRelations');
+=======
+            ->not->toContain('Modules\\Comment\\')
+            ->not->toContain('InteractsWithComments')
+            ->not->toContain('HasCommentatorRelations');
+>>>>>>> 350420cb (Check & fix styling)
     }
 });
 
@@ -36,7 +42,13 @@ test('base user model does not use comment traits', function (): void {
     $contents = file_get_contents($baseUserPath);
 
     expect($contents)
+<<<<<<< HEAD
         ->not()->toContain('HasCommentatorRelations')
         ->not()->toContain('CanComment')
         ->not()->toContain('InteractsWithComments');
+=======
+        ->not->toContain('HasCommentatorRelations')
+        ->not->toContain('CanComment')
+        ->not->toContain('InteractsWithComments');
+>>>>>>> 350420cb (Check & fix styling)
 });

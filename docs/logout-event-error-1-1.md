@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati

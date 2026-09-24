@@ -69,7 +69,10 @@ class Reset extends Component
                 $this->guard()->login($user);
             },
         );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
         Assert::string($response_lang = trans((string) $response));
 
         if (Password::PASSWORD_RESET === $response) {

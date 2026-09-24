@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Profiles ownership boundary rule"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Profiles ownership boundary rule
 
 ## Regola

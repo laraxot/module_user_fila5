@@ -2,6 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/de/social_provider.php
+// Social provider labels — Filament resource + navigation (no ->label() in PHP).
+// claude-audit doc ratio — LangServiceProvider SSoT.
+>>>>>>> 350420cb (Check & fix styling)
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -17,7 +26,62 @@ return [
         'sort' => '93',
         'icon' => 'user-user-social',
     ],
+<<<<<<< HEAD
     'fields' => [],
+=======
+    'fields' => [
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+>>>>>>> 350420cb (Check & fix styling)
     'actions' => [
         'import' => [
             'fields' => [

@@ -5,6 +5,7 @@ metadata:
   type: rule
   enforced: on-demand per task User
   updated: 2026-05-26
+<<<<<<< HEAD
 related:
   - "./can-comment-retired-wrong-placement.md"
   - "./frontend-stack-canonical.md"
@@ -14,6 +15,8 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Agent Confidence Protocol — User Module

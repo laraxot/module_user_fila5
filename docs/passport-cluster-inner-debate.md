@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Discussione Interiore: Pro e Contro Cluster Passport"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Discussione Interiore: Pro e Contro Cluster Passport
 
 ## Voce del Dubbio (VD)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Completare 2FA Implementation - User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Task: Completare 2FA Implementation - User
 
 **Modulo**: User

@@ -1,8 +1,13 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\TeamUser;
+=======
+
+use Illuminate\Database\Schema\Blueprint;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -12,7 +17,14 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
 return new class extends XotBaseMigration {
+<<<<<<< HEAD
     protected ?string $model_class = TeamUser::class;
+=======
+    /**
+     * Nome della tabella gestita dalla migrazione.
+     */
+    protected string $table_name = 'team_user';
+>>>>>>> 350420cb (Check & fix styling)
 
     /**
      * Esegue la migrazione.
@@ -33,7 +45,11 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+<<<<<<< HEAD
             if ($this->hasColumn('id') && ! in_array($this->getColumnType('id'), ['bigint', 'integer'], true)) {
+=======
+            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
+>>>>>>> 350420cb (Check & fix styling)
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
@@ -49,7 +65,11 @@ return new class extends XotBaseMigration {
 
                 // Impostiamo la nuova PRIMARY KEY su id (MySQL only — SQLite defines PK at creation)
                 if ($this->isMysqlFamilyDriver()) {
+<<<<<<< HEAD
                     $this->query('ALTER TABLE `'.$this->getTable().'` ADD PRIMARY KEY (`id`)');
+=======
+                    $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+>>>>>>> 350420cb (Check & fix styling)
                 }
             }
 

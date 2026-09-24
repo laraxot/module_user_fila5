@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione dei Permessi"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Gestione dei Permessi
 
 ## Panoramica

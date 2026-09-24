@@ -26,7 +26,11 @@ describe('User Model Basic', function (): void {
 
     test('user model can create basic record', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $user = createTestUser([
             'name' => 'Test User',
@@ -45,7 +49,11 @@ describe('User Model Basic', function (): void {
 
     test('user model can query records', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $user1 = createTestUser(['name' => 'User 1']);
         $user2 = createTestUser(['name' => 'User 2']);
@@ -57,7 +65,11 @@ describe('User Model Basic', function (): void {
 
     test('user model can filter records', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $activeUser = createTestUser([
             'name' => 'Active User',
@@ -79,7 +91,11 @@ describe('User Model Basic', function (): void {
 
     test('user model can update records', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         TestCase::skipUnlessUsersTableReady();
+=======
+        $this->skipUnlessUsersTableReady();
+>>>>>>> 350420cb (Check & fix styling)
 
         $user = createTestUser(['name' => 'Original Name']);
 

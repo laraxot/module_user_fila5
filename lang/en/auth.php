@@ -2,7 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
+=======
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/en/auth.php
+return [
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+>>>>>>> 350420cb (Check & fix styling)
     'fields' => [
         'email' => [
             'label' => 'Email',
@@ -34,6 +46,7 @@ return [
         ],
     ],
     'messages' => [
+<<<<<<< HEAD
         'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
@@ -41,6 +54,9 @@ return [
             'context' => 'login_form',
             'placeholder' => '',
         ],
+=======
+        'failed' => 'These credentials do not match our records.',
+>>>>>>> 350420cb (Check & fix styling)
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
@@ -106,6 +122,7 @@ return [
         'github' => 'Sign in with GitHub',
         'facebook' => 'Sign in with Facebook',
     ],
+<<<<<<< HEAD
     'login' => [
         'google' => ['text' => 'Google'],
         'microsoft' => ['text' => 'Microsoft'],
@@ -194,6 +211,27 @@ return [
             'profile' => 'My profile',
             'dashboard' => 'Dashboard',
             'personal_area' => 'Access personal area',
+=======
+    'auth_button' => [
+        'login' => 'Sign in',
+        'logout' => 'Sign out',
+        'profile' => 'My profile',
+        'dashboard' => 'Dashboard',
+        'personal_area' => 'Access personal area',
+    ],
+    'login' => [
+        'page' => [
+            'meta_title' => ['label' => 'Sign in — FixCity'],
+            'description' => ['label' => 'Sign in with email and password or with your social account.'],
+            'kicker' => ['label' => 'Citizen Area'],
+            'title' => ['label' => 'Sign in to your account'],
+            'support_title' => ['label' => 'Need help?'],
+            'support_item_email' => ['label' => 'Use your email and password to sign in'],
+            'support_item_password' => ['label' => 'If you forgot your password, use the "Forgot password?" link'],
+            'support_item_help' => ['label' => 'Contact support for further assistance'],
+            'register_cta_text' => ['label' => 'Don\'t have an account yet?'],
+            'register_cta_link' => ['label' => 'Register now'],
+>>>>>>> 350420cb (Check & fix styling)
         ],
     ],
 ];

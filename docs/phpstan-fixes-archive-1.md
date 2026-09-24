@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  

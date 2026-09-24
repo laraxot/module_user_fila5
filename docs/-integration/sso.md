@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "sso"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # sso
 
 <!-- Contenuto migrato da _docs/sso.txt -->

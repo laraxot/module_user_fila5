@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "LoginWidget Filament Schema JavaScript Errors - Roadmap"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
 **Status**: 🔄 In Progress

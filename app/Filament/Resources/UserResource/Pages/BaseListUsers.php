@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -35,7 +38,11 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table filters for user records.
      *
+<<<<<<< HEAD
      * @return array<BaseFilter>
+=======
+     * @return array<string, BaseFilter>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function getTableFilters(): array
@@ -54,22 +61,43 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table actions for user records.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
+=======
+     * @return array<string, Action|\Filament\Actions\ActionGroup>
+>>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function getTableActions(): array
     {
+<<<<<<< HEAD
         $actions = [
             'change_password' => ChangePasswordAction::make()->tooltip('Cambio Password')->iconButton(),
+=======
+        $changePassword = ChangePasswordAction::make()
+            ->tooltip('Cambio Password')
+            ->iconButton();
+
+        /** @var array<string, Action|\Filament\Actions\ActionGroup> $actions */
+        $actions = [
+            'change_password' => $changePassword,
+>>>>>>> 350420cb (Check & fix styling)
         ];
 
         // Add parent actions - merge arrays
         $parentActions = parent::getTableActions();
 
+<<<<<<< HEAD
         /** @var array<string, Action|ActionGroup> $result */
         $result = array_merge($actions, $parentActions);
 
         return $result;
+=======
+        /** @var array<string, Action|\Filament\Actions\ActionGroup> $merged */
+        $merged = array_merge($actions, $parentActions);
+
+        return $merged;
+>>>>>>> 350420cb (Check & fix styling)
 
         /*
          * // Add deactivate action

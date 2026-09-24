@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Spatie Permission teams on Laravel 13"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Spatie Permission teams on Laravel 13
 
 ## Root cause

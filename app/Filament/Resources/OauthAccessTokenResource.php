@@ -4,15 +4,37 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+=======
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+// User — domain PHP (claude-audit documentation ratio).
+
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+>>>>>>> 350420cb (Check & fix styling)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Carbon;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
@@ -56,7 +78,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->url(function (Model|array|null $record): ?string {
+=======
+                    ->url(function (mixed $record): ?string {
+>>>>>>> 350420cb (Check & fix styling)
                         if (! $record instanceof OauthAccessToken) {
                             return null;
                         }
@@ -79,6 +105,7 @@ class OauthAccessTokenResource extends XotBaseResource
 
                 TextColumn::make('scopes')
                     ->limit(30)
+<<<<<<< HEAD
                     ->tooltip(
                         /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                         function (mixed $state): ?string {
@@ -92,6 +119,19 @@ class OauthAccessTokenResource extends XotBaseResource
                             return is_string($state) ? $state : null;
                         }
                     ),
+=======
+                    ->tooltip(function (mixed $state): ?string {
+                        if (null === $state) {
+                            return null;
+                        }
+                        if (is_array($state)) {
+                            /* @var array<string, mixed> $state */
+                            return json_encode($state);
+                        }
+
+                        return is_string($state) ? $state : null;
+                    }),
+>>>>>>> 350420cb (Check & fix styling)
 
                 IconColumn::make('revoked')
                     ->boolean()
@@ -104,7 +144,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable()
+<<<<<<< HEAD
                     ->formatStateUsing(function (Carbon|string|null $state): string {
+=======
+                    ->formatStateUsing(function (mixed $state): string {
+>>>>>>> 350420cb (Check & fix styling)
                         if ($state instanceof Carbon) {
                             $now = Carbon::now();
                             if ($state->lt($now)) {
@@ -146,6 +190,38 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, Component>
+     */
+    public static function getFormSchema(): array
+    {
+        return [
+            'oauth_access_token_info' => Section::make('OAuth Access Token Information')
+                ->schema([
+                    'grid_1' => Grid::make(2)
+                        ->schema([
+                            'user_id' => Select::make('user_id')
+                                ->relationship('user', 'name')
+                                ->searchable(),
+                            'client_id' => Select::make('client_id')
+                                ->relationship('client', 'name')
+                                ->searchable()
+                                ->required(),
+                        ]),
+
+                    'grid_2' => Grid::make(2)
+                        ->schema([
+                            'name' => TextInput::make('name')
+                                ->maxLength(255),
+                            'scopes' => TextInput::make('scopes'),
+                        ]),
+                ]),
+        ];
+    }
+
+>>>>>>> 350420cb (Check & fix styling)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti Git - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -55,7 +58,11 @@ related:
 - `docs/README.md` - Documentazione principale
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
+<<<<<<< HEAD
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
+=======
+- `docs/phpstan_fixes.md` - Fix PHPStan
+>>>>>>> 350420cb (Check & fix styling)
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -124,7 +131,11 @@ Funzionalità team includono:
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
+<<<<<<< HEAD
 - [PHPStan Fixes](./phpstan-fixes-8.md)
+=======
+- [PHPStan Fixes](./phpstan_fixes.md)
+>>>>>>> 350420cb (Check & fix styling)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

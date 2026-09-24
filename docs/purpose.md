@@ -5,7 +5,10 @@ status: active
 created: 2026-09-02
 tags: [user, purpose, identita, autorizzazione, profilo, oauth, team]
 qmd: "user scopo modulo identita autorizzazione profilo oauth passport team ruoli permessi contract"
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
+=======
+>>>>>>> 350420cb (Check & fix styling)
 updated: 2026-09-02
 issues:
   # DA CREARE — `gh` non autenticato: mai numeri inventati.
@@ -14,6 +17,7 @@ issues:
 discussions:
   # DA CREARE — vedi sopra.
   - "https://github.com/provtv/module_user_fila5/discussions/"
+<<<<<<< HEAD
 =======
 updated: 2026-09-22
 issues:
@@ -24,6 +28,8 @@ issues:
 discussions:
   - "https://github.com/laraxot/module_user_fila5/discussions/104"
 >>>>>>> .merge_file_MBQcl3
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User — perche' esiste
@@ -35,6 +41,7 @@ chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.*
 
 ## L'evidenza
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 - 666 file PHP, 57 Action, **20 Widget**: il numero di widget dice che qui l'interfaccia
   conta — login, profilo, gestione team sono superfici che l'utente tocca davvero.
@@ -43,6 +50,10 @@ chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.*
   il numero di widget dice che qui l'interfaccia conta — login, profilo, gestione
   team sono superfici che l'utente tocca davvero.
 >>>>>>> .merge_file_MBQcl3
+=======
+- 666 file PHP, 57 Action, **20 Widget**: il numero di widget dice che qui l'interfaccia
+  conta — login, profilo, gestione team sono superfici che l'utente tocca davvero.
+>>>>>>> 350420cb (Check & fix styling)
 - OAuth completo (`OauthClient`, `OauthAccessToken`, `OauthRefreshToken`,
   `OauthAuthCode`, `OauthPersonalAccessClient`): non solo login web, anche accesso
   programmatico.
@@ -71,7 +82,10 @@ la dipendenza.
 
 ## Come raggiungerlo **meglio**
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ### 1. Il README dichiara cose false, e questa e' la prima cosa da sistemare
 
 Oggi `README.md` mostra badge "Laravel 12", "PHP 8.4+", "PHPStan Level 10" e contiene
@@ -80,6 +94,7 @@ Laravel `^13.0`, PHP `^8.3`, PHPStan `level: max` (il progetto vieta esplicitame
 passare `--level`).
 
 Un badge che mente e' peggio di un badge assente: fa saltare la verifica a chi legge.
+<<<<<<< HEAD
 =======
 ### 1. ~~Il README dichiara cose false~~ — RISOLTO il 2026-09-02
 
@@ -90,6 +105,8 @@ con nota esplicita "misurati il 2026-09-02". Era questo documento a essere
 rimasto stale, non il README — verificato con lettura diretta del file, non
 per deduzione. Nessuna azione residua qui.
 >>>>>>> .merge_file_MBQcl3
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 ### 2. 666 file PHP e un README di 56 righe
 
@@ -104,11 +121,15 @@ guardare per: login, ruoli e permessi, team, profilo, OAuth, feature flag. Sei v
 Con Spatie Permission il rischio e' che il vero elenco dei permessi viva solo nel
 seeder. Chi deve capire "chi puo' approvare una scheda" finisce a leggere codice.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
+=======
+>>>>>>> 350420cb (Check & fix styling)
 **Azione:** `docs/permissions.md` con la matrice ruolo → permessi → cosa consente in
 concreto, e un test che verifichi che i permessi usati nelle Policy esistano davvero.
 Un `can('x')` con permesso inesistente **nega in silenzio**: sembra una scelta di
 sicurezza, e' un bug.
+<<<<<<< HEAD
 =======
 **Aggiornamento 2026-09-22 — gap confermato, piu' grave del previsto:**
 `docs/permissions.md` esiste ma contiene il contenuto di un altro modulo
@@ -125,6 +146,8 @@ Dettaglio e piano: [module-excellence-prd.md#fr-141](./bmad/module-excellence-pr
 story [14.1](./stories/14.1.permissions-matrix-silent-deny-gap.story.md)
 e [12.5](./stories/12.5.permissions-doc-wrong-module-content.story.md).
 >>>>>>> .merge_file_MBQcl3
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 ### 4. Team e multi-tenancy non devono sovrapporsi
 
@@ -135,7 +158,10 @@ nessuno dei due documenti la descrive.
 **Azione:** dichiarare qui quale dei due e' il confine dei dati e quale
 l'organizzazione interna. Una frase, ma va scritta.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
+=======
+>>>>>>> 350420cb (Check & fix styling)
 ### 5. Il log di accesso va usato, non solo scritto
 
 `AuthenticationLog` e `Device` raccolgono dati preziosi che oggi nessuna schermata
@@ -143,6 +169,7 @@ interroga.
 
 **Azione:** una vista "accessi anomali" (nuovo dispositivo, orario inusuale). Il dato
 c'e' gia': manca la domanda.
+<<<<<<< HEAD
 =======
 ### 5. ~~Il log di accesso va usato, non solo scritto~~ — PARZIALE, corretto il 2026-09-22
 
@@ -154,6 +181,8 @@ scritto qui in origine: manca solo l'**euristica di anomalia** (nuovo
 dispositivo mai visto, orario inusuale) sopra la UI gia' esistente —
 vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
 >>>>>>> .merge_file_MBQcl3
+=======
+>>>>>>> 350420cb (Check & fix styling)
 
 ## Confini — cosa **non** appartiene a User
 
@@ -166,6 +195,7 @@ vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
 
 - `laravel/Modules/Tenant/docs/purpose.md` — l'altro asse di separazione
 - `laravel/Modules/Xot/docs/purpose.md` — `ProfileContract` e le classi base
+<<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
 - [docs/bmad/module-excellence-prd.md](./bmad/module-excellence-prd.md) — catalogo
@@ -175,3 +205,5 @@ vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
 - `docs/scopo.md` — duplicato bilingue di questo file, da unificare
   (story [12.6](./stories/12.6.purpose-scopo-duplicate-and-stale.story.md))
 >>>>>>> .merge_file_MBQcl3
+=======
+>>>>>>> 350420cb (Check & fix styling)

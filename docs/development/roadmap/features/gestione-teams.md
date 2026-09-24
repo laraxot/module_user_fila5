@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione Teams"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-traits.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # Gestione Teams
 
 ⬅️ [Torna alla Roadmap](../../roadmap.md)

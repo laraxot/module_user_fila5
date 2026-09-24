@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 350420cb (Check & fix styling)
 ?>
 <div class="cmp-notifications-center">
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">

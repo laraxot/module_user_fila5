@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "two_factor"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # two_factor
 
 <!-- Contenuto migrato da _docs/two_factor.txt -->

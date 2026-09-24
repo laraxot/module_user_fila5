@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "directory_structure_checklist - User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 350420cb (Check & fix styling)
 # directory_structure_checklist - User
 
 ## Overview

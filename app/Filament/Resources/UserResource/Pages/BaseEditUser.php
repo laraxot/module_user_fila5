@@ -1,18 +1,30 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource/Pages/EditUser.php
  * Pagina di modifica utente per Filament.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
 use Modules\User\Filament\Resources\UserResource;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord as EditRecord;
 use Webmozart\Assert\Assert;
 
@@ -33,7 +45,11 @@ abstract class BaseEditUser extends EditRecord
 
         // Verifichiamo che record sia un'istanza valida di User
         Assert::notNull($this->record);
+<<<<<<< HEAD
         Assert::isInstanceOf($this->record, UserContract::class);
+=======
+        Assert::isInstanceOf($this->record, User::class);
+>>>>>>> 350420cb (Check & fix styling)
 
         // Gestione sicura del tipo di password per evitare errori di cast
         $newPassword = $data['new_password'];
