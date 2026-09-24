@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 
 use Modules\User\Filament\Resources\OauthAuthCodeResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Resources\OauthAuthCodeResource\Schemas\OauthAuthCodeInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthAuthCode extends XotBaseViewRecord
 {

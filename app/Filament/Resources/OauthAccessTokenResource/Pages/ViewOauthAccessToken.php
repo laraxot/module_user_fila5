@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthAccessTokenResource\Pages;
 
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Schemas\OauthAccessTokenInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthAccessToken extends XotBaseViewRecord
 {

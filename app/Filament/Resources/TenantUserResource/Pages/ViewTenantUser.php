@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
 use Modules\User\Filament\Resources\TenantUserResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Resources\TenantUserResource\Schemas\TenantUserInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
  * Class ViewTenantUser.

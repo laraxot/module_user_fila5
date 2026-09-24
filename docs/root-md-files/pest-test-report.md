@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_kyR0Qi
+=======
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
 type: concept
@@ -11,6 +13,7 @@ related:
   - "./git-reset.md"
 ---
 
+>>>>>>> .merge_file_aysipj
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

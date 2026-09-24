@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pages;
 
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Schemas\OauthDeviceCodeInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthDeviceCode extends XotBaseViewRecord
 {

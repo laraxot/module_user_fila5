@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages;
 
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Schemas\SocialProviderInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialProvider extends XotBaseViewRecord
 {
