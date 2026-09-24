@@ -1,10 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ss3nOh
 
 =======
 >>>>>>> .merge_file_NnygGr
+=======
+<<<<<<< .merge_file_TdXqFs
+
+=======
+<<<<<<< .merge_file_G3cNcC
+
+=======
+>>>>>>> .merge_file_42qSrp
+>>>>>>> .merge_file_0cpOuB
+>>>>>>> df2ba808 (.)
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;

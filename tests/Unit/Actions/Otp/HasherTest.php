@@ -1,15 +1,29 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_f6H5sK
 
 =======
 >>>>>>> .merge_file_WfmX6F
+=======
+<<<<<<< .merge_file_NPPnlX
+
+use Modules\User\Actions\Otp\Hasher;
+use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
+=======
+>>>>>>> df2ba808 (.)
 use Modules\User\Actions\Otp\Hasher;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_HByJVY
+>>>>>>> df2ba808 (.)
 
 it('makes hashed value', function (): void {
     $hasher = app(Hasher::class);

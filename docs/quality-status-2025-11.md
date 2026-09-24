@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_GuuuYx
 =======
 ---
@@ -21,6 +22,8 @@ related:
 ---
 
 >>>>>>> .merge_file_x5PhcL
+=======
+>>>>>>> df2ba808 (.)
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview

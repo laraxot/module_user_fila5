@@ -15,19 +15,36 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Resources\OauthAuthCodeResource;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
+<<<<<<< HEAD
 <<<<<<< .merge_file_1TCkyr
+=======
+<<<<<<< .merge_file_dIfuFO
+=======
+<<<<<<< .merge_file_YDKcTN
+>>>>>>> .merge_file_sz2cS5
+>>>>>>> df2ba808 (.)
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Filament\Widgets\RegistrationWidget;
 use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
 use Modules\User\Http\Livewire\Auth\Passwords\Reset;
 use Modules\User\Http\Livewire\Auth\Register;
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_dIfuFO
+=======
+>>>>>>> df2ba808 (.)
 =======
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Filament\Widgets\RegistrationWidget;
 use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
+<<<<<<< HEAD
 >>>>>>> .merge_file_Co0wRR
+=======
+>>>>>>> .merge_file_kSqrZE
+>>>>>>> .merge_file_sz2cS5
+>>>>>>> df2ba808 (.)
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Listeners\OtherDeviceLogoutListener;
 use Modules\User\Models\BaseUser;
@@ -86,11 +103,23 @@ describe('User gap attack — highest miss files', function (): void {
     test('Auth Livewire Register e Reset offline', function (): void {
         // PasswordExpired Livewire non esiste: è Filament Page Auth\PasswordExpired (git log -S).
         // Reset vive in Http\Livewire\Auth\Passwords, non in Http\Livewire\Passwords.
+<<<<<<< HEAD
 <<<<<<< .merge_file_1TCkyr
         foreach ([Register::class, Reset::class] as $class) {
 =======
         foreach ([RegisterWidget::class, ResetPasswordWidget::class] as $class) {
 >>>>>>> .merge_file_Co0wRR
+=======
+<<<<<<< .merge_file_dIfuFO
+        foreach ([Register::class, Reset::class] as $class) {
+=======
+<<<<<<< .merge_file_YDKcTN
+        foreach ([Register::class, Reset::class] as $class) {
+=======
+        foreach ([RegisterWidget::class, ResetPasswordWidget::class] as $class) {
+>>>>>>> .merge_file_kSqrZE
+>>>>>>> .merge_file_sz2cS5
+>>>>>>> df2ba808 (.)
             if (! class_exists($class)) {
                 continue;
             }

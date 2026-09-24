@@ -34,15 +34,21 @@ Le Skills progettuali vivono qui, nel wiki del Module **User**, e vengono carica
 
 - La sorgente di verita' per le Skills e' sempre il wiki locale
 - Non embeddare Skills nei prompt di avvio
+<<<<<<< HEAD
 <<<<<<< .merge_file_wRj1NT
 - Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/INDEX.md)
 =======
+=======
+>>>>>>> df2ba808 (.)
 <<<<<<< .merge_file_Ak9ITa
 - Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/index.md)
 =======
 - Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/INDEX.md)
 >>>>>>> .merge_file_7cuGJQ
+<<<<<<< HEAD
 >>>>>>> .merge_file_wpgeek
+=======
+>>>>>>> df2ba808 (.)
 
 ## Aggiungere una Nuova SKILLS
 

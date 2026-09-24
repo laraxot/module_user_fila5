@@ -3,11 +3,23 @@ title: "concepts index — User"
 type: index
 tags: [concepts, User]
 created: 2026-05-11
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
 updated: 2026-07-27
 =======
 updated: 2026-08-19
 >>>>>>> .merge_file_Avccsi
+=======
+<<<<<<< .merge_file_raFfPV
+updated: 2026-07-27
+=======
+<<<<<<< .merge_file_DG8gHi
+updated: 2026-07-27
+=======
+updated: 2026-08-19
+>>>>>>> .merge_file_OeGFWa
+>>>>>>> .merge_file_LIgipf
+>>>>>>> df2ba808 (.)
 ---
 
 # concepts Index — User
@@ -29,13 +41,24 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [filament-widget-linear-crud-model-create](filament-widget-linear-crud-model-create.md) — `getUserClass()::create($data)`, no Action banale
 - [filament-widget-resource-form-delegation](filament-widget-resource-form-delegation.md) — widget → `UserForm::get*FormSchema()`
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
+=======
+<<<<<<< .merge_file_raFfPV
+=======
+<<<<<<< .merge_file_DG8gHi
+>>>>>>> df2ba808 (.)
 =======
 ## Testing
 
 - [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Da 1264 a 0 errori PHPStan sul modulo.
 
+<<<<<<< HEAD
 >>>>>>> .merge_file_Avccsi
+=======
+>>>>>>> .merge_file_OeGFWa
+>>>>>>> .merge_file_LIgipf
+>>>>>>> df2ba808 (.)
 ## Altro
 - [notifications-folio-page](notifications-folio-page.md) — pagina `/notifications`, owner User
 - [notifications-folio-route](notifications-folio-route.md) — quick ref `route('notifications')`
@@ -46,11 +69,23 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 - [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
+<<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
 =======
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner <nome progetto>
 >>>>>>> .merge_file_Avccsi
+=======
+<<<<<<< .merge_file_raFfPV
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
+=======
+<<<<<<< .merge_file_DG8gHi
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
+=======
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner <nome progetto>
+>>>>>>> .merge_file_OeGFWa
+>>>>>>> .merge_file_LIgipf
+>>>>>>> df2ba808 (.)
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
 
 ## Folio FO

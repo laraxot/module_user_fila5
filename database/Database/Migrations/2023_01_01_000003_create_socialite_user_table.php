@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_iFRRRX
 
 =======
@@ -9,10 +10,14 @@ declare(strict_types=1);
 
 >>>>>>> .merge_file_P0A27u
 >>>>>>> .merge_file_NJV0zg
+=======
+
+>>>>>>> df2ba808 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_iFRRRX
 return new class extends XotBaseMigration {
 =======
@@ -23,6 +28,9 @@ return new class extends XotBaseMigration
 return new class extends XotBaseMigration {
 >>>>>>> .merge_file_P0A27u
 >>>>>>> .merge_file_NJV0zg
+=======
+return new class extends XotBaseMigration {
+>>>>>>> df2ba808 (.)
     /**
      * Run the migrations.
      */
@@ -55,6 +63,7 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
+<<<<<<< HEAD
 <<<<<<< .merge_file_iFRRRX
             if ('varchar' === $this->getColumnType('token')) {
 =======
@@ -64,6 +73,9 @@ return new class extends XotBaseMigration {
             if ('varchar' === $this->getColumnType('token')) {
 >>>>>>> .merge_file_P0A27u
 >>>>>>> .merge_file_NJV0zg
+=======
+            if ('varchar' === $this->getColumnType('token')) {
+>>>>>>> df2ba808 (.)
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

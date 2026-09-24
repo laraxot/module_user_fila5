@@ -1,10 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_G3envc
 
 =======
 >>>>>>> .merge_file_Y1XQfU
+=======
+<<<<<<< .merge_file_3UYKUb
+
+=======
+<<<<<<< .merge_file_5lZOMM
+
+=======
+>>>>>>> .merge_file_ZUPGiC
+>>>>>>> .merge_file_bQQsSU
+>>>>>>> df2ba808 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;

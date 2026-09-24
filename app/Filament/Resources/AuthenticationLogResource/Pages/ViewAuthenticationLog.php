@@ -6,7 +6,10 @@ namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\AuthenticationLogResource\Schemas\AuthenticationLogInfolist;
+=======
+>>>>>>> df2ba808 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewAuthenticationLog extends XotBaseViewRecord
@@ -16,6 +19,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
     /*
      * @return array<string, Component>
      */
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -25,4 +29,6 @@ class ViewAuthenticationLog extends XotBaseViewRecord
     {
         return app(AuthenticationLogInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> df2ba808 (.)
 }

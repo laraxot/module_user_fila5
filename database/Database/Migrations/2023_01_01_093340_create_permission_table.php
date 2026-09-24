@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_7IPYOj
 =======
 <<<<<<< .merge_file_62quLo
@@ -10,14 +11,19 @@ return new class extends XotBaseMigration
 {
 =======
 >>>>>>> .merge_file_5TNB62
+=======
+>>>>>>> df2ba808 (.)
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
+<<<<<<< HEAD
 <<<<<<< .merge_file_7IPYOj
 =======
 >>>>>>> .merge_file_boVfNv
 >>>>>>> .merge_file_5TNB62
+=======
+>>>>>>> df2ba808 (.)
     /**
      * Run the migrations.
      */
@@ -57,6 +63,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_7IPYOj
                 app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
 =======
@@ -66,6 +73,9 @@ return new class extends XotBaseMigration {
                 app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
 >>>>>>> .merge_file_boVfNv
 >>>>>>> .merge_file_5TNB62
+=======
+                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
+>>>>>>> df2ba808 (.)
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

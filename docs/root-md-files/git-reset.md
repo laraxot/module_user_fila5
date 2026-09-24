@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_QRbWJI
 =======
 ---
@@ -14,6 +15,8 @@ related:
 ---
 
 >>>>>>> .merge_file_LZTce3
+=======
+>>>>>>> df2ba808 (.)
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

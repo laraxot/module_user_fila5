@@ -13,11 +13,23 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
+<<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 updated_at: '2026-09-03'
 =======
 updated_at: '2026-09-17'
 >>>>>>> .merge_file_z5qNOS
+=======
+<<<<<<< .merge_file_OqolWM
+updated_at: '2026-09-03'
+=======
+<<<<<<< .merge_file_ws0o7h
+updated_at: '2026-09-03'
+=======
+updated_at: '2026-09-17'
+>>>>>>> .merge_file_aRtH94
+>>>>>>> .merge_file_u8LuLa
+>>>>>>> df2ba808 (.)
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -226,6 +238,43 @@ Claude Sonnet 5
 - **Verifica manuale 2026-09-03 (locale)**: l'utente ha usato il pulsante
   dal vivo, creazione riuscita (screenshot), abbinamento tramite `user_id`
   confermato anche via query diretta sul DB. Durante la prova sono emerse
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OqolWM
+=======
+<<<<<<< .merge_file_ws0o7h
+>>>>>>> .merge_file_u8LuLa
+  due scoperte **indipendenti da questa story**, segnalate all'utente con
+  decisione in sospeso — **entrambe verificate concretamente il 2026-09-15**,
+  vedi sotto.
+  1. **[CORRETTO 2026-09-15 — era classificato "cosmetico", è funzionale]**
+     `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
+     client di un utente tramite la relazione `clients()` (`owner_id`/
+     `owner_type`, polimorfica), ma la sua stessa azione
+     "associateExistingClient" scrive solo su `user_id` — stesso difetto in
+     `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`.
+     Non è cosmetico: `Modules\Quaeris\Http\Controllers\Api\SurveyController::
+     createContacts()` (l'endpoint reale usato dagli script clienti, es.
+     `extras/ATS/create_survey_contacts_sample_ATS.php`, marcato
+     "funzionalità REALE" in `routes/api.php`) legge esclusivamente
+     `$client->owner` (quindi `owner_id`/`owner_type`) per risolvere
+     l'utente proprietario — e rifiuta con 401 "Client non ha un owner
+     associato" se sono vuoti. Un client associato solo tramite gli
+     strumenti sopra resta bloccato su quell'endpoint finché qualcuno non
+     lancia a mano `php artisan user:backfill-oauth-client-owner`
+     (`Modules/User/app/Console/Commands/BackfillOauthClientOwnerCommand.php`
+     — esiste già, ma è un passo manuale separato, facile da dimenticare;
+     il suo stesso commento presuppone un `OauthClient::booted()` che
+     sincronizzi in automatico, mai scritto nel modello).
+     Verificato in produzione (query diretta su `oauth_clients` dall'utente,
+     2026-09-15): i 4 client reali (Admin, ATS, Vivaservizi, smat) hanno
+     oggi `owner_id = user_id` corretto — segno che quel comando di backfill
+     è già stato lanciato a mano in passato, non che il problema non esista.
+  2. **[SMENTITO 2026-09-15]** Ipotesi "il database `user` di produzione
+<<<<<<< .merge_file_OqolWM
+=======
+=======
+>>>>>>> df2ba808 (.)
   due scoperte **indipendenti da questa story**, non ancora tracciate in
   una story/issue propria — segnalate all'utente, decisione in sospeso:
   1. `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
@@ -244,10 +293,16 @@ Claude Sonnet 5
      credenziali negli script `extras/`) risulta presente**. Ipotesi in
      discussione con l'utente: il database sulla connessione `user`
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
+<<<<<<< HEAD
      potrebbe non essere stato ripristinato da un backup reale durante il
 <<<<<<< .merge_file_2ehWoE
      trasloco server, a differenza del DB principale.
 =======
+=======
+>>>>>>> .merge_file_aRtH94
+>>>>>>> .merge_file_u8LuLa
+     potrebbe non essere stato ripristinato da un backup reale durante il
+>>>>>>> df2ba808 (.)
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
      esistono tutti in `oauth_clients`, con date di creazione reali
@@ -315,6 +370,25 @@ Claude Sonnet 5
      sull'azione non trovata). PHPStan pulito, nessun residuo nel DB.
      Con questo, tutti e 3 i punti dell'issue module_user_fila5#97 sono
      risolti (creare, leggere, rimuovere l'associazione).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_OqolWM
+=======
+<<<<<<< .merge_file_ws0o7h
+>>>>>>> .merge_file_u8LuLa
+  7. **[APERTO 2026-09-15]** Verificati due strascichi non ancora risolti,
+     entrambi confermati concretamente (non ipotesi):
+     - `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`
+       (il comando CLI `quaeris:associate-client-user`) ha ancora lo stesso
+       difetto già corretto nel bottone Filament: scrive solo `user_id`
+       (`$client->forceFill(['user_id' => $user->getKey()]);`), mai
+       `owner_id`/`owner_type`. Chi usa questo comando invece del bottone
+       ricade nello stesso blocco su `SurveyController::createContacts`.
+       Non ancora corretto.
+<<<<<<< .merge_file_OqolWM
+=======
+=======
+>>>>>>> df2ba808 (.)
   7. **[APERTO 2026-09-15, primo punto CORRETTO 2026-09-17]** Verificati due
      strascichi, entrambi confermati concretamente (non ipotesi):
      - **[CORRETTO 2026-09-17]**
@@ -337,6 +411,11 @@ Claude Sonnet 5
        passava) — usato `Illuminate\Support\Facades\Artisan::call()`
        diretto, che funziona correttamente (stesso pattern verificato a
        mano via tinker).
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_aRtH94
+>>>>>>> .merge_file_u8LuLa
+>>>>>>> df2ba808 (.)
      - `Modules/Quaeris/tests/Feature/Http/Controllers/Api/
        AddContactMultiControllerOwnerResolutionTest.php` — il test che ha
        fatto partire questa intera indagine (Task 8 di
@@ -353,7 +432,10 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
+<<<<<<< HEAD
 >>>>>>> .merge_file_z5qNOS
+=======
+>>>>>>> df2ba808 (.)
 
 ### File List
 
@@ -371,8 +453,13 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 |---|---|---|
 | Issue (modulo) | aperta | https://github.com/laraxot/module_user_fila5/issues/85 |
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+<<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 =======
 | Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
 | Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
 >>>>>>> .merge_file_z5qNOS
+=======
+| Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
+| Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
+>>>>>>> df2ba808 (.)

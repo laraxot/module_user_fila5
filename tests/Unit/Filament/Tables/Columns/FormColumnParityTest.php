@@ -1,10 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_xjgrXo
 
 =======
 >>>>>>> .merge_file_hsrpIR
+=======
+<<<<<<< .merge_file_Cep9Uu
+
+=======
+<<<<<<< .merge_file_Jq3iwe
+
+=======
+>>>>>>> .merge_file_KVrlIS
+>>>>>>> .merge_file_7l9Nlf
+>>>>>>> df2ba808 (.)
 use Modules\User\Filament\Tables\Columns\SingleRoleSelectColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Tests\TestCase;
