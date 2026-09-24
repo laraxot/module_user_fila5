@@ -15,11 +15,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
-use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Widget for handling expired password reset.
@@ -30,16 +29,16 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * @property string|null               $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
-class PasswordExpiredWidget extends XotBaseWidget
+class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
-    // XotBaseWidget already implements HasForms and uses InteractsWithForms
-    use TransTrait;
-
     public ?string $current_password = '';
 
     public ?string $password = '';
 
     public ?string $passwordConfirmation = '';
+
+    /** @var array<string, mixed>|null */
+    public ?array $data = [];
 
     /**
      * The view for this widget.
@@ -53,7 +52,6 @@ class PasswordExpiredWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-    #[\Override]
     public function getFormSchema(): array
     {
         $schema = [
@@ -62,7 +60,7 @@ class PasswordExpiredWidget extends XotBaseWidget
         ];
 
         // Ensure list type for PHPStan Level 10
-        /* @var array<int, Component> $result */
+        /* @var array<int, Component> $schema */
         return array_values($schema);
     }
 
@@ -130,7 +128,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     {
         $authUser = Filament::auth()->user();
 
-        if ($authUser instanceof User) {
+        if ($authUser instanceof UserContract) {
             return TextInput::make('current_password')
                 ->password()
                 ->revealable()
@@ -179,7 +177,6 @@ class PasswordExpiredWidget extends XotBaseWidget
      *
      * @return array<int, Action|ActionGroup>
      */
-    #[\Override]
     protected function getFormActions(): array
     {
         return [

@@ -1,7 +1,27 @@
+---
+title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
+type: concept
+tags: [phpstan, fixes, gennaio]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-gennaio- 🔧 phpstan fixes - modulo user - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
-**Data**: 27 Gennaio 2025  
-**Status**: ✅ COMPLETATO CON SUCCESSO  
+**Data**: 27 Gennaio 2025
+**Status**: ✅ COMPLETATO CON SUCCESSO
 **Errori Corretti**: 3 errori di sintassi method chaining e object instantiation
 
 ## 📋 Panoramica Correzioni
@@ -211,6 +231,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
+- [README.md Modulo User](./README.md)
 - [README.md Modulo User](./readme.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
@@ -222,12 +243,25 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ---
 
-**🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
-**📦 Versione**: 1.0  
-**🐛 PHPStan Level**: 9 ✅  
-**🌐 Translation Standards**: IT/EN complete ✅  
-**🚀 Performance**: 95/100 score  
+**🔄 Ultimo aggiornamento**: 27 Gennaio 2025
+**📦 Versione**: 1.0
+**🐛 PHPStan Level**: 9 ✅
+**🌐 Translation Standards**: IT/EN complete ✅
+**🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
+---
+module: theme
+topic: phpstan-fixes-gennaio
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
 
-
-
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md

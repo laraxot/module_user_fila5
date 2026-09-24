@@ -1,14 +1,34 @@
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: concept
+tags: [logout, blade, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-blade-implementation-1-1 implementazione corretta di logout.blade.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-
 use Filament\Notifications\Actions\Action;
 use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;
@@ -14,7 +12,7 @@ use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 /** @var array */
-//$middleware=app(\Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction::class)->execute('middleware');
+//$middleware=TenantService::config('middleware');
 //$base_middleware=Arr::get($middleware,'base',[]);
 $base_middleware = [];
 

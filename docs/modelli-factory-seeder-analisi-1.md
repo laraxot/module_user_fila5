@@ -1,3 +1,23 @@
+---
+title: "Analisi Modelli, Factory e Seeder - Modulo User"
+type: concept
+tags: [modelli, factory, seeder, analisi]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "modelli-factory-seeder-analisi-1 analisi modelli, factory e seeder - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -182,8 +202,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-- [Quaeris Module](../../Quaeris/docs/modelli_factory_seeder_analisi.md)
-- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
+- [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
+- [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-2.md)
+- [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-2.md)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

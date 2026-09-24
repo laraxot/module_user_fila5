@@ -1,3 +1,23 @@
+---
+title: "CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions"
+type: concept
+tags: [resource, translation, violation, critical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resource-translation-violation-critical critical violation: hardcoded labels in xotbaseresource extensions"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 **Agente AI**: Claude Code (Sonnet 4.5)

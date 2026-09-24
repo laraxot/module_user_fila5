@@ -1,3 +1,15 @@
+---
+title: "Architettura Modulo User"
+type: concept
+tags: [architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture architettura modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # Architettura Modulo User
 
 ## 🏗️ Panoramica Architetturale

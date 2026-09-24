@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Listeners/FailedLoginListener.php
  */
@@ -35,7 +34,7 @@ class FailedLoginListener
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
-            $event
+            $log = $event
                 ->user
                 ->authentications()
                 ->create([

@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/users.php
 return [
     'fields' => [
         'id' => [
@@ -73,6 +69,21 @@ return [
             'label' => 'deactivate',
             'icon' => 'deactivate',
             'tooltip' => 'deactivate',
+        ],
+        'edit' => [
+            'tooltip' => 'edit',
+            'icon' => 'edit',
+            'label' => 'edit',
+        ],
+        'view' => [
+            'tooltip' => 'view',
+            'icon' => 'view',
+            'label' => 'view',
+        ],
+        'verify_email' => [
+            'tooltip' => 'verify_email',
+            'icon' => 'verify_email',
+            'label' => 'verify_email',
         ],
     ],
 ];

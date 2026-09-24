@@ -4,20 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Models;
 
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
+use Filament\Panel;
+use Mockery\MockInterface;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\SocialiteUserFactory;
@@ -31,7 +19,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->skipUnlessUsersTableReady();
+    TestCase::skipUnlessUsersTableReady();
 });
 
 describe('User Model', function (): void {
@@ -99,7 +87,7 @@ describe('User Model', function (): void {
 
     test('user can have permissions', function (): void {
         /* @var TestCase $this */
-        $this->skipUnlessDirectPermissionSupported();
+        TestCase::skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['guard_name' => 'web', 'name' => 'permission-'.uniqid()]);
@@ -121,7 +109,7 @@ describe('User Model', function (): void {
 
     test('user can check if has permission', function (): void {
         /* @var TestCase $this */
-        $this->skipUnlessDirectPermissionSupported();
+        TestCase::skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'perm-'.uniqid(), 'guard_name' => 'web']);
@@ -185,10 +173,14 @@ describe('User Model', function (): void {
         Assert::assertNull($user->email_verified_at);
     });
 
-    test('user can access filament by default', function (): void {
+    test('user can access the default admin filament panel by default', function (): void {
         $user = UserFactory::new()->createOne();
 
-        Assert::assertTrue($user->canAccessFilament());
+        $panel = configureMock(Panel::class, function (MockInterface $mock): void {
+            $mock->allows(['getId' => 'admin']);
+        });
+
+        Assert::assertTrue($user->canAccessPanel($panel));
     });
 
     test('user can access socialite by default', function (): void {
@@ -251,7 +243,7 @@ describe('User Model', function (): void {
 
     test('user can be deleted', function (): void {
         /* @var TestCase $this */
-        $this->skipUnlessDirectPermissionSupported();
+        TestCase::skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
         $userId = $user->id;

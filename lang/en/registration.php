@@ -2,48 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/en/registration.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // FO auth/register (Sixteen + RegisterWidget) — top-level keys used by blades.
-    'title' => 'Create an account',
-    'subtitle' => 'Citizen area',
-    'description' => 'Enter your details to create an account and access online services.',
-    'submit' => 'Register',
-    'already_have_account' => 'Already have an account?',
-    'login' => 'Sign in',
-    'failed' => 'Unable to complete registration.',
-    'success' => 'Registration completed successfully.',
-    'sidebar' => [
-        'support_title' => 'Before you start',
-        'help_email' => 'Use a valid email address for communications and password recovery.',
-        'help_password' => 'Choose a password of at least 12 characters with uppercase, lowercase, numbers, and symbols.',
-        'help_support' => 'After registration you can access your personal area.',
-    ],
     'fields' => [
         'first_name' => [
             'label' => 'First Name',

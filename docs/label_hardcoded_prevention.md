@@ -1,3 +1,12 @@
+---
+title: "Prevenzione ->label() Hardcoded - Modulo User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -186,9 +195,9 @@ return [
 
 ## 🔗 **Collegamenti**
 
-- [Translation Standards](../../../docs/translation-standards.md)
-- [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
-- [Best Practices](../../../docs/best-practices.md)
+- [Translation Standards](../../docs/translation-standards.md)
+- [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../docs/best-practices.md)
 
 ---
 

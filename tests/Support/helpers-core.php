@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\TeamFactory;
@@ -62,7 +61,7 @@ function plainTestPassword(): string
 {
     static $password = null;
 
-    if (null === $password) {
+    if (! is_string($password)) {
         $password = fake()->password(12).'Aa1!';
     }
 
@@ -120,12 +119,16 @@ function skipUnlessUserTable(string $table, string $reason = ''): void
 
 function permissionRolePivotTable(): string
 {
-    return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+    $value = config('permission.table_names.model_has_roles', 'model_has_role');
+
+    return is_string($value) ? $value : 'model_has_role';
 }
 
 function permissionPivotTable(): string
 {
-    return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+    $value = config('permission.table_names.model_has_permissions', 'model_has_permission');
+
+    return is_string($value) ? $value : 'model_has_permission';
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void

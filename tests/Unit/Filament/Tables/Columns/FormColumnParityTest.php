@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_xjgrXo
 
+=======
+>>>>>>> .merge_file_hsrpIR
 use Modules\User\Filament\Tables\Columns\SingleRoleSelectColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Tests\TestCase;

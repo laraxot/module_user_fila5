@@ -5,18 +5,18 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Notifications\Notification;
-use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
-use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Webmozart\Assert\Assert;
 
 /**
- * Register FO — schema SSoT in `Resources\UserResource\Schemas\UserForm::getRegisterFormSchema()`.
+ * Register FO — schema SSoT in `Schemas\UserForm::getRegisterFormSchema()`.
  *
  * Religione R1 (form-fields-self-validate): NIENTE `validateForm()`, NIENTE
  *  `Hash::make`, NIENTE `SafeStringCast` qui dentro. Il form ha già
@@ -69,7 +69,7 @@ class RegisterWidget extends XotBaseSchemaWidget
 
         $userClass = XotData::make()->getUserClass();
 
-        $user = DB::transaction(function () use ($data, $userClass): Authenticatable {
+        $user = DB::transaction(function () use ($data, $userClass): UserContract {
             $firstName = is_string($data['first_name'] ?? null) ? trim($data['first_name']) : '';
             $lastName = is_string($data['last_name'] ?? null) ? trim($data['last_name']) : '';
             $name = trim($firstName.' '.$lastName);
@@ -91,7 +91,7 @@ class RegisterWidget extends XotBaseSchemaWidget
                     ->log('User registered via RegisterWidget');
             }
 
-            Assert::isInstanceOf($user, Authenticatable::class);
+            Assert::isInstanceOf($user, UserContract::class);
 
             return $user;
         });
@@ -99,20 +99,20 @@ class RegisterWidget extends XotBaseSchemaWidget
         $this->handleSuccessfulRegistration($user);
     }
 
-    protected function handleSuccessfulRegistration(Authenticatable $user): void
+    protected function handleSuccessfulRegistration(UserContract $user): void
     {
-        if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
+        if (config('auth.must_verify_email')) {
             $user->sendEmailVerificationNotification();
         }
 
         Auth::login($user);
 
         Notification::make()
-            ->title(__('user::registration.success'))
+            ->title(__('user::auth.register.success.text'))
             ->success()
             ->send();
 
-        $redirectUrl = \Illuminate\Support\Facades\Route::has('dashboard')
+        $redirectUrl = Route::has('dashboard')
             ? route('dashboard')
             : url('/'.app()->getLocale());
 

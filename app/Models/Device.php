@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\DeviceFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -97,15 +99,24 @@ class Device extends BaseModel
     ];
 
     /**
-     * Define the many-to-many relationship between devices and users.
-     *
-     * @return BelongsToMany<Model&UserContract, $this>
+     * Create a new factory instance for the model, typed for static analysis.
+     */
+    protected static function newFactory(): DeviceFactory
+    {
+        return DeviceFactory::new();
+    }
+
+    /**
+     * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
     {
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsToManyX($userClass);
+        /** @var BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($userClass);
+
+        return $relation;
     }
 
     /**
