@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 /*
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */

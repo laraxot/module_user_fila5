@@ -32,13 +32,4 @@ return [
             'redirect' => ['label' => 'microsoft.redirect', 'placeholder' => 'microsoft.redirect', 'helper_text' => 'microsoft.redirect', 'description' => 'microsoft.redirect'],
         ],
     ],
-<<<<<<< HEAD
-=======
-    'actions' => [
-        'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
-        'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
-        'copy' => ['label' => 'copy', 'icon' => 'copy', 'tooltip' => 'copy'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-    ],
->>>>>>> laraxot/dev
 ];

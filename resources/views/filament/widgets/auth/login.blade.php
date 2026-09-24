@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
-=======
->>>>>>> laraxot/dev
 {{--
     View: user::filament.widgets.auth.login
     Enhanced UX/UI with modern 2026 design trends

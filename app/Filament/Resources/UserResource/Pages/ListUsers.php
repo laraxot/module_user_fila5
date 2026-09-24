@@ -8,10 +8,7 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
-<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
@@ -22,7 +19,6 @@ class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
-<<<<<<< HEAD
     #[\Override]
     public function getTableColumns(): array
     {
@@ -37,8 +33,6 @@ class ListUsers extends BaseListUsers
         ];
     }
 
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<BaseFilter>
      */

@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 use Filament\Clusters\Cluster;
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
@@ -16,13 +15,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
-=======
-use Filament\Notifications\Notification;
-use Livewire\Attributes\On;
-use Modules\User\Filament\Clusters\Passport;
-use Modules\Xot\Actions\ExecuteArtisanCommandAction;
-use Modules\Xot\Filament\Pages\XotBasePage;
->>>>>>> laraxot/dev
 
 class PassportDashboard extends XotBasePage
 {
@@ -46,7 +38,6 @@ class PassportDashboard extends XotBasePage
 
     protected string $view = 'user::filament.pages.passport-dashboard';
 
-<<<<<<< HEAD
     /**
      * `ExecuteArtisanCommandAction::execute()` è sincrona e bloccante: al suo
      * ritorno il comando è già completato per davvero. Prima leggevamo lo
@@ -58,8 +49,6 @@ class PassportDashboard extends XotBasePage
      * impostati qui sopra, a prescindere da quanto il comando reale fosse
      * andato a buon fine. Fix: leggere direttamente il valore di ritorno.
      */
-=======
->>>>>>> laraxot/dev
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -67,7 +56,6 @@ class PassportDashboard extends XotBasePage
         $this->isRunning = true;
 
         try {
-<<<<<<< HEAD
             $result = app(ExecuteArtisanCommandAction::class)->execute($command);
 
             $this->output = $result['output'];
@@ -75,7 +63,7 @@ class PassportDashboard extends XotBasePage
             $this->isRunning = false;
             $this->checkKeys();
 
-            if ('completed' === $result['status']) {
+            if ($result['status'] === 'completed') {
                 Notification::make()
                     ->title('Command completed successfully')
                     ->success()
@@ -91,39 +79,14 @@ class PassportDashboard extends XotBasePage
             $this->status = 'failed';
             $this->isRunning = false;
 
-=======
-            app(ExecuteArtisanCommandAction::class)->execute($command);
-        } catch (\Exception $e) {
->>>>>>> laraxot/dev
             Notification::make()
                 ->title('Error executing command')
                 ->body($e->getMessage())
                 ->danger()
                 ->send();
-<<<<<<< HEAD
         }
     }
 
-=======
-
-            $this->isRunning = false;
-        }
-    }
-
-    #[On('artisan-command.started')]
-    public function handleCommandStarted(string $command): void
-    {
-        $this->isRunning = true;
-    }
-
-    #[On('artisan-command.output')]
-    public function handleCommandOutput(string $command, string $output): void
-    {
-        $this->output[] = $output;
-        $this->dispatch('terminal-update');
-    }
-
->>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->checkKeys();
@@ -135,52 +98,6 @@ class PassportDashboard extends XotBasePage
         $this->hasPrivateKey = file_exists(storage_path('oauth-private.key'));
     }
 
-<<<<<<< HEAD
-=======
-    #[On('artisan-command.completed')]
-    public function onCommandCompleted(string $command): void
-    {
-        if ($this->currentCommand === $command) {
-            $this->isRunning = false;
-            $this->status = 'completed';
-            $this->checkKeys();
-        }
-
-        Notification::make()
-            ->title('Command completed successfully')
-            ->success()
-            ->send();
-    }
-
-    #[On('artisan-command.failed')]
-    public function handleCommandFailed(string $command, string $error): void
-    {
-        $this->status = 'failed';
-        $this->isRunning = false;
-        $this->output[] = "[ERROR] {$error}";
-
-        Notification::make()
-            ->title('Command failed')
-            ->body($error)
-            ->danger()
-            ->send();
-    }
-
-    #[On('artisan-command.error')]
-    public function handleCommandError(string $command, string $error): void
-    {
-        $this->status = 'failed';
-        $this->isRunning = false;
-        $this->output[] = "[ERROR] {$error}";
-
-        Notification::make()
-            ->title('Command error')
-            ->body($error)
-            ->danger()
-            ->send();
-    }
-
->>>>>>> laraxot/dev
     protected function getViewData(): array
     {
         return [
@@ -193,7 +110,6 @@ class PassportDashboard extends XotBasePage
         ];
     }
 
-<<<<<<< HEAD
     /**
      * Story user-passport-create-client-credentials-button.md: crea un
      * client OAuth `client_credentials` con credenziali funzionanti,
@@ -251,11 +167,6 @@ class PassportDashboard extends XotBasePage
         return [
             'new_credentials' => $this->newCredentialsAction(),
 
-=======
-    protected function getHeaderActions(): array
-    {
-        return [
->>>>>>> laraxot/dev
             'passport_install' => Action::make('passport_install')
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')

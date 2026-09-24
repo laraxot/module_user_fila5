@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
@@ -27,8 +19,7 @@ class CreateSocialiteUserAction
 
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action.

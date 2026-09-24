@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 /*
 Route::prefix('{lang}')->group(function () {
     Route::middleware('guest')->group(function () {

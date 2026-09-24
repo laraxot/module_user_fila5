@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use function Safe\filesize;
 use function Safe\simplexml_load_file;
 
@@ -179,13 +175,13 @@ foreach ($sortedFiles as $fileName => $stats) {
 
     $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
     printf("  %6.1f%% - %s\n", $percent, $shortName);
-    ++$counter;
+    $counter++;
 }
 
 echo "\n";
 
 // Files with no coverage
-$uncoveredFiles = array_filter($allFiles, fn (array $stats) => 0 === $stats['elements']['covered'] && $stats['elements']['total'] > 0);
+$uncoveredFiles = array_filter($allFiles, fn (array $stats) => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";
@@ -198,7 +194,7 @@ if (count($uncoveredFiles) > 0) {
         }
         $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
         echo '  - '.$shortName."\n";
-        ++$counter;
+        $counter++;
     }
     echo "\n";
 }

@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
 use Modules\User\Filament\Resources\TenantUserResource;
-<<<<<<< HEAD
-use Modules\User\Filament\Resources\TenantUserResource\Schemas\TenantUserInfolist;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -17,16 +13,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTenantUser extends XotBaseViewRecord
 {
     protected static string $resource = TenantUserResource::class;
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return app(TenantUserInfolist::class)->getInfolistSchema();
-    }
-=======
->>>>>>> laraxot/dev
 }

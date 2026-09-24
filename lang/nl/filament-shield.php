@@ -18,15 +18,6 @@ return [
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Rollen',
-<<<<<<< HEAD
-=======
-    'section' => 'Entiteiten',
-    'resources' => 'Resources',
-    'widgets' => 'Widgets',
-    'pages' => 'Pagina\'s',
-    'custom' => 'Andere permissies',
-    'forbidden' => 'Je hebt geen toegang',
->>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Bekijken',
         'view_any' => 'Bekijk elke',
@@ -40,20 +31,4 @@ return [
         'restore_any' => 'Herstel elke',
         'replicate' => 'Repliceren',
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
->>>>>>> laraxot/dev
 ];

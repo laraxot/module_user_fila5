@@ -66,19 +66,6 @@ return [
             'success' => 'Password reset successfully',
             'error' => 'Unable to reset password',
         ],
-<<<<<<< HEAD
-=======
-        'showPassword' => [
-            'label' => 'showPassword',
-            'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
-        ],
-        'hidePassword' => [
-            'label' => 'hidePassword',
-            'icon' => 'hidePassword',
-            'tooltip' => 'hidePassword',
-        ],
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'logout_success' => 'Successfully logged out',
@@ -89,38 +76,4 @@ return [
         'general_error' => 'An error occurred. Please try again later.',
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
-<<<<<<< HEAD
-=======
-    'title' => 'Sign in to your account',
-    'subtitle_start' => 'Or',
-    'subtitle_link' => 'create a new account',
-    'page' => [
-        'title' => 'Welcome to <nome progetto>! 🍕',
-        'subtitle' => 'Join the community of developers and pizza lovers',
-    ],
-    'already_registered' => 'Don\'t have an account yet?',
-    'register' => 'Register now',
-    'no_account' => 'Don\'t have an account yet?',
-    'register_now' => 'Register now',
-    'forgot_password_text' => 'Forgot your password?',
-    'reset_it' => 'Reset it here',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'login-via' => 'Or continue with',
-    'google' => 'Google',
-    'microsoft' => 'Microsoft',
-    'social' => [
-        'title' => 'Or continue with',
-        'google' => 'Sign in with Google',
-        'microsoft' => 'Sign in with Microsoft',
-        'github' => 'Sign in with GitHub',
-    ],
->>>>>>> laraxot/dev
 ];

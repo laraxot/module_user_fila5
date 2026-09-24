@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Console\Command;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
@@ -15,7 +11,7 @@ uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
-    return new ChangeTypeCommand();
+    return new ChangeTypeCommand;
 }
 
 test('change type command can be instantiated', function (): void {

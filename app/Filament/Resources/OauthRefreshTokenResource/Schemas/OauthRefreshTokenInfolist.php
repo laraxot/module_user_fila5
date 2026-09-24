@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\OauthRefreshTokenResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class OauthRefreshTokenInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model OauthRefreshToken.php -> id, access_token_id, revoked, expires_at
      */

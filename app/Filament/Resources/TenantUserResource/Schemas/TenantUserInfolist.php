@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class TenantUserInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model TenantUser.php -> id, uuid, tenant_id, user_id
      */

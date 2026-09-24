@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
-=======
->>>>>>> laraxot/dev
 <div x-data="{ open: false }" class="relative inline-block text-left" @click.away="open = false">
     <div>
         <button @click="open = !open" type="button" class="flex items-center space-x-3 focus:outline-none group" id="user-menu-button" aria-expanded="false" aria-haspopup="true">

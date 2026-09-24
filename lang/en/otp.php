@@ -31,18 +31,6 @@ return [
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'reset_password' => 'Reimposta Password',

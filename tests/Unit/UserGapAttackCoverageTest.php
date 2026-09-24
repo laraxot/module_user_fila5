@@ -15,19 +15,11 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Resources\OauthAuthCodeResource;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
-<<<<<<< HEAD
+use Modules\User\Filament\Widgets\EditUserWidget;
+use Modules\User\Filament\Widgets\RegistrationWidget;
+use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
-use Modules\User\Filament\Widgets\EditUserWidget;
-use Modules\User\Filament\Widgets\RegistrationWidget;
-use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
-=======
-use Modules\User\Filament\Widgets\EditUserWidget;
-use Modules\User\Filament\Widgets\RegistrationWidget;
-use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
-use Modules\User\Http\Livewire\Auth\Passwords\Reset;
-use Modules\User\Http\Livewire\Auth\Register;
->>>>>>> laraxot/dev
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Listeners\OtherDeviceLogoutListener;
 use Modules\User\Models\BaseUser;
@@ -86,11 +78,7 @@ describe('User gap attack — highest miss files', function (): void {
     test('Auth Livewire Register e Reset offline', function (): void {
         // PasswordExpired Livewire non esiste: è Filament Page Auth\PasswordExpired (git log -S).
         // Reset vive in Http\Livewire\Auth\Passwords, non in Http\Livewire\Passwords.
-<<<<<<< HEAD
         foreach ([RegisterWidget::class, ResetPasswordWidget::class] as $class) {
-=======
-        foreach ([Register::class, Reset::class] as $class) {
->>>>>>> laraxot/dev
             if (! class_exists($class)) {
                 continue;
             }
@@ -167,7 +155,7 @@ describe('User gap attack — highest miss files', function (): void {
                 }
             }
 
-            $eventClass = OtherDeviceLogoutListener::class === $class
+            $eventClass = $class === OtherDeviceLogoutListener::class
                 ? OtherDeviceLogout::class
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
@@ -212,7 +200,7 @@ describe('User gap attack — highest miss files', function (): void {
         Hash::shouldReceive('check')->andReturn(true);
         Hash::shouldReceive('needsRehash')->andReturn(false);
 
-        $user = new UserGapBaseUserProbe();
+        $user = new UserGapBaseUserProbe;
         $user->setRawAttributes([
             'id' => 1,
             'name' => 'Test',
@@ -223,8 +211,8 @@ describe('User gap attack — highest miss files', function (): void {
 
         $ref = new \ReflectionClass($user);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-            if (UserGapBaseUserProbe::class !== $method->getDeclaringClass()->getName()
-                && BaseUser::class !== $method->getDeclaringClass()->getName()) {
+            if ($method->getDeclaringClass()->getName() !== UserGapBaseUserProbe::class
+                && $method->getDeclaringClass()->getName() !== BaseUser::class) {
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

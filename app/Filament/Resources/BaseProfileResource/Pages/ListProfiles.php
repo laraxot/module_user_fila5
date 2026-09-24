@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
-<<<<<<< HEAD
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
@@ -14,9 +13,6 @@ use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
-=======
-use Modules\User\Filament\Resources\BaseProfileResource;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
@@ -25,7 +21,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = BaseProfileResource::class;
-<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -45,10 +40,10 @@ class ListProfiles extends XotBaseListRecords
                     // PHPStan Level 10: isset() invece di property_exists() per Eloquent relations/attributes
                     $userValue = $record->user ?? null;
 
-                    if (null === $userValue) {
+                    if ($userValue === null) {
                         $emailValue = $record->email ?? null;
 
-                        if (null === $emailValue) {
+                        if ($emailValue === null) {
                             if (method_exists($record, 'update')) {
                                 $record->update(['email' => fake()->email()]);
                             }
@@ -73,7 +68,7 @@ class ListProfiles extends XotBaseListRecords
                     // PHPStan Level 10: isset() per magic properties di User model
                     $userId = $userValue->id ?? null;
 
-                    if (null !== $userId && method_exists($record, 'update')) {
+                    if ($userId !== null && method_exists($record, 'update')) {
                         $record->update(['user_id' => $userId]);
                     }
 
@@ -106,6 +101,4 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
-=======
->>>>>>> laraxot/dev
 }

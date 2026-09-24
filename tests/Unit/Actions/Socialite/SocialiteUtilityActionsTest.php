@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
@@ -128,7 +124,7 @@ describe('Socialite utility actions', function (): void {
     });
 
     it('logs out user token and device sessions', function (): void {
-        $accessToken = new DeletableAccessTokenFixture();
+        $accessToken = new DeletableAccessTokenFixture;
         $refreshTokenId = 'rtok-'.uniqid();
         $deviceId = 'dev-'.uniqid();
         $userId = 'user-'.uniqid();

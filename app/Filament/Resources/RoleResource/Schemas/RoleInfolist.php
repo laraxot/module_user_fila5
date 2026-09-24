@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\RoleResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class RoleInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model Role.php -> id, uuid, team_id, name, guard_name, display_name, description
      */

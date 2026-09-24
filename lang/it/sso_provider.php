@@ -16,16 +16,8 @@ return [
         'is_active' => ['label' => 'is_active'],
     ],
     'actions' => [
-<<<<<<< HEAD
         'create' => ['label' => 'Crea Sso Provider'],
         'edit' => ['label' => 'Modifica Sso Provider'],
         'delete' => ['label' => 'Elimina Sso Provider'],
-=======
-        'create' => ['label' => 'Crea Sso Provider', 'icon' => 'create', 'tooltip' => 'create'],
-        'edit' => ['label' => 'Modifica Sso Provider', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'Elimina Sso Provider', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
->>>>>>> laraxot/dev
     ],
 ];

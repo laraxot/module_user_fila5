@@ -14,11 +14,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         // return $user->hasPermissionToOrCreate('feature.view.any');
-=======
-        // return $user->hasPermissionTo('feature.view.any');
->>>>>>> laraxot/dev
         return false;
     }
 
@@ -27,11 +23,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function view(UserContract $user, Feature $_feature): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.view') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('feature.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -39,11 +31,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.create');
-=======
-        return $user->hasPermissionTo('feature.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -51,11 +39,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function update(UserContract $user, Feature $_feature): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('feature.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -63,11 +47,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, Feature $_feature): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('feature.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -75,11 +55,7 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, Feature $_feature): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('feature.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -87,10 +63,6 @@ class FeaturePolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, Feature $feature): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('feature.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('feature.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }

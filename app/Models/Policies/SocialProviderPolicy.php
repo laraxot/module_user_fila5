@@ -14,11 +14,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         // return $user->hasPermissionToOrCreate('social-provider.view.any');
-=======
-        // return $user->hasPermissionTo('social-provider.view.any');
->>>>>>> laraxot/dev
         return false;
     }
 
@@ -27,11 +23,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, SocialProvider $_socialProvider): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.view') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('social-provider.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -39,11 +31,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.create');
-=======
-        return $user->hasPermissionTo('social-provider.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -51,11 +39,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, SocialProvider $_socialProvider): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('social-provider.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -63,11 +47,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, SocialProvider $_socialProvider): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('social-provider.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -75,11 +55,7 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, SocialProvider $_socialProvider): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('social-provider.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -87,10 +63,6 @@ class SocialProviderPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, SocialProvider $socialProvider): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('social-provider.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('social-provider.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }

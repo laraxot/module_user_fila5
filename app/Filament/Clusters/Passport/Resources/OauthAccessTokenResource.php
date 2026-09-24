@@ -47,16 +47,12 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
-<<<<<<< HEAD
                     ->url(function (Model|array|null $record): ?string {
-=======
-                    ->url(function (mixed $record): ?string {
->>>>>>> laraxot/dev
                         if (! $record instanceof OauthAccessToken) {
                             return null;
                         }
                         $user = $record->user;
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -74,11 +70,10 @@ class OauthAccessTokenResource extends XotBaseResource
 
                 TextColumn::make('scopes')
                     ->limit(30)
-<<<<<<< HEAD
                     ->tooltip(
                         /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                         function (mixed $state): ?string {
-                            if (null === $state) {
+                            if ($state === null) {
                                 return null;
                             }
                             if (is_array($state)) {
@@ -88,19 +83,6 @@ class OauthAccessTokenResource extends XotBaseResource
                             return is_string($state) ? $state : null;
                         }
                     ),
-=======
-                    ->tooltip(function (mixed $state): ?string {
-                        if (null === $state) {
-                            return null;
-                        }
-                        if (is_array($state)) {
-                            /* @var array<string, mixed> $state */
-                            return json_encode($state);
-                        }
-
-                        return is_string($state) ? $state : null;
-                    }),
->>>>>>> laraxot/dev
 
                 IconColumn::make('revoked')
                     ->boolean()
@@ -113,11 +95,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable()
-<<<<<<< HEAD
                     ->formatStateUsing(function (Carbon|string|null $state): string {
-=======
-                    ->formatStateUsing(function (mixed $state): string {
->>>>>>> laraxot/dev
                         if ($state instanceof Carbon) {
                             $now = Carbon::now();
                             if ($state->lt($now)) {
@@ -145,11 +123,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
-<<<<<<< HEAD
                     ->action(function (Model|array|null $record): void {
-=======
-                    ->action(function (mixed $record): void {
->>>>>>> laraxot/dev
                         if ($record instanceof Model) {
                             $key = $record->getKey();
                             if ((is_int($key) || is_string($key)) && app(RevokeTokenAction::class)->execute((string) $key)) {
@@ -160,11 +134,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             }
                         }
                     })
-<<<<<<< HEAD
                     ->visible(fn (Model|array|null $record) => $record instanceof OauthAccessToken && ! $record->revoked),
-=======
-                    ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
->>>>>>> laraxot/dev
                 DeleteAction::make(),
             ])
             ->toolbarActions([
@@ -204,16 +174,12 @@ class OauthAccessTokenResource extends XotBaseResource
             'user.name' => TextColumn::make('user.name')
                 ->searchable()
                 ->sortable()
-<<<<<<< HEAD
                 ->url(function (Model|array|null $record): ?string {
-=======
-                ->url(function (mixed $record): ?string {
->>>>>>> laraxot/dev
                     if (! $record instanceof OauthAccessToken) {
                         return null;
                     }
                     $user = $record->user;
-                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                    if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -231,11 +197,10 @@ class OauthAccessTokenResource extends XotBaseResource
 
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
-<<<<<<< HEAD
                 ->tooltip(
                     /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                     function (mixed $state): ?string {
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {
@@ -245,19 +210,6 @@ class OauthAccessTokenResource extends XotBaseResource
                         return is_string($state) ? $state : null;
                     }
                 ),
-=======
-                ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
-                        return null;
-                    }
-                    if (is_array($state)) {
-                        /* @var array<string, mixed> $state */
-                        return json_encode($state);
-                    }
-
-                    return is_string($state) ? $state : null;
-                }),
->>>>>>> laraxot/dev
 
             'revoked' => IconColumn::make('revoked')
                 ->boolean()
@@ -270,11 +222,7 @@ class OauthAccessTokenResource extends XotBaseResource
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
-<<<<<<< HEAD
                 ->formatStateUsing(function (Carbon|string|null $state): string {
-=======
-                ->formatStateUsing(function (mixed $state): string {
->>>>>>> laraxot/dev
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {
@@ -316,11 +264,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-<<<<<<< HEAD
                 ->action(function (Model|array|null $record): void {
-=======
-                ->action(function (mixed $record): void {
->>>>>>> laraxot/dev
                     if ($record instanceof Model) {
                         $key = $record->getKey();
                         if ((is_int($key) || is_string($key)) && app(RevokeTokenAction::class)->execute((string) $key)) {
@@ -331,11 +275,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         }
                     }
                 })
-<<<<<<< HEAD
                 ->visible(fn (Model|array|null $record): bool => $record instanceof OauthAccessToken && ! $record->revoked),
-=======
-                ->visible(fn (mixed $record): bool => $record instanceof OauthAccessToken && ! $record->revoked),
->>>>>>> laraxot/dev
             'delete' => DeleteAction::make(),
         ];
     }

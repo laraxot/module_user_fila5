@@ -1,19 +1,11 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
  * @see https://github.com/3x1io/filament-user/blob/main/src/resources/UserResource.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
@@ -38,10 +30,7 @@ abstract class BaseUserResource extends XotBaseResource
     // {
     //    static::$extendFormCallback = $callback;
     // }
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;
@@ -53,11 +42,8 @@ abstract class BaseUserResource extends XotBaseResource
      * return config('filament-user-resource.model');
      * }
      */
-<<<<<<< HEAD
 
     #[\Override]
-=======
->>>>>>> laraxot/dev
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

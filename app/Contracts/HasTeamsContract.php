@@ -1,49 +1,22 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * --- Artmin.
  */
 
-<<<<<<< HEAD
 namespace Modules\User\Contracts;
 
-=======
-declare(strict_types=1);
-
-namespace Modules\User\Contracts;
-
-use Illuminate\Database\Eloquent\Collection;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
-=======
-use Illuminate\Support\Carbon;
-use Laravel\Passport\Token;
->>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 
 /**
  * Modules\User\Contracts\HasTeamsContract.
  *
-<<<<<<< HEAD
-=======
- * @property int                    $id
- * @property string                 $name
- * @property string                 $two_factor_secret
- * @property TeamContract|null      $currentTeam
- * @property Collection<int, Token> $tokens
- * @property Carbon|null            $two_factor_confirmed_at
- * @property int                    $current_team_id
- *
->>>>>>> laraxot/dev
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
@@ -70,15 +43,9 @@ interface HasTeamsContract
     /**
      * Get all of the teams the user owns or belongs to.
      *
-<<<<<<< HEAD
      * @return Collection<int, Model>
      */
     public function allTeams(): Collection;
-=======
-     * @return \Illuminate\Support\Collection<int, Model>
-     */
-    public function allTeams(): \Illuminate\Support\Collection;
->>>>>>> laraxot/dev
 
     /**
      * Get all of the teams the user owns.

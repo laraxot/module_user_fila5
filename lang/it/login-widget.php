@@ -50,20 +50,4 @@ return [
             'too_many_attempts' => 'Troppi tentativi, riprova più tardi',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'name' => 'Login Widget',
-        'plural' => 'Login Widget',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Login Widget',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Login Widget',
-    'plural_label' => 'Login Widget (Plurale)',
->>>>>>> laraxot/dev
 ];

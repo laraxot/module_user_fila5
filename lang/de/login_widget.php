@@ -34,19 +34,6 @@ return [
             'label' => 'Anmelden',
             'tooltip' => 'Klicken Sie, um auf Ihr Konto zuzugreifen',
         ],
-<<<<<<< HEAD
-=======
-        'hidePassword' => [
-            'tooltip' => 'hidePassword',
-            'label' => 'hidePassword',
-            'icon' => 'hidePassword',
-        ],
-        'showPassword' => [
-            'label' => 'showPassword',
-            'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
-        ],
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'login_success' => 'Anmeldung erfolgreich',
@@ -59,16 +46,4 @@ return [
         'forgot_password' => 'Passwort vergessen?',
         'errors_title' => 'Es sind einige Fehler aufgetreten',
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

@@ -1,22 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * ---.
  */
-=======
-/**
- * ---.
- */
-
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */

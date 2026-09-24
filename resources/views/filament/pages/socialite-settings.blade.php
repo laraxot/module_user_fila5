@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
-=======
->>>>>>> laraxot/dev
 {{--
     View: user::filament.pages.socialite-settings
     

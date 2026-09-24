@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\SocialiteUserResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class SocialiteUserInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model SocialiteUser.php -> id, uuid, user_id, provider, provider_id, token, name, email, avatar
      */

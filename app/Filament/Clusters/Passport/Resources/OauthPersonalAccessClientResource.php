@@ -32,22 +32,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static ?string $model = OauthPersonalAccessClient::class;
 
     /**
-<<<<<<< HEAD
-=======
-     * Define the table for the resource.
-     */
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(self::getTableColumns())
-            ->filters(self::getTableFilters())
-            ->recordActions(self::getTableActions())
-            ->toolbarActions(self::getTableBulkActions())
-            ->defaultSort('created_at', 'desc');
-    }
-
-    /**
->>>>>>> laraxot/dev
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>

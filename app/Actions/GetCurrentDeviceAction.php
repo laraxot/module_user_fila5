@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\User\Actions;
 
 use Jenssegers\Agent\Agent;
@@ -26,8 +18,7 @@ class GetCurrentDeviceAction
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action.
@@ -37,13 +28,13 @@ class GetCurrentDeviceAction
         $deviceInfo = $this->getDeviceInfo();
         $browserInfo = $this->getBrowserInfo();
 
-        if (null !== $mobileId) {
+        if ($mobileId !== null) {
             if (empty($mobileId)) {
                 throw new \InvalidArgumentException('L\'ID mobile non può essere vuoto');
             }
 
             $device = $this->deviceModel->firstOrCreate(['mobile_id' => $mobileId]);
-            if (null === $device) {
+            if ($device === null) {
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
@@ -52,7 +43,7 @@ class GetCurrentDeviceAction
         }
 
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
-        if (null === $device) {
+        if ($device === null) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
         }
         $device->update($browserInfo);

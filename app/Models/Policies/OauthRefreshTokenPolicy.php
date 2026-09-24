@@ -14,11 +14,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.view.any');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.view.any');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -26,11 +22,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, OauthRefreshToken $_oauthRefreshToken): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.view') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -38,11 +30,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.create');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -50,11 +38,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, OauthRefreshToken $_oauthRefreshToken): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -62,11 +46,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, OauthRefreshToken $_oauthRefreshToken): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -74,11 +54,7 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, OauthRefreshToken $_oauthRefreshToken): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -86,10 +62,6 @@ class OauthRefreshTokenPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, OauthRefreshToken $oauthRefreshToken): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-refresh-token.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('oauth-refresh-token.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }

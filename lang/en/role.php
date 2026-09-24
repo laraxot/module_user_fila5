@@ -17,20 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
-            'placeholder' => 'Nome del ruolo',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \\"web\\".',
-            'placeholder' => 'Nome della guardia',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -63,85 +49,18 @@ return [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
-<<<<<<< HEAD
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'team_id' => [
             'description' => 'team_id',
             'helper_text' => 'team_id',
             'placeholder' => 'team_id',
             'label' => 'team_id',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'recordId' => [
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
             'label' => 'recordId',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'roles' => [

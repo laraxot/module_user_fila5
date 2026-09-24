@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * ----.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\User\Providers;
 
 use Illuminate\Auth\Notifications\ResetPassword;
@@ -49,10 +41,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
-<<<<<<< HEAD
-=======
-        // $this->registerEventListener();
->>>>>>> laraxot/dev
         $this->registerPasswordRules();
         $this->registerPulse();
         $this->registerMailsNotification();
@@ -96,12 +84,12 @@ class UserServiceProvider extends XotBaseServiceProvider
             $serviceConfig = config("services.{$provider}", []);
 
             $clientId = $serviceConfig['client_id'] ?? null;
-            if (is_string($clientId) && '' !== $clientId) {
+            if (is_string($clientId) && $clientId !== '') {
                 Config::set("user.social-providers.{$provider}.client_id", $clientId);
             }
 
             $clientSecret = $serviceConfig['client_secret'] ?? null;
-            if (is_string($clientSecret) && '' !== $clientSecret) {
+            if (is_string($clientSecret) && $clientSecret !== '') {
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }
@@ -114,10 +102,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
-<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
-=======
->>>>>>> laraxot/dev
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
              * return (new MailMessage)
@@ -175,10 +160,7 @@ class UserServiceProvider extends XotBaseServiceProvider
          * ->salutation($salutation);
          * });
          */
-<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
-=======
->>>>>>> laraxot/dev
         VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');

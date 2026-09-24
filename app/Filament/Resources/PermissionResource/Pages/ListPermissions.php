@@ -13,21 +13,15 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
-<<<<<<< HEAD
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< HEAD
 use Modules\User\Filament\Resources\PermissionResource;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -35,7 +29,6 @@ use Webmozart\Assert\Assert;
 
 class ListPermissions extends XotBaseListRecords
 {
-<<<<<<< HEAD
     protected static string $resource = PermissionResource::class;
 
     /**
@@ -52,8 +45,6 @@ class ListPermissions extends XotBaseListRecords
         ];
     }
 
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, BaseFilter>
      */
@@ -120,11 +111,7 @@ class ListPermissions extends XotBaseListRecords
                         $query = $roleModel::query();
 
                         return $query->pluck('name', 'id')
-<<<<<<< HEAD
                             ->mapWithKeys(static fn (mixed $name, int|string $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
-=======
-                            ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
->>>>>>> laraxot/dev
                             ->all();
                     })->required(),
                 ])

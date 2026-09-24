@@ -1,22 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * ---.
  */
-=======
-/**
- * ---.
- */
-
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Esegue la migrazione.
      */
@@ -44,19 +36,6 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('personal_team')) {
                 $table->boolean('personal_team')->default(false)->change();
             }
-<<<<<<< HEAD
-=======
-
-            if (! $this->hasColumn('code')) {
-                $table->string('code', 36)->nullable()->index();
-            }
-
-            if (! $this->hasColumn('owner_id')) {
-                $table->uuid('owner_id')->nullable()->after('id');
-            }
-
-            $this->updateTimestamps($table, true);
->>>>>>> laraxot/dev
         });
     }
 };

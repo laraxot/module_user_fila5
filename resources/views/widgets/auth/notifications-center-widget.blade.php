@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 <div class="cmp-notifications-center">
     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">

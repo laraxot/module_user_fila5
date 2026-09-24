@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\DeviceResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class DeviceInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model Device.php -> id, uuid, mobile_id, name, type, device, platform, browser, version, is_robot, robot, is_desktop, is_mobile, is_tablet, is_phone, languages
      */

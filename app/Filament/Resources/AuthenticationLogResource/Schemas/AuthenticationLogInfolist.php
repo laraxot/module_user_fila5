@@ -6,20 +6,13 @@ namespace Modules\User\Filament\Resources\AuthenticationLogResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class AuthenticationLogInfolist extends XotBaseResourceInfolist
 {
     /**
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
      * @return array<string, Component|Htmlable|string>
->>>>>>> laraxot/dev
      *
      * Campi basati sul Model AuthenticationLog.php -> id, authenticatable_type, authenticatable_id, ip_address, user_agent, login_at, login_successful, logout_at, cleared_by_user, location
      */

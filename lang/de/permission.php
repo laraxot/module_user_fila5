@@ -17,13 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Permesso',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
-            'placeholder' => 'Nome del permesso',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -64,17 +57,6 @@ return [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
-<<<<<<< HEAD
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [

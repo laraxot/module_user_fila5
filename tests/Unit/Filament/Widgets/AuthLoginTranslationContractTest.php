@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 test('login widget translations have a scalar fifth level in every supported locale', function (): void {

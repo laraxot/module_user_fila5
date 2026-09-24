@@ -1,33 +1,21 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * Tenant List Management.
  */
 
-<<<<<<< HEAD
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\User\Models\Tenant;
-=======
-declare(strict_types=1);
-
-namespace Modules\User\Filament\Resources\TenantResource\Pages;
-
-use Modules\User\Filament\Resources\TenantResource;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListTenants extends XotBaseListRecords
 {
     protected static string $resource = TenantResource::class;
-<<<<<<< HEAD
 
     /**
      * Definisce le colonne della tabella per la lista tenant.
@@ -43,7 +31,7 @@ class ListTenants extends XotBaseListRecords
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
                 ->default(function ($record) {
-                    if (null === $record || ! $record instanceof Tenant) {
+                    if ($record === null || ! $record instanceof Tenant) {
                         return '';
                     }
                     $record->generateSlug();
@@ -60,6 +48,4 @@ class ListTenants extends XotBaseListRecords
                 ->sortable(),
         ];
     }
-=======
->>>>>>> laraxot/dev
 }

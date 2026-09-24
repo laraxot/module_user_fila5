@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 <div class="absolute inset-0 h-full">
     <div class="relative h-full overflow-hidden border border-gray-400 dark:border-gray-700 border-dashed opacity-75 sm:rounded-xl">

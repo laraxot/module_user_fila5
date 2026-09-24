@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * Handles the registration of a new user.
  *
@@ -16,16 +13,10 @@ declare(strict_types=1);
  * If the validation passes, a new user is created and a success response is returned with the user's name and an access token.
  * If the validation fails, an error response is returned with the validation errors.
  *
- * @param Request $request The incoming request
- *
+ * @param  Request  $request  The incoming request
  * @return JsonResponse The JSON response
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\User\Http\Controllers\Api;
 
 use Illuminate\Http\JsonResponse;
@@ -62,14 +53,6 @@ class RegisterController extends XotBaseController
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
-<<<<<<< HEAD
-=======
-        $password = $input['password'] ?? null;
-        if (! \is_string($password)) {
-            return $this->sendError('Validation Error.', ['password' => ['The password must be a string.']]);
-        }
-        $input['password'] = bcrypt($password);
->>>>>>> laraxot/dev
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);

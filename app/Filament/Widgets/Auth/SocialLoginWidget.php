@@ -8,7 +8,6 @@ use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
-<<<<<<< HEAD
  * Pulsanti OAuth (Google, Microsoft, GitHub).
  *
  * Panel: route `socialite.oauth.redirect`.
@@ -23,25 +22,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     public string $redirectRoute = 'socialite.oauth.redirect';
 
     /**
-=======
- * SocialLoginWidget: Widget riutilizzabile per pulsanti login OAuth (Google, Microsoft).
- *
- * Mostra i pulsanti solo per i provider configurati in config/services.
- * Usabile in login, register e altre pagine auth.
- *
- * Regole Laraxot:
- * - Estende XotBaseSchemaWidget
- * - Traduzioni da user::auth.social
- * - Route: socialite.oauth.redirect
- */
-class SocialLoginWidget extends XotBaseSchemaWidget
-{
-    protected string $view = 'user::filament.widgets.auth.social-login';
-
-    /**
-     * Widget senza form: schema vuoto.
-     *
->>>>>>> laraxot/dev
      * @return array<string, Component>
      */
     public function getFormSchema(): array
@@ -86,7 +66,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         return $providers;
     }
 
-<<<<<<< HEAD
     public function getRedirectUrl(string $driver): string
     {
         return route($this->normalizeRedirectRoute(), ['provider' => $driver]);
@@ -107,16 +86,5 @@ class SocialLoginWidget extends XotBaseSchemaWidget
             'socialite.oauth.redirect', 'socialite.oauth.fo.redirect' => $this->redirectRoute,
             default => 'socialite.oauth.redirect',
         };
-=======
-    public function redirectToProvider(string $driver): void
-    {
-        $driver = match ($driver) {
-            'google' => 'google',
-            'microsoft' => 'microsoft',
-            default => $driver,
-        };
-
-        redirect()->to(route('socialite.oauth.redirect', ['provider' => $driver]));
->>>>>>> laraxot/dev
     }
 }

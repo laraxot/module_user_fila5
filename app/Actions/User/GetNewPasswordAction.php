@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Contracts\Hashing\Hasher;
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,30 +12,11 @@ class GetNewPasswordAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     /**
      * Genera una nuova password temporanea pronunciabile per l'utente.
      */
     public function execute(UserContract $record): string
     {
         return app(GetPronounceablePasswordAction::class)->execute(12);
-=======
-    public function execute(UserContract $record): string
-    {
-        $user = $record;
-
-        return once(function () use ($user) {
-            $generator = new GetPronounceablePasswordAction();
-            $plainPassword = $generator->execute();
-            $hasher = app(Hasher::class);
-            $hashedPassword = $hasher->make($plainPassword);
-
-            $user->forceFill([
-                'password' => $hashedPassword,
-            ])->save();
-
-            return $plainPassword;
-        });
->>>>>>> laraxot/dev
     }
 }

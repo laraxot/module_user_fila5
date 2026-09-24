@@ -16,7 +16,7 @@ uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
-    TestCase::$command = new ChangeTypeCommand();
+    TestCase::$command = new ChangeTypeCommand;
 });
 
 describe('User Command Integration', function (): void {
@@ -45,13 +45,7 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(function_exists('Laravel\Prompts\select'));
     });
 
-<<<<<<< HEAD
-    it('validates webmozart assert integration', function (): void {
-    \PHPUnit\Framework\Assert::markTestSkipped('validates webmozart assert integration');
-});
-=======
     it('validates webmozart assert integration')->todo();
->>>>>>> laraxot/dev
 
     test('integrates with illuminate support arr', function (): void {
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
@@ -111,7 +105,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can work with type checking utilities', function (): void {
-        $testObject = new \stdClass();
+        $testObject = new \stdClass;
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -171,13 +165,7 @@ describe('User Command Integration', function (): void {
         Assert::assertSame('user:change-type', $command->getName());
     });
 
-<<<<<<< HEAD
-    it('can access laravel facades', function (): void {
-    \PHPUnit\Framework\Assert::markTestSkipped('can access laravel facades');
-});
-=======
     it('can access laravel facades')->todo();
->>>>>>> laraxot/dev
 
     test('handles reflection operations correctly', function (): void {
         /** @var TestCase $this */
@@ -196,7 +184,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle object property access safely', function (): void {
-        $testObject = new \stdClass();
+        $testObject = new \stdClass;
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

@@ -7,15 +7,9 @@ namespace Modules\User\Tests\Feature;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
-=======
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Profile;
-use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\actingAs;
@@ -86,11 +80,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
         $user = UserFactory::new()->createOne();
-<<<<<<< HEAD
         \assert($user instanceof UserContract);
-=======
-        \assert($user instanceof User);
->>>>>>> laraxot/dev
 
         if (class_exists(Profile::class)) {
             // Skip if profiles table doesn't have uuid column
