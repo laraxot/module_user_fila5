@@ -1,11 +1,24 @@
 <?php
 
+<<<<<<< .merge_file_HVb2ed
+=======
+<<<<<<< .merge_file_TBUdOy
+>>>>>>> .merge_file_acRCi5
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_HVb2ed
+=======
+=======
+declare(strict_types=1);
+/**
+ * ---.
+ */
+>>>>>>> .merge_file_CZ71RJ
+>>>>>>> .merge_file_acRCi5
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

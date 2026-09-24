@@ -6,6 +6,7 @@ namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Contracts\Database\Query\Builder;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -18,12 +19,16 @@ class SetDefaultRolesBySocialiteUserAction
 
     public function execute(string $provider, UserContract $userModel, SocialiteUserContract $oauthUser): void
     {
-        $domainAnalysis = app(AnalyzeSocialiteEmailDomainAction::class)->execute($oauthUser, $provider);
+        $domainAnalyzer = app(EmailDomainAnalyzer::class, [
+            'ssoProvider' => $provider,
+        ]);
         /** @var Guard $permissionGuard */
         $permissionGuard = app(Guard::class);
         $xotData = XotData::make();
 
         $defaultUserGuard = $permissionGuard->getDefaultName($xotData->getUserClass());
+
+        $domainAnalyzer->setUser($oauthUser);
 
         // Do nothing if users already have some roles
         // bound to them: in this way we can update all
@@ -36,11 +41,11 @@ class SetDefaultRolesBySocialiteUserAction
         // Unrecognized domain: someone will have to set a role
         // to the user as a specific set of permissions cannot
         // be automatically inferred
-        if ($domainAnalysis->hasUnrecognizedDomain()) {
+        if ($domainAnalyzer->hasUnrecognizedDomain()) {
             return;
         }
 
-        $defaultRoleNames = $domainAnalysis->hasFirstPartyDomain
+        $defaultRoleNames = $domainAnalyzer->hasFirstPartyDomain()
             ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $provider)))
             : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $provider)));
 

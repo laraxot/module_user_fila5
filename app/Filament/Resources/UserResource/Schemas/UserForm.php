@@ -7,8 +7,8 @@ namespace Modules\User\Filament\Resources\UserResource\Schemas;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Checkbox;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
@@ -28,7 +28,7 @@ class UserForm extends XotBaseResourceForm
      *
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'worker' => UserSection::make('worker'),
@@ -49,7 +49,7 @@ class UserForm extends XotBaseResourceForm
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-                    Placeholder::make('created_at')->content(static function ($record) {
+                    TextEntry::make('created_at')->state(static function ($record) {
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }

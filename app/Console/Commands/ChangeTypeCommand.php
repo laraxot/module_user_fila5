@@ -72,7 +72,7 @@ class ChangeTypeCommand extends Command
                 $typeLabel = $label;
             } elseif ($label instanceof Htmlable) {
                 $typeLabel = $label->toHtml();
-            } else {
+            } elseif (\is_scalar($label) || $label instanceof \Stringable) {
                 $typeLabel = (string) $label;
             }
         }
@@ -91,7 +91,8 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
-                $options[$value] = (string) $item->getLabel();
+                $label = $item->getLabel();
+                $options[$value] = \is_scalar($label) || $label instanceof \Stringable ? (string) $label : 'Unknown';
             } else {
                 $options[(string) $key] = 'Unknown';
             }

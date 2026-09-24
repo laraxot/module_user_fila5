@@ -1,3 +1,24 @@
+---
+title: "Policy Hierarchy in Laraxot"
+type: concept
+tags: [policy, hierarchy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policy-hierarchy policy hierarchy in laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - ./user-profile-contract-adoption.md
+  - ../integrations/spatie-permissions-methods.md
+---
+
 # Policy Hierarchy in Laraxot
 
 > Documentation of the policy inheritance architecture and usage guidelines
@@ -44,7 +65,7 @@ ActivityPolicy, CmsPolicy, etc.       ← Domain Specific
 - Extends XotBasePolicy
 - Integrates with `spatie/laravel-permission`
 - Uses `UserContract` for type-safe user resolution
-- Provides permission-based authorization via `hasPermissionTo()`
+- Provides permission-based authorization via `hasPermissionToOrCreate()`
 
 **When to Extend**:
 - Most domain policies (default choice)
@@ -176,20 +197,24 @@ class JobSchedulePolicy extends XotBasePolicy
 
 1. **Always type-hint UserContract**
    ```php
-   public function view(UserContract $user): bool
+   public function viewAny(UserContract $user): bool
+   {
+       return $user->hasPermissionToOrCreate(
+           'oauth-access-token.view.any'
+       );
+   }
    ```
 
-2. **Use permission dot notation**
+2. **Use permission dot notation (kebab-case)**
    ```php
-   'activity.view'      // resource.action
-   'activity.viewAny'   // resource.actionAny
+   'oauth-access-token.view.any'  // resource.action
    ```
 
 3. **Comment out unused methods**
    ```php
    // public function viewAny(UserContract $user): bool
    // {
-   //     return $user->hasPermissionTo('activity.viewAny');
+   //     return $user->hasPermissionToOrCreate('activity.view.any');
    // }
    ```
 

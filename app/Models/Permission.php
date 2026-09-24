@@ -6,12 +6,14 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 use Spatie\Permission\Models\Permission as SpatiePermission;
+use Webmozart\Assert\Assert;
 
 /**
  * @property int                         $id
@@ -51,18 +53,28 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  *
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  *
+ * @property Collection<int, Team> $teams
+ * @property int|null              $teams_count
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
+ *
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
 {
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use RelationX;
     use Updater;
 
     protected $connection = 'user';
 
-    protected $table = 'permissions';
+    public function getTable(): string
+    {
+        Assert::string($table = config('permission.table_names.permissions'));
+
+        return $table;
+    }
 
     /** @var list<string> */
     protected $fillable = [

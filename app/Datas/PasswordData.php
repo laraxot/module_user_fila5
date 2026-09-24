@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Classe per la gestione delle configurazioni delle password.
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
@@ -21,6 +20,7 @@ use Spatie\LaravelData\Data;
 class PasswordData extends Data
 {
     use PasswordValidationRules;
+
     private static ?self $instance = null;
 
     public function __construct(
@@ -45,7 +45,6 @@ class PasswordData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
-            /** @var array<string, mixed> $data */
             $data = app(GetTenantConfigArrayAction::class)->execute('password');
             self::$instance = self::from($data);
         }
@@ -182,7 +181,7 @@ class PasswordData extends Data
     /**
      * @return array<string, FormsTextInput>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'password' => FormsTextInput::make('password')

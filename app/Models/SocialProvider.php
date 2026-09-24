@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * inspired by  DutchCodingCompany\FilamentSocialite.
  */
@@ -117,7 +116,10 @@ class SocialProvider extends BaseModel
      */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = $this->getSushiRows();
+
+        return $rows;
     }
 
     /** @return array<string, string> */

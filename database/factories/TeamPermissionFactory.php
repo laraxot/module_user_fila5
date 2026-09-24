@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\TeamPermission;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\TeamPermission>
+ * @extends Factory<TeamPermission>
  */
 class TeamPermissionFactory extends Factory
 {
@@ -19,6 +19,9 @@ class TeamPermissionFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

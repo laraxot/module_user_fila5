@@ -1,4 +1,4 @@
-# Widget Translation Rules - Quaeris Project
+# Widget Translation Rules - SaluteOra Project
 
 ## Core Principles
 
@@ -187,6 +187,10 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
+- [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
 
 ## Memory Integration
 
@@ -196,4 +200,4 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-All widget development should follow these rules to maintain consistency and quality across the Quaeris and SaluteOra projects.
+All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.

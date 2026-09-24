@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -18,12 +19,15 @@ class GetUserModelAttributesFromSocialiteAction
             throw new \InvalidArgumentException('Il provider non può essere vuoto');
         }
 
-        $nameFields = app(ResolveUserNameFieldsFromSocialiteAction::class)->execute($oauthUser);
+        $nameFieldsResolver = app(UserNameFieldsResolver::class, ['user' => $oauthUser]);
+        if (null === $nameFieldsResolver) {
+            throw new \RuntimeException('Impossibile istanziare UserNameFieldsResolver');
+        }
 
-        if (! is_string($nameFields->name)) {
+        if (! is_string($nameFieldsResolver->name)) {
             throw new \RuntimeException('Il nome deve essere una stringa');
         }
-        if (! is_string($nameFields->lastName)) {
+        if (! is_string($nameFieldsResolver->lastName)) {
             throw new \RuntimeException('Il cognome deve essere una stringa');
         }
 
@@ -33,9 +37,9 @@ class GetUserModelAttributesFromSocialiteAction
         }
 
         return new SocialiteUserAttributesData(
-            name: $nameFields->name,
-            firstName: $nameFields->name,
-            lastName: $nameFields->lastName,
+            name: $nameFieldsResolver->name,
+            firstName: $nameFieldsResolver->name,
+            lastName: $nameFieldsResolver->lastName,
             email: $email,
             provider: $provider,
         );

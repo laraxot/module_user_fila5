@@ -1,3 +1,23 @@
+---
+title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
+type: guide
+tags: [traits, complete, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "traits-complete-guide-1-1 guida completa ai trait del modulo user - aggiornato post-implementazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -346,7 +366,7 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
-- [jetstream_vs_laraxot_philosophy.md](jetstream_vs_laraxot_philosophy.md)
+- [jetstream-vs-laraxot-philosophy.md](jetstream-vs-laraxot-philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../Xot/docs/RELATION_X_USAGE.md)

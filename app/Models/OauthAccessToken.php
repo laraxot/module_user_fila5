@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
+use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
  * Modules\User\Models\OauthAccessToken.
@@ -49,11 +50,13 @@ use Laravel\Passport\Token as PassportToken;
  * @method static static                                                         create(array<string, mixed> $attributes = [])
  * @method static static                                                         firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static                                                         updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array<int, mixed> $haystack)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array<int, string> $haystack)
  *
  * @mixin \Eloquent
  */
 class OauthAccessToken extends PassportToken
 {
+    use ResolvesPassportTokenUserRelation;
+
     protected $connection = 'user';
 }

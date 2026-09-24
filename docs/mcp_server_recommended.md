@@ -21,5 +21,3 @@ Gestione utenti, autenticazione, profili e permessi.
 
 ## Note
 - Estendi la configurazione per esigenze di autenticazione avanzata o integrazione esterna.
-
-See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended-Modules.md

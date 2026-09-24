@@ -4,17 +4,27 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
-updated: 2026-06-18
+updated: 2026-09-21
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ./concepts/no-comment-module-dependency.md
-  - ./rules/can-comment-retired-wrong-placement.md
+  - "./agents.md"
+  - "./architecture.md"
+  - "./auth-patterns.md"
+  - "./bmad-method.md"
+  - "./context-compression.md"
+  - "./index.md"
+  - "./overview.md"
+  - "./socialite-architecture.md"
 ---
 
+---
+
+- 2026-09-21: BMAD Epic 9 (docs only, **nessun PHP**) — conversione SuperAdmin Livewire → `XotBaseWidget` + hook `AdminPanelProvider`. Canon: [bmad/README.md](../bmad/README.md), spec provider: [bmad/tech-spec.md](../bmad/tech-spec.md), story [9.2](../stories/9.2.admin-panel-provider-hook.story.md).
+- 2026-09-21: runtime `/admin` — `No hint path defined for [filament-jet]`: SuperAdmin e gemelli Livewire usano `user::` (viste nel modulo). FilamentJet non è una dipendenza. Doc: [filament_errors.md](../filament_errors.md).
+- 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
+- 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
@@ -45,7 +55,7 @@ related:
 - risolti errori PHPStan mirati su `PassportDashboard`, `EditUserWidget` e `RegistrationWidget`.
 - regola documentata: proprieta' Livewire tipizzate, `class-string` validati prima dell'assegnazione, nessun default stringa vuota per `class-string`.
 - evitato override locale di `$view` nei widget quando `XotBaseWidget::resolveView()` puo' calcolare la vista.
-- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-2026-05-06.md`.
+- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-.md.md`.
 
 ## [2026-04-28] fix | spatie permission team model config missing su route admin
 - errore runtime gestito: `Spatie\Permission\Exceptions\TeamModelNotConfigured` su `/admin`.

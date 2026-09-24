@@ -1,3 +1,23 @@
+---
+title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
+type: concept
+tags: [final]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "final final summary - user module passport integration & architecture refactoring"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: [DATE]
@@ -277,9 +297,9 @@ public function getHeaderActions(): array
 ## 📚 Documentation References
 
 ### Internal Documentation
-- [Passport Integration](./passport_integration.md)
-- [Service Provider Architecture](./service_provider_architecture.md)
-- [Filosofia Modulo User](./filosofia_modulo_user.md)
+- [Passport Integration](./passport-integration.md)
+- [Service Provider Architecture](./service-provider-architecture.md)
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
 - [README](./readme.md)
 
 ### External Documentation

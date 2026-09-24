@@ -66,27 +66,6 @@ return [
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
         ],
     ],
     'actions' => [
@@ -104,6 +83,9 @@ return [
     'messages' => [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
+    ],
+    'privacy_policy' => [
+        'title' => 'Privacy policy',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

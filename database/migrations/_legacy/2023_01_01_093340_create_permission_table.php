@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Y6t9uV
 
+=======
+<<<<<<< .merge_file_AhZgJt
+
+=======
+>>>>>>> .merge_file_XiapEj
+>>>>>>> .merge_file_ADrFR3
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {

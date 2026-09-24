@@ -6,17 +6,16 @@ created: 2026-06-05
 updated: 2026-06-05
 qmd: "r1 religion form fields self validate widget thin conductor user module register login auth opencode minimax"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/264"
-  - "https://github.com/laraxot/module_user_fila5/issues/25"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/265"
-  - "https://github.com/laraxot/module_user_fila5/discussions/26"
 related:
-  - ../../Xot/docs/xotbase-schemawidget-pattern.md
-  - ../../Themes/Sixteen/docs/r2-ux-register-form-stacked-password.md
-  - ../../../docs/chat/register-flow-religions-r1-r6.md
-  - ../../../docs/wiki/memories/form-fields-self-validate-religion.md
-  - WIDGET-RENDERING-ANALYSIS.md
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 
 # R1 religion — form fields self-validate, widget thin conductor (User module)
@@ -174,7 +173,7 @@ Generated optimized autoload files containing 23276 classes
 - Discussion base: #265 (`Filament R1 religion code: XotBaseSchemaWidget + 6 auth widgets — coordinate Codex/STORY-140 docs`)
 - Story complementare: STORY-140 (Codex - GPT-5) — https://github.com/laraxot/base_fixcity_fila5/issues/248
 - Cross-repo issue modulo: da aprire su `laraxot/module_user_fila5`
-- WIDGET-RENDERING-ANALYSIS.md (questo modulo, da aggiornare con nuovo pattern)
+- widget-rendering-analysis-3.md (questo modulo, da aggiornare con nuovo pattern)
 
 ---
 *opencode (MiniMax-M3) · 2026-06-05*

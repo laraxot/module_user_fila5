@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 // ⚠️ CRITICAL RULE: NEVER use ->label(), ->placeholder(), ->helperText()
 // Translations are handled automatically by LangServiceProvider via 5-level keys:
 // user::socialite.settings.form.{field}.{type}
@@ -88,7 +87,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->password()
                             ->revealable()
                             ->placeholder('GOCSPX-xxx')
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                            ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
@@ -118,7 +117,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('github.client_secret')
                             ->password()
                             ->revealable()
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                            ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
@@ -148,7 +147,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('microsoft.client_secret')
                             ->password()
                             ->revealable()
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                            ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
@@ -308,6 +307,8 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Mask secret for display (show only last 4 chars).
+     *
+     * @param mixed $secret raw config() value; expected string|null
      */
     private function maskSecret(mixed $secret): string
     {
@@ -330,9 +331,9 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Check if value contains masked characters.
      */
-    private function isMasked(mixed $value): bool
+    private function isMasked(?string $value): bool
     {
-        if (! is_string($value)) {
+        if (null === $value) {
             return false;
         }
 
@@ -341,6 +342,9 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Resolve secret value - use new value or keep existing if masked.
+     *
+     * @param mixed $newValue      new field state; expected string|null
+     * @param mixed $existingValue raw config() value; expected string|null
      */
     private function resolveSecret(mixed $newValue, mixed $existingValue): string
     {
@@ -376,6 +380,9 @@ class SocialiteProviderSettingsPage extends XotBasePage
         return $this->stringList([] === $value ? $default : $value);
     }
 
+    /**
+     * @param mixed $value raw config()/form value; expected scalar|null
+     */
     private function stringValue(mixed $value): string
     {
         if (is_string($value)) {
@@ -390,6 +397,8 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+     * @param mixed $value raw form section state; expected array<string, mixed>
+     *
      * @return array<string, mixed>
      */
     private function providerData(mixed $value): array
@@ -409,6 +418,8 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+     * @param mixed $value raw config()/TagsInput value; expected array<array-key, mixed>
+     *
      * @return array<int, string>
      */
     private function stringList(mixed $value): array

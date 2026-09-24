@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Modulo User - Trait per il profilo utente.
  *
@@ -30,7 +29,6 @@ use Illuminate\Support\Collection;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
-use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -81,7 +79,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
         if ('' !== $res) {
@@ -111,7 +109,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $firstName = $user->getAttribute('first_name');
         if (! \is_string($firstName) || '' === $firstName) {
@@ -141,7 +139,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $lastName = $user->getAttribute('last_name');
         if (! \is_string($lastName) || '' === $lastName) {
@@ -194,7 +192,7 @@ trait IsProfileTrait
         if (null === $user) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -289,7 +287,7 @@ trait IsProfileTrait
                 if (null === $user) {
                     return null;
                 }
-                Assert::isInstanceOf($user, User::class);
+                Assert::isInstanceOf($user, UserContract::class);
 
                 $name = $user->getAttribute('name');
 

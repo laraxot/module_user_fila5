@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -11,7 +12,6 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
@@ -26,6 +26,7 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
+use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -40,6 +41,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Permission\Models\Permission;
 
 /**
  * Base User Model.
@@ -127,7 +129,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -140,10 +142,7 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
-
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
-
     use InteractsWithMedia;
     use Notifiable;
 
@@ -152,8 +151,6 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
     use XotTraits\RelationX;
 
     public $incrementing = false;
-
-    public ?Pivot $pivot = null;
 
     protected $connection = 'user';
 
@@ -231,29 +228,38 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
 
     public function getProviderName(): string
     {
-        return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
+        $provider = $this->getAttribute('provider');
+        if (\is_string($provider) && '' !== $provider) {
+            return $provider;
+        }
+
+        $configured = config('auth.guards.api.provider', 'users');
+
+        return \is_string($configured) ? $configured : 'users';
     }
 
+    /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
+         dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-
+    */
     /**
      * Get the user's name for Filament.
      */
     public function getFilamentName(): string
     {
-        $name = (string) ($this->getAttribute('name') ?? '');
-        $firstName = (string) ($this->getAttribute('first_name') ?? '');
-        $lastName = (string) ($this->getAttribute('last_name') ?? '');
+        $name = $this->name ?? '';
+        $firstName = $this->first_name ?? '';
+        $lastName = $this->last_name ?? '';
 
         $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
 
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
-            $email = (string) ($this->getAttribute('email') ?? '');
+            $email = $this->email ?? '';
 
             return ! empty($email) ? $email : 'User';
         }
@@ -262,16 +268,16 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
     }
 
     /**
-     * @return HasOne<Model&ProfileContract, $this>
+     * @return HasOne<Model&ProfileContract, Model&static>
      *
-     * @phpstan-return HasOne<Model&ProfileContract, $this>
+     * @phpstan-return HasOne<Model&ProfileContract, Model&static>
      */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($profileClass);
 
             return $relation;
@@ -280,14 +286,14 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($directClass);
 
             return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        /** @var HasOne<Model&ProfileContract, $this> $relation */
+        /** @var HasOne<Model&ProfileContract, Model&static> $relation */
         $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
 
         return $relation;
@@ -315,14 +321,12 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
         // $panel->default('admin');
         if ('admin' !== $panel->getId()) {
             $role = $panel->getId();
-            /*
-             * $xot = XotData::make();
-             * if ($xot->super_admin === $this->email) {
-             * $role = Role::firstOrCreate(['name' => $role]);
-             * $this->assignRole($role);
-             * }
-             */
 
+            // App\Support\AccountFeatures non e' mai esistita (ne' la classe ne'
+            // config/account_features.php): riferimento morto fin dal commit
+            // iniziale del modulo, causava un Error fatale a runtime su ogni
+            // pannello diverso da "admin". hasRole($role) resta l'unico controllo
+            // reale, come gia' documentato qui sopra come fallback.
             return $this->hasRole($role);
         }
 

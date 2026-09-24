@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\ModelHasRole;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\ModelHasRole>
+ * @extends Factory<ModelHasRole>
  */
 class ModelHasRoleFactory extends Factory
 {
@@ -19,6 +19,9 @@ class ModelHasRoleFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

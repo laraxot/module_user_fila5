@@ -15,12 +15,35 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+
+/**
+ * Nome della connessione su cui vive il model Profile.
+ *
+ * I moduli sono condivisi fra progetti: il nome della connessione lo dichiara il model,
+ * non il test. Cablarlo qui rende il test verde in un progetto e cieco in tutti gli altri
+ * — `Schema::connection('<nome di un altro progetto>')` non esiste e il ramo non gira mai.
+ */
+function profileConnectionName(): string
+{
+    $profileClass = XotData::make()->getProfileClass();
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+        return $connection;
+    }
+
+    $default = config('database.default');
+
+    return is_string($default) ? $default : 'sqlite';
+}
 
 uses(TestCase::class);
 
 describe('User Business Logic', function (): void {
     test('enforces password complexity requirements', function (): void {
+        /** @var TestCase $this */
         $weakPassword = '123456';
         $strongPassword = 'SecurePass123!';
 
@@ -40,7 +63,8 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
-        if (! $this->userTableHasColumn('users', 'username')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableHasColumn('users', 'username')) {
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -86,12 +110,13 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces age restrictions for certain operations', function (): void {
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        /* @var TestCase $this */
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
-            $this->skipTest('profiles.birth_date column missing on fixcity connection.');
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on the profile connection.');
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -116,6 +141,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces team membership limits', function (): void {
+        /** @var TestCase $this */
         $user = createTestUser();
         /** @var Collection<int, Team> $teams */
         $teams = TeamFactory::new()->count(5)->create();
@@ -130,14 +156,15 @@ describe('User Business Logic', function (): void {
 
         $firstTeam = $teams->first();
         Assert::assertInstanceOf(Team::class, $firstTeam);
-        Assert::assertTrue($this->teamMemberExists($firstTeam, $user));
+        Assert::assertTrue(TestCase::teamMemberExists($firstTeam, $user));
     });
 
     test('enforces team role hierarchy', function (): void {
+        /** @var TestCase $this */
         $user = createTestUser();
         $team = TeamFactory::new()->createOne();
 
-        $this->attachTeamMember($team, $user, ['role' => 'member']);
+        TestCase::attachTeamMember($team, $user, ['role' => 'member']);
 
         $this->assertDatabaseHasRow('team_user', [
             'team_id' => $team->id,
@@ -147,12 +174,13 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces team ownership rules', function (): void {
+        /** @var TestCase $this */
         $owner = createTestUser();
         $member = createTestUser();
         $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
         Assert::assertSame($owner->id, $team->user_id);
-        $this->attachTeamMember($team, $member, ['role' => 'member']);
+        TestCase::attachTeamMember($team, $member, ['role' => 'member']);
 
         $freshTeam = $team->fresh();
         Assert::assertNotNull($freshTeam);
@@ -173,7 +201,8 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
-        if (! $this->userTableExists('model_has_permission')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
@@ -217,7 +246,8 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces referential integrity for user relationships', function (): void {
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        /* @var TestCase $this */
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
@@ -258,6 +288,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces audit trail for sensitive operations', function (): void {
+        /** @var TestCase $this */
         $user = createTestUser();
         $originalEmail = $user->email;
         $originalUpdatedAt = $user->updated_at;

@@ -25,7 +25,8 @@ describe('User Model Simple', function (): void {
     });
 
     test('user model can create basic record', function (): void {
-        $this->skipUnlessUsersTableReady();
+        /* @var TestCase $this */
+        TestCase::skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',

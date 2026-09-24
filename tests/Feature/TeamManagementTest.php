@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -16,6 +15,8 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+
+require_once __DIR__.'/../Support/team-management-helpers.php';
 
 test('can create a team', function (): void {
     ['owner' => $owner] = teamMgmtBootstrap();

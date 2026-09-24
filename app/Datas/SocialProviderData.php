@@ -39,7 +39,6 @@ class SocialProviderData extends Data
     {
         if (! self::$instance) {
             $data = app(GetTenantConfigArrayAction::class)->execute('social-providers');
-            dddx($data);
             self::$instance = self::from($data);
         }
 

@@ -6,12 +6,16 @@ created: 2026-07-13
 updated: 2026-07-13
 qmd: "User Support files migrated to QueueableAction Actions"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - no-app-support-queueable-actions.md
-  - no-services-no-support-queueable-actions.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # User Support → Actions migration

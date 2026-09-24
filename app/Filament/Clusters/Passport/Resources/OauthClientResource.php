@@ -5,9 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\DeleteBulkAction;
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
@@ -27,32 +24,6 @@ class OauthClientResource extends XotBaseResource
     protected static ?string $cluster = Passport::class;
 
     // use HasResourceFormComponents;
-
-    /**
-     * Get the form schema for the resource (XotBaseResource pattern).
-     *
-     * @return array<string, Field>
-     */
-    /**
-     * @return array<string, Field>
-     */
-    public static function getFormSchema(): array
-    {
-        return [
-            'name' => TextInput::make('name')
-                ->unique('oauth_clients', 'name')
-                ->required()
-                ->maxLength(255),
-            'user_id' => Select::make('user_id')
-                ->relationship('user', 'name')
-                ->searchable(),
-            'redirect' => TextInput::make('redirect')
-                ->url()
-                ->maxLength(2000),
-            'provider' => TextInput::make('provider')
-                ->maxLength(255),
-        ];
-    }
 
     /**
      * Build the table for the resource.

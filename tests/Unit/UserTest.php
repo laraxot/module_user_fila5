@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
+use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
@@ -17,13 +18,14 @@ uses(TestCase::class);
 describe('User', function (): void {
     test('user can be created', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
                 'email' => fake()->unique()->safeEmail(),
                 'password' => Hash::make('password123'),
             ]);
-            \assert($user instanceof User);
+            \assert($user instanceof UserContract);
 
             Assert::assertInstanceOf(User::class, $user);
             Assert::assertIsString($user->email);
@@ -35,9 +37,10 @@ describe('User', function (): void {
     });
 
     test('user has correct type casting', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
-            \assert($user instanceof User);
+            \assert($user instanceof UserContract);
 
             $type = $user->type;
             \assert($type instanceof UserType);
@@ -51,7 +54,7 @@ describe('User', function (): void {
 
     test('user password is hashed', function (): void {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         Assert::assertTrue(Hash::check('password123', $user->password));
         Assert::assertFalse(Hash::check('wrongpassword', $user->password));
@@ -59,23 +62,24 @@ describe('User', function (): void {
 
     test('user can change password', function (): void {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         $user->update(['password' => Hash::make('newpassword123')]);
 
         $freshUser = $user->fresh();
-        \assert($freshUser instanceof User);
+        \assert($freshUser instanceof UserContract);
         Assert::assertTrue(Hash::check('newpassword123', $freshUser->password));
         Assert::assertFalse(Hash::check('password123', $freshUser->password));
     });
 
     test('user can be updated', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
                 'email' => fake()->unique()->safeEmail(),
             ]);
-            \assert($user instanceof User);
+            \assert($user instanceof UserContract);
 
             $updatedEmail = 'updated-'.uniqid('', true).'@example.com';
 
@@ -92,10 +96,11 @@ describe('User', function (): void {
     });
 
     test('user can be deleted', function (): void {
-        $this->skipUnlessDirectPermissionSupported();
+        /* @var TestCase $this */
+        TestCase::skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         $userId = $user->id;
 
@@ -108,7 +113,7 @@ describe('User', function (): void {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         $fillable = $user->getFillable();
 
@@ -121,7 +126,7 @@ describe('User', function (): void {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         $hidden = $user->getHidden();
 
@@ -131,19 +136,20 @@ describe('User', function (): void {
 
     test('user can be found by email', function (): void {
         $user = UserFactory::new()->createOne();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         $foundUser = User::where('email', $user->email)->first();
 
-        \assert($foundUser instanceof User);
+        \assert($foundUser instanceof UserContract);
         Assert::assertInstanceOf(User::class, $foundUser);
         Assert::assertSame($user->id, $foundUser->id);
     });
 
     test('user can be found by type', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
-            \assert($user instanceof User);
+            \assert($user instanceof UserContract);
 
             $admins = User::query()
                 ->where('type', UserType::MasterAdmin)
@@ -152,7 +158,7 @@ describe('User', function (): void {
 
             Assert::assertCount(1, $admins);
             $firstAdmin = $admins->first();
-            \assert($firstAdmin instanceof User);
+            \assert($firstAdmin instanceof UserContract);
             Assert::assertSame($user->id, $firstAdmin->id);
         } catch (\Throwable) {
             $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
@@ -160,12 +166,13 @@ describe('User', function (): void {
     });
 
     test('user can be created with different types', function (): void {
+        /* @var TestCase $this */
         try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
 
-            $boUser = $factory->createOne(['type' => UserType::BoUser]);
-            $customerUser = $factory->createOne(['type' => UserType::CustomerUser]);
+            $boUser = $factory->create(['type' => UserType::BoUser]);
+            $customerUser = $factory->create(['type' => UserType::CustomerUser]);
             \assert($boUser instanceof User);
             \assert($customerUser instanceof User);
 
@@ -178,13 +185,14 @@ describe('User', function (): void {
 
     test('user has timestamps', function (): void {
         $user = UserFactory::new()->createOne();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         Assert::assertNotNull($user->created_at);
         Assert::assertNotNull($user->updated_at);
     });
 
     test('user soft delete functionality', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
 });

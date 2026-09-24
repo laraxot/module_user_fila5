@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_5XwoT1
 
+=======
+<<<<<<< .merge_file_4OyX7z
+
+=======
+>>>>>>> .merge_file_GNDgQi
+>>>>>>> .merge_file_T4ppG4
 use PHPUnit\Framework\Assert;
 
 test('login widget translations have a scalar fifth level in every supported locale', function (): void {

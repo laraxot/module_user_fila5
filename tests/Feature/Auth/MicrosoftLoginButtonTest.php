@@ -1,10 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('Social Login Widget', function () {
     test('widget renders correctly when microsoft is configured', function () {

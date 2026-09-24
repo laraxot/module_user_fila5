@@ -26,10 +26,7 @@ class LogoutWidget extends XotBaseSchemaWidget
 {
     /**
      * The view for this widget.
-     *
-     * @phpstan-var view-string
      */
-    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::filament.widgets.auth.logout';
 
     /**
@@ -47,11 +44,8 @@ class LogoutWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
-        /** @phpstan-var view-string */
-        $logoutView = 'user::filament.widgets.auth.logout-message';
-
         return [
-            'logout_message' => View::make($logoutView)->columnSpanFull(),
+            'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
         ];
     }
 

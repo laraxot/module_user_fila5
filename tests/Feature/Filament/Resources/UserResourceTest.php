@@ -7,8 +7,8 @@ namespace Modules\User\Tests\Feature\Filament\Resources;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
@@ -24,7 +24,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     UserFactory::new()
-        ->createOne([
+        ->create([
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),
@@ -44,7 +44,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has correct form schema', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -65,7 +66,7 @@ describe('User Resource', function (): void {
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -81,7 +82,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
-        $form = UserResource::getFormSchema();
+        $form = app(UserResource::class)->getFormSchema();
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -91,7 +92,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource name field is required', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -105,7 +107,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field is required', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -119,7 +122,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field is required only on create', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -133,7 +137,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field has correct type', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -145,7 +150,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field has unique validation', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -159,7 +165,8 @@ describe('User Resource', function (): void {
     });
 
     test('user resource created at field shows diff for humans', function (): void {
-        $form = UserResource::getFormSchema();
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
@@ -169,7 +176,7 @@ describe('User Resource', function (): void {
             $this->skipTest('created_at field not found in section02 schema');
         }
 
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
     });
 
     test('user resource can be instantiated', function (): void {

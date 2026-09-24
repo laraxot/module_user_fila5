@@ -24,11 +24,11 @@ class TenantUserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    #[\Override]
     public function definition(): array
     {
         return [
-            'tenant_id' => fake()->uuid(),
-            'user_id' => fake()->uuid(),
+            // TODO: add default state fields
         ];
     }
 }

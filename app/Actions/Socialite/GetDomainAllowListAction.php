@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -33,7 +32,10 @@ class GetDomainAllowListAction
         }
 
         if (\is_array($res)) {
-            return array_values(array_map(static fn (mixed $item): string => (string) $item, $res));
+            return array_values(array_filter(array_map(
+                static fn (mixed $item): ?string => \is_scalar($item) || $item instanceof \Stringable ? (string) $item : null,
+                $res
+            ), static fn (?string $item): bool => null !== $item));
         }
 
         return [];

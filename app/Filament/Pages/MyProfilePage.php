@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see Jeffgreco13\FilamentBreezy\Pages
  * @see https://www.filamentcomponents.com/blog/how-to-create-a-custom-profile-page-with-filamentphp
@@ -136,7 +135,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     public function getSubheading(): ?string
     {
-        return __('user::profile.subheading') ?? null;
+        return __('user::profile.subheading');
     }
 
     // public static function shouldRegisterNavigation(): bool

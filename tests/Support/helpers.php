@@ -1,16 +1,27 @@
 <?php
 
 declare(strict_types=1);
-
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\Field;
+use Filament\Panel;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Laravel\Passport\ClientRepository;
+use Laravel\Passport\Passport;
 use Mockery\MockInterface;
+use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use Modules\User\Providers\Filament\AdminPanelProvider;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -117,12 +128,16 @@ function skipUnlessUserTable(string $table, string $reason = ''): void
 
 function permissionRolePivotTable(): string
 {
-    return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+    $value = config('permission.table_names.model_has_roles', 'model_has_role');
+
+    return is_string($value) ? $value : 'model_has_role';
 }
 
 function permissionPivotTable(): string
 {
-    return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+    $value = config('permission.table_names.model_has_permissions', 'model_has_permission');
+
+    return is_string($value) ? $value : 'model_has_permission';
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void
@@ -199,7 +214,7 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
-        Illuminate\Database\Eloquent\SoftDeletes::class,
+        SoftDeletes::class,
         $traits,
         true
     );
@@ -226,8 +241,8 @@ function setupFilamentAdminPanel(): void
     try {
         $panel = $filament::getPanel('user::admin');
     } catch (Throwable) {
-        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament\Panel::make());
+        $panelProvider = new AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Panel::make());
         $filament::registerPanel($panel);
     }
 
@@ -260,19 +275,21 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
     });
 }
 
-/**
- * @template T of object
- *
- * @param class-string<T> $class
- *
- * @return T&MockInterface
- */
-function typedMock(string $class): MockInterface
-{
-    /** @var T&MockInterface $mock */
-    $mock = Mockery::mock($class);
+if (! function_exists('typedMock')) {
+    /**
+     * @template T of object
+     *
+     * @param class-string<T> $class
+     *
+     * @return T&MockInterface
+     */
+    function typedMock(string $class): MockInterface
+    {
+        /** @var T&MockInterface $mock */
+        $mock = Mockery::mock($class);
 
-    return $mock;
+        return $mock;
+    }
 }
 
 /**
@@ -299,9 +316,9 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
     });
 }
 
-function makeIsUserAllowedAction(): Modules\User\Actions\Socialite\IsUserAllowedAction
+function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    return new Modules\User\Actions\Socialite\IsUserAllowedAction();
+    return new IsUserAllowedAction();
 }
 
 /**
@@ -334,34 +351,34 @@ function skipLegacyRedirectPersistenceCheck(): void
 
 function ensurePersonalAccessClient(): void
 {
-    $clientModel = Laravel\Passport\Passport::client();
+    $clientModel = Passport::client();
 
     if ($clientModel->newQuery()->where('revoked', false)->exists()) {
         return;
     }
 
-    $repository = app(Laravel\Passport\ClientRepository::class);
+    $repository = app(ClientRepository::class);
     $repository->createPersonalAccessGrantClient('Test Personal Access Client');
 }
 
 /**
- * @return array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup>
+ * @return array<int, Component|Action|ActionGroup>
  */
-function userResourceSectionComponents(Modules\User\Tests\TestCase $testCase, Filament\Schemas\Components\Component $section): array
+function userResourceSectionComponents(TestCase $testCase, Component $section): array
 {
-    Assert::assertInstanceOf(Filament\Schemas\Components\Section::class, $section);
+    Assert::assertInstanceOf(Section::class, $section);
 
     /* @var \Filament\Schemas\Components\Section $section */
     return $testCase->filamentSectionChildComponents($section);
 }
 
 /**
- * @param array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup> $components
+ * @param array<int, Component|Action|ActionGroup> $components
  */
-function userResourceFindComponentByName(array $components, string $name): ?Filament\Schemas\Components\Component
+function userResourceFindComponentByName(array $components, string $name): ?Component
 {
     foreach ($components as $component) {
-        if (! $component instanceof Filament\Forms\Components\Field) {
+        if (! $component instanceof Field) {
             continue;
         }
 
@@ -408,7 +425,8 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
 {
     $secret = (string) $google2fa->generateSecretKey();
-    $qrCode = $google2fa->getQRCodeUrl((string) config('app.name'), $user->email, $secret);
+    $appName = config('app.name');
+    $qrCode = $google2fa->getQRCodeUrl(is_string($appName) ? $appName : '', $user->email, $secret);
 
     $recoveryCodes = array_map(
         static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
@@ -444,7 +462,8 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
-    $secret = (string) decrypt($user->two_factor_secret);
+    $decryptedSecret = decrypt($user->two_factor_secret);
+    $secret = is_string($decryptedSecret) ? $decryptedSecret : '';
 
     return false !== $google2fa->verifyKey($secret, $code);
 }
@@ -463,12 +482,13 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
-    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+    $decryptedCodes = decrypt($user->two_factor_recovery_codes);
+    $codes = json_decode(is_string($decryptedCodes) ? $decryptedCodes : '', true);
     if (! is_array($codes)) {
         return false;
     }
 
-    $codes = array_values(array_filter($codes, static fn ($c): bool => $c !== $code));
+    $codes = array_values(array_filter($codes, static fn (mixed $c): bool => $c !== $code));
     $user->two_factor_recovery_codes = encrypt(json_encode($codes));
     $user->save();
 
@@ -484,7 +504,8 @@ function readStoredRecoveryCodes(User $user): array
         return [];
     }
 
-    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+    $decryptedCodes = decrypt($user->two_factor_recovery_codes);
+    $codes = json_decode(is_string($decryptedCodes) ? $decryptedCodes : '', true);
     if (! is_array($codes)) {
         return [];
     }

@@ -1,8 +1,8 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\TeamUser;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -12,6 +12,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
 return new class extends XotBaseMigration {
+    protected ?string $model_class = TeamUser::class;
+
     /**
      * Esegue la migrazione.
      */
@@ -33,7 +35,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
-            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
+            if ($this->hasColumn('id') && ! in_array($this->getColumnType('id'), ['bigint', 'integer'], true)) {
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 

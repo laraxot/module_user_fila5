@@ -65,6 +65,7 @@ describe('Appearance Cluster', function (): void {
     });
 
     test('cluster pages do not extend filament classes directly', function (): void {
+        /** @var TestCase $this */
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
         if ([] === $files) {
@@ -72,7 +73,10 @@ describe('Appearance Cluster', function (): void {
         }
 
         foreach ($files as $file) {
-            $filePath = (string) $file;
+            if (! is_string($file)) {
+                continue;
+            }
+            $filePath = $file;
             $content = (string) file_get_contents($filePath);
             Assert::assertStringContainsString('extends XotBasePage', $content, basename($filePath));
             Assert::assertStringNotContainsString('extends Page', $content, basename($filePath));
