@@ -39,11 +39,11 @@ it('returns the teams the authenticated user belongs to, keyed by team id', func
     $user = Modules\User\Tests\TestCase::createTestUser();
 >>>>>>> 350420cb (Check & fix styling)
 
-    $team = new Team();
+    $team = new Team;
     $team->forceFill(['user_id' => $user->getKey(), 'name' => 'Engineering']);
     $team->save();
 
-    $teamUser = new TeamUser();
+    $teamUser = new TeamUser;
     $teamUser->forceFill([
         'team_id' => $team->getKey(),
         'user_id' => $user->getKey(),
@@ -73,7 +73,7 @@ it('skips team_user rows whose team no longer exists', function (): void {
     $user = Modules\User\Tests\TestCase::createTestUser();
 >>>>>>> 350420cb (Check & fix styling)
 
-    $teamUser = new TeamUser();
+    $teamUser = new TeamUser;
     $teamUser->forceFill([
         'team_id' => 999999,
         'user_id' => $user->getKey(),

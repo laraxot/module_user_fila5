@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_koFFgX
 <<<<<<< HEAD
 ---
 title: "Root file policy"
@@ -21,6 +22,8 @@ related:
 
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_O7VTP7
 # Root file policy
 
 Updated: 2026-07-08

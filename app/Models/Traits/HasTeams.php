@@ -27,12 +27,12 @@ use Spatie\Permission\Models\Permission;
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
- * @property TeamContract                  $currentTeam
- * @property int|null                      $current_team_id
+ * @property TeamContract $currentTeam
+ * @property int|null $current_team_id
  * @property Collection<int, TeamContract> $membershipTeams
  * @property Collection<int, TeamContract> $ownedTeams
- * @property Collection<int, TeamUser>     $teamUsers
- * @property XotUserContract|null          $owner
+ * @property Collection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null $owner
  */
 trait HasTeams
 {
@@ -90,7 +90,7 @@ trait HasTeams
      */
     public function belongsToTeam(?TeamContract $team): bool
     {
-        if (null === $team) {
+        if ($team === null) {
             return false;
         }
 
@@ -225,11 +225,15 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
+<<<<<<< .merge_file_n5idJj
 <<<<<<< HEAD
             $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
 =======
                                         $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+>>>>>>> .merge_file_WIc74U
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -261,13 +265,13 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
-                return null !== $memberUserKey && $memberUserKey === $user->getKey();
+                return $memberUserKey !== null && $memberUserKey === $user->getKey();
             }
 
             return false;
         });
 
-        if (null !== $userFound) {
+        if ($userFound !== null) {
             return true;
         }
 
@@ -306,7 +310,7 @@ trait HasTeams
 
         $teamRole = $this->teamRole($team);
 
-        return null !== $teamRole && $teamRole->name === $role;
+        return $teamRole !== null && $teamRole->name === $role;
     }
 
     /**
@@ -316,7 +320,7 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
-        if (null === $role) {
+        if ($role === null) {
             return 'Unknown';
         }
 
@@ -393,7 +397,7 @@ trait HasTeams
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
-        if (null === $teamUser) {
+        if ($teamUser === null) {
             return null;
         }
 
@@ -422,8 +426,12 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
+<<<<<<< .merge_file_n5idJj
         if (null !== $role && $role->permissions) {
 <<<<<<< HEAD
+=======
+        if ($role !== null && $role->permissions) {
+>>>>>>> .merge_file_WIc74U
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
 =======
             /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissionsCollection */
@@ -434,14 +442,14 @@ trait HasTeams
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
-                static fn (string $value): bool => '' !== $value
+                static fn (string $value): bool => $value !== ''
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
-        if (null !== $teamUser) {
+        if ($teamUser !== null) {
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -450,7 +458,7 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
-                        static fn (string $value): bool => '' !== $value
+                        static fn (string $value): bool => $value !== ''
                     ))
                 );
             }
@@ -486,19 +494,19 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
-        if (null !== $this->current_team_id) {
+        if ($this->current_team_id !== null) {
             return;
         }
 
         $team = $this->personalTeam();
-        if (null === $team) {
+        if ($team === null) {
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
-        if (null !== $team) {
+        if ($team !== null) {
             $this->switchTeam($team);
         }
     }
@@ -524,7 +532,7 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
-        if (null === $this->currentTeam) {
+        if ($this->currentTeam === null) {
             return false;
         }
 
@@ -536,7 +544,7 @@ trait HasTeams
      */
     public function ownsTeam(?TeamContract $team): bool
     {
-        if (null === $team) {
+        if ($team === null) {
             return false;
         }
 

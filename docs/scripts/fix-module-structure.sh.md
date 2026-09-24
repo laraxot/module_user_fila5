@@ -6,11 +6,18 @@ canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
+<<<<<<< .merge_file_i3PCxa
 =======
 #!/bin/bash
 
 # Configurazione
 MODULE_ROOT="/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/Modules"
+=======
+#!/bin/bash
+
+# Configurazione
+MODULE_ROOT="/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules"
+>>>>>>> .merge_file_mULdxZ
 LOG_FILE="./module_structure_fix.log"
 
 # Funzioni di utilità
@@ -148,4 +155,7 @@ main() {
 
 # Esegui lo script
 main 
+<<<<<<< .merge_file_i3PCxa
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_mULdxZ

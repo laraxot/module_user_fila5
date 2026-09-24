@@ -28,11 +28,15 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
+<<<<<<< .merge_file_DR5LT0
 <<<<<<< HEAD
     public function render(): View
 =======
     public function render(): View|Factory
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    public function render(): mixed
+>>>>>>> .merge_file_sTqe2I
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');

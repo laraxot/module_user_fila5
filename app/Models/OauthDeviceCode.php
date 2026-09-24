@@ -27,6 +27,7 @@ use Modules\Xot\Datas\XotData;
  *
  * @mixin \Eloquent
  */
+<<<<<<< .merge_file_Pu98td
 class OauthDeviceCode extends PassportDeviceCode
 {
 =======
@@ -67,3 +68,6 @@ class OauthDeviceCode extends PassportDeviceCode
     }
 >>>>>>> 350420cb (Check & fix styling)
 }
+=======
+class OauthDeviceCode extends PassportDeviceCode {}
+>>>>>>> .merge_file_ljfIq4

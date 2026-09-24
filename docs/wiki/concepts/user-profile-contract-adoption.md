@@ -11,6 +11,7 @@ related:
   - ./profile-id-bigint-uuid-fix.md
   - ./uservsprofile.md
   - ./baseuser-hierarchy.md
+<<<<<<< .merge_file_P6zZTG
 <<<<<<< HEAD
 <<<<<<< .merge_file_s86KPE
 =======
@@ -18,6 +19,9 @@ related:
 >>>>>>> .merge_file_mWH7MB
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+  - ./testing.md
+>>>>>>> .merge_file_INWcLK
 ---
 
 # UserContract / ProfileContract — adoption
@@ -52,6 +56,7 @@ Mai `User::class` o `Profile::class` letterali in:
 - `belongsTo`, `hasMany`, `morphTo`, `morphMany`
 - factory/state
 - `config('auth.providers.users.model')`
+<<<<<<< .merge_file_P6zZTG
 <<<<<<< HEAD
 <<<<<<< .merge_file_s86KPE
 =======
@@ -59,6 +64,9 @@ Mai `User::class` o `Profile::class` letterali in:
 >>>>>>> .merge_file_mWH7MB
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+- **narrowing di `auth()->user()` / `$event->user`**: `Assert::isInstanceOf($user, User::class)` è sempre falso quando il provider auth è un leaf di progetto (es. `Modules\Quaeris\Models\User`). Canon: `Assert::isInstanceOf($user, UserContract::class)`. `getUserClass()` serve per query/factory/relazioni, non per `instanceof`.
+>>>>>>> .merge_file_INWcLK
 
 Eccezioni (classe concreta OK):
 - **Migration**: `$model_class = Profile::class` (XotBaseMigration vuole la classe per leggere connessione/tabella)
@@ -91,9 +99,12 @@ public function user(): BelongsTo
 }
 ```
 
+<<<<<<< .merge_file_P6zZTG
 <<<<<<< HEAD
 <<<<<<< .merge_file_s86KPE
 =======
+=======
+>>>>>>> .merge_file_INWcLK
 ### ❌ Errato (identità)
 ```php
 Assert::isInstanceOf($user, User::class);
@@ -108,9 +119,12 @@ Assert::isInstanceOf($user, UserContract::class);
 
 `User::class` è il leaf del modulo User; in produzione il provider auth è spesso un'altra classe (`XotData::make()->getUserClass()`). `UserContract` è l'unico narrowing valido.
 
+<<<<<<< .merge_file_P6zZTG
 >>>>>>> .merge_file_mWH7MB
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_INWcLK
 ### ❌ Errato (in Volt)
 ```php
 /** @var Builder<Model> $query */

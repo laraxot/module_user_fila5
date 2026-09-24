@@ -85,7 +85,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('google.client_id')
                             ->placeholder('xxx.apps.googleusercontent.com')
-                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
 
                         TextInput::make('google.client_secret')
                             ->password()
@@ -98,17 +98,17 @@ class SocialiteProviderSettingsPage extends XotBasePage
 >>>>>>> 350420cb (Check & fix styling)
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
-                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
 
                         TagsInput::make('google.scopes')
                             ->placeholder('openid, email, profile')
-                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
 
                         TextInput::make('google.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'google'))
                             ->disabled()
                             ->copyable()
-                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
                     ]),
 
                 Section::make('GitHub OAuth')
@@ -120,7 +120,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('github.client_id')
                             ->placeholder('Iv23lixxx')
-                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
 
                         TextInput::make('github.client_secret')
                             ->password()
@@ -132,17 +132,17 @@ class SocialiteProviderSettingsPage extends XotBasePage
 >>>>>>> 350420cb (Check & fix styling)
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
-                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
 
                         TagsInput::make('github.scopes')
                             ->placeholder('read:user, user:email')
-                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
 
                         TextInput::make('github.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'github'))
                             ->disabled()
                             ->copyable()
-                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
                     ]),
 
                 Section::make('Microsoft OAuth')
@@ -154,7 +154,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('microsoft.client_id')
                             ->placeholder('xxx-xxx-xxx-xxx')
-                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
 
                         TextInput::make('microsoft.client_secret')
                             ->password()
@@ -166,17 +166,17 @@ class SocialiteProviderSettingsPage extends XotBasePage
 >>>>>>> 350420cb (Check & fix styling)
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
-                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
 
                         TagsInput::make('microsoft.scopes')
                             ->placeholder('User.Read, openid, email')
-                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
 
                         TextInput::make('microsoft.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
                             ->disabled()
                             ->copyable()
-                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
                     ]),
             ])
             ->statePath('data');
@@ -280,7 +280,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Write configuration to secure PHP file.
      *
-     * @param array<string, mixed> $config
+     * @param  array<string, mixed>  $config
      */
     private function writeSocialiteConfig(array $config): void
     {
@@ -305,7 +305,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Update SocialProvider model active states.
      *
-     * @param array<string, array<string, mixed>> $config
+     * @param  array<string, array<string, mixed>>  $config
      */
     private function updateSocialProviderActiveStates(array $config): void
     {
@@ -325,9 +325,13 @@ class SocialiteProviderSettingsPage extends XotBasePage
      * Mask secret for display (show only last 4 chars).
 <<<<<<< HEAD
      *
+<<<<<<< .merge_file_G6BO2X
      * @param mixed $secret raw config() value; expected string|null
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  mixed  $secret  Raw config() value; expected string|null.
+>>>>>>> .merge_file_bg5Ln9
      */
     private function maskSecret(mixed $secret): string
     {
@@ -353,12 +357,16 @@ class SocialiteProviderSettingsPage extends XotBasePage
 <<<<<<< HEAD
     private function isMasked(?string $value): bool
     {
+<<<<<<< .merge_file_G6BO2X
         if (null === $value) {
 =======
     private function isMasked(mixed $value): bool
     {
         if (! is_string($value)) {
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        if ($value === null) {
+>>>>>>> .merge_file_bg5Ln9
             return false;
         }
 
@@ -369,17 +377,22 @@ class SocialiteProviderSettingsPage extends XotBasePage
      * Resolve secret value - use new value or keep existing if masked.
 <<<<<<< HEAD
      *
+<<<<<<< .merge_file_G6BO2X
      * @param mixed $newValue      new field state; expected string|null
      * @param mixed $existingValue raw config() value; expected string|null
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  mixed  $newValue  New field state; expected string|null.
+     * @param  mixed  $existingValue  Raw config() value; expected string|null.
+>>>>>>> .merge_file_bg5Ln9
      */
     private function resolveSecret(mixed $newValue, mixed $existingValue): string
     {
         $newSecret = $this->stringValue($newValue);
         $existingSecret = $this->stringValue($existingValue);
 
-        if ($this->isMasked($newSecret) && '' !== $existingSecret) {
+        if ($this->isMasked($newSecret) && $existingSecret !== '') {
             return $existingSecret;
         }
 
@@ -388,7 +401,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     private function configBool(string $key): bool
     {
-        return true === config($key, false);
+        return config($key, false) === true;
     }
 
     private function configString(string $key): string
@@ -397,20 +410,19 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
-     * @param array<int, string> $default
-     *
+     * @param  array<int, string>  $default
      * @return array<int, string>
      */
     private function configStringList(string $key, array $default): array
     {
         $value = config($key, $default);
 
-        return $this->stringList([] === $value ? $default : $value);
+        return $this->stringList($value === [] ? $default : $value);
     }
 
 <<<<<<< HEAD
     /**
-     * @param mixed $value raw config()/form value; expected scalar|null
+     * @param  mixed  $value  Raw config()/form value; expected scalar|null.
      */
 =======
 >>>>>>> 350420cb (Check & fix styling)
@@ -428,11 +440,15 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< .merge_file_G6BO2X
 <<<<<<< HEAD
      * @param mixed $value raw form section state; expected array<string, mixed>
      *
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  mixed  $value  Raw form section state; expected array<string, mixed>.
+>>>>>>> .merge_file_bg5Ln9
      * @return array<string, mixed>
      */
     private function providerData(mixed $value): array
@@ -452,11 +468,15 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< .merge_file_G6BO2X
 <<<<<<< HEAD
      * @param mixed $value raw config()/TagsInput value; expected array<array-key, mixed>
      *
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  mixed  $value  Raw config()/TagsInput value; expected array<array-key, mixed>.
+>>>>>>> .merge_file_bg5Ln9
      * @return array<int, string>
      */
     private function stringList(mixed $value): array
@@ -467,7 +487,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
         return array_values(array_filter(
             $value,
-            static fn (mixed $item): bool => is_string($item) && '' !== $item,
+            static fn (mixed $item): bool => is_string($item) && $item !== '',
         ));
     }
 }

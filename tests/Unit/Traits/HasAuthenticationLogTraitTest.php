@@ -23,11 +23,11 @@ uses(Modules\User\Tests\TestCase::class);
 >>>>>>> 350420cb (Check & fix styling)
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
-    $log = new AuthenticationLog();
+    $log = new AuthenticationLog;
     $log->forceFill(array_merge([
         'authenticatable_type' => $user->getMorphClass(),
         'authenticatable_id' => $user->getKey(),

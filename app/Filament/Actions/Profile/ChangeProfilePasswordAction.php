@@ -53,16 +53,24 @@ final class ChangeProfilePasswordAction extends Action
                 $user = $record->user;
 <<<<<<< HEAD
                 $profileData = Arr::except($record->toArray(), ['id']);
+<<<<<<< .merge_file_KkP7E0
 =======
                 $profile_data = Arr::except($record->toArray(), ['id']);
 >>>>>>> 350420cb (Check & fix styling)
                 if (null === $user) {
+=======
+                if ($user === null) {
+>>>>>>> .merge_file_NZA83q
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
+<<<<<<< .merge_file_KkP7E0
                 if (null === $user) {
 <<<<<<< HEAD
+=======
+                if ($user === null) {
+>>>>>>> .merge_file_NZA83q
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
                 }
@@ -101,7 +109,7 @@ final class ChangeProfilePasswordAction extends Action
                         ->rule(
                             'required',
                             /**
-                             * @param callable(string): mixed $get
+                             * @param  callable(string): mixed  $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

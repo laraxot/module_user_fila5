@@ -11,7 +11,8 @@ use Modules\User\Models\OauthToken;
 >>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */

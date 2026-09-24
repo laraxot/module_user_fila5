@@ -476,6 +476,7 @@ describe('User Model', function (): void {
         $verifiedUsers = User::whereNotNull('email_verified_at')->get();
         $unverifiedUsers = User::whereNull('email_verified_at')->get();
 
+<<<<<<< .merge_file_eqQrR9
 <<<<<<< HEAD
         Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => null !== $user->email_verified_at));
         Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => null === $user->email_verified_at));
@@ -483,6 +484,10 @@ describe('User Model', function (): void {
         Assert::assertSame(true, $verifiedUsers->every(fn ($user) => null !== $user->email_verified_at));
         Assert::assertSame(true, $unverifiedUsers->every(fn ($user) => null === $user->email_verified_at));
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => $user->email_verified_at !== null));
+        Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => $user->email_verified_at === null));
+>>>>>>> .merge_file_kwBuLQ
     });
 
     test('can filter by language', function (): void {
@@ -492,6 +497,7 @@ describe('User Model', function (): void {
         $italianUsers = User::where('lang', 'it')->get();
         $englishUsers = User::where('lang', 'en')->get();
 
+<<<<<<< .merge_file_eqQrR9
 <<<<<<< HEAD
         Assert::assertSame(true, $italianUsers->every(fn (User $user) => 'it' === $user->lang));
         Assert::assertSame(true, $englishUsers->every(fn (User $user) => 'en' === $user->lang));
@@ -499,5 +505,9 @@ describe('User Model', function (): void {
         Assert::assertSame(true, $italianUsers->every(fn ($user) => 'it' === $user->lang));
         Assert::assertSame(true, $englishUsers->every(fn ($user) => 'en' === $user->lang));
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        Assert::assertSame(true, $italianUsers->every(fn (User $user) => $user->lang === 'it'));
+        Assert::assertSame(true, $englishUsers->every(fn (User $user) => $user->lang === 'en'));
+>>>>>>> .merge_file_kwBuLQ
     });
 });

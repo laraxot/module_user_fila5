@@ -6,10 +6,13 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
+<<<<<<< .merge_file_NJojZ3
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
@@ -17,6 +20,8 @@ use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
 >>>>>>> 350420cb (Check & fix styling)
 
+=======
+>>>>>>> .merge_file_mP0LXR
 class AssignTenantCommand extends Command
 {
     /**

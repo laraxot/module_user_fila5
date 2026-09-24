@@ -6,11 +6,18 @@ canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
+<<<<<<< .merge_file_CDaCk9
 =======
 #!/bin/bash
 
 # Configurazione
 MODULE_ROOT="/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/Modules"
+=======
+#!/bin/bash
+
+# Configurazione
+MODULE_ROOT="/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules"
+>>>>>>> .merge_file_IrHW30
 LOG_FILE="./path_fix.log"
 
 # Logging
@@ -153,4 +160,7 @@ main() {
 
 # Esegui main
 main "$@" 
+<<<<<<< .merge_file_CDaCk9
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_IrHW30

@@ -22,12 +22,16 @@ uses(Modules\User\Tests\TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {
-        Assert::assertInstanceOf(BaseUser::class, new User());
+        Assert::assertInstanceOf(BaseUser::class, new User);
     });
 
     test('user has authentication capabilities', function () {
+<<<<<<< .merge_file_lFeXTf
 <<<<<<< HEAD
         $user = new User();
+=======
+        $user = new User;
+>>>>>>> .merge_file_aUeJxV
         $user->email = 'test@example.com';
         $user->password = 'hashed-password';
 
@@ -45,7 +49,7 @@ describe('User Business Logic', function () {
     });
 
     test('user can have name components', function () {
-        $user = new User();
+        $user = new User;
         $user->first_name = 'Mario';
         $user->last_name = 'Rossi';
         $user->name = 'Mario Rossi';
@@ -56,29 +60,33 @@ describe('User Business Logic', function () {
     });
 
     test('user has activation status', function () {
-        $user = new User();
+        $user = new User;
         $user->is_active = true;
 
         Assert::assertSame(true, $user->is_active);
     });
 
     test('user has otp capability', function () {
-        $user = new User();
+        $user = new User;
         $user->is_otp = true;
 
         Assert::assertSame(true, $user->is_otp);
     });
 
     test('user can have language preference', function () {
-        $user = new User();
+        $user = new User;
         $user->lang = 'it';
 
         Assert::assertSame('it', $user->lang);
     });
 
     test('user has email verification tracking', function () {
+<<<<<<< .merge_file_lFeXTf
         $user = new User();
 <<<<<<< HEAD
+=======
+        $user = new User;
+>>>>>>> .merge_file_aUeJxV
         $verifiedAt = Carbon::parse('2023-01-01 12:00:00');
 =======
         $verifiedAt = Illuminate\Support\Carbon::parse('2023-01-01 12:00:00');
@@ -90,8 +98,12 @@ describe('User Business Logic', function () {
     });
 
     test('user has password expiry tracking', function () {
+<<<<<<< .merge_file_lFeXTf
         $user = new User();
 <<<<<<< HEAD
+=======
+        $user = new User;
+>>>>>>> .merge_file_aUeJxV
         $expiresAt = Carbon::parse('2023-12-31 23:59:59');
 =======
         $expiresAt = Illuminate\Support\Carbon::parse('2023-12-31 23:59:59');
@@ -103,21 +115,21 @@ describe('User Business Logic', function () {
     });
 
     test('user can have current team', function () {
-        $user = new User();
+        $user = new User;
         $user->current_team_id = 1;
 
         Assert::assertSame(1, $user->current_team_id);
     });
 
     test('user can have profile photo', function () {
-        $user = new User();
+        $user = new User;
         $user->profile_photo_path = '/storage/profile-photos/user.jpg';
 
         Assert::assertSame('/storage/profile-photos/user.jpg', $user->profile_photo_path);
     });
 
     test('user can have remember token', function () {
-        $user = new User();
+        $user = new User;
         $user->remember_token = 'abc123def456';
 
         Assert::assertSame('abc123def456', $user->remember_token);

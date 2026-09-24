@@ -39,7 +39,7 @@ uses(TestCase::class);
 >>>>>>> 350420cb (Check & fix styling)
 
 it('password data can be instantiated', function (): void {
-    $passwordData = new PasswordData();
+    $passwordData = new PasswordData;
 
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
     Assert::assertSame(5, $passwordData->otp_expiration_minutes);
@@ -117,7 +117,7 @@ it('password data get helper text works', function (): void {
 });
 
 it('password data get form components returns array', function (): void {
-    $passwordData = new PasswordData();
+    $passwordData = new PasswordData;
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -199,7 +199,7 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
-    $passwordData = new PasswordData();
+    $passwordData = new PasswordData;
 
     $passwordData->getValidationMessages();
 });

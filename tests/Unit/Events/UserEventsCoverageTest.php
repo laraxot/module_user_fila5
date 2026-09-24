@@ -173,6 +173,7 @@ describe('User events coverage', function (): void {
 
     test('instantiates recovery generated and user registered events', function (): void {
         $userContract = UserFactory::new()->makeOne();
+<<<<<<< .merge_file_EDKL9A
 =======
         expect($channels)->toHaveCount(1)
             ->and($channels[0])->toBeInstanceOf(PrivateChannel::class);
@@ -182,6 +183,9 @@ describe('User events coverage', function (): void {
         $userContract = Mockery::mock(UserContract::class);
 >>>>>>> 350420cb (Check & fix styling)
         $user = new User();
+=======
+        $user = new User;
+>>>>>>> .merge_file_av3ijB
 
         $generated = new RecoveryCodesGenerated($userContract);
         $registered = new UserRegistered($user, ['source' => 'test'], '127.0.0.1', 'Pest');

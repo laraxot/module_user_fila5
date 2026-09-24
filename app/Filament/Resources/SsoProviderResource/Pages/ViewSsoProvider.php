@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\SsoProviderResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\SsoProviderResource;
+<<<<<<< .merge_file_17ds8W
 use Modules\User\Filament\Resources\SsoProviderResource\Schemas\SsoProviderInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -13,11 +14,14 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\SsoProviderResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_xihwhc
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSsoProvider extends XotBaseViewRecord
 {
     protected static string $resource = SsoProviderResource::class;
+<<<<<<< .merge_file_17ds8W
 
     /**
 <<<<<<< HEAD
@@ -48,4 +52,6 @@ class ViewSsoProvider extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_xihwhc
 }

@@ -30,7 +30,7 @@ describe('Create specific passport client actions', function (): void {
     });
 
     it('delegates password client creation to generic action', function (): void {
-        $expectedClient = new OauthClient();
+        $expectedClient = new OauthClient;
 
         $genericAction = \typedMock(CreateGenericClientAction::class);
         $genericAction->allows(['execute' => $expectedClient]);
@@ -46,7 +46,7 @@ describe('Create specific passport client actions', function (): void {
     });
 
     it('delegates personal access client creation to generic action', function (): void {
-        $expectedClient = new OauthClient();
+        $expectedClient = new OauthClient;
 
         $genericAction = \typedMock(CreateGenericClientAction::class);
         $genericAction->allows(['execute' => $expectedClient]);

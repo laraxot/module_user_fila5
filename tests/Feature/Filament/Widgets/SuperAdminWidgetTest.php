@@ -13,6 +13,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
+<<<<<<< .merge_file_IA1rQI
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
 use Modules\Xot\Contracts\UserContract;
@@ -25,18 +26,24 @@ use function Pest\Laravel\actingAs;
 =======
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_B60Vsr
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
+<<<<<<< .merge_file_IA1rQI
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
 >>>>>>> .merge_file_zz3uH8
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_B60Vsr
 uses(TestCase::class);
 
 /**
@@ -49,6 +56,7 @@ uses(TestCase::class);
 function superAdminWidgetProfileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
+<<<<<<< .merge_file_IA1rQI
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
     $connection = (new $profileClass)->getConnectionName();
@@ -64,6 +72,11 @@ function superAdminWidgetProfileConnectionName(): string
 
     if (is_string($connection) && '' !== $connection) {
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    $connection = (new $profileClass)->getConnectionName();
+
+    if (is_string($connection) && $connection !== '') {
+>>>>>>> .merge_file_B60Vsr
         return $connection;
     }
 
@@ -95,6 +108,7 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
         ['team_id' => null],
     );
 
+<<<<<<< .merge_file_IA1rQI
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
     $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
@@ -104,6 +118,9 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
 =======
     $role = 'super-admin' === $roleName ? $superAdminRole : $negateSuperAdminRole;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
+>>>>>>> .merge_file_B60Vsr
 
     $user->assignRole($role);
 }
@@ -233,6 +250,7 @@ describe('SuperAdminWidget toggle', function (): void {
         grantSuperAdminWidgetRole($user, 'super-admin');
         actingAs($user);
 
+<<<<<<< .merge_file_IA1rQI
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
         $widget = new SuperAdminWidget;
@@ -242,6 +260,9 @@ describe('SuperAdminWidget toggle', function (): void {
 =======
         $widget = new SuperAdminWidget();
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        $widget = new SuperAdminWidget;
+>>>>>>> .merge_file_B60Vsr
         $widget->mount();
 
         $response = $widget->toggleSuperAdmin();

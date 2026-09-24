@@ -25,15 +25,18 @@ class Otp extends Notification implements ShouldQueue
     public function __construct(
         public UserContract $user,
         public string $code,
-    ) {
-    }
+    ) {}
 
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< .merge_file_vj6KIE
 <<<<<<< HEAD
      * @param object $_notifiable L'entità da notificare (modello o AnonymousNotifiable)
      *
+=======
+     * @param  object  $_notifiable  L'entità da notificare (modello o AnonymousNotifiable)
+>>>>>>> .merge_file_k7Am9T
      * @return array<int, string>
      */
     public function via(object $_notifiable): array
@@ -56,7 +59,7 @@ class Otp extends Notification implements ShouldQueue
         $pwd = PasswordData::make();
         $app_name = SafeStringCastAction::cast(config('app.name'));
 
-        $mailMessage = new MailMessage();
+        $mailMessage = new MailMessage;
         $mailMessage = $mailMessage->template('user::notifications.email');
         $mailMessage = $mailMessage->subject(SafeStringCastAction::cast(__('user::otp.mail.subject')));
         $mailMessage = $mailMessage->greeting(SafeStringCastAction::cast(__('user::otp.mail.greeting')));

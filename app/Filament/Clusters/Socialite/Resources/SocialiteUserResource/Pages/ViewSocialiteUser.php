@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResour
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
+<<<<<<< .merge_file_pWUXbw
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Schemas\SocialiteUserInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -18,11 +19,14 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\SocialiteUser;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_rx0ilU
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialiteUser extends XotBaseViewRecord
 {
     protected static string $resource = SocialiteUserResource::class;
+<<<<<<< .merge_file_pWUXbw
 
     /**
 <<<<<<< HEAD
@@ -102,4 +106,6 @@ class ViewSocialiteUser extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_rx0ilU
 }

@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthAuthCodeResource;
-use Modules\User\Filament\Resources\OauthAuthCodeResource\Schemas\OauthAuthCodeInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -19,6 +18,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewOauthAuthCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthAuthCodeResource::class;
+<<<<<<< .merge_file_nWX6dt
 
     /**
 <<<<<<< HEAD
@@ -47,4 +47,6 @@ class ViewOauthAuthCode extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_KidW8m
 }

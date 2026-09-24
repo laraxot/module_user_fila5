@@ -36,8 +36,12 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< .merge_file_oBQxuO
 <<<<<<< HEAD
     TestCase::$listUsersPage = new ListUsers();
+=======
+    TestCase::$listUsersPage = new ListUsers;
+>>>>>>> .merge_file_zvo9sd
 
     $users = UserFactory::new()
         ->count(3)

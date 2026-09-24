@@ -3,6 +3,7 @@ title: "concepts index — User"
 type: index
 tags: [concepts, User]
 created: 2026-05-11
+<<<<<<< .merge_file_Tb70v1
 <<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
 updated: 2026-07-27
@@ -12,6 +13,9 @@ updated: 2026-08-19
 =======
 updated: 2026-07-27
 >>>>>>> 350420cb (Check & fix styling)
+=======
+updated: 2026-08-19
+>>>>>>> .merge_file_Ka1utU
 ---
 
 # concepts Index — User
@@ -33,16 +37,22 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [filament-widget-linear-crud-model-create](filament-widget-linear-crud-model-create.md) — `getUserClass()::create($data)`, no Action banale
 - [filament-widget-resource-form-delegation](filament-widget-resource-form-delegation.md) — widget → `UserForm::get*FormSchema()`
 
+<<<<<<< .merge_file_Tb70v1
 <<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
 =======
+=======
+>>>>>>> .merge_file_Ka1utU
 ## Testing
 
-- [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Da 1264 a 0 errori PHPStan sul modulo.
+- [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Trait OAuth/Team concern archiviato `.bak` (logica in `TestCase`).
 
+<<<<<<< .merge_file_Tb70v1
 >>>>>>> .merge_file_Avccsi
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ka1utU
 ## Altro
 - [notifications-folio-page](notifications-folio-page.md) — pagina `/notifications`, owner User
 - [notifications-folio-route](notifications-folio-route.md) — quick ref `route('notifications')`
@@ -53,6 +63,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 - [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
+<<<<<<< .merge_file_Tb70v1
 <<<<<<< HEAD
 <<<<<<< .merge_file_Dk72Gb
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
@@ -62,6 +73,9 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 =======
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
 >>>>>>> 350420cb (Check & fix styling)
+=======
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner modulo di progetto (non User)
+>>>>>>> .merge_file_Ka1utU
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
 
 ## Folio FO

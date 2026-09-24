@@ -603,6 +603,7 @@ app/Models/Models
 
 node_modules
 graphify-out/
+<<<<<<< .merge_file_Xax4Ac
 =======
 lang/lang/
 _docs/
@@ -634,3 +635,9 @@ test-results/
 docs/legacy
 tests/AuditCoverage
 >>>>>>> 350420cb (Check & fix styling)
+=======
+*.backup_*
+
+# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
+audit-coverage/
+>>>>>>> .merge_file_x7Bnja

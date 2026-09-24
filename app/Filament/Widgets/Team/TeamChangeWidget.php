@@ -8,6 +8,7 @@ use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
+<<<<<<< .merge_file_Sb9J2q
 <<<<<<< HEAD
 <<<<<<< .merge_file_ikFPSv
 use InvalidArgumentException;
@@ -15,6 +16,9 @@ use InvalidArgumentException;
 >>>>>>> .merge_file_9gCk7c
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+use InvalidArgumentException;
+>>>>>>> .merge_file_NSM3cN
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Contracts\TeamContract;
@@ -33,7 +37,8 @@ class TeamChangeWidget extends XotBaseWidget
 {
     protected static bool $isDiscovered = false;
 
-    protected string $view = 'user::filament.widgets.team.change';
+    /** @var view-string */
+    protected string $view;
 
     /** @var list<array{id: int|string, name: string}> */
     public array $teams = [];
@@ -46,6 +51,7 @@ class TeamChangeWidget extends XotBaseWidget
         Assert::notNull($authUser, '['.__LINE__.']['.class_basename($this).']');
 
         if (! $authUser instanceof UserContract || ! $authUser instanceof HasTeamsContract) {
+<<<<<<< .merge_file_Sb9J2q
 <<<<<<< HEAD
 <<<<<<< .merge_file_ikFPSv
             throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
@@ -55,6 +61,9 @@ class TeamChangeWidget extends XotBaseWidget
 =======
             throw new \InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
 >>>>>>> 350420cb (Check & fix styling)
+=======
+            throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
+>>>>>>> .merge_file_NSM3cN
         }
 
         $this->user = $authUser;
@@ -112,6 +121,7 @@ class TeamChangeWidget extends XotBaseWidget
     public function render(): View
     {
         /** @var view-string $viewName */
+<<<<<<< .merge_file_Sb9J2q
         $viewName = 'user::filament.widgets.team.change';
 
 <<<<<<< HEAD
@@ -125,6 +135,11 @@ class TeamChangeWidget extends XotBaseWidget
 >>>>>>> 350420cb (Check & fix styling)
             $viewName = 'ui::livewire.empty';
         }
+=======
+        $viewName = $this->teams === []
+            ? 'ui::livewire.empty'
+            : 'user::filament.widgets.team.change';
+>>>>>>> .merge_file_NSM3cN
 
         return view($viewName, [
             'view' => $viewName,

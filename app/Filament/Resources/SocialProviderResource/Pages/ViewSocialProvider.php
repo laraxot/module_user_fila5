@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\SocialProviderResource;
-use Modules\User\Filament\Resources\SocialProviderResource\Schemas\SocialProviderInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 =======
@@ -22,6 +21,7 @@ use function Safe\json_encode;
 class ViewSocialProvider extends XotBaseViewRecord
 {
     protected static string $resource = SocialProviderResource::class;
+<<<<<<< .merge_file_5ag6G8
 
     /**
 <<<<<<< HEAD
@@ -64,4 +64,6 @@ class ViewSocialProvider extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_udD2ki
 }

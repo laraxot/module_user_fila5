@@ -40,6 +40,7 @@ class ResolveSuperAdminConfigurationAction
         ];
     }
 
+<<<<<<< .merge_file_oFVS3o
 <<<<<<< HEAD
 <<<<<<< .merge_file_Nj6mmK
 =======
@@ -54,6 +55,8 @@ class ResolveSuperAdminConfigurationAction
         return is_string($value) ? $value : '';
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_WFya2M
     private function toBoolean(bool $value): bool
     {
         return $value;
@@ -62,8 +65,11 @@ class ResolveSuperAdminConfigurationAction
     private function toString(string $value): string
     {
         return $value;
+<<<<<<< .merge_file_oFVS3o
 >>>>>>> .merge_file_rwgIoa
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_WFya2M
     }
 }

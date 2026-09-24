@@ -133,8 +133,12 @@ class RegistrationWidget extends XotBaseWidget
         }
 
         $rememberToken = $user->getAttribute('remember_token');
+<<<<<<< .merge_file_4Yl3B7
 <<<<<<< HEAD
         if (is_string($token) && '' !== $token) {
+=======
+        if (is_string($token) && $token !== '') {
+>>>>>>> .merge_file_gZ4uMi
             $user->setAttribute('remember_token', $token);
             $user->save();
 =======
@@ -252,8 +256,7 @@ class RegistrationWidget extends XotBaseWidget
 <<<<<<< HEAD
 
     /**
-     * @param array<int|string, mixed> $schema
-     *
+     * @param  array<int|string, mixed>  $schema
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(array $schema): array

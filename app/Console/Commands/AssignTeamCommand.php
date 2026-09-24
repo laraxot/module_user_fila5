@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< .merge_file_KK0aLy
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_H2Tysf
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 =======
@@ -18,6 +21,9 @@ use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
 >>>>>>> 350420cb (Check & fix styling)
 use Webmozart\Assert\Assert;
+
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
 
 class AssignTeamCommand extends Command
 {

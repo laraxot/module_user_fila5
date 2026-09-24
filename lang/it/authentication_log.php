@@ -79,6 +79,13 @@ return [
 <<<<<<< HEAD
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
         ],
 =======
 >>>>>>> 350420cb (Check & fix styling)

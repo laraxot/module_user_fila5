@@ -50,9 +50,13 @@ class GetProviderScopesAction
         return array_values(array_filter(array_map(
             static fn (mixed $scope): ?string => \is_scalar($scope) || $scope instanceof \Stringable ? (string) $scope : null,
             $scopes
+<<<<<<< .merge_file_qrrSnF
         ), static fn (?string $scope): bool => null !== $scope));
 =======
         return array_values(array_filter($scopes, 'is_string'));
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        ), static fn (?string $scope): bool => $scope !== null));
+>>>>>>> .merge_file_N6dXGU
     }
 }

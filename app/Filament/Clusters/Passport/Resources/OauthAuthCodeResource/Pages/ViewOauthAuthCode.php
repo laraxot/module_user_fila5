@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResourc
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Schemas\OauthAuthCodeInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 =======
 // User — domain PHP (claude-audit documentation ratio).
@@ -28,6 +27,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewOauthAuthCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthAuthCodeResource::class;
+<<<<<<< .merge_file_8HgnSD
 
     /**
 <<<<<<< HEAD
@@ -117,4 +117,6 @@ class ViewOauthAuthCode extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_t4fGb2
 }

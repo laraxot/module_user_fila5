@@ -6,12 +6,15 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\TenantUserResource;
+<<<<<<< .merge_file_bHqWxd
 use Modules\User\Filament\Resources\TenantUserResource\Schemas\TenantUserInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_WLCb2x
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -21,6 +24,7 @@ class ViewTenantUser extends XotBaseViewRecord
 {
 <<<<<<< HEAD
     protected static string $resource = TenantUserResource::class;
+<<<<<<< .merge_file_bHqWxd
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -49,4 +53,6 @@ class ViewTenantUser extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_WLCb2x
 }

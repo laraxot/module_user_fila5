@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_VFwQ0I
 <<<<<<< HEAD
 <<<<<<< .merge_file_n2TODL
 
@@ -9,11 +10,14 @@ declare(strict_types=1);
 =======
 
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_bIvhDb
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\RoleHasPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = RoleHasPermission::class;
 
     public function up(): void

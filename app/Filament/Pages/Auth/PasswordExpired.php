@@ -70,16 +70,18 @@ class PasswordExpired extends XotBasePage
     public function resetPassword(): ?PasswordResetResponse
     {
         $pwd = PasswordData::make();
-        $data = $this->form->getState();
+        $form = $this->form;
+        assert($form instanceof Schema);
+        $data = $form->getState();
         Assert::string($currentPassword = Arr::get($data, 'current_password'));
         Assert::string($password = Arr::get($data, 'password'));
         $user = Auth::user();
-        if (null === $user) {
+        if ($user === null) {
             return null;
         }
 
         // check if current password is correct
-        if (null === $user->password || ! Hash::check($currentPassword, $user->password)) {
+        if ($user->password === null || ! Hash::check($currentPassword, $user->password)) {
             Notification::make()
                 ->title(__('user::otp.notifications.wrong_password.title'))
                 ->body(__('user::otp.notifications.wrong_password.body'))
@@ -142,7 +144,7 @@ class PasswordExpired extends XotBasePage
             ->success()
             ->send();
 
-        return new PasswordResetResponse();
+        return new PasswordResetResponse;
     }
 
     /**

@@ -6,16 +6,20 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Datas\XotData;
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< .merge_file_Y0ZBVF
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
 =======
 use Symfony\Component\Console\Input\InputOption;
 >>>>>>> 350420cb (Check & fix styling)
 
+=======
+>>>>>>> .merge_file_nXegkZ
 /**
  * Comando per impostare il team corrente per un utente.
  */

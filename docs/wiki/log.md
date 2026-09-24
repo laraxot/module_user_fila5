@@ -4,8 +4,12 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
+<<<<<<< .merge_file_wyqXQM
 <<<<<<< HEAD
 updated: 2026-09-21
+=======
+updated: 2026-09-24
+>>>>>>> .merge_file_xY4x1i
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
@@ -18,10 +22,13 @@ related:
   - "./index.md"
   - "./overview.md"
   - "./socialite-architecture.md"
+  - "./concepts/pest-helpers-bootfiles.md"
+  - "./troubleshooting/phpstan-module-analysis-memory.md"
 ---
 
 ---
 
+- 2026-09-24: PHPStan swarm A (User) — tipizzati parametri closure Filament/`Builder` su Resource Tenant/Role/User/Profile + `BackfillOauthClientOwnerCommand`; trait `UserTestCaseOAuthTeamConcern` confermato `.bak` (zero caller, logica in `TestCase`). Skip `tests/generate-coverage-report.php`. Doc: [pest-helpers-bootfiles](./concepts/pest-helpers-bootfiles.md), [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md).
 - 2026-09-21: BMAD Epic 9 (docs only, **nessun PHP**) — conversione SuperAdmin Livewire → `XotBaseWidget` + hook `AdminPanelProvider`. Canon: [bmad/README.md](../bmad/README.md), spec provider: [bmad/tech-spec.md](../bmad/tech-spec.md), story [9.2](../stories/9.2.admin-panel-provider-hook.story.md).
 - 2026-09-21: runtime `/admin` — `No hint path defined for [filament-jet]`: SuperAdmin e gemelli Livewire usano `user::` (viste nel modulo). FilamentJet non è una dipendenza. Doc: [filament_errors.md](../filament_errors.md).
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).

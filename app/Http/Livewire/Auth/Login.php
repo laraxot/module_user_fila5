@@ -117,7 +117,7 @@ class Login extends Component implements HasActions, HasForms
                 ->suffixIcon('heroicon-m-envelope')
                 ->autofocus()
                 ->live()
-                ->afterStateUpdated(fn ($_state) => $this->validateOnly('email'))
+                ->afterStateUpdated(fn (mixed $_state) => $this->validateOnly('email'))
                 ->dehydrated(),
 
             TextInput::make('password')
@@ -152,7 +152,7 @@ class Login extends Component implements HasActions, HasForms
         );
 
         $adminCount = $adminRoles->count();
-        if (1 === $adminCount) {
+        if ($adminCount === 1) {
             $role = $adminRoles->first();
             Assert::isInstanceOf($role, Role::class);
             $moduleName = str_replace('::admin', '', $role->name);

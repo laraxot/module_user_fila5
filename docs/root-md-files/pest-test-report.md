@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_hBZuxF
 <<<<<<< HEAD
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
@@ -14,6 +15,8 @@ related:
 
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_3l41FO
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

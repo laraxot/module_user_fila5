@@ -85,9 +85,13 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
+<<<<<<< .merge_file_Iw6xUq
      * @param array<int, string> $scopes
      *
 <<<<<<< HEAD
+=======
+     * @param  array<int, string>  $scopes
+>>>>>>> .merge_file_PCJtxX
      * @return PersonalAccessTokenResult<Token>
 =======
      * @return PersonalAccessTokenResult<mixed>

@@ -6,10 +6,6 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
-
-use function Laravel\Prompts\multiselect;
-use function Laravel\Prompts\text;
-
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -17,6 +13,9 @@ use Modules\Xot\Datas\XotData;
 =======
 use Symfony\Component\Console\Input\InputOption;
 >>>>>>> 350420cb (Check & fix styling)
+
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
 
 class RemoveRoleCommand extends Command
 {

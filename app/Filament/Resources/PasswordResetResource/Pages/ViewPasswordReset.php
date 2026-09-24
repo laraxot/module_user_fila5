@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\PasswordResetResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\PasswordResetResource;
+<<<<<<< .merge_file_neye0a
 use Modules\User\Filament\Resources\PasswordResetResource\Schemas\PasswordResetInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -14,11 +15,14 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\PasswordResetResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_6Ybhj3
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPasswordReset extends XotBaseViewRecord
 {
     protected static string $resource = PasswordResetResource::class;
+<<<<<<< .merge_file_neye0a
 
     /**
 <<<<<<< HEAD
@@ -61,4 +65,6 @@ class ViewPasswordReset extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_6Ybhj3
 }

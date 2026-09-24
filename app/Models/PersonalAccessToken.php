@@ -16,12 +16,20 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
+<<<<<<< .merge_file_BD4w5t
 <<<<<<< HEAD
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
  * @property string      $name
  * @property string      $token
+=======
+ * @property int $id
+ * @property string $tokenable_type
+ * @property int $tokenable_id
+ * @property string $name
+ * @property string $token
+>>>>>>> .merge_file_vPyOhx
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
@@ -40,7 +48,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property \Illuminate\Support\Carbon|null $updated_at
 >>>>>>> 350420cb (Check & fix styling)
  *
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
+ * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()

@@ -27,7 +27,7 @@ describe('Microsoft Login Button', function () {
         config(['services.microsoft.client_id' => 'test-client-id']);
 >>>>>>> 350420cb (Check & fix styling)
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
 <<<<<<< HEAD
@@ -40,7 +40,7 @@ describe('Microsoft Login Button', function () {
         config(['services.microsoft.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -61,7 +61,7 @@ describe('Microsoft Login Button', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
 <<<<<<< HEAD
@@ -73,7 +73,7 @@ describe('Microsoft Login Button', function () {
         config(['services.microsoft.client_id' => 'microsoft-id']);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(2, $providers);

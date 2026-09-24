@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_b2J466
 <<<<<<< HEAD
 <<<<<<< .merge_file_EiaMyt
 
@@ -9,11 +10,14 @@ declare(strict_types=1);
 =======
 
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_yAGrwk
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Team;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Team::class;
 
     public function up(): void

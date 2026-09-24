@@ -40,7 +40,7 @@ class ViewOauthClient extends XotBaseViewRecord
         /** @var OauthClient|null $record */
         $record = $this->record;
 
-        if (null !== $record && ! $record->revoked) {
+        if ($record !== null && ! $record->revoked) {
             $actions['revoke'] = Action::make('revoke')
                 ->label(__('user::actions.oauth.revoke_client.label'))
                 ->icon('heroicon-o-x-circle')
@@ -60,6 +60,7 @@ class ViewOauthClient extends XotBaseViewRecord
 
         return $actions;
     }
+<<<<<<< .merge_file_UBhRiu
 
     /**
 <<<<<<< HEAD
@@ -93,4 +94,6 @@ class ViewOauthClient extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_UjcxYn
 }

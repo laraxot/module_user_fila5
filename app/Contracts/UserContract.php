@@ -8,6 +8,7 @@ namespace Modules\User\Contracts;
 /**
  * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
  */
+<<<<<<< .merge_file_maDh7T
 interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
 =======
@@ -180,3 +181,6 @@ interface UserContract extends \Modules\Xot\Contracts\UserContract
     public function removeRole(mixed ...$role): static;
 >>>>>>> 350420cb (Check & fix styling)
 }
+=======
+interface UserContract extends \Modules\Xot\Contracts\UserContract {}
+>>>>>>> .merge_file_kQfrMi

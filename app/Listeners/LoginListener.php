@@ -84,7 +84,7 @@ final class LoginListener
             $updates['logout_at'] = null;
         }
 
-        if ([] !== $updates) {
+        if ($updates !== []) {
             $pivot->update($updates);
         }
 <<<<<<< HEAD

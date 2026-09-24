@@ -125,7 +125,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 >>>>>>> 350420cb (Check & fix styling)
     public function confirmPasswordReset(): void
     {
-        if ('form' !== $this->currentState) {
+        if ($this->currentState !== 'form') {
             return;
         }
 
@@ -156,7 +156,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 },
             );
 
-            if (Password::PASSWORD_RESET === $response) {
+            if ($response === Password::PASSWORD_RESET) {
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -250,7 +250,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 >>>>>>> 350420cb (Check & fix styling)
     public function isLoading(): bool
     {
-        return 'loading' === $this->currentState;
+        return $this->currentState === 'loading';
     }
 
 <<<<<<< HEAD
@@ -261,7 +261,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 >>>>>>> 350420cb (Check & fix styling)
     public function isSuccess(): bool
     {
-        return 'success' === $this->currentState;
+        return $this->currentState === 'success';
     }
 
 <<<<<<< HEAD
@@ -272,7 +272,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 >>>>>>> 350420cb (Check & fix styling)
     public function hasError(): bool
     {
-        return 'error' === $this->currentState;
+        return $this->currentState === 'error';
     }
 
 <<<<<<< HEAD

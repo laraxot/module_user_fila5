@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenRes
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\Schemas\OauthRefreshTokenInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 =======
 use Filament\Infolists\Components\IconEntry;
@@ -22,6 +21,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewOauthRefreshToken extends XotBaseViewRecord
 {
     protected static string $resource = OauthRefreshTokenResource::class;
+<<<<<<< .merge_file_uKoWE3
 
     /**
 <<<<<<< HEAD
@@ -67,4 +67,6 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_IvK1xe
 }

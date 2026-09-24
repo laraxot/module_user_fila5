@@ -25,7 +25,7 @@ class CreateRole extends XotBaseCreateRecord
     {
         $this->permissions = collect($data)
             ->filter(
-                static fn ($_permission, $key): bool => ! in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
+                static fn (mixed $_permission, int|string $key): bool => ! in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
             )
             ->keys();
 

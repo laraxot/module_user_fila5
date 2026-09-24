@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_mKXSTx
 <<<<<<< HEAD
 ---
 title: "Root files hygiene"
@@ -21,6 +22,8 @@ related:
 
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_IxFQrv
 # Root files hygiene
 
 ## 2026-07-08 16:48

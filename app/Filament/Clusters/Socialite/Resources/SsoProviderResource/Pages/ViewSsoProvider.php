@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource;
+<<<<<<< .merge_file_wVZrAz
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Schemas\SsoProviderInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -13,11 +14,14 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_UREu8K
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSsoProvider extends XotBaseViewRecord
 {
     protected static string $resource = SsoProviderResource::class;
+<<<<<<< .merge_file_wVZrAz
 
     /**
 <<<<<<< HEAD
@@ -48,4 +52,6 @@ class ViewSsoProvider extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_UREu8K
 }

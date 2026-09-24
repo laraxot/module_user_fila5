@@ -32,8 +32,12 @@ class ListProfiles extends XotBaseListRecords
             'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
+<<<<<<< .merge_file_67XUdJ
 <<<<<<< HEAD
                 ->default(function ($record) {
+=======
+                ->default(function (mixed $record): string {
+>>>>>>> .merge_file_oVQXOs
                     if (! is_object($record)) {
                         return '--';
                     }
@@ -41,10 +45,10 @@ class ListProfiles extends XotBaseListRecords
                     // PHPStan Level 10: isset() invece di property_exists() per Eloquent relations/attributes
                     $userValue = $record->user ?? null;
 
-                    if (null === $userValue) {
+                    if ($userValue === null) {
                         $emailValue = $record->email ?? null;
 
-                        if (null === $emailValue) {
+                        if ($emailValue === null) {
                             if (method_exists($record, 'update')) {
                                 $record->update(['email' => fake()->email()]);
                             }
@@ -69,7 +73,7 @@ class ListProfiles extends XotBaseListRecords
                     // PHPStan Level 10: isset() per magic properties di User model
                     $userId = $userValue->id ?? null;
 
-                    if (null !== $userId && method_exists($record, 'update')) {
+                    if ($userId !== null && method_exists($record, 'update')) {
                         $record->update(['user_id' => $userId]);
                     }
 

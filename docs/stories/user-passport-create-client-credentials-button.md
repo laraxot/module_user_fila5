@@ -13,6 +13,7 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
+<<<<<<< .merge_file_Pn6dvL
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 updated_at: '2026-09-03'
@@ -22,6 +23,9 @@ updated_at: '2026-09-17'
 =======
 updated_at: '2026-09-03'
 >>>>>>> 350420cb (Check & fix styling)
+=======
+updated_at: '2026-09-17'
+>>>>>>> .merge_file_PGFDY2
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -230,29 +234,41 @@ Claude Sonnet 5
 - **Verifica manuale 2026-09-03 (locale)**: l'utente ha usato il pulsante
   dal vivo, creazione riuscita (screenshot), abbinamento tramite `user_id`
   confermato anche via query diretta sul DB. Durante la prova sono emerse
-  due scoperte **indipendenti da questa story**, non ancora tracciate in
-  una story/issue propria — segnalate all'utente, decisione in sospeso:
-  1. `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
+  due scoperte **indipendenti da questa story**, segnalate all'utente con
+  decisione in sospeso — **entrambe verificate concretamente il 2026-09-15**,
+  vedi sotto.
+  1. **[CORRETTO 2026-09-15 — era classificato "cosmetico", è funzionale]**
+     `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
      client di un utente tramite la relazione `clients()` (`owner_id`/
      `owner_type`, polimorfica), ma la sua stessa azione
-     "associateExistingClient" scrive su `user_id` — le due colonne non
-     sono sincronizzate, quella tab mostra sempre una lista
-     vuota/incompleta indipendentemente da abbinamenti reali fatti altrove
-     (verificato: nessun punto della logica applicativa reale legge
-     `owner_id`/`owner_type` su `OauthClient`, solo quella tab — bug
-     cosmetico, non funzionale).
-  2. Sul server di produzione, la lista completa "Client OAuth" mostra
-     solo i 4 client di default creati da `passport:install` (Personal
-     Access Client, Password Grant Client) — **nessuno dei client_id
-     storici usati dai clienti reali (ATS/Clara/Smat/Vivaservizi, con
-     credenziali negli script `extras/`) risulta presente**. Ipotesi in
-     discussione con l'utente: il database sulla connessione `user`
-     (dove vive `oauth_clients`, separata dal DB applicativo principale)
+     "associateExistingClient" scrive solo su `user_id` — stesso difetto in
+     `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`.
+     Non è cosmetico: `Modules\Quaeris\Http\Controllers\Api\SurveyController::
+     createContacts()` (l'endpoint reale usato dagli script clienti, es.
+     `extras/ATS/create_survey_contacts_sample_ATS.php`, marcato
+     "funzionalità REALE" in `routes/api.php`) legge esclusivamente
+     `$client->owner` (quindi `owner_id`/`owner_type`) per risolvere
+     l'utente proprietario — e rifiuta con 401 "Client non ha un owner
+     associato" se sono vuoti. Un client associato solo tramite gli
+     strumenti sopra resta bloccato su quell'endpoint finché qualcuno non
+     lancia a mano `php artisan user:backfill-oauth-client-owner`
+     (`Modules/User/app/Console/Commands/BackfillOauthClientOwnerCommand.php`
+     — esiste già, ma è un passo manuale separato, facile da dimenticare;
+     il suo stesso commento presuppone un `OauthClient::booted()` che
+     sincronizzi in automatico, mai scritto nel modello).
+     Verificato in produzione (query diretta su `oauth_clients` dall'utente,
+     2026-09-15): i 4 client reali (Admin, ATS, Vivaservizi, smat) hanno
+     oggi `owner_id = user_id` corretto — segno che quel comando di backfill
+     è già stato lanciato a mano in passato, non che il problema non esista.
+  2. **[SMENTITO 2026-09-15]** Ipotesi "il database `user` di produzione
      potrebbe non essere stato ripristinato da un backup reale durante il
+<<<<<<< .merge_file_Pn6dvL
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
      trasloco server, a differenza del DB principale.
 =======
+=======
+>>>>>>> .merge_file_PGFDY2
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
      esistono tutti in `oauth_clients`, con date di creazione reali
@@ -358,10 +374,13 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
+<<<<<<< .merge_file_Pn6dvL
 >>>>>>> .merge_file_z5qNOS
 =======
      trasloco server, a differenza del DB principale.
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_PGFDY2
 
 ### File List
 
@@ -379,6 +398,7 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 |---|---|---|
 | Issue (modulo) | aperta | https://github.com/laraxot/module_user_fila5/issues/85 |
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+<<<<<<< .merge_file_Pn6dvL
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 =======
@@ -387,3 +407,7 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 >>>>>>> .merge_file_z5qNOS
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+| Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
+| Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
+>>>>>>> .merge_file_PGFDY2

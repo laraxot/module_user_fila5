@@ -32,6 +32,7 @@ class LogoutWidget extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
+<<<<<<< .merge_file_ovedxQ
     protected string $view = 'user::filament.widgets.auth.logout';
 =======
 class LogoutWidget extends XotBaseWidget
@@ -43,6 +44,10 @@ class LogoutWidget extends XotBaseWidget
      */
     protected string $view = 'user::widgets.auth.logout-widget';
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    /** @var view-string */
+    protected string $view;
+>>>>>>> .merge_file_KZrC9N
 
     /**
      * Mount the widget and initialize the form.
@@ -60,7 +65,11 @@ class LogoutWidget extends XotBaseWidget
 <<<<<<< HEAD
     public function getFormSchema(): array
     {
+        /** @var view-string $logoutMessageView */
+        $logoutMessageView = 'user::filament.widgets.auth.logout-message';
+
         return [
+<<<<<<< .merge_file_ovedxQ
             'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
 =======
     #[\Override]
@@ -86,6 +95,9 @@ class LogoutWidget extends XotBaseWidget
             $this->getLogoutAction(),
             $this->getCancelAction(),
 >>>>>>> 350420cb (Check & fix styling)
+=======
+            'logout_message' => View::make($logoutMessageView)->columnSpanFull(),
+>>>>>>> .merge_file_KZrC9N
         ];
     }
 

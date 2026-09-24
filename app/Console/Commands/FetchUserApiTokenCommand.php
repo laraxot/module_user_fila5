@@ -48,7 +48,7 @@ class FetchUserApiTokenCommand extends Command
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($userEmail);
 
-        if (null === $user) {
+        if ($user === null) {
             $this->error('User not found!');
 
             return self::USER_NOT_FOUND;

@@ -36,7 +36,7 @@ use Webmozart\Assert\Assert;
  * @property string $resource
  * @property string $model
  * @property string $action
- * @property Model  $record
+ * @property Model $record
  */
 class EditUserWidget extends XotBaseSchemaWidget
 {
@@ -275,8 +275,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 
     /**
-     * @param array<int|string, mixed> $schema
-     *
+     * @param  array<int|string, mixed>  $schema
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(array $schema): array

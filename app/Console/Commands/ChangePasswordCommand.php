@@ -45,7 +45,7 @@ class ChangePasswordCommand extends Command
 <<<<<<< HEAD
         $user = XotData::make()->findUserByEmail($email);
 
-        if (null === $user) {
+        if ($user === null) {
             $this->error("Utente non trovato per email: {$email}");
 =======
         // Ensure we fetched a persisted user and not a transient instance to avoid accidental insert

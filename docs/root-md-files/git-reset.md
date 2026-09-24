@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_DBqFa5
 <<<<<<< HEAD
 ---
 title: "Git Reset"
@@ -14,6 +15,8 @@ related:
 
 =======
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ok3Ja0
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

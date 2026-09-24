@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResou
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Schemas\OauthDeviceCodeInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 =======
 // User — domain PHP (claude-audit documentation ratio).
@@ -28,6 +27,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewOauthDeviceCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthDeviceCodeResource::class;
+<<<<<<< .merge_file_AK3l4W
 
     /**
 <<<<<<< HEAD
@@ -120,4 +120,6 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_qeDfl7
 }

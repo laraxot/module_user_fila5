@@ -106,11 +106,15 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
+<<<<<<< .merge_file_ww0kYi
 <<<<<<< HEAD
      * @param list<string> $scopes
 =======
      * @param array<string> $scopes
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  list<string>  $scopes
+>>>>>>> .merge_file_V3sj1f
      */
     public function withScopes(array $scopes): static
     {

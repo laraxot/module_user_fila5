@@ -11,6 +11,7 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 /**
  * Marker: il modello usa {@see HasAuthenticationLogTrait}.
  */
+<<<<<<< .merge_file_GuuWiq
 interface HasAuthentications extends Authenticatable
 {
 =======
@@ -32,3 +33,6 @@ interface HasAuthentications extends Authenticatable
     public function authentications(): MorphMany;
 >>>>>>> 350420cb (Check & fix styling)
 }
+=======
+interface HasAuthentications extends Authenticatable {}
+>>>>>>> .merge_file_fjBjHr

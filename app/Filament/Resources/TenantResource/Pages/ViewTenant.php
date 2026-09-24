@@ -26,6 +26,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTenant extends XotBaseViewRecord
 {
     protected static string $resource = TenantResource::class;
+<<<<<<< .merge_file_LTPqy6
 
     /**
 <<<<<<< HEAD
@@ -52,4 +53,6 @@ class ViewTenant extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_ZxK8Sp
 }

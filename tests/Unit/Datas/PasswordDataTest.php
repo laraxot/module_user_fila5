@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_DBvlb1
 =======
 
 use Modules\User\Datas\PasswordData;
@@ -17,6 +18,12 @@ use function Safe\file_get_contents;
 use Spatie\LaravelData\Data;
 
 <<<<<<< HEAD
+=======
+use Spatie\LaravelData\Data;
+
+use function Safe\file_get_contents;
+
+>>>>>>> .merge_file_sZyTJt
 uses(TestCase::class);
 =======
 uses(Modules\User\Tests\TestCase::class);
@@ -67,7 +74,7 @@ test('password data can be created with custom parameters', function (): void {
 });
 
 test('password data has default values', function (): void {
-    $defaultPasswordData = new PasswordData();
+    $defaultPasswordData = new PasswordData;
 
     Assert::assertSame(5, $defaultPasswordData->otp_expiration_minutes);
     Assert::assertSame(6, $defaultPasswordData->otp_length);

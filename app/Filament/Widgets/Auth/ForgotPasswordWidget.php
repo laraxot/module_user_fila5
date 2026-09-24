@@ -27,7 +27,8 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.forgot-password-widget';
+    /** @var view-string */
+    protected string $view;
 
 <<<<<<< HEAD
     /**
@@ -51,7 +52,7 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
 
         $status = Password::sendResetLink(['email' => $data['email']]);
 
-        if (Password::RESET_LINK_SENT === $status) {
+        if ($status === Password::RESET_LINK_SENT) {
             session()->flash('status', __($status));
         } else {
 <<<<<<< HEAD

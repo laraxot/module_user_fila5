@@ -61,10 +61,10 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
-        if (null === $startDate) {
+        if ($startDate === null) {
             $startDate = now()->subDays(30);
         }
-        if (null === $endDate) {
+        if ($endDate === null) {
             $endDate = now();
         }
 
@@ -128,7 +128,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 <<<<<<< HEAD
 
     /**
-     * @param array<scalar, scalar> $filters
+     * @param  array<scalar, scalar>  $filters
      */
     private static function parseFilterDateFromFilters(array $filters, string $key): ?Carbon
     {
@@ -146,7 +146,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
     private static function parseFilterDate(string|int|null $value): ?Carbon
     {
-        if (null === $value) {
+        if ($value === null) {
             return null;
         }
 

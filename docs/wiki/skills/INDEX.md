@@ -34,6 +34,7 @@ Le Skills progettuali vivono qui, nel wiki del Module **User**, e vengono carica
 
 - La sorgente di verita' per le Skills e' sempre il wiki locale
 - Non embeddare Skills nei prompt di avvio
+<<<<<<< .merge_file_NJ2JYr
 <<<<<<< HEAD
 <<<<<<< .merge_file_Ak9ITa
 - Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/index.md)
@@ -43,6 +44,9 @@ Le Skills progettuali vivono qui, nel wiki del Module **User**, e vengono carica
 =======
 - Per Skills globali, consulta il [wiki root](../../../../../../docs/wiki/skills/INDEX.md)
 >>>>>>> 350420cb (Check & fix styling)
+=======
+- Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/INDEX.md)
+>>>>>>> .merge_file_jukj73
 
 ## Aggiungere una Nuova SKILLS
 

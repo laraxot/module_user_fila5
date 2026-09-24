@@ -22,6 +22,7 @@ beforeEach(function (): void {
     TestCase::skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     TestCase::$user = TestCase::createTestUser();
+<<<<<<< .merge_file_HRSeJ2
     TestCase::$google2fa = new Google2FA();
 =======
     $this->skipUnlessUserColumn('users', 'two_factor_secret');
@@ -31,6 +32,9 @@ beforeEach(function (): void {
     $this->user = $this->createTestUser();
     $this->google2fa = new Google2FA();
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    TestCase::$google2fa = new Google2FA;
+>>>>>>> .merge_file_DmPMOj
 });
 
 describe('Two Factor Service', function (): void {

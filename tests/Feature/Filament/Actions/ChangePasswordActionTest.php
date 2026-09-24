@@ -17,6 +17,7 @@ use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_moTQJr
 beforeEach(function (): void {
 <<<<<<< HEAD
 =======
@@ -103,3 +104,6 @@ describe('Change Password Action', function (): void {
     });
 >>>>>>> 350420cb (Check & fix styling)
 });
+=======
+beforeEach(function (): void {});
+>>>>>>> .merge_file_20DpMn

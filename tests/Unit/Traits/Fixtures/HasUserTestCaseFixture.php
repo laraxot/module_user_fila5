@@ -18,6 +18,6 @@ final class HasUserTestCaseFixture
 >>>>>>> 350420cb (Check & fix styling)
     public function __construct()
     {
-        $this->user = new User();
+        $this->user = new User;
     }
 }

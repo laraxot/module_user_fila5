@@ -63,6 +63,7 @@ function makeOrphanOauthClientForAssociationTest(): OauthClient
 
 function getAssociateExistingClientActionFunction(User $owner): \Closure
 {
+<<<<<<< .merge_file_q1HAeE
 <<<<<<< HEAD
 <<<<<<< .merge_file_S6D7Wn
     $manager = new ClientsRelationManager;
@@ -72,6 +73,9 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
 =======
     $manager = new ClientsRelationManager();
 >>>>>>> 350420cb (Check & fix styling)
+=======
+    $manager = new ClientsRelationManager;
+>>>>>>> .merge_file_pBEq4a
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
@@ -80,6 +84,7 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
     // chiavi stringa di getTableHeaderActions()) — si cerca per nome.
     $action = null;
     foreach ($manager->getTable()->getHeaderActions() as $candidate) {
+<<<<<<< .merge_file_q1HAeE
 <<<<<<< HEAD
 <<<<<<< .merge_file_S6D7Wn
         if ($candidate instanceof Action && $candidate->getName() === 'associateExistingClient') {
@@ -89,6 +94,9 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
 =======
         if ($candidate instanceof Action && 'associateExistingClient' === $candidate->getName()) {
 >>>>>>> 350420cb (Check & fix styling)
+=======
+        if ($candidate instanceof Action && $candidate->getName() === 'associateExistingClient') {
+>>>>>>> .merge_file_pBEq4a
             $action = $candidate;
 
             break;

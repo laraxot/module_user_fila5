@@ -19,6 +19,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewClient extends XotBaseViewRecord
 {
     protected static string $resource = ClientResource::class;
+<<<<<<< .merge_file_6gFCh9
 
     /**
 <<<<<<< HEAD
@@ -47,4 +48,6 @@ class ViewClient extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_ydlVgB
 }

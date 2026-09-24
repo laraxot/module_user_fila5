@@ -28,11 +28,15 @@ final class CreateUserAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_3tbSUL
 <<<<<<< HEAD
      * @param array<string, mixed>|null $data
 =======
      * @param array<string, bool|int|string|null>|null $data
 >>>>>>> 350420cb (Check & fix styling)
+=======
+     * @param  array<string, mixed>|null  $data
+>>>>>>> .merge_file_t6dtAl
      */
     public function __construct(
         protected string $name,

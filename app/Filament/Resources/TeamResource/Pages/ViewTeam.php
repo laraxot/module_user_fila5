@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\TeamResource;
+<<<<<<< .merge_file_H0Bmt4
 use Modules\User\Filament\Resources\TeamResource\Schemas\TeamInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -13,12 +14,15 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\TeamResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_2JkNwW
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewTeam extends XotBaseViewRecord
 {
     // //
     protected static string $resource = TeamResource::class;
+<<<<<<< .merge_file_H0Bmt4
 
     /**
 <<<<<<< HEAD
@@ -46,4 +50,6 @@ class ViewTeam extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_2JkNwW
 }

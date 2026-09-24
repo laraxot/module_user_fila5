@@ -29,8 +29,7 @@ class RetrieveOauthUserAction
 
     public function __construct(
         private readonly Dispatcher $eventDispatcher,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action.

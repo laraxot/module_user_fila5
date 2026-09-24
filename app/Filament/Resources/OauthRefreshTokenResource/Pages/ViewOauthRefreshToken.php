@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
+<<<<<<< .merge_file_wEGfcp
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Schemas\OauthRefreshTokenInfolist;
 =======
 use Filament\Infolists\Components\IconEntry;
@@ -15,11 +16,14 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_pBOMzl
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthRefreshToken extends XotBaseViewRecord
 {
     protected static string $resource = OauthRefreshTokenResource::class;
+<<<<<<< .merge_file_wEGfcp
 
     /**
 <<<<<<< HEAD
@@ -65,4 +69,6 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_pBOMzl
 }

@@ -92,7 +92,7 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
-     * @param array<string, string|int|bool|null> $data
+     * @param  array<string, string|int|bool|null>  $data
      */
     protected function handleRegistration(array $data): Model
     {
@@ -110,7 +110,7 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-        if (null !== $this->resourceClass) {
+        if ($this->resourceClass !== null) {
             return $this->resourceClass;
         }
 

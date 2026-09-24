@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\BaseProfileResource;
+<<<<<<< .merge_file_feEtFf
 use Modules\User\Filament\Resources\BaseProfileResource\Schemas\BaseProfileInfolist;
 =======
 use Filament\Infolists\Components\ImageEntry;
@@ -17,11 +18,14 @@ use Filament\Schemas\Components\Section;
 use Filament\Support\Components\Component;
 use Modules\User\Filament\Resources\BaseProfileResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_o9hgAi
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewProfile extends XotBaseViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
+<<<<<<< .merge_file_feEtFf
 
     /**
 <<<<<<< HEAD
@@ -65,4 +69,6 @@ class ViewProfile extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_o9hgAi
 }

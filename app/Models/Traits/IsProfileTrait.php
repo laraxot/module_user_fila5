@@ -78,18 +78,17 @@ trait IsProfileTrait
      * Ottiene il nome completo dell'utente.
      * Utilizza prima i dati del profilo, altrimenti ricade sul nome dell'utente.
      *
-     * @param string|null $value Il valore attuale dell'attributo
-     *
+     * @param  string|null  $value  Il valore attuale dell'attributo
      * @return string|null Il nome completo dell'utente
      */
     public function getFullNameAttribute(?string $value): ?string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
         $user = $this->user;
-        if (null === $user) {
+        if ($user === null) {
             return null;
         }
 <<<<<<< HEAD
@@ -99,31 +98,30 @@ trait IsProfileTrait
 >>>>>>> 350420cb (Check & fix styling)
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
-        if ('' !== $res) {
+        if ($res !== '') {
             return $res;
         }
 
         $userName = $user->getAttribute('name');
 
-        return \is_string($userName) && '' !== $userName ? $userName : null;
+        return \is_string($userName) && $userName !== '' ? $userName : null;
     }
 
     /**
      * Ottiene il nome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
-     * @param string|null $value Il valore attuale dell'attributo
-     *
+     * @param  string|null  $value  Il valore attuale dell'attributo
      * @return string|null Il nome dell'utente
      */
     public function getFirstNameAttribute(?string $value): ?string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
         $user = $this->user;
-        if (null === $user) {
+        if ($user === null) {
             return null;
         }
 <<<<<<< HEAD
@@ -133,7 +131,7 @@ trait IsProfileTrait
 >>>>>>> 350420cb (Check & fix styling)
 
         $firstName = $user->getAttribute('first_name');
-        if (! \is_string($firstName) || '' === $firstName) {
+        if (! \is_string($firstName) || $firstName === '') {
             return null;
         }
 
@@ -146,18 +144,17 @@ trait IsProfileTrait
      * Ottiene il cognome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
-     * @param string|null $value Il valore attuale dell'attributo
-     *
+     * @param  string|null  $value  Il valore attuale dell'attributo
      * @return string|null Il cognome dell'utente
      */
     public function getLastNameAttribute(?string $value): ?string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
         $user = $this->user;
-        if (null === $user) {
+        if ($user === null) {
             return null;
         }
 <<<<<<< HEAD
@@ -167,7 +164,7 @@ trait IsProfileTrait
 >>>>>>> 350420cb (Check & fix styling)
 
         $lastName = $user->getAttribute('last_name');
-        if (! \is_string($lastName) || '' === $lastName) {
+        if (! \is_string($lastName) || $lastName === '') {
             return null;
         }
 
@@ -183,7 +180,7 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
-        if (null === $this->user) {
+        if ($this->user === null) {
             return false;
         }
 
@@ -197,7 +194,7 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
-        if (null === $this->user) {
+        if ($this->user === null) {
             return false;
         }
 
@@ -214,7 +211,7 @@ trait IsProfileTrait
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;
-        if (null === $user) {
+        if ($user === null) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 <<<<<<< HEAD
@@ -316,7 +313,7 @@ trait IsProfileTrait
     {
         $tokens = $this->mobileDeviceUsers()
             ->pluck('token')
-            ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
+            ->filter(static fn (mixed $value): bool => is_string($value) && $value !== '')
             ->map(static fn (mixed $value): string => (string) $value);
 
         /* @var Collection<int|string, non-empty-string> $tokens */
@@ -339,7 +336,7 @@ trait IsProfileTrait
         return Attribute::make(
             get: function (): ?string {
                 $user = $this->user;
-                if (null === $user) {
+                if ($user === null) {
                     return null;
                 }
 <<<<<<< HEAD
@@ -350,7 +347,7 @@ trait IsProfileTrait
 
                 $name = $user->getAttribute('name');
 
-                return \is_string($name) && '' !== $name ? $name : null;
+                return \is_string($name) && $name !== '' ? $name : null;
             }
         );
     }

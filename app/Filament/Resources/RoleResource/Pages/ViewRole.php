@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\RoleResource;
+<<<<<<< .merge_file_d2OcGW
 use Modules\User\Filament\Resources\RoleResource\Schemas\RoleInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -13,11 +14,14 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\RoleResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_drGxoQ
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewRole extends XotBaseViewRecord
 {
     protected static string $resource = RoleResource::class;
+<<<<<<< .merge_file_d2OcGW
 
     /**
 <<<<<<< HEAD
@@ -45,4 +49,6 @@ class ViewRole extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_drGxoQ
 }

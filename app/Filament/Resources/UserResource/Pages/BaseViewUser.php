@@ -6,12 +6,15 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource;
+<<<<<<< .merge_file_FchlPN
 use Modules\User\Filament\Resources\UserResource\Schemas\UserInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\UserResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZbFkxk
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -24,6 +27,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 abstract class BaseViewUser extends XotBaseViewRecord
 {
     protected static string $resource = UserResource::class;
+<<<<<<< .merge_file_FchlPN
 
     /**
 <<<<<<< HEAD
@@ -53,4 +57,6 @@ abstract class BaseViewUser extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_ZbFkxk
 }

@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\
 
 <<<<<<< HEAD
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Schemas\OauthClientInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 =======
 use Filament\Infolists\Components\IconEntry;
@@ -23,6 +22,7 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 class ViewOauthClient extends XotBaseViewRecord
 {
     protected static string $resource = OauthClientResource::class;
+<<<<<<< .merge_file_YKrXpG
 
     /**
 <<<<<<< HEAD
@@ -54,4 +54,6 @@ class ViewOauthClient extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_6uCFDs
 }

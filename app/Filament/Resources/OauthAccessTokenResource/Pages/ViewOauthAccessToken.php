@@ -6,16 +6,20 @@ namespace Modules\User\Filament\Resources\OauthAccessTokenResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
+<<<<<<< .merge_file_uwvNlQ
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Schemas\OauthAccessTokenInfolist;
 =======
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_BACV29
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthAccessToken extends XotBaseViewRecord
 {
     protected static string $resource = OauthAccessTokenResource::class;
+<<<<<<< .merge_file_uwvNlQ
 
     /**
 <<<<<<< HEAD
@@ -33,4 +37,6 @@ class ViewOauthAccessToken extends XotBaseViewRecord
         return [];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_BACV29
 }

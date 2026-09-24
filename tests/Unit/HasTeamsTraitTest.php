@@ -36,7 +36,7 @@ uses(Modules\User\Tests\TestCase::class);
 >>>>>>> 350420cb (Check & fix styling)
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function hasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -66,7 +66,7 @@ function hasTeamsBootstrapFixture(): array
 }
 
 /**
- * @param array<string, mixed> $pivot
+ * @param  array<string, mixed>  $pivot
  */
 function hasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -262,7 +262,7 @@ test('it provides utility methods', function (): void {
 
 test('it handles edge cases correctly', function (): void {
     ['user' => $user] = hasTeamsBootstrapFixture();
-    $newUser = new User();
+    $newUser = new User;
 
     Assert::assertFalse($newUser->belongsToTeams());
 

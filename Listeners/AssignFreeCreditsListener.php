@@ -6,6 +6,7 @@ namespace Modules\User\Listeners;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Modules\Predict\Models\Profile;
 
 /**
  * Listener per assegnare crediti iniziali gratuiti ai nuovi utenti.
@@ -17,7 +18,7 @@ class AssignFreeCreditsListener
     /**
      * Crediti iniziali gratuiti per nuovi utenti.
      */
-    private const FREE_STARTING_CREDITS = 500;
+    private const int FREE_STARTING_CREDITS = 500;
 
     /**
      * Handle the event.
@@ -34,17 +35,17 @@ class AssignFreeCreditsListener
         }
 
         $userId = $user->getAuthIdentifier();
-        if (null === $userId) {
+        if ($userId === null) {
             return;
         }
 
-        /** @var \Modules\Predict\Models\Profile $profile */
-        $profile = \Modules\Predict\Models\Profile::firstOrCreate(
+        /** @var Profile $profile */
+        $profile = Profile::firstOrCreate(
             ['user_id' => $userId],
             ['credits' => self::FREE_STARTING_CREDITS]
         );
 
-        if (0 === $profile->credits) {
+        if ($profile->credits === 0) {
             $profile->update(['credits' => self::FREE_STARTING_CREDITS]);
         }
     }

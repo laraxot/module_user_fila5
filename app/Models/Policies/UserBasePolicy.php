@@ -15,6 +15,7 @@ namespace Modules\User\Models\Policies;
 <<<<<<< HEAD
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
+<<<<<<< .merge_file_WLp1Uk
 abstract class UserBasePolicy extends XotBasePolicy
 {
 =======
@@ -35,3 +36,6 @@ abstract class UserBasePolicy
     }
 >>>>>>> 350420cb (Check & fix styling)
 }
+=======
+abstract class UserBasePolicy extends XotBasePolicy {}
+>>>>>>> .merge_file_cNY7Nx

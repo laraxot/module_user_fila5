@@ -63,8 +63,12 @@ class UserForm extends XotBaseResourceForm
                     TextInput::make('name')->required(),
                     TextInput::make('password')
                         ->password()
+<<<<<<< .merge_file_Bz2sgP
                         ->dehydrateStateUsing(function ($state): ?string {
 <<<<<<< HEAD
+=======
+                        ->dehydrateStateUsing(function (mixed $state): ?string {
+>>>>>>> .merge_file_Ftm8xD
                             if (! is_string($state) || empty($state)) {
 =======
                             if (! is_string($state) || '' === $state) {
@@ -74,16 +78,20 @@ class UserForm extends XotBaseResourceForm
 
                             return Hash::make($state);
                         })
-                        ->required(fn ($livewire) => $livewire instanceof CreateUser),
+                        ->required(fn (mixed $livewire) => $livewire instanceof CreateUser),
                 ])
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
+<<<<<<< .merge_file_Bz2sgP
 <<<<<<< HEAD
                     TextEntry::make('created_at')->state(static function ($record) {
 =======
                     Placeholder::make('created_at')->content(static function ($record) {
 >>>>>>> 350420cb (Check & fix styling)
+=======
+                    TextEntry::make('created_at')->state(static function (mixed $record) {
+>>>>>>> .merge_file_Ftm8xD
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }
@@ -95,7 +103,7 @@ class UserForm extends XotBaseResourceForm
                         /** @var Carbon|null $createdAt */
                         $createdAt = $record->getAttribute('created_at');
 
-                        if (null === $createdAt) {
+                        if ($createdAt === null) {
                             return new HtmlString('&mdash;');
                         }
                         if ($createdAt instanceof CarbonInterface) {

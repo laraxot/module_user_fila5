@@ -249,16 +249,16 @@ describe('Authentication Business Logic', function (): void {
 >>>>>>> 350420cb (Check & fix styling)
 
             $profileScore = 0;
-            if ('' !== $user['name']) {
+            if ($user['name'] !== '') {
                 $profileScore += 25;
             }
-            if ('' !== $user['email']) {
+            if ($user['email'] !== '') {
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
-            if ('' !== $user['profile_photo_path']) {
+            if ($user['profile_photo_path'] !== '') {
                 $profileScore += 25;
             }
 
@@ -443,8 +443,12 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
+<<<<<<< .merge_file_3S6juC
             if ('mobile' === $device['device_type']) {
 <<<<<<< HEAD
+=======
+            if ($device['device_type'] === 'mobile') {
+>>>>>>> .merge_file_WbbuH8
                 $pushToken = $device['push_token'];
 =======
                 $pushToken = (string) $device['push_token'];

@@ -18,7 +18,8 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.notifications-center-widget';
+    /** @var view-string */
+    protected string $view;
 
     /** @var Collection<int, DatabaseNotification|Notification> */
     public Collection $notifications;
@@ -41,7 +42,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
-        if (null === $user) {
+        if ($user === null) {
             return;
         }
 
@@ -54,7 +55,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-        if (null === $user) {
+        if ($user === null) {
             return;
         }
 
@@ -66,7 +67,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-        if (null === $user || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
+        if ($user === null || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
             $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 

@@ -18,13 +18,13 @@ uses(Modules\User\Tests\TestCase::class);
 
 describe('LogoutWidget', function (): void {
     test('logout widget can be instantiated', function (): void {
-        $widget = new LogoutWidget();
+        $widget = new LogoutWidget;
 
         Assert::assertInstanceOf(LogoutWidget::class, $widget);
     });
 
     test('logout widget extends xot base widget', function (): void {
-        $widget = new LogoutWidget();
+        $widget = new LogoutWidget;
 
 <<<<<<< HEAD
         Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
@@ -34,13 +34,13 @@ describe('LogoutWidget', function (): void {
     });
 
     test('logout widget has is logging out flag', function (): void {
-        $widget = new LogoutWidget();
+        $widget = new LogoutWidget;
 
         Assert::assertFalse($widget->isLoggingOut);
     });
 
     test('logout widget has protected get view data method', function (): void {
-        $widget = new LogoutWidget();
+        $widget = new LogoutWidget;
         $reflection = new ReflectionMethod($widget, 'getViewData');
 
         Assert::assertTrue($reflection->isProtected());

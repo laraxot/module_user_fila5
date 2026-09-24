@@ -6,17 +6,21 @@ namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\PermissionResource;
+<<<<<<< .merge_file_S2gZ0k
 use Modules\User\Filament\Resources\PermissionResource\Schemas\PermissionInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 use Modules\User\Filament\Resources\PermissionResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_LGEEJD
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPermission extends XotBaseViewRecord
 {
     protected static string $resource = PermissionResource::class;
+<<<<<<< .merge_file_S2gZ0k
 
     /**
 <<<<<<< HEAD
@@ -42,4 +46,6 @@ class ViewPermission extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_LGEEJD
 }

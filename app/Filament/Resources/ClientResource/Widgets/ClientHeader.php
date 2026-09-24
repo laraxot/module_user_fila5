@@ -12,7 +12,8 @@ class ClientHeader extends XotBaseWidget
 <<<<<<< HEAD
     public Client $client;
 
-    protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
+    /** @var view-string */
+    protected string $view;
 
 =======
     protected string $view = 'user::filament.resources.client-resource.widgets.client-header';

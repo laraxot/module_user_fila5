@@ -21,6 +21,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_4t9sT7
 beforeEach(function (): void {
 <<<<<<< HEAD
 =======
@@ -128,3 +129,6 @@ describe('Create User', function (): void {
     });
 >>>>>>> 350420cb (Check & fix styling)
 });
+=======
+beforeEach(function (): void {});
+>>>>>>> .merge_file_YlRFM6

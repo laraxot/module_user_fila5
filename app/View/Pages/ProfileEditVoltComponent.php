@@ -112,8 +112,12 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
 
             // Validate email format
+<<<<<<< .merge_file_vvdSej
             Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
 <<<<<<< HEAD
+=======
+            Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
+>>>>>>> .merge_file_GvIOrt
         } catch (InvalidArgumentException $e) {
 =======
         } catch (\Webmozart\Assert\InvalidArgumentException $e) {
@@ -252,7 +256,7 @@ final class ProfileEditVoltComponent extends Component
             session()->flash('status', $message);
 
             // Send email verification if email changed
-            if ($emailChanged && null === $user->email_verified_at) {
+            if ($emailChanged && $user->email_verified_at === null) {
                 $user->sendEmailVerificationNotification();
             }
 <<<<<<< HEAD
@@ -332,7 +336,7 @@ final class ProfileEditVoltComponent extends Component
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "current password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
-            if (null === $currentPasswordHash) {
+            if ($currentPasswordHash === null) {
                 throw new InvalidArgumentException('Current password is incorrect');
             }
 
@@ -450,7 +454,7 @@ final class ProfileEditVoltComponent extends Component
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
-            if (null === $currentPasswordHash) {
+            if ($currentPasswordHash === null) {
                 throw new InvalidArgumentException('Password is incorrect for account deletion');
             }
             Assert::true(

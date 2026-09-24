@@ -213,7 +213,7 @@ describe('User Password Management', function () {
         \assert($user instanceof User);
 >>>>>>> 350420cb (Check & fix styling)
         $passwordExpiresAt = $user->password_expires_at;
-        \assert(null !== $passwordExpiresAt);
+        \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->isPast())->toBe(true);
     });
@@ -226,6 +226,7 @@ describe('User Password Management', function () {
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
+<<<<<<< .merge_file_nHf5Yf
 =======
         $this->requireUser()->update([
             'password_expires_at' => $expirationDate,
@@ -234,6 +235,9 @@ describe('User Password Management', function () {
         $passwordExpiresAt = $this->requireFreshUser($this->requireUser())->password_expires_at;
 >>>>>>> 350420cb (Check & fix styling)
         \assert(null !== $passwordExpiresAt);
+=======
+        \assert($passwordExpiresAt !== null);
+>>>>>>> .merge_file_ROTfN9
 
         expect($passwordExpiresAt->toDateString())
             ->toBe($expirationDate->toDateString());
@@ -296,7 +300,7 @@ describe('User Email Verification', function () {
         $user->markEmailAsVerified();
 
         $fresh = $user->fresh();
-        \assert(null !== $fresh);
+        \assert($fresh !== null);
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });

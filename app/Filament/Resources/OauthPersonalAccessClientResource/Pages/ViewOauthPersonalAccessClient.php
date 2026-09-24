@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Page
 
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
+<<<<<<< .merge_file_Zk7Hwx
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Schemas\OauthPersonalAccessClientInfolist;
 =======
 use Filament\Infolists\Components\TextEntry;
@@ -13,6 +14,8 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
 >>>>>>> 350420cb (Check & fix styling)
+=======
+>>>>>>> .merge_file_5tZMgB
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -21,6 +24,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 {
     protected static string $resource = OauthPersonalAccessClientResource::class;
+<<<<<<< .merge_file_Zk7Hwx
 
     /**
 <<<<<<< HEAD
@@ -45,4 +49,6 @@ class ViewOauthPersonalAccessClient extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_5tZMgB
 }

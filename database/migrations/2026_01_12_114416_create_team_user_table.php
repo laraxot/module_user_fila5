@@ -16,8 +16,13 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
+<<<<<<< .merge_file_ylaJm0
 return new class extends XotBaseMigration {
 <<<<<<< HEAD
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_nEM1HV
     protected ?string $model_class = TeamUser::class;
 =======
     /**

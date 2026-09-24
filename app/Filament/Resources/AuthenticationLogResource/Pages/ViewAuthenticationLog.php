@@ -7,7 +7,6 @@ namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 <<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
-use Modules\User\Filament\Resources\AuthenticationLogResource\Schemas\AuthenticationLogInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 =======
@@ -41,6 +40,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
     /*
      * @return array<string, Component>
      */
+<<<<<<< .merge_file_tcgvhV
 
 =======
 >>>>>>> 350420cb (Check & fix styling)
@@ -132,4 +132,6 @@ class ViewAuthenticationLog extends XotBaseViewRecord
         ];
 >>>>>>> 350420cb (Check & fix styling)
     }
+=======
+>>>>>>> .merge_file_6ShTcI
 }

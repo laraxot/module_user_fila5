@@ -31,10 +31,10 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 /**
  * Widget for handling expired password reset.
  *
- * @property Schema                    $form
- * @property string|null               $current_password
- * @property string|null               $password
- * @property string|null               $passwordConfirmation
+ * @property Schema $form
+ * @property string|null $current_password
+ * @property string|null $password
+ * @property string|null $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
 <<<<<<< HEAD
@@ -62,7 +62,8 @@ class PasswordExpiredWidget extends XotBaseWidget
     /**
      * The view for this widget.
      */
-    protected string $view = 'user::filament.widgets.password-expired';
+    /** @var view-string */
+    protected string $view;
 
     protected static bool $shouldRegisterNavigation = false;
 
@@ -145,7 +146,7 @@ class PasswordExpiredWidget extends XotBaseWidget
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
-        return new PasswordResetResponse();
+        return new PasswordResetResponse;
     }
 
     /**
