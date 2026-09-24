@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-structure.md
->>>>>>> 87273113 (.)

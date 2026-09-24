@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: [DATE]  

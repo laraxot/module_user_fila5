@@ -18,7 +18,6 @@ related:
   - "./profile.md"
 ---
 
->>>>>>> 87273113 (.)
 # filament
 
 <!-- Contenuto migrato da _docs/filament.txt -->

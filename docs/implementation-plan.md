@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -193,7 +192,6 @@ class NavigationTest extends TestCase
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
->>>>>>> 87273113 (.)
 
 ## Timeline
 
@@ -226,4 +224,3 @@ class NavigationTest extends TestCase
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md) 
->>>>>>> 87273113 (.)

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # GDPR Register Widget Enhancement 2025
 
 ## 🎯 Overview

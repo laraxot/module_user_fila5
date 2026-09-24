@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers

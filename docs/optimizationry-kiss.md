@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Analisi Ottimizzazioni Modulo User - DRY + KISS
 
 ## 🎯 Obiettivo Analisi

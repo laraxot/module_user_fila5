@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-1.md
->>>>>>> 87273113 (.)

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Cyclomatic Complexity Report - Module: User
 
 **Analyzer:** Super Mucca 🐮

@@ -32,7 +32,6 @@ related:
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
->>>>>>> 87273113 (.)
 
 ## Struttura delle Directory
 
@@ -85,7 +84,6 @@ laravel/Themes/One/resources/views/pages/auth/
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             session()->regenerate();
 
->>>>>>> 87273113 (.)
             // Reindirizza alla home page localizzata
             return redirect()->to('/' . app()->getLocale());
         }
@@ -150,7 +148,6 @@ laravel/Themes/One/resources/views/pages/auth/
 
                 <div>
                     <x-filament::button
->>>>>>> 87273113 (.)
                         type="submit"
                         size="lg"
                         color="primary"
@@ -286,7 +283,6 @@ laravel/Themes/One/resources/views/pages/auth/
 
                 <div>
                     <x-filament::button
->>>>>>> 87273113 (.)
                         type="submit"
                         size="lg"
                         color="primary"
@@ -394,7 +390,6 @@ Quindi nel form:
             session()->regenerateToken();
         }
 
->>>>>>> 87273113 (.)
         // Reindirizza alla home page localizzata
         $this->redirect('/' . app()->getLocale());
     });
@@ -906,7 +901,6 @@ Utilizzare sempre i componenti Blade nativi di Filament:
 
 ```blade
 <x-filament::button
->>>>>>> 87273113 (.)
     type="submit"
     size="lg"
     color="primary"

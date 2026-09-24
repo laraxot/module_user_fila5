@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta-1.md
->>>>>>> 87273113 (.)

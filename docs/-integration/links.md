@@ -18,7 +18,6 @@ related:
   - "./profile.md"
 ---
 
->>>>>>> 87273113 (.)
 # links
 
 <!-- Contenuto migrato da _docs/links.txt -->

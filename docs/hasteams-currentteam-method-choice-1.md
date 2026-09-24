@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Choice of currentTeam() Method in HasTeams Trait
 
 ## Analysis and Decision

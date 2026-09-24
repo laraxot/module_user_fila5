@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -248,7 +247,6 @@ $this->tableCreate(function (Blueprint $table) {
 ### Laraxot Philosophy
 - [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../Xot/docs/models/MODEL_ARCHITECTURE.md)
->>>>>>> 87273113 (.)
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../xot/docs/models/model_architecture.md)
 
@@ -257,7 +255,3 @@ $this->tableCreate(function (Blueprint $table) {
 **Integration Status**: ✅ Fully compatible with Spatie package architecture
 **Maintenance**: Low - leverages package maintenance
 **Security**: High - benefits from package security updates
->>>>>>> 87273113 (.)
-=======
-**Security**: High - benefits from package security updates
->>>>>>> laraxot/dev

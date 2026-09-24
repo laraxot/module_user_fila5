@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Problema**: Cluster Passport vuoto e file duplicato

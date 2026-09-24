@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/syntax-errors-to-fix.md
->>>>>>> 87273113 (.)

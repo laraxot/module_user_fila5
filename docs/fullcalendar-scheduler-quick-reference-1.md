@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

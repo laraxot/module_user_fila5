@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  

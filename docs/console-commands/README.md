@@ -481,7 +481,6 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
->>>>>>> 87273113 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

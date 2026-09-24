@@ -18,7 +18,6 @@ related:
   - "./actions-structure-1.md"
 ---
 
->>>>>>> 87273113 (.)
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -85,4 +84,3 @@ fi
 - [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)
->>>>>>> 87273113 (.)

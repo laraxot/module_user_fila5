@@ -18,7 +18,6 @@ related:
   - "./teams-relation-manager.md"
 ---
 
->>>>>>> 87273113 (.)
 # Widget Responsivi per Form di Registrazione
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

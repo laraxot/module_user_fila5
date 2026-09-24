@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Level 10 Fixes Roadmap - Modulo User
 
 **Data Creazione**: 2025-01-27  
@@ -128,8 +127,3 @@ public static function getTableActions(): array
 - [Regole Filament Resources](../../../.cursor/rules/filament-relation-managers.mdc)
 - [Regole No Labels](../../../.cursor/rules/no-filament-labels.mdc)
 - [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan.md)
->>>>>>> 60a2c9a9 (.)
->>>>>>> 87273113 (.)
-=======
-- [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan.md)
->>>>>>> laraxot/dev

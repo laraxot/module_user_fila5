@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task: Schema.org Person (profilo utente e speaker)
 
 **Priority**: MEDIUM

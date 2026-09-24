@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
 
 ## 📋 Problema Analizzato
