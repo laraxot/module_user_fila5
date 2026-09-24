@@ -6,6 +6,6 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability (<500 LOC).
 // Canon: Modules/User/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/user_search_placeholder.php
-return array (
-  'search_placeholder' => 'Cerca per nome, email o ruolo...',
-);
+return [
+    'search_placeholder' => 'Cerca per nome, email o ruolo...',
+];
