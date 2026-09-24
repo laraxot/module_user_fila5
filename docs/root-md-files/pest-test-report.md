@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_kyR0Qi
 =======
 ---
@@ -14,6 +15,8 @@ related:
 ---
 
 >>>>>>> .merge_file_aysipj
+=======
+>>>>>>> df2ba808 (.)
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_65tFbg
 =======
 ---
@@ -21,6 +22,8 @@ related:
 ---
 
 >>>>>>> .merge_file_fQi36R
+=======
+>>>>>>> df2ba808 (.)
 # Root files hygiene
 
 ## 2026-07-08 16:48

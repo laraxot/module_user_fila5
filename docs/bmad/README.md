@@ -10,8 +10,11 @@ bmad_track: "core-identity"
 
 # User — BMAD Method Integration
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_rOLFEH
 =======
+=======
+>>>>>>> df2ba808 (.)
 <<<<<<< .merge_file_tBfhVW
 =======
 <<<<<<< .merge_file_7XZKq3
@@ -106,7 +109,10 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 
 >>>>>>> .merge_file_43na22
 >>>>>>> .merge_file_5hmd18
+<<<<<<< HEAD
 >>>>>>> .merge_file_Ew1px6
+=======
+>>>>>>> df2ba808 (.)
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
@@ -205,12 +211,15 @@ _bmad-output/
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
+<<<<<<< HEAD
 <<<<<<< .merge_file_rOLFEH
 
 ---
 
 *User · BMAD Method · data 2026-05-27*
 =======
+=======
+>>>>>>> df2ba808 (.)
 <<<<<<< .merge_file_tBfhVW
 
 ---
@@ -231,4 +240,7 @@ _bmad-output/
 *User · BMAD Method · data 2026-05-27*
 >>>>>>> .merge_file_43na22
 >>>>>>> .merge_file_5hmd18
+<<<<<<< HEAD
 >>>>>>> .merge_file_Ew1px6
+=======
+>>>>>>> df2ba808 (.)

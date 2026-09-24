@@ -499,3 +499,7 @@ app/Models/Models
 
 node_modules
 graphify-out/
+<<<<<<< HEAD
+=======
+*.backup_*
+>>>>>>> df2ba808 (.)

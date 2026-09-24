@@ -50,6 +50,7 @@ class ViewOauthClient extends XotBaseViewRecord
 
         return $actions;
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -59,4 +60,6 @@ class ViewOauthClient extends XotBaseViewRecord
     {
         return [];
     }
+=======
+>>>>>>> df2ba808 (.)
 }

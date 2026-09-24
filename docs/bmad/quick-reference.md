@@ -48,8 +48,11 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_BA8D66
 =======
+=======
+>>>>>>> df2ba808 (.)
 <<<<<<< .merge_file_5dPiY8
 =======
 <<<<<<< .merge_file_2JXUra
@@ -60,7 +63,10 @@ Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inve
 
 >>>>>>> .merge_file_yqnvnX
 >>>>>>> .merge_file_mIxVlH
+<<<<<<< HEAD
 >>>>>>> .merge_file_EjZXDh
+=======
+>>>>>>> df2ba808 (.)
 ## Quick Flow
 
 ```bash

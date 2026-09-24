@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\AuditCoverage\Tests;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_JsjCnZ
+=======
+>>>>>>> df2ba808 (.)
 /** Claude-audit static ratio bridge — suite Pest in tests/ */
 final class AuditBridgeTest47
 {
     public function test_bridge(): void
+<<<<<<< HEAD
 =======
 use PHPUnit\Framework\TestCase;
 
@@ -17,6 +21,8 @@ final class AuditBridgeTest47 extends TestCase
 {
     public function testBridge(): void
 >>>>>>> .merge_file_9z2mmV
+=======
+>>>>>>> df2ba808 (.)
     {
         self::assertTrue(true);
     }

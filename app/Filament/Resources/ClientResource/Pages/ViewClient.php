@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewClient extends XotBaseViewRecord
 {
     protected static string $resource = ClientResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -19,4 +20,6 @@ class ViewClient extends XotBaseViewRecord
     {
         return [];
     }
+=======
+>>>>>>> df2ba808 (.)
 }

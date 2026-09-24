@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialiteUserResource\Pages;
 
 use Modules\User\Filament\Resources\SocialiteUserResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\SocialiteUserResource\Schemas\SocialiteUserInfolist;
+=======
+>>>>>>> df2ba808 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialiteUser extends XotBaseViewRecord
 {
     protected static string $resource = SocialiteUserResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -20,4 +24,6 @@ class ViewSocialiteUser extends XotBaseViewRecord
     {
         return app(SocialiteUserInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> df2ba808 (.)
 }

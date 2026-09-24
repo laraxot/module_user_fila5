@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PasswordResetResource\Pages;
 
 use Modules\User\Filament\Resources\PasswordResetResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\PasswordResetResource\Schemas\PasswordResetInfolist;
+=======
+>>>>>>> df2ba808 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPasswordReset extends XotBaseViewRecord
 {
     protected static string $resource = PasswordResetResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -20,4 +24,6 @@ class ViewPasswordReset extends XotBaseViewRecord
     {
         return app(PasswordResetInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> df2ba808 (.)
 }

@@ -6,6 +6,7 @@ confidence: high
 created: {{date}}
 updated: {{date}}
 tags: [person, organization, module]
+<<<<<<< HEAD
 <<<<<<< .merge_file_Hj8WnX
 related: []
 =======
@@ -13,6 +14,9 @@ related:
   - "./concept.md"
   - "./source.md"
 >>>>>>> .merge_file_XoA99T
+=======
+related: []
+>>>>>>> df2ba808 (.)
 ---
 
 # {{title}}

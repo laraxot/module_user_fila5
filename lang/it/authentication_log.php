@@ -67,6 +67,16 @@ return [
         ],
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
+<<<<<<< HEAD
+=======
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+>>>>>>> df2ba808 (.)
         ],
     ],
     'label' => 'Authentication Log',

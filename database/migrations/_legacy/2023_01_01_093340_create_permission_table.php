@@ -1,10 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_eiRun1
 
 =======
 >>>>>>> .merge_file_FMlYxv
+=======
+<<<<<<< .merge_file_Y6t9uV
+
+=======
+<<<<<<< .merge_file_AhZgJt
+
+=======
+>>>>>>> .merge_file_XiapEj
+>>>>>>> .merge_file_ADrFR3
+>>>>>>> df2ba808 (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {

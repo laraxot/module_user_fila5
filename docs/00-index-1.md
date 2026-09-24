@@ -1,4 +1,26 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_W3cmeJ
+=======
+<<<<<<< .merge_file_iBw0Q2
+>>>>>>> .merge_file_5Mn1Zm
+title: "Indice Documentazione Modulo User (bridge)"
+type: bridge
+tags: [index, superseded]
+---
+
+# Bridge — indice superseduto
+
+Questo file era un'altra copia quasi identica dell'indice canonico (con un link
+interno rotto verso `wiki/decisions/contracts-and-lang-backup-archival-.md.md`). La
+fonte canonica è **[00-INDEX.md](./00-INDEX.md)**.
+
+Non caricare questo file: apri direttamente `00-INDEX.md`.
+<<<<<<< .merge_file_W3cmeJ
+=======
+=======
+>>>>>>> df2ba808 (.)
 title: "📚 **Indice Documentazione Modulo User**"
 type: concept
 tags: [index]
@@ -79,3 +101,8 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_8SLlO0
+>>>>>>> .merge_file_5Mn1Zm
+>>>>>>> df2ba808 (.)

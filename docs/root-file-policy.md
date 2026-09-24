@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_4kOM3l
 =======
 ---
@@ -21,6 +22,8 @@ related:
 ---
 
 >>>>>>> .merge_file_G8485Q
+=======
+>>>>>>> df2ba808 (.)
 # Root file policy
 
 Updated: 2026-07-08
