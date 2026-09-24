@@ -6,23 +6,9 @@ confidence: high
 created: {{date}}
 updated: {{date}}
 tags: [article, paper, documentation]
-<<<<<<< .merge_file_ZnSTYJ
-<<<<<<< HEAD
-<<<<<<< .merge_file_VRPDCY
-related: []
-=======
 related:
   - "./concept.md"
   - "./entity.md"
->>>>>>> .merge_file_0VvLLb
-=======
-related: []
->>>>>>> df2ba808 (.)
-=======
-related:
-  - "./concept.md"
-  - "./entity.md"
->>>>>>> .merge_file_UjJkoi
 ---
 
 # {{title}}

@@ -37,19 +37,19 @@ class UserForm extends XotBaseResourceForm
                     TextInput::make('name')->required(),
                     TextInput::make('password')
                         ->password()
-                        ->dehydrateStateUsing(function ($state): ?string {
+                        ->dehydrateStateUsing(function (mixed $state): ?string {
                             if (! is_string($state) || empty($state)) {
                                 return null;
                             }
 
                             return Hash::make($state);
                         })
-                        ->required(fn ($livewire) => $livewire instanceof CreateUser),
+                        ->required(fn (mixed $livewire) => $livewire instanceof CreateUser),
                 ])
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-                    TextEntry::make('created_at')->state(static function ($record) {
+                    TextEntry::make('created_at')->state(static function (mixed $record) {
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }

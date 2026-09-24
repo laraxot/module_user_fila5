@@ -43,7 +43,8 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
-    protected string $view = 'user::filament.widgets.password-expired';
+    /** @var view-string */
+    protected string $view;
 
     protected static bool $shouldRegisterNavigation = false;
 

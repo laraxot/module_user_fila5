@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+use Modules\Gdpr\Models\Traits\HasGdpr;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
@@ -135,6 +136,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasAuthenticationLogTrait;
     use HasChildren;
     use HasDevices;
+    use HasGdpr;
     use HasModules;
     use HasSocialite;
     use HasSpatiePermission, HasTeams {

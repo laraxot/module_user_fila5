@@ -27,7 +27,8 @@ class TeamChangeWidget extends XotBaseWidget
 {
     protected static bool $isDiscovered = false;
 
-    protected string $view = 'user::filament.widgets.team.change';
+    /** @var view-string */
+    protected string $view;
 
     /** @var list<array{id: int|string, name: string}> */
     public array $teams = [];
@@ -98,11 +99,9 @@ class TeamChangeWidget extends XotBaseWidget
     public function render(): View
     {
         /** @var view-string $viewName */
-        $viewName = 'user::filament.widgets.team.change';
-
-        if ($this->teams === []) {
-            $viewName = 'ui::livewire.empty';
-        }
+        $viewName = $this->teams === []
+            ? 'ui::livewire.empty'
+            : 'user::filament.widgets.team.change';
 
         return view($viewName, [
             'view' => $viewName,

@@ -11,7 +11,8 @@ class ClientHeader extends XotBaseWidget
 {
     public Client $client;
 
-    protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
+    /** @var view-string */
+    protected string $view;
 
     protected int|string|array $columnSpan = 'full';
 

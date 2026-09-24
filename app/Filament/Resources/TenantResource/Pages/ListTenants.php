@@ -30,7 +30,7 @@ class ListTenants extends XotBaseListRecords
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
-                ->default(function ($record) {
+                ->default(function (mixed $record): string {
                     if ($record === null || ! $record instanceof Tenant) {
                         return '';
                     }

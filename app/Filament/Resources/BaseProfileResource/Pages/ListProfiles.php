@@ -32,7 +32,7 @@ class ListProfiles extends XotBaseListRecords
             'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
-                ->default(function ($record) {
+                ->default(function (mixed $record): string {
                     if (! is_object($record)) {
                         return '--';
                     }

@@ -34,27 +34,7 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
-<<<<<<< .merge_file_6eI2vV
-<<<<<<< HEAD
-<<<<<<< .merge_file_GClNcW
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_H7lwAo
-=======
-<<<<<<< .merge_file_eYmlLp
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
-<<<<<<< .merge_file_wpR297
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_5FnR5Y
->>>>>>> .merge_file_SZgS67
->>>>>>> df2ba808 (.)
-=======
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_KUQB2Y
+- Per Rules globali, consulta il [wiki root](../../../../../../docs/wiki/rules/INDEX.md)
 
 ## Rules ricorrenti
 

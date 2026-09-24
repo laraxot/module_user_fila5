@@ -12,7 +12,8 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
-    protected string $view = 'user::filament.widgets.user-dropdown';
+    /** @var view-string */
+    protected string $view;
 
     /**
      * Handle user logout.

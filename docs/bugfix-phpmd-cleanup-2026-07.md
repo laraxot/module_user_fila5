@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pLSSES
-=======
->>>>>>> df2ba808 (.)
 ---
 title: "Bug fix + cleanup phpmd (Modules/User, 2026-07-12)"
 type: concept
@@ -23,10 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_BovdcQ
->>>>>>> df2ba808 (.)
 # Bug fix + cleanup phpmd (Modules/User, 2026-07-12)
 
 ## Bug reali corretti

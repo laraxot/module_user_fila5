@@ -5,7 +5,7 @@ document_type: concept
 module: User
 status: active
 language: it-IT
-updated_at: 2026-08-19
+updated_at: 2026-09-24
 related:
   - ../../../../Xot/docs/wiki/concepts/pest5-configuring-tests.md
   - ../../testing.md
@@ -139,3 +139,13 @@ Gli stessi `function.notFound` orfani restano, alla data di questa pagina, in al
 `mediaTableRecordActions` e `runFileExtensionRule` (Media), `notificationsCoverageTicketModel`
 (Notify), `safeEloquentCastFixture` e `xotBaseTransitionFixture` (Xot). La ricetta è questa,
 identica.
+
+## Trait `UserTestCaseOAuthTeamConcern` (archiviato)
+
+PHPStan `trait.unused`: il trait viveva in `tests/Concerns/UserTestCaseOAuthTeamConcern.php`
+ma **zero** `use` nel codice PHP (`rg` su `*.php`).
+
+I metodi utili (`oauthClientTestPersistedClient`, `createMockSocialiteUser`, pivot helpers)
+sono già sulla `Tests\TestCase` del modulo (e helper Pest in `Helpers.php`). Il file è
+archiviato come `UserTestCaseOAuthTeamConcern.php.bak` (no `git rm`, no cartella Legacy):
+PHPStan non lo analizza più e non si reintroduce un trait orfano.

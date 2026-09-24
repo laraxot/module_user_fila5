@@ -1,28 +1,3 @@
-<<<<<<< .merge_file_2AI3Ct
-<<<<<<< HEAD
-<<<<<<< .merge_file_QRbWJI
-=======
-=======
->>>>>>> .merge_file_MvC6ul
----
-title: "Git Reset"
-type: concept
-tags: [git, reset]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git-reset git reset"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./pest-test-report.md"
----
-
-<<<<<<< .merge_file_2AI3Ct
->>>>>>> .merge_file_LZTce3
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_MvC6ul
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

@@ -18,7 +18,8 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.notifications-center-widget';
+    /** @var view-string */
+    protected string $view;
 
     /** @var Collection<int, DatabaseNotification|Notification> */
     public Collection $notifications;

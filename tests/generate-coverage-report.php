@@ -1,6 +1,9 @@
 <?php
 
 declare(strict_types=1);
+
+require dirname(__DIR__, 3).'/vendor/autoload.php';
+
 use function Safe\filesize;
 use function Safe\simplexml_load_file;
 
@@ -181,7 +184,10 @@ foreach ($sortedFiles as $fileName => $stats) {
 echo "\n";
 
 // Files with no coverage
-$uncoveredFiles = array_filter($allFiles, fn (array $stats) => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
+$uncoveredFiles = array_filter(
+    $allFiles,
+    fn (array $stats): bool => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0,
+);
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";
