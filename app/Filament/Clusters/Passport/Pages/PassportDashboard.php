@@ -84,22 +84,7 @@ class PassportDashboard extends XotBasePage
                 ->body($e->getMessage())
                 ->danger()
                 ->send();
-
-            $this->isRunning = false;
         }
-    }
-
-    #[On('artisan-command.started')]
-    public function handleCommandStarted(string $command): void
-    {
-        $this->isRunning = true;
-    }
-
-    #[On('artisan-command.output')]
-    public function handleCommandOutput(string $command, string $output): void
-    {
-        $this->output[] = $output;
-        $this->dispatch('terminal-update');
     }
 
     public function mount(): void
@@ -111,49 +96,6 @@ class PassportDashboard extends XotBasePage
     {
         $this->hasPublicKey = file_exists(storage_path('oauth-public.key'));
         $this->hasPrivateKey = file_exists(storage_path('oauth-private.key'));
-    }
-
-    #[On('artisan-command.completed')]
-    public function onCommandCompleted(string $command): void
-    {
-        if ($this->currentCommand === $command) {
-            $this->isRunning = false;
-            $this->status = 'completed';
-            $this->checkKeys();
-        }
-
-        Notification::make()
-            ->title('Command completed successfully')
-            ->success()
-            ->send();
-    }
-
-    #[On('artisan-command.failed')]
-    public function handleCommandFailed(string $command, string $error): void
-    {
-        $this->status = 'failed';
-        $this->isRunning = false;
-        $this->output[] = "[ERROR] {$error}";
-
-        Notification::make()
-            ->title('Command failed')
-            ->body($error)
-            ->danger()
-            ->send();
-    }
-
-    #[On('artisan-command.error')]
-    public function handleCommandError(string $command, string $error): void
-    {
-        $this->status = 'failed';
-        $this->isRunning = false;
-        $this->output[] = "[ERROR] {$error}";
-
-        Notification::make()
-            ->title('Command error')
-            ->body($error)
-            ->danger()
-            ->send();
     }
 
     protected function getViewData(): array

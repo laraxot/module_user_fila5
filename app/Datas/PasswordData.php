@@ -5,8 +5,6 @@ declare(strict_types=1);
  * Classe per la gestione delle configurazioni delle password.
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Datas;
 
 use Filament\Forms\Components\TextInput;

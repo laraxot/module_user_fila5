@@ -190,6 +190,9 @@ return [
             'description' => 'Azione per annullare',
             'icon' => 'heroicon-o-x-mark',
         ],
+        'reorderRecords' => [
+            'tooltip' => 'reorderRecords',
+        ],
     ],
     'messages' => [
         'created' => 'Tenant creato con successo',

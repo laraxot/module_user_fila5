@@ -6,7 +6,8 @@ use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -35,7 +36,7 @@ return new class extends XotBaseMigration {
                 $table->string('device_id', 36)->nullable()->change();
             }
             // dddx($this->getColumnType('device_id'));//varchar
-            if ('uuid' === $this->getColumnType('user_id')) {
+            if ($this->getColumnType('user_id') === 'uuid') {
                 $table->string('user_id', 36)->nullable()->change();
             }
 

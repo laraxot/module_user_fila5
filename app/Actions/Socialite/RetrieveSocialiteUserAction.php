@@ -5,8 +5,6 @@ declare(strict_types=1);
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Actions\Socialite;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;

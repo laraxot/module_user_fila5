@@ -21,14 +21,12 @@ class DeleteUserAction
     /**
      * Elimina l'utente dopo aver verificato la password.
      *
-     * @param User   $user            L'utente da eliminare
-     * @param string $confirmPassword La password di conferma
-     *
-     * @return array{success: bool, message: string} Risultato dell'operazione
+     * @return array{success: bool, message: string}
      */
-    public function execute(User $user, string $confirmPassword): array
+    public function execute(UserContract $user, string $confirmPassword): array
     {
-        if (! $this->hasher->check($confirmPassword, $user->password)) {
+        $hashedPassword = $user->getAttribute('password');
+        if (! is_string($hashedPassword) || ! $this->hasher->check($confirmPassword, $hashedPassword)) {
             return [
                 'success' => false,
                 'message' => 'La password inserita non è corretta',

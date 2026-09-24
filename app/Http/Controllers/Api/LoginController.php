@@ -5,8 +5,6 @@ declare(strict_types=1);
  * This is the start of the PHP code block.
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Http\Controllers\Api;
 
 use Illuminate\Http\JsonResponse;

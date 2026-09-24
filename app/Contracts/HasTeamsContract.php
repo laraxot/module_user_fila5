@@ -5,8 +5,6 @@ declare(strict_types=1);
  * --- Artmin.
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -45,9 +43,9 @@ interface HasTeamsContract
     /**
      * Get all of the teams the user owns or belongs to.
      *
-     * @return \Illuminate\Support\Collection<int, Model>
+     * @return Collection<int, Model>
      */
-    public function allTeams(): \Illuminate\Support\Collection;
+    public function allTeams(): Collection;
 
     /**
      * Get all of the teams the user owns.

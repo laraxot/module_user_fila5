@@ -27,8 +27,8 @@ use PHPUnit\Framework\Assert;
  */
 function profileConnectionName(): string
 {
-    $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
-    $connection = (new $profileClass())->getConnectionName();
+    $profileClass = XotData::make()->getProfileClass();
+    $connection = (new $profileClass)->getConnectionName();
 
     if (is_string($connection) && $connection !== '') {
         return $connection;

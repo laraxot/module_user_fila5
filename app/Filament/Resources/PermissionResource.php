@@ -6,8 +6,6 @@ declare(strict_types=1);
  * @see https://github.com/phpsa/filament-authentication/blob/main/src/resources/PermissionResource.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Resources;
 
 use Modules\User\Filament\Resources\PermissionResource\Pages\CreatePermission;

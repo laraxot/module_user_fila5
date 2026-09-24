@@ -105,7 +105,7 @@ describe('User Events Coverage', function (): void {
 
     test('instantiates recovery generated and user registered events', function (): void {
         $userContract = UserFactory::new()->makeOne();
-        $user = new User();
+        $user = new User;
 
         $generated = new RecoveryCodesGenerated($userContract);
         $registered = new UserRegistered($user, ['source' => 'test'], '127.0.0.1', 'Pest');

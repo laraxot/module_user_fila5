@@ -24,7 +24,7 @@ class LoginUserAction
      */
     public function execute(SocialiteUser $socialiteUser): RedirectResponse
     {
-        /** @var \Modules\Xot\Contracts\UserContract $user */
+        /** @var UserContract $user */
         $user = $socialiteUser->user()->firstOrFail();
 
         event(new SocialiteUserConnected($socialiteUser));
