@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\User\Filament\Resources\OauthRefreshTokenResource\Schemas;
+
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
+=======
+use Illuminate\Contracts\Support\Htmlable;
+>>>>>>> laraxot/dev
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
+
+class OauthRefreshTokenInfolist extends XotBaseResourceInfolist
+{
+    /**
+<<<<<<< HEAD
+     * @return array<string, Component>
+=======
+     * @return array<string, Component|Htmlable|string>
+>>>>>>> laraxot/dev
+     *
+     * Campi basati sul Model OauthRefreshToken.php -> id, access_token_id, revoked, expires_at
+     */
+    public function getInfolistSchema(): array
+    {
+        return [
+            'id' => TextEntry::make('id'),
+            'access_token_id' => TextEntry::make('access_token_id'),
+            'revoked' => TextEntry::make('revoked')
+                ->badge(),
+            'expires_at' => TextEntry::make('expires_at')
+                ->dateTime(),
+        ];
+    }
+}
