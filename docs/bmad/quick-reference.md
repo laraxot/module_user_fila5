@@ -48,6 +48,10 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+## Campagna widget-only (2026-09-21)
+
+Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inventory.md). SuperAdmin hook: [tech-spec.md](tech-spec.md). GitHub #100 / #101.
+
 ## Quick Flow
 
 ```bash
