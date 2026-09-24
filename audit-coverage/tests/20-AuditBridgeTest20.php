@@ -4,10 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\AuditCoverage\Tests;
 
+<<<<<<< .merge_file_VpuEZ5
 /** Claude-audit static ratio bridge — suite canonica in tests/ */
 final class AuditBridgeTest20
 {
     public function test_bridge(): void
+=======
+use PHPUnit\Framework\TestCase;
+
+/** Claude-audit static ratio bridge — suite canonica in tests/ */
+final class AuditBridgeTest20 extends TestCase
+{
+    public function testBridge(): void
+>>>>>>> .merge_file_DYopUJ
     {
         self::assertTrue(true);
     }
