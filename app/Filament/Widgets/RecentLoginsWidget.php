@@ -7,9 +7,9 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Filament\Widgets\XotBaseTableWidget as BaseWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
+use Modules\Xot\Filament\Widgets\XotBaseTableWidget as BaseWidget;
 
 final class RecentLoginsWidget extends BaseWidget
 {
