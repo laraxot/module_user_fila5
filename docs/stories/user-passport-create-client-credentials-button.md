@@ -13,7 +13,7 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
-updated_at: '2026-09-03'
+updated_at: '2026-09-17'
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -241,7 +241,111 @@ Claude Sonnet 5
      discussione con l'utente: il database sulla connessione `user`
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
      potrebbe non essere stato ripristinato da un backup reale durante il
-     trasloco server, a differenza del DB principale.
+     trasloco server" — **falsa**. Verificato con una query diretta
+     sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
+     esistono tutti in `oauth_clients`, con date di creazione reali
+     (gennaio/febbraio 2026). Nessuna perdita di dati.
+  3. **Decisione esplicita dell'utente (2026-09-15) su come procedere per
+     il punto 1**: nessun automatismo (niente `OauthClient::booted()` o
+     equivalente) — la gestione dell'associazione client↔utente deve
+     restare **manuale e completa**: creare l'associazione (scrivendo
+     `user_id` **e** `owner_id`/`owner_type` nella stessa azione, senza
+     più bisogno del backfill separato), poter leggere correttamente lo
+     stato attuale, e poter **rimuovere** l'associazione — azione oggi
+     assente in `ClientsRelationManager.php` (esiste solo "associa", non
+     "disassocia"). Tracciato in `module_user_fila5#97`.
+  4. **[FATTO 2026-09-15]** Punto "creare l'associazione" risolto: l'utente
+     ha verificato dal vivo che il bottone "Associa client esistente" non
+     faceva ricomparire il client nella tab (lista vuota anche subito dopo
+     l'associazione) — confermato riproducendo in locale lo stesso identico
+     codice. Fix in `ClientsRelationManager.php`:
+     `$client->owner()->associate($owner);` prima del `save()`, oltre a
+     `user_id` (mantenuto per compatibilità con
+     `AssociatePassportClientToUser.php`, che legge ancora solo quello).
+     Verificato in locale: `owner_id`/`owner_type` valorizzati, `$user->
+     clients()->count()` passa da 0 a 1, `$client->owner` risolve
+     correttamente — funzionerebbe ora anche per
+     `SurveyController::createContacts`. PHPStan pulito.
+  5. **[FATTO 2026-09-15]** Test Pest aggiunto:
+     `Modules/User/tests/Feature/Filament/Resources/UserResource/RelationManagers/ClientsRelationManagerAssociateTest.php`
+     (2 test). Nessun test esistente in precedenza per questo file. Estrae
+     la closure reale dell'azione via `getActionFunction()`
+     (`Filament\Actions\Concerns\HasAction`) dopo `bootedInteractsWithTable()`
+     — non `getTableHeaderActions()` direttamente, marcato `@deprecated` da
+     Filament v4 e segnalato da PHPStan su una chiamata diretta da codice
+     applicativo. Verificato che il test intercetta davvero la regressione:
+     rieseguito con `git stash` del fix, fallisce esattamente sull'assert
+     `owner_id` — non un falso positivo. PHPStan pulito sul file di test.
+     Nessun residuo nel DB dopo la corsa (connessione `user` transazionata
+     dal `TestCase` del modulo).
+  6. **[FATTO 2026-09-15]** Punto 3 (rimuovere l'associazione) risolto.
+     L'utente ha chiesto di verificare se "ci fosse già della logica" per
+     rimuovere un'associazione — trovata: la riga "detach" ereditata da
+     `XotBaseRelationManager::getTableActions()`. **Non funzionava**:
+     `Filament\Actions\DetachAction` (letto nel sorgente vendor) chiama
+     `$relationship->detach($record)`, un metodo che esiste solo su
+     `BelongsToMany` — `clients()` è una `MorphMany`. Confermato dal vivo in
+     locale: `$user->clients()->detach($client)` lancia
+     `BadMethodCallException: Call to undefined method
+     Illuminate\Database\Eloquent\Relations\MorphMany::detach()`. Cliccare
+     quella riga in produzione avrebbe fatto esplodere l'azione.
+     Fix in `ClientsRelationManager.php`: sostituita la riga "detach" con
+     una nuova azione `dissociateClient` ("Rimuovi associazione") simmetrica
+     al fix di "associateExistingClient" — azzera sia `owner_id`/
+     `owner_type` (`$record->owner()->dissociate()`) sia `user_id`
+     (`forceFill(['user_id' => null])`): senza azzerare anche `user_id`, un
+     futuro `php artisan user:backfill-oauth-client-owner` avrebbe
+     ripristinato l'associazione appena rimossa, trovando ancora `user_id`
+     valorizzato. Verificato in locale end-to-end (associazione → rimozione
+     → `owner_id`/`owner_type`/`user_id` tutti `NULL`, `clients()->count()`
+     torna a 0). PHPStan pulito.
+     Test Pest aggiunti in `ClientsRelationManagerDissociateTest.php` (2
+     test): uno documenta/verifica il difetto di `detach()` su `MorphMany`
+     (via `method_exists()`, non invocazione diretta — altrimenti PHPStan
+     lo boccia come `method.notFound` su una chiamata sicuramente
+     inesistente), l'altro verifica il fix end-to-end. Confermato che
+     intercetta davvero la regressione (`git stash` del fix → fallisce
+     sull'azione non trovata). PHPStan pulito, nessun residuo nel DB.
+     Con questo, tutti e 3 i punti dell'issue module_user_fila5#97 sono
+     risolti (creare, leggere, rimuovere l'associazione).
+  7. **[APERTO 2026-09-15, primo punto CORRETTO 2026-09-17]** Verificati due
+     strascichi, entrambi confermati concretamente (non ipotesi):
+     - **[CORRETTO 2026-09-17]**
+       `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`
+       (il comando CLI `quaeris:associate-client-user`) aveva lo stesso
+       difetto già corretto nel bottone Filament: scriveva solo `user_id`,
+       mai `owner_id`/`owner_type` — chi usava questo comando invece del
+       bottone ricadeva nello stesso blocco su
+       `SurveyController::createContacts`. Fix identico:
+       `$client->owner()->associate($user);` prima del `save()`. Verificato
+       end-to-end: comando reale lanciato via CLI (non solo test) su un
+       client/utente veri, `owner_id`/`owner_type`/`user_id` tutti corretti,
+       `$client->owner` risolve al vero `User`. 2 nuovi test Pest in
+       `Modules/Quaeris/tests/Feature/Console/Commands/
+       AssociatePassportClientToUserTest.php` (controprova `git stash` →
+       fallisce esattamente sull'assert `owner_id`, non un falso positivo).
+       PHPStan pulito. Nota tecnica: l'helper `artisan()`/`PendingCommand`
+       di Pest non persiste le scritture del comando in questo bootstrap
+       Testbench a livello di modulo (anche `user_id`, pre-esistente, non
+       passava) — usato `Illuminate\Support\Facades\Artisan::call()`
+       diretto, che funziona correttamente (stesso pattern verificato a
+       mano via tinker).
+     - `Modules/Quaeris/tests/Feature/Http/Controllers/Api/
+       AddContactMultiControllerOwnerResolutionTest.php` — il test che ha
+       fatto partire questa intera indagine (Task 8 di
+       `quaeris-send-invite-migrate-to-record-notification.md`) — **è
+       ancora rosso**, riverificato con una corsa fresca il 2026-09-15. La
+       causa non è un difetto di codice: il test fa un `$client->save()`
+       grezzo (non passa dal bottone né dal comando CLI) e si aspetta che
+       un salvataggio qualsiasi "ripari" da solo il client — il suo stesso
+       commento dice "un save() qualsiasi... ripara il client",
+       presupponendo un `OauthClient::booted()` automatico. È esattamente
+       il meccanismo che l'utente ha deciso di **non** volere (decisione
+       punto 3 sopra: gestione manuale, niente automatismi). Il test, così
+       com'è scritto, non potrà mai passare — andrebbe riscritto per
+       esercitare il bottone/comando reale (stesso pattern di
+       `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
+       suo scenario non ha più senso con la decisione presa.
 
 ### File List
 

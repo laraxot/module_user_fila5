@@ -1,5 +1,25 @@
 # Errori Comuni Filament nel Modulo User
 
+## No hint path defined for [filament-jet]
+
+**Errore:** `InvalidArgumentException: No hint path defined for [filament-jet].` su `GET /admin` (user menu Filament).
+
+**Perché:** il pacchetto `artmin96/filament-jet` non è nel vendor. Le viste Livewire (toggle SuperAdmin nel menu, delete-account, logout, privacy) vivono nel modulo User. I `render()` puntavano ancora al namespace `filament-jet::`, che Laravel non registra.
+
+**Soluzione:** namespace `user::` + file in `Modules/User/resources/views/...`. Non reinstallare FilamentJet: duplicerebbe ownership.
+
+| Componente | Vista |
+|---|---|
+| `Profile\SuperAdmin` | `user::livewire.profile.super-admin` |
+| `Profile\DeleteAccount` | `user::livewire.profile.delete-account` |
+| `Auth\AuthLogout` | `user::livewire.auth.logout` |
+| `PrivacyPolicy` | `user::livewire.privacy-policy` |
+| `AlwaysAskPasswordConfirmationAction` | `user::always_ask_password_confirmation.modal.*` |
+
+`Team\Change` era già su `user::livewire.team.change`.
+
+Conversione a Filament widget **implementata**: [bmad/tech-spec.md](./bmad/tech-spec.md), story [9.2](./stories/9.2.admin-panel-provider-hook.story.md) (hook) e [9.3](./stories/9.3.remove-livewire-superadmin.story.md) (rimozione Livewire). Il provider monta `SuperAdminWidget` via `@livewire(SuperAdminWidget::class)`; il vecchio `@livewire('profile.super-admin')` non esiste più.
+
 ## Errori di Metodi Statici
 
 ### 1. getTableColumns() non può essere statico in RelationManager
