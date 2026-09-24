@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Xuv3nv
 <<<<<<< HEAD
 <<<<<<< .merge_file_xjgrXo
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_KVrlIS
 >>>>>>> .merge_file_7l9Nlf
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_LdIeLV
 use Modules\User\Filament\Tables\Columns\SingleRoleSelectColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Tests\TestCase;

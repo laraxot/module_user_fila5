@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_oEI06K
 <<<<<<< HEAD
 <<<<<<< .merge_file_OHQVjq
 
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> .merge_file_lGECuB
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_HeXn7T
 use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;

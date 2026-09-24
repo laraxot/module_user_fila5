@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_xZ2Dcb
 <<<<<<< HEAD
 <<<<<<< .merge_file_phTbaR
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_54eiya
 >>>>>>> .merge_file_J6IRG4
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_7oSL3v
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
 use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
 use Modules\User\Tests\TestCase;

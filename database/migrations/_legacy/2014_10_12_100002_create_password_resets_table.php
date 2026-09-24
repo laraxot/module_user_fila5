@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_jCNFj0
 <<<<<<< HEAD
 <<<<<<< .merge_file_SJwWnc
 
@@ -16,10 +17,13 @@ declare(strict_types=1);
 >>>>>>> .merge_file_REPung
 >>>>>>> .merge_file_RNzmj5
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_v0OY8N
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -41,7 +45,7 @@ return new class extends XotBaseMigration {
             //    $table->string('email')->nullable();
             // }
             // $this->updateUser($table);
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 $table->dropColumn('id');
             }
             if (! $this->hasColumn('id')) {

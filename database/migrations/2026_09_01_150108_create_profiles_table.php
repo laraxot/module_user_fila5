@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_7RFG4x
 <<<<<<< HEAD
 <<<<<<< .merge_file_5k4L88
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_MC9ZN0
 >>>>>>> .merge_file_9dMrlV
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_bfXgnt
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -37,7 +40,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::profiles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['id'].
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Profile::class;
 
     public function up(): void

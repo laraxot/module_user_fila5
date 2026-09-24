@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_XYA56P
 <<<<<<< HEAD
 <<<<<<< .merge_file_d56bbz
 
@@ -13,12 +14,15 @@ declare(strict_types=1);
 =======
 
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_5c07Uz
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
+<<<<<<< .merge_file_XYA56P
 <<<<<<< HEAD
 <<<<<<< .merge_file_d56bbz
 return new class extends XotBaseMigration {
@@ -33,6 +37,10 @@ return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> df2ba808 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_5c07Uz
     /**
      * Run the migrations.
      */
@@ -98,6 +106,7 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
+<<<<<<< .merge_file_XYA56P
 <<<<<<< HEAD
 <<<<<<< .merge_file_d56bbz
             if ('uuid' === $this->getColumnType('id')) {
@@ -111,6 +120,9 @@ return new class extends XotBaseMigration {
 =======
             if ('uuid' === $this->getColumnType('id')) {
 >>>>>>> df2ba808 (.)
+=======
+            if ($this->getColumnType('id') === 'uuid') {
+>>>>>>> .merge_file_5c07Uz
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

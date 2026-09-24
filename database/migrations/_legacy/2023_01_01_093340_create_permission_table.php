@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_qmxoJR
 <<<<<<< HEAD
 <<<<<<< .merge_file_eiRun1
 
@@ -16,9 +17,12 @@ declare(strict_types=1);
 >>>>>>> .merge_file_XiapEj
 >>>>>>> .merge_file_ADrFR3
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_o9CTi9
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -58,7 +62,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
+                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

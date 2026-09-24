@@ -13,6 +13,7 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
+<<<<<<< .merge_file_5FVebg
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 updated_at: '2026-09-03'
@@ -30,6 +31,9 @@ updated_at: '2026-09-17'
 >>>>>>> .merge_file_aRtH94
 >>>>>>> .merge_file_u8LuLa
 >>>>>>> df2ba808 (.)
+=======
+updated_at: '2026-09-17'
+>>>>>>> .merge_file_fQd9Hl
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -295,6 +299,7 @@ Claude Sonnet 5
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
 <<<<<<< HEAD
      potrebbe non essere stato ripristinato da un backup reale durante il
+<<<<<<< .merge_file_5FVebg
 <<<<<<< .merge_file_2ehWoE
      trasloco server, a differenza del DB principale.
 =======
@@ -303,6 +308,8 @@ Claude Sonnet 5
 >>>>>>> .merge_file_u8LuLa
      potrebbe non essere stato ripristinato da un backup reale durante il
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_fQd9Hl
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
      esistono tutti in `oauth_clients`, con date di creazione reali
@@ -432,10 +439,13 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
+<<<<<<< .merge_file_5FVebg
 <<<<<<< HEAD
 >>>>>>> .merge_file_z5qNOS
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_fQd9Hl
 
 ### File List
 
@@ -453,6 +463,7 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 |---|---|---|
 | Issue (modulo) | aperta | https://github.com/laraxot/module_user_fila5/issues/85 |
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+<<<<<<< .merge_file_5FVebg
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ehWoE
 =======
@@ -463,3 +474,7 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 | Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
 | Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
 >>>>>>> df2ba808 (.)
+=======
+| Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
+| Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
+>>>>>>> .merge_file_fQd9Hl

@@ -15,6 +15,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_RertlB
 <<<<<<< HEAD
 <<<<<<< .merge_file_4DsZRA
 /**
@@ -24,6 +25,9 @@ uses(TestCase::class);
 =======
 /*
 >>>>>>> df2ba808 (.)
+=======
+/**
+>>>>>>> .merge_file_cYx5pV
  * Copre il fix per l'errore reale in produzione:
  * `PermissionDoesNotExist` ("no permission named oauth-access-token.view.any
  * for guard web") su `OauthAccessTokenPolicy::viewAny()`.
@@ -91,6 +95,7 @@ describe('HasSpatiePermission::hasPermissionToOrCreate', function (): void {
     test('OauthAccessTokenPolicy::viewAny non esplode più su permesso mancante', function (): void {
         $user = UserFactory::new()->createOne();
 
+<<<<<<< .merge_file_RertlB
 <<<<<<< HEAD
 <<<<<<< .merge_file_4DsZRA
         $policy = new OauthAccessTokenPolicy;
@@ -100,6 +105,9 @@ describe('HasSpatiePermission::hasPermissionToOrCreate', function (): void {
 =======
         $policy = new OauthAccessTokenPolicy();
 >>>>>>> df2ba808 (.)
+=======
+        $policy = new OauthAccessTokenPolicy;
+>>>>>>> .merge_file_cYx5pV
 
         Assert::assertFalse($policy->viewAny($user));
     });

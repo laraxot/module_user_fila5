@@ -13,8 +13,11 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
+<<<<<<< .merge_file_7IRdDM
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
+=======
+>>>>>>> .merge_file_lEcpMd
 use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
@@ -22,6 +25,7 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
+<<<<<<< .merge_file_7IRdDM
 =======
 =======
 >>>>>>> df2ba808 (.)
@@ -37,6 +41,8 @@ use PHPUnit\Framework\Assert;
 >>>>>>> .merge_file_zz3uH8
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_lEcpMd
 uses(TestCase::class);
 
 /**
@@ -49,6 +55,7 @@ uses(TestCase::class);
 function superAdminWidgetProfileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
+<<<<<<< .merge_file_7IRdDM
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
     $connection = (new $profileClass)->getConnectionName();
@@ -64,6 +71,11 @@ function superAdminWidgetProfileConnectionName(): string
 
     if (is_string($connection) && '' !== $connection) {
 >>>>>>> df2ba808 (.)
+=======
+    $connection = (new $profileClass)->getConnectionName();
+
+    if (is_string($connection) && $connection !== '') {
+>>>>>>> .merge_file_lEcpMd
         return $connection;
     }
 
@@ -95,6 +107,7 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
         ['team_id' => null],
     );
 
+<<<<<<< .merge_file_7IRdDM
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
     $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
@@ -104,6 +117,9 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
 =======
     $role = 'super-admin' === $roleName ? $superAdminRole : $negateSuperAdminRole;
 >>>>>>> df2ba808 (.)
+=======
+    $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
+>>>>>>> .merge_file_lEcpMd
 
     $user->assignRole($role);
 }
@@ -233,6 +249,7 @@ describe('SuperAdminWidget toggle', function (): void {
         grantSuperAdminWidgetRole($user, 'super-admin');
         actingAs($user);
 
+<<<<<<< .merge_file_7IRdDM
 <<<<<<< HEAD
 <<<<<<< .merge_file_Lt4INQ
         $widget = new SuperAdminWidget;
@@ -242,6 +259,9 @@ describe('SuperAdminWidget toggle', function (): void {
 =======
         $widget = new SuperAdminWidget();
 >>>>>>> df2ba808 (.)
+=======
+        $widget = new SuperAdminWidget;
+>>>>>>> .merge_file_lEcpMd
         $widget->mount();
 
         $response = $widget->toggleSuperAdmin();

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ey5X1E
 <<<<<<< HEAD
 <<<<<<< .merge_file_2ExVM5
 
@@ -16,13 +17,16 @@ declare(strict_types=1);
 >>>>>>> .merge_file_yqsMDN
 >>>>>>> .merge_file_jIZxqu
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_nRYzX1
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -88,7 +92,7 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

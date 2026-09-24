@@ -1,6 +1,9 @@
+<<<<<<< .merge_file_9f2gDb
 <<<<<<< HEAD
 <<<<<<< .merge_file_kyR0Qi
 =======
+=======
+>>>>>>> .merge_file_XRuNyU
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
 type: concept
@@ -14,9 +17,12 @@ related:
   - "./git-reset.md"
 ---
 
+<<<<<<< .merge_file_9f2gDb
 >>>>>>> .merge_file_aysipj
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_XRuNyU
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

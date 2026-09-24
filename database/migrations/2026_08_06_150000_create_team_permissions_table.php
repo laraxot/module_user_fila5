@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_0obsMc
 <<<<<<< HEAD
 <<<<<<< .merge_file_qlyz68
 
@@ -16,11 +17,14 @@ declare(strict_types=1);
 >>>>>>> .merge_file_Q74Eze
 >>>>>>> .merge_file_KeW6YZ
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Rlgu25
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = TeamPermission::class;
 
     /**

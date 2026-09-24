@@ -48,6 +48,7 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+<<<<<<< .merge_file_tk2sDe
 <<<<<<< HEAD
 <<<<<<< .merge_file_BA8D66
 =======
@@ -57,16 +58,21 @@ bmad-code-review          # Review
 =======
 <<<<<<< .merge_file_2JXUra
 =======
+=======
+>>>>>>> .merge_file_0ekCCf
 ## Campagna widget-only (2026-09-21)
 
 Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inventory.md). SuperAdmin hook: [tech-spec.md](tech-spec.md). GitHub #100 / #101.
 
+<<<<<<< .merge_file_tk2sDe
 >>>>>>> .merge_file_yqnvnX
 >>>>>>> .merge_file_mIxVlH
 <<<<<<< HEAD
 >>>>>>> .merge_file_EjZXDh
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_0ekCCf
 ## Quick Flow
 
 ```bash

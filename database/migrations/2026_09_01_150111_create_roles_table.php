@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_EYZFol
 <<<<<<< HEAD
 <<<<<<< .merge_file_NQqQBR
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_F1B5qH
 >>>>>>> .merge_file_sZSBQU
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_QGLY5P
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -27,7 +30,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::roles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */

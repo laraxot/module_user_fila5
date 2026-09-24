@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SsoProviderResource\Pages;
 
 use Modules\User\Filament\Resources\SsoProviderResource;
+<<<<<<< .merge_file_xytAyV
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\SsoProviderResource\Schemas\SsoProviderInfolist;
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_ilEQSW
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSsoProvider extends XotBaseViewRecord
 {
     protected static string $resource = SsoProviderResource::class;
+<<<<<<< .merge_file_xytAyV
 <<<<<<< HEAD
 
     /**
@@ -26,4 +30,6 @@ class ViewSsoProvider extends XotBaseViewRecord
     }
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_ilEQSW
 }

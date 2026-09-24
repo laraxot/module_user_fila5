@@ -17,6 +17,7 @@ php artisan migrate --path=Modules/User/database/migrations
 ## Create First User
 
 ```php
+<<<<<<< .merge_file_oTf2yt
 <<<<<<< HEAD
 <<<<<<< .merge_file_q7JvRn
 use Modules\User\Models\User;
@@ -34,6 +35,9 @@ use Modules\Xot\Contracts\UserContract;
 >>>>>>> .merge_file_mwPKdx
 >>>>>>> .merge_file_bZ23P0
 >>>>>>> df2ba808 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> .merge_file_i8Wuzg
 use Illuminate\Support\Facades\Hash;
 
 $user = User::create([

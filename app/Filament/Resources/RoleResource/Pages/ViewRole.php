@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 use Modules\User\Filament\Resources\RoleResource;
+<<<<<<< .merge_file_VpxxTx
 <<<<<<< HEAD
 use Modules\User\Filament\Resources\RoleResource\Schemas\RoleInfolist;
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_zBpIfM
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewRole extends XotBaseViewRecord
 {
     protected static string $resource = RoleResource::class;
+<<<<<<< .merge_file_VpxxTx
 <<<<<<< HEAD
 
     /**
@@ -26,4 +30,6 @@ class ViewRole extends XotBaseViewRecord
     }
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_zBpIfM
 }

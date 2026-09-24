@@ -1,6 +1,9 @@
+<<<<<<< .merge_file_yepAiH
 <<<<<<< HEAD
 <<<<<<< .merge_file_65tFbg
 =======
+=======
+>>>>>>> .merge_file_u0HDdu
 ---
 title: "Root files hygiene"
 type: concept
@@ -21,9 +24,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_yepAiH
 >>>>>>> .merge_file_fQi36R
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_u0HDdu
 # Root files hygiene
 
 ## 2026-07-08 16:48

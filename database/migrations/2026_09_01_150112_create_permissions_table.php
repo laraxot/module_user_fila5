@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_LsAo0C
 <<<<<<< HEAD
 <<<<<<< .merge_file_Ss3nOh
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_42qSrp
 >>>>>>> .merge_file_0cpOuB
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Lg8qZz
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;
@@ -29,7 +32,8 @@ use Modules\Xot\Datas\XotData;
  * Owner migration `User::permissions` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Permission::class;
 
     /**
@@ -43,7 +47,7 @@ return new class extends XotBaseMigration {
                 $cache = app(Factory::class);
                 $cache_store = config('permission.cache.store');
                 $cache_key = config('permission.cache.key');
-                $store = is_string($cache_store) && 'default' !== $cache_store ? $cache_store : null;
+                $store = is_string($cache_store) && $cache_store !== 'default' ? $cache_store : null;
                 if (is_string($cache_key)) {
                     $cache->store($store)->forget($cache_key);
                 }

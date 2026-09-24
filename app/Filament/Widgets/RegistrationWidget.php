@@ -75,7 +75,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
         }
 
         $rememberToken = $user->getAttribute('remember_token');
-        if (is_string($token) && '' !== $token) {
+        if (is_string($token) && $token !== '') {
             $user->setAttribute('remember_token', $token);
             $user->save();
             $this->record = $user;
@@ -147,8 +147,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @param array<int|string, mixed> $schema
-     *
+     * @param  array<int|string, mixed>  $schema
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(array $schema): array
