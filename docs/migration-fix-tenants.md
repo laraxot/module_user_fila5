@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-fix-tenants.md
+>>>>>>> 87273113 (.)

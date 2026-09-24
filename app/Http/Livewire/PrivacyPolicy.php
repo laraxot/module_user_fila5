@@ -18,7 +18,7 @@ class PrivacyPolicy extends Component
     public function render(): View
     {
         /** @var view-string $viewName */
-        $viewName = 'user::livewire.privacy-policy';
+        $viewName = 'filament-jet::livewire.privacy-policy';
         $policyFile = resource_path('markdown/privacy-policy.md');
         $policyContent = file_get_contents($policyFile);
         $view = view($viewName, [
@@ -26,7 +26,7 @@ class PrivacyPolicy extends Component
         ]);
 
         $view->layout('filament::components.layouts.base', [
-            'title' => __('user::profile.privacy_policy.title'),
+            'title' => __('filament-jet::registration.privacy_policy'),
         ]);
 
         return $view;

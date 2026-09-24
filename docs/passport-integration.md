@@ -18,11 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 > **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
+>>>>>>> 87273113 (.)
 
 ---
 
@@ -71,6 +73,7 @@ laravel/Modules/User/app/Models/
 - `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
 - `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
 
+>>>>>>> 87273113 (.)
 ### BaseUser + Passport
 
 ```php
@@ -522,6 +525,7 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
+>>>>>>> 87273113 (.)
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

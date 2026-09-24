@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -42,3 +43,4 @@ related:
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> 87273113 (.)

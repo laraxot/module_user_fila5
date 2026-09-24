@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-1.md
+>>>>>>> 87273113 (.)

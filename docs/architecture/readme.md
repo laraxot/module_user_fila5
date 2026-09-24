@@ -18,6 +18,7 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

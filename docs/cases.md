@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts.md
+>>>>>>> 87273113 (.)

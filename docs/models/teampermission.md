@@ -16,6 +16,7 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+>>>>>>> 87273113 (.)
 # TeamPermission
 
 Il modello `TeamPermission` rappresenta i permessi specifici di un utente all'interno di un team.

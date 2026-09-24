@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  

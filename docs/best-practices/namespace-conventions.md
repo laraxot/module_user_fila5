@@ -18,6 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -214,4 +215,5 @@ Se l'override del tema non funziona:
 ---
 
 *Documento creato: Dicembre 2024*
+>>>>>>> 87273113 (.)
 

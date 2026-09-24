@@ -18,6 +18,7 @@ related:
   - "./dependency.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

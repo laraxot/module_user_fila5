@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-1.md
+>>>>>>> 87273113 (.)

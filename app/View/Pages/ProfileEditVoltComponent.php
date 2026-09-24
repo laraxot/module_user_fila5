@@ -78,8 +78,8 @@ final class ProfileEditVoltComponent extends Component
         try {
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
 
             // Type-safe property initialization
@@ -139,8 +139,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -255,8 +255,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -352,8 +352,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 

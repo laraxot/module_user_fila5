@@ -17,6 +17,8 @@ declare(strict_types=1);
  * @throws AuthorizationException if the verification fails
  */
 
+declare(strict_types=1);
+
 namespace Modules\User\Http\Controllers\Auth;
 
 use Illuminate\Auth\Access\AuthorizationException;

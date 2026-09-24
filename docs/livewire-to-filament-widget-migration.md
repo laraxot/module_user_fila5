@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+>>>>>>> 87273113 (.)

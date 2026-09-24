@@ -331,9 +331,9 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Check if value contains masked characters.
      */
-    private function isMasked(?string $value): bool
+    private function isMasked(mixed $value): bool
     {
-        if ($value === null) {
+        if (! is_string($value)) {
             return false;
         }
 

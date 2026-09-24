@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Fix della Migration Roles - Allineamento con la Filosofia Laraxot
 
 ## Problema Identificato

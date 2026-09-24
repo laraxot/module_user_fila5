@@ -34,9 +34,10 @@ class TeamsRelationManager extends XotBaseRelationManager
             'personal_team' => IconColumn::make('personal_team')
                 ->boolean()
                 ->getStateUsing(function (Model $record, self $livewire): bool {
+                    /** @var User $user */
                     $user = $livewire->getOwnerRecord();
 
-                    if (! $user instanceof UserContract) {
+                    if (! $user instanceof User) {
                         return false;
                     }
 
@@ -72,9 +73,10 @@ class TeamsRelationManager extends XotBaseRelationManager
         return [
             'detach' => DetachAction::make()
                 ->after(function (Model $record, self $livewire): void {
+                    /** @var User $user */
                     $user = $livewire->getOwnerRecord();
 
-                    if (! $user instanceof UserContract) {
+                    if (! $user instanceof User) {
                         return;
                     }
 

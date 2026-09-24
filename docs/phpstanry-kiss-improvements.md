@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary

@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Discussione Interiore: Pro e Contro Cluster Passport
 
 ## Voce del Dubbio (VD)

@@ -8,7 +8,7 @@ use function Safe\exec;
 use function Safe\file_get_contents;
 use function Safe\glob;
 
-uses(TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
 /** @return list<string> */
 function getUserMigrationFiles(): array
@@ -45,7 +45,7 @@ it('has valid php syntax in user migrations', function (): void {
 
         exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
         /** @var list<string> $output */
-        $outputLines = array_map(static fn (string $line): string => $line, $output);
+        $outputLines = array_map(static fn (mixed $line): string => (string) $line, $output);
         Assert::assertSame(0, $exitCode, implode(PHP_EOL, $outputLines));
     }
 });

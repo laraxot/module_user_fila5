@@ -11,6 +11,7 @@ related:
   - "./oauth-architecture.md"
 ---
 
+>>>>>>> 87273113 (.)
 ### Versione HEAD
 
 # Configurazione OAuth con GitHub

@@ -17,6 +17,7 @@ related:
   - "./readme.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -474,6 +475,7 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+>>>>>>> 87273113 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -930,3 +932,5 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
+
+>>>>>>> 87273113 (.)

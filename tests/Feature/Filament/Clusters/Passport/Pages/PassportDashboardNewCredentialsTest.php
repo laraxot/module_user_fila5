@@ -32,7 +32,7 @@ function makeMockUser(bool $isSuper): BaseUser
         public function __construct(private readonly bool $isSuper) {}
 
         /**
-         * @param  array<int, string>|Collection<int, string>|string  $roles
+         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
          */
         public function hasRole($roles, ?string $guard = null): bool
         {

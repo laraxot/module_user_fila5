@@ -17,6 +17,8 @@ declare(strict_types=1);
  * @return JsonResponse The JSON response
  */
 
+declare(strict_types=1);
+
 namespace Modules\User\Http\Controllers\Api;
 
 use Illuminate\Http\JsonResponse;

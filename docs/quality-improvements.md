@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: [DATE]
