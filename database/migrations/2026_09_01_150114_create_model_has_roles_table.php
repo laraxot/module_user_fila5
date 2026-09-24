@@ -14,8 +14,7 @@ use Modules\Xot\Datas\XotData;
  * Owner migration `User::model_has_roles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
@@ -36,10 +35,10 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
-            if ($this->getColumnType('model_id') === 'uuid') {
+            if ('uuid' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
             }
-            if ($this->getColumnType('role_id') === 'uuid') {
+            if ('uuid' === $this->getColumnType('role_id')) {
                 $table->integer('role_id')->index()->change();
             }
             // $this->updateUser($table);
