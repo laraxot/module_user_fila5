@@ -46,7 +46,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
             'email' => $data['email'],
         ]);
 
-        if ($response === Password::RESET_LINK_SENT) {
+        if (Password::RESET_LINK_SENT === $response) {
             $this->emailSent = true;
 
             Notification::make()

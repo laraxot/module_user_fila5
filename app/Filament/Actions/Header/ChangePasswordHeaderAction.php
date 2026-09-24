@@ -56,7 +56,7 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                         ->rule(
                             'required',
                             /**
-                             * @param  callable(string): mixed  $get
+                             * @param callable(string): mixed $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )
