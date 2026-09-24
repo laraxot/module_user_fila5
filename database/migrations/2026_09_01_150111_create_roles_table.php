@@ -1,24 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_EYZFol
-<<<<<<< HEAD
-<<<<<<< .merge_file_NQqQBR
-
-=======
->>>>>>> .merge_file_fqmfxX
-=======
-<<<<<<< .merge_file_ulX9tK
-
-=======
-<<<<<<< .merge_file_quB24b
-
-=======
->>>>>>> .merge_file_F1B5qH
->>>>>>> .merge_file_sZSBQU
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_QGLY5P
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;

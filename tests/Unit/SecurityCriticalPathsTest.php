@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_d9X96A
-
-=======
->>>>>>> .merge_file_6lhQRj
->>>>>>> df2ba808 (.)
 use Filament\Panel;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;

@@ -55,38 +55,14 @@ function makeAssociatedOauthClientForDissociationTest(User $owner): OauthClient
 
 function getDissociateClientActionFunction(User $owner): \Closure
 {
-<<<<<<< .merge_file_rw1jqK
-<<<<<<< HEAD
-<<<<<<< .merge_file_3BCfJl
     $manager = new ClientsRelationManager;
-=======
-    $manager = new ClientsRelationManager();
->>>>>>> .merge_file_R476eL
-=======
-    $manager = new ClientsRelationManager();
->>>>>>> df2ba808 (.)
-=======
-    $manager = new ClientsRelationManager;
->>>>>>> .merge_file_hxVRwf
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
 
     $action = null;
     foreach ($manager->getTable()->getRecordActions() as $candidate) {
-<<<<<<< .merge_file_rw1jqK
-<<<<<<< HEAD
-<<<<<<< .merge_file_3BCfJl
         if ($candidate instanceof Action && $candidate->getName() === 'dissociateClient') {
-=======
-        if ($candidate instanceof Action && 'dissociateClient' === $candidate->getName()) {
->>>>>>> .merge_file_R476eL
-=======
-        if ($candidate instanceof Action && 'dissociateClient' === $candidate->getName()) {
->>>>>>> df2ba808 (.)
-=======
-        if ($candidate instanceof Action && $candidate->getName() === 'dissociateClient') {
->>>>>>> .merge_file_hxVRwf
             $action = $candidate;
 
             break;

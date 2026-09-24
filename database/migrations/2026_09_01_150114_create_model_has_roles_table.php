@@ -1,24 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_xI0ugl
-<<<<<<< HEAD
-<<<<<<< .merge_file_9Yghdm
-
-=======
->>>>>>> .merge_file_bVufkk
-=======
-<<<<<<< .merge_file_s0SXi4
-
-=======
-<<<<<<< .merge_file_ZYs34e
-
-=======
->>>>>>> .merge_file_cPnpWv
->>>>>>> .merge_file_mo1EOZ
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_XT5zsC
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\User\Models\Role;

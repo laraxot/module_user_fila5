@@ -1,35 +1,10 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_W3THnb
-<<<<<<< HEAD
-<<<<<<< .merge_file_7IPYOj
-=======
-<<<<<<< .merge_file_62quLo
-=======
->>>>>>> .merge_file_zVIeGa
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< .merge_file_W3THnb
-=======
->>>>>>> .merge_file_5TNB62
-=======
->>>>>>> df2ba808 (.)
-
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration {
-<<<<<<< HEAD
-<<<<<<< .merge_file_7IPYOj
-=======
->>>>>>> .merge_file_boVfNv
->>>>>>> .merge_file_5TNB62
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_zVIeGa
     /**
      * Run the migrations.
      */
@@ -69,23 +44,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-<<<<<<< .merge_file_W3THnb
-<<<<<<< HEAD
-<<<<<<< .merge_file_7IPYOj
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
-=======
-<<<<<<< .merge_file_62quLo
                 app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> .merge_file_boVfNv
->>>>>>> .merge_file_5TNB62
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> df2ba808 (.)
-=======
-                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
->>>>>>> .merge_file_zVIeGa
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

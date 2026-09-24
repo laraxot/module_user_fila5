@@ -35,31 +35,6 @@ class ResolveFilamentUserConfigurationAction
         ];
     }
 
-<<<<<<< .merge_file_SCLMk9
-<<<<<<< HEAD
-<<<<<<< .merge_file_P0Zufg
-=======
-<<<<<<< .merge_file_WgzDbK
-=======
-<<<<<<< .merge_file_IQflNg
->>>>>>> .merge_file_mGcD9o
->>>>>>> df2ba808 (.)
-    private function toBoolean(mixed $value): bool
-    {
-        return is_bool($value) ? $value : false;
-    }
-
-    private function toString(mixed $value): string
-    {
-        return is_string($value) ? $value : '';
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_WgzDbK
-=======
->>>>>>> df2ba808 (.)
-=======
-=======
->>>>>>> .merge_file_so6cI6
     private function toBoolean(bool $value): bool
     {
         return $value;
@@ -68,14 +43,5 @@ class ResolveFilamentUserConfigurationAction
     private function toString(string $value): string
     {
         return $value;
-<<<<<<< .merge_file_SCLMk9
-<<<<<<< HEAD
->>>>>>> .merge_file_VMpT86
-=======
->>>>>>> .merge_file_meANDf
->>>>>>> .merge_file_mGcD9o
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_so6cI6
     }
 }

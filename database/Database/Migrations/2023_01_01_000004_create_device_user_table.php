@@ -1,45 +1,13 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_tKsJaf
-<<<<<<< HEAD
-<<<<<<< .merge_file_aM6lXn
-
-=======
-<<<<<<< .merge_file_DKzjsL
-=======
-
->>>>>>> .merge_file_DUkE1E
->>>>>>> .merge_file_B0LqEj
-=======
-
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_V0kQ5c
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-<<<<<<< .merge_file_tKsJaf
-<<<<<<< HEAD
-<<<<<<< .merge_file_aM6lXn
-return new class extends XotBaseMigration {
-=======
-<<<<<<< .merge_file_DKzjsL
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> .merge_file_DUkE1E
->>>>>>> .merge_file_B0LqEj
-=======
-return new class extends XotBaseMigration {
->>>>>>> df2ba808 (.)
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> .merge_file_V0kQ5c
     /**
      * Run the migrations.
      */
@@ -68,23 +36,7 @@ return new class extends XotBaseMigration
                 $table->string('device_id', 36)->nullable()->change();
             }
             // dddx($this->getColumnType('device_id'));//varchar
-<<<<<<< .merge_file_tKsJaf
-<<<<<<< HEAD
-<<<<<<< .merge_file_aM6lXn
-            if ('uuid' === $this->getColumnType('user_id')) {
-=======
-<<<<<<< .merge_file_DKzjsL
             if ($this->getColumnType('user_id') === 'uuid') {
-=======
-            if ('uuid' === $this->getColumnType('user_id')) {
->>>>>>> .merge_file_DUkE1E
->>>>>>> .merge_file_B0LqEj
-=======
-            if ('uuid' === $this->getColumnType('user_id')) {
->>>>>>> df2ba808 (.)
-=======
-            if ($this->getColumnType('user_id') === 'uuid') {
->>>>>>> .merge_file_V0kQ5c
                 $table->string('user_id', 36)->nullable()->change();
             }
 

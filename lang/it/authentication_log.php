@@ -67,11 +67,6 @@ return [
         ],
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
-<<<<<<< .merge_file_ZtfWBw
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_Bwjdly
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
@@ -79,10 +74,6 @@ return [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
-<<<<<<< .merge_file_ZtfWBw
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_Bwjdly
         ],
     ],
     'label' => 'Authentication Log',

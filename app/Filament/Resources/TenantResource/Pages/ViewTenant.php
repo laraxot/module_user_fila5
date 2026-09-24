@@ -13,19 +13,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTenant extends XotBaseViewRecord
 {
     protected static string $resource = TenantResource::class;
-<<<<<<< .merge_file_6HUAnA
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_jMfk1N
 }

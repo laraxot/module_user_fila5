@@ -15,22 +15,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_VhYqpT
-<<<<<<< HEAD
-<<<<<<< .merge_file_zqvPaK
-/**
-=======
-/*
->>>>>>> .merge_file_rXWJib
-=======
-/*
->>>>>>> df2ba808 (.)
- * Coverage for `Modules\User\Filament\Widgets\Auth\LoginWidget`, the SSoT login
- * widget registered by `UserServiceProvider::registerLivewireAuthWidgets()`.
-=======
 /**
  * Coverage for `Modules\User\Filament\Widgets\Auth\LoginWidget`.
->>>>>>> .merge_file_0odFgn
  *
  * Interaction tests are skipped: login blade/lang bugs outside this scope
  * (story 10.3). Avoid `->skip()` chaining — Pest stubs tipizzano test(): void.

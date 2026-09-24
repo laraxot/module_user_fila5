@@ -1,24 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_LsAo0C
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ss3nOh
-
-=======
->>>>>>> .merge_file_NnygGr
-=======
-<<<<<<< .merge_file_TdXqFs
-
-=======
-<<<<<<< .merge_file_G3cNcC
-
-=======
->>>>>>> .merge_file_42qSrp
->>>>>>> .merge_file_0cpOuB
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_Lg8qZz
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;

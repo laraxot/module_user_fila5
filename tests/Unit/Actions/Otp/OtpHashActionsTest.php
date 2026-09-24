@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_5FRMa3
-
-=======
->>>>>>> .merge_file_UBk9yu
->>>>>>> df2ba808 (.)
 use Modules\User\Actions\Otp\HashOtpValueAction;
 use Modules\User\Actions\Otp\OtpHashNeedsRehashAction;
 use Modules\User\Actions\Otp\VerifyOtpHashAction;

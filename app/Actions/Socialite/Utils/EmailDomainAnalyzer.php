@@ -4,16 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite\Utils;
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_YZW4D8
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-
-=======
->>>>>>> .merge_file_MvRRmH
->>>>>>> df2ba808 (.)
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;

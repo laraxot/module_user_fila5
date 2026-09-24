@@ -5,31 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialiteUserResource\Pages;
 
 use Modules\User\Filament\Resources\SocialiteUserResource;
-<<<<<<< .merge_file_1SgVEo
-<<<<<<< HEAD
-use Modules\User\Filament\Resources\SocialiteUserResource\Schemas\SocialiteUserInfolist;
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_xbprpA
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialiteUser extends XotBaseViewRecord
 {
     protected static string $resource = SocialiteUserResource::class;
-<<<<<<< .merge_file_1SgVEo
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return app(SocialiteUserInfolist::class)->getInfolistSchema();
-    }
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_xbprpA
 }

@@ -4,24 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Pages;
 
-<<<<<<< .merge_file_zPKDDH
-<<<<<<< HEAD
-<<<<<<< .merge_file_WiaQin
-=======
 use Illuminate\Support\Collection;
->>>>>>> .merge_file_MZXeG1
-=======
-<<<<<<< .merge_file_DiPCrT
-=======
-<<<<<<< .merge_file_CfhiL0
-=======
-use Illuminate\Support\Collection;
->>>>>>> .merge_file_uwcfh1
->>>>>>> .merge_file_RBWJSO
->>>>>>> df2ba808 (.)
-=======
-use Illuminate\Support\Collection;
->>>>>>> .merge_file_84SbBd
 use Laravel\Passport\ClientRepository;
 use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
@@ -49,27 +32,7 @@ function makeMockUser(bool $isSuper): BaseUser
         public function __construct(private readonly bool $isSuper) {}
 
         /**
-<<<<<<< .merge_file_zPKDDH
-<<<<<<< HEAD
-<<<<<<< .merge_file_WiaQin
-         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
-=======
-         * @param array<int, string>|Collection<int, string>|string $roles
->>>>>>> .merge_file_MZXeG1
-=======
-<<<<<<< .merge_file_DiPCrT
-         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
-=======
-<<<<<<< .merge_file_CfhiL0
-         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
-=======
-         * @param array<int, string>|Collection<int, string>|string $roles
->>>>>>> .merge_file_uwcfh1
->>>>>>> .merge_file_RBWJSO
->>>>>>> df2ba808 (.)
-=======
          * @param  array<int, string>|Collection<int, string>|string  $roles
->>>>>>> .merge_file_84SbBd
          */
         public function hasRole($roles, ?string $guard = null): bool
         {

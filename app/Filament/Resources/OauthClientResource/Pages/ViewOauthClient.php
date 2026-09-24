@@ -50,19 +50,4 @@ class ViewOauthClient extends XotBaseViewRecord
 
         return $actions;
     }
-<<<<<<< .merge_file_qRdA3R
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_Q7EaP3
 }

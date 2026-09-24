@@ -1,41 +1,11 @@
 <?php
 
-<<<<<<< .merge_file_rBbAYb
-<<<<<<< HEAD
-<<<<<<< .merge_file_ozcIZg
-=======
-<<<<<<< .merge_file_HVb2ed
-=======
-<<<<<<< .merge_file_TBUdOy
->>>>>>> .merge_file_acRCi5
->>>>>>> df2ba808 (.)
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_HVb2ed
-=======
->>>>>>> df2ba808 (.)
-=======
-=======
->>>>>>> .merge_file_pljwXC
-declare(strict_types=1);
-/**
- * ---.
- */
-<<<<<<< .merge_file_rBbAYb
-<<<<<<< HEAD
->>>>>>> .merge_file_B7scwV
-=======
->>>>>>> .merge_file_CZ71RJ
->>>>>>> .merge_file_acRCi5
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_pljwXC
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
