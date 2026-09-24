@@ -63,7 +63,11 @@ function makeOrphanOauthClientForAssociationTest(): OauthClient
 
 function getAssociateExistingClientActionFunction(User $owner): \Closure
 {
+<<<<<<< .merge_file_S6D7Wn
+    $manager = new ClientsRelationManager;
+=======
     $manager = new ClientsRelationManager();
+>>>>>>> .merge_file_SE38lB
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
@@ -72,7 +76,11 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
     // chiavi stringa di getTableHeaderActions()) — si cerca per nome.
     $action = null;
     foreach ($manager->getTable()->getHeaderActions() as $candidate) {
+<<<<<<< .merge_file_S6D7Wn
+        if ($candidate instanceof Action && $candidate->getName() === 'associateExistingClient') {
+=======
         if ($candidate instanceof Action && 'associateExistingClient' === $candidate->getName()) {
+>>>>>>> .merge_file_SE38lB
             $action = $candidate;
 
             break;

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_7e1LnH
+
+=======
+>>>>>>> .merge_file_CoXFPI
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\ModelHasRole;
 use Modules\Xot\Database\Migrations\XotBaseMigration;

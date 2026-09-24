@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pages;
 
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Schemas\SocialiteUserInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialiteUser extends XotBaseViewRecord
 {

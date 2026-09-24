@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_QRbWJI
+=======
 ---
 title: "Git Reset"
 type: concept
@@ -11,6 +13,7 @@ related:
   - "./pest-test-report.md"
 ---
 
+>>>>>>> .merge_file_LZTce3
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

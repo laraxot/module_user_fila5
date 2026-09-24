@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_GuuuYx
+=======
 ---
 title: "User Module - Quality Status (November 2025)"
 type: concept
@@ -18,6 +20,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> .merge_file_x5PhcL
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview

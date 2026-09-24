@@ -5,7 +5,10 @@ use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_61EQsE
+=======
 
+>>>>>>> .merge_file_oaLrbS
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
@@ -37,7 +40,11 @@ describe('SuperAdminWidget', function (): void {
     test('resolves to the convention super-admin view used by render()', function (): void {
         $reflection = new ReflectionProperty(SuperAdminWidget::class, 'view');
         $reflection->setAccessible(true);
+<<<<<<< .merge_file_61EQsE
+        $widget = new SuperAdminWidget;
+=======
         $widget = new SuperAdminWidget();
+>>>>>>> .merge_file_oaLrbS
 
         Assert::assertSame(
             'user::filament.widgets.profile.super-admin',

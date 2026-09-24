@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages;
 
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Schemas\OauthAuthCodeInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthAuthCode extends XotBaseViewRecord
 {

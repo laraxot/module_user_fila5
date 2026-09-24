@@ -12,7 +12,11 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_zqvPaK
+/**
+=======
 /*
+>>>>>>> .merge_file_rXWJib
  * Coverage for `Modules\User\Filament\Widgets\Auth\LoginWidget`, the SSoT login
  * widget registered by `UserServiceProvider::registerLivewireAuthWidgets()`.
  *
