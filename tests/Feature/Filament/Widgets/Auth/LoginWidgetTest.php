@@ -15,7 +15,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-/**
+/*
  * Coverage for `Modules\User\Filament\Widgets\Auth\LoginWidget`, the SSoT login
  * widget registered by `UserServiceProvider::registerLivewireAuthWidgets()`.
  *

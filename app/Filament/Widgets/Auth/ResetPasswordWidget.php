@@ -61,7 +61,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
                 'token' => $this->token ?? '',
             ],
             function (Authenticatable $user, string $password): void {
-                /** @var Model&Authenticatable $user */
+                /* @var Model&Authenticatable $user */
                 $user->forceFill([
                     'password' => Hash::make($password),
                     'remember_token' => Str::random(60),
