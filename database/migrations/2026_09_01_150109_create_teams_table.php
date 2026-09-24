@@ -1,9 +1,18 @@
 <?php
 
+<<<<<<< .merge_file_ozcIZg
+/**
+ * ---.
+ */
+
+declare(strict_types=1);
+
+=======
 declare(strict_types=1);
 /**
  * ---.
  */
+>>>>>>> .merge_file_B7scwV
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -11,8 +20,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::teams` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Esegue la migrazione.
      */
