@@ -1,3 +1,23 @@
+---
+title: "Pattern di Ereditarietà per Pacchetti Esterni"
+type: pattern
+tags: [external, packages, inheritance, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "external-packages-inheritance-pattern pattern di ereditarietà per pacchetti esterni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Pattern di Ereditarietà per Pacchetti Esterni
 
 ## 📋 Panoramica
@@ -139,6 +159,8 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 ## 📚 Riferimenti
 
 - [Filosofia Spatie Permission](./spatie-permission-philosophy.md)
+- [Architettura Modelli](../Xot/docs/models/model-architecture.md)
+- [Regole Critiche Architettura](../Xot/docs/critical-architecture-rules.md)
 - [Architettura Modelli](../xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../xot/docs/critical-architecture-rules.md)
 

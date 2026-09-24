@@ -149,9 +149,9 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 - Permette di mostrare un messaggio di conferma durante il reindirizzamento
 - Utilizza il pattern mount per eseguire azioni all'inizializzazione del componente
 
-## Implementazione Raccomandata per Quaeris
+## Implementazione Raccomandata per SaluteOra
 
-Per Quaeris, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+Per SaluteOra, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
 
 1. Il logout è un'operazione semplice che non richiede gestione dello stato
 2. Non è necessaria interazione con l'utente durante il processo
@@ -211,12 +211,4 @@ return redirect()->to('/' . $locale);
 ?>
 ```
 
-Questa implementazione è semplice, sicura e segue tutte le best practices del progetto Quaeris.
-
----
-module: theme
-topic: logout_blade_implementation
-canonical: ../../../Themes/docs/shared-components/logout_blade_implementation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_implementation.md
+Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.

@@ -1,13 +1,6 @@
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
-- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
@@ -19,10 +12,6 @@
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
-
-## Introduzione
-
-Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di Quaeris, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 
 ## Struttura delle Directory
 
@@ -168,7 +157,7 @@ laravel/Themes/One/resources/views/pages/auth/
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Hash;
     use Illuminate\Auth\Events\Registered;
-    use Modules\User\Models\User;
+    use Modules\Xot\Contracts\UserContract;
     use function Livewire\Volt\{state, rules, mount};
 
     state([

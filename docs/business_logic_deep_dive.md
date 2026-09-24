@@ -775,3 +775,12 @@ class UserMetadata implements CastsAttributes
 3. Security audits
 
 Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particular attenzione per refactoring e ottimizzazione seguendo principi SOLID e DRY.
+
+
+---
+
+## Contenuto assorbito da `BUSINESS_LOGIC_DEEP_DIVE.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [business_logic_deep_dive.md](./business_logic_deep_dive.md).

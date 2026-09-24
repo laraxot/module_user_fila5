@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\DB;
@@ -11,20 +10,12 @@ use Modules\User\Contracts\TenantContract;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\BaseTenant;
 use Modules\User\Models\Tenant;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Sluggable\SlugOptions;
 
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
+uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $overrides

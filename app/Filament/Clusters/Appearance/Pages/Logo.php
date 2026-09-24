@@ -78,7 +78,9 @@ class Logo extends XotBasePage
         $this->form->fill($data);
     }
 
-    /** @return array<int, Action> */
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateLogoFormActions(): array
     {
         return [

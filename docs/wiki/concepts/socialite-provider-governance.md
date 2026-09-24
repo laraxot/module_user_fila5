@@ -4,12 +4,15 @@ module: User
 confidence: high
 updated: 2026-06-18
 sources:
-  - ../../../app/Models/SocialiteUser.php
-  - ../../../app/Models/SocialProvider.php
-  - ../../../app/Models/SsoProvider.php
-  - ../../../app/Http/Controllers/Socialite/RedirectToProviderController.php
-  - ../../../app/Http/Controllers/Socialite/ProcessCallbackController.php
-  - ../../../routes/socialite.php
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # socialite provider governance

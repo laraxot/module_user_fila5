@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
 use Modules\User\Actions\Socialite\LoginUserAction;

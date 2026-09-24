@@ -1,3 +1,12 @@
+---
+title: "User Module - User Research"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # User Module - User Research
 
 **Module:** User  

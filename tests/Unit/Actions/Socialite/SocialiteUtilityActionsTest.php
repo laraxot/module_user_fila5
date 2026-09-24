@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
@@ -18,21 +17,12 @@ use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\User\Actions\Socialite\RedirectToLoginAction;
 use Modules\User\Actions\Socialite\ValidateProviderAction;
 use Modules\User\Exceptions\ProviderNotConfigured;
+use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixture;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
+uses(TestCase::class);
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {

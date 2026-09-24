@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Filament\Resources\PermissionResource;
+use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
@@ -85,49 +86,37 @@ class ListPermissions extends XotBaseListRecords
         return [
             'delete' => DeleteBulkAction::make(),
             'attach_role' => BulkAction::make('Attach Role')
-                ->action(function (Collection $collection, array $data): void {
-                    /** @var array<string, mixed> $safeData */
-                    $safeData = $data;
-                    $this->syncRolesOnPermissions($collection, $safeData);
+                ->action(static function (Collection $collection, array $data): void {
+                    foreach ($collection as $record) {
+                        // Verifichiamo che $record sia un'istanza di Model prima di procedere
+                        // This check is redundant as $record is already an instance of Model
+                        // Assert::isInstanceOf($record, Model::class, '['.__LINE__.']['.__CLASS__.']');
+
+                        // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
+                        if (method_exists($record, 'roles')) {
+                            /** @var BelongsToMany<Role, Permission> $rolesRelation */
+                            $rolesRelation = $record->roles();
+                            $roleData = $data['role'];
+                            if (is_array($roleData) || is_int($roleData) || is_string($roleData)) {
+                                $syncData = is_array($roleData) ? $roleData : [$roleData];
+                                $rolesRelation->sync($syncData);
+                                $record->save();
+                            }
+                        }
+                    }
                 })
                 ->schema([
                     Select::make('role')->options(function () use ($roleModel): array {
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
-                        /** @var \Illuminate\Support\Collection<string|int, string> $collection */
-                        $collection = $query->pluck('name', 'id');
 
-                        /* @var array<string|int, string> $options */
-                        return $collection->toArray();
+                        return $query->pluck('name', 'id')
+                            ->mapWithKeys(static fn (mixed $name, int|string $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
+                            ->all();
                     })->required(),
                 ])
                 ->deselectRecordsAfterCompletion(),
         ];
-    }
-
-    /**
-     * @param Collection<int, \Illuminate\Database\Eloquent\Model> $collection
-     * @param array<string, mixed>                                 $data
-     */
-    protected function syncRolesOnPermissions(Collection $collection, array $data): void
-    {
-        foreach ($collection as $record) {
-            if (! method_exists($record, 'roles')) {
-                continue;
-            }
-
-            /** @var BelongsToMany<Role, \Modules\User\Models\Permission, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $rolesRelation */
-            $rolesRelation = $record->roles();
-            $roleData = $data['role'] ?? null;
-
-            if (! is_array($roleData) && ! is_int($roleData) && ! is_string($roleData)) {
-                continue;
-            }
-
-            $syncData = is_array($roleData) ? $roleData : [$roleData];
-            $rolesRelation->sync($syncData);
-            $record->save();
-        }
     }
 
     /**

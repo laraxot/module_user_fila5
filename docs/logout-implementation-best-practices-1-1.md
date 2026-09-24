@@ -1,8 +1,28 @@
+---
+title: "Best Practices per l'Implementazione del Logout"
+type: concept
+tags: [logout, implementation, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-implementation-best-practices-1-1 best practices per l'implementazione del logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

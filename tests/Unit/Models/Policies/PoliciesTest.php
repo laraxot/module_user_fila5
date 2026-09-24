@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
 use Modules\User\Models\Policies\DevicePolicy;
@@ -18,15 +17,10 @@ use Modules\User\Models\Policies\SocialiteUserPolicy;
 use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
+uses(TestCase::class);
 
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();

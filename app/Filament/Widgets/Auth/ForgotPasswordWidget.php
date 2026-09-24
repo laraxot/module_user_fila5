@@ -4,17 +4,25 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
-use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
- * ForgotPassword FO — schema SSoT in `Resources\UserResource\Schemas\UserForm::getForgotPasswordFormSchema()`.
+ * ForgotPasswordWidget — invio link reset via email.
+ *
+ * Schema da `Schemas\UserForm::getForgotPasswordFormSchema()` — SSoT.
+ *
+ * @property Schema $form
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
     protected string $view = 'user::widgets.auth.forgot-password-widget';
 
+    /**
+     * @return class-string<UserForm>
+     */
     protected static function formClass(): string
     {
         return UserForm::class;
@@ -34,7 +42,7 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
         if (Password::RESET_LINK_SENT === $status) {
             session()->flash('status', __($status));
         } else {
-            $this->addError('data.email', __($status));
+            $this->addError('email', __($status));
         }
     }
 }

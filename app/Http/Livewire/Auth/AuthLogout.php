@@ -17,13 +17,9 @@ class AuthLogout extends Component
 
     public function render(): View
     {
-        $view = 'livewire.auth.logout';
-        // @phpstan-ignore-next-line
-        if (! view()->exists($view)) {
-            throw new \Exception("View {$view} not found");
-        }
-        $view_params = [];
+        /** @var view-string $viewName */
+        $viewName = 'user::livewire.auth.logout';
 
-        return view($view, $view_params);
+        return view($viewName);
     }
 }

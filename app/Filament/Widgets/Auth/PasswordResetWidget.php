@@ -8,23 +8,25 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Session;
-use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
- * PasswordReset FO — schema SSoT in `Resources\UserResource\Schemas\UserForm::getPasswordResetFormSchema()`.
+ * PasswordResetWidget — schermata di invio link reset (post-login, opzionale).
+ *
+ * Schema da `Schemas\UserForm::getPasswordResetFormSchema()` — SSoT.
  *
  * @property Schema $form
  */
 class PasswordResetWidget extends XotBaseSchemaWidget
 {
+    public ?array $data = [];
+
     public bool $emailSent = false;
 
     /**
-     * @phpstan-ignore-next-line
+     * @return class-string<UserForm>
      */
-    protected string $view = 'pub_theme::filament.widgets.auth.password.reset';
-
     protected static function formClass(): string
     {
         return UserForm::class;
@@ -35,12 +37,8 @@ class PasswordResetWidget extends XotBaseSchemaWidget
         return 'getPasswordResetFormSchema';
     }
 
-    /**
-     * Handle password reset link sending.
-     */
     public function sendResetPasswordLink(): void
     {
-        // try {
         $data = $this->form->getState();
         $password_broker = Password::broker();
 
@@ -58,7 +56,6 @@ class PasswordResetWidget extends XotBaseSchemaWidget
                 ->duration(10000)
                 ->send();
 
-            // Clear the form
             $this->form->fill();
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
@@ -68,41 +65,22 @@ class PasswordResetWidget extends XotBaseSchemaWidget
                 ->danger()
                 ->send();
         }
-
-        /*} catch (\Exception $e) {
-         * Notification::make()
-         * ->title(__('user::auth.password_reset.email_failed.title'))
-         * ->body(__('user::auth.password_reset.email_failed.generic'))
-         * ->danger()
-         * ->send();
-         * }
-         */
     }
 
-    /**
-     * Reset the widget state to show form again.
-     */
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
-    /**
-     * Send another reset link.
-     */
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
     }
 
-    /**
-     * Check email status (for compatibility with old view).
-     */
     public function checkEmailStatus(): void
     {
-        // This method is kept for compatibility but redirects to login
         $this->redirect(route('login'));
     }
 }

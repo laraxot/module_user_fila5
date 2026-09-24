@@ -1,3 +1,23 @@
+---
+title: "XotBaseResource getPages() Automatic: Filosofia DRY"
+type: concept
+tags: [xotbase, resource, getpages, automatic]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase-resource-getpages-automatic xotbaseresource getpages() automatic: filosofia dry"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # XotBaseResource getPages() Automatic: Filosofia DRY
 
 ## Data: 2025-01-22

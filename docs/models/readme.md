@@ -1,3 +1,21 @@
+---
+title: "User Module - Model Documentation"
+type: concept
+tags: [readme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme user module - model documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./base-classes-hierarchy.md"
+  - "./baseuser.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+---
+
 # User Module - Model Documentation
 
 **Modulo**: User

@@ -32,6 +32,8 @@ class UpdateUserAction
         $logger = \app(LoggerInterface::class);
         $hasher = \app(Hasher::class);
         $safeStringCast = \app(SafeStringCastAction::class);
+        $validationException = \app(ValidationException::class);
+
         try {
             $dbManager->beginTransaction();
 
@@ -39,7 +41,7 @@ class UpdateUserAction
             $updateData = $this->prepareUpdateData($data, $hasher, $safeStringCast);
 
             // Valida i dati specifici per l'aggiornamento
-            $this->validateUpdateData($user, $updateData);
+            $this->validateUpdateData($user, $updateData, $validationException);
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -122,7 +124,7 @@ class UpdateUserAction
      *
      * @throws ValidationException
      */
-    protected function validateUpdateData(Model $user, array $data): void
+    protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -133,7 +135,7 @@ class UpdateUserAction
                 ->first();
 
             if ($existingUser) {
-                throw ValidationException::withMessages(['email' => __('user::validation.email_already_taken')]);
+                throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
             }
         }
 

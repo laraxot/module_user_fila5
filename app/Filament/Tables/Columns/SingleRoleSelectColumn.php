@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Tables\Columns;
 
+<<<<<<< .merge_file_uMAK8t
+=======
+use Modules\User\Filament\Forms\Components\SingleRoleSelect;
+>>>>>>> .merge_file_4md8qu
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
 
 /**
+<<<<<<< .merge_file_uMAK8t
  * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\SingleRoleSelect}.
+=======
+ * Controparte in lista di {@see SingleRoleSelect}.
+>>>>>>> .merge_file_4md8qu
  *
  * Stesse opzioni (ruoli da `Role::query()`), esposte come select inline di riga.
  *

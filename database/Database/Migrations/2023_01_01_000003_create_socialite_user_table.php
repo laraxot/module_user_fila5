@@ -1,12 +1,20 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_cAw4BG
+=======
+
+>>>>>>> .merge_file_P0A27u
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< .merge_file_cAw4BG
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> .merge_file_P0A27u
     /**
      * Run the migrations.
      */
@@ -39,7 +47,11 @@ return new class extends XotBaseMigration
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
+<<<<<<< .merge_file_cAw4BG
             if ($this->getColumnType('token') === 'varchar') {
+=======
+            if ('varchar' === $this->getColumnType('token')) {
+>>>>>>> .merge_file_P0A27u
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);
