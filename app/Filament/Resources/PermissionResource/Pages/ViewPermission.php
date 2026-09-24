@@ -6,8 +6,18 @@ namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Resources\PermissionResource\Schemas\PermissionInfolist;
 
 class ViewPermission extends XotBaseViewRecord
 {
     protected static string $resource = PermissionResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(PermissionInfolist::class)->getInfolistSchema();
+    }
 }

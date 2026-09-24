@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Page
 
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Schemas\OauthPersonalAccessClientInfolist;
 
 /**
  * Class ViewOauthPersonalAccessClient.
@@ -13,4 +14,13 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 {
     protected static string $resource = OauthPersonalAccessClientResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(OauthPersonalAccessClientInfolist::class)->getInfolistSchema();
+    }
 }

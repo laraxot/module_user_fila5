@@ -6,8 +6,18 @@ namespace Modules\User\Filament\Resources\SsoProviderResource\Pages;
 
 use Modules\User\Filament\Resources\SsoProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Resources\SsoProviderResource\Schemas\SsoProviderInfolist;
 
 class ViewSsoProvider extends XotBaseViewRecord
 {
     protected static string $resource = SsoProviderResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(SsoProviderInfolist::class)->getInfolistSchema();
+    }
 }

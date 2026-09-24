@@ -6,8 +6,18 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResou
 
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Schemas\OauthDeviceCodeInfolist;
 
 class ViewOauthDeviceCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthDeviceCodeResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(OauthDeviceCodeInfolist::class)->getInfolistSchema();
+    }
 }
