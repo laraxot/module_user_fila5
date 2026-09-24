@@ -27,7 +27,6 @@ use Webmozart\Assert\Assert;
  */
 class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 {
-
     public ?string $token = null;
 
     public ?string $email = null;

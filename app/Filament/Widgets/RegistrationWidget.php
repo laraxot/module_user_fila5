@@ -20,10 +20,10 @@ use Webmozart\Assert\Assert;
  * Registration widget for Filament admin panel.
  * Handles user registration workflows with dynamic model configuration.
  *
- * @property string $type The registration type identifier
+ * @property string $type     The registration type identifier
  * @property string $resource The resource class name for the user model
- * @property string $model The model class name
- * @property string $action The action class to execute registration
+ * @property string $model    The model class name
+ * @property string $action   The action class to execute registration
  */
 class RegistrationWidget extends XotBaseWidget
 {
@@ -148,7 +148,7 @@ class RegistrationWidget extends XotBaseWidget
         /** @var object{execute: callable} $actionInstance */
         $actionInstance = app($this->action);
 
-        /** @phpstan-ignore method.notFound */
+        /* @phpstan-ignore method.notFound */
         $actionInstance->execute($record, $data);
 
         $lang = app()->getLocale();

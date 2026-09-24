@@ -9,7 +9,6 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 abstract class BaseAuthWidget extends XotBaseWidget
 {
-
     public function mount(): void
     {
         if (Auth::check()) {
