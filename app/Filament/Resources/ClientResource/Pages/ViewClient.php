@@ -10,4 +10,13 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewClient extends XotBaseViewRecord
 {
     protected static string $resource = ClientResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return [];
+    }
 }

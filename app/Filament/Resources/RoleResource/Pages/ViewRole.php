@@ -6,8 +6,18 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Resources\RoleResource\Schemas\RoleInfolist;
 
 class ViewRole extends XotBaseViewRecord
 {
     protected static string $resource = RoleResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(RoleInfolist::class)->getInfolistSchema();
+    }
 }

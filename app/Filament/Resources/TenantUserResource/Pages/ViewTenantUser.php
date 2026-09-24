@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
 use Modules\User\Filament\Resources\TenantUserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\User\Filament\Resources\TenantUserResource\Schemas\TenantUserInfolist;
 
 /**
  * Class ViewTenantUser.
@@ -13,4 +14,13 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTenantUser extends XotBaseViewRecord
 {
     protected static string $resource = TenantUserResource::class;
+
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    protected function getInfolistSchema(): array
+    {
+        return app(TenantUserInfolist::class)->getInfolistSchema();
+    }
 }
