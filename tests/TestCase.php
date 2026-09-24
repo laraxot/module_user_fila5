@@ -83,12 +83,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
-    protected function getPackageProviders(mixed $app): array
+    protected function getPackageProviders(Application $app): array
     {
-        if (! $app instanceof Application) {
-            throw new \InvalidArgumentException('Expected Illuminate\Foundation\Application.');
-        }
-
         return [
             ...parent::getPackageProviders($app),
             UserServiceProvider::class,

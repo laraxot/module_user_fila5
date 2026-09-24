@@ -6,8 +6,6 @@ declare(strict_types=1);
  * Pagina di modifica utente per Filament.
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\DeleteAction;
