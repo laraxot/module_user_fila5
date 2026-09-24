@@ -1,3 +1,23 @@
+---
+title: "Separazione dei Modelli User e Profile: Analisi e Raccomandazioni"
+type: concept
+tags: [user, profile, separation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-profile-separation separazione dei modelli user e profile: analisi e raccomandazioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
 
 ## Introduzione

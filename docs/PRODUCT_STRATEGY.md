@@ -1,3 +1,12 @@
+---
+title: "User Module - Product Strategy"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # User Module - Product Strategy
 
 **Module:** User  

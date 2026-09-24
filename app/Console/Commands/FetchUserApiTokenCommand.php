@@ -12,9 +12,9 @@ use Webmozart\Assert\Assert;
 
 class FetchUserApiTokenCommand extends Command
 {
-    private const INVALID_ENV = 1;
+    private const int INVALID_ENV = 1;
 
-    private const USER_NOT_FOUND = 2;
+    private const int USER_NOT_FOUND = 2;
 
     protected $signature = 'passport:fetch-user-token
                             {email : The email of the user to impersonate}';

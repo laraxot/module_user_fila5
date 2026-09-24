@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_d9X96A
 
+=======
+>>>>>>> .merge_file_6lhQRj
 use Filament\Panel;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;

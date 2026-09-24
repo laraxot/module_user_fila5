@@ -3,6 +3,15 @@ title: Tutorial Admin — Configurare Google OAuth (GOOGLE_CLIENT_ID/SECRET)
 type: tutorial
 module: User
 updated: 2026-04-20
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Tutorial: Configurare Google OAuth nel Backoffice

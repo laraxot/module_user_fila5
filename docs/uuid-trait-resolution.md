@@ -1,3 +1,23 @@
+---
+title: "User Module - UUID Trait Conflict Resolution"
+type: concept
+tags: [uuid, trait, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "uuid-trait-resolution user module - uuid trait conflict resolution"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # User Module - UUID Trait Conflict Resolution
 
 **Status**: Critical System Error Resolution
@@ -193,7 +213,7 @@ $token = $user->createToken('test');
 
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
-- [ ] Verify Quaeris contact token generation
+- [ ] Verify ExternalProject contact token generation
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -266,7 +286,7 @@ $token = $user->createToken('test');
 - [ ] Users can authenticate across tenants
 - [ ] API authentication works
 - [ ] LimeSurvey integration functional
-- [ ] Quaeris survey workflows operational
+- [ ] ExternalProject survey workflows operational
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

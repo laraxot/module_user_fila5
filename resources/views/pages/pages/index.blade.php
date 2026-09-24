@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-
 use Illuminate\View\View;
 use Modules\Cms\Models\Page;
 
@@ -16,10 +14,13 @@ render(function (View $view) {
     $hasCategory = \Schema::hasColumn('pages', 'category');
 
     // Recupero le pagine con paginazione (12 per pagina)
+    $searchQuery = request()->query('q');
+    $searchTerm = is_string($searchQuery) ? $searchQuery : '';
+
     $pages = Page::when(request()->has('q'), fn($query) => $query->where(
         'title',
         'like',
-        '%' . request()->get('q') . '%',
+        '%' . $searchTerm . '%',
     ));
 
     // Applichiamo il filtro per categoria solo se la colonna esiste
@@ -158,7 +159,7 @@ render(function (View $view) {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @forelse($pages as $page)
                 <a
-                    href="{{ url('/' . $locale . '/' . $page->slug) }}"
+                    href="{{ url('/' . $locale . '/pages/' . $page->slug) }}"
                     class="group flex flex-col h-full overflow-hidden bg-white rounded-lg shadow hover:shadow-md transition duration-300"
                 >
                     @if(isset($page->featured_image) && $page->featured_image)

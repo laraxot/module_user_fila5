@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /*
 Route::prefix('{lang}')->group(function () {
     Route::middleware('guest')->group(function () {

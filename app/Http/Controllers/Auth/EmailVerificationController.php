@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Handles the email verification process for authenticated users.
  *
@@ -16,7 +17,6 @@
  *
  * @return RedirectResponse a redirect response to the home page
  */
-declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Auth;
 

@@ -1,3 +1,23 @@
+---
+title: "Analisi Approfondita del Modulo User"
+type: concept
+tags: [filosofia, modulo, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filosofia-modulo-user analisi approfondita del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi Approfondita del Modulo User
 
 > **Generato**: 2025-12-24
@@ -473,5 +493,5 @@ BaseUser implements:
 
 - [Spatie Permission Documentation](https://spatie.be/docs/laravel-permission)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md)
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

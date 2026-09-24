@@ -5,11 +5,11 @@ owner: Modules/User
 severity: high
 created: 2026-05-22
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
 related:
-  - ./duplicated-profile-form.md
-  - ./duplicated-users-relation-manager.md
+  - "./duplicated-auth-widgets.md"
+  - "./duplicated-profile-form.md"
+  - "./duplicated-ratings-relation-manager.md"
+  - "./duplicated-users-relation-manager.md"
 ---
 
 # OAuth: cluster vs `Filament/Resources/` root

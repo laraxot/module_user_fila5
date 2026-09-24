@@ -1,3 +1,23 @@
+---
+title: "Accessor Delegation Pattern (SACRO)"
+type: pattern
+tags: [accessor, delegation, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "accessor-delegation-pattern accessor delegation pattern (sacro)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+---
+
 # Accessor Delegation Pattern (SACRO)
 
 Questo documento descrive il pattern di delegazione per gli accessor Eloquent con auto-persistenza, utilizzato per garantire performance e pulizia nei modelli del modulo User (es. BaseUser).

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Pages;
 
+<<<<<<< .merge_file_CfhiL0
+=======
+use Illuminate\Support\Collection;
+>>>>>>> .merge_file_uwcfh1
 use Laravel\Passport\ClientRepository;
 use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
@@ -32,7 +36,11 @@ function makeMockUser(bool $isSuper): BaseUser
         }
 
         /**
+<<<<<<< .merge_file_CfhiL0
          * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
+=======
+         * @param array<int, string>|Collection<int, string>|string $roles
+>>>>>>> .merge_file_uwcfh1
          */
         public function hasRole($roles, ?string $guard = null): bool
         {

@@ -1,3 +1,23 @@
+---
+title: "Risoluzione dei Conflitti Git nel Modulo User"
+type: concept
+tags: [conflict, resolution, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict-resolution-report-1 risoluzione dei conflitti git nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
@@ -67,5 +87,5 @@ Le modifiche apportate garantiscono:
 - [Best Practices Filament](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/translations_rules.md)
 - [PHPStan Livello 9](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/phpstan/phpstan_livello9_linee_guida.md)
-- [Implementazione Login](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_logout_implementation.md)
+- [Implementazione Login](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth-login-implementation.md)
+- [Implementazione Logout](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth-logout-implementation.md)

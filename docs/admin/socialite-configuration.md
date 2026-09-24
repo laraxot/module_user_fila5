@@ -1,4 +1,16 @@
 ---
+title: "Socialite Configuration"
+type: concept
+tags: [socialite, configuration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "socialite-configuration socialite configuration"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+---
 name: socialite-configuration-guide
 description: **Guide**: Configure social authentication credentials via Filament BackOffice
 **Applies to**: laravel/Modules/User

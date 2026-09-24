@@ -2,6 +2,15 @@
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 # Best Practices Migrazioni XotBaseMigration
 
@@ -84,4 +93,4 @@ public function addMember(Team $team, User $user)
 
 - Tutte le migration devono essere nella cartella `database/migrations` del modulo di riferimento.
 - Mai mettere migration custom in `laravel/database/migrations`.
-- Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path_conventions.md).
+- Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path-conventions-2.md).
