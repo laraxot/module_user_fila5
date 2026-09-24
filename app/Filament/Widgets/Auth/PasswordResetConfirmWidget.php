@@ -100,8 +100,9 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     ->send();
 
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+                /** @var UserContract $user */
                 $user = XotData::make()->getUserByEmail($email);
-                Assert::isInstanceOf($user, UserContract::class);
+                Assert::isInstanceOf($user, Authenticatable::class);
                 Auth::guard()->login($user);
 
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');

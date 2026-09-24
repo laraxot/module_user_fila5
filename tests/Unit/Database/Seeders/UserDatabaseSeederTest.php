@@ -1,42 +1,67 @@
 <?php
 
 declare(strict_types=1);
+
+namespace Modules\User\Tests\Unit\Database\Seeders;
+
 use Modules\User\Database\Seeders\UserDatabaseSeeder;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-/*
+/**
+ * Tests for UserDatabaseSeeder.
+ *
  * @covers \Modules\User\Database\Seeders\UserDatabaseSeeder
  */
-it('runs UserDatabaseSeeder successfully', function (): void {
-    $seeder = new UserDatabaseSeeder;
-    $seeder->setContainer(app());
+final class UserDatabaseSeederTest extends TestCase
+{
+    /**
+     * Test that UserDatabaseSeeder runs without errors.
+     */
+    public function testUserDatabaseSeederRunsSuccessfully(): void
+    {
+        // Arrange
+        $seeder = new UserDatabaseSeeder();
+        $seeder->setContainer($this->app);
 
-    $seeder->run();
+        // Act & Assert - Should not throw any exceptions
+        $seeder->run();
 
-    Assert::assertTrue(Role::where('name', 'super-admin')->where('guard_name', 'web')->exists());
+        // Verify that roles were created
+        $this->assertDatabaseHasRow('roles', [
+            'name' => 'super-admin',
+            'guard_name' => 'web',
+        ], 'user');
 
-    $permissionCount = Permission::where('guard_name', 'web')->count();
-    Assert::assertGreaterThan(0, $permissionCount);
-});
+        // Verify that at least one permission exists
+        $permissionCount = Permission::where('guard_name', 'web')->count();
+        $this->assertGreaterThan(0, $permissionCount, 'Expected at least one permission to be created');
+    }
 
-it('gives super-admin role all permissions after seeding', function (): void {
-    $seeder = new UserDatabaseSeeder;
-    $seeder->setContainer(app());
+    /**
+     * Test that super-admin role has all permissions after seeding.
+     */
+    public function testSuperAdminRoleHasAllPermissions(): void
+    {
+        // Arrange
+        $seeder = new UserDatabaseSeeder();
+        $seeder->setContainer($this->app);
 
-    $seeder->run();
+        // Act
+        $seeder->run();
 
-    $superAdmin = Role::where('name', 'super-admin')
-        ->where('guard_name', 'web')
-        ->firstOrFail();
+        // Assert
+        $superAdmin = Role::where('name', 'super-admin')
+            ->where('guard_name', 'web')
+            ->first();
 
-    $allPermissions = Permission::all();
-    $superAdminPermissions = $superAdmin->permissions;
+        $this->assertNotNull($superAdmin, 'Super-admin role should exist');
 
-    Assert::assertGreaterThan(0, $allPermissions->count());
-    Assert::assertGreaterThan(0, $superAdminPermissions->count());
-});
+        $allPermissions = Permission::all();
+        $superAdminPermissions = $superAdmin->permissions;
+
+        $this->assertGreaterThan(0, $allPermissions->count(), 'Expected permissions to exist');
+        $this->assertGreaterThan(0, $superAdminPermissions->count(), 'Super-admin should have permissions');
+    }
+}

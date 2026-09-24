@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Passport Cluster - Status Attuale e Lavoro Necessario
 
 **Status**: ✅ COMPLETATO

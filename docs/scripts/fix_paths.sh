@@ -5,6 +5,7 @@ canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
+<<<<<<< .merge_file_eOSoPG
 #!/bin/bash
 
 # Configurazione
@@ -151,3 +152,5 @@ main() {
 
 # Esegui main
 main "$@" 
+=======
+>>>>>>> .merge_file_NHFqsg

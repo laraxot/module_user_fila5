@@ -38,7 +38,7 @@ class CheckOtpExpiredRule implements ValidationRule
 
         $pwd_data = PasswordData::make();
         $otpExpirationMinutes = $pwd_data->otp_expiration_minutes;
-        $otp_expires_at = $updatedAt->addMinutes($otpExpirationMinutes);
+        $otp_expires_at = $this->user->updated_at->addMinutes($otpExpirationMinutes);
 
         if (now()->greaterThan($otp_expires_at)) {
             $fail($this->message);

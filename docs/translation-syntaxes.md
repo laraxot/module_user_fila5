@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

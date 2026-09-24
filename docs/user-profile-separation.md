@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
 
 ## Introduzione

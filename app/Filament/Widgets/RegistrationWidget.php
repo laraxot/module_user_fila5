@@ -147,11 +147,14 @@ class RegistrationWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @param  array<int|string, mixed>  $schema
      * @return array<int|string, Component>
      */
-    private static function normalizeFormSchema(array $schema): array
+    private static function normalizeFormSchema(mixed $schema): array
     {
+        if (! \is_array($schema)) {
+            return [];
+        }
+
         $normalized = [];
         foreach ($schema as $key => $component) {
             if (! $component instanceof Component) {

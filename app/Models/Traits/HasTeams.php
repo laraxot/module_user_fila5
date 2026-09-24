@@ -51,11 +51,11 @@ trait HasTeams
     /**
      * Get all teams the user belongs to.
      *
-     * @return Collection<int, Model>
+     * @return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
     {
-        /** @var Collection<int, Model> $teams */
+        /** @var Collection<int, TeamContract> $teams */
         $teams = $this->ownedTeams->merge($this->membershipTeams)->sortBy('name');
 
         return $teams;
@@ -156,24 +156,23 @@ trait HasTeams
     /**
      * Get all of the team's users including its owner.
      *
-     * @return Collection<int, XotUserContract>
+     * @return Collection<int, User>
      */
     public function getAllTeamUsersAttribute(): Collection
     {
-        $items = [];
-        foreach ($this->teamUsers as $membership) {
-            $user = $membership->user;
-            if ($user instanceof XotUserContract) {
-                $items[] = $user;
-            }
-        }
+        // teamUsers are Membership objects, we need to extract the User models
+        /** @var Collection<int, User> $users */
+        $users = $this->teamUsers->map(static function (TeamUser $membership): ?User {
+            // Membership always extends Model, check only if user attribute exists
+            return $membership->user;
+        })->filter();
 
         $owner = $this->owner;
-        if ($owner instanceof XotUserContract) {
-            $items[] = $owner;
+        if (null !== $owner && $owner instanceof User) {
+            return $users->merge([$owner]);
         }
 
-        return new Collection($items);
+        return $users;
     }
 
     /**
@@ -183,7 +182,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                                $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -274,7 +273,7 @@ trait HasTeams
     /**
      * Get the current team of the user's context.
      *
-     * @return BelongsTo<Model, Model>
+     * @return BelongsTo<Model&TeamContract, $this>
      */
     public function currentTeam(): BelongsTo
     {

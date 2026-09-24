@@ -57,6 +57,7 @@ The POST method is not supported for route it/auth/login. Supported methods: GET
 # Troubleshooting: Login Component Not Found
 
 ## Problema
+>>>>>>> 87273113 (.)
 **Errore:** `Livewire\Exceptions\ComponentNotFoundException: Unable to find component: [filament.auth.pages.login]`
 
 **Contesto:**
@@ -167,6 +168,7 @@ NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire
 La registrazione in `UserServiceProvider::registerLivewireAuthWidgets()` usa `Livewire::addComponent($class)` (hash-based) che è compatibile con `::class`.
 - **Uso:** Widget riutilizzabile per embedding
 - **View:** `pub_theme::filament.widgets.auth.login`
+>>>>>>> 87273113 (.)
 
 ### 3. Componente Livewire Standalone
 - **Path:** `Modules/User/app/Http/Livewire/Auth/Login.php`
@@ -246,6 +248,7 @@ php artisan config:cache  # Solo in produzione
 ### ServiceProvider
 - `app/Providers/Filament/AdminPanelProvider.php` - Panel principale
 - `Modules/User/Providers/UserServiceProvider.php` - ServiceProvider modulo User; registra i widget auth Livewire (`registerLivewireAuthWidgets()`) per risolvere gli alias `user::filament.widgets.auth.*`
+>>>>>>> 87273113 (.)
 - `Modules/User/Providers/Filament/AdminPanelProvider.php` - Panel User
 - `Modules/Xot/Providers/Filament/XotBaseMainPanelProvider.php` - Base panel provider
 
@@ -268,6 +271,9 @@ php artisan config:cache  # Solo in produzione
 - [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
 - [Theme Two – Pagina login](../../Themes/Two/docs/auth-login-page.md)
+>>>>>>> 87273113 (.)
 
 ## Risolto Da
 Autore: Sistema di documentazione automatica
+
+>>>>>>> 87273113 (.)

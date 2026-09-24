@@ -18,6 +18,7 @@ related:
   - "./profile.md"
 ---
 
+>>>>>>> 87273113 (.)
 # gdpr
 
 <!-- Contenuto migrato da _docs/gdpr.txt -->

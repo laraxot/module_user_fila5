@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  
@@ -163,6 +164,7 @@ use App\Models\User;
 ## 🔗 Collegamenti
 
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
+>>>>>>> 87273113 (.)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 

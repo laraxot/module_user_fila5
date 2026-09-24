@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Database\Factories\OauthAccessTokenFactory;
 use Modules\User\Database\Factories\OauthAuthCodeFactory;
 use Modules\User\Database\Factories\OauthClientFactory;

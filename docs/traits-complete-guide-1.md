@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-complete-guide-1.md
+>>>>>>> 87273113 (.)

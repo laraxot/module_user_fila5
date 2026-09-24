@@ -5,6 +5,8 @@ declare(strict_types=1);
  * @see https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one-dynamic-livewire-filter-ed05c978a97f
  */
 
+declare(strict_types=1);
+
 namespace Modules\User\Filament\Pages;
 
 use Filament\Widgets\Widget;

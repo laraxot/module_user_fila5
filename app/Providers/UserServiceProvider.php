@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types=1);
 /**
  * ----.
  */
+
+declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
@@ -41,6 +42,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
+        // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();
         $this->registerMailsNotification();

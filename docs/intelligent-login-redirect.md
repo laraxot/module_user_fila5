@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Redirect Intelligente dopo Login - Soluzione Implementata
 
 ## 🚨 Problema Risolto

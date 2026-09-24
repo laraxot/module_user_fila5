@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/performance-issues.md
+>>>>>>> 87273113 (.)

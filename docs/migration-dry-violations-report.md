@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module Migration Policy - DRY Violations Report
 
 ## Issue Summary

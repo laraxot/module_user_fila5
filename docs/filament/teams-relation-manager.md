@@ -18,6 +18,7 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
+>>>>>>> 87273113 (.)
 # TeamsRelationManager in User Module
 
 ## Panoramica

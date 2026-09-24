@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
+use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Traits\TransTrait;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -31,6 +32,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
+    // XotBaseWidget already implements HasForms and uses InteractsWithForms
+    use TransTrait;
+
     public ?string $current_password = '';
 
     public ?string $password = '';

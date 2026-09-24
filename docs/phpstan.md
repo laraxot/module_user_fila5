@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Analisi PHPStan del Modulo User
 
 ## Stato Attuale
@@ -27,21 +28,25 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 
 ### Team e BaseTeam
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#team-php-e-baseteam-php)
+>>>>>>> 87273113 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamInvitation
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teaminvitation-php)
+>>>>>>> 87273113 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamUser e BasePivot
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teamuser-php-e-basepivot-php)
+>>>>>>> 87273113 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### BaseUser
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#baseuser-php)
+>>>>>>> 87273113 (.)
 - Stato: 🔄 In Corso
 - Problemi rimanenti:
   - Proprietà non definite
@@ -51,6 +56,7 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 ## Collegamenti
 - [Documentazione Generale PHPStan](/docs/phpstan.md)
 - [Linee Guida PHPStan Livello 10](/docs/phpstan/phpstan_level10_linee_guida.md)
+>>>>>>> 87273113 (.)
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 

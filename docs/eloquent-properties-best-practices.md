@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
+>>>>>>> 87273113 (.)

@@ -18,11 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User vs Profile Models: Guida Completa
 
 ## Panoramica
 
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
+>>>>>>> 87273113 (.)
 
 ---
 
@@ -155,12 +157,14 @@ class Profile extends BaseProfile
 ---
 
 ## 3. Analisi nel Contesto <nome progetto>
+>>>>>>> 87273113 (.)
 
 ### 3.1 Architettura Attuale
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                        <nome progetto>                              │
+>>>>>>> 87273113 (.)
 ├──────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌─────────────────┐         ┌─────────────────┐              │
@@ -209,6 +213,7 @@ CURRENT STATE:
 **Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
 
 Per un progetto community come <nome progetto> dove:
+>>>>>>> 87273113 (.)
 - Gli utenti sono principalmente "attendees" agli eventi
 - Non servono profili multipli
 - L'avatar è l'unico dato profilo essenziale
@@ -538,3 +543,4 @@ class User extends Authenticatable
 ---
 
 *Documento generato per <nome progetto> - Progetto Community Laravel*
+>>>>>>> 87273113 (.)

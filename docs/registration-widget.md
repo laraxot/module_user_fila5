@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Registration Widget Documentation
 
 ## Overview
@@ -64,6 +65,7 @@ protected function getConfirmationRoute(): string
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> 87273113 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
 # Registration Widget Documentation
 
@@ -129,4 +131,5 @@ protected function getConfirmationRoute(): string
 ## References
 
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> 87273113 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
