@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\AuditCoverage\Tests;
 
+use PHPUnit\Framework\TestCase;
+
 /** Claude-audit static ratio bridge — suite Pest in tests/ */
-final class AuditBridgeTest87
+final class AuditBridgeTest87 extends TestCase
 {
     public function test_bridge(): void
     {
