@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 use Modules\User\Filament\Resources\PermissionResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Resources\PermissionResource\Schemas\PermissionInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPermission extends XotBaseViewRecord
 {

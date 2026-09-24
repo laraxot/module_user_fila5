@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource\Pages;
 
 use Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource\Schemas\OauthPersonalAccessClientInfolist;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
  * Class ViewOauthPersonalAccessClient.
