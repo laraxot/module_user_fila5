@@ -2,20 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/widgets.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
     'edit_user' => [
         'title' => 'Modifica Profilo Utente',
         'description' => 'Aggiorna le informazioni del profilo utente',
@@ -183,53 +170,5 @@ return [
             'success' => 'Disconnessione effettuata con successo',
             'confirm' => 'Sei sicuro di voler uscire?',
         ],
-    ],
-    'navigation' => [
-        'name' => 'Widgets',
-        'plural' => 'Widgets',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Widgets',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Widgets',
-    'plural_label' => 'Widgets (Plurale)',
-    'fields' => [
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Widgets',
-        ],
-        'edit' => [
-            'label' => 'Modifica Widgets',
-        ],
-        'delete' => [
-            'label' => 'Elimina Widgets',
-        ],
-    ],
-    'users_chart' => [
-        'heading' => 'Log Accessi',
-        'label' => 'Numero di accessi eseguiti',
     ],
 ];

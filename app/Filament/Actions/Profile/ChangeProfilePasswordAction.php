@@ -1,27 +1,27 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Actions\Profile;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
 /**
  * ---.
  */
-final class ChangeProfilePasswordAction extends Action
+final class ChangeProfilePasswordAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -31,19 +31,21 @@ final class ChangeProfilePasswordAction extends Action
             ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
-                $profile_data = Arr::except($record->toArray(), ['id']);
+                $profileData = Arr::except($record->toArray(), ['id']);
                 if (null === $user) {
-                    $user_class = XotData::make()->getUserClass();
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
                 if (null === $user) {
-                    /** @var array<string, mixed> $profile_data */
-                    $user = $record->user()->create($profile_data);
+                    /** @var array<string, mixed> $profileData */
+                    $user = $record->user()->create($profileData);
                 }
-                // @phpstan-ignore argument.type, method.notFound
-                $user->profile()->save($record);
+
+                if ($user instanceof UserContract && $record instanceof Model) {
+                    $user->profile()->save($record);
+                }
+
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*
                  * @var ProfileContract $record

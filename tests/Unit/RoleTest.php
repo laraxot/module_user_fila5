@@ -1,22 +1,15 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
+uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $attributes

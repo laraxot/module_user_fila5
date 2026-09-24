@@ -1,3 +1,23 @@
+---
+title: "Errore nel Logout con Volt e Folio"
+type: concept
+tags: [volt, folio, logout, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-logout-error-2 errore nel logout con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -114,6 +134,6 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Folio](./routing-best-practices-2.md)
 - [Best Practices Volt](./volt_best_practices.md)
-- [Gestione Sessione](./session_management.md) 
+- [Gestione Sessione](./session-management-2.md) 

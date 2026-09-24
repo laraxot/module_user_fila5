@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/team_user.php
 return [
     'navigation' => [
         'name' => 'Utente Team',
@@ -39,16 +35,94 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'team' => [
+            'name' => [
+                'label' => 'team.name',
+            ],
+        ],
+        'user' => [
+            'name' => [
+                'label' => 'user.name',
+            ],
+        ],
+        'role' => [
+            'label' => 'role',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Team User',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Team User',
         ],
         'delete' => [
             'label' => 'Elimina Team User',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'logout' => [
+            'tooltip' => 'logout',
+            'icon' => 'logout',
+            'label' => 'logout',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'icon' => 'applyFilters',
+            'tooltip' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'icon' => 'openFilters',
+            'tooltip' => 'openFilters',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'icon' => 'resetFilters',
+            'tooltip' => 'resetFilters',
+        ],
+        'applyTableColumnManager' => [
+            'label' => 'applyTableColumnManager',
+            'icon' => 'applyTableColumnManager',
+            'tooltip' => 'applyTableColumnManager',
+        ],
+        'openColumnManager' => [
+            'label' => 'openColumnManager',
+            'icon' => 'openColumnManager',
+            'tooltip' => 'openColumnManager',
+        ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => 'resetColumnManager',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'icon' => 'reorderRecords',
+            'tooltip' => 'reorderRecords',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+    ],
+    'sections' => [
+        'empty' => [
+            'label' => '',
+            'heading' => '',
         ],
     ],
 ];

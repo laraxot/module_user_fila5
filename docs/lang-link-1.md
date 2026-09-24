@@ -1,3 +1,23 @@
+---
+title: "Collegamento alle Traduzioni del Modulo User"
+type: concept
+tags: [lang, link]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang-link-1 collegamento alle traduzioni del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Collegamento alle Traduzioni del Modulo User
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

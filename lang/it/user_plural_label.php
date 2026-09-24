@@ -6,6 +6,6 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability (<500 LOC).
 // Canon: Modules/User/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/user_plural_label.php
-return array (
-  'plural_label' => 'User (Plurale)',
-);
+return [
+    'plural_label' => 'User (Plurale)',
+];

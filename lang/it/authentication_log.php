@@ -2,14 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/authentication_log.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Authentication Logs',
         'group' => 'Authentication',
@@ -71,6 +64,16 @@ return [
             'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
             'tooltip' => 'applyTableColumnManager',
+        ],
+        'resetColumnManager' => [
+            'tooltip' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
         ],
     ],
     'label' => 'Authentication Log',

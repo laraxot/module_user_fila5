@@ -1,8 +1,28 @@
+---
+title: "Implementazione del Selettore di Lingua con Bandiere SVG"
+type: concept
+tags: [header, language, selector, flags]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-language-selector-with-flags-1-1 implementazione del selettore di lingua con bandiere svg"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

@@ -181,7 +181,11 @@ $activeProviders = SsoProvider::where('is_active', true)->get();
 ### Autenticare Utente via SSO
 
 ```php
+<<<<<<< .merge_file_IxnWan
 use Modules\User\Models\User;
+=======
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> .merge_file_Vly2b8
 use Modules\User\Models\SsoProvider;
 
 $provider = SsoProvider::where('name', 'spid')->firstOrFail();

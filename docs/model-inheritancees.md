@@ -1,3 +1,23 @@
+---
+title: "Correzioni Ereditarietà Modelli - Modulo User"
+type: concept
+tags: [model, inheritancees]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model-inheritancees correzioni ereditarietà modelli - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -187,7 +207,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -381,7 +401,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -575,7 +595,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

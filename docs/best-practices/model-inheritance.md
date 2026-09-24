@@ -1,3 +1,23 @@
+---
+title: "Regole di Ereditarietà dei Modelli - Modulo User"
+type: concept
+tags: [model, inheritance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model-inheritance regole di ereditarietà dei modelli - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+---
+
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Contesto**: Refactoring per garantire la corretta gerarchia di ereditarietà dei modelli

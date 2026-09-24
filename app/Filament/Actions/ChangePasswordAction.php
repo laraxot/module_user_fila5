@@ -1,21 +1,20 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Actions;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
-final class ChangePasswordAction extends Action
+final class ChangePasswordAction extends XotBaseAction
 {
     protected function setUp(): void
     {

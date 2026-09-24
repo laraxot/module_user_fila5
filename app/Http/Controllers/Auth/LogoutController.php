@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Logs out the current user and redirects to the home page.
  *

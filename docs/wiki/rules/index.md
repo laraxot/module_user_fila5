@@ -34,7 +34,11 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
+<<<<<<< .merge_file_wpR297
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+=======
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
+>>>>>>> .merge_file_5FnR5Y
 
 ## Rules ricorrenti
 

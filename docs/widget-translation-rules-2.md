@@ -1,3 +1,23 @@
+---
+title: "Widget Translation Rules - Quaeris Project"
+type: rule
+tags: [widget, translation, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget-translation-rules-2 widget translation rules - quaeris project"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Widget Translation Rules - Quaeris Project
 
 ## Core Principles
@@ -183,7 +203,7 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

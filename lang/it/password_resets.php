@@ -2,23 +2,18 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/password_resets.php
 return [
     'fields' => [
-        'id' => [
-            'label' => 'id',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'token' => [
-            'label' => 'token',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
+        'id' => ['label' => 'id'],
+        'email' => ['label' => 'email'],
+        'token' => ['label' => 'token'],
+        'created_at' => ['label' => 'created_at'],
+    ],
+    'actions' => [
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
 ];

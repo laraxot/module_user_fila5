@@ -1,3 +1,23 @@
+---
+title: "Troubleshooting: Login Component Not Found"
+type: concept
+tags: [troubleshooting, login, component]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "troubleshooting-login-component troubleshooting: login component not found"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Troubleshooting: Login Component Not Found
 
 ## Regola architetturale
@@ -34,6 +54,9 @@ The POST method is not supported for route it/auth/login. Supported methods: GET
 **Soluzione (Volt + Folio + Laraxot):** Non si aggiungono rotte in `web.php`. Il progetto usa Volt + Folio + Laraxot: niente rotte custom, niente controller per frontend/auth. Il form di login deve essere solo il Filament LoginWidget; il submit avviene via Livewire (wire:submit.prevent). Verificare che in pagina non ci sia un form HTML con `action="{{ route('login') }}"` e usare solo `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`.
 
 ## Problema Originario
+# Troubleshooting: Login Component Not Found
+
+## Problema
 **Errore:** `Livewire\Exceptions\ComponentNotFoundException: Unable to find component: [filament.auth.pages.login]`
 
 **Contesto:**
@@ -142,6 +165,8 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)` — in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
 
 La registrazione in `UserServiceProvider::registerLivewireAuthWidgets()` usa `Livewire::addComponent($class)` (hash-based) che è compatibile con `::class`.
+- **Uso:** Widget riutilizzabile per embedding
+- **View:** `pub_theme::filament.widgets.auth.login`
 
 ### 3. Componente Livewire Standalone
 - **Path:** `Modules/User/app/Http/Livewire/Auth/Login.php`
@@ -246,4 +271,3 @@ php artisan config:cache  # Solo in produzione
 
 ## Risolto Da
 Autore: Sistema di documentazione automatica
-

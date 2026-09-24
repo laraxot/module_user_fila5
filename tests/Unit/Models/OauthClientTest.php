@@ -43,7 +43,9 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
-        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
+        $userKey = $user->getKey();
+        $userKeyString = (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '';
+        $client = TestCase::oauthClientTestPersistedClient(['user_id' => $userKeyString]);
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());
@@ -51,21 +53,21 @@ describe('Oauth Client', function (): void {
 
     test('oauth client is confidential when secret is present', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
+        $client = TestCase::oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
 
         Assert::assertTrue($client->confidential());
     });
 
     test('oauth client is not confidential when secret is empty', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient(['secret' => null]);
+        $client = TestCase::oauthClientTestPersistedClient(['secret' => null]);
 
         Assert::assertFalse($client->confidential());
     });
 
     test('oauth client has grant type check', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient([
+        $client = TestCase::oauthClientTestPersistedClient([
             'grant_types' => json_encode(['authorization_code', 'refresh_token']),
         ]);
 
@@ -75,7 +77,7 @@ describe('Oauth Client', function (): void {
 
     test('oauth client has scope check', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient();
+        $client = TestCase::oauthClientTestPersistedClient();
 
         Assert::assertTrue($client->hasScope('read'));
     });

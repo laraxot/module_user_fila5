@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -58,7 +57,9 @@ class CreateUserAction
         );
 
         // Return the refreshed user instance
-        /* @var UserContract $refreshedUser */
-        return $newlyCreatedUser->refresh();
+        /** @var UserContract $refreshedUser */
+        $refreshedUser = $newlyCreatedUser->refresh();
+
+        return $refreshedUser;
     }
 }
