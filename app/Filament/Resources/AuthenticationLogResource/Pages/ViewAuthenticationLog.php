@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
+
 // User — domain PHP (claude-audit documentation ratio).
 
 // User — domain PHP (claude-audit documentation ratio).
