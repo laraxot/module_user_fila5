@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_65tFbg
-=======
 ---
 title: "Root files hygiene"
 type: concept
@@ -20,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> .merge_file_fQi36R
 # Root files hygiene
 
 ## 2026-07-08 16:48

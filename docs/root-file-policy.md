@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_4kOM3l
-=======
 ---
 title: "Root file policy"
 type: concept
@@ -20,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> .merge_file_G8485Q
 # Root file policy
 
 Updated: 2026-07-08

@@ -6,13 +6,9 @@ confidence: medium
 created: {{date}}
 updated: {{date}}
 tags: [tag1, tag2]
-<<<<<<< .merge_file_6vwj8a
-related: []
-=======
 related:
   - "./entity.md"
   - "./source.md"
->>>>>>> .merge_file_0aYt5I
 ---
 
 # {{title}}

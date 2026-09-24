@@ -34,23 +34,7 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 
 - La sorgente di verita' per le Commands e' sempre il wiki locale
 - Non embeddare Commands nei prompt di avvio
-<<<<<<< .merge_file_A1nTaw
 - Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/index.md)
-=======
-<<<<<<< .merge_file_lF0jjB
-- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
-=======
-<<<<<<< .merge_file_pSo05w
-- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
-=======
-<<<<<<< .merge_file_EMypaT
-- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
-=======
-- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/index.md)
->>>>>>> .merge_file_Eqk5Jy
->>>>>>> .merge_file_av55fz
->>>>>>> .merge_file_99fgQH
->>>>>>> .merge_file_bgOmVK
 
 ## Aggiungere una Nuova COMMANDS
 

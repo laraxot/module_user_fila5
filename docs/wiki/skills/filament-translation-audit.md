@@ -5,10 +5,7 @@ tags: [skill, user, filament, translations, langserviceprovider]
 module: "User"
 created: 2026-05-12
 updated: 2026-05-12
-<<<<<<< .merge_file_S4jCct
-=======
 related:
->>>>>>> .merge_file_7pJ8jL
 ---
 
 # Skill — Audit traduzioni Filament User
