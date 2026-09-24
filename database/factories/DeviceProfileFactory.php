@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\DeviceProfile;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\DeviceProfile>
+ * @extends Factory<DeviceProfile>
  */
 class DeviceProfileFactory extends Factory
 {
@@ -19,6 +19,9 @@ class DeviceProfileFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

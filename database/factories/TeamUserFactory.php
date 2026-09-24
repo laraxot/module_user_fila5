@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\TeamUser;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\TeamUser>
+ * @extends Factory<TeamUser>
  */
 class TeamUserFactory extends Factory
 {
@@ -19,6 +19,9 @@ class TeamUserFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

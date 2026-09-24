@@ -26,7 +26,7 @@ trait HasSocialite
 
         $res = $socialiteUser->{$field};
 
-        return (string) $res;
+        return is_string($res) ? $res : '';
     }
 
     public function canAccessSocialite(): bool

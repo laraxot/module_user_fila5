@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -15,6 +14,7 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -67,9 +67,16 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-    $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
-    $driver->shouldReceive('user')->once()->andReturn($oauthUser);
+    $driver = new class($oauthUser) {
+        public function __construct(private SocialiteUserContract $oauthUser)
+        {
+        }
+
+        public function user(): SocialiteUserContract
+        {
+            return $this->oauthUser;
+        }
+    };
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
@@ -85,15 +92,22 @@ test('retrieves oauth user from socialite driver', function (): void {
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
     $exception = new InvalidStateException();
 
-    $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
-    $driver->shouldReceive('user')->once()->andThrow($exception);
+    $driver = new class($exception) {
+        public function __construct(private InvalidStateException $exception)
+        {
+        }
+
+        public function user(): never
+        {
+            throw $this->exception;
+        }
+    };
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
     $dispatcher = configureMock(Dispatcher::class, function (MockInterface $mock) use ($exception): void {
         $mock->allows([
-            'dispatch' => function (mixed $event) use ($exception): void {
+            'dispatch' => function (object $event) use ($exception): void {
                 Assert::assertInstanceOf(InvalidState::class, $event);
                 Assert::assertSame($exception, $event->exception);
             },
@@ -106,7 +120,7 @@ test('returns null and dispatches invalid state event when socialite state is in
 });
 
 test('creates socialite user model with normalized attributes', function (): void {
-    /** @var Modules\Xot\Contracts\UserContract $user */
+    /** @var UserContract $user */
     $user = UserFactory::new()->createOne();
 
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
@@ -121,7 +135,8 @@ test('creates socialite user model with normalized attributes', function (): voi
     $result = app(CreateSocialiteUserAction::class)->execute('github', $oauthUser, $user);
 
     Assert::assertInstanceOf(SocialiteUser::class, $result);
-    Assert::assertSame((string) $result->user_id, (string) $user->getKey());
+    $userKey = $user->getKey();
+    Assert::assertSame($result->user_id, (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '');
     Assert::assertSame('github', $result->provider);
     Assert::assertSame('provider-user-1', $result->provider_id);
 });

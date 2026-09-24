@@ -133,6 +133,7 @@ class Utils
         return FilamentShieldData::make()->filament_user->name;
     }
 
+<<<<<<< .merge_file_ZLf43o
     /** @return array<int, string> */
     public static function getGeneralResourcePermissionPrefixes(): array
     {
@@ -140,6 +141,19 @@ class Utils
         Assert::allString($res);
 
         return array_values($res);
+=======
+    /**
+     * @return list<string>
+     */
+    public static function getGeneralResourcePermissionPrefixes(): array
+    {
+        Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> .merge_file_fhGTS6
     }
 
     public static function getPagePermissionPrefix(): string
@@ -211,6 +225,7 @@ class Utils
         config(['filament-shield.exclude.enabled' => false]);
     }
 
+<<<<<<< .merge_file_ZLf43o
     /** @return array<int, string> */
     public static function getExcludedResouces(): array
     {
@@ -236,6 +251,45 @@ class Utils
         Assert::allString($res);
 
         return array_values($res);
+=======
+    /**
+     * @return list<string>
+     */
+    public static function getExcludedResouces(): array
+    {
+        Assert::isArray($res = config('filament-shield.exclude.resources'));
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function getExcludedPages(): array
+    {
+        Assert::isArray($res = config('filament-shield.exclude.pages'));
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function getExcludedWidgets(): array
+    {
+        Assert::isArray($res = config('filament-shield.exclude.widgets'));
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> .merge_file_fhGTS6
     }
 
     public static function isRolePolicyRegistered(): bool
@@ -269,16 +323,30 @@ class Utils
         return $modelClass;
     }
 
+<<<<<<< .merge_file_ZLf43o
     /** @return array<int, string> */
+=======
+    /**
+     * @return list<string>
+     */
+>>>>>>> .merge_file_fhGTS6
     public static function getResourcePermissionPrefixes(string $resourceFQCN): array
     {
         $res = static::doesResourceHaveCustomPermissions($resourceFQCN)
             ? $resourceFQCN::getPermissionPrefixes()
             : static::getGeneralResourcePermissionPrefixes();
         Assert::isArray($res);
+<<<<<<< .merge_file_ZLf43o
         Assert::allString($res);
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> .merge_file_fhGTS6
     }
 
     public static function getRoleModel(): string

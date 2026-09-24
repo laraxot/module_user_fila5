@@ -2,6 +2,15 @@
 name: header-design-colors-rule
 description: Header dropdowns (language and user) must follow Design’Comuni colour palette and UI patterns
 type: project
+related:
+  - "./agent-confidence-protocol.md"
+  - "./can-comment-retired-wrong-placement.md"
+  - "./frontend-stack-canonical.md"
+  - "./header-auth-flow.md"
+  - "./module-commit-push-after-change.md"
+  - "./navigation-properties.md"
+  - "./no-filament-labels.md"
+  - "./no-notifications-migration-in-user-module.md"
 ---
 
 ## Rule Overview

@@ -1,3 +1,21 @@
+---
+title: "Gerarchia delle Classi Base - Modulo User"
+type: concept
+tags: [base, classes, hierarchy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base-classes-hierarchy gerarchia delle classi base - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./baseuser.md"
+  - "./readme.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+---
+
 # Gerarchia delle Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  

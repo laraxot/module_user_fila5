@@ -13,9 +13,15 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
+<<<<<<< .merge_file_6NcETh
     private const NAME_SEARCH = 'before';
 
     private const SURNAME_SEARCH = 'after';
+=======
+    private const string NAME_SEARCH = 'before';
+
+    private const string SURNAME_SEARCH = 'after';
+>>>>>>> .merge_file_zJLwQr
 
     public ?string $name;
 
@@ -67,21 +73,37 @@ final readonly class UserNameFieldsResolver
     private function determineNameField(User $idpUser, string $searchMethod): Stringable
     {
         $name = $idpUser->getName();
+<<<<<<< .merge_file_6NcETh
         if (is_string($name) && '' !== $name) {
+=======
+        if (is_string($name) && ! empty($name)) {
+>>>>>>> .merge_file_zJLwQr
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
             if ($nameSection->isNotEmpty()) {
                 return $nameSection;
             }
         }
 
+<<<<<<< .merge_file_6NcETh
         $rawName = $this->extractRawNameField($idpUser);
         if ('' !== $rawName) {
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($rawName, $searchMethod);
+=======
+        $raw = $this->getRawUserData($idpUser);
+        $nameField = '';
+        if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
+            $nameField = $raw['name'];
+        }
+
+        if (! empty($nameField)) {
+            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
+>>>>>>> .merge_file_zJLwQr
             if ($nameSection->isNotEmpty() && ! filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
                 return $nameSection;
             }
         }
 
+<<<<<<< .merge_file_6NcETh
         return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
     }
 
@@ -93,6 +115,12 @@ final readonly class UserNameFieldsResolver
         return is_string($nameField) && '' !== $nameField ? $nameField : '';
     }
 
+=======
+        // Fallback to email analysis if name is empty or looks like an email
+        return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
+    }
+
+>>>>>>> .merge_file_zJLwQr
     private function analyzeEmailForNameSection(User $idpUser, string $searchMethod): Stringable
     {
         $email = $idpUser->getEmail();
@@ -118,6 +146,7 @@ final readonly class UserNameFieldsResolver
      */
     private function getRawUserData(User $idpUser): array
     {
+<<<<<<< .merge_file_6NcETh
         /** @var \ReflectionClass<User> $reflection */
         $reflection = new \ReflectionClass($idpUser);
 
@@ -170,6 +199,33 @@ final readonly class UserNameFieldsResolver
         $raw = [];
         foreach ($data as $key => $value) {
             $raw[(string) $key] = $value;
+=======
+        /** @var array<string, mixed> $raw */
+        $raw = [];
+        try {
+            $reflection = new \ReflectionClass($idpUser);
+            if ($reflection->hasMethod('getRaw')) {
+                $method = $reflection->getMethod('getRaw');
+                $method->setAccessible(true);
+                $rawValue = $method->invoke($idpUser);
+                if (is_array($rawValue)) {
+                    foreach ($rawValue as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
+                }
+            } elseif ($reflection->hasProperty('user')) {
+                $property = $reflection->getProperty('user');
+                $property->setAccessible(true);
+                $userData = $property->getValue($idpUser);
+                if (is_array($userData)) {
+                    foreach ($userData as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
+                }
+            }
+        } catch (\ReflectionException $e) {
+            // Fallback silenzioso
+>>>>>>> .merge_file_zJLwQr
         }
 
         return $raw;

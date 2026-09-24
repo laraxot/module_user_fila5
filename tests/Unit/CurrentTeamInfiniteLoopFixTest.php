@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;

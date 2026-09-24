@@ -21,7 +21,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    $this->user = UserFactory::new()->createOne([
+    /* @var TestCase $this */
+    TestCase::$user = UserFactory::new()->createOne([
         'email' => 'user-'.uniqid('', true).'@example.com',
     ]);
 });
@@ -44,12 +45,14 @@ describe('User Model', function (): void {
     });
 
     test('generates uuid for id', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertNotEmpty($user->id);
     });
 
     test('uses user database connection', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertIsString($user->getConnectionName());
     });
 
@@ -58,7 +61,7 @@ describe('User Model', function (): void {
         $users = UserFactory::new()->count(3)->create();
 
         Assert::assertCount(3, $users);
-        $users->each(function ($user) {
+        $users->each(function (User $user) {
             Assert::assertInstanceOf(User::class, $user);
         });
     });
@@ -125,17 +128,20 @@ describe('User Model', function (): void {
     });
 
     test('can have teams', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
     });
 
     test('can own teams', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(HasMany::class, $user->ownedTeams());
     });
 
     test('can have current team', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $team = TeamFactory::new()->createOne(['user_id' => $user->id]);
         $user->update(['current_team_id' => $team->id]);
 
@@ -143,64 +149,77 @@ describe('User Model', function (): void {
     });
 
     test('can have roles', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(BelongsToMany::class, $user->roles());
     });
 
     test('can have permissions', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(BelongsToMany::class, $user->permissions());
     });
 
     test('can have profile', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(HasOne::class, $user->profile());
     });
 
     test('can have devices', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(BelongsToMany::class, $user->devices());
     });
 
     test('can have authentication logs', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(MorphMany::class, $user->authentications());
     });
 
     test('can have oauth clients', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $relation = $user->clients();
         Assert::assertInstanceOf(MorphMany::class, $relation);
     });
 
     test('can have oauth tokens', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $relation = $user->tokens();
         Assert::assertInstanceOf(HasMany::class, $relation);
     });
 
     test('can have notifications', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(MorphMany::class, $user->notifications());
     });
 
     test('can have socialite users', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(HasMany::class, $user->socialiteUsers());
     });
 
     test('can join ateam', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $team = TeamFactory::new()->createOne();
         $user->membershipTeams()->attach($team);
 
         $freshModel1 = $user->fresh();
         Assert::assertNotNull($freshModel1);
-        Assert::assertTrue($freshModel1->teams->contains('id', $team->id));
+        // BaseUser aliasa HasTeams::teams in membershipTeams: la property
+        // `teams` è la relazione spatie/permission (model_has_role), non team_user.
+        Assert::assertTrue($freshModel1->membershipTeams->contains('id', $team->id));
     });
 
     test('can leave ateam', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $team = TeamFactory::new()->createOne();
         $user->membershipTeams()->attach($team);
         $user->membershipTeams()->detach($team);
@@ -211,7 +230,8 @@ describe('User Model', function (): void {
     });
 
     test('can own multiple teams', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         TeamFactory::new()->count(3)->create(['user_id' => $user->id]);
 
         $freshModel3 = $user->fresh();
@@ -220,7 +240,8 @@ describe('User Model', function (): void {
     });
 
     test('can switch current team', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         $team1 = TeamFactory::new()->createOne(['user_id' => $user->id]);
         $team2 = TeamFactory::new()->createOne(['user_id' => $user->id]);
 
@@ -233,11 +254,12 @@ describe('User Model', function (): void {
     });
 
     test('permission skip check', function (): void {
-        if (! $this->userTableExists('model_has_permission')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
         $role = RoleFactory::new()->createOne(['name' => 'assigned role '.uniqid()]);
 
         $user->assignRole($role);
@@ -246,11 +268,12 @@ describe('User Model', function (): void {
     });
 
     test('can have direct permissions', function (): void {
-        if (! $this->userTableExists('model_has_permission')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
         $permission = PermissionFactory::new()->createOne(['name' => 'direct permission '.uniqid()]);
 
         $user->givePermissionTo($permission);
@@ -259,11 +282,12 @@ describe('User Model', function (): void {
     });
 
     test('can check multiple permissions', function (): void {
-        if (! $this->userTableExists('model_has_permission')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
         $uid = uniqid();
         $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'delete posts '.$uid]);
@@ -274,11 +298,12 @@ describe('User Model', function (): void {
     });
 
     test('can check any permission', function (): void {
-        if (! $this->userTableExists('model_has_permission')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
         $uid = uniqid();
         $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'delete posts '.$uid]);
@@ -289,12 +314,14 @@ describe('User Model', function (): void {
     });
 
     test('implements has media interface', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('can have media attached', function (): void {
-        $user = $this->requireUser();
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
         Assert::assertInstanceOf(MorphMany::class, $user->media());
     });
 
@@ -305,8 +332,8 @@ describe('User Model', function (): void {
         $activeUsers = User::where('is_active', true)->get();
         $inactiveUsers = User::where('is_active', false)->get();
 
-        Assert::assertSame(true, $activeUsers->every(fn ($user) => $user->is_active));
-        Assert::assertSame(true, $inactiveUsers->every(fn ($user) => ! $user->is_active));
+        Assert::assertSame(true, $activeUsers->every(fn (User $user) => $user->is_active));
+        Assert::assertSame(true, $inactiveUsers->every(fn (User $user) => ! $user->is_active));
     });
 
     test('can filter by email verified', function (): void {
@@ -316,8 +343,8 @@ describe('User Model', function (): void {
         $verifiedUsers = User::whereNotNull('email_verified_at')->get();
         $unverifiedUsers = User::whereNull('email_verified_at')->get();
 
-        Assert::assertSame(true, $verifiedUsers->every(fn ($user) => null !== $user->email_verified_at));
-        Assert::assertSame(true, $unverifiedUsers->every(fn ($user) => null === $user->email_verified_at));
+        Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => null !== $user->email_verified_at));
+        Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => null === $user->email_verified_at));
     });
 
     test('can filter by language', function (): void {
@@ -327,7 +354,7 @@ describe('User Model', function (): void {
         $italianUsers = User::where('lang', 'it')->get();
         $englishUsers = User::where('lang', 'en')->get();
 
-        Assert::assertSame(true, $italianUsers->every(fn ($user) => 'it' === $user->lang));
-        Assert::assertSame(true, $englishUsers->every(fn ($user) => 'en' === $user->lang));
+        Assert::assertSame(true, $italianUsers->every(fn (User $user) => 'it' === $user->lang));
+        Assert::assertSame(true, $englishUsers->every(fn (User $user) => 'en' === $user->lang));
     });
 });

@@ -13,7 +13,8 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    $this->skipUnlessUserTable('tenants');
+    /* @var TestCase $this */
+    TestCase::skipUnlessUserTable('tenants');
 });
 
 describe('Tenant', function (): void {
@@ -30,8 +31,9 @@ describe('Tenant', function (): void {
     });
 
     test('can create tenant with all fields', function (): void {
-        $this->skipUnlessTenantColumn('settings');
-        $this->skipUnlessTenantColumn('trial_ends_at');
+        /* @var TestCase $this */
+        TestCase::skipUnlessTenantColumn('settings');
+        TestCase::skipUnlessTenantColumn('trial_ends_at');
 
         $tenantData = [
             'name' => 'Full Tenant',
@@ -58,10 +60,12 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has soft deletes', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('Tenant model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted tenant', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
     });
 
@@ -118,7 +122,7 @@ describe('Tenant', function (): void {
             ->get();
 
         Assert::assertCount(2, $activeTenants);
-        Assert::assertTrue($activeTenants->every(fn ($tenant) => (bool) $tenant->is_active));
+        Assert::assertTrue($activeTenants->every(fn (Tenant $tenant) => (bool) $tenant->is_active));
     });
 
     test('can find tenants by name pattern', function (): void {
@@ -131,7 +135,7 @@ describe('Tenant', function (): void {
         $companyTenants = Tenant::where('name', 'like', '%'.$marker.'%Company%')->get();
 
         Assert::assertCount(1, $companyTenants);
-        Assert::assertTrue($companyTenants->every(fn ($tenant) => str_contains((string) $tenant->name, 'Company')));
+        Assert::assertTrue($companyTenants->every(fn (Tenant $tenant) => str_contains((string) $tenant->name, 'Company')));
     });
 
     test('can find tenants by domain pattern', function (): void {
@@ -144,10 +148,11 @@ describe('Tenant', function (): void {
         $exampleTenants = Tenant::where('domain', 'like', '%'.$marker.'.example.com')->get();
 
         Assert::assertCount(3, $exampleTenants);
-        Assert::assertTrue($exampleTenants->every(fn ($tenant) => str_ends_with((string) $tenant->domain, '.example.com')));
+        Assert::assertTrue($exampleTenants->every(fn (Tenant $tenant) => str_ends_with((string) $tenant->domain, '.example.com')));
     });
 
     test('can update tenant', function (): void {
+        /** @var TestCase $this */
         $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
 
         $tenant->update(['name' => 'New Name']);
@@ -217,7 +222,8 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by trial status', function (): void {
-        $this->skipUnlessTenantColumn('trial_ends_at');
+        /* @var TestCase $this */
+        TestCase::skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
 
@@ -243,7 +249,8 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by settings value', function (): void {
-        $this->skipUnlessTenantColumn('settings');
+        /* @var TestCase $this */
+        TestCase::skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();
 

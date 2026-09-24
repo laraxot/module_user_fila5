@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
@@ -17,7 +18,7 @@ use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Contracts\Role;
 
 /**
- * Stub model for HasTeams trait unit tests — satisfies PHPStan in-context analysis.
+ * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
  * @property string                            $id
  * @property int|null                          $current_team_id
@@ -44,30 +45,32 @@ class MockUserWithTeams extends Model
 
     public function getKey(): string
     {
-        return (string) ($this->attributes['id'] ?? 'mock-user-1');
+        $id = $this->attributes['id'] ?? 'mock-user-1';
+
+        return is_scalar($id) ? (string) $id : 'mock-user-1';
     }
 
-    /**
-     * @param string|int|Permission $permission
-     */
-    public function hasPermissionTo($permission, ?string $guardName = null): bool
+    public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool
     {
         return false;
     }
 
     /**
-     * @param string|int|array<int, string>|Role|\BackedEnum $roles
+     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      */
-    public function hasRole($roles, ?string $guard = null): bool
+    public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {
         return false;
     }
 
     /**
-     * @return BelongsToMany<Team, $this>
+     * @return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
      */
     public function membershipTeams(): BelongsToMany
     {
-        return $this->belongsToManyX(Team::class);
+        /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX(Team::class);
+
+        return $relation;
     }
 }

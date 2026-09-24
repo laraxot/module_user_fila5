@@ -1,3 +1,16 @@
+---
+title: "Passport Administrative Actions in Filament"
+type: concept
+tags: [passport, actions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-actions passport administrative actions in filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./socialite.md"
+---
+
 # Passport Administrative Actions in Filament
 
 > Riferimenti ufficiali: [Laravel Passport 12.x Docs](https://laravel.com/docs/12.x/passport) e [laravel/passport GitHub](https://github.com/laravel/passport).

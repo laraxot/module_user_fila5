@@ -1,14 +1,12 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Actions\Profile;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Model;
@@ -18,11 +16,12 @@ use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
 /**
  * ---.
  */
-final class ChangeProfilePasswordAction extends Action
+final class ChangeProfilePasswordAction extends XotBaseAction
 {
     protected function setUp(): void
     {

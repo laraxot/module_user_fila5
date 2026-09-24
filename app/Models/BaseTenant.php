@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
@@ -65,7 +66,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     /**
      * Ottiene tutti i membri associati al tenant.
      *
-     * @return BelongsToMany<Model, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
      */
     public function members(): BelongsToMany
     {
@@ -78,7 +79,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     /**
      * Ottiene tutti gli utenti associati al tenant.
      *
-     * @return BelongsToMany<Model, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
     {

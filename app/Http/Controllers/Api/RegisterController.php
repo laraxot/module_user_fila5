@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Handles the registration of a new user.
  *
@@ -16,8 +17,6 @@
  *
  * @return JsonResponse The JSON response
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
 
@@ -55,7 +54,6 @@ class RegisterController extends XotBaseController
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
-        $input['password'] = bcrypt((string) $input['password']);
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);

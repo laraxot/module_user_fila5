@@ -9,7 +9,7 @@ use Filament\Actions\ViewAction;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Modules\User\Actions\GetPermissionModelAction;
+use Modules\User\Actions\Shield\GetPermissionModelAction;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;

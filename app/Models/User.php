@@ -145,6 +145,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereTwoFactorSecret($value)
  * @method static Builder<static>|User whereUuid($value)
  *
+ * @property Collection<int, Team> $membershipTeams
+ * @property int|null              $membership_teams_count
+ *
+ * @method static Builder<static>|User team($teams, bool $without = false)
+ * @method static Builder<static>|User withoutTeam($teams)
+ *
  * @mixin \Eloquent
  */
 class User extends BaseUser

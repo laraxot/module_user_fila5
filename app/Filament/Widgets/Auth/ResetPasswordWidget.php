@@ -24,8 +24,6 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-    /** @phpstan-var view-string */
-    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::widgets.auth.reset-password-widget';
 
     /**

@@ -1,16 +1,14 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
  * @see https://github.com/3x1io/filament-user/blob/main/src/resources/UserResource.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -28,12 +26,6 @@ class UserResource extends XotBaseResource
     // {
     //    static::$extendFormCallback = $callback;
     // }
-
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return UserForm::getFormSchema();
-    }
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {

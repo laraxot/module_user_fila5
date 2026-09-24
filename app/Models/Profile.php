@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
@@ -184,6 +185,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereIsActive($value)
  * @method static Builder<static>|Profile whereType($value)
  * @method static Builder<static>|Profile whereUserName($value)
+ * @method static Builder<static>|Profile team($teams, bool $without = false)
+ * @method static Builder<static>|Profile withoutTeam($teams)
  *
  * @mixin \Eloquent
  */
@@ -201,7 +204,7 @@ class Profile extends BaseProfile implements HasMedia
     /**
      * Get the teams that the profile belongs to.
      *
-     * @return BelongsToMany<Team, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Team, $this, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
     {

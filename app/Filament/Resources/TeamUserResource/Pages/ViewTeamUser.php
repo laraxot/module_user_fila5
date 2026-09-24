@@ -20,8 +20,7 @@ class ViewTeamUser extends XotBaseViewRecord
     /**
      * @return array<string, Component>
      */
-    #[\Override]
-    protected function getInfolistSchema(): array
+    public function getInfolistSchema(): array
     {
         return [
             'team_user' => Section::make()->schema([

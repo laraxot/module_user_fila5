@@ -70,5 +70,20 @@ return [
             'icon' => 'deactivate',
             'tooltip' => 'deactivate',
         ],
+        'edit' => [
+            'tooltip' => 'edit',
+            'icon' => 'edit',
+            'label' => 'edit',
+        ],
+        'view' => [
+            'tooltip' => 'view',
+            'icon' => 'view',
+            'label' => 'view',
+        ],
+        'verify_email' => [
+            'tooltip' => 'verify_email',
+            'icon' => 'verify_email',
+            'label' => 'verify_email',
+        ],
     ],
 ];

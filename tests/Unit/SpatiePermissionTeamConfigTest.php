@@ -1,14 +1,15 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\PermissionRegistrar;
 use Spatie\Permission\Support\Config as PermissionConfig;
+
+uses(TestCase::class);
 
 test('spatie permission registrar uses user module models for teams', function (): void {
     $registrar = app(PermissionRegistrar::class);

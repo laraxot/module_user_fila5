@@ -1,14 +1,18 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_oUDWvq
 
+=======
+>>>>>>> .merge_file_ojHM12
 use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 function createMockSocialiteUserForDomain(?string $email): SocialiteUser
 {
@@ -26,8 +30,12 @@ describe('AnalyzeSocialiteEmailDomainAction', function () {
     it('throws for empty provider', function () {
         $ssoUser = createMockSocialiteUserForDomain('user@example.com');
 
-        expect(fn () => app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, ''))
-            ->toThrow(InvalidArgumentException::class);
+        try {
+            app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, '');
+            Assert::fail('Expected InvalidArgumentException');
+        } catch (InvalidArgumentException $exception) {
+            Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
+        }
     });
 
     it('detects first party domain', function () {

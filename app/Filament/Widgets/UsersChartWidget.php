@@ -9,14 +9,14 @@ use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Flowframe\Trend\Trend;
 // use Filament\Widgets\Concerns\InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
 use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;
+use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Webmozart\Assert\Assert;
 
-class UsersChartWidget extends XotBaseChartWidget
+class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
 {
     use InteractsWithActions;
     use InteractsWithForms;

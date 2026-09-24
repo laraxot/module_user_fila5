@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_TdXqFs
 
+=======
+<<<<<<< .merge_file_G3cNcC
+
+=======
+>>>>>>> .merge_file_42qSrp
+>>>>>>> .merge_file_0cpOuB
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;

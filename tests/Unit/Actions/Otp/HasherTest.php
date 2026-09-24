@@ -1,11 +1,19 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_NPPnlX
 
 use Modules\User\Actions\Otp\Hasher;
 use PHPUnit\Framework\Assert;
 
 uses(Modules\User\Tests\TestCase::class);
+=======
+use Modules\User\Actions\Otp\Hasher;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+>>>>>>> .merge_file_HByJVY
 
 it('makes hashed value', function (): void {
     $hasher = app(Hasher::class);

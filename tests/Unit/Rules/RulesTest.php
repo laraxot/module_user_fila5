@@ -1,10 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Rules\CheckOtpExpiredRule;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('CheckOtpExpiredRule can be instantiated', function () {
     try {

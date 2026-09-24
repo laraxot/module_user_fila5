@@ -1,18 +1,19 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
@@ -73,18 +74,17 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use RelationX;
     use Updater;
 
     // use HasUuids;
 
-    final public const ROLE_ADMINISTRATOR = 1;
+    final public const int ROLE_ADMINISTRATOR = 1;
 
-    final public const ROLE_OWNER = 2;
+    final public const int ROLE_OWNER = 2;
 
-    final public const ROLE_USER = 3;
+    final public const int ROLE_USER = 3;
 
     protected $connection = 'user';
 
@@ -121,7 +121,7 @@ class Role extends SpatieRole
     }
 
     /**
-     * @return BelongsToMany<Permission, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
      */
     public function permissions(): BelongsToMany
     {

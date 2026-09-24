@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
@@ -37,13 +36,12 @@ class AssignTeamCommand extends Command
     {
         $xot = XotData::make();
         $email = text('email ?');
-        $user_class = $xot->getUserClass();
-        /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $teamClass = $xot->getTeamClass();
 
-        /** @var array<int|string, string>|Collection<int|string, string> */
+        /** @var array<int|string, string> $opts */
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         $rows = multiselect(

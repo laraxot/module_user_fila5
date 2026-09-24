@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -13,9 +11,12 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
+
+uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $attributes

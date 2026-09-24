@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ----.
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
@@ -42,7 +41,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
-        // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();
         $this->registerMailsNotification();
@@ -104,7 +102,8 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
-        ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
+        // Vendor contract: toMailUsing callback receives mixed $notifiable.
+        ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
              * return (new MailMessage)
              * ->template('user::notifications.email')
@@ -161,7 +160,8 @@ class UserServiceProvider extends XotBaseServiceProvider
          * ->salutation($salutation);
          * });
          */
-        VerifyEmail::toMailUsing(function ($notifiable, string $url): SpatieEmail {
+        // Vendor contract: toMailUsing callback receives mixed $notifiable.
+        VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');
             $email->mergeData([

@@ -1,7 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_d9X96A
 
+=======
+>>>>>>> .merge_file_6lhQRj
+use Filament\Panel;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
@@ -30,21 +34,21 @@ test('admin panel requires admin or super-admin role', function (): void {
         }
     };
 
-    $panel = app(Filament\Panel::class)->id('admin');
+    $panel = app(Panel::class)->id('admin');
 
-    /** @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertFalse($user->canAccessPanel($panel));
 
     $user->hasAdminRole = true;
-    /** @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertTrue($user->canAccessPanel($panel));
 });
 
 test('password mutator hashes long passphrases instead of storing plaintext', function (): void {
-    $user = new class extends BaseUser {};
+    $user = new class extends BaseUser {
+    };
     $longPassphrase = 'this-is-a-very-long-passphrase-that-exceeds-thirty-two-characters';
 
     $user->password = $longPassphrase;
 
-    Assert::assertTrue(Hash::check($longPassphrase, (string) $user->getAttributes()['password']));
+    $storedPassword = $user->getAttributes()['password'];
+    Assert::assertTrue(Hash::check($longPassphrase, is_string($storedPassword) ? $storedPassword : ''));
 });

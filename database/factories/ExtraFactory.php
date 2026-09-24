@@ -4,24 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Extra;
+use Modules\Xot\Database\Factories\BaseExtraFactory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\Extra>
+ * La forma del dato sta in {@see BaseExtraFactory}, nel modulo che possiede il
+ * concetto. Qui si dichiara **solo** il modello: e' quello che porta con se' la
+ * connection di questo modulo.
+ *
+ * @extends BaseExtraFactory<Extra>
  */
-class ExtraFactory extends Factory
+class ExtraFactory extends BaseExtraFactory
 {
-    /**
-     * The name of the factory's corresponding model.
-     */
+    /** @var class-string<Extra> */
     protected $model = Extra::class;
-
-    /**
-     * Define the model's default state.
-     */
-    public function definition(): array
-    {
-        return [];
-    }
 }

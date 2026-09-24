@@ -16,20 +16,14 @@ class GetUserTeamsOptionAction
      */
     public function execute(): array
     {
-        $teams = TeamUser::where('user_id', authId())->get();
-
-        /** @var array<int|string, string> $options */
-        $options = ['' => '--- Select ---'];
-
+        $teams = TeamUser::with('team')->where('user_id', authId())->get();
+        $result = [];
         foreach ($teams as $teamUser) {
-            $team = $teamUser->team;
-            if (null === $team) {
-                continue;
+            if (null !== $teamUser->team) {
+                $result[(string) $teamUser->team->name] = (string) $teamUser->team->id;
             }
-
-            $options[(string) $team->getKey()] = (string) $team->getAttribute('name');
         }
 
-        return $options;
+        return $result;
     }
 }

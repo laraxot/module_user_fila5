@@ -24,7 +24,7 @@ use Modules\User\Models\OauthToken;
  * @property int|null                       $tokens_count
  * @property \Modules\User\Models\User|null $user
  *
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array<int, mixed> $haystack)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array<int, string> $haystack)
  * @method static \Laravel\Passport\Database\Factories\ClientFactory   factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newQuery()
@@ -40,9 +40,6 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
-        // @phpstan-ignore-next-line
-        if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
-            parent::initializeHasUniqueStringIds();
-        }
+        parent::initializeHasUniqueStringIds();
     }
 }

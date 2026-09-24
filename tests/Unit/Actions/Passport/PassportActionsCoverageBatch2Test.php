@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -118,7 +117,7 @@ test('regenerates client secret from model instance and client id', function ():
     $storedSecret = DB::connection('user')->table('oauth_clients')->where('id', $clientId)->value('secret');
 
     Assert::assertNotSame($secretFromId, $storedSecret);
-    Assert::assertTrue(Hash::check($secretFromId, (string) $storedSecret));
+    Assert::assertTrue(Hash::check($secretFromId, is_string($storedSecret) ? $storedSecret : ''));
 });
 
 test('revokes refresh token and returns false for missing token', function (): void {

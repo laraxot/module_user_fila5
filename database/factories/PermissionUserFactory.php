@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\PermissionUser;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\PermissionUser>
+ * @extends Factory<PermissionUser>
  */
 class PermissionUserFactory extends Factory
 {
@@ -19,6 +19,9 @@ class PermissionUserFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

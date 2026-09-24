@@ -25,6 +25,7 @@ class SendOtpByUserAction
     public function __construct(
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
+        private readonly Hasher $hasher,
     ) {
     }
 
@@ -73,7 +74,7 @@ class SendOtpByUserAction
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
         $user->update([
-            'password' => app(HashOtpValueAction::class)->execute($temporaryPassword),
+            'password' => $this->hasher->make($temporaryPassword),
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);

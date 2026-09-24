@@ -1,11 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
-uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('TeamInvitation mail can be instantiated', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
