@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_SJwWnc
-
-=======
->>>>>>> .merge_file_5xUWD1
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

@@ -17,11 +17,6 @@ related:
 
 Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md` (v5.1) e da **STORY-003**.
 
-<<<<<<< .merge_file_wzpEPb
-## Cosa fare su questo owner
-
-1. `git remote -v` — sync **tutte** le organizzazioni (`fetch` + `pull --ff-only` + `push`, mai `--force`).
-=======
 User (e ogni altro path in `gitmodules.ini`) è una **repository Git autonoma**,
 non un submodule. Lo status si legge con `git -C laravel/Modules/User`, mai
 dalla root e mai tramite Shell `working_directory`. Verificare
@@ -30,7 +25,6 @@ dalla root e mai tramite Shell `working_directory`. Verificare
 ## Cosa fare su questo owner
 
 1. `git -C . remote -v` — remote reale del modulo (`laraxot/module_user_fila5`), non la root.
->>>>>>> .merge_file_PKnPrj
 2. Quality gates da `laravel/`: phpstan → phpmd → phpinsights (`--composer=composer.lock`).
 3. Marker Git: risoluzione manuale forward-only (no `git restore`).
 
