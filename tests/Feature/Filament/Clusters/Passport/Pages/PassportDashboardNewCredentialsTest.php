@@ -27,16 +27,17 @@ uses(TestCase::class);
  */
 function makeMockUser(bool $isSuper): BaseUser
 {
-    return new class($isSuper) extends BaseUser
-    {
-        public function __construct(private readonly bool $isSuper) {}
+    return new class($isSuper) extends BaseUser {
+        public function __construct(private readonly bool $isSuper)
+        {
+        }
 
         /**
-         * @param  array<int, string>|Collection<int, string>|string  $roles
+         * @param array<int, string>|Collection<int, string>|string $roles
          */
         public function hasRole($roles, ?string $guard = null): bool
         {
-            if ($roles === 'super-admin') {
+            if ('super-admin' === $roles) {
                 return $this->isSuper;
             }
 

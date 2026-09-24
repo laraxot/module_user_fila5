@@ -16,7 +16,8 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
-    ) {}
+    ) {
+    }
 
     /**
      * Execute the action.
@@ -34,7 +35,7 @@ class GetDomainAllowListAction
             return array_values(array_filter(array_map(
                 static fn (mixed $item): ?string => \is_scalar($item) || $item instanceof \Stringable ? (string) $item : null,
                 $res
-            ), static fn (?string $item): bool => $item !== null));
+            ), static fn (?string $item): bool => null !== $item));
         }
 
         return [];
