@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 /** Claude-audit static ratio bridge — suite canonica in tests/ */
 final class AuditBridgeTest14 extends TestCase
 {
-    public function test_bridge(): void
+    public function testBridge(): void
     {
         self::assertTrue(true);
     }
