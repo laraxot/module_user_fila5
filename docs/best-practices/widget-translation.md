@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/widget-translation-rules.md
->>>>>>> 87273113 (.)

@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis.md
->>>>>>> 87273113 (.)

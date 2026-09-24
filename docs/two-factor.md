@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
->>>>>>> 87273113 (.)

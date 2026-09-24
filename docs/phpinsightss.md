@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-errors.md
->>>>>>> 87273113 (.)

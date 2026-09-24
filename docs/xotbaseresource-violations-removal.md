@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
@@ -58,7 +57,6 @@ related:
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
 ### Modulo ExternalProject
->>>>>>> 87273113 (.)
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

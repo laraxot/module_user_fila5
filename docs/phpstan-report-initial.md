@@ -16,5 +16,3 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
 
  [OK] No errors        
-
->>>>>>> 87273113 (.)

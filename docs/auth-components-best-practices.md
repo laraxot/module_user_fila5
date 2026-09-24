@@ -24,7 +24,6 @@ related:
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
->>>>>>> 87273113 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -171,7 +170,6 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 - `/laravel/Modules/Lang/lang/en/auth.php`
 
 ## Componenti di Autenticazione
->>>>>>> 87273113 (.)
 
 ### 1. Pagine di Autenticazione
 
@@ -399,7 +397,6 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
->>>>>>> 87273113 (.)
 
 ## Riferimenti
 

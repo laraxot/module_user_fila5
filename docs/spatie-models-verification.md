@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-models-verification.md
->>>>>>> 87273113 (.)

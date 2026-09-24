@@ -18,7 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
->>>>>>> 87273113 (.)
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -29,7 +28,6 @@ Data: 2025-04-23 19:09:56
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_user_fila5
->>>>>>> 87273113 (.)
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI 
 - **Totale file PHP**: 673

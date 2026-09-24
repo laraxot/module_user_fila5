@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Level 10 - Progresso Finale
 
 **Data**: 2025-01-22
@@ -73,5 +72,3 @@ Da identificare e correggere sistematicamente.
 - [OAuth Resources Corrections](./phpstan-corrections-oauth-resources.md)
 
 ---
-
->>>>>>> 87273113 (.)

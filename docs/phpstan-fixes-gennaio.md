@@ -265,5 +265,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)

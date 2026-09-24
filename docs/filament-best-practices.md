@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-best-practices.md
->>>>>>> 87273113 (.)

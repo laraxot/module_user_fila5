@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # LoginWidget Form Data Binding Fix
 
 ## Problema
@@ -65,7 +64,6 @@ Per `LoginWidget`, che non ha un modello associato (`getFormModel()` restituisce
 ### 2. Schema con chiavi stringa e NO label/placeholder
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
->>>>>>> 87273113 (.)
 
 ```php
 #[\Override]
@@ -186,5 +184,3 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 - [x] Documentazione aggiornata
 
 ---
-
->>>>>>> 87273113 (.)

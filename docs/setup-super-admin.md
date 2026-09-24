@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/setup-super-admin.md
->>>>>>> 87273113 (.)

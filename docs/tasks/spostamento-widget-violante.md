@@ -18,7 +18,6 @@ related:
   - "./tasks-index.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task: Spostamento Widget Violante
 
 **Modulo**: User  
@@ -29,13 +28,11 @@ related:
 ## Obiettivo
 
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
->>>>>>> 87273113 (.)
 
 ## Sottotask
 
 - [ ] Identificare widget `UserTypeRegistrationsChartWidget` e sue dipendenze
 - [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
->>>>>>> 87273113 (.)
 - [ ] Spostare widget e aggiornare namespace
 - [ ] Rimuovere file originale da User
 - [ ] Verificare con script controllo dipendenze

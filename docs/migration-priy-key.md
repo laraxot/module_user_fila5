@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -138,12 +137,9 @@ $this->tableCreate(static function (Blueprint $table): void {
 - [Teams owner_id fix](./migration-teams-owner-id-fix.md)
 - [Migration Best Practices](../../xot/docs/migration-standards.md)
 - [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
->>>>>>> 87273113 (.)
 
 ## Status
 
 ✅ **Fix implementato e testato**
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
-
->>>>>>> 87273113 (.)

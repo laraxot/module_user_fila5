@@ -18,7 +18,6 @@ related:
   - "./tasks-index.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task: Aumentare Copertura Test User
 
 **Modulo**: User  

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Actions Structure
 
 ## Directory Structure
@@ -95,7 +94,6 @@ class DeleteUserAction
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
->>>>>>> 87273113 (.)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
 # Actions Structure
 
@@ -173,5 +171,4 @@ class DeleteUserAction
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
->>>>>>> 87273113 (.)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

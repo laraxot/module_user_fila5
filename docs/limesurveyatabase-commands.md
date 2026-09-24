@@ -20,7 +20,6 @@ related:
 
 # Database Analysis Commands and Tools for app_survey
 # Database Analysis Commands and Tools for quaeris_survey
->>>>>>> 87273113 (.)
 
 ## Essential Database Queries
 
@@ -95,7 +94,6 @@ mcp mysql --database=txaesfry_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
->>>>>>> 87273113 (.)
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -133,7 +131,6 @@ php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
     'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
->>>>>>> 87273113 (.)
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -197,7 +194,6 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
->>>>>>> 87273113 (.)
 ```
 
 ### 2. Data Validation Script
@@ -242,7 +238,6 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_app_survey'
->>>>>>> 87273113 (.)
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -251,10 +246,8 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_app_survey'
->>>>>>> 87273113 (.)
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
->>>>>>> 87273113 (.)

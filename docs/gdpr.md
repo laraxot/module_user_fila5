@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/gdpr.txt
->>>>>>> 87273113 (.)

@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-implementation-philosophy.md
->>>>>>> 87273113 (.)
