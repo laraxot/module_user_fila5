@@ -30,7 +30,11 @@ function teamMgmtBizTeamUsesSoftDeletes(): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateUser(array $attributes = []): User
 {
@@ -43,7 +47,11 @@ function teamMgmtBizCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateTeam(array $attributes = []): Team
 {
@@ -54,7 +62,11 @@ function teamMgmtBizCreateTeam(array $attributes = []): Team
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 {
@@ -67,7 +79,11 @@ function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 {
@@ -80,7 +96,11 @@ function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -120,7 +140,11 @@ function teamMgmtBizMemberExists(Team $team, User $user): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -131,7 +155,11 @@ function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamIn
         'role' => 'member',
     ], $attributes);
 
+<<<<<<< HEAD
     $invitation = new TeamInvitation;
+=======
+    $invitation = new TeamInvitation();
+>>>>>>> laraxot/dev
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

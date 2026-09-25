@@ -40,7 +40,11 @@ class ProcessCallbackController extends Controller
 
         // Try to retrieve existing user
         $oauthUser = app(RetrieveOauthUserAction::class)->execute($provider);
+<<<<<<< HEAD
         if ($oauthUser === null) {
+=======
+        if (null === $oauthUser) {
+>>>>>>> laraxot/dev
             return app(RedirectToLoginAction::class)->execute('auth.login-failed');
         }
 
@@ -73,21 +77,33 @@ class ProcessCallbackController extends Controller
         $user = $user_class::query()->firstWhere(['email' => $oauthUser->getEmail()]);
 
         // Handle registration
+<<<<<<< HEAD
         if ($user !== null) {
+=======
+        if (null !== $user) {
+>>>>>>> laraxot/dev
             $socialiteUser = app(RegisterSocialiteUserAction::class)->execute($provider, $oauthUser, $user);
         } else {
             $socialiteUser = app(RegisterOauthUserAction::class)->execute($provider, $oauthUser);
         }
 
         $socialiteUserObj = $socialiteUser->user;
+<<<<<<< HEAD
         if ($socialiteUserObj === null || ! $socialiteUserObj->canAccessSocialite()) {
+=======
+        if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
+>>>>>>> laraxot/dev
             return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
         }
 
         // Verifichiamo prima se l'utente può accedere al socialite
         /** @var UserContract|null $authUser */
         $authUser = Auth::user();
+<<<<<<< HEAD
         if ($authUser !== null && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
+=======
+        if (null !== $authUser && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
+>>>>>>> laraxot/dev
             return redirect()->route(
                 optional(Auth::check()) ? 'filament.user.pages.dashboard' : 'filament.user.auth.login',
             );

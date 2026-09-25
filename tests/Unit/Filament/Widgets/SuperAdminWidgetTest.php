@@ -37,7 +37,11 @@ describe('SuperAdminWidget', function (): void {
     test('resolves to the convention super-admin view used by render()', function (): void {
         $reflection = new ReflectionProperty(SuperAdminWidget::class, 'view');
         $reflection->setAccessible(true);
+<<<<<<< HEAD
         $widget = new SuperAdminWidget;
+=======
+        $widget = new SuperAdminWidget();
+>>>>>>> laraxot/dev
 
         Assert::assertSame(
             'user::filament.widgets.profile.super-admin',

@@ -25,7 +25,12 @@ class LogoutController extends XotBaseController
      * This method logs out the user by executing the LogoutUserAction and
      * handling any necessary cleanup tasks related to tokens and sessions.
      *
+<<<<<<< HEAD
      * @param  Request  $request  the incoming request containing the authenticated user
+=======
+     * @param Request $request the incoming request containing the authenticated user
+     *
+>>>>>>> laraxot/dev
      * @return JsonResponse a JSON response indicating the success of the logout operation
      */
     public function __invoke(Request $request): JsonResponse

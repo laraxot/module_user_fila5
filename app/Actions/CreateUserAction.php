@@ -24,7 +24,11 @@ class CreateUserAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>|null  $data
+=======
+     * @param array<string, mixed>|null $data
+>>>>>>> laraxot/dev
      */
     public function __construct(
         protected string $name,

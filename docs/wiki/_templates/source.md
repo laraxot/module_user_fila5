@@ -6,9 +6,13 @@ confidence: high
 created: {{date}}
 updated: {{date}}
 tags: [article, paper, documentation]
+<<<<<<< HEAD
 related:
   - "./concept.md"
   - "./entity.md"
+=======
+related: []
+>>>>>>> laraxot/dev
 ---
 
 # {{title}}

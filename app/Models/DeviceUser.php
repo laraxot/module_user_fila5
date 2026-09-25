@@ -21,6 +21,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|DeviceUser newQuery()
  * @method static Builder|DeviceUser query()
  *
+<<<<<<< HEAD
  * @property string $id
  * @property string $device_id
  * @property string $user_id
@@ -28,6 +29,15 @@ use Modules\Xot\Datas\XotData;
  * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
+=======
+ * @property string      $id
+ * @property string      $device_id
+ * @property string      $user_id
+ * @property Carbon|null $login_at
+ * @property Carbon|null $logout_at
+ * @property string|null $push_notifications_token
+ * @property bool|null   $push_notifications_enabled
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -46,7 +56,11 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|DeviceUser whereUserId($value)
  *
  * @property ProfileContract|null $profile
+<<<<<<< HEAD
  * @property UserContract|null $user
+=======
+ * @property UserContract|null    $user
+>>>>>>> laraxot/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter

@@ -63,7 +63,11 @@ function makeOrphanOauthClientForAssociationTest(): OauthClient
 
 function getAssociateExistingClientActionFunction(User $owner): \Closure
 {
+<<<<<<< HEAD
     $manager = new ClientsRelationManager;
+=======
+    $manager = new ClientsRelationManager();
+>>>>>>> laraxot/dev
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
@@ -72,7 +76,11 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
     // chiavi stringa di getTableHeaderActions()) — si cerca per nome.
     $action = null;
     foreach ($manager->getTable()->getHeaderActions() as $candidate) {
+<<<<<<< HEAD
         if ($candidate instanceof Action && $candidate->getName() === 'associateExistingClient') {
+=======
+        if ($candidate instanceof Action && 'associateExistingClient' === $candidate->getName()) {
+>>>>>>> laraxot/dev
             $action = $candidate;
 
             break;

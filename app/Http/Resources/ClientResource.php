@@ -31,7 +31,11 @@ final class ClientResource extends JsonResource
             'id' => $client->id,
             'name' => $client->name,
             'owner' => $this->when(
+<<<<<<< HEAD
                 $client->owner !== null,
+=======
+                null !== $client->owner,
+>>>>>>> laraxot/dev
                 fn (): OwnerResource => new OwnerResource($client->owner)
             ),
         ];

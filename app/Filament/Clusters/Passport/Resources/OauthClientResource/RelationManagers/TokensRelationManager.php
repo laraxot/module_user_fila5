@@ -46,7 +46,11 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->tooltip(
                     /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                     function (mixed $state): ?string {
+<<<<<<< HEAD
                         if ($state === null) {
+=======
+                        if (null === $state) {
+>>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {

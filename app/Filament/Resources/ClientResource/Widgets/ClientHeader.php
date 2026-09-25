@@ -11,8 +11,12 @@ class ClientHeader extends XotBaseWidget
 {
     public Client $client;
 
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
+=======
+    protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
+>>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

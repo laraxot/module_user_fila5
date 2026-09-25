@@ -48,10 +48,19 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_2JXUra
+=======
+>>>>>>> laraxot/dev
 ## Campagna widget-only (2026-09-21)
 
 Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inventory.md). SuperAdmin hook: [tech-spec.md](tech-spec.md). GitHub #100 / #101.
 
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_yqnvnX
+>>>>>>> laraxot/dev
 ## Quick Flow
 
 ```bash

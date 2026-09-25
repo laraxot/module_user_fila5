@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_pLSSES
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Bug fix + cleanup phpmd (Modules/User, 2026-07-12)"
 type: concept
@@ -18,6 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_BovdcQ
+>>>>>>> laraxot/dev
 # Bug fix + cleanup phpmd (Modules/User, 2026-07-12)
 
 ## Bug reali corretti

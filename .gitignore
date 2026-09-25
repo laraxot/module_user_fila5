@@ -500,6 +500,9 @@ app/Models/Models
 node_modules
 graphify-out/
 *.backup_*
+<<<<<<< HEAD
 
 # Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
 audit-coverage/
+=======
+>>>>>>> laraxot/dev

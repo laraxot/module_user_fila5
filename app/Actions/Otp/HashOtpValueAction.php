@@ -13,7 +13,12 @@ final class HashOtpValueAction
 
     public function __construct(
         private readonly Hasher $hasher,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function execute(string $value): string
     {

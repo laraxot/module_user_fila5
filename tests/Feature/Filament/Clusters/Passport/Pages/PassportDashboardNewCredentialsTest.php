@@ -4,7 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Pages;
 
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
+=======
+<<<<<<< .merge_file_CfhiL0
+=======
+use Illuminate\Support\Collection;
+>>>>>>> .merge_file_uwcfh1
+>>>>>>> laraxot/dev
 use Laravel\Passport\ClientRepository;
 use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
@@ -27,6 +34,7 @@ uses(TestCase::class);
  */
 function makeMockUser(bool $isSuper): BaseUser
 {
+<<<<<<< HEAD
     return new class($isSuper) extends BaseUser
     {
         public function __construct(private readonly bool $isSuper) {}
@@ -37,6 +45,23 @@ function makeMockUser(bool $isSuper): BaseUser
         public function hasRole($roles, ?string $guard = null): bool
         {
             if ($roles === 'super-admin') {
+=======
+    return new class($isSuper) extends BaseUser {
+        public function __construct(private readonly bool $isSuper)
+        {
+        }
+
+        /**
+<<<<<<< .merge_file_CfhiL0
+         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
+=======
+         * @param array<int, string>|Collection<int, string>|string $roles
+>>>>>>> .merge_file_uwcfh1
+         */
+        public function hasRole($roles, ?string $guard = null): bool
+        {
+            if ('super-admin' === $roles) {
+>>>>>>> laraxot/dev
                 return $this->isSuper;
             }
 

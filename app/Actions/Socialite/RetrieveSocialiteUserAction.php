@@ -35,7 +35,11 @@ class RetrieveSocialiteUserAction
             ->where('provider_id', $providerId)
             ->first();
 
+<<<<<<< HEAD
         if ($res === null) {
+=======
+        if (null === $res) {
+>>>>>>> laraxot/dev
             return null;
         }
 

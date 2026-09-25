@@ -63,7 +63,11 @@ class PassportDashboard extends XotBasePage
             $this->isRunning = false;
             $this->checkKeys();
 
+<<<<<<< HEAD
             if ($result['status'] === 'completed') {
+=======
+            if ('completed' === $result['status']) {
+>>>>>>> laraxot/dev
                 Notification::make()
                     ->title('Command completed successfully')
                     ->success()

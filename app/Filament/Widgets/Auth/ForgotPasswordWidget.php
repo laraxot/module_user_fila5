@@ -18,8 +18,12 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
+=======
+    protected string $view = 'user::widgets.auth.forgot-password-widget';
+>>>>>>> laraxot/dev
 
     /**
      * @return class-string<UserForm>
@@ -40,7 +44,11 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
 
         $status = Password::sendResetLink(['email' => $data['email']]);
 
+<<<<<<< HEAD
         if ($status === Password::RESET_LINK_SENT) {
+=======
+        if (Password::RESET_LINK_SENT === $status) {
+>>>>>>> laraxot/dev
             session()->flash('status', __($status));
         } else {
             $this->addError('email', __($status));

@@ -84,12 +84,20 @@ class UserServiceProvider extends XotBaseServiceProvider
             $serviceConfig = config("services.{$provider}", []);
 
             $clientId = $serviceConfig['client_id'] ?? null;
+<<<<<<< HEAD
             if (is_string($clientId) && $clientId !== '') {
+=======
+            if (is_string($clientId) && '' !== $clientId) {
+>>>>>>> laraxot/dev
                 Config::set("user.social-providers.{$provider}.client_id", $clientId);
             }
 
             $clientSecret = $serviceConfig['client_secret'] ?? null;
+<<<<<<< HEAD
             if (is_string($clientSecret) && $clientSecret !== '') {
+=======
+            if (is_string($clientSecret) && '' !== $clientSecret) {
+>>>>>>> laraxot/dev
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }

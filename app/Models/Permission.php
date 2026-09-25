@@ -16,6 +16,7 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * @property int $id
  * @property string $name
  * @property string $guard_name
@@ -29,6 +30,21 @@ use Webmozart\Assert\Assert;
  * @property int|null $roles_count
  * @property Collection<int, User> $users
  * @property int|null $users_count
+=======
+ * @property int                         $id
+ * @property string                      $name
+ * @property string                      $guard_name
+ * @property Carbon|null                 $created_at
+ * @property Carbon|null                 $updated_at
+ * @property string|null                 $updated_by
+ * @property string|null                 $created_by
+ * @property Collection<int, Permission> $permissions
+ * @property int|null                    $permissions_count
+ * @property Collection<int, Role>       $roles
+ * @property int|null                    $roles_count
+ * @property Collection<int, User>       $users
+ * @property int|null                    $users_count
+>>>>>>> laraxot/dev
  *
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
@@ -44,8 +60,13 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Permission whereUpdatedBy($value)
  * @method static Builder<static>|Permission withoutPermission($permissions)
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+=======
+ * @method static static                     firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static                     updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -54,7 +75,11 @@ use Webmozart\Assert\Assert;
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  *
  * @property Collection<int, Team> $teams
+<<<<<<< HEAD
  * @property int|null $teams_count
+=======
+ * @property int|null              $teams_count
+>>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)

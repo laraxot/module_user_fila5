@@ -28,9 +28,15 @@ use PHPUnit\Framework\Assert;
 function profileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
+<<<<<<< HEAD
     $connection = (new $profileClass)->getConnectionName();
 
     if (is_string($connection) && $connection !== '') {
+=======
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+>>>>>>> laraxot/dev
         return $connection;
     }
 

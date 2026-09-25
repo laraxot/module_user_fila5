@@ -19,12 +19,22 @@ class RevokeTokenAction
 
     public function __construct(
         private readonly OauthToken $oauthTokenModel,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Revoca un token OAuth2.
      *
+<<<<<<< HEAD
      * @param  OauthToken|string  $token  Il token da revocare (istanza o ID)
+=======
+     * @param OauthToken|string $token Il token da revocare (istanza o ID)
+     *
+>>>>>>> laraxot/dev
      * @return bool True se il token è stato revocato con successo
      */
     public function execute(OauthToken|string $token): bool

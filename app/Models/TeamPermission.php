@@ -14,6 +14,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * Represents a permission assigned to a user within a team context.
  *
+<<<<<<< HEAD
  * @property string $id
  * @property string $team_id
  * @property string $user_id
@@ -22,6 +23,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property \DateTime|null $updated_at
  * @property Team $team
  * @property User $user
+=======
+ * @property string         $id
+ * @property string         $team_id
+ * @property string         $user_id
+ * @property string         $permission
+ * @property \DateTime|null $created_at
+ * @property \DateTime|null $updated_at
+ * @property Team           $team
+ * @property User           $user
+>>>>>>> laraxot/dev
  *
  * @method static Builder<static>|TeamPermission newModelQuery()
  * @method static Builder<static>|TeamPermission newQuery()
@@ -30,6 +41,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property string|null $name
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -47,6 +59,25 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission whereTeamId($value)
  * @method static Builder<static>|TeamPermission whereUpdatedAt($value)
  * @method static Builder<static>|TeamPermission whereUpdatedBy($value)
+=======
+ * @property string|null          $name
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ *
+ * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamPermission                         whereCreatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereCreatedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereDeletedBy($value)
+ * @method static Builder<static>|TeamPermission                         whereId($value)
+ * @method static Builder<static>|TeamPermission                         whereName($value)
+ * @method static Builder<static>|TeamPermission                         wherePermission($value)
+ * @method static Builder<static>|TeamPermission                         whereTeamId($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedAt($value)
+ * @method static Builder<static>|TeamPermission                         whereUpdatedBy($value)
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

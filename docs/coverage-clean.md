@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Coverage Clean"
 type: concept
@@ -18,5 +19,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
   at Modules/User/tests/Feature/AuthComponentsTest.php:16
   1   Modules/User/tests/Feature/AuthComponentsTest.php:16

@@ -50,7 +50,11 @@ class DomainsRelationManager extends XotBaseRelationManager
         return [
             'domain' => TextColumn::make('domain'),
             'full-domain' => TextColumn::make('full-domain')->getStateUsing(
+<<<<<<< HEAD
                 static fn (mixed $record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
+=======
+                static fn ($record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
+>>>>>>> laraxot/dev
                     Str::of($record->domain)->append('.')->append(request()->getHost()) : '',
             ),
         ];
