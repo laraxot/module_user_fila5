@@ -22,11 +22,7 @@ trait ResolvesPassportTokenUserRelation
     public function user(): BelongsTo
     {
         $clientProvider = $this->client?->provider;
-<<<<<<< HEAD
         $provider = is_string($clientProvider) && $clientProvider !== ''
-=======
-        $provider = is_string($clientProvider) && '' !== $clientProvider
->>>>>>> laraxot/dev
             ? $clientProvider
             : $this->resolveDefaultApiGuardProvider();
 
@@ -39,11 +35,7 @@ trait ResolvesPassportTokenUserRelation
         $modelClass = $modelClassRaw;
 
         /** @var AuthUser $prototype */
-<<<<<<< HEAD
         $prototype = new $modelClass;
-=======
-        $prototype = new $modelClass();
->>>>>>> laraxot/dev
 
         return $this->belongsTo(
             $modelClass,
