@@ -17,12 +17,8 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 {
     protected static bool $isDiscovered = false;
 
-<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
-=======
-    protected string $view = 'user::filament.widgets.auth.social-login';
->>>>>>> laraxot/dev
 
     public string $redirectRoute = 'socialite.oauth.redirect';
 

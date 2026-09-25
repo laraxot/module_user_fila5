@@ -5,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
-<<<<<<< HEAD
 #!/bin/bash
 
 # Configurazione
@@ -152,5 +151,3 @@ main() {
 
 # Esegui main
 main "$@" 
-=======
->>>>>>> laraxot/dev

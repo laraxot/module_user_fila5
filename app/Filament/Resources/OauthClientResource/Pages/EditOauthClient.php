@@ -30,11 +30,7 @@ class EditOauthClient extends XotBaseEditRecord
         /** @var OauthClient|null $record */
         $record = $this->record;
 
-<<<<<<< HEAD
         if ($record !== null && ! $record->revoked) {
-=======
-        if (null !== $record && ! $record->revoked) {
->>>>>>> laraxot/dev
             $actions['revoke'] = Action::make('revoke')
                 ->label(__('user::actions.oauth.revoke_client.label'))
                 ->icon('heroicon-o-x-circle')

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Coverage Full"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 
    FAIL  Modules\User\tests\Feature\AuthComponentsTest
   ⨯ Auth Components Tests → auth components exist and work correctly     0.41s  

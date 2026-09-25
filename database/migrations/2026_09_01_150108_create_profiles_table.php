@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_huwGP0
-
-=======
->>>>>>> .merge_file_MC9ZN0
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -29,12 +22,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::profiles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['id'].
  */
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     protected ?string $model_class = Profile::class;
 
     public function up(): void

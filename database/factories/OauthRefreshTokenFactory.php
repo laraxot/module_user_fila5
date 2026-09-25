@@ -34,11 +34,7 @@ class OauthRefreshTokenFactory extends Factory
     protected function newAccessTokenId(): string
     {
         /** @var OauthAccessToken $token */
-<<<<<<< HEAD
         $token = (new OauthAccessTokenFactory)->create([
-=======
-        $token = (new OauthAccessTokenFactory())->create([
->>>>>>> laraxot/dev
             'id' => $this->faker->uuid(),
             'user_id' => null,
             'client_id' => OauthClient::factory(),

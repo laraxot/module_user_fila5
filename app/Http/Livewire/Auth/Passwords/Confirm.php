@@ -24,11 +24,7 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-<<<<<<< HEAD
     public function render(): mixed
-=======
-    public function render(): View
->>>>>>> laraxot/dev
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');

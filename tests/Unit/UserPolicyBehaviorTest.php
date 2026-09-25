@@ -16,12 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
-<<<<<<< HEAD
  * @param  list<string>  $roles
-=======
- * @param list<string> $roles
- *
->>>>>>> laraxot/dev
  * @return Mockery\MockInterface&UserContract
  */
 function userBehaviorUser(
@@ -30,21 +25,13 @@ function userBehaviorUser(
     bool $belongsToTeam = false,
 ): UserContract {
     /** @var Mockery\MockInterface&UserContract $user */
-<<<<<<< HEAD
     $user = Mockery::mock(UserContract::class);
-=======
-    $user = \Mockery::mock(UserContract::class);
->>>>>>> laraxot/dev
     mockeryExpect($user->shouldReceive('hasRole'))
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
-<<<<<<< HEAD
             return array_intersect($normalizzati, $roles) !== [];
-=======
-            return [] !== array_intersect($normalizzati, $roles);
->>>>>>> laraxot/dev
         });
     mockeryExpect($user->shouldReceive('ownsTeam'))->andReturn($ownsTeam);
     mockeryExpect($user->shouldReceive('belongsToTeam'))->andReturn($belongsToTeam);
@@ -53,21 +40,12 @@ function userBehaviorUser(
 }
 
 afterEach(function (): void {
-<<<<<<< HEAD
     Mockery::close();
 });
 
 test('RolePolicy: viewAny false, view/create/update/delete true', function (): void {
     $policy = new RolePolicy;
     $role = new Role;
-=======
-    \Mockery::close();
-});
-
-test('RolePolicy: viewAny false, view/create/update/delete true', function (): void {
-    $policy = new RolePolicy();
-    $role = new Role();
->>>>>>> laraxot/dev
     $user = userBehaviorUser();
 
     Assert::assertFalse($policy->viewAny($user));
@@ -79,13 +57,8 @@ test('RolePolicy: viewAny false, view/create/update/delete true', function (): v
 });
 
 test('TeamPolicy: view legato a belongsToTeam, mutazioni a ownsTeam', function (): void {
-<<<<<<< HEAD
     $policy = new TeamPolicy;
     $team = new Team;
-=======
-    $policy = new TeamPolicy();
-    $team = new Team();
->>>>>>> laraxot/dev
     $outsider = userBehaviorUser();
     $member = userBehaviorUser(belongsToTeam: true);
     $owner = userBehaviorUser(ownsTeam: true, belongsToTeam: true);
@@ -104,11 +77,7 @@ test('TeamPolicy: view legato a belongsToTeam, mutazioni a ownsTeam', function (
 });
 
 test('UserBasePolicy before: super-admin bypass', function (): void {
-<<<<<<< HEAD
     $policy = new RolePolicy;
-=======
-    $policy = new RolePolicy();
->>>>>>> laraxot/dev
     Assert::assertTrue($policy->before(userBehaviorUser(['super-admin']), 'viewAny'));
     Assert::assertNull($policy->before(userBehaviorUser(), 'viewAny'));
 });

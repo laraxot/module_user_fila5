@@ -20,7 +20,6 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
-<<<<<<< HEAD
  * @property string $id
  * @property int|null $current_team_id
  * @property TeamContract|null $currentTeam
@@ -29,16 +28,6 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
  * @property int $total_members
-=======
- * @property string                            $id
- * @property int|null                          $current_team_id
- * @property TeamContract|null                 $currentTeam
- * @property EloquentCollection<int, Team>     $membershipTeams
- * @property EloquentCollection<int, Team>     $ownedTeams
- * @property EloquentCollection<int, TeamUser> $teamUsers
- * @property XotUserContract|null              $owner
- * @property int                               $total_members
->>>>>>> laraxot/dev
  */
 class MockUserWithTeams extends Model
 {
@@ -67,11 +56,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-<<<<<<< HEAD
      * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
-=======
-     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
->>>>>>> laraxot/dev
      */
     public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {

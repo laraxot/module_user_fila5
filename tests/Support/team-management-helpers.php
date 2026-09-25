@@ -28,11 +28,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -45,11 +41,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -72,11 +64,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> laraxot/dev
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -120,11 +108,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -135,11 +119,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-<<<<<<< HEAD
     $invitation = new TeamInvitation;
-=======
-    $invitation = new TeamInvitation();
->>>>>>> laraxot/dev
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_NoFZ7W
-
-=======
->>>>>>> .merge_file_OGrFSG
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -20,12 +13,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::users` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['uuid'].
  */
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     protected ?string $model_class = User::class;
 
     /**
@@ -117,11 +106,7 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
-<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
-=======
-            if ('uuid' === $this->getColumnType('id')) {
->>>>>>> laraxot/dev
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

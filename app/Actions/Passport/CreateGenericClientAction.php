@@ -21,11 +21,7 @@ class CreateGenericClientAction
         ?UserContract $user = null,
         ?string $provider = null,
     ): OauthClient {
-<<<<<<< HEAD
         $client = new OauthClient;
-=======
-        $client = new OauthClient();
->>>>>>> laraxot/dev
         $client->name = $name;
         $client->redirect = $redirect;
         $client->personal_access_client = $personalAccess;
@@ -33,11 +29,7 @@ class CreateGenericClientAction
         $client->provider = $provider ?? 'users';
         $client->revoked = false;
 
-<<<<<<< HEAD
         if ($user !== null) {
-=======
-        if (null !== $user) {
->>>>>>> laraxot/dev
             $client->user_id = $user->id;
         }
 

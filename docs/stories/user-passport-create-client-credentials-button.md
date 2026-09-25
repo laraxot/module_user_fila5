@@ -13,15 +13,7 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
-<<<<<<< HEAD
 updated_at: '2026-09-17'
-=======
-<<<<<<< .merge_file_ws0o7h
-updated_at: '2026-09-03'
-=======
-updated_at: '2026-09-17'
->>>>>>> .merge_file_aRtH94
->>>>>>> laraxot/dev
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -230,10 +222,6 @@ Claude Sonnet 5
 - **Verifica manuale 2026-09-03 (locale)**: l'utente ha usato il pulsante
   dal vivo, creazione riuscita (screenshot), abbinamento tramite `user_id`
   confermato anche via query diretta sul DB. Durante la prova sono emerse
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ws0o7h
->>>>>>> laraxot/dev
   due scoperte **indipendenti da questa story**, segnalate all'utente con
   decisione in sospeso — **entrambe verificate concretamente il 2026-09-15**,
   vedi sotto.
@@ -261,29 +249,6 @@ Claude Sonnet 5
      oggi `owner_id = user_id` corretto — segno che quel comando di backfill
      è già stato lanciato a mano in passato, non che il problema non esista.
   2. **[SMENTITO 2026-09-15]** Ipotesi "il database `user` di produzione
-<<<<<<< HEAD
-=======
-=======
-  due scoperte **indipendenti da questa story**, non ancora tracciate in
-  una story/issue propria — segnalate all'utente, decisione in sospeso:
-  1. `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
-     client di un utente tramite la relazione `clients()` (`owner_id`/
-     `owner_type`, polimorfica), ma la sua stessa azione
-     "associateExistingClient" scrive su `user_id` — le due colonne non
-     sono sincronizzate, quella tab mostra sempre una lista
-     vuota/incompleta indipendentemente da abbinamenti reali fatti altrove
-     (verificato: nessun punto della logica applicativa reale legge
-     `owner_id`/`owner_type` su `OauthClient`, solo quella tab — bug
-     cosmetico, non funzionale).
-  2. Sul server di produzione, la lista completa "Client OAuth" mostra
-     solo i 4 client di default creati da `passport:install` (Personal
-     Access Client, Password Grant Client) — **nessuno dei client_id
-     storici usati dai clienti reali (ATS/Clara/Smat/Vivaservizi, con
-     credenziali negli script `extras/`) risulta presente**. Ipotesi in
-     discussione con l'utente: il database sulla connessione `user`
-     (dove vive `oauth_clients`, separata dal DB applicativo principale)
->>>>>>> .merge_file_aRtH94
->>>>>>> laraxot/dev
      potrebbe non essere stato ripristinato da un backup reale durante il
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
@@ -352,20 +317,6 @@ Claude Sonnet 5
      sull'azione non trovata). PHPStan pulito, nessun residuo nel DB.
      Con questo, tutti e 3 i punti dell'issue module_user_fila5#97 sono
      risolti (creare, leggere, rimuovere l'associazione).
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ws0o7h
-  7. **[APERTO 2026-09-15]** Verificati due strascichi non ancora risolti,
-     entrambi confermati concretamente (non ipotesi):
-     - `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`
-       (il comando CLI `quaeris:associate-client-user`) ha ancora lo stesso
-       difetto già corretto nel bottone Filament: scrive solo `user_id`
-       (`$client->forceFill(['user_id' => $user->getKey()]);`), mai
-       `owner_id`/`owner_type`. Chi usa questo comando invece del bottone
-       ricade nello stesso blocco su `SurveyController::createContacts`.
-       Non ancora corretto.
-=======
->>>>>>> laraxot/dev
   7. **[APERTO 2026-09-15, primo punto CORRETTO 2026-09-17]** Verificati due
      strascichi, entrambi confermati concretamente (non ipotesi):
      - **[CORRETTO 2026-09-17]**
@@ -388,10 +339,6 @@ Claude Sonnet 5
        passava) — usato `Illuminate\Support\Facades\Artisan::call()`
        diretto, che funziona correttamente (stesso pattern verificato a
        mano via tinker).
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_aRtH94
->>>>>>> laraxot/dev
      - `Modules/Quaeris/tests/Feature/Http/Controllers/Api/
        AddContactMultiControllerOwnerResolutionTest.php` — il test che ha
        fatto partire questa intera indagine (Task 8 di

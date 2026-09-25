@@ -10,11 +10,6 @@ bmad_track: "core-identity"
 
 # User — BMAD Method Integration
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_7XZKq3
-=======
->>>>>>> laraxot/dev
 ## Campagna vigente — solo Filament widget
 
 **Chrome convertito (2026-09-21): i 3 hook del provider sono FQCN; restano Cluster C (10.4) e residui.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
@@ -103,10 +98,6 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 | Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
 
 
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_43na22
->>>>>>> laraxot/dev
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
@@ -205,22 +196,9 @@ _bmad-output/
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_7XZKq3
-
----
-
-*User · BMAD Method · data 2026-05-27*
-=======
->>>>>>> laraxot/dev
 - [livewire-to-filament-widget-migration.md](../livewire-to-filament-widget-migration.md)
 - [filament_errors.md](../filament_errors.md)
 
 ---
 
 *User · BMAD Method · data 2026-05-27*
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_43na22
->>>>>>> laraxot/dev

@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Models\OauthClient;
 
 /**
@@ -33,11 +30,7 @@ class BackfillOauthClientOwnerCommand extends Command
 
         $clients = OauthClient::query()
             ->whereNotNull('user_id')
-<<<<<<< HEAD
             ->where(function (Builder $query): void {
-=======
-            ->where(function ($query): void {
->>>>>>> laraxot/dev
                 $query->whereNull('owner_id')->orWhereNull('owner_type');
             })
             ->get();
@@ -61,17 +54,10 @@ class BackfillOauthClientOwnerCommand extends Command
             $client->save();
             $client->refresh();
 
-<<<<<<< HEAD
             if ($client->owner_id !== null && $client->owner_type !== null) {
                 $fixed++;
             } else {
                 $skipped++;
-=======
-            if (null !== $client->owner_id && null !== $client->owner_type) {
-                ++$fixed;
-            } else {
-                ++$skipped;
->>>>>>> laraxot/dev
                 $this->warn("  -> non corretto: nessun utente trovato per user_id={$client->user_id} (owner() ha restituito null)");
             }
         }

@@ -5,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
-<<<<<<< HEAD
 #!/bin/bash
 
 # Configurazione
@@ -147,5 +146,3 @@ main() {
 
 # Esegui lo script
 main 
-=======
->>>>>>> laraxot/dev

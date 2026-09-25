@@ -22,14 +22,10 @@ class TermsOfService extends Component
             $text = config('terms-of-service.text');
         }
 
-<<<<<<< HEAD
         /** @var view-string $view */
         $view = 'user::livewire.terms-of-service';
 
         return view($view, [
-=======
-        return view('user::livewire.terms-of-service', [
->>>>>>> laraxot/dev
             'text' => $text,
         ]);
     }

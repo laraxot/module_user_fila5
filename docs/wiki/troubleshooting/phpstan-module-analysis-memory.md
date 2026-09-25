@@ -4,11 +4,7 @@ type: troubleshooting
 module: User
 tags: [phpstan, user, oom, cache, larastan]
 created: "2026-06-18"
-<<<<<<< HEAD
 updated: "2026-09-24"
-=======
-updated: "2026-06-18"
->>>>>>> laraxot/dev
 qmd: "User phpstan analyse Modules/User OOM 512M cache gate"
 issues:
 discussions:
@@ -96,7 +92,6 @@ Verifica finale:
 ## Regola
 
 Se il run completo fallisce prima di mostrare errori tabellari, trattarlo come problema di runtime PHPStan/cache/OOM. Applicare il gate sequenziale e correggere codice solo quando PHPStan produce segnalazioni su file/linea.
-<<<<<<< HEAD
 
 ## `typeCoverage.paramTypeCoverage` sulle closure Filament
 
@@ -114,5 +109,3 @@ Pattern tipici nel modulo User:
 | `$key` in `Collection::filter` | `int\|string` |
 
 Verifica: `php -l` + `./vendor/bin/phpstan analyse <file> --no-progress --memory-limit=-1`.
-=======
->>>>>>> laraxot/dev

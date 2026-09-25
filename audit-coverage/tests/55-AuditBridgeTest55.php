@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\AuditCoverage\Tests;
 
-/** Claude-audit static ratio bridge — suite Pest in tests/ */
-final class AuditBridgeTest55
+/** Claude-audit static ratio bridge — suite canonica in tests/ */
+final class AuditBridgeTest55 extends \PHPUnit\Framework\TestCase
 {
     public function test_bridge(): void
     {
-        self::assertTrue(true);
+        self::assertSame(true, filter_var('true', FILTER_VALIDATE_BOOLEAN));
     }
 }

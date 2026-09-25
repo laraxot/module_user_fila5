@@ -11,18 +11,10 @@ use Modules\User\Facades\FilamentShield;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
-<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
-=======
-
-use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 describe('User quick wins coverage', function (): void {
@@ -34,20 +26,12 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('resolves filament shield facade accessor', function (): void {
-<<<<<<< HEAD
         $service = new FilamentShieldStubFixture;
-=======
-        $service = new FilamentShieldStubFixture();
->>>>>>> laraxot/dev
 
         app()->instance('filament-shield', $service);
 
         Assert::assertSame($service, FilamentShield::getFacadeRoot());
-<<<<<<< HEAD
         Assert::assertSame(['w1', 'w2'], (new FilamentShieldStubFixture)->getWidgets());
-=======
-        Assert::assertSame(['w1', 'w2'], (new FilamentShieldStubFixture())->getWidgets());
->>>>>>> laraxot/dev
     });
 
     it('returns default option plus team options', function (): void {
@@ -71,11 +55,7 @@ describe('User quick wins coverage', function (): void {
             'name' => 'Quick Win',
         ];
 
-<<<<<<< HEAD
         $createdUser = new User;
-=======
-        $createdUser = new User();
->>>>>>> laraxot/dev
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 

@@ -12,18 +12,10 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
-=======
-
-use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 beforeEach(function (): void {

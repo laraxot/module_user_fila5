@@ -18,12 +18,8 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
-<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
-=======
-    protected string $view = 'user::widgets.auth.notifications-center-widget';
->>>>>>> laraxot/dev
 
     /** @var Collection<int, DatabaseNotification|Notification> */
     public Collection $notifications;
@@ -46,11 +42,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -63,11 +55,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -79,11 +67,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-<<<<<<< HEAD
         if ($user === null || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
-=======
-        if (null === $user || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
->>>>>>> laraxot/dev
             $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 

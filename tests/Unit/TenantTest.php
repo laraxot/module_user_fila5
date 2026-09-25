@@ -18,19 +18,11 @@ use Spatie\Sluggable\SlugOptions;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $overrides
  */
 function createPersistedTenant(array $overrides = []): Tenant
 {
     $tenant = new Tenant;
-=======
- * @param array<string, mixed> $overrides
- */
-function createPersistedTenant(array $overrides = []): Tenant
-{
-    $tenant = new Tenant();
->>>>>>> laraxot/dev
     $tenant->incrementing = false;
     $tenant->setKeyType('string');
 

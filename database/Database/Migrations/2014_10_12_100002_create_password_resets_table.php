@@ -1,19 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-=======
-
-use Illuminate\Database\Schema\Blueprint;
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -35,11 +27,7 @@ return new class extends XotBaseMigration {
             //    $table->string('email')->nullable();
             // }
             // $this->updateUser($table);
-<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
-=======
-            if ('uuid' === $this->getColumnType('id')) {
->>>>>>> laraxot/dev
                 $table->dropColumn('id');
             }
             if (! $this->hasColumn('id')) {

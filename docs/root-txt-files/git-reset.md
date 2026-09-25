@@ -6,7 +6,6 @@ slug: git-reset
 description: 'git submodule add -f $url $path done'
 tags: [migrato-da-txt, user]
 <<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< .merge_file_RAZMB8
 converted_from: git-reset.txt
 =======
@@ -15,9 +14,6 @@ converted_from: git_reset.txt
 =======
 converted_from: git-reset.txt
 >>>>>>> 350420cb (Check & fix styling)
-=======
-converted_from: git-reset.txt
->>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---

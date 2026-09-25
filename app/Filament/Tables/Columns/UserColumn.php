@@ -7,22 +7,10 @@ namespace Modules\User\Filament\Tables\Columns;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GYzd5G
-
-/**
- * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\UserSection}.
-=======
->>>>>>> laraxot/dev
 use Modules\User\Filament\Forms\Components\UserSection;
 
 /**
  * Controparte in lista di {@see UserSection}.
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_KyFwbg
->>>>>>> laraxot/dev
  *
  * Stessi campi anagrafici (`first_name`, `last_name`, `email`), due superfici: il form li edita,
  * la tabella li mostra raggruppati.
@@ -50,7 +38,6 @@ class UserColumn extends GroupColumn
         ];
     }
 
-<<<<<<< HEAD
     /** @param array<int, Column> $form */
     public function schema(array $form): static
     {
@@ -59,8 +46,6 @@ class UserColumn extends GroupColumn
         return $this;
     }
 
-=======
->>>>>>> laraxot/dev
     public static function make(?string $name = null): static
     {
         $columns = static::getSchema();

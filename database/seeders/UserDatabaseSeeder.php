@@ -13,11 +13,7 @@ class UserDatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-<<<<<<< HEAD
         if ($this->command !== null) {
-=======
-        if (null !== $this->command) {
->>>>>>> laraxot/dev
             $this->command->info('UserDatabaseSeeder: entity seeders…');
         }
 
@@ -61,11 +57,7 @@ class UserDatabaseSeeder extends Seeder
             TenantUserSeeder::class,
         ]);
 
-<<<<<<< HEAD
         if ($this->command !== null) {
-=======
-        if (null !== $this->command) {
->>>>>>> laraxot/dev
             $this->command->info('UserDatabaseSeeder: completato.');
         }
     }

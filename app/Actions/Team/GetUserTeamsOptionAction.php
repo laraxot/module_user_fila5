@@ -19,11 +19,7 @@ class GetUserTeamsOptionAction
         $teams = TeamUser::with('team')->where('user_id', authId())->get();
         $result = [];
         foreach ($teams as $teamUser) {
-<<<<<<< HEAD
             if ($teamUser->team !== null) {
-=======
-            if (null !== $teamUser->team) {
->>>>>>> laraxot/dev
                 $result[(string) $teamUser->team->name] = (string) $teamUser->team->id;
             }
         }

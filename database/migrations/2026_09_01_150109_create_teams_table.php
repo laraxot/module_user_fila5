@@ -1,24 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_TBUdOy
->>>>>>> laraxot/dev
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-=======
-declare(strict_types=1);
-/**
- * ---.
- */
->>>>>>> .merge_file_CZ71RJ
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -26,12 +13,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::teams` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Esegue la migrazione.
      */

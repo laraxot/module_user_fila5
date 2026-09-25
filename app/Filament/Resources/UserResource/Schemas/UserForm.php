@@ -37,31 +37,19 @@ class UserForm extends XotBaseResourceForm
                     TextInput::make('name')->required(),
                     TextInput::make('password')
                         ->password()
-<<<<<<< HEAD
                         ->dehydrateStateUsing(function (mixed $state): ?string {
-=======
-                        ->dehydrateStateUsing(function ($state): ?string {
->>>>>>> laraxot/dev
                             if (! is_string($state) || empty($state)) {
                                 return null;
                             }
 
                             return Hash::make($state);
                         })
-<<<<<<< HEAD
                         ->required(fn (mixed $livewire) => $livewire instanceof CreateUser),
-=======
-                        ->required(fn ($livewire) => $livewire instanceof CreateUser),
->>>>>>> laraxot/dev
                 ])
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-<<<<<<< HEAD
                     TextEntry::make('created_at')->state(static function (mixed $record) {
-=======
-                    TextEntry::make('created_at')->state(static function ($record) {
->>>>>>> laraxot/dev
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }
@@ -73,11 +61,7 @@ class UserForm extends XotBaseResourceForm
                         /** @var Carbon|null $createdAt */
                         $createdAt = $record->getAttribute('created_at');
 
-<<<<<<< HEAD
                         if ($createdAt === null) {
-=======
-                        if (null === $createdAt) {
->>>>>>> laraxot/dev
                             return new HtmlString('&mdash;');
                         }
                         if ($createdAt instanceof CarbonInterface) {

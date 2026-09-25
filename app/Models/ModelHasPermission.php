@@ -12,13 +12,8 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\ModelHasPermission.
  *
-<<<<<<< HEAD
  * @property int $id
  * @property int $permission_id
-=======
- * @property int    $id
- * @property int    $permission_id
->>>>>>> laraxot/dev
  * @property string $model_type
  * @property string $model_id
  *
@@ -42,11 +37,7 @@ use Webmozart\Assert\Assert;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-<<<<<<< HEAD
  * @property string|null $team_id
-=======
- * @property string|null          $team_id
->>>>>>> laraxot/dev
  *
  * @method static Builder|ModelHasPermission whereTeamId($value)
  *

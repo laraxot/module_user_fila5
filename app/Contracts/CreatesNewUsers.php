@@ -15,11 +15,7 @@ interface CreatesNewUsers
     /**
      * Create a newly registered user.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $input
-=======
-     * @param array<string, mixed> $input
->>>>>>> laraxot/dev
      */
     public function create(array $input): UserContract;
 }

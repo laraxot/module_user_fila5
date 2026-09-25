@@ -4,19 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Shield;
 
-<<<<<<< HEAD
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_uses;
 
-=======
-use function Safe\class_uses;
-
-use Spatie\Permission\Traits\HasRoles;
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> laraxot/dev
 /**
  * Action per risolvere la configurazione autenticazione Filament Shield.
  *
@@ -66,11 +58,7 @@ class ResolveShieldAuthenticationConfigurationAction
 
         $classUses = class_uses($fqcn);
 
-<<<<<<< HEAD
         if ($classUses === []) {
-=======
-        if ([] === $classUses) {
->>>>>>> laraxot/dev
             return false;
         }
 

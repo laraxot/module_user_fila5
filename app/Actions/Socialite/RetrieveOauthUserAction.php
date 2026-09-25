@@ -21,12 +21,7 @@ class RetrieveOauthUserAction
 
     public function __construct(
         private readonly Dispatcher $eventDispatcher,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Execute the action.

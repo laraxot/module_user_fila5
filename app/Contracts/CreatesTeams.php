@@ -13,11 +13,7 @@ use Modules\Xot\Contracts\UserContract;
 interface CreatesTeams
 {
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $input
-=======
-     * @param array<string, mixed> $input
->>>>>>> laraxot/dev
      */
     public function create(UserContract $userContract, array $input): TeamContract;
 }

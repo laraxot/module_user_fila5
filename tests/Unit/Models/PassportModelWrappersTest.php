@@ -18,11 +18,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param  class-string  $wrapperClass
-=======
- * @param class-string $wrapperClass
->>>>>>> laraxot/dev
  */
 function passportWrapperConnectionName(string $wrapperClass): ?string
 {
@@ -35,20 +31,12 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
         $property->setAccessible(true);
         $connection = $property->getValue($reflection->newInstanceWithoutConstructor());
 
-<<<<<<< HEAD
         if (is_string($connection) && $connection !== '') {
-=======
-        if (is_string($connection) && '' !== $connection) {
->>>>>>> laraxot/dev
             return $connection;
         }
     }
 
-<<<<<<< HEAD
     $instance = new $wrapperClass;
-=======
-    $instance = new $wrapperClass();
->>>>>>> laraxot/dev
 
     if (! $instance instanceof Model) {
         return null;

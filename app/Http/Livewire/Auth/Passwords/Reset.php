@@ -19,10 +19,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 use Livewire\Component;
 use Livewire\Features\SupportRedirects\Redirector;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\ViewCopyAction;
 use Webmozart\Assert\Assert;
 
@@ -74,16 +71,10 @@ class Reset extends Component
             },
         );
 
-<<<<<<< HEAD
         Assert::string($response);
         $response_lang = SafeStringCastAction::cast(trans($response));
 
         if ($response === Password::PASSWORD_RESET) {
-=======
-        Assert::string($response_lang = trans((string) $response));
-
-        if (Password::PASSWORD_RESET === $response) {
->>>>>>> laraxot/dev
             session()->flash($response_lang);
 
             return redirect(route('home'));

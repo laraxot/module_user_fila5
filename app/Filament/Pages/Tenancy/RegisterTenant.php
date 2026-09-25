@@ -67,11 +67,7 @@ class RegisterTenant extends XotBaseRegisterTenant
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<string, string|int|bool|null>  $data
-=======
-     * @param array<string, string|int|bool|null> $data
->>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {
@@ -89,11 +85,7 @@ class RegisterTenant extends XotBaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-<<<<<<< HEAD
         if ($this->resourceClass !== null) {
-=======
-        if (null !== $this->resourceClass) {
->>>>>>> laraxot/dev
             return $this->resourceClass;
         }
 

@@ -12,12 +12,8 @@ class UserOverview extends XotBaseWidget
 {
     public ?Model $record = null;
 
-<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
-=======
-    protected string $view = 'user::filament.resources.user-resource.widgets.user-overview';
->>>>>>> laraxot/dev
 
     /**
      * @return array<int|string, Component>

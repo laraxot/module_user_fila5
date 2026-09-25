@@ -34,10 +34,6 @@ class GetProviderScopesAction
         return array_values(array_filter(array_map(
             static fn (mixed $scope): ?string => \is_scalar($scope) || $scope instanceof \Stringable ? (string) $scope : null,
             $scopes
-<<<<<<< HEAD
         ), static fn (?string $scope): bool => $scope !== null));
-=======
-        ), static fn (?string $scope): bool => null !== $scope));
->>>>>>> laraxot/dev
     }
 }

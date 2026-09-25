@@ -15,7 +15,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-<<<<<<< HEAD
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -26,18 +25,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
-=======
- * @property string               $id
- * @property int                  $team_id
- * @property string|null          $user_id
- * @property string|null          $role
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
->>>>>>> laraxot/dev
  *
  * @method static Builder<static>|ProfileTeam newModelQuery()
  * @method static Builder<static>|ProfileTeam newQuery()
@@ -53,7 +40,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|ProfileTeam whereUpdatedBy($value)
  * @method static Builder<static>|ProfileTeam whereUserId($value)
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property Team|null $team
  * @property User|null $user
@@ -65,19 +51,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Modules\User\Database\Factories\ProfileTeamFactory factory($count = null, $state = [])
  * @method static Builder<static>|ProfileTeam wherePermissions($value)
  * @method static Builder<static>|ProfileTeam whereProfileId($value)
-=======
- * @property ProfileContract|null         $deleter
- * @property Team|null                    $team
- * @property User|null                    $user
- * @property string|null                  $profile_id
- * @property array<array-key, mixed>|null $permissions
- *
- * @method static Builder<static>|ProfileTeam                         childrenWith(array<int|string, mixed> $relations)
- * @method static Builder<static>|ProfileTeam                         childrenWithCount(array<int|string, mixed> $relations)
- * @method static \Modules\User\Database\Factories\ProfileTeamFactory factory($count = null, $state = [])
- * @method static Builder<static>|ProfileTeam                         wherePermissions($value)
- * @method static Builder<static>|ProfileTeam                         whereProfileId($value)
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

@@ -4,27 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Tables\Columns;
 
-<<<<<<< HEAD
 use Modules\User\Filament\Forms\Components\SingleRoleSelect;
-=======
-<<<<<<< .merge_file_elBi2b
-=======
-use Modules\User\Filament\Forms\Components\SingleRoleSelect;
->>>>>>> .merge_file_cO27Xo
->>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
 
 /**
-<<<<<<< HEAD
  * Controparte in lista di {@see SingleRoleSelect}.
-=======
-<<<<<<< .merge_file_elBi2b
- * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\SingleRoleSelect}.
-=======
- * Controparte in lista di {@see SingleRoleSelect}.
->>>>>>> .merge_file_cO27Xo
->>>>>>> laraxot/dev
  *
  * Stesse opzioni (ruoli da `Role::query()`), esposte come select inline di riga.
  *

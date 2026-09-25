@@ -45,11 +45,7 @@ class LoginListener
             $updates['logout_at'] = null;
         }
 
-<<<<<<< HEAD
         if ($updates !== []) {
-=======
-        if ([] !== $updates) {
->>>>>>> laraxot/dev
             $pivot->update($updates);
         }
 

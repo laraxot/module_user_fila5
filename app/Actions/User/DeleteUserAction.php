@@ -16,12 +16,7 @@ class DeleteUserAction
     public function __construct(
         private readonly Hasher $hasher,
         private readonly Guard $authGuard,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Elimina l'utente dopo aver verificato la password.

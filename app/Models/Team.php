@@ -13,7 +13,6 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Class Modules\User\Models\Team.
  *
-<<<<<<< HEAD
  * @property string $id
  * @property string $user_id (DC2Type:guid)
  * @property string $name
@@ -34,28 +33,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  * @property Collection<int, User> $users
  * @property int|null $users_count
-=======
- * @property string                          $id
- * @property string                          $user_id                (DC2Type:guid)
- * @property string                          $name
- * @property int                             $personal_team
- * @property Carbon|null                     $created_at
- * @property Carbon|null                     $updated_at
- * @property string|null                     $updated_by
- * @property string|null                     $created_by
- * @property Carbon|null                     $deleted_at
- * @property string|null                     $deleted_by
- * @property ProfileContract|null            $creator
- * @property TeamUser                        $pivot
- * @property Collection<int, User>           $members
- * @property int|null                        $members_count
- * @property User|null                       $owner
- * @property Collection<int, TeamInvitation> $teamInvitations
- * @property int|null                        $team_invitations_count
- * @property ProfileContract|null            $updater
- * @property Collection<int, User>           $users
- * @property int|null                        $users_count
->>>>>>> laraxot/dev
  *
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
@@ -82,21 +59,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $owner_id
  *
  * @method static Builder<static>|Team whereOwnerId($value)
-<<<<<<< HEAD
  * @method static static create(array<string, mixed> $attributes = [])
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
-=======
- * @method static static               create(array<string, mixed> $attributes = [])
- * @method static static               firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static               updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
->>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  *
-<<<<<<< HEAD
  * @property string|null $slug
  * @property string|null $description
  * @property string|null $avatar_path
@@ -105,16 +75,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int|null $permissions_count
  * @property Collection<int, TeamUser> $teamUsers
  * @property int|null $team_users_count
-=======
- * @property string|null                     $slug
- * @property string|null                     $description
- * @property string|null                     $avatar_path
- * @property array<array-key, mixed>|null    $settings
- * @property Collection<int, TeamPermission> $permissions
- * @property int|null                        $permissions_count
- * @property Collection<int, TeamUser>       $teamUsers
- * @property int|null                        $team_users_count
->>>>>>> laraxot/dev
  *
  * @method static Builder<static>|Team whereAvatarPath($value)
  * @method static Builder<static>|Team whereDescription($value)

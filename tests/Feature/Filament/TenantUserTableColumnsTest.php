@@ -1,13 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_AO3rR9
-
-=======
->>>>>>> .merge_file_54eiya
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
 use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
 use Modules\User\Tests\TestCase;

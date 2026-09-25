@@ -8,21 +8,12 @@ use Illuminate\Support\Carbon;
 use Laravel\Passport\AuthCode as PassportAuthCode;
 
 /**
-<<<<<<< HEAD
  * @property string $id
  * @property string $user_id (DC2Type:guid)
  * @property string $client_id
  * @property string|null $scopes
  * @property bool $revoked
  * @property Carbon|null $expires_at
-=======
- * @property string           $id
- * @property string           $user_id    (DC2Type:guid)
- * @property string           $client_id
- * @property string|null      $scopes
- * @property bool             $revoked
- * @property Carbon|null      $expires_at
->>>>>>> laraxot/dev
  * @property OauthClient|null $client
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode newModelQuery()

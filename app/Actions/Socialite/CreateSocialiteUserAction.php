@@ -19,12 +19,7 @@ class CreateSocialiteUserAction
 
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Execute the action.

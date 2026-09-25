@@ -61,11 +61,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-<<<<<<< HEAD
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -86,11 +82,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->tooltip(
                         /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                         function (mixed $state): ?string {
-<<<<<<< HEAD
                             if ($state === null) {
-=======
-                            if (null === $state) {
->>>>>>> laraxot/dev
                                 return null;
                             }
                             if (is_array($state)) {

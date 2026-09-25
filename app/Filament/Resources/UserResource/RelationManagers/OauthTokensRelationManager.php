@@ -40,11 +40,7 @@ class OauthTokensRelationManager extends XotBaseRelationManager
                 ->limit(30)
                 ->tooltip(function (TextColumn $column): ?string {
                     $state = $column->getState();
-<<<<<<< HEAD
                     if ($state === null) {
-=======
-                    if (null === $state) {
->>>>>>> laraxot/dev
                         return null;
                     }
 
@@ -63,11 +59,7 @@ class OauthTokensRelationManager extends XotBaseRelationManager
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
-<<<<<<< HEAD
                 ->formatStateUsing(function (mixed $state): string {
-=======
-                ->formatStateUsing(function ($state) {
->>>>>>> laraxot/dev
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {

@@ -12,7 +12,6 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
-<<<<<<< HEAD
  * @property int|null $id
  * @property string|null $name
  * @property array<int, string>|null $scopes
@@ -25,20 +24,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $client_secret
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-=======
- * @property int|null                  $id
- * @property string|null               $name
- * @property array<int, string>|null   $scopes
- * @property array<string, mixed>|null $parameters
- * @property bool|null                 $stateless
- * @property bool|null                 $active
- * @property bool|null                 $socialite
- * @property string|null               $svg
- * @property string|null               $client_id
- * @property string|null               $client_secret
- * @property ProfileContract|null      $creator
- * @property ProfileContract|null      $updater
->>>>>>> laraxot/dev
  *
  * @method static Builder|SocialProvider newModelQuery()
  * @method static Builder|SocialProvider newQuery()

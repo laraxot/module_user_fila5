@@ -32,11 +32,7 @@ class UserObserver
         }
 
         // Evita di creare team duplicati
-<<<<<<< HEAD
         if ($user->personalTeam() !== null) {
-=======
-        if (null !== $user->personalTeam()) {
->>>>>>> laraxot/dev
             return;
         }
 

@@ -26,21 +26,12 @@ class SendOtpByUserAction
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Execute the action: Generate and send an OTP to the specified user.
      *
-<<<<<<< HEAD
      * @param  UserContract  $user  user to receive the OTP
-=======
-     * @param UserContract $user user to receive the OTP
->>>>>>> laraxot/dev
      */
     public function execute(UserContract $user): void
     {
@@ -75,15 +66,9 @@ class SendOtpByUserAction
     /**
      * Update user's password with a hashed temporary OTP and set expiration properties.
      *
-<<<<<<< HEAD
      * @param  UserContract  $user  user to update
      * @param  string  $temporaryPassword  generated temporary password
      * @param  Carbon  $expirationTime  expiration time for the OTP
-=======
-     * @param UserContract $user              user to update
-     * @param string       $temporaryPassword generated temporary password
-     * @param Carbon       $expirationTime    expiration time for the OTP
->>>>>>> laraxot/dev
      */
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
@@ -97,13 +82,8 @@ class SendOtpByUserAction
     /**
      * Send OTP notification to user's email.
      *
-<<<<<<< HEAD
      * @param  UserContract  $user  user to notify
      * @param  string  $temporaryPassword  temporary password to include in notification
-=======
-     * @param UserContract $user              user to notify
-     * @param string       $temporaryPassword temporary password to include in notification
->>>>>>> laraxot/dev
      */
     private function dispatchOtpNotification(UserContract $user, string $temporaryPassword): void
     {

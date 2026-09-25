@@ -5,23 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Webmozart\Assert\Assert;
-
->>>>>>> laraxot/dev
 class AssignTeamCommand extends Command
 {
     /**

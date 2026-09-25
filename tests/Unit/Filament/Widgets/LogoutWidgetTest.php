@@ -10,41 +10,25 @@ uses(TestCase::class);
 
 describe('LogoutWidget', function (): void {
     test('logout widget can be instantiated', function (): void {
-<<<<<<< HEAD
         $widget = new LogoutWidget;
-=======
-        $widget = new LogoutWidget();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(LogoutWidget::class, $widget);
     });
 
     test('logout widget extends xot base widget', function (): void {
-<<<<<<< HEAD
         $widget = new LogoutWidget;
-=======
-        $widget = new LogoutWidget();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
     });
 
     test('logout widget has is logging out flag', function (): void {
-<<<<<<< HEAD
         $widget = new LogoutWidget;
-=======
-        $widget = new LogoutWidget();
->>>>>>> laraxot/dev
 
         Assert::assertFalse($widget->isLoggingOut);
     });
 
     test('logout widget has protected get view data method', function (): void {
-<<<<<<< HEAD
         $widget = new LogoutWidget;
-=======
-        $widget = new LogoutWidget();
->>>>>>> laraxot/dev
         $reflection = new ReflectionMethod($widget, 'getViewData');
 
         Assert::assertTrue($reflection->isProtected());

@@ -47,11 +47,7 @@ final class RolesSeeder extends Seeder
     /**
      * Display the seeding results in a table format.
      *
-<<<<<<< HEAD
      * @param  array<int, Role>  $roles
-=======
-     * @param array<int, Role> $roles
->>>>>>> laraxot/dev
      */
     private function displayResults(array $roles): void
     {
