@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

@@ -17,7 +17,7 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\BaseUser;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
 
@@ -78,8 +78,8 @@ final class ProfileEditVoltComponent extends Component
         try {
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
 
             // Type-safe property initialization
@@ -94,7 +94,7 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
 
             // Validate email format
-            Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
+            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
         } catch (InvalidArgumentException $e) {
             Log::error('Profile mount validation failed', [
                 'error' => $e->getMessage(),
@@ -139,8 +139,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -206,7 +206,7 @@ final class ProfileEditVoltComponent extends Component
             session()->flash('status', $message);
 
             // Send email verification if email changed
-            if ($emailChanged && $user->email_verified_at === null) {
+            if ($emailChanged && null === $user->email_verified_at) {
                 $user->sendEmailVerificationNotification();
             }
         } catch (ValidationException $e) {
@@ -255,8 +255,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -270,7 +270,7 @@ final class ProfileEditVoltComponent extends Component
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "current password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
-            if ($currentPasswordHash === null) {
+            if (null === $currentPasswordHash) {
                 throw new InvalidArgumentException('Current password is incorrect');
             }
 
@@ -352,8 +352,8 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
-            if (! $user instanceof UserContract) {
-                throw new InvalidArgumentException('User must implement UserContract');
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -363,7 +363,7 @@ final class ProfileEditVoltComponent extends Component
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
-            if ($currentPasswordHash === null) {
+            if (null === $currentPasswordHash) {
                 throw new InvalidArgumentException('Password is incorrect for account deletion');
             }
             Assert::true(

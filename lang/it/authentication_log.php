@@ -65,16 +65,6 @@ return [
             'icon' => 'applyTableColumnManager',
             'tooltip' => 'applyTableColumnManager',
         ],
-        'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
-            'icon' => 'resetColumnManager',
-            'label' => 'resetColumnManager',
-        ],
-        'save' => [
-            'label' => 'save',
-            'icon' => 'save',
-            'tooltip' => 'save',
-        ],
     ],
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Log (Plurale)',

@@ -1,9 +1,9 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
-use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
@@ -12,13 +12,14 @@ use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
-    $passwordData = new PasswordData;
+    $passwordData = new PasswordData();
 
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
     Assert::assertSame(5, $passwordData->otp_expiration_minutes);
@@ -96,7 +97,7 @@ it('password data get helper text works', function (): void {
 });
 
 it('password data get form components returns array', function (): void {
-    $passwordData = new PasswordData;
+    $passwordData = new PasswordData();
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -108,7 +109,7 @@ it('events can be instantiated', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
-    \assert($owner instanceof UserContract);
+    \assert($owner instanceof User);
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
@@ -135,7 +136,7 @@ it('events have dispatchable trait', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
-    \assert($owner instanceof UserContract);
+    \assert($owner instanceof User);
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
@@ -158,7 +159,7 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
-    $passwordData = new PasswordData;
+    $passwordData = new PasswordData();
 
     $passwordData->getValidationMessages();
 });

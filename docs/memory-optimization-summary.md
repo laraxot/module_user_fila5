@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/memory-optimization-summary.md
+>>>>>>> 87273113 (.)

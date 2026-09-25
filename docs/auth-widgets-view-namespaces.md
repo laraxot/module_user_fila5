@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -125,6 +126,7 @@ Per ogni nuovo widget di autenticazione:
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
+>>>>>>> 87273113 (.)
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -269,4 +271,5 @@ Per ogni nuovo widget di autenticazione:
 ## Collegamenti
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
+>>>>>>> 87273113 (.)
 - [Implementazione Auth Pages](auth-pages-implementation.md)

@@ -468,23 +468,6 @@ php artisan migrate --path=vendor/spatie/laravel-permission/database/migrations
 $user->assignRole(Role::findByName('admin', 'web'));
 ```
 
-## User Extension: `hasPermissionToOrCreate`
-
-The `Modules\User\Models\Traits\HasSpatiePermission` trait adds this contract-compatible extension:
-
-```php
-public function hasPermissionToOrCreate(string $permission, ?string $guardName = null): bool;
-```
-
-It resolves the guard (using the model's default when omitted), creates the `Permission` through `Permission::findOrCreate()`, and then delegates the authorization check to Spatie's `hasPermissionTo()`. Creating a permission does **not** assign it to the user: the method returns the actual permission result.
-
-This extension is useful when a caller must ensure that a permission exists before asking Spatie to evaluate it. It does not replace `hasPermissionTo()`, role assignment, team context, Gate checks, or Policy checks. After changing team context, call `setPermissionsTeamId()` before evaluating permissions.
-
-- User permission SSoT: [`permissions.md`](./permissions.md)
-- Contract: [`UserContract`](../../Xot/app/Contracts/UserContract.php)
-- Xot guard/role boundary: [`roles-permissions.md`](../../Xot/docs/roles-permissions.md)
-- Runtime coverage: [`HasSpatiePermissionAutoCreateTest.php`](../tests/Feature/HasSpatiePermissionAutoCreateTest.php)
-
 ## Documentation Links
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/

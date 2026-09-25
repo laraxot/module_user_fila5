@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Extra;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -8,8 +9,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateExtraTable.
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     protected ?string $model_class = Extra::class;
 
     /**

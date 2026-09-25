@@ -10,3 +10,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenantfactory-fix.md
+>>>>>>> 87273113 (.)

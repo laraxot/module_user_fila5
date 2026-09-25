@@ -18,6 +18,7 @@ related:
   - "./profile.md"
 ---
 
+>>>>>>> 87273113 (.)
 # payment
 
 <!-- Contenuto migrato da _docs/payment.txt -->

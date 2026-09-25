@@ -17,7 +17,8 @@ class Message extends Component
      */
     public function __construct(
         // public string $message
-    ) {}
+    ) {
+    }
 
     /**
      * Get the view / contents that represent the component.
@@ -25,7 +26,6 @@ class Message extends Component
     public function render(): View|\Closure|string
     {
         $metatag = MetatagData::make();
-        /** @var view-string $view */
         $view = 'user::components.mail.html.message';
         $view_params = [
             'logo' => asset($metatag->getBrandLogo()),

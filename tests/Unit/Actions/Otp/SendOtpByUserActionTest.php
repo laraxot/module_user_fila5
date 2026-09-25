@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
@@ -55,7 +56,7 @@ describe('SendOtpByUserAction', function () {
 
                 return ($routes['mail'] ?? null) === $user->email
                     && $notification->user->id === $user->id
-                    && $notification->code === 'random-otp-12';
+                    && 'random-otp-12' === $notification->code;
             }
         );
 

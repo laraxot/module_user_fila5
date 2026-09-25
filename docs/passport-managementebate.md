@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Passport Complete Management - Internal Debate & Decision
 
 > **Data**: [DATE]  
@@ -241,6 +242,7 @@ app/Policies/OauthClientPolicy.php
 - [passport.md](./passport.md) - Documentazione completa Passport
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
+>>>>>>> 87273113 (.)
 
 ---
 

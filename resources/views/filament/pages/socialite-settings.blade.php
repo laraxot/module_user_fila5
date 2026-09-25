@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 {{--
     View: user::filament.pages.socialite-settings
     

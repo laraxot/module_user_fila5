@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\User\Database\Seeders\RoleSeeder;
 use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
@@ -21,7 +22,7 @@ it('creates expected roles', function (): void {
         'guest',
     ];
 
-    $seeder = new RoleSeeder;
+    $seeder = new RoleSeeder();
     $seeder->setContainer(app());
     $seeder->run();
 
@@ -34,7 +35,7 @@ it('creates expected roles', function (): void {
 });
 
 it('is idempotent when run multiple times', function (): void {
-    $seeder = new RoleSeeder;
+    $seeder = new RoleSeeder();
     $seeder->setContainer(app());
 
     $seeder->run();

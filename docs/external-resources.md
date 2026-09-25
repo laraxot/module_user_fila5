@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Risorse e Link Utili - Modulo User
 
 Raccolta di link e risorse esterne per lo sviluppo del modulo User.

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Tests\TestCase;

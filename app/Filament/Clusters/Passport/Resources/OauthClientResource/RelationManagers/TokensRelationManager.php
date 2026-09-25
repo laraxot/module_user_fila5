@@ -43,29 +43,23 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->sortable(),
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
-                ->tooltip(
-                    /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
-                    function (mixed $state): ?string {
-                        if ($state === null) {
-                            return null;
-                        }
-                        if (is_array($state)) {
-                            return json_encode($state);
-                        }
-
-                        return is_string($state) ? $state : null;
+                ->tooltip(function (mixed $state): ?string {
+                    if (null === $state) {
+                        return null;
                     }
-                )
-                ->formatStateUsing(
-                    /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
-                    function (mixed $state): string {
-                        if (is_array($state)) {
-                            return implode(', ', array_map(fn (mixed $s): string => is_scalar($s) ? (string) $s : '', $state));
-                        }
-
-                        return is_scalar($state) ? (string) $state : '';
+                    if (is_array($state)) {
+                        return json_encode($state);
                     }
-                ),
+
+                    return is_string($state) ? $state : null;
+                })
+                ->formatStateUsing(function (mixed $state): string {
+                    if (is_array($state)) {
+                        return implode(', ', array_map(fn (mixed $s): string => is_scalar($s) ? (string) $s : '', $state));
+                    }
+
+                    return is_scalar($state) ? (string) $state : '';
+                }),
             'revoked' => IconColumn::make('revoked')
                 ->boolean()
                 ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
@@ -75,7 +69,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
-                ->formatStateUsing(function (Carbon|string|null $state): string {
+                ->formatStateUsing(function (mixed $state): string {
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {

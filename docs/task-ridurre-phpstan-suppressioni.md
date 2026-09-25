@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Task: Ridurre Suppressioni PHPStan Inline - User
 
 **Modulo**: User

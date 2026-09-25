@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
+
+declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -19,7 +20,8 @@ class CreateSocialiteUserAction
 
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
-    ) {}
+    ) {
+    }
 
     /**
      * Execute the action.

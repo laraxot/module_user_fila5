@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
+>>>>>>> 87273113 (.)

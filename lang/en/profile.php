@@ -84,9 +84,6 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
-    'privacy_policy' => [
-        'title' => 'Privacy policy',
-    ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

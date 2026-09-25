@@ -18,10 +18,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT
 
+>>>>>>> 87273113 (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0

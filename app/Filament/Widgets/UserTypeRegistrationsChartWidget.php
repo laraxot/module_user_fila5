@@ -38,15 +38,15 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
-            $startDate = self::parseFilterDateFromFilters($filters, 'startDate');
-            $endDate = self::parseFilterDateFromFilters($filters, 'endDate');
+            $startDate = self::parseFilterDate($filters['startDate'] ?? null);
+            $endDate = self::parseFilterDate($filters['endDate'] ?? null);
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
-        if ($startDate === null) {
+        if (null === $startDate) {
             $startDate = now()->subDays(30);
         }
-        if ($endDate === null) {
+        if (null === $endDate) {
             $endDate = now();
         }
 
@@ -100,26 +100,9 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
         return 'line';
     }
 
-    /**
-     * @param  array<scalar, scalar>  $filters
-     */
-    private static function parseFilterDateFromFilters(array $filters, string $key): ?Carbon
+    private static function parseFilterDate(mixed $value): ?Carbon
     {
-        if (! array_key_exists($key, $filters)) {
-            return null;
-        }
-
-        $raw = $filters[$key];
-        if (! is_string($raw) && ! is_int($raw)) {
-            return null;
-        }
-
-        return self::parseFilterDate($raw);
-    }
-
-    private static function parseFilterDate(string|int|null $value): ?Carbon
-    {
-        if ($value === null) {
+        if (! is_string($value) && ! is_int($value) && ! is_float($value)) {
             return null;
         }
 

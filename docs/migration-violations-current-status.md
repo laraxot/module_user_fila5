@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-current-status.md
+>>>>>>> 87273113 (.)

@@ -18,6 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
+>>>>>>> 87273113 (.)
 # two_factor
 
 <!-- Contenuto migrato da _docs/two_factor.txt -->

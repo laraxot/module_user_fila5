@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -82,3 +83,4 @@ User/
 ---
 
 *Last updated: June 2026*
+>>>>>>> 87273113 (.)

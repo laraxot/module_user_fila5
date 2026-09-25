@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -127,3 +128,5 @@ TextColumn::make('name')
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
+
+>>>>>>> 87273113 (.)

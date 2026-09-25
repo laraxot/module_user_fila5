@@ -18,6 +18,7 @@ related:
   - "./dependency.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem
@@ -25,6 +26,7 @@ related:
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+>>>>>>> 87273113 (.)
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
 
 ## File/Directory Rimossi da User Module
@@ -189,3 +191,7 @@ grep -r "Database/seeders" .
   - 23 migration files
   - 5 seeder files
   - Total: 57 duplicate files eliminated
+>>>>>>> 87273113 (.)
+=======
+  - Total: 57 duplicate files eliminated
+>>>>>>> laraxot/dev

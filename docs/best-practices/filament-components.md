@@ -18,6 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Best Practices per Componenti Filament
 
 ## Verifica delle Dipendenze

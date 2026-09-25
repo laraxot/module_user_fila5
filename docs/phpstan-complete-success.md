@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-complete-success.md
+>>>>>>> 87273113 (.)

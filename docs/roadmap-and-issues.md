@@ -18,12 +18,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
+>>>>>>> 87273113 (.)
 
 ---
 
@@ -44,6 +46,7 @@ related:
 ---
 
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
+>>>>>>> 87273113 (.)
 
 ### Categorizzazione Errori
 
@@ -268,6 +271,7 @@ php artisan queue:prune-failed --hours=48
 
 **Totale**: ~6 ore  
 **Risultato**: ✅ 0 errori PHPStan Level 10
+>>>>>>> 87273113 (.)
 
 ---
 
@@ -334,6 +338,7 @@ php artisan queue:prune-failed --hours=48
   - Activity metrics
   - Engagement tracking
   - Churn <nome progetto>ion
+>>>>>>> 87273113 (.)
 
 ---
 
@@ -391,12 +396,14 @@ php artisan queue:prune-failed --hours=48
 
 - [← User Module README](./readme.md)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
+>>>>>>> 87273113 (.)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
+>>>>>>> 87273113 (.)
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN

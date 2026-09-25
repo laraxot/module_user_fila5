@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Team;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -11,8 +12,7 @@ use Modules\Xot\Datas\XotData;
  *
  * owner_id → User (senza constrained cross-DB).
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     protected ?string $model_class = Team::class;
 
     public function up(): void

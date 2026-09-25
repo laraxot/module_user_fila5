@@ -49,9 +49,6 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
     ],
     'messages' => ['update_success' => 'Profilo aggiornato con successo!', 'no_permission' => 'Non hai i permessi per modificare questo profilo.'],
-    'privacy_policy' => [
-        'title' => 'Informativa sulla privacy',
-    ],
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
 ];

@@ -14,6 +14,7 @@ related:
   - "./registration-widget.md"
 ---
 
+>>>>>>> 87273113 (.)
 # RegistrationWidget FileUpload Error Fix
 
 ## Problema Identificato

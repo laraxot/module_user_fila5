@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
+>>>>>>> 87273113 (.)

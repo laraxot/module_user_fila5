@@ -18,6 +18,7 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.
@@ -46,3 +47,4 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 - [Roadmap User](../roadmap.md)
 - [README User](../readme.md)
 - [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
+>>>>>>> 87273113 (.)

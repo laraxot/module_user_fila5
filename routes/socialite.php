@@ -1,9 +1,11 @@
 <?php
 
-declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite/blob/main/routes/web.php
  */
+
+declare(strict_types=1);
+
 use Illuminate\Support\Facades\Route;
 
 Route::namespace('Socialite')

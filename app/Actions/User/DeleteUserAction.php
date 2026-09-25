@@ -6,7 +6,7 @@ namespace Modules\User\Actions\User;
 
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Hashing\Hasher;
-use Modules\User\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 class DeleteUserAction
@@ -16,17 +16,20 @@ class DeleteUserAction
     public function __construct(
         private readonly Hasher $hasher,
         private readonly Guard $authGuard,
-    ) {}
+    ) {
+    }
 
     /**
      * Elimina l'utente dopo aver verificato la password.
      *
-     * @return array{success: bool, message: string}
+     * @param User   $user            L'utente da eliminare
+     * @param string $confirmPassword La password di conferma
+     *
+     * @return array{success: bool, message: string} Risultato dell'operazione
      */
-    public function execute(UserContract $user, string $confirmPassword): array
+    public function execute(User $user, string $confirmPassword): array
     {
-        $hashedPassword = $user->getAttribute('password');
-        if (! is_string($hashedPassword) || ! $this->hasher->check($confirmPassword, $hashedPassword)) {
+        if (! $this->hasher->check($confirmPassword, $user->password)) {
             return [
                 'success' => false,
                 'message' => 'La password inserita non è corretta',

@@ -24,8 +24,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-    /** @var view-string */
-    protected string $view;
+    protected string $view = 'user::widgets.auth.reset-password-widget';
 
     /**
      * @return class-string<UserForm>
@@ -64,7 +63,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
             ])->save();
         });
 
-        if ($status === Password::PASSWORD_RESET) {
+        if (Password::PASSWORD_RESET === $status) {
             session()->flash('status', __($status));
 
             return redirect()->route('login');

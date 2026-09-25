@@ -18,6 +18,7 @@ related:
   - "./dependency.md"
 ---
 
+>>>>>>> 87273113 (.)
 # dependency-rules
 
 ## Principle (MANDATORY)

@@ -6,12 +6,13 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
-use Modules\User\Models\Role;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
+
+use Modules\User\Models\Role;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 class RemoveRoleCommand extends Command
 {

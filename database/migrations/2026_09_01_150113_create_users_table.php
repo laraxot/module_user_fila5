@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -13,8 +14,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::users` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['uuid'].
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     protected ?string $model_class = User::class;
 
     /**
@@ -106,7 +106,7 @@ return new class extends XotBaseMigration
                 $table->string('password')->nullable()->change();
             }
 
-            if ($this->getColumnType('id') === 'uuid') {
+            if ('uuid' === $this->getColumnType('id')) {
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

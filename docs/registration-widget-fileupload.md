@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+>>>>>>> 87273113 (.)

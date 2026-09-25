@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 

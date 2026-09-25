@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: [DATE]  
@@ -128,6 +129,7 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
    - Integrazione con Contact model ExternalProject
+>>>>>>> 87273113 (.)
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -176,6 +178,7 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+>>>>>>> 87273113 (.)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
 

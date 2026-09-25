@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
@@ -31,14 +30,11 @@ class Confirm extends Component
         app(ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
 
-        /** @var view-string */
+        /**
+         * @phpstan-var view-string
+         */
         $view = 'pub_theme::livewire.auth.passwords.confirm';
 
-        /** @var View $res */
-        $res = view($view);
-        // @phpstan-ignore-next-line
-        $res->extends('pub_theme::layouts.auth');
-
-        return $res;
+        return view($view)->extends('pub_theme::layouts.auth');
     }
 }

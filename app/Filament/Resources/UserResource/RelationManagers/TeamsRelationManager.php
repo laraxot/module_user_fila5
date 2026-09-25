@@ -14,7 +14,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class TeamsRelationManager extends XotBaseRelationManager
@@ -34,9 +34,10 @@ class TeamsRelationManager extends XotBaseRelationManager
             'personal_team' => IconColumn::make('personal_team')
                 ->boolean()
                 ->getStateUsing(function (Model $record, self $livewire): bool {
+                    /** @var User $user */
                     $user = $livewire->getOwnerRecord();
 
-                    if (! $user instanceof UserContract) {
+                    if (! $user instanceof User) {
                         return false;
                     }
 
@@ -72,9 +73,10 @@ class TeamsRelationManager extends XotBaseRelationManager
         return [
             'detach' => DetachAction::make()
                 ->after(function (Model $record, self $livewire): void {
+                    /** @var User $user */
                     $user = $livewire->getOwnerRecord();
 
-                    if (! $user instanceof UserContract) {
+                    if (! $user instanceof User) {
                         return;
                     }
 

@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Notifications\Notification;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Webmozart\Assert\Assert;
@@ -69,14 +70,14 @@ class RegisterWidget extends XotBaseSchemaWidget
 
         $userClass = XotData::make()->getUserClass();
 
-        $user = DB::transaction(function () use ($data, $userClass): UserContract {
+        $user = DB::transaction(function () use ($data, $userClass): Authenticatable {
             $firstName = is_string($data['first_name'] ?? null) ? trim($data['first_name']) : '';
             $lastName = is_string($data['last_name'] ?? null) ? trim($data['last_name']) : '';
             $name = trim($firstName.' '.$lastName);
             $email = is_string($data['email'] ?? null) ? trim($data['email']) : '';
 
             $user = $userClass::create(array_merge($data, [
-                'name' => $name !== '' ? $name : $email,
+                'name' => '' !== $name ? $name : $email,
                 'email_verified_at' => null,
             ]));
 
@@ -91,7 +92,7 @@ class RegisterWidget extends XotBaseSchemaWidget
                     ->log('User registered via RegisterWidget');
             }
 
-            Assert::isInstanceOf($user, UserContract::class);
+            Assert::isInstanceOf($user, Authenticatable::class);
 
             return $user;
         });
@@ -99,9 +100,9 @@ class RegisterWidget extends XotBaseSchemaWidget
         $this->handleSuccessfulRegistration($user);
     }
 
-    protected function handleSuccessfulRegistration(UserContract $user): void
+    protected function handleSuccessfulRegistration(Authenticatable $user): void
     {
-        if (config('auth.must_verify_email')) {
+        if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
             $user->sendEmailVerificationNotification();
         }
 

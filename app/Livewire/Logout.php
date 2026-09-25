@@ -45,9 +45,6 @@ class Logout extends Component
      */
     public function render(): View
     {
-        /** @var view-string $view */
-        $view = 'user::livewire.logout';
-
-        return view($view);
+        return view('user::livewire.logout');
     }
 }
