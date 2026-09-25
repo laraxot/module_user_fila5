@@ -224,7 +224,6 @@ Homestead.json
 
 .phpstorm.meta.php
 .windsurf/
-.cursor/
 .vscode/
 # --- Git leftovers (merge/rebase/editor) ---
 .git-rewrite/
@@ -258,7 +257,6 @@ Homestead.json
 
 .phpstorm.meta.php
 .windsurf/
-.cursor/
 .vscode/
 # --- Git leftovers (merge/rebase/editor) ---
 .git-rewrite/
@@ -354,7 +352,6 @@ resources/views/node_modules
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
 
-.cursor/
 .devcontainer/
 .vscode/
 .windsurf/
@@ -363,8 +360,6 @@ resources/views/node_modules
 
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
-phpinsights.php
-rector.php
 tests/Unit/graphify-out/
 
 
@@ -378,7 +373,6 @@ tests/Unit/graphify-out/
 # DEVELOPMENT TOOLS
 # ====
 .windsurf/
-.cursor/
 .phpstorm.meta.php
 
 # ====
@@ -466,14 +460,11 @@ docs/**/bashscripts/
 resources/views/node_modules
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-.cursor/
 .devcontainer/
 .vscode/
 .windsurf/
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
-phpinsights.php
-rector.php
 tests/Unit/graphify-out/
 
 
@@ -485,10 +476,6 @@ tools/
 app/Models/Models
 
 # Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
-/rector.php
-/phpinsights.php
-/.cursor
-/.cursor/
 /.windsurf
 /.windsurf/
 /.vscode
@@ -503,11 +490,21 @@ graphify-out/
 # Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
 
 # Agent tooling and local audit output
-/.agents/
-/.codex/
-/.opencode/
-/.qwen/
 
 # Module-local quality tool configuration
-/.php-cs-fixer.dist.php
+.rector.php
+.phpinsights.php
+
+# Root agent tooling and PHP quality configuration
+/.agents/
+/.codex/
+/.cursor/
+/.opencode/
+/.qwen/
+/rector.php
+/phpinsights.php
 /.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+
+# Generated Claude audit coverage scaffold (never commit)
+/audit-coverage/
