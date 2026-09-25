@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Gestione Avanzata dei Conflitti Git
 
 ## Approccio Sicuro alla Risoluzione dei Conflitti

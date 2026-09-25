@@ -11,7 +11,6 @@ related:
   - "./service-provider-separation-zen.md"
 ---
 
->>>>>>> 87273113 (.)
 # Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
 ## La Storia

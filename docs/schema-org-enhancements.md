@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/schema-org-enhancements.md
->>>>>>> 87273113 (.)

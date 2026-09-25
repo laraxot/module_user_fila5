@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Dibattito Filosofico: Risoluzione Errori PHPStan
 
 **Data Creazione**: [DATE]

@@ -28,7 +28,6 @@ related:
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
->>>>>>> 87273113 (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -39,7 +38,6 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 ## Approcci Raccomandati
 
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
->>>>>>> 87273113 (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -131,7 +129,6 @@ mount(function() {
         session()->regenerateToken();
     }
 
->>>>>>> 87273113 (.)
     // Reindirizza alla home page localizzata
     $this->redirect('/' . app()->getLocale());
 });
@@ -371,7 +368,6 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
->>>>>>> 87273113 (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

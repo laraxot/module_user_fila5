@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
+use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
@@ -26,7 +27,7 @@ beforeEach(function () {
         'is_active' => true,
         'email_verified_at' => now(),
     ]);
-    \assert($user instanceof User);
+    \assert($user instanceof UserContract);
     TestCase::$user = $user;
 });
 
@@ -68,7 +69,7 @@ describe('User Authentication', function () {
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
-        \assert($inactiveUser instanceof User);
+        \assert($inactiveUser instanceof UserContract);
 
         $result = Auth::attempt([
             'email' => $inactiveUser->email,
@@ -95,7 +96,7 @@ describe('User Password Management', function () {
         $user = UserFactory::new()->createOne([
             'password' => Hash::make('testpassword'),
         ]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         expect(Hash::check('testpassword', $user->password))->toBe(true);
     });
@@ -115,9 +116,9 @@ describe('User Password Management', function () {
         $user = UserFactory::new()->createOne([
             'password_expires_at' => now()->subDays(1),
         ]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
         $passwordExpiresAt = $user->password_expires_at;
-        \assert(null !== $passwordExpiresAt);
+        \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->isPast())->toBe(true);
     });
@@ -129,7 +130,7 @@ describe('User Password Management', function () {
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
-        \assert(null !== $passwordExpiresAt);
+        \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->toDateString())
             ->toBe($expirationDate->toDateString());
@@ -151,7 +152,7 @@ describe('User Remember Token', function () {
         $user = User::where('email', TestCase::requireUser()->email)->where('remember_token', $token)->first();
 
         expect($user)->not->toBeNull();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
         expect($user->id)->toBe(TestCase::requireUser()->id);
     });
 });
@@ -162,14 +163,14 @@ describe('User Email Verification', function () {
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         expect($user->email_verified_at)->toBeNull();
 
         $user->markEmailAsVerified();
 
         $fresh = $user->fresh();
-        \assert(null !== $fresh);
+        \assert($fresh !== null);
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });
@@ -179,13 +180,13 @@ describe('User Email Verification', function () {
         $verifiedUser = UserFactory::new()->createOne([
             'email_verified_at' => now(),
         ]);
-        \assert($verifiedUser instanceof User);
+        \assert($verifiedUser instanceof UserContract);
 
         /** @var User $unverifiedUser */
         $unverifiedUser = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-        \assert($unverifiedUser instanceof User);
+        \assert($unverifiedUser instanceof UserContract);
 
         expect($verifiedUser->hasVerifiedEmail())->toBe(true);
         expect($unverifiedUser->hasVerifiedEmail())->toBe(false);
@@ -196,7 +197,7 @@ describe('User Email Verification', function () {
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         Notification::fake();
 
@@ -280,7 +281,7 @@ describe('User OAuth Authentication', function () {
         $user = User::findForPassport(TestCase::requireUser()->email);
 
         expect($user)->not->toBeNull();
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
         expect($user->id)->toBe(TestCase::requireUser()->id);
     });
 
@@ -343,7 +344,7 @@ describe('User Two Factor Authentication', function () {
             'is_otp' => true,
             'password' => Hash::make('password123'),
         ]);
-        \assert($user instanceof User);
+        \assert($user instanceof UserContract);
 
         // First step: password authentication
         $result = Auth::attempt([

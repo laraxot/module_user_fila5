@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration-1.md
->>>>>>> 87273113 (.)

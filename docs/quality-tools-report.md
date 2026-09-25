@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
->>>>>>> 87273113 (.)

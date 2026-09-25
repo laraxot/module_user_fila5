@@ -17,7 +17,6 @@ related:
   - "./user-analytics.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Traits Implementation
 
 ## Overview
@@ -83,7 +82,6 @@ trait PasswordValidationRules
    - Test database operations
 ## Links
 - [Back to Roadmap](../../../docs/roadmap.md)
->>>>>>> 87273113 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)
 - Related: [Authentication Log Enhancement](./auth-log-enhancement.md)

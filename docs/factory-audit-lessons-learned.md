@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER
@@ -121,7 +120,6 @@ class DeviceProfileFactory extends DeviceUserFactory
 ## 🔗 COLLEGAMENTI
 
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
->>>>>>> 87273113 (.)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./readme.md)
 

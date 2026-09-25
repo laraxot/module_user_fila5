@@ -18,7 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
->>>>>>> 87273113 (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

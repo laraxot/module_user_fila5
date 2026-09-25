@@ -16,7 +16,6 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
->>>>>>> 87273113 (.)
 # BaseUser
 
 ## Descrizione

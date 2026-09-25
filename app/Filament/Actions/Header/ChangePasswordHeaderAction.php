@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Header;
 
@@ -57,7 +56,7 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                         ->rule(
                             'required',
                             /**
-                             * @param callable(string): mixed $get
+                             * @param  callable(string): mixed  $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
->>>>>>> 87273113 (.)

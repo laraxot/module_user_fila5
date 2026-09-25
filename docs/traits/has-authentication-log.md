@@ -12,7 +12,6 @@ related:
   - "./has-tenants.md"
 ---
 
->>>>>>> 87273113 (.)
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

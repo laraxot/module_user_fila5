@@ -18,7 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
->>>>>>> 87273113 (.)
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -159,7 +158,6 @@ protected static string $view = 'user::widgets.edit-user';
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
->>>>>>> 87273113 (.)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

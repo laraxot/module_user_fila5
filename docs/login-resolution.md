@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Risoluzione Problema Login - Report Finale (Aggiornato)
 
 ## Prologo: La Sfida degli Agenti

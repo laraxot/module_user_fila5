@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Migration Consolidation Strategy - User Module
 
 ## The Furious Argument: One File vs. Multiple Incremental Files

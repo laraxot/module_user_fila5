@@ -12,6 +12,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
@@ -55,12 +56,12 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
-                    ->url(function (mixed $record): ?string {
+                    ->url(function (Model|array|null $record): ?string {
                         if (! $record instanceof OauthAccessToken) {
                             return null;
                         }
                         $user = $record->user;
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -78,17 +79,19 @@ class OauthAccessTokenResource extends XotBaseResource
 
                 TextColumn::make('scopes')
                     ->limit(30)
-                    ->tooltip(function (mixed $state): ?string {
-                        if (null === $state) {
-                            return null;
-                        }
-                        if (is_array($state)) {
-                            /* @var array<string, mixed> $state */
-                            return json_encode($state);
-                        }
+                    ->tooltip(
+                        /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
+                        function (mixed $state): ?string {
+                            if ($state === null) {
+                                return null;
+                            }
+                            if (is_array($state)) {
+                                return json_encode($state);
+                            }
 
-                        return is_string($state) ? $state : null;
-                    }),
+                            return is_string($state) ? $state : null;
+                        }
+                    ),
 
                 IconColumn::make('revoked')
                     ->boolean()
@@ -101,7 +104,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable()
-                    ->formatStateUsing(function (mixed $state): string {
+                    ->formatStateUsing(function (Carbon|string|null $state): string {
                         if ($state instanceof Carbon) {
                             $now = Carbon::now();
                             if ($state->lt($now)) {

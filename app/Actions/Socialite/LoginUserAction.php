@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
@@ -13,6 +12,7 @@ use Filament\Facades\Filament;
 use Illuminate\Http\RedirectResponse;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
 class LoginUserAction
@@ -24,7 +24,7 @@ class LoginUserAction
      */
     public function execute(SocialiteUser $socialiteUser): RedirectResponse
     {
-        /** @var \Modules\Xot\Contracts\UserContract $user */
+        /** @var UserContract $user */
         $user = $socialiteUser->user()->firstOrFail();
 
         event(new SocialiteUserConnected($socialiteUser));

@@ -8,23 +8,21 @@ use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
- * SocialLoginWidget: Widget riutilizzabile per pulsanti login OAuth (Google, Microsoft).
+ * Pulsanti OAuth (Google, Microsoft, GitHub).
  *
- * Mostra i pulsanti solo per i provider configurati in config/services.
- * Usabile in login, register e altre pagine auth.
- *
- * Regole Laraxot:
- * - Estende XotBaseSchemaWidget
- * - Traduzioni da user::auth.social
- * - Route: socialite.oauth.redirect
+ * Panel: route `socialite.oauth.redirect`.
+ * FO: `$redirectRoute = 'socialite.oauth.fo.redirect'`.
  */
 class SocialLoginWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::filament.widgets.auth.social-login';
+    protected static bool $isDiscovered = false;
+
+    /** @var view-string */
+    protected string $view;
+
+    public string $redirectRoute = 'socialite.oauth.redirect';
 
     /**
-     * Widget senza form: schema vuoto.
-     *
      * @return array<string, Component>
      */
     public function getFormSchema(): array
@@ -69,14 +67,25 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         return $providers;
     }
 
+    public function getRedirectUrl(string $driver): string
+    {
+        return route($this->normalizeRedirectRoute(), ['provider' => $driver]);
+    }
+
     public function redirectToProvider(string $driver): void
     {
-        $driver = match ($driver) {
-            'google' => 'google',
-            'microsoft' => 'microsoft',
-            default => $driver,
-        };
+        if (! in_array($driver, ['google', 'microsoft', 'github'], true)) {
+            return;
+        }
 
-        redirect()->to(route('socialite.oauth.redirect', ['provider' => $driver]));
+        redirect()->to($this->getRedirectUrl($driver));
+    }
+
+    private function normalizeRedirectRoute(): string
+    {
+        return match ($this->redirectRoute) {
+            'socialite.oauth.redirect', 'socialite.oauth.fo.redirect' => $this->redirectRoute,
+            default => 'socialite.oauth.redirect',
+        };
     }
 }

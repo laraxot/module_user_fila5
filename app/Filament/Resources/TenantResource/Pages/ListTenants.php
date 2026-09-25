@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Tenant List Management.
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
@@ -31,8 +30,8 @@ class ListTenants extends XotBaseListRecords
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
-                ->default(function ($record) {
-                    if (null === $record || ! $record instanceof Tenant) {
+                ->default(function (mixed $record): string {
+                    if ($record === null || ! $record instanceof Tenant) {
                         return '';
                     }
                     $record->generateSlug();

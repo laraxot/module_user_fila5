@@ -27,7 +27,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 ## Testing
 
-- [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Da 1264 a 0 errori PHPStan sul modulo.
+- [pest-helpers-bootfiles](pest-helpers-bootfiles.md) — helper di dominio in `tests/Helpers.php`, caricato da `Pest\Bootstrappers\BootFiles`: niente `require_once`, niente `tests/Support`. Trait OAuth/Team concern archiviato `.bak` (logica in `TestCase`).
 
 ## Altro
 - [notifications-folio-page](notifications-folio-page.md) — pagina `/notifications`, owner User
@@ -39,7 +39,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 - [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
-- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner <nome progetto>
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner modulo di progetto (non User)
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
 
 ## Folio FO

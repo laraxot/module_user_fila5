@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Resources Array Keys Philosophy: String Keys Always
 
 ## Data: [DATE]

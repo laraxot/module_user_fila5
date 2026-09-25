@@ -498,3 +498,8 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+graphify-out/
+*.backup_*
+
+# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
+audit-coverage/

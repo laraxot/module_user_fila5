@@ -18,7 +18,7 @@ class DeleteAccount extends Component
     public function render(): View
     {
         /** @var view-string $viewName */
-        $viewName = 'filament-jet::livewire.profile.delete-account';
+        $viewName = 'user::livewire.profile.delete-account';
 
         return view($viewName);
     }

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Updated Migration Violations Analysis - User Module
 
 ## Current State vs. Initial Analysis

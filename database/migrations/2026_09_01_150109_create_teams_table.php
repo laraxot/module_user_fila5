@@ -13,7 +13,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::teams` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Esegue la migrazione.
      */

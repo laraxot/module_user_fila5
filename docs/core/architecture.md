@@ -10,7 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
->>>>>>> 87273113 (.)
 # Architettura Modulo User
 
 ## 🏗️ Panoramica Architetturale
@@ -304,10 +303,8 @@ return [
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
->>>>>>> 87273113 (.)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
->>>>>>> 87273113 (.)
 **Versione:** 2.0 - Consolidata DRY + KISS

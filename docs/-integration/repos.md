@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # repos
 
 <!-- Contenuto migrato da _docs/repos.txt -->

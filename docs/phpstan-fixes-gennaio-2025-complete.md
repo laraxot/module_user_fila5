@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
->>>>>>> 87273113 (.)

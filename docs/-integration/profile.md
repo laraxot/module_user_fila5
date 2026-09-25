@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # profile
 
 <!-- Contenuto migrato da _docs/profile.txt -->

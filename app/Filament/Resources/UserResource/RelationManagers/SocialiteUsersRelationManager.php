@@ -33,7 +33,7 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
             'provider_id' => TextColumn::make('provider_id')
                 ->searchable(),
             'provider_avatar' => TextColumn::make('provider_avatar')
-                ->formatStateUsing(function (mixed $state): string {
+                ->formatStateUsing(function (string|int|float|bool|null $state): string {
                     if (\is_scalar($state) && $state) {
                         /** @phpstan-var view-string $viewString */
                         $viewString = 'filament.components.avatar';

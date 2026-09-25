@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

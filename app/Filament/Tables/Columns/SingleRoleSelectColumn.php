@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Tables\Columns;
 
+use Modules\User\Filament\Forms\Components\SingleRoleSelect;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
 
 /**
- * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\SingleRoleSelect}.
+ * Controparte in lista di {@see SingleRoleSelect}.
  *
  * Stesse opzioni (ruoli da `Role::query()`), esposte come select inline di riga.
  *

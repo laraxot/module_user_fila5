@@ -18,7 +18,6 @@ related:
   - "./dependency.md"
 ---
 
->>>>>>> 87273113 (.)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem

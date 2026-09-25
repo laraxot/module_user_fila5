@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
 **Status**: 🔄 In Progress

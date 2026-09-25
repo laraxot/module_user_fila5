@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Filament 4 — filtri pagina e widget (lezioni apprese)
 
 - Pagina: usare `HasFiltersForm` e renderizzare lo schema in Blade con `{{ $this->getFiltersForm() }}`.

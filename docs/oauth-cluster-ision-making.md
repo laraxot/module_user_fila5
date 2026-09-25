@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # OAuth Cluster - Processo Decisionale
 
 **Metodologia**: Super Mucca

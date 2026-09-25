@@ -12,7 +12,8 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
-    protected string $view = 'user::filament.widgets.user-dropdown';
+    /** @var view-string */
+    protected string $view;
 
     /**
      * Handle user logout.
@@ -63,13 +64,13 @@ class UserDropdown extends XotBaseSchemaWidget
 
         if (method_exists($profile, 'getAvatarUrl')) {
             $url = $profile->getAvatarUrl();
-            if (\is_string($url) && '' !== $url) {
+            if (\is_string($url) && $url !== '') {
                 return $url;
             }
         }
 
         $avatarUrl = $profile->avatar_url ?? null;
 
-        return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
+        return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
     }
 }

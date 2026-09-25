@@ -61,7 +61,6 @@ The recovery removed residual static-analysis drift in:
 - `RegisterWidget` now imports the `Log` facade explicitly
 - Refresh token revoke logic now uses attribute APIs instead of fragile direct dynamic property access where PHPStan could not infer the field safely
 
->>>>>>> 87273113 (.)
 ## Module Overview
 
 The User module provides:
@@ -111,7 +110,6 @@ To maintain PHPStan compliance:
 3. Prefer typed local variables over property access on `JsonResource` and similar proxy objects
 4. Run `./vendor/bin/phpstan analyse Modules/User --error-format=raw` after each Passport/OAuth batch
 5. Re-run `./vendor/bin/phpstan analyse Modules` before considering the work complete
->>>>>>> 87273113 (.)
 
 ## Related Documentation
 - [User Management Guide](user-management.md)
@@ -128,4 +126,3 @@ nella root del repo). Stato finale stabile: interfaccia con
 `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`),
 trait con `// @phpstan-ignore return.type` sulla riga di `return` in
 `HasTeams::teams()`. Ri-verificato a zero errori su tutto `Modules/`.
->>>>>>> 87273113 (.)

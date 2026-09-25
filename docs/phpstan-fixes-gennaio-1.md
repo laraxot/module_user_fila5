@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -249,7 +248,3 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
->>>>>>> 87273113 (.)
-=======
-**✨ Test Coverage**: 85% ✅
->>>>>>> laraxot/dev

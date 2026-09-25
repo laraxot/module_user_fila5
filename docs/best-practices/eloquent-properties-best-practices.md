@@ -18,7 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🛡️ Best Practices per Proprietà Eloquent
 
 ## ⚠️ Regola Critica: property_exists() VIETATO

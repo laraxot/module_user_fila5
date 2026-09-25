@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema
@@ -77,4 +76,3 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
 - [Best Practices Routing](./routing-best-practices-2.md) 
->>>>>>> 87273113 (.)

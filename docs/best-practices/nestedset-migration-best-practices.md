@@ -18,7 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
->>>>>>> 87273113 (.)
 # NestedSet Migration Best Practices - User Module
 
 ## Overview

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module - Updated Filament Resources Guide
 
 ## 📋 Overview

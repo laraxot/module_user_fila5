@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # stats
 
 <!-- Contenuto migrato da _docs/stats.txt -->

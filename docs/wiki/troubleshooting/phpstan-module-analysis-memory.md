@@ -4,7 +4,7 @@ type: troubleshooting
 module: User
 tags: [phpstan, user, oom, cache, larastan]
 created: "2026-06-18"
-updated: "2026-06-18"
+updated: "2026-09-24"
 qmd: "User phpstan analyse Modules/User OOM 512M cache gate"
 issues:
 discussions:
@@ -92,3 +92,20 @@ Verifica finale:
 ## Regola
 
 Se il run completo fallisce prima di mostrare errori tabellari, trattarlo come problema di runtime PHPStan/cache/OOM. Applicare il gate sequenziale e correggere codice solo quando PHPStan produce segnalazioni su file/linea.
+
+## `typeCoverage.paramTypeCoverage` sulle closure Filament
+
+Segnalazione globale: la % fleet può restare sotto 99% anche se il file sotto esame è ok.
+Criterio di done locale: tipizzare il parametro indicato dalla linea (non `@phpstan-ignore`, non cast silenziatori).
+
+Pattern tipici nel modulo User:
+
+| Parametro | Tipo |
+|-----------|------|
+| `$context` (create/edit) | `string` |
+| `$state` form/column | `mixed` (poi narrow) |
+| `$record` column default/getState | `mixed` |
+| `$query` in `where(function …)` | `Illuminate\Database\Eloquent\Builder` |
+| `$key` in `Collection::filter` | `int\|string` |
+
+Verifica: `php -l` + `./vendor/bin/phpstan analyse <file> --no-progress --memory-limit=-1`.

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
