@@ -18,7 +18,7 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     protected int|string|array $columnSpan = 'full';
 
     /**
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * Convenzione documentata in
      * Modules/Xot/docs/wiki/concepts/has-relationship-model-class.md:
      * per i widget, HasXotTable::getModelClass() risolve il model tramite
@@ -31,8 +31,8 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     }
 
     /**
-=======
->>>>>>> laraxot/dev
+     * =======
+     * >>>>>>> laraxot/dev
      * Define the columns to display in the table.
      */
     public function getTableColumns(): array
