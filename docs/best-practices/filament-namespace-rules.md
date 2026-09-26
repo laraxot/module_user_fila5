@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare

@@ -1,23 +1,10 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_62quLo
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration
-{
-=======
-=======
->>>>>>> laraxot/dev
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
-<<<<<<< HEAD
->>>>>>> .merge_file_boVfNv
-=======
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -57,15 +44,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_62quLo
-                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
-=======
                 app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> .merge_file_boVfNv
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> laraxot/dev
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

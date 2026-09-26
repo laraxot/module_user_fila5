@@ -5,7 +5,4 @@ canonical: ../../../../../Themes/docs/shared-components/architecture-rules-Modul
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/architecture-rules-Modules.md
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

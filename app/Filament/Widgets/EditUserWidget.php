@@ -203,14 +203,6 @@ class EditUserWidget extends XotBaseSchemaWidget
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<int|string, mixed> $schema
-     *
-     * @return array<int|string, Component>
-     */
-    private static function normalizeFormSchema(array $schema): array
-    {
-=======
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(mixed $schema): array
@@ -219,7 +211,6 @@ class EditUserWidget extends XotBaseSchemaWidget
             return [];
         }
 
->>>>>>> laraxot/dev
         $normalized = [];
         foreach ($schema as $key => $component) {
             if (! $component instanceof Component) {

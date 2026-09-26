@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # LoginWidget Livewire wire:model Binding Fix
 
 **Errore**: `[wire:model="email"] property does not exist on component`

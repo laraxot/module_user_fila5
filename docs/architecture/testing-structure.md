@@ -18,10 +18,7 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -315,8 +312,6 @@ dump($variable);
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
 
@@ -325,4 +320,3 @@ dump($variable);
 
 
 
->>>>>>> laraxot/dev

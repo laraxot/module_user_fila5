@@ -1,19 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
  * @see https://github.com/3x1io/filament-user/blob/main/src/resources/UserResource.php
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;

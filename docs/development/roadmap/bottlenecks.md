@@ -11,10 +11,7 @@ related:
   - "./2fa.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Colli di Bottiglia - Modulo User
 
 ## 1. Autenticazione 2FA [70%]

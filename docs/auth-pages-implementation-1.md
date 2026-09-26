@@ -28,10 +28,7 @@ related:
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Introduzione
 

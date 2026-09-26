@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo User
 
 **Data Generazione**: 2025-10-15 06:41:17

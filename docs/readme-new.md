@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - Authentication & Authorization
 
 **Last Update**: 2025-12-05
@@ -1024,10 +1021,7 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/security.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

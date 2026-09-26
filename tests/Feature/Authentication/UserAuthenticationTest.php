@@ -12,10 +12,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-use Modules\User\Contracts\UserContract;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
@@ -30,11 +26,7 @@ beforeEach(function () {
         'is_active' => true,
         'email_verified_at' => now(),
     ]);
-<<<<<<< HEAD
-    \assert($user instanceof UserContract);
-=======
     \assert($user instanceof User);
->>>>>>> laraxot/dev
     TestCase::$user = $user;
 });
 
@@ -76,11 +68,7 @@ describe('User Authentication', function () {
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
-<<<<<<< HEAD
-        \assert($inactiveUser instanceof UserContract);
-=======
         \assert($inactiveUser instanceof User);
->>>>>>> laraxot/dev
 
         $result = Auth::attempt([
             'email' => $inactiveUser->email,
@@ -107,11 +95,7 @@ describe('User Password Management', function () {
         $user = UserFactory::new()->createOne([
             'password' => Hash::make('testpassword'),
         ]);
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
 
         expect(Hash::check('testpassword', $user->password))->toBe(true);
     });
@@ -131,11 +115,7 @@ describe('User Password Management', function () {
         $user = UserFactory::new()->createOne([
             'password_expires_at' => now()->subDays(1),
         ]);
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
         $passwordExpiresAt = $user->password_expires_at;
         \assert(null !== $passwordExpiresAt);
 
@@ -171,11 +151,7 @@ describe('User Remember Token', function () {
         $user = User::where('email', TestCase::requireUser()->email)->where('remember_token', $token)->first();
 
         expect($user)->not->toBeNull();
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
         expect($user->id)->toBe(TestCase::requireUser()->id);
     });
 });
@@ -186,11 +162,7 @@ describe('User Email Verification', function () {
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
 
         expect($user->email_verified_at)->toBeNull();
 
@@ -207,21 +179,13 @@ describe('User Email Verification', function () {
         $verifiedUser = UserFactory::new()->createOne([
             'email_verified_at' => now(),
         ]);
-<<<<<<< HEAD
-        \assert($verifiedUser instanceof UserContract);
-=======
         \assert($verifiedUser instanceof User);
->>>>>>> laraxot/dev
 
         /** @var User $unverifiedUser */
         $unverifiedUser = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-<<<<<<< HEAD
-        \assert($unverifiedUser instanceof UserContract);
-=======
         \assert($unverifiedUser instanceof User);
->>>>>>> laraxot/dev
 
         expect($verifiedUser->hasVerifiedEmail())->toBe(true);
         expect($unverifiedUser->hasVerifiedEmail())->toBe(false);
@@ -232,11 +196,7 @@ describe('User Email Verification', function () {
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
 
         Notification::fake();
 
@@ -320,11 +280,7 @@ describe('User OAuth Authentication', function () {
         $user = User::findForPassport(TestCase::requireUser()->email);
 
         expect($user)->not->toBeNull();
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
         expect($user->id)->toBe(TestCase::requireUser()->id);
     });
 
@@ -387,11 +343,7 @@ describe('User Two Factor Authentication', function () {
             'is_otp' => true,
             'password' => Hash::make('password123'),
         ]);
-<<<<<<< HEAD
-        \assert($user instanceof UserContract);
-=======
         \assert($user instanceof User);
->>>>>>> laraxot/dev
 
         // First step: password authentication
         $result = Auth::attempt([

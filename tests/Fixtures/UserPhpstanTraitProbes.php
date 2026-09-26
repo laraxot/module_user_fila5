@@ -20,8 +20,8 @@ final class UserUniqueNameAttributeProbe extends Model
     public ?string $email = 'probe@example.test';
 
     /**
-     * @param array<string, mixed> $attributes
-     * @param array<string, mixed> $options
+     * @param  array<string, mixed>  $attributes
+     * @param  array<string, mixed>  $options
      */
     public function update(array $attributes = [], array $options = []): bool
     {

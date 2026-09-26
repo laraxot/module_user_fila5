@@ -14,11 +14,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.view.any');
-=======
         return $user->hasPermissionTo('oauth-device-code.view.any');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -26,11 +22,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function view(UserContract $user, OauthDeviceCode $_oauthDeviceCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.view') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-device-code.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -38,11 +30,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.create');
-=======
         return $user->hasPermissionTo('oauth-device-code.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -50,11 +38,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function update(UserContract $user, OauthDeviceCode $_oauthDeviceCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.update') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-device-code.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -62,11 +46,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, OauthDeviceCode $_oauthDeviceCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-device-code.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -74,11 +54,7 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, OauthDeviceCode $_oauthDeviceCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.restore') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-device-code.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -86,10 +62,6 @@ class OauthDeviceCodePolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, OauthDeviceCode $_oauthDeviceCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-device-code.force-delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-device-code.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }

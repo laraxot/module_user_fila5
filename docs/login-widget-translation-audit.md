@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -89,10 +86,7 @@ return [
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -167,10 +164,7 @@ tests/Feature/Filament/Widgets/
 ## Collegamenti
 
 - [Widget Structure](widgets-structure-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

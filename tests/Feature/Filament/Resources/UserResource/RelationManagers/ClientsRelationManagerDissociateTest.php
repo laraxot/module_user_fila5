@@ -55,30 +55,14 @@ function makeAssociatedOauthClientForDissociationTest(User $owner): OauthClient
 
 function getDissociateClientActionFunction(User $owner): \Closure
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_3BCfJl
-    $manager = new ClientsRelationManager;
-=======
     $manager = new ClientsRelationManager();
->>>>>>> .merge_file_R476eL
-=======
-    $manager = new ClientsRelationManager();
->>>>>>> laraxot/dev
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
 
     $action = null;
     foreach ($manager->getTable()->getRecordActions() as $candidate) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_3BCfJl
-        if ($candidate instanceof Action && $candidate->getName() === 'dissociateClient') {
-=======
         if ($candidate instanceof Action && 'dissociateClient' === $candidate->getName()) {
->>>>>>> .merge_file_R476eL
-=======
-        if ($candidate instanceof Action && 'dissociateClient' === $candidate->getName()) {
->>>>>>> laraxot/dev
             $action = $candidate;
 
             break;

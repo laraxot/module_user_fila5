@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Models\Team;

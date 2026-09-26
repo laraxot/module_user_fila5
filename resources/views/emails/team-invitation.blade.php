@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 ?>
 @component('mail::message')
 {{ __('You have been invited to join the :team team!', ['team' => $invitation->team->name]) }}

@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_eiRun1
 
-=======
->>>>>>> .merge_file_FMlYxv
-=======
-
->>>>>>> laraxot/dev
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {

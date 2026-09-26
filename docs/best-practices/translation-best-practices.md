@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -169,7 +166,4 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module-structure-2.md) 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

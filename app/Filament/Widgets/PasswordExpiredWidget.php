@@ -15,16 +15,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
-<<<<<<< HEAD
-use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\TransTrait;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -38,12 +32,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
-<<<<<<< HEAD
-=======
     // XotBaseWidget already implements HasForms and uses InteractsWithForms
     use TransTrait;
 
->>>>>>> laraxot/dev
     public ?string $current_password = '';
 
     public ?string $password = '';
@@ -141,11 +132,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
-<<<<<<< HEAD
-        if ($authUser instanceof UserContract) {
-=======
         if ($authUser instanceof User) {
->>>>>>> laraxot/dev
             return TextInput::make('current_password')
                 ->password()
                 ->revealable()

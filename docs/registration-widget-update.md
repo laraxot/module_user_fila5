@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15
@@ -38,10 +35,7 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 - [Documentazione Doctor Model](../modules/patient/project_docs/doctor-model-update.md)
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)
 # Aggiornamento relativo a DoctorResource.php
 
@@ -63,8 +57,5 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 **Collegamenti correlati**:
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)

@@ -105,11 +105,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function allUsers(): Collection
     {
-<<<<<<< HEAD
-        if (! $this->owner instanceof Model || ! $this->owner instanceof UserContract) {
-=======
         if (! $this->owner instanceof User) {
->>>>>>> laraxot/dev
             return $this->users;
         }
 

@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: [DATE]

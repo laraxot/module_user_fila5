@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Contesto**: Refactoring per garantire la corretta gerarchia di ereditarietà dei modelli
@@ -301,10 +298,7 @@ Il comando dovrebbe restituire solo:
 
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

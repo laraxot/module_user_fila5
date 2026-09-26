@@ -21,10 +21,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -306,10 +303,7 @@ public function redirectToProvider(string $provider)
 - UUID-based identity across all systems
 - Immutable core properties (id, email)
 - <nome progetto>able behavior in all contexts
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 #### **2. Water (Adaptability)**
 *"Authentication flows like water, taking the shape of any system"*
@@ -521,10 +515,7 @@ User Module Dependencies:
 **Status**: 90% COMPLETATO
 **Priority**: HIGH
 **PHPStan**: ✅ Level 10 (0 errori)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -604,10 +595,7 @@ User Module
 
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -775,10 +763,7 @@ User Module
 
 #### ✅ Completed
 - [x] PHPStan Level 10 compliance
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -838,10 +823,7 @@ User Module
 
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -1007,10 +989,7 @@ User Module
 
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

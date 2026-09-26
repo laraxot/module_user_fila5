@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Internal Analysis: Migration Philosophy Approaches
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

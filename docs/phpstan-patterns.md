@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # PHPStan Level 10 Patterns - User Module
 
 **Last Updated**: 2026-02-16  
@@ -187,10 +184,7 @@ When fixing PHPStan errors:
 - [`RevokeClientAction.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
 - [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
 - [`AssignModuleCommand.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 

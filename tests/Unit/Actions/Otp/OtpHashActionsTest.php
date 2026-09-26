@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Actions\Otp\HashOtpValueAction;
 use Modules\User\Actions\Otp\OtpHashNeedsRehashAction;
 use Modules\User\Actions\Otp\VerifyOtpHashAction;

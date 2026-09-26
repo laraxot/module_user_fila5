@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -139,10 +136,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Corrections](./fixes/base-classes-corrections-[date].md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 

@@ -12,26 +12,11 @@ use Modules\User\Http\Livewire\Team\Change;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 use function Pest\Laravel\actingAs;
 
-<<<<<<< HEAD
-=======
-
-use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
-use Symfony\Component\HttpKernel\Exception\HttpException;
-
->>>>>>> .merge_file_NXw0tH
-=======
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 require_once __DIR__.'/../../../../Support/team-management-helpers.php';
@@ -46,15 +31,7 @@ require_once __DIR__.'/../../../../Support/team-management-helpers.php';
  * fuori dall'Owned File/Module Scope di questa story (TeamFactory.php non e' elencato).
  * Bypass locale scoped a questo file, nessuna migrazione/factory toccata.
  *
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_NXw0tH
-=======
- * @param  array<string, mixed>  $attributes
->>>>>>> laraxot/dev
  */
 function teamChangeWidgetCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -113,15 +90,7 @@ describe('TeamChangeWidget mount + render', function (): void {
 
 describe('TeamChangeWidget switchTeam', function (): void {
     test('switching to a team the user belongs to updates current_team_id, fires TeamSwitched, notifies and redirects 303', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> .merge_file_NXw0tH
-=======
-        /** @var TestCase $this */
->>>>>>> laraxot/dev
         NotificationFacade::fake();
         $owner = teamMgmtCreateUser();
         $teamA = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);
@@ -143,15 +112,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $team = teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
         $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> .merge_file_NXw0tH
-=======
-        $widget = new TeamChangeWidget;
->>>>>>> laraxot/dev
         $widget->mount();
 
         $response = $widget->switchTeam($team->id);
@@ -168,15 +129,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $otherOwnerTeam = teamChangeWidgetCreateTeam($stranger);
         actingAs($owner);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
         $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> .merge_file_NXw0tH
-=======
-        $widget = new TeamChangeWidget;
->>>>>>> laraxot/dev
         $widget->mount();
 
         try {
@@ -197,15 +150,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_tbnI9Q
         $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> .merge_file_NXw0tH
-=======
-        $widget = new TeamChangeWidget;
->>>>>>> laraxot/dev
         $widget->mount();
 
         try {

@@ -65,12 +65,6 @@ return [
             'icon' => 'applyTableColumnManager',
             'tooltip' => 'applyTableColumnManager',
         ],
-<<<<<<< HEAD
-        'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
-        ],
-=======
->>>>>>> laraxot/dev
     ],
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Log (Plurale)',

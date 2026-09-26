@@ -14,10 +14,7 @@ related:
   - "./registration-widget.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # RegistrationWidget FileUpload Error Fix
 
 ## Problema Identificato

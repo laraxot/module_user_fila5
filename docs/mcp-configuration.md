@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # MCP Server Configuration - User Module
 
 
@@ -61,10 +58,7 @@ The User module's MCP configuration enables AI assistants to interact with:
     "filesystem": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
       "description": "Access to User module files"
     },
     "database": {
@@ -72,10 +66,7 @@ The User module's MCP configuration enables AI assistants to interact with:
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
       },
       "description": "SQLite database queries"
     }
@@ -91,10 +82,7 @@ The User module's MCP configuration enables AI assistants to interact with:
 ```bash
 # Create task
 "Create task in '<nome progetto> - User Module' project: 'Implement two-factor authentication'"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 # Track security improvements
 "Create task: 'Add device fingerprinting for security alerts'"
@@ -173,10 +161,7 @@ Map User module roadmap tasks to Asana:
 | Security alerts | <nome progetto> - User Module | High |
 | Device management | <nome progetto> - User Module | Medium |
 | Test coverage 90%+ | <nome progetto> - User Module | High |
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -192,10 +177,7 @@ Map User module roadmap tasks to Asana:
 
 ### Windsurf
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.windsurf-mcp.json`
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - **Command**: `npx mcp-remote https://mcp.asana.com/sse`
 
 ---
@@ -211,10 +193,7 @@ Map User module roadmap tasks to Asana:
 
 2. **Project Organization**:
    - Create dedicated Asana project: "<nome progetto> - User Module"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
    - Use sections: "Authentication", "Authorization", "Security", "Testing", "Documentation"
 
 3. **Tagging System**:
@@ -261,10 +240,7 @@ Map User module roadmap tasks to Asana:
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [User Module Roadmap](./roadmap-[date].md)
 
 ---

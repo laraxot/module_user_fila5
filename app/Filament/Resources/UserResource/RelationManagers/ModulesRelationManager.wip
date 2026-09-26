@@ -29,10 +29,7 @@ class ModulesRelationManager extends XotBaseRelationManager
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
      */
     public function getFormSchema(): array
     {

@@ -18,10 +18,7 @@ related:
   - "./teams-relation-manager.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Widget Responsivi per Form di Registrazione
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

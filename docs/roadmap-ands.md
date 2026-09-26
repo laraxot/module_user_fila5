@@ -18,20 +18,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -52,10 +46,7 @@ related:
 ---
 
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ### Categorizzazione Errori
 
@@ -280,10 +271,7 @@ php artisan queue:prune-failed --hours=48
 
 **Totale**: ~6 ore  
 **Risultato**: ✅ 0 errori PHPStan Level 10
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -350,10 +338,7 @@ php artisan queue:prune-failed --hours=48
   - Activity metrics
   - Engagement tracking
   - Churn <nome progetto>ion
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -417,10 +402,7 @@ php artisan queue:prune-failed --hours=48
 ---
 
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN

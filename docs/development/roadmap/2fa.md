@@ -11,10 +11,7 @@ related:
   - "./bottlenecks.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Two-Factor Authentication - 70% Completato
 
 ## Descrizione

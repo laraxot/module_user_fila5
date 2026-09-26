@@ -51,19 +51,11 @@ trait HasTeams
     /**
      * Get all teams the user belongs to.
      *
-<<<<<<< HEAD
-     * @return Collection<int, Model>
-     */
-    public function allTeams(): Collection
-    {
-        /** @var Collection<int, Model> $teams */
-=======
      * @return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
     {
         /** @var Collection<int, TeamContract> $teams */
->>>>>>> laraxot/dev
         $teams = $this->ownedTeams->merge($this->membershipTeams)->sortBy('name');
 
         return $teams;
@@ -164,26 +156,6 @@ trait HasTeams
     /**
      * Get all of the team's users including its owner.
      *
-<<<<<<< HEAD
-     * @return Collection<int, XotUserContract>
-     */
-    public function getAllTeamUsersAttribute(): Collection
-    {
-        $items = [];
-        foreach ($this->teamUsers as $membership) {
-            $user = $membership->user;
-            if ($user instanceof XotUserContract) {
-                $items[] = $user;
-            }
-        }
-
-        $owner = $this->owner;
-        if ($owner instanceof XotUserContract) {
-            $items[] = $owner;
-        }
-
-        return new Collection($items);
-=======
      * @return Collection<int, User>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -201,7 +173,6 @@ trait HasTeams
         }
 
         return $users;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -211,11 +182,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-<<<<<<< HEAD
-            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-=======
                                 $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
->>>>>>> laraxot/dev
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -306,27 +273,13 @@ trait HasTeams
     /**
      * Get the current team of the user's context.
      *
-<<<<<<< HEAD
-     * @return BelongsTo<Model, Model>
-=======
      * @return BelongsTo<Model&TeamContract, $this>
->>>>>>> laraxot/dev
      */
     public function currentTeam(): BelongsTo
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
 
-<<<<<<< HEAD
-        /** @var BelongsTo<Model, Model> $relation */
-        $relation = $this->belongsTo($teamClass, 'current_team_id');
-
-        return $relation;
-    }
-
-    /**
-     * @return HasMany<Model, Model>
-=======
         return $this->belongsTo($teamClass, 'current_team_id');
     }
 
@@ -334,21 +287,13 @@ trait HasTeams
      * Get the teams owned by the user.
      *
      * @return HasMany<Model&TeamContract, $this>
->>>>>>> laraxot/dev
      */
     public function ownedTeams(): HasMany
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
 
-<<<<<<< HEAD
-        /** @var HasMany<Model, Model> $relation */
-        $relation = $this->hasMany($teamClass, 'user_id');
-
-        return $relation;
-=======
         return $this->hasMany($teamClass, 'user_id');
->>>>>>> laraxot/dev
     }
 
     /**

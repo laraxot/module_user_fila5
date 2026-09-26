@@ -113,15 +113,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
-<<<<<<< HEAD
-        $schema = $this->resource::getFormSchemaWidget();
-
-        return \is_array($schema)
-            ? self::normalizeFormSchema($schema)
-            : [];
-=======
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
->>>>>>> laraxot/dev
     }
 
     /**
@@ -151,14 +143,6 @@ class RegistrationWidget extends XotBaseSchemaWidget
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<int|string, mixed> $schema
-     *
-     * @return array<int|string, Component>
-     */
-    private static function normalizeFormSchema(array $schema): array
-    {
-=======
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(mixed $schema): array
@@ -167,7 +151,6 @@ class RegistrationWidget extends XotBaseSchemaWidget
             return [];
         }
 
->>>>>>> laraxot/dev
         $normalized = [];
         foreach ($schema as $key => $component) {
             if (! $component instanceof Component) {

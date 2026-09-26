@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # BaseUser - Analisi Violazione Principio DRY
 
 **File**: `Modules/User/app/Models/BaseUser.php`  
@@ -457,10 +454,7 @@ test('hasRole works with guard parameter', function () {
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../../docs/code-quality-analysis.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Conclusioni
 

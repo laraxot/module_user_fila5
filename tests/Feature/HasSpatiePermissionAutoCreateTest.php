@@ -15,15 +15,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_4DsZRA
 /**
-=======
-/*
->>>>>>> .merge_file_RhFJwt
-=======
-/**
->>>>>>> laraxot/dev
  * Copre il fix per l'errore reale in produzione:
  * `PermissionDoesNotExist` ("no permission named oauth-access-token.view.any
  * for guard web") su `OauthAccessTokenPolicy::viewAny()`.
@@ -91,15 +83,7 @@ describe('HasSpatiePermission::hasPermissionToOrCreate', function (): void {
     test('OauthAccessTokenPolicy::viewAny non esplode più su permesso mancante', function (): void {
         $user = UserFactory::new()->createOne();
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_4DsZRA
         $policy = new OauthAccessTokenPolicy;
-=======
-        $policy = new OauthAccessTokenPolicy();
->>>>>>> .merge_file_RhFJwt
-=======
-        $policy = new OauthAccessTokenPolicy;
->>>>>>> laraxot/dev
 
         Assert::assertFalse($policy->viewAny($user));
     });

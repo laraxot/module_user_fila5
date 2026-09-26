@@ -20,10 +20,7 @@ related:
 
 # Database Analysis Commands and Tools for app_survey
 # Database Analysis Commands and Tools for quaeris_survey
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Essential Database Queries
 
@@ -98,10 +95,7 @@ mcp mysql --database=txaesfry_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -139,10 +133,7 @@ php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
     'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -206,10 +197,7 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ```
 
 ### 2. Data Validation Script
@@ -254,10 +242,7 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_app_survey'
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -266,16 +251,10 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_app_survey'
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

@@ -6,10 +6,6 @@ namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
-<<<<<<< HEAD
-use Modules\User\Filament\Resources\AuthenticationLogResource\Schemas\AuthenticationLogInfolist;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewAuthenticationLog extends XotBaseViewRecord
@@ -19,16 +15,4 @@ class ViewAuthenticationLog extends XotBaseViewRecord
     /*
      * @return array<string, Component>
      */
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return app(AuthenticationLogInfolist::class)->getInfolistSchema();
-    }
-=======
->>>>>>> laraxot/dev
 }

@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * Handles the registration of a new user.
  *
@@ -21,11 +17,8 @@ declare(strict_types=1);
  * @return JsonResponse The JSON response
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Http\Controllers\Api;
 
 use Illuminate\Http\JsonResponse;

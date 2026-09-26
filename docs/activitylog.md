@@ -11,10 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ---
 # Linee guida per l'uso di Spatie Activitylog
 
@@ -65,8 +62,5 @@ $logs = $user->activities()->where('log_name', 'user_moderation')->get();
 - [Filament Best Practices](mdc:filament-best-practices.md)
 - [Testing](mdc:testing.md)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 

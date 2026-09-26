@@ -180,10 +180,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ### Gruppo "Tenants"
 - Tenant User
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Regole Applicate
 
@@ -213,10 +210,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Note Tecniche
 
@@ -228,7 +222,4 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * Handles the email verification process for authenticated users.
  *
@@ -21,11 +17,8 @@ declare(strict_types=1);
  * @return RedirectResponse a redirect response to the home page
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Http\Controllers\Auth;
 
 use Illuminate\Auth\Access\AuthorizationException;

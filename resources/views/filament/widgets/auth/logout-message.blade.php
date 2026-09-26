@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 ?>
 <div class="text-center">
     <h2 class="mt-2 text-2xl font-bold tracking-tight text-gray-900">

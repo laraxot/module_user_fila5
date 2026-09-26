@@ -26,10 +26,6 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
-<<<<<<< HEAD
-use Modules\User\Contracts\HasTeamsContract;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -44,10 +40,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-<<<<<<< HEAD
-use Spatie\Permission\Models\Permission;
-=======
->>>>>>> laraxot/dev
 
 /**
  * Base User Model.
@@ -135,11 +127,7 @@ use Spatie\Permission\Models\Permission;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
-=======
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
->>>>>>> laraxot/dev
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -152,13 +140,9 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
-<<<<<<< HEAD
-    use HasXotFactory;
-=======
 
     use HasXotFactory;
 
->>>>>>> laraxot/dev
     use InteractsWithMedia;
     use Notifiable;
 

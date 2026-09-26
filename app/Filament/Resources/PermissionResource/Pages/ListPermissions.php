@@ -111,11 +111,7 @@ class ListPermissions extends XotBaseListRecords
                         $query = $roleModel::query();
 
                         return $query->pluck('name', 'id')
-<<<<<<< HEAD
-                            ->mapWithKeys(static fn (mixed $name, int|string $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
-=======
                             ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
->>>>>>> laraxot/dev
                             ->all();
                     })->required(),
                 ])

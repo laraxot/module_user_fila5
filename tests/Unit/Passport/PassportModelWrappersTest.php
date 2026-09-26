@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Passport;
 use Modules\User\Models\OauthAuthCode;

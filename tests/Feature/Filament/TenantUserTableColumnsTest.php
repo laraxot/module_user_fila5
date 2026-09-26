@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_phTbaR
 
-=======
->>>>>>> .merge_file_pp4aoj
-=======
-
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
 use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
 use Modules\User\Tests\TestCase;

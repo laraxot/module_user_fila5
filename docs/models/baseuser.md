@@ -16,10 +16,7 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # BaseUser
 
 ## Descrizione

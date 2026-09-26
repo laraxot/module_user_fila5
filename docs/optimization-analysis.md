@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Analisi di Ottimizzazione - Modulo User
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
@@ -751,10 +748,7 @@ class SecurityAlertService
 - [Laravel Authentication](https://laravel.com/project_docs/authentication)
 - [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
 - [Security Guidelines](../../../../docs/project/security-guidelines.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 

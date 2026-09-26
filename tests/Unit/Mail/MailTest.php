@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use Modules\User\Tests\TestCase;

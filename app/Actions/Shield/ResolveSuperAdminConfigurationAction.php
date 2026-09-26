@@ -40,10 +40,6 @@ class ResolveSuperAdminConfigurationAction
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Nj6mmK
-=======
->>>>>>> laraxot/dev
     private function toBoolean(mixed $value): bool
     {
         return is_bool($value) ? $value : false;
@@ -52,18 +48,5 @@ class ResolveSuperAdminConfigurationAction
     private function toString(mixed $value): string
     {
         return is_string($value) ? $value : '';
-<<<<<<< HEAD
-=======
-    private function toBoolean(bool $value): bool
-    {
-        return $value;
-    }
-
-    private function toString(string $value): string
-    {
-        return $value;
->>>>>>> .merge_file_rwgIoa
-=======
->>>>>>> laraxot/dev
     }
 }

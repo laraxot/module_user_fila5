@@ -25,10 +25,7 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Introduzione
 
@@ -48,10 +45,7 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
 
 ```
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ├── Modules/
 │   └── User/
 │       └── app/
@@ -87,20 +81,14 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
     <form wire:submit="login">
         {{ $this->form }}
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         <div class="mt-4">
             <x-filament::button type="submit" class="w-full">
                 {{ __('auth.login.submit_button') }}
             </x-filament::button>
         </div>
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         @if ($errors->any())
             <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
                 <ul class="list-disc pl-5">
@@ -121,20 +109,14 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
     <form wire:submit="register">
         {{ $this->form }}
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         <div class="mt-4">
             <x-filament::button type="submit" class="w-full">
                 {{ __('auth.register.submit_button') }}
             </x-filament::button>
         </div>
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         @if ($errors->any())
             <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
                 <ul class="list-disc pl-5">
@@ -188,19 +170,13 @@ class LoginFormWidget extends XotBaseWidget
 
     public ?array $data = [];
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->form->fill();
     }
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -230,10 +206,7 @@ class LoginFormWidget extends XotBaseWidget
             redirect('/' . $locale . '/dashboard');
         }
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         $this->addError('email', __('auth.failed'));
     }
 }
@@ -262,19 +235,13 @@ class RegisterFormWidget extends XotBaseWidget
 
     public ?array $data = [];
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->form->fill();
     }
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -303,10 +270,7 @@ class RegisterFormWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         $user = User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
@@ -316,10 +280,7 @@ class RegisterFormWidget extends XotBaseWidget
 
         Auth::login($user);
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         $locale = app()->getLocale();
         redirect('/' . $locale . '/dashboard');
     }
@@ -647,7 +608,4 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

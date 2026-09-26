@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Risorse e Link Utili - Modulo User
 
 Raccolta di link e risorse esterne per lo sviluppo del modulo User.

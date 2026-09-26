@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -210,7 +207,4 @@ class LogoutPage
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 - [Routing Best Practices](../routing-best-practices-2.md) 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

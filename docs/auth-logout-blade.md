@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -40,10 +37,7 @@ related:
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -138,10 +132,7 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 - Il file `logout.blade.php` è una pagina Folio e non richiede configurazioni aggiuntive in `routes/web.php`.
 - La pagina è accessibile all'URL `/{locale}/auth/logout`.
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
 =======
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

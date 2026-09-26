@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
@@ -61,10 +58,7 @@ related:
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
 ### Modulo ExternalProject
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

@@ -6,11 +6,7 @@ namespace Modules\User\Actions\User;
 
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Hashing\Hasher;
-<<<<<<< HEAD
-use Modules\User\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class DeleteUserAction
@@ -26,14 +22,6 @@ class DeleteUserAction
     /**
      * Elimina l'utente dopo aver verificato la password.
      *
-<<<<<<< HEAD
-     * @return array{success: bool, message: string}
-     */
-    public function execute(UserContract $user, string $confirmPassword): array
-    {
-        $hashedPassword = $user->getAttribute('password');
-        if (! is_string($hashedPassword) || ! $this->hasher->check($confirmPassword, $hashedPassword)) {
-=======
      * @param User   $user            L'utente da eliminare
      * @param string $confirmPassword La password di conferma
      *
@@ -42,7 +30,6 @@ class DeleteUserAction
     public function execute(User $user, string $confirmPassword): array
     {
         if (! $this->hasher->check($confirmPassword, $user->password)) {
->>>>>>> laraxot/dev
             return [
                 'success' => false,
                 'message' => 'La password inserita non è corretta',

@@ -14,10 +14,7 @@ related:
   - "./readme.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -474,9 +471,6 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
 
->>>>>>> laraxot/dev

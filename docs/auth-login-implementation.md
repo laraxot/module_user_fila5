@@ -26,10 +26,7 @@ related:
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -39,10 +36,7 @@ La pagina di login è stata migliorata per conformarsi alle regole e alle best p
 ### 1. Utilizzo dei Componenti Filament
 
 Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ```blade
 <!-- ERRATO: Componenti UI personalizzati -->
@@ -263,10 +257,7 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
 >
     <x-filament::input
     <x-filament::input 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
         type="email"
         id="email"
         name="email"
@@ -429,7 +420,4 @@ rules([
 ## Conclusione
 
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

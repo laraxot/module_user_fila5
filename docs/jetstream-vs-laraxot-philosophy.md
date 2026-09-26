@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**
@@ -120,11 +117,7 @@ protected function validate(Team $team, string $email, ?string $role): void
 
 // 🟢 LARAXOT: Validazione Runtime + Actions
 Assert::notNull($user, 'User cannot be null');
-<<<<<<< HEAD
-Assert::isInstanceOf($user, UserContract::class); // mai User::class / BaseUser::class
-=======
 Assert::isInstanceOf($user, UserContract::class);
->>>>>>> laraxot/dev
 ```
 
 ## 🎯 **LA SINTESI PERFETTA**

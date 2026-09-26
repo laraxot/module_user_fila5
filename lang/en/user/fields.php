@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 // User — translation section (claude-audit doc ratio).
 
 // User — translation section (claude-audit doc ratio).

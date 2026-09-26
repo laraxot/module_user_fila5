@@ -17,15 +17,7 @@ php artisan migrate --path=Modules/User/database/migrations
 ## Create First User
 
 ```php
-<<<<<<< HEAD
-<<<<<<< .merge_file_q7JvRn
-use Modules\User\Models\User;
-=======
 use Modules\Xot\Contracts\UserContract;
->>>>>>> .merge_file_weIbOm
-=======
-use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Hash;
 
 $user = User::create([

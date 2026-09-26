@@ -8,14 +8,7 @@ use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
-<<<<<<< HEAD
-<<<<<<< .merge_file_ikFPSv
 use InvalidArgumentException;
-=======
->>>>>>> .merge_file_9gCk7c
-=======
-use InvalidArgumentException;
->>>>>>> laraxot/dev
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Contracts\TeamContract;
@@ -34,12 +27,8 @@ class TeamChangeWidget extends XotBaseWidget
 {
     protected static bool $isDiscovered = false;
 
-<<<<<<< HEAD
-    protected string $view = 'user::filament.widgets.team.change';
-=======
     /** @var view-string */
     protected string $view;
->>>>>>> laraxot/dev
 
     /** @var list<array{id: int|string, name: string}> */
     public array $teams = [];
@@ -52,15 +41,7 @@ class TeamChangeWidget extends XotBaseWidget
         Assert::notNull($authUser, '['.__LINE__.']['.class_basename($this).']');
 
         if (! $authUser instanceof UserContract || ! $authUser instanceof HasTeamsContract) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ikFPSv
             throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
-=======
-            throw new \InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
->>>>>>> .merge_file_9gCk7c
-=======
-            throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
->>>>>>> laraxot/dev
         }
 
         $this->user = $authUser;
@@ -118,21 +99,9 @@ class TeamChangeWidget extends XotBaseWidget
     public function render(): View
     {
         /** @var view-string $viewName */
-<<<<<<< HEAD
-        $viewName = 'user::filament.widgets.team.change';
-
-<<<<<<< .merge_file_ikFPSv
-        if ($this->teams === []) {
-=======
-        if ([] === $this->teams) {
->>>>>>> .merge_file_9gCk7c
-            $viewName = 'ui::livewire.empty';
-        }
-=======
         $viewName = $this->teams === []
             ? 'ui::livewire.empty'
             : 'user::filament.widgets.team.change';
->>>>>>> laraxot/dev
 
         return view($viewName, [
             'view' => $viewName,

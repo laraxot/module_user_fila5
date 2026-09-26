@@ -50,16 +50,4 @@ class ViewOauthClient extends XotBaseViewRecord
 
         return $actions;
     }
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    #[\Override]
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
-=======
->>>>>>> laraxot/dev
 }

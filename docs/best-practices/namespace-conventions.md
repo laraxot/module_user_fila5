@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -218,8 +215,5 @@ Se l'override del tema non funziona:
 ---
 
 *Documento creato: Dicembre 2024*
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 

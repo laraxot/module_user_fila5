@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Pages;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_WiaQin
-=======
-use Illuminate\Support\Collection;
->>>>>>> .merge_file_MZXeG1
-=======
->>>>>>> laraxot/dev
 use Laravel\Passport\ClientRepository;
 use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
@@ -39,15 +32,7 @@ function makeMockUser(bool $isSuper): BaseUser
         }
 
         /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_WiaQin
          * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
-=======
-         * @param array<int, string>|Collection<int, string>|string $roles
->>>>>>> .merge_file_MZXeG1
-=======
-         * @param array<int, string>|\Illuminate\Support\Collection<int, string>|string $roles
->>>>>>> laraxot/dev
          */
         public function hasRole($roles, ?string $guard = null): bool
         {

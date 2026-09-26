@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Correzioni File di Traduzione User Module
 
 ## Problemi Identificati e Risolti
@@ -119,8 +116,5 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 **Status**: Completato
 
 ---
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

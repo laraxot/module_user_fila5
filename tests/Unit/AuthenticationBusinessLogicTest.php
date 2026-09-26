@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;

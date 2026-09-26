@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Lezioni Apprese dall'Errore Gravissimo delle Factory
 
 ## L'Errore Gravissimo
@@ -173,18 +170,12 @@ done
 - [Missing Factories Audit](./missing-factories-audit.md)
 - [Geo Factory Audit](../../geo/project_docs/missing-factories-audit.md)
 - [Laravel Factory Best Practices](../../../../docs/project/laravel-factory-best-practices.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
 **🚨 ERRORE GRAVISSIMO DA NON RIPETERE MAI PIÙ**
 
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

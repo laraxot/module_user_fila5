@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 /**
  * @see Jeffgreco13\FilamentBreezy\Pages
  * @see https://www.filamentcomponents.com/blog/how-to-create-a-custom-profile-page-with-filamentphp

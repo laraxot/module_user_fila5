@@ -239,10 +239,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./README.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)

@@ -18,19 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User vs Profile Models: Guida Completa
 
 ## Panoramica
 
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 
@@ -163,20 +157,14 @@ class Profile extends BaseProfile
 ---
 
 ## 3. Analisi nel Contesto <nome progetto>
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ### 3.1 Architettura Attuale
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                        <nome progetto>                              │
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ├──────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌─────────────────┐         ┌─────────────────┐              │
@@ -225,10 +213,7 @@ CURRENT STATE:
 **Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
 
 Per un progetto community come <nome progetto> dove:
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - Gli utenti sono principalmente "attendees" agli eventi
 - Non servono profili multipli
 - L'avatar è l'unico dato profilo essenziale
@@ -558,7 +543,4 @@ class User extends Authenticatable
 ---
 
 *Documento generato per <nome progetto> - Progetto Community Laravel*
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

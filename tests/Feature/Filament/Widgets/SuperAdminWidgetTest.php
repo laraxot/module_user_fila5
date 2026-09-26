@@ -13,32 +13,13 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
-<<<<<<< HEAD
-<<<<<<< .merge_file_Lt4INQ
-use Modules\Xot\Contracts\UserContract;
-use Modules\User\Tests\TestCase;
-=======
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
-<<<<<<< HEAD
-=======
-use Modules\User\Tests\TestCase;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-
-use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
-
->>>>>>> .merge_file_zz3uH8
-=======
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 /**
@@ -51,21 +32,9 @@ uses(TestCase::class);
 function superAdminWidgetProfileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
-<<<<<<< HEAD
-<<<<<<< .merge_file_Lt4INQ
     $connection = (new $profileClass)->getConnectionName();
 
     if (is_string($connection) && $connection !== '') {
-=======
-    $connection = (new $profileClass())->getConnectionName();
-
-    if (is_string($connection) && '' !== $connection) {
->>>>>>> .merge_file_zz3uH8
-=======
-    $connection = (new $profileClass)->getConnectionName();
-
-    if (is_string($connection) && $connection !== '') {
->>>>>>> laraxot/dev
         return $connection;
     }
 
@@ -97,15 +66,7 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
         ['team_id' => null],
     );
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Lt4INQ
     $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
-=======
-    $role = 'super-admin' === $roleName ? $superAdminRole : $negateSuperAdminRole;
->>>>>>> .merge_file_zz3uH8
-=======
-    $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
->>>>>>> laraxot/dev
 
     $user->assignRole($role);
 }
@@ -235,15 +196,7 @@ describe('SuperAdminWidget toggle', function (): void {
         grantSuperAdminWidgetRole($user, 'super-admin');
         actingAs($user);
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_Lt4INQ
         $widget = new SuperAdminWidget;
-=======
-        $widget = new SuperAdminWidget();
->>>>>>> .merge_file_zz3uH8
-=======
-        $widget = new SuperAdminWidget;
->>>>>>> laraxot/dev
         $widget->mount();
 
         $response = $widget->toggleSuperAdmin();

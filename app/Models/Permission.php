@@ -64,10 +64,7 @@ use Webmozart\Assert\Assert;
 class Permission extends SpatiePermission
 {
     use HasXotFactory;
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
     use RelationX;
     use Updater;
 

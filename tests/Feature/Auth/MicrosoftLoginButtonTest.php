@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
