@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 return [
     'navigation' => [
@@ -152,3 +153,5 @@ return [
     'label' => 'role',
     'plural_label' => 'Role (Plurale)',
 ];
+=======
+>>>>>>> laraxot/dev

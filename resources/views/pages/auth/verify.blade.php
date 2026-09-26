@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Volt\Component;

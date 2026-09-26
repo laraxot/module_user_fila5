@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
@@ -24,13 +27,18 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
+<<<<<<< HEAD
     public function render(): View
+=======
+    public function render(): mixed
+>>>>>>> laraxot/dev
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
         app(ViewCopyAction::class)->execute('user::layouts.auth', 'pub_theme::layouts.auth');
         app(ViewCopyAction::class)->execute('user::layouts.base', 'pub_theme::layouts.base');
 
+<<<<<<< HEAD
         /** @var view-string */
         $view = 'pub_theme::livewire.auth.passwords.confirm';
 
@@ -40,5 +48,13 @@ class Confirm extends Component
         $res->extends('pub_theme::layouts.auth');
 
         return $res;
+=======
+        /**
+         * @phpstan-var view-string
+         */
+        $view = 'pub_theme::livewire.auth.passwords.confirm';
+
+        return view($view)->extends('pub_theme::layouts.auth');
+>>>>>>> laraxot/dev
     }
 }

@@ -1,18 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_ozcIZg
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 /**
  * ---.
  */
 >>>>>>> .merge_file_B7scwV
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

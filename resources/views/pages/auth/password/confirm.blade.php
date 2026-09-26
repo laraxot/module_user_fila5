@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 

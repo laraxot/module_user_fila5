@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -75,6 +83,10 @@ use Webmozart\Assert\Assert;
 class Role extends SpatieRole
 {
     use HasXotFactory;
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     use RelationX;
     use Updater;
 

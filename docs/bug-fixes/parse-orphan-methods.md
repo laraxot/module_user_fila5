@@ -17,6 +17,10 @@ related:
   - "./parse-error-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -148,6 +152,10 @@ protected function orphanMethod(): array
 ## Collegamenti
 - [Widget Auth Best Practices](../filament/widgets/registration-widget.md)
 - [Git Conflicts Resolution](../git-conflicts-resolution-.md.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Bug Fix Guidelines](../../../../project_docs/bug-fixing-guidelines.md)
 
 ## Status

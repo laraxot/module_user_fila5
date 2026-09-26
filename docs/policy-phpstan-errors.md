@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Errori PHPStan nelle Policy del Modulo User
 
 ## Problema Identificato (2025-01-06)
@@ -116,3 +120,8 @@ Definire il comportamento tramite trait che implementa il metodo.
 - [Documentazione Root - Errori PHPStan](../../../../docs/project/troubleshooting/phpstan-errors.md)
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

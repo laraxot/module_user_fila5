@@ -18,6 +18,10 @@ related:
   - "./tasks-index.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
@@ -28,4 +32,13 @@ related:
 - Molti altri file nella directory `docs/`.
 
 ## ✅ Checklist
+<<<<<<< HEAD
 - [Roadmap User](../roadmap.md)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
+=======
+- [Roadmap User](../roadmap.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

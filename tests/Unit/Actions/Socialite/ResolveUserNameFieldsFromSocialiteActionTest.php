@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Modules\User\Actions\Socialite\ResolveUserNameFieldsFromSocialiteAction;
 use Modules\User\Tests\TestCase;

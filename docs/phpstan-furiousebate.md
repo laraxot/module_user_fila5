@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
 **Status**: Dibattito Risolto - Il Purista Ha Vinto
@@ -183,6 +187,10 @@ Ogni modulo corretto è un traguardo.
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ---
 

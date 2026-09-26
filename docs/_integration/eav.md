@@ -18,6 +18,10 @@ related:
   - "./profile.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # eav
 
 <!-- Contenuto migrato da _docs/eav.txt -->

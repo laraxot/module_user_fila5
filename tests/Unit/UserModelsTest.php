@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Database\Factories\RoleFactory;

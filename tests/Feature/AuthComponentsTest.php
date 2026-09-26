@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Facades\Schema;
@@ -13,6 +14,10 @@ use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\actingAs;
+=======
+use Modules\User\Tests\TestCase;
+
+>>>>>>> laraxot/dev
 use function Pest\Laravel\get;
 
 uses(TestCase::class);
@@ -79,6 +84,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+<<<<<<< HEAD
         $user = UserFactory::new()->createOne();
         \assert($user instanceof UserContract);
 
@@ -111,5 +117,9 @@ describe('User Profile Components Tests', function (): void {
         } catch (\Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
+=======
+        // Profile pages use reorganized components correctly
+        $this->markTestSkipped('Pending implementation');
+>>>>>>> laraxot/dev
     });
 });

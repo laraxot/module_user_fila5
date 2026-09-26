@@ -2,13 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\User\Models\DeviceProfile;
 use Modules\User\Models\DeviceUser;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 /*
  * Audit prompt 34-factories-seeders-audit.md: verifica che le Factory
  * producano record autonomamente validi.
@@ -39,3 +43,12 @@ it('DeviceProfileFactory creates a persistable record without explicit overrides
     Assert::assertNotNull($deviceProfile->user_id, 'DeviceProfileFactory::definition() is empty: user_id is not autonomously populated.');
     Assert::assertNotNull($deviceProfile->device_id, 'DeviceProfileFactory::definition() is empty: device_id is not autonomously populated.');
 })->skip('Bug noto: model DeviceProfile punta a una tabella inesistente (device_profile). Vedi Stato attuale in 34-factories-seeders-audit.md.');
+=======
+it('DeviceUserFactory creates a persistable record without explicit overrides', function (): void {
+    Assert::markTestSkipped('Bug noto: DeviceUserFactory::definition() torna [], user_id/device_id NOT NULL falliscono. Vedi Stato attuale in 34-factories-seeders-audit.md.');
+});
+
+it('DeviceProfileFactory creates a persistable record without explicit overrides', function (): void {
+    Assert::markTestSkipped('Bug noto: model DeviceProfile punta a una tabella inesistente (device_profile). Vedi Stato attuale in 34-factories-seeders-audit.md.');
+});
+>>>>>>> laraxot/dev

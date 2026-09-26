@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 use Modules\User\Filament\Resources\PermissionResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\PermissionResource\Schemas\PermissionInfolist;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPermission extends XotBaseViewRecord
 {
     protected static string $resource = PermissionResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -20,4 +24,6 @@ class ViewPermission extends XotBaseViewRecord
     {
         return app(PermissionInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> laraxot/dev
 }

@@ -11,6 +11,10 @@ related:
   - "./testing.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Bug: Infinite Loop in make:filament-user Command
 
 ## Problema Identificato

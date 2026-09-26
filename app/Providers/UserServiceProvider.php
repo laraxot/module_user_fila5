@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ----.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Providers;
 
 use Illuminate\Auth\Notifications\ResetPassword;
@@ -41,6 +49,10 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
+<<<<<<< HEAD
+=======
+        // $this->registerEventListener();
+>>>>>>> laraxot/dev
         $this->registerPasswordRules();
         $this->registerPulse();
         $this->registerMailsNotification();
@@ -102,7 +114,10 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
+<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
+=======
+>>>>>>> laraxot/dev
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
              * return (new MailMessage)
@@ -160,7 +175,10 @@ class UserServiceProvider extends XotBaseServiceProvider
          * ->salutation($salutation);
          * });
          */
+<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
+=======
+>>>>>>> laraxot/dev
         VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');

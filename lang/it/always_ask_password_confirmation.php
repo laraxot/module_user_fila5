@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
 <<<<<<< .merge_file_1T03Ge
     'fields' => [
         'current_password' => ['label' => 'current_password', 'placeholder' => 'current_password', 'helper_text' => 'current_password', 'description' => 'current_password'],
@@ -19,5 +20,9 @@ return [
             'description' => 'Password dell\'account autenticato',
         ],
 >>>>>>> .merge_file_N6ThqJ
+=======
+    'fields' => [
+        'current_password' => ['label' => 'current_password', 'placeholder' => 'current_password', 'helper_text' => 'current_password', 'description' => 'current_password'],
+>>>>>>> laraxot/dev
     ],
 ];

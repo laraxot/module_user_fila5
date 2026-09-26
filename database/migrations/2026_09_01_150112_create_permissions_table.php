@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_Ss3nOh
 
 =======
 >>>>>>> .merge_file_NnygGr
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;

@@ -414,3 +414,10 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 - **teamRole() contratto**: CORRETTO - ora restituisce `?Role` invece di `?string`
 - **teamRoleName() helper**: AGGIUNTO - per ottenere stringa del ruolo
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+- **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

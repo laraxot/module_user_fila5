@@ -1,22 +1,30 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_f5908d
 =======
 
 >>>>>>> .merge_file_rMZidE
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
+<<<<<<< HEAD
 <<<<<<< .merge_file_f5908d
 return new class extends XotBaseMigration
 {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> .merge_file_rMZidE
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -82,11 +90,15 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f5908d
             if ($this->getColumnType('id') === 'uuid') {
 =======
             if ('uuid' === $this->getColumnType('id')) {
 >>>>>>> .merge_file_rMZidE
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+>>>>>>> laraxot/dev
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

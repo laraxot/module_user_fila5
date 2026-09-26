@@ -20,6 +20,10 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -152,6 +156,10 @@ protected function orphanMethod(): array
 - [Widget Auth Best Practices](../filament/widgets/registration-widget.md)
 - [Git Conflicts Resolution](../git-conflicts-resolution-.md.md)
 - [Bug Fix Guidelines](../../../../../docs/bug-fixing-guidelines.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Status
 ✅ **RISOLTO** - RegisterWidget funziona correttamente con tutte le migliorie di qualità implementate

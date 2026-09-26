@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 return [
     'navigation' => [
@@ -66,3 +67,5 @@ return [
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
 ];
+=======
+>>>>>>> laraxot/dev

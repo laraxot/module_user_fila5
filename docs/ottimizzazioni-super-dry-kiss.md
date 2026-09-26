@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -374,6 +378,10 @@ class User extends Model
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -381,3 +389,10 @@ class User extends Model
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 **Priorità:** CRITICA
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+**Priorità:** CRITICA
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

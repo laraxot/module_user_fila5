@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Module Policies Documentation
 
 ## Overview
@@ -303,6 +307,10 @@ Test policy integration with Filament resources and controllers.
 ## Related Documentation
 
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)

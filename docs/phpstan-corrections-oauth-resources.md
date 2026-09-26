@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -127,3 +131,8 @@ TextColumn::make('name')
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

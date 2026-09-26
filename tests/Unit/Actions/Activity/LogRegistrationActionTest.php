@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Models\User;

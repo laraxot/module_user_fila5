@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -209,6 +213,10 @@ return [
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../../docs/best-practices.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -216,3 +224,10 @@ return [
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
 **✅ Status**: Prevenzione attiva e monitorata
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+**✅ Status**: Prevenzione attiva e monitorata
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

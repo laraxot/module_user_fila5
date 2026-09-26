@@ -12,7 +12,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
@@ -56,7 +59,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->url(function (Model|array|null $record): ?string {
+=======
+                    ->url(function (mixed $record): ?string {
+>>>>>>> laraxot/dev
                         if (! $record instanceof OauthAccessToken) {
                             return null;
                         }
@@ -79,6 +86,7 @@ class OauthAccessTokenResource extends XotBaseResource
 
                 TextColumn::make('scopes')
                     ->limit(30)
+<<<<<<< HEAD
                     ->tooltip(
                         /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                         function (mixed $state): ?string {
@@ -92,6 +100,19 @@ class OauthAccessTokenResource extends XotBaseResource
                             return is_string($state) ? $state : null;
                         }
                     ),
+=======
+                    ->tooltip(function (mixed $state): ?string {
+                        if (null === $state) {
+                            return null;
+                        }
+                        if (is_array($state)) {
+                            /* @var array<string, mixed> $state */
+                            return json_encode($state);
+                        }
+
+                        return is_string($state) ? $state : null;
+                    }),
+>>>>>>> laraxot/dev
 
                 IconColumn::make('revoked')
                     ->boolean()
@@ -104,7 +125,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable()
+<<<<<<< HEAD
                     ->formatStateUsing(function (Carbon|string|null $state): string {
+=======
+                    ->formatStateUsing(function (mixed $state): string {
+>>>>>>> laraxot/dev
                         if ($state instanceof Carbon) {
                             $now = Carbon::now();
                             if ($state->lt($now)) {

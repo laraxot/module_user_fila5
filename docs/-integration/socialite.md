@@ -18,6 +18,10 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->

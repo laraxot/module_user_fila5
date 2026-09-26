@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -478,3 +482,7 @@ jobs:
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

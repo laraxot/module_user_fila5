@@ -13,3 +13,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

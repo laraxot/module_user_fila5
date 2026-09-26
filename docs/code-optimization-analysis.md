@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -49,6 +53,10 @@ docs/
 ├── user_management/
 │   ├── crud_operations.md
 │   ├── profile-management-2.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -61,6 +69,10 @@ docs/
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
 │   └── two-factor-2.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

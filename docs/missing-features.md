@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: [DATE]  
@@ -128,6 +132,10 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
    - Integrazione con Contact model ExternalProject
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -176,6 +184,10 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
 

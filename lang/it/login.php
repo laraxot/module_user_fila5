@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 return [
     'fields' => [
@@ -31,3 +32,5 @@ return [
     'forgot_password_text' => 'Hai dimenticato la tua password?',
     'reset_it' => 'Reimpostala qui',
 ];
+=======
+>>>>>>> laraxot/dev

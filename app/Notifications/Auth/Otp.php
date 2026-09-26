@@ -31,11 +31,19 @@ class Otp extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< HEAD
      * @param object $_notifiable L'entità da notificare (modello o AnonymousNotifiable)
      *
      * @return array<int, string>
      */
     public function via(object $_notifiable): array
+=======
+     * @param mixed $_notifiable L'entità da notificare
+     *
+     * @return array<int, string>
+     */
+    public function via(mixed $_notifiable): array
+>>>>>>> laraxot/dev
     {
         return ['mail']; // Puoi aggiungere anche 'database', 'slack', ecc. se vuoi supportare altri canali.
     }

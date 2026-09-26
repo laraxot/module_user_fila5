@@ -11,6 +11,10 @@ related:
   - "./oauth-architecture.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 # Configurazione OAuth con GitHub

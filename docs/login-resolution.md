@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Risoluzione Problema Login - Report Finale (Aggiornato)
 
 ## Prologo: La Sfida degli Agenti

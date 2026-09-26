@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** [DATE]
@@ -41,6 +45,10 @@ Sono stati rilevati conflitti Git non risolti nel file `app/Filament/Resources/U
 
 ## Collegamenti
 - [Documentazione globale correzioni](../../../../docs/modules_analysis.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ---
 

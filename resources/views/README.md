@@ -206,3 +206,7 @@ Assicurati che i nomi dei parametri nel database corrispondano a quelli attesi d
 Per assistenza tecnica, contattare:
 - Email: support@<nome progetto>.com
 - Documentazione: https://docs.<nome progetto>.com
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

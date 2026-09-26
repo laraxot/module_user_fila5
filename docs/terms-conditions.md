@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-filament-registration-page
 
 ### Versione HEAD
@@ -26,6 +30,10 @@ https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-fila
 ## Collegamenti tra versioni di terms_conditions.md
 * [terms_conditions.md](../../../gdpr/docs/terms_conditions.md)
 * [terms_conditions.md](../../../user/docs/terms_conditions.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 
 ### Versione Incoming

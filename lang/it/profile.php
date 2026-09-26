@@ -49,9 +49,12 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
     ],
     'messages' => ['update_success' => 'Profilo aggiornato con successo!', 'no_permission' => 'Non hai i permessi per modificare questo profilo.'],
+<<<<<<< HEAD
     'privacy_policy' => [
         'title' => 'Informativa sulla privacy',
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
 ];

@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Actions Structure
 
 ## Directory Structure
@@ -94,4 +98,8 @@ class DeleteUserAction
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

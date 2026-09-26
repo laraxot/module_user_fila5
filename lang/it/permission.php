@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'label' => 'permission.navigation',
@@ -10,3 +11,6 @@ return [
         'sort' => 32,
     ],
 ];
+=======
+return [];
+>>>>>>> laraxot/dev

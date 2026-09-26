@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Migration Consolidation Strategy - User Module
 
 ## The Furious Argument: One File vs. Multiple Incremental Files

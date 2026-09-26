@@ -265,3 +265,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
+<<<<<<< HEAD
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

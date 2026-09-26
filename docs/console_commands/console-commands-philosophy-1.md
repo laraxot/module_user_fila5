@@ -17,6 +17,10 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

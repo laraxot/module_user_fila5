@@ -14,9 +14,13 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate(
             'oauth-access-token.view.any'
         );
+=======
+        return $user->hasPermissionTo('oauth-access-token.view.any');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -24,7 +28,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.view')
+=======
+        return $user->hasPermissionTo('oauth-access-token.view')
+>>>>>>> laraxot/dev
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
     }
@@ -34,7 +42,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.create');
+=======
+        return $user->hasPermissionTo('oauth-access-token.create');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -42,7 +54,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, OauthAccessToken $_oauthAccessToken): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.update') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('oauth-access-token.update') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -50,7 +66,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.delete')
+=======
+        return $user->hasPermissionTo('oauth-access-token.delete')
+>>>>>>> laraxot/dev
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
     }
@@ -60,7 +80,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, OauthAccessToken $_oauthAccessToken): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.restore') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('oauth-access-token.restore') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -68,6 +92,10 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('oauth-access-token.force-delete') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('oauth-access-token.force-delete') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 }

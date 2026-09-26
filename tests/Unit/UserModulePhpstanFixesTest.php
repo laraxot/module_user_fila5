@@ -1,9 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Contracts\UserContract;
+=======
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Validation\Rules\Password;
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
@@ -12,6 +18,10 @@ use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -108,7 +118,11 @@ it('events can be instantiated', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
+<<<<<<< HEAD
     \assert($owner instanceof UserContract);
+=======
+    \assert($owner instanceof User);
+>>>>>>> laraxot/dev
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
@@ -135,7 +149,11 @@ it('events have dispatchable trait', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
+<<<<<<< HEAD
     \assert($owner instanceof UserContract);
+=======
+    \assert($owner instanceof User);
+>>>>>>> laraxot/dev
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);

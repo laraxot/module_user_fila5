@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema
@@ -120,3 +124,7 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 - [Documentazione Modulo User](module_user.md)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Alpine.js](https://alpinejs.dev/) 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

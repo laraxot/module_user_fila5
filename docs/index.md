@@ -3235,6 +3235,7 @@
 
 ## root-md-files
 
+<<<<<<< HEAD
 - [changelog-1.md](./root-md-files/changelog-1.md)
 - [changelog-2.md](./root-md-files/changelog-2.md)
 - [changelog.md](./root-md-files/changelog.md)
@@ -3242,6 +3243,10 @@
 - [git-reset.md](./root-md-files/git-reset.md)
 - [pest-test-report.md](./root-md-files/pest-test-report.md)
 - [philosophy.md](./root-md-files/philosophy.md)
+=======
+- [git-reset.md](./root-md-files/git-reset.md)
+- [pest-test-report.md](./root-md-files/pest-test-report.md)
+>>>>>>> laraxot/dev
 
 ## scripts
 
@@ -3422,3 +3427,8 @@
 - [phpstan-widget-property-types-2026-05-06.deprecated.md](./wiki/troubleshooting/phpstan-widget-property-types-2026-05-06.deprecated.md)
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

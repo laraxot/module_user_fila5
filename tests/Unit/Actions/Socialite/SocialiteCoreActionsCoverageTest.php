@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -107,7 +111,11 @@ test('returns null and dispatches invalid state event when socialite state is in
 
     $dispatcher = configureMock(Dispatcher::class, function (MockInterface $mock) use ($exception): void {
         $mock->allows([
+<<<<<<< HEAD
             'dispatch' => function (object $event) use ($exception): void {
+=======
+            'dispatch' => function (mixed $event) use ($exception): void {
+>>>>>>> laraxot/dev
                 Assert::assertInstanceOf(InvalidState::class, $event);
                 Assert::assertSame($exception, $event->exception);
             },

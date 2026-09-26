@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Module - UUID Trait Conflict Resolution
 
 **Status**: Critical System Error Resolution
@@ -214,6 +218,10 @@ $token = $user->createToken('test');
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
 - [ ] Verify ExternalProject contact token generation
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -287,6 +295,10 @@ $token = $user->createToken('test');
 - [ ] API authentication works
 - [ ] LimeSurvey integration functional
 - [ ] ExternalProject survey workflows operational
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

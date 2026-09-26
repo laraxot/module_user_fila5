@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_xjgrXo
 
 =======
 >>>>>>> .merge_file_hsrpIR
+=======
+
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Tables\Columns\SingleRoleSelectColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Tests\TestCase;

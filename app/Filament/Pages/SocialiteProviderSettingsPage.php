@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 // ⚠️ CRITICAL RULE: NEVER use ->label(), ->placeholder(), ->helperText()
 // Translations are handled automatically by LangServiceProvider via 5-level keys:
 // user::socialite.settings.form.{field}.{type}
@@ -87,7 +91,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->password()
                             ->revealable()
                             ->placeholder('GOCSPX-xxx')
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+>>>>>>> laraxot/dev
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
@@ -117,7 +125,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('github.client_secret')
                             ->password()
                             ->revealable()
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+>>>>>>> laraxot/dev
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
@@ -147,7 +159,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('microsoft.client_secret')
                             ->password()
                             ->revealable()
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+>>>>>>> laraxot/dev
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
@@ -307,8 +323,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Mask secret for display (show only last 4 chars).
+<<<<<<< HEAD
      *
      * @param mixed $secret raw config() value; expected string|null
+=======
+>>>>>>> laraxot/dev
      */
     private function maskSecret(mixed $secret): string
     {
@@ -331,9 +350,15 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Check if value contains masked characters.
      */
+<<<<<<< HEAD
     private function isMasked(?string $value): bool
     {
         if (null === $value) {
+=======
+    private function isMasked(mixed $value): bool
+    {
+        if (! is_string($value)) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -342,9 +367,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Resolve secret value - use new value or keep existing if masked.
+<<<<<<< HEAD
      *
      * @param mixed $newValue      new field state; expected string|null
      * @param mixed $existingValue raw config() value; expected string|null
+=======
+>>>>>>> laraxot/dev
      */
     private function resolveSecret(mixed $newValue, mixed $existingValue): string
     {
@@ -380,9 +408,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
         return $this->stringList([] === $value ? $default : $value);
     }
 
+<<<<<<< HEAD
     /**
      * @param mixed $value raw config()/form value; expected scalar|null
      */
+=======
+>>>>>>> laraxot/dev
     private function stringValue(mixed $value): string
     {
         if (is_string($value)) {
@@ -397,8 +428,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param mixed $value raw form section state; expected array<string, mixed>
      *
+=======
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function providerData(mixed $value): array
@@ -418,8 +452,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param mixed $value raw config()/TagsInput value; expected array<array-key, mixed>
      *
+=======
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     private function stringList(mixed $value): array

@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Modules\User\Filament\Resources\UserResource;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource\Schemas\UserInfolist;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -18,6 +21,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 abstract class BaseViewUser extends XotBaseViewRecord
 {
     protected static string $resource = UserResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -27,4 +31,6 @@ abstract class BaseViewUser extends XotBaseViewRecord
     {
         return app(UserInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> laraxot/dev
 }

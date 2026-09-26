@@ -40,7 +40,11 @@ class OauthAuthCodeResource extends XotBaseResource
                 TextColumn::make('id')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->formatStateUsing(function (string|int|null $state): string {
+=======
+                    ->formatStateUsing(function (mixed $state): string {
+>>>>>>> laraxot/dev
                         if (! is_string($state)) {
                             return '';
                         }

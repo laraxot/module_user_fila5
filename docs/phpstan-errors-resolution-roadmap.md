@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -216,3 +220,8 @@ Tutti gli errori sono stati corretti:
     - Aggiornato modello per estendere `Laravel\Passport\DeviceCode` invece di `BaseModel` per conformità rigorosa ai tipi.
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

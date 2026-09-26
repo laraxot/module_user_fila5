@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Passport vs Socialite - Distinzione Critica
 
 **Data**: 2025-01-22
@@ -109,6 +113,10 @@ find Modules/User/app/Filament/Resources -name "SocialProviderResource.php"
 
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 - [Laravel Socialite Documentation](https://laravel.com/docs/socialite)
 

@@ -20,6 +20,10 @@ related:
 
 # Implementazione del Logout
 # Implementazione del Logout 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -56,6 +60,10 @@ mount(function() {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
@@ -65,6 +73,10 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -85,6 +97,10 @@ $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCur
 ```
 
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Componenti Filament
 
@@ -113,6 +129,10 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 ## Chiavi di Traduzione
 
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ```php
 'logout' => [
@@ -170,6 +190,10 @@ mount(function() {
     session()->invalidate();
     session()->regenerateToken();
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>
@@ -215,6 +239,10 @@ mount(function() {
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
         // Logout
         Auth::logout();
         session()->invalidate();
@@ -456,6 +484,10 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>

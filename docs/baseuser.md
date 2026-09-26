@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # BaseUser Model in Laravel Modules
 
 ## Overview
@@ -72,6 +76,10 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - [Profile Management](./profile-management-2.md)
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [[HasTeamsContract]]
 - [[UserContract]]
 - [[Team]]

@@ -18,6 +18,10 @@ related:
   - "./dependency.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # dependency-rules
 
 ## Principle (MANDATORY)

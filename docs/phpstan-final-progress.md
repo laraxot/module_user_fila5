@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # PHPStan Level 10 - Progresso Finale
 
 **Data**: 2025-01-22
@@ -72,3 +76,8 @@ Da identificare e correggere sistematicamente.
 - [OAuth Resources Corrections](./phpstan-corrections-oauth-resources.md)
 
 ---
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

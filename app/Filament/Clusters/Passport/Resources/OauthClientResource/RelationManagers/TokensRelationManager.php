@@ -43,6 +43,7 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->sortable(),
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
+<<<<<<< HEAD
                 ->tooltip(
                     /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                     function (mixed $state): ?string {
@@ -66,6 +67,25 @@ class TokensRelationManager extends XotBaseRelationManager
                         return is_scalar($state) ? (string) $state : '';
                     }
                 ),
+=======
+                ->tooltip(function (mixed $state): ?string {
+                    if (null === $state) {
+                        return null;
+                    }
+                    if (is_array($state)) {
+                        return json_encode($state);
+                    }
+
+                    return is_string($state) ? $state : null;
+                })
+                ->formatStateUsing(function (mixed $state): string {
+                    if (is_array($state)) {
+                        return implode(', ', array_map(fn (mixed $s): string => is_scalar($s) ? (string) $s : '', $state));
+                    }
+
+                    return is_scalar($state) ? (string) $state : '';
+                }),
+>>>>>>> laraxot/dev
             'revoked' => IconColumn::make('revoked')
                 ->boolean()
                 ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
@@ -75,7 +95,11 @@ class TokensRelationManager extends XotBaseRelationManager
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
+<<<<<<< HEAD
                 ->formatStateUsing(function (Carbon|string|null $state): string {
+=======
+                ->formatStateUsing(function (mixed $state): string {
+>>>>>>> laraxot/dev
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {

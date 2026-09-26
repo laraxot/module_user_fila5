@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
 **Status**: 🔄 In Progress

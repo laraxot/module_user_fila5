@@ -14,6 +14,10 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # ChangePasswordCommand
 
 ## Panoramica
@@ -379,3 +383,9 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Interfaccia Console**: Input interattivo
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87273113 (.)
+
+>>>>>>> laraxot/dev

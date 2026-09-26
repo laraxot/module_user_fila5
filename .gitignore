@@ -498,4 +498,7 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+<<<<<<< HEAD
 graphify-out/
+=======
+>>>>>>> laraxot/dev

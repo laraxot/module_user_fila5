@@ -1,20 +1,28 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_cAw4BG
 =======
 
 >>>>>>> .merge_file_P0A27u
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_cAw4BG
 return new class extends XotBaseMigration
 {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> .merge_file_P0A27u
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -47,11 +55,15 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
+<<<<<<< HEAD
 <<<<<<< .merge_file_cAw4BG
             if ($this->getColumnType('token') === 'varchar') {
 =======
             if ('varchar' === $this->getColumnType('token')) {
 >>>>>>> .merge_file_P0A27u
+=======
+            if ('varchar' === $this->getColumnType('token')) {
+>>>>>>> laraxot/dev
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

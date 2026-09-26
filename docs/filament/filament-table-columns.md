@@ -18,6 +18,10 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -56,4 +60,9 @@ public function getTableColumns(): array
 
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+
+>>>>>>> laraxot/dev
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

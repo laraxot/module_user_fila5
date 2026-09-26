@@ -83,8 +83,17 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
+<<<<<<< HEAD
     protected function getPackageProviders(Application $app): array
     {
+=======
+    protected function getPackageProviders(mixed $app): array
+    {
+        if (! $app instanceof Application) {
+            throw new \InvalidArgumentException('Expected Illuminate\Foundation\Application.');
+        }
+
+>>>>>>> laraxot/dev
         return [
             ...parent::getPackageProviders($app),
             UserServiceProvider::class,

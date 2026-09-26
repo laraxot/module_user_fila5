@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -19,7 +23,11 @@ test('every vendor passport eloquent model has a local oauth wrapper', function 
     }
 
     $vendorModelClasses = collect($passportFiles)
+<<<<<<< HEAD
         ->map(function (string $file): string {
+=======
+        ->map(function (mixed $file): string {
+>>>>>>> laraxot/dev
             return 'Laravel\\Passport\\'.pathinfo((string) $file, PATHINFO_FILENAME);
         })
         ->filter(function (string $class): bool {

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 ?>
 <x-filament-panels::page>
+<<<<<<< HEAD
     <form wire:submit="updateProfile">
         {{ $this->editProfileForm }}
 
@@ -15,4 +16,6 @@ declare(strict_types=1);
 
         <x-filament::actions :actions="$this->getUpdatePasswordFormActions()" />
     </form>
+=======
+>>>>>>> laraxot/dev
 </x-filament-panels::page>

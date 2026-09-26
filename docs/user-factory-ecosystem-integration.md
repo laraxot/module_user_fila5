@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION
 
 ## 🎯 Integration Achievement

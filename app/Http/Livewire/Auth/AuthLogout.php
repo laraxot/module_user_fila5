@@ -18,7 +18,11 @@ class AuthLogout extends Component
     public function render(): View
     {
         /** @var view-string $viewName */
+<<<<<<< HEAD
         $viewName = 'user::livewire.auth.logout';
+=======
+        $viewName = 'filament-jet::livewire.auth-logout';
+>>>>>>> laraxot/dev
 
         return view($viewName);
     }

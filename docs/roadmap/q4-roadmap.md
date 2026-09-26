@@ -18,6 +18,10 @@ related:
   - "./03-later.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Module Roadmap (2025 Q4)
 
 ## Vision & Scope

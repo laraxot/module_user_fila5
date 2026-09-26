@@ -18,6 +18,10 @@ related:
   - "./profile.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # json
 
 <!-- Contenuto migrato da _docs/json.txt -->

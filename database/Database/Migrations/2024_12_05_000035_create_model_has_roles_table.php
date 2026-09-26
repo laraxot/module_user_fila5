@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_i9zNTW
 =======
 
 >>>>>>> .merge_file_GLH6Rk
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -13,12 +17,16 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreateModelHasRolesTable.
  */
+<<<<<<< HEAD
 <<<<<<< .merge_file_i9zNTW
 return new class extends XotBaseMigration
 {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> .merge_file_GLH6Rk
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -38,17 +46,23 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
+<<<<<<< HEAD
 <<<<<<< .merge_file_i9zNTW
             if ($this->getColumnType('model_id') === 'uuid') {
                 $table->string('model_id', 36)->index()->change();
             }
             if ($this->getColumnType('role_id') === 'uuid') {
 =======
+=======
+>>>>>>> laraxot/dev
             if ('uuid' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
             }
             if ('uuid' === $this->getColumnType('role_id')) {
+<<<<<<< HEAD
 >>>>>>> .merge_file_GLH6Rk
+=======
+>>>>>>> laraxot/dev
                 $table->integer('role_id')->index()->change();
             }
             $this->updateTimestamps($table);
