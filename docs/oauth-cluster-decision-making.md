@@ -1,0 +1,24 @@
+---
+title: "oauth cluster decision making"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "oauth cluster decision making"
+issues: []
+discussions: []
+module: theme
+topic: oauth-cluster-decision-making
+canonical: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
