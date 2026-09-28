@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
@@ -29,10 +26,7 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

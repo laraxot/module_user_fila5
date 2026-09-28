@@ -14,7 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error-1.md
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

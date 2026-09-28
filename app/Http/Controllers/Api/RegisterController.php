@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * Handles the registration of a new user.
  *
@@ -16,12 +12,6 @@ declare(strict_types=1);
  * If the validation passes, a new user is created and a success response is returned with the user's name and an access token.
  * If the validation fails, an error response is returned with the validation errors.
  *
-<<<<<<< HEAD
- * @param  Request  $request  The incoming request
- * @return JsonResponse The JSON response
- */
-
-=======
  * @param Request $request The incoming request
  *
  * @return JsonResponse The JSON response
@@ -29,7 +19,6 @@ declare(strict_types=1);
 
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Http\Controllers\Api;
 
 use Illuminate\Http\JsonResponse;

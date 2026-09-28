@@ -18,10 +18,7 @@ related:
   - "./tasks-index.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Task: Query Optimization User
 
 **Modulo**: User  

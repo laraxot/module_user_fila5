@@ -14,10 +14,7 @@ related:
   - "./console-commands.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -226,10 +223,7 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -266,8 +260,5 @@ Modules/User/
 - [ ] Validazione input avanzata
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -17,11 +14,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-<<<<<<< HEAD
-        $widget = new SocialLoginWidget;
-=======
         $widget = new SocialLoginWidget();
->>>>>>> laraxot/dev
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -33,11 +26,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-<<<<<<< HEAD
-        $widget = new SocialLoginWidget;
-=======
         $widget = new SocialLoginWidget();
->>>>>>> laraxot/dev
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -50,11 +39,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-<<<<<<< HEAD
-        $widget = new SocialLoginWidget;
-=======
         $widget = new SocialLoginWidget();
->>>>>>> laraxot/dev
         $providers = $widget->getProviders();
 
         Assert::assertEmpty($providers);
@@ -65,11 +50,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => 'microsoft-id']);
         config(['services.github.client_id' => null]);
 
-<<<<<<< HEAD
-        $widget = new SocialLoginWidget;
-=======
         $widget = new SocialLoginWidget();
->>>>>>> laraxot/dev
         $providers = $widget->getProviders();
 
         Assert::assertCount(2, $providers);

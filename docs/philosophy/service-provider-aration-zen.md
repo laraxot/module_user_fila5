@@ -11,10 +11,7 @@ related:
   - "./service-provider-separation-zen.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
 ## La Storia

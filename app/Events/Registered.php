@@ -20,10 +20,6 @@ class Registered
      */
     public function __construct(
         public SocialiteUser $socialiteUser,
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> laraxot/dev
 }

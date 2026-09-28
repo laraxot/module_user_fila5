@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -16,21 +13,13 @@ uses(TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(LoginWidget::class, $widget);
     });
 
     test('login widget has correct form schema', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
         $schema = $widget->getFormSchema();
 
         Assert::assertCount(3, $schema);
@@ -47,11 +36,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget form fill has correct defaults', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
         $fillData = $widget->getFormFill();
 
         Assert::assertArrayHasKey('email', $fillData);
@@ -60,11 +45,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget has correct view property', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
         $reflection = new ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
@@ -74,11 +55,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget extends xot base widget', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
     });

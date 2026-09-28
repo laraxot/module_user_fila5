@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - PHPStan Fixes Session [DATE]
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -231,10 +228,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
 - [← Root Documentation](../../../../docs/index.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 

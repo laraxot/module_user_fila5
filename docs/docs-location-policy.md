@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Documentazione: Policy Posizione Docs (Modulo User)
 
 ## Regola

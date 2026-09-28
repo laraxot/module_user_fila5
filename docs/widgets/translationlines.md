@@ -14,10 +14,7 @@ related:
   - "./translation-guidelines.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Widget Translation Guidelines
 
 ## Overview
@@ -166,10 +163,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 - [User Module Widget Structure](../widgets-structure-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

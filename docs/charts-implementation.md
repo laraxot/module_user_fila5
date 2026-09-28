@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - Charts Implementation
 
 ## 📋 Panoramica
@@ -585,10 +582,7 @@ class UsersChartWidgetTest extends TestCase
 
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x

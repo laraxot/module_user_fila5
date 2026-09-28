@@ -14,7 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

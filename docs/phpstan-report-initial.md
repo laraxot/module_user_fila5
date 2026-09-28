@@ -16,8 +16,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
 
  [OK] No errors        
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

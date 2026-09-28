@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 **Agente AI**: Claude Code (Sonnet 4.5)

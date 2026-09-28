@@ -11,12 +11,8 @@ final class SocialiteEmailDomainAnalysisData extends Data
     public function __construct(
         public bool $hasFirstPartyDomain,
         public bool $hasClientDomain,
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> laraxot/dev
 
     public function hasUnrecognizedDomain(): bool
     {

@@ -199,10 +199,7 @@ Se l'override del tema non funziona:
 - [Documentazione Laravel View](https://laravel.com/docs/views)
 - [Regole Struttura Directory Auth](../../../.windsurf/rules/translations.md#regola-critica-struttura-directory-auth-laravel)
 - [Documentazione Tema One](../../../Themes/One/docs/README.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ---
 

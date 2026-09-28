@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 

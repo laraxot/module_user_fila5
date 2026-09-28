@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\User\Models\Role;
@@ -18,12 +15,7 @@ use Modules\Xot\Datas\XotData;
  * Owner migration `User::model_has_roles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-{
-=======
 return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -44,17 +36,10 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
-<<<<<<< HEAD
-            if ($this->getColumnType('model_id') === 'uuid') {
-                $table->string('model_id', 36)->index()->change();
-            }
-            if ($this->getColumnType('role_id') === 'uuid') {
-=======
             if ('uuid' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
             }
             if ('uuid' === $this->getColumnType('role_id')) {
->>>>>>> laraxot/dev
                 $table->integer('role_id')->index()->change();
             }
             // $this->updateUser($table);

@@ -1,11 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
 
->>>>>>> laraxot/dev
 use Filament\Notifications\Actions\Action;
 use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;

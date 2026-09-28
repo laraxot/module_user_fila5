@@ -41,9 +41,6 @@ Before submitting a pull request:
 If the project maintainer has any additional requirements, you will find them listed here.
 
 <<<<<<< HEAD
-- **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/psr-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/psr-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
@@ -58,7 +55,6 @@ If the project maintainer has any additional requirements, you will find them li
 >>>>>>> 87273113 (.)
 =======
 - **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/psr-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 - **Add tests!** - Your patch won't be accepted if it doesn't have tests.

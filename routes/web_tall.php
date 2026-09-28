@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * routes from laravel preset Tall.
@@ -11,22 +10,6 @@ use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Http\Controllers\Auth\EmailVerificationController;
 use Modules\User\Http\Controllers\Auth\LogoutController;
-=======
-/**
- * routes from laravel preset Tall.
- */
-
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Route;
-use Modules\User\Http\Controllers\Auth\EmailVerificationController;
-use Modules\User\Http\Controllers\Auth\LogoutController;
-use Modules\User\Http\Livewire\Auth\Passwords\Confirm;
-use Modules\User\Http\Livewire\Auth\Passwords\Email;
-use Modules\User\Http\Livewire\Auth\Passwords\Reset;
-use Modules\User\Http\Livewire\Auth\Register;
-use Modules\User\Http\Livewire\Auth\Verify;
->>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /*
@@ -42,7 +25,6 @@ use Webmozart\Assert\Assert;
 
 // Route::view('/', 'welcome')->name('home');
 Route::prefix('{lang}')->group(function (): void {
-<<<<<<< HEAD
     Route::middleware('guest')->group(static function (): void {
         Route::get('register', RegisterWidget::class)->name('register');
     });
@@ -62,36 +44,6 @@ Route::prefix('{lang}')->group(function (): void {
         Assert::isInstanceOf($confirm, Illuminate\Routing\Route::class);
         $confirm->name('password.confirm');
     });
-=======
-    Route::middleware('guest')
-        ->namespace('\Modules\User\Http\Livewire\Auth')
-        ->group(static function (): void {
-            Route::get('login', 'Login')->name('login');
-
-            Route::get('register', Register::class)->name('register');
-        });
-
-    Route::middleware([])->namespace('\Modules\User\Http\Livewire\Auth')->group(static function (): void {
-        Route::get('password/reset', Email::class)->name('password.request');
-
-        Route::get('password/reset/{token}', Reset::class)->name(
-            'password.reset',
-        );
-    });
-
-    Route::middleware('auth')
-        ->namespace('\Modules\User\Http\Livewire\Auth')
-        ->group(static function (): void {
-            $route = Route::get('email/verify', Verify::class);
-            Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
-            $route->middleware('throttle:6,1');
-            $route->name('verification.notice');
-
-            $route = Route::get('password/confirm', Confirm::class);
-            Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
-            $route->name('password.confirm');
-        });
->>>>>>> laraxot/dev
 
     Route::middleware('auth')
         // ->namespace('\Modules\User\Http\Livewire\Auth')

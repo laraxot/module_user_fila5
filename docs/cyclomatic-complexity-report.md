@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: User
 
 **Generated:** 2025-10-01 19:44:12  

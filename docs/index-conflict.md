@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module Documentation
 
 ## Overview
@@ -75,10 +72,7 @@ This document serves as the central index for the User module, providing guidanc
 - [Profile Management](./profile-management-2.md)
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Sottocartelle
 
@@ -96,11 +90,8 @@ This document serves as the central index for the User module, providing guidanc
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
 
->>>>>>> laraxot/dev
 # Indice Documentazione User
 
 - [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.

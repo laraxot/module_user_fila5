@@ -18,10 +18,7 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo

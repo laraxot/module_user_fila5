@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # XotBaseResource getPages() Automatic: Filosofia DRY
 
 ## Data: 2025-01-22

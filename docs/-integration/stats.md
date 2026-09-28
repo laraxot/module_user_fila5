@@ -18,10 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # stats
 
 <!-- Contenuto migrato da _docs/stats.txt -->

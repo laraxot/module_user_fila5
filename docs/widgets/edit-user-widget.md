@@ -14,10 +14,7 @@ related:
   - "./translationlines.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # EditUserWidget Documentation
 
 ## Overview
@@ -146,10 +143,7 @@ All widget text follows the expanded translation structure:
 * File upload and image processing capabilities
 ## Related Documentation
 * [User Module Widget Structure](../widgets-structure-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 * [Widget Translation Guidelines](./translation-guidelines.md)
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)

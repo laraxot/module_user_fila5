@@ -17,10 +17,7 @@ related:
   - "./user-traits.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Analytics
 
 ## Overview
@@ -67,10 +64,7 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 ### Pending
 - Real-time monitoring
 - <nome progetto>ive analytics
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - Custom metrics
 - Export system
 

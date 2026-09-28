@@ -63,7 +63,4 @@ class User extends Authenticatable
 
 - [Modulo User](./README.md)
 - [Xot Traits](../../Xot/docs/)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  

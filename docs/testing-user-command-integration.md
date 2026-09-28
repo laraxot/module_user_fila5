@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Problema**: Test fallisce con "Too few arguments" e "Target class [config] does not exist"

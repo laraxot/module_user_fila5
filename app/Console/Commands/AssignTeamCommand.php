@@ -5,23 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
 use Modules\User\Models\BaseUser;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
->>>>>>> laraxot/dev
 class AssignTeamCommand extends Command
 {
     /**
@@ -46,11 +37,7 @@ class AssignTeamCommand extends Command
         $xot = XotData::make();
         $email = text('email ?');
         $user = XotData::make()->getUserByEmail($email);
-<<<<<<< HEAD
-        Assert::isInstanceOf($user, UserContract::class);
-=======
         Assert::isInstanceOf($user, BaseUser::class);
->>>>>>> laraxot/dev
 
         $teamClass = $xot->getTeamClass();
 

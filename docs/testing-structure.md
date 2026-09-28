@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -311,20 +308,14 @@ dump($variable);
 
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
 
 
 
 
->>>>>>> laraxot/dev

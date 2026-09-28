@@ -14,11 +14,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.view.any');
-=======
         return $user->hasPermissionTo('oauth-auth-code.view.any');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -26,11 +22,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function view(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.view') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-auth-code.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -38,11 +30,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.create');
-=======
         return $user->hasPermissionTo('oauth-auth-code.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -50,11 +38,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function update(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.update') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-auth-code.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -62,11 +46,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-auth-code.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -74,11 +54,7 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.restore') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-auth-code.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -86,10 +62,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, OauthAuthCode $oauthAuthCode): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('oauth-auth-code.force-delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('oauth-auth-code.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }

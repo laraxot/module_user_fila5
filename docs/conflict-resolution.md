@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Git Conflict Resolution - Modulo User
 
 ## Data
@@ -48,8 +45,5 @@ related:
 - Le migrazioni seguono la regola Laraxot: `return new class() extends XotBaseMigration { ... };`
 - Factory utilizza `@var OauthClient` per evitare `mixed`.
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

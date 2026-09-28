@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # User Module - Sushi Schema Fix (`SocialProvider` Model)
 
 This document details the resolution of an SQL syntax error encountered during the analysis of the `SocialProvider` model, which utilizes the `calebporzio/sushi` package.
@@ -88,7 +85,4 @@ class SocialProvider extends BaseModel
 - **Clarity and Correctness:** The fix improves correctness, ensuring that the model's behavior with `Sushi` is <nome progetto>able and free from runtime errors during schema inference.
 
 This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

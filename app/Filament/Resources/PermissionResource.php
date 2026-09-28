@@ -1,19 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/Althinect/filament-spatie-roles-permissions/tree/2.x
  * @see https://github.com/phpsa/filament-authentication/blob/main/src/resources/PermissionResource.php
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Filament\Resources;
 
 use Modules\User\Filament\Resources\PermissionResource\Pages\CreatePermission;

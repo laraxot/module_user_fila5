@@ -24,10 +24,7 @@ related:
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integrazione UserFactory ha raggiunto un livello di eccellenza enterprise-grade con supporto completo per:
 
@@ -39,20 +36,14 @@ BaseUser (User Module)
 ├── User (<nome progetto>) - STI Base + Business Logic
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     └── Admin (HasParent) - System Administrator
 ```
 
 ### Cross-Module Compatibility Matrix
 
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -83,10 +74,7 @@ User::factory()->patient()->pregnant()->create();
 User::factory()->patient()->lowIncome()->create();
 
 // Doctor scenarios
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 User::factory()->doctor()->withStudio()->create();
 User::factory()->doctor()->withWorkflow()->create();
 User::factory()->doctor()->specialist()->create();
@@ -107,10 +95,7 @@ User::factory()->gdprCompliant()->create();
 ### Italian Healthcare System
 - **Codice Fiscale**: Realistic generation algorithm
 - **ISEE Integration**: Low-income eligibility logic
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - **Pregnancy Services**: Special healthcare pathways
 - **Professional Credentials**: Realistic doctor certifications
 
@@ -132,10 +117,7 @@ protected $connection = '<nome progetto>';
 
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses '<nome progetto>' connection
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ```
 
 ### Morph Relations Support
@@ -163,19 +145,13 @@ public function test_cross_module_compatibility()
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
 
     // <nome progetto> domain contracts
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
 
 // Business logic testing
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 public function test_healthcare_workflows()
 {
     // Patient registration workflow
@@ -183,10 +159,7 @@ public function test_healthcare_workflows()
     $patient->requestIntegration();
     expect($patient->isIntegrationRequested())->toBeTrue();
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     // Doctor onboarding workflow
     $doctor = User::factory()->doctorWithWorkflow()->create();
     expect($doctor->workflow)->toBeInstanceOf(DoctorRegistrationWorkflow::class);
@@ -208,10 +181,7 @@ public function test_bulk_sti_performance()
 
     expect(Patient::count())->toBe(100);
     expect(Doctor::count())->toBe(30);
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     expect(Admin::count())->toBe(5);
 }
 ```
@@ -257,10 +227,7 @@ public function run(): void
     User::factory()->doctorWithStudio()->count(50)->create();
     User::factory()->doctor()->specialist()->count(20)->create();
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
     // Administrative structure
     User::factory()->admin()->count(5)->create();
 }
@@ -286,10 +253,7 @@ public function run(): void
 - **Single Table Inheritance**: Optimal queries
 - **Eager Loading**: Relationship optimization
 - **Connection Pooling**: Cross-database efficiency
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - **Index Strategy**: Query performance
 
 ### Memory Management
@@ -317,10 +281,7 @@ public function run(): void
 ### Phase 2 Roadmap
 - **Media Library Integration**: Real file attachments
 - **API Testing Support**: RESTful endpoint testing
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - **Multi-Language**: Internationalization support
 - **Advanced Workflows**: Complex business processes
 
@@ -337,10 +298,7 @@ public function run(): void
 - **Testability**: Comprehensive user scenario testing
 
 ### For <nome progetto> Module
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -355,10 +313,7 @@ public function run(): void
 **Status**: ✅ **PRODUCTION READY**
 **Last Updated**: Gennaio 2025
 **Maintenance**: Active development
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 **Support**: Enterprise-grade
 
 ## Link Documentazione
@@ -671,7 +626,4 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

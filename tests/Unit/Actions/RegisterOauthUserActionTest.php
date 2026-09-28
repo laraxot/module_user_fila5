@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\RegisterOauthUserAction;
@@ -18,11 +15,7 @@ uses(TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $attributes
-=======
      * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     $getMockUser = function (array $attributes = []): SocialiteUserContract {
         /** @var array<string, mixed> $normalizedAttributes */

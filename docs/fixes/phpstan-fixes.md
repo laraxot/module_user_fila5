@@ -17,10 +17,7 @@ related:
   - "./phpstanes.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Correzioni PHPStan nel Modulo User
 
 ## Team.php
@@ -55,10 +52,7 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 
 ### Collegamenti Bidirezionali
 - [Documentazione Generale PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md) 
@@ -68,8 +62,5 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 * [phpstan-fixes-8.md](../../../user/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 

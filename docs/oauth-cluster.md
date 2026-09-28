@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Problema**: Cluster Passport vuoto e file duplicato

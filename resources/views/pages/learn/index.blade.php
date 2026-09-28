@@ -1,11 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
 
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Http;
 use Livewire\Volt\Component;
 

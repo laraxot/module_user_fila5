@@ -64,11 +64,7 @@ describe('User Model', function (): void {
 
     test('has profile relationship in memory', function (): void {
         $user = stubUser();
-<<<<<<< HEAD
-        $profile = new Profile;
-=======
         $profile = new Profile();
->>>>>>> laraxot/dev
         $profile->forceFill(['user_id' => 'test-user-id']);
         $user->setRelation('profile', $profile);
 
@@ -77,33 +73,21 @@ describe('User Model', function (): void {
 
     test('can attach authentication logs in memory', function (): void {
         $user = stubUser();
-<<<<<<< HEAD
-        $log = new AuthenticationLog;
-=======
         $log = new AuthenticationLog();
->>>>>>> laraxot/dev
         $user->setRelation('authentications', collect([$log]));
         Assert::assertCount(1, $user->authentications);
     });
 
     test('can expose owned teams relation when preset', function (): void {
         $user = stubUser();
-<<<<<<< HEAD
-        $team = new Team;
-=======
         $team = new Team();
->>>>>>> laraxot/dev
         $user->setRelation('ownedTeams', collect([$team]));
         Assert::assertCount(1, $user->ownedTeams);
     });
 
     test('can expose teams relation when preset', function (): void {
         $user = stubUser();
-<<<<<<< HEAD
-        $team = new Team;
-=======
         $team = new Team();
->>>>>>> laraxot/dev
         $user->setRelation('teams', collect([$team]));
         Assert::assertCount(1, $user->teams);
     });
@@ -154,13 +138,8 @@ describe('User Model', function (): void {
         $u1 = stubUser(['is_active' => true]);
         $u2 = stubUser(['is_active' => false]);
 
-<<<<<<< HEAD
-        $active = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === true);
-        $inactive = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === false);
-=======
         $active = collect([$u1, $u2])->filter(fn (User $u) => true === $u->is_active);
         $inactive = collect([$u1, $u2])->filter(fn (User $u) => false === $u->is_active);
->>>>>>> laraxot/dev
 
         Assert::assertCount(1, $inactive);
         Assert::assertCount(1, $active);
@@ -170,13 +149,8 @@ describe('User Model', function (): void {
         $u1 = stubUser(['email_verified_at' => Carbon::now()]);
         $u2 = stubUser(['email_verified_at' => null]);
 
-<<<<<<< HEAD
-        $verified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at !== null);
-        $unverified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at === null);
-=======
         $verified = collect([$u1, $u2])->filter(fn (User $u) => null !== $u->email_verified_at);
         $unverified = collect([$u1, $u2])->filter(fn (User $u) => null === $u->email_verified_at);
->>>>>>> laraxot/dev
 
         Assert::assertCount(1, $unverified);
         Assert::assertCount(1, $verified);
@@ -210,11 +184,7 @@ describe('User Model', function (): void {
 
     test('can own teams in memory', function (): void {
         $user = stubUser();
-<<<<<<< HEAD
-        $team = new Team;
-=======
         $team = new Team();
->>>>>>> laraxot/dev
         $team->forceFill(['user_id' => $user->id]);
         $user->setRelation('ownedTeams', collect([$team]));
 

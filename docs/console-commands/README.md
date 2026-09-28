@@ -481,10 +481,7 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

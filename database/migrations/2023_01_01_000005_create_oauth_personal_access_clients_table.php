@@ -1,20 +1,12 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-{
-=======
 return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {

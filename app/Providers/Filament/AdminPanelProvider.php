@@ -1,27 +1,16 @@
 <?php
 
-<<<<<<< HEAD
-=======
 /**
  * ---.
  */
 
->>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Providers\Filament;
 
 use Filament\Panel;
 use Filament\Support\Facades\FilamentView;
-<<<<<<< HEAD
-use Filament\View\PanelsRenderHook;
 use Illuminate\Support\Facades\Blade;
-use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
-use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
-use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
-=======
-use Illuminate\Support\Facades\Blade;
->>>>>>> laraxot/dev
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -33,22 +22,6 @@ class AdminPanelProvider extends XotBasePanelProvider
     {
         $panel = parent::panel($panel);
 
-<<<<<<< HEAD
-        FilamentView::registerRenderHook(
-            PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
-            static fn (): string => Blade::render("@livewire('".SocialLoginWidget::class."')"),
-        );
-
-        FilamentView::registerRenderHook(
-            PanelsRenderHook::USER_MENU_BEFORE,
-            static fn (): string => Blade::render("@livewire('".TeamChangeWidget::class."')"),
-        );
-
-        FilamentView::registerRenderHook(
-            PanelsRenderHook::USER_MENU_BEFORE,
-            static fn (): string => Blade::render("@livewire('".SuperAdminWidget::class."')"),
-        );
-=======
         FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
             "@livewire('socialite.buttons')",
         ));
@@ -99,7 +72,6 @@ class AdminPanelProvider extends XotBasePanelProvider
         //         ->url(fn (): string => '#')
         //         ->icon('heroicon-m-cog-8-tooth'),
         // ]);
->>>>>>> laraxot/dev
 
         return $panel;
     }

@@ -61,11 +61,7 @@ class UserForm extends XotBaseResourceForm
                         /** @var Carbon|null $createdAt */
                         $createdAt = $record->getAttribute('created_at');
 
-<<<<<<< HEAD
-                        if ($createdAt === null) {
-=======
                         if (null === $createdAt) {
->>>>>>> laraxot/dev
                             return new HtmlString('&mdash;');
                         }
                         if ($createdAt instanceof CarbonInterface) {

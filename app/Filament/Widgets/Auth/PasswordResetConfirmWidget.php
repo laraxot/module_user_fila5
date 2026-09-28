@@ -64,11 +64,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public function confirmPasswordReset(): void
     {
-<<<<<<< HEAD
-        if ($this->currentState !== 'form') {
-=======
         if ('form' !== $this->currentState) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -93,11 +89,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 },
             );
 
-<<<<<<< HEAD
-            if ($response === Password::PASSWORD_RESET) {
-=======
             if (Password::PASSWORD_RESET === $response) {
->>>>>>> laraxot/dev
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -108,14 +100,9 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     ->send();
 
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-<<<<<<< HEAD
-                $user = XotData::make()->getUserByEmail($email);
-                Assert::isInstanceOf($user, UserContract::class);
-=======
                 /** @var UserContract $user */
                 $user = XotData::make()->getUserByEmail($email);
                 Assert::isInstanceOf($user, Authenticatable::class);
->>>>>>> laraxot/dev
                 Auth::guard()->login($user);
 
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
@@ -151,29 +138,17 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public function isLoading(): bool
     {
-<<<<<<< HEAD
-        return $this->currentState === 'loading';
-=======
         return 'loading' === $this->currentState;
->>>>>>> laraxot/dev
     }
 
     public function isSuccess(): bool
     {
-<<<<<<< HEAD
-        return $this->currentState === 'success';
-=======
         return 'success' === $this->currentState;
->>>>>>> laraxot/dev
     }
 
     public function hasError(): bool
     {
-<<<<<<< HEAD
-        return $this->currentState === 'error';
-=======
         return 'error' === $this->currentState;
->>>>>>> laraxot/dev
     }
 
     protected function handleResetError(string $response): void

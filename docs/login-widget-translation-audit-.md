@@ -21,10 +21,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

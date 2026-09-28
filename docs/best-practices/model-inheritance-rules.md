@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Data**: 2025-10-15
@@ -302,10 +299,7 @@ Il comando dovrebbe restituire solo:
 
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

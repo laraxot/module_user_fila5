@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # PHPStan Syntax Fixes - Modulo User
 
 **Versione PHPStan**: 1.12.x  
@@ -166,10 +163,7 @@ use App\Models\User;
 ## 🔗 Collegamenti
 
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 

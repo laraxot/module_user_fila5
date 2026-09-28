@@ -176,7 +176,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md
-<<<<<<< HEAD
-=======
 >>>>>>> 2024e2e7 (.)
->>>>>>> laraxot/dev

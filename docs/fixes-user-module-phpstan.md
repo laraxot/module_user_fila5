@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -178,10 +175,7 @@ Gli errori rimanenti (94) sono principalmente:
 - [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../../config/password.php)
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Note per il Futuro
 
@@ -202,7 +196,4 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
 *Ultimo aggiornamento: dicembre 2024*
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

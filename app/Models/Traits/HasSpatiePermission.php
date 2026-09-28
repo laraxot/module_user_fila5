@@ -5,12 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 use Modules\User\Models\Permission;
-<<<<<<< HEAD
-use Spatie\Permission\Traits\HasRoles;
-
-trait HasSpatiePermission
-{
-=======
 use Spatie\Permission\Traits\HasPermissions;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -20,7 +14,6 @@ use Spatie\Permission\Traits\HasRoles;
 trait HasSpatiePermission
 {
     use HasPermissions;
->>>>>>> laraxot/dev
     use HasRoles;
 
     public function hasPermissionToOrCreate(

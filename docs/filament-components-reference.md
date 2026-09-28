@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Riferimento Componenti Filament Verificati
 
 ## ⚠️ REGOLA CRITICA: Verificare SEMPRE l'esistenza dei componenti

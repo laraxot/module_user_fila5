@@ -15,20 +15,12 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-<<<<<<< HEAD
-    $this->widget = new LoginWidget;
-=======
     $this->widget = new LoginWidget();
->>>>>>> laraxot/dev
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
-<<<<<<< HEAD
-        $widget = new LoginWidget;
-=======
         $widget = new LoginWidget();
->>>>>>> laraxot/dev
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');

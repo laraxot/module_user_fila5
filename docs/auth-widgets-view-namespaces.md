@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -129,10 +126,7 @@ Per ogni nuovo widget di autenticazione:
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -277,8 +271,5 @@ Per ogni nuovo widget di autenticazione:
 ## Collegamenti
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Implementazione Auth Pages](auth-pages-implementation.md)

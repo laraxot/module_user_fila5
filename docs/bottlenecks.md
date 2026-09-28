@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Colli di Bottiglia e Soluzioni - Modulo User
 
 ## Panoramica
@@ -436,10 +433,7 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 - [Best Practices Filament](./filament-best-practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module-structure-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../xot/docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/docs/bottlenecks.md)
@@ -467,10 +461,7 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
 - [Struttura Moduli](../xot/project_docs/module-structure-2.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 * [BOTTLENECKS.md](../../../xot/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)

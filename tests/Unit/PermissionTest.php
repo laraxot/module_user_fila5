@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
@@ -16,11 +13,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
  * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createTestPermission(array $attributes = []): Permission
 {
@@ -31,11 +24,7 @@ function createTestPermission(array $attributes = []): Permission
 }
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
  * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createTestRoleForPermission(array $attributes = []): Role
 {

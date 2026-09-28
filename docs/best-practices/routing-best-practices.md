@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
 
 ## Il Principio Fondamentale
@@ -160,10 +157,7 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 - [Il Tao del Codice](../Xot/docs/tao/code_tao.md)
 - [Best Practices Filament](./filament-best-practices.md) 
 - [Best Practices Filament](./filament_best_practices.md) 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## Principi Fondamentali
 
@@ -382,10 +376,7 @@ class UserResource extends Resource
 
 ## Collegamenti
 - [Filament Best Practices](./filament-best-practices.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 - [Volt Documentation](https://livewire.laravel.com/docs/volt)
 - [Folio Documentation](https://laravel.com/docs/folio)
 - [Filament Documentation](https://filamentphp.com/docs) 
@@ -508,7 +499,4 @@ public function logout()
 - [Documentazione Volt](./volt-logout-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

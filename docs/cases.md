@@ -14,7 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts.md
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

@@ -181,11 +181,7 @@ $activeProviders = SsoProvider::where('is_active', true)->get();
 ### Autenticare Utente via SSO
 
 ```php
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
 use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 use Modules\User\Models\SsoProvider;
 
 $provider = SsoProvider::where('name', 'spid')->firstOrFail();

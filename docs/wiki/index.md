@@ -4,11 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-<<<<<<< HEAD
-updated: 2026-09-21
-=======
 updated: 2026-07-27
->>>>>>> laraxot/dev
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
@@ -27,15 +23,6 @@ related:
 
 Indice operativo del wiki User.
 
-<<<<<<< HEAD
-## BMAD — SuperAdmin widget (Epic 9, solo docs)
-
-- [bmad README](../bmad/README.md) — indice slice
-- [tech-spec](../bmad/tech-spec.md) — modifiche `AdminPanelProvider`
-- [epics](../bmad/epics.md) · [9.2 hook](../stories/9.2.admin-panel-provider-hook.story.md)
-
-=======
->>>>>>> laraxot/dev
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)

@@ -5,18 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Shield;
 
 use Modules\User\Contracts\HasShieldPermissions;
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-
-use function Safe\class_implements;
-
-=======
 
 use function Safe\class_implements;
 
 use Spatie\QueueableAction\QueueableAction;
 
->>>>>>> laraxot/dev
 /**
  * Action per risolvere la configurazione permissions e entities.
  *

@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 ?>
 @props([
     'content' => 'I dati personali forniti saranno trattati nel rispetto della normativa sulla privacy.',

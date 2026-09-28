@@ -15,10 +15,6 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
-use Modules\Xot\Datas\XotData;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 /**
@@ -30,17 +26,10 @@ use PHPUnit\Framework\Assert;
  */
 function profileConnectionName(): string
 {
-<<<<<<< HEAD
-    $profileClass = XotData::make()->getProfileClass();
-    $connection = (new $profileClass)->getConnectionName();
-
-    if (is_string($connection) && $connection !== '') {
-=======
     $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
     $connection = (new $profileClass())->getConnectionName();
 
     if (is_string($connection) && '' !== $connection) {
->>>>>>> laraxot/dev
         return $connection;
     }
 

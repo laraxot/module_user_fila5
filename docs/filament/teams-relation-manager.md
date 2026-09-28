@@ -18,10 +18,7 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # TeamsRelationManager in User Module
 
 ## Panoramica

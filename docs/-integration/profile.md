@@ -18,10 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # profile
 
 <!-- Contenuto migrato da _docs/profile.txt -->

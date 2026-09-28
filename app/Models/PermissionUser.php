@@ -21,10 +21,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-class PermissionUser extends ModelHasPermission {}
-=======
 class PermissionUser extends ModelHasPermission
 {
 }
->>>>>>> laraxot/dev

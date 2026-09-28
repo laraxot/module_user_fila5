@@ -1,15 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-use Modules\User\Datas\PasswordData;
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use Spatie\LaravelData\Data;
-
-use function Safe\file_get_contents;
-
-=======
 
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
@@ -19,7 +10,6 @@ use function Safe\file_get_contents;
 
 use Spatie\LaravelData\Data;
 
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 function samplePasswordData(): PasswordData
@@ -57,11 +47,7 @@ test('password data can be created with custom parameters', function (): void {
 });
 
 test('password data has default values', function (): void {
-<<<<<<< HEAD
-    $defaultPasswordData = new PasswordData;
-=======
     $defaultPasswordData = new PasswordData();
->>>>>>> laraxot/dev
 
     Assert::assertSame(5, $defaultPasswordData->otp_expiration_minutes);
     Assert::assertSame(6, $defaultPasswordData->otp_length);

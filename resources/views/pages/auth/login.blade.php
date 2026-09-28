@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Login;

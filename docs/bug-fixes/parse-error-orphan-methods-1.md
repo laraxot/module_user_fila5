@@ -16,9 +16,6 @@ related:
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 ---
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
 
->>>>>>> laraxot/dev

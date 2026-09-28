@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
@@ -23,11 +20,7 @@ describe('Create specific passport client actions', function (): void {
     });
 
     it('delegates password client creation to generic action', function (): void {
-<<<<<<< HEAD
-        $expectedClient = new OauthClient;
-=======
         $expectedClient = new OauthClient();
->>>>>>> laraxot/dev
 
         $genericAction = \typedMock(CreateGenericClientAction::class);
         $genericAction->allows(['execute' => $expectedClient]);
@@ -43,11 +36,7 @@ describe('Create specific passport client actions', function (): void {
     });
 
     it('delegates personal access client creation to generic action', function (): void {
-<<<<<<< HEAD
-        $expectedClient = new OauthClient;
-=======
         $expectedClient = new OauthClient();
->>>>>>> laraxot/dev
 
         $genericAction = \typedMock(CreateGenericClientAction::class);
         $genericAction->allows(['execute' => $expectedClient]);

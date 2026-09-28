@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  
@@ -403,10 +400,7 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
 - [Laraxot Widget Rules](./auth-widget-rules.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 
 ## 🎯 Conclusione
 

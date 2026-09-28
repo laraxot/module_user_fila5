@@ -11,10 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 ---
 # Regola Windsurf: Migrazioni XotBaseMigration
 
@@ -46,7 +43,4 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

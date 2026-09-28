@@ -11,10 +11,7 @@ related:
   - "./passport-actions.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Socialite Cluster Structure
 
 This document outlines the structure and organization of the **Socialite** cluster within the **User** module.

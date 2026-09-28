@@ -4,15 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
-use Livewire\Livewire;
-use Modules\User\Database\Factories\UserFactory;
-=======
-use Illuminate\Support\Facades\Schema;
->>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Tests\TestCase;

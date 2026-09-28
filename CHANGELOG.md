@@ -40,7 +40,4 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

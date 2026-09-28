@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement
 
 ## Data Intervento
@@ -238,8 +235,5 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [Migration Rules](../../../xot/docs/migrations-consolidated.md)
-<<<<<<< HEAD
-=======
 
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev

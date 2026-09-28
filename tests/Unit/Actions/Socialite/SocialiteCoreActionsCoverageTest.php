@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -71,16 +68,10 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-<<<<<<< HEAD
-    $driver = new class($oauthUser)
-    {
-        public function __construct(private SocialiteUserContract $oauthUser) {}
-=======
     $driver = new class($oauthUser) {
         public function __construct(private SocialiteUserContract $oauthUser)
         {
         }
->>>>>>> laraxot/dev
 
         public function user(): SocialiteUserContract
         {
@@ -100,20 +91,12 @@ test('retrieves oauth user from socialite driver', function (): void {
 });
 
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-<<<<<<< HEAD
-    $exception = new InvalidStateException;
-
-    $driver = new class($exception)
-    {
-        public function __construct(private InvalidStateException $exception) {}
-=======
     $exception = new InvalidStateException();
 
     $driver = new class($exception) {
         public function __construct(private InvalidStateException $exception)
         {
         }
->>>>>>> laraxot/dev
 
         public function user(): never
         {
@@ -125,11 +108,7 @@ test('returns null and dispatches invalid state event when socialite state is in
 
     $dispatcher = configureMock(Dispatcher::class, function (MockInterface $mock) use ($exception): void {
         $mock->allows([
-<<<<<<< HEAD
-            'dispatch' => function (object $event) use ($exception): void {
-=======
             'dispatch' => function (mixed $event) use ($exception): void {
->>>>>>> laraxot/dev
                 Assert::assertInstanceOf(InvalidState::class, $event);
                 Assert::assertSame($exception, $event->exception);
             },

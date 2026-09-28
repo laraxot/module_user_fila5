@@ -18,10 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Queueable Actions Best Practices
 
 ## Why Queueable Actions?

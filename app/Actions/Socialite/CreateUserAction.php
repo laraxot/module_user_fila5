@@ -1,18 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Database\Eloquent\Model;
@@ -32,14 +25,9 @@ class CreateUserAction
     /**
      * Execute the action to create a new user from socialite authentication.
      *
-<<<<<<< HEAD
-     * @param  string  $provider  The socialite provider name (e.g., 'github', 'google')
-     * @param  SocialiteUserContract  $oauthUser  The socialite user instance
-=======
      * @param string                $provider  The socialite provider name (e.g., 'github', 'google')
      * @param SocialiteUserContract $oauthUser The socialite user instance
      *
->>>>>>> laraxot/dev
      * @return UserContract The created user instance
      */
     public function execute(string $provider, SocialiteUserContract $oauthUser): UserContract

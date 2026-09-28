@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Case-Insensitive File Conflicts
 
 Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di maiuscole/minuscole:

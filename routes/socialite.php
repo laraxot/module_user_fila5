@@ -1,18 +1,9 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite/blob/main/routes/web.php
  */
-=======
-/**
- * @see https://github.com/DutchCodingCompany/filament-socialite/blob/main/routes/web.php
- */
-
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Route;
 
 Route::namespace('Socialite')

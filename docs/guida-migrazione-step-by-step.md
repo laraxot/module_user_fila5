@@ -18,10 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
 >>>>>>> 87273113 (.)
->>>>>>> laraxot/dev
 # Guida Migrazione Step-by-Step: Modulo User - Filament 4
 
 ## Panoramica Migrazione

@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Actions\User\GetNewPasswordAction;
 use Modules\User\Database\Factories\UserFactory;
@@ -40,11 +37,7 @@ describe('GetNewPasswordAction', function (): void {
         $firstHash = (string) $freshModel0->password;
 
         $refreshedUser = $user->fresh();
-<<<<<<< HEAD
-        if ($refreshedUser === null) {
-=======
         if (null === $refreshedUser) {
->>>>>>> laraxot/dev
             Assert::fail('User refresh failed.');
         }
         $secondPlain = app(GetNewPasswordAction::class)->execute($refreshedUser);

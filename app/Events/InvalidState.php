@@ -20,10 +20,6 @@ class InvalidState
      */
     public function __construct(
         public InvalidStateException $exception,
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> laraxot/dev
 }

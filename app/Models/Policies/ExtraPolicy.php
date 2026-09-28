@@ -14,11 +14,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.view.any');
-=======
         return $user->hasPermissionTo('extra.view.any');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -26,11 +22,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, Extra $_extra): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.view') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('extra.view') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -38,11 +30,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.create');
-=======
         return $user->hasPermissionTo('extra.create');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -50,11 +38,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, Extra $_extra): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.update') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('extra.update') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -62,11 +46,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, Extra $_extra): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('extra.delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -74,11 +54,7 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, Extra $_extra): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.restore') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('extra.restore') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -86,10 +62,6 @@ class ExtraPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, Extra $extra): bool
     {
-<<<<<<< HEAD
-        return $user->hasPermissionToOrCreate('extra.force-delete') || $user->hasRole('super-admin');
-=======
         return $user->hasPermissionTo('extra.force-delete') || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 }
