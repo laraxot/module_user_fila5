@@ -1,12 +1,4 @@
 ---
-title: "terms and conditions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "terms and conditions"
-issues: []
-discussions: []
 module: theme
 topic: terms-and-conditions
 canonical: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md

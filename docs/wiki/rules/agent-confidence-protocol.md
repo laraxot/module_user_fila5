@@ -1,12 +1,4 @@
 ---
-title: "agent confidence protocol"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agent confidence protocol"
-issues: []
-discussions: []
 name: agent-confidence-protocol
 description: Strategia operativa per massimizzare confidenza agentiva nel modulo User
 metadata:

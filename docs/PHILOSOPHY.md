@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User — Philosophy: The Identity Foundation"
 type: philosophy
 module: User

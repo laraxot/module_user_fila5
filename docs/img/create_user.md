@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "create user"
-issues: []
-discussions: []
 title: "create_user"
 type: source
 module: User

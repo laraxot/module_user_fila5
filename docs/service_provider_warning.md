@@ -1,7 +1,4 @@
 ---
-qmd: "service provider warning"
-issues: []
-discussions: []
 title: "service_provider_warning - User"
 module: user
 type: integration

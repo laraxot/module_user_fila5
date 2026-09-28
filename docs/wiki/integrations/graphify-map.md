@@ -1,7 +1,4 @@
 ---
-qmd: "graphify map"
-issues: []
-discussions: []
 title: "User Module — Mappa Graphify"
 module: user
 type: integration

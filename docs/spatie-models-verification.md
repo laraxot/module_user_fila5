@@ -1,12 +1,4 @@
 ---
-title: "spatie models verification"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "spatie models verification"
-issues: []
-discussions: []
 module: theme
 topic: spatie-models-verification
 canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-models-verification.md
+>>>>>>> 87273113 (.)

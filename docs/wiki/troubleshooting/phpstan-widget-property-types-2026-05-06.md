@@ -1,14 +1,3 @@
----
-title: "phpstan widget property types 2026 05 06"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan widget property types 2026 05 06"
-issues: []
-discussions: []
----
-
 # PHPStan widget property types
 
 ## Contesto

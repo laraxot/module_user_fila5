@@ -1,14 +1,3 @@
----
-title: "fullcalendar scheduler quick reference"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fullcalendar scheduler quick reference"
-issues: []
-discussions: []
----
-
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

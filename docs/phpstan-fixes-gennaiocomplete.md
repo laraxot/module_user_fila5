@@ -1,12 +1,4 @@
 ---
-title: "phpstan fixes gennaiocomplete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes gennaiocomplete"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-fixes-gennaiocomplete
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaiocomplete.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaiocomplete.md
+>>>>>>> 87273113 (.)

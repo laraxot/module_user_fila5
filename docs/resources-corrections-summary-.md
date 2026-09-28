@@ -1,14 +1,3 @@
----
-title: "resources corrections summary "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resources corrections summary "
-issues: []
-discussions: []
----
-
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo
@@ -167,14 +156,6 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 ---
-title: "resources corrections summary "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resources corrections summary "
-issues: []
-discussions: []
 module: theme
 topic: resources-corrections-summary-
 canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-.md

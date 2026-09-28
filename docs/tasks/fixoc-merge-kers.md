@@ -1,12 +1,4 @@
 ---
-title: "fixoc merge kers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fixoc merge kers"
-issues: []
-discussions: []
 module: theme
 topic: fixoc-merge-kers
 canonical: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
+>>>>>>> 87273113 (.)

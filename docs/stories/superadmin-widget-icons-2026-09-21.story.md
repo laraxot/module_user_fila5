@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "superadmin widget icons 2026 09 21.story"
-issues: []
-discussions: []
 id: superadmin-widget-icons-2026-09-21
 slug: superadmin-widget-icons-2026-09-21
 title: "SuperAdminWidget: icone piu' adeguate al posto di fas-chess-king ruotata"

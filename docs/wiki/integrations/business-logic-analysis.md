@@ -1,7 +1,4 @@
 ---
-qmd: "business logic analysis"
-issues: []
-discussions: []
 title: "User Module - Business Logic Analysis"
 module: user
 type: integration

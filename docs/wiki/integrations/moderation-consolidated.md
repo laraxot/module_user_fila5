@@ -1,7 +1,4 @@
 ---
-qmd: "moderation consolidated"
-issues: []
-discussions: []
 title: "moderation — Consolidated Documentation"
 module: user
 type: integration

@@ -1,12 +1,4 @@
 ---
-title: "migration violations current status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration violations current status"
-issues: []
-discussions: []
 module: theme
 topic: migration-violations-current-status
 canonical: ../../../Themes/docs/shared-components/migration-violations-current-status.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-current-status.md
+>>>>>>> 87273113 (.)

@@ -1,12 +1,4 @@
 ---
-title: "logout event"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout event"
-issues: []
-discussions: []
 module: theme
 topic: logout-event
 canonical: ../../../Themes/docs/shared-components/logout-event-error.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error.md
+>>>>>>> 87273113 (.)

@@ -1,14 +1,3 @@
----
-title: "volt blade implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt blade implementation error"
-issues: []
-discussions: []
----
-
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati

@@ -1,12 +1,4 @@
 ---
-title: "login issue resolution report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login issue resolution report"
-issues: []
-discussions: []
 module: theme
 topic: login-issue-resolution-report
 canonical: ../../../Themes/docs/shared-components/login-issue-resolution-report.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-issue-resolution-report.md
+>>>>>>> 87273113 (.)

@@ -1,12 +1,4 @@
 ---
-title: "gdpr"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gdpr"
-issues: []
-discussions: []
 module: theme
 topic: gdpr
 canonical: ../../../Themes/docs/shared-components/gdpr.txt
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/gdpr.txt
+>>>>>>> 87273113 (.)

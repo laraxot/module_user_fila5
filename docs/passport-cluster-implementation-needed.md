@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Passport Cluster - Implementazione Necessaria
 
 **Data**: 2025-01-22

@@ -1,14 +1,3 @@
----
-title: "logout page implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout page implementation"
-issues: []
-discussions: []
----
-
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta

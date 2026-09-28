@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'submit' => 'Konto erstellen',
-    'already_registered' => 'Sie haben bereits ein Konto?',
     'navigation' => [
         'label' => 'Registrazione',
         'group' => 'Gestione Utenti',
@@ -86,14 +84,10 @@ return [
         ],
     ],
     'fields' => [
-        'first_name' => [
-            'label' => 'Vorname',
-            'placeholder' => 'Geben Sie Ihren Vornamen ein',
-        ],
         'name' => [
-            'label' => 'Vorname',
-            'placeholder' => 'Geben Sie Ihren Vornamen ein',
-            'help' => 'Ihr Vorname',
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il tuo nome',
+            'help' => 'Il tuo nome di battesimo',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -107,25 +101,25 @@ return [
             'description' => '',
         ],
         'email' => [
-            'label' => 'E-Mail-Adresse',
-            'placeholder' => 'Geben Sie Ihre E-Mail-Adresse ein',
-            'help' => 'Gültige E-Mail-Adresse für die Anmeldung',
+            'label' => 'Email',
+            'placeholder' => 'Inserisci il tuo indirizzo email',
+            'help' => 'Indirizzo email valido che utilizzerai per accedere',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'password' => [
-            'label' => 'Passwort',
-            'placeholder' => 'Geben Sie ein sicheres Passwort ein',
-            'help' => 'Mindestens 8 Zeichen mit Buchstaben, Zahlen und Symbolen',
+            'label' => 'Password',
+            'placeholder' => 'Inserisci una password sicura',
+            'help' => 'Minimo 8 caratteri con lettere, numeri e simboli',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'password_confirmation' => [
-            'label' => 'Passwort bestätigen',
-            'placeholder' => 'Wiederholen Sie Ihr Passwort',
-            'help' => 'Geben Sie das Passwort erneut ein',
+            'label' => 'Conferma Password',
+            'placeholder' => 'Ripeti la password',
+            'help' => 'Inserisci nuovamente la password per confermarla',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -345,12 +339,12 @@ return [
     ],
     'actions' => [
         'register' => [
-            'label' => 'Registrieren',
-            'tooltip' => 'Registrierung abschließen',
-            'modal_heading' => 'Registrierung bestätigen',
-            'modal_description' => 'Möchten Sie die Registrierung mit den eingegebenen Daten abschließen?',
-            'success' => 'Registrierung erfolgreich abgeschlossen',
-            'error' => 'Bei der Registrierung ist ein Fehler aufgetreten',
+            'label' => 'Registrati',
+            'tooltip' => 'Completa la registrazione',
+            'modal_heading' => 'Conferma Registrazione',
+            'modal_description' => 'Confermi di voler completare la registrazione con i dati inseriti?',
+            'success' => 'Registrazione completata con successo',
+            'error' => 'Si è verificato un errore durante la registrazione',
         ],
         'previous' => [
             'label' => 'Precedente',

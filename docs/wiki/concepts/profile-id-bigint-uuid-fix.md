@@ -1,5 +1,4 @@
 ---
-discussions: []
 title: "User — profiles id bigint + uuid (fix 1364)"
 type: concept
 module: User

@@ -1,14 +1,3 @@
----
-title: "user gap analysis 2026.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user gap analysis 2026.story"
-issues: []
-discussions: []
----
-
 # Story — Gap analysis utente + clean-up fase 1 (2026-09-22)
 
 - **Epic**: USER-GAP-2026

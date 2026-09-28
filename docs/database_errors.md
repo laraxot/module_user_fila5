@@ -1,14 +1,3 @@
----
-title: "database errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database errors"
-issues: []
-discussions: []
----
-
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table

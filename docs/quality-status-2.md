@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality status 2"
-issues: []
-discussions: []
 title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08

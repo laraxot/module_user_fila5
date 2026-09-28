@@ -1,12 +1,4 @@
 ---
-title: "resource translation violation critical fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resource translation violation critical fix"
-issues: []
-discussions: []
 module: theme
 topic: resource-translation-violation-critical-fix
 canonical: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md
+>>>>>>> 87273113 (.)

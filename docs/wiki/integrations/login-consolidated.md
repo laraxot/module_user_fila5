@@ -1,7 +1,4 @@
 ---
-qmd: "login consolidated"
-issues: []
-discussions: []
 title: "login — Consolidated Documentation"
 module: user
 type: integration

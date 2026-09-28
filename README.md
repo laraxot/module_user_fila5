@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # 👤 User — chi sei, cosa puoi fare, per conto di chi
 
 [![Dominio](https://img.shields.io/badge/dominio-identit%C3%A0%20%26%20autorizzazione-1565C0.svg)](#)
@@ -25,14 +14,6 @@ discussions: []
 
 ---
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 ## Perché
 
 Tre domande, e non una di più: **chi sei**, **cosa puoi fare**, **per conto di chi**.

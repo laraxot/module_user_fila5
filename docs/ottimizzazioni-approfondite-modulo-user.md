@@ -1,12 +1,4 @@
 ---
-title: "ottimizzazioni approfondite modulo user"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ottimizzazioni approfondite modulo user"
-issues: []
-discussions: []
 module: theme
 topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+>>>>>>> 87273113 (.)

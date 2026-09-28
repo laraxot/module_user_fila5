@@ -1,7 +1,4 @@
 ---
-qmd: "resources consolidated"
-issues: []
-discussions: []
 title: "resources — Consolidated Documentation"
 module: user
 type: integration

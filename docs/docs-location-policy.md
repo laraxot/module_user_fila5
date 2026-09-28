@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Documentazione: Policy Posizione Docs (Modulo User)
 
 ## Regola

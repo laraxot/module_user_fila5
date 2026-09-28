@@ -1,12 +1,4 @@
 ---
-title: "membership uuid fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "membership uuid fix"
-issues: []
-discussions: []
 module: theme
 topic: membership-uuid-fix
 canonical: ../../../Themes/docs/shared-components/membership-uuid-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/membership-uuid-fix.md
+>>>>>>> 87273113 (.)

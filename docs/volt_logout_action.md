@@ -1,14 +1,3 @@
----
-title: "volt logout action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt logout action"
-issues: []
-discussions: []
----
-
 # Logout via Volt Action
 
 ## Contesto

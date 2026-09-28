@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution 2025 01 27"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution 2025 01 27"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -23,6 +12,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+>>>>>>> 87273113 (.)
 
 ## File Risolti
 
@@ -319,11 +309,3 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 --- 
-title: "git conflicts resolution 2025 01 27"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution 2025 01 27"
-issues: []
-discussions: []

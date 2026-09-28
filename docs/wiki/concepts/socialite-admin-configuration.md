@@ -1,7 +1,4 @@
 ---
-qmd: "socialite admin configuration"
-issues: []
-discussions: []
 title: "Socialite Admin Configuration - OAuth Provider Settings via Backoffice"
 type: concept
 confidence: high

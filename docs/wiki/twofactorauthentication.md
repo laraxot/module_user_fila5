@@ -1,12 +1,4 @@
 ---
-title: "twofactorauthentication"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "twofactorauthentication"
-issues: []
-discussions: []
 module: User
 concept: Two-Factor Authentication
 last_updated: 2026-04-15

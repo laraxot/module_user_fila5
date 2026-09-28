@@ -1,14 +1,3 @@
----
-title: "auth logout blade"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth logout blade"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati

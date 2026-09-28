@@ -1,12 +1,4 @@
 ---
-title: "packages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages"
-issues: []
-discussions: []
 module: theme
 topic: packages
 canonical: ../../../Themes/docs/shared-components/packages.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+>>>>>>> 87273113 (.)

@@ -1,7 +1,4 @@
 ---
-qmd: "project structure"
-issues: []
-discussions: []
 title: "Project Structure — Module User"
 type: documentation
 created: 2026-05-11

@@ -1,12 +1,4 @@
 ---
-title: "socialite"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "socialite"
-issues: []
-discussions: []
 module: theme
 topic: socialite
 canonical: ../../../Themes/docs/shared-components/socialite.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/socialite.md
+>>>>>>> 87273113 (.)

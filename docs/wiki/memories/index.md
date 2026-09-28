@@ -1,7 +1,4 @@
 ---
-qmd: "index"
-issues: []
-discussions: []
 title: "Memories Index"
 type: index
 created: 2026-05-11

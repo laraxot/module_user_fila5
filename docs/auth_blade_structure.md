@@ -1,14 +1,3 @@
----
-title: "auth blade structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth blade structure"
-issues: []
-discussions: []
----
-
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione

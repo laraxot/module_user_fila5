@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "duplicated profile form"
-issues: []
-discussions: []
 title: "Duplicated ProfileForm and OAuth Forms in User Module"
 type: redundancy
 owner: Modules/User

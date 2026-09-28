@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Commit & push dopo modifiche al modulo"
 type: rule
 tags: [git, workflow, user]

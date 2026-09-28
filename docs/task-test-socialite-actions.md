@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Task: Test Copertura Socialite Actions - User
 
 **Modulo**: User

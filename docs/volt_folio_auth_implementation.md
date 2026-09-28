@@ -1,14 +1,3 @@
----
-title: "volt folio auth implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio auth implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati

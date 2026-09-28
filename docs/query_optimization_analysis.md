@@ -1,14 +1,3 @@
----
-title: "query optimization analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "query optimization analysis"
-issues: []
-discussions: []
----
-
 # User Module - Query Optimization Analysis
 
 ## Overview
@@ -490,14 +479,6 @@ This optimization plan will transform the User module from a performance bottlen
 
 ---
 
-title: "query optimization analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "query optimization analysis"
-issues: []
-discussions: []
 ## Contenuto assorbito da `QUERY_OPTIMIZATION_ANALYSIS.md`
 
 # Documento unificato

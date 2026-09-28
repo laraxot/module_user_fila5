@@ -1,12 +1,4 @@
 ---
-title: "philosophy complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "philosophy complete"
-issues: []
-discussions: []
 module: theme
 topic: philosophy-complete
 canonical: ../../../Themes/docs/shared-components/philosophy-complete.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/philosophy-complete.md
+>>>>>>> 87273113 (.)

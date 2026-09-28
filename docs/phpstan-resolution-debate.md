@@ -1,12 +1,4 @@
 ---
-title: "phpstan resolution debate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan resolution debate"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-resolution-debate
 canonical: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md
+>>>>>>> 87273113 (.)

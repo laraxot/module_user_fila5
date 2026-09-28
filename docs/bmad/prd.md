@@ -1,14 +1,3 @@
----
-title: "prd"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "prd"
-issues: []
-discussions: []
----
-
 # User Module PRD (Product Requirements Document)
 
 **Status**: ✅ Finalized
@@ -152,13 +141,5 @@ The User module is the **foundational identity layer** for PTVX, providing authe
 
 ---
 
-title: "prd"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "prd"
-issues: []
-discussions: []
 *PRD generated via BMAD methodology*  
 *Next: Epics and Stories creation*

@@ -1,6 +1,4 @@
 ---
-qmd: "bugfix permission table names singular"
-discussions: []
 title: "Bugfix: spatie/laravel-permission table_names — config è fissa, mai modificarla"
 type: bugfix
 module: User

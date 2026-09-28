@@ -1,12 +1,4 @@
 ---
-title: "path conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "path conventions"
-issues: []
-discussions: []
 module: theme
 topic: path-conventions
 canonical: ../../../Themes/docs/shared-components/path-conventions.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/path-conventions.md
+>>>>>>> 87273113 (.)

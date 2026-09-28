@@ -1,12 +1,4 @@
 ---
-title: "fix paths.sh"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix paths.sh"
-issues: []
-discussions: []
 module: theme
 topic: fix-paths.sh
 canonical: ../../../../Themes/docs/shared-components/fix-paths.sh

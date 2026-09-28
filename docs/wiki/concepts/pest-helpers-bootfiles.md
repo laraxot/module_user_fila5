@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest helpers bootfiles"
-issues: []
-discussions: []
 title: Helper di dominio in tests/Helpers.php — niente require_once, niente tests/Support
 description: Come User è passato da 1264 a 84 errori PHPStan restituendo i 64 helper al file che Pest 5 carica da solo.
 document_type: concept

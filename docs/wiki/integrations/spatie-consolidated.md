@@ -1,7 +1,4 @@
 ---
-qmd: "spatie consolidated"
-issues: []
-discussions: []
 title: "spatie — Consolidated Documentation"
 module: user
 type: integration

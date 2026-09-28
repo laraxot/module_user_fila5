@@ -1,7 +1,4 @@
 ---
-qmd: "login invalid credentials copy rule"
-issues: []
-discussions: []
 title: "Login invalid credentials copy rule"
 type: concept
 confidence: high

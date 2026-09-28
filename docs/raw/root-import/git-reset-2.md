@@ -1,14 +1,3 @@
----
-title: "git reset 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git reset 2"
-issues: []
-discussions: []
----
-
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

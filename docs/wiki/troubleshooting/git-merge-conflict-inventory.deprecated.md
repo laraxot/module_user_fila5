@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "git-merge-conflict-inventory-2026-04-28.deprecated"
 type: concept
 tags: [deprecated]

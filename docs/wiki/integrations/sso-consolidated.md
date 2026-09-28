@@ -1,7 +1,4 @@
 ---
-qmd: "sso consolidated"
-issues: []
-discussions: []
 title: "sso — Consolidated Documentation"
 module: user
 type: integration

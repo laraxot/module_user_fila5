@@ -1,7 +1,4 @@
 ---
-qmd: "readme fullcalendar scheduler"
-issues: []
-discussions: []
 title: "FullCalendar Scheduler Documentation - README"
 module: user
 type: integration

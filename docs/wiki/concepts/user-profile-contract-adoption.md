@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User — UserContract / ProfileContract adoption"
 type: concept
 module: User

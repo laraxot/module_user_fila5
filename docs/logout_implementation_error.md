@@ -1,14 +1,3 @@
----
-title: "logout implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout implementation error"
-issues: []
-discussions: []
----
-
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati

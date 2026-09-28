@@ -1,14 +1,3 @@
----
-title: "PERFECTION AUDIT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PERFECTION AUDIT"
-issues: []
-discussions: []
----
-
 # Perfection Audit — User Module
 
 **Data**: 2026-09-01
@@ -17,14 +6,6 @@ discussions: []
 
 ---
 
-title: "PERFECTION AUDIT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PERFECTION AUDIT"
-issues: []
-discussions: []
 ## TL;DR
 
 User ha **1,465 file .md** (100% uppercase) con **48 stub vuoti**. Terzo modulo per bloat. Tutti i file violano `kebab-case.md`.

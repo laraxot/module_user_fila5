@@ -1,12 +1,4 @@
 ---
-title: "two factor 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "two factor 2"
-issues: []
-discussions: []
 module: theme
 topic: two_factor
 canonical: ../../../Themes/docs/shared-components/two_factor.txt

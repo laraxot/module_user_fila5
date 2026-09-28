@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Internal Analysis: Migration Philosophy Approaches
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

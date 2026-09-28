@@ -1,7 +1,4 @@
 ---
-qmd: "model consolidated"
-issues: []
-discussions: []
 title: "model — Consolidated Documentation"
 module: user
 type: integration

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "parse-error-orphan-methods-2025-01-27.deprecated"
 type: concept
 tags: [deprecated]

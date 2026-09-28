@@ -1,14 +1,3 @@
----
-title: "cross database relations issue"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cross database relations issue"
-issues: []
-discussions: []
----
-
 # Cross Database Relations Issue - belongsToManyX SQLite Problem
 
 ## Problema Identificato

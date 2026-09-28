@@ -1,12 +1,4 @@
 ---
-title: "widgets structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widgets structure"
-issues: []
-discussions: []
 module: theme
 topic: widgets-structure
 canonical: ../../../Themes/docs/shared-components/widgets-structure.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
+>>>>>>> 87273113 (.)

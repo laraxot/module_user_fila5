@@ -1,14 +1,3 @@
----
-title: "bugfix profile uuid id missing default"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bugfix profile uuid id missing default"
-issues: []
-discussions: []
----
-
 # Bugfix — Profile `firstOrCreate()` fatal: "Field 'id' doesn't have a default value"
 
 ## Sintomo (produzione, 2026-07-27)

@@ -1,12 +1,4 @@
 ---
-title: "livewire filament parameter passing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire filament parameter passing"
-issues: []
-discussions: []
 module: theme
 topic: livewire-filament-parameter-passing
 canonical: ../../../Themes/docs/shared-components/livewire-filament-parameter-passing.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-filament-parameter-passing.md
+>>>>>>> 87273113 (.)

@@ -1,14 +1,3 @@
----
-title: "CHANGELOG"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CHANGELOG"
-issues: []
-discussions: []
----
-
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.
@@ -51,3 +40,4 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
+>>>>>>> 87273113 (.)

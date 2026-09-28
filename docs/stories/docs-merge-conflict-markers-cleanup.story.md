@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "docs merge conflict markers cleanup.story"
-issues: []
-discussions: []
 title: "User: marker di conflitto git residui in docs/ (866 file) — pulizia + aggiornamento indice"
 type: story
 module: User

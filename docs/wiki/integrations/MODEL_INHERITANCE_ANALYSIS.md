@@ -1,7 +1,4 @@
 ---
-qmd: "MODEL INHERITANCE ANALYSIS"
-issues: []
-discussions: []
 title: "Analisi Ereditarietà Modelli - Modulo User"
 module: user
 type: integration

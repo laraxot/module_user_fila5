@@ -1,7 +1,4 @@
 ---
-qmd: "filament widget no validate form"
-issues: []
-discussions: []
 title: "Filament register widget — getState and userClass create"
 type: concept
 sources:

@@ -1,14 +1,3 @@
----
-title: "epics"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "epics"
-issues: []
-discussions: []
----
-
 # User Module — Epics for Perfection
 
 **Status**: ✅ Finalized
@@ -44,14 +33,6 @@ discussions: []
 
 ---
 
-title: "epics"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "epics"
-issues: []
-discussions: []
 ### Epic 2: Quality Tooling Restoration (P0 - Critical)
 **Goal**: Make PHPMD, PHPInsights, and test suite fully functional
 **Priority**: P0 — Required for quality gates

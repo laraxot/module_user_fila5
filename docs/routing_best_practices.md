@@ -1,7 +1,4 @@
 ---
-qmd: "routing best practices"
-issues: []
-discussions: []
 title: "Best Practices per il Routing in Architettura Volt + Folio + Filament"
 module: user
 type: integration

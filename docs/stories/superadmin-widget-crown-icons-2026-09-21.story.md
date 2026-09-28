@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "superadmin widget crown icons 2026 09 21.story"
-issues: []
-discussions: []
 id: superadmin-widget-crown-icons-2026-09-21
 slug: superadmin-widget-crown-icons-2026-09-21
 title: "SuperAdminWidget: icone corona custom + fix bug @svg() nome icona invalido"

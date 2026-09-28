@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable model audit batch user oauth.story"
-issues: []
-discussions: []
 title: "Audit $model + schema colonne su 13 XotBaseResourceTable (OAuth/Passport/Permission)"
 type: story
 module: User

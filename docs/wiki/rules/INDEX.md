@@ -1,7 +1,4 @@
 ---
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "Rules Index"
 type: index
 created: 2026-05-11

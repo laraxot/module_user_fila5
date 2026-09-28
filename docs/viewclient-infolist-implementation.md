@@ -1,12 +1,4 @@
 ---
-title: "viewclient infolist implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "viewclient infolist implementation"
-issues: []
-discussions: []
 module: theme
 topic: viewclient-infolist-implementation
 canonical: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
+>>>>>>> 87273113 (.)

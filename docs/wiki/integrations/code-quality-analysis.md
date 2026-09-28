@@ -1,7 +1,4 @@
 ---
-qmd: "code quality analysis"
-issues: []
-discussions: []
 title: "Code Quality Analysis - User Module"
 module: user
 type: integration

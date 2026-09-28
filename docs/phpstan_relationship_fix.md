@@ -1,14 +1,3 @@
----
-title: "phpstan relationship fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan relationship fix"
-issues: []
-discussions: []
----
-
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto

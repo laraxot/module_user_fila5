@@ -1,14 +1,3 @@
----
-title: "registration widget fileupload fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "registration widget fileupload fix"
-issues: []
-discussions: []
----
-
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

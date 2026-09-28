@@ -1,14 +1,3 @@
----
-title: "moderation wizard generic"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "moderation wizard generic"
-issues: []
-discussions: []
----
-
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa
@@ -89,14 +78,6 @@ class ApproveUserAction {
 
 ---
 
-title: "moderation wizard generic"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "moderation wizard generic"
-issues: []
-discussions: []
 **Nota:**
 - Tutte le label, i messaggi e le notifiche devono essere localizzati e privi di riferimenti hard-coded a domini specifici.
 - La documentazione e gli esempi devono essere neutrali e riutilizzabili in qualsiasi progetto che utilizza il modulo User. 

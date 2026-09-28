@@ -1,12 +1,4 @@
 ---
-title: "migration consolidation plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration consolidation plan"
-issues: []
-discussions: []
 module: theme
 topic: migration-consolidation-plan
 canonical: ../../../Themes/docs/shared-components/migration-consolidation-plan.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-plan.md
+>>>>>>> 87273113 (.)

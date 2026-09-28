@@ -1,12 +1,4 @@
 ---
-title: "relazioni utenti team"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "relazioni utenti team"
-issues: []
-discussions: []
 description:
 globs:
 alwaysApply: false
@@ -19,6 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+>>>>>>> 87273113 (.)
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -34,6 +27,7 @@ Questa documentazione descrive la relazione many-to-many tra utenti e team nel m
 
 ## Collegamenti
 - [Documentazione generale sulle migrazioni](mdc:../../../../docs/database-migrations.md)
+>>>>>>> 87273113 (.)
 - [Best practice XotBaseMigration](mdc:../../xot/docs/migrations.md)
 
 ---

@@ -1,12 +1,4 @@
 ---
-title: "translation resolution prototype"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation resolution prototype"
-issues: []
-discussions: []
 module: theme
 topic: translation-resolution-prototype
 canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
+>>>>>>> 87273113 (.)

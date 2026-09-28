@@ -1,7 +1,4 @@
 ---
-qmd: "WIDGET RENDERING ANALYSIS"
-issues: []
-discussions: []
 title: "Analisi Rendering LoginWidget - Docs.Italia.it Style"
 module: user
 type: integration

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Parita' Forms/Components ↔ Tables/Columns"
 type: rule
 tags: [filament, forms, columns, parity, user]

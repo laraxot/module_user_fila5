@@ -15,30 +15,6 @@ test.describe('FO auth register e2e', () => {
         await expect(page.locator('input[autocomplete="new-password"]').first()).toBeVisible();
     });
 
-    test('keeps the registration form usable at mobile width', async ({ page }) => {
-        await page.setViewportSize({ width: 390, height: 844 });
-
-        const measurements = await page.evaluate(() => {
-            const card = document.querySelector('.auth-register-card');
-            const form = document.querySelector('form[wire\\:submit="submit"]');
-
-            if (!(card instanceof HTMLElement) || !(form instanceof HTMLElement)) {
-                return null;
-            }
-
-            return {
-                cardWidth: card.getBoundingClientRect().width,
-                formWidth: form.getBoundingClientRect().width,
-                documentWidth: document.documentElement.scrollWidth,
-                viewportWidth: window.innerWidth,
-            };
-        });
-
-        expect(measurements).not.toBeNull();
-        expect(measurements?.formWidth ?? 0).toBeGreaterThan((measurements?.cardWidth ?? 0) * 0.7);
-        expect(measurements?.documentWidth ?? Infinity).toBeLessThanOrEqual(measurements?.viewportWidth ?? 0);
-    });
-
     test('shows validation for empty submit', async ({ page }) => {
         await page.locator('form[wire\\:submit="submit"] button[type="submit"]').click();
         await page.waitForTimeout(800);

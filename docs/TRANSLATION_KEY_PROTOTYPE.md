@@ -1,7 +1,4 @@
 ---
-qmd: "TRANSLATION KEY PROTOTYPE"
-issues: []
-discussions: []
 title: "TRANSLATION KEY PROTOTYPE"
 module: user
 type: integration

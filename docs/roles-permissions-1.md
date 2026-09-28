@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

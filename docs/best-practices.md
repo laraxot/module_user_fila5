@@ -1,12 +1,4 @@
 ---
-title: "best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "best practices"
-issues: []
-discussions: []
 description:
 globs:
 alwaysApply: false
@@ -19,6 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+>>>>>>> 87273113 (.)
 ---
 # Best Practices Migrazioni XotBaseMigration
 
@@ -77,6 +70,7 @@ public function addMember(Team $team, User $user)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Testing](mdc:testing.md)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
+>>>>>>> 87273113 (.)
 
 ## Migration modulari: path corretto obbligatorio
 
@@ -102,3 +96,4 @@ public function addMember(Team $team, User $user)
 - Tutte le migration devono essere nella cartella `database/migrations` del modulo di riferimento.
 - Mai mettere migration custom in `laravel/database/migrations`.
 - Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path-conventions-2.md).
+>>>>>>> 87273113 (.)

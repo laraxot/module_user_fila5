@@ -1,14 +1,3 @@
----
-title: "changelog 8"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "changelog 8"
-issues: []
-discussions: []
----
-
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

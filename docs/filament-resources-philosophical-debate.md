@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Filament Resources: Furious Philosophical Debate
 
 ## Data: 2025-01-02
@@ -232,4 +233,5 @@ vs
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> 87273113 (.)
 - [Filament Best Practices](./filament-best-practices.md)

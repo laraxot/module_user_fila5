@@ -1,12 +1,4 @@
 ---
-title: "resources array keys philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resources array keys philosophy"
-issues: []
-discussions: []
 module: theme
 topic: resources-array-keys-philosophy
 canonical: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
+>>>>>>> 87273113 (.)

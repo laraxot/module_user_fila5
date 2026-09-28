@@ -1,12 +1,4 @@
 ---
-title: "migration consolidation philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration consolidation philosophy"
-issues: []
-discussions: []
 module: theme
 topic: migration-consolidation-philosophy
 canonical: ../../../Themes/docs/shared-components/migration-consolidation-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-philosophy.md
+>>>>>>> 87273113 (.)

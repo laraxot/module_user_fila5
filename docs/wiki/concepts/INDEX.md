@@ -1,7 +1,4 @@
 ---
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "concepts index — User"
 type: index
 tags: [concepts, User]

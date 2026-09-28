@@ -1,12 +1,4 @@
 ---
-title: "index 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index 2"
-issues: []
-discussions: []
 module: theme
 topic: index-2
 canonical: ../../../Themes/docs/shared-components/00-index-Modules.md

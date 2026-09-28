@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "continuation 2026 09 11.story"
-issues: []
-discussions: []
 id: story-continuation-user-module
 title: "User Module — Table Audit and $model Property"
 type: continuation

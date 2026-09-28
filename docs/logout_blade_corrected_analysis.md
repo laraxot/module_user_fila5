@@ -1,14 +1,3 @@
----
-title: "logout blade corrected analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade corrected analysis"
-issues: []
-discussions: []
----
-
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati

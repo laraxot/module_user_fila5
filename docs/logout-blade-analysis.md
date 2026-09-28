@@ -1,14 +1,3 @@
----
-title: "logout blade analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade analysis"
-issues: []
-discussions: []
----
-
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
@@ -452,14 +441,6 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
 ---
-title: "logout blade analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade analysis"
-issues: []
-discussions: []
 module: theme
 topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "translation-city-field-refactor-2025-08-08"
 type: concept
 tags: [deprecated]

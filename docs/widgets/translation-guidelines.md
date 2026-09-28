@@ -14,6 +14,7 @@ related:
   - "./translationlines.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Widget Translation Guidelines
 
 ## Overview
@@ -118,6 +119,7 @@ TextInput::make('name')->label('Name')->placeholder('Enter name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 ```
+>>>>>>> 87273113 (.)
 ### Translation Key Usage
 // ✅ CORRECT - Use translation keys for options
 Select::make('lang')
@@ -167,6 +169,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 - [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> 87273113 (.)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

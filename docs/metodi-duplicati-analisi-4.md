@@ -1,11 +1,4 @@
 ---
-title: "metodi duplicati analisi 4"
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "metodi duplicati analisi 4"
-issues: []
-discussions: []
 module: User
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]

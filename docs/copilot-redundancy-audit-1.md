@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "copilot-redundancy-audit-2026-05-25"
 type: concept
 tags: [deprecated]

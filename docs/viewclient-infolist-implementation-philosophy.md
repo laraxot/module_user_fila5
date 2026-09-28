@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Internal Analysis: Approaches to ViewClient Infolist Implementation
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

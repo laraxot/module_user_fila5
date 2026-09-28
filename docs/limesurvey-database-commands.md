@@ -1,12 +1,4 @@
 ---
-title: "limesurvey database commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "limesurvey database commands"
-issues: []
-discussions: []
 module: theme
 topic: limesurvey-database-commands
 canonical: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
+>>>>>>> 87273113 (.)

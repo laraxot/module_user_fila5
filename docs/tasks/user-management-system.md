@@ -1,12 +1,4 @@
 ---
-title: "user management system"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user management system"
-issues: []
-discussions: []
 module: theme
 topic: user-management-system
 canonical: ../../../../Themes/docs/shared-components/001-user-management-system.md

@@ -1,7 +1,4 @@
 ---
-qmd: "user moderation strategy"
-issues: []
-discussions: []
 title: "User Moderation Strategy"
 module: user
 type: product

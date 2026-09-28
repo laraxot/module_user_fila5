@@ -1,14 +1,3 @@
----
-title: "phpstan roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan roadmap"
-issues: []
-discussions: []
----
-
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12
@@ -68,14 +57,6 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 - Clean up legacy documentation files to reduce clutter.
 - Maintain 0 errors.
 ---
-title: "phpstan roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan roadmap"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-roadmap
 canonical: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md

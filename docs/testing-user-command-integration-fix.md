@@ -1,12 +1,4 @@
 ---
-title: "testing user command integration fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing user command integration fix"
-issues: []
-discussions: []
 module: theme
 topic: testing-user-command-integration-fix
 canonical: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
+>>>>>>> 87273113 (.)

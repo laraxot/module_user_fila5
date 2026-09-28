@@ -1,14 +1,3 @@
----
-title: "generic user moderation strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "generic user moderation strategy"
-issues: []
-discussions: []
----
-
 # Generic User Moderation Strategy in User Module
 
 ## Overview

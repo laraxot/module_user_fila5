@@ -1,14 +1,3 @@
----
-title: "avatar implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "avatar implementation"
-issues: []
-discussions: []
----
-
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati

@@ -1,12 +1,4 @@
 ---
-title: "optimization analysis 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "optimization analysis 2"
-issues: []
-discussions: []
 module: theme
 topic: optimization_analysis
 canonical: ../../../Themes/docs/shared-components/optimization-analysis-2.md

@@ -18,11 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
 
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+>>>>>>> 87273113 (.)
 
 ## Conflitti Risolti
 
@@ -60,6 +62,7 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 
 #### Motivazione
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> 87273113 (.)
 
 ### 3. Dichiarazione strict_types
 
@@ -71,6 +74,7 @@ Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti
 
 #### Motivazione
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
+>>>>>>> 87273113 (.)
 
 ## Impatto delle Modifiche
 
@@ -160,3 +164,4 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)
 - [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
+>>>>>>> 87273113 (.)

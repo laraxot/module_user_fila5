@@ -1,8 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "phpstan user relations"
-issues: []
-discussions: []
 title: PHPStan User Relations
 type: note
 status: active

@@ -1,7 +1,4 @@
 ---
-qmd: "fullcalendar consolidated"
-issues: []
-discussions: []
 title: "fullcalendar — Consolidated Documentation"
 module: user
 type: integration

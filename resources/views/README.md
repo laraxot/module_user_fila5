@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Tema One per il progetto
 
 ## Introduzione
@@ -217,3 +206,4 @@ Assicurati che i nomi dei parametri nel database corrispondano a quelli attesi d
 Per assistenza tecnica, contattare:
 - Email: support@<nome progetto>.com
 - Documentazione: https://docs.<nome progetto>.com
+>>>>>>> 87273113 (.)

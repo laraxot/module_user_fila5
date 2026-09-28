@@ -1,14 +1,3 @@
----
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
----
-
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -258,14 +247,6 @@ Modules/User/
 
 ---
 
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
@@ -500,6 +481,7 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
+>>>>>>> 87273113 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

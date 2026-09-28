@@ -1,14 +1,3 @@
----
-title: "code quality analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality analysis"
-issues: []
-discussions: []
----
-
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -326,14 +315,6 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ---
 
-title: "code quality analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality analysis"
-issues: []
-discussions: []
 ## Contenuto assorbito da `CODE_QUALITY_ANALYSIS.md`
 
 # Documento unificato

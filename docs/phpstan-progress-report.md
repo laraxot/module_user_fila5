@@ -1,12 +1,4 @@
 ---
-title: "phpstan progress report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan progress report"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-progress-report
 canonical: ../../../Themes/docs/shared-components/phpstan-progress-report.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md
+>>>>>>> 87273113 (.)

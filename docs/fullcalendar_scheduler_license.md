@@ -1,14 +1,3 @@
----
-title: "fullcalendar scheduler license"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fullcalendar scheduler license"
-issues: []
-discussions: []
----
-
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

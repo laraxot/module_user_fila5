@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "user architecture sources"
-issues: []
-discussions: []
 title: "User Architecture Sources"
 module: "User"
 type: source

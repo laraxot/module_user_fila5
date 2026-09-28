@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table
@@ -52,3 +53,4 @@ related:
 - [Xot Module Database Guidelines](../../../Modules/Xot/docs/DATABASE_GUIDELINES.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+>>>>>>> 87273113 (.)

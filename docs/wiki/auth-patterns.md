@@ -1,8 +1,4 @@
 ---
-created: 2026-09-26
-updated: 2026-09-26
-issues: []
-discussions: []
 title: "User Module - Authentication Patterns"
 type: "patterns"
 tags: ["user", "auth", "roles", "permissions"]

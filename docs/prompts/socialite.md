@@ -1,7 +1,4 @@
 ---
-qmd: "socialite"
-issues: []
-discussions: []
 title: 'Socialite — risorse esterne'
 module: User
 type: reference

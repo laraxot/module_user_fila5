@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roles teams scoping disabled by override"
-issues: []
-discussions: []
 id: story-user-roles-teams-scoping-disabled-by-override
 slug: roles-teams-scoping-disabled-by-override
 title: "Story: il team scoping dei ruoli e' disattivato da un override di roles()"

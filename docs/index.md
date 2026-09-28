@@ -1,14 +1,3 @@
----
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
----
-
 # Documentation Index
 
 ## -integration
@@ -3428,3 +3417,5 @@ discussions: []
 - [phpstan-widget-property-types-2026-05-06.deprecated.md](./wiki/troubleshooting/phpstan-widget-property-types-2026-05-06.deprecated.md)
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
+
+>>>>>>> 87273113 (.)

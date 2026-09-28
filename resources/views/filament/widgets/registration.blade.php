@@ -12,7 +12,7 @@ declare(strict_types=1);
                 type="submit"
                 class="w-full mt-6"
             >
-                {{ __('user::registration.actions.register.label') }}
+                Registrati
             </x-filament::button>
         </form>
     </x-filament::section>

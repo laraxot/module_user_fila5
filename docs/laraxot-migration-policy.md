@@ -1,7 +1,4 @@
 ---
-qmd: "laraxot migration policy"
-issues: []
-discussions: []
 title: "Laraxot Migration Policy - User Module"
 module: "User"
 type: "rule"
@@ -109,3 +106,4 @@ Storicamente esistevano anche `add_owner_id_to_teams_table.php` e duplicati `cre
 - [Migration Philosophy — progetto](../../../../docs/database/migrations-philosophy.md)
 - [Migration Conventions — Xot](../Xot/docs/migration-conventions.md)
 - [XotBaseMigration source](../../Xot/app/Database/Migrations/XotBaseMigration.php)
+>>>>>>> 87273113 (.)

@@ -1,14 +1,3 @@
----
-title: "legacy roadmap ands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap ands"
-issues: []
-discussions: []
----
-
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "legacy roadmap ands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap ands"
-issues: []
-discussions: []
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 85%

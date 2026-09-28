@@ -1,14 +1,3 @@
----
-title: "namespace conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace conventions"
-issues: []
-discussions: []
----
-
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -204,14 +193,6 @@ Se l'override del tema non funziona:
 
 ---
 
-title: "namespace conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace conventions"
-issues: []
-discussions: []
 *Documento creato: Dicembre 2024*
 *Ultimo aggiornamento: Dicembre 2024*
 

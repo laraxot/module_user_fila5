@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -49,6 +50,7 @@ docs/
 ├── user_management/
 │   ├── crud_operations.md
 │   ├── profile-management-2.md
+>>>>>>> 87273113 (.)
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -61,6 +63,7 @@ docs/
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
 │   └── two-factor-2.md
+>>>>>>> 87273113 (.)
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

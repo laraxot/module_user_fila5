@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -165,3 +166,4 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module-structure-2.md) 
+>>>>>>> 87273113 (.)

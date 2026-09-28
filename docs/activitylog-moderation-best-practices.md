@@ -1,12 +1,4 @@
 ---
-title: "activitylog moderation best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "activitylog moderation best practices"
-issues: []
-discussions: []
 description:
 globs:
 alwaysApply: false
@@ -19,6 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+>>>>>>> 87273113 (.)
 ---
 # Best Practice: ActivityLog per la Moderazione Utenti
 

@@ -1,12 +1,4 @@
 ---
-title: "loginwidget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "loginwidget"
-issues: []
-discussions: []
 module: theme
 topic: loginwidget
 canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+>>>>>>> 87273113 (.)

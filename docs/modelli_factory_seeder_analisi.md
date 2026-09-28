@@ -1,14 +1,3 @@
----
-title: "modelli factory seeder analisi"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modelli factory seeder analisi"
-issues: []
-discussions: []
----
-
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica

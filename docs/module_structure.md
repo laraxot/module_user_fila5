@@ -1,7 +1,4 @@
 ---
-qmd: "module structure"
-issues: []
-discussions: []
 title: "module_structure - User"
 module: user
 type: integration

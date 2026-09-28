@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "filament ux brainstorming"
-issues: []
-discussions: []
 title: "Brainstorming — Audit UI/Filament modulo User (epic 12)"
 type: brainstorming
 module: User

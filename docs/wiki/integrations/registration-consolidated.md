@@ -1,7 +1,4 @@
 ---
-qmd: "registration consolidated"
-issues: []
-discussions: []
 title: "registration — Consolidated Documentation"
 module: user
 type: integration

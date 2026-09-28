@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'submit' => 'Create account',
-    'already_registered' => 'Already have an account?',
     'fields' => [
         'first_name' => [
             'label' => 'First Name',

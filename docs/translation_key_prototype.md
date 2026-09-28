@@ -1,14 +1,3 @@
----
-title: "translation key prototype"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation key prototype"
-issues: []
-discussions: []
----
-
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'

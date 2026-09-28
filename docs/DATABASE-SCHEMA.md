@@ -1,7 +1,4 @@
 ---
-qmd: "DATABASE SCHEMA"
-issues: []
-discussions: []
 title: "User Module Database Schema"
 type: reference
 tags: [user, database, schema]

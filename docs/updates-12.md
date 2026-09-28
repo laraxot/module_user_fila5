@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module Updates - December 2025
 
 ## Refactoring Translations

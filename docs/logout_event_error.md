@@ -1,14 +1,3 @@
----
-title: "logout event error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout event error"
-issues: []
-discussions: []
----
-
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati

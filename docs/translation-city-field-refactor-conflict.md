@@ -1,12 +1,4 @@
 ---
-title: "translation city field refactor conflict"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation city field refactor conflict"
-issues: []
-discussions: []
 module: theme
 topic: translation-city-field-refactor-conflict
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
+>>>>>>> 87273113 (.)

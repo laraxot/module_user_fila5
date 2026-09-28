@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "git-conflicts-resolution-2025-01-27.deprecated"
 type: concept
 tags: [deprecated]

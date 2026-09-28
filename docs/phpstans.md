@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Filosofia Laraxot: Risoluzione Errori PHPStan
 
 **Data Creazione**: [DATE]

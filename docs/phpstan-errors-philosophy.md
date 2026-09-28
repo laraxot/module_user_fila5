@@ -1,12 +1,4 @@
 ---
-title: "phpstan errors philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors philosophy"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-errors-philosophy
 canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
+>>>>>>> 87273113 (.)

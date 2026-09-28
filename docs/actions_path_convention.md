@@ -1,14 +1,3 @@
----
-title: "actions path convention"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "actions path convention"
-issues: []
-discussions: []
----
-
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale

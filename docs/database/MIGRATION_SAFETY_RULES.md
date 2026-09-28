@@ -1,14 +1,3 @@
----
-title: "MIGRATION SAFETY RULES"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MIGRATION SAFETY RULES"
-issues: []
-discussions: []
----
-
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA
@@ -33,14 +22,6 @@ discussions: []
 
 ---
 
-title: "MIGRATION SAFETY RULES"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MIGRATION SAFETY RULES"
-issues: []
-discussions: []
 ## La Filosofia (Why)
 
 ### 1. Data Preservation Principle

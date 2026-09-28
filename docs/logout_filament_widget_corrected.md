@@ -1,14 +1,3 @@
----
-title: "logout filament widget corrected"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout filament widget corrected"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati

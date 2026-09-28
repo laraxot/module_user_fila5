@@ -1,14 +1,3 @@
----
-title: "volt errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt errors"
-issues: []
-discussions: []
----
-
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException

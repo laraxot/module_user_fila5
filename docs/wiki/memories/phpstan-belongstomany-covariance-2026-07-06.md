@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "PHPStan BelongsToMany covarianza — HasTeams / UserContract"
 type: memory
 module: User

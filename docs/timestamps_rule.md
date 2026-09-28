@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User Module Timestamps Rule"
 type: rule
 tags: [timestamps, dry-kiss, migration, user-module]

@@ -1,12 +1,4 @@
 ---
-title: "oauth cluster decision making"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "oauth cluster decision making"
-issues: []
-discussions: []
 module: theme
 topic: oauth-cluster-decision-making
 canonical: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+>>>>>>> 87273113 (.)

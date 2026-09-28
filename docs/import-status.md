@@ -1,14 +1,3 @@
----
-title: "import status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "import status"
-issues: []
-discussions: []
----
-
 
 ## Fix base 2026-08-30 — proprietà `$pivot` che oscurava la relation pivot
 

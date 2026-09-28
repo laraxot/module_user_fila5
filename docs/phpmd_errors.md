@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpmd errors"
-issues: []
-discussions: []
 title: "Phpmd errors"
 type: reference
 status: active

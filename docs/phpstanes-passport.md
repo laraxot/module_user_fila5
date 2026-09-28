@@ -1,12 +1,4 @@
 ---
-title: "phpstanes passport"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstanes passport"
-issues: []
-discussions: []
 module: theme
 topic: phpstanes-passport
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
+>>>>>>> 87273113 (.)

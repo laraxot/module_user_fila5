@@ -1,14 +1,3 @@
----
-title: "git conflicts resolution 2025 01 27"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution 2025 01 27"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -319,11 +308,3 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 --- 
-title: "git conflicts resolution 2025 01 27"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "git conflicts resolution 2025 01 27"
-issues: []
-discussions: []

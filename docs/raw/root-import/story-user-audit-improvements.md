@@ -1,14 +1,3 @@
----
-title: "story user audit improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "story user audit improvements"
-issues: []
-discussions: []
----
-
 # BMAD Story: User Module Audit Improvements
 
 **Story ID**: USER-2026-AUDIT-001  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "story user audit improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "story user audit improvements"
-issues: []
-discussions: []
 ## Title
 **User module audit improvements: fix critical architecture and performance issues**
 

@@ -1,12 +1,4 @@
 ---
-title: "json"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "json"
-issues: []
-discussions: []
 module: theme
 topic: json
 canonical: ../../../Themes/docs/shared-components/json.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/json.md
+>>>>>>> 87273113 (.)

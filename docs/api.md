@@ -1,7 +1,4 @@
 ---
-qmd: "api"
-issues: []
-discussions: []
 title: "User Module API Reference"
 type: reference
 tags: [user, api, actions]

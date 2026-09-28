@@ -1,12 +1,4 @@
 ---
-title: "service provider warning"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "service provider warning"
-issues: []
-discussions: []
 module: theme
 topic: service-provider-warning
 canonical: ../../../Themes/docs/shared-components/service-provider-warning.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
+>>>>>>> 87273113 (.)

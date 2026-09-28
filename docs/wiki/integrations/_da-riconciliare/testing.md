@@ -1,7 +1,4 @@
 ---
-qmd: "testing"
-issues: []
-discussions: []
 title: "User Module Testing"
 type: guide
 tags: [user, testing, pest]

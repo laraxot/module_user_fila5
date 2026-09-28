@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "oauth dual resource trees"
-discussions: []
 title: "Alberi Filament OAuth duplicati (Passport + Socialite)"
 type: redundancy
 owner: Modules/User

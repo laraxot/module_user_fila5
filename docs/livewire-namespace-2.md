@@ -1,12 +1,4 @@
 ---
-title: "livewire namespace 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire namespace 2"
-issues: []
-discussions: []
 module: theme
 topic: livewire_namespace
 canonical: ../../../Themes/docs/shared-components/livewire-namespace.md

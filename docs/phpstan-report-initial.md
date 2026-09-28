@@ -1,12 +1,4 @@
 ---
-title: "phpstan report initial"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan report initial"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-report-initial
 canonical: ../../../Themes/docs/shared-components/phpstan_report.txt
@@ -24,3 +16,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
 
  [OK] No errors        
+
+>>>>>>> 87273113 (.)

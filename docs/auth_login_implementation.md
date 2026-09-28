@@ -1,14 +1,3 @@
----
-title: "auth login implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth login implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta della Pagina di Login 
 
 ## Collegamenti correlati

@@ -1,12 +1,4 @@
 ---
-title: "gits resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gits resolution"
-issues: []
-discussions: []
 module: theme
 topic: gits-resolution
 canonical: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
+>>>>>>> 87273113 (.)

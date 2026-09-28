@@ -1,14 +1,3 @@
----
-title: "database issues"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database issues"
-issues: []
-discussions: []
----
-
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table

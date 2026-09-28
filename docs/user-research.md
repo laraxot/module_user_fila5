@@ -1,7 +1,4 @@
 ---
-qmd: "user research"
-issues: []
-discussions: []
 title: "User Module - User Research"
 module: user
 type: integration

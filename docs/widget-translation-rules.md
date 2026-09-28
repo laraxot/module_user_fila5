@@ -1,14 +1,3 @@
----
-title: "widget translation rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget translation rules"
-issues: []
-discussions: []
----
-
 # Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
@@ -360,14 +349,6 @@ This document serves as a reference for:
 
 All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
 ---
-title: "widget translation rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget translation rules"
-issues: []
-discussions: []
 module: theme
 topic: widget-translation-rules
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "phpstan-dry-kiss-improvements-2025-10-17"
 type: concept
 tags: [deprecated]

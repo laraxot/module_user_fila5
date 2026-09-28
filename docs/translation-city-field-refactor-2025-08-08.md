@@ -1,14 +1,3 @@
----
-title: "translation city field refactor 2025 08 08"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation city field refactor 2025 08 08"
-issues: []
-discussions: []
----
-
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

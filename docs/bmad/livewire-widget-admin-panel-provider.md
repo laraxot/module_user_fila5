@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget admin panel provider"
-issues: []
-discussions: []
 title: "AdminPanelProvider — mappa render hook → widget Filament"
 type: tech-spec
 module: User

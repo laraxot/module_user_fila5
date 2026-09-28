@@ -1,14 +1,3 @@
----
-title: "filament namespace rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament namespace rules"
-issues: []
-discussions: []
----
-
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Backup traduzioni User — in-place .bak"
 type: concept
 module: User

@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality gates 2026 07 28"
-issues: []
-discussions: []
 title: Quality Gates Analysis — User Module
 date: 2026-07-28
 status: completed-with-constraints

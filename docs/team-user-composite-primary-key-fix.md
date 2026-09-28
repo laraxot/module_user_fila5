@@ -1,12 +1,4 @@
 ---
-title: "team user composite primary key fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "team user composite primary key fix"
-issues: []
-discussions: []
 module: theme
 topic: team-user-composite-primary-key-fix
 canonical: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
+>>>>>>> 87273113 (.)

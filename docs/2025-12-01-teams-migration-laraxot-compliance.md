@@ -1,14 +1,3 @@
----
-title: "2025 12 01 teams migration laraxot compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "2025 12 01 teams migration laraxot compliance"
-issues: []
-discussions: []
----
-
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data

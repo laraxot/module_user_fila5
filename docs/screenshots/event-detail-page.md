@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "event detail page"
-issues: []
-discussions: []
 title: "event-detail-page"
 type: source
 module: User

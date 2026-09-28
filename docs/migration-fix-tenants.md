@@ -1,12 +1,4 @@
 ---
-title: "migration fix tenants"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration fix tenants"
-issues: []
-discussions: []
 module: theme
 topic: migration-fix-tenants
 canonical: ../../../Themes/docs/shared-components/migration-fix-tenants.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-fix-tenants.md
+>>>>>>> 87273113 (.)

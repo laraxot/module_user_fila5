@@ -1,14 +1,3 @@
----
-title: "moderation doctor"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "moderation doctor"
-issues: []
-discussions: []
----
-
 # Moderazione Dentista dal Modulo User
 
 ## Premessa
@@ -94,12 +83,4 @@ class DoctorPolicy {
 
 ---
 
-title: "moderation doctor"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "moderation doctor"
-issues: []
-discussions: []
 **Nota:** Se la complessità della moderazione dovesse aumentare (es. moderazione multi-ruolo, workflow avanzati), valutare la migrazione verso un modulo Moderation dedicato. 

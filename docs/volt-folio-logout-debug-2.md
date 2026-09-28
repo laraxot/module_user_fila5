@@ -1,12 +1,4 @@
 ---
-title: "volt folio logout debug 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio logout debug 2"
-issues: []
-discussions: []
 module: theme
 topic: volt_folio_logout_debug
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-debug-2.md

@@ -1,12 +1,4 @@
 ---
-title: "third party models"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "third party models"
-issues: []
-discussions: []
 module: theme
 topic: third-party-models
 canonical: ../../../Themes/docs/shared-components/third-party-model-patterns.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+>>>>>>> 87273113 (.)

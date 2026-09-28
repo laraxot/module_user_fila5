@@ -1,7 +1,4 @@
 ---
-qmd: "mcp integration"
-issues: []
-discussions: []
 title: "Integrazione dei Server MCP con il Modulo User"
 module: user
 type: integration

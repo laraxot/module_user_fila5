@@ -1,7 +1,4 @@
 ---
-qmd: "PRODUCT LAUNCH PLAN"
-issues: []
-discussions: []
 title: "User Module - Product Launch Plan"
 module: user
 type: integration

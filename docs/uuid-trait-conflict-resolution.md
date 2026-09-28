@@ -1,12 +1,4 @@
 ---
-title: "uuid trait conflict resolution"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "uuid trait conflict resolution"
-issues: []
-discussions: []
 module: theme
 topic: uuid-trait-conflict-resolution
 canonical: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
+>>>>>>> 87273113 (.)

@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "socialite user"
-issues: []
-discussions: []
 title: SocialiteUser — Entità OAuth utente
 type: entity
 module: User

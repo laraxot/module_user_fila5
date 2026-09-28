@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27

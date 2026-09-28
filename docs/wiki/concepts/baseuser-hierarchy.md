@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "BaseUser Hierarchy and Extension Pattern"
 type: concept
 tags: [user, baseuser, hierarchy, extension, architecture, inheritance]

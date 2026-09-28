@@ -1,12 +1,4 @@
 ---
-title: "migration strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration strategy"
-issues: []
-discussions: []
 module: theme
 topic: migration-strategy
 canonical: ../../../Themes/docs/shared-components/migration-philosophy-strategy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-strategy.md
+>>>>>>> 87273113 (.)

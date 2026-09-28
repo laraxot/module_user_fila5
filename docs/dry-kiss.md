@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
 **Data Analisi:** [DATE]

@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget epics"
-issues: []
-discussions: []
 title: "Puntatore — epics campagna widget"
 canonical: ./epics.md
 superseded: true

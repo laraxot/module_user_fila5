@@ -1,14 +1,3 @@
----
-title: "base classes corrections"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "base classes corrections"
-issues: []
-discussions: []
----
-
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -325,14 +314,6 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 ---
 
-title: "base classes corrections"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "base classes corrections"
-issues: []
-discussions: []
 **Autore:** AI Assistant  
 **Review:** Team Laraxot  
 **Deploy:** ✅ Ready for Production  

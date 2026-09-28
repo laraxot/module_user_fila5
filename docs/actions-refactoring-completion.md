@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "actions refactoring completion"
-issues: []
-discussions: []
 title: "User Module: Support → QueueableActions Refactoring Complete"
 type: documentation
 date: 2026-07-21

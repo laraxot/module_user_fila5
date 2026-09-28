@@ -1,12 +1,4 @@
 ---
-title: "teams"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "teams"
-issues: []
-discussions: []
 description:
 globs:
 alwaysApply: false
@@ -19,6 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+>>>>>>> 87273113 (.)
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -43,6 +36,7 @@ La migrazione estende `XotBaseMigration` e utilizza i metodi helper per garantir
 - [Pattern di ereditarietà dei modelli](mdc:../../../../docs/model-inheritance-patterns.md)
 - [Gestione degli utenti](mdc:../../../../docs/user-management.md)
 - [Gestione delle traduzioni](mdc:../../../../docs/translation-management.md)
+>>>>>>> 87273113 (.)
 
 ---
 

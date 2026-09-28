@@ -67,18 +67,6 @@ return [
             'error' => 'Unable to reset password',
         ],
     ],
-    'no_account' => "Don't have an account yet?",
-    'register_now' => 'Create an account',
-    'forgot_password_text' => 'Forgot your password?',
-    'reset_it' => 'Reset it',
-    'create_account' => 'Create account',
-    'password_reset_page' => [
-        'title' => 'Reset your password',
-        'intro' => 'Enter your email address and we will send you a password reset link.',
-        'email_label' => 'Email address',
-        'submit' => 'Send password reset link',
-        'return_to_login' => 'Return to sign in',
-    ],
     'messages' => [
         'logout_success' => 'Successfully logged out',
         'logout_error' => 'An error occurred during logout',

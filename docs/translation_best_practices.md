@@ -1,14 +1,3 @@
----
-title: "translation best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation best practices"
-issues: []
-discussions: []
----
-
 # Best Practices per le Traduzioni
 
 ## Principi Generali

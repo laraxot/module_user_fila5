@@ -1,7 +1,4 @@
 ---
-qmd: "login page design comuni"
-issues: []
-discussions: []
 title: "Login Page - Design Comuni Italiani Alignment"
 type: concept
 confidence: high

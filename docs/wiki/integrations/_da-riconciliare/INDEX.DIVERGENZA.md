@@ -1,7 +1,4 @@
 ---
-qmd: "INDEX.DIVERGENZA"
-issues: []
-discussions: []
 title: "Divergenza da riconciliare: INDEX.md"
 module: User
 type: note

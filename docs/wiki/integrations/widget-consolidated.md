@@ -1,7 +1,4 @@
 ---
-qmd: "widget consolidated"
-issues: []
-discussions: []
 title: "widget — Consolidated Documentation"
 module: user
 type: integration

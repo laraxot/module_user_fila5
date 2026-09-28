@@ -1,14 +1,3 @@
----
-title: "ANALYST REPORT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ANALYST REPORT"
-issues: []
-discussions: []
----
-
 # User Module — Analyst Report
 
 **Date**: 2026-07-09  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "ANALYST REPORT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ANALYST REPORT"
-issues: []
-discussions: []
 ## Audit Results Summary
 
 | Category | Score | Grade | Status |

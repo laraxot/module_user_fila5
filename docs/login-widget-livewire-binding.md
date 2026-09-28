@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # LoginWidget Livewire wire:model Binding Fix
 
 **Errore**: `[wire:model="email"] property does not exist on component`

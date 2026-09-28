@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`
@@ -226,6 +227,7 @@ done
 
 - [Database Migrations](../../../../../docs/database-migrations.md)
 - [Laraxot Philosophy](../../../../../docs/architettura_filosofia_religione_politica_zen.md)
+>>>>>>> 87273113 (.)
 
 ### This Analysis
 

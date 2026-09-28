@@ -1,12 +1,4 @@
 ---
-title: "redundancy fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "redundancy fixes"
-issues: []
-discussions: []
 module: theme
 topic: redundancy-fixes
 canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md

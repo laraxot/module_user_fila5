@@ -1,14 +1,3 @@
----
-title: "tech spec superadmin widget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "tech spec superadmin widget"
-issues: []
-discussions: []
----
-
 # Project context — SuperAdmin nel user menu
 
 Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).
@@ -39,14 +28,6 @@ Team switcher (`team.change`), Socialite, Gdpr terms, Notify: altri hook, altro 
 
 ---
 
-title: "tech spec superadmin widget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "tech spec superadmin widget"
-issues: []
-discussions: []
 # Technical specification: SuperAdmin widget
 
 **Track:** Quick Flow (4 story)  

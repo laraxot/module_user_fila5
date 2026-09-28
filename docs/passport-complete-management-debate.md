@@ -1,12 +1,4 @@
 ---
-title: "passport complete management debate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "passport complete management debate"
-issues: []
-discussions: []
 module: theme
 topic: passport-complete-management-debate
 canonical: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
+>>>>>>> 87273113 (.)

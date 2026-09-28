@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -142,6 +143,7 @@ class LogoutWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
+>>>>>>> 87273113 (.)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -267,4 +269,5 @@ class LogoutWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
+>>>>>>> 87273113 (.)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

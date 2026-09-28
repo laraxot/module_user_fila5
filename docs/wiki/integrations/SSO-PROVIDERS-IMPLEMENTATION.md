@@ -1,7 +1,4 @@
 ---
-qmd: "SSO PROVIDERS IMPLEMENTATION"
-issues: []
-discussions: []
 title: "User Module - SSO Providers Implementation"
 module: user
 type: integration

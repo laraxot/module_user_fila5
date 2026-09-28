@@ -1,12 +1,4 @@
 ---
-title: "logout blade corrected analysis 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade corrected analysis 1"
-issues: []
-discussions: []
 module: theme
 topic: logout-blade-corrected-analysis-1
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-1.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-1.md
+>>>>>>> 87273113 (.)

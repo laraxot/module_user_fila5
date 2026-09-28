@@ -1,14 +1,3 @@
----
-title: "volt folio logout error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio logout error"
-issues: []
-discussions: []
----
-
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -173,14 +162,6 @@ use function Livewire\Volt\{state, mount};
 
 ---
 
-title: "volt folio logout error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio logout error"
-issues: []
-discussions: []
 **Errore risolto: aggiungi `@volt` come prima riga!**
 ---
 module: theme

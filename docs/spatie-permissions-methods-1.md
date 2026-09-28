@@ -1,12 +1,4 @@
 ---
-title: "spatie permissions methods 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "spatie permissions methods 1"
-issues: []
-discussions: []
 module: theme
 topic: spatie-permissions-methods-1
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-methods-5.md

@@ -1,12 +1,4 @@
 ---
-title: "eav"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "eav"
-issues: []
-discussions: []
 module: theme
 topic: eav
 canonical: ../../../Themes/docs/shared-components/eav.txt
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
+>>>>>>> 87273113 (.)

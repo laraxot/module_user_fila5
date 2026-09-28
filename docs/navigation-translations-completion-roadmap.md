@@ -1,12 +1,4 @@
 ---
-title: "navigation translations completion roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "navigation translations completion roadmap"
-issues: []
-discussions: []
 module: theme
 topic: navigation-translations-completion-roadmap
 canonical: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+>>>>>>> 87273113 (.)

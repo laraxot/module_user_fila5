@@ -1,12 +1,4 @@
 ---
-title: "phpstan relationship"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan relationship"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-relationship
 canonical: ../../../Themes/docs/shared-components/phpstan-relationship-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-relationship-fix.md
+>>>>>>> 87273113 (.)

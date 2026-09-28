@@ -1,14 +1,3 @@
----
-title: "auth widgets view namespaces"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth widgets view namespaces"
-issues: []
-discussions: []
----
-
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**

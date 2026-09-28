@@ -1,12 +1,4 @@
 ---
-title: "livewire widget consolidation story superadmin"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget consolidation story superadmin"
-issues: []
-discussions: []
 canonical: ../stories/9.1.super-admin-widget.story.md
 superseded: true
 related:

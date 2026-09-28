@@ -1,7 +1,4 @@
 ---
-qmd: "path conventions"
-issues: []
-discussions: []
 title: "path_conventions - User"
 module: user
 type: integration

@@ -1,12 +1,4 @@
 ---
-title: "translation fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation fixes"
-issues: []
-discussions: []
 module: theme
 topic: translation-fixes
 canonical: ../../../Themes/docs/shared-components/translation-fixes.md
@@ -114,3 +106,5 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 60a2c9a9 (.)
+>>>>>>> 87273113 (.)

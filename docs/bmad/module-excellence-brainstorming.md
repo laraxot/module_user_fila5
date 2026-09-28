@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module excellence brainstorming"
-issues: []
-discussions: []
 title: "Brainstorming — User module: findings grezzi (5 fork paralleli)"
 type: brainstorming
 module: User

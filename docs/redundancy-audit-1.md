@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "redundancy-audit-2026-05-21"
 type: concept
 tags: [deprecated]

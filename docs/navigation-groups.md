@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Gruppi di navigazione del modulo User"
 type: reference
 tags: [navigation, translations, filament]

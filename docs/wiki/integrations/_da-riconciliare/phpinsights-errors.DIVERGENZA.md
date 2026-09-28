@@ -1,7 +1,4 @@
 ---
-qmd: "phpinsights errors.DIVERGENZA"
-issues: []
-discussions: []
 title: "Divergenza da riconciliare: phpinsights-errors.md"
 module: User
 type: note

@@ -1,7 +1,4 @@
 ---
-qmd: "dry consolidated"
-issues: []
-discussions: []
 title: "dry — Consolidated Documentation"
 module: user
 type: integration

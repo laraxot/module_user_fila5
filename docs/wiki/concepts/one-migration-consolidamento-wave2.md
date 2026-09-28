@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User — one migration consolidamento wave 2"
 type: concept
 status: canonical

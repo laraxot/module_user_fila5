@@ -1,12 +1,4 @@
 ---
-title: "phpstan generic types"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan generic types"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-generic-types
 canonical: ../../../Themes/docs/shared-components/phpstan-generic-types.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-generic-types.md
+>>>>>>> 87273113 (.)

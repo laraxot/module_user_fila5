@@ -1,12 +1,4 @@
 ---
-title: "setup super admin"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "setup super admin"
-issues: []
-discussions: []
 module: theme
 topic: setup-super-admin
 canonical: ../../../Themes/docs/shared-components/setup-super-admin.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/setup-super-admin.md
+>>>>>>> 87273113 (.)

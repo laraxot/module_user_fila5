@@ -1,14 +1,3 @@
----
-title: "dentist moderation approach"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dentist moderation approach"
-issues: []
-discussions: []
----
-
 # Dentist Moderation Approach in User Module
 
 ## Overview

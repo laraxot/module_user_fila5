@@ -1,14 +1,3 @@
----
-title: "volt logout action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt logout action"
-issues: []
-discussions: []
----
-
 # Logout via Volt Action
 
 ## Contesto
@@ -74,14 +63,6 @@ Volt scoprirà automaticamente la rotta `logout` grazie all’Attribute.
 - Il middleware `auth` impedisce accessi non autenticati.
 - Non toccare `routes/web.php` per il frontoffice.
 ---
-title: "volt logout action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt logout action"
-issues: []
-discussions: []
 module: theme
 topic: volt-logout-action
 canonical: ../../../Themes/docs/shared-components/volt-logout-action.md

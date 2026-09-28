@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "duplicated ratings relation manager"
-issues: []
-discussions: []
 title: "Duplicated RatingsRelationManager (3 occurrences)"
 type: redundancy
 owner: Modules/User

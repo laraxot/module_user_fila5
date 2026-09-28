@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "brainstorming"
-issues: []
-discussions: []
 title: "Brainstorming — SuperAdmin widget"
 type: brainstorming
 module: User

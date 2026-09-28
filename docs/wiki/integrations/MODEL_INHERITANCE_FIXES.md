@@ -1,7 +1,4 @@
 ---
-qmd: "MODEL INHERITANCE FIXES"
-issues: []
-discussions: []
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 module: user
 type: integration

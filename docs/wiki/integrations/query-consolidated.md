@@ -1,7 +1,4 @@
 ---
-qmd: "query consolidated"
-issues: []
-discussions: []
 title: "query — Consolidated Documentation"
 module: user
 type: integration

@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user passport create client credentials button"
-issues: []
-discussions: []
 id: story-user-passport-create-client-credentials-button
 slug: story-user-passport-create-client-credentials-button
 title: "STORY — Pulsante 'Nuovo cliente OAuth' nella Passport Dashboard, senza SSH"

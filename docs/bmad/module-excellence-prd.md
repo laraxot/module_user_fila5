@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module excellence prd"
-issues: []
-discussions: []
 title: "PRD — User module: percorso verso la perfezione assoluta"
 type: prd
 module: User

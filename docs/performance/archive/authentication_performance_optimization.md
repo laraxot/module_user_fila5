@@ -1,14 +1,3 @@
----
-title: "authentication performance optimization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "authentication performance optimization"
-issues: []
-discussions: []
----
-
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified

@@ -1,7 +1,4 @@
 ---
-qmd: "terms and conditions"
-issues: []
-discussions: []
 title: "terms and conditions"
 module: user
 type: integration

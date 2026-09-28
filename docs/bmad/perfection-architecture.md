@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "perfection architecture"
-issues: []
-discussions: []
 title: "Architecture — Perfezione assoluta del modulo User"
 type: architecture
 module: User

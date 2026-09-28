@@ -1,7 +1,4 @@
 ---
-qmd: "index"
-issues: []
-discussions: []
 title: "user — integrations"
 module: user
 type: integration

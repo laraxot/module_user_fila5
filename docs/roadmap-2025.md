@@ -18,12 +18,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
 **Status**: 90% COMPLETATO  
 **Priority**: HIGH  
 **PHPStan**: ✅ Level 10 (0 errori)  
+>>>>>>> 87273113 (.)
 **Filament**: ✅ 4.x Compatibile  
 
 ---
@@ -103,6 +105,7 @@ User Module
 
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
+>>>>>>> 87273113 (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -270,6 +273,7 @@ User Module
 
 #### ✅ Completed
 - [x] PHPStan Level 10 compliance
+>>>>>>> 87273113 (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -329,6 +333,7 @@ User Module
 
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> 87273113 (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -492,6 +497,7 @@ User Module
 
 ---
 
+>>>>>>> 87273113 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
 

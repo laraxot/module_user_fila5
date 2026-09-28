@@ -1,7 +1,4 @@
 ---
-tags: [documentation]
-issues: []
-discussions: []
 title: "Coverage floor 50% — perimetro offline User"
 module: User
 type: concept

@@ -1,7 +1,4 @@
 ---
-qmd: "QMD SETUP"
-issues: []
-discussions: []
 title: "QMD Setup — Module User"
 type: documentation
 created: 2026-05-11

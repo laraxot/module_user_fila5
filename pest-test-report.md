@@ -1,14 +1,3 @@
----
-title: "pest test report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest test report"
-issues: []
-discussions: []
----
-
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary
@@ -55,14 +44,6 @@ Successfully implemented comprehensive Pest PHP tests for 5 critical User module
 
 ---
 
-title: "pest test report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest test report"
-issues: []
-discussions: []
 ### 2. LoginUserAction ✅
 **File**: `LoginUserActionTest.php`
 **Tests**: 7 | **Status**: All Passing

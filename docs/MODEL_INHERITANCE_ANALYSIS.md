@@ -1,14 +1,3 @@
----
-title: "MODEL INHERITANCE ANALYSIS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MODEL INHERITANCE ANALYSIS"
-issues: []
-discussions: []
----
-
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

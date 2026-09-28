@@ -1,14 +1,3 @@
----
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
----
-
 # User Module Architecture (BMAD)
 
 **Status**: ✅ Finalized
@@ -275,13 +264,5 @@ TokenRevoker, SessionCleaner
 
 ---
 
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
 *Architecture documentation based on BMAD methodology*  
 *Last verified: 2026-09-21*

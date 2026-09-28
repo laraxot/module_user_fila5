@@ -1,14 +1,3 @@
----
-title: "coverage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "coverage"
-issues: []
-discussions: []
----
-
 # Coverage — User
 
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.

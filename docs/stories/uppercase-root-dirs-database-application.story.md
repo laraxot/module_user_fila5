@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "uppercase root dirs database application.story"
-issues: []
-discussions: []
 title: "User: cartelle maiuscole in root modulo — Database/ e Application/ duplicati orfani"
 type: story
 module: User

@@ -1,14 +1,3 @@
----
-title: "phpstan fixes 2025 10 01"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes 2025 10 01"
-issues: []
-discussions: []
----
-
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -21,14 +10,6 @@ discussions: []
 
 ---
 
-title: "phpstan fixes 2025 10 01"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes 2025 10 01"
-issues: []
-discussions: []
 ## 🛠️ Correzioni Implementate
 
 ### 1. BaseUser.php - Rimozione Codice Orfano (CRITICO)
@@ -224,6 +205,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ## 🔗 Collegamenti
 
 - [← User Module README](./README.md)
+>>>>>>> 87273113 (.)
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../docs/index.md)

@@ -1,7 +1,4 @@
 ---
-qmd: "QUERY OPTIMIZATION ANALYSIS"
-issues: []
-discussions: []
 title: "User Module - Query Optimization Analysis"
 module: user
 type: integration

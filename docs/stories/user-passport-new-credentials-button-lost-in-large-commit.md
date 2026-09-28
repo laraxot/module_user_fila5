@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user passport new credentials button lost in large commit"
-issues: []
-discussions: []
 id: story-user-passport-new-credentials-button-lost-in-large-commit
 slug: story-user-passport-new-credentials-button-lost-in-large-commit
 title: "STORY — Il bottone 'Nuove credenziali' della Passport Dashboard è scomparso, cancellato da un commit di un giorno dopo"

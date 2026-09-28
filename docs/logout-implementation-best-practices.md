@@ -1,14 +1,3 @@
----
-title: "logout implementation best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout implementation best practices"
-issues: []
-discussions: []
----
-
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
@@ -257,14 +246,6 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 ---
-title: "logout implementation best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout implementation best practices"
-issues: []
-discussions: []
 module: theme
 topic: logout-implementation-best-practices
 canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md

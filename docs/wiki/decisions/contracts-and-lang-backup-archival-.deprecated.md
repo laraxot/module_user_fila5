@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Archiviazione Contracts orfani e backup lang (ponytail audit)"
 type: decision
 tags: [user, ponytail, contracts, lang, archive, audit]

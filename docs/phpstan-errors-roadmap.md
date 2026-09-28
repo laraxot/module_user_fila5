@@ -1,12 +1,4 @@
 ---
-title: "phpstan errors roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors roadmap"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-errors-roadmap
 canonical: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+>>>>>>> 87273113 (.)

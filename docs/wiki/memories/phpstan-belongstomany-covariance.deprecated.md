@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "phpstan-belongstomany-covariance-2026-07-06.deprecated"
 type: concept
 tags: [deprecated]

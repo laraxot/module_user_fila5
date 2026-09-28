@@ -1,14 +1,3 @@
----
-title: "translation syntax fixes "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation syntax fixes "
-issues: []
-discussions: []
----
-
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data
@@ -133,14 +122,6 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 
 ---
 
-title: "translation syntax fixes "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation syntax fixes "
-issues: []
-discussions: []
 **Autore**: Sistema di Risoluzione Automatica
 **Data**: 2025-01-15
 **Versione**: 1.0

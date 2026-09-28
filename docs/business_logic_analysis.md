@@ -1,14 +1,3 @@
----
-title: "business logic analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "business logic analysis"
-issues: []
-discussions: []
----
-
 # User Module - Business Logic Analysis
 
 ## Overview
@@ -487,14 +476,6 @@ class ApiRateLimitingMiddleware
 
 ---
 
-title: "business logic analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "business logic analysis"
-issues: []
-discussions: []
 <!-- Merged from BUSINESS_LOGIC_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
 
 # User Module - Business Logic Analysis

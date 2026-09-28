@@ -1,14 +1,3 @@
----
-title: "user factory integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user factory integration"
-issues: []
-discussions: []
----
-
 # UserFactory Integration - Modulo User e SaluteOra
 
 ## Overview
@@ -362,14 +351,6 @@ public function test_bulk_sti_creation()
 
 ---
 
-title: "user factory integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user factory integration"
-issues: []
-discussions: []
 **Created**: January 2025  
 **Purpose**: Document cross-module factory integration  
 **Maintainer**: Development Team  

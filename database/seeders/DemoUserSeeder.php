@@ -6,6 +6,7 @@ namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
@@ -22,29 +23,29 @@ class DemoUserSeeder extends Seeder
 
     public function run(): void
     {
-        if (! app()->environment(['local', 'testing', 'demo'])) {
-            if ($this->command !== null) {
-                $this->command->warn('DemoUserSeeder: skipped outside local, testing and demo environments.');
-            }
-
-            return;
-        }
-
         $userClass = XotData::make()->getUserClass();
         \assert(is_subclass_of($userClass, User::class));
 
+        $userTable = (new $userClass())->getTable();
+        $userConnection = (new $userClass())->getConnectionName() ?? 'user';
+
+        DB::connection($userConnection)
+            ->table($userTable)
+            ->where('type', 'admin_user')
+            ->update(['type' => 'master_admin']);
+
         $demoUsers = [
             [
-                'email' => 'admin@fixcity.example.test',
-                'name' => 'FixCity Demo Administrator',
-                'password' => 'DemoAdmin#2026',
+                'email' => 'marco.sottana@gmail.com',
+                'name' => 'Marco Sottana',
+                'password' => 'marco',
                 'type' => 'master_admin',
                 'role' => 'super-admin',
             ],
             [
-                'email' => 'citizen@fixcity.example.test',
+                'email' => 'cittadino@example.test',
                 'name' => 'Cittadino Demo',
-                'password' => 'DemoCitizen#2026',
+                'password' => 'password123',
                 'type' => 'customer_user',
                 'role' => 'user',
             ],

@@ -1,7 +1,4 @@
 ---
-qmd: "migration best practices"
-issues: []
-discussions: []
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 module: user
 type: integration

@@ -1,12 +1,4 @@
 ---
-title: "routing error solution 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "routing error solution 2"
-issues: []
-discussions: []
 module: theme
 topic: routing_error_solution
 canonical: ../../../Themes/docs/shared-components/routing-error-solution.md

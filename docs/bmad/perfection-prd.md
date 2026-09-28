@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "perfection prd"
-issues: []
-discussions: []
 title: "PRD — Perfezione assoluta del modulo User"
 type: prd
 module: User

@@ -1,7 +1,4 @@
 ---
-qmd: "business consolidated"
-issues: []
-discussions: []
 title: "business — Consolidated Documentation"
 module: user
 type: integration

@@ -1,12 +1,4 @@
 ---
-title: "passport cluster namespace fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "passport cluster namespace fix"
-issues: []
-discussions: []
 module: theme
 topic: passport-cluster-namespace-fix
 canonical: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
+>>>>>>> 87273113 (.)

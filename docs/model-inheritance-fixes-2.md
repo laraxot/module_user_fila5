@@ -1,12 +1,4 @@
 ---
-title: "model inheritance fixes 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model inheritance fixes 2"
-issues: []
-discussions: []
 module: theme
 topic: model-inheritance-fixes-2
 canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-4.md

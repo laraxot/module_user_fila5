@@ -1,14 +1,3 @@
----
-title: "metrics dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "metrics dashboard"
-issues: []
-discussions: []
----
-
 # User Module Metrics Dashboard
 
 ## Overview
@@ -82,14 +71,6 @@ gantt
 3. Develop user analytics
 4. Enhance audit logging 
 ---
-title: "metrics dashboard"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "metrics dashboard"
-issues: []
-discussions: []
 module: theme
 topic: metrics-dashboard
 canonical: ../../../Themes/docs/shared-components/metrics-dashboard.md

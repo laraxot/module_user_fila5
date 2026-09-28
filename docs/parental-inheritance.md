@@ -1,12 +1,4 @@
 ---
-title: "parental inheritance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "parental inheritance"
-issues: []
-discussions: []
 module: theme
 topic: parental-inheritance
 canonical: ../../../Themes/docs/shared-components/parental-inheritance.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/parental-inheritance.md
+>>>>>>> 87273113 (.)

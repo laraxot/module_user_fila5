@@ -1,12 +1,4 @@
 ---
-title: "module user"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module user"
-issues: []
-discussions: []
 module: theme
 topic: module-user
 canonical: ../../../Themes/docs/shared-components/module-user.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-user.md
+>>>>>>> 87273113 (.)

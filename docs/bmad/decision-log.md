@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "decision log"
-issues: []
-discussions: []
 title: "Decision log — SuperAdmin widget"
 type: decision-log
 module: User

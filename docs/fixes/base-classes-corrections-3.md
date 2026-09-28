@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "base-classes-corrections-2025-10-15"
 type: concept
 tags: [deprecated]

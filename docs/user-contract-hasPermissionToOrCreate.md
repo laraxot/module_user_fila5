@@ -1,8 +1,4 @@
 ---
-updated: 2026-09-26
-qmd: "user contract hasPermissionToOrCreate"
-issues: []
-discussions: []
 title: "UserContract — hasPermissionToOrCreate"
 module: User / Predict
 type: concept

@@ -1,14 +1,3 @@
----
-title: "auth components best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth components best practices"
-issues: []
-discussions: []
----
-
 # Best Practices per i Componenti di Autenticazione 
 
 ## Collegamenti correlati

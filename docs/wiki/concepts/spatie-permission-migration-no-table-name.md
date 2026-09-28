@@ -1,7 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "spatie permission migration no table name"
-discussions: []
 title: "Spatie pivot — migrazione senza nome tabella"
 type: concept
 module: User

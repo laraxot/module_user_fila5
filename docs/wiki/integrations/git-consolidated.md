@@ -1,7 +1,4 @@
 ---
-qmd: "git consolidated"
-issues: []
-discussions: []
 title: "git — Consolidated Documentation"
 module: user
 type: integration

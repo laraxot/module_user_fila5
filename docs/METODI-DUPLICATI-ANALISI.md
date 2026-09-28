@@ -1,14 +1,3 @@
----
-title: "METODI DUPLICATI ANALISI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "METODI DUPLICATI ANALISI"
-issues: []
-discussions: []
----
-
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "METODI DUPLICATI ANALISI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "METODI DUPLICATI ANALISI"
-issues: []
-discussions: []
 ## 🎯 Executive Summary
 
 Analisi **REALE e APPROFONDITA** di **18 moduli** + **2 temi** del framework Laraxot/Filament.

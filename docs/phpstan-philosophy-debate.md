@@ -1,12 +1,4 @@
 ---
-title: "phpstan philosophy debate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan philosophy debate"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-philosophy-debate
 canonical: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
+>>>>>>> 87273113 (.)

@@ -1,7 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "spatie permission table names"
-discussions: []
 title: spatie permission table names contract
 type: concept
 module: User

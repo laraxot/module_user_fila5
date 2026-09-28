@@ -1,12 +1,4 @@
 ---
-title: "user profile aration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user profile aration"
-issues: []
-discussions: []
 module: theme
 topic: user-profile-aration
 canonical: ../../../Themes/docs/shared-components/user-profile-separation.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-separation.md
+>>>>>>> 87273113 (.)

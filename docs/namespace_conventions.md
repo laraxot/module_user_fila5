@@ -1,7 +1,4 @@
 ---
-qmd: "namespace conventions"
-issues: []
-discussions: []
 title: "Convenzioni di Namespace nel Modulo User"
 module: user
 type: integration
@@ -202,6 +199,7 @@ Se l'override del tema non funziona:
 - [Documentazione Laravel View](https://laravel.com/docs/views)
 - [Regole Struttura Directory Auth](../../../.windsurf/rules/translations.md#regola-critica-struttura-directory-auth-laravel)
 - [Documentazione Tema One](../../../Themes/One/docs/README.md)
+>>>>>>> 87273113 (.)
 
 ---
 

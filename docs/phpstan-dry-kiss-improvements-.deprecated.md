@@ -1,12 +1,4 @@
 ---
-title: "phpstan dry kiss improvements .deprecated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan dry kiss improvements .deprecated"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-dry-kiss-improvements-2025-10-17
 canonical: ../../../Themes/docs/shared-components/phpstan-dry-kiss-improvements-.md

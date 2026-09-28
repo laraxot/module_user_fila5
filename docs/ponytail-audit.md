@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "ponytail-audit-2026-07-02"
 type: concept
 tags: [deprecated]

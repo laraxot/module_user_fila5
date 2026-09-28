@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User — mai Filament\*, sempre XotBase*"
 type: concept
 module: User

@@ -1,14 +1,3 @@
----
-title: "conflict resolution passwordresetwidget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "conflict resolution passwordresetwidget"
-issues: []
-discussions: []
----
-
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Teams — owner_id: fold-in fix (no separate add_* migration)"
 type: concept
 tags: [migration, teams, owner-id, xotbase-migration-religion]

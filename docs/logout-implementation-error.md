@@ -1,14 +1,3 @@
----
-title: "logout implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout implementation error"
-issues: []
-discussions: []
----
-
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -81,14 +70,6 @@ L'errore principale nell'implementazione attuale è l'utilizzo di un approccio n
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
 ---
-title: "logout implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout implementation error"
-issues: []
-discussions: []
 module: theme
 topic: logout-implementation-error
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md

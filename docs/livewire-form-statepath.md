@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Problema di Binding nei Componenti Livewire con statePath('data')
 
 ## Descrizione del Problema

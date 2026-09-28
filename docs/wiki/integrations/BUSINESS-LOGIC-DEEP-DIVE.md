@@ -1,7 +1,4 @@
 ---
-qmd: "BUSINESS LOGIC DEEP DIVE"
-issues: []
-discussions: []
 title: "User Module - Business Logic Deep Dive"
 module: user
 type: integration

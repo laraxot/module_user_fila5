@@ -1,12 +1,4 @@
 ---
-title: "quality tooling"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality tooling"
-issues: []
-discussions: []
 module: theme
 topic: quality-tooling
 canonical: ../../../Themes/docs/shared-components/quality-tooling.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
+>>>>>>> 87273113 (.)

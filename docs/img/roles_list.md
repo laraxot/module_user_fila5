@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "roles list"
-issues: []
-discussions: []
 title: "roles_list"
 type: source
 module: User

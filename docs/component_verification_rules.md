@@ -1,14 +1,3 @@
----
-title: "component verification rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "component verification rules"
-issues: []
-discussions: []
----
-
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

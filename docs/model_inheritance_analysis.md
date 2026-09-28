@@ -1,14 +1,3 @@
----
-title: "model inheritance analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model inheritance analysis"
-issues: []
-discussions: []
----
-
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale
@@ -163,14 +152,6 @@ Dopo le modifiche, eseguire:
 
 ---
 
-title: "model inheritance analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "model inheritance analysis"
-issues: []
-discussions: []
 ## Contenuto assorbito da `MODEL_INHERITANCE_ANALYSIS.md`
 
 # Documento unificato

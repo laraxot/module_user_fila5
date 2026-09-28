@@ -1,12 +1,4 @@
 ---
-title: "module structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module structure"
-issues: []
-discussions: []
 module: theme
 topic: module-structure
 canonical: ../../../Themes/docs/shared-components/module-structure.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-structure.md
+>>>>>>> 87273113 (.)

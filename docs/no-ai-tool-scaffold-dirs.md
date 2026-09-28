@@ -1,7 +1,4 @@
 ---
-qmd: "no ai tool scaffold dirs"
-issues: []
-discussions: []
 title: "No AI/tool scaffold directories in module tree — User"
 module: "User"
 type: concept

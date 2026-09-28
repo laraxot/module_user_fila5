@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable suspect columns user module followup.story"
-issues: []
-discussions: []
 title: "Follow-up — colonne sospette/bug reale trovati nell'audit \$model (modulo User)"
 type: story
 module: User

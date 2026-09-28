@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable model audit passport socialite clusters batch.story"
-issues: []
-discussions: []
 title: "XotBaseResourceTable: audit $model + verifica colonne (batch Passport/Socialite clusters + AuthLog/BaseProfile/BaseUser/Client)"
 type: story
 module: User

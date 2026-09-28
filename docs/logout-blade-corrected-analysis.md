@@ -1,14 +1,3 @@
----
-title: "logout blade corrected analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade corrected analysis"
-issues: []
-discussions: []
----
-
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
@@ -238,14 +227,6 @@ return redirect()->to('/' . $locale);
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Filament](https://filamentphp.com/docs)
 ---
-title: "logout blade corrected analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade corrected analysis"
-issues: []
-discussions: []
 module: theme
 topic: logout-blade-corrected-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md

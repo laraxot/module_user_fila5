@@ -14,6 +14,7 @@ related:
   - "./gits-resolution.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Multiple Bugs Resolution - 16 Dicembre 2025
 
 **Data Fix**: 16 Dicembre 2025
@@ -221,6 +222,7 @@ public function render(): View
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution.md)
+>>>>>>> 87273113 (.)
 - [TenantService Actions](../../tenant/docs/configuration.md)
 
 ---

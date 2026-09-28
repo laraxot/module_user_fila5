@@ -1,14 +1,3 @@
----
-title: "password translation completion"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "password translation completion"
-issues: []
-discussions: []
----
-
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -126,13 +115,5 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
-title: "password translation completion"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "password translation completion"
-issues: []
-discussions: []
 *Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*

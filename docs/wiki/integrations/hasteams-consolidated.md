@@ -1,7 +1,4 @@
 ---
-qmd: "hasteams consolidated"
-issues: []
-discussions: []
 title: "hasteams — Consolidated Documentation"
 module: user
 type: integration

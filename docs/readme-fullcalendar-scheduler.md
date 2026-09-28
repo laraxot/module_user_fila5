@@ -1,14 +1,3 @@
----
-title: "readme fullcalendar scheduler"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme fullcalendar scheduler"
-issues: []
-discussions: []
----
-
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo
@@ -231,14 +220,6 @@ Log::info('FullCalendar configured', [
 
 ---
 
-title: "readme fullcalendar scheduler"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme fullcalendar scheduler"
-issues: []
-discussions: []
 **Creato**: Gennaio 2025  
 **Ultima modifica**: Gennaio 2025  
 **Versione FullCalendar**: v6.1.17  

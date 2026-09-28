@@ -1,14 +1,3 @@
----
-title: "user architecture gap analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user architecture gap analysis"
-issues: []
-discussions: []
----
-
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
 Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + Filament 5, architettura Laraxot/Xot).

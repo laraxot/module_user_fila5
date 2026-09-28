@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Quality Report — User"
 type: report
 tags: [quality, phpstan, pest, coverage]

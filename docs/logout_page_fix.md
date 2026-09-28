@@ -1,14 +1,3 @@
----
-title: "logout page fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout page fix"
-issues: []
-discussions: []
----
-
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato

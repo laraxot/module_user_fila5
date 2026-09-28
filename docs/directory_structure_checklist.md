@@ -1,7 +1,4 @@
 ---
-qmd: "directory structure checklist"
-issues: []
-discussions: []
 title: "directory_structure_checklist - User"
 module: user
 type: integration

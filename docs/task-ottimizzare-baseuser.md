@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Task: Ottimizzare BaseUser Model - User
 
 **Modulo**: User

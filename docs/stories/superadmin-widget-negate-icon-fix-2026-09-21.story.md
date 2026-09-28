@@ -1,14 +1,3 @@
----
-title: "superadmin widget negate icon fix 2026 09 21.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "superadmin widget negate icon fix 2026 09 21.story"
-issues: []
-discussions: []
----
-
 # SuperAdminWidget: icona "negato" ambigua, ripristinata a simbolo di divieto standard
 
 Status: done

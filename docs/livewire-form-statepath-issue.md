@@ -1,12 +1,4 @@
 ---
-title: "livewire form statepath issue"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire form statepath issue"
-issues: []
-discussions: []
 module: theme
 topic: livewire-form-statepath-issue
 canonical: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
+>>>>>>> 87273113 (.)

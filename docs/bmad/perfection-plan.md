@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "perfection plan"
-issues: []
-discussions: []
 title: "Perfection Plan — Module User Absolute Perfection"
 type: plan
 module: User

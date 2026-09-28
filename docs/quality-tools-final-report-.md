@@ -1,14 +1,3 @@
----
-title: "quality tools final report "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality tools final report "
-issues: []
-discussions: []
----
-
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo
@@ -171,14 +160,6 @@ $user_class = XotData::make()->getUserClass();
 
 ---
 
-title: "quality tools final report "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality tools final report "
-issues: []
-discussions: []
 **Status**: ✅ **COMPLETATO** - Modulo User: 0 errori PHPStan, 0 errori critici PHPMD, warning PHP Insights accettabili.
 ---
 module: theme

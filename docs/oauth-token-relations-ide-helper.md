@@ -1,12 +1,4 @@
 ---
-title: "oauth token relations ide helper"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "oauth token relations ide helper"
-issues: []
-discussions: []
 name: oauth-token-relations-ide-helper
 description: |
   Perché OauthAccessToken e OauthToken falliscono durante ide-helper.

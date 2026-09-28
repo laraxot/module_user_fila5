@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 ?>
 @php
-$title = __('user::auth.register_page.title');
+$title = 'Registrazione - ';
 @endphp
 
 <x-layouts.marketing :title="$title">
@@ -25,7 +25,7 @@ $title = __('user::auth.register_page.title');
                 <span class="inline-block transform transition-transform duration-300 hover:scale-110">O</span>RA
                 <span class="orale-text text-3xl sm:text-4xl">le</span>
             </h1>
-            <p class="text-blue-200 text-lg animate-fade-in">{{ __('user::auth.register_page.subtitle') }}</p>
+            <p class="text-blue-200 text-lg animate-fade-in">Crea il tuo account</p>
         </div>
 
         {{-- Form di Registrazione con animazione --}}
@@ -42,21 +42,21 @@ $title = __('user::auth.register_page.title');
 
                 {{-- Nome con animazione --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="name" :value="__('user::registration.fields.first_name.label')" class="text-white" />
+                    <x-input-label for="name" :value="__('Nome')" class="text-white" />
                     <x-text-input id="name" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30" type="text" name="name" :value="old('name')" required autofocus />
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                 </div>
 
                 {{-- Email con animazione --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="email" :value="__('user::registration.fields.email.label')" class="text-white" />
+                    <x-input-label for="email" :value="__('Email')" class="text-white" />
                     <x-text-input id="email" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30" type="email" name="email" :value="old('email')" required />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
 
                 {{-- Password con toggle --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="password" :value="__('user::registration.fields.password.label')" class="text-white" />
+                    <x-input-label for="password" :value="__('Password')" class="text-white" />
                     <div class="relative">
                         <x-text-input id="password" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30"
                             :type="showPassword ? 'text' : 'password'"
@@ -75,7 +75,7 @@ $title = __('user::auth.register_page.title');
 
                 {{-- Conferma Password con toggle --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="password_confirmation" :value="__('user::registration.fields.password_confirmation.label')" class="text-white" />
+                    <x-input-label for="password_confirmation" :value="__('Conferma Password')" class="text-white" />
                     <div class="relative">
                         <x-text-input id="password_confirmation" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30"
                             :type="showConfirmPassword ? 'text' : 'password'"
@@ -96,7 +96,7 @@ $title = __('user::auth.register_page.title');
                 <div class="flex items-center justify-end">
                     <x-primary-button class="bg-blue-600 hover:bg-blue-700 text-white transform transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                         :disabled="!formValid">
-                        {{ __('user::registration.actions.register.label') }}
+                        {{ __('Registrati') }}
                     </x-primary-button>
                 </div>
             </form>
@@ -104,9 +104,9 @@ $title = __('user::auth.register_page.title');
             {{-- Link Login con animazione --}}
             <div class="mt-6 text-center">
                 <p class="text-blue-200">
-                    {{ __('user::registration.already_registered') }}
+                    {{ __('Hai già un account?') }}
                     <a href="{{ route('login') }}" class="text-white hover:text-blue-300 underline transform transition-all duration-300 hover:scale-105">
-                        {{ __('user::auth.login_page.title') }}
+                        {{ __('Accedi') }}
                     </a>
                 </p>
             </div>

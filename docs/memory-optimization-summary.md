@@ -1,12 +1,4 @@
 ---
-title: "memory optimization summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "memory optimization summary"
-issues: []
-discussions: []
 module: theme
 topic: memory-optimization-summary
 canonical: ../../../Themes/docs/shared-components/memory-optimization-summary.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/memory-optimization-summary.md
+>>>>>>> 87273113 (.)

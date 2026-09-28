@@ -1,8 +1,4 @@
 ---
-type: note
-tags: [documentation]
-issues: []
-discussions: []
 id: "user-uppercase-application-dir"
 title: "User: Application/ in root è duplicato morto"
 status: review

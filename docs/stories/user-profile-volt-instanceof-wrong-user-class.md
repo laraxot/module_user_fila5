@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user profile volt instanceof wrong user class"
-issues: []
-discussions: []
 id: story-user-profile-volt-instanceof-wrong-user-class
 slug: story-user-profile-volt-instanceof-wrong-user-class
 title: "STORY — ProfileEditVoltComponent controllava instanceof contro la classe User sbagliata"

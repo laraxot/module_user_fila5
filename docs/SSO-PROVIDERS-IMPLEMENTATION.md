@@ -1,14 +1,3 @@
----
-title: "SSO PROVIDERS IMPLEMENTATION"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SSO PROVIDERS IMPLEMENTATION"
-issues: []
-discussions: []
----
-
 # User Module - SSO Providers Implementation
 
 ## Overview
@@ -310,14 +299,6 @@ test('can login user via SSO', function () {
 
 ---
 
-title: "SSO PROVIDERS IMPLEMENTATION"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SSO PROVIDERS IMPLEMENTATION"
-issues: []
-discussions: []
 **Autore**: Claude Code
 **Data**: 2025-10-15
 **Versione**: 1.0.0

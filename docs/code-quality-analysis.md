@@ -1,14 +1,3 @@
----
-title: "code quality analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality analysis"
-issues: []
-discussions: []
----
-
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -316,6 +305,7 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+>>>>>>> 87273113 (.)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

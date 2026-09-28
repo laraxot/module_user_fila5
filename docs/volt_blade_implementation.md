@@ -1,14 +1,3 @@
----
-title: "volt blade implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt blade implementation"
-issues: []
-discussions: []
----
-
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati

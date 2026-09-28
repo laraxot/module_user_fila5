@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpinsights errors"
-issues: []
-discussions: []
 title: "Phpinsights errors"
 type: reference
 status: active

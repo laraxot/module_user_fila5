@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "migrations"
-issues: []
-discussions: []
 title: User Module — Migrations & Schema
 created: 2026-07-15
 updated: 2026-07-15

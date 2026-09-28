@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dashboard lang collateral damage 2026 09 21.story"
-issues: []
-discussions: []
 id: story-dashboard-lang-collateral-damage-2026-09-21
 slug: dashboard-lang-collateral-damage-2026-09-21
 title: "STORY — 500 reale su /user/admin da file lang troncato, audit blast radius commit 0701a777a"

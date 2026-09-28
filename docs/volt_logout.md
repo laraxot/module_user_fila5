@@ -1,14 +1,3 @@
----
-title: "volt logout"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt logout"
-issues: []
-discussions: []
----
-
 # Implementazione del Logout con Volt
 
 ## Il Problema

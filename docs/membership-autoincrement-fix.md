@@ -1,12 +1,4 @@
 ---
-title: "membership autoincrement fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "membership autoincrement fix"
-issues: []
-discussions: []
 module: theme
 topic: membership-autoincrement-fix
 canonical: ../../../Themes/docs/shared-components/membership-autoincrement-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/membership-autoincrement-fix.md
+>>>>>>> 87273113 (.)

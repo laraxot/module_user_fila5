@@ -1,7 +1,4 @@
 ---
-qmd: "traits consolidated"
-issues: []
-discussions: []
 title: "traits — Consolidated Documentation"
 module: user
 type: integration

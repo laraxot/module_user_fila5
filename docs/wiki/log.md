@@ -21,8 +21,6 @@ related:
 
 ---
 
-- 2026-09-27: UX registrazione mobile — audit a 390 px rilevava card 318 px ma form 116 px; view Sixteen corretta con `w-full min-w-0` e aggiunto test Playwright per larghezza e overflow. Evidenza BMAD: [register-mobile-form-width](../bmad/register-mobile-form-width.md). E2E browser ancora da eseguire.
-
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
@@ -34,13 +32,6 @@ related:
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 # User Wiki Log
-
-## [2026-09-27] bugfix | Login guest italiano HTTP 500
-
-- Causa: `lang/it/login.php` non restituiva alcun array, quindi il loader riceveva `1` e falliva in `array_replace_recursive()` durante la costruzione dello schema Login.
-- Fix: catalogo IT completo per campi, azioni, messaggi e link login.
-- Verifica: Feature auth login 1 test / 4 asserzioni; suite auth mirata 8/19 senza skip; browser guest login/register 200, redirect profilo e altre route protette al login senza errori.
-- BMAD: [guest-login-italian-translation](../bmad/guest-login-italian-translation.md).
 
 ## [2026-06-05] arch | profiles schema — owner Fixcity, non User
 - migrazioni `create_profiles_table` User archiviate in `database/migrations/_bak/*.merged`

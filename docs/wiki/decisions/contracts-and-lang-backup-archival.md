@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "contracts-and-lang-backup-archival-2026-06-30"
 type: concept
 tags: [deprecated]

@@ -1,14 +1,3 @@
----
-title: "user quality gate 2026 09 04.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user quality gate 2026 09 04.story"
-issues: []
-discussions: []
----
-
 # Story: Quality-gate closure — Modules/User (2026-09-04)
 
 ## BMAD phase

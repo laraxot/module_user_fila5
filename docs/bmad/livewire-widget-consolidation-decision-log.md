@@ -1,12 +1,4 @@
 ---
-title: "livewire widget consolidation decision log"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget consolidation decision log"
-issues: []
-discussions: []
 canonical: ./decision-log.md
 superseded: true
 related:

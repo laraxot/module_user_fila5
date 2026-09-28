@@ -1,12 +1,4 @@
 ---
-title: "readme fullcalendar scheduler 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme fullcalendar scheduler 2"
-issues: []
-discussions: []
 module: theme
 topic: readme_fullcalendar_scheduler
 canonical: ../../../Themes/docs/shared-components/readme-fullcalendar-scheduler-2.md

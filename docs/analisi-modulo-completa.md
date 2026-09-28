@@ -1,14 +1,3 @@
----
-title: "analisi modulo completa"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi modulo completa"
-issues: []
-discussions: []
----
-
 # Analisi Completa del Modulo User
 
 ## Filosofia e Religione del Modulo

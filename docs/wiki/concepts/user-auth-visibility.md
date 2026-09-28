@@ -1,12 +1,4 @@
 ---
-title: "user auth visibility"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user auth visibility"
-issues: []
-discussions: []
 name: user-auth-visibility
 description: User list visibility rules for admin sections
 related:

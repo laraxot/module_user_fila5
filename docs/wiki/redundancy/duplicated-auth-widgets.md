@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-updated: 2026-09-26
-qmd: "duplicated auth widgets"
-discussions: []
 title: "Widget auth duplicati (LoginWidget / LogoutWidget)"
 type: redundancy
 owner: Modules/User

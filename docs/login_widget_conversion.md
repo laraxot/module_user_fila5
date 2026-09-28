@@ -1,14 +1,3 @@
----
-title: "login widget conversion"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login widget conversion"
-issues: []
-discussions: []
----
-
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire

@@ -1,12 +1,4 @@
 ---
-title: "login widget"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login widget"
-issues: []
-discussions: []
 module: theme
 topic: login-widget
 canonical: ../../../Themes/docs/shared-components/login-widget-analysis.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis.md
+>>>>>>> 87273113 (.)

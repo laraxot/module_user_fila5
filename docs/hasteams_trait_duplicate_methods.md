@@ -1,14 +1,3 @@
----
-title: "hasteams trait duplicate methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasteams trait duplicate methods"
-issues: []
-discussions: []
----
-
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -93,14 +82,6 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 
 ---
 
-title: "hasteams trait duplicate methods"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasteams trait duplicate methods"
-issues: []
-discussions: []
 > Questo documento va aggiornato ogni volta che si interviene sul trait HasTeams o si modificano le convenzioni di progetto relative ai trait e alle relazioni tra modelli. 
 
 ## Nota architetturale: TeamContract vs Team

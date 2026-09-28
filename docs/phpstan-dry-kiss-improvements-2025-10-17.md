@@ -1,14 +1,3 @@
----
-title: "phpstan dry kiss improvements 2025 10 17"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan dry kiss improvements 2025 10 17"
-issues: []
-discussions: []
----
-
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary
@@ -24,14 +13,6 @@ Il modulo User è stato analizzato e migliorato per conformità PHPStan Level 10
 
 ---
 
-title: "phpstan dry kiss improvements 2025 10 17"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan dry kiss improvements 2025 10 17"
-issues: []
-discussions: []
 ## Fixes Applied
 
 ### 1. PHPDoc References Fixed
@@ -248,6 +229,7 @@ When creating new models in User module:
 - [Model Inheritance Rules](./model-inheritance-rules.md)
 - [PHPStan Level 10 Full Analysis (Xot Module)](../../Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Model Refactoring 2025-10-15](../../Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
+>>>>>>> 87273113 (.)
 
 ---
 

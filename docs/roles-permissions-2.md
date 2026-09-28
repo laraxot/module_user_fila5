@@ -1,12 +1,4 @@
 ---
-title: "roles permissions 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roles permissions 2"
-issues: []
-discussions: []
 module: theme
 topic: roles-permissions-2
 canonical: ../../../Themes/docs/shared-components/roles-permissions-1.md

@@ -1,7 +1,4 @@
 ---
-qmd: "fix01"
-issues: []
-discussions: []
 title: 'Fix01'
 module: User
 type: reference

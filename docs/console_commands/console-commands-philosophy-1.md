@@ -17,6 +17,7 @@ related:
   - "./readme.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

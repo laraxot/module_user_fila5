@@ -1,14 +1,3 @@
----
-title: "volt folio auth implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio auth implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
@@ -547,14 +536,6 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 ---
-title: "volt folio auth implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio auth implementation"
-issues: []
-discussions: []
 module: theme
 topic: volt-folio-auth-implementation
 canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md

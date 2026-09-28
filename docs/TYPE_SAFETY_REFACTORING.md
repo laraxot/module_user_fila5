@@ -1,14 +1,3 @@
----
-title: "TYPE SAFETY REFACTORING"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "TYPE SAFETY REFACTORING"
-issues: []
-discussions: []
----
-
 # Type Safety Refactoring: Elimination of `mixed` Types
 
 **Session Date**: 2026-09-04  

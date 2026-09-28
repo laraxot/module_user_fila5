@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "filament ux architecture"
-issues: []
-discussions: []
 title: "Architecture — Audit UI/Filament modulo User (epic 12)"
 type: architecture
 module: User

@@ -1,14 +1,3 @@
----
-title: "logout blade implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -224,14 +213,6 @@ return redirect()->to('/' . $locale);
 
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
 ---
-title: "logout blade implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade implementation"
-issues: []
-discussions: []
 module: theme
 topic: logout-blade-implementation
 canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md

@@ -1,12 +1,4 @@
 ---
-title: "xotbasemigration laraxot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbasemigration laraxot philosophy"
-issues: []
-discussions: []
 module: theme
 topic: xotbasemigration-laraxot-philosophy
 canonical: ../../../Themes/docs/shared-components/xotbasemigration-laraxot-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-laraxot-philosophy.md
+>>>>>>> 87273113 (.)

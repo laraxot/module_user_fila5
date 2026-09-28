@@ -1,12 +1,4 @@
 ---
-title: "module analysis complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module analysis complete"
-issues: []
-discussions: []
 module: theme
 topic: module-analysis-complete
 canonical: ../../../Themes/docs/shared-components/module-analysis-complete.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-complete.md
+>>>>>>> 87273113 (.)

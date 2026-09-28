@@ -1,14 +1,3 @@
----
-title: "oauth access token permission self heal 2026 09 21.story"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "oauth access token permission self heal 2026 09 21.story"
-issues: []
-discussions: []
----
-
 # Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
 
 Status: done

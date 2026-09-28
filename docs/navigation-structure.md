@@ -1,14 +1,3 @@
----
-title: "navigation structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "navigation structure"
-issues: []
-discussions: []
----
-
 # Struttura Navigazione
 
 ## Overview
@@ -154,14 +143,6 @@ Event::dispatch('user.action', [
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
 ---
-title: "navigation structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "navigation structure"
-issues: []
-discussions: []
 module: theme
 topic: navigation-structure
 canonical: ../../../Themes/docs/shared-components/navigation-structure.md

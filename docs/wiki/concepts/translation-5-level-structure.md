@@ -1,7 +1,4 @@
 ---
-qmd: "translation 5 level structure"
-issues: []
-discussions: []
 title: "Translation 5-Level Structure - NEVER Use Full Sentences as Keys"
 type: concept
 confidence: high

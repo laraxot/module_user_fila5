@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan user contract fix"
-issues: []
-discussions: []
 id: bmad-phpstan-user-contract-fix
 track: bmad-v6.3
 module: User

@@ -1,14 +1,3 @@
----
-title: "phpmd phpinsights corrections "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpmd phpinsights corrections "
-issues: []
-discussions: []
----
-
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -113,14 +102,6 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
 ---
-title: "phpmd phpinsights corrections "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpmd phpinsights corrections "
-issues: []
-discussions: []
 module: theme
 topic: phpmd-phpinsights-corrections-
 canonical: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md

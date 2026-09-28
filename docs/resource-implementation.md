@@ -1,12 +1,4 @@
 ---
-title: "resource implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "resource implementation"
-issues: []
-discussions: []
 module: theme
 topic: resource-implementation
 canonical: ../../../Themes/docs/shared-components/resource-implementation-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-implementation-philosophy.md
+>>>>>>> 87273113 (.)

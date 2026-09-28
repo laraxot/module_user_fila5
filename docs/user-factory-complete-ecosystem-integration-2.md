@@ -1,12 +1,4 @@
 ---
-title: "user factory complete ecosystem integration 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user factory complete ecosystem integration 2"
-issues: []
-discussions: []
 module: theme
 topic: user_factory_complete_ecosystem_integration
 canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration-2.md

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "User — scopo, confini e come servirlo meglio"
 type: concept
 module: User

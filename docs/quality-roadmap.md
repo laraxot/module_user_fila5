@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: Quality roadmap — User
 type: concept
 tags: [user, quality, perfection, pest, phpstan, foundation]

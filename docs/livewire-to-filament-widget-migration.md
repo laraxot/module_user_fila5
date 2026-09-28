@@ -1,12 +1,4 @@
 ---
-title: "livewire to filament widget migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire to filament widget migration"
-issues: []
-discussions: []
 module: theme
 topic: livewire-to-filament-widget-migration
 canonical: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+>>>>>>> 87273113 (.)

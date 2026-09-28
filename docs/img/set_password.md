@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "set password"
-issues: []
-discussions: []
 title: "set_password"
 type: source
 module: User

@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "lfs resolution 2026 07 28"
-issues: []
-discussions: []
 title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved

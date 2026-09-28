@@ -1,14 +1,3 @@
----
-title: "user factory advanced integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user factory advanced integration"
-issues: []
-discussions: []
----
-
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
@@ -284,14 +273,6 @@ public function run(): void
 
 ---
 
-title: "user factory advanced integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user factory advanced integration"
-issues: []
-discussions: []
 **Status**: ✅ **PRODUCTION READY**  
 **Last Updated**: Gennaio 2025  
 **Maintenance**: Active development  

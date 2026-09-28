@@ -1,14 +1,3 @@
----
-title: "registration widget update"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "registration widget update"
-issues: []
-discussions: []
----
-
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15

@@ -1,7 +1,4 @@
 ---
-qmd: "implementation plan"
-issues: []
-discussions: []
 title: "Piano di Implementazione Componenti Header"
 module: user
 type: integration

@@ -1,12 +1,4 @@
 ---
-title: "migration unicity rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration unicity rule"
-issues: []
-discussions: []
 module: theme
 topic: migration-unicity-rule
 canonical: ../../../Themes/docs/shared-components/migration-unicity-rule.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-unicity-rule.md
+>>>>>>> 87273113 (.)

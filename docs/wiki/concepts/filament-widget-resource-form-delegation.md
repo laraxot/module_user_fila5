@@ -1,7 +1,4 @@
 ---
-qmd: "filament widget resource form delegation"
-issues: []
-discussions: []
 title: "Filament widget — delega schema a *ResourceForm"
 type: concept
 confidence: high

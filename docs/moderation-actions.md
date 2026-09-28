@@ -1,12 +1,4 @@
 ---
-title: "moderation actions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "moderation actions"
-issues: []
-discussions: []
 description:
 globs:
 alwaysApply: false
@@ -19,6 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+>>>>>>> 87273113 (.)
 ---
 # Azioni di Moderazione (Action class)
 

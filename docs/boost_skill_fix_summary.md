@@ -1,7 +1,4 @@
 ---
-qmd: "boost skill fix summary"
-issues: []
-discussions: []
 title: "Boost Skill Fix Summary - User Module"
 module: user
 type: integration

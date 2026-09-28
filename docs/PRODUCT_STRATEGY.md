@@ -1,7 +1,4 @@
 ---
-qmd: "PRODUCT STRATEGY"
-issues: []
-discussions: []
 title: "User Module - Product Strategy"
 module: user
 type: integration

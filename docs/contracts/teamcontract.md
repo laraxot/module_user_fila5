@@ -11,6 +11,7 @@ related:
   - "./hasteamsandusercontract.md"
 ---
 
+>>>>>>> 87273113 (.)
 # TeamContract
 
 L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.

@@ -1,14 +1,3 @@
----
-title: "legacy roadmap x"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap x"
-issues: []
-discussions: []
----
-
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "legacy roadmap x"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap x"
-issues: []
-discussions: []
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **User** è il fondamento dell'architettura, gestendo autenticazione, autorizzazione, profili utente e sistema di ruoli e permessi.

@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "advantages filament only"
-issues: []
-discussions: []
 title: "Vantaggi Architetturali: Solo Filament Widget"
 type: advantages
 module: User

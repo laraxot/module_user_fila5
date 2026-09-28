@@ -1,14 +1,3 @@
----
-title: "livewire namespace"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire namespace"
-issues: []
-discussions: []
----
-
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

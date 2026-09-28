@@ -1,12 +1,4 @@
 ---
-title: "login widget filament schema errors roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login widget filament schema errors roadmap"
-issues: []
-discussions: []
 module: theme
 topic: login-widget-filament-schema-errors-roadmap
 canonical: ../../../Themes/docs/shared-components/login-widget-filament-schema-errors-roadmap.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-filament-schema-errors-roadmap.md
+>>>>>>> 87273113 (.)

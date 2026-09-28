@@ -1,12 +1,4 @@
 ---
-title: "profile management 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "profile management 1"
-issues: []
-discussions: []
 module: theme
 topic: profile-management-1
 canonical: ../../../Themes/docs/shared-components/profile-management-2.md

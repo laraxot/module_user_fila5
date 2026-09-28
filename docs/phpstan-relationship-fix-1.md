@@ -1,12 +1,4 @@
 ---
-title: "phpstan relationship fix 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan relationship fix 1"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-relationship-fix-1
 canonical: ../../../Themes/docs/shared-components/phpstan-relationship-fix-2.md

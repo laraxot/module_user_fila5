@@ -1,7 +1,4 @@
 ---
-qmd: "INDEX"
-issues: []
-discussions: []
 title: "user — product"
 module: user
 type: product

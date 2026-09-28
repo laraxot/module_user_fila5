@@ -1,14 +1,3 @@
----
-title: "logout blade error analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade error analysis"
-issues: []
-discussions: []
----
-
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -122,14 +111,6 @@ Questi errori evidenziano l'importanza di:
 - Comprendere a fondo le classi base e le loro restrizioni
 - Rispettare le convenzioni e le strutture del progetto SaluteOra
 ---
-title: "logout blade error analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade error analysis"
-issues: []
-discussions: []
 module: theme
 topic: logout-blade-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md

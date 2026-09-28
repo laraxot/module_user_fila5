@@ -18,6 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
+>>>>>>> 87273113 (.)
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

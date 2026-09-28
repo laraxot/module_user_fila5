@@ -1,7 +1,4 @@
 ---
-qmd: "team consolidated"
-issues: []
-discussions: []
 title: "team — Consolidated Documentation"
 module: user
 type: integration

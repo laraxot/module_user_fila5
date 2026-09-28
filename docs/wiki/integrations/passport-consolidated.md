@@ -1,7 +1,4 @@
 ---
-qmd: "passport consolidated"
-issues: []
-discussions: []
 title: "passport — Consolidated Documentation"
 module: user
 type: integration

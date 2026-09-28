@@ -1,12 +1,4 @@
 ---
-title: "translation city field refactor 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation city field refactor 2"
-issues: []
-discussions: []
 module: theme
 topic: translation-city-field-refactor-2
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-.md

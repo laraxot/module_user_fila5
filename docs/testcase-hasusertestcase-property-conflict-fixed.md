@@ -1,7 +1,4 @@
 ---
-qmd: "testcase hasusertestcase property conflict fixed"
-issues: []
-discussions: []
 title: "Fatal error risolto: TestCase vs HasUserTestCase - conflitto proprietà $user"
 module: "User"
 type: bugfix

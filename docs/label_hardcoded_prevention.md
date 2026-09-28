@@ -1,7 +1,4 @@
 ---
-qmd: "label hardcoded prevention"
-issues: []
-discussions: []
 title: "Prevenzione ->label() Hardcoded - Modulo User"
 module: user
 type: integration

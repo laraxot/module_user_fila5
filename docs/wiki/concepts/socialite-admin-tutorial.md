@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "socialite admin tutorial"
-issues: []
-discussions: []
 title: Tutorial Admin — Configurare Google OAuth (GOOGLE_CLIENT_ID/SECRET)
 type: tutorial
 module: User

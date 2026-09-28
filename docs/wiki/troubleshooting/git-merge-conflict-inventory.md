@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Git — inventario conflitti merge (User)"
 type: troubleshooting
 module: User

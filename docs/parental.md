@@ -1,12 +1,4 @@
 ---
-title: "parental"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "parental"
-issues: []
-discussions: []
 module: theme
 topic: parental
 canonical: ../../../Themes/docs/shared-components/parental.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/parental.md
+>>>>>>> 87273113 (.)

@@ -1,14 +1,3 @@
----
-title: "SPATIE PERMISSIONS METHODS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SPATIE PERMISSIONS METHODS"
-issues: []
-discussions: []
----
-
 # User Module - Spatie Permission Methods Reference
 
 ## Overview
@@ -495,14 +484,6 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 ---
 
-title: "SPATIE PERMISSIONS METHODS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SPATIE PERMISSIONS METHODS"
-issues: []
-discussions: []
 **Autore**: Claude Code
 **Data**: 2025-10-15
 **Versione**: 1.0.0

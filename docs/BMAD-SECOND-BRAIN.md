@@ -1,14 +1,3 @@
----
-title: "BMAD SECOND BRAIN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "BMAD SECOND BRAIN"
-issues: []
-discussions: []
----
-
 # BMAD + Second Brain — Fix Log
 
 ## Diagnosi

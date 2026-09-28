@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpmd report"
-issues: []
-discussions: []
 title: "Phpmd report"
 type: reference
 status: active

@@ -1,12 +1,4 @@
 ---
-title: "navigation translations fixes january 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "navigation translations fixes january 1"
-issues: []
-discussions: []
 module: theme
 topic: navigation-translations-fixes-january-1
 canonical: ../../../Themes/docs/shared-components/navigation-translations-fixes-january-2026.md

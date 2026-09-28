@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []
 title: "User — BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo User"
 module: "User"
@@ -16,12 +9,6 @@ bmad_track: "core-identity"
 ---
 
 # User — BMAD Method Integration
-
-## Difetti verificati recenti
-
-- [Login ospite IT — catalogo traduzioni mancante](guest-login-italian-translation.md): corretto il catalogo vuoto `lang/it/login.php` che causava HTTP 500 e coperto dal Feature test della pagina.
-- [Login EN — parità traduzioni CTA](english-login-translation-parity.md): aggiunte le traduzioni owner mancanti per registrazione e recupero password.
-- [Registrazione mobile — larghezza form](register-mobile-form-width.md): corretto il form compresso a 390 px e aggiunta una verifica Playwright responsive.
 
 ## Scopo BMAD per User
 

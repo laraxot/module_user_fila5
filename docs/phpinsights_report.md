@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "phpinsights report"
-issues: []
-discussions: []
 title: "Phpinsights report"
 type: reference
 status: active

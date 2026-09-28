@@ -1,12 +1,4 @@
 ---
-title: "phpstan corrections"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan corrections"
-issues: []
-discussions: []
 module: theme
 topic: phpstan-corrections
 canonical: ../../../Themes/docs/shared-components/phpstan-corrections-Modules.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-Modules.md
+>>>>>>> 87273113 (.)

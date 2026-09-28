@@ -1,12 +1,4 @@
 ---
-title: "roles migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roles migration"
-issues: []
-discussions: []
 module: theme
 topic: roles-migration
 canonical: ../../../Themes/docs/shared-components/roles-migration-philosophy-fix.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/roles-migration-philosophy-fix.md
+>>>>>>> 87273113 (.)

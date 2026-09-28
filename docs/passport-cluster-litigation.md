@@ -1,12 +1,4 @@
 ---
-title: "passport cluster litigation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "passport cluster litigation"
-issues: []
-discussions: []
 module: theme
 topic: passport-cluster-litigation
 canonical: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
+>>>>>>> 87273113 (.)

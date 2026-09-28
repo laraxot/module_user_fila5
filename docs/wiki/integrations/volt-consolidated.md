@@ -1,7 +1,4 @@
 ---
-qmd: "volt consolidated"
-issues: []
-discussions: []
 title: "volt — Consolidated Documentation"
 module: user
 type: integration

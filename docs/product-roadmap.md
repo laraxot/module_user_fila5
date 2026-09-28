@@ -1,14 +1,3 @@
----
-title: "product roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product roadmap"
-issues: []
-discussions: []
----
-
 # User Module - Product Roadmap
 
 **Module:** User  
@@ -19,14 +8,6 @@ discussions: []
 
 ---
 
-title: "product roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product roadmap"
-issues: []
-discussions: []
 ## Vision Statement
 
 To build a **comprehensive user management system** that provides secure authentication, rich user profiles, and seamless identity management while respecting privacy and enabling personalized experiences.

@@ -1,7 +1,4 @@
 ---
-qmd: "push"
-issues: []
-discussions: []
 title: 'Push'
 module: User
 type: reference

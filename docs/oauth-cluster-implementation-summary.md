@@ -1,12 +1,4 @@
 ---
-title: "oauth cluster implementation summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "oauth cluster implementation summary"
-issues: []
-discussions: []
 module: theme
 topic: oauth-cluster-implementation-summary
 canonical: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
+>>>>>>> 87273113 (.)

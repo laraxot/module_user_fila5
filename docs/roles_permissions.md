@@ -1,14 +1,3 @@
----
-title: "roles permissions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roles permissions"
-issues: []
-discussions: []
----
-
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

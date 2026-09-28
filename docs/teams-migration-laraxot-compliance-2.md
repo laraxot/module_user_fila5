@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "2025-12-01-teams-migration-laraxot-compliance"
 type: concept
 tags: [deprecated]

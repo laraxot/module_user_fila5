@@ -1,7 +1,4 @@
 ---
-qmd: "architecture"
-issues: []
-discussions: []
 title: "User Module Architecture"
 type: architecture
 tags: [module, architecture, design]

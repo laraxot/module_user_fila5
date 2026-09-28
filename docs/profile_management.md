@@ -1,7 +1,4 @@
 ---
-qmd: "profile management"
-issues: []
-discussions: []
 title: "Profile Management in Laravel Modules"
 module: user
 type: integration

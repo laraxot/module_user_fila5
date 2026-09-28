@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "phpstan-widget-property-types-2026-05-06.deprecated"
 type: concept
 tags: [deprecated]

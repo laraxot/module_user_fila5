@@ -1,7 +1,4 @@
 ---
-qmd: "coverage clean"
-issues: []
-discussions: []
 title: 'Coverage clean'
 module: User
 type: reference

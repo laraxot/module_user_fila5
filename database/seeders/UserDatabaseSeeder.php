@@ -42,9 +42,9 @@ class UserDatabaseSeeder extends Seeder
             PermissionRoleSeeder::class,
             PermissionUserSeeder::class,
             PersonalAccessTokenSeeder::class,
+            ProfileSeeder::class,
             ProfileTeamSeeder::class,
             RoleSeeder::class,
-            DemoUserSeeder::class,
             RoleHasPermissionSeeder::class,
             SocialiteUserSeeder::class,
             SocialProviderSeeder::class,
@@ -55,7 +55,6 @@ class UserDatabaseSeeder extends Seeder
             TeamUserSeeder::class,
             TenantSeeder::class,
             TenantUserSeeder::class,
-            ProfileSeeder::class,
         ]);
 
         if (null !== $this->command) {

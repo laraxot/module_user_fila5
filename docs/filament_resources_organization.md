@@ -1,14 +1,3 @@
----
-title: "filament resources organization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament resources organization"
-issues: []
-discussions: []
----
-
 # Organization of Filament Resources
 
 ## Namespace Structure

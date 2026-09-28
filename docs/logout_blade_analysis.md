@@ -1,14 +1,3 @@
----
-title: "logout blade analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout blade analysis"
-issues: []
-discussions: []
----
-
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati

@@ -1,14 +1,3 @@
----
-title: "logout security"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logout security"
-issues: []
-discussions: []
----
-
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza

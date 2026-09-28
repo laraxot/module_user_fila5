@@ -1,14 +1,3 @@
----
-title: "PROFILE UUID PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PROFILE UUID PHILOSOPHY"
-issues: []
-discussions: []
----
-
 # Profile UUID Philosophy - Zen Approach
 
 ## Il Problema (What)
@@ -32,14 +21,6 @@ profiles:
 
 ---
 
-title: "PROFILE UUID PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PROFILE UUID PHILOSOPHY"
-issues: []
-discussions: []
 ## Il Perché - La Filosofia (Why)
 
 ### 1. Architettura a Doppia Chiave (Dual Key Architecture)

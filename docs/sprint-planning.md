@@ -1,7 +1,4 @@
 ---
-qmd: "sprint planning"
-issues: []
-discussions: []
 title: "User Module - Sprint Planning"
 module: user
 type: integration

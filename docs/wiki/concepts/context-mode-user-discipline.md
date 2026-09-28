@@ -1,7 +1,4 @@
 ---
-qmd: "context mode user discipline"
-issues: []
-discussions: []
 title: "User Module — Context-Mode Discipline"
 type: "rule"
 tags: [user, context-mode, atomic-wiki, filament-translations]

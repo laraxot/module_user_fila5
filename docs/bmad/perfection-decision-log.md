@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "perfection decision log"
-issues: []
-discussions: []
 title: "Decision log — Perfezione assoluta del modulo User"
 type: decision-log
 module: User

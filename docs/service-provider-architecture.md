@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: 2026-01-07
@@ -219,6 +220,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 ```json
 {
     "name": "laraxot/module_user_fila5",
+>>>>>>> 87273113 (.)
     "extra": {
         "laravel": {
             "providers": [
@@ -388,6 +390,7 @@ test('user service provider only configures, not registers dependencies', functi
 ### Documentazione Correlata
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
+>>>>>>> 87273113 (.)
 - [README.md](./readme.md) - Overview modulo
 
 ### Documentazione Esterna

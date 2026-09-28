@@ -1,14 +1,3 @@
----
-title: "auth pages implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth pages implementation"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati

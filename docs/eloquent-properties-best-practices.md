@@ -1,12 +1,4 @@
 ---
-title: "eloquent properties best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "eloquent properties best practices"
-issues: []
-discussions: []
 module: theme
 topic: eloquent-properties-best-practices
 canonical: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
+>>>>>>> 87273113 (.)

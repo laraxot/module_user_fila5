@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cache store env var test infra 2026 09 21.story"
-issues: []
-discussions: []
 id: cache-store-env-var-test-infra-2026-09-21
 slug: cache-store-env-var-test-infra-2026-09-21
 title: "phpunit.xml usava CACHE_DRIVER, Laravel legge CACHE_STORE"

@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Collection;
 use Modules\User\Models\Role;
 
 /**
@@ -32,7 +31,7 @@ interface HasTeamsContract
     /**
      * Get the current team of the user's context.
      *
-     * @return BelongsTo<Model&TeamContract, Model>
+     * @return BelongsTo<Model, Model>
      */
     public function currentTeam(): BelongsTo;
 
@@ -44,14 +43,14 @@ interface HasTeamsContract
     /**
      * Get all of the teams the user owns or belongs to.
      *
-     * @return Collection<int, Model&TeamContract>
+     * @return \Illuminate\Support\Collection<int, Model>
      */
-    public function allTeams(): Collection;
+    public function allTeams(): \Illuminate\Support\Collection;
 
     /**
      * Get all of the teams the user owns.
      *
-     * @return HasMany<Model&TeamContract, Model>
+     * @return HasMany<Model, Model>
      */
     public function ownedTeams(): HasMany;
 

@@ -1,12 +1,4 @@
 ---
-title: "spatie permission philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "spatie permission philosophy"
-issues: []
-discussions: []
 module: theme
 topic: spatie-permission-philosophy
 canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+>>>>>>> 87273113 (.)

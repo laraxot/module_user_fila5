@@ -1,12 +1,4 @@
 ---
-title: "volts"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volts"
-issues: []
-discussions: []
 module: theme
 topic: volts
 canonical: ../../../Themes/docs/shared-components/volt-errors.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md
+>>>>>>> 87273113 (.)

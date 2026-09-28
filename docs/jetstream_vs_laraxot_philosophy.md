@@ -1,14 +1,3 @@
----
-title: "jetstream vs laraxot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "jetstream vs laraxot philosophy"
-issues: []
-discussions: []
----
-
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**
@@ -439,14 +428,6 @@ Un trait che **rispetta la religione Jetstream** ma **evolve con la filosofia La
 
 ---
 
-title: "jetstream vs laraxot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "jetstream vs laraxot philosophy"
-issues: []
-discussions: []
 **Data creazione**: 10 giugno 2025  
 **Conformità**: Laravel Jetstream 5.x + Laraxot PTVX Philosophy  
 **PHPStan**: Level 9+ Compliant

@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ux design"
-issues: []
-discussions: []
 title: "UX — SuperAdmin user menu"
 type: ux-design
 module: User

@@ -1,14 +1,3 @@
----
-title: "team bindings fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "team bindings fix"
-issues: []
-discussions: []
----
-
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -180,14 +169,6 @@ $this->assertTrue($user->belongsToTeam($team));
 
 ---
 
-title: "team bindings fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "team bindings fix"
-issues: []
-discussions: []
 **Autore**: AI Assistant  
 **Data**: Gennaio 2025  
 **Versione**: 1.0  

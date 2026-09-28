@@ -1,14 +1,3 @@
----
-title: "volt blade implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt blade implementation error"
-issues: []
-discussions: []
----
-
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
@@ -103,14 +92,6 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
 ---
-title: "volt blade implementation error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt blade implementation error"
-issues: []
-discussions: []
 module: theme
 topic: volt-blade-implementation-error
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md

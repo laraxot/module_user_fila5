@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "assert isinstanceof usercontract audit 2026 09 21.story"
-issues: []
-discussions: []
 id: story-assert-isinstanceof-usercontract-audit-2026-09-21
 slug: assert-isinstanceof-usercontract-audit-2026-09-21
 title: "STORY — Assert::isInstanceOf contro Model concreto invece di UserContract, audit repo-wide"

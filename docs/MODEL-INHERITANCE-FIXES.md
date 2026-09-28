@@ -1,14 +1,3 @@
----
-title: "MODEL INHERITANCE FIXES"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MODEL INHERITANCE FIXES"
-issues: []
-discussions: []
----
-
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -34,14 +23,6 @@ class Tenant extends BaseModel
 
 ---
 
-title: "MODEL INHERITANCE FIXES"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MODEL INHERITANCE FIXES"
-issues: []
-discussions: []
 ### 2. TeamUser.php
 **Prima:**
 ```php

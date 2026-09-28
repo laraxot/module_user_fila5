@@ -1,12 +1,4 @@
 ---
-title: "phpstan fixes 8"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes 8"
-issues: []
-discussions: []
 module: theme
 topic: phpstan_fixes
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-8.md

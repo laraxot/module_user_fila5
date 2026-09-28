@@ -1,12 +1,4 @@
 ---
-title: "testing rules 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing rules 2"
-issues: []
-discussions: []
 module: theme
 topic: testing_rules
 canonical: ../../../Themes/docs/shared-components/testing-rules-2.md

@@ -1,7 +1,4 @@
 ---
-qmd: "session management"
-issues: []
-discussions: []
 title: "Gestione delle Sessioni"
 module: user
 type: integration

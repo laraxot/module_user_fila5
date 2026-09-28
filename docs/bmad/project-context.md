@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project context"
-issues: []
-discussions: []
 title: "Project context — SuperAdmin widget"
 type: constitution
 module: User

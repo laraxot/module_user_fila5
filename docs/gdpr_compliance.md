@@ -1,7 +1,4 @@
 ---
-qmd: "gdpr compliance"
-issues: []
-discussions: []
 title: "GDPR Compliance Guide for Registration"
 module: user
 type: integration

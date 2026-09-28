@@ -1,12 +1,4 @@
 ---
-title: "passport cluster implementation status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "passport cluster implementation status"
-issues: []
-discussions: []
 module: theme
 topic: passport-cluster-implementation-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
+>>>>>>> 87273113 (.)

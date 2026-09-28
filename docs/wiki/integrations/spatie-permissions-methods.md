@@ -1,7 +1,4 @@
 ---
-qmd: "spatie permissions methods"
-issues: []
-discussions: []
 title: "User Module - Spatie Permission Methods Reference"
 module: user
 type: integration

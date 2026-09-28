@@ -1,5 +1,4 @@
 ---
-discussions: []
 title: "notifications — named route Folio (FO)"
 type: concept
 tags: [user, notifications, folio, frontoffice, route]

@@ -1,14 +1,3 @@
----
-title: "legacy roadmap complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap complete"
-issues: []
-discussions: []
----
-
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -28,14 +17,6 @@ Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione ut
 
 ---
 
-title: "legacy roadmap complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "legacy roadmap complete"
-issues: []
-discussions: []
 ## 🎯 Funzionalità Implementate
 
 ### ✅ Core Authentication

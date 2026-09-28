@@ -1,14 +1,3 @@
----
-title: "volt folio logout"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio logout"
-issues: []
-discussions: []
----
-
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati

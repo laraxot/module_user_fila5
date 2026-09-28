@@ -1,14 +1,3 @@
----
-title: "traits complete guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "traits complete guide"
-issues: []
-discussions: []
----
-
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -118,14 +107,6 @@ trait HasTeams
     use RelationX;
 
 ---
-title: "traits complete guide"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "traits complete guide"
-issues: []
-discussions: []
 module: theme
 topic: traits-complete-guide
 canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
@@ -141,3 +122,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-complete-guide.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

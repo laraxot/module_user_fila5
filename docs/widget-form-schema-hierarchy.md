@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Widget del modulo User: il form sta su getFormSchema(), non su getFormSchemaOld()"
 module: "User"
 type: rule

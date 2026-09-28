@@ -1,12 +1,4 @@
 ---
-title: "product launch plan 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product launch plan 1"
-issues: []
-discussions: []
 module: theme
 topic: product-launch-plan-1
 canonical: ../../../Themes/docs/shared-components/product-launch-plan-2.md

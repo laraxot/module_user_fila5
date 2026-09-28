@@ -1,12 +1,4 @@
 ---
-title: "nestedset migration best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "nestedset migration best practices"
-issues: []
-discussions: []
 module: theme
 topic: nestedset-migration-best-practices
 canonical: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md
+>>>>>>> 87273113 (.)

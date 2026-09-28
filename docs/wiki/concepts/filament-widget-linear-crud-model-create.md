@@ -1,7 +1,4 @@
 ---
-qmd: "filament widget linear crud model create"
-issues: []
-discussions: []
 title: "RegisterWidget — create lineare, no Action"
 type: concept
 confidence: high

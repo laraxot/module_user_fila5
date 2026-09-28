@@ -1,14 +1,3 @@
----
-title: "phpstan fix plan "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fix plan "
-issues: []
-discussions: []
----
-
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status
@@ -43,14 +32,6 @@ This confirms that the project is using a version of Filament where Forms seem t
 - Search for `Grid.php`.
 - Update `OauthClientResource` imports.
 ---
-title: "phpstan fix plan "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fix plan "
-issues: []
-discussions: []
 module: theme
 topic: phpstan-fix-plan-
 canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md

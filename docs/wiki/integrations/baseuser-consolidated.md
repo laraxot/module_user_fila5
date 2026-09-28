@@ -1,7 +1,4 @@
 ---
-qmd: "baseuser consolidated"
-issues: []
-discussions: []
 title: "baseuser — Consolidated Documentation"
 module: user
 type: integration

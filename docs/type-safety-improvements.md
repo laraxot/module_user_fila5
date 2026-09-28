@@ -1,12 +1,4 @@
 ---
-title: "type safety improvements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "type safety improvements"
-issues: []
-discussions: []
 module: theme
 topic: type-safety-improvements
 canonical: ../../../Themes/docs/shared-components/type-safety-improvements.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/type-safety-improvements.md
+>>>>>>> 87273113 (.)

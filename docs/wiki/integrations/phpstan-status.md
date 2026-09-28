@@ -1,7 +1,4 @@
 ---
-qmd: "phpstan status"
-issues: []
-discussions: []
 title: "PHPStan Status — User Module"
 module: user
 type: integration

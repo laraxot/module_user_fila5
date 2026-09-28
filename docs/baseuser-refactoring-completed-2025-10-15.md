@@ -1,14 +1,3 @@
----
-title: "baseuser refactoring completed 2025 10 15"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "baseuser refactoring completed 2025 10 15"
-issues: []
-discussions: []
----
-
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -250,6 +239,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./README.md)
+>>>>>>> 87273113 (.)
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)
@@ -350,14 +340,6 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 
 ---
 
-title: "baseuser refactoring completed 2025 10 15"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "baseuser refactoring completed 2025 10 15"
-issues: []
-discussions: []
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH

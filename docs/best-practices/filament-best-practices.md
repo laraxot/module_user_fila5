@@ -18,6 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Best Practices per Risorse Filament nel Modulo User
 
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo User.

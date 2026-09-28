@@ -1,7 +1,4 @@
 ---
-qmd: "TESTING.DIVERGENZA"
-issues: []
-discussions: []
 title: "Divergenza da riconciliare: TESTING.md"
 module: User
 type: note

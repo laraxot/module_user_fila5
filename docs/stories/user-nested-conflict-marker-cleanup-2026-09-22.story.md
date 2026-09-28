@@ -1,10 +1,4 @@
 ---
-type: note
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "user nested conflict marker cleanup 2026 09 22.story"
-issues: []
-discussions: []
 id: user-nested-conflict-marker-cleanup-2026-09-22
 slug: user-nested-conflict-marker-cleanup-2026-09-22
 title: "User: rimozione marker di conflitto Git annidati residui (commit daemon 87273113/f548be94/2024e2e7) + disposizione .wip/.corrected"

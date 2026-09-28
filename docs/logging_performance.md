@@ -1,7 +1,4 @@
 ---
-qmd: "logging performance"
-issues: []
-discussions: []
 title: "Logging Performance Optimization"
 module: user
 type: integration

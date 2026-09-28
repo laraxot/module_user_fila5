@@ -1,12 +1,4 @@
 ---
-title: "teams relation manager 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "teams relation manager 2"
-issues: []
-discussions: []
 module: theme
 topic: teams-relation-manager-2
 canonical: ../../../../Themes/docs/shared-components/teams-relation-manager-1.md

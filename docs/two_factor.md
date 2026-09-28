@@ -1,7 +1,4 @@
 ---
-qmd: "two factor"
-issues: []
-discussions: []
 title: "two factor"
 module: user
 type: integration

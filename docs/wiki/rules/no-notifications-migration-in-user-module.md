@@ -1,6 +1,4 @@
 ---
-created: 2026-09-26
-updated: 2026-09-26
 title: vietato create_notifications_table nel modulo User
 type: rule
 tags:

@@ -1,14 +1,3 @@
----
-title: "terms and conditions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "terms and conditions"
-issues: []
-discussions: []
----
-
 # terms_and_conditions - User
 
 ## Overview

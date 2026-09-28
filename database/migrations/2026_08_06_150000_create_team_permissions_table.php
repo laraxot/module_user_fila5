@@ -6,8 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     protected ?string $model_class = TeamPermission::class;
 
     /**
@@ -91,12 +90,25 @@ return new class extends XotBaseMigration
      */
     private function localHasForeignKey(string $constraintName): bool
     {
-        foreach ($this->getConn()->getForeignKeys($this->getTable()) as $foreignKey) {
-            if ($foreignKey['name'] === $constraintName) {
-                return true;
-            }
+        $connection = $this->getConn()->getConnection();
+        $database = $connection->getDatabaseName();
+        $table = $this->getTable();
+
+        $query = "SELECT COUNT(*) as count
+              FROM information_schema.table_constraints
+              WHERE table_schema = ?
+              AND table_name = ?
+              AND constraint_name = ?
+              AND constraint_type = 'FOREIGN KEY'";
+
+        $result = $connection->selectOne($query, [$database, $table, $constraintName]);
+
+        if (! is_object($result) || ! property_exists($result, 'count')) {
+            return false;
         }
 
-        return false;
+        $count = $result->count;
+
+        return is_numeric($count) && ((int) $count) > 0;
     }
 };

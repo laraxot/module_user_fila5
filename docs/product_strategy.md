@@ -1,14 +1,3 @@
----
-title: "product strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product strategy"
-issues: []
-discussions: []
----
-
 # User Module - Product Strategy
 
 **Module:** User  
@@ -18,14 +7,6 @@ discussions: []
 
 ---
 
-title: "product strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product strategy"
-issues: []
-discussions: []
 ## Executive Summary
 
 The User module provides foundational identity and access management capabilities, enabling secure authentication, rich user profiles, and privacy-compliant data management across the platform.

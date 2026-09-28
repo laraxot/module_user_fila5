@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quick reference"
-issues: []
-discussions: []
 title: "User — BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo User"
 module: "User"

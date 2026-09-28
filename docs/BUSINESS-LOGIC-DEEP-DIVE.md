@@ -1,14 +1,3 @@
----
-title: "BUSINESS LOGIC DEEP DIVE"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "BUSINESS LOGIC DEEP DIVE"
-issues: []
-discussions: []
----
-
 # User Module - Business Logic Deep Dive
 
 ## 🎯 Module Overview

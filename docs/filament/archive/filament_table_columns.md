@@ -1,14 +1,3 @@
----
-title: "filament table columns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament table columns"
-issues: []
-discussions: []
----
-
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -47,14 +36,6 @@ public function getTableColumns(): array
 
 ---
 
-title: "filament table columns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament table columns"
-issues: []
-discussions: []
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ---

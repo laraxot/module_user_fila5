@@ -1,7 +1,4 @@
 ---
-qmd: "quick start"
-issues: []
-discussions: []
 title: "User Module Quick Start"
 type: guide
 tags: [user, authentication, quick-start]

@@ -1,10 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module excellence architecture"
-issues: []
-discussions: []
 title: "Architecture — User module: stato attuale vs perfezione assoluta"
 type: architecture
 module: User

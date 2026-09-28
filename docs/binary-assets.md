@@ -1,7 +1,4 @@
 ---
-qmd: "binary assets"
-issues: []
-discussions: []
 title: "Asset binari"
 module: user
 type: integration

@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "advantages filament widgets over livewire"
-issues: []
-discussions: []
 title: "Puntatore — vantaggi widget"
 canonical: ./advantages-filament-only.md
 superseded: true

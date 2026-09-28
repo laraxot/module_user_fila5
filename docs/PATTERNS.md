@@ -1,7 +1,4 @@
 ---
-qmd: "PATTERNS"
-issues: []
-discussions: []
 title: "User Module Patterns & Best Practices"
 type: guide
 tags: [user, patterns, best-practices]

@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Models/Contracts — capacità Eloquent nel modulo User"
 type: concept
 module: User

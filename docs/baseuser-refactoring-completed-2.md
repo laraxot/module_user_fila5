@@ -1,12 +1,4 @@
 ---
-title: "baseuser refactoring completed 2"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "baseuser refactoring completed 2"
-issues: []
-discussions: []
 module: theme
 topic: baseuser-refactoring-completed-2
 canonical: ../../../Themes/docs/shared-components/baseuser-refactoring-completed-.md

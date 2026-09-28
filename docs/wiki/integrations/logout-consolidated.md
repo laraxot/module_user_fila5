@@ -1,7 +1,4 @@
 ---
-qmd: "logout consolidated"
-issues: []
-discussions: []
 title: "logout — Consolidated Documentation"
 module: user
 type: integration

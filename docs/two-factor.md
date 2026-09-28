@@ -1,12 +1,4 @@
 ---
-title: "two factor"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "two factor"
-issues: []
-discussions: []
 module: theme
 topic: two-factor
 canonical: ../../../Themes/docs/shared-components/two-factor-2.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
+>>>>>>> 87273113 (.)

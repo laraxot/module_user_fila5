@@ -1,7 +1,4 @@
 ---
-qmd: "optimization recommendations"
-issues: []
-discussions: []
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 module: user
 type: integration

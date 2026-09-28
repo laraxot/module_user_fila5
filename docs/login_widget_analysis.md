@@ -1,14 +1,3 @@
----
-title: "login widget analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login widget analysis"
-issues: []
-discussions: []
----
-
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`  

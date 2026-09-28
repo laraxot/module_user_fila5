@@ -1,14 +1,3 @@
----
-title: "hasteams trait filosofia e correzione completa"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasteams trait filosofia e correzione completa"
-issues: []
-discussions: []
----
-
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -310,14 +299,6 @@ Il trait `HasTeams` ora è:
 
 ---
 
-title: "hasteams trait filosofia e correzione completa"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "hasteams trait filosofia e correzione completa"
-issues: []
-discussions: []
 **Data correzione**: Gennaio 2025  
 **Status**: ✅ **COMPLETATO**  
 **Conformità**: Laraxot PTVX Philosophy, PHPStan Level 9+, Windsurf Rules

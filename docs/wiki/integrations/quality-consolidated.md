@@ -1,7 +1,4 @@
 ---
-qmd: "quality consolidated"
-issues: []
-discussions: []
 title: "quality — Consolidated Documentation"
 module: user
 type: integration

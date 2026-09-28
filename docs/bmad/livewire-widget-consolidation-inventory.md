@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "livewire widget consolidation inventory"
-issues: []
-discussions: []
 title: "Puntatore — consolidation inventory"
 canonical: ./livewire-inventory.md
 superseded: true

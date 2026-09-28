@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "xotbaseresourcetable model audit user module batch.story"
-issues: []
-discussions: []
 title: "XotBaseResourceTable: audit \$model + verifica colonne (batch modulo User)"
 type: story
 module: User

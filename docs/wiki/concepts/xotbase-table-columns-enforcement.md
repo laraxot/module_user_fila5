@@ -1,7 +1,4 @@
 ---
-qmd: "xotbase table columns enforcement"
-issues: []
-discussions: []
 title: "XotBaseResourceTable Columns Enforcement — User Module"
 type: concept
 sources: []

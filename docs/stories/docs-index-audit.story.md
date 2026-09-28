@@ -1,9 +1,4 @@
 ---
-title: "docs index audit.story"
-tags: [documentation]
-created: 2026-09-26
-issues: []
-discussions: []
 status: done
 scope: module:User
 type: docs

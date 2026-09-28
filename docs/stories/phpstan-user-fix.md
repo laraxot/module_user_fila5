@@ -1,11 +1,4 @@
 ---
-title: "phpstan user fix"
-type: note
-tags: [documentation]
-updated: 2026-09-26
-qmd: "phpstan user fix"
-issues: []
-discussions: []
 id: phpstan-user-fix
 slug: phpstan-user
 scope: [module:User, project:base_workorder_fila5]

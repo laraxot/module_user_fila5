@@ -1,14 +1,3 @@
----
-title: "fullcalendar scheduler license troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fullcalendar scheduler license troubleshooting"
-issues: []
-discussions: []
----
-
 # FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata
 
 ## Panoramica

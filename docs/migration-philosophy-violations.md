@@ -1,12 +1,4 @@
 ---
-title: "migration philosophy violations"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration philosophy violations"
-issues: []
-discussions: []
 module: theme
 topic: migration-philosophy-violations
 canonical: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+>>>>>>> 87273113 (.)

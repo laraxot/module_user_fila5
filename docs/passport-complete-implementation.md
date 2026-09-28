@@ -1,12 +1,4 @@
 ---
-title: "passport complete implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "passport complete implementation"
-issues: []
-discussions: []
 module: theme
 topic: passport-complete-implementation
 canonical: ../../../Themes/docs/shared-components/passport-complete-implementation.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-implementation.md
+>>>>>>> 87273113 (.)

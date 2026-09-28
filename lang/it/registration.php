@@ -3,15 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'submit' => 'Crea account',
-    'already_registered' => 'Hai già un account?',
-    'actions' => [
-        'register' => [
-            'label' => 'Crea account',
-            'success' => 'Registrazione completata.',
-            'error' => 'Non è stato possibile completare la registrazione.',
-        ],
-    ],
     'messages' => [
         'welcome' => 'Benvenuto nella procedura di registrazione',
         'step_completed' => 'Passaggio completato con successo',

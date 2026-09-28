@@ -1,8 +1,4 @@
 ---
-tags: [documentation]
-qmd: "user module closure 2026 09 11.story"
-issues: []
-discussions: []
 title: "User: chiusura modulo 2026-09-11 — quality gate + sync git dopo saga XotBaseManageRelatedRecords"
 type: story
 module: User

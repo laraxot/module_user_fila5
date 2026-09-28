@@ -1,12 +1,4 @@
 ---
-title: "quality improvements summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quality improvements summary"
-issues: []
-discussions: []
 module: theme
 topic: quality-improvements-summary
 canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
@@ -22,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+>>>>>>> 87273113 (.)

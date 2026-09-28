@@ -1,14 +1,3 @@
----
-title: "widget rendering analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget rendering analysis"
-issues: []
-discussions: []
----
-
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
 
 ## 📋 Problema Analizzato
@@ -409,14 +398,6 @@ return [
 
 ---
 
-title: "widget rendering analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "widget rendering analysis"
-issues: []
-discussions: []
 **Creato**: 14 Ottobre 2025  
 **Autore**: Super Mucca Documentation Team  
 **Status**: ✅ Validato e Testato  

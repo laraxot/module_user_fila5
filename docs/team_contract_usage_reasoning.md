@@ -1,14 +1,3 @@
----
-title: "team contract usage reasoning"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "team contract usage reasoning"
-issues: []
-discussions: []
----
-
 # TeamContract Usage Reasoning
 
 ## Overview

@@ -1,14 +1,3 @@
----
-title: "volt folio error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "volt folio error"
-issues: []
-discussions: []
----
-
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema

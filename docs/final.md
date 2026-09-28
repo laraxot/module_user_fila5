@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: [DATE]
@@ -300,6 +301,7 @@ public function getHeaderActions(): array
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> 87273113 (.)
 - [README](./readme.md)
 
 ### External Documentation

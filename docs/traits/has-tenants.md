@@ -12,6 +12,7 @@ related:
   - "./has-teams.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Trait HasTenants
 
 ## Descrizione

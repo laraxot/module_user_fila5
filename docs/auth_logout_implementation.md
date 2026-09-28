@@ -1,14 +1,3 @@
----
-title: "auth logout implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "auth logout implementation"
-issues: []
-discussions: []
----
-
 # Implementazione del Logout 
 
 ## Indice
