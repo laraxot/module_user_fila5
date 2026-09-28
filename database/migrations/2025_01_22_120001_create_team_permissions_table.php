@@ -1,0 +1,48 @@
+<?php
+
+declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\TeamPermission;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+<<<<<<< HEAD
+return new class extends XotBaseMigration
+{
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
+    protected ?string $model_class = TeamPermission::class;
+
+    /**
+     * Esegue la migrazione.
+     */
+    public function up(): void
+    {
+        // -- CREATE --
+        $this->tableCreate(static function (Blueprint $table): void {
+            $table->id();
+            $table->foreignId('team_id')->constrained('teams')->cascadeOnDelete();
+            $table->string('permission'); // The permission key/slug
+            $table->string('name')->nullable(); // Human readable name
+
+            // Optional: Add uniqueness if needed, e.g. unique(['team_id', 'permission'])
+            $table->unique(['team_id', 'permission']);
+        });
+
+        // -- UPDATE --
+        $this->tableUpdate(function (Blueprint $table): void {
+            if (! $this->hasColumn('permission')) {
+                $table->string('permission');
+            }
+            if (! $this->hasColumn('name')) {
+                $table->string('name')->nullable();
+            }
+
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+        });
+    }
+};

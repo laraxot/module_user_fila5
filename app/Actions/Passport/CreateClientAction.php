@@ -1,0 +1,78 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\User\Actions\Passport;
+
+use Illuminate\Support\Str;
+use Modules\User\Models\OauthClient;
+use Modules\Xot\Contracts\UserContract;
+use Spatie\QueueableAction\QueueableAction;
+
+/**
+ * CreateClientAction: Crea un nuovo client OAuth2.
+ *
+ * Questa action crea un nuovo client OAuth2 con le configurazioni specificate.
+ */
+class CreateClientAction
+{
+    use QueueableAction;
+
+    /**
+     * Crea un nuovo client OAuth2.
+     *
+<<<<<<< HEAD
+     * @param  string  $name  Nome del client
+     * @param  string  $redirect  URL di redirect dopo autenticazione
+     * @param  UserContract|null  $user  Utente proprietario del client (opzionale)
+     * @param  bool  $personalAccess  Indica se è un personal access client
+     * @param  bool  $password  Indica se è un password client
+     * @param  string|null  $provider  Provider di autenticazione (default: 'users')
+=======
+     * @param string            $name           Nome del client
+     * @param string            $redirect       URL di redirect dopo autenticazione
+     * @param UserContract|null $user           Utente proprietario del client (opzionale)
+     * @param bool              $personalAccess Indica se è un personal access client
+     * @param bool              $password       Indica se è un password client
+     * @param string|null       $provider       Provider di autenticazione (default: 'users')
+     *
+>>>>>>> laraxot/dev
+     * @return OauthClient Il client creato
+     */
+    public function execute(
+        string $name,
+        string $redirect,
+        ?UserContract $user = null,
+        bool $personalAccess = false,
+        bool $password = false,
+        ?string $provider = null,
+    ): OauthClient {
+<<<<<<< HEAD
+        $client = new OauthClient;
+=======
+        $client = new OauthClient();
+>>>>>>> laraxot/dev
+        $client->name = $name;
+        $client->redirect = $redirect;
+        $client->personal_access_client = $personalAccess;
+        $client->password_client = $password;
+        $client->provider = $provider ?? 'users';
+        $client->revoked = false;
+
+<<<<<<< HEAD
+        if ($user !== null) {
+=======
+        if (null !== $user) {
+>>>>>>> laraxot/dev
+            $client->user_id = $user->id;
+        }
+
+        // Genera ID e secret se non forniti
+        $client->id = (string) Str::uuid();
+        $client->secret = Str::random(40);
+
+        $client->save();
+
+        return $client;
+    }
+}

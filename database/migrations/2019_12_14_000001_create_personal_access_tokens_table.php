@@ -1,0 +1,43 @@
+<?php
+
+declare(strict_types=1);
+<<<<<<< HEAD
+use Illuminate\Database\Schema\Blueprint;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+return new class extends XotBaseMigration
+{
+=======
+
+use Illuminate\Database\Schema\Blueprint;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        // -- CREATE --
+        $this->tableCreate(
+            function (Blueprint $table) {
+                $table->uuid('id')->primary();
+                $table->morphs('tokenable');
+                $table->string('name');
+                $table->string('token', 64)->unique();
+                $table->text('abilities')->nullable();
+                $table->timestamp('last_used_at')->nullable();
+                $table->timestamp('expires_at')->nullable();
+            });
+
+        // -- UPDATE --
+        $this->tableUpdate(
+            function (Blueprint $table) {
+                // if (! $this->hasColumn('email'
+                //    $table->string('email')->nullable();
+                // }
+            }
+        );
+    }
+};

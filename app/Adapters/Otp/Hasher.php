@@ -1,0 +1,34 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\User\Adapters\Otp;
+
+use Illuminate\Contracts\Hashing\Hasher as BaseHasher;
+
+class Hasher
+{
+    public function __construct(
+        private readonly BaseHasher $hasher,
+<<<<<<< HEAD
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
+
+    public function make(string $value): string
+    {
+        return $this->hasher->make($value);
+    }
+
+    public function check(string $value, string $hashedValue): bool
+    {
+        return $this->hasher->check($value, $hashedValue);
+    }
+
+    public function needsRehash(string $hashedValue): bool
+    {
+        return $this->hasher->needsRehash($hashedValue);
+    }
+}
