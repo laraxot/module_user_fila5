@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Models\User;
@@ -21,7 +25,11 @@ test('it logs registration with default properties', function (): void {
 
     $before = DB::connection('user')->table('activity_log')->count();
 
+<<<<<<< HEAD
     $action = new LogRegistrationAction;
+=======
+    $action = new LogRegistrationAction();
+>>>>>>> laraxot/dev
     $action->execute($user);
 
     Assert::assertSame($before + 1, DB::connection('user')->table('activity_log')->count());
@@ -31,7 +39,11 @@ test('it logs registration with custom properties', function (): void {
     $user = new User(['type' => 'premium']);
     $user->forceFill(['id' => 2]);
 
+<<<<<<< HEAD
     $action = new LogRegistrationAction;
+=======
+    $action = new LogRegistrationAction();
+>>>>>>> laraxot/dev
     $action->execute($user, ['referral' => 'newsletter', 'source' => 'landing']);
 
     $row = DB::connection('user')->table('activity_log')->orderByDesc('id')->first();
@@ -47,7 +59,11 @@ test('it logs registration with different user types', function (): void {
     $adminUser = new User(['type' => 'admin']);
     $adminUser->forceFill(['id' => 4]);
 
+<<<<<<< HEAD
     $action = new LogRegistrationAction;
+=======
+    $action = new LogRegistrationAction();
+>>>>>>> laraxot/dev
 
     $before = DB::connection('user')->table('activity_log')->count();
 

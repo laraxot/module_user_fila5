@@ -6,11 +6,19 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Datas\XotData;
+
+>>>>>>> laraxot/dev
 /**
  * Comando per impostare il team corrente per un utente.
  */

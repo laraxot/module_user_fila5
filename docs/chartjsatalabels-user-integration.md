@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Chart.js Datalabels Plugin for User Module Charts
 
 ## Overview

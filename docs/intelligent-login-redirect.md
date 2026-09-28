@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Redirect Intelligente dopo Login - Soluzione Implementata
 
 ## 🚨 Problema Risolto

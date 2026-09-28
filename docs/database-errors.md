@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table
@@ -52,3 +56,7 @@ related:
 - [Xot Module Database Guidelines](../../../Modules/Xot/docs/DATABASE_GUIDELINES.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

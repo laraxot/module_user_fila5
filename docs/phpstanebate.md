@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10
 
 **Data Creazione**: [DATE]
@@ -181,6 +185,10 @@ Ogni modulo corretto è un traguardo.
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 - [PHPStan Corrections Summary](./phpstan-corrections-summary.md)
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ---
 

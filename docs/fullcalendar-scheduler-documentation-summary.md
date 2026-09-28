@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -48,6 +52,10 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -192,6 +200,10 @@ Documentazione base esistente per:
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

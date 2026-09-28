@@ -17,6 +17,10 @@ related:
   - "./user-analytics.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Traits Implementation
 
 ## Overview

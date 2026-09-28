@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
 **Data Analisi:** 2025-12-02

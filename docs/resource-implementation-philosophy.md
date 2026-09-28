@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Internal Analysis: Approaches to Missing Filament Resources
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

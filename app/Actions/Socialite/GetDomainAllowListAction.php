@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Arr;
@@ -16,7 +24,12 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Execute the action.
@@ -34,7 +47,11 @@ class GetDomainAllowListAction
             return array_values(array_filter(array_map(
                 static fn (mixed $item): ?string => \is_scalar($item) || $item instanceof \Stringable ? (string) $item : null,
                 $res
+<<<<<<< HEAD
             ), static fn (?string $item): bool => $item !== null));
+=======
+            ), static fn (?string $item): bool => null !== $item));
+>>>>>>> laraxot/dev
         }
 
         return [];

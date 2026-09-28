@@ -1,9 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Contracts\UserContract;
+=======
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Validation\Rules\Password;
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
@@ -12,13 +18,21 @@ use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData;
+=======
+    $passwordData = new PasswordData();
+>>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
     Assert::assertSame(5, $passwordData->otp_expiration_minutes);
@@ -96,7 +110,11 @@ it('password data get helper text works', function (): void {
 });
 
 it('password data get form components returns array', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData;
+=======
+    $passwordData = new PasswordData();
+>>>>>>> laraxot/dev
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -108,7 +126,11 @@ it('events can be instantiated', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
+<<<<<<< HEAD
     \assert($owner instanceof UserContract);
+=======
+    \assert($owner instanceof User);
+>>>>>>> laraxot/dev
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
@@ -135,7 +157,11 @@ it('events have dispatchable trait', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
+<<<<<<< HEAD
     \assert($owner instanceof UserContract);
+=======
+    \assert($owner instanceof User);
+>>>>>>> laraxot/dev
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
@@ -158,7 +184,11 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData;
+=======
+    $passwordData = new PasswordData();
+>>>>>>> laraxot/dev
 
     $passwordData->getValidationMessages();
 });

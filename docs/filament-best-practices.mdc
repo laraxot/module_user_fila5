@@ -82,3 +82,7 @@ class PasswordExpired extends XotBasePage
 {
 }
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

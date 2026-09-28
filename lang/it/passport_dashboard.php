@@ -29,6 +29,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'client_name' => [
             'label' => 'Nome cliente',
         ],
@@ -48,6 +49,13 @@ return [
             'icon' => 'new_credentials',
             'tooltip' => 'new_credentials',
         ],
+=======
+        'force' => [
+            'description' => 'force',
+        ],
+    ],
+    'actions' => [
+>>>>>>> laraxot/dev
         'create' => [
             'label' => 'Crea Client',
             'tooltip' => 'Crea un nuovo client OAuth',
@@ -71,6 +79,7 @@ return [
             'label' => 'Hash Secret',
             'modal_description' => 'Applica l\'hashing a tutti i client secret esistenti.',
         ],
+<<<<<<< HEAD
         'passport_install' => [
             'label' => 'passport_install',
             'icon' => 'passport_install',
@@ -116,6 +125,8 @@ return [
             'icon' => 'cancel',
             'tooltip' => 'cancel',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'status' => [
         'public_key' => 'Chiave Pubblica',
@@ -130,6 +141,9 @@ return [
         'command_completed' => 'Comando completato con successo',
         'command_failed' => 'Esecuzione comando fallita',
         'command_error' => 'Errore durante l\'esecuzione del comando',
+<<<<<<< HEAD
         'credentials_created' => 'Credenziali create con successo',
+=======
+>>>>>>> laraxot/dev
     ],
 ];

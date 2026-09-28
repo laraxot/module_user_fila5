@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Filament\Actions\Header;
 
 use Filament\Forms\Components\TextInput;
@@ -56,7 +64,11 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                         ->rule(
                             'required',
                             /**
+<<<<<<< HEAD
                              * @param  callable(string): mixed  $get
+=======
+                             * @param callable(string): mixed $get
+>>>>>>> laraxot/dev
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

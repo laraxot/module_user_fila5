@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Tables\Columns;
 
+<<<<<<< HEAD
 use Modules\User\Filament\Forms\Components\SingleRoleSelect;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
 
 /**
+<<<<<<< HEAD
  * Controparte in lista di {@see SingleRoleSelect}.
+=======
+ * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\SingleRoleSelect}.
+>>>>>>> laraxot/dev
  *
  * Stesse opzioni (ruoli da `Role::query()`), esposte come select inline di riga.
  *

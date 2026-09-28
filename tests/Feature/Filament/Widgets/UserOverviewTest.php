@@ -8,4 +8,9 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 beforeEach(function (): void {});
+=======
+beforeEach(function (): void {
+});
+>>>>>>> laraxot/dev

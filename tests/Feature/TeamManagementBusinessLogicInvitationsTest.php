@@ -7,9 +7,16 @@ use Illuminate\Support\Facades\DB;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 uses(Modules\User\Tests\TestCase::class);
+=======
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.

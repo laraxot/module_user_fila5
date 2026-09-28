@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
@@ -17,7 +21,11 @@ use Illuminate\Validation\Rule;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 use function Livewire\Volt\layout;
@@ -116,7 +124,11 @@ $component = new class extends Component {
             /** @var User|null $user */
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
+<<<<<<< HEAD
             Assert::isInstanceOf($user, UserContract::class);
+=======
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+>>>>>>> laraxot/dev
 
             // Type-safe property initialization
             $this->first_name = (string) ($user->first_name ?? '');
@@ -180,7 +192,11 @@ $component = new class extends Component {
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
+<<<<<<< HEAD
             Assert::isInstanceOf($user, UserContract::class);
+=======
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Check if email has changed for additional validation
@@ -299,7 +315,11 @@ $component = new class extends Component {
             /** @var User $user */
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
+<<<<<<< HEAD
             Assert::isInstanceOf($user, UserContract::class);
+=======
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate password strength and format
@@ -389,7 +409,11 @@ $component = new class extends Component {
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
+<<<<<<< HEAD
             Assert::isInstanceOf($user, UserContract::class);
+=======
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate deletion password

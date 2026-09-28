@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -40,6 +44,10 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## File Risolti
 
@@ -327,6 +335,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -336,3 +348,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+---
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

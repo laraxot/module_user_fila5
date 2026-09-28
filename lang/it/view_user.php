@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 return [
     'actions' => [
@@ -56,3 +57,5 @@ return [
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',
 ];
+=======
+>>>>>>> laraxot/dev

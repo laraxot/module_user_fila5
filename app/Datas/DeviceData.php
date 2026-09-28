@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -47,7 +55,11 @@ class DeviceData extends Data
     {
         $headers = collect(request()->header())->mapWithKeys(
             /**
+<<<<<<< HEAD
              * @param  array<int, string|null>  $item
+=======
+             * @param array<int, string|null> $item
+>>>>>>> laraxot/dev
              */
             static function (array $item, string $key): array {
                 if (Str::startsWith($key, 'X-')) {
@@ -71,12 +83,20 @@ class DeviceData extends Data
 
     public function getSynchronizationId(string $apiName): string
     {
+<<<<<<< HEAD
         if ($this->synchronizationId !== null) {
+=======
+        if (null !== $this->synchronizationId) {
+>>>>>>> laraxot/dev
             return $this->synchronizationId;
         }
 
         $synchronizationClass = config('morph_map.synchronization');
+<<<<<<< HEAD
         if ($synchronizationClass === null) {
+=======
+        if (null === $synchronizationClass) {
+>>>>>>> laraxot/dev
             $synchronizationClass = '\Modules\Egea\Models\Synchronization';
         }
 

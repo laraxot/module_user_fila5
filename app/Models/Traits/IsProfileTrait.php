@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * Modulo User - Trait per il profilo utente.
  *
@@ -29,6 +33,10 @@ use Illuminate\Support\Collection;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -65,16 +73,26 @@ trait IsProfileTrait
      * Ottiene il nome completo dell'utente.
      * Utilizza prima i dati del profilo, altrimenti ricade sul nome dell'utente.
      *
+<<<<<<< HEAD
      * @param  string|null  $value  Il valore attuale dell'attributo
+=======
+     * @param string|null $value Il valore attuale dell'attributo
+     *
+>>>>>>> laraxot/dev
      * @return string|null Il nome completo dell'utente
      */
     public function getFullNameAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -82,28 +100,51 @@ trait IsProfileTrait
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
         if ($res !== '') {
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+        if ('' !== $res) {
+>>>>>>> laraxot/dev
             return $res;
         }
 
         $userName = $user->getAttribute('name');
 
+<<<<<<< HEAD
         return \is_string($userName) && $userName !== '' ? $userName : null;
+=======
+        return \is_string($userName) && '' !== $userName ? $userName : null;
+>>>>>>> laraxot/dev
     }
 
     /**
      * Ottiene il nome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
+<<<<<<< HEAD
      * @param  string|null  $value  Il valore attuale dell'attributo
+=======
+     * @param string|null $value Il valore attuale dell'attributo
+     *
+>>>>>>> laraxot/dev
      * @return string|null Il nome dell'utente
      */
     public function getFirstNameAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -111,6 +152,15 @@ trait IsProfileTrait
 
         $firstName = $user->getAttribute('first_name');
         if (! \is_string($firstName) || $firstName === '') {
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $firstName = $user->getAttribute('first_name');
+        if (! \is_string($firstName) || '' === $firstName) {
+>>>>>>> laraxot/dev
             return null;
         }
 
@@ -123,16 +173,26 @@ trait IsProfileTrait
      * Ottiene il cognome dell'utente.
      * Se non presente nel profilo, lo recupera dall'utente collegato.
      *
+<<<<<<< HEAD
      * @param  string|null  $value  Il valore attuale dell'attributo
+=======
+     * @param string|null $value Il valore attuale dell'attributo
+     *
+>>>>>>> laraxot/dev
      * @return string|null Il cognome dell'utente
      */
     public function getLastNameAttribute(?string $value): ?string
     {
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -140,6 +200,15 @@ trait IsProfileTrait
 
         $lastName = $user->getAttribute('last_name');
         if (! \is_string($lastName) || $lastName === '') {
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $lastName = $user->getAttribute('last_name');
+        if (! \is_string($lastName) || '' === $lastName) {
+>>>>>>> laraxot/dev
             return null;
         }
 
@@ -155,7 +224,11 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
+<<<<<<< HEAD
         if ($this->user === null) {
+=======
+        if (null === $this->user) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -169,7 +242,11 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
+<<<<<<< HEAD
         if ($this->user === null) {
+=======
+        if (null === $this->user) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -186,10 +263,17 @@ trait IsProfileTrait
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
         Assert::isInstanceOf($user, UserContract::class);
+=======
+        if (null === $user) {
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+        }
+        Assert::isInstanceOf($user, User::class);
+>>>>>>> laraxot/dev
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -264,7 +348,11 @@ trait IsProfileTrait
     {
         $tokens = $this->mobileDeviceUsers()
             ->pluck('token')
+<<<<<<< HEAD
             ->filter(static fn (mixed $value): bool => is_string($value) && $value !== '')
+=======
+            ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
+>>>>>>> laraxot/dev
             ->map(static fn (mixed $value): string => (string) $value);
 
         /* @var Collection<int|string, non-empty-string> $tokens */
@@ -281,6 +369,7 @@ trait IsProfileTrait
         return Attribute::make(
             get: function (): ?string {
                 $user = $this->user;
+<<<<<<< HEAD
                 if ($user === null) {
                     return null;
                 }
@@ -289,6 +378,16 @@ trait IsProfileTrait
                 $name = $user->getAttribute('name');
 
                 return \is_string($name) && $name !== '' ? $name : null;
+=======
+                if (null === $user) {
+                    return null;
+                }
+                Assert::isInstanceOf($user, User::class);
+
+                $name = $user->getAttribute('name');
+
+                return \is_string($name) && '' !== $name ? $name : null;
+>>>>>>> laraxot/dev
             }
         );
     }

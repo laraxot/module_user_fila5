@@ -6,6 +6,10 @@ namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms\Components\Actions\Action;
 use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\View;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;

@@ -13,7 +13,10 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pages\ListOauthDeviceCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pages\ViewOauthDeviceCode;
@@ -86,7 +89,11 @@ class OauthDeviceCodeResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
+<<<<<<< HEAD
                     ->action(function (Model|array|null $record): void {
+=======
+                    ->action(function (mixed $record): void {
+>>>>>>> laraxot/dev
                         if ($record instanceof OauthDeviceCode) {
                             $record->revoked = true;
                             $record->save();
@@ -96,7 +103,11 @@ class OauthDeviceCodeResource extends XotBaseResource
                                 ->send();
                         }
                     })
+<<<<<<< HEAD
                     ->visible(fn (Model|array|null $record) => $record instanceof OauthDeviceCode && ! $record->revoked),
+=======
+                    ->visible(fn (mixed $record) => $record instanceof OauthDeviceCode && ! $record->revoked),
+>>>>>>> laraxot/dev
                 DeleteAction::make(),
             ])
             ->defaultSort('expires_at', 'desc');

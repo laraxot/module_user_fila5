@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary
@@ -249,6 +253,10 @@ When creating new models in User module:
 - [Model Inheritance Rules](./model-inheritance-rules.md)
 - [PHPStan Level 10 Full Analysis (Xot Module)](../../Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Model Refactoring 2025-10-15](../../Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [PHPStan Level 10 Full Analysis (Xot Module)](../../xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Model Refactoring 2025-10-15](../../xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 
@@ -256,3 +264,10 @@ When creating new models in User module:
 
 *Last Updated: 17 October 2025*
 *Status: ✅ PHPStan Level 10 Compliant*
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+*Status: ✅ PHPStan Level 10 Compliant*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
@@ -55,7 +59,11 @@ describe('SendOtpByUserAction', function () {
 
                 return ($routes['mail'] ?? null) === $user->email
                     && $notification->user->id === $user->id
+<<<<<<< HEAD
                     && $notification->code === 'random-otp-12';
+=======
+                    && 'random-otp-12' === $notification->code;
+>>>>>>> laraxot/dev
             }
         );
 

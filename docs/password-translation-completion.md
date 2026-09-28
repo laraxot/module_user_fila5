@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -258,3 +262,7 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 ---
 *Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

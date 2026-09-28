@@ -17,6 +17,10 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -294,6 +298,10 @@ class CreateTenantUserCommand extends Command
 
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## 🎓 Lezioni Apprese
 

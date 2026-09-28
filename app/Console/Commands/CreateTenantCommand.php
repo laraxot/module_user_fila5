@@ -6,11 +6,20 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
 use function Laravel\Prompts\text;
 
+=======
+
+use function Laravel\Prompts\text;
+
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 class CreateTenantCommand extends Command
 {
     /**

@@ -14,6 +14,10 @@ related:
   - "./registration-widget-fileupload.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # RegistrationWidget: Widget generico per la registrazione utente
 
 ## Scopo e filosofia
@@ -49,6 +53,10 @@ Queste Action devono occuparsi di:
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../../docs/doctor-registration.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../project_docs/doctor-registration.md)
 ---

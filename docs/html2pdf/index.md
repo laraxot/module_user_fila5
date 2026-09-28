@@ -11,3 +11,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/index.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

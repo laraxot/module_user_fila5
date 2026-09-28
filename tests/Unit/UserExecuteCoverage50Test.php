@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
+<<<<<<< HEAD
 use Filament\Actions\Action as FilamentAction;
 use Filament\Actions\BulkAction;
 use Filament\Panel;
@@ -992,3 +993,15 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         }));
     });
 });
+=======
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+class UserExecuteCoverage50Test extends \Modules\User\Tests\TestCase
+{
+    public function testSomething(): void
+    {
+        Assert::assertInstanceOf(User::class, new User());
+    }
+}
+>>>>>>> laraxot/dev

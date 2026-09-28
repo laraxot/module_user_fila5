@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Filament Resources Coverage Analysis - Modulo User
 
 ## Data: [DATE]
@@ -228,3 +232,7 @@ Questi modelli sono pivot tables e NON devono avere Resources standalone:
 - [Filament Resources Organization](./filament-resources-organization.md)
 - [Filament Best Practices](./filament-best-practices.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

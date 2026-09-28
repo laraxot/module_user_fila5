@@ -14,3 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

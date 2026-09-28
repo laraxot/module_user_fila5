@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Fix della Migration Roles - Allineamento con la Filosofia Laraxot
 
 ## Problema Identificato

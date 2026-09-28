@@ -14,7 +14,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
+<<<<<<< HEAD
         // return $user->hasPermissionToOrCreate('tenant.view.any');
+=======
+        // return $user->hasPermissionTo('tenant.view.any');
+>>>>>>> laraxot/dev
         return false;
     }
 
@@ -23,7 +27,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, Tenant $tenant): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.view')
+=======
+        return $user->hasPermissionTo('tenant.view')
+>>>>>>> laraxot/dev
             || $user->tenants->contains($tenant->id)
             || $user->hasRole('super-admin');
     }
@@ -33,7 +41,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.create');
+=======
+        return $user->hasPermissionTo('tenant.create');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -41,7 +53,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, Tenant $_tenant): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.update') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('tenant.update') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -49,7 +65,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, Tenant $_tenant): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.delete') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('tenant.delete') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -57,7 +77,11 @@ class TenantPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, Tenant $_tenant): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.restore') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('tenant.restore') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -65,6 +89,10 @@ class TenantPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, Tenant $tenant): bool
     {
+<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('tenant.force-delete') || $user->hasRole('super-admin');
+=======
+        return $user->hasPermissionTo('tenant.force-delete') || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 }

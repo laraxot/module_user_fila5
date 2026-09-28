@@ -33,7 +33,11 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$listUsersPage = new ListUsers;
+=======
+    TestCase::$listUsersPage = new ListUsers();
+>>>>>>> laraxot/dev
 
     $users = UserFactory::new()
         ->count(3)

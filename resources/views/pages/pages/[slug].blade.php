@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Arr;
 use Illuminate\View\View;
 use Modules\Cms\Models\Page;

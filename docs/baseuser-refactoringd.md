@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # BaseUser Refactoring - Completato
 
 **File**: `Modules/User/app/Models/BaseUser.php`  
@@ -253,6 +257,10 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -262,6 +270,10 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

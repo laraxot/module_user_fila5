@@ -10,7 +10,12 @@ class Hasher
 {
     public function __construct(
         private readonly BaseHasher $hasher,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function make(string $value): string
     {

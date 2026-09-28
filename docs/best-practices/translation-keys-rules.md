@@ -18,6 +18,10 @@ related:
   - "./dependency-rules.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -138,3 +142,7 @@ return [
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

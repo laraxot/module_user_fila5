@@ -15,7 +15,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
  *
+<<<<<<< HEAD
  * @property int $id
+=======
+ * @property int         $id
+>>>>>>> laraxot/dev
  * @property string|null $tenant_id
  * @property string|null $user_id
  * @property Carbon|null $created_at

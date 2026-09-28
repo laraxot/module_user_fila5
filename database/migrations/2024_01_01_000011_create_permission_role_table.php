@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
@@ -9,8 +13,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateRolesTable.
  */
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */

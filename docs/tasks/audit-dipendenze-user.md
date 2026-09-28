@@ -18,6 +18,10 @@ related:
   - "./tasks-index.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Task: Audit Completo Dipendenze User
 
 **Modulo**: User  

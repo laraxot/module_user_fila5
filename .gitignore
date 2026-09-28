@@ -498,8 +498,11 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+<<<<<<< HEAD
 graphify-out/
 *.backup_*
 
 # Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
 audit-coverage/
+=======
+>>>>>>> laraxot/dev

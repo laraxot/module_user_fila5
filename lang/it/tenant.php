@@ -190,9 +190,12 @@ return [
             'description' => 'Azione per annullare',
             'icon' => 'heroicon-o-x-mark',
         ],
+<<<<<<< HEAD
         'reorderRecords' => [
             'tooltip' => 'reorderRecords',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'created' => 'Tenant creato con successo',

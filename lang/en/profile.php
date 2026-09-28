@@ -84,9 +84,12 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
+<<<<<<< HEAD
     'privacy_policy' => [
         'title' => 'Privacy policy',
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

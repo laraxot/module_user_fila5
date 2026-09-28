@@ -13,7 +13,11 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
+<<<<<<< HEAD
 updated_at: '2026-09-17'
+=======
+updated_at: '2026-09-03'
+>>>>>>> laraxot/dev
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -222,6 +226,7 @@ Claude Sonnet 5
 - **Verifica manuale 2026-09-03 (locale)**: l'utente ha usato il pulsante
   dal vivo, creazione riuscita (screenshot), abbinamento tramite `user_id`
   confermato anche via query diretta sul DB. Durante la prova sono emerse
+<<<<<<< HEAD
   due scoperte **indipendenti da questa story**, segnalate all'utente con
   decisione in sospeso — **entrambe verificate concretamente il 2026-09-15**,
   vedi sotto.
@@ -355,6 +360,28 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
+=======
+  due scoperte **indipendenti da questa story**, non ancora tracciate in
+  una story/issue propria — segnalate all'utente, decisione in sospeso:
+  1. `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
+     client di un utente tramite la relazione `clients()` (`owner_id`/
+     `owner_type`, polimorfica), ma la sua stessa azione
+     "associateExistingClient" scrive su `user_id` — le due colonne non
+     sono sincronizzate, quella tab mostra sempre una lista
+     vuota/incompleta indipendentemente da abbinamenti reali fatti altrove
+     (verificato: nessun punto della logica applicativa reale legge
+     `owner_id`/`owner_type` su `OauthClient`, solo quella tab — bug
+     cosmetico, non funzionale).
+  2. Sul server di produzione, la lista completa "Client OAuth" mostra
+     solo i 4 client di default creati da `passport:install` (Personal
+     Access Client, Password Grant Client) — **nessuno dei client_id
+     storici usati dai clienti reali (ATS/Clara/Smat/Vivaservizi, con
+     credenziali negli script `extras/`) risulta presente**. Ipotesi in
+     discussione con l'utente: il database sulla connessione `user`
+     (dove vive `oauth_clients`, separata dal DB applicativo principale)
+     potrebbe non essere stato ripristinato da un backup reale durante il
+     trasloco server, a differenza del DB principale.
+>>>>>>> laraxot/dev
 
 ### File List
 

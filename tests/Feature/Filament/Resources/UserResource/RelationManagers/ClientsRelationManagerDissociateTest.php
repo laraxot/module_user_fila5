@@ -55,14 +55,22 @@ function makeAssociatedOauthClientForDissociationTest(User $owner): OauthClient
 
 function getDissociateClientActionFunction(User $owner): \Closure
 {
+<<<<<<< HEAD
     $manager = new ClientsRelationManager;
+=======
+    $manager = new ClientsRelationManager();
+>>>>>>> laraxot/dev
     $manager->ownerRecord = $owner;
     $manager->pageClass = EditUser::class;
     $manager->bootedInteractsWithTable();
 
     $action = null;
     foreach ($manager->getTable()->getRecordActions() as $candidate) {
+<<<<<<< HEAD
         if ($candidate instanceof Action && $candidate->getName() === 'dissociateClient') {
+=======
+        if ($candidate instanceof Action && 'dissociateClient' === $candidate->getName()) {
+>>>>>>> laraxot/dev
             $action = $candidate;
 
             break;

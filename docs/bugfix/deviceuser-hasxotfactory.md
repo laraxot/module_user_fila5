@@ -14,6 +14,10 @@ related:
   - "./multiple-bugs-resolution.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Bugfix: DeviceUser e HasXotFactory
 
 ## Contesto

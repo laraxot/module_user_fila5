@@ -40,7 +40,11 @@ class OauthAuthCodeResource extends XotBaseResource
                 TextColumn::make('id')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->formatStateUsing(function (string|int|null $state): string {
+=======
+                    ->formatStateUsing(function (mixed $state): string {
+>>>>>>> laraxot/dev
                         if (! is_string($state)) {
                             return '';
                         }
@@ -59,7 +63,11 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
+<<<<<<< HEAD
                         if ($state === null) {
+=======
+                        if (null === $state) {
+>>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {

@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -239,6 +243,10 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
 - [Roles and Permissions](roles-permissions-3.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

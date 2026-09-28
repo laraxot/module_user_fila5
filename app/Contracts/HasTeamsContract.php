@@ -1,17 +1,28 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * --- Artmin.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 
 /**
@@ -43,9 +54,15 @@ interface HasTeamsContract
     /**
      * Get all of the teams the user owns or belongs to.
      *
+<<<<<<< HEAD
      * @return Collection<int, Model>
      */
     public function allTeams(): Collection;
+=======
+     * @return \Illuminate\Support\Collection<int, Model>
+     */
+    public function allTeams(): \Illuminate\Support\Collection;
+>>>>>>> laraxot/dev
 
     /**
      * Get all of the teams the user owns.

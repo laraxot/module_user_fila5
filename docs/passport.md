@@ -14,3 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

@@ -18,6 +18,10 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # spatie_permissions
 
 <!-- Contenuto migrato da _docs/spatie_permissions.txt -->

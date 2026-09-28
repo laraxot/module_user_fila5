@@ -14,3 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss.md
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev

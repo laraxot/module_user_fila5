@@ -4,7 +4,11 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
+<<<<<<< HEAD
 updated: 2026-09-21
+=======
+updated: 2026-07-27
+>>>>>>> laraxot/dev
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
@@ -21,8 +25,11 @@ related:
 
 ---
 
+<<<<<<< HEAD
 - 2026-09-21: BMAD Epic 9 (docs only, **nessun PHP**) — conversione SuperAdmin Livewire → `XotBaseWidget` + hook `AdminPanelProvider`. Canon: [bmad/README.md](../bmad/README.md), spec provider: [bmad/tech-spec.md](../bmad/tech-spec.md), story [9.2](../stories/9.2.admin-panel-provider-hook.story.md).
 - 2026-09-21: runtime `/admin` — `No hint path defined for [filament-jet]`: SuperAdmin e gemelli Livewire usano `user::` (viste nel modulo). FilamentJet non è una dipendenza. Doc: [filament_errors.md](../filament_errors.md).
+=======
+>>>>>>> laraxot/dev
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.

@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User vs Profile: Guida Completa alla Progettazione
 
 ## Sommario
@@ -26,6 +30,10 @@ related:
 3. [Best Practice Raccolte](#best-practice-raccolte)
 4. [Casi d'Uso con Percentuali](#casi-duso-con-percentuali)
 5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 6. [Schema Decisionale](#schema-decisionale)
 
 ---
@@ -39,6 +47,10 @@ La separazione tra **User** (tabella per autenticazione) e **Profile** (tabella 
 ## Analisi del Codice Attuale
 
 ### Struttura Attuale <nome progetto>
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ```
 User (connection: user)
@@ -62,6 +74,10 @@ User (connection: user)
 Profile (connection: user)
 ├── id (bigint autoincrement)
 ├── uuid (char 36 unique, per Android/Postgres/API)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 ├── user_id (UUID)
 ├── first_name
 ├── last_name
@@ -147,6 +163,10 @@ public function profile(): HasOne
 ## Casi d'Uso con Percentuali
 
 ### Caso 1: Community Platform (es. <nome progetto>)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 ```
 User: 60% dei dati necessari
 - id, email, password, name, lang, type, state
@@ -252,6 +272,10 @@ START
 ---
 
 ## Raccomandazioni per <nome progetto>
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ### Attuale (CORRETTO)
 
@@ -327,6 +351,10 @@ Profile: Tutti i dati applicativi
 | Scenario | Usa | Note |
 |----------|-----|------|
 | <nome progetto> attuale | User + Profile | Profile in meetup DB |
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 | MVP semplice | Solo User | Tutto in una tabella |
 | SaaS multi-tenant | User + Profile | Profile per tenant |
 | Social network | User + Profile | Profile ricco |
@@ -337,6 +365,10 @@ Profile: Tutti i dati applicativi
 ## Conclusione
 
 Per **<nome progetto>** la separazione attuale ha senso perché:
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - ✅ Profile è in connection separata (meetup)
 - ✅ Meetup module ha dati specifici
 - ✅ Possibile estensione futura (altri moduli)
@@ -348,4 +380,8 @@ Per **<nome progetto>** la separazione attuale ha senso perché:
 ---
 
 *Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 *Data: [DATE]*

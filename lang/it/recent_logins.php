@@ -104,6 +104,7 @@ return [
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
+<<<<<<< HEAD
         'delete' => [
             'tooltip' => 'delete',
             'icon' => 'delete',
@@ -119,6 +120,8 @@ return [
             'icon' => 'create',
             'label' => 'create',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Recent Logins',

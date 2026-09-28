@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 https://github.com/nowendwell/laravel-terms
 https://github.com/nowendwell/laravel-terms
 

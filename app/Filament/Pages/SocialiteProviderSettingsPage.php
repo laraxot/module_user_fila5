@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 // ⚠️ CRITICAL RULE: NEVER use ->label(), ->placeholder(), ->helperText()
 // Translations are handled automatically by LangServiceProvider via 5-level keys:
 // user::socialite.settings.form.{field}.{type}
@@ -81,12 +85,17 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('google.client_id')
                             ->placeholder('xxx.apps.googleusercontent.com')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('google.client_secret')
                             ->password()
                             ->revealable()
                             ->placeholder('GOCSPX-xxx')
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
@@ -95,12 +104,26 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TagsInput::make('google.scopes')
                             ->placeholder('openid, email, profile')
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                                 ? $this->configString('services.google.client_secret')
+                                 : $this->stringValue($state))
+                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+
+                        TagsInput::make('google.scopes')
+                            ->placeholder('openid, email, profile')
+                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('google.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'google'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+>>>>>>> laraxot/dev
                     ]),
 
                 Section::make('GitHub OAuth')
@@ -112,11 +135,16 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('github.client_id')
                             ->placeholder('Iv23lixxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('github.client_secret')
                             ->password()
                             ->revealable()
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
@@ -125,12 +153,26 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TagsInput::make('github.scopes')
                             ->placeholder('read:user, user:email')
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                                 ? $this->configString('services.github.client_secret')
+                                 : $this->stringValue($state))
+                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+
+                        TagsInput::make('github.scopes')
+                            ->placeholder('read:user, user:email')
+                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('github.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'github'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+>>>>>>> laraxot/dev
                     ]),
 
                 Section::make('Microsoft OAuth')
@@ -142,11 +184,16 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('microsoft.client_id')
                             ->placeholder('xxx-xxx-xxx-xxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('microsoft.client_secret')
                             ->password()
                             ->revealable()
+<<<<<<< HEAD
                             ->dehydrateStateUsing(fn (?string $state): string => $this->isMasked($state)
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
@@ -155,12 +202,26 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TagsInput::make('microsoft.scopes')
                             ->placeholder('User.Read, openid, email')
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+=======
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
+                                 ? $this->configString('services.microsoft.client_secret')
+                                 : $this->stringValue($state))
+                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+
+                        TagsInput::make('microsoft.scopes')
+                            ->placeholder('User.Read, openid, email')
+                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+>>>>>>> laraxot/dev
 
                         TextInput::make('microsoft.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+=======
+                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+>>>>>>> laraxot/dev
                     ]),
             ])
             ->statePath('data');
@@ -264,7 +325,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Write configuration to secure PHP file.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $config
+=======
+     * @param array<string, mixed> $config
+>>>>>>> laraxot/dev
      */
     private function writeSocialiteConfig(array $config): void
     {
@@ -289,7 +354,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Update SocialProvider model active states.
      *
+<<<<<<< HEAD
      * @param  array<string, array<string, mixed>>  $config
+=======
+     * @param array<string, array<string, mixed>> $config
+>>>>>>> laraxot/dev
      */
     private function updateSocialProviderActiveStates(array $config): void
     {
@@ -307,8 +376,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Mask secret for display (show only last 4 chars).
+<<<<<<< HEAD
      *
      * @param  mixed  $secret  Raw config() value; expected string|null.
+=======
+>>>>>>> laraxot/dev
      */
     private function maskSecret(mixed $secret): string
     {
@@ -331,9 +403,15 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Check if value contains masked characters.
      */
+<<<<<<< HEAD
     private function isMasked(?string $value): bool
     {
         if ($value === null) {
+=======
+    private function isMasked(mixed $value): bool
+    {
+        if (! is_string($value)) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -342,16 +420,23 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     /**
      * Resolve secret value - use new value or keep existing if masked.
+<<<<<<< HEAD
      *
      * @param  mixed  $newValue  New field state; expected string|null.
      * @param  mixed  $existingValue  Raw config() value; expected string|null.
+=======
+>>>>>>> laraxot/dev
      */
     private function resolveSecret(mixed $newValue, mixed $existingValue): string
     {
         $newSecret = $this->stringValue($newValue);
         $existingSecret = $this->stringValue($existingValue);
 
+<<<<<<< HEAD
         if ($this->isMasked($newSecret) && $existingSecret !== '') {
+=======
+        if ($this->isMasked($newSecret) && '' !== $existingSecret) {
+>>>>>>> laraxot/dev
             return $existingSecret;
         }
 
@@ -360,7 +445,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     private function configBool(string $key): bool
     {
+<<<<<<< HEAD
         return config($key, false) === true;
+=======
+        return true === config($key, false);
+>>>>>>> laraxot/dev
     }
 
     private function configString(string $key): string
@@ -369,19 +458,30 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<int, string>  $default
+=======
+     * @param array<int, string> $default
+     *
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     private function configStringList(string $key, array $default): array
     {
         $value = config($key, $default);
 
+<<<<<<< HEAD
         return $this->stringList($value === [] ? $default : $value);
     }
 
     /**
      * @param  mixed  $value  Raw config()/form value; expected scalar|null.
      */
+=======
+        return $this->stringList([] === $value ? $default : $value);
+    }
+
+>>>>>>> laraxot/dev
     private function stringValue(mixed $value): string
     {
         if (is_string($value)) {
@@ -396,7 +496,10 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  mixed  $value  Raw form section state; expected array<string, mixed>.
+=======
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function providerData(mixed $value): array
@@ -416,7 +519,10 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  mixed  $value  Raw config()/TagsInput value; expected array<array-key, mixed>.
+=======
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     private function stringList(mixed $value): array
@@ -427,7 +533,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
         return array_values(array_filter(
             $value,
+<<<<<<< HEAD
             static fn (mixed $item): bool => is_string($item) && $item !== '',
+=======
+            static fn (mixed $item): bool => is_string($item) && '' !== $item,
+>>>>>>> laraxot/dev
         ));
     }
 }

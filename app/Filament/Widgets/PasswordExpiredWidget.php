@@ -15,22 +15,42 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
+<<<<<<< HEAD
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+use Modules\User\Rules\CheckOtpExpiredRule;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Widget for handling expired password reset.
  *
+<<<<<<< HEAD
  * @property Schema $form
  * @property string|null $current_password
  * @property string|null $password
  * @property string|null $passwordConfirmation
+=======
+ * @property Schema                    $form
+ * @property string|null               $current_password
+ * @property string|null               $password
+ * @property string|null               $passwordConfirmation
+>>>>>>> laraxot/dev
  * @property array<string, mixed>|null $data
  */
 class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
+<<<<<<< HEAD
+=======
+    // XotBaseWidget already implements HasForms and uses InteractsWithForms
+    use TransTrait;
+
+>>>>>>> laraxot/dev
     public ?string $current_password = '';
 
     public ?string $password = '';
@@ -118,7 +138,11 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
+<<<<<<< HEAD
         return new PasswordResetResponse;
+=======
+        return new PasswordResetResponse();
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -128,7 +152,11 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
+<<<<<<< HEAD
         if ($authUser instanceof UserContract) {
+=======
+        if ($authUser instanceof User) {
+>>>>>>> laraxot/dev
             return TextInput::make('current_password')
                 ->password()
                 ->revealable()

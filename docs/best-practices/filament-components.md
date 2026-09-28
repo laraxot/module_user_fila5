@@ -18,6 +18,10 @@ related:
   - "./dependency-rules.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Best Practices per Componenti Filament
 
 ## Verifica delle Dipendenze

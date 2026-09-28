@@ -18,6 +18,10 @@ related:
   - "./dependency-rules.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # 🛡️ Best Practices per Proprietà Eloquent
 
 ## ⚠️ Regola Critica: property_exists() VIETATO

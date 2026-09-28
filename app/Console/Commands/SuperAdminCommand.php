@@ -23,7 +23,11 @@ class SuperAdminCommand extends Command
     {
         $email = $this->resolveEmail();
 
+<<<<<<< HEAD
         if ($email === null) {
+=======
+        if (null === $email) {
+>>>>>>> laraxot/dev
             return self::FAILURE;
         }
 
@@ -35,7 +39,11 @@ class SuperAdminCommand extends Command
 
         $user = XotData::make()->findUserByEmail($email);
 
+<<<<<<< HEAD
         if ($user === null) {
+=======
+        if (null === $user) {
+>>>>>>> laraxot/dev
             $this->error("Utente non trovato per email: {$email}");
 
             return self::FAILURE;
@@ -57,12 +65,20 @@ class SuperAdminCommand extends Command
     private function resolveEmail(): ?string
     {
         $fromOption = $this->option('email');
+<<<<<<< HEAD
         if (is_string($fromOption) && $fromOption !== '') {
+=======
+        if (is_string($fromOption) && '' !== $fromOption) {
+>>>>>>> laraxot/dev
             return strtolower(trim($fromOption));
         }
 
         $fromArgument = $this->argument('email');
+<<<<<<< HEAD
         if (is_string($fromArgument) && $fromArgument !== '') {
+=======
+        if (is_string($fromArgument) && '' !== $fromArgument) {
+>>>>>>> laraxot/dev
             return strtolower(trim($fromArgument));
         }
 
@@ -83,7 +99,11 @@ class SuperAdminCommand extends Command
 
             $line = fgets(STDIN);
 
+<<<<<<< HEAD
             if (! is_string($line) || trim($line) === '') {
+=======
+            if (! is_string($line) || '' === trim($line)) {
+>>>>>>> laraxot/dev
                 $this->error('Email non fornita. Usa: php artisan user:super-admin --email=tuo@email.com');
                 $this->error($exception->getMessage());
 

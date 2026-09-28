@@ -11,6 +11,10 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -26,6 +30,10 @@ Questa documentazione descrive la relazione many-to-many tra utenti e team nel m
 
 ## Collegamenti
 - [Documentazione generale sulle migrazioni](mdc:../../../../docs/database-migrations.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Best practice XotBaseMigration](mdc:../../xot/docs/migrations.md)
 
 ---

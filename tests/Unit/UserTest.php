@@ -6,7 +6,10 @@ namespace Modules\User\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
+<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
@@ -25,7 +28,11 @@ describe('User', function (): void {
                 'email' => fake()->unique()->safeEmail(),
                 'password' => Hash::make('password123'),
             ]);
+<<<<<<< HEAD
             \assert($user instanceof UserContract);
+=======
+            \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
             Assert::assertInstanceOf(User::class, $user);
             Assert::assertIsString($user->email);
@@ -40,7 +47,11 @@ describe('User', function (): void {
         /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
+<<<<<<< HEAD
             \assert($user instanceof UserContract);
+=======
+            \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
             $type = $user->type;
             \assert($type instanceof UserType);
@@ -54,7 +65,11 @@ describe('User', function (): void {
 
     test('user password is hashed', function (): void {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         Assert::assertTrue(Hash::check('password123', $user->password));
         Assert::assertFalse(Hash::check('wrongpassword', $user->password));
@@ -62,12 +77,20 @@ describe('User', function (): void {
 
     test('user can change password', function (): void {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         $user->update(['password' => Hash::make('newpassword123')]);
 
         $freshUser = $user->fresh();
+<<<<<<< HEAD
         \assert($freshUser instanceof UserContract);
+=======
+        \assert($freshUser instanceof User);
+>>>>>>> laraxot/dev
         Assert::assertTrue(Hash::check('newpassword123', $freshUser->password));
         Assert::assertFalse(Hash::check('password123', $freshUser->password));
     });
@@ -79,7 +102,11 @@ describe('User', function (): void {
                 'type' => UserType::MasterAdmin,
                 'email' => fake()->unique()->safeEmail(),
             ]);
+<<<<<<< HEAD
             \assert($user instanceof UserContract);
+=======
+            \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
             $updatedEmail = 'updated-'.uniqid('', true).'@example.com';
 
@@ -100,7 +127,11 @@ describe('User', function (): void {
         TestCase::skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         $userId = $user->id;
 
@@ -113,7 +144,11 @@ describe('User', function (): void {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         $fillable = $user->getFillable();
 
@@ -126,7 +161,11 @@ describe('User', function (): void {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         $hidden = $user->getHidden();
 
@@ -136,11 +175,19 @@ describe('User', function (): void {
 
     test('user can be found by email', function (): void {
         $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
 
         $foundUser = User::where('email', $user->email)->first();
 
         \assert($foundUser instanceof UserContract);
+=======
+        \assert($user instanceof User);
+
+        $foundUser = User::where('email', $user->email)->first();
+
+        \assert($foundUser instanceof User);
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(User::class, $foundUser);
         Assert::assertSame($user->id, $foundUser->id);
     });
@@ -149,7 +196,11 @@ describe('User', function (): void {
         /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
+<<<<<<< HEAD
             \assert($user instanceof UserContract);
+=======
+            \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
             $admins = User::query()
                 ->where('type', UserType::MasterAdmin)
@@ -158,7 +209,11 @@ describe('User', function (): void {
 
             Assert::assertCount(1, $admins);
             $firstAdmin = $admins->first();
+<<<<<<< HEAD
             \assert($firstAdmin instanceof UserContract);
+=======
+            \assert($firstAdmin instanceof User);
+>>>>>>> laraxot/dev
             Assert::assertSame($user->id, $firstAdmin->id);
         } catch (\Throwable) {
             $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
@@ -185,7 +240,11 @@ describe('User', function (): void {
 
     test('user has timestamps', function (): void {
         $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
         \assert($user instanceof UserContract);
+=======
+        \assert($user instanceof User);
+>>>>>>> laraxot/dev
 
         Assert::assertNotNull($user->created_at);
         Assert::assertNotNull($user->updated_at);

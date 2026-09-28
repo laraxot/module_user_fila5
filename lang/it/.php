@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -16,3 +17,5 @@ return [
         ],
     ],
 ];
+=======
+>>>>>>> laraxot/dev

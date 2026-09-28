@@ -16,6 +16,10 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # User Module - XotBasePivot Migration
 
 ## 📊 Overview

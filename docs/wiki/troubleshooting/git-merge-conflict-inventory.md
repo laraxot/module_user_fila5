@@ -4,7 +4,11 @@ type: troubleshooting
 module: User
 tags: [git, merge, conflict, user]
 created: 2026-04-28
+<<<<<<< HEAD
 updated: 2026-09-22
+=======
+updated: 2026-07-08
+>>>>>>> laraxot/dev
 qmd: "git merge conflict markers User docs inventory rebase"
 related:
   - "./filament-user-creation-pty-error.md"
@@ -18,6 +22,7 @@ related:
 
 # Git — inventario conflitti merge (User)
 
+<<<<<<< HEAD
 ## Stato 2026-09-22
 
 - **Riapparso su scala molto più ampia**: 866 file `.md`/`.mdc` in `docs/` con marker
@@ -38,6 +43,8 @@ related:
   `<<<<<<<` e per questo l'inventario del 2026-07-08 ("0 marker") non ha
   visto la corruzione da `>>>>>>> `/`=======` orfani.
 
+=======
+>>>>>>> laraxot/dev
 ## Stato 2026-07-08
 
 - **Rebase abortito** su `dev` (328 pick, 623 file `AA`) — causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
@@ -56,9 +63,13 @@ File con marker (da risolvere forward-only se riappaiono):
 
 ## Note operative
 
+<<<<<<< HEAD
 - Rigenerare lista (copre tutti e 3 i pattern, non solo l'apertura):
   `grep -rlE '^<<<<<<< |^=======$|^>>>>>>> ' -- docs/`
   (`^<<<<<<<` da solo è insufficiente: manca l'orfano `>>>>>>> ` senza
   apertura, la causa reale della recidiva 2026-09-22).
+=======
+- Rigenerare lista: `git grep -l '^<<<<<<<' -- '*.md' 'docs/'`
+>>>>>>> laraxot/dev
 - Non risolvere in parallelo senza lock; preferire wiki canonico `docs/wiki/` rispetto a duplicati root `docs/*.md`.
 - Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`

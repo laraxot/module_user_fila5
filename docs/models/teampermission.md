@@ -16,6 +16,10 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # TeamPermission
 
 Il modello `TeamPermission` rappresenta i permessi specifici di un utente all'interno di un team.

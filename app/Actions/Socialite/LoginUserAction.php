@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
@@ -12,7 +16,10 @@ use Filament\Facades\Filament;
 use Illuminate\Http\RedirectResponse;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class LoginUserAction
@@ -24,7 +31,11 @@ class LoginUserAction
      */
     public function execute(SocialiteUser $socialiteUser): RedirectResponse
     {
+<<<<<<< HEAD
         /** @var UserContract $user */
+=======
+        /** @var \Modules\Xot\Contracts\UserContract $user */
+>>>>>>> laraxot/dev
         $user = $socialiteUser->user()->firstOrFail();
 
         event(new SocialiteUserConnected($socialiteUser));

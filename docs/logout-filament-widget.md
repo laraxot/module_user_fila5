@@ -28,6 +28,10 @@ related:
 - [Analisi Errore Logout](logout-implementation-error-3.md)
 - [Struttura Widget](widgets-structure-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Introduzione
 
@@ -159,6 +163,10 @@ class LogoutWidget extends XotBaseWidget
 
                 <div class="mt-6 flex flex-col gap-3">
                     <x-filament::button
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
                         type="submit"
                         color="danger"
                         size="lg"
@@ -169,6 +177,10 @@ class LogoutWidget extends XotBaseWidget
 
                     <x-filament::button
                         tag="a"
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
                         :href="'/' . app()->getLocale()"
                         color="gray"
                         size="lg"
@@ -482,6 +494,10 @@ FilamentView::registerRenderHook(
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Conclusione
 

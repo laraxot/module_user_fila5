@@ -12,6 +12,10 @@ related:
   - "./has-tenants.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Trait HasTeams
 
 ## Descrizione

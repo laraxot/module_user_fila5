@@ -18,6 +18,10 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # two_factor
 
 <!-- Contenuto migrato da _docs/two_factor.txt -->

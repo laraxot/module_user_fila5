@@ -53,10 +53,17 @@ class BackfillOauthClientOwnerCommand extends Command
             $client->save();
             $client->refresh();
 
+<<<<<<< HEAD
             if ($client->owner_id !== null && $client->owner_type !== null) {
                 $fixed++;
             } else {
                 $skipped++;
+=======
+            if (null !== $client->owner_id && null !== $client->owner_type) {
+                ++$fixed;
+            } else {
+                ++$skipped;
+>>>>>>> laraxot/dev
                 $this->warn("  -> non corretto: nessun utente trovato per user_id={$client->user_id} (owner() ha restituito null)");
             }
         }

@@ -7,11 +7,19 @@ namespace Modules\User\Models;
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
 
 /**
+<<<<<<< HEAD
  * @property string $id
  * @property string $access_token_id
  * @property bool $revoked
  * @property \DateTimeInterface|null $expires_at
  * @property OauthToken|null $accessToken
+=======
+ * @property string                  $id
+ * @property string                  $access_token_id
+ * @property bool                    $revoked
+ * @property \DateTimeInterface|null $expires_at
+ * @property OauthToken|null         $accessToken
+>>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newQuery()

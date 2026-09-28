@@ -137,7 +137,11 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('new-password')
                 ->confirmed()
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
                     if ($state === null || $state === '') {
+=======
+                    if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 
@@ -217,7 +221,11 @@ class UserForm extends XotBaseResourceForm
                 ->same('password_confirmation')
                 ->autocomplete('new-password')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
                     if ($state === null || $state === '') {
+=======
+                    if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 
@@ -257,7 +265,11 @@ class UserForm extends XotBaseResourceForm
                 ->minLength(8)
                 ->suffixIcon('heroicon-o-key')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
                     if ($state === null || $state === '') {
+=======
+                    if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 

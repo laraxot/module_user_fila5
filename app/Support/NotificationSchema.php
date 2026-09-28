@@ -14,10 +14,17 @@ final class NotificationSchema
 {
     public static function isReadable(): bool
     {
+<<<<<<< HEAD
         $model = new Notification;
 
         $connection = $model->getConnectionName();
         if (! is_string($connection) || $connection === '') {
+=======
+        $model = new Notification();
+
+        $connection = $model->getConnectionName();
+        if (! is_string($connection) || '' === $connection) {
+>>>>>>> laraxot/dev
             $default = config('database.default');
             $connection = is_string($default) ? $default : 'mysql';
         }

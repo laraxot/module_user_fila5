@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -259,6 +263,10 @@ $membership = Membership::where('team_id', $team->id)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 
 ## Note Tecniche
 
@@ -279,4 +287,8 @@ $membership = Membership::where('team_id', $team->id)
 
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 *Status: IMPLEMENTATO E VALIDATO*

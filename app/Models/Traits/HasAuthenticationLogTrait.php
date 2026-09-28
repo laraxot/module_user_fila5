@@ -17,10 +17,17 @@ use Modules\User\Models\AuthenticationLog;
  * It includes methods for retrieving the latest authentication logs, login timestamps, IP addresses,
  * and other related information, including tracking consecutive login days.
  *
+<<<<<<< HEAD
  * @property MorphMany<AuthenticationLog, $this> $authentications The authentication logs related to the model.
  * @property MorphOne<AuthenticationLog, $this> $latestAuthentication The most recent authentication log entry.
  * @property string|null $login_at The timestamp of the last login.
  * @property string|null $ip_address The IP address of the last login.
+=======
+ * @property MorphMany<AuthenticationLog, $this> $authentications      The authentication logs related to the model.
+ * @property MorphOne<AuthenticationLog, $this>  $latestAuthentication The most recent authentication log entry.
+ * @property string|null                         $login_at             The timestamp of the last login.
+ * @property string|null                         $ip_address           The IP address of the last login.
+>>>>>>> laraxot/dev
  */
 trait HasAuthenticationLogTrait
 {
@@ -64,7 +71,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->login_at : null;
+=======
+        return null !== $auth ? $auth->login_at : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -77,7 +88,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->login_at : null;
+=======
+        return null !== $auth ? $auth->login_at : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -90,7 +105,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->ip_address : null;
+=======
+        return null !== $auth ? $auth->ip_address : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -103,7 +122,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->ip_address : null;
+=======
+        return null !== $auth ? $auth->ip_address : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -116,7 +139,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->login_at : null;
+=======
+        return null !== $auth ? $auth->login_at : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -129,7 +156,11 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
+<<<<<<< HEAD
         return $auth !== null ? $auth->ip_address : null;
+=======
+        return null !== $auth ? $auth->ip_address : null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -149,7 +180,11 @@ trait HasAuthenticationLogTrait
             while ($count > 0) {
                 $date = $date->subDay();
                 $count = $this->authentications()->whereDate('login_at', $date)->count();
+<<<<<<< HEAD
                 $days++;
+=======
+                ++$days;
+>>>>>>> laraxot/dev
             }
 
             return $days;

@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -206,6 +210,10 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
@@ -220,3 +228,10 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+=======
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

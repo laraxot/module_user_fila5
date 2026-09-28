@@ -18,6 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -42,3 +46,7 @@ related:
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> laraxot/dev
