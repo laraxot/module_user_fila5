@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-internal-analysis.md
+>>>>>>> 87273113 (.)

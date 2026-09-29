@@ -5,3 +5,4 @@ canonical: ../../../../../Themes/docs/shared-components/folio-pages-1.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/folio-pages-1.md
+>>>>>>> 87273113 (.)

@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Translation Architecture - Filament Navigation Best Practices
 
 > **Generated**: 2026-01-07

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 ?>
 @extends('pub_theme::layouts.base')
 

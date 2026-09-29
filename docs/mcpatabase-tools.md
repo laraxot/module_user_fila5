@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-database-tools.md
+>>>>>>> 87273113 (.)

@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Chart.js Datalabels Plugin for User Module Charts
 
 ## Overview

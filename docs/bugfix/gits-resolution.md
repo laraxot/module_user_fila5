@@ -10,3 +10,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md
+>>>>>>> 87273113 (.)

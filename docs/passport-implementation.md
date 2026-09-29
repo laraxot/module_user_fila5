@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

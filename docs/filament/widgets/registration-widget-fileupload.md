@@ -10,3 +10,4 @@ related:
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md
+>>>>>>> 87273113 (.)

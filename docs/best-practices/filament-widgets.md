@@ -18,6 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Best Practices per Widget Filament
 
 ## Struttura Corretta dei File e Namespace

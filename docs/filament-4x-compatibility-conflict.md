@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27
@@ -152,6 +153,7 @@ $this->info("Current user type: " . $typeLabelString);
 ## 🔗 Collegamenti
 
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
+>>>>>>> 87273113 (.)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Autenticazione](https://filamentphp.com/docs/panels/authentication)
 

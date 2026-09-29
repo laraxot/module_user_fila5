@@ -11,3 +11,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/advanced.md
+>>>>>>> 87273113 (.)

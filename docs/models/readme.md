@@ -16,6 +16,7 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module - Model Documentation
 
 **Modulo**: User

@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -85,6 +86,7 @@ return [
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
+>>>>>>> 87273113 (.)
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

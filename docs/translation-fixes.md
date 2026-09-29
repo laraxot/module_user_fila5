@@ -106,3 +106,5 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 60a2c9a9 (.)
+>>>>>>> 87273113 (.)

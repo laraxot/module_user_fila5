@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione

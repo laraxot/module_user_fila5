@@ -15,3 +15,4 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
 https://jsonplaceholder.typicode.com/users
+>>>>>>> 87273113 (.)

@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15

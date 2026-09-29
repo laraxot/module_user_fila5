@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
+
+declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -35,7 +36,7 @@ class RetrieveSocialiteUserAction
             ->where('provider_id', $providerId)
             ->first();
 
-        if ($res === null) {
+        if (null === $res) {
             return null;
         }
 

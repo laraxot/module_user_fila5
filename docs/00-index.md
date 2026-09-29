@@ -1,5 +1,6 @@
 # 📚 **Indice Documentazione Modulo User**
 
+>>>>>>> 87273113 (.)
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.5.0
 
@@ -19,6 +20,7 @@
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
+>>>>>>> 87273113 (.)
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
 - ⚖️ **[Moderation Strategy](./user-moderation-strategy.md)** - Workflow per approvazione e ban (dentisti, cliniche, utenti).
@@ -37,6 +39,7 @@
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
+>>>>>>> 87273113 (.)
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
@@ -49,6 +52,7 @@
 - `jenssegers/agent` - User-Agent
 - `spatie/laravel-personal-data-export` - Export GDPR
 
+>>>>>>> 87273113 (.)
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
@@ -59,3 +63,4 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 87273113 (.)

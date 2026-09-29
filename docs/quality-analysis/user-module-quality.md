@@ -7,3 +7,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-module-quality-report.md
+>>>>>>> 87273113 (.)

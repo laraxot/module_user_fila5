@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Profile: id autoincrement + colonna uuid
 
 ## Regola architetturale

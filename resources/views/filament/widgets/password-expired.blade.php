@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 ?>
 <x-filament-widgets::widget>
     <div class="text-center mb-4">

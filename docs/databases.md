@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table
@@ -50,4 +51,5 @@ related:
 - [Teams Relationship](../app/Models/Team.php)
 - [Migration File](../database/migrations/2025_05_17_000001_create_doctor_team_table.php)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> 87273113 (.)
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)

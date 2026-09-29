@@ -35,13 +35,13 @@ class ResolveFilamentUserConfigurationAction
         ];
     }
 
-    private function toBoolean(bool $value): bool
+    private function toBoolean(mixed $value): bool
     {
-        return $value;
+        return is_bool($value) ? $value : false;
     }
 
-    private function toString(string $value): string
+    private function toString(mixed $value): string
     {
-        return $value;
+        return is_string($value) ? $value : '';
     }
 }

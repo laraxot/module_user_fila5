@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\User\Actions\Otp\HashOtpValueAction;
 use Modules\User\Actions\Otp\OtpHashNeedsRehashAction;
 use Modules\User\Actions\Otp\VerifyOtpHashAction;

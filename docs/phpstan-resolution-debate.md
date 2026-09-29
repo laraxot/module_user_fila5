@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md
+>>>>>>> 87273113 (.)

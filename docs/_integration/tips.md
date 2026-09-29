@@ -18,6 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
+>>>>>>> 87273113 (.)
 # tips
 
 <!-- Contenuto migrato da _docs/tips.txt -->

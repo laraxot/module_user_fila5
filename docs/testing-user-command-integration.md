@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Problema**: Test fallisce con "Too few arguments" e "Target class [config] does not exist"

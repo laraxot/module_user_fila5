@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Passport Cluster - Riepilogo Completo
 
 **Data**: 2025-01-22
@@ -169,3 +170,4 @@ Alcune risorse non hanno tutte le pages standard:
 ## 2026-07-08 PHPStan
 
 `OauthPersonalAccessClientResource::getTableColumns()` resta statico perché viene usato da `table()`. Non chiamare metodi istanza con `self::`.
+>>>>>>> 87273113 (.)

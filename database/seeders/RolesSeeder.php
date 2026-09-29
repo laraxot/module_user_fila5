@@ -47,7 +47,7 @@ final class RolesSeeder extends Seeder
     /**
      * Display the seeding results in a table format.
      *
-     * @param  array<int, Role>  $roles
+     * @param array<int, Role> $roles
      */
     private function displayResults(array $roles): void
     {

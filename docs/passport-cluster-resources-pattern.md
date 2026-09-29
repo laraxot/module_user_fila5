@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-resources-pattern.md
+>>>>>>> 87273113 (.)

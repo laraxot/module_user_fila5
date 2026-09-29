@@ -12,3 +12,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
+>>>>>>> 87273113 (.)

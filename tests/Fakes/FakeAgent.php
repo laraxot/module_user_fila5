@@ -33,7 +33,8 @@ final class FakeAgent extends Agent
     public string|bool|null $fakeRobot = null;
 
     /**
-     * @param  string|null  $userAgent
+     * @param string|null $userAgent
+     *
      * @return string|bool
      */
     #[\Override]
@@ -43,7 +44,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
+     * @param string|null $userAgent
+     *
      * @return string|bool
      */
     #[\Override]
@@ -53,7 +55,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
+     * @param string|null $userAgent
+     *
      * @return string|bool
      */
     #[\Override]
@@ -63,8 +66,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
-     * @param  array<string, mixed>|null  $httpHeaders
+     * @param string|null               $userAgent
+     * @param array<string, mixed>|null $httpHeaders
      */
     #[\Override]
     public function isDesktop($userAgent = null, $httpHeaders = null): bool
@@ -73,8 +76,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
-     * @param  array<string, mixed>|null  $httpHeaders
+     * @param string|null               $userAgent
+     * @param array<string, mixed>|null $httpHeaders
      */
     #[\Override]
     public function isMobile($userAgent = null, $httpHeaders = null): bool
@@ -83,8 +86,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
-     * @param  array<string, mixed>|null  $httpHeaders
+     * @param string|null               $userAgent
+     * @param array<string, mixed>|null $httpHeaders
      */
     #[\Override]
     public function isTablet($userAgent = null, $httpHeaders = null): bool
@@ -93,8 +96,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
-     * @param  array<string, mixed>|null  $httpHeaders
+     * @param string|null               $userAgent
+     * @param array<string, mixed>|null $httpHeaders
      */
     #[\Override]
     public function isPhone($userAgent = null, $httpHeaders = null): bool
@@ -103,7 +106,7 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
+     * @param string|null $userAgent
      */
     #[\Override]
     public function isRobot($userAgent = null): bool
@@ -112,8 +115,9 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string  $propertyName
-     * @param  string  $type
+     * @param string $propertyName
+     * @param string $type
+     *
      * @return string|bool
      */
     #[\Override]
@@ -123,7 +127,8 @@ final class FakeAgent extends Agent
     }
 
     /**
-     * @param  string|null  $userAgent
+     * @param string|null $userAgent
+     *
      * @return string|bool
      */
     #[\Override]

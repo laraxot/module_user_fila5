@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Notification as NotificationFacade;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
-use Modules\User\Http\Livewire\Team\Change;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -177,8 +176,7 @@ describe('TeamChangeWidget dashboard discovery', function (): void {
 
 describe('Http Livewire twin retired', function (): void {
     test('team change http component is gone', function (): void {
-        Assert::assertFalse(class_exists(Change::class, false));
-        Assert::assertFileDoesNotExist(base_path('Modules/User/app/Http/Livewire/Team/Change.php'));
+        Assert::assertDirectoryDoesNotExist(base_path('Modules/User/app/Http/Livewire/Team'));
         Assert::assertFileDoesNotExist(base_path('Modules/User/resources/views/livewire/team/change.blade.php'));
     });
 });

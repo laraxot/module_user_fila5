@@ -18,6 +18,7 @@ related:
   - "./actions-structure-1.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  

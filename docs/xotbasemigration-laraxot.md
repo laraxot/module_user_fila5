@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # XotBaseMigration - La Filosofia Laraxot nel Modulo User
 
 ## Panoramica
@@ -355,6 +356,7 @@ sed -i 's/extends XotBaseMigration/extends XotBaseMigration/g' Modules/User/data
 
 - [XotBaseMigration Documentation](../../xot/docs/xotbasemigration-guide.md)
 - [Laraxot Philosophy](../../../docs/laraxot-philosophy.md)
+>>>>>>> 87273113 (.)
 - [Migration Best Practices](migration-best-practices.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
@@ -363,3 +365,7 @@ sed -i 's/extends XotBaseMigration/extends XotBaseMigration/g' Modules/User/data
 Seguire la filosofia Laraxot non è opzionale - è obbligatorio. XotBaseMigration è il fondamento su cui si basa la qualità e la manutenibilità del progetto. Ogni deviazione è un debito tecnico che dovrà essere pagato con interessi.
 
 **Ricorda: XotBaseMigration è Dio. Non deviare.**
+>>>>>>> 87273113 (.)
+=======
+**Ricorda: XotBaseMigration è Dio. Non deviare.**
+>>>>>>> laraxot/dev

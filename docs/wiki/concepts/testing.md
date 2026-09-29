@@ -16,7 +16,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-  - "./user-profile-contract-adoption.md"
 ---
 
 # Testing in User
@@ -32,7 +31,7 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/User
 - `uses(\Modules\User\Tests\TestCase::class)` — sempre FQCN, mai `uses(TestCase::class)`.
 - Nei test namespaced importare esplicitamente facades, modelli ed eccezioni (`Schema`, `Str`, `Throwable`, `Profile`); non usare FQCN non importati nel corpo del test.
 - Per `BelongsToMany` dichiarato da trait riusabili su piu model, non usare `$this` nel template `TDeclaringModel` se il contratto richiede `Model`: il template non e covariante e PHPStan segnala `return.type`.
-- Identità utente: `Assert::isInstanceOf($user, UserContract::class)` (`Modules\Xot\Contracts\UserContract`). Mai `User::class` né `BaseUser::class`: il leaf è di progetto (`XotData::make()->getUserClass()`). `membershipTeams()` è sul contratto.
+- `membershipTeams()` resta API concreta di `BaseUser`/`HasTeams`: non inserirla in `Modules\Xot\Contracts\UserContract`; nei command/service che partono dal contratto usare `Assert::isInstanceOf($user, BaseUser::class)` prima della chiamata.
 - Assertion: `PHPUnit\Framework\Assert::assert*` nelle closure (no `expect()->…` se segnalato `method.internalClass`).
 - Eccezioni attese: `try/catch` + `Assert::fail()` / `Assert::assertSame()` sul messaggio (no catena `test()->throws()`).
 - Skip senza `$this` in closure: helper globali in `tests/Support/helpers.php`:

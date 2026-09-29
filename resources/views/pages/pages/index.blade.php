@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+
+
 use Illuminate\View\View;
 use Modules\Cms\Models\Page;
 

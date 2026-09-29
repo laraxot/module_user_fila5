@@ -10,3 +10,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/implementation-summary-Modules.md
+>>>>>>> 87273113 (.)

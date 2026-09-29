@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-generic-types.md
+>>>>>>> 87273113 (.)

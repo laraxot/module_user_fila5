@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)
@@ -492,6 +493,7 @@ User Module
 
 ---
 
+>>>>>>> 87273113 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

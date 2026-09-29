@@ -17,6 +17,7 @@ related:
   - "./user-traits.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Gestione Teams
 
 ⬅️ [Torna alla Roadmap](../../roadmap.md)

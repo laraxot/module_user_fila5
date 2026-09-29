@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
+>>>>>>> 87273113 (.)

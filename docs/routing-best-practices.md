@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
 
 ## Il Principio Fondamentale
@@ -150,11 +151,13 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 - [La Via del Brand](../xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../xot/docs/tao/code_tao.md)
 - [Best Practices Filament](./filament-best-practices.md) 
+>>>>>>> 87273113 (.)
 - [Filosofia dei Getter](../Xot/docs/philosophy/getter_zen.md)
 - [Filosofia Zen Avanzata](../Xot/docs/philosophy/getter_zen_advanced.md)
 - [La Via del Brand](../Xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../Xot/docs/tao/code_tao.md)
 - [Best Practices Filament](./filament-best-practices.md) 
+>>>>>>> 87273113 (.)
 
 ## Principi Fondamentali
 
@@ -373,6 +376,7 @@ class UserResource extends Resource
 
 ## Collegamenti
 - [Filament Best Practices](./filament-best-practices.md)
+>>>>>>> 87273113 (.)
 - [Volt Documentation](https://livewire.laravel.com/docs/volt)
 - [Folio Documentation](https://laravel.com/docs/folio)
 - [Filament Documentation](https://filamentphp.com/docs) 
@@ -495,3 +499,4 @@ public function logout()
 - [Documentazione Volt](./volt-logout-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
+>>>>>>> 87273113 (.)

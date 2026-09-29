@@ -18,6 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
+>>>>>>> 87273113 (.)
 # spatie_permissions
 
 <!-- Contenuto migrato da _docs/spatie_permissions.txt -->

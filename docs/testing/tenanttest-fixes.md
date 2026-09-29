@@ -10,3 +10,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
+>>>>>>> 87273113 (.)

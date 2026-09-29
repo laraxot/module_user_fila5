@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 // User — translation section (claude-audit doc ratio).
 
 // User — translation section (claude-audit doc ratio).

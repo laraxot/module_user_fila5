@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 @php
     $user = auth()->user();
     $locale = app()->getLocale();

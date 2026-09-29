@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-analysis.md
+>>>>>>> 87273113 (.)

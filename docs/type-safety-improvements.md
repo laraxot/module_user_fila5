@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/type-safety-improvements.md
+>>>>>>> 87273113 (.)

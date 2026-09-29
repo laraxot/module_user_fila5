@@ -18,6 +18,7 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

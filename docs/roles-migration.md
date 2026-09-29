@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/roles-migration-philosophy-fix.md
+>>>>>>> 87273113 (.)

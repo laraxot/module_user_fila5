@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Passport Cluster - Namespace Fix
 
 **Status**: 🔧 IN PROGRESS - Critical Fix

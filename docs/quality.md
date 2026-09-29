@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview

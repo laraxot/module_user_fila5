@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 use Modules\User\Events\Login;

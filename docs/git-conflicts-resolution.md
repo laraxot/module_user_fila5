@@ -18,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -31,6 +32,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/modules/user/project_docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/project_docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/project_docs/widgets-structure-2.md)
+>>>>>>> 87273113 (.)
 - [BaseUser Documentation](/laravel/modules/user/project_docs/baseuser.md)
 
 ## File Risolti
@@ -319,6 +321,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+>>>>>>> 87273113 (.)
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -647,3 +650,4 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 --- 
+>>>>>>> 87273113 (.)

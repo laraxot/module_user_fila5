@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/vendor-extension-pattern.md
+>>>>>>> 87273113 (.)

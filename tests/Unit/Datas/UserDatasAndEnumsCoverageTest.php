@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Unit\Datas;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
+use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -114,5 +115,7 @@ describe('User Datas And Enums Coverage', function (): void {
 
         Assert::assertSame('Italiano', $italianLabel);
         Assert::assertSame('English', LanguageEnum::ENGLISH->getLabel());
+        Assert::assertSame('Deutsch', NestedLanguageEnum::GERMAN->getLabel());
+        Assert::assertSame('es', NestedLanguageEnum::SPANISH->value);
     });
 });

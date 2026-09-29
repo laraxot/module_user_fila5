@@ -20,6 +20,7 @@ related:
   - "./phpstanes.md"
 ---
 
+>>>>>>> 87273113 (.)
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -247,6 +248,7 @@ php artisan test --filter=ModelTest
    - Checklist per nuovi modelli
 
 2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
+>>>>>>> 87273113 (.)
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons
@@ -316,6 +318,7 @@ e
 
 Questo pattern di correzione può essere applicato a:
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> 87273113 (.)
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

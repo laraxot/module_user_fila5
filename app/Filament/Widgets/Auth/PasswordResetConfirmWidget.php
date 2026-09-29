@@ -64,7 +64,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public function confirmPasswordReset(): void
     {
-        if ($this->currentState !== 'form') {
+        if ('form' !== $this->currentState) {
             return;
         }
 
@@ -89,7 +89,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 },
             );
 
-            if ($response === Password::PASSWORD_RESET) {
+            if (Password::PASSWORD_RESET === $response) {
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -100,8 +100,9 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     ->send();
 
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+                /** @var UserContract $user */
                 $user = XotData::make()->getUserByEmail($email);
-                Assert::isInstanceOf($user, UserContract::class);
+                Assert::isInstanceOf($user, Authenticatable::class);
                 Auth::guard()->login($user);
 
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
@@ -137,17 +138,17 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public function isLoading(): bool
     {
-        return $this->currentState === 'loading';
+        return 'loading' === $this->currentState;
     }
 
     public function isSuccess(): bool
     {
-        return $this->currentState === 'success';
+        return 'success' === $this->currentState;
     }
 
     public function hasError(): bool
     {
-        return $this->currentState === 'error';
+        return 'error' === $this->currentState;
     }
 
     protected function handleResetError(string $response): void

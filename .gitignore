@@ -498,5 +498,3 @@ app/Models/Models
 .windsurf~*
 
 node_modules
-graphify-out/
-*.backup_*

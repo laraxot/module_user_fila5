@@ -14,3 +14,4 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/path-conventions.md
+>>>>>>> 87273113 (.)
