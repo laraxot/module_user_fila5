@@ -13,8 +13,8 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
-use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 

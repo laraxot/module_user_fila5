@@ -11,5 +11,4 @@ class ListTeams extends XotBaseListRecords
 {
     // //
     protected static string $resource = TeamResource::class;
-
 }

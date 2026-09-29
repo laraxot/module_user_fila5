@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Tables;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
@@ -16,12 +17,11 @@ class UsersTable extends BaseUsersTable
 {
     protected static ?string $resource = UserResource::class;
 
-<<<<<<< .merge_file_j2IbkY
     /**
      * Azioni condivise: la verifica email viene dalla base, quelle di gestione
      * password/disattivazione appartengono alla tabella utenti concreta.
      *
-     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     * @return array<int|string, Action|ActionGroup>
      */
     public function getTableActions(): array
     {
@@ -48,7 +48,4 @@ class UsersTable extends BaseUsersTable
             'export' => ExportBulkAction::make(),
         ];
     }
-=======
-
->>>>>>> .merge_file_6NQm63
 }

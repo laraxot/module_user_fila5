@@ -4,22 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
-<<<<<<< .merge_file_5NUX7k
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\BaseFilter;
+use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Models\BaseProfile;
-use Modules\User\Filament\Tables\Columns\UserColumn;
-use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
-=======
-use Filament\Tables\Columns\TextColumn;
-use Modules\User\Filament\Tables\Columns\UserColumn;
->>>>>>> .merge_file_31b0Xm
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
 
 class BaseProfilesTable extends XotBaseResourceTable
 {
-<<<<<<< .merge_file_5NUX7k
     /**
      * @var class-string<BaseProfile>
      */
@@ -29,7 +25,7 @@ class BaseProfilesTable extends XotBaseResourceTable
      * Profilo operativo: identità, contatto e stato sono visibili; gli identificativi
      * tecnici restano disponibili ma non affollano la prima scansione della tabella.
      *
-     * @return array<string, \Filament\Tables\Columns\Column>
+     * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
@@ -59,22 +55,12 @@ class BaseProfilesTable extends XotBaseResourceTable
      * stringhe nelle tre lingue e le query, quindi ogni tabella che espone uno
      * stato attivo ottiene lo stesso filtro senza ripeterlo.
      *
-     * @return array<string, \Filament\Tables\Filters\BaseFilter>
+     * @return array<string, BaseFilter>
      */
     public function getTableFilters(): array
     {
         return [
             'is_active' => IsActiveFilter::make('is_active'),
-=======
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
-            'user' => UserColumn::make()->searchable(),
-            'is_active' => IconColumn::make('is_active')->boolean(),
-            'photo' => \\Filament\Tables\Columns\SpatieMediaLibraryImageColumn::make('photo')->collection('profile'),
->>>>>>> .merge_file_31b0Xm
         ];
     }
 }

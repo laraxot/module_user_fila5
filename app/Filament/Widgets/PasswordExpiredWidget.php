@@ -127,21 +127,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
-<<<<<<< .merge_file_OOC4if
         $input = TextInput::make('current_password')
-=======
-        if ($authUser instanceof UserContract) {
-            return TextInput::make('current_password')
-                ->password()
-                ->revealable()
-                ->required()
-                ->rule(new CheckOtpExpiredRule($authUser))
-                ->validationAttribute(static::trans('fields.current_password.validation_attribute'));
-        }
-
-        // Fallback nel caso l'utente non sia del tipo corretto
-        return TextInput::make('current_password')
->>>>>>> .merge_file_9DofnM
             ->password()
             ->revealable()
             ->required()

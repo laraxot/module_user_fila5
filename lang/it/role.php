@@ -409,10 +409,6 @@ return [
         'editor' => 'Editor',
         'user' => 'Utente',
     ],
-<<<<<<< .merge_file_IfL8KO
     'label' => 'Ruolo',
-=======
-    'label' => 'role',
->>>>>>> .merge_file_Iapdym
     'plural_label' => 'Role (Plurale)',
 ];

@@ -23,7 +23,7 @@ final class UsersChartWidget extends XotBaseChartWidget
 
     protected static ?int $sort = 2;
 
-    public function getHeading(): ?string
+    public function getHeading(): string
     {
         return __('user::widgets.users_chart.heading');
     }

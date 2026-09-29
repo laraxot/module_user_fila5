@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\User\Filament\Widgets\Auth\BaseAuthWidget;
 
 /**
  * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.

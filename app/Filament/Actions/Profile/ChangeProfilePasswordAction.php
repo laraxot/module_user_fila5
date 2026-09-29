@@ -66,12 +66,9 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                         ->password()
                         ->rule(
                             'required',
-<<<<<<< .merge_file_s1jvk7
-=======
                             /**
                              * @param  callable(string): mixed  $get
                              */
->>>>>>> .merge_file_D4eUEc
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),

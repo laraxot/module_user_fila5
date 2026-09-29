@@ -51,12 +51,9 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                         ->placeholder(__('user::fields.confirm_password.placeholder'))
                         ->rule(
                             'required',
-<<<<<<< .merge_file_ydfbS0
-=======
                             /**
                              * @param  callable(string): mixed  $get
                              */
->>>>>>> .merge_file_Gilje9
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),

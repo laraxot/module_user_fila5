@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SocialProviderResource\Tables;
 
+use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
@@ -45,7 +46,7 @@ class SocialProvidersTable extends XotBaseResourceTable
     }
 
     /**
-     * @return array<string, \Filament\Actions\Action>
+     * @return array<string, Action>
      */
     public function getTableActions(): array
     {
