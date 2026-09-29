@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
->>>>>>> 87273113 (.)

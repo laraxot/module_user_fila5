@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-
 use Illuminate\Support\Facades\Password;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;

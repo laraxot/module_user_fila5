@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: [DATE]
@@ -420,7 +419,6 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../../docs/project/translation-standards.md)
->>>>>>> 87273113 (.)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

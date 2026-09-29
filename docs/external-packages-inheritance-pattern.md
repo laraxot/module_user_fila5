@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Pattern di Ereditarietà per Pacchetti Esterni
 
 ## 📋 Panoramica
@@ -162,14 +161,9 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 - [Filosofia Spatie Permission](./spatie-permission-philosophy.md)
 - [Architettura Modelli](../Xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../Xot/docs/critical-architecture-rules.md)
->>>>>>> 87273113 (.)
 - [Architettura Modelli](../xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../xot/docs/critical-architecture-rules.md)
 
 ---
 
 *Pattern verificato e documentato: 2025-01-XX*
->>>>>>> 87273113 (.)
-=======
-*Pattern verificato e documentato: 2025-01-XX*
->>>>>>> laraxot/dev

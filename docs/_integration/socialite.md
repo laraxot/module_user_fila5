@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->

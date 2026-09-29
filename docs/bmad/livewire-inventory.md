@@ -2,7 +2,8 @@
 title: "Inventario piattaforma — Livewire HTTP → Filament widget"
 type: inventory
 module: User
-status: implemented
+status: done
+updated: 2026-09-29
 track: livewire-to-filament-widget
 related:
   - ./advantages-filament-only.md

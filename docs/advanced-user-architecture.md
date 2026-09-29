@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Architettura Utente Avanzata basata sui Principi Filament
 
 ## Introduzione

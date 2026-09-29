@@ -18,7 +18,6 @@ related:
   - "./tasks-index.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task: Query Optimization User
 
 **Modulo**: User  

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Collegamento alle Traduzioni del Modulo User
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

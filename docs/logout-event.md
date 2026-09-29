@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error.md
->>>>>>> 87273113 (.)

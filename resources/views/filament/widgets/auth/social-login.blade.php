@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 {{--
     SocialLoginWidget: pulsanti OAuth riutilizzabili (Google, Microsoft, GitHub).
     CRITICO: Livewire richiede SEMPRE un root tag HTML con contenuto.

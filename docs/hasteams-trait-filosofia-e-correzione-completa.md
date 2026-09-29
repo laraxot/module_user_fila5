@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -278,7 +277,6 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
->>>>>>> 87273113 (.)
 - [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
@@ -300,7 +298,6 @@ Il trait `HasTeams` ora è:
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
 - [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
->>>>>>> 87273113 (.)
 
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User

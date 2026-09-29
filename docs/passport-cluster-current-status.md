@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
->>>>>>> 87273113 (.)

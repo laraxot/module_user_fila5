@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
->>>>>>> 87273113 (.)

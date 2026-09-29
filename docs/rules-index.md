@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-index.md
->>>>>>> 87273113 (.)

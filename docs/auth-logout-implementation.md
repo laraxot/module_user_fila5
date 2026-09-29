@@ -20,7 +20,6 @@ related:
 
 # Implementazione del Logout
 # Implementazione del Logout 
->>>>>>> 87273113 (.)
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -57,7 +56,6 @@ mount(function() {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
 
->>>>>>> 87273113 (.)
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
@@ -67,7 +65,6 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
->>>>>>> 87273113 (.)
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -88,7 +85,6 @@ $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCur
 ```
 
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
->>>>>>> 87273113 (.)
 
 ## Componenti Filament
 
@@ -117,7 +113,6 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 ## Chiavi di Traduzione
 
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
->>>>>>> 87273113 (.)
 
 ```php
 'logout' => [
@@ -175,7 +170,6 @@ mount(function() {
     session()->invalidate();
     session()->regenerateToken();
 
->>>>>>> 87273113 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>
@@ -221,7 +215,6 @@ mount(function() {
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
 
->>>>>>> 87273113 (.)
         // Logout
         Auth::logout();
         session()->invalidate();
@@ -463,7 +456,6 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
->>>>>>> 87273113 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>

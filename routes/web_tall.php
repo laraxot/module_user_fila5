@@ -46,6 +46,7 @@ Route::prefix('{lang}')->group(function (): void {
     });
 
     Route::middleware('auth')
+        // ->namespace('\Modules\User\Http\Livewire\Auth')
         ->group(static function (): void {
             $route = Route::get('email/verify/{id}/{hash}', EmailVerificationController::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);

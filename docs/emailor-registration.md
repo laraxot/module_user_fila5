@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Invio Email per la Continuazione della Registrazione del Dottore
 
 ## Panoramica del Processo

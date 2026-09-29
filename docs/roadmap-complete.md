@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -439,7 +438,6 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 
 **Versione**: 1.0.0  
 **
->>>>>>> 87273113 (.)
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01

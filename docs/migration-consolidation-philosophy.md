@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-philosophy.md
->>>>>>> 87273113 (.)

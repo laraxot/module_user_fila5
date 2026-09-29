@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Team User Permissions Column Fix - Laraxot Philosophy Compliant
 
 **Date**: [DATE]  

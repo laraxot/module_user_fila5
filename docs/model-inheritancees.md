@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -209,7 +208,6 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis-5.md)
->>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -404,7 +402,6 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis-5.md)
->>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -599,7 +596,6 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis-5.md)
->>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Case-Insensitive File Conflicts
 
 Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di maiuscole/minuscole:

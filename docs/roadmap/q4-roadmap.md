@@ -18,7 +18,6 @@ related:
   - "./03-later.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module Roadmap (2025 Q4)
 
 ## Vision & Scope
