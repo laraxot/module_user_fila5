@@ -5,6 +5,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Lang;
 use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;
 
@@ -59,10 +60,13 @@ describe('TeamChangeWidget', function (): void {
         // stringa esplicita invece di delegare a GetViewByClassAction: la convenzione
         // naturale per Filament\Widgets\Team\TeamChangeWidget produrrebbe
         // 'filament.widgets.team.team-change' (stutter "team"/"team-change"), vista che
-        // non esiste su disco. Il widget bypassa l'azione apposta; verificato con
-        // `php artisan tinker` il 2026-09-29 (view 'team.team-change' non esiste,
-        // 'team.change' si).
-        Assert::assertTrue(view()->exists('user::filament.widgets.team.change'));
+        // non esiste su disco. GetViewByClassAction lancia un'eccezione per questa
+        // classe: e' la prova, verificata a runtime (non staticamente provabile, quindi
+        // PHPStan --level=max non la marca come "always true/false"), che il widget
+        // bypassa l'azione apposta invece di usarla.
+        expect(static fn () => app(GetViewByClassAction::class)->execute(TeamChangeWidget::class))
+            ->toThrow(Exception::class, 'View not found');
+
         Assert::assertTrue(Lang::has('user::team_change_widget.switched.title'));
     });
 });
