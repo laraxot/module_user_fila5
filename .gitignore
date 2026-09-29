@@ -498,3 +498,31 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+graphify-out/
+*.backup_*
+
+# Cartelle vietate in root modulo (direttiva utente: vanno cancellate)
+/bashscripts/
+/graphify-out/
+/tools/
+/scripts/
+/.agents/
+/.claude-audit/
+/.claude/
+/.codex/
+/.opencode/
+/tests/graphify-out/
+graphify-out
+tools
+.agents
+.vscode
+build
+.claude
+/.github/skills/
+.github/skills
+docs/graphify
+resources/lang
+
+# docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
+docs/chat
+app/Application

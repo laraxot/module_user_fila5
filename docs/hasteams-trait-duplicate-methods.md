@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -98,7 +97,6 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../xot/docs/standards/readme.md)
->>>>>>> 87273113 (.)
 
 ---
 

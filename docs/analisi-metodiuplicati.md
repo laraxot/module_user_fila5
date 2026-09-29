@@ -18,13 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> 87273113 (.)
 
 ## Stato del Modulo User
 
@@ -163,7 +161,6 @@ protected function registerObservers(): void
 ## Link Correlati
 
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> 87273113 (.)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)

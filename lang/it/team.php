@@ -7,7 +7,7 @@ return [
         'name' => 'Team',
         'plural' => 'Teams',
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
-        'label' => 'team',
+        'label' => 'Team',
         'sort' => 18,
         'icon' => 'ui-user-team',
     ],
@@ -66,6 +66,6 @@ return [
         'model' => ['label' => 'team.plural.model'],
     ],
     'model' => ['label' => 'team.model'],
-    'label' => 'team',
+    'label' => 'Team',
     'plural_label' => 'Team (Plurale)',
 ];

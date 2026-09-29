@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -260,7 +259,6 @@ $membership = Membership::where('team_id', $team->id)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
->>>>>>> 87273113 (.)
 
 ## Note Tecniche
 
@@ -281,5 +279,4 @@ $membership = Membership::where('team_id', $team->id)
 
 ---
 
->>>>>>> 87273113 (.)
 *Status: IMPLEMENTATO E VALIDATO*

@@ -4,31 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-use Illuminate\Support\Facades\Auth;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-abstract class BaseAuthWidget extends XotBaseWidget
+/**
+ * Base condivisa per i widget di autenticazione del modulo User.
+ *
+ * Il comportamento comune (schema, stato, validazione e accessibilità) è
+ * centralizzato in XotBaseSchemaWidget e nella Form class specifica del widget.
+ * Le sottoclassi devono limitarsi all'orchestrazione dell'azione di dominio.
+ */
+abstract class BaseAuthWidget extends XotBaseSchemaWidget
 {
-    /** @var array<string, mixed>|null */
-    public ?array $data = [];
-
-    public function mount(): void
-    {
-        if (Auth::check()) {
-            redirect()->intended(route('dashboard'));
-        }
-    }
-
-    /**
-     * Restituisce i dati per la view.
-     * In Filament v3/Xot, il form va gestito tramite getFormSchema().
-     *
-     * @return array<string, mixed>
-     */
-    protected function getViewData(): array
-    {
-        return [
-            'form' => $this->getFormSchema(),
-        ];
-    }
 }

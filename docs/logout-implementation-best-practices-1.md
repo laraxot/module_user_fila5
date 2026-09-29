@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices-1.md
->>>>>>> 87273113 (.)

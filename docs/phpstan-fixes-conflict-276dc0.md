@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
->>>>>>> 87273113 (.)

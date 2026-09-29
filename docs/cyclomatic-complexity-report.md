@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Cyclomatic Complexity Report - Module: User
 
 **Generated:** 2025-10-01 19:44:12  

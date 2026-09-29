@@ -12,14 +12,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListFeatures extends XotBaseListRecords
 {
     protected static string $resource = FeatureResource::class;
-
-    public function getTableColumns(): array
-    {
-        return [
-            'name' => TextColumn::make('name')->searchable()->sortable(),
-            'type' => TextColumn::make('type')->searchable()->sortable(),
-            'active' => IconColumn::make('active')->boolean(),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-        ];
-    }
 }

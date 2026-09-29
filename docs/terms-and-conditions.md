@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 https://github.com/nowendwell/laravel-terms
 https://github.com/nowendwell/laravel-terms
 

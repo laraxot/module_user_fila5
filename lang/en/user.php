@@ -29,6 +29,7 @@ return [
         'unblock' => 'Sblocca',
         'send_reset_link' => 'Invia Link Reset Password',
         'verify_email' => 'Verifica Email',
+        'attach_role' => 'Assign Role',
     ],
     'fields' => [
         'name' => [
@@ -175,5 +176,33 @@ return [
         'delete_users' => 'Elimina utenti',
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
+    ],
+    'relation_groups' => [
+        'security' => [
+            'label' => 'Security',
+        ],
+        'organization' => [
+            'label' => 'Organization',
+        ],
+    ],
+    'widgets' => [
+        'overview' => [
+            'total' => [
+                'label' => 'Total users',
+                'description' => 'Overall number of registered users',
+            ],
+            'active' => [
+                'label' => 'Active users',
+                'description' => 'Users with an active account',
+            ],
+            'verified' => [
+                'label' => 'Verified emails',
+                'description' => 'Percentage of users with a verified email',
+            ],
+            'recent_logins' => [
+                'label' => 'Logins (24h)',
+                'description' => 'Successful logins in the last 24 hours',
+            ],
+        ],
     ],
 ];

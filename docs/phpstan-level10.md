@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module - PHPStan Level 10 Analysis
 
 ## 📊 Current Status
@@ -266,7 +265,6 @@ These fixes are **local to User module** and won't affect other modules.
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
 - [Passport Documentation](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/modules/user/docs/passport.md)
->>>>>>> 87273113 (.)
 
 ---
 

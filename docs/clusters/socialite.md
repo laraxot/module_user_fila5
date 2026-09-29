@@ -11,7 +11,6 @@ related:
   - "./passport-actions.md"
 ---
 
->>>>>>> 87273113 (.)
 # Socialite Cluster Structure
 
 This document outlines the structure and organization of the **Socialite** cluster within the **User** module.

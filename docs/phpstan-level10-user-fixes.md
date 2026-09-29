@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento
@@ -336,6 +335,5 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 
 - **Xot Module**: Vedi `Modules/Xot/docs/phpstan-level10-xot-fixes.md` per pattern di base
 - **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
->>>>>>> 87273113 (.)
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.

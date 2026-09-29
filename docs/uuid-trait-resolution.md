@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module - UUID Trait Conflict Resolution
 
 **Status**: Critical System Error Resolution
@@ -215,7 +214,6 @@ $token = $user->createToken('test');
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
 - [ ] Verify ExternalProject contact token generation
->>>>>>> 87273113 (.)
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -289,7 +287,6 @@ $token = $user->createToken('test');
 - [ ] API authentication works
 - [ ] LimeSurvey integration functional
 - [ ] ExternalProject survey workflows operational
->>>>>>> 87273113 (.)
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

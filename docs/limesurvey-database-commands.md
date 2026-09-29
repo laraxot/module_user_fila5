@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
->>>>>>> 87273113 (.)

@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Header;
 
@@ -23,7 +22,11 @@ final class ChangePasswordHeaderAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
+            ->tooltip(__('user::user.actions.change_password'))
             ->icon('heroicon-o-key')
+            ->requiresConfirmation()
+            ->modalHeading(__('user::password.actions.change_password.modal.heading'))
+            ->modalDescription(__('user::password.actions.change_password.modal.description'))
             ->action(function (array $data): void {
                 $record = Auth::user();
                 Assert::isInstanceOf($record, UserContract::class);
@@ -42,23 +45,12 @@ final class ChangePasswordHeaderAction extends XotBaseAction
             })
             ->schema(function (): array {
                 return [
-                    /*
-                     * TextInput::make('new_password')
-                     * ->password()
-                     *
-                     * ->placeholder(__('user::fields.new_password.placeholder'))
-                     * ->required()
-                     * ->rule(Password::default()),
-                     */
                     PasswordData::make()->getPasswordFormComponent('new_password'),
                     TextInput::make('new_password_confirmation')
                         ->password()
                         ->placeholder(__('user::fields.confirm_password.placeholder'))
                         ->rule(
                             'required',
-                            /**
-                             * @param callable(string): mixed $get
-                             */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),
@@ -71,25 +63,3 @@ final class ChangePasswordHeaderAction extends XotBaseAction
         return 'changePassword';
     }
 }
-
-/*
- * Action::make('changePassword')
- * ->action(function (UserContract $user, array $data): void {
- * $user->update([
- * 'password' => Hash::make($data['new_password']),
- * ]);
- * Notification::make()->success()->title('Password changed successfully.');
- * })
- * ->form([
- * TextInput::make('new_password')
- * ->password()
- * ->required()
- * ->rule(Password::default()),
- * TextInput::make('new_password_confirmation')
- * ->password()
- * ->rule('required', fn ($get): bool => (bool) $get('new_password'))
- * ->same('new_password'),
- * ])
- * ->icon('heroicon-o-key')
- * // ->visible(fn (User $record): bool => $record->role_id === Role::ROLE_ADMINISTRATOR)
- */

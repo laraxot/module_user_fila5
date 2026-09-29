@@ -1036,14 +1036,14 @@ return [
     'navigation' => [
         'name' => [
             'key' => 'user::auth.navigation.name',
-            'text' => 'Auth',
+            'text' => 'Autenticazione',
             'description' => 'Nome singolare della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
         ],
         'plural' => [
             'key' => 'user::auth.navigation.plural',
-            'text' => 'Auth',
+            'text' => 'Autenticazioni',
             'description' => 'Nome plurale della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1051,14 +1051,14 @@ return [
         'group' => [
             'name' => [
                 'key' => 'user::auth.navigation.group.name',
-                'text' => 'General',
+                'text' => 'Generale',
                 'description' => 'Nome del gruppo di navigazione',
                 'context' => 'navigation-group',
                 'placeholder' => '',
             ],
             'description' => [
                 'key' => 'user::auth.navigation.group.description',
-                'text' => 'General Settings',
+                'text' => 'Impostazioni generali',
                 'description' => 'Descrizione del gruppo di navigazione',
                 'context' => 'navigation-group',
                 'placeholder' => '',
@@ -1066,7 +1066,7 @@ return [
         ],
         'label' => [
             'key' => 'user::auth.navigation.label',
-            'text' => 'Auth',
+            'text' => 'Autenticazione',
             'description' => 'Etichetta della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1080,7 +1080,7 @@ return [
         ],
         'icon' => [
             'key' => 'user::auth.navigation.icon',
-            'text' => 'heroicon-o-collection',
+            'text' => 'heroicon-o-lock-closed',
             'description' => 'Icona associata alla sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1088,16 +1088,16 @@ return [
     ],
     'label' => [
         'key' => 'user::auth.label',
-        'text' => 'Auth',
+        'text' => 'Autenticazione',
         'description' => 'Etichetta della sezione autenticazione',
-        'context' => 'auth',
+        'context' => 'Autenticazione',
         'placeholder' => '',
     ],
     'plural_label' => [
         'key' => 'user::auth.plural-label',
-        'text' => 'Auth (Plurale)',
+        'text' => 'Autenticazioni',
         'description' => 'Etichetta plurale della sezione autenticazione',
-        'context' => 'auth',
+        'context' => 'Autenticazione',
         'placeholder' => '',
     ],
     'fields' => [

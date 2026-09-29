@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
->>>>>>> 87273113 (.)

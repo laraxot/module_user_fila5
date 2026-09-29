@@ -4,7 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-updated: 2026-07-27
+updated: 2026-09-21
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
@@ -22,6 +22,12 @@ related:
 # User Module LLM Wiki
 
 Indice operativo del wiki User.
+
+## BMAD — SuperAdmin widget (Epic 9, solo docs)
+
+- [bmad README](../bmad/README.md) — indice slice
+- [tech-spec](../bmad/tech-spec.md) — modifiche `AdminPanelProvider`
+- [epics](../bmad/epics.md) · [9.2 hook](../stories/9.2.admin-panel-provider-hook.story.md)
 
 ## AI / second brain (root)
 
@@ -56,6 +62,11 @@ Indice operativo del wiki User.
 ## Scopo User Module
 
 Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
+
+## Decisioni recenti
+
+- [Confine Table/Page e traduzioni](./concepts/filament-table-boundary-and-i18n.md)
+- [Story BMAD User 2026-09-29](../bmad/stories/user-filament-boundary-i18n-20260929.story.md)
 
 ## Runtime config & schema (2026-07-27)
 

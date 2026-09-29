@@ -17,7 +17,6 @@ related:
   - "./user-traits.md"
 ---
 
->>>>>>> 87273113 (.)
 # Legacy Code Cleanup
 
 ## Overview
@@ -77,7 +76,6 @@ Clean up and modernize the User module codebase by removing legacy code and upda
    - Performance testing
 ## Links
 - [Back to Roadmap](../../../docs/roadmap.md)
->>>>>>> 87273113 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [Documentation Enhancement](./documentation-enhancement.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)

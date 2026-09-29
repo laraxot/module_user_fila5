@@ -29,6 +29,14 @@
 		"files.eol": "\n",
 		"editor.wordWrap": "wordWrapColumn",
 		"editor.wordWrapColumn": 120,
-		"git.autofetch": "all"
+		"git.autofetch": "all",
+		"php-cs-fixer.config": ".php-cs-fixer.php",
+		"vscode-php-cs-fixer.config": ".php-cs-fixer.php",
+		"php.version": "8.4"
+	},
+	"extensions": {
+		"recommendations": [
+			"junstyle.php-cs-fixer"
+		]
 	}
 }

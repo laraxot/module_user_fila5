@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Cross Database Relations Issue - belongsToManyX SQLite Problem
 
 ## Problema Identificato

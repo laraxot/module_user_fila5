@@ -5,7 +5,6 @@ use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;
-
 use function Safe\file_get_contents;
 
 uses(TestCase::class);

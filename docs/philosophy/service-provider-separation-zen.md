@@ -7,4 +7,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/service-provider-aration-zen.md
->>>>>>> 87273113 (.)
