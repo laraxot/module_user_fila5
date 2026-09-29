@@ -8,7 +8,7 @@ use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Modules\User\Filament\Widgets\Auth\BaseAuthWidget;
 
 /**
  * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
@@ -22,7 +22,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  *
  * @property Schema $form
  */
-class LoginWidget extends XotBaseSchemaWidget
+class LoginWidget extends BaseAuthWidget
 {
     /**
      * @return class-string<UserForm>

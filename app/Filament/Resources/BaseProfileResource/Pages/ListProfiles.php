@@ -22,67 +22,7 @@ class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = BaseProfileResource::class;
 
-    /**
-     * @return array<string, Tables\Columns\Column>
-     */
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'user.name' => TextColumn::make('user.name')
-                ->sortable()
-                ->searchable()
-                ->default(function ($record) {
-                    if (! is_object($record)) {
-                        return '--';
-                    }
-
-                    // PHPStan Level 10: isset() invece di property_exists() per Eloquent relations/attributes
-                    $userValue = $record->user ?? null;
-
-                    if ($userValue === null) {
-                        $emailValue = $record->email ?? null;
-
-                        if ($emailValue === null) {
-                            if (method_exists($record, 'update')) {
-                                $record->update(['email' => fake()->email()]);
-                            }
-                            $emailValue = $record->email ?? '';
-                        }
-
-                        if (! is_string($emailValue)) {
-                            return '--';
-                        }
-
-                        try {
-                            $userValue = XotData::make()->getUserByEmail($emailValue);
-                        } catch (\Exception $e) {
-                            return '--';
-                        }
-                    }
-
-                    if (! is_object($userValue)) {
-                        return '--';
-                    }
-
-                    // PHPStan Level 10: isset() per magic properties di User model
-                    $userId = $userValue->id ?? null;
-
-                    if ($userId !== null && method_exists($record, 'update')) {
-                        $record->update(['user_id' => $userId]);
-                    }
-
-                    $userName = $userValue->name ?? '--';
-
-                    return is_string($userName) ? $userName : '--';
-                }),
-            'first_name' => TextColumn::make('first_name')->sortable()->searchable(),
-            'last_name' => TextColumn::make('last_name')->sortable()->searchable(),
-            'email' => TextColumn::make('email')->sortable()->searchable(),
-            'is_active' => IconColumn::make('is_active')->boolean(),
-            'photo' => SpatieMediaLibraryImageColumn::make('photo')->collection('profile'),
-        ];
-    }
+    // Tabella configurata da BaseProfilesTable::configure(); NON sovrascrivere getTableColumns() (final in XotBaseListRecords).
 
     /**
      * @return array<string, BaseFilter>
