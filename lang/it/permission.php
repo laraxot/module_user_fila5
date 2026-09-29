@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< .merge_file_gY9xMB
         'name' => 'Permesso',
         'plural' => 'Permessi',
         'label' => 'Permessi',
@@ -13,4 +14,11 @@ return [
     ],
     'label' => 'Permesso',
     'plural_label' => 'Permessi',
+=======
+        'label' => 'permission.navigation',
+        'group' => 'permission.navigation',
+        'icon' => 'permission.navigation',
+        'sort' => 32,
+    ],
+>>>>>>> .merge_file_9vh56l
 ];

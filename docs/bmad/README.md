@@ -17,9 +17,12 @@ related:
 
 # User — BMAD Method Integration
 
+<<<<<<< .merge_file_H9JAK5
 <<<<<<< .merge_file_BZEUvl
 > **SUMMARY**: indice dei documenti BMAD del modulo User (identità: autenticazione, ruoli Spatie, team, tenant, Passport OAuth2, Socialite/SSO, widget Filament), con l'inventario reale di `app/` (679 file PHP) e `tests/` (187 file PHP) verificato sul repository.
 =======
+=======
+>>>>>>> .merge_file_l4u4Kz
 ## Campagna vigente — solo Filament widget
 
 **Chrome convertito (2026-09-21): i 3 hook del provider sono FQCN; restano Cluster C (10.4) e residui.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
@@ -107,7 +110,10 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 | Epic 11, 15-19 | [perfection-epics.md](./perfection-epics.md) |
 | Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
 
+<<<<<<< .merge_file_H9JAK5
 >>>>>>> .merge_file_ZoAy3E
+=======
+>>>>>>> .merge_file_l4u4Kz
 
 ## Scopo BMAD per User
 
@@ -198,4 +204,7 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 ---
 
 *User · BMAD Method · data 2026-05-27*
+<<<<<<< .merge_file_H9JAK5
 >>>>>>> .merge_file_ZoAy3E
+=======
+>>>>>>> .merge_file_l4u4Kz

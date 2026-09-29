@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'name' => 'Password',
+<<<<<<< .merge_file_fFO6SB
         'plural' => 'Password',
         'updateDataAction' => [
             'label' => 'Aggiorna dati',
@@ -39,6 +40,30 @@ return [
                 'description' => 'Inserisci la nuova password per confermare il cambio.',
             ],
         ],
+=======
+        'plural' => 'Passwords',
+        'updateDataAction' => [
+            'label' => 'updateDataAction',
+            'icon' => 'updateDataAction',
+            'tooltip' => 'updateDataAction',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
+        'group' => 'password.navigation',
+>>>>>>> .merge_file_k6mm0H
     ],
     'label' => 'Password',
     'plural_label' => 'Password (Plurale)',

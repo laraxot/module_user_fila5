@@ -45,6 +45,12 @@ final class ChangePasswordAction extends XotBaseAction
                         ->placeholder(__('user::fields.confirm_password.placeholder'))
                         ->rule(
                             'required',
+<<<<<<< .merge_file_GdENv1
+=======
+                            /**
+                             * @param  callable(string): mixed  $get
+                             */
+>>>>>>> .merge_file_EvMELS
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),

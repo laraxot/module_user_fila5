@@ -5,15 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\BaseProfileResource\Tables;
 
 use Filament\Tables\Columns\IconColumn;
+<<<<<<< .merge_file_5NUX7k
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Models\BaseProfile;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
+=======
+use Filament\Tables\Columns\TextColumn;
+use Modules\User\Filament\Tables\Columns\UserColumn;
+>>>>>>> .merge_file_31b0Xm
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class BaseProfilesTable extends XotBaseResourceTable
 {
+<<<<<<< .merge_file_5NUX7k
     /**
      * @var class-string<BaseProfile>
      */
@@ -59,6 +65,16 @@ class BaseProfilesTable extends XotBaseResourceTable
     {
         return [
             'is_active' => IsActiveFilter::make('is_active'),
+=======
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->sortable(),
+            'name' => TextColumn::make('name')->searchable(),
+            'user' => UserColumn::make()->searchable(),
+            'is_active' => IconColumn::make('is_active')->boolean(),
+            'photo' => \\Filament\Tables\Columns\SpatieMediaLibraryImageColumn::make('photo')->collection('profile'),
+>>>>>>> .merge_file_31b0Xm
         ];
     }
 }

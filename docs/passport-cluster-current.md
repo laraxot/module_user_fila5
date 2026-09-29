@@ -4,7 +4,11 @@ type: stub
 superseded_by: "./passport-oauth-cluster.md"
 ---
 
+<<<<<<< .merge_file_2SYDUO
 # passport-cluster-current — superseduto
+=======
+# Passport Cluster - Status Attuale e Lavoro Necessario
+>>>>>>> .merge_file_Wpt5AC
 
 Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
 (documento canonico, 2026-09-29). Nessuna decisione o problema presente in

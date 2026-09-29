@@ -16,6 +16,7 @@ class UsersTable extends BaseUsersTable
 {
     protected static ?string $resource = UserResource::class;
 
+<<<<<<< .merge_file_j2IbkY
     /**
      * Azioni condivise: la verifica email viene dalla base, quelle di gestione
      * password/disattivazione appartengono alla tabella utenti concreta.
@@ -47,4 +48,7 @@ class UsersTable extends BaseUsersTable
             'export' => ExportBulkAction::make(),
         ];
     }
+=======
+
+>>>>>>> .merge_file_6NQm63
 }

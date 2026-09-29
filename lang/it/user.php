@@ -345,7 +345,11 @@ return [
             'label' => 'state',
         ],
         'user' => [
+<<<<<<< .merge_file_D1eybf
             'label' => 'Utente',
+=======
+            'label' => 'user',
+>>>>>>> .merge_file_VTc5e4
         ],
         'device' => [
             'label' => 'device',
@@ -422,11 +426,14 @@ return [
             'icon' => 'heroicon-o-link',
             'tooltip' => 'Collega record',
         ],
+<<<<<<< .merge_file_D1eybf
         'attach_role' => [
             'label' => 'Assegna Ruolo',
             'icon' => 'heroicon-o-link',
             'tooltip' => 'Assegna un ruolo all\'utente',
         ],
+=======
+>>>>>>> .merge_file_VTc5e4
         'detach' => [
             'label' => 'Scollega',
             'icon' => 'heroicon-o-link-slash',
@@ -729,6 +736,7 @@ return [
             'otp_expired' => [
                 'body' => 'Il codice OTP è scaduto',
             ],
+<<<<<<< .merge_file_D1eybf
         ],
         'actions' => [
             'send_otp_success' => 'Codice OTP inviato con successo',
@@ -755,6 +763,34 @@ return [
         'plural' => 'Utenti',
         'description' => 'Gestione degli utenti del sistema',
     ],
+=======
+        ],
+        'actions' => [
+            'send_otp_success' => 'Codice OTP inviato con successo',
+        ],
+    ],
+    'reset_password' => [
+        'password_reset_subject' => 'Reset Password',
+        'password_cause_of_email' => 'Hai ricevuto questa email perché abbiamo ricevuto una richiesta di reset password per il tuo account',
+        'reset_password' => 'Reset Password',
+        'password_if_not_requested' => 'Se non hai richiesto il reset della password, non è necessaria alcuna azione',
+        'thank_you_for_using_app' => 'Grazie per utilizzare la nostra applicazione',
+        'regards' => 'Cordiali saluti',
+    ],
+    'verify_email' => [
+        'subject' => 'Verifica Email',
+        'greeting' => 'Ciao :name',
+        'line1' => 'Clicca sul pulsante qui sotto per verificare il tuo indirizzo email',
+        'action' => 'Verifica Email',
+        'line2' => 'Se non hai creato un account, non è necessaria alcuna azione',
+        'salutation' => 'Cordiali saluti, :app_name',
+    ],
+    'model' => [
+        'label' => 'Utente',
+        'plural' => 'Utenti',
+        'description' => 'Gestione degli utenti del sistema',
+    ],
+>>>>>>> .merge_file_VTc5e4
     'filters' => [
         'status' => [
             'label' => 'Per Stato',

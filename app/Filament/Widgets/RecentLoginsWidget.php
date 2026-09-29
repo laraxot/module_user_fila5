@@ -27,11 +27,14 @@ final class RecentLoginsWidget extends XotBaseTableWidget
         return AuthenticationLog::class;
     }
 
+<<<<<<< .merge_file_1hwlZT
     public function getHeading(): ?string
     {
         return __('user::widgets.recent_logins.heading');
     }
 
+=======
+>>>>>>> .merge_file_WJ5BUy
     /**
      * Define the columns to display in the table.
      */
