@@ -500,3 +500,23 @@ app/Models/Models
 node_modules
 graphify-out/
 *.backup_*
+
+# Cartelle vietate in root modulo (direttiva utente: vanno cancellate)
+/bashscripts/
+/graphify-out/
+/tools/
+/scripts/
+/.agents/
+/.claude-audit/
+/.claude/
+/.codex/
+/.opencode/
+/tests/graphify-out/
+graphify-out
+tools
+.agents
+.vscode
+build
+.claude
+/.github/skills/
+.github/skills
