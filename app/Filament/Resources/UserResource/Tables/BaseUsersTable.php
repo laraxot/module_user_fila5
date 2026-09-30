@@ -48,6 +48,8 @@ abstract class BaseUsersTable extends XotBaseResourceTable
             'lang' => TextColumn::make('lang')->toggleable(isToggledHiddenByDefault: true),
             'current_team_id' => TextColumn::make('current_team_id')->toggleable(isToggledHiddenByDefault: true),
             'type' => TextColumn::make('type')->toggleable(isToggledHiddenByDefault: true),
+            'state' => TextColumn::make('state')->searchable()->toggleable(isToggledHiddenByDefault: true),
+            'password_expires_at' => TextColumn::make('password_expires_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
             'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),

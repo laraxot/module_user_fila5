@@ -40,7 +40,7 @@ class TeamChangeWidget extends XotBaseWidget
         Assert::notNull($authUser, '['.__LINE__.']['.class_basename($this).']');
 
         if (! $authUser instanceof UserContract || ! $authUser instanceof HasTeamsContract) {
-            throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
+            throw new InvalidArgumentException(__('user::team_change_widget.mount.invalid_user'));
         }
 
         $this->user = $authUser;
@@ -105,7 +105,6 @@ class TeamChangeWidget extends XotBaseWidget
         }
 
         return view($viewName, [
-            'view' => $viewName,
             'teams' => $this->teams,
         ]);
     }

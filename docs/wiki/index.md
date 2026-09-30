@@ -63,6 +63,11 @@ Indice operativo del wiki User.
 
 Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
+## Decisioni recenti
+
+- [Confine Table/Page e traduzioni](./concepts/filament-table-boundary-and-i18n.md)
+- [Story BMAD User 2026-09-29](../bmad/stories/user-filament-boundary-i18n-20260929.story.md)
+
 ## Runtime config & schema (2026-07-27)
 
 | Pagina | Argomento |

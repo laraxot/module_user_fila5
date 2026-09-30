@@ -19,6 +19,10 @@ related:
   - "./socialite-architecture.md"
 ---
 
+- 2026-09-29 — User: spostati gli hook `getTable*` nelle Table class, consolidati
+  `BaseProfilesTable`/`BaseUsersTable`, completate le traduzioni `.navigation` e
+  documentato il confine Page/Table. Story BMAD: [user-filament-boundary-i18n-20260929](../bmad/stories/user-filament-boundary-i18n-20260929.story.md).
+
 ---
 
 - 2026-09-21: BMAD Epic 9 (docs only, **nessun PHP**) — conversione SuperAdmin Livewire → `XotBaseWidget` + hook `AdminPanelProvider`. Canon: [bmad/README.md](../bmad/README.md), spec provider: [bmad/tech-spec.md](../bmad/tech-spec.md), story [9.2](../stories/9.2.admin-panel-provider-hook.story.md).

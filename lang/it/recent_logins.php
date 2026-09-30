@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 return [
+    'heading' => 'Accessi Recenti',
+    'columns' => [
+        'user' => 'Utente',
+        'login_at' => 'Ora Accesso',
+        'ip_address' => 'Indirizzo IP',
+        'user_agent' => 'User Agent',
+    ],
     'fields' => [
         'authenticatable' => [
             'name' => [
@@ -121,16 +128,16 @@ return [
         ],
     ],
     'navigation' => [
-        'name' => 'Recent Logins',
-        'plural' => 'Recent Logins',
+        'name' => 'Accessi Recenti',
+        'plural' => 'Accessi Recenti',
         'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
+            'name' => 'Generale',
+            'description' => 'Impostazioni Generali',
         ],
-        'label' => 'Recent Logins',
+        'label' => 'Accessi Recenti',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-    'label' => 'Recent Logins',
-    'plural_label' => 'Recent Logins (Plurale)',
+    'label' => 'Accessi Recenti',
+    'plural_label' => 'Accessi Recenti (Plurale)',
 ];

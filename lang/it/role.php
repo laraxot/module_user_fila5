@@ -409,6 +409,6 @@ return [
         'editor' => 'Editor',
         'user' => 'Utente',
     ],
-    'label' => 'role',
+    'label' => 'Ruolo',
     'plural_label' => 'Role (Plurale)',
 ];

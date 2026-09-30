@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-use Modules\User\Filament\Widgets\Auth\BaseAuthWidget;
 
 /**
  * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
@@ -51,13 +51,21 @@ class LoginWidget extends BaseAuthWidget
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
+
+            Notification::make()
+                ->title(__('user::auth.actions.login.success'))
+                ->success()
+                ->send();
+
             $redirectUrl = Route::has('dashboard')
                 ? route('dashboard')
                 : url('/'.app()->getLocale());
             $this->redirect($redirectUrl);
+
+            return;
         }
 
-        $this->addError('data.email', __('user::login.actions.login.error'));
+        $this->addError('email', __('user::auth.messages.failed'));
     }
 
     /**

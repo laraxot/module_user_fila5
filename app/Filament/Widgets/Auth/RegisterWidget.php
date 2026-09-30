@@ -88,7 +88,7 @@ class RegisterWidget extends XotBaseSchemaWidget
                         'ip_address' => request()->ip(),
                         'user_agent' => request()->userAgent(),
                     ])
-                    ->log('User registered via RegisterWidget');
+                    ->log(__('user::activity.log_registered'));
             }
 
             Assert::isInstanceOf($user, UserContract::class);
