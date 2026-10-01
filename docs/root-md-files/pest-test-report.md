@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
 type: concept
@@ -13,7 +11,6 @@ related:
   - "./git-reset.md"
 ---
 
->>>>>>> laraxot/dev
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

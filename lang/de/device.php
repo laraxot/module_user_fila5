@@ -10,11 +10,7 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei dispositivi degli utenti',
         ],
-<<<<<<< HEAD
-        'label' => 'device',
-=======
         'label' => 'Gerät',
->>>>>>> laraxot/dev
         'sort' => '20',
         'icon' => 'user-device',
     ],
@@ -44,11 +40,7 @@ return [
             'description' => '',
         ],
         'device' => [
-<<<<<<< HEAD
-            'label' => 'device',
-=======
             'label' => 'Gerät',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

@@ -1,11 +1,7 @@
 ---
 module: theme
 topic: livewire-to-filament-widget-migration
-<<<<<<< HEAD
-canonical: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
-=======
 canonical: ./bmad/livewire-inventory.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -17,9 +13,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
-=======
 See canonical documentation: ./bmad/livewire-inventory.md
 
 Nota 2026-09-29 (subagent User/lw2fw-02): il puntatore precedente puntava a
@@ -37,4 +30,3 @@ paralleli sulla stessa conversione), va deciso e creato come lavoro a se', non c
 fix di un link morto: creare `Themes/docs/` da zero solo per questo file avrebbe
 allargato lo scope di questo task oltre i 4 widget assegnati. Flag lasciato qui
 apposta, non risolto silenziosamente.
->>>>>>> laraxot/dev

@@ -4,20 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
-<<<<<<< HEAD
-=======
 use BackedEnum;
->>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 /**
@@ -29,8 +23,6 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
 
     protected static ?string $recordTitleAttribute = 'provider';
 
-<<<<<<< HEAD
-=======
     protected static string|BackedEnum|null $icon = 'heroicon-o-globe-alt';
 
     protected static bool $isBadgeDeferred = true;
@@ -49,7 +41,6 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
         return (string) $ownerRecord->socialiteUsers()->count();
     }
 
->>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */

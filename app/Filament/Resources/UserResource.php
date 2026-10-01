@@ -8,9 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Model;
-=======
 use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
@@ -24,15 +21,12 @@ use Modules\User\Filament\Resources\UserResource\RelationManagers\RolesRelationM
 use Modules\User\Filament\Resources\UserResource\RelationManagers\SocialiteUsersRelationManager;
 use Modules\User\Filament\Resources\UserResource\RelationManagers\TeamsRelationManager;
 use Modules\User\Filament\Resources\UserResource\RelationManagers\TenantsRelationManager;
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
-<<<<<<< HEAD
-=======
     /**
      * Raggruppa i 9 RelationManager in 4 tab invece di 9, usando il meccanismo
      * nativo Filament v4 `RelationGroup` (piu' manager renderizzati in sequenza
@@ -69,7 +63,6 @@ class UserResource extends XotBaseResource
         ];
     }
 
->>>>>>> laraxot/dev
     public static function getWidgets(): array
     {
         return [

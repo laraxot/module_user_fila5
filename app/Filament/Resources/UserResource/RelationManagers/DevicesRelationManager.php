@@ -4,20 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
-<<<<<<< HEAD
-=======
 use Filament\Actions\Action;
 use Filament\Actions\DetachAction;
 use Filament\Actions\EditAction;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class DevicesRelationManager extends XotBaseRelationManager
@@ -52,8 +46,6 @@ class DevicesRelationManager extends XotBaseRelationManager
             'logout_at' => TextColumn::make('logout_at'),
         ];
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Override del default `XotBaseRelationManager::getTableActions()`: aggiunge
@@ -91,5 +83,4 @@ class DevicesRelationManager extends XotBaseRelationManager
                 }),
         ];
     }
->>>>>>> laraxot/dev
 }

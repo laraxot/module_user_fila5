@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 id: module-user-readme
 title: "User — documentazione del modulo"
@@ -12,7 +10,6 @@ related:
   - "./docs/"
 ---
 
->>>>>>> laraxot/dev
 # 👤 User — chi sei, cosa puoi fare, per conto di chi
 
 [![Dominio](https://img.shields.io/badge/dominio-identit%C3%A0%20%26%20autorizzazione-1565C0.svg)](#)
@@ -558,10 +555,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 > Badge **misurati il 2026-09-02**, non dichiarati. PHPStan verificato con
 > `cd laravel && ./vendor/bin/phpstan analyse Modules/User` → `[OK] No errors`.
 > Le versioni vengono da `composer.json`, non dalla memoria. Il livello e' quello
@@ -654,8 +647,6 @@ spedisce.
 
 Voci **non** ancora verificate in questa revisione: copertura dei test, PHPMD,
 PHPInsights. Finché non sono misurate, non compaiono come badge.
-<<<<<<< HEAD
-=======
 ---
 
 ## Scheda tecnica verificata (2026-09-28)
@@ -682,4 +673,3 @@ php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User
 La responsabilità del modulo, le decisioni architetturali e le opportunità sono
 documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
 rigenerati quando il modulo cambia; non copiarli in badge non verificati.
->>>>>>> laraxot/dev

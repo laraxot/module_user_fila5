@@ -91,15 +91,9 @@ return [
         ],
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-=======
         'label' => 'Authentication',
         'plural_label' => 'Authentications',
         'group' => 'General',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

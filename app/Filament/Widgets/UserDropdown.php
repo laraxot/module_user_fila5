@@ -12,12 +12,7 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
-<<<<<<< HEAD
-    /** @var view-string */
-    protected string $view;
-=======
     protected string $view = 'user::filament.widgets.user-dropdown';
->>>>>>> laraxot/dev
 
     /**
      * Handle user logout.

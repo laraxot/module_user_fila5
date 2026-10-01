@@ -1,21 +1,4 @@
 ---
-<<<<<<< HEAD
-module: theme
-topic: oauth-cluster-implementation-summary
-canonical: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
-=======
 title: "[SUPERSEDUTO] oauth-cluster-implementation-summary"
 type: stub
 superseded_by: "./passport-oauth-cluster.md"
@@ -31,4 +14,3 @@ del documento canonico.
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
 >>>>>>> .merge_file_89MKvJ
->>>>>>> laraxot/dev

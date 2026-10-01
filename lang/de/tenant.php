@@ -10,11 +10,7 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei tenant e delle loro configurazioni',
         ],
-<<<<<<< HEAD
-        'label' => 'tenant',
-=======
         'label' => 'Mandant',
->>>>>>> laraxot/dev
         'sort' => '30',
         'icon' => 'user-user-tenant',
     ],

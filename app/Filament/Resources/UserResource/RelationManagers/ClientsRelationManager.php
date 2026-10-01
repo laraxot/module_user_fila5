@@ -5,21 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-=======
 use Filament\Actions\DetachAction;
 use Filament\Actions\EditAction;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
@@ -141,8 +135,6 @@ class ClientsRelationManager extends XotBaseRelationManager
 
         return $actions;
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Override del default `XotBaseRelationManager::getTableActions()`: aggiunge
@@ -179,5 +171,4 @@ class ClientsRelationManager extends XotBaseRelationManager
                 }),
         ];
     }
->>>>>>> laraxot/dev
 }

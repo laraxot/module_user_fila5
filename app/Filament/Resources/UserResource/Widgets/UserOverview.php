@@ -4,25 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Widgets;
 
-<<<<<<< HEAD
-use Filament\Schemas\Components\Component;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
-class UserOverview extends XotBaseWidget
-{
-    public ?Model $record = null;
-
-    /** @var view-string */
-    protected string $view;
-
-    /**
-     * @return array<int|string, Component>
-     */
-    public function getFormSchema(): array
-    {
-        return [];
-=======
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;
@@ -73,6 +54,5 @@ class UserOverview extends XotBaseStatsOverviewWidget
                 ->icon('heroicon-o-arrow-right-on-rectangle')
                 ->color('info'),
         ];
->>>>>>> laraxot/dev
     }
 }

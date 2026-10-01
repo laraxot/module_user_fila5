@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'permission.navigation',
-        'group' => 'permission.navigation',
-        'icon' => 'permission.navigation',
-        'sort' => 32,
-    ],
-=======
         'name' => 'Permesso',
         'plural' => 'Permessi',
         'label' => 'Permessi',
@@ -20,5 +13,4 @@ return [
     ],
     'label' => 'Permesso',
     'plural_label' => 'Permessi',
->>>>>>> laraxot/dev
 ];

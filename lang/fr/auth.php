@@ -58,15 +58,9 @@ return [
         'automated_decisions' => 'Vos données ne font pas l\'objet de décisions automatisées sans intervention humaine.',
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-=======
         'label' => 'Authentification',
         'plural_label' => 'Authentifications',
         'group' => 'Général',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

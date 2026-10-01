@@ -1,21 +1,4 @@
 ---
-<<<<<<< HEAD
-module: theme
-topic: passport-cluster-philosophy
-canonical: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
-=======
 title: "[SUPERSEDUTO] passport-cluster-philosophy"
 type: stub
 superseded_by: "./passport-oauth-cluster.md"
@@ -31,4 +14,3 @@ del documento canonico.
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
 >>>>>>> .merge_file_ryEYCW
->>>>>>> laraxot/dev

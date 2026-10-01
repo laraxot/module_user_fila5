@@ -1,13 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "User — BMAD Method Integration"
-description: "BMAD workflow documentation per il modulo User"
-module: "User"
-alias: "user"
-documentation_date: "2026-05-27"
-bmad_version: "6.2.0"
-bmad_track: "core-identity"
-=======
 title: "User — BMAD Documentation Index"
 type: note
 tags: [bmad, user, identity, index]
@@ -22,20 +13,16 @@ related:
   - ./quick-reference.md
   - ./setup-guide.md
   - ../../../Xot/docs/bmad-method.md
->>>>>>> laraxot/dev
 ---
 
 # User — BMAD Method Integration
 
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_H9JAK5
 <<<<<<< .merge_file_BZEUvl
 > **SUMMARY**: indice dei documenti BMAD del modulo User (identità: autenticazione, ruoli Spatie, team, tenant, Passport OAuth2, Socialite/SSO, widget Filament), con l'inventario reale di `app/` (679 file PHP) e `tests/` (187 file PHP) verificato sul repository.
 =======
 =======
 >>>>>>> .merge_file_l4u4Kz
->>>>>>> laraxot/dev
 ## Campagna vigente — solo Filament widget
 
 **Chrome convertito (2026-09-21): i 3 hook del provider sono FQCN; restano Cluster C (10.4) e residui.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
@@ -123,106 +110,6 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 | Epic 11, 15-19 | [perfection-epics.md](./perfection-epics.md) |
 | Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
 
-<<<<<<< HEAD
-
-## Scopo BMAD per User
-
-User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
-
-## Religione BMAD per User
-
-User segue i principi BMAD di:
-
-1. **`project-context.md`** è costituzione — non sviluppare senza comprenderlo
-2. **Separazione database** è politica — connessione `user` per identità, connessione applicativa per business
-3. **Actions, non Services** — tutta la logica utente passa per Actions
-4. **PHPStan Level 10** — sicurezza tipografica non negoziabile
-5. **Ruoli per team** — permessi contestuali al team
-6. **Token scade, log resta** — persistente identità
-
-## Workflow BMAD Consigliati per User
-
-### Phase 1: Analysis (Essenziale per User)
-```bash
-bmad-domain-research      # Studio dominio identità, autenticazione
-bmad-technical-research   # Valutazione architettura multi-tenant
-```
-
-### Phase 2: Planning
-```bash
-bmad-create-prd           # PRD modulo User: provider auth, provider social
-bmad-create-architecture  # Architettura database separate (user vs app)
-```
-
-### Phase 3: Solutioning
-```bash
-bmad-create-epics-and-stories  # Epic: User management, OAuth2, SSO
-bmad-check-implementation-readiness  # Quality gate prima dello sprint
-```
-
-### Phase 4: Implementation
-```bash
-bmad-sprint-planning      # Sprint iniziale per feature utente
-bmad-create-story         # Story: login, registro, profilo
-bmad-dev-story            # Implementazione
-bmad-code-review          # Review con focus su sicurezza
-```
-
-## Quick Flow per User
-
-Per task rapidi su User:
-```bash
-bmad-quick-dev "Aggiungi social provider X"
-bmad-quick-spec "Specifica per OTP 2FA"
-```
-
-## Agenti Specializzati per User
-
-| Agente | Ruolo | Quando Usare |
-|--------|-------|--------------|
-| Mary 📊 | Analyst | Ricerca provider auth, analisi dominio |
-| John 📋 | PM | PRD auth, roadmap social |
-| Winston 🏗️ | Architect | Architettura database separati, multi-tenant |
-| Amelia 💻 | Developer | Implementazione login, OTP, social |
-| Quinn 🧪 | QA | Test sicurezza, impersonation, OAuth2 |
-
-## Configurazione
-
-```bash
-# Verifica config User
-php artisan config:show user
-
-# Test provider
-php artisan user:passport:install
-
-# Esegui seeding
-php artisan db:seed --class=RoleSeeder
-
-# Verifica PHPStan
-./vendor/bin/phpstan analyse Modules/User --memory-limit=-1
-```
-
-## Struttura Output BMAD
-
-```
-_bmad-output/
-├── planning-artifacts/
-│   ├── PRD.md              # Requisiti modulo User
-│   ├── architecture.md     # Architettura DB separata
-│   └── epics/
-│       ├── epic-001-user-auth.md
-│       ├── epic-002-oauth2.md
-│       └── epic-003-ss.md
-└── implementation-artifacts/
-    ├── sprint-status.yaml
-    └── story-001-login-implementation.md
-```
-
-## Vedi Anche
-
-- [quick-reference](quick-reference.md)
-- [setup-guide](setup-guide.md)
-=======
 <<<<<<< .merge_file_H9JAK5
 >>>>>>> .merge_file_ZoAy3E
 =======
@@ -310,7 +197,6 @@ _bmad-output/
 - [setup-guide](setup-guide.md)
 <<<<<<< .merge_file_BZEUvl
 =======
->>>>>>> laraxot/dev
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
 - [livewire-to-filament-widget-migration.md](../livewire-to-filament-widget-migration.md)
 - [filament_errors.md](../filament_errors.md)
@@ -318,10 +204,7 @@ _bmad-output/
 ---
 
 *User · BMAD Method · data 2026-05-27*
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_H9JAK5
 >>>>>>> .merge_file_ZoAy3E
 =======
 >>>>>>> .merge_file_l4u4Kz
->>>>>>> laraxot/dev

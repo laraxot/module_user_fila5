@@ -4,18 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
 use Filament\Notifications\Notification;
->>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
->>>>>>> laraxot/dev
 
 /**
  * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
@@ -29,11 +22,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  *
  * @property Schema $form
  */
-<<<<<<< HEAD
-class LoginWidget extends XotBaseSchemaWidget
-=======
 class LoginWidget extends BaseAuthWidget
->>>>>>> laraxot/dev
 {
     /**
      * @return class-string<UserForm>
@@ -62,30 +51,21 @@ class LoginWidget extends BaseAuthWidget
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
-<<<<<<< HEAD
-=======
 
             Notification::make()
                 ->title(__('user::auth.actions.login.success'))
                 ->success()
                 ->send();
 
->>>>>>> laraxot/dev
             $redirectUrl = Route::has('dashboard')
                 ? route('dashboard')
                 : url('/'.app()->getLocale());
             $this->redirect($redirectUrl);
-<<<<<<< HEAD
-        }
-
-        $this->addError('data.email', __('user::login.actions.login.error'));
-=======
 
             return;
         }
 
         $this->addError('email', __('user::auth.messages.failed'));
->>>>>>> laraxot/dev
     }
 
     /**

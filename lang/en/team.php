@@ -10,11 +10,7 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei team e delle loro autorizzazioni',
         ],
-<<<<<<< HEAD
-        'label' => 'team',
-=======
         'label' => 'Team',
->>>>>>> laraxot/dev
         'sort' => '18',
         'icon' => 'user-team',
     ],

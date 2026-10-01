@@ -29,10 +29,7 @@ return [
         'unblock' => 'Sblocca',
         'send_reset_link' => 'Invia Link Reset Password',
         'verify_email' => 'Verifica Email',
-<<<<<<< HEAD
-=======
         'attach_role' => 'Assign Role',
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -180,8 +177,6 @@ return [
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
     ],
-<<<<<<< HEAD
-=======
     'relation_groups' => [
         'security' => [
             'label' => 'Security',
@@ -210,5 +205,4 @@ return [
             ],
         ],
     ],
->>>>>>> laraxot/dev
 ];
