@@ -2,7 +2,7 @@
 type: concept
 module: User
 confidence: high
-updated: 2026-06-05
+updated: 2026-10-01
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -20,14 +20,15 @@ related:
 
 `BaseProfile` genera `uuid` in `creating`. Il contratto richiede colonna `uuid` nella tabella `profiles` del DB usato dal modello concreto.
 
-## Owner schema (workorder — connessione `user`)
+## Owner schema (User — connessione `user`)
 
-**Owner migrazione = modulo WorkOrder** (`main_module`):
+**Owner migrazione = modulo User** (`main_module`):
 
-- [profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md)
-- `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
+- `laravel/Modules/User/database/migrations/2026_10_01_150108_create_profiles_table.php`
 
-Duplicati User in `database/migrations/_bak/*.merged` (violazione 1 modello = 1 migrazione owner).
+La migrazione converte anche gli ID UUID legacy in bigint auto-increment e aggiorna
+`profile_team.profile_id` preservando l'associazione. Il timestamp viene incrementato
+per far rieseguire il repair sulle installazioni gia' migrate.
 
 Vedi [profile-id-bigint-uuid-fix](./profile-id-bigint-uuid-fix.md) per errore 1364 `id` senza default.
 
@@ -71,7 +72,7 @@ La prima domanda corretta e':
 ## Riferimenti
 
 - `laravel/Modules/User/app/Models/BaseProfile.php`
-- `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
+- `laravel/Modules/User/database/migrations/2026_10_01_150108_create_profiles_table.php`
 - [profile-id-bigint-uuid-fix](./profile-id-bigint-uuid-fix.md)
 - [architecture-one-migration-per-model](../../../../../docs/wiki/bmad/architecture-one-migration-per-model.md)
 - `laravel/Modules/Xot/docs/database/migration-base-rules.md`

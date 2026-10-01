@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+
+use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -18,18 +21,13 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * The `id` is NEVER exposed in APIs or URLs; `uuid` is used for all external
  * references. XotBaseModel::casts() already handles both.
  */
-/*
- * Owner migration `User::profiles` (consolidamento 2026-09-01).
- * Colonne unione viste nei duplicati non presenti qui: ['id'].
- */
-return new class extends XotBaseMigration
+return new class() extends XotBaseMigration
 {
     protected ?string $model_class = Profile::class;
 
     public function up(): void
     {
-        // -- CREATE (new installations) --
-        $this->tableCreate(static function (Blueprint $table): void {
+        $this->tableCreate(function (Blueprint $table): void {
             $table->id();
             $table->string('uuid', 36)->index()->nullable();
             $table->string('user_id', 36)->index()->nullable();
@@ -63,23 +61,17 @@ return new class extends XotBaseMigration
             $table->string('deleted_by')->nullable();
         });
 
+
+
         // -- UPDATE (existing installations: additive, idempotent) --
         $this->tableUpdate(function (Blueprint $table): void {
-            if (! $this->hasColumn('uuid')) {
-                $table->string('uuid', 36)->nullable()->index();
-            }
+
             if (! $this->hasColumn('user_id')) {
                 $table->string('user_id', 36)->index()->nullable();
             }
             if (! $this->hasColumn('type')) {
                 $table->string('type')->index()->nullable();
             }
-            // Era dichiarata solo nel blocco CREATE, che su questa tabella non gira mai:
-            // `profiles` viene creata da `Modules/Ptv/.../2024_01_01_000004_create_profiles_table.php`,
-            // che parte prima e non conosce questa colonna. Il model `Profile` invece la
-            // dichiara (`@property string $user_name`) e la usa per costruire l'URL del
-            // profilo, quindi senza questa riga la colonna non esiste in nessun database
-            // già migrato.
             if (! $this->hasColumn('user_name')) {
                 $table->string('user_name')->nullable();
             }
@@ -145,6 +137,20 @@ return new class extends XotBaseMigration
             }
             if (! $this->hasColumn('is_active')) {
                 $table->boolean('is_active')->default(true);
+            }
+            /*
+            if ($this->hasColumn('id')) {
+                // Drop primary key constraint if exists
+                $table->dropPrimary(['id']);
+                // Change id to bigIncrements
+                $table->bigIncrements('id')->change()->primary();
+            } else {
+                $table->bigIncrements('id')->primary();
+            }
+             */
+            // Ensure uuid column exists as string(36) nullable indexed
+            if (! $this->hasColumn('uuid')) {
+                $table->string('uuid', 36)->index()->nullable();
             }
         });
     }

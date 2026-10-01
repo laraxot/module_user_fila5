@@ -4,7 +4,7 @@ type: concept
 module: User
 tags: [user, profile, migration, uuid, bigint, id-contract]
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-01
 qmd: "user profiles id bigint uuid convertIdFromUuidToBigintIfNeeded field id default value 1364"
 issues:
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
@@ -84,3 +84,17 @@ Correzioni:
 6. Config `Modules/Cms/app/Config/xra.php` + lowercase duplicato: aggiunto `use Modules\User\Models\User; use Modules\User\Models\Profile;` per `::class` literals
 
 Verifica login funzionante → composer/pint/phpstan green sui file chiave.
+
+## Stato in questo checkout (2026-10-01)
+
+Le correzioni runtime/config sopra sono presenti: `main_module` e' `User` e
+`BaseProfile::booted()` genera solo `uuid`. Non correggono pero' una tabella
+gia' esistente con `id` UUID. La migrazione owner corrente e'
+`Modules/User/database/migrations/2026_10_01_150108_create_profiles_table.php`;
+ora converte la PK legacy in bigint, conserva i dati e rimappa
+`profile_team.profile_id`.
+
+Il cast `'id' => 'integer'` e' ancora presente nel `BaseProfile` di questo
+checkout, ma non assegna un valore all'insert ed e' distinto dalla causa 1364.
+La migrazione non e' stata eseguita su alcun database durante questa modifica:
+applicarla con `php artisan migrate` nel processo di deploy autorizzato.
