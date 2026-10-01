@@ -18,8 +18,12 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
+=======
+    protected string $view = 'user::widgets.auth.notifications-center-widget';
+>>>>>>> laraxot/dev
 
     /** @var Collection<int, DatabaseNotification|Notification> */
     public Collection $notifications;

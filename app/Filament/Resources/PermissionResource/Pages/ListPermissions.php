@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\CreateAction;
@@ -26,12 +27,18 @@ use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
+=======
+use Filament\Actions\CreateAction;
+use Modules\User\Filament\Resources\PermissionResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> laraxot/dev
 
 class ListPermissions extends XotBaseListRecords
 {
     protected static string $resource = PermissionResource::class;
 
     /**
+<<<<<<< HEAD
      * @return array<string, Tables\Columns\Column>
      */
     #[\Override]
@@ -120,6 +127,8 @@ class ListPermissions extends XotBaseListRecords
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<string, Action>
      */
     #[\Override]

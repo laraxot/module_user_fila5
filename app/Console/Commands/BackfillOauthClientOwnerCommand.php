@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\OauthClient;
 
 /**
@@ -30,7 +33,11 @@ class BackfillOauthClientOwnerCommand extends Command
 
         $clients = OauthClient::query()
             ->whereNotNull('user_id')
+<<<<<<< HEAD
             ->where(function (Builder $query): void {
+=======
+            ->where(function ($query): void {
+>>>>>>> laraxot/dev
                 $query->whereNull('owner_id')->orWhereNull('owner_type');
             })
             ->get();

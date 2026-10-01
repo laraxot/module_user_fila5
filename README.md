@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+id: module-user-readme
+title: "User — documentazione del modulo"
+type: module-readme
+module: User
+status: active
+updated: 2026-09-28
+tags: [module, laraxot, user]
+related:
+  - "./docs/"
+---
+
+>>>>>>> laraxot/dev
 # 👤 User — chi sei, cosa puoi fare, per conto di chi
 
 [![Dominio](https://img.shields.io/badge/dominio-identit%C3%A0%20%26%20autorizzazione-1565C0.svg)](#)
@@ -543,7 +558,10 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 > Badge **misurati il 2026-09-02**, non dichiarati. PHPStan verificato con
 > `cd laravel && ./vendor/bin/phpstan analyse Modules/User` → `[OK] No errors`.
 > Le versioni vengono da `composer.json`, non dalla memoria. Il livello e' quello
@@ -636,3 +654,32 @@ spedisce.
 
 Voci **non** ancora verificate in questa revisione: copertura dei test, PHPMD,
 PHPInsights. Finché non sono misurate, non compaiono come badge.
+<<<<<<< HEAD
+=======
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `User` |
+| Namespace | `Modules\\User\\` |
+| File PHP (escluso vendor) | 1879 |
+| File PHP di test | 187 |
+| Aree `app/` rilevate | Actions, Adapters, Application, Console, Contracts, Datas, Enums, Events, Exceptions, Facades, Filament, Http, Listeners, Livewire, Mail, Models, Notifications, Observers, Policies, Providers, Rules, Support, Traits, View, helpers.php |
+| Migrazioni PHP | 172 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User
+./vendor/bin/pest Modules/User
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+>>>>>>> laraxot/dev

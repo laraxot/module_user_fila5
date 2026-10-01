@@ -72,6 +72,10 @@ return [
         'unblock' => 'Sblocca',
         'send_reset_link' => 'Invia Link Reset Password',
         'verify_email' => 'Verifica Email',
+<<<<<<< HEAD
+=======
+        'attach_role' => 'Rolle zuweisen',
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'created' => 'Utente creato con successo',

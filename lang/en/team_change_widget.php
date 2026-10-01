@@ -8,4 +8,10 @@ return [
         'helper_text' => 'Notification after the current team is switched',
         'tooltip' => 'Team switched',
     ],
+<<<<<<< HEAD
+=======
+    'mount' => [
+        'invalid_user' => 'User must implement UserContract and HasTeamsContract',
+    ],
+>>>>>>> laraxot/dev
 ];

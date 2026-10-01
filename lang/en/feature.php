@@ -13,7 +13,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione delle feature e delle funzionalità',
         ],
+<<<<<<< HEAD
         'label' => 'feature',
+=======
+        'label' => 'Feature',
+>>>>>>> laraxot/dev
         'sort' => '75',
         'icon' => 'user-user-feature',
     ],

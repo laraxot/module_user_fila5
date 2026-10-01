@@ -24,6 +24,10 @@ class TeamsTable extends XotBaseResourceTable
     {
         return [
             'name' => TextColumn::make('name')->searchable()->sortable(),
+<<<<<<< HEAD
+=======
+            'users_count' => TextColumn::make('users_count')->counts('users')->numeric()->sortable(),
+>>>>>>> laraxot/dev
             'slug' => TextColumn::make('slug')->searchable()->sortable(),
             'personal_team' => IconColumn::make('personal_team')->boolean()->sortable(),
             'description' => TextColumn::make('description')->limit(60)->wrap()->toggleable(isToggledHiddenByDefault: true),

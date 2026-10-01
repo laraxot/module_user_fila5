@@ -92,7 +92,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione delle password usa e getta',
         ],
+<<<<<<< HEAD
         'label' => 'otp',
+=======
+        'label' => 'OTP',
+>>>>>>> laraxot/dev
         'sort' => 31,
         'icon' => 'user-user-otp',
     ],

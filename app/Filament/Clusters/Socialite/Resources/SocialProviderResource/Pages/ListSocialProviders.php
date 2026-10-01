@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -16,6 +19,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSocialProviders extends XotBaseListRecords
 {
     protected static string $resource = SocialProviderResource::class;
+<<<<<<< HEAD
 
     #[\Override]
     /**
@@ -48,4 +52,6 @@ class ListSocialProviders extends XotBaseListRecords
             ]),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

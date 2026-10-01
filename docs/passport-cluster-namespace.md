@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Passport Cluster - Namespace Fix"
 type: concept
 tags: [passport, cluster, namespace]
@@ -256,3 +257,20 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*.php" -type f
 **Documentato da**: Claude (Super Cow Mode)
 **Metodologia**: DRY + KISS + SOLID + PSR-4 Compliance
 **Status**: 📝 Documented - Ready for Implementation
+=======
+title: "[SUPERSEDUTO] passport-cluster-namespace"
+type: stub
+superseded_by: "./passport-oauth-cluster.md"
+---
+
+<<<<<<< .merge_file_GOHSJy
+# passport-cluster-namespace — superseduto
+=======
+# Passport Cluster - Namespace Fix
+>>>>>>> .merge_file_hBfcob
+
+Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
+(documento canonico, 2026-09-29). Nessuna decisione o problema presente in
+questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
+del documento canonico.
+>>>>>>> laraxot/dev

@@ -7,11 +7,19 @@ namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 use Modules\User\Filament\Resources\OauthClientResource;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
  * Class ListOauthClients.
  */
+=======
+/**
+ * Class ListOauthClients.
+ */
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+
+>>>>>>> laraxot/dev
 class ListOauthClients extends XotBaseListRecords
 {
     protected static string $resource = OauthClientResource::class;

@@ -15,6 +15,10 @@ return [
         'dissociate' => ['label' => 'dissociate', 'icon' => 'dissociate', 'tooltip' => 'dissociate'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
+<<<<<<< HEAD
     'label' => 'role permissions',
+=======
+    'label' => 'Permessi del ruolo',
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Permessi ruolo', 'icon' => 'Permessi ruolo', 'sort' => 86],
 ];

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Laravel\Passport\Client;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -27,3 +28,9 @@ class OauthClientResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['user']);
     }
 }
+=======
+/**
+ * Compatibilità per i riferimenti legacy: la risorsa Passport vive nel cluster.
+ */
+class OauthClientResource extends \Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource {}
+>>>>>>> laraxot/dev

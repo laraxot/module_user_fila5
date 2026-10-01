@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Passport Cluster - Implementation Status"
 type: concept
 tags: [passport, cluster, implementation]
@@ -193,3 +194,20 @@ cd laravel
 **Implementato da**: Claude (Super Cow Mode)
 **Filosofia**: DRY + KISS + SOLID + Robust + Laraxot
 **Status**: ✅ COMPLETED - Quality checks passed (PHPStan Level 10: 0 errors)
+=======
+title: "[SUPERSEDUTO] passport-cluster-implementation"
+type: stub
+superseded_by: "./passport-oauth-cluster.md"
+---
+
+<<<<<<< .merge_file_Z7pzTJ
+# passport-cluster-implementation — superseduto
+=======
+# Passport Cluster - Implementation Status
+>>>>>>> .merge_file_0YAL3n
+
+Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
+(documento canonico, 2026-09-29). Nessuna decisione o problema presente in
+questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
+del documento canonico.
+>>>>>>> laraxot/dev

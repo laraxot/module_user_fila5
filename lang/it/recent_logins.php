@@ -3,6 +3,16 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'heading' => 'Accessi Recenti',
+    'columns' => [
+        'user' => 'Utente',
+        'login_at' => 'Ora Accesso',
+        'ip_address' => 'Indirizzo IP',
+        'user_agent' => 'User Agent',
+    ],
+>>>>>>> laraxot/dev
     'fields' => [
         'authenticatable' => [
             'name' => [
@@ -121,6 +131,7 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'Recent Logins',
         'plural' => 'Recent Logins',
         'group' => [
@@ -133,4 +144,18 @@ return [
     ],
     'label' => 'Recent Logins',
     'plural_label' => 'Recent Logins (Plurale)',
+=======
+        'name' => 'Accessi Recenti',
+        'plural' => 'Accessi Recenti',
+        'group' => [
+            'name' => 'Generale',
+            'description' => 'Impostazioni Generali',
+        ],
+        'label' => 'Accessi Recenti',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Accessi Recenti',
+    'plural_label' => 'Accessi Recenti (Plurale)',
+>>>>>>> laraxot/dev
 ];

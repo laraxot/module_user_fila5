@@ -5,7 +5,11 @@ document_type: concept
 module: User
 status: active
 language: it-IT
+<<<<<<< HEAD
 updated_at: 2026-09-24
+=======
+updated_at: 2026-08-19
+>>>>>>> laraxot/dev
 related:
   - ../../../../Xot/docs/wiki/concepts/pest5-configuring-tests.md
   - ../../testing.md
@@ -139,6 +143,7 @@ Gli stessi `function.notFound` orfani restano, alla data di questa pagina, in al
 `mediaTableRecordActions` e `runFileExtensionRule` (Media), `notificationsCoverageTicketModel`
 (Notify), `safeEloquentCastFixture` e `xotBaseTransitionFixture` (Xot). La ricetta è questa,
 identica.
+<<<<<<< HEAD
 
 ## Trait `UserTestCaseOAuthTeamConcern` (archiviato)
 
@@ -149,3 +154,5 @@ I metodi utili (`oauthClientTestPersistedClient`, `createMockSocialiteUser`, piv
 sono già sulla `Tests\TestCase` del modulo (e helper Pest in `Helpers.php`). Il file è
 archiviato come `UserTestCaseOAuthTeamConcern.php.bak` (no `git rm`, no cartella Legacy):
 PHPStan non lo analizza più e non si reintroduce un trait orfano.
+=======
+>>>>>>> laraxot/dev

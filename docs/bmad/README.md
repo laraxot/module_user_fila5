@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "User — BMAD Method Integration"
 description: "BMAD workflow documentation per il modulo User"
 module: "User"
@@ -6,10 +7,35 @@ alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-identity"
+=======
+title: "User — BMAD Documentation Index"
+type: note
+tags: [bmad, user, identity, index]
+created: 2026-09-26
+updated: 2026-09-28
+qmd: "User bmad indice documentazione identita auth passport socialite team tenant"
+module: User
+related:
+  - ./architecture.md
+  - ./brainstorming.md
+  - ./epics/module-roadmap.md
+  - ./quick-reference.md
+  - ./setup-guide.md
+  - ../../../Xot/docs/bmad-method.md
+>>>>>>> laraxot/dev
 ---
 
 # User — BMAD Method Integration
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_H9JAK5
+<<<<<<< .merge_file_BZEUvl
+> **SUMMARY**: indice dei documenti BMAD del modulo User (identità: autenticazione, ruoli Spatie, team, tenant, Passport OAuth2, Socialite/SSO, widget Filament), con l'inventario reale di `app/` (679 file PHP) e `tests/` (187 file PHP) verificato sul repository.
+=======
+=======
+>>>>>>> .merge_file_l4u4Kz
+>>>>>>> laraxot/dev
 ## Campagna vigente — solo Filament widget
 
 **Chrome convertito (2026-09-21): i 3 hook del provider sono FQCN; restano Cluster C (10.4) e residui.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
@@ -97,6 +123,7 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 | Epic 11, 15-19 | [perfection-epics.md](./perfection-epics.md) |
 | Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
 
+<<<<<<< HEAD
 
 ## Scopo BMAD per User
 
@@ -195,6 +222,95 @@ _bmad-output/
 
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
+=======
+<<<<<<< .merge_file_H9JAK5
+>>>>>>> .merge_file_ZoAy3E
+=======
+>>>>>>> .merge_file_l4u4Kz
+
+## Scopo BMAD per User
+
+`module.json` dichiara: *"Gestione utenti, autenticazione, autorizzazioni e ruoli del sistema"* (alias `user`, keyword `auth`, `users`, `roles`, `permissions`, `authentication`). È il modulo identità da cui dipendono Activity, Notify, Tenant, Lang, Performance e UI.
+
+## Indice documenti BMAD
+
+### Canonici
+
+- [architecture.md](architecture.md) — mappa reale del modulo e indice degli shard
+- [brainstorming.md](brainstorming.md) — decisioni e indice degli shard
+- [epics/module-roadmap.md](epics/module-roadmap.md) — roadmap epic A–D
+- [epics/epic-1-identity-core.md](epics/epic-1-identity-core.md) — Epic 1: superficie pubblica, social auth, Passport
+- [quick-reference.md](quick-reference.md) — comandi rapidi del workflow
+- [setup-guide.md](setup-guide.md) — setup e verifica minima
+
+### Planning
+
+- [product-brief.md](product-brief.md) · [prd.md](prd.md) · [project-context.md](project-context.md) · [tech-spec.md](tech-spec.md) · [ux-design.md](ux-design.md) · [decision-log.md](decision-log.md)
+
+### Shard
+
+- [architecture/module-boundary.md](architecture/module-boundary.md) — confini e gate
+- [brainstorming/module-opportunities.md](brainstorming/module-opportunities.md) — domande ad alto valore e rischi
+- [deep-recon-user.md](deep-recon-user.md) · [user-architecture-gap-analysis.md](user-architecture-gap-analysis.md)
+- [filament-ux-architecture.md](filament-ux-architecture.md) · [filament-ux-brainstorming.md](filament-ux-brainstorming.md)
+- [module-excellence-architecture.md](module-excellence-architecture.md) · [module-excellence-brainstorming.md](module-excellence-brainstorming.md) · [module-excellence-prd.md](module-excellence-prd.md) · [module-excellence-product-brief.md](module-excellence-product-brief.md)
+- [perfection-architecture.md](perfection-architecture.md) · [perfection-brainstorming.md](perfection-brainstorming.md) · [perfection-decision-log.md](perfection-decision-log.md) · [perfection-epics.md](perfection-epics.md) · [perfection-plan.md](perfection-plan.md) · [perfection-prd.md](perfection-prd.md)
+- [advantages-filament-only.md](advantages-filament-only.md) · [advantages-filament-widgets-over-livewire.md](advantages-filament-widgets-over-livewire.md)
+- [phpstan-user-contract-fix.md](phpstan-user-contract-fix.md)
+- [epics.md](epics.md)
+
+### Conversione widget Livewire → Filament
+
+- [livewire-widget-product-brief.md](livewire-widget-product-brief.md) · [livewire-widget-project-context.md](livewire-widget-project-context.md) · [livewire-widget-prd.md](livewire-widget-prd.md) · [livewire-widget-ux.md](livewire-widget-ux.md) · [livewire-widget-architecture.md](livewire-widget-architecture.md) · [livewire-widget-conversion.md](livewire-widget-conversion.md) · [livewire-widget-decision-log.md](livewire-widget-decision-log.md) · [livewire-widget-epics.md](livewire-widget-epics.md) · [livewire-widget-tech-spec.md](livewire-widget-tech-spec.md) · [livewire-widget-brainstorming.md](livewire-widget-brainstorming.md) · [livewire-inventory.md](livewire-inventory.md)
+- Consolidamento: [livewire-widget-consolidation-brief.md](livewire-widget-consolidation-brief.md) · [livewire-widget-consolidation-prd.md](livewire-widget-consolidation-prd.md) · [livewire-widget-consolidation-architecture.md](livewire-widget-consolidation-architecture.md) · [livewire-widget-consolidation-inventory.md](livewire-widget-consolidation-inventory.md) · [livewire-widget-consolidation-benefits.md](livewire-widget-consolidation-benefits.md) · [livewire-widget-consolidation-decision-log.md](livewire-widget-consolidation-decision-log.md) · [livewire-widget-consolidation-epics.md](livewire-widget-consolidation-epics.md) · [livewire-widget-consolidation-sprint-plan.md](livewire-widget-consolidation-sprint-plan.md) · [livewire-widget-consolidation-readiness.md](livewire-widget-consolidation-readiness.md) · [livewire-widget-consolidation-story-superadmin.md](livewire-widget-consolidation-story-superadmin.md)
+- SuperAdmin: [tech-spec-superadmin-widget.md](tech-spec-superadmin-widget.md)
+- Admin panel: [livewire-widget-admin-panel-provider.md](livewire-widget-admin-panel-provider.md)
+
+### Correzioni e note operative
+
+- [english-login-translation-parity.md](english-login-translation-parity.md) · [guest-login-italian-translation.md](guest-login-italian-translation.md) · [register-mobile-form-width.md](register-mobile-form-width.md)
+
+### Stories
+
+- [stories/module-bmad-audit-20260928.story.md](stories/module-bmad-audit-20260928.story.md)
+- [stories/livewire-residual-conversion-cluster-c.story.md](stories/livewire-residual-conversion-cluster-c.story.md)
+- [stories/uppercase-application-dir.story.md](stories/uppercase-application-dir.story.md)
+- [stories/continuazione-domani.story.md](stories/continuazione-domani.story.md)
+
+## Inventario verificato
+
+| Area | Path | Contenuto |
+|------|------|-----------|
+| Provider | `app/Providers/` | `UserServiceProvider`, `RouteServiceProvider`, `EventServiceProvider`, `PassportServiceProvider`, `SocialiteServiceProvider`, `Filament/AdminPanelProvider`, `Traits/HasPassportConfiguration` |
+| Modelli | `app/Models/` | 50 file `.php` (User, Profile, Team, TeamUser, Tenant, TenantUser, Role, Permission, Device, Extra, Feature, SocialiteUser, SocialProvider, SsoProvider, Oauth*, …) + `Models/Traits/` con 14 trait |
+| Resource Filament | `app/Filament/Resources/` | 26 Resource (`UserResource`, `TeamResource`, `RoleResource`, `PermissionResource`, `TenantResource`, `ProfileResource`, `DeviceResource`, `ClientResource`, `Oauth*Resource`, `SocialProviderResource`, `SsoProviderResource`, …) |
+| Cluster | `app/Filament/Clusters/` | `Appearance`, `Passport`, `Socialite` |
+| Widget | `app/Filament/Widgets/` | `Auth/*` (Login, Register, ResetPassword, …), `Profile/SuperAdminWidget`, `Profile/DeleteAccountWidget`, `Team/TeamChangeWidget`, `RecentLoginsWidget`, `UsersChartWidget`, `NotificationsCenterWidget` |
+| Action | `app/Actions/` | 59 Action in `Socialite/` (22), `Passport/` (9), `User/` (4), `Shield/` (8), `Otp/` (5), più `Team/`, `Notification/`, `Activity/`, `Authentication/` |
+| Contratti | `app/Contracts/` | 24 contratti attivi (`UserContract`, `TeamContract`, `TenantContract`, `HasTeamsContract`, `TwoFactorAuthenticatableContract`, `HasShieldPermissions`, …) |
+| Eventi | `app/Events/` | 27 eventi (Login, Registered, Team*, TwoFactor*, SocialiteUserConnected, …) |
+| HTTP | `app/Http/` | controller `Api/`, `Auth/`, `Socialite/`, Livewire `Auth/`, `Profile/`, `Socialite/`, `Team/`, middleware ruolo/tipo/password |
+| Console | `app/Console/Commands/` | 16 comandi (AssignRole, AssignTeam, AssignTenant, SuperAdmin, ChangeType, PassportInstall, …) |
+| Config | `config/` | `config.php`, `passport.php`, `password.php`, `services.php`, `socialite.php`, `social-providers.php` |
+| Traduzioni | `resources/lang/{it,en,es,fr,hi,zh}/` | 16 file per lingua (auth, profile, registration, password-data, tenant, device, client, …) |
+| Database | `database/` | `migrations/` (+ `_bak`, `_legacy`), `factories/`, 43 seeder |
+| Test | `tests/` | 187 file PHP (Unit, Feature, Fixtures, Support, Traits) |
+
+## Workflow BMAD (fasi)
+
+1. **Analysis** — `project-context.md`, `deep-recon-user.md`, `user-architecture-gap-analysis.md`.
+2. **Planning** — `prd.md`, `product-brief.md`, `quick-reference.md`.
+3. **Solutioning** — `architecture.md` (mappa reale), `tech-spec.md`, `epics/module-roadmap.md`, `epics/epic-1-identity-core.md`.
+4. **Implementation** — ogni story in `stories/`, con lock su `bashscripts/lock/lock.sh` ed esito in `docs/sprint-status.yaml`.
+
+## Vedi Anche
+
+- [Metodo BMAD in Laraxot](../../../Xot/docs/bmad-method.md)
+- [quick-reference](quick-reference.md)
+- [setup-guide](setup-guide.md)
+<<<<<<< .merge_file_BZEUvl
+=======
+>>>>>>> laraxot/dev
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
 - [livewire-to-filament-widget-migration.md](../livewire-to-filament-widget-migration.md)
 - [filament_errors.md](../filament_errors.md)
@@ -202,3 +318,10 @@ _bmad-output/
 ---
 
 *User · BMAD Method · data 2026-05-27*
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_H9JAK5
+>>>>>>> .merge_file_ZoAy3E
+=======
+>>>>>>> .merge_file_l4u4Kz
+>>>>>>> laraxot/dev

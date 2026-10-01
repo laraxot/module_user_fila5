@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> laraxot/dev
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
@@ -43,8 +46,12 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * The view for this widget.
      */
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
+=======
+    protected string $view = 'user::filament.widgets.password-expired';
+>>>>>>> laraxot/dev
 
     protected static bool $shouldRegisterNavigation = false;
 
@@ -129,6 +136,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
+<<<<<<< HEAD
         if ($authUser instanceof UserContract) {
             return TextInput::make('current_password')
                 ->password()
@@ -140,10 +148,14 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
 
         // Fallback nel caso l'utente non sia del tipo corretto
         return TextInput::make('current_password')
+=======
+        $input = TextInput::make('current_password')
+>>>>>>> laraxot/dev
             ->password()
             ->revealable()
             ->required()
             ->validationAttribute(static::trans('fields.current_password.validation_attribute'));
+<<<<<<< HEAD
     }
 
     /*
@@ -172,11 +184,24 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      * ->dehydrated(false);
      * }
      */
+=======
+
+        if ($authUser instanceof UserContract) {
+            $input->rule(new CheckOtpExpiredRule($authUser));
+        }
+
+        return $input;
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Get the form actions.
      *
+<<<<<<< HEAD
      * @return array<int, Action|ActionGroup>
+=======
+     * @return array<int, Action>
+>>>>>>> laraxot/dev
      */
     protected function getFormActions(): array
     {

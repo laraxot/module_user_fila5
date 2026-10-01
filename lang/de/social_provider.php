@@ -13,7 +13,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei provider social',
         ],
+<<<<<<< HEAD
         'label' => 'social provider',
+=======
+        'label' => 'Social-Provider',
+>>>>>>> laraxot/dev
         'sort' => '93',
         'icon' => 'user-user-social',
     ],

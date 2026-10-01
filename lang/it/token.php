@@ -10,7 +10,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei token di accesso',
         ],
+<<<<<<< HEAD
         'label' => 'token',
+=======
+        'label' => 'Token',
+>>>>>>> laraxot/dev
         'sort' => 29,
         'icon' => 'user-user-token',
     ],

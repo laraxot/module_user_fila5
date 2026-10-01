@@ -1036,14 +1036,22 @@ return [
     'navigation' => [
         'name' => [
             'key' => 'user::auth.navigation.name',
+<<<<<<< HEAD
             'text' => 'Auth',
+=======
+            'text' => 'Autenticazione',
+>>>>>>> laraxot/dev
             'description' => 'Nome singolare della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
         ],
         'plural' => [
             'key' => 'user::auth.navigation.plural',
+<<<<<<< HEAD
             'text' => 'Auth',
+=======
+            'text' => 'Autenticazioni',
+>>>>>>> laraxot/dev
             'description' => 'Nome plurale della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1051,14 +1059,22 @@ return [
         'group' => [
             'name' => [
                 'key' => 'user::auth.navigation.group.name',
+<<<<<<< HEAD
                 'text' => 'General',
+=======
+                'text' => 'Generale',
+>>>>>>> laraxot/dev
                 'description' => 'Nome del gruppo di navigazione',
                 'context' => 'navigation-group',
                 'placeholder' => '',
             ],
             'description' => [
                 'key' => 'user::auth.navigation.group.description',
+<<<<<<< HEAD
                 'text' => 'General Settings',
+=======
+                'text' => 'Impostazioni generali',
+>>>>>>> laraxot/dev
                 'description' => 'Descrizione del gruppo di navigazione',
                 'context' => 'navigation-group',
                 'placeholder' => '',
@@ -1066,7 +1082,11 @@ return [
         ],
         'label' => [
             'key' => 'user::auth.navigation.label',
+<<<<<<< HEAD
             'text' => 'Auth',
+=======
+            'text' => 'Autenticazione',
+>>>>>>> laraxot/dev
             'description' => 'Etichetta della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1080,7 +1100,11 @@ return [
         ],
         'icon' => [
             'key' => 'user::auth.navigation.icon',
+<<<<<<< HEAD
             'text' => 'heroicon-o-collection',
+=======
+            'text' => 'heroicon-o-lock-closed',
+>>>>>>> laraxot/dev
             'description' => 'Icona associata alla sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
@@ -1088,16 +1112,28 @@ return [
     ],
     'label' => [
         'key' => 'user::auth.label',
+<<<<<<< HEAD
         'text' => 'Auth',
         'description' => 'Etichetta della sezione autenticazione',
         'context' => 'auth',
+=======
+        'text' => 'Autenticazione',
+        'description' => 'Etichetta della sezione autenticazione',
+        'context' => 'Autenticazione',
+>>>>>>> laraxot/dev
         'placeholder' => '',
     ],
     'plural_label' => [
         'key' => 'user::auth.plural-label',
+<<<<<<< HEAD
         'text' => 'Auth (Plurale)',
         'description' => 'Etichetta plurale della sezione autenticazione',
         'context' => 'auth',
+=======
+        'text' => 'Autenticazioni',
+        'description' => 'Etichetta plurale della sezione autenticazione',
+        'context' => 'Autenticazione',
+>>>>>>> laraxot/dev
         'placeholder' => '',
     ],
     'fields' => [

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
@@ -14,12 +15,17 @@ use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+>>>>>>> laraxot/dev
 
 class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
     #[\Override]
+<<<<<<< HEAD
     public function getTableColumns(): array
     {
         return [
@@ -76,6 +82,8 @@ class ListUsers extends BaseListUsers
     }
 
     #[\Override]
+=======
+>>>>>>> laraxot/dev
     protected function getHeaderWidgets(): array
     {
         return [

@@ -61,9 +61,13 @@ class PasswordExpired extends XotBasePage
     public function resetPassword(): ?PasswordResetResponse
     {
         $pwd = PasswordData::make();
+<<<<<<< HEAD
         $form = $this->form;
         assert($form instanceof Schema);
         $data = $form->getState();
+=======
+        $data = $this->form->getState();
+>>>>>>> laraxot/dev
         Assert::string($currentPassword = Arr::get($data, 'current_password'));
         Assert::string($password = Arr::get($data, 'password'));
         $user = Auth::user();

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
@@ -151,3 +152,6 @@ class LoginWidget extends XotBaseSchemaWidget
         return null;
     }
 }
+=======
+class LoginWidget extends Auth\LoginWidget {}
+>>>>>>> laraxot/dev

@@ -10,7 +10,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei client e delle loro autorizzazioni',
         ],
+<<<<<<< HEAD
         'label' => 'client',
+=======
+        'label' => 'Mandant',
+>>>>>>> laraxot/dev
         'sort' => '92',
         'icon' => 'user-user-client',
     ],

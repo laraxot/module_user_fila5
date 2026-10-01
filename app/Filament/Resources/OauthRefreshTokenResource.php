@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -96,3 +97,9 @@ class OauthRefreshTokenResource extends XotBaseResource
         return parent::getEloquentQuery()->with(['accessToken']);
     }
 }
+=======
+/**
+ * Compatibilità per i riferimenti legacy: la risorsa Passport vive nel cluster.
+ */
+class OauthRefreshTokenResource extends \Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource {}
+>>>>>>> laraxot/dev

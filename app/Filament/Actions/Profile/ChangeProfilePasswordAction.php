@@ -29,6 +29,12 @@ final class ChangeProfilePasswordAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('user::user.actions.change_password'))
             ->icon('heroicon-o-key')
+<<<<<<< HEAD
+=======
+            ->requiresConfirmation()
+            ->modalHeading(__('user::password.actions.change_password.modal.heading'))
+            ->modalDescription(__('user::password.actions.change_password.modal.description'))
+>>>>>>> laraxot/dev
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
                 $profileData = Arr::except($record->toArray(), ['id']);
@@ -47,6 +53,7 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                 }
 
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
+<<<<<<< HEAD
                 /*
                  * @var ProfileContract $record
                  */
@@ -63,6 +70,19 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                      * ->required()
                      * ->rule(Password::default()),
                      */
+=======
+                $record->update([
+                    'password' => Hash::make($newPassword),
+                ]);
+                Notification::make()
+                    ->success()
+                    ->title(__('user::notifications.password_changed_successfully.title'))
+                    ->body(__('user::notifications.password_changed_successfully.message'))
+                    ->send();
+            })
+            ->schema(function (): array {
+                return [
+>>>>>>> laraxot/dev
                     PasswordData::make()->getPasswordFormComponent('new_password'),
                     TextInput::make('new_password_confirmation')
                         ->password()
@@ -83,6 +103,7 @@ final class ChangeProfilePasswordAction extends XotBaseAction
         return 'changePassword';
     }
 }
+<<<<<<< HEAD
 
 /*
  * Action::make('changePassword')
@@ -105,3 +126,5 @@ final class ChangeProfilePasswordAction extends XotBaseAction
  * ->icon('heroicon-o-key')
  * // ->visible(fn (User $record): bool => $record->role_id === Role::ROLE_ADMINISTRATOR)
  */
+=======
+>>>>>>> laraxot/dev

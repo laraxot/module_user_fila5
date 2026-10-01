@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Passport Cluster - Riepilogo Completo"
 type: concept
 tags: [passport, cluster, summary]
@@ -18,6 +19,21 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+title: "[SUPERSEDUTO] passport-cluster-summary"
+type: stub
+superseded_by: "./passport-oauth-cluster.md"
+---
+
+<<<<<<< .merge_file_iMcqrs
+# passport-cluster-summary — superseduto
+
+Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
+(documento canonico, 2026-09-29). Nessuna decisione o problema presente in
+questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
+del documento canonico.
+=======
+>>>>>>> laraxot/dev
 # Passport Cluster - Riepilogo Completo
 
 **Data**: 2025-01-22
@@ -169,3 +185,7 @@ Alcune risorse non hanno tutte le pages standard:
 ## 2026-07-08 PHPStan
 
 `OauthPersonalAccessClientResource::getTableColumns()` resta statico perché viene usato da `table()`. Non chiamare metodi istanza con `self::`.
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_I94EhQ
+>>>>>>> laraxot/dev

@@ -20,7 +20,15 @@ final class ChangePasswordAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
+<<<<<<< HEAD
             ->icon('heroicon-o-key')
+=======
+            ->tooltip(__('user::user.actions.change_password'))
+            ->icon('heroicon-o-key')
+            ->requiresConfirmation()
+            ->modalHeading(__('user::password.actions.change_password.modal.heading'))
+            ->modalDescription(__('user::password.actions.change_password.modal.description'))
+>>>>>>> laraxot/dev
             ->action(function (UserContract $record, array $data): void {
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
 
@@ -56,6 +64,7 @@ final class ChangePasswordAction extends XotBaseAction
         return 'changePassword';
     }
 }
+<<<<<<< HEAD
 
 /*
  * Action::make('changePassword')
@@ -78,3 +87,5 @@ final class ChangePasswordAction extends XotBaseAction
  * ->icon('heroicon-o-key')
  * // ->visible(fn (User $record): bool => $record->role_id === Role::ROLE_ADMINISTRATOR)
  */
+=======
+>>>>>>> laraxot/dev

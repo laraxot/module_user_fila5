@@ -6,6 +6,11 @@ namespace Modules\User\Filament\Resources\RoleResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
+=======
+use Filament\Tables\Filters\BaseFilter;
+use Filament\Tables\Filters\SelectFilter;
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -32,4 +37,23 @@ class RolesTable extends XotBaseResourceTable
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * @return array<string, BaseFilter>
+     */
+    public function getTableFilters(): array
+    {
+        return [
+            'guard_name' => SelectFilter::make('guard_name')
+                ->options([
+                    'web' => 'Web',
+                    'api' => 'API',
+                    'sanctum' => 'Sanctum',
+                ])
+                ->multiple(),
+        ];
+    }
+>>>>>>> laraxot/dev
 }

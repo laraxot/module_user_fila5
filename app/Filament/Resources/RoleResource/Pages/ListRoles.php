@@ -4,14 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListRoles extends XotBaseListRecords
 {
     protected static string $resource = RoleResource::class;
+<<<<<<< HEAD
 
     #[\Override]
     /**
@@ -41,4 +45,6 @@ class ListRoles extends XotBaseListRecords
                 ->multiple(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

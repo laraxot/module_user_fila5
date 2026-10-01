@@ -4,13 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\ProfileResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\ProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = ProfileResource::class;
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -21,4 +25,6 @@ class ListProfiles extends XotBaseListRecords
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

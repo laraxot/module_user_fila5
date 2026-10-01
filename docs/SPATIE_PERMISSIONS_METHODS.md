@@ -468,6 +468,7 @@ php artisan migrate --path=vendor/spatie/laravel-permission/database/migrations
 $user->assignRole(Role::findByName('admin', 'web'));
 ```
 
+<<<<<<< HEAD
 ## User Extension: `hasPermissionToOrCreate`
 
 The `Modules\User\Models\Traits\HasSpatiePermission` trait adds this contract-compatible extension:
@@ -485,6 +486,8 @@ This extension is useful when a caller must ensure that a permission exists befo
 - Xot guard/role boundary: [`roles-permissions.md`](../../Xot/docs/roles-permissions.md)
 - Runtime coverage: [`HasSpatiePermissionAutoCreateTest.php`](../tests/Feature/HasSpatiePermissionAutoCreateTest.php)
 
+=======
+>>>>>>> laraxot/dev
 ## Documentation Links
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/

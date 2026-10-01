@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Passport Cluster - Completamento Lavoro"
 type: concept
 tags: [passport, cluster, work, completion]
@@ -190,3 +191,20 @@ Alcune risorse non hanno tutte le pages standard:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Lavoro completato e documentato
+=======
+title: "[SUPERSEDUTO] passport-cluster-work-completion"
+type: stub
+superseded_by: "./passport-oauth-cluster.md"
+---
+
+<<<<<<< .merge_file_CqYw6Y
+# passport-cluster-work-completion — superseduto
+=======
+# Passport Cluster - Completamento Lavoro
+>>>>>>> .merge_file_mb2SI4
+
+Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
+(documento canonico, 2026-09-29). Nessuna decisione o problema presente in
+questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
+del documento canonico.
+>>>>>>> laraxot/dev

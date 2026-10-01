@@ -345,7 +345,11 @@ return [
             'label' => 'state',
         ],
         'user' => [
+<<<<<<< HEAD
             'label' => 'user',
+=======
+            'label' => 'Utente',
+>>>>>>> laraxot/dev
         ],
         'device' => [
             'label' => 'device',
@@ -422,6 +426,14 @@ return [
             'icon' => 'heroicon-o-link',
             'tooltip' => 'Collega record',
         ],
+<<<<<<< HEAD
+=======
+        'attach_role' => [
+            'label' => 'Assegna Ruolo',
+            'icon' => 'heroicon-o-link',
+            'tooltip' => 'Assegna un ruolo all\'utente',
+        ],
+>>>>>>> laraxot/dev
         'detach' => [
             'label' => 'Scollega',
             'icon' => 'heroicon-o-link-slash',
@@ -800,7 +812,39 @@ return [
         'error' => 'Si è verificato un errore',
     ],
     'search_placeholder' => 'Cerca per nome, email o ruolo...',
+<<<<<<< HEAD
     'label' => 'user',
+=======
+    'relation_groups' => [
+        'security' => [
+            'label' => 'Sicurezza',
+        ],
+        'organization' => [
+            'label' => 'Organizzazione',
+        ],
+    ],
+    'widgets' => [
+        'overview' => [
+            'total' => [
+                'label' => 'Utenti totali',
+                'description' => 'Numero complessivo di utenti registrati',
+            ],
+            'active' => [
+                'label' => 'Utenti attivi',
+                'description' => 'Utenti con account attivo',
+            ],
+            'verified' => [
+                'label' => 'Email verificate',
+                'description' => 'Percentuale di utenti con email verificata',
+            ],
+            'recent_logins' => [
+                'label' => 'Accessi ultime 24h',
+                'description' => 'Login riusciti nelle ultime 24 ore',
+            ],
+        ],
+    ],
+    'label' => 'Utente',
+>>>>>>> laraxot/dev
     'sections' => [
         'empty' => [
             'heading' => 'empty',

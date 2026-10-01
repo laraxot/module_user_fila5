@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport"
 type: rule
 tags: [passport, cluster, resources, only]
@@ -128,3 +129,20 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
+=======
+title: "[SUPERSEDUTO] passport-cluster-resources-only-rule"
+type: stub
+superseded_by: "./passport-oauth-cluster.md"
+---
+
+<<<<<<< .merge_file_LHARgz
+# passport-cluster-resources-only-rule — superseduto
+=======
+# Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
+>>>>>>> .merge_file_Px8csw
+
+Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.md)**
+(documento canonico, 2026-09-29). Nessuna decisione o problema presente in
+questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
+del documento canonico.
+>>>>>>> laraxot/dev

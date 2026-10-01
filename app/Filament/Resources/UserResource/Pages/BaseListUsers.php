@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -19,6 +22,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     protected static string $resource = UserResource::class;
 
     /**
+<<<<<<< HEAD
      * Get table columns for user records.
      *
      * @return array<string, Column>
@@ -82,6 +86,8 @@ abstract class BaseListUsers extends XotBaseListRecords
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Get the header actions.
      *
      * @return array<string, Action>

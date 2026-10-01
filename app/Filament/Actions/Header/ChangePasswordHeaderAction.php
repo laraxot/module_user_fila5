@@ -22,7 +22,15 @@ final class ChangePasswordHeaderAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
+<<<<<<< HEAD
             ->icon('heroicon-o-key')
+=======
+            ->tooltip(__('user::user.actions.change_password'))
+            ->icon('heroicon-o-key')
+            ->requiresConfirmation()
+            ->modalHeading(__('user::password.actions.change_password.modal.heading'))
+            ->modalDescription(__('user::password.actions.change_password.modal.description'))
+>>>>>>> laraxot/dev
             ->action(function (array $data): void {
                 $record = Auth::user();
                 Assert::isInstanceOf($record, UserContract::class);
@@ -41,6 +49,7 @@ final class ChangePasswordHeaderAction extends XotBaseAction
             })
             ->schema(function (): array {
                 return [
+<<<<<<< HEAD
                     /*
                      * TextInput::make('new_password')
                      * ->password()
@@ -49,6 +58,8 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                      * ->required()
                      * ->rule(Password::default()),
                      */
+=======
+>>>>>>> laraxot/dev
                     PasswordData::make()->getPasswordFormComponent('new_password'),
                     TextInput::make('new_password_confirmation')
                         ->password()
@@ -70,6 +81,7 @@ final class ChangePasswordHeaderAction extends XotBaseAction
         return 'changePassword';
     }
 }
+<<<<<<< HEAD
 
 /*
  * Action::make('changePassword')
@@ -92,3 +104,5 @@ final class ChangePasswordHeaderAction extends XotBaseAction
  * ->icon('heroicon-o-key')
  * // ->visible(fn (User $record): bool => $record->role_id === Role::ROLE_ADMINISTRATOR)
  */
+=======
+>>>>>>> laraxot/dev

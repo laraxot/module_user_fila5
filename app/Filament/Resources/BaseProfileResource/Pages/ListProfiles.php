@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
@@ -101,4 +102,12 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
+=======
+use Modules\User\Filament\Resources\BaseProfileResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+
+class ListProfiles extends XotBaseListRecords
+{
+    protected static string $resource = BaseProfileResource::class;
+>>>>>>> laraxot/dev
 }
