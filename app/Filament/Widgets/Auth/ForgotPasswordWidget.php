@@ -18,12 +18,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
-<<<<<<< HEAD
-    /** @var view-string */
-    protected string $view;
-=======
     protected string $view = 'user::widgets.auth.forgot-password-widget';
->>>>>>> laraxot/dev
 
     /**
      * @return class-string<UserForm>

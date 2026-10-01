@@ -7,15 +7,10 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResou
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-use Modules\User\Models\SocialProvider;
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-=======
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
->>>>>>> laraxot/dev
 
 class SocialProvidersTable extends XotBaseResourceTable
 {
@@ -31,15 +26,11 @@ class SocialProvidersTable extends XotBaseResourceTable
     {
         return [
             'name' => TextColumn::make('name')->searchable()->sortable(),
-<<<<<<< HEAD
-            'active' => IconColumn::make('active')->boolean()->sortable(),
-=======
             // L'icona da sola non dice nulla a uno screen reader: senza `label()`
             // non c'e' testo da annunciare. La stringa e' quella di `IsActiveFilter`,
             // perche' il concetto e' lo stesso ("stalo attivo"), anche se il campo
             // della colonna si chiama `active` e non `is_active`.
             'active' => IconColumn::make('active')->boolean()->sortable()->label(__('xot::table-filters.is_active.label')),
->>>>>>> laraxot/dev
             'socialite' => IconColumn::make('socialite')->boolean()->sortable(),
             'stateless' => IconColumn::make('stateless')->boolean()->sortable(),
             'scopes' => TextColumn::make('scopes')->badge()->toggleable(isToggledHiddenByDefault: true),
@@ -48,8 +39,6 @@ class SocialProvidersTable extends XotBaseResourceTable
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Non un `SelectFilter::make('active')->options([true => 'Active', false => 'Inactive'])`
@@ -65,5 +54,4 @@ class SocialProvidersTable extends XotBaseResourceTable
             'active' => IsActiveFilter::make('active'),
         ];
     }
->>>>>>> laraxot/dev
 }

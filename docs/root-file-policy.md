@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "Root file policy"
 type: concept
@@ -20,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> laraxot/dev
 # Root file policy
 
 Updated: 2026-07-08

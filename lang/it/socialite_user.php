@@ -5,29 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'attach' => [
-<<<<<<< HEAD
-            'label' => 'attach',
-            'icon' => 'attach',
-            'tooltip' => 'attach',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'icon' => 'detach',
-            'tooltip' => 'detach',
-        ],
-        'save' => [
-            'label' => 'save',
-            'icon' => 'save',
-            'tooltip' => 'save',
-        ],
-    ],
-    'navigation' => [
-        'label' => 'socialite user.navigation',
-        'group' => 'socialite user.navigation',
-        'icon' => 'socialite user.navigation',
-        'sort' => 73,
-    ],
-=======
             'label' => 'Collega account social',
             'icon' => 'heroicon-o-link',
             'tooltip' => 'Collega questo account social al profilo',
@@ -54,5 +31,4 @@ return [
     ],
     'label' => 'Utente social',
     'plural_label' => 'Utenti social',
->>>>>>> laraxot/dev
 ];

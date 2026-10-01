@@ -38,17 +38,6 @@ class UserColumn extends GroupColumn
         ];
     }
 
-<<<<<<< HEAD
-    /** @param array<int, Column> $form */
-    public function schema(array $form): static
-    {
-        parent::schema($form);
-
-        return $this;
-    }
-
-=======
->>>>>>> laraxot/dev
     public static function make(?string $name = null): static
     {
         $columns = static::getSchema();

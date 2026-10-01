@@ -501,10 +501,6 @@ node_modules
 graphify-out/
 *.backup_*
 
-<<<<<<< HEAD
-# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
-audit-coverage/
-=======
 # Cartelle vietate in root modulo (direttiva utente: vanno cancellate)
 /bashscripts/
 /graphify-out/
@@ -530,4 +526,3 @@ resources/lang
 # docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
 docs/chat
 app/Application
->>>>>>> laraxot/dev

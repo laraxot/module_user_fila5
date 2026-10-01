@@ -12,12 +12,6 @@ use Filament\Forms\Components\DatePicker;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Schemas\Schema;
 use Modules\User\Filament\Resources\UserResource;
-<<<<<<< HEAD
-use Modules\User\Filament\Resources\UserResource\Widgets\UserWidget;
-
-/**
- * Pagina per la modifica degli utenti con particolare gestione della password.
-=======
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
@@ -27,7 +21,6 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserWidget;
  * Il precedente `UserWidget` in footer si limitava a ri-mostrare in testo semplice
  * gli stessi due valori gia' visibili nel form dei filtri sopra: rimosso perche'
  * puramente ridondante (vedi audit in docs/wiki/user-resource-clustering-widgets-actions-audit.md).
->>>>>>> laraxot/dev
  */
 class ViewUser extends BaseViewUser
 {
@@ -47,14 +40,4 @@ class ViewUser extends BaseViewUser
                 DatePicker::make('endDate'),
             ])->columns(2);
     }
-<<<<<<< HEAD
-
-    public function getFooterWidgets(): array
-    {
-        return [
-            UserWidget::class,
-        ];
-    }
-=======
->>>>>>> laraxot/dev
 }

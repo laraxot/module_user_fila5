@@ -123,9 +123,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< HEAD
-        'change_password' => 'Cambio password',
-=======
         'change_password' => [
             'label' => 'Passwort ändern',
             'modal' => [
@@ -133,7 +130,6 @@ return [
                 'description' => 'Geben Sie das neue Passwort ein, um die Änderung zu bestätigen.',
             ],
         ],
->>>>>>> laraxot/dev
         'updateDataAction' => [
             'label' => 'updateDataAction',
         ],

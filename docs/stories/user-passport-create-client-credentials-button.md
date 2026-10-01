@@ -222,35 +222,6 @@ Claude Sonnet 5
 - **Verifica manuale 2026-09-03 (locale)**: l'utente ha usato il pulsante
   dal vivo, creazione riuscita (screenshot), abbinamento tramite `user_id`
   confermato anche via query diretta sul DB. Durante la prova sono emerse
-<<<<<<< HEAD
-  due scoperte **indipendenti da questa story**, segnalate all'utente con
-  decisione in sospeso — **entrambe verificate concretamente il 2026-09-15**,
-  vedi sotto.
-  1. **[CORRETTO 2026-09-15 — era classificato "cosmetico", è funzionale]**
-     `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
-     client di un utente tramite la relazione `clients()` (`owner_id`/
-     `owner_type`, polimorfica), ma la sua stessa azione
-     "associateExistingClient" scrive solo su `user_id` — stesso difetto in
-     `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`.
-     Non è cosmetico: `Modules\Quaeris\Http\Controllers\Api\SurveyController::
-     createContacts()` (l'endpoint reale usato dagli script clienti, es.
-     `extras/ATS/create_survey_contacts_sample_ATS.php`, marcato
-     "funzionalità REALE" in `routes/api.php`) legge esclusivamente
-     `$client->owner` (quindi `owner_id`/`owner_type`) per risolvere
-     l'utente proprietario — e rifiuta con 401 "Client non ha un owner
-     associato" se sono vuoti. Un client associato solo tramite gli
-     strumenti sopra resta bloccato su quell'endpoint finché qualcuno non
-     lancia a mano `php artisan user:backfill-oauth-client-owner`
-     (`Modules/User/app/Console/Commands/BackfillOauthClientOwnerCommand.php`
-     — esiste già, ma è un passo manuale separato, facile da dimenticare;
-     il suo stesso commento presuppone un `OauthClient::booted()` che
-     sincronizzi in automatico, mai scritto nel modello).
-     Verificato in produzione (query diretta su `oauth_clients` dall'utente,
-     2026-09-15): i 4 client reali (Admin, ATS, Vivaservizi, smat) hanno
-     oggi `owner_id = user_id` corretto — segno che quel comando di backfill
-     è già stato lanciato a mano in passato, non che il problema non esista.
-  2. **[SMENTITO 2026-09-15]** Ipotesi "il database `user` di produzione
-=======
   due scoperte **indipendenti da questa story**, non ancora tracciate in
   una story/issue propria — segnalate all'utente, decisione in sospeso:
   1. `UserResource\RelationManagers\ClientsRelationManager.php` mostra i
@@ -269,7 +240,6 @@ Claude Sonnet 5
      credenziali negli script `extras/`) risulta presente**. Ipotesi in
      discussione con l'utente: il database sulla connessione `user`
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
->>>>>>> laraxot/dev
      potrebbe non essere stato ripristinato da un backup reale durante il
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`

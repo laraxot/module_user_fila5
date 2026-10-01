@@ -7,16 +7,11 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-use Modules\User\Models\SsoProvider;
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-=======
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
->>>>>>> laraxot/dev
 
 class SsoProvidersTable extends XotBaseResourceTable
 {
@@ -34,13 +29,9 @@ class SsoProvidersTable extends XotBaseResourceTable
             'display_name' => TextColumn::make('display_name')->searchable()->sortable(),
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'type' => TextColumn::make('type')->toggleable(isToggledHiddenByDefault: true),
-<<<<<<< HEAD
-            'is_active' => IconColumn::make('is_active')->boolean()->sortable(),
-=======
             // Senza `label()` l'icona non ha testo da annunciare: per lo screen reader
             // e' un controllo muto.
             'is_active' => IconColumn::make('is_active')->boolean()->sortable()->label(__('xot::table-filters.is_active.label')),
->>>>>>> laraxot/dev
             'entity_id' => TextColumn::make('entity_id')->toggleable(isToggledHiddenByDefault: true),
             'redirect_url' => TextColumn::make('redirect_url')->toggleable(isToggledHiddenByDefault: true),
             'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
@@ -48,8 +39,6 @@ class SsoProvidersTable extends XotBaseResourceTable
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Il filtro su `is_active` riusa `IsActiveFilter` invece di un `SelectFilter` con
@@ -70,5 +59,4 @@ class SsoProvidersTable extends XotBaseResourceTable
             'is_active' => IsActiveFilter::make('is_active'),
         ];
     }
->>>>>>> laraxot/dev
 }

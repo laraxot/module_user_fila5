@@ -29,9 +29,6 @@
 		"files.eol": "\n",
 		"editor.wordWrap": "wordWrapColumn",
 		"editor.wordWrapColumn": 120,
-<<<<<<< HEAD
-		"git.autofetch": "all"
-=======
 		"git.autofetch": "all",
 		"php-cs-fixer.config": ".php-cs-fixer.php",
 		"vscode-php-cs-fixer.config": ".php-cs-fixer.php",
@@ -41,6 +38,5 @@
 		"recommendations": [
 			"junstyle.php-cs-fixer"
 		]
->>>>>>> laraxot/dev
 	}
 }

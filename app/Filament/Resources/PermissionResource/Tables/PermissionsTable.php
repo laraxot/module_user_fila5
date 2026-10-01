@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\PermissionResource\Tables;
 
-<<<<<<< HEAD
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\TextColumn;
-use Modules\User\Models\Permission;
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-=======
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -30,7 +24,6 @@ use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 class PermissionsTable extends XotBaseResourceTable
 {
@@ -54,18 +47,13 @@ class PermissionsTable extends XotBaseResourceTable
             // Vedi https://github.com/laraxot/module_user_fila5/issues/90.
             'display_name' => TextColumn::make('display_name'),
             'guard_name' => TextColumn::make('guard_name')->searchable()->sortable(),
-<<<<<<< HEAD
-=======
             'active' => IconColumn::make('active')->boolean(),
->>>>>>> laraxot/dev
             'description' => TextColumn::make('description')->limit(60)->wrap()->toggleable(isToggledHiddenByDefault: true),
             'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];
     }
-<<<<<<< HEAD
-=======
 
     /**
      * @return array<string, BaseFilter>
@@ -134,5 +122,4 @@ class PermissionsTable extends XotBaseResourceTable
                 ->deselectRecordsAfterCompletion(),
         ];
     }
->>>>>>> laraxot/dev
 }

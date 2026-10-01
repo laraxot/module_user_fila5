@@ -7,11 +7,7 @@ return [
         'name' => 'Team',
         'plural' => 'Teams',
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
-<<<<<<< HEAD
-        'label' => 'team',
-=======
         'label' => 'Team',
->>>>>>> laraxot/dev
         'sort' => 18,
         'icon' => 'ui-user-team',
     ],
@@ -70,10 +66,6 @@ return [
         'model' => ['label' => 'team.plural.model'],
     ],
     'model' => ['label' => 'team.model'],
-<<<<<<< HEAD
-    'label' => 'team',
-=======
     'label' => 'Team',
->>>>>>> laraxot/dev
     'plural_label' => 'Team (Plurale)',
 ];

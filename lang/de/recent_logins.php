@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
     'heading' => 'Letzte Anmeldungen',
     'columns' => [
         'user' => 'Benutzer',
@@ -12,7 +10,6 @@ return [
         'ip_address' => 'IP-Adresse',
         'user_agent' => 'User Agent',
     ],
->>>>>>> laraxot/dev
     'fields' => [
         'authenticatable' => [
             'name' => [
@@ -87,10 +84,5 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-    'actions' => [
-    ],
-=======
     'actions' => [],
->>>>>>> laraxot/dev
 ];

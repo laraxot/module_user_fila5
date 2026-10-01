@@ -24,12 +24,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-<<<<<<< HEAD
-    /** @var view-string */
-    protected string $view;
-=======
     protected string $view = 'user::widgets.auth.reset-password-widget';
->>>>>>> laraxot/dev
 
     /**
      * @return class-string<UserForm>

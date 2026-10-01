@@ -1,25 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Passport Cluster - Riepilogo Completo"
-type: concept
-tags: [passport, cluster, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "passport-cluster-summary passport cluster - riepilogo completo"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-=======
 title: "[SUPERSEDUTO] passport-cluster-summary"
 type: stub
 superseded_by: "./passport-oauth-cluster.md"
@@ -33,7 +12,6 @@ Contenuto consolidato in **[passport-oauth-cluster.md](./passport-oauth-cluster.
 questo file e andato perso: la sintesi e nella sezione Storia/Problemi noti
 del documento canonico.
 =======
->>>>>>> laraxot/dev
 # Passport Cluster - Riepilogo Completo
 
 **Data**: 2025-01-22
@@ -185,7 +163,4 @@ Alcune risorse non hanno tutte le pages standard:
 ## 2026-07-08 PHPStan
 
 `OauthPersonalAccessClientResource::getTableColumns()` resta statico perché viene usato da `table()`. Non chiamare metodi istanza con `self::`.
-<<<<<<< HEAD
-=======
 >>>>>>> .merge_file_I94EhQ
->>>>>>> laraxot/dev

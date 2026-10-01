@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Tables\Columns\Column;
-=======
 use Filament\Actions\Action;
 use Filament\Actions\DetachAction;
 use Filament\Actions\EditAction;
@@ -16,7 +11,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -73,8 +67,6 @@ class TenantsRelationManager extends XotBaseRelationManager
 
         return $columnMap;
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Override del default `XotBaseRelationManager::getTableActions()`: aggiunge
@@ -111,5 +103,4 @@ class TenantsRelationManager extends XotBaseRelationManager
                 }),
         ];
     }
->>>>>>> laraxot/dev
 }
