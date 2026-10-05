@@ -9,7 +9,7 @@ use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Http\Controllers\Auth\EmailVerificationController;
-use Modules\User\Http\Controllers\Auth\LogoutController;
+use Modules\User\Http\Volt\LogoutAction;
 use Webmozart\Assert\Assert;
 
 /*
@@ -53,7 +53,7 @@ Route::prefix('{lang}')->group(function (): void {
             $route->middleware('signed');
             $route->name('verification.verify');
 
-            Route::match(['get', 'post'], 'logout', LogoutController::class)->name('logout');
+            Route::match(['get', 'post'], 'logout', LogoutAction::class)->name('logout');
         });
 })->whereIn('lang', ['it', 'en']);
 

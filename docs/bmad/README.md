@@ -190,6 +190,12 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 3. **Solutioning** — `architecture.md` (mappa reale), `tech-spec.md`, `epics/module-roadmap.md`, `epics/epic-1-identity-core.md`.
 4. **Implementation** — ogni story in `stories/`, con lock su `bashscripts/lock/lock.sh` ed esito in `docs/sprint-status.yaml`.
 
+### Refactoring provider Socialite
+
+Il pacchetto BMAD completo per separare il bootstrap Socialite dal provider
+generale User è in [socialite-provider-boundary-architecture.md](socialite-provider-boundary-architecture.md),
+con PRD, brief, decision log e story correlati.
+
 ## Vedi Anche
 
 - [Metodo BMAD in Laraxot](../../../Xot/docs/bmad-method.md)

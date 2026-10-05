@@ -26,12 +26,10 @@ class UsersTable extends BaseUsersTable
     public function getTableActions(): array
     {
         return [
-            'change_password' => ChangePasswordAction::make()
-                ->tooltip(__('user::password.actions.change_password'))
-                ->iconButton(),
             ...parent::getTableActions(),
+            'change_password' => ChangePasswordAction::make()
+                ->iconButton(),
             'deactivate' => Action::make('deactivate')
-                ->tooltip(__('filament-actions::delete.single.label'))
                 ->color('danger')
                 ->icon('heroicon-o-trash')
                 ->action(static fn (UserContract $user): mixed => $user->delete()),

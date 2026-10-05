@@ -1035,14 +1035,14 @@ return [
     ],
     'navigation' => [
         'name' => [
-            'key' => 'user::auth.navigation.name',
+            'key' => 'user::auth.name',
             'text' => 'Autenticazione',
             'description' => 'Nome singolare della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
         ],
         'plural' => [
-            'key' => 'user::auth.navigation.plural',
+            'key' => 'user::auth.plural',
             'text' => 'Autenticazioni',
             'description' => 'Nome plurale della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
@@ -1050,14 +1050,14 @@ return [
         ],
         'group' => [
             'name' => [
-                'key' => 'user::auth.navigation.group.name',
+                'key' => 'user::auth.group.name',
                 'text' => 'Generale',
                 'description' => 'Nome del gruppo di navigazione',
                 'context' => 'navigation-group',
                 'placeholder' => '',
             ],
             'description' => [
-                'key' => 'user::auth.navigation.group.description',
+                'key' => 'user::auth.group.description',
                 'text' => 'Impostazioni generali',
                 'description' => 'Descrizione del gruppo di navigazione',
                 'context' => 'navigation-group',
@@ -1065,21 +1065,21 @@ return [
             ],
         ],
         'label' => [
-            'key' => 'user::auth.navigation.label',
+            'key' => 'user::auth.label',
             'text' => 'Autenticazione',
             'description' => 'Etichetta della sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
             'placeholder' => '',
         ],
         'sort' => [
-            'key' => 'user::auth.navigation.sort',
+            'key' => 'user::auth.sort',
             'text' => '1',
             'description' => 'Ordine di visualizzazione nella navigazione',
             'context' => 'navigation',
             'placeholder' => '',
         ],
         'icon' => [
-            'key' => 'user::auth.navigation.icon',
+            'key' => 'user::auth.icon',
             'text' => 'heroicon-o-lock-closed',
             'description' => 'Icona associata alla sezione di navigazione per l\'autenticazione',
             'context' => 'navigation',
