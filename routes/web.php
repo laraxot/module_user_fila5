@@ -4,11 +4,11 @@ declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite/blob/main/routes/web.php
  */
-use Illuminate\Support\Facades\Route;
-use Modules\User\Http\Controllers\Auth\LogoutController;
+//use Illuminate\Support\Facades\Route;
+//use Modules\User\Http\Controllers\Api\LogoutController;
 
-require 'socialite.php';
+//require 'socialite.php';
 
-Route::post('/logout', LogoutController::class)->name('logout');
+//Route::post('/logout', LogoutController::class)->name('logout');
 
 // Route::get('/upgrade', 'UpgradeController');

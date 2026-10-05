@@ -528,3 +528,4 @@ docs/chat
 app/Application
 /.docs-archive/
 graphify-out/
+audit-coverage/
