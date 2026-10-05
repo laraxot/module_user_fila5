@@ -10,6 +10,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSsoProviders extends XotBaseListRecords
 {
     protected static string $resource = SsoProviderResource::class;
-
-    // Delegazione a SsoProvidersTable::getTableColumns(), getTableFilters()
 }

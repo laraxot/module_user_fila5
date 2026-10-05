@@ -526,3 +526,5 @@ resources/lang
 # docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
 docs/chat
 app/Application
+/.docs-archive/
+graphify-out/

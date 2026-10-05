@@ -65,7 +65,7 @@ class LoginWidget extends BaseAuthWidget
             return;
         }
 
-        $this->addError('email', __('user::auth.messages.failed'));
+        $this->addError('data.email', __('user::login.actions.login.error'));
     }
 
     /**
