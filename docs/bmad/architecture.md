@@ -12,6 +12,7 @@ related:
   - ./README.md
   - ./deep-recon-user.md
   - ./user-architecture-gap-analysis.md
+  - ./socialite-provider-boundary-architecture.md
 ---
 
 # User Module Architecture (BMAD)
@@ -27,10 +28,11 @@ related:
 - [module-excellence-architecture.md](module-excellence-architecture.md) — eccellenza del modulo
 - [perfection-architecture.md](perfection-architecture.md) — rifinitura
 - [livewire-widget-architecture.md](livewire-widget-architecture.md) e [livewire-widget-consolidation-architecture.md](livewire-widget-consolidation-architecture.md) — architettura widget
+- [socialite-provider-boundary-architecture.md](socialite-provider-boundary-architecture.md) — confine tra bootstrap User e Socialite
 
 ## Namespace e provider
 
-Root `Modules\User`, alias `user`. Provider dichiarati in `module.json`: `UserServiceProvider`, `Providers\Filament\AdminPanelProvider` (estende `XotBasePanelProvider`), `PassportServiceProvider`, `SocialiteServiceProvider`; presenti inoltre `RouteServiceProvider` e `EventServiceProvider`. `app/Providers/Traits/HasPassportConfiguration.php` contiene la configurazione Passport condivisa. File non attivi: `FilamentServiceProvider.fila2`, `UserPanelProvider.boh`.
+Root `Modules\User`, alias `user`. Provider dichiarati in `module.json`: `UserServiceProvider`, `Providers\Filament\AdminPanelProvider` (estende `XotBasePanelProvider`), `PassportServiceProvider`, `SocialiteServiceProvider`; presenti inoltre `RouteServiceProvider` e `EventServiceProvider`. `UserServiceProvider` è il bootstrap generale dell'identità; `SocialiteServiceProvider` possiede registrazione Socialite, credenziali e driver. `app/Providers/Traits/HasPassportConfiguration.php` contiene la configurazione Passport condivisa. File non attivi: `FilamentServiceProvider.fila2`, `UserPanelProvider.boh`.
 
 ## Modelli e trait
 
