@@ -61,3 +61,15 @@ acceptance_criteria:
 - Story 8.1 (Phase 1): 77 migration errors fixed
 - Story phpstan-l10-user-lang-fix (parallel Lang fixes)
 - Constraint: WSL2 memory timeout on monorepo (>10m); per-module analysis required
+
+## Swarm-misc 2026-10-06 (run 4): EditUserWidget
+
+- Claim: `swarm-misc`, lock su `Filament/Widgets/EditUserWidget.php` rilasciato a fine lavoro.
+- Scopo funzionale: `EditUserWidget` mostra e salva il form di modifica dati dell'utente; `getFormSchema()` prende lo
+  schema dalla resource (`getFormSchemaWidget()`) e lo normalizza in `array<int|string, Component>` per il form.
+- Errore: `varTag.variableNotFound` alla riga 128, `@var ... $result` davanti a un `return` diretto. Il commento si
+  riferiva a una variabile `$result` rimossa in un refactor: il valore restituito e' il risultato di `normalizeFormSchema()`.
+- Fix: rimosso il `@var` orfano. Il tipo e' gia' garantito dal `@return array<int|string, Component>` di
+  `normalizeFormSchema()` e dal ritorno del metodo; nessun cambio di comportamento.
+- Verifica: `php -l` ok, `class_exists` true, PHPStan mirato sul file: 0 errori.
+- Lezione: un `@var` senza variabile e' un residuo di refactor, non un'informazione: toglierlo, non inventare una variabile.
