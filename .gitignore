@@ -528,4 +528,8 @@ docs/chat
 app/Application
 /.docs-archive/
 graphify-out/
+<<<<<<< HEAD
+=======
+# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
+>>>>>>> laraxot/dev
 audit-coverage/
