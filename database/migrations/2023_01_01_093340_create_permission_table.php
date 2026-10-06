@@ -10,11 +10,13 @@ return new class extends XotBaseMigration
      */
     public function up(): void
     {
+        /** @var string|null $cache_key */
         $cache_key = config('permission.cache.key');
 
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache') && is_string($cache_key)) {
+                /** @var string|null $store */
                 $store = config('permission.cache.store');
                 app('cache')->store(is_string($store) ? $store : null)->forget($cache_key);
             }

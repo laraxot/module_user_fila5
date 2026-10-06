@@ -528,4 +528,5 @@ docs/chat
 app/Application
 /.docs-archive/
 graphify-out/
+# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
 audit-coverage/

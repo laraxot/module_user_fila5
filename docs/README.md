@@ -110,6 +110,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 
 ## Documentation
 
+- [BMAD — indice e stories](./bmad/README.md) — include la story [ripristino marker di conflitto](./bmad/stories/committed-conflict-markers-20261006.story.md)
 - [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
 - [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
 - [Performance](./performance-optimization.md) — Metriche e best practice
