@@ -1,3 +1,8 @@
+---
+title: index
+module: User
+---
+
 # User Module — Documentation Index
 
 ## Core Purpose

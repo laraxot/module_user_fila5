@@ -1,3 +1,8 @@
+---
+title: coverage
+module: User
+---
+
 # Coverage — User
 
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.

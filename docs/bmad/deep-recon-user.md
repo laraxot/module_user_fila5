@@ -1,3 +1,8 @@
+---
+title: deep-recon-user
+module: User
+---
+
 # User Module — Deep Recon (BMAD Deep Dive)
 
 **Status**: ⏳ In Progress

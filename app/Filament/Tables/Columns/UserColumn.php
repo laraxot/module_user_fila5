@@ -24,7 +24,7 @@ use Modules\User\Filament\Forms\Components\UserSection;
  */
 class UserColumn extends GroupColumn
 {
-    protected const string DEFAULT_NAME = 'user';
+    protected const DEFAULT_NAME = 'user';
 
     /**
      * @return array<string, Column>

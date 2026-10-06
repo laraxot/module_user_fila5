@@ -1,3 +1,8 @@
+---
+title: team-permissions-sqlite-migration.story
+module: User
+---
+
 # Story: team_permissions migration on SQLite
 
 ## Context

@@ -1,3 +1,8 @@
+---
+title: status
+module: User
+---
+
 BMAD STATUS — User
 - Inventario docs: docs/architecture/, docs/stories/, docs/wiki/
 - PHPStan: 0 errori (OK)

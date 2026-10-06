@@ -1,3 +1,8 @@
+---
+title: analyst-report
+module: User
+---
+
 # User Module — Analyst Report
 
 **Date**: 2026-07-09  

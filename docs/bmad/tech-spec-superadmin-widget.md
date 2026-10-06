@@ -1,3 +1,8 @@
+---
+title: tech-spec-superadmin-widget
+module: User
+---
+
 # Project context — SuperAdmin nel user menu
 
 Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).

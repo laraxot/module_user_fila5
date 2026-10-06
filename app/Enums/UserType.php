@@ -26,9 +26,9 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     case System = 'system';
     case Technician = 'technician';
 
-    private const string API = 'api';
+    private const API = 'api';
 
-    private const string WEB = 'web';
+    private const WEB = 'web';
 
     public function getDefaultGuard(): string
     {

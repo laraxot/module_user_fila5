@@ -13,9 +13,9 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
-    private const string NAME_SEARCH = 'before';
+    private const NAME_SEARCH = 'before';
 
-    private const string SURNAME_SEARCH = 'after';
+    private const SURNAME_SEARCH = 'after';
 
     public ?string $name;
 

@@ -1,3 +1,8 @@
+---
+title: README
+module: User
+---
+
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

@@ -1,3 +1,8 @@
+---
+title: epics
+module: User
+---
+
 # User Module — Epics for Perfection
 
 **Status**: ✅ Finalized
