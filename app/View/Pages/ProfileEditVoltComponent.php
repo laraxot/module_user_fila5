@@ -17,6 +17,7 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
@@ -150,7 +151,7 @@ final class ProfileEditVoltComponent extends Component
             if ($emailChanged) {
                 // Additional email validation for changes
                 Assert::false(
-                    $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
+                    User::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
                     'Email is already in use by another user',
                 );
             }
