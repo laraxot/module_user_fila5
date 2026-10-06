@@ -244,7 +244,6 @@ return [
             'icon' => 'reorderRecords',
             'tooltip' => 'reorderRecords',
         ],
-<<<<<<< HEAD
         'submit' => [
             'label' => 'submit',
             'icon' => 'submit',
@@ -255,8 +254,6 @@ return [
             'icon' => 'cancel',
             'tooltip' => 'cancel',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'update_success' => 'Profilo aggiornato con successo!',

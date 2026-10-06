@@ -2485,6 +2485,7 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 
 - [stories/module-bmad-audit-20260928.story.md](stories/module-bmad-audit-20260928.story.md)
 - [stories/livewire-residual-conversion-cluster-c.story.md](stories/livewire-residual-conversion-cluster-c.story.md)
+- [stories/committed-conflict-markers-20261006.story.md](stories/committed-conflict-markers-20261006.story.md)
 - [stories/uppercase-application-dir.story.md](stories/uppercase-application-dir.story.md)
 - [stories/continuazione-domani.story.md](stories/continuazione-domani.story.md)
 
