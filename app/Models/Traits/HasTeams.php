@@ -403,7 +403,7 @@ trait HasTeams
      */
     public function personalTeam(): ?TeamContract
     {
-        /* @var TeamContract|null */
+        /** @var TeamContract|null */
         return $this->ownedTeams->where('personal_team', true)->first();
     }
 
