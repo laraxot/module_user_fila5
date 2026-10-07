@@ -38,5 +38,3 @@ new class extends Component {
     }
 };
 
-?>
-

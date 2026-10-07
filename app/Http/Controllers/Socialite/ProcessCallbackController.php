@@ -54,8 +54,6 @@ class ProcessCallbackController extends Controller
         // Try to find a socialite user
         $socialiteUser = app(RetrieveSocialiteUserAction::class)->execute($provider, $oauthUser);
         if ($socialiteUser) {
-            $socialiteUserObj = $socialiteUser->user;
-
             return app(LoginUserAction::class)->execute($socialiteUser);
         }
 

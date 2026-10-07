@@ -110,15 +110,8 @@ class ChangeTypeCommand extends Command
         $user->type = (string) $newTypeEnum->value;
         $user->save();
 
-        $label = $newTypeEnum->getLabel();
-        $labelString = '';
-        if (\is_string($label)) {
-            $labelString = $label;
-        } elseif ($label instanceof Htmlable) {
-            $labelString = $label->toHtml();
-        } else {
-            $labelString = (string) $label;
-        }
+        $label = $newTypeEnum->getLabel() ?? (string) $newTypeEnum->value;
+        $labelString = $label instanceof Htmlable ? $label->toHtml() : $label;
         $this->info("User type changed to '{$labelString}' for {$email}");
     }
 }

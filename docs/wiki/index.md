@@ -4,7 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-updated: 2026-09-21
+updated: 2026-10-06
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
@@ -65,6 +65,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 ## Decisioni recenti
 
+- [PHPStan cleanup User 2026-10-06 — story](../stories/2026-10-06-phpstan-cleanup-user.story.md) · [dev](../stories/2026-10-06-phpstan-cleanup-user.dev.md) — enum (`NameSearchEnum`, `DefaultRoleId`, `FetchUserApiTokenExitCode`), migrazione permission con tipi a runtime, test con assert reali
 - [Confine Table/Page e traduzioni](./concepts/filament-table-boundary-and-i18n.md)
 - [Story BMAD User 2026-09-29](../bmad/stories/user-filament-boundary-i18n-20260929.story.md)
 

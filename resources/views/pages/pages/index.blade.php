@@ -27,7 +27,7 @@ render(function (View $view) {
     if ($hasCategory) {
         $pages = $pages->when(request()->has('category'), fn($query) => $query->where(
             'category',
-            request()->get('category'),
+            request()->input('category'),
         ));
     }
 

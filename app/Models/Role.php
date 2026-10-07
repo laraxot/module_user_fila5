@@ -80,12 +80,6 @@ class Role extends SpatieRole
 
     // use HasUuids;
 
-    final public const ROLE_ADMINISTRATOR = 1;
-
-    final public const ROLE_OWNER = 2;
-
-    final public const ROLE_USER = 3;
-
     protected $connection = 'user';
 
     protected $keyType = 'int';

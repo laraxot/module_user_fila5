@@ -242,7 +242,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessFilament(?Panel $panel = null): bool
     {
          dddx($panel->getId());
-        // return $this->role_id === Role::ROLE_ADMINISTRATOR;
+        // return $this->role_id === DefaultRoleId::Administrator->value;
         return true;
     }
     */

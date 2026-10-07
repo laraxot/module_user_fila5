@@ -6,16 +6,12 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Enums\FetchUserApiTokenExitCode;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
 class FetchUserApiTokenCommand extends Command
 {
-    private const INVALID_ENV = 1;
-
-    private const USER_NOT_FOUND = 2;
-
     protected $signature = 'passport:fetch-user-token
                             {email : The email of the user to impersonate}';
 
@@ -26,7 +22,7 @@ class FetchUserApiTokenCommand extends Command
         if (app()->isProduction()) {
             $this->error('The command cannot be used in PRODUCTION environments');
 
-            return self::INVALID_ENV;
+            return FetchUserApiTokenExitCode::InvalidEnvironment->value;
         }
         Assert::string($email = $this->argument('email'));
         $userEmail = trim($email);
@@ -35,14 +31,13 @@ class FetchUserApiTokenCommand extends Command
             $userEmail = trim($userEmail);
         }
 
-        $user_class = XotData::make()->getUserClass();
-        /** @var UserContract */
-        $user = XotData::make()->getUserByEmail($userEmail);
+        // query diretta (non getUserByEmail, che lancia eccezione): serve il ramo "User not found" con exit code dedicato
+        $user = XotData::make()->getUserClass()::query()->where('email', $userEmail)->first();
 
         if ($user === null) {
             $this->error('User not found!');
 
-            return self::USER_NOT_FOUND;
+            return FetchUserApiTokenExitCode::UserNotFound->value;
         }
 
         $oauthScopes = ['core-technicians'];
