@@ -10,6 +10,7 @@ bmad_track: "core-identity"
 
 # User — BMAD Method Integration
 
+<<<<<<< HEAD
 ## Contratto corrente del flusso cittadino
 
 - [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract-2026-10-07.md)
@@ -18,6 +19,8 @@ bmad_track: "core-identity"
 User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
 presenta le pagine e Fixcity possiede la segnalazione.
 
+=======
+>>>>>>> laraxot/dev
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
@@ -119,4 +122,8 @@ _bmad-output/
 
 ---
 
+<<<<<<< HEAD
 *User · BMAD Method · data 2026-05-27*
+=======
+*User · BMAD Method · data 2026-05-27*
+>>>>>>> laraxot/dev
