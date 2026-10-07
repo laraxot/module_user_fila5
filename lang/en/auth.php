@@ -196,4 +196,13 @@ return [
             'personal_area' => 'Access personal area',
         ],
     ],
+    'register_page' => [
+        'title' => 'Create your account',
+        'subtitle' => 'Enter your details to register',
+        'description' => 'Fill in the form below to create your account and access all features.',
+        'support_title' => 'Registration support',
+        'help_email' => 'Use the email address you will use to sign in.',
+        'help_password' => 'Password must be at least 12 characters with uppercase, lowercase, number, and symbol.',
+        'help_support' => 'For assistance, contact the relevant office.',
+    ],
 ];

@@ -246,6 +246,16 @@ return [
         'context' => 'verification',
         'placeholder' => '',
     ],
+    'login_page' => [
+        'meta_title' => 'Accedi | FixCity',
+        'kicker' => 'Area personale',
+        'title' => 'Accedi al tuo account',
+        'description' => 'Entra per segnalare un problema, seguire le tue pratiche e ricevere aggiornamenti.',
+        'support_title' => 'Serve aiuto?',
+        'support_item_email' => 'Usa l\'email con cui ti sei registrato.',
+        'support_item_password' => 'Hai scordato la password? Puoi reimpostarla in pochi secondi.',
+        'support_item_help' => 'Se il problema continua, scrivi al supporto del tuo Comune.',
+    ],
     'login' => [
         'title' => [
             'key' => 'user::auth.login.title',
@@ -1137,5 +1147,14 @@ return [
         'profile' => 'Il mio profilo',
         'dashboard' => 'Dashboard',
         'personal_area' => 'Accedi all\'area personale',
+    ],
+    'register_page' => [
+        'title' => 'Crea il tuo account',
+        'subtitle' => 'Area personale',
+        'description' => 'Compila il modulo sottostante per creare il tuo account e accedere a tutte le funzionalità.',
+        'support_title' => 'Supporto registrazione',
+        'help_email' => 'Usa l\'indirizzo email che userai per accedere.',
+        'help_password' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
+        'help_support' => 'Per assistenza contatta l\'ufficio competente.',
     ],
 ];

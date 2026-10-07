@@ -1,0 +1,1 @@
+---\ntype: ux-fix\nlinks: {github_issue:'#54'}\n---\n# Register UI + email config\nBMAD + Second Brain. SMTP localhost + fallback geolocazione. No controller/service.
