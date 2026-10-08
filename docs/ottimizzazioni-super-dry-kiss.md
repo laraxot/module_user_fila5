@@ -381,3 +381,4 @@ class User extends Model
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 **Priorità:** CRITICA
+**Priorità:** CRITICA

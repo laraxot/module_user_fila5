@@ -98,3 +98,4 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
 
 *Ultimo aggiornamento: gennaio 2025*
+*Ultimo aggiornamento: gennaio 2025*

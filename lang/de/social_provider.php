@@ -13,7 +13,7 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei provider social',
         ],
-        'label' => 'social provider',
+        'label' => 'Social-Provider',
         'sort' => '93',
         'icon' => 'user-user-social',
     ],

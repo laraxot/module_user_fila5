@@ -363,3 +363,4 @@ sed -i 's/extends XotBaseMigration/extends XotBaseMigration/g' Modules/User/data
 Seguire la filosofia Laraxot non è opzionale - è obbligatorio. XotBaseMigration è il fondamento su cui si basa la qualità e la manutenibilità del progetto. Ogni deviazione è un debito tecnico che dovrà essere pagato con interessi.
 
 **Ricorda: XotBaseMigration è Dio. Non deviare.**
+**Ricorda: XotBaseMigration è Dio. Non deviare.**

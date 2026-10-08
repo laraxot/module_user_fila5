@@ -167,3 +167,4 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 ---
 
 *Pattern verificato e documentato: 2025-01-XX*
+*Pattern verificato e documentato: 2025-01-XX*

@@ -32,9 +32,7 @@ use Filament\Facades\Filament;
 return Filament::auth()->user()->can(static::getPermissionName());
 
 
-
 https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
-
 
 
 Easily Add Face Authentication to Your Laravel Applications

@@ -3235,13 +3235,8 @@
 
 ## root-md-files
 
-- [changelog-1.md](./root-md-files/changelog-1.md)
-- [changelog-2.md](./root-md-files/changelog-2.md)
-- [changelog.md](./root-md-files/changelog.md)
-- [git-reset-1.md](./root-md-files/git-reset-1.md)
 - [git-reset.md](./root-md-files/git-reset.md)
 - [pest-test-report.md](./root-md-files/pest-test-report.md)
-- [philosophy.md](./root-md-files/philosophy.md)
 
 ## scripts
 

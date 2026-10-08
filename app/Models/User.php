@@ -167,7 +167,7 @@ class User extends BaseUser
     #[\Override]
     public function canAccessSocialite(): bool
     {
-        // return $this->role_id === Role::ROLE_ADMINISTRATOR;
+        // return $this->role_id === DefaultRoleId::Administrator->value;
         return true;
     }
 }

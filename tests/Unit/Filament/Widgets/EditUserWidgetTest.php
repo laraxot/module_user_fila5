@@ -23,13 +23,19 @@ describe('EditUserWidget', function (): void {
 
     test('edit user widget has type property', function (): void {
         $widget = new EditUserWidget;
+
+        Assert::assertObjectHasProperty('type', $widget);
     });
 
     test('edit user widget has resource property', function (): void {
         $widget = new EditUserWidget;
+
+        Assert::assertObjectHasProperty('resource', $widget);
     });
 
     test('edit user widget has model property', function (): void {
         $widget = new EditUserWidget;
+
+        Assert::assertObjectHasProperty('model', $widget);
     });
 });

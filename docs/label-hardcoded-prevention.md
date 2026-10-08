@@ -216,3 +216,4 @@ return [
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
 **✅ Status**: Prevenzione attiva e monitorata
+**✅ Status**: Prevenzione attiva e monitorata

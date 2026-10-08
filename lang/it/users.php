@@ -43,6 +43,12 @@ return [
         'updated_at' => [
             'label' => 'updated_at',
         ],
+        'state' => [
+            'label' => 'state',
+        ],
+        'password_expires_at' => [
+            'label' => 'password_expires_at',
+        ],
     ],
     'actions' => [
         'create' => [
@@ -84,6 +90,11 @@ return [
             'tooltip' => 'verify_email',
             'icon' => 'verify_email',
             'label' => 'verify_email',
+        ],
+        'export' => [
+            'label' => 'export',
+            'icon' => 'export',
+            'tooltip' => 'export',
         ],
     ],
 ];

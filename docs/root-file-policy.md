@@ -1,9 +1,3 @@
-<<<<<<< .merge_file_VlYpwX
-<<<<<<< HEAD
-<<<<<<< .merge_file_4kOM3l
-=======
-=======
->>>>>>> .merge_file_Q0Surv
 ---
 title: "Root file policy"
 type: concept
@@ -24,12 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< .merge_file_VlYpwX
->>>>>>> .merge_file_G8485Q
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_Q0Surv
 # Root file policy
 
 Updated: 2026-07-08

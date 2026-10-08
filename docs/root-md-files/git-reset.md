@@ -1,9 +1,3 @@
-<<<<<<< .merge_file_2AI3Ct
-<<<<<<< HEAD
-<<<<<<< .merge_file_QRbWJI
-=======
-=======
->>>>>>> .merge_file_MvC6ul
 ---
 title: "Git Reset"
 type: concept
@@ -17,12 +11,6 @@ related:
   - "./pest-test-report.md"
 ---
 
-<<<<<<< .merge_file_2AI3Ct
->>>>>>> .merge_file_LZTce3
-=======
->>>>>>> df2ba808 (.)
-=======
->>>>>>> .merge_file_MvC6ul
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

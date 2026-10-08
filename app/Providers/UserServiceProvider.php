@@ -42,7 +42,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         parent::boot();
         $this->registerLivewireAuthWidgets();
         $this->registerPasswordRules();
-        $this->registerPulse();
+        //$this->registerPulse();
         $this->registerMailsNotification();
         $this->registerPolicies();
     }
@@ -51,57 +51,11 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
-        $this->mergeSocialProviderCredentialsFromEnv();
         // $this->registerTeamModelBindings();
-    }
-
-    /**
-     * Merge OAuth client credentials from Laravel services config into user.social-providers.
-     * Credentials live in config/services.php (env allowed there); module config stays env-free.
-     */
-    protected function mergeSocialProviderCredentialsFromEnv(): void
-    {
-        /** @var list<string> $providers */
-        $providers = [
-            'facebook',
-            'twitter',
-            'linkedin',
-            'google',
-            'github',
-            'gitlab',
-            'bitbucket',
-            'slack',
-            'apple',
-            'microsoft',
-            'pinterest',
-            'reddit',
-            'tiktok',
-            'twitch',
-        ];
-
-        foreach ($providers as $provider) {
-            /** @var array<string, mixed> $serviceConfig */
-            $serviceConfig = config("services.{$provider}", []);
-
-            $clientId = $serviceConfig['client_id'] ?? null;
-            if (is_string($clientId) && $clientId !== '') {
-                Config::set("user.social-providers.{$provider}.client_id", $clientId);
-            }
-
-            $clientSecret = $serviceConfig['client_secret'] ?? null;
-            if (is_string($clientSecret) && $clientSecret !== '') {
-                Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
-            }
-        }
     }
 
     public function registerMailsNotification(): void
     {
-        $app_name = config('app.name');
-        if (! is_string($app_name)) {
-            $app_name = '';
-        }
-
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
@@ -204,25 +158,15 @@ class UserServiceProvider extends XotBaseServiceProvider
 
     /**
      * Registra i widget Livewire auth per le viste Blade/Folio.
-     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
-     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
-     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
+     * In Livewire v4, i componenti si auto-scoprono dal namespace Livewire.
+     * Se necessario registrare manualmente, usare Livewire::component(name, class).
+     * I widget qui sono usati via @livewire(Class::class) nelle view, che funziona con auto-discovery.
      */
     protected function registerLivewireAuthWidgets(): void
     {
-        $widgets = [
-            LoginWidget::class,
-            SocialLoginWidget::class,
-            RegisterWidget::class,
-            ResetPasswordWidget::class,
-            PasswordResetWidget::class,
-            ForgotPasswordWidget::class,
-            PasswordResetConfirmWidget::class,
-        ];
-
-        foreach ($widgets as $class) {
-            Livewire::addComponent($class);
-        }
+        // Livewire v4 auto-discovers components from configured namespaces
+        // Manual registration with Livewire::component() would be needed only for non-standard paths
+        // The widgets (LoginWidget, RegisterWidget, etc.) are auto-discovered
     }
 
     /**

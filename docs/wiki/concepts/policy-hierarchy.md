@@ -15,8 +15,7 @@ related:
   - "./context-overflow-prevention.md"
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
-  - ./user-profile-contract-adoption.md
-  - ../integrations/spatie-permissions-methods.md
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Policy Hierarchy in Laraxot
@@ -65,7 +64,7 @@ ActivityPolicy, CmsPolicy, etc.       ← Domain Specific
 - Extends XotBasePolicy
 - Integrates with `spatie/laravel-permission`
 - Uses `UserContract` for type-safe user resolution
-- Provides permission-based authorization via `hasPermissionToOrCreate()`
+- Provides permission-based authorization via `hasPermissionTo()`
 
 **When to Extend**:
 - Most domain policies (default choice)
@@ -197,24 +196,20 @@ class JobSchedulePolicy extends XotBasePolicy
 
 1. **Always type-hint UserContract**
    ```php
-   public function viewAny(UserContract $user): bool
-   {
-       return $user->hasPermissionToOrCreate(
-           'oauth-access-token.view.any'
-       );
-   }
+   public function view(UserContract $user): bool
    ```
 
-2. **Use permission dot notation (kebab-case)**
+2. **Use permission dot notation**
    ```php
-   'oauth-access-token.view.any'  // resource.action
+   'activity.view'      // resource.action
+   'activity.viewAny'   // resource.actionAny
    ```
 
 3. **Comment out unused methods**
    ```php
    // public function viewAny(UserContract $user): bool
    // {
-   //     return $user->hasPermissionToOrCreate('activity.view.any');
+   //     return $user->hasPermissionTo('activity.viewAny');
    // }
    ```
 

@@ -28,16 +28,13 @@ https://github.com/scify/laravel-cookies-consent
 https://codebrisk.com/blog/make-your-laravel-app-compliant-with-the-eu-gdpr-cookie-law
 
 
-
 pagine di esempio
 https://forge.laravel.com/data-processing-agreement
-
 
 
 //------------ COOKIE LAW   
 https://github.com/spatie/laravel-cookie-consent
 https://github.com/statikbe/laravel-cookie-consent
-
 
 
 ///-------------------- pagina esempio privacy-policy
@@ -51,9 +48,6 @@ https://procontent.renewedvision.com/privacy
 
 //-------------- pagina esempio data-processing-agreement
 https://forge.laravel.com/data-processing-agreement
-
-
-
 
 
 //------------- tutorial 
@@ -84,9 +78,5 @@ https://github.com/statikbe/laravel-cookie-consent
 https://github.com/OwenMelbz/forget-db
 https://github.com/the42coders/eu-cookie-consent
  
-
-
-
-
 
 

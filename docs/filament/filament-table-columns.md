@@ -56,4 +56,5 @@ public function getTableColumns(): array
 
 ---
 
+
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

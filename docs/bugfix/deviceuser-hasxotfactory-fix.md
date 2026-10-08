@@ -108,6 +108,3 @@ php artisan tinker
 **File Modificati**: `Modules/User/app/Models/BasePivot.php`
 
 
-
-
-

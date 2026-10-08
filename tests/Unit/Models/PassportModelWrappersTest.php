@@ -61,6 +61,7 @@ test('passport eloquent models have oauth wrappers in user module', function ():
     ];
 
     foreach ($expectedWrappers as $passportClass => $wrapperClass) {
+        Assert::assertTrue((new ReflectionClass($wrapperClass))->isSubclassOf($passportClass), $wrapperClass.' must extend '.$passportClass);
         Assert::assertSame('user', passportWrapperConnectionName($wrapperClass));
     }
 });

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
@@ -128,54 +127,23 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
-        if ($authUser instanceof UserContract) {
-            return TextInput::make('current_password')
-                ->password()
-                ->revealable()
-                ->required()
-                ->rule(new CheckOtpExpiredRule($authUser))
-                ->validationAttribute(static::trans('fields.current_password.validation_attribute'));
-        }
-
-        // Fallback nel caso l'utente non sia del tipo corretto
-        return TextInput::make('current_password')
+        $input = TextInput::make('current_password')
             ->password()
             ->revealable()
             ->required()
             ->validationAttribute(static::trans('fields.current_password.validation_attribute'));
-    }
 
-    /*
-     * protected function getPasswordFormComponent(): Component
-     * {
-     * $validation_messages = __('user::validation');
-     *
-     * return TextInput::make('password')
-     * ->password()
-     * // ->revealable(filament()->arePasswordsRevealable())
-     * ->revealable()
-     * ->required()
-     * ->rule(PasswordRule::default())
-     * ->same('passwordConfirmation')
-     * ->validationMessages($validation_messages)
-     * ->validationAttribute(static::trans('fields.password.validation_attribute'));
-     * }
-     *
-     * protected function getPasswordConfirmationFormComponent(): Component
-     * {
-     * return TextInput::make('passwordConfirmation')
-     * ->password()
-     * // ->revealable(filament()->arePasswordsRevealable())
-     * ->revealable()
-     * ->required()
-     * ->dehydrated(false);
-     * }
-     */
+        if ($authUser instanceof UserContract) {
+            $input->rule(new CheckOtpExpiredRule($authUser));
+        }
+
+        return $input;
+    }
 
     /**
      * Get the form actions.
      *
-     * @return array<int, Action|ActionGroup>
+     * @return array<int, Action>
      */
     protected function getFormActions(): array
     {

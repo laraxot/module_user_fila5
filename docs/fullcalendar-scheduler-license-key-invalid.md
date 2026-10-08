@@ -17,5 +17,3 @@ related:
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
-
- 

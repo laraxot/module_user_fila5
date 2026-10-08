@@ -29,9 +29,9 @@ return [
         'automated_decisions' => 'Ваши данные не подлежат автоматизированному принятию решений без вмешательства человека.',
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'label' => 'Аутентификация',
+        'plural_label' => 'Аутентификации',
+        'group' => 'Общие',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

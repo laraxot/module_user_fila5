@@ -116,7 +116,7 @@ protected function validate(Team $team, string $email, ?string $role): void
 
 // 🟢 LARAXOT: Validazione Runtime + Actions
 Assert::notNull($user, 'User cannot be null');
-Assert::isInstanceOf($user, UserContract::class); // mai User::class / BaseUser::class
+Assert::isInstanceOf($user, UserContract::class);
 ```
 
 ## 🎯 **LA SINTESI PERFETTA**
