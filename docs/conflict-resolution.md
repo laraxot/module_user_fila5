@@ -44,4 +44,3 @@ related:
 - Le migrazioni seguono la regola Laraxot: `return new class() extends XotBaseMigration { ... };`
 - Factory utilizza `@var OauthClient` per evitare `mixed`.
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
-

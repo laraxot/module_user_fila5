@@ -127,4 +127,3 @@ TextColumn::make('name')
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
-

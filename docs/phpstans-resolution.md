@@ -207,4 +207,3 @@ Tutti gli errori sono stati corretti:
 2. ✅ **OauthClient.php linea 180**: Aggiunto cast esplicito `@var MorphTo<User, $this>` per allineare con tipo parent
 3. ✅ **HasTeams.php linee 473 e 476**: Corretto PHPDoc return type da `Pivot` a `TeamUser` per riflettere `->using(TeamUser::class)`
 4. ✅ **PassportServiceProvider.php linea 158**: Aggiunto cast esplicito `@var array<string, string>` per `Passport::tokensCan()`
-
