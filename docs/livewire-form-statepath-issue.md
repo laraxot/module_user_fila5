@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
->>>>>>> 87273113 (.)

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # BaseUser - Analisi Violazione Principio DRY
 
 **Data**: 15 Ottobre 2025  
@@ -455,7 +454,6 @@ test('hasRole works with guard parameter', function () {
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../../docs/code-quality-analysis.md)
->>>>>>> 87273113 (.)
 
 ## Conclusioni
 

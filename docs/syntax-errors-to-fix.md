@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Syntax Errors da Fixare - Modulo User
 
 ## 🚨 File con Errori Attivi

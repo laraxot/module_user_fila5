@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Git Conflict Resolution - Modulo User
 
 ## Data
@@ -46,4 +45,3 @@ related:
 - Factory utilizza `@var OauthClient` per evitare `mixed`.
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
 
->>>>>>> 87273113 (.)

@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md
->>>>>>> 87273113 (.)

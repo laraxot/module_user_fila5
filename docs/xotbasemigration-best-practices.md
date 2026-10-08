@@ -11,7 +11,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
->>>>>>> 87273113 (.)
 ---
 # Best Practice: XotBaseMigration
 
@@ -58,7 +57,6 @@ if (!Schema::hasColumn('users', 'state')) {
 
 ## Collegamenti correlati
 - [Migrazioni del Database](mdc:../../../../docs/database-migrations.md)
->>>>>>> 87273113 (.)
 - [Moderazione e Wizard Generici](mdc:MODERATION_WIZARD_GENERIC.mdc)
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)

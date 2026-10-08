@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -198,5 +197,4 @@ class LoginWidget extends XotBaseWidget
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
->>>>>>> 87273113 (.)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 

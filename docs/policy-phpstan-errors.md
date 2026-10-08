@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Errori PHPStan nelle Policy del Modulo User
 
 ## Problema Identificato (2025-01-06)
@@ -118,4 +117,3 @@ Definire il comportamento tramite trait che implementa il metodo.
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
->>>>>>> 87273113 (.)

@@ -18,7 +18,6 @@ related:
   - "./tasks-index.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task 001: Implement User Management and Authentication System
 
 ## Description

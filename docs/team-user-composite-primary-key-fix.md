@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
->>>>>>> 87273113 (.)

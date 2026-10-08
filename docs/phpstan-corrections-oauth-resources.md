@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -129,4 +128,3 @@ TextColumn::make('name')
 
 ---
 
->>>>>>> 87273113 (.)

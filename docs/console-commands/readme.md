@@ -14,7 +14,6 @@ related:
   - "./console-commands.md"
 ---
 
->>>>>>> 87273113 (.)
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -223,7 +222,6 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
->>>>>>> 87273113 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -261,4 +259,3 @@ Modules/User/
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
 
->>>>>>> 87273113 (.)

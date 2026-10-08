@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
->>>>>>> 87273113 (.)

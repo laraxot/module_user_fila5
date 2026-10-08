@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Filosofia, Religione e Politica di Laraxot: Regole di Migrazione
 
 ## Regola Fondamentale: Una Tabella = Una Migration per Modulo

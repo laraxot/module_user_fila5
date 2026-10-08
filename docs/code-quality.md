@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -326,7 +325,6 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
->>>>>>> 87273113 (.)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

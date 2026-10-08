@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # tailwind
 
 <!-- Contenuto migrato da _docs/tailwind.txt -->

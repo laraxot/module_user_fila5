@@ -14,7 +14,6 @@ related:
   - "./multiple-bugs-resolution.md"
 ---
 
->>>>>>> 87273113 (.)
 # Bugfix: DeviceUser e HasXotFactory
 
 ## Contesto
@@ -106,8 +105,5 @@ php artisan tinker
 **Stato**: ✅ RISOLTO  
 **Modulo**: User  
 **File Modificati**: `Modules/User/app/Models/BasePivot.php`
-
-
-
 
 

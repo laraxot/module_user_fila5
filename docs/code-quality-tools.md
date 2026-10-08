@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  
@@ -214,12 +213,5 @@ npm install
 ---
 
 *Il modulo User mantiene i più alti standard di qualità del codice attraverso l'utilizzo di strumenti di analisi all'avanguardia.*
-
-
-
-
-
-
-
 
 

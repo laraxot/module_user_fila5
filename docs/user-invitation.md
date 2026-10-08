@@ -18,6 +18,5 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invitations
 

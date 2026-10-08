@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
->>>>>>> 87273113 (.)

@@ -17,4 +17,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan_repo
 
  [OK] No errors        
 
->>>>>>> 87273113 (.)

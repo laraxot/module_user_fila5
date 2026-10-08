@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
->>>>>>> 87273113 (.)

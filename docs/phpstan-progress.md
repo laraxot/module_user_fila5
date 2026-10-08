@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Fixes Progress - 2026-01-09
 
 **Start Time**: 14:00

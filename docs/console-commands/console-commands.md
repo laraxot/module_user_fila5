@@ -474,6 +474,3 @@ private function getPasswordLegacy(): string
 *Ultimo aggiornamento: 2025-01-27*
 
 
-
-
-

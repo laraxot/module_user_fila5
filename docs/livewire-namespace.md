@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto
