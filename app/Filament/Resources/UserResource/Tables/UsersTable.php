@@ -32,7 +32,7 @@ class UsersTable extends BaseUsersTable
             'deactivate' => Action::make('deactivate')
                 ->color('danger')
                 ->icon('heroicon-o-trash')
-                ->action(static fn (UserContract $user): mixed => $user->delete()),
+                ->action(static fn (UserContract $record): ?bool => $record->delete()),
         ];
     }
 

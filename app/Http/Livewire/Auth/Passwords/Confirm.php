@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
@@ -23,7 +24,7 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-    public function render(): mixed
+    public function render(): View
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
@@ -33,6 +34,10 @@ class Confirm extends Component
         /** @var view-string */
         $view = 'pub_theme::livewire.auth.passwords.confirm';
 
-        return view($view)->extends('pub_theme::layouts.auth');
+        // `extends` e' una macro Livewire: muta la view e restituisce la stessa istanza.
+        $page = view($view);
+        $page->extends('pub_theme::layouts.auth');
+
+        return $page;
     }
 }

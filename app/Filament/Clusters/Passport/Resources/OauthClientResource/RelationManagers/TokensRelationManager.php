@@ -44,26 +44,15 @@ class TokensRelationManager extends XotBaseRelationManager
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(
-                    /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
-                    function (mixed $state): ?string {
-                        if ($state === null) {
-                            return null;
-                        }
-                        if (is_array($state)) {
-                            return json_encode($state);
-                        }
-
-                        return is_string($state) ? $state : null;
+                    /** @param list<string>|string|null $state 'scopes' column state: the JSON-cast list, or one of its items. */
+                    function (array|string|null $state): ?string {
+                        return is_array($state) ? json_encode($state) : $state;
                     }
                 )
                 ->formatStateUsing(
-                    /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
-                    function (mixed $state): string {
-                        if (is_array($state)) {
-                            return implode(', ', array_map(fn (mixed $s): string => is_scalar($s) ? (string) $s : '', $state));
-                        }
-
-                        return is_scalar($state) ? (string) $state : '';
+                    /** @param list<string>|string|null $state 'scopes' column state: the JSON-cast list, or one of its items. */
+                    function (array|string|null $state): string {
+                        return is_array($state) ? implode(', ', array_filter($state, is_string(...))) : ($state ?? '');
                     }
                 ),
             'revoked' => IconColumn::make('revoked')
