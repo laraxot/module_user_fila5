@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 use Filament\Actions\Action;
+use Filament\Actions\DetachAction;
+use Filament\Actions\EditAction;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Actions\Header\AttachRoleAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -59,5 +62,41 @@ class RolesRelationManager extends XotBaseRelationManager
                 'attach' => AttachRoleAction::make(),
             ]
         );
+    }
+
+    /**
+     * Override del default `XotBaseRelationManager::getTableActions()`: aggiunge
+     * `->tooltip()` ai pulsanti icon-only, unico meccanismo di accessibilita'
+     * (aria-label) per bottoni icona-sola in Filament.
+     *
+     * @return array<string, Action>
+     */
+    #[\Override]
+    public function getTableActions(): array
+    {
+        $me = $this;
+
+        return [
+            'edit' => EditAction::make()
+                ->iconButton()
+                ->tooltip(trans('user::user.actions.edit.tooltip'))
+                ->visible(static function (?Model $record) use ($me): bool {
+                    if ($record === null) {
+                        return false;
+                    }
+
+                    return $me->canEdit($record);
+                }),
+            'detach' => DetachAction::make()
+                ->iconButton()
+                ->tooltip(trans('user::user.actions.detach.tooltip'))
+                ->visible(static function (?Model $record) use ($me): bool {
+                    if ($record === null) {
+                        return false;
+                    }
+
+                    return $me->canDetach($record);
+                }),
+        ];
     }
 }
