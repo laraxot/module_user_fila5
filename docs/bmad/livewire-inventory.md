@@ -229,6 +229,32 @@ stesso file provider.
 4. Login HTTP orfano + `LoginWidget` = superficie auth doppia.
 5. Costo basso ora (hook FQCN); sale a ogni Blade/test che cita l’alias.
 
+## Regressione 2026-10-07: il chrome è tornato agli alias
+
+Il punto 1 si è avverato. Il merge `9e9cc9a5b` (07/10 11:19) ha unito una linea di storia
+vecchia (`e17ad6342`, radice "first" del 28/09) e ne ha preso `AdminPanelProvider.php`:
+di nuovo `@livewire('profile.super-admin')` e `@livewire('team.change')`, con i file HTTP
+ritirati ricomparsi in `app/Http/Livewire/`. Risultato in locale l'08/10:
+`/admin` → *No hint path defined for [filament-jet]* da `Profile\SuperAdmin::render()`.
+
+Come si riconosce la versione buona: non la più recente, ma quella conforme a questo
+documento (42 righe, tre hook FQCN, zero alias). Controllando la storia commit per commit
+con quel criterio, l'ultima conforme è `45c62e86c` (07/10 06:42); dal merge in poi nessuna
+lo è. Il provider è stato ripristinato verbatim da `45c62e86c` l'08/10.
+
+Lo stesso merge ha tolto `HasTeamsContract` da `BaseUser`, che coincideva byte per byte con
+la linea vecchia: `TeamChangeWidget::mount()` lanciava per ogni utente autenticato, quindi
+il chrome si rompeva dopo il login invece che prima. Ripristinato verbatim da `45c62e86c`
+l'08/10: le altre differenze erano solo stile yoda e due `use`. Verificato:
+`BaseUserTeamContractTest` verde, i tre widget chrome renderizzano da autenticato.
+
+Residui dello stesso merge, non ancora ripristinati: `TeamChangeWidget::switchTeam()` ha
+perso il parametro `int|string`, `lang/it/team_change_widget.php` ha perso tre chiavi, i file
+HTTP ritirati (`Profile\SuperAdmin`, `Team\Change`, `Socialite\Buttons`) sono ricomparsi.
+
+Il fix vive solo nel working tree locale finché non arriva su `laraxot/module_user_fila5`:
+un nuovo pull può ricancellarlo.
+
 ## Successo piattaforma
 
 - [x] Zero alias `@livewire('…')` nel chrome User (`AdminPanelProvider` = FQCN, verificato 2026-09-21: rr. 25-38)
