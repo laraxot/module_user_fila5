@@ -14,8 +14,7 @@ describe('CreateUserAction', function (): void {
     });
 
     test('action has execute method', function (): void {
-        $action = app(CreateUserAction::class);
-    });
+        app(CreateUserAction::class);    });
 
     test('execute method accepts array parameter', function (): void {
         $action = app(CreateUserAction::class);

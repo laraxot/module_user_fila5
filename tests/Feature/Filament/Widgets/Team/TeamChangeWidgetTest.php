@@ -93,8 +93,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         /** @var TestCase $this */
         NotificationFacade::fake();
         $owner = teamMgmtCreateUser();
-        $teamA = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);
-        $teamB = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Beta '.uniqid()]);
+        teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);        $teamB = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Beta '.uniqid()]);
         actingAs($owner);
 
         Livewire::test(TeamChangeWidget::class)

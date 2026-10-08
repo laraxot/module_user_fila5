@@ -23,14 +23,11 @@ describe('EditUserWidget', function (): void {
     });
 
     test('edit user widget has type property', function (): void {
-        $widget = new EditUserWidget();
-    });
+        new EditUserWidget();    });
 
     test('edit user widget has resource property', function (): void {
-        $widget = new EditUserWidget();
-    });
+        new EditUserWidget();    });
 
     test('edit user widget has model property', function (): void {
-        $widget = new EditUserWidget();
-    });
+        new EditUserWidget();    });
 });

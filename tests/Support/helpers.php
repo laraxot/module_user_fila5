@@ -425,6 +425,7 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
 {
+    unset($attributes);
     $secret = (string) $google2fa->generateSecretKey();
     $appName = config('app.name');
     $qrCode = $google2fa->getQRCodeUrl(is_string($appName) ? $appName : '', $user->email, $secret);

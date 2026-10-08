@@ -50,6 +50,5 @@ final class DeleteAccountWidget extends XotBaseWidget
             return;
         }
 
-        $result = app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);
-    }
+        app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);    }
 }

@@ -99,11 +99,6 @@ class UserServiceProvider extends XotBaseServiceProvider
 
     public function registerMailsNotification(): void
     {
-        $app_name = config('app.name');
-        if (! is_string($app_name)) {
-            $app_name = '';
-        }
-
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
              * return (new MailMessage)

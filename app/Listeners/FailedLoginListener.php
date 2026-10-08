@@ -35,8 +35,7 @@ class FailedLoginListener
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
-            $log = $event
-                ->user
+            $event                ->user
                 ->authentications()
                 ->create([
                     'ip_address' => $ip,

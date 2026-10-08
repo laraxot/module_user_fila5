@@ -14,8 +14,7 @@ describe('UpdateUserAction', function (): void {
     });
 
     test('action has execute method', function (): void {
-        $action = app(UpdateUserAction::class);
-    });
+        app(UpdateUserAction::class);    });
 
     test('execute method accepts user and data parameters', function (): void {
         $action = app(UpdateUserAction::class);

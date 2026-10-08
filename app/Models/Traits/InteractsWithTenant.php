@@ -30,10 +30,8 @@ trait InteractsWithTenant
      */
     public function tenant(): BelongsTo
     {
-        $tenant = $this->getTenant();
-        if (null === $tenant) {
+        if (null === $this->getTenant()) {
             $this->loadTenantFromSession();
-            $tenant = $this->getTenant();
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);

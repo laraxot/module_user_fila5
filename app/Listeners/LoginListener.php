@@ -56,8 +56,7 @@ class LoginListener
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
-            $log = $user->authentications()->create([
-                'ip_address' => $ip,
+            $user->authentications()->create([                'ip_address' => $ip,
                 'user_agent' => $userAgent,
                 'login_at' => now(),
                 'login_successful' => true,

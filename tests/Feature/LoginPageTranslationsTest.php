@@ -13,6 +13,9 @@ test('le chiavi delle pagine auth esistono in tutte le lingue', function (string
     [$file, $path] = explode('.', str_replace('user::', '', $key), 2);
 
     $lines = require dirname(__DIR__, 2).'/lang/'.$locale.'/'.$file.'.php';
+    if (! is_array($lines)) {
+        throw new RuntimeException("Invalid translation file: {$file}.php");
+    }
 
     expect(Arr::has($lines, $path))->toBeTrue("manca {$key} in {$locale}");
 })->with([

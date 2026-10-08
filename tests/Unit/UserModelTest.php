@@ -111,8 +111,7 @@ describe('User Model', function (): void {
     });
 
     test('hashes password when set', function (): void {
-        $user = stubUser(['password' => 'plain-password']);
-    });
+        stubUser(['password' => 'plain-password']);    });
 
     test('reflects verified email state when timestamp is set', function (): void {
         $user = stubUser(['email_verified_at' => null]);

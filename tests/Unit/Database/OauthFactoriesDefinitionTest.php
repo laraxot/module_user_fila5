@@ -11,8 +11,4 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 it('oauth factories expose the expected definition keys', function (): void {
-    $clientDefinition = (new OauthClientFactory())->definition();
-    $accessTokenDefinition = (new OauthAccessTokenFactory())->definition();
-    $authCodeDefinition = (new OauthAuthCodeFactory())->definition();
-    $refreshTokenDefinition = (new OauthRefreshTokenFactory())->definition();
-});
+    (new OauthClientFactory())->definition();    (new OauthAccessTokenFactory())->definition();    (new OauthAuthCodeFactory())->definition();    (new OauthRefreshTokenFactory())->definition();});

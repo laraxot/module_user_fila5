@@ -15,8 +15,7 @@ uses(TestCase::class);
 describe('User Migration Syntax', function (): void {
     test('user migrations do not contain merge conflict markers', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
-            $contents = file_get_contents($migrationFile);
-        }
+            file_get_contents($migrationFile);        }
     });
 
     test('user migrations have valid php syntax', function (): void {

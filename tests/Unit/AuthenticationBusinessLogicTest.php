@@ -245,7 +245,6 @@ describe('Authentication Business Logic', function (): void {
             $personalTeam = [
                 'name' => 'Mario Rossi (Personal)',
                 'personal_team' => true,
-                'user_id' => 1001,
             ];
 
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
@@ -442,9 +441,7 @@ describe('Authentication Business Logic', function (): void {
             $isSuspicious = authBizSuspiciousLogin();
             $attempt = [
                 'ip_address' => '192.168.1.100',
-                'user_agent' => 'Mozilla/5.0 Chrome',
                 'country' => 'Italy',
-                'is_suspicious' => $isSuspicious,
             ];
 
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);

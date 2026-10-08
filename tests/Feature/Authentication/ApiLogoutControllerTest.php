@@ -55,8 +55,6 @@ describe('Api Logout Controller', function (): void {
 
         ensurePersonalAccessClient();
 
-        $personalAccessToken = null;
-        $personalAccessToken = null;
         try {
             $personalAccessToken = $user->createToken('Api Logout Test');
         } catch (\Exception $exception) {

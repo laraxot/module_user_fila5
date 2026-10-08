@@ -203,16 +203,13 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has users relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-    });
+        TenantFactory::new()->createOne();    });
 
     test('tenant has members relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-    });
+        TenantFactory::new()->createOne();    });
 
     test('tenant has media relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-    });
+        TenantFactory::new()->createOne();    });
 
     test('tenant has factory', function (): void {
         $tenant = TenantFactory::new()->createOne();

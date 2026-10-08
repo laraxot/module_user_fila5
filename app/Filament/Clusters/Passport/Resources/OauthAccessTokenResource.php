@@ -142,10 +142,9 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->requiresConfirmation()
                     ->action(function (Collection $records): void {
                         $users = $records->pluck('user_id')->unique();
-                        $count = 0;
                         foreach ($users as $userId) {
                             if (is_string($userId) || is_int($userId)) {
-                                $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
+                                app(RevokeAllUserTokensAction::class)->execute((string) $userId);
                             }
                         }
                         Notification::make()
@@ -288,10 +287,9 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (Collection $records): void {
                     $users = $records->pluck('user_id')->unique();
-                    $count = 0;
                     foreach ($users as $userId) {
                         if (is_string($userId) || is_int($userId)) {
-                            $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
+                            app(RevokeAllUserTokensAction::class)->execute((string) $userId);
                         }
                     }
                     Notification::make()

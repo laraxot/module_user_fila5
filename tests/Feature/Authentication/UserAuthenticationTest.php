@@ -209,8 +209,7 @@ describe('User Email Verification', function () {
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
         $adminRole = RoleFactory::new()->createOne(['name' => 'admin']);
-        $editorRole = RoleFactory::new()->createOne(['name' => 'editor']);
-
+        RoleFactory::new()->createOne(['name' => 'editor']);
         TestCase::requireUser()->assignRole($adminRole);
 
         expect(TestCase::requireUser()->hasRole('admin'))->toBe(true);
@@ -220,8 +219,7 @@ describe('User Authorization', function () {
 
     it('can assign and check permissions', function () {
         $editPermission = PermissionFactory::new()->createOne(['name' => 'edit posts']);
-        $deletePermission = PermissionFactory::new()->createOne(['name' => 'delete posts']);
-
+        PermissionFactory::new()->createOne(['name' => 'delete posts']);
         TestCase::requireUser()->givePermissionTo($editPermission);
 
         expect(TestCase::requireUser()->hasPermissionTo('edit posts'))->toBe(true);
@@ -346,8 +344,7 @@ describe('User Two Factor Authentication', function () {
         \assert($user instanceof User);
 
         // First step: password authentication
-        $result = Auth::attempt([
-            'email' => $user->email,
+        Auth::attempt([            'email' => $user->email,
             'password' => 'password123',
         ]);
 

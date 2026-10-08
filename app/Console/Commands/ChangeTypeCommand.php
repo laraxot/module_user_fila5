@@ -112,7 +112,6 @@ class ChangeTypeCommand extends Command
         $user->save();
 
         $label = $newTypeEnum->getLabel();
-        $labelString = '';
         if (\is_string($label)) {
             $labelString = $label;
         } elseif ($label instanceof Htmlable) {

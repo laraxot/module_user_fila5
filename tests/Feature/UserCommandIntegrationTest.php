@@ -62,8 +62,7 @@ describe('User Command Integration', function (): void {
 
     test('can handle command input output operations', function (): void {
         /** @var TestCase $this */
-        $command = TestCase::requireCommand();
-    });
+        TestCase::requireCommand();    });
 
     test('validates command signature and options', function (): void {
         /** @var TestCase $this */
@@ -141,8 +140,7 @@ describe('User Command Integration', function (): void {
 
     test('can handle command lifecycle', function (): void {
         /** @var TestCase $this */
-        $command = TestCase::requireCommand();
-    });
+        TestCase::requireCommand();    });
 
     test('validates dependency injection compatibility', function (): void {
         /** @var TestCase $this */

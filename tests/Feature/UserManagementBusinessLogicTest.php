@@ -146,8 +146,7 @@ describe('User Management Business Logic', function (): void {
     test('can check user has any role', function (): void {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
-        $role2 = RoleFactory::new()->createOne(['name' => 'nurse']);
-
+        RoleFactory::new()->createOne(['name' => 'nurse']);
         $user->assignRole($role1);
 
         Assert::assertTrue($user->hasAnyRole(['doctor', 'nurse']));

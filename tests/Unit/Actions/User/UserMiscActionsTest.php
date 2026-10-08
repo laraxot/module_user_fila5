@@ -24,14 +24,11 @@ describe('User Misc Actions Coverage', function (): void {
     });
 
     test('GetCurrentDeviceAction has execute method', function (): void {
-        $action = app(GetCurrentDeviceAction::class);
-    });
+        app(GetCurrentDeviceAction::class);    });
 
     test('LogRegistrationAction has execute method', function (): void {
-        $action = app(LogRegistrationAction::class);
-    });
+        app(LogRegistrationAction::class);    });
 
     test('SendOtpByUserAction has execute method', function (): void {
-        $action = app(SendOtpByUserAction::class);
-    });
+        app(SendOtpByUserAction::class);    });
 });
