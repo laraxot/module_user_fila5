@@ -205,4 +205,16 @@ return [
         'help_password' => 'Password must be at least 12 characters with uppercase, lowercase, number, and symbol.',
         'help_support' => 'For assistance, contact the relevant office.',
     ],
+    'login_page' => [
+        'meta_title' => 'Sign in | FixCity',
+        'kicker' => 'Personal area',
+        'title' => 'Sign in to your account',
+        'description' => 'Sign in to report an issue, track your requests, and receive updates.',
+        'support_title' => 'Need help?',
+        'support_item_email' => 'Use the email address you used to create your account.',
+        'support_item_password' => 'Forgot your password? You can reset it in a few seconds.',
+        'support_item_help' => 'If the problem continues, contact your municipality support office.',
+        'register_cta_text' => 'Do not have an account yet?',
+        'register_cta_link' => 'Create your account',
+    ],
 ];

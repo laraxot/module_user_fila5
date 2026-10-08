@@ -380,4 +380,5 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'already_registered' => 'Haben Sie bereits ein Konto?',
 ];

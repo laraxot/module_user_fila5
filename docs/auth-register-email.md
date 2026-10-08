@@ -55,3 +55,10 @@ cd laravel && php artisan config:clear && php artisan view:clear
 Il collaudo end-to-end richiede un destinatario di test autorizzato e un
 database disponibile; nessuna mail reale viene inviata automaticamente durante
 la verifica del codice.
+
+## Verifica runtime 2026-10-07 19:32
+
+- `MAIL_MAILER=sendmail`, Postfix in ascolto su `127.0.0.1:25`, `/usr/sbin/sendmail` presente.
+- Invio reale da Laravel (`php artisan tinker`, `Mail::raw(...)`) verso `zorin@localhost`: messaggio consegnato in `/var/mail/zorin` con l'oggetto atteso, `postqueue -p` vuota.
+- NON verificato: la consegna verso caselle esterne. Un server in LAN senza DNS pubblico, PTR e SPF viene spesso rifiutato o messo in spam, e molti provider bloccano la porta 25 in uscita. Per la produzione serve un relay SMTP autenticato (solo variabili `MAIL_*` nel `.env`, nessuna modifica al codice).
+- Nessuna password o credenziale va scritta in questo file o nel repository.

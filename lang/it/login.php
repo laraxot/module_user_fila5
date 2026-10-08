@@ -3,6 +3,15 @@
 declare(strict_types=1);
 
 return [
+    'logout_in_progress' => 'Disconnessione in corso…',
+    'email_verified' => 'Indirizzo email verificato. Grazie!',
+    'password_reset_page' => [
+        'title' => 'Reimposta la password',
+        'intro' => 'Inserisci l\'email del tuo account: ti invieremo un link per scegliere una nuova password.',
+        'return_to_login' => 'Torna all\'accesso',
+        'email_label' => 'Indirizzo email',
+        'submit' => 'Invia il link di reimpostazione',
+    ],
     'fields' => [
         'email' => [
             'label' => 'Email',
