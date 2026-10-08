@@ -7,6 +7,12 @@ links: {github_issue: #XXX, discussion: #XXX}
 
 ## Decisions
 
+### 2026-10-08: Eliminata la migrazione `2026_10_05_174817_create_permission_tables.php`
+- **Choose**: Eliminare la migrazione aggiunta il 06/10 (`87b58a20d`).
+- **Over**: Segnarla come eseguita solo in locale, o riscriverla con `XotBaseMigration`.
+- **Because**: `php artisan migrate` (e quindi `composer go`) si fermava su `Table 'permissions' already exists`: era l'unica migrazione in attesa e `permissions` era gia' creata dalle migrazioni precedenti del modulo (`2023_01_22_000007`, `2026_09_01_150112`, ...). Confronto con `vendor/spatie/laravel-permission/database/migrations/create_permission_tables.php.stub` (Spatie 8.3.0): schema identico (tabelle, colonne, indici, chiavi esterne, pulizia cache); cambiavano solo la connessione `user` e la lettura tipizzata della config. Violava anche la regola "One Model = One Migration". Nessun file la citava per nome.
+- **Verifica**: `php artisan migrate:status` senza migrazioni in attesa; `php artisan migrate --pretend` → "Nothing to migrate".
+
 ### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `45c62e86c`
 - **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con `45c62e86c` (07/10 06:42), l'ultimo commit prima della fusione con la copia vecchia (`e17ad6342` + merge `9e9cc9a5b`) e del re-import `35df2c6a7`.
 - **Over**: Fermarsi ai 37 file della voce sotto, scelti con un confronto basato sul monorepo che non vedeva le modifiche fatte nel sotto-repo dopo il 06/10.
