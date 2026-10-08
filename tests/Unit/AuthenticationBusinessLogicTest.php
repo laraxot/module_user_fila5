@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -209,16 +208,16 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertNotSame('', $user['email']);
 
             $profileScore = 0;
-            if ('' !== $user['name']) {
+            if ($user['name'] !== '') {
                 $profileScore += 25;
             }
-            if ('' !== $user['email']) {
+            if ($user['email'] !== '') {
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
-            if ('' !== $user['profile_photo_path']) {
+            if ($user['profile_photo_path'] !== '') {
                 $profileScore += 25;
             }
 
@@ -238,6 +237,7 @@ describe('Authentication Business Logic', function (): void {
 
         it('distinguishes personal vs organizational teams', function (): void {
             $team = authBizTeamData();
+            $user = authBizUserData();
 
             Assert::assertFalse((bool) $team['personal_team']);
             Assert::assertStringNotContainsString('Personal', $team['name']);
@@ -245,10 +245,12 @@ describe('Authentication Business Logic', function (): void {
             $personalTeam = [
                 'name' => 'Mario Rossi (Personal)',
                 'personal_team' => true,
+                'user_id' => 1001,
             ];
 
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
             Assert::assertStringContainsString('Personal', $personalTeam['name']);
+            Assert::assertSame($user['id'], $personalTeam['user_id']);
         });
 
         it('validates team settings and preferences', function (): void {
@@ -394,7 +396,7 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
-            if ('mobile' === $device['device_type']) {
+            if ($device['device_type'] === 'mobile') {
                 $pushToken = $device['push_token'];
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }
@@ -441,12 +443,15 @@ describe('Authentication Business Logic', function (): void {
             $isSuspicious = authBizSuspiciousLogin();
             $attempt = [
                 'ip_address' => '192.168.1.100',
+                'user_agent' => 'Mozilla/5.0 Chrome',
                 'country' => 'Italy',
+                'is_suspicious' => $isSuspicious,
             ];
 
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);
+            Assert::assertStringContainsString('Mozilla', $attempt['user_agent']);
             Assert::assertSame('Italy', $attempt['country']);
-            Assert::assertFalse($isSuspicious);
+            Assert::assertFalse($attempt['is_suspicious']);
         });
     });
 });

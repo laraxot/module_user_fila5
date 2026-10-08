@@ -146,7 +146,9 @@ describe('User Management Business Logic', function (): void {
     test('can check user has any role', function (): void {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
+        // 'nurse' esiste ma NON e' assegnato: serve a provare che hasAnyRole guarda le assegnazioni, non l'esistenza del ruolo
         RoleFactory::new()->createOne(['name' => 'nurse']);
+
         $user->assignRole($role1);
 
         Assert::assertTrue($user->hasAnyRole(['doctor', 'nurse']));

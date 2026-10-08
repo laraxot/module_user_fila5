@@ -91,9 +91,9 @@ return [
         ],
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'label' => 'Authentication',
+        'plural_label' => 'Authentications',
+        'group' => 'General',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

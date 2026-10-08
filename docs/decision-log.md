@@ -7,6 +7,22 @@ links: {github_issue: #XXX, discussion: #XXX}
 
 ## Decisions
 
+### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `45c62e86c`
+- **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con `45c62e86c` (07/10 06:42), l'ultimo commit prima della fusione con la copia vecchia (`e17ad6342` + merge `9e9cc9a5b`) e del re-import `35df2c6a7`.
+- **Over**: Fermarsi ai 37 file della voce sotto, scelti con un confronto basato sul monorepo che non vedeva le modifiche fatte nel sotto-repo dopo il 06/10.
+- **Because**: Classificazione dei file diversi da `45c62e86c`, con verifica preventiva: ogni contenuto sovrascritto o eliminato esisteva gia' in un commit precedente al 07/10 06:43 (1756 su 1756), quindi era copia vecchia, non lavoro nuovo.
+  - 1301 toccati solo dagli eventi del 07/10: contenuto riportato a `45c62e86c`.
+  - 455 aggiunti solo dalle copie vecchie: eliminati. Soprattutto `*.backup_20260216_*`, `*.bak`, `*.old`; le cartelle `lang/lang`, `resources/lang`, `resources/dist`, `database/Database`, `app/Application`, `app/Policies`; `Http/Controllers/Auth/LogoutController.php`, la migrazione `2026_09_01_150108_create_profiles_table.php`, `tests/Fixtures/UserPhpstanTraitProbes.php`.
+  - 30 toccati solo da `9eae4186a` (08/10): contenuto da `45c62e86c`. Era una rimozione meccanica di variabili "inutilizzate" fatta sulla copia vecchia: univa istruzioni sulla stessa riga e nei test toglieva le asserzioni.
+  - 20 con lavoro vero di Marco (`bdc19abfb` i18n auth en/de/es e `verification_email`, `af240a814` traduzioni it del login, `ddcc55669` marcatore di conflitto in un README): merge a tre vie. `lang/it/login.php` in conflitto: unione per chiave, valori di Marco prevalenti, aggiunte le 26 chiavi presenti solo in `45c62e86c` (gia' assenti nella copia vecchia su cui Marco lavorava, non tolte da lui).
+  - 7 file nuovi di Marco e i 21 dei ripristini di stamattina (gia' uguali a `45c62e86c` nel contenuto): invariati.
+- **Correzione aggiunta**: `FetchUserApiTokenCommand` usa `instanceof UserContract` al posto di `=== null`. `query()->first()` fa perdere a PHPStan l'intersezione `Model&UserContract`, e `createToken()` e' su `UserContract`; la versione HEAD lo nascondeva con un `@var` inline.
+- **Verifica**: `php -l` pulito, nessun marcatore di conflitto; PHPStan su `Modules` senza errori in User (prima 17). Pest prima/dopo, confronto JUnit test per test (Feature in blocco, Unit a blocchi da 20 per il limite di memoria 512M): nessun peggioramento dovuto al codice. Cinque test passano a fallire, tutti test di `45c62e86c` gia' rotti sulla linea buona o d'ambiente:
+  - `LoginWidgetTest` (Feature e Unit, 3 test): si aspettano che `getFormSchema()` restituisca lo schema di `formClass()`, ma `XotBaseSchemaWidget::getFormSchema()` restituisce `[]` in ogni versione di Xot, anche nei commit irraggiungibili. Il form reale passa da `form()` e `UserForm::getLoginFormSchema()`.
+  - `DeleteUserActionTest`: verifica `Modules\User\Contracts\UserContract`, ma `BaseUser` implementa `Modules\Xot\Contracts\UserContract` anche in `45c62e86c`.
+  - `UserPolicyBehaviorTest` (3 test nuovi): `mockeryExpect()` e' in `tests/Helpers.php`, non caricato lanciando dalla root.
+- **Aperto**: un blocco di 20 test Unit va in crash per memoria in entrambi gli stati; i permessi file registrati nel commit (`100755` delle copie vecchie) non cambiano dal working tree con `core.fileMode=false`.
+
 ### 2026-10-08: Ripristino dei 37 file regrediti dal re-import del 07/10
 - **Choose**: Ripristinare verbatim da `45c62e86c` i 37 file User che, rispetto allo stato del monorepo al 06/10 (`51570adf3`), avevano perso almeno 20 righe di contenuto reale.
 - **Over**: Ripristino in blocco dell'intero modulo, o riscrittura a mano delle parti perse.

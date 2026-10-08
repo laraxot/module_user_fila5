@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
@@ -24,11 +23,20 @@ describe('User Misc Actions Coverage', function (): void {
     });
 
     test('GetCurrentDeviceAction has execute method', function (): void {
-        app(GetCurrentDeviceAction::class);    });
+        $action = app(GetCurrentDeviceAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
+    });
 
     test('LogRegistrationAction has execute method', function (): void {
-        app(LogRegistrationAction::class);    });
+        $action = app(LogRegistrationAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
+    });
 
     test('SendOtpByUserAction has execute method', function (): void {
-        app(SendOtpByUserAction::class);    });
+        $action = app(SendOtpByUserAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
+    });
 });

@@ -10,13 +10,14 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use Symfony\Component\Console\Input\InputDefinition;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
-    TestCase::$command = new ChangeTypeCommand();
+    TestCase::$command = new ChangeTypeCommand;
 });
 
 describe('User Command Integration', function (): void {
@@ -62,7 +63,14 @@ describe('User Command Integration', function (): void {
 
     test('can handle command input output operations', function (): void {
         /** @var TestCase $this */
-        TestCase::requireCommand();    });
+        $command = TestCase::requireCommand();
+
+        $reflection = new \ReflectionClass($command);
+
+        Assert::assertInstanceOf(InputDefinition::class, $command->getDefinition());
+        Assert::assertTrue($reflection->hasMethod('info'));
+        Assert::assertTrue($reflection->hasMethod('error'));
+    });
 
     test('validates command signature and options', function (): void {
         /** @var TestCase $this */
@@ -104,7 +112,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can work with type checking utilities', function (): void {
-        $testObject = new \stdClass();
+        $testObject = new \stdClass;
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -140,7 +148,13 @@ describe('User Command Integration', function (): void {
 
     test('can handle command lifecycle', function (): void {
         /** @var TestCase $this */
-        TestCase::requireCommand();    });
+        $command = TestCase::requireCommand();
+
+        $reflection = new \ReflectionClass($command);
+
+        Assert::assertTrue($reflection->hasMethod('run'));
+        Assert::assertTrue($reflection->hasMethod('handle'));
+    });
 
     test('validates dependency injection compatibility', function (): void {
         /** @var TestCase $this */
@@ -182,7 +196,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle object property access safely', function (): void {
-        $testObject = new \stdClass();
+        $testObject = new \stdClass;
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

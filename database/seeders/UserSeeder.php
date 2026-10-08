@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
-        if ('sqlite' !== DB::getDriverName()) {
+        if (DB::getDriverName() !== 'sqlite') {
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
-            if ('sqlite' !== DB::getDriverName()) {
+            if (DB::getDriverName() !== 'sqlite') {
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -169,8 +169,15 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
-        $this->createTeam('Amministratori');        $this->createTeam('Sviluppatori');        $this->createTeam('Supporto Clienti');        $this->createTeam('Marketing');        $this->createTeam('Team Generale');
-        $this->command->info('   ✓ Creati 5 team di sistema');
+        $teams = array_map($this->createTeam(...), [
+            'Amministratori',
+            'Sviluppatori',
+            'Supporto Clienti',
+            'Marketing',
+            'Team Generale',
+        ]);
+
+        $this->command->info('   ✓ Creati '.count($teams).' team di sistema');
     }
 
     private function createTeam(string $name): Team

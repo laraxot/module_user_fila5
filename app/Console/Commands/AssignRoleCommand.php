@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-
-use function Laravel\Prompts\multiselect;
-use function Laravel\Prompts\text;
-
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
 
 class AssignRoleCommand extends Command
 {
@@ -35,7 +34,7 @@ class AssignRoleCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
-        XotData::make()->getUserClass();        /** @var UserContract */
+        /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         /**
          * @var array<string, string>

@@ -27,8 +27,7 @@ class TeamChangeWidget extends XotBaseWidget
 {
     protected static bool $isDiscovered = false;
 
-    /** @var view-string */
-    protected string $view;
+    protected string $view = 'user::filament.widgets.team.change';
 
     /** @var list<array{id: int|string, name: string}> */
     public array $teams = [];
@@ -41,7 +40,7 @@ class TeamChangeWidget extends XotBaseWidget
         Assert::notNull($authUser, '['.__LINE__.']['.class_basename($this).']');
 
         if (! $authUser instanceof UserContract || ! $authUser instanceof HasTeamsContract) {
-            throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
+            throw new InvalidArgumentException(__('user::team_change_widget.mount.invalid_user'));
         }
 
         $this->user = $authUser;
@@ -99,12 +98,13 @@ class TeamChangeWidget extends XotBaseWidget
     public function render(): View
     {
         /** @var view-string $viewName */
-        $viewName = $this->teams === []
-            ? 'ui::livewire.empty'
-            : 'user::filament.widgets.team.change';
+        $viewName = 'user::filament.widgets.team.change';
+
+        if ($this->teams === []) {
+            $viewName = 'ui::livewire.empty';
+        }
 
         return view($viewName, [
-            'view' => $viewName,
             'teams' => $this->teams,
         ]);
     }

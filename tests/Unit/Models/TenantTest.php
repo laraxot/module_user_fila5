@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
@@ -203,13 +205,22 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has users relationship', function (): void {
-        TenantFactory::new()->createOne();    });
+        $tenant = TenantFactory::new()->createOne();
+
+        Assert::assertInstanceOf(BelongsToMany::class, $tenant->users());
+    });
 
     test('tenant has members relationship', function (): void {
-        TenantFactory::new()->createOne();    });
+        $tenant = TenantFactory::new()->createOne();
+
+        Assert::assertInstanceOf(BelongsToMany::class, $tenant->members());
+    });
 
     test('tenant has media relationship', function (): void {
-        TenantFactory::new()->createOne();    });
+        $tenant = TenantFactory::new()->createOne();
+
+        Assert::assertInstanceOf(MorphMany::class, $tenant->media());
+    });
 
     test('tenant has factory', function (): void {
         $tenant = TenantFactory::new()->createOne();

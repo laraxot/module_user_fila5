@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Listeners/FailedLoginListener.php
  */
@@ -35,7 +34,8 @@ class FailedLoginListener
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
-            $event                ->user
+            $event
+                ->user
                 ->authentications()
                 ->create([
                     'ip_address' => $ip,
@@ -45,6 +45,7 @@ class FailedLoginListener
                     'location' => $location,
                 ]);
 
+            // Notifiche disabilitate: per riattivarle catturare il risultato di create() in $log e passarlo a FailedLogin.
             // if (config('authentication-log.notifications.failed-login.enabled')) {
             //    $failedLogin = config('authentication-log.notifications.failed-login.template') ?? FailedLogin::class;
             //    $event->user->notify(new $failedLogin($log));

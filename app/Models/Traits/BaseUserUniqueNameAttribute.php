@@ -10,11 +10,11 @@ trait BaseUserUniqueNameAttribute
 {
     public function getNameAttribute(?string $value): string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
-        if (null === $this->getKey()) {
+        if ($this->getKey() === null) {
             return $this->email ?? 'User';
         }
 
@@ -47,7 +47,7 @@ trait BaseUserUniqueNameAttribute
             return true;
         }
 
-        return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+        return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
     }
 
     protected function resolveUniqueUserName(string $name): string
@@ -55,8 +55,8 @@ trait BaseUserUniqueNameAttribute
         $i = 1;
         $value = $name.'-'.$i;
 
-        while (null !== static::firstWhere(['name' => $value])) {
-            ++$i;
+        while (static::firstWhere(['name' => $value]) !== null) {
+            $i++;
             $value = $name.'-'.$i;
         }
 

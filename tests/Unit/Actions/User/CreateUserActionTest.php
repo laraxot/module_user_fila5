@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -14,7 +13,10 @@ describe('CreateUserAction', function (): void {
     });
 
     test('action has execute method', function (): void {
-        app(CreateUserAction::class);    });
+        $action = app(CreateUserAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
+    });
 
     test('execute method accepts array parameter', function (): void {
         $action = app(CreateUserAction::class);

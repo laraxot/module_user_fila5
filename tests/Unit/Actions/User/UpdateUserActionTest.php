@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Actions\User\UpdateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -14,7 +13,10 @@ describe('UpdateUserAction', function (): void {
     });
 
     test('action has execute method', function (): void {
-        app(UpdateUserAction::class);    });
+        $action = app(UpdateUserAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
+    });
 
     test('execute method accepts user and data parameters', function (): void {
         $action = app(UpdateUserAction::class);

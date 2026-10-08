@@ -56,12 +56,10 @@ describe('Api Logout Controller', function (): void {
         ensurePersonalAccessClient();
 
         try {
-            $personalAccessToken = $user->createToken('Api Logout Test');
+            $tokenResult = $user->createToken('Api Logout Test');
         } catch (\Exception $exception) {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
-
-        $tokenResult = $personalAccessToken;
 
         $accessTokenModel = $user->tokens()->latest('id')->first();
         Assert::assertNotNull($accessTokenModel);

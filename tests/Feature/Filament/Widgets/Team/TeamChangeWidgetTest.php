@@ -93,7 +93,8 @@ describe('TeamChangeWidget switchTeam', function (): void {
         /** @var TestCase $this */
         NotificationFacade::fake();
         $owner = teamMgmtCreateUser();
-        teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);        $teamB = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Beta '.uniqid()]);
+        $teamA = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);
+        $teamB = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Beta '.uniqid()]);
         actingAs($owner);
 
         Livewire::test(TeamChangeWidget::class)
@@ -103,6 +104,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $fresh = $owner->fresh();
         Assert::assertInstanceOf(User::class, $fresh);
         Assert::assertSame($teamB->id, $fresh->current_team_id);
+        Assert::assertNotSame($teamA->id, $fresh->current_team_id);
     });
 
     test('switchTeam returns a real 303 redirect response, not just a Livewire effect', function (): void {

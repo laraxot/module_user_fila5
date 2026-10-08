@@ -8,7 +8,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Contracts\UserContract;
-use Modules\User\Models\User;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
@@ -30,11 +29,11 @@ final class DeleteAccountWidget extends XotBaseWidget
 
     public function destroy(): void
     {
-        /** @var User|null $user */
+        /** @var UserContract|null $user */
         $user = Auth::user();
         if (! $user) {
             $this->dispatch('toast', [
-                'message' => 'Utente non trovato',
+                'message' => __('user::messages.user_not_found'),
                 'type' => 'error',
             ]);
 
@@ -43,12 +42,13 @@ final class DeleteAccountWidget extends XotBaseWidget
 
         if (! $user instanceof UserContract) {
             $this->dispatch('toast', [
-                'message' => 'Utente non valido',
+                'message' => __('user::messages.user_invalid'),
                 'type' => 'error',
             ]);
 
             return;
         }
 
-        app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);    }
+        app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);
+    }
 }

@@ -65,9 +65,9 @@ return [
         'automated_decisions' => 'Tus datos no están sujetos a decisiones automatizadas sin intervención humana.',
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'label' => 'Autenticación',
+        'plural_label' => 'Autenticaciones',
+        'group' => 'General',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
