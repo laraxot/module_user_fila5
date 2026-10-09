@@ -7,7 +7,7 @@ namespace Modules\User\Filament\Resources\ProfileResource\Pages;
 use Modules\User\Filament\Resources\ProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
-class ListProfiles extends BaseListProfiles
+abstract class BaseListProfiles extends XotBaseListRecords
 {
     protected static string $resource = ProfileResource::class;
 }
