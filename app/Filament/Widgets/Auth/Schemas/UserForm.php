@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth\Schemas;
 
 use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Facades\Hash;
@@ -205,6 +206,7 @@ class UserForm extends XotBaseResourceForm
     public static function getResetPasswordFormSchema(): array
     {
         return [
+            'token' => Hidden::make('token'),
             'email' => TextInput::make('email')
                 ->email()
                 ->required()

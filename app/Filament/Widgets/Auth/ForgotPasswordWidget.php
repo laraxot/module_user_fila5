@@ -18,7 +18,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.forgot-password-widget';
+    protected string $view = 'pub_theme::filament.widgets.auth.forgot-password-widget';
 
     /**
      * @return class-string<UserForm>
