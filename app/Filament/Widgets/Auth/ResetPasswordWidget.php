@@ -24,8 +24,6 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'pub_theme::filament.widgets.auth.reset-password-widget';
-
     /**
      * @return class-string<UserForm>
      */

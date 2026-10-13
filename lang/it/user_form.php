@@ -64,6 +64,8 @@ return [
         'token' => [
             'description' => 'token',
             'helper_text' => 'token',
+            'label' => 'token',
+            'placeholder' => 'token',
         ],
     ],
     'actions' => [
