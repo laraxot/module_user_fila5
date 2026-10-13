@@ -182,10 +182,17 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection
     {
-        // Collection::wrap: `users` e' la relazione caricata (Collection) oppure un array di utenti.
-        return $this->membershipTeams
-            ->flatMap(static fn (TeamContract $team): array => Collection::wrap($team->users)->all())
-            ->unique('id');
+        /** @var list<Model&XotUserContract> $items */
+        $items = [];
+        foreach ($this->membershipTeams as $team) {
+            foreach ($team->users as $user) {
+                if ($user instanceof Model && $user instanceof XotUserContract) {
+                    $items[] = $user;
+                }
+            }
+        }
+
+        return new Collection($items)->unique('id');
     }
 
     /**

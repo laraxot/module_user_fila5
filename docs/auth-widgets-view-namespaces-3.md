@@ -159,6 +159,18 @@ Per ogni nuovo widget di autenticazione:
 - [ ] View minimalista (solo styling)
 - [ ] Logica centralizzata nel widget PHP
 
+## Aggiornamento del 2026-10-13: la vista non si dichiara
+
+Gli esempi qui sopra dichiarano `$view` a mano. La regola attuale e' `bashscripts/ai/wiki/rules/filament-template-as-dress.md`: un widget che estende `XotBaseWidget` non dichiara `$view`. La vista viene calcolata dal nome della classe, prima nel tema e poi nel modulo:
+
+| Widget | Tema | Modulo |
+|---|---|---|
+| `Auth\LoginWidget` | `pub_theme::filament.widgets.auth.login` | `user::filament.widgets.auth.login` |
+| `Auth\ForgotPasswordWidget` | `pub_theme::filament.widgets.auth.forgot-password` | `user::filament.widgets.auth.forgot-password` |
+| `Auth\ResetPasswordWidget` | `pub_theme::filament.widgets.auth.reset-password` | `user::filament.widgets.auth.reset-password` |
+
+Il principio di questa pagina resta valido: il tema puo' sovrascrivere la vista. Basta creare il file nel tema, senza toccare il PHP. Nel blade il form si mostra con `{{ $this->form }}`. Caso reale: [story del 2026-10-13](./stories/2026-10-13-auth-password-widgets-view-not-found.story.md).
+
 ## Collegamenti
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)

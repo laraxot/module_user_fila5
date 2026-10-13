@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 ?>
-@php
-    $form = $getForm();
-@endphp
-
 <div class="space-y-6">
     <div class="text-center">
         <h2 class="text-2xl font-bold tracking-tight">
@@ -17,7 +13,7 @@ declare(strict_types=1);
     </div>
 
     <form wire:submit="resetPassword" class="space-y-6">
-        {{ $form }}
+        {{ $this->form }}
 
         <div>
             <x-filament::button
