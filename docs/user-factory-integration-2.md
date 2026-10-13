@@ -24,8 +24,8 @@ related:
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../User/docs/traits-complete-guide-2.md)
-- [Authentication Framework](../User/docs/authentication.md)
+- [Traits Complete Guide](traits-complete-guide-2.md)
+- [Authentication Framework](authentication.md)
 
 ---
 

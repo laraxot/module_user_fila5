@@ -254,10 +254,10 @@ $membership = Membership::where('team_id', $team->id)
 
 ## Collegamenti
 
-- [Migration team_user](../../database/migrations/2023_01_01_000004_create_team_user_table.php)
-- [Membership Model](../../app/Models/Membership.php)
-- [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
-- [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+- [Migration team_user](../database/migrations/2023_01_01_000004_create_team_user_table.php)
+- [Membership Model](../app/Models/Membership.php)
+- [HasTeams Trait](../app/Models/Traits/HasTeams.php)
+- [TeamsRelationManager](../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
 
 ## Note Tecniche

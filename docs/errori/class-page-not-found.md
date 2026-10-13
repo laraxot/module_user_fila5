@@ -352,7 +352,7 @@ class MyPage extends XotBasePage
 - [Standalone vs Resource Pages](../../xot/docs/filament/standalone-vs-resource-pages.md)
 
 ### Clusters in Xot
-- [XotBaseCluster](../../Xot/app/Filament/Clusters/XotBaseCluster.php)
+- [XotBaseCluster](../../../Xot/app/Filament/Clusters/XotBaseCluster.php)
 - [Cluster Best Practices](../../xot/docs/filament/clusters.md)
 
 ---

@@ -10,5 +10,5 @@ Documentazione per two_factor nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../../README.md)
 

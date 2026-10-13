@@ -266,12 +266,12 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./readme.md)
 
 ### Root Progetto
-- [Code Quality](../../../docs/code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 - [User Module README](./readme.md)
 
 ### Root Progetto
-- [Code Quality](../../docs/code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation

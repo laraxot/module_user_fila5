@@ -10,5 +10,5 @@ Documentazione per terms_and_conditions nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../../README.md)
 

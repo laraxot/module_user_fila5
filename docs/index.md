@@ -968,8 +968,8 @@
 
 ## docs
 
-- [confidence-guidelines.md](./docs/confidence-guidelines.md)
-- [filament-version.md](./docs/filament-version.md)
+- [confidence-guidelines.md](./confidence-guidelines.md)
+- [filament-version.md](./filament-version.md)
 
 ## errori
 

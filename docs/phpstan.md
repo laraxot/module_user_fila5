@@ -26,22 +26,22 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 ## Problemi e Soluzioni
 
 ### Team e BaseTeam
-- [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#team-php-e-baseteam-php)
+- [Dettagli completi](phpstan-fixes-8.md#team-php-e-baseteam-php)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamInvitation
-- [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teaminvitation-php)
+- [Dettagli completi](phpstan-fixes-8.md#teaminvitation-php)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamUser e BasePivot
-- [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teamuser-php-e-basepivot-php)
+- [Dettagli completi](phpstan-fixes-8.md#teamuser-php-e-basepivot-php)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### BaseUser
-- [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#baseuser-php)
+- [Dettagli completi](phpstan-fixes-8.md#baseuser-php)
 - Stato: 🔄 In Corso
 - Problemi rimanenti:
   - Proprietà non definite

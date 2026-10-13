@@ -96,7 +96,7 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User --no-progres
 |------------------|-----|
 | PHPStan `method.notFound` su migrazione legacy `Database/Migrations/` | Rimuovi cartella PascalCase; canonico = `database/migrations/` |
 | `trait.unused` / generics su contract duplicato in `Application/` | Solo `app/Application/` |
-| Dependabot alert su push | [dependabot-discipline](../../../../../docs/wiki/how-to/dependabot-discipline.md) |
+| Dependabot alert su push | [dependabot-discipline](../../../../../../docs/wiki/how-to/dependabot-discipline.md) |
 
 ## Riferimenti
 

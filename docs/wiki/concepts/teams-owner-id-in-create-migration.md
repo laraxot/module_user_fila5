@@ -13,7 +13,7 @@ discussions:
 related:
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
-  - ../../../../../docs/wiki/concepts/xotbase-migration-religion.md
+  - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
 ---
 
 # Teams — `owner_id` nella create (non in `add_*`)

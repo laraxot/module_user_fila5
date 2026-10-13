@@ -207,6 +207,6 @@ public static function getTableColumns(): array
 
 ## Collegamenti
 
-- [XotBaseResource Source Code](../../../Xot/app/Filament/Resources/XotBaseResource.php)
+- [XotBaseResource Source Code](../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)

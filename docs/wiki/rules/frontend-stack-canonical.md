@@ -27,8 +27,8 @@ UI auth/profile FO e widget Filament: **Filament v5** + componenti tema Sixteen.
 ## SSoT
 
 - [Themes/Sixteen/docs/wiki/rules/frontend-stack-canonical.md](../../../../../Themes/Sixteen/docs/wiki/rules/frontend-stack-canonical.md)
-- [docs/wiki/rules/frontend-stack-canonical.md](../../../../../docs/wiki/rules/frontend-stack-canonical.md)
+- [docs/wiki/rules/frontend-stack-canonical.md](../../../../../../docs/wiki/rules/frontend-stack-canonical.md)
 
 ## Story
 
-[STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)
+[STORY-133](../../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)

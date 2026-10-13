@@ -59,6 +59,7 @@ return [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
             'error' => 'Credenziali non valide',
+            'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
         ],
         'register' => [
             'label' => 'Registrati',

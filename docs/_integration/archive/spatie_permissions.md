@@ -10,5 +10,5 @@ Documentazione per spatie_permissions nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../../README.md)
 

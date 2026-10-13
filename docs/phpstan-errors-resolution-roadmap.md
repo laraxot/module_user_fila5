@@ -163,7 +163,7 @@ public function clients();
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
-- [Passport Integration](../../user/docs/passport-integration.md)
+- [Passport Integration](passport-integration.md)
 - [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
 
 ---

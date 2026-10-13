@@ -59,7 +59,7 @@ Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` ut
 ## Collegamenti tra versioni di phpstan-fixes-8.md
 * [phpstan-fixes-8.md](../../../Xot/docs/phpstan/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../Xot/docs/phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../../../User/docs/phpstan-fixes-8.md)
+* [phpstan-fixes-8.md](phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../UI/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../Media/docs/phpstan-fixes-8.md)
 

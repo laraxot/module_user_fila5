@@ -606,7 +606,7 @@ trait HasTeams
 *Ultimo aggiornamento: gennaio 2025* 
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
 - [Modules/User/docs/traits.md](traits.md)  
-- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md)
+- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 ---
 
@@ -1857,8 +1857,8 @@ class User extends Authenticatable
 
 ## Collegamenti
 
-- [Modulo User](./README.md)
-- [Xot Traits](../../Xot/docs/)
+- [Modulo User](./readme.md)
+- [Xot Traits](../../../../Xot/docs)
 
 ---
 

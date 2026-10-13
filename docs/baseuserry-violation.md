@@ -452,7 +452,7 @@ test('hasRole works with guard parameter', function () {
 
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
-- [Code Quality](../../../../docs/code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 
 ## Conclusioni
 

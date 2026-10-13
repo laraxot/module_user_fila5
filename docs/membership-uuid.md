@@ -164,7 +164,7 @@ Quando si crea un modello pivot che usa UUID come PRIMARY KEY:
 
 ## Collegamenti
 
-- [Membership Model](../../app/Models/Membership.php)
-- [BasePivot Model](../../app/Models/BasePivot.php)
-- [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
-- [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
+- [Membership Model](../app/Models/Membership.php)
+- [BasePivot Model](../app/Models/BasePivot.php)
+- [TeamsRelationManager](../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+- [HasTeams Trait](../app/Models/Traits/HasTeams.php)

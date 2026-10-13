@@ -50,8 +50,8 @@
 - `spatie/laravel-personal-data-export` - Export GDPR
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
-- [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
+- [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
+- [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

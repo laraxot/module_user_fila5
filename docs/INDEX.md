@@ -968,8 +968,8 @@
 
 ## docs
 
-- [confidence-guidelines.md](./docs/confidence-guidelines.md)
-- [filament-version.md](./docs/filament-version.md)
+- [confidence-guidelines.md](./confidence-guidelines.md)
+- [filament-version.md](./filament-version.md)
 
 ## errori
 
@@ -3466,11 +3466,11 @@ This document serves as the central index for the User module, providing guidanc
 - Update this index if new features or significant changes are introduced to the User module.
 
 ## Links to Related Documentation
-- [BaseUser Model](./BaseUser.md)
-- [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Profile Management](./PROFILE_MANAGEMENT.md)
-- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
-- [Session Management](./SESSION_MANAGEMENT.md)
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth_pages_implementation.md)
+- [Profile Management](./profile_management.md)
+- [Routing Best Practices](./routing_best_practices.md)
+- [Session Management](./session_management.md)
 
 ## Sottocartelle
 
@@ -4463,8 +4463,8 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## docs
 
-- [confidence-guidelines.md](./docs/confidence-guidelines.md)
-- [filament-version.md](./docs/filament-version.md)
+- [confidence-guidelines.md](./confidence-guidelines.md)
+- [filament-version.md](./filament-version.md)
 
 ## errori
 

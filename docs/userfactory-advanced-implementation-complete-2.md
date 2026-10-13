@@ -19,7 +19,7 @@ related:
 ---
 
 - [SaluteOra Factory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md)
-- [User Module Integration](../laravel/Modules/User/docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/Modules/SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
 
 ### Technical References

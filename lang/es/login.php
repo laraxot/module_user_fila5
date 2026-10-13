@@ -17,7 +17,7 @@ return [
         'remember' => ['label' => 'Recordarme', 'placeholder' => '', 'help' => 'Mantener la sesión iniciada en este dispositivo', 'description' => '', 'helper_text' => '', 'tooltip' => ''],
     ],
     'actions' => [
-        'login' => ['label' => 'Acceder', 'success' => 'Sesión iniciada correctamente', 'error' => 'Las credenciales no son válidas'],
+        'login' => ['label' => 'Acceder', 'success' => 'Sesión iniciada correctamente', 'error' => 'Las credenciales no son válidas', 'throttle' => 'Demasiados intentos de acceso. Vuelva a intentarlo en :seconds segundos.'],
         'register' => ['label' => 'Crear una cuenta', 'success' => 'Registro completado', 'error' => 'No se pudo completar el registro'],
         'forgot_password' => ['label' => '¿Has olvidado la contraseña?', 'success' => 'Hemos enviado las instrucciones', 'error' => 'No se pudieron enviar las instrucciones'],
         'reset_password' => ['label' => 'Restablecer contraseña', 'success' => 'Contraseña restablecida', 'error' => 'No se pudo restablecer la contraseña'],

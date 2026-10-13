@@ -43,7 +43,7 @@ Documentation for `user` module categorized as **integrations**.
 - [`PHPSTAN_STATUS.md`](./PHPSTAN_STATUS.md)
 - [`PRODUCT_LAUNCH_PLAN.md`](./PRODUCT_LAUNCH_PLAN.md)
 - [`PRODUCT_STRATEGY.md`](./PRODUCT_STRATEGY.md)
-- [`PROJECT-STRUCTURE.md`](./PROJECT-STRUCTURE.md)
+- [`PROJECT-STRUCTURE.md`](./project-structure.md)
 - [`QMD-SETUP.md`](./QMD-SETUP.md)
 - [`QUALITY_STATUS.md`](./QUALITY_STATUS.md)
 - [`QUERY-OPTIMIZATION-ANALYSIS.md`](./QUERY-OPTIMIZATION-ANALYSIS.md)

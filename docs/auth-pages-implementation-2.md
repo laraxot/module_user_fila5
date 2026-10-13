@@ -21,14 +21,14 @@ related:
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
-- [Documentazione centrale](../../../docs/README.md)
+- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)

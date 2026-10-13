@@ -99,7 +99,7 @@ I permessi possono essere gestiti tramite l'interfaccia di amministrazione di Fi
 - [Filament](https://filamentphp.com)
 - [Doctor Registration Workflow](../patient/docs/doctor-registration-workflow.md)
 ## Collegamenti tra versioni di permissions.md
-* [permissions.md](../../gdpr/docs/packages/permissions.md)
+* [permissions.md](../../Gdpr/docs/packages/permissions.md)
 * [permissions.md](../../patient/docs/permissions.md)
 - [Spatie Laravel Permission](https://spatie.be/project_docs/laravel-permission)
 - [Doctor Registration Workflow](../patient/project_docs/doctor-registration-workflow.md)

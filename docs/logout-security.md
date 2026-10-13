@@ -199,6 +199,6 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
-- [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
+- [Gestione Sessione](./session_management.md)
+- [Documentazione Volt](./volt_blade_implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

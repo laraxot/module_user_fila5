@@ -18,9 +18,9 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [User Module Widget Structure](../Modules/User/docs/widgets-structure-2.md)
-- [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
-- [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
+- [User Module Widget Structure](widgets-structure-2.md)
+- [EditUserWidget Documentation](widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
 
 ## Memory Integration

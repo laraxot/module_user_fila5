@@ -42,7 +42,7 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
 </x-user::profile.dropdown>
 ## Collegamenti
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
-- [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
+- [Implementazione di UserServiceProvider](../../app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)

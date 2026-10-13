@@ -532,7 +532,7 @@ Il trait `HasTeams` ora è:
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
@@ -549,9 +549,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 
@@ -861,7 +861,7 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
@@ -878,9 +878,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 
@@ -1053,7 +1053,7 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
-- [XotData helper](../../xot/docs/standards/readme.md)
+- [XotData helper](../../../../Xot/docs/standards/readme.md)
 
 ---
 
@@ -1446,9 +1446,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 

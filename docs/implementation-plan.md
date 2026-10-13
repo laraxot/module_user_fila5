@@ -189,8 +189,8 @@ class NavigationTest extends TestCase
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md)
-- [Header Components](./HEADER_COMPONENTS.md)
-- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+- [Header Components](./header_components.md)
+- [Navigation Structure](./navigation_structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 
 ## Timeline

@@ -12,7 +12,7 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
 related:
   - ../../../Fixcity/docs/bmad/citizen-journey-audit-2026-10-07.md
-  - ../../../Themes/Sixteen/docs/bmad/citizen-journey-presentation-contract-2026-10-07.md
+  - ../../../../Themes/Sixteen/docs/bmad/citizen-journey-presentation-contract-2026-10-07.md
 ---
 
 # Contratto auth cittadino

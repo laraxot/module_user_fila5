@@ -217,4 +217,4 @@ public function test_logout_clears_session()
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
-- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md) 
+- [Routing Best Practices](./routing_best_practices.md) 

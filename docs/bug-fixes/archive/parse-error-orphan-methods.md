@@ -10,5 +10,5 @@ Documentazione per parse-error-orphan-methods-2025-01-27 nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../../README.md)
 

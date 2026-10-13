@@ -308,7 +308,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [Quaeris Factory Implementation](../laravel/modules/Quaeris/docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/modules/Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

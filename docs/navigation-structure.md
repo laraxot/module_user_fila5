@@ -139,9 +139,9 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-- [Header Components](./HEADER_COMPONENTS.md)
+- [Header Components](./header_components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-- [Session Management](./SESSION_MANAGEMENT.md) 
+- [Session Management](./session_management.md) 
 ---
 module: theme
 topic: navigation-structure

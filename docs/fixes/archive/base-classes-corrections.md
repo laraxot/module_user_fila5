@@ -307,9 +307,9 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 ## Risorse
 
-- [Base Classes Hierarchy](../models/base-classes-hierarchy.md)
-- [Architecture Guide](../core/architecture.md)
-- [XotBasePivot Migration](../models/xotbasepivot-migration.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
+- [Architecture Guide](../../core/architecture.md)
+- [XotBasePivot Migration](../../models/xotbasepivot-migration.md)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---

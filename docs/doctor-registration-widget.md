@@ -260,7 +260,7 @@ The <nome progetto> Team'
 
 ## Collegamenti Bidirezionali
 
-- [Email Doctor Registration](docs/email-doctor-registration.md)
+- [Email Doctor Registration](email-doctor-registration.md)
 - [Registrazione Odontoiatra](docs/roadmap_frontoffice/13-registrazione-odontoiatra.md)
 - [DoctorResource](Modules/Patient/app/Filament/Resources/DoctorResource.php)
 - [RegistrationWidget](Modules/User/app/Filament/Widgets/RegistrationWidget.php)
