@@ -319,6 +319,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
+        if ($panel->getId() === 'accesso') {
+            return true;
+        }
+
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
 
@@ -330,7 +334,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $this->hasRole($role);
         }
 
-        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+        return $this->hasAnyRole(['super-admin', 'admin', 'restaurant::admin']);
     }
 
     public function detach(Model $model): void
