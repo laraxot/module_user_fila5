@@ -7,11 +7,7 @@ declare(strict_types=1);
 $base = (array) require base_path('Modules/Xot/lang/en/validation.php');
 
 return array_replace_recursive(
-<<<<<<< .merge_file_xNFtsx
     $base,
-=======
-    (array) require base_path('Modules/Xot/lang/en/validation.php'),
->>>>>>> .merge_file_iCrJAk
     [
         'date_equals' => 'The :attribute field must be a date equal to :date.',
         'ends_with' => 'The :attribute field must end with one of the following: :values.',
