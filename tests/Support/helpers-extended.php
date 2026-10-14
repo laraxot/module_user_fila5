@@ -295,9 +295,10 @@ function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attribu
         range(1, 10)
     );
 
-    $user->two_factor_secret = encrypt($secret);
-    $user->two_factor_recovery_codes = encrypt(json_encode($recoveryCodes));
-    $user->save();
+    $user->forceFill(array_merge([
+        'two_factor_secret' => encrypt($secret),
+        'two_factor_recovery_codes' => encrypt(json_encode($recoveryCodes)),
+    ], $attributes))->save();
 
     return [
         'secret' => $secret,

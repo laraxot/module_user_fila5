@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth\Schemas;
 
 use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Facades\Hash;
@@ -50,7 +51,6 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('current-password')
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
             'remember' => Checkbox::make('remember')
-                ->label(__('user::login.fields.remember.label'))
                 ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
         ];
     }
@@ -73,10 +73,11 @@ class UserForm extends XotBaseResourceForm
                 ->password()
                 ->revealable()
                 ->required()
+                ->helperText(null) // user_form e' condiviso col register: regola "min 12 caratteri" e placeholder "password sicura" non vanno al login
+                ->placeholder(null)
                 ->autocomplete('current-password')
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
             'remember' => Checkbox::make('remember')
-                ->label(__('user::login.fields.remember.label'))
                 ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
         ];
     }
@@ -205,6 +206,7 @@ class UserForm extends XotBaseResourceForm
     public static function getResetPasswordFormSchema(): array
     {
         return [
+            'token' => Hidden::make('token'),
             'email' => TextInput::make('email')
                 ->email()
                 ->required()

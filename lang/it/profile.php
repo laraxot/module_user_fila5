@@ -244,6 +244,16 @@ return [
             'icon' => 'reorderRecords',
             'tooltip' => 'reorderRecords',
         ],
+        'submit' => [
+            'label' => 'submit',
+            'icon' => 'submit',
+            'tooltip' => 'submit',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+            'icon' => 'cancel',
+            'tooltip' => 'cancel',
+        ],
     ],
     'messages' => [
         'update_success' => 'Profilo aggiornato con successo!',

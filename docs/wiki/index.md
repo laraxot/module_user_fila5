@@ -4,7 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-updated: 2026-09-21
+updated: 2026-07-27
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
@@ -23,18 +23,12 @@ related:
 
 Indice operativo del wiki User.
 
-## BMAD — SuperAdmin widget (Epic 9, solo docs)
-
-- [bmad README](../bmad/README.md) — indice slice
-- [tech-spec](../bmad/tech-spec.md) — modifiche `AdminPanelProvider`
-- [epics](../bmad/epics.md) · [9.2 hook](../stories/9.2.admin-panel-provider-hook.story.md)
-
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
-- [architecture-module-directory-structure](../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
+- [architecture-module-directory-structure](../../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
 
 ## Struttura canonica (sacred)
@@ -53,20 +47,15 @@ Indice operativo del wiki User.
 
 ## Regole collegate
 
-- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
-- [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
+- [forbidden-folders-rule](../../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
+- [llm-wiki-standard](../../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
 - [laravel-socialite](../../../../docs/wiki/concepts/laravel-socialite.md): OAuth social authentication.
 - [laravel-permission](../../../../docs/wiki/concepts/laravel-permission.md): RBAC Spatie Laravel Permission.
 
 ## Scopo User Module
 
 Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
-
-## Decisioni recenti
-
-- [Confine Table/Page e traduzioni](./concepts/filament-table-boundary-and-i18n.md)
-- [Story BMAD User 2026-09-29](../bmad/stories/user-filament-boundary-i18n-20260929.story.md)
 
 ## Runtime config & schema (2026-07-27)
 
@@ -126,8 +115,8 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 ## False Friends
 
-- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
-- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
+- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
+- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
 
 ## Troubleshooting
 

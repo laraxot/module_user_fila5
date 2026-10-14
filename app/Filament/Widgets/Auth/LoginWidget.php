@@ -7,7 +7,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 
 /**
@@ -24,6 +26,12 @@ use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
  */
 class LoginWidget extends BaseAuthWidget
 {
+    /** Tentativi errati consentiti per email e IP prima del blocco (G-07, DCP-54). */
+    private const MAX_ATTEMPTS = 5;
+
+    /** Durata del blocco e della finestra di conteggio, in secondi. */
+    private const DECAY_SECONDS = 60;
+
     /**
      * @return class-string<UserForm>
      */
@@ -49,7 +57,17 @@ class LoginWidget extends BaseAuthWidget
 
         $remember = isset($data['remember']) && $data['remember'] === true;
 
+        // Limite ai tentativi per email e IP: senza, una password si puo' provare all'infinito. Il controllo viene PRIMA di `Auth::attempt`,
+        // cosi' anche la password giusta e' rifiutata durante il blocco, e il messaggio dice quanto aspettare.
+        $throttleKey = Str::transliterate(Str::lower($credentials['email']).'|'.request()->ip());
+        if (RateLimiter::tooManyAttempts($throttleKey, self::MAX_ATTEMPTS)) {
+            $this->addError('data.email', __('user::login.actions.login.throttle', ['seconds' => RateLimiter::availableIn($throttleKey)]));
+
+            return;
+        }
+
         if (Auth::attempt($credentials, $remember)) {
+            RateLimiter::clear($throttleKey);
             session()->regenerate();
 
             Notification::make()
@@ -57,14 +75,16 @@ class LoginWidget extends BaseAuthWidget
                 ->success()
                 ->send();
 
-            $redirectUrl = Route::has('dashboard')
+            // Chi e' stato mandato al login da una pagina protetta (es. "Segnala disservizio") torna a quella pagina:
+            // Laravel salva l'URL richiesto in `url.intended`. Senza, si va alla dashboard del progetto o alla home nella lingua corrente.
+            $this->redirectIntended(default: Route::has('dashboard')
                 ? route('dashboard')
-                : url('/'.app()->getLocale());
-            $this->redirect($redirectUrl);
+                : url('/'.app()->getLocale()));
 
             return;
         }
 
+        RateLimiter::hit($throttleKey, self::DECAY_SECONDS);
         $this->addError('data.email', __('user::login.actions.login.error'));
     }
 

@@ -18,6 +18,7 @@ use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Webmozart\Assert\Assert;
 
 use function Livewire\Volt\layout;

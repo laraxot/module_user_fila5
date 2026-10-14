@@ -77,4 +77,23 @@ return [
     ],
     'actions' => [
     ],
+    'login_page' => [
+        'meta_title' => 'Iniciar sesión | FixCity',
+        'kicker' => 'Área personal',
+        'title' => 'Inicia sesión en tu cuenta',
+        'description' => 'Inicia sesión para informar de un problema, seguir tus trámites y recibir novedades.',
+        'support_title' => '¿Necesitas ayuda?',
+        'support_item_email' => 'Usa el correo con el que te registraste.',
+        'support_item_password' => '¿Has olvidado tu contraseña? Puedes restablecerla en unos segundos.',
+        'support_item_help' => 'Si el problema continúa, escribe al soporte de tu ayuntamiento.',
+    ],
+    'register_page' => [
+        'title' => 'Crea tu cuenta',
+        'subtitle' => 'Área personal',
+        'description' => 'Rellena el formulario para crear tu cuenta y acceder a todas las funciones.',
+        'support_title' => 'Ayuda con el registro',
+        'help_email' => 'Usa la dirección de correo con la que iniciarás sesión.',
+        'help_password' => 'La contraseña debe tener al menos 12 caracteres, con mayúscula, minúscula, número y símbolo.',
+        'help_support' => 'Para recibir ayuda, contacta con la oficina competente.',
+    ],
 ];

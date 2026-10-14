@@ -1012,13 +1012,13 @@ See [ROADMAP.md](./roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-- [Xot Module](../xot/docs/readme.md) - Core foundation
-- [Activity Module](../activity/docs/readme.md) - Activity tracking
-- [Lang Module](../lang/docs/readme.md) - Translations
-- [Tenant Module](../tenant/docs/readme.md) - Enhanced tenancy
+- [Xot Module](../../Xot/docs/README.md) - Core foundation
+- [Activity Module](../../Activity/docs/readme.md) - Activity tracking
+- [Lang Module](../../Lang/docs/readme.md) - Translations
+- [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-- [CLAUDE.md](../../../claude.md) - Project architecture
+- [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../docs/security.md)
 
 ### External Resources

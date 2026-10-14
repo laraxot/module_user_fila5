@@ -104,6 +104,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $fresh = $owner->fresh();
         Assert::assertInstanceOf(User::class, $fresh);
         Assert::assertSame($teamB->id, $fresh->current_team_id);
+        Assert::assertNotSame($teamA->id, $fresh->current_team_id);
     });
 
     test('switchTeam returns a real 303 redirect response, not just a Livewire effect', function (): void {

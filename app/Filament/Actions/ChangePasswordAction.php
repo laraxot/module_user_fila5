@@ -9,6 +9,7 @@ namespace Modules\User\Filament\Actions;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Utilities\Get;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
@@ -45,10 +46,7 @@ final class ChangePasswordAction extends XotBaseAction
                         ->placeholder(__('user::fields.confirm_password.placeholder'))
                         ->rule(
                             'required',
-                            /**
-                             * @param  callable(string): mixed  $get
-                             */
-                            static fn (callable $get): bool => (bool) $get('new_password')
+                            static fn (Get $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),
                 ];

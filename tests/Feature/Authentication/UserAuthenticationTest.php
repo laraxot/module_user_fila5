@@ -210,7 +210,8 @@ describe('User Email Verification', function () {
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
         $adminRole = RoleFactory::new()->createOne(['name' => 'admin']);
-        $editorRole = RoleFactory::new()->createOne(['name' => 'editor']);
+        // 'editor' esiste ma non e' assegnato: hasRole('editor') deve restare false
+        RoleFactory::new()->createOne(['name' => 'editor']);
 
         TestCase::requireUser()->assignRole($adminRole);
 
@@ -221,7 +222,8 @@ describe('User Authorization', function () {
 
     it('can assign and check permissions', function () {
         $editPermission = PermissionFactory::new()->createOne(['name' => 'edit posts']);
-        $deletePermission = PermissionFactory::new()->createOne(['name' => 'delete posts']);
+        // 'delete posts' esiste ma non e' concesso: hasPermissionTo('delete posts') deve restare false
+        PermissionFactory::new()->createOne(['name' => 'delete posts']);
 
         TestCase::requireUser()->givePermissionTo($editPermission);
 
@@ -352,7 +354,8 @@ describe('User Two Factor Authentication', function () {
             'password' => 'password123',
         ]);
 
-        // Should handle OTP requirement
+        // La password (OTP) e' valida: il login riesce, poi PasswordExpiryMiddleware impone il cambio password
+        expect($result)->toBe(true);
         expect($user->is_otp)->toBe(true);
     });
 });

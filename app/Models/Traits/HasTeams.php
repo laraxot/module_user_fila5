@@ -13,7 +13,6 @@ use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role;
 use Modules\User\Models\TeamUser;
-use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\Permission\Models\Permission;
@@ -177,24 +176,23 @@ trait HasTeams
     }
 
     /**
-     * Get all of the team's users including its owner.
+     * Get the distinct users of every team the user is a member of.
      *
-     * @return Collection<int, User>
+     * @return Collection<int, Model&XotUserContract>
      */
-    public function allTeamUsers(): Collection // @phpstan-ignore return.type
-    {/** @var Collection<int, mixed> $teams */
-            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-        /** @var Collection<int, User> $result */
-        $result = $teams->flatMap( // @phpstan-ignore argument.type
-            /** @param mixed $team @return array<int,User>|Collection<int,User> */
-            static function (mixed $team): array { // @phpstan-ignore return.type
-                /** @var array<int,User> $users */
-                $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
+    public function allTeamUsers(): Collection
+    {
+        /** @var list<Model&XotUserContract> $items */
+        $items = [];
+        foreach ($this->membershipTeams as $team) {
+            foreach ($team->users as $user) {
+                if ($user instanceof Model && $user instanceof XotUserContract) {
+                    $items[] = $user;
+                }
+            }
+        }
 
-                return $users;
-            })->unique('id');
-
-        return $result;
+        return new Collection($items)->unique('id');
     }
 
     /**
@@ -403,7 +401,7 @@ trait HasTeams
      */
     public function personalTeam(): ?TeamContract
     {
-        /* @var TeamContract|null */
+        /** @var TeamContract|null */
         return $this->ownedTeams->where('personal_team', true)->first();
     }
 

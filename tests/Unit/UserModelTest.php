@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
@@ -112,6 +113,9 @@ describe('User Model', function (): void {
 
     test('hashes password when set', function (): void {
         $user = stubUser(['password' => 'plain-password']);
+
+        Assert::assertNotSame('plain-password', $user->password);
+        Assert::assertTrue(Hash::check('plain-password', $user->password));
     });
 
     test('reflects verified email state when timestamp is set', function (): void {

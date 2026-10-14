@@ -53,14 +53,14 @@ Modules\User\Models\Tenant
 
 ## Backlinks
 
-- [Xot Base](../Xot/docs/)
-- [Tenant Module](../Tenant/docs/)
-- [UI Components](../UI/docs/)
+- [Xot Base](../../Xot/docs)
+- [Tenant Module](../../Tenant/docs)
+- [UI Components](../../UI/docs)
 
 ## Architectural Rules — Violations Fixed
 
 ### Module Directory Structure Standard
-In compliance with the [Global Rule](../../../docs/wiki/rules/module-root-php-folders-forbidden.md), all root-level capitalized directories (`Actions/`, `Application/`, `Database/`, `Events/`, `Listeners/`) have been moved into `app/` or renamed to lowercase `database/`.
+In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md), all root-level capitalized directories (`Actions/`, `Application/`, `Database/`, `Events/`, `Listeners/`) have been moved into `app/` or renamed to lowercase `database/`.
 - **app/**: Home for all PHP functional code (mapped via PSR-4).
 - **database/**: Strictly lowercase for migrations/factories/seeders.
 
@@ -1203,14 +1203,14 @@ See [ROADMAP.md](./roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-- [Xot Module](../Xot/docs/README.md) - Core foundation
-- [Activity Module](../Activity/docs/README.md) - Activity tracking
-- [Lang Module](../Lang/docs/README.md) - Translations
-- [Tenant Module](../Tenant/docs/README.md) - Enhanced tenancy
+- [Xot Module](../../Xot/docs/README.md) - Core foundation
+- [Activity Module](../../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../../Lang/docs/README.md) - Translations
+- [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../docs/security.md)
+- [Security Guidelines](../../../../docs/security.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)
@@ -2297,14 +2297,14 @@ See [ROADMAP.md](./roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-- [Xot Module](../Xot/docs/README.md) - Core foundation
-- [Activity Module](../Activity/docs/README.md) - Activity tracking
-- [Lang Module](../Lang/docs/README.md) - Translations
-- [Tenant Module](../Tenant/docs/README.md) - Enhanced tenancy
+- [Xot Module](../../Xot/docs/README.md) - Core foundation
+- [Activity Module](../../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../../Lang/docs/README.md) - Translations
+- [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../docs/security.md)
+- [Security Guidelines](../../../../docs/security.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

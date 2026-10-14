@@ -10,6 +10,7 @@ use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -101,7 +102,7 @@ class Register extends Component implements HasSchemas
      * In Livewire components, the render method ultimately returns a view,
      * but it's processed through Livewire's component system.
      */
-    public function render(): mixed
+    public function render(): View
     {
         // Copy the view templates to the pub_theme location
         app(ViewCopyAction::class)
@@ -114,7 +115,10 @@ class Register extends Component implements HasSchemas
          */
         $view = 'pub_theme::livewire.auth.register';
 
-        // Return view with layout - Livewire specific implementation
-        return view($view)->extends('pub_theme::layouts.auth');
+        // Return view with layout - `extends` e' una macro Livewire: muta la view e restituisce la stessa istanza.
+        $page = view($view);
+        $page->extends('pub_theme::layouts.auth');
+
+        return $page;
     }
 }
