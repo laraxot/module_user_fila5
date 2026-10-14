@@ -27,10 +27,10 @@ use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 class LoginWidget extends BaseAuthWidget
 {
     /** Tentativi errati consentiti per email e IP prima del blocco (G-07, DCP-54). */
-    private const MAX_ATTEMPTS = 5;
+    private const int MAX_ATTEMPTS = 5;
 
     /** Durata del blocco e della finestra di conteggio, in secondi. */
-    private const DECAY_SECONDS = 60;
+    private const int DECAY_SECONDS = 60;
 
     /**
      * @return class-string<UserForm>
