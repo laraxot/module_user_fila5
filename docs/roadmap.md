@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # User Module - Complete Roadmap 2026
@@ -1021,14 +1022,6 @@ Diventare un identity provider completo (IdP) che supporta standard moderni come
 **Maintainer**: User Module Team
 **Status**: 🚧 In Development (70% completo)
 ---
-title: "Product Roadmap - User Module"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap product roadmap - user module"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"

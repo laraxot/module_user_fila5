@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "best practices per il routing in architettura volt + folio + filament user"
 ---
 
 # Best Practices per il Routing in Architettura Volt + Folio + Filament

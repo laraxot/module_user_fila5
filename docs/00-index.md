@@ -1,3 +1,11 @@
+---
+title: "**Indice Documentazione Modulo User**"
+type: index
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "**indice documentazione modulo user** user"
+---
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant

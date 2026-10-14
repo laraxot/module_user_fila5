@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "spatie permission philosophy"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "spatie permission philosophy user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md

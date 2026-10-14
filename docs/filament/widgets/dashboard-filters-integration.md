@@ -12,6 +12,7 @@ related:
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget-fileupload.md"
   - "./registration-widget.md"
+status: draft
 ---
 
 # Dashboard Filters Integration per Widget Filament

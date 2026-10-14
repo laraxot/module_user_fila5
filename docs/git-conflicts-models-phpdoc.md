@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # Risoluzione conflitti Git: PHPDoc modelli User

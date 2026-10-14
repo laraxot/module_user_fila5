@@ -649,7 +649,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-- [Roles and Permissions](roles-permissions-3.md)
+- [Roles and Permissions](../../roles-permissions-3.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

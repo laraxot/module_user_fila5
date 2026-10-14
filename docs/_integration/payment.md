@@ -16,6 +16,7 @@ related:
   - "./passport.md"
   - "./phpstan.md"
   - "./profile.md"
+status: draft
 ---
 
 # payment

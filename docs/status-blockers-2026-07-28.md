@@ -3,6 +3,10 @@ title: "User Module Status & Blockers"
 date: 2026-07-28
 author: claude-ai
 status: BLOCKED_AWAITING_INFRASTRUCTURE
+type: note
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module   status & critical blockers (2026-07-28) user"
 ---
 
 # User Module — Status & Critical Blockers (2026-07-28)

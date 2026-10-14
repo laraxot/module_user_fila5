@@ -769,7 +769,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-2.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1106,7 +1106,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-2.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1443,8 +1443,8 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-2.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1780,8 +1780,8 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-3.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -2347,7 +2347,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization-3.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -2917,7 +2917,7 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 - [architecture](./architecture.md)
 - [index](./index.md)
-- [module](./module.md)
+- [module](../../module.md)
 - [philosophy](./philosophy.md)
 - [README](./readme.md)
 

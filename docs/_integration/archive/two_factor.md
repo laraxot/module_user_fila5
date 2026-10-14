@@ -1,3 +1,11 @@
+---
+title: "two_factor - User"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user, _integration]
+qmd: "two_factor - user user"
+---
 # two_factor - User
 
 ## Overview

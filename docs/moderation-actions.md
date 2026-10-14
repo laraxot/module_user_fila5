@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "Azioni di Moderazione (Action class)"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "azioni di moderazione (action class) user"
 ---
 # Azioni di Moderazione (Action class)
 

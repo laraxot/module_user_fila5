@@ -16,6 +16,7 @@ related:
   - "./teams-relation-manager-2.md"
   - "./teams-relation-manager-3.md"
   - "./teams-relation-manager.md"
+status: draft
 ---
 
 # Widget Responsivi per Form di Registrazione

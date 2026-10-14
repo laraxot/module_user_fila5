@@ -12,6 +12,9 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
+tags: [docs, user]
+qmd: "user module   migrations & schema parity user"
 ---
 
 # User Module — Migrations & Schema Parity

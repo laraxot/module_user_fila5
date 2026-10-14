@@ -14,7 +14,7 @@ owned_scope:
   - lang/en/user.php
 related:
   - ../../wiki/user-resource-clustering-widgets-actions-audit.md
-  - ./filament-ux-brainstorming.md
+  - ../filament-ux-brainstorming.md
 excluded_scope:
   - app/Filament/Widgets/Auth/**  # owner concorrente PID 5418, in-progress su sprint-status.yaml
   - app/Filament/Widgets/Profile/DeleteAccountWidget.php

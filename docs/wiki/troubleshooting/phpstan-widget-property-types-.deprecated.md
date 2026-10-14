@@ -16,6 +16,7 @@ related:
   - "./phpstan-widget-property-types-1.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
+status: draft
 ---
 
 # PHPStan widget property types

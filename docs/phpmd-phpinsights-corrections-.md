@@ -1,3 +1,11 @@
+---
+title: "PHPMD e PHP Insights Corrections - 2025-01-22"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpmd e php insights corrections - 2025-01-22 user"
+---
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo

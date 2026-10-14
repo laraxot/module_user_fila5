@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)

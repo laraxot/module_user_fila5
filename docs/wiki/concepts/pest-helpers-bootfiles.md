@@ -12,6 +12,9 @@ related:
   - ../../../../../../bmad-output/stories/2.6.user-tests-helpers-bootstrap-phpstan.story.md
   - ../../../../../../docs/chat/hasxottable-rename-blocca-phpstan-2026-08-19.md
 tags: [pest, pest5, phpstan, bootstrap, helpers, testing]
+type: note
+updated: 2026-10-07
+qmd: "helper di dominio in `tests/helpers.php` user"
 ---
 
 # Helper di dominio in `tests/Helpers.php`

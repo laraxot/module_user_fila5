@@ -11,6 +11,9 @@ related:
   - ./livewire-residual-conversion-cluster-c.story.md
   - ./uppercase-application-dir.story.md
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   continuazione domani user"
 ---
 
 # User — Continuazione Domani

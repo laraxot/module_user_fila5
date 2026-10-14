@@ -1,3 +1,11 @@
+---
+title: "Analisi dell'Errore negli Eventi di Logout"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi dell'errore negli eventi di logout user"
+---
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati

@@ -1,3 +1,11 @@
+---
+title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione corretta delle pagine di autenticazione con volt e folio user"
+---
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati

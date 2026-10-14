@@ -1,3 +1,11 @@
+---
+title: "Convenzioni di Namespace nel Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "convenzioni di namespace nel modulo user user"
+---
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali

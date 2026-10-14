@@ -1,3 +1,11 @@
+---
+title: "Implementazione Corretta del Logout con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione corretta del logout con volt e folio user"
+---
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati

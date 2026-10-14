@@ -2,6 +2,10 @@
 title: Quality Gates Analysis — User Module
 date: 2026-07-28
 status: completed-with-constraints
+type: note
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "quality gates analysis   laravel/modules/user user"
 ---
 
 # Quality Gates Analysis — laravel/Modules/User

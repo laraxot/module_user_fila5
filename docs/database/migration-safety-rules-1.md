@@ -11,6 +11,7 @@ related:
   - "./migration-safety-rules.md"
   - "./profile-uuid-philosophy-1.md"
   - "./profile-uuid-philosophy.md"
+status: draft
 ---
 
 # Migration Safety Rules - NEVER Destroy Data

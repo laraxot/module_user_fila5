@@ -6,6 +6,8 @@ epic: "USER-MODULE-EXCELLENCE"
 module: User
 created: 2026-09-29
 updated: 2026-09-29
+tags: [docs, user, bmad]
+qmd: "story   user: table boundary, traduzioni e riuso user"
 ---
 
 # Story — User: Table boundary, traduzioni e riuso

@@ -86,7 +86,7 @@ Documentazione base esistente per:
 - Configurazione di base in healthcare_app
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -277,7 +277,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2296,7 +2296,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

@@ -1,3 +1,11 @@
+---
+title: "Ponytail-audit 2026-07-02: User module findings"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "ponytail-audit 2026-07-02: user module findings user"
+---
 # Ponytail-audit 2026-07-02: User module findings
 
 Source: repo-wide ponytail-audit follow-up, published in module_user_fila5 discussion

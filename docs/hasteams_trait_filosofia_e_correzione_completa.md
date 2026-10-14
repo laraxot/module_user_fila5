@@ -1,3 +1,11 @@
+---
+title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "hasteams trait - filosofia laraxot e strategia di correzione completa user"
+---
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`

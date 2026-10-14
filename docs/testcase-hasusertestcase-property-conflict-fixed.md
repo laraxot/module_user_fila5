@@ -14,6 +14,8 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
+qmd: "fatal error risolto: `testcase` vs `hasusertestcase`   conflitto proprietà `$user` user"
 ---
 
 # Fatal error risolto: `TestCase` vs `HasUserTestCase` — conflitto proprietà `$user`

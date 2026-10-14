@@ -8,6 +8,9 @@ related:
   - ./architecture.md
   - ./prd.md
   - ./livewire-widget-brainstorming.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: dove vive il toggle superadmin user"
 ---
 
 # Brainstorming: dove vive il toggle SuperAdmin

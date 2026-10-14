@@ -1,3 +1,11 @@
+---
+title: "User Module - PHPStan Fixes Session 2025-10-01"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "user module - phpstan fixes session 2025-10-01 user"
+---
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti

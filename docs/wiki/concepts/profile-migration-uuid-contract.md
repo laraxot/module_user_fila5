@@ -12,6 +12,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+title: "Profile Migration UUID Contract"
+status: draft
+tags: [docs, user, wiki]
+qmd: "profile migration uuid contract user"
 ---
 
 # Profile Migration UUID Contract

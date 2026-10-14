@@ -6,6 +6,11 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-admin-panel-provider.md
   - ../../Xot/docs/bmad/livewire-widget-conversion.md
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "livewire widget conversion user"
 ---
 
 Canon modulo: [livewire-inventory.md](./livewire-inventory.md) (audit per classe + cluster).

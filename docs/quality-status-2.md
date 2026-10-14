@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "modulo user   stato qualità user"
 ---
 
 # Modulo User — Stato Qualità

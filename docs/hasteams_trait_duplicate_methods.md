@@ -1,3 +1,11 @@
+---
+title: "Analisi metodi duplicati in HasTeams (trait)"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi metodi duplicati in hasteams (trait) user"
+---
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione

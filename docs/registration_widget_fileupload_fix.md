@@ -1,3 +1,11 @@
+---
+title: "RegistrationWidget FileUpload Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "registrationwidget fileupload fix user"
+---
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

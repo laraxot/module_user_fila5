@@ -630,7 +630,7 @@ Tutti i widget senza modello devono:
 
 - [Xot Widgets Initialization](../../xot/docs/widgets-initialization.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-- [Login Widget Fix](./login-widget-fix.md)
+- [Login Widget Fix](../../login-widget-fix.md)
 
 ---
 
@@ -1058,8 +1058,8 @@ class LoginWidget extends XotBaseWidget
 ## Riferimenti
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-- [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
-- [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
+- [Documentazione Widget Structure](../../widgets-structure-2.md)
+- [Best Practices Widget Filament](../../best-practices/filament-widgets.md) 
 ---
 
 ## loginwidget

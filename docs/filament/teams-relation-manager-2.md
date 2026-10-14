@@ -11,6 +11,12 @@ related:
   - "./teams-relation-manager-3.md"
   - "./teams-relation-manager.md"
   - "./widgets-responsive-layout.md"
+title: "teams relation manager 2"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, filament]
+qmd: "teams relation manager 2 user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/teams-relation-manager-1.md

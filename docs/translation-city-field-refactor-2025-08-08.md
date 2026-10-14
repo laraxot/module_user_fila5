@@ -1,3 +1,11 @@
+---
+title: "Refactor Completo Campi 'Città' - Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "refactor completo campi 'città' - modulo user user"
+---
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

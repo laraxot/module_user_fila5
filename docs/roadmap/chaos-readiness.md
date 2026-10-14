@@ -16,6 +16,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+status: draft
 ---
 
 # User Chaos Readiness - 2026-03-02

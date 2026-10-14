@@ -11,6 +11,12 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+title: "terms_and_conditions"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, _integration]
+qmd: "terms_and_conditions user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md

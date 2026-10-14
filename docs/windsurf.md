@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "Regola Windsurf: Migrazioni XotBaseMigration"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "regola windsurf: migrazioni xotbasemigration user"
 ---
 # Regola Windsurf: Migrazioni XotBaseMigration
 

@@ -1,3 +1,11 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Improvements - User Module"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "phpstan level 10 + dry/kiss improvements - user module user"
+---
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary

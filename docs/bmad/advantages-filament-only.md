@@ -11,6 +11,9 @@ related:
   - ./livewire-widget-architecture.md
   - ./livewire-widget-tech-spec.md
   - ../../Xot/docs/bmad/livewire-widget-advantages.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "vantaggi di avere solo filament widget nel chrome del panel user"
 ---
 
 # Vantaggi di avere SOLO Filament widget nel chrome del panel

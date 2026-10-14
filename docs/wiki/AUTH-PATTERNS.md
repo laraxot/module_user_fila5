@@ -6,6 +6,8 @@ date: "2026-06-13"
 qmd: "user-auth-patterns"
 github_issue: ""
 github_discussion: ""
+status: draft
+updated: 2026-10-13
 ---
 
 # User Module - Authentication Patterns

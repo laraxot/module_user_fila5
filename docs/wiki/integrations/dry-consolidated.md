@@ -165,7 +165,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-[date].md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
@@ -312,7 +312,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
@@ -460,7 +460,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
@@ -607,7 +607,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
@@ -641,7 +641,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [dry-kiss-analysis-4.md](dry-kiss-analysis-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [dry-kiss-analysis-4.md](../../dry-kiss-analysis-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -781,7 +781,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -875,7 +875,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](../../dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -1015,7 +1015,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -1556,8 +1556,8 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../xot/docs/actions.md)
-- [Documentazione Actions](../../xot/project_docs/actions.md)
+- [Documentazione Actions](../../actions.md)
+- [Documentazione Actions](../../actions.md)
 *Data correzione: 2025-01-06*
 *Stato: ✅ Completato*
 
@@ -1650,8 +1650,8 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../xot/docs/actions.md)
-- [Documentazione Actions](../../xot/project_docs/actions.md)
+- [Documentazione Actions](../../actions.md)
+- [Documentazione Actions](../../actions.md)
 *Data correzione: [DATE]*
 *Stato: ✅ Completato*
 

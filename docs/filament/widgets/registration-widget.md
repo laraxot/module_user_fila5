@@ -12,6 +12,7 @@ related:
   - "./edit-user-widget.md"
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget-fileupload.md"
+status: draft
 ---
 
 # RegistrationWidget: Widget generico per la registrazione utente

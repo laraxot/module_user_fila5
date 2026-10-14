@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "Relazione utenti-team: tabella pivot `doctor_team`"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "relazione utenti-team: tabella pivot `doctor_team` user"
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 

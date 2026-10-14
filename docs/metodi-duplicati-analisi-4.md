@@ -12,6 +12,11 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "Metodi Duplicati — Analisi User"
+type: note
+status: stub
+updated: 2026-10-07
+qmd: "metodi duplicati   analisi user user"
 ---
 
 # Metodi Duplicati — Analisi User

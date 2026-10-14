@@ -1,3 +1,11 @@
+---
+title: "PHPStan Analysis - User Module (Jan 2026)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpstan analysis - user module (jan 2026) user"
+---
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

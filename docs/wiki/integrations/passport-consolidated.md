@@ -704,7 +704,7 @@ class ListOauthClients extends XotBaseListRecords
 ## 📚 Riferimenti
 
 - [Passport Cluster Resources Pattern](./passport-cluster-resources-pattern.md)
-- [Passport Cluster Summary](./passport-cluster-summary.md)
+- [Passport Cluster Summary](../../passport-cluster-summary.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
 ---
@@ -1710,7 +1710,7 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 ## 📚 Riferimenti
 
-- [Passport Cluster Summary](./passport-cluster-summary.md)
+- [Passport Cluster Summary](../../passport-cluster-summary.md)
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md)
 - [Filament Clusters Documentation](../../xot/docs/filament-class-extension-rules.md)
 
@@ -2166,7 +2166,7 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md) - Regola critica
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md) - Implementazione
-- [Passport Cluster Summary](./passport-cluster-summary.md) - Riepilogo
+- [Passport Cluster Summary](../../passport-cluster-summary.md) - Riepilogo
 
 ---
 

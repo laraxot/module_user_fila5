@@ -1,3 +1,11 @@
+---
+title: "User — cosa migliorerei se questo modulo fosse mio per un mese"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user   cosa migliorerei se questo modulo fosse mio per un mese user"
+---
 # User — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati sono in [`docs/cosa-migliorare.md`](cosa-migliorare.md),

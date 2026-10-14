@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "folio volt best practices"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "folio volt best practices user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md

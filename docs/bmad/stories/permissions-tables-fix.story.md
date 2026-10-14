@@ -5,6 +5,8 @@ module: User
 status: in-progress
 created: 2026-10-05
 updated: 2026-10-05
+tags: [docs, user, bmad]
+qmd: "story: create permissions tables in trade_user database user"
 ---
 
 # Story: Create permissions tables in trade_user database

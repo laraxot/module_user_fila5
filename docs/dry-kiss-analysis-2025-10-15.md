@@ -1,3 +1,11 @@
+---
+title: "DRY & KISS Analysis - Modulo User"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "dry & kiss analysis - modulo user user"
+---
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025  

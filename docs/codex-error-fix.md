@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "codex error fix"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "codex error fix user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/codex-error-fix.md

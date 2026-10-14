@@ -1,6 +1,11 @@
 ---
 title: story-user-audit-improvements
 module: User
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, wiki]
+qmd: "bmad story: user module audit improvements user"
 ---
 
 # BMAD Story: User Module Audit Improvements

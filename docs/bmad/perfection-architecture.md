@@ -10,6 +10,9 @@ related:
   - ./perfection-epics.md
   - ./perfection-decision-log.md
   - ./architecture.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "architecture: perfezione assoluta del modulo user user"
 ---
 
 # Architecture: Perfezione assoluta del modulo User

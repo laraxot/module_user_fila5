@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "merge conflict files list"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "merge conflict files list user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflict-files-list.md

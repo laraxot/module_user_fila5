@@ -13,6 +13,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+status: draft
+tags: [docs, user, wiki]
+qmd: "user module operating focus user"
 ---
 
 # User Module Operating Focus

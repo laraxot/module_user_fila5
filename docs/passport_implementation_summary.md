@@ -1,3 +1,11 @@
+---
+title: "Laravel Passport Implementation Summary - User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "laravel passport implementation summary - user module user"
+---
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

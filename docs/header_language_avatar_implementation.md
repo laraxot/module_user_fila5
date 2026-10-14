@@ -1,3 +1,11 @@
+---
+title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
+---
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati

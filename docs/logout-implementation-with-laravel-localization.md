@@ -1,3 +1,11 @@
+---
+title: "Implementazione del Logout con LaravelLocalization"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione del logout con laravellocalization user"
+---
 # Implementazione del Logout con LaravelLocalization 
 
 ## Collegamenti correlati

@@ -305,9 +305,9 @@ $logout = function () {
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Documentazione Volt](../../volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](../../session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 ---
 
@@ -853,11 +853,11 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Volt Folio Logout](../../volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
-- [Logout Blade Implementation](./logout-blade-implementation-2.md)
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Logout Blade Implementation](../../logout-blade-implementation-2.md)
+- [Convenzioni Path](../../path-conventions-2.md)
+- [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
@@ -1369,9 +1369,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Logout](logout-blade-analysis-3.md)
-- [Conclusioni Logout](logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-2.md)
+- [Analisi Logout](../../logout-blade-analysis-3.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1481,9 +1481,9 @@ Questi errori evidenziano l'importanza di:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Logout](logout-blade-analysis-3.md)
-- [Conclusioni Logout](logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-2.md)
+- [Analisi Logout](../../logout-blade-analysis-3.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1641,9 +1641,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
+- [Implementazione Logout](../../logout-blade-implementation-2.md)
+- [Analisi Errore Logout](../../logout-blade-error-analysis-3.md)
+- [Widget Filament Corretto](../../logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -1793,9 +1793,9 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
+- [Implementazione Logout](../../logout-blade-implementation-2.md)
+- [Analisi Errore Logout](../../logout-blade-error-analysis-3.md)
+- [Widget Filament Corretto](../../logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -2014,9 +2014,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Logout](logout-blade-analysis-3.md)
-- [Conclusioni Logout](logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-2.md)
+- [Analisi Logout](../../logout-blade-analysis-3.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -2694,8 +2694,8 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Gestione Sessione](../../session-management-2.md)
+- [Documentazione Volt](../../volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -2849,7 +2849,7 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](../../session-management-2.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -2974,7 +2974,7 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](../../session-management-2.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 
 ---

@@ -10,6 +10,10 @@ related:
   - "./duplicated-profile-form.md"
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
+status: draft
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "oauth: cluster vs `filament/resources/` root user"
 ---
 
 # OAuth: cluster vs `Filament/Resources/` root

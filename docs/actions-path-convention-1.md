@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
   - "./actions-structure-1.md"
+status: draft
 ---
 
 # Convenzione dei Percorsi per le Actions

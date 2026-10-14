@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 - [SaluteOra Factory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md)

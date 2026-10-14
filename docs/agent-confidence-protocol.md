@@ -14,6 +14,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+qmd: "massima confidenza agente user"
 ---
 
 # Massima confidenza agente

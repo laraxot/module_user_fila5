@@ -1,3 +1,11 @@
+---
+title: "User — Analisi architetturale e gap (BMAD, 2026-09-22)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   analisi architetturale e gap (bmad, 2026-09-22) user"
+---
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
 Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + Filament 5, architettura Laraxot/Xot).

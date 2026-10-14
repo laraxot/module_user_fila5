@@ -13,6 +13,8 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
+qmd: "contracts naming & placement in user user"
 ---
 
 # Contracts Naming & Placement in User

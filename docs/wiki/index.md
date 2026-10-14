@@ -71,9 +71,10 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
+| [auth-registration-verification-lifecycle](./concepts/auth-registration-verification-lifecycle.md) | Concept | Identità, verifica email e confine con Gdpr/Sixteen | 2026-10-14 |
 | [socialite-development](./concepts/socialite-development.md) | Concept | Socialite multi-provider | 2026-04-21 |
 | [filament-widget-resource-form-delegation](./concepts/filament-widget-resource-form-delegation.md) | Concept | RegisterWidget → UserForm (DRY) | 2026-06-04 |
-| [filament-widget-no-validate-form](./concepts/filament-widget-no-validate-form.md) | Concept | Submit: getState(), no validateForm | 2026-06-04 |
+| [filament-widget-no-validate-form](../llm-wiki/concepts/filament-widget-no-validate-form.md) | Concept | Submit: getState(), no validateForm | 2026-06-04 |
 | [filament-widget-linear-crud-model-create](./concepts/filament-widget-linear-crud-model-create.md) | Concept | `getUserClass()::create($data)`, no Action | 2026-06-04 |
 | [filament-langserviceprovider-governance](./concepts/filament-langserviceprovider-governance.md) | Concept | LangServiceProvider | 2026-04-21 |
 | [login-page-design-comuni](./concepts/login-page-design-comuni.md) | Concept | Login Design Comuni | 2026-04-21 |

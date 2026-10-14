@@ -11,6 +11,9 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "decision log   superadmin livewire → filament widget user"
 ---
 
 # Decision log — SuperAdmin Livewire → Filament widget

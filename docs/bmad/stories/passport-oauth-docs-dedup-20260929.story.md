@@ -10,6 +10,8 @@ related:
   - "../../passport-oauth-cluster.md"
   - "../../wiki/redundancy/oauth-dual-resource-trees.md"
   - "../../stories/12.4.oauth-dup-resources-ssot.story.md"
+tags: [docs, user, bmad]
+qmd: "story   dedup documentazione 'passport/oauth cluster' user"
 ---
 
 # Story — Dedup documentazione "passport/oauth cluster"

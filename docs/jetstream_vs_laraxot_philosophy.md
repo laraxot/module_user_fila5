@@ -1,3 +1,11 @@
+---
+title: "Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "jetstream vs laraxot: filosofia, religione e politica dei team user"
+---
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**

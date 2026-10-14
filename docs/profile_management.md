@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "profile management in laravel modules user"
 ---
 
 # Profile Management in Laravel Modules

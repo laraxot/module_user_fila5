@@ -1,3 +1,11 @@
+---
+title: "Implementazione Corretta del Logout con Widget Filament"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione corretta del logout con widget filament user"
+---
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati

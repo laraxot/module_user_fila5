@@ -15,6 +15,7 @@ related:
   - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+status: draft
 ---
 
 # Comandi Console - Modulo User

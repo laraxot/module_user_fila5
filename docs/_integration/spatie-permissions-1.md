@@ -16,6 +16,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+status: draft
 ---
 
 # spatie_permissions - User

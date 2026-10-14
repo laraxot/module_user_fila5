@@ -13,6 +13,8 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+status: draft
+qmd: "user module   context-mode discipline user"
 ---
 
 # User Module — Context-Mode Discipline

@@ -17,6 +17,8 @@ related:
   - "./module-commit-push-after-change.md"
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
+status: draft
+updated: 2026-10-13
 ---
 
 # Vietato `create_notifications_table` in User

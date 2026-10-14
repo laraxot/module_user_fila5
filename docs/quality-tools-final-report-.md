@@ -1,3 +1,11 @@
+---
+title: "Quality Tools Final Report - 2025-01-22"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "quality tools final report - 2025-01-22 user"
+---
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo

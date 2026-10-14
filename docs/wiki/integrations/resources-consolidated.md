@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "resources   consolidated documentation user"
 ---
 
 # resources — Consolidated Documentation

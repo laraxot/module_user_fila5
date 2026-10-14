@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "model inheritance analysis 2"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "model inheritance analysis 2 user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-analysis.md

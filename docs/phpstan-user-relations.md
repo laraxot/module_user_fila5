@@ -7,6 +7,7 @@ tags:
   - phpstan
   - larastan
   - user
+qmd: "phpstan user relations user"
 ---
 
 # PHPStan User Relations

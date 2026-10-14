@@ -1,3 +1,11 @@
+---
+title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "correzioni errori di sintassi nei file di traduzione - 2025 user"
+---
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "collegamento alle traduzioni del modulo user user"
 ---
 
 # Collegamento alle Traduzioni del Modulo User

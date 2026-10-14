@@ -1,3 +1,11 @@
+---
+title: "User Module — Epics for Perfection"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user module   epics for perfection user"
+---
 # User Module — Epics for Perfection
 
 **Status**: ✅ Finalized

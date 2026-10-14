@@ -325,7 +325,7 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 ## Riferimenti
 
 - [conflict_resolution_report](conflict-resolution-report.md)
-- [rules-index](rules-index.md)
+- [rules-index](../../rules-index.md)
 
 ---
 
@@ -649,10 +649,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -985,10 +985,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1295,10 +1295,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1631,10 +1631,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1669,7 +1669,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [git-conflicts-resolution-4.md](git-conflicts-resolution-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [git-conflicts-resolution-4.md](../../git-conflicts-resolution-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -1993,10 +1993,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -2329,10 +2329,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -2664,10 +2664,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -3005,10 +3005,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -3340,10 +3340,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -3485,7 +3485,7 @@ Funzionalità team includono:
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
-- [PHPStan Fixes](./phpstan-fixes-8.md)
+- [PHPStan Fixes](../../phpstan-fixes-8.md)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
@@ -3514,7 +3514,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [git-conflicts-resolution-.deprecated.md](git-conflicts-resolution-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [git-conflicts-resolution-.deprecated.md](../../git-conflicts-resolution-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -3838,10 +3838,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -4157,10 +4157,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -4277,7 +4277,7 @@ git -c core.editor="echo" rebase --continue
 ## Riferimenti
 
 - [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
-- [oauth-access-token-removal](oauth-access-token-removal.md)
+- [oauth-access-token-removal](../../oauth-access-token-removal.md)
 
 ---
 
@@ -5216,10 +5216,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](../../widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](../../path-conventions-2.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

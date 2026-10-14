@@ -12,6 +12,8 @@ related:
   - ./livewire-widget-architecture.md
   - ./architecture.md
   - docs/wiki/rules pers. XotBase / lang
+tags: [docs, user, bmad]
+qmd: "architecture: epic 12   gap ui/filament modulo user user"
 ---
 
 # Architecture: epic 12 — gap UI/Filament modulo User

@@ -15,6 +15,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+qmd: "release e readme marketing   user user"
 ---
 
 # Release e README marketing — User

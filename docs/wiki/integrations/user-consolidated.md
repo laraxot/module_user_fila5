@@ -65,8 +65,8 @@ related:
 - [Model States](../../SaluteOra/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-2.md)
+- [Traits Complete Guide](../../traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
@@ -392,8 +392,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-2.md)
+- [Traits Complete Guide](../../traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -687,8 +687,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-2.md)
+- [Traits Complete Guide](../../traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -5059,7 +5059,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](../../user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -5358,7 +5358,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](../../user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

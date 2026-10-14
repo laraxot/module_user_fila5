@@ -11,6 +11,12 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+title: "overview"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, roadmap]
+qmd: "overview user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/00-overview-Modules.md

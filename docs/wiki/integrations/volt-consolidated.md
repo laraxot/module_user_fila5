@@ -530,9 +530,9 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
 
 ## Introduzione
 
@@ -811,15 +811,15 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](../../session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
 
 ## Introduzione
 
@@ -1098,7 +1098,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](../../session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 
 ---
@@ -1396,7 +1396,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
-- [Best Practices Routing](./routing-best-practices-2.md) 
+- [Best Practices Routing](../../routing-best-practices-2.md) 
 ---
 
 ## volt-folio-logout-debug
@@ -1505,8 +1505,8 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](../../path-conventions-2.md)
+- [Analisi Logout Blade](../../logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
@@ -1689,8 +1689,8 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](../../path-conventions-2.md)
+- [Analisi Logout Blade](../../logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
@@ -2123,7 +2123,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
-- [Best Practices Routing](./routing-best-practices-2.md) 
+- [Best Practices Routing](../../routing-best-practices-2.md) 
 
 ---
 

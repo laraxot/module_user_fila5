@@ -1,3 +1,11 @@
+---
+title: "Coverage — User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "coverage   user user"
+---
 # Coverage — User
 
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.

@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "oauth cluster decision making"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "oauth cluster decision making user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md

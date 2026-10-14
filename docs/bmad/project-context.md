@@ -9,6 +9,9 @@ related:
   - ./prd.md
   - ./architecture.md
   - ./tech-spec.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "project context   superadmin nel user menu user"
 ---
 
 # Project context — SuperAdmin nel user menu

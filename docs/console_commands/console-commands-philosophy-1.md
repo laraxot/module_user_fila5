@@ -15,6 +15,7 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
+status: draft
 ---
 
 # Filosofia dei Comandi Console - Modulo User

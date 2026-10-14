@@ -9,6 +9,7 @@ issues:
 discussions:
 related:
   - "../../stories/auth-pages-i18n-en-de-es-2026-10-07.story.md"
+status: draft
 ---
 
 # Sorgenti dei testi delle pagine auth

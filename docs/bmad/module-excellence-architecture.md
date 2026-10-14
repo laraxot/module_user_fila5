@@ -9,6 +9,9 @@ related:
   - ./module-excellence-prd.md
   - ./epics.md
   - ../purpose.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "architecture: user module   stato attuale vs target user"
 ---
 
 # Architecture: User module — stato attuale vs target

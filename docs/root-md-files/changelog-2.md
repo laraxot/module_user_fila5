@@ -1,3 +1,11 @@
+---
+title: "Changelog"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, root-md-files]
+qmd: "changelog user"
+---
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

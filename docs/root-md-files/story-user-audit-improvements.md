@@ -1,3 +1,11 @@
+---
+title: "BMAD Story: User Module Audit Improvements"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, root-md-files]
+qmd: "bmad story: user module audit improvements user"
+---
 # BMAD Story: User Module Audit Improvements
 
 **Story ID**: USER-2026-AUDIT-001  

@@ -4,6 +4,8 @@ type: reference
 tags: [user, database, schema]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "user module   database schema user"
 ---
 
 # User Module — Database Schema

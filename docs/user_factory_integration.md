@@ -1,3 +1,11 @@
+---
+title: "UserFactory Integration - Modulo User e SaluteOra"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "userfactory integration - modulo user e saluteora user"
+---
 # UserFactory Integration - Modulo User e SaluteOra
 
 ## Overview

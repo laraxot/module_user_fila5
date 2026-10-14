@@ -4,6 +4,9 @@ type: entity
 module: User
 updated: 2026-04-20
 related:
+status: draft
+tags: [docs, user, wiki]
+qmd: "socialiteuser user"
 ---
 
 # SocialiteUser

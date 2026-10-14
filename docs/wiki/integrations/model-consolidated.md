@@ -972,7 +972,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis-4.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1192,7 +1192,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis-4.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1223,7 +1223,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis-4.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1938,7 +1938,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2132,7 +2132,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2326,7 +2326,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis-5.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)

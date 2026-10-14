@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./dependency-rules.md"
   - "./dependency.md"
+status: draft
 ---
 
 # Regole per la Verifica dei Componenti Blade

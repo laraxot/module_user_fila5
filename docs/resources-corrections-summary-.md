@@ -1,3 +1,11 @@
+---
+title: "Resources Corrections Summary - 2025-01-22"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "resources corrections summary - 2025-01-22 user"
+---
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo

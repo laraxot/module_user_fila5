@@ -10,6 +10,10 @@ references:
   - ../architecture/module-boundary.md
   - ../brainstorming/module-opportunities.md
   - ../epics/module-roadmap.md
+type: story
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "story   user: baseline bmad user"
 ---
 # Story — User: baseline BMAD
 

@@ -9,6 +9,8 @@ updated: 2026-09-29
 supersedes: null
 related:
   - user-filament-boundary-i18n-20260929.story.md
+tags: [docs, user, bmad]
+qmd: "story   user: dedup baseuserstable orfano + audit clustering/widget/action user"
 ---
 
 # Story — User: dedup BaseUsersTable orfano + audit clustering/widget/action

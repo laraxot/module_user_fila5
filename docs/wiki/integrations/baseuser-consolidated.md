@@ -1398,7 +1398,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [baseuser-refactoring-completed-3.md](baseuser-refactoring-completed-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [baseuser-refactoring-completed-3.md](../../baseuser-refactoring-completed-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -1424,7 +1424,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [baseuser-refactoring-completed-.deprecated.md](baseuser-refactoring-completed-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [baseuser-refactoring-completed-.deprecated.md](../../baseuser-refactoring-completed-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -2507,9 +2507,9 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 ## Links to Related Documentation
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-- [Profile Management](./profile-management-2.md)
-- [Routing Best Practices](./routing-best-practices-2.md)
-- [Session Management](./session-management-2.md)
+- [Profile Management](../../profile-management-2.md)
+- [Routing Best Practices](../../routing-best-practices-2.md)
+- [Session Management](../../session-management-2.md)
 - [[HasTeamsContract]]
 - [[UserContract]]
 - [[Team]]

@@ -10,11 +10,11 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
-  - "./2fa-guide.md"
+  - "../2fa-guide.md"
   - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "../accessor-delegation-pattern.md"
+  - "../actions-path-convention-1.md"
+  - "../actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1013,7 +1013,7 @@ test('user can switch teams', function () {
 - [User Model Architecture](./architecture/user-model.md) - User model design
 - [Permission System](./architecture/permission-system.md) - RBAC architecture
 - [Multi-Tenancy](./architecture/multi-tenancy.md) - Tenant isolation
-- [Team System](./architecture/teams.md) - Team collaboration
+- [Team System](../teams.md) - Team collaboration
 
 ### Authentication
 - [Authentication Flow](./auth/authentication-flow.md) - Login/logout process
@@ -1032,7 +1032,7 @@ test('user can switch teams', function () {
 - [API Integration](./development/api.md) - API usage guide
 
 ### Security
-- [Security Best Practices](./security/best-practices.md) - Security guidelines
+- [Security Best Practices](../best-practices.md) - Security guidelines
 - [Password Policies](./security/passwords.md) - Password requirements
 - [Audit Logging](./security/audit-log.md) - Security audit trail
 

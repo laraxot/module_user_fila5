@@ -207,7 +207,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](./module-structure-2.md) 
+- [Struttura Moduli](../../module-structure-2.md) 
 ---
 
 ## translation-city-field-refactor-.deprecated
@@ -648,7 +648,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-3.md](../../translation-city-field-refactor-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -696,7 +696,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](../../translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -1025,10 +1025,10 @@ return [
 
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-2.md)
-- [Convenzioni di Codice](code-conventions.md)
+- [Convenzioni di Codice](../../code_conventions.md)
+- [Best Practices per le Traduzioni](../../translation-best-practices-2.md)
+- [Struttura del Modulo](../../module-structure-2.md)
+- [Convenzioni di Codice](../../code-conventions.md)
 ---
 
 ## translation-keys
@@ -1854,7 +1854,7 @@ return [
 
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](CODE_CONVENTIONS.md)
+- [Convenzioni di Codice](../../code_conventions.md)
 
 ---
 

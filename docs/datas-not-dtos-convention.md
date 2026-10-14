@@ -12,6 +12,9 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
+updated: 2026-10-07
+qmd: "datas, non dtos user"
 ---
 
 # Datas, non DTOs

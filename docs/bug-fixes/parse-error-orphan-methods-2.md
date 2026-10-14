@@ -10,6 +10,12 @@ related:
   - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
+title: "parse error orphan methods 2"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, bug-fixes]
+qmd: "parse error orphan methods 2 user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-.md

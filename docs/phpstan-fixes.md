@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # User Module - PHPStan Fixes Session 2025-10-01
@@ -849,14 +850,6 @@ After applying fixes:
 - All Filament components should extend XotBase classes for consistency
 - Type system improvements enhance code reliability and maintainability 
 ---
-title: "PHPStan Compliance — User Module"
-type: concept
-tags: [phpstan, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan-fixes phpstan compliance — user module"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"

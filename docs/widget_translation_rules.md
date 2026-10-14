@@ -1,3 +1,11 @@
+---
+title: "Widget Translation Rules - SaluteOra Project"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "widget translation rules - saluteora project user"
+---
 # Widget Translation Rules - SaluteOra Project
 
 ## Core Principles

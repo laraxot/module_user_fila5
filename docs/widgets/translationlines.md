@@ -12,6 +12,7 @@ related:
   - "./implementation-summary.md"
   - "./implementation.md"
   - "./translation-guidelines.md"
+status: draft
 ---
 
 # Widget Translation Guidelines

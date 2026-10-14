@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "quality status 1"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "quality status 1 user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status-11-Modules.md

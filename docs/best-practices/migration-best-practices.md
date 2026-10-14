@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+status: draft
 ---
 
 # MIGRATION_BEST_PRACTICES - Modulo User

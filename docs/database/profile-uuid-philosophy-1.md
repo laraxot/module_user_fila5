@@ -11,6 +11,7 @@ related:
   - "./migration-safety-rules-1.md"
   - "./migration-safety-rules.md"
   - "./profile-uuid-philosophy.md"
+status: draft
 ---
 
 # Profile UUID Philosophy - Zen Approach

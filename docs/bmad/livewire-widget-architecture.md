@@ -10,6 +10,9 @@ related:
   - ./livewire-widget-tech-spec.md
   - ./livewire-inventory.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "architecture: un albero ui filament user"
 ---
 
 # Architecture: un albero UI Filament

@@ -15,6 +15,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+qmd: "disciplina agenti per massimizzare la confidenza user"
 ---
 
 # Disciplina agenti per massimizzare la confidenza

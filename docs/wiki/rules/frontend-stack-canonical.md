@@ -12,6 +12,9 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+status: draft
+tags: [docs, user, wiki]
+qmd: "stack frontend   modulo user user"
 ---
 
 # Stack frontend — modulo User

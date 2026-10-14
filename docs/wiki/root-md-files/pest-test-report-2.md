@@ -1,6 +1,11 @@
 ---
 title: pest-test-report-2
 module: User
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, wiki]
+qmd: "<nome progetto> user module - pest test implementation report user"
 ---
 
 # <nome progetto> User Module - Pest Test Implementation Report

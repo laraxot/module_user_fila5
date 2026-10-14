@@ -11,6 +11,8 @@ related:
   - ../livewire-inventory.md
   - ../advantages-filament-only.md
   - ../livewire-widget-admin-panel-provider.md
+updated: 2026-10-13
+tags: [docs, user, bmad]
 ---
 
 # 10.4 — residui Livewire Cluster C

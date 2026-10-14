@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "missing filament resources"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "missing filament resources user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/missing-filament-resources-analysis.md

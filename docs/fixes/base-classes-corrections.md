@@ -15,6 +15,7 @@ related:
   - "./phpstan-fixes-1.md"
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
+status: draft
 ---
 
 # Correzione Estensioni Classi Base - Modulo User

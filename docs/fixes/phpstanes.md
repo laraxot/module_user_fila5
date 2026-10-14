@@ -10,6 +10,12 @@ related:
   - "./base-classes-corrections.md"
   - "./phpstan-fixes-1.md"
   - "./phpstan-fixes.md"
+title: "phpstanes"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user, fixes]
+qmd: "phpstanes user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md

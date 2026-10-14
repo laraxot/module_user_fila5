@@ -12,6 +12,7 @@ related:
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
   - "./readme.md"
+status: draft
 ---
 
 # Filosofia dei Comandi Console - Modulo User

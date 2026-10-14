@@ -1,3 +1,11 @@
+---
+title: "Componente di Logout"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "componente di logout user"
+---
 # Componente di Logout
 
 ## Problemi Identificati

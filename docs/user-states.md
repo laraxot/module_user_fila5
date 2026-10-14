@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "Configurazione Stati Utente (state)"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "configurazione stati utente (state) user"
 ---
 # Configurazione Stati Utente (state)
 

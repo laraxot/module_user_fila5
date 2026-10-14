@@ -16,6 +16,8 @@ related:
   - "./folio-pages-owner-pattern.md"
   - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
   - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
+status: draft
+qmd: "widget filament → schema in `*form` (ssot) user"
 ---
 
 # Widget Filament → schema in `*Form` (SSoT)

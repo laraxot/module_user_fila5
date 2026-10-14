@@ -1,3 +1,11 @@
+---
+title: "Implementazione del Logout con Volt"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione del logout con volt user"
+---
 # Implementazione del Logout con Volt
 
 ## Il Problema

@@ -10,6 +10,7 @@ related:
   - ./quality-status.md
   - ./testing.md
   - ../../Xot/docs/wiki/concepts/progetto-perfezione-criteri.md
+status: draft
 ---
 
 # Quality roadmap — User

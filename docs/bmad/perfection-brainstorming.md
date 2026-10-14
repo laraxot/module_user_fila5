@@ -10,6 +10,9 @@ related:
   - ./perfection-decision-log.md
   - ./epics.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: audit a 360 gradi, modulo user verso la perfezione assoluta user"
 ---
 
 # Brainstorming: audit a 360 gradi, modulo User verso la perfezione assoluta

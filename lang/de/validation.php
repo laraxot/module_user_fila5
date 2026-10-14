@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 // Validazione de del modulo User: la base e' il set completo di Modules/Xot, qui si aggiungono le regole che Xot non ha e i messaggi propri di User.
 // Prima era una copia byte per byte del file italiano e, caricata dopo quella di Xot, la oscurava (DCP-146).
+$base = (array) require base_path('Modules/Xot/lang/de/validation.php');
+
 return array_replace_recursive(
-    require base_path('Modules/Xot/lang/de/validation.php'),
+    $base,
     [
         'date_equals' => 'Das Feld :attribute muss ein Datum gleich :date sein.',
         'ends_with' => 'Das Feld :attribute muss mit einem der folgenden Werte enden: :values.',

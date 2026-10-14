@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "updates 2025"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "updates 2025 user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/updates-12-Modules.md

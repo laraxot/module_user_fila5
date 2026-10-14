@@ -1,3 +1,11 @@
+---
+title: "Database Issues in User Module"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "database issues in user module user"
+---
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table

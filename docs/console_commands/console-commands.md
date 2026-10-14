@@ -10,6 +10,12 @@ related:
   - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./readme.md"
+title: "console commands"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user, console_commands]
+qmd: "console commands user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/console-commands-philosophy.md

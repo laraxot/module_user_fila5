@@ -4,6 +4,8 @@ type: report
 module: User
 updated: 2026-09-01
 qmd: "cosa migliorare user phpstan phpmd phpinsights coverage debito priorita"
+status: draft
+tags: [docs, user]
 ---
 
 # Cosa migliorare — modulo User

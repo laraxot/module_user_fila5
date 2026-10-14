@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+title: "passport cluster current status"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "passport cluster current status user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-current-status.md

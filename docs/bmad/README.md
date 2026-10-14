@@ -6,6 +6,11 @@ alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-identity"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, user, bmad]
+qmd: "user   bmad method integration user"
 ---
 
 # User — BMAD Method Integration

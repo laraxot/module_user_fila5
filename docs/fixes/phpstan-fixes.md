@@ -15,6 +15,7 @@ related:
   - "./base-classes-corrections.md"
   - "./phpstan-fixes-1.md"
   - "./phpstanes.md"
+status: draft
 ---
 
 # Correzioni PHPStan nel Modulo User

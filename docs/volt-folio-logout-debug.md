@@ -1,3 +1,11 @@
+---
+title: "Debug: Perché logout.blade.php non funziona (Volt + Folio)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "debug: perché logout.blade.php non funziona (volt + folio) user"
+---
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema

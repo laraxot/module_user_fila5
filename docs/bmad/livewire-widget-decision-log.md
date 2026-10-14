@@ -6,6 +6,11 @@ related:
   - ./decision-log.md
   - ./livewire-widget-architecture.md
   - ../../../Xot/docs/bmad/livewire-widget-decision-log.md
+type: note
+status: stub
+updated: 2026-10-13
+tags: [docs, user, bmad]
+qmd: "livewire widget decision log user"
 ---
 
 Canon decisioni modulo: [decision-log.md](./decision-log.md).

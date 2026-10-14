@@ -1,3 +1,11 @@
+---
+title: "Actions Structure"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "actions structure user"
+---
 # Actions Structure 
 
 ## Directory Structure

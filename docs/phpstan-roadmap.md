@@ -1,3 +1,11 @@
+---
+title: "PHPStan Roadmap: User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpstan roadmap: user module user"
+---
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12

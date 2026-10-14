@@ -11,6 +11,12 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+title: "later"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, roadmap]
+qmd: "later user"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/03-later-Modules.md

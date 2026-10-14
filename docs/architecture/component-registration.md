@@ -16,6 +16,7 @@ related:
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Registrazione dei Componenti Blade nel Modulo User

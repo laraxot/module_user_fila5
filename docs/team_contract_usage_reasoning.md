@@ -1,3 +1,11 @@
+---
+title: "TeamContract Usage Reasoning"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "teamcontract usage reasoning user"
+---
 # TeamContract Usage Reasoning
 
 ## Overview

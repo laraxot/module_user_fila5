@@ -20,6 +20,9 @@ related:
   - ../stories/10.3.retire-auth-livewire-twins.story.md
   - ../stories/10.4.retire-gdpr-profile-livewire.story.md
   - ../stories/11.1.team-change-widget.story.md
+updated: 2026-10-13
+tags: [docs, user, bmad]
+qmd: "inventario piattaforma: livewire http → filament widget user"
 ---
 
 # Inventario piattaforma: Livewire HTTP → Filament widget

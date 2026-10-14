@@ -16,6 +16,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+status: draft
 ---
 
 # Two-Factor Authentication - 70% Completato

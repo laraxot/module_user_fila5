@@ -19,6 +19,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
