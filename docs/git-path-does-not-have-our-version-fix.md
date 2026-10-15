@@ -72,10 +72,10 @@ git add app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource/Pages/
 
 ### 3. Risolvere altri conflitti
 
-Se c'è `both added` (es. docs/code-quality-analysis-3.md):
+Se c'è `both added` (es. docs/code-quality-analysis.md):
 
 ```bash
-git add docs/code-quality-analysis-3.md
+git add docs/code-quality-analysis.md
 ```
 
 ### 4. Continuare rebase

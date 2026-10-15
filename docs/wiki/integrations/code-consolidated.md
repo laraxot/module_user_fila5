@@ -442,7 +442,7 @@ this optimization will create a more secure, maintainable, and performant user a
 
 ## code-quality-analysis-3
 
-*Consolidated from: `code-quality-analysis-3.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -779,7 +779,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-4
 
-*Consolidated from: `code-quality-analysis-4.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -1116,7 +1116,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-5
 
-*Consolidated from: `code-quality-analysis-5.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
