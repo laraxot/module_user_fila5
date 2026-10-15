@@ -121,9 +121,9 @@ class LogoutPage
 
 ## Collegamenti
 
-- [Documentazione Volt](./volt_logout.md)
-- [Best Practices Routing](./routing_best_practices.md)
-- [Struttura Directory](./directory_structure_checklist.md) 
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
+- [Struttura Directory](./directory-structure-checklist.md) 
 ---
 module: theme
 topic: logout-blade-structure

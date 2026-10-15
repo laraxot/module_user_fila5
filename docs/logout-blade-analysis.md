@@ -10,11 +10,11 @@ qmd: "analisi del file logout.blade.php user"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
 ## Panoramica
 

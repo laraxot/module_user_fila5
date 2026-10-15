@@ -154,7 +154,7 @@ status: draft
 
 ## Collegamenti
 
-- [README Modulo User](./readme.md)
+- [README Modulo User](./README.md)
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 - [Models Documentation](./models/readme.md)
 

@@ -1,25 +1,12 @@
 ---
-title: "PHPMD e PHP Insights Corrections - [DATE]"
-type: concept
-tags: [phpmd, phpinsights, corrections]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd-phpinsights-corrections phpmd e php insights corrections - [date]"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+title: "PHPMD e PHP Insights Corrections - 2025-01-22"
+type: note
 status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpmd e php insights corrections - 2025-01-22 user"
 ---
-
-# PHPMD e PHP Insights Corrections - [DATE]
+# PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
 Correggere warning PHPMD e PHP Insights nel modulo User, mantenendo PHPStan a 0 errori.
@@ -119,6 +106,22 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 
 ## Collegamenti
 
-- [Resources Corrections Summary](./resources-corrections-summary-[date].md)
+- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
+---
+module: theme
+topic: phpmd-phpinsights-corrections-
+canonical: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md

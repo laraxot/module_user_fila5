@@ -22,7 +22,7 @@ status: draft
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Folio Logout](./volt-folio-logout-panoramica.md)
 - [Implementazione Logout](./logout-blade-implementation-posizione-corretta.md)
