@@ -1072,7 +1072,7 @@ Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./Models/T
 
 ## hasteams_currentteam_method_choice
 
-*Consolidated from: `hasteams_currentteam_method_choice.md`*
+*Consolidated from: `hasteams-currentteam-method-choice.md`*
 
 
 ## Analysis and Decision
@@ -1107,7 +1107,7 @@ This decision ensures the codebase remains maintainable, scalable, and consisten
 
 ## hasteams_trait_analysis
 
-*Consolidated from: `hasteams_trait_analysis.md`*
+*Consolidated from: `hasteams-trait-analysis.md`*
 
 
 ## Overview
@@ -1150,7 +1150,7 @@ After reviewing the duplicate methods in the `HasTeams` trait, the recommendatio
 
 ## hasteams_trait_filosofia_e_correzione_completa
 
-*Consolidated from: `hasteams_trait_filosofia_e_correzione_completa.md`*
+*Consolidated from: `hasteams-trait-filosofia-e-correzione-completa.md`*
 
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`

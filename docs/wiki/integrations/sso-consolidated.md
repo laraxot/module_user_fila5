@@ -2126,7 +2126,7 @@ class SsoTest extends TestCase
 
 ## sso_providers_implementation
 
-*Consolidated from: `sso_providers_implementation.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 
 
 ## Overview

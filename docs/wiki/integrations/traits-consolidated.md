@@ -1857,14 +1857,14 @@ class User extends Authenticatable
 
 ## Collegamenti
 
-- [Modulo User](./readme.md)
+- [Modulo User](./README.md)
 - [Xot Traits](../../../../Xot/docs)
 
 ---
 
 ## traits_complete_guide
 
-*Consolidated from: `traits_complete_guide.md`*
+*Consolidated from: `traits-complete-guide.md`*
 
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -2213,7 +2213,7 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
-- [jetstream_vs_laraxot_philosophy.md](jetstream_vs_laraxot_philosophy.md)
+- [jetstream_vs_laraxot_philosophy.md](jetstream-vs-laraxot-philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../Xot/docs/RELATION_X_USAGE.md)
@@ -2286,7 +2286,7 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 
 ## traits_hasteams_analisi_corretta
 
-*Consolidated from: `traits_hasteams_analisi_corretta.md`*
+*Consolidated from: `traits-hasteams-analisi-corretta.md`*
 
 
 ## Comprensione della Filosofia `belongsToManyX`

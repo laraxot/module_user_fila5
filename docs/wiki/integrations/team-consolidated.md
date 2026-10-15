@@ -908,7 +908,7 @@ Added to permanent memory:
 
 ## team_bindings_fix
 
-*Consolidated from: `team_bindings_fix.md`*
+*Consolidated from: `team-bindings-fix.md`*
 
 
 ## Panoramica
@@ -1088,7 +1088,7 @@ $this->assertTrue($user->belongsToTeam($team));
 
 ## team_contract_usage_reasoning
 
-*Consolidated from: `team_contract_usage_reasoning.md`*
+*Consolidated from: `team-contract-usage-reasoning.md`*
 
 
 ## Overview

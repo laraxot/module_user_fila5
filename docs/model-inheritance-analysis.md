@@ -156,3 +156,12 @@ Dopo le modifiche, eseguire:
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
+
+
+---
+
+## Contenuto assorbito da `model-inheritance-analysis.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_analysis.md](./model-inheritance-analysis.md).

@@ -265,7 +265,7 @@ public static function getTableColumns(): array
 
 ## resources-corrections-summary-
 
-*Consolidated from: `resources-corrections-summary-.md`*
+*Consolidated from: `resources-corrections-summary.md`*
 
 module: theme
 topic: resources-corrections-summary-

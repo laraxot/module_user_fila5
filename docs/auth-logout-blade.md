@@ -30,13 +30,13 @@ status: draft
 - [Logout Page Fix](./logout-page-fix.md)
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)
-- [Convenzioni Path](./path_conventions.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout_page_fix.md)
+- [Logout Page Fix](./logout-page-fix.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

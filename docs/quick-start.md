@@ -19,7 +19,7 @@ php artisan migrate --path=Modules/User/database/migrations
 ## Create First User
 
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Facades\Hash;
 
 $user = User::create([

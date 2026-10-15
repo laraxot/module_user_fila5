@@ -165,3 +165,11 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+
+## Cartella `tests/` (minuscolo obbligatorio)
+
+- Solo `tests/` minuscolo. `Tests/` e' vietato.
+
+## PHPStan standing order
+
+- Zero errori PHPStan; non modificare `phpstan.neon`.

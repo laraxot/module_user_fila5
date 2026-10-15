@@ -3636,7 +3636,7 @@ class User extends Authenticatable
 
 ## user_factory_advanced_integration
 
-*Consolidated from: `user_factory_advanced_integration.md`*
+*Consolidated from: `user-factory-advanced-integration.md`*
 
 
 ## Post Deep-Study Analysis 
@@ -3925,8 +3925,8 @@ public function run(): void
 - [Model States](../../SaluteOra/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation  
@@ -3937,7 +3937,7 @@ public function run(): void
 
 ## user_factory_complete_ecosystem_integration
 
-*Consolidated from: `user_factory_complete_ecosystem_integration.md`*
+*Consolidated from: `user-factory-complete-ecosystem-integration.md`*
 
 
 ## 🎯 Integration Achievement
@@ -4355,7 +4355,7 @@ class MultiModuleSeeder extends Seeder {
 
 ## user_factory_integration
 
-*Consolidated from: `user_factory_integration.md`*
+*Consolidated from: `user-factory-integration.md`*
 
 
 ## Overview
@@ -4718,7 +4718,7 @@ public function test_bulk_sti_creation()
 
 ## user_invitation
 
-*Consolidated from: `user_invitation.md`*
+*Consolidated from: `user-invitation.md`*
 
 
 
@@ -5371,7 +5371,7 @@ $gdprTests = [
 
 ## userfactory_advanced_implementation_complete
 
-*Consolidated from: `userfactory_advanced_implementation_complete.md`*
+*Consolidated from: `userfactory-advanced-implementation-complete.md`*
 
 
 ## 🎉 Mission Accomplished

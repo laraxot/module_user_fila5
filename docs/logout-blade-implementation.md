@@ -12,11 +12,11 @@ qmd: "implementazione corretta di logout.blade.php user"
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

@@ -657,7 +657,7 @@ protected function getConfirmationRoute(): string
 
 ## registration_widget
 
-*Consolidated from: `registration_widget.md`*
+*Consolidated from: `registration-widget.md`*
 
 
 ## Overview
@@ -728,7 +728,7 @@ protected function getConfirmationRoute(): string
 
 ## registration_widget_fileupload_fix
 
-*Consolidated from: `registration_widget_fileupload_fix.md`*
+*Consolidated from: `registration-widget-fileupload-fix.md`*
 
 
 ## Problema Risolto
@@ -955,7 +955,7 @@ Per evitare simili problemi in futuro:
 
 ## registration_widget_update
 
-*Consolidated from: `registration_widget_update.md`*
+*Consolidated from: `registration-widget-update.md`*
 
 
 ## Nota del 2025-05-15

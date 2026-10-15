@@ -2582,7 +2582,7 @@ La documentazione è progettata per essere autosufficiente e ridurre la necessit
 
 ## fullcalendar_scheduler_documentation_summary
 
-*Consolidated from: `fullcalendar_scheduler_documentation_summary.md`*
+*Consolidated from: `fullcalendar-scheduler-documentation-summary.md`*
 
 
 ## Panoramica
@@ -2617,7 +2617,7 @@ Documentazione base esistente per:
 - Configurazione di base in SaluteOra
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler_license_key.md)
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2759,7 +2759,7 @@ La documentazione è progettata per essere autosufficiente e ridurre la necessit
 
 ## fullcalendar_scheduler_license
 
-*Consolidated from: `fullcalendar_scheduler_license.md`*
+*Consolidated from: `fullcalendar-scheduler-license.md`*
 
 
 ## License Key Overview
@@ -2848,14 +2848,14 @@ Ensure your license key is compatible with the version of FullCalendar Scheduler
 
 ## fullcalendar_scheduler_license_key_invalid
 
-*Consolidated from: `fullcalendar_scheduler_license_key_invalid.md`*
+*Consolidated from: `fullcalendar-scheduler-license-key-invalid.md`*
 
 
 ---
 
 ## fullcalendar_scheduler_license_troubleshooting
 
-*Consolidated from: `fullcalendar_scheduler_license_troubleshooting.md`*
+*Consolidated from: `fullcalendar-scheduler-license-troubleshooting.md`*
 
 
 ## Panoramica
@@ -3280,7 +3280,7 @@ La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare
 
 ## fullcalendar_scheduler_quick_reference
 
-*Consolidated from: `fullcalendar_scheduler_quick_reference.md`*
+*Consolidated from: `fullcalendar-scheduler-quick-reference.md`*
 
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

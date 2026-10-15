@@ -22,7 +22,7 @@ status: draft
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -206,7 +206,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
