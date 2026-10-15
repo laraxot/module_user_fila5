@@ -1157,4 +1157,10 @@ return [
         'help_password' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
         'help_support' => 'Per assistenza contatta l\'ufficio competente.',
     ],
+    'forgot-password' => [
+        'title' => 'Password dimenticata?',
+        'subtitle' => 'Inserisci la tua email per ricevere le istruzioni',
+        'back_to_login' => 'Torna al login',
+        'submit' => 'Invia istruzioni',
+    ],
 ];

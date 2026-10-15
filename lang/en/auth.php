@@ -217,4 +217,10 @@ return [
         'register_cta_text' => 'Do not have an account yet?',
         'register_cta_link' => 'Create your account',
     ],
+    'forgot-password' => [
+        'title' => 'Forgot your password?',
+        'subtitle' => 'Enter your email address to receive the instructions',
+        'back_to_login' => 'Back to sign in',
+        'submit' => 'Send instructions',
+    ],
 ];
