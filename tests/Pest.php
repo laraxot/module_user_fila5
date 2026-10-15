@@ -1,2 +1,3 @@
 <?php
-uses(\Modules\User\Tests\TestCase::class)->in('Unit');
+
+declare(strict_types=1);
