@@ -1,3 +1,24 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Improvements - User Module"
+type: concept
+tags: [phpstan, dry, kiss, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-dry-kiss-improvements- phpstan level 10 + dry/kiss improvements - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary
@@ -229,8 +250,11 @@ When creating new models in User module:
 - [Model Inheritance Rules](./model-inheritance-rules.md)
 - [PHPStan Level 10 Full Analysis (Xot Module)](../../Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Model Refactoring 2025-10-15](../../Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
+- [PHPStan Level 10 Full Analysis (Xot Module)](../../xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
+- [DRY/KISS Model Refactoring 2025-10-15](../../xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 
 ---
 
 *Last Updated: 17 October 2025*
+*Status: ✅ PHPStan Level 10 Compliant*
 *Status: ✅ PHPStan Level 10 Compliant*

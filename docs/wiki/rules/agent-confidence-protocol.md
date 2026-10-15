@@ -5,6 +5,21 @@ metadata:
   type: rule
   enforced: on-demand per task User
   updated: 2026-05-26
+related:
+  - "./can-comment-retired-wrong-placement.md"
+  - "./frontend-stack-canonical.md"
+  - "./header-auth-flow.md"
+  - "./header-design-colors.md"
+  - "./module-commit-push-after-change.md"
+  - "./navigation-properties.md"
+  - "./no-filament-labels.md"
+  - "./no-notifications-migration-in-user-module.md"
+title: "Agent Confidence Protocol — User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "agent confidence protocol   user module user"
 ---
 
 # Agent Confidence Protocol — User Module

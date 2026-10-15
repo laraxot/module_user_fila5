@@ -1,3 +1,23 @@
+---
+title: "PHPStan widget property types"
+type: concept
+tags: [phpstan, widget, property, types]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-widget-property-types phpstan widget property types"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./filament-user-creation-pty-error.md"
+  - "./git-merge-conflict-inventory-stato-rinominato.md"
+  - "./git-merge-conflict-inventory.md"
+  - "./git-push-lfs-missing-objects.md"
+  - "./phpstan-module-analysis-memory.md"
+  - "./phpstan-widget-property-types-stato-rinominato.md"
+  - "./spatie-permission-team-model-not-configured.md"
+status: draft
+---
+
 # PHPStan widget property types
 
 ## Contesto

@@ -78,7 +78,9 @@ class Logo extends XotBasePage
         $this->form->fill($data);
     }
 
-    /** @return array<int, \Filament\Actions\Action> */
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateLogoFormActions(): array
     {
         return [
@@ -87,7 +89,7 @@ class Logo extends XotBasePage
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

@@ -1,3 +1,11 @@
+---
+title: "terms_and_conditions"
+type: note
+status: draft
+updated: 2026-09-24
+tags: [docs, user, -integration]
+qmd: "terms_and_conditions user"
+---
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

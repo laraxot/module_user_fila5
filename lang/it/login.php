@@ -3,27 +3,55 @@
 declare(strict_types=1);
 
 return [
+    'logout_in_progress' => 'Disconnessione in corso…',
+    'email_verified' => 'Indirizzo email verificato. Grazie!',
+    'password_reset_page' => [
+        'title' => 'Reimposta la password',
+        'intro' => 'Inserisci l\'email del tuo account: ti invieremo un link per scegliere una nuova password.',
+        'return_to_login' => 'Torna all\'accesso',
+        'email_label' => 'Indirizzo email',
+        'submit' => 'Invia il link di reimpostazione',
+    ],
     'fields' => [
         'email' => [
             'label' => 'Email',
-            'description' => 'Email',
-            'helper_text' => '',
             'placeholder' => 'Inserisci la tua email',
+            'help' => 'Inserisci il tuo indirizzo email per accedere',
+            'description' => 'email',
+            'helper_text' => '',
             'tooltip' => '',
         ],
         'password' => [
             'label' => 'Password',
-            'description' => 'Password',
-            'helper_text' => '',
             'placeholder' => 'Inserisci la tua password',
+            'help' => 'Inserisci la password del tuo account',
+            'description' => 'password',
+            'helper_text' => '',
             'tooltip' => '',
         ],
         'remember' => [
             'label' => 'Ricordami',
-            'description' => 'Ricordami',
+            'placeholder' => '',
+            'help' => 'Mantieni la sessione attiva su questo dispositivo',
+            'description' => 'remember',
             'helper_text' => '',
-            'placeholder' => 'Ricordami',
             'tooltip' => '',
+        ],
+        'name' => [
+            'label' => 'Nome completo',
+            'placeholder' => 'Inserisci il tuo nome completo',
+            'help' => 'Il tuo nome completo per la registrazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Conferma password',
+            'placeholder' => 'Ripeti la password',
+            'help' => 'Ripeti la password per conferma',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
@@ -31,6 +59,7 @@ return [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
             'error' => 'Credenziali non valide',
+            'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
         ],
         'register' => [
             'label' => 'Registrati',
@@ -39,8 +68,13 @@ return [
         ],
         'forgot_password' => [
             'label' => 'Password dimenticata?',
-            'success' => 'Istruzioni inviate alla tua email',
-            'error' => 'Impossibile inviare le istruzioni',
+            'success' => 'Istruzioni di reset inviate alla tua email',
+            'error' => 'Impossibile inviare le istruzioni di reset',
+        ],
+        'reset_password' => [
+            'label' => 'Reimposta password',
+            'success' => 'Password reimpostata con successo',
+            'error' => 'Impossibile reimpostare la password',
         ],
         'hidePassword' => [
             'label' => 'Nascondi Password',
@@ -52,6 +86,29 @@ return [
             'icon' => 'showPassword',
             'tooltip' => 'Mostra Password',
         ],
+        'authenticate' => [
+            'label' => 'authenticate',
+            'icon' => 'authenticate',
+            'tooltip' => 'authenticate',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+    ],
+    'no_account' => 'Non hai ancora un account?',
+    'register_now' => 'Registrati',
+    'forgot_password_text' => 'Hai dimenticato la password?',
+    'reset_it' => 'Reimpostala',
+    'messages' => [
+        'logout_success' => 'Logout effettuato con successo',
+        'logout_error' => 'Si è verificato un errore durante il logout',
+        'user_not_allowed' => 'La tua email non è autorizzata',
+        'registration_not_enabled' => 'La registrazione utenti non è consentita',
+        'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
+        'general_error' => 'Si è verificato un errore. Riprova più tardi.',
+        'unauthorized' => 'Non hai i permessi necessari per questa operazione.',
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -71,8 +128,4 @@ return [
     ],
     'already_registered' => 'Non hai ancora un account?',
     'register' => 'Registrati ora',
-    'no_account' => 'Non hai ancora un account?',
-    'register_now' => 'Registrati ora',
-    'forgot_password_text' => 'Hai dimenticato la tua password?',
-    'reset_it' => 'Reimpostala qui',
 ];

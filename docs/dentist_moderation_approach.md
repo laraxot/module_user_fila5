@@ -1,3 +1,11 @@
+---
+title: "Dentist Moderation Approach in User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "dentist moderation approach in user module user"
+---
 # Dentist Moderation Approach in User Module
 
 ## Overview

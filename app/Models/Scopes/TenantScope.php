@@ -11,18 +11,18 @@ use Illuminate\Database\Eloquent\Scope;
 
 /**
  * Scope che limita le query ai record associati al tenant corrente.
+ *
+ * @implements Scope<Model>
  */
-/** @implements Scope<Model> */
 class TenantScope implements Scope
 {
     /**
      * Apply the scope to a given Eloquent query builder.
      */
-    /** @param Builder<covariant Model> $builder */
     public function apply(Builder $builder, Model $_model): void
     {
         $tenant_id = Filament::getTenant()?->getKey();
-        if (null !== $tenant_id) {
+        if ($tenant_id !== null) {
             $builder->where('tenant_id', '=', $tenant_id);
         }
     }

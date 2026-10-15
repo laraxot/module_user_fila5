@@ -1,3 +1,14 @@
+---
+title: "Piano di Implementazione Componenti Header"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+qmd: "piano di implementazione componenti header user"
+---
+
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -165,7 +176,7 @@ class NavigationTest extends TestCase
 ### 7.1 Aggiornare
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 
 ## Timeline
 
@@ -194,4 +205,4 @@ class NavigationTest extends TestCase
 ## Collegamenti Correlati
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md) 
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 

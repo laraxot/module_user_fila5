@@ -1,3 +1,11 @@
+---
+title: "Correzioni PHPStan - Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "correzioni phpstan - modulo user user"
+---
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
@@ -141,7 +149,3 @@ public string $currentState = 'default';
 1. **PHPStan Level**: Considerare l'uso di `@phpstan-ignore-next-line` per falsi positivi confermati
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
-
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-2025.md

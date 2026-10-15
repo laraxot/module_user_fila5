@@ -1,3 +1,14 @@
+---
+title: "Boost Skill Fix Summary - User Module"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+qmd: "boost skill fix summary - user module user"
+---
+
 # Boost Skill Fix Summary - User Module
 
 **Date**: 2026-03-02  

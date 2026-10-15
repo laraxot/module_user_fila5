@@ -1,3 +1,11 @@
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, console_commands]
+qmd: "filosofia dei comandi console - modulo user user"
+---
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -455,8 +463,6 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
-
-
-
+*Ultimo aggiornamento: 2025-01-27*
 
 

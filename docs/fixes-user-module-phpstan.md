@@ -1,3 +1,24 @@
+---
+title: "Correzioni PHPStan per il Modulo User"
+type: concept
+tags: [fixes, user, module, phpstan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fixes-user-module-phpstan correzioni phpstan per il modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -151,8 +172,8 @@ Gli errori rimanenti (94) sono principalmente:
 
 ## Collegamenti
 
-- [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
-- [Configurazione Password](../../config/password.php)
+- [Test di Validazione](../tests/Unit/UserModulePhpstanFixesTest.php)
+- [Configurazione Password](../config/password.php)
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 
 ## Note per il Futuro
@@ -173,3 +194,4 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
+*Ultimo aggiornamento: dicembre 2024*

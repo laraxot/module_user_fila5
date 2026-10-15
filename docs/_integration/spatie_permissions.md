@@ -1,14 +1,13 @@
-# spatie_permissions - User
+---
+module: theme
+topic: spatie_permissions
+canonical: ../../../../Themes/docs/shared-components/spatie-permissions.md
+title: "spatie permissions"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, _integration]
+qmd: "spatie permissions user"
+---
 
-## Overview
-
-Documentazione per spatie_permissions nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
+See canonical documentation: ../../../../Themes/docs/shared-components/spatie-permissions.md

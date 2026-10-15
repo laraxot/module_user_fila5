@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 @auth
     <x-filament::dropdown>
@@ -56,7 +55,6 @@ declare(strict_types=1);
             <x-filament::dropdown.list.item
                 icon="heroicon-m-arrow-right-on-rectangle"
                 :href="route('logout')"
-                x-on:click.prevent="$el.closest('form').submit()"
             >
                 {{ __('Log Out') }}
             </x-filament::dropdown.list.item>

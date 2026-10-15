@@ -2,16 +2,13 @@
 title: "Filament register widget — getState and userClass create"
 type: concept
 sources:
-  - ../../../app/Filament/Widgets/Auth/RegisterWidget.php
-  - ../../../app/Filament/Resources/UserResource/Schemas/UserForm.php
 confidence: high
 created: 2026-06-04
 updated: 2026-06-04
 tags: [user, filament, register, kiss]
 related:
-  - ../../../../../../docs/wiki/decisions/filament-widget-no-validate-form.md
-  - ../../../../../../docs/wiki/decisions/filament-widget-linear-crud-model-create.md
-  - ../../wiki/concepts/filament-widget-linear-crud-model-create.md
+status: draft
+qmd: "registerwidget kiss persist user"
 ---
 
 # RegisterWidget KISS persist

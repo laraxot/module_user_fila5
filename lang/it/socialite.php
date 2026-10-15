@@ -47,6 +47,7 @@ return [
             'label' => 'Disconnetti',
             'tooltip' => 'Disconnetti account social',
         ],
+        'save' => 'Salva configurazione',
     ],
     'messages' => [
         'connected' => 'Account social connesso con successo',

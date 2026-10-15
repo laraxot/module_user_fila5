@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * inspired by  DutchCodingCompany\FilamentSocialite.
  */
@@ -19,18 +18,18 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\SocialiteUser.
  *
- * @property int               $id
- * @property string            $user_id
- * @property string            $provider
- * @property string            $provider_id
- * @property string|null       $token
- * @property string|null       $name
- * @property string|null       $email
- * @property string|null       $avatar
- * @property Carbon|null       $created_at
- * @property Carbon|null       $updated_at
- * @property string|null       $updated_by
- * @property string|null       $created_by
+ * @property int $id
+ * @property string $user_id
+ * @property string $provider
+ * @property string $provider_id
+ * @property string|null $token
+ * @property string|null $name
+ * @property string|null $email
+ * @property string|null $avatar
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  * @property UserContract|null $user
  *
  * @method static Builder|SocialiteUser newModelQuery()
@@ -55,7 +54,6 @@ use Modules\Xot\Datas\XotData;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
@@ -64,6 +62,13 @@ use Modules\Xot\Datas\XotData;
  */
 class SocialiteUser extends BaseModel
 {
+    /**
+     * Il token OAuth non deve finire in `toArray()` ne' nello stato Livewire delle pagine Filament (audit DCP-181, D-3).
+     *
+     * @var list<string>
+     */
+    protected $hidden = ['token'];
+
     /** @var list<string> */
     protected $fillable = [
         // 'id',
@@ -76,7 +81,9 @@ class SocialiteUser extends BaseModel
         'avatar',
     ];
 
-    /** @return BelongsTo<Model, $this> */
+    /**
+     * @return BelongsTo<Model, $this>
+     */
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

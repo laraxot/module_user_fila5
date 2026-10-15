@@ -1,3 +1,14 @@
+---
+title: "MIGRATION_BEST_PRACTICES - Modulo User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+qmd: "migration_best_practices - modulo user user"
+---
+
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

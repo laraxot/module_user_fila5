@@ -1,3 +1,24 @@
+---
+title: "Actions Structure"
+type: concept
+tags: [actions, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "actions-structure actions structure"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Actions Structure
 
 ## Directory Structure
@@ -71,9 +92,9 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-- [Path Conventions](./path_conventions.md)
-- [Directory Structure Checklist](./directory_structure_checklist.md)
-- [Module Structure](./module_structure.md)
+- [Path Conventions](./path-conventions-user.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure-user.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
 # Actions Structure
 
@@ -148,7 +169,7 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-- [Path Conventions](./path_conventions.md)
-- [Directory Structure Checklist](./directory_structure_checklist.md)
-- [Module Structure](./module_structure.md)
+- [Path Conventions](./path-conventions-user.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure-user.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

@@ -1,3 +1,11 @@
+---
+title: "FullCalendar Scheduler License Key"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "fullcalendar scheduler license key user"
+---
 # FullCalendar Scheduler License Key
 
 ## Overview

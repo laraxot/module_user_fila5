@@ -8,9 +8,9 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
+use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\Notification;
-use Modules\User\Support\NotificationSchema;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -41,7 +41,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
-        if (null === $user) {
+        if ($user === null) {
             return;
         }
 
@@ -54,7 +54,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-        if (null === $user) {
+        if ($user === null) {
             return;
         }
 
@@ -66,7 +66,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-        if (null === $user || ! NotificationSchema::isReadable()) {
+        if ($user === null || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
             $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 

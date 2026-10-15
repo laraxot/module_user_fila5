@@ -1,3 +1,17 @@
+---
+title: "TeamContract"
+type: concept
+tags: [teamcontract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "teamcontract teamcontract"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./hasteamsandusercontract.md"
+status: draft
+---
+
 # TeamContract
 
 L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.

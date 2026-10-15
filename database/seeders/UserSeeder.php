@@ -7,6 +7,7 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -30,7 +31,7 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
-        if ('sqlite' !== DB::getDriverName()) {
+        if (DB::getDriverName() !== 'sqlite') {
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -41,7 +42,7 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
-            if ('sqlite' !== DB::getDriverName()) {
+            if (DB::getDriverName() !== 'sqlite') {
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -168,18 +169,20 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
-        $adminTeam = $this->createTeam('Amministratori');
-        $devTeam = $this->createTeam('Sviluppatori');
-        $supportTeam = $this->createTeam('Supporto Clienti');
-        $marketingTeam = $this->createTeam('Marketing');
-        $generalTeam = $this->createTeam('Team Generale');
+        $teams = array_map($this->createTeam(...), [
+            'Amministratori',
+            'Sviluppatori',
+            'Supporto Clienti',
+            'Marketing',
+            'Team Generale',
+        ]);
 
-        $this->command->info('   ✓ Creati 5 team di sistema');
+        $this->command->info('   ✓ Creati '.count($teams).' team di sistema');
     }
 
     private function createTeam(string $name): Team
     {
-        $factory = \Modules\User\Database\Factories\TeamFactory::new();
+        $factory = TeamFactory::new();
         /** @var Team $team */
         $team = $factory->create([
             'name' => $name,

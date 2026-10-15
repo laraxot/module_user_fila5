@@ -1,3 +1,17 @@
+---
+title: "User Module Wiki Index"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index user module wiki index"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./agents.md"
+  - "./log.md"
+---
+
 # User Module Wiki Index
 
 > **Module**: User
@@ -43,8 +57,8 @@ _No troubleshooting pages created yet_
 ### Related Project Concepts
 
 - [Laraxot Architecture](../../docs/wiki/concepts/laraxot-architecture.md)
-- [Actions Over Services](../../docs/wiki/concepts/actions-over-services.md)
-- [PHPStan Level 10](../../docs/wiki/concepts/phpstan-level10.md)
+- [Actions Over Services](../../../../../docs/wiki/concepts/actions-over-services.md)
+- [PHPStan Level 10](../phpstan-level10.md)
 
 ## Module's Role in Project
 

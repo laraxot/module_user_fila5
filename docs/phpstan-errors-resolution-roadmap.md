@@ -1,3 +1,24 @@
+---
+title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
+type: concept
+tags: [phpstan, errors, resolution, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-errors-resolution-roadmap phpstan level 10 errors resolution roadmap - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -143,7 +164,7 @@ public function clients();
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
-- [Passport Integration](../../user/docs/passport-integration.md)
+- [Passport Integration](passport-integration.md)
 - [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
 
 ---
@@ -196,4 +217,3 @@ Tutti gli errori sono stati corretti:
     - Aggiornato modello per estendere `Laravel\Passport\DeviceCode` invece di `BaseModel` per conformità rigorosa ai tipi.
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
-

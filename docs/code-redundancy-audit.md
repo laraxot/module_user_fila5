@@ -7,6 +7,16 @@ created: "2026-05-26"
 updated: "2026-05-26"
 owner: "User"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+qmd: "code redundancy audit   user user"
 ---
 
 # Code redundancy audit — User

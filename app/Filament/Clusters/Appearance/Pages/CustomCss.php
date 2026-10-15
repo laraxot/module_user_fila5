@@ -80,7 +80,9 @@ class CustomCss extends XotBasePage
         $this->form->fill($data);
     }
 
-    /** @return array<int, \Filament\Actions\Action> */
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateFormActions(): array
     {
         return [
@@ -89,7 +91,7 @@ class CustomCss extends XotBasePage
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

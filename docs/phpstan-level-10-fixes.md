@@ -1,3 +1,24 @@
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: concept
+tags: [phpstan, level, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level-10-fixes phpstan level 10 fixes - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # PHPStan Level 10 Fixes - User Module
 
 ## Duplicate Method Declaration Fix

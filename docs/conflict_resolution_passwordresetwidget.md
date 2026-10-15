@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "risoluzione conflitti passwordresetwidget.php user"
+---
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -92,5 +100,6 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
-- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
+*Ultimo aggiornamento: giugno 2025*

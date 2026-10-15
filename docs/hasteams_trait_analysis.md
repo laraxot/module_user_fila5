@@ -1,3 +1,11 @@
+---
+title: "HasTeams Trait Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "hasteams trait analysis user"
+---
 # HasTeams Trait Analysis
 
 ## Overview

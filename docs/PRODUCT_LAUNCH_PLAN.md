@@ -1,3 +1,14 @@
+---
+title: "User Module - Product Launch Plan"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+qmd: "user module - product launch plan user"
+---
+
 # User Module - Product Launch Plan
 
 **Module:** User  

@@ -4,17 +4,28 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
-updated: 2026-06-18
+updated: 2026-10-14
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ./concepts/no-comment-module-dependency.md
-  - ./rules/can-comment-retired-wrong-placement.md
+  - "./agents.md"
+  - "./architecture.md"
+  - "./auth-patterns.md"
+  - "./bmad-method.md"
+  - "./context-compression.md"
+  - "./index.md"
+  - "./overview.md"
+  - "./socialite-architecture.md"
+status: draft
 ---
 
+---
+
+- 2026-10-14: docs — studio del modulo contro `docs/`: `00-INDEX.md` e `README.md` corretti con conteggi e percorsi verificati (50 modelli, 59 Actions, 102 migrazioni, 16 comandi, 185 file di test `.php`). PHPStan `Modules/User`: 3 errori `argument.type` in `lang/{de,en,es}/validation.php` riga 8, 0 in `app/` (la dicitura "Level 10 Compliant" valeva solo per `app/`). Falsi corretti: stack (PHP 8.4 e Laravel 13, non 8.3 e 11/12), versione "2.5.0" senza fonte, WorkOrder proprietario di `profiles` (il modulo non esiste; `create_profiles_table` ha 6 file attivi in User), regola "no Log::" violata (35 chiamate in 9 file di `app/`). Link non risolti: 14194 eventi in 1740 file (misura `--busy-minutes 0`); 70,6% sono bersagli che esistono in 2 o piu' copie (il tool non sceglie), 54,7% stanno in 6 indici generati, 7,1% non sono mai esistiti. Story: [2026-10-14-docs-user-studio-e-ingressi](../stories/docs-user-studio-e-ingressi.story.md)
+- 2026-10-13: widget auth — `ForgotPasswordWidget` e `ResetPasswordWidget` dichiaravano una vista inesistente (`View not found` a runtime, 2 errori PHPStan `property.defaultValue`). Tolto `$view`, blade spostati in `filament/widgets/auth/` e corretti (`$getForm()` -> `$this->form`). Guardia: `tests/Unit/Filament/Widgets/Auth/AuthWidgetsResolveConventionalViewTest.php`. Story: `../stories/auth-password-widgets-view-not-found.story.md`
+- 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
+- 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
@@ -33,7 +44,7 @@ related:
 ## [2026-06-04] bugfix | profiles.uuid su connection fixcity (sqlite locale)
 - errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
 - causa: tabella `profiles` legacy su `fixcity_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
-- ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
+- ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 - verifica: `getProfileModelByUserId()` crea profilo con `uuid`; schema sqlite include indice `profiles_uuid_index`
 - riferimento: `concepts/profile-migration-uuid-contract.md`
 
@@ -45,7 +56,7 @@ related:
 - risolti errori PHPStan mirati su `PassportDashboard`, `EditUserWidget` e `RegistrationWidget`.
 - regola documentata: proprieta' Livewire tipizzate, `class-string` validati prima dell'assegnazione, nessun default stringa vuota per `class-string`.
 - evitato override locale di `$view` nei widget quando `XotBaseWidget::resolveView()` puo' calcolare la vista.
-- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-2026-05-06.md`.
+- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-.md.md`.
 
 ## [2026-04-28] fix | spatie permission team model config missing su route admin
 - errore runtime gestito: `Spatie\Permission\Exceptions\TeamModelNotConfigured` su `/admin`.
@@ -69,7 +80,7 @@ related:
 - fix applicato: rimosso `after()` dal create; `after()` resta nel `tableUpdate()`
   idempotente (ALTER path).
 - verifica:
-  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
+  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
   eseguito con esito `DONE`.
 - docs aggiornati: `concepts/profile-migration-uuid-contract.md`.
 
@@ -154,3 +165,8 @@ related:
 
 - INDEX Folio FO con cross-link Cms
 - Catena notifications: Notify schema → User page → Sixteen link
+## [2026-10-14] docs | ciclo autenticazione, registrazione e verifica
+
+- Aggiunta la pagina canonica `concepts/auth-registration-verification-lifecycle.md`.
+- Esplicitato il confine: identità in User, evidenze dei consensi in Gdpr, resa UI in Sixteen.
+- Nessun documento storico cancellato o rinominato.

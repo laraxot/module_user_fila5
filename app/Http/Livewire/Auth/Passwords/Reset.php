@@ -19,6 +19,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 use Livewire\Component;
 use Livewire\Features\SupportRedirects\Redirector;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\ViewCopyAction;
 use Webmozart\Assert\Assert;
 
@@ -59,7 +60,7 @@ class Reset extends Component
                 'password' => $this->password,
             ],
             function (Authenticatable $user, string $password): void {
-                /* @var Model&Authenticatable $user */
+                /** @var Model&Authenticatable $user */
                 $user->setAttribute('password', Hash::make($password));
                 $user->setRememberToken(Str::random(60));
                 $user->save();
@@ -69,9 +70,11 @@ class Reset extends Component
                 $this->guard()->login($user);
             },
         );
-        Assert::string($response_lang = trans((string) $response));
 
-        if (Password::PASSWORD_RESET === $response) {
+        Assert::string($response);
+        $response_lang = SafeStringCastAction::cast(trans($response));
+
+        if ($response === Password::PASSWORD_RESET) {
             session()->flash($response_lang);
 
             return redirect(route('home'));

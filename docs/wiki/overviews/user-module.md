@@ -2,12 +2,13 @@
 type: overview
 module: User
 sources:
-  - ../../../docs/models.md
-  - ../../../docs/permissions.md
-  - ../../../docs/architecture.md
-  - ../../../docs/structure.md
 confidence: high
 updated: 2026-04-15
+related:
+title: "User Module — Overview"
+status: draft
+tags: [docs, user, wiki]
+qmd: "user module   overview user"
 ---
 
 # User Module — Overview

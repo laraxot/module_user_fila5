@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 {{--
     SocialLoginWidget: pulsanti OAuth riutilizzabili (Google, Microsoft, GitHub).
     CRITICO: Livewire richiede SEMPRE un root tag HTML con contenuto.
@@ -20,7 +25,7 @@
             </div>
             <div class="relative flex justify-center text-sm">
                 <span class="bg-white px-4 text-slate-400 italic">
-                    {{ __('user::auth.login.or_continue_with') }}
+                    {{ __('user::auth.login.or_continue_with.text') }}
                 </span>
             </div>
         </div>
@@ -32,7 +37,7 @@
                 >
                     <x-filament::icon icon="ui-google" class="w-5 h-5 flex-shrink-0" />
                     <span class="font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                        {{ __('user::auth.login.google') }}
+                        {{ __('user::auth.login.google.text') }}
                     </span>
                 </a>
             @endif
@@ -43,7 +48,7 @@
                 >
                     <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
                     <span class="font-medium text-white transition-colors">
-                        {{ __('user::auth.login.microsoft') }}
+                        {{ __('user::auth.login.microsoft.text') }}
                     </span>
                 </a>
             @endif
@@ -54,7 +59,7 @@
                 >
                     <x-filament::icon icon="ui-brands.github" class="w-5 h-5 flex-shrink-0 text-white" />
                     <span class="font-medium text-white transition-colors">
-                        {{ __('user::auth.login.github') }}
+                        {{ __('user::auth.login.github.text') }}
                     </span>
                 </a>
             @endif

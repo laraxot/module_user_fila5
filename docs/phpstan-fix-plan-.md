@@ -1,3 +1,11 @@
+---
+title: "PHPStan Analysis - User Module (Jan 2026)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpstan analysis - user module (jan 2026) user"
+---
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status
@@ -31,3 +39,19 @@ This confirms that the project is using a version of Filament where Forms seem t
 ## Implementation
 - Search for `Grid.php`.
 - Update `OauthClientResource` imports.
+---
+module: theme
+topic: phpstan-fix-plan-
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
