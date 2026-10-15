@@ -34,7 +34,7 @@ module: theme
 topic: traits-complete-guide
 canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -61,7 +61,7 @@ qmd: "traits-hasteams-analisi-corretta-3 analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -618,7 +618,7 @@ module: theme
 topic: traits-hasteams-analisi-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -645,7 +645,7 @@ qmd: "traits-hasteams-analysis-corrected analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1202,7 +1202,7 @@ qmd: "traits-hasteams-analysis-corretta analisi corretta del trait hasteams - fi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1755,7 +1755,7 @@ module: theme
 topic: traits-hasteams-corrected
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1777,7 +1777,7 @@ module: theme
 topic: traits-hasteams-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1804,7 +1804,7 @@ qmd: "traits user module traits"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

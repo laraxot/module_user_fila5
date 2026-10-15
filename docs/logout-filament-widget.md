@@ -8,7 +8,7 @@ qmd: "logout-filament-widget implementazione del logout con widget filament"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -27,7 +27,7 @@ status: draft
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Errore Logout](logout-implementation-error-3.md)
-- [Struttura Widget](widgets-structure-2.md)
+- [Struttura Widget](widgets-structure-user.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
@@ -261,7 +261,7 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Errore Logout](logout-implementation-error-3.md)
-- [Struttura Widget](widgets-structure-2.md)
+- [Struttura Widget](widgets-structure-user.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione

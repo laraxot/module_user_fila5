@@ -58,7 +58,7 @@ module: theme
 topic: passport-admin-actions
 canonical: ../../../Themes/docs/shared-components/passport-admin-actions.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -80,7 +80,7 @@ module: theme
 topic: passport-cluster-completion-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -107,7 +107,7 @@ qmd: "passport-cluster-completion passport cluster - status completamento"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -326,7 +326,7 @@ module: theme
 topic: passport-cluster-current-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -353,7 +353,7 @@ qmd: "passport-cluster-current passport cluster - status attuale e lavoro necess
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -476,7 +476,7 @@ module: theme
 topic: passport-cluster-implementation-completed
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -503,7 +503,7 @@ qmd: "passport-cluster-implementation-needed passport cluster - implementazione 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -723,7 +723,7 @@ module: theme
 topic: passport-cluster-implementation-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -750,7 +750,7 @@ qmd: "passport-cluster-implementation passport cluster - implementation status"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -951,7 +951,7 @@ qmd: "passport-cluster-implementationd passport cluster - implementazione comple
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1164,7 +1164,7 @@ qmd: "passport-cluster-inner-debate discussione interiore: pro e contro cluster 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1220,7 +1220,7 @@ module: theme
 topic: passport-cluster-innerebate
 canonical: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1242,7 +1242,7 @@ module: theme
 topic: passport-cluster-litigation
 canonical: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1264,7 +1264,7 @@ module: theme
 topic: passport-cluster-namespace-fix
 canonical: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1291,7 +1291,7 @@ qmd: "passport-cluster-namespace passport cluster - namespace fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1550,7 +1550,7 @@ module: theme
 topic: passport-cluster-philosophy
 canonical: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1572,7 +1572,7 @@ module: theme
 topic: passport-cluster-proposal
 canonical: ../../../Themes/docs/shared-components/passport-cluster-proposal.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1599,7 +1599,7 @@ qmd: "passport-cluster-resources-only-rule regola critica: cluster passport - so
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1735,7 +1735,7 @@ qmd: "passport-cluster-resources passport cluster resources pattern"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1906,7 +1906,7 @@ qmd: "passport-cluster-summary passport cluster - riepilogo completo"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2083,7 +2083,7 @@ qmd: "passport-cluster-verification passport cluster - verifica risorse"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2189,7 +2189,7 @@ qmd: "passport-cluster-work-completion passport cluster - completamento lavoro"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2387,7 +2387,7 @@ qmd: "passport-cluster filosofia e politica: implementazione del cluster passpor
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2445,7 +2445,7 @@ module: theme
 topic: passport-complete-implementation
 canonical: ../../../Themes/docs/shared-components/passport-complete-implementation.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2467,7 +2467,7 @@ module: theme
 topic: passport-complete-management-debate
 canonical: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2494,7 +2494,7 @@ qmd: "passport-implementation-summary laravel passport implementation summary - 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2617,7 +2617,7 @@ qmd: "passport-implementation laravel passport implementation summary - user mod
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2740,7 +2740,7 @@ qmd: "passport-integration laravel passport integration - architettura completa"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3296,7 +3296,7 @@ qmd: "passport-managementebate passport complete management - internal debate & 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3549,7 +3549,7 @@ qmd: "passport-model-wrappers passport model wrappers"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3611,7 +3611,7 @@ qmd: "passport-vs-socialite-clarification passport vs socialite - distinzione cr
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3731,7 +3731,7 @@ module: theme
 topic: passport
 canonical: ../../../Themes/docs/shared-components/passport-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

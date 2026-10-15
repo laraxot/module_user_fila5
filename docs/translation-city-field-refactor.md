@@ -8,7 +8,7 @@ qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -206,7 +206,7 @@ module: theme
 topic: translation-city-field-refactor
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

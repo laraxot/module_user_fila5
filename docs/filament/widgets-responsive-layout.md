@@ -8,13 +8,13 @@ qmd: "widgets-responsive-layout widget responsivi per form di registrazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./filament-table-columns-1.md"
-  - "./filament-table-columns-2.md"
-  - "./filament-table-columns-3.md"
+  - "./filament-table-columns-convenzione-metodo.md"
   - "./filament-table-columns.md"
-  - "./teams-relation-manager-1.md"
-  - "./teams-relation-manager-2.md"
-  - "./teams-relation-manager-3.md"
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-documentation-themes.md"
+  - "./teams-relation-manager.md"
   - "./teams-relation-manager.md"
 status: draft
 ---

@@ -3,7 +3,7 @@ module: theme
 topic: navigation-translations-fixes-january-1
 canonical: ../../../Themes/docs/shared-components/navigation-translations-fixes-january-2026.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

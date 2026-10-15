@@ -74,6 +74,6 @@ This avoids repeating the same identity analysis across sessions and keeps busin
 - [[User Architecture Sources]]
 - [[user-module]]
 - `../../README.md`
-- `../../product-strategy-2.md`
+- `../../product-strategy-user-module.md`
 - `../../architecture/architecture-rules.md`
 - `../../advanced-user-architecture.md`

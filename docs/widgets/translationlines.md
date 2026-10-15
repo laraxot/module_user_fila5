@@ -162,7 +162,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 3. Test changes across all supported locales
 4. Document any breaking changes
 ## Related Documentation
-- [User Module Widget Structure](../widgets-structure-2.md)
+- [User Module Widget Structure](../widgets-structure-user.md)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

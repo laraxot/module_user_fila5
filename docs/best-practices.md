@@ -3,7 +3,7 @@ description:
 globs:
 alwaysApply: false
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -99,4 +99,4 @@ public function addMember(Team $team, User $user)
 
 - Tutte le migration devono essere nella cartella `database/migrations` del modulo di riferimento.
 - Mai mettere migration custom in `laravel/database/migrations`.
-- Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path-conventions-2.md).
+- Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path-conventions-user.md).

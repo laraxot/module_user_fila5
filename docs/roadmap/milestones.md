@@ -3,7 +3,7 @@ module: theme
 topic: milestones
 canonical: ../../../../Themes/docs/shared-components/04-milestones.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"

@@ -8,7 +8,7 @@ qmd: "auth-widget-rules-2 regole per widget di autenticazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -163,7 +163,7 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
-- [Widget Structure](widgets-structure-2.md)
+- [Widget Structure](widgets-structure-user.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

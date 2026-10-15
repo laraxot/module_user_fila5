@@ -8,7 +8,7 @@ qmd: "ottimizzazioniry-kiss ottimizzazioni dry + kiss - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -53,7 +53,7 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-implementation-with-laravel-localization-3.md (6.2KB)
 ├── logout-page-fix-2.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
-└── logout-security-2.md (4.1KB)
+└── logout-security-sicurezza-processo.md (4.1KB)
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -95,7 +95,7 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-blade-implementation-error-3.md (3.8KB)
 ├── volt-errors-2.md (5.6KB)
 ├── volt-folio-auth-implementation-3.md (17KB)
-├── volt-folio-error-2.md (1.6KB)
+├── volt-folio-error-errore-voltdirectivemissingexception.md (1.6KB)
 ├── volt-folio-logout-2.md (5.0KB)
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)

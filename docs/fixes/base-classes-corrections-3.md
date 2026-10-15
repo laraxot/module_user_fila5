@@ -11,7 +11,7 @@ related:
   - "./base-classes-corrections-1.md"
   - "./base-classes-corrections-2.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./phpstan-fixes-correzioni-modulo-user.md"
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
 ---

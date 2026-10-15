@@ -56,7 +56,7 @@ qmd: "volt-blade-implementation-3 volt blade implementation 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -372,7 +372,7 @@ qmd: "volt-blade-implementation-error-3 volt blade implementation error 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -489,7 +489,7 @@ module: theme
 topic: volt-blade-implementation-error
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -516,7 +516,7 @@ qmd: "volt-blade-implementation implementazione dei form con widget filament"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -530,7 +530,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](../../path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
 
@@ -811,13 +811,13 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](../../session-management-2.md)
+- [Gestione Sessione](../../session-management-gestione-sessioni.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](../../path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
 
@@ -1098,7 +1098,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](../../session-management-2.md)
+- [Gestione Sessione](../../session-management-gestione-sessioni.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 
 ---
@@ -1116,7 +1116,7 @@ qmd: "volt-errors errori comuni in volt e soluzioni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1313,7 +1313,7 @@ class LogoutPage
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../../routing_best_practices.md) 
-- [Routing Best Practices](../../routing-best-practices-2.md) 
+- [Routing Best Practices](../../routing-best-practices-architettura-volt-folio-filament.md) 
 ---
 
 ## volt-folio-error
@@ -1329,7 +1329,7 @@ qmd: "volt-folio-error errore voltdirectivemissingexception in folio"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1396,7 +1396,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
-- [Best Practices Routing](../../routing-best-practices-2.md) 
+- [Best Practices Routing](../../routing-best-practices-architettura-volt-folio-filament.md) 
 ---
 
 ## volt-folio-logout-debug
@@ -1407,7 +1407,7 @@ module: theme
 topic: volt-folio-logout-debug
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1434,7 +1434,7 @@ qmd: "volt-folio-logout-error-3 volt folio logout error 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1464,7 +1464,7 @@ module: theme
 topic: volt-folio-logout-error
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1491,7 +1491,7 @@ qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1505,7 +1505,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](../../path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
@@ -1689,7 +1689,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](../../path-conventions-2.md)
+- [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
@@ -1885,7 +1885,7 @@ qmd: "volt-folio-logoutebug debug: perché logout.blade.php non funziona (volt +
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2057,7 +2057,7 @@ qmd: "volt-folio errore voltdirectivemissingexception in folio"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2123,7 +2123,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
-- [Best Practices Routing](../../routing-best-practices-2.md) 
+- [Best Practices Routing](../../routing-best-practices-architettura-volt-folio-filament.md) 
 
 ---
 
@@ -2135,7 +2135,7 @@ module: theme
 topic: volt-logout-action
 canonical: ../../../Themes/docs/shared-components/volt-logout-action.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2157,7 +2157,7 @@ module: theme
 topic: volt-logout
 canonical: ../../../Themes/docs/shared-components/volt-logout.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2179,7 +2179,7 @@ module: theme
 topic: volt-missing-directive
 canonical: ../../../Themes/docs/shared-components/volt-missing-directive.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2206,7 +2206,7 @@ qmd: "volt-missingirective errore voltdirectivemissingexception"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3635,7 +3635,7 @@ module: theme
 topic: volts
 canonical: ../../../Themes/docs/shared-components/volt-errors.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

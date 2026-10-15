@@ -8,7 +8,7 @@ qmd: "translation-keys-rules-1 regole per le chiavi di traduzione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -133,6 +133,6 @@ return [
 
 ## Collegamenti Correlati
 
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-2.md)
+- [Best Practices per le Traduzioni](translation-best-practices-traduzioni.md)
+- [Struttura del Modulo](module-structure-user.md)
 - [Convenzioni di Codice](code-conventions.md)

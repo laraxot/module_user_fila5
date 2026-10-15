@@ -8,7 +8,7 @@ qmd: "auth-widgets-view-namespaces-3 widget di autenticazione: namespace delle v
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -170,7 +170,7 @@ Gli esempi qui sopra dichiarano `$view` a mano. La regola attuale e' `bashscript
 | `Auth\ForgotPasswordWidget` | `pub_theme::filament.widgets.auth.forgot-password` | `user::filament.widgets.auth.forgot-password` |
 | `Auth\ResetPasswordWidget` | `pub_theme::filament.widgets.auth.reset-password` | `user::filament.widgets.auth.reset-password` |
 
-Il principio di questa pagina resta valido: il tema puo' sovrascrivere la vista. Basta creare il file nel tema, senza toccare il PHP. Nel blade il form si mostra con `{{ $this->form }}`. Caso reale: [story del 2026-10-13](./stories/2026-10-13-auth-password-widgets-view-not-found.story.md).
+Il principio di questa pagina resta valido: il tema puo' sovrascrivere la vista. Basta creare il file nel tema, senza toccare il PHP. Nel blade il form si mostra con `{{ $this->form }}`. Caso reale: [story del 2026-10-13](./stories/auth-password-widgets-view-not-found.story.md).
 
 ## Collegamenti
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)

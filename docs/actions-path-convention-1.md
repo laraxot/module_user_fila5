@@ -8,7 +8,7 @@ qmd: "actions-path-convention-1 convenzione dei percorsi per le actions"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -82,6 +82,6 @@ fi
 ```
 
 ## Collegamenti
-- [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
+- [Convenzioni Path nei Moduli Laravel](./path-conventions-user.md)
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

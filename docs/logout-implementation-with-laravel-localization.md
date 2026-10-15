@@ -177,7 +177,7 @@ module: theme
 topic: logout-implementation-with-laravel-localization
 canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

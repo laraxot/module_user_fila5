@@ -42,7 +42,7 @@ qmd: "team-bindings-fix-3 team bindings fix 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -76,7 +76,7 @@ module: theme
 topic: team-bindings-fix
 canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -103,7 +103,7 @@ qmd: "team-bindings fix binding team models nel modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -425,7 +425,7 @@ module: theme
 topic: team-contract-usage-reasoning
 canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -447,7 +447,7 @@ module: theme
 topic: team-user-composite-primary-key-fix
 canonical: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -474,7 +474,7 @@ qmd: "team-user-composite-priy-key fix: team_user composite primary key implemen
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -757,7 +757,7 @@ module: theme
 topic: team-user-permissions-fix
 canonical: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -784,7 +784,7 @@ qmd: "team-user-permissions team user permissions column fix - laraxot philosoph
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1123,7 +1123,7 @@ description:
 globs:
 alwaysApply: false
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

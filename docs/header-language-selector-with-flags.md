@@ -8,7 +8,7 @@ qmd: "header-language-selector-with-flags implementazione del selettore di lingu
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -23,7 +23,7 @@ status: draft
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -207,7 +207,7 @@ return [
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

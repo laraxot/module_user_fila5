@@ -7,7 +7,7 @@ updated: 2026-07-14
 qmd: "git-conflicts-resolution-2025-01-27.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

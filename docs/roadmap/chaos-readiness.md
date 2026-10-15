@@ -8,7 +8,7 @@ qmd: "chaos-readiness user chaos readiness - 2026-03-02"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"

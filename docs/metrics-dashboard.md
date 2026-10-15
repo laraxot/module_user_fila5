@@ -83,7 +83,7 @@ module: theme
 topic: metrics-dashboard
 canonical: ../../../Themes/docs/shared-components/metrics-dashboard.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

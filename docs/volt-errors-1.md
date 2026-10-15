@@ -8,7 +8,7 @@ qmd: "volt-errors-1 errori comuni in volt e soluzioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -205,4 +205,4 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
-- [Routing Best Practices](../routing-best-practices-2.md) 
+- [Routing Best Practices](../routing-best-practices-architettura-volt-folio-filament.md) 

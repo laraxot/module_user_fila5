@@ -1,9 +1,9 @@
 ---
 module: theme
 topic: profile-management-1
-canonical: ../../../Themes/docs/shared-components/profile-management-2.md
+canonical: ../../../Themes/docs/shared-components/profile-management-laravel-modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "profile management 1 user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/profile-management-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/profile-management-laravel-modules.md

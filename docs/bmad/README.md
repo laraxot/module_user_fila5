@@ -17,8 +17,8 @@ qmd: "user   bmad method integration user"
 
 ## Contratto corrente del flusso cittadino
 
-- [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract-2026-10-07.md)
-- [Audit end-to-end FixCity](../../../Fixcity/docs/bmad/citizen-journey-audit-2026-10-07.md)
+- [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract.md)
+- [Audit end-to-end FixCity](../../../Fixcity/docs/bmad/citizen-journey-audit.md)
 
 User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
 presenta le pagine e Fixcity possiede la segnalazione.

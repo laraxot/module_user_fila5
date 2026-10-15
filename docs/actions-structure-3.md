@@ -8,7 +8,7 @@ qmd: "actions-structure-3 actions structure"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -95,7 +95,7 @@ class DeleteUserAction
 - [Path Conventions](./path-conventions.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure.md)
-- [Path Conventions](./path-conventions-2.md)
+- [Path Conventions](./path-conventions-user.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
-- [Module Structure](./module-structure-2.md)
+- [Module Structure](./module-structure-user.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

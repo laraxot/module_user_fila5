@@ -3,7 +3,7 @@ module: theme
 topic: phpstan_fixes
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-8.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

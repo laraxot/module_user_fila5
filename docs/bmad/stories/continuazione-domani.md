@@ -7,7 +7,7 @@ bmad_version: v3.30.1
 updated_at: '2026-09-22'
 status: in-progress
 related:
-  - ../../stories/user-nested-conflict-marker-cleanup-2026-09-22.story.md
+  - ../../stories/user-nested-conflict-marker-cleanup.story.md
   - ./livewire-residual-conversion-cluster-c.story.md
   - ./uppercase-application-dir.story.md
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
@@ -24,7 +24,7 @@ qmd: "user   continuazione domani user"
   80"): **fatta e pushata**. `git branch -vv` oggi: `dev` == `[laraxot/dev]`
   in punta (`6a799fb1`), `git rev-list --left-right --count dev...laraxot/dev`
   → `0 0`. Documentata in
-  `docs/stories/user-nested-conflict-marker-cleanup-2026-09-22.story.md`
+  `docs/stories/user-nested-conflict-marker-cleanup.story.md`
   (addendum "riconciliazione completata").
 - **Rischio residuo reale nel merge, verificato oggi (non solo ipotizzato)**:
   dei 36 conflitti, 29 file `UU` sono stati risolti in blocco con

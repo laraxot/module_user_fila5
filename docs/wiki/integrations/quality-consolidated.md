@@ -34,9 +34,9 @@ Consolidated from **10** individual files.
 
 module: theme
 topic: quality-11
-canonical: ../../../Themes/docs/shared-components/quality-1.md
+canonical: ../../../Themes/docs/shared-components/quality-user-module-status-november.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -46,7 +46,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/quality-user-module-status-november.md
 
 ---
 
@@ -58,7 +58,7 @@ module: theme
 topic: quality-improvements-summary
 canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -85,7 +85,7 @@ qmd: "quality-improvements quality improvements summary - phpstan, phpmd, php in
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -179,7 +179,7 @@ qmd: "quality-status-11 user module - quality status (november 2025)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -524,7 +524,7 @@ module: theme
 topic: quality-status-nov
 canonical: ../../../Themes/docs/shared-components/quality-status-11.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -546,7 +546,7 @@ module: theme
 topic: quality-status
 canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -568,7 +568,7 @@ module: theme
 topic: quality-tooling
 canonical: ../../../Themes/docs/shared-components/quality-tooling.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -595,7 +595,7 @@ qmd: "quality-tools-final quality tools final report - [date]"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -784,7 +784,7 @@ qmd: "quality-tools quality tools usage (user)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -847,7 +847,7 @@ qmd: "quality user module - quality status (november 2025)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

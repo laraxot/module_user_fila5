@@ -8,7 +8,7 @@ qmd: "auth-blade-structure-2 struttura delle blade di autenticazione con volt"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -200,7 +200,7 @@ Ogni azione di autenticazione deve:
 ## Collegamenti
 
 - [Documentazione Volt](./volt-logout-2.md)
-- [Best Practices Routing](./routing-best-practices-2.md)
+- [Best Practices Routing](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt-logout.md)

@@ -42,7 +42,7 @@ qmd: "fullcalendar-scheduler-documentation-summary-3 fullcalendar scheduler - do
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -86,7 +86,7 @@ Documentazione base esistente per:
 - Configurazione di base in healthcare_app
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -238,7 +238,7 @@ qmd: "fullcalendar-scheduler-documentation-summary fullcalendar scheduler - docu
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -277,7 +277,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -421,7 +421,7 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](./scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -574,7 +574,7 @@ qmd: "fullcalendar-scheduler-license-key-invalid fullcalendar scheduler license 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -601,7 +601,7 @@ qmd: "fullcalendar-scheduler-license-troubleshooting fullcalendar scheduler lice
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1474,7 +1474,7 @@ qmd: "fullcalendar-scheduler-license fullcalendar scheduler license configuratio
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1635,7 +1635,7 @@ qmd: "fullcalendar-scheduler-quick-reference-3 fullcalendar scheduler - riferime
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1874,7 +1874,7 @@ qmd: "fullcalendar-scheduler-quick-reference fullcalendar scheduler - riferiment
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2257,7 +2257,7 @@ qmd: "fullcalendar-schedulerocumentation fullcalendar scheduler - documentazione
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2296,7 +2296,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2440,7 +2440,7 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](./scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

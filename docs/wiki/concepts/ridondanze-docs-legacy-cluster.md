@@ -47,7 +47,7 @@ Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `tes
 
 ## Performance auth (4 naming stesso topic)
 
-`docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication-performance-optimization-3.md` → un solo file canonico in `docs/performance/`.
+`docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication-performance-optimization.md` → un solo file canonico in `docs/performance/`.
 
 ## File “redundancy / dry-kiss phpstan” noti ridondanti
 

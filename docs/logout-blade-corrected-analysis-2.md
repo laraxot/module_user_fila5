@@ -8,7 +8,7 @@ qmd: "logout-blade-corrected-analysis-2 analisi corretta del file logout.blade.p
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -26,7 +26,7 @@ status: draft
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
 ## Panoramica

@@ -34,7 +34,7 @@ module: theme
 topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -56,7 +56,7 @@ module: theme
 topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -78,7 +78,7 @@ module: theme
 topic: ottimizzazioni-dry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -100,7 +100,7 @@ module: theme
 topic: ottimizzazioni-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -127,7 +127,7 @@ qmd: "ottimizzazioni-super-dry-kiss ottimizzazioni super dry + kiss - modulo use
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -510,7 +510,7 @@ module: theme
 topic: ottimizzazioni-superry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -532,7 +532,7 @@ module: theme
 topic: ottimizzazioni-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -559,7 +559,7 @@ qmd: "ottimizzazioniry-kiss ottimizzazioni dry + kiss - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -603,7 +603,7 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-implementation-with-laravel-localization-3.md (6.2KB)
 ├── logout-page-fix-2.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
-└── logout-security-2.md (4.1KB)
+└── logout-security-sicurezza-processo.md (4.1KB)
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -645,7 +645,7 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-blade-implementation-error-3.md (3.8KB)
 ├── volt-errors-2.md (5.6KB)
 ├── volt-folio-auth-implementation-3.md (17KB)
-├── volt-folio-error-2.md (1.6KB)
+├── volt-folio-error-errore-voltdirectivemissingexception.md (1.6KB)
 ├── volt-folio-logout-2.md (5.0KB)
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)

@@ -1,9 +1,9 @@
 ---
 module: theme
 topic: service-provider-warning-1
-canonical: ../../../Themes/docs/shared-components/service-provider-warning-2.md
+canonical: ../../../Themes/docs/shared-components/service-provider-warning-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "service provider warning 1 user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning-user.md

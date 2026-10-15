@@ -8,7 +8,7 @@ qmd: "fullcalendar-schedulerocumentation fullcalendar scheduler - documentazione
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -48,7 +48,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](./scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -192,7 +192,7 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](./scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

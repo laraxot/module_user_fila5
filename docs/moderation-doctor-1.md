@@ -3,7 +3,7 @@ module: theme
 topic: moderation-doctor-1
 canonical: ../../../Themes/docs/shared-components/moderation-doctor.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

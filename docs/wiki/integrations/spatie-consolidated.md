@@ -36,7 +36,7 @@ module: theme
 topic: spatie-models-verification
 canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -58,7 +58,7 @@ module: theme
 topic: spatie-permission-philosophy
 canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -74,7 +74,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-permi
 
 ## spatie-permission-teams-laravel-13
 
-*Consolidated from: `spatie-permission-teams-laravel-13.md`*
+*Consolidated from: `spatie-permission-teams-laravel.md`*
 
 title: "Spatie Permission teams on Laravel 13"
 type: concept
@@ -85,7 +85,7 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -252,7 +252,7 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -419,7 +419,7 @@ qmd: "spatie-permission 🏛️ filosofia spatie permission in laraxot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -680,7 +680,7 @@ qmd: "spatie-permissions-methods-3 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1195,7 +1195,7 @@ qmd: "spatie-permissions-methods-4 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1710,7 +1710,7 @@ qmd: "spatie-permissions-methods-5 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2225,7 +2225,7 @@ qmd: "spatie-permissions-methods user module - spatie permission methods referen
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2735,7 +2735,7 @@ module: theme
 topic: spatie-permissions
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

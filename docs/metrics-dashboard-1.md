@@ -1,9 +1,9 @@
 ---
 module: theme
 topic: metrics-dashboard-1
-canonical: ../../../Themes/docs/shared-components/metrics-dashboard-2.md
+canonical: ../../../Themes/docs/shared-components/metrics-dashboard-user-module.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "metrics dashboard 1 user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard-user-module.md

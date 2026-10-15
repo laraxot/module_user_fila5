@@ -51,7 +51,7 @@ qmd: "translation-best-practices best practices per le traduzioni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -207,7 +207,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](../../module-structure-2.md) 
+- [Struttura Moduli](../../module-structure-user.md) 
 ---
 
 ## translation-city-field-refactor-.deprecated
@@ -223,7 +223,7 @@ qmd: "translation-city-field-refactor-2025-08-08.deprecated refactor completo ca
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -431,7 +431,7 @@ qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -638,7 +638,7 @@ updated: 2026-07-14
 qmd: "translation-city-field-refactor-2025-08-08 deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -660,7 +660,7 @@ module: theme
 topic: translation-city-field-refactor-conflict
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -686,7 +686,7 @@ updated: 2026-07-14
 qmd: "translation-city-field-refactor-2025-08-08.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -708,7 +708,7 @@ module: theme
 topic: translation-city-field-refactor
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -735,7 +735,7 @@ qmd: "translation-conflict-resolution-prototype translation conflict resolution 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -787,7 +787,7 @@ qmd: "translation-fields-key-importance understanding translation structure in l
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -828,7 +828,7 @@ module: theme
 topic: translation-fixes
 canonical: ../../../Themes/docs/shared-components/translation-fixes.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -855,7 +855,7 @@ qmd: "translation-key-prototype translation key prototype"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -899,7 +899,7 @@ qmd: "translation-keys-rules regole per le chiavi di traduzione"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1026,8 +1026,8 @@ return [
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](../../code_conventions.md)
-- [Best Practices per le Traduzioni](../../translation-best-practices-2.md)
-- [Struttura del Modulo](../../module-structure-2.md)
+- [Best Practices per le Traduzioni](../../translation-best-practices-traduzioni.md)
+- [Struttura del Modulo](../../module-structure-user.md)
 - [Convenzioni di Codice](../../code-conventions.md)
 ---
 
@@ -1039,7 +1039,7 @@ module: theme
 topic: translation-keys
 canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1066,7 +1066,7 @@ qmd: "translation-maintenance-log translation maintenance log - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1241,7 +1241,7 @@ module: theme
 topic: translation-resolution-prototype
 canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1263,7 +1263,7 @@ module: theme
 topic: translation-syntax-fixes-
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1290,7 +1290,7 @@ qmd: "translation-syntax-fixes correzioni errori di sintassi nei file di traduzi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1444,7 +1444,7 @@ qmd: "translation-syntaxes correzioni errori di sintassi nei file di traduzione 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1871,7 +1871,7 @@ qmd: "translationes correzioni file di traduzione user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1990,7 +1990,7 @@ module: theme
 topic: translations
 canonical: ../../../Themes/docs/shared-components/translations.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

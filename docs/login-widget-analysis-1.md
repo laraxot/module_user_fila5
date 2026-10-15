@@ -1,9 +1,9 @@
 ---
 module: theme
 topic: login-widget-analysis-1
-canonical: ../../../Themes/docs/shared-components/login-widget-analysis-2.md
+canonical: ../../../Themes/docs/shared-components/login-widget-analysis-analisi-dettagliata-loginwidget.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "login widget analysis 1 user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis-analisi-dettagliata-loginwidget.md

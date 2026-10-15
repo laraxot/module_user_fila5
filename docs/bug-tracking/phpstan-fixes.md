@@ -13,7 +13,7 @@ related:
   - "../fixes/base-classes-corrections-2.md"
   - "../fixes/base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./phpstan-fixes-correzioni-modulo-user.md"
   - "./phpstanes.md"
 ---
 

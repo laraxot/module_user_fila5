@@ -3,7 +3,7 @@ module: theme
 topic: terms-and-conditions-1
 canonical: ../../../Themes/docs/shared-components/terms_and_conditions.txt
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

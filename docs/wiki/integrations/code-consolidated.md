@@ -43,7 +43,7 @@ qmd: "code-conventions code conventions"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -69,7 +69,7 @@ qmd: "code-optimization-analysis user module code and documentation optimization
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -109,7 +109,7 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management-2.md
+│   ├── profile-management-laravel-modules.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -261,7 +261,7 @@ qmd: "code-optimization user module code and documentation optimization analysis
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -301,7 +301,7 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management-2.md
+│   ├── profile-management-laravel-modules.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -453,7 +453,7 @@ qmd: "code-quality-analysis-3 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -790,7 +790,7 @@ qmd: "code-quality-analysis-4 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1127,7 +1127,7 @@ qmd: "code-quality-analysis-5 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1464,7 +1464,7 @@ qmd: "code-quality-analysis code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1801,7 +1801,7 @@ qmd: "code-quality-tools 🔍 code quality tools - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2031,7 +2031,7 @@ qmd: "code-quality code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2931,7 +2931,7 @@ module: theme
 topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

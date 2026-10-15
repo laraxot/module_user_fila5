@@ -8,7 +8,7 @@ qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -23,7 +23,7 @@ status: draft
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
@@ -207,7 +207,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 

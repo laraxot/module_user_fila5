@@ -8,7 +8,7 @@ qmd: "session-management gestione delle sessioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -91,8 +91,8 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
-- [Gestione del Profilo](./profile-management-2.md)
-- [Best Practices per il Routing](./routing-best-practices-2.md)
+- [Gestione del Profilo](./profile-management-laravel-modules.md)
+- [Best Practices per il Routing](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

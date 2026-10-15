@@ -3,7 +3,7 @@ module: theme
 topic: passport-cluster-implementation-completed
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

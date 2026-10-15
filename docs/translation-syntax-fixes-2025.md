@@ -3,7 +3,7 @@ module: theme
 topic: translation-syntax-fixes-2025
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

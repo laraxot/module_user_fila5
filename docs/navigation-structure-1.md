@@ -8,7 +8,7 @@ qmd: "navigation-structure-1 struttura navigazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -162,4 +162,4 @@ Event::dispatch('user.action', [
 ## Collegamenti Correlati
 - [Header Components](./header-components.md)
 - [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session-management-2.md) 
+- [Session Management](./session-management-gestione-sessioni.md) 

@@ -41,7 +41,7 @@ qmd: "baseuser-conflicts risoluzione conflitti in baseuser.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -163,7 +163,7 @@ qmd: "baseuser-dry-violation-analysis baseuser - analisi violazione principio dr
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -648,7 +648,7 @@ qmd: "baseuser-refactoring-completed-2025-10-15.deprecated baseuser refactoring 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1019,7 +1019,7 @@ qmd: "baseuser-refactoring-completed- baseuser refactoring - completato"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1388,7 +1388,7 @@ updated: 2026-07-14
 qmd: "baseuser-refactoring-completed-2025-10-15 deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1414,7 +1414,7 @@ updated: 2026-07-14
 qmd: "baseuser-refactoring-completed-2025-10-15.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1441,7 +1441,7 @@ qmd: "baseuser-refactoring-completed baseuser refactoring - completato"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1812,7 +1812,7 @@ qmd: "baseuser-refactoringd baseuser refactoring - completato"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2182,7 +2182,7 @@ qmd: "baseuser-spatieuplicates analisi metodi duplicati in baseuser.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2446,7 +2446,7 @@ qmd: "baseuser baseuser model in laravel modules"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2507,9 +2507,9 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 ## Links to Related Documentation
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-- [Profile Management](../../profile-management-2.md)
-- [Routing Best Practices](../../routing-best-practices-2.md)
-- [Session Management](../../session-management-2.md)
+- [Profile Management](../../profile-management-laravel-modules.md)
+- [Routing Best Practices](../../routing-best-practices-architettura-volt-folio-filament.md)
+- [Session Management](../../session-management-gestione-sessioni.md)
 - [[HasTeamsContract]]
 - [[UserContract]]
 - [[Team]]
@@ -2534,7 +2534,7 @@ qmd: "baseuserry-violation baseuser - analisi violazione principio dry"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -3018,7 +3018,7 @@ qmd: "baseusers risoluzione conflitti in baseuser.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

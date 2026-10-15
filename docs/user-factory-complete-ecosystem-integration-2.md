@@ -3,7 +3,7 @@ module: theme
 topic: user_factory_complete_ecosystem_integration
 canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

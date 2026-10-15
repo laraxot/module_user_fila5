@@ -3,7 +3,7 @@ title: "Authentication Registration and Verification Lifecycle"
 type: concept
 module: User
 sources:
-  - "../../../../../../bmad-output/registration-compliance-audit-2026-10-14.md"
+  - "../../../../../../bmad-output/registration-compliance-audit.md"
   - "../../../../../../bmad-output/stories/5.6.verified-registration-multilingual.story.md"
 confidence: high
 created: 2026-10-14
