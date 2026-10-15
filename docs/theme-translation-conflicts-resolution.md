@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -415,7 +415,7 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
-- [Moderation Strategy](user-moderation-strategy-3.md)
+- [Moderation Strategy](user-moderation-strategy-documentation-themes.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni

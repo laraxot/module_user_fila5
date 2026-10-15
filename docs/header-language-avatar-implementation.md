@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -24,8 +24,8 @@ status: draft
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Implementazione Logout](./logout-blade-implementation-2.md)
+- [Volt Folio Logout](./volt-folio-logout-panoramica.md)
+- [Implementazione Logout](./logout-blade-implementation-posizione-corretta.md)
 
 ## Panoramica
 
@@ -402,8 +402,8 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Implementazione Logout](./logout-blade-implementation-2.md)
+- [Volt Folio Logout](./volt-folio-logout-panoramica.md)
+- [Implementazione Logout](./logout-blade-implementation-posizione-corretta.md)
 
 ## Panoramica
 

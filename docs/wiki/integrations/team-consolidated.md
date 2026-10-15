@@ -31,7 +31,7 @@ Consolidated from **11** individual files.
 
 ## team-bindings-fix-3
 
-*Consolidated from: `team-bindings-fix-3.md`*
+*Consolidated from: `team-bindings-fix-topic.md`*
 
 title: "Team Bindings Fix 3"
 type: concept
@@ -47,8 +47,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -62,10 +62,10 @@ related:
 ---
 module: theme
 topic: team_bindings_fix
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
+canonical: ../../../Themes/docs/shared-components/team-bindings-fix-topic.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-topic.md
 ---
 
 ## team-bindings-fix
@@ -81,8 +81,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -108,8 +108,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -423,19 +423,19 @@ $this->assertTrue($user->belongsToTeam($team));
 
 module: theme
 topic: team-contract-usage-reasoning
-canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 
 ---
 
@@ -452,8 +452,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -479,8 +479,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -762,8 +762,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -789,8 +789,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1128,8 +1128,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`

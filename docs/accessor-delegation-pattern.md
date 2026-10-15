@@ -12,10 +12,10 @@ related:
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-structure-1.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+  - "./actions-structure.md"
 status: draft
 ---
 

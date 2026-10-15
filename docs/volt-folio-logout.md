@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -24,7 +24,7 @@ status: draft
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
@@ -208,7 +208,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica

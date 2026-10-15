@@ -55,7 +55,7 @@ Stesso scaffolding editoriale ripetuto in più percorsi (testo quasi uguale, lin
 
 - `docs/redundancy-fixes.md`
 - `docs/redundancy-fixes-january.md`
-- `docs/redundancy-fixes-january-1.md`
+- `docs/redundancy-fixes-january-documentation-themes.md`
 - `docs/redundancy-fixes-january-2026.md`
 - `docs/redundancyes.md` (nome con typo storico da evitare in nuovi file)
 - `docs/legacy/historical/redundancy-fixes.md`

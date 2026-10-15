@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -33,7 +33,7 @@ status: draft
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout-page-fix-2.md)
+- [Logout Page Fix](./logout-page-fix.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)

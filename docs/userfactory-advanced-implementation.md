@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -309,7 +309,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-module.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -608,7 +608,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](user-factory-advanced-integration-3.md)
+- [User Module Integration](user-factory-advanced-integration-module.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

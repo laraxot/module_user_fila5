@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -188,7 +188,7 @@ class NavigationTest extends TestCase
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Header Components](./header-components.md)
-- [Navigation Structure](./navigation-structure-2.md)
+- [Navigation Structure](./navigation-structure-struttura-navigazione.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
@@ -223,5 +223,5 @@ class NavigationTest extends TestCase
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
-- [Navigation Structure](./navigation-structure-2.md)
+- [Navigation Structure](./navigation-structure-struttura-navigazione.md)
 - [Security Best Practices](./security_best_practices.md) 

@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -94,7 +94,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Gestione del Profilo](./profile-management-laravel-modules.md)
 - [Best Practices per il Routing](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Documentazione Volt](./volt-blade-implementation-introduzione.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Indice del Modulo Utente](./INDEX.md)
 - [Modello BaseUser](./baseuser.md)

@@ -47,8 +47,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -58,7 +58,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 
 ## model-inheritance-analysis-3
 
-*Consolidated from: `model-inheritance-analysis-3.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -74,8 +74,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -234,7 +234,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-analysis-4
 
-*Consolidated from: `model-inheritance-analysis-4.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -250,8 +250,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -410,7 +410,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-analysis-5
 
-*Consolidated from: `model-inheritance-analysis-5.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -426,8 +426,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -602,8 +602,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -762,7 +762,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-fixes-3
 
-*Consolidated from: `model-inheritance-fixes-3.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -778,8 +778,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -972,7 +972,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](../../model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -982,7 +982,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## model-inheritance-fixes-4
 
-*Consolidated from: `model-inheritance-fixes-4.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -998,8 +998,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1192,7 +1192,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](../../model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1202,7 +1202,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## model-inheritance-fixes-5
 
-*Consolidated from: `model-inheritance-fixes-5.md`*
+*Consolidated from: `model-inheritance-fixes-analisi-completa.md`*
 
 title: "Model Inheritance Fixes 5"
 type: concept
@@ -1218,12 +1218,12 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-- [Analisi Completa](../../model-inheritance-analysis-4.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1231,10 +1231,10 @@ related:
 ---
 module: theme
 topic: model_inheritance_fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
+canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-analisi-completa.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-analisi-completa.md
 ---
 
 ## model-inheritance-fixes
@@ -1250,8 +1250,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1277,8 +1277,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1568,8 +1568,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1744,8 +1744,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1938,7 +1938,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](../../model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2132,7 +2132,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](../../model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2326,7 +2326,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](../../model-inheritance-analysis-5.md)
+- [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2703,8 +2703,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2926,8 +2926,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3007,8 +3007,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

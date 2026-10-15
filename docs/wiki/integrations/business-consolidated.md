@@ -32,7 +32,7 @@ Consolidated from **12** individual files.
 
 ## business-logic-analysis-3
 
-*Consolidated from: `business-logic-analysis-3.md`*
+*Consolidated from: `business-logic-analysis.md`*
 
 title: "User Module - Business Logic Analysis"
 type: concept
@@ -48,8 +48,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -532,7 +532,7 @@ class ApiRateLimitingMiddleware
 
 ## business-logic-analysis-4
 
-*Consolidated from: `business-logic-analysis-4.md`*
+*Consolidated from: `business-logic-analysis.md`*
 
 title: "User Module - Business Logic Analysis"
 type: concept
@@ -548,8 +548,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1032,7 +1032,7 @@ class ApiRateLimitingMiddleware
 
 ## business-logic-analysis-5
 
-*Consolidated from: `business-logic-analysis-5.md`*
+*Consolidated from: `business-logic-analysis.md`*
 
 title: "User Module - Business Logic Analysis"
 type: concept
@@ -1048,8 +1048,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1548,8 +1548,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2032,7 +2032,7 @@ class ApiRateLimitingMiddleware
 
 ## business-logic-deep-dive-3
 
-*Consolidated from: `business-logic-deep-dive-3.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 
 title: "User Module - Business Logic Deep Dive"
 type: concept
@@ -2048,8 +2048,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2834,7 +2834,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## business-logic-deep-dive-4
 
-*Consolidated from: `business-logic-deep-dive-4.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 
 title: "User Module - Business Logic Deep Dive"
 type: concept
@@ -2850,8 +2850,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3636,7 +3636,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## business-logic-deep-dive-5
 
-*Consolidated from: `business-logic-deep-dive-5.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 
 title: "User Module - Business Logic Deep Dive"
 type: concept
@@ -3652,8 +3652,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4454,8 +4454,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -5256,8 +5256,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -5756,8 +5756,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

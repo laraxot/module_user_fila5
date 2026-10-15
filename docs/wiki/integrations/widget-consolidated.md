@@ -30,7 +30,7 @@ Consolidated from **12** individual files.
 
 ## widget-rendering-analysis-3
 
-*Consolidated from: `widget-rendering-analysis-3.md`*
+*Consolidated from: `widget-rendering-analysis.md`*
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -46,8 +46,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -464,7 +464,7 @@ return [
 
 ## widget-rendering-analysis-4
 
-*Consolidated from: `widget-rendering-analysis-4.md`*
+*Consolidated from: `widget-rendering-analysis.md`*
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -480,8 +480,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -898,7 +898,7 @@ return [
 
 ## widget-rendering-analysis-5
 
-*Consolidated from: `widget-rendering-analysis-5.md`*
+*Consolidated from: `widget-rendering-analysis.md`*
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -914,8 +914,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1348,8 +1348,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1782,8 +1782,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2200,7 +2200,7 @@ return [
 
 ## widget-translation-rules-3
 
-*Consolidated from: `widget-translation-rules-3.md`*
+*Consolidated from: `widget-translation-rules-memory-integration.md`*
 
 title: "Widget Translation Rules 3"
 type: rule
@@ -2216,8 +2216,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2238,10 +2238,10 @@ All widget development should follow these rules to maintain consistency and qua
 ---
 module: theme
 topic: widget_translation_rules
-canonical: ../../../Themes/docs/shared-components/widget-translation-rules-3.md
+canonical: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md
 ---
 
 ## widget-translation-rules
@@ -2257,8 +2257,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2284,8 +2284,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3275,8 +3275,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

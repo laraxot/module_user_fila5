@@ -1,15 +1,15 @@
 ---
 module: theme
 topic: logout-blade-corrected
-canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
+canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 title: "logout blade corrected"
 type: note
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "logout blade corrected user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md

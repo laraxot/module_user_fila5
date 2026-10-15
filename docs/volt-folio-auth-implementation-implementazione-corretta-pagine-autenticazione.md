@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -24,8 +24,8 @@ status: draft
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-- [Volt Errors](./volt-errors-2.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout-panoramica.md)
 
 ## Introduzione
 

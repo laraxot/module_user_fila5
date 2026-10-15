@@ -50,7 +50,7 @@ qmd: "user   continuazione domani user"
   - `docs/bmad/decision-log.md`: lato scartato **negligibile** (righe 229-230,
     sostanzialmente vuoto) — nessun rischio qui.
   - **Non verificati**: gli altri ~21 file della lista dei 29 (es.
-    `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis-2025-10-15.md`,
+    `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis.md`,
     `docs/quality-status-2025-11.md`, ecc.) — probabilita' alta che siano
     genuinamente solo rumore del daemon (come i 5 campionati), ma non e' stato
     riverificato uno per uno.

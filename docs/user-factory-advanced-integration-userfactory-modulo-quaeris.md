@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -307,8 +307,8 @@ public function run(): void
 - [Model States](../../Quaeris/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](./user-factory-integration-module.md)
+- [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  

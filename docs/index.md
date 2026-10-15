@@ -981,7 +981,7 @@
 - [filament-table-columns-2.md](./filament/filament-table-columns-2.md)
 - [filament-table-columns-3.md](./filament/filament-table-columns-3.md)
 - [filament-table-columns.md](./filament/filament-table-columns.md)
-- [teams-relation-manager-1.md](./filament/teams-relation-manager-1.md)
+- [teams-relation-manager-1.md](./filament/teams-relation-manager-teamsrelationmanager-user-module.md)
 - [teams-relation-manager-2.md](./filament/teams-relation-manager-2.md)
 - [teams-relation-manager-3.md](./filament/teams-relation-manager-3.md)
 - [teams-relation-manager.md](./filament/teams-relation-manager.md)
@@ -992,7 +992,7 @@
 - [filament-table-columns-1.md](./filament/archive/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/filament-table-columns-2.md)
 - [filament-table-columns.md](./filament/archive/filament-table-columns.md)
-- [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
+- [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-teamsrelationmanager-user-module.md)
 - [teams-relation-manager-2.md](./filament/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/archive/teams-relation-manager.md)
 

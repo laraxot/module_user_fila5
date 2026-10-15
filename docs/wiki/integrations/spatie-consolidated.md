@@ -41,8 +41,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -63,8 +63,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -90,8 +90,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -257,8 +257,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -424,8 +424,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -649,7 +649,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-- [Roles and Permissions](../../roles-permissions-3.md)
+- [Roles and Permissions](../../roles-permissions.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 
@@ -669,7 +669,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 
 ## spatie-permissions-methods-3
 
-*Consolidated from: `spatie-permissions-methods-3.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -685,8 +685,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1184,7 +1184,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 ## spatie-permissions-methods-4
 
-*Consolidated from: `spatie-permissions-methods-4.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -1200,8 +1200,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1699,7 +1699,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 ## spatie-permissions-methods-5
 
-*Consolidated from: `spatie-permissions-methods-5.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -1715,8 +1715,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2230,8 +2230,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2733,19 +2733,19 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 module: theme
 topic: spatie-permissions
-canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
+canonical: ../../../Themes/docs/shared-components/spatie-permissions-documentation-themes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-documentation-themes.md
 
 ---
 

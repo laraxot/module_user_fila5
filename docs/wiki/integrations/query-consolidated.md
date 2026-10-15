@@ -26,7 +26,7 @@ Consolidated from **6** individual files.
 
 ## query-optimization-analysis-3
 
-*Consolidated from: `query-optimization-analysis-3.md`*
+*Consolidated from: `query-optimization-analysis.md`*
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -42,8 +42,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -528,7 +528,7 @@ This optimization plan will transform the User module from a performance bottlen
 
 ## query-optimization-analysis-4
 
-*Consolidated from: `query-optimization-analysis-4.md`*
+*Consolidated from: `query-optimization-analysis.md`*
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -544,8 +544,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1030,7 +1030,7 @@ This optimization plan will transform the User module from a performance bottlen
 
 ## query-optimization-analysis-5
 
-*Consolidated from: `query-optimization-analysis-5.md`*
+*Consolidated from: `query-optimization-analysis.md`*
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -1046,8 +1046,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1548,8 +1548,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2050,8 +2050,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

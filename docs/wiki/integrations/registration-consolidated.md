@@ -28,7 +28,7 @@ Consolidated from **8** individual files.
 
 ## registration-widget-3
 
-*Consolidated from: `registration-widget-3.md`*
+*Consolidated from: `registration-widget-filament-resource.md`*
 
 title: "Registration Widget 3"
 type: concept
@@ -44,8 +44,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -53,10 +53,10 @@ related:
 ---
 module: theme
 topic: registration_widget
-canonical: ../../../Themes/docs/shared-components/registration-widget-3.md
+canonical: ../../../Themes/docs/shared-components/registration-widget-filament-resource.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-filament-resource.md
 ---
 
 ## registration-widget-fileupload-fix
@@ -77,8 +77,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -444,8 +444,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -471,8 +471,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -535,8 +535,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

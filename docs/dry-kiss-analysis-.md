@@ -140,7 +140,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
-- [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
+- [Base Classes Corrections](./fixes/base-classes-corrections-correzione-estensioni-classi-modulo.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
 

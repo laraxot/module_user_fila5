@@ -198,7 +198,7 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-- [Documentazione Volt](../volt-logout-2.md)
+- [Documentazione Volt](../volt-logout.md)
 - [Best Practices Routing](../routing-best-practices-architettura-volt-folio-filament.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 

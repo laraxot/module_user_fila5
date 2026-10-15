@@ -16,8 +16,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -322,7 +322,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](./volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -632,7 +632,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](./volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

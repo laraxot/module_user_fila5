@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -26,7 +26,7 @@ status: draft
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Panoramica

@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -203,8 +203,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-- [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
-- [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-2.md)
-- [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-2.md)
+- [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-saluteora-module.md)
+- [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-saluteora-module.md)
+- [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-saluteora-module.md)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

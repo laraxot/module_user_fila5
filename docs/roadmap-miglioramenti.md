@@ -46,7 +46,7 @@ non solo il risultato.
 ## 3. `docs/` — 1479 file, 205 famiglie di doppioni, e il caso più assurdo:
 `actions-path-convention.md` in QUATTRO varianti
 
-`actions-path-convention-1.md`, `actions-path-convention-2.md`,
+`actions-path-convention.md`, `actions-path-convention-convenzione-percorsi.md`,
 `actions-path-convention.md`, `actions_path_convention.md` — stesso
 contenuto concettuale (probabilmente), quattro file, tre convenzioni di
 naming diverse (trattino, trattino basso, suffisso numerico) per lo STESSO

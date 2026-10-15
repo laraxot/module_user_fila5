@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -60,8 +60,8 @@ docs/
 ├── integrations/
 │   ├── socialite.md
 │   ├── passport.md
-│   ├── spatie-permissions-2.md
-│   └── two-factor-2.md
+│   ├── spatie-permissions-documentation-themes.md
+│   └── two-factor-documentation-themes.md
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

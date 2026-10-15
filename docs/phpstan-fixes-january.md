@@ -1,7 +1,7 @@
 ---
 module: theme
 topic: phpstan-fixes-january
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-1.md
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -19,4 +19,4 @@ tags: [docs, user]
 qmd: "phpstan fixes january user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md

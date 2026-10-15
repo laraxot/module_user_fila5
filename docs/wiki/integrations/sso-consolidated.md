@@ -38,8 +38,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -49,7 +49,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 
 ## sso-providers-implementation-3
 
-*Consolidated from: `sso-providers-implementation-3.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -65,8 +65,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -380,7 +380,7 @@ test('can login user via SSO', function () {
 
 ## sso-providers-implementation-4
 
-*Consolidated from: `sso-providers-implementation-4.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -396,8 +396,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -711,7 +711,7 @@ test('can login user via SSO', function () {
 
 ## sso-providers-implementation-5
 
-*Consolidated from: `sso-providers-implementation-5.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -727,8 +727,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1058,8 +1058,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1389,8 +1389,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

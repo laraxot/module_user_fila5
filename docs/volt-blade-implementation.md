@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -25,7 +25,7 @@ status: draft
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-identificazione-dell.md)
 
 ## Introduzione
 
@@ -312,7 +312,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-identificazione-dell.md)
 
 ## Introduzione
 

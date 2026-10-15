@@ -39,7 +39,7 @@ Consolidated from **21** individual files.
 
 ## user-factory-advanced-integration-3
 
-*Consolidated from: `user-factory-advanced-integration-3.md`*
+*Consolidated from: `user-factory-advanced-integration-module.md`*
 
 title: "User Factory Advanced Integration 3"
 type: concept
@@ -55,8 +55,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -65,8 +65,8 @@ related:
 - [Model States](../../SaluteOra/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](../../user-factory-integration-2.md)
-- [Traits Complete Guide](../../traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
@@ -75,10 +75,10 @@ related:
 ---
 module: theme
 topic: user_factory_advanced_integration
-canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md
+canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-module.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-module.md
 ---
 
 ## user-factory-advanced-integration
@@ -99,8 +99,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -392,8 +392,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](../../user-factory-integration-2.md)
-- [Traits Complete Guide](../../traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -687,8 +687,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](../../user-factory-integration-2.md)
-- [Traits Complete Guide](../../traits-complete-guide-2.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -710,8 +710,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -737,8 +737,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1587,8 +1587,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1940,7 +1940,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../../traits-complete-guide-2.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
 
 ---
@@ -2297,7 +2297,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../../traits-complete-guide-2.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
 
 ---
@@ -2327,8 +2327,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2350,8 +2350,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2372,8 +2372,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2394,8 +2394,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2421,8 +2421,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2646,8 +2646,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3003,8 +3003,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3036,8 +3036,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 # Configurazione Stati Utente (state)
@@ -3106,8 +3106,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4737,8 +4737,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4764,8 +4764,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -5059,7 +5059,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../../user-factory-advanced-integration-3.md)
+- [User Module Integration](../../user-factory-advanced-integration-module.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -5358,7 +5358,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../../user-factory-advanced-integration-3.md)
+- [User Module Integration](../../user-factory-advanced-integration-module.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

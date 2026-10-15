@@ -55,8 +55,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -294,8 +294,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -347,8 +347,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -652,7 +652,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -683,8 +683,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -988,7 +988,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1298,7 +1298,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1313,7 +1313,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ## git-conflicts-resolution-3
 
-*Consolidated from: `git-conflicts-resolution-3.md`*
+*Consolidated from: `git-conflicts-resolution.md`*
 
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
@@ -1329,8 +1329,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1634,7 +1634,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -1649,7 +1649,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ## git-conflicts-resolution-4
 
-*Consolidated from: `git-conflicts-resolution-4.md`*
+*Consolidated from: `git-conflicts-resolution-stato-rinominato.md`*
 
 title: "git-conflicts-resolution-2025-01-27"
 type: concept
@@ -1664,18 +1664,18 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [git-conflicts-resolution-4.md](../../git-conflicts-resolution-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [git-conflicts-resolution-4.md](../../git-conflicts-resolution-stato-rinominato.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
 ## git-conflicts-resolution-5
 
-*Consolidated from: `git-conflicts-resolution-5.md`*
+*Consolidated from: `git-conflicts-resolution.md`*
 
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
@@ -1691,8 +1691,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1996,7 +1996,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -2011,7 +2011,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ## git-conflicts-resolution-6
 
-*Consolidated from: `git-conflicts-resolution-6.md`*
+*Consolidated from: `git-conflicts-resolution.md`*
 
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
@@ -2027,8 +2027,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2332,7 +2332,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -2362,8 +2362,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2667,7 +2667,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -2698,8 +2698,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3008,7 +3008,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -3038,8 +3038,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3343,7 +3343,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -3374,8 +3374,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3509,8 +3509,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3536,8 +3536,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3841,7 +3841,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -4160,7 +4160,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -4190,8 +4190,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4299,8 +4299,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4339,8 +4339,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -4914,8 +4914,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -5219,7 +5219,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widgets-structure-2.md](../../widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](../../path-conventions-user.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](../../volt-blade-implementation-3.md) - View patterns
+- [volt-blade-implementation-3.md](../../volt-blade-implementation-introduzione.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -5245,8 +5245,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

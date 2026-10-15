@@ -76,8 +76,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -305,7 +305,7 @@ $logout = function () {
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-- [Documentazione Volt](../../volt-blade-implementation-3.md)
+- [Documentazione Volt](../../volt-blade-implementation-introduzione.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
@@ -313,7 +313,7 @@ $logout = function () {
 
 ## logout-blade-analysis-3
 
-*Consolidated from: `logout-blade-analysis-3.md`*
+*Consolidated from: `logout-blade-analysis-panoramica.md`*
 
 title: "Logout Blade Analysis 3"
 type: concept
@@ -329,8 +329,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -776,10 +776,10 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ---
 module: theme
 topic: logout_blade_analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md
+canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-panoramica.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-panoramica.md
 ---
 
 ## logout-blade-analysis
@@ -795,8 +795,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -817,8 +817,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -828,7 +828,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 ## logout-blade-corrected-analysis-3
 
-*Consolidated from: `logout-blade-corrected-analysis-3.md`*
+*Consolidated from: `logout-blade-corrected-analysis-analisi-corretta.md`*
 
 title: "Analisi Corretta del File logout.blade.php"
 type: concept
@@ -844,8 +844,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -853,11 +853,11 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Volt Folio Logout](../../volt-folio-logout-2.md)
+- [Volt Folio Logout](../../volt-folio-logout-panoramica.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
-- [Logout Blade Implementation](../../logout-blade-implementation-2.md)
+- [Logout Blade Implementation](../../logout-blade-implementation-posizione-corretta.md)
 - [Convenzioni Path](../../path-conventions-user.md)
-- [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-identificazione-dell.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
@@ -1102,8 +1102,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1117,25 +1117,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-corrected
-canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
+canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md
 
 ---
 
 ## logout-blade-error-analysis-3
 
-*Consolidated from: `logout-blade-error-analysis-3.md`*
+*Consolidated from: `logout-blade-error-analysis.md`*
 
 title: "Logout Blade Error Analysis 3"
 type: concept
@@ -1151,8 +1151,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1268,10 +1268,10 @@ Questi errori evidenziano l'importanza di:
 ---
 module: theme
 topic: logout_blade_error_analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis-3.md
+canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 ---
 
 ## logout-blade-error-analysis
@@ -1287,8 +1287,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1309,8 +1309,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1331,8 +1331,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1358,8 +1358,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1369,9 +1369,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](../../logout-blade-implementation-2.md)
-- [Analisi Logout](../../logout-blade-analysis-3.md)
-- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
+- [Analisi Logout](../../logout-blade-analysis-panoramica.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1481,9 +1481,9 @@ Questi errori evidenziano l'importanza di:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](../../logout-blade-implementation-2.md)
-- [Analisi Logout](../../logout-blade-analysis-3.md)
-- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
+- [Analisi Logout](../../logout-blade-analysis-panoramica.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1603,8 +1603,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1630,8 +1630,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1641,9 +1641,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](../../logout-blade-implementation-2.md)
-- [Analisi Errore Logout](../../logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](../../logout-filament-widget-corrected-3.md)
+- [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
+- [Analisi Errore Logout](../../logout-blade-error-analysis.md)
+- [Widget Filament Corretto](../../logout-filament-widget-corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -1793,9 +1793,9 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](../../logout-blade-implementation-2.md)
-- [Analisi Errore Logout](../../logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](../../logout-filament-widget-corrected-3.md)
+- [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
+- [Analisi Errore Logout](../../logout-blade-error-analysis.md)
+- [Widget Filament Corretto](../../logout-filament-widget-corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -1954,8 +1954,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1976,8 +1976,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1987,7 +1987,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 ## logout-implementation-error-3
 
-*Consolidated from: `logout-implementation-error-3.md`*
+*Consolidated from: `logout-implementation-error-analisi-dell.md`*
 
 title: "Analisi dell'Errore nell'Implementazione del Logout"
 type: concept
@@ -2003,8 +2003,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2014,9 +2014,9 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](../../logout-blade-implementation-2.md)
-- [Analisi Logout](../../logout-blade-analysis-3.md)
-- [Conclusioni Logout](../../logout-blade-conclusions-2.md)
+- [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
+- [Analisi Logout](../../logout-blade-analysis-panoramica.md)
+- [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -2114,8 +2114,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2125,7 +2125,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 ## logout-implementation-with-laravel-localization-3
 
-*Consolidated from: `logout-implementation-with-laravel-localization-3.md`*
+*Consolidated from: `logout-implementation-with-laravel-localization.md`*
 
 title: "Logout Implementation With Laravel Localization 3"
 type: concept
@@ -2141,8 +2141,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2304,10 +2304,10 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 ---
 module: theme
 topic: logout_implementation_with_laravel_localization
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md
+canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 ---
 
 ## logout-implementation-with-laravel-localization
@@ -2323,8 +2323,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2338,19 +2338,19 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 module: theme
 topic: logout-implementation
-canonical: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
+canonical: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
 
 ---
 
@@ -2367,8 +2367,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2378,7 +2378,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-page-
 
 ## logout-page-implementation-3
 
-*Consolidated from: `logout-page-implementation-3.md`*
+*Consolidated from: `logout-page-implementation-best-practices.md`*
 
 title: "Logout Page Implementation 3"
 type: concept
@@ -2394,8 +2394,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2405,10 +2405,10 @@ related:
 ---
 module: theme
 topic: logout_page_implementation
-canonical: ../../../Themes/docs/shared-components/logout-page-implementation-3.md
+canonical: ../../../Themes/docs/shared-components/logout-page-implementation-best-practices.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation-best-practices.md
 ---
 
 ## logout-page-implementation
@@ -2424,8 +2424,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2451,8 +2451,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2516,8 +2516,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2695,7 +2695,7 @@ Log::channel('auth')->info('Logout effettuato', [
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
-- [Documentazione Volt](../../volt-blade-implementation-3.md)
+- [Documentazione Volt](../../volt-blade-implementation-introduzione.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -2721,8 +2721,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

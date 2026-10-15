@@ -8,11 +8,11 @@ qmd: "phpstan-widget-property-types-2026-05-06.deprecated deprecated"
 status: deprecated
 related:
   - "./filament-user-creation-pty-error.md"
-  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory-stato-rinominato.md"
   - "./git-merge-conflict-inventory.md"
   - "./git-push-lfs-missing-objects.md"
   - "./phpstan-module-analysis-memory.md"
-  - "./phpstan-widget-property-types-1.md"
+  - "./phpstan-widget-property-types-stato-rinominato.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
 ---

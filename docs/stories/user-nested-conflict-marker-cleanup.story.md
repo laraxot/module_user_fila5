@@ -43,7 +43,7 @@ in app, test e docs`, 2026-09-21) aveva gia' ripulito gran parte dell'albero ma
 `grep -rlE '^(<{7}|={7}|>{7})' . | grep -vE '/(vendor|node_modules|graphify-out)/'`.
 
 ## Inventario marker (23 file, tutti confermati reali — nessun falso positivo
-doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-2025-01-27.md`,
+doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution.md`,
 che tratta l'argomento, ha marker reali fuori da blocchi di esempio)
 
 Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`):
@@ -51,9 +51,9 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
 - **7 file — blocco "entrambi vuoti" (4 righe: `<<<<<<< HEAD` / `>>>>>>> 87273113 (.)` /
   `=======` / `>>>>>>> laraxot/dev`, nessun contenuto reale tra i marker su nessun lato)**:
   `docs/quality-status-2025-11.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
-  `docs/baseuser-refactoring-completed-2025-10-15.md`, `docs/phpstan-fixes-user-module-session.md`,
-  `docs/dry-kiss-analysis-2025-10-15.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
-  `docs/git-conflicts-resolution-2025-01-27.md`.
+  `docs/baseuser-refactoring-completed.md`, `docs/phpstan-fixes-user-module-session.md`,
+  `docs/dry-kiss-analysis.md`, `docs/phpstan-dry-kiss-improvements.md`,
+  `docs/git-conflicts-resolution.md`.
   Risoluzione: eliminazione delle 4 righe marker (nessuna decisione di contenuto, i due lati
   erano gia' vuoti).
 - **14 file — riga orfana singola `>>>>>>> 87273113 (.)`** (nessun `<<<<<<<`/`=======`

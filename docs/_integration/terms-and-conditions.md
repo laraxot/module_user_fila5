@@ -1,7 +1,7 @@
 ---
 module: theme
 topic: terms-and-conditions
-canonical: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+canonical: ../../../../Themes/docs/shared-components/terms-and-conditions.md
 related:
   - "./eav.md"
   - "./filament.md"
@@ -19,7 +19,7 @@ tags: [docs, user, _integration]
 qmd: "terms_and_conditions user"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions.md
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

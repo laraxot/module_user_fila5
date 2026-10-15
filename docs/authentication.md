@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -149,4 +149,4 @@ Route::middleware('guest')->group(function () {
 ## Implementazioni Specifiche
 
 ### Logout con Volt e Folio
-Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-best-practices.md). 

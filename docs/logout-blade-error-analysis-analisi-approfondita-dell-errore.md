@@ -13,8 +13,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -25,9 +25,9 @@ status: draft
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Logout](logout-blade-analysis-3.md)
-- [Conclusioni Logout](logout-blade-conclusions-2.md)
+- [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
+- [Analisi Logout](logout-blade-analysis-panoramica.md)
+- [Conclusioni Logout](logout-blade-conclusions-sintesi-dell.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato

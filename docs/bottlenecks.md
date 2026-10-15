@@ -432,7 +432,7 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 - [Roadmap Principale](./roadmap.md)
 - [Best Practices Filament](./filament-best-practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
-- [Struttura Moduli](../xot/docs/module-structure-2.md)
+- [Struttura Moduli](../xot/docs/module-structure-struttura-moduli.md)
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../xot/docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/docs/bottlenecks.md)
@@ -459,7 +459,7 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-- [Struttura Moduli](../xot/project_docs/module-structure-2.md)
+- [Struttura Moduli](../xot/project_docs/module-structure-struttura-moduli.md)
 * [BOTTLENECKS.md](../../../xot/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)
