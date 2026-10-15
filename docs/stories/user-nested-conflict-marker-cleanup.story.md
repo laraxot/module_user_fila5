@@ -50,7 +50,7 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
 
 - **7 file — blocco "entrambi vuoti" (4 righe: `<<<<<<< HEAD` / `>>>>>>> 87273113 (.)` /
   `=======` / `>>>>>>> laraxot/dev`, nessun contenuto reale tra i marker su nessun lato)**:
-  `docs/quality-status-2025-11.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
+  `docs/quality-status-activity-module-november.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
   `docs/baseuser-refactoring-completed.md`, `docs/phpstan-fixes-user-module-session.md`,
   `docs/dry-kiss-analysis.md`, `docs/phpstan-dry-kiss-improvements.md`,
   `docs/git-conflicts-resolution.md`.

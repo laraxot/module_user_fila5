@@ -56,8 +56,8 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md)
 
-## Collegamenti tra versioni di phpstan-fixes-8.md
-* [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
+## Collegamenti tra versioni di phpstan-fixes.md
+* [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes.md)
+* [phpstan-fixes-8.md](../phpstan-fixes.md)
+* [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes.md)
+* [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes.md)

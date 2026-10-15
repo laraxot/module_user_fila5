@@ -51,7 +51,7 @@ qmd: "user   continuazione domani user"
     sostanzialmente vuoto) — nessun rischio qui.
   - **Non verificati**: gli altri ~21 file della lista dei 29 (es.
     `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis.md`,
-    `docs/quality-status-2025-11.md`, ecc.) — probabilita' alta che siano
+    `docs/quality-status-activity-module-november.md`, ecc.) — probabilita' alta che siano
     genuinamente solo rumore del daemon (come i 5 campionati), ma non e' stato
     riverificato uno per uno.
 - `uppercase-application-dir.story.md` (status frontmatter: `review`, "Commit

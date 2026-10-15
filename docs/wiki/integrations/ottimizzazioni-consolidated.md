@@ -631,7 +631,7 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
-└── phpstan-fixes-8.md (2.5KB)
+└── phpstan-fixes.md (2.5KB)
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute

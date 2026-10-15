@@ -121,7 +121,7 @@ docs/
 │   ├── socialite.md
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
-│   └── two-factor-2.md
+│   └── two-factor-user.md
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md
@@ -313,7 +313,7 @@ docs/
 │   ├── socialite.md
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
-│   └── two-factor-2.md
+│   └── two-factor-user.md
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

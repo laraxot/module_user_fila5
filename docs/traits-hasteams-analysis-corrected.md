@@ -548,5 +548,5 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
-- [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+- [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)

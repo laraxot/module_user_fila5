@@ -600,13 +600,13 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](../../traits.md)  
-- [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes-8.md)
+- [docs/phpstan-fixes.md](../../../docs/phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
 - [Modules/User/docs/traits.md](../../traits.md)  
-- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md)
+- [docs/phpstan-fixes.md](../../phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 ---
 
@@ -1184,7 +1184,7 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](../../traits.md)
-- [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+- [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
 
 ---
@@ -1741,7 +1741,7 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](../../traits.md)  
-- [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+- [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
 
 
