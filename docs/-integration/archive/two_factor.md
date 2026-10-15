@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+---
+title: "two_factor"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, -integration]
+qmd: "two_factor user"
+---
+>>>>>>> laraxot/dev
 # two_factor
 
 <!-- Contenuto migrato da _docs/two_factor.txt -->

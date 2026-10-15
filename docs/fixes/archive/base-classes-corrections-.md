@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+---
+title: "Correzione Estensioni Classi Base - Modulo User"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user, fixes]
+qmd: "correzione estensioni classi base - modulo user user"
+---
+>>>>>>> laraxot/dev
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -224,7 +235,11 @@ php artisan test --filter=ModelTest
    - Esempi pratici
    - Checklist per nuovi modelli
 
+<<<<<<< HEAD
 2. **`docs/fixes/base-classes-corrections-2025-10-15.md`** (QUESTO FILE)
+=======
+2. **`docs/fixes/base-classes-corrections.md`** (QUESTO FILE)
+>>>>>>> laraxot/dev
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons
@@ -307,9 +322,15 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 ## Risorse
 
+<<<<<<< HEAD
 - [Base Classes Hierarchy](../models/base-classes-hierarchy.md)
 - [Architecture Guide](../core/architecture.md)
 - [XotBasePivot Migration](../models/xotbasepivot-migration.md)
+=======
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
+- [Architecture Guide](../../core/architecture.md)
+- [XotBasePivot Migration](../../models/xotbasepivot-migration.md)
+>>>>>>> laraxot/dev
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---

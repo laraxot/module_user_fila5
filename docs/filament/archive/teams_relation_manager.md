@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+---
+title: "TeamsRelationManager in User Module"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user, filament]
+qmd: "teamsrelationmanager in user module user"
+---
+>>>>>>> laraxot/dev
 # TeamsRelationManager in User Module
 
 ## Panoramica
@@ -34,7 +45,11 @@ TextColumn::make('name')->label('Nome');
 > Qualsiasi uso di ->label(), ->placeholder(), ->helperText() nei componenti Filament è VIETATO. La traduzione è automatica tramite la struttura espansa dei file di traduzione. Se trovi override, correggi immediatamente e aggiorna la doc.
 
 ## Collegamenti
+<<<<<<< HEAD
 - [../teams.php](../../lang/it/teams.php)
+=======
+- [../teams.php](../../../lang/it/teams.php)
+>>>>>>> laraxot/dev
 - [../../../../.cursor/rules/xotbaserelationmanager.mdc](../../../../.cursor/rules/xotbaserelationmanager.mdc)
 - [../../../../.windsurf/rules/xotbaserelationmanager.mdc](../../../../.windsurf/rules/xotbaserelationmanager.mdc)
 

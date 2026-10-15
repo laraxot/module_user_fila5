@@ -39,6 +39,17 @@
       "Modules\\User\\Database\\Seeders\\": "database/seeders/"
     }
   },
+<<<<<<< HEAD
+=======
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\User\\Tests\\": "tests/"
+    },
+    "files": [
+      "tests/Support/helpers.php"
+    ]
+  },
+>>>>>>> laraxot/dev
   "require": {
     "flowframe/laravel-trend": "*",
     "jenssegers/agent": "*",

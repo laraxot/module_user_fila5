@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+---
+title: "terms_and_conditions"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, -integration]
+qmd: "terms_and_conditions user"
+---
+>>>>>>> laraxot/dev
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->
