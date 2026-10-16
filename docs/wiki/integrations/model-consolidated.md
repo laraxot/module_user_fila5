@@ -2336,7 +2336,7 @@ cd Modules/User
 
 ## model_inheritance_analysis
 
-*Consolidated from: `model-inheritance-analysis.md`*
+*Consolidated from: `model_inheritance_analysis.md`*
 
 
 ## Regola Fondamentale
@@ -2492,7 +2492,7 @@ Dopo le modifiche, eseguire:
 
 ## model_inheritance_fixes
 
-*Consolidated from: `model-inheritance-fixes.md`*
+*Consolidated from: `model_inheritance_fixes.md`*
 
 
 ## Data Implementazione
@@ -2682,7 +2682,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis.md)
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2714,7 +2714,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/modelli-fact
 
 ## modelli_factory_seeder_analisi
 
-*Consolidated from: `modelli-factory-seeder-analisi.md`*
+*Consolidated from: `modelli_factory_seeder_analisi.md`*
 
 
 ## Panoramica

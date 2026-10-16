@@ -22,7 +22,7 @@ status: draft
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)

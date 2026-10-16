@@ -9,7 +9,7 @@ status: draft
 qmd: "divergenza: `index.md` user"
 ---
 
-# Divergenza: `index.md`
+# Divergenza: `INDEX.md`
 
 Questo file veniva da `docs/wiki/integrations/modules/user/INDEX.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 

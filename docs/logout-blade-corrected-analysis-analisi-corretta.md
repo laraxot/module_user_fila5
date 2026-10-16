@@ -22,7 +22,7 @@ status: draft
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout-panoramica.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-posizione-corretta.md)

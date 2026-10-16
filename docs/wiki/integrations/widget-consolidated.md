@@ -2645,7 +2645,7 @@ All widget development should follow these rules to maintain consistency and qua
 
 ## widget_rendering_analysis
 
-*Consolidated from: `widget-rendering-analysis.md`*
+*Consolidated from: `widget_rendering_analysis.md`*
 
 
 ## 📋 Problema Analizzato
@@ -3059,7 +3059,7 @@ return [
 
 ## widget_translation_rules
 
-*Consolidated from: `widget-translation-rules.md`*
+*Consolidated from: `widget_translation_rules.md`*
 
 
 ## Core Principles
@@ -3286,7 +3286,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/widgets-stru
 
 ## widgets_structure
 
-*Consolidated from: `widgets-structure.md`*
+*Consolidated from: `widgets_structure.md`*
 
 
 ## Overview

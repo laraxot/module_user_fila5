@@ -2357,14 +2357,14 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code_conventions
 
-*Consolidated from: `code-conventions.md`*
+*Consolidated from: `code_conventions.md`*
 
 
 ---
 
 ## code_optimization_analysis
 
-*Consolidated from: `code-optimization-analysis.md`*
+*Consolidated from: `code_optimization_analysis.md`*
 
 
 ## comprehensive analysis
@@ -2536,7 +2536,7 @@ this optimization will create a more secure, maintainable, and performant user a
 
 ## code_quality_analysis
 
-*Consolidated from: `code-quality-analysis.md`*
+*Consolidated from: `code_quality_analysis.md`*
 
 
 ## 🚨 Critical Issues Identified
@@ -2919,7 +2919,7 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 - [index](./index.md)
 - [module](../../module.md)
 - [philosophy](./philosophy.md)
-- [README](./README.md)
+- [README](./readme.md)
 
 ---
 

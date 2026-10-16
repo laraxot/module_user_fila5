@@ -2751,14 +2751,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-permi
 
 ## spatie_permissions
 
-*Consolidated from: `spatie-permissions.md`*
+*Consolidated from: `spatie_permissions.md`*
 
 
 ---
 
 ## spatie_permissions_methods
 
-*Consolidated from: `spatie-permissions-methods.md`*
+*Consolidated from: `spatie_permissions_methods.md`*
 
 
 ## Overview

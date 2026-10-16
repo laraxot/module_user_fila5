@@ -680,7 +680,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 
 ## login_widget_analysis
 
-*Consolidated from: `login-widget-analysis.md`*
+*Consolidated from: `login_widget_analysis.md`*
 
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`  
@@ -759,7 +759,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 
 ## login_widget_conversion
 
-*Consolidated from: `login-widget-conversion.md`*
+*Consolidated from: `login_widget_conversion.md`*
 
 
 ## Analisi del componente Livewire

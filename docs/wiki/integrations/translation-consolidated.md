@@ -420,7 +420,7 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 
 ## translation-city-field-refactor-
 
-*Consolidated from: `translation-city-field-refactor.md`*
+*Consolidated from: `translation-city-field-refactor-.md`*
 
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -1257,7 +1257,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 
 ## translation-syntax-fixes-
 
-*Consolidated from: `translation-syntax-fixes.md`*
+*Consolidated from: `translation-syntax-fixes-.md`*
 
 module: theme
 topic: translation-syntax-fixes-
@@ -1586,7 +1586,7 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 
 ## translation_best_practices
 
-*Consolidated from: `translation-best-practices.md`*
+*Consolidated from: `translation_best_practices.md`*
 
 
 ## Principi Generali
@@ -1737,7 +1737,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 
 ## translation_keys_rules
 
-*Consolidated from: `translation-keys-rules.md`*
+*Consolidated from: `translation_keys_rules.md`*
 
 
 ## Principi Fondamentali

@@ -326,7 +326,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## dry-kiss-analysis-
 
-*Consolidated from: `dry-kiss-analysis.md`*
+*Consolidated from: `dry-kiss-analysis-.md`*
 
 title: "DRY & KISS Analysis - Modulo User"
 type: concept

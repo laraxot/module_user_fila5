@@ -122,7 +122,7 @@ class DeviceProfileFactory extends DeviceUserFactory
 
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 - [Factory Creation Status](./factory-creation-status.md)
-- [User Module README](./README.md)
+- [User Module README](./readme.md)
 
 ## ⚠️ REGOLE DA NON DIMENTICARE MAI
 

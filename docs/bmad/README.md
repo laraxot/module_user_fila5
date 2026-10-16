@@ -15,6 +15,14 @@ qmd: "user   bmad method integration user"
 
 # User — BMAD Method Integration
 
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
+
 ## Contratto corrente del flusso cittadino
 
 - [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract.md)

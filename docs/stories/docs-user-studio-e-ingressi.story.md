@@ -35,11 +35,11 @@ Vietato spostare, rinominare o cancellare file e lanciare `dups --fix`.
   Fixcity, 1 in Blog.
 - Regola "no Log:: in Actions, Models, Widget" vera per `RegisterWidget` ma violata: 35 chiamate in 9 file `.php` di `app/` (37 in 10 se si
   contiene il backup `LogoutWidget.php.corrected`).
-- `README.md` da 2352 righe: il corpo e' ripetuto due volte (righe 155-1253 e 1257-2352) e contiene un front matter incollato da `README.md`.
+- `README.md` da 2352 righe: il corpo e' ripetuto due volte (righe 155-1253 e 1257-2352) e contiene un front matter incollato da `readme.md`.
 - Collegamenti a file rinominati (`*-2026-03-10.md` senza data), a `todo.md` (stub il cui canonico `Themes/docs/shared-components/todo.md` non esiste).
 
-**Ingressi.** Il canonico per contratto e' `00-index.md`. `00-index.md` era una copia byte per byte (collisione di maiuscole), `00-index-1.md` una
-variante; `index.md` (6915 righe) e `index.md` (3419) sono elenchi generati dell'albero, come `archive/index.md`, `_archive/INDEX.md` e i due di
+**Ingressi.** Il canonico per contratto e' `00-INDEX.md`. `00-index.md` era una copia byte per byte (collisione di maiuscole), `00-index-1.md` una
+variante; `INDEX.md` (6915 righe) e `index.md` (3419) sono elenchi generati dell'albero, come `archive/index.md`, `_archive/INDEX.md` e i due di
 `wiki/integrations/_da-riconciliare/`.
 
 **Link non risolti.** Misura con `--busy-minutes 0`: 14194 eventi in 1740 file (con il filtro di default il tool ne mostra 11, perche' salta
@@ -62,12 +62,12 @@ cio' che e' risolvibile senza decisione umana.
 
 | File | Modifica |
 |---|---|
-| `00-index.md` | ingresso unico: identita' e contenuto reale (tabella con path), stato PHPStan, versione non verificata, mappa canonico/evidence/legacy, ingressi duplicati, cause dei link, link rotti annotati (5 -> 0 non risolti), front matter valido |
+| `00-INDEX.md` | ingresso unico: identita' e contenuto reale (tabella con path), stato PHPStan, versione non verificata, mappa canonico/evidence/legacy, ingressi duplicati, cause dei link, link rotti annotati (5 -> 0 non risolti), front matter valido |
 | `README.md` | 11 note datate "Nota 2026-10-14" con le smentite, avviso in testa sui difetti strutturali, requisiti corretti, 40 link non risolti annotati `target mancante`; il testo originale non e' stato cancellato |
 | `wiki/log.md` | voce 2026-10-14 |
 | `stories/docs-user-studio-e-ingressi.story.md` | questa story |
 
-Nessun file spostato, rinominato o cancellato; nessun `dups --fix`; `index.md`, `index.md`, `00-index.md`, `00-index-1.md` non toccati (recenti e
+Nessun file spostato, rinominato o cancellato; nessun `dups --fix`; `INDEX.md`, `index.md`, `00-index.md`, `00-index-1.md` non toccati (recenti e
 da trattare con DOC-004).
 
 ## Verifica
@@ -88,7 +88,7 @@ Non rieseguiti i test Pest di User (con la config cache colpiscono il database d
 
 ## Decisioni
 
-- Il canonico e' `00-index.md`; gli altri ingressi si dichiarano non canonici e si lasciano per la migration map.
+- Il canonico e' `00-INDEX.md`; gli altri ingressi si dichiarano non canonici e si lasciano per la migration map.
 - Si annotano i link non risolti, non si inventano bersagli.
 - I numeri dei link si dichiarano sempre con `--busy-minutes 0` e il valore del filtro.
 

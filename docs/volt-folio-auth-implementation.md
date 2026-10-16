@@ -10,9 +10,9 @@ qmd: "implementazione corretta delle pagine di autenticazione con volt e folio u
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Errors](./volt-errors.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
 
 ## Introduzione
 

@@ -2536,7 +2536,7 @@ This optimization plan will transform the User module from a performance bottlen
 
 ## query_optimization_analysis
 
-*Consolidated from: `query-optimization-analysis.md`*
+*Consolidated from: `query_optimization_analysis.md`*
 
 
 ## Overview

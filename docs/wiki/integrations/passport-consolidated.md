@@ -3252,7 +3252,7 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 ### Documentazione Correlata
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
-- [README.md](./README.md) - Overview modulo
+- [README.md](./readme.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
 
 ### Documentazione Esterna
@@ -3747,7 +3747,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-Mod
 
 ## passport_admin_actions
 
-*Consolidated from: `passport-admin-actions.md`*
+*Consolidated from: `passport_admin_actions.md`*
 
 
 This document describes the administrative actions for Laravel Passport available directly within the Filament admin panel, reducing the need for terminal access.
@@ -3788,7 +3788,7 @@ Within the list or view pages of a client, you can:
 
 ## passport_implementation_summary
 
-*Consolidated from: `passport-implementation-summary.md`*
+*Consolidated from: `passport_implementation_summary.md`*
 
 
 ## Overview

@@ -115,12 +115,12 @@ Corretta chirurgicamente (solo quella sezione, non rigenerazione completa —
 fuori scope per questa story).
 
 `docs/00-index.md`, `docs/README.md`, `docs/purpose.md`: verificati, nessun
-riferimento stale a path root-modulo rimossi (`philosophy.md`,
+riferimento stale a path root-modulo rimossi (`PHILOSOPHY.md`,
 `CHANGELOG.MD`, ecc.).
 
 ## Esclusioni deliberate
 
-- Duplicati case-only (`index.md`/`index.md`, `00-index.md`/`00-index.md`,
+- Duplicati case-only (`INDEX.md`/`index.md`, `00-INDEX.md`/`00-index.md`,
   ecc.): problema noto e già tracciato in `docs/case-conflicts.md`
   (issue #124, discussion #1). Non consolidato qui — richiede aggiornamento
   riferimenti a livello di progetto, story separata.

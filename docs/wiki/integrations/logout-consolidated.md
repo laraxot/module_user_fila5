@@ -334,7 +334,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
@@ -852,13 +852,13 @@ related:
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](../../volt-folio-logout-panoramica.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](../../logout-blade-implementation-posizione-corretta.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-identificazione-dell.md)
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
@@ -2146,7 +2146,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -2981,7 +2981,7 @@ class LogoutWidget extends XotBaseWidget
 
 ## logout_analysis
 
-*Consolidated from: `logout-analysis.md`*
+*Consolidated from: `logout_analysis.md`*
 
 
 ## Analisi Attuale
@@ -3211,11 +3211,11 @@ $logout = function () {
 
 ## logout_blade_analysis
 
-*Consolidated from: `logout-blade-analysis.md`*
+*Consolidated from: `logout_blade_analysis.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -3659,11 +3659,11 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 
 ## logout_blade_conclusions
 
-*Consolidated from: `logout-blade-conclusions.md`*
+*Consolidated from: `logout_blade_conclusions.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -3755,11 +3755,11 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 
 ## logout_blade_corrected_analysis
 
-*Consolidated from: `logout-blade-corrected-analysis.md`*
+*Consolidated from: `logout_blade_corrected_analysis.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -3989,7 +3989,7 @@ return redirect()->to('/' . $locale);
 
 ## logout_blade_error_analysis
 
-*Consolidated from: `logout-blade-error-analysis.md`*
+*Consolidated from: `logout_blade_error_analysis.md`*
 
 
 ## Collegamenti correlati
@@ -4107,13 +4107,13 @@ Questi errori evidenziano l'importanza di:
 
 ## logout_blade_implementation
 
-*Consolidated from: `logout-blade-implementation.md`*
+*Consolidated from: `logout_blade_implementation.md`*
 
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
@@ -4327,7 +4327,7 @@ Questa implementazione è semplice, sicura e segue tutte le best practices del p
 
 ## logout_blade_structure
 
-*Consolidated from: `logout-blade-structure.md`*
+*Consolidated from: `logout_blade_structure.md`*
 
 
 ## Posizione Corretta
@@ -4451,7 +4451,7 @@ class LogoutPage
 
 ## logout_error_analysis
 
-*Consolidated from: `logout-error-analysis.md`*
+*Consolidated from: `logout_error_analysis.md`*
 
 
 ## Problema Identificato
@@ -4582,7 +4582,7 @@ class LogoutWidget extends XotBaseWidget
 
 ## logout_event_error
 
-*Consolidated from: `logout-event-error.md`*
+*Consolidated from: `logout_event_error.md`*
 
 
 ## Collegamenti correlati
@@ -4733,11 +4733,11 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 ## logout_implementation_best_practices
 
-*Consolidated from: `logout-implementation-best-practices.md`*
+*Consolidated from: `logout_implementation_best_practices.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -4980,7 +4980,7 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 
 ## logout_implementation_error
 
-*Consolidated from: `logout-implementation-error.md`*
+*Consolidated from: `logout_implementation_error.md`*
 
 
 ## Collegamenti correlati
@@ -5057,11 +5057,11 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 
 ## logout_implementation_with_laravel_localization
 
-*Consolidated from: `logout-implementation-with-laravel-localization.md`*
+*Consolidated from: `logout_implementation_with_laravel_localization.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -5221,7 +5221,7 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 
 ## logout_page_fix
 
-*Consolidated from: `logout-page-fix.md`*
+*Consolidated from: `logout_page_fix.md`*
 
 
 ## Errore Riscontrato
@@ -5266,7 +5266,7 @@ Convertire `logout.blade.php` in una **pagina Folio statica**:
 
 ## logout_page_implementation
 
-*Consolidated from: `logout-page-implementation.md`*
+*Consolidated from: `logout_page_implementation.md`*
 
 
 ## Struttura Corretta
@@ -5376,7 +5376,7 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ## logout_security
 
-*Consolidated from: `logout-security.md`*
+*Consolidated from: `logout_security.md`*
 
 
 ## Analisi della Sicurezza

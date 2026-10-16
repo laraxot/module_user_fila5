@@ -340,7 +340,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/moderation-w
 
 ## moderation_doctor
 
-*Consolidated from: `moderation-doctor.md`*
+*Consolidated from: `moderation_doctor.md`*
 
 
 ## Premessa
@@ -432,7 +432,7 @@ class DoctorPolicy {
 
 ## moderation_wizard_generic
 
-*Consolidated from: `moderation-wizard-generic.md`*
+*Consolidated from: `moderation_wizard_generic.md`*
 
 
 ## Premessa

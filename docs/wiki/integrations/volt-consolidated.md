@@ -66,7 +66,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
@@ -382,7 +382,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
@@ -529,7 +529,7 @@ related:
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-identificazione-dell.md)
@@ -816,7 +816,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-identificazione-dell.md)
@@ -1504,7 +1504,7 @@ related:
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -1688,7 +1688,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-panoramica.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -2253,11 +2253,11 @@ php artisan view:clear && php artisan route:clear
 
 ## volt_blade_implementation
 
-*Consolidated from: `volt-blade-implementation.md`*
+*Consolidated from: `volt_blade_implementation.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 - [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
@@ -2546,11 +2546,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 ## volt_blade_implementation_error
 
-*Consolidated from: `volt-blade-implementation-error.md`*
+*Consolidated from: `volt_blade_implementation_error.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
@@ -2645,7 +2645,7 @@ Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTAT
 
 ## volt_errors
 
-*Consolidated from: `volt-errors.md`*
+*Consolidated from: `volt_errors.md`*
 
 
 ## VoltDirectiveMissingException
@@ -2838,7 +2838,7 @@ class LogoutPage
 
 ## volt_folio_error
 
-*Consolidated from: `volt-folio-error.md`*
+*Consolidated from: `volt_folio_error.md`*
 
 
 ## Il Problema
@@ -2901,11 +2901,11 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 
 ## volt_folio_logout
 
-*Consolidated from: `volt-folio-logout.md`*
+*Consolidated from: `volt_folio_logout.md`*
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
@@ -3091,7 +3091,7 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 
 ## volt_folio_logout_debug
 
-*Consolidated from: `volt-folio-logout-debug.md`*
+*Consolidated from: `volt_folio_logout_debug.md`*
 
 
 ## Analisi del problema
@@ -3170,7 +3170,7 @@ Se vuoi mostrare una conferma, usa un pulsante con `wire:click="logout"` che ric
 
 ## volt_folio_logout_error
 
-*Consolidated from: `volt-folio-logout-error.md`*
+*Consolidated from: `volt_folio_logout_error.md`*
 
 
 ## Il Problema
@@ -3295,7 +3295,7 @@ final class LogoutAction
 
 ## volt_logout
 
-*Consolidated from: `volt-logout.md`*
+*Consolidated from: `volt_logout.md`*
 
 
 ## Il Problema
@@ -3521,7 +3521,7 @@ public function test_logout_clears_session()
 
 ## volt_logout_action
 
-*Consolidated from: `volt-logout-action.md`*
+*Consolidated from: `volt_logout_action.md`*
 
 
 ## Contesto
@@ -3591,7 +3591,7 @@ Volt scoprirà automaticamente la rotta `logout` grazie all’Attribute.
 
 ## volt_missing_directive
 
-*Consolidated from: `volt-missing-directive.md`*
+*Consolidated from: `volt_missing_directive.md`*
 
 
 ## Descrizione

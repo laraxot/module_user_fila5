@@ -209,7 +209,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Documentazione Modulo User](./README.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./README.md)
+- [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche
 

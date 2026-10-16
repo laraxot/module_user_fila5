@@ -6542,7 +6542,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## business_logic_analysis
 
-*Consolidated from: `business-logic-analysis.md`*
+*Consolidated from: `business_logic_analysis.md`*
 
 
 ## Overview
@@ -7023,7 +7023,7 @@ class ApiRateLimitingMiddleware
 
 ## business_logic_deep_dive
 
-*Consolidated from: `business-logic-deep-dive.md`*
+*Consolidated from: `business_logic_deep_dive.md`*
 
 
 ## 🎯 Module Overview

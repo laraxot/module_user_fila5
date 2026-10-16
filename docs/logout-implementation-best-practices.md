@@ -10,13 +10,13 @@ qmd: "best practices per l'implementazione del logout user"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+- [README modulo User](./readme.md)
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

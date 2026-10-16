@@ -898,7 +898,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./README.md)
+- [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../code-quality-analysis.md)
@@ -1008,7 +1008,7 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 
 ## baseuser-refactoring-completed-
 
-*Consolidated from: `baseuser-refactoring-completed.md`*
+*Consolidated from: `baseuser-refactoring-completed-.md`*
 
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -1269,7 +1269,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./README.md)
+- [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
@@ -1691,7 +1691,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./README.md)
+- [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
@@ -2061,7 +2061,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./README.md)
+- [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)

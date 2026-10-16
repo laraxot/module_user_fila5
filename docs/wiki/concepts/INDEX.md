@@ -12,6 +12,8 @@ updated: 2026-07-27
 
 Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
 
+- [Sostenibilità ruoli/membership](../../project-sustainability-membership-roles.md) — approvazione partner; membership B2G futura (BMAD)
+
 ## Runtime config & RBAC (2026-07-27)
 
 - [bugfix-permission-table-names-singular](../../bugfix-permission-table-names-singular.md) — **`permission.php` `table_names` immutabili**; schema segue config

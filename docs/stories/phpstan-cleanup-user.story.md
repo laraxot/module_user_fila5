@@ -65,3 +65,29 @@ Il runtime e' 8.4: serve alzare a `^8.3`/`^8.4` (file fuori scope User, tocca tu
 
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
+
+## Swarm 2026-10-15 — `UserApiTest`
+
+Claim: [phpstan-swarm-modules-2026-10-15.md](../../../../docs/chat/phpstan-swarm-modules-2026-10-15.md)
+
+### Scopo ricostruito
+
+Feature test PHPUnit sulla REST API `/api/users`: CRUD, validazione, filtri, paginazione, ruoli/permessi/team, verifica email, statistiche, bulk e export. Ogni assert deve leggere payload JSON e modelli con tipi verificabili, non `mixed` da `TestResponse::json()`.
+
+### Famiglie risolte (70 → 0)
+
+| Identificatore | Causa radice | Fix |
+|----------------|--------------|-----|
+| `method.nonObject` su `User::factory()` | PHPStan non inferisce `UserFactory` da `User::factory()` nel namespace test root | `UserFactory::new()->createOne()` / `count(n)->create()` |
+| `property.nonObject` / `argument.type` su `first()` e `actingAs()` | `User|null` e utente da factory non ristretti | `Assert::assertInstanceOf(User::class, …)`; factory tipizzata |
+| `foreach.nonIterable`, `offsetAccess`, `assertCount` su JSON | `$response->json('data')` è `mixed` | Helper privati: `decodeApiPayload`, `apiDataRows`, `apiMeta`, `apiStatisticsData` con `Safe\json_decode` + assert PHPUnit |
+| `encapsedStringPart.nonString` su `{$user->id}` | Id su modello mixed in interpolazione | Concatenazione esplicita `'/api/users/'.$id.'/…'` |
+| `missingType.generics` / `return.type` su helper | `TestResponse` generico e array non a chiavi stringa | `@param TestResponse<\Illuminate\Http\Response>`; `stringKeyArray()` |
+
+### Verifica
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/User/tests/Feature/Api/UserApiTest.php --no-progress
+```
+
+Esito: **[OK] No errors** (2026-10-15).
