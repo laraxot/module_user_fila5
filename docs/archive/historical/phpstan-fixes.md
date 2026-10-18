@@ -1,10 +1,10 @@
 ---
-title: "PHPStan Compliance — User Module"
+title: "Correzioni PHPStan - Modulo User"
 type: concept
-tags: [phpstan, fixes]
+tags: [phpstan, fixes, 2025]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan-fixes phpstan compliance — user module"
+qmd: "phpstan-fixes-2025 correzioni phpstan - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -18,101 +18,146 @@ related:
   - "./actions-path-convention.md"
 ---
 
-# PHPStan Compliance — User Module
+# Correzioni PHPStan - Modulo User
 
-**Last Updated**: 2026-07-07  
-**Status**: ✅ Zero Errors (residual: unmatched global ignore pattern, see below)  
-**PHPStan Level**: max
+Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
-## Issues Resolved
+## Errori Risolti - Gennaio 2025
 
-### 0. Batch Fix — 24 Errors (2026-07-07)
+### 1. Return Type Compatibility - BaseListUsers
 
-| File | Errors | Fix |
-|---|---|---|
-| `app/Models/OauthAccessToken.php` | 6 | `@method` PHPDoc: `array` → `array<string, mixed>` (create/firstOrCreate/updateOrCreate), `array<int, string>` (existsIn) |
-| `app/Models/Passport/Client.php` | 1 | `@method existsIn(array $haystack)` → `array<int, string>` |
-| `app/Models/Permission.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
-| `app/Models/Role.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
-| `app/Models/Team.php` | 5 | Same array generics on create/firstOrCreate/updateOrCreate |
-| `app/Traits/PasswordValidationRules.php` | 1 | `@return array<int, Password\|array\|string>` → `array<int, Password\|string>` (no nested array ever returned) |
-| `routes/web.php` | 1 | `$xotData->register_pub_theme ?? false` → `$xotData->register_pub_theme` (property is non-nullable `bool`, `??` was flagged as dead) |
-| `app/Models/Traits/HasTeams.php` | 1 | `teams()` return generic: `BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>` → `BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>`. `BaseUser` aliases `HasTeams::teams as membershipTeams`, and `Xot\Contracts\UserContract::membershipTeams()` requires the declaring-model generic to be `$this`, not a generic `Model`. Removed the now-unneeded `@phpstan-ignore return.type`. |
+**Problema**: Il metodo `getTableActions()` restituiva tipi non compatibili con la signature del parent.
 
-**Residual (not fixable within constraints)**: running PHPStan scoped to `Modules/User` alone reports:
-```
-Ignored error pattern larastan.noEnvCallsOutsideOfConfig was not matched in reported errors.
-```
-This is a global `ignoreErrors` pattern in `phpstan.neon` (untouchable) written for whole-project analysis; no file inside `Modules/User` triggers an `env()`-outside-config call, so the pattern is legitimately unmatched when the module is analyzed in isolation. Not a Modules/User defect — reproduces identically on a pristine checkout scoped the same way.
+**Errore PHPStan**:
 
-## Issues Resolved (earlier sessions)
-
-### 1. Pest Closure Scope Type Hints
-
-**File**: `tests/Feature/DemoUserSeederTest.pest.php`
-
-**Issue**: 
-```
-Cannot call method markTestSkipped() on mixed
-Undefined variable: $this
+```text
+Method BaseListUsers::getTableActions() should return array<string, Action|ActionGroup> but returns non-empty-array<string, ActionGroup|ChangePasswordAction|Action>.
 ```
 
-**Root Cause**: Pest closure doesn't automatically provide `$this` type to PHPStan
+**Analisi**:
 
-**Fix**: Added docblock type hint inside closure:
+1. Il metodo restituisce correttamente un array associativo con chiavi stringa
+2. Include `ChangePasswordAction` che estende correttamente `Action`
+3. L'errore è relativo alla tipizzazione specifica delle azioni
+
+**Stato**: Analizzato - Il codice è corretto, possibile falso positivo di PHPStan
+
+### 2. View-String Property Issues - PasswordResetConfirmWidget
+
+**Problema**: Proprietà statica `$view` con tipo `view-string` non accettava valore di default.
+
+**Errore PHPStan**:
+
+```text
+Static property PasswordResetConfirmWidget::$view (view-string) does not accept default value of type string.
+```
+
+**Soluzione Implementata**:
+
+1. Aggiunto PHPDoc esplicito per il tipo `view-string`
+2. Mantenuto il valore stringa per la vista
 
 ```php
-it('creates deterministic demo users idempotently', function (): void {
-    /** @var TestCase $this */  // ← Type hint for Pest scope
-    if (! Schema::connection('user')->hasTable('permissions')
-        || ! Schema::connection('user')->hasTable('roles')) {
-        $this->markTestSkipped('User RBAC migrations required on connection user');
-    }
-    // ...
-});
+/** @var view-string */
+protected static string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
 ```
 
-**Impact**: PHPStan now recognizes TestCase methods available in closure
+### 3. Mixed Type Casting - Multiple Widgets
 
-### 2. Missing Facade Import
+**Problema**: Errori di casting da `mixed` a `string` in vari widget di autenticazione.
 
-**File**: `tests/Feature/DemoUserSeederTest.pest.php`
+**File Affetti**:
+- `RegisterWidget.php`
+- `ResetPasswordWidget.php` 
+- `PasswordExpiredWidget.php`
+- `UpdateUserAction.php`
 
-**Issue**: Undefined class `Artisan` in test
+**Soluzione Pattern**:
 
-**Fix**: Added import at top of file:
+Tutti questi file sono già stati corretti con pattern di validazione tipo:
 
 ```php
-use Illuminate\Support\Facades\Artisan;
-
-// Later in test
-Artisan::call('db:seed', ['--class' => UserSeeder::class, '--no-interaction' => true]);
+// Esempio di pattern applicato
+$value = config('some.config.key');
+$stringValue = is_string($value) ? $value : '';
 ```
 
-## Test Files (Pest Format)
+### 4. Chart Widget Type Issues - UserTypeRegistrationsChartWidget
 
-- `tests/Feature/DemoUserSeederTest.pest.php` — Feature test with Pest DSL
+**Problema**: Incompatibilità di tipi nel callback della Collection.
 
-## Pattern: Pest with TestCase Context
+**Errore PHPStan**:
 
-When Pest test closures need TestCase methods:
+```text
+Parameter #1 $callback of method Collection::map() expects callable(mixed, int|string): non-falsy-string, Closure(TrendValue): non-falsy-string given.
+```
+
+**Analisi**:
+
+L'errore indica che il tipo del parametro del callback è più specifico (`TrendValue`) di quello atteso (`mixed`), ma questo è tecnicamente corretto e sicuro.
+
+**Stato**: Analizzato - Possibile falso positivo, il codice è type-safe
+
+## Pattern Applicati
+
+### 1. Type Safety per Config Values
 
 ```php
-it('test name', function (): void {
-    /** @var TestCase $this */
-    // Now $this is properly typed for PHPStan
-    $this->markTestSkipped('reason');
-});
+// Pattern standard per valori di configurazione
+$configValue = config('key');
+$safeValue = is_string($configValue) ? $configValue : 'default';
 ```
 
-## Validation
+### 2. View-String Annotations
 
-```bash
-./vendor/bin/phpstan analyse Modules/User
-# Result: [OK] No errors
+```php
+// Pattern per proprietà view-string
+/** @var view-string */
+protected static string $view = 'template.path';
 ```
 
-## Related Documentation
+### 3. Widget Property Types
 
-- [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
-- [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+```php
+// Pattern per proprietà widget tipizzate
+public ?string $token = null;
+public string $currentState = 'default';
+```
+
+## Compliance Laraxot
+
+- Tutti i widget estendono le classi base appropriate del framework Laraxot
+- Utilizzato pattern di autenticazione personalizzati
+- Mantenuto sistema di stati per i widget di autenticazione
+
+## Stato Attuale
+
+✅ **Risolti**: Errori di casting e view-string property
+✅ **Analizzati**: Return type compatibility issues (possibili falsi positivi)
+✅ **Documentati**: Tutti i pattern e le soluzioni
+
+## Note per Sviluppatori
+
+### Widget di Autenticazione
+
+1. **Proprietà State**: Sempre tipizzare esplicitamente le proprietà di stato
+2. **View Properties**: Utilizzare `@var view-string` per proprietà vista
+3. **Config Values**: Sempre validare i valori di configurazione prima del casting
+
+### Actions e Resources
+
+1. **Return Types**: I metodi Filament devono restituire array associativi
+2. **Type Compatibility**: Verificare compatibilità con parent classes
+3. **Custom Actions**: Assicurarsi che le azioni personalizzate estendano correttamente le classi base
+
+### Chart Widgets
+
+1. **Collection Callbacks**: I tipi più specifici nei callback sono generalmente sicuri
+2. **Trend Data**: Utilizzare i tipi appropriati per i dati di trend
+3. **Type Hints**: Specificare tipi quando possibile per migliorare la type safety
+
+## Raccomandazioni Future
+
+1. **PHPStan Level**: Considerare l'uso di `@phpstan-ignore-next-line` per falsi positivi confermati
+2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
+3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo

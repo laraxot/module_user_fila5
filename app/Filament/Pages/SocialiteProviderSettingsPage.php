@@ -97,7 +97,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
 
                         TextInput::make('google.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'google'))
+                            ->default(fn () => route('oauth.callback', 'google'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
@@ -127,7 +127,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
 
                         TextInput::make('github.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'github'))
+                            ->default(fn () => route('oauth.callback', 'github'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
@@ -157,7 +157,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
 
                         TextInput::make('microsoft.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
+                            ->default(fn () => route('oauth.callback', 'microsoft'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
@@ -185,7 +185,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $google['client_secret'] ?? '',
                     config('services.google.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'google'),
+                'redirect' => route('oauth.callback', 'google'),
                 'scopes' => $this->stringList($google['scopes'] ?? ['openid', 'email', 'profile']),
             ];
         }
@@ -199,7 +199,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $github['client_secret'] ?? '',
                     config('services.github.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'github'),
+                'redirect' => route('oauth.callback', 'github'),
                 'scopes' => $this->stringList($github['scopes'] ?? ['read:user', 'user:email']),
             ];
         }
@@ -213,7 +213,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $microsoft['client_secret'] ?? '',
                     config('services.microsoft.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'microsoft'),
+                'redirect' => route('oauth.callback', 'microsoft'),
                 'scopes' => $this->stringList($microsoft['scopes'] ?? ['User.Read', 'openid', 'email']),
             ];
         }

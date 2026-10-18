@@ -3,6 +3,16 @@
 declare(strict_types=1);
 
 return [
+    'login' => [
+        'heading' => ['text' => 'Accedi al tuo account', 'context' => 'login_form'],
+        'subtitle' => ['text' => 'Portale digitale del Comune di Fixcity', 'context' => 'login_form'],
+        'email' => ['text' => 'Email', 'label' => 'Email', 'context' => 'login_form'],
+        'password' => ['text' => 'Password', 'label' => 'Password', 'context' => 'login_form'],
+        'button' => ['text' => 'Accedi', 'context' => 'login_form'],
+        'register' => ['text' => 'Registrati', 'context' => 'login_form'],
+        'forgot_password' => ['text' => 'Password dimenticata?', 'context' => 'login_form'],
+        'meta_description' => ['text' => 'Accedi per inviare e seguire le tue segnalazioni.', 'context' => 'login_form'],
+    ],
     'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
@@ -11,7 +21,7 @@ return [
         'placeholder' => '',
     ],
     'password' => [
-        'key' => 'user::auth.password',
+        'key' => 'user::auth.password.error.text',
         'text' => 'La password inserita non è corretta.',
         'description' => 'Messaggio di errore mostrato quando la password inserita non è corretta',
         'context' => 'login_form',
@@ -282,6 +292,13 @@ return [
         ],
         'back_to_site' => 'Torna al sito',
         'need_help' => 'Hai bisogno di aiuto?',
+        'intro' => [
+            'key' => 'user::auth.login.intro',
+            'text' => 'Accedi per inviare e seguire le tue segnalazioni.',
+            'description' => 'Introduzione pagina login',
+            'context' => 'login_form',
+            'placeholder' => '',
+        ],
         'welcome_back' => [
             'key' => 'user::auth.login.welcome-back',
             'text' => 'Bentornato',
@@ -1162,5 +1179,10 @@ return [
         'subtitle' => 'Inserisci la tua email per ricevere le istruzioni',
         'back_to_login' => 'Torna al login',
         'submit' => 'Invia istruzioni',
+    ],
+    'login_widget' => [
+        'providers' => [
+            'google' => ['label' => 'Accedi con Google'],
+        ],
     ],
 ];

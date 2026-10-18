@@ -1,23 +1,3 @@
----
-title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
-type: concept
-tags: [hasteams, trait, filosofia, correzione]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasteams-trait-filosofia-e-correzione-completa hasteams trait - filosofia laraxot e strategia di correzione completa"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -114,7 +94,7 @@ public function switchTeam(?TeamContract $team): bool
         $this->save();
         return true;
     }
-    
+
     if (! $this->belongsToTeam($team) && ! $this->ownsTeam($team)) {
         return false;
     }
@@ -167,7 +147,7 @@ trait HasTeams
 public function addTeamMember(UserContract $user, ?Role $role = null): Model
 {
     Assert::notNull($user, 'User cannot be null'); // ✅ Validazione
-    
+
     $teamUser = $this->teamUsers()->create([
         'user_id' => $user->getKey(),
         'role_id' => $role?->getKey(), // ✅ Null-safe
@@ -254,7 +234,7 @@ public function ownsTeam(TeamContract $team): bool { /* unica implementazione */
 - [x] ✅ Completare PHPDoc per tutte le relazioni
 - [x] ✅ Rimuovere metodi duplicati
 - [x] ✅ Fix gestione null in `switchTeam()`
-- [x] ✅ Rimuovere helper `app()` 
+- [x] ✅ Rimuovere helper `app()`
 - [x] ✅ Correggere proprietà `$this->owner`
 - [x] ✅ Separare logica getter/setter
 - [x] ✅ Testare compatibilità PHPStan livello 9+
@@ -277,7 +257,7 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
-- [Modules/User/docs/traits.md](../../traits.md)
+- [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
 ## 🎯 **RISULTATO FINALE**
@@ -296,12 +276,12 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes.md](../../phpstan-fixes.md) - Guide PHPStan
+- [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
-- [traits.md](../../traits.md) - Documentazione completa trait modulo User
-- [authentication.md](../../authentication.md) - Sistema autenticazione User
+- [traits.md](traits.md) - Documentazione completa trait modulo User
+- [authentication.md](authentication.md) - Sistema autenticazione User
 - [index.md](index.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
@@ -313,11 +293,12 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 
-**Data correzione**: Gennaio 2025  
-**Status**: ✅ **COMPLETATO**  
+**Data correzione**: Gennaio 2025
+**Status**: ✅ **COMPLETATO**
+**Conformità**: Laraxot PTVX Philosophy, PHPStan Level 9+, Windsurf Rules

@@ -1,27 +1,6 @@
----
-title: "Implementazione Login Personalizzato"
-type: concept
-tags: [custom, login]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "custom-login implementazione login personalizzato"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 https://ajaxray.com/blog/lets-beautify-filament-3-login-page/
 
 https://www.codef.site/blog/laravel/how-to-customize-laravel-filament-login-page
-
 
 https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profile-page
 
@@ -48,15 +27,15 @@ use Filament\Forms\Form;
 class LoginWidget extends XotBaseWidget
 {
     protected static string $view = 'filament.widgets.auth.login-form';
-    
+
     public ?array $data = [];
-    
+
     public function mount(): void
     {
         $this->form->fill();
     }
-    
-    public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+
+    public function form(Form $form): Form
     {
         return $form
             ->schema([
@@ -72,15 +51,15 @@ class LoginWidget extends XotBaseWidget
             ])
             ->statePath('data');
     }
-    
+
     public function login(): void
     {
         $data = $this->form->getState();
-        
+
         if (Auth::attempt($data)) {
             $this->redirect('/dashboard');
         }
-        
+
         $this->addError('email', 'Invalid credentials');
     }
 }
@@ -100,11 +79,6 @@ class LoginWidget extends XotBaseWidget
 - [Best Practices Filament](filament_best_practices.md)
 - [User Profile Models](user_profile_models.md)
 
-
 ### Versione Incoming
 
-
 ---
-
-
-

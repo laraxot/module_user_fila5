@@ -1,90 +1,72 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+use Modules\User\Models\User;
 
 describe('User Authentication', function () {
     it('can authenticate user with correct credentials', function () {
-        $email = 'auth-'.uniqid('', true).'@example.com';
-
-        $user = createTestUser([
-            'email' => $email,
+        $user = createUser([
+            'email' => 'test@example.com',
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
 
         $authenticated = Auth::attempt([
-            'email' => $email,
+            'email' => 'test@example.com',
             'password' => 'password123',
         ]);
 
-        Assert::assertTrue($authenticated);
-        Assert::assertSame($user->id, Auth::user()?->id);
+        expect($authenticated)->toBeTrue()->and(Auth::user()?->id)->toBe($user->id);
     });
 
     it('cannot authenticate inactive user', function () {
-        $email = 'inactive-'.uniqid('', true).'@example.com';
-
-        createTestUser([
-            'email' => $email,
+        createUser([
+            'email' => 'inactive@example.com',
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
 
         $authenticated = Auth::attempt([
-            'email' => $email,
+            'email' => 'inactive@example.com',
             'password' => 'password123',
         ]);
 
-        if ($authenticated) {
-            pestSkip('Auth::attempt does not reject inactive users in the running application.');
-        }
-
-        Assert::assertFalse($authenticated);
+        expect($authenticated)->toBeFalse();
     });
 
     it('logs authentication attempts', function () {
-        $email = 'log-'.uniqid('', true).'@example.com';
-
-        $user = createTestUser([
-            'email' => $email,
+        $user = createUser([
+            'email' => 'test@example.com',
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
 
         Auth::attempt([
-            'email' => $email,
+            'email' => 'test@example.com',
             'password' => 'password123',
         ]);
 
-        $user->refresh();
-
-        if ($user->authentications->isEmpty()) {
-            pestSkip('Authentication logging is not persisted in the test environment.');
-        }
-
-        Assert::assertCount(1, $user->authentications);
-
-        Assert::assertInstanceOf(AuthenticationLog::class, $user->authentications->first());
+        expect($user->authentications)
+            ->toHaveCount(1)
+            ->and($user->authentications->first())
+            ->toBeInstanceOf(AuthenticationLog::class);
     });
 
     it('handles password expiration', function () {
-        $user = createTestUser([
+        $user = createUser([
             'password_expires_at' => now()->subDay(),
         ]);
 
-        Assert::assertTrue($user->password_expires_at?->isPast());
+        expect($user->password_expires_at->isPast())->toBeTrue();
     });
 
     it('supports OTP authentication', function () {
-        $user = createTestUser(['is_otp' => true]);
+        $user = createUser(['is_otp' => true]);
 
-        Assert::assertTrue($user->is_otp);
+        expect($user->is_otp)->toBeTrue();
     });
 });

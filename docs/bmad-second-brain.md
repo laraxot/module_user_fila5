@@ -29,3 +29,11 @@ qmd: "bmad + second brain   fix log user"
 ## Prossimi passi
 - Eseguire `php artisan migrate` per DB `restaurant_data`
 - Verificare `phpstan analyse Modules` con baseline/alias corretto
+
+## Regola URL localizzati — 2026-10-18
+
+`LaravelLocalization::getLocalizedURL()` ha firma
+`getLocalizedURL($locale, $url, ...)`: il primo argomento non è l'URL.
+Per localizzare il percorso corrente usare `localizeURL($url)`; in alternativa
+passare sempre esplicitamente locale e URL. Questo evita che `/it` venga
+interpretato come locale e causi `UnsupportedLocaleException`.

@@ -228,3 +228,16 @@ contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
+
+## [2026-10-18] LaravelLocalization — firma dei metodi URL
+
+- **Sintomo:** il login su `/it/auth/login` generava `UnsupportedLocaleException`
+  con locale `/it` (auth già riuscita; falliva il redirect Livewire).
+- **Causa:** `getLocalizedURL($locale, $url)` riceve il **locale** per primo;
+  `getLocalizedURL('/' . app()->getLocale())` passava `'/it'` come locale.
+  `localizeURL($url, $locale)` è il wrapper corretto (URL per primo).
+- **Decisione:** per localizzare un URL usare `localizeURL($url[, $locale])`;
+  usare `getLocalizedURL($locale, $url)` solo con locale esplicito supportato.
+- **Fix:** `LoginWidget` usa `localizeURL(..., $locale)` con locale trim/validato
+  (submit Livewire su `/livewire-*` senza segmento lingua).
+- **Fonte API:** [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)

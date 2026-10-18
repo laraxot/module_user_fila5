@@ -2,76 +2,99 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Filament\Widgets;
-
+use Tests\TestCase;
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Modules\User\Database\Factories\UserFactory;
+use Illuminate\Validation\ValidationException;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+
+use function Pest\Laravel\assertAuthenticatedAs;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->widget = new LoginWidget;
+    $this->widget = new LoginWidget();
 });
 
-describe('Login Widget', function (): void {
-    test('it can render widget', function (): void {
-        $widget = new LoginWidget;
+test('it can render widget', function (): void {
+    $widget = new LoginWidget();
 
-        $reflection = new \ReflectionClass($widget);
-        $property = $reflection->getProperty('view');
-        $property->setAccessible(true);
-        $view = $property->getValue($widget);
+    // Use reflection to access the protected view property
+    $reflection = new ReflectionClass($widget);
+    $property = $reflection->getProperty('view');
+    $property->setAccessible(true);
+    $view = $property->getValue($widget);
 
-        if (! is_string($view)) {
-            Assert::fail('Expected $view to be a string.');
-        }
-        Assert::assertStringContainsString('pub_theme::filament.widgets.auth.login', $view);
-    });
+    expect($view)->toContain('pub_theme::filament.widgets.auth.login');
+});
 
-    test('it has correct form schema', function (): void {
-        /** @var TestCase $this */
-        $widget = $this->requireLoginWidget();
-        $form = $widget->getFormSchema();
+test('it has correct form schema', function (): void {
+    $form = $this->widget->getFormSchema();
 
-        Assert::assertCount(3, $form);
-        $names = [];
-        foreach ($form as $component) {
-            if (method_exists($component, 'getName')) {
-                $names[] = $component->getName();
-            }
-        }
+    expect($form)->toHaveCount(3);
 
-        Assert::assertContains('email', $names);
-        Assert::assertContains('password', $names);
-        Assert::assertContains('remember', $names);
-    });
+    // Check that the schema contains components with the expected names
+    $componentNames = array_map(fn($component) => $component->getName(), $form);
+    expect($componentNames)->toContain('email');
+    expect($componentNames)->toContain('password');
+    expect($componentNames)->toContain('remember');
+});
 
-    test('it can authenticate user', function (): void {
-        /** @var TestCase $this */
-        $widget = $this->requireLoginWidget();
-        if (! class_exists('CreateUsersTable')) {
-            $this->skipTest('Database not available for testing');
-        }
+test('it can authenticate user', function (): void {
+    // Skip if we can't use the database
+    if (!class_exists('CreateUsersTable')) {
+        $this->markTestSkipped('Database not available for testing');
+        return;
+    }
 
-        /** @var User $user */
-        $user = UserFactory::new()->createOne([
-            'email' => 'test@example.com',
-            'password' => Hash::make('password123'),
-        ]);
+    /** @var User $user */
+    $user = User::factory()->create([
+        'email' => 'test@example.com',
+        'password' => Hash::make('password123'),
+    ]);
 
-        $widget->form->fill([
-            'email' => 'test@example.com',
-            'password' => 'password123',
-            'remember' => true,
-        ]);
+    $this->widget->form->fill([
+        'email' => 'test@example.com',
+        'password' => 'password123',
+        'remember' => true,
+    ]);
 
-        $widget->save();
+    $this->widget->save();
 
-        $this->assertAuthenticatedAs($user);
-    });
+    assertAuthenticatedAs($user);
+});
+
+test('it validates credentials', function (): void {
+    $this->widget->form->fill([
+        'email' => 'nonexistent@example.com',
+        'password' => 'wrongpassword',
+    ]);
+
+    // The widget should handle validation internally without throwing exceptions
+    $this->widget->save();
+
+    // Check that the widget has error messages for invalid credentials
+    $errorBag = $this->widget->getErrorBag();
+    expect($errorBag->isNotEmpty())->toBeTrue();
+    expect(implode(' ', $errorBag->all()))->toContain('errore');
+});
+
+test('it requires email and password', function (): void {
+    $this->widget->form->fill([
+        'email' => '',
+        'password' => '',
+    ]);
+
+    // The widget should handle validation internally without throwing exceptions
+    $this->widget->save();
+
+    // Check that the widget has error messages for required fields
+    $errorBag = $this->widget->getErrorBag();
+    expect($errorBag->isNotEmpty())->toBeTrue();
+
+    $errorMessages = implode(' ', $errorBag->all());
+    expect($errorMessages)->toContain('email');
+    expect($errorMessages)->toContain('password');
 });

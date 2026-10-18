@@ -1,23 +1,3 @@
----
-title: "Regole per la Verifica dei Componenti Blade"
-type: rule
-tags: [component, verification, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "component-verification-rules regole per la verifica dei componenti blade"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -54,7 +34,7 @@ related:
 
 #### Layout Components (x-layouts.*)
 - `x-layouts.app`
-- `x-layouts.guest` 
+- `x-layouts.guest`
 - `x-layouts.main`
 - `x-layouts.marketing`
 - `x-layouts.navigation`
@@ -96,7 +76,7 @@ related:
 ```blade
 <x-layouts.main>
     <div class="flex flex-col items-center justify-center min-h-screen py-10">
-        
+
         <div class="w-full max-w-md">
             <x-ui.logo class="w-auto h-10 text-gray-700 fill-current dark:text-gray-100 mx-auto mb-6" />
 
@@ -161,4 +141,4 @@ Prima di usare qualsiasi componente:
 
 - [Documentazione Filament Ufficiale](https://filamentphp.com/docs)
 - [Laravel Blade Components](https://laravel.com/docs/blade#components)
-- [Componenti UI del Progetto](../../../../../Themes/Sixteen/resources/views/components/ui)
+- [Componenti UI del Progetto](../../../Themes/Sixteen/resources/views/components/ui/)

@@ -1,23 +1,3 @@
----
-title: "Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team"
-type: concept
-tags: [jetstream, laraxot, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "jetstream-vs-laraxot-philosophy jetstream vs laraxot: filosofia, religione e politica dei team"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**
@@ -225,7 +205,7 @@ trait HasTeams
 
     /**
      * Determine if the given team is the current team.
-     * 
+     *
      * @param TeamContract $team
      * @return bool
      */
@@ -328,7 +308,7 @@ trait HasTeams
     public function ownsTeam(TeamContract $team): bool
     {
         Assert::notNull($team, 'Team cannot be null');
-        
+
         return $this->id && $team->user_id && $this->id === $team->user_id;
     }
 
@@ -448,6 +428,6 @@ Un trait che **rispetta la religione Jetstream** ma **evolve con la filosofia La
 
 ---
 
-**Data creazione**: 10 giugno 2025  
-**Conformità**: Laravel Jetstream 5.x + Laraxot PTVX Philosophy  
+**Data creazione**: 10 giugno 2025
+**Conformità**: Laravel Jetstream 5.x + Laraxot PTVX Philosophy
 **PHPStan**: Level 9+ Compliant

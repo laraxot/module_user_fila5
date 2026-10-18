@@ -155,7 +155,7 @@ CREATE INDEX idx_sessions_last_activity ON sessions(last_activity);
 
 ## 📚 Related Documentation
 
-- [authentication.md](../../authentication.md)
+- [authentication.md](./authentication.md)
 - [session-management.md](./session-management.md)
 - [roles-permissions.md](./roles-permissions.md)
 - [optimization-analysis.md](./optimization-analysis.md)

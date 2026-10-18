@@ -1,63 +1,151 @@
 ---
-title: "Correzioni PHPStan Livello 7 - Modulo User"
+title: "Correzioni PHPStan - Modulo User"
 type: note
 status: draft
 updated: 2026-09-24
 tags: [docs, user, archive]
-qmd: "correzioni phpstan livello 7 - modulo user user"
+qmd: "correzioni phpstan - modulo user user"
 ---
-# Correzioni PHPStan Livello 7 - Modulo User
+# Correzioni PHPStan - Modulo User
 
-Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
+Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
-## Errori Identificati
+## Errori Risolti - Gennaio 2025
 
-### 1. Errori in Profile.php
+### 1. Return Type Compatibility - BaseListUsers
 
+**Problema**: Il metodo `getTableActions()` restituiva tipi non compatibili con la signature del parent.
+
+**Errore PHPStan**:
+
+```text
+Method BaseListUsers::getTableActions() should return array<string, Action|ActionGroup> but returns non-empty-array<string, ActionGroup|ChangePasswordAction|Action>.
 ```
-Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::permission() return type contains unknown class Modules\User\Models\Builder.
-Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::role() return type contains unknown class Modules\User\Models\Builder.
-Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withExtraAttributes() return type contains unknown class Modules\User\Models\Builder.
-Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutPermission() return type contains unknown class Modules\User\Models\Builder.
-Line 49: PHPDoc tag @method for method Modules\User\Models\Profile::withoutRole() return type contains unknown class Modules\User\Models\Builder.
+
+**Analisi**:
+
+1. Il metodo restituisce correttamente un array associativo con chiavi stringa
+2. Include `ChangePasswordAction` che estende correttamente `Action`
+3. L'errore è relativo alla tipizzazione specifica delle azioni
+
+**Stato**: Analizzato - Il codice è corretto, possibile falso positivo di PHPStan
+
+### 2. View-String Property Issues - PasswordResetConfirmWidget
+
+**Problema**: Proprietà statica `$view` con tipo `view-string` non accettava valore di default.
+
+**Errore PHPStan**:
+
+```text
+Static property PasswordResetConfirmWidget::$view (view-string) does not accept default value of type string.
 ```
 
-## Soluzioni Implementate
+**Soluzione Implementata**:
 
-### 1. Correzione in Profile.php
-
-Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel namespace `Modules\User\Models` che non esiste. Abbiamo corretto i riferimenti utilizzando il namespace completo per la classe Builder:
+1. Aggiunto PHPDoc esplicito per il tipo `view-string`
+2. Mantenuto il valore stringa per la vista
 
 ```php
-/**
- * ...
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile permission($permissions, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile query()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile role($roles, $guard = null, $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withExtraAttributes()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutPermission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, $guard = null)
- * ...
- */
+/** @var view-string */
+protected static string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
 ```
 
-### Versione HEAD
+### 3. Mixed Type Casting - Multiple Widgets
 
-Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
-## Collegamenti tra versioni di phpstan_fixes.md
-* [phpstan_fixes.md](../../../xot/project_docs/phpstan/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../xot/project_docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../user/project_docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../ui/project_docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../media/project_docs/phpstan_fixes.md)
+**Problema**: Errori di casting da `mixed` a `string` in vari widget di autenticazione.
 
+**File Affetti**:
+- `RegisterWidget.php`
+- `ResetPasswordWidget.php`
+- `PasswordExpiredWidget.php`
+- `UpdateUserAction.php`
 
-### Versione Incoming
+**Soluzione Pattern**:
 
-Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
+Tutti questi file sono già stati corretti con pattern di validazione tipo:
 
-### BaseTeamUser: tipizzazione relazioni user() e team()
+```php
+// Esempio di pattern applicato
+$value = config('some.config.key');
+$stringValue = is_string($value) ? $value : '';
+```
 
-Per il modello `BaseTeamUser` sono stati aggiunti i return type espliciti `BelongsTo` ai metodi `user()` e `team()` e completati i PHPDoc generici sulle relazioni verso `UserContract` e `TeamContract`, in modo che PHPStan possa inferire correttamente i tipi delle relazioni dinamiche.
+### 4. Chart Widget Type Issues - UserTypeRegistrationsChartWidget
 
----
+**Problema**: Incompatibilità di tipi nel callback della Collection.
+
+**Errore PHPStan**:
+
+```text
+Parameter #1 $callback of method Collection::map() expects callable(mixed, int|string): non-falsy-string, Closure(TrendValue): non-falsy-string given.
+```
+
+**Analisi**:
+
+L'errore indica che il tipo del parametro del callback è più specifico (`TrendValue`) di quello atteso (`mixed`), ma questo è tecnicamente corretto e sicuro.
+
+**Stato**: Analizzato - Possibile falso positivo, il codice è type-safe
+
+## Pattern Applicati
+
+### 1. Type Safety per Config Values
+
+```php
+// Pattern standard per valori di configurazione
+$configValue = config('key');
+$safeValue = is_string($configValue) ? $configValue : 'default';
+```
+
+### 2. View-String Annotations
+
+```php
+// Pattern per proprietà view-string
+/** @var view-string */
+protected static string $view = 'template.path';
+```
+
+### 3. Widget Property Types
+
+```php
+// Pattern per proprietà widget tipizzate
+public ?string $token = null;
+public string $currentState = 'default';
+```
+
+## Compliance Laraxot
+
+- Tutti i widget estendono le classi base appropriate del framework Laraxot
+- Utilizzato pattern di autenticazione personalizzati
+- Mantenuto sistema di stati per i widget di autenticazione
+
+## Stato Attuale
+
+✅ **Risolti**: Errori di casting e view-string property
+✅ **Analizzati**: Return type compatibility issues (possibili falsi positivi)
+✅ **Documentati**: Tutti i pattern e le soluzioni
+
+## Note per Sviluppatori
+
+### Widget di Autenticazione
+
+1. **Proprietà State**: Sempre tipizzare esplicitamente le proprietà di stato
+2. **View Properties**: Utilizzare `@var view-string` per proprietà vista
+3. **Config Values**: Sempre validare i valori di configurazione prima del casting
+
+### Actions e Resources
+
+1. **Return Types**: I metodi Filament devono restituire array associativi
+2. **Type Compatibility**: Verificare compatibilità con parent classes
+3. **Custom Actions**: Assicurarsi che le azioni personalizzate estendano correttamente le classi base
+
+### Chart Widgets
+
+1. **Collection Callbacks**: I tipi più specifici nei callback sono generalmente sicuri
+2. **Trend Data**: Utilizzare i tipi appropriati per i dati di trend
+3. **Type Hints**: Specificare tipi quando possibile per migliorare la type safety
+
+## Raccomandazioni Future
+
+1. **PHPStan Level**: Considerare l'uso di `@phpstan-ignore-next-line` per falsi positivi confermati
+2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
+3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
