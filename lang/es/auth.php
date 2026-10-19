@@ -76,6 +76,31 @@ return [
     'fields' => [
     ],
     'actions' => [
+        'login' => [
+            'success' => 'Sesión iniciada correctamente.',
+            'error' => 'El correo electrónico o la contraseña no son correctos.',
+            'throttle' => 'Demasiados intentos. Inténtalo de nuevo en :seconds segundos.',
+        ],
+    ],
+    'login' => [
+        'title' => ['text' => 'Inicia sesión en tu cuenta'],
+        'intro' => ['text' => 'Inicia sesión para informar de un problema y seguir tus trámites.'],
+        'google' => ['text' => 'Google', 'button' => ['text' => 'Iniciar sesión con Google']],
+        'microsoft' => ['text' => 'Microsoft'],
+        'github' => ['text' => 'GitHub'],
+        'or_continue_with' => ['text' => 'o'],
+        'submit' => ['text' => 'Iniciar sesión'],
+        'forgot_password' => ['text' => '¿Has olvidado la contraseña?'],
+        'no_account' => ['text' => '¿Todavía no tienes una cuenta?'],
+        'create_account' => ['text' => 'Crear una cuenta'],
+        'logging_in' => ['text' => 'Iniciando sesión…'],
+        'success' => ['text' => 'Sesión iniciada correctamente.'],
+        'invalid_provider' => 'Proveedor de inicio de sesión no válido.',
+        'redirecting' => 'Redirigiendo…',
+        'redirect_to_provider' => 'Serás redirigido a :provider.',
+        'callback' => 'Inicio de sesión con :provider',
+        'callback_text' => 'Se produjo un problema al iniciar sesión con :provider.',
+        'back' => 'Volver al inicio de sesión',
     ],
     'login_page' => [
         'meta_title' => 'Iniciar sesión | FixCity',

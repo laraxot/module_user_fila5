@@ -21,11 +21,12 @@ status: draft
 
 Translation key prototype
 
-Project convention: '<namespace>::<context>.<collection>.<item>.<type>'
+Project convention: '<namespace>::<context>.<collection>.<key>.<type>' (exactly five elements, counting the namespace)
 
 Examples:
 - user::auth.register.actions.submit.label -> label for the submit button in registration form
 - user::auth.login.page.meta_title.label -> page meta title label for login
+- user::auth.login.password.text -> password field text
 
 Why:
 - Ensures predictable namespacing across modules and themes

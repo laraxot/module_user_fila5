@@ -9,7 +9,8 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
-use Modules\User\Models\BaseUser;
+use Modules\User\Contracts\UserContract;
+use Modules\User\Contracts\UserNotificationsContract;
 use Modules\User\Models\Notification;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -58,7 +59,11 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
             return;
         }
 
-        $user->unreadNotifications->markAsRead();
+        $user->unreadNotifications()->get()->each(
+            static function (Notification $notification) {
+                $notification->markAsRead();
+            },
+        );
 
         $this->refreshNotifications();
     }
@@ -80,10 +85,10 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
         $this->unreadCount = $user->unreadNotifications()->count();
     }
 
-    private function authUser(): ?BaseUser
+    private function authUser(): ?UserNotificationsContract
     {
         $user = Auth::user();
 
-        return $user instanceof BaseUser ? $user : null;
+        return $user instanceof UserContract && $user instanceof UserNotificationsContract ? $user : null;
     }
 }

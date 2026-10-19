@@ -12,6 +12,10 @@ updated: 2026-07-27
 
 Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
 
+## Contratti e identità
+
+- [UserContract boundary](usercontract-boundary.md) — i consumer controllano il contratto `UserContract`, non l'implementazione astratta `BaseUser`; le capability aggiuntive richiedono il relativo contratto.
+
 - [Sostenibilità ruoli/membership](../../project-sustainability-membership-roles.md) — approvazione partner; membership B2G futura (BMAD)
 
 ## Runtime config & RBAC (2026-07-27)

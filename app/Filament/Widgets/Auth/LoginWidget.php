@@ -73,7 +73,7 @@ class LoginWidget extends BaseAuthWidget
             session()->regenerate();
 
             Notification::make()
-                ->title(__('user::auth.actions.login.success'))
+                ->title(__('user::login.actions.login.success'))
                 ->success()
                 ->send();
 
@@ -126,7 +126,7 @@ class LoginWidget extends BaseAuthWidget
         // Usiamo la route oauth.redirect definita in Module/User/routes/socialite.php
         $actions[] = Actions::make('google')
             ->url(route('oauth.redirect', ['provider' => 'google']))
-            ->label('Accedi con Google')
+            ->label(__('user::auth.login.google.button.text'))
             ->icon('heroicon-o-google')
             ->color('gray')
             ->openUrlInNewTab();

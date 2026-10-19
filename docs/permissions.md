@@ -3,7 +3,7 @@ title: "Gestione dei Permessi"
 type: concept
 tags: [permissions]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-18
 qmd: "permissions gestione dei permessi"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -16,10 +16,17 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+  - "./bmad/permissions-connection-ownership.md"
 status: draft
 ---
 
 # Gestione dei Permessi
+
+## Ownership DB
+
+Le tabelle Spatie (`permissions`, `roles`, pivots) vivono su `fixcity_user`
+(connessione `user`). Vedi
+[permissions-connection-ownership](bmad/permissions-connection-ownership.md).
 
 ## Panoramica
 Il modulo User utilizza il pacchetto `spatie/laravel-permission` per gestire i permessi e i ruoli degli utenti.

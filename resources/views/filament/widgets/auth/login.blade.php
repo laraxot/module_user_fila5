@@ -32,12 +32,13 @@ declare(strict_types=1);
         <button
             type="submit"
             wire:loading.attr="disabled"
-            class="w-full py-3 px-5 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[1.00] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30"
+            wire:loading.attr="aria-busy"
+            wire:target="save"
+            aria-describedby="login-submit-status"
+            class="w-full py-3 px-5 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[1.00] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30 motion-reduce:transition-none motion-reduce:transform-none"
             style="background: linear-gradient(135deg, #1E5A96 0%, #164675 100%);"
-            onmouseover="this.style.transform='scale(1.03)';"
-            onmouseout="this.style.transform='scale(1.00)';"
         >
-            <span wire:loading wire:target="save" class="flex items-center gap-2 italic">
+            <span wire:loading wire:target="save" class="flex items-center gap-2" role="status" aria-live="polite">
                 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-5 w-5" aria-hidden="true" />
                 {{ __('user::auth.login.logging_in.text') }}
             </span>
@@ -47,6 +48,9 @@ declare(strict_types=1);
                 <x-filament::icon icon="heroicon-o-arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </div>
         </button>
+        <span id="login-submit-status" class="sr-only" wire:loading wire:target="save" role="status" aria-live="polite">
+            {{ __('user::auth.login.logging_in.text') }}
+        </span>
     </form>
 
     @php

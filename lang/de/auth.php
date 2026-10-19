@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 return [
+    'actions' => [
+        'login' => [
+            'success' => 'Anmeldung erfolgreich.',
+            'error' => 'E-Mail oder Passwort sind nicht korrekt.',
+            'throttle' => 'Zu viele Versuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',
+        ],
+    ],
     'failed' => 'Diese Anmeldedaten stimmen nicht mit unseren Aufzeichnungen überein.',
     'password' => 'Das eingegebene Passwort ist nicht korrekt.',
     'throttle' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',
@@ -79,8 +86,9 @@ return [
     'Verify Your Email Address' => 'Verifica la tua email',
     'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
     'login' => [
-        'title' => 'Anmelden bei Ihrem Konto',
+        'title' => ['text' => 'Anmelden bei Ihrem Konto'],
         'subtitle' => 'Geben Sie Ihre Anmeldedaten ein',
+        'intro' => ['text' => 'Melden Sie sich an, um ein Problem zu melden und Ihre Anfragen zu verfolgen.'],
         'email' => 'E-Mail-Adresse',
         'email_placeholder' => 'beispiel@email.com',
         'password' => 'Passwort',
@@ -97,9 +105,15 @@ return [
         'remember_structured' => [
             'label' => 'Angemeldet bleiben',
         ],
-        'submit' => 'Anmelden',
-        'forgot_password' => 'Passwort vergessen?',
-        'no_account' => 'Haben Sie kein Konto?',
+        'submit' => ['text' => 'Anmelden'],
+        'forgot_password' => ['text' => 'Passwort vergessen?'],
+        'no_account' => ['text' => 'Haben Sie kein Konto?'],
+        'create_account' => ['text' => 'Konto erstellen'],
+        'logging_in' => ['text' => 'Anmeldung läuft…'],
+        'or_continue_with' => ['text' => 'oder'],
+        'google' => ['text' => 'Google', 'button' => ['text' => 'Mit Google anmelden']],
+        'microsoft' => ['text' => 'Microsoft'],
+        'github' => ['text' => 'GitHub'],
         'register' => 'Registrieren',
         'success' => 'Anmeldung erfolgreich.',
         'failed' => 'Ungültige Anmeldedaten.',
@@ -118,6 +132,18 @@ return [
         'Remember me' => 'Angemeldet bleiben',
         'Remember' => 'Angemeldet bleiben',
         'Forgot your password?' => 'Passwort vergessen?',
+        'actions' => [
+            'login' => [
+                'label' => 'Anmelden',
+                'error' => 'Ungültige Anmeldedaten.',
+            ],
+        ],
+        'invalid_provider' => 'Ungültiger Anmeldeanbieter.',
+        'redirecting' => 'Weiterleitung läuft…',
+        'redirect_to_provider' => 'Sie werden zu :provider weitergeleitet.',
+        'callback' => 'Anmeldung mit :provider',
+        'callback_text' => 'Bei der Anmeldung mit :provider ist ein Problem aufgetreten.',
+        'back' => 'Zurück zur Anmeldung',
     ],
     'register' => [
         'title' => 'Neues Konto erstellen',

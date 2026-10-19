@@ -68,6 +68,8 @@ class UserForm extends XotBaseResourceForm
                 ->required()
                 ->autofocus()
                 ->autocomplete('username')
+                ->helperText(null)
+                ->placeholder(null)
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
             'password' => TextInput::make('password')
                 ->password()
@@ -78,6 +80,7 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('current-password')
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
             'remember' => Checkbox::make('remember')
+                ->helperText(null)
                 ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
         ];
     }

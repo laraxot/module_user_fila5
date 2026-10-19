@@ -1,5 +1,14 @@
 # Documentation Index
 
+## Operational guides
+
+- [Migration repair convention](./README.md)
+- [Migration repair violation record](./bmad/migration-repair-violation-2026-10-18.md)
+
+When adding a migration or repairing a schema, read the module README and the
+BMAD decision log first. Keep the migration reversible, scoped to the owning
+module and covered by the module's verification command.
+
 ## -integration
 
 - [eav.md](./-integration/eav.md)
