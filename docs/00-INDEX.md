@@ -114,6 +114,7 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🌊 **[PHPStan, ondata test 2026-10-20 (user-b)](./stories/phpstan-test-wave-user-b.story.md)** - Cause alla sorgente, file neutralizzati, decisioni aperte.
 - 🌊 **[PHPStan swarm wave User](./stories/phpstan-user-swarm-wave.story.md)** - Bucket `.cursor-scratch/phpstan-wave/User`: 99 errori owned → 0; Feature/UserModelTest locked fuori scope.
 - **[PHPStan, ondata test 2026-10-20 (lane user, 14 file rimasti)](./stories/phpstan-test-wave-user.story.md)** - Cause per famiglia, contratti dei permessi allineati, cosa resta (Tenant, Pest, harness).
+- **[PHPStan, ondata test 2026-10-20 (user-a, 39 file)](./stories/phpstan-test-wave-user-a.story.md)** - Produzione (`LoginWidget`, contratti, `routes/auth.php`, `lang/it/auth.php`), helper 2FA, specifiche fantasma neutralizzate, decisioni aperte.
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
@@ -138,4 +139,3 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
-
