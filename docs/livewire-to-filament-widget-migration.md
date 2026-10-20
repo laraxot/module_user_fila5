@@ -20,3 +20,5 @@ qmd: "livewire to filament widget migration user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+
+Per la matrice User (custom Livewire → widget, baseline disco): [bmad/livewire-to-filament-planning.md](./bmad/livewire-to-filament-planning.md).

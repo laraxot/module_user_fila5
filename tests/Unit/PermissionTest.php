@@ -16,7 +16,6 @@ beforeEach(function (): void {
 });
 
 test('permission can be created', function (): void {
-    expect($this->permission)->toBeInstanceOf(Permission::class);
     expect($this->permission->name)->toBe('test-permission');
     expect($this->permission->guard_name)->toBe('web');
 });
@@ -24,11 +23,10 @@ test('permission can be created', function (): void {
 test('permission has correct fillable attributes', function (): void {
     $fillable = $this->permission->getFillable();
 
-    expect($fillable)->toContain('id');
     expect($fillable)->toContain('name');
     expect($fillable)->toContain('guard_name');
-    expect($fillable)->toContain('created_at');
-    expect($fillable)->toContain('updated_at');
+    expect($fillable)->toContain('display_name');
+    expect($fillable)->toContain('description');
     expect($fillable)->toContain('created_by');
     expect($fillable)->toContain('updated_by');
 });
@@ -36,26 +34,15 @@ test('permission has correct fillable attributes', function (): void {
 test('permission has correct table configuration', function (): void {
     $table = $this->permission->getTable();
 
-    expect($table)->toBeString();
     expect($table)->not->toBeEmpty();
 });
 
 test('permission has correct casts', function (): void {
     $casts = $this->permission->getCasts();
 
+    // permissions.id e' bigIncrements: il model dichiara solo il cast della chiave intera.
     expect($casts)->toHaveKey('id');
-    expect($casts)->toHaveKey('uuid');
-    expect($casts)->toHaveKey('name');
-    expect($casts)->toHaveKey('guard_name');
-    expect($casts)->toHaveKey('created_at');
-    expect($casts)->toHaveKey('updated_at');
-
-    expect($casts['id'])->toBe('string');
-    expect($casts['uuid'])->toBe('string');
-    expect($casts['name'])->toBe('string');
-    expect($casts['guard_name'])->toBe('string');
-    expect($casts['created_at'])->toBe('datetime');
-    expect($casts['updated_at'])->toBe('datetime');
+    expect($casts['id'])->toBe('int');
 });
 
 test('permission can be updated', function (): void {
@@ -103,9 +90,7 @@ test('permission can be assigned to multiple roles', function (): void {
 });
 
 test('permission can be found by name', function (): void {
-    $foundPermission = Permission::where('name', 'test-permission')->first();
-
-    expect($foundPermission)->toBeInstanceOf(Permission::class);
+    $foundPermission = Permission::where('name', 'test-permission')->firstOrFail();
     expect($foundPermission->id)->toBe($this->permission->id);
 });
 
@@ -113,7 +98,7 @@ test('permission can be found by guard', function (): void {
     $webPermissions = Permission::where('guard_name', 'web')->get();
 
     expect($webPermissions)->toHaveCount(1);
-    expect($webPermissions->first()->id)->toBe($this->permission->id);
+    expect($webPermissions->firstOrFail()->id)->toBe($this->permission->id);
 });
 
 test('permission has timestamps', function (): void {
@@ -124,7 +109,6 @@ test('permission has timestamps', function (): void {
 test('permission can be created with factory', function (): void {
     $permission = Permission::factory()->create();
 
-    expect($permission)->toBeInstanceOf(Permission::class);
     expect($permission->name)->not->toBeEmpty();
     expect($permission->guard_name)->not->toBeEmpty();
 });

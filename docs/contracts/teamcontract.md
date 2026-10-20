@@ -1,59 +1,70 @@
 ---
 title: "TeamContract"
 type: concept
-tags: [teamcontract]
+tags: [teamcontract, teams, nullability]
 created: 2026-07-14
-updated: 2026-07-14
-qmd: "teamcontract teamcontract"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+updated: 2026-10-20
+qmd: "teamcontract nullability personalTeam belongsToTeam hasteams"
+issues: []
+discussions: []
 related:
-  - "./hasteamsandusercontract.md"
-status: draft
+  - ./hasteamsandusercontract.md
+  - ../team-contract-usage-reasoning.md
+  - ../scopo.md
+  - ../00-INDEX.md
+status: active
 ---
 
 # TeamContract
 
-L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.
+Contratto del team come **unità organizzativa** (appartenenza, owner, inviti, permessi di team). L'implementazione tipica è `Models\Team`; i trait utente tipizzano sul contratto, non sulla classe concreta.
 
-## Metodi
+Indice: [../00-INDEX.md](../00-INDEX.md) · perché: [../team-contract-usage-reasoning.md](../team-contract-usage-reasoning.md) · scopo modulo: [../scopo.md](../scopo.md).
 
-### Gestione Utenti
+## Perché `?TeamContract` (nullability)
 
-- `users(): BelongsToMany<Model&UserContract>` - Ottiene tutti gli utenti che appartengono al team
-- `owner(): BelongsTo` - Ottiene il proprietario del team
-- `hasUser(UserContract $user): bool` - Verifica se un utente appartiene al team
-- `addUser(UserContract $user, ?string $role = null): void` - Aggiunge un utente al team
-- `removeUser(UserContract $user): void` - Rimuove un utente dal team
-- `allUsers(): Collection<int, Model&UserContract>` - Ottiene tutti gli utenti del team, incluso il proprietario
-- `members(): Collection<int, Model&UserContract>` - Ottiene tutti i membri del team
-- `hasUserWithEmail(string $email): bool` - Verifica se il team ha un utente con l'email specificata
+Nel prodotto un utente **può non avere** team personale o corrente:
 
-### Gestione Permessi
+| API (trait `HasTeams`) | Firma | Perché nullable |
+|---|---|---|
+| `personalTeam()` | `?TeamContract` | nessun `ownedTeams` con `personal_team = true` |
+| `belongsToTeam(?TeamContract $team)` | accetta `null` → `false` | chiamate con team assente non devono TypeError |
+| `ownsTeam(?TeamContract $team)` | idem | stesso motivo |
 
-- `getPermissionsFor(UserContract $user): array<string, bool>` - Ottiene i permessi per un utente specifico
-- `userHasPermission(UserContract $user, string $permission): bool` - Verifica se un utente ha un permesso specifico
+`switchTeam(TeamContract $team)` resta **non-null**: cambiare team richiede un team reale.
 
-### Gestione Inviti
+I test devono tipizzare di conseguenza: passare un `TeamContract` (fixture/mock), oppure asserire `null` / usare `instanceof` prima di accedere a `->id`. Passare un `int` a `belongsToTeam` o accedere a `$personalTeam->id` senza guard viola il contratto di business, non solo PHPStan.
 
-- `teamInvitations(): HasMany<TeamInvitation>` - Ottiene gli inviti pendenti per il team
+Nota: `HasTeamsContract` storicamente dichiara `belongsToTeam(TeamContract)` non-null; il trait vivo usa `?TeamContract`. Allineare il contratto all'implementazione, non i test a una firma obsoleta.
 
-### Altre Operazioni
+## Metodi (superficie)
 
-- `purge(): void` - Elimina tutte le risorse del team
-- `fresh($with = []): ?static` - Ricarica un'istanza fresca del modello dal database
+### Utenti
 
-## Note Importanti
+- `users(): BelongsToMany` — membri
+- `owner(): BelongsTo` — proprietario
+- `hasUser(UserContract $user): bool`
+- `addUser` / `removeUser`
+- `allUsers()` / `members()`
+- `hasUserWithEmail(string $email): bool`
 
-- L'interfaccia estende `ModelContract`
-- Richiede che la classe che la implementa estenda `Model` (`@phpstan-require-extends Model`)
-- Gestisce sia gli utenti che i permessi del team
-- Supporta il concetto di ruoli e permessi granulari
+### Permessi
 
-## Collegamenti Correlati
+- `getPermissionsFor(UserContract $user): array<string, bool>`
+- `userHasPermission(UserContract $user, string $permission): bool`
 
-- [[ModelContract]]
-- [[UserContract]]
-- [[TeamInvitation]]
-- [[Team]]
-- [[User]]
+### Inviti e lifecycle
+
+- `teamInvitations(): HasMany`
+- `purge(): void`
+- `fresh($with = []): ?static`
+
+## Vincoli
+
+- Estende `ModelContract`; `@phpstan-require-extends Model`
+- Dependency inversion: `HasTeams` dipende dal contratto → [team-contract-usage-reasoning.md](../team-contract-usage-reasoning.md)
+
+## Collegamenti
+
+- [hasteamsandusercontract.md](./hasteamsandusercontract.md)
+- [stories/phpstan-test-wave-user-b.story.md](../stories/phpstan-test-wave-user-b.story.md)

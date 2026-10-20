@@ -142,7 +142,7 @@ class ProfileTest extends TestCase
         $activeProfiles = Profile::where('status', 'active')->get();
 
         static::assertCount(1, $activeProfiles);
-        static::assertSame('active', $activeProfiles->first()->status);
+        static::assertSame('active', $activeProfiles->firstOrFail()->status);
     }
 
     public function test_can_find_profile_by_timezone(): void
@@ -154,7 +154,7 @@ class ProfileTest extends TestCase
         $utcProfiles = Profile::where('timezone', 'UTC')->get();
 
         static::assertCount(1, $utcProfiles);
-        static::assertSame('UTC', $utcProfiles->first()->timezone);
+        static::assertSame('UTC', $utcProfiles->firstOrFail()->timezone);
     }
 
     public function test_can_find_profile_by_locale(): void
@@ -166,7 +166,7 @@ class ProfileTest extends TestCase
         $englishProfiles = Profile::where('locale', 'en')->get();
 
         static::assertCount(1, $englishProfiles);
-        static::assertSame('en', $englishProfiles->first()->locale);
+        static::assertSame('en', $englishProfiles->firstOrFail()->locale);
     }
 
     public function test_can_find_profiles_by_name_pattern(): void
@@ -178,7 +178,7 @@ class ProfileTest extends TestCase
         $doeProfiles = Profile::where('last_name', 'like', '%Doe%')->get();
 
         static::assertCount(2, $doeProfiles);
-        static::assertTrue($doeProfiles->every(fn($profile) => str_contains($profile->last_name, 'Doe')));
+        static::assertTrue($doeProfiles->every(fn (Profile $profile): bool => str_contains((string) $profile->last_name, 'Doe')));
     }
 
     public function test_can_find_profiles_by_bio_pattern(): void
@@ -190,7 +190,7 @@ class ProfileTest extends TestCase
         $devProfiles = Profile::where('bio', 'like', '%Developer%')->get();
 
         static::assertCount(1, $devProfiles);
-        static::assertTrue($devProfiles->every(fn($profile) => str_contains($profile->bio, 'Developer')));
+        static::assertTrue($devProfiles->every(fn (Profile $profile): bool => str_contains((string) $profile->bio, 'Developer')));
     }
 
     public function test_can_update_profile(): void
@@ -252,8 +252,8 @@ class ProfileTest extends TestCase
         $profiles = Profile::where('status', 'active')->where('timezone', 'UTC')->get();
 
         static::assertCount(1, $profiles);
-        static::assertSame('active', $profiles->first()->status);
-        static::assertSame('UTC', $profiles->first()->timezone);
+        static::assertSame('active', $profiles->firstOrFail()->status);
+        static::assertSame('UTC', $profiles->firstOrFail()->timezone);
     }
 
     public function test_profile_has_roles_relationship(): void

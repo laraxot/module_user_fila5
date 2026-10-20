@@ -4,12 +4,19 @@ type: concept
 module: User
 status: active
 created: 2026-09-02
-updated: 2026-09-02
-tags: [scopo, confini, identita, autorizzazione, sti, contratti, dipendenze]
+updated: 2026-10-20
+tags: [scopo, confini, identita, autorizzazione, sti, contratti, team, dipendenze]
 qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"
+related:
+  - ./00-INDEX.md
+  - ./contracts/teamcontract.md
+  - ./team-contract-usage-reasoning.md
+  - ./stories/phpstan-test-wave-user-b.story.md
 ---
 
 # User — scopo, confini e come servirlo meglio
+
+Ingresso docs: [00-INDEX.md](./00-INDEX.md).
 
 ## Lo scopo, dedotto dal codice
 
@@ -85,7 +92,7 @@ frequenti dicono esattamente quale forma User riceve dalla piattaforma:
 
 Zero estensioni dirette di classi `Filament\` fuori dalle `XotBase*`, zero
 `app/Services` (l'unico file che matcha `*Service*.php` è
-`app/Http/Livewire/TermsOfService.php`, un componente di UI: falso positivo). Su
+`TermsOfService` Livewire e' stato ritirato in W0 REUSE a favore di `TermsOfServiceWidget`). Su
 queste due policy User è in regola.
 
 Verso il basso c'è una riga sola, ma è la riga sbagliata:
@@ -115,6 +122,17 @@ il tenant come **riga di anagrafica** è un fatto di identità, il tenant come
 **risoluzione di configurazione** è un fatto di infrastruttura — ma oggi la
 divisione non è dichiarata da nessuna parte e due modelli con lo stesso nome sono
 raggiungibili da chiunque.
+
+## Team: contratto e nullability (contratto di business)
+
+La terza domanda (*per conto di quale organizzazione*) passa da `HasTeams` tipizzato su
+`TeamContract`, non su `Team` concreto — vedi [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md).
+
+`personalTeam(): ?TeamContract` e `belongsToTeam(?TeamContract)` sono nullable perché
+un utente può non avere team. I test che assumono sempre un team, o passano un `int`,
+stanno mentendo sul dominio: tipizzare/fixture prima di “sistemare” PHPStan
+([contracts/teamcontract.md](./contracts/teamcontract.md),
+[stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md)).
 
 ## Come servire meglio lo scopo
 
@@ -253,8 +271,12 @@ find Modules/User/app -type f ! -name '*.php' \
 
 ## Collegamenti
 
+- [00-INDEX.md](./00-INDEX.md) — ingresso operativo
+- [contracts/teamcontract.md](./contracts/teamcontract.md) · [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
+- [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md)
 - [parental-sti-filament-schemas](../../../../docs/wiki/rules/parental-sti-filament-schemas.md) — perché `BaseUser`/`BaseProfile` con `HasChildren` obbligano ogni figlio a una propria classe Form
 - [circular-dependency-prevention](../../../../docs/wiki/rules/circular-dependency-prevention.md) — il ciclo User → Ptv → User
 - [actions-over-services](../../../../docs/wiki/rules/actions-over-services.md) — la policy che User rispetta
 - [basemodel-connection-mandatory](../../../../docs/wiki/memories/basemodel-connection-mandatory.md) — la connection `user` non è opzionale
-- [Xot — scopo](../../Xot/docs/scopo.md) · [Tenant — scopo](../../Tenant/docs/scopo.md) · [Sigma — scopo](../../Sigma/docs/scopo.md)
+- [Lang — scopo](../../Lang/docs/scopo.md) · [Cms — scopo](../../Cms/docs/scopo.md)
+- [Xot — scopo](../../Xot/docs/scopo.md) · [Tenant — scopo](../../Tenant/docs/scopo.md)

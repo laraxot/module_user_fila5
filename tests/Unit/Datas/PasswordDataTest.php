@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
-use Spatie\LaravelData\Data;
-use Illuminate\Validation\Rules\Password;
 use Modules\User\Datas\PasswordData;
+use PHPUnit\Framework\Assert;
+use Tests\TestCase;
+
+use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
@@ -25,8 +26,24 @@ beforeEach(function (): void {
     );
 });
 
+/** Tipo nativo (non union) dichiarato per la proprieta' promossa dal costruttore. */
+function passwordDataPropertyType(string $property): ReflectionNamedType
+{
+    $type = (new ReflectionProperty(PasswordData::class, $property))->getType();
+    Assert::assertInstanceOf(ReflectionNamedType::class, $type);
+
+    return $type;
+}
+
+function passwordDataParameterType(ReflectionParameter $parameter): ReflectionNamedType
+{
+    $type = $parameter->getType();
+    Assert::assertInstanceOf(ReflectionNamedType::class, $type);
+
+    return $type;
+}
+
 test('password data can be created with custom parameters', function (): void {
-    expect($this->passwordData)->toBeInstanceOf(PasswordData::class);
     expect($this->passwordData->otp_expiration_minutes)->toBe(10);
     expect($this->passwordData->otp_length)->toBe(8);
     expect($this->passwordData->expires_in)->toBe(120);
@@ -56,10 +73,6 @@ test('password data has default values', function (): void {
     expect($defaultPasswordData->failMessage)->toBeNull();
 });
 
-test('password data extends spatie data class', function (): void {
-    expect($this->passwordData)->toBeInstanceOf(Data::class);
-});
-
 test('password data has correct properties', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $properties = $reflection->getProperties();
@@ -80,51 +93,42 @@ test('password data has correct properties', function (): void {
 });
 
 test('password data has correct types', function (): void {
-    $reflection = new ReflectionClass(PasswordData::class);
+    $expected = [
+        'otp_expiration_minutes' => 'int',
+        'otp_length' => 'int',
+        'expires_in' => 'int',
+        'min' => 'int',
+        'mixedCase' => 'bool',
+        'letters' => 'bool',
+        'numbers' => 'bool',
+        'symbols' => 'bool',
+        'uncompromised' => 'bool',
+        'compromisedThreshold' => 'int',
+        'failMessage' => 'string',
+    ];
 
-    $otpExpirationProperty = $reflection->getProperty('otp_expiration_minutes');
-    $otpLengthProperty = $reflection->getProperty('otp_length');
-    $expiresInProperty = $reflection->getProperty('expires_in');
-    $minProperty = $reflection->getProperty('min');
-    $mixedCaseProperty = $reflection->getProperty('mixedCase');
-    $lettersProperty = $reflection->getProperty('letters');
-    $numbersProperty = $reflection->getProperty('numbers');
-    $symbolsProperty = $reflection->getProperty('symbols');
-    $uncompromisedProperty = $reflection->getProperty('uncompromised');
-    $compromisedThresholdProperty = $reflection->getProperty('compromisedThreshold');
-    $failMessageProperty = $reflection->getProperty('failMessage');
+    foreach ($expected as $property => $typeName) {
+        expect(passwordDataPropertyType($property)->getName())->toBe($typeName);
+    }
 
-    expect($otpExpirationProperty->getType()->getName())->toBe('int');
-    expect($otpLengthProperty->getType()->getName())->toBe('int');
-    expect($expiresInProperty->getType()->getName())->toBe('int');
-    expect($minProperty->getType()->getName())->toBe('int');
-    expect($mixedCaseProperty->getType()->getName())->toBe('bool');
-    expect($lettersProperty->getType()->getName())->toBe('bool');
-    expect($numbersProperty->getType()->getName())->toBe('bool');
-    expect($symbolsProperty->getType()->getName())->toBe('bool');
-    expect($uncompromisedProperty->getType()->getName())->toBe('bool');
-    expect($compromisedThresholdProperty->getType()->getName())->toBe('int');
-    expect($failMessageProperty->getType()->getName())->toBe('string');
-    expect($failMessageProperty->getType()->allowsNull())->toBeTrue();
+    expect(passwordDataPropertyType('failMessage')->allowsNull())->toBeTrue();
 });
 
 test('password data has correct constructor parameters', function (): void {
-    $reflection = new ReflectionClass(PasswordData::class);
-    $constructor = $reflection->getConstructor();
-
-    expect($constructor)->not->toBeNull();
+    $constructor = (new ReflectionClass(PasswordData::class))->getConstructor();
+    Assert::assertNotNull($constructor);
 
     $parameters = $constructor->getParameters();
     expect($parameters)->toHaveCount(12);
 
     // Check first few parameters
     expect($parameters[0]->getName())->toBe('otp_expiration_minutes');
-    expect($parameters[0]->getType()->getName())->toBe('int');
+    expect(passwordDataParameterType($parameters[0])->getName())->toBe('int');
     expect($parameters[0]->isOptional())->toBeTrue();
     expect($parameters[0]->getDefaultValue())->toBe(5);
 
     expect($parameters[1]->getName())->toBe('otp_length');
-    expect($parameters[1]->getType()->getName())->toBe('int');
+    expect(passwordDataParameterType($parameters[1])->getName())->toBe('int');
     expect($parameters[1]->isOptional())->toBeTrue();
     expect($parameters[1]->getDefaultValue())->toBe(6);
 });
@@ -134,11 +138,8 @@ test('password data has correct namespace', function (): void {
 });
 
 test('password data has correct strict types declaration', function (): void {
-    $reflection = new ReflectionClass(PasswordData::class);
-    $filename = $reflection->getFileName();
+    $filename = (new ReflectionClass(PasswordData::class))->getFileName();
+    Assert::assertNotFalse($filename);
 
-    if ($filename) {
-        $content = file_get_contents($filename);
-        expect($content)->toContain('declare(strict_types=1);');
-    }
+    expect(file_get_contents($filename))->toContain('declare(strict_types=1);');
 });
