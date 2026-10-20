@@ -6,16 +6,18 @@ declare(strict_types=1);
  */
 use Illuminate\Support\Facades\Route;
 
-Route::namespace('Socialite')
-    ->group(static function (): void {
-        // Admin routes
-        Route::get(
-            '/auth/login/{provider}',
-            'RedirectToProviderController',
-        )->name('oauth.redirect');
+Route::prefix('{lang}')->group(static function (): void {
+    Route::namespace('Socialite')
+        ->group(static function (): void {
+            // Admin routes
+            Route::get(
+                '/auth/login/{provider}',
+                'RedirectToProviderController',
+            )->name('oauth.redirect');
 
-        Route::get(
-            '/auth/login/{provider}/callback',
-            'ProcessCallbackController',
-        )->name('oauth.callback');
-    });
+            Route::get(
+                '/auth/login/{provider}/callback',
+                'ProcessCallbackController',
+            )->name('oauth.callback');
+        });
+});

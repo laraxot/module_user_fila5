@@ -10,6 +10,11 @@ qmd: "user module   database schema user"
 
 # User Module — Database Schema
 
+Lo schema vivo di `users` è in [database-schema.md](database-schema.md)
+(`UserData`, connessione `user`).
+
+
+
 ## Core Tables
 
 ### users

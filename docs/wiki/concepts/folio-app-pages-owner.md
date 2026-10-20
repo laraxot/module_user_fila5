@@ -38,7 +38,7 @@ Folio monta **tema prima**, poi **moduli** (`FolioVoltServiceProvider`). Rotte d
 
 ## Contratto Volt
 
-- `PageSlugMiddleware` + JSON CMS (`dashboard.json`, `area-personale.*.json`)
+- `PageSlugMiddleware` + JSON CMS (`pages/area-personale/pratiche.json` e le altre voci: lo slug nel file è solo `pratiche`, la cartella aggiunge `area-personale.`)
 - `new class extends Component` + `mount()` per query/redirect
 - `@volt('…')` statico = `name()`
 

@@ -3,7 +3,7 @@ title: "Errori Comuni in Volt e Soluzioni"
 type: concept
 tags: [volt, errors]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-20
 qmd: "volt-errors errori comuni in volt e soluzioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -202,7 +202,31 @@ class LogoutPage
 - **Manutenibilità**: Codice organizzato e ben strutturato
 - **Coerenza**: Allineamento con le best practices di Volt
 
+## Nome `@volt` globale: un fragment, un file
+
+Volt con nome (`@volt('auth.login')`) scrive il corpo in
+`storage/framework/views/{md5(nome)}.blade.php`. Il nome è globale, non il
+path del blade. L'ultimo compile di qualunque file con lo stesso nome
+sostituisce il fragment. Il parent non viene ricompilato se il sorgente è
+più vecchio del PHP compilato, quindi la pagina vera continua a servire il
+corpo dell'altro file.
+
+Il 2026-10-20 `/it/auth/login` mostrava il prototipo inglese (h1 vuoto,
+bottone `+`, «Email address», «Sign in») perché
+`Modules/Fixcity/resources/views/pages/prova.blade.php` e
+`Themes/Sixteen/resources/views/pages/counter.blade.php` riusavano
+`@volt('auth.login')`. Il vestito Design Comuni
+(`x-page` → `components/pages/auth-login` + `LoginWidget`) non arrivava
+in pagina. Lo scope CSS (`data-dc`, `body[data-page=auth-login]`,
+`.auth-login-card`) stava nel sorgente giusto e non veniva eseguito.
+
+Regola: il nome di una pagina di produzione appartiene solo a quella pagina.
+Un prototipo usa un nome proprio (`counter.sign-in`, `fixcity.prova`).
+Dopo il rename va ricompilata la pagina vera (il sorgente deve essere più
+nuovo della view compilata) così il fragment torna al vestito corretto.
+
 ### Link Correlati
+- [Login Design Comuni](./wiki/concepts/login-page-design-comuni.md)
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 

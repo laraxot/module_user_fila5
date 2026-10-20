@@ -4,7 +4,7 @@ type: filament-blueprint
 status: active
 module: User
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-20
 tags: [bmad, filament, blueprint, user]
 qmd: "filament blueprint user xotbase resource widget"
 related:
@@ -23,6 +23,12 @@ i confini di dominio.
 2. Nessun `->label()` hardcoded: chiavi in `lang/<locale>/` del modulo.
 3. Business logic nelle Actions del modulo, non nei form hooks grassi.
 4. FO: widget montati esplicitamente; non abusare `discoverWidgets` per chrome.
+5. `resources/views/pages/auth/register.blade.php` tiene solo il nome rotta `register`
+   e include il componente civico del tema. Il guscio visuale e il widget consensi
+   non sono di User.
+6. Il nome `@volt` di una pagina FO è univoco. Il fragment è `md5(nome)` ed è
+   condiviso da ogni blade che lo ripete: un prototipo non può chiamarsi
+   `auth.login` o `auth.register`. Vedi [volt-errors.md](../volt-errors.md).
 
 ## Resource / widget
 
@@ -34,6 +40,26 @@ i confini di dominio.
 
 Preferire triad schema dedicati (`*Form`, `*Table`, `*Infolist`) quando la Resource
 cresce oltre pochi campi. Enum tipizzati al posto di option array.
+
+`is_active` e `users.type` sono colonne di `UserData`. La Resource le legge dal modello.
+Un campo non nasce da una migration `*_column`.
+
+La colonna `users.type` è il discriminante Parental dichiarato in `UserData`.
+In tabella si mostra con la chiave di traduzione del modulo, non con una label
+nel form. La registrazione del cittadino persiste `customer_user`.
+
+La password del login è `TextInput::password()->revealable()` in
+`Widgets/Auth/Schemas/UserForm::getLoginFormSchema()`. Mostra e nascondi sono
+le suffix action di Filament (`showPassword`, `hidePassword`), non un toggle
+scritto nel tema. Contratto: [revealable password inputs](https://filamentphp.com/docs/5.x/forms/text-input#revealable-password-inputs).
+
+«Ricordami» è `Checkbox::make('remember')` nello stesso schema
+([Filament Checkbox](https://filamentphp.com/docs/5.x/forms/checkbox)). Il tema
+Sixteen deve solo ripristinare `appearance` sotto `data-dc` (D26); non sostituire
+il campo con markup custom.
+
+La migration `create_users_table` non dichiara `$model_class`. Il modello della
+Resource e quello della migration sono la stessa classe ricavata dal nome file.
 
 ## Policy e tenant
 

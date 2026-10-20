@@ -11,10 +11,44 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
-updated: 2026-10-07
+  - ./filament-blueprint.md
+updated: 2026-10-20
 tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
 ---
+
+## [2026-10-20] Password login rivelabile = Filament `revealable()`
+
+- **Perché:** su `/it/auth/login` il cittadino deve poter mostrare/nascondere la
+  password senza un toggle Alpine del tema.
+- **Cosa:** `UserForm::getLoginFormSchema()` tiene
+  `TextInput::make('password')->password()->revealable()`. Suffix action
+  Filament (`showPassword` / `hidePassword`). Il tema Sixteen veste solo il
+  flex dell'occhio nello shell `.auth-login-card` (lo sheet FO non dipinge
+  `.fi-input-wrp` in `data-dc`).
+- **Non fare:** toggle custom, `type` Alpine a mano, Resource nel tema.
+- **Guardrail:** `LoginPasswordRevealableTest`; blueprint
+  [filament-blueprint.md](./filament-blueprint.md); docs Filament
+  [revealable password inputs](https://filamentphp.com/docs/5.x/forms/text-input#revealable-password-inputs).
+
+## [2026-10-19] Schema `users` in UserData, connessione `user`
+
+- **Perché:** la registrazione inserisce `type` (Parental, `customer_user`).
+  Su `fixcity.eu` la connessione `user` puntava a `fixcity_data`, la cui
+  tabella `users` non ha `type`. Gli utenti stanno su `fixcity_user`.
+- **Senso:** `UserData` è la tabella `users` che si può leggere.
+  `createColumns` la crea intera. `updateColumns` è lo stesso elenco e
+  aggiunge una colonna solo se manca. Non è un secondo DTO di creazione
+  e non è un catalogo di closure.
+- **Cosa:** `UserData` dichiara le colonne. La migration
+  `create_users_table` non ha `$model_class`: dal nome file
+  `XotBaseMigration` risolve `Modules\Fixcity\Models\User`.
+  L'alias host `config/eu/fixcity` si risolve nel tenant canonico
+  `local/fixcity`, l'unica config che Laravel carica.
+- **Non fare:** aggiungere `type` alla tabella legacy di `fixcity_data`.
+  Non creare una migration per un campo. `2026_10_18_133309_create_users_is_active_column`
+  faceva `Schema::table` su `fixcity_data` e si fermava perché `is_active` c'era già.
+  Il campo vive in `UserData::updateColumns`. Il file è `.php.old`: Laravel non lo carica, la storia resta.
 
 ## [2026-10-18] UserContract boundary nei consumer Auth
 

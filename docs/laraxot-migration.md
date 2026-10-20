@@ -68,7 +68,7 @@ La migration è stata modificata per **estendere** la tabella `roles` esistente 
 ## Regole da Rispettare Sempre
 
 1. **Una tabella, una sola migration di creazione per modulo**
-2. **Le migration successive devono estendere, non ricreare**
+2. **Non si crea una migration per aggiungere o cambiare una colonna**
 3. **Usare sempre `hasColumn()`, `hasTable()`, `hasIndex()` per controlli sicuri**
 4. **Nessuna duplicazione intenzionale di logica di creazione**
 5. **Chiarezza evolutiva: la storia della tabella deve essere lineare**
@@ -76,7 +76,7 @@ La migration è stata modificata per **estendere** la tabella `roles` esistente 
 ## Documentazione della Regola
 
 Questa regola diventa parte fondamentale della **filosofia, religione e politica di Laraxot**:
-> "In un modulo, per ogni tabella deve esistere una sola migration responsabile della sua creazione. Le migration successive possono estendere la struttura esistente, ma non ricreare la tabella."
+> "Per ogni tabella esiste una sola migration. Una colonna nuova entra lì, solo se manca. Non nasce un file per aggiungere un campo."
 
 ## Conclusione
 

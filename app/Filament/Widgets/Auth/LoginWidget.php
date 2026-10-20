@@ -123,15 +123,33 @@ class LoginWidget extends BaseAuthWidget
         ];
 
         // Google OAuth Social Login (BMAD + Second Brain + Filament Blueprint)
-        // Usiamo la route oauth.redirect definita in Module/User/routes/socialite.php
+        // Route `oauth.redirect` definita in Modules/User/routes/socialite.php.
+        // Il URL va LOCALIZZATO: la pagina login e' `/it/auth/login`, quindi il
+        // redirect al provider deve essere `/it/auth/login/google`. Senza il prefisso
+        // locale il flusso OAuth perde il contesto della lingua e la callback
+        // (`/it/auth/login/google/callback`) non combacia con GOOGLE_REDIRECT_URI.
+        $locale = $this->resolveLocale();
         $actions[] = Actions::make('google')
-            ->url(route('oauth.redirect', ['provider' => 'google']))
+            ->url(route('oauth.redirect', ['provider' => 'google', 'lang' => $this->resolveLocale()]))
             ->label(__('user::auth.login.google.button.text'))
             ->icon('heroicon-o-google')
             ->color('gray')
             ->openUrlInNewTab();
 
         return $actions;
+    }
+
+    /**
+     * Locale corrente per localizzare URL OAuth (coerenza con /it/auth/login).
+     */
+    private function resolveLocale(): string
+    {
+        $locale = trim((string) app()->getLocale(), '/');
+        $supported = LaravelLocalization::getSupportedLanguagesKeys();
+        if (! in_array($locale, $supported, true)) {
+            $locale = (string) config('app.locale', 'it');
+        }
+        return $locale;
     }
 
     /**

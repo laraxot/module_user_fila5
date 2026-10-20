@@ -36,8 +36,10 @@ Table 'fixcity_data.authentication_logs' doesn't exist
 ```
 
 La connessione si chiama `user` ma punta a `fixcity_data`: tipicamente
-`DB_DATABASE_USER` errato (uguale a `DB_DATABASE`) oppure migrazioni User non
-eseguite sul DB utente. Il listener `FailedLoginListener` esplodeva e trasformava
+`DB_DATABASE_USER` errato (uguale a `DB_DATABASE`), migrazioni User non
+eseguite sul DB utente, oppure l'host è un alias (`config/eu/fixcity`)
+il cui nome tenant non coincide con la config caricata (`local.fixcity`).
+In quel caso `GetTenantNameAction` deve restituire il path reale. Il listener `FailedLoginListener` esplodeva e trasformava
 un login fallito in HTTP 500.
 
 ## Deploy corretto

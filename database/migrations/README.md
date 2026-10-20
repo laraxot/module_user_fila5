@@ -16,6 +16,7 @@
 | 2026_10_18_180005 | `repair_model_has_roles_table.php` | `repair_*` prefix + frammento; schema in `2024_12_05_000034_create_model_has_roles_table.php`. Archiviato 2026-10-19. |
 | 2026_10_18_180006 | `repair_model_has_permissions_table.php` | `repair_*` prefix + frammento; schema in `2023_01_01_000005_create_model_has_permissions_table.php`. Archiviato 2026-10-19. |
 | 2026_10_18_180007 | `repair_role_has_permissions_table.php` | `repair_*` prefix + frammento; schema in `2023_01_01_000010_create_role_has_permissions_table.php`. Archiviato 2026-10-19. |
+| 2026_10_18_133309 | `create_users_is_active_column.php` | Colonna aggiunta con un file nuovo, su `Schema::table` della connessione di default. `is_active` è già in `UserData::updateColumns`, con `hasColumn`. Archiviato 2026-10-19. |
 
 ## Consolidamento già completo (nessuna azione necessaria)
 

@@ -68,7 +68,12 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 
     public function getRedirectUrl(string $driver): string
     {
-        return route($this->normalizeRedirectRoute(), ['provider' => $driver]);
+        $locale = trim((string) app()->getLocale(), '/');
+        $supported = \Mcamara\LaravelLocalization\Facades\LaravelLocalization::getSupportedLanguagesKeys();
+        if (! in_array($locale, $supported, true)) {
+            $locale = (string) config('app.locale', 'it');
+        }
+        return route($this->normalizeRedirectRoute(), ['provider' => $driver, 'lang' => $locale]);
     }
 
     public function redirectToProvider(string $driver): void

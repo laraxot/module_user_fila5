@@ -46,11 +46,7 @@ Residui di iterazioni agenti.
 
 ## Piano bonifica
 
-<<<<<<< .merge_file_0edLeV
 Identico a Notify (vedi `perfection-audit.md` in Notify/docs/).
-=======
-Identico a Notify (vedi `PERFECTION_AUDIT.md` in Notify/docs/).
->>>>>>> .merge_file_XAa1e4
 
 ### Fase 1 — Emergency
 ```bash
