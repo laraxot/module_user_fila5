@@ -55,21 +55,22 @@ class TeamTest extends TestCase
         ]);
     }
 
-    public function test_team_has_soft_deletes(): void
+    public function test_team_delete_is_hard_delete(): void
     {
+        // SoftDeletes e' commentato su Team: delete() rimuove la riga, non soft-delete.
         $user = User::factory()->create();
         $team = Team::factory()->create(['user_id' => $user->id]);
         $teamId = $team->id;
 
         $team->delete();
 
-        $this->assertSoftDeleted('teams', ['id' => $teamId]);
         $this->assertDatabaseMissing('teams', ['id' => $teamId]);
+        static::assertNull(Team::find($teamId));
     }
 
     public function test_can_restore_soft_deleted_team(): void
     {
-        $this->markTestSkipped('Team model does not use SoftDeletes.');
+        $this->markTestSkipped('Team model does not use SoftDeletes (trait commentato).');
     }
 
     public function test_can_find_team_by_name(): void

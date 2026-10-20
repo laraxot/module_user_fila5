@@ -8,6 +8,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Tenant;
 use Tests\TestCase;
 
+use function Safe\json_encode;
+
 class TenantTest extends TestCase
 {
     use RefreshDatabase;
@@ -218,11 +220,35 @@ class TenantTest extends TestCase
 
     public function test_can_find_tenants_by_trial_status(): void
     {
-        $this->markTestSkipped('tenants.trial_ends_at column not implemented');
+        $activeTenant = Tenant::factory()->create([
+            'trial_ends_at' => now()->addDays(30),
+        ]);
+
+        Tenant::factory()->create([
+            'trial_ends_at' => now()->subDays(1),
+        ]);
+
+        $activeTrials = Tenant::where('trial_ends_at', '>', now())->get();
+
+        static::assertCount(1, $activeTrials);
+        static::assertSame($activeTenant->id, $activeTrials->firstOrFail()->id);
     }
 
     public function test_can_find_tenants_by_settings_value(): void
     {
-        $this->markTestSkipped('tenants.settings column not implemented');
+        // `tenants.settings` e' una colonna json (migration 2026_09_01_150110) ma il model
+        // non ha il cast `array`: si scrive il json a mano e si cerca per id.
+        $darkTenant = Tenant::factory()->create([
+            'settings' => json_encode(['theme' => 'dark', 'features' => ['chat']]),
+        ]);
+
+        Tenant::factory()->create([
+            'settings' => json_encode(['theme' => 'light', 'features' => ['analytics']]),
+        ]);
+
+        $darkThemeTenants = Tenant::whereJsonContains('settings->theme', 'dark')->get();
+
+        static::assertCount(1, $darkThemeTenants);
+        static::assertSame($darkTenant->id, $darkThemeTenants->firstOrFail()->id);
     }
 }

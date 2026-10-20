@@ -197,7 +197,7 @@ describe('User Team Management', function () {
 
         $user->teams()->attach($team);
 
-        expect($user->teams)->toContain($team);
+        expect($user->teams->modelKeys())->toContain($team->getKey());
     });
 
     it('can leave a team', function () {
@@ -205,11 +205,11 @@ describe('User Team Management', function () {
         $team = Team::factory()->create();
         $user->teams()->attach($team);
 
-        expect($user->teams)->toContain($team);
+        expect($user->teams->modelKeys())->toContain($team->getKey());
 
         $user->teams()->detach($team);
 
-        expect($user->refresh()->teams)->not->toContain($team);
+        expect($user->refresh()->teams->modelKeys())->not->toContain($team->getKey());
     });
 
     it('can own multiple teams', function () {

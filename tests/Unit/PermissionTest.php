@@ -23,11 +23,10 @@ test('permission can be created', function (): void {
 test('permission has correct fillable attributes', function (): void {
     $fillable = $this->permission->getFillable();
 
-    expect($fillable)->toContain('id');
     expect($fillable)->toContain('name');
     expect($fillable)->toContain('guard_name');
-    expect($fillable)->toContain('created_at');
-    expect($fillable)->toContain('updated_at');
+    expect($fillable)->toContain('display_name');
+    expect($fillable)->toContain('description');
     expect($fillable)->toContain('created_by');
     expect($fillable)->toContain('updated_by');
 });
@@ -41,19 +40,9 @@ test('permission has correct table configuration', function (): void {
 test('permission has correct casts', function (): void {
     $casts = $this->permission->getCasts();
 
+    // permissions.id e' bigIncrements: il model dichiara solo il cast della chiave intera.
     expect($casts)->toHaveKey('id');
-    expect($casts)->toHaveKey('uuid');
-    expect($casts)->toHaveKey('name');
-    expect($casts)->toHaveKey('guard_name');
-    expect($casts)->toHaveKey('created_at');
-    expect($casts)->toHaveKey('updated_at');
-
-    expect($casts['id'])->toBe('string');
-    expect($casts['uuid'])->toBe('string');
-    expect($casts['name'])->toBe('string');
-    expect($casts['guard_name'])->toBe('string');
-    expect($casts['created_at'])->toBe('datetime');
-    expect($casts['updated_at'])->toBe('datetime');
+    expect($casts['id'])->toBe('int');
 });
 
 test('permission can be updated', function (): void {
