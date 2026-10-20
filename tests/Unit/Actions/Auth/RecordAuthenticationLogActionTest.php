@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use function Safe\file_get_contents;
+
 uses(PHPUnit\Framework\TestCase::class);
 
 /**
@@ -12,10 +14,10 @@ uses(PHPUnit\Framework\TestCase::class);
  * 3. User: «authentication_logs e' giusto che sia dentro fixcity_user».
  */
 test('authentication log model declares user connection', function (): void {
-    $source = (string) file_get_contents(
+    $source = file_get_contents(
         dirname(__DIR__, 4).'/app/Models/AuthenticationLog.php'
     );
-    $base = (string) file_get_contents(
+    $base = file_get_contents(
         dirname(__DIR__, 4).'/app/Models/BaseModel.php'
     );
 
@@ -24,7 +26,7 @@ test('authentication log model declares user connection', function (): void {
 });
 
 test('record authentication log action guards missing table', function (): void {
-    $source = (string) file_get_contents(
+    $source = file_get_contents(
         dirname(__DIR__, 4).'/app/Actions/Auth/RecordAuthenticationLogAction.php'
     );
 
@@ -35,7 +37,7 @@ test('record authentication log action guards missing table', function (): void 
 });
 
 test('record authentication log action types UserContract and HasAuthentications not BaseUser', function (): void {
-    $source = (string) file_get_contents(
+    $source = file_get_contents(
         dirname(__DIR__, 4).'/app/Actions/Auth/RecordAuthenticationLogAction.php'
     );
 
@@ -48,10 +50,10 @@ test('record authentication log action types UserContract and HasAuthentications
 });
 
 test('auth login listeners guard UserContract not BaseUser', function (): void {
-    $login = (string) file_get_contents(
+    $login = file_get_contents(
         dirname(__DIR__, 4).'/app/Listeners/LoginListener.php'
     );
-    $failed = (string) file_get_contents(
+    $failed = file_get_contents(
         dirname(__DIR__, 4).'/app/Listeners/FailedLoginListener.php'
     );
 

@@ -38,20 +38,29 @@ This is the core principle: tests must reflect ACTUAL production code, not imagi
 ## Work in Progress
 
 ### Current Status
+
+> **Aggiornamento 2026-10-20**: la causa e' stata corretta alla sorgente e il workaround qui sotto non va piu' usato.
+> `User::factory()->create()` era `mixed` perche' Larastan risolve `Model::factory()` con `Factory::resolveFactoryName()`,
+> che per i modelli `Modules\*\Models\X` puntava a `Database\Factories\XFactory` (inesistente) e restituiva `ErrorType`.
+> `XotServiceProvider::registerFactoryNameResolver()` registra ora `Factory::guessFactoryNamesUsing()` con la convenzione
+> di `GetFactoryAction::getFactoryClass()`: `User::factory()->create()` e' `User`, senza `assert()` ne' `ModelFactory::new()`.
+> Dettagli: [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md).
+
+Storico (2025-12-15, superato):
 - Working on adding `\assert()` type narrowing to factory calls
 - Main issue: `User::factory()->create()` returns `mixed` for PHPStan
 - Solution: Add `\assert($var instanceof User);` after each factory call
 
-### Pattern Identified
+### Pattern Identified (storico, non replicare)
 ```php
 // BEFORE (PHPStan errors)
 $user = User::factory()->create([...]);
 expect($user->email)->toBe('test@example.com'); // Error: Cannot access property $email on mixed
 
-// AFTER (PHPStan compliant)
+// AFTER (workaround storico: oggi vietato, `assert()` non puo' correggere il tipo inferito)
 $user = User::factory()->create([...]);
 \assert($user instanceof User);
-expect($user->email)->toBe('test@example.com'); // OK
+expect($user->email)->toBe('test@example.com');
 ```
 
 ### Files Being Fixed

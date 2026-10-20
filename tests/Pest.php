@@ -6,6 +6,7 @@ use Modules\User\Models\User;
 use Modules\User\Models\Team;
 use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
+use Pest\Expectation;
 
 /*
  * |--------------------------------------------------------------------------
@@ -31,11 +32,21 @@ pest()->extend(TestCase::class)->in('Feature', 'Unit');
  * |
  */
 
-expect()->extend('toBeUser', fn() => $this->toBeInstanceOf(User::class));
+// L'estensione vale per qualunque valore: `$this` e' un Expectation sul valore sotto test, non ancora noto.
+expect()->extend('toBeUser', function (): Expectation {
+    /** @var Expectation<mixed> $this */
+    return $this->toBeInstanceOf(User::class);
+});
 
-expect()->extend('toBeTeam', fn() => $this->toBeInstanceOf(Team::class));
+expect()->extend('toBeTeam', function (): Expectation {
+    /** @var Expectation<mixed> $this */
+    return $this->toBeInstanceOf(Team::class);
+});
 
-expect()->extend('toBeProfile', fn() => $this->toBeInstanceOf(Profile::class));
+expect()->extend('toBeProfile', function (): Expectation {
+    /** @var Expectation<mixed> $this */
+    return $this->toBeInstanceOf(Profile::class);
+});
 
 /*
  * |--------------------------------------------------------------------------
@@ -48,22 +59,5 @@ expect()->extend('toBeProfile', fn() => $this->toBeInstanceOf(Profile::class));
  * |
  */
 
-function createUser(array $attributes = []): User
-{
-    return User::factory()->create($attributes);
-}
-
-function makeUser(array $attributes = []): User
-{
-    return User::factory()->make($attributes);
-}
-
-function createTeam(array $attributes = []): Team
-{
-    return Team::factory()->create($attributes);
-}
-
-function createProfile(array $attributes = []): Profile
-{
-    return Profile::factory()->create($attributes);
-}
+// Helper globali (createUser, makeUser, createTeam, createProfile, ...): tests/Support/helpers.php,
+// caricato da composer autoload-dev. Ridefinirli qui darebbe "Cannot redeclare" a runtime.

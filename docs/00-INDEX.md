@@ -2,7 +2,7 @@
 title: "User - indice canonico della documentazione"
 type: index
 status: active
-updated: 2026-10-14
+updated: 2026-10-20
 module: User
 tags: [docs, user, index]
 qmd: "user modulo indice canonico docs identita contenuto reale directory ingressi duplicati link rotti"
@@ -12,6 +12,7 @@ qmd: "user modulo indice canonico docs identita contenuto reale directory ingres
 Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
 
 **Status PHPStan (verificato 2026-10-14)**: `cd laravel && ./vendor/bin/phpstan analyse Modules/User` (livello `max` da `laravel/phpstan.neon`) segnala 3 errori, tutti `argument.type` alla riga 8 di `lang/de/validation.php`, `lang/en/validation.php`, `lang/es/validation.php` (`array_replace_recursive` riceve `mixed`). In `app/` gli errori sono 0. La dicitura precedente "Level 10 Compliant" era quindi vera solo per `app/`.
+**Aggiornamento PHPStan 2026-10-20**: il pull del 2026-10-20 ha riportato in `tests/` un lotto di test non allineato al codice (sull'intero `Modules` circa 9800 errori, quasi tutti nei test; nel modulo User 2812 prima delle correzioni). La lane `user-b` ha riportato a 0 errori 33 file di test (causa: factory non tipizzata, `TestCase` impoverita dal merge, test fantasma): cosa e' stato corretto e cosa neutralizzato sta in [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md). Il conteggio dell'intero modulo spetta al run di coordinamento ([Xot](../../Xot/docs/stories/phpstan-test-wave-regression.story.md)); la riga del 2026-10-14 qui sopra non va letta come stato attuale.
 **Versione modulo**: non verificata. Ne `module.json` ne `composer.json` dichiarano una versione; l'ultima voce di `CHANGELOG.md` e' `[1.0.0] - 2024-03-XX`. La dicitura precedente "2.5.0" non ha una fonte nel codice.
 
 ## 🧭 **Identita' e contenuto reale del modulo (verificato 2026-10-14)**
@@ -98,7 +99,9 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
 - 🚨 **[PHPStan Syntax Blockers](./phpstan-syntax-blockers.md)** - Stato al 2026-07-08: cluster di syntax error da merge conflict e factory corrotte, segnato come risolto (file rinominato senza la data nel nome).
 - 🧭 **[IDE Helper Models Wave](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W` (file rinominato senza la data nel nome).
-- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🔬 **[Testing Rules Summary](./testing.md)** - Regole di test del modulo (Pest); non e' la stessa cosa di `TESTING.md`.
+- 🧪 **[Harness dei test e factory](./TESTING.md)** - `Modules\User\Tests\TestCase`, helper `require*`/`skipUnless*`, factory tipizzate dal resolver di `XotServiceProvider`.
+- 🌊 **[PHPStan, ondata test 2026-10-20 (user-b)](./stories/phpstan-test-wave-user-b.story.md)** - Cause alla sorgente, file neutralizzati, decisioni aperte.
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 

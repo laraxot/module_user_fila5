@@ -50,14 +50,14 @@ class PermissionTest extends TestCase
     {
         $permission = new Permission();
 
-        static::assertSame('user', $permission->connection);
+        static::assertSame('user', $permission->getConnectionName());
     }
 
     public function test_permission_has_key_type_attribute(): void
     {
         $permission = new Permission();
 
-        static::assertSame('string', $permission->keyType);
+        static::assertSame('string', $permission->getKeyType());
     }
 
     public function test_permission_has_fillable_attributes(): void
@@ -236,15 +236,13 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_factory_method(): void
     {
-        $permission = new Permission();
-
-        static::assertTrue(method_exists($permission, 'newFactory'));
+        static::assertNotNull(Permission::factory());
     }
 
     public function test_permission_has_get_table_method(): void
     {
         $permission = new Permission();
 
-        static::assertTrue(method_exists($permission, 'getTable'));
+        static::assertSame('permissions', $permission->getTable());
     }
 }

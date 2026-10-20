@@ -3,26 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'login' => [
-            'success' => 'Accesso effettuato con successo.',
-            'error' => 'Email o password non corretti.',
-            'throttle' => 'Troppi tentativi. Riprova tra :seconds secondi.',
-        ],
-    ],
-    'login' => [
-        'heading' => ['text' => 'Accedi al tuo account', 'context' => 'login_form'],
-        'subtitle' => ['text' => 'Portale digitale del Comune di Fixcity', 'context' => 'login_form'],
-        'email' => ['text' => 'Email', 'label' => 'Email', 'context' => 'login_form'],
-        'password' => ['text' => 'Password', 'label' => 'Password', 'context' => 'login_form'],
-        'button' => ['text' => 'Accedi', 'context' => 'login_form'],
-        'button_loading' => ['text' => 'Accesso in corso...', 'context' => 'login_form'],
-        'register' => ['text' => 'Registrati', 'context' => 'login_form'],
-        'create_account' => ['text' => 'Crea un account', 'context' => 'login_form'],
-        'forgot_password' => ['text' => 'Password dimenticata?', 'context' => 'login_form'],
-        'forgot_password_text' => ['text' => 'Password dimenticata?', 'context' => 'login_form'],
-        'meta_description' => ['text' => 'Accedi per inviare e seguire le tue segnalazioni.', 'context' => 'login_form'],
-    ],
     'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
@@ -543,6 +523,10 @@ return [
                 'description' => 'Testo link registrazione',
             ],
         ],
+        'button' => ['text' => 'Accedi', 'context' => 'login_form'],
+        'button_loading' => ['text' => 'Accesso in corso...', 'context' => 'login_form'],
+        'forgot_password_text' => ['text' => 'Password dimenticata?', 'context' => 'login_form'],
+        'meta_description' => ['text' => 'Accedi per inviare e seguire le tue segnalazioni.', 'context' => 'login_form'],
     ],
     'register' => [
         'title' => [

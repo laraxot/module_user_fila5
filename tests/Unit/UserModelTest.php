@@ -6,7 +6,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
@@ -14,6 +14,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 
 // In-memory helper: build a User without touching DB
+/** @param array<string, mixed> $attributes */
 function stubUser(array $attributes = []): User
 {
     $defaults = [
@@ -56,7 +57,7 @@ describe('User Model', function () {
     it('can be created (in-memory)', function () {
         $user = stubUser();
 
-        expect($user)->toBeInstanceOf(User::class)->and($user->exists)->toBeFalse()->and($user->email)->toBeString();
+        expect($user->exists)->toBeFalse()->and($user->email)->toBe('john.doe@example.test');
     });
 
     it('supports mass-assignment of expected attributes (behavior)', function () {
@@ -98,13 +99,13 @@ describe('User Model', function () {
         ]);
 
         expect($user->email_verified_at)
-            ->toBeInstanceOf(Carbon::class)
+            ->not->toBeNull()
             ->and($user->created_at)
-            ->toBeInstanceOf(Carbon::class)
+            ->not->toBeNull()
             ->and($user->is_active)
-            ->toBeBool()
+            ->toBeTrue()
             ->and($user->is_otp)
-            ->toBeBool();
+            ->toBeFalse();
     });
 
     describe('Relationships', function () {
@@ -184,7 +185,7 @@ describe('User Model', function () {
             expect($user->is_active)->toBeFalse();
             // simulate activation without DB
             $user->is_active = true;
-            expect($user->is_active)->toBeTrue();
+            expect($user->is_active)->toBe(true);
         });
 
         it('supports OTP authentication', function () {

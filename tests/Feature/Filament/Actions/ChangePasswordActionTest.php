@@ -2,95 +2,54 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
-use Filament\Actions\Action;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Notification;
-use Livewire\Livewire;
-use Modules\User\Enums\UserType;
 use Modules\User\Filament\Actions\ChangePasswordAction;
-use Modules\User\Models\User;
+use Tests\TestCase;
+
+use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    // Use in-memory model to avoid DB constraints between tests
-    $this->user = User::factory()->make([
-        'type' => UserType::MasterAdmin,
-        'email' => 'admin+' . uniqid('', true) . '@example.com',
-        'password' => Hash::make('oldpassword'),
-    ]);
+/**
+ * L'action e' `final` e la sua logica (schema, handler) vive in closure che servono un componente
+ * Livewire montato: la configurazione statica si legge dall'istanza, il resto dal sorgente.
+ */
+function changePasswordActionSource(): string
+{
+    $file = (new ReflectionClass(ChangePasswordAction::class))->getFileName();
 
-    $this->action = new ChangePasswordAction('changePassword');
-});
+    return $file === false ? '' : file_get_contents($file);
+}
 
 test('change password action has correct default name', function (): void {
     expect(ChangePasswordAction::getDefaultName())->toBe('changePassword');
 });
 
-test('change password action extends correct base class', function (): void {
-    expect($this->action)->toBeInstanceOf(Action::class);
+test('change password action has the key icon', function (): void {
+    expect(ChangePasswordAction::make()->getIcon())->toBe('heroicon-o-key');
 });
 
-test('change password action has correct icon', function (): void {
-    $this->action->setUp();
-
-    // Test that the action has the correct icon
-    expect($this->action)->toBeInstanceOf(Action::class);
+test('change password action asks for confirmation', function (): void {
+    expect(ChangePasswordAction::make()->isConfirmationRequired())->toBeTrue();
 });
 
-test('change password action form has required fields', function (): void {
-    $this->action->setUp();
+test('change password action uses translation keys for tooltip and modal', function (): void {
+    $action = ChangePasswordAction::make();
 
-    // The action should have a form with password fields
-    expect($this->action)->toBeInstanceOf(Action::class);
+    expect($action->getTooltip())->toBe(__('user::user.actions.change_password'))
+        ->and($action->getModalHeading())->toBe(__('user::password.actions.change_password.modal.heading'))
+        ->and($action->getModalDescription())->toBe(__('user::password.actions.change_password.modal.description'));
 });
 
-test('change password action can be executed', function (): void {
-    $this->action->setUp();
-
-    // Test that the action can be executed
-    expect($this->action)->toBeInstanceOf(Action::class);
+test('change password action form uses password data and a matching confirmation field', function (): void {
+    expect(changePasswordActionSource())
+        ->toContain("PasswordData::make()->getPasswordFormComponent('new_password')")
+        ->toContain("TextInput::make('new_password_confirmation')")
+        ->toContain("->same('new_password')");
 });
 
-test('change password action uses password data component', function (): void {
-    $this->action->setUp();
-
-    // The action should use PasswordData component for the password field
-    expect($this->action)->toBeInstanceOf(Action::class);
-});
-
-test('change password action has confirmation field', function (): void {
-    $this->action->setUp();
-
-    // The action should have a password confirmation field
-    expect($this->action)->toBeInstanceOf(Action::class);
-});
-
-test('change password action shows success notification', function (): void {
-    $this->action->setUp();
-
-    // The action should show a success notification after password change
-    expect($this->action)->toBeInstanceOf(Action::class);
-});
-
-test('change password action validates password confirmation', function (): void {
-    $this->action->setUp();
-
-    // The action should validate that password confirmation matches
-    expect($this->action)->toBeInstanceOf(Action::class);
-});
-
-test('change password action uses translation keys', function (): void {
-    $this->action->setUp();
-
-    // The action should use translation keys for labels and messages
-    expect($this->action)->toBeInstanceOf(Action::class);
-});
-
-test('change password action has correct setup method', function (): void {
-    $this->action->setUp();
-
-    // The action should have a setUp method that configures the action
-    expect($this->action)->toBeInstanceOf(Action::class);
+test('change password action hashes the new password and notifies success', function (): void {
+    expect(changePasswordActionSource())
+        ->toContain("'password' => Hash::make(\$newPassword)")
+        ->toContain('Notification::make()')
+        ->toContain('->success()');
 });

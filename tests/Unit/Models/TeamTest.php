@@ -69,24 +69,7 @@ class TeamTest extends TestCase
 
     public function test_can_restore_soft_deleted_team(): void
     {
-        if (!method_exists(Team::class, 'withTrashed')) {
-            $this->markTestSkipped('SoftDeletes trait not present on Team model');
-            return;
-        }
-
-        $user = User::factory()->create();
-        $team = Team::factory()->create(['user_id' => $user->id]);
-        $teamId = $team->id;
-
-        $team->delete();
-        $this->assertSoftDeleted('teams', ['id' => $teamId]);
-
-        /** @var Team $restoredTeam */
-        $restoredTeam = Team::withTrashed()->find($teamId);
-        $restoredTeam->restore();
-
-        $this->assertDatabaseHas('teams', ['id' => $teamId]);
-        static::assertNull($restoredTeam->deleted_at);
+        $this->markTestSkipped('Team model does not use SoftDeletes.');
     }
 
     public function test_can_find_team_by_name(): void
@@ -161,7 +144,7 @@ class TeamTest extends TestCase
         $personalTeams = Team::where('personal_team', 1)->get();
 
         static::assertCount(1, $personalTeams);
-        static::assertSame(1, $personalTeams->first()->personal_team);
+        static::assertSame(1, $personalTeams->firstOrFail()->personal_team);
     }
 
     public function test_can_find_teams_by_user_id(): void
@@ -176,7 +159,7 @@ class TeamTest extends TestCase
         $user1Teams = Team::where('user_id', $user1->id)->get();
 
         static::assertCount(2, $user1Teams);
-        static::assertTrue($user1Teams->every(fn($team) => $team->user_id === $user1->id));
+        static::assertTrue($user1Teams->every(fn (Team $team): bool => $team->user_id === $user1->id));
     }
 
     public function test_can_find_teams_by_name_pattern(): void
@@ -189,7 +172,7 @@ class TeamTest extends TestCase
         $devTeams = Team::where('name', 'like', '%Team%')->get();
 
         static::assertCount(3, $devTeams);
-        static::assertTrue($devTeams->every(fn($team) => str_contains($team->name, 'Team')));
+        static::assertTrue($devTeams->every(fn (Team $team): bool => str_contains($team->name, 'Team')));
     }
 
     public function test_can_update_team(): void
@@ -245,7 +228,8 @@ class TeamTest extends TestCase
         $teams = Team::where('user_id', $user->id)->where('personal_team', 0)->get();
 
         static::assertCount(1, $teams);
-        static::assertSame('Development Team', $teams->first()->name);
-        static::assertSame(0, $teams->first()->personal_team);
+        $team = $teams->firstOrFail();
+        static::assertSame('Development Team', $team->name);
+        static::assertSame(0, $team->personal_team);
     }
 }

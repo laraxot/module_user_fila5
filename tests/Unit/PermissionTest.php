@@ -16,7 +16,6 @@ beforeEach(function (): void {
 });
 
 test('permission can be created', function (): void {
-    expect($this->permission)->toBeInstanceOf(Permission::class);
     expect($this->permission->name)->toBe('test-permission');
     expect($this->permission->guard_name)->toBe('web');
 });
@@ -36,7 +35,6 @@ test('permission has correct fillable attributes', function (): void {
 test('permission has correct table configuration', function (): void {
     $table = $this->permission->getTable();
 
-    expect($table)->toBeString();
     expect($table)->not->toBeEmpty();
 });
 
@@ -103,9 +101,7 @@ test('permission can be assigned to multiple roles', function (): void {
 });
 
 test('permission can be found by name', function (): void {
-    $foundPermission = Permission::where('name', 'test-permission')->first();
-
-    expect($foundPermission)->toBeInstanceOf(Permission::class);
+    $foundPermission = Permission::where('name', 'test-permission')->firstOrFail();
     expect($foundPermission->id)->toBe($this->permission->id);
 });
 
@@ -113,7 +109,7 @@ test('permission can be found by guard', function (): void {
     $webPermissions = Permission::where('guard_name', 'web')->get();
 
     expect($webPermissions)->toHaveCount(1);
-    expect($webPermissions->first()->id)->toBe($this->permission->id);
+    expect($webPermissions->firstOrFail()->id)->toBe($this->permission->id);
 });
 
 test('permission has timestamps', function (): void {
@@ -124,7 +120,6 @@ test('permission has timestamps', function (): void {
 test('permission can be created with factory', function (): void {
     $permission = Permission::factory()->create();
 
-    expect($permission)->toBeInstanceOf(Permission::class);
     expect($permission->name)->not->toBeEmpty();
     expect($permission->guard_name)->not->toBeEmpty();
 });
