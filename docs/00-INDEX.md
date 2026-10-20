@@ -115,6 +115,7 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🌊 **[PHPStan swarm wave User](./stories/phpstan-user-swarm-wave.story.md)** - Bucket `.cursor-scratch/phpstan-wave/User`: 99 errori owned → 0; Feature/UserModelTest locked fuori scope.
 - **[PHPStan, ondata test 2026-10-20 (lane user, 14 file rimasti)](./stories/phpstan-test-wave-user.story.md)** - Cause per famiglia, contratti dei permessi allineati, cosa resta (Tenant, Pest, harness).
 - **[PHPStan, ondata test 2026-10-20 (user-a, 39 file)](./stories/phpstan-test-wave-user-a.story.md)** - Produzione (`LoginWidget`, contratti, `routes/auth.php`, `lang/it/auth.php`), helper 2FA, specifiche fantasma neutralizzate, decisioni aperte.
+- **[Chiamate di debug (dddx) in produzione, 2026-10-20](./stories/debug-calls-removal-user.story.md)** - Sei pagine Appearance (il salvataggio non e' mai stato scritto: ora errore esplicito, non un dump) e `Password` (`Halt`, notifica tradotta). Sostituisce la story 12.3; metodo in [wiki/how-to/gestire-chiamate-di-debug-in-produzione.md](./wiki/how-to/gestire-chiamate-di-debug-in-produzione.md).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
