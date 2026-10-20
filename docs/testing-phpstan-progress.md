@@ -113,3 +113,4 @@ expect($user->email)->toBe('test@example.com');
 
 I test `UserBusinessLogicTest` e `AuthenticationBusinessLogicTest` usano solo `PHPUnit\Framework\Assert` (niente higher-order Pest) per compatibilità con `pest-plugin-phpstan`. Le asserzioni restano orientate al contratto di dominio utente/autenticazione.
 
+

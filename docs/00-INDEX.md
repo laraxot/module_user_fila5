@@ -103,7 +103,7 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
-- 📋 **[Livewire → Filament planning](./bmad/livewire-to-filament-planning.md)** - Matrice MIGRATE|REUSE|KEEP|RETIRE (baseline disco 2026-10-20). **W0 legale panel:** `TermsOfServiceWidget` / `PrivacyPolicyWidget` = **REUSE**; `Http\Livewire\TermsOfService` (e Privacy) = HTTP orfani da **RETIRE** (niente `dddx`; pagina FO pubblica ≠ questo widget — Gdpr 12.1). Fleet: [livewire-to-filament-widgets-fleet](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
+- 📋 **[Livewire → Filament planning](./bmad/livewire-to-filament-planning.md)** - Matrice MIGRATE|REUSE|KEEP|RETIRE. **W0 ✓ (2026-10-20):** legal panel `REUSE` widget — HTTP `TermsOfService`/`PrivacyPolicy` ritirati; alias `_components.json` solo `profile.delete-account`. [Inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) · [fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md) · [livewire-inventory](./bmad/livewire-inventory.md).
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
@@ -138,3 +138,4 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+

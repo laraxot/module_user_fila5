@@ -10,7 +10,7 @@ related:
   - ../../../Xot/docs/stories/phpstan-test-wave-regression.story.md
   - 7.2.phpstan-test-harness-contracts.story.md
   - ../testing-phpstan-progress.md
-  - ../TESTING.md
+  - ../testing-harness.md
 ---
 
 # PHPStan ondata test, lane user-b
@@ -87,7 +87,7 @@ Il resolver, per un nome di factory che non e' una `Factory`, restituisce `Facto
 ## Docs aggiornate e duplicati segnalati
 
 - `docs/00-INDEX.md`: nota di stato PHPStan al 2026-10-20 (la riga del 2026-10-14 non e' lo stato attuale), link a questa story e a `TESTING.md`; etichetta di `testing.md` corretta ("Testing Rules Summary").
-- `docs/TESTING.md`: sezione "Harness dei test"; sezione factory riscritta (percorso `database/factories/`, stati reali di `UserFactory`, niente `withRole()` che non esiste).
+- `docs/testing-harness.md`: sezione "Harness dei test"; sezione factory riscritta (percorso `database/factories/`, stati reali di `UserFactory`, niente `withRole()` che non esiste).
 - `docs/testing-phpstan-progress.md`: il workaround `\assert($x instanceof User)` e' segnato come storico e superato.
 - Non toccati, da consolidare: `testing.md` / `TESTING.md` (documenti diversi con nome quasi uguale), `testing-rules.md` / `testing_rules.md` (167 e 48 righe), `testing-strategy.md`, `testing-structure.md`; `phpstan-compliance-status.md`, `fixes-user-module-phpstan.md`, `stories/phpstan-cleanup-user.story.md` citano `Role::factory()` come `mixed` e `UserFactory::new()` come ripiego: storico vero al momento, non piu' necessario.
 - Duplicato di test: `tests/Unit/Models/Traits/MockUserWithTeams.php` e `tests/Unit/Models/Traits/Fixtures/MockUserWithTeams.php` (stesso nome di classe, namespace diversi); non rimosso.

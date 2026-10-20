@@ -10,7 +10,7 @@ related:
   - ../bmad/phpstan-user-contract-fix.md
   - phpstan-test-wave-user-b.story.md
   - ../testing-phpstan-progress.md
-  - ../TESTING.md
+  - ../testing-harness.md
 ---
 
 # PHPStan User a zero (solo tests)

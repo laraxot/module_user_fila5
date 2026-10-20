@@ -10,7 +10,7 @@ related:
   - ../../../Xot/docs/stories/phpstan-test-wave-regression.story.md
   - phpstan-test-wave-user-b.story.md
   - 7.2.phpstan-test-harness-contracts.story.md
-  - ../TESTING.md
+  - ../testing-harness.md
 ---
 
 # PHPStan ondata test, lane user
@@ -24,7 +24,7 @@ Lane del run di coordinamento [phpstan-test-wave-regression](../../../Xot/docs/s
 | Baseline 2026-10-20 09:41 (`Modules/User`, 14 file di test) | 182 |
 | Rimisura mirata dei 14 file, 10:05 | 0 (exit 0) |
 | `phpstan analyse Modules/User --memory-limit=2G --no-progress --error-format=raw`, 10:07 | 0 (exit 0, output vuoto) |
-| Dopo i miei due ritocchi ai test dei permessi, mirata sui 2 file | 0 (exit 0) |
+| Dopo i miei ritocchi ai test dei permessi e di Tenant, mirata sui 3 file | 0 (exit 0) |
 
 Il run a modulo intero non prova le soglie `typeCoverage.*`: quelle valgono solo con `analyse Modules` intero, a carico del coordinatore.
 
@@ -49,16 +49,18 @@ Conteggi per identificatore sul baseline (182 in totale). Lo scopo e' ricostruit
 
 ## Cosa ho corretto io
 
-Il passaggio dalle asserzioni ai tipi aveva lasciato in piedi, nei test dei permessi, tre contratti che il model non rispetta e che PHPStan non puo' vedere:
+La riscrittura fatta per zittire PHPStan ha lasciato asserzioni che il prodotto non rispetta e un'omissione falsa, che PHPStan non puo' vedere. Lette contro migration, model e runtime:
 
 - `tests/Unit/Models/PermissionTest.php`: la chiave e' intera (migration `2026_09_01_150112_create_permissions_table`: `bigIncrements('id')`; a runtime `getKeyType()` vale `int`), non `string`; `$fillable` del model e' `name, guard_name, display_name, description, created_by, updated_by` (non contiene `id`, `created_at`, `updated_at`); i casts sono solo `['id' => 'int']`. Le tre asserzioni ora dicono questo.
 - `tests/Unit/PermissionTest.php`: stesse correzioni su `fillable` e casts (la versione curata `42e53653c` le aveva gia' cosi').
 
-Verifica: mirata sui due file, exit 0.
+- `tests/Unit/Models/TenantTest.php`: i test `test_can_find_tenants_by_trial_status` e `test_can_find_tenants_by_settings_value` erano stati neutralizzati con "column not implemented", ma `2026_09_01_150110_create_tenants_table.php` crea `trial_ends_at` (dateTime) e `settings` (json) e `TenantsTable`/`TenantInfolist` mostrano `trial_ends_at`. Ripristinati sulle colonne reali: il primo cerca per `trial_ends_at` e confronta l'id; il secondo scrive il json con `Safe\json_encode` (il model non ha il cast `array`) e cerca con `whereJsonContains('settings->theme', 'dark')`.
+
+Verifica: mirata sui tre file, exit 0.
 
 ## Cosa resta
 
-1. **`tests/Unit/Models/TenantTest.php` dice una cosa falsa.** I test `test_can_find_tenants_by_trial_status` e `test_can_find_tenants_by_settings_value` sono stati neutralizzati con "column not implemented", ma `2026_09_01_150110_create_tenants_table.php` crea `trial_ends_at` (dateTime) e `settings` (json). Quello che manca e' il model: `Tenant` non ha `trial_ends_at` ne' `settings` in `$fillable` e nei casts (`@property string|null $settings`), quindi `$tenant->settings['theme']` non e' un array. Non l'ho toccato perche' il file era sotto lock di un'altra sessione (10:04:35). Il test valido va ripristinato: la ricerca per `trial_ends_at` funziona senza modifiche al model; per `settings` o si aggiunge il cast `array` al model (decisione di prodotto) o si asserisce sull'id del tenant trovato con `whereJsonContains`.
+1. **Decisione di prodotto sul model `Tenant`.** `trial_ends_at` e `settings` esistono in migration ma il model non li dichiara in `$fillable` ne' nei casts (`@property string|null $settings`). `test_can_create_tenant_with_all_fields` passa `settings` come array e lo confronta con un array: a runtime fallirebbe finche' non c'e' il cast `array` (e `datetime` per `trial_ends_at`). PHPStan non lo vede. Non ho cambiato il model: aggiungere i casts e' una scelta di prodotto (nessun chiamante di produzione legge `settings`).
 2. **Test mai eseguiti.** Il DB `quaeris_data_test` non esiste e la regola e' MySQL: la verifica e' PHPStan e `php -l`. Gli errori di runtime che PHPStan non vede (come i tre contratti dei permessi) vanno cercati lanciando i test su MySQL.
 3. **Pest resta Pest.** Sette file sono ancora classi PHPUnit (`UserManagementBusinessLogicTest`, `GetCurrentDeviceActionTest`, `Models/DeviceTest`, `Models/PermissionTest`, `Models/ProfileTest`, `Models/TeamTest`, `Models/TenantTest`) e diciannove usano `Tests\TestCase` della radice invece di `Modules\User\Tests\TestCase`, quindi senza gli helper `skipUnless*`. Non erano errori PHPStan: conversione da pianificare (regola `phpstan-pest-tests-stay-pest`).
 4. **Duplicati.** `Models/PermissionTest` e `Unit/PermissionTest`, `Models/TenantTest` e `Unit/TenantTest`, `Unit/UserModelTest` e `Feature/UserModelTest` coprono gli stessi soggetti. Nessuno e' stato rimosso: sono cronologia del sync.

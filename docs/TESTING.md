@@ -9,7 +9,7 @@ updated: 2026-10-20
 qmd: "alias TESTING uppercase user verso testing-harness"
 ---
 
-<!-- gateguard: convert existing UPPERCASE TESTING.md to stub. Supersedes nothing new; body lives in testing-harness.md (moved from this file). Linked from 00-INDEX + phpstan-user-* stories. Why stub+rename: naming rule lowercase except README; avoid colliding with testing.md. User: "Fix UPPERCASE md except README in those trees if easy" -->
+<!-- gateguard: convert existing UPPERCASE TESTING.md to stub. Body in testing-harness.md. Linked from 00-INDEX + phpstan-user-* stories. Why stub: lowercase naming except README. User: "Fix UPPERCASE md except README in those trees if easy" -->
 
 # Alias — TESTING User
 

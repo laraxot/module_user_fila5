@@ -9,7 +9,7 @@ updated: 2026-10-20
 related:
   - phpstan-test-wave-user-b.story.md
   - 7.2.phpstan-test-harness-contracts.story.md
-  - ../TESTING.md
+  - ../testing-harness.md
   - ../00-INDEX.md
 ---
 
@@ -86,5 +86,5 @@ Nessun ignore/baseline/neon: solo allineamento test ↔ API reali.
 ## Collegamenti
 
 - [Indice docs User](../00-INDEX.md)
-- [TESTING.md](../TESTING.md)
+- [TESTING.md](../testing-harness.md)
 - [7.2 harness contracts](./7.2.phpstan-test-harness-contracts.story.md)

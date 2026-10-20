@@ -78,13 +78,15 @@ test('list users page has correct bulk actions', function (): void {
 test('list users page can display users', function (): void {
     skipUnlessUsersTableReady();
 
-    User::factory()->count(3)->create(['type' => UserType::MasterAdmin]);
+    // La connessione `user` puo' contenere altri utenti: si contano solo quelli creati qui.
+    $created = User::factory()->count(3)->create(['type' => UserType::MasterAdmin]);
 
-    $users = User::all();
+    $users = User::whereIn('id', $created->modelKeys())->get();
     expect($users)->toHaveCount(3);
 
     foreach ($users as $user) {
-        expect($user->type)->toBe(UserType::MasterAdmin);
+        // `users.type` non ha un cast enum: l'attributo e' la stringa del case.
+        expect($user->type)->toBe(UserType::MasterAdmin->value);
     }
 });
 

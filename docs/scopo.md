@@ -91,9 +91,15 @@ frequenti dicono esattamente quale forma User riceve dalla piattaforma:
 ```
 
 Zero estensioni dirette di classi `Filament\` fuori dalle `XotBase*`, zero
-`app/Services` (l'unico file che matcha `*Service*.php` è
-`TermsOfService` Livewire e' stato ritirato in W0 REUSE a favore di `TermsOfServiceWidget`). Su
-queste due policy User è in regola.
+`app/Services`. Su queste due policy User è in regola.
+
+**Panel chrome (fleet W0 ✓, 2026-10-20):** gli HTTP legali `TermsOfService` /
+`PrivacyPolicy` (viste e alias `_components.json`) sono ritirati; SSoT
+`TermsOfServiceWidget` / `PrivacyPolicyWidget`. Resta in `Http/Livewire` solo
+`Profile\DeleteAccount` fino a W2. Canone:
+[inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) ·
+[fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
+Pagina FO pubblica ≠ widget panel ([Gdpr 12.1](../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md)).
 
 Verso il basso c'è una riga sola, ma è la riga sbagliata:
 

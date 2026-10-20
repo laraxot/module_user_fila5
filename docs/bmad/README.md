@@ -22,7 +22,7 @@ qmd: "user   bmad method integration user"
 - [Filament blueprint](./filament-blueprint.md)
 - [Project context](./project-context.md)
 - [Decision log](./decision-log.md)
-- [Livewire → Filament planning](./livewire-to-filament-planning.md) — matrice User (W0–W2); link hub [Xot inventory](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) / [blueprint](../../Xot/docs/bmad/livewire-to-filament-widgets-filament-blueprint.md)
+- [Livewire → Filament planning](./livewire-to-filament-planning.md) — matrice User (W0–W2); W0: `TermsOfServiceWidget` **REUSE** vs HTTP orfano; hub [Xot inventory](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) / [blueprint](../../Xot/docs/bmad/livewire-to-filament-widgets-filament-blueprint.md) / [fleet](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md)
 
 ## Contratto corrente del flusso cittadino
 
