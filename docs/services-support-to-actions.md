@@ -1,5 +1,10 @@
 ---
 title: User — Support → Actions
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "migrazione `app/support/` → `app/actions/` user"
 ---
 
 # Migrazione `app/Support/` → `app/Actions/`

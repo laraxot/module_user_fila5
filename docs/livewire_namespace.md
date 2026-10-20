@@ -1,3 +1,11 @@
+---
+title: "Regole per i componenti Livewire in Windsurf/Xot"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "regole per i componenti livewire in windsurf/xot user"
+---
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

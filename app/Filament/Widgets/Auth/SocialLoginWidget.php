@@ -19,7 +19,7 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 
     protected string $view = 'user::filament.widgets.auth.social-login';
 
-    public string $redirectRoute = 'socialite.oauth.redirect';
+    public string $redirectRoute = 'oauth.redirect';
 
     /**
      * @return array<string, Component>
@@ -83,8 +83,8 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     private function normalizeRedirectRoute(): string
     {
         return match ($this->redirectRoute) {
-            'socialite.oauth.redirect', 'socialite.oauth.fo.redirect' => $this->redirectRoute,
-            default => 'socialite.oauth.redirect',
+            'socialite.oauth.redirect', 'socialite.oauth.fo.redirect', 'oauth.redirect', 'auth.google.index', 'oauth.callback' => $this->redirectRoute,
+            default => 'oauth.callback',
         };
     }
 }

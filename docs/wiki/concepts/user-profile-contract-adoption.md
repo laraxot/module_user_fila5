@@ -11,6 +11,7 @@ related:
   - ./profile-id-bigint-uuid-fix.md
   - ./uservsprofile.md
   - ./baseuser-hierarchy.md
+status: draft
 ---
 
 # UserContract / ProfileContract — adoption

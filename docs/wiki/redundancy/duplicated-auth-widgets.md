@@ -10,6 +10,10 @@ related:
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+status: draft
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "loginwidget e logoutwidget duplicati user"
 ---
 
 # LoginWidget e LogoutWidget duplicati

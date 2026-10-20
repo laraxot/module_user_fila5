@@ -28,7 +28,7 @@ Consolidated from **10** individual files.
 
 ## hasteams-currentteam-method-choice-3
 
-*Consolidated from: `hasteams-currentteam-method-choice-3.md`*
+*Consolidated from: `hasteams-currentteam-method-choice-analysis-decision.md`*
 
 title: "Choice of currentTeam() Method in HasTeams Trait"
 type: concept
@@ -39,13 +39,13 @@ qmd: "hasteams-currentteam-method-choice-3 choice of currentteam() method in has
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -93,13 +93,13 @@ qmd: "hasteams-currentteam-method-choice choice of currentteam() method in haste
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -177,13 +177,13 @@ qmd: "hasteams-trait-analysis hasteams trait analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -229,7 +229,7 @@ After reviewing the duplicate methods in the `HasTeams` trait, the recommendatio
 
 ## hasteams-trait-filosofia-e-correzione-completa-3
 
-*Consolidated from: `hasteams-trait-filosofia-e-correzione-completa-3.md`*
+*Consolidated from: `hasteams-trait-filosofia-e-correzione-completa.md`*
 
 title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
 type: concept
@@ -240,13 +240,13 @@ qmd: "hasteams-trait-filosofia-e-correzione-completa-3 hasteams trait - filosofi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -510,7 +510,7 @@ Creare test per verificare:
 Aggiornare:
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
-- [Modules/User/docs/traits.md](traits.md)
+- [Modules/User/docs/traits.md](../../traits.md)
 - File .mdc per Cursor e Windsurf
 
 ## 🎯 **RISULTATO FINALE**
@@ -528,16 +528,16 @@ Il trait `HasTeams` ora è:
 
 ### **📚 Documentazione Root**
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes.md](../../../docs/phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes.md](../../phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
-- [traits.md](traits.md) - Documentazione completa trait modulo User
-- [authentication.md](authentication.md) - Sistema autenticazione User
+- [traits.md](../../traits.md) - Documentazione completa trait modulo User
+- [authentication.md](../../authentication.md) - Sistema autenticazione User
 - [index.md](index.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
@@ -549,9 +549,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 
@@ -573,13 +573,13 @@ qmd: "hasteams-trait-filosofia-e-correzione-completa hasteams trait - filosofia 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -842,7 +842,7 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
-- [Modules/User/docs/traits.md](traits.md)
+- [Modules/User/docs/traits.md](../../traits.md)
 - File .mdc per Cursor e Windsurf
 
 ## 🎯 **RISULTATO FINALE**
@@ -861,12 +861,12 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes.md](../../phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
-- [traits.md](traits.md) - Documentazione completa trait modulo User
-- [authentication.md](authentication.md) - Sistema autenticazione User
+- [traits.md](../../traits.md) - Documentazione completa trait modulo User
+- [authentication.md](../../authentication.md) - Sistema autenticazione User
 - [index.md](index.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
@@ -878,9 +878,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 
@@ -902,13 +902,13 @@ qmd: "hasteams-trait hasteams trait analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -965,13 +965,13 @@ qmd: "hasteams-traituplicate-methods analisi metodi duplicati in hasteams (trait
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1053,7 +1053,7 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
-- [XotData helper](../../xot/docs/standards/readme.md)
+- [XotData helper](../../../../Xot/docs/standards/readme.md)
 
 ---
 
@@ -1410,7 +1410,7 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
-- [Modules/User/docs/traits.md](traits.md)
+- [Modules/User/docs/traits.md](../../traits.md)
 - File .mdc per Cursor e Windsurf
 
 ## 🎯 **RISULTATO FINALE**
@@ -1433,8 +1433,8 @@ Il trait `HasTeams` ora è:
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
-- [traits.md](traits.md) - Documentazione completa trait modulo User
-- [authentication.md](authentication.md) - Sistema autenticazione User
+- [traits.md](../../traits.md) - Documentazione completa trait modulo User
+- [authentication.md](../../authentication.md) - Sistema autenticazione User
 - [index.md](index.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
@@ -1446,9 +1446,9 @@ Il trait `HasTeams` ora è:
 - [/bashscripts/docs_naming/fix_user_docs_naming.sh](../../../bashscripts/docs_naming/fix_user_docs_naming.sh)
 
 ### **🏗️ File Correlati**
-- [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php) - File trait implementato
-- [../app/Models/TeamUser.php](../app/Models/TeamUser.php) - Modello pivot
-- [../app/Models/TeamInvitation.php](../app/Models/TeamInvitation.php) - Modello inviti
+- [../app/Models/Traits/HasTeams.php](../../../app/Models/Traits/HasTeams.php) - File trait implementato
+- [../app/Models/TeamUser.php](../../../app/Models/TeamUser.php) - Modello pivot
+- [../app/Models/TeamInvitation.php](../../../app/Models/TeamInvitation.php) - Modello inviti
 
 ---
 

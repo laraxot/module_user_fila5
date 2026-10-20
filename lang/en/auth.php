@@ -107,7 +107,9 @@ return [
         'facebook' => 'Sign in with Facebook',
     ],
     'login' => [
-        'google' => ['text' => 'Google'],
+        'title' => ['text' => 'Sign in to your account'],
+        'intro' => ['text' => 'Sign in to report an issue and track your requests.'],
+        'google' => ['text' => 'Google', 'button' => ['text' => 'Sign in with Google']],
         'microsoft' => ['text' => 'Microsoft'],
         'github' => ['text' => 'GitHub'],
         'or_continue_with' => ['text' => 'or'],
@@ -116,6 +118,13 @@ return [
         'no_account' => ['text' => 'Do not have an account?'],
         'create_account' => ['text' => 'Create account'],
         'logging_in' => ['text' => 'Logging in…'],
+        'success' => ['text' => 'Successfully signed in.'],
+        'invalid_provider' => 'Invalid login provider.',
+        'redirecting' => 'Redirecting…',
+        'redirect_to_provider' => 'You are being redirected to :provider.',
+        'callback' => 'Sign in with :provider',
+        'callback_text' => 'There was a problem signing in with :provider.',
+        'back' => 'Back to sign in',
         'page' => [
             'meta_title' => [
                 'label' => 'Access services',
@@ -216,5 +225,11 @@ return [
         'support_item_help' => 'If the problem continues, contact your municipality support office.',
         'register_cta_text' => 'Do not have an account yet?',
         'register_cta_link' => 'Create your account',
+    ],
+    'forgot-password' => [
+        'title' => 'Forgot your password?',
+        'subtitle' => 'Enter your email address to receive the instructions',
+        'back_to_login' => 'Back to sign in',
+        'submit' => 'Send instructions',
     ],
 ];

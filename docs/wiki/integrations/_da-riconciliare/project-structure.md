@@ -5,13 +5,13 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
-  - "./2fa-guide.md"
+  - "../../../2fa-guide.md"
   - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "../../../accessor-delegation-pattern.md"
+  - "../../../actions-path-convention.md"
+  - "../../../actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -112,11 +112,11 @@ graph TD
 
 ## Riferimenti Globali
 
-- [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 
 ## Setup Iniziale (per nuovi moduli)
 
@@ -248,11 +248,11 @@ graph TD
 
 ## Riferimenti Globali
 
-- [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 
 ## Setup Iniziale (per nuovi moduli)
 

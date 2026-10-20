@@ -10,6 +10,8 @@ issues:
 related:
   - ../../../config/permission.php
   - ./config/local/workorder/permission.php
+status: draft
+qmd: "spatie/laravel-permission   `table_names` è la fonte di verità fissa, mai la schema user"
 ---
 
 # spatie/laravel-permission — `table_names` è la fonte di verità fissa, mai la schema

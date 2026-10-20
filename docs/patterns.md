@@ -4,6 +4,8 @@ type: guide
 tags: [user, patterns, best-practices]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "user module   patterns & best practices user"
 ---
 
 # User Module — Patterns & Best Practices

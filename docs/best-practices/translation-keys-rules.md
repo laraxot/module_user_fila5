@@ -134,7 +134,7 @@ return [
 
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-2.md)
-- [Convenzioni di Codice](code-conventions.md)
+- [Convenzioni di Codice](../code_conventions.md)
+- [Best Practices per le Traduzioni](../translation-best-practices-traduzioni.md)
+- [Struttura del Modulo](../module-structure-user.md)
+- [Convenzioni di Codice](../code-conventions.md)

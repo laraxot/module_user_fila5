@@ -17,6 +17,8 @@ related:
   - "./module-commit-push-after-change.md"
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
+status: draft
+updated: 2026-10-13
 ---
 
 # Vietato `create_notifications_table` in User
@@ -44,7 +46,7 @@ return new class extends Migration { ... };
 
 `laravel/Modules/Notify/database/migrations/2026_06_10_134000_create_notifications_table.php`
 
-Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
+Contratto: [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
 
 ## Se manca tabella su `fixcity_user`
 
@@ -54,4 +56,4 @@ Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/
 ## Collegamenti
 
 - [notifications-runtime-model](../concepts/notifications-runtime-model.md)
-- [main-module-profiles-ownership](../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+- [main-module-profiles-ownership](../../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)

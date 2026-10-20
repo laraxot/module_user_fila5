@@ -8,14 +8,15 @@ qmd: "user-factory-integration userfactory integration - modulo user e <nome pro
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # UserFactory Integration - Modulo User e <nome progetto>
@@ -366,8 +367,8 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 
 ---
 
@@ -723,8 +724,8 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 
 ---
 

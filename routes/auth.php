@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-/*
 Route::prefix('{lang}')->group(function () {
     Route::middleware('guest')->group(function () {
         Volt::route('register', 'pages.auth.register')->name('register');
@@ -23,4 +22,3 @@ Route::prefix('{lang}')->group(function () {
         Volt::route('confirm-password', 'pages.auth.confirm-password')->name('password.confirm');
     });
 });
-*/

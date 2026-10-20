@@ -8,14 +8,15 @@ qmd: "phpstans-resolution phpstan level 10 errors resolution roadmap - user modu
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
@@ -162,7 +163,7 @@ public function clients();
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
-- [Passport Integration](../../user/docs/passport-integration.md)
+- [Passport Integration](passport-integration.md)
 - [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
 
 ---

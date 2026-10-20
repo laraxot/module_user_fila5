@@ -4,6 +4,8 @@ type: report
 module: User
 updated: 2026-09-01
 qmd: "audit qualita user phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
+status: draft
+tags: [docs, user]
 ---
 
 # Audit di qualita — modulo User

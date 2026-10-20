@@ -8,12 +8,13 @@ updated: 2026-07-08
 qmd: "git push LFS missing objects module User risoluzione squash rebase"
 related:
   - "./filament-user-creation-pty-error.md"
-  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory-stato-rinominato.md"
   - "./git-merge-conflict-inventory.md"
   - "./phpstan-module-analysis-memory.md"
-  - "./phpstan-widget-property-types-1.md"
+  - "./phpstan-widget-property-types-stato-rinominato.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
+status: draft
 ---
 
 # Git push — oggetti LFS mancanti
@@ -96,7 +97,7 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User --no-progres
 |------------------|-----|
 | PHPStan `method.notFound` su migrazione legacy `Database/Migrations/` | Rimuovi cartella PascalCase; canonico = `database/migrations/` |
 | `trait.unused` / generics su contract duplicato in `Application/` | Solo `app/Application/` |
-| Dependabot alert su push | [dependabot-discipline](../../../../../docs/wiki/how-to/dependabot-discipline.md) |
+| Dependabot alert su push | [dependabot-discipline](../../../../../../docs/wiki/how-to/dependabot-discipline.md) |
 
 ## Riferimenti
 

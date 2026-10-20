@@ -1,3 +1,11 @@
+---
+title: "Metodi duplicati — User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "metodi duplicati   user user"
+---
 # Metodi duplicati — User
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

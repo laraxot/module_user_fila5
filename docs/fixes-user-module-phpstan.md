@@ -8,14 +8,15 @@ qmd: "fixes-user-module-phpstan correzioni phpstan per il modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # Correzioni PHPStan per il Modulo User
@@ -171,8 +172,8 @@ Gli errori rimanenti (94) sono principalmente:
 
 ## Collegamenti
 
-- [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
-- [Configurazione Password](../../config/password.php)
+- [Test di Validazione](../tests/Unit/UserModulePhpstanFixesTest.php)
+- [Configurazione Password](../config/password.php)
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 
 ## Note per il Futuro

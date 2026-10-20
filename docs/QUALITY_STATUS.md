@@ -3,6 +3,10 @@ title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08
 version: 1.2
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "modulo user   stato qualità user"
 ---
 
 # Modulo User — Stato Qualità

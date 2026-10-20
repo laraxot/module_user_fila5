@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+status: draft
 ---
 
 # Regole di Ereditarietà dei Modelli - Modulo User
@@ -243,7 +244,7 @@ Prima di creare un nuovo modello, verifica:
 ## Link Correlati
 
 - [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
-- [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
+- [Documentazione Geo Model Pattern](../../../Geo/docs/model-inheritance-pattern.md)
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche

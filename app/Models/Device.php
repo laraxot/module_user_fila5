@@ -80,6 +80,8 @@ use Modules\Xot\Datas\XotData;
  */
 class Device extends BaseModel
 {
+    protected $connection = 'user';
+
     /** @var list<string> */
     protected $fillable = [
         'id',

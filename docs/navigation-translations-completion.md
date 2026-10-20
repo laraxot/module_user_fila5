@@ -8,14 +8,15 @@ qmd: "navigation-translations-completion navigation translations completion road
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # Navigation Translations Completion Roadmap - User Module
@@ -186,7 +187,7 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 ## 📚 Documentazione Correlata
 
 - [Translation Standards](../../xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
+- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
 
 ---
 

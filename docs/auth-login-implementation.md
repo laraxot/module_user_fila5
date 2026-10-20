@@ -8,14 +8,15 @@ qmd: "auth-login-implementation implementazione corretta della pagina di login"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # Implementazione Corretta della Pagina di Login
@@ -23,9 +24,9 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -224,9 +225,9 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

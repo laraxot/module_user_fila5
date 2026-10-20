@@ -8,7 +8,7 @@ qmd: "bottlenecks colli di bottiglia - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"
@@ -16,6 +16,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+status: draft
 ---
 
 # Colli di Bottiglia - Modulo User
@@ -161,15 +162,15 @@ related:
 - Testing automatizzato
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../gdpr/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/bottlenecks.md)

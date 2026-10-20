@@ -1,3 +1,11 @@
+---
+title: "User — cosa migliorerei se questo modulo fosse mio per un mese"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user   cosa migliorerei se questo modulo fosse mio per un mese user"
+---
 # User — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati sono in [`docs/cosa-migliorare.md`](cosa-migliorare.md),
@@ -38,7 +46,7 @@ non solo il risultato.
 ## 3. `docs/` — 1479 file, 205 famiglie di doppioni, e il caso più assurdo:
 `actions-path-convention.md` in QUATTRO varianti
 
-`actions-path-convention-1.md`, `actions-path-convention-2.md`,
+`actions-path-convention.md`, `actions-path-convention-convenzione-percorsi.md`,
 `actions-path-convention.md`, `actions_path_convention.md` — stesso
 contenuto concettuale (probabilmente), quattro file, tre convenzioni di
 naming diverse (trattino, trattino basso, suffisso numerico) per lo STESSO

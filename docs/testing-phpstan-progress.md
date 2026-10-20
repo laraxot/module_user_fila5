@@ -8,14 +8,15 @@ qmd: "testing-phpstan-progress user module - phpstan testing progress"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # User Module - PHPStan Testing Progress
@@ -92,3 +93,8 @@ expect($user->email)->toBe('test@example.com'); // OK
 ---
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+## business logic unit tests (2026-10)
+
+I test `UserBusinessLogicTest` e `AuthenticationBusinessLogicTest` usano solo `PHPUnit\Framework\Assert` (niente higher-order Pest) per compatibilità con `pest-plugin-phpstan`. Le asserzioni restano orientate al contratto di dominio utente/autenticazione.
+

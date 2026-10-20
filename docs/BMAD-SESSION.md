@@ -1,3 +1,11 @@
+---
+title: "BMAD + Second Brain — Session Summary (2026-09-04)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "bmad + second brain   session summary (2026-09-04) user"
+---
 # BMAD + Second Brain — Session Summary (2026-09-04)
 
 ## Bootstrap

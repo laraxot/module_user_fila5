@@ -16,6 +16,7 @@ related:
   - "./structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Struttura dei Tests del Modulo User

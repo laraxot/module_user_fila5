@@ -82,7 +82,7 @@ describe('Socialite routes', function () {
     });
 
     test('shared callback route is accessible', function () {
-        $url = route('socialite.oauth.callback', ['provider' => 'google']);
+        $url = route('oauth.callback', ['provider' => 'google']);
         Assert::assertStringContainsString('/sso/google/callback', (string) $url);
     });
 });

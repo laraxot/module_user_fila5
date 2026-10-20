@@ -17,6 +17,7 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+status: draft
 ---
 
 # AI harness — User
@@ -34,7 +35,7 @@ Auth widgets, UserForm, ruoli/permessi, Socialite.
 | 004/015 | Widget auth → `XotBaseSchemaWidget` + `formClass()`/`schemaMethod()` |
 | 008 | STORY prima di refactor Register/Login |
 | 010 | grep `Filament/Widgets/Auth` prima di nuovi widget |
-| 020 | [r1-form-fields-self-validate.md](../../../r1-form-fields-self-validate.md) |
+| 020 | [r1-form-fields-self-validate.md](../../r1-form-fields-self-validate.md) |
 
 ## Collegamenti
 

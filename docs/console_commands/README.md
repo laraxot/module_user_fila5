@@ -1,3 +1,11 @@
+---
+title: "Comandi Console - Modulo User"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, console_commands]
+qmd: "comandi console - modulo user user"
+---
 # Comandi Console - Modulo User
 
 ## Panoramica

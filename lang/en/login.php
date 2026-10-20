@@ -59,6 +59,7 @@ return [
             'label' => 'Login',
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
+            'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         ],
         'register' => [
             'label' => 'Register',

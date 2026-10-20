@@ -13,6 +13,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+status: draft
+qmd: "ridondanza documentazione `modules/user/docs` user"
 ---
 
 # Ridondanza documentazione `Modules/User/docs`
@@ -45,7 +47,7 @@ Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `tes
 
 ## Performance auth (4 naming stesso topic)
 
-`docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication-performance-optimization-3.md` → un solo file canonico in `docs/performance/`.
+`docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication-performance-optimization.md` → un solo file canonico in `docs/performance/`.
 
 ## File “redundancy / dry-kiss phpstan” noti ridondanti
 
@@ -53,7 +55,7 @@ Stesso scaffolding editoriale ripetuto in più percorsi (testo quasi uguale, lin
 
 - `docs/redundancy-fixes.md`
 - `docs/redundancy-fixes-january.md`
-- `docs/redundancy-fixes-january-1.md`
+- `docs/redundancy-fixes-january-documentation-themes.md`
 - `docs/redundancy-fixes-january-2026.md`
 - `docs/redundancyes.md` (nome con typo storico da evitare in nuovi file)
 - `docs/legacy/historical/redundancy-fixes.md`

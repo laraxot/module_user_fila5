@@ -8,7 +8,8 @@ qmd: "User login register traduzioni user_form login_widget login_page register_
 issues:
 discussions:
 related:
-  - "../../stories/auth-pages-i18n-en-de-es-2026-10-07.story.md"
+  - "../../stories/auth-pages-i18n-en-de-es.story.md"
+status: draft
 ---
 
 # Sorgenti dei testi delle pagine auth

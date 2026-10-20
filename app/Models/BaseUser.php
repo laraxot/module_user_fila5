@@ -27,6 +27,7 @@ use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\HasTeamsContract;
+use Modules\User\Contracts\UserNotificationsContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -129,7 +130,7 @@ use Spatie\Permission\Models\Permission;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -319,6 +320,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
+        if ($panel->getId() === 'accesso') {
+            return true;
+        }
+
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
 
@@ -330,7 +335,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $this->hasRole($role);
         }
 
-        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+        return $this->hasAnyRole(['super-admin', 'admin', 'restaurant::admin']);
     }
 
     public function detach(Model $model): void
@@ -362,11 +367,21 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /**
      * Get the entity's notifications.
      *
-     * @return MorphMany<Notification, $this>
+     * @return MorphMany<Notification, Model>
      */
     public function notifications(): MorphMany
     {
         return $this->morphMany(Notification::class, 'notifiable');
+    }
+
+    /**
+     * Get the entity's unread notifications.
+     *
+     * @return MorphMany<Notification, Model>
+     */
+    public function unreadNotifications(): MorphMany
+    {
+        return $this->notifications()->unread();
     }
 
     /**

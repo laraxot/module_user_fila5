@@ -12,6 +12,7 @@ related:
   - ./profile-migration-uuid-contract.md
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/basemodel-connection-religion.md
+status: draft
 ---
 
 # Profiles — errore 1364 `id` senza default

@@ -51,6 +51,7 @@ return [
             'label' => 'Anmelden',
             'success' => 'Anmeldung erfolgreich',
             'error' => 'Ungültige Zugangsdaten',
+            'throttle' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',
         ],
         'register' => [
             'label' => 'Registrieren',

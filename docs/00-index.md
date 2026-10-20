@@ -1,3 +1,11 @@
+---
+title: "**Indice Documentazione Modulo User**"
+type: index
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "**indice documentazione modulo user** user"
+---
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -50,8 +58,8 @@
 - `spatie/laravel-personal-data-export` - Export GDPR
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
-- [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
+- [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
+- [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

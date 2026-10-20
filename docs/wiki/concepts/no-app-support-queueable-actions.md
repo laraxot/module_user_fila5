@@ -16,6 +16,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+status: draft
 ---
 
 # no `app/Support/` — business logic in QueueableAction
@@ -43,9 +44,9 @@ Nel modulo User **non** esiste più `app/Support/`. Ogni helper con comportament
 
 ## Eccezioni ammesse altrove
 
-`app/Adapters/`, `app/Enums/`, facade puri — vedi [queueable-action-trait-mandatory](../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
+`app/Adapters/`, `app/Enums/`, facade puri — vedi [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
 
 ## Collegamenti
 
 - [notifications-runtime-model.md](notifications-runtime-model.md)
-- [queueable-action-trait-mandatory](../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+- [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)

@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "code quality analysis - user module user"
 ---
 
 # Code Quality Analysis - User Module

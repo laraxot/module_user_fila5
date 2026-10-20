@@ -32,67 +32,9 @@ class ManageRolePermissions extends XotBaseManageRelatedRecords
 
     protected static string $relationship = 'permissions';
 
-    /**
-     * @return array<int, TextInput>
-     */
-    public function getFormSchema(): array
-    {
-        return [
-            TextInput::make('name')->required()->maxLength(255),
-        ];
-    }
 
-    /**
-     * @return array<string, Column>
-     */
-    public function getTableColumns(): array
-    {
-        return [
-            'name' => TextColumn::make('name'),
-        ];
-    }
 
-    /**
-     * @return array<string, Action|ActionGroup>
-     */
-    public function getTableHeaderActions(): array
-    {
-        return [
-            'create' => CreateAction::make(),
-            'associate' => AssociateAction::make(),
-        ];
-    }
 
-    /**
-     * @return array<int|string, Action|ActionGroup>
-     */
-    public function getTableActions(): array
-    {
-        return [
-            EditAction::make(),
-            DissociateAction::make(),
-            DeleteAction::make(),
-        ];
-    }
 
-    /**
-     * @return array<int|string, Action|ActionGroup>
-     */
-    public function getTableBulkActions(): array
-    {
-        return [
-            BulkActionGroup::make([
-                DissociateBulkAction::make(),
-                DeleteBulkAction::make(),
-            ]),
-        ];
-    }
 
-    /**
-     * @return array<string, BaseFilter>
-     */
-    public function getTableFilters(): array
-    {
-        return [];
-    }
 }

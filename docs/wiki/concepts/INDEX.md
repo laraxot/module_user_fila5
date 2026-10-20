@@ -12,6 +12,12 @@ updated: 2026-07-27
 
 Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
 
+## Contratti e identità
+
+- [UserContract boundary](usercontract-boundary.md) — i consumer controllano il contratto `UserContract`, non l'implementazione astratta `BaseUser`; le capability aggiuntive richiedono il relativo contratto.
+
+- [Sostenibilità ruoli/membership](../../project-sustainability-membership-roles.md) — approvazione partner; membership B2G futura (BMAD)
+
 ## Runtime config & RBAC (2026-07-27)
 
 - [bugfix-permission-table-names-singular](../../bugfix-permission-table-names-singular.md) — **`permission.php` `table_names` immutabili**; schema segue config
@@ -23,7 +29,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 ## Filament auth FO
 
-- [filament-widget-no-validate-form](filament-widget-no-validate-form.md) — validazione solo in `UserForm`; submit = `getState()`, no `validateForm()`
+- [filament-widget-no-validate-form](../../llm-wiki/concepts/filament-widget-no-validate-form.md) — validazione solo in `UserForm`; submit = `getState()`, no `validateForm()`
 - [filament-widget-linear-crud-model-create](filament-widget-linear-crud-model-create.md) — `getUserClass()::create($data)`, no Action banale
 - [filament-widget-resource-form-delegation](filament-widget-resource-form-delegation.md) — widget → `UserForm::get*FormSchema()`
 
@@ -59,6 +65,6 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [notifications-folio-page](notifications-folio-page.md) — centro notifiche in-app
 - [notifications-folio-route](notifications-folio-route.md) — `route('notifications')` quick ref
 - [notifications-runtime-model](notifications-runtime-model.md) — model + `NotificationSchema`
-- Cms: [folio-list-vs-route-list](../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md) — `folio:list` audit
-- Cms: [folio-filesystem-routing-no-web-php](../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md) — religione routing
+- Cms: [folio-list-vs-route-list](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md) — `folio:list` audit
+- Cms: [folio-filesystem-routing-no-web-php](../../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md) — religione routing
 

@@ -12,6 +12,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+status: draft
+tags: [docs, user, wiki]
+qmd: "socialite architecture user"
 ---
 
 # Socialite Architecture

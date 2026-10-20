@@ -11,7 +11,8 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/363"
 related:
   - login-page-design-comuni.md
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+status: draft
 ---
 
 # LoginWidget — campi vuoti al submit

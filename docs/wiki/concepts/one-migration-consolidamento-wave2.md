@@ -10,7 +10,7 @@ qmd: "user migrations one owner profiles teams users git delete"
 related:
   - ./migrations-users-inventory.md
   - ../../../Xot/docs/wiki/concepts/one-migration-per-model.md
-  - ../../../../../docs/wiki/memories/one-migration-per-model-bump-timestamp.md
+  - ../../../../../../docs/wiki/memories/one-migration-per-model-bump-timestamp.md
 ---
 
 # User — consolidamento migrazioni

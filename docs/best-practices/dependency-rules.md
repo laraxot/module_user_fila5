@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency.md"
+status: draft
 ---
 
 # dependency-rules

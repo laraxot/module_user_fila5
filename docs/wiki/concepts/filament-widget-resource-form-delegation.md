@@ -16,6 +16,8 @@ related:
   - "./folio-pages-owner-pattern.md"
   - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
   - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
+status: draft
+qmd: "widget filament → schema in `*form` (ssot) user"
 ---
 
 # Widget Filament → schema in `*Form` (SSoT)
@@ -122,6 +124,6 @@ XotBaseWidget              (azioni, viste, traduzioni — SENZA schema)
 
 - [UserForm.php](../../../app/Filament/Resources/UserResource/Schemas/UserForm.php)
 - [RegisterWidget.php](../../../app/Filament/Widgets/Auth/RegisterWidget.php)
-- ADR root: [filament-widget-resource-form-delegation.md](../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
+- ADR root: [filament-widget-resource-form-delegation.md](../../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
 - Rule: `.cursor/rules/filament-widget-resource-form.mdc`
 - Rule: `.cursor/rules/xotbase-schemawidget.mdc`

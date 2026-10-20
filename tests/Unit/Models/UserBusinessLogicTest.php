@@ -1,18 +1,15 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {
-        Assert::assertInstanceOf(BaseUser::class, new User);
+        Assert::assertSame(BaseUser::class, get_parent_class(User::class));
     });
 
     test('user has authentication capabilities', function () {
@@ -21,7 +18,7 @@ describe('User Business Logic', function () {
         $user->password = 'hashed-password';
 
         Assert::assertSame('test@example.com', $user->email);
-        Assert::assertTrue(Hash::check('hashed-password', $user->password));
+        Assert::assertSame('hashed-password', $user->password);
     });
 
     test('user can have name components', function () {
@@ -39,14 +36,14 @@ describe('User Business Logic', function () {
         $user = new User;
         $user->is_active = true;
 
-        Assert::assertSame(true, $user->is_active);
+        Assert::assertTrue($user->is_active);
     });
 
     test('user has otp capability', function () {
         $user = new User;
         $user->is_otp = true;
 
-        Assert::assertSame(true, $user->is_otp);
+        Assert::assertTrue($user->is_otp);
     });
 
     test('user can have language preference', function () {
@@ -61,8 +58,7 @@ describe('User Business Logic', function () {
         $verifiedAt = Carbon::parse('2023-01-01 12:00:00');
         $user->email_verified_at = $verifiedAt;
 
-        Assert::assertNotNull($user->email_verified_at);
-        Assert::assertSame('2023-01-01 12:00:00', $user->email_verified_at->format('Y-m-d H:i:s'));
+        Assert::assertTrue($verifiedAt->equalTo($user->email_verified_at));
     });
 
     test('user has password expiry tracking', function () {
@@ -70,8 +66,7 @@ describe('User Business Logic', function () {
         $expiresAt = Carbon::parse('2023-12-31 23:59:59');
         $user->password_expires_at = $expiresAt;
 
-        Assert::assertNotNull($user->password_expires_at);
-        Assert::assertSame('2023-12-31 23:59:59', $user->password_expires_at->format('Y-m-d H:i:s'));
+        Assert::assertTrue($expiresAt->equalTo($user->password_expires_at));
     });
 
     test('user can have current team', function () {

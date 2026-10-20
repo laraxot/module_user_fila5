@@ -49,6 +49,20 @@ class DemoUserSeeder extends Seeder
                 'type' => 'customer_user',
                 'role' => 'user',
             ],
+            [
+                'email' => 'waiter1@example.test',
+                'name' => 'Mario Cameriere',
+                'password' => 'waiter123',
+                'type' => 'waiter_user',
+                'role' => 'waiter',
+            ],
+            [
+                'email' => 'waiter2@example.test',
+                'name' => 'Luisa Cameriera',
+                'password' => 'waiter123',
+                'type' => 'waiter_user',
+                'role' => 'waiter',
+            ],
         ];
 
         foreach ($demoUsers as $demo) {

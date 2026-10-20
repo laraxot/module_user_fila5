@@ -8,6 +8,7 @@ qmd: "static-instance-method-incompatibility incompatibilità tra metodi statici
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+status: draft
 ---
 
 # Incompatibilità tra metodi statici e di istanza in Filament

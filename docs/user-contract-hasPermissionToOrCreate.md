@@ -8,6 +8,8 @@ created: 2026-09-24
 related:
   - ../BMAD-SECOND-BRAIN.md
   - ../../Xot/app/Contracts/UserContract.php
+updated: 2026-10-08
+qmd: "haspermissiontoorcreate   implementazione user"
 ---
 
 # hasPermissionToOrCreate — implementazione

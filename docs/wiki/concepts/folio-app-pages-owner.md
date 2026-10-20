@@ -10,9 +10,10 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/363"
 related:
-  - ../../../../Themes/Sixteen/docs/page-directory-structure.md
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
   - folio-app-pages-owner.md
+status: draft
 ---
 
 # Folio app pages — owner `User`
@@ -41,7 +42,7 @@ Folio monta **tema prima**, poi **moduli** (`FolioVoltServiceProvider`). Rotte d
 - `new class extends Component` + `mount()` per query/redirect
 - `@volt('…')` statico = `name()`
 
-Canon: [folio-volt-app-pages.md](../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
 
 ## Pratiche + Fixcity
 
@@ -49,5 +50,5 @@ Canon: [folio-volt-app-pages.md](../../../../Themes/Sixteen/docs/wiki/concepts/f
 
 ## Collegamenti
 
-- [page-directory-structure.md](../../../../Themes/Sixteen/docs/page-directory-structure.md)
-- [personal-area-routes.md](../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
+- [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
+- [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
