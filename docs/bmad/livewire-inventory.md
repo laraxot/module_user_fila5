@@ -20,6 +20,9 @@ related:
   - ../stories/10.3.retire-auth-livewire-twins.story.md
   - ../stories/10.4.retire-gdpr-profile-livewire.story.md
   - ../stories/11.1.team-change-widget.story.md
+updated: 2026-10-13
+tags: [docs, user, bmad]
+qmd: "inventario piattaforma: livewire http → filament widget user"
 ---
 
 # Inventario piattaforma: Livewire HTTP → Filament widget
@@ -72,16 +75,16 @@ Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire
 | Modulo | Http/Livewire | Verdetto | Canone |
 |--------|---------------|----------|--------|
 | **User** | 15 classi (14 `Http/Livewire` + `Livewire/Logout`), 3 hook panel | ✅ chrome convertito (9.x, 10.1–10.2) + auth HTTP ritirata (10.3); restano 4 classi su disco (Cluster C → 10.4 + `Livewire/Logout` orfano) | [User](./livewire-inventory.md) |
-| **UI** | DarkModeSwitcher, Toast | ritiro HTTP; widget già SSoT | [UI](../../UI/docs/bmad/livewire-inventory.md) |
-| **Lang** | Change, Switcher | ritiro HTTP; `LanguageSwitcherWidget` | [Lang](../../Lang/docs/bmad/livewire-inventory.md) |
+| **UI** | DarkModeSwitcher, Toast | ritiro HTTP; widget già SSoT | [UI](../../../UI/docs/bmad/livewire-inventory.md) |
+| **Lang** | Change, Switcher | ritiro HTTP; `LanguageSwitcherWidget` | [Lang](../../../Lang/docs/bmad/livewire-inventory.md) |
 | **Xot** | `XotBaseComponent` + alias orfani | **non** convertire la base; 12.1 alias | [Xot](../../Xot/docs/bmad/livewire-inventory.md) |
-| **Notify** | nessuno HTTP; hook vendor | FQCN su `DatabaseNotifications`; non forkare | [Notify](../../Notify/docs/bmad/livewire-inventory.md) |
-| **Job** | Status, Schedule/*, Broad (`dd`) | ritiro orfani P0 Broad | [Job](../../Job/docs/bmad/livewire-inventory.md) |
+| **Notify** | nessuno HTTP; hook vendor | FQCN su `DatabaseNotifications`; non forkare | [Notify](../../../Notify/docs/bmad/livewire-inventory.md) |
+| **Job** | Status, Schedule/*, Broad (`dd`) | ritiro orfani P0 Broad | [Job](../../../Job/docs/bmad/livewire-inventory.md) |
 | **Quaeris** | QuestionChart + QuestionCharts (Widget in HTTP) | spostare, non clonare | [Quaeris](../../Quaeris/docs/bmad/livewire-inventory.md) |
-| **Geo** | Test, FormSearchAddressCategories | FO / test ≠ widget dashboard | [Geo](../../Geo/docs/bmad/livewire-inventory.md) |
-| **Cms** | Page/Show | pagina FO, non KPI | [Cms](../../Cms/docs/bmad/livewire-inventory.md) |
-| **Media** | Card/Video/Clip | FO video, non KPI | [Media](../../Media/docs/bmad/livewire-inventory.md) |
-| **Gdpr** | zero HTTP; accoglie legal User | no `PrivacyPolicyWidget` | [Gdpr](../../Gdpr/docs/bmad/livewire-inventory.md) |
+| **Geo** | Test, FormSearchAddressCategories | FO / test ≠ widget dashboard | [Geo](../../../Geo/docs/bmad/livewire-inventory.md) |
+| **Cms** | Page/Show | pagina FO, non KPI | [Cms](../../../Cms/docs/bmad/livewire-inventory.md) |
+| **Media** | Card/Video/Clip | FO video, non KPI | [Media](../../../Media/docs/bmad/livewire-inventory.md) |
+| **Gdpr** | zero HTTP; accoglie legal User | no `PrivacyPolicyWidget` | [Gdpr](../../../Gdpr/docs/bmad/livewire-inventory.md) |
 | Chart, Setting, Tenant, Activity, AI, CloudStorage, DbForge, Limesurvey | zero classi HTTP | inventory = gate, nessun epic | `Modules/<Mod>/docs/bmad/livewire-inventory.md` |
 
 ## Cluster A — chrome. Convertito.

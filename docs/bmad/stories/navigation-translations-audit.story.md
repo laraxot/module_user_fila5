@@ -14,6 +14,8 @@ related:
   - ../../../../../docs/wiki/i18n/navigation-translations-inventory-2026-09-29.md
 issues: []
 discussions: []
+tags: [docs, user, bmad]
+qmd: "audit traduzioni `.navigation`   modulo user user"
 ---
 
 # Audit traduzioni `.navigation` — modulo User

@@ -11,7 +11,53 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "decision log   superadmin livewire → filament widget user"
 ---
+
+## [2026-10-18] UserContract boundary nei consumer Auth
+
+- **Perché:** confrontare / tipizzare `BaseUser` lega il consumer all'astratta
+  interna; Fixcity (e altri tenant) possono fornire un `User` concreto che
+  implementa `UserContract` senza che il consumer conosca la gerarchia.
+- **Cosa:** `RecordAuthenticationLogAction` tipizza
+  `UserContract&HasAuthentications`; listener Login/Failed/OtherDevice usano
+  `instanceof UserContract` (+ `HasAuthentications`), mai `instanceof BaseUser`.
+- **Docs:** [`../wiki/concepts/usercontract-boundary.md`](../wiki/concepts/usercontract-boundary.md),
+  [`../bmad-second-brain.md`](../bmad-second-brain.md), Xot
+  `user-contract-boundary`, Sixteen D18.
+- **Guardrail:** `RecordAuthenticationLogActionTest` (source contract).
+
+## [2026-10-18] Login i18n — chiavi mancanti su FO
+
+- **Sintomo prod:** `user::auth.login.google.button.text` e
+  `pub_theme::accessibility.title.text` grezzi su `/it/auth/login`.
+- **Fix:** contratto `.text` per accessibilità (it/en/de/es); DE non deve
+  riscrivere `login.google` senza `button`; `login.php` senza placeholder
+  inglesi (`Missing…`, `authenticate`); login FO senza helper_text di
+  `user_form` (solo label).
+- **Guardrail:** `AuthLoginTranslationContractTest` include
+  `login.google.button.text`.
+
+## [2026-10-18] Login i18n: catalogo unico per il contratto della vista
+
+**Decision:** la vista Sixteen `components/pages/auth-login.blade.php` e il
+widget Filament condividono il contratto `user::auth.login.*`. Ogni lingua
+servita (`it`, `en`, `de`, `es`) deve fornire i nodi `.text` per titolo,
+intro, social, submit, password dimenticata, registrazione e stato loading,
+oltre a `auth.actions.login.success/error`.
+
+**Rationale:** i cataloghi contenevano forme incompatibili (stringa semplice,
+array con `.text`, chiavi duplicate e catalogo `login_widget` incompleto).
+Laravel risolve l'ultima chiave PHP duplicata: una traduzione presente solo
+nella prima definizione è quindi assente a runtime. Il test di contratto copre
+tutte e quattro le lingue e 80 asserzioni.
+
+**Filament Blueprint:** `LoginWidget` resta thin; schema/etichette restano
+nella SSoT `user_form`, mentre `login_widget` contiene solo il contratto dei
+campi ausiliari. Nessuna label hardcoded: anche il pulsante Google usa il
+catalogo `auth`.
 
 # Decision log — SuperAdmin Livewire → Filament widget
 
@@ -225,3 +271,41 @@ contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
+
+## [2026-10-18] LaravelLocalization — firma dei metodi URL
+
+- **Sintomo:** il login su `/it/auth/login` generava `UnsupportedLocaleException`
+  con locale `/it` (auth già riuscita; falliva il redirect Livewire).
+- **Causa:** `getLocalizedURL($locale, $url)` riceve il **locale** per primo;
+  `getLocalizedURL('/' . app()->getLocale())` passava `'/it'` come locale.
+  `localizeURL($url, $locale)` è il wrapper corretto (URL per primo).
+- **Decisione:** per localizzare un URL usare `localizeURL($url[, $locale])`;
+  usare `getLocalizedURL($locale, $url)` solo con locale esplicito supportato.
+- **Fix:** `LoginWidget` usa `localizeURL(..., $locale)` con locale trim/validato
+  (submit Livewire su `/livewire-*` senza segmento lingua).
+- **Fonte API:** [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
+
+## [2026-10-18] authentication_logs su connessione `user`
+
+- **Decisione:** `authentication_logs` vive su `DB_DATABASE_USER` (`fixcity_user`),
+  non su `fixcity_data`.
+- **Motivo:** model `AuthenticationLog` → `BaseModel::$connection = 'user'`;
+  audit auth accanto a `users` / devices / OAuth.
+- **Sintomo prod:** connection name `user` ma database `fixcity_data` + tabella
+  assente → 500 su failed login.
+- **Fix:** migration owner esplicita; duplicato `.php.old`;
+  `RecordAuthenticationLogAction` non fa crashare il login se la tabella manca.
+- **Artefatto:** [authentication-logs-connection-ownership.md](authentication-logs-connection-ownership.md)
+
+## [2026-10-18] permissions su connessione `user`
+
+- **Decisione:** `permissions` (+ cluster Spatie roles/pivots) vive su
+  `DB_DATABASE_USER` (`fixcity_user`), non su `fixcity_data`.
+- **Motivo:** identity/authorization è dominio User; model `Permission` /
+  `Role` → `$connection = 'user'`; Spatie carica la tabella a ogni `can()`.
+- **Sintomo prod:** `GET /it/tickets/1` → Connection `user` ma database
+  `fixcity_data` + tabella assente → 500 in `BuildTicketTimelineAction`.
+- **Fix:** migration canoniche `create_*`; soft-guard timeline;
+  fail-safe `DB_DATABASE_USER`; `config:clear` in deploy.
+- **Artefatto:** [permissions-connection-ownership.md](permissions-connection-ownership.md)
+

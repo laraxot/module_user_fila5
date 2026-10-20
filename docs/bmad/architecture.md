@@ -1,3 +1,11 @@
+---
+title: "User Module Architecture (BMAD)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user module architecture (bmad) user"
+---
 # User Module Architecture (BMAD)
 
 **Status**: ✅ Finalized

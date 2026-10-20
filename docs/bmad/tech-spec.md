@@ -10,6 +10,9 @@ related:
   - ./architecture.md
   - ./ux-design.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "technical specification: superadmin widget user"
 ---
 
 # Technical specification: SuperAdmin widget

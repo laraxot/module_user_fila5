@@ -9,6 +9,8 @@ related:
   - ./socialite-provider-boundary-product-brief.md
   - ./socialite-provider-boundary-architecture.md
   - ./stories/socialite-provider-boundary.story.md
+tags: [docs, user, bmad]
+qmd: "socialite provider boundary   prd user"
 ---
 
 # Socialite provider boundary — PRD

@@ -8,9 +8,11 @@ status: blocked
 track: feature/filament-widgets
 qmd: "DeleteAccount TermsOfService PrivacyPolicy Logout Livewire conversione Filament widget Cluster C residui"
 related:
-  - ../../docs/bmad/livewire-inventory.md
-  - ../../docs/bmad/advantages-filament-only.md
-  - ../../docs/bmad/livewire-widget-admin-panel-provider.md
+  - ../livewire-inventory.md
+  - ../advantages-filament-only.md
+  - ../livewire-widget-admin-panel-provider.md
+updated: 2026-10-13
+tags: [docs, user, bmad]
 ---
 
 # 10.4 — residui Livewire Cluster C

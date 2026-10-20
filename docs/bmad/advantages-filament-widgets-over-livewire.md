@@ -6,6 +6,11 @@ related:
   - ./advantages-filament-only.md
   - ./livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-advantages.md
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "advantages filament widgets over livewire user"
 ---
 
 Canon modulo: [advantages-filament-only.md](./advantages-filament-only.md) (+ sezioni

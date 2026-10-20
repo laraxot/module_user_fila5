@@ -9,6 +9,9 @@ related:
   - ./module-excellence-prd.md
   - ./module-excellence-architecture.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: user module   findings grezzi user"
 ---
 
 # Brainstorming: User module — findings grezzi

@@ -11,6 +11,9 @@ related:
   - ./epics.md
   - ./decision-log.md
   - ../purpose.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "product brief: user module   percorso verso la perfezione assoluta user"
 ---
 
 # Product brief: User module — percorso verso la perfezione assoluta

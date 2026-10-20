@@ -15,6 +15,8 @@ related:
   - ../stories/12.4.oauth-dup-resources-ssot.story.md
   - ../stories/12.5.filament-artifacts-cleanup.story.md
   - ../stories/12.6.policies-resources-linking.story.md
+tags: [docs, user, bmad]
+qmd: "brainstorming: gap ui/filament emersi dall'audit (evidenze su disco 2026-09-22) user"
 ---
 
 # Brainstorming: gap UI/Filament emersi dall'audit (evidenze su disco 2026-09-22)

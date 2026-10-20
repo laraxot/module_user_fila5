@@ -11,6 +11,9 @@ related:
   - ./epics.md
   - ./livewire-inventory.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "perfection plan   module user absolute perfection user"
 ---
 
 # Perfection Plan — Module User Absolute Perfection
