@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Components\Component;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -68,11 +69,20 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 
     public function getRedirectUrl(string $driver): string
     {
-        $locale = trim((string) app()->getLocale(), '/');
-        $supported = \Mcamara\LaravelLocalization\Facades\LaravelLocalization::getSupportedLanguagesKeys();
-        if (! in_array($locale, $supported, true)) {
-            $locale = (string) config('app.locale', 'it');
+        $locale = app()->getLocale();
+        if (! is_string($locale)) {
+            $locale = config('app.locale', 'it');
         }
+        if (! is_string($locale)) {
+            $locale = 'it';
+        }
+        $locale = trim($locale, '/');
+        $supported = LaravelLocalization::getSupportedLanguagesKeys();
+        if (! in_array($locale, $supported, true)) {
+            $fallback = config('app.locale', 'it');
+            $locale = is_string($fallback) ? $fallback : 'it';
+        }
+
         return route($this->normalizeRedirectRoute(), ['provider' => $driver, 'lang' => $locale]);
     }
 

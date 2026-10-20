@@ -2,77 +2,61 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
-use Filament\Widgets\Widget;
-use Illuminate\Database\Eloquent\Model;
-use Modules\User\Enums\UserType;
+namespace Modules\User\Tests\Feature\Filament\Widgets;
+
+use Filament\Widgets\StatsOverviewWidget\Stat;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
-use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
+use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->widget = new UserOverview();
-    $this->user = User::factory()->create([
-        'type' => UserType::MasterAdmin,
-        'email' => 'admin@example.com',
-    ]);
+/**
+ * `UserOverview` mostra in testa alla lista utenti quattro statistiche di sintesi
+ * (totali, attivi, email verificate, accessi 24h): il vecchio placeholder con `$record` non esiste piu'.
+ *
+ * @return list<Stat>
+ */
+function userOverviewStats(): array
+{
+    $stats = (new ReflectionMethod(UserOverview::class, 'getStats'))->invoke(new UserOverview);
+    Assert::assertIsArray($stats);
+
+    $result = [];
+    foreach ($stats as $stat) {
+        Assert::assertInstanceOf(Stat::class, $stat);
+        $result[] = $stat;
+    }
+
+    return $result;
+}
+
+test('user overview widget extends the xot stats overview base', function (): void {
+    Assert::assertSame(XotBaseStatsOverviewWidget::class, get_parent_class(UserOverview::class));
 });
 
-test('user overview widget extends correct base class', function (): void {
-    expect($this->widget)->toBeInstanceOf(Widget::class);
+test('user overview widget exposes total, active, verified and recent login stats', function (): void {
+    TestCase::skipUnlessUsersTableReady();
+    TestCase::skipUnlessUserTable('authentication_logs');
+
+    $stats = userOverviewStats();
+    $keys = ['total', 'active', 'verified', 'recent_logins'];
+
+    Assert::assertCount(count($keys), $stats);
+    foreach ($keys as $index => $key) {
+        Assert::assertSame(trans('user::user.widgets.overview.'.$key.'.label'), $stats[$index]->getLabel());
+        Assert::assertSame(trans('user::user.widgets.overview.'.$key.'.description'), $stats[$index]->getDescription());
+    }
 });
 
-test('user overview widget has correct view', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
+test('user overview widget shows the verified stat as a percentage', function (): void {
+    TestCase::skipUnlessUsersTableReady();
+    TestCase::skipUnlessUserTable('authentication_logs');
 
-    expect($viewProperty->getValue($this->widget))
-        ->toBe('user::filament.resources.user-resource.widgets.user-overview');
-});
+    $verified = userOverviewStats()[2]->getValue();
 
-test('user overview widget has record property', function (): void {
-    expect($this->widget)->toHaveProperty('record');
-    expect($this->widget->record)->toBeNull();
-});
-
-test('user overview widget can set record', function (): void {
-    $this->widget->record = $this->user;
-
-    expect($this->widget->record)->toBe($this->user);
-    expect($this->widget->record)->toBeInstanceOf(Model::class);
-});
-
-test('user overview widget record property is nullable', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
-    $recordProperty = $reflection->getProperty('record');
-
-    expect($recordProperty->getType()->allowsNull())->toBeTrue();
-});
-
-test('user overview widget has correct namespace', function (): void {
-    expect(UserOverview::class)->toContain('Modules\User\Filament\Resources\UserResource\Widgets');
-});
-
-test('user overview widget can be instantiated', function (): void {
-    expect($this->widget)->toBeInstanceOf(UserOverview::class);
-});
-
-test('user overview widget has correct static properties', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
-
-    expect($viewProperty->isStatic())->toBeTrue();
-});
-
-test('user overview widget view path is correct', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
-
-    $viewPath = $viewProperty->getValue($this->widget);
-    expect($viewPath)->toContain('user::');
-    expect($viewPath)->toContain('widgets.user-overview');
+    Assert::assertIsString($verified);
+    Assert::assertStringEndsWith('%', $verified);
 });

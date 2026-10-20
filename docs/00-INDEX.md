@@ -2,7 +2,7 @@
 title: "User - indice canonico della documentazione"
 type: index
 status: active
-updated: 2026-10-14
+updated: 2026-10-20
 module: User
 tags: [docs, user, index]
 qmd: "user modulo indice canonico docs identita contenuto reale directory ingressi duplicati link rotti"
@@ -11,7 +11,9 @@ qmd: "user modulo indice canonico docs identita contenuto reale directory ingres
 
 Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
 
-**Status PHPStan (verificato 2026-10-14)**: `cd laravel && ./vendor/bin/phpstan analyse Modules/User` (livello `max` da `laravel/phpstan.neon`) segnala 3 errori, tutti `argument.type` alla riga 8 di `lang/de/validation.php`, `lang/en/validation.php`, `lang/es/validation.php` (`array_replace_recursive` riceve `mixed`). In `app/` gli errori sono 0. La dicitura precedente "Level 10 Compliant" era quindi vera solo per `app/`.
+**Status PHPStan (verificato 2026-10-14, storico: superato dalla misura del 2026-10-20 qui sotto)**: `cd laravel && ./vendor/bin/phpstan analyse Modules/User` (livello `max` da `laravel/phpstan.neon`) segnala 3 errori, tutti `argument.type` alla riga 8 di `lang/de/validation.php`, `lang/en/validation.php`, `lang/es/validation.php` (`array_replace_recursive` riceve `mixed`). In `app/` gli errori sono 0. La dicitura precedente "Level 10 Compliant" era quindi vera solo per `app/`.
+**Aggiornamento PHPStan 2026-10-20**: il pull del 2026-10-20 ha riportato in `tests/` un lotto di test non allineato al codice (sull'intero `Modules` circa 9800 errori, quasi tutti nei test; nel modulo User 2812 prima delle correzioni). La lane `user-b` ha riportato a 0 errori 33 file di test (causa: factory non tipizzata, `TestCase` impoverita dal merge, test fantasma): cosa e' stato corretto e cosa neutralizzato sta in [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md). Il conteggio dell'intero modulo spetta al run di coordinamento ([Xot](../../Xot/docs/stories/phpstan-test-wave-regression.story.md)); la riga del 2026-10-14 qui sopra non va letta come stato attuale. I 14 file di test rimasti (182 errori) sono nella story [stories/phpstan-test-wave-user.story.md](./stories/phpstan-test-wave-user.story.md). Misura del 2026-10-20 ore 10:07: `cd laravel && ./vendor/bin/phpstan analyse Modules/User --memory-limit=2G --no-progress --error-format=raw` esce con codice 0 e nessun errore (compresi i tre `lang/*/validation.php` della riga storica); la soglia `typeCoverage.*` si prova solo con `analyse Modules` intero.
+**Gate config:** un solo neon — `laravel/phpstan.neon` (solo l'umano lo modifica; agenti: `analyse` senza `-c` / `--level` / `.neon` nuovi). Eventuali `Modules/*/phpstan*.neon*` = legacy, non gate. SSoT: [Xot — phpstan single neon](../../Xot/docs/wiki/memories/phpstan-single-neon-config.md). Hub Modules a zero: [phpstan-modules-zero-wave3](../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md); evidenza modulo: [phpstan-user-zero](./stories/phpstan-user-zero.story.md).
 **Versione modulo**: non verificata. Ne `module.json` ne `composer.json` dichiarano una versione; l'ultima voce di `CHANGELOG.md` e' `[1.0.0] - 2024-03-XX`. La dicitura precedente "2.5.0" non ha una fonte nel codice.
 
 ## 🧭 **Identita' e contenuto reale del modulo (verificato 2026-10-14)**
@@ -47,7 +49,7 @@ Directory senza `.md` attivi (vuote o con soli `.bak`): `logs/`, `schema/`, `tas
 
 ## ⚠️ **Ingressi duplicati**
 
-- `00-index.md`: il 2026-10-14 era una copia byte per byte di questo file (nata dalla collisione di maiuscole), non canonica.
+- `00-index.md`: stub di redirect verso questo file (ex copia byte-per-byte / collisione maiuscole).
 - `00-index-indice-documentazione-modulo-user.md`: variante con link a nomi di file senza data e front matter diverso, non canonica.
 - `INDEX.md` (6915 righe, 6277 link) e `index.md` (3419 righe, 3133 link): elenchi generati dell'albero `docs/`, senza front matter al 2026-10-14; 1778 e 887 dei loro link non si risolvono. `archive/index.md` e `_archive/INDEX.md` sono copie dello stesso elenco, con parte dei percorsi riscritta (3133 link ciascuna, 2108 e 2106 non risolti; la prima ha in testa "Contenuto assorbito da `INDEX.md`"). `wiki/integrations/_da-riconciliare/INDEX.md` e `index.md` sono elenchi di quella cartella con 442 link non risolti ciascuno. Non usarli per navigare.
 - `README.md` (2352 righe): il corpo di `readme.md` e' stato incollato dopo la riga 131 (commento "Merged from readme.md"; il suo front matter e' ora un blocco di codice) e lo stesso corpo e' ripetuto due volte (righe 155-1253 e 1257-2352, uguali al 99,8% prima delle note). Il testo e' in gran parte non verificato: stack, struttura di cartelle, Services e Quick Start erano falsi e sono smentiti con 11 note marcate "Nota 2026-10-14". Leggere le righe 1-129 e la prima copia, con quelle note.
@@ -68,9 +70,17 @@ Misura con `docs-organizer.py links --by-name --busy-minutes 0` (dry-run): 14194
 Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index.md` 2108, `_archive/INDEX.md` 2106, `INDEX.md` 1778, `index.md` 887, `wiki/integrations/_da-riconciliare/INDEX.md` e `index.md` 442 ciascuno). Senza di essi restano 6431 eventi. La causa dominante non e' un percorso sbagliato ma la duplicazione dei documenti: risolverla richiede la migration map DOC-004/DOC-006, non altri `--fix`.
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica del sistema di identità (leggere con le avvertenze di "Ingressi duplicati"; `readme.md` minuscolo e' un'altra copia da 26 KB).
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
-3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
+1. [scopo.md](./scopo.md) - Perche' User esiste (identita', permessi, organizzazione) e confini.
+2. [README.md](./README.md) - Panoramica del sistema di identità (leggere con le avvertenze di "Ingressi duplicati").
+3. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
+4. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
+5. [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md) - Ondata test: tipizzazione team/factory (scopo prima dell'errore).
+6. [stories/phpstan-wave-coord.story.md](./stories/phpstan-wave-coord.story.md) - Wave PHPStan (TSV `.cursor-scratch/phpstan-wave/User.tsv`).
+
+## 👥 **Team e contratti**
+- 📜 **[TeamContract](./contracts/teamcontract.md)** — API + nullability (`personalTeam()`, `belongsToTeam(?TeamContract)`).
+- 🧠 **[Perché TeamContract](./team-contract-usage-reasoning.md)** — DIP, STI, perché i test tipizzano.
+- 🔗 **[HasTeamsAndUserContract](./contracts/hasteamsandusercontract.md)** — Contratto composto utente+team.
 
 ## 🏗️ **Architettura & Auth**
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.
@@ -93,12 +103,19 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
+- 📋 **[Livewire → Filament planning](./bmad/livewire-to-filament-planning.md)** - Matrice MIGRATE|REUSE|KEEP|RETIRE. **W0 ✓ (2026-10-20):** legal panel `REUSE` widget — HTTP `TermsOfService`/`PrivacyPolicy` ritirati; alias `_components.json` solo `profile.delete-account`. [Inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) · [fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md) · [livewire-inventory](./bmad/livewire-inventory.md).
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
 - 🚨 **[PHPStan Syntax Blockers](./phpstan-syntax-blockers.md)** - Stato al 2026-07-08: cluster di syntax error da merge conflict e factory corrotte, segnato come risolto (file rinominato senza la data nel nome).
 - 🧭 **[IDE Helper Models Wave](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W` (file rinominato senza la data nel nome).
-- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🔬 **[Testing Rules Summary](./testing.md)** - Regole di test del modulo (Pest); non e' la stessa cosa di [testing-harness.md](./testing-harness.md).
+- 🧪 **[Harness dei test e factory](./testing-harness.md)** - `Modules\User\Tests\TestCase` (FQCN), helper `require*`/`skipUnless*`, factory tipizzate dal resolver di `XotServiceProvider`. Stub UPPERCASE: `TESTING.md`.
+- 🌊 **[PHPStan, ondata test 2026-10-20 (user-b)](./stories/phpstan-test-wave-user-b.story.md)** - Cause alla sorgente, file neutralizzati, decisioni aperte.
+- 🌊 **[PHPStan swarm wave User](./stories/phpstan-user-swarm-wave.story.md)** - Bucket `.cursor-scratch/phpstan-wave/User`: 99 errori owned → 0; Feature/UserModelTest locked fuori scope.
+- **[PHPStan, ondata test 2026-10-20 (lane user, 14 file rimasti)](./stories/phpstan-test-wave-user.story.md)** - Cause per famiglia, contratti dei permessi allineati, cosa resta (Tenant, Pest, harness).
+- **[PHPStan, ondata test 2026-10-20 (user-a, 39 file)](./stories/phpstan-test-wave-user-a.story.md)** - Produzione (`LoginWidget`, contratti, `routes/auth.php`, `lang/it/auth.php`), helper 2FA, specifiche fantasma neutralizzate, decisioni aperte.
+- **[Chiamate di debug (dddx) in produzione, 2026-10-20](./stories/debug-calls-removal-user.story.md)** - Sei pagine Appearance (il salvataggio non e' mai stato scritto: ora errore esplicito, non un dump) e `Password` (`Halt`, notifica tradotta). Sostituisce la story 12.3; metodo in [wiki/how-to/gestire-chiamate-di-debug-in-produzione.md](./wiki/how-to/gestire-chiamate-di-debug-in-produzione.md).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 

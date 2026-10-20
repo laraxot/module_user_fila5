@@ -367,7 +367,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /**
      * Get the entity's notifications.
      *
-     * @return MorphMany<Notification, Model>
+     * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
@@ -377,7 +377,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /**
      * Get the entity's unread notifications.
      *
-     * @return MorphMany<Notification, Model>
+     * @return MorphMany<Notification, $this>
      */
     public function unreadNotifications(): MorphMany
     {

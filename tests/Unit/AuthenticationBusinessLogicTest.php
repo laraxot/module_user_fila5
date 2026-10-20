@@ -328,7 +328,6 @@ describe('Authentication Business Logic', function () {
                 Assert::assertContains($scope, $oauth->scopes);
             }
 
-            Assert::assertSame(['email', 'profile'], $requiredScopes);
         });
 
         it('handles OAuth provider fallbacks', function () {

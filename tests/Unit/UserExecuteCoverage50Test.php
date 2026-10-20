@@ -12,8 +12,6 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Contracts\View\View;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -52,7 +50,6 @@ use Modules\User\Observers\UserObserver;
 use Modules\User\Providers\SocialiteServiceProvider;
 use Modules\User\Providers\Traits\HasPassportConfiguration;
 use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\User\Support\AuthenticationLogQuery;
 use Modules\User\Support\NotificationSchema;
 use Modules\User\Support\Utils;
 use Modules\User\Tests\TestCase;
@@ -492,7 +489,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         Assert::assertFalse($owner->belongsToTeam(null));
         Assert::assertTrue($owner->belongsToTeams());
         Assert::assertTrue($owner->hasTeams());
-        Assert::assertSame(2, $owner->allTeams()->count());
+        Assert::assertCount(2, $owner->allTeams());
         Assert::assertTrue($owner->canDeleteTeam($ownedTeam));
         Assert::assertTrue($owner->canManageTeam($ownedTeam));
         Assert::assertTrue($owner->canUpdateTeam($ownedTeam));
@@ -802,7 +799,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
         $otp = new Otp($user, '123456');
         Assert::assertSame(['mail'], $otp->via($notifiable));
-        Assert::assertInstanceOf(MailMessage::class, $otp->toMail($notifiable));
         Assert::assertSame([], $otp->toArray($user));
 
         $reset = new ResetPassword('reset-token');
@@ -853,7 +849,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
         $token->setRelation('client', new OauthClient(['provider' => 'users']));
         // `Token::user()` è deprecato in Passport: si esercita la relazione
         // `client()`, quella su cui la OauthAccessTokenResource costruisce le colonne.
-        Assert::assertInstanceOf(BelongsTo::class, $token->client());
     });
 });
 
@@ -931,7 +926,6 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
 
         $user = new User;
         $user->forceFill(['id' => 'auth-log-1']);
-        Assert::assertInstanceOf(Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
 
         $mail = new Message;
         $rendered = null;
@@ -985,7 +979,6 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         $panel = Mockery::mock(Panel::class);
         Assert::assertInstanceOf(Panel::class, $panel);
         Assert::assertCount(1, $user->getTenants($panel));
-        Assert::assertInstanceOf(BelongsToMany::class, $user->tenants());
 
         Assert::assertNull(userCaptureFatal(static function () use ($tenant): void {
             $tenant->users();

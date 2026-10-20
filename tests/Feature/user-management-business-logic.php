@@ -366,7 +366,6 @@ describe('User Management Business Logic', function (): void {
             ]);
             $this->fail('Expected QueryException was not thrown');
         } catch (QueryException $exception) {
-            Assert::assertInstanceOf(QueryException::class, $exception);
         }
     });
 

@@ -58,6 +58,11 @@ scritto nel tema. Contratto: [revealable password inputs](https://filamentphp.co
 Sixteen deve solo ripristinare `appearance` sotto `data-dc` (D26); non sostituire
 il campo con markup custom.
 
+OAuth FO: URL con `route('oauth.redirect', ['provider' => $driver, 'lang' => $locale])`
+perché la rotta è `{lang}/auth/login/{provider}` (`routes/socialite.php`).
+Il bottone Google del tema e `SocialLoginWidget::getRedirectUrl()` rispettano
+questo contratto; vedi [google-auth-login.md](./google-auth-login.md).
+
 La migration `create_users_table` non dichiara `$model_class`. Il modello della
 Resource e quello della migration sono la stessa classe ricavata dal nome file.
 
@@ -65,6 +70,10 @@ Resource e quello della migration sono la stessa classe ricavata dal nome file.
 
 Ogni query Filament rispetta tenant + policy del modello owner. Nessun elenco
 cross-tenant per comodita admin.
+
+## PHPStan
+
+Widget auth/OAuth e Resource User condividono `laravel/phpstan.neon`; glob `*Service.php` non confonde Livewire (`TermsOfService.php`). Catena permanente: [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), prompt [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md).
 
 ## Related
 

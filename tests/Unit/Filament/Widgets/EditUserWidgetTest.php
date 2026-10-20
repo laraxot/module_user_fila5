@@ -10,15 +10,13 @@ uses(TestCase::class);
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {
-        $widget = new EditUserWidget;
+        new EditUserWidget;
 
-        Assert::assertInstanceOf(EditUserWidget::class, $widget);
     });
 
     test('edit user widget extends xot base widget', function (): void {
-        $widget = new EditUserWidget;
+        Assert::assertSame(XotBaseSchemaWidget::class, get_parent_class(EditUserWidget::class));
 
-        Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
     });
 
     test('edit user widget has type property', function (): void {

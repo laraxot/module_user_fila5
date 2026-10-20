@@ -59,5 +59,5 @@ Wrapper Passport e risorse Filament possono ancora generare warning PHPStan su s
 
 ## Collegamenti
 
-- [quality-status-2.md](../quality-status-user-module.md)
+- [quality-status-2.md](quality-status-user-module.md)
 - [module-commit-push-after-change](wiki/rules/module-commit-push-after-change.md)

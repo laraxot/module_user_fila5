@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use function Safe\file_get_contents;
+
 uses(PHPUnit\Framework\TestCase::class);
 
 /**
@@ -11,10 +13,10 @@ uses(PHPUnit\Framework\TestCase::class);
  * 3. User: «permissions deve stare dentro il db fixcity_user».
  */
 test('permission and role models declare user connection', function (): void {
-    $permission = (string) file_get_contents(
+    $permission = file_get_contents(
         dirname(__DIR__, 3).'/app/Models/Permission.php'
     );
-    $role = (string) file_get_contents(
+    $role = file_get_contents(
         dirname(__DIR__, 3).'/app/Models/Role.php'
     );
 
@@ -23,7 +25,7 @@ test('permission and role models declare user connection', function (): void {
 });
 
 test('permissions migration targets Permission model on user connection', function (): void {
-    $source = (string) file_get_contents(
+    $source = file_get_contents(
         dirname(__DIR__, 3).'/database/migrations/2023_01_22_000007_create_permissions_table.php'
     );
 

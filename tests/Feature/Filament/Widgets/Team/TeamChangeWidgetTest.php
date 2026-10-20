@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 use Filament\Facades\Filament;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Notification as NotificationFacade;
 use Livewire\Features\SupportTesting\Testable;
@@ -82,7 +81,6 @@ describe('TeamChangeWidget mount + render', function (): void {
         $widget = $component->instance();
         Assert::assertInstanceOf(TeamChangeWidget::class, $widget);
         $rendered = $widget->render();
-        Assert::assertInstanceOf(View::class, $rendered);
         Assert::assertSame('ui::livewire.empty', $rendered->getData()['view'] ?? null);
         Assert::assertSame([], $component->get('teams'));
     });

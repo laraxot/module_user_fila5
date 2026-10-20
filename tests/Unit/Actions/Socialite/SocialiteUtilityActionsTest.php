@@ -92,7 +92,6 @@ describe('Socialite utility actions', function (): void {
             app(ValidateProviderAction::class)->execute('pest-missing-socialite-provider');
             Assert::fail('Expected ProviderNotConfigured was not thrown');
         } catch (ProviderNotConfigured $exception) {
-            Assert::assertInstanceOf(ProviderNotConfigured::class, $exception);
         }
     });
 

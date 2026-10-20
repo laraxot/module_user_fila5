@@ -1,3 +1,94 @@
+---
+title: "User — Indice canonico docs"
+status: verified
+module: User
+date: 2026-10-20
+updated: 2026-10-20
+tags: [user, auth, oauth, docs, module, index, bmad, verified, no-services]
+---
+> Indice canonico. **Status:** verified · **Date:** 2026-10-20 · **No-Services:** `app/Services/` assente; 13 Actions in `app/Actions/`.
+
+# User — Indice docs (verified 2026-10-20)
+
+Modulo User (utenti, autenticazione, 2FA, OAuth/Socialite, GDPR, profili, team, autorizzazioni, RBAC, attività, sessioni, permessi, filamenti, widget, componenti Blade per l'utente).
+
+## File chiave / Key files
+- `docs/` — `decisions/google-oauth-redirect-fix.md`, `bmad/`, `architecture/`, `auth-setup/`
+- `app/Actions/` — 13 Actions (`Socialite/`, `Auth/`, `User/`, `Team/`); No-Services applicato (`app/Services/` assente)
+- `pages/auth/login/[provider]/` — Folio redirect/callback per OAuth
+
+## Relazioni
+- **Geo** — consumer (indirizzi utente, `Address` morph)
+- **Fixcity** — consumer (ticket assegnati, profili operatore)
+- **Xot** — framework (`BaseResource`, `QueueableAction`)
+- **Cms / Sixteen** — rendering profili e auth
+- **Gdpr** — consumer (consensi, privacy)
+
+## Decisioni / Decisions
+- [`docs/decisions/google-oauth-redirect-fix.md`](docs/decisions/google-oauth-redirect-fix.md) — BMAD: redirect OAuth via Folio+Volt (`oauth.redirect` naming), NO controller/web.php
+
+## Panoramica
+- [README.md](./README.md) — identità, ownership, quick start, limiti
+- [ARCHITECTURE.md](./ARCHITECTURE.md) — architettura
+- [00-INDEX.md](./00-INDEX.md) — indice operativo (18 KB, 2026-10-20)
+- [index-conflict.md](./index-conflict.md) — gestione conflitti indici
+
+## Architettura
+- [bmad/](./bmad/) — dossier BMAD (README.md, architecture.md, actions.md, decision-log.md)
+- [decisions/](./decisions/) — decisioni BMAD (google-oauth-redirect-fix.md)
+- [architecture/](./architecture/) — architettura
+- [models/](./models/) — modelli (User, Profile, Team, etc.)
+- [database/](./database/) — schema, migrazioni
+- [auth-setup/](./auth-setup/) — setup auth, 2FA, OAuth
+- [contracts/](./contracts/) — contratti
+- [core/](./core/) — core
+- [components/](./components/) — componenti
+- [filament/](./filament/) — risorse Filament
+- [widgets/](./widgets/) — widget
+- [blade/](./blade/) — componenti Blade
+
+## PHPStan / Qualità
+- [phpstan.md](./phpstan.md) / [phpstan-analysis-user.md](./phpstan-analysis-user.md) — stato PHPStan
+- [phpstan-fixes.md](./phpstan-fixes.md) — correzioni
+- [quality/](./quality/) — report qualità, audit, standard, gate
+- [coverage.md](./coverage.md) / [coverage-full.md](./coverage-full.md) / [coverage-clean.md](./coverage-clean.md) — copertura
+- [phpstan-level-10-fixes.md](./phpstan-level10-fixes.md) — livello massimo
+- Gate 2026-10-20: `phpstan analyse Modules` → file_errors 0
+
+## BMAD / Stories
+- [bmad/](./bmad/) — dossier BMAD
+- [stories/](./stories/) — storie feature (01.User-phpstan-fix, team-change, socialite, retire-auth, retire-gdpr, etc.)
+- [concepts/](./concepts/) — concetti architettonici (`models-contracts-placement.md`, `xotbase-never-extend-filament.md`)
+
+## Struttura (sottocartelle chiave)
+- `bmad/` — dossier BMAD
+- `stories/` — storie feature
+- `concepts/` — concetti
+- `archive/` — archivi storici (mantenuti)
+- `testing/` — test (reale-vs-mock, strategia, best-practices)
+- `wiki/` — wiki (con `index.md`, `concepts/`, `rules/`, `memories/`)
+- `raw/` — raw immutabile
+- `_integration/` / `-integration/` — integrazioni
+- `admin/`, `auth-setup/`, `bugfix/`, `bugs/`, `clusters/` — sezioni tematiche
+
+---
+
+## Duplicati storici mantenuti (indice storicamente generato — mantenuto di seguito, 6924 righe)
+
+- `INDEX.md` (storico generato, ~464 KB, 2026-07-28) — mantenuto integralmente; questo file è stato aggiornato in testa con il frontmatter e la sezione canonica sopra. Il contenuto generato resta accessibile per riferimento storico.
+- `index.md` (~230 KB, 2026-08-24) — mantenuto
+- `README.md` (~648 KB) — mantenuto; entry primario
+- `00-INDEX.md` — indice operativo mantenuto come ingresso primario
+- `CHANGELOG.md`, `changelog.md` — mantenuti
+- `rules-index.md` — mantenuto
+- `index-conflict.md` — mantenuto
+
+---
+
+*Aggiornato: 2026-10-20 — conforme a `docs-organization.md`; `INDEX.md` aggiornato con frontmatter canonico e sezione di riferimento; contenuto generato storico (6924 righe) preservato; `00-INDEX.md` resta ingresso operativo; nessun file cancellato o rinominato.*
+
+---
+
 # Documentation Index
 
 ## Operational guides

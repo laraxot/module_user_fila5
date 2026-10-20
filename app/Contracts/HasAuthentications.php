@@ -18,7 +18,7 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 interface HasAuthentications extends Authenticatable
 {
     /**
-     * @return MorphMany<AuthenticationLog, Model>
+     * @return MorphMany<AuthenticationLog, covariant Model>
      */
     public function authentications(): MorphMany;
 }

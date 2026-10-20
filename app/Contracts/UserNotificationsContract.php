@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Contracts;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\User\Models\Notification;
 
 /**
@@ -19,12 +19,12 @@ use Modules\User\Models\Notification;
 interface UserNotificationsContract extends UserContract
 {
     /**
-     * @return MorphMany<Notification, Model>
+     * @return MorphMany<Notification, covariant Model>
      */
     public function notifications(): MorphMany;
 
     /**
-     * @return MorphMany<Notification, Model>
+     * @return MorphMany<Notification, covariant Model>
      */
     public function unreadNotifications(): MorphMany;
 }

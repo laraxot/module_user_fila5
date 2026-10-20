@@ -230,4 +230,4 @@ nuovo della view compilata) così il fragment torna al vestito corretto.
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
-- [Routing Best Practices](../routing-best-practices-architettura-volt-folio-filament.md) 
+- [Routing Best Practices](routing-best-practices-architettura-volt-folio-filament.md) 

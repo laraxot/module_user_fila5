@@ -50,14 +50,15 @@ class PermissionTest extends TestCase
     {
         $permission = new Permission();
 
-        static::assertSame('user', $permission->connection);
+        static::assertSame('user', $permission->getConnectionName());
     }
 
     public function test_permission_has_key_type_attribute(): void
     {
         $permission = new Permission();
 
-        static::assertSame('string', $permission->keyType);
+        // permissions.id e' bigIncrements (migration 2026_09_01_150112): chiave intera.
+        static::assertSame('int', $permission->getKeyType());
     }
 
     public function test_permission_has_fillable_attributes(): void
@@ -65,11 +66,10 @@ class PermissionTest extends TestCase
         $permission = new Permission();
 
         $expectedFillable = [
-            'id',
             'name',
             'guard_name',
-            'created_at',
-            'updated_at',
+            'display_name',
+            'description',
             'created_by',
             'updated_by',
         ];
@@ -81,13 +81,9 @@ class PermissionTest extends TestCase
     {
         $permission = new Permission();
 
+        // Il model non dichiara casts propri: resta solo quello della chiave intera.
         $expectedCasts = [
-            'id' => 'string',
-            'uuid' => 'string',
-            'name' => 'string',
-            'guard_name' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
+            'id' => 'int',
         ];
 
         static::assertSame($expectedCasts, $permission->getCasts());
@@ -236,15 +232,13 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_factory_method(): void
     {
-        $permission = new Permission();
-
-        static::assertTrue(method_exists($permission, 'newFactory'));
+        static::assertNotNull(Permission::factory());
     }
 
     public function test_permission_has_get_table_method(): void
     {
         $permission = new Permission();
 
-        static::assertTrue(method_exists($permission, 'getTable'));
+        static::assertSame('permissions', $permission->getTable());
     }
 }

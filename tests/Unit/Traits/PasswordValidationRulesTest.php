@@ -15,10 +15,7 @@ uses(TestCase::class);
 describe('Password Validation Rules', function (): void {
     test('password validation rules trait can be used', function (): void {
         Assert::assertTrue(trait_exists(PasswordValidationRules::class));
-        Assert::assertInstanceOf(
-            PasswordValidationRulesFixture::class,
-            new PasswordValidationRulesFixture,
-        );
+        Assert::assertSame(PasswordValidationRulesFixture::class, get_class(new PasswordValidationRulesFixture));
     });
 
     test('password validation rules trait provides password rules method', function (): void {

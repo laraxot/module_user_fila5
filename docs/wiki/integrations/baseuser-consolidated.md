@@ -598,7 +598,7 @@ test('hasRole works with guard parameter', function () {
 ## Collegamenti
 
 ### Documentazione Locale
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
 
@@ -896,7 +896,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [Refactoring Plan](../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
 
@@ -1267,7 +1267,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
 
@@ -1689,7 +1689,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
 
@@ -2059,7 +2059,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
 
 ### Modulo User
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
 
@@ -2968,7 +2968,7 @@ test('hasRole works with guard parameter', function () {
 ## Collegamenti
 
 ### Documentazione Locale
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
 

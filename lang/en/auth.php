@@ -232,4 +232,8 @@ return [
         'back_to_login' => 'Back to sign in',
         'submit' => 'Send instructions',
     ],
+    // Esiti del login social (RedirectToLoginAction): senza queste chiavi /en/ mostra l'italiano.
+    'login-failed' => 'Sign-in failed, please try again.',
+    'user-not-allowed' => 'Your email address is not authorised.',
+    'registration-not-enabled' => 'New user registration is not available.',
 ];

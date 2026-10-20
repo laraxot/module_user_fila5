@@ -21,7 +21,6 @@ describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
         $exception = ProviderNotConfigured::make('github');
 
-        Assert::assertInstanceOf(ProviderNotConfigured::class, $exception);
         Assert::assertStringContainsString('Provider "github" is not configured', $exception->getMessage());
     });
 

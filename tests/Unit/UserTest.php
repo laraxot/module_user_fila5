@@ -22,14 +22,12 @@ beforeEach(function (): void {
 });
 
 test('user can be created', function (): void {
-    expect($this->user)->toBeInstanceOf(User::class);
-    expect($this->user->email)->toBeString()->not->toBeEmpty();
+    expect($this->user->email)->not->toBeEmpty();
     expect($this->user->type)->toBe(UserType::MasterAdmin);
 });
 
 test('user has correct type casting', function (): void {
-    expect($this->user->type)->toBeInstanceOf(UserType::class);
-    expect($this->user->type->value)->toBe('master_admin');
+    expect($this->user->type)->toBe(UserType::MasterAdmin);
 });
 
 test('user password is hashed', function (): void {
@@ -40,8 +38,9 @@ test('user password is hashed', function (): void {
 test('user can change password', function (): void {
     $this->user->update(['password' => Hash::make('newpassword123')]);
 
-    expect(Hash::check('newpassword123', $this->user->fresh()->password))->toBeTrue();
-    expect(Hash::check('password123', $this->user->fresh()->password))->toBeFalse();
+    $user = User::findOrFail($this->user->id);
+    expect(Hash::check('newpassword123', $user->password))->toBeTrue();
+    expect(Hash::check('password123', $user->password))->toBeFalse();
 });
 
 test('user can be updated', function (): void {
@@ -80,9 +79,7 @@ test('user has hidden attributes', function (): void {
 });
 
 test('user can be found by email', function (): void {
-    $foundUser = User::where('email', 'admin@example.com')->first();
-
-    expect($foundUser)->toBeInstanceOf(User::class);
+    $foundUser = User::where('email', $this->user->email)->firstOrFail();
     expect($foundUser->id)->toBe($this->user->id);
 });
 
@@ -90,7 +87,7 @@ test('user can be found by type', function (): void {
     $admins = User::where('type', UserType::MasterAdmin)->get();
 
     expect($admins)->toHaveCount(1);
-    expect($admins->first()->id)->toBe($this->user->id);
+    expect($admins->firstOrFail()->id)->toBe($this->user->id);
 });
 
 test('user can be created with different types', function (): void {

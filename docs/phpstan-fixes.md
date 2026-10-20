@@ -21,6 +21,16 @@ status: draft
 
 # Correzioni PHPStan - Modulo User
 
+## 2026-10-20 — wave r3 · gate modulo
+
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User
+# [OK] No errors
+```
+
+- `FakeAgent::version()` normalizza a `string|false` (niente `bool|string`).
+- OAuth feature: `Safe\parse_url`, header `Location` con `Assert::assertIsString` prima del parse della query.
+
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
 ## Errori Risolti - Gennaio 2025

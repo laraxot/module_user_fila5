@@ -17,6 +17,33 @@ tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
 ---
 
+## [2026-10-20] Google OAuth FO = route con `lang` + binding controller corretto
+
+- **Perché:** da `/it/auth/login` il cittadino deve andare a
+  `/it/auth/login/google` (stesso contesto lingua; callback
+  `GOOGLE_REDIRECT_URI` con `/it/`).
+- **Cosa:** `oauth.redirect` = `{lang}/auth/login/{provider}`. Bottone Sixteen e
+  widget usano `route(..., ['lang' => $locale])`. I fallback Folio sono stati
+  rimossi (DCP-269, vedi sotto). I controller dichiarano
+  `string $lang, string $provider` e tipizzano `Illuminate\Http\Request`
+  (non la Facade): altrimenti `$provider` riceve `it`.
+- **Non fare:** `route('oauth.redirect')` senza `lang`; OAuth in new tab;
+  stub Folio che abortisce 404 sul callback localizzato; Facade `Request`
+  negli `__invoke` OAuth.
+- **Piano:** [oauth-login-locale-fix](../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md);
+  [google-auth-login.md](./google-auth-login.md).
+
+## [2026-10-20] Google: giro completo nella lingua del cittadino (DCP-269)
+
+- **Perché:** `GOOGLE_REDIRECT_URI` è unico (`/it/…/callback`): chi parte da `/en/` rientrava in italiano; un provider o una lingua inventati davano 500
+  o una lingua fantasma; un `abort(404)` nei fallback Folio rompeva `route('login')` in tutta l'app.
+- **Cosa:** vincoli su `{lang}` e `{provider}` in `routes/socialite.php`; lingua d'ingresso in sessione (`SESSION_LANG_KEY`) ripristinata dal callback;
+  `RedirectToLoginAction` rimanda a `/{lang}/auth/login`; chiavi `login-failed`/`user-not-allowed`/`registration-not-enabled` anche in en/es;
+  rimossi i 4 fallback Folio.
+- **Non fare:** `abort()`/`redirect` al livello superiore di una vista Folio; ridefinire `GOOGLE_REDIRECT_URI` per lingua senza registrare ogni URI in Google Cloud Console.
+- **Aperto fuori dal codice:** credenziali Google reali in produzione (oggi `client_id` segnaposto). Story:
+  [dcp-269](./stories/dcp-269-login-google-localizzato-e-rientro-nella-lingua.story.md).
+
 ## [2026-10-20] Password login rivelabile = Filament `revealable()`
 
 - **Perché:** su `/it/auth/login` il cittadino deve poter mostrare/nascondere la
@@ -343,3 +370,14 @@ scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
   fail-safe `DB_DATABASE_USER`; `config:clear` in deploy.
 - **Artefatto:** [permissions-connection-ownership.md](permissions-connection-ownership.md)
 
+## [2026-10-20] PHPStan swarm — ordine permanente e helper test
+
+- **Decisione:** ogni turn non banale con qualita' in scope esegue la catena PHPStan → fix sorgente → docs/prompt senza conferma; helper Pest solo su `Modules/User/tests/TestCase.php` (FQCN nei test), mai `scanFiles` sul neon.
+- **Perche:** User e' hub auth/OAuth/Livewire→Widget; errori qui moltiplicano falsi verdi su Lang/Cms se si zittisce. Vittoria = `totals` 0 + `[OK] No errors` sul run del coordinatore.
+- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
+
+## [2026-10-20] Gate PHPStan Modules — rieseguito OK (audit docs)
+
+- **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User Modules/Comment Modules/Notify Modules/Activity` → exit 0, `[OK] No errors` (config unica `laravel/phpstan.neon`).
+- **Docs:** `md-filenames.py check` su `docs/` → 0 violazioni date/suffissi; legacy maiuscole in radice segnalate, nessuna rinomina (tool `name` non propone alias sicuri).
+- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-INDEX.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).

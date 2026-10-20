@@ -127,4 +127,8 @@ return [
         'back_to_login' => 'Volver al inicio de sesión',
         'submit' => 'Enviar instrucciones',
     ],
+    // Esiti del login social (RedirectToLoginAction): senza queste chiavi /es/ mostra l'italiano.
+    'login-failed' => 'No se pudo iniciar sesión, inténtalo de nuevo.',
+    'user-not-allowed' => 'Tu correo electrónico no está autorizado.',
+    'registration-not-enabled' => 'No es posible registrar un nuevo usuario.',
 ];

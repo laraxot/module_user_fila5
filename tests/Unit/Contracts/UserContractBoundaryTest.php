@@ -2,26 +2,28 @@
 
 declare(strict_types=1);
 
+use Symfony\Component\Finder\Finder;
+
+use function Safe\preg_match;
+
 test('user boundaries depend on UserContract instead of BaseUser', function (): void {
     $root = dirname(__DIR__, 5);
-    $paths = [
-        $root.'/Modules/User/app',
-        $root.'/Themes/Sixteen/app',
-        $root.'/Themes/Sixteen/resources/views',
-    ];
+
+    // Modulo User + ogni tema presente nel progetto (app e viste).
+    $paths = [$root.'/Modules/User/app'];
+    foreach (Finder::create()->directories()->in($root.'/Themes')->depth(0) as $theme) {
+        foreach (['app', 'resources/views'] as $subPath) {
+            if (is_dir($theme->getPathname().'/'.$subPath)) {
+                $paths[] = $theme->getPathname().'/'.$subPath;
+            }
+        }
+    }
 
     $violations = [];
-    foreach ($paths as $path) {
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path));
-        foreach ($iterator as $file) {
-            if (! $file->isFile() || ! in_array($file->getExtension(), ['php', 'blade.php'], true)) {
-                continue;
-            }
-
-            $contents = file_get_contents($file->getPathname());
-            if (is_string($contents) && preg_match('/instanceof\s+BaseUser\b/', $contents) === 1) {
-                $violations[] = $file->getPathname();
-            }
+    // `*.php` copre anche i `*.blade.php`: l'estensione di un blade e' comunque `php`.
+    foreach (Finder::create()->files()->in($paths)->name('*.php') as $file) {
+        if (preg_match('/instanceof\s+BaseUser\b/', $file->getContents()) === 1) {
+            $violations[] = $file->getPathname();
         }
     }
 

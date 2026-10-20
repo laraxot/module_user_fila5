@@ -62,6 +62,11 @@ esiste `XotBaseColumnGroup` in `Modules/Xot/app/Filament/Tables/Columns/XotBaseC
 - (1) Rimuovere i `dddx()` (dead code) e sostituire con `Log` / gestione errore reale dove serve. **Scelto.**
 - (2) Commentare i blocchi: cortocircuita la UI; un `dddx` resta una regressione latente.
 
+Nota 2026-10-20: l'opzione (1) e' stata applicata con una correzione: nelle pagine Appearance i `dddx` non erano "dead code" ma il
+posto del salvataggio mai scritto, quindi non sono stati solo tolti (sarebbe rimasto un "Salva" che non salva) ma sostituiti da
+`LogicException`. `Password.php` ha ora `catch (Halt)` silenzioso e notifica tradotta. Vedi
+[debug-calls-removal-user](../stories/debug-calls-removal-user.story.md).
+
 ### G4 — Duplicazione OAuth: schemi/resource ×3 e `unique()` su tabella sbagliata
 
 Evidenze:
