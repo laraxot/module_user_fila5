@@ -322,13 +322,10 @@ return [
         'help_password' => 'Das Passwort muss mindestens 12 Zeichen lang sein und einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten.',
         'help_support' => 'Bei Fragen wenden Sie sich an die zuständige Stelle.',
     ],
-<<<<<<< .merge_file_GnuLEE
-=======
     'forgot-password' => [
         'title' => 'Passwort vergessen?',
         'subtitle' => 'Geben Sie Ihre E-Mail-Adresse ein, um Anweisungen zu erhalten',
         'back_to_login' => 'Zurück zur Anmeldung',
         'submit' => 'Anweisungen senden',
     ],
->>>>>>> .merge_file_1UYCGq
 ];

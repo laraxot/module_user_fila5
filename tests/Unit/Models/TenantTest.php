@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-<<<<<<< .merge_file_wMFO0r
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Modules\User\Database\Factories\TenantFactory;
-=======
 use Illuminate\Foundation\Testing\RefreshDatabase;
->>>>>>> .merge_file_pD5eC4
 use Modules\User\Models\Tenant;
 use Tests\TestCase;
 
@@ -199,41 +195,21 @@ class TenantTest extends TestCase
     {
         $tenant = Tenant::factory()->create();
 
-<<<<<<< .merge_file_wMFO0r
-    test('tenant has users relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-
-        Assert::assertInstanceOf(BelongsToMany::class, $tenant->users());
-    });
-
-    test('tenant has members relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-
-        Assert::assertInstanceOf(BelongsToMany::class, $tenant->members());
-    });
-
-    test('tenant has media relationship', function (): void {
-        $tenant = TenantFactory::new()->createOne();
-
-        Assert::assertInstanceOf(MorphMany::class, $tenant->media());
-    });
-=======
-        static::assertTrue(method_exists($tenant, 'users'));
+        static::assertInstanceOf(BelongsToMany::class, $tenant->users());
     }
 
     public function test_tenant_has_members_relationship(): void
     {
         $tenant = Tenant::factory()->create();
 
-        static::assertTrue(method_exists($tenant, 'members'));
+        static::assertInstanceOf(BelongsToMany::class, $tenant->members());
     }
->>>>>>> .merge_file_pD5eC4
 
     public function test_tenant_has_media_relationship(): void
     {
         $tenant = Tenant::factory()->create();
 
-        static::assertTrue(method_exists($tenant, 'media'));
+        static::assertInstanceOf(MorphMany::class, $tenant->media());
     }
 
     public function test_tenant_has_factory(): void

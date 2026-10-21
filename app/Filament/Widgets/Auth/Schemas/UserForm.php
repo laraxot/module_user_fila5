@@ -80,10 +80,7 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('current-password')
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
             'remember' => Checkbox::make('remember')
-<<<<<<< .merge_file_u4wLqf
-=======
                 ->helperText(null)
->>>>>>> .merge_file_E3nitX
                 ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
         ];
     }

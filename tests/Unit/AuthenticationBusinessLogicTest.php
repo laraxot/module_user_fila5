@@ -171,14 +171,9 @@ describe('Authentication Business Logic', function () {
             Assert::assertTrue($team->is_active);
         });
 
-<<<<<<< .merge_file_JSdLTM
-        it('distinguishes personal vs organizational teams', function (): void {
-            $team = authBizTeamData();
-            $user = authBizUserData();
-=======
         it('distinguishes personal vs organizational teams', function () {
             $team = (object) $this->teamData;
->>>>>>> .merge_file_j3KrKl
+            $user = (object) $this->userData;
 
             // Business Logic: Personal teams vs organizational teams
             Assert::assertFalse($team->personal_team);
@@ -191,14 +186,9 @@ describe('Authentication Business Logic', function () {
                 'user_id' => 1001,
             ];
 
-<<<<<<< .merge_file_JSdLTM
-            Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
-            Assert::assertStringContainsString('Personal', $personalTeam['name']);
-            Assert::assertSame($user['id'], $personalTeam['user_id']);
-=======
-            Assert::assertTrue($personalTeam->personal_team);
+            Assert::assertNotSame($team->personal_team, $personalTeam->personal_team);
             Assert::assertStringContainsString('Personal', $personalTeam->name);
->>>>>>> .merge_file_j3KrKl
+            Assert::assertSame($user->id, $personalTeam->user_id);
         });
 
         it('validates team settings and preferences', function () {
@@ -441,19 +431,12 @@ describe('Authentication Business Logic', function () {
                 'is_suspicious' => false,
             ];
 
-<<<<<<< .merge_file_JSdLTM
-            Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);
-            Assert::assertStringContainsString('Mozilla', $attempt['user_agent']);
-            Assert::assertSame('Italy', $attempt['country']);
-            Assert::assertFalse($attempt['is_suspicious']);
-=======
             $attempt = (object) $loginAttempt;
 
             // Business Logic: Basic IP security validation
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt->ip_address);
             Assert::assertFalse($attempt->is_suspicious);
             Assert::assertSame('Italy', $attempt->country);
->>>>>>> .merge_file_j3KrKl
         });
     });
 });

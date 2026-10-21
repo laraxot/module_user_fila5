@@ -64,10 +64,7 @@ describe('User Command Integration', function (): void {
 
         $reflection = new \ReflectionClass($command);
 
-<<<<<<< .merge_file_cJ5q8I
         Assert::assertInstanceOf(InputDefinition::class, $command->getDefinition());
-=======
->>>>>>> .merge_file_ffDwtx
         Assert::assertTrue($reflection->hasMethod('info'));
         Assert::assertTrue($reflection->hasMethod('error'));
     });

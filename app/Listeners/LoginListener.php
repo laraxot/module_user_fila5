@@ -52,14 +52,6 @@ class LoginListener
                 $updates['logout_at'] = null;
             }
 
-<<<<<<< .merge_file_dwG830
-            $user->authentications()->create([
-                'ip_address' => $ip,
-                'user_agent' => $userAgent,
-                'login_at' => now(),
-                'login_successful' => true,
-                'location' => $location,
-=======
             if ($updates !== []) {
                 $pivot->update($updates);
             }
@@ -67,7 +59,6 @@ class LoginListener
             Log::warning('device tracking tables missing on user connection; login continues', [
                 'connection' => 'user',
                 'user_id' => $user->getAuthIdentifier(),
->>>>>>> .merge_file_3EDRre
             ]);
         }
 

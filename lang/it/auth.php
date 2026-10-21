@@ -1180,8 +1180,6 @@ return [
         'help_password' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
         'help_support' => 'Per assistenza contatta l\'ufficio competente.',
     ],
-<<<<<<< .merge_file_HgMTBB
-=======
     'forgot-password' => [
         'title' => 'Password dimenticata?',
         'subtitle' => 'Inserisci la tua email per ricevere le istruzioni',
@@ -1190,8 +1188,9 @@ return [
     ],
     'login_widget' => [
         'providers' => [
-            'google' => ['label' => 'Accedi con Google'],
+            'google' => [
+                'label' => 'Accedi con Google',
+            ],
         ],
     ],
->>>>>>> .merge_file_0yTU6N
 ];

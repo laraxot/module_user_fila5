@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< .merge_file_34mdty
-=======
         'email' => [
             'label' => 'Indirizzo email',
             'placeholder' => 'nome@esempio.it',
@@ -20,7 +18,6 @@ return [
             'tooltip' => 'Password dell’account',
             'description' => 'Campo password per l’autenticazione',
         ],
->>>>>>> .merge_file_JhKuHo
         'remember' => ['label' => 'Ricordami'],
     ],
 ];

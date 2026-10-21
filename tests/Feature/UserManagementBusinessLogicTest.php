@@ -182,21 +182,14 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($user->can('special.permission'));
     }
 
-<<<<<<< .merge_file_kL3zpb
-    test('can check user has any role', function (): void {
-        $user = UserFactory::new()->createOne();
-        $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
-        // 'nurse' esiste ma NON e' assegnato: serve a provare che hasAnyRole guarda le assegnazioni, non l'esistenza del ruolo
-        RoleFactory::new()->createOne(['name' => 'nurse']);
-=======
     /** @test */
     public function it_can_check_user_has_any_role(): void
     {
         // Arrange
         $user = User::factory()->create();
         $role1 = Role::factory()->create(['name' => 'doctor']);
+        // 'nurse' esiste ma NON e' assegnato: serve a provare che hasAnyRole guarda le assegnazioni, non l'esistenza del ruolo
         Role::factory()->create(['name' => 'nurse']);
->>>>>>> .merge_file_174rMP
 
         $user->assignRole($role1);
 

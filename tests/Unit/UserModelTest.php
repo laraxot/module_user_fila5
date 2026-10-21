@@ -4,19 +4,14 @@ declare(strict_types=1);
 
 use Tests\TestCase;
 
-<<<<<<< .merge_file_KOLO1h
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Hash;
-=======
-uses(TestCase::class);
-
-use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
->>>>>>> .merge_file_F0OUWz
+use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+
+uses(TestCase::class);
 
 // In-memory helper: build a User without touching DB
 /** @param array<string, mixed> $attributes */
@@ -146,13 +141,6 @@ describe('User Model', function () {
         });
     });
 
-<<<<<<< .merge_file_KOLO1h
-    test('hashes password when set', function (): void {
-        $user = stubUser(['password' => 'plain-password']);
-
-        Assert::assertNotSame('plain-password', $user->password);
-        Assert::assertTrue(Hash::check('plain-password', $user->password));
-=======
     describe('Accessors and Mutators', function () {
         it('has full_name accessor', function () {
             $user = stubUser([
@@ -182,7 +170,6 @@ describe('User Model', function () {
                 ->and(password_verify('plain-password', $user->password))
                 ->toBeTrue();
         });
->>>>>>> .merge_file_F0OUWz
     });
 
     describe('Authentication Features', function () {
