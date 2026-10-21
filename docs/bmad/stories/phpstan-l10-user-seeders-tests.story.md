@@ -1,6 +1,6 @@
 ---
 title: "PHPStan L10 User Module: seeders and tests"
-status: in_progress
+status: done
 epic: code-quality
 parent_story: "phpstan-l10-user-phase2.story.md"
 created: 2026-10-21T00:00Z
@@ -14,7 +14,7 @@ acceptance_criteria:
 type: story
 updated: 2026-10-21
 tags: [docs, user, bmad, phpstan]
-qmd: "phpstan l10 user seeders tests"
+qmd: "phpstan l10 user seeders tests zero errori"
 ---
 
 # PHPStan L10 User Module: seeders and tests
