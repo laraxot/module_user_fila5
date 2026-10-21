@@ -27,7 +27,6 @@ class FailedLoginListener
      */
     public function handle(Failed $event): void
     {
-<<<<<<< .merge_file_ntjKY0
         // Identità = UserContract; capability log = HasAuthentications (non l'astratta interna).
         if (! $event->user instanceof UserContract || ! $event->user instanceof HasAuthentications) {
             return;
