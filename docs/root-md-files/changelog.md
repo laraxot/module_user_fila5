@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_X6A3XX
+=======
+---
+title: "Changelog"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, root-md-files]
+qmd: "changelog user"
+---
+>>>>>>> .merge_file_Oz5iAi
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_cLYrZe
+=======
+---
+title: "PHPStan Analysis - User Module (Jan 2026)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpstan analysis - user module (jan 2026) user"
+---
+>>>>>>> .merge_file_Kh6M4Q
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status
@@ -36,13 +47,22 @@ module: theme
 topic: phpstan-fix-plan-
 canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
 related:
+<<<<<<< .merge_file_cLYrZe
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_Kh6M4Q
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_cLYrZe
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_Kh6M4Q
   - "./actions-path-convention.md"
 ---
 

@@ -17,6 +17,11 @@ related:
   - "./module-commit-push-after-change.md"
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
+<<<<<<< .merge_file_RpsDe8
+=======
+status: draft
+updated: 2026-10-13
+>>>>>>> .merge_file_13qSOt
 ---
 
 # Vietato `create_notifications_table` in User
@@ -44,7 +49,11 @@ return new class extends Migration { ... };
 
 `laravel/Modules/Notify/database/migrations/2026_06_10_134000_create_notifications_table.php`
 
+<<<<<<< .merge_file_RpsDe8
 Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
+=======
+Contratto: [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
+>>>>>>> .merge_file_13qSOt
 
 ## Se manca tabella su `fixcity_user`
 
@@ -54,4 +63,8 @@ Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/
 ## Collegamenti
 
 - [notifications-runtime-model](../concepts/notifications-runtime-model.md)
+<<<<<<< .merge_file_RpsDe8
 - [main-module-profiles-ownership](../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+=======
+- [main-module-profiles-ownership](../../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+>>>>>>> .merge_file_13qSOt

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_IufGWG
+=======
+---
+title: "Errore nel Logout con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "errore nel logout con volt e folio user"
+---
+>>>>>>> .merge_file_tjPCkz
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -114,9 +125,15 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
+<<<<<<< .merge_file_IufGWG
 - [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+=======
+- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md) 
+>>>>>>> .merge_file_tjPCkz
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore
@@ -168,13 +185,22 @@ module: theme
 topic: volt-folio-logout-error
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
+<<<<<<< .merge_file_IufGWG
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_tjPCkz
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_IufGWG
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_tjPCkz
   - "./actions-path-convention.md"
 ---
 

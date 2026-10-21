@@ -9,6 +9,10 @@ related:
   - ./decision-log.md
   - ./tech-spec-superadmin-widget.md
   - ./ux-design.md
+type: note
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "phpstan user   chiusura user"
 ---
 
 # PHPStan User — chiusura

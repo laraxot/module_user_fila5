@@ -11,6 +11,15 @@ related:
   - "./log.md"
   - "./overview.md"
   - "./socialite-architecture.md"
+<<<<<<< .merge_file_xRETAT
+=======
+title: "agents"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "agents user"
+>>>>>>> .merge_file_LpnEo7
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

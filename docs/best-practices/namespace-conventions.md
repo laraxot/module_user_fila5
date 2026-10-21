@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_FY0jos
+=======
+status: draft
+>>>>>>> .merge_file_RmKJ3O
 ---
 
 # Convenzioni di Namespace nel Modulo User

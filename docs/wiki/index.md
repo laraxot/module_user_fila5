@@ -26,9 +26,9 @@ Indice operativo del wiki User.
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
-- [architecture-module-directory-structure](../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
+- [architecture-module-directory-structure](../../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
 
 ## Struttura canonica (sacred)
@@ -47,9 +47,9 @@ Indice operativo del wiki User.
 
 ## Regole collegate
 
-- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
-- [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
+- [forbidden-folders-rule](../../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
+- [llm-wiki-standard](../../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
 - [laravel-socialite](../../../../docs/wiki/concepts/laravel-socialite.md): OAuth social authentication.
 - [laravel-permission](../../../../docs/wiki/concepts/laravel-permission.md): RBAC Spatie Laravel Permission.
 
@@ -71,9 +71,10 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
+| [auth-registration-verification-lifecycle](./concepts/auth-registration-verification-lifecycle.md) | Concept | Identità, verifica email e confine con Gdpr/Sixteen | 2026-10-14 |
 | [socialite-development](./concepts/socialite-development.md) | Concept | Socialite multi-provider | 2026-04-21 |
 | [filament-widget-resource-form-delegation](./concepts/filament-widget-resource-form-delegation.md) | Concept | RegisterWidget → UserForm (DRY) | 2026-06-04 |
-| [filament-widget-no-validate-form](./concepts/filament-widget-no-validate-form.md) | Concept | Submit: getState(), no validateForm | 2026-06-04 |
+| [filament-widget-no-validate-form](../llm-wiki/concepts/filament-widget-no-validate-form.md) | Concept | Submit: getState(), no validateForm | 2026-06-04 |
 | [filament-widget-linear-crud-model-create](./concepts/filament-widget-linear-crud-model-create.md) | Concept | `getUserClass()::create($data)`, no Action | 2026-06-04 |
 | [filament-langserviceprovider-governance](./concepts/filament-langserviceprovider-governance.md) | Concept | LangServiceProvider | 2026-04-21 |
 | [login-page-design-comuni](./concepts/login-page-design-comuni.md) | Concept | Login Design Comuni | 2026-04-21 |
@@ -115,8 +116,8 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 ## False Friends
 
-- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
-- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
+- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
+- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
 
 ## Troubleshooting
 

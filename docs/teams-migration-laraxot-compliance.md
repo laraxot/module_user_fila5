@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_t0RBJa
+=======
+---
+title: "Teams Migration - Laraxot Compliance Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "teams migration - laraxot compliance fix user"
+---
+>>>>>>> .merge_file_tEqOj0
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data

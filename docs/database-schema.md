@@ -3,7 +3,13 @@ title: "User Module Database Schema"
 type: reference
 tags: [user, database, schema]
 created: 2026-07-28
+<<<<<<< .merge_file_2bwIHe
 updated: 2026-07-28
+=======
+updated: 2026-10-19
+status: draft
+qmd: "user module   database schema user"
+>>>>>>> .merge_file_bMMNF0
 ---
 
 # User Module — Database Schema
@@ -11,6 +17,7 @@ updated: 2026-07-28
 ## Core Tables
 
 ### users
+<<<<<<< .merge_file_2bwIHe
 ```sql
 id UUID PRIMARY KEY
 email VARCHAR(255) UNIQUE NOT NULL
@@ -19,6 +26,26 @@ name VARCHAR(255)
 email_verified_at TIMESTAMP NULL
 created_at, updated_at TIMESTAMP
 deleted_at TIMESTAMP NULL (soft delete)
+=======
+
+La tabella appartiene alla connessione `user` (`fixcity_user`). Lo schema è
+`UserData::createColumns()` / `updateColumns()`, usato dalla migration
+`Modules/Fixcity/database/migrations/2026_01_01_000001_create_users_table.php`.
+
+`type` è il discriminante Parental: la registrazione del cittadino scrive
+`customer_user`. Senza quella colonna l'insert fallisce.
+
+```sql
+id UUID PRIMARY KEY
+email VARCHAR(255) UNIQUE NOT NULL
+password VARCHAR(255) NULL
+name, first_name, last_name VARCHAR(255) NULL
+lang VARCHAR(255) NULL
+type VARCHAR(255) NULL
+is_active BOOLEAN NOT NULL DEFAULT 1
+email_verified_at TIMESTAMP NULL
+created_at, updated_at, deleted_at TIMESTAMP NULL
+>>>>>>> .merge_file_bMMNF0
 ```
 
 ### teams

@@ -7,6 +7,10 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "User Models Contracts placement CanComment app Contracts deprecated"
 related:
+<<<<<<< .merge_file_oxX9ah
+=======
+status: draft
+>>>>>>> .merge_file_s815Hk
 ---
 
 # Models/Contracts (User)

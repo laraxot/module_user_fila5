@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_4Vpr3g
+=======
+---
+title: "HasTeams Trait Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "hasteams trait analysis user"
+---
+>>>>>>> .merge_file_Pam2tY
 # HasTeams Trait Analysis
 
 ## Overview

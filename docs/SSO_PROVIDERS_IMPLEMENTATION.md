@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_hIsShz
+=======
+---
+title: "User Module - SSO Providers Implementation"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - sso providers implementation user"
+---
+>>>>>>> .merge_file_cgoZ4B
 # User Module - SSO Providers Implementation
 
 ## Overview

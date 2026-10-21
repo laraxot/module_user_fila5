@@ -10,6 +10,10 @@ qmd: "duplicate method bodies User identical hash DRY"
 related:
   - ../../../../../../docs/wiki/duplicate-method-bodies-census.md
   - ./method-name-homonyms.md
+<<<<<<< .merge_file_R0URJ9
+=======
+status: draft
+>>>>>>> .merge_file_kQ7CSy
 ---
 
 # Corpi metodo duplicati — User

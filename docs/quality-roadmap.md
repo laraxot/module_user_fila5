@@ -10,6 +10,10 @@ related:
   - ./quality-status.md
   - ./testing.md
   - ../../Xot/docs/wiki/concepts/progetto-perfezione-criteri.md
+<<<<<<< .merge_file_JAiTrG
+=======
+status: draft
+>>>>>>> .merge_file_Ap6GsE
 ---
 
 # Quality roadmap — User

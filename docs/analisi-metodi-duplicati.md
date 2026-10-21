@@ -8,14 +8,25 @@ qmd: "analisi-metodi-duplicati analisi metodi duplicati - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_KP0rAJ
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_0bEc0p
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_KP0rAJ
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+>>>>>>> .merge_file_0bEc0p
 ---
 
 # Analisi Metodi Duplicati - Modulo User

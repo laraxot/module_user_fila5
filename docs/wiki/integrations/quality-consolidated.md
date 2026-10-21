@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_MJGn3P
+=======
+status: draft
+qmd: "quality   consolidated documentation user"
+>>>>>>> .merge_file_iOaUBF
 ---
 
 # quality — Consolidated Documentation
@@ -28,6 +33,7 @@ Consolidated from **10** individual files.
 
 ## quality-11
 
+<<<<<<< .merge_file_MJGn3P
 *Consolidated from: `quality-11.md`*
 
 module: theme
@@ -35,16 +41,34 @@ topic: quality-11
 canonical: ../../../Themes/docs/shared-components/quality-1.md
 related:
   - "./00-index-1.md"
+=======
+*Consolidated from: `quality-documentation-themes.md`*
+
+module: theme
+topic: quality-11
+canonical: ../../../Themes/docs/shared-components/quality-user-module-status-november.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-1.md
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-user-module-status-november.md
+>>>>>>> .merge_file_iOaUBF
 
 ---
 
@@ -56,13 +80,22 @@ module: theme
 topic: quality-improvements-summary
 canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -83,13 +116,22 @@ qmd: "quality-improvements quality improvements summary - phpstan, phpmd, php in
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -166,7 +208,11 @@ related:
 
 ## quality-status-11
 
+<<<<<<< .merge_file_MJGn3P
 *Consolidated from: `quality-status-11.md`*
+=======
+*Consolidated from: `quality-status.md`*
+>>>>>>> .merge_file_iOaUBF
 
 title: "User Module - Quality Status (November 2025)"
 type: concept
@@ -177,13 +223,22 @@ qmd: "quality-status-11 user module - quality status (november 2025)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -520,19 +575,34 @@ After fixes:
 
 module: theme
 topic: quality-status-nov
+<<<<<<< .merge_file_MJGn3P
 canonical: ../../../Themes/docs/shared-components/quality-status-11.md
 related:
   - "./00-index-1.md"
+=======
+canonical: ../../../Themes/docs/shared-components/quality-status.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status-11.md
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
+>>>>>>> .merge_file_iOaUBF
 
 ---
 
@@ -544,13 +614,22 @@ module: theme
 topic: quality-status
 canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -566,13 +645,22 @@ module: theme
 topic: quality-tooling
 canonical: ../../../Themes/docs/shared-components/quality-tooling.md
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -593,13 +681,22 @@ qmd: "quality-tools-final quality tools final report - [date]"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -782,13 +879,22 @@ qmd: "quality-tools quality tools usage (user)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 
@@ -845,13 +951,22 @@ qmd: "quality user module - quality status (november 2025)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_MJGn3P
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iOaUBF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_MJGn3P
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iOaUBF
   - "./actions-path-convention.md"
 ---
 

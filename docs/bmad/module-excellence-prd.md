@@ -12,6 +12,9 @@ related:
   - ../purpose.md
   - ../permissions.md
   - ../index.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "prd: user module   percorso verso la perfezione assoluta user"
 ---
 
 # PRD: User module — percorso verso la perfezione assoluta

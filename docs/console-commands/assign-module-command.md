@@ -12,6 +12,10 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
+<<<<<<< .merge_file_qd3hzp
+=======
+status: draft
+>>>>>>> .merge_file_wZsKNC
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

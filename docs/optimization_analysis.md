@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_vLr2cH
+=======
+---
+title: "user module documentation optimization analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module documentation optimization analysis user"
+---
+>>>>>>> .merge_file_YGZX93
 # user module documentation optimization analysis
 
 ## current state analysis

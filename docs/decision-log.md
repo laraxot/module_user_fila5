@@ -1,7 +1,15 @@
 ---
 type: decision-log
 title: "Decision Log — User"
+<<<<<<< .merge_file_bZ7jMv
 links: {github_issue: #XXX, discussion: #XXX}
+=======
+links: {github_issue: "#XXX", discussion: "#XXX"}
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "decision log   user user"
+>>>>>>> .merge_file_7Pq3gm
 ---
 # Decision Log — User
 

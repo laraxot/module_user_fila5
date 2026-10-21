@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_7W18Gn
+=======
+---
+title: "User Module Philosophy"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, root-md-files]
+qmd: "user module philosophy user"
+---
+>>>>>>> .merge_file_1j8hSY
 # User Module Philosophy
 
 Centralized authentication, authorization, identity management, and multi-team roles for all 47 modules.

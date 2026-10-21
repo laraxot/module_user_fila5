@@ -8,9 +8,10 @@ declare(strict_types=1);
 namespace Modules\User\Http\Controllers\Socialite;
 
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Request;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\User\Actions\Socialite\IsRegistrationEnabledAction;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Actions\Socialite\LoginUserAction;
@@ -27,11 +28,21 @@ use Modules\Xot\Datas\XotData;
 
 class ProcessCallbackController extends Controller
 {
+    /** Chiave di sessione con la lingua della pagina da cui il cittadino ha premuto «Accedi con Google». */
+    public const string SESSION_LANG_KEY = 'oauth.entry_lang';
+
     /**
-     * Undocumented function.
+     * Route: GET /{lang}/auth/login/{provider}/callback (oauth.callback).
+     *
+     * `$lang` must be declared so `$provider` is not bound to the locale segment.
      */
-    public function __invoke(Request $_request, string $provider): RedirectResponse
+    public function __invoke(Request $request, string $lang, string $provider): RedirectResponse
     {
+        unset($request);
+        $entryLang = session()->pull(self::SESSION_LANG_KEY);
+        $supported = LaravelLocalization::getSupportedLanguagesKeys();
+        app()->setLocale(is_string($entryLang) && in_array($entryLang, $supported, true) ? $entryLang : $lang);
+
         // See if provider exists
         // if (! app(IsProviderConfiguredAction::class)->execute($provider)) {
         //    throw ProviderNotConfigured::make($provider);

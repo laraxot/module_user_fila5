@@ -16,6 +16,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_VVMyZ2
+=======
+status: draft
+>>>>>>> .merge_file_4YA25Q
 ---
 
 # Inventario migration User

@@ -43,7 +43,11 @@ qmd: "code-conventions code conventions"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -69,7 +73,11 @@ qmd: "code-optimization-analysis user module code and documentation optimization
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -109,7 +117,11 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
+<<<<<<< .merge_file_l9Ld1H
 │   ├── profile-management-2.md
+=======
+│   ├── profile-management-laravel-modules.md
+>>>>>>> .merge_file_1ovTXo
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -121,7 +133,11 @@ docs/
 │   ├── socialite.md
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
+<<<<<<< .merge_file_l9Ld1H
 │   └── two-factor-2.md
+=======
+│   └── two-factor-user.md
+>>>>>>> .merge_file_1ovTXo
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md
@@ -261,7 +277,11 @@ qmd: "code-optimization user module code and documentation optimization analysis
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -301,7 +321,11 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
+<<<<<<< .merge_file_l9Ld1H
 │   ├── profile-management-2.md
+=======
+│   ├── profile-management-laravel-modules.md
+>>>>>>> .merge_file_1ovTXo
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -313,7 +337,11 @@ docs/
 │   ├── socialite.md
 │   ├── passport.md
 │   ├── spatie-permissions-2.md
+<<<<<<< .merge_file_l9Ld1H
 │   └── two-factor-2.md
+=======
+│   └── two-factor-user.md
+>>>>>>> .merge_file_1ovTXo
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md
@@ -442,7 +470,11 @@ this optimization will create a more secure, maintainable, and performant user a
 
 ## code-quality-analysis-3
 
+<<<<<<< .merge_file_l9Ld1H
 *Consolidated from: `code-quality-analysis-3.md`*
+=======
+*Consolidated from: `code-quality-analysis.md`*
+>>>>>>> .merge_file_1ovTXo
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -453,7 +485,11 @@ qmd: "code-quality-analysis-3 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -769,7 +805,11 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< .merge_file_l9Ld1H
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+=======
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+>>>>>>> .merge_file_1ovTXo
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -779,7 +819,11 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-4
 
+<<<<<<< .merge_file_l9Ld1H
 *Consolidated from: `code-quality-analysis-4.md`*
+=======
+*Consolidated from: `code-quality-analysis.md`*
+>>>>>>> .merge_file_1ovTXo
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -790,7 +834,11 @@ qmd: "code-quality-analysis-4 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1106,7 +1154,11 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< .merge_file_l9Ld1H
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+=======
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+>>>>>>> .merge_file_1ovTXo
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1116,7 +1168,11 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-5
 
+<<<<<<< .merge_file_l9Ld1H
 *Consolidated from: `code-quality-analysis-5.md`*
+=======
+*Consolidated from: `code-quality-analysis.md`*
+>>>>>>> .merge_file_1ovTXo
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -1127,7 +1183,11 @@ qmd: "code-quality-analysis-5 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1443,8 +1503,13 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< .merge_file_l9Ld1H
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+=======
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+>>>>>>> .merge_file_1ovTXo
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1464,7 +1529,11 @@ qmd: "code-quality-analysis code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -1780,8 +1849,13 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< .merge_file_l9Ld1H
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+=======
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+>>>>>>> .merge_file_1ovTXo
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1801,7 +1875,11 @@ qmd: "code-quality-tools 🔍 code quality tools - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2031,7 +2109,11 @@ qmd: "code-quality code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
@@ -2347,7 +2429,11 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< .merge_file_l9Ld1H
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+=======
+- [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
+>>>>>>> .merge_file_1ovTXo
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -2917,9 +3003,15 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 - [architecture](./architecture.md)
 - [index](./index.md)
+<<<<<<< .merge_file_l9Ld1H
 - [module](./module.md)
 - [philosophy](./philosophy.md)
 - [README](./README.md)
+=======
+- [module](../../module.md)
+- [philosophy](./philosophy.md)
+- [README](./readme.md)
+>>>>>>> .merge_file_1ovTXo
 
 ---
 
@@ -2931,7 +3023,11 @@ module: theme
 topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
 related:
+<<<<<<< .merge_file_l9Ld1H
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_1ovTXo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"

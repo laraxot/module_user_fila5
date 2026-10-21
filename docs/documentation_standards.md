@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_tcaf7I
+=======
+---
+title: "Standard di Documentazione"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "standard di documentazione user"
+---
+>>>>>>> .merge_file_JoYYSY
 # Standard di Documentazione
 
 ## Convenzioni di Naming

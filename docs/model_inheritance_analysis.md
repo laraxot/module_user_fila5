@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_fr2IA1
+=======
+---
+title: "Analisi Ereditarietà Modelli - Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "analisi ereditarietà modelli - modulo user user"
+---
+>>>>>>> .merge_file_36NtvE
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

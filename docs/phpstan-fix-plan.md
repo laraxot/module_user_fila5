@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_WOv91x
+=======
+---
+title: "User Module - PHPStan Level 10 Fix Plan"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - phpstan level 10 fix plan user"
+---
+>>>>>>> .merge_file_PIX3nP
 # User Module - PHPStan Level 10 Fix Plan
 
 ## Analysis Date
@@ -587,13 +598,22 @@ qmd: "phpstan-fix-plan phpstan analysis - user module (jan 2026)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_WOv91x
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_PIX3nP
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_WOv91x
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_PIX3nP
   - "./actions-path-convention.md"
 ---
 

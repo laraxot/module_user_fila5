@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_HAaUGM
+=======
+---
+title: "Filament Resources - User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "filament resources - user user"
+---
+>>>>>>> .merge_file_j1qjMh
 # Filament Resources - User
 
 ## Risorse Disponibili

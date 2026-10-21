@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_vn0yqE
+=======
+---
+title: "User Module - Sprint Planning"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - sprint planning user"
+---
+>>>>>>> .merge_file_j7sjGo
 # User Module - Sprint Planning
 
 **Module:** User  

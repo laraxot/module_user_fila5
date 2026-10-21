@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_F5SZtx
+=======
+---
+title: "Errore VoltDirectiveMissingException in Folio"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "errore voltdirectivemissingexception in folio user"
+---
+>>>>>>> .merge_file_gO9UGl
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema
@@ -54,4 +65,8 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
+<<<<<<< .merge_file_F5SZtx
 - [Best Practices Routing](./ROUTING_BEST_PRACTICES.md) 
+=======
+- [Best Practices Routing](./routing_best_practices.md) 
+>>>>>>> .merge_file_gO9UGl

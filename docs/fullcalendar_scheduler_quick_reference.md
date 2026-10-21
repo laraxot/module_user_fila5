@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_NM7cSk
+=======
+---
+title: "FullCalendar Scheduler - Riferimento Rapido"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "fullcalendar scheduler - riferimento rapido user"
+---
+>>>>>>> .merge_file_IN3270
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

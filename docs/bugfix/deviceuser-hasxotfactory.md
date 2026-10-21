@@ -12,6 +12,10 @@ related:
   - "./git-conflicts-resolution.md"
   - "./gits-resolution.md"
   - "./multiple-bugs-resolution.md"
+<<<<<<< .merge_file_YsSFyt
+=======
+status: draft
+>>>>>>> .merge_file_pI0RiR
 ---
 
 # Bugfix: DeviceUser e HasXotFactory

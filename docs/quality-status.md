@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_PrOZAK
 title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08
@@ -56,6 +57,28 @@ Warning attesi su pattern Laravel (facades, Assert static). Non bloccanti per pu
 ## Session Log
 
 - **2026-07-08**: PHPStan lvl10 su `app/` verde; TestCase allineato a MySQL; docs aggiornate; push in attesa di rebase su `laraxot/dev`.
+=======
+title: "User Module - Quality Status (November 2025)"
+type: concept
+tags: [quality, status, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality-status-2025-11 user module - quality status (november 2025)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+>>>>>>> .merge_file_NKE0Vg
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -93,8 +116,13 @@ if ($user->type !== null && is_object($user->type) && method_exists($user->type,
 
 **Result**: 3 errors fixed (method.notFound, method.nonObject, binaryOp.invalid)
 
+<<<<<<< .merge_file_PrOZAK
 ### 2. EditUserWidget.php
 **Issues**:
+=======
+### 2. EditUserWidget.php  
+**Issues**: 
+>>>>>>> .merge_file_NKE0Vg
 - Property type mismatch (mixed assigned to string)
 - Parameter type errors (mixed to Str::of())
 - Return type error (array<null> instead of array<string, mixed>)
@@ -107,7 +135,11 @@ if ($user->type !== null && is_object($user->type) && method_exists($user->type,
 // Before
 $this->model = $this->resource::getModel();
 
+<<<<<<< .merge_file_PrOZAK
 // After
+=======
+// After  
+>>>>>>> .merge_file_NKE0Vg
 $modelClass = $this->resource::getModel();
 Assert::string($modelClass, 'Resource getModel() must return string');
 $this->model = $modelClass;
@@ -129,7 +161,11 @@ return $result;
 // Before
 /** @var array<int|string, Component> $schema */
 
+<<<<<<< .merge_file_PrOZAK
 // After
+=======
+// After  
+>>>>>>> .merge_file_NKE0Vg
 /** @var array<int|string, \Filament\Forms\Components\Component> $schema */
 ```
 
@@ -161,7 +197,11 @@ Estimated ~5 errors remaining (need full PHPStan run to confirm exact count and 
 
 **Module Criticality**: HIGHEST
 - Core authentication
+<<<<<<< .merge_file_PrOZAK
 - User management
+=======
+- User management  
+>>>>>>> .merge_file_NKE0Vg
 - Authorization
 - Multi-tenant access control
 
@@ -218,6 +258,7 @@ After fixes:
 *PHPStan: IMPROVED (13 → ~5 errors)*
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
+<<<<<<< .merge_file_PrOZAK
 ---
 module: theme
 topic: quality-status
@@ -234,3 +275,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
+=======
+>>>>>>> .merge_file_NKE0Vg

@@ -16,13 +16,22 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_D1uVw3
+=======
+status: draft
+qmd: "pattern ridondanza in `modules/user/docs/legacy` user"
+>>>>>>> .merge_file_CkfO1q
 ---
 
 # Pattern ridondanza in `Modules/User/docs/legacy`
 
 ## Business reason
 
+<<<<<<< .merge_file_D1uVw3
 Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization-2.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
+=======
+Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
+>>>>>>> .merge_file_CkfO1q
 
 ## Rischi operativi
 
@@ -34,7 +43,11 @@ Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filam
 
 - **`docs/wiki/concepts/`** per policy attuali modulo User.
 - **`docs/redundancy-report.md`** modulo per ridondanza **codice**.
+<<<<<<< .merge_file_D1uVw3
 - Inventario tecnico trasversale: [`Modules/docs/redundancy-report.md`](../../../../docs/redundancy-report.md).
+=======
+- Inventario tecnico trasversale: [`Modules/docs/redundancy-report.md`](../../redundancy-report.md).
+>>>>>>> .merge_file_CkfO1q
 
 ## Gestione suggerita (senza purge massiccia)
 

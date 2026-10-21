@@ -7,6 +7,11 @@ tags: [on-demand, pattern, wiki, qmd]
 related:
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+<<<<<<< .merge_file_UDugDA
+=======
+status: draft
+qmd: "on-demand pattern   module **user** user"
+>>>>>>> .merge_file_hwsY9F
 ---
 
 # On-Demand Pattern — Module **User**

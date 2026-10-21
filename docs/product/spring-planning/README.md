@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_9pN5ms
+=======
+---
+title: "User Module - Spring Planning Meeting"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, product]
+qmd: "user module - spring planning meeting user"
+---
+>>>>>>> .merge_file_YuJP4H
 # User Module - Spring Planning Meeting
 
 ## Meeting Overview

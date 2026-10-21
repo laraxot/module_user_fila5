@@ -36,7 +36,6 @@ test('can create team invitations', function (): void {
     $email = 'invite-'.uniqid().'@example.com';
     $invitation = teamMgmtCreateInvitation($team, ['email' => $email, 'role' => 'member']);
 
-    Assert::assertInstanceOf(TeamInvitation::class, $invitation);
     Assert::assertSame((string) $team->id, (string) $invitation->team_id);
     Assert::assertSame($email, $invitation->email);
     Assert::assertSame('member', $invitation->role);

@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_p9afYY
+=======
+status: draft
+>>>>>>> .merge_file_hjMnci
 ---
 
 # NestedSet Migration Best Practices - User Module

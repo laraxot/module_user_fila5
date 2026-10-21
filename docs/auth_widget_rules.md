@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_D2W4Ti
+=======
+---
+title: "Regole per Widget di Autenticazione"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "regole per widget di autenticazione user"
+---
+>>>>>>> .merge_file_hYGx91
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_G1JFeb
+=======
+---
+title: "User Module - Query Optimization Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - query optimization analysis user"
+---
+>>>>>>> .merge_file_dieLaT
 # User Module - Query Optimization Analysis
 
 ## Overview

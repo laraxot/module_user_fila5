@@ -3,14 +3,27 @@ title: "product-requirements — puntatore"
 type: reference
 updated: 2026-05-21
 related:
+<<<<<<< .merge_file_zXtbuQ
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_pBy3Jr
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_zXtbuQ
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+tags: [docs, user]
+qmd: "policy globale (puntatore) user"
+>>>>>>> .merge_file_pBy3Jr
 ---
 
 # Policy globale (puntatore)

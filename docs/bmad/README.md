@@ -6,10 +6,19 @@ alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-identity"
+<<<<<<< .merge_file_McRS9K
+=======
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, user, bmad]
+qmd: "user   bmad method integration user"
+>>>>>>> .merge_file_DLpL9X
 ---
 
 # User — BMAD Method Integration
 
+<<<<<<< .merge_file_McRS9K
 ## Contratto corrente del flusso cittadino
 
 - [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract-2026-10-07.md)
@@ -17,3 +26,21 @@ bmad_track: "core-identity"
 
 User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
 presenta le pagine e Fixcity possiede la segnalazione.
+=======
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
+- [Livewire → Filament planning](./livewire-to-filament-planning.md) — matrice User (W0–W2); W0: `TermsOfServiceWidget` **REUSE** vs HTTP orfano; hub [Xot inventory](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) / [blueprint](../../Xot/docs/bmad/livewire-to-filament-widgets-filament-blueprint.md) / [fleet](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md)
+
+## Contratto corrente del flusso cittadino
+
+- [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract.md)
+- [Audit end-to-end FixCity](../../../Fixcity/docs/bmad/citizen-journey-audit.md)
+
+User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
+presenta le pagine e Fixcity possiede la segnalazione.
+>>>>>>> .merge_file_DLpL9X

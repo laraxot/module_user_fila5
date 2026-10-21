@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_zlsRA9
 title: "Commands Index"
 type: index
 created: 2026-05-11
@@ -49,3 +50,20 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 ## Console User (2026-06-10)
 
 - [user-super-admin.md](user-super-admin.md) — `--email`, argomento, interattivo; no Prompts WSL
+=======
+title: "User — alias wiki/commands/INDEX (UPPERCASE)"
+type: alias
+module: User
+status: superseded
+superseded_by: index.md
+canonical: ./index.md
+updated: 2026-10-20
+qmd: "alias wiki commands INDEX uppercase verso index"
+---
+
+<!-- gateguard: convert existing UPPERCASE INDEX twin to stub. Canonical lowercase index.md. Linked from wiki tree. User: "Fix UPPERCASE md except README in those trees if easy" -->
+
+# Alias — commands INDEX
+
+Canonico: [index.md](./index.md).
+>>>>>>> .merge_file_Uz8PGg

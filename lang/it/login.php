@@ -59,6 +59,10 @@ return [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
             'error' => 'Credenziali non valide',
+<<<<<<< .merge_file_gp6oh9
+=======
+            'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
+>>>>>>> .merge_file_i1xonw
         ],
         'register' => [
             'label' => 'Registrati',
@@ -86,6 +90,7 @@ return [
             'tooltip' => 'Mostra Password',
         ],
         'authenticate' => [
+<<<<<<< .merge_file_gp6oh9
             'label' => 'authenticate',
             'icon' => 'authenticate',
             'tooltip' => 'authenticate',
@@ -94,6 +99,16 @@ return [
             'label' => 'save',
             'icon' => 'save',
             'tooltip' => 'save',
+=======
+            'label' => 'Accedi',
+            'icon' => 'heroicon-o-lock-closed',
+            'tooltip' => 'Accedi',
+        ],
+        'save' => [
+            'label' => 'Salva',
+            'icon' => 'heroicon-o-check',
+            'tooltip' => 'Salva',
+>>>>>>> .merge_file_i1xonw
         ],
     ],
     'no_account' => 'Non hai ancora un account?',
@@ -108,6 +123,7 @@ return [
         'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
         'general_error' => 'Si è verificato un errore. Riprova più tardi.',
         'unauthorized' => 'Non hai i permessi necessari per questa operazione.',
+<<<<<<< .merge_file_gp6oh9
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -118,12 +134,29 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+    ],
+    'navigation' => [
+        'label' => 'Accesso',
+        'plural_label' => 'Accessi',
+        'group' => 'Autenticazione',
+        'icon' => 'heroicon-o-lock-closed',
+        'sort' => 100,
+    ],
+    'label' => 'Accesso',
+    'plural_label' => 'Accessi',
+>>>>>>> .merge_file_i1xonw
     'title' => 'Accedi al tuo account',
     'subtitle_start' => 'Oppure',
     'subtitle_link' => 'crea un nuovo account',
     'page' => [
+<<<<<<< .merge_file_gp6oh9
         'title' => 'Benvenuto a <nome progetto>! 🍕',
         'subtitle' => 'Accedi alla community di developer e pizza lovers',
+=======
+        'title' => 'Accedi a FixCity',
+        'subtitle' => 'Entra per segnalare un problema e seguire le tue pratiche',
+>>>>>>> .merge_file_i1xonw
     ],
     'already_registered' => 'Non hai ancora un account?',
     'register' => 'Registrati ora',

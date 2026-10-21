@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_Mibn4u
+=======
+status: draft
+qmd: "user module - sso providers implementation user"
+>>>>>>> .merge_file_DVWKQB
 ---
 
 # User Module - SSO Providers Implementation

@@ -2,6 +2,15 @@
 module: User
 concept: Two-Factor Authentication
 last_updated: 2026-04-15
+<<<<<<< .merge_file_Z28URh
+=======
+title: "Two-Factor Authentication (2FA)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "two-factor authentication (2fa) user"
+>>>>>>> .merge_file_YZ2Qbv
 ---
 
 # Two-Factor Authentication (2FA)

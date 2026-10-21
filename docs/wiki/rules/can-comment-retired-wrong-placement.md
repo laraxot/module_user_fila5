@@ -17,11 +17,19 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_hGVFC8
+=======
+status: draft
+>>>>>>> .merge_file_O7kqXk
 ---
 
 # CanComment — non più in User
 
+<<<<<<< .merge_file_hGVFC8
 `CanComment` era capability **solo Model** ma finì in `app/Contracts/` — viola [models-contracts-placement](../../../../docs/wiki/rules/models-contracts-placement.md).
+=======
+`CanComment` era capability **solo Model** ma finì in `app/Contracts/` — viola [models-contracts-placement](../../../../../../docs/wiki/rules/models-contracts-placement.md).
+>>>>>>> .merge_file_O7kqXk
 
 - Ritirato: `app/Contracts/CanComment.php` → `app/Contracts/CanComment.php.old`
 - Precedente archivio: `app/Models/Contracts/CanComment.php.old`

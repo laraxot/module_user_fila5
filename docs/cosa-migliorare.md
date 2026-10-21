@@ -4,6 +4,11 @@ type: report
 module: User
 updated: 2026-09-01
 qmd: "cosa migliorare user phpstan phpmd phpinsights coverage debito priorita"
+<<<<<<< .merge_file_1p1plP
+=======
+status: draft
+tags: [docs, user]
+>>>>>>> .merge_file_7cnHa1
 ---
 
 # Cosa migliorare — modulo User
@@ -65,5 +70,9 @@ Prima di fidarsi di qualunque numero: il tree deve essere fermo e `vendor/` comp
 php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358, non 13041
 ```
 
+<<<<<<< .merge_file_1p1plP
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../../../docs/quality-audit.md).
+=======
+Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
+>>>>>>> .merge_file_7cnHa1
 

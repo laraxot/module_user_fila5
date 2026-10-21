@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_5LBNza
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: concept
 tags: [phpstan, fixes]
@@ -9,10 +10,23 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
+=======
+title: "Correzioni PHPStan - Modulo User"
+type: concept
+tags: [phpstan, fixes, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-2025 correzioni phpstan - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_bCe9Rm
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_5LBNza
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
@@ -394,6 +408,25 @@ public string $currentState = 'default';
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
 # Correzioni PHPStan - Modulo User
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+# Correzioni PHPStan - Modulo User
+
+## 2026-10-20 — wave r3 · gate modulo
+
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User
+# [OK] No errors
+```
+
+- `FakeAgent::version()` normalizza a `string|false` (niente `bool|string`).
+- OAuth feature: `Safe\parse_url`, header `Location` con `Assert::assertIsString` prima del parse della query.
+>>>>>>> .merge_file_bCe9Rm
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
@@ -443,7 +476,11 @@ protected static string $view = 'pub_theme::filament.widgets.auth.password.reset
 
 **File Affetti**:
 - `RegisterWidget.php`
+<<<<<<< .merge_file_5LBNza
 - `ResetPasswordWidget.php`
+=======
+- `ResetPasswordWidget.php` 
+>>>>>>> .merge_file_bCe9Rm
 - `PasswordExpiredWidget.php`
 - `UpdateUserAction.php`
 
@@ -536,6 +573,7 @@ public string $currentState = 'default';
 1. **PHPStan Level**: Considerare l'uso di `@phpstan-ignore-next-line` per falsi positivi confermati
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
+<<<<<<< .merge_file_5LBNza
 # PHPStan Errori Modulo User - 2025-01-22
 
 ## Analisi Completa
@@ -966,3 +1004,5 @@ it('test name', function (): void {
 
 - [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
 - [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+=======
+>>>>>>> .merge_file_bCe9Rm

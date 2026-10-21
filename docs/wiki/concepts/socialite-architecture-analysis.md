@@ -15,6 +15,11 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_vHSNsT
+=======
+status: draft
+qmd: "socialite architecture analysis user"
+>>>>>>> .merge_file_FmxOSJ
 ---
 
 # Socialite Architecture Analysis

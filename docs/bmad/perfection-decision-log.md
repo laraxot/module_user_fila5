@@ -10,6 +10,9 @@ related:
   - ./perfection-epics.md
   - ./perfection-brainstorming.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "decision log: audit 'perfezione assoluta'   2026-09-22 user"
 ---
 
 # Decision log: audit "perfezione assoluta" — 2026-09-22

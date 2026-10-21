@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_15wNYW
+=======
+status: draft
+qmd: "migration_best_practices - modulo user user"
+>>>>>>> .merge_file_MohvAc
 ---
 
 # MIGRATION_BEST_PRACTICES - Modulo User
@@ -288,13 +293,22 @@ module: theme
 topic: migration-best-practices
 canonical: ../../../Themes/docs/shared-components/migration-best-practices-Modules.md
 related:
+<<<<<<< .merge_file_15wNYW
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_MohvAc
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_15wNYW
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_MohvAc
   - "./actions-path-convention.md"
 ---
 

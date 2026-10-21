@@ -10,9 +10,16 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/363"
 related:
+<<<<<<< .merge_file_ItzCdc
   - ../../../../Themes/Sixteen/docs/page-directory-structure.md
   - ../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
   - folio-app-pages-owner.md
+=======
+  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - folio-app-pages-owner.md
+status: draft
+>>>>>>> .merge_file_x5ykZH
 ---
 
 # Folio app pages — owner `User`
@@ -37,11 +44,19 @@ Folio monta **tema prima**, poi **moduli** (`FolioVoltServiceProvider`). Rotte d
 
 ## Contratto Volt
 
+<<<<<<< .merge_file_ItzCdc
 - `PageSlugMiddleware` + JSON CMS (`dashboard.json`, `area-personale.*.json`)
 - `new class extends Component` + `mount()` per query/redirect
 - `@volt('…')` statico = `name()`
 
 Canon: [folio-volt-app-pages.md](../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+=======
+- `PageSlugMiddleware` + JSON CMS (`pages/area-personale/pratiche.json` e le altre voci: lo slug nel file è solo `pratiche`, la cartella aggiunge `area-personale.`)
+- `new class extends Component` + `mount()` per query/redirect
+- `@volt('…')` statico = `name()`
+
+Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+>>>>>>> .merge_file_x5ykZH
 
 ## Pratiche + Fixcity
 
@@ -49,5 +64,10 @@ Canon: [folio-volt-app-pages.md](../../../../Themes/Sixteen/docs/wiki/concepts/f
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ItzCdc
 - [page-directory-structure.md](../../../../Themes/Sixteen/docs/page-directory-structure.md)
 - [personal-area-routes.md](../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
+=======
+- [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
+- [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
+>>>>>>> .merge_file_x5ykZH

@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_uGD3CD
+=======
+status: draft
+qmd: "code quality analysis - user module user"
+>>>>>>> .merge_file_cA6RPN
 ---
 
 # Code Quality Analysis - User Module

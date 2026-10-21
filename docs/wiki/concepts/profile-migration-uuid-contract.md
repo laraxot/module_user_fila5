@@ -12,6 +12,13 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_XF2mDI
+=======
+title: "Profile Migration UUID Contract"
+status: draft
+tags: [docs, user, wiki]
+qmd: "profile migration uuid contract user"
+>>>>>>> .merge_file_TThtQi
 ---
 
 # Profile Migration UUID Contract
@@ -73,5 +80,9 @@ La prima domanda corretta e':
 - `laravel/Modules/User/app/Models/BaseProfile.php`
 - `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
 - [profile-id-bigint-uuid-fix](./profile-id-bigint-uuid-fix.md)
+<<<<<<< .merge_file_XF2mDI
 - [architecture-one-migration-per-model](../../../../../docs/wiki/bmad/architecture-one-migration-per-model.md)
+=======
+- [architecture-one-migration-per-model](../../../../../../docs/wiki/bmad/architecture-one-migration-per-model.md)
+>>>>>>> .merge_file_TThtQi
 - `laravel/Modules/Xot/docs/database/migration-base-rules.md`

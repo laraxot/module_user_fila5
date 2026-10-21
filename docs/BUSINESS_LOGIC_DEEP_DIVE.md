@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_oVqbby
+=======
+---
+title: "User Module - Business Logic Deep Dive"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - business logic deep dive user"
+---
+>>>>>>> .merge_file_vA5tJO
 # User Module - Business Logic Deep Dive
 
 ## 🎯 Module Overview

@@ -9,12 +9,22 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./change-password-command.md"
+<<<<<<< .merge_file_iAhIEd
   - "./console-commands-philosophy-1-1.md"
   - "./console-commands-philosophy-1.md"
   - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
+=======
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./readme.md"
+status: draft
+>>>>>>> .merge_file_kCFIcu
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

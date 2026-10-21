@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_qjem5v
+=======
+---
+title: "Analisi Completa del Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "analisi completa del modulo user user"
+---
+>>>>>>> .merge_file_IXfEGL
 # Analisi Completa del Modulo User
 
 ## Filosofia e Religione del Modulo

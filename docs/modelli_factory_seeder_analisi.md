@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_EyBfL3
+=======
+---
+title: "Analisi Modelli, Factory e Seeder - Modulo User"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi modelli, factory e seeder - modulo user user"
+---
+>>>>>>> .merge_file_EkpEq9
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -184,7 +195,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../saluteora/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
+<<<<<<< .merge_file_EyBfL3
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
+=======
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
+>>>>>>> .merge_file_EkpEq9
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

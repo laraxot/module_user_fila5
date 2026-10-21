@@ -4,6 +4,12 @@ module: User
 type: quality-gate
 status: complete
 created: 2026-08-02
+<<<<<<< .merge_file_Pk89od
+=======
+updated: 2026-10-13
+tags: [docs, user, wiki]
+qmd: "phpstan level 10 compliance   user module user"
+>>>>>>> .merge_file_3lfE4I
 ---
 
 # PHPStan Level 10 Compliance — User Module
@@ -59,7 +65,11 @@ phpstan analyse app --level=10
 
 ## Related Docs
 
+<<<<<<< .merge_file_Pk89od
 - [`phpstan-l10-compliance.md`](../../../docs/wiki/rules/phpstan-l10-compliance.md)
+=======
+- [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
+>>>>>>> .merge_file_3lfE4I
 - [GitHub Repo](https://github.com/laraxot/module_user_fila5)
 
 **Status:** ✅ Compliant (2026-08-02)

@@ -12,6 +12,10 @@ related:
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget-fileupload.md"
   - "./registration-widget.md"
+<<<<<<< .merge_file_ziVTdL
+=======
+status: draft
+>>>>>>> .merge_file_vTmGWO
 ---
 
 # EditUserWidget: Widget generico per la modifica dati utente

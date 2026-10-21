@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_DT8WV3
+=======
+status: draft
+>>>>>>> .merge_file_HO2atp
 ---
 
 # Testing Rules Summary

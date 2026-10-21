@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 ?>
 @php
     $form = $getForm();

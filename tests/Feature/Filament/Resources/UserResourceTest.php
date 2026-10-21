@@ -17,6 +17,7 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
@@ -70,15 +71,11 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has combined relation manager tabs', function (): void {
-        $resource = new UserResource;
-
-        Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
+        Assert::assertTrue((new UserResource)->hasCombinedRelationManagerTabsWithContent());
     });
 
     test('user resource extends correct base class', function (): void {
-        $resource = new UserResource;
-
-        Assert::assertInstanceOf(XotBaseResource::class, $resource);
+        Assert::assertSame(XotBaseResource::class, get_parent_class(UserResource::class));
     });
 
     test('user resource form schema has correct column spans', function (): void {
@@ -180,14 +177,10 @@ describe('User Resource', function (): void {
     });
 
     test('user resource can be instantiated', function (): void {
-        $resource = new UserResource;
-
-        Assert::assertInstanceOf(UserResource::class, $resource);
+        Assert::assertSame(UserResource::class, get_class(new UserResource));
     });
 
     test('user resource has correct model', function (): void {
-        $resource = new UserResource;
-
-        Assert::assertInstanceOf(UserResource::class, $resource);
+        Assert::assertSame(XotData::make()->getUserClass(), UserResource::getModel());
     });
 });

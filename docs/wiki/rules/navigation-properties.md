@@ -11,6 +11,14 @@ related:
   - "./module-commit-push-after-change.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_3SJZcX
+=======
+title: "navigation properties"
+status: draft
+updated: 2026-10-07
+tags: [docs, user, wiki]
+qmd: "navigation properties user"
+>>>>>>> .merge_file_mEry1X
 ---
 
 ## Rule Overview

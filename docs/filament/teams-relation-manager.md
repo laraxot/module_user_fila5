@@ -8,6 +8,7 @@ qmd: "teams-relation-manager teamsrelationmanager in user module"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_Zi3xHI
   - "./filament-table-columns-1.md"
   - "./filament-table-columns-2.md"
   - "./filament-table-columns-3.md"
@@ -16,6 +17,17 @@ related:
   - "./teams-relation-manager-2.md"
   - "./teams-relation-manager-3.md"
   - "./widgets-responsive-layout.md"
+=======
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-documentation-themes.md"
+  - "./teams-relation-manager.md"
+  - "./widgets-responsive-layout.md"
+status: draft
+>>>>>>> .merge_file_ngjzuP
 ---
 
 # TeamsRelationManager in User Module

@@ -9,6 +9,8 @@ qmd: "user Application root uppercase psr-4 app Application UseCases duplicate"
 related:
   - ../../../../Xot/docs/bmad/stories/uppercase-root-dirs-cleanup.story.md
   - ../../../../Xot/docs/bmad/stories/cleanup-all-modules.story.md
+type: story
+tags: [docs, user, bmad]
 ---
 
 # User — `Application/` in root del modulo

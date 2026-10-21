@@ -9,6 +9,9 @@ related:
   - ./livewire-widget-project-context.md
   - ./livewire-inventory.md
   - ./product-brief.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "product brief: un solo stack ui per identità user"
 ---
 
 # Product brief: un solo stack UI per identità

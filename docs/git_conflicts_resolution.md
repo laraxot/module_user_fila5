@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_v08q8l
+=======
+---
+title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
+---
+>>>>>>> .merge_file_NUHxDm
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data

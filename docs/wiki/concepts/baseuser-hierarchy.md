@@ -14,6 +14,10 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+<<<<<<< .merge_file_jSN3Pd
+=======
+status: draft
+>>>>>>> .merge_file_JvWlNv
 ---
 
 # BaseUser Hierarchy and Extension Pattern

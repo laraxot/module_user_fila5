@@ -498,3 +498,8 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+<<<<<<< .merge_file_RM62Un
+=======
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
+graphify-out/
+>>>>>>> .merge_file_6DbbKt

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_K8HQOL
+=======
+---
+title: "Roadmap Index - User"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, roadmap]
+qmd: "roadmap index - user user"
+---
+>>>>>>> .merge_file_GoNP32
 # Roadmap Index - User
 
 ## Scope

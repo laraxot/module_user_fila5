@@ -132,6 +132,12 @@ return [
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_frKDRe
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
+=======
+- [Best Practices per le Traduzioni](../translation-best-practices-traduzioni.md)
+- [Struttura del Modulo](../module-structure-user.md)
+- [Convenzioni di Codice](../code-conventions.md)
+>>>>>>> .merge_file_Vd5gFL

@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_o4IhAL
+=======
+status: draft
+qmd: "raccomandazioni di ottimizzazione - modulo user user"
+>>>>>>> .merge_file_9OgJ6z
 ---
 
 # Raccomandazioni di Ottimizzazione - Modulo User

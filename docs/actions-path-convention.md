@@ -8,14 +8,25 @@ qmd: "actions-path-convention convenzione dei percorsi per le actions"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_RCCll5
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6wGb1E
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_RCCll5
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-structure-1.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-structure.md"
+status: draft
+>>>>>>> .merge_file_6wGb1E
 ---
 
 # Convenzione dei Percorsi per le Actions
@@ -81,6 +92,10 @@ fi
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_RCCll5
 - [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
+=======
+- [Convenzioni Path nei Moduli Laravel](./path-conventions-user.md)
+>>>>>>> .merge_file_6wGb1E
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

@@ -6,6 +6,11 @@ date: "2026-06-13"
 qmd: "user-auth-patterns"
 github_issue: ""
 github_discussion: ""
+<<<<<<< .merge_file_LiDsFy
+=======
+status: draft
+updated: 2026-10-13
+>>>>>>> .merge_file_nrUT5s
 ---
 
 # User Module - Authentication Patterns
@@ -141,5 +146,9 @@ POST /api/auth/logout
 
 ## Collegamenti
 
+<<<<<<< .merge_file_LiDsFy
 - [Project Roadmap](../../Activity/docs/wiki/PROJECT-ROADMAP.md)
+=======
+- [Project Roadmap](../../../Activity/docs/wiki/PROJECT-ROADMAP.md)
+>>>>>>> .merge_file_nrUT5s
 - [Tenant Module](../../../Tenant/docs/wiki/)

@@ -16,6 +16,10 @@ related:
   - "./structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+<<<<<<< .merge_file_1jSHbh
+=======
+status: draft
+>>>>>>> .merge_file_mdG4wr
 ---
 
 # Struttura dei Tests del Modulo User

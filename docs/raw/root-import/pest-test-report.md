@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_wh8PzV
 ---
 title: "<nome progetto> User Module - Pest Test Implementation Report"
 type: concept
@@ -23,6 +24,8 @@ related:
 ## Executive Summary
 
 Successfully implemented comprehensive Pest PHP tests for 5 critical User module Actions in <nome progetto>. All tests are now **PASSING** with high code coverage and comprehensive test scenarios. (.)
+=======
+>>>>>>> .merge_file_mmxe1r
 # <nome progetto> User Module - Pest Test Implementation Report
 
 ## Executive Summary

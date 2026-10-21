@@ -15,6 +15,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_4DUWOM
+=======
+status: draft
+>>>>>>> .merge_file_1BsNyT
 ---
 
 # Modulo User — owner pagine Folio, zero web.php
@@ -57,4 +61,8 @@ Pagine auth/login spesso nel tema Sixteen; dominio profilo/notifiche resta User.
 ## Collegamenti
 
 - [notifications-folio-page.md](notifications-folio-page.md)
+<<<<<<< .merge_file_4DUWOM
 - [folio-list-vs-route-list.md](../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)
+=======
+- [folio-list-vs-route-list.md](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)
+>>>>>>> .merge_file_1BsNyT

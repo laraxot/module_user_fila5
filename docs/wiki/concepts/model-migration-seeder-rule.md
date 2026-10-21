@@ -16,6 +16,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_1pAaeC
+=======
+status: draft
+>>>>>>> .merge_file_40mCoo
 ---
 
 # Regola: 1 Modello = 1 Migrazione + 1 Seeder

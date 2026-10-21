@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_6tXdIU
+=======
+status: draft
+>>>>>>> .merge_file_sgmCnj
 ---
 
 # Best Practices per Risorse Filament nel Modulo User

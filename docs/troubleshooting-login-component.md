@@ -8,14 +8,25 @@ qmd: "troubleshooting-login-component troubleshooting: login component not found
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_Nrisda
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2XnV1g
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_Nrisda
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+>>>>>>> .merge_file_2XnV1g
 ---
 
 # Troubleshooting: Login Component Not Found
@@ -264,7 +275,11 @@ php artisan config:cache  # Solo in produzione
 
 ## Collegamenti
 
+<<<<<<< .merge_file_Nrisda
 - [Modulo User README](../readme.md)
+=======
+- [Modulo User README](../README.md)
+>>>>>>> .merge_file_2XnV1g
 - [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
 - [Theme Two – Pagina login](../../Themes/Two/docs/auth-login-page.md)

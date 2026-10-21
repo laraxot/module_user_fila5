@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_NVSUMp
+=======
+---
+title: "Code Quality Analysis - User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "code quality analysis - user module user"
+---
+>>>>>>> .merge_file_3yNBoF
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified

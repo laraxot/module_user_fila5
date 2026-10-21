@@ -8,14 +8,25 @@ qmd: "label-hardcoded-prevention prevenzione ->label() hardcoded - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_YLXyUC
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_cMgDLI
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_YLXyUC
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+>>>>>>> .merge_file_cMgDLI
 ---
 
 # Prevenzione ->label() Hardcoded - Modulo User
@@ -206,9 +217,15 @@ return [
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< .merge_file_YLXyUC
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../../docs/best-practices.md)
+=======
+- [Translation Standards](../../../../docs/translation-standards.md)
+- [PHPStan Fixes](../../../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../../../docs/best-practices.md)
+>>>>>>> .merge_file_cMgDLI
 
 ---
 

@@ -3,19 +3,34 @@ title: "Correzione PHPStan - Relationship Type Hints"
 type: concept
 tags: [phpstan, relationship, fix]
 created: 2026-07-14
+<<<<<<< .merge_file_RApOyD
 updated: 2026-07-14
+=======
+updated: 2026-10-20
+>>>>>>> .merge_file_T4RvD7
 qmd: "phpstan-relationship-fix correzione phpstan - relationship type hints"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_RApOyD
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_T4RvD7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_RApOyD
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+>>>>>>> .merge_file_T4RvD7
 ---
 
 # Correzione PHPStan - Relationship Type Hints
@@ -92,6 +107,26 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - Seguire la documentazione PHPStan per template covariance
 - Verificare sempre con PHPStan Level 9 dopo modifiche
 
+<<<<<<< .merge_file_RApOyD
+=======
+## Contratti che dichiarano la relazione (2026-10-20)
+
+Un'interfaccia non ha un modello concreto: il secondo parametro template di `MorphMany` non puo' essere `$this`
+(`generics.notSubtype`, `$this` dell'interfaccia non e' un `Model`) e non puo' essere `Model` semplice
+(`method.childReturnType`, perche' i trait delle implementazioni restituiscono `MorphMany<X, $this>` e il template
+`TDeclaringModel` non e' covariante). Nei contratti si usa `covariant Model`:
+
+```php
+// HasAuthentications, UserNotificationsContract
+/** @return MorphMany<AuthenticationLog, covariant Model> */
+public function authentications(): MorphMany;
+```
+
+Le implementazioni (`HasAuthenticationLogTrait`, `BaseUser::notifications()` e `unreadNotifications()`) restano
+`MorphMany<X, $this>`. Verificato con PHPStan sul solo `Modules/User` (lane user-a, story
+[phpstan-test-wave-user-a](./stories/phpstan-test-wave-user-a.story.md)).
+
+>>>>>>> .merge_file_T4RvD7
 ## Collegamenti
 
 - [PHPStan Template Covariance](https://phpstan.org/blog/whats-up-with-template-covariant)

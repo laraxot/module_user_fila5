@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_0RL7fy
+=======
+---
+title: "Code Quality Analysis - User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "code quality analysis - user module user"
+---
+>>>>>>> .merge_file_uzrvmo
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified

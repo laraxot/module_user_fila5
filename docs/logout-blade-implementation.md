@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_E3gwn9
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -9,6 +10,27 @@
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+=======
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione corretta di logout.blade.php user"
+---
+# Implementazione Corretta di logout.blade.php
+
+## Collegamenti correlati
+- [Documentazione centrale](../../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+>>>>>>> .merge_file_wH3p1N
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -217,13 +239,22 @@ module: theme
 topic: logout-blade-implementation
 canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 related:
+<<<<<<< .merge_file_E3gwn9
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_wH3p1N
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_E3gwn9
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_wH3p1N
   - "./actions-path-convention.md"
 ---
 

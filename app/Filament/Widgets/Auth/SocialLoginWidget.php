@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Components\Component;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -19,7 +20,7 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 
     protected string $view = 'user::filament.widgets.auth.social-login';
 
-    public string $redirectRoute = 'socialite.oauth.redirect';
+    public string $redirectRoute = 'oauth.redirect';
 
     /**
      * @return array<string, Component>
@@ -68,7 +69,21 @@ class SocialLoginWidget extends XotBaseSchemaWidget
 
     public function getRedirectUrl(string $driver): string
     {
-        return route($this->normalizeRedirectRoute(), ['provider' => $driver]);
+        $locale = app()->getLocale();
+        if (! is_string($locale)) {
+            $locale = config('app.locale', 'it');
+        }
+        if (! is_string($locale)) {
+            $locale = 'it';
+        }
+        $locale = trim($locale, '/');
+        $supported = LaravelLocalization::getSupportedLanguagesKeys();
+        if (! in_array($locale, $supported, true)) {
+            $fallback = config('app.locale', 'it');
+            $locale = is_string($fallback) ? $fallback : 'it';
+        }
+
+        return route($this->normalizeRedirectRoute(), ['provider' => $driver, 'lang' => $locale]);
     }
 
     public function redirectToProvider(string $driver): void
@@ -83,8 +98,8 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     private function normalizeRedirectRoute(): string
     {
         return match ($this->redirectRoute) {
-            'socialite.oauth.redirect', 'socialite.oauth.fo.redirect' => $this->redirectRoute,
-            default => 'socialite.oauth.redirect',
+            'socialite.oauth.redirect', 'socialite.oauth.fo.redirect', 'oauth.redirect', 'auth.google.index', 'oauth.callback' => $this->redirectRoute,
+            default => 'oauth.callback',
         };
     }
 }

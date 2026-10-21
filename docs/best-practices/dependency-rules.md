@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency.md"
+<<<<<<< .merge_file_OycR7h
+=======
+status: draft
+>>>>>>> .merge_file_8hi5Ac
 ---
 
 # dependency-rules

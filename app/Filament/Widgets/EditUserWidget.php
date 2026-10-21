@@ -124,10 +124,13 @@ class EditUserWidget extends XotBaseSchemaWidget
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
+<<<<<<< .merge_file_taBGg8
 <<<<<<< .merge_file_MF0QU6
         /** @var array<int|string, Component> $result */
 =======
 >>>>>>> .merge_file_FBPLxQ
+=======
+>>>>>>> .merge_file_jGhAOS
         return self::normalizeFormSchema($schema);
     }
 

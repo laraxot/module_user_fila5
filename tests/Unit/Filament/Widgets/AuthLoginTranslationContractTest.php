@@ -4,7 +4,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\Assert;
 
 test('login widget translations have a scalar fifth level in every supported locale', function (): void {
-    foreach (['it', 'en'] as $locale) {
+    foreach (['it', 'en', 'de', 'es'] as $locale) {
         /** @var array<string, mixed> $translations */
         $translations = require dirname(__DIR__, 4).'/lang/'.$locale.'/auth.php';
 
@@ -14,5 +14,12 @@ test('login widget translations have a scalar fifth level in every supported loc
             Assert::assertIsString($value, $locale.'.auth.login.'.$key.'.text must be a string');
             Assert::assertNotSame('', $value);
         }
+
+        $googleButton = data_get($translations, 'login.google.button.text');
+        Assert::assertIsString($googleButton, $locale.'.auth.login.google.button.text must be a string');
+        Assert::assertNotSame('', $googleButton);
+
+        Assert::assertIsString(data_get($translations, 'actions.login.success'));
+        Assert::assertIsString(data_get($translations, 'actions.login.error'));
     }
 });

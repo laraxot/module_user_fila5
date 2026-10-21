@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_ANyb0Z
+=======
+status: draft
+qmd: "gdpr compliance guide for registration user"
+>>>>>>> .merge_file_Z0S86d
 ---
 
 # GDPR Compliance Guide for Registration

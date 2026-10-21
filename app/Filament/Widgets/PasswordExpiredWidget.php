@@ -99,7 +99,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
 
         if (empty($currentPassword) || empty($newPassword)) {
-            $this->addError('current_password', __('user::auth.password_fields_required'));
+            $this->addError('current_password', __('user::auth.password.error.text_fields_required'));
 
             return null;
         }
@@ -109,7 +109,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         $userPasswordString = $userPassword;
 
         if (! Hash::check($currentPassword, $userPasswordString)) {
-            $this->addError('current_password', __('user::auth.password_current_incorrect'));
+            $this->addError('current_password', __('user::auth.password.error.text_current_incorrect'));
 
             return null;
         }

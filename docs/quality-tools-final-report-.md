@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_uT8CfR
+=======
+---
+title: "Quality Tools Final Report - 2025-01-22"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "quality tools final report - 2025-01-22 user"
+---
+>>>>>>> .merge_file_3fyJAn
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo
@@ -166,13 +177,22 @@ module: theme
 topic: quality-tools-final-report-
 canonical: ../../../Themes/docs/shared-components/quality-tools-final-report-.md
 related:
+<<<<<<< .merge_file_uT8CfR
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_3fyJAn
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_uT8CfR
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_3fyJAn
   - "./actions-path-convention.md"
 ---
 

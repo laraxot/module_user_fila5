@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_3HYEh2
+=======
+---
+title: "FullCalendar Scheduler License Key"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "fullcalendar scheduler license key user"
+---
+>>>>>>> .merge_file_W3jzAN
 # FullCalendar Scheduler License Key
 
 ## Overview

@@ -8,14 +8,25 @@ qmd: "ottimizzazioniry-kiss ottimizzazioni dry + kiss - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_suNg5Y
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_rGt5q8
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_suNg5Y
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+>>>>>>> .merge_file_rGt5q8
 ---
 
 # Ottimizzazioni DRY + KISS - Modulo User
@@ -37,6 +48,7 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ##### A. **Logout Analysis (12+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< .merge_file_suNg5Y
 ├── logout-blade-analysis-3.md (14KB)
 ├── logout-blade-conclusions-2.md (4.1KB)
 ├── logout-blade-corrected-analysis-3.md (7.4KB)
@@ -53,6 +65,24 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-page-fix-2.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
 └── logout-security-2.md (4.1KB)
+=======
+├── logout-blade-analysis-panoramica.md (14KB)
+├── logout-blade-conclusions-sintesi-dell.md (4.1KB)
+├── logout-blade-corrected-analysis-analisi-corretta.md (7.4KB)
+├── logout-blade-error-analysis.md (3.8KB)
+├── logout-blade-implementation-posizione-corretta.md (6.3KB)
+├── logout-blade-structure-struttura-theme.md (3.1KB)
+├── logout-error-analysis-gestione-sessione.md (3.7KB)
+├── logout-event-error-errore-identificato.md (5.1KB)
+├── logout-filament-widget-introduzione.md (7.5KB)
+├── logout-filament-widget-corrected.md (8.3KB)
+├── logout-implementation-best-practices.md (10KB)
+├── logout-implementation-error-analisi-dell.md (3.3KB)
+├── logout-implementation-with-laravel-localization.md (6.2KB)
+├── logout-page-fix.md (1.3KB)
+├── logout-page-implementation-best-practices.md (3.2KB)
+└── logout-security-sicurezza-processo.md (4.1KB)
+>>>>>>> .merge_file_rGt5q8
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -62,10 +92,17 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ##### B. **User Factory (4+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< .merge_file_suNg5Y
 ├── userfactory-advanced-implementation-complete-2.md (11KB)
 ├── user-factory-advanced-integration-3.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration-2.md (14KB)
 └── user-factory-integration-2.md (9.8KB)
+=======
+├── userfactory-advanced-implementation-complete-technical-references.md (11KB)
+├── user-factory-advanced-integration-module.md (9.1KB)
+├── user-factory-complete-ecosystem-integration.md (14KB)
+└── user-factory-integration-module.md (9.8KB)
+>>>>>>> .merge_file_rGt5q8
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
 CONTENUTO: Implementazioni simili con variazioni minime
@@ -75,12 +112,20 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ##### C. **PHPStan Fixes (5+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< .merge_file_suNg5Y
 ├── phpstan-fixes-2025-1.md (4.4KB)
+=======
+├── phpstan-fixes-2025-documentation-themes.md (4.4KB)
+>>>>>>> .merge_file_rGt5q8
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
+<<<<<<< .merge_file_suNg5Y
 └── phpstan-fixes-8.md (2.5KB)
+=======
+└── phpstan-fixes.md (2.5KB)
+>>>>>>> .merge_file_rGt5q8
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute
@@ -90,6 +135,7 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ##### D. **Volt Implementation (8+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< .merge_file_suNg5Y
 ├── volt-blade-implementation-3.md (9.2KB)
 ├── volt-blade-implementation-error-3.md (3.8KB)
 ├── volt-errors-2.md (5.6KB)
@@ -99,6 +145,17 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)
 └── volt-logout-2.md (5.2KB)
+=======
+├── volt-blade-implementation-introduzione.md (9.2KB)
+├── volt-blade-implementation-error-identificazione-dell.md (3.8KB)
+├── volt-errors.md (5.6KB)
+├── volt-folio-auth-implementation.md (17KB)
+├── volt-folio-error-errore-voltdirectivemissingexception.md (1.6KB)
+├── volt-folio-logout-panoramica.md (5.0KB)
+├── volt-folio-logout-debug.md (3.0KB)
+├── volt-folio-logout-error-best-practices.md (3.7KB)
+└── volt-logout.md (5.2KB)
+>>>>>>> .merge_file_rGt5q8
 
 PROBLEMA: Implementazioni Volt frammentate e duplicate
 CONTENUTO: Errori e implementazioni simili ripetute

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_PXW3Vh
+=======
+---
+title: "User Module - Product Launch Plan"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, product]
+qmd: "user module - product launch plan user"
+---
+>>>>>>> .merge_file_VmSX18
 # User Module - Product Launch Plan
 
 ## Launch Overview

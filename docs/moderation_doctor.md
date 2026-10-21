@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_jCRLRN
+=======
+---
+title: "Moderazione Dentista dal Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "moderazione dentista dal modulo user user"
+---
+>>>>>>> .merge_file_jlo4wL
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

@@ -4,10 +4,23 @@ type: reference
 tags: [user, database, schema]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_vCKSHi
+=======
+status: draft
+qmd: "user module   database schema user"
+>>>>>>> .merge_file_Snswfi
 ---
 
 # User Module — Database Schema
 
+<<<<<<< .merge_file_vCKSHi
+=======
+Lo schema vivo di `users` è in [database-schema.md](database-schema.md)
+(`UserData`, connessione `user`).
+
+
+
+>>>>>>> .merge_file_Snswfi
 ## Core Tables
 
 ### users

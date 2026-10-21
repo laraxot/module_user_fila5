@@ -6,6 +6,7 @@ module: User
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "User architettura confini componenti PHP Laravel Filament"
+tags: [docs, user, bmad]
 ---
 # User — architettura
 

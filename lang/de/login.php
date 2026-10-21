@@ -51,6 +51,10 @@ return [
             'label' => 'Anmelden',
             'success' => 'Anmeldung erfolgreich',
             'error' => 'Ungültige Zugangsdaten',
+<<<<<<< .merge_file_hH9Dcq
+=======
+            'throttle' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',
+>>>>>>> .merge_file_YyPPYP
         ],
         'register' => [
             'label' => 'Registrieren',

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_X3OPC9
+=======
+---
+title: "FullCalendar Scheduler License Configuration"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "fullcalendar scheduler license configuration user"
+---
+>>>>>>> .merge_file_hNzMDW
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

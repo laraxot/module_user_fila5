@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Lb2qKq
+=======
+---
+title: "Completamento Traduzioni Password - 2025"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "completamento traduzioni password - 2025 user"
+---
+>>>>>>> .merge_file_kCoR10
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato

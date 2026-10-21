@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_pt6CJh
+=======
+---
+title: "User Module - Product Roadmap"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - product roadmap user"
+---
+>>>>>>> .merge_file_6rudog
 # User Module - Product Roadmap
 
 **Module:** User  
@@ -118,13 +129,22 @@ qmd: "product-roadmap user - product roadmap"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_pt6CJh
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6rudog
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_pt6CJh
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6rudog
   - "./actions-path-convention.md"
 ---
 

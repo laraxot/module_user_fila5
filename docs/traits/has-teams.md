@@ -10,6 +10,10 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./has-authentication-log.md"
   - "./has-tenants.md"
+<<<<<<< .merge_file_KKWXJk
+=======
+status: draft
+>>>>>>> .merge_file_f8K3un
 ---
 
 # Trait HasTeams

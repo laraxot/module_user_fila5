@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ACm3Wz
+=======
+---
+title: "Struttura Navigazione"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "struttura navigazione user"
+---
+>>>>>>> .merge_file_FkQIP5
 # Struttura Navigazione
 
 ## Overview
@@ -139,21 +150,36 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
+<<<<<<< .merge_file_ACm3Wz
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
+=======
+- [Header Components](./header_components.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
+- [Session Management](./session_management.md) 
+>>>>>>> .merge_file_FkQIP5
 ---
 module: theme
 topic: navigation-structure
 canonical: ../../../Themes/docs/shared-components/navigation-structure.md
 related:
+<<<<<<< .merge_file_ACm3Wz
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_FkQIP5
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_ACm3Wz
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_FkQIP5
   - "./actions-path-convention.md"
 ---
 

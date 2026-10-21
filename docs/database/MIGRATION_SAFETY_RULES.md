@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_HJXFmt
+=======
+---
+title: "Migration Safety Rules - NEVER Destroy Data"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, database]
+qmd: "migration safety rules - never destroy data user"
+---
+>>>>>>> .merge_file_SAMUIt
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA

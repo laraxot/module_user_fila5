@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_udk7uH
+=======
+---
+title: "Best Practices per le Traduzioni"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "best practices per le traduzioni user"
+---
+>>>>>>> .merge_file_IaHnGT
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -142,4 +153,8 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 ## Collegamenti Correlati
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
+<<<<<<< .merge_file_udk7uH
 - [Struttura Moduli](./MODULE_STRUCTURE.md) 
+=======
+- [Struttura Moduli](./module_structure.md) 
+>>>>>>> .merge_file_IaHnGT

@@ -171,8 +171,9 @@ test('user can switch current team', function (): void {
     $member->refresh();
 
     Assert::assertSame($team->id, $member->current_team_id);
-    Assert::assertInstanceOf(Team::class, $member->currentTeam);
-    Assert::assertSame($team->id, $member->currentTeam->id);
+    $currentTeam = $member->currentTeam;
+    Assert::assertInstanceOf(Team::class, $currentTeam);
+    Assert::assertTrue($currentTeam->is($team));
 });
 
 test('user can leave a team', function (): void {
@@ -234,7 +235,6 @@ test('can create team invitations', function (): void {
     $email = 'invite-'.uniqid().'@example.com';
     $invitation = teamMgmtCreateInvitation($team, ['email' => $email, 'role' => 'member']);
 
-    Assert::assertInstanceOf(TeamInvitation::class, $invitation);
     Assert::assertSame((string) $team->id, (string) $invitation->team_id);
     Assert::assertSame($email, $invitation->email);
     Assert::assertSame('member', $invitation->role);

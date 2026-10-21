@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_zWffwD
+=======
+---
+title: "Correzioni PHPStan - Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "correzioni phpstan - modulo user user"
+---
+>>>>>>> .merge_file_EUvQUh
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.

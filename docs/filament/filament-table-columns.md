@@ -8,6 +8,7 @@ qmd: "filament-table-columns convenzione metodo gettablecolumns per filament tab
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_4rVpj3
   - "./filament-table-columns-1.md"
   - "./filament-table-columns-2.md"
   - "./filament-table-columns-3.md"
@@ -16,6 +17,17 @@ related:
   - "./teams-relation-manager-3.md"
   - "./teams-relation-manager.md"
   - "./widgets-responsive-layout.md"
+=======
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-documentation-themes.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager.md"
+  - "./widgets-responsive-layout.md"
+status: draft
+>>>>>>> .merge_file_HImfO3
 ---
 
 # Convenzione Metodo getTableColumns per Filament Table
@@ -51,7 +63,11 @@ public function getTableColumns(): array
 - Aggiornare anche override, chiamate e test.
 
 ## Collegamenti
+<<<<<<< .merge_file_4rVpj3
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
+=======
+- [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns.md)
+>>>>>>> .merge_file_HImfO3
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 
 ---

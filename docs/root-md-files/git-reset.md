@@ -9,6 +9,10 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./pest-test-report.md"
+<<<<<<< .merge_file_laNwHb
+=======
+status: draft
+>>>>>>> .merge_file_W2bz2a
 ---
 
 #!/bin/sh

@@ -16,6 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_5IFT9I
+=======
+status: draft
+>>>>>>> .merge_file_NwVO4T
 ---
 
 # Best Practices per l'Implementazione del Logout

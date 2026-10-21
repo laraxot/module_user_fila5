@@ -8,6 +8,13 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/572"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
+<<<<<<< .merge_file_30Gju6
+=======
+type: story
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "registrazione cittadino: ux accessibile e verifica email locale user"
+>>>>>>> .merge_file_v95Sx8
 ---
 
 # Registrazione cittadino: UX accessibile e verifica email locale

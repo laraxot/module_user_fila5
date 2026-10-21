@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_tVlzqI
+=======
+---
+title: "Collisioni di nome per sola differenza di maiuscole"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "collisioni di nome per sola differenza di maiuscole user"
+---
+>>>>>>> .merge_file_1ppY2H
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31

@@ -11,7 +11,7 @@ return [
         'placeholder' => '',
     ],
     'password' => [
-        'key' => 'user::auth.password',
+        'key' => 'user::auth.password.error.text',
         'text' => 'La password inserita non è corretta.',
         'description' => 'Messaggio di errore mostrato quando la password inserita non è corretta',
         'context' => 'login_form',
@@ -95,7 +95,7 @@ return [
         'placeholder' => 'esempio@email.com',
     ],
     'Password' => [
-        'key' => 'user::auth.password',
+        'key' => 'user::auth.login.password.text',
         'text' => 'Password',
         'description' => 'Etichetta per il campo password nel form di accesso',
         'context' => 'login_form',
@@ -282,6 +282,13 @@ return [
         ],
         'back_to_site' => 'Torna al sito',
         'need_help' => 'Hai bisogno di aiuto?',
+        'intro' => [
+            'key' => 'user::auth.login.intro',
+            'text' => 'Accedi per inviare e seguire le tue segnalazioni.',
+            'description' => 'Introduzione pagina login',
+            'context' => 'login_form',
+            'placeholder' => '',
+        ],
         'welcome_back' => [
             'key' => 'user::auth.login.welcome-back',
             'text' => 'Bentornato',
@@ -302,6 +309,7 @@ return [
         'google' => [
             'key' => 'user::auth.login.google',
             'text' => 'Google',
+            'button' => ['text' => 'Accedi con Google'],
             'description' => 'Etichetta pulsante login social Google',
             'context' => 'login_form',
             'placeholder' => '',
@@ -437,6 +445,12 @@ return [
         'Remember me' => 'Ricordami',
         'Remember' => 'Ricordami',
         'Forgot your password?' => 'Password dimenticata?',
+        'invalid_provider' => 'Provider di accesso non valido.',
+        'redirecting' => 'Reindirizzamento in corso…',
+        'redirect_to_provider' => 'Stai per essere reindirizzato a :provider.',
+        'callback' => 'Accesso con :provider',
+        'callback_text' => 'Si è verificato un problema durante l’accesso con :provider.',
+        'back' => 'Torna all’accesso',
         'page' => [
             'meta_title' => [
                 'label' => 'Accedi ai servizi',
@@ -509,6 +523,10 @@ return [
                 'description' => 'Testo link registrazione',
             ],
         ],
+        'button' => ['text' => 'Accedi', 'context' => 'login_form'],
+        'button_loading' => ['text' => 'Accesso in corso...', 'context' => 'login_form'],
+        'forgot_password_text' => ['text' => 'Password dimenticata?', 'context' => 'login_form'],
+        'meta_description' => ['text' => 'Accedi per inviare e seguire le tue segnalazioni.', 'context' => 'login_form'],
     ],
     'register' => [
         'title' => [
@@ -1140,6 +1158,11 @@ return [
         'delete' => [
             'label' => 'Elimina Auth',
         ],
+        'login' => [
+            'success' => 'Accesso effettuato con successo.',
+            'error' => 'Email o password non corretti.',
+            'throttle' => 'Troppi tentativi. Riprova tra :seconds secondi.',
+        ],
     ],
     'auth_button' => [
         'login' => 'Accedi',
@@ -1157,4 +1180,18 @@ return [
         'help_password' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
         'help_support' => 'Per assistenza contatta l\'ufficio competente.',
     ],
+<<<<<<< .merge_file_HgMTBB
+=======
+    'forgot-password' => [
+        'title' => 'Password dimenticata?',
+        'subtitle' => 'Inserisci la tua email per ricevere le istruzioni',
+        'back_to_login' => 'Torna al login',
+        'submit' => 'Invia istruzioni',
+    ],
+    'login_widget' => [
+        'providers' => [
+            'google' => ['label' => 'Accedi con Google'],
+        ],
+    ],
+>>>>>>> .merge_file_0yTU6N
 ];

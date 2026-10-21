@@ -15,6 +15,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_f18pVu
+=======
+status: draft
+>>>>>>> .merge_file_bZ9TRL
 ---
 
 # User — Services/Support vietati: solo Actions

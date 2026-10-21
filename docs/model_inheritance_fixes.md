@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_GmUJiV
+=======
+---
+title: "Correzioni Ereditarietà Modelli - Modulo User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "correzioni ereditarietà modelli - modulo user user"
+---
+>>>>>>> .merge_file_ZcBCgQ
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione

@@ -16,6 +16,10 @@ related:
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+<<<<<<< .merge_file_eNmGUI
+=======
+status: draft
+>>>>>>> .merge_file_W0RJ2z
 ---
 
 # Modulo User

@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_EOHtng
+=======
+---
+title: "User Module - Business Logic Analysis"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - business logic analysis user"
+---
+>>>>>>> .merge_file_2wxibz
 # User Module - Business Logic Analysis
 
 ## Overview

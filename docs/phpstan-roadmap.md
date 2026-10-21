@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_QND78L
+=======
+---
+title: "PHPStan Roadmap: User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "phpstan roadmap: user module user"
+---
+>>>>>>> .merge_file_vCzyvH
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12
@@ -61,13 +72,22 @@ module: theme
 topic: phpstan-roadmap
 canonical: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
 related:
+<<<<<<< .merge_file_QND78L
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_vCzyvH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_QND78L
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_vCzyvH
   - "./actions-path-convention.md"
 ---
 

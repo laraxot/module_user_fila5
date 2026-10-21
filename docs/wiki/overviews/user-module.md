@@ -5,6 +5,13 @@ sources:
 confidence: high
 updated: 2026-04-15
 related:
+<<<<<<< .merge_file_bETiSh
+=======
+title: "User Module — Overview"
+status: draft
+tags: [docs, user, wiki]
+qmd: "user module   overview user"
+>>>>>>> .merge_file_02qNN8
 ---
 
 # User Module — Overview

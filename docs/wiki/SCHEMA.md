@@ -6,6 +6,13 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
+<<<<<<< .merge_file_84pZLn
+=======
+type: note
+status: draft
+updated: 2026-10-07
+qmd: "wiki schema - user user"
+>>>>>>> .merge_file_8eRra0
 ---
 
 # Wiki Schema - User

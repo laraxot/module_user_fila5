@@ -12,6 +12,12 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_CF0cGR
+=======
+status: draft
+tags: [docs, user, wiki]
+qmd: "stack frontend   modulo user user"
+>>>>>>> .merge_file_1QEZpk
 ---
 
 # Stack frontend — modulo User
@@ -27,8 +33,16 @@ UI auth/profile FO e widget Filament: **Filament v5** + componenti tema Sixteen.
 ## SSoT
 
 - [Themes/Sixteen/docs/wiki/rules/frontend-stack-canonical.md](../../../../../Themes/Sixteen/docs/wiki/rules/frontend-stack-canonical.md)
+<<<<<<< .merge_file_CF0cGR
 - [docs/wiki/rules/frontend-stack-canonical.md](../../../../../docs/wiki/rules/frontend-stack-canonical.md)
 
 ## Story
 
 [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)
+=======
+- [docs/wiki/rules/frontend-stack-canonical.md](../../../../../../docs/wiki/rules/frontend-stack-canonical.md)
+
+## Story
+
+[STORY-133](../../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)
+>>>>>>> .merge_file_1QEZpk

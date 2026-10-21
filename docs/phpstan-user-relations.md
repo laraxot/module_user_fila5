@@ -7,6 +7,10 @@ tags:
   - phpstan
   - larastan
   - user
+<<<<<<< .merge_file_RLQFdS
+=======
+qmd: "phpstan user relations user"
+>>>>>>> .merge_file_X8wUnW
 ---
 
 # PHPStan User Relations

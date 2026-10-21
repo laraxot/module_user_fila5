@@ -3,14 +3,30 @@ description:
 globs:
 alwaysApply: false
 related:
+<<<<<<< .merge_file_hTdc5Q
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_luxxLB
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_hTdc5Q
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "Linee guida per l'uso di Spatie Activitylog"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "linee guida per l'uso di spatie activitylog user"
+>>>>>>> .merge_file_luxxLB
 ---
 # Linee guida per l'uso di Spatie Activitylog
 

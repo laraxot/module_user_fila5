@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_eMi2L2
+=======
+---
+title: "User Module - User Research"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, product]
+qmd: "user module - user research user"
+---
+>>>>>>> .merge_file_9ejyai
 # User Module - User Research
 
 ## Research Overview

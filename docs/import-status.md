@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_r94yLG
+=======
+---
+title: "import status"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "import status user"
+---
+>>>>>>> .merge_file_QYEXVE
 
 ## Fix base 2026-08-30 — proprietà `$pivot` che oscurava la relation pivot
 

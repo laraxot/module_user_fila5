@@ -24,8 +24,6 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.reset-password-widget';
-
     /**
      * @return class-string<UserForm>
      */
@@ -41,13 +39,10 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
 
     public function mount(): void
     {
-        $this->form->fill();
+        $this->form->fill(['token' => (string) request()->route('token')]);
     }
 
-    /**
-     * @return RedirectResponse|void
-     */
-    public function resetPassword()
+    public function resetPassword(): ?RedirectResponse
     {
         $data = $this->form->getState();
 
@@ -69,5 +64,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
             return redirect()->route('login');
         }
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+
+        return null;
     }
 }

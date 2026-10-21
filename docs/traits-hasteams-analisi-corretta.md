@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_r73n4V
+=======
+---
+title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi corretta del trait hasteams - filosofia laraxot user"
+---
+>>>>>>> .merge_file_mB5Tvk
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -527,7 +538,11 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
+<<<<<<< .merge_file_r73n4V
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
+=======
+- [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md)
+>>>>>>> .merge_file_mB5Tvk
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 
@@ -536,13 +551,22 @@ module: theme
 topic: traits-hasteams-analisi-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 related:
+<<<<<<< .merge_file_r73n4V
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_mB5Tvk
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_r73n4V
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_mB5Tvk
   - "./actions-path-convention.md"
 ---
 

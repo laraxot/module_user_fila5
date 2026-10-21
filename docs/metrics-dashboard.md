@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_anjy0x
+=======
+---
+title: "User Module Metrics Dashboard"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module metrics dashboard user"
+---
+>>>>>>> .merge_file_AqlNzM
 # User Module Metrics Dashboard
 
 ## Overview
@@ -75,13 +86,22 @@ module: theme
 topic: metrics-dashboard
 canonical: ../../../Themes/docs/shared-components/metrics-dashboard.md
 related:
+<<<<<<< .merge_file_anjy0x
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_AqlNzM
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_anjy0x
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_AqlNzM
   - "./actions-path-convention.md"
 ---
 

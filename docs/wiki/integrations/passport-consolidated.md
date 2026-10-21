@@ -58,13 +58,22 @@ module: theme
 topic: passport-admin-actions
 canonical: ../../../Themes/docs/shared-components/passport-admin-actions.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -80,13 +89,22 @@ module: theme
 topic: passport-cluster-completion-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -107,13 +125,22 @@ qmd: "passport-cluster-completion passport cluster - status completamento"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -326,13 +353,22 @@ module: theme
 topic: passport-cluster-current-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -353,13 +389,22 @@ qmd: "passport-cluster-current passport cluster - status attuale e lavoro necess
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -476,13 +521,22 @@ module: theme
 topic: passport-cluster-implementation-completed
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -503,13 +557,22 @@ qmd: "passport-cluster-implementation-needed passport cluster - implementazione 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -704,7 +767,11 @@ class ListOauthClients extends XotBaseListRecords
 ## 📚 Riferimenti
 
 - [Passport Cluster Resources Pattern](./passport-cluster-resources-pattern.md)
+<<<<<<< .merge_file_NuMu9r
 - [Passport Cluster Summary](./passport-cluster-summary.md)
+=======
+- [Passport Cluster Summary](../../passport-cluster-summary.md)
+>>>>>>> .merge_file_2DVssw
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
 ---
@@ -723,13 +790,22 @@ module: theme
 topic: passport-cluster-implementation-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -750,13 +826,22 @@ qmd: "passport-cluster-implementation passport cluster - implementation status"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -951,13 +1036,22 @@ qmd: "passport-cluster-implementationd passport cluster - implementazione comple
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1164,13 +1258,22 @@ qmd: "passport-cluster-inner-debate discussione interiore: pro e contro cluster 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1220,13 +1323,22 @@ module: theme
 topic: passport-cluster-innerebate
 canonical: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1242,13 +1354,22 @@ module: theme
 topic: passport-cluster-litigation
 canonical: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1264,13 +1385,22 @@ module: theme
 topic: passport-cluster-namespace-fix
 canonical: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1291,13 +1421,22 @@ qmd: "passport-cluster-namespace passport cluster - namespace fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1550,13 +1689,22 @@ module: theme
 topic: passport-cluster-philosophy
 canonical: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1572,13 +1720,22 @@ module: theme
 topic: passport-cluster-proposal
 canonical: ../../../Themes/docs/shared-components/passport-cluster-proposal.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1599,13 +1756,22 @@ qmd: "passport-cluster-resources-only-rule regola critica: cluster passport - so
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1710,7 +1876,11 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 ## 📚 Riferimenti
 
+<<<<<<< .merge_file_NuMu9r
 - [Passport Cluster Summary](./passport-cluster-summary.md)
+=======
+- [Passport Cluster Summary](../../passport-cluster-summary.md)
+>>>>>>> .merge_file_2DVssw
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md)
 - [Filament Clusters Documentation](../../xot/docs/filament-class-extension-rules.md)
 
@@ -1735,13 +1905,22 @@ qmd: "passport-cluster-resources passport cluster resources pattern"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -1906,13 +2085,22 @@ qmd: "passport-cluster-summary passport cluster - riepilogo completo"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2083,13 +2271,22 @@ qmd: "passport-cluster-verification passport cluster - verifica risorse"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2166,7 +2363,11 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md) - Regola critica
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md) - Implementazione
+<<<<<<< .merge_file_NuMu9r
 - [Passport Cluster Summary](./passport-cluster-summary.md) - Riepilogo
+=======
+- [Passport Cluster Summary](../../passport-cluster-summary.md) - Riepilogo
+>>>>>>> .merge_file_2DVssw
 
 ---
 
@@ -2189,13 +2390,22 @@ qmd: "passport-cluster-work-completion passport cluster - completamento lavoro"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2387,13 +2597,22 @@ qmd: "passport-cluster filosofia e politica: implementazione del cluster passpor
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2445,13 +2664,22 @@ module: theme
 topic: passport-complete-implementation
 canonical: ../../../Themes/docs/shared-components/passport-complete-implementation.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2467,13 +2695,22 @@ module: theme
 topic: passport-complete-management-debate
 canonical: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2494,13 +2731,22 @@ qmd: "passport-implementation-summary laravel passport implementation summary - 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2617,13 +2863,22 @@ qmd: "passport-implementation laravel passport implementation summary - user mod
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -2740,13 +2995,22 @@ qmd: "passport-integration laravel passport integration - architettura completa"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -3296,13 +3560,22 @@ qmd: "passport-managementebate passport complete management - internal debate & 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -3549,13 +3822,22 @@ qmd: "passport-model-wrappers passport model wrappers"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -3611,13 +3893,22 @@ qmd: "passport-vs-socialite-clarification passport vs socialite - distinzione cr
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 
@@ -3731,13 +4022,22 @@ module: theme
 topic: passport
 canonical: ../../../Themes/docs/shared-components/passport-Modules.md
 related:
+<<<<<<< .merge_file_NuMu9r
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_2DVssw
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_NuMu9r
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_2DVssw
   - "./actions-path-convention.md"
 ---
 

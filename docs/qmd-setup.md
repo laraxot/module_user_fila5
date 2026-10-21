@@ -5,7 +5,13 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
+<<<<<<< .merge_file_q9i9RH
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+=======
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+status: draft
+qmd: "qmd setup per module **user** user"
+>>>>>>> .merge_file_KFogvN
 ---
 
 # QMD Setup per Module **User**
@@ -63,7 +69,11 @@ qmd search "form" -c user  # Solo questo modulo
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
+<<<<<<< .merge_file_q9i9RH
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+=======
+- [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+>>>>>>> .merge_file_KFogvN
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

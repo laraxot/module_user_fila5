@@ -12,6 +12,10 @@ related:
   - "./implementation.md"
   - "./translation-guidelines.md"
   - "./translationlines.md"
+<<<<<<< .merge_file_4OFBrM
+=======
+status: draft
+>>>>>>> .merge_file_DHO9gZ
 ---
 
 # EditUserWidget Documentation
@@ -141,7 +145,11 @@ All widget text follows the expanded translation structure:
 * Translation system integration
 * File upload and image processing capabilities
 ## Related Documentation
+<<<<<<< .merge_file_4OFBrM
 * [User Module Widget Structure](../widgets-structure-2.md)
+=======
+* [User Module Widget Structure](../widgets-structure-user.md)
+>>>>>>> .merge_file_DHO9gZ
 * [Widget Translation Guidelines](./translation-guidelines.md)
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)

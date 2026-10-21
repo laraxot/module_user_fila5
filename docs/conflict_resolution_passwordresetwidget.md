@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_sK7wCF
+=======
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "risoluzione conflitti passwordresetwidget.php user"
+---
+>>>>>>> .merge_file_4Ygrbd
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto

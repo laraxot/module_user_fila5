@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_RWz1uU
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -21,3 +22,17 @@ This document explains the rationale behind using `TeamContract` instead of `Tea
 The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns with software engineering best practices, enhancing the flexibility, maintainability, and testability of the codebase. This approach prepares the system for future expansions or modifications to team-related functionalities without necessitating significant refactoring.
 
 *Last Updated: 16 May 2025*
+=======
+---
+title: "team_contract_usage_reasoning (superseded)"
+type: note
+status: superseded
+updated: 2026-10-20
+superseded_by: ./team-contract-usage-reasoning.md
+qmd: "team contract usage reasoning superseded"
+---
+
+# Superseded
+
+Canonica: [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md).
+>>>>>>> .merge_file_5uxnE7

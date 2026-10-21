@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_YjqV1X
+=======
+---
+title: "Gestione coerente di roles, permissions e guard_name"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "gestione coerente di roles, permissions e guard_name user"
+---
+>>>>>>> .merge_file_iiNLy1
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale
@@ -34,13 +45,22 @@ module: theme
 topic: roles-permissions
 canonical: ../../../Themes/docs/shared-components/roles-permissions.md
 related:
+<<<<<<< .merge_file_YjqV1X
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iiNLy1
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_YjqV1X
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iiNLy1
   - "./actions-path-convention.md"
 ---
 

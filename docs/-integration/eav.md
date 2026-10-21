@@ -16,6 +16,10 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
+<<<<<<< .merge_file_3hEtv1
+=======
+status: draft
+>>>>>>> .merge_file_K8qeja
 ---
 
 # eav

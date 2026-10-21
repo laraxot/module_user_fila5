@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_zheiGK
+=======
+---
+title: "Componenti Header"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "componenti header user"
+---
+>>>>>>> .merge_file_Ux0L5T
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -87,4 +98,8 @@
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+<<<<<<< .merge_file_zheiGK
 - [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+=======
+- [Gestione Sessione](./session_management.md) 
+>>>>>>> .merge_file_Ux0L5T

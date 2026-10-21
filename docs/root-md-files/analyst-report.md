@@ -1,3 +1,11 @@
+---
+title: "User Module — Analyst Report"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user, root-md-files]
+qmd: "user module   analyst report user"
+---
 # User Module — Analyst Report
 
 **Date**: 2026-07-09  

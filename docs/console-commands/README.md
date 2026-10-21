@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_ZnUGeH
+=======
+---
+title: "Comandi Console - Modulo User"
+type: index
+status: draft
+updated: 2026-10-08
+tags: [docs, user, console-commands]
+qmd: "comandi console - modulo user user"
+---
+>>>>>>> .merge_file_kMeKUR
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -262,8 +273,13 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands-philosophy-1-1.md"
+<<<<<<< .merge_file_ZnUGeH
   - "./console-commands-philosophy-1.md"
   - "./console-commands-philosophy-2.md"
+=======
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+>>>>>>> .merge_file_kMeKUR
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
 ---

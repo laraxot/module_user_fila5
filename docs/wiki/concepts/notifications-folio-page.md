@@ -15,6 +15,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_jxE3Sp
+=======
+status: draft
+>>>>>>> .merge_file_2B5BmN
 ---
 
 # Pagina Folio notifiche — centro in-app
@@ -82,10 +86,18 @@ Runtime unread count: `NotificationSchema::isReadable()` in header prima del lin
 cd laravel && php artisan folio:list | grep notifications
 ```
 
+<<<<<<< .merge_file_jxE3Sp
 Troubleshooting cache: [route-not-found-view-cache.md](../../../../Themes/Sixteen/docs/wiki/troubleshooting/route-not-found-view-cache.md)
+=======
+Troubleshooting cache: [route-not-found-view-cache.md](../../../../../Themes/Sixteen/docs/wiki/troubleshooting/route-not-found-view-cache.md)
+>>>>>>> .merge_file_2B5BmN
 
 ## Collegamenti
 
 - [Route name quick ref](notifications-folio-route.md)
 - [Runtime model](notifications-runtime-model.md)
+<<<<<<< .merge_file_jxE3Sp
 - [Folio no web.php](../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md)
+=======
+- [Folio no web.php](../../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md)
+>>>>>>> .merge_file_2B5BmN

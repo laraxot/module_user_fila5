@@ -7,6 +7,11 @@ created: 2026-06-04
 updated: 2026-06-04
 tags: [user, filament, register, kiss]
 related:
+<<<<<<< .merge_file_lXfjus
+=======
+status: draft
+qmd: "registerwidget kiss persist user"
+>>>>>>> .merge_file_ctwa9H
 ---
 
 # RegisterWidget KISS persist

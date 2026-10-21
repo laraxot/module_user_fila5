@@ -5,6 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_pOyyyX
+=======
+status: draft
+qmd: "terms and conditions user"
+>>>>>>> .merge_file_4npujt
 ---
 
 https://github.com/nowendwell/laravel-terms

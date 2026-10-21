@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_Wp7GQV
+=======
+---
+title: "User Module - PHPStan Level 10 Fix Plan"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module - phpstan level 10 fix plan user"
+---
+>>>>>>> .merge_file_V5OiVT
 # User Module - PHPStan Level 10 Fix Plan
 
 ## Analysis Date
