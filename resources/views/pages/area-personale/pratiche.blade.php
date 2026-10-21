@@ -25,9 +25,11 @@ new class extends Component {
             return;
         }
 
-        $this->tickets = app(BuildAuthenticatedUserTicketsQueryAction::class)
-            ->execute()
-            ->paginate(15);
+        $this->tickets = class_exists(BuildAuthenticatedUserTicketsQueryAction::class)
+            ? app(BuildAuthenticatedUserTicketsQueryAction::class)
+                ->execute()
+                ->paginate(15)
+            : new LengthAwarePaginator([], 0, 15);
     }
 };
 ?>

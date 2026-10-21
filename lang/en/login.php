@@ -3,6 +3,15 @@
 declare(strict_types=1);
 
 return [
+    'logout_in_progress' => 'Signing out…',
+    'email_verified' => 'Email address verified. Thank you!',
+    'password_reset_page' => [
+        'title' => 'Reset your password',
+        'intro' => 'Enter your account email and we will send you a link to choose a new password.',
+        'return_to_login' => 'Back to sign in',
+        'email_label' => 'Email address',
+        'submit' => 'Send reset link',
+    ],
     'fields' => [
         'email' => [
             'label' => 'Email',
@@ -67,6 +76,10 @@ return [
             'error' => 'Unable to reset password',
         ],
     ],
+    'no_account' => 'Do not have an account yet?',
+    'register_now' => 'Create your account',
+    'forgot_password_text' => 'Forgot your password?',
+    'reset_it' => 'Reset it',
     'messages' => [
         'logout_success' => 'Successfully logged out',
         'logout_error' => 'An error occurred during logout',

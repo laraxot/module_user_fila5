@@ -3,6 +3,14 @@
 declare(strict_types=1);
 
 return [
+    'logout_in_progress' => 'Cerrando sesión…',
+    'password_reset_page' => [
+        'title' => 'Restablecer la contraseña',
+        'intro' => 'Introduce tu correo electrónico y te enviaremos un enlace para elegir una nueva contraseña.',
+        'email_label' => 'Correo electrónico',
+        'submit' => 'Enviar enlace de restablecimiento',
+        'return_to_login' => 'Volver al inicio de sesión',
+    ],
     'fields' => [
         'email' => ['label' => 'Correo electrónico', 'placeholder' => 'Introduce tu correo electrónico', 'help' => 'Introduce el correo de tu cuenta', 'description' => '', 'helper_text' => '', 'tooltip' => ''],
         'password' => ['label' => 'Contraseña', 'placeholder' => 'Introduce tu contraseña', 'help' => 'Introduce la contraseña de tu cuenta', 'description' => '', 'helper_text' => '', 'tooltip' => ''],

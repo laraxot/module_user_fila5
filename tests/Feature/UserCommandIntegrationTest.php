@@ -10,6 +10,7 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use Symfony\Component\Console\Input\InputDefinition;
 
 uses(TestCase::class);
 
@@ -63,6 +64,12 @@ describe('User Command Integration', function (): void {
     test('can handle command input output operations', function (): void {
         /** @var TestCase $this */
         $command = TestCase::requireCommand();
+
+        $reflection = new \ReflectionClass($command);
+
+        Assert::assertInstanceOf(InputDefinition::class, $command->getDefinition());
+        Assert::assertTrue($reflection->hasMethod('info'));
+        Assert::assertTrue($reflection->hasMethod('error'));
     });
 
     test('validates command signature and options', function (): void {
@@ -142,6 +149,11 @@ describe('User Command Integration', function (): void {
     test('can handle command lifecycle', function (): void {
         /** @var TestCase $this */
         $command = TestCase::requireCommand();
+
+        $reflection = new \ReflectionClass($command);
+
+        Assert::assertTrue($reflection->hasMethod('run'));
+        Assert::assertTrue($reflection->hasMethod('handle'));
     });
 
     test('validates dependency injection compatibility', function (): void {

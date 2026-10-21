@@ -10,16 +10,18 @@ use Illuminate\Support\Facades\Auth;
 /*
  * Attribute class Volt\Routing\Attribute\Post does not exist.
  *
- * #[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
+ * #[Post('/it/auth/logout', name: 'logout', middleware: ['web', 'auth'])]
+ * #[Post('/en/auth/logout', name: 'logout.en', middleware: ['web', 'auth'])]
  */
 final class LogoutAction
 {
-    public function __invoke(): RedirectResponse
+    public function __invoke(?string $lang = null): RedirectResponse
     {
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
 
-        return redirect()->route('home');
+        // La route `home` non esiste: la home del front office e' /{locale}
+        return redirect('/'.($lang ?? app()->getLocale()));
     }
 }

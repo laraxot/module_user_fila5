@@ -1,3 +1,8 @@
+---
+title: user-audit-improvements.story
+module: User
+---
+
 # BMAD Story: User Module Audit Improvements
 
 **Story ID**: USER-2026-AUDIT-001  

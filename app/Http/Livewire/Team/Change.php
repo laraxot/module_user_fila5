@@ -60,7 +60,7 @@ class Change extends Component
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
-        if (null !== $team) {
+        if ($team !== null) {
             // TeamSwitched::dispatch($team->fresh(), $this->user);
             TeamSwitched::dispatch($team, $this->user);
         }
@@ -83,7 +83,7 @@ class Change extends Component
         $view_params = [
             'view' => $view,
         ];
-        if ([] === $this->teams) {
+        if ($this->teams === []) {
             /** @phpstan-var view-string */
             $view = 'ui::livewire.empty';
         }

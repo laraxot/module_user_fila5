@@ -14,6 +14,8 @@ describe('UpdateUserAction', function (): void {
 
     test('action has execute method', function (): void {
         $action = app(UpdateUserAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
     });
 
     test('execute method accepts user and data parameters', function (): void {

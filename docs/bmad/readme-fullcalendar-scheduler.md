@@ -1,3 +1,8 @@
+---
+title: readme-fullcalendar-scheduler
+module: User
+---
+
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo

@@ -2,80 +2,110 @@
 title: "User — scopo del modulo e come raggiungerlo meglio"
 type: concept
 status: active
-created: 2026-10-06
-tags: [user, purpose, autenticazione, autorizzazione, rbac, tenant, team]
-qmd: "user scopo modulo autenticazione autorizzazione rbac spatie permission tenant team multi-tenancy identita profilo oauth"
-updated: 2026-10-06
+created: 2026-09-02
+tags: [user, purpose, identita, autorizzazione, profilo, oauth, team]
+qmd: "user scopo modulo identita autorizzazione profilo oauth passport team ruoli permessi contract"
+updated: 2026-09-02
 issues:
-  - "https://github.com/laraxot/module_user_fila5/issues/110"
+  # DA CREARE — `gh` non autenticato: mai numeri inventati.
+  # gh issue create --repo provtv/module_user_fila5 --title "<argomento del file>"
+  - "https://github.com/provtv/module_user_fila5/issues/"
 discussions:
-  - "https://github.com/laraxot/module_user_fila5/discussions/104"
+  # DA CREARE — vedi sopra.
+  - "https://github.com/provtv/module_user_fila5/discussions/"
 ---
 
 # User — perche' esiste
 
 ## Lo scopo in una frase
 
-**User centralizza l'autenticazione, l'autorizzazione RBAC e la gestione della multi-tenancy, fornendo modelli e trait condivisi che tutti gli altri moduli usano per identificare chi agisce e in quale contesto.**
+**User risponde a tre domande e non ad altre: chi sei, cosa puoi fare, per conto di
+chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.**
 
 ## L'evidenza
 
-- `User`, `Team`, `Tenant`: modelli base per identity, gruppi, isolamento
-- `HasTeams`, `HasTenants`, `HasAuthenticationLog`: trait di autenticazione e autorizzazione
-- 666 file PHP, 57 Action, 26 Widget: qui l'interfaccia conta — login, profilo, gestione team sono superfici che l'utente tocca davvero
-- OAuth completo (`OauthClient`, `OauthAccessToken`, `OauthRefreshToken`, `OauthAuthCode`, `OauthPersonalAccessClient`)
-- `AuthenticationLog`, `Device`: tracciamento accessi e dispositivi
-- `Feature` (Pennant): funzionalita' attivabili per utente o contesto
-- `BaseUser`, `BaseProfile`: classi base per estensione
+- 666 file PHP, 57 Action, **20 Widget**: il numero di widget dice che qui l'interfaccia
+  conta — login, profilo, gestione team sono superfici che l'utente tocca davvero.
+- OAuth completo (`OauthClient`, `OauthAccessToken`, `OauthRefreshToken`,
+  `OauthAuthCode`, `OauthPersonalAccessClient`): non solo login web, anche accesso
+  programmatico.
+- `AuthenticationLog`, `Device`: chi e' entrato, da dove. In una pubblica
+  amministrazione non e' un lusso, e' un requisito.
+- `Feature` (Pennant): funzionalita' attivabili per utente o per contesto.
+- `BaseUser`, `BaseProfile`: classi base, quindi punti di estensione previsti.
 
 ## La distinzione che regge tutto: utente ≠ profilo ≠ dipendente
 
-Sono tre cose diverse:
+Sono tre cose diverse e confonderle e' l'errore piu' costoso in questo dominio:
 
 | Concetto | Cos'e' | Dove vive |
 |---|---|---|
 | **User** | credenziali e permessi | User |
-| **Profile** | dati della persona come utente della piattaforma | User |
-| **Dipendente** | persona nell'organico dell'ente, matricola e storia | Sigma |
+| **Profile** | i dati della persona come utente della piattaforma | User |
+| **Dipendente** | la persona nell'organico dell'ente, con matricola e storia | Sigma |
 
-Un utente puo' non essere un dipendente. Un dipendente puo' non avere un utente. Il collegamento e' una relazione, non un'identita'.
+Un utente puo' non essere un dipendente (un consulente, un revisore). Un dipendente
+puo' non avere un utente. Il collegamento e' una relazione, non un'identita'.
 
-**Corollario:** nei PHPDoc, i riferimenti a creatore/aggiornatore vanno tipizzati su `Modules\Xot\Contracts\ProfileContract`, **mai** sulla classe concreta di un modulo verticale.
+**Corollario operativo verificato:** nei PHPDoc, i riferimenti a creatore/aggiornatore
+vanno tipizzati su `Modules\Xot\Contracts\ProfileContract`, **mai** sulla classe
+concreta di un modulo verticale. Tipizzare sul concreto lega Xot al dominio e inverte
+la dipendenza.
 
-## Come raggiungerlo meglio
+## Come raggiungerlo **meglio**
 
-### 1. README con informazioni corrette
+### 1. Il README dichiara cose false, e questa e' la prima cosa da sistemare
 
-Badge e versioni riportano: Laravel `^13.0`, PHP `^8.3`, Filament `^5.0`, PHPStan `max` con 0 errori (verificato 2026-09-02).
+Oggi `README.md` mostra badge "Laravel 12", "PHP 8.4+", "PHPStan Level 10" e contiene
+il placeholder mai sostituito `<nome progetto>`. La verita' misurata:
+Laravel `^13.0`, PHP `^8.3`, PHPStan `level: max` (il progetto vieta esplicitamente di
+passare `--level`).
 
-### 2. Documentazione proporzionata
+Un badge che mente e' peggio di un badge assente: fa saltare la verifica a chi legge.
 
-666 file PHP e 56 righe di README. Serve una mappa in `docs/index.md`: login, ruoli/permessi, team, profilo, OAuth, feature flag.
+### 2. 666 file PHP e un README di 56 righe
 
-### 3. Permessi come contratto, non deduzione
+E' il rapporto peggiore del progetto fra codice e spiegazione. Chi entra in User non ha
+un punto di partenza proporzionato a cio' che trovera'.
 
-`docs/permissions.md` con matrice ruolo → permessi → effetto concreto. Test che verifichi i permessi usati nelle Policy.
+**Azione:** oltre a questo documento, una mappa in `docs/index.md` che dica dove
+guardare per: login, ruoli e permessi, team, profilo, OAuth, feature flag. Sei voci.
 
-**Gap confermato (2026-09-22):** 30+ classi Policy (Team, User, Profile, Role, Device, Feature, SocialProvider, Tenant) non hanno permessi: ogni `can('x')` nega in silenzio.
+### 3. I permessi vanno documentati come contratto, non dedotti dal seeder
 
-### 4. Separare Team e multi-tenancy
+Con Spatie Permission il rischio e' che il vero elenco dei permessi viva solo nel
+seeder. Chi deve capire "chi puo' approvare una scheda" finisce a leggere codice.
 
-`Team` (qui) e `Tenant` (modulo Tenant) sono due meccanismi di separazione. Va dichiarato quale e' il confine dei dati e quale l'organizzazione.
+**Azione:** `docs/permissions.md` con la matrice ruolo → permessi → cosa consente in
+concreto, e un test che verifichi che i permessi usati nelle Policy esistano davvero.
+Un `can('x')` con permesso inesistente **nega in silenzio**: sembra una scelta di
+sicurezza, e' un bug.
 
-### 5. Usare AuthenticationLog
+### 4. Team e multi-tenancy non devono sovrapporsi
 
-Dati di accesso e dispositivi esistono gia' in UI (`AuthenticationLogResource`, `RecentLoginsWidget`, `DeviceResource`). Manca euristica di anomalia (nuovo dispositivo, orario inusuale).
+`Team` (qui) e `Tenant` (modulo Tenant) sono due meccanismi di separazione. Se
+entrambi decidono "cosa vedo", la regola effettiva diventa la loro intersezione — e
+nessuno dei due documenti la descrive.
+
+**Azione:** dichiarare qui quale dei due e' il confine dei dati e quale
+l'organizzazione interna. Una frase, ma va scritta.
+
+### 5. Il log di accesso va usato, non solo scritto
+
+`AuthenticationLog` e `Device` raccolgono dati preziosi che oggi nessuna schermata
+interroga.
+
+**Azione:** una vista "accessi anomali" (nuovo dispositivo, orario inusuale). Il dato
+c'e' gia': manca la domanda.
 
 ## Confini — cosa **non** appartiene a User
 
-- I **dati di servizio** del dipendente (matricola, categoria, struttura): Sigma
-- Le **valutazioni**: moduli di dominio
-- L'**infrastruttura Filament**: Xot
-- Le **notifiche**: Notify. User decide *chi* puo' ricevere, non *come* si spedisce
+- I **dati di servizio** del dipendente (matricola, categoria, struttura): Sigma.
+- Le **valutazioni**: moduli di dominio.
+- L'**infrastruttura Filament**: Xot.
+- Le **notifiche**: Notify. User decide *chi* puo' ricevere, non *come* si spedisce.
 
 ## Collegamenti
 
 - `laravel/Modules/Tenant/docs/purpose.md` — l'altro asse di separazione
 - `laravel/Modules/Xot/docs/purpose.md` — `ProfileContract` e le classi base
-- `docs/bmad/module-excellence-prd.md` — gap verso "perfezione assoluta" (Epic 12/13/14)
-- `docs/bmad/decision-log.md` — correzioni e aggiornamenti (2026-09-22)

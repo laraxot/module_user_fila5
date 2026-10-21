@@ -237,6 +237,7 @@ describe('Authentication Business Logic', function (): void {
 
         it('distinguishes personal vs organizational teams', function (): void {
             $team = authBizTeamData();
+            $user = authBizUserData();
 
             Assert::assertFalse((bool) $team['personal_team']);
             Assert::assertStringNotContainsString('Personal', $team['name']);
@@ -249,6 +250,7 @@ describe('Authentication Business Logic', function (): void {
 
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
             Assert::assertStringContainsString('Personal', $personalTeam['name']);
+            Assert::assertSame($user['id'], $personalTeam['user_id']);
         });
 
         it('validates team settings and preferences', function (): void {
@@ -447,8 +449,9 @@ describe('Authentication Business Logic', function (): void {
             ];
 
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);
+            Assert::assertStringContainsString('Mozilla', $attempt['user_agent']);
             Assert::assertSame('Italy', $attempt['country']);
-            Assert::assertFalse($isSuspicious);
+            Assert::assertFalse($attempt['is_suspicious']);
         });
     });
 });

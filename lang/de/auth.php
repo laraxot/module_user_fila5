@@ -277,4 +277,23 @@ return [
         'token' => 'Il token di reset password non è valido.',
         'user' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
     ],
+    'login_page' => [
+        'meta_title' => 'Anmelden | FixCity',
+        'kicker' => 'Persönlicher Bereich',
+        'title' => 'Melden Sie sich bei Ihrem Konto an',
+        'description' => 'Melden Sie sich an, um ein Problem zu melden, Ihre Vorgänge zu verfolgen und Updates zu erhalten.',
+        'support_title' => 'Brauchen Sie Hilfe?',
+        'support_item_email' => 'Verwenden Sie die E-Mail-Adresse, mit der Sie sich registriert haben.',
+        'support_item_password' => 'Passwort vergessen? Sie können es in wenigen Sekunden zurücksetzen.',
+        'support_item_help' => 'Wenn das Problem weiterhin besteht, wenden Sie sich an den Support Ihrer Gemeinde.',
+    ],
+    'register_page' => [
+        'title' => 'Konto erstellen',
+        'subtitle' => 'Persönlicher Bereich',
+        'description' => 'Füllen Sie das Formular aus, um Ihr Konto zu erstellen und alle Funktionen zu nutzen.',
+        'support_title' => 'Hilfe bei der Registrierung',
+        'help_email' => 'Verwenden Sie die E-Mail-Adresse, mit der Sie sich anmelden werden.',
+        'help_password' => 'Das Passwort muss mindestens 12 Zeichen lang sein und einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten.',
+        'help_support' => 'Bei Fragen wenden Sie sich an die zuständige Stelle.',
+    ],
 ];

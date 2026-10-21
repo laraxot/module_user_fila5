@@ -169,13 +169,15 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
-        $adminTeam = $this->createTeam('Amministratori');
-        $devTeam = $this->createTeam('Sviluppatori');
-        $supportTeam = $this->createTeam('Supporto Clienti');
-        $marketingTeam = $this->createTeam('Marketing');
-        $generalTeam = $this->createTeam('Team Generale');
+        $teams = array_map($this->createTeam(...), [
+            'Amministratori',
+            'Sviluppatori',
+            'Supporto Clienti',
+            'Marketing',
+            'Team Generale',
+        ]);
 
-        $this->command->info('   ✓ Creati 5 team di sistema');
+        $this->command->info('   ✓ Creati '.count($teams).' team di sistema');
     }
 
     private function createTeam(string $name): Team

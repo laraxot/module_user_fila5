@@ -30,6 +30,7 @@ use Modules\Xot\Contracts\UserContract;
  * @property UserContract|null $owner
  * @property int|null $team_invitations_count
  * @property int|null $users_count
+ * @property Collection<int, Model&UserContract> $users
  *
  * @method static Builder<Model> newModelQuery()
  * @method static Builder<Model> newQuery()

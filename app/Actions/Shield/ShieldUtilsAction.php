@@ -131,7 +131,7 @@ class ShieldUtilsAction
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            Assert::string(...),
             $res
         ));
     }
@@ -213,7 +213,7 @@ class ShieldUtilsAction
         Assert::isArray($res = config('filament-shield.exclude.resources'));
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            Assert::string(...),
             $res
         ));
     }
@@ -226,7 +226,7 @@ class ShieldUtilsAction
         Assert::isArray($res = config('filament-shield.exclude.pages'));
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            Assert::string(...),
             $res
         ));
     }
@@ -239,7 +239,7 @@ class ShieldUtilsAction
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            Assert::string(...),
             $res
         ));
     }
@@ -286,7 +286,7 @@ class ShieldUtilsAction
         Assert::isArray($res);
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            Assert::string(...),
             $res
         ));
     }

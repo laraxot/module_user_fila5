@@ -9,6 +9,7 @@ namespace Modules\User\Filament\Actions\Profile;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Utilities\Get;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
@@ -66,10 +67,7 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                         ->password()
                         ->rule(
                             'required',
-                            /**
-                             * @param  callable(string): mixed  $get
-                             */
-                            static fn (callable $get): bool => (bool) $get('new_password')
+                            static fn (Get $get): bool => (bool) $get('new_password')
                         )
                         ->same('new_password'),
                 ];

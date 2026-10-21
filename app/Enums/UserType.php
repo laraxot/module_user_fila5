@@ -26,15 +26,14 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     case System = 'system';
     case Technician = 'technician';
 
-    private const string API = 'api';
-
-    private const string WEB = 'web';
-
+    /**
+     * Nome del guard (config/auth.php) con cui questo tipo di utente si autentica.
+     */
     public function getDefaultGuard(): string
     {
         return match ($this) {
-            self::MasterAdmin, self::System, self::CustomerUser, self::BoUser => self::WEB,
-            self::Technician => self::API,
+            self::MasterAdmin, self::System, self::CustomerUser, self::BoUser => 'web',
+            self::Technician => 'api',
         };
     }
 }
