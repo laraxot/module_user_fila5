@@ -1,26 +1,19 @@
-<<<<<<< .merge_file_svInGF
-# 📚 **Indice Documentazione Modulo User**
-
-**Status**: ✅ PHPStan Level 10 Compliant
-**Module Version**: 2.5.0
-
-## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
-3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
-=======
 ---
 title: "User - indice canonico della documentazione"
 type: index
 status: active
-updated: 2026-10-20
+updated: 2026-10-21
 module: User
 tags: [docs, user, index]
 qmd: "user modulo indice canonico docs identita contenuto reale directory ingressi duplicati link rotti"
+related:
+  - ./README.md
+  - ./scopo.md
+  - ../../Xot/docs/conventions/docs-organization.md
 ---
 # 📚 **Indice Documentazione Modulo User**
 
-Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
+Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: [docs-organization](../../Xot/docs/conventions/docs-organization.md)). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
 
 **Status PHPStan (verificato 2026-10-14, storico: superato dalla misura del 2026-10-20 qui sotto)**: `cd laravel && ./vendor/bin/phpstan analyse Modules/User` (livello `max` da `laravel/phpstan.neon`) segnala 3 errori, tutti `argument.type` alla riga 8 di `lang/de/validation.php`, `lang/en/validation.php`, `lang/es/validation.php` (`array_replace_recursive` riceve `mixed`). In `app/` gli errori sono 0. La dicitura precedente "Level 10 Compliant" era quindi vera solo per `app/`.
 **Aggiornamento PHPStan 2026-10-20**: il pull del 2026-10-20 ha riportato in `tests/` un lotto di test non allineato al codice (sull'intero `Modules` circa 9800 errori, quasi tutti nei test; nel modulo User 2812 prima delle correzioni). La lane `user-b` ha riportato a 0 errori 33 file di test (causa: factory non tipizzata, `TestCase` impoverita dal merge, test fantasma): cosa e' stato corretto e cosa neutralizzato sta in [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md). Il conteggio dell'intero modulo spetta al run di coordinamento ([Xot](../../Xot/docs/stories/phpstan-test-wave-regression.story.md)); la riga del 2026-10-14 qui sopra non va letta come stato attuale. I 14 file di test rimasti (182 errori) sono nella story [stories/phpstan-test-wave-user.story.md](./stories/phpstan-test-wave-user.story.md). Misura del 2026-10-20 ore 10:07: `cd laravel && ./vendor/bin/phpstan analyse Modules/User --memory-limit=2G --no-progress --error-format=raw` esce con codice 0 e nessun errore (compresi i tre `lang/*/validation.php` della riga storica); la soglia `typeCoverage.*` si prova solo con `analyse Modules` intero.
@@ -92,7 +85,6 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 📜 **[TeamContract](./contracts/teamcontract.md)** — API + nullability (`personalTeam()`, `belongsToTeam(?TeamContract)`).
 - 🧠 **[Perché TeamContract](./team-contract-usage-reasoning.md)** — DIP, STI, perché i test tipizzano.
 - 🔗 **[HasTeamsAndUserContract](./contracts/hasteamsandusercontract.md)** — Contratto composto utente+team.
->>>>>>> .merge_file_E55hxL
 
 ## 🏗️ **Architettura & Auth**
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.
@@ -103,11 +95,7 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
-<<<<<<< .merge_file_svInGF
-- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
-=======
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival.md)** (file rinominato, oggi e' solo uno stub deprecato che rinvia a se stesso: il testo originale e' nella cronologia git) - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
->>>>>>> .merge_file_E55hxL
 
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
@@ -119,14 +107,6 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
-<<<<<<< .merge_file_svInGF
-
-## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers-2026-03-10.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
-- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave-2026-03-10.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
-- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
-=======
 - 📋 **[Livewire → Filament planning](./bmad/livewire-to-filament-planning.md)** - Matrice MIGRATE|REUSE|KEEP|RETIRE. **W0 ✓ (2026-10-20):** legal panel `REUSE` widget — HTTP `TermsOfService`/`PrivacyPolicy` ritirati; alias `_components.json` solo `profile.delete-account`. [Inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) · [fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md) · [livewire-inventory](./bmad/livewire-inventory.md).
 
 ## 🧪 **Qualità e Sviluppo**
@@ -140,22 +120,14 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - **[PHPStan, ondata test 2026-10-20 (lane user, 14 file rimasti)](./stories/phpstan-test-wave-user.story.md)** - Cause per famiglia, contratti dei permessi allineati, cosa resta (Tenant, Pest, harness).
 - **[PHPStan, ondata test 2026-10-20 (user-a, 39 file)](./stories/phpstan-test-wave-user-a.story.md)** - Produzione (`LoginWidget`, contratti, `routes/auth.php`, `lang/it/auth.php`), helper 2FA, specifiche fantasma neutralizzate, decisioni aperte.
 - **[Chiamate di debug (dddx) in produzione, 2026-10-20](./stories/debug-calls-removal-user.story.md)** - Sei pagine Appearance (il salvataggio non e' mai stato scritto: ora errore esplicito, non un dump) e `Password` (`Halt`, notifica tradotta). Sostituisce la story 12.3; metodo in [wiki/how-to/gestire-chiamate-di-debug-in-produzione.md](./wiki/how-to/gestire-chiamate-di-debug-in-produzione.md).
->>>>>>> .merge_file_E55hxL
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
 ## 🧹 **Manutenzione**
-<<<<<<< .merge_file_svInGF
-- 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
-
-## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
-=======
-- 🗑️ **[Cleanup Plan](./todo.md)** - Stub di 22 righe (`module: theme`) il cui `canonical` `Themes/docs/shared-components/todo.md` non esiste. Stato reale al 2026-10-14: 3360 file `.md` in `docs/` (1538 nella radice), di cui 602 stub con `canonical:` verso `Themes/docs/shared-components/` (0 bersagli esistenti). Piano di riordino: `bmad-output/stories/docs-organization/` (DOC-004, DOC-006 richiedono una migration map approvata).
+- 🗑️ **[Cleanup Plan](./todo.md)** - Stub di 22 righe (`module: theme`) il cui `canonical` `Themes/docs/shared-components/todo.md` non esiste. Stato reale al 2026-10-14: 3360 file `.md` in `docs/` (1538 nella radice), di cui 602 stub con `canonical:` verso `Themes/docs/shared-components/` (0 bersagli esistenti). Piano di riordino: [docs-organization-xot](../../Xot/docs/stories/docs-organization-xot.story.md) (migration map approvata prima di spostamenti massivi).
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento](../../../../docs/wiki/rules/composer-packages-reference.md) (la pagina a sua volta rinvia a `laravel/docs/composer-packages-reference.md`, che non esiste) | Inventario 312 pacchetti (`docs/architecture/composer-packages-full-inventory.md`) _(target mancante, verificato 2026-10-14)_
->>>>>>> .merge_file_E55hxL
 - `laravel/passport` - OAuth2 API
 - `socialiteproviders/microsoft`, `socialiteproviders/auth0` - OAuth
 - `flowframe/laravel-trend` - Statistiche

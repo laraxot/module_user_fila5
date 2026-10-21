@@ -17,7 +17,8 @@ class GetCurrentDeviceActionTest extends TestCase
 {
     use RefreshDatabase;
 
-    private GetCurrentDeviceAction $action;
+    /** @var GetCurrentDeviceAction $action */
+    public mixed $action;
 
     private Agent&MockInterface $mockAgent;
 

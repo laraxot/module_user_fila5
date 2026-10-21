@@ -1,14 +1,4 @@
-<<<<<<< .merge_file_SgHdAY
-=======
----
-title: "BMAD + Second Brain — Fix Log"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, user]
-qmd: "bmad + second brain   fix log user"
----
->>>>>>> .merge_file_JsCAX0
+
 # BMAD + Second Brain — Fix Log
 
 ## Diagnosi

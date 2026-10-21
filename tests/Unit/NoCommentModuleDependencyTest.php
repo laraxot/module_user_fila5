@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use function Safe\file_get_contents;
+use Symfony\Component\Finder\Finder;
 
 
 
@@ -27,13 +28,9 @@ test('user composer does not reference the comment module', function (): void {
 
 test('user app code does not import the comment module', function (): void {
     $appPath = dirname(__DIR__, 2).'/app';
-    $files = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appPath));
+    $files = Finder::create()->in($appPath)->files()->name('*.php');
 
     foreach ($files as $file) {
-        if ($file->getExtension() !== 'php') {
-            continue;
-        }
-
         expect(file_get_contents($file->getPathname()))->not()->toContain('Modules\\Comment\\');
     }
 });

@@ -1,14 +1,11 @@
 ---
 title: index
 module: User
-<<<<<<< .merge_file_APWRnk
-=======
 type: index
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "user module   documentation index user"
->>>>>>> .merge_file_kfMdq5
 ---
 
 # User Module — Documentation Index

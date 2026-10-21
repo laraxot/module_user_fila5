@@ -336,17 +336,22 @@ class UserMassSeeder extends Seeder
     private function info(string $message): void
     {
         $command = $this->getConsoleCommand();
-        $command->info($message);
+        $command?->info($message);
     }
 
     private function error(string $message): void
     {
         $command = $this->getConsoleCommand();
-        $command->error($message);
+        $command?->error($message);
     }
 
-    private function getConsoleCommand(): Command
+    private function getConsoleCommand(): ?Command
     {
-        return $this->command;
+        $cmd = $this->command;
+        if ($cmd === null) {
+            throw new \RuntimeException('Seeder command non disponibile');
+        }
+
+        return $cmd;
     }
 }
