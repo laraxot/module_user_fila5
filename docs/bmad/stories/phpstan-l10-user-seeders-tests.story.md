@@ -49,6 +49,14 @@ Only `laravel/Modules/User`. Files touched:
 - Pest on `OauthFactoriesDefinitionTest.php` and `UserMigrationSyntaxTest.php`: blocked by `Modules/Xot/tests/Support/TestDatabaseGuard.php` (the local `.env.testing` databases do not end in `_test`). Not changed, per instructions.
 - PHPStan Level 10 on `Modules/User` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User --no-progress --no-ansi`, after `clear-result-cache`): `[OK] No errors`.
 
+## Re-verifica 2026-10-21 (php-backend-agent)
+
+`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User --no-progress --error-format=json`
+→ `totals.errors=0`, `file_errors=0`, EXIT=0. Seeders (`?Command` / guard null),
+OauthFactoriesDefinitionTest (assert keys), UserMigrationSyntaxTest (assert contents),
+GetCurrentDeviceActionTest (`public mixed $action`), NoCommentModuleDependencyTest:
+già allineati; nessun ulteriore patch richiesto.
+
 ## Status
 
-In progress until PHPStan and the guarded Pest runs are re-executed in an environment where `TestDatabaseGuard` passes.
+**done** — PHPStan User = 0. Pest DB-guarded resta skip ambientale (`TestDatabaseGuard`).
