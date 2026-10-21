@@ -347,11 +347,6 @@ class UserMassSeeder extends Seeder
 
     private function getConsoleCommand(): ?Command
     {
-        $cmd = $this->command;
-        if ($cmd === null) {
-            throw new \RuntimeException('Seeder command non disponibile');
-        }
-
-        return $cmd;
+        return $this->command;
     }
 }
