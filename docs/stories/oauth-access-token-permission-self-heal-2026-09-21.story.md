@@ -109,7 +109,7 @@ volte, stato finale stabile e confermato per iscritto qui.
    `.env.sqlite` (cercato per primo da `app/Application.php::environmentFile()`) non esiste su disco
    in questo repo, quindi si cade sempre su `.env.testing`. Test rieseguiti senza override CLI:
    5 passed (9 assertions). Dettagli:
-   `Modules/User/docs/stories/cache-store-env-var-test-infra-2026-09-21.story.md`.
+   `Modules/User/docs/stories/cache-store-env-var-test-infra-phpunit-xml-usava-driver.story.md`.
 2. `Modules/Lang/tests/Unit/Models/BaseModelTest.php` vs `Modules/Lang/tests/unit/models/BaseModelTest.php`
    (case-variant duplicate): rompe qualunque `--filter` che carichi l'intera suite configurata. Pre-esistente,
    non correlato a questo fix.

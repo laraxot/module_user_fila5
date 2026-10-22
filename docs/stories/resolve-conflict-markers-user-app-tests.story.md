@@ -4,7 +4,7 @@ slug: resolve-conflict-markers-user-app-tests
 status: blocked-verification
 scope: module:User
 date: 2026-10-21
-related: ["resolve-conflict-markers-user-lang.story.md", "user-nested-conflict-marker-cleanup.story.md", "user-nested-conflict-marker-cleanup-2026-09-22.story.md"]
+related: ["resolve-conflict-markers-user-lang.story.md", "user-nested-conflict-marker-cleanup.story.md", "user-nested-conflict-marker-cleanup-rimozione-conflitto-git-annidati.story.md"]
 ---
 
 # Resolve git conflict markers in User module app and test files

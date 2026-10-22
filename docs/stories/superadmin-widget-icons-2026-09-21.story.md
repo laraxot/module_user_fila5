@@ -15,7 +15,7 @@ created_at: 2026-09-21
 updated_at: 2026-09-21
 tags: [filament, widget, icons, ux, super-admin]
 related:
-  - Modules/User/docs/stories/oauth-access-token-permission-self-heal-2026-09-21.story.md
+  - Modules/User/docs/stories/oauth-access-token-permission-self-heal-permissiondoesnotexist-deve-piu-produrre.story.md
   - Modules/User/docs/bmad/tech-spec-superadmin-widget.md
 github:
   repository: null

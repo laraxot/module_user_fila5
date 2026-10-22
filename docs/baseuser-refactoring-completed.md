@@ -265,7 +265,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 <<<<<<< .merge_file_GcrtMw
-- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+- [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
 =======
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 >>>>>>> .merge_file_qpEyXD

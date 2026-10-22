@@ -153,7 +153,7 @@ Contact infrastructure/repository administrator to:
 
 - Analysis: [phpstan-l10-analysis-2026-07-28.md](phpstan-l10-analysis-2026-07-28.md)
 <<<<<<< .merge_file_rwaaCq
-- Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES_2026_07_28.md)
+- Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES-analysis-user-module.md)
 =======
 - Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES.md)
 >>>>>>> .merge_file_XfSPhD

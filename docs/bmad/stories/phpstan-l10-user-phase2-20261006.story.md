@@ -77,7 +77,7 @@ Modules/User/app/Filament/Resources/TeamResource.php: No syntax errors
 
 ## Artifacts
 
-- Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-20261006.story.md`
+- Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-module-phase-malformed-phpdoc.story.md`
 - Commit: batch fix (5 files)
 
 ## Standing Order Compliance
@@ -139,7 +139,7 @@ Modules/User/app/Filament/Resources/TeamResource.php: No syntax errors
 
 ## Files
 
-- Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-20261006.story.md`
+- Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-module-phase-malformed-phpdoc.story.md`
 - Code: TBD (fixes staged per-commit)
 
 ## References

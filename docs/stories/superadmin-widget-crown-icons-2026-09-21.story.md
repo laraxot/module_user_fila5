@@ -15,7 +15,7 @@ created_at: 2026-09-21
 updated_at: 2026-09-21
 tags: [filament, widget, icons, ux, super-admin, blade-icons]
 related:
-  - Modules/User/docs/stories/superadmin-widget-icons-2026-09-21.story.md
+  - Modules/User/docs/stories/superadmin-widget-icons-superadminwidget-icone-piu-adeguate.story.md
 github:
   repository: null
   issues: []
@@ -27,7 +27,7 @@ github:
 
 "metti una icona stile marvel per superadmin, qualcosa se vuoi divertente elegante
 stile outline, con leggera animazione fatti i 2 svg" — evoluzione della story
-precedente (`superadmin-widget-icons-2026-09-21.story.md`).
+precedente (`superadmin-widget-icons-superadminwidget-icone-piu-adeguate.story.md`).
 
 Nota copyright: nessun logo Marvel riprodotto (rischio trademark). Direzione presa:
 corona outline generica (tema "super"-admin), non un personaggio specifico.

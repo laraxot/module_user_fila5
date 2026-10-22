@@ -95,4 +95,4 @@ rispecchiano colonne DB snake_case), `ExcessiveParameterList` su DTO Spatie Lara
 - `app/Listeners/LoginListener.php`
 - `app/Actions/Socialite/RetrieveSocialiteUserAction.php`
 - `docs/coverage.md`
-- `docs/stories/user-quality-gate-2026-09-04.story.md` (questo file)
+- `docs/stories/user-quality-gate-story-closure-modules.story.md` (questo file)

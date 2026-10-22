@@ -908,7 +908,7 @@ Documentation for `user` module categorized as **integrations**.
 - [`quality-11.md`](./quality-11.md)
 - [`quality-improvements-summary.md`](./quality-improvements-summary.md)
 - [`quality-improvements.md`](./quality-improvements.md)
-- [`quality-status-11.md`](./quality-status-11.md)
+- [`quality-status-user-module-november.md`](./quality-status-user-module-november.md)
 - [`quality-status-nov.md`](./quality-status-nov.md)
 - [`quality-status.md`](./quality-status.md)
 - [`quality-tooling.md`](./quality-tooling.md)

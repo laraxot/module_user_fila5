@@ -43,7 +43,7 @@ cd laravel && php artisan migrate --database=user
 `provision-local-mysql.sh` non esiste piu'. `Unknown database 'fixcity_user'` (1049) = DB mai creato.
 Stato migrate su DB fresco (2026-10-07): si ferma su `align_ticket_relation_foreign_keys`
 <<<<<<< .merge_file_mKe9Ms
-(cast bigint->uuid, MariaDB 4078), vedi `docs/stories/login-unknown-database-fixcity-user-2026-10-07.story.md`.
+(cast bigint->uuid, MariaDB 4078), vedi `docs/stories/login-unknown-database-fixcity-user.story.md`.
 =======
 (cast bigint->uuid, MariaDB 4078), vedi `docs/stories/login-unknown-database-fixcity-user.story.md`.
 >>>>>>> .merge_file_IBBgeA

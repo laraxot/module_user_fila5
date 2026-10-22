@@ -16,7 +16,7 @@ updated_at: 2026-09-21
 tags: [testing, cache, phpunit, spatie-permission, env]
 related:
   - Modules/User/docs/stories/10.3.retire-auth-livewire-twins.story.md
-  - Modules/User/docs/stories/dashboard-lang-collateral-damage-2026-09-21.story.md
+  - Modules/User/docs/stories/dashboard-lang-collateral-damage.story.md
 github:
   repository: null
   issues: []

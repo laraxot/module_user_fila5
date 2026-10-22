@@ -2,7 +2,7 @@
 module: theme
 topic: quality-status-nov
 <<<<<<< .merge_file_gndNGZ
-canonical: ../../../Themes/docs/shared-components/quality-status-11.md
+canonical: ../../../Themes/docs/shared-components/quality-status-user-module-november.md
 related:
   - "./00-index-1.md"
 =======
@@ -20,7 +20,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-status-11.md
+See canonical documentation: ../../../Themes/docs/shared-components/quality-status-user-module-november.md
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

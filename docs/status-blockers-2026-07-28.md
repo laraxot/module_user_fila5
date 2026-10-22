@@ -70,7 +70,7 @@ Contact infrastructure/repository administrator to:
 3. Manually authorize import of 11 OIDs from commit 4547061
 4. OR: authorize force-push exemption for this repository
 
-**Documentation:** [git-push-lfs-issue-2026-07-28.md](git-push-lfs-issue-2026-07-28.md)
+**Documentation:** [git-push-lfs-issue-2026-07-28.md](git-push-lfs-issue-objects-missing-remote.md)
 
 ---
 
@@ -145,7 +145,7 @@ Contact infrastructure/repository administrator to:
 ### Documentation
 
 - Analysis: [phpstan-l10-analysis-2026-07-28.md](phpstan-l10-analysis-2026-07-28.md)
-- Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES_2026_07_28.md)
+- Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES-analysis-user-module.md)
 
 ---
 

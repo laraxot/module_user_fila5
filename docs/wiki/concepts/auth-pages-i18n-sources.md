@@ -9,7 +9,7 @@ issues:
 discussions:
 related:
 <<<<<<< .merge_file_RN1812
-  - "../../stories/auth-pages-i18n-en-de-es-2026-10-07.story.md"
+  - "../../stories/auth-pages-i18n-en-de-es-login-registrazione-inglese-tedesco.story.md"
 =======
   - "../../stories/auth-pages-i18n-en-de-es.story.md"
 status: draft
