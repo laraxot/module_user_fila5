@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Actions;
 
 use InvalidArgumentException;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Jenssegers\Agent\Agent;
 use Mockery;
 use Mockery\MockInterface;
@@ -15,7 +14,6 @@ use Tests\TestCase;
 
 class GetCurrentDeviceActionTest extends TestCase
 {
-    use RefreshDatabase;
 
     /** @var GetCurrentDeviceAction $action */
     public mixed $action;

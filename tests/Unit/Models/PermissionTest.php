@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Permission;
 use Tests\TestCase;
 
 class PermissionTest extends TestCase
 {
-    use RefreshDatabase;
 
     public function test_can_create_permission_with_minimal_data(): void
     {
@@ -190,8 +188,7 @@ class PermissionTest extends TestCase
 
         static::assertCount(2, $permissions);
         static::assertTrue($permissions->every(
-            fn($permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin',
-        ));
+            fn($permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin'));
     }
 
     public function test_permission_has_roles_relationship(): void

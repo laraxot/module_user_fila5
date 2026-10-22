@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Device;
 use Tests\TestCase;
 
 class DeviceTest extends TestCase
 {
-    use RefreshDatabase;
 
     public function test_can_create_device_with_minimal_data(): void
     {

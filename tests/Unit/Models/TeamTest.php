@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Tests\TestCase;
 
 class TeamTest extends TestCase
 {
-    use RefreshDatabase;
 
     public function test_can_create_team_with_minimal_data(): void
     {

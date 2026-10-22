@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Feature;
 use function Safe\json_encode;
 use Illuminate\Database\QueryException;
 use Illuminate\Validation\ValidationException;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
@@ -17,7 +16,6 @@ use Tests\TestCase;
 
 class UserManagementBusinessLogicTest extends TestCase
 {
-    use RefreshDatabase;
 
     /** @test */
     public function it_can_create_user_with_profile(): void

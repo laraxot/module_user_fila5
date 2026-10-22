@@ -6,7 +6,6 @@ namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Tenant;
 use Tests\TestCase;
 
@@ -14,7 +13,6 @@ use function Safe\json_encode;
 
 class TenantTest extends TestCase
 {
-    use RefreshDatabase;
 
     public function test_can_create_tenant_with_minimal_data(): void
     {
