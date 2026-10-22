@@ -8,15 +8,25 @@ qmd: "baseuser-dry-violation-analysis baseuser - analisi violazione principio dr
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_XoJnYH
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_7prNF9
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_XoJnYH
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_7prNF9
 ---
 
 # BaseUser - Analisi Violazione Principio DRY
@@ -454,7 +464,11 @@ test('hasRole works with guard parameter', function () {
 
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
+<<<<<<< .merge_file_XoJnYH
+- [Code Quality](../../../../docs/code-quality-analysis.md)
+=======
 - [Code Quality](code-quality-analysis.md)
+>>>>>>> .merge_file_7prNF9
 
 ## Conclusioni
 

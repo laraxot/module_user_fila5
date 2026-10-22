@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_mIbdFY
+=======
 ---
 title: "User Module - Product Strategy"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product strategy user"
 ---
+>>>>>>> .merge_file_CXu2BQ
 # User Module - Product Strategy
 
 **Module:** User  

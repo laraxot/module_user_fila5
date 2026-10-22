@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_pzhyL8
+=======
 status: draft
 qmd: "piano di implementazione componenti header user"
+>>>>>>> .merge_file_8F60cd
 ---
 
 # Piano di Implementazione Componenti Header
@@ -174,8 +177,13 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
+<<<<<<< .merge_file_pzhyL8
+- [Header Components](./HEADER_COMPONENTS.md)
+- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+=======
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
+>>>>>>> .merge_file_8F60cd
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 
 ## Timeline
@@ -203,6 +211,11 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
+<<<<<<< .merge_file_pzhyL8
+- [Header Components](./HEADER_COMPONENTS.md)
+- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+=======
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
+>>>>>>> .merge_file_8F60cd
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 

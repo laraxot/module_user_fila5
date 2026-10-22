@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_qsKuJw
+=======
 ---
 title: "Registration Widget Documentation"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "registration widget documentation user"
 ---
+>>>>>>> .merge_file_qW26CJ
 # Registration Widget Documentation
 
 ## Overview

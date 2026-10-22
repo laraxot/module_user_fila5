@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_x3FsjW
+=======
 ---
 title: "Conversione Livewire Auth/Login a Filament LoginWidget"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "conversione livewire auth/login a filament loginwidget user"
 ---
+>>>>>>> .merge_file_CTsn1a
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire
@@ -105,13 +108,22 @@ module: theme
 topic: login-widget-conversion
 canonical: ../../../Themes/docs/shared-components/login-widget-conversion.md
 related:
+<<<<<<< .merge_file_x3FsjW
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_CTsn1a
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_x3FsjW
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_CTsn1a
   - "./actions-path-convention.md"
 ---
 

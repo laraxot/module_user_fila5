@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_LVbmPy
+=======
 ---
 title: "Sicurezza nel Processo di Logout"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "sicurezza nel processo di logout user"
 ---
+>>>>>>> .merge_file_3MR3Il
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -179,6 +182,11 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+<<<<<<< .merge_file_LVbmPy
+- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
+=======
 - [Gestione Sessione](./session_management.md)
 - [Documentazione Volt](./volt_blade_implementation.md)
+>>>>>>> .merge_file_3MR3Il
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

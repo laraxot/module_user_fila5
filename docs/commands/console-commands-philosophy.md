@@ -10,12 +10,20 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
+<<<<<<< .merge_file_Cnmyh7
+  - "./console-commands-philosophy-1-1.md"
+  - "./console-commands-philosophy-1.md"
+  - "./console-commands-philosophy-2.md"
+  - "./console-commands.md"
+  - "./readme.md"
+=======
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
 status: draft
+>>>>>>> .merge_file_i0VUNQ
 ---
 
 # Filosofia dei Comandi Console - Modulo User

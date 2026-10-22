@@ -16,7 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_rD8DQ4
+=======
 status: draft
+>>>>>>> .merge_file_HEC2su
 ---
 
 # Best Practices per Componenti Filament
@@ -112,6 +115,11 @@ composer show filament/spatie-laravel-media-library-plugin
 
 ## Collegamenti tra versioni di filament-components.md
 * [filament-components.md](../../../user/docs/best-practices/filament-components.md)
+<<<<<<< .merge_file_rD8DQ4
+* [filament-components.md](../../../cms/docs/best-practices/filament-components.md)
+* [filament-components.md](../../../cms/docs/filament-components.md)
+=======
 * [filament-components.md](../../../Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../../Cms/docs/filament-components.md)
+>>>>>>> .merge_file_HEC2su
 * [filament-components.md](laravel/docs/rules/filament-components.md)

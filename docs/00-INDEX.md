@@ -2,14 +2,18 @@
 title: "User - indice canonico della documentazione"
 type: index
 status: active
-updated: 2026-10-20
+updated: 2026-10-21
 module: User
 tags: [docs, user, index]
 qmd: "user modulo indice canonico docs identita contenuto reale directory ingressi duplicati link rotti"
+related:
+  - ./README.md
+  - ./scopo.md
+  - ../../Xot/docs/conventions/docs-organization.md
 ---
 # 📚 **Indice Documentazione Modulo User**
 
-Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
+Questo e' l'ingresso canonico della cartella `docs/` del modulo (contratto: [docs-organization](../../Xot/docs/conventions/docs-organization.md)). Gli altri file con nome simile sono copie o elenchi generati: vedi "Ingressi duplicati" piu' sotto.
 
 **Status PHPStan (verificato 2026-10-14, storico: superato dalla misura del 2026-10-20 qui sotto)**: `cd laravel && ./vendor/bin/phpstan analyse Modules/User` (livello `max` da `laravel/phpstan.neon`) segnala 3 errori, tutti `argument.type` alla riga 8 di `lang/de/validation.php`, `lang/en/validation.php`, `lang/es/validation.php` (`array_replace_recursive` riceve `mixed`). In `app/` gli errori sono 0. La dicitura precedente "Level 10 Compliant" era quindi vera solo per `app/`.
 **Aggiornamento PHPStan 2026-10-20**: il pull del 2026-10-20 ha riportato in `tests/` un lotto di test non allineato al codice (sull'intero `Modules` circa 9800 errori, quasi tutti nei test; nel modulo User 2812 prima delle correzioni). La lane `user-b` ha riportato a 0 errori 33 file di test (causa: factory non tipizzata, `TestCase` impoverita dal merge, test fantasma): cosa e' stato corretto e cosa neutralizzato sta in [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md). Il conteggio dell'intero modulo spetta al run di coordinamento ([Xot](../../Xot/docs/stories/phpstan-test-wave-regression.story.md)); la riga del 2026-10-14 qui sopra non va letta come stato attuale. I 14 file di test rimasti (182 errori) sono nella story [stories/phpstan-test-wave-user.story.md](./stories/phpstan-test-wave-user.story.md). Misura del 2026-10-20 ore 10:07: `cd laravel && ./vendor/bin/phpstan analyse Modules/User --memory-limit=2G --no-progress --error-format=raw` esce con codice 0 e nessun errore (compresi i tre `lang/*/validation.php` della riga storica); la soglia `typeCoverage.*` si prova solo con `analyse Modules` intero.
@@ -120,7 +124,7 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
 ## 🧹 **Manutenzione**
-- 🗑️ **[Cleanup Plan](./todo.md)** - Stub di 22 righe (`module: theme`) il cui `canonical` `Themes/docs/shared-components/todo.md` non esiste. Stato reale al 2026-10-14: 3360 file `.md` in `docs/` (1538 nella radice), di cui 602 stub con `canonical:` verso `Themes/docs/shared-components/` (0 bersagli esistenti). Piano di riordino: `bmad-output/stories/docs-organization/` (DOC-004, DOC-006 richiedono una migration map approvata).
+- 🗑️ **[Cleanup Plan](./todo.md)** - Stub di 22 righe (`module: theme`) il cui `canonical` `Themes/docs/shared-components/todo.md` non esiste. Stato reale al 2026-10-14: 3360 file `.md` in `docs/` (1538 nella radice), di cui 602 stub con `canonical:` verso `Themes/docs/shared-components/` (0 bersagli esistenti). Piano di riordino: [docs-organization-xot](../../Xot/docs/stories/docs-organization-xot.story.md) (migration map approvata prima di spostamenti massivi).
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento](../../../../docs/wiki/rules/composer-packages-reference.md) (la pagina a sua volta rinvia a `laravel/docs/composer-packages-reference.md`, che non esiste) | Inventario 312 pacchetti (`docs/architecture/composer-packages-full-inventory.md`) _(target mancante, verificato 2026-10-14)_
@@ -131,8 +135,13 @@ Concentrazione: 7763 eventi (54,7%) stanno in 6 elenchi generati (`archive/index
 - `spatie/laravel-personal-data-export` - Export GDPR
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_svInGF
+- [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
+- [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
+=======
 - [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
+>>>>>>> .merge_file_E55hxL
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

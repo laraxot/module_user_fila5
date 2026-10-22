@@ -16,7 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_7rsR0Z
+=======
 status: draft
+>>>>>>> .merge_file_3z47k2
 ---
 
 # Regole di Ereditarietà dei Modelli - Modulo User
@@ -245,7 +248,11 @@ Prima di creare un nuovo modello, verifica:
 ## Link Correlati
 
 - [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
+<<<<<<< .merge_file_7rsR0Z
+- [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
+=======
 - [Documentazione Geo Model Pattern](../../../Geo/docs/model-inheritance-pattern.md)
+>>>>>>> .merge_file_3z47k2
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche

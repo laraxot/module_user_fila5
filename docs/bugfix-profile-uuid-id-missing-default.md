@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_oRMyqc
+=======
 ---
 title: "Bugfix — Profile `firstOrCreate()` fatal: 'Field 'id' doesn't have a default value'"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "bugfix   profile `firstorcreate()` fatal: 'field 'id' doesn't have a default value' user"
 ---
+>>>>>>> .merge_file_QodLfj
 # Bugfix — Profile `firstOrCreate()` fatal: "Field 'id' doesn't have a default value"
 
 ## Sintomo (produzione, 2026-07-27)

@@ -4,8 +4,11 @@ type: guide
 tags: [user, patterns, best-practices]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_Aw9y6L
+=======
 status: draft
 qmd: "user module   patterns & best practices user"
+>>>>>>> .merge_file_BeknPR
 ---
 
 # User Module — Patterns & Best Practices

@@ -8,22 +8,36 @@ qmd: "header-language-selector-with-flags implementazione del selettore di lingu
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_SfEaFH
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_rFCv8t
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_SfEaFH
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_rFCv8t
 ---
 
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< .merge_file_SfEaFH
+- [Convenzioni Path](./path-conventions-2.md)
+=======
 - [Convenzioni Path](./path-conventions-user.md)
+>>>>>>> .merge_file_rFCv8t
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -207,7 +221,11 @@ return [
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< .merge_file_SfEaFH
+- [Convenzioni Path](./path-conventions-2.md)
+=======
 - [Convenzioni Path](./path-conventions-user.md)
+>>>>>>> .merge_file_rFCv8t
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

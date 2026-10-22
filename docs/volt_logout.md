@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_ePU2R6
+=======
 ---
 title: "Implementazione del Logout con Volt"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione del logout con volt user"
 ---
+>>>>>>> .merge_file_ZIjdWe
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -225,4 +228,8 @@ public function test_logout_clears_session()
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
+<<<<<<< .merge_file_ePU2R6
+- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md) 
+=======
 - [Routing Best Practices](./routing_best_practices.md) 
+>>>>>>> .merge_file_ZIjdWe

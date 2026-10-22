@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_03x8vH
+=======
 ---
 title: "Migration Safety Rules - NEVER Destroy Data"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, database]
 qmd: "migration safety rules - never destroy data user"
 ---
+>>>>>>> .merge_file_ZSHQVg
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA
@@ -298,6 +301,16 @@ Quando un altro agente AI incontra problemi di schema:
 ---
 module: theme
 topic: migration-safety-rules
+<<<<<<< .merge_file_03x8vH
+canonical: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
+related:
+  - "./migration-safety-rules-1.md"
+  - "./profile-uuid-philosophy-1.md"
+  - "./profile-uuid-philosophy.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
+=======
 canonical: ../../../../Themes/docs/shared-components/migration-safety-rules-never-destroy-data.md
 related:
   - "./migration-safety-rules-never-destroy-data.md"
@@ -306,3 +319,4 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/migration-safety-rules-never-destroy-data.md
+>>>>>>> .merge_file_ZSHQVg

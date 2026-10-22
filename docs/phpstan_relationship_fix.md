@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_WaNOGV
+=======
 ---
 title: "Correzione PHPStan - Relationship Type Hints"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzione phpstan - relationship type hints user"
 ---
+>>>>>>> .merge_file_oy0Nry
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto

@@ -1,11 +1,14 @@
 ---
 title: coverage
 module: User
+<<<<<<< .merge_file_DArmMh
+=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "coverage   user user"
+>>>>>>> .merge_file_bu6UoV
 ---
 
 # Coverage — User

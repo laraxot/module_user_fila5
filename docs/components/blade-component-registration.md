@@ -8,7 +8,10 @@ qmd: "blade-component-registration registrazione dei componenti blade"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_3YD09M
+=======
 status: draft
+>>>>>>> .merge_file_IizYEO
 ---
 
 # Registrazione dei componenti Blade

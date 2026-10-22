@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_YWZApH
+=======
 ---
 title: "Implementazione dei Form con Widget Filament"
 type: note
@@ -6,13 +8,20 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione dei form con widget filament user"
 ---
+>>>>>>> .merge_file_ntHDAU
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_YWZApH
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
+=======
 - [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+>>>>>>> .merge_file_ntHDAU
 
 ## Introduzione
 
@@ -291,5 +300,9 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+<<<<<<< .merge_file_YWZApH
+- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+=======
 - [Gestione Sessione](./session_management.md)
+>>>>>>> .merge_file_ntHDAU
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

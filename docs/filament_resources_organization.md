@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_mMvZAY
+=======
 ---
 title: "Organization of Filament Resources"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "organization of filament resources user"
 ---
+>>>>>>> .merge_file_1k7VrE
 # Organization of Filament Resources
 
 ## Namespace Structure

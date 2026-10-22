@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_YO47V6
+=======
 ---
 title: "spatie permissions"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "spatie permissions user"
 ---
+>>>>>>> .merge_file_S3JDBo
 https://jaydeepamethiya.medium.com/spatie-roles-and-permissions-in-laravel-10-a-comprehensive-guide-536d099d40ae
 
 

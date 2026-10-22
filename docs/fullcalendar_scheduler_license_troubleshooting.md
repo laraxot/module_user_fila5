@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_3aNQ0b
+=======
 ---
 title: "FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "fullcalendar scheduler license - troubleshooting e configurazione avanzata user"
 ---
+>>>>>>> .merge_file_9ApA7x
 # FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata
 
 ## Panoramica

@@ -8,15 +8,25 @@ qmd: "login-widget-fix loginwidget form data binding fix"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_HLAH1d
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_9QSQm5
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_HLAH1d
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_9QSQm5
 ---
 
 # LoginWidget Form Data Binding Fix
@@ -164,7 +174,11 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ## Riferimenti
 
+<<<<<<< .merge_file_HLAH1d
+- [XotBaseWidget Documentation](../../xot/docs/readme.md)
+=======
 - [XotBaseWidget Documentation](../../Xot/docs/README.md)
+>>>>>>> .merge_file_9QSQm5
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
 - [RegisterWidget Implementation](../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
 

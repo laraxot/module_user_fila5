@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_qO62IP
+=======
 status: draft
 qmd: "moderation   consolidated documentation user"
+>>>>>>> .merge_file_dyyZWU
 ---
 
 # moderation — Consolidated Documentation
@@ -34,13 +37,22 @@ description:
 globs:
 alwaysApply: false
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 # Azioni di Moderazione (Action class)
@@ -100,13 +112,22 @@ description:
 globs:
 alwaysApply: false
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 # Contratti e Interfacce per la Moderazione Utenti
@@ -155,13 +176,22 @@ qmd: "moderation-doctor moderazione dentista dal modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 
@@ -262,13 +292,22 @@ description:
 globs:
 alwaysApply: false
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 # Notifiche Moderazione
@@ -324,13 +363,22 @@ module: theme
 topic: moderation-wizard-generic
 canonical: ../../../Themes/docs/shared-components/moderation-wizard-generic.md
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 
@@ -532,13 +580,22 @@ qmd: "moderationor moderazione dentista dal modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_qO62IP
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_dyyZWU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_qO62IP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_dyyZWU
   - "./actions-path-convention.md"
 ---
 

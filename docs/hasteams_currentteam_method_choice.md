@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_WiY57H
+=======
 ---
 title: "Choice of currentTeam() Method in HasTeams Trait"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "choice of currentteam() method in hasteams trait user"
 ---
+>>>>>>> .merge_file_i6hy3Z
 # Choice of currentTeam() Method in HasTeams Trait
 
 ## Analysis and Decision

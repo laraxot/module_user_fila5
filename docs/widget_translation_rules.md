@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_Lk8384
+=======
 ---
 title: "Widget Translation Rules - SaluteOra Project"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "widget translation rules - saluteora project user"
 ---
+>>>>>>> .merge_file_hVT1Ko
 # Widget Translation Rules - SaluteOra Project
 
 ## Core Principles
@@ -191,6 +194,15 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
+<<<<<<< .merge_file_Lk8384
+- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
+- [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
+=======
 - [User Module Widget Structure](widgets_structure.md)
 - [EditUserWidget Documentation](widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](widgets/translation-guidelines.md)
@@ -198,6 +210,7 @@ protected static string $view = 'user::widgets.edit-user';
 - [User Module Widget Structure](widgets_structure.md)
 - [EditUserWidget Documentation](widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](widgets/translation-guidelines.md)
+>>>>>>> .merge_file_hVT1Ko
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
 
 ## Memory Integration

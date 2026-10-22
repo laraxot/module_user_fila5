@@ -9,7 +9,10 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./github.md"
+<<<<<<< .merge_file_vAs3p3
+=======
 status: draft
+>>>>>>> .merge_file_8h4Dge
 ---
 
 # OAuth Architecture - User Module

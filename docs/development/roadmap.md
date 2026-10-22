@@ -3,9 +3,12 @@ title: "roadmap — puntatore"
 type: reference
 updated: 2026-05-21
 related:
+<<<<<<< .merge_file_BuLwus
+=======
 status: draft
 tags: [docs, user, development]
 qmd: "policy globale (puntatore) user"
+>>>>>>> .merge_file_lZ38ZY
 ---
 
 # Policy globale (puntatore)

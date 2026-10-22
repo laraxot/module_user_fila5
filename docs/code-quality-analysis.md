@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_SD5yen
+=======
 ---
 title: "Code Quality Analysis - User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-08
 tags: [docs, user]
 qmd: "code quality analysis - user module user"
 ---
+>>>>>>> .merge_file_paAJ9O
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified

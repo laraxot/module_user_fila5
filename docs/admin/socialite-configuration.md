@@ -8,7 +8,10 @@ qmd: "socialite-configuration socialite configuration"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_tXJf3k
+=======
 status: draft
+>>>>>>> .merge_file_fVi9WD
 ---
 
 ---

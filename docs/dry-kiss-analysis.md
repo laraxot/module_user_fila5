@@ -8,15 +8,25 @@ qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_Y2jmmM
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_R3PcWx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_Y2jmmM
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_R3PcWx
 ---
 
 # DRY & KISS Analysis - Modulo User
@@ -147,14 +157,32 @@ abstract class BaseModel extends XotBaseModel
     
     protected $connection = 'user';
 ---
+<<<<<<< .merge_file_Y2jmmM
+title: "DRY & KISS Analysis - Modulo User"
+type: concept
+tags: [dry, kiss, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dry-kiss-analysis dry & kiss analysis - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+=======
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_R3PcWx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_Y2jmmM
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_R3PcWx
   - "./actions-path-convention.md"
 ---
 

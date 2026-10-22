@@ -16,7 +16,10 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./profile.md"
+<<<<<<< .merge_file_e8yjRW
+=======
 status: draft
+>>>>>>> .merge_file_ACxrTD
 ---
 
 # phpstan

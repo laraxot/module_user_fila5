@@ -16,7 +16,10 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+<<<<<<< .merge_file_aePTmi
+=======
 status: draft
+>>>>>>> .merge_file_p19f4A
 ---
 
 # two_factor

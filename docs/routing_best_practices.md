@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_7kmkig
+=======
 status: draft
 qmd: "best practices per il routing in architettura volt + folio + filament user"
+>>>>>>> .merge_file_4KSU9o
 ---
 
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
@@ -475,6 +478,12 @@ public function logout()
 
 ## Collegamenti
 
+<<<<<<< .merge_file_7kmkig
+- [Documentazione Volt](./VOLT_LOGOUT.md)
+- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
+- [Gestione Errori](./ERROR_HANDLING.md) 
+=======
 - [Documentazione Volt](./volt_logout.md)
 - [Struttura Directory](./directory_structure_checklist.md)
 - [Gestione Errori](./error_handling.md) 
+>>>>>>> .merge_file_4KSU9o

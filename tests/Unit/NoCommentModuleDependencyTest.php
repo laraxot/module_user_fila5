@@ -5,31 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use function Safe\file_get_contents;
+use Symfony\Component\Finder\Finder;
 
-test('it does not reference the comment module anywhere under user app', function (): void {
-    $appPath = dirname(__DIR__, 2).'/app';
-    $iterator = new \RecursiveIteratorIterator(
-        new \RecursiveDirectoryIterator($appPath, \FilesystemIterator::SKIP_DOTS)
-    );
 
-    /** @var \SplFileInfo $file */
-    foreach ($iterator as $file) {
-        if (! $file->isFile() || $file->getExtension() !== 'php') {
-            continue;
-        }
-
-        if (str_ends_with($file->getFilename(), '.old')) {
-            continue;
-        }
-
-        $contents = file_get_contents($file->getPathname());
-
-        expect($contents)
-            ->not()->toContain('Modules\\Comment\\')
-            ->not()->toContain('InteractsWithComments')
-            ->not()->toContain('HasCommentatorRelations');
-    }
-});
 
 test('base user model does not use comment traits', function (): void {
     $baseUserPath = dirname(__DIR__, 2).'/app/Models/BaseUser.php';
@@ -39,4 +17,20 @@ test('base user model does not use comment traits', function (): void {
         ->not()->toContain('HasCommentatorRelations')
         ->not()->toContain('CanComment')
         ->not()->toContain('InteractsWithComments');
+});
+
+test('user composer does not reference the comment module', function (): void {
+    $composerPath = dirname(__DIR__, 2).'/composer.json';
+    $contents = file_get_contents($composerPath);
+
+    expect($contents)->not()->toContain('"../Comment"');
+});
+
+test('user app code does not import the comment module', function (): void {
+    $appPath = dirname(__DIR__, 2).'/app';
+    $files = Finder::create()->in($appPath)->files()->name('*.php');
+
+    foreach ($files as $file) {
+        expect(file_get_contents($file->getPathname()))->not()->toContain('Modules\\Comment\\');
+    }
 });

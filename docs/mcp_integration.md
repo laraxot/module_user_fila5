@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_1KWrHH
+=======
 status: draft
 qmd: "integrazione dei server mcp con il modulo user user"
+>>>>>>> .merge_file_41ixxl
 ---
 
 # Integrazione dei Server MCP con il Modulo User

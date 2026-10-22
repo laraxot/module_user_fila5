@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_YBTyCm
+=======
 ---
 title: "Analisi dell'Errore nell'Implementazione del Logout"
 type: note
@@ -6,15 +8,23 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi dell'errore nell'implementazione del logout user"
 ---
+>>>>>>> .merge_file_He21YJ
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_YBTyCm
+- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
+- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
+- [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
+=======
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Logout](logout_blade_analysis.md)
 - [Conclusioni Logout](logout_blade_conclusions.md)
+>>>>>>> .merge_file_He21YJ
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato

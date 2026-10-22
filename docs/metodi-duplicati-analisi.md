@@ -3,11 +3,14 @@ module: User
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+<<<<<<< .merge_file_Nq6QhC
+=======
 title: "Metodi Duplicati — Analisi User"
 type: note
 status: stub
 updated: 2026-10-07
 qmd: "metodi duplicati   analisi user user"
+>>>>>>> .merge_file_ItIsEN
 ---
 
 # Metodi Duplicati — Analisi User

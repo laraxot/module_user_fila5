@@ -8,15 +8,25 @@ qmd: "implementation-plan piano di implementazione componenti header"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_bovBDd
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_sjfA3k
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_bovBDd
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_sjfA3k
 ---
 
 # Piano di Implementazione Componenti Header
@@ -188,10 +198,17 @@ class NavigationTest extends TestCase
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Header Components](./header-components.md)
+<<<<<<< .merge_file_bovBDd
+- [Navigation Structure](./navigation-structure-2.md)
+- [Security Best Practices](./security_best_practices.md)
+- [Header Components](./HEADER_COMPONENTS.md)
+- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+=======
 - [Navigation Structure](./navigation-structure-struttura-navigazione.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Header Components](./header_components.md)
 - [Navigation Structure](./navigation_structure.md)
+>>>>>>> .merge_file_sjfA3k
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 
 ## Timeline
@@ -223,5 +240,9 @@ class NavigationTest extends TestCase
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
+<<<<<<< .merge_file_bovBDd
+- [Navigation Structure](./navigation-structure-2.md)
+=======
 - [Navigation Structure](./navigation-structure-struttura-navigazione.md)
+>>>>>>> .merge_file_sjfA3k
 - [Security Best Practices](./security_best_practices.md) 

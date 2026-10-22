@@ -8,10 +8,13 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/572"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
+<<<<<<< .merge_file_5PTLdk
+=======
 type: story
 updated: 2026-10-08
 tags: [docs, user, bmad]
 qmd: "login inglese senza fallback italiano user"
+>>>>>>> .merge_file_SSCv06
 ---
 
 # Login inglese senza fallback italiano

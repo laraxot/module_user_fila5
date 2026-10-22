@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_uJUOfh
+=======
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
 type: note
@@ -6,13 +8,20 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
 ---
+>>>>>>> .merge_file_Rkf3fU
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_uJUOfh
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
+=======
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Implementazione Logout](./logout_blade_implementation.md)
+>>>>>>> .merge_file_Rkf3fU
 
 ## Panoramica
 

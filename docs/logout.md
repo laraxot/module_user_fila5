@@ -8,15 +8,25 @@ qmd: "logout analisi errore logout"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_jADot6
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_r6VjHP
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_jADot6
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_r6VjHP
 ---
 
 # Analisi Errore Logout
@@ -142,7 +152,11 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_jADot6
+- [Gestione Sessione](./session-management-2.md)
+=======
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
+>>>>>>> .merge_file_r6VjHP
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -267,5 +281,9 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_jADot6
+- [Gestione Sessione](./session-management-2.md)
+=======
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
+>>>>>>> .merge_file_r6VjHP
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

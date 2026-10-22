@@ -7,15 +7,25 @@ created: "2026-05-26"
 updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
 related:
+<<<<<<< .merge_file_ECN9fn
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_ir1RVy
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_ECN9fn
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "disciplina agenti per massimizzare la confidenza user"
+>>>>>>> .merge_file_ir1RVy
 ---
 
 # Disciplina agenti per massimizzare la confidenza

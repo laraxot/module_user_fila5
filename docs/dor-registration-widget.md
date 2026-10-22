@@ -8,15 +8,25 @@ qmd: "dor-registration-widget widget di registrazione del dottore"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_WbDM9O
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_JKIQLQ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_WbDM9O
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_JKIQLQ
 ---
 
 # Widget di Registrazione del Dottore
@@ -261,7 +271,11 @@ The <nome progetto> Team'
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< .merge_file_WbDM9O
+- [Email Doctor Registration](docs/email-doctor-registration.md)
+=======
 - [Email Doctor Registration](email-doctor-registration.md)
+>>>>>>> .merge_file_JKIQLQ
 - [Registrazione Odontoiatra](docs/roadmap_frontoffice/13-registrazione-odontoiatra.md)
 - [DoctorResource](Modules/Patient/app/Filament/Resources/DoctorResource.php)
 - [RegistrationWidget](Modules/User/app/Filament/Widgets/RegistrationWidget.php)

@@ -2,12 +2,15 @@
 module: User
 concept: Architecture
 last_updated: 2026-04-15
+<<<<<<< .merge_file_FvwWQs
+=======
 title: "User Module Architecture"
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "user module architecture user"
+>>>>>>> .merge_file_J3JemU
 ---
 
 # User Module Architecture

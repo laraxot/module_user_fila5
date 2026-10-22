@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_o2CUid
+=======
 status: draft
 qmd: "analisi rendering loginwidget - docs.italia.it style user"
+>>>>>>> .merge_file_hgjknO
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style

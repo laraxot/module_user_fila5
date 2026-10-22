@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_l899Nm
+=======
 ---
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzioni ereditarietà modelli - modulo user user"
 ---
+>>>>>>> .merge_file_YhoSfp
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione

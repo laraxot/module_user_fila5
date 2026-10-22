@@ -12,7 +12,10 @@ related:
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget-fileupload.md"
   - "./registration-widget.md"
+<<<<<<< .merge_file_uIP1Ed
+=======
 status: draft
+>>>>>>> .merge_file_G1Ly0y
 ---
 
 # Dashboard Filters Integration per Widget Filament
@@ -144,10 +147,17 @@ protected function getFooterWidgets(): array
 - [ ] Fallback appropriati attivati
 ## Riferimenti e Collegamenti
 ### Documentazione Correlata
+<<<<<<< .merge_file_uIP1Ed
+- [Modules/User/docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
+- [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
+- [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
+- [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
+=======
 - [Modules/User/docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
 - [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
 - [Modules/User/project_docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
+>>>>>>> .merge_file_G1Ly0y
 - [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../xot/project_docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/project_docs/dashboard-implementation.md](../../../<nome progetto>/project_docs/dashboard-implementation.md)
 ### Widget Correlati

@@ -8,15 +8,25 @@ qmd: "phpstan-syntaxes phpstan syntax fixes - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_UThAQW
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_w2ND1t
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_UThAQW
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_w2ND1t
 ---
 
 # PHPStan Syntax Fixes - Modulo User
@@ -164,7 +174,11 @@ use App\Models\User;
 
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< .merge_file_UThAQW
+- [CLAUDE.md - Quality Guidelines](../../../claude.md)
+=======
 - [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
+>>>>>>> .merge_file_w2ND1t
 
 ## 📝 Note Tecniche
 

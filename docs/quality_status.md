@@ -3,10 +3,13 @@ title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08
 version: 1.2
+<<<<<<< .merge_file_36hpgj
+=======
 status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "modulo user   stato qualità user"
+>>>>>>> .merge_file_toa0Vo
 ---
 
 # Modulo User — Stato Qualità

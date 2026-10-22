@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_qCQy5c
+=======
 ---
 title: "Massimizzare il livello di confidenza"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "massimizzare il livello di confidenza user"
 ---
+>>>>>>> .merge_file_1kvkMS
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

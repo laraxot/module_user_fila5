@@ -12,7 +12,10 @@ related:
   - "./edit-user-widget.md"
   - "./registration-widget-fileupload.md"
   - "./registration-widget.md"
+<<<<<<< .merge_file_JlAGJG
+=======
 status: draft
+>>>>>>> .merge_file_InB9So
 ---
 
 # RegistrationWidget FileUpload Error Fix

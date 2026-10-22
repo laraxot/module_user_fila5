@@ -1,11 +1,15 @@
 ---
 type: investigation
 title: "Investigation Teams & Roles"
+<<<<<<< .merge_file_hmLUtT
+links: {github_issue: #XXX}
+=======
 links: {github_issue: "#XXX"}
 status: draft
 updated: 2026-10-08
 tags: [docs, user, investigation]
 qmd: "investigation: teams & roles user"
+>>>>>>> .merge_file_9DCQ59
 ---
 # Investigation: Teams & Roles
 

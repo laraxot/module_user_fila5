@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_9xwZPQ
+=======
 status: draft
 qmd: "migration_best_practices - modulo user user"
+>>>>>>> .merge_file_omBZ0K
 ---
 
 # MIGRATION_BEST_PRACTICES - Modulo User
@@ -21,10 +24,17 @@ Questo documento specializza gli standard generali di `Modules/Xot/docs/migratio
 
 - **Usare sempre `XotBaseMigration`**
   - Tutte le migration devono `return new class extends XotBaseMigration { ... }`.
+<<<<<<< .merge_file_9xwZPQ
+- **Impostare esplicitamente le proprietà chiave**
+  - `protected string $table = 'nome_tabella';`
+  - `protected ?string $connection = 'user';`
+  - `protected ?string $model_class = Model::class;` (es. `Team::class`, `User::class`)
+=======
 - **Non dichiarare `$model_class` se il file è `*_create_{modello}_table.php`**
   - `XotBaseMigration::getModelClass()` ricava modulo e modello dal path e dal nome file.
   - `create_users_table` nel modulo Fixcity è `Modules\Fixcity\Models\User`.
   - `$model_class` solo se il nome file non è quel contratto.
+>>>>>>> .merge_file_omBZ0K
 - **Usare i metodi helper di `XotBaseMigration`**
   - `tableCreate()` per creare tabelle
   - `tableUpdate()` per modificarle
@@ -39,12 +49,21 @@ Questo documento specializza gli standard generali di `Modules/Xot/docs/migratio
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< .merge_file_9xwZPQ
+use Modules\User\Models\Team;
+=======
+>>>>>>> .merge_file_omBZ0K
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
     protected string $table = 'teams';
     protected ?string $connection = 'user';
+<<<<<<< .merge_file_9xwZPQ
+    protected ?string $model_class = Team::class;
+
+=======
+>>>>>>> .merge_file_omBZ0K
     public function up(): void
     {
         $this->tableCreate(function (Blueprint $table): void {
@@ -89,12 +108,21 @@ Motivi:
 
 ```php
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< .merge_file_9xwZPQ
+use Modules\User\Models\Team;
+=======
+>>>>>>> .merge_file_omBZ0K
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
     protected string $table = 'teams';
     protected ?string $connection = 'user';
+<<<<<<< .merge_file_9xwZPQ
+    protected ?string $model_class = Team::class;
+
+=======
+>>>>>>> .merge_file_omBZ0K
     public function up(): void
     {
         $this->tableUpdate(function (Blueprint $table): void {
@@ -110,7 +138,11 @@ Caratteristiche:
 
 - Usa `hasColumn('owner_id')` di `XotBaseMigration`
 - Connessione `user` coerente con i modelli del modulo User
+<<<<<<< .merge_file_9xwZPQ
+- `model_class` esplicita (evita problemi di auto-risoluzione nome modello)
+=======
 - niente `$model_class`: `create_teams_table` risolve già `Team`
+>>>>>>> .merge_file_omBZ0K
 
 ## Connessione `user`
 
@@ -134,7 +166,11 @@ per garantire che:
 ## Check-list prima di creare/modificare una migration
 
 1. La migration **estende `XotBaseMigration`**?
+<<<<<<< .merge_file_9xwZPQ
+2. Sono impostate **`$table`, `$connection`, `$model_class`**?
+=======
 2. Il file è `*_create_{modello}_table.php`, senza `$model_class`?
+>>>>>>> .merge_file_omBZ0K
 3. Sto usando **`tableCreate` / `tableUpdate`** (no `Schema::table` diretto)?
 4. Ogni aggiunta di colonna è protetta da **`hasColumn()`**?
 5. I timestamp sono gestiti con **`updateTimestamps($table, true)`** se servono soft delete?

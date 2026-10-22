@@ -188,6 +188,7 @@ class UserManagementBusinessLogicTest extends TestCase
         // Arrange
         $user = User::factory()->create();
         $role1 = Role::factory()->create(['name' => 'doctor']);
+        // 'nurse' esiste ma NON e' assegnato: serve a provare che hasAnyRole guarda le assegnazioni, non l'esistenza del ruolo
         Role::factory()->create(['name' => 'nurse']);
 
         $user->assignRole($role1);

@@ -1,11 +1,14 @@
 ---
 title: readme-fullcalendar-scheduler
 module: User
+<<<<<<< .merge_file_qTvPMW
+=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "fullcalendar scheduler documentation - readme user"
+>>>>>>> .merge_file_LnWZYy
 ---
 
 # FullCalendar Scheduler Documentation - README

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_JAYrvU
+=======
 ---
 title: "Database Errors in User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "database errors in user module user"
 ---
+>>>>>>> .merge_file_Ki8Ae8
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table

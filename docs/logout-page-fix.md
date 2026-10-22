@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_9YEvw5
+=======
 ---
 title: "Correzione Logout Page nel Theme TwentyOne"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzione logout page nel theme twentyone user"
 ---
+>>>>>>> .merge_file_iVljZi
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato
@@ -50,13 +53,22 @@ module: theme
 topic: logout-page-fix
 canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
 related:
+<<<<<<< .merge_file_9YEvw5
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_iVljZi
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_9YEvw5
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_iVljZi
   - "./actions-path-convention.md"
 ---
 

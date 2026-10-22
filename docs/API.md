@@ -4,8 +4,11 @@ type: reference
 tags: [user, api, actions]
 created: 2026-07-28
 updated: 2026-07-28
+<<<<<<< .merge_file_hUh074
+=======
 status: draft
 qmd: "user module   api reference user"
+>>>>>>> .merge_file_wtc6b2
 ---
 
 # User Module — API Reference

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_BnZb5G
+=======
 ---
 title: "Gestione degli Errori nelle Blade di Autenticazione"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "gestione degli errori nelle blade di autenticazione user"
 ---
+>>>>>>> .merge_file_HnrUed
 # Gestione degli Errori nelle Blade di Autenticazione
 
 ## Introduzione
@@ -172,6 +175,12 @@ public function register()
 
 ## Collegamenti
 
+<<<<<<< .merge_file_BnZb5G
+- [Documentazione Volt](./VOLT_LOGOUT.md)
+- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
+- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
+=======
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md) 
+>>>>>>> .merge_file_HnrUed

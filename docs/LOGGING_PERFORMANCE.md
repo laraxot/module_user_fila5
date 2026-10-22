@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_cWstrq
+=======
 ---
 title: "Logging Performance Optimization"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "logging performance optimization user"
 ---
+>>>>>>> .merge_file_4HJeW6
 # Logging Performance Optimization
 
 ## Rule: NEVER USE Log::info()

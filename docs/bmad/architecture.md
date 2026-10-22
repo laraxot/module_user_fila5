@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_g8fCBn
+=======
 ---
 title: "User Module Architecture (BMAD)"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "user module architecture (bmad) user"
 ---
+>>>>>>> .merge_file_zjT4fJ
 # User Module Architecture (BMAD)
 
 **Status**: ✅ Finalized

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_FZ9JKW
+=======
 ---
 title: "Implementazione del Selettore di Lingua con Bandiere SVG"
 type: note
@@ -6,11 +8,16 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione del selettore di lingua con bandiere svg user"
 ---
+>>>>>>> .merge_file_4ELMlv
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_FZ9JKW
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+=======
 - [Convenzioni Path](./path_conventions.md)
+>>>>>>> .merge_file_4ELMlv
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

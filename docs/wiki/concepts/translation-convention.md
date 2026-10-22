@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_qGBRlC
+=======
 ---
 title: "Translation Convention - User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "translation convention - user module user"
 ---
+>>>>>>> .merge_file_BHrqIa
 # Translation Convention - User Module
 
 ## Regola

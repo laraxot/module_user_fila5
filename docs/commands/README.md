@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_MbrpDT
+=======
 ---
 title: "Comandi Console - Modulo User"
 type: index
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, commands]
 qmd: "comandi console - modulo user user"
 ---
+>>>>>>> .merge_file_PKWXD6
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -269,9 +272,15 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
+<<<<<<< .merge_file_MbrpDT
+  - "./console-commands-philosophy-1-1.md"
+  - "./console-commands-philosophy-1.md"
+  - "./console-commands-philosophy-2.md"
+=======
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
+>>>>>>> .merge_file_PKWXD6
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
 ---

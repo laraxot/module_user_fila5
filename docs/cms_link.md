@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_8sd7c4
+=======
 ---
 title: "Collegamento al Modulo Cms"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "collegamento al modulo cms user"
 ---
+>>>>>>> .merge_file_ZFcRQc
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo User e il modulo Cms per quanto riguarda i componenti Filament e le convenzioni di namespace.
@@ -19,7 +22,11 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
+<<<<<<< .merge_file_8sd7c4
+- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+=======
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+>>>>>>> .merge_file_ZFcRQc
 
 ## Punti di Integrazione
 
@@ -29,8 +36,13 @@ Per dettagli specifici, consulta:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< .merge_file_8sd7c4
+- [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
+- [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
+=======
 - [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
+>>>>>>> .merge_file_ZFcRQc
 
 ---
 
@@ -42,6 +54,15 @@ Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
 
 ## Collegamenti tra versioni di cms-link.md
 * [cms-link.md](../../../xot/docs/cms-link.md)
+<<<<<<< .merge_file_8sd7c4
+* [cms-link.md](../../../user/docs/cms-link.md)
+* [cms-link.md](../../../ui/docs/cms-link.md)
+* [cms-link.md](../../../lang/docs/cms-link.md)
+* [cms-link.md](../../../Xot/docs/cms-link.md)
+* [cms-link.md](../../../User/docs/cms-link.md)
+* [cms-link.md](../../../UI/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+=======
 * [cms-link.md](cms-link.md)
 * [cms-link.md](../../../ui/docs/cms-link.md)
 * [cms-link.md](../../Lang/docs/cms-link.md)
@@ -49,4 +70,5 @@ Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
 * [cms-link.md](cms-link.md)
 * [cms-link.md](../../../UI/docs/cms-link.md)
 * [cms-link.md](../../Lang/docs/cms-link.md)
+>>>>>>> .merge_file_ZFcRQc
 

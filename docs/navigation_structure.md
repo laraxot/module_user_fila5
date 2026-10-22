@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_HEqryU
+=======
 ---
 title: "Struttura Navigazione"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "struttura navigazione user"
 ---
+>>>>>>> .merge_file_STEGx3
 # Struttura Navigazione
 
 ## Overview
@@ -147,6 +150,12 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
+<<<<<<< .merge_file_HEqryU
+- [Header Components](./HEADER_COMPONENTS.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
+- [Session Management](./SESSION_MANAGEMENT.md) 
+=======
 - [Header Components](./header_components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./session_management.md) 
+>>>>>>> .merge_file_STEGx3

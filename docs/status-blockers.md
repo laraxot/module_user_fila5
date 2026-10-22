@@ -3,10 +3,13 @@ title: "User Module Status & Blockers"
 date: 2026-07-28
 author: claude-ai
 status: BLOCKED_AWAITING_INFRASTRUCTURE
+<<<<<<< .merge_file_rwaaCq
+=======
 type: note
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module   status & critical blockers (2026-07-28) user"
+>>>>>>> .merge_file_XfSPhD
 ---
 
 # User Module — Status & Critical Blockers (2026-07-28)
@@ -149,7 +152,11 @@ Contact infrastructure/repository administrator to:
 ### Documentation
 
 - Analysis: [phpstan-l10-analysis-2026-07-28.md](phpstan-l10-analysis-2026-07-28.md)
+<<<<<<< .merge_file_rwaaCq
+- Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES_2026_07_28.md)
+=======
 - Code quality: [QUALITY_GATES_2026_07_28.md](QUALITY_GATES.md)
+>>>>>>> .merge_file_XfSPhD
 
 ---
 

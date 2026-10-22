@@ -15,8 +15,11 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_MKSVgi
+=======
 status: draft
 qmd: "socialite admin configuration user"
+>>>>>>> .merge_file_cjRaZO
 ---
 
 # Socialite Admin Configuration

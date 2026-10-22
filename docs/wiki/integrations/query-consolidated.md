@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_6kujTz
+=======
 status: draft
 qmd: "query   consolidated documentation user"
+>>>>>>> .merge_file_6fnCNH
 ---
 
 # query — Consolidated Documentation
@@ -26,7 +29,11 @@ Consolidated from **6** individual files.
 
 ## query-optimization-analysis-3
 
+<<<<<<< .merge_file_6kujTz
+*Consolidated from: `query-optimization-analysis-3.md`*
+=======
 *Consolidated from: `query-optimization-analysis.md`*
+>>>>>>> .merge_file_6fnCNH
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -37,13 +44,22 @@ qmd: "query-optimization-analysis-3 user module - query optimization analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_6kujTz
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6fnCNH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_6kujTz
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6fnCNH
   - "./actions-path-convention.md"
 ---
 
@@ -528,7 +544,11 @@ This optimization plan will transform the User module from a performance bottlen
 
 ## query-optimization-analysis-4
 
+<<<<<<< .merge_file_6kujTz
+*Consolidated from: `query-optimization-analysis-4.md`*
+=======
 *Consolidated from: `query-optimization-analysis.md`*
+>>>>>>> .merge_file_6fnCNH
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -539,13 +559,22 @@ qmd: "query-optimization-analysis-4 user module - query optimization analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_6kujTz
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6fnCNH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_6kujTz
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6fnCNH
   - "./actions-path-convention.md"
 ---
 
@@ -1030,7 +1059,11 @@ This optimization plan will transform the User module from a performance bottlen
 
 ## query-optimization-analysis-5
 
+<<<<<<< .merge_file_6kujTz
+*Consolidated from: `query-optimization-analysis-5.md`*
+=======
 *Consolidated from: `query-optimization-analysis.md`*
+>>>>>>> .merge_file_6fnCNH
 
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -1041,13 +1074,22 @@ qmd: "query-optimization-analysis-5 user module - query optimization analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_6kujTz
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6fnCNH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_6kujTz
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6fnCNH
   - "./actions-path-convention.md"
 ---
 
@@ -1543,13 +1585,22 @@ qmd: "query-optimization-analysis user module - query optimization analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_6kujTz
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6fnCNH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_6kujTz
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6fnCNH
   - "./actions-path-convention.md"
 ---
 
@@ -2045,13 +2096,22 @@ qmd: "query-optimization user module - query optimization analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< .merge_file_6kujTz
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_6fnCNH
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_6kujTz
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_6fnCNH
   - "./actions-path-convention.md"
 ---
 

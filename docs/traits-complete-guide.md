@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_sYC4GQ
+=======
 ---
 title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-08
 tags: [docs, user]
 qmd: "guida completa ai trait del modulo user - aggiornato post-implementazione user"
 ---
+>>>>>>> .merge_file_694oJ8
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -119,13 +122,22 @@ module: theme
 topic: traits-complete-guide
 canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
 related:
+<<<<<<< .merge_file_sYC4GQ
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_694oJ8
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_sYC4GQ
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_694oJ8
   - "./actions-path-convention.md"
 ---
 

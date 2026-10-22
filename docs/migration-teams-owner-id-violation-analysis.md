@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_77pq7A
+=======
 ---
 title: "Analisi Violazione Filosofia Laraxot - Migration Teams"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-08
 tags: [docs, user]
 qmd: "analisi violazione filosofia laraxot - migration teams user"
 ---
+>>>>>>> .merge_file_5b8UqF
 # Analisi Violazione Filosofia Laraxot - Migration Teams
 
 ## Data

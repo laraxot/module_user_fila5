@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_CR4aRc
+=======
 ---
 title: "OAuth Documentation Index"
 type: index
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, oauth]
 qmd: "oauth documentation index user"
 ---
+>>>>>>> .merge_file_ZrcIVP
 # OAuth Documentation Index
 
 > **Module**: User  

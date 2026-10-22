@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_CF8VCl
+=======
 ---
 title: "Dentist Moderation Approach in User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "dentist moderation approach in user module user"
 ---
+>>>>>>> .merge_file_Id1lul
 # Dentist Moderation Approach in User Module
 
 ## Overview

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_ohR4gS
+=======
 ---
 title: "UserFactory Advanced Integration - Modulo User & SaluteOra"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "userfactory advanced integration - modulo user & saluteora user"
 ---
+>>>>>>> .merge_file_9RzNvm
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 

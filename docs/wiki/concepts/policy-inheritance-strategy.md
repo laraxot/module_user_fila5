@@ -16,7 +16,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_HJZRHo
+=======
 status: draft
+>>>>>>> .merge_file_HQwM5I
 ---
 
 # Policy Inheritance Strategy in Laraxot

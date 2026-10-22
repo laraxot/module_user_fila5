@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_CbFZDV
+=======
 status: draft
 qmd: "user module - query optimization analysis user"
+>>>>>>> .merge_file_4O1xbh
 ---
 
 # User Module - Query Optimization Analysis

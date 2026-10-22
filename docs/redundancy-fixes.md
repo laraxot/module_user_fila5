@@ -1,4 +1,11 @@
 ---
+<<<<<<< .merge_file_sV40OP
+module: theme
+topic: redundancy-fixes
+canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+related:
+  - "./00-index-1.md"
+=======
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
 tags: [redundancy, fixes, january, 2026]
@@ -9,10 +16,19 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_FEi3mP
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_sV40OP
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -140,3 +156,4 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+>>>>>>> .merge_file_FEi3mP

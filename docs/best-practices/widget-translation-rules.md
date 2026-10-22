@@ -16,7 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_q44d8c
+=======
 status: draft
+>>>>>>> .merge_file_LKzYfq
 ---
 
 # Widget Translation Rules - FixCity Project
@@ -154,11 +157,19 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
+<<<<<<< .merge_file_q44d8c
+- [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
+- [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+=======
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure-user.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-user.md)
+>>>>>>> .merge_file_LKzYfq
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

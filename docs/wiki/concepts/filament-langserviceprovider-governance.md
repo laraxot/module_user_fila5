@@ -13,10 +13,13 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+<<<<<<< .merge_file_0HNH3y
+=======
 title: "filament langserviceprovider governance"
 status: draft
 tags: [docs, user, wiki]
 qmd: "filament langserviceprovider governance user"
+>>>>>>> .merge_file_i09mRw
 ---
 
 # filament langserviceprovider governance

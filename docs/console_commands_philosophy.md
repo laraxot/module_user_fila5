@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_qZOcJ9
+=======
 ---
 title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "filosofia dei console commands in laraxot (standard supremo) user"
 ---
+>>>>>>> .merge_file_xKsTVv
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
 
 ## Filosofia Fondamentale

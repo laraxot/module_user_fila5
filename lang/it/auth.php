@@ -1188,7 +1188,9 @@ return [
     ],
     'login_widget' => [
         'providers' => [
-            'google' => ['label' => 'Accedi con Google'],
+            'google' => [
+                'label' => 'Accedi con Google',
+            ],
         ],
     ],
 ];

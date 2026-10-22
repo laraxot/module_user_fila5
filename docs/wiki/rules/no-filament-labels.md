@@ -16,7 +16,10 @@ related:
   - "./module-commit-push-after-change.md"
   - "./navigation-properties.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_knkyCa
+=======
 status: draft
+>>>>>>> .merge_file_rpShsB
 ---
 
 # No Filament Labels Rule

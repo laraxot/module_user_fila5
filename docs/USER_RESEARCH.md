@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_15C3fE
+=======
 status: draft
 qmd: "user module - user research user"
+>>>>>>> .merge_file_wY7Npp
 ---
 
 # User Module - User Research

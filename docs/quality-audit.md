@@ -4,8 +4,11 @@ type: report
 module: User
 updated: 2026-09-01
 qmd: "audit qualita user phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
+<<<<<<< .merge_file_AI15PW
+=======
 status: draft
 tags: [docs, user]
+>>>>>>> .merge_file_kBiXVI
 ---
 
 # Audit di qualita — modulo User

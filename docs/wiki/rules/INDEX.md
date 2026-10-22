@@ -7,8 +7,11 @@ tags: [rules, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
+<<<<<<< .merge_file_93SMFW
+=======
 status: draft
 qmd: "rules index user"
+>>>>>>> .merge_file_ufxsGK
 ---
 
 # Rules Index

@@ -173,6 +173,7 @@ describe('Authentication Business Logic', function () {
 
         it('distinguishes personal vs organizational teams', function () {
             $team = (object) $this->teamData;
+            $user = (object) $this->userData;
 
             // Business Logic: Personal teams vs organizational teams
             Assert::assertFalse($team->personal_team);
@@ -185,8 +186,9 @@ describe('Authentication Business Logic', function () {
                 'user_id' => 1001,
             ];
 
-            Assert::assertTrue($personalTeam->personal_team);
+            Assert::assertNotSame($team->personal_team, $personalTeam->personal_team);
             Assert::assertStringContainsString('Personal', $personalTeam->name);
+            Assert::assertSame($user->id, $personalTeam->user_id);
         });
 
         it('validates team settings and preferences', function () {

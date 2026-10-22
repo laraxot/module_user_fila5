@@ -162,7 +162,13 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
+<<<<<<< .merge_file_g8X5zF
+- [Widget Structure](widgets-structure-2.md)
+- [Filament Best Practices](filament_best_practices.md)
+- [Authentication Architecture](authentication.md)
+=======
 - [Widget Structure](../widgets-structure-user.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](../authentication.md)
+>>>>>>> .merge_file_2POqUw
 - [Security Guidelines](security_guidelines.md)

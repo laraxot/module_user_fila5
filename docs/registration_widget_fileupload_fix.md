@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_Teai0o
+=======
 ---
 title: "RegistrationWidget FileUpload Fix"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "registrationwidget fileupload fix user"
 ---
+>>>>>>> .merge_file_Syoi63
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

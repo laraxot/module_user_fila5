@@ -15,7 +15,10 @@ related:
   - "./gestione-utenti.md"
   - "./user-analytics.md"
   - "./user-traits.md"
+<<<<<<< .merge_file_SWzGab
+=======
 status: draft
+>>>>>>> .merge_file_ZYWaFp
 ---
 
 # Legacy Code Cleanup

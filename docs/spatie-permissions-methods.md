@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_PPXg5q
+=======
 ---
 title: "User Module - Spatie Permission Methods Reference"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - spatie permission methods reference user"
 ---
+>>>>>>> .merge_file_fIq2QO
 # User Module - Spatie Permission Methods Reference
 
 ## Overview

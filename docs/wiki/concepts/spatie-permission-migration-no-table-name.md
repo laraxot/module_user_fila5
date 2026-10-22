@@ -10,8 +10,11 @@ related:
   - ./spatie-permission-table-names.md
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
+<<<<<<< .merge_file_PYMxED
+=======
 status: draft
 qmd: "migrazione pivot spatie   mai il nome tabella nel file user"
+>>>>>>> .merge_file_fuLOxG
 ---
 
 # Migrazione pivot Spatie — mai il nome tabella nel file

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_GoD5VY
+=======
 ---
 title: "Type Safety Refactoring: Elimination of `mixed` Types"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "type safety refactoring: elimination of `mixed` types user"
 ---
+>>>>>>> .merge_file_HWZPTN
 # Type Safety Refactoring: Elimination of `mixed` Types
 
 **Session Date**: 2026-09-04  
@@ -113,6 +116,8 @@ public function getExtraAttribute(string $key, mixed $default = null): string|in
 
 ## Type Narrowing Reference
 
+<<<<<<< .merge_file_GoD5VY
+=======
 ### User boundary: contract over abstract implementation
 
 `BaseUser` è una classe astratta di infrastruttura e non è il contratto del
@@ -128,6 +133,7 @@ guard runtime devono quindi parlare in termini di `UserContract`; `BaseUser`
 resta appropriato solo per ereditarietà, test della base e comportamento
 specifico della sua implementazione.
 
+>>>>>>> .merge_file_HWZPTN
 ### Webmozart\Assert Usage
 
 Available assertions for narrowing types:

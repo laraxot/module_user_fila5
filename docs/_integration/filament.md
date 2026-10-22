@@ -16,7 +16,10 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
+<<<<<<< .merge_file_7ZaZdB
+=======
 status: draft
+>>>>>>> .merge_file_Xdo9hw
 ---
 
 # filament

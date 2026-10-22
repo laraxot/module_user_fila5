@@ -8,15 +8,25 @@ qmd: "code-optimization-analysis user module code and documentation optimization
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_ZCoEFK
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_NfT0iR
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_ZCoEFK
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_NfT0iR
 ---
 
 # user module code and documentation optimization analysis
@@ -49,7 +59,11 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
+<<<<<<< .merge_file_ZCoEFK
+│   ├── profile-management-2.md
+=======
 │   ├── profile-management-laravel-modules.md
+>>>>>>> .merge_file_NfT0iR
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -60,8 +74,13 @@ docs/
 ├── integrations/
 │   ├── socialite.md
 │   ├── passport.md
+<<<<<<< .merge_file_ZCoEFK
+│   ├── spatie-permissions-2.md
+│   └── two-factor-2.md
+=======
 │   ├── spatie-permissions-documentation-themes.md
 │   └── two-factor-documentation-themes.md
+>>>>>>> .merge_file_NfT0iR
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

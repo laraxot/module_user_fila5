@@ -16,8 +16,11 @@ related:
   - "./folio-pages-owner-pattern.md"
   - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
   - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
+<<<<<<< .merge_file_XmUlUS
+=======
 status: draft
 qmd: "widget filament → schema in `*form` (ssot) user"
+>>>>>>> .merge_file_uJbHH6
 ---
 
 # Widget Filament → schema in `*Form` (SSoT)
@@ -124,6 +127,10 @@ XotBaseWidget              (azioni, viste, traduzioni — SENZA schema)
 
 - [UserForm.php](../../../app/Filament/Resources/UserResource/Schemas/UserForm.php)
 - [RegisterWidget.php](../../../app/Filament/Widgets/Auth/RegisterWidget.php)
+<<<<<<< .merge_file_XmUlUS
+- ADR root: [filament-widget-resource-form-delegation.md](../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
+=======
 - ADR root: [filament-widget-resource-form-delegation.md](../../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
+>>>>>>> .merge_file_uJbHH6
 - Rule: `.cursor/rules/filament-widget-resource-form.mdc`
 - Rule: `.cursor/rules/xotbase-schemawidget.mdc`

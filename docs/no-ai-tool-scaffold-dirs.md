@@ -7,8 +7,11 @@ created: 2026-07-16
 updated: 2026-07-16
 related:
   - "../../../../docs/wiki/rules/module-theme-root-cleanup.md"
+<<<<<<< .merge_file_uiJYrO
+=======
 status: draft
 qmd: "perché queste cartelle non devono esistere qui user"
+>>>>>>> .merge_file_qeRUsa
 ---
 
 # Perché queste cartelle non devono esistere qui

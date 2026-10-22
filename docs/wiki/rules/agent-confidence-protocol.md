@@ -14,12 +14,15 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_dXPziO
+=======
 title: "Agent Confidence Protocol — User Module"
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "agent confidence protocol   user module user"
+>>>>>>> .merge_file_U7NffF
 ---
 
 # Agent Confidence Protocol — User Module

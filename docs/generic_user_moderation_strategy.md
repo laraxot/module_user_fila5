@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_XAbOdm
+=======
 ---
 title: "Generic User Moderation Strategy in User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "generic user moderation strategy in user module user"
 ---
+>>>>>>> .merge_file_XAnOAL
 # Generic User Moderation Strategy in User Module
 
 ## Overview

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_ojbtbX
+=======
 ---
 title: "Struttura del Logout Blade nel Theme One"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "struttura del logout blade nel theme one user"
 ---
+>>>>>>> .merge_file_fteToe
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta
@@ -121,21 +124,36 @@ class LogoutPage
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ojbtbX
+- [Documentazione Volt](./VOLT_LOGOUT.md)
+- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
+- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
+=======
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md) 
+>>>>>>> .merge_file_fteToe
 ---
 module: theme
 topic: logout-blade-structure
 canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
 related:
+<<<<<<< .merge_file_ojbtbX
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_fteToe
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_ojbtbX
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_fteToe
   - "./actions-path-convention.md"
 ---
 

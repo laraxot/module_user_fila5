@@ -3,11 +3,25 @@ title: "User Module - PHPStan Testing Progress"
 type: concept
 tags: [testing, phpstan, progress]
 created: 2026-07-14
+<<<<<<< .merge_file_Vqmj8k
+updated: 2026-07-14
+=======
 updated: 2026-10-20
+>>>>>>> .merge_file_yDNsl2
 qmd: "testing-phpstan-progress user module - phpstan testing progress"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_Vqmj8k
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./stories/phpstan-user-zero.story.md"
@@ -19,12 +33,16 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_yDNsl2
 ---
 
 # User Module - PHPStan Testing Progress
 
+<<<<<<< .merge_file_Vqmj8k
+=======
 **Stato modulo (2026-10-20):** `./vendor/bin/phpstan analyse Modules/User` → **0 errori** (test: assertion su payload eventi/regole, return type su `Login`/`ResetPasswordWidget`/`FakeAgent`, `Safe\parse_url` nel flusso OAuth).
 
+>>>>>>> .merge_file_yDNsl2
 **Date**: 2025-12-15
 **Objective**: Fix PHPStan errors in test files
 **Priority**: Tier 1 Critical (Authentication & Authorization)
@@ -42,6 +60,8 @@ This is the core principle: tests must reflect ACTUAL production code, not imagi
 ## Work in Progress
 
 ### Current Status
+<<<<<<< .merge_file_Vqmj8k
+=======
 
 > **Aggiornamento 2026-10-20**: la causa e' stata corretta alla sorgente e il workaround qui sotto non va piu' usato.
 > `User::factory()->create()` era `mixed` perche' Larastan risolve `Model::factory()` con `Factory::resolveFactoryName()`,
@@ -55,20 +75,32 @@ This is the core principle: tests must reflect ACTUAL production code, not imagi
 > Story: [stories/phpstan-user-zero.story.md](./stories/phpstan-user-zero.story.md).
 
 Storico (2025-12-15, superato):
+>>>>>>> .merge_file_yDNsl2
 - Working on adding `\assert()` type narrowing to factory calls
 - Main issue: `User::factory()->create()` returns `mixed` for PHPStan
 - Solution: Add `\assert($var instanceof User);` after each factory call
 
+<<<<<<< .merge_file_Vqmj8k
+### Pattern Identified
+=======
 ### Pattern Identified (storico, non replicare)
+>>>>>>> .merge_file_yDNsl2
 ```php
 // BEFORE (PHPStan errors)
 $user = User::factory()->create([...]);
 expect($user->email)->toBe('test@example.com'); // Error: Cannot access property $email on mixed
 
+<<<<<<< .merge_file_Vqmj8k
+// AFTER (PHPStan compliant)
+$user = User::factory()->create([...]);
+\assert($user instanceof User);
+expect($user->email)->toBe('test@example.com'); // OK
+=======
 // AFTER (workaround storico: oggi vietato, `assert()` non puo' correggere il tipo inferito)
 $user = User::factory()->create([...]);
 \assert($user instanceof User);
 expect($user->email)->toBe('test@example.com');
+>>>>>>> .merge_file_yDNsl2
 ```
 
 ### Files Being Fixed
@@ -110,7 +142,10 @@ expect($user->email)->toBe('test@example.com');
 ---
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+<<<<<<< .merge_file_Vqmj8k
+=======
 
 ## business logic unit tests (2026-10)
 
 I test `UserBusinessLogicTest` e `AuthenticationBusinessLogicTest` usano solo `PHPUnit\Framework\Assert` (niente higher-order Pest) per compatibilità con `pest-plugin-phpstan`. Le asserzioni restano orientate al contratto di dominio utente/autenticazione.
+>>>>>>> .merge_file_yDNsl2

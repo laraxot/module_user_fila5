@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_adS7A2
+=======
 ---
 title: "Comandi Console - Modulo User"
 type: index
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, console_commands]
 qmd: "comandi console - modulo user user"
 ---
+>>>>>>> .merge_file_s1G330
 # Comandi Console - Modulo User
 
 ## Panoramica

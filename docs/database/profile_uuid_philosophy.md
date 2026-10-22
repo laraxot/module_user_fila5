@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_BejFrQ
+=======
 ---
 title: "Profile UUID Philosophy - Zen Approach"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, database]
 qmd: "profile uuid philosophy - zen approach user"
 ---
+>>>>>>> .merge_file_O5IXtJ
 # Profile UUID Philosophy - Zen Approach
 
 ## Il Problema (What)

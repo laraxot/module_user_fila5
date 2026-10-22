@@ -10,7 +10,10 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/572"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
+<<<<<<< .merge_file_Z4GFRh
+=======
 qmd: "registrazione cittadino e posta di verifica user"
+>>>>>>> .merge_file_ttrrfW
 ---
 
 # Registrazione cittadino e posta di verifica

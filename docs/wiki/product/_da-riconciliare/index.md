@@ -16,10 +16,17 @@ Documentation for `user` module categorized as **product**.
 - [`INDEX.md`](./index.md)
 - [`generic-user-moderation-strategy.md`](./generic-user-moderation-strategy.md)
 - [`generic_user_moderation_strategy.md`](./generic_user_moderation_strategy.md)
+<<<<<<< .merge_file_KX21RW
+- [`product-strategy.md`](./product-strategy.md)
+- [`strategy.md`](./strategy.md)
+- [`user-moderation-strategy-3.md`](./user-moderation-strategy-3.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
+=======
 - [`product-strategy.md`](../../../product-strategy.md)
 - [`strategy.md`](../../../strategy.md)
 - [`user-moderation-strategy-documentation-themes.md`](../../../user-moderation-strategy-documentation-themes.md)
 - [`user-moderation-strategy.md`](../../../user-moderation-strategy.md)
+>>>>>>> .merge_file_D8Wvr5
 - [`user_moderation_strategy.md`](./user_moderation_strategy.md)
 
 ---

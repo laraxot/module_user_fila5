@@ -12,7 +12,10 @@ related:
   - "./implementation.md"
   - "./translation-guidelines.md"
   - "./translationlines.md"
+<<<<<<< .merge_file_RSndXb
+=======
 status: draft
+>>>>>>> .merge_file_lHTThk
 ---
 
 # EditUserWidget Implementation Summary
@@ -158,13 +161,21 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/docs/widget-translation-rules.md`
 - `Modules/User/docs/widgets/implementation-summary.md` (this file)
 ### Related Documentation
+<<<<<<< .merge_file_RSndXb
+- `Modules/User/docs/widgets-structure-2.md`
+=======
 - `Modules/User/docs/widgets-structure-user.md`
+>>>>>>> .merge_file_lHTThk
 - `Modules/Xot/docs/filament-widgets.md`
 - `Modules/Xot/docs/translations.md`
 - `Modules/User/project_docs/widgets/edit-user-widget.md`
 - `Modules/User/project_docs/widgets/translation-guidelines.md`
 - `Modules/User/project_docs/widget-translation-rules.md`
 - `Modules/User/project_docs/widgets/implementation-summary.md` (this file)
+<<<<<<< .merge_file_RSndXb
+- `Modules/User/project_docs/widgets-structure-2.md`
+=======
 - `Modules/User/project_docs/widgets-structure-user.md`
+>>>>>>> .merge_file_lHTThk
 - `Modules/Xot/project_docs/filament-widgets.md`
 - `Modules/Xot/project_docs/translations.md`

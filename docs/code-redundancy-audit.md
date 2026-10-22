@@ -8,15 +8,25 @@ updated: "2026-05-26"
 owner: "User"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
 related:
+<<<<<<< .merge_file_iPJneK
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_Qx1teS
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_iPJneK
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "code redundancy audit   user user"
+>>>>>>> .merge_file_Qx1teS
 ---
 
 # Code redundancy audit — User

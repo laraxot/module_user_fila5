@@ -9,6 +9,14 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./assign-module-command.md"
+<<<<<<< .merge_file_pUO7ZI
+  - "./console-commands-philosophy-1-1.md"
+  - "./console-commands-philosophy-1.md"
+  - "./console-commands-philosophy-2.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./readme.md"
+=======
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
@@ -16,6 +24,7 @@ related:
   - "./console-commands.md"
   - "./readme.md"
 status: draft
+>>>>>>> .merge_file_1BPBhg
 ---
 
 # ChangePasswordCommand

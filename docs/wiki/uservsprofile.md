@@ -2,12 +2,15 @@
 module: User
 concept: User vs Profile
 last_updated: 2026-04-15
+<<<<<<< .merge_file_5GEroq
+=======
 title: "User vs Profile Models"
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "user vs profile models user"
+>>>>>>> .merge_file_Vaxf61
 ---
 
 # User vs Profile Models

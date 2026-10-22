@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_p6oVqM
+=======
 ---
 title: "User Module - User Research"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - user research user"
 ---
+>>>>>>> .merge_file_5sV8mO
 # User Module - User Research
 
 **Module:** User  

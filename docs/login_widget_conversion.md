@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_UbWrbL
+=======
 ---
 title: "Conversione Livewire Auth/Login a Filament LoginWidget"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "conversione livewire auth/login a filament loginwidget user"
 ---
+>>>>>>> .merge_file_MeVZVr
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire
@@ -99,4 +102,8 @@ class LoginWidget extends XotBaseWidget
 ## Collegamenti
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
+<<<<<<< .merge_file_UbWrbL
+- [login-improvements.md](../../../themes/twentyone/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+=======
 - [login-improvements.md](../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+>>>>>>> .merge_file_MeVZVr

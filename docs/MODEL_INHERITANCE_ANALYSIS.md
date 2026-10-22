@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_aGoEP7
+=======
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi ereditarietà modelli - modulo user user"
 ---
+>>>>>>> .merge_file_kTpa5Q
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

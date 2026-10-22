@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_Cz5Fom
+=======
 ---
 title: "Logout via Volt Action"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "logout via volt action user"
 ---
+>>>>>>> .merge_file_ns2PAo
 # Logout via Volt Action
 
 ## Contesto

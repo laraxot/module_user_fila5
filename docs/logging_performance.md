@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_Kgvmuf
+=======
 status: draft
 qmd: "logging performance optimization user"
+>>>>>>> .merge_file_qhGkwk
 ---
 
 # Logging Performance Optimization

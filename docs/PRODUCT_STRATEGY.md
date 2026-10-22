@@ -5,8 +5,11 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< .merge_file_S2PjJt
+=======
 status: draft
 qmd: "user module - product strategy user"
+>>>>>>> .merge_file_dI8c3H
 ---
 
 # User Module - Product Strategy

@@ -16,7 +16,10 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
   - "./dependency.md"
+<<<<<<< .merge_file_TTGnhJ
+=======
 status: draft
+>>>>>>> .merge_file_JA96H0
 ---
 
 # Case Sensitivity Rules - User Module

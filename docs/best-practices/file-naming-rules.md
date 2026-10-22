@@ -16,7 +16,10 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+<<<<<<< .merge_file_YqCEri
+=======
 status: draft
+>>>>>>> .merge_file_pZb8LW
 ---
 
 # Regole di Naming per File

@@ -10,6 +10,14 @@ issues:
 discussions:
 related:
   - "./filament-user-creation-pty-error.md"
+<<<<<<< .merge_file_TTJM5g
+  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory.md"
+  - "./git-push-lfs-missing-objects.md"
+  - "./phpstan-widget-property-types-1.md"
+  - "./phpstan-widget-property-types.md"
+  - "./spatie-permission-team-model-not-configured.md"
+=======
   - "./git-merge-conflict-inventory-stato-rinominato.md"
   - "./git-merge-conflict-inventory.md"
   - "./git-push-lfs-missing-objects.md"
@@ -17,6 +25,7 @@ related:
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
 status: draft
+>>>>>>> .merge_file_4bMApe
 ---
 
 # PHPStan User module analysis memory

@@ -8,7 +8,10 @@ qmd: "auth file di traduzione inglese per l'autenticazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_oQz0bs
+=======
 status: draft
+>>>>>>> .merge_file_V6NeB9
 ---
 
 # File di Traduzione Inglese per l'Autenticazione
@@ -53,7 +56,11 @@ Questo file contiene le traduzioni in inglese per tutte le stringhe relative al 
 ## Collegamenti tra versioni di auth.md
 * [auth.md](../../../xot/docs/install/auth.md)
 * [auth.md](../../../user/docs/lang/en/auth.md)
+<<<<<<< .merge_file_oQz0bs
+* [auth.md](../../../tenant/docs/it/config/auth.md)
+=======
 * [auth.md](../../../../Tenant/docs/it/config/auth.md)
+>>>>>>> .merge_file_V6NeB9
 * [auth.md](../../../xot/project_docs/install/auth.md)
 * [auth.md](../../../user/project_docs/lang/en/auth.md)
 * [auth.md](../../../tenant/project_docs/it/config/auth.md)

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_tT7CPV
+=======
 ---
 title: "Perfection Audit — User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "perfection audit   user module user"
 ---
+>>>>>>> .merge_file_B3PQpI
 # Perfection Audit — User Module
 
 **Data**: 2026-09-01

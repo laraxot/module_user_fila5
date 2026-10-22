@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_sgWZ6D
+=======
 ---
 title: "Gestione coerente di roles, permissions e guard_name"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "gestione coerente di roles, permissions e guard_name user"
 ---
+>>>>>>> .merge_file_G06eZP
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

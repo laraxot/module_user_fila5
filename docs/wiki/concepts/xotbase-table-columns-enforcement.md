@@ -15,8 +15,11 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< .merge_file_m7WEoc
+=======
 status: draft
 qmd: "user module: xotbaseresourcetable columns user"
+>>>>>>> .merge_file_y5iYqX
 ---
 
 # User Module: XotBaseResourceTable Columns

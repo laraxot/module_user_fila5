@@ -13,8 +13,12 @@ discussions:
 related:
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
+<<<<<<< .merge_file_DI5RB0
+  - ../../../../../docs/wiki/concepts/xotbase-migration-religion.md
+=======
   - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
 status: draft
+>>>>>>> .merge_file_llwkLv
 ---
 
 # Teams — `owner_id` nella create (non in `add_*`)

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_pOVLrn
+=======
 ---
 title: "Testing Rules & Strategy"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "testing rules & strategy user"
 ---
+>>>>>>> .merge_file_4LtWHb
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)

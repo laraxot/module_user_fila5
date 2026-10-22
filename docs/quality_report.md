@@ -6,7 +6,10 @@ module: User
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "User quality report phpstan pest coverage test ratio"
+<<<<<<< .merge_file_s8ZLgn
+=======
 status: draft
+>>>>>>> .merge_file_1jco5X
 ---
 
 # Quality Report — User

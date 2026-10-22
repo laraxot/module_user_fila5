@@ -16,7 +16,10 @@ related:
   - "./index.md"
   - "./log.md"
   - "./overview.md"
+<<<<<<< .merge_file_eL0tYD
+=======
 status: draft
+>>>>>>> .merge_file_Al9J9l
 ---
 
 # Socialite Authentication Architecture

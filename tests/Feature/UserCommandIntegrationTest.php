@@ -9,6 +9,7 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use Symfony\Component\Console\Input\InputDefinition;
 
 uses(TestCase::class);
 
@@ -63,6 +64,7 @@ describe('User Command Integration', function (): void {
 
         $reflection = new \ReflectionClass($command);
 
+        Assert::assertSame(InputDefinition::class, $command->getDefinition()::class);
         Assert::assertTrue($reflection->hasMethod('info'));
         Assert::assertTrue($reflection->hasMethod('error'));
     });

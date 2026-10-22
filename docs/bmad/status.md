@@ -1,7 +1,6 @@
 ---
 title: status
 module: User
-type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]

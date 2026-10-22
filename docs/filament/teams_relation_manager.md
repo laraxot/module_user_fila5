@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_wgezFS
+=======
 ---
 title: "TeamsRelationManager in User Module"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, filament]
 qmd: "teamsrelationmanager in user module user"
 ---
+>>>>>>> .merge_file_JjVvNM
 # TeamsRelationManager in User Module
 
 ## Panoramica

@@ -154,7 +154,7 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
-    Assert::assertIsArray((new PasswordData)->getValidationMessages());
+    expect((new PasswordData)->getValidationMessages())->toHaveKeys(['required', 'same']);
 });
 
 it('password data get form schema method exists', function (): void {

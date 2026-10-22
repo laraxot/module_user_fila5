@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_vwJFXH
+=======
 ---
 title: "User Module - Query Optimization Analysis"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - query optimization analysis user"
 ---
+>>>>>>> .merge_file_S2lyvG
 # User Module - Query Optimization Analysis
 
 ## Overview

@@ -3,20 +3,34 @@ title: "Errori Comuni in Volt e Soluzioni"
 type: concept
 tags: [volt, errors]
 created: 2026-07-14
+<<<<<<< .merge_file_D9CMRv
+updated: 2026-07-14
+=======
 updated: 2026-10-20
+>>>>>>> .merge_file_oiHTDK
 qmd: "volt-errors errori comuni in volt e soluzioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_D9CMRv
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_oiHTDK
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_D9CMRv
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
+>>>>>>> .merge_file_oiHTDK
 ---
 
 # Errori Comuni in Volt e Soluzioni
@@ -202,6 +216,13 @@ class LogoutPage
 - **Manutenibilità**: Codice organizzato e ben strutturato
 - **Coerenza**: Allineamento con le best practices di Volt
 
+<<<<<<< .merge_file_D9CMRv
+### Link Correlati
+- [Documentazione Volt](https://livewire.laravel.com/docs/volt)
+- [Best Practices Filament](../filament_best_practices.md)
+- [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
+- [Routing Best Practices](../routing-best-practices-2.md) 
+=======
 ## Nome `@volt` globale: un fragment, un file
 
 Volt con nome (`@volt('auth.login')`) scrive il corpo in
@@ -231,3 +252,4 @@ nuovo della view compilata) così il fragment torna al vestito corretto.
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 - [Routing Best Practices](routing-best-practices-architettura-volt-folio-filament.md) 
+>>>>>>> .merge_file_oiHTDK

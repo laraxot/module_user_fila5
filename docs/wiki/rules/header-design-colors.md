@@ -11,11 +11,14 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+<<<<<<< .merge_file_RNGQP4
+=======
 title: "header design colors"
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "header design colors user"
+>>>>>>> .merge_file_69ULYh
 ---
 
 ## Rule Overview

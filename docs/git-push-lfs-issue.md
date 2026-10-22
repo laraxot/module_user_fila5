@@ -3,10 +3,13 @@ title: "Git Push Issue — LFS Objects Missing on Remote"
 date: 2026-07-28
 author: claude-ai
 status: BLOCKED_ON_SERVER_STATE
+<<<<<<< .merge_file_3HcKer
+=======
 type: note
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module   git push & lfs issue (2026-07-28) user"
+>>>>>>> .merge_file_Ea3hjS
 ---
 
 # User Module — Git Push & LFS Issue (2026-07-28)

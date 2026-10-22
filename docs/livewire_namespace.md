@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_oT9rtY
+=======
 ---
 title: "Regole per i componenti Livewire in Windsurf/Xot"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "regole per i componenti livewire in windsurf/xot user"
 ---
+>>>>>>> .merge_file_mjndAn
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

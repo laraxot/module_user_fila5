@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_JbLzvX
+=======
 ---
 title: "Convenzione Metodo getTableColumns per Filament Table"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-07
 tags: [docs, user, filament]
 qmd: "convenzione metodo gettablecolumns per filament table user"
 ---
+>>>>>>> .merge_file_85aPTv
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
