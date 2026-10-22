@@ -73,9 +73,14 @@ cross-tenant per comodita admin.
 
 ## PHPStan
 
-Widget auth/OAuth e Resource User condividono `laravel/phpstan.neon`; glob `*Service.php` non confonde Livewire (`TermsOfService.php`). Catena permanente: [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), prompt [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md).
+Widget auth/OAuth e Resource User condividono **`laravel/phpstan.neon` solo** (agenti: mai altri `.neon`, ignore o baseline). Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` a **zero** senza conferma.
+
+Prima del fix: leggere questo blueprint (scopo UI) e il contratto del widget/Resource; poi tipizzare alla **sorgente** — **mai zittire** (`@phpstan-ignore`, baseline, exclude).
+
+Track: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), [00-start.md](../../../../../bashscripts/docs/prompts/00-start.md#ordine-permanente-dellutente), [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md). Ratchet basi Filament: [NeverExtendFilamentDirectlyTest.php](../../../Xot/tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php). Glob `*Service.php` non confonde Livewire (`TermsOfService.php`). `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md).
 
 ## Related
 
 - Planning: [bmad-planning.md](../bmad-planning.md)
 - Brainstorming: [bmad-brainstorming.md](../bmad-brainstorming.md)
+- Decision log: [decision-log.md](./decision-log.md)

@@ -17,6 +17,21 @@ tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
 ---
 
+# Decision log — User
+
+**Scopo:** User e' il confine di identita' del cittadino e dell'operatore (auth, OAuth localizzato, profilo, RBAC/tenant): i temi vestono le pagine, Fixcity/Gdpr possiedono dominio e consensi, User possiede login/registrazione e i contratti Filament/Socialite.
+
+## Hub (solo link)
+
+- Standing PHPStan: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md)
+- `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md)
+- UI admin/FO auth: [filament-blueprint.md](./filament-blueprint.md)
+
+## [2026-10-20] Gate PHPStan Modules zero; Filament blueprint SSoT UI admin
+
+- **Decisione:** gate `analyse Modules` a zero; auth/OAuth/widget e Resource User si progettano solo via [filament-blueprint.md](./filament-blueprint.md) (XotBase, chiavi Lang, PHPStan alla sorgente).
+- **Track:** hub sopra.
+
 ## [2026-10-20] Google OAuth FO = route con `lang` + binding controller corretto
 
 - **Perché:** da `/it/auth/login` il cittadino deve andare a
@@ -374,7 +389,7 @@ scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
 
 - **Decisione:** ogni turn non banale con qualita' in scope esegue la catena PHPStan → fix sorgente → docs/prompt senza conferma; helper Pest solo su `Modules/User/tests/TestCase.php` (FQCN nei test), mai `scanFiles` sul neon.
 - **Perche:** User e' hub auth/OAuth/Livewire→Widget; errori qui moltiplicano falsi verdi su Lang/Cms se si zittisce. Vittoria = `totals` 0 + `[OK] No errors` sul run del coordinatore.
-- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
+- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
 
 ## [2026-10-20] Gate PHPStan Modules — rieseguito OK (audit docs)
 

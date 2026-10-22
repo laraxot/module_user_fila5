@@ -3,18 +3,20 @@ title: "User Module Documentation"
 type: documentation
 tags: [module, documentation]
 created: 2026-06-05
-updated: 2026-10-14
+updated: 2026-10-20
 status: draft
 qmd: "user module documentation overview trait filament auth"
 ---
 
 # Modulo User - Documentazione Completa
 
+**Scopo:** User e' il confine di identita' (auth FO/BO, OAuth localizzato, profilo, RBAC/tenant): Sixteen veste le pagine, Fixcity/Gdpr possiedono segnalazione e consensi, User possiede login/registrazione e i contratti Filament/Socialite. Hub BMAD: [bmad/decision-log.md](./bmad/decision-log.md), [bmad/filament-blueprint.md](./bmad/filament-blueprint.md).
+
 > Nota 2026-10-14 (docs-audit): l'ingresso canonico della cartella e' [00-INDEX.md](./00-INDEX.md), con numeri e percorsi verificati sul codice. Questo file ha due difetti strutturali: contiene due volte lo stesso corpo (righe 155-1253 e 1257-2352, uguali al 99,8% prima delle note di verifica) e a meta' (riga 131) aveva un blocco front matter incollato da `readme.md`, ora trasformato in blocco di codice. Le smentite verificate sul codice sono marcate "Nota 2026-10-14"; il resto del testo non e' stato rivisto.
 
 ## Overview
 
-Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
+Il modulo **User** gestisce autenticazione, autorizzazione e gestione utenti nel monorepo Fixcity (vedi **Scopo** sopra; non e' uno stub generico di piattaforma).
 
 ## Funzionalità Principali
 
