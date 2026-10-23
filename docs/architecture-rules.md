@@ -3,13 +3,13 @@ title: "Architectural Rules & Guidelines"
 type: rule
 tags: [architecture, rules]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-23
 qmd: "architecture-rules architectural rules & guidelines"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_wKqgQ6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_oYvem3
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_wKqgQ6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -45,6 +45,18 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 2. **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3. **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4. **Directory Structure**: All domain logic must reside within `app/` and database migrations within `database/`. See the structure section below.
+
+## Service Providers
+
+- Providers are declared in `module.json` (`providers`) and in `composer.json` (`extra.laravel.providers`); the module system registers them automatically. Never register them by hand in code.
+- One responsibility per provider: `UserServiceProvider`, `Filament\AdminPanelProvider`, `PassportServiceProvider` and `SocialiteServiceProvider` are listed separately in both files.
+- Passport configuration (including the OAuth policies) lives in `PassportServiceProvider`, not in `UserServiceProvider`.
+
+## Traits: No Redundancy
+
+- Never add a trait that the parent class already uses. Check the parent before adding one.
+- Example: `XotBaseRelationManager` already uses `HasXotTable`, so a relation manager that extends it must not use `HasXotTable` again.
+- Follow the established patterns instead of creating new ones, and do not duplicate the same functionality across files.
 
 ## Directory Structure
 

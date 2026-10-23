@@ -7,7 +7,7 @@ created: 2026-07-15
 updated: 2026-07-15
 related:
 <<<<<<< .merge_file_k1Ssl4
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_sYEHJs
@@ -16,8 +16,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_k1Ssl4
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_5wjy8t
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_LDnbrc
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_5wjy8t
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -70,7 +70,7 @@ Wrapper Passport e risorse Filament possono ancora generare warning PHPStan su s
 ## Collegamenti
 
 <<<<<<< .merge_file_5wjy8t
-- [quality-status-2.md](../quality-status-2.md)
+- [quality-status-2.md](../quality-status.md)
 =======
 - [quality-status-2.md](quality-status-user-module.md)
 >>>>>>> .merge_file_LDnbrc

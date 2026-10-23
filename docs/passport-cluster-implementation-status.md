@@ -4,7 +4,7 @@ topic: passport-cluster-implementation-status
 canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
 related:
 <<<<<<< .merge_file_VL3LOX
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_pp9eMZ
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VL3LOX
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

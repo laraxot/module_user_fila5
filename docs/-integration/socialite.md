@@ -16,10 +16,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-<<<<<<< .merge_file_D8Ehwj
-=======
 status: draft
->>>>>>> .merge_file_gs6Ex3
 ---
 
 # socialite

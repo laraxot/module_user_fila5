@@ -35,7 +35,7 @@ topic: resources-array-keys-philosophy
 canonical: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
 related:
 <<<<<<< .merge_file_C6SGy0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Yry73e
@@ -44,8 +44,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_C6SGy0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -71,7 +71,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_C6SGy0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Yry73e
@@ -80,8 +80,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_C6SGy0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -297,7 +297,7 @@ topic: resources-corrections-summary-
 canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
 related:
 <<<<<<< .merge_file_C6SGy0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Yry73e
@@ -306,8 +306,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_C6SGy0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -333,7 +333,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_C6SGy0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Yry73e
@@ -342,8 +342,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_C6SGy0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -525,7 +525,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_C6SGy0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Yry73e
@@ -534,8 +534,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_C6SGy0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

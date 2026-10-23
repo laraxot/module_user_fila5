@@ -5,7 +5,7 @@ updated: 2026-07-15
 type: module-documentation
 related:
 <<<<<<< .merge_file_oPjGbA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_rvRBwZ
@@ -14,8 +14,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_oPjGbA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

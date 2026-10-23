@@ -16,10 +16,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-<<<<<<< .merge_file_QFEZJA
-=======
 status: draft
->>>>>>> .merge_file_fzB6rN
 ---
 
 # sso

@@ -9,7 +9,7 @@ qmd: "navigation-translations-fixes correzioni traduzioni navigation - gennaio 2
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 tags: [navigation, translations, fixes, january]
 created: 2026-07-14
@@ -25,8 +25,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_LZ11GD
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

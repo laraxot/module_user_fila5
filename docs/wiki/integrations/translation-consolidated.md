@@ -52,7 +52,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -61,8 +61,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -217,7 +217,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 <<<<<<< .merge_file_Iomimp
-- [Struttura Moduli](./module-structure-2.md) 
+- [Struttura Moduli](./module-structure.md) 
 =======
 - [Struttura Moduli](../../module-structure-user.md) 
 >>>>>>> .merge_file_ycwGwV
@@ -237,7 +237,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -246,8 +246,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -454,7 +454,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -463,8 +463,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -660,7 +660,7 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 ## translation-city-field-refactor-3
 
 <<<<<<< .merge_file_Iomimp
-*Consolidated from: `translation-city-field-refactor-3.md`*
+*Consolidated from: `translation-city-field-refactor.md`*
 =======
 *Consolidated from: `translation-city-field-refactor-stato-rinominato.md`*
 >>>>>>> .merge_file_ycwGwV
@@ -674,7 +674,7 @@ qmd: "translation-city-field-refactor-2025-08-08 deprecated"
 status: deprecated
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -683,12 +683,12 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -709,7 +709,7 @@ topic: translation-city-field-refactor-conflict
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -718,8 +718,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -744,7 +744,7 @@ qmd: "translation-city-field-refactor-2025-08-08.deprecated deprecated"
 status: deprecated
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -753,8 +753,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -779,7 +779,7 @@ topic: translation-city-field-refactor
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -788,8 +788,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -815,7 +815,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -824,8 +824,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -876,7 +876,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -885,8 +885,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -926,7 +926,7 @@ topic: translation-fixes
 canonical: ../../../Themes/docs/shared-components/translation-fixes.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -935,8 +935,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -962,7 +962,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -971,8 +971,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1015,7 +1015,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1024,8 +1024,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1151,8 +1151,8 @@ return [
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 <<<<<<< .merge_file_Iomimp
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-2.md)
+- [Best Practices per le Traduzioni](translation-best-practices.md)
+- [Struttura del Modulo](module-structure.md)
 - [Convenzioni di Codice](code-conventions.md)
 =======
 - [Convenzioni di Codice](../../code_conventions.md)
@@ -1171,7 +1171,7 @@ topic: translation-keys
 canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1180,8 +1180,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1207,7 +1207,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1216,8 +1216,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1391,7 +1391,7 @@ topic: translation-resolution-prototype
 canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1400,8 +1400,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1422,7 +1422,7 @@ topic: translation-syntax-fixes-
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1431,8 +1431,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1458,7 +1458,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1467,8 +1467,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1621,7 +1621,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -1630,8 +1630,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2061,7 +2061,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -2070,8 +2070,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2189,7 +2189,7 @@ topic: translations
 canonical: ../../../Themes/docs/shared-components/translations.md
 related:
 <<<<<<< .merge_file_Iomimp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ycwGwV
@@ -2198,8 +2198,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Iomimp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

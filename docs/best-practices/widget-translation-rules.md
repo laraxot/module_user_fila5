@@ -158,11 +158,11 @@ protected static string $view = 'user::widgets.edit-user';
 - Validate form submission and error handling
 ## Related Documentation
 <<<<<<< .merge_file_q44d8c
-- [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
+- [User Module Widget Structure](../modules/user/project_docs/widgets-structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
-- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure.md)
 =======
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure-user.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)

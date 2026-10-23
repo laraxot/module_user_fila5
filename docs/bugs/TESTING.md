@@ -244,7 +244,7 @@ Verificare:
 ## Riferimenti
 
 <<<<<<< .merge_file_bcdgls
-- **Bug Report**: `BUGFIX_REPORT_2025-01-14.md`
+- **Bug Report**: `BUGFIX_REPORT.md`
 =======
 - **Bug Report**: `BUGFIX_REPORT-bug-fix.md`
 >>>>>>> .merge_file_1TW9z8

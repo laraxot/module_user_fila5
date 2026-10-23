@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_RSiCGO
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_RaZkne
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_RSiCGO
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -199,9 +199,9 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 <<<<<<< .merge_file_RSiCGO
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Widget Filament Corretto](logout-filament-widget-corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)

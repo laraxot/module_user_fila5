@@ -9,13 +9,13 @@ qmd: "phpstan-fixes-gennaio- 🔧 phpstan fixes - modulo user - gennaio 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -255,7 +255,7 @@ module: theme
 topic: phpstan-fixes-gennaio
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 module: theme
 topic: phpstan-fixes-gennaio-2025
@@ -268,8 +268,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yFbR2w
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

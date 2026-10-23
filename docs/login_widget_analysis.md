@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_3LgaDS
-=======
 ---
 title: "Analisi Dettagliata di LoginWidget"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi dettagliata di loginwidget user"
 ---
->>>>>>> .merge_file_9bVtjZ
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`  

@@ -10,10 +10,10 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./parse-error-orphan-methods-.md"
 <<<<<<< .merge_file_2EVsJ8
-  - "./parse-error-orphan-methods-1-1.md"
-  - "./parse-error-orphan-methods-1.md"
-  - "./parse-error-orphan-methods-2.md"
-  - "./parse-error-orphan-methods-3.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 =======

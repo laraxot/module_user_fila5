@@ -3,12 +3,9 @@ title: "User Module: Support → QueueableActions Refactoring Complete"
 type: documentation
 date: 2026-07-21
 status: COMPLETED
-<<<<<<< .merge_file_3K5H3j
-=======
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module: support → queueableactions refactoring user"
->>>>>>> .merge_file_r8htzm
 ---
 
 # User Module: Support → QueueableActions Refactoring

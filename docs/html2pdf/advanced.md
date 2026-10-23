@@ -8,15 +8,12 @@ related:
   - "./security.md"
   - "./styling.md"
   - "./usage.md"
-<<<<<<< .merge_file_gyyfpy
-=======
 title: "advanced"
 type: note
 status: stub
 updated: 2026-10-08
 tags: [docs, user, html2pdf]
 qmd: "advanced user"
->>>>>>> .merge_file_JNVYHf
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/advanced.md

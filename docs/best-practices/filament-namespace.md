@@ -11,15 +11,12 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< .merge_file_zC1cVd
-=======
 title: "filament namespace"
 type: note
 status: stub
 updated: 2026-10-08
 tags: [docs, user, best-practices]
 qmd: "filament namespace user"
->>>>>>> .merge_file_S2pY6i
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-namespace-rules.md

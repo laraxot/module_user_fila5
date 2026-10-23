@@ -9,10 +9,7 @@ qmd: "user migration philosophy xotbase one migration per model no connection"
 issues:
 discussions:
 related:
-<<<<<<< .merge_file_nx8AA4
-=======
 status: draft
->>>>>>> .merge_file_Rf98Mz
 ---
 
 # Migration philosophy

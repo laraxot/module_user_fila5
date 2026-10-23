@@ -4,11 +4,8 @@ type: architecture
 tags: [module, architecture, design]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< .merge_file_daz5i8
-=======
 status: draft
 qmd: "user module   architecture user"
->>>>>>> .merge_file_jBKNYt
 ---
 
 # User Module — Architecture

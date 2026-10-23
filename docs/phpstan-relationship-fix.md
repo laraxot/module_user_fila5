@@ -4,16 +4,16 @@ type: concept
 tags: [phpstan, relationship, fix]
 created: 2026-07-14
 <<<<<<< .merge_file_RApOyD
-updated: 2026-07-14
+updated: 2026-10-23
 =======
-updated: 2026-10-20
+updated: 2026-10-23
 >>>>>>> .merge_file_T4RvD7
 qmd: "phpstan-relationship-fix correzione phpstan - relationship type hints"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_RApOyD
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_T4RvD7
@@ -22,8 +22,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_RApOyD
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -130,7 +130,7 @@ Le implementazioni (`HasAuthenticationLogTrait`, `BaseUser::notifications()` e `
 ## Collegamenti
 
 - [PHPStan Template Covariance](https://phpstan.org/blog/whats-up-with-template-covariant)
-- [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
+- [Eloquent Relationships](https://laravel.com/docs/12.x/eloquent-relationships)
 
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*

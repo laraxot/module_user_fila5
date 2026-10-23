@@ -4,7 +4,7 @@ topic: risks
 canonical: ../../../../Themes/docs/shared-components/04-risks-Modules.md
 related:
 <<<<<<< .merge_file_0oRmQx
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-roadmap-user.md"
 >>>>>>> .merge_file_nqrdZC

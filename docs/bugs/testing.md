@@ -244,7 +244,7 @@ Verificare:
 ## Riferimenti
 
 <<<<<<< .merge_file_MPe2nO
-- **Bug Report**: `BUGFIX_REPORT_2025-01-14.md`
+- **Bug Report**: `BUGFIX_REPORT.md`
 =======
 - **Bug Report**: `BUGFIX_REPORT-bug-fix.md`
 >>>>>>> .merge_file_7QXkKm

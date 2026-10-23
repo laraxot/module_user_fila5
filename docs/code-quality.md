@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_vDWKYp
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_SD7Wax
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_vDWKYp
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -336,7 +336,7 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_vDWKYp
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 >>>>>>> .merge_file_SD7Wax

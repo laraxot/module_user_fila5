@@ -162,7 +162,7 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/docs/widgets/implementation-summary.md` (this file)
 ### Related Documentation
 <<<<<<< .merge_file_RSndXb
-- `Modules/User/docs/widgets-structure-2.md`
+- `Modules/User/docs/widgets-structure.md`
 =======
 - `Modules/User/docs/widgets-structure-user.md`
 >>>>>>> .merge_file_lHTThk
@@ -173,7 +173,7 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/project_docs/widget-translation-rules.md`
 - `Modules/User/project_docs/widgets/implementation-summary.md` (this file)
 <<<<<<< .merge_file_RSndXb
-- `Modules/User/project_docs/widgets-structure-2.md`
+- `Modules/User/project_docs/widgets-structure.md`
 =======
 - `Modules/User/project_docs/widgets-structure-user.md`
 >>>>>>> .merge_file_lHTThk

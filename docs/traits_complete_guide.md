@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_skOdJw
-=======
 ---
 title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, user]
 qmd: "guida completa ai trait del modulo user - aggiornato post-implementazione user"
 ---
->>>>>>> .merge_file_hU3Jyk
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO

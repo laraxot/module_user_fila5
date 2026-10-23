@@ -8,7 +8,7 @@ updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
 related:
 <<<<<<< .merge_file_ECN9fn
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ir1RVy
@@ -17,8 +17,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ECN9fn
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

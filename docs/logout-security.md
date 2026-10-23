@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_cLj9qG
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_7ysOds
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cLj9qG
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -203,8 +203,8 @@ Log::channel('auth')->info('Logout effettuato', [
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< .merge_file_cLj9qG
-- [Gestione Sessione](./session-management-2.md)
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Gestione Sessione](./session-management.md)
+- [Documentazione Volt](./volt-blade-implementation.md)
 =======
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
 - [Documentazione Volt](./volt-blade-implementation-introduzione.md)

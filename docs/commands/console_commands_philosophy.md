@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_apu0J9
-=======
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, user, commands]
 qmd: "filosofia dei comandi console - modulo user user"
 ---
->>>>>>> .merge_file_dRoZoY
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

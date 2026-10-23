@@ -4,7 +4,7 @@ topic: module-structure
 canonical: ../../../Themes/docs/shared-components/module-structure.md
 related:
 <<<<<<< .merge_file_8OisBu
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_M8I2L3
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_8OisBu
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

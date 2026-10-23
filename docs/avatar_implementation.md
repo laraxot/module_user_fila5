@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Apd2HV
-=======
 ---
 title: "Implementazione degli Avatar"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "implementazione degli avatar user"
 ---
->>>>>>> .merge_file_73fIUE
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati

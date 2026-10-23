@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Y6pAyB
-=======
 ---
 title: "Fix Binding Team Models nel Modulo User"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "fix binding team models nel modulo user user"
 ---
->>>>>>> .merge_file_xQ4wwc
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica

@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_TmUWVm
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Maa9DS
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_TmUWVm
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -174,7 +174,7 @@ tests/Feature/Filament/Widgets/
 ## Collegamenti
 
 <<<<<<< .merge_file_TmUWVm
-- [Widget Structure](widgets-structure-2.md)
+- [Widget Structure](widgets-structure.md)
 =======
 - [Widget Structure](widgets-structure-user.md)
 >>>>>>> .merge_file_Maa9DS

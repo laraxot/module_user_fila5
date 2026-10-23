@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_yQT22l
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ThtSQb
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yQT22l
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -34,8 +34,8 @@ status: draft
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_yQT22l
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 =======
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
@@ -223,8 +223,8 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_yQT22l
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 =======
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)

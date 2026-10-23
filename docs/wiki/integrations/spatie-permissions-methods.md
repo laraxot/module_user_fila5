@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_gTAEW0
-=======
 status: draft
 qmd: "user module - spatie permission methods reference user"
->>>>>>> .merge_file_xQTXXT
 ---
 
 # User Module - Spatie Permission Methods Reference

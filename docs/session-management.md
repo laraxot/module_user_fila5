@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_6gKXYS
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_nMwoKV
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_6gKXYS
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -102,10 +102,10 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 <<<<<<< .merge_file_6gKXYS
-- [Gestione del Profilo](./profile-management-2.md)
-- [Best Practices per il Routing](./routing-best-practices-2.md)
+- [Gestione del Profilo](./profile-management.md)
+- [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Documentazione Volt](./volt-blade-implementation.md)
 =======
 - [Gestione del Profilo](./profile-management-laravel-modules.md)
 - [Best Practices per il Routing](./routing-best-practices-architettura-volt-folio-filament.md)

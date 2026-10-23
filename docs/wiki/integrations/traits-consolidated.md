@@ -35,7 +35,7 @@ topic: traits-complete-guide
 canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -44,8 +44,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -60,7 +60,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/traits-compl
 ## traits-hasteams-analisi-corretta-3
 
 <<<<<<< .merge_file_G5e5kk
-*Consolidated from: `traits-hasteams-analisi-corretta-3.md`*
+*Consolidated from: `traits-hasteams-analisi-corretta.md`*
 =======
 *Consolidated from: `traits-hasteams-analisi-corretta.md`*
 >>>>>>> .merge_file_D2CuDr
@@ -75,7 +75,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -84,8 +84,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -651,7 +651,7 @@ topic: traits-hasteams-analisi-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -660,8 +660,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -687,7 +687,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -696,8 +696,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1258,7 +1258,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -1267,8 +1267,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1825,7 +1825,7 @@ topic: traits-hasteams-corrected
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -1834,8 +1834,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1856,7 +1856,7 @@ topic: traits-hasteams-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -1865,8 +1865,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1892,7 +1892,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_G5e5kk
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D2CuDr
@@ -1901,8 +1901,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_G5e5kk
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

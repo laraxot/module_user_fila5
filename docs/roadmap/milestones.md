@@ -4,7 +4,7 @@ topic: milestones
 canonical: ../../../../Themes/docs/shared-components/04-milestones.md
 related:
 <<<<<<< .merge_file_8LfllB
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-roadmap-user.md"
 >>>>>>> .merge_file_OzhQ1h

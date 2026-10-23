@@ -8,11 +8,8 @@ tags: [migrato-da-txt, user]
 converted_from: fix02.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_1AWABw
-=======
 status: draft
 qmd: "fix02 user"
->>>>>>> .merge_file_BaYlPd
 ---
 
 [COMPLETATO] OauthAccessToken rimosso, consolidato su OauthToken.

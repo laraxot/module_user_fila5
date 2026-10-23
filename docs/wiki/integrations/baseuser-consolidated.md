@@ -42,7 +42,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -51,8 +51,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -173,7 +173,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -182,8 +182,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -675,7 +675,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -684,8 +684,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1067,7 +1067,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -1076,8 +1076,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1442,7 +1442,7 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 ## baseuser-refactoring-completed-3
 
 <<<<<<< .merge_file_B7xOWl
-*Consolidated from: `baseuser-refactoring-completed-3.md`*
+*Consolidated from: `baseuser-refactoring-completed.md`*
 =======
 *Consolidated from: `baseuser-refactoring-completed-stato-rinominato.md`*
 >>>>>>> .merge_file_FgnE02
@@ -1456,7 +1456,7 @@ qmd: "baseuser-refactoring-completed-2025-10-15 deprecated"
 status: deprecated
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -1465,12 +1465,12 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [baseuser-refactoring-completed-3.md](baseuser-refactoring-completed-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [baseuser-refactoring-completed-3.md](baseuser-refactoring-completed.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1495,7 +1495,7 @@ qmd: "baseuser-refactoring-completed-2025-10-15.deprecated deprecated"
 status: deprecated
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -1504,8 +1504,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1535,7 +1535,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -1544,8 +1544,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1922,7 +1922,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -1931,8 +1931,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2305,7 +2305,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -2314,8 +2314,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2578,7 +2578,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -2587,8 +2587,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2648,9 +2648,9 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 <<<<<<< .merge_file_B7xOWl
-- [Profile Management](./profile-management-2.md)
-- [Routing Best Practices](./routing-best-practices-2.md)
-- [Session Management](./session-management-2.md)
+- [Profile Management](./profile-management.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 =======
 - [Profile Management](../../profile-management-laravel-modules.md)
 - [Routing Best Practices](../../routing-best-practices-architettura-volt-folio-filament.md)
@@ -2681,7 +2681,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -2690,8 +2690,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -3182,7 +3182,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_B7xOWl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_FgnE02
@@ -3191,8 +3191,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B7xOWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

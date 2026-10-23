@@ -36,7 +36,7 @@ Consolidated from **12** individual files.
 ## business-logic-analysis-3
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-analysis-3.md`*
+*Consolidated from: `business-logic-analysis.md`*
 =======
 *Consolidated from: `business-logic-analysis.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -51,7 +51,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -60,8 +60,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -549,7 +549,7 @@ class ApiRateLimitingMiddleware
 ## business-logic-analysis-4
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-analysis-4.md`*
+*Consolidated from: `business-logic-analysis.md`*
 =======
 *Consolidated from: `business-logic-analysis.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -564,7 +564,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -573,8 +573,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1062,7 +1062,7 @@ class ApiRateLimitingMiddleware
 ## business-logic-analysis-5
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-analysis-5.md`*
+*Consolidated from: `business-logic-analysis.md`*
 =======
 *Consolidated from: `business-logic-analysis.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -1077,7 +1077,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -1086,8 +1086,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1586,7 +1586,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -1595,8 +1595,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2084,7 +2084,7 @@ class ApiRateLimitingMiddleware
 ## business-logic-deep-dive-3
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-deep-dive-3.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 =======
 *Consolidated from: `business-logic-deep-dive.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -2099,7 +2099,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -2108,8 +2108,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2899,7 +2899,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 ## business-logic-deep-dive-4
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-deep-dive-4.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 =======
 *Consolidated from: `business-logic-deep-dive.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -2914,7 +2914,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -2923,8 +2923,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -3714,7 +3714,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 ## business-logic-deep-dive-5
 
 <<<<<<< .merge_file_yxqrjQ
-*Consolidated from: `business-logic-deep-dive-5.md`*
+*Consolidated from: `business-logic-deep-dive.md`*
 =======
 *Consolidated from: `business-logic-deep-dive.md`*
 >>>>>>> .merge_file_gmR7tE
@@ -3729,7 +3729,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -3738,8 +3738,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -4540,7 +4540,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -4549,8 +4549,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -5351,7 +5351,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -5360,8 +5360,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -5860,7 +5860,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_yxqrjQ
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_gmR7tE
@@ -5869,8 +5869,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yxqrjQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

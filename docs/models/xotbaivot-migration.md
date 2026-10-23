@@ -14,10 +14,7 @@ related:
   - "./team.md"
   - "./teampermission.md"
   - "./xotbasepivot-migration.md"
-<<<<<<< .merge_file_qvODTu
-=======
 status: draft
->>>>>>> .merge_file_drlujj
 ---
 
 # User Module - XotBasePivot Migration

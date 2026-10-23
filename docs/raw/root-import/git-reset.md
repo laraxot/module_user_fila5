@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_xGxGho
 ---
 title: "Git Reset"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./pest-test-report-1.md"
 ---
 
-=======
->>>>>>> .merge_file_hp7Snn
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

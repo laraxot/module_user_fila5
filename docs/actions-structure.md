@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_aqq58o
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_D7345K
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_aqq58o
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -103,9 +103,9 @@ class DeleteUserAction
 ## Documentazione Correlata
 
 <<<<<<< .merge_file_aqq58o
-- [Path Conventions](./path-conventions-2.md)
+- [Path Conventions](./path-conventions.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
-- [Module Structure](./module-structure-2.md)
+- [Module Structure](./module-structure.md)
 =======
 - [Path Conventions](./path-conventions-user.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
@@ -186,9 +186,9 @@ class DeleteUserAction
 ## Documentazione Correlata
 
 <<<<<<< .merge_file_aqq58o
-- [Path Conventions](./path-conventions-2.md)
+- [Path Conventions](./path-conventions.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
-- [Module Structure](./module-structure-2.md)
+- [Module Structure](./module-structure.md)
 =======
 - [Path Conventions](./path-conventions-user.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)

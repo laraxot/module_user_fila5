@@ -9,10 +9,10 @@ qmd: "git push LFS missing objects module User risoluzione squash rebase"
 related:
   - "./filament-user-creation-pty-error.md"
 <<<<<<< .merge_file_uaKBta
-  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory.md"
   - "./git-merge-conflict-inventory.md"
   - "./phpstan-module-analysis-memory.md"
-  - "./phpstan-widget-property-types-1.md"
+  - "./phpstan-widget-property-types.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
 =======

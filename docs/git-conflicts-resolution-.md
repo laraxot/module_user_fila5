@@ -12,7 +12,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_hFbAKu
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_mIkbJX
@@ -21,8 +21,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hFbAKu
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -45,7 +45,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 <<<<<<< .merge_file_hFbAKu
-- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure.md)
 =======
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-user.md)
 >>>>>>> .merge_file_mIkbJX
@@ -334,10 +334,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ### **Documentazione Aggiornata:**
 <<<<<<< .merge_file_hFbAKu
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](./widgets-structure.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](./path-conventions.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](./volt-blade-implementation.md) - View patterns
 =======
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
@@ -366,7 +366,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 <<<<<<< .merge_file_hFbAKu
-- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure.md)
 =======
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-user.md)
 >>>>>>> .merge_file_mIkbJX
@@ -655,10 +655,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ### **Documentazione Aggiornata:**
 <<<<<<< .merge_file_hFbAKu
-- [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
+- [widgets-structure-2.md](./widgets-structure.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
-- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+- [path-conventions-2.md](./path-conventions.md) - Convenzioni percorsi
+- [volt-blade-implementation-3.md](./volt-blade-implementation.md) - View patterns
 =======
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni

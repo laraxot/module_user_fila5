@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_qK1Vfv
-=======
 ---
 title: "Roadmap Index - User"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, roadmap]
 qmd: "roadmap index - user user"
 ---
->>>>>>> .merge_file_m2emxq
 # Roadmap Index - User
 
 ## Scope

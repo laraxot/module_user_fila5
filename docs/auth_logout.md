@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_sOIAsh
-=======
 ---
 title: "Componente di Logout"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "componente di logout user"
 ---
->>>>>>> .merge_file_uBrHvr
 # Componente di Logout
 
 ## Problemi Identificati

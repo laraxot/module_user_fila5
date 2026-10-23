@@ -14,10 +14,7 @@ related:
   - "./team.md"
   - "./xotbaivot-migration.md"
   - "./xotbasepivot-migration.md"
-<<<<<<< .merge_file_HFJ1Of
-=======
 status: draft
->>>>>>> .merge_file_UaI0PB
 ---
 
 # TeamPermission

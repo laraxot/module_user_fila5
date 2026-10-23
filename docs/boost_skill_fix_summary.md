@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_xZlYh9
-=======
 status: draft
 qmd: "boost skill fix summary - user module user"
->>>>>>> .merge_file_ZgKIMg
 ---
 
 # Boost Skill Fix Summary - User Module

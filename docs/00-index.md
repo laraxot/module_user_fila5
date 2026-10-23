@@ -18,7 +18,7 @@
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
-- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
+- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-.deprecated.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
@@ -33,8 +33,8 @@
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers-2026-03-10.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
-- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave-2026-03-10.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
+- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
+- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.

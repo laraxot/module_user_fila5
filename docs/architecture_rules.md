@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_CmLKUe
-=======
 ---
 title: "Laraxot Architecture Rules"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "laraxot architecture rules user"
 ---
->>>>>>> .merge_file_GHBFcw
 # Laraxot Architecture Rules
 
 ## Core Principles

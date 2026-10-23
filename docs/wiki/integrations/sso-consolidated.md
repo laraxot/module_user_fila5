@@ -37,7 +37,7 @@ topic: sso-guide
 canonical: ../../../Themes/docs/shared-components/sso-guide.md
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -46,8 +46,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -62,7 +62,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 ## sso-providers-implementation-3
 
 <<<<<<< .merge_file_VT9kMA
-*Consolidated from: `sso-providers-implementation-3.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 =======
 *Consolidated from: `sso-providers-implementation.md`*
 >>>>>>> .merge_file_Obp3gY
@@ -77,7 +77,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -86,8 +86,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -406,7 +406,7 @@ test('can login user via SSO', function () {
 ## sso-providers-implementation-4
 
 <<<<<<< .merge_file_VT9kMA
-*Consolidated from: `sso-providers-implementation-4.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 =======
 *Consolidated from: `sso-providers-implementation.md`*
 >>>>>>> .merge_file_Obp3gY
@@ -421,7 +421,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -430,8 +430,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -750,7 +750,7 @@ test('can login user via SSO', function () {
 ## sso-providers-implementation-5
 
 <<<<<<< .merge_file_VT9kMA
-*Consolidated from: `sso-providers-implementation-5.md`*
+*Consolidated from: `sso-providers-implementation.md`*
 =======
 *Consolidated from: `sso-providers-implementation.md`*
 >>>>>>> .merge_file_Obp3gY
@@ -765,7 +765,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -774,8 +774,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1105,7 +1105,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -1114,8 +1114,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1445,7 +1445,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_VT9kMA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Obp3gY
@@ -1454,8 +1454,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_VT9kMA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

@@ -7,11 +7,8 @@ tags: [memories, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
-<<<<<<< .merge_file_2wQPuJ
-=======
 status: draft
 qmd: "memories index user"
->>>>>>> .merge_file_BLJngF
 ---
 
 # Memories Index

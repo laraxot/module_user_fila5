@@ -4,7 +4,7 @@ topic: membership-uuid-fix
 canonical: ../../../Themes/docs/shared-components/membership-uuid-fix.md
 related:
 <<<<<<< .merge_file_Q2cUmr
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_KxBilq
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Q2cUmr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

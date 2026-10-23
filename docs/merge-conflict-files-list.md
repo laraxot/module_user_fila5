@@ -4,7 +4,7 @@ topic: merge-conflict-files-list
 canonical: ../../../Themes/docs/shared-components/merge-conflict-files-list.md
 related:
 <<<<<<< .merge_file_q0g3m2
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_czVT4D
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_q0g3m2
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

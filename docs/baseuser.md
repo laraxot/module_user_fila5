@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_R4pWDa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_rF1Fde
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_R4pWDa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -81,9 +81,9 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 <<<<<<< .merge_file_R4pWDa
-- [Profile Management](./profile-management-2.md)
-- [Routing Best Practices](./routing-best-practices-2.md)
-- [Session Management](./session-management-2.md)
+- [Profile Management](./profile-management.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 =======
 - [Profile Management](./profile-management-laravel-modules.md)
 - [Routing Best Practices](./routing-best-practices-architettura-volt-folio-filament.md)

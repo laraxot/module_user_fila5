@@ -12,10 +12,7 @@ related:
   - "./change-password-command.md"
   - "./console-commands.md"
   - "./readme.md"
-<<<<<<< .merge_file_bPSof0
-=======
 status: draft
->>>>>>> .merge_file_J6a8nC
 ---
 
 # Filosofia dei Comandi Console - Modulo User

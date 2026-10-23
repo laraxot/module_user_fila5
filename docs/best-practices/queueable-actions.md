@@ -16,10 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< .merge_file_eV2HqT
-=======
 status: draft
->>>>>>> .merge_file_G55GUR
 ---
 
 # Queueable Actions Best Practices

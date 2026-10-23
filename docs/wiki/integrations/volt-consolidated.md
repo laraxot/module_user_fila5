@@ -46,7 +46,7 @@ Consolidated from **27** individual files.
 ## volt-blade-implementation-3
 
 <<<<<<< .merge_file_cAEkFa
-*Consolidated from: `volt-blade-implementation-3.md`*
+*Consolidated from: `volt-blade-implementation.md`*
 =======
 *Consolidated from: `volt-blade-implementation-introduzione.md`*
 >>>>>>> .merge_file_aMVXLz
@@ -61,7 +61,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -70,8 +70,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -371,10 +371,10 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 module: theme
 topic: volt_blade_implementation
 <<<<<<< .merge_file_cAEkFa
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md
+canonical: ../../../Themes/docs/shared-components/volt-blade-implementation.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation.md
 =======
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-introduzione.md
 ---
@@ -386,7 +386,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-i
 ## volt-blade-implementation-error-3
 
 <<<<<<< .merge_file_cAEkFa
-*Consolidated from: `volt-blade-implementation-error-3.md`*
+*Consolidated from: `volt-blade-implementation-error.md`*
 =======
 *Consolidated from: `volt-blade-implementation-error-identificazione-dell.md`*
 >>>>>>> .merge_file_aMVXLz
@@ -401,7 +401,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -410,8 +410,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -517,10 +517,10 @@ Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTAT
 module: theme
 topic: volt_blade_implementation_error
 <<<<<<< .merge_file_cAEkFa
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md
+canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 =======
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error-identificazione-dell.md
 ---
@@ -538,7 +538,7 @@ topic: volt-blade-implementation-error
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -547,8 +547,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -574,7 +574,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -583,8 +583,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -597,9 +597,9 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_cAEkFa
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 =======
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -884,7 +884,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< .merge_file_cAEkFa
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 =======
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
 >>>>>>> .merge_file_aMVXLz
@@ -894,9 +894,9 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_cAEkFa
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 =======
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -1181,7 +1181,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< .merge_file_cAEkFa
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 =======
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
 >>>>>>> .merge_file_aMVXLz
@@ -1203,7 +1203,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1212,8 +1212,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1409,7 +1409,7 @@ class LogoutPage
 - [Best Practices Filament](../filament_best_practices.md)
 <<<<<<< .merge_file_cAEkFa
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
-- [Routing Best Practices](../routing-best-practices-2.md) 
+- [Routing Best Practices](../routing-best-practices.md) 
 =======
 - [Routing Best Practices](../../routing_best_practices.md) 
 - [Routing Best Practices](../../routing-best-practices-architettura-volt-folio-filament.md) 
@@ -1430,7 +1430,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1439,8 +1439,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1506,7 +1506,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
 <<<<<<< .merge_file_cAEkFa
-- [Best Practices Routing](./routing-best-practices-2.md) 
+- [Best Practices Routing](./routing-best-practices.md) 
 =======
 - [Best Practices Routing](../../routing-best-practices-architettura-volt-folio-filament.md) 
 >>>>>>> .merge_file_aMVXLz
@@ -1521,7 +1521,7 @@ topic: volt-folio-logout-debug
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1530,8 +1530,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1546,7 +1546,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-l
 ## volt-folio-logout-error-3
 
 <<<<<<< .merge_file_cAEkFa
-*Consolidated from: `volt-folio-logout-error-3.md`*
+*Consolidated from: `volt-folio-logout-error.md`*
 =======
 *Consolidated from: `volt-folio-logout-error-best-practices.md`*
 >>>>>>> .merge_file_aMVXLz
@@ -1561,7 +1561,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1570,8 +1570,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1586,10 +1586,10 @@ related:
 module: theme
 topic: volt_folio_logout_error
 <<<<<<< .merge_file_cAEkFa
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error-3.md
+canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 =======
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error-best-practices.md
 ---
@@ -1607,7 +1607,7 @@ topic: volt-folio-logout-error
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1616,8 +1616,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1643,7 +1643,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -1652,8 +1652,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1666,8 +1666,8 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_cAEkFa
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 =======
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-panoramica.md)
@@ -1855,8 +1855,8 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< .merge_file_cAEkFa
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 =======
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi Logout Blade](../../logout-blade-analysis-panoramica.md)
@@ -2056,7 +2056,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2065,8 +2065,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2237,7 +2237,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2246,8 +2246,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2312,7 +2312,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 <<<<<<< .merge_file_cAEkFa
-- [Best Practices Routing](./routing-best-practices-2.md) 
+- [Best Practices Routing](./routing-best-practices.md) 
 =======
 - [Best Practices Routing](../../routing-best-practices-architettura-volt-folio-filament.md) 
 >>>>>>> .merge_file_aMVXLz
@@ -2328,7 +2328,7 @@ topic: volt-logout-action
 canonical: ../../../Themes/docs/shared-components/volt-logout-action.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2337,8 +2337,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2359,7 +2359,7 @@ topic: volt-logout
 canonical: ../../../Themes/docs/shared-components/volt-logout.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2368,8 +2368,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2390,7 +2390,7 @@ topic: volt-missing-directive
 canonical: ../../../Themes/docs/shared-components/volt-missing-directive.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2399,8 +2399,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2426,7 +2426,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -2435,8 +2435,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -3880,7 +3880,7 @@ topic: volts
 canonical: ../../../Themes/docs/shared-components/volt-errors.md
 related:
 <<<<<<< .merge_file_cAEkFa
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_aMVXLz
@@ -3889,8 +3889,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_cAEkFa
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

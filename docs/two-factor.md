@@ -4,7 +4,7 @@ topic: two-factor
 <<<<<<< .merge_file_yMyzTS
 canonical: ../../../Themes/docs/shared-components/two-factor-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 canonical: ../../../Themes/docs/shared-components/two-factor-documentation-themes.md
 related:
@@ -15,8 +15,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yMyzTS
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

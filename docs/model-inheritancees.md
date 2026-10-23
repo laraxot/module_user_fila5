@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_uspB73
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_TIn1rr
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_uspB73
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -219,7 +219,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_uspB73
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis.md)
 >>>>>>> .merge_file_TIn1rr
@@ -417,7 +417,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_uspB73
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis.md)
 >>>>>>> .merge_file_TIn1rr
@@ -615,7 +615,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_uspB73
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis.md)
 >>>>>>> .merge_file_TIn1rr

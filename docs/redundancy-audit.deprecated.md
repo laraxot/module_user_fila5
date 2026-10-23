@@ -7,13 +7,13 @@ updated: 2026-07-14
 qmd: "redundancy-audit-2026-05-21.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

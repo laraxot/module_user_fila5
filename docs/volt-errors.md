@@ -13,7 +13,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_D9CMRv
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_oiHTDK
@@ -22,8 +22,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_D9CMRv
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -221,7 +221,7 @@ class LogoutPage
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
-- [Routing Best Practices](../routing-best-practices-2.md) 
+- [Routing Best Practices](../routing-best-practices.md) 
 =======
 ## Nome `@volt` globale: un fragment, un file
 

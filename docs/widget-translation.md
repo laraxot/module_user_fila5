@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_B4Zbu5
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_6J7b2U
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_B4Zbu5
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -165,11 +165,11 @@ protected static string $view = 'user::widgets.edit-user';
 - Validate form submission and error handling
 ## Related Documentation
 <<<<<<< .merge_file_B4Zbu5
-- [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
+- [User Module Widget Structure](../modules/user/project_docs/widgets-structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
-- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure.md)
 =======
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure-user.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
@@ -373,7 +373,7 @@ protected static string $view = 'user::widgets.edit-user';
 ## Related Documentation
 
 <<<<<<< .merge_file_B4Zbu5
-- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure.md)
 =======
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-user.md)
 >>>>>>> .merge_file_6J7b2U

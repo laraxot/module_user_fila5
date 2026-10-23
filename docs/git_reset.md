@@ -8,11 +8,8 @@ tags: [migrato-da-txt, user]
 converted_from: git_reset.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_umdQOF
-=======
 status: draft
 qmd: "git reset user"
->>>>>>> .merge_file_eKjChR
 ---
 
 #!/bin/sh

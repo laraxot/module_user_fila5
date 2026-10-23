@@ -8,12 +8,9 @@ related:
   - ./architecture.md
   - ./prd.md
   - ./livewire-widget-brainstorming.md
-<<<<<<< .merge_file_MjSHGk
-=======
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "brainstorming: dove vive il toggle superadmin user"
->>>>>>> .merge_file_83O6kJ
 ---
 
 # Brainstorming: dove vive il toggle SuperAdmin

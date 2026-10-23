@@ -494,7 +494,7 @@ public function logout()
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 <<<<<<< .merge_file_t2jCDs
-- [Documentazione Volt](./volt-logout-2.md)
+- [Documentazione Volt](./volt-logout.md)
 =======
 - [Documentazione Volt](../volt-logout.md)
 >>>>>>> .merge_file_BaQo3M

@@ -6,7 +6,7 @@ tags: [redundancy, duplicate-code, migrations, ui]
 created: 2026-05-21
 related:
 <<<<<<< .merge_file_E6lVgA
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_rgv80F
@@ -15,15 +15,15 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_E6lVgA
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
-updated: 2026-10-07
+updated: 2026-10-23
 qmd: "user redundancy audit 2026-05-21 user"
 >>>>>>> .merge_file_rgv80F
 ---
@@ -35,11 +35,7 @@ High-risk findings:
 - Duplicate factory path: `Database/factories/DeviceProfileFactory.php` and `database/factories/DeviceProfileFactory.php`.
 - Several migrations are byte-identical or near-identical with different timestamps, including teams, devices, team_user, tenant_user, roles, permissions, and model_has_roles.
 - UI components are byte-identical to `Modules/UI`, including button, modal, input, checkbox, badge, link, nav-link, text-link, placeholder, layout, and marketing components.
-<<<<<<< .merge_file_E6lVgA
-- Docs include case-only duplicates such as `query-optimization-analysis-4.md` and `query_optimization-analysis-2.md`.
-=======
-- Docs include case-only duplicates such as `query-optimization-analysis.md` and `query_optimization-analysis-2.md`.
->>>>>>> .merge_file_rgv80F
+- Docs include case-only duplicates such as `QUERY_OPTIMIZATION_ANALYSIS.md` and `query_optimization_analysis.md`.
 
 Risk:
 - Duplicate FQCN can break Composer autoload determinism.

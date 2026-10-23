@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_PgjGDt
-=======
 ---
 title: "Laravel Passport Implementation Summary - User Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "laravel passport implementation summary - user module user"
 ---
->>>>>>> .merge_file_sfqlTD
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

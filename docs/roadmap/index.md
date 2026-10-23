@@ -4,7 +4,7 @@ topic: index
 canonical: ../../../../Themes/docs/shared-components/00-index-Modules.md
 related:
 <<<<<<< .merge_file_UkqJRe
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-roadmap-user.md"
 >>>>>>> .merge_file_qQpl7Z

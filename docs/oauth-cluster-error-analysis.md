@@ -4,7 +4,7 @@ topic: oauth-cluster-error-analysis
 canonical: ../../../Themes/docs/shared-components/oauth-cluster-error-analysis.md
 related:
 <<<<<<< .merge_file_z8wvnl
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_uYlwPV
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_z8wvnl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

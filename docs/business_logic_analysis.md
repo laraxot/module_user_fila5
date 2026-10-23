@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_OCB17h
-=======
 ---
 title: "User Module - Business Logic Analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - business logic analysis user"
 ---
->>>>>>> .merge_file_esQNkw
 # User Module - Business Logic Analysis
 
 ## Overview

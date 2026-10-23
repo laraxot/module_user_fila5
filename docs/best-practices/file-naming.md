@@ -16,10 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< .merge_file_fxX5A4
-=======
 status: draft
->>>>>>> .merge_file_e1eSIl
 ---
 
 # Regole di Naming per File

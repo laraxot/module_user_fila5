@@ -28,7 +28,7 @@ qmd: "pattern ridondanza in `modules/user/docs/legacy` user"
 ## Business reason
 
 <<<<<<< .merge_file_D1uVw3
-Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization-2.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
+Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
 =======
 Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
 >>>>>>> .merge_file_CkfO1q

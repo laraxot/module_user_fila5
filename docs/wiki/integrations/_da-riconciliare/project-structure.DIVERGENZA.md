@@ -5,11 +5,8 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_lvllCe
-=======
 status: draft
 qmd: "divergenza: `project-structure.md` user"
->>>>>>> .merge_file_66GCyq
 ---
 
 # Divergenza: `project-structure.md`

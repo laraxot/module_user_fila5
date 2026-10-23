@@ -16,10 +16,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-<<<<<<< .merge_file_JdtjTq
-=======
 status: draft
->>>>>>> .merge_file_MZUM7D
 ---
 
 # spatie_permissions

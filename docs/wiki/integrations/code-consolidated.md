@@ -44,7 +44,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -52,8 +52,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -74,7 +74,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -82,8 +82,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -118,7 +118,7 @@ docs/
 ├── user_management/
 │   ├── crud_operations.md
 <<<<<<< .merge_file_l9Ld1H
-│   ├── profile-management-2.md
+│   ├── profile-management.md
 =======
 │   ├── profile-management-laravel-modules.md
 >>>>>>> .merge_file_1ovTXo
@@ -278,7 +278,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -286,8 +286,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -322,7 +322,7 @@ docs/
 ├── user_management/
 │   ├── crud_operations.md
 <<<<<<< .merge_file_l9Ld1H
-│   ├── profile-management-2.md
+│   ├── profile-management.md
 =======
 │   ├── profile-management-laravel-modules.md
 >>>>>>> .merge_file_1ovTXo
@@ -471,7 +471,7 @@ this optimization will create a more secure, maintainable, and performant user a
 ## code-quality-analysis-3
 
 <<<<<<< .merge_file_l9Ld1H
-*Consolidated from: `code-quality-analysis-3.md`*
+*Consolidated from: `code-quality-analysis.md`*
 =======
 *Consolidated from: `code-quality-analysis.md`*
 >>>>>>> .merge_file_1ovTXo
@@ -486,7 +486,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -494,8 +494,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -806,7 +806,7 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_l9Ld1H
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 >>>>>>> .merge_file_1ovTXo
@@ -820,7 +820,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 ## code-quality-analysis-4
 
 <<<<<<< .merge_file_l9Ld1H
-*Consolidated from: `code-quality-analysis-4.md`*
+*Consolidated from: `code-quality-analysis.md`*
 =======
 *Consolidated from: `code-quality-analysis.md`*
 >>>>>>> .merge_file_1ovTXo
@@ -835,7 +835,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -843,8 +843,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1155,7 +1155,7 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_l9Ld1H
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 >>>>>>> .merge_file_1ovTXo
@@ -1169,7 +1169,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 ## code-quality-analysis-5
 
 <<<<<<< .merge_file_l9Ld1H
-*Consolidated from: `code-quality-analysis-5.md`*
+*Consolidated from: `code-quality-analysis.md`*
 =======
 *Consolidated from: `code-quality-analysis.md`*
 >>>>>>> .merge_file_1ovTXo
@@ -1184,7 +1184,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -1192,8 +1192,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1504,8 +1504,8 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_l9Ld1H
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
@@ -1530,7 +1530,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -1538,8 +1538,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1850,8 +1850,8 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_l9Ld1H
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
@@ -1876,7 +1876,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -1884,8 +1884,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2110,7 +2110,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -2118,8 +2118,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2430,7 +2430,7 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< .merge_file_l9Ld1H
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 =======
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 >>>>>>> .merge_file_1ovTXo
@@ -3024,7 +3024,7 @@ topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
 related:
 <<<<<<< .merge_file_l9Ld1H
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ovTXo
@@ -3032,8 +3032,8 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

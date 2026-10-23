@@ -50,7 +50,7 @@ non solo il risultato.
 `actions-path-convention.md` in QUATTRO varianti
 
 <<<<<<< .merge_file_Q2a0FT
-`actions-path-convention-1.md`, `actions-path-convention-2.md`,
+`actions-path-convention.md`, `actions-path-convention.md`,
 =======
 `actions-path-convention.md`, `actions-path-convention-convenzione-percorsi.md`,
 >>>>>>> .merge_file_As621i

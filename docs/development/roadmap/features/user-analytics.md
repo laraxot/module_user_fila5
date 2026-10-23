@@ -15,10 +15,7 @@ related:
   - "./gestione-utenti.md"
   - "./legacy-code-cleanup.md"
   - "./user-traits.md"
-<<<<<<< .merge_file_Qkguen
-=======
 status: draft
->>>>>>> .merge_file_98Yma0
 ---
 
 # User Analytics

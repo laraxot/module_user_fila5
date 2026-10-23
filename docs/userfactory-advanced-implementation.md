@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_ZBuw6c
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_0HX9Hj
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ZBuw6c
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -320,7 +320,7 @@ $gdprTests = [
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
 <<<<<<< .merge_file_ZBuw6c
-- [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration.md)
 =======
 - [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-module.md)
 >>>>>>> .merge_file_0HX9Hj
@@ -623,7 +623,7 @@ $gdprTests = [
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
 <<<<<<< .merge_file_ZBuw6c
-- [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
+- [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration.md)
 =======
 - [User Module Integration](user-factory-advanced-integration-module.md)
 >>>>>>> .merge_file_0HX9Hj

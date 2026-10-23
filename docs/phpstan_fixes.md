@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_pAQbrl
-=======
 ---
 title: "Correzioni PHPStan - Modulo User"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzioni phpstan - modulo user user"
 ---
->>>>>>> .merge_file_7K7uiN
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.

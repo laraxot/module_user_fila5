@@ -295,14 +295,14 @@ Se sei un altro agente AI che legge questo:
 module: theme
 topic: profile-uuid-philosophy
 <<<<<<< .merge_file_VQlvDh
-canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
+canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy.md
 related:
-  - "./migration-safety-rules-1.md"
   - "./migration-safety-rules.md"
-  - "./profile-uuid-philosophy-1.md"
+  - "./migration-safety-rules.md"
+  - "./profile-uuid-philosophy.md"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
+See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy.md
 =======
 canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-zen-approach.md
 related:

@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_Si864F
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ZbqazF
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Si864F
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -174,7 +174,7 @@ tests/Feature/Filament/Widgets/
 ## Collegamenti
 
 <<<<<<< .merge_file_Si864F
-- [Widget Structure](widgets-structure-2.md)
+- [Widget Structure](widgets-structure.md)
 =======
 - [Widget Structure](widgets-structure-user.md)
 >>>>>>> .merge_file_ZbqazF

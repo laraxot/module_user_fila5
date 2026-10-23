@@ -4,7 +4,7 @@ topic: quality-status-nov
 <<<<<<< .merge_file_gndNGZ
 canonical: ../../../Themes/docs/shared-components/quality-status-user-module-november.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
@@ -15,8 +15,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_gndNGZ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

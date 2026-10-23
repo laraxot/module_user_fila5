@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_hmbKol
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_OPbx2K
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hmbKol
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -206,7 +206,7 @@ class LoginWidget extends XotBaseWidget
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 <<<<<<< .merge_file_hmbKol
-- [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
+- [Documentazione Widget Structure](modules/user/widgets-structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
 =======
 - [Documentazione Widget Structure](widgets-structure-user.md)

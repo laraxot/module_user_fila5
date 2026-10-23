@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_xLRdFg
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_hOEE8a
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_xLRdFg
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -99,8 +99,8 @@ This document outlines the best practices for managing user profiles within a La
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 <<<<<<< .merge_file_xLRdFg
-- [Routing Best Practices](./routing-best-practices-2.md)
-- [Session Management](./session-management-2.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 =======
 - [Routing Best Practices](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Session Management](./session-management-gestione-sessioni.md)

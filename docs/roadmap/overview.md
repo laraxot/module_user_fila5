@@ -4,7 +4,7 @@ topic: overview
 canonical: ../../../../Themes/docs/shared-components/00-overview-Modules.md
 related:
 <<<<<<< .merge_file_adJ8ei
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-roadmap-user.md"
 >>>>>>> .merge_file_gjl0Wo

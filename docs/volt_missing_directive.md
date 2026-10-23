@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_6c6bhR
-=======
 ---
 title: "Errore VoltDirectiveMissingException"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "errore voltdirectivemissingexception user"
 ---
->>>>>>> .merge_file_rcCoAy
 # Errore VoltDirectiveMissingException
 
 ## Descrizione

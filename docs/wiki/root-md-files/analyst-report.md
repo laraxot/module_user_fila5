@@ -1,14 +1,11 @@
 ---
 title: analyst-report
 module: User
-<<<<<<< .merge_file_R0Hg70
-=======
 type: note
 status: draft
 updated: 2026-10-08
 tags: [docs, user, wiki]
 qmd: "user module   analyst report user"
->>>>>>> .merge_file_rCDKh1
 ---
 
 # User Module — Analyst Report

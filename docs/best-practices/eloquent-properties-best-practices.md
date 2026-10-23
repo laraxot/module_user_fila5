@@ -16,10 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< .merge_file_Qwgxnu
-=======
 status: draft
->>>>>>> .merge_file_4uHWdF
 ---
 
 # 🛡️ Best Practices per Proprietà Eloquent

@@ -37,7 +37,7 @@ topic: spatie-models-verification
 canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -46,8 +46,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -68,7 +68,7 @@ topic: spatie-permission-philosophy
 canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -77,8 +77,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -93,7 +93,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-permi
 ## spatie-permission-teams-laravel-13
 
 <<<<<<< .merge_file_ApNqsI
-*Consolidated from: `spatie-permission-teams-laravel-13.md`*
+*Consolidated from: `spatie-permission-teams-laravel.md`*
 =======
 *Consolidated from: `spatie-permission-teams-laravel.md`*
 >>>>>>> .merge_file_qAu4y9
@@ -108,7 +108,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -117,8 +117,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -293,7 +293,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -302,8 +302,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -478,7 +478,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -487,8 +487,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -717,7 +717,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
 <<<<<<< .merge_file_ApNqsI
-- [Roles and Permissions](roles-permissions-3.md)
+- [Roles and Permissions](roles-permissions.md)
 =======
 - [Roles and Permissions](../../roles-permissions.md)
 >>>>>>> .merge_file_qAu4y9
@@ -741,7 +741,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 ## spatie-permissions-methods-3
 
 <<<<<<< .merge_file_ApNqsI
-*Consolidated from: `spatie-permissions-methods-3.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 =======
 *Consolidated from: `spatie-permissions-methods.md`*
 >>>>>>> .merge_file_qAu4y9
@@ -756,7 +756,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -765,8 +765,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1269,7 +1269,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 ## spatie-permissions-methods-4
 
 <<<<<<< .merge_file_ApNqsI
-*Consolidated from: `spatie-permissions-methods-4.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 =======
 *Consolidated from: `spatie-permissions-methods.md`*
 >>>>>>> .merge_file_qAu4y9
@@ -1284,7 +1284,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -1293,8 +1293,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1797,7 +1797,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 ## spatie-permissions-methods-5
 
 <<<<<<< .merge_file_ApNqsI
-*Consolidated from: `spatie-permissions-methods-5.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 =======
 *Consolidated from: `spatie-permissions-methods.md`*
 >>>>>>> .merge_file_qAu4y9
@@ -1812,7 +1812,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -1821,8 +1821,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2336,7 +2336,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_ApNqsI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_qAu4y9
@@ -2345,8 +2345,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2855,7 +2855,7 @@ topic: spatie-permissions
 <<<<<<< .merge_file_ApNqsI
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-documentation-themes.md
 related:
@@ -2866,8 +2866,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ApNqsI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

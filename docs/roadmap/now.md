@@ -4,7 +4,7 @@ topic: now
 canonical: ../../../../Themes/docs/shared-components/01-now-Modules.md
 related:
 <<<<<<< .merge_file_wwyMGN
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-roadmap-user.md"
 >>>>>>> .merge_file_qsv6g1

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_SVJmBo
-=======
 ---
 title: "User Module - Product Roadmap"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product roadmap user"
 ---
->>>>>>> .merge_file_j4NfGJ
 # User Module - Product Roadmap
 
 **Module:** User  

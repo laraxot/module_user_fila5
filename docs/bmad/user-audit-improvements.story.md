@@ -1,14 +1,11 @@
 ---
 title: user-audit-improvements.story
 module: User
-<<<<<<< .merge_file_qa4YX8
-=======
 type: story
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "bmad story: user module audit improvements user"
->>>>>>> .merge_file_ALNNXB
 ---
 
 # BMAD Story: User Module Audit Improvements

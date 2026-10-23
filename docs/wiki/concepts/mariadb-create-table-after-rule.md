@@ -13,12 +13,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_NPtGQi
-=======
 title: "MariaDB create table `after()` rule"
 status: draft
 qmd: "mariadb create table `after()` rule user"
->>>>>>> .merge_file_P8FhSU
 ---
 
 # MariaDB create table `after()` rule

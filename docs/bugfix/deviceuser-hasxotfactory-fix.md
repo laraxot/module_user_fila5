@@ -12,10 +12,7 @@ related:
   - "./git-conflicts-resolution.md"
   - "./gits-resolution.md"
   - "./multiple-bugs-resolution.md"
-<<<<<<< .merge_file_HgoaoC
-=======
 status: draft
->>>>>>> .merge_file_924eLC
 ---
 
 # Bugfix: DeviceUser e HasXotFactory

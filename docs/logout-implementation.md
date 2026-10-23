@@ -2,9 +2,9 @@
 module: theme
 topic: logout-implementation
 <<<<<<< .merge_file_xDz2hz
-canonical: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
+canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
 related:
@@ -15,12 +15,12 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_xDz2hz
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

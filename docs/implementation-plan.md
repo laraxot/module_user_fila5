@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_bovBDd
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_sjfA3k
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_bovBDd
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -199,7 +199,7 @@ class NavigationTest extends TestCase
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Header Components](./header-components.md)
 <<<<<<< .merge_file_bovBDd
-- [Navigation Structure](./navigation-structure-2.md)
+- [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
@@ -241,7 +241,7 @@ class NavigationTest extends TestCase
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
 <<<<<<< .merge_file_bovBDd
-- [Navigation Structure](./navigation-structure-2.md)
+- [Navigation Structure](./navigation-structure.md)
 =======
 - [Navigation Structure](./navigation-structure-struttura-navigazione.md)
 >>>>>>> .merge_file_sjfA3k

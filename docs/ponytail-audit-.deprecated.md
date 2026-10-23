@@ -8,13 +8,13 @@ qmd: "ponytail-audit-2026-07-02.deprecated ponytail-audit 2026-07-02: user modul
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

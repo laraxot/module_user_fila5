@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_9OeCNx
-=======
 ---
 title: "User Module - Product Roadmap"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, product]
 qmd: "user module - product roadmap user"
 ---
->>>>>>> .merge_file_OKsjOU
 # User Module - Product Roadmap
 
 ## Overview

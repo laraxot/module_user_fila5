@@ -4,7 +4,7 @@ topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
 <<<<<<< .merge_file_72i7aw
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ZF2IaD
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_72i7aw
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

@@ -4,7 +4,7 @@ topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
 <<<<<<< .merge_file_bhimXL
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_K8upTa
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_bhimXL
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

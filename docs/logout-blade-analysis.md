@@ -465,7 +465,7 @@ topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
 <<<<<<< .merge_file_SpG9eH
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_f1uZ6V
@@ -474,8 +474,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_SpG9eH
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

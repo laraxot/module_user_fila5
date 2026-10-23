@@ -4,7 +4,7 @@ topic: ottimizzazioni-dry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
 <<<<<<< .merge_file_DEsOgd
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_ynh6Mw
@@ -13,8 +13,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_DEsOgd
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"

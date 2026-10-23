@@ -43,7 +43,7 @@ topic: model-classification
 canonical: ../../../Themes/docs/shared-components/model-classification-Modules.md
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -52,8 +52,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -68,7 +68,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 ## model-inheritance-analysis-3
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-analysis-3.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 =======
 *Consolidated from: `model-inheritance-analysis.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -83,7 +83,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -92,8 +92,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -266,7 +266,7 @@ Dopo le modifiche, eseguire:
 ## model-inheritance-analysis-4
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-analysis-4.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 =======
 *Consolidated from: `model-inheritance-analysis.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -281,7 +281,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -290,8 +290,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -464,7 +464,7 @@ Dopo le modifiche, eseguire:
 ## model-inheritance-analysis-5
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-analysis-5.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 =======
 *Consolidated from: `model-inheritance-analysis.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -479,7 +479,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -488,8 +488,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -673,7 +673,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -682,8 +682,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -856,7 +856,7 @@ Dopo le modifiche, eseguire:
 ## model-inheritance-fixes-3
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-fixes-3.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 =======
 *Consolidated from: `model-inheritance-fixes.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -871,7 +871,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -880,8 +880,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1079,7 +1079,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_j08NM8
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -1097,7 +1097,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ## model-inheritance-fixes-4
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-fixes-4.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 =======
 *Consolidated from: `model-inheritance-fixes.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -1112,7 +1112,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1121,8 +1121,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1320,7 +1320,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_j08NM8
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -1338,7 +1338,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## model-inheritance-fixes-5
 
 <<<<<<< .merge_file_j08NM8
-*Consolidated from: `model-inheritance-fixes-5.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 =======
 *Consolidated from: `model-inheritance-fixes-analisi-completa.md`*
 >>>>>>> .merge_file_3BRTW7
@@ -1353,7 +1353,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1362,12 +1362,12 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -1375,10 +1375,10 @@ related:
 ---
 module: theme
 topic: model_inheritance_fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
+canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1409,7 +1409,7 @@ topic: model-inheritance-fixes
 canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1418,8 +1418,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1445,7 +1445,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1454,8 +1454,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1749,7 +1749,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1758,8 +1758,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1943,7 +1943,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -1952,8 +1952,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -2151,7 +2151,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_j08NM8
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -2353,7 +2353,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_j08NM8
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -2555,7 +2555,7 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< .merge_file_j08NM8
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -2950,7 +2950,7 @@ topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -2959,8 +2959,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -3186,7 +3186,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -3195,8 +3195,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -3276,7 +3276,7 @@ topic: models
 canonical: ../../../Themes/docs/shared-components/models-analysis.md
 related:
 <<<<<<< .merge_file_j08NM8
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_3BRTW7
@@ -3285,8 +3285,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_j08NM8
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

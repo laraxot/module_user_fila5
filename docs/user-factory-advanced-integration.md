@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_S0wpj0
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_mSFXL0
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_S0wpj0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -321,8 +321,8 @@ public function run(): void
 
 ### User Module
 <<<<<<< .merge_file_S0wpj0
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 =======
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
@@ -621,8 +621,8 @@ public function run(): void
 
 ### User Module
 <<<<<<< .merge_file_S0wpj0
-- [User Factory Integration](./user-factory-integration-2.md)
-- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 =======
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)

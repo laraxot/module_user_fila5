@@ -14,10 +14,7 @@ related:
   - "./teampermission.md"
   - "./xotbaivot-migration.md"
   - "./xotbasepivot-migration.md"
-<<<<<<< .merge_file_uq0pf8
-=======
 status: draft
->>>>>>> .merge_file_2TanxA
 ---
 
 # BaseUser

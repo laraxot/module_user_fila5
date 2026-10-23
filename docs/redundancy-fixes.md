@@ -4,7 +4,7 @@ module: theme
 topic: redundancy-fixes
 canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
@@ -22,8 +22,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_sV40OP
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

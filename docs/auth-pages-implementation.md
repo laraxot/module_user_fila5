@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_hKztjS
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_L58iQE
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKztjS
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -36,10 +36,10 @@ status: draft
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
-- [Volt Errors](./volt-errors-2.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Volt Logout Action](./volt-logout-action-2.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
 =======
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
@@ -509,10 +509,10 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
-- [Volt Errors](./volt-errors-2.md)
-- [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Volt Logout Action](./volt-logout-action-2.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
 =======
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)

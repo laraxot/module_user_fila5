@@ -5,11 +5,8 @@ status: active
 created: 2026-08-27
 updated: 2026-08-27
 note: "Convertito da phpmd_report.txt (documento) da convert-docs-txt-to-md.py."
-<<<<<<< .merge_file_r45Z31
-=======
 tags: [docs, user]
 qmd: "phpmd report user"
->>>>>>> .merge_file_hDhqFm
 ---
 
 # Phpmd report

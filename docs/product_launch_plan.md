@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_4DNpfJ
-=======
 ---
 title: "User Module - Product Launch Plan"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product launch plan user"
 ---
->>>>>>> .merge_file_IxLe4M
 # User Module - Product Launch Plan
 
 **Module:** User  

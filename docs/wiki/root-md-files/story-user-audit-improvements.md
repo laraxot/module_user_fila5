@@ -230,7 +230,7 @@ This story addresses the critical and high-severity findings via a structured, p
 
 - `/laravel/Modules/User/ANALYST_REPORT.md` — Detailed audit findings
 <<<<<<< .merge_file_UbeDfl
-- `/laravel/Modules/User/docs/code-quality-analysis-2.md` — Code quality baseline
+- `/laravel/Modules/User/docs/code-quality-analysis.md` — Code quality baseline
 =======
 - `/laravel/Modules/User/docs/code-quality-analysis.md` — Code quality baseline
 >>>>>>> .merge_file_svwISg

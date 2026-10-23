@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_yJd2lI
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_BCqgUz
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_yJd2lI
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -176,7 +176,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 <<<<<<< .merge_file_yJd2lI
-- [Struttura Moduli](./module-structure-2.md) 
+- [Struttura Moduli](./module-structure.md) 
 =======
 - [Struttura Moduli](./module-structure-user.md) 
 >>>>>>> .merge_file_BCqgUz

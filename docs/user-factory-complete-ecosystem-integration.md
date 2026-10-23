@@ -427,7 +427,7 @@ topic: user-factory-complete-ecosystem-integration
 canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
 related:
 <<<<<<< .merge_file_x8L9Il
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_xcvWOl
@@ -436,8 +436,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_x8L9Il
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

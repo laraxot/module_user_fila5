@@ -2,7 +2,7 @@
 module: theme
 topic: terms-and-conditions
 <<<<<<< .merge_file_NuSMV9
-canonical: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+canonical: ../../../../Themes/docs/shared-components/terms-and-conditions.md
 =======
 canonical: ../../../../Themes/docs/shared-components/terms-and-conditions.md
 >>>>>>> .merge_file_BMs8SS
@@ -18,7 +18,7 @@ related:
 <<<<<<< .merge_file_NuSMV9
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions.md
 =======
 title: "terms_and_conditions"
 type: note

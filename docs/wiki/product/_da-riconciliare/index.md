@@ -19,7 +19,7 @@ Documentation for `user` module categorized as **product**.
 <<<<<<< .merge_file_KX21RW
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
-- [`user-moderation-strategy-3.md`](./user-moderation-strategy-3.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
 - [`user-moderation-strategy.md`](./user-moderation-strategy.md)
 =======
 - [`product-strategy.md`](../../../product-strategy.md)

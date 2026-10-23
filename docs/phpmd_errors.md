@@ -5,11 +5,8 @@ status: active
 created: 2026-08-27
 updated: 2026-08-27
 note: "Convertito da phpmd_errors.txt (documento) da convert-docs-txt-to-md.py."
-<<<<<<< .merge_file_kRVm6o
-=======
 tags: [docs, user]
 qmd: "phpmd errors user"
->>>>>>> .merge_file_JDi76Q
 ---
 
 # Phpmd errors

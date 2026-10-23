@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_qsGNXH
-=======
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "fullcalendar scheduler - documentazione completa user"
 ---
->>>>>>> .merge_file_oytsTI
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica

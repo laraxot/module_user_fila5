@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_AOiroC
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_1ZsDg4
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_AOiroC
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -185,7 +185,7 @@ All type casting operations now use safe methods:
 
 1. **`README.md`**: Updated with type safety information
 <<<<<<< .merge_file_AOiroC
-2. **`widgets-structure-2.md`**: Enhanced with type safety guidelines
+2. **`widgets-structure.md`**: Enhanced with type safety guidelines
 =======
 2. **`widgets-structure-user.md`**: Enhanced with type safety guidelines
 >>>>>>> .merge_file_1ZsDg4

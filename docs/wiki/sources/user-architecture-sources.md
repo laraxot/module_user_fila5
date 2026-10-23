@@ -21,7 +21,7 @@ qmd: "user architecture sources user"
 
 - `README.md`
 <<<<<<< .merge_file_Wf6geV
-- `product-strategy-2.md`
+- `product-strategy.md`
 =======
 - `product-strategy-user-module.md`
 >>>>>>> .merge_file_6ygy7K

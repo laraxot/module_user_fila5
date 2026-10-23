@@ -12,10 +12,7 @@ related:
   - "./deviceuser-hasxotfactory.md"
   - "./git-conflicts-resolution.md"
   - "./gits-resolution.md"
-<<<<<<< .merge_file_0d5ZCq
-=======
 status: draft
->>>>>>> .merge_file_54FT3x
 ---
 
 # Multiple Bugs Resolution - 16 Dicembre 2025

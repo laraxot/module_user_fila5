@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_jShRch
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_GMivuu
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_jShRch
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -504,7 +504,7 @@ public function logout()
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 <<<<<<< .merge_file_jShRch
-- [Documentazione Volt](./volt-logout-2.md)
+- [Documentazione Volt](./volt-logout.md)
 =======
 - [Documentazione Volt](./volt-logout.md)
 >>>>>>> .merge_file_GMivuu

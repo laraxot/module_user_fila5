@@ -35,7 +35,7 @@ Consolidated from **11** individual files.
 ## team-bindings-fix-3
 
 <<<<<<< .merge_file_Vu7Qqb
-*Consolidated from: `team-bindings-fix-3.md`*
+*Consolidated from: `team-bindings-fix.md`*
 =======
 *Consolidated from: `team-bindings-fix-topic.md`*
 >>>>>>> .merge_file_bGwRNX
@@ -50,7 +50,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -59,8 +59,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -79,10 +79,10 @@ related:
 module: theme
 topic: team_bindings_fix
 <<<<<<< .merge_file_Vu7Qqb
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
+canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
+See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
 =======
 canonical: ../../../Themes/docs/shared-components/team-bindings-fix-topic.md
 ---
@@ -100,7 +100,7 @@ topic: team-bindings-fix
 canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -109,8 +109,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -136,7 +136,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -145,8 +145,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -472,9 +472,9 @@ $this->assertTrue($user->belongsToTeam($team));
 module: theme
 topic: team-contract-usage-reasoning
 <<<<<<< .merge_file_Vu7Qqb
-canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
 canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 related:
@@ -485,12 +485,12 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -511,7 +511,7 @@ topic: team-user-composite-primary-key-fix
 canonical: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -520,8 +520,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -547,7 +547,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -556,8 +556,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -846,7 +846,7 @@ topic: team-user-permissions-fix
 canonical: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -855,8 +855,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -882,7 +882,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -891,8 +891,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1237,7 +1237,7 @@ globs:
 alwaysApply: false
 related:
 <<<<<<< .merge_file_Vu7Qqb
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_bGwRNX
@@ -1246,8 +1246,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_Vu7Qqb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

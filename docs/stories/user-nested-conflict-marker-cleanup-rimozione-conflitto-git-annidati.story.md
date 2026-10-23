@@ -50,9 +50,9 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
 
 - **7 file — blocco "entrambi vuoti" (4 righe: `<<<<<<< HEAD` / `>>>>>>> 87273113 (.)` /
   `=======` / `>>>>>>> laraxot/dev`, nessun contenuto reale tra i marker su nessun lato)**:
-  `docs/quality-status-2025-11.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
+  `docs/quality-status.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
   `docs/baseuser-refactoring-completed.md`, `docs/phpstan-fixes-2025-10-01.md`,
-  `docs/dry-kiss-analysis-2025-10-15.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
+  `docs/dry-kiss-analysis-modulo-job.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
   `docs/git-conflicts-resolution-2025-01-27.md`.
   Risoluzione: eliminazione delle 4 righe marker (nessuna decisione di contenuto, i due lati
   erano gia' vuoti).

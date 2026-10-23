@@ -78,7 +78,7 @@ This avoids repeating the same identity analysis across sessions and keeps busin
 - [[user-module]]
 - `../../README.md`
 <<<<<<< .merge_file_kgQYs8
-- `../../product-strategy-2.md`
+- `../../product-strategy.md`
 =======
 - `../../product-strategy-user-module.md`
 >>>>>>> .merge_file_VZpNuF

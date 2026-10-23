@@ -118,7 +118,7 @@ topic: phpmd-phpinsights-corrections-
 canonical: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
 related:
 <<<<<<< .merge_file_6P0lkU
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_eoD3FZ
@@ -127,8 +127,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_6P0lkU
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

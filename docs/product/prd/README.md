@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_z9eMcq
-=======
 ---
 title: "User Module - Product Requirements Document (PRD)"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, product]
 qmd: "user module - product requirements document (prd) user"
 ---
->>>>>>> .merge_file_QBGYES
 # User Module - Product Requirements Document (PRD)
 
 ## Document Information

@@ -12,10 +12,7 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
-<<<<<<< .merge_file_3HHhY2
-=======
 status: draft
->>>>>>> .merge_file_f2FoNY
 ---
 
 # ChangePasswordCommand

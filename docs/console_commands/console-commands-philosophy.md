@@ -11,9 +11,9 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
 <<<<<<< .merge_file_TOl7S1
-  - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
 =======

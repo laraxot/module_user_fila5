@@ -9,13 +9,10 @@ related:
   - "./duplicated-profile-form.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
-<<<<<<< .merge_file_oT8ZoK
-=======
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "duplicated ratingsrelationmanager user"
->>>>>>> .merge_file_vZ2cLI
 ---
 
 # Duplicated RatingsRelationManager

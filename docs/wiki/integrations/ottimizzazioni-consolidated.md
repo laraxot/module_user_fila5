@@ -38,7 +38,7 @@ topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -47,8 +47,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -69,7 +69,7 @@ topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -78,8 +78,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -100,7 +100,7 @@ topic: ottimizzazioni-dry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -109,8 +109,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -131,7 +131,7 @@ topic: ottimizzazioni-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -140,8 +140,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -167,7 +167,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -176,8 +176,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -563,7 +563,7 @@ topic: ottimizzazioni-superry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -572,8 +572,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -594,7 +594,7 @@ topic: ottimizzazioni-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -603,8 +603,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -630,7 +630,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_hKGam6
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_Qxh5Kq
@@ -639,8 +639,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_hKGam6
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -668,22 +668,22 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< .merge_file_hKGam6
-├── logout-blade-analysis-3.md (14KB)
-├── logout-blade-conclusions-2.md (4.1KB)
-├── logout-blade-corrected-analysis-3.md (7.4KB)
-├── logout-blade-error-analysis-3.md (3.8KB)
-├── logout-blade-implementation-2.md (6.3KB)
-├── logout-blade-structure-2.md (3.1KB)
-├── logout-error-analysis-2.md (3.7KB)
-├── logout-event-error-2.md (5.1KB)
-├── logout-filament-widget-3.md (7.5KB)
-├── logout-filament-widget-corrected-3.md (8.3KB)
-├── logout-implementation-best-practices-2.md (10KB)
-├── logout-implementation-error-3.md (3.3KB)
-├── logout-implementation-with-laravel-localization-3.md (6.2KB)
-├── logout-page-fix-2.md (1.3KB)
-├── logout-page-implementation-3.md (3.2KB)
-└── logout-security-2.md (4.1KB)
+├── logout-blade-analysis.md (14KB)
+├── logout-blade-conclusions.md (4.1KB)
+├── logout-blade-corrected-analysis.md (7.4KB)
+├── logout-blade-error-analysis.md (3.8KB)
+├── logout-blade-implementation.md (6.3KB)
+├── logout-blade-structure.md (3.1KB)
+├── logout-error-analysis.md (3.7KB)
+├── logout-event-error.md (5.1KB)
+├── logout-filament-widget.md (7.5KB)
+├── logout-filament-widget-corrected.md (8.3KB)
+├── logout-implementation-best-practices.md (10KB)
+├── logout-implementation-error.md (3.3KB)
+├── logout-implementation-with-laravel-localization.md (6.2KB)
+├── logout-page-fix.md (1.3KB)
+├── logout-page-implementation.md (3.2KB)
+└── logout-security.md (4.1KB)
 =======
 ├── logout-blade-analysis-panoramica.md (14KB)
 ├── logout-blade-conclusions-sintesi-dell.md (4.1KB)
@@ -712,10 +712,10 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< .merge_file_hKGam6
-├── userfactory-advanced-implementation-complete-2.md (11KB)
-├── user-factory-advanced-integration-3.md (9.1KB)
+├── userfactory-advanced-implementation-complete.md (11KB)
+├── user-factory-advanced-integration.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration-2.md (14KB)
-└── user-factory-integration-2.md (9.8KB)
+└── user-factory-integration.md (9.8KB)
 =======
 ├── userfactory-advanced-implementation-complete-technical-references.md (11KB)
 ├── user-factory-advanced-integration-module.md (9.1KB)
@@ -755,15 +755,15 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< .merge_file_hKGam6
-├── volt-blade-implementation-3.md (9.2KB)
-├── volt-blade-implementation-error-3.md (3.8KB)
-├── volt-errors-2.md (5.6KB)
-├── volt-folio-auth-implementation-3.md (17KB)
-├── volt-folio-error-2.md (1.6KB)
-├── volt-folio-logout-2.md (5.0KB)
+├── volt-blade-implementation.md (9.2KB)
+├── volt-blade-implementation-error.md (3.8KB)
+├── volt-errors.md (5.6KB)
+├── volt-folio-auth-implementation.md (17KB)
+├── volt-folio-error.md (1.6KB)
+├── volt-folio-logout.md (5.0KB)
 ├── volt-folio-logout-debug-2.md (3.0KB)
-├── volt-folio-logout-error-3.md (3.7KB)
-└── volt-logout-2.md (5.2KB)
+├── volt-folio-logout-error.md (3.7KB)
+└── volt-logout.md (5.2KB)
 =======
 ├── volt-blade-implementation-introduzione.md (9.2KB)
 ├── volt-blade-implementation-error-identificazione-dell.md (3.8KB)

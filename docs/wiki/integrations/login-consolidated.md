@@ -42,7 +42,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -51,8 +51,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -123,7 +123,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -132,8 +132,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -213,7 +213,7 @@ related:
 ## Collegamenti
 <<<<<<< .merge_file_tV9hXM
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
-- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 =======
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
@@ -292,7 +292,7 @@ related:
 ## Collegamenti
 <<<<<<< .merge_file_tV9hXM
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
-- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 =======
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
@@ -310,7 +310,7 @@ topic: login-widget-conversion
 canonical: ../../../Themes/docs/shared-components/login-widget-conversion.md
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -319,8 +319,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -346,7 +346,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -355,8 +355,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -549,7 +549,7 @@ topic: login-widget-livewire-binding-fix
 canonical: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -558,8 +558,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -585,7 +585,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -594,8 +594,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -717,7 +717,7 @@ topic: login-widget-translation
 canonical: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -726,8 +726,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -748,7 +748,7 @@ topic: login-widget
 canonical: ../../../Themes/docs/shared-components/login-widget-analysis.md
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -757,8 +757,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -973,7 +973,7 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -982,8 +982,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
@@ -1170,7 +1170,7 @@ class LoginWidget extends XotBaseWidget
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 <<<<<<< .merge_file_tV9hXM
-- [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
+- [Documentazione Widget Structure](modules/user/widgets-structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
 =======
 - [Documentazione Widget Structure](../../widgets-structure-user.md)
@@ -1187,7 +1187,7 @@ topic: loginwidget
 canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
 related:
 <<<<<<< .merge_file_tV9hXM
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_XhAzsF
@@ -1196,8 +1196,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_tV9hXM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"

@@ -166,7 +166,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 <<<<<<< .merge_file_OR6Bp7
-- [User Module Widget Structure](../widgets-structure-2.md)
+- [User Module Widget Structure](../widgets-structure.md)
 =======
 - [User Module Widget Structure](../widgets-structure-user.md)
 >>>>>>> .merge_file_3yOBGj

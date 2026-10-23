@@ -5,11 +5,8 @@ type: product
 tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_WCvV3t
-=======
 status: draft
 qmd: "user moderation strategy user"
->>>>>>> .merge_file_ePwR9k
 ---
 
 # User Moderation Strategy

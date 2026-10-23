@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_ftfR8z
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_wcE8JP
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_ftfR8z
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -35,9 +35,9 @@ status: draft
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 <<<<<<< .merge_file_ftfR8z
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
 =======
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
@@ -242,9 +242,9 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 <<<<<<< .merge_file_ftfR8z
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
 =======
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)

@@ -4,11 +4,8 @@ type: guideline
 module: User
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali user puntatori immagini"
-<<<<<<< .merge_file_CD6ggR
-=======
 status: draft
 tags: [docs, user]
->>>>>>> .merge_file_Lne7bH
 ---
 
 # Git LFS non si usa in questo progetto

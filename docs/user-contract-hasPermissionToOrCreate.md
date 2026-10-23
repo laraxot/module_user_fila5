@@ -8,11 +8,8 @@ created: 2026-09-24
 related:
   - ../BMAD-SECOND-BRAIN.md
   - ../../Xot/app/Contracts/UserContract.php
-<<<<<<< .merge_file_B1PRiT
-=======
 updated: 2026-10-08
 qmd: "haspermissiontoorcreate   implementazione user"
->>>>>>> .merge_file_RLTSFv
 ---
 
 # hasPermissionToOrCreate — implementazione

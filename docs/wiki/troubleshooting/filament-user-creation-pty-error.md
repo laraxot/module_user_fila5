@@ -9,11 +9,11 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_0wNy5E
-  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory.md"
   - "./git-merge-conflict-inventory.md"
   - "./git-push-lfs-missing-objects.md"
   - "./phpstan-module-analysis-memory.md"
-  - "./phpstan-widget-property-types-1.md"
+  - "./phpstan-widget-property-types.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
 =======

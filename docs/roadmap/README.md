@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Vc6bzh
-=======
 ---
 title: "User Module Roadmap"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, roadmap]
 qmd: "user module roadmap user"
 ---
->>>>>>> .merge_file_2kbd0k
 # User Module Roadmap
 
 > "Authentication, authorization, and user management for the entire Laraxot ecosystem."

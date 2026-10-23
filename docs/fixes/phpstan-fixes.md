@@ -10,11 +10,11 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./base-classes-corrections-.md"
 <<<<<<< .merge_file_lSSwEr
-  - "./base-classes-corrections-1.md"
-  - "./base-classes-corrections-2.md"
-  - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes.md"
   - "./phpstanes.md"
 =======
   - "./base-classes-corrections.md"

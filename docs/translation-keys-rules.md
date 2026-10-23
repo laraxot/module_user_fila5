@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< .merge_file_baMtTF
-  - "./00-index-1.md"
+  - "./00-index.md"
 =======
   - "./00-index-indice-documentazione-modulo-user.md"
 >>>>>>> .merge_file_WPd7KI
@@ -18,8 +18,8 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
 <<<<<<< .merge_file_baMtTF
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 =======
   - "./actions-path-convention.md"
@@ -147,8 +147,8 @@ return [
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-2.md)
+- [Best Practices per le Traduzioni](translation-best-practices.md)
+- [Struttura del Modulo](module-structure.md)
 =======
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)

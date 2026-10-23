@@ -16,10 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< .merge_file_XYPmUr
-=======
 status: draft
->>>>>>> .merge_file_dEjcqg
 ---
 
 # dependency-rules
