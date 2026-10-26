@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025

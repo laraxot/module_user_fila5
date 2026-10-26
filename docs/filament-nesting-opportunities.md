@@ -19,6 +19,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # Filament 5.x Nested Resources - Opportunità di Applicazione

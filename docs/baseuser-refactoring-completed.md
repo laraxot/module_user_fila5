@@ -264,10 +264,10 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./readme.md)
+- [User Module README](./README.md)
 
 ### Root Progetto
-- [Code Quality](../../../docs/code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 - [Code Quality](code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 

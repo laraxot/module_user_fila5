@@ -5,8 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 qmd: "migration_best_practices - modulo user user"
+status: superseded
+superseded_by: best-practices/migration-best-practices.md
 ---
 
 # MIGRATION_BEST_PRACTICES - Modulo User

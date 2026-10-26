@@ -213,6 +213,15 @@ rules([
 ]);
 ```
 
+## Ritorno alla pagina dopo il login (CMT-022, 2026-10-26)
+
+`LoginWidget::login()` chiude con `redirectIntended()`: torna alla pagina in `url.intended`, altrimenti alla dashboard o alla home della lingua.
+`url.intended` lo scrive Laravel quando un middleware `auth` manda un ospite al login (`redirectGuestsTo` in `bootstrap/app.php`). Un link «Accedi per ...» che non passa da un middleware non lo scrive:
+per questo il login accetta `?redirect=/it/blog/...`. `LoginWidget::mount()` lo passa a `Modules\User\Actions\Auth\StoreIntendedUrlAction`, che lo salva **solo** se e' un percorso interno
+(rifiutati `https://`, `//host`, `\`, caratteri di controllo, percorsi senza `/` iniziale): il parametro arriva dalla barra degli indirizzi, senza il controllo sarebbe un redirect aperto.
+Chi costruisce il link usa `route('login', ['redirect' => request()->getRequestUri()])`, oppure `<x-comment::login-link />` per «Accedi per commentare».
+Test: `Modules/Fixcity/tests/Feature/Auth/AuthReturnsToRequiredPageTest.php` (percorso valido, sette valori ostili) e `Modules/Comment/tests/Feature/Components/LoginLinkTest.php`.
+
 ## Errori Comuni da Evitare
 
 1. **Utilizzo di componenti UI personalizzati**: Utilizzare sempre i componenti Filament.

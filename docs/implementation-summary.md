@@ -20,7 +20,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: implementation.md
 ---
 
 # Implementation Summary - User Module Type Safety Improvements

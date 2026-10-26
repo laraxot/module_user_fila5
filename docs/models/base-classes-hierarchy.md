@@ -14,6 +14,7 @@ related:
   - "./teampermission.md"
   - "./xotbaivot-migration.md"
   - "./xotbasepivot-migration.md"
+status: draft
 ---
 
 # Gerarchia delle Classi Base - Modulo User

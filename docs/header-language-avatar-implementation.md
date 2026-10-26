@@ -26,7 +26,7 @@ status: draft
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Implementazione Logout](./logout-blade-implementation.md)
@@ -407,7 +407,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Implementazione Logout](./logout-blade-implementation.md)

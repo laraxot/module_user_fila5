@@ -1,10 +1,11 @@
 ---
 title: "User Module - User Research"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - user research user"
+status: superseded
+superseded_by: user-research-module.md
 ---
 # User Module - User Research
 

@@ -5,8 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 qmd: "correzioni ereditarietà modelli - modulo user user"
+status: superseded
+superseded_by: model_inheritance_fixes.md
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User

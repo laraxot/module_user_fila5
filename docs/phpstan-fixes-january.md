@@ -14,6 +14,12 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+title: "phpstan fixes january"
+type: note
+status: stub
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "phpstan fixes january user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md

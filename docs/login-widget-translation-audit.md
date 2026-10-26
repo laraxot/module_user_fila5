@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # LoginWidget Translation Audit - Gennaio 2025

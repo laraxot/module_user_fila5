@@ -1,3 +1,11 @@
+---
+title: "BMAD completion pack — User"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user, bmad]
+qmd: "bmad completion pack   user user"
+---
 # BMAD completion pack — User
 
 This is the owner-local BMAD entry point. Cross-owner contracts are in plans/fixcity-completion-architecture.md; the backlog is in docs/completion-backlog.md.

@@ -143,6 +143,6 @@ POST /api/auth/logout
 
 ## Collegamenti
 
-- [Project Roadmap](../../Activity/docs/wiki/PROJECT-ROADMAP.md)
-- [Project Roadmap](../../../Activity/docs/wiki/PROJECT-ROADMAP.md)
+- [Project Roadmap](../../../Activity/docs/wiki/project-roadmap.md)
+- [Project Roadmap](../../../Activity/docs/wiki/project-roadmap.md)
 - [Tenant Module](../../../Tenant/docs/wiki/)

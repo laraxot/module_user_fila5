@@ -19,7 +19,7 @@ related:
   - ./hasteamsandusercontract.md
   - ../team-contract-usage-reasoning.md
   - ../scopo.md
-  - ../00-INDEX.md
+  - ../00-index.md
 status: active
 ---
 
@@ -70,7 +70,7 @@ L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.
 - [[User]]
 Contratto del team come **unità organizzativa** (appartenenza, owner, inviti, permessi di team). L'implementazione tipica è `Models\Team`; i trait utente tipizzano sul contratto, non sulla classe concreta.
 
-Indice: [../00-INDEX.md](../00-INDEX.md) · perché: [../team-contract-usage-reasoning.md](../team-contract-usage-reasoning.md) · scopo modulo: [../scopo.md](../scopo.md).
+Indice: [../00-INDEX.md](../00-index.md) · perché: [../team-contract-usage-reasoning.md](../team-contract-usage-reasoning.md) · scopo modulo: [../scopo.md](../scopo.md).
 
 ## Perché `?TeamContract` (nullability)
 

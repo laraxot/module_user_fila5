@@ -16,6 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: phpstan-fixes-complete.md
 ---
 
 # PHPStan Fixes Complete - Gennaio 2025

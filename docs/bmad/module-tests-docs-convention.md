@@ -6,6 +6,8 @@ tags: [bmad, second-brain, module-structure, tests, docs, filament-blueprint]
 status: completed
 related:
   - ../docs/second-brain-module-tests-docs-error.md
+updated: 2026-10-20
+qmd: "bmad   correzione percorso test/docs nei moduli user"
 ---
 
 # BMAD — Correzione percorso test/docs nei moduli

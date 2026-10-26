@@ -9,7 +9,7 @@ tags: [bmad, database-migrations-rules, xotbase, repair-violation, .old-conventi
 qmd: "user-module-migration-repair-violation-2026-10-18"
 related:
   - ../filament-blueprint.md
-  - ../../../docs/wiki/guidelines/database-migrations-rules.md
+  - ../../../../../docs/wiki/guidelines/database-migrations-rules.md
   - ../xotbasemigration_best_practices.mdc
 ---
 
@@ -21,9 +21,9 @@ User reported: *"queste migrazioni non rispettano le nostre convenzioni"* — re
 
 ## Sources / Evidence (cited — never fabricated)
 
-- **Convenzioni migrazioni:** [`docs/wiki/guidelines/database-migrations-rules.md`](../../../../docs/wiki/guidelines/database-migrations-rules.md) — *Single Migration Per Table Rule*, *no `add_*` / `fix_*` / `update_*` / `repair_*` prefixed migrations*, `.old` disposal convention.
-- **Policy attiva:** [`laravel/Modules/Activity/docs/migration-policy.md`](../../../../laravel/Modules/Activity/docs/migration-policy.md) — principi 1-4 (una sola migrazione owner, niente prefissi, mai cancellare, nessuna `archive/`).
-- **Base class:** [`laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php`](../../../../laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php) — `getModelClass()` si aspetta pattern `Create*Table`; `tableCreate`/`tableUpdate` sono per un unico file primario.
+- **Convenzioni migrazioni:** [`docs/wiki/guidelines/database-migrations-rules.md`](../../../../../docs/wiki/guidelines/database-migrations-rules.md) — *Single Migration Per Table Rule*, *no `add_*` / `fix_*` / `update_*` / `repair_*` prefixed migrations*, `.old` disposal convention.
+- **Policy attiva:** [`laravel/Modules/Activity/docs/migration-policy.md`](../../../Activity/docs/migration-policy.md) — principi 1-4 (una sola migrazione owner, niente prefissi, mai cancellare, nessuna `archive/`).
+- **Base class:** [`laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php`](../../../Xot/app/Database/Migrations/XotBaseMigration.php) — `getModelClass()` si aspetta pattern `Create*Table`; `tableCreate`/`tableUpdate` sono per un unico file primario.
 - **Autore delle migrazioni primarie:** `2024_01_01_000011_create_roles_table.php`, `2023_01_22_000007_create_permissions_table.php`, `2023_01_01_000005_create_model_has_permissions_table.php`, `2023_01_01_000010_create_role_has_permissions_table.php` — tutte già complete con `tableCreate` + `tableUpdate` (timestamp, team_id, display_name, description, etc.).
 - **Filament Blueprint User:** [`filament-blueprint.md`](filament-blueprint.md) — regola non negoziabile 1-4 (estendere solo XotBase, nessun label hardcoded, business logic nelle Actions, FO widget esplicito); non tocca migrazioni ma conferma architettura data-driven.
 
@@ -64,7 +64,7 @@ User reported: *"queste migrazioni non rispettano le nostre convenzioni"* — re
 
 ## Referenze incrociate (citazioni dirette)
 
-- [`database-migrations-rules.md:14-15`](../../../../docs/wiki/guidelines/database-migrations-rules.md#critical-single-migration-per-table-rule) — *"Each table MUST have a single primary migration that defines its complete structure."*
-- [`database-migrations-rules.md:156-162`](../../../../docs/wiki/guidelines/database-migrations-rules.md#disposing-of-superseded-migrations-never-delete-never-archive) — `.old` convention.
-- [`migration-policy.md:19-25`](../../../../laravel/Modules/Activity/docs/migration-policy.md) — principi 1-4.
-- [`XotBaseMigration.php:28-42`](../../../../laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php) — base class, `tableCreate`/`tableUpdate` unificati nel file primario.
+- [`database-migrations-rules.md:14-15`](../../../../../docs/wiki/guidelines/database-migrations-rules.md#critical-single-migration-per-table-rule) — *"Each table MUST have a single primary migration that defines its complete structure."*
+- [`database-migrations-rules.md:156-162`](../../../../../docs/wiki/guidelines/database-migrations-rules.md#disposing-of-superseded-migrations-never-delete-never-archive) — `.old` convention.
+- [`migration-policy.md:19-25`](../../../Activity/docs/migration-policy.md) — principi 1-4.
+- [`XotBaseMigration.php:28-42`](../../../Xot/app/Database/Migrations/XotBaseMigration.php) — base class, `tableCreate`/`tableUpdate` unificati nel file primario.

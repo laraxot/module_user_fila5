@@ -4,6 +4,8 @@ type: index
 tags: [concepts, User]
 created: 2026-05-11
 updated: 2026-08-19
+status: draft
+qmd: "concepts index   user user"
 ---
 
 # concepts Index — User

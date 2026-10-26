@@ -14,6 +14,12 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+title: "two factor"
+type: note
+status: stub
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "two factor user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md

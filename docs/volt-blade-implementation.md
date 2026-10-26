@@ -26,7 +26,7 @@ status: draft
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
@@ -317,7 +317,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
@@ -605,7 +605,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Gestione Sessione](./session_management.md)
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)

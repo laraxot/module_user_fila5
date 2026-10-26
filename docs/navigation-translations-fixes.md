@@ -196,7 +196,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Regole Applicate
 
 ### DRY (Don't Repeat Yourself)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](README.md)
 - Eliminata duplicazione di chiavi placeholder
@@ -222,8 +222,8 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./readme.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
 
 ## Note Tecniche
 

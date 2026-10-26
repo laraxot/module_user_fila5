@@ -20,7 +20,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: jetstream-vs-laraxot.md
 ---
 
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team

@@ -613,7 +613,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-- [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration.md)
+- [User Module Integration](user-factory-advanced-integration.md)
 - [User Module Integration](user-factory-advanced-integration-module.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 

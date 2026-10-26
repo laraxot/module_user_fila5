@@ -93,8 +93,8 @@ User/
 
 ## Related Documentation
 
-- [Module Structure Organization Rule](../../../docs/wiki/concepts/module-structure-organization-rule.md)
-- [No lang/lang/ and No _docs/ Rule](../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
+- [Module Structure Organization Rule](../../../../docs/wiki/concepts/module-structure-organization-rule.md)
+- [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
 - [Module Structure Organization Rule](../../../../docs/wiki/concepts/module-structure-organization-rule.md)
 - [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
 

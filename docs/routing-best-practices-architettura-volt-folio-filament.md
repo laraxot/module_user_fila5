@@ -16,7 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: routing-best-practices.md
 ---
 
 # Best Practices per il Routing in Architettura Volt + Folio + Filament

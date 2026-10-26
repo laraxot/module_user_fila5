@@ -16,6 +16,7 @@ related:
   - ../stories/10.3.retire-auth-livewire-twins.story.md
   - ../stories/10.4.retire-gdpr-profile-livewire.story.md
   - ../../../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md
+tags: [docs, user, bmad]
 ---
 
 # Pianificazione: custom Livewire User → widget Filament

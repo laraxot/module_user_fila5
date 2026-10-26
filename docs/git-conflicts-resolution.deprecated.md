@@ -5,7 +5,6 @@ tags: [deprecated]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-conflicts-resolution-2025-01-27.deprecated deprecated"
-status: deprecated
 related:
   - "./00-index.md"
   - "./00-index.md"
@@ -15,6 +14,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: git-conflicts-resolution-deprecated.md
 ---
 
 > Questo file è stato rinominato in [git-conflicts-resolution-.deprecated.md](git-conflicts-resolution-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

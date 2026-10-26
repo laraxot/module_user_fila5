@@ -418,10 +418,10 @@ $this->assertTrue($user->belongsToTeam($team));
 3. **Validation**: Validare che i modelli binding implementino le interfacce richieste
 
 ## Collegamenti
-- [HasTeams Trait](../app/Models/Traits/HasTeams.php)
-- [TeamUser Model](../app/Models/TeamUser.php)
-- [TeamInvitation Model](../app/Models/TeamInvitation.php)
-- [UserServiceProvider](../app/Providers/UserServiceProvider.php)
+- [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
+- [TeamUser Model](../../../app/Models/TeamUser.php)
+- [TeamInvitation Model](../../../app/Models/TeamInvitation.php)
+- [UserServiceProvider](../../../app/Providers/UserServiceProvider.php)
 - [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
 - [TeamUser Model](../../../app/Models/TeamUser.php)
 - [TeamInvitation Model](../../../app/Models/TeamInvitation.php)
@@ -753,10 +753,10 @@ $membership = Membership::where('team_id', $team->id)
 
 ## Collegamenti
 
-- [Migration team_user](../../database/migrations/2023_01_01_000004_create_team_user_table.php)
-- [Membership Model](../../app/Models/Membership.php)
-- [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
-- [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+- [Migration team_user](../../../database/migrations/2023_01_01_000004_create_team_user_table.php)
+- [Membership Model](../../../app/Models/Membership.php)
+- [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
+- [TeamsRelationManager](../../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [Migration team_user](../../../database/migrations/2023_01_01_000004_create_team_user_table.php)
 - [Membership Model](../../../app/Models/Membership.php)
 - [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
@@ -1115,10 +1115,10 @@ $this->assertTrue($user->belongsToTeam($team));
 3. **Validation**: Validare che i modelli binding implementino le interfacce richieste
 
 ## Collegamenti
-- [HasTeams Trait](../app/Models/Traits/HasTeams.php)
-- [TeamUser Model](../app/Models/TeamUser.php)
-- [TeamInvitation Model](../app/Models/TeamInvitation.php)
-- [UserServiceProvider](../app/Providers/UserServiceProvider.php)
+- [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
+- [TeamUser Model](../../../app/Models/TeamUser.php)
+- [TeamInvitation Model](../../../app/Models/TeamInvitation.php)
+- [UserServiceProvider](../../../app/Providers/UserServiceProvider.php)
 - [HasTeams Trait](../../../app/Models/Traits/HasTeams.php)
 - [TeamUser Model](../../../app/Models/TeamUser.php)
 - [TeamInvitation Model](../../../app/Models/TeamInvitation.php)

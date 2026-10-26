@@ -11,7 +11,7 @@ updated: 2026-10-20
 tags: [scopo, confini, identita, autorizzazione, sti, contratti, team, dipendenze]
 qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"
 related:
-  - ./00-INDEX.md
+  - ./00-index.md
   - ./contracts/teamcontract.md
   - ./team-contract-usage-reasoning.md
   - ./stories/phpstan-test-wave-user-b.story.md
@@ -19,7 +19,7 @@ related:
 
 # User — scopo, confini e come servirlo meglio
 
-Ingresso docs: [00-INDEX.md](./00-INDEX.md).
+Ingresso docs: [00-INDEX.md](./00-index.md).
 
 ## Lo scopo, dedotto dal codice
 
@@ -105,7 +105,7 @@ queste due policy User è in regola.
 `Profile\DeleteAccount` fino a W2. Canone:
 [inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) ·
 [fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
-Pagina FO pubblica ≠ widget panel ([Gdpr 12.1](../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md)).
+Pagina FO pubblica ≠ widget panel ([Gdpr 12.1](../../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md)).
 
 Verso il basso c'è una riga sola, ma è la riga sbagliata:
 
@@ -283,7 +283,7 @@ find Modules/User/app -type f ! -name '*.php' \
 
 ## Collegamenti
 
-- [00-INDEX.md](./00-INDEX.md) — ingresso operativo
+- [00-INDEX.md](./00-index.md) — ingresso operativo
 - [contracts/teamcontract.md](./contracts/teamcontract.md) · [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
 - [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md)
 - [parental-sti-filament-schemas](../../../../docs/wiki/rules/parental-sti-filament-schemas.md) — perché `BaseUser`/`BaseProfile` con `HasChildren` obbligano ogni figlio a una propria classe Form

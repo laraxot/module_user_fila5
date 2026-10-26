@@ -10,9 +10,9 @@ qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Implementazione Logout](./logout_blade_implementation.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Implementazione Logout](./logout_blade_implementation.md)

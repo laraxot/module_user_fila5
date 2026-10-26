@@ -1,10 +1,11 @@
 ---
 title: "MCP Server Consigliati per il Modulo User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "mcp server consigliati per il modulo user user"
+status: superseded
+superseded_by: mcp-server-recommended.md
 ---
 # MCP Server Consigliati per il Modulo User
 

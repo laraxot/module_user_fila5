@@ -8,7 +8,8 @@ qmd: "user module timestamps rule updateTimestamps"
 related:
   - XOTBASEMIGRATION_TIMESTAMPS_RULE.md
   - ../wiki/rules/module-congruence-rule.md
-status: draft
+status: superseded
+superseded_by: timestamps-rule.md
 ---
 
 # User Module Timestamps Rule

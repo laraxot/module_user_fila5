@@ -16,6 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: bugfix-phpmd-cleanup.md
 ---
 
 # Bug fix + cleanup phpmd (Modules/User, 2026-07-12)

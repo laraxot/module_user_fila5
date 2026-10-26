@@ -13,6 +13,9 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: draft
+updated: 2026-10-23
+qmd: "user redundancy audit 2026-05-21 user"
 ---
 
 # User redundancy audit 2026-05-21

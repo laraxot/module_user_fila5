@@ -14,6 +14,12 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+title: "spatie permissions"
+type: note
+status: stub
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "spatie permissions user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md

@@ -8,6 +8,8 @@ updated: 2026-10-26
 tags: [bmad, user, module, stories, remaining-work]
 related:
   - ../../docs/second-brain/project/bmad-architecture.md
+status: draft
+qmd: "user module   bmad stories & remaining work user"
 ---
 
 # User Module — BMAD Stories & Remaining Work

@@ -20,7 +20,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: emailor-registration.md
 ---
 
 # Invio Email per la Continuazione della Registrazione del Dottore

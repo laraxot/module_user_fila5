@@ -1,3 +1,11 @@
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "implementazione corretta di logout.blade.php user"
+---
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -10,8 +18,6 @@
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 ---
-title: "Implementazione Corretta di logout.blade.php"
-type: note
 status: draft
 updated: 2026-10-13
 tags: [docs, user]

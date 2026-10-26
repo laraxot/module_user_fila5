@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # Ponytail-audit 2026-07-02: User module findings

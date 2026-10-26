@@ -1,3 +1,11 @@
+---
+title: "TeamContract Usage Reasoning"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "teamcontract usage reasoning user"
+---
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -22,8 +30,6 @@ The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns wit
 
 *Last Updated: 16 May 2025*
 ---
-title: "team_contract_usage_reasoning (superseded)"
-type: note
 status: superseded
 updated: 2026-10-20
 superseded_by: ./team-contract-usage-reasoning.md

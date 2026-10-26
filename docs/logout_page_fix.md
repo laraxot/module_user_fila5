@@ -1,10 +1,11 @@
 ---
 title: "Correzione Logout Page nel Theme TwentyOne"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzione logout page nel theme twentyone user"
+status: superseded
+superseded_by: logout-page.md
 ---
 # Correzione Logout Page nel Theme TwentyOne
 

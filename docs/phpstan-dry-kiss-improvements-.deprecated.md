@@ -11,6 +11,12 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+title: "phpstan dry kiss improvements .deprecated"
+type: note
+status: stub
+updated: 2026-10-23
+tags: [docs, user]
+qmd: "phpstan dry kiss improvements .deprecated user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-dry-kiss-improvements-.md

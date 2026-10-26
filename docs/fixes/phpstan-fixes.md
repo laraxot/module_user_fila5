@@ -21,7 +21,8 @@ related:
   - "./base-classes-corrections.md"
   - "./phpstan-fixes-correzioni-modulo-user.md"
   - "./phpstanes.md"
-status: draft
+status: superseded
+superseded_by: ../bug-tracking/phpstan-fixes.md
 ---
 
 # Correzioni PHPStan nel Modulo User

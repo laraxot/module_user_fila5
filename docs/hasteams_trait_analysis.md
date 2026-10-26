@@ -1,10 +1,11 @@
 ---
 title: "HasTeams Trait Analysis"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "hasteams trait analysis user"
+status: superseded
+superseded_by: hasteams-trait-analysis.md
 ---
 # HasTeams Trait Analysis
 

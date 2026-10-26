@@ -32,6 +32,8 @@ dataset('oauth_locales', [
 ]);
 
 test('the login page links Google with the active language prefix', function (string $lang): void {
+    // DCP-290: il pulsante compare solo con le tre chiavi GOOGLE_* (senza, la pagina non lo mostra: AuthGoogleButtonTest).
+    config(['services.google' => ['client_id' => 'test-client', 'client_secret' => 'test-secret', 'redirect' => 'http://localhost/'.$lang.'/auth/login/google/callback']]);
     $html = get('/'.$lang.'/auth/login')->assertOk()->getContent();
 
     expect($html)

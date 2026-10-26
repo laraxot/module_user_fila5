@@ -12,6 +12,12 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+title: "livewire to filament widget migration"
+type: note
+status: stub
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "livewire to filament widget migration user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md

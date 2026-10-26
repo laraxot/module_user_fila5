@@ -20,6 +20,8 @@ related:
   - "../../../actions-path-convention.md"
   - "../../../actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+status: draft
+qmd: "project structure   module **user** user"
 ---
 
 # Project Structure — Module **User**
@@ -155,12 +157,6 @@ git commit -m "docs: add wiki structure for User"
 
 <!-- Merged from PROJECT-STRUCTURE.md, which collided with this file on case-insensitive filesystems. -->
 
----
-title: "Project Structure — Module User"
-type: documentation
-created: 2026-05-11
-updated: 2026-05-11
-tags: [structure, architecture, module]
 ---
 
 # Project Structure — Module **User**

@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: draft
 ---
 
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025

@@ -9,7 +9,7 @@ issues:
 related:
   - ../../bugfix-permission-table-names-singular.md
   - ./spatie-permission-migration-no-table-name.md
-  - ../../../../config/permission.php
+  - ../../../../../config/permission.php
   - ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
   - ../../../../../config/permission.php
   - ../../../Themes/docs/shared-components/spatie-permission-philosophy.md

@@ -16,6 +16,8 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
   - "./dependency.md"
+status: superseded
+superseded_by: auth-widget.md
 ---
 
 # Regole per Widget di Autenticazione

@@ -242,8 +242,8 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
-- [Translation Standards](../../xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
+- [Translation Standards](../../../../Xot/docs/translation-standards.md)
+- [Navigation Translations Fixes](../../../../Lang/docs/navigation-translations-fixes.md)
 - [Navigation Translations Fixes](../../../../Lang/docs/navigation-translations-fixes.md)
 
 ---
@@ -466,11 +466,11 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./README.md)
+- [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./readme.md)
 - [Documentazione Modulo User](./readme.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
+- [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche
@@ -677,9 +677,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Regole Applicate
 
 ### DRY (Don't Repeat Yourself)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../../../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
-- [Documentazione Modulo User](README.md)
+- [Documentazione Modulo User](readme.md)
 - [Documentazione Modulo User](readme.md)
 - Eliminata duplicazione di chiavi placeholder
 - Raggruppamento logico coerente
@@ -701,7 +701,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
+- [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche
@@ -820,7 +820,7 @@ related:
 ## Collegamenti
 
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../../../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](readme.md)
 

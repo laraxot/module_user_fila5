@@ -8,9 +8,9 @@ module: User
 tags: [bmád, oauth, google, redirect, socialite, naming, dependency-inversion, second-brain]
 qmd: "google redirect fix oauth.redirect naming socialite architecture bmad decision"
 related:
-  - ../../../bmad-output/google-callback-architecture.md
-  - ../../../bmad-output/oauth-redirect-naming.md
-  - ../../../bmad-output/google-login-brainstorm.md
+  - ../../../../../bmad-output/google-callback-architecture.md
+  - ../../../../../bmad-output/oauth-redirect-naming.md
+  - ../../../../../bmad-output/google-login-brainstorm.md
   - ../docs/oauth-folio.md
 ---
 

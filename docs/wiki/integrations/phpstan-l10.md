@@ -62,7 +62,7 @@ phpstan analyse app --level=10
 
 ## Related Docs
 
-- [`phpstan-l10-compliance.md`](../../../docs/wiki/rules/phpstan-l10-compliance.md)
+- [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [GitHub Repo](https://github.com/laraxot/module_user_fila5)
 

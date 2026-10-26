@@ -165,7 +165,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 - [User Module Widget Structure](../widgets-structure.md)
 - [User Module Widget Structure](../widgets-structure-user.md)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
-- [Translation System Overview](../../xot/docs/translations.md)
+- [Translation System Overview](../../../Xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 - [Translation System Overview](../../xot/project_docs/translations.md)
 - [EditUserWidget Documentation](./edit-user-widget.md)

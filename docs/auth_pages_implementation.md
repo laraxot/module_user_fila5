@@ -1,3 +1,11 @@
+---
+title: "Implementazione Corretta delle Pagine Auth"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "implementazione corretta delle pagine auth user"
+---
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
@@ -9,8 +17,6 @@
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 ---
-title: "Implementazione Corretta delle Pagine Auth"
-type: note
 status: draft
 updated: 2026-10-13
 tags: [docs, user]

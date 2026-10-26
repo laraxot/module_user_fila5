@@ -16,6 +16,7 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
   - "./dependency.md"
+status: draft
 ---
 
 # Regole per Widget di Autenticazione

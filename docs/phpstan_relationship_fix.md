@@ -1,10 +1,11 @@
 ---
 title: "Correzione PHPStan - Relationship Type Hints"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzione phpstan - relationship type hints user"
+status: superseded
+superseded_by: phpstan-relationship-fix-correzione-type-hints.md
 ---
 # Correzione PHPStan - Relationship Type Hints
 

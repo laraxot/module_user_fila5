@@ -90,7 +90,7 @@ This document outlines the best practices for managing user profiles within a La
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Session Management](./session-management-gestione-sessioni.md)
-- [User Module Index](./INDEX.md)
+- [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)

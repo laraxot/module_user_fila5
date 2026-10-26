@@ -70,4 +70,4 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
-- [INDEX.md](INDEX.md)
+- [INDEX.md](index.md)

@@ -132,9 +132,9 @@ Prima di committare, verifica:
 
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
-- [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
+- [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 - [Service Provider Architecture](./service_provider_architecture.md)
-- [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
+- [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*

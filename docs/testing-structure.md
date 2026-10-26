@@ -310,7 +310,7 @@ dump($variable);
 
 ## Collegamenti
 
-- [README Modulo User](../readme.md)
+- [README Modulo User](../README.md)
 - [README Modulo User](../README.md)
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/readme.md)

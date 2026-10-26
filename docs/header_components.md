@@ -95,5 +95,5 @@ qmd: "componenti header user"
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+- [Gestione Sessione](./session_management.md) 
 - [Gestione Sessione](./session_management.md) 

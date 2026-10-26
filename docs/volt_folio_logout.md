@@ -10,8 +10,8 @@ qmd: "implementazione corretta del logout con volt e folio user"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Analisi Logout Blade](./logout_blade_analysis.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Analisi Logout Blade](./logout_blade_analysis.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)

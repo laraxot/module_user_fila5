@@ -14,7 +14,7 @@ related:
   - ./teams-owner-id-in-create-migration.md
   - ./model-migration-seeder-rule.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
-  - ../../../../../docs/wiki/concepts/xotbase-migration-religion.md
+  - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
   - ../../../../../laravel/Themes/docs/shared-components/xotbase-migration-religion.md
   - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
   - ../../../../../laravel/Themes/docs/shared-components/xotbase-migration-religion.md

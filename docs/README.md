@@ -12,7 +12,7 @@ qmd: "user module documentation overview trait filament auth"
 
 **Scopo:** User e' il confine di identita' (auth FO/BO, OAuth localizzato, profilo, RBAC/tenant): Sixteen veste le pagine, Fixcity/Gdpr possiedono segnalazione e consensi, User possiede login/registrazione e i contratti Filament/Socialite. Hub BMAD: [bmad/decision-log.md](./bmad/decision-log.md), [bmad/filament-blueprint.md](./bmad/filament-blueprint.md).
 
-> Nota 2026-10-14 (docs-audit): l'ingresso canonico della cartella e' [00-INDEX.md](./00-INDEX.md), con numeri e percorsi verificati sul codice. Questo file ha due difetti strutturali: contiene due volte lo stesso corpo (righe 155-1253 e 1257-2352, uguali al 99,8% prima delle note di verifica) e a meta' (riga 131) aveva un blocco front matter incollato da `readme.md`, ora trasformato in blocco di codice. Le smentite verificate sul codice sono marcate "Nota 2026-10-14"; il resto del testo non e' stato rivisto.
+> Nota 2026-10-14 (docs-audit): l'ingresso canonico della cartella e' [00-INDEX.md](./00-index.md), con numeri e percorsi verificati sul codice. Questo file ha due difetti strutturali: contiene due volte lo stesso corpo (righe 155-1253 e 1257-2352, uguali al 99,8% prima delle note di verifica) e a meta' (riga 131) aveva un blocco front matter incollato da `readme.md`, ora trasformato in blocco di codice. Le smentite verificate sul codice sono marcate "Nota 2026-10-14"; il resto del testo non e' stato rivisto.
 
 ## Overview
 
@@ -308,7 +308,7 @@ User Module
 
 ### Directory Structure
 
-> Nota 2026-10-14 (verifica): lo schema sotto e' in parte inventato. Non esistono `app/Policies/` (le 39 policy sono in `app/Models/Policies/`), `app/Services/` (`AuthService`, `PermissionService`, `TenantService` non esistono; la logica e' in `app/Actions/`, regola no-services) e gli eventi `UserCreated`, `UserLoggedIn`, `PermissionGranted` (gli eventi reali sono 27 in `app/Events/`, ad esempio `Login`, `Registered`, `NewPasswordSet`, `SocialiteUserConnected`). I seeder sono in `database/seeders/`. Struttura reale: [00-INDEX.md](./00-INDEX.md).
+> Nota 2026-10-14 (verifica): lo schema sotto e' in parte inventato. Non esistono `app/Policies/` (le 39 policy sono in `app/Models/Policies/`), `app/Services/` (`AuthService`, `PermissionService`, `TenantService` non esistono; la logica e' in `app/Actions/`, regola no-services) e gli eventi `UserCreated`, `UserLoggedIn`, `PermissionGranted` (gli eventi reali sono 27 in `app/Events/`, ad esempio `Login`, `Registered`, `NewPasswordSet`, `SocialiteUserConnected`). I seeder sono in `database/seeders/`. Struttura reale: [00-INDEX.md](./00-index.md).
 
 ```
 User/
@@ -662,7 +662,7 @@ TenantService::setTenant($tenant);
 
 ## 🚀 Quick Start
 
-> Nota 2026-10-14 (verifica): questa sezione e' in gran parte inventata e non va eseguita alla lettera. `laravel/sanctum` non e' installato (l'API usa Passport 13.9.0); non esiste `config/user.php` e nel codice non compaiono le chiavi `max_login_attempts`, `lockout_duration`, `password_reset_timeout`, `oauth_providers`; la config reale del modulo e' in `config/config.php`, `passport.php`, `password.php`, `services.php`, `socialite.php`, `social-providers.php` (il codice legge ad esempio `config('user.passport.tokens')`); non risulta alcun tag `user-config` per `vendor:publish`. `php artisan module:list` funziona (verificato 2026-10-14); `UserSeeder` esiste ma con namespace `Modules\User\Database\Seeders`. Percorso verificabile: [00-INDEX.md](./00-INDEX.md).
+> Nota 2026-10-14 (verifica): questa sezione e' in gran parte inventata e non va eseguita alla lettera. `laravel/sanctum` non e' installato (l'API usa Passport 13.9.0); non esiste `config/user.php` e nel codice non compaiono le chiavi `max_login_attempts`, `lockout_duration`, `password_reset_timeout`, `oauth_providers`; la config reale del modulo e' in `config/config.php`, `passport.php`, `password.php`, `services.php`, `socialite.php`, `social-providers.php` (il codice legge ad esempio `config('user.passport.tokens')`); non risulta alcun tag `user-config` per `vendor:publish`. `php artisan module:list` funziona (verificato 2026-10-14); `UserSeeder` esiste ma con namespace `Modules\User\Database\Seeders`. Percorso verificabile: [00-INDEX.md](./00-index.md).
 
 ### Prerequisites
 1. Xot Module (foundation) - **REQUIRED**
@@ -1410,7 +1410,7 @@ User Module
 
 ### Directory Structure
 
-> Nota 2026-10-14 (verifica): lo schema sotto e' in parte inventato. Non esistono `app/Policies/` (le 39 policy sono in `app/Models/Policies/`), `app/Services/` (`AuthService`, `PermissionService`, `TenantService` non esistono; la logica e' in `app/Actions/`, regola no-services) e gli eventi `UserCreated`, `UserLoggedIn`, `PermissionGranted` (gli eventi reali sono 27 in `app/Events/`, ad esempio `Login`, `Registered`, `NewPasswordSet`, `SocialiteUserConnected`). I seeder sono in `database/seeders/`. Struttura reale: [00-INDEX.md](./00-INDEX.md).
+> Nota 2026-10-14 (verifica): lo schema sotto e' in parte inventato. Non esistono `app/Policies/` (le 39 policy sono in `app/Models/Policies/`), `app/Services/` (`AuthService`, `PermissionService`, `TenantService` non esistono; la logica e' in `app/Actions/`, regola no-services) e gli eventi `UserCreated`, `UserLoggedIn`, `PermissionGranted` (gli eventi reali sono 27 in `app/Events/`, ad esempio `Login`, `Registered`, `NewPasswordSet`, `SocialiteUserConnected`). I seeder sono in `database/seeders/`. Struttura reale: [00-INDEX.md](./00-index.md).
 
 ```
 User/
@@ -1764,7 +1764,7 @@ TenantService::setTenant($tenant);
 
 ## 🚀 Quick Start
 
-> Nota 2026-10-14 (verifica): questa sezione e' in gran parte inventata e non va eseguita alla lettera. `laravel/sanctum` non e' installato (l'API usa Passport 13.9.0); non esiste `config/user.php` e nel codice non compaiono le chiavi `max_login_attempts`, `lockout_duration`, `password_reset_timeout`, `oauth_providers`; la config reale del modulo e' in `config/config.php`, `passport.php`, `password.php`, `services.php`, `socialite.php`, `social-providers.php` (il codice legge ad esempio `config('user.passport.tokens')`); non risulta alcun tag `user-config` per `vendor:publish`. `php artisan module:list` funziona (verificato 2026-10-14); `UserSeeder` esiste ma con namespace `Modules\User\Database\Seeders`. Percorso verificabile: [00-INDEX.md](./00-INDEX.md).
+> Nota 2026-10-14 (verifica): questa sezione e' in gran parte inventata e non va eseguita alla lettera. `laravel/sanctum` non e' installato (l'API usa Passport 13.9.0); non esiste `config/user.php` e nel codice non compaiono le chiavi `max_login_attempts`, `lockout_duration`, `password_reset_timeout`, `oauth_providers`; la config reale del modulo e' in `config/config.php`, `passport.php`, `password.php`, `services.php`, `socialite.php`, `social-providers.php` (il codice legge ad esempio `config('user.passport.tokens')`); non risulta alcun tag `user-config` per `vendor:publish`. `php artisan module:list` funziona (verificato 2026-10-14); `UserSeeder` esiste ma con namespace `Modules\User\Database\Seeders`. Percorso verificabile: [00-INDEX.md](./00-index.md).
 
 ### Prerequisites
 1. Xot Module (foundation) - **REQUIRED**

@@ -127,7 +127,7 @@ public static function getPages(): array
 
 ## Collegamenti
 
-- [XotBaseResource Source Code](../../../Xot/app/Filament/Resources/XotBaseResource.php)
+- [XotBaseResource Source Code](../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [XotBaseResource Source Code](../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)

@@ -122,7 +122,7 @@ Questo errore è **GRAVISSIMO** perché:
 ## COLLEGAMENTI
 
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
-- [User Module README](./readme.md)
+- [User Module README](./README.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
 

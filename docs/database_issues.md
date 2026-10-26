@@ -29,7 +29,7 @@ qmd: "database issues in user module user"
 
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
-- [BaseUser Model](./BaseUser.md)
+- [BaseUser Model](./baseuser.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)

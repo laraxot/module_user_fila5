@@ -58,7 +58,7 @@ public function getTableColumns(): array
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
-- [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns.md)
+- [Regola Generale - Modulo Xot](../../../Xot/docs/filament-table-columns.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 
 ---

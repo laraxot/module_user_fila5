@@ -101,8 +101,8 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
-- [XotData helper](../../xot/docs/standards/readme.md)
-- [XotData helper](../../Xot/docs/standards/readme.md)
+- [XotData helper](../../Xot/docs/standards/README.md)
+- [XotData helper](../../Xot/docs/standards/README.md)
 
 ---
 
@@ -115,5 +115,5 @@ Quando si implementano trait come HasTeams, è fondamentale tipizzare e accettar
 - facilità di test tramite mock/stub
 - manutenibilità e flessibilità futura
 
-Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./Models/Team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 
+Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./models/team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 
 Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./models/team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 

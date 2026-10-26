@@ -1,10 +1,11 @@
 ---
 title: "Riferimento Componenti Filament Verificati"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "riferimento componenti filament verificati user"
+status: superseded
+superseded_by: filament-components-reference.md
 ---
 # Riferimento Componenti Filament Verificati
 

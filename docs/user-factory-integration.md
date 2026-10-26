@@ -371,8 +371,8 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 - [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](authentication.md)
 
@@ -730,8 +730,8 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 - [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](authentication.md)
 

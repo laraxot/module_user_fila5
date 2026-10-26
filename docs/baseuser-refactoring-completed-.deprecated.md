@@ -16,6 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: baseuser-refactoring-completed-completato.md
 ---
 
 # BaseUser Refactoring - Completato

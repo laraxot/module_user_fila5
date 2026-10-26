@@ -16,6 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: navigation-translations-fixes-january.md
 ---
 
 # Correzioni Traduzioni Navigation - Gennaio 2026

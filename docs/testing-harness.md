@@ -8,7 +8,7 @@ updated: 2026-10-20
 status: active
 qmd: "user testing harness TestCase FQCN factory require skipUnless"
 related:
-  - ./00-INDEX.md
+  - ./00-index.md
   - ./testing.md
   - ./stories/phpstan-user-zero.story.md
   - ../../Xot/docs/stories/phpstan-modules-zero-wave3.story.md

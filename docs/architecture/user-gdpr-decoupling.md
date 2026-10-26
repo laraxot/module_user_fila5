@@ -16,6 +16,7 @@ related:
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Decoupling User-GDPR via Event/Listener Pattern

@@ -429,9 +429,9 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ## 🔗 Collegamenti Utili
 
 ### Documentazione Correlata
-- [Roadmap Progetto](../../../docs/roadmap_project.md)
-- [Modulo Fixcity](../../fixcity/docs/roadmap.md)
-- [Modulo Tenant](../../tenant/docs/readme.md)
+- [Roadmap Progetto](../../../../docs/roadmap_project.md)
+- [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
+- [Modulo Tenant](../../Tenant/docs/README.md)
 - [Roadmap Progetto](../../../../docs/roadmap_project.md)
 - [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
 - [Modulo Tenant](../../Tenant/docs/README.md)

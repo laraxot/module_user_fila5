@@ -192,7 +192,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../saluteora/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
