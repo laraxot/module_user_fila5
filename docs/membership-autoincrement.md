@@ -8,25 +8,19 @@ qmd: "membership-autoincrement fix: duplicate entry error in team_user table - c
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_5ARhIG
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_6thQwc
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_5ARhIG
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_6thQwc
 ---
 
 # Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement
@@ -240,15 +234,12 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_5ARhIG
 - [Membership Model](../../app/Models/Membership.php)
 - [BasePivot Model](../../app/Models/BasePivot.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
-=======
 - [Membership Model](../app/Models/Membership.php)
 - [BasePivot Model](../app/Models/BasePivot.php)
 - [TeamsRelationManager](../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [HasTeams Trait](../app/Models/Traits/HasTeams.php)
->>>>>>> .merge_file_6thQwc
 - [Migration Rules](../../../xot/docs/migrations-consolidated.md)

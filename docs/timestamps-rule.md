@@ -6,25 +6,19 @@ created: 2026-06-05
 updated: 2026-06-05
 qmd: "user module timestamps rule updateTimestamps"
 related:
-<<<<<<< .merge_file_lb4loP
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_c7E9tz
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_lb4loP
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_c7E9tz
 ---
 
 # User Module Timestamps Rule

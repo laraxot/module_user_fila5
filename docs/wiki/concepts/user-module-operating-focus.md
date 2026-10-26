@@ -13,12 +13,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_kgQYs8
-=======
 status: draft
 tags: [docs, user, wiki]
 qmd: "user module operating focus user"
->>>>>>> .merge_file_VZpNuF
 ---
 
 # User Module Operating Focus
@@ -77,10 +74,7 @@ This avoids repeating the same identity analysis across sessions and keeps busin
 - [[User Architecture Sources]]
 - [[user-module]]
 - `../../README.md`
-<<<<<<< .merge_file_kgQYs8
 - `../../product-strategy.md`
-=======
 - `../../product-strategy-user-module.md`
->>>>>>> .merge_file_VZpNuF
 - `../../architecture/architecture-rules.md`
 - `../../advanced-user-architecture.md`

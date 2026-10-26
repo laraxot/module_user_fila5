@@ -8,25 +8,19 @@ qmd: "userfactory-advanced-implementation userfactory advanced implementation - 
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_ZBuw6c
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_0HX9Hj
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_ZBuw6c
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_0HX9Hj
 ---
 
 # UserFactory Advanced Implementation - COMPLETE ✅
@@ -319,11 +313,8 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-<<<<<<< .merge_file_ZBuw6c
 - [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration.md)
-=======
 - [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-module.md)
->>>>>>> .merge_file_0HX9Hj
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -622,11 +613,8 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-<<<<<<< .merge_file_ZBuw6c
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration.md)
-=======
 - [User Module Integration](user-factory-advanced-integration-module.md)
->>>>>>> .merge_file_0HX9Hj
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

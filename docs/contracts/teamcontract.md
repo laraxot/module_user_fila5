@@ -1,7 +1,6 @@
 ---
 title: "TeamContract"
 type: concept
-<<<<<<< .merge_file_Sp1l2c
 tags: [teamcontract]
 created: 2026-07-14
 updated: 2026-07-14
@@ -10,7 +9,6 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./hasteamsandusercontract.md"
-=======
 tags: [teamcontract, teams, nullability]
 created: 2026-07-14
 updated: 2026-10-20
@@ -23,12 +21,10 @@ related:
   - ../scopo.md
   - ../00-INDEX.md
 status: active
->>>>>>> .merge_file_FRiShf
 ---
 
 # TeamContract
 
-<<<<<<< .merge_file_Sp1l2c
 L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.
 
 ## Metodi
@@ -72,7 +68,6 @@ L'interfaccia `TeamContract` definisce il contratto per i team nel sistema.
 - [[TeamInvitation]]
 - [[Team]]
 - [[User]]
-=======
 Contratto del team come **unità organizzativa** (appartenenza, owner, inviti, permessi di team). L'implementazione tipica è `Models\Team`; i trait utente tipizzano sul contratto, non sulla classe concreta.
 
 Indice: [../00-INDEX.md](../00-INDEX.md) · perché: [../team-contract-usage-reasoning.md](../team-contract-usage-reasoning.md) · scopo modulo: [../scopo.md](../scopo.md).
@@ -124,4 +119,3 @@ Nota: `HasTeamsContract` storicamente dichiara `belongsToTeam(TeamContract)` non
 
 - [hasteamsandusercontract.md](./hasteamsandusercontract.md)
 - [stories/phpstan-test-wave-user-b.story.md](../stories/phpstan-test-wave-user-b.story.md)
->>>>>>> .merge_file_FRiShf

@@ -8,25 +8,19 @@ qmd: "passport-cluster-implementation-needed passport cluster - implementazione 
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_ST0RUZ
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_I2wb9i
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_ST0RUZ
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_I2wb9i
 ---
 
 # Passport Cluster - Implementazione Necessaria

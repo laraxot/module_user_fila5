@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_Ol8frJ
 title: "User Module Updates - December 2025"
 type: concept
 tags: [updates]
@@ -10,18 +9,10 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index.md"
-=======
-module: theme
-topic: updates-2025
-canonical: ../../../Themes/docs/shared-components/updates-12-Modules.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_CC4tQ0
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Ol8frJ
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
@@ -43,7 +34,6 @@ related:
 This module adheres to the **Super Cow Methodology**:
 - **Filament Rules**: Extends `XotBase` classes (e.g., `XotBaseLogin`, `XotBasePage`).
 - **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -56,4 +46,3 @@ qmd: "updates 2025 user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/updates-12-Modules.md
->>>>>>> .merge_file_CC4tQ0

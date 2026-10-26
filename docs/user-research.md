@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_I6lvsv
-=======
 status: draft
 qmd: "user module - user research user"
->>>>>>> .merge_file_wqyUbf
 ---
 
 # User Module - User Research
@@ -109,22 +106,16 @@ qmd: "user-research user research: user module"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_I6lvsv
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_wqyUbf
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_I6lvsv
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_wqyUbf
   - "./actions-path-convention.md"
 ---
 

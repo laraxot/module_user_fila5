@@ -3,20 +3,15 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_V7vqQg
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_323VLY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V7vqQg
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -26,7 +21,6 @@ status: draft
 updated: 2026-10-08
 tags: [docs, user]
 qmd: "configurazione stati utente (state) user"
->>>>>>> .merge_file_323VLY
 ---
 # Configurazione Stati Utente (state)
 

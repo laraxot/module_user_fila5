@@ -11,25 +11,19 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_592CdK
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_ey5JRS
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_592CdK
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_ey5JRS
 ---
 
 # BaseUser Refactoring - Completato
@@ -267,11 +261,8 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-<<<<<<< .merge_file_592CdK
 - [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
-=======
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
->>>>>>> .merge_file_ey5JRS
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -281,20 +272,14 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./readme.md)
 
 ### Root Progetto
-<<<<<<< .merge_file_592CdK
 - [Code Quality](../../../docs/code-quality-analysis.md)
-=======
 - [Code Quality](code-quality-analysis.md)
->>>>>>> .merge_file_ey5JRS
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 - [User Module README](./readme.md)
 
 ### Root Progetto
-<<<<<<< .merge_file_592CdK
 - [Code Quality](../../docs/code-quality-analysis.md)
-=======
 - [Code Quality](code-quality-analysis.md)
->>>>>>> .merge_file_ey5JRS
 - [DRY Violations](../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation

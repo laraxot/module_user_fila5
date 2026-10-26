@@ -8,22 +8,16 @@ qmd: "overview-extended user module - authentication & authorization"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_wbjt2V
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Nfxr8P
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_wbjt2V
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Nfxr8P
   - "./actions-path-convention.md"
 ---
 
@@ -1022,11 +1016,8 @@ test('user can switch teams', function () {
 - [User Model Architecture](./architecture/user-model.md) - User model design
 - [Permission System](./architecture/permission-system.md) - RBAC architecture
 - [Multi-Tenancy](./architecture/multi-tenancy.md) - Tenant isolation
-<<<<<<< .merge_file_wbjt2V
 - [Team System](./architecture/teams.md) - Team collaboration
-=======
 - [Team System](./teams.md) - Team collaboration
->>>>>>> .merge_file_Nfxr8P
 
 ### Authentication
 - [Authentication Flow](./auth/authentication-flow.md) - Login/logout process
@@ -1045,11 +1036,8 @@ test('user can switch teams', function () {
 - [API Integration](./development/api.md) - API usage guide
 
 ### Security
-<<<<<<< .merge_file_wbjt2V
 - [Security Best Practices](./security/best-practices.md) - Security guidelines
-=======
 - [Security Best Practices](./best-practices.md) - Security guidelines
->>>>>>> .merge_file_Nfxr8P
 - [Password Policies](./security/passwords.md) - Password requirements
 - [Audit Logging](./security/audit-log.md) - Security audit trail
 
@@ -1099,7 +1087,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-<<<<<<< .merge_file_wbjt2V
 - [Xot Module](../Xot/docs/README.md) - Core foundation
 - [Activity Module](../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../Lang/docs/README.md) - Translations
@@ -1108,7 +1095,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../docs/security.md)
-=======
 - [Xot Module](../../Xot/docs/README.md) - Core foundation
 - [Activity Module](../../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../../Lang/docs/README.md) - Translations
@@ -1117,7 +1103,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../docs/security.md)
->>>>>>> .merge_file_Nfxr8P
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

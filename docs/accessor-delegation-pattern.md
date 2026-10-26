@@ -8,7 +8,6 @@ qmd: "accessor-delegation-pattern accessor delegation pattern (sacro)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_Oc2MJR
   - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
@@ -17,7 +16,6 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-structure.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
@@ -27,7 +25,6 @@ related:
   - "./actions-path-convention.md"
   - "./actions-structure.md"
 status: draft
->>>>>>> .merge_file_qD29Y5
 ---
 
 # Accessor Delegation Pattern (SACRO)

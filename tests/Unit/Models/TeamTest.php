@@ -8,9 +8,10 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class TeamTest extends TestCase
 {
-
     public function test_can_create_team_with_minimal_data(): void
     {
         $user = User::factory()->create();

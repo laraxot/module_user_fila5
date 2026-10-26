@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Arr;
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
 
 /**
  * Regressione /{en,de,es}/auth/{login,register}: testo italiano di fallback o etichette grezze

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_0HBopa
-=======
 ---
 title: "UserFactory Advanced Implementation - COMPLETE"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "userfactory advanced implementation - complete user"
 ---
->>>>>>> .merge_file_epy3EE
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -299,11 +296,8 @@ $gdprTests = [
 
 ### Primary Documentation
 - [SaluteOra Factory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md)
-<<<<<<< .merge_file_0HBopa
 - [User Module Integration](../laravel/Modules/User/docs/user_factory_advanced_integration.md)
-=======
 - [User Module Integration](user_factory_advanced_integration.md)
->>>>>>> .merge_file_epy3EE
 - [Advanced Analysis](../laravel/Modules/SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -317,22 +311,16 @@ module: theme
 topic: userfactory-advanced-implementation-complete
 canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
 related:
-<<<<<<< .merge_file_0HBopa
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_epy3EE
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_0HBopa
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_epy3EE
   - "./actions-path-convention.md"
 ---
 

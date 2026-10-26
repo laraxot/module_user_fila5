@@ -8,25 +8,19 @@ qmd: "phpmd-errors phpmd errors"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_KQSqIC
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_T2j480
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_KQSqIC
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_T2j480
 ---
 
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CyclomaticComplexity    The method execute() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.

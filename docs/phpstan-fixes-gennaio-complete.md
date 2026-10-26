@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_0Uxehw
 title: "PHPStan Fixes Complete - Gennaio 2025"
 type: concept
 tags: [phpstan, fixes, gennaio, complete]
@@ -10,18 +9,10 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index.md"
-=======
-module: theme
-topic: phpstan-fixes-gennaio-2025-complete
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_63FNgj
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_0Uxehw
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
@@ -147,7 +138,6 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 ## Data Completamento
 **27 Gennaio 2025** - Correzione completa di tutti gli errori PHPStan
 
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -160,4 +150,3 @@ qmd: "phpstan fixes gennaio 2025 complete user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
->>>>>>> .merge_file_63FNgj

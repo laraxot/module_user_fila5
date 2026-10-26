@@ -42,22 +42,16 @@ module: theme
 topic: model-classification
 canonical: ../../../Themes/docs/shared-components/model-classification-Modules.md
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -67,11 +61,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 
 ## model-inheritance-analysis-3
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-analysis.md`*
-=======
-*Consolidated from: `model-inheritance-analysis.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -82,22 +72,16 @@ qmd: "model-inheritance-analysis-3 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -245,31 +229,24 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
 ## model-inheritance-analysis-4
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-analysis.md`*
-=======
-*Consolidated from: `model-inheritance-analysis.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -280,22 +257,16 @@ qmd: "model-inheritance-analysis-4 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -443,31 +414,24 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
 ## model-inheritance-analysis-5
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-analysis.md`*
-=======
-*Consolidated from: `model-inheritance-analysis.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -478,22 +442,16 @@ qmd: "model-inheritance-analysis-5 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -641,21 +599,18 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
@@ -672,22 +627,16 @@ qmd: "model-inheritance-analysis analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -835,31 +784,24 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
 ## model-inheritance-fixes-3
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-fixes.md`*
-=======
-*Consolidated from: `model-inheritance-fixes.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -870,22 +812,16 @@ qmd: "model-inheritance-fixes-3 correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -1078,29 +1014,22 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_j08NM8
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
 ## model-inheritance-fixes-4
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-fixes.md`*
-=======
-*Consolidated from: `model-inheritance-fixes.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -1111,22 +1040,16 @@ qmd: "model-inheritance-fixes-4 correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -1319,29 +1242,23 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_j08NM8
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
 ## model-inheritance-fixes-5
 
-<<<<<<< .merge_file_j08NM8
 *Consolidated from: `model-inheritance-fixes.md`*
-=======
 *Consolidated from: `model-inheritance-fixes-analisi-completa.md`*
->>>>>>> .merge_file_3BRTW7
 
 title: "Model Inheritance Fixes 5"
 type: concept
@@ -1352,16 +1269,12 @@ qmd: "model-inheritance-fixes-5 model inheritance fixes 5"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
@@ -1379,7 +1292,6 @@ canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1397,7 +1309,6 @@ canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-analis
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-analisi-completa.md
->>>>>>> .merge_file_3BRTW7
 ---
 
 ## model-inheritance-fixes
@@ -1408,22 +1319,16 @@ module: theme
 topic: model-inheritance-fixes
 canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -1444,22 +1349,16 @@ qmd: "model-inheritance-rules regole di ereditarietà dei modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -1666,11 +1565,8 @@ Prima di creare un nuovo modello, verifica:
 ## Link Correlati
 
 - [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
-<<<<<<< .merge_file_j08NM8
 - [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
-=======
 - [Documentazione Geo Model Pattern](../../../../Geo/docs/model-inheritance-pattern.md)
->>>>>>> .merge_file_3BRTW7
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche
@@ -1748,22 +1644,16 @@ qmd: "model-inheritance analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -1911,21 +1801,18 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
@@ -1942,22 +1829,16 @@ qmd: "model-inheritancees correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -2150,19 +2031,16 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_j08NM8
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -2352,19 +2230,16 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_j08NM8
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -2554,19 +2429,16 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_j08NM8
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [Analisi Completa](../../model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
@@ -2717,21 +2589,18 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
@@ -2929,15 +2798,12 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_j08NM8
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_3BRTW7
 
 ---
 
@@ -2949,22 +2815,16 @@ module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -3161,11 +3021,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../Tenant/docs/modelli_factory_seeder_analisi.md)
-<<<<<<< .merge_file_j08NM8
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
-=======
 - [Notify Module](../../../../Notify/docs/modelli_factory_seeder_analisi.md)
->>>>>>> .merge_file_3BRTW7
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
@@ -3185,22 +3042,16 @@ qmd: "models-analysis models analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 
@@ -3275,22 +3126,16 @@ module: theme
 topic: models
 canonical: ../../../Themes/docs/shared-components/models-analysis.md
 related:
-<<<<<<< .merge_file_j08NM8
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3BRTW7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j08NM8
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_3BRTW7
   - "./actions-path-convention.md"
 ---
 

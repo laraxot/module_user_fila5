@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_hKGam6
-=======
 status: draft
 qmd: "ottimizzazioni   consolidated documentation user"
->>>>>>> .merge_file_Qxh5Kq
 ---
 
 # ottimizzazioni — Consolidated Documentation
@@ -37,22 +34,16 @@ module: theme
 topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -68,22 +59,16 @@ module: theme
 topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -99,22 +84,16 @@ module: theme
 topic: ottimizzazioni-dry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -130,22 +109,16 @@ module: theme
 topic: ottimizzazioni-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -166,22 +139,16 @@ qmd: "ottimizzazioni-super-dry-kiss ottimizzazioni super dry + kiss - modulo use
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -537,11 +504,8 @@ class User extends Model
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_hKGam6
 - [Documentazione Core](../../../../docs/core/)
-=======
 - [Documentazione Core](../../core)
->>>>>>> .merge_file_Qxh5Kq
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
@@ -562,22 +526,16 @@ module: theme
 topic: ottimizzazioni-superry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -593,22 +551,16 @@ module: theme
 topic: ottimizzazioni-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -629,22 +581,16 @@ qmd: "ottimizzazioniry-kiss ottimizzazioni dry + kiss - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_hKGam6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_hKGam6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Qxh5Kq
   - "./actions-path-convention.md"
 ---
 
@@ -667,7 +613,6 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ##### A. **Logout Analysis (12+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-<<<<<<< .merge_file_hKGam6
 ├── logout-blade-analysis.md (14KB)
 ├── logout-blade-conclusions.md (4.1KB)
 ├── logout-blade-corrected-analysis.md (7.4KB)
@@ -684,7 +629,6 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-page-fix.md (1.3KB)
 ├── logout-page-implementation.md (3.2KB)
 └── logout-security.md (4.1KB)
-=======
 ├── logout-blade-analysis-panoramica.md (14KB)
 ├── logout-blade-conclusions-sintesi-dell.md (4.1KB)
 ├── logout-blade-corrected-analysis-analisi-corretta.md (7.4KB)
@@ -701,7 +645,6 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-page-fix.md (1.3KB)
 ├── logout-page-implementation-best-practices.md (3.2KB)
 └── logout-security-sicurezza-processo.md (4.1KB)
->>>>>>> .merge_file_Qxh5Kq
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -711,17 +654,14 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ##### B. **User Factory (4+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-<<<<<<< .merge_file_hKGam6
 ├── userfactory-advanced-implementation-complete.md (11KB)
 ├── user-factory-advanced-integration.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration-2.md (14KB)
 └── user-factory-integration.md (9.8KB)
-=======
 ├── userfactory-advanced-implementation-complete-technical-references.md (11KB)
 ├── user-factory-advanced-integration-module.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration.md (14KB)
 └── user-factory-integration-module.md (9.8KB)
->>>>>>> .merge_file_Qxh5Kq
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
 CONTENUTO: Implementazioni simili con variazioni minime
@@ -731,20 +671,14 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ##### C. **PHPStan Fixes (5+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-<<<<<<< .merge_file_hKGam6
 ├── phpstan-fixes-2025-1.md (4.4KB)
-=======
 ├── phpstan-fixes-2025-documentation-themes.md (4.4KB)
->>>>>>> .merge_file_Qxh5Kq
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
-<<<<<<< .merge_file_hKGam6
 └── phpstan-fixes-8.md (2.5KB)
-=======
 └── phpstan-fixes.md (2.5KB)
->>>>>>> .merge_file_Qxh5Kq
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute
@@ -754,7 +688,6 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ##### D. **Volt Implementation (8+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-<<<<<<< .merge_file_hKGam6
 ├── volt-blade-implementation.md (9.2KB)
 ├── volt-blade-implementation-error.md (3.8KB)
 ├── volt-errors.md (5.6KB)
@@ -764,7 +697,6 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error.md (3.7KB)
 └── volt-logout.md (5.2KB)
-=======
 ├── volt-blade-implementation-introduzione.md (9.2KB)
 ├── volt-blade-implementation-error-identificazione-dell.md (3.8KB)
 ├── volt-errors.md (5.6KB)
@@ -774,7 +706,6 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-folio-logout-debug.md (3.0KB)
 ├── volt-folio-logout-error-best-practices.md (3.7KB)
 └── volt-logout.md (5.2KB)
->>>>>>> .merge_file_Qxh5Kq
 
 PROBLEMA: Implementazioni Volt frammentate e duplicate
 CONTENUTO: Errori e implementazioni simili ripetute

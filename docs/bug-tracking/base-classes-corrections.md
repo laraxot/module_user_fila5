@@ -9,17 +9,14 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./base-classes-corrections-.md"
-<<<<<<< .merge_file_U0OI0v
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./phpstan-fixes.md"
-=======
   - "../fixes/base-classes-corrections.md"
   - "../fixes/base-classes-corrections.md"
   - "../fixes/base-classes-corrections-stato-rinominato.md"
   - "./phpstan-fixes-correzioni-modulo-user.md"
->>>>>>> .merge_file_lfGyD1
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
 ---

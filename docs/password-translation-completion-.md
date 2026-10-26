@@ -11,25 +11,19 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_umNp0I
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_EalmNI
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_umNp0I
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_EalmNI
 ---
 
 # Completamento Traduzioni Password - 2025
@@ -139,13 +133,10 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
-<<<<<<< .merge_file_umNp0I
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
-=======
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
->>>>>>> .merge_file_EalmNI
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro
@@ -265,13 +256,10 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
-<<<<<<< .merge_file_umNp0I
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
-=======
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
->>>>>>> .merge_file_EalmNI
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro

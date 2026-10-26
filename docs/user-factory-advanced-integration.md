@@ -8,25 +8,19 @@ qmd: "user-factory-advanced-integration userfactory advanced integration - modul
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_S0wpj0
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_mSFXL0
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_S0wpj0
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_mSFXL0
 ---
 
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
@@ -320,13 +314,10 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< .merge_file_S0wpj0
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
-=======
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
->>>>>>> .merge_file_mSFXL0
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -620,13 +611,10 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< .merge_file_S0wpj0
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
-=======
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
->>>>>>> .merge_file_mSFXL0
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation

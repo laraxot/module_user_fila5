@@ -8,14 +8,12 @@ updated: 2026-07-08
 qmd: "git push LFS missing objects module User risoluzione squash rebase"
 related:
   - "./filament-user-creation-pty-error.md"
-<<<<<<< .merge_file_uaKBta
   - "./git-merge-conflict-inventory.md"
   - "./git-merge-conflict-inventory.md"
   - "./phpstan-module-analysis-memory.md"
   - "./phpstan-widget-property-types.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
-=======
   - "./git-merge-conflict-inventory-stato-rinominato.md"
   - "./git-merge-conflict-inventory.md"
   - "./phpstan-module-analysis-memory.md"
@@ -23,7 +21,6 @@ related:
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
 status: draft
->>>>>>> .merge_file_AwrzMZ
 ---
 
 # Git push — oggetti LFS mancanti
@@ -106,11 +103,8 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User --no-progres
 |------------------|-----|
 | PHPStan `method.notFound` su migrazione legacy `Database/Migrations/` | Rimuovi cartella PascalCase; canonico = `database/migrations/` |
 | `trait.unused` / generics su contract duplicato in `Application/` | Solo `app/Application/` |
-<<<<<<< .merge_file_uaKBta
 | Dependabot alert su push | [dependabot-discipline](../../../../../docs/wiki/how-to/dependabot-discipline.md) |
-=======
 | Dependabot alert su push | [dependabot-discipline](../../../../../../docs/wiki/how-to/dependabot-discipline.md) |
->>>>>>> .merge_file_AwrzMZ
 
 ## Riferimenti
 

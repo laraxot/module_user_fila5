@@ -8,25 +8,19 @@ qmd: "profile-management profile management in laravel modules"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_xLRdFg
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_hOEE8a
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_xLRdFg
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_hOEE8a
 ---
 
 # Profile Management in Laravel Modules
@@ -98,27 +92,21 @@ This document outlines the best practices for managing user profiles within a La
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-<<<<<<< .merge_file_xLRdFg
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
-=======
 - [Routing Best Practices](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Session Management](./session-management-gestione-sessioni.md)
->>>>>>> .merge_file_hOEE8a
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 - [User Module Index](./INDEX.md)
-<<<<<<< .merge_file_xLRdFg
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
-=======
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
->>>>>>> .merge_file_hOEE8a

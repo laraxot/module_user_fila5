@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_VT9kMA
-=======
 status: draft
 qmd: "sso   consolidated documentation user"
->>>>>>> .merge_file_Obp3gY
 ---
 
 # sso — Consolidated Documentation
@@ -36,22 +33,16 @@ module: theme
 topic: sso-guide
 canonical: ../../../Themes/docs/shared-components/sso-guide.md
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 
@@ -61,11 +52,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 
 ## sso-providers-implementation-3
 
-<<<<<<< .merge_file_VT9kMA
 *Consolidated from: `sso-providers-implementation.md`*
-=======
-*Consolidated from: `sso-providers-implementation.md`*
->>>>>>> .merge_file_Obp3gY
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -76,22 +63,16 @@ qmd: "sso-providers-implementation-3 user module - sso providers implementation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 
@@ -405,11 +386,7 @@ test('can login user via SSO', function () {
 
 ## sso-providers-implementation-4
 
-<<<<<<< .merge_file_VT9kMA
 *Consolidated from: `sso-providers-implementation.md`*
-=======
-*Consolidated from: `sso-providers-implementation.md`*
->>>>>>> .merge_file_Obp3gY
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -420,22 +397,16 @@ qmd: "sso-providers-implementation-4 user module - sso providers implementation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 
@@ -749,11 +720,7 @@ test('can login user via SSO', function () {
 
 ## sso-providers-implementation-5
 
-<<<<<<< .merge_file_VT9kMA
 *Consolidated from: `sso-providers-implementation.md`*
-=======
-*Consolidated from: `sso-providers-implementation.md`*
->>>>>>> .merge_file_Obp3gY
 
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -764,22 +731,16 @@ qmd: "sso-providers-implementation-5 user module - sso providers implementation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 
@@ -1104,22 +1065,16 @@ qmd: "sso-providers-implementation user module - sso providers implementation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 
@@ -1444,22 +1399,16 @@ qmd: "sso 🔑 single sign-on (sso) - guida implementazione"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_VT9kMA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Obp3gY
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_VT9kMA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Obp3gY
   - "./actions-path-convention.md"
 ---
 

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_p6jXzz
-=======
 ---
 title: "Analisi Approfondita dell'Errore nell'Implementazione del Logout"
 type: note
@@ -8,23 +6,19 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi approfondita dell'errore nell'implementazione del logout user"
 ---
->>>>>>> .merge_file_T7VIDA
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_p6jXzz
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
-=======
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Logout](logout_blade_analysis.md)
 - [Conclusioni Logout](logout_blade_conclusions.md)
->>>>>>> .merge_file_T7VIDA
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Fondamentale Identificato
@@ -133,22 +127,16 @@ module: theme
 topic: logout-blade-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 related:
-<<<<<<< .merge_file_p6jXzz
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_T7VIDA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_p6jXzz
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_T7VIDA
   - "./actions-path-convention.md"
 ---
 

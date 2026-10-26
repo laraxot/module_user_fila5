@@ -5,12 +5,9 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-<<<<<<< .merge_file_Wf6geV
-=======
 status: draft
 tags: [docs, user, wiki]
 qmd: "user architecture sources user"
->>>>>>> .merge_file_6ygy7K
 ---
 
 # User Architecture Sources
@@ -20,11 +17,8 @@ qmd: "user architecture sources user"
 ## Source Cluster
 
 - `README.md`
-<<<<<<< .merge_file_Wf6geV
 - `product-strategy.md`
-=======
 - `product-strategy-user-module.md`
->>>>>>> .merge_file_6ygy7K
 - `architecture/architecture-rules.md`
 - `advanced-user-architecture.md`
 

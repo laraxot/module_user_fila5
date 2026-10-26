@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_LbX0u3
-=======
 ---
 title: "Resources Corrections Summary - 2025-01-22"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "resources corrections summary - 2025-01-22 user"
 ---
->>>>>>> .merge_file_94f2vX
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo
@@ -171,22 +168,16 @@ module: theme
 topic: resources-corrections-summary-
 canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
 related:
-<<<<<<< .merge_file_LbX0u3
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_94f2vX
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_LbX0u3
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_94f2vX
   - "./actions-path-convention.md"
 ---
 

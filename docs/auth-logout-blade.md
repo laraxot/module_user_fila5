@@ -8,41 +8,31 @@ qmd: "auth-logout-blade implementazione corretta di logout.blade.php"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_cw0VrW
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_FgzfMa
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_cw0VrW
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_FgzfMa
 ---
 
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_cw0VrW
 - [Documentazione centrale](../../../docs/README.md)
-=======
 - [Documentazione centrale](../../../../docs/README.md)
->>>>>>> .merge_file_FgzfMa
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)
-<<<<<<< .merge_file_cw0VrW
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
@@ -52,7 +42,6 @@ status: draft
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
-=======
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
@@ -62,7 +51,6 @@ status: draft
 - [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)
->>>>>>> .merge_file_FgzfMa
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

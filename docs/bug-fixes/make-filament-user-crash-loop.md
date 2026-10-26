@@ -9,14 +9,12 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./parse-error-orphan-methods-.md"
-<<<<<<< .merge_file_2EVsJ8
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
-=======
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-documentation-themes.md"
@@ -24,7 +22,6 @@ related:
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 status: draft
->>>>>>> .merge_file_li7R2e
 ---
 
 # Bug Fix: Crash durante creazione utenti con make:filament-user

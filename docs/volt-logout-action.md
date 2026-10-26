@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_TmP5un
-=======
 ---
 title: "Logout via Volt Action"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "logout via volt action user"
 ---
->>>>>>> .merge_file_rw8xux
 # Logout via Volt Action
 
 ## Contesto
@@ -78,22 +75,16 @@ module: theme
 topic: volt-logout-action
 canonical: ../../../Themes/docs/shared-components/volt-logout-action.md
 related:
-<<<<<<< .merge_file_TmP5un
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_rw8xux
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_TmP5un
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_rw8xux
   - "./actions-path-convention.md"
 ---
 

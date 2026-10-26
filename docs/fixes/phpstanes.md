@@ -4,14 +4,12 @@ topic: phpstanes
 canonical: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
 related:
   - "./base-classes-corrections-.md"
-<<<<<<< .merge_file_NTSifI
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
-=======
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections-stato-rinominato.md"
@@ -24,7 +22,6 @@ status: stub
 updated: 2026-10-08
 tags: [docs, user, fixes]
 qmd: "phpstanes user"
->>>>>>> .merge_file_jxo87r
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md

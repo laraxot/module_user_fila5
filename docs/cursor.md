@@ -3,20 +3,15 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_PKBxJk
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_sfqVrF
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_PKBxJk
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -26,7 +21,6 @@ status: draft
 updated: 2026-10-08
 tags: [docs, user]
 qmd: "regola cursor: migrazioni xotbasemigration user"
->>>>>>> .merge_file_sfqVrF
 ---
 # Regola Cursor: Migrazioni XotBaseMigration
 

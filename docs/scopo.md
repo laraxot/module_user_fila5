@@ -4,11 +4,9 @@ type: concept
 module: User
 status: active
 created: 2026-09-02
-<<<<<<< .merge_file_6zvKcl
 updated: 2026-09-02
 tags: [scopo, confini, identita, autorizzazione, sti, contratti, dipendenze]
 qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"
-=======
 updated: 2026-10-20
 tags: [scopo, confini, identita, autorizzazione, sti, contratti, team, dipendenze]
 qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"
@@ -17,16 +15,12 @@ related:
   - ./contracts/teamcontract.md
   - ./team-contract-usage-reasoning.md
   - ./stories/phpstan-test-wave-user-b.story.md
->>>>>>> .merge_file_rBD2h7
 ---
 
 # User — scopo, confini e come servirlo meglio
 
-<<<<<<< .merge_file_6zvKcl
-=======
 Ingresso docs: [00-INDEX.md](./00-INDEX.md).
 
->>>>>>> .merge_file_rBD2h7
 ## Lo scopo, dedotto dal codice
 
 Tre domande, un modulo solo che risponde: **chi sei, cosa ti è permesso, per conto
@@ -100,11 +94,9 @@ frequenti dicono esattamente quale forma User riceve dalla piattaforma:
 ```
 
 Zero estensioni dirette di classi `Filament\` fuori dalle `XotBase*`, zero
-<<<<<<< .merge_file_6zvKcl
 `app/Services` (l'unico file che matcha `*Service*.php` è
 `app/Http/Livewire/TermsOfService.php`, un componente di UI: falso positivo). Su
 queste due policy User è in regola.
-=======
 `app/Services`. Su queste due policy User è in regola.
 
 **Panel chrome (fleet W0 ✓, 2026-10-20):** gli HTTP legali `TermsOfService` /
@@ -114,7 +106,6 @@ queste due policy User è in regola.
 [inventario Xot](../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) ·
 [fleet story](../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md).
 Pagina FO pubblica ≠ widget panel ([Gdpr 12.1](../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md)).
->>>>>>> .merge_file_rBD2h7
 
 Verso il basso c'è una riga sola, ma è la riga sbagliata:
 
@@ -144,8 +135,6 @@ il tenant come **riga di anagrafica** è un fatto di identità, il tenant come
 divisione non è dichiarata da nessuna parte e due modelli con lo stesso nome sono
 raggiungibili da chiunque.
 
-<<<<<<< .merge_file_6zvKcl
-=======
 ## Team: contratto e nullability (contratto di business)
 
 La terza domanda (*per conto di quale organizzazione*) passa da `HasTeams` tipizzato su
@@ -157,7 +146,6 @@ stanno mentendo sul dominio: tipizzare/fixture prima di “sistemare” PHPStan
 ([contracts/teamcontract.md](./contracts/teamcontract.md),
 [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md)).
 
->>>>>>> .merge_file_rBD2h7
 ## Come servire meglio lo scopo
 
 ### 1. Chiudere il ciclo User → Ptv (1 riga)
@@ -295,19 +283,13 @@ find Modules/User/app -type f ! -name '*.php' \
 
 ## Collegamenti
 
-<<<<<<< .merge_file_6zvKcl
-=======
 - [00-INDEX.md](./00-INDEX.md) — ingresso operativo
 - [contracts/teamcontract.md](./contracts/teamcontract.md) · [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
 - [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md)
->>>>>>> .merge_file_rBD2h7
 - [parental-sti-filament-schemas](../../../../docs/wiki/rules/parental-sti-filament-schemas.md) — perché `BaseUser`/`BaseProfile` con `HasChildren` obbligano ogni figlio a una propria classe Form
 - [circular-dependency-prevention](../../../../docs/wiki/rules/circular-dependency-prevention.md) — il ciclo User → Ptv → User
 - [actions-over-services](../../../../docs/wiki/rules/actions-over-services.md) — la policy che User rispetta
 - [basemodel-connection-mandatory](../../../../docs/wiki/memories/basemodel-connection-mandatory.md) — la connection `user` non è opzionale
-<<<<<<< .merge_file_6zvKcl
 - [Xot — scopo](../../Xot/docs/scopo.md) · [Tenant — scopo](../../Tenant/docs/scopo.md) · [Sigma — scopo](../../Sigma/docs/scopo.md)
-=======
 - [Lang — scopo](../../Lang/docs/scopo.md) · [Cms — scopo](../../Cms/docs/scopo.md)
 - [Xot — scopo](../../Xot/docs/scopo.md) · [Tenant — scopo](../../Tenant/docs/scopo.md)
->>>>>>> .merge_file_rBD2h7

@@ -8,25 +8,19 @@ qmd: "auth-login-implementation implementazione corretta della pagina di login"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_ftfR8z
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_wcE8JP
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_ftfR8z
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_wcE8JP
 ---
 
 # Implementazione Corretta della Pagina di Login
@@ -34,15 +28,9 @@ status: draft
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_ftfR8z
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
-=======
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
-- [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
->>>>>>> .merge_file_wcE8JP
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -241,15 +229,9 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_ftfR8z
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
-=======
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules.md)
-- [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation.md)
->>>>>>> .merge_file_wcE8JP
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vF0418
-=======
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi metodi duplicati in hasteams (trait) user"
 ---
->>>>>>> .merge_file_msgK8T
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -102,8 +99,5 @@ Quando si implementano trait come HasTeams, è fondamentale tipizzare e accettar
 - facilità di test tramite mock/stub
 - manutenibilità e flessibilità futura
 
-<<<<<<< .merge_file_vF0418
 Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./Models/Team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 
-=======
 Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./models/team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 
->>>>>>> .merge_file_msgK8T

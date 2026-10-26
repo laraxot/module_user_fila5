@@ -3,20 +3,15 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_kGj0NI
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_7O4moL
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_kGj0NI
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -26,7 +21,6 @@ status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "regola windsurf: migrazioni xotbasemigration user"
->>>>>>> .merge_file_7O4moL
 ---
 # Regola Windsurf: Migrazioni XotBaseMigration
 

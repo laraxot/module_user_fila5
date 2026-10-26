@@ -8,25 +8,19 @@ qmd: "navigation-translations-completion navigation translations completion road
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_ZIwvUY
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_GrsSNq
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_ZIwvUY
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_GrsSNq
 ---
 
 # Navigation Translations Completion Roadmap - User Module
@@ -197,11 +191,8 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 ## 📚 Documentazione Correlata
 
 - [Translation Standards](../../xot/docs/translation-standards.md)
-<<<<<<< .merge_file_ZIwvUY
 - [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
-=======
 - [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
->>>>>>> .merge_file_GrsSNq
 
 ---
 

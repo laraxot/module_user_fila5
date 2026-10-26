@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_4L5QAH
-=======
 ---
 title: "Struttura del Logout Blade nel Theme One"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "struttura del logout blade nel theme one user"
 ---
->>>>>>> .merge_file_hAvr1g
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta
@@ -124,12 +121,9 @@ class LogoutPage
 
 ## Collegamenti
 
-<<<<<<< .merge_file_4L5QAH
 - [Documentazione Volt](./VOLT_LOGOUT.md)
 - [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
 - [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
-=======
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md) 
->>>>>>> .merge_file_hAvr1g

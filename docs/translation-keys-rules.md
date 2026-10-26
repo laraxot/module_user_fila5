@@ -8,25 +8,19 @@ qmd: "translation-keys-rules regole per le chiavi di traduzione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_baMtTF
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_WPd7KI
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_baMtTF
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_WPd7KI
 ---
 
 # Regole per le Chiavi di Traduzione
@@ -143,17 +137,14 @@ return [
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_baMtTF
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 - [Best Practices per le Traduzioni](translation-best-practices.md)
 - [Struttura del Modulo](module-structure.md)
-=======
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
 - [Best Practices per le Traduzioni](translation-best-practices-traduzioni.md)
 - [Struttura del Modulo](module-structure-user.md)
->>>>>>> .merge_file_WPd7KI
 - [Convenzioni di Codice](code-conventions.md)

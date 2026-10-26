@@ -8,25 +8,19 @@ qmd: "implementation-summary implementation summary - user module type safety im
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_AOiroC
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_1ZsDg4
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_AOiroC
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_1ZsDg4
 ---
 
 # Implementation Summary - User Module Type Safety Improvements
@@ -184,11 +178,8 @@ All type casting operations now use safe methods:
 ### Updated Documentation Files
 
 1. **`README.md`**: Updated with type safety information
-<<<<<<< .merge_file_AOiroC
 2. **`widgets-structure.md`**: Enhanced with type safety guidelines
-=======
 2. **`widgets-structure-user.md`**: Enhanced with type safety guidelines
->>>>>>> .merge_file_1ZsDg4
 
 ## Best Practices Established
 

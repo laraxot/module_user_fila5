@@ -4,28 +4,20 @@ module: user
 type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
-<<<<<<< .merge_file_1L6hep
 updated: 2026-08-24
-=======
 updated: 2026-10-18
 status: draft
 qmd: "translation key prototype user"
->>>>>>> .merge_file_boN2zg
 ---
 
 Translation key prototype
 
-<<<<<<< .merge_file_1L6hep
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'
-=======
 Project convention: '<namespace>::<context>.<collection>.<key>.<type>' (exactly five elements, counting the namespace)
->>>>>>> .merge_file_boN2zg
 
 Examples:
 - user::auth.register.actions.submit.label -> label for the submit button in registration form
 - user::auth.login.page.meta_title.label -> page meta title label for login
-<<<<<<< .merge_file_1L6hep
-=======
 - user::auth.login.password.text -> password field label/text in the login collection
 
 Invalid examples:
@@ -36,7 +28,6 @@ Invalid examples:
 For the accessibility statement the theme uses
 `pub_theme::accessibility.page.title.text`: `accessibility` is the context,
 `page` the collection, `title` the key and `text` the type.
->>>>>>> .merge_file_boN2zg
 
 Why:
 - Ensures predictable namespacing across modules and themes

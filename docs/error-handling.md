@@ -8,25 +8,19 @@ qmd: "error-handling gestione degli errori nelle blade di autenticazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_T1jicp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_bueyar
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_T1jicp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_bueyar
 ---
 
 # Gestione degli Errori nelle Blade di Autenticazione
@@ -198,11 +192,8 @@ public function register()
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
-<<<<<<< .merge_file_T1jicp
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
-=======
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices-architettura-volt-folio-filament.md)
->>>>>>> .merge_file_bueyar
 - [Struttura Directory](./directory-structure-checklist.md) 

@@ -8,25 +8,19 @@ qmd: "git-conflicts-resolution-summary risoluzione conflitti git - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_BHb5Tu
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_1VCjP2
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_BHb5Tu
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_1VCjP2
 ---
 
 # Risoluzione Conflitti Git - Modulo User
@@ -66,11 +60,8 @@ status: draft
 - `docs/README.md` - Documentazione principale
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
-<<<<<<< .merge_file_BHb5Tu
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
-=======
 - `docs/phpstan-fixes.md` - Fix PHPStan
->>>>>>> .merge_file_1VCjP2
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -139,11 +130,8 @@ Funzionalità team includono:
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
-<<<<<<< .merge_file_BHb5Tu
 - [PHPStan Fixes](./phpstan-fixes-8.md)
-=======
 - [PHPStan Fixes](./phpstan-fixes.md)
->>>>>>> .merge_file_1VCjP2
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

@@ -8,25 +8,19 @@ qmd: "user-factory-integration userfactory integration - modulo user e <nome pro
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_Bxx7ZM
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_SmOkPi
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Bxx7ZM
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_SmOkPi
 ---
 
 # UserFactory Integration - Modulo User e <nome progetto>
@@ -377,13 +371,10 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< .merge_file_Bxx7ZM
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
 - [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](authentication.md)
->>>>>>> .merge_file_SmOkPi
 
 ---
 
@@ -739,13 +730,10 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< .merge_file_Bxx7ZM
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
 - [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](authentication.md)
->>>>>>> .merge_file_SmOkPi
 
 ---
 

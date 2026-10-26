@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_ItdzQc
-title: "User Module - Complete Roadmap 2026"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap- user module - complete roadmap 2026"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index.md"
-=======
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
 tags: [roadmap, 2025]
@@ -21,12 +9,10 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_sZspPz
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_ItdzQc
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
@@ -525,7 +511,6 @@ User Module Dependencies:
 **Priority**: HIGH
 **PHPStan**: ✅ Level 10 (0 errori)
 **Filament**: ✅ 4.x Compatibile
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -539,7 +524,6 @@ status: draft
 **Priority**: HIGH  
 **PHPStan**: ✅ Level 10 (0 errori)  
 **Filament**: ✅ 4.x Compatibile  
->>>>>>> .merge_file_sZspPz
 
 ---
 
@@ -630,11 +614,7 @@ User Module
 ## 🚧 IN PROGRESS FEATURES
 
 ### 🌐 Social Login Integration (Priority: MEDIUM)
-<<<<<<< .merge_file_ItdzQc
-**Status**: 40% COMPLETATO
-=======
 **Status**: 40% COMPLETATO  
->>>>>>> .merge_file_sZspPz
 **Timeline**: Q1 2025
 
 #### 📋 Tasks
@@ -664,11 +644,7 @@ User Module
 - [ ] GDPR compliance verified
 
 ### 📱 Mobile Authentication (Priority: HIGH)
-<<<<<<< .merge_file_ItdzQc
-**Status**: 30% COMPLETATO
-=======
 **Status**: 30% COMPLETATO  
->>>>>>> .merge_file_sZspPz
 **Timeline**: Q1 2025
 
 #### 📋 Tasks
@@ -1015,18 +991,14 @@ User Module
 
 ---
 
-<<<<<<< .merge_file_ItdzQc
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
-=======
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
->>>>>>> .merge_file_sZspPz
 
 ---
 
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< .merge_file_ItdzQc
 # User Module Roadmap
 
 "Proteggere l'identità: il fondamento della fiducia."
@@ -1103,5 +1075,3 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
-=======
->>>>>>> .merge_file_sZspPz

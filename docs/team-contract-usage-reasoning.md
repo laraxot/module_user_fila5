@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_B96Xnd
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -38,7 +37,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
-=======
 ---
 title: "TeamContract — perché il contratto (e la nullability)"
 type: concept
@@ -77,4 +75,3 @@ Evidence lane: [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-tes
 ## Variante underscore
 
 `team_contract_usage_reasoning.md` è superseded: usa questo file.
->>>>>>> .merge_file_Y5lzC5

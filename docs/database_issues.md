@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_E4IJyB
-=======
 ---
 title: "Database Issues in User Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "database issues in user module user"
 ---
->>>>>>> .merge_file_4mGniv
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -32,10 +29,7 @@ qmd: "database issues in user module user"
 
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
-<<<<<<< .merge_file_E4IJyB
 - [BaseUser Model](./BaseUser.md)
-=======
 - [BaseUser Model](./baseuser.md)
->>>>>>> .merge_file_4mGniv
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)

@@ -6,26 +6,20 @@ tags: [migrations, database, xotbase, policy]
 created: 2026-07-15
 updated: 2026-07-15
 related:
-<<<<<<< .merge_file_HSGdVa
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4jRfsn
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_HSGdVa
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 qmd: "laraxot migration policy   user module user"
->>>>>>> .merge_file_4jRfsn
 ---
 
 # Laraxot Migration Policy — User Module

@@ -1,7 +1,6 @@
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
-<<<<<<< .merge_file_LZ11GD
 tags: [navigation, translations, fixes]
 created: 2026-07-14
 updated: 2026-07-14
@@ -10,7 +9,6 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index.md"
-=======
 tags: [navigation, translations, fixes, january]
 created: 2026-07-14
 updated: 2026-07-14
@@ -19,21 +17,17 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_XixUhn
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_LZ11GD
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_XixUhn
 ---
 
 # Correzioni Traduzioni Navigation - Gennaio 2026
@@ -202,12 +196,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Regole Applicate
 
 ### DRY (Don't Repeat Yourself)
-<<<<<<< .merge_file_LZ11GD
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](README.md)
-=======
->>>>>>> .merge_file_XixUhn
 - Eliminata duplicazione di chiavi placeholder
 - Raggruppamento logico coerente
 - Icone standard Heroicons per consistenza
@@ -227,12 +218,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_LZ11GD
-=======
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
->>>>>>> .merge_file_XixUhn
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
@@ -247,7 +235,4 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
-<<<<<<< .merge_file_LZ11GD
-=======
 *Conforme alle regole DRY + KISS*
->>>>>>> .merge_file_XixUhn

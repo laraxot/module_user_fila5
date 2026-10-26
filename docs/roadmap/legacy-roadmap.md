@@ -8,11 +8,8 @@ qmd: "legacy-roadmap roadmap user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_K4JO8z
   - "./00-index.md"
-=======
   - "./00-index-roadmap-user.md"
->>>>>>> .merge_file_gGU3tR
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"
@@ -29,19 +26,16 @@ Roadmap operativo del module **User**, suddiviso in file tematici.
 ## Indice
 
 - [00-index](roadmap/00-index.md)
-<<<<<<< .merge_file_K4JO8z
 - [01-current-state](roadmap/01-current-state.md)
 - [02-goals](roadmap/02-goals.md)
 - [03-workstreams](roadmap/03-workstreams.md)
 - [04-milestones](roadmap/04-milestones.md)
 - [05-risks](roadmap/05-risks.md)
-=======
 - [01-current-state](01-current-state.md)
 - [02-goals](02-goals.md)
 - [03-workstreams](03-workstreams.md)
 - [04-milestones](04-milestones.md)
 - [05-risks](05-risks.md)
->>>>>>> .merge_file_gGU3tR
 
 ## Regola
 

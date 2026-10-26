@@ -8,11 +8,8 @@ qmd: "chaos-readiness user chaos readiness - 2026-03-02"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_DT5RE5
   - "./00-index.md"
-=======
   - "./00-index-roadmap-user.md"
->>>>>>> .merge_file_7cfMUa
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"
@@ -20,10 +17,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-<<<<<<< .merge_file_DT5RE5
-=======
 status: draft
->>>>>>> .merge_file_7cfMUa
 ---
 
 # User Chaos Readiness - 2026-03-02

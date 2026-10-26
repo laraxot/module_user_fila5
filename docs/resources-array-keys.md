@@ -8,25 +8,19 @@ qmd: "resources-array-keys resources array keys philosophy: string keys always"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_8Srlx7
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_ONDNSv
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_8Srlx7
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_ONDNSv
 ---
 
 # Resources Array Keys Philosophy: String Keys Always
@@ -218,10 +212,7 @@ public static function getTableColumns(): array
 
 ## Collegamenti
 
-<<<<<<< .merge_file_8Srlx7
 - [XotBaseResource Source Code](../../../Xot/app/Filament/Resources/XotBaseResource.php)
-=======
 - [XotBaseResource Source Code](../../Xot/app/Filament/Resources/XotBaseResource.php)
->>>>>>> .merge_file_ONDNSv
 - [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)

@@ -59,6 +59,9 @@ test('the localized OAuth entry point sends the citizen to Google', function (st
 })->with('oauth_locales');
 
 test('a refused Google consent returns to the login page of the same language', function (string $lang, string $message): void {
+    // DCP-271: senza credenziali il callback risponde «provider non configurato»; un consenso negato presuppone un giro vero con Google.
+    config(['services.google' => ['client_id' => 'test-client', 'client_secret' => 'test-secret', 'redirect' => 'http://localhost/it/auth/login/google/callback']]);
+
     $response = get('/'.$lang.'/auth/login/google/callback?error=access_denied');
 
     $response->assertRedirect('/'.$lang.'/auth/login');

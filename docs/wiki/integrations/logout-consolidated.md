@@ -71,22 +71,16 @@ qmd: "logout-analysis analisi del file logout.blade.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -314,25 +308,19 @@ $logout = function () {
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-<<<<<<< .merge_file_Zww8rd
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
-=======
 - [Documentazione Volt](../../volt-blade-implementation-introduzione.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
->>>>>>> .merge_file_VDk0GC
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 ---
 
 ## logout-blade-analysis-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-blade-analysis.md`*
-=======
 *Consolidated from: `logout-blade-analysis-panoramica.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Logout Blade Analysis 3"
 type: concept
@@ -343,30 +331,24 @@ qmd: "logout-blade-analysis-3 logout blade analysis 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./README.md)
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
@@ -808,17 +790,14 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ---
 module: theme
 topic: logout_blade_analysis
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md
-=======
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-panoramica.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-panoramica.md
->>>>>>> .merge_file_VDk0GC
 ---
 
 ## logout-blade-analysis
@@ -829,22 +808,16 @@ module: theme
 topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -860,22 +833,16 @@ module: theme
 topic: logout-blade-conclusions
 canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -885,11 +852,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 ## logout-blade-corrected-analysis-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-blade-corrected-analysis.md`*
-=======
 *Consolidated from: `logout-blade-corrected-analysis-analisi-corretta.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Analisi Corretta del File logout.blade.php"
 type: concept
@@ -900,22 +864,16 @@ qmd: "logout-blade-corrected-analysis-3 analisi corretta del file logout.blade.p
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -923,21 +881,18 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-<<<<<<< .merge_file_Zww8rd
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 - [README modulo User](./README.md)
-=======
 - [Volt Folio Logout](../../volt-folio-logout-panoramica.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](../../logout-blade-implementation-posizione-corretta.md)
 - [Convenzioni Path](../../path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](../../volt-blade-implementation-error-identificazione-dell.md)
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
@@ -1176,22 +1131,16 @@ module: theme
 topic: logout-blade-corrected-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1205,44 +1154,34 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-corrected
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
 related:
   - "./00-index.md"
-=======
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-analisi-corretta.md
->>>>>>> .merge_file_VDk0GC
 
 ---
 
 ## logout-blade-error-analysis-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-blade-error-analysis.md`*
-=======
-*Consolidated from: `logout-blade-error-analysis.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Logout Blade Error Analysis 3"
 type: concept
@@ -1253,22 +1192,16 @@ qmd: "logout-blade-error-analysis-3 logout blade error analysis 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1384,17 +1317,10 @@ Questi errori evidenziano l'importanza di:
 ---
 module: theme
 topic: logout_blade_error_analysis
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
-=======
-canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
->>>>>>> .merge_file_VDk0GC
 ---
 
 ## logout-blade-error-analysis
@@ -1405,22 +1331,16 @@ module: theme
 topic: logout-blade-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1436,22 +1356,16 @@ module: theme
 topic: logout-blade-implementation
 canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1467,22 +1381,16 @@ module: theme
 topic: logout-blade-structure
 canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1503,22 +1411,16 @@ qmd: "logout-blade analisi approfondita dell'errore nell'implementazione del log
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1528,15 +1430,12 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_Zww8rd
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
-=======
 - [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](../../logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1646,15 +1545,12 @@ Questi errori evidenziano l'importanza di:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_Zww8rd
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
-=======
 - [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](../../logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -1769,22 +1665,16 @@ module: theme
 topic: logout-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1805,22 +1695,16 @@ qmd: "logout-event-error analisi dell'errore negli eventi di logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -1830,15 +1714,12 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_Zww8rd
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Errore Logout](logout-blade-error-analysis.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected.md)
-=======
 - [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
 - [Analisi Errore Logout](../../logout-blade-error-analysis.md)
 - [Widget Filament Corretto](../../logout-filament-widget-corrected.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -1988,15 +1869,12 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_Zww8rd
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Errore Logout](logout-blade-error-analysis.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected.md)
-=======
 - [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
 - [Analisi Errore Logout](../../logout-blade-error-analysis.md)
 - [Widget Filament Corretto](../../logout-filament-widget-corrected.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -2150,22 +2028,16 @@ module: theme
 topic: logout-event
 canonical: ../../../Themes/docs/shared-components/logout-event-error.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2181,22 +2053,16 @@ module: theme
 topic: logout-implementation-best-practices
 canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2206,11 +2072,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 ## logout-implementation-error-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-implementation-error.md`*
-=======
 *Consolidated from: `logout-implementation-error-analisi-dell.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Analisi dell'Errore nell'Implementazione del Logout"
 type: concept
@@ -2221,22 +2084,16 @@ qmd: "logout-implementation-error-3 analisi dell'errore nell'implementazione del
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2246,15 +2103,12 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_Zww8rd
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
-=======
 - [Implementazione Logout](../../logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](../../logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](../../logout-blade-conclusions-sintesi-dell.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -2347,22 +2201,16 @@ module: theme
 topic: logout-implementation-error
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2372,11 +2220,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 ## logout-implementation-with-laravel-localization-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-implementation-with-laravel-localization.md`*
-=======
-*Consolidated from: `logout-implementation-with-laravel-localization.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Logout Implementation With Laravel Localization 3"
 type: concept
@@ -2387,30 +2231,24 @@ qmd: "logout-implementation-with-laravel-localization-3 logout implementation wi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./README.md)
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -2568,17 +2406,10 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 ---
 module: theme
 topic: logout_implementation_with_laravel_localization
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
-=======
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
->>>>>>> .merge_file_VDk0GC
 ---
 
 ## logout-implementation-with-laravel-localization
@@ -2589,22 +2420,16 @@ module: theme
 topic: logout-implementation-with-laravel-localization
 canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2618,34 +2443,28 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 module: theme
 topic: logout-implementation
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
   - "./00-index.md"
-=======
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
->>>>>>> .merge_file_VDk0GC
 
 ---
 
@@ -2657,22 +2476,16 @@ module: theme
 topic: logout-page-fix
 canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2682,11 +2495,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-page-
 
 ## logout-page-implementation-3
 
-<<<<<<< .merge_file_Zww8rd
 *Consolidated from: `logout-page-implementation.md`*
-=======
 *Consolidated from: `logout-page-implementation-best-practices.md`*
->>>>>>> .merge_file_VDk0GC
 
 title: "Logout Page Implementation 3"
 type: concept
@@ -2697,22 +2507,16 @@ qmd: "logout-page-implementation-3 logout page implementation 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2722,17 +2526,14 @@ related:
 ---
 module: theme
 topic: logout_page_implementation
-<<<<<<< .merge_file_Zww8rd
 canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation.md
-=======
 canonical: ../../../Themes/docs/shared-components/logout-page-implementation-best-practices.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation-best-practices.md
->>>>>>> .merge_file_VDk0GC
 ---
 
 ## logout-page-implementation
@@ -2743,22 +2544,16 @@ module: theme
 topic: logout-page-implementation
 canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2779,22 +2574,16 @@ qmd: "logout-page correzione logout page nel theme twentyone"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -2853,22 +2642,16 @@ qmd: "logout-security sicurezza nel processo di logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -3045,13 +2828,10 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
-<<<<<<< .merge_file_Zww8rd
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
-=======
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
 - [Documentazione Volt](../../volt-blade-implementation-introduzione.md)
->>>>>>> .merge_file_VDk0GC
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -3072,22 +2852,16 @@ qmd: "logout analisi errore logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_Zww8rd
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_VDk0GC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Zww8rd
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_VDk0GC
   - "./actions-path-convention.md"
 ---
 
@@ -3214,11 +2988,8 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-<<<<<<< .merge_file_Zww8rd
 - [Gestione Sessione](./session-management.md)
-=======
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -3343,11 +3114,8 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-<<<<<<< .merge_file_Zww8rd
 - [Gestione Sessione](./session-management.md)
-=======
 - [Gestione Sessione](../../session-management-gestione-sessioni.md)
->>>>>>> .merge_file_VDk0GC
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 
 ---
@@ -3588,11 +3356,8 @@ $logout = function () {
 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -4040,11 +3805,8 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -4140,11 +3902,8 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
@@ -4498,11 +4257,8 @@ Questi errori evidenziano l'importanza di:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
@@ -5126,11 +4882,8 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -5454,11 +5207,8 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_Zww8rd
 - [README modulo User](./README.md)
-=======
 - [README modulo User](./readme.md)
->>>>>>> .merge_file_VDk0GC
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

@@ -4,27 +4,21 @@ created: 2026-07-15
 updated: 2026-07-15
 type: module-documentation
 related:
-<<<<<<< .merge_file_oPjGbA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_rvRBwZ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_oPjGbA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 tags: [docs, user]
 qmd: "user module   migrations & schema parity user"
->>>>>>> .merge_file_rvRBwZ
 ---
 
 # User Module — Migrations & Schema Parity

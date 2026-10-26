@@ -109,11 +109,8 @@ The same pattern can be used for:
 ## Related Documentation
 
 - [RegisterWidget Documentation](register-widget.md)
-<<<<<<< .merge_file_SwhNAL
 - [GDPR Compliance Guide](compliance.md)
-=======
 - [GDPR Compliance Guide](../gdpr/compliance.md)
->>>>>>> .merge_file_X7uU8D
 - [Event System Best Practices](../architecture/events.md)
 
 ---

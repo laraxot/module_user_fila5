@@ -11,9 +11,10 @@ use Tests\TestCase;
 
 use function Safe\json_encode;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class TenantTest extends TestCase
 {
-
     public function test_can_create_tenant_with_minimal_data(): void
     {
         $tenant = Tenant::factory()->create([

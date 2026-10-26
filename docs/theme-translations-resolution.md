@@ -8,25 +8,19 @@ qmd: "theme-translations-resolution risoluzione conflitti traduzioni tema two - 
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_NHUTEW
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_OrYBBh
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_NHUTEW
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_OrYBBh
 ---
 
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
@@ -425,11 +419,8 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
-<<<<<<< .merge_file_NHUTEW
 - [Moderation Strategy](user-moderation-strategy-3.md)
-=======
 - [Moderation Strategy](user-moderation-strategy-documentation-themes.md)
->>>>>>> .merge_file_OrYBBh
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni

@@ -6,26 +6,20 @@ tags: [pest, testcase, fatal-error, property-conflict]
 created: 2026-07-15
 updated: 2026-07-15
 related:
-<<<<<<< .merge_file_k1Ssl4
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_sYEHJs
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_k1Ssl4
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 qmd: "fatal error risolto: `testcase` vs `hasusertestcase`   conflitto proprietà `$user` user"
->>>>>>> .merge_file_sYEHJs
 ---
 
 # Fatal error risolto: `TestCase` vs `HasUserTestCase` — conflitto proprietà `$user`

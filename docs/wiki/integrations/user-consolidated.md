@@ -39,11 +39,8 @@ Consolidated from **21** individual files.
 
 ## user-factory-advanced-integration-3
 
-<<<<<<< .merge_file_V2FqCB
 *Consolidated from: `user-factory-advanced-integration.md`*
-=======
 *Consolidated from: `user-factory-advanced-integration-module.md`*
->>>>>>> .merge_file_cOpbcJ
 
 title: "User Factory Advanced Integration 3"
 type: concept
@@ -54,22 +51,16 @@ qmd: "user-factory-advanced-integration-3 user factory advanced integration 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -78,13 +69,10 @@ related:
 - [Model States](../../SaluteOra/docs/models/states.md)
 
 ### User Module
-<<<<<<< .merge_file_V2FqCB
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
-=======
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
->>>>>>> .merge_file_cOpbcJ
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
@@ -93,17 +81,14 @@ related:
 ---
 module: theme
 topic: user_factory_advanced_integration
-<<<<<<< .merge_file_V2FqCB
 canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration.md
-=======
 canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-module.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-module.md
->>>>>>> .merge_file_cOpbcJ
 ---
 
 ## user-factory-advanced-integration
@@ -119,22 +104,16 @@ qmd: "user-factory-advanced-integration userfactory advanced integration - modul
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -426,13 +405,10 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< .merge_file_V2FqCB
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
-=======
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
->>>>>>> .merge_file_cOpbcJ
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -726,13 +702,10 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< .merge_file_V2FqCB
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
-=======
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
->>>>>>> .merge_file_cOpbcJ
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
@@ -749,22 +722,16 @@ module: theme
 topic: user-factory-complete-ecosystem-integration
 canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -785,22 +752,16 @@ qmd: "user-factory-ecosystem-integration user factory complete ecosystem integra
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -1644,22 +1605,16 @@ qmd: "user-factory-integration userfactory integration - modulo user e <nome pro
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2011,13 +1966,10 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< .merge_file_V2FqCB
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
->>>>>>> .merge_file_cOpbcJ
 
 ---
 
@@ -2373,13 +2325,10 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< .merge_file_V2FqCB
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
->>>>>>> .merge_file_cOpbcJ
 
 ---
 
@@ -2403,22 +2352,16 @@ qmd: "user-invitation user invitation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2435,22 +2378,16 @@ module: theme
 topic: user-management
 canonical: ../../../Themes/docs/shared-components/user-management.md
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2466,22 +2403,16 @@ module: theme
 topic: user-profile-aration
 canonical: ../../../Themes/docs/shared-components/user-profile-separation.md
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2497,22 +2428,16 @@ module: theme
 topic: user-profile-models
 canonical: ../../../Themes/docs/shared-components/user-profile-models.md
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2533,22 +2458,16 @@ qmd: "user-profile-separation separazione dei modelli user e profile: analisi e 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -2767,22 +2686,16 @@ qmd: "user-profile user vs profile: guida completa alla progettazione"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -3133,22 +3046,16 @@ qmd: "user-research user research: user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -3175,22 +3082,16 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 # Configurazione Stati Utente (state)
@@ -3254,22 +3155,16 @@ qmd: "user-vs-profile user vs profile models: guida completa"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -4866,13 +4761,10 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-<<<<<<< .merge_file_V2FqCB
 - [Traits Complete Guide](../User/docs/traits_complete_guide.md)
 - [Authentication Framework](../User/docs/authentication.md)
-=======
 - [Traits Complete Guide](../../traits_complete_guide.md)
 - [Authentication Framework](../../authentication.md)
->>>>>>> .merge_file_cOpbcJ
 
 ---
 
@@ -4899,22 +4791,16 @@ module: theme
 topic: userfactory-advanced-implementation-complete
 canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -4935,22 +4821,16 @@ qmd: "userfactory-advanced-implementation userfactory advanced implementation - 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_V2FqCB
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_cOpbcJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_V2FqCB
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_cOpbcJ
   - "./actions-path-convention.md"
 ---
 
@@ -5244,11 +5124,8 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-<<<<<<< .merge_file_V2FqCB
 - [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration.md)
-=======
 - [User Module Integration](../../user-factory-advanced-integration-module.md)
->>>>>>> .merge_file_cOpbcJ
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -5547,11 +5424,8 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-<<<<<<< .merge_file_V2FqCB
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration.md)
-=======
 - [User Module Integration](../../user-factory-advanced-integration-module.md)
->>>>>>> .merge_file_cOpbcJ
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

@@ -8,25 +8,19 @@ qmd: "phpstan-syntax-blockers phpstan — stato modulo user (2026-07-08)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_5wjy8t
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_LDnbrc
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_5wjy8t
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_LDnbrc
 ---
 
 # PHPStan — stato modulo User (2026-07-08)
@@ -69,9 +63,6 @@ Wrapper Passport e risorse Filament possono ancora generare warning PHPStan su s
 
 ## Collegamenti
 
-<<<<<<< .merge_file_5wjy8t
 - [quality-status-2.md](../quality-status.md)
-=======
 - [quality-status-2.md](quality-status-user-module.md)
->>>>>>> .merge_file_LDnbrc
 - [module-commit-push-after-change](wiki/rules/module-commit-push-after-change.md)

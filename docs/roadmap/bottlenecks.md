@@ -8,11 +8,8 @@ qmd: "bottlenecks colli di bottiglia - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_LnCn51
   - "./00-index.md"
-=======
   - "./00-index-roadmap-user.md"
->>>>>>> .merge_file_zdXQJF
   - "./00-index.md"
   - "./00-overview.md"
   - "./01-current-state.md"
@@ -20,10 +17,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-<<<<<<< .merge_file_LnCn51
-=======
 status: draft
->>>>>>> .merge_file_zdXQJF
 ---
 
 # Colli di Bottiglia - Modulo User
@@ -169,25 +163,19 @@ status: draft
 - Testing automatizzato
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
-<<<<<<< .merge_file_LnCn51
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
->>>>>>> .merge_file_zdXQJF
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
-<<<<<<< .merge_file_LnCn51
 * [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
-=======
 * [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
->>>>>>> .merge_file_zdXQJF
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../gdpr/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/bottlenecks.md)

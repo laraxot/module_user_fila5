@@ -12,10 +12,7 @@ related:
   - "./implementation-summary.md"
   - "./implementation.md"
   - "./translationlines.md"
-<<<<<<< .merge_file_OiT6AW
-=======
 status: draft
->>>>>>> .merge_file_MZvXGU
 ---
 
 # Widget Translation Guidelines
@@ -170,11 +167,8 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 3. Test changes across all supported locales
 4. Document any breaking changes
 ## Related Documentation
-<<<<<<< .merge_file_OiT6AW
 - [User Module Widget Structure](../widgets-structure.md)
-=======
 - [User Module Widget Structure](../widgets-structure-user.md)
->>>>>>> .merge_file_MZvXGU
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

@@ -8,22 +8,16 @@ qmd: "filament-nesting-opportunities filament 5.x nested resources - opportunit√
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_F7lCIK
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_s6PZ2u
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_F7lCIK
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_s6PZ2u
   - "./actions-path-convention.md"
 ---
 
@@ -280,11 +274,8 @@ Nessuna funzionalit√† critica - il modulo User funziona bene con relation manage
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
 - [User Module README](./readme.md)
-<<<<<<< .merge_file_F7lCIK
 - [Team System](./architecture/teams.md)
-=======
 - [Team System](./teams.md)
->>>>>>> .merge_file_s6PZ2u
 - [Authentication Guide](./auth/authentication-flow.md)
 
 ---

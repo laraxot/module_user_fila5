@@ -5,7 +5,10 @@ declare(strict_types=1);
 use Illuminate\Support\Carbon;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {

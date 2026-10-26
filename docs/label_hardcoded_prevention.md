@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_cA6uEQ
-=======
 status: draft
 qmd: "prevenzione ->label() hardcoded - modulo user user"
->>>>>>> .merge_file_vbwCt5
 ---
 
 # Prevenzione ->label() Hardcoded - Modulo User
@@ -200,15 +197,12 @@ return [
 
 ## 🔗 **Collegamenti**
 
-<<<<<<< .merge_file_cA6uEQ
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../docs/best-practices.md)
-=======
 - [Translation Standards](../../../../docs/translation-standards.md)
 - [PHPStan Fixes](../../../../docs/phpstan_level10_fixes.md)
 - [Best Practices](best-practices.md)
->>>>>>> .merge_file_vbwCt5
 
 ---
 

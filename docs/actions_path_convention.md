@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_AEb0T2
-=======
 ---
 title: "Convenzione dei Percorsi per le Actions"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "convenzione dei percorsi per le actions user"
 ---
->>>>>>> .merge_file_K8KZMm
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -72,11 +69,8 @@ fi
 ```
 
 ## Collegamenti
-<<<<<<< .merge_file_AEb0T2
 - [Convenzioni Path nei Moduli Laravel](./PATH_CONVENTIONS.md)
 - [Checklist per la Struttura delle Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-=======
 - [Convenzioni Path nei Moduli Laravel](./path_conventions.md)
 - [Checklist per la Struttura delle Directory](./directory_structure_checklist.md)
->>>>>>> .merge_file_K8KZMm
 - [Analisi Errore: Gestione Percorsi](../../../docs/error_analysis/path_management.md)

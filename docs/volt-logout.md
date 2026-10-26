@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_YAVlIP
-=======
 ---
 title: "Implementazione del Logout con Volt"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione del logout con volt user"
 ---
->>>>>>> .merge_file_O36i51
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -228,32 +225,23 @@ public function test_logout_clears_session()
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
-<<<<<<< .merge_file_YAVlIP
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md) 
-=======
 - [Routing Best Practices](./routing_best_practices.md) 
->>>>>>> .merge_file_O36i51
 ---
 module: theme
 topic: volt-logout
 canonical: ../../../Themes/docs/shared-components/volt-logout.md
 related:
-<<<<<<< .merge_file_YAVlIP
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_O36i51
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_YAVlIP
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_O36i51
   - "./actions-path-convention.md"
 ---
 

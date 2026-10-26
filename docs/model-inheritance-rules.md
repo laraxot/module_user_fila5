@@ -8,25 +8,19 @@ qmd: "model-inheritance-rules regole di ereditarietà dei modelli - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_daeHI1
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_dFvjsn
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_daeHI1
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_dFvjsn
 ---
 
 # Regole di Ereditarietà dei Modelli - Modulo User
@@ -232,11 +226,8 @@ Prima di creare un nuovo modello, verifica:
 ## Link Correlati
 
 - [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
-<<<<<<< .merge_file_daeHI1
 - [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
-=======
 - [Documentazione Geo Model Pattern](../../Geo/docs/model-inheritance-pattern.md)
->>>>>>> .merge_file_dFvjsn
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche

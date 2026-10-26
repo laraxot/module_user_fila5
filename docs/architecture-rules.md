@@ -8,25 +8,19 @@ qmd: "architecture-rules architectural rules & guidelines"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_wKqgQ6
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_oYvem3
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_wKqgQ6
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_oYvem3
 ---
 
 # Architectural Rules & Guidelines
@@ -99,13 +93,10 @@ User/
 
 ## Related Documentation
 
-<<<<<<< .merge_file_wKqgQ6
 - [Module Structure Organization Rule](../../../docs/wiki/concepts/module-structure-organization-rule.md)
 - [No lang/lang/ and No _docs/ Rule](../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
-=======
 - [Module Structure Organization Rule](../../../../docs/wiki/concepts/module-structure-organization-rule.md)
 - [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
->>>>>>> .merge_file_oYvem3
 
 ---
 

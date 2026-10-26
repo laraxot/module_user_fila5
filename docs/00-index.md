@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_uOSiO6
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -60,7 +59,6 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
-=======
 ---
 title: "User — alias indice"
 type: alias
@@ -75,4 +73,3 @@ qmd: "alias 00-index user verso 00-INDEX"
 # Alias — indice User
 
 Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md).
->>>>>>> .merge_file_cyUYuw

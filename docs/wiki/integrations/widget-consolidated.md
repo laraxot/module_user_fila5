@@ -30,11 +30,7 @@ Consolidated from **12** individual files.
 
 ## widget-rendering-analysis-3
 
-<<<<<<< .merge_file_P2owTp
 *Consolidated from: `widget-rendering-analysis.md`*
-=======
-*Consolidated from: `widget-rendering-analysis.md`*
->>>>>>> .merge_file_frOPRo
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -45,22 +41,16 @@ qmd: "widget-rendering-analysis-3 🔍 analisi rendering loginwidget - docs.ital
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -477,11 +467,7 @@ return [
 
 ## widget-rendering-analysis-4
 
-<<<<<<< .merge_file_P2owTp
 *Consolidated from: `widget-rendering-analysis.md`*
-=======
-*Consolidated from: `widget-rendering-analysis.md`*
->>>>>>> .merge_file_frOPRo
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -492,22 +478,16 @@ qmd: "widget-rendering-analysis-4 🔍 analisi rendering loginwidget - docs.ital
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -924,11 +904,7 @@ return [
 
 ## widget-rendering-analysis-5
 
-<<<<<<< .merge_file_P2owTp
 *Consolidated from: `widget-rendering-analysis.md`*
-=======
-*Consolidated from: `widget-rendering-analysis.md`*
->>>>>>> .merge_file_frOPRo
 
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -939,22 +915,16 @@ qmd: "widget-rendering-analysis-5 🔍 analisi rendering loginwidget - docs.ital
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -1382,22 +1352,16 @@ qmd: "widget-rendering-analysis 🔍 analisi rendering loginwidget - docs.italia
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -1825,22 +1789,16 @@ qmd: "widget-rendering 🔍 analisi rendering loginwidget - docs.italia.it style
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -2257,11 +2215,8 @@ return [
 
 ## widget-translation-rules-3
 
-<<<<<<< .merge_file_P2owTp
 *Consolidated from: `widget-translation-rules.md`*
-=======
 *Consolidated from: `widget-translation-rules-memory-integration.md`*
->>>>>>> .merge_file_frOPRo
 
 title: "Widget Translation Rules 3"
 type: rule
@@ -2272,16 +2227,12 @@ qmd: "widget-translation-rules-3 widget translation rules 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
@@ -2291,7 +2242,6 @@ related:
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -2301,7 +2251,6 @@ related:
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../../best-practices/filament-widgets.md)
->>>>>>> .merge_file_frOPRo
 
 ## Memory Integration
 
@@ -2315,17 +2264,14 @@ All widget development should follow these rules to maintain consistency and qua
 ---
 module: theme
 topic: widget_translation_rules
-<<<<<<< .merge_file_P2owTp
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules.md
-=======
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md
->>>>>>> .merge_file_frOPRo
 ---
 
 ## widget-translation-rules
@@ -2336,22 +2282,16 @@ module: theme
 topic: widget-translation-rules
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -2372,22 +2312,16 @@ qmd: "widget-translation widget translation rules - <nome progetto> project"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 
@@ -2526,19 +2460,16 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
-<<<<<<< .merge_file_P2owTp
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets-structure.md)
-=======
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure-user.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-user.md)
->>>>>>> .merge_file_frOPRo
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
@@ -2736,17 +2667,14 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-<<<<<<< .merge_file_P2owTp
 - [User Module Widget Structure](../modules/user/docs/widgets-structure.md)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-=======
 - [User Module Widget Structure](../../widgets-structure-user.md)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../../best-practices/filament-widgets.md)
->>>>>>> .merge_file_frOPRo
 
 ## Memory Integration
 
@@ -3365,11 +3293,8 @@ protected static string $view = 'user::widgets.edit-user';
 - [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
-<<<<<<< .merge_file_P2owTp
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
-=======
 - [Filament Widget Conventions](../../best-practices/filament-widgets.md)
->>>>>>> .merge_file_frOPRo
 
 ## Memory Integration
 
@@ -3391,22 +3316,16 @@ module: theme
 topic: widgets-structure
 canonical: ../../../Themes/docs/shared-components/widgets-structure.md
 related:
-<<<<<<< .merge_file_P2owTp
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_frOPRo
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_P2owTp
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_frOPRo
   - "./actions-path-convention.md"
 ---
 

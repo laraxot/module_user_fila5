@@ -16,10 +16,7 @@ related:
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
-<<<<<<< .merge_file_hoY456
-=======
 status: draft
->>>>>>> .merge_file_KRB28h
 ---
 
 # Registrazione dei Componenti Blade nel Modulo User
@@ -46,11 +43,8 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
 </x-user::profile.dropdown>
 ## Collegamenti
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
-<<<<<<< .merge_file_hoY456
 - [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
-=======
 - [Implementazione di UserServiceProvider](../../app/Providers/UserServiceProvider.php)
->>>>>>> .merge_file_KRB28h
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)

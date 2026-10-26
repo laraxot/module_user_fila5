@@ -1,18 +1,4 @@
 ---
-<<<<<<< .merge_file_3Yn1sX
-title: "PHPStan L10 User Module — Phase 2 (Malformed PHPDoc fix)"
-status: done
-epic: code-quality
-parent_story: "phpstan-l10-user-lang-fix-20261006.story.md"
-created: 2026-10-06T14:30Z
-completed: 2026-10-06T14:45Z
-acceptance_criteria:
-  - Identify 3–5 fixable PHPStan L10 errors in User module ✅
-  - Apply type-narrowing and minimal fixes (no logic changes) ✅
-  - Verify with php -l for each file ✅
-  - Update BMAD story with findings ✅
-  - One commit per fix (batch commit) ✅
-=======
 title: "PHPStan L10 User Module — Phase 2 (Resource constraints)"
 status: in_progress
 epic: code-quality
@@ -24,12 +10,10 @@ acceptance_criteria:
   - Verify with php -l for each file
   - Update BMAD story with findings
   - One commit per fix with clear message
->>>>>>> .merge_file_KosqZU
 ---
 
 # PHPStan L10 User Module — Phase 2
 
-<<<<<<< .merge_file_3Yn1sX
 **Status: ✅ DONE** — 5 malformed PHPDoc comments (single-asterisk) corrected to double-asterisk format.
 
 ## Findings & Fixes Applied
@@ -99,7 +83,6 @@ Modules/User/app/Filament/Resources/TeamResource.php: No syntax errors
 
 **Timeframe**: ~15 minutes (targeted file-by-file analysis)
 **Constraint Note**: WSL2 memory limits prevent full-module PHPStan analysis; per-file fix strategy is effective
-=======
 **Status: IN PROGRESS** — Resource constraints (WSL2 memory) prevent full-module analysis; using targeted file-by-file review.
 
 ## Findings (Session 2026-10-06)
@@ -159,4 +142,3 @@ Modules/User/app/Filament/Resources/TeamResource.php: No syntax errors
   `normalizeFormSchema()` e dal ritorno del metodo; nessun cambio di comportamento.
 - Verifica: `php -l` ok, `class_exists` true, PHPStan mirato sul file: 0 errori.
 - Lezione: un `@var` senza variabile e' un residuo di refactor, non un'informazione: toglierlo, non inventare una variabile.
->>>>>>> .merge_file_KosqZU

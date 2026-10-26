@@ -5,27 +5,21 @@ module: User
 tags: [redundancy, duplicate-code, migrations, ui]
 created: 2026-05-21
 related:
-<<<<<<< .merge_file_E6lVgA
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_rgv80F
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_E6lVgA
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
 updated: 2026-10-23
 qmd: "user redundancy audit 2026-05-21 user"
->>>>>>> .merge_file_rgv80F
 ---
 
 # User redundancy audit 2026-05-21

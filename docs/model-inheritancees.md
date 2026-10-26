@@ -8,25 +8,19 @@ qmd: "model-inheritancees correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_uspB73
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_TIn1rr
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_uspB73
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_TIn1rr
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -218,11 +212,7 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_uspB73
 - [Analisi Completa](./model-inheritance-analysis.md)
-=======
-- [Analisi Completa](./model-inheritance-analysis.md)
->>>>>>> .merge_file_TIn1rr
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -416,11 +406,7 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_uspB73
 - [Analisi Completa](./model-inheritance-analysis.md)
-=======
-- [Analisi Completa](./model-inheritance-analysis.md)
->>>>>>> .merge_file_TIn1rr
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -614,11 +600,7 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< .merge_file_uspB73
 - [Analisi Completa](./model-inheritance-analysis.md)
-=======
-- [Analisi Completa](./model-inheritance-analysis.md)
->>>>>>> .merge_file_TIn1rr
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

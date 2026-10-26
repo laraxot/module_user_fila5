@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_NftEvQ
-=======
 ---
 title: "Regole per i Namespace Filament"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "regole per i namespace filament user"
 ---
->>>>>>> .merge_file_8daCm6
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare
@@ -73,11 +70,8 @@ class Dashboard extends Page
 ```
 
 ## Collegamenti
-<<<<<<< .merge_file_NftEvQ
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
-=======
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/docs/README.md)
->>>>>>> .merge_file_8daCm6
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md) 

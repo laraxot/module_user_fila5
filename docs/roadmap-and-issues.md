@@ -8,25 +8,19 @@ qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_taZBQh
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_iB0bgj
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_taZBQh
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_iB0bgj
 ---
 
 # User Module - Roadmap, Issues & Optimization
@@ -402,13 +396,10 @@ php artisan queue:prune-failed --hours=48
 
 - [← User Module README](./readme.md)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
-<<<<<<< .merge_file_taZBQh
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
-=======
 - [← Project Roadmap](../../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../../docs/index.md)
->>>>>>> .merge_file_iB0bgj
 
 ---
 

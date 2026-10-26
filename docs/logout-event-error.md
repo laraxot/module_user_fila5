@@ -8,25 +8,19 @@ qmd: "logout-event-error analisi dell'errore negli eventi di logout"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_RSiCGO
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_RaZkne
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_RSiCGO
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_RaZkne
 ---
 
 # Analisi dell'Errore negli Eventi di Logout
@@ -37,17 +31,14 @@ status: draft
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_RSiCGO
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
-=======
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
->>>>>>> .merge_file_RaZkne
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato
@@ -198,7 +189,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_RSiCGO
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Errore Logout](logout-blade-error-analysis.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected.md)
@@ -209,7 +199,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
-=======
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Errore Logout](logout-blade-error-analysis.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected.md)
@@ -220,7 +209,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
->>>>>>> .merge_file_RaZkne
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato

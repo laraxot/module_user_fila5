@@ -8,25 +8,19 @@ qmd: "logout-blade analisi approfondita dell'errore nell'implementazione del log
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_j9MdSg
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_2bFBHR
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_j9MdSg
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_2bFBHR
 ---
 
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
@@ -35,15 +29,12 @@ status: draft
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_j9MdSg
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
-=======
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](logout-blade-conclusions-sintesi-dell.md)
->>>>>>> .merge_file_2bFBHR
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -153,15 +144,12 @@ Questi errori evidenziano l'importanza di:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
-<<<<<<< .merge_file_j9MdSg
 - [Implementazione Logout](logout-blade-implementation.md)
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
-=======
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](logout-blade-conclusions-sintesi-dell.md)
->>>>>>> .merge_file_2bFBHR
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato

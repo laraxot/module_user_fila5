@@ -7,25 +7,19 @@ created: "2026-05-26"
 updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/153"
 related:
-<<<<<<< .merge_file_Ro01vF
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_uN3XcW
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Ro01vF
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "release e readme marketing   user user"
->>>>>>> .merge_file_uN3XcW
 ---
 
 # Release e README marketing — User

@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 use Modules\User\Http\Controllers\Socialite\ProcessCallbackController;
 use Modules\User\Http\Controllers\Socialite\RedirectToProviderController;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
+
+uses(TestCase::class);
 
 /**
  * Contratto: con URI {lang}/auth/login/{provider} i controller devono dichiarare

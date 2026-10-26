@@ -6,32 +6,17 @@ alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-identity"
-<<<<<<< .merge_file_McRS9K
-=======
 type: index
 status: draft
 updated: 2026-10-20
 tags: [docs, user, bmad]
 qmd: "user   bmad method integration user"
->>>>>>> .merge_file_DLpL9X
 ---
 
 # User — BMAD Method Integration
 
-<<<<<<< .merge_file_FAKx4L
 **Scopo:** User possiede registrazione, verifica e login; Gdpr i consensi, Sixteen le pagine, Fixcity la segnalazione. Hub: [decision-log.md](./decision-log.md) · [filament-blueprint.md](./filament-blueprint.md) · PHPStan [standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md) · [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md).
 
-=======
-<<<<<<< .merge_file_McRS9K
-## Contratto corrente del flusso cittadino
-
-- [Flusso auth cittadino 2026-10-07](citizen-auth-flow-contract-user-contratto-flusso-autenticazione.md)
-- [Audit end-to-end FixCity](../../../Fixcity/docs/bmad/citizen-journey-audit-2026-10-07.md)
-
-User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
-presenta le pagine e Fixcity possiede la segnalazione.
-=======
->>>>>>> .merge_file_Y7joRv
 ## Kit BMAD owner (canonico)
 
 - [BMAD Planning](../bmad-planning.md)
@@ -48,4 +33,3 @@ presenta le pagine e Fixcity possiede la segnalazione.
 
 User possiede registrazione, verifica e login. Gdpr possiede il consenso, Sixteen
 presenta le pagine e Fixcity possiede la segnalazione.
->>>>>>> .merge_file_DLpL9X

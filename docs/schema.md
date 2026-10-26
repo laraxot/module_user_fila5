@@ -3,20 +3,15 @@ title: "Module Schema"
 module: "User"
 created: "2026-04-15T08:28:51Z"
 related:
-<<<<<<< .merge_file_XdhP4t
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_TJWgXy
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_XdhP4t
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -25,7 +20,6 @@ status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module schema user"
->>>>>>> .merge_file_TJWgXy
 ---
 
 # User Module Schema

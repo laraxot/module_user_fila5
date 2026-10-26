@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use function Safe\file_get_contents;
+use Modules\User\Tests\TestCase;
 use Symfony\Component\Finder\Finder;
 
+use function Safe\file_get_contents;
 
+uses(TestCase::class);
 
 test('base user model does not use comment traits', function (): void {
     $baseUserPath = dirname(__DIR__, 2).'/app/Models/BaseUser.php';

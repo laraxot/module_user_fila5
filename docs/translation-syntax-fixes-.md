@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_B1UKoQ
-=======
 ---
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzioni errori di sintassi nei file di traduzione - 2025 user"
 ---
->>>>>>> .merge_file_u9FooC
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data
@@ -142,22 +139,16 @@ module: theme
 topic: translation-syntax-fixes-
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 related:
-<<<<<<< .merge_file_B1UKoQ
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_u9FooC
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_B1UKoQ
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_u9FooC
   - "./actions-path-convention.md"
 ---
 

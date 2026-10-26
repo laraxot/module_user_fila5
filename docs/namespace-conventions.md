@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_WC5Fww
-=======
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "convenzioni di namespace nel modulo user user"
 ---
->>>>>>> .merge_file_4XI1Cm
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -212,22 +209,16 @@ module: theme
 topic: namespace-conventions
 canonical: ../../../Themes/docs/shared-components/namespace-conventions.md
 related:
-<<<<<<< .merge_file_WC5Fww
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4XI1Cm
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_WC5Fww
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4XI1Cm
   - "./actions-path-convention.md"
 ---
 

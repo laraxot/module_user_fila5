@@ -12,10 +12,11 @@ use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\Device;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class GetCurrentDeviceActionTest extends TestCase
 {
-
-    /** @var GetCurrentDeviceAction $action */
+    /** @var GetCurrentDeviceAction */
     public mixed $action;
 
     private Agent&MockInterface $mockAgent;
@@ -26,14 +27,13 @@ class GetCurrentDeviceActionTest extends TestCase
 
         // L'action legge il browser solo dall'Agent iniettato: il mock va passato al costruttore.
         $this->mockAgent = typedMock(Agent::class);
-        $this->action = new GetCurrentDeviceAction($this->mockAgent, new Device());
+        $this->action = new GetCurrentDeviceAction($this->mockAgent, new Device);
     }
 
     /** @test */
     public function it_creates_device_with_valid_agent_data(): void
     {
         // Arrange
-
 
         // Mock Agent methods
         $this->mockAgent->shouldReceive('device')->andReturn('iPhone');
@@ -82,8 +82,6 @@ class GetCurrentDeviceActionTest extends TestCase
         // Arrange
         $mobileId = 'unique-mobile-identifier-123';
 
-
-
         // Mock Agent methods
         $this->mockAgent->shouldReceive('device')->andReturn('Android Phone');
         $this->mockAgent->shouldReceive('platform')->andReturn('Android');
@@ -123,7 +121,7 @@ class GetCurrentDeviceActionTest extends TestCase
         $this->mockAgent->shouldIgnoreMissing();
 
         // Act & Assert
-        expect(fn() => $this->action->execute($emptyMobileId))
+        expect(fn () => $this->action->execute($emptyMobileId))
             ->toThrow(InvalidArgumentException::class, 'L\'ID mobile non può essere vuoto');
     }
 

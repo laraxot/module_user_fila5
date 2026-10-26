@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_6nVQWQ
-=======
 ---
 title: "Testing Rules & Strategy"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "testing rules & strategy user"
 ---
->>>>>>> .merge_file_eMQQQW
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)
@@ -157,22 +154,16 @@ module: theme
 topic: testing-rules
 canonical: ../../../Themes/docs/shared-components/testing-rules-Modules.md
 related:
-<<<<<<< .merge_file_6nVQWQ
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_eMQQQW
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_6nVQWQ
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_eMQQQW
   - "./actions-path-convention.md"
 ---
 

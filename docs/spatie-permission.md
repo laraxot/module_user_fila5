@@ -8,25 +8,19 @@ qmd: "spatie-permission 🏛️ filosofia spatie permission in laraxot"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_CxfVng
   - "./00-index.md"
-=======
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_hJhfC7
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_CxfVng
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_hJhfC7
 ---
 
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
@@ -249,11 +243,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-<<<<<<< .merge_file_CxfVng
 - [Roles and Permissions](roles-permissions.md)
-=======
-- [Roles and Permissions](roles-permissions.md)
->>>>>>> .merge_file_hJhfC7
 
 ## ✅ **VERIFICA STATO ATTUALE**
 
