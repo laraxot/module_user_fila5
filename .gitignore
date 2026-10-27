@@ -459,6 +459,7 @@ tests/AuditCoverage/
 docs/scripts/
 docs/bashscripts/
 docs/**/archive/
+docs/archive/
 docs/**/archived/
 docs/**/legacy/
 docs/**/workbench/
