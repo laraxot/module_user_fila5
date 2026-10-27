@@ -63,6 +63,12 @@ perché la rotta è `{lang}/auth/login/{provider}` (`routes/socialite.php`).
 Il bottone Google del tema e `SocialLoginWidget::getRedirectUrl()` rispettano
 questo contratto; vedi [google-auth-login.md](./google-auth-login.md).
 
+La callback FO non è una Resource, una Page Filament o un widget duplicato:
+`Themes/Sixteen/resources/views/pages/auth/login/[provider]/callback.blade.php`
+è la pagina Folio+Volt e delega a `ProcessCallbackAction`. User possiede la policy
+OAuth; non aggiungere una callback controller-based o una seconda implementazione
+in Filament/Livewire.
+
 La migration `create_users_table` non dichiara `$model_class`. Il modello della
 Resource e quello della migration sono la stessa classe ricavata dal nome file.
 

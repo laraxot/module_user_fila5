@@ -60,29 +60,28 @@ describe('Social Login Widget', function () {
 });
 
 describe('Socialite routes', function () {
-    test('BO redirect route exists for microsoft', function () {
-        $url = route('socialite.oauth.redirect', ['provider' => 'microsoft']);
+    test('localized redirect route exists for microsoft', function () {
+        $url = route('oauth.redirect', ['lang' => 'it', 'provider' => 'microsoft']);
         Assert::assertStringContainsString('microsoft', (string) $url);
-        Assert::assertStringContainsString('/admin/login/', (string) $url);
+        Assert::assertStringContainsString('/it/auth/login/', (string) $url);
     });
 
-    test('FO redirect route exists for google (STORY-478)', function () {
-        $url = route('socialite.oauth.fo.redirect', ['provider' => 'google']);
+    test('localized redirect route exists for google', function () {
+        $url = route('oauth.redirect', ['lang' => 'it', 'provider' => 'google']);
         Assert::assertStringContainsString('google', (string) $url);
-        Assert::assertStringContainsString('/auth/social/', (string) $url);
+        Assert::assertStringContainsString('/it/auth/login/', (string) $url);
     });
 
-    test('FO and BO routes are distinct paths', function () {
-        $fo = route('socialite.oauth.fo.redirect', ['provider' => 'google']);
-        $bo = route('socialite.oauth.redirect', ['provider' => 'google']);
+    test('the localized redirect route is shared by providers', function () {
+        $google = route('oauth.redirect', ['lang' => 'it', 'provider' => 'google']);
+        $microsoft = route('oauth.redirect', ['lang' => 'it', 'provider' => 'microsoft']);
 
-        Assert::assertNotSame($fo, $bo);
-        Assert::assertStringContainsString('/auth/social/', (string) $fo);
-        Assert::assertStringContainsString('/admin/login/', (string) $bo);
+        Assert::assertStringContainsString('/it/auth/login/google', (string) $google);
+        Assert::assertStringContainsString('/it/auth/login/microsoft', (string) $microsoft);
     });
 
     test('shared callback route is accessible', function () {
         $url = route('oauth.callback', ['provider' => 'google']);
-        Assert::assertStringContainsString('/sso/google/callback', (string) $url);
+        Assert::assertStringContainsString('/it/auth/login/google/callback', (string) $url);
     });
 });

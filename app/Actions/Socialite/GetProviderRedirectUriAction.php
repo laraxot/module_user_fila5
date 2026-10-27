@@ -17,9 +17,14 @@ class GetProviderRedirectUriAction
 
     public function execute(string $provider): string
     {
-        return route('oauth.callback', [
-            'lang' => (string) LaravelLocalization::getDefaultLocale(),
-            'provider' => $provider,
-        ]);
+        // I nomi Folio si risolvono nella lingua corrente (provider Cms): per avere quella predefinita la si imposta per un attimo.
+        $current = app()->getLocale();
+        app()->setLocale((string) LaravelLocalization::getDefaultLocale());
+
+        try {
+            return route('oauth.callback', ['provider' => $provider]);
+        } finally {
+            app()->setLocale($current);
+        }
     }
 }

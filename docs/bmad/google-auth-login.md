@@ -35,14 +35,14 @@ nel path (`/it/auth/login/google`). Google Cloud Console ha
 
 | Pezzo | Dove |
 |-------|------|
-| Route named | `oauth.redirect` / `oauth.callback` in `routes/socialite.php` → `{lang}/auth/login/{provider}` |
-| Redirect / callback | `RedirectToProviderController` / `ProcessCallbackController` |
+| Route named | `oauth.redirect` in `routes/socialite.php`; `oauth.callback` in the Sixteen Folio page |
+| Redirect / callback | `RedirectToProviderController` / Folio callback → `ProcessCallbackAction` |
 | Bottone FO Sixteen | `components/utilities/google-button.blade.php` → `route(..., ['lang' => $locale])` |
 | Widget dominio | `LoginWidget` / `SocialLoginWidget::getRedirectUrl()` |
 
-**Nessuna pagina Folio** serve questi URL (story [DCP-269](./stories/dcp-269-login-google-localizzato-e-rientro-nella-lingua.story.md)):
-un `abort()` al livello superiore di una vista Folio scatta quando Folio scorre le pagine per risolvere `route('login')` e rompe
-ogni redirect a un nome di rotta. La rotta nominata vince comunque.
+La callback è una pagina Folio+Volt redirect-only. Il controllo del provider e il redirect vivono dentro `mount()` del componente Volt,
+non nel livello globale del Blade: Folio può quindi scoprire `name('oauth.callback')` senza eseguire un `abort()` durante la scansione delle named
+route. La precedente decisione DCP-269 vietava gli stub Folio con logica al livello globale; non vieta questa implementazione.
 
 ## Vincoli di rotta
 
@@ -52,7 +52,7 @@ Un valore inventato è un 404 a tema, non un 500 né una lingua fantasma.
 ## La lingua attraversa Google
 
 `GOOGLE_REDIRECT_URI` è uno solo (`/it/…/callback`). `RedirectToProviderController` salva la lingua d'ingresso in sessione
-(`ProcessCallbackController::SESSION_LANG_KEY`), il callback la ripristina (validata) e `RedirectToLoginAction` rimanda a
+(`ProcessCallbackSession::KEY`), il callback la ripristina (validata) e `RedirectToLoginAction` rimanda a
 `/{lang}/auth/login` con l'errore. Il blocco d'errore lo stampa il widget (`filament/widgets/auth/login.blade.php`).
 
 ## Senza chiavi: l'errore lo dà il nostro sistema (DCP-271)

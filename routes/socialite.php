@@ -18,9 +18,5 @@ Route::prefix('{lang}')
                     'RedirectToProviderController',
                 )->where('provider', 'google|microsoft|github')->name('oauth.redirect');
 
-                Route::get(
-                    '/auth/login/{provider}/callback',
-                    'ProcessCallbackController',
-                )->where('provider', 'google|microsoft|github')->name('oauth.callback');
             });
     });

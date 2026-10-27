@@ -128,3 +128,24 @@ Messa in discussione prima di scrivere codice:
 - Proposte non fatte (YAGNI finché nessuno le chiede): colonna «configurato» nell'elenco dei provider del back office; voce
   «credenziali Google» nel gate go-live.
 - **Nulla è stato committato**: l'utente non l'ha chiesto. La modifica al tema (`overflow-wrap`) sta nel repo separato `Themes/Sixteen`.
+
+## Aggiornamento: chiavi reali del client Google (2026-10-26)
+
+L'utente ha fornito il client web del progetto Google Cloud `fixcity-512809`. Nel `.env` di sviluppo ci sono `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` e
+`GOOGLE_REDIRECT_URI=https://www.fixcity.eu/it/auth/login/google/callback`. Il segreto sta **solo** nel `.env` (ignorato da git): mai in config tracciata,
+docs, memoria o log.
+
+- **URI registrati in Google Cloud:** `https://www.fixcity.eu/{it,en}/auth/login/google/callback`. Basta quello `it`: il `redirect_uri` e' uno solo (DCP-269) e
+  la lingua d'ingresso torna dalla sessione, quindi de ed es funzionano senza URI propri. Gli origins JavaScript non servono: il giro e' lato server.
+- **Provato:** `GetMissingProviderSettingsAction` non segnala mancanze; `/{it,en,de,es}/auth/login/google` risponde 302 a `accounts.google.com` con `client_id`,
+  `redirect_uri` registrato, `state`, scope `openid profile email` e nessun segreto nell'URL; Google risponde con la pagina di accesso
+  (`signin/identifier`), senza `redirect_uri_mismatch` ne' `invalid_client`; 35 test Socialite verdi (183 asserzioni).
+- **Non provato:** il ritorno su `/auth/login/google/callback` e lo scambio del codice. Google accetta solo gli URI registrati, tutti su `www.fixcity.eu`:
+  dall'istanza di sviluppo (`192.168.1.40`) il giro termina in produzione. Per provarlo in locale registrare `http://localhost:8000/it/auth/login/google/callback`
+  in Google Cloud e usare un tunnel SSH (vedi sopra).
+- **Produzione:** `fixcity.eu` (46.225.90.178) e' un altro server. Servono le stesse tre variabili nel suo `.env`, poi `php artisan config:clear`
+  (o `config:cache` se la cache e' in uso) e un controllo di `/it/auth/login/google`.
+- **Incidente:** due agenti hanno scritto lo stesso blocco `GOOGLE_*` nel `.env` e il secondo aveva un segreto sbagliato (36 caratteri contro 35). Nel `.env`
+  vince l'ultima occorrenza, quindi era quello in uso e avrebbe dato `invalid_client` allo scambio del codice. Tenuta l'unica terna uguale al valore fornito.
+  Lezione: un controllo di esistenza della chiave non prova che il valore sia giusto; va confrontato.
+- **Rotazione:** il segreto e' passato nella chat della sessione; valutare di reimpostarlo in Google Cloud Console (Credenziali, client, Reimposta segreto).

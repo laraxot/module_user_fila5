@@ -20,8 +20,9 @@ uses(TestCase::class);
  *
  * Il cittadino parte da /{lang}/auth/login e deve restare nella sua lingua per tutto il giro:
  *   pulsante -> /{lang}/auth/login/google -> Google -> /{lang}/auth/login/google/callback -> login.
- * Le rotte vivono in Modules/User/routes/socialite.php sotto il prefisso `{lang}`; nessuna pagina Folio
- * deve rispondere al loro posto (una vista Folio non puo' restituire un redirect: risponde 200 vuoto).
+ * L'ingresso (`oauth.redirect`) e' in Modules/User/routes/socialite.php sotto il prefisso `{lang}`; il ritorno e' la pagina
+ * Folio+Volt `pages/auth/login/[provider]/callback.blade.php` (DCP-360). Una *vista* con redirect al livello superiore risponde
+ * 200 vuoto e un abort() li' rompe route('login'): il redirect sta in mount() (OauthCallbackFolioPageTest).
  */
 
 dataset('oauth_locales', [
@@ -112,4 +113,12 @@ test('Folio named routes resolve, so no page aborts during the route-name scan',
     // faceva lanciare 404 a route('login') in tutta l'applicazione.
     expect(route('login'))->toContain('/auth/login')
         ->and(route('register'))->toContain('/auth/register');
+});
+
+test('the Google callback is the redirect-only Folio page', function (): void {
+    expect(route('oauth.callback', ['lang' => 'it', 'provider' => 'google']))
+        ->toContain('/it/auth/login/google/callback');
+
+    get('/it/auth/login/google/callback?error=access_denied')
+        ->assertRedirect('/it/auth/login');
 });
