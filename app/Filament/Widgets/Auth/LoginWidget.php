@@ -7,6 +7,8 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
@@ -78,7 +80,8 @@ class LoginWidget extends BaseAuthWidget
             return;
         }
 
-        if (Auth::attempt($credentials, $remember)) {
+        // An account its owner deleted (Gdpr DeleteAccountAction sets `deleted_at`) stays closed: the privacy notice says it is deactivated at once.
+        if (Auth::attemptWhen($credentials, static fn (Authenticatable $user): bool => ! $user instanceof Model || $user->getAttribute('deleted_at') === null, $remember)) {
             RateLimiter::clear($throttleKey);
             session()->regenerate();
 

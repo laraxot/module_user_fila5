@@ -23,8 +23,8 @@ test('a user may delete their own account and nobody else\'s', function (): void
     $other = UserFactory::new()->createOne();
     $policy = app(UserPolicy::class);
 
-    expect($policy->delete($owner, $owner))->toBeTrue()
-        ->and($policy->delete($owner, $other))->toBeFalse();
+    expect($policy->deleteOwnAccount($owner, $owner))->toBeTrue()
+        ->and($policy->deleteOwnAccount($owner, $other))->toBeFalse();
 });
 
 test('the owner of the configured user class opens the account delete url without a 403', function (): void {

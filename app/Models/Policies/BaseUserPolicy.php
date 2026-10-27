@@ -83,6 +83,15 @@ class BaseUserPolicy extends XotBasePolicy
     }
 
     /**
+     * Self-service account deletion from the front office (GDPR art. 17): only the own account.
+     * `delete` stays the back-office ability (an admin removes other users, never themselves).
+     */
+    public function deleteOwnAccount(UserContract $user, Model $model): bool
+    {
+        return $this->isSelf($user, $model);
+    }
+
+    /**
      * Determine whether the user can restore the model.
      */
     public function restore(UserContract $user, Model $model): bool
