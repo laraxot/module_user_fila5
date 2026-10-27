@@ -1,6 +1,6 @@
 ---
 title: UserMassSeeder getConsoleCommand e tipo nullable
-status: todo
+status: completed
 module: User
 created: 2026-10-21
 ---
@@ -29,3 +29,4 @@ nel contesto della classe (flusso o assunzione sulla proprieta') e correggere la
 
 ## Verifica
 - PHPStan sul file: 0 errori. Test: verde o blocco documentato (guard DB).
+- Esito 2026-10-27: il contratto `?Command` + `?->` (vedi `docs/bmad/stories/user-seeder-contract-fix.story.md`) era stato riportato a `Command` non null da un commit automatico; con Laravel 13.38 (`Seeder::$command` e' `Command|null`) PHPStan dava `return.type` su `RolesSeeder` e `UserMassSeeder`. Ripristinato `?Command` con chiamanti null-safe; `tests/Unit/Seeders/SeedersWithoutConsoleTest.php` fissa il comportamento (3 test verdi); PHPStan su `database/seeders` e sul test: 0.
