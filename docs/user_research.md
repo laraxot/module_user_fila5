@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_p6oVqM
-=======
 ---
 title: "User Module - User Research"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - user research user"
+status: superseded
+superseded_by: user-research-module.md
 ---
->>>>>>> .merge_file_5sV8mO
 # User Module - User Research
 
 **Module:** User  

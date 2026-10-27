@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_6SIfri
-=======
 status: draft
 qmd: "user module - business logic deep dive user"
->>>>>>> .merge_file_zw4dvR
 ---
 
 # User Module - Business Logic Deep Dive

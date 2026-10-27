@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_lmbzOK
-=======
 ---
 title: "Implementazione del Logout"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "implementazione del logout user"
 ---
->>>>>>> .merge_file_lPcUeo
 # Implementazione del Logout 
 
 ## Indice

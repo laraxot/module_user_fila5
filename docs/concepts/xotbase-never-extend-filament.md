@@ -7,25 +7,19 @@ created: 2026-07-16
 updated: 2026-07-16
 qmd: "User filament never extend Filament class XotBase mirror path"
 related:
-<<<<<<< .merge_file_LosBVp
-  - ../../../../docs/wiki/rules/xotbase-critical-rules.md
-  - ../../../../docs/wiki/rules/xot-base-filament-widgets.md
-  - ../../../../docs/wiki/memories/xotbase-never-extend-filament.md
-=======
+  - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
+  - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
+  - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
   - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
 status: draft
->>>>>>> .merge_file_q992Xg
 ---
 
 # Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
 
-<<<<<<< .merge_file_LosBVp
-Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../docs/wiki/rules/xotbase-critical-rules.md).
-=======
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
->>>>>>> .merge_file_q992Xg
+Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
 
 ## Zen (riassunto)
 

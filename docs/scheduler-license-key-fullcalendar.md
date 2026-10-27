@@ -16,7 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: scheduler-license-key.md
 ---
 
 # FullCalendar Scheduler License Key

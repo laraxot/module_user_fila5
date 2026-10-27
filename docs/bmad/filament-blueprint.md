@@ -63,6 +63,12 @@ perché la rotta è `{lang}/auth/login/{provider}` (`routes/socialite.php`).
 Il bottone Google del tema e `SocialLoginWidget::getRedirectUrl()` rispettano
 questo contratto; vedi [google-auth-login.md](./google-auth-login.md).
 
+La callback FO non è una Resource, una Page Filament o un widget duplicato:
+`Themes/Sixteen/resources/views/pages/auth/login/[provider]/callback.blade.php`
+è la pagina Folio+Volt e delega a `ProcessCallbackAction`. User possiede la policy
+OAuth; non aggiungere una callback controller-based o una seconda implementazione
+in Filament/Livewire.
+
 La migration `create_users_table` non dichiara `$model_class`. Il modello della
 Resource e quello della migration sono la stessa classe ricavata dal nome file.
 
@@ -73,9 +79,14 @@ cross-tenant per comodita admin.
 
 ## PHPStan
 
-Widget auth/OAuth e Resource User condividono `laravel/phpstan.neon`; glob `*Service.php` non confonde Livewire (`TermsOfService.php`). Catena permanente: [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), prompt [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md).
+Widget auth/OAuth e Resource User condividono **`laravel/phpstan.neon` solo** (agenti: mai altri `.neon`, ignore o baseline). Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` a **zero** senza conferma.
+
+Prima del fix: leggere questo blueprint (scopo UI) e il contratto del widget/Resource; poi tipizzare alla **sorgente** — **mai zittire** (`@phpstan-ignore`, baseline, exclude).
+
+Track: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), [00-start.md](../../../../../bashscripts/docs/prompts/00-start.md#ordine-permanente-dellutente), [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md). Ratchet basi Filament: [NeverExtendFilamentDirectlyTest.php](../../../Xot/tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php). Glob `*Service.php` non confonde Livewire (`TermsOfService.php`). `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md).
 
 ## Related
 
 - Planning: [bmad-planning.md](../bmad-planning.md)
 - Brainstorming: [bmad-brainstorming.md](../bmad-brainstorming.md)
+- Decision log: [decision-log.md](./decision-log.md)

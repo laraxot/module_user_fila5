@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_XZ9dQk
-=======
 ---
 title: "PHPStan Roadmap: User Module"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "phpstan roadmap: user module user"
+status: superseded
+superseded_by: phpstan-roadmap-user-module.md
 ---
->>>>>>> .merge_file_SEuoln
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12

@@ -7,12 +7,14 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\RateLimiter;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\User\Actions\Auth\GetPostLoginUrlAction;
+use Modules\User\Actions\Auth\RememberLoginReturnUrlAction;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 
 /**
@@ -48,6 +50,15 @@ class LoginWidget extends BaseAuthWidget
         return 'getLoginFormSchema';
     }
 
+    /**
+     * Ricorda la pagina da cui arriva l'utente (`?redirect=` o Referer dello stesso host) per riportarlo li' dopo il login.
+     */
+    public function mount(): void
+    {
+        parent::mount();
+        app(RememberLoginReturnUrlAction::class)->execute(request());
+    }
+
     public function login(): void
     {
         /** @var array<string, mixed> $data */
@@ -69,7 +80,8 @@ class LoginWidget extends BaseAuthWidget
             return;
         }
 
-        if (Auth::attempt($credentials, $remember)) {
+        // An account its owner deleted (Gdpr DeleteAccountAction sets `deleted_at`) stays closed: the privacy notice says it is deactivated at once.
+        if (Auth::attemptWhen($credentials, static fn (Authenticatable $user): bool => ! $user instanceof Model || $user->getAttribute('deleted_at') === null, $remember)) {
             RateLimiter::clear($throttleKey);
             session()->regenerate();
 
@@ -78,25 +90,9 @@ class LoginWidget extends BaseAuthWidget
                 ->success()
                 ->send();
 
-            // Chi e' stato mandato al login da una pagina protetta (es. "Segnala disservizio") torna a quella pagina:
-            // Laravel salva l'URL richiesto in `url.intended`. Senza, si va alla dashboard del progetto o alla home nella lingua corrente.
-            /**
-             * Livewire submits to `/livewire-*`, so the locale middleware that
-             * handled `/it/auth/login` is not guaranteed to run again. Keep the
-             * locale explicit, but pass it in the second position required by
-             * `localizeURL($url, $locale)`.
-             */
-            $locale = trim((string) app()->getLocale(), '/');
-            $supportedLocales = LaravelLocalization::getSupportedLanguagesKeys();
-            if (! in_array($locale, $supportedLocales, true)) {
-                $locale = Config::string('app.locale', 'it');
-            }
-
-            $defaultRedirectUrl = Route::has('dashboard')
-                ? LaravelLocalization::localizeURL(route('dashboard'), $locale)
-                : LaravelLocalization::localizeURL('/', $locale);
-
-            $this->redirectIntended($defaultRedirectUrl);
+            // Chi e' stato mandato al login da una pagina protetta (es. "Segnala disservizio") o da un link "Accedi" torna a quella
+            // pagina: `url.intended` lo salva il middleware `auth` o `mount()`. Senza, si va all'area personale nella lingua corrente.
+            $this->redirectIntended(app(GetPostLoginUrlAction::class)->execute());
 
             return;
         }

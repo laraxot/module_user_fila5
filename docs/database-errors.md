@@ -8,25 +8,19 @@ qmd: "database-errors database errors in user module"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_yz6XQ1
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_H8oa7v
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_yz6XQ1
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_H8oa7v
 ---
 
 # Database Errors in User Module
@@ -60,6 +54,6 @@ status: draft
 - [BaseUser Model](../app/Models/BaseUser.php)
 - [Teams Relationship](../app/Models/Team.php)
 - [Migration File](../database/migrations/2025_05_17_000001_create_doctor_team_table.php)
-- [Xot Module Database Guidelines](../../../Modules/Xot/docs/DATABASE_GUIDELINES.md)
+- [Xot Module Database Guidelines](../../Xot/docs/database_guidelines.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
-- [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+- [Xot Module Database Guidelines](../../Xot/docs/database_guidelines.md)

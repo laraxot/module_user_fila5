@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_hQFUSc
-=======
 status: draft
 qmd: "phpstan status   user module user"
->>>>>>> .merge_file_a4xbB3
 ---
 
 # PHPStan Status — User Module

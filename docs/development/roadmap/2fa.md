@@ -9,10 +9,8 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./bottlenecks.md"
-<<<<<<< .merge_file_MYmICD
-=======
-status: draft
->>>>>>> .merge_file_a56RWR
+status: superseded
+superseded_by: ../../roadmap/2fa.md
 ---
 
 # Two-Factor Authentication - 70% Completato

@@ -8,25 +8,19 @@ qmd: "microsoft-oauth-socialite microsoft oauth/socialite - analisi e implementa
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_UcakwW
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_7w6jSQ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_UcakwW
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_7w6jSQ
 ---
 
 # Microsoft OAuth/Socialite - Analisi e Implementazione

@@ -5,6 +5,9 @@ status: superseded
 type: index
 superseded_by: ./README.md
 updated: 2026-10-21
+title: "Documentazione User — indice storico (superseded)"
+tags: [docs, user]
+qmd: "documentazione user   indice storico (superseded) user"
 ---
 # Documentazione User — indice storico (superseded)
 

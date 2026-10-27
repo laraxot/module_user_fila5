@@ -16,6 +16,7 @@ related:
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Struttura delle Blade di Autenticazione con Volt
@@ -198,13 +199,10 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_MT7h1S
-- [Documentazione Volt](./volt-logout-2.md)
-- [Best Practices Routing](./routing-best-practices-2.md)
-=======
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
 - [Documentazione Volt](../volt-logout.md)
 - [Best Practices Routing](../routing-best-practices-architettura-volt-folio-filament.md)
->>>>>>> .merge_file_K8D9rx
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt-logout.md)

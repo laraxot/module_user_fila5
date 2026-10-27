@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_4w14IQ
-=======
 ---
 title: "Best Practices per l'Implementazione del Logout"
 type: note
@@ -8,21 +6,17 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "best practices per l'implementazione del logout user"
 ---
->>>>>>> .merge_file_jpA8wJ
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_4w14IQ
-- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
-=======
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
->>>>>>> .merge_file_jpA8wJ
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -265,22 +259,16 @@ module: theme
 topic: logout-implementation-best-practices
 canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 related:
-<<<<<<< .merge_file_4w14IQ
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_jpA8wJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_4w14IQ
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_jpA8wJ
   - "./actions-path-convention.md"
 ---
 

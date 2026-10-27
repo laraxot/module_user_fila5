@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_U4K3ce
-=======
-status: draft
 qmd: "analisi ereditarietà modelli - modulo user user"
->>>>>>> .merge_file_kivvpI
+status: superseded
+superseded_by: model-inheritance-analysis.md
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -156,18 +154,15 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_U4K3ce
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
->>>>>>> .merge_file_kivvpI

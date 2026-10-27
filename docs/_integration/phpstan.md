@@ -16,10 +16,8 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./profile.md"
-<<<<<<< .merge_file_3zs0FC
-=======
-status: draft
->>>>>>> .merge_file_QlXvDu
+status: superseded
+superseded_by: ../-integration/phpstan.md
 ---
 
 # phpstan

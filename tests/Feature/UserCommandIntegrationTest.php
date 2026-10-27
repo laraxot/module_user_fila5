@@ -64,7 +64,7 @@ describe('User Command Integration', function (): void {
 
         $reflection = new \ReflectionClass($command);
 
-        Assert::assertInstanceOf(InputDefinition::class, $command->getDefinition());
+        Assert::assertSame(InputDefinition::class, $command->getDefinition()::class);
         Assert::assertTrue($reflection->hasMethod('info'));
         Assert::assertTrue($reflection->hasMethod('error'));
     });

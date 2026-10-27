@@ -1,13 +1,10 @@
 ---
 title: User — Support → Actions
-<<<<<<< .merge_file_b9ZElo
-=======
 type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "migrazione `app/support/` → `app/actions/` user"
->>>>>>> .merge_file_N0FSmp
 ---
 
 # Migrazione `app/Support/` → `app/Actions/`

@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_5gd8hr
-=======
-status: draft
 qmd: "user module - sprint planning user"
->>>>>>> .merge_file_YJnPlZ
+status: superseded
+superseded_by: sprint-planning-user-module.md
 ---
 
 # User Module - Sprint Planning

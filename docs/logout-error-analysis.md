@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_2Y85oD
-=======
 ---
 title: "Analisi Errore Logout"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi errore logout user"
 ---
->>>>>>> .merge_file_f29wI4
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -132,33 +129,24 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-<<<<<<< .merge_file_2Y85oD
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
-=======
 - [Gestione Sessione](./session_management.md)
->>>>>>> .merge_file_f29wI4
+- [Gestione Sessione](./session_management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade) 
 ---
 module: theme
 topic: logout-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
 related:
-<<<<<<< .merge_file_2Y85oD
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_f29wI4
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_2Y85oD
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_f29wI4
   - "./actions-path-convention.md"
 ---
 

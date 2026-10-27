@@ -11,21 +11,18 @@ related:
   - "./architecture-rules.md"
   - "./architecture.md"
   - "./auth-blade-structure.md"
-  - "./readme.md"
+  - "./README.md"
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
-<<<<<<< .merge_file_hoY456
-=======
 status: draft
->>>>>>> .merge_file_KRB28h
 ---
 
 # Registrazione dei Componenti Blade nel Modulo User
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/architecture/component-registration.md).
+> La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/architecture/component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/project_docs/architecture/component-registration.md).
 ## Implementazione Corretta nel Modulo User
 Nel modulo User, tutti i componenti Blade devono seguire la struttura standard:
@@ -45,12 +42,9 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
     <!-- Contenuto del dropdown -->
 </x-user::profile.dropdown>
 ## Collegamenti
-- [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
-<<<<<<< .merge_file_hoY456
-- [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
-=======
+- [Documentazione principale sulla registrazione dei componenti](../../../UI/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](../../app/Providers/UserServiceProvider.php)
->>>>>>> .merge_file_KRB28h
-- [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
+- [Implementazione di UserServiceProvider](../../app/Providers/UserServiceProvider.php)
+- [Documentazione principale sulla registrazione dei componenti](../../../UI/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)

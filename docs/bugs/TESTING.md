@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_bcdgls
-=======
 ---
 title: "Testing del Bug Fix: Infinite Loop in make:filament-user"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, bugs]
 qmd: "testing del bug fix: infinite loop in make:filament-user user"
+status: superseded
+superseded_by: testing.md
 ---
->>>>>>> .merge_file_1TW9z8
 # Testing del Bug Fix: Infinite Loop in make:filament-user
 
 ## Overview
@@ -243,11 +241,8 @@ Verificare:
 
 ## Riferimenti
 
-<<<<<<< .merge_file_bcdgls
-- **Bug Report**: `BUGFIX_REPORT_2025-01-14.md`
-=======
+- **Bug Report**: `BUGFIX_REPORT.md`
 - **Bug Report**: `BUGFIX_REPORT-bug-fix.md`
->>>>>>> .merge_file_1TW9z8
 - **Documentazione Dettagliata**: `make-filament-user-infinite-loop.md`
 - **Codice Sorgente**: `Modules/User/app/Models/Traits/HasTeams.php`
 

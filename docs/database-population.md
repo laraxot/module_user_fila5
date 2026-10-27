@@ -8,25 +8,19 @@ qmd: "database-population popolamento database - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_p87IVM
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_3EdyNs
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_p87IVM
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_3EdyNs
 ---
 
 # Popolamento Database - Modulo User
@@ -320,7 +314,7 @@ echo "User roles: " . $user->roles()->count() . "\n";
 
 ## Collegamenti
 
-- [README Modulo User](./readme.md)
+- [README Modulo User](./README.md)
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
 - [Database Schema](./database-schema.md)

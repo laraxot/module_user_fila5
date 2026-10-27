@@ -4,6 +4,7 @@ type: note
 status: draft
 updated: 2026-10-21
 qmd: "phpstan-docs-cleanup user docs merge markers"
+tags: [docs, user]
 ---
 # Cleanup minimale (scopo > sintassi — no mass edit)
 

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_9qDh99
-=======
 ---
 title: "Struttura delle Blade di Autenticazione con Volt"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "struttura delle blade di autenticazione con volt user"
 ---
->>>>>>> .merge_file_9Z9dt2
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -189,14 +186,11 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-<<<<<<< .merge_file_9qDh99
-- [Documentazione Volt](./VOLT_LOGOUT.md)
-- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
-- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Gestione Errori](./ERROR_HANDLING.md) 
-=======
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md)
 - [Gestione Errori](./error_handling.md) 
->>>>>>> .merge_file_9Z9dt2
+- [Documentazione Volt](./volt_logout.md)
+- [Best Practices Routing](./routing_best_practices.md)
+- [Struttura Directory](./directory_structure_checklist.md)
+- [Gestione Errori](./error_handling.md) 

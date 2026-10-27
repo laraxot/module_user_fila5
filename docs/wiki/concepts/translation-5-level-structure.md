@@ -15,11 +15,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_AT3LNF
-=======
 status: draft
 qmd: "translation 5-level structure rule user"
->>>>>>> .merge_file_EV0cPv
 ---
 
 # Translation 5-Level Structure Rule

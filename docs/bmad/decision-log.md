@@ -12,10 +12,25 @@ related:
   - ./livewire-inventory.md
   - ./epics.md
   - ./filament-blueprint.md
-updated: 2026-10-20
+updated: 2026-10-26
 tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
 ---
+
+# Decision log — User
+
+**Scopo:** User e' il confine di identita' del cittadino e dell'operatore (auth, OAuth localizzato, profilo, RBAC/tenant): i temi vestono le pagine, Fixcity/Gdpr possiedono dominio e consensi, User possiede login/registrazione e i contratti Filament/Socialite.
+
+## Hub (solo link)
+
+- Standing PHPStan: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md)
+- `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md)
+- UI admin/FO auth: [filament-blueprint.md](./filament-blueprint.md)
+
+## [2026-10-20] Gate PHPStan Modules zero; Filament blueprint SSoT UI admin
+
+- **Decisione:** gate `analyse Modules` a zero; auth/OAuth/widget e Resource User si progettano solo via [filament-blueprint.md](./filament-blueprint.md) (XotBase, chiavi Lang, PHPStan alla sorgente).
+- **Track:** hub sopra.
 
 ## [2026-10-20] Google OAuth FO = route con `lang` + binding controller corretto
 
@@ -30,7 +45,7 @@ qmd: "decision log   superadmin livewire → filament widget user"
 - **Non fare:** `route('oauth.redirect')` senza `lang`; OAuth in new tab;
   stub Folio che abortisce 404 sul callback localizzato; Facade `Request`
   negli `__invoke` OAuth.
-- **Piano:** [oauth-login-locale-fix](../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md);
+- **Piano:** [oauth-login-locale-fix](../../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md);
   [google-auth-login.md](./google-auth-login.md).
 
 ## [2026-10-20] Google: giro completo nella lingua del cittadino (DCP-269)
@@ -374,10 +389,18 @@ scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
 
 - **Decisione:** ogni turn non banale con qualita' in scope esegue la catena PHPStan → fix sorgente → docs/prompt senza conferma; helper Pest solo su `Modules/User/tests/TestCase.php` (FQCN nei test), mai `scanFiles` sul neon.
 - **Perche:** User e' hub auth/OAuth/Livewire→Widget; errori qui moltiplicano falsi verdi su Lang/Cms se si zittisce. Vittoria = `totals` 0 + `[OK] No errors` sul run del coordinatore.
-- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
+- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
 
 ## [2026-10-20] Gate PHPStan Modules — rieseguito OK (audit docs)
 
 - **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User Modules/Comment Modules/Notify Modules/Activity` → exit 0, `[OK] No errors` (config unica `laravel/phpstan.neon`).
 - **Docs:** `md-filenames.py check` su `docs/` → 0 violazioni date/suffissi; legacy maiuscole in radice segnalate, nessuna rinomina (tool `name` non propone alias sicuri).
-- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-INDEX.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).
+- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-index.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).
+
+## [2026-10-26] DCP-285 policy utenti, mail di reset, verify, revoca consensi
+
+- **Policy utenti:** amministra gli utenti solo chi ha `super-admin` (via `before()`), `admin` o `user::admin`; gli altri vedono e aggiornano solo se stessi; nessuno si cancella da solo, super-admin compreso; un amministratore di modulo non modifica ne' cancella un super-admin. Registrata con `Gate::policy(BaseUser::class, UserPolicy::class)` perche' la classe di autenticazione reale (`Modules\Fixcity\Models\User`) non aveva nessuna policy e Filament, senza policy, consente tutto. Le abilita' collettive e secondarie sono definite perche' Filament le concede quando il metodo manca. Story [dcp-285](../stories/dcp-285-correttezza-di-policy-utenti-reset-password-e-revoca-consensi.story.md).
+- **Auto-cancellazione cittadino:** `DeleteAccountAction` (Gdpr) fa `Gate::authorize('delete', $user)` sul proprio utente e ora e' negata per costruzione: serve una capacita' dedicata (`deleteOwnAccount`) quando il titolare decide DEC-10/D-01.
+- **Mail di reset:** il testo di default lo possiede User (`EnsureResetPasswordMailTemplateAction`, `user::reset_password_email.*` in it/en/de/es), non Notify; mai sovrascrivere un testo personalizzato.
+- **Reinvio verifica email:** l'evento `Verified` si lancia solo dopo aver controllato id e hash, mai su un reinvio (`ResendEmailVerificationAction`).
+- **Revoca consensi:** si riconosce l'utente da `user_id` + `user_type` (classe e alias morph), mai da `subject_type`. Lo user agent della revoca richiede la colonna `revoked_user_agent`: SCHEMA-DA-CHIEDERE, nessuna migrazione creata.

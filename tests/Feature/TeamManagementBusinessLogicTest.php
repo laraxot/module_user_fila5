@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
+
 /**
  * Team Management Business Logic: specifica non implementata.
  *

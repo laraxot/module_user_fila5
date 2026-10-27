@@ -3,20 +3,15 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_xN29Ri
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_uPl17B
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_xN29Ri
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -26,7 +21,6 @@ status: draft
 updated: 2026-10-08
 tags: [docs, user]
 qmd: "contratti e interfacce per la moderazione utenti user"
->>>>>>> .merge_file_uPl17B
 ---
 # Contratti e Interfacce per la Moderazione Utenti
 

@@ -1,4 +1,11 @@
-<<<<<<< .merge_file_qHNz2q
+---
+title: "Implementazione Corretta delle Pagine Auth"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "implementazione corretta delle pagine auth user"
+---
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
@@ -9,10 +16,7 @@
 - [Volt Errors](./VOLT_ERRORS.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
-=======
 ---
-title: "Implementazione Corretta delle Pagine Auth"
-type: note
 status: draft
 updated: 2026-10-13
 tags: [docs, user]
@@ -28,7 +32,6 @@ qmd: "implementazione corretta delle pagine auth user"
 - [Volt Errors](./volt_errors.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
->>>>>>> .merge_file_mq04r1
 
 ## Introduzione
 

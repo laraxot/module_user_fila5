@@ -8,25 +8,19 @@ qmd: "registration-widget-fileupload-fix registrationwidget fileupload fix"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_fCMPa3
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_2WmTqX
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_fCMPa3
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_2WmTqX
 ---
 
 # RegistrationWidget FileUpload Fix
@@ -153,7 +147,7 @@ Per evitare simili problemi in futuro:
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 # RegistrationWidget FileUpload Fix
 
@@ -373,5 +367,5 @@ Per evitare simili problemi in futuro:
 ## Riferimenti
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

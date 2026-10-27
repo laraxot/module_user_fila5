@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Permission;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class PermissionTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_can_create_permission_with_minimal_data(): void
     {
         $permission = Permission::factory()->create([
@@ -48,14 +47,14 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_connection_attribute(): void
     {
-        $permission = new Permission();
+        $permission = new Permission;
 
         static::assertSame('user', $permission->getConnectionName());
     }
 
     public function test_permission_has_key_type_attribute(): void
     {
-        $permission = new Permission();
+        $permission = new Permission;
 
         // permissions.id e' bigIncrements (migration 2026_09_01_150112): chiave intera.
         static::assertSame('int', $permission->getKeyType());
@@ -63,7 +62,7 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_fillable_attributes(): void
     {
-        $permission = new Permission();
+        $permission = new Permission;
 
         $expectedFillable = [
             'name',
@@ -79,7 +78,7 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_casts(): void
     {
-        $permission = new Permission();
+        $permission = new Permission;
 
         // Il model non dichiara casts propri: resta solo quello della chiave intera.
         $expectedCasts = [
@@ -108,7 +107,7 @@ class PermissionTest extends TestCase
         $webPermissions = Permission::where('guard_name', 'web')->get();
 
         static::assertCount(2, $webPermissions);
-        static::assertTrue($webPermissions->every(fn($permission) => $permission->guard_name === 'web'));
+        static::assertTrue($webPermissions->every(fn ($permission) => $permission->guard_name === 'web'));
     }
 
     public function test_can_find_permission_by_created_by(): void
@@ -141,7 +140,7 @@ class PermissionTest extends TestCase
         $userPermissions = Permission::where('name', 'like', 'user.%')->get();
 
         static::assertCount(3, $userPermissions);
-        static::assertTrue($userPermissions->every(fn($permission) => str_starts_with($permission->name, 'user.')));
+        static::assertTrue($userPermissions->every(fn ($permission) => str_starts_with($permission->name, 'user.')));
     }
 
     public function test_can_update_permission(): void
@@ -190,8 +189,7 @@ class PermissionTest extends TestCase
 
         static::assertCount(2, $permissions);
         static::assertTrue($permissions->every(
-            fn($permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin',
-        ));
+            fn ($permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin'));
     }
 
     public function test_permission_has_roles_relationship(): void
@@ -237,7 +235,7 @@ class PermissionTest extends TestCase
 
     public function test_permission_has_get_table_method(): void
     {
-        $permission = new Permission();
+        $permission = new Permission;
 
         static::assertSame('permissions', $permission->getTable());
     }

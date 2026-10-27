@@ -15,10 +15,7 @@ related:
   - "./gestione-utenti.md"
   - "./legacy-code-cleanup.md"
   - "./user-analytics.md"
-<<<<<<< .merge_file_boRCwg
-=======
 status: draft
->>>>>>> .merge_file_zwYgwH
 ---
 
 # User Traits Implementation

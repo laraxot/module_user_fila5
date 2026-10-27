@@ -16,10 +16,7 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
-<<<<<<< .merge_file_2nV5fJ
-=======
 status: draft
->>>>>>> .merge_file_aQ2AMW
 ---
 
 # json

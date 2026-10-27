@@ -16,10 +16,8 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-<<<<<<< .merge_file_1AOIKV
-=======
-status: draft
->>>>>>> .merge_file_mmDDTZ
+status: superseded
+superseded_by: ../repos.md
 ---
 
 # repos

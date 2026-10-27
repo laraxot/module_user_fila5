@@ -5,6 +5,7 @@ module: User
 status: decision-input
 updated: 2026-10-15
 tags: [sustainability, user, rbac, bmad]
+qmd: "ruoli e membership (ownership user) user"
 ---
 
 # Ruoli e membership (ownership User)

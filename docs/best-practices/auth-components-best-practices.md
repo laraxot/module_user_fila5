@@ -16,10 +16,7 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
   - "./dependency.md"
-<<<<<<< .merge_file_0NuXRD
-=======
 status: draft
->>>>>>> .merge_file_uXBoKy
 ---
 
 # Best Practices per i Componenti di Autenticazione 

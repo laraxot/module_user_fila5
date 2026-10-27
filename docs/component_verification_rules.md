@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_tPiST8
-=======
 ---
 title: "Regole per la Verifica dei Componenti Blade"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "regole per la verifica dei componenti blade user"
+status: superseded
+superseded_by: component-verification.md
 ---
->>>>>>> .merge_file_dv5FOS
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

@@ -27,7 +27,6 @@ use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
-use Modules\User\Actions\Shield\ShieldUtilsAction;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Pages\SocialiteProviderSettingsPage;
@@ -50,8 +49,8 @@ use Modules\User\Observers\UserObserver;
 use Modules\User\Providers\SocialiteServiceProvider;
 use Modules\User\Providers\Traits\HasPassportConfiguration;
 use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\User\Support\NotificationSchema;
-use Modules\User\Support\Utils;
+use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
+use Modules\User\Actions\Shield\ShieldUtilsAction;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
 use Modules\User\View\Components\Mail\Message;
@@ -423,29 +422,29 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertSame(Role::class, ShieldUtilsAction::getRoleModel());
         Assert::assertSame(Permission::class, ShieldUtilsAction::getPermissionModel());
 
-        Assert::assertSame('web', Utils::getFilamentAuthGuard());
-        Assert::assertSame('roles', Utils::getResourceSlug());
-        Assert::assertTrue(Utils::isResourceNavigationRegistered());
-        Assert::assertSame(['view', 'update'], Utils::getGeneralResourcePermissionPrefixes());
-        Assert::assertSame('page', Utils::getPagePermissionPrefix());
-        Assert::assertSame('widget', Utils::getWidgetPermissionPrefix());
-        Assert::assertTrue(Utils::isResourceEntityEnabled());
-        Assert::assertTrue(Utils::isPageEntityEnabled());
-        Assert::assertTrue(Utils::isWidgetEntityEnabled());
-        Assert::assertFalse(Utils::isCustomPermissionEntityEnabled());
-        Assert::assertSame('policies_and_permissions', Utils::getGeneratorOption());
-        Assert::assertSame(['FooResource'], Utils::getExcludedResouces());
-        Assert::assertSame(['BarPage'], Utils::getExcludedPages());
-        Assert::assertSame(['BazWidget'], Utils::getExcludedWidgets());
+        Assert::assertSame('web', ShieldUtilsAction::getFilamentAuthGuard());
+        Assert::assertSame('roles', ShieldUtilsAction::getResourceSlug());
+        Assert::assertTrue(ShieldUtilsAction::isResourceNavigationRegistered());
+        Assert::assertSame(['view', 'update'], ShieldUtilsAction::getGeneralResourcePermissionPrefixes());
+        Assert::assertSame('page', ShieldUtilsAction::getPagePermissionPrefix());
+        Assert::assertSame('widget', ShieldUtilsAction::getWidgetPermissionPrefix());
+        Assert::assertTrue(ShieldUtilsAction::isResourceEntityEnabled());
+        Assert::assertTrue(ShieldUtilsAction::isPageEntityEnabled());
+        Assert::assertTrue(ShieldUtilsAction::isWidgetEntityEnabled());
+        Assert::assertFalse(ShieldUtilsAction::isCustomPermissionEntityEnabled());
+        Assert::assertSame('policies_and_permissions', ShieldUtilsAction::getGeneratorOption());
+        Assert::assertSame(['FooResource'], ShieldUtilsAction::getExcludedResouces());
+        Assert::assertSame(['BarPage'], ShieldUtilsAction::getExcludedPages());
+        Assert::assertSame(['BazWidget'], ShieldUtilsAction::getExcludedWidgets());
         // `Utils` e `ShieldUtilsAction` duplicano la stessa logica: il contratto
         // che questo test protegge è che le due implementazioni non divergano.
         Assert::assertSame(
             ShieldUtilsAction::isAuthProviderConfigured(),
-            Utils::isAuthProviderConfigured()
+            ShieldUtilsAction::isAuthProviderConfigured()
         );
-        Assert::assertTrue(Utils::doesResourceHaveCustomPermissions($resourceClass));
-        Assert::assertSame(['custom-view', 'custom-update'], Utils::getResourcePermissionPrefixes($resourceClass));
-        Assert::assertSame(User::class, Utils::showModelPath($resourceClass));
+        Assert::assertTrue(ShieldUtilsAction::doesResourceHaveCustomPermissions($resourceClass));
+        Assert::assertSame(['custom-view', 'custom-update'], ShieldUtilsAction::getResourcePermissionPrefixes($resourceClass));
+        Assert::assertSame(User::class, ShieldUtilsAction::showModelPath($resourceClass));
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {
@@ -921,7 +920,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         $notification = new Notification;
         Assert::assertSame(
             Schema::connection($notification->getConnectionName())->hasTable($notification->getTable()),
-            NotificationSchema::isReadable()
+            app(IsNotificationSchemaReadableAction::class)->execute()
         );
 
         $user = new User;

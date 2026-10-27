@@ -1,3 +1,11 @@
+---
+title: "second brain module tests docs error"
+type: note
+status: draft
+updated: 2026-10-20
+tags: [docs, user]
+qmd: "second brain module tests docs error user"
+---
 ## Second Brain — Module Tests & Docs Convention
 
 **Concept:** `module-docs-tests-convention`

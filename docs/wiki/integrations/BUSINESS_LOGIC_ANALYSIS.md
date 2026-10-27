@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_VDNb7o
-=======
-status: draft
 qmd: "user module - business logic analysis user"
->>>>>>> .merge_file_TPp4y0
+status: superseded
+superseded_by: business_logic_analysis.md
 ---
 
 # User Module - Business Logic Analysis

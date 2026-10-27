@@ -8,25 +8,19 @@ qmd: "ottimizzazioni-super-dry-kiss ottimizzazioni super dry + kiss - modulo use
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_p9JrW0
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_6ZiO2n
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_p9JrW0
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_6ZiO2n
 ---
 
 # Ottimizzazioni Super DRY + KISS - Modulo User
@@ -381,11 +375,8 @@ class User extends Model
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_p9JrW0
 - [Documentazione Core](../../../../docs/core/)
-=======
 - [Documentazione Core](core)
->>>>>>> .merge_file_6ZiO2n
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)

@@ -8,25 +8,20 @@ qmd: "traits-hasteams-analysis-corrected analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_FmshXV
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_mpUmp4
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_FmshXV
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
->>>>>>> .merge_file_mpUmp4
+status: superseded
+superseded_by: traits-hasteams-analysis-corretta.md
 ---
 
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
@@ -558,9 +553,6 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
-<<<<<<< .merge_file_FmshXV
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
-=======
 - [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
->>>>>>> .merge_file_mpUmp4
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)

@@ -10,10 +10,7 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./has-teams.md"
   - "./has-tenants.md"
-<<<<<<< .merge_file_YOnFbU
-=======
 status: draft
->>>>>>> .merge_file_1Jn2QU
 ---
 
 # Trait HasAuthenticationLogTrait
@@ -21,12 +18,9 @@ status: draft
 ## Descrizione
 Il trait `HasAuthenticationLogTrait` fornisce funzionalità per il logging degli eventi di autenticazione. Permette di tracciare i tentativi di login, gli IP, i timestamp e altre informazioni relative all'autenticazione.
 
-<<<<<<< .merge_file_YOnFbU
-=======
 **Ownership DB:** tabella `authentication_logs` sulla connessione `user`
 (`fixcity_user`). Vedi [authentication-logs-connection-ownership](../bmad/authentication-logs-connection-ownership.md).
 
->>>>>>> .merge_file_1Jn2QU
 ## Proprietà
 - `$authentications`: Collection di log di autenticazione
 - `$login_at`: Timestamp dell'ultimo login

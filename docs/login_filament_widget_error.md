@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_ZCXas2
-=======
 ---
 title: "Risoluzione Errori LoginWidget Filament"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "risoluzione errori loginwidget filament user"
+status: superseded
+superseded_by: login-filament-widget-error.md
 ---
->>>>>>> .merge_file_1dKuNE
 # Risoluzione Errori LoginWidget Filament
 
 ## Introduzione

@@ -5,10 +5,7 @@ tags: [navigation, translations, filament]
 created: 2026-08-06
 updated: 2026-08-06
 qmd: "navigation-groups gruppi di navigazione modulo user filament"
-<<<<<<< .merge_file_egbXCd
-=======
 status: draft
->>>>>>> .merge_file_3yachY
 ---
 
 # Gruppi di navigazione del modulo User

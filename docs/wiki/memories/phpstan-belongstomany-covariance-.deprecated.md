@@ -8,6 +8,7 @@ tags: [phpstan, belongstomany, generics, covariance, hasteams, usercontract]
 qmd: "phpstan belongstomany covariance this declaringmodel hasteams membershipteams usercontract return type mismatch"
 related:
   - "./phpstan-belongstomany-covariance.md"
+status: draft
 ---
 
 # PHPStan: BelongsToMany covarianza — HasTeams / UserContract

@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_goJH3r
-=======
-status: draft
 qmd: "user module - product launch plan user"
->>>>>>> .merge_file_5z2crh
+status: superseded
+superseded_by: product-launch-plan-user-module.md
 ---
 
 # User Module - Product Launch Plan

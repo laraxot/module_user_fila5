@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vtPWcI
-=======
 ---
 title: "Actions Structure"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "actions structure user"
 ---
->>>>>>> .merge_file_Ri9uYc
 # Actions Structure 
 
 ## Directory Structure
@@ -82,13 +79,10 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< .merge_file_vtPWcI
-- [Path Conventions](./PATH_CONVENTIONS.md)
-- [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Module Structure](./MODULE_STRUCTURE.md)
-=======
 - [Path Conventions](./path_conventions.md)
 - [Directory Structure Checklist](./directory_structure_checklist.md)
 - [Module Structure](./module_structure.md)
->>>>>>> .merge_file_Ri9uYc
+- [Path Conventions](./path_conventions.md)
+- [Directory Structure Checklist](./directory_structure_checklist.md)
+- [Module Structure](./module_structure.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

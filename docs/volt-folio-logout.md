@@ -8,38 +8,29 @@ qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_yQT22l
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_ThtSQb
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_yQT22l
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_ThtSQb
 ---
 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-<<<<<<< .merge_file_yQT22l
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
-=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
->>>>>>> .merge_file_ThtSQb
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
@@ -221,14 +212,11 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-<<<<<<< .merge_file_yQT22l
-- [Convenzioni Path](./path-conventions-2.md)
-- [Analisi Logout Blade](./logout-blade-analysis-3.md)
-=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
->>>>>>> .merge_file_ThtSQb
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica

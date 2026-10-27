@@ -11,11 +11,8 @@ related:
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
-<<<<<<< .merge_file_qd3hzp
-=======
+  - "./README.md"
 status: draft
->>>>>>> .merge_file_wZsKNC
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente
@@ -177,7 +174,7 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
-- [README.md](../readme.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti
 

@@ -31,16 +31,22 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
         return 'getForgotPasswordFormSchema';
     }
 
+    /** Vero dopo un invio valido: la vista mostra l'esito neutro in `role="status"`. */
+    public bool $sent = false;
+
+    /**
+     * Risposta identica per indirizzo registrato, sconosciuto o richiesta frenata dal broker: chi non e' loggato non deve poter
+     * scoprire quali email hanno un account (DCP-290, FO-3-01). L'esito di `Password::sendResetLink` non si mostra mai.
+     */
     public function sendResetLink(): void
     {
+        /** @var array<string, mixed> $data */
         $data = $this->form->getState();
+        $email = is_string($data['email'] ?? null) ? $data['email'] : '';
 
-        $status = Password::sendResetLink(['email' => $data['email']]);
+        Password::sendResetLink(['email' => $email]);
 
-        if ($status === Password::RESET_LINK_SENT) {
-            session()->flash('status', __($status));
-        } else {
-            $this->addError('email', __($status));
-        }
+        $this->sent = true;
+        $this->form->fill();
     }
 }

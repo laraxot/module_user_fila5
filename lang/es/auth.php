@@ -131,4 +131,8 @@ return [
     'login-failed' => 'No se pudo iniciar sesión, inténtalo de nuevo.',
     'user-not-allowed' => 'Tu correo electrónico no está autorizado.',
     'registration-not-enabled' => 'No es posible registrar un nuevo usuario.',
+    // Proveedor OAuth sin credenciales (DCP-271). La guía solo aparece con APP_DEBUG; el público ve el mensaje amable.
+    'provider-not-configured' => 'El inicio de sesión con :provider no está disponible por ahora. Puedes iniciar sesión con correo y contraseña.',
+    'provider-setup-guide' => 'El inicio de sesión con :provider no está configurado: faltan :missing. Dónde crearlas: abre :console y crea credenciales OAuth para una aplicación web, registrando :redirect como URI de redirección autorizado. Dónde configurarlas: escribe los valores (:missing) en el archivo .env y ejecuta "php artisan config:clear", o usa la página del back office :admin. :hint',
+    'provider-setup-lan-hint' => 'Atención: :provider rechaza las direcciones IP y el http simple como URI de redirección (localhost es la excepción). Abre el sitio desde :localhost, por ejemplo con un túnel SSH, o usa un dominio con HTTPS.',
 ];

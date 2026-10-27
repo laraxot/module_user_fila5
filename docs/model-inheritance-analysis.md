@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_qlNYNB
-=======
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi ereditarietà modelli - modulo user user"
+status: superseded
+superseded_by: model-inheritance.md
 ---
->>>>>>> .merge_file_orfA6z
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

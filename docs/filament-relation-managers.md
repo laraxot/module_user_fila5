@@ -8,25 +8,19 @@ qmd: "filament-relation-managers filament relation managers nel modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_0gqCds
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_zysuAh
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_0gqCds
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_zysuAh
 ---
 
 # Filament Relation Managers nel Modulo User
@@ -128,8 +122,8 @@ use Filament\Tables\Columns\TextColumn;
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
 - [Documentazione Filament RelationManager](https://filamentphp.com/docs/tables#relation-managers)
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../xot/docs/translation-system.md)
-- [Best Practices Filament](../xot/docs/filament-best-practices.md)
+- [Sistema di Traduzione](../../Xot/docs/translation-system.md)
+- [Best Practices Filament](../../Xot/docs/filament-best-practices.md)
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers
@@ -304,5 +298,5 @@ class TeamsRelationManager extends XotBaseRelationManager
 
 - [Documentazione Filament RelationManager](https://filamentphp.com/docs/tables#relation-managers)
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../xot/docs/translation-system.md)
-- [Best Practices Filament](../xot/docs/filament-best-practices.md)
+- [Sistema di Traduzione](../../Xot/docs/translation-system.md)
+- [Best Practices Filament](../../Xot/docs/filament-best-practices.md)

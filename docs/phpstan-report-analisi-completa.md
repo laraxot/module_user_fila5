@@ -5,6 +5,7 @@ status: completed
 updated: 2026-10-20
 language: it
 tags: [phpstan, user, fixes, report]
+qmd: "report phpstan modulo user   analisi completa user"
 ---
 
 # Report PHPStan Modulo User — Analisi Completa

@@ -6,25 +6,19 @@ tags: [agents, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
 related:
-<<<<<<< .merge_file_h2e76C
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_6ZA9lm
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_h2e76C
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "massima confidenza agente user"
->>>>>>> .merge_file_6ZA9lm
 ---
 
 # Massima confidenza agente

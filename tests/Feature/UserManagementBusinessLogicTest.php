@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
-use function Safe\json_encode;
 use Illuminate\Database\QueryException;
-use Illuminate\Validation\ValidationException;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class UserManagementBusinessLogicTest extends TestCase
 {
-    use RefreshDatabase;
-
     /** @test */
     public function it_can_create_user_with_profile(): void
     {

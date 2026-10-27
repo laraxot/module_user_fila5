@@ -7,6 +7,7 @@ updated: 2026-06-30
 qmd: "User module Contracts ModelContract PassportHasApiTokensContract lang backup archive ponytail audit"
 related:
   - "./contracts-and-lang-backup-archival.md"
+status: draft
 ---
 
 # Archiviazione Contracts orfani e backup lang (ponytail audit)

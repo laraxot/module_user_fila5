@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_NusA4X
-=======
 status: draft
 qmd: "analisi metodi duplicati - super mucca edition user"
->>>>>>> .merge_file_biiCjm
 ---
 
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION

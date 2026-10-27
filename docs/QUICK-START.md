@@ -4,11 +4,8 @@ type: guide
 tags: [user, authentication, quick-start]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< .merge_file_iEaN16
-=======
 status: draft
 qmd: "user module   quick start user"
->>>>>>> .merge_file_JGxsCT
 ---
 
 # User Module — Quick Start

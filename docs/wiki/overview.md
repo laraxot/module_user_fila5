@@ -6,19 +6,16 @@ created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
   - "./agents.md"
-  - "./architecture.md"
+  - "./Architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"
   - "./index.md"
   - "./log.md"
   - "./socialite-architecture.md"
-<<<<<<< .merge_file_WF3NJN
-=======
 status: draft
 tags: [docs, user, wiki]
 qmd: "user wiki overview user"
->>>>>>> .merge_file_1UB5rI
 ---
 
 # User Wiki Overview

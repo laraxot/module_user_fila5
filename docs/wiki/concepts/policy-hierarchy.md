@@ -16,10 +16,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_URcvvN
-=======
 status: draft
->>>>>>> .merge_file_RiwtKq
 ---
 
 # Policy Hierarchy in Laraxot

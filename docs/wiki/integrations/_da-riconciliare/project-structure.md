@@ -5,15 +5,13 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
 related:
-<<<<<<< .merge_file_L13k2U
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "../../../2fa-guide.md"
@@ -21,8 +19,9 @@ related:
   - "../../../accessor-delegation-pattern.md"
   - "../../../actions-path-convention.md"
   - "../../../actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_N5uRFe
   - "./actions-path-convention.md"
+status: draft
+qmd: "project structure   module **user** user"
 ---
 
 # Project Structure — Module **User**
@@ -122,19 +121,16 @@ graph TD
 
 ## Riferimenti Globali
 
-<<<<<<< .merge_file_L13k2U
 - [Project Wiki Root](../../docs/wiki/)
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
->>>>>>> .merge_file_N5uRFe
 
 ## Setup Iniziale (per nuovi moduli)
 
@@ -161,12 +157,6 @@ git commit -m "docs: add wiki structure for User"
 
 <!-- Merged from PROJECT-STRUCTURE.md, which collided with this file on case-insensitive filesystems. -->
 
----
-title: "Project Structure — Module User"
-type: documentation
-created: 2026-05-11
-updated: 2026-05-11
-tags: [structure, architecture, module]
 ---
 
 # Project Structure — Module **User**
@@ -266,19 +256,16 @@ graph TD
 
 ## Riferimenti Globali
 
-<<<<<<< .merge_file_L13k2U
 - [Project Wiki Root](../../docs/wiki/)
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
->>>>>>> .merge_file_N5uRFe
 
 ## Setup Iniziale (per nuovi moduli)
 

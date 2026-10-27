@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_adS7A2
-=======
 ---
 title: "Comandi Console - Modulo User"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, console_commands]
 qmd: "comandi console - modulo user user"
 ---
->>>>>>> .merge_file_s1G330
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -217,10 +214,10 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console_commands_philosophy.md)
-- [User Models](../models/readme.md)
+- [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
-- [README.md](../readme.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti Recenti
 

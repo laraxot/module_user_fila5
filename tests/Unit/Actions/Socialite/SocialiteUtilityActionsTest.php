@@ -82,7 +82,8 @@ describe('Socialite utility actions', function (): void {
     });
 
     it('validates configured provider without throwing', function (): void {
-        config(['services.github' => ['client_id' => 'id']]);
+        // DCP-271: "configurato" = client_id, client_secret e redirect veri; il solo client_id non basta piu'.
+        config(['services.github' => ['client_id' => 'id', 'client_secret' => 'secret', 'redirect' => 'https://example.org/it/auth/login/github/callback']]);
 
         app(ValidateProviderAction::class)->execute('github');
     });
@@ -116,7 +117,7 @@ describe('Socialite utility actions', function (): void {
     });
 
     it('checks if provider is configured', function (): void {
-        config(['services.github' => ['client_id' => 'id']]);
+        config(['services.github' => ['client_id' => 'id', 'client_secret' => 'secret', 'redirect' => 'https://example.org/it/auth/login/github/callback']]);
 
         Assert::assertTrue(app(IsProviderConfiguredAction::class)->execute('github'));
         Assert::assertFalse(app(IsProviderConfiguredAction::class)->execute('pest-missing-socialite-provider'));

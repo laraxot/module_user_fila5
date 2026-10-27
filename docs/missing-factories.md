@@ -8,25 +8,19 @@ qmd: "missing-factories factory mancanti - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_Ozdwvw
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_1wzb2P
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Ozdwvw
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_1wzb2P
 ---
 
 # Factory Mancanti - Modulo User
@@ -164,9 +158,9 @@ status: draft
 
 ## Collegamenti
 
-- [README Modulo User](./readme.md)
+- [README Modulo User](./README.md)
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
-- [Models Documentation](./models/readme.md)
+- [Models Documentation](./models/README.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  

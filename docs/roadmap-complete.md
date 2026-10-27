@@ -8,25 +8,19 @@ qmd: "roadmap-complete 🗺️ roadmap completa - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_LN01zU
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_IgP1pZ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_LN01zU
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_IgP1pZ
 ---
 
 # 🗺️ ROADMAP COMPLETA - Modulo User
@@ -435,15 +429,12 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ## 🔗 Collegamenti Utili
 
 ### Documentazione Correlata
-<<<<<<< .merge_file_LN01zU
-- [Roadmap Progetto](../../../docs/roadmap_project.md)
-- [Modulo Fixcity](../../fixcity/docs/roadmap.md)
-- [Modulo Tenant](../../tenant/docs/readme.md)
-=======
 - [Roadmap Progetto](../../../../docs/roadmap_project.md)
 - [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
 - [Modulo Tenant](../../Tenant/docs/README.md)
->>>>>>> .merge_file_IgP1pZ
+- [Roadmap Progetto](../../../../docs/roadmap_project.md)
+- [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
+- [Modulo Tenant](../../Tenant/docs/README.md)
 - [Spatie Permissions](https://spatie.be/docs/laravel-permission)
 
 ### Best Practices

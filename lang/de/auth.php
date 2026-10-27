@@ -19,6 +19,10 @@ return [
     'login-failed' => 'Anmeldung fehlgeschlagen, versuchen Sie es erneut.',
     'user-not-allowed' => 'Ihre E-Mail ist nicht autorisiert.',
     'registration-not-enabled' => 'Neue Benutzerregistrierung ist nicht möglich.',
+    // OAuth-Anbieter ohne Zugangsdaten (DCP-271). Die Anleitung erscheint nur mit APP_DEBUG; die Öffentlichkeit sieht die freundliche Meldung.
+    'provider-not-configured' => 'Die Anmeldung mit :provider ist derzeit nicht verfügbar. Sie können sich mit E-Mail und Passwort anmelden.',
+    'provider-setup-guide' => 'Die Anmeldung mit :provider ist nicht konfiguriert: Es fehlen :missing. Wo erstellen: Öffnen Sie :console und erstellen Sie OAuth-Zugangsdaten für eine Webanwendung; tragen Sie :redirect als autorisierte Weiterleitungs-URI ein. Wo eintragen: Schreiben Sie die Werte (:missing) in die Datei .env und führen Sie "php artisan config:clear" aus, oder nutzen Sie die Backoffice-Seite :admin. :hint',
+    'provider-setup-lan-hint' => 'Hinweis: :provider lehnt IP-Adressen und einfaches http als Weiterleitungs-URI ab (Ausnahme: localhost). Öffnen Sie die Seite über :localhost, zum Beispiel per SSH-Tunnel, oder verwenden Sie eine Domain mit HTTPS.',
     'Sign in to your account' => 'Anmelden bei Ihrem Konto',
     'create a new account' => 'Neues Konto erstellen',
     'Or' => 'Oder',

@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_j1cao5
-=======
 status: draft
 qmd: "fullcalendar scheduler documentation - readme user"
->>>>>>> .merge_file_kTOL6o
 ---
 
 # FullCalendar Scheduler Documentation - README

@@ -8,25 +8,19 @@ qmd: "filament-namespace regole per i namespace filament"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_sdBwFg
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_CLNV7g
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_sdBwFg
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_CLNV7g
 ---
 
 # Regole per i Namespace Filament
@@ -71,13 +65,10 @@ class Dashboard extends Page
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/project_docs/readme.md)
 - [Best Practices Filament](../../cms/project_docs/best-practices/filament.md)
-<<<<<<< .merge_file_sdBwFg
-- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../xot/docs/readme.md)
-=======
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/docs/README.md)
->>>>>>> .merge_file_CLNV7g
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Regole Generali Xot](../../Xot/docs/README.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)
 # Regole per i Namespace Filament
 
@@ -143,11 +134,8 @@ class Dashboard extends Page
 ```
 
 ## Collegamenti
-<<<<<<< .merge_file_sdBwFg
-- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../xot/docs/readme.md)
-=======
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/docs/README.md)
->>>>>>> .merge_file_CLNV7g
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Regole Generali Xot](../../Xot/docs/README.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)

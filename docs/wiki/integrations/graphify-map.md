@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_am9YwY
-=======
 status: draft
 qmd: "user module   mappa graphify user"
->>>>>>> .merge_file_GDUnKJ
 ---
 
 # User Module — Mappa Graphify

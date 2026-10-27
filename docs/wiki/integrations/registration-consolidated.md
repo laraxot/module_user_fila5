@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_W4QwKr
-=======
 status: draft
 qmd: "registration   consolidated documentation user"
->>>>>>> .merge_file_QBICHx
 ---
 
 # registration — Consolidated Documentation
@@ -31,11 +28,8 @@ Consolidated from **8** individual files.
 
 ## registration-widget-3
 
-<<<<<<< .merge_file_W4QwKr
-*Consolidated from: `registration-widget-3.md`*
-=======
+*Consolidated from: `registration-widget.md`*
 *Consolidated from: `registration-widget-filament-resource.md`*
->>>>>>> .merge_file_QBICHx
 
 title: "Registration Widget 3"
 type: concept
@@ -46,22 +40,16 @@ qmd: "registration-widget-3 registration widget 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_W4QwKr
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_QBICHx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_W4QwKr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_QBICHx
   - "./actions-path-convention.md"
 ---
 
@@ -69,17 +57,14 @@ related:
 ---
 module: theme
 topic: registration_widget
-<<<<<<< .merge_file_W4QwKr
-canonical: ../../../Themes/docs/shared-components/registration-widget-3.md
+canonical: ../../../Themes/docs/shared-components/registration-widget.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-3.md
-=======
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget.md
 canonical: ../../../Themes/docs/shared-components/registration-widget-filament-resource.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-filament-resource.md
->>>>>>> .merge_file_QBICHx
 ---
 
 ## registration-widget-fileupload-fix
@@ -95,22 +80,16 @@ qmd: "registration-widget-fileupload-fix registrationwidget fileupload fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_W4QwKr
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_QBICHx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_W4QwKr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_QBICHx
   - "./actions-path-convention.md"
 ---
 
@@ -238,7 +217,7 @@ Per evitare simili problemi in futuro:
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../../../Xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 # RegistrationWidget FileUpload Fix
 
@@ -458,7 +437,7 @@ Per evitare simili problemi in futuro:
 ## Riferimenti
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../../../Xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 
 ---
@@ -471,22 +450,16 @@ module: theme
 topic: registration-widget-fileupload
 canonical: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
 related:
-<<<<<<< .merge_file_W4QwKr
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_QBICHx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_W4QwKr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_QBICHx
   - "./actions-path-convention.md"
 ---
 
@@ -507,22 +480,16 @@ qmd: "registration-widget-update aggiornamento relativo a doctorresource.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_W4QwKr
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_QBICHx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_W4QwKr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_QBICHx
   - "./actions-path-convention.md"
 ---
 
@@ -580,22 +547,16 @@ qmd: "registration-widget registration widget documentation"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_W4QwKr
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_QBICHx
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_W4QwKr
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_QBICHx
   - "./actions-path-convention.md"
 ---
 
@@ -1006,7 +967,7 @@ Per evitare simili problemi in futuro:
 ## Riferimenti
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../../../Xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 
 

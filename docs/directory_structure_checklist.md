@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_j5SPzi
-=======
-status: draft
 qmd: "directory_structure_checklist - user user"
->>>>>>> .merge_file_9KC4Hg
+status: superseded
+superseded_by: directory-structure-checklist-user.md
 ---
 
 # directory_structure_checklist - User

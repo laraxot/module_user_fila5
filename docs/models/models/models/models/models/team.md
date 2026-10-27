@@ -8,10 +8,8 @@ qmd: "team team"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_RgYDJ5
-=======
-status: draft
->>>>>>> .merge_file_t5AaDT
+status: superseded
+superseded_by: ../../../../models.tmp_rename/team.md
 ---
 
 # Team

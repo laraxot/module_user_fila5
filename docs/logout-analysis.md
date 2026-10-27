@@ -8,25 +8,19 @@ qmd: "logout-analysis analisi del file logout.blade.php"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_B7xY9Y
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_s6VGWZ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_B7xY9Y
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_s6VGWZ
 ---
 
 # Analisi del File Logout.blade.php
@@ -253,15 +247,13 @@ $logout = function () {
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-<<<<<<< .merge_file_B7xY9Y
-- [Documentazione Volt](./volt-blade-implementation-3.md)
+- [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
-- [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
+- [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
-=======
+- [Gestione Sessione](./session_management.md)
 - [Documentazione Volt](./volt-blade-implementation-introduzione.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
@@ -269,5 +261,4 @@ $logout = function () {
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
->>>>>>> .merge_file_s6VGWZ
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

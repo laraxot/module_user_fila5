@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_m0sGxi
-=======
 ---
 title: "User Module - Product Strategy Document"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, product]
 qmd: "user module - product strategy document user"
 ---
->>>>>>> .merge_file_z5H7XY
 # User Module - Product Strategy Document
 
 ## Document Information

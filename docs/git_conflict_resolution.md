@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_VSvkrb
-=======
 ---
 title: "git_conflict_resolution - User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "git_conflict_resolution - user user"
+status: superseded
+superseded_by: git-conflict-resolution-user.md
 ---
->>>>>>> .merge_file_nk4PhQ
 # git_conflict_resolution - User
 
 ## Overview

@@ -8,25 +8,19 @@ qmd: "navigation-translationses correzioni traduzioni navigation - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_b9JrKu
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_GtsfuJ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_b9JrKu
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_GtsfuJ
 ---
 
 # Correzioni Traduzioni Navigation - Modulo User
@@ -107,9 +101,9 @@ status: draft
 ## Collegamenti
 
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
-- [Documentazione Modulo User](readme.md)
+- [Documentazione Modulo User](README.md)
 
 ## Note Tecniche
 

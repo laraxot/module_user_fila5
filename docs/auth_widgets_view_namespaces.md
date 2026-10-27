@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_ju0nEl
-=======
 ---
 title: "Widget di Autenticazione: Namespace delle View"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "widget di autenticazione: namespace delle view user"
 ---
->>>>>>> .merge_file_jIdxCM
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**

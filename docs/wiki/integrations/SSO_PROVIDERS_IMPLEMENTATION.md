@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_aoSMQd
-=======
-status: draft
 qmd: "user module - sso providers implementation user"
->>>>>>> .merge_file_AEJ0k1
+status: superseded
+superseded_by: SSO-PROVIDERS-IMPLEMENTATION.md
 ---
 
 # User Module - SSO Providers Implementation

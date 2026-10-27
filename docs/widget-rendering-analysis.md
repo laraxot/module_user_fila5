@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_WcwdMM
-=======
 ---
 title: "Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi rendering loginwidget - docs.italia.it style user"
 ---
->>>>>>> .merge_file_TCYWSB
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
 
 ## 📋 Problema Analizzato

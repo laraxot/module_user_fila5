@@ -8,11 +8,8 @@ tags: [migrato-da-txt, user]
 converted_from: socialite.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_Gjnxnr
-=======
 status: draft
 qmd: "socialite   risorse esterne user"
->>>>>>> .merge_file_TBSVud
 ---
 
 # Socialite — risorse esterne

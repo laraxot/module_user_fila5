@@ -16,10 +16,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_mL6w9f
-=======
 status: draft
->>>>>>> .merge_file_lPhV8q
 ---
 
 # Profiles ownership boundary rule
@@ -42,9 +39,6 @@ Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' 
 
 ## Riferimenti
 
-<<<<<<< .merge_file_mL6w9f
-- [profiles uuid single migration rule](../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
-=======
 - [profiles uuid single migration rule](../../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
->>>>>>> .merge_file_lPhV8q
+- [profiles uuid single migration rule](../../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
 - [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)

@@ -15,10 +15,7 @@ related:
   - "./legacy-code-cleanup.md"
   - "./user-analytics.md"
   - "./user-traits.md"
-<<<<<<< .merge_file_cq9uZ1
-=======
 status: draft
->>>>>>> .merge_file_GmXHIf
 ---
 
 # Autenticazione

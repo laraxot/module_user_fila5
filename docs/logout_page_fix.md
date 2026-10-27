@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_RB7AKF
-=======
 ---
 title: "Correzione Logout Page nel Theme TwentyOne"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "correzione logout page nel theme twentyone user"
+status: superseded
+superseded_by: logout-page.md
 ---
->>>>>>> .merge_file_CrmKAs
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato

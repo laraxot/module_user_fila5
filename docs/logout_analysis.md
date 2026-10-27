@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VB1b3D
-=======
 ---
 title: "Analisi del File Logout.blade.php"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi del file logout.blade.php user"
 ---
->>>>>>> .merge_file_rU2GBZ
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -229,13 +226,10 @@ $logout = function () {
    - Test di UI per l'interfaccia
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_VB1b3D
-- [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
-- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
-=======
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
->>>>>>> .merge_file_rU2GBZ
+- [Documentazione Volt](./volt_blade_implementation.md)
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

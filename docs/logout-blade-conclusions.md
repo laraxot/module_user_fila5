@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_gSMCD1
-=======
 ---
 title: "Conclusioni e Raccomandazioni per logout.blade.php"
 type: note
@@ -8,24 +6,20 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "conclusioni e raccomandazioni per logout.blade.php user"
 ---
->>>>>>> .merge_file_TtwfTU
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_gSMCD1
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-=======
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Auth Pages Implementation](./auth_pages_implementation.md)
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Logout Blade Analysis](./logout_blade_analysis.md)
 - [Convenzioni Path](./path_conventions.md)
->>>>>>> .merge_file_TtwfTU
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Logout Blade Analysis](./logout_blade_analysis.md)
+- [Convenzioni Path](./path_conventions.md)
 
 ## Sintesi dell'Analisi
 
@@ -112,22 +106,16 @@ module: theme
 topic: logout-blade-conclusions
 canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
-<<<<<<< .merge_file_gSMCD1
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_TtwfTU
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_gSMCD1
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_TtwfTU
   - "./actions-path-convention.md"
 ---
 

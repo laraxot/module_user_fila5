@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_LTqHRm
-=======
 ---
 title: "translation key prototype"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "translation key prototype user"
 ---
->>>>>>> .merge_file_PAOMfp
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'

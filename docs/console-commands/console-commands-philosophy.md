@@ -11,11 +11,8 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands.md"
-  - "./readme.md"
-<<<<<<< .merge_file_bPSof0
-=======
+  - "./README.md"
 status: draft
->>>>>>> .merge_file_J6a8nC
 ---
 
 # Filosofia dei Comandi Console - Modulo User
@@ -459,7 +456,7 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)

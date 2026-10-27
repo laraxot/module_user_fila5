@@ -15,10 +15,8 @@ related:
   - "./legacy-code-cleanup.md"
   - "./user-analytics.md"
   - "./user-traits.md"
-<<<<<<< .merge_file_5qdVDs
-=======
-status: draft
->>>>>>> .merge_file_J0Xxrq
+status: superseded
+superseded_by: ../../../roadmap/features/gestione-teams.md
 ---
 
 # Gestione Teams

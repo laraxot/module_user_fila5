@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_4DNpfJ
-=======
 ---
 title: "User Module - Product Launch Plan"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product launch plan user"
+status: superseded
+superseded_by: product-launch-plan-user-module.md
 ---
->>>>>>> .merge_file_IxLe4M
 # User Module - Product Launch Plan
 
 **Module:** User  

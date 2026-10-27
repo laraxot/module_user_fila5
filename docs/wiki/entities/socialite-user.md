@@ -4,12 +4,9 @@ type: entity
 module: User
 updated: 2026-04-20
 related:
-<<<<<<< .merge_file_nayWHT
-=======
 status: draft
 tags: [docs, user, wiki]
 qmd: "socialiteuser user"
->>>>>>> .merge_file_85jND8
 ---
 
 # SocialiteUser
@@ -52,8 +49,5 @@ CreateSocialiteUserAction->execute($provider, $oauthUser, $user);
 ## Link
 
 - [Architettura Socialite](../concepts/socialite-architecture.md)
-<<<<<<< .merge_file_nayWHT
-- [Migration](../../../../../../database/migrations/2023_01_01_000003_create_socialite_user_table.php)
-=======
 - [Migration](../../../database/migrations/2023_01_01_000003_create_socialite_user_table.php)
->>>>>>> .merge_file_85jND8
+- [Migration](../../../database/migrations/2023_01_01_000003_create_socialite_user_table.php)

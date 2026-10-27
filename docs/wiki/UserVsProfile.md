@@ -2,15 +2,13 @@
 module: User
 concept: User vs Profile
 last_updated: 2026-04-15
-<<<<<<< .merge_file_tlxeqr
-=======
 title: "User vs Profile Models"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "user vs profile models user"
->>>>>>> .merge_file_GYdhEX
+status: superseded
+superseded_by: uservsprofile.md
 ---
 
 # User vs Profile Models

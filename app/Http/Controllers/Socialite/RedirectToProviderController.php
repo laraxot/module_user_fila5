@@ -11,6 +11,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Laravel\Socialite\Facades\Socialite;
+use Modules\User\Actions\Socialite\ProcessCallbackSession;
 use Modules\User\Actions\Socialite\ValidateProviderAction;
 
 class RedirectToProviderController extends Controller
@@ -27,8 +28,8 @@ class RedirectToProviderController extends Controller
         app()->setLocale($lang);
 
         // Il redirect_uri verso Google e' unico (GOOGLE_REDIRECT_URI = /it/...): senza questo, chi parte da /en/
-        // rientra dal callback in italiano. ProcessCallbackController la ripristina.
-        session()->put(ProcessCallbackController::SESSION_LANG_KEY, $lang);
+        // rientra dal callback in italiano. ProcessCallbackAction la ripristina.
+        session()->put(ProcessCallbackSession::KEY, $lang);
 
         app(ValidateProviderAction::class)->execute($provider);
 

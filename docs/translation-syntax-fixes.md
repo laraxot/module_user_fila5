@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_Cv6fP1
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: concept
 tags: [translation, syntax, fixes]
@@ -9,22 +8,15 @@ qmd: "translation-syntax-fixes correzioni errori di sintassi nei file di traduzi
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
-=======
-module: theme
-topic: translation-syntax-fixes-2025
-canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_XV0WoJ
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Cv6fP1
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+status: draft
 ---
 
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
@@ -155,7 +147,6 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Data**: 2025-01-15
 **Versione**: 1.0
 **Stato**: Completato
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -168,4 +159,3 @@ qmd: "translation syntax fixes 2025 user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md
->>>>>>> .merge_file_XV0WoJ

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
+
 /**
  * Role model: specifica duplicata e non allineata al prodotto.
  *

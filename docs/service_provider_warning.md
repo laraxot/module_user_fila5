@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_lXXm5N
-=======
-status: draft
 qmd: "service_provider_warning - user user"
->>>>>>> .merge_file_OJioSg
+status: superseded
+superseded_by: service-provider-warning-user.md
 ---
 
 # service_provider_warning - User

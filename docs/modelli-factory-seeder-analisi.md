@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_QgaRpf
-=======
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo User"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi modelli, factory e seeder - modulo user user"
 ---
->>>>>>> .merge_file_0ca5i4
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -204,22 +201,16 @@ module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
-<<<<<<< .merge_file_QgaRpf
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_0ca5i4
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_QgaRpf
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_0ca5i4
   - "./actions-path-convention.md"
 ---
 

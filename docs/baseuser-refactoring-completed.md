@@ -8,25 +8,19 @@ qmd: "baseuser-refactoring-completed baseuser refactoring - completato"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_GcrtMw
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_qpEyXD
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_GcrtMw
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_qpEyXD
 ---
 
 # BaseUser Refactoring - Completato
@@ -264,23 +258,17 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-<<<<<<< .merge_file_GcrtMw
-- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
-=======
+- [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
->>>>>>> .merge_file_qpEyXD
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./readme.md)
+- [User Module README](./README.md)
 
 ### Root Progetto
-<<<<<<< .merge_file_GcrtMw
-- [Code Quality](../../../docs/code-quality-analysis.md)
-=======
 - [Code Quality](code-quality-analysis.md)
->>>>>>> .merge_file_qpEyXD
+- [Code Quality](code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation

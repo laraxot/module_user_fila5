@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_XPfXVU
-=======
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: note
@@ -8,18 +6,14 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione corretta del logout con volt e folio user"
 ---
->>>>>>> .merge_file_BAlbfQ
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_XPfXVU
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
-=======
 - [Convenzioni Path](./path_conventions.md)
 - [Analisi Logout Blade](./logout_blade_analysis.md)
->>>>>>> .merge_file_BAlbfQ
+- [Convenzioni Path](./path_conventions.md)
+- [Analisi Logout Blade](./logout_blade_analysis.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Panoramica

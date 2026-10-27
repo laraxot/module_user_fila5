@@ -1,4 +1,11 @@
-<<<<<<< .merge_file_x4diQr
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "implementazione corretta di logout.blade.php user"
+---
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -8,10 +15,7 @@
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
-=======
 ---
-title: "Implementazione Corretta di logout.blade.php"
-type: note
 status: draft
 updated: 2026-10-13
 tags: [docs, user]
@@ -26,7 +30,6 @@ qmd: "implementazione corretta di logout.blade.php user"
 - [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)
->>>>>>> .merge_file_CweBBG
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

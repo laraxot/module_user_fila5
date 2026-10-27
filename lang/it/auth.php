@@ -66,6 +66,10 @@ return [
         'context' => 'registration_form',
         'placeholder' => '',
     ],
+    // Provider OAuth senza credenziali (DCP-271). La guida si mostra solo con APP_DEBUG; al pubblico il messaggio gentile.
+    'provider-not-configured' => 'L\'accesso con :provider non è disponibile al momento. Puoi accedere con email e password.',
+    'provider-setup-guide' => 'Accesso con :provider non configurato: mancano :missing. Dove crearle: apri :console e crea le credenziali OAuth per un\'applicazione web, registrando :redirect come URI di reindirizzamento autorizzato. Dove impostarle: scrivi i valori (:missing) nel file .env e lancia «php artisan config:clear», oppure usa la pagina del back office :admin. :hint',
+    'provider-setup-lan-hint' => 'Attenzione: :provider rifiuta gli indirizzi IP e l\'http come URI di reindirizzamento (fa eccezione localhost). Apri il sito da :localhost, per esempio con un tunnel SSH, oppure usa un dominio con HTTPS.',
     'Sign in to your account' => [
         'key' => 'user::auth.sign-in-to-account',
         'text' => 'Accedi al tuo account',

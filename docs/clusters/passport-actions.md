@@ -9,10 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./socialite.md"
-<<<<<<< .merge_file_TX4tgB
-=======
 status: draft
->>>>>>> .merge_file_u0uvKR
 ---
 
 # Passport Administrative Actions in Filament

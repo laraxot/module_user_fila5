@@ -3,20 +3,15 @@ description:
 globs:
 alwaysApply: false
 related:
-<<<<<<< .merge_file_QXdqOw
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_mE9h7Q
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_QXdqOw
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -26,7 +21,6 @@ status: draft
 updated: 2026-10-08
 tags: [docs, user]
 qmd: "linee guida per l'uso di spatie queueable action user"
->>>>>>> .merge_file_mE9h7Q
 ---
 # Linee guida per l'uso di Spatie Queueable Action
 

@@ -16,10 +16,7 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
-<<<<<<< .merge_file_nX5eqb
-=======
 status: draft
->>>>>>> .merge_file_Y2bdfb
 ---
 
 # gdpr

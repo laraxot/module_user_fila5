@@ -8,25 +8,19 @@ qmd: "service-provider-architecture service provider architecture - module patte
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_y815y7
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_ASRuaZ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_y815y7
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_ASRuaZ
 ---
 
 # Service Provider Architecture - Module Pattern
@@ -399,7 +393,7 @@ test('user service provider only configures, not registers dependencies', functi
 ### Documentazione Correlata
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
-- [README.md](./readme.md) - Overview modulo
+- [README.md](./README.md) - Overview modulo
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)

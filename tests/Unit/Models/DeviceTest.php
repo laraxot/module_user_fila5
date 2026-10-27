@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Device;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class DeviceTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_can_create_device_with_minimal_data(): void
     {
         $device = Device::factory()->create([
@@ -302,7 +301,7 @@ class DeviceTest extends TestCase
 
     public function test_device_has_fillable_attributes(): void
     {
-        $device = new Device();
+        $device = new Device;
 
         $expectedFillable = [
             'id',
@@ -326,7 +325,7 @@ class DeviceTest extends TestCase
 
     public function test_device_has_casts(): void
     {
-        $device = new Device();
+        $device = new Device;
 
         $expectedCasts = [
             'id' => 'string',

@@ -16,10 +16,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_VMQwid
-=======
 status: draft
->>>>>>> .merge_file_8sBRxO
 ---
 
 # notifications — modello runtime User
@@ -36,11 +33,8 @@ status: draft
 **Vietato** `create_notifications_table` in User. Owner = **Notify** (`XotBaseMigration`).
 
 - Regola: [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
-<<<<<<< .merge_file_VMQwid
-- Canon Notify: [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
-=======
 - Canon Notify: [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
->>>>>>> .merge_file_8sBRxO
+- Canon Notify: [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
 
 ## Guard schema FO
 
@@ -55,10 +49,7 @@ Usare quando il DB legacy potrebbe non aver ancora migrato — evita 500 su `unr
 ## Collegamenti
 
 - [notifications-folio-page.md](notifications-folio-page.md)
-<<<<<<< .merge_file_VMQwid
-- [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
-- [fo-folio-named-routes-header.md](../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md)
-=======
 - [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
 - [fo-folio-named-routes-header.md](../../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md)
->>>>>>> .merge_file_8sBRxO
+- [notifications-database-contract](../../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
+- [fo-folio-named-routes-header.md](../../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md)

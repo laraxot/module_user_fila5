@@ -11,14 +11,11 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-<<<<<<< .merge_file_edQ9D2
-=======
 title: "header auth flow"
 status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "header auth flow user"
->>>>>>> .merge_file_sbBrnV
 ---
 
 ## Rule Overview

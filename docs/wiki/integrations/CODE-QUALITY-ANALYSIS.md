@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_wtSuqG
-=======
-status: draft
 qmd: "code quality analysis - user module user"
->>>>>>> .merge_file_Vhzsg4
+status: superseded
+superseded_by: ../../code-quality-analysis.md
 ---
 
 # Code Quality Analysis - User Module

@@ -8,25 +8,19 @@ qmd: "migration-teams-owner-id-violation analisi violazione filosofia laraxot - 
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_Le8QF4
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_75OAAu
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_Le8QF4
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_75OAAu
 ---
 
 # Analisi Violazione Filosofia Laraxot - Migration Teams
@@ -107,7 +101,7 @@ Rimuovere il file `2025_05_16_221811_add_owner_id_to_teams_table.php` dopo aver 
 
 - [Filosofia Migrazioni Laraxot](./laraxot-migration-philosophy.md)
 - [Principi Migrazioni UUID e Polimorfismo](../../geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
-- [Regole Aggiornamento Migrazioni](../../xot/docs/migration-update-rules.md)
+- [Regole Aggiornamento Migrazioni](../../Xot/docs/migration-update-rules.md)
 
 ## Checklist Correzione
 

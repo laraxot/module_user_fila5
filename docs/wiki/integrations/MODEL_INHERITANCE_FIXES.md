@@ -5,11 +5,9 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_02yKv1
-=======
-status: draft
 qmd: "correzioni ereditarietà modelli - modulo user user"
->>>>>>> .merge_file_HGw1FD
+status: superseded
+superseded_by: model_inheritance_fixes.md
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -203,12 +201,9 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-<<<<<<< .merge_file_02yKv1
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
->>>>>>> .merge_file_HGw1FD

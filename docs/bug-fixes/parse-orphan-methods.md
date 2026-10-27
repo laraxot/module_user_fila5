@@ -10,20 +10,17 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./make-filament-user-crash-loop.md"
   - "./parse-error-orphan-methods-.md"
-<<<<<<< .merge_file_2CY3ln
-  - "./parse-error-orphan-methods-1-1.md"
-  - "./parse-error-orphan-methods-1.md"
-  - "./parse-error-orphan-methods-2.md"
-  - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
-=======
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-documentation-themes.md"
   - "./parse-error-orphan-methods-stato-rinominato.md"
   - "./parse-error-orphan-methods.md"
 status: draft
->>>>>>> .merge_file_iowNPy
 ---
 
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe

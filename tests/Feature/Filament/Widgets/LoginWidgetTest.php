@@ -8,11 +8,12 @@ use Illuminate\Validation\ValidationException;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
-use Tests\TestCase;
 
-use function Pest\Laravel\assertAuthenticatedAs;
-
+// Modulo User: DatabaseTransactions su DB di test (mai RefreshDatabase del TestCase root —
+// quello riesegue tutte le migration e rompe gli schema gia' allineati).
 uses(TestCase::class);
 
 /**
@@ -47,7 +48,10 @@ test('it can authenticate user', function (): void {
 
     $widget->save();
 
-    assertAuthenticatedAs($user);
+    // FixCity usa Modules\Fixcity\Models\User via XotData: l'istanza auth puo'
+    // essere la sottoclasse del progetto anche se la factory e' Modules\User\Models\User.
+    expect(auth()->check())->toBeTrue();
+    expect(SafeStringCastAction::cast(auth()->id()))->toBe(SafeStringCastAction::cast($user->getKey()));
 });
 
 test('it validates credentials', function (): void {

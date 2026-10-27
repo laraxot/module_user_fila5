@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_pN4SzE
-=======
 ---
 title: "MCP Server Consigliati per il Modulo User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "mcp server consigliati per il modulo user user"
+status: superseded
+superseded_by: mcp-server-recommended.md
 ---
->>>>>>> .merge_file_Td933L
 # MCP Server Consigliati per il Modulo User
 
 ## Scopo del Modulo

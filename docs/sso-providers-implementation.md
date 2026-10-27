@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_KpDltM
-=======
 ---
 title: "User Module - SSO Providers Implementation"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - sso providers implementation user"
 ---
->>>>>>> .merge_file_82EP1G
 # User Module - SSO Providers Implementation
 
 ## Overview

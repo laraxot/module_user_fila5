@@ -8,25 +8,19 @@ qmd: "structure modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_sXoJsu
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_TgyNf6
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_sXoJsu
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_TgyNf6
 ---
 
 # Modulo User
@@ -626,28 +620,15 @@ tests_old
 - [Report PHPStan](/docs/phpstan/)
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< .merge_file_sXoJsu
-* [structure.md](../../../gdpr/docs/structure.md)
-* [structure.md](../../../notify/docs/structure.md)
-=======
 * [structure.md](../../Gdpr/docs/structure.md)
 * [structure.md](../../Notify/docs/structure.md)
->>>>>>> .merge_file_TgyNf6
-* [structure.md](../../../xot/docs/structure.md)
+* [structure.md](../../Gdpr/docs/structure.md)
+* [structure.md](../../Notify/docs/structure.md)
+* [structure.md](../../Xot/docs/structure.md)
 * [structure.md](../../../xot/docs/base/structure.md)
-* [structure.md](../../../xot/docs/config/structure.md)
+* [structure.md](../../Xot/docs/config/structure.md)
 * [structure.md](../../../user/docs/structure.md)
-* [structure.md](../../../ui/docs/structure.md)
-<<<<<<< .merge_file_sXoJsu
-* [structure.md](../../../lang/docs/structure.md)
-* [structure.md](../../../job/docs/structure.md)
-* [structure.md](../../../media/docs/structure.md)
-* [structure.md](../../../tenant/docs/structure.md)
-* [structure.md](../../../activity/docs/structure.md)
-* [structure.md](../../../cms/docs/structure.md)
-* [structure.md](../../../cms/docs/themes/structure.md)
-* [structure.md](../../../cms/docs/components/structure.md)
-=======
+* [structure.md](../../UI/docs/structure.md)
 * [structure.md](../../Lang/docs/structure.md)
 * [structure.md](../../Job/docs/structure.md)
 * [structure.md](../../Media/docs/structure.md)
@@ -656,7 +637,14 @@ tests_old
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../Cms/docs/themes/structure.md)
 * [structure.md](../../Cms/docs/components/structure.md)
->>>>>>> .merge_file_TgyNf6
+* [structure.md](../../Lang/docs/structure.md)
+* [structure.md](../../Job/docs/structure.md)
+* [structure.md](../../Media/docs/structure.md)
+* [structure.md](../../Tenant/docs/structure.md)
+* [structure.md](../../Activity/docs/structure.md)
+* [structure.md](../../../cms/docs/structure.md)
+* [structure.md](../../Cms/docs/themes/structure.md)
+* [structure.md](../../Cms/docs/components/structure.md)
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
 * [structure.md](bashscripts/project_docs/structure.md)

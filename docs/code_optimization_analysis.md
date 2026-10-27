@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_iWHW0C
-=======
 ---
 title: "user module code and documentation optimization analysis"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module code and documentation optimization analysis user"
 ---
->>>>>>> .merge_file_APFZsj
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis

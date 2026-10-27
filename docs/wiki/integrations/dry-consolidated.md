@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "dry   consolidated documentation user"
 ---
 
 # dry — Consolidated Documentation
@@ -42,22 +44,16 @@ qmd: "dry-kiss-018b09 dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -174,15 +170,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-[date].md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-[date].md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 
 ---
@@ -204,22 +197,16 @@ qmd: "dry-kiss-analysis-2025-10-15.deprecated dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -336,15 +323,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
 ---
@@ -367,22 +351,16 @@ qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -499,15 +477,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 
@@ -518,11 +493,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## dry-kiss-analysis-3
 
-<<<<<<< .merge_file_vk0p3b
-*Consolidated from: `dry-kiss-analysis-3.md`*
-=======
 *Consolidated from: `dry-kiss-analysis.md`*
->>>>>>> .merge_file_4W3VdA
 
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -533,22 +504,16 @@ qmd: "dry-kiss-analysis-3 dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -665,15 +630,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
 ---
@@ -685,11 +647,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## dry-kiss-analysis-4
 
-<<<<<<< .merge_file_vk0p3b
-*Consolidated from: `dry-kiss-analysis-4.md`*
-=======
+*Consolidated from: `dry-kiss-analysis.md`*
 *Consolidated from: `dry-kiss-analysis-stato-rinominato.md`*
->>>>>>> .merge_file_4W3VdA
 
 title: "dry-kiss-analysis-2025-10-15"
 type: concept
@@ -699,30 +658,24 @@ updated: 2026-07-14
 qmd: "dry-kiss-analysis-2025-10-15 deprecated"
 status: deprecated
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [dry-kiss-analysis-4.md](dry-kiss-analysis-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
+> Questo file è stato rinominato in [dry-kiss-analysis-4.md](dry-kiss-analysis.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 > Questo file è stato rinominato in [dry-kiss-analysis-4.md](../../dry-kiss-analysis-stato-rinominato.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> .merge_file_4W3VdA
 
 ---
 
@@ -739,22 +692,16 @@ qmd: "dry-kiss-analysis-conflict-018b09 dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -871,15 +818,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 
 ---
@@ -901,22 +845,16 @@ qmd: "dry-kiss-analysis-conflict 🐄✨ dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -970,30 +908,24 @@ updated: 2026-07-14
 qmd: "dry-kiss-analysis-2025-10-15.deprecated deprecated"
 status: deprecated
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 
 > Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 > Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](../../dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> .merge_file_4W3VdA
 
 ---
 
@@ -1010,22 +942,16 @@ qmd: "dry-kiss-analysis dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -1142,15 +1068,12 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_vk0p3b
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
-=======
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](../../core/architecture.md)
->>>>>>> .merge_file_4W3VdA
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 
 ---
@@ -1173,22 +1096,16 @@ qmd: "dry-kiss-improvements user module - dry + kiss improvements"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -1563,22 +1480,16 @@ qmd: "dry-kiss 🐄✨ dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -1633,22 +1544,16 @@ qmd: "dry-violation-fix correzione violazione dry: safestringcast"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -1716,13 +1621,10 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-<<<<<<< .merge_file_vk0p3b
 - [Documentazione Actions](../../xot/docs/actions.md)
 - [Documentazione Actions](../../xot/project_docs/actions.md)
-=======
 - [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
->>>>>>> .merge_file_4W3VdA
 *Data correzione: 2025-01-06*
 *Stato: ✅ Completato*
 
@@ -1741,22 +1643,16 @@ qmd: "dry-violation correzione violazione dry: safestringcast"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< .merge_file_vk0p3b
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_4W3VdA
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_vk0p3b
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_4W3VdA
   - "./actions-path-convention.md"
 ---
 
@@ -1824,13 +1720,10 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-<<<<<<< .merge_file_vk0p3b
 - [Documentazione Actions](../../xot/docs/actions.md)
 - [Documentazione Actions](../../xot/project_docs/actions.md)
-=======
 - [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
->>>>>>> .merge_file_4W3VdA
 *Data correzione: [DATE]*
 *Stato: ✅ Completato*
 

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VQlvDh
-=======
 ---
 title: "Profile UUID Philosophy - Zen Approach"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, database]
 qmd: "profile uuid philosophy - zen approach user"
 ---
->>>>>>> .merge_file_OsbCMI
 # Profile UUID Philosophy - Zen Approach
 
 ## Il Problema (What)
@@ -294,16 +291,14 @@ Se sei un altro agente AI che legge questo:
 ---
 module: theme
 topic: profile-uuid-philosophy
-<<<<<<< .merge_file_VQlvDh
-canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
+canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy.md
 related:
-  - "./migration-safety-rules-1.md"
   - "./migration-safety-rules.md"
-  - "./profile-uuid-philosophy-1.md"
+  - "./migration-safety-rules.md"
+  - "./profile-uuid-philosophy.md"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
-=======
+See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy.md
 canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-zen-approach.md
 related:
   - "./migration-safety-rules-never-destroy-data.md"
@@ -312,4 +307,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-zen-approach.md
->>>>>>> .merge_file_OsbCMI

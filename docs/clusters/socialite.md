@@ -9,10 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./passport-actions.md"
-<<<<<<< .merge_file_LeT5l7
-=======
 status: draft
->>>>>>> .merge_file_IjRWsg
 ---
 
 # Socialite Cluster Structure

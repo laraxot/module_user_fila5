@@ -9,10 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./user-module-quality.md"
-<<<<<<< .merge_file_x13Th9
-=======
 status: draft
->>>>>>> .merge_file_eSM67I
 ---
 
 # Analisi Qualità - Modulo User

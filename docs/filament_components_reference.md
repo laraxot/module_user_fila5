@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_djTQqD
-=======
 ---
 title: "Riferimento Componenti Filament Verificati"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "riferimento componenti filament verificati user"
+status: superseded
+superseded_by: filament-components-reference.md
 ---
->>>>>>> .merge_file_hN3x2f
 # Riferimento Componenti Filament Verificati
 
 ## ⚠️ REGOLA CRITICA: Verificare SEMPRE l'esistenza dei componenti

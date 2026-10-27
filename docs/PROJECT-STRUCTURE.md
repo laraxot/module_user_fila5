@@ -4,11 +4,9 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
-<<<<<<< .merge_file_o3BpDR
-=======
-status: draft
 qmd: "project structure   module **user** user"
->>>>>>> .merge_file_mo8C2u
+status: superseded
+superseded_by: project-structure.md
 ---
 
 # Project Structure — Module **User**
@@ -109,17 +107,14 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-<<<<<<< .merge_file_o3BpDR
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-=======
 - [Global Rules](wiki/rules)
 - [Global Skills](wiki/skills)
 - [Global Commands](wiki/commands)
 - [Global Memories](wiki/memories)
->>>>>>> .merge_file_mo8C2u
 
 ## Setup Iniziale (per nuovi moduli)
 

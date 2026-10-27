@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_vn0yqE
-=======
 ---
 title: "User Module - Sprint Planning"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - sprint planning user"
+status: superseded
+superseded_by: sprint-planning-user-module.md
 ---
->>>>>>> .merge_file_j7sjGo
 # User Module - Sprint Planning
 
 **Module:** User  

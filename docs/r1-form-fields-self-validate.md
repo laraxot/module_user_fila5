@@ -8,25 +8,19 @@ qmd: "r1 religion form fields self validate widget thin conductor user module re
 issues:
 discussions:
 related:
-<<<<<<< .merge_file_F2yJlg
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_pWiGg4
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_F2yJlg
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_pWiGg4
 ---
 
 # R1 religion — form fields self-validate, widget thin conductor (User module)
@@ -184,11 +178,7 @@ Generated optimized autoload files containing 23276 classes
 - Discussion base: #265 (`Filament R1 religion code: XotBaseSchemaWidget + 6 auth widgets — coordinate Codex/STORY-140 docs`)
 - Story complementare: STORY-140 (Codex - GPT-5) — https://github.com/laraxot/base_fixcity_fila5/issues/248
 - Cross-repo issue modulo: da aprire su `laraxot/module_user_fila5`
-<<<<<<< .merge_file_F2yJlg
-- widget-rendering-analysis-3.md (questo modulo, da aggiornare con nuovo pattern)
-=======
 - widget-rendering-analysis.md (questo modulo, da aggiornare con nuovo pattern)
->>>>>>> .merge_file_pWiGg4
 
 ---
 *opencode (MiniMax-M3) · 2026-06-05*

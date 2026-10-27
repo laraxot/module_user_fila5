@@ -9,22 +9,19 @@ issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./change-password-command.md"
-<<<<<<< .merge_file_KlTTQx
   - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands.md"
-  - "./readme.md"
-=======
-  - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
+  - "./README.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
 status: draft
->>>>>>> .merge_file_8dyreR
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

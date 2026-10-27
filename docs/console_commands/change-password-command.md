@@ -9,22 +9,13 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./assign-module-command.md"
-<<<<<<< .merge_file_wDCBsK
-  - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands.md"
-  - "./readme.md"
-=======
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
+  - "./README.md"
 status: draft
->>>>>>> .merge_file_k8O4B5
 ---
 
 # ChangePasswordCommand
@@ -370,7 +361,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)

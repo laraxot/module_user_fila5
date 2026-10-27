@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Arr;
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
 
 /**
  * Regressione /{en,de,es}/auth/{login,register}: testo italiano di fallback o etichette grezze
@@ -21,6 +24,9 @@ $pageKeys = [
     'login.no_account', 'login.register_now', 'login.forgot_password_text', 'login.reset_it',
     'login.actions.login.label', 'login.actions.login.error',
     'registration.already_registered', 'registration.actions.register.label',
+    // DCP-377 A-04: il tooltip dell'occhio sul campo password mostrava il nome della chiave in inglese
+    'user_form.actions.showPassword.label', 'user_form.actions.showPassword.tooltip',
+    'user_form.actions.hidePassword.label', 'user_form.actions.hidePassword.tooltip',
 ];
 
 $cases = [];

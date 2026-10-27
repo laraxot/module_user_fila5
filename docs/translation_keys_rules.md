@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_J33MMZ
-=======
 ---
 title: "Regole per le Chiavi di Traduzione"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "regole per le chiavi di traduzione user"
 ---
->>>>>>> .merge_file_3P7kTG
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -123,12 +120,9 @@ return [
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_J33MMZ
-- [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
-- [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](CODE_CONVENTIONS.md)
-=======
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
->>>>>>> .merge_file_3P7kTG
+- [Best Practices per le Traduzioni](translation_best_practices.md)
+- [Struttura del Modulo](module_structure.md)
+- [Convenzioni di Codice](code_conventions.md)

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_SpG9eH
-=======
 ---
 title: "Analisi del File logout.blade.php"
 type: note
@@ -8,24 +6,20 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi del file logout.blade.php user"
 ---
->>>>>>> .merge_file_f1uZ6V
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_SpG9eH
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
-=======
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Auth Pages Implementation](./auth_pages_implementation.md)
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
->>>>>>> .merge_file_f1uZ6V
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
 
 ## Panoramica
 
@@ -464,22 +458,16 @@ module: theme
 topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
-<<<<<<< .merge_file_SpG9eH
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_f1uZ6V
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_SpG9eH
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_f1uZ6V
   - "./actions-path-convention.md"
 ---
 

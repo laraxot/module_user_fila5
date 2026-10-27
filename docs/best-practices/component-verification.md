@@ -16,10 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./dependency-rules.md"
   - "./dependency.md"
-<<<<<<< .merge_file_Q4Dpm4
-=======
 status: draft
->>>>>>> .merge_file_PjYTuK
 ---
 
 # Regole per la Verifica dei Componenti Blade
@@ -165,8 +162,5 @@ Prima di usare qualsiasi componente:
 
 - [Documentazione Filament Ufficiale](https://filamentphp.com/docs)
 - [Laravel Blade Components](https://laravel.com/docs/blade#components)
-<<<<<<< .merge_file_Q4Dpm4
-- [Componenti UI del Progetto](../../../Themes/Sixteen/resources/views/components/ui/)
-=======
 - [Componenti UI del Progetto](../../../../Themes/Sixteen/resources/views/components/ui)
->>>>>>> .merge_file_PjYTuK
+- [Componenti UI del Progetto](../../../../Themes/Sixteen/resources/views/components/ui)

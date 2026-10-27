@@ -52,7 +52,11 @@ final class RolesSeeder extends Seeder
     private function displayResults(array $roles): void
     {
         $command = $this->getConsoleCommand();
-        $command?->info('Roles seeded successfully:');
+        if ($command === null) {
+            return;
+        }
+
+        $command->info('Roles seeded successfully:');
         $rows = collect($roles)
             ->map(static fn (Role $role, int $index) => [
                 $index + 1,
@@ -60,7 +64,7 @@ final class RolesSeeder extends Seeder
                 $role->guard_name,
             ])
             ->toArray();
-        $command?->table(self::$OUTPUT_TABLE_HEADERS, $rows);
+        $command->table(self::$OUTPUT_TABLE_HEADERS, $rows);
     }
 
     private function getConsoleCommand(): ?Command

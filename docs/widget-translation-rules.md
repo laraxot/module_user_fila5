@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_1ZzKUC
-=======
 ---
 title: "Widget Translation Rules - SaluteOra Project"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "widget translation rules - saluteora project user"
 ---
->>>>>>> .merge_file_WVzYS2
 # Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
@@ -364,22 +361,16 @@ module: theme
 topic: widget-translation-rules
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
 related:
-<<<<<<< .merge_file_1ZzKUC
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_WVzYS2
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_1ZzKUC
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_WVzYS2
   - "./actions-path-convention.md"
 ---
 

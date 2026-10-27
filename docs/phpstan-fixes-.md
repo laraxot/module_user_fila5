@@ -8,25 +8,19 @@ qmd: "phpstan-fixes- user module - phpstan fixes session 2025-10-01"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_DO1qWl
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_657XEB
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_DO1qWl
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft
->>>>>>> .merge_file_657XEB
 ---
 
 # User Module - PHPStan Fixes Session 2025-10-01
@@ -235,16 +229,13 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./readme.md)
-<<<<<<< .merge_file_DO1qWl
+- [← User Module README](./README.md)
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../docs/index.md)
-=======
-- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Final Report](../../../docs/phpstan/final-report-session.md)
 - [← Root Documentation](../../../../docs/index.md)
->>>>>>> .merge_file_657XEB
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../docs/phpstan/final-report-session.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
@@ -651,7 +642,7 @@ public string $currentState = 'default';
 ## Collegamenti
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-- [PHPStan Usage](../../xot/docs/phpstan-usage.md)
+- [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
 *Ultimo aggiornamento: 2025-01-22*

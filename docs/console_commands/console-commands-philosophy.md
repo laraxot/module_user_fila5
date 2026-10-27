@@ -10,20 +10,12 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
-<<<<<<< .merge_file_TOl7S1
-  - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
-  - "./console-commands.md"
-  - "./readme.md"
-=======
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
+  - "./README.md"
 status: draft
->>>>>>> .merge_file_AeUsdG
 ---
 
 # Filosofia dei Comandi Console - Modulo User
@@ -467,7 +459,7 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -924,7 +916,7 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)

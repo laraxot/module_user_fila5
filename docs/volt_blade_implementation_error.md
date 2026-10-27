@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_BSjYSq
-=======
 ---
 title: "Analisi dell'Errore di Implementazione Volt/Blade"
 type: note
@@ -8,16 +6,12 @@ updated: 2026-10-13
 tags: [docs, user]
 qmd: "analisi dell'errore di implementazione volt/blade user"
 ---
->>>>>>> .merge_file_M3DgMY
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_BSjYSq
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-=======
 - [Convenzioni Path](./path_conventions.md)
->>>>>>> .merge_file_M3DgMY
+- [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Identificazione dell'Errore

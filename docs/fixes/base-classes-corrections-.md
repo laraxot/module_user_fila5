@@ -11,15 +11,13 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_Vaj1lN
-  - "./base-classes-corrections-1.md"
-  - "./base-classes-corrections-2.md"
-  - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
-=======
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections-stato-rinominato.md"
@@ -28,7 +26,6 @@ related:
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
 status: draft
->>>>>>> .merge_file_bsB0uc
 ---
 
 # Correzione Estensioni Classi Base - Modulo User

@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('login widget translations have a scalar fifth level in every supported locale', function (): void {
     foreach (['it', 'en', 'de', 'es'] as $locale) {

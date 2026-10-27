@@ -18,7 +18,10 @@ class RedirectToLoginAction
 {
     use QueueableAction;
 
-    public function execute(string $message): RedirectResponse
+    /**
+     * @param  array<string, string>  $replace  segnaposto `:chiave` del testo tradotto
+     */
+    public function execute(string $message, array $replace = []): RedirectResponse
     {
         // Il login FO e' la pagina Folio `/{lang}/auth/login`. Il nome Folio `login` risolve sempre la lingua di
         // default: chi annulla Google da /en/ tornerebbe su /it/. Si localizza quindi l'URL con la lingua corrente.
@@ -29,6 +32,11 @@ class RedirectToLoginAction
             $translated = $translated['text'] ?? $message;
         }
         Assert::string($translated);
+        $pairs = [];
+        foreach ($replace as $key => $value) {
+            $pairs[':'.$key] = $value;
+        }
+        $translated = trim(strtr($translated, $pairs));
         Notification::make()
             ->title($translated)
             ->danger()

@@ -236,4 +236,8 @@ return [
     'login-failed' => 'Sign-in failed, please try again.',
     'user-not-allowed' => 'Your email address is not authorised.',
     'registration-not-enabled' => 'New user registration is not available.',
+    // OAuth provider without credentials (DCP-271). The guide shows only with APP_DEBUG; the public gets the friendly message.
+    'provider-not-configured' => 'Sign-in with :provider is not available right now. You can sign in with email and password.',
+    'provider-setup-guide' => 'Sign-in with :provider is not configured: missing :missing. Where to create them: open :console and create OAuth credentials for a web application, registering :redirect as the authorized redirect URI. Where to set them: put the values (:missing) in the .env file and run "php artisan config:clear", or use the back office page :admin. :hint',
+    'provider-setup-lan-hint' => 'Note: :provider rejects IP addresses and plain http as redirect URIs (localhost is the exception). Open the site from :localhost, for example through an SSH tunnel, or use a domain with HTTPS.',
 ];

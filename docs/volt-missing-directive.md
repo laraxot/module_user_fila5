@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_37zRo1
-=======
 ---
 title: "Errore VoltDirectiveMissingException"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "errore voltdirectivemissingexception user"
 ---
->>>>>>> .merge_file_Tc1ALv
 # Errore VoltDirectiveMissingException
 
 ## Descrizione
@@ -46,22 +43,16 @@ module: theme
 topic: volt-missing-directive
 canonical: ../../../Themes/docs/shared-components/volt-missing-directive.md
 related:
-<<<<<<< .merge_file_37zRo1
-  - "./00-index-1.md"
-=======
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_Tc1ALv
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_37zRo1
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_Tc1ALv
   - "./actions-path-convention.md"
 ---
 

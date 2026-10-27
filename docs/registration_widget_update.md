@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_uHjBAW
-=======
 ---
 title: "Aggiornamento relativo a DoctorResource.php"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "aggiornamento relativo a doctorresource.php user"
 ---
->>>>>>> .merge_file_fQDz4Z
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15

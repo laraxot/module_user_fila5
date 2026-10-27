@@ -15,10 +15,7 @@ related:
   - "./gestione-utenti.md"
   - "./legacy-code-cleanup.md"
   - "./user-analytics.md"
-<<<<<<< .merge_file_66UTYR
-=======
 status: draft
->>>>>>> .merge_file_FD322o
 ---
 
 # User Traits Implementation

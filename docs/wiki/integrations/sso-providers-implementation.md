@@ -5,11 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_D1jOp0
-=======
 status: draft
 qmd: "user module - sso providers implementation user"
->>>>>>> .merge_file_dFJHim
 ---
 
 # User Module - SSO Providers Implementation

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_AGZwRo
-=======
 ---
 title: "terms_and_conditions"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, -integration]
 qmd: "terms_and_conditions user"
 ---
->>>>>>> .merge_file_kNwJ4H
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

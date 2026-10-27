@@ -10,6 +10,7 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./agents.md"
   - "./log.md"
+status: draft
 ---
 
 # User Module Wiki Index
@@ -57,13 +58,10 @@ _No troubleshooting pages created yet_
 ### Related Project Concepts
 
 - [Laraxot Architecture](../../docs/wiki/concepts/laraxot-architecture.md)
-<<<<<<< .merge_file_guuIR3
 - [Actions Over Services](../../docs/wiki/concepts/actions-over-services.md)
 - [PHPStan Level 10](../../docs/wiki/concepts/phpstan-level10.md)
-=======
 - [Actions Over Services](../../../../../docs/wiki/concepts/actions-over-services.md)
 - [PHPStan Level 10](../phpstan-level10.md)
->>>>>>> .merge_file_fJCYgf
 
 ## Module's Role in Project
 

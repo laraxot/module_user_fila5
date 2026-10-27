@@ -4,6 +4,8 @@ type: concept
 updated: 2026-10-20
 language: it
 tags: [docs, organization, duplicates, user]
+status: draft
+qmd: "organizzazione documentazione phpstan modulo user user"
 ---
 
 # Organizzazione Documentazione PHPStan Modulo User

@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_mIbdFY
-=======
 ---
 title: "User Module - Product Strategy"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product strategy user"
+status: superseded
+superseded_by: product-strategy-user-module.md
 ---
->>>>>>> .merge_file_CXu2BQ
 # User Module - Product Strategy
 
 **Module:** User  

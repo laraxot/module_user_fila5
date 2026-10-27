@@ -9,22 +9,20 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./base-classes-corrections-.md"
-<<<<<<< .merge_file_lSSwEr
-  - "./base-classes-corrections-1.md"
-  - "./base-classes-corrections-2.md"
-  - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes.md"
   - "./phpstanes.md"
-=======
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections-stato-rinominato.md"
   - "./base-classes-corrections.md"
   - "./phpstan-fixes-correzioni-modulo-user.md"
   - "./phpstanes.md"
-status: draft
->>>>>>> .merge_file_XOfAPQ
+status: superseded
+superseded_by: ../bug-tracking/phpstan-fixes.md
 ---
 
 # Correzioni PHPStan nel Modulo User
@@ -65,17 +63,14 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md) 
 
-<<<<<<< .merge_file_lSSwEr
 ## Collegamenti tra versioni di phpstan-fixes-8.md
 * [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../user/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
-=======
 ## Collegamenti tra versioni di phpstan-fixes.md
 * [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes.md)
 * [phpstan-fixes-8.md](../phpstan-fixes.md)
 * [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes.md)
 * [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes.md)
->>>>>>> .merge_file_XOfAPQ
 

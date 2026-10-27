@@ -7,10 +7,7 @@ tags: [bmad, user, auth, rbac]
 qmd: "User module product brief PRD architecture UX security epics gaps release"
 issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
-<<<<<<< .merge_file_e4xWOy
-=======
 status: draft
->>>>>>> .merge_file_ab5unG
 ---
 # User — BMAD dossier
 ## Product brief / PRD
