@@ -45,7 +45,7 @@ final class RememberLoginReturnUrlAction
 
     private function sameHostUrl(Request $request, ?string $candidate): ?string
     {
-        if ($candidate === null || $candidate === '' || str_contains($candidate, '\\')) {
+        if ($candidate === null || $candidate === '' || str_contains($candidate, '\\') || preg_match('/[\x00-\x1F\x7F]/', $candidate) === 1) {
             return null;
         }
 
