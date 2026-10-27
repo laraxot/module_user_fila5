@@ -7,7 +7,7 @@ use Modules\User\Actions\Socialite\SetDefaultRolesBySocialiteUserAction;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Role;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

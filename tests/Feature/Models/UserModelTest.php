@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Models;
+namespace Modules\User\Tests\Feature\Models;
 
 use Filament\Panel;
 use Mockery\MockInterface;
@@ -12,7 +12,7 @@ use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

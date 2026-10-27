@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "login   consolidated documentation user"
 ---
 
 # login — Consolidated Documentation
@@ -41,11 +43,14 @@ qmd: "login-resolution risoluzione problema login - report finale (aggiornato)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -113,11 +118,14 @@ qmd: "login-widget-analysis analisi dettagliata di loginwidget"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -193,6 +201,8 @@ related:
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
@@ -267,6 +277,8 @@ related:
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
@@ -281,11 +293,14 @@ module: theme
 topic: login-widget-conversion
 canonical: ../../../Themes/docs/shared-components/login-widget-conversion.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -308,11 +323,14 @@ qmd: "login-widget-fix loginwidget form data binding fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -463,6 +481,9 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ## Riferimenti
 
+- [XotBaseWidget Documentation](../../xot/docs/readme.md)
+- [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
+- [RegisterWidget Implementation](../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
 - [XotBaseWidget Documentation](../../../../Xot/docs/README.md)
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
 - [RegisterWidget Implementation](../../../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
@@ -496,11 +517,14 @@ module: theme
 topic: login-widget-livewire-binding-fix
 canonical: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -523,11 +547,14 @@ qmd: "login-widget-livewire-binding loginwidget livewire wire:model binding fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -630,6 +657,7 @@ Tutti i widget senza modello devono:
 
 - [Xot Widgets Initialization](../../xot/docs/widgets-initialization.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
+- [Login Widget Fix](./login-widget-fix.md)
 - [Login Widget Fix](../../login-widget-fix.md)
 
 ---
@@ -642,11 +670,14 @@ module: theme
 topic: login-widget-translation
 canonical: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -664,11 +695,14 @@ module: theme
 topic: login-widget
 canonical: ../../../Themes/docs/shared-components/login-widget-analysis.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -751,6 +785,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
@@ -851,6 +886,9 @@ class LoginWidget extends XotBaseWidget
 - Alcune funzionalità (es. `render()`) non sono necessarie nel widget.
 
 ## Collegamenti
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per i widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
+- [login-improvements.md](../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
@@ -870,11 +908,14 @@ qmd: "loginwidget-error-analysis analisi errore loginwidget: problema logico e s
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1058,6 +1099,8 @@ class LoginWidget extends XotBaseWidget
 ## Riferimenti
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
+- [Documentazione Widget Structure](modules/user/widgets-structure.md)
+- [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
 - [Documentazione Widget Structure](../../widgets-structure-user.md)
 - [Best Practices Widget Filament](../../best-practices/filament-widgets.md) 
 ---
@@ -1070,11 +1113,14 @@ module: theme
 topic: loginwidget
 canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

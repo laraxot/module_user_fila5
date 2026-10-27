@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

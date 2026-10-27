@@ -5,7 +5,7 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\User\Enums\UserType;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -60,8 +60,8 @@ test('user type enum getDefaultGuard method returns correct guards', function ()
 });
 
 test('user type enum can be compared', function (): void {
-    Assert::assertSame(UserType::MasterAdmin, UserType::MasterAdmin);
-    Assert::assertNotSame(UserType::MasterAdmin, UserType::BoUser);
+    Assert::assertSame('master_admin', UserType::MasterAdmin->value);
+    Assert::assertSame('backoffice_user', UserType::BoUser->value);
 });
 
 test('user type enum can be used in match statements', function (): void {

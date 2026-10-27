@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Actions\Socialite;
+namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
@@ -10,14 +10,14 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
-        /* @var \Tests\Modules\User\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         /* @var TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
@@ -147,7 +147,6 @@ describe('Login User Action', function (): void {
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected InvalidArgumentException was not thrown');
         } catch (\InvalidArgumentException $exception) {
-            Assert::assertInstanceOf(\InvalidArgumentException::class, $exception);
         }
     });
 

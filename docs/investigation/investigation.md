@@ -1,6 +1,7 @@
 ---
 type: investigation
 title: "Investigation Teams & Roles"
+links: {github_issue: #XXX}
 links: {github_issue: "#XXX"}
 status: draft
 updated: 2026-10-08

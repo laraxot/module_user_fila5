@@ -76,6 +76,31 @@ return [
     'fields' => [
     ],
     'actions' => [
+        'login' => [
+            'success' => 'Sesión iniciada correctamente.',
+            'error' => 'El correo electrónico o la contraseña no son correctos.',
+            'throttle' => 'Demasiados intentos. Inténtalo de nuevo en :seconds segundos.',
+        ],
+    ],
+    'login' => [
+        'title' => ['text' => 'Inicia sesión en tu cuenta'],
+        'intro' => ['text' => 'Inicia sesión para informar de un problema y seguir tus trámites.'],
+        'google' => ['text' => 'Google', 'button' => ['text' => 'Iniciar sesión con Google']],
+        'microsoft' => ['text' => 'Microsoft'],
+        'github' => ['text' => 'GitHub'],
+        'or_continue_with' => ['text' => 'o'],
+        'submit' => ['text' => 'Iniciar sesión'],
+        'forgot_password' => ['text' => '¿Has olvidado la contraseña?'],
+        'no_account' => ['text' => '¿Todavía no tienes una cuenta?'],
+        'create_account' => ['text' => 'Crear una cuenta'],
+        'logging_in' => ['text' => 'Iniciando sesión…'],
+        'success' => ['text' => 'Sesión iniciada correctamente.'],
+        'invalid_provider' => 'Proveedor de inicio de sesión no válido.',
+        'redirecting' => 'Redirigiendo…',
+        'redirect_to_provider' => 'Serás redirigido a :provider.',
+        'callback' => 'Inicio de sesión con :provider',
+        'callback_text' => 'Se produjo un problema al iniciar sesión con :provider.',
+        'back' => 'Volver al inicio de sesión',
     ],
     'login_page' => [
         'meta_title' => 'Iniciar sesión | FixCity',
@@ -102,4 +127,12 @@ return [
         'back_to_login' => 'Volver al inicio de sesión',
         'submit' => 'Enviar instrucciones',
     ],
+    // Esiti del login social (RedirectToLoginAction): senza queste chiavi /es/ mostra l'italiano.
+    'login-failed' => 'No se pudo iniciar sesión, inténtalo de nuevo.',
+    'user-not-allowed' => 'Tu correo electrónico no está autorizado.',
+    'registration-not-enabled' => 'No es posible registrar un nuevo usuario.',
+    // Proveedor OAuth sin credenciales (DCP-271). La guía solo aparece con APP_DEBUG; el público ve el mensaje amable.
+    'provider-not-configured' => 'El inicio de sesión con :provider no está disponible por ahora. Puedes iniciar sesión con correo y contraseña.',
+    'provider-setup-guide' => 'El inicio de sesión con :provider no está configurado: faltan :missing. Dónde crearlas: abre :console y crea credenciales OAuth para una aplicación web, registrando :redirect como URI de redirección autorizado. Dónde configurarlas: escribe los valores (:missing) en el archivo .env y ejecuta "php artisan config:clear", o usa la página del back office :admin. :hint',
+    'provider-setup-lan-hint' => 'Atención: :provider rechaza las direcciones IP y el http simple como URI de redirección (localhost es la excepción). Abre el sitio desde :localhost, por ejemplo con un túnel SSH, o usa un dominio con HTTPS.',
 ];

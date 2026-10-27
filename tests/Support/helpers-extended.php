@@ -21,7 +21,7 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 

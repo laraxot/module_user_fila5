@@ -9,7 +9,7 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Actions\Socialite\RegisterSocialiteUserAction;
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Actions\User\UpdateUserAction;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

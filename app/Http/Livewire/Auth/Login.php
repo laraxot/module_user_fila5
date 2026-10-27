@@ -58,10 +58,8 @@ class Login extends Component implements HasActions, HasForms
 
     /**
      * Esegue l'autenticazione dell'utente.
-     *
-     * @return RedirectResponse|void
      */
-    public function authenticate()
+    public function authenticate(): ?RedirectResponse
     {
         try {
             /** @var array{email: string, password: string, remember?: bool} $data */
@@ -85,6 +83,8 @@ class Login extends Component implements HasActions, HasForms
             $this->addError('data.email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
             report($e);
         }
+
+        return null;
     }
 
     /**

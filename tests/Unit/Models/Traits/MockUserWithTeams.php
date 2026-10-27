@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Models\Traits;
+namespace Modules\User\Tests\Unit\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Traits\HasTeams;

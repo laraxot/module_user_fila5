@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;

@@ -4,14 +4,14 @@ declare(strict_types=1);
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 
 describe('IsUserAllowedAction', function (): void {
     beforeEach(function (): void {
-        /* @var \Tests\Modules\User\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         config(['filament-socialite.domain_allowlist' => []]);
     });
 

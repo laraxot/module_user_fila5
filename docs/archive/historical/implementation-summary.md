@@ -153,7 +153,7 @@ All type casting operations now use safe methods:
 ### Updated Documentation Files
 
 1. **`README.md`**: Updated with type safety information
-2. **`widgets_structure.md`**: Enhanced with type safety guidelines
+2. **`widgets-structure.md`**: Enhanced with type safety guidelines
 
 ## Best Practices Established
 

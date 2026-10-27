@@ -3,11 +3,11 @@
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
 
 ## Introduzione
 

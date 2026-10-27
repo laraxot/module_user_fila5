@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits\Fixtures;
+namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
 use Illuminate\Support\ServiceProvider;
 use Modules\User\Providers\Traits\HasPassportConfiguration;

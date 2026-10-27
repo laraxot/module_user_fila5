@@ -4,10 +4,11 @@ concept: User vs Profile
 last_updated: 2026-04-15
 title: "User vs Profile Models"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "user vs profile models user"
+status: superseded
+superseded_by: uservsprofile.md
 ---
 
 # User vs Profile Models

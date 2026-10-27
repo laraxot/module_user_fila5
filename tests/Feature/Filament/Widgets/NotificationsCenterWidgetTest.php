@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;

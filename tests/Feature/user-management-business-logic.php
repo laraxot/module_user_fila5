@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -13,7 +13,7 @@ use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -366,7 +366,6 @@ describe('User Management Business Logic', function (): void {
             ]);
             $this->fail('Expected QueryException was not thrown');
         } catch (QueryException $exception) {
-            Assert::assertInstanceOf(QueryException::class, $exception);
         }
     });
 

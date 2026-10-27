@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
 use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Webmozart\Assert\Assert;

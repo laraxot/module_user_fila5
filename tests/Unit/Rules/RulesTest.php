@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\User\Rules\CheckOtpExpiredRule;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

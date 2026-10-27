@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Fakes;
+namespace Modules\User\Tests\Fakes;
 
 use Jenssegers\Agent\Agent;
 
@@ -34,30 +34,27 @@ final class FakeAgent extends Agent
 
     /**
      * @param  string|null  $userAgent
-     * @return string|bool
      */
     #[\Override]
-    public function device($userAgent = null)
+    public function device($userAgent = null): string|bool
     {
         return $this->fakeDevice ?? false;
     }
 
     /**
      * @param  string|null  $userAgent
-     * @return string|bool
      */
     #[\Override]
-    public function platform($userAgent = null)
+    public function platform($userAgent = null): string|bool
     {
         return $this->fakePlatform ?? false;
     }
 
     /**
      * @param  string|null  $userAgent
-     * @return string|bool
      */
     #[\Override]
-    public function browser($userAgent = null)
+    public function browser($userAgent = null): string|bool
     {
         return $this->fakeBrowser ?? false;
     }
@@ -114,20 +111,23 @@ final class FakeAgent extends Agent
     /**
      * @param  string  $propertyName
      * @param  string  $type
-     * @return string|bool
      */
     #[\Override]
-    public function version($propertyName, $type = self::VERSION_TYPE_STRING)
+    public function version($propertyName, $type = self::VERSION_TYPE_STRING): string|false
     {
-        return $this->fakeVersions[$propertyName] ?? false;
+        $version = $this->fakeVersions[$propertyName] ?? false;
+        if ($version === false) {
+            return false;
+        }
+
+        return is_string($version) ? $version : false;
     }
 
     /**
      * @param  string|null  $userAgent
-     * @return string|bool
      */
     #[\Override]
-    public function robot($userAgent = null)
+    public function robot($userAgent = null): string|bool
     {
         return $this->fakeRobot ?? false;
     }

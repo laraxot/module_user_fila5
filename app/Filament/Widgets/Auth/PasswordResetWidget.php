@@ -50,8 +50,8 @@ class PasswordResetWidget extends XotBaseSchemaWidget
             $this->emailSent = true;
 
             Notification::make()
-                ->title(__('user::auth.password_reset.email_sent.title'))
-                ->body(__('user::auth.password_reset.email_sent.message'))
+                ->title(__('user::auth.password.error.text_reset.email_sent.title'))
+                ->body(__('user::auth.password.error.text_reset.email_sent.message'))
                 ->success()
                 ->duration(10000)
                 ->send();
@@ -60,7 +60,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
             Notification::make()
-                ->title(__('user::auth.password_reset.email_failed.title'))
+                ->title(__('user::auth.password.error.text_reset.email_failed.title'))
                 ->body(trans($response))
                 ->danger()
                 ->send();

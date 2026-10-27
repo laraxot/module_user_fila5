@@ -3,9 +3,9 @@
 declare(strict_types=1);
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Contracts\UserContract;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 

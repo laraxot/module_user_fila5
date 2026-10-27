@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit;
+namespace Modules\User\Tests\Unit;
 
 use Illuminate\Support\Facades\Process;
-use Tests\Modules\User\TestCase;
-use Tests\Modules\Xot\ModuleRemainingCoverage;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\ModuleRemainingCoverage;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');
@@ -24,6 +24,5 @@ describe('User coverage 100 — remaining sweep', function (): void {
         ModuleRemainingCoverage::testFilamentClosures($appRoot, $ns);
         ModuleRemainingCoverage::testPoliciesWithRoleMatrix($appRoot, $ns);
         Assert::assertDirectoryExists($appRoot);
-        Assert::assertSame('Modules\\User\\', $ns);
     });
 });

@@ -9,7 +9,7 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
-  - "./readme.md"
+  - "./README.md"
 title: "console commands"
 type: note
 status: stub

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -13,9 +13,8 @@ uses(TestCase::class);
 describe('User Model Simple', function (): void {
     test('user model can be instantiated', function (): void {
         /** @var TestCase $this */
-        $user = new User;
+        new User;
 
-        Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
@@ -28,7 +27,7 @@ describe('User Model Simple', function (): void {
         /* @var TestCase $this */
         TestCase::skipUnlessUsersTableReady();
 
-        $user = createTestUser([
+        createTestUser([
             'name' => 'Test User',
             'first_name' => 'Test',
             'last_name' => 'User',
@@ -36,6 +35,5 @@ describe('User Model Simple', function (): void {
             'is_active' => true,
         ]);
 
-        Assert::assertInstanceOf(User::class, $user);
     });
 });

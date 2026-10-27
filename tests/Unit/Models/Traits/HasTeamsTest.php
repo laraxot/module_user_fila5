@@ -7,8 +7,8 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
-use Tests\Modules\User\Unit\Models\Traits\Fixtures\MockUserWithTeams;
+use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Models\Traits\Fixtures\MockUserWithTeams;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -22,7 +22,7 @@ function traitsHasTeamsMockUser(string $id = 'mock-user-1'): MockUserWithTeams
 }
 
 test('has teams trait can be used in mock model', function (): void {
-    Assert::assertInstanceOf(MockUserWithTeams::class, traitsHasTeamsMockUser());
+    Assert::assertSame(MockUserWithTeams::class, get_class(traitsHasTeamsMockUser()));
 });
 
 test('has teams trait belongsToTeam when team is in relation', function (): void {
@@ -111,7 +111,7 @@ test('has teams trait integration with real user model', function (): void {
 });
 
 test('has teams trait user model exposes teams relation', function (): void {
-    Assert::assertInstanceOf(BelongsToMany::class, (new User)->membershipTeams());
+    Assert::assertSame(BelongsToMany::class, get_class((new User)->teams()));
 });
 
 test('has teams trait empty teams collection', function (): void {

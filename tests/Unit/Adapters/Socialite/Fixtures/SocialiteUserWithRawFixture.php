@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Adapters\Socialite\Fixtures;
+namespace Modules\User\Tests\Unit\Adapters\Socialite\Fixtures;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 

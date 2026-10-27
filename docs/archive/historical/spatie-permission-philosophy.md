@@ -218,7 +218,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-- [Roles and Permissions](roles_permissions.md)
+- [Roles and Permissions](roles-permissions.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

@@ -18,6 +18,9 @@ status: draft
 ## Descrizione
 Il trait `HasAuthenticationLogTrait` fornisce funzionalità per il logging degli eventi di autenticazione. Permette di tracciare i tentativi di login, gli IP, i timestamp e altre informazioni relative all'autenticazione.
 
+**Ownership DB:** tabella `authentication_logs` sulla connessione `user`
+(`fixcity_user`). Vedi [authentication-logs-connection-ownership](../bmad/authentication-logs-connection-ownership.md).
+
 ## Proprietà
 - `$authentications`: Collection di log di autenticazione
 - `$login_at`: Timestamp dell'ultimo login

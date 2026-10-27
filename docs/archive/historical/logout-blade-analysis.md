@@ -1,12 +1,12 @@
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [README modulo User](./README.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
 ## Panoramica
 
@@ -443,12 +443,12 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [README modulo User](./README.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
 ## Panoramica
 

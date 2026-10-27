@@ -59,6 +59,10 @@ Rimozione dead-code nei punti elencati. Dove il `dddx` era "debug provvisorio" (
 pages) la logica resta invariata, senza output accidentale. `Http/Livewire/TermsOfService.php`
 è da ritirare (10.4), non da "riparare".
 
+Nota 2026-10-20: per le pagine Appearance "la logica resta invariata" non era vero: il salvataggio non e' mai stato scritto, il `dddx` lo
+sostituiva. Ora `updateData()` lancia `LogicException` finche' la persistenza non c'e' (vedi
+[debug-calls-removal-user](../stories/debug-calls-removal-user.story.md)).
+
 ### ADR-004 — Passport SSoT nel cluster
 
 Le resource Passport vivono **solo** in `Clusters/Passport/Resources`. Cancellazione dei

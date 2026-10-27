@@ -13,6 +13,9 @@ related:
   - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
   - folio-app-pages-owner.md
+  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - folio-app-pages-owner.md
 status: draft
 ---
 
@@ -43,6 +46,11 @@ Folio monta **tema prima**, poi **moduli** (`FolioVoltServiceProvider`). Rotte d
 - `@volt('…')` statico = `name()`
 
 Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+- `PageSlugMiddleware` + JSON CMS (`pages/area-personale/pratiche.json` e le altre voci: lo slug nel file è solo `pratiche`, la cartella aggiunge `area-personale.`)
+- `new class extends Component` + `mount()` per query/redirect
+- `@volt('…')` statico = `name()`
+
+Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
 
 ## Pratiche + Fixcity
 
@@ -50,5 +58,7 @@ Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concept
 
 ## Collegamenti
 
+- [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
+- [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
 - [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
 - [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)

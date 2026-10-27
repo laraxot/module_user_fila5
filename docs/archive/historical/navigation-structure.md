@@ -139,6 +139,6 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-- [Header Components](./header_components.md)
+- [Header Components](./header-components.md)
 - [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session_management.md) 
+- [Session Management](./session-management.md) 

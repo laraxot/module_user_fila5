@@ -10,7 +10,8 @@ qmd: "analisi dell'errore di implementazione volt/blade user"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Identificazione dell'Errore
@@ -104,11 +105,14 @@ module: theme
 topic: volt-blade-implementation-error
 canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

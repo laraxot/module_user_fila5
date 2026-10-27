@@ -8,13 +8,13 @@ qmd: "phpstan-fixes-gennaio-complete phpstan fixes complete - gennaio 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -139,3 +139,15 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 ## Data Completamento
 **27 Gennaio 2025** - Correzione completa di tutti gli errori PHPStan
 
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "phpstan fixes gennaio 2025 complete"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "phpstan fixes gennaio 2025 complete user"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md

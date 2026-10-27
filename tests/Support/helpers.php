@@ -21,7 +21,7 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -483,6 +483,11 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
     $decryptedCodes = decrypt($user->two_factor_recovery_codes);
     $codes = json_decode(is_string($decryptedCodes) ? $decryptedCodes : '', true);
     if (! is_array($codes)) {
+        return false;
+    }
+
+    // Un codice di recupero e' monouso: sconosciuto o gia' usato non verifica, e non consuma nulla.
+    if (! in_array($code, $codes, true)) {
         return false;
     }
 

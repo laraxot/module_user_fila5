@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Fixtures;
+namespace Modules\User\Tests\Unit\Fixtures;
 
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Models\User;

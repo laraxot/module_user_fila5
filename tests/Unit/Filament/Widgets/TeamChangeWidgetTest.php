@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Lang;
 use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;

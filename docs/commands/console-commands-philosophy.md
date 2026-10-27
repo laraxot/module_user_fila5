@@ -10,11 +10,16 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
+  - "./console-commands-philosophy-1-1.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
+  - "./README.md"
 status: draft
 ---
 

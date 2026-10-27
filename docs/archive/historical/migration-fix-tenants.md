@@ -210,7 +210,7 @@ done
 ### This Analysis
 
 - [Migration Violations](./migration-violations-tenants.md) - Detailed analysis
-- [User Module README](./readme.md)
+- [User Module README](./README.md)
 
 ---
 

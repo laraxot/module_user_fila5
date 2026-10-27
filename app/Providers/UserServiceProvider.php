@@ -9,16 +9,23 @@ namespace Modules\User\Providers;
 
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Auth\Notifications\VerifyEmail;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Validation\Rules\Password;
 use Livewire\Livewire;
 use Modules\Notify\Emails\SpatieEmail;
+use Modules\User\Actions\Auth\BuildApiLoginLimitAction;
+use Modules\User\Actions\Auth\EnsureResetPasswordMailTemplateAction;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
+use Modules\User\Models\BaseUser;
+use Modules\User\Models\Policies\UserPolicy;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
@@ -36,6 +43,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
+        $this->registerApiLoginRateLimiter();
         $this->registerPasswordRules();
         // $this->registerPulse();
         $this->registerMailsNotification();
@@ -64,7 +72,9 @@ class UserServiceProvider extends XotBaseServiceProvider
              * ->salutation(__('user::reset_password.regards'));
              */
             Assert::isInstanceOf($notifiable, Model::class);
-            $email = new SpatieEmail($notifiable, 'reset-password');
+            // Il template `reset-password` non e' seminato: SpatieEmail lo creerebbe con il testo di registrazione (DCP-285, D-05).
+            app(EnsureResetPasswordMailTemplateAction::class)->execute();
+            $email = new SpatieEmail($notifiable, EnsureResetPasswordMailTemplateAction::SLUG);
             $email->mergeData([
                 'token' => $token,
                 'reset_password_url' => url(route('password.reset', ['token' => $token], false)),
@@ -152,6 +162,14 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+     * Limiter nominato `user-login` per `POST /api/user/login` (D-08, DCP-282): soglie e messaggio in {@see BuildApiLoginLimitAction}.
+     */
+    protected function registerApiLoginRateLimiter(): void
+    {
+        RateLimiter::for('user-login', static fn (Request $request): Limit => app(BuildApiLoginLimitAction::class)->execute($request));
+    }
+
+    /**
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, i componenti si auto-scoprono dal namespace Livewire.
      * Se necessario registrare manualmente, usare Livewire::component(name, class).
@@ -169,7 +187,10 @@ class UserServiceProvider extends XotBaseServiceProvider
      */
     protected function registerPolicies(): void
     {
-        // OAuth policies are handled by PassportServiceProvider
-        // Register other policies here if needed
+        // OAuth policies are handled by PassportServiceProvider.
+        // La scoperta automatica trova UserPolicy solo per Modules\User\Models\User: la classe di autenticazione reale
+        // (es. Modules\Fixcity\Models\User) non ne aveva nessuna e Filament, senza policy, consente tutto. Gate::policy
+        // vale anche per le sottoclassi (DCP-285, D-06).
+        Gate::policy(BaseUser::class, UserPolicy::class);
     }
 }

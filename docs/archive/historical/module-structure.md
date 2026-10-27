@@ -227,9 +227,9 @@ Modules/User/Lang/it/
 
 ## Collegamenti Correlati
 
-- [Best Practices per le Traduzioni](translation_best_practices.md)
-- [Regole per le Chiavi di Traduzione](translation_keys_rules.md)
-- [Convenzioni di Codice](code_conventions.md)
+- [Best Practices per le Traduzioni](translation-best-practices.md)
+- [Regole per le Chiavi di Traduzione](translation-keys-rules.md)
+- [Convenzioni di Codice](code-conventions.md)
 1. **Verifica Path**
    ```bash
    # Prima di creare un file/cartella, verifica sempre il path
@@ -522,9 +522,9 @@ Modules/User/Lang/it/
 
 ## Collegamenti Correlati
 
-- [Best Practices per le Traduzioni](translation_best_practices.md)
-- [Regole per le Chiavi di Traduzione](translation_keys_rules.md)
-- [Convenzioni di Codice](code_conventions.md)
+- [Best Practices per le Traduzioni](translation-best-practices.md)
+- [Regole per le Chiavi di Traduzione](translation-keys-rules.md)
+- [Convenzioni di Codice](code-conventions.md)
 1. **Verifica Path**
    ```bash
    # Prima di creare un file/cartella, verifica sempre il path

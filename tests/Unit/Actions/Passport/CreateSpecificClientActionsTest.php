@@ -5,8 +5,8 @@ use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Models\OauthClient;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 

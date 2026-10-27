@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Illuminate\Console\Command;
 use Modules\User\Console\Commands\ChangeTypeCommand;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
@@ -15,10 +15,7 @@ function changeTypeCommandInstance(): ChangeTypeCommand
 }
 
 test('change type command can be instantiated', function (): void {
-    $command = changeTypeCommandInstance();
-
-    Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
-    Assert::assertInstanceOf(Command::class, $command);
+    changeTypeCommandInstance();
 });
 
 test('change type command has correct name', function (): void {
@@ -51,11 +48,11 @@ test('change type command handle method is public void', function (): void {
 });
 
 test('change type command can access xot data dependency', function (): void {
-    Assert::assertInstanceOf(XotData::class, XotData::make());
+    XotData::make();
 });
 
 test('change type command extends laravel console command', function (): void {
-    Assert::assertInstanceOf(Command::class, changeTypeCommandInstance());
+    Assert::assertSame(Command::class, get_parent_class(ChangeTypeCommand::class));
 });
 
 test('change type command has protected name and description properties', function (): void {

@@ -8,11 +8,15 @@ qmd: "logout-blade analisi approfondita dell'errore nell'implementazione del log
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -25,6 +29,9 @@ status: draft
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Logout](logout-blade-analysis.md)
+- [Conclusioni Logout](logout-blade-conclusions.md)
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](logout-blade-conclusions-sintesi-dell.md)
@@ -137,6 +144,9 @@ Questi errori evidenziano l'importanza di:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Logout](logout-blade-analysis.md)
+- [Conclusioni Logout](logout-blade-conclusions.md)
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Logout](logout-blade-analysis-panoramica.md)
 - [Conclusioni Logout](logout-blade-conclusions-sintesi-dell.md)

@@ -8,15 +8,20 @@ qmd: "hasteams-trait-duplicate-methods analisi metodi duplicati in hasteams (tra
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: hasteams-traituplicate-methods.md
 ---
 
 # Analisi metodi duplicati in HasTeams (trait)
@@ -97,6 +102,7 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
+- [XotData helper](../../xot/docs/standards/readme.md)
 - [XotData helper](../../Xot/docs/standards/readme.md)
 
 ---
@@ -110,4 +116,5 @@ Quando si implementano trait come HasTeams, è fondamentale tipizzare e accettar
 - facilità di test tramite mock/stub
 - manutenibilità e flessibilità futura
 
+Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./Models/Team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 
 Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./models/team.md#motivazione-preferire-teamcontract-a-team-nei-trait-e-nei-metodi). 

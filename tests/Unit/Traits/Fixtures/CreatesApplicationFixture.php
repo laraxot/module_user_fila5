@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits\Fixtures;
+namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
-use Tests\Modules\User\Support\CreatesApplication;
+use Modules\User\Tests\Support\CreatesApplication;
 
 final class CreatesApplicationFixture
 {

@@ -12,7 +12,7 @@ use Modules\User\Events\UserNotAllowed;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -26,7 +26,7 @@ test('Login event can be instantiated', function () {
 
     $event = new Login($socialiteUser);
 
-    Assert::assertInstanceOf(Login::class, $event);
+    Assert::assertSame($socialiteUser, $event->socialiteUser);
 });
 
 test('Registered event can be instantiated', function () {
@@ -38,14 +38,14 @@ test('Registered event can be instantiated', function () {
 
     $event = new Registered($socialiteUser);
 
-    Assert::assertInstanceOf(Registered::class, $event);
+    Assert::assertSame($socialiteUser, $event->socialiteUser);
 });
 
 test('TeamCreated event can be instantiated', function () {
     $team = Team::query()->first() ?? new Team(['id' => 1, 'name' => 'Test Team']);
     $event = new TeamCreated($team);
 
-    Assert::assertInstanceOf(TeamCreated::class, $event);
+    Assert::assertSame($team, $event->teamContract);
 });
 
 test('TeamMemberAdded event can be instantiated', function () {
@@ -54,14 +54,15 @@ test('TeamMemberAdded event can be instantiated', function () {
 
     $event = new TeamMemberAdded($team, $user);
 
-    Assert::assertInstanceOf(TeamMemberAdded::class, $event);
+    Assert::assertSame($team, $event->teamContract);
+    Assert::assertSame($user, $event->userContract);
 });
 
 test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
     $user = User::query()->first() ?? new User(['id' => 1, 'email' => 'test@example.com']);
     $event = new TwoFactorAuthenticationEnabled($user);
 
-    Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, $event);
+    Assert::assertSame($user, $event->userContract);
 });
 
 test('UserNotAllowed event can be instantiated', function () {
@@ -71,5 +72,5 @@ test('UserNotAllowed event can be instantiated', function () {
 
     $event = new UserNotAllowed($oauthUser);
 
-    Assert::assertInstanceOf(UserNotAllowed::class, $event);
+    Assert::assertSame($oauthUser, $event->oauthUser);
 });

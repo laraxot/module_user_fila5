@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Http\Livewire\Auth;
+namespace Modules\User\Tests\Unit\Http\Livewire\Auth;
 
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Mockery\ExpectationInterface;
 use Modules\User\Http\Livewire\Auth\Login;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Models\Role;

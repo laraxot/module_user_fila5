@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Modules\User\Datas\PasswordData;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

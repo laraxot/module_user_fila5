@@ -99,6 +99,6 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Best Practices Folio](./routing-best-practices.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)

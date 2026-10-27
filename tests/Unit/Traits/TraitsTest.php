@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 

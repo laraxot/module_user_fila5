@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit;
+namespace Modules\User\Tests\Unit;
 
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Auth\Events\OtherDeviceLogout;
@@ -23,10 +23,10 @@ use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Listeners\OtherDeviceLogoutListener;
 use Modules\User\Models\BaseUser;
+use Modules\User\Tests\Fixtures\UserGapBaseUserProbe;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\Fixtures\UserGapBaseUserProbe;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class)->group('no-user-db');
 

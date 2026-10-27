@@ -1,10 +1,11 @@
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi ereditarietà modelli - modulo user user"
+status: superseded
+superseded_by: model-inheritance.md
 ---
 # Analisi Ereditarietà Modelli - Modulo User
 
@@ -156,12 +157,3 @@ Dopo le modifiche, eseguire:
 - [XotBaseModel](../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
-
-
----
-
-## Contenuto assorbito da `MODEL_INHERITANCE_ANALYSIS.md`
-
-# Documento unificato
-
-Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_analysis.md](./model_inheritance_analysis.md).

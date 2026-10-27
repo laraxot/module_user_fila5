@@ -10,7 +10,7 @@ use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Notifications\Auth\Otp;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

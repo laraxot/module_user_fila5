@@ -4,7 +4,7 @@ type: bmad-flow-contract
 status: static-audit-complete-runtime-pending
 module: User
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-19
 tags: [bmad, auth, registration, login, verification, citizen]
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/572"
@@ -30,6 +30,18 @@ visuale delle pagine; Gdpr possiede i dati di consenso; Notify possiede la conse
 - Widget runtime: `Modules/User/Filament/Widgets/Auth/RegisterWidget.php` e `LoginWidget.php`.
 - View pubbliche attive: `Themes/Sixteen/resources/views/pages/auth/register.blade.php`,
   `login.blade.php`, `verify.blade.php`.
+- Il form di registrazione non sta nel file Folio: la pagina Sixteen chiede i blocchi
+  CMS dello slug `auth.register`. Il record è
+  `config/local/fixcity/database/content/pages/auth/auth.register.json` e include
+  `pub_theme::components.pages.auth-register`, che monta
+  `Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget`.
+- La pagina Folio del modulo User (`resources/views/pages/auth/register.blade.php`)
+  resta solo per il nome rotta `register` e, se venisse servita, include lo stesso
+  componente civico. Non monta più la classe inesistente `UserForm`.
+- Collisione 2026-10-19, risolta in avanti: il guscio meetup (gradienti, particelle,
+  keyword «Laravel meetup») perde contro il componente Sixteen. Nel JSON non si
+  copiano `heading` e `intro`: la vista legge `fixcity::auth.register.title.text`
+  e `intro.text`, e un secondo testo nel blocco divergerebbe senza essere mostrato.
 - Test: `Modules/User/tests/Feature/UserAuthenticationTest.php`,
   `AuthComponentsTest.php`, `LoginTranslationParityTest.php` e route CMS.
 - Redirect guest locale: `Modules/Fixcity/tests/Feature/Pages/TicketGuestLocaleRedirectTest.php`.

@@ -8,11 +8,15 @@ qmd: "phpstan-corrections-oauth-resources phpstan corrections - oauth resources"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -123,7 +127,7 @@ TextColumn::make('name')
 
 ## 📚 Riferimenti
 
-- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+- [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 

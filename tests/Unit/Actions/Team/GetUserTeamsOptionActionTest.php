@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 

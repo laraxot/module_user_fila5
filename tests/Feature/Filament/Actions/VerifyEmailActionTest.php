@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament\Actions;
+namespace Modules\User\Tests\Feature\Filament\Actions;
 
 use Filament\Actions\Action;
 use Modules\User\Filament\Resources\UserResource\Actions\VerifyEmailAction;
 use Modules\User\Filament\Resources\UserResource\Tables\UsersTable;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;

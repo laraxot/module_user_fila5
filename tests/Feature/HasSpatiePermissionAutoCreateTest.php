@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Policies\OauthAccessTokenPolicy;
 use Modules\User\Models\Traits\HasSpatiePermission;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 

@@ -35,3 +35,8 @@ UI auth/profile FO e widget Filament: **Filament v5** + componenti tema Sixteen.
 ## Story
 
 [STORY-133](../../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)
+- [docs/wiki/rules/frontend-stack-canonical.md](../../../../../../docs/wiki/rules/frontend-stack-canonical.md)
+
+## Story
+
+[STORY-133](../../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md)

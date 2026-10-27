@@ -1,10 +1,10 @@
 ---
-title: "User Module - PHPStan Fixes Session 2025-10-01"
+title: "Correzioni PHPStan - Modulo User"
 type: concept
-tags: [phpstan, fixes]
+tags: [phpstan, fixes, 2025]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan-fixes- user module - phpstan fixes session 2025-10-01"
+qmd: "phpstan-fixes-2025 correzioni phpstan - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -14,7 +14,7 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 status: draft
 ---
@@ -227,7 +227,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session.md)
 - [← Root Documentation](../../../../docs/index.md)
 
 ---
@@ -395,6 +395,23 @@ public string $currentState = 'default';
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
 # Correzioni PHPStan - Modulo User
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+# Correzioni PHPStan - Modulo User
+
+## 2026-10-20 — wave r3 · gate modulo
+
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User
+# [OK] No errors
+```
+
+- `FakeAgent::version()` normalizza a `string|false` (niente `bool|string`).
+- OAuth feature: `Safe\parse_url`, header `Location` con `Assert::assertIsString` prima del parse della query.
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
@@ -444,7 +461,7 @@ protected static string $view = 'pub_theme::filament.widgets.auth.password.reset
 
 **File Affetti**:
 - `RegisterWidget.php`
-- `ResetPasswordWidget.php`
+- `ResetPasswordWidget.php` 
 - `PasswordExpiredWidget.php`
 - `UpdateUserAction.php`
 
@@ -850,14 +867,22 @@ After applying fixes:
 - All Filament components should extend XotBase classes for consistency
 - Type system improvements enhance code reliability and maintainability 
 ---
+title: "PHPStan Compliance — User Module"
+type: concept
+tags: [phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes phpstan compliance — user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

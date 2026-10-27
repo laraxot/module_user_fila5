@@ -11,10 +11,129 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
-updated: 2026-10-07
+  - ./filament-blueprint.md
+updated: 2026-10-26
 tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
 ---
+
+# Decision log — User
+
+**Scopo:** User e' il confine di identita' del cittadino e dell'operatore (auth, OAuth localizzato, profilo, RBAC/tenant): i temi vestono le pagine, Fixcity/Gdpr possiedono dominio e consensi, User possiede login/registrazione e i contratti Filament/Socialite.
+
+## Hub (solo link)
+
+- Standing PHPStan: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md)
+- `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md)
+- UI admin/FO auth: [filament-blueprint.md](./filament-blueprint.md)
+
+## [2026-10-20] Gate PHPStan Modules zero; Filament blueprint SSoT UI admin
+
+- **Decisione:** gate `analyse Modules` a zero; auth/OAuth/widget e Resource User si progettano solo via [filament-blueprint.md](./filament-blueprint.md) (XotBase, chiavi Lang, PHPStan alla sorgente).
+- **Track:** hub sopra.
+
+## [2026-10-20] Google OAuth FO = route con `lang` + binding controller corretto
+
+- **Perché:** da `/it/auth/login` il cittadino deve andare a
+  `/it/auth/login/google` (stesso contesto lingua; callback
+  `GOOGLE_REDIRECT_URI` con `/it/`).
+- **Cosa:** `oauth.redirect` = `{lang}/auth/login/{provider}`. Bottone Sixteen e
+  widget usano `route(..., ['lang' => $locale])`. I fallback Folio sono stati
+  rimossi (DCP-269, vedi sotto). I controller dichiarano
+  `string $lang, string $provider` e tipizzano `Illuminate\Http\Request`
+  (non la Facade): altrimenti `$provider` riceve `it`.
+- **Non fare:** `route('oauth.redirect')` senza `lang`; OAuth in new tab;
+  stub Folio che abortisce 404 sul callback localizzato; Facade `Request`
+  negli `__invoke` OAuth.
+- **Piano:** [oauth-login-locale-fix](../../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md);
+  [google-auth-login.md](./google-auth-login.md).
+
+## [2026-10-20] Google: giro completo nella lingua del cittadino (DCP-269)
+
+- **Perché:** `GOOGLE_REDIRECT_URI` è unico (`/it/…/callback`): chi parte da `/en/` rientrava in italiano; un provider o una lingua inventati davano 500
+  o una lingua fantasma; un `abort(404)` nei fallback Folio rompeva `route('login')` in tutta l'app.
+- **Cosa:** vincoli su `{lang}` e `{provider}` in `routes/socialite.php`; lingua d'ingresso in sessione (`SESSION_LANG_KEY`) ripristinata dal callback;
+  `RedirectToLoginAction` rimanda a `/{lang}/auth/login`; chiavi `login-failed`/`user-not-allowed`/`registration-not-enabled` anche in en/es;
+  rimossi i 4 fallback Folio.
+- **Non fare:** `abort()`/`redirect` al livello superiore di una vista Folio; ridefinire `GOOGLE_REDIRECT_URI` per lingua senza registrare ogni URI in Google Cloud Console.
+- **Aperto fuori dal codice:** credenziali Google reali in produzione (oggi `client_id` segnaposto). Story:
+  [dcp-269](./stories/dcp-269-login-google-localizzato-e-rientro-nella-lingua.story.md).
+
+## [2026-10-20] Password login rivelabile = Filament `revealable()`
+
+- **Perché:** su `/it/auth/login` il cittadino deve poter mostrare/nascondere la
+  password senza un toggle Alpine del tema.
+- **Cosa:** `UserForm::getLoginFormSchema()` tiene
+  `TextInput::make('password')->password()->revealable()`. Suffix action
+  Filament (`showPassword` / `hidePassword`). Il tema Sixteen veste solo il
+  flex dell'occhio nello shell `.auth-login-card` (lo sheet FO non dipinge
+  `.fi-input-wrp` in `data-dc`).
+- **Non fare:** toggle custom, `type` Alpine a mano, Resource nel tema.
+- **Guardrail:** `LoginPasswordRevealableTest`; blueprint
+  [filament-blueprint.md](./filament-blueprint.md); docs Filament
+  [revealable password inputs](https://filamentphp.com/docs/5.x/forms/text-input#revealable-password-inputs).
+
+## [2026-10-19] Schema `users` in UserData, connessione `user`
+
+- **Perché:** la registrazione inserisce `type` (Parental, `customer_user`).
+  Su `fixcity.eu` la connessione `user` puntava a `fixcity_data`, la cui
+  tabella `users` non ha `type`. Gli utenti stanno su `fixcity_user`.
+- **Senso:** `UserData` è la tabella `users` che si può leggere.
+  `createColumns` la crea intera. `updateColumns` è lo stesso elenco e
+  aggiunge una colonna solo se manca. Non è un secondo DTO di creazione
+  e non è un catalogo di closure.
+- **Cosa:** `UserData` dichiara le colonne. La migration
+  `create_users_table` non ha `$model_class`: dal nome file
+  `XotBaseMigration` risolve `Modules\Fixcity\Models\User`.
+  L'alias host `config/eu/fixcity` si risolve nel tenant canonico
+  `local/fixcity`, l'unica config che Laravel carica.
+- **Non fare:** aggiungere `type` alla tabella legacy di `fixcity_data`.
+  Non creare una migration per un campo. `2026_10_18_133309_create_users_is_active_column`
+  faceva `Schema::table` su `fixcity_data` e si fermava perché `is_active` c'era già.
+  Il campo vive in `UserData::updateColumns`. Il file è `.php.old`: Laravel non lo carica, la storia resta.
+
+## [2026-10-18] UserContract boundary nei consumer Auth
+
+- **Perché:** confrontare / tipizzare `BaseUser` lega il consumer all'astratta
+  interna; Fixcity (e altri tenant) possono fornire un `User` concreto che
+  implementa `UserContract` senza che il consumer conosca la gerarchia.
+- **Cosa:** `RecordAuthenticationLogAction` tipizza
+  `UserContract&HasAuthentications`; listener Login/Failed/OtherDevice usano
+  `instanceof UserContract` (+ `HasAuthentications`), mai `instanceof BaseUser`.
+- **Docs:** [`../wiki/concepts/usercontract-boundary.md`](../wiki/concepts/usercontract-boundary.md),
+  [`../bmad-second-brain.md`](../bmad-second-brain.md), Xot
+  `user-contract-boundary`, Sixteen D18.
+- **Guardrail:** `RecordAuthenticationLogActionTest` (source contract).
+
+## [2026-10-18] Login i18n — chiavi mancanti su FO
+
+- **Sintomo prod:** `user::auth.login.google.button.text` e
+  `pub_theme::accessibility.title.text` grezzi su `/it/auth/login`.
+- **Fix:** contratto `.text` per accessibilità (it/en/de/es); DE non deve
+  riscrivere `login.google` senza `button`; `login.php` senza placeholder
+  inglesi (`Missing…`, `authenticate`); login FO senza helper_text di
+  `user_form` (solo label).
+- **Guardrail:** `AuthLoginTranslationContractTest` include
+  `login.google.button.text`.
+
+## [2026-10-18] Login i18n: catalogo unico per il contratto della vista
+
+**Decision:** la vista Sixteen `components/pages/auth-login.blade.php` e il
+widget Filament condividono il contratto `user::auth.login.*`. Ogni lingua
+servita (`it`, `en`, `de`, `es`) deve fornire i nodi `.text` per titolo,
+intro, social, submit, password dimenticata, registrazione e stato loading,
+oltre a `auth.actions.login.success/error`.
+
+**Rationale:** i cataloghi contenevano forme incompatibili (stringa semplice,
+array con `.text`, chiavi duplicate e catalogo `login_widget` incompleto).
+Laravel risolve l'ultima chiave PHP duplicata: una traduzione presente solo
+nella prima definizione è quindi assente a runtime. Il test di contratto copre
+tutte e quattro le lingue e 80 asserzioni.
+
+**Filament Blueprint:** `LoginWidget` resta thin; schema/etichette restano
+nella SSoT `user_form`, mentre `login_widget` contiene solo il contratto dei
+campi ausiliari. Nessuna label hardcoded: anche il pulsante Google usa il
+catalogo `auth`.
 
 # Decision log — SuperAdmin Livewire → Filament widget
 
@@ -228,3 +347,60 @@ contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
+
+## [2026-10-18] LaravelLocalization — firma dei metodi URL
+
+- **Sintomo:** il login su `/it/auth/login` generava `UnsupportedLocaleException`
+  con locale `/it` (auth già riuscita; falliva il redirect Livewire).
+- **Causa:** `getLocalizedURL($locale, $url)` riceve il **locale** per primo;
+  `getLocalizedURL('/' . app()->getLocale())` passava `'/it'` come locale.
+  `localizeURL($url, $locale)` è il wrapper corretto (URL per primo).
+- **Decisione:** per localizzare un URL usare `localizeURL($url[, $locale])`;
+  usare `getLocalizedURL($locale, $url)` solo con locale esplicito supportato.
+- **Fix:** `LoginWidget` usa `localizeURL(..., $locale)` con locale trim/validato
+  (submit Livewire su `/livewire-*` senza segmento lingua).
+- **Fonte API:** [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
+
+## [2026-10-18] authentication_logs su connessione `user`
+
+- **Decisione:** `authentication_logs` vive su `DB_DATABASE_USER` (`fixcity_user`),
+  non su `fixcity_data`.
+- **Motivo:** model `AuthenticationLog` → `BaseModel::$connection = 'user'`;
+  audit auth accanto a `users` / devices / OAuth.
+- **Sintomo prod:** connection name `user` ma database `fixcity_data` + tabella
+  assente → 500 su failed login.
+- **Fix:** migration owner esplicita; duplicato `.php.old`;
+  `RecordAuthenticationLogAction` non fa crashare il login se la tabella manca.
+- **Artefatto:** [authentication-logs-connection-ownership.md](authentication-logs-connection-ownership.md)
+
+## [2026-10-18] permissions su connessione `user`
+
+- **Decisione:** `permissions` (+ cluster Spatie roles/pivots) vive su
+  `DB_DATABASE_USER` (`fixcity_user`), non su `fixcity_data`.
+- **Motivo:** identity/authorization è dominio User; model `Permission` /
+  `Role` → `$connection = 'user'`; Spatie carica la tabella a ogni `can()`.
+- **Sintomo prod:** `GET /it/tickets/1` → Connection `user` ma database
+  `fixcity_data` + tabella assente → 500 in `BuildTicketTimelineAction`.
+- **Fix:** migration canoniche `create_*`; soft-guard timeline;
+  fail-safe `DB_DATABASE_USER`; `config:clear` in deploy.
+- **Artefatto:** [permissions-connection-ownership.md](permissions-connection-ownership.md)
+
+## [2026-10-20] PHPStan swarm — ordine permanente e helper test
+
+- **Decisione:** ogni turn non banale con qualita' in scope esegue la catena PHPStan → fix sorgente → docs/prompt senza conferma; helper Pest solo su `Modules/User/tests/TestCase.php` (FQCN nei test), mai `scanFiles` sul neon.
+- **Perche:** User e' hub auth/OAuth/Livewire→Widget; errori qui moltiplicano falsi verdi su Lang/Cms se si zittisce. Vittoria = `totals` 0 + `[OK] No errors` sul run del coordinatore.
+- **Track:** [filament-blueprint](./filament-blueprint.md), memoria [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), story [12.1.phpstan-docs-corruption-cleanup](../stories/12.1.phpstan-docs-corruption-cleanup.story.md).
+
+## [2026-10-20] Gate PHPStan Modules — rieseguito OK (audit docs)
+
+- **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User Modules/Comment Modules/Notify Modules/Activity` → exit 0, `[OK] No errors` (config unica `laravel/phpstan.neon`).
+- **Docs:** `md-filenames.py check` su `docs/` → 0 violazioni date/suffissi; legacy maiuscole in radice segnalate, nessuna rinomina (tool `name` non propone alias sicuri).
+- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-index.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).
+
+## [2026-10-26] DCP-285 policy utenti, mail di reset, verify, revoca consensi
+
+- **Policy utenti:** amministra gli utenti solo chi ha `super-admin` (via `before()`), `admin` o `user::admin`; gli altri vedono e aggiornano solo se stessi; nessuno si cancella da solo, super-admin compreso; un amministratore di modulo non modifica ne' cancella un super-admin. Registrata con `Gate::policy(BaseUser::class, UserPolicy::class)` perche' la classe di autenticazione reale (`Modules\Fixcity\Models\User`) non aveva nessuna policy e Filament, senza policy, consente tutto. Le abilita' collettive e secondarie sono definite perche' Filament le concede quando il metodo manca. Story [dcp-285](../stories/dcp-285-correttezza-di-policy-utenti-reset-password-e-revoca-consensi.story.md).
+- **Auto-cancellazione cittadino:** `DeleteAccountAction` (Gdpr) fa `Gate::authorize('delete', $user)` sul proprio utente e ora e' negata per costruzione: serve una capacita' dedicata (`deleteOwnAccount`) quando il titolare decide DEC-10/D-01.
+- **Mail di reset:** il testo di default lo possiede User (`EnsureResetPasswordMailTemplateAction`, `user::reset_password_email.*` in it/en/de/es), non Notify; mai sovrascrivere un testo personalizzato.
+- **Reinvio verifica email:** l'evento `Verified` si lancia solo dopo aver controllato id e hash, mai su un reinvio (`ResendEmailVerificationAction`).
+- **Revoca consensi:** si riconosce l'utente da `user_id` + `user_type` (classe e alias morph), mai da `subject_type`. Lo user agent della revoca richiede la colonna `revoked_user_agent`: SCHEMA-DA-CHIEDERE, nessuna migrazione creata.

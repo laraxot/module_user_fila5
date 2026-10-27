@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Authentication;
+namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

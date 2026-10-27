@@ -1,10 +1,10 @@
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Implementazione Logout](./logout_blade_implementation.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
 
 ## Panoramica
 

@@ -9,14 +9,15 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./filament-user-creation-pty-error.md"
-  - "./git-merge-conflict-inventory-stato-rinominato.md"
+  - "./git-merge-conflict-inventory.md"
   - "./git-merge-conflict-inventory.md"
   - "./git-push-lfs-missing-objects.md"
   - "./phpstan-module-analysis-memory.md"
-  - "./phpstan-widget-property-types-stato-rinominato.md"
+  - "./phpstan-widget-property-types.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
-status: draft
+status: superseded
+superseded_by: phpstan-widget-property-types.md
 ---
 
 # PHPStan widget property types

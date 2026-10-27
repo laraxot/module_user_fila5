@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament;
+namespace Modules\User\Tests\Feature\Filament;
 
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 

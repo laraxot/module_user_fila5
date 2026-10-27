@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Modules\User\Actions\Socialite\ResolveUserNameFieldsFromSocialiteAction;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

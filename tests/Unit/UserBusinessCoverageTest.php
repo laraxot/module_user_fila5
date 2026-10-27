@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit;
+namespace Modules\User\Tests\Unit;
 
-use Tests\Modules\User\TestCase;
-use Tests\Modules\Xot\ModuleBusinessCoverage;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\ModuleBusinessCoverage;
 
 uses(TestCase::class)->group('no-user-db');
 

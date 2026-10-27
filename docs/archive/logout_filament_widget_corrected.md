@@ -3,10 +3,10 @@
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Errore Logout](logout_blade_error_analysis.md)
-- [Struttura Widget](widgets_structure.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Struttura Widget](widgets-structure.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
@@ -253,4 +253,4 @@ name('logout');
 
 ## Alternativa: Logout Immediato
 
-Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation.md), che esegue il logout immediatamente senza richiedere conferma.

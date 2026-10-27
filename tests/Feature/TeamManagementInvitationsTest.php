@@ -10,7 +10,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -36,7 +36,6 @@ test('can create team invitations', function (): void {
     $email = 'invite-'.uniqid().'@example.com';
     $invitation = teamMgmtCreateInvitation($team, ['email' => $email, 'role' => 'member']);
 
-    Assert::assertInstanceOf(TeamInvitation::class, $invitation);
     Assert::assertSame((string) $team->id, (string) $invitation->team_id);
     Assert::assertSame($email, $invitation->email);
     Assert::assertSame('member', $invitation->role);

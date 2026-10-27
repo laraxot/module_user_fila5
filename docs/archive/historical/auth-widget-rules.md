@@ -142,7 +142,7 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
-- [Widget Structure](widgets_structure.md)
+- [Widget Structure](widgets-structure.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

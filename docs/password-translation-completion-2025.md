@@ -2,7 +2,7 @@
 title: "Completamento Traduzioni Password - 2025"
 type: note
 status: draft
-updated: 2026-10-07
+updated: 2026-10-23
 tags: [docs, user]
 qmd: "completamento traduzioni password - 2025 user"
 ---
@@ -130,13 +130,13 @@ module: theme
 topic: password-translation-completion-2025
 canonical: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
 ---
 

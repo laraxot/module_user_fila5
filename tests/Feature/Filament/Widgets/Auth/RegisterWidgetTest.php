@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament\Widgets\Auth;
+namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
@@ -10,7 +10,7 @@ use Livewire\Livewire;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

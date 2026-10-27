@@ -3,7 +3,7 @@
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 
 ## ✅ Path Corretti vs ❌ Path Errati

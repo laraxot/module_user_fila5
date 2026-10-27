@@ -218,7 +218,7 @@ $logout = function () {
    - Test di UI per l'interfaccia
 
 ## Collegamenti Correlati
-- [Documentazione Volt](./volt_blade_implementation.md)
+- [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

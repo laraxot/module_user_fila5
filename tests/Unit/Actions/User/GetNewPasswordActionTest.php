@@ -4,8 +4,8 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Actions\User\GetNewPasswordAction;
 use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 

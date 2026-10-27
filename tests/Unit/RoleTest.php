@@ -7,7 +7,7 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Enums\DefaultRoleId;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -38,7 +38,6 @@ test('role can be created', function (): void {
     $name = 'test-role-'.uniqid();
     $role = createTestRole(['name' => $name]);
 
-    Assert::assertInstanceOf(Role::class, $role);
     Assert::assertSame($name, $role->name);
     Assert::assertSame('web', $role->guard_name);
 });

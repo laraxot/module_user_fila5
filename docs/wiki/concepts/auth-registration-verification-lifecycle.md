@@ -12,6 +12,8 @@ tags: [user, auth, registration, email-verification, localization]
 related:
   - "../../../../Gdpr/docs/wiki/concepts/registration-account-lifecycle.md"
   - "../../../../../Themes/Sixteen/docs/wiki/concepts/legal-consent-ui-boundary.md"
+status: draft
+qmd: "authentication registration and verification lifecycle user"
 ---
 
 # Authentication registration and verification lifecycle

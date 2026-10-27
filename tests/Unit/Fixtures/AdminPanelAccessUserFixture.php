@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Fixtures;
+namespace Modules\User\Tests\Unit\Fixtures;
 
 use Illuminate\Support\Collection;
 use Modules\User\Models\BaseUser;

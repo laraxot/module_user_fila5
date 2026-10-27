@@ -1,8 +1,8 @@
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Identificazione dell'Errore

@@ -47,10 +47,10 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
-- [Authentication Pages Implementation](./auth_pages_implementation.md)
-- [Profile Management](./profile_management.md)
-- [Routing Best Practices](./routing_best_practices.md)
-- [Session Management](./session_management.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Profile Management](./profile-management.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 
 ## Sottocartelle
 

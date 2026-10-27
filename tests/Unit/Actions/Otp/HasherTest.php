@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\User\Actions\Otp\Hasher;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

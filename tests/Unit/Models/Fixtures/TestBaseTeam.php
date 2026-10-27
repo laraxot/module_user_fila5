@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Models\Fixtures;
+namespace Modules\User\Tests\Unit\Models\Fixtures;
 
 use Modules\User\Models\Team;
 

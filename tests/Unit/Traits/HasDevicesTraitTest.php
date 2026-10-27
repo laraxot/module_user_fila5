@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits;
+namespace Modules\User\Tests\Unit\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

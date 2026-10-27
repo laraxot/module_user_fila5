@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament\Resources\UserResource\RelationManagers;
+namespace Modules\User\Tests\Feature\Filament\Resources\UserResource\RelationManagers;
 
 use Filament\Actions\Action;
 use Modules\User\Database\Factories\UserFactory;
@@ -10,7 +10,7 @@ use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
 use Modules\User\Filament\Resources\UserResource\RelationManagers\ClientsRelationManager;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;

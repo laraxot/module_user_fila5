@@ -40,4 +40,5 @@ Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' 
 ## Riferimenti
 
 - [profiles uuid single migration rule](../../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
+- [profiles uuid single migration rule](../../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
 - [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)

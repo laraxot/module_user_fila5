@@ -4,7 +4,7 @@ topic: bmad-method
 canonical: ../../../../Themes/docs/shared-components/bmad-method.md
 related:
   - "./agents.md"
-  - "./architecture.md"
+  - "./Architecture.md"
   - "./auth-patterns.md"
   - "./context-compression.md"
   - "./index.md"

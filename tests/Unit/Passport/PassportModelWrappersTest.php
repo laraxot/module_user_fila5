@@ -8,7 +8,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;

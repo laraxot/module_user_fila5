@@ -163,8 +163,8 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./security_best_practices.md)
 
 ## Timeline
@@ -192,6 +192,6 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./security_best_practices.md) 

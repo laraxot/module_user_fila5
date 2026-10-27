@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Actions;
+namespace Modules\User\Tests\Feature\Actions;
 
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert as PHPUnitAssert;
 
 uses(TestCase::class);

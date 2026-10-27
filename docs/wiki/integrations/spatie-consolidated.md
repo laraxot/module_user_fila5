@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "spatie   consolidated documentation user"
 ---
 
 # spatie — Consolidated Documentation
@@ -36,11 +38,14 @@ module: theme
 topic: spatie-models-verification
 canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -58,11 +63,14 @@ module: theme
 topic: spatie-permission-philosophy
 canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -85,11 +93,14 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -230,6 +241,12 @@ Laraxot keeps domain ownership inside modules. Spatie Permission is an infrastru
 - Spatie Laravel Permission prerequisites: https://spatie.be/docs/laravel-permission/v7/prerequisites
 - Spatie Laravel 7 installation notes: https://spatie.be/docs/laravel-permission/v7/installation-laravel
 - Spatie teams permissions: https://spatie.be/docs/laravel-permission/v7/basic-usage/teams-permissions
+- Local vendor config: [../../../vendor/spatie/laravel-permission/config/permission.php](../../../vendor/spatie/laravel-permission/config/permission.php)
+- Local vendor registrar: [../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php](../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php)
+- Local vendor team resolver: [../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php](../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php)
+- Team model: [../app/Models/Team.php](../app/Models/Team.php)
+- HasTeams trait: [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php)
+- Team switch component: [../app/Http/Livewire/Team/Change.php](../app/Http/Livewire/Team/Change.php)
 - Local vendor config: [../../../vendor/spatie/laravel-permission/config/permission.php](../../../../../vendor/spatie/laravel-permission/config/permission.php)
 - Local vendor registrar: [../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php](../../../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php)
 - Local vendor team resolver: [../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php](../../../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php)
@@ -252,11 +269,14 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -397,6 +417,12 @@ Laraxot keeps domain ownership inside modules. Spatie Permission is an infrastru
 - Spatie Laravel Permission prerequisites: https://spatie.be/docs/laravel-permission/v7/prerequisites
 - Spatie Laravel 7 installation notes: https://spatie.be/docs/laravel-permission/v7/installation-laravel
 - Spatie teams permissions: https://spatie.be/docs/laravel-permission/v7/basic-usage/teams-permissions
+- Local vendor config: [../../../vendor/spatie/laravel-permission/config/permission.php](../../../vendor/spatie/laravel-permission/config/permission.php)
+- Local vendor registrar: [../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php](../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php)
+- Local vendor team resolver: [../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php](../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php)
+- Team model: [../app/Models/Team.php](../app/Models/Team.php)
+- HasTeams trait: [../app/Models/Traits/HasTeams.php](../app/Models/Traits/HasTeams.php)
+- Team switch component: [../app/Http/Livewire/Team/Change.php](../app/Http/Livewire/Team/Change.php)
 - Local vendor config: [../../../vendor/spatie/laravel-permission/config/permission.php](../../../../../vendor/spatie/laravel-permission/config/permission.php)
 - Local vendor registrar: [../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php](../../../../../vendor/spatie/laravel-permission/src/PermissionRegistrar.php)
 - Local vendor team resolver: [../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php](../../../../../vendor/spatie/laravel-permission/src/DefaultTeamResolver.php)
@@ -419,11 +445,14 @@ qmd: "spatie-permission 🏛️ filosofia spatie permission in laraxot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -649,6 +678,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
+- [Roles and Permissions](roles-permissions.md)
 - [Roles and Permissions](../../roles-permissions.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
@@ -680,11 +710,14 @@ qmd: "spatie-permissions-methods-3 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1195,11 +1228,14 @@ qmd: "spatie-permissions-methods-4 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1710,11 +1746,14 @@ qmd: "spatie-permissions-methods-5 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -2225,11 +2264,14 @@ qmd: "spatie-permissions-methods user module - spatie permission methods referen
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -2733,6 +2775,9 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 module: theme
 topic: spatie-permissions
+canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
+related:
+  - "./00-index.md"
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-documentation-themes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
@@ -2740,6 +2785,12 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

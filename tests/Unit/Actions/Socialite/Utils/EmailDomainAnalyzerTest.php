@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -19,7 +19,7 @@ function createMockSocialiteUserForEmailAnalyzer(?string $email): SocialiteUser
 
 describe('EmailDomainAnalyzer', function () {
     beforeEach(function () {
-        /* @var \Tests\Modules\User\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Config::set('services.google.email_domains.first_party.tld', null);
         Config::set('services.google.email_domains.client.tld', null);
     });

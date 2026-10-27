@@ -346,7 +346,7 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
-- [jetstream_vs_laraxot_philosophy.md](jetstream_vs_laraxot_philosophy.md)
+- [jetstream_vs_laraxot_philosophy.md](jetstream-vs-laraxot-philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../Xot/docs/RELATION_X_USAGE.md)

@@ -13,7 +13,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 

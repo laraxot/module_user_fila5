@@ -1,10 +1,11 @@
 ---
 title: "two_factor"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, -integration]
 qmd: "two_factor user"
+status: superseded
+superseded_by: two-factor.md
 ---
 # two_factor
 

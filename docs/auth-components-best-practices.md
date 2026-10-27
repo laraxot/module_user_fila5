@@ -8,11 +8,15 @@ qmd: "auth-components-best-practices best practices per i componenti di autentic
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -22,7 +26,7 @@ status: draft
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -215,7 +219,7 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

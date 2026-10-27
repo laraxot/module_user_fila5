@@ -8,11 +8,15 @@ qmd: "auth-blade-structure struttura delle blade di autenticazione con volt"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -200,6 +204,8 @@ Ogni azione di autenticazione deve:
 ## Collegamenti
 
 - [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
+- [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
@@ -207,7 +213,7 @@ Ogni azione di autenticazione deve:
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
-- [Documentazione Volt](./volt-logout.md)
-- [Best Practices Routing](./routing-best-practices.md)
-- [Struttura Directory](./directory-structure-checklist.md)
-- [Gestione Errori](./error-handling.md) 
+- [Documentazione Volt](./volt_logout.md)
+- [Best Practices Routing](./routing_best_practices.md)
+- [Struttura Directory](./directory_structure_checklist.md)
+- [Gestione Errori](./error_handling.md) 

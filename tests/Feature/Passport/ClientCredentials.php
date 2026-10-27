@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Passport;
+namespace Modules\User\Tests\Feature\Passport;
 
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 

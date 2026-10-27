@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Fixtures;
+namespace Modules\User\Tests\Fixtures;
 
 use Modules\User\Models\BaseUser;
 

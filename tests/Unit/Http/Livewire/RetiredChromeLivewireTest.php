@@ -5,7 +5,7 @@ use Modules\User\Filament\Widgets\Auth\SocialiteButtonsWidget;
 use Modules\User\Http\Livewire\Profile\SuperAdmin;
 use Modules\User\Http\Livewire\Socialite\Buttons;
 use Modules\User\Http\Livewire\Team\Change;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

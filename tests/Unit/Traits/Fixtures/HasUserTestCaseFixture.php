@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits\Fixtures;
+namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
 use Modules\User\Models\User;
-use Tests\Modules\User\Traits\HasUserTestCase;
+use Modules\User\Tests\Traits\HasUserTestCase;
 
 final class HasUserTestCaseFixture
 {

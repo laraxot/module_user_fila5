@@ -1,8 +1,8 @@
 # Implementazione del Logout con LaravelLocalization
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [README modulo User](./README.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)

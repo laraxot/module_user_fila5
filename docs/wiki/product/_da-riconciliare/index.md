@@ -5,6 +5,8 @@ type: product
 tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "user   product user"
 ---
 
 # user — product
@@ -16,6 +18,10 @@ Documentation for `user` module categorized as **product**.
 - [`INDEX.md`](./index.md)
 - [`generic-user-moderation-strategy.md`](./generic-user-moderation-strategy.md)
 - [`generic_user_moderation_strategy.md`](./generic_user_moderation_strategy.md)
+- [`product-strategy.md`](./product-strategy.md)
+- [`strategy.md`](./strategy.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
 - [`product-strategy.md`](../../../product-strategy.md)
 - [`strategy.md`](../../../strategy.md)
 - [`user-moderation-strategy-documentation-themes.md`](../../../user-moderation-strategy-documentation-themes.md)

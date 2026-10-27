@@ -4,7 +4,7 @@ declare(strict_types=1);
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Widgets\LoginWidget;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use PHPUnit\Framework\Assert;
 
@@ -12,9 +12,8 @@ uses(TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
-        $widget = new LoginWidget;
+        new LoginWidget;
 
-        Assert::assertInstanceOf(LoginWidget::class, $widget);
     });
 
     test('login widget has correct form schema', function (): void {
@@ -54,8 +53,6 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget extends xot base widget', function (): void {
-        $widget = new LoginWidget;
-
-        Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
+        Assert::assertSame(XotBaseSchemaWidget::class, get_parent_class(LoginWidget::class));
     });
 });

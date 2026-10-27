@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

@@ -220,7 +220,7 @@ app/Policies/OauthClientPolicy.php
 
 - [passport.md](./passport.md) - Documentazione completa Passport
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia modulo User
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic approfondita
+- [BUSINESS_LOGIC_DEEP_DIVE.md](./business-logic-deep-dive.md) - Business logic approfondita
 
 ---
 

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit;
+namespace Modules\User\Tests\Unit;
 
 use Mockery;
 use Modules\User\Models\Policies\RolePolicy;
 use Modules\User\Models\Policies\TeamPolicy;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 

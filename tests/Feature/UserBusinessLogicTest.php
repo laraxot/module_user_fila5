@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature;
+namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
@@ -14,7 +14,7 @@ use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 

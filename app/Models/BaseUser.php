@@ -27,6 +27,7 @@ use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\HasTeamsContract;
+use Modules\User\Contracts\UserNotificationsContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -129,7 +130,7 @@ use Spatie\Permission\Models\Permission;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -371,6 +372,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function notifications(): MorphMany
     {
         return $this->morphMany(Notification::class, 'notifiable');
+    }
+
+    /**
+     * Get the entity's unread notifications.
+     *
+     * @return MorphMany<Notification, $this>
+     */
+    public function unreadNotifications(): MorphMany
+    {
+        return $this->notifications()->unread();
     }
 
     /**

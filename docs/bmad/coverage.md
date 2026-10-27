@@ -2,10 +2,11 @@
 title: coverage
 module: User
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "coverage   user user"
+status: superseded
+superseded_by: ../coverage.md
 ---
 
 # Coverage — User

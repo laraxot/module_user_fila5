@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Traits;
+namespace Modules\User\Tests\Traits;
 
 use Modules\User\Models\User;
 

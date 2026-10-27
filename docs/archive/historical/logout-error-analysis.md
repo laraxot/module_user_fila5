@@ -121,7 +121,7 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -246,5 +246,5 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

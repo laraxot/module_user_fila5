@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Adapters\Socialite;
+namespace Modules\User\Tests\Unit\Adapters\Socialite;
 
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Adapters\Socialite\UserNameFieldsResolver;
-use Tests\Modules\User\TestCase;
-use Tests\Modules\User\Unit\Adapters\Socialite\Fixtures\SocialiteUserWithRawFixture;
+use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Adapters\Socialite\Fixtures\SocialiteUserWithRawFixture;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');

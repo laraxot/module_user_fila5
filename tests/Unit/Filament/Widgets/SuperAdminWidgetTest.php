@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;
 

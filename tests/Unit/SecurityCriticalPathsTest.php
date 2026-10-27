@@ -5,7 +5,7 @@ use Filament\Panel;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

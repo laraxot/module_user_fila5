@@ -1,11 +1,11 @@
 ---
 title: status
 module: User
-type: note
 status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "status user"
+type: note
 ---
 
 BMAD STATUS — User

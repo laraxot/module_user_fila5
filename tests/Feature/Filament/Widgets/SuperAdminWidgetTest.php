@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament\Widgets;
+namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Filament\Facades\Filament;
 use Filament\Widgets\WidgetConfiguration;
@@ -13,7 +13,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
@@ -25,7 +25,7 @@ uses(TestCase::class);
 /**
  * Connessione su cui vive il model Profile del progetto corrente: il main_module
  * lo decide XotData (via getProfileClass()), non il test. Stesso motivo/pattern
- * di tests/Modules/User/Feature/UserBusinessLogicTest.php::profileConnectionName() —
+ * di Modules/User/tests/Feature/UserBusinessLogicTest.php::profileConnectionName() —
  * duplicato qui invece di importato per restare nell'Owned File/Module Scope di
  * questa story (nessuna dipendenza da un altro file di test non elencato).
  */
@@ -82,7 +82,7 @@ beforeEach(function (): void {
     // (quaeris_data_test), dove quella tabella non esiste. Spatie Permission invalida
     // questa cache ad ogni assignRole()/removeRole() (config('permission.cache.store') = 'default').
     // Scope locale a questo processo di test, nessun file condiviso toccato: stesso sintomo
-    // riprodotto anche su tests/Modules/User/Feature/UserBusinessLogicTest.php (pre-esistente,
+    // riprodotto anche su Modules/User/tests/Feature/UserBusinessLogicTest.php (pre-esistente,
     // non causato da questa story).
     config(['cache.default' => 'array']);
 

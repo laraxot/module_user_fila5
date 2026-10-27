@@ -8,11 +8,15 @@ qmd: "actions-structure actions structure"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -92,6 +96,9 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
 - [Path Conventions](./path-conventions-user.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-user.md)
@@ -169,6 +176,9 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
 - [Path Conventions](./path-conventions-user.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-user.md)

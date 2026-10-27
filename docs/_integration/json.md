@@ -16,7 +16,8 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
-status: draft
+status: superseded
+superseded_by: ../-integration/json.md
 ---
 
 # json

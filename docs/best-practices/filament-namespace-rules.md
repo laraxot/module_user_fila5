@@ -63,4 +63,6 @@ class Dashboard extends Page
 - [Best Practices Filament](../../cms/project_docs/best-practices/filament.md) 
 - [Convenzioni Namespace Filament](../../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../../Xot/docs/README.md)
+- [Convenzioni Namespace Filament](../../../Cms/docs/convenzioni-namespace-filament.md)
+- [Regole Generali Xot](../../../Xot/docs/README.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md) 

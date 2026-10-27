@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -30,7 +30,6 @@ describe('AnalyzeSocialiteEmailDomainAction', function () {
             app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, '');
             Assert::fail('Expected InvalidArgumentException');
         } catch (InvalidArgumentException $exception) {
-            Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
         }
     });
 

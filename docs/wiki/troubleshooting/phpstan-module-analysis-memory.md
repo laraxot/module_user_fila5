@@ -10,6 +10,12 @@ issues:
 discussions:
 related:
   - "./filament-user-creation-pty-error.md"
+  - "./git-merge-conflict-inventory.md"
+  - "./git-merge-conflict-inventory.md"
+  - "./git-push-lfs-missing-objects.md"
+  - "./phpstan-widget-property-types.md"
+  - "./phpstan-widget-property-types.md"
+  - "./spatie-permission-team-model-not-configured.md"
   - "./git-merge-conflict-inventory-stato-rinominato.md"
   - "./git-merge-conflict-inventory.md"
   - "./git-push-lfs-missing-objects.md"

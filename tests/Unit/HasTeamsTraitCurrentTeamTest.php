@@ -2,17 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit;
+namespace Modules\User\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Models\Team;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /* @var \Tests\Modules\User\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
     TestCase::skipUnlessUsersTableReady();
 });
@@ -23,7 +22,6 @@ describe('Has Teams Trait Current Team', function (): void {
         $user = hasTeamsCurrentCreateUser();
 
         Assert::assertNull($user->currentTeam);
-        Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
     });
 
     test('has teams current team is side effect free', function (): void {

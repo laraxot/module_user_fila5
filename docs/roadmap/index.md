@@ -3,6 +3,7 @@ module: theme
 topic: index
 canonical: ../../../../Themes/docs/shared-components/00-index-Modules.md
 related:
+  - "./00-index.md"
   - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"

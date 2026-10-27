@@ -11,7 +11,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;

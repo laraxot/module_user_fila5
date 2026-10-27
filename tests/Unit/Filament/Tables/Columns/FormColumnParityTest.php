@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Modules\User\Filament\Tables\Columns\SingleRoleSelectColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 use function Safe\glob;
 use function Safe\preg_replace;

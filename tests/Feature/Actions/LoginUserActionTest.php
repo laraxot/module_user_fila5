@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Actions;
+namespace Modules\User\Tests\Feature\Actions;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
@@ -10,14 +10,14 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
-        /* @var \Tests\Modules\User\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         /* @var TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
@@ -27,6 +27,7 @@ describe('Login User Action', function (): void {
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-1',
             'email' => (string) $user->email,
+            'user_id' => $user->getKey(),
         ]);
         $socialiteUser->setRelation('user', $user);
 
@@ -36,6 +37,28 @@ describe('Login User Action', function (): void {
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
+    });
+
+    test('refuses a Google login for an account its owner deleted', function (): void {
+        /* @var TestCase $this */
+        Event::fake([SocialiteUserConnected::class]);
+
+        $user = UserFactory::new()->createOne();
+        $user->forceFill(['deleted_at' => now()])->saveQuietly();
+
+        $socialiteUser = new SocialiteUser([
+            'provider' => 'google',
+            'provider_id' => 'provider-id-deleted',
+            'email' => (string) $user->email,
+            'user_id' => $user->getKey(),
+        ]);
+        $socialiteUser->setRelation('user', $user);
+
+        $response = app(LoginUserAction::class)->execute($socialiteUser);
+
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
+        $this->assertGuest();
+        Event::assertNotDispatched(SocialiteUserConnected::class);
     });
 
     test('throws when related user is not authenticatable', function (): void {

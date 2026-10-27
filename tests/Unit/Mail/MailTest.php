@@ -3,7 +3,7 @@
 declare(strict_types=1);
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -19,7 +19,6 @@ test('TeamInvitation mail can be instantiated', function () {
     $mail = new TeamInvitation;
     $mail->invitation = $model;
 
-    Assert::assertInstanceOf(TeamInvitation::class, $mail);
     Assert::assertSame($model, $mail->invitation);
 });
 

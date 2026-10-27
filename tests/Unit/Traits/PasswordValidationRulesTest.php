@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits;
+namespace Modules\User\Tests\Unit\Traits;
 
-use Tests\Modules\User\TestCase;
-use Tests\Modules\User\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
-use Tests\Modules\User\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
+use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 
@@ -15,10 +15,7 @@ uses(TestCase::class);
 describe('Password Validation Rules', function (): void {
     test('password validation rules trait can be used', function (): void {
         Assert::assertTrue(trait_exists(PasswordValidationRules::class));
-        Assert::assertInstanceOf(
-            PasswordValidationRulesFixture::class,
-            new PasswordValidationRulesFixture,
-        );
+        Assert::assertSame(PasswordValidationRulesFixture::class, get_class(new PasswordValidationRulesFixture));
     });
 
     test('password validation rules trait provides password rules method', function (): void {

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 use Filament\Facades\Filament;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Notification as NotificationFacade;
 use Livewire\Features\SupportTesting\Testable;
@@ -11,7 +10,7 @@ use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
 use Modules\User\Http\Livewire\Team\Change;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -27,7 +26,7 @@ require_once __DIR__.'/../../../../Support/team-management-helpers.php';
  * esiste sulla connessione `user` di questo ambiente (verificato via
  * `SHOW CREATE TABLE teams`: PK reale e' `id int(10) unsigned AUTO_INCREMENT`, nessuna
  * colonna uuid) — schema/factory drift pre-esistente, riprodotto anche dal test
- * indipendente `tests/Modules/User/Feature/TeamManagementTest.php::"can create a team"`,
+ * indipendente `Modules/User/tests/Feature/TeamManagementTest.php::"can create a team"`,
  * fuori dall'Owned File/Module Scope di questa story (TeamFactory.php non e' elencato).
  * Bypass locale scoped a questo file, nessuna migrazione/factory toccata.
  *
@@ -82,7 +81,6 @@ describe('TeamChangeWidget mount + render', function (): void {
         $widget = $component->instance();
         Assert::assertInstanceOf(TeamChangeWidget::class, $widget);
         $rendered = $widget->render();
-        Assert::assertInstanceOf(View::class, $rendered);
         Assert::assertSame('ui::livewire.empty', $rendered->getData()['view'] ?? null);
         Assert::assertSame([], $component->get('teams'));
     });

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Actions\Socialite\Fixtures;
+namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures;
 
 /**
  * Minimal access-token stub for logout action tests.

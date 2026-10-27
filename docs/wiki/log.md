@@ -4,13 +4,14 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
+updated: 2026-07-27
 updated: 2026-10-14
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
 related:
   - "./agents.md"
-  - "./architecture.md"
+  - "./Architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"
@@ -44,6 +45,7 @@ status: draft
 ## [2026-06-04] bugfix | profiles.uuid su connection fixcity (sqlite locale)
 - errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
 - causa: tabella `profiles` legacy su `fixcity_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
+- ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 - ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 - verifica: `getProfileModelByUserId()` crea profilo con `uuid`; schema sqlite include indice `profiles_uuid_index`
 - riferimento: `concepts/profile-migration-uuid-contract.md`
@@ -80,6 +82,7 @@ status: draft
 - fix applicato: rimosso `after()` dal create; `after()` resta nel `tableUpdate()`
   idempotente (ALTER path).
 - verifica:
+  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
   ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
   eseguito con esito `DONE`.
 - docs aggiornati: `concepts/profile-migration-uuid-contract.md`.

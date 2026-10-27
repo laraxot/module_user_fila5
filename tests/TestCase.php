@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User;
+namespace Modules\User\Tests;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -31,7 +31,7 @@ use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
-use Tests\Modules\Xot\XotBaseTestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 

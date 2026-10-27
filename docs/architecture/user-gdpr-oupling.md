@@ -7,7 +7,7 @@ related:
   - "./architecture.md"
   - "./auth-blade-structure.md"
   - "./component-registration.md"
-  - "./readme.md"
+  - "./README.md"
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"

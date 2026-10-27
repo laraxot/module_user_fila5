@@ -9,8 +9,8 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
-use Tests\Modules\User\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
+use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
@@ -21,7 +21,6 @@ describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
         $exception = ProviderNotConfigured::make('github');
 
-        Assert::assertInstanceOf(ProviderNotConfigured::class, $exception);
         Assert::assertStringContainsString('Provider "github" is not configured', $exception->getMessage());
     });
 

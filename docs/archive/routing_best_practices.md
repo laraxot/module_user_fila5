@@ -464,6 +464,6 @@ public function logout()
 
 ## Collegamenti
 
-- [Documentazione Volt](./volt_logout.md)
-- [Struttura Directory](./directory_structure_checklist.md)
-- [Gestione Errori](./error_handling.md) 
+- [Documentazione Volt](./volt-logout.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 

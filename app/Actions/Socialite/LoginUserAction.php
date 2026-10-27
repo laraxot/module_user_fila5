@@ -26,6 +26,12 @@ class LoginUserAction
     {
         /** @var UserContract $user */
         $user = $socialiteUser->user()->firstOrFail();
+        // Un account eliminato dal titolare (Gdpr DeleteAccountAction, `deleted_at`) resta chiuso anche con Google:
+        // l'informativa dice che l'account e' disattivato subito, come per il login con password (LoginWidget).
+        if ($user->getAttribute('deleted_at') !== null) {
+            return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
+        }
+
 
         event(new SocialiteUserConnected($socialiteUser));
 

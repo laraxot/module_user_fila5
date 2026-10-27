@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Traits;
+namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

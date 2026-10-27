@@ -14,8 +14,8 @@ use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Tests\Modules\User\TestCase;
 
 uses(TestCase::class);
 

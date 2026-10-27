@@ -10,9 +10,12 @@ qmd: "implementazione corretta delle pagine di autenticazione con volt e folio u
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Errors](./volt-errors.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
 
 ## Introduzione
 
@@ -548,11 +551,14 @@ module: theme
 topic: volt-folio-auth-implementation
 canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

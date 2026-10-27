@@ -286,8 +286,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation

@@ -89,7 +89,7 @@ public function boot(): void
 
 ## Resources
 
-- [Administrative Actions in UI](./passport_admin_actions.md)
+- [Administrative Actions in UI](./passport-admin-actions.md)
 - Official docs: https://laravel.com/docs/12.x/passport  
 - GitHub repo: https://github.com/laravel/passport  
 - OAuth2 Server library: https://github.com/thephpleague/oauth2-server  

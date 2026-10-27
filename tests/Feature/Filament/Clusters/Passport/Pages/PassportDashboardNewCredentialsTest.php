@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Filament\Clusters\Passport\Pages;
+namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Pages;
 
 use Illuminate\Support\Collection;
 use Laravel\Passport\ClientRepository;
@@ -11,7 +11,7 @@ use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

@@ -46,7 +46,7 @@ Residui di iterazioni agenti.
 
 ## Piano bonifica
 
-Identico a Notify (vedi `PERFECTION_AUDIT.md` in Notify/docs/).
+Identico a Notify (vedi `perfection-audit.md` in Notify/docs/).
 
 ### Fase 1 — Emergency
 ```bash

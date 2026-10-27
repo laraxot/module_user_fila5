@@ -3,16 +3,20 @@ title: "Correzione PHPStan - Relationship Type Hints"
 type: concept
 tags: [phpstan, relationship, fix]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-23
 qmd: "phpstan-relationship-fix correzione phpstan - relationship type hints"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -93,10 +97,27 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - Seguire la documentazione PHPStan per template covariance
 - Verificare sempre con PHPStan Level 9 dopo modifiche
 
+## Contratti che dichiarano la relazione (2026-10-20)
+
+Un'interfaccia non ha un modello concreto: il secondo parametro template di `MorphMany` non puo' essere `$this`
+(`generics.notSubtype`, `$this` dell'interfaccia non e' un `Model`) e non puo' essere `Model` semplice
+(`method.childReturnType`, perche' i trait delle implementazioni restituiscono `MorphMany<X, $this>` e il template
+`TDeclaringModel` non e' covariante). Nei contratti si usa `covariant Model`:
+
+```php
+// HasAuthentications, UserNotificationsContract
+/** @return MorphMany<AuthenticationLog, covariant Model> */
+public function authentications(): MorphMany;
+```
+
+Le implementazioni (`HasAuthenticationLogTrait`, `BaseUser::notifications()` e `unreadNotifications()`) restano
+`MorphMany<X, $this>`. Verificato con PHPStan sul solo `Modules/User` (lane user-a, story
+[phpstan-test-wave-user-a](./stories/phpstan-test-wave-user-a.story.md)).
+
 ## Collegamenti
 
 - [PHPStan Template Covariance](https://phpstan.org/blog/whats-up-with-template-covariant)
-- [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
+- [Eloquent Relationships](https://laravel.com/docs/12.x/eloquent-relationships)
 
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*

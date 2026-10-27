@@ -2,6 +2,23 @@
 title: "Implementazione Corretta di logout.blade.php"
 type: note
 status: draft
+updated: 2026-10-26
+tags: [docs, user]
+qmd: "implementazione corretta di logout.blade.php user"
+---
+# Implementazione Corretta di logout.blade.php
+
+## Collegamenti correlati
+- [Documentazione centrale](../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Errors](./VOLT_ERRORS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+---
+status: draft
 updated: 2026-10-13
 tags: [docs, user]
 qmd: "implementazione corretta di logout.blade.php user"
@@ -12,11 +29,11 @@ qmd: "implementazione corretta di logout.blade.php user"
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Errors](./volt-errors.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
-- [Volt Logout Action](./volt-logout-action.md)
-- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -225,11 +242,14 @@ module: theme
 topic: logout-blade-implementation
 canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

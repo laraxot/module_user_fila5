@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Models;
+namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Models\BaseTeam;
-use Tests\Modules\User\TestCase;
-use Tests\Modules\User\Unit\Models\Fixtures\TestBaseTeam;
-use Tests\Modules\User\Unit\Models\Fixtures\TestBaseUser;
+use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Models\Fixtures\TestBaseTeam;
+use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;

@@ -4,8 +4,9 @@ type: rule
 module: User
 tags: [can-comment, models-contracts, retired, boundary]
 created: 2026-06-10
-updated: 2026-06-18
+updated: 2026-10-21
 qmd: "User CanComment Comment module dependency retired BaseUser no comment"
+status: done
 issues:
 discussions:
 related:
@@ -17,7 +18,6 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-status: draft
 ---
 
 # CanComment — non più in User
@@ -28,5 +28,11 @@ status: draft
 - Precedente archivio: `app/Models/Contracts/CanComment.php.old`
 - Nessuna SSOT attiva in `User`: il modulo identity non espone contratti o trait di Comment.
 - `BaseUser` non deve implementare `CanComment` né usare trait/comment relations di moduli opzionali.
+
+## Verifica
+
+- `grep -rn "Modules\\\\Comment" laravel/Modules/User/app/` → 0 risultati
+- `grep -rn "CanComment" laravel/Modules/User/app/` → 0 risultati (solo `.old` archived)
+- Test `NoCommentModuleDependencyTest.php` passa
 
 Non reintrodurre alias attivi in User.

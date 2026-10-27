@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Actions\Socialite\Utils;
+namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

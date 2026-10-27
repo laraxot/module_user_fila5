@@ -208,7 +208,7 @@ test('client can have permissions', function () {
 
 - [Laravel Passport Docs](https://laravel.com/docs/passport)
 - [Spatie Permission](https://spatie.be/docs/laravel-permission)
-- [User Module Architecture](../architecture.md)
+- [User Module Architecture](../ARCHITECTURE.md)
 - [OAuth Actions](../actions/oauth-actions.md)
 
 ---

@@ -104,7 +104,7 @@ Funzionalità team includono:
 - [Documentazione Root User](../../../project_docs/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
-- [PHPStan Fixes](./phpstan_fixes.md)
+- [PHPStan Fixes](./phpstan-fixes.md)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

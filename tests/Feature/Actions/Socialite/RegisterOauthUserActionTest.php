@@ -7,7 +7,7 @@ use Modules\User\Actions\Socialite\RegisterOauthUserAction;
 use Modules\User\Events\Registered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

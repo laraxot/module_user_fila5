@@ -8,11 +8,15 @@ qmd: "user-factory-advanced-integration userfactory advanced integration - modul
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -310,6 +314,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
@@ -605,6 +611,8 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [User Factory Integration](./user-factory-integration-module.md)
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)

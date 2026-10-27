@@ -122,9 +122,12 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./routing-best-practices.md)
+- [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
-- [Gestione Sessione](./session-management.md) 
+- [Gestione Sessione](./session_management.md) 
+- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md) 
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore
@@ -176,11 +179,14 @@ module: theme
 topic: volt-folio-logout-error
 canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+status: draft
 ---
 
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
@@ -493,6 +494,7 @@ public function logout()
 - [Documentazione Volt](./volt-logout.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
+- [Documentazione Volt](./volt-logout.md)
 - [Documentazione Volt](../volt-logout.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 

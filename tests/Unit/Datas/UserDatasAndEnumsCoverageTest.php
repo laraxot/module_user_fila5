@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Unit\Datas;
+namespace Modules\User\Tests\Unit\Datas;
 
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Enums\LanguageEnum;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -65,7 +65,6 @@ describe('User Datas And Enums Coverage', function (): void {
 
         $data = PermissionData::make();
 
-        Assert::assertInstanceOf(PermissionData::class, $data);
         Assert::assertStringContainsString('Role', (string) $data->models->role);
         Assert::assertSame('permissions', $data->table_names->permissions);
         Assert::assertSame('spatie.permission.cache', $data->cache->key);
@@ -96,7 +95,6 @@ describe('User Datas And Enums Coverage', function (): void {
 
         $data = FilamentShieldData::make();
 
-        Assert::assertInstanceOf(FilamentShieldData::class, $data);
         Assert::assertSame(-1, $data->shield_resource->navigation_sort);
         Assert::assertSame('super_admin', $data->super_admin->name);
         Assert::assertTrue($data->filament_user->enabled);

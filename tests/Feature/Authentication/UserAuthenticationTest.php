@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Feature\Authentication;
+namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -17,7 +17,7 @@ use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

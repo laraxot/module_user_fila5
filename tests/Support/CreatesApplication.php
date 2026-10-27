@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\User\Support;
+namespace Modules\User\Tests\Support;
 
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;

@@ -12,7 +12,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
-use Tests\Modules\User\TestCase;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -47,7 +47,7 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
 }
 
 beforeEach(function () {
-    /* @var \Tests\Modules\User\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     config(['passport.connection' => 'user']);
 });
 
