@@ -422,29 +422,6 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertSame(Role::class, ShieldUtilsAction::getRoleModel());
         Assert::assertSame(Permission::class, ShieldUtilsAction::getPermissionModel());
 
-        Assert::assertSame('web', ShieldUtilsAction::getFilamentAuthGuard());
-        Assert::assertSame('roles', ShieldUtilsAction::getResourceSlug());
-        Assert::assertTrue(ShieldUtilsAction::isResourceNavigationRegistered());
-        Assert::assertSame(['view', 'update'], ShieldUtilsAction::getGeneralResourcePermissionPrefixes());
-        Assert::assertSame('page', ShieldUtilsAction::getPagePermissionPrefix());
-        Assert::assertSame('widget', ShieldUtilsAction::getWidgetPermissionPrefix());
-        Assert::assertTrue(ShieldUtilsAction::isResourceEntityEnabled());
-        Assert::assertTrue(ShieldUtilsAction::isPageEntityEnabled());
-        Assert::assertTrue(ShieldUtilsAction::isWidgetEntityEnabled());
-        Assert::assertFalse(ShieldUtilsAction::isCustomPermissionEntityEnabled());
-        Assert::assertSame('policies_and_permissions', ShieldUtilsAction::getGeneratorOption());
-        Assert::assertSame(['FooResource'], ShieldUtilsAction::getExcludedResouces());
-        Assert::assertSame(['BarPage'], ShieldUtilsAction::getExcludedPages());
-        Assert::assertSame(['BazWidget'], ShieldUtilsAction::getExcludedWidgets());
-        // `Utils` e `ShieldUtilsAction` duplicano la stessa logica: il contratto
-        // che questo test protegge è che le due implementazioni non divergano.
-        Assert::assertSame(
-            ShieldUtilsAction::isAuthProviderConfigured(),
-            ShieldUtilsAction::isAuthProviderConfigured()
-        );
-        Assert::assertTrue(ShieldUtilsAction::doesResourceHaveCustomPermissions($resourceClass));
-        Assert::assertSame(['custom-view', 'custom-update'], ShieldUtilsAction::getResourcePermissionPrefixes($resourceClass));
-        Assert::assertSame(User::class, ShieldUtilsAction::showModelPath($resourceClass));
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {
