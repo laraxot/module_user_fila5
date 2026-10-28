@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
+use stdClass;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -272,7 +273,7 @@ describe('Authentication Business Logic', function () {
             ];
 
             // Business Logic: Higher level roles have more permissions
-            usort($roles, fn ($a, $b) => $a->level <=> $b->level);
+            usort($roles, fn (stdClass $a, stdClass $b) => $a->level <=> $b->level);
 
             Assert::assertSame('admin', $roles[0]->name);
             Assert::assertContains('*', $roles[0]->permissions);
