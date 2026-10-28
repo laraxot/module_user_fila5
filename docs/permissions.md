@@ -3,7 +3,6 @@ title: "Gestione dei Permessi"
 type: concept
 tags: [permissions]
 created: 2026-07-14
-updated: 2026-07-14
 updated: 2026-10-18
 qmd: "permissions gestione dei permessi"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]

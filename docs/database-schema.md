@@ -3,7 +3,6 @@ title: "User Module Database Schema"
 type: reference
 tags: [user, database, schema]
 created: 2026-07-28
-updated: 2026-07-28
 updated: 2026-10-19
 status: draft
 qmd: "user module   database schema user"

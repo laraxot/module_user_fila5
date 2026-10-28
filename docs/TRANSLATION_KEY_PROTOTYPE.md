@@ -4,7 +4,6 @@ module: user
 type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
-updated: 2026-08-24
 updated: 2026-10-18
 status: draft
 qmd: "translation key prototype user"

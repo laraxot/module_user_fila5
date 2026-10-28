@@ -3,7 +3,6 @@ title: "Errori Comuni in Volt e Soluzioni"
 type: concept
 tags: [volt, errors]
 created: 2026-07-14
-updated: 2026-07-14
 updated: 2026-10-20
 qmd: "volt-errors errori comuni in volt e soluzioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
