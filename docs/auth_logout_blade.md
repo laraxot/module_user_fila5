@@ -9,12 +9,12 @@ qmd: "implementazione corretta di logout.blade.php user"
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../docs/README.md)
+- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
+- [Logout Page Fix](./logout_page_fix.md)
 ---
 status: draft
 updated: 2026-10-13

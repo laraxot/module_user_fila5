@@ -9,7 +9,7 @@ related:
   - module: Fixcity
   - ./filament-blueprint.md
   - ./decision-log.md
-  - ../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md
+  - ../../../../Themes/Sixteen/docs/bmad/plans/oauth-login-locale-fix.md
 summary: |
   Login Google sul FO pubblico: stesso prefisso lingua della pagina login.
   Entry `/it/auth/login/google`, callback `/it/auth/login/google/callback`.

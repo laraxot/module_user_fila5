@@ -1,3 +1,11 @@
+---
+title: "ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore architetturale critico: uso diretto di componenti livewire nei login-card user"
+---
 # ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card
 
 ## Problema Identificato

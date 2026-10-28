@@ -1,3 +1,11 @@
+---
+title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "final summary - user module passport integration & architecture refactoring user"
+---
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: 2026-01-07
@@ -277,7 +285,7 @@ public function getHeaderActions(): array
 ## 📚 Documentation References
 
 ### Internal Documentation
-- [Passport Integration](./passport_integration.md)
+- [Passport Integration](../../passport-integration.md)
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
 - [README](./README.md)

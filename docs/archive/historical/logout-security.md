@@ -1,3 +1,11 @@
+---
+title: "Sicurezza nel Processo di Logout"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "sicurezza nel processo di logout user"
+---
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza

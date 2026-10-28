@@ -1,3 +1,12 @@
+---
+title: "Gestione delle Sessioni"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "gestione delle sessioni user"
+status: superseded
+superseded_by: historical/session-management.md
+---
 # Gestione delle Sessioni
 
 ## Panoramica

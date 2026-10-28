@@ -1,3 +1,11 @@
+---
+title: "PHPStan Fixes - Modulo User - Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "phpstan fixes - modulo user - gennaio 2025 user"
+---
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -213,8 +221,8 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ### **Documentazione Correlata**
 - [README.md Modulo User](./README.md)
-- [Authentication Guide](./authentication.md)
-- [Best Practices](./best-practices.md)
+- [Authentication Guide](../../authentication.md)
+- [Best Practices](../../best-practices.md)
 
 ### **Risorse Esterne**
 - [Laravel Authentication](https://laravel.com/docs/authentication)

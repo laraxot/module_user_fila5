@@ -1,3 +1,12 @@
+---
+title: "Struttura delle Blade di Autenticazione con Volt"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura delle blade di autenticazione con volt user"
+status: superseded
+superseded_by: historical/auth-blade-structure.md
+---
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione

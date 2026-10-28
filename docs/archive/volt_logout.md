@@ -1,3 +1,12 @@
+---
+title: "Implementazione del Logout con Volt"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del logout con volt user"
+status: superseded
+superseded_by: historical/volt-logout.md
+---
 # Implementazione del Logout con Volt
 
 ## Il Problema

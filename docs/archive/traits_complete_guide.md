@@ -1,3 +1,12 @@
+---
+title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "guida completa ai trait del modulo user - aggiornato post-implementazione user"
+status: superseded
+superseded_by: historical/traits-complete-guide.md
+---
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO

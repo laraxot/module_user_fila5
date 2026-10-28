@@ -1,3 +1,11 @@
+---
+title: "User Module Documentation"
+type: index
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module documentation user"
+---
 # User Module Documentation
 
 ## Overview

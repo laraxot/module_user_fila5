@@ -7,7 +7,7 @@ tags: [docs, user]
 qmd: "fix credenziali login   bmad + second brain user"
 ---
 # Fix credenziali login — BMAD + second brain
-Scopo: assicurare che marco.sottana@gmail.com con prova123 possa accedere.
+Scopo: assicurare che marco.sottana@gmail.com con la propria password possa accedere.
 Sorgente errore: hash password nel DB non corrispondeva.
 Azione: verificata localmente con `Hash::check`; non si dichiara risolto il deploy finché il database produzione non viene verificato. Stack: NO Bootstrap Italia.
 Docs: aggiornate in moduli e temi. Dati sacri: nessuna migrazione distruttiva.

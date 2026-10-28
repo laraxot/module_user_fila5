@@ -1,3 +1,12 @@
+---
+title: "Struttura del Logout Blade nel Theme One"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura del logout blade nel theme one user"
+status: superseded
+superseded_by: historical/logout-blade-structure.md
+---
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta

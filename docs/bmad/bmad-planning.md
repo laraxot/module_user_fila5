@@ -9,11 +9,11 @@ updated: 2026-10-16
 tags: [bmad, planning, second-brain, filament-blueprint, user]
 qmd: "bmad planning user scopo onde filament"
 related:
-  - ./bmad/project-context.md
-  - ./bmad/brainstorming.md
-  - ./bmad/filament-ux-brainstorming.md
-  - ./bmad-brainstorming.md
-  - ./bmad/filament-blueprint.md
+  - ./project-context.md
+  - ./brainstorming.md
+  - ./filament-ux-brainstorming.md
+  - ../bmad-brainstorming.md
+  - ./filament-blueprint.md
 ---
 
 # Obiettivo
@@ -54,7 +54,7 @@ Resource/widget di competenza:
 - BaseProfileResource
 - AuthenticationLogResource
 
-Dettaglio contratto: [filament-blueprint.md](./bmad/filament-blueprint.md).
+Dettaglio contratto: [filament-blueprint.md](./filament-blueprint.md).
 
 ## Second brain
 

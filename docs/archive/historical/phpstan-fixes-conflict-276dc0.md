@@ -1,3 +1,12 @@
+---
+title: "User Module - PHPStan Fixes Session 2025-10-01"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - phpstan fixes session 2025-10-01 user"
+status: superseded
+superseded_by: phpstan-fixes.md
+---
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -205,9 +214,9 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ## 🔗 Collegamenti
 
 - [← User Module README](./README.md)
-- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← PHPStan Session Report](../../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../../docs/index.md)
+- [← Root Documentation](../../index.md)
 
 ---
 

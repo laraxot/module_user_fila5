@@ -1,3 +1,12 @@
+---
+title: "Analisi dell'Errore di Implementazione Volt/Blade"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi dell'errore di implementazione volt/blade user"
+status: superseded
+superseded_by: volt-blade-implementation.md
+---
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati

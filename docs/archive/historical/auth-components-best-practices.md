@@ -1,3 +1,12 @@
+---
+title: "Best Practices per i Componenti di Autenticazione"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per i componenti di autenticazione user"
+status: superseded
+superseded_by: ../../auth-components-best-practices.md
+---
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati

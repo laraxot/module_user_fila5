@@ -1088,14 +1088,14 @@ See [ROADMAP.md](./roadmap.md) for details.
 ## 📖 Related Documentation
 
 ### Internal Modules
-- [Xot Module](../Xot/docs/README.md) - Core foundation
-- [Activity Module](../Activity/docs/README.md) - Activity tracking
-- [Lang Module](../Lang/docs/README.md) - Translations
-- [Tenant Module](../Tenant/docs/README.md) - Enhanced tenancy
+- [Xot Module](../../Xot/docs/README.md) - Core foundation
+- [Activity Module](../../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../../Lang/docs/README.md) - Translations
+- [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../docs/security.md)
+- [Security Guidelines](../../../../docs/security.md)
 - [Xot Module](../../Xot/docs/README.md) - Core foundation
 - [Activity Module](../../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../../Lang/docs/README.md) - Translations

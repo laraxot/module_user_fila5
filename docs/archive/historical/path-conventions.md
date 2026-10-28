@@ -1,7 +1,15 @@
+---
+title: "Convenzioni Path nei Moduli Laravel"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "convenzioni path nei moduli laravel user"
+---
 # Convenzioni Path nei Moduli Laravel
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)

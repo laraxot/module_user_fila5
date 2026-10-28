@@ -8,7 +8,7 @@ qmd: "phpstan-fixes correzioni phpstan nel modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./base-classes-corrections-.md"
+  - "../fixes/base-classes-corrections-.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
@@ -67,8 +67,8 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 * [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
 ## Collegamenti tra versioni di phpstan-fixes.md
-* [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes.md)
+* [phpstan-fixes-8.md](../../../Xot/docs/phpstan-fixes.md)
 * [phpstan-fixes-8.md](../phpstan-fixes.md)
-* [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes.md)
-* [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes.md)
+* [phpstan-fixes-8.md](../fixes/phpstan-fixes.md)
+* [phpstan-fixes-8.md](../../../Activity/docs/phpstan-fixes.md)
 

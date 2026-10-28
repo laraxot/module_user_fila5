@@ -1,3 +1,12 @@
+---
+title: "FullCalendar Scheduler - Documentazione Completa"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "fullcalendar scheduler - documentazione completa user"
+status: superseded
+superseded_by: ../fullcalendar-scheduler-documentation-summary-1.md
+---
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica

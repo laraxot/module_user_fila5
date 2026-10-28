@@ -1,3 +1,11 @@
+---
+title: "Correzioni Ereditarietà Modelli - Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "correzioni ereditarietà modelli - modulo user user"
+---
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -189,6 +197,6 @@ cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
 
 - [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
-- [BaseModel](../app/Models/BaseModel.php)
-- [BasePivot](../app/Models/BasePivot.php)
-- [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+- [BaseModel](../../app/Models/BaseModel.php)
+- [BasePivot](../../app/Models/BasePivot.php)
+- [BaseMorphPivot](../../app/Models/BaseMorphPivot.php)

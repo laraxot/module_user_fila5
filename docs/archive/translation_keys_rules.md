@@ -1,3 +1,12 @@
+---
+title: "Regole per le Chiavi di Traduzione"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "regole per le chiavi di traduzione user"
+status: superseded
+superseded_by: historical/translation-keys-rules.md
+---
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali

@@ -1,3 +1,11 @@
+---
+title: "Gestione delle Sessioni"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "gestione delle sessioni user"
+---
 # Gestione delle Sessioni
 
 ## Panoramica

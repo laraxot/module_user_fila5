@@ -1,3 +1,12 @@
+---
+title: "Piano di Implementazione Componenti Header"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "piano di implementazione componenti header user"
+status: superseded
+superseded_by: historical/implementation-plan.md
+---
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura

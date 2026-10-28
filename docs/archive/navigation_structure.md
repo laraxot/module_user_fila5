@@ -1,3 +1,12 @@
+---
+title: "Struttura Navigazione"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura navigazione user"
+status: superseded
+superseded_by: historical/navigation-structure.md
+---
 # Struttura Navigazione
 
 ## Overview

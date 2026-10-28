@@ -16,8 +16,11 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
   - "./actions-structure.md"
-status: draft
+status: superseded
+superseded_by: ./00-index.md
 ---
+
+> Superseded il 2026-10-27: l'indice canonico e' [00-index.md](./00-index.md). Contenuto conservato per storia (copia dell'indice del 2026-07-14).
 
 # 📚 **Indice Documentazione Modulo User**
 

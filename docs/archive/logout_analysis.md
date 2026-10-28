@@ -1,3 +1,12 @@
+---
+title: "Analisi del File Logout.blade.php"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi del file logout.blade.php user"
+status: superseded
+superseded_by: historical/logout-analysis.md
+---
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale

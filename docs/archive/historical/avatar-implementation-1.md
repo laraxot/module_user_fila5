@@ -1,3 +1,11 @@
+---
+title: "Implementazione degli Avatar"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione degli avatar user"
+---
 # Implementazione degli Avatar
 
 ## Collegamenti correlati

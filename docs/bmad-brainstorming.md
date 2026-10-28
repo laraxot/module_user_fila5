@@ -12,7 +12,7 @@ related:
   - ./bmad/project-context.md
   - ./bmad/brainstorming.md
   - ./bmad/filament-ux-brainstorming.md
-  - ./bmad-planning.md
+  - ./bmad/bmad-planning.md
   - ./bmad/filament-blueprint.md
 ---
 
@@ -65,4 +65,4 @@ Come tenere chrome Filament (user menu/widget) senza reintrodurre Livewire HTTP 
 
 ## Prossimo step BMAD
 
-Vedi [bmad-planning.md](./bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.
+Vedi [bmad-planning.md](./bmad/bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.

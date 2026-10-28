@@ -1,3 +1,11 @@
+---
+title: "Laravel Passport Documentation (Version 13.4.x)"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "laravel passport documentation (version 13.4.x) user"
+---
 # Laravel Passport Documentation (Version 13.4.x)
 
 ## Overview

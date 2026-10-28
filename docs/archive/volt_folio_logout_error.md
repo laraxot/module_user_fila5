@@ -1,3 +1,11 @@
+---
+title: "Errore nel Logout con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore nel logout con volt e folio user"
+---
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema

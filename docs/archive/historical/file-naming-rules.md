@@ -1,3 +1,11 @@
+---
+title: "Regole di Naming per File"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "regole di naming per file user"
+---
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

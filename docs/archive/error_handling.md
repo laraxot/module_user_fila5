@@ -1,3 +1,12 @@
+---
+title: "Gestione degli Errori nelle Blade di Autenticazione"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "gestione degli errori nelle blade di autenticazione user"
+status: superseded
+superseded_by: historical/error-handling.md
+---
 # Gestione degli Errori nelle Blade di Autenticazione
 
 ## Introduzione

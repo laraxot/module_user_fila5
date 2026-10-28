@@ -1,3 +1,12 @@
+---
+title: "Convenzione dei Percorsi per le Actions"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "convenzione dei percorsi per le actions user"
+status: superseded
+superseded_by: historical/actions-path-convention.md
+---
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale

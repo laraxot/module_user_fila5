@@ -1,3 +1,11 @@
+---
+title: "Componenti Header"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "componenti header user"
+---
 # Componenti Header
 
 ## Struttura e Convenzioni

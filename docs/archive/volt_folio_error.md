@@ -1,3 +1,12 @@
+---
+title: "Errore VoltDirectiveMissingException in Folio"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore voltdirectivemissingexception in folio user"
+status: superseded
+superseded_by: historical/volt-folio-error.md
+---
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema

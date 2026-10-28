@@ -1,3 +1,12 @@
+---
+title: "Componenti Header"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "componenti header user"
+status: superseded
+superseded_by: historical/header-components.md
+---
 # Componenti Header
 
 ## Struttura e Convenzioni

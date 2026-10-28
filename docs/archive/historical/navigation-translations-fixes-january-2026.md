@@ -1,3 +1,12 @@
+---
+title: "Correzioni Traduzioni Navigation - Gennaio 2026"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "correzioni traduzioni navigation - gennaio 2026 user"
+status: superseded
+superseded_by: navigation-translations-fixes-january.md
+---
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -184,7 +193,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
+- [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
 
 ## Note Tecniche

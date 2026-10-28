@@ -1,3 +1,11 @@
+---
+title: "Correzioni Traduzioni Navigation - Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "correzioni traduzioni navigation - modulo user user"
+---
 # Correzioni Traduzioni Navigation - Modulo User
 
 ## Data Intervento
@@ -76,7 +84,7 @@
 ## Collegamenti
 
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../../../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](README.md)
 

@@ -1,3 +1,12 @@
+---
+title: "Best Practices per il Routing in Architettura Volt + Folio + Filament"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per il routing in architettura volt + folio + filament user"
+status: superseded
+superseded_by: historical/routing-best-practices.md
+---
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
 
 ## Il Principio Fondamentale

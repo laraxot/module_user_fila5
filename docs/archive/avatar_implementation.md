@@ -1,3 +1,12 @@
+---
+title: "Implementazione degli Avatar"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione degli avatar user"
+status: superseded
+superseded_by: historical/avatar-implementation.md
+---
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati
