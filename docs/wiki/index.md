@@ -79,7 +79,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [filament-widget-linear-crud-model-create](./concepts/filament-widget-linear-crud-model-create.md) | Concept | `getUserClass()::create($data)`, no Action | 2026-06-04 |
 | [filament-langserviceprovider-governance](./concepts/filament-langserviceprovider-governance.md) | Concept | LangServiceProvider | 2026-04-21 |
 | [login-page-design-comuni](./concepts/login-page-design-comuni.md) | Concept | Login Design Comuni | 2026-04-21 |
-| [profile-migration-uid-contract](./concepts/profile-migration-uid-contract.md) | Concept | Profile UID | 2026-04-21 |
+| [profile-migration-uuid-contract](./concepts/profile-migration-uuid-contract.md) | Concept | Profile UUID | 2026-04-21 |
 | [socialite-admin-configuration](./concepts/socialite-admin-configuration.md) | Concept | Socialite admin | 2026-04-21 |
 | [socialite-admin-tutorial](./concepts/socialite-admin-tutorial.md) | Concept | Socialite tutorial | 2026-04-21 |
 | [socialite-architecture-analysis](./concepts/socialite-architecture-analysis.md) | Concept | Socialite analysis | 2026-04-21 |

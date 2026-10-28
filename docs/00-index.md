@@ -12,7 +12,7 @@ qmd: "**indice documentazione modulo user** user"
 **Module Version**: 2.5.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
+1. [README.md](./README.md) - Panoramica completa del sistema di identità.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
 3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
 
@@ -39,8 +39,7 @@ qmd: "**indice documentazione modulo user** user"
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
 ## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
+- ✅ **[PHPStan Level 10 Fix Plan](./PHPSTAN_FIX_PLAN.md)** - Piano e stato di conformità Level 10.
 - 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
@@ -58,8 +57,8 @@ qmd: "**indice documentazione modulo user** user"
 - `spatie/laravel-personal-data-export` - Export GDPR
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
-- [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
+- [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
+- [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -67,17 +66,4 @@ qmd: "**indice documentazione modulo user** user"
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
----
-title: "User — alias indice"
-type: alias
-module: User
-status: superseded
-superseded_by: 00-INDEX.md
-canonical: ./00-INDEX.md
-updated: 2026-10-20
-qmd: "alias 00-index user verso 00-INDEX"
----
-
-# Alias — indice User
-
-Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md).
+- [Scopo, confini e come servirlo meglio](./scopo.md)
