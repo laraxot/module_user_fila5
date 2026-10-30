@@ -16,10 +16,10 @@ return [
             'studios' => 'Practices',
             'contacts' => 'Contact',
         ],
-        'brand' => [
-            'project' => [
-                'label' => 'the project',
-            ],
+    ],
+    'brand' => [
+        'project' => [
+            'label' => 'the project',
         ],
     ],
     'app_header' => [

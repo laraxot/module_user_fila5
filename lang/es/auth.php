@@ -144,4 +144,21 @@ return [
     'provider-not-configured' => 'El inicio de sesión con :provider no está disponible por ahora. Puedes iniciar sesión con correo y contraseña.',
     'provider-setup-guide' => 'El inicio de sesión con :provider no está configurado: faltan :missing. Dónde crearlas: abre :console y crea credenciales OAuth para una aplicación web, registrando :redirect como URI de redirección autorizado. Dónde configurarlas: escribe los valores (:missing) en el archivo .env y ejecuta "php artisan config:clear", o usa la página del back office :admin. :hint',
     'provider-setup-lan-hint' => 'Atención: :provider rechaza las direcciones IP y el http simple como URI de redirección (localhost es la excepción). Abre el sitio desde :localhost, por ejemplo con un túnel SSH, o usa un dominio con HTTPS.',
+    'auth_button' => [
+        'profile' => 'Mi perfil',
+        'dashboard' => 'Panel',
+        'logout' => 'Cerrar sesión',
+        'personal_area' => 'Acceder al área personal',
+    ],
+    'back_to_home' => 'Volver al inicio',
+    'logout' => 'Cerrar sesión',
+    'password_reset' => [
+        'email_sent' => [
+            'title' => '¡Correo enviado!',
+            'message' => 'Te hemos enviado un enlace para restablecer la contraseña. Revisa tu bandeja de entrada y sigue las instrucciones.',
+        ],
+        'send_another' => 'Enviar otro enlace',
+        'back_to_login' => 'Volver al inicio de sesión',
+        'send_button' => 'Enviar enlace de restablecimiento',
+    ],
 ];

@@ -11,4 +11,22 @@ return [
             'label' => 'Fecha de fin:',
         ],
     ],
+    'edit_user' => [
+        'title' => 'Editar perfil de usuario',
+        'description' => 'Actualiza la información del perfil de usuario',
+        'sections' => [
+            'personal_info' => [
+                'title' => 'Información personal',
+            ],
+            'preferences' => [
+                'title' => 'Preferencias',
+            ],
+            'security' => [
+                'title' => 'Seguridad',
+            ],
+            'admin_settings' => [
+                'title' => 'Ajustes de administrador',
+            ],
+        ],
+    ],
 ];

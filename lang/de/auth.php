@@ -334,4 +334,12 @@ return [
         'back_to_login' => 'Zurück zur Anmeldung',
         'submit' => 'Anweisungen senden',
     ],
+    'auth_button' => [
+        'profile' => 'Mein Profil',
+        'dashboard' => 'Dashboard',
+        'logout' => 'Abmelden',
+        'personal_area' => 'Zum persönlichen Bereich',
+    ],
+    'back_to_home' => 'Zurück zur Startseite',
+    'logout' => 'Abmelden',
 ];

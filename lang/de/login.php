@@ -89,4 +89,10 @@ return [
         'submit' => 'Link zum Zurücksetzen senden',
         'return_to_login' => 'Zurück zur Anmeldung',
     ],
+    'page' => [
+        'title' => 'Bei FixCity anmelden',
+        'subtitle' => 'Melden Sie sich an, um ein Problem zu melden und Ihre Vorgänge zu verfolgen',
+    ],
+    'already_registered' => 'Sie haben noch kein Konto?',
+    'register' => 'Jetzt registrieren',
 ];
