@@ -16,6 +16,11 @@ return [
             'studios' => 'Practices',
             'contacts' => 'Contact',
         ],
+        'brand' => [
+            'project' => [
+                'label' => 'the project',
+            ],
+        ],
     ],
     'app_header' => [
         'dashboard' => [

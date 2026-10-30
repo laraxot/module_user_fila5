@@ -27,5 +27,10 @@ return [
             'studios' => 'Praxen',
             'contacts' => 'Kontakt',
         ],
+        'brand' => [
+            'project' => [
+                'label' => 'das Projekt',
+            ],
+        ],
     ],
 ];
