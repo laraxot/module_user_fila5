@@ -14,7 +14,7 @@ class UserWidget extends XotBaseWidget
 {
     use InteractsWithPageFilters;
 
-    protected static bool $isLazy = false;
+    protected static ?bool $isLazyLoaded = false;
 
     /** @var view-string */
     protected string $view;
