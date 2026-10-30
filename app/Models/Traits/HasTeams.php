@@ -93,7 +93,7 @@ trait HasTeams
      */
     public function canCreateTeam(): bool
     {
-        return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
+        return $this->hasPermissionTo('create team');
     }
 
     /**

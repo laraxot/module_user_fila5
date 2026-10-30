@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 ?>
-@props(['title', 'subtitle', 'image', 'cta-text', 'cta-link', 'background-color' => 'bg-gradient-to-br from-primary/5 via-base-100 to-primary/10', 'text-color' => 'text-base-content', 'cta-color' => 'btn-primary'])
+@props(['title', 'subtitle', 'image', 'ctaText', 'ctaLink', 'backgroundColor' => 'bg-gradient-to-br from-primary/5 via-base-100 to-primary/10', 'textColor' => 'text-base-content', 'ctaColor' => 'btn-primary'])
 
-<div class="relative overflow-hidden {{ $background-color }}">
+<div class="relative overflow-hidden {{ $backgroundColor }}">
     @if(isset($image))
         <div class="absolute inset-0 z-0">
             <img src="{{ $image }}" alt="" class="w-full h-full object-cover opacity-10">
@@ -25,18 +25,18 @@ declare(strict_types=1);
                     <span class="text-sm font-semibold tracking-wide">{{ __('user::blocks.hero.badge.label') }} </span>
                 </div>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight {{ $text-color }} font-inter leading-[1.1] mb-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight {{ $textColor }} font-inter leading-[1.1] mb-8">
                     {!! nl2br(e($title)) !!}
                 </h1>
 
-                <p class="text-xl {{ $text-color }} opacity-90 font-inter max-w-2xl lg:max-w-none mb-12">
+                <p class="text-xl {{ $textColor }} opacity-90 font-inter max-w-2xl lg:max-w-none mb-12">
                     {{ $subtitle }}
                 </p>
 
-                @if(isset($cta-text) && isset($cta-link))
+                @if(isset($ctaText) && isset($ctaLink))
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="{{ $cta-link }}" class="btn {{ $cta-color }} btn-lg gap-3 min-w-[200px]">
-                            {{ $cta-text }}
+                        <a href="{{ $ctaLink }}" class="btn {{ $ctaColor }} btn-lg gap-3 min-w-[200px]">
+                            {{ $ctaText }}
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
