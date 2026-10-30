@@ -261,7 +261,15 @@ return [
     ],
     'privacy_policy' => [
         'title' => 'Informativa sulla privacy',
+        'description' => 'Come trattiamo i tuoi dati personali.',
     ],
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
+    'delete_account' => [
+        'title' => 'Elimina account',
+        'description' => 'Una volta eliminato l\'account, tutte le sue risorse e i suoi dati verranno eliminati definitivamente. Prima di procedere, scarica i dati che desideri conservare.',
+        'password_confirmation' => 'Conferma la tua password',
+        'button' => 'Elimina account',
+        'delete' => 'Elimina account',
+    ],
 ];

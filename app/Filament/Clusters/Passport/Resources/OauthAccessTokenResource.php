@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
@@ -39,7 +40,7 @@ class OauthAccessTokenResource extends XotBaseResource
     {
         return $table
             ->columns([
-                TextColumn::make('id')
+                IDColumn::make('id')
                     ->searchable()
                     ->sortable()
                     ->copyable(),
@@ -159,7 +160,7 @@ class OauthAccessTokenResource extends XotBaseResource
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')
+            'id' => IDColumn::make('id')
                 ->searchable()
                 ->sortable()
                 ->copyable(),

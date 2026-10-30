@@ -9,6 +9,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ProfilesRelationManager extends XotBaseRelationManager
@@ -52,7 +53,7 @@ class ProfilesRelationManager extends XotBaseRelationManager
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->sortable()->toggleable(),
+            'id' => IDColumn::make('id')->sortable()->toggleable(),
             'name' => TextColumn::make('name')
                 ->searchable()
                 ->sortable()

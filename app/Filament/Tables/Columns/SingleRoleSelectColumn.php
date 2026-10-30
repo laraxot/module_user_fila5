@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Tables\Columns;
 
+use Illuminate\Support\Facades\Auth;
 use Modules\User\Filament\Forms\Components\SingleRoleSelect;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
@@ -30,14 +31,14 @@ class SingleRoleSelectColumn extends XotBaseSelectColumn
     }
 
     /**
-     * Opzioni ruolo: SSoT condivisa con SingleRoleSelect.
+     * Opzioni ruolo: SSoT condivisa con SingleRoleSelect. Senza `super-admin` per chi non lo e' (vedi `Role::restrictAssignableBy`).
      *
      * @return array<int|string, string>
      */
     public static function roleOptions(): array
     {
         /** @var array<int|string, string> $options */
-        $options = Role::query()->pluck('name', 'id')->toArray();
+        $options = Role::restrictAssignableBy(Role::query(), Auth::user())->pluck('name', 'id')->toArray();
 
         return $options;
     }

@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -95,11 +96,43 @@ class Role extends SpatieRole
         'updated_by',
     ];
 
+    /**
+     * Ruolo che apre ogni porta: assegnarlo equivale a creare un super-admin.
+     */
+    public const string SUPER_ADMIN = 'super-admin';
+
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.roles'));
 
         return $table;
+    }
+
+    /**
+     * Solo un super-admin ne crea un altro: `admin` e `user::admin` modificano gli utenti ma non si fanno super-admin.
+     * Il resto della gerarchia (chi assegna quale ruolo) e' una decisione aperta: oggi e' l'unica regola.
+     */
+    public static function mayAssignSuperAdmin(?Authenticatable $actor): bool
+    {
+        return $actor instanceof UserContract && $actor->hasRole(self::SUPER_ADMIN);
+    }
+
+    /**
+     * Toglie dalla query i ruoli che `$actor` non puo' assegnare. Si applica alle opzioni e alla lettura del valore
+     * ricevuto: il form e' controllato dal client, l'elenco filtrato da solo non basta.
+     *
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
+     */
+    public static function restrictAssignableBy(Builder $query, ?Authenticatable $actor): Builder
+    {
+        if (self::mayAssignSuperAdmin($actor)) {
+            return $query;
+        }
+
+        return $query->where($query->qualifyColumn('name'), '!=', self::SUPER_ADMIN);
     }
 
     /**

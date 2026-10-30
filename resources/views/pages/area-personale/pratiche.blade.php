@@ -56,7 +56,7 @@ new class extends Component {
                         <article class="p-5 sm:p-6" role="listitem">
                             <h2 class="text-lg font-semibold text-slate-950">{{ $ticket->name }}</h2>
                             @if ($ticket->content)<p class="mt-1 text-slate-700">{{ \Illuminate\Support\Str::limit(strip_tags((string) $ticket->content), 140) }}</p>@endif
-                            <p class="mt-2 text-sm text-slate-600">{{ __('Inviata il') }} {{ $ticket->created_at?->translatedFormat('d F Y') }}</p>
+                            <p class="mt-2 text-sm text-slate-600">{{ __('user::area_personale.practices.submitted_on.label', ['date' => $ticket->created_at?->translatedFormat('d F Y')]) }}</p>
                         </article>
                     @endforeach
                 </div>
