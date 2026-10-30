@@ -25,4 +25,9 @@ class MockUserWithTeams extends Model
     {
         return 1;
     }
+
+    public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool
+    {
+        return false;
+    }
 }
