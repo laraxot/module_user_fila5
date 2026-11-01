@@ -15,6 +15,10 @@ qmd: "analisi dell'errore nell'implementazione del logout user"
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Logout](logout_blade_analysis.md)
 - [Conclusioni Logout](logout_blade_conclusions.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Logout](logout_blade_analysis.md)
+- [Conclusioni Logout](logout_blade_conclusions.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato
@@ -82,11 +86,14 @@ module: theme
 topic: logout-implementation-error
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

@@ -3,6 +3,7 @@ module: theme
 topic: later
 canonical: ../../../../Themes/docs/shared-components/03-later-Modules.md
 related:
+  - "./00-index.md"
   - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"

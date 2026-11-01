@@ -1,10 +1,11 @@
 ---
 title: "User Module - Product Roadmap"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - product roadmap user"
+status: superseded
+superseded_by: product-roadmap-user-module.md
 ---
 # User Module - Product Roadmap
 

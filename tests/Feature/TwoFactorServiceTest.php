@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
-use Illuminate\Support\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
@@ -263,6 +262,5 @@ describe('Two Factor Service', function (): void {
         $confirmedAt = $freshUser->two_factor_confirmed_at;
 
         Assert::assertNotNull($confirmedAt);
-        Assert::assertInstanceOf(Carbon::class, Carbon::parse((string) $confirmedAt));
     });
 });

@@ -8,11 +8,15 @@ qmd: "auth-pages-implementation implementazione corretta delle pagine auth"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -24,7 +28,14 @@ status: draft
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Documentazione centrale](../../../../docs/README.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-panoramica.md)
@@ -487,7 +498,14 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Documentazione centrale](../../../../docs/README.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-panoramica.md)

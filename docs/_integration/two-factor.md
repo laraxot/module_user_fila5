@@ -16,7 +16,8 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-status: draft
+status: superseded
+superseded_by: ../-integration/two-factor.md
 ---
 
 # two_factor

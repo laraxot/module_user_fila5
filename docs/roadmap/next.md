@@ -3,6 +3,7 @@ module: theme
 topic: next
 canonical: ../../../../Themes/docs/shared-components/02-next.md
 related:
+  - "./00-index.md"
   - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"

@@ -8,11 +8,15 @@ qmd: "index-conflict user module documentation"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -69,6 +73,9 @@ This document serves as the central index for the User module, providing guidanc
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Profile Management](./profile-management.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 - [Profile Management](./profile-management-laravel-modules.md)
 - [Routing Best Practices](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Session Management](./session-management-gestione-sessioni.md)

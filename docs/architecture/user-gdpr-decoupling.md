@@ -16,6 +16,7 @@ related:
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Decoupling User-GDPR via Event/Listener Pattern
@@ -109,6 +110,7 @@ The same pattern can be used for:
 ## Related Documentation
 
 - [RegisterWidget Documentation](register-widget.md)
+- [GDPR Compliance Guide](compliance.md)
 - [GDPR Compliance Guide](../gdpr/compliance.md)
 - [Event System Best Practices](../architecture/events.md)
 

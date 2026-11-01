@@ -19,7 +19,6 @@ test('TeamInvitation mail can be instantiated', function () {
     $mail = new TeamInvitation;
     $mail->invitation = $model;
 
-    Assert::assertInstanceOf(TeamInvitation::class, $mail);
     Assert::assertSame($model, $mail->invitation);
 });
 

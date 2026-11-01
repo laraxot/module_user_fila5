@@ -1,3 +1,11 @@
+---
+title: "Fix credenziali login — BMAD + second brain"
+type: note
+status: draft
+updated: 2026-10-19
+tags: [docs, user]
+qmd: "fix credenziali login   bmad + second brain user"
+---
 # Fix credenziali login — BMAD + second brain
 Scopo: assicurare che marco.sottana@gmail.com con prova123 possa accedere.
 Sorgente errore: hash password nel DB non corrispondeva.

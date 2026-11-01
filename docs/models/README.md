@@ -636,6 +636,7 @@ La connection `user` gestisce queste tabelle principali:
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
 - [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
+- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
 
 ## Changelog
 

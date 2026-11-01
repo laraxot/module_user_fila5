@@ -38,6 +38,11 @@ Il modulo User **non** aggiunge `Route::get()` in `routes/web.php` per il FO.
 | `notifications/index.blade.php` | `notifications` | `/it/notifications` |
 | `profile/edit.blade.php` | `profile.edit` | `/it/profile/edit` |
 
+The Sixteen theme must not duplicate this path. Theme-level Folio pages are registered
+before module paths; a duplicate would shadow the User Volt component and change a
+profile-edit action into an unrelated redirect. Sixteen may style the shared layout
+and links, while the User module remains the sole owner of the page and its behavior.
+
 Pagine auth/login spesso nel tema Sixteen; dominio profilo/notifiche resta User.
 
 ## Workflow nuova pagina User
@@ -58,4 +63,5 @@ Pagine auth/login spesso nel tema Sixteen; dominio profilo/notifiche resta User.
 ## Collegamenti
 
 - [notifications-folio-page.md](notifications-folio-page.md)
+- [folio-list-vs-route-list.md](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)
 - [folio-list-vs-route-list.md](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)

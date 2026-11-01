@@ -12,6 +12,7 @@ discussions:
 related:
   - login-page-design-comuni.md
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
 status: draft
 ---
 

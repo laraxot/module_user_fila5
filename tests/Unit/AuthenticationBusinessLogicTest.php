@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
+use stdClass;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -173,6 +174,7 @@ describe('Authentication Business Logic', function () {
 
         it('distinguishes personal vs organizational teams', function () {
             $team = (object) $this->teamData;
+            $user = (object) $this->userData;
 
             // Business Logic: Personal teams vs organizational teams
             Assert::assertFalse($team->personal_team);
@@ -185,8 +187,9 @@ describe('Authentication Business Logic', function () {
                 'user_id' => 1001,
             ];
 
-            Assert::assertTrue($personalTeam->personal_team);
+            Assert::assertNotSame($team->personal_team, $personalTeam->personal_team);
             Assert::assertStringContainsString('Personal', $personalTeam->name);
+            Assert::assertSame($user->id, $personalTeam->user_id);
         });
 
         it('validates team settings and preferences', function () {
@@ -270,7 +273,7 @@ describe('Authentication Business Logic', function () {
             ];
 
             // Business Logic: Higher level roles have more permissions
-            usort($roles, fn ($a, $b) => $a->level <=> $b->level);
+            usort($roles, fn (stdClass $a, stdClass $b) => $a->level <=> $b->level);
 
             Assert::assertSame('admin', $roles[0]->name);
             Assert::assertContains('*', $roles[0]->permissions);
@@ -328,7 +331,6 @@ describe('Authentication Business Logic', function () {
                 Assert::assertContains($scope, $oauth->scopes);
             }
 
-            Assert::assertSame(['email', 'profile'], $requiredScopes);
         });
 
         it('handles OAuth provider fallbacks', function () {

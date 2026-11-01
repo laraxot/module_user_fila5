@@ -5,7 +5,7 @@ canonical: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
 related:
   - "./base-classes-hierarchy.md"
   - "./baseuser.md"
-  - "./readme.md"
+  - "./README.md"
   - "./team.md"
   - "./teampermission.md"
   - "./xotbaivot-migration.md"

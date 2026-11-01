@@ -15,6 +15,11 @@ qmd: "conclusioni e raccomandazioni per logout.blade.php user"
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Logout Blade Analysis](./logout_blade_analysis.md)
 - [Convenzioni Path](./path_conventions.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Logout Blade Analysis](./logout_blade_analysis.md)
+- [Convenzioni Path](./path_conventions.md)
 
 ## Sintesi dell'Analisi
 
@@ -101,11 +106,14 @@ module: theme
 topic: logout-blade-conclusions
 canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

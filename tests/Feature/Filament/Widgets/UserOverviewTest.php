@@ -34,7 +34,7 @@ function userOverviewStats(): array
 }
 
 test('user overview widget extends the xot stats overview base', function (): void {
-    Assert::assertInstanceOf(XotBaseStatsOverviewWidget::class, new UserOverview);
+    Assert::assertSame(XotBaseStatsOverviewWidget::class, get_parent_class(UserOverview::class));
 });
 
 test('user overview widget exposes total, active, verified and recent login stats', function (): void {

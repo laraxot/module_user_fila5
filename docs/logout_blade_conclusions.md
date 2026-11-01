@@ -15,6 +15,11 @@ qmd: "conclusioni e raccomandazioni per logout.blade.php user"
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Logout Blade Analysis](./logout_blade_analysis.md)
 - [Convenzioni Path](./path_conventions.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Logout Blade Analysis](./logout_blade_analysis.md)
+- [Convenzioni Path](./path_conventions.md)
 
 ## Sintesi dell'Analisi
 

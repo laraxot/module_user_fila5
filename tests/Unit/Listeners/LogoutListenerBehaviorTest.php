@@ -9,8 +9,8 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Mockery\MockInterface;
-use Modules\User\Listeners\LogoutListener;
 use Modules\User\Contracts\UserContract;
+use Modules\User\Listeners\LogoutListener;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use PHPUnit\Framework\Assert;
@@ -48,7 +48,6 @@ describe('LogoutListener behavior', function (): void {
         $listener = new LogoutListener(Request::create('/logout', 'POST'));
         $listener->handle(logoutEvent(null));
 
-        Assert::assertInstanceOf(LogoutListener::class, $listener);
     });
 
     test('forgetRememberTokens no-ops for non UserContract', function (): void {

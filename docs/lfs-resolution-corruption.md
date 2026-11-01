@@ -1,11 +1,12 @@
 ---
 title: LFS Corruption Resolution
 date: 2026-07-28
-status: resolved
 type: note
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "lfs corruption resolution (2026-07-28) user"
+status: superseded
+superseded_by: lfs-resolution.md
 ---
 
 # LFS Corruption Resolution (2026-07-28)

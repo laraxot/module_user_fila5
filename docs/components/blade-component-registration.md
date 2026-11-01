@@ -14,7 +14,7 @@ status: draft
 # Registrazione dei componenti Blade
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/components/blade-component-registration.md).
+> La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/components/blade-component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/project_docs/components/blade-component-registration.md).
 ## Automatic Blade Component Registration
 In moduli che estendono `XotBaseServiceProvider`, **non è necessario** registrare manualmente i componenti Blade con `Blade::component()` o `Blade::componentNamespace()`.

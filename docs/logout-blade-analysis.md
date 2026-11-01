@@ -15,6 +15,11 @@ qmd: "analisi del file logout.blade.php user"
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
 
 ## Panoramica
 
@@ -453,11 +458,14 @@ module: theme
 topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

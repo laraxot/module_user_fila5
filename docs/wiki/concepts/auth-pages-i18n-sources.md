@@ -8,6 +8,7 @@ qmd: "User login register traduzioni user_form login_widget login_page register_
 issues:
 discussions:
 related:
+  - "../../stories/auth-pages-i18n-en-de-es-login-registrazione-inglese-tedesco.story.md"
   - "../../stories/auth-pages-i18n-en-de-es.story.md"
 status: draft
 ---

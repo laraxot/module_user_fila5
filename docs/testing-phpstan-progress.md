@@ -3,11 +3,19 @@ title: "User Module - PHPStan Testing Progress"
 type: concept
 tags: [testing, phpstan, progress]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-10-20
 qmd: "testing-phpstan-progress user module - phpstan testing progress"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./stories/phpstan-user-zero.story.md"
@@ -22,6 +30,8 @@ status: draft
 ---
 
 # User Module - PHPStan Testing Progress
+
+**Stato modulo (2026-10-20):** `./vendor/bin/phpstan analyse Modules/User` → **0 errori** (test: assertion su payload eventi/regole, return type su `Login`/`ResetPasswordWidget`/`FakeAgent`, `Safe\parse_url` nel flusso OAuth).
 
 **Date**: 2025-12-15
 **Objective**: Fix PHPStan errors in test files
@@ -63,6 +73,10 @@ Storico (2025-12-15, superato):
 $user = User::factory()->create([...]);
 expect($user->email)->toBe('test@example.com'); // Error: Cannot access property $email on mixed
 
+// AFTER (PHPStan compliant)
+$user = User::factory()->create([...]);
+\assert($user instanceof User);
+expect($user->email)->toBe('test@example.com'); // OK
 // AFTER (workaround storico: oggi vietato, `assert()` non puo' correggere il tipo inferito)
 $user = User::factory()->create([...]);
 \assert($user instanceof User);

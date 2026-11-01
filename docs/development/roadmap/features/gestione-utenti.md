@@ -15,7 +15,8 @@ related:
   - "./legacy-code-cleanup.md"
   - "./user-analytics.md"
   - "./user-traits.md"
-status: draft
+status: superseded
+superseded_by: ../../../roadmap/features/gestione-utenti.md
 ---
 
 # Gestione Utenti

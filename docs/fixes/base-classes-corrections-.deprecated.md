@@ -11,9 +11,9 @@ related:
   - "./base-classes-corrections-.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
-  - "./base-classes-corrections-stato-rinominato.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-correzioni-modulo-user.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
 status: draft

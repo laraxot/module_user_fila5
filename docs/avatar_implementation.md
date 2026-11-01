@@ -1,10 +1,11 @@
 ---
 title: "Implementazione degli Avatar"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "implementazione degli avatar user"
+status: superseded
+superseded_by: avatar-implementation-collegamenti-correlati.md
 ---
 # Implementazione degli Avatar 
 

@@ -190,3 +190,7 @@ Ogni azione di autenticazione deve:
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md)
 - [Gestione Errori](./error_handling.md) 
+- [Documentazione Volt](./volt_logout.md)
+- [Best Practices Routing](./routing_best_practices.md)
+- [Struttura Directory](./directory_structure_checklist.md)
+- [Gestione Errori](./error_handling.md) 

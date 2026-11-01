@@ -17,6 +17,7 @@ qmd: "user architecture sources user"
 ## Source Cluster
 
 - `README.md`
+- `product-strategy.md`
 - `product-strategy-user-module.md`
 - `architecture/architecture-rules.md`
 - `advanced-user-architecture.md`

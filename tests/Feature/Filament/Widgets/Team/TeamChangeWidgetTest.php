@@ -2,13 +2,11 @@
 
 declare(strict_types=1);
 use Filament\Facades\Filament;
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Notification as NotificationFacade;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
-use Modules\User\Http\Livewire\Team\Change;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -82,7 +80,6 @@ describe('TeamChangeWidget mount + render', function (): void {
         $widget = $component->instance();
         Assert::assertInstanceOf(TeamChangeWidget::class, $widget);
         $rendered = $widget->render();
-        Assert::assertInstanceOf(View::class, $rendered);
         Assert::assertSame('ui::livewire.empty', $rendered->getData()['view'] ?? null);
         Assert::assertSame([], $component->get('teams'));
     });
@@ -178,7 +175,7 @@ describe('TeamChangeWidget dashboard discovery', function (): void {
 
 describe('Http Livewire twin retired', function (): void {
     test('team change http component is gone', function (): void {
-        Assert::assertFalse(class_exists(Change::class, false));
+        Assert::assertFalse(class_exists("Modules\\User\\Http\\Livewire\\Team\\Change", false));
         Assert::assertFileDoesNotExist(base_path('Modules/User/app/Http/Livewire/Team/Change.php'));
         Assert::assertFileDoesNotExist(base_path('Modules/User/resources/views/livewire/team/change.blade.php'));
     });

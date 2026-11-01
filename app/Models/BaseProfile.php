@@ -149,9 +149,16 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         // 'MyEmailAddress@example.com'
         $email = mb_strtolower($email);
         // 'myemailaddress@example.com'
+        if ($email === '') {
+            // Nulla da cifrare: l'hash della stringa vuota e' uguale per tutti e farebbe partire una richiesta
+            // a gravatar.com per niente. Stringa vuota = le viste mostrano l'iniziale (CMT-022).
+            return '';
+        }
+
         $hash = hash('sha256', $email);
 
-        return 'https://gravatar.com/avatar/'.$hash.'?s=64';
+        // d=mp: silhouette neutra quando l'email non ha un Gravatar (mai il logo Gravatar).
+        return 'https://gravatar.com/avatar/'.$hash.'?s=80&d=mp';
 
         // https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
         // in caso eseguire php artisan module:publish

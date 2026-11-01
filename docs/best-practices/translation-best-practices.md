@@ -16,6 +16,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+status: draft
 ---
 
 # Best Practices per le Traduzioni
@@ -164,4 +165,5 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
+- [Struttura Moduli](./module-structure.md) 
 - [Struttura Moduli](../module-structure-user.md) 

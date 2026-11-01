@@ -11,6 +11,7 @@ qmd: "implementazione del selettore di lingua con bandiere svg user"
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path_conventions.md)
+- [Convenzioni Path](./path_conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

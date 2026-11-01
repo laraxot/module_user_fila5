@@ -298,6 +298,14 @@ Quando un altro agente AI incontra problemi di schema:
 ---
 module: theme
 topic: migration-safety-rules
+canonical: ../../../../Themes/docs/shared-components/migration-safety-rules.md
+related:
+  - "./migration-safety-rules.md"
+  - "./profile-uuid-philosophy.md"
+  - "./profile-uuid-philosophy.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/migration-safety-rules.md
 canonical: ../../../../Themes/docs/shared-components/migration-safety-rules-never-destroy-data.md
 related:
   - "./migration-safety-rules-never-destroy-data.md"

@@ -38,7 +38,7 @@ Vietato spostare, rinominare o cancellare file e lanciare `dups --fix`.
 - `README.md` da 2352 righe: il corpo e' ripetuto due volte (righe 155-1253 e 1257-2352) e contiene un front matter incollato da `readme.md`.
 - Collegamenti a file rinominati (`*-2026-03-10.md` senza data), a `todo.md` (stub il cui canonico `Themes/docs/shared-components/todo.md` non esiste).
 
-**Ingressi.** Il canonico per contratto e' `00-INDEX.md`. `00-index.md` era una copia byte per byte (collisione di maiuscole), `00-index-1.md` una
+**Ingressi.** Il canonico per contratto e' `00-INDEX.md`. `00-index.md` era una copia byte per byte (collisione di maiuscole), `00-index.md` una
 variante; `INDEX.md` (6915 righe) e `index.md` (3419) sono elenchi generati dell'albero, come `archive/index.md`, `_archive/INDEX.md` e i due di
 `wiki/integrations/_da-riconciliare/`.
 
@@ -67,7 +67,7 @@ cio' che e' risolvibile senza decisione umana.
 | `wiki/log.md` | voce 2026-10-14 |
 | `stories/docs-user-studio-e-ingressi.story.md` | questa story |
 
-Nessun file spostato, rinominato o cancellato; nessun `dups --fix`; `INDEX.md`, `index.md`, `00-index.md`, `00-index-1.md` non toccati (recenti e
+Nessun file spostato, rinominato o cancellato; nessun `dups --fix`; `INDEX.md`, `index.md`, `00-index.md`, `00-index.md` non toccati (recenti e
 da trattare con DOC-004).
 
 ## Verifica

@@ -8,11 +8,15 @@ qmd: "fixes-user-module-phpstan correzioni phpstan per il modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -174,6 +178,8 @@ Gli errori rimanenti (94) sono principalmente:
 
 - [Test di Validazione](../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../config/password.php)
+- [Test di Validazione](../tests/Unit/UserModulePhpstanFixesTest.php)
+- [Configurazione Password](../config/password.php)
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 
 ## Note per il Futuro
@@ -192,6 +198,6 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 - `tests/Feature/Database/Migrations/UserMigrationSyntaxTest.php`: `dataset(...)->with(...)` sostituito con una funzione helper `getUserMigrationFiles()` chiamata dentro un `foreach`, eliminando sia `method.internalClass` su `expect()` sia su `Pest\PendingCalls\TestCall::with()` (anch'esso `@internal`). Nessun `@phpstan-ignore` usato, nonostante un tentativo di un altro agente in tal senso durante la sessione.
 - `app/Console/Commands/AssignTeamCommand.php` (aggiunto durante la sessione da un altro agente): un `/** @var UserContract */` senza `$user` e senza il relativo `use` import lasciava `$user` non tipizzato. Sostituito con `Assert::isInstanceOf($user, BaseUser::class)` (Webmozart), narrowing verificato anche a runtime.
 
-Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
+Dettagli completi: `docs/chat/phpstan-modules-progress-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
 *Ultimo aggiornamento: dicembre 2024*

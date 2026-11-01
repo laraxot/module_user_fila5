@@ -1,9 +1,9 @@
 <?php
 
 declare(strict_types=1);
-use Illuminate\Auth\Events\Verified;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Livewire\Volt\Component;
+use Modules\User\Actions\Auth\ResendEmailVerificationAction;
 
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
@@ -15,13 +15,11 @@ new class extends Component {
     public function resend()
     {
         $user = auth()->user();
-        if ($user->hasVerifiedEmail()) {
-            redirect('/');
+        abort_unless($user instanceof MustVerifyEmail, 403);
+
+        if (! app(ResendEmailVerificationAction::class)->execute($user)) {
+            return redirect('/');
         }
-
-        $user->sendEmailVerificationNotification();
-
-        event(new Verified($user));
 
         $this->dispatch('resent');
         session()->flash('resent');

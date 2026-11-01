@@ -28,7 +28,9 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->command->info('👤 Inizializzazione seeding User...');
+        if ($this->command !== null) {
+            $this->command->info('👤 Inizializzazione seeding User...');
+        }
 
         // Disabilita i controlli di foreign key (solo per MySQL)
         if (DB::getDriverName() !== 'sqlite') {
@@ -39,7 +41,9 @@ class UserSeeder extends Seeder
             $this->seedSystemRolesAndPermissions();
             $this->seedSystemTeams();
 
-            $this->command->info('✅ Seeding User completato con successo!');
+            if ($this->command !== null) {
+                $this->command->info('✅ Seeding User completato con successo!');
+            }
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
             if (DB::getDriverName() !== 'sqlite') {
@@ -53,7 +57,9 @@ class UserSeeder extends Seeder
      */
     private function seedSystemRolesAndPermissions(): void
     {
-        $this->command->info('🔐 Creazione ruoli e permessi di sistema...');
+        if ($this->command !== null) {
+            $this->command->info('🔐 Creazione ruoli e permessi di sistema...');
+        }
 
         // Permessi di sistema
         $systemPermissions = [
@@ -158,8 +164,12 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
-        $this->command->info('   ✓ Creati '.count($systemPermissions));
-        $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
+        if ($this->command !== null) {
+            $this->command->info('   ✓ Creati '.count($systemPermissions));
+        }
+        if ($this->command !== null) {
+            $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
+        }
     }
 
     /**
@@ -167,7 +177,9 @@ class UserSeeder extends Seeder
      */
     private function seedSystemTeams(): void
     {
-        $this->command->info('👥 Creazione team di sistema...');
+        if ($this->command !== null) {
+            $this->command->info('👥 Creazione team di sistema...');
+        }
 
         $teams = array_map($this->createTeam(...), [
             'Amministratori',
@@ -177,7 +189,9 @@ class UserSeeder extends Seeder
             'Team Generale',
         ]);
 
-        $this->command->info('   ✓ Creati '.count($teams).' team di sistema');
+        if ($this->command !== null) {
+            $this->command->info('   ✓ Creati '.count($teams).' team di sistema');
+        }
     }
 
     private function createTeam(string $name): Team

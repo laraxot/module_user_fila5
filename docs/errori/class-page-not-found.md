@@ -354,6 +354,7 @@ class MyPage extends XotBasePage
 
 ### Clusters in Xot
 - [XotBaseCluster](../../../Xot/app/Filament/Clusters/XotBaseCluster.php)
+- [XotBaseCluster](../../../Xot/app/Filament/Clusters/XotBaseCluster.php)
 - [Cluster Best Practices](../../xot/docs/filament/clusters.md)
 
 ---

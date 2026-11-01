@@ -1,10 +1,11 @@
 ---
 title: "User Module - Sprint Planning"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module - sprint planning user"
+status: superseded
+superseded_by: sprint-planning-user-module.md
 ---
 # User Module - Sprint Planning
 

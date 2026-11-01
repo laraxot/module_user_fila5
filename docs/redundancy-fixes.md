@@ -14,6 +14,13 @@ related:
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+  - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 status: draft

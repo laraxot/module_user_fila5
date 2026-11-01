@@ -8,15 +8,16 @@ qmd: "baseuser-refactoring-completed-2025-10-15.deprecated baseuser refactoring 
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+  - "./actions-path-convention.md"
+status: superseded
+superseded_by: baseuser-refactoring-completed-completato.md
 ---
 
 # BaseUser Refactoring - Completato
@@ -254,7 +255,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-- [Refactoring Plan](../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
+- [Refactoring Plan](../../docs/baseuser-dry-violation.md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -262,7 +263,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./README.md)
 
 ### Root Progetto
-- [Code Quality](code-quality-analysis.md)
+- [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation

@@ -1,10 +1,11 @@
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "analisi ereditarietà modelli - modulo user user"
+status: superseded
+superseded_by: model-inheritance.md
 ---
 # Analisi Ereditarietà Modelli - Modulo User
 

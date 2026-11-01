@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Profile;
 use Tests\TestCase;
 
+uses(\Modules\User\Tests\TestCase::class);
+
 class ProfileTest extends TestCase
 {
-    use RefreshDatabase;
-
     public function test_can_create_profile_with_minimal_data(): void
     {
         $profile = Profile::factory()->create([
@@ -70,7 +69,7 @@ class ProfileTest extends TestCase
 
     public function test_profile_has_schemaless_attributes(): void
     {
-        $profile = new Profile();
+        $profile = new Profile;
 
         $expectedAttributes = ['extra'];
         static::assertSame($expectedAttributes, $profile->getSchemalessAttributes());
@@ -78,7 +77,7 @@ class ProfileTest extends TestCase
 
     public function test_profile_has_table_name(): void
     {
-        $profile = new Profile();
+        $profile = new Profile;
 
         static::assertSame('profiles', $profile->getTable());
     }

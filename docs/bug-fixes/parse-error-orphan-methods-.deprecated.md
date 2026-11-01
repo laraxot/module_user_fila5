@@ -12,8 +12,8 @@ related:
   - "./parse-error-orphan-methods-.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
-  - "./parse-error-orphan-methods-documentation-themes.md"
-  - "./parse-error-orphan-methods-stato-rinominato.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 status: draft

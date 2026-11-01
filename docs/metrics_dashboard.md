@@ -1,10 +1,11 @@
 ---
 title: "User Module Metrics Dashboard"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "user module metrics dashboard user"
+status: superseded
+superseded_by: metrics-dashboard-user-module.md
 ---
 # User Module Metrics Dashboard
 

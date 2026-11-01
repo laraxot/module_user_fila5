@@ -4,8 +4,9 @@ type: architecture
 tags: [module, architecture, design]
 created: 2026-07-28
 updated: 2026-07-28
-status: draft
 qmd: "user module   architecture user"
+status: superseded
+superseded_by: wiki/integrations/architecture.md
 ---
 
 # User Module — Architecture

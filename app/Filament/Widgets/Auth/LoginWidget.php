@@ -7,12 +7,14 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\RateLimiter;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\User\Actions\Auth\GetPostLoginUrlAction;
+use Modules\User\Actions\Auth\RememberLoginReturnUrlAction;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 
 /**
@@ -48,6 +50,15 @@ class LoginWidget extends BaseAuthWidget
         return 'getLoginFormSchema';
     }
 
+    /**
+     * Ricorda la pagina da cui arriva l'utente (`?redirect=` o Referer dello stesso host) per riportarlo li' dopo il login.
+     */
+    public function mount(): void
+    {
+        parent::mount();
+        app(RememberLoginReturnUrlAction::class)->execute(request());
+    }
+
     public function login(): void
     {
         /** @var array<string, mixed> $data */
@@ -69,7 +80,8 @@ class LoginWidget extends BaseAuthWidget
             return;
         }
 
-        if (Auth::attempt($credentials, $remember)) {
+        // An account its owner deleted (Gdpr DeleteAccountAction sets `deleted_at`) stays closed: the privacy notice says it is deactivated at once.
+        if (Auth::attemptWhen($credentials, static fn (Authenticatable $user): bool => ! $user instanceof Model || $user->getAttribute('deleted_at') === null, $remember)) {
             RateLimiter::clear($throttleKey);
             session()->regenerate();
 
@@ -78,25 +90,9 @@ class LoginWidget extends BaseAuthWidget
                 ->success()
                 ->send();
 
-            // Chi e' stato mandato al login da una pagina protetta (es. "Segnala disservizio") torna a quella pagina:
-            // Laravel salva l'URL richiesto in `url.intended`. Senza, si va alla dashboard del progetto o alla home nella lingua corrente.
-            /**
-             * Livewire submits to `/livewire-*`, so the locale middleware that
-             * handled `/it/auth/login` is not guaranteed to run again. Keep the
-             * locale explicit, but pass it in the second position required by
-             * `localizeURL($url, $locale)`.
-             */
-            $locale = trim((string) app()->getLocale(), '/');
-            $supportedLocales = LaravelLocalization::getSupportedLanguagesKeys();
-            if (! in_array($locale, $supportedLocales, true)) {
-                $locale = Config::string('app.locale', 'it');
-            }
-
-            $defaultRedirectUrl = Route::has('dashboard')
-                ? LaravelLocalization::localizeURL(route('dashboard'), $locale)
-                : LaravelLocalization::localizeURL('/', $locale);
-
-            $this->redirectIntended($defaultRedirectUrl);
+            // Chi e' stato mandato al login da una pagina protetta (es. "Segnala disservizio") o da un link "Accedi" torna a quella
+            // pagina: `url.intended` lo salva il middleware `auth` o `mount()`. Senza, si va all'area personale nella lingua corrente.
+            $this->redirectIntended(app(GetPostLoginUrlAction::class)->execute());
 
             return;
         }
@@ -125,16 +121,41 @@ class LoginWidget extends BaseAuthWidget
                 ->label(__('user::auth.login.forgot_password.text')),
         ];
 
-        // Google OAuth Social Login (BMAD + Second Brain + Filament Blueprint)
-        // Usiamo la route oauth.redirect definita in Module/User/routes/socialite.php
+        // Route `oauth.redirect` definita in Modules/User/routes/socialite.php.
+        // Il URL va LOCALIZZATO: la pagina login e' `/it/auth/login`, quindi il
+        // redirect al provider deve essere `/it/auth/login/google`. Senza il prefisso
+        // locale il flusso OAuth perde il contesto della lingua e la callback
+        // (`/it/auth/login/google/callback`) non combacia con GOOGLE_REDIRECT_URI.
+        $locale = $this->resolveLocale();
         $actions[] = Action::make('google')
-            ->url(route('oauth.redirect', ['provider' => 'google']))
+            ->url(route('oauth.redirect', ['provider' => 'google', 'lang' => $locale]))
             ->label(__('user::auth.login.google.button.text'))
             ->icon('heroicon-o-google')
-            ->color('gray')
-            ->openUrlInNewTab();
+            ->color('gray');
 
         return $actions;
+    }
+
+    /**
+     * Locale corrente per localizzare URL OAuth (coerenza con /it/auth/login).
+     */
+    private function resolveLocale(): string
+    {
+        $locale = app()->getLocale();
+        if (! is_string($locale)) {
+            $locale = config('app.locale', 'it');
+        }
+        if (! is_string($locale)) {
+            $locale = 'it';
+        }
+        $locale = trim($locale, '/');
+        $supported = LaravelLocalization::getSupportedLanguagesKeys();
+        if (! in_array($locale, $supported, true)) {
+            $fallback = config('app.locale', 'it');
+            $locale = is_string($fallback) ? $fallback : 'it';
+        }
+
+        return $locale;
     }
 
     /**

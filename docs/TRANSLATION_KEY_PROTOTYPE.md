@@ -11,6 +11,7 @@ qmd: "translation key prototype user"
 
 Translation key prototype
 
+Project convention: '<namespace>::<context>.<collection>.<item>.<type>'
 Project convention: '<namespace>::<context>.<collection>.<key>.<type>' (exactly five elements, counting the namespace)
 
 Examples:

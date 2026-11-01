@@ -150,3 +150,6 @@ Event::dispatch('user.action', [
 - [Header Components](./header_components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./session_management.md) 
+- [Header Components](./header_components.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
+- [Session Management](./session_management.md) 

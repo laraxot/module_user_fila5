@@ -125,5 +125,6 @@ XotBaseWidget              (azioni, viste, traduzioni — SENZA schema)
 - [UserForm.php](../../../app/Filament/Resources/UserResource/Schemas/UserForm.php)
 - [RegisterWidget.php](../../../app/Filament/Widgets/Auth/RegisterWidget.php)
 - ADR root: [filament-widget-resource-form-delegation.md](../../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
+- ADR root: [filament-widget-resource-form-delegation.md](../../../../../../docs/wiki/decisions/filament-widget-resource-form-delegation.md)
 - Rule: `.cursor/rules/filament-widget-resource-form.mdc`
 - Rule: `.cursor/rules/xotbase-schemawidget.mdc`

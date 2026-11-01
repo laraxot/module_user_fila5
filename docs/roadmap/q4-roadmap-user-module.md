@@ -16,7 +16,8 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-status: draft
+status: superseded
+superseded_by: roadmap.md
 ---
 
 # User Module Roadmap (2025 Q4)

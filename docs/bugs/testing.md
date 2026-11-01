@@ -240,6 +240,7 @@ Verificare:
 
 ## Riferimenti
 
+- **Bug Report**: `BUGFIX_REPORT.md`
 - **Bug Report**: `BUGFIX_REPORT-bug-fix.md`
 - **Documentazione Dettagliata**: `make-filament-user-infinite-loop.md`
 - **Codice Sorgente**: `Modules/User/app/Models/Traits/HasTeams.php`

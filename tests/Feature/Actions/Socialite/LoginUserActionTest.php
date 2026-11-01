@@ -147,7 +147,6 @@ describe('Login User Action', function (): void {
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected InvalidArgumentException was not thrown');
         } catch (\InvalidArgumentException $exception) {
-            Assert::assertInstanceOf(\InvalidArgumentException::class, $exception);
         }
     });
 

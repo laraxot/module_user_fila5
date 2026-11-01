@@ -38,7 +38,6 @@ test('role can be created', function (): void {
     $name = 'test-role-'.uniqid();
     $role = createTestRole(['name' => $name]);
 
-    Assert::assertInstanceOf(Role::class, $role);
     Assert::assertSame($name, $role->name);
     Assert::assertSame('web', $role->guard_name);
 });

@@ -8,11 +8,15 @@ qmd: "troubleshooting-login-component troubleshooting: login component not found
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -265,6 +269,7 @@ php artisan config:cache  # Solo in produzione
 
 ## Collegamenti
 
+- [Modulo User README](../README.md)
 - [Modulo User README](../README.md)
 - [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)

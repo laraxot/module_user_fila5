@@ -125,3 +125,6 @@ final class LogoutAction
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md) 
+- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md) 

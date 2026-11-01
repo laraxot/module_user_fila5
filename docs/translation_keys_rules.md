@@ -123,3 +123,6 @@ return [
 - [Best Practices per le Traduzioni](translation_best_practices.md)
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
+- [Best Practices per le Traduzioni](translation_best_practices.md)
+- [Struttura del Modulo](module_structure.md)
+- [Convenzioni di Codice](code_conventions.md)

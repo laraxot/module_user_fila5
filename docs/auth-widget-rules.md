@@ -8,15 +8,20 @@ qmd: "auth-widget-rules regole per widget di autenticazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: auth-widget.md
 ---
 
 # Regole per Widget di Autenticazione
@@ -163,6 +168,7 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
+- [Widget Structure](widgets-structure.md)
 - [Widget Structure](widgets-structure-user.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)

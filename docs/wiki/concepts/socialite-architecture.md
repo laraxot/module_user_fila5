@@ -2,7 +2,7 @@
 title: Socialite Architecture — No google_id Column Rule
 type: concept
 module: User
-updated: 2026-04-20
+updated: 2026-10-27
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -58,8 +58,8 @@ I `client_id`/`client_secret` vengono da variabili env (`GOOGLE_CLIENT_ID`, `GOO
 ```
 1. Utente clicca "Login con Google"
 2. RedirectToProviderController → Socialite::driver('google')->redirect()
-3. Google autentica → callback URL
-4. ProcessCallbackController → Socialite::driver('google')->user()
+3. Google autentica → callback URL Folio+Volt
+4. `ProcessCallbackAction` → `Socialite::driver('google')->user()`
 5. RetrieveOauthUserAction → cerca SocialiteUser per (provider, provider_id)
 6. Se esiste → LoginUserAction (login diretto)
 7. Se non esiste → RegisterSocialiteUserAction → CreateUserAction + CreateSocialiteUserAction

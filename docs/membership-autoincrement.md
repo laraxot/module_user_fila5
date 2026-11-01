@@ -8,11 +8,15 @@ qmd: "membership-autoincrement fix: duplicate entry error in team_user table - c
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -234,4 +238,8 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 - [BasePivot Model](../app/Models/BasePivot.php)
 - [TeamsRelationManager](../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 - [HasTeams Trait](../app/Models/Traits/HasTeams.php)
-- [Migration Rules](../../../xot/docs/migrations-consolidated.md)
+- [Membership Model](../app/Models/Membership.php)
+- [BasePivot Model](../app/Models/BasePivot.php)
+- [TeamsRelationManager](../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+- [HasTeams Trait](../app/Models/Traits/HasTeams.php)
+- [Migration Rules](../../Xot/docs/migrations-consolidated.md)

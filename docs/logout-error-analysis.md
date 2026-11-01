@@ -130,17 +130,21 @@ class LogoutWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session_management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade) 
 ---
 module: theme
 topic: logout-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
 related:
+  - "./00-index.md"
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

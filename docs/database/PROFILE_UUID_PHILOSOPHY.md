@@ -1,10 +1,11 @@
 ---
 title: "Profile UUID Philosophy - Zen Approach"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, database]
 qmd: "profile uuid philosophy - zen approach user"
+status: superseded
+superseded_by: profile-uuid-philosophy-zen-approach.md
 ---
 # Profile UUID Philosophy - Zen Approach
 

@@ -158,6 +158,7 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/docs/widget-translation-rules.md`
 - `Modules/User/docs/widgets/implementation-summary.md` (this file)
 ### Related Documentation
+- `Modules/User/docs/widgets-structure.md`
 - `Modules/User/docs/widgets-structure-user.md`
 - `Modules/Xot/docs/filament-widgets.md`
 - `Modules/Xot/docs/translations.md`
@@ -165,6 +166,7 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/project_docs/widgets/translation-guidelines.md`
 - `Modules/User/project_docs/widget-translation-rules.md`
 - `Modules/User/project_docs/widgets/implementation-summary.md` (this file)
+- `Modules/User/project_docs/widgets-structure.md`
 - `Modules/User/project_docs/widgets-structure-user.md`
 - `Modules/Xot/project_docs/filament-widgets.md`
 - `Modules/Xot/project_docs/translations.md`

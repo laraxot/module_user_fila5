@@ -63,3 +63,4 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing_best_practices.md) 
+- [Best Practices Routing](./routing_best_practices.md) 

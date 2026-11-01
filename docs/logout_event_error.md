@@ -15,6 +15,10 @@ qmd: "analisi dell'errore negli eventi di logout user"
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Errore Logout](logout_blade_error_analysis.md)
+- [Widget Filament Corretto](logout_filament_widget_corrected.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato

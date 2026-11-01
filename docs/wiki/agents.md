@@ -13,10 +13,11 @@ related:
   - "./socialite-architecture.md"
 title: "agents"
 type: note
-status: stub
 updated: 2026-10-07
 tags: [docs, user, wiki]
 qmd: "agents user"
+status: superseded
+superseded_by: AGENTS.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

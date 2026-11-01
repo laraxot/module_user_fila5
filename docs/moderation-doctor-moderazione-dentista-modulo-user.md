@@ -16,7 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-status: draft
+status: superseded
+superseded_by: moderationor.md
 ---
 
 # Moderazione Dentista dal Modulo User

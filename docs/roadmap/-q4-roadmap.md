@@ -5,12 +5,10 @@ tags: [roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "-q4-roadmap user module roadmap (2025 q4)"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+  - "./00-index.md"
   - "./00-index-roadmap-user.md"
   - "./00-index.md"
   - "./00-overview.md"
@@ -19,7 +17,8 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-status: draft
+status: superseded
+superseded_by: roadmap.md
 ---
 
 # User Module Roadmap (2025 Q4)

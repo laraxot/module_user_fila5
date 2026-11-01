@@ -71,10 +71,6 @@
     {
       "type": "path",
       "url": "../UI"
-    },
-    {
-      "type": "path",
-      "url": "../Comment"
     }
   ],
   "scripts": {

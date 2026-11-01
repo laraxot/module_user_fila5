@@ -32,19 +32,19 @@ declare(strict_types=1);
         @endif
 
         <div class="py-1" role="none">
-            <a href="{{ LaravelLocalization::localizeUrl('/dashboard') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
+            <a href="{{ route('dashboard') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
                 <x-heroicon-o-squares-2x2 class="h-5 w-5 text-slate-500 group-hover:text-red-500" />
                 <span>{{ __('Dashboard') }}</span>
             </a>
-            <a href="{{ LaravelLocalization::localizeUrl('/events-my') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
+            <a href="{{ route('events.index') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
                 <x-heroicon-o-calendar class="h-5 w-5 text-slate-500 group-hover:text-red-500" />
                 <span>{{ __('I miei eventi') }}</span>
             </a>
-            <a href="{{ LaravelLocalization::localizeUrl('/events-near-me') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
+            <a href="{{ route('events.index') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
                 <x-heroicon-o-map-pin class="h-5 w-5 text-slate-500 group-hover:text-red-500" />
                 <span>{{ __('Eventi vicini') }}</span>
             </a>
-            <a href="{{ LaravelLocalization::localizeUrl('/profile') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
+            <a href="{{ route('profile.edit') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700/50 hover:text-white transition-colors group" role="menuitem">
                 <x-heroicon-o-user class="h-5 w-5 text-slate-500 group-hover:text-red-500" />
                 <span>{{ __('Profilo') }}</span>
             </a>

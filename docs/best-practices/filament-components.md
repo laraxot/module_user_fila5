@@ -114,4 +114,6 @@ composer show filament/spatie-laravel-media-library-plugin
 * [filament-components.md](../../../user/docs/best-practices/filament-components.md)
 * [filament-components.md](../../../Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../../Cms/docs/filament-components.md)
+* [filament-components.md](../../../Cms/docs/best-practices/filament-components.md)
+* [filament-components.md](../../../Cms/docs/filament-components.md)
 * [filament-components.md](laravel/docs/rules/filament-components.md)

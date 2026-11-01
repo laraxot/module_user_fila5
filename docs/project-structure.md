@@ -110,6 +110,10 @@ graph TD
 - [Global Skills](wiki/skills)
 - [Global Commands](wiki/commands)
 - [Global Memories](wiki/memories)
+- [Global Rules](wiki/rules)
+- [Global Skills](wiki/skills)
+- [Global Commands](wiki/commands)
+- [Global Memories](wiki/memories)
 
 ## Setup Iniziale (per nuovi moduli)
 

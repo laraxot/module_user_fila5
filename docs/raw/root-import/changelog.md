@@ -12,6 +12,7 @@ related:
   - "./changelog-2.md"
   - "./changelog-3.md"
   - "./changelog-4.md"
+  - "./changelog-5.md"
   - "./changelog.md"
   - "./git-reset-1.md"
   - "./git-reset.md"

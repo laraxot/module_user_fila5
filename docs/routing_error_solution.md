@@ -1,10 +1,11 @@
 ---
 title: "Soluzione Errori di Routing nel Frontoffice"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "soluzione errori di routing nel frontoffice user"
+status: superseded
+superseded_by: routing-solution.md
 ---
 # Soluzione Errori di Routing nel Frontoffice
 

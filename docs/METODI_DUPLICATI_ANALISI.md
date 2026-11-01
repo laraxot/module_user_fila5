@@ -5,9 +5,10 @@ tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
 title: "Metodi Duplicati — Analisi User"
 type: note
-status: stub
 updated: 2026-10-07
 qmd: "metodi duplicati   analisi user user"
+status: superseded
+superseded_by: metodi-duplicati-analisi-user.md
 ---
 
 # Metodi Duplicati — Analisi User

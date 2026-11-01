@@ -1,10 +1,11 @@
 ---
 title: "Metodi duplicati — User"
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user]
 qmd: "metodi duplicati   user user"
+status: superseded
+superseded_by: duplicate-methods-metodi-duplicati-user.md
 ---
 # Metodi duplicati — User
 

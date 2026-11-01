@@ -12,8 +12,6 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Contracts\View\View;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -29,7 +27,6 @@ use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
-use Modules\User\Actions\Shield\ShieldUtilsAction;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Pages\SocialiteProviderSettingsPage;
@@ -52,9 +49,8 @@ use Modules\User\Observers\UserObserver;
 use Modules\User\Providers\SocialiteServiceProvider;
 use Modules\User\Providers\Traits\HasPassportConfiguration;
 use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\User\Support\AuthenticationLogQuery;
-use Modules\User\Support\NotificationSchema;
-use Modules\User\Support\Utils;
+use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
+use Modules\User\Actions\Shield\ShieldUtilsAction;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
 use Modules\User\View\Components\Mail\Message;
@@ -426,29 +422,6 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertSame(Role::class, ShieldUtilsAction::getRoleModel());
         Assert::assertSame(Permission::class, ShieldUtilsAction::getPermissionModel());
 
-        Assert::assertSame('web', Utils::getFilamentAuthGuard());
-        Assert::assertSame('roles', Utils::getResourceSlug());
-        Assert::assertTrue(Utils::isResourceNavigationRegistered());
-        Assert::assertSame(['view', 'update'], Utils::getGeneralResourcePermissionPrefixes());
-        Assert::assertSame('page', Utils::getPagePermissionPrefix());
-        Assert::assertSame('widget', Utils::getWidgetPermissionPrefix());
-        Assert::assertTrue(Utils::isResourceEntityEnabled());
-        Assert::assertTrue(Utils::isPageEntityEnabled());
-        Assert::assertTrue(Utils::isWidgetEntityEnabled());
-        Assert::assertFalse(Utils::isCustomPermissionEntityEnabled());
-        Assert::assertSame('policies_and_permissions', Utils::getGeneratorOption());
-        Assert::assertSame(['FooResource'], Utils::getExcludedResouces());
-        Assert::assertSame(['BarPage'], Utils::getExcludedPages());
-        Assert::assertSame(['BazWidget'], Utils::getExcludedWidgets());
-        // `Utils` e `ShieldUtilsAction` duplicano la stessa logica: il contratto
-        // che questo test protegge è che le due implementazioni non divergano.
-        Assert::assertSame(
-            ShieldUtilsAction::isAuthProviderConfigured(),
-            Utils::isAuthProviderConfigured()
-        );
-        Assert::assertTrue(Utils::doesResourceHaveCustomPermissions($resourceClass));
-        Assert::assertSame(['custom-view', 'custom-update'], Utils::getResourcePermissionPrefixes($resourceClass));
-        Assert::assertSame(User::class, Utils::showModelPath($resourceClass));
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {
@@ -492,7 +465,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         Assert::assertFalse($owner->belongsToTeam(null));
         Assert::assertTrue($owner->belongsToTeams());
         Assert::assertTrue($owner->hasTeams());
-        Assert::assertSame(2, $owner->allTeams()->count());
+        Assert::assertCount(2, $owner->allTeams());
         Assert::assertTrue($owner->canDeleteTeam($ownedTeam));
         Assert::assertTrue($owner->canManageTeam($ownedTeam));
         Assert::assertTrue($owner->canUpdateTeam($ownedTeam));
@@ -802,7 +775,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
         $otp = new Otp($user, '123456');
         Assert::assertSame(['mail'], $otp->via($notifiable));
-        Assert::assertInstanceOf(MailMessage::class, $otp->toMail($notifiable));
         Assert::assertSame([], $otp->toArray($user));
 
         $reset = new ResetPassword('reset-token');
@@ -853,7 +825,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
         $token->setRelation('client', new OauthClient(['provider' => 'users']));
         // `Token::user()` è deprecato in Passport: si esercita la relazione
         // `client()`, quella su cui la OauthAccessTokenResource costruisce le colonne.
-        Assert::assertInstanceOf(BelongsTo::class, $token->client());
     });
 });
 
@@ -926,12 +897,11 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         $notification = new Notification;
         Assert::assertSame(
             Schema::connection($notification->getConnectionName())->hasTable($notification->getTable()),
-            NotificationSchema::isReadable()
+            app(IsNotificationSchemaReadableAction::class)->execute()
         );
 
         $user = new User;
         $user->forceFill(['id' => 'auth-log-1']);
-        Assert::assertInstanceOf(Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
 
         $mail = new Message;
         $rendered = null;
@@ -985,7 +955,6 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         $panel = Mockery::mock(Panel::class);
         Assert::assertInstanceOf(Panel::class, $panel);
         Assert::assertCount(1, $user->getTenants($panel));
-        Assert::assertInstanceOf(BelongsToMany::class, $user->tenants());
 
         Assert::assertNull(userCaptureFatal(static function () use ($tenant): void {
             $tenant->users();

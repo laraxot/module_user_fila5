@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Notifications\Notifiable;
 use Modules\User\Models\BaseUser;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class, RefreshDatabase::class);
+uses(TestCase::class);
 
 /**
  * BaseUser e' astratta: il soggetto del test e' una sottoclasse anonima su una tabella dedicata.

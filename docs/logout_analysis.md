@@ -229,4 +229,7 @@ $logout = function () {
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
+- [Documentazione Volt](./volt_blade_implementation.md)
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

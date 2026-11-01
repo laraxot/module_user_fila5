@@ -212,7 +212,6 @@ describe('Tenant Scope Console', function (): void {
             'password' => bcrypt('password123'),
         ]);
 
-        Assert::assertInstanceOf(User::class, $user);
         $user->save();
 
         Assert::assertTrue($user->exists);
