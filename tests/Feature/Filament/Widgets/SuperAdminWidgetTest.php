@@ -198,11 +198,35 @@ describe('SuperAdminWidget toggle', function (): void {
 
         $widget = new SuperAdminWidget;
         $widget->mount();
+        // Dal controllo di DCP-181 il profilo deve vedere il ruolo: l'utente del profilo e' `Modules\Fixcity\Models\User`, quello della factory
+        // `Modules\User\Models\User`, e i ruoli Spatie sono legati alla classe del modello. Si collega il profilo all'utente che ha il ruolo.
+        XotData::make()->getProfileModel()->setRelation('user', $user);
 
         $response = $widget->toggleSuperAdmin();
 
         Assert::assertInstanceOf(RedirectResponse::class, $response);
         Assert::assertSame(303, $response->getStatusCode());
+    });
+});
+
+describe('SuperAdminWidget authorization (DCP-181, audit A-3)', function (): void {
+    test('a user with neither role cannot make himself super-admin by calling the Livewire action', function (): void {
+        /** @var TestCase $this */
+        $user = UserFactory::new()->createOne();
+        // i due ruoli esistono (come nel sistema reale); l'utente non ha ne' l'uno ne' l'altro
+        grantSuperAdminWidgetRole(UserFactory::new()->createOne(), 'super-admin');
+        actingAs($user);
+
+        try {
+            Livewire::test(SuperAdminWidget::class)->call('toggleSuperAdmin');
+        } catch (\Throwable) {
+            // un rifiuto con eccezione (403 / AuthorizationException) e' un esito valido: conta solo che il ruolo non sia stato dato
+        }
+
+        $fresh = $user->fresh();
+        Assert::assertInstanceOf(UserContract::class, $fresh);
+        Assert::assertFalse($fresh->hasRole('super-admin'));
+        Assert::assertFalse($fresh->hasRole('negate-super-admin'));
     });
 });
 

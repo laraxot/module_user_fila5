@@ -8,6 +8,8 @@ related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
   - "./wiki/troubleshooting/git-push-dual-remote-unrelated.md"
   - "./wiki/troubleshooting/git-push-lfs-missing-objects.md"
+status: draft
+qmd: "sincronizzazione multi-organizzazione (laraxot + provtv) user"
 ---
 
 # Sincronizzazione multi-organizzazione (laraxot + provtv)

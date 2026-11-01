@@ -17,6 +17,7 @@ use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
+use Modules\User\Actions\Socialite\GetProviderRedirectUriAction;
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
@@ -97,7 +98,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
 
                         TextInput::make('google.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'google'))
+                            ->default(fn () => app(GetProviderRedirectUriAction::class)->execute('google'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
@@ -127,7 +128,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
 
                         TextInput::make('github.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'github'))
+                            ->default(fn () => app(GetProviderRedirectUriAction::class)->execute('github'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
@@ -157,7 +158,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
 
                         TextInput::make('microsoft.redirect')
-                            ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
+                            ->default(fn () => app(GetProviderRedirectUriAction::class)->execute('microsoft'))
                             ->disabled()
                             ->copyable()
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
@@ -185,7 +186,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $google['client_secret'] ?? '',
                     config('services.google.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'google'),
+                'redirect' => app(GetProviderRedirectUriAction::class)->execute('google'),
                 'scopes' => $this->stringList($google['scopes'] ?? ['openid', 'email', 'profile']),
             ];
         }
@@ -199,7 +200,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $github['client_secret'] ?? '',
                     config('services.github.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'github'),
+                'redirect' => app(GetProviderRedirectUriAction::class)->execute('github'),
                 'scopes' => $this->stringList($github['scopes'] ?? ['read:user', 'user:email']),
             ];
         }
@@ -213,7 +214,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                     $microsoft['client_secret'] ?? '',
                     config('services.microsoft.client_secret'),
                 ),
-                'redirect' => route('socialite.oauth.callback', 'microsoft'),
+                'redirect' => app(GetProviderRedirectUriAction::class)->execute('microsoft'),
                 'scopes' => $this->stringList($microsoft['scopes'] ?? ['User.Read', 'openid', 'email']),
             ];
         }

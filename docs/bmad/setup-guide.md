@@ -5,6 +5,11 @@ module: "User"
 alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   bmad setup guide user"
 ---
 
 # User — BMAD Setup Guide

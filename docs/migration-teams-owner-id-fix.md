@@ -8,6 +8,7 @@ qmd: "teams owner_id migration violation add_owner_id_to_teams_table fold create
 related:
   - "../../Xot/docs/wiki/concepts/xotbase-migration-religion.md"
   - "../../../../docs/wiki/concepts/xotbase-migration-religion.md"
+status: draft
 ---
 
 # Teams — `owner_id`: fold-in fix

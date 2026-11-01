@@ -4,6 +4,8 @@ type: guide
 tags: [user, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "user module   testing user"
 ---
 
 # User Module — Testing

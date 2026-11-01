@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Arr;
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
 
 /**
  * Regressione pagine auth (login, register, reset, logout) in it/en/de/es: chiavi `user::...` mostrate grezze all'utente

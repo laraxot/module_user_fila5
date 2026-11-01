@@ -62,6 +62,13 @@ use Modules\Xot\Datas\XotData;
  */
 class SocialiteUser extends BaseModel
 {
+    /**
+     * Il token OAuth non deve finire in `toArray()` ne' nello stato Livewire delle pagine Filament (audit DCP-181, D-3).
+     *
+     * @var list<string>
+     */
+    protected $hidden = ['token'];
+
     /** @var list<string> */
     protected $fillable = [
         // 'id',

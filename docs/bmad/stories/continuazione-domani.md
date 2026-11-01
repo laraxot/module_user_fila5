@@ -7,10 +7,13 @@ bmad_version: v3.30.1
 updated_at: '2026-09-22'
 status: in-progress
 related:
-  - ../../stories/user-nested-conflict-marker-cleanup-2026-09-22.story.md
+  - ../../stories/user-nested-conflict-marker-cleanup.story.md
   - ./livewire-residual-conversion-cluster-c.story.md
   - ./uppercase-application-dir.story.md
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   continuazione domani user"
 ---
 
 # User — Continuazione Domani
@@ -21,7 +24,7 @@ related:
   80"): **fatta e pushata**. `git branch -vv` oggi: `dev` == `[laraxot/dev]`
   in punta (`6a799fb1`), `git rev-list --left-right --count dev...laraxot/dev`
   → `0 0`. Documentata in
-  `docs/stories/user-nested-conflict-marker-cleanup-2026-09-22.story.md`
+  `docs/stories/user-nested-conflict-marker-cleanup.story.md`
   (addendum "riconciliazione completata").
 - **Rischio residuo reale nel merge, verificato oggi (non solo ipotizzato)**:
   dei 36 conflitti, 29 file `UU` sono stati risolti in blocco con
@@ -47,8 +50,8 @@ related:
   - `docs/bmad/decision-log.md`: lato scartato **negligibile** (righe 229-230,
     sostanzialmente vuoto) — nessun rischio qui.
   - **Non verificati**: gli altri ~21 file della lista dei 29 (es.
-    `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis-2025-10-15.md`,
-    `docs/quality-status-2025-11.md`, ecc.) — probabilita' alta che siano
+    `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis.md`,
+    `docs/quality-status-activity-module-november.md`, ecc.) — probabilita' alta che siano
     genuinamente solo rumore del daemon (come i 5 campionati), ma non e' stato
     riverificato uno per uno.
 - `uppercase-application-dir.story.md` (status frontmatter: `review`, "Commit

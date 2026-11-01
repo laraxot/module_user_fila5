@@ -11,6 +11,9 @@ related:
   - ./perfection-decision-log.md
   - ./epics.md
   - ./module-excellence-prd.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "epics: perfezione assoluta del modulo user user"
 ---
 
 # Epics: Perfezione assoluta del modulo User

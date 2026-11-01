@@ -12,6 +12,8 @@ related:
   - ./livewire-widget-architecture.md
   - ./architecture.md
   - docs/wiki/rules pers. XotBase / lang
+tags: [docs, user, bmad]
+qmd: "architecture: epic 12   gap ui/filament modulo user user"
 ---
 
 # Architecture: epic 12 — gap UI/Filament modulo User
@@ -56,6 +58,10 @@ nell'albero lang esistente (additivo, nessun file lang nuovo se esiste già il t
 Rimozione dead-code nei punti elencati. Dove il `dddx` era "debug provvisorio" (Appearance
 pages) la logica resta invariata, senza output accidentale. `Http/Livewire/TermsOfService.php`
 è da ritirare (10.4), non da "riparare".
+
+Nota 2026-10-20: per le pagine Appearance "la logica resta invariata" non era vero: il salvataggio non e' mai stato scritto, il `dddx` lo
+sostituiva. Ora `updateData()` lancia `LogicException` finche' la persistenza non c'e' (vedi
+[debug-calls-removal-user](../stories/debug-calls-removal-user.story.md)).
 
 ### ADR-004 — Passport SSoT nel cluster
 

@@ -1,3 +1,11 @@
+---
+title: "Perfection Audit — User Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "perfection audit   user module user"
+---
 # Perfection Audit — User Module
 
 **Data**: 2026-09-01

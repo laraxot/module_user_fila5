@@ -1,6 +1,12 @@
 ---
 title: readme-fullcalendar-scheduler
 module: User
+type: note
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "fullcalendar scheduler documentation - readme user"
+status: superseded
+superseded_by: ../readme-fullcalendar-scheduler.md
 ---
 
 # FullCalendar Scheduler Documentation - README
@@ -235,13 +241,13 @@ module: theme
 topic: readme-fullcalendar-scheduler
 canonical: ../../../Themes/docs/shared-components/readme-fullcalendar-scheduler.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

@@ -12,6 +12,9 @@ related:
   - ../stories/9.2.admin-panel-provider-hook.story.md
   - ../stories/10.1.team-change-widget.story.md
   - ../stories/10.2.socialite-buttons-widget.story.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "`adminpanelprovider`: ogni hook del chrome → il suo widget user"
 ---
 
 # `AdminPanelProvider`: ogni hook del chrome → il suo widget

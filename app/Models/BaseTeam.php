@@ -23,7 +23,7 @@ use Modules\Xot\Datas\XotData;
  * @property int $id
  * @property int $user_id
  * @property string $name
- * @property int $personal_team
+ * @property bool $personal_team
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property EloquentCollection<int, Model&UserContract> $members

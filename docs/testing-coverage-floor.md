@@ -10,6 +10,7 @@ qmd: "coverage floor 50 user phpunit exclude filament socialite console http vie
 related:
   - ../../Xot/docs/testing-coverage-floor.md
   - ./testing.md
+tags: [docs, user]
 ---
 
 # Coverage floor 50% — perimetro offline User

@@ -16,7 +16,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string $id
  * @property string $user_id (DC2Type:guid)
  * @property string $name
- * @property int $personal_team
+ * @property bool $personal_team
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by

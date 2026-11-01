@@ -12,7 +12,7 @@ test('CheckOtpExpiredRule can be instantiated', function () {
     $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
 
-    Assert::assertInstanceOf(CheckOtpExpiredRule::class, $rule);
+    Assert::assertSame(CheckOtpExpiredRule::class, $rule::class);
 });
 
 test('CheckOtpExpiredRule has validate and message methods', function () {

@@ -5,6 +5,10 @@ sources:
 confidence: high
 updated: 2026-04-15
 related:
+title: "User Module — Overview"
+status: draft
+tags: [docs, user, wiki]
+qmd: "user module   overview user"
 ---
 
 # User Module — Overview

@@ -10,6 +10,9 @@ related:
   - ./perfection-decision-log.md
   - ./epics.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: audit a 360 gradi, modulo user verso la perfezione assoluta user"
 ---
 
 # Brainstorming: audit a 360 gradi, modulo User verso la perfezione assoluta
@@ -545,7 +548,7 @@ byte, `# adr\n\nAuto-generated directory documentation.`), non documentazione pe
 
 ### 7.6 naming convention — 19 file con suffisso numerico
 
-`business-logic-analysis-1.md`, `dry-kiss-analysis-1.md`,
+`business-logic-analysis-documentation-themes.md`, `dry-kiss-analysis-modulo-user.md`,
 `architecture/architecture-1.md` — pattern classico di tool che duplica invece di
 sovrascrivere. Zero violazioni per data nel nome (`YYYY-MM-DD`). La violazione piu'
 grave resta il punto 7.1 (nomi >100 caratteri, spazi).

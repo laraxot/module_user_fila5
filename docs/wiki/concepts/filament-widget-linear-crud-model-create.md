@@ -14,6 +14,8 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
+status: draft
+qmd: "persistenza register   `::create($data)` user"
 ---
 
 # Persistenza register — `::create($data)`

@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 use Filament\Schemas\Schema;
+use Illuminate\Cache\ArrayStore;
+use Illuminate\Cache\Repository;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\MessageBag;
@@ -14,6 +17,9 @@ use Illuminate\Translation\FileLoader;
 use Illuminate\Translation\Translator;
 use Livewire\Mechanisms\DataStore;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
 
 test('credenziali errate mostrano un errore tradotto sul campo email', function (string $locale, string $method): void {
     $previousContainer = Container::getInstance();
@@ -28,6 +34,8 @@ test('credenziali errate mostrano un errore tradotto sul campo email', function 
         $loader->addNamespace('user', dirname(__DIR__, 4).'/lang');
         $translator = new Translator($loader, $locale);
         $container->instance('translator', $translator);
+        $container->instance('request', Request::create('/'));
+        $container->instance('cache.store', new Repository(new ArrayStore));
         $container->singleton(DataStore::class);
 
         $credentials = [

@@ -4,6 +4,8 @@ type: guide
 tags: [user, authentication, quick-start]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "user module   quick start user"
 ---
 
 # User Module — Quick Start

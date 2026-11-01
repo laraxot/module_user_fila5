@@ -9,6 +9,8 @@ issues:
   - "https://github.com/provtv/module_user_fila5/issues/16"
 discussions:
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
+status: draft
+qmd: "handoff   multi-org sync (story-003) user"
 ---
 
 # Handoff — multi-org sync (STORY-003)

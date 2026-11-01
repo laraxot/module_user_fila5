@@ -12,6 +12,9 @@ related:
   - ./livewire-inventory.md
   - ./prd.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "prd: http/livewire → solo filament widget user"
 ---
 
 # PRD: Http/Livewire → solo Filament widget

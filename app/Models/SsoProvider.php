@@ -67,6 +67,13 @@ use Modules\Xot\Contracts\ProfileContract;
 class SsoProvider extends BaseModel
 {
     /**
+     * Fuori da `toArray()` e quindi dallo stato Livewire delle pagine Edit/View di Filament, che lo manderebbe al browser (audit DCP-181, D-3).
+     *
+     * @var list<string>
+     */
+    protected $hidden = ['client_secret'];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var list<string>

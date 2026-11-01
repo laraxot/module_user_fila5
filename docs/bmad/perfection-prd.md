@@ -12,6 +12,9 @@ related:
   - ./perfection-decision-log.md
   - ./prd.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "prd: perfezione assoluta del modulo user user"
 ---
 
 # PRD: Perfezione assoluta del modulo User

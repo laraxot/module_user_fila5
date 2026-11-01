@@ -10,6 +10,8 @@ related:
   - ./spatie-permission-table-names.md
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
+status: draft
+qmd: "migrazione pivot spatie   mai il nome tabella nel file user"
 ---
 
 # Migrazione pivot Spatie — mai il nome tabella nel file
@@ -61,4 +63,4 @@ protected ?string $model_class = User::class; // modello sbagliato per pivot
 ## Collegamenti
 
 - [spatie-permission-table-names.md](./spatie-permission-table-names.md)
-- [Themes — filosofia Spatie](../../../Themes/docs/shared-components/spatie-permission-philosophy.md)
+- [Filosofia Spatie Permission](../../spatie-permission-philosophy.md)

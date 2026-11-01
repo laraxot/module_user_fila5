@@ -10,6 +10,7 @@ namespace Modules\User\Filament\Actions;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Utilities\Get;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
@@ -23,10 +24,14 @@ final class ChangePasswordAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('user::user.actions.change_password'))
             ->icon('heroicon-o-key')
+            ->authorize('update')
             ->requiresConfirmation()
             ->modalHeading(__('user::password.actions.change_password.modal.heading'))
             ->modalDescription(__('user::password.actions.change_password.modal.description'))
             ->action(function (UserContract $record, array $data): void {
+                // Le Action non autorizzano da sole: BaseUserPolicy::update nega il super-admin a chi non lo e'.
+                Gate::authorize('update', $record);
+
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
 
                 $record->update([

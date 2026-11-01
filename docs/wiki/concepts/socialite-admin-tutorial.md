@@ -12,6 +12,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+status: draft
+tags: [docs, user, wiki]
+qmd: "tutorial: configurare google oauth nel backoffice user"
 ---
 
 # Tutorial: Configurare Google OAuth nel Backoffice

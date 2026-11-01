@@ -7,6 +7,8 @@ created: 2026-07-16
 updated: 2026-07-16
 related:
   - "../../../../docs/wiki/rules/module-theme-root-cleanup.md"
+status: draft
+qmd: "perché queste cartelle non devono esistere qui user"
 ---
 
 # Perché queste cartelle non devono esistere qui

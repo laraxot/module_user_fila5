@@ -16,6 +16,8 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+status: superseded
+superseded_by: ../-integration/socialite.md
 ---
 
 # socialite

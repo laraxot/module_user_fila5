@@ -3,6 +3,9 @@ title: "roadmap — puntatore"
 type: reference
 updated: 2026-05-21
 related:
+status: draft
+tags: [docs, user, development]
+qmd: "policy globale (puntatore) user"
 ---
 
 # Policy globale (puntatore)

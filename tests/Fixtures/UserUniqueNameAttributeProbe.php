@@ -32,7 +32,7 @@ final class UserUniqueNameAttributeProbe extends Model
         return true;
     }
 
-    private function shouldAvoidNamePersistenceDuringTests(): bool
+    protected function shouldAvoidNamePersistenceDuringTests(): bool
     {
         return true;
     }

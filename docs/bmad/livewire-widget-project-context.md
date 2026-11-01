@@ -9,6 +9,9 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "project context   campagna livewire http → widget user"
 ---
 
 # Project context — campagna Livewire HTTP → widget

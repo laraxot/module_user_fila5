@@ -1,3 +1,11 @@
+---
+title: "Analisi del File Logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi del file logout.blade.php user"
+---
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -218,6 +226,9 @@ $logout = function () {
    - Test di UI per l'interfaccia
 
 ## Collegamenti Correlati
+- [Documentazione Volt](./volt_blade_implementation.md)
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md)
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)

@@ -67,7 +67,5 @@ Route::namespace('Socialite')
         );
         // ->name('oauth.redirect')
 
-        Route::get('/sso/{provider}/callback', 'ProcessCallbackController');
-
-        // ->name('oauth.callback');
+        // OAuth callback is the Sixteen Folio page; this legacy route file must not reintroduce a controller callback.
     });

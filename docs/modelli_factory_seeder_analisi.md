@@ -1,3 +1,11 @@
+---
+title: "Analisi Modelli, Factory e Seeder - Modulo User"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi modelli, factory e seeder - modulo user user"
+---
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -184,6 +192,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../saluteora/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
 - [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
 
 *Ultimo aggiornamento: Gennaio 2025*

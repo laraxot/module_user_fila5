@@ -459,6 +459,7 @@ tests/AuditCoverage/
 docs/scripts/
 docs/bashscripts/
 docs/**/archive/
+docs/archive/
 docs/**/archived/
 docs/**/legacy/
 docs/**/workbench/
@@ -498,3 +499,10 @@ app/Models/Models
 .windsurf~*
 
 node_modules
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
+graphify-out/
+
+# module-root-hygiene (story module-root-hygiene)
+/.github/skills/
+docs/graphify
+resources/lang

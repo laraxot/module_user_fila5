@@ -111,4 +111,28 @@ describe('Appearance Cluster', function (): void {
             Assert::assertTrue(class_exists($pageClass));
         }
     });
+
+    test('unimplemented save handlers fail loudly instead of dumping debug output', function (): void {
+        $handlers = [
+            'Alignment' => static fn () => (new Alignment)->updateData(),
+            'Background' => static fn () => (new Background)->updateData(),
+            'Colors' => static fn () => (new Colors)->updateData(),
+            'CustomCss' => static fn () => (new CustomCss)->updateData(),
+            'Favicon' => static fn () => (new Favicon)->updateData(),
+            'Logo' => static fn () => (new Logo)->updateLogo(),
+        ];
+
+        foreach ($handlers as $name => $handler) {
+            $thrown = null;
+
+            try {
+                $handler();
+            } catch (\LogicException $exception) {
+                $thrown = $exception;
+            }
+
+            Assert::assertInstanceOf(\LogicException::class, $thrown, $name);
+            Assert::assertStringContainsString('non implementato', $thrown->getMessage(), $name);
+        }
+    });
 });

@@ -3,6 +3,9 @@ title: "User Module: Support → QueueableActions Refactoring Complete"
 type: documentation
 date: 2026-07-21
 status: COMPLETED
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "user module: support → queueableactions refactoring user"
 ---
 
 # User Module: Support → QueueableActions Refactoring

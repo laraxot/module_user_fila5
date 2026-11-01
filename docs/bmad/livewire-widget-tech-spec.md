@@ -11,6 +11,9 @@ related:
   - ./tech-spec.md
   - ./livewire-inventory.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "technical specification: campagna widget-only user"
 ---
 
 # Technical specification: campagna widget-only

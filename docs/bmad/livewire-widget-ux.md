@@ -7,6 +7,9 @@ related:
   - ./ux-design.md
   - ./livewire-widget-prd.md
   - ./livewire-inventory.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "ux: stesso chrome, contenitore giusto user"
 ---
 
 # UX: stesso chrome, contenitore giusto

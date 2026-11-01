@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "traits   consolidated documentation user"
 ---
 
 # traits — Consolidated Documentation
@@ -34,13 +36,16 @@ module: theme
 topic: traits-complete-guide
 canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -50,7 +55,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/traits-compl
 
 ## traits-hasteams-analisi-corretta-3
 
-*Consolidated from: `traits-hasteams-analisi-corretta-3.md`*
+*Consolidated from: `traits-hasteams-analisi-corretta.md`*
 
 title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
 type: concept
@@ -61,13 +66,16 @@ qmd: "traits-hasteams-analisi-corretta-3 analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -601,12 +609,16 @@ trait HasTeams
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
 - [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes-8.md)
+- [Modules/User/docs/traits.md](../../traits.md)  
+- [docs/phpstan-fixes.md](../../../docs/phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
 - [Modules/User/docs/traits.md](traits.md)  
-- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md)
+- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md)
+- [Modules/User/docs/traits.md](../../traits.md)  
+- [docs/phpstan-fixes.md](../../phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 ---
 
@@ -618,13 +630,16 @@ module: theme
 topic: traits-hasteams-analisi-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -645,13 +660,16 @@ qmd: "traits-hasteams-analysis-corrected analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1185,6 +1203,8 @@ trait HasTeams
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+- [Modules/User/project_docs/traits.md](../../traits.md)
+- [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
 
 ---
@@ -1202,13 +1222,16 @@ qmd: "traits-hasteams-analysis-corretta analisi corretta del trait hasteams - fi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1742,6 +1765,8 @@ trait HasTeams
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)  
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+- [Modules/User/project_docs/traits.md](../../traits.md)  
+- [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
 
 
@@ -1755,13 +1780,16 @@ module: theme
 topic: traits-hasteams-corrected
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1777,13 +1805,16 @@ module: theme
 topic: traits-hasteams-corretta
 canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1804,13 +1835,16 @@ qmd: "traits user module traits"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1857,6 +1891,8 @@ class User extends Authenticatable
 
 ## Collegamenti
 
+- [Modulo User](./README.md)
+- [Xot Traits](../../Xot/docs/)
 - [Modulo User](./readme.md)
 - [Xot Traits](../../../../Xot/docs)
 
@@ -2816,6 +2852,7 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
+- [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 

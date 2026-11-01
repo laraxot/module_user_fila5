@@ -12,6 +12,7 @@ related:
   - "./deviceuser-hasxotfactory.md"
   - "./gits-resolution.md"
   - "./multiple-bugs-resolution.md"
+status: draft
 ---
 
 # Git Conflicts Resolution - 16 Dicembre 2025

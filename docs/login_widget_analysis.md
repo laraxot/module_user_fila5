@@ -1,3 +1,11 @@
+---
+title: "Analisi Dettagliata di LoginWidget"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "analisi dettagliata di loginwidget user"
+---
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`  

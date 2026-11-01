@@ -4,6 +4,8 @@ type: guideline
 module: User
 updated: 2026-09-01
 qmd: "tabella filament resource table class getTableFilters XotBaseResourceTable HasXotTable list page user"
+status: draft
+tags: [docs, user]
 ---
 
 # La tabella si configura nella Table class, non nella pagina
