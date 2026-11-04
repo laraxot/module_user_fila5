@@ -11,4 +11,6 @@ use Spatie\LaravelData\Data;
 class UserConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public bool $enabled = true;
 }
