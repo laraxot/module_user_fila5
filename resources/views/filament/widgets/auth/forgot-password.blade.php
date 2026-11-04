@@ -17,7 +17,7 @@ declare(strict_types=1);
 
         <div class="flex items-center justify-between">
             <div class="text-sm">
-                <a href="{{ route('login') }}" class="font-medium text-primary-600 hover:text-primary-500">
+                <a href="{{ route('login') }}" class="font-medium text-primary-700 hover:text-primary-800">
                     {{ __('user::auth.forgot-password.back_to_login') }}
                 </a>
             </div>

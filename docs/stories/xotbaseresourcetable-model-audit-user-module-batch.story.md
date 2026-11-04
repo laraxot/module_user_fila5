@@ -1,5 +1,5 @@
 ---
-title: "XotBaseResourceTable: audit \$model + verifica colonne (batch modulo User)"
+title: "XotBaseResourceTable: audit $model + verifica colonne (batch modulo User)"
 type: story
 module: User
 epic: null

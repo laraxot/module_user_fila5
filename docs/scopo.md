@@ -4,9 +4,6 @@ type: concept
 module: User
 status: active
 created: 2026-09-02
-updated: 2026-09-02
-tags: [scopo, confini, identita, autorizzazione, sti, contratti, dipendenze]
-qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"
 updated: 2026-10-20
 tags: [scopo, confini, identita, autorizzazione, sti, contratti, team, dipendenze]
 qmd: "scopo user identita autenticazione ruoli permessi team tenant oauth sti parental confini dipendenze"

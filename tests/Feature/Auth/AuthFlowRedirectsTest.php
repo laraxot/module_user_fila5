@@ -151,7 +151,7 @@ test('reset password stores a single hash of the new password', function (): voi
     $email = 'auth-reset-'.uniqid('', true).'@example.test';
     $user = UserFactory::new()->createOne(['email' => $email, 'password' => Hash::make('OldSecret123!')]);
     $this->assertInstanceOf(User::class, $user);
-    $token = Password::broker()->createToken($user);
+    $token = Password::createToken($user);
 
     Livewire::test(ResetPasswordWidget::class, ['token' => $token])
         ->assertSet('data.token', $token)

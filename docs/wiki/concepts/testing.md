@@ -3,7 +3,7 @@ title: "User module testing and PHPStan discipline"
 type: concept
 tags: [user, pest, phpstan, testing]
 created: 2026-06-13
-updated: 2026-07-06
+updated: 2026-10-28
 qmd: "User module pest phpstan skipUserTest uses fqcn helpers Safe glob"
 issues:
 discussions:
@@ -40,6 +40,10 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/User
   - `skipLegacyRedirectPersistenceCheck(): void` — Passport Create*ClientAction
 - Seeders: `$this->seed(RolesSeeder::class)` con `@var TestCase $this` quando serve DB assertion; evitare `$this->app` protected.
 - Helper tipizzati: `UserFactory::new()`, `Safe\glob`, `@param array<string,mixed>` su attributi factory.
+- Closure Filament: ogni parametro ha un tipo nativo, scelto da cio' che Filament inietta (`vendor/filament/schemas/src/Components/Component.php`). `$context`/`$operation` → `string`; `$livewire` → `Livewire\Component`; `$record` → `?Model` in un form (e' `null` in creazione), `Model` in una relation manager; `$state` di un `TextInput` → `?string`. `mixed` solo se il corpo verifica comunque il tipo (es. `instanceof Carbon`). Un parametro mai letto (`$_permission`) si elimina: si filtra sulle chiavi.
+- Closure/callback nei test (`array_map`, `usort`, `Collection::every`): tipo il parametro (`ReflectionParameter`, `stdClass`, `Permission`). La soglia `typeCoverage` e' del progetto intero: il controllo di modulo non la vede, serve `phpstan analyse` full-tree.
+- Token di reset nei test: `Password::createToken($user)`; `Password::broker()` e' il contratto `PasswordBroker`, che non dichiara `createToken()`.
+- Seeder: `Seeder::$command` e' `null` fuori da artisan, anche se il docblock dice `Command`. Si scrive `$this->command?->info(...)` direttamente, senza helper `getConsoleCommand(): ?Command` (PHPStan: `return.unusedType`).
 
 ## Quality gate locale
 

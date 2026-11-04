@@ -14,6 +14,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
 use Modules\User\Filament\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
 use Modules\User\Models\OauthAccessToken;
@@ -48,7 +49,7 @@ class OauthAccessTokenResource extends XotBaseResource
     {
         return $table
             ->columns([
-                TextColumn::make('id')
+                IDColumn::make('id')
                     ->searchable()
                     ->sortable()
                     ->copyable(),

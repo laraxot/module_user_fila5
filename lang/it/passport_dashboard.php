@@ -122,6 +122,15 @@ return [
         'private_key' => 'Chiave Privata',
         'present' => 'Presente',
         'missing' => 'Mancante',
+        'completed' => [
+            'message' => 'Completato',
+        ],
+        'failed' => [
+            'message' => 'Fallito',
+        ],
+        'running' => [
+            'message' => 'In esecuzione...',
+        ],
     ],
     'messages' => [
         'client_created' => 'Client creato con successo',
@@ -131,5 +140,25 @@ return [
         'command_failed' => 'Esecuzione comando fallita',
         'command_error' => 'Errore durante l\'esecuzione del comando',
         'credentials_created' => 'Credenziali create con successo',
+    ],
+    'view' => [
+        'running_notice' => [
+            'message' => 'Il comando è in esecuzione. Non chiudere questa finestra.',
+        ],
+        'actions_disabled' => [
+            'description' => 'Le altre azioni sono disabilitate fino al termine del comando.',
+        ],
+        'running_command' => [
+            'message' => 'Comando in esecuzione: php artisan',
+        ],
+        'waiting_output' => [
+            'message' => 'In attesa dell\'output...',
+        ],
+        'select_command' => [
+            'label' => 'Seleziona un comando dall\'intestazione per iniziare.',
+        ],
+        'scroll' => [
+            'helper_text' => 'Usa la rotellina del mouse per scorrere l\'output.',
+        ],
     ],
 ];

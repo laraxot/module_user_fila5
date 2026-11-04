@@ -1197,4 +1197,6 @@ return [
             ],
         ],
     ],
+    'logout' => 'Esci',
+    'back_to_home' => 'Torna alla home',
 ];

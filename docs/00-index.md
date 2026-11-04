@@ -12,7 +12,7 @@ qmd: "**indice documentazione modulo user** user"
 **Module Version**: 2.5.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
+1. [README.md](./README.md) - Panoramica completa del sistema di identità.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
 3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
 
@@ -39,10 +39,11 @@ qmd: "**indice documentazione modulo user** user"
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
 ## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
+- ✅ **[PHPStan Level 10 Fix Plan](./PHPSTAN_FIX_PLAN.md)** - Piano e stato di conformità Level 10.
 - 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🛡️ **[Autorizzazione delle azioni sugli utenti](./stories/user-actions-authorization.story.md)** - Password, verifica email, disattiva e ruolo super-admin passano dalla policy (story in review).
+- 🌐 **[Niente testi fissi nelle Blade](./stories/blade-i18n-no-hardcoded-text.story.md)** - Testi delle viste in `user::` (it, en, de, es): regola, numeri e residui.
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
@@ -58,8 +59,8 @@ qmd: "**indice documentazione modulo user** user"
 - `spatie/laravel-personal-data-export` - Export GDPR
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
-- [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
+- [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
+- [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -67,6 +68,7 @@ qmd: "**indice documentazione modulo user** user"
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+<<<<<<< .merge_file_fp4R3U
 ---
 title: "User — alias indice"
 type: alias
@@ -85,3 +87,6 @@ Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md).
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
+=======
+- [Scopo, confini e come servirlo meglio](./scopo.md)
+>>>>>>> .merge_file_qKk9ar
