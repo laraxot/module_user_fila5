@@ -58,9 +58,9 @@ senza perdite sono stati ripristinati dalla history git
 tutti e 281 i file recuperabili.
 
 **Stato finale (convergenza con lavoro parallelo su questo stesso modulo)**: nel
-frattempo un altro agente ha applicato la convenzione canonica del progetto —
+frattempo un altro agente ha applicato la convenzione canonica del progetto -
 niente cartelle `archive.bak/`/`Legacy`/`Old` sotto `lang/` (anti-pattern, vedi
-`docs/wiki/concepts/no-legacy-folders-code.md`) — spostando i 281 backup **in-place**
+`docs/wiki/concepts/no-legacy-folders-code.md`): spostando i 281 backup **in-place**
 come `lang/{locale}/nome.php.bak` (stesso path del file attivo, solo suffisso `.bak`).
 Questa è la struttura finale attualmente sul disco; vedi dettagli e comando di verifica
 in
@@ -90,7 +90,7 @@ cartelle `archive.bak`.
 ## Blocchi ambientali (non correlati al codice)
 
 1. Spazio disco quasi esaurito sulla partizione root (`/`, 460G al 100%, pochi MB
-   liberi, fluttuanti) — ha causato fallimenti intermittenti di comandi con output
+   liberi, fluttuanti): ha causato fallimenti intermittenti di comandi con output
    ampio durante questa sessione.
 2. Manca `database/predict_user_test.sqlite` per i test Pest del modulo User.
 3. PHPInsights non trova `composer.lock` nonostante sia presente in `laravel/`.

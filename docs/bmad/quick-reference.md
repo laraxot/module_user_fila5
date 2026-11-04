@@ -1,5 +1,5 @@
 ---
-title: "User — BMAD Quick Reference"
+title: "User: BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo User"
 module: "User"
 alias: "user"
@@ -12,7 +12,7 @@ tags: [docs, user, bmad]
 qmd: "user   bmad quick reference user"
 ---
 
-# User — BMAD Quick Reference
+# User: BMAD Quick Reference
 
 ## Comandi Rapidi
 

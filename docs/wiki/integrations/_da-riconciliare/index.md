@@ -1,5 +1,5 @@
 ---
-title: "user — integrations"
+title: "user: integrations"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "user   integrations user"
 ---
 
-# user — integrations
+# user: integrations
 
 Documentation for `user` module categorized as **integrations**.
 

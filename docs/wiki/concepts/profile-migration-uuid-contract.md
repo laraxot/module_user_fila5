@@ -24,7 +24,7 @@ qmd: "profile migration uuid contract user"
 
 `BaseProfile` genera `uuid` in `creating`. Il contratto richiede colonna `uuid` nella tabella `profiles` del DB usato dal modello concreto.
 
-## Owner schema (workorder — connessione `user`)
+## Owner schema (workorder: connessione `user`)
 
 **Owner migrazione = modulo WorkOrder** (`main_module`):
 

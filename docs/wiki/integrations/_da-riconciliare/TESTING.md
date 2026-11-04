@@ -9,7 +9,7 @@ status: superseded
 superseded_by: testing.md
 ---
 
-# User Module — Testing
+# User Module: Testing
 
 ## Unit Tests
 

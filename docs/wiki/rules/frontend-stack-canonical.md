@@ -1,5 +1,5 @@
 ---
-title: frontend stack canonico — user module stub
+title: frontend stack canonico: user module stub
 type: rule
 module: User
 updated: 2026-06-03
@@ -17,7 +17,7 @@ tags: [docs, user, wiki]
 qmd: "stack frontend   modulo user user"
 ---
 
-# Stack frontend — modulo User
+# Stack frontend: modulo User
 
 ## Mantra progetto
 

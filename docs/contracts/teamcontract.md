@@ -84,8 +84,8 @@ Nota: `HasTeamsContract` storicamente dichiara `belongsToTeam(TeamContract)` non
 
 ### Utenti
 
-- `users(): BelongsToMany` — membri
-- `owner(): BelongsTo` — proprietario
+- `users(): BelongsToMany`: membri
+- `owner(): BelongsTo`: proprietario
 - `hasUser(UserContract $user): bool`
 - `addUser` / `removeUser`
 - `allUsers()` / `members()`

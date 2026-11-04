@@ -1,10 +1,10 @@
 ---
-title: "Filament 4 — filtri pagina e widget (lezioni apprese)"
+title: "Filament 4: filtri pagina e widget (lezioni apprese)"
 type: concept
 tags: [filament, filters, widgets]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "filament-filters-and-widgets filament 4 — filtri pagina e widget (lezioni apprese)"
+qmd: "filament-filters-and-widgets filament 4: filtri pagina e widget (lezioni apprese)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -23,7 +23,7 @@ related:
 status: draft
 ---
 
-# Filament 4 — filtri pagina e widget (lezioni apprese)
+# Filament 4: filtri pagina e widget (lezioni apprese)
 
 - Pagina: usare `HasFiltersForm` e renderizzare lo schema in Blade con `{{ $this->getFiltersForm() }}`.
 - Widget: usare `InteractsWithPageFilters` e impostare `protected static ?bool $isLazyLoaded = false` (Filament 5.11; prima `$isLazy`, ora deprecata).

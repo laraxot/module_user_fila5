@@ -1,5 +1,5 @@
 ---
-title: "User — profiles id bigint + uuid (fix 1364)"
+title: "User: profiles id bigint + uuid (fix 1364)"
 type: concept
 module: User
 tags: [user, profile, migration, uuid, bigint, id-contract]
@@ -15,13 +15,13 @@ related:
 status: draft
 ---
 
-# Profiles — errore 1364 `id` senza default
+# Profiles: errore 1364 `id` senza default
 
 ## Sintomo
 
 ```
 Field 'id' doesn't have a default value
-insert into profiles (user_id, uuid, ...) — senza id
+insert into profiles (user_id, uuid, ...): senza id
 ```
 
 ## Causa
@@ -73,7 +73,7 @@ Cause concorrenti:
 
 1. `config/local/restaurant/xot.php` + `config/local/restaurant/xra.php` + `config/localhost/xra.php` avevano `'main_module' => 'TechPlanner'` (modulo assente)
 2. `BaseProfile::booted()` settava `$model->id = (string) Str::uuid()` su tabella con `id` bigint AI → insert senza default
-3. `BaseProfile::$casts()` forzava `'id' => 'integer'` su colonna di tipo `int` — ridondante ma PHPStan L10 lo segnalava
+3. `BaseProfile::$casts()` forzava `'id' => 'integer'` su colonna di tipo `int`: ridondante ma PHPStan L10 lo segnalava
 
 Correzioni:
 

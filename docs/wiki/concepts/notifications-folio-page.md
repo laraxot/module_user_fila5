@@ -1,5 +1,5 @@
 ---
-title: "Pagina Folio notifiche — centro in-app"
+title: "Pagina Folio notifiche: centro in-app"
 type: concept
 tags: [folio, notifications, user, front-office]
 created: 2026-06-10
@@ -18,13 +18,13 @@ related:
 status: draft
 ---
 
-# Pagina Folio notifiche — centro in-app
+# Pagina Folio notifiche: centro in-app
 
 ## Scopo
 
 Centro notifiche per utenti autenticati nel FO. **Owner UI**: modulo User. **Link header**: tema Sixteen.
 
-La rotta non si definisce in `web.php` — esiste perché esiste il file sotto `pages/`.
+La rotta non si definisce in `web.php`: esiste perché esiste il file sotto `pages/`.
 
 ## Contratto Folio
 
@@ -50,7 +50,7 @@ middleware(['web', 'auth']);
 ```
 
 
-## Imparato — catena completa
+## Imparato: catena completa
 
 ```
 File Folio (User)          name('notifications')
@@ -64,7 +64,7 @@ Header Sixteen             route('notifications')
 Label IT                   pub_theme::header.user.dropdown.notifications.label
 ```
 
-Schema DB notifiche: owner Notify — vedi `Modules/Notify/docs/wiki/concepts/notifications-database-contract.md`.
+Schema DB notifiche: owner Notify: vedi `Modules/Notify/docs/wiki/concepts/notifications-database-contract.md`.
 
 Runtime unread count: `NotificationSchema::isReadable()` in header prima del link.
 

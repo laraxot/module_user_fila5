@@ -37,20 +37,20 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 
 | Stato | Story |
 |---|---|
-| in-progress | [User — dedup BaseUsersTable orfano, colonne unificate, audit clustering](docs/bmad/stories/user-orphan-basetable-dedup-clustering.story.md) |
+| in-progress | [User: dedup BaseUsersTable orfano, colonne unificate, audit clustering](docs/bmad/stories/user-orphan-basetable-dedup-clustering.story.md) |
 | in-progress | [DCP-290: pagine di accesso e reset password a tema, in 4 lingue e accessibili](docs/stories/dcp-290-pagine-di-accesso-e-reset-password-a-tema-e-accessibili.story.md) |
 | in-progress | [Area personale: ogni pagina ha uno scopo e una funzione](docs/stories/dcp-53-area-personale-pagine-con-scopo.story.md) |
 | review | [Story: Ripristino migrazione e traduzioni User dopo conflitto](docs/bmad/stories/committed-conflict-markers.story.md) |
 | review | [User: Application/ in root è duplicato morto](docs/bmad/stories/uppercase-application-dir.story.md) |
-| review | [UserResource — clustering RelationManager, widget reali, audit action riusabili](docs/bmad/stories/user-clustering-widgets-actions-audit.story.md) |
-| review | [User — confine Table, i18n e riuso Filament](docs/bmad/stories/user-filament-boundary-i18n.story.md) |
-| review | [STORY — Assert::isInstanceOf contro Model concreto invece di UserContract, audit repo-wide](docs/stories/assert-isinstanceof-usercontract-audit.story.md) |
+| review | [UserResource: clustering RelationManager, widget reali, audit action riusabili](docs/bmad/stories/user-clustering-widgets-actions-audit.story.md) |
+| review | [User: confine Table, i18n e riuso Filament](docs/bmad/stories/user-filament-boundary-i18n.story.md) |
+| review | [STORY: Assert::isInstanceOf contro Model concreto invece di UserContract, audit repo-wide](docs/stories/assert-isinstanceof-usercontract-audit.story.md) |
 | review | [Flusso di accesso FO: redirect dopo login, reset password, ritorno alla pagina](docs/stories/auth-flow-redirects-reset-token.story.md) |
 | review | [[STORY] ForgotPasswordWidget e ResetPasswordWidget dichiaravano una vista che non esiste](docs/stories/auth-password-widgets-view-not-found.story.md) |
-| ready-for-dev | [User — baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
+| ready-for-dev | [User: baseline BMAD e analisi completa](docs/bmad/stories/module-bmad-audit.story.md) |
 | ready-for-dev | [Resource User con navigazione tradotta](docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md) |
 | ready-for-dev | [User: contratti applicativi PHPStan](docs/stories/7.1.phpstan-application-contracts.story.md) |
-| ready-for-dev | [USER-7.4: PHPStan — dichiarare i param type mancanti (gate typeCoverage 99 % full-tree)](docs/stories/7.4.phpstan-paramtype-coverage.story.md) |
+| ready-for-dev | [USER-7.4: PHPStan: dichiarare i param type mancanti (gate typeCoverage 99 % full-tree)](docs/stories/7.4.phpstan-paramtype-coverage.story.md) |
 | ready-for-dev | [DCP-138: limite di tentativi che funzioni davvero su login, registrazione e azioni costose](docs/stories/dcp-138-limite-di-tentativi-su-login-registrazione-e-azioni-costose.story.md) |
 | ready-for-dev | [Password hashate solo in un'Action](docs/stories/user-hash-password-solo-nelle-actions.story.md) |
 | ready-for-dev | [Pagine Appearance di User: implementare il salvataggio o nasconderle](docs/stories/user-pagine-appearance-salvataggio-o-nascondi.story.md) |

@@ -1,5 +1,5 @@
 ---
-title: "fullcalendar — Consolidated Documentation"
+title: "fullcalendar: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "fullcalendar   consolidated documentation user"
 ---
 
-# fullcalendar — Consolidated Documentation
+# fullcalendar: Consolidated Documentation
 
 Consolidated from **13** individual files.
 

@@ -1,5 +1,5 @@
 ---
-title: "User — UserContract / ProfileContract adoption"
+title: "User: UserContract / ProfileContract adoption"
 type: concept
 module: User
 tags: [user, profile, contract, interface, type-hint, dependency-inversion]
@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# UserContract / ProfileContract — adoption
+# UserContract / ProfileContract: adoption
 
 ## Regola aurea (Laraxot)
 
@@ -26,7 +26,7 @@ Nel codice **app/**, **Volt**, **Actions**, **Datas**, **Notifications**,
 | `Modules\User\Models\User` | `Modules\Xot\Contracts\UserContract` | Xot |
 | `Modules\User\Models\Profile` | `Modules\Xot\Contracts\ProfileContract` | Xot |
 
-`Modules\User\Contracts\UserContract` esiste come **alias** di `Xot\Contracts\UserContract` per retro-compat — il **SSoT canonico è Xot**.
+`Modules\User\Contracts\UserContract` esiste come **alias** di `Xot\Contracts\UserContract` per retro-compat: il **SSoT canonico è Xot**.
 
 ## Quando serve la classe concreta
 

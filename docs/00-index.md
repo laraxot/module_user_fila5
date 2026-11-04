@@ -70,7 +70,7 @@ qmd: "**indice documentazione modulo user** user"
 - [Dependency intelligence](dependency-intelligence.md)
 <<<<<<< .merge_file_fp4R3U
 ---
-title: "User — alias indice"
+title: "User: alias indice"
 type: alias
 module: User
 status: superseded
@@ -80,7 +80,7 @@ updated: 2026-10-20
 qmd: "alias 00-index user verso 00-INDEX"
 ---
 
-# Alias — indice User
+# Alias: indice User
 
 Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md).
 

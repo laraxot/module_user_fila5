@@ -101,7 +101,7 @@ Evitare classi Tailwind non definite (es. `from-primary-600`) che possono risult
 
 I pulsanti social usano icone da `Modules/UI/resources/svg/` tramite `<x-filament::icon>`:
 
-- `ui-google` (google.svg in root) — preferito rispetto a `ui-brands.google`
+- `ui-google` (google.svg in root): preferito rispetto a `ui-brands.google`
 - `ui-brands.github` (brands/github.svg)
 - `ui-brands.microsoft` (brands/microsoft.svg)
 

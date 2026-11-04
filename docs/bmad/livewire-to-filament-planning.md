@@ -1,5 +1,5 @@
 ---
-title: "Pianificazione BMAD — User custom Livewire → Filament widgets"
+title: "Pianificazione BMAD: User custom Livewire → Filament widgets"
 type: planning
 module: User
 status: baseline-2026-10-20
@@ -43,7 +43,7 @@ Hub piattaforma (source of truth cross-modulo):
 
 Stati: `MIGRATE` | `REUSE` | `KEEP` | `RETIRE` (come hub Xot).
 
-## Matrice (User — verificata su disco)
+## Matrice (User: verificata su disco)
 
 | Livewire (FQCN corto) | Scopo | Gemello Filament | Verdetto | Wave | Rischi (auth / redirect / policy) |
 |-----------------------|-------|------------------|----------|------|-----------------------------------|
@@ -51,16 +51,16 @@ Stati: `MIGRATE` | `REUSE` | `KEEP` | `RETIRE` (come hub Xot).
 | `Http\Livewire\Auth\Register` | Registrazione + `ViewCopyAction` in render | `Auth\RegisterWidget` | **REUSE** → **RETIRE** | W1 | `ViewCopyAction` scrive tema a ogni hit; policy registrazione; evento `Registered`. |
 | `Http\Livewire\Auth\Logout` | Logout con rate-limit, eventi, invalidate sessione | `Widgets\LogoutWidget` e/o `Auth\LogoutWidget` | **REUSE** (SSoT obbligatorio) → **RETIRE** | W1 | Tre path logout (questo + `AuthLogout` + `Livewire\Logout`); redirect post-logout; audit log. |
 | `Http\Livewire\Auth\AuthLogout` | Logout immediato in `mount()` (Jet view) | `Auth\AuthLogoutWidget` | **REUSE** → **RETIRE** | W1 | Logout in mount = side-effect al render; allineare a un solo SSoT logout (AC 10.3 #4). |
-| `Http\Livewire\Auth\Verify` | Re-invio email verification + layout FO | — (nessun widget Verify) | **KEEP** FO / Folio (non panel KPI) oppure **RETIRE** se orfano | W2 | Auth user required; redirect `home`; non forzare widget dashboard. |
+| `Http\Livewire\Auth\Verify` | Re-invio email verification + layout FO |: (nessun widget Verify) | **KEEP** FO / Folio (non panel KPI) oppure **RETIRE** se orfano | W2 | Auth user required; redirect `home`; non forzare widget dashboard. |
 | `Http\Livewire\Auth\Passwords\Email` | Richiesta link reset | `Auth\ForgotPasswordWidget` / `PasswordResetWidget` | **REUSE** (SSoT reset) → **RETIRE** | W1 | Broker password; messaggi lang; convivono più widget reset (AC 10.3 #5). |
 | `Http\Livewire\Auth\Passwords\Reset` | Reset con token | `Auth\ResetPasswordWidget` / `PasswordResetWidget` | **REUSE** (SSoT) → **RETIRE** | W1 | Token/email query; redirect post-reset; password rules. |
 | `Http\Livewire\Auth\Passwords\Confirm` | Conferma password sessione | `Auth\PasswordResetConfirmWidget` (nome vicino; verificare equivalenza) | **REUSE** o **MIGRATE** gap se contratto diverso → poi **RETIRE** | W1–W2 | `auth.password_confirmed_at`; `intended(home)`; non confondere con reset token. |
 | `Http\Livewire\TermsOfService` | Testo ToS da `config('terms-of-service.text')`; `testfunction()` → `dddx('wip')` | `TermsOfServiceWidget` | **REUSE** (panel) + **RETIRE** HTTP orfano | W0 | Config assente → testo vuoto (docblock widget); non portare `dddx`; pagina pubblica ≠ questo widget (vedi Gdpr 12.1, senza ownership change qui). |
-| `Http\Livewire\PrivacyPolicy` | Markdown privacy + layout Filament base | `PrivacyPolicyWidget` | **REUSE** (panel) + **RETIRE** HTTP | W0 | Path `resource_path('markdown/…')`; layout base; Gdpr 12.1 vieta PrivacyPolicyWidget come KPI dashboard — mount solo dove serve testo, non stats overview. |
+| `Http\Livewire\PrivacyPolicy` | Markdown privacy + layout Filament base | `PrivacyPolicyWidget` | **REUSE** (panel) + **RETIRE** HTTP | W0 | Path `resource_path('markdown/…')`; layout base; Gdpr 12.1 vieta PrivacyPolicyWidget come KPI dashboard: mount solo dove serve testo, non stats overview. |
 | `Http\Livewire\Profile\DeleteAccount` | Cancellazione account + password confirm | `Profile\DeleteAccountWidget` | **REUSE** → **RETIRE** | W2 | Policy solo self; `DeleteUserAction` (story 10.4 blocked/locked); toast hardcoded IT da migrare a lang. |
 | `Http\Livewire\Profile\SuperAdmin` | Toggle super-admin + redirect 303 | `Profile\SuperAdminWidget` | **REUSE** → **RETIRE** | W1 | Policy elevatissima; redirect 303; hook `user-menu` già su FQCN widget (se provider integro). |
 | `Http\Livewire\Team\Change` | Switch team Filament auth | `Team\TeamChangeWidget` | **REUSE** → **RETIRE** | W1 | Redirect 303; evento `TeamSwitched`; tenant/team guard. |
-| `Http\Livewire\Socialite\Buttons` | Bottoni OAuth da `filament-socialite.providers` | `Auth\SocialLoginWidget` | **REUSE** (param route) → **RETIRE** | W1 | Gap storico: config providers vs `services.*.client_id`; route panel `socialite.oauth.redirect` vs FO `….fo.redirect` — montare il widget “com’è” sul login admin senza parametro = redirect OAuth sbagliato. |
+| `Http\Livewire\Socialite\Buttons` | Bottoni OAuth da `filament-socialite.providers` | `Auth\SocialLoginWidget` | **REUSE** (param route) → **RETIRE** | W1 | Gap storico: config providers vs `services.*.client_id`; route panel `socialite.oauth.redirect` vs FO `….fo.redirect`: montare il widget “com’è” sul login admin senza parametro = redirect OAuth sbagliato. |
 | `Livewire\Logout` (`app/Livewire`, non Http) | Logout on-demand + redirect `home` | `LogoutWidget` / `Auth\LogoutWidget` | **RETIRE** (orfano se zero mount) | W0–W1 | Sessione invalidate; non aggiungere terzo SSoT; rotta reale tipicamente `LogoutController` POST `/logout`. |
 
 ### Wave (allineate all’hub Xot)
@@ -74,8 +74,8 @@ Stati: `MIGRATE` | `REUSE` | `KEEP` | `RETIRE` (come hub Xot).
 
 ## Fatti verificati (estratto)
 
-1. **TermsOfService HTTP** — legge `config('terms-of-service.text')`; metodo `testfunction()` con `dddx('wip')` → codice morto/debug; nessun mount trovato storicamente → orfano.
-2. **TermsOfServiceWidget** — docblock: *sostituisce* `Http\Livewire\TermsOfService`; stessa lettura config; **non** porta il `dddx`. → verdetto **REUSE**.
+1. **TermsOfService HTTP**: legge `config('terms-of-service.text')`; metodo `testfunction()` con `dddx('wip')` → codice morto/debug; nessun mount trovato storicamente → orfano.
+2. **TermsOfServiceWidget**: docblock: *sostituisce* `Http\Livewire\TermsOfService`; stessa lettura config; **non** porta il `dddx`. → verdetto **REUSE**.
 3. **Twins citati dalla missione** presenti: `LoginWidget`, `LogoutWidget`, `AuthLogoutWidget`, `TermsOfServiceWidget`, `PrivacyPolicyWidget`, `SocialLoginWidget` (path sotto `app/Filament/Widgets/…`).
 4. **Gdpr 12.1** ([story](../../../Gdpr/docs/stories/12.1.gdpr-owns-legal-pages.story.md)): “Gdpr possiede Privacy/Terms”, “Non implementare ora”, “Nessun PrivacyPolicyWidget dashboard”. Questo piano **cita** la story per la pagina pubblica futura; **non** assegna ownership né cancella i widget di display panel User.
 

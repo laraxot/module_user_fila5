@@ -1,5 +1,5 @@
 ---
-title: "Lacune di completamento — User"
+title: "Lacune di completamento: User"
 type: audit
 status: open
 created: 2026-10-28
@@ -10,7 +10,7 @@ related:
   - "../../Xot/docs/project-completion-readiness.md"
 ---
 
-# Lacune di completamento — User
+# Lacune di completamento: User
 
 ## Esito
 
@@ -76,13 +76,13 @@ Lettura read-only delle 155 story locali (`*.story.md`): 104 hanno uno stato div
 
 ### Esempi prioritari da riconciliare
 
-- `blocked` — [`10.4.retire-gdpr-profile-livewire.story.md`](stories/10.4.retire-gdpr-profile-livewire.story.md)
-- `blocked-decision` — [`gitignore-database-rule-hides-tests.story.md`](bmad/stories/gitignore-database-rule-hides-tests.story.md)
-- `blocked` — [`livewire-residual-conversion-cluster-c.story.md`](bmad/stories/livewire-residual-conversion-cluster-c.story.md)
-- `in-progress` — [`dcp-290-pagine-di-accesso-e-reset-password-a-tema-e-accessibili.story.md`](stories/dcp-290-pagine-di-accesso-e-reset-password-a-tema-e-accessibili.story.md)
-- `in-progress` — [`dcp-53-area-personale-pagine-con-scopo.story.md`](stories/dcp-53-area-personale-pagine-con-scopo.story.md)
-- `in-progress` — [`user-orphan-basetable-dedup-clustering.story.md`](bmad/stories/user-orphan-basetable-dedup-clustering.story.md)
-- `needs-decision` — [`dcp-144-accesso-del-cittadino-con-spid-cie-o-decisione-motivata.story.md`](stories/dcp-144-accesso-del-cittadino-con-spid-cie-o-decisione-motivata.story.md)
-- `open` — [`user-guest-project-names-removal.story.md`](stories/user-guest-project-names-removal.story.md)
+- `blocked`: [`10.4.retire-gdpr-profile-livewire.story.md`](stories/10.4.retire-gdpr-profile-livewire.story.md)
+- `blocked-decision`: [`gitignore-database-rule-hides-tests.story.md`](bmad/stories/gitignore-database-rule-hides-tests.story.md)
+- `blocked`: [`livewire-residual-conversion-cluster-c.story.md`](bmad/stories/livewire-residual-conversion-cluster-c.story.md)
+- `in-progress`: [`dcp-290-pagine-di-accesso-e-reset-password-a-tema-e-accessibili.story.md`](stories/dcp-290-pagine-di-accesso-e-reset-password-a-tema-e-accessibili.story.md)
+- `in-progress`: [`dcp-53-area-personale-pagine-con-scopo.story.md`](stories/dcp-53-area-personale-pagine-con-scopo.story.md)
+- `in-progress`: [`user-orphan-basetable-dedup-clustering.story.md`](bmad/stories/user-orphan-basetable-dedup-clustering.story.md)
+- `needs-decision`: [`dcp-144-accesso-del-cittadino-con-spid-cie-o-decisione-motivata.story.md`](stories/dcp-144-accesso-del-cittadino-con-spid-cie-o-decisione-motivata.story.md)
+- `open`: [`user-guest-project-names-removal.story.md`](stories/user-guest-project-names-removal.story.md)
 
 Prima di lavorare su questi elementi, verificare lo stato canonico nello sprint status, claim/lock e dipendenze. Una story senza `status` non va considerata automaticamente completata.

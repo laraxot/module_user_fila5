@@ -1,5 +1,5 @@
 ---
-title: "authentication_logs — ownership connessione user"
+title: "authentication_logs: ownership connessione user"
 type: bug-audit
 module: User
 status: active
@@ -70,11 +70,11 @@ si sposti silenziosamente su `fixcity_data`.
 
 Resource già presente: `Modules\User\Filament\Resources\AuthenticationLogResource`.
 Nessuna Resource Fixcity: i log non sono dominio civico.
-## Translation Convention (5 Elements) — FIXED 2026-10-18
+## Translation Convention (5 Elements): FIXED 2026-10-18
 -  (fixed from )
 -  (fixed from )
 
-## Translation Convention (5 Elements) — FIXED 2026-10-18
+## Translation Convention (5 Elements): FIXED 2026-10-18
 - `fixcity::auth.login.intro.text` (fixed from `fixcity::auth.intro`)
 - `user::auth.login.password.text` (fixed from `user::auth.password`)
 - `pub_theme::accessibility.page.title.text` (fixed from `pub_theme::accessibility.title`)

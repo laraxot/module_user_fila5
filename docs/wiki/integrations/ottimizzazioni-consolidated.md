@@ -1,5 +1,5 @@
 ---
-title: "ottimizzazioni — Consolidated Documentation"
+title: "ottimizzazioni: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "ottimizzazioni   consolidated documentation user"
 ---
 
-# ottimizzazioni — Consolidated Documentation
+# ottimizzazioni: Consolidated Documentation
 
 Consolidated from **8** individual files.
 

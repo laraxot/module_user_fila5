@@ -1,5 +1,5 @@
 ---
-title: "User — dedup BaseUsersTable orfano, colonne unificate, audit clustering"
+title: "User: dedup BaseUsersTable orfano, colonne unificate, audit clustering"
 type: story
 status: in-progress
 epic: "USER-MODULE-EXCELLENCE"
@@ -13,7 +13,7 @@ tags: [docs, user, bmad]
 qmd: "story   user: dedup baseuserstable orfano + audit clustering/widget/action user"
 ---
 
-# Story — User: dedup BaseUsersTable orfano + audit clustering/widget/action
+# Story: User: dedup BaseUsersTable orfano + audit clustering/widget/action
 
 ## Contesto
 
@@ -44,7 +44,7 @@ Le colonne `state` e `password_expires_at` presenti solo nell'orfano sono
 invece reali (proprietà su `Modules\User\Models\User`, colonne aggiunte dalle
 migration `2026_02_13_172136_create_users_table.php` e
 `2026_09_01_150113_create_users_table.php`) e utili (stato account, scadenza
-password per sicurezza) — non erano probe/placeholder.
+password per sicurezza): non erano probe/placeholder.
 
 ## Azioni
 
@@ -53,7 +53,7 @@ password per sicurezza) — non erano probe/placeholder.
   `toggleable(isToggledHiddenByDefault: true)`, coerenti con le altre colonne
   di stato/audit già presenti (`is_otp`, `lang`, `current_team_id`, `type`).
 - [x] Rimosso `app/Filament/Resources/BaseUserResource/Tables/BaseUsersTable.php`
-  (`git rm`) — nessuna colonna persa, nessun chiamante reale rotto.
+  (`git rm`): nessuna colonna persa, nessun chiamante reale rotto.
 - [x] PHPStan sui 2 file toccati: 0 errori. PHPStan intero modulo User: 0 errori.
 - [ ] Pest modulo User: da eseguire (vedi nota host sotto).
 - [in corso, delegato a 2 sub-agent paralleli]: audit clustering
@@ -87,7 +87,7 @@ architetturali e coordinamento issue. L'installazione qmd locale indicizza
 anche una collection di un altro checkout (`base_fixcity_fila5`), problema
 già segnalato dalla story sorella.
 
-## GitHub issue/discussion — skip documentato
+## GitHub issue/discussion: skip documentato
 
 Il hook post-edit ha segnalato l'issue laraxot/module_user_fila5#92 (collegata
 da `docs/stories/xotbaseresourcetable-model-audit-passport-socialite-clusters-batch.story.md`)

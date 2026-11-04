@@ -1,5 +1,5 @@
 ---
-title: "quality — Consolidated Documentation"
+title: "quality: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "quality   consolidated documentation user"
 ---
 
-# quality — Consolidated Documentation
+# quality: Consolidated Documentation
 
 Consolidated from **10** individual files.
 

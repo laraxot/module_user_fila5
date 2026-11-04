@@ -1,5 +1,5 @@
 ---
-title: "[DEV] PHPStan zero errori — modulo User"
+title: "[DEV] PHPStan zero errori: modulo User"
 type: dev
 module: User
 story: "./phpstan-zero-errors-user.story.md"
@@ -9,7 +9,7 @@ updated: 2026-10-28
 tags: [phpstan, user, typecoverage, bmad, swarm]
 ---
 
-# [DEV] PHPStan zero errori — modulo User
+# [DEV] PHPStan zero errori: modulo User
 
 ## Technical Plan
 
@@ -17,14 +17,14 @@ Raggruppare per causa (typeCoverage, seeder, test) e correggere alla sorgente; n
 
 ## Files to Modify (17)
 
-- `app/Console/Commands/BackfillOauthClientOwnerCommand.php` — `Builder $query`
-- `app/Filament/Resources/RoleResource/Pages/{CreateRole,EditRole}.php` — filtro sulle sole chiavi, `string $permission`
+- `app/Console/Commands/BackfillOauthClientOwnerCommand.php`: `Builder $query`
+- `app/Filament/Resources/RoleResource/Pages/{CreateRole,EditRole}.php`: filtro sulle sole chiavi, `string $permission`
 - `app/Filament/Resources/TenantResource/RelationManagers/{Domains,Profiles,Users}RelationManager.php`
 - `app/Filament/Resources/TenantResource/Schemas/{TenantForm,CustomerForm}.php`
 - `app/Filament/Resources/UserResource/RelationManagers/OauthTokensRelationManager.php`
 - `app/Filament/Resources/UserResource/Schemas/UserForm.php`
-- `database/seeders/{RolesSeeder,UserMassSeeder}.php` — via `getConsoleCommand()`
-- `tests/Feature/Auth/AuthFlowRedirectsTest.php` — `Password::createToken`
+- `database/seeders/{RolesSeeder,UserMassSeeder}.php`: via `getConsoleCommand()`
+- `tests/Feature/Auth/AuthFlowRedirectsTest.php`: `Password::createToken`
 - `tests/Unit/{AuthenticationBusinessLogicTest,Datas/PasswordDataTest,Http/Controllers/Socialite/OauthLocaleBindingContractTest,Models/PermissionTest}.php`
 - `docs/wiki/concepts/testing.md` (write-back), `docs/stories/7.4.phpstan-paramtype-coverage.story.md`
 

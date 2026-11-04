@@ -1,5 +1,5 @@
 ---
-title: "Puntatore — decision log campagna widget"
+title: "Puntatore: decision log campagna widget"
 canonical: ./decision-log.md
 superseded: true
 related:

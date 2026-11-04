@@ -19,7 +19,7 @@ https://dev.to/filamentmastery/adding-terms-and-conditions-acceptance-to-filamen
 
 
 
-## Appendice — contenuto migrato
+## Appendice: contenuto migrato
 
 ---
 module: theme

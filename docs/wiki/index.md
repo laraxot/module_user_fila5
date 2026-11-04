@@ -27,22 +27,22 @@ Indice operativo del wiki User.
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
-- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
-- [architecture-module-directory-structure](../../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
-- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): tips 001–022
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md): pilastri schema/doc (ADR)
+- [architecture-module-directory-structure](../../../../../docs/wiki/bmad/architecture-module-directory-structure.md): PHP solo in `app/`
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md): stub → canon Xot
 
 ## Struttura canonica (sacred)
 
-- [module-root-folder-violations](./concepts/module-root-folder-violations.md) — bonifica root User ✅
-- [directory-structure-checklist](../directory-structure-checklist.md) — checklist percorsi
+- [module-root-folder-violations](./concepts/module-root-folder-violations.md): bonifica root User ✅
+- [directory-structure-checklist](../directory-structure-checklist.md): checklist percorsi
 - [entities/](./entities/): Modelli e componenti chiave.
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
-  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
-  - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
+  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md): push rifiutato per LFS corrotto (squash)
+  - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md): marker merge / rebase
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.
 
@@ -62,7 +62,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 | Pagina | Argomento |
 |--------|-----------|
-| [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md) | `permission.php` table_names — non modificare |
+| [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md) | `permission.php` table_names: non modificare |
 | [spatie-permission-table-names](./concepts/spatie-permission-table-names.md) | Pivot da config |
 | [spatie-permission-migration-no-table-name](./concepts/spatie-permission-migration-no-table-name.md) | Migrazioni pivot |
 | [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md) | Profiles id/uuid |
@@ -99,7 +99,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [socialite-linkedin-tenant](./concepts/socialite-linkedin-tenant.md) | Concept | OAuth LinkedIn | 2026-04-27 |
 | [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-.md.md) | Troubleshooting | Widget property types PHPStan | 2026-05-06 |
 | [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali | 2026-06-18 |
-| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 24 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
+| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 24 Table files populated: XotBaseResourceTable enforcement | 2026-05-07 |
 
 ## Best Practices
 
@@ -113,7 +113,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
 - NON modificare `laravel/config/permission.php` → `table_names` per fix 1146 (vedi [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md))
-- NON hardcodare nomi tabella pivot su modelli (`$table`) — usare `getTable()` da config
+- NON hardcodare nomi tabella pivot su modelli (`$table`): usare `getTable()` da config
 
 ## False Friends
 
