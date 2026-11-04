@@ -1,11 +1,3 @@
----
-title: "user module documentation optimization analysis"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "user module documentation optimization analysis user"
----
 # user module documentation optimization analysis
 
 ## current state analysis
@@ -18,7 +10,7 @@ qmd: "user module documentation optimization analysis user"
 ## major problems identified
 
 ### 1. massive duplication
-- authentication: `auth-login-implementation.md` + `auth_login_implementation.md`
+- authentication: `auth-login-implementation.md` + `auth-login-implementation.md`
 - logout: 18+ files covering same logout functionality
 - filament: multiple duplicate filament documentation files
 

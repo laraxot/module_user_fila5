@@ -1,23 +1,3 @@
----
-title: "Gestione delle Sessioni"
-type: concept
-tags: [session, management]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "session-management gestione delle sessioni"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -90,16 +70,8 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
-- [Gestione del Profilo](../../profile-management-laravel-modules.md)
-- [Best Practices per il Routing](../../routing-best-practices-architettura-volt-folio-filament.md)
-- [Best Practices di Sicurezza](./security_best_practices.md)
-- [Documentazione Volt](../../volt-blade-implementation-introduzione.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
-- [Indice del Modulo Utente](./index.md)
-- [Modello BaseUser](./baseuser.md)
-- [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
-- [Gestione del Profilo](../../profile-management.md)
+- [Gestione del Profilo](./profile-management.md)
 - [Best Practices per il Routing](./routing-best-practices.md)
-- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
-- [Tema One Documentation](../../Themes/One/docs/README.md) 
+- [Tema One Documentation](../../themes/one/docs/readme.md) 

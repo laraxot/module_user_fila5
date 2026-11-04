@@ -1,18 +1,10 @@
----
-title: "Implementazione dei Form con Widget Filament"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "implementazione dei form con widget filament user"
----
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
 ## Introduzione
 
@@ -31,7 +23,7 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
 ## Struttura delle Directory
 
 ```
-/var/www/html/saluteora/laravel/
+/var/www/html/healthcare_app/laravel/
 ├── Modules/
 │   └── User/
 │       └── app/
@@ -291,5 +283,5 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

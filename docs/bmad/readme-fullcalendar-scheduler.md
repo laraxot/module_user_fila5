@@ -2,10 +2,11 @@
 title: readme-fullcalendar-scheduler
 module: User
 type: note
-status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "fullcalendar scheduler documentation - readme user"
+status: superseded
+superseded_by: ../readme-fullcalendar-scheduler.md
 ---
 
 # FullCalendar Scheduler Documentation - README

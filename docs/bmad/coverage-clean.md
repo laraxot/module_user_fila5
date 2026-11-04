@@ -16,6 +16,8 @@ related:
   - "../actions-path-convention.md"
   - "../actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+status: superseded
+superseded_by: ../coverage-clean.md
 ---
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:16

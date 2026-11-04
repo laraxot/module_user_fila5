@@ -1,21 +1,13 @@
----
-title: "Implementazione Corretta del Logout con Volt e Folio"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "implementazione corretta del logout con volt e folio user"
----
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi Logout Blade](./logout_blade_analysis.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
-Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
+Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di healthcare_app.
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -25,7 +17,7 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 ## Approcci Raccomandati
 
-In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto healthcare_app, si raccomandano i seguenti approcci per l'implementazione del logout.
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -171,7 +163,7 @@ mount(function() {
 
 ## Implementazione con Componenti Filament
 
-Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
+Per seguire le best practices di healthcare_app, utilizzare sempre i componenti Blade nativi di Filament:
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

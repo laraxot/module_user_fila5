@@ -1,11 +1,3 @@
----
-title: "Filosofia dei Comandi Console - Modulo User"
-type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, user, console_commands]
-qmd: "filosofia dei comandi console - modulo user user"
----
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -447,7 +439,7 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -462,7 +454,3 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-
-*Ultimo aggiornamento: 2025-01-27*
-
-

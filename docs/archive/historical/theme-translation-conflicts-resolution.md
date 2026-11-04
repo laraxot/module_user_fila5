@@ -1,23 +1,3 @@
----
-title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
-type: concept
-tags: [theme, translation, conflicts, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "theme-translation-conflicts-resolution risoluzione conflitti traduzioni tema two - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: 2025-01-06
@@ -212,8 +192,6 @@ I file di traduzione del tema Two presentavano conflitti Git che coinvolgevano s
 - Aggiunto `declare(strict_types=1);` dove mancante
 
 **Struttura Corretta**:
-```
-
 ```php
 <?php
 
@@ -416,11 +394,11 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
-- [Moderation Strategy](../../user-moderation-strategy-documentation-themes.md)
+- [Moderation Strategy](user-moderation-strategy.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
-- [Translation Standards](../../../../docs/project/translation-standards.md)
+- [Translation Standards](../../../project_docs/translation-standards.md)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

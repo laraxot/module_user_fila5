@@ -9,6 +9,7 @@ use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Filament\Resources\UserResource\Actions\VerifyEmailAction;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -50,7 +51,7 @@ abstract class BaseUsersTable extends XotBaseResourceTable
             'type' => TextColumn::make('type')->toggleable(isToggledHiddenByDefault: true),
             'state' => TextColumn::make('state')->searchable()->toggleable(isToggledHiddenByDefault: true),
             'password_expires_at' => TextColumn::make('password_expires_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
-            'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];

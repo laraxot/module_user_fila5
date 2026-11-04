@@ -1,11 +1,3 @@
----
-title: "Errore nel Logout con Volt e Folio"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "errore nel logout con volt e folio user"
----
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -122,6 +114,6 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Folio](./routing-best-practices.md)
 - [Best Practices Volt](./volt_best_practices.md)
-- [Gestione Sessione](./session_management.md) 
+- [Gestione Sessione](./session-management.md) 

@@ -1,11 +1,3 @@
----
-title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
----
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -15,11 +7,11 @@ qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-- [Indice documentazione User](/laravel/Modules/User/docs/index.md)
-- [README User](/laravel/Modules/User/docs/README.md)
-- [Auth Components Best Practices](/laravel/Modules/User/docs/auth_components_best_practices.md)
-- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
-- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+- [Indice documentazione User](/laravel/modules/user/docs/index.md)
+- [README User](/laravel/modules/user/docs/readme.md)
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
+- [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
 
 ## File Risolti
 
@@ -303,10 +295,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-- [widgets_structure.md](./widgets_structure.md) - Regole per widget structure
+- [widgets_structure.md](./widgets-structure.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path_conventions.md](./path_conventions.md) - Convenzioni percorsi
-- [volt_blade_implementation.md](./volt_blade_implementation.md) - View patterns
+- [path_conventions.md](./path-conventions.md) - Convenzioni percorsi
+- [volt_blade_implementation.md](./volt-blade-implementation.md) - View patterns
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

@@ -1,22 +1,14 @@
----
-title: "Implementazione Corretta di logout.blade.php"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "implementazione corretta di logout.blade.php user"
----
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-- [Documentazione centrale](../readme.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -157,9 +149,9 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 - Permette di mostrare un messaggio di conferma durante il reindirizzamento
 - Utilizza il pattern mount per eseguire azioni all'inizializzazione del componente
 
-## Implementazione Raccomandata per SaluteOra
+## Implementazione Raccomandata per healthcare_app
 
-Per SaluteOra, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+Per healthcare_app, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
 
 1. Il logout è un'operazione semplice che non richiede gestione dello stato
 2. Non è necessaria interazione con l'utente durante il processo
@@ -219,4 +211,4 @@ return redirect()->to('/' . $locale);
 ?>
 ```
 
-Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
+Questa implementazione è semplice, sicura e segue tutte le best practices del progetto healthcare_app.

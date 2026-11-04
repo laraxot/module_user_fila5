@@ -1,11 +1,3 @@
----
-title: "Implementazione della Pagina di Logout nel Tema One"
-type: note
-status: draft
-updated: 2026-09-24
-tags: [docs, user, archive]
-qmd: "implementazione della pagina di logout nel tema one user"
----
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -14,7 +6,7 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
-/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+/var/www/html/healthcare_app/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 ```
 
 ### 2. Implementazione Corretta
@@ -107,6 +99,6 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Best Practices Folio](./routing-best-practices.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

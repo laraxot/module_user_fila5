@@ -1,23 +1,3 @@
----
-title: "Piano di Implementazione Componenti Header"
-type: concept
-tags: [implementation, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "implementation-plan piano di implementazione componenti header"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -185,9 +165,6 @@ class NavigationTest extends TestCase
 ### 7.1 Aggiornare
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
-- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-- [Header Components](./header-components.md)
-- [Navigation Structure](../../navigation-structure-struttura-navigazione.md)
 - [Security Best Practices](./security_best_practices.md)
 
 ## Timeline
@@ -217,7 +194,4 @@ class NavigationTest extends TestCase
 ## Collegamenti Correlati
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
-- [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
-- [Header Components](./header-components.md)
-- [Navigation Structure](../../navigation-structure-struttura-navigazione.md)
 - [Security Best Practices](./security_best_practices.md) 

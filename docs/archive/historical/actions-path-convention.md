@@ -1,23 +1,3 @@
----
-title: "Convenzione dei Percorsi per le Actions"
-type: concept
-tags: [actions, path, convention]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "actions-path-convention convenzione dei percorsi per le actions"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-structure.md"
----
-
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -81,6 +61,6 @@ fi
 ```
 
 ## Collegamenti
-- [Convenzioni Path nei Moduli Laravel](../../path-conventions-user.md)
+- [Convenzioni Path nei Moduli Laravel](./path-conventions.md)
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

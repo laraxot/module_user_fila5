@@ -170,3 +170,9 @@ Non verificato:
 - `UserServiceProvider.php` e' stato modificato da due sessioni (DCP-282 e questa): le due modifiche sono indipendenti e il file passa PHPStan, ma non e' stato rieseguito il test di DCP-282.
 - La mail di reset non e' stata spedita davvero (MAIL_MAILER di sviluppo e' `sendmail`, D-15); provata solo la resa del template in tedesco.
 - D-04: la rotta `verification.verify` resta non definita (DEC-11): il link nella mail di verifica continua a non poter essere generato finche' il titolare non decide. Questa story non lo risolve.
+
+## 2026-11-03: destinatario delle email di autenticazione in una Action
+
+Le closure `ResetPassword::toMailUsing` e `VerifyEmail::toMailUsing` di `UserServiceProvider` ripetevano la stessa ricerca dell'indirizzo, con `else` dopo `throw` e `\InvalidArgumentException` non importato (PHPMD `ElseExpression`, `MissingImport`). Ora usano `Actions/Auth/ResolveNotifiableEmailAction`: prima `getEmailForPasswordReset()`, poi `email`, null se mancano entrambi; un valore non stringa lancia `InvalidArgumentException` con lo stesso messaggio. Il reset password registra ancora l'errore quando manca il destinatario. Tolti tre import usati solo nei commenti (`Livewire`, `LoginWidget`, `RegisterWidget`).
+
+Verifica: `tests/Unit/Actions/Auth/ResolveNotifiableEmailActionTest.php` (4 casi) e `tests/Feature/Auth/ResetPasswordMailTemplateTest.php` (6 casi, passano dalla closure): 10 passed. PHPStan intero progetto `[OK]`, Pint passa; PHPMD sul provider: solo `CouplingBetweenObjects` 20, uguale a prima e nella soglia di progetto.

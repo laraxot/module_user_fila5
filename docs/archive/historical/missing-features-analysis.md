@@ -1,23 +1,3 @@
----
-title: "Analisi Funzionalità Mancanti - Modulo User"
-type: concept
-tags: [missing, features, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "missing-features-analysis analisi funzionalità mancanti - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "../../2fa-guide.md"
-  - "./2fa.md"
-  - "../../accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "../../actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
----
-
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: 2026-01-22  
@@ -127,7 +107,7 @@ Il modulo **User** fornisce:
    - Mapping permessi
 
 2. **LimeParticipant** - Partecipanti survey
-   - Integrazione con Contact model Quaeris
+   - Integrazione con Contact model ExternalProject
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -175,8 +155,8 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
-- [Modulo Quaeris](../Quaeris/docs/README.md)
-- [Modulo Limesurvey](../Limesurvey/docs/README.md)
+- [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+- [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./README.md)
 
 ---

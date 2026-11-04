@@ -14,10 +14,10 @@ declare(strict_types=1);
             
             <div>
                 <h3 class="text-xl font-semibold text-[#272C4D] mb-2">
-                    {{ __('user::auth.password.error.text_reset.email_sent.title') }}
+                    {{ __('user::auth.password_reset.email_sent.title') }}
                 </h3>
                 <p class="text-gray-600 mb-6">
-                    {{ __('user::auth.password.error.text_reset.email_sent.message') }}
+                    {{ __('user::auth.password_reset.email_sent.message') }}
                 </p>
             </div>
 
@@ -26,12 +26,12 @@ declare(strict_types=1);
                     wire:click="resetForm" 
                     color="gray" 
                     class="w-full">
-                    {{ __('user::auth.password.error.text_reset.send_another') }}
+                    {{ __('user::auth.password_reset.send_another') }}
                 </x-filament::button>
                 
                 <a href="{{ route('login') }}" 
                    class="block text-center text-[#FF5F7E] hover:text-[#FF4A6B] font-medium">
-                    {{ __('user::auth.password.error.text_reset.back_to_login') }}
+                    {{ __('user::auth.password_reset.back_to_login') }}
                 </a>
             </div>
         </div>
@@ -43,14 +43,14 @@ declare(strict_types=1);
             <x-filament::button 
                 type="submit" 
                 class="w-full bg-[#FF5F7E] hover:bg-[#FF4A6B]">
-                {{ __('user::auth.password.error.text_reset.send_button') }}
+                {{ __('user::auth.password_reset.send_button') }}
             </x-filament::button>
         </form>
         
         <div class="text-center mt-6">
             <a href="{{ route('login') }}" 
                class="text-[#FF5F7E] hover:text-[#FF4A6B] font-medium">
-                {{ __('user::auth.password.error.text_reset.back_to_login') }}
+                {{ __('user::auth.password_reset.back_to_login') }}
             </a>
         </div>
     @endif

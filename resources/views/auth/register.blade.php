@@ -3,7 +3,7 @@
 declare(strict_types=1);
 ?>
 @php
-$title = 'Registrazione - ';
+$title = __('user::auth_pages.register.page.title').' - ';
 @endphp
 
 <x-layouts.marketing :title="$title">
@@ -24,7 +24,7 @@ $title = 'Registrazione - ';
                 <span class="inline-block transform transition-transform duration-300 hover:scale-110">O</span>RA
                 <span class="orale-text text-3xl sm:text-4xl">le</span>
             </h1>
-            <p class="text-blue-200 text-lg animate-fade-in">Crea il tuo account</p>
+            <p class="text-blue-200 text-lg animate-fade-in">{{ __('user::auth.register_page.title') }}</p>
         </div>
 
         {{-- Form di Registrazione con animazione --}}
@@ -41,21 +41,21 @@ $title = 'Registrazione - ';
 
                 {{-- Nome con animazione --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="name" :value="__('Nome')" class="text-white" />
+                    <x-input-label for="name" :value="__('user::common.fields.name.label')" class="text-white" />
                     <x-text-input id="name" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30" type="text" name="name" :value="old('name')" required autofocus />
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                 </div>
 
                 {{-- Email con animazione --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="email" :value="__('Email')" class="text-white" />
+                    <x-input-label for="email" :value="__('user::common.fields.email.label')" class="text-white" />
                     <x-text-input id="email" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30" type="email" name="email" :value="old('email')" required />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
 
                 {{-- Password con toggle --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="password" :value="__('Password')" class="text-white" />
+                    <x-input-label for="password" :value="__('user::common.fields.password.label')" class="text-white" />
                     <div class="relative">
                         <x-text-input id="password" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30"
                             :type="showPassword ? 'text' : 'password'"
@@ -74,7 +74,7 @@ $title = 'Registrazione - ';
 
 {{-- Conferma Password con toggle --}}
                 <div class="transform transition-all duration-300 hover:scale-[1.02]">
-                    <x-input-label for="password_confirmation" :value="__('Conferma Password')" class="text-white" />
+                    <x-input-label for="password_confirmation" :value="__('user::common.fields.password_confirmation.label')" class="text-white" />
                     <div class="relative">
                         <x-text-input id="password_confirmation" class="block mt-1 w-full bg-white/20 text-white placeholder-blue-200 transition-all duration-300 focus:bg-white/30"
                             :type="showConfirmPassword ? 'text' : 'password'"
@@ -100,8 +100,7 @@ $title = 'Registrazione - ';
                         </div>
                         <div class="ml-3 text-sm">
                             <label for="privacy_accepted" class="text-blue-100">
-                                {{ __('Ho letto e accetto la') }}
-                                <a href="/it/informativa-privacy" target="_blank" class="text-white underline hover:text-blue-200">{{ __('privacy policy') }}</a>.
+                                {!! __('user::register_page.consent.privacy.text', ['link' => '<a href="/it/informativa-privacy" target="_blank" class="text-white underline hover:text-blue-200">'.e(__('user::register_page.consent.privacy_link.label')).'</a>']) !!}
                             </label>
                         </div>
                     </div>
@@ -112,9 +111,7 @@ $title = 'Registrazione - ';
                         </div>
                         <div class="ml-3 text-sm">
                             <label for="terms_accepted" class="text-blue-100">
-                                {{ __('Ho letto e accetto i') }}
-                                <a href="/it/cookie-policy" target="_blank" class="text-white underline hover:text-blue-200">{{ __('cookie policy') }}</a>
-                                <a href="/it/note-legali" target="_blank" class="text-white underline hover:text-blue-200">{{ __('termini e condizioni') }}</a>.
+                                {!! __('user::register_page.consent.terms.text', ['cookie_link' => '<a href="/it/cookie-policy" target="_blank" class="text-white underline hover:text-blue-200">'.e(__('user::register_page.consent.cookie_link.label')).'</a>', 'terms_link' => '<a href="/it/note-legali" target="_blank" class="text-white underline hover:text-blue-200">'.e(__('user::register_page.consent.terms_link.label')).'</a>']) !!}
                             </label>
                         </div>
                     </div>
@@ -125,7 +122,7 @@ $title = 'Registrazione - ';
                         </div>
                         <div class="ml-3 text-sm">
                             <label for="marketing_consent" class="text-blue-100">
-                                {{ __('Voglio ricevere comunicazioni di marketing (facoltativo)') }}
+                                {{ __('user::register_page.consent.marketing.label') }}
                             </label>
                         </div>
                     </div>
@@ -135,7 +132,7 @@ $title = 'Registrazione - ';
                 <div class="flex items-center justify-end">
                     <x-primary-button class="bg-blue-600 hover:bg-blue-700 text-white transform transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                         :disabled="!formValid">
-                        {{ __('Registrati') }}
+                        {{ __('user::common.actions.register.label') }}
                     </x-primary-button>
                 </div>
             </form>
@@ -143,9 +140,9 @@ $title = 'Registrazione - ';
             {{-- Link Login con animazione --}}
             <div class="mt-6 text-center">
                 <p class="text-blue-200">
-                    {{ __('Hai già un account?') }}
+                    {{ __('user::register_page.login.prompt.text') }}
                     <a href="{{ route('login') }}" class="text-white hover:text-blue-300 underline transform transition-all duration-300 hover:scale-105">
-                        {{ __('Accedi') }}
+                        {{ __('user::common.actions.login.label') }}
                     </a>
                 </p>
             </div>

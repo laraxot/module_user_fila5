@@ -34,6 +34,9 @@ class LoginWidget extends BaseAuthWidget
     /** Tentativi errati consentiti per email e IP prima del blocco (G-07, DCP-54). */
     private const int MAX_ATTEMPTS = 5;
 
+    /** Tentativi errati consentiti per solo IP nella stessa finestra: alto abbastanza per un IP condiviso, basso per uno spray di password. */
+    private const int MAX_ATTEMPTS_PER_IP = 20;
+
     /** Durata del blocco e della finestra di conteggio, in secondi. */
     private const int DECAY_SECONDS = 60;
 
@@ -74,10 +77,15 @@ class LoginWidget extends BaseAuthWidget
         // Limite ai tentativi per email e IP: senza, una password si puo' provare all'infinito. Il controllo viene PRIMA di `Auth::attempt`,
         // cosi' anche la password giusta e' rifiutata durante il blocco, e il messaggio dice quanto aspettare.
         $throttleKey = Str::transliterate(Str::lower($credentials['email']).'|'.request()->ip());
-        if (RateLimiter::tooManyAttempts($throttleKey, self::MAX_ATTEMPTS)) {
-            $this->addError('data.email', __('user::login.actions.login.throttle', ['seconds' => RateLimiter::availableIn($throttleKey)]));
+        // Seconda chiave per solo IP (SEC-012): la prima ripartisce per email, quindi chi prova una password su molte email dallo stesso IP
+        // non la raggiunge mai. Il successo azzera solo la chiave `email|ip`: la finestra per IP scade da sola.
+        $ipThrottleKey = self::ipThrottleKey(request()->ip());
+        foreach ([$throttleKey => self::MAX_ATTEMPTS, $ipThrottleKey => self::MAX_ATTEMPTS_PER_IP] as $key => $maxAttempts) {
+            if (RateLimiter::tooManyAttempts($key, $maxAttempts)) {
+                $this->addError('data.email', __('user::login.actions.login.throttle', ['seconds' => RateLimiter::availableIn($key)]));
 
-            return;
+                return;
+            }
         }
 
         // An account its owner deleted (Gdpr DeleteAccountAction sets `deleted_at`) stays closed: the privacy notice says it is deactivated at once.
@@ -98,7 +106,16 @@ class LoginWidget extends BaseAuthWidget
         }
 
         RateLimiter::hit($throttleKey, self::DECAY_SECONDS);
+        RateLimiter::hit($ipThrottleKey, self::DECAY_SECONDS);
         $this->addError('data.email', __('user::login.actions.login.error'));
+    }
+
+    /**
+     * Chiave del freno per solo IP (hash: nella cache non resta l'indirizzo).
+     */
+    public static function ipThrottleKey(?string $ip): string
+    {
+        return 'auth-login-ip:'.hash('sha256', $ip ?? 'unknown');
     }
 
     /**

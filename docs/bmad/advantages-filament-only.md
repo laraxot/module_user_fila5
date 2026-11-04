@@ -10,7 +10,7 @@ related:
   - ./livewire-widget-prd.md
   - ./livewire-widget-architecture.md
   - ./livewire-widget-tech-spec.md
-  - ../../Xot/docs/bmad/livewire-widget-advantages.md
+  - ../../../Xot/docs/bmad/livewire-widget-advantages.md
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "vantaggi di avere solo filament widget nel chrome del panel user"
@@ -19,7 +19,7 @@ qmd: "vantaggi di avere solo filament widget nel chrome del panel user"
 # Vantaggi di avere SOLO Filament widget nel chrome del panel
 
 > **Nota di canone:** il documento di piattaforma sui vantaggi widget-only è
-> [Xot/docs/bmad/livewire-widget-advantages.md](../../Xot/docs/bmad/livewire-widget-advantages.md).
+> [Xot/docs/bmad/livewire-widget-advantages.md](../../../Xot/docs/bmad/livewire-widget-advantages.md).
 > Questo file resta la vista **specifica del modulo User** (chrome `/admin`, auth, legal).
 > **Stato al 2026-09-21:** i tre hook di `AdminPanelProvider` montano già FQCN widget
 > (`AdminPanelProvider.php:25-38`); questo documento descrive il razionale della scelta, ormai

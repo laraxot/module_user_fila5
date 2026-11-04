@@ -25,7 +25,7 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 - 3377 file `.md` in `docs/`; 1532 al primo livello.
 - Cluster di 270 file `*phpstan*.md`, molti chiaramente corrotti
   (`phpstanes.md`, `phpstanebate.md`, `phpstanry-kiss-improvements.md`,
-  `phpstan-fixes-1-1.md`, `phpstan-level10es.md`). Root cause: uno script
+  `phpstan-fixes.md`, `phpstan-level10es.md`). Root cause: uno script
   di generazione slug ha rimosso le sottostringhe `-fix` e `-d` dai nomi
   file derivati dai titoli, eseguito almeno due volte nella stessa
   giornata (cluster di mtime alle 08:28 e 09:35). Originali e corrotti

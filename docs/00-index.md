@@ -42,6 +42,8 @@ qmd: "**indice documentazione modulo user** user"
 - ✅ **[PHPStan Level 10 Fix Plan](./PHPSTAN_FIX_PLAN.md)** - Piano e stato di conformità Level 10.
 - 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🛡️ **[Autorizzazione delle azioni sugli utenti](./stories/user-actions-authorization.story.md)** - Password, verifica email, disattiva e ruolo super-admin passano dalla policy (story in review).
+- 🌐 **[Niente testi fissi nelle Blade](./stories/blade-i18n-no-hardcoded-text.story.md)** - Testi delle viste in `user::` (it, en, de, es): regola, numeri e residui.
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
