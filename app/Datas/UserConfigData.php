@@ -11,4 +11,8 @@ use Spatie\LaravelData\Data;
 class UserConfigData extends Data
 {
     use MakesFromTenantConfig;
+
+    public bool $registration_enabled = true;
+
+    public bool $email_verification_required = true;
 }

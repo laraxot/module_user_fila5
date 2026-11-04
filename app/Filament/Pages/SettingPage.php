@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
+use Filament\Forms\Components\Toggle;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -14,10 +15,13 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, never>
+     * @return array<string, Toggle>
      */
     protected function getFormSchema(): array
     {
-        return [];
+        return [
+            'registration_enabled' => Toggle::make('registration_enabled')->default(true),
+            'email_verification_required' => Toggle::make('email_verification_required')->default(true),
+        ];
     }
 }
