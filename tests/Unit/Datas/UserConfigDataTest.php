@@ -63,7 +63,8 @@ test('a missing tenant file gives the defaults', function (): void {
 });
 
 test('the passport password grant follows the saved tenant setting', function (): void {
-    $previous = Passport::$passwordGrantEnabled;
+    $grantEnabled = static fn (): bool => Passport::$passwordGrantEnabled;
+    $previous = $grantEnabled();
     $configure = new ReflectionMethod(PassportServiceProvider::class, 'configurePasswordGrant');
     $provider = new PassportServiceProvider(app());
 
@@ -71,11 +72,11 @@ test('the passport password grant follows the saved tenant setting', function ()
         Passport::$passwordGrantEnabled = false;
         FakeTenantUserConfig::bind(['passport_enable_password_grant' => false]);
         $configure->invoke($provider);
-        expect(Passport::$passwordGrantEnabled)->toBeFalse();
+        expect($grantEnabled())->toBeFalse();
 
         FakeTenantUserConfig::bind([]);
         $configure->invoke($provider);
-        expect(Passport::$passwordGrantEnabled)->toBeTrue();
+        expect($grantEnabled())->toBeTrue();
     } finally {
         Passport::$passwordGrantEnabled = $previous;
     }
@@ -83,11 +84,12 @@ test('the passport password grant follows the saved tenant setting', function ()
 
 test('the passport provider boots when the tenant has no user file', function (): void {
     FakeTenantUserConfig::bind([]);
-    $previous = Passport::$passwordGrantEnabled;
+    $grantEnabled = static fn (): bool => Passport::$passwordGrantEnabled;
+    $previous = $grantEnabled();
 
     try {
         (new PassportServiceProvider(app()))->boot();
-        expect(Passport::$passwordGrantEnabled)->toBeTrue();
+        expect($grantEnabled())->toBeTrue();
     } finally {
         Passport::$passwordGrantEnabled = $previous;
     }
