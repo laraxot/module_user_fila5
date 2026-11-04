@@ -1,5 +1,5 @@
 ---
-title: "User — Scopo modulo"
+title: "User: Scopo modulo"
 status: active
 type: note
 updated: 2026-10-08

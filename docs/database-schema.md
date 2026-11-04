@@ -8,7 +8,7 @@ status: draft
 qmd: "user module   database schema user"
 ---
 
-# User Module — Database Schema
+# User Module: Database Schema
 
 ## Core Tables
 
@@ -105,8 +105,8 @@ FOREIGN KEY(permission_id) REFERENCES permissions(id) ON DELETE CASCADE
 
 ## Indexes
 
-- `users(email)` — login lookups
-- `users(deleted_at)` — soft delete filtering
-- `teams(user_id)` — user → teams
-- `roles(name, guard_name)` — role lookups
-- `permissions(name, guard_name)` — permission lookups
+- `users(email)`: login lookups
+- `users(deleted_at)`: soft delete filtering
+- `teams(user_id)`: user → teams
+- `roles(name, guard_name)`: role lookups
+- `permissions(name, guard_name)`: permission lookups

@@ -1,6 +1,6 @@
 ---
 type: decision
-title: "BMAD — Fix Google OAuth redirect / naming (oauth.redirect)"
+title: "BMAD: Fix Google OAuth redirect / naming (oauth.redirect)"
 status: verified
 updated: 2026-10-20
 date: 2026-10-20
@@ -14,7 +14,7 @@ related:
   - ../docs/oauth-folio.md
 ---
 
-# Decisione BMAD — Fix redirect Google / naming OAuth
+# Decisione BMAD: Fix redirect Google / naming OAuth
 
 ## Perché esiste questo file
 Documenta la decisione architetturale presa nella sessione 2026-10-06/07 per sostituire il redirect OAuth controller-based con Folio + Volt, mantenendo il naming astratto `oauth.redirect` (non `socialite.oauth.redirect`). Regola per future modifiche di autenticazione.

@@ -101,7 +101,7 @@ report($e);
 ## When logging IS acceptable
 
 Logging is acceptable only in:
-- `app/Exceptions/Handler.php` — global exception handling
+- `app/Exceptions/Handler.php`: global exception handling
 - Scheduled command output via `$this->info()` / `$this->error()` (Artisan commands only)
 - Dedicated audit trail models (e.g., `Consent` model writing to DB, not log files)
 

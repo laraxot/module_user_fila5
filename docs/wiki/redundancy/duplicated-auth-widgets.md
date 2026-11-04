@@ -27,7 +27,7 @@ Due path per lo stesso widget nel modulo User:
 | Login | `app/Filament/Widgets/LoginWidget.php` | `app/Filament/Widgets/Auth/LoginWidget.php` |
 | Logout | `app/Filament/Widgets/LogoutWidget.php` | `app/Filament/Widgets/Auth/LogoutWidget.php` |
 
-`RegisterWidget` compare anche in **Gdpr** (`Modules/Gdpr/.../Auth/RegisterWidget.php`) — dominio GDPR vs User da chiarire.
+`RegisterWidget` compare anche in **Gdpr** (`Modules/Gdpr/.../Auth/RegisterWidget.php`): dominio GDPR vs User da chiarire.
 
 ## Impatto
 

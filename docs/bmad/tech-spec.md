@@ -1,5 +1,5 @@
 ---
-title: "Tech spec — SuperAdmin widget"
+title: "Tech spec: SuperAdmin widget"
 type: tech-spec
 module: User
 status: approved
@@ -49,7 +49,7 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 - `mount()`: profilo corrente + URL corrente (stesso del Livewire).
 - `toggleSuperAdmin()`: `$this->profile->toggleSuperAdmin()` + `redirect($this->url, 303)`.
 - `getViewData()`: `profile`.
-- `protected static bool $isDiscovered = false` — **obbligatorio** perché `XotBasePanelProvider` fa `discoverWidgets` su tutta `Filament/Widgets`.
+- `protected static bool $isDiscovered = false`: **obbligatorio** perché `XotBasePanelProvider` fa `discoverWidgets` su tutta `Filament/Widgets`.
 - Non dichiarare `$view` se la vista esiste al path convenzionale; altrimenti `user::filament.widgets.profile.super-admin`.
 
 **Non fare:** `XotBaseSchemaWidget`, form schema, registrazione in `->widgets([...])`.
@@ -65,7 +65,7 @@ Due bottoni distinti (`user-super-admin` / `user-negate-super-admin`), `wire:cli
 
 (file lang da creare, struttura espansa).
 
-### AdminPanelProvider — modifiche (cuore della 9.2)
+### AdminPanelProvider: modifiche (cuore della 9.2)
 
 File: `laravel/Modules/User/app/Providers/Filament/AdminPanelProvider.php`
 

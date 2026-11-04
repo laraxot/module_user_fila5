@@ -9,7 +9,7 @@ status: superseded
 superseded_by: api.md
 ---
 
-# User Module — API Reference
+# User Module: API Reference
 
 ## Actions
 

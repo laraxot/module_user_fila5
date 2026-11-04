@@ -1,5 +1,5 @@
 ---
-title: "[STORY] PHPStan zero errori — modulo User"
+title: "[STORY] PHPStan zero errori: modulo User"
 type: story
 status: done
 priority: high
@@ -12,7 +12,7 @@ related:
   - "../../../../../docs/stories/all-modules-phpstan-zero-errors.story.md"
 ---
 
-# Story: PHPStan zero errori — modulo User
+# Story: PHPStan zero errori: modulo User
 
 ## User Request
 

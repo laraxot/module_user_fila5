@@ -68,4 +68,25 @@ qmd: "**indice documentazione modulo user** user"
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+<<<<<<< .merge_file_fp4R3U
+---
+title: "User: alias indice"
+type: alias
+module: User
+status: superseded
+superseded_by: 00-INDEX.md
+canonical: ./00-INDEX.md
+updated: 2026-10-20
+qmd: "alias 00-index user verso 00-INDEX"
+---
+
+# Alias: indice User
+
+Canonico: [00-INDEX.md](./00-INDEX.md). Scopo: [scopo.md](./scopo.md).
+
+## Cosa manca per completare
+
+[completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
+=======
 - [Scopo, confini e come servirlo meglio](./scopo.md)
+>>>>>>> .merge_file_qKk9ar

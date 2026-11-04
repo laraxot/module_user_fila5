@@ -1,5 +1,5 @@
 ---
-title: "BMAD + Second Brain — Session Summary (2026-09-04)"
+title: "BMAD + Second Brain: Session Summary (2026-09-04)"
 type: note
 status: draft
 updated: 2026-10-21
@@ -7,7 +7,7 @@ tags: [docs, user]
 qmd: "bmad + second brain   session summary (2026-09-04) user"
 ---
 
-# BMAD + Second Brain — Session Summary (2026-09-04)
+# BMAD + Second Brain: Session Summary (2026-09-04)
 
 ## Bootstrap
 - Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
@@ -23,7 +23,7 @@ qmd: "bmad + second brain   session summary (2026-09-04) user"
 - `BaseProfile.php`: `id` `char(36)` senza UUID in `booted()` → `PDOException` 1364
 - DB `restaurant_user`: `profiles.id` UUID, senza default
 
-## Fix (SSoT — mai concrete in public type-hints)
+## Fix (SSoT: mai concrete in public type-hints)
 - `XotData.php:31`: `main_module = 'User'`
 - `IsProfileTrait.php`: rimosso duplicato
 - `Profile.php:50`: `UserContract|null`

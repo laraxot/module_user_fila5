@@ -1,5 +1,5 @@
 ---
-title: "git — Consolidated Documentation"
+title: "git: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "git   consolidated documentation user"
 ---
 
-# git — Consolidated Documentation
+# git: Consolidated Documentation
 
 Consolidated from **21** individual files.
 

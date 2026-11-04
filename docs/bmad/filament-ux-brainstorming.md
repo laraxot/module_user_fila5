@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming — Audit UI/Filament modulo User (epic 12)"
+title: "Brainstorming: Audit UI/Filament modulo User (epic 12)"
 type: brainstorming
 module: User
 status: draft
@@ -29,19 +29,19 @@ alle regole progetto con interventi localizzati, tutto in `app/Filament`.
 
 ## Opzioni per i 6 gap rilevati
 
-### G1 — Ereditarietà XotBase violata in `BaseEditUser`
+### G1: Ereditarietà XotBase violata in `BaseEditUser`
 
 `Resources/UserResource/Pages/BaseEditUser.php:22` → `abstract class BaseEditUser extends EditRecord`.
 I tre fratelli (`BaseCreateUser` che estende `XotBaseCreateRecord`, `BaseListUsers`
 `XotBaseListRecords`, `BaseViewUser` `XotBaseViewRecord`) sono già conformi.
 
-- (1) `extends XotBaseEditRecord` — esiste in `app/Filament/Resources/Pages/XotBaseEditRecord.php` del modulo Xot. **Scelto.**
-- (2) Inherit da `EditRecord` e commento "è intenzionale" — falsificato dai fratelli e dalla regola "estendere sempre le classi base Xot".
+- (1) `extends XotBaseEditRecord`: esiste in `app/Filament/Resources/Pages/XotBaseEditRecord.php` del modulo Xot. **Scelto.**
+- (2) Inherit da `EditRecord` e commento "è intenzionale": falsificato dai fratelli e dalla regola "estendere sempre le classi base Xot".
 
 Stessa classe di problema: `Tables/Columns/UserColumn.php:25` → `extends GroupColumn`;
 esiste `XotBaseColumnGroup` in `Modules/Xot/app/Filament/Tables/Columns/XotBaseColumnGroup.php`.
 
-### G2 — Label hardcoded non tradotte
+### G2: Label hardcoded non tradotte
 
 23 occorrenze `->label('...')` + testi non tradotti (helperText, placeholder, tooltip) in:
 `TokensRelationManager` (Revocati/Scaduti/Validi/Visualizza/Revoca), `OauthPersonalAccessClientResource`
@@ -52,11 +52,11 @@ esiste `XotBaseColumnGroup` in `Modules/Xot/app/Filament/Tables/Columns/XotBaseC
 - (1) Spostare ogni stringa in `lang/it/*.php` e usare `__('user::...')`. **Scelto.**
 - (2) Lasciare la stringa cruda: violazione convenzione "niente stringhe hardcoded nella UI".
 
-### G3 — `dddx()` in produzione
+### G3: `dddx()` in produzione
 
 `Filament/Pages/Password.php:92`; tutte le Appearance pages (`Favicon.php` 65/69, `Background.php` 73/77,
 `CustomCss.php` 65/69, `Colors.php` 69/73, `Alignment.php` 80/84, `Logo.php` 63/67);
-`Http/Livewire/TermsOfService.php:32` (`dddx('wip')` — file già in ritiro 10.4). Anche nei Model
+`Http/Livewire/TermsOfService.php:32` (`dddx('wip')`: file già in ritiro 10.4). Anche nei Model
 `BaseProfile.php` / `BaseUser.php` (fuori scope UI, segnalazione).
 
 - (1) Rimuovere i `dddx()` (dead code) e sostituire con `Log` / gestione errore reale dove serve. **Scelto.**
@@ -67,11 +67,11 @@ posto del salvataggio mai scritto, quindi non sono stati solo tolti (sarebbe rim
 `LogicException`. `Password.php` ha ora `catch (Halt)` silenzioso e notifica tradotta. Vedi
 [debug-calls-removal-user](../stories/debug-calls-removal-user.story.md).
 
-### G4 — Duplicazione OAuth: schemi/resource ×3 e `unique()` su tabella sbagliata
+### G4: Duplicazione OAuth: schemi/resource ×3 e `unique()` su tabella sbagliata
 
 Evidenze:
 - `OauthClientForm` in 3 namespace: `Resources/ClientResource/Schemas`, `Resources/OauthClientResource/Schemas`,
-  `Clusters/Passport/Resources/OauthClientResource/Schemas` — **non identici** (campo `secret`, `Toggle` vs
+  `Clusters/Passport/Resources/OauthClientResource/Schemas`: **non identici** (campo `secret`, `Toggle` vs
   `TextInput`, label diverse).
 - `OauthClientsTable` ×3 (sha diversi), `EditOauthAccessToken` + `EditOauthAccessTokens` dentro
   `Clusters/Passport/Resources/OauthAccessTokenResource/Pages` (diff: nav label vs delete action) + un terzo
@@ -86,7 +86,7 @@ Evidenze:
   `oauth_clients` e campo `secret` coerente col modello. **Scelto.**
 - (2) Mantenere 3 copie: divergenza già reale (bug `unique`), continua a degradare.
 
-### G5 — Igiene cartelle: junk committato
+### G5: Igiene cartelle: junk committato
 
 - `resources/views/node_modules/` **92 MB** (vite + swiper + tooling) committato in un modulo.
 - `lang/it/*.backup_20260216_*` : **98 file** di backup orfani.
@@ -100,7 +100,7 @@ Evidenze:
   in test; `_components.json` è cache alias morta). **Scelto.**
 - (2) Tenere: mantiene 92 MB di dipendenze node dentro un modulo Laravel e file tooling nel business namespace.
 
-### G6 — Policies mai collegate ai Resource
+### G6: Policies mai collegate ai Resource
 
 `app/Models/Policies/` ha ~30 policy (UserPolicy, ProfilePolicy, TeamPolicy, OauthClientPolicy,
 OauthAccessTokenPolicy, SocialProviderPolicy…), `PassportServiceProvider` usa `Gate::policy`, ma

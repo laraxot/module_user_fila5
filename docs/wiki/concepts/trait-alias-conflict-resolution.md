@@ -19,14 +19,14 @@ related:
 status: active
 ---
 
-# Trait conflict — `teams()` Spatie vs Laraxot
+# Trait conflict: `teams()` Spatie vs Laraxot
 
 `BaseUser` combina due trait che dichiarano entrambi `teams()`:
 
 | Trait | `teams()` | Scopo |
 |-------|-----------|-------|
 | `HasSpatiePermission` (usa `HasRoles`) | `morphToMany` sui ruoli team-scoped del package | precedenza: vince Spatie |
-| `Modules\User\Models\Traits\HasTeams` | `belongsToManyX(Team)` — membership Laraxot | esposta come alias `membershipTeams()` |
+| `Modules\User\Models\Traits\HasTeams` | `belongsToManyX(Team)`: membership Laraxot | esposta come alias `membershipTeams()` |
 
 ## Forma canonica
 
@@ -38,7 +38,7 @@ use HasSpatiePermission, HasTeams {
 ```
 
 Il `docblock` di `HasTeams::teams()` dice lo stesso: *«Su `BaseUser` esposto come
-`membershipTeams()` — `HasRoles::teams()` resta Spatie»*. Chi scrive la regola di
+`membershipTeams()`: `HasRoles::teams()` resta Spatie»*. Chi scrive la regola di
 precedenza deve quindi verificare che **entrambi** i trait dichiarino `teams()` nella
 versione installata.
 
@@ -48,20 +48,20 @@ versione installata.
   `HasSpatiePermission::teams insteadof HasTeams` provocava un fatal all'avvio
   (*"A precedence rule was defined for ...::teams but this method does not exist"*).
 - `spatie/laravel-permission` **8.x** (installata): `HasRoles::teams()` esiste e i mutatori
-  `assignRole()`, `removeRole()`, `syncRoles()` dichiarano `: static` — la forma canonica
+  `assignRole()`, `removeRole()`, `syncRoles()` dichiarano `: static`: la forma canonica
   qui sopra torna valida **senza wrapper**.
 
 Prima di introdurre alias o wrapper, quindi: `grep -n "function teams" vendor/spatie/laravel-permission/src/Traits/HasRoles.php`.
 Se il metodo c'e', la forma canonica basta; se manca, si documenta la versione e si
-adatta la precedenza — mai lasciare wrapper "per sicurezza" (duplicano package: pivot,
+adatta la precedenza: mai lasciare wrapper "per sicurezza" (duplicano package: pivot,
 eventi, reload relazioni).
 
 ## Anti-pattern
 
 ❌ Copiare `assignRole()` / `syncRoles()` / `removeRole()` in un wrapper quando il package
-li dichiara gia' `: static` — duplica la logica e diverge al primo update.
+li dichiara gia' `: static`: duplica la logica e diverge al primo update.
 
-❌ `use HasSpatiePermission, HasTeams;` senza `insteadof` — fatal "trait method teams has
+❌ `use HasSpatiePermission, HasTeams;` senza `insteadof`: fatal "trait method teams has
 not been applied, because there are collisions".
 
 ❌ Ridefinire `teams()` nel modello per "unire" i due significati: sono due relazioni

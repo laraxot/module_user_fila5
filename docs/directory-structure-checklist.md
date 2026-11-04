@@ -72,7 +72,7 @@ Questo documento fornisce una checklist per verificare la corretta struttura del
 - ❌ `Modules/User/Resources/views/auth/login.blade.php` (case errata!)
 - ❌ `Modules/User/Actions/DeleteUserAction.php` (manca app/)
 - ❌ `Modules/User/Application/UseCases/...` (manca app/)
-- ❌ `Modules/User/Database/Migrations/...` (PascalCase — usare `database/migrations/`)
+- ❌ `Modules/User/Database/Migrations/...` (PascalCase: usare `database/migrations/`)
 - ❌ `Modules/User/Events/UserRegistered.php` (manca app/)
 - ❌ `Modules/User/Listeners/AssignFreeCreditsListener.php` (manca app/)
 - ❌ `Modules/User/Http/Controllers/UserController.php` (manca app/)
@@ -98,6 +98,6 @@ find Modules/User -type d -name "Resources" -o -name "Lang" -o -name "Config" -o
 ```
 
 ## Per saperne di più
-- [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
-- [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
+- [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md): violazioni attuali nel modulo User
+- [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md): regola wiki canonica
 - Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`

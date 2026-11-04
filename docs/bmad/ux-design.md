@@ -1,5 +1,5 @@
 ---
-title: "UX — SuperAdmin user menu"
+title: "UX: SuperAdmin user menu"
 type: ux-design
 module: User
 status: approved
@@ -29,7 +29,7 @@ Hook `USER_MENU_BEFORE`. A sinistra del menu utente, distinto dal team switcher.
 |---------------|----------|----------|-------------------|-----------------|----------------|
 | `super-admin` | identità svelata | `superman.svg` | `user-superman` | `warning` | attivo |
 | `negate-super-admin` | identità nascosta | `clark-kent.svg` | `user-clark-kent` | `danger` | negato |
-| nessuno dei due | — | — | nessun bottone | — | — |
+| nessuno dei due |: |: | nessun bottone |: |: |
 
 Ruolo elevato visibile = eroe (cappa + ciuffo). Ruolo negato = travestimento da reporter (occhiali + cravatta). Non è lo scudo registrato: outline originale, `stroke="currentColor"` sul root.
 

@@ -1,5 +1,5 @@
 ---
-title: "widget — Consolidated Documentation"
+title: "widget: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "widget   consolidated documentation user"
 ---
 
-# widget — Consolidated Documentation
+# widget: Consolidated Documentation
 
 Consolidated from **12** individual files.
 

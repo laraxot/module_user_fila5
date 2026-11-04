@@ -1,10 +1,10 @@
 ---
-title: "Metodi duplicati — User"
+title: "Metodi duplicati: User"
 type: concept
 tags: [duplicate, methods]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "duplicate-methods-1 metodi duplicati — user"
+qmd: "duplicate-methods-1 metodi duplicati: user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Metodi duplicati — User
+# Metodi duplicati: User
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
 

@@ -1,5 +1,5 @@
 ---
-title: "Release e README marketing — User"
+title: "Release e README marketing: User"
 type: reference
 status: approved
 tags: [release, semantic-versioning, changelog, readme, marketing]
@@ -22,7 +22,7 @@ related:
 qmd: "release e readme marketing   user user"
 ---
 
-# Release e README marketing — User
+# Release e README marketing: User
 
 ## Scopo
 

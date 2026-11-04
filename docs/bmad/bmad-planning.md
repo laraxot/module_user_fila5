@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — User"
+title: "BMAD Planning: User"
 type: bmad-planning
 status: active
 module: User

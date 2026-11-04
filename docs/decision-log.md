@@ -1,13 +1,13 @@
 ---
 type: decision-log
-title: "Decision Log — User"
+title: "Decision Log: User"
 links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-08
 tags: [docs, user]
 qmd: "decision log   user user"
 ---
-# Decision Log — User
+# Decision Log: User
 
 ## Decisions
 
@@ -43,7 +43,7 @@ qmd: "decision log   user user"
 
 ## Open Questions
 
-## 2026-10-26 — Google OAuth front-office
+## 2026-10-26: Google OAuth front-office
 
 - Il flusso esistente viene attivato tramite `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` e `GOOGLE_REDIRECT_URI`; non viene introdotto un secondo controller o un secondo pulsante.
 - Il callback effettivo resta quello italiano autorizzato, mentre la lingua di ingresso viene ripristinata dalla sessione per mantenere il contratto multilingua già testato.

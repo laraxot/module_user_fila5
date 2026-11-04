@@ -31,7 +31,7 @@ Legacy `app/Support/` files converted to QueueableAction or confirmed dead code.
 
 ## Caller updates
 
-- `Themes/Sixteen/resources/views/components/sections/header/v1.blade.php` — switched from `NotificationSchema::isReadable()` to `app(IsNotificationSchemaReadableAction::class)->execute()`.
+- `Themes/Sixteen/resources/views/components/sections/header/v1.blade.php`: switched from `NotificationSchema::isReadable()` to `app(IsNotificationSchemaReadableAction::class)->execute()`.
 
 ## Verification
 

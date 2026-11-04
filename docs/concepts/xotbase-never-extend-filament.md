@@ -1,5 +1,5 @@
 ---
-title: "User — mai Filament*, sempre XotBase*"
+title: "User: mai Filament*, sempre XotBase*"
 type: concept
 module: User
 tags: [user, filament, xotbase, architecture]
@@ -16,7 +16,7 @@ related:
 status: draft
 ---
 
-# Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
+# Mai `Filament\*`: sempre `Modules\Xot\Filament\...\XotBase*`
 
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).

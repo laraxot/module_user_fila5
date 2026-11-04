@@ -1,5 +1,5 @@
 ---
-title: "Folio app pages — owner modulo (non tema)"
+title: "Folio app pages: owner modulo (non tema)"
 type: concept
 tags: [user, folio, area-personale, dashboard, pageslugmiddleware]
 created: 2026-07-13
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Folio app pages — owner `User`
+# Folio app pages: owner `User`
 
 ## Perché non nel tema
 
@@ -54,7 +54,7 @@ Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concept
 
 ## Pratiche + Fixcity
 
-`area-personale.pratiche` usa `BuildAuthenticatedUserTicketsQueryAction` (modulo **Fixcity**) — dipendenza consumer→dominio ticket, non spostare la blade in Fixcity se la UX è area utente.
+`area-personale.pratiche` usa `BuildAuthenticatedUserTicketsQueryAction` (modulo **Fixcity**): dipendenza consumer→dominio ticket, non spostare la blade in Fixcity se la UX è area utente.
 
 ## Collegamenti
 
