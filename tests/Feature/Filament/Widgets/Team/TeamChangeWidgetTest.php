@@ -52,6 +52,8 @@ beforeEach(function (): void {
     }
 
     $this->setupFilamentAdminPanel();
+
+    Assert::assertNotNull(Filament::getPanel('user::admin'));
 });
 
 describe('TeamChangeWidget mount + render', function (): void {
@@ -163,6 +165,9 @@ describe('TeamChangeWidget switchTeam', function (): void {
 describe('TeamChangeWidget dashboard discovery', function (): void {
     test('dashboard widget list has no TeamChangeWidget card', function (): void {
         $panel = Filament::getPanel('user::admin');
+        if ($panel === null) {
+            Assert::fail('The User admin panel was not registered by the test bootstrap.');
+        }
 
         $widgetClasses = array_map(
             static fn (mixed $widget): string => is_string($widget) ? $widget : $widget::class,

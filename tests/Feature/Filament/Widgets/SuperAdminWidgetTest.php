@@ -102,6 +102,8 @@ beforeEach(function (): void {
     }
 
     $this->setupFilamentAdminPanel();
+
+    Assert::assertNotNull(Filament::getPanel('user::admin'));
 });
 
 describe('SuperAdminWidget visibility', function (): void {
@@ -233,6 +235,9 @@ describe('SuperAdminWidget authorization (DCP-181, audit A-3)', function (): voi
 describe('SuperAdminWidget dashboard discovery', function (): void {
     test('dashboard widget list has no SuperAdminWidget card', function (): void {
         $panel = Filament::getPanel('user::admin');
+        if ($panel === null) {
+            Assert::fail('The User admin panel was not registered by the test bootstrap.');
+        }
 
         $widgetClasses = array_map(
             static fn (string|WidgetConfiguration $widget): string => is_string($widget) ? $widget : $widget::class,
