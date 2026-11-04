@@ -12,11 +12,8 @@ class UserConfigData extends Data
 {
     use MakesFromTenantConfig;
 
-<<<<<<< HEAD
     public bool $enabled = true;
-=======
     public bool $registration_enabled = true;
 
     public bool $email_verification_required = true;
->>>>>>> c1257e0346954430c15cc387a2760889e222e4b9
 }
