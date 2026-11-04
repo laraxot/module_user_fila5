@@ -51,6 +51,7 @@ use Modules\User\Providers\Traits\HasPassportConfiguration;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
 use Modules\User\Actions\Shield\ShieldUtilsAction;
+use Modules\User\Tests\Support\FakeTenantUserConfig;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
 use Modules\User\View\Components\Mail\Message;
@@ -804,14 +805,14 @@ describe('User execute coverage — notifications rules observer helpers', funct
     });
 
     test('user observer e passport token user relation', function (): void {
-        config(['user.create_personal_team' => false]);
+        FakeTenantUserConfig::bind(['create_personal_team' => false]);
         $observer = new UserObserver;
         $user = userProfileMock();
         mockeryExpect($user->shouldReceive('personalTeam'))->andReturn(null);
         $observer->created($user);
         $observer->deleting($user);
 
-        config(['user.create_personal_team' => true]);
+        FakeTenantUserConfig::bind(['create_personal_team' => true]);
         $owner = userProfileMock();
         $personalTeam = userTeamFixture((string) $owner->id, 501, true);
         mockeryExpect($owner->shouldReceive('personalTeam'))->andReturn($personalTeam);

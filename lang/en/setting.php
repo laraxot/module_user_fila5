@@ -12,6 +12,22 @@ return [
         'sort' => 99,
     ],
     'title' => 'Settings',
+    'fields' => [
+        'create_personal_team' => [
+            'label' => 'Create a personal team for every new user',
+            'placeholder' => '',
+            'helper_text' => 'When a user is created, a personal team is created too and becomes the current team.',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'passport_enable_password_grant' => [
+            'label' => 'Enable the Passport password grant',
+            'placeholder' => '',
+            'helper_text' => 'Lets apps obtain a token with email and password. Takes effect on the next application start.',
+            'tooltip' => '',
+            'description' => '',
+        ],
+    ],
     'actions' => [
         'save' => [
             'label' => 'Save',
