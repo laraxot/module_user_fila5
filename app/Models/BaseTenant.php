@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TenantContract;
@@ -34,6 +35,8 @@ use Spatie\Sluggable\SlugOptions;
 abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, TenantContract
 {
     use HasSlug;
+    /** La chiave è una stringa: senza un id esplicito viene generato un UUID. */
+    use HasUuids;
     use InteractsWithMedia;
 
     public $incrementing = false;
