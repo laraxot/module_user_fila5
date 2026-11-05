@@ -296,11 +296,7 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
 - [Traits Complete Guide](./traits_complete_guide.md)
-<<<<<<< HEAD
 - [BaseUser Architecture](./parental-inheritance.md)
-=======
-- [BaseUser Architecture](./parental_inheritance.md)
->>>>>>> laraxot/dev
 
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)

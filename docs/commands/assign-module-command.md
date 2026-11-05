@@ -21,12 +21,8 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../console-commands/assign-module-command.md
-=======
-status: draft
->>>>>>> laraxot/dev
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

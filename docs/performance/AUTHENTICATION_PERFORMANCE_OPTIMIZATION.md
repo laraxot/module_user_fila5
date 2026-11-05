@@ -1,29 +1,18 @@
 ---
 title: "Authentication Performance Optimization - User Module"
-<<<<<<< HEAD
-<<<<<<< .merge_file_ipiyIz
-<<<<<<< .merge_file_8Hb7XK
 type: note
 updated: 2026-10-26
 tags: [docs, user, performance]
 qmd: "authentication performance optimization - user module user"
 status: superseded
 superseded_by: authentication-performance-optimization.md
-=======
-=======
->>>>>>> .merge_file_8HZqkO
-=======
->>>>>>> laraxot/dev
 type: alias
 status: superseded
 canonical: "performance/AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md"
 qmd: "AUTHENTICATION_PERFORMANCE_OPTIMIZATION alias superseded"
-<<<<<<< HEAD
-<<<<<<< .merge_file_ipiyIz
->>>>>>> .merge_file_mSeHPG
+
 ---
 
-<<<<<<< .merge_file_8Hb7XK
 ### Phase 2: Systematic Optimization (Week 1)
 1. Implement Redis caching for sessions
 2. Add permission result caching
@@ -122,19 +111,6 @@ qmd: "AUTHENTICATION_PERFORMANCE_OPTIMIZATION alias superseded"
 2. Remove new database indexes if causing issues
 3. Disable permission caching
 4. Restore original session management
-=======
-# Authentication Performance Optimization - User Module
->>>>>>> .merge_file_mSeHPG
-=======
----
-
-# Authentication Performance Optimization - User Module
->>>>>>> .merge_file_8HZqkO
-=======
----
-
-# Authentication Performance Optimization - User Module
->>>>>>> laraxot/dev
 
 Documento identico al canonico: [AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md](AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md).
 
