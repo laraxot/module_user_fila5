@@ -9,6 +9,7 @@ use Modules\User\Filament\Pages\SettingPage;
 use Modules\User\Providers\PassportServiceProvider;
 use Modules\User\Tests\Support\FakeTenantUserConfig;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');
 
@@ -55,7 +56,7 @@ test('a tenant array overrides the defaults', function (): void {
 
 test('a missing tenant file gives the defaults', function (): void {
     if (is_file(app(GetTenantFilePathAction::class)->execute('user.php'))) {
-        test()->markTestSkipped('Il tenant corrente ha un file user.php: i default non sono osservabili.');
+        Assert::markTestSkipped('Il tenant corrente ha un file user.php: i default non sono osservabili.');
     }
 
     expect(UserConfigData::make()->toArray())->toBe(UserConfigData::from([])->toArray())

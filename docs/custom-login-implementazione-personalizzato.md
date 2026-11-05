@@ -34,7 +34,11 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 > - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
+<<<<<<< HEAD
+> - [User Profile Models](user-profile-models.md) - Modelli del profilo utente
+=======
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
+>>>>>>> laraxot/dev
 
 ## Implementazione con Filament
 
@@ -98,7 +102,11 @@ class LoginWidget extends XotBaseWidget
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices Filament](filament_best_practices.md)
+<<<<<<< HEAD
+- [User Profile Models](user-profile-models.md)
+=======
 - [User Profile Models](user_profile_models.md)
+>>>>>>> laraxot/dev
 
 ### Versione Incoming
 

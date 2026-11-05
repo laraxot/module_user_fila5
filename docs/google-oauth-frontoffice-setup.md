@@ -25,6 +25,22 @@ GOOGLE_REDIRECT_URI=https://www.fixcity.eu/it/auth/login/google/callback
 
 In Google Cloud Console autorizzare entrambi i callback richiesti dal progetto (`/it/.../callback` e `/en/.../callback`) e le origini `https://www.fixcity.eu` e `https://fixcity.eu`. Il runtime usa il primo come callback effettivo e conserva la lingua iniziale in sessione.
 
+<<<<<<< HEAD
+### Host canonico e `www`
+
+nginx reindirizza `www.fixcity.eu` su `fixcity.eu` (301, query string conservata). `GOOGLE_REDIRECT_URI` deve essere **identico** a un URI registrato in Google: oggi sono registrati solo quelli con `www`, quindi il valore corretto e' `https://www.fixcity.eu/it/...`. Il valore `https://fixcity.eu/...` produce `redirect_uri_mismatch` finche' non viene aggiunto anche in Google Cloud Console. Il cookie di sessione e' host-only su `fixcity.eu`, e dopo il 301 il callback rientra li': il controllo `state` passa.
+
+Controllo rapido dopo ogni modifica:
+
+```bash
+curl -s -o /dev/null -w '%{redirect_url}\n' https://fixcity.eu/it/auth/login/google
+# atteso: accounts.google.com/o/oauth2/auth?client_id=...&redirect_uri=https%3A%2F%2Fwww.fixcity.eu%2F...
+```
+
+Storia dell'attivazione: [stories/google-oauth-production-activation.story.md](stories/google-oauth-production-activation.story.md).
+
+=======
+>>>>>>> laraxot/dev
 Dopo la modifica dell’ambiente:
 
 ```bash

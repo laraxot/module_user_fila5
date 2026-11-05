@@ -72,10 +72,17 @@ related:
 
 ### User Module
 - [User Factory Integration](./user-factory-integration.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
+=======
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+>>>>>>> laraxot/dev
 
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
@@ -408,10 +415,17 @@ public function run(): void
 
 ### User Module
 - [User Factory Integration](./user-factory-integration.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
+=======
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+>>>>>>> laraxot/dev
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -705,10 +719,17 @@ public function run(): void
 
 ### User Module
 - [User Factory Integration](./user-factory-integration.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [User Factory Integration](../../user-factory-integration-module.md)
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
+=======
 - [Traits Complete Guide](./traits-complete-guide-aggiornato-post.md)
 - [User Factory Integration](../../user-factory-integration-module.md)
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [BaseUser Architecture](./parental-inheritance.md)
+>>>>>>> laraxot/dev
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -1968,8 +1989,13 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](../../authentication.md)
+=======
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
+>>>>>>> laraxot/dev
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
 
@@ -2327,8 +2353,13 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](../../authentication.md)
+=======
 - [Traits Complete Guide](../user/docs/traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../user/docs/authentication.md)
+>>>>>>> laraxot/dev
 - [Traits Complete Guide](../../traits-complete-guide-aggiornato-post.md)
 - [Authentication Framework](../../authentication.md)
 
@@ -3986,7 +4017,11 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
 - [Traits Complete Guide](./traits_complete_guide.md)
+<<<<<<< HEAD
+- [BaseUser Architecture](../../parental-inheritance.md)
+=======
 - [BaseUser Architecture](./parental_inheritance.md)
+>>>>>>> laraxot/dev
 
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
@@ -4763,8 +4798,13 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
+<<<<<<< HEAD
+- [Traits Complete Guide](../../traits_complete_guide.md)
+- [Authentication Framework](../../authentication.md)
+=======
 - [Traits Complete Guide](../User/docs/traits_complete_guide.md)
 - [Authentication Framework](../User/docs/authentication.md)
+>>>>>>> laraxot/dev
 - [Traits Complete Guide](../../traits_complete_guide.md)
 - [Authentication Framework](../../authentication.md)
 

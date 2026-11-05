@@ -10,7 +10,11 @@ issues:
 discussions:
 related:
   - "./agents.md"
+<<<<<<< HEAD
+  - "./Architecture.md"
+=======
   - "./architecture.md"
+>>>>>>> laraxot/dev
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"

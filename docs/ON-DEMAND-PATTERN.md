@@ -5,8 +5,13 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [on-demand, pattern, wiki, qmd]
 related:
+<<<<<<< HEAD
+  - ../../../../docs/wiki/rules/on-demand-pattern.md
+  - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+=======
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+>>>>>>> laraxot/dev
   - ../../../../docs/wiki/rules/on-demand-pattern.md
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 qmd: "on-demand pattern   module **user** user"
@@ -16,7 +21,11 @@ superseded_by: on-demand-pattern.md
 
 # On-Demand Pattern: Module **User**
 
+<<<<<<< HEAD
+**Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../../../docs/wiki/rules/on-demand-pattern.md)
+=======
 **Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../docs/wiki/rules/on-demand-pattern.md)
+>>>>>>> laraxot/dev
 **Fonte canonica**: [../../docs/wiki/rules/on-demand-pattern.md](../../../../docs/wiki/rules/on-demand-pattern.md)
 
 ## Principio
@@ -86,9 +95,15 @@ qmd search "<topic>"
 
 ## Riferimenti
 
+<<<<<<< HEAD
+- [Global On-Demand Pattern](../../../../docs/wiki/rules/on-demand-pattern.md)
+- [LLM Wiki Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+- [Trigger Map](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
 - [Global On-Demand Pattern](../../docs/wiki/rules/on-demand-pattern.md)
 - [LLM Wiki Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [Trigger Map](../../docs/wiki/rules/00-TRIGGER_MAP.md)
+>>>>>>> laraxot/dev
 - [Global On-Demand Pattern](../../../../docs/wiki/rules/on-demand-pattern.md)
 - [LLM Wiki Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
 - [Trigger Map](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

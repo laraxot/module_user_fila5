@@ -70,7 +70,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
 - [README modulo User](./README.md)
+>>>>>>> laraxot/dev
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -398,7 +402,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
 - [README modulo User](./README.md)
+>>>>>>> laraxot/dev
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1355,8 +1363,13 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
+<<<<<<< HEAD
+- [Routing Best Practices](../../routing_best_practices.md) 
+- [Routing Best Practices](../../routing-best-practices.md) 
+=======
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 - [Routing Best Practices](../routing-best-practices.md) 
+>>>>>>> laraxot/dev
 - [Routing Best Practices](../../routing_best_practices.md) 
 - [Routing Best Practices](../../routing-best-practices-architettura-volt-folio-filament.md) 
 ---
@@ -2346,7 +2359,11 @@ php artisan view:clear && php artisan route:clear
 
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
 - [README modulo User](./README.md)
+>>>>>>> laraxot/dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
@@ -2640,7 +2657,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
 - [README modulo User](./README.md)
+>>>>>>> laraxot/dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
@@ -2923,7 +2944,11 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
+<<<<<<< HEAD
+- [Routing Best Practices](../../routing_best_practices.md) 
+=======
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
+>>>>>>> laraxot/dev
 - [Routing Best Practices](../../routing_best_practices.md) 
 
 ---
@@ -2997,7 +3022,11 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
 - [README modulo User](./README.md)
+>>>>>>> laraxot/dev
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)

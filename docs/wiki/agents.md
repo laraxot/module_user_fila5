@@ -3,7 +3,11 @@ module: theme
 topic: AGENTS
 canonical: ../../../../Themes/docs/shared-components/AGENTS-Modules.md
 related:
+<<<<<<< HEAD
+  - "./Architecture.md"
+=======
   - "./architecture.md"
+>>>>>>> laraxot/dev
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"

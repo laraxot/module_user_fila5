@@ -606,10 +606,17 @@ test('hasRole works with guard parameter', function () {
 ## Collegamenti
 
 ### Documentazione Locale
+<<<<<<< HEAD
+- [BaseUser Model](../../models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
+- [Roles & Permissions](./roles-permissions.md)
+- [DRY Kiss Analysis](../../dry-kiss-analysis.md)
+=======
 - [BaseUser Model](./models/baseuser.md)
 - [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
+>>>>>>> laraxot/dev
 
 ### Documentazione Spatie
 - [Laravel Permission - HasRoles](https://spatie.be/docs/laravel-permission/v6/basic-usage/role-permissions)
@@ -617,7 +624,11 @@ test('hasRole works with guard parameter', function () {
 
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
+<<<<<<< HEAD
+- [Code Quality](../../code-quality-analysis.md)
+=======
 - [Code Quality](../../../../docs/code-quality-analysis.md)
+>>>>>>> laraxot/dev
 - [Code Quality](../../code-quality-analysis.md)
 
 ## Conclusioni
@@ -905,6 +916,18 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< HEAD
+- [DRY Violation Analysis](../../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../../../docs/baseuser-dry-violation.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../../models/baseuser.md)
+- [Roles & Permissions](./roles-permissions.md)
+- [User Module README](./readme.md)
+
+### Root Progetto
+- [Code Quality](../../code-quality-analysis.md)
+=======
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../docs/baseuser-dry-violation.md) - Piano esecutivo
 
@@ -915,6 +938,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)
+>>>>>>> laraxot/dev
 - [Refactoring Plan](../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
@@ -1288,11 +1312,19 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< HEAD
+- [DRY Violation Analysis](../../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../../../docs/baseuser-dry-violation.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../../models/baseuser.md)
+=======
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+>>>>>>> laraxot/dev
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
@@ -1462,7 +1494,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+> Questo file è stato rinominato in [baseuser-refactoring-completed-.deprecated.md](../../baseuser-refactoring-completed-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
 > Questo file è stato rinominato in [baseuser-refactoring-completed-.deprecated.md](baseuser-refactoring-completed-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> laraxot/dev
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1732,11 +1768,19 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< HEAD
+- [DRY Violation Analysis](../../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../../../docs/baseuser-dry-violation.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../../models/baseuser.md)
+=======
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+>>>>>>> laraxot/dev
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-analisi-refactoring.md) - Piano esecutivo
 
 ### Modulo User
@@ -2109,11 +2153,19 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< HEAD
+- [DRY Violation Analysis](../../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../../models/baseuser.md)
+=======
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-[date].md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+>>>>>>> laraxot/dev
 - [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
@@ -3035,10 +3087,17 @@ test('hasRole works with guard parameter', function () {
 ## Collegamenti
 
 ### Documentazione Locale
+<<<<<<< HEAD
+- [BaseUser Model](../../models/baseuser.md)
+- [BaseUser Model](../../models/baseuser.md)
+- [Roles & Permissions](./roles-permissions.md)
+- [DRY Kiss Analysis](../../dry-kiss-analysis.md)
+=======
 - [BaseUser Model](./models/baseuser.md)
 - [BaseUser Model](../../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
+>>>>>>> laraxot/dev
 
 ### Documentazione Spatie
 - [Laravel Permission - HasRoles](https://spatie.be/docs/laravel-permission/v6/basic-usage/role-permissions)
@@ -3046,7 +3105,11 @@ test('hasRole works with guard parameter', function () {
 
 ### Root Progetto
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
+<<<<<<< HEAD
+- [Code Quality](../../code-quality-analysis.md)
+=======
 - [Code Quality](../../../../docs/code-quality-analysis.md)
+>>>>>>> laraxot/dev
 - [Code Quality](../../code-quality-analysis.md)
 
 ## Conclusioni

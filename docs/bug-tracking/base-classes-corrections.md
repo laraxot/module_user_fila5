@@ -8,7 +8,11 @@ qmd: "base-classes-corrections correzione estensioni classi base - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
+  - "../fixes/base-classes-corrections-.md"
+=======
   - "./base-classes-corrections-.md"
+>>>>>>> laraxot/dev
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"
   - "./base-classes-corrections.md"

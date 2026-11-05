@@ -9,6 +9,16 @@ qmd: "implementazione corretta di logout.blade.php user"
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+- [Documentazione centrale](../../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+=======
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
@@ -17,6 +27,7 @@ qmd: "implementazione corretta di logout.blade.php user"
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+>>>>>>> laraxot/dev
 ---
 status: draft
 updated: 2026-10-13

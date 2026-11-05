@@ -11,7 +11,11 @@ related:
   - "./architecture-rules.md"
   - "./architecture.md"
   - "./component-registration.md"
+<<<<<<< HEAD
+  - "./README.md"
+=======
   - "./readme.md"
+>>>>>>> laraxot/dev
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
