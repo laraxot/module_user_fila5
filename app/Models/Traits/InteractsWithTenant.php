@@ -27,9 +27,6 @@ use Modules\Xot\Datas\XotData;
  */
 trait InteractsWithTenant
 {
-    /**
-     * @return BelongsTo<Model, $this>
-     */
     public function tenant(): BelongsTo
     {
         return $this->belongsTo(XotData::make()->getTenantClass(), 'tenant_id');

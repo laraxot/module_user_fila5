@@ -50,8 +50,13 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     /**
      * Risolve la collisione tra HasSlug e HasUuids su resolveRouteBindingQuery:
      * valida l'UUID per le chiavi univoche (HasUuids), poi risolve lo slug (HasSlug).
+     *
+     * @param Builder<Model>|Model $query
+     * @param string|int $value
+     * @param string|null $field
+     * @return Builder<Model>
      */
-    public function resolveRouteBindingQuery($query, $value, $field = null)
+    public function resolveRouteBindingQuery($query, $value, $field = null): Builder
     {
         $query = $this->resolveRouteBindingQueryFromUuids($query, $value, $field);
 
