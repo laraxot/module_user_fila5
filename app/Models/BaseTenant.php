@@ -34,14 +34,29 @@ use Spatie\Sluggable\SlugOptions;
  */
 abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, TenantContract
 {
-    use HasSlug;
+    use HasSlug {
+        \Spatie\Sluggable\HasSlug::resolveRouteBindingQuery as resolveRouteBindingQueryFromSlug;
+    }
     /** La chiave è una stringa: senza un id esplicito viene generato un UUID. */
-    use HasUuids;
+    use HasUuids {
+        \Illuminate\Database\Eloquent\Concerns\HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
+    }
     use InteractsWithMedia;
 
     public $incrementing = false;
 
     protected $keyType = 'string';
+
+    /**
+     * Risolve la collisione tra HasSlug e HasUuids su resolveRouteBindingQuery:
+     * valida l'UUID per le chiavi univoche (HasUuids), poi risolve lo slug (HasSlug).
+     */
+    public function resolveRouteBindingQuery($query, $value, $field = null)
+    {
+        $query = $this->resolveRouteBindingQueryFromUuids($query, $value, $field);
+
+        return $this->resolveRouteBindingQueryFromSlug($query, $value, $field);
+    }
 
     /** @var list<string> */
     protected $fillable = [
