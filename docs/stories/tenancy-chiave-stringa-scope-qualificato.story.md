@@ -1,7 +1,7 @@
 ---
 title: "User: i dati del cliente restano nel suo tenant (chiave stringa, scope qualificato)"
 type: story
-status: review
+status: in-progress
 priority: P1
 created: 2026-11-05
 updated: 2026-11-05
@@ -48,6 +48,8 @@ cosi' da **non vedere ne' disperdere dati di altri clienti**.
 3. `tenant()` punta a `XotData::getTenantClass()`.
 4. Test Pest in `tests/Unit/Models/InteractsWithTenantTest.php` (gruppo `no-user-db`).
 5. Guida in `docs/tenancy.md`.
+6. Il fixture Pest ha un tipo concreto, così PHPStan verifica `tenant()` sul
+   contratto Eloquent fornito dal trait e non su `Model` generico.
 
 ## Dev agent record
 
@@ -55,6 +57,9 @@ cosi' da **non vedere ne' disperdere dati di altri clienti**.
   aggiornati i due docs che la citavano. `php -l` ok sui file toccati. **Da verificare
   nell'installazione con vendor (PHP 8.4)**: `pest Modules/User/tests/Unit/Models/InteractsWithTenantTest.php`
   e PHPStan livello max.
+- 2026-11-05 — Follow-up PHPStan: il fixture helper restituiva `Model`, nascondendo
+  la relazione `tenant()` fornita dal trait. Ora restituisce il fixture concreto;
+  nessuna modifica al modello o al comportamento runtime.
 
 ## Seguiti proposti
 

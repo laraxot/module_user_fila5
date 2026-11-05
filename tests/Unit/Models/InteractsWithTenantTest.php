@@ -15,16 +15,18 @@ uses(TestCase::class)->group('no-user-db');
 /**
  * Modello d'esempio di un'area tenant (es. i cantieri di un cliente).
  */
-function interactsWithTenantModel(): Model
+final class InteractsWithTenantFixtureModel extends Model
 {
-    return new class extends Model
-    {
-        use InteractsWithTenant;
+    use InteractsWithTenant;
 
-        protected $table = 'worksites';
+    protected $table = 'worksites';
 
-        protected $guarded = [];
-    };
+    protected $guarded = [];
+}
+
+function interactsWithTenantModel(): InteractsWithTenantFixtureModel
+{
+    return new InteractsWithTenantFixtureModel;
 }
 
 function interactsWithTenantTenant(string $id): Model
@@ -76,7 +78,7 @@ describe('InteractsWithTenant', function (): void {
     });
 
     test('tenant relation points to the configured tenant class', function (): void {
-        expect(interactsWithTenantModel()->tenant()->getRelated())
-            ->toBeInstanceOf(XotData::make()->getTenantClass());
+        expect(interactsWithTenantModel()->tenant()->getRelated()::class)
+            ->toBe(XotData::make()->getTenantClass());
     });
 });
