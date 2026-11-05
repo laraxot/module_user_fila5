@@ -6,13 +6,12 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\User\Contracts\UserContract;
+use Modules\User\Models\Traits\ProfileRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -202,16 +201,6 @@ class Profile extends BaseProfile implements HasMedia
     protected $table = 'profiles';
 
     /**
-     * Get the teams that the profile belongs to.
-     *
-     * @return BelongsToMany<Team, $this, Pivot, 'pivot'>
-     */
-    public function teams(): BelongsToMany
-    {
-        return $this->belongsToManyX(Team::class);
-    }
-
-    /**
      * Scope a query to include schemaless attributes.
      *
      * @param  Builder<static>  $query
@@ -256,4 +245,6 @@ class Profile extends BaseProfile implements HasMedia
             'url' => url('/profile/'.$this->user_name),
         ];
     }
+
+    use ProfileRelationsTrait;
 }

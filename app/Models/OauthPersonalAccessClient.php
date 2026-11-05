@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
 
 /**
  * @property string $id
@@ -41,11 +41,5 @@ class OauthPersonalAccessClient extends BaseModel
         'client_id',
     ];
 
-    /**
-     * @return BelongsTo<OauthClient, $this>
-     */
-    public function client(): BelongsTo
-    {
-        return $this->belongsTo(OauthClient::class, 'client_id');
-    }
+    use OauthPersonalAccessClientRelationsTrait;
 }

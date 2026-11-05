@@ -129,16 +129,14 @@ use Spatie\Permission\Models\Permission;
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
-    use BaseUserMutators, BaseUserRelations, HasSpatiePermission, HasTeams, Notifiable, HasAuthenticationLogTrait {
+    use BaseUserMutators, BaseUserRelations, HasApiTokens, HasAuthenticationLogTrait, HasSpatiePermission, HasTeams, Notifiable {
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
         BaseUserRelations::notifications insteadof Notifiable;
         BaseUserRelations::unreadNotifications insteadof Notifiable;
         BaseUserRelations::clients insteadof HasApiTokens;
-        BaseUserRelations::latestAuthentication as baseUserRelationsLatestAuthentication;
-        HasAuthenticationLogTrait::latestAuthentication insteadof BaseUserRelations;
+        BaseUserRelations::latestAuthentication insteadof HasAuthenticationLogTrait;
     }
-    use HasApiTokens;
     use HasChildren;
     use HasDevices;
     use HasModules;
@@ -337,11 +335,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     {
         return $this->membershipTeams ?? new Collection;
     }
-
-    // public function authentications(): MorphMany
-    // {
-    //    return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
-    // }
 
     /**
      * Find the user instance for the given username.
