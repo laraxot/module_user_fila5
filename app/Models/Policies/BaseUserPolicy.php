@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
+use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Modules\User\Models\BaseUser as Model;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
@@ -128,7 +129,7 @@ class BaseUserPolicy extends XotBasePolicy
         return false;
     }
 
-    public function replicate(UserContract $user, Model $model): bool
+    public function replicate(UserContract $user, EloquentModel $model): bool
     {
         return false;
     }
