@@ -191,9 +191,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  */
 class Profile extends BaseProfile implements HasMedia
 {
-    use HasRoles;
-    use HasSchemalessAttributes;
-    use InteractsWithMedia;
+    use HasRoles, HasSchemalessAttributes, InteractsWithMedia, ProfileRelationsTrait {
+        ProfileRelationsTrait::teams insteadof HasRoles;
+    }
 
     /**
      * The table associated with the model.
@@ -245,6 +245,4 @@ class Profile extends BaseProfile implements HasMedia
             'url' => url('/profile/'.$this->user_name),
         ];
     }
-
-    use ProfileRelationsTrait;
 }
