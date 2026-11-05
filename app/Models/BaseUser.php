@@ -406,6 +406,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $value;
         }
 
+        return $this->getFullName();
+    }
+
+    public function getFullName(): string
+    {
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
         return $fullName !== '' ? $fullName : ($this->email ?? 'User');
@@ -417,6 +422,30 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $value;
         }
 
+        $name = $this->getName();
+
+        if ($this->getKey() === null) {
+            return $name;
+        }
+
+        if ($this->isRunningTests()) {
+            $this->attributes['name'] = $name;
+
+            return $name;
+        }
+
+        try {
+            $this->update(['name' => $name]);
+        } catch (\Throwable) {
+            $name = Str::of((string) $this->email)->before('@')->toString().'-1';
+            $this->attributes['name'] = $name;
+        }
+
+        return $name;
+    }
+
+    public function getName(): string
+    {
         if ($this->getKey() === null) {
             return $this->email ?? 'User';
         }
@@ -425,19 +454,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         $i = 1;
         $candidate = $name.'-'.$i;
 
-        // During unit tests, avoid any DB interaction.
-        $isTesting = (static function (): bool {
-            $app = app();
-            if (method_exists($app, 'environment') && $app->environment('testing')) {
-                return true;
-            }
-
-            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
-        })();
-        if ($isTesting) {
-            // Do not call update() here to avoid hitting the database.
-            $this->attributes['name'] = $candidate;
-
+        if ($this->isRunningTests()) {
             return $candidate;
         }
 
@@ -447,15 +464,21 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 $i++;
                 $value = $name.'-'.$i;
             }
-            $this->update(['name' => $value]);
 
             return $value;
-        } catch (\Throwable $e) {
-            // If any issue occurs (e.g., missing connection/table), fall back without DB.
-            $this->attributes['name'] = $candidate;
-
+        } catch (\Throwable) {
             return $candidate;
         }
+    }
+
+    private function isRunningTests(): bool
+    {
+        $app = app();
+        if (method_exists($app, 'environment') && $app->environment('testing')) {
+            return true;
+        }
+
+        return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
     }
 
     // public function authentications(): MorphMany
