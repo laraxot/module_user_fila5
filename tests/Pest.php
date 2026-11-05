@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_Up6Thb
 <?php
 
 declare(strict_types=1);
@@ -18,3 +19,5 @@ declare(strict_types=1);
  *   metodi statici su `Modules\User\Tests\TestCase` / `Modules\Xot\Tests\XotBasePest`;
  * - se servono expectation custom, vanno aggiunte nel `tests/Pest.php` ROOT, non qui.
  */
+=======
+>>>>>>> .merge_file_HgVxyE
