@@ -115,7 +115,6 @@ class BaseUserPolicy extends XotBasePolicy
         return $this->isUserAdmin($user);
     }
 
-<<<<<<< HEAD
     /**
      * Abilita' secondarie: Filament, senza il metodo sulla policy, le considera consentite. Solo il super-admin (via before()).
      */
@@ -139,8 +138,6 @@ class BaseUserPolicy extends XotBasePolicy
         return false;
     }
 
-=======
->>>>>>> laraxot/dev
     protected function isUserAdmin(UserContract $user): bool
     {
         return $user->hasRole(self::ADMIN_ROLES);

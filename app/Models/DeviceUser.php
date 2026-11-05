@@ -5,19 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Models\Traits\DeviceUserRelationsTrait;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\DeviceUser.
@@ -75,7 +68,6 @@ class DeviceUser extends BasePivot
         'push_notifications_enabled',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Device, $this>
      */
@@ -106,8 +98,6 @@ class DeviceUser extends BasePivot
         return $this->belongsTo($profileClass, 'user_id', 'user_id');
     }
 
-=======
->>>>>>> laraxot/dev
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
@@ -131,9 +121,4 @@ class DeviceUser extends BasePivot
             'logout_at' => 'datetime',
         ];
     }
-<<<<<<< HEAD
-=======
-
-    use DeviceUserRelationsTrait;
->>>>>>> laraxot/dev
 }

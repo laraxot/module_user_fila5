@@ -6,13 +6,8 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Models\Traits\SsoProviderRelationsTrait;
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -100,7 +95,6 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
      * @return HasMany<User, $this>
      */
     public function users(): HasMany
@@ -109,8 +103,6 @@ class SsoProvider extends BaseModel
     }
 
     /**
-=======
->>>>>>> laraxot/dev
      * Check if a given email domain is allowed for this provider.
      */
     public function isAllowedDomain(string $email): bool
@@ -163,9 +155,4 @@ class SsoProvider extends BaseModel
             'is_active' => 'boolean',
         ];
     }
-<<<<<<< HEAD
-=======
-
-    use SsoProviderRelationsTrait;
->>>>>>> laraxot/dev
 }

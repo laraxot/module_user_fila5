@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
->>>>>>> laraxot/dev
 
 /**
  * @property string $id
@@ -46,7 +41,6 @@ class OauthPersonalAccessClient extends BaseModel
         'client_id',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<OauthClient, $this>
      */
@@ -54,7 +48,4 @@ class OauthPersonalAccessClient extends BaseModel
     {
         return $this->belongsTo(OauthClient::class, 'client_id');
     }
-=======
-    use OauthPersonalAccessClientRelationsTrait;
->>>>>>> laraxot/dev
 }

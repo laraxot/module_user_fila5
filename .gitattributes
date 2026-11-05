@@ -1,15 +1,21 @@
+<<<<<<< HEAD
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: bashscripts/ai/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
+=======
+# Git LFS vietato: tutti i binari restano blob Git normali.
+# Canon: docs/wiki/rules/no-git-lfs.md
+
+>>>>>>> 34a676c3e7062bcb7b067effe1ec38af646c5751
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binary files (regular git blobs — NO git-lfs)
-# `binary` + `!filter` azzera eventuali filtri LFS ereditati
+
+# Binary files: binary disables text normalization; !filter blocks inherited LFS.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
