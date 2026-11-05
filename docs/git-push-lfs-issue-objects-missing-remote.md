@@ -4,6 +4,10 @@ date: 2026-07-28
 author: claude-ai
 status: superseded
 superseded_by: git-push-lfs-issue.md
+type: note
+updated: 2026-10-27
+tags: [docs, user]
+qmd: "user module   git push & lfs issue (2026-07-28) user"
 ---
 
 # User Module — Git Push & LFS Issue (2026-07-28)

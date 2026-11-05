@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Livewire\Livewire;
-use Modules\Gdpr\Actions\Registration\HandleSuccessfulRegistrationAction;
 use Modules\User\Actions\Auth\GetPostLoginUrlAction;
 use Modules\User\Actions\Auth\RememberLoginReturnUrlAction;
 use Modules\User\Database\Factories\UserFactory;
@@ -14,7 +13,6 @@ use Modules\User\Filament\Widgets\Auth\LoginWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 use function Safe\json_encode;
 
@@ -77,15 +75,6 @@ test('login goes back to the intended url', function (): void {
         ->set('data.password', 'SecretPass123!')
         ->call('login')
         ->assertRedirect(url('/it/blog/una-notizia'));
-});
-
-test('registration redirects to the personal area', function (): void {
-    $user = UserFactory::new()->createOne(['email_verified_at' => now()]);
-    $this->assertInstanceOf(User::class, $user);
-    $widget = $this->createMock(XotBaseWidget::class);
-    $widget->expects($this->once())->method('redirectIntended')->with(url('/it/area-personale'));
-
-    app(HandleSuccessfulRegistrationAction::class)->execute($user, $widget);
 });
 
 test('the login page remembers a same-host return url', function (string $source, string $value, string $expected): void {

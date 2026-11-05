@@ -335,17 +335,15 @@ class UserMassSeeder extends Seeder
 
     private function info(string $message): void
     {
-        $command = $this->getConsoleCommand();
-        $command->info($message);
+        $this->getConsoleCommand()?->info($message);
     }
 
     private function error(string $message): void
     {
-        $command = $this->getConsoleCommand();
-        $command->error($message);
+        $this->getConsoleCommand()?->error($message);
     }
 
-    private function getConsoleCommand(): Command
+    private function getConsoleCommand(): ?Command
     {
         return $this->command;
     }

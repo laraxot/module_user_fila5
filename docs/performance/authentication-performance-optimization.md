@@ -1,125 +1,12 @@
 ---
 title: "Authentication Performance Optimization - User Module"
-type: note
-status: draft
-updated: 2026-10-26
-tags: [docs, user, performance]
-qmd: "authentication performance optimization - user module user"
+type: alias
+status: superseded
+canonical: "performance/AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md"
+qmd: "authentication-performance-optimization alias superseded"
 ---
-# Authentication Performance Optimization - User Module
 
-## 🚨 Critical Issues Identified
-
-Based on the comprehensive performance analysis, the User module has **HIGH** priority performance issues affecting authentication and session management.
-
-### Issue #1: Authentication Log Cleanup (HIGH)
-**Location**: `Modules/User/app/Listeners/OtherDeviceLogoutListener.php:42`
-**Impact**: Login operations can take 10+ seconds for active users
-
-#### Problem
-```php
-// PROBLEMATIC CODE - Individual updates in loop
-foreach ($user->authentications()->whereLoginSuccessful(true)->whereNull('logout_at')->get() as $log) {
-    if ($log->getKey() !== $authenticationLog->getKey()) {
-        $log->update([
-            'cleared_by_user' => true,
-            'logout_at' => now(),
-        ]); // 💀 INDIVIDUAL UPDATE QUERIES
-    }
-}
-```
-
-#### Solution
-```php
-// EMERGENCY FIX - Bulk update instead of individual updates
-$user->authentications()
-    ->whereLoginSuccessful(true)
-    ->whereNull('logout_at')
-    ->where('id', '!=', $authenticationLog->getKey())
-    ->update([
-        'cleared_by_user' => true,
-        'logout_at' => now(),
-    ]);
-```
-
-**Impact**: 50+ queries → 1 query (98% reduction)
-
-### Issue #2: Permission Checks Performance (MEDIUM)
-**Location**: Multiple locations in User module
-**Impact**: 10+ queries per authorization check
-
-#### Problem
-- Multiple permission checks per request
-- No caching of permission results
-- Repeated database queries for same permissions
-
-#### Solution
-```php
-// IMPLEMENT PERMISSION CACHING
-public function hasPermissionTo($permission, $guard = null): bool
-{
-    $cacheKey = "user_permissions_{$this->id}_{$permission}";
-    
-    return Cache::remember($cacheKey, 300, function() use ($permission, $guard) {
-        return parent::hasPermissionTo($permission, $guard);
-    });
-}
-```
-
-### Issue #3: Session Management Blocking (MEDIUM)
-**Location**: Session-related operations
-**Impact**: Blocking operations during peak usage
-
-#### Problem
-- Synchronous session cleanup
-- No background processing for heavy operations
-- Session data not optimized
-
-#### Solution
-```php
-// IMPLEMENT BACKGROUND SESSION CLEANUP
-class CleanupExpiredSessionsJob implements ShouldQueue
-{
-    public function handle()
-    {
-        AuthenticationLog::where('logout_at', '<', now()->subDays(30))
-            ->delete();
-    }
-}
-```
-
-## 🔧 Database Emergency Indexes
-
-### Critical Indexes (Add immediately):
-```sql
--- Authentication logs performance
-CREATE INDEX idx_auth_logs_user_active ON authentication_logs(authenticatable_id, logout_at, login_successful);
-
--- Permission checks performance
-CREATE INDEX idx_model_has_permissions_model ON model_has_permissions(model_type, model_id);
-CREATE INDEX idx_model_has_roles_model ON model_has_roles(model_type, model_id);
-
--- Session performance
-CREATE INDEX idx_sessions_user_id ON sessions(user_id);
-CREATE INDEX idx_sessions_last_activity ON sessions(last_activity);
-```
-
-## 📊 Expected Performance Improvements
-
-### After Emergency Fixes:
-- **Login Speed**: 5-15 seconds → 1-2 seconds (85% improvement)
-- **Permission Checks**: 10+ queries → 1-2 queries (80% reduction)
-- **Session Management**: Blocking → Non-blocking (100% improvement)
-- **Memory Usage**: 200MB+ → 50-100MB (60% reduction)
-
-## 🚀 Implementation Priority
-
-### Phase 1: Emergency Stabilization (Days 1-2)
-1. ✅ Fix authentication log bulk updates
-2. ✅ Add critical database indexes
-3. ✅ Implement permission caching
-4. ✅ Add background session cleanup
-
+<<<<<<< .merge_file_ZBQ5g8
 ### Phase 2: Systematic Optimization (Week 1)
 1. Implement Redis caching for sessions
 2. Add permission result caching
@@ -163,7 +50,7 @@ CREATE INDEX idx_sessions_last_activity ON sessions(last_activity);
 
 ## 📚 Related Documentation
 
-- [authentication.md](./authentication.md)
+- [authentication.md](../authentication.md)
 - [authentication.md](../authentication.md)
 - [session-management.md](./session-management.md)
 - [roles-permissions.md](./roles-permissions.md)
@@ -218,11 +105,10 @@ CREATE INDEX idx_sessions_last_activity ON sessions(last_activity);
 2. Remove new database indexes if causing issues
 3. Disable permission caching
 4. Restore original session management
+=======
+# Authentication Performance Optimization - User Module
+>>>>>>> .merge_file_hR3eIC
 
-### Monitoring During Rollout:
-- Track authentication success rates
-- Monitor query performance
-- Check memory usage patterns
-- Validate security compliance
+Documento identico al canonico: [AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md](AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md).
 
-This document provides the roadmap for resolving the performance issues in the User module while maintaining security and functionality.
+Canonico: `laravel/Modules/User/docs/performance/AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md`. Qui non ci sono istruzioni: seguire il file collegato.

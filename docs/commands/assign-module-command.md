@@ -21,7 +21,8 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
-status: draft
+status: superseded
+superseded_by: ../console-commands/assign-module-command.md
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

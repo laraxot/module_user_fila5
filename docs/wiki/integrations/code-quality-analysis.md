@@ -1,19 +1,16 @@
 ---
 title: "Code Quality Analysis - User Module"
-module: user
-type: integration
-tags: [integrations, modules, user]
-created: 2026-08-24
-updated: 2026-08-24
-qmd: "code quality analysis - user module user"
+type: alias
 status: superseded
-superseded_by: ../../code-quality-analysis.md
+canonical: "wiki/integrations/CODE-QUALITY-ANALYSIS.md"
+qmd: "code-quality-analysis alias superseded"
 ---
 
 # Code Quality Analysis - User Module
 
-## 🚨 Critical Issues Identified
+Documento identico al canonico: [CODE-QUALITY-ANALYSIS.md](CODE-QUALITY-ANALYSIS.md).
 
+<<<<<<< .merge_file_XbvJrR
 ### 1. Authentication Performance Issues (HIGH)
 
 #### OtherDeviceLogoutListener - N+1 Updates
@@ -318,6 +315,9 @@ public function getTableColumns(): array
 
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
+=======
+Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_hSMbbt
