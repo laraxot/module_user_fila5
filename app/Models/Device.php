@@ -7,7 +7,6 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
@@ -15,13 +14,6 @@ use Modules\User\Database\Factories\DeviceFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Database\Factories\DeviceFactory;
-use Modules\User\Models\Traits\DeviceRelationsTrait;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 
 /**
  * Device model representing a user's device in the system.
@@ -117,7 +109,6 @@ class Device extends BaseModel
     }
 
     /**
-<<<<<<< HEAD
      * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
@@ -131,8 +122,6 @@ class Device extends BaseModel
     }
 
     /**
-=======
->>>>>>> laraxot/dev
      * Define the attribute casting for the model.
      *
      * @return array<string, string>
@@ -157,9 +146,4 @@ class Device extends BaseModel
             'is_phone' => 'boolean',
         ];
     }
-<<<<<<< HEAD
-=======
-
-    use DeviceRelationsTrait;
->>>>>>> laraxot/dev
 }

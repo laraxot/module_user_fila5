@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -13,11 +12,6 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Models\Traits\BaseTeamUserRelationsTrait;
-use Modules\Xot\Contracts\ProfileContract;
->>>>>>> laraxot/dev
 use Parental\HasChildren;
 
 /**
@@ -68,7 +62,6 @@ abstract class BaseTeamUser extends BasePivot
 
     protected $table = 'team_user';
 
-<<<<<<< HEAD
     /**
      * Relazione con User.
      *
@@ -94,7 +87,4 @@ abstract class BaseTeamUser extends BasePivot
         /* @var BelongsTo<Model&TeamContract, $this> */
         return $this->belongsTo($teamClass);
     }
-=======
-    use BaseTeamUserRelationsTrait;
->>>>>>> laraxot/dev
 }

@@ -10,9 +10,6 @@ qmd: "CODE_QUALITY_ANALYSIS alias superseded"
 
 Documento identico al canonico: [CODE-QUALITY-ANALYSIS.md](CODE-QUALITY-ANALYSIS.md).
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_dKzz3m
-<<<<<<< .merge_file_Uw1MOx
 ### 1. Authentication Performance Issues (HIGH)
 
 #### OtherDeviceLogoutListener - N+1 Updates
@@ -320,12 +317,5 @@ public function getTableColumns(): array
 - [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
-=======
 Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
->>>>>>> .merge_file_Qcz91m
-=======
 Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
->>>>>>> .merge_file_ps5emk
-=======
-Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
->>>>>>> laraxot/dev

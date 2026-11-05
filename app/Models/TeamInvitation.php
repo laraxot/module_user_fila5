@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -13,13 +12,6 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
-use Illuminate\Support\Carbon;
-use Modules\User\Contracts\TeamContract;
-use Modules\User\Models\Traits\TeamInvitationRelationsTrait;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\TeamInvitation.
@@ -83,7 +75,6 @@ class TeamInvitation extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
      * @return BelongsTo<Model, $this>
      */
     public function team(): BelongsTo
@@ -96,8 +87,6 @@ class TeamInvitation extends BaseModel
     }
 
     /**
-=======
->>>>>>> laraxot/dev
      * Accept the invitation.
      */
     public function accept(UserContract $user): void
@@ -129,9 +118,4 @@ class TeamInvitation extends BaseModel
             'declined_at' => 'datetime',
         ];
     }
-<<<<<<< HEAD
-=======
-
-    use TeamInvitationRelationsTrait;
->>>>>>> laraxot/dev
 }
