@@ -1,14 +1,6 @@
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
-tags: [navigation, translations, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "navigation-translations-fixes correzioni traduzioni navigation - gennaio 2026"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index.md"
 tags: [navigation, translations, fixes, january]
 created: 2026-07-14
 updated: 2026-07-14

@@ -17,12 +17,12 @@ references:
   - laravel/Modules/User/app/Filament/Widgets/Auth/LoginWidget.php
   - laravel/Modules/User/routes/socialite.php
   - laravel/Themes/Sixteen/resources/views/components/utilities/google-button.blade.php
-title: "Google auth login — senso e contratto"
+title: "Google auth login: senso e contratto"
 tags: [docs, user, bmad]
 qmd: "google auth login   senso e contratto user"
 ---
 
-# Google auth login — senso e contratto
+# Google auth login: senso e contratto
 
 ## Perché
 

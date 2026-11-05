@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Seeders;
 
-use Illuminate\Console\Command;
 use Illuminate\Database\Seeder;
 use Modules\User\Models\Role;
 
@@ -51,12 +50,20 @@ final class RolesSeeder extends Seeder
      */
     private function displayResults(array $roles): void
     {
+<<<<<<< .merge_file_l0fxod
         $command = $this->getConsoleCommand();
         if ($command === null) {
             return;
         }
 
         $command->info('Roles seeded successfully:');
+=======
+        if ($this->command === null) {
+            return;
+        }
+
+        $this->command->info('Roles seeded successfully:');
+>>>>>>> .merge_file_KfE2cd
         $rows = collect($roles)
             ->map(static fn (Role $role, int $index) => [
                 $index + 1,
@@ -64,11 +71,15 @@ final class RolesSeeder extends Seeder
                 $role->guard_name,
             ])
             ->toArray();
+<<<<<<< .merge_file_l0fxod
         $command->table(self::$OUTPUT_TABLE_HEADERS, $rows);
     }
 
     private function getConsoleCommand(): ?Command
     {
         return $this->command;
+=======
+        $this->command->table(self::$OUTPUT_TABLE_HEADERS, $rows);
+>>>>>>> .merge_file_KfE2cd
     }
 }

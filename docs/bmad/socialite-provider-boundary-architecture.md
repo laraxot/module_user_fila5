@@ -1,5 +1,5 @@
 ---
-title: "Socialite provider boundary — architecture"
+title: "Socialite provider boundary: architecture"
 type: architecture
 module: User
 status: done
@@ -13,7 +13,7 @@ tags: [docs, user, bmad]
 qmd: "socialite provider boundary   architecture user"
 ---
 
-# Socialite provider boundary — architecture
+# Socialite provider boundary: architecture
 
 ## Stato verificato
 

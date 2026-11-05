@@ -1,5 +1,5 @@
 ---
-title: "spatie — Consolidated Documentation"
+title: "spatie: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "spatie   consolidated documentation user"
 ---
 
-# spatie — Consolidated Documentation
+# spatie: Consolidated Documentation
 
 Consolidated from **12** individual files.
 

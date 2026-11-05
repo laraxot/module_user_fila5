@@ -1,5 +1,5 @@
 ---
-title: "User — harness test e factory"
+title: "User: harness test e factory"
 type: guide
 module: User
 tags: [user, testing, pest, harness]
@@ -17,7 +17,7 @@ related:
 
 <!-- gateguard: body moved from TESTING.md (UPPERCASE); not a duplicate topic. Linked from 00-INDEX Qualita'. Why new kebab name: avoid case collision with testing.md. User: "Fix UPPERCASE md except README" -->
 
-# User — harness test e factory
+# User: harness test e factory
 
 ## Unit Tests
 

@@ -42,8 +42,8 @@ Questa scelta evita coupling dello schema `users` con singoli vendor OAuth e man
 
 Route:
 
-- `/{lang}/auth/login/{provider}` (`oauth.redirect`) — entrypoint FO localizzato
-- `/{lang}/auth/login/{provider}/callback` (`oauth.callback`) — pagina Folio+Volt redirect-only
+- `/{lang}/auth/login/{provider}` (`oauth.redirect`): entrypoint FO localizzato
+- `/{lang}/auth/login/{provider}/callback` (`oauth.callback`): pagina Folio+Volt redirect-only
 
 Il modulo `User` mantiene la policy OAuth nelle Action; il tema possiede il guscio HTTP della callback. Non esistono una route callback
 classica in `routes/socialite.php`, né un `ProcessCallbackController`.

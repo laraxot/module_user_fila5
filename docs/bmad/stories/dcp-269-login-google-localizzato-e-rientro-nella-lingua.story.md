@@ -1,5 +1,5 @@
 ---
-title: "DCP-269 — Accedi con Google: URL con lingua, giro completo che funziona e rientro nella stessa lingua"
+title: "DCP-269: Accedi con Google: URL con lingua, giro completo che funziona e rientro nella stessa lingua"
 type: story
 status: done-pending-prod-sync
 updated: 2026-10-20
@@ -12,7 +12,7 @@ related:
   - ../../../../../Themes/Sixteen/docs/bmad/stories/dcp-268-login-checkbox-e-occhio-password-dentro-data-dc.story.md
 ---
 
-# DCP-269 — Accedi con Google: URL con lingua, giro completo che funziona e rientro nella stessa lingua
+# DCP-269: Accedi con Google: URL con lingua, giro completo che funziona e rientro nella stessa lingua
 
 **Numero:** 269, preso con controllo che blocca (massimo trovato 268) e scrittura `noclobber`.
 **Stato:** done-pending-prod-sync. Misurato in locale e in un browser vero; `fixcity.eu` alle 17:22 serviva ancora il codice vecchio

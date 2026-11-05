@@ -1,5 +1,5 @@
 ---
-title: "Coverage floor 50% — perimetro offline User"
+title: "Coverage floor 50%: perimetro offline User"
 module: User
 type: concept
 status: approved
@@ -13,7 +13,7 @@ related:
 tags: [docs, user]
 ---
 
-# Coverage floor 50% — perimetro offline User
+# Coverage floor 50%: perimetro offline User
 
 Esclusioni in `Modules/User/phpunit.xml` (solo path non eseguibili offline):
 

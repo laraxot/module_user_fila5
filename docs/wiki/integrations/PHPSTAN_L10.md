@@ -1,5 +1,5 @@
 ---
-title: PHPStan Level 10 Compliance — User Module
+title: PHPStan Level 10 Compliance: User Module
 module: User
 type: quality-gate
 created: 2026-08-02
@@ -10,7 +10,7 @@ status: superseded
 superseded_by: phpstan-l10.md
 ---
 
-# PHPStan Level 10 Compliance — User Module
+# PHPStan Level 10 Compliance: User Module
 
 ## Summary
 

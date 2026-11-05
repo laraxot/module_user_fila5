@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_GTDEn0
 title: "Quality Gates Analysis — User Module"
 type: alias
 status: superseded
@@ -15,6 +16,16 @@ qmd: "quality_gates-analysis-user-module alias superseded"
 ---
 
 # Quality Gates Analysis — User Module
+=======
+title: "Quality Gates Analysis: User Module"
+type: alias
+status: superseded
+canonical: "QUALITY_GATES-analysis-user-module.md"
+qmd: "quality_gates-analysis-user-module alias superseded"
+---
+
+# Quality Gates Analysis: User Module
+>>>>>>> .merge_file_73guJ7
 
 Documento identico al canonico: [QUALITY_GATES-analysis-user-module.md](QUALITY_GATES-analysis-user-module.md).
 

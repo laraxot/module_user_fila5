@@ -1,5 +1,5 @@
 ---
-title: "no app/Support — business logic in QueueableAction"
+title: "no app/Support: business logic in QueueableAction"
 type: concept
 tags: [user, actions, queueable-action, support, refactor]
 created: 2026-07-12
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# no `app/Support/` — business logic in QueueableAction
+# no `app/Support/`: business logic in QueueableAction
 
 ## Scopo
 
@@ -44,8 +44,8 @@ Nel modulo User **non** esiste più `app/Support/`. Ogni helper con comportament
 
 ## Eccezioni ammesse altrove
 
-`app/Adapters/`, `app/Enums/`, facade puri — vedi [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
-`app/Adapters/`, `app/Enums/`, facade puri — vedi [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
+`app/Adapters/`, `app/Enums/`, facade puri: vedi [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
+`app/Adapters/`, `app/Enums/`, facade puri: vedi [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md). **Non** usare `Support/` per OTP, Socialite, notifiche o query autenticazione.
 
 ## Collegamenti
 

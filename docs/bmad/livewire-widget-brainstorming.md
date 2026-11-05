@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming — solo widget vs Livewire HTTP"
+title: "Brainstorming: solo widget vs Livewire HTTP"
 type: brainstorming
 module: User
 status: done

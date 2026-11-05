@@ -107,7 +107,10 @@ return [
         'facebook' => 'Sign in with Facebook',
     ],
     'login' => [
-        'title' => ['text' => 'Sign in to your account'],
+        'title' => ['label' => 'Sign in to your account', 'text' => 'Sign in to your account'],
+        'subtitle' => ['text' => 'Enter your credentials to sign in'],
+        'welcome_back' => ['text' => 'Welcome back'],
+        'welcome_message' => ['text' => 'Enter your credentials to sign in.'],
         'intro' => ['text' => 'Sign in to report an issue and track your requests.'],
         'google' => ['text' => 'Google', 'button' => ['text' => 'Sign in with Google']],
         'microsoft' => ['text' => 'Microsoft'],
@@ -204,6 +207,14 @@ return [
             'dashboard' => 'Dashboard',
             'personal_area' => 'Access personal area',
         ],
+        'register' => [
+            'text' => 'Register',
+        ],
+        'email' => 'Email',
+        'email_placeholder' => 'example@email.com',
+        'password' => 'Password',
+        'password_placeholder' => '••••••••',
+        'remember' => 'Remember me',
     ],
     'register_page' => [
         'title' => 'Create your account',
@@ -240,4 +251,34 @@ return [
     'provider-not-configured' => 'Sign-in with :provider is not available right now. You can sign in with email and password.',
     'provider-setup-guide' => 'Sign-in with :provider is not configured: missing :missing. Where to create them: open :console and create OAuth credentials for a web application, registering :redirect as the authorized redirect URI. Where to set them: put the values (:missing) in the .env file and run "php artisan config:clear", or use the back office page :admin. :hint',
     'provider-setup-lan-hint' => 'Note: :provider rejects IP addresses and plain http as redirect URIs (localhost is the exception). Open the site from :localhost, for example through an SSH tunnel, or use a domain with HTTPS.',
+    'reset_password' => [
+        'title' => [
+            'text' => 'Reset password',
+        ],
+        'subtitle' => [
+            'text' => 'Enter your new password',
+        ],
+        'submit' => [
+            'text' => 'Reset password',
+        ],
+    ],
+    'logout' => 'Log out',
+    'back_to_home' => 'Back to home',
+    'logout_success' => [
+        'text' => 'Logged out successfully.',
+    ],
+    'auth_button' => [
+        'login' => 'Sign in',
+        'logout' => 'Sign out',
+        'profile' => 'My profile',
+        'dashboard' => 'Dashboard',
+        'personal_area' => 'Access personal area',
+    ],
+    'login-in' => [
+        'text' => 'Sign in',
+    ],
+    'sign-up' => 'Sign up',
+    'login-via' => [
+        'text' => 'Sign in with',
+    ],
 ];

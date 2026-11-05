@@ -23,7 +23,7 @@ status: draft
 
 ## Concepts
 
-- [filament-widget-no-validate-form](concepts/filament-widget-no-validate-form.md) — alias → ADR submit/getState (no `validateForm`)
+- [filament-widget-no-validate-form](concepts/filament-widget-no-validate-form.md): alias → ADR submit/getState (no `validateForm`)
 
 ## Entities
 

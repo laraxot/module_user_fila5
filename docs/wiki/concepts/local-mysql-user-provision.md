@@ -1,5 +1,5 @@
 ---
-title: "User — provision MySQL locale marco + database fixcity_user"
+title: "User: provision MySQL locale marco + database fixcity_user"
 type: concept
 tags: [user, mysql, local, env, database]
 created: 2026-06-12
@@ -53,7 +53,7 @@ La connessione Laravel `user` è mappata da `config/local/fixcity/database.php` 
 
 ## Utente applicativo
 
-Dopo migrate, creare l'utente FO (email da `FIXCITY_ADMIN_EMAIL`) con password nota per dev — es. via factory/`XotData::getUserClass()`.
+Dopo migrate, creare l'utente FO (email da `FIXCITY_ADMIN_EMAIL`) con password nota per dev: es. via factory/`XotData::getUserClass()`.
 
 ## Canon
 

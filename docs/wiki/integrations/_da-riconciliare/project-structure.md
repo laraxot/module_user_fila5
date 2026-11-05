@@ -1,5 +1,5 @@
 ---
-title: "Project Structure — Module User"
+title: "Project Structure: Module User"
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -24,7 +24,7 @@ status: draft
 qmd: "project structure   module **user** user"
 ---
 
-# Project Structure — Module **User**
+# Project Structure: Module **User**
 
 ## Directory Structure
 
@@ -45,7 +45,7 @@ At module root level, these folders MUST NOT exist:
 │   ├── concepts/                 # Topic/theme pages
 │   ├── entities/                 # Organization/person pages
 │   ├── rules/                    # ⚠️ 151+ regole progettuali
-│   │   ├── 00-index-1.md          # Indice regole
+│   │   ├── 00-index.md          # Indice regole
 │   │   ├── 00-TRIGGER_MAP.md    # Trigger map (link a globale)
 │   │   └── *.md                 # Regole specifiche modulo
 │   ├── skills/                   # Skill progettuali
@@ -59,7 +59,7 @@ At module root level, these folders MUST NOT exist:
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── on-demand-pattern.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -74,7 +74,7 @@ At module root level, these folders MUST NOT exist:
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+| `on-demand-pattern.md` | **Leggi prima**: pattern da seguire |
 
 ## Convenzioni
 
@@ -159,7 +159,7 @@ git commit -m "docs: add wiki structure for User"
 
 ---
 
-# Project Structure — Module **User**
+# Project Structure: Module **User**
 
 ## Directory Structure
 
@@ -194,7 +194,7 @@ At module root level, these folders MUST NOT exist:
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -209,7 +209,7 @@ At module root level, these folders MUST NOT exist:
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima**: pattern da seguire |
 
 ## Convenzioni
 

@@ -1,5 +1,5 @@
 ---
-title: "Git — inventario conflitti merge (User)"
+title: "Git: inventario conflitti merge (User)"
 type: troubleshooting
 module: User
 tags: [git, merge, conflict, user]
@@ -23,11 +23,11 @@ related:
 status: draft
 ---
 
-# Git — inventario conflitti merge (User)
+# Git: inventario conflitti merge (User)
 
 ## Stato 2026-07-08
 
-- **Rebase abortito** su `dev` (328 pick, 623 file `AA`) — causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
+- **Rebase abortito** su `dev` (328 pick, 623 file `AA`): causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
 - Dopo `git rebase --abort`: **0** marker `<<<<<<<` nei `.md` tracciati (`git grep`).
 - Push risolto con squash → [git-push-lfs-missing-objects](./git-push-lfs-missing-objects.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "dry — Consolidated Documentation"
+title: "dry: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "dry   consolidated documentation user"
 ---
 
-# dry — Consolidated Documentation
+# dry: Consolidated Documentation
 
 Consolidated from **13** individual files.
 

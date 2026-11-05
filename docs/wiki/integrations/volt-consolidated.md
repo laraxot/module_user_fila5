@@ -1,5 +1,5 @@
 ---
-title: "volt — Consolidated Documentation"
+title: "volt: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "volt   consolidated documentation user"
 ---
 
-# volt — Consolidated Documentation
+# volt: Consolidated Documentation
 
 Consolidated from **27** individual files.
 

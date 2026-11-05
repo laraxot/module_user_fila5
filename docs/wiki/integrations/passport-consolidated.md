@@ -1,5 +1,5 @@
 ---
-title: "passport — Consolidated Documentation"
+title: "passport: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "passport   consolidated documentation user"
 ---
 
-# passport — Consolidated Documentation
+# passport: Consolidated Documentation
 
 Consolidated from **34** individual files.
 

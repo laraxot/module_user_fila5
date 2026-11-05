@@ -15,6 +15,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as AuthUser;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -46,7 +47,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         return [
             'name' => TextColumn::make('name')
                 ->label('Nome'),
-            'id' => TextColumn::make('id')
+            'id' => IDColumn::make('id')
                 ->label('Client ID')
                 ->copyable()
                 ->copyMessage('Client ID copiato')

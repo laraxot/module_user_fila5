@@ -10,6 +10,7 @@ qmd: "code-quality-analysis alias superseded"
 
 Documento identico al canonico: [CODE-QUALITY-ANALYSIS.md](CODE-QUALITY-ANALYSIS.md).
 
+<<<<<<< .merge_file_mqxMUF
 <<<<<<< .merge_file_XbvJrR
 ### 1. Authentication Performance Issues (HIGH)
 
@@ -321,3 +322,6 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 =======
 Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
 >>>>>>> .merge_file_hSMbbt
+=======
+Canonico: `laravel/Modules/User/docs/wiki/integrations/CODE-QUALITY-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_mDt5l8

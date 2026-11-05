@@ -90,4 +90,10 @@ return [
         'general_error' => 'An error occurred. Please try again later.',
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
+    'page' => [
+        'title' => 'Log in to FixCity',
+        'subtitle' => 'Sign in to report a problem and follow your cases',
+    ],
+    'already_registered' => 'Don\'t have an account yet?',
+    'register' => 'Register now',
 ];

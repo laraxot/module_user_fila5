@@ -1,5 +1,5 @@
 ---
-title: "Models/Contracts — capacità Eloquent nel modulo User"
+title: "Models/Contracts: capacità Eloquent nel modulo User"
 type: concept
 module: User
 tags: [contract, models, eloquent, can-comment, placement]

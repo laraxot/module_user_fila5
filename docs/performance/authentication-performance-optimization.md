@@ -6,6 +6,7 @@ canonical: "performance/AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md"
 qmd: "authentication-performance-optimization alias superseded"
 ---
 
+<<<<<<< .merge_file_9YEJ1W
 <<<<<<< .merge_file_ZBQ5g8
 ### Phase 2: Systematic Optimization (Week 1)
 1. Implement Redis caching for sessions
@@ -108,6 +109,9 @@ qmd: "authentication-performance-optimization alias superseded"
 =======
 # Authentication Performance Optimization - User Module
 >>>>>>> .merge_file_hR3eIC
+=======
+# Authentication Performance Optimization - User Module
+>>>>>>> .merge_file_FaSd0m
 
 Documento identico al canonico: [AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md](AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md).
 

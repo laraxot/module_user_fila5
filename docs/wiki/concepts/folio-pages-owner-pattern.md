@@ -1,5 +1,5 @@
 ---
-title: "Modulo User — owner pagine Folio, zero web.php"
+title: "Modulo User: owner pagine Folio, zero web.php"
 type: concept
 tags: [user, folio, pages, frontoffice, ownership]
 created: 2026-06-10
@@ -18,7 +18,7 @@ related:
 status: draft
 ---
 
-# Modulo User — owner pagine Folio, zero web.php
+# Modulo User: owner pagine Folio, zero web.php
 
 ## Religione
 
@@ -26,7 +26,7 @@ status: draft
 |-------|--------|---------|
 | **Owner pagine** | **User** | File in `resources/views/pages/` + `name()` + `middleware()` |
 | **Mount rotte** | **Cms** | `FolioVoltServiceProvider` → `Folio::path()->uri($locale)` |
-| **Link UI** | **Sixteen** | `route('<name>')` nel dropdown — non registra rotte |
+| **Link UI** | **Sixteen** | `route('<name>')` nel dropdown: non registra rotte |
 
 Il modulo User **non** aggiunge `Route::get()` in `routes/web.php` per il FO.
 
@@ -49,7 +49,7 @@ Pagine auth/login spesso nel tema Sixteen; dominio profilo/notifiche resta User.
 
 1. `php artisan folio:page <path>` sotto `Modules/User/resources/views/pages/`
 2. Blocco PHP: `name('english.name')`, `middleware(['web', 'auth'])` se serve
-3. `php artisan folio:list` — verifica nome e path
+3. `php artisan folio:list`: verifica nome e path
 4. Tema: `route('english.name')` solo se presente in `folio:list`
 
 ## Anti-pattern documentato

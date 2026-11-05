@@ -1,15 +1,20 @@
 ---
+<<<<<<< .merge_file_otcJWm
 title: "PHPStan Level 10 Compliance — User Module"
+=======
+title: "PHPStan Level 10 Compliance: User Module"
+>>>>>>> .merge_file_EtNtgn
 type: alias
 status: superseded
 canonical: "wiki/integrations/PHPSTAN_L10.md"
 qmd: "phpstan_l10 alias superseded"
 ---
 
-# PHPStan Level 10 Compliance — User Module
+# PHPStan Level 10 Compliance: User Module
 
 Documento identico al canonico: [PHPSTAN_L10.md](PHPSTAN_L10.md).
 
+<<<<<<< .merge_file_otcJWm
 <<<<<<< .merge_file_swThPG
 | Aspect | Value |
 |--------|-------|
@@ -68,3 +73,6 @@ phpstan analyse app --level=10
 =======
 Canonico: `laravel/Modules/User/docs/wiki/integrations/PHPSTAN_L10.md`. Qui non ci sono istruzioni: seguire il file collegato.
 >>>>>>> .merge_file_hilgaO
+=======
+Canonico: `laravel/Modules/User/docs/wiki/integrations/PHPSTAN_L10.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_EtNtgn

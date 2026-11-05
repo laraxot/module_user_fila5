@@ -27,7 +27,20 @@ return [
         ],
     ],
     'actions' => [
-        'hidePassword' => ['label' => 'Ocultar contraseña', 'tooltip' => 'Ocultar contraseña', 'icon' => 'hidePassword'],
-        'showPassword' => ['label' => 'Mostrar contraseña', 'tooltip' => 'Mostrar contraseña', 'icon' => 'showPassword'],
+        'hidePassword' => [
+            'label' => 'Ocultar contraseña',
+            'tooltip' => 'Ocultar contraseña',
+            'icon' => 'hidePassword',
+        ],
+        'showPassword' => [
+            'label' => 'Mostrar contraseña',
+            'tooltip' => 'Mostrar contraseña',
+            'icon' => 'showPassword',
+        ],
+    ],
+    'ui' => [
+        'errors_title' => 'Revisa los datos introducidos',
+        'login_button' => 'Iniciar sesión',
+        'forgot_password' => '¿Olvidaste tu contraseña?',
     ],
 ];

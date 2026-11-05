@@ -1,5 +1,6 @@
 ---
 title: "Authentication Performance Optimization - User Module"
+<<<<<<< .merge_file_ipiyIz
 <<<<<<< .merge_file_8Hb7XK
 type: note
 updated: 2026-10-26
@@ -8,10 +9,13 @@ qmd: "authentication performance optimization - user module user"
 status: superseded
 superseded_by: authentication-performance-optimization.md
 =======
+=======
+>>>>>>> .merge_file_8HZqkO
 type: alias
 status: superseded
 canonical: "performance/AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md"
 qmd: "AUTHENTICATION_PERFORMANCE_OPTIMIZATION alias superseded"
+<<<<<<< .merge_file_ipiyIz
 >>>>>>> .merge_file_mSeHPG
 ---
 
@@ -117,6 +121,11 @@ qmd: "AUTHENTICATION_PERFORMANCE_OPTIMIZATION alias superseded"
 =======
 # Authentication Performance Optimization - User Module
 >>>>>>> .merge_file_mSeHPG
+=======
+---
+
+# Authentication Performance Optimization - User Module
+>>>>>>> .merge_file_8HZqkO
 
 Documento identico al canonico: [AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md](AUTHENTICATION-PERFORMANCE-OPTIMIZATION.md).
 

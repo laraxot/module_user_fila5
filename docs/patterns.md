@@ -8,7 +8,7 @@ status: draft
 qmd: "user module   patterns & best practices user"
 ---
 
-# User Module — Patterns & Best Practices
+# User Module: Patterns & Best Practices
 
 ## Authorization Pattern
 

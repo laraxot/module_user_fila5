@@ -10,7 +10,7 @@ status: superseded
 superseded_by: quality-status-user-module.md
 ---
 
-# Modulo User — Stato Qualità
+# Modulo User: Stato Qualità
 
 ## Status Summary
 

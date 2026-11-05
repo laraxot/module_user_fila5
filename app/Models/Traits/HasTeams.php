@@ -93,7 +93,7 @@ trait HasTeams
      */
     public function canCreateTeam(): bool
     {
-        return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
+        return $this->hasPermissionTo('create team');
     }
 
     /**
@@ -158,6 +158,16 @@ trait HasTeams
      * @return Collection<int, XotUserContract>
      */
     public function getAllTeamUsersAttribute(): Collection
+    {
+        return $this->getAllTeamUsers();
+    }
+
+    /**
+     * Get all of the team's users including its owner.
+     *
+     * @return Collection<int, XotUserContract>
+     */
+    public function getAllTeamUsers(): Collection
     {
         $items = [];
         foreach ($this->teamUsers as $membership) {
