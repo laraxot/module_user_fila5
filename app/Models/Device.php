@@ -7,11 +7,21 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< .merge_file_D2QDmP
 use Illuminate\Support\Carbon;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Models\Traits\DeviceRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
+use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\DeviceFactory;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> .merge_file_9EJW9E
 
 /**
  * Device model representing a user's device in the system.
@@ -107,6 +117,22 @@ class Device extends BaseModel
     }
 
     /**
+<<<<<<< .merge_file_D2QDmP
+=======
+     * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
+     */
+    public function users(): BelongsToMany
+    {
+        $userClass = XotData::make()->getUserClass();
+
+        /** @var BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($userClass);
+
+        return $relation;
+    }
+
+    /**
+>>>>>>> .merge_file_9EJW9E
      * Define the attribute casting for the model.
      *
      * @return array<string, string>
@@ -131,6 +157,10 @@ class Device extends BaseModel
             'is_phone' => 'boolean',
         ];
     }
+<<<<<<< .merge_file_D2QDmP
 
     use DeviceRelationsTrait;
 }
+=======
+}
+>>>>>>> .merge_file_9EJW9E

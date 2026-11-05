@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< .merge_file_2y3syh
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -13,6 +14,16 @@ use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Traits\BaseTenantRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
+use Modules\User\Contracts\TenantContract;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> .merge_file_UcFweJ
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Sluggable\HasSlug;
@@ -34,6 +45,7 @@ use Spatie\Sluggable\SlugOptions;
  */
 abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, TenantContract
 {
+<<<<<<< .merge_file_2y3syh
     use HasSlug {
         \Spatie\Sluggable\HasSlug::resolveRouteBindingQuery as resolveRouteBindingQueryFromSlug;
     }
@@ -41,12 +53,16 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     use HasUuids {
         \Illuminate\Database\Eloquent\Concerns\HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
     }
+=======
+    use HasSlug;
+>>>>>>> .merge_file_UcFweJ
     use InteractsWithMedia;
 
     public $incrementing = false;
 
     protected $keyType = 'string';
 
+<<<<<<< .merge_file_2y3syh
     /**
      * Risolve la collisione tra HasSlug e HasUuids su resolveRouteBindingQuery:
      * valida l'UUID per le chiavi univoche (HasUuids), poi risolve lo slug (HasSlug).
@@ -63,6 +79,8 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
         return $this->resolveRouteBindingQueryFromSlug($query, $value, $field);
     }
 
+=======
+>>>>>>> .merge_file_UcFweJ
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -85,6 +103,40 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     }
 
     /**
+<<<<<<< .merge_file_2y3syh
+=======
+     * Ottiene tutti i membri associati al tenant.
+     *
+     * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
+     */
+    public function members(): BelongsToMany
+    {
+        /** @var class-string<Model> $user_class */
+        $user_class = XotData::make()->getUserClass();
+
+        return $this->belongsToManyX($user_class);
+    }
+
+    /**
+     * Ottiene tutti gli utenti associati al tenant.
+     *
+     * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
+     */
+    public function users(): BelongsToMany
+    {
+        $xot = XotData::make();
+        /** @var class-string<Model> $userClass */
+        $userClass = $xot->getUserClass();
+
+        // $this->setConnection('mysql');
+        // return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
+        return $this->belongsToManyX($userClass);
+
+        // ->as('membership')
+    }
+
+    /**
+>>>>>>> .merge_file_UcFweJ
      * Ottiene l'URL dell'avatar del tenant per Filament.
      *
      * @return string|null URL dell'avatar o null se non presente
@@ -105,6 +157,10 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     //     $this->save();
     //     return $slug;
     // }
+<<<<<<< .merge_file_2y3syh
 
     use BaseTenantRelationsTrait;
 }
+=======
+}
+>>>>>>> .merge_file_UcFweJ

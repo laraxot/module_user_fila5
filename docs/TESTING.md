@@ -14,4 +14,8 @@ tags: [docs, user]
 
 # Alias: TESTING User
 
+<<<<<<< .merge_file_0alKzL
 Canonico harness: [testing-harness.md](./testing-harness.md) (`Modules\User\Tests\TestCase` FQCN). Regole Pest: [testing.md](./testing.md). Indice: [00-INDEX.md](./00-index.md).
+=======
+Canonico harness: [testing-harness.md](./testing-harness.md) (`Modules\User\Tests\TestCase` FQCN). Regole Pest: [testing.md](./testing.md). Indice: [00-INDEX.md](./00-index.md).
+>>>>>>> .merge_file_ZIO2dM

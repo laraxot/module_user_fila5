@@ -98,4 +98,8 @@ Stati: `MIGRATE` | `REUSE` | `KEEP` | `RETIRE` (come hub Xot).
 - Inventario User storico (parzialmente stale vs disco 2026-10-20): [livewire-inventory.md](./livewire-inventory.md)
 - PRD / tech-spec campagna: [livewire-widget-prd.md](./livewire-widget-prd.md), [livewire-widget-tech-spec.md](./livewire-widget-tech-spec.md)
 - Hub Xot: [inventory](../../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md) · [blueprint](../../../Xot/docs/bmad/livewire-to-filament-widgets-filament-blueprint.md) · [fleet story](../../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md) (W0: TermsOfServiceWidget **REUSE** vs HTTP orfano)
+<<<<<<< .merge_file_A9Smll
 - Indice User: [../00-INDEX.md](../00-index.md)
+=======
+- Indice User: [../00-INDEX.md](../00-index.md)
+>>>>>>> .merge_file_FpOscZ

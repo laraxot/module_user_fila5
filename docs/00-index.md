@@ -11,6 +11,7 @@ related:
   - ./purpose.md
   - ./stories/dcp-442-ordine-dei-docs-del-modulo-user-link-nomi-e-scopo.story.md
 ---
+<<<<<<< .merge_file_Tb3d7h
 title: "**Indice Documentazione Modulo User**"
 type: index
 status: draft
@@ -18,6 +19,8 @@ updated: 2026-10-26
 tags: [docs, user]
 qmd: "**indice documentazione modulo user** user"
 ---
+=======
+>>>>>>> .merge_file_5rAaWb
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -73,7 +76,10 @@ qmd: "**indice documentazione modulo user** user"
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
+<<<<<<< .merge_file_Tb3d7h
 
+=======
+>>>>>>> .merge_file_5rAaWb
 
 # User, indice dei documenti
 
@@ -139,3 +145,15 @@ Stato dichiarato nel frontmatter (2300 `.md`): `draft` 1396, `stub` 312, `supers
 ## Debito noto
 
 Misure e decisioni aperte sono nella story [dcp-442](./stories/dcp-442-ordine-dei-docs-del-modulo-user-link-nomi-e-scopo.story.md): link non risolti, 407 file con un rinvio a `Themes/docs/shared-components/` che non esiste (285 sono solo quel rinvio), cartelle gemelle, collisioni di maiuscole, 33 nomi con suffisso numerico o data in `archive/`.
+<<<<<<< .merge_file_Tb3d7h
+=======
+
+---
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+- [Scopo, confini e come servirlo meglio](./scopo.md)
+- [Cosa manca per completare](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28)
+>>>>>>> .merge_file_5rAaWb

@@ -106,4 +106,3 @@ Con solo `$provider`, Laravel legava il segmento `it` a `$provider` →
 - Aprire OAuth in un nuovo tab (rompe state/session)
 - Nuovi controller o duplicare la logica Socialite nel tema
 - Tipizzare la Facade `Request` nel `__invoke` OAuth
-

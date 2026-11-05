@@ -10,8 +10,13 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< .merge_file_MQ6nWj
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
+=======
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
+>>>>>>> .merge_file_4GYpjb
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -99,6 +104,17 @@ class AuthenticationLog extends BaseModel
         return static::query()->where('created_at', '<', now()->subDays(config()->integer('gdpr.retention.authentication_log_days', 365)));
     }
 
+<<<<<<< .merge_file_MQ6nWj
+=======
+    /**
+     * @return MorphTo<Model, $this>
+     */
+    public function authenticatable(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
+>>>>>>> .merge_file_4GYpjb
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
@@ -111,6 +127,10 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
+<<<<<<< .merge_file_MQ6nWj
 
     use AuthenticationLogRelationsTrait;
 }
+=======
+}
+>>>>>>> .merge_file_4GYpjb

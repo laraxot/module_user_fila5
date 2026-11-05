@@ -23,5 +23,12 @@ superseded_by: ./00-index.md
 > Superseded il 2026-10-27: l'indice canonico e' [00-index.md](./00-index.md). Contenuto conservato per storia (copia dell'indice del 2026-07-14).
 
 # 📚 **Indice Documentazione Modulo User**
+<<<<<<< .merge_file_TW9jkk
+=======
+status: draft
+---
+
+# Indice Documentazione Modulo User (copia storica)
+>>>>>>> .merge_file_o9AaQc
 
 Questo file duplicava [00-index.md](./00-index.md), che e' l'indice canonico e aggiornato: usare quello.

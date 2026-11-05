@@ -5,10 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< .merge_file_fCDgBo
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\DeviceUserRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> .merge_file_SOQjKN
 
 /**
  * Modules\User\Models\DeviceUser.
@@ -66,6 +75,39 @@ class DeviceUser extends BasePivot
         'push_notifications_enabled',
     ];
 
+<<<<<<< .merge_file_fCDgBo
+=======
+    /**
+     * @return BelongsTo<Device, $this>
+     */
+    public function device(): BelongsTo
+    {
+        return $this->belongsTo(Device::class);
+    }
+
+    /**
+     * @return BelongsTo<Model, $this>
+     */
+    public function user(): BelongsTo
+    {
+        /** @var class-string<Model> */
+        $userClass = XotData::make()->getUserClass();
+
+        return $this->belongsTo($userClass);
+    }
+
+    /**
+     * @return BelongsTo<Model, $this>
+     */
+    public function profile(): BelongsTo
+    {
+        /** @var class-string<Model> */
+        $profileClass = XotData::make()->getProfileClass();
+
+        return $this->belongsTo($profileClass, 'user_id', 'user_id');
+    }
+
+>>>>>>> .merge_file_SOQjKN
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
@@ -89,6 +131,10 @@ class DeviceUser extends BasePivot
             'logout_at' => 'datetime',
         ];
     }
+<<<<<<< .merge_file_fCDgBo
 
     use DeviceUserRelationsTrait;
 }
+=======
+}
+>>>>>>> .merge_file_SOQjKN

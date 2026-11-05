@@ -23,6 +23,7 @@ class DemoUserSeeder extends Seeder
 
     public function run(): void
     {
+<<<<<<< .merge_file_A3Flly
         // Utenti demo con password note (tra cui un super-admin): mai fuori da sviluppo e test.
         if (! app()->environment(['local', 'testing'])) {
             $this->command?->warn('DemoUserSeeder: saltato fuori da local/testing.');
@@ -30,6 +31,8 @@ class DemoUserSeeder extends Seeder
             return;
         }
 
+=======
+>>>>>>> .merge_file_eOSeUx
         $userClass = XotData::make()->getUserClass();
         \assert(is_subclass_of($userClass, User::class));
 

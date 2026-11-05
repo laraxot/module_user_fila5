@@ -6,6 +6,7 @@ namespace Modules\User\Models\Policies;
 
 use Modules\User\Models\Role as Post;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< .merge_file_rs7yW2
 use Modules\Xot\Models\Policies\Concerns\DeniesUndeclaredFilamentAbilities;
 
 /**
@@ -18,6 +19,11 @@ class RolePolicy extends UserBasePolicy
 {
     use DeniesUndeclaredFilamentAbilities;
 
+=======
+
+class RolePolicy extends UserBasePolicy
+{
+>>>>>>> .merge_file_Bv8nRz
     /**
      * Determine whether the user can view any models.
      */
@@ -39,7 +45,11 @@ class RolePolicy extends UserBasePolicy
      */
     public function create(UserContract $_user): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 
     /**
@@ -47,7 +57,11 @@ class RolePolicy extends UserBasePolicy
      */
     public function update(UserContract $_user, Post $_post): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 
     /**
@@ -55,7 +69,11 @@ class RolePolicy extends UserBasePolicy
      */
     public function addTeamMember(UserContract $user, Post $post): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 
     /**
@@ -63,7 +81,11 @@ class RolePolicy extends UserBasePolicy
      */
     public function updateTeamMember(UserContract $user, Post $post): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 
     /**
@@ -71,7 +93,11 @@ class RolePolicy extends UserBasePolicy
      */
     public function removeTeamMember(UserContract $user, Post $post): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 
     /**
@@ -79,6 +105,10 @@ class RolePolicy extends UserBasePolicy
      */
     public function delete(UserContract $_user, Post $_post): bool
     {
+<<<<<<< .merge_file_rs7yW2
         return false;
+=======
+        return true;
+>>>>>>> .merge_file_Bv8nRz
     }
 }
