@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
+use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Modules\User\Models\BaseUser as Model;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
@@ -132,7 +133,7 @@ class BaseUserPolicy extends XotBasePolicy
      * Replication is intentionally denied for every Eloquent model in this policy.
      * Keep the base-policy parameter broad so the override remains substitutable.
      */
-    public function replicate(UserContract $user, \Illuminate\Database\Eloquent\Model $model): bool
+    public function replicate(UserContract $user, EloquentModel $model): bool
     {
         return false;
     }
