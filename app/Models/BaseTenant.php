@@ -32,11 +32,11 @@ use Spatie\Sluggable\SlugOptions;
  */
 abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, TenantContract
 {
-    use BaseTenantRelationsTrait;
     use HasSlug;
     use HasUuids {
         \Illuminate\Database\Eloquent\Concerns\HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
     }
+    use BaseTenantRelationsTrait;
     use InteractsWithMedia;
 
     public $incrementing = false;
@@ -82,15 +82,4 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     {
         return $this->getFirstMediaUrl('avatar');
     }
-
-    // public function getSlugAttribute(?string $value): ?string
-    // {
-    //     if(is_string($value) || $this->getKey() == null) {
-    //         return $value;
-    //     }
-    //     $slug = Str::slug($this->name);
-    //     $this->slug = $slug;
-    //     $this->save();
-    //     return $slug;
-    // }
 }
