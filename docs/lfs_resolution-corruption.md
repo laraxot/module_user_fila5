@@ -2,11 +2,8 @@
 title: "LFS Corruption Resolution"
 type: alias
 status: superseded
-superseded_by: lfs-resolution.md
-type: note
-updated: 2026-10-27
-tags: [docs, user]
-qmd: "lfs corruption resolution (2026-07-28) user"
+canonical: "LFS_RESOLUTION-corruption.md"
+qmd: "lfs_resolution-corruption alias superseded"
 ---
 
 # LFS Corruption Resolution

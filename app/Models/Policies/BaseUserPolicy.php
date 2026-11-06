@@ -115,32 +115,6 @@ class BaseUserPolicy extends XotBasePolicy
         return $this->isUserAdmin($user);
     }
 
-<<<<<<< .merge_file_jvCwN1
-=======
-    /**
-     * Abilita' secondarie: Filament, senza il metodo sulla policy, le considera consentite. Solo il super-admin (via before()).
-     */
-    public function restoreAny(UserContract $user): bool
-    {
-        return false;
-    }
-
-    public function forceDeleteAny(UserContract $user): bool
-    {
-        return false;
-    }
-
-    public function replicate(UserContract $user, Model $model): bool
-    {
-        return false;
-    }
-
-    public function reorder(UserContract $user): bool
-    {
-        return false;
-    }
-
->>>>>>> .merge_file_0zUxM1
     protected function isUserAdmin(UserContract $user): bool
     {
         return $user->hasRole(self::ADMIN_ROLES);

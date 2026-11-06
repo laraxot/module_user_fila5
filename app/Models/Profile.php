@@ -6,20 +6,12 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< .merge_file_B9k0P0
-=======
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\Pivot;
->>>>>>> .merge_file_FPvFLd
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\User\Contracts\UserContract;
-<<<<<<< .merge_file_B9k0P0
 use Modules\User\Models\Traits\ProfileRelationsTrait;
-=======
->>>>>>> .merge_file_FPvFLd
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -199,15 +191,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  */
 class Profile extends BaseProfile implements HasMedia
 {
-<<<<<<< .merge_file_B9k0P0
     use HasRoles, HasSchemalessAttributes, InteractsWithMedia, ProfileRelationsTrait {
         ProfileRelationsTrait::teams insteadof HasRoles;
     }
-=======
-    use HasRoles;
-    use HasSchemalessAttributes;
-    use InteractsWithMedia;
->>>>>>> .merge_file_FPvFLd
 
     /**
      * The table associated with the model.
@@ -215,19 +201,6 @@ class Profile extends BaseProfile implements HasMedia
     protected $table = 'profiles';
 
     /**
-<<<<<<< .merge_file_B9k0P0
-=======
-     * Get the teams that the profile belongs to.
-     *
-     * @return BelongsToMany<Team, $this, Pivot, 'pivot'>
-     */
-    public function teams(): BelongsToMany
-    {
-        return $this->belongsToManyX(Team::class);
-    }
-
-    /**
->>>>>>> .merge_file_FPvFLd
      * Scope a query to include schemaless attributes.
      *
      * @param  Builder<static>  $query

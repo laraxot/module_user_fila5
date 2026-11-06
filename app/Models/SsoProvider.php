@@ -6,13 +6,8 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< .merge_file_KMoLix
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\SsoProviderRelationsTrait;
-=======
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Carbon;
->>>>>>> .merge_file_g640pf
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -100,17 +95,6 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-<<<<<<< .merge_file_KMoLix
-=======
-     * @return HasMany<User, $this>
-     */
-    public function users(): HasMany
-    {
-        return $this->hasMany(User::class, 'sso_provider_id');
-    }
-
-    /**
->>>>>>> .merge_file_g640pf
      * Check if a given email domain is allowed for this provider.
      */
     public function isAllowedDomain(string $email): bool
@@ -163,10 +147,6 @@ class SsoProvider extends BaseModel
             'is_active' => 'boolean',
         ];
     }
-<<<<<<< .merge_file_KMoLix
 
     use SsoProviderRelationsTrait;
 }
-=======
-}
->>>>>>> .merge_file_g640pf

@@ -5,13 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_XWy2ly
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
-=======
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
->>>>>>> .merge_file_w3wyGU
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -73,24 +68,5 @@ class TeamPermission extends BaseModel
         'permission',
     ];
 
-<<<<<<< .merge_file_XWy2ly
     use TeamPermissionRelationsTrait;
 }
-=======
-    /**
-     * @return BelongsTo<Team, $this>
-     */
-    public function team(): BelongsTo
-    {
-        return $this->belongsTo(Team::class);
-    }
-
-    /**
-     * @return BelongsTo<User, $this>
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
-}
->>>>>>> .merge_file_w3wyGU
