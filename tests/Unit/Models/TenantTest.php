@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Str;
 use Modules\User\Models\Tenant;
+use Mockery\MockInterface;
 use Tests\TestCase;
 
 use function Safe\json_encode;
@@ -251,5 +255,73 @@ class TenantTest extends TestCase
 
         static::assertCount(1, $darkThemeTenants);
         static::assertSame($darkTenant->id, $darkThemeTenants->firstOrFail()->id);
+    }
+
+    public function test_resolve_route_binding_query_preserve_slug_per_has_slug(): void
+    {
+        $tenant = new Tenant();
+
+        /** @var list<array{string, string|int}> $calls */
+        $calls = [];
+        /** @var Builder<Model>&MockInterface $query */
+        $query = \Mockery::mock(Builder::class);
+        $query->shouldReceive('where')->andReturnUsing(
+            function ($field, $value) use (&$calls, $query) {
+                $calls[] = [$field, $value];
+
+                return $query;
+            }
+        );
+
+        $result = $tenant->resolveRouteBindingQuery($query, 'my-tenant', 'slug');
+
+        static::assertSame($query, $result);
+        $this->assertSame([['slug', 'my-tenant']], $calls);
+    }
+
+    public function test_resolve_route_binding_query_uses_id_for_non_uuid_value(): void
+    {
+        $tenant = new Tenant();
+
+        /** @var list<array{string, string|int}> $calls */
+        $calls = [];
+        /** @var Builder<Model>&MockInterface $query */
+        $query = \Mockery::mock(Builder::class);
+        $query->shouldReceive('where')->andReturnUsing(
+            function ($field, $value) use (&$calls, $query) {
+                $calls[] = [$field, $value];
+
+                return $query;
+            }
+        );
+
+        $result = $tenant->resolveRouteBindingQuery($query, 'not-a-uuid', 'id');
+
+        static::assertSame($query, $result);
+        $this->assertSame([['id', 'not-a-uuid']], $calls);
+    }
+
+    public function test_resolve_route_binding_query_accetta_uuid_valido_sulla_chiave_univoca(): void
+    {
+        $tenant = new Tenant();
+
+        $uuid = (string) Str::uuid();
+
+        /** @var list<array{string, string|int}> $calls */
+        $calls = [];
+        /** @var Builder<Model>&MockInterface $query */
+        $query = \Mockery::mock(Builder::class);
+        $query->shouldReceive('where')->andReturnUsing(
+            function ($field, $value) use (&$calls, $query) {
+                $calls[] = [$field, $value];
+
+                return $query;
+            }
+        );
+
+        $result = $tenant->resolveRouteBindingQuery($query, $uuid, 'id');
+
+        static::assertSame($query, $result);
+        $this->assertSame([['id', $uuid]], $calls);
     }
 }
