@@ -53,10 +53,10 @@ use Parental\HasChildren;
 abstract class BaseTeamUser extends BasePivot
 {
     use HasChildren;
+    use BaseTeamUserRelationsTrait;
 
     protected $connection = 'user';
 
     protected $table = 'team_user';
 
-    use BaseTeamUserRelationsTrait;
 }

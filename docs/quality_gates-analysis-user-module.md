@@ -1,15 +1,4 @@
 ---
-title: "Quality Gates Analysis — User Module"
-type: alias
-status: superseded
-superseded_by: quality-gates.md
-type: note
-updated: 2026-10-27
-tags: [docs, user]
-qmd: "quality gates analysis   laravel/modules/user user"
----
-
-# Quality Gates Analysis — User Module
 title: "Quality Gates Analysis: User Module"
 type: alias
 status: superseded

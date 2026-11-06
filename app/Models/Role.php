@@ -72,6 +72,7 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
+    use RoleRelationsTrait;
     use HasXotFactory;
     use RelationX;
     use Updater;
@@ -143,6 +144,4 @@ class Role extends SpatieRole
             'updated_at' => 'datetime',
         ];
     }
-
-    use RoleRelationsTrait;
 }

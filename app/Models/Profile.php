@@ -191,9 +191,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  */
 class Profile extends BaseProfile implements HasMedia
 {
-    use HasRoles, HasSchemalessAttributes, InteractsWithMedia, ProfileRelationsTrait {
-        ProfileRelationsTrait::teams insteadof HasRoles;
-    }
+    use ProfileRelationsTrait;
+    use HasRoles;
+    use HasSchemalessAttributes;
+    use InteractsWithMedia;
 
     /**
      * The table associated with the model.

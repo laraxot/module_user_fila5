@@ -67,6 +67,7 @@ related:
 - [Xot](../../Xot/docs/README.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../Tenant/docs/README.md) - Risoluzione del Tenant corrente per l'utente.
 
+
 # User, indice dei documenti
 
 ## A cosa serve questa cartella
@@ -131,6 +132,7 @@ Stato dichiarato nel frontmatter (2300 `.md`): `draft` 1396, `stub` 312, `supers
 ## Debito noto
 
 Misure e decisioni aperte sono nella story [dcp-442](./stories/dcp-442-ordine-dei-docs-del-modulo-user-link-nomi-e-scopo.story.md): link non risolti, 407 file con un rinvio a `Themes/docs/shared-components/` che non esiste (285 sono solo quel rinvio), cartelle gemelle, collisioni di maiuscole, 33 nomi con suffisso numerico o data in `archive/`.
+
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

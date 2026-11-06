@@ -13,6 +13,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Traits\BaseTeamRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\Team.
@@ -62,6 +63,7 @@ use Modules\Xot\Contracts\UserContract;
  */
 abstract class BaseTeam extends BaseModel implements TeamContract
 {
+    use BaseTeamRelationsTrait;
     // Se ho bisogno di extra in customer aggiungo extra in customer
     // use HasExtraTrait;
 
@@ -186,6 +188,4 @@ abstract class BaseTeam extends BaseModel implements TeamContract
             'deleted_at' => 'datetime',
         ];
     }
-
-    use BaseTeamRelationsTrait;
 }

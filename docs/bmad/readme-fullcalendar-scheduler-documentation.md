@@ -245,4 +245,4 @@ Log::info('FullCalendar configured', [
 **Ultima modifica**: Gennaio 2025  
 **Versione FullCalendar**: v6.1.17  
 **Versione Filament**: v3.x  
-**Progetto**: SaluteOra Multi-Tenant Healthcare Platform 
+**Progetto**: SaluteOra Multi-Tenant Healthcare Platform

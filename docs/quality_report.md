@@ -1,5 +1,4 @@
 ---
-title: "Quality Report — User"
 title: "Quality Report: User"
 type: alias
 status: superseded

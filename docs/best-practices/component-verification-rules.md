@@ -165,3 +165,4 @@ Prima di usare qualsiasi componente:
 - [Laravel Blade Components](https://laravel.com/docs/blade#components)
 - [Componenti UI del Progetto](../../../../Themes/Sixteen/resources/views/components/ui)
 - [Componenti UI del Progetto](../../../../Themes/Sixteen/resources/views/components/ui)
+- [Componenti UI del Progetto](../../../../Themes/Sixteen/resources/views/components/ui)

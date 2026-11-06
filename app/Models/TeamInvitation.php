@@ -61,6 +61,7 @@ use Modules\Xot\Contracts\UserContract;
  */
 class TeamInvitation extends BaseModel
 {
+    use TeamInvitationRelationsTrait;
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -104,6 +105,4 @@ class TeamInvitation extends BaseModel
             'declined_at' => 'datetime',
         ];
     }
-
-    use TeamInvitationRelationsTrait;
 }

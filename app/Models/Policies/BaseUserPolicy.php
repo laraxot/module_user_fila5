@@ -129,6 +129,10 @@ class BaseUserPolicy extends XotBasePolicy
         return false;
     }
 
+    /**
+     * Replication is intentionally denied for every Eloquent model in this policy.
+     * Keep the base-policy parameter broad so the override remains substitutable.
+     */
     public function replicate(UserContract $user, EloquentModel $model): bool
     {
         return false;

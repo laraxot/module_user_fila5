@@ -12,6 +12,7 @@ use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Models\Traits\DeviceRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 /**
  * Device model representing a user's device in the system.
@@ -78,6 +79,7 @@ use Modules\Xot\Contracts\UserContract;
  */
 class Device extends BaseModel
 {
+    use DeviceRelationsTrait;
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -131,6 +133,4 @@ class Device extends BaseModel
             'is_phone' => 'boolean',
         ];
     }
-
-    use DeviceRelationsTrait;
 }

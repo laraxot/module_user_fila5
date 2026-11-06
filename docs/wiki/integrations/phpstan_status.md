@@ -1,5 +1,4 @@
 ---
-title: "PHPStan Status — User Module"
 title: "PHPStan Status: User Module"
 type: alias
 status: superseded

@@ -60,6 +60,7 @@ use Modules\Xot\Contracts\ProfileContract;
 class AuthenticationLog extends BaseModel
 {
     use MassPrunable;
+    use AuthenticationLogRelationsTrait;
 
     // public $timestamps = false;
 
@@ -111,6 +112,4 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
-
-    use AuthenticationLogRelationsTrait;
 }

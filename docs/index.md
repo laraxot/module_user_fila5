@@ -5,8 +5,6 @@ status: superseded
 type: index
 superseded_by: ./00-index.md
 updated: 2026-10-27
-title: "Documentazione User — indice storico (superseded)"
-updated: 2026-10-21
 title: "Documentazione User: indice storico (superseded)"
 tags: [docs, user]
 qmd: "documentazione user   indice storico (superseded) user"
@@ -14,7 +12,6 @@ qmd: "documentazione user   indice storico (superseded) user"
 # Documentazione User: indice storico (superseded)
 
 Questo file è stato mantenuto per compatibilità con link storici ma è superseded
-da [00-index.md](00-index.md), che spiega a cosa serve ogni gruppo di documenti.
 da [00-index.md](00-index.md) (indice canonico) e da [README.md](README.md) (panoramica).
 
 Riferimenti attivi:
