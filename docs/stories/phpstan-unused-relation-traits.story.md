@@ -47,7 +47,7 @@ Regola applicata (memoria `merge-script-collision-patterns`): scegliere per sign
 | `AuthenticationRelationsTrait` | `authenticatable()` | composto in `Authentication` | idem; -> MorphTo |
 | `OauthPersonalAccessClientRelationsTrait` | `client()` | composto in `OauthPersonalAccessClient` | idem; -> BelongsTo |
 | `BaseTeamUserRelationsTrait` | `user()`, `team()` | composto in `BaseTeamUser` | idem; `TeamUser::user/team` -> BelongsTo |
-| `ProfileRelationsTrait` | `teams()` | composto in `Profile` con `ProfileRelationsTrait::teams insteadof HasRoles` | classe caricata da Reflection; `Profile::teams` -> BelongsToMany |
+| `ProfileRelationsTrait` | `teams()` | composto in `Profile` come unico `use`; dal 2026-11-06 senza `insteadof` (vedi "Aggiornamento Profile") | classe caricata da Reflection; `Profile::teams` -> BelongsToMany |
 | `DeviceRelationsTrait` | `users()` | composto in `Device` | idem; -> BelongsToMany |
 | `DeviceUserRelationsTrait` | `device()`, `user()`, `profile()` | composto in `DeviceUser` | idem; 3 BelongsTo |
 | `RoleRelationsTrait` | `team()`, `permissions()` | composto in `Role` | idem; BelongsTo + BelongsToMany |
@@ -63,6 +63,18 @@ Esecuzione: per 13 modelli il contenuto e' stato riscritto in avanti da `git sho
 rispetto a quel commit contenesse solo relazioni inline, import e newline finale. `BaseTenant` e `Post` con edit mirata. Nessun file cancellato,
 nessun `@phpstan-ignore`, nessuna baseline, `phpstan.neon` intatto.
 
+## Aggiornamento Profile (2026-11-06, collisione del sync delle 07:38)
+Il sync ha di nuovo incrociato due versioni di `Profile`: il lato nostro componeva `use HasRoles, HasSchemalessAttributes, InteractsWithMedia, ProfileRelationsTrait { ProfileRelationsTrait::teams insteadof HasRoles; }`,
+il lato `laraxot/dev` solo `use ProfileRelationsTrait;` accanto a `use HasRoles;`. Il secondo e' un **fatal in autoload**
+(`Trait method Spatie\Permission\Traits\HasRoles::teams has not been applied as Modules\User\Models\Profile::teams, because of collision with ProfileRelationsTrait::teams`,
+provato con bootstrap reale: `php -l` non lo vede). Il primo funziona, ma l'`insteadof` esiste solo perche' `Profile` ricompone tre trait che `BaseProfile` usa gia'.
+
+Riscrittura: `Profile` compone solo `ProfileRelationsTrait` (e non dichiara piu' `implements HasMedia`, che `BaseProfile` eredita da `ProfileContract`). Il metodo del trait
+sovrascrive quello ereditato da Spatie, come faceva il metodo inline di prima del sync: nessun alias, nessuna collisione. Prova per Reflection contro la versione `insteadof`:
+597 metodi non privati con stessi nomi, firme e file di origine; `class_uses_recursive` (25) e `class_implements` (11) uguali; `teams()` -> `BelongsToMany(Team)` definito in `ProfileRelationsTrait.php`.
+Unica differenza: tre cache `private` del trait Spatie (`roleClass`, `permissionClass`, `wildcardClass`) non sono piu' duplicate nella sottoclasse. Dettagli nella story `collision-rewrite-complete-files`
+([Xot](../../../Xot/docs/stories/collision-rewrite-complete-files.story.md)).
+
 ## Fuori perimetro (serve decisione umana)
 1. **Candidati a rimozione, non cancellati:** `Lang/app/Models/Traits/PostMutators.php` e `PostRelations.php` (copie piatte stale). Ora PHPStan li segnala
    `trait.unused`: sono il duplicato effettivo, sostituito dalle copie nelle sottocartelle.
@@ -74,7 +86,7 @@ nessun `@phpstan-ignore`, nessuna baseline, `phpstan.neon` intatto.
 
 ## Verifica
 - `php -l` su 15 file: nessun errore.
-- Reflection: le 14 classi User e `Post` si caricano (incluso `insteadof` di `Profile`).
+- Reflection: le 14 classi User e `Post` si caricano (all'epoca anche `insteadof` di `Profile`, poi superato: vedi "Aggiornamento Profile").
 - Runtime senza query: 25 relazioni costruite sui modelli (HasMany/BelongsTo/BelongsToMany/MorphTo attesi).
 - Pint: `single_blank_line_at_eof` su `BaseTenant`, `phpdoc_align` su `Post`.
 - PHPStan `analyse Modules/User/app/Models Modules/Lang/app/Models`: errori 20 -> 6, tutti `trait.unused`. I 16 del lotto sono risolti e nessun errore nuovo
