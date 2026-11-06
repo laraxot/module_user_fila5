@@ -117,6 +117,18 @@ I conteggi sono file `.md` misurati il 2026-10-27 (totale 2300, piu' 532 file `.
 | `raw/` | 19 | Materiale importato, immutabile. | Non modificare. |
 | Strumenti (`llm-wiki/`, `html2pdf/`, `img/`, `screenshots/`, `playwright/`, `outputs/`) | 23 | Supporto: indice wiki, immagini con la loro nota, note su strumenti. | Rari da consultare. |
 
+### Cronache storiche riscritte in un documento unico
+
+Dove piu' file dicevano la stessa cosa con nomi diversi (`-1`, `-2`, una data) non si e' scelto uno di essi: si e' riscritto un documento completo col nome senza numeri, e gli originali sono ritirati come `.md.old` nella stessa cartella. Story: [collision-rewrite-complete-files](../../Xot/docs/stories/collision-rewrite-complete-files.story.md).
+
+| Documento | Che cosa e' | Stato |
+|-----------|-------------|-------|
+| [archive/quality-status.md](./archive/quality-status.md) | Istantanea PHPStan di novembre 2025 (13 errori scesi a circa 5), con lo stato verificato oggi. | `stale`: storia, non fonte |
+| [archive/historical/phpstan-fixes.md](./archive/historical/phpstan-fixes.md) | I quattro errori PHPStan di gennaio 2025, l'esito di ciascuno e che cosa ne e' rimasto nel codice. | `stale`: storia, non fonte |
+| [archive/historical/actions-structure.md](./archive/historical/actions-structure.md) | Dove stanno le Actions (`app/Actions/`), namespace senza `App`, come si scrive un'Action Spatie. | `active`: verificato sul codice |
+| [bug-fixes/parse-error-orphan-methods.md](./bug-fixes/parse-error-orphan-methods.md) | ParseError per metodi fuori dalla classe in `RegisterWidget`: causa, fix, come prevenirlo dopo una fusione. | `done` |
+| [bug-fixes/legacy/parse-error-orphan-methods.md](./bug-fixes/legacy/parse-error-orphan-methods.md) | Registro delle cinque varianti vuote di quel bug fix. | `stale` |
+
 ## Stato dei documenti
 
 Stato dichiarato nel frontmatter (2300 `.md`): `draft` 1396, `stub` 312, `superseded` 280, `done` 65, `backlog` 47, `deprecated` 32, `active` 27, senza `status` 43 (23 in `stories/`, 19 in `raw/`, 1 in radice). Le story usano il proprio ciclo di stato. `draft` significa non rivisto, non sbagliato. Solo `active` afferma che il contenuto e' stato verificato sul codice.
@@ -131,7 +143,7 @@ Stato dichiarato nel frontmatter (2300 `.md`): `draft` 1396, `stub` 312, `supers
 
 ## Debito noto
 
-Misure e decisioni aperte sono nella story [dcp-442](./stories/dcp-442-ordine-dei-docs-del-modulo-user-link-nomi-e-scopo.story.md): link non risolti, 407 file con un rinvio a `Themes/docs/shared-components/` che non esiste (285 sono solo quel rinvio), cartelle gemelle, collisioni di maiuscole, 33 nomi con suffisso numerico o data in `archive/`.
+Misure e decisioni aperte sono nella story [dcp-442](./stories/dcp-442-ordine-dei-docs-del-modulo-user-link-nomi-e-scopo.story.md): link non risolti, 407 file con un rinvio a `Themes/docs/shared-components/` che non esiste (285 sono solo quel rinvio), cartelle gemelle, collisioni di maiuscole. I 33 nomi con suffisso numerico o data in `archive/` sono chiusi: `md-filenames.py check` non ne segnala piu' in User (misurato il 2026-11-06); gli ultimi sei sono i documenti della tabella qui sopra. Restano da decidere le copie dello stesso testo con nomi diversi (ad esempio `phpstan-fixes-2025.md`, `phpstan-fixes-conflict.md`, `phpstan-fixes-conflict-2e.md` in `archive/historical/` e gli stub `parse-error-orphan-methods-*` in `bug-fixes/`) e la copia in radice `actions-structure.md`, che ripete il corpo due volte.
 
 
 ---
