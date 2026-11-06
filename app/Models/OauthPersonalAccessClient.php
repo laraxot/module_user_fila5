@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
 
 /**
  * @property string $id
@@ -31,6 +32,7 @@ use Illuminate\Support\Carbon;
  */
 class OauthPersonalAccessClient extends BaseModel
 {
+    use OauthPersonalAccessClientRelationsTrait;
     protected $table = 'oauth_personal_access_clients';
 
     protected $connection = 'user';

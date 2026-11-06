@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
 
 /**
  * @property int $id
@@ -60,6 +61,7 @@ use Modules\Xot\Contracts\ProfileContract;
 class AuthenticationLog extends BaseModel
 {
     use MassPrunable;
+    use AuthenticationLogRelationsTrait;
 
     // public $timestamps = false;
 

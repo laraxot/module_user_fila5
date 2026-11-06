@@ -14,6 +14,7 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\User\Models\Traits\SocialiteUserRelationsTrait;
 
 /**
  * Modules\User\Models\SocialiteUser.
@@ -62,6 +63,7 @@ use Modules\Xot\Datas\XotData;
  */
 class SocialiteUser extends BaseModel
 {
+    use SocialiteUserRelationsTrait;
     /**
      * Il token OAuth non deve finire in `toArray()` ne' nello stato Livewire delle pagine Filament (audit DCP-181, D-3).
      *

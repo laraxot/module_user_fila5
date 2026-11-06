@@ -22,6 +22,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+use Modules\User\Models\Traits\RoleRelationsTrait;
 use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
@@ -75,6 +76,7 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
+    use RoleRelationsTrait;
     use HasXotFactory;
     use RelationX;
     use Updater;

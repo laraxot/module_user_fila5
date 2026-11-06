@@ -18,6 +18,7 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Modules\User\Models\Traits\BaseTenantRelationsTrait;
 
 /**
  * Modules\User\Models\Tenant.
@@ -35,6 +36,7 @@ use Spatie\Sluggable\SlugOptions;
  */
 abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, TenantContract
 {
+    use BaseTenantRelationsTrait;
     use HasSlug;
     use InteractsWithMedia;
 

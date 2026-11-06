@@ -20,6 +20,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
+use Modules\User\Models\Traits\ProfileRelationsTrait;
 
 /**
  * User Profile Model.
@@ -192,6 +193,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  */
 class Profile extends BaseProfile implements HasMedia
 {
+    use ProfileRelationsTrait;
     use HasRoles;
     use HasSchemalessAttributes;
     use InteractsWithMedia;

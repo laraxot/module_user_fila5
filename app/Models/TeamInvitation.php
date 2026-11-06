@@ -12,6 +12,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\User\Models\Traits\TeamInvitationRelationsTrait;
 
 /**
  * Modules\User\Models\TeamInvitation.
@@ -63,6 +64,7 @@ use Modules\Xot\Datas\XotData;
  */
 class TeamInvitation extends BaseModel
 {
+    use TeamInvitationRelationsTrait;
     protected $connection = 'user';
 
     /** @var list<string> */

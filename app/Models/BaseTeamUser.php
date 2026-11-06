@@ -13,6 +13,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Parental\HasChildren;
+use Modules\User\Models\Traits\BaseTeamUserRelationsTrait;
 
 /**
  * Modules\User\Models\TeamUser.
@@ -57,6 +58,7 @@ use Parental\HasChildren;
 abstract class BaseTeamUser extends BasePivot
 {
     use HasChildren;
+    use BaseTeamUserRelationsTrait;
 
     protected $connection = 'user';
 

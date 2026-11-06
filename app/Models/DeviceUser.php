@@ -11,6 +11,7 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\User\Models\Traits\DeviceUserRelationsTrait;
 
 /**
  * Modules\User\Models\DeviceUser.
@@ -57,6 +58,7 @@ use Modules\Xot\Datas\XotData;
  */
 class DeviceUser extends BasePivot
 {
+    use DeviceUserRelationsTrait;
     /** @var list<string> */
     protected $fillable = [
         'id',

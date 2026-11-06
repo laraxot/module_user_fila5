@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\SsoProviderRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -66,6 +67,7 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class SsoProvider extends BaseModel
 {
+    use SsoProviderRelationsTrait;
     /**
      * Fuori da `toArray()` e quindi dallo stato Livewire delle pagine Edit/View di Filament, che lo manderebbe al browser (audit DCP-181, D-3).
      *

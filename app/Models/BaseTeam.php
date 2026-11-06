@@ -16,6 +16,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\User\Models\Traits\BaseTeamRelationsTrait;
 
 /**
  * Modules\User\Models\Team.
@@ -65,6 +66,7 @@ use Modules\Xot\Datas\XotData;
  */
 abstract class BaseTeam extends BaseModel implements TeamContract
 {
+    use BaseTeamRelationsTrait;
     // Se ho bisogno di extra in customer aggiungo extra in customer
     // use HasExtraTrait;
 
