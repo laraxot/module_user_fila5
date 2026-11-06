@@ -61,6 +61,7 @@ use Modules\Xot\Contracts\UserContract;
 class SocialiteUser extends BaseModel
 {
     use SocialiteUserRelationsTrait;
+
     /**
      * Il token OAuth non deve finire in `toArray()` ne' nello stato Livewire delle pagine Filament (audit DCP-181, D-3).
      *
@@ -79,5 +80,4 @@ class SocialiteUser extends BaseModel
         'email',
         'avatar',
     ];
-
 }

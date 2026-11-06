@@ -6,8 +6,8 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
 use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Team Permission Model.
@@ -53,6 +53,7 @@ use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
 class TeamPermission extends BaseModel
 {
     use TeamPermissionRelationsTrait;
+
     /**
      * The database connection that should be used by the model.
      */
@@ -68,5 +69,4 @@ class TeamPermission extends BaseModel
         'user_id',
         'permission',
     ];
-
 }

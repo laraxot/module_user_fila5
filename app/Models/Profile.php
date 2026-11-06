@@ -10,25 +10,26 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
-use Modules\User\Contracts\UserContract;
 use Modules\User\Models\Traits\ProfileRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\Permission\Traits\HasRoles;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
-use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
 
 /**
  * User Profile Model.
  *
  * Represents a user profile with relationships to devices, teams, and roles.
  *
+ * Roles, media and schemaless attributes (`HasRoles`, `InteractsWithMedia`,
+ * `SchemalessAttributesTrait`) and the `HasMedia` contract come from {@see BaseProfile}:
+ * they are not composed again here. `teams()` comes from {@see ProfileRelationsTrait} and
+ * overrides the inherited Spatie `HasRoles::teams()`.
+ *
  * @property int $id
- * @property string $first_name
- * @property string $last_name
- * @property string $user_name
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property string|null $user_name
  * @property string $email
  * @property string|null $phone
  * @property string|null $bio
@@ -38,16 +39,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property array<string, mixed> $preferences
  * @property string $status
  * @property SchemalessAttributes $extra
- * @property string $avatar
  * @property ProfileContract|null $creator
  * @property Collection<int, DeviceUser> $deviceUsers
  * @property int|null $device_users_count
  * @property ProfileTeam|DeviceProfile|null $pivot
  * @property Collection<int, Device> $devices
  * @property int|null $devices_count
- * @property string|null $first_name
  * @property string|null $full_name
- * @property string|null $last_name
  * @property MediaCollection<int, Media> $media
  * @property int|null $media_count
  * @property Collection<int, DeviceUser> $mobileDeviceUsers
@@ -64,7 +62,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property int|null $teams_count
  * @property ProfileContract|null $updater
  * @property UserContract|null $user
- * @property string|null $user_name
  *
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
@@ -189,12 +186,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  *
  * @mixin \Eloquent
  */
-class Profile extends BaseProfile implements HasMedia
+class Profile extends BaseProfile
 {
     use ProfileRelationsTrait;
-    use HasRoles;
-    use HasSchemalessAttributes;
-    use InteractsWithMedia;
 
     /**
      * The table associated with the model.
@@ -202,20 +196,24 @@ class Profile extends BaseProfile implements HasMedia
     protected $table = 'profiles';
 
     /**
-     * Scope a query to include schemaless attributes.
+     * Keeps `Profile::withExtraAttributes()` callable.
+     *
+     * The Spatie `SchemalessAttributesTrait` has no such scope, so this one is a deliberate
+     * no-op: it returns the query untouched. The `extra` column is read through the
+     * `SchemalessAttributes` cast, not filtered here.
      *
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
     {
-        return $query; // SchemalessAttributesTrait should handle this, but adding for completeness/test
+        return $query;
     }
 
     /**
-     * Get the schemaless attributes.
+     * Attributes handled by `SchemalessAttributesTrait`.
      *
-     * @return array<int, string>
+     * @return list<string>
      */
     public function getSchemalessAttributes(): array
     {
@@ -230,7 +228,7 @@ class Profile extends BaseProfile implements HasMedia
      * @see https://schema.org/Person
      * @see https://schema.org/ProfilePage
      *
-     * @return array<string, mixed>
+     * @return array<string, string|null>
      */
     public function toSchemaOrg(): array
     {
