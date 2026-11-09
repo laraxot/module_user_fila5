@@ -81,4 +81,31 @@ return new class extends XotBaseMigration
         });
     }
 
+<<<<<<< .merge_file_V32Lh3
+=======
+    /**
+     * Verifica se un vincolo di chiave esterna esiste già sulla tabella corrente.
+     *
+     * Usa lo schema builder (Schema::getForeignKeys) invece di information_schema,
+     * che esiste solo su MySQL/MariaDB: su SQLite (test, ambienti locali) la query
+     * falliva con "no such table: information_schema.table_constraints".
+     * L'unica FK della tabella è su team_id, usata come fallback quando il nome manca.
+     */
+    private function localHasForeignKey(string $constraintName): bool
+    {
+        $foreignKeys = $this->getConn()->getForeignKeys($this->getTable());
+
+        foreach ($foreignKeys as $foreignKey) {
+            if ($foreignKey['name'] === $constraintName) {
+                return true;
+            }
+            // SQLite non conserva il nome dei vincoli: si riconosce dalla colonna.
+            if ($foreignKey['name'] === null && $foreignKey['columns'] === ['team_id']) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+>>>>>>> .merge_file_ZrF24x
 };
