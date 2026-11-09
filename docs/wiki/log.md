@@ -187,3 +187,4 @@ status: draft
 - `LoginWidgetLocalizationTest` ripuntato su `GetPostLoginUrlAction` (la logica localizeURL vive li', non piu' nel widget)
 - Fix UI reale: `components/layouts/base.blade.php` (layout auth) non aveva `@filamentScripts` → Alpine `filamentSchema`/`filamentSchemaComponent`/`passwordRevealFormComponent` non definiti (console: password reveal rotto). Aggiunto `@filamentScripts(withCore: true)` come nel panel Filament
 - Verificato: script filament app.js/schemas.js/support.js ora serviti 200; test auth 21 passati/4 skip preesistenti; PHPStan 0 errori
+- 2026-11-09 — Convenzione i18n widget: `user::user.widgets.overview.*` spostato in `user::user_overview_widget.*` (nuovi file lang it/en + test aggiornato).
