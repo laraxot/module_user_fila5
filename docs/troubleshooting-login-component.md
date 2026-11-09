@@ -38,7 +38,7 @@ Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/
 **Soluzione:** Usare `Livewire::addComponent($class)` invece di `Livewire::component($alias, $class)`. Il metodo `addComponent` usa hash deterministico (`lw<crc32>`) come nome, compatibile con `@livewire(ClassName::class)`.
 
 ```php
-// ❌ SBAGLIATO — alias :: non funziona in Livewire v4
+// ❌ SBAGLIATO: alias :: non funziona in Livewire v4
 Livewire::component(‘user::filament.widgets.auth.login-widget’, LoginWidget::class);
 
 // ✅ CORRETTO
@@ -167,7 +167,7 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 ```blade
 @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 ```
-NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)` — in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
+NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)`: in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
 
 La registrazione in `UserServiceProvider::registerLivewireAuthWidgets()` usa `Livewire::addComponent($class)` (hash-based) che è compatibile con `::class`.
 - **Uso:** Widget riutilizzabile per embedding

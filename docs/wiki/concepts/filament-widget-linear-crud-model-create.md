@@ -1,5 +1,5 @@
 ---
-title: "RegisterWidget — create lineare, no Action"
+title: "RegisterWidget: create lineare, no Action"
 type: concept
 confidence: high
 created: 2026-06-04
@@ -18,9 +18,9 @@ status: draft
 qmd: "persistenza register   `::create($data)` user"
 ---
 
-# Persistenza register — `::create($data)`
+# Persistenza register: `::create($data)`
 
-`RegisterWidget::submit()` — pattern canonico:
+`RegisterWidget::submit()`: pattern canonico:
 
 ```php
 $userClass = XotData::make()->getUserClass();

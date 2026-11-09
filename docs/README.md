@@ -63,7 +63,7 @@ Modules\User\Models\Tenant
 - [Tenant Module](../../Tenant/docs)
 - [UI Components](../../UI/docs)
 
-## Architectural Rules — Violations Fixed
+## Architectural Rules: Violations Fixed
 
 ### Module Directory Structure Standard
 In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md), all root-level capitalized directories (`Actions/`, `Application/`, `Database/`, `Events/`, `Listeners/`) have been moved into `app/` or renamed to lowercase `database/`.
@@ -85,7 +85,7 @@ Per evitare crash dei parallel workers su analisi massive, usare sempre:
 
 > Nota 2026-10-14 (verifica): il modulo WorkOrder non esiste in `laravel/Modules/` e la migrazione indicata sopra non e' presente. `create_profiles_table` esiste invece in `User/database/migrations/` (6 file attivi: 2022_01_01, 2026_01_01, 2026_03_12, 2026_04_20, 2026_04_28, 2026_10_01), in `Fixcity/database/migrations/` (2: 2026_06_05, 2026_06_10) e in `Blog/database/migrations/` (1: 2026_03_12). Anche `wiki/log.md` (voci 2026-06-05 e 2026-06-10) indica Fixcity come owner: le fonti si contraddicono e la proprieta' dello schema `profiles` non e' stata decisa qui.
 
-### Spatie Permission — `table_names` intoccabile
+### Spatie Permission: `table_names` intoccabile
 
 - `laravel/config/permission.php` → nomi pivot **singolari** (`model_has_role`, …)
 - Vietato modificare `table_names` o hardcodare nomi tabella in migrazioni/modelli
@@ -123,10 +123,10 @@ Verificati il 2026-10-14 su `laravel/composer.json` e `laravel/composer.lock` (l
 
 ## Documentation
 
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
 ---
 

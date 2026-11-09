@@ -159,6 +159,16 @@ trait HasTeams
      */
     public function getAllTeamUsersAttribute(): Collection
     {
+        return $this->getAllTeamUsers();
+    }
+
+    /**
+     * Get all of the team's users including its owner.
+     *
+     * @return Collection<int, XotUserContract>
+     */
+    public function getAllTeamUsers(): Collection
+    {
         $items = [];
         foreach ($this->teamUsers as $membership) {
             $user = $membership->user;

@@ -23,7 +23,7 @@ related:
 status: draft
 ---
 
-Copilot Redundancy Audit — 2026-05-25
+Copilot Redundancy Audit: 2026-05-25
 
 Sintesi
 - Scansione preliminare mostra ridondanze documentali e duplicatione di traduzioni e config (es.: README.md, index.md, validation.php).

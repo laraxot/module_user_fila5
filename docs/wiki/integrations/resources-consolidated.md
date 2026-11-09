@@ -1,5 +1,5 @@
 ---
-title: "resources — Consolidated Documentation"
+title: "resources: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "resources   consolidated documentation user"
 ---
 
-# resources — Consolidated Documentation
+# resources: Consolidated Documentation
 
 Consolidated from **5** individual files.
 
@@ -265,7 +265,7 @@ public static function getTableColumns(): array
 
 - [XotBaseResource Source Code](../../../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [XotBaseResource Source Code](../../../../Xot/app/Filament/Resources/XotBaseResource.php)
-- [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
+- [Critical Filament Rule: getInfolistSchema String Keys](../../critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---
@@ -474,9 +474,9 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 
 ## Collegamenti
 
-- [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-- [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
+- [XotBaseResource getPages() Automatic](../../xotbase-resource-getpages-automatic.md)
+- [Resources Array Keys Philosophy](../../resources-array-keys-philosophy.md)
+- [Filament Resources Philosophical Debate](../../filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---
@@ -660,9 +660,9 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 
 ## Collegamenti
 
-- [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-- [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
+- [XotBaseResource getPages() Automatic](../../xotbase-resource-getpages-automatic.md)
+- [Resources Array Keys Philosophy](../../resources-array-keys-philosophy.md)
+- [Filament Resources Philosophical Debate](../../filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---

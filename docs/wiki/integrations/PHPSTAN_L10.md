@@ -1,5 +1,5 @@
 ---
-title: PHPStan Level 10 Compliance — User Module
+title: PHPStan Level 10 Compliance: User Module
 module: User
 type: quality-gate
 created: 2026-08-02
@@ -10,7 +10,7 @@ status: superseded
 superseded_by: phpstan-l10.md
 ---
 
-# PHPStan Level 10 Compliance — User Module
+# PHPStan Level 10 Compliance: User Module
 
 ## Summary
 
@@ -63,7 +63,7 @@ phpstan analyse app --level=10
 
 ## Related Docs
 
-- [`phpstan-l10-compliance.md`](../../../docs/wiki/rules/phpstan-l10-compliance.md)
+- [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [`phpstan-l10-compliance.md`](../../../../../../docs/wiki/rules/phpstan-l10-compliance.md)
 - [GitHub Repo](https://github.com/laraxot/module_user_fila5)
 

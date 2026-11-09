@@ -1,5 +1,5 @@
 ---
-title: "Filament register widget — getState and userClass create"
+title: "Filament register widget: getState and userClass create"
 type: concept
 sources:
 confidence: high

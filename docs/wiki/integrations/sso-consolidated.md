@@ -1,5 +1,5 @@
 ---
-title: "sso — Consolidated Documentation"
+title: "sso: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "sso   consolidated documentation user"
 ---
 
-# sso — Consolidated Documentation
+# sso: Consolidated Documentation
 
 Consolidated from **7** individual files.
 

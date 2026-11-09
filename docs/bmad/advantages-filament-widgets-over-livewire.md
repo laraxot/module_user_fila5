@@ -1,5 +1,5 @@
 ---
-title: "Puntatore — vantaggi widget"
+title: "Puntatore: vantaggi widget"
 canonical: ./advantages-filament-only.md
 superseded: true
 related:

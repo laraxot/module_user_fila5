@@ -18,7 +18,7 @@ tags: [docs, user]
 qmd: "modulo user   stato qualità user"
 ---
 
-# Modulo User — Stato Qualità
+# Modulo User: Stato Qualità
 
 ## Status Summary
 

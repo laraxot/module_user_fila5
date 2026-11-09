@@ -1,5 +1,5 @@
 ---
-title: "User Module — Context-Mode Discipline"
+title: "User Module: Context-Mode Discipline"
 type: "rule"
 tags: [user, context-mode, atomic-wiki, filament-translations]
 created: 2026-05-12
@@ -17,7 +17,7 @@ status: draft
 qmd: "user module   context-mode discipline user"
 ---
 
-# User Module — Context-Mode Discipline
+# User Module: Context-Mode Discipline
 
 > User module context-mode per traduzioni Filament e LangServiceProvider.
 

@@ -52,6 +52,8 @@ beforeEach(function (): void {
     }
 
     $this->setupFilamentAdminPanel();
+
+    Assert::assertNotNull(Filament::getPanel('user::admin'));
 });
 
 describe('TeamChangeWidget mount + render', function (): void {
@@ -110,7 +112,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $team = teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget;
+        $widget = new TeamChangeWidget();
         $widget->mount();
 
         $response = $widget->switchTeam($team->id);
@@ -127,7 +129,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $otherOwnerTeam = teamChangeWidgetCreateTeam($stranger);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget;
+        $widget = new TeamChangeWidget();
         $widget->mount();
 
         try {
@@ -148,7 +150,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget;
+        $widget = new TeamChangeWidget();
         $widget->mount();
 
         try {
@@ -163,6 +165,9 @@ describe('TeamChangeWidget switchTeam', function (): void {
 describe('TeamChangeWidget dashboard discovery', function (): void {
     test('dashboard widget list has no TeamChangeWidget card', function (): void {
         $panel = Filament::getPanel('user::admin');
+        if ($panel === null) {
+            Assert::fail('The User admin panel was not registered by the test bootstrap.');
+        }
 
         $widgetClasses = array_map(
             static fn (mixed $widget): string => is_string($widget) ? $widget : $widget::class,
@@ -175,7 +180,7 @@ describe('TeamChangeWidget dashboard discovery', function (): void {
 
 describe('Http Livewire twin retired', function (): void {
     test('team change http component is gone', function (): void {
-        Assert::assertFalse(class_exists("Modules\\User\\Http\\Livewire\\Team\\Change", false));
+        Assert::assertFalse(class_exists('Modules\\User\\Http\\Livewire\\Team\\Change', false));
         Assert::assertFileDoesNotExist(base_path('Modules/User/app/Http/Livewire/Team/Change.php'));
         Assert::assertFileDoesNotExist(base_path('Modules/User/resources/views/livewire/team/change.blade.php'));
     });

@@ -46,7 +46,7 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
 ---
-title: "TeamContract — perché il contratto (e la nullability)"
+title: "TeamContract: perché il contratto (e la nullability)"
 type: concept
 module: User
 status: active
@@ -60,9 +60,9 @@ related:
   - ./stories/phpstan-test-wave-user-b.story.md
 ---
 
-# TeamContract — perché il contratto (e la nullability)
+# TeamContract: perché il contratto (e la nullability)
 
-Indice: [00-INDEX.md](./00-INDEX.md) · API: [contracts/teamcontract.md](./contracts/teamcontract.md) · scopo: [scopo.md](./scopo.md).
+Indice: [00-INDEX.md](./00-index.md) · API: [contracts/teamcontract.md](./contracts/teamcontract.md) · scopo: [scopo.md](./scopo.md).
 
 ## Perché `TeamContract` e non `Team`
 
@@ -74,8 +74,8 @@ Indice: [00-INDEX.md](./00-INDEX.md) · API: [contracts/teamcontract.md](./contr
 
 `personalTeam(): ?TeamContract` e `belongsToTeam(?TeamContract)` modellano la realtà: utente senza team. Errori tipici da evitare:
 
-- `belongsToTeam(5)` — l'ID non è un team
-- `$this->user->personalTeam()->id` senza guard — il ritorno è nullable
+- `belongsToTeam(5)`: l'ID non è un team
+- `$this->user->personalTeam()->id` senza guard: il ritorno è nullable
 - `shouldReceive` su un model Eloquent reale al posto di una fixture `TeamContract`
 
 Evidence lane: [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-test-wave-user-b.story.md).

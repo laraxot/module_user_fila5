@@ -115,7 +115,7 @@ class Doctor extends User
     // Type-specific logic
 # User Module: Philosophy, Architecture & Zen
 
-> **Identity & Authorization** — Who you are, what you can do, which tenant you belong to. User module is the backbone of Laraxot's security and multi-tenancy.
+> **Identity & Authorization**: Who you are, what you can do, which tenant you belong to. User module is the backbone of Laraxot's security and multi-tenancy.
 
 ---
 

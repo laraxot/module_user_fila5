@@ -9,7 +9,7 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./baseuser.md"
-  - "./readme.md"
+  - "./README.md"
   - "./team.md"
   - "./teampermission.md"
   - "./xotbaivot-migration.md"
@@ -393,5 +393,3 @@ Quando crei un nuovo modello nel modulo User:
 **Autore:** AI Assistant + Team Laraxot  
 **Versione:** 2.0 - Correzione gerarchia modelli  
 **Status:** ✅ Production Ready
-
-

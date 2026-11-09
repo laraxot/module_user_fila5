@@ -1,5 +1,5 @@
 ---
-title: Socialite Architecture — No google_id Column Rule
+title: Socialite Architecture: No google_id Column Rule
 type: concept
 module: User
 updated: 2026-10-27
@@ -43,7 +43,7 @@ name, email, avatar → dati profilo dal provider
 
 Un utente può avere **N** righe in `socialite_users` (uno per provider collegato).
 
-### `SocialProvider` (Sushi — da `config/social-providers.php`)
+### `SocialProvider` (Sushi: da `config/social-providers.php`)
 
 Modello **senza tabella DB** (usa Sushi/`SushiToPhpArray`). Legge la configurazione da `config/social-providers.php`.
 
@@ -116,14 +116,14 @@ Per attivare il provider: impostare `active: true` in `social-providers.php` opp
 
 ---
 
-## Backoffice Admin — Cluster Socialite
+## Backoffice Admin: Cluster Socialite
 
 Il backoffice Filament ha un **Cluster** dedicato:
 `Modules/User/app/Filament/Clusters/Socialite/`
 
 Contiene:
-- `SocialProviderResource` — gestione provider (client_id, client_secret, active)
-- `SocialiteUserResource` — lista utenti OAuth connessi
+- `SocialProviderResource`: gestione provider (client_id, client_secret, active)
+- `SocialiteUserResource`: lista utenti OAuth connessi
 
 **→ Vedi tutorial**: `docs/wiki/concepts/socialite-admin-tutorial.md`
 

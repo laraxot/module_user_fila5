@@ -16,14 +16,12 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Validation\Rules\Password;
-use Livewire\Livewire;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Actions\Auth\BuildApiLoginLimitAction;
 use Modules\User\Actions\Auth\BuildPasswordResetUrlAction;
 use Modules\User\Actions\Auth\EnsureResetPasswordMailTemplateAction;
+use Modules\User\Actions\Auth\ResolveNotifiableEmailAction;
 use Modules\User\Datas\PasswordData;
-use Modules\User\Filament\Widgets\Auth\LoginWidget;
-use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\Policies\UserPolicy;
 use Modules\Xot\Contracts\UserContract;
@@ -81,28 +79,19 @@ class UserServiceProvider extends XotBaseServiceProvider
                 'reset_password_url' => app(BuildPasswordResetUrlAction::class)->execute($token),
             ]);
 
-            // ✅ FIX CRITICO: Imposta il destinatario dell'email con metodo Laravel standard
-            if (method_exists($notifiable, 'getEmailForPasswordReset')) {
-                $emailAddress = $notifiable->getEmailForPasswordReset();
-                if (is_string($emailAddress)) {
-                    $email->to($emailAddress);
-                } else {
-                    throw new \InvalidArgumentException('Email address must be a string.');
-                }
-            } elseif (isset($notifiable->email)) {
-                $emailAddress = $notifiable->email;
-                if (is_string($emailAddress)) {
-                    $email->to($emailAddress);
-                } else {
-                    throw new \InvalidArgumentException('Email address must be a string.');
-                }
-            } else {
-                // Fallback per debug
+            $emailAddress = app(ResolveNotifiableEmailAction::class)->execute($notifiable);
+
+            if ($emailAddress === null) {
+                // Un reset password senza destinatario non arriva a nessuno: va registrato per trovare il modello senza email.
                 Log::error('SpatieEmail: Destinatario email non trovato', [
                     'notifiable_class' => $notifiable::class,
                     'notifiable_id' => $notifiable->id ?? 'unknown',
                 ]);
+
+                return $email;
             }
+
+            $email->to($emailAddress);
 
             return $email;
         });
@@ -127,20 +116,11 @@ class UserServiceProvider extends XotBaseServiceProvider
             $email->mergeData([
                 'verification_url' => $url,
             ]);
-            if (method_exists($notifiable, 'getEmailForPasswordReset')) {
-                $emailAddress = $notifiable->getEmailForPasswordReset();
-                if (is_string($emailAddress)) {
-                    $email->to($emailAddress);
-                } else {
-                    throw new \InvalidArgumentException('Email address must be a string.');
-                }
-            } elseif (isset($notifiable->email)) {
-                $emailAddress = $notifiable->email;
-                if (is_string($emailAddress)) {
-                    $email->to($emailAddress);
-                } else {
-                    throw new \InvalidArgumentException('Email address must be a string.');
-                }
+
+            $emailAddress = app(ResolveNotifiableEmailAction::class)->execute($notifiable);
+
+            if ($emailAddress !== null) {
+                $email->to($emailAddress);
             }
 
             return $email;

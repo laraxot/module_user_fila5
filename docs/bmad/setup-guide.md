@@ -1,5 +1,5 @@
 ---
-title: "User — BMAD Setup Guide"
+title: "User: BMAD Setup Guide"
 description: "Setup e configurazione BMAD per il modulo User"
 module: "User"
 alias: "user"
@@ -12,7 +12,7 @@ tags: [docs, user, bmad]
 qmd: "user   bmad setup guide user"
 ---
 
-# User — BMAD Setup Guide
+# User: BMAD Setup Guide
 
 ## Scopo
 

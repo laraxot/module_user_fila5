@@ -166,7 +166,7 @@ tests/Feature/Filament/Widgets/
 
 - [Widget Structure](widgets-structure.md)
 - [Filament Best Practices](filament_best_practices.md)
-- [Authentication Architecture](authentication.md)
+- [Authentication Architecture](../authentication.md)
 - [Widget Structure](../widgets-structure-user.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](../authentication.md)

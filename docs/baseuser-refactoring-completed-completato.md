@@ -254,7 +254,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-- [Refactoring Plan](../../docs/baseuser-dry-violation.md) - Piano esecutivo
+- [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -262,7 +262,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./README.md)
 
 ### Root Progetto
-- [Code Quality](../../docs/code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation
@@ -363,4 +363,3 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
-

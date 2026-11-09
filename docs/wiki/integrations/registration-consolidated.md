@@ -1,5 +1,5 @@
 ---
-title: "registration — Consolidated Documentation"
+title: "registration: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "registration   consolidated documentation user"
 ---
 
-# registration — Consolidated Documentation
+# registration: Consolidated Documentation
 
 Consolidated from **8** individual files.
 

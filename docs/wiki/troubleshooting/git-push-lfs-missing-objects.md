@@ -1,5 +1,5 @@
 ---
-title: "Git push — oggetti LFS mancanti (module_user_fila5)"
+title: "Git push: oggetti LFS mancanti (module_user_fila5)"
 type: rule
 module: User
 tags: [git, lfs, push, troubleshooting, user]
@@ -23,7 +23,7 @@ related:
 status: draft
 ---
 
-# Git push — oggetti LFS mancanti
+# Git push: oggetti LFS mancanti
 
 ## Sintomo
 
@@ -50,7 +50,7 @@ Spesso **41+** file (`svg`, `png`, `jpg`) risultano missing in `.git/lfs/objects
 
 1. Commit storici (centinaia di messaggi `.`) contengono **puntatori LFS** non più presenti sul remote.
 2. `git lfs push laraxot dev` segnala oggetti missing anche se i file su disco esistono (OID diverso).
-3. Un **rebase** su `laraxot/dev` con 328 commit può lasciare il repo in `(no branch, rebasing dev)` con centinaia di conflitti `AA` — **non** proseguire il rebase; abortire e usare squash.
+3. Un **rebase** su `laraxot/dev` con 328 commit può lasciare il repo in `(no branch, rebasing dev)` con centinaia di conflitti `AA`: **non** proseguire il rebase; abortire e usare squash.
 
 Verifica rapida:
 
@@ -86,7 +86,7 @@ Risultato sessione 2026-07-08: `a8cd01ad..b0fa6e3d` su `laraxot/dev`, branch tra
 
 ### Cosa **non** fare
 
-- `git config lfs.allowincompletepush true` — push incompleto, clone rotti.
+- `git config lfs.allowincompletepush true`: push incompleto, clone rotti.
 - Rebase di 300+ commit con catena di `.` quando LFS è già corrotto.
 - Cartelle legacy `Application/`, `Database/Migrations/` alla root modulo (violano [module-root-folder-violations](../concepts/module-root-folder-violations.md) e duplicano path per PHPStan).
 

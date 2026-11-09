@@ -83,11 +83,11 @@ User/
 ### ❌ Forbidden Root Folders
 
 **These folders MUST NOT exist at module root level:**
-- ❌ `Actions/` — Must move to `app/Actions/`
-- ❌ `Application/` — Must move to `app/Application/`
-- ❌ `Database/` (capitalized) — Rename to lowercase `database/`
-- ❌ `Events/` — Must move to `app/Events/`
-- ❌ `Listeners/` — Must move to `app/Listeners/`
+- ❌ `Actions/`: Must move to `app/Actions/`
+- ❌ `Application/`: Must move to `app/Application/`
+- ❌ `Database/` (capitalized): Rename to lowercase `database/`
+- ❌ `Events/`: Must move to `app/Events/`
+- ❌ `Listeners/`: Must move to `app/Listeners/`
 
 **Rationale:** Laravel PSR-4 autoloading expects all application code within `app/`. Root-level folders break namespace resolution and violate consistency standards.
 

@@ -13,21 +13,19 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Contracts\UserNotificationsContract;
+use Modules\User\Models\Traits\BaseUserMutators;
+use Modules\User\Models\Traits\BaseUserRelations;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -36,7 +34,6 @@ use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits as XotTraits;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
@@ -132,20 +129,23 @@ use Spatie\Permission\Models\Permission;
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
+    use BaseUserMutators, BaseUserRelations, HasSpatiePermission, HasTeams, Notifiable, HasAuthenticationLogTrait {
+        HasSpatiePermission::teams insteadof HasTeams;
+        HasTeams::teams as membershipTeams;
+        BaseUserRelations::notifications insteadof Notifiable;
+        BaseUserRelations::unreadNotifications insteadof Notifiable;
+        BaseUserRelations::clients insteadof HasApiTokens;
+        BaseUserRelations::latestAuthentication as baseUserRelationsLatestAuthentication;
+        HasAuthenticationLogTrait::latestAuthentication insteadof BaseUserRelations;
+    }
     use HasApiTokens;
-    use HasAuthenticationLogTrait;
     use HasChildren;
     use HasDevices;
     use HasModules;
     use HasSocialite;
-    use HasSpatiePermission, HasTeams {
-        HasSpatiePermission::teams insteadof HasTeams;
-        HasTeams::teams as membershipTeams;
-    }
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
-    use Notifiable;
 
     // use SoftDeletes;
     use Traits\HasTenants;
@@ -269,38 +269,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return HasOne<Model&ProfileContract, Model&static>
-     *
-     * @phpstan-return HasOne<Model&ProfileContract, Model&static>
-     */
-    #[\Override]
-    public function profile(): HasOne
-    {
-        $profileClass = XotData::make()->getProfileClass();
-        if (class_exists($profileClass)) {
-            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
-            $relation = $this->hasOne($profileClass);
-
-            return $relation;
-        }
-
-        // Try direct module class if XotData failed
-        $directClass = 'Modules\User\Models\Profile';
-        if (class_exists($directClass)) {
-            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
-            $relation = $this->hasOne($directClass);
-
-            return $relation;
-        }
-
-        // Fallback: stay on current model if nothing found
-        /** @var HasOne<Model&ProfileContract, Model&static> $relation */
-        $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
-
-        return $relation;
-    }
-
-    /**
      * Verifica se l'utente ha il ruolo di super-admin.
      *
      * @return bool True se l'utente Ã¨ super-admin, altrimenti false
@@ -370,131 +338,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return $this->membershipTeams ?? new Collection;
     }
 
-    /**
-     * Get the entity's notifications.
-     *
-     * @return MorphMany<Notification, $this>
-     */
-    public function notifications(): MorphMany
-    {
-        return $this->morphMany(Notification::class, 'notifiable');
-    }
-
-    /**
-     * Get the entity's unread notifications.
-     *
-     * @return MorphMany<Notification, $this>
-     */
-    public function unreadNotifications(): MorphMany
-    {
-        return $this->notifications()->unread();
-    }
-
-    /**
-     * Get the user's latest authentication log.
-     *
-     * @return MorphOne<AuthenticationLog, $this>
-     */
-    public function latestAuthentication(): MorphOne
-    {
-        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
-    }
-
-    public function getFullNameAttribute(?string $value): string
-    {
-        if ($value !== null) {
-            return $value;
-        }
-
-        $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
-
-        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
-    }
-
-    public function getNameAttribute(?string $value): string
-    {
-        if ($value !== null) {
-            return $value;
-        }
-
-        if ($this->getKey() === null) {
-            return $this->email ?? 'User';
-        }
-
-        $name = Str::of((string) $this->email)->before('@')->toString();
-        $i = 1;
-        $candidate = $name.'-'.$i;
-
-        // During unit tests, avoid any DB interaction.
-        $isTesting = (static function (): bool {
-            $app = app();
-            if (method_exists($app, 'environment') && $app->environment('testing')) {
-                return true;
-            }
-
-            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
-        })();
-        if ($isTesting) {
-            // Do not call update() here to avoid hitting the database.
-            $this->attributes['name'] = $candidate;
-
-            return $candidate;
-        }
-
-        try {
-            $value = $candidate;
-            while (self::firstWhere(['name' => $value]) !== null) {
-                $i++;
-                $value = $name.'-'.$i;
-            }
-            $this->update(['name' => $value]);
-
-            return $value;
-        } catch (\Throwable $e) {
-            // If any issue occurs (e.g., missing connection/table), fall back without DB.
-            $this->attributes['name'] = $candidate;
-
-            return $candidate;
-        }
-    }
-
     // public function authentications(): MorphMany
     // {
     //    return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
     // }
-
-    /**
-     * Check if the user has a specific role.
-     *
-     * NOTE: This method has been moved to trait HasSpatiePermission.
-     * If you need role checking functionality, use the trait method instead.
-     *
-     * @see HasSpatiePermission::hasRole()
-     */
-    public function setPasswordAttribute(?string $value): void
-    {
-        if (empty($value)) {
-            unset($this->attributes['password']);
-
-            return;
-        }
-        if (\strlen($value) < 32) {
-            $this->attributes['password'] = Hash::make($value);
-
-            return;
-        }
-        $this->attributes['password'] = $value;
-    }
-
-    /**
-     * User possiede molti Clients OAuth (per autenticazione API).
-     *
-     * @return MorphMany<OauthClient, $this>
-     */
-    public function clients(): MorphMany
-    {
-        return $this->morphMany(OauthClient::class, 'owner');
-    }
 
     /**
      * Find the user instance for the given username.

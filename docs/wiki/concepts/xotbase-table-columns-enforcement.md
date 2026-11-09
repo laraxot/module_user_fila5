@@ -1,5 +1,5 @@
 ---
-title: "XotBaseResourceTable Columns Enforcement — User Module"
+title: "XotBaseResourceTable Columns Enforcement: User Module"
 type: concept
 sources: []
 confidence: high

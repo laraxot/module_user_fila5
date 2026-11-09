@@ -6,13 +6,13 @@ updated: 2026-10-20
 tags: [docs, user]
 qmd: "second brain module tests docs error user"
 ---
-## Second Brain — Module Tests & Docs Convention
+## Second Brain: Module Tests & Docs Convention
 
 **Concept:** `module-docs-tests-convention`
 
 **Rule:** Ogni modulo ha `tests/` e `docs/` a livello di modulo, mai `laravel/tests/Modules/`.
 
-**Error learned:** Used `laravel/tests/Modules/` path incorrectly — not verified before suggesting. The actual structure is:
+**Error learned:** Used `laravel/tests/Modules/` path incorrectly: not verified before suggesting. The actual structure is:
 
 | Scope | Tests | Docs |
 |-------|-------|------|
