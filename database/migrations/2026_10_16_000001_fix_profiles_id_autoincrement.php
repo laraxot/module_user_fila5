@@ -11,12 +11,18 @@ use Illuminate\Support\Facades\Schema;
  * and the newer one (bigint auto-increment) is skipped because the table already exists.
  * Profile creation at first login then fails. Converts the column only when it is still a
  * string type and the table is empty; otherwise it does nothing.
+ * `MODIFY ... AUTO_INCREMENT` exists only on MySQL/MariaDB: on other drivers (sqlite used by
+ * the test suites and CI) the migration does nothing instead of failing the whole migrate.
  */
 return new class extends Migration {
     public function up(): void
     {
         $connection = $this->connectionName();
         $schema = Schema::connection($connection);
+
+        if (! in_array(DB::connection($connection)->getDriverName(), ['mysql', 'mariadb'], true)) {
+            return;
+        }
 
         if (! $schema->hasTable('profiles')) {
             return;
