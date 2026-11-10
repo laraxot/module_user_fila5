@@ -13,22 +13,32 @@ use Illuminate\Support\Facades\Schema;
  * string type and the table is empty; otherwise it does nothing.
  */
 return new class extends Migration {
-    protected $connection = 'user';
-
     public function up(): void
     {
-        $schema = Schema::connection('user');
+        $connection = $this->connectionName();
+        $schema = Schema::connection($connection);
 
         if (! $schema->hasTable('profiles')) {
             return;
         }
 
         $type = $schema->getColumnType('profiles', 'id');
-        $empty = DB::connection('user')->table('profiles')->count() === 0;
+        $empty = DB::connection($connection)->table('profiles')->count() === 0;
 
         if (in_array($type, ['char', 'varchar', 'string', 'guid', 'uuid'], true) && $empty) {
-            DB::connection('user')->statement('ALTER TABLE profiles MODIFY id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT');
+            DB::connection($connection)->statement('ALTER TABLE profiles MODIFY id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT');
         }
+    }
+
+    private function connectionName(): string
+    {
+        $database = DB::connection('user')->getDatabaseName();
+
+        if (is_string($database) && $database !== '') {
+            return 'user';
+        }
+
+        return (string) config('database.default');
     }
 
     public function down(): void
