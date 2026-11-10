@@ -46,18 +46,3 @@ così da **poter associare gli utenti ai tenant (`$user->tenants()`) e far funzi
   deve mantenere la generazione slug, la validazione UUID e il route binding Filament
   configurato con `slugAttribute: 'slug'`; implementazione in corso, il file model è
   temporaneamente lockato dalla story `user-model-relationships-to-traits`.
-- 2026-11-05 (sera) — Claude: chiusa la regressione lasciata dalla pulizia dei marcatori, che aveva tolto `HasUuids`
-  da `BaseTenant` (AC 1 e 4 tornati aperti). Ripristinato `use HasUuids;` accanto a `use HasSlug;`.
-  **Correzione della premessa:** la "collisione su `resolveRouteBindingQuery`" scritta sopra non c'è nelle versioni
-  installate. `HasSlug` (spatie/laravel-sluggable 4.0.3 in vendor, 4.0.4 nel lock) definisce solo `resolveRouteBinding`;
-  `resolveRouteBindingQuery` sta in `HasUniqueStringIds` (usato da `HasUuids`) e, per Spatie, solo in `HasTranslatableSlug`.
-  Lo stesso vale in tutti e 9 i `vendor` dei progetti `_bases` (laravel 13.33-13.40). Il tentativo con
-  `use HasSlug { HasSlug::resolveRouteBindingQuery as ... }` e il metodo ponte dava invece un fatal in autoload
-  ("An alias was defined for ... but this method does not exist"), quindi alias e override sono stati tolti.
-  **Se una versione futura di Spatie aggiungesse `resolveRouteBindingQuery` a `HasSlug`**, PHP andrebbe in fatal al
-  caricamento della classe: la guardia e' `tests/Unit/Models/BaseTenantKeyTest.php` (primo caso), poi si torna ad
-  alias + ponte come nel commit `bd6a68733`.
-  Verifica: `php -l`, Pint, PHPStan su `BaseTenant`, `Tenant` e sul test: 0 errori. Caricamento della classe e UUID
-  generato provati con `php -r` sul bootstrap reale (uniqueIds `["id"]`, `newUniqueId()` e' un UUID, slug da `name`).
-  **Pest non parte qui** (`DB_USERNAME` vuoto in `.env.testing`: `TestCase` fallisce prima delle asserzioni, vale per
-  tutti i test del modulo); da eseguire dove il DB di test e' configurato. `status` resta `in-progress` per questo motivo.
