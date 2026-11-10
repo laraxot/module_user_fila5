@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * Fresh installs: the oldest profiles migration creates `id` as char(36) without a default,
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Schema;
  * `MODIFY ... AUTO_INCREMENT` exists only on MySQL/MariaDB: on other drivers (sqlite used by
  * the test suites and CI) the migration does nothing instead of failing the whole migrate.
  */
-return new class extends Migration {
+return new class extends Migration
+{
     public function up(): void
     {
         $connection = $this->connectionName();
@@ -44,7 +46,7 @@ return new class extends Migration {
             return 'user';
         }
 
-        return (string) config('database.default');
+        return SafeStringCastAction::cast(config('database.default'));
     }
 
     public function down(): void
