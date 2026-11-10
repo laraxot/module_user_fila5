@@ -27,3 +27,15 @@ dai due chiamanti. Test unitario in `tests/Unit/Actions/Database/IsUserDatabaseC
 
 Se esiste una versione locale non committata della classe, va confrontata con questa e unita con una patch in
 avanti: i chiamanti si aspettano solo `execute(): bool`.
+
+## Aggiornamento 2026-11-10 (pomeriggio): la classe non era mai arrivata nel repo
+
+Il commit `b6607e7af` conteneva solo questa story: `app/Actions/Database/` e `tests/Unit/Actions/Database/`
+erano esclusi dalla regola `Database/` del `.gitignore` del modulo. La regola doveva colpire solo la cartella
+maiuscola nella radice del modulo (story `uppercase-root-dirs-database-application`), ma senza `/` iniziale vale
+a ogni livello. PHPStan: `class.notFound` in `LoginListener` e `RecordAuthenticationLogAction`.
+
+- Regole ancorate alla radice: `/Database/` e `/Application/`.
+- Classe e test ricreati dalla specifica di questa story (`execute(): bool`, legge solo
+  `database.connections.user.database`, nessuna connessione aperta).
+- Verifica: PHPStan senza errori su User; nell'app (tinker) `null`, `''`, `'  '` → false, `'predict_user'` → true.
