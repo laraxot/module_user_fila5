@@ -62,12 +62,14 @@ final class BackfillLoginPulseCommand extends Command
 
         $query = static fn () => $source->table(self::SOURCE_TABLE)
             ->whereNotNull('login_at')
+            ->where('login_successful', true)
             ->where('login_at', '>=', $effectiveSince->toDateTimeString())
             ->where('login_at', '<=', $now->toDateTimeString());
 
         try {
             $requestedCount = $source->table(self::SOURCE_TABLE)
                 ->whereNotNull('login_at')
+                ->where('login_successful', true)
                 ->where('login_at', '>=', $requestedSince->toDateTimeString())
                 ->where('login_at', '<=', $now->toDateTimeString())
                 ->count();
@@ -185,6 +187,7 @@ final class BackfillLoginPulseCommand extends Command
 
             $expected = $source->table(self::SOURCE_TABLE)
                 ->whereNotNull('login_at')
+                ->where('login_successful', true)
                 ->where('login_at', '>=', $since->toDateTimeString())
                 ->where('login_at', '<=', $importEnd->toDateTimeString())
                 ->count();

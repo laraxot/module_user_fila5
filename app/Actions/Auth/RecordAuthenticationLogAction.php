@@ -10,7 +10,6 @@ use Modules\User\Actions\Database\IsUserDatabaseConfiguredAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\UserContract;
 use Modules\User\Models\AuthenticationLog;
-use Modules\User\Models\BaseUser;
 
 /**
  * Persist an authentication_logs row on the User connection (`user` / fixcity_user).
@@ -19,7 +18,7 @@ use Modules\User\Models\BaseUser;
  * a failed/successful login into a 500 (BMAD: audit must not break auth UX).
  *
  * Identity = {@see UserContract}; capability = {@see HasAuthentications}.
- * Never type-hint {@see BaseUser}: that is an internal
+ * Never type-hint the concrete BaseUser: that is an internal
  * abstract implementation, not the consumer boundary.
  */
 final class RecordAuthenticationLogAction
@@ -29,7 +28,7 @@ final class RecordAuthenticationLogAction
      */
     public function execute(UserContract&HasAuthentications $user, array $attributes): void
     {
-        $log = new AuthenticationLog();
+        $log = new AuthenticationLog;
         $connection = $log->getConnectionName() ?? 'user';
         $table = $log->getTable();
 

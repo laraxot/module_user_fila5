@@ -71,12 +71,16 @@ Compila gli assets con il comando seguente:
 npm run build
 ```
 
-### 8. Copia gli Assets Compilati
+### 8. Assets pubblici
 
+<<<<<<< .merge_file_wpbrIj
 Copia gli assets compilati nella directory pubblica:
 
 ```bash
 ```
+=======
+Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
+>>>>>>> .merge_file_JZY5Nq
 
 ## Configurazione
 

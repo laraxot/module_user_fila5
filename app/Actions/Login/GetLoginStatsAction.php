@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Login;
 
 use Carbon\CarbonImmutable;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Cache;
-use InvalidArgumentException;
-use Modules\User\Models\AuthenticationLog;
-use Modules\User\Models\User;
+use Modules\User\Actions\Login\Concerns\ResolvesLoginLogQuery;
 
 final class GetLoginStatsAction
 {
+    use ResolvesLoginLogQuery;
+
     /**
      * Get statistics based on the last login timestamp.
      *
@@ -33,34 +31,9 @@ final class GetLoginStatsAction
      */
     public function execute(): array
     {
-        $modelClass = config(
-            'user.login-monitoring.model',
-            AuthenticationLog::class,
-        );
+        $column = $this->loginLogColumn();
 
-        if (! is_string($modelClass)
-            || ! is_subclass_of($modelClass, Model::class)) {
-            throw new InvalidArgumentException(
-                'Invalid login monitoring model.'
-            );
-        }
-
-        $column = config(
-            'user.login-monitoring.column',
-            'login_at',
-        );
-
-        if (! is_string($column)
-            || ! preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $column)) {
-            throw new InvalidArgumentException(
-                'Invalid login monitoring column.'
-            );
-        }
-
-        $timezone = (string) config(
-            'user.login-monitoring.timezone',
-            'UTC',
-        );
+        $timezone = $this->loginMonitoringTimezone();
 
         $now = CarbonImmutable::now($timezone);
 
@@ -76,18 +49,14 @@ final class GetLoginStatsAction
          * Convert local date boundaries to UTC.
          * Assumes database timestamps are stored in UTC.
          */
-        $utc = static fn (CarbonImmutable $date): string =>
-            $date->utc()->format('Y-m-d H:i:s');
+        $utc = static fn (CarbonImmutable $date): string => $date->utc()->format('Y-m-d H:i:s');
 
         /*
          * Keep Eloquent global scopes, including tenant scopes.
          * Cache is intentionally omitted to avoid cross-tenant
          * leakage and simplify authorization boundaries.
          */
-        $model = new $modelClass();
-
-        $query = $model->newQuery()
-            ->whereNotNull($column);
+        $query = $this->authenticationLogQuery();
 
         $countBetween = static function (
             CarbonImmutable $start,
