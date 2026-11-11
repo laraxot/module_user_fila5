@@ -36,7 +36,7 @@ function digitalIdentityAttributes(array $overrides = []): array
 it('creates a user from SPID with a verified email and a trusted identity', function (): void {
     $user = app(UpsertUserFromDigitalIdentityAction::class)->execute('spid', digitalIdentityAttributes(), emailVerified: true, identityProvider: 'poste');
 
-    $fresh = User::query()->findOrFail($user->getKey());
+    $fresh = User::query()->whereKey($user->getKey())->firstOrFail();
     $raw = $fresh->getAttributes();
     Assert::assertSame('RSSMRA80A01H501U', $raw['fiscal_code']);
     Assert::assertSame('spid', $raw['auth_method']);
@@ -56,11 +56,11 @@ it('uses a placeholder email for CIE without a verified email but still trusts t
         'email' => 'not-verified@example.org',
     ]), emailVerified: false);
 
-    $raw = User::query()->findOrFail($user->getKey())->getAttributes();
+    $raw = User::query()->whereKey($user->getKey())->firstOrFail()->getAttributes();
     Assert::assertSame('cie.vrdlgu75b12f205x@noemail.local', $raw['email']);
     Assert::assertNull($raw['email_verified_at']);
     Assert::assertSame('cie', $raw['identity_provider']);
-    Assert::assertTrue(app(HasVerifiedIdentityAction::class)->execute(User::query()->findOrFail($user->getKey())));
+    Assert::assertTrue(app(HasVerifiedIdentityAction::class)->execute(User::query()->whereKey($user->getKey())->firstOrFail()));
 });
 
 it('finds the same user again by fiscal code instead of creating a duplicate', function (): void {
@@ -69,7 +69,7 @@ it('finds the same user again by fiscal code instead of creating a duplicate', f
 
     Assert::assertSame($first->getKey(), $second->getKey());
     Assert::assertSame(1, User::query()->where('fiscal_code', 'RSSMRA80A01H501U')->count());
-    Assert::assertSame('cie', User::query()->findOrFail($first->getKey())->getAttributes()['auth_method']);
+    Assert::assertSame('cie', User::query()->whereKey($first->getKey())->firstOrFail()->getAttributes()['auth_method']);
 });
 
 it('links an existing email account when the identity provider verifies the same email', function (): void {
@@ -78,7 +78,7 @@ it('links an existing email account when the identity provider verifies the same
     $user = app(UpsertUserFromDigitalIdentityAction::class)->execute('spid', digitalIdentityAttributes(), emailVerified: true);
 
     Assert::assertSame($existing->getKey(), $user->getKey());
-    $raw = User::query()->findOrFail($existing->getKey())->getAttributes();
+    $raw = User::query()->whereKey($existing->getKey())->firstOrFail()->getAttributes();
     Assert::assertSame('RSSMRA80A01H501U', $raw['fiscal_code']);
     Assert::assertNotNull($raw['email_verified_at']);
 });
