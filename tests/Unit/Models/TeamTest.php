@@ -6,7 +6,7 @@ namespace Modules\User\Tests\Unit\Models;
 
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(\Modules\User\Tests\TestCase::class);
 

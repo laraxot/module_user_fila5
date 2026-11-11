@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
