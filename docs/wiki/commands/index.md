@@ -48,4 +48,4 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 
 ## Console User (2026-06-10)
 
-- [user-super-admin.md](user-super-admin.md) — `--email`, argomento, interattivo; no Prompts WSL
+- [user-super-admin.md](user-super-admin.md): `--email`, argomento, interattivo; no Prompts WSL

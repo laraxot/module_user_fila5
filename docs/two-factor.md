@@ -1,9 +1,6 @@
 ---
 module: theme
 topic: two-factor
-canonical: ../../../Themes/docs/shared-components/two-factor-2.md
-related:
-  - "./00-index.md"
 canonical: ../../../Themes/docs/shared-components/two-factor-documentation-themes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"

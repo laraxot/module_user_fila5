@@ -1,12 +1,12 @@
 ---
-title: "BMAD + Second Brain — Fix Log"
+title: "BMAD + Second Brain: Fix Log"
 type: note
 status: draft
 updated: 2026-10-18
 tags: [docs, user]
 qmd: "bmad + second brain   fix log user"
 ---
-# BMAD + Second Brain — Fix Log
+# BMAD + Second Brain: Fix Log
 
 ## Diagnosi
 - `main_module=''` → `XotData::getProfileClass()` falliva (`InvalidArgumentException`)
@@ -26,7 +26,7 @@ qmd: "bmad + second brain   fix log user"
 - `Modules/User/docs/` → SSoT contratti
 - `demo/` e `docs/` nei moduli: rifattorizzazione con `UserContract`
 
-## Fix applicati (SSoT) — 2026-10-18
+## Fix applicati (SSoT): 2026-10-18
 - Listener (`FailedLoginListener`, `LoginListener`, `LogoutListener`) + Widget (`NotificationsCenterWidget`): `instanceof BaseUser` → `instanceof UserContract` per rispettare il contratto (non la classe astratta).
 - `Modules/User/docs/bmad/authentication-logs-connection-ownership.md`: documentata proprietà `authentication_logs` su DB `fixcity_user`.
 - Traduzioni: aggiunte chiavi `auth.php` (`actions.login.success/error/throttle`, `create_account`).
@@ -36,7 +36,7 @@ qmd: "bmad + second brain   fix log user"
 - Verificare tabella `authentication_logs` in `fixcity_user` (`migrate --database=user`).
 - Verificare `phpstan analyse Modules` con baseline/alias corretto
 
-## Regola URL localizzati — 2026-10-18
+## Regola URL localizzati: 2026-10-18
 
 `LaravelLocalization::getLocalizedURL()` ha firma
 `getLocalizedURL($locale, $url, ...)`: il primo argomento non è l'URL.
@@ -44,7 +44,7 @@ Per localizzare il percorso corrente usare `localizeURL($url)`; in alternativa
 passare sempre esplicitamente locale e URL. Questo evita che `/it` venga
 interpretato come locale e causi `UnsupportedLocaleException`.
 
-## Regola login i18n — 2026-10-18
+## Regola login i18n: 2026-10-18
 
 La pagina `/it/auth/login` usa sia la vista Sixteen sia `LoginWidget`: il
 contratto runtime è `user::auth.login.*` con valore finale `.text`.
@@ -58,13 +58,13 @@ supportate, `login.google.button.text`, success/error e i nodi `.text` della
 vista. Non usare fallback italiani o il nome della chiave come testo UI.
 Accessibilità link: `pub_theme::accessibility.title.text` (non stringa piatta).
 
-## Protocollo second brain — potenza massima
+## Protocollo second brain: potenza massima
 
 Prima di codice: Hindsight search + leggere `docs/bmad/` + `second-brain` del
 modulo/tema owner + Filament blueprint. Dopo il fix: aggiornare decision-log e
 second brain nello stesso turno. Mai “fix cieco” dal solo stack trace.
 
-## Regola contratti utente — 2026-10-18
+## Regola contratti utente: 2026-10-18
 
 Un consumer non deve riconoscere l'utente con `instanceof BaseUser`: la classe
 è astratta e rappresenta un'implementazione interna. Il controllo corretto è
@@ -76,13 +76,13 @@ e nella decisione del tema Sixteen.
 ### Applicazione Auth audit (stesso turno)
 
 - `RecordAuthenticationLogAction::execute(UserContract&HasAuthentications $user, …)`
-  — non più `BaseUser $user`.
+ : non più `BaseUser $user`.
 - `LoginListener` / `FailedLoginListener` / `OtherDeviceLogoutListener`:
   doppio guard `UserContract` + `HasAuthentications` (e `Model` dove serve morph).
 - Guardrail: `RecordAuthenticationLogActionTest` asserisce assenza di
   `BaseUser $user` / `instanceof BaseUser` nei listener login.
 
-## Campagna PHPStan — Pest Internal error (2026-10-18)
+## Campagna PHPStan: Pest Internal error (2026-10-18)
 
 Famiglia condivisa Geo/Cms/Notify/User: `HigherOrderExpectationTypeExtension`
 può abortire l'analisi intero modulo. Fix nei test (`PHPUnit\Framework\Assert`
@@ -91,7 +91,7 @@ nei BusinessLogic), **mai** `excludePaths` su `tests/`.
 SSoT pattern: [Notify wiki](../../Notify/docs/wiki/memories/phpstan-pest-patterns-modulo-notify.md).
 Confine utente (stesso ciclo BMAD): [`usercontract-boundary.md`](wiki/concepts/usercontract-boundary.md).
 
-## Autorizzazione Spatie e confine `fixcity_user` — 2026-10-18
+## Autorizzazione Spatie e confine `fixcity_user`: 2026-10-18
 
 `permissions`, `roles`, `model_has_permission`, `model_has_role` e
 `role_has_permission` sono dati di identità/autorizzazione. Appartengono al
@@ -120,7 +120,7 @@ Verifica minima:
 php artisan tinker --execute='foreach (["permissions", "roles", "model_has_permission", "model_has_role", "role_has_permission"] as $table) echo $table."=".(Schema::connection("user")->hasTable($table) ? "ok" : "missing").PHP_EOL;'
 ```
 
-## Fix permissions ownership — 2026-10-18
+## Fix permissions ownership: 2026-10-18
 
 - Sintomo: `Table 'fixcity_data.permissions' doesn't exist` su `/it/tickets/1`.
 - Canonico: [bmad/permissions-connection-ownership.md](bmad/permissions-connection-ownership.md).

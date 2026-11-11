@@ -6,7 +6,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\User\Actions\Auth\ConsumeAuthSubmissionSlotAction;
+use Modules\User\Enums\AuthThrottleScope;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -40,6 +42,16 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
      */
     public function sendResetLink(): void
     {
+        // Freno per IP e per email PRIMA di validare e di scrivere (SEC-012): il broker limita solo per account, ogni 60 s.
+        // Il blocco non dipende dall'esistenza dell'account, quindi non rivela nulla.
+        $typed = is_array($this->data) && is_string($this->data['email'] ?? null) ? $this->data['email'] : '';
+        $secondsToWait = app(ConsumeAuthSubmissionSlotAction::class)->execute(AuthThrottleScope::ForgotPassword, $typed, request()->ip());
+        if ($secondsToWait > 0) {
+            $this->addError('data.email', __('user::throttle.auth_form.retry.message', ['seconds' => $secondsToWait]));
+
+            return;
+        }
+
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
         $email = is_string($data['email'] ?? null) ? $data['email'] : '';

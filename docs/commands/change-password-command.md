@@ -21,7 +21,8 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
-status: draft
+status: superseded
+superseded_by: ../console-commands/change-password-command.md
 ---
 
 # ChangePasswordCommand
@@ -389,5 +390,3 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Interfaccia Console**: Input interattivo
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
-
-

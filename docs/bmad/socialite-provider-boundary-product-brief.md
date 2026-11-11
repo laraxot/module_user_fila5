@@ -1,5 +1,5 @@
 ---
-title: "Socialite provider boundary — product brief"
+title: "Socialite provider boundary: product brief"
 type: product-brief
 module: User
 status: done
@@ -13,7 +13,7 @@ tags: [docs, user, bmad]
 qmd: "socialite provider boundary   product brief user"
 ---
 
-# Socialite provider boundary — product brief
+# Socialite provider boundary: product brief
 
 ## Problema
 

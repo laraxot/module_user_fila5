@@ -1,5 +1,5 @@
 ---
-title: "AI harness — modulo User"
+title: "AI harness: modulo User"
 type: concept
 module: User
 tags: [user, ai, harness, auth, filament, religion-r1]
@@ -20,7 +20,7 @@ related:
 status: draft
 ---
 
-# AI harness — User
+# AI harness: User
 
 Estensione di [ai-harness-module-discipline](../../../../docs/wiki/concepts/ai-harness-module-discipline.md).
 

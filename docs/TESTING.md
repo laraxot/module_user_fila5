@@ -1,5 +1,5 @@
 ---
-title: "User — alias TESTING (UPPERCASE)"
+title: "User: alias TESTING (UPPERCASE)"
 type: alias
 module: User
 status: superseded
@@ -12,6 +12,6 @@ tags: [docs, user]
 
 <!-- gateguard: convert existing UPPERCASE TESTING.md to stub. Body in testing-harness.md. Linked from 00-INDEX + phpstan-user-* stories. Why stub: lowercase naming except README. User: "Fix UPPERCASE md except README in those trees if easy" -->
 
-# Alias — TESTING User
+# Alias: TESTING User
 
-Canonico harness: [testing-harness.md](./testing-harness.md) (`Modules\User\Tests\TestCase` FQCN). Regole Pest: [testing.md](./testing.md). Indice: [00-INDEX.md](./00-INDEX.md).
+Canonico harness: [testing-harness.md](./testing-harness.md) (`Modules\User\Tests\TestCase` FQCN). Regole Pest: [testing.md](./testing.md). Indice: [00-INDEX.md](./00-index.md).

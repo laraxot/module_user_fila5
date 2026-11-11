@@ -1,5 +1,5 @@
 ---
-title: "quality — Consolidated Documentation"
+title: "quality: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "quality   consolidated documentation user"
 ---
 
-# quality — Consolidated Documentation
+# quality: Consolidated Documentation
 
 Consolidated from **10** individual files.
 
@@ -799,12 +799,12 @@ $user_class = XotData::make()->getUserClass();
 
 ## Collegamenti
 
-- [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
+- [XotBaseResource getPages() Automatic](../../xotbase-resource-getpages-automatic.md)
+- [Resources Array Keys Philosophy](../../resources-array-keys-philosophy.md)
 - [Resources Corrections Summary](./resources-corrections-summary-[date].md)
 - [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections-[date].md)
-- [Quality Tools Report](./quality-tools-report.md)
-- [PHPStan Complete Success](./phpstan-complete-success.md)
+- [Quality Tools Report](../../quality-tools-report.md)
+- [PHPStan Complete Success](../../phpstan-complete-success.md)
 
 ---
 

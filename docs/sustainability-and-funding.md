@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità e inbound marketing — User"
+title: "Sostenibilità e inbound marketing: User"
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15

@@ -77,7 +77,7 @@ test('password data has correct properties', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $properties = $reflection->getProperties();
 
-    $propertyNames = array_map(fn($prop) => $prop->getName(), $properties);
+    $propertyNames = array_map(fn (ReflectionProperty $prop) => $prop->getName(), $properties);
 
     expect($propertyNames)->toContain('otp_expiration_minutes');
     expect($propertyNames)->toContain('otp_length');

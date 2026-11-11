@@ -1,5 +1,5 @@
 ---
-title: "UserContract — hasPermissionToOrCreate"
+title: "UserContract: hasPermissionToOrCreate"
 module: User / Predict
 type: concept
 status: resolved
@@ -12,7 +12,7 @@ updated: 2026-10-08
 qmd: "haspermissiontoorcreate   implementazione user"
 ---
 
-# hasPermissionToOrCreate — implementazione
+# hasPermissionToOrCreate: implementazione
 
 Metodo richiesto da `Modules\Xot\Contracts\UserContract::hasPermissionToOrCreate()`. Se il permesso non esiste in DB viene creato al volo via `Permission::firstOrCreate()` invece di esplodere `PermissionDoesNotExist`.
 

@@ -52,7 +52,8 @@ test('user can be updated', function (): void {
     $this->user->refresh();
 
     expect($this->user->email)->toBe('updated@example.com');
-    expect($this->user->type)->toBe(UserType::BoUser);
+    // 'type' e' la colonna figlio di Parental (childTypes, include anche waiter_user): resta stringa, nessun cast enum.
+    expect($this->user->type)->toBe(UserType::BoUser->value);
 });
 
 test('user can be deleted', function (): void {

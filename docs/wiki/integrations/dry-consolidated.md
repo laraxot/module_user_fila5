@@ -1,5 +1,5 @@
 ---
-title: "dry — Consolidated Documentation"
+title: "dry: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "dry   consolidated documentation user"
 ---
 
-# dry — Consolidated Documentation
+# dry: Consolidated Documentation
 
 Consolidated from **13** individual files.
 
@@ -170,7 +170,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-[date].md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -323,7 +323,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -477,7 +477,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -630,7 +630,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -669,7 +669,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [dry-kiss-analysis-4.md](dry-kiss-analysis.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [dry-kiss-analysis-4.md](../../dry-kiss-analysis.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -818,7 +818,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -867,7 +867,7 @@ related:
 
 ## 📊 Situazione Attuale
 
-L'analisi del 2025-10-15 (vedi [dry-kiss-analysis.md](./dry-kiss-analysis.md)) è ancora valida e i problemi evidenziati persistono.
+L'analisi del 2025-10-15 (vedi [dry-kiss-analysis.md](../../dry-kiss-analysis.md)) è ancora valida e i problemi evidenziati persistono.
 
 ### Punti Critici Confermati:
 1.  **Numero eccessivo di Models (89)**: Necessaria suddivisione in namespace o moduli separati (OAuth, Device).
@@ -919,7 +919,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [dry-kiss-analysis-.deprecated.md](../../dry-kiss-analysis-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -1068,7 +1068,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ## 🔗 Collegamenti
 
-- [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
+- [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [Base Classes Hierarchy](../../models/base-classes-hierarchy.md)
@@ -1502,7 +1502,7 @@ related:
 
 ## 📊 Situazione Attuale
 
-L'analisi del [DATE] (vedi [dry-kiss-analysis.md](./dry-kiss-analysis.md)) è ancora valida e i problemi evidenziati persistono.
+L'analisi del [DATE] (vedi [dry-kiss-analysis.md](../../dry-kiss-analysis.md)) è ancora valida e i problemi evidenziati persistono.
 
 ### Punti Critici Confermati:
 1.  **Numero eccessivo di Models (89)**: Necessaria suddivisione in namespace o moduli separati (OAuth, Device).

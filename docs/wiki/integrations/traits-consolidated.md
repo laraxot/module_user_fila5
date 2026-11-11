@@ -1,5 +1,5 @@
 ---
-title: "traits — Consolidated Documentation"
+title: "traits: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "traits   consolidated documentation user"
 ---
 
-# traits — Consolidated Documentation
+# traits: Consolidated Documentation
 
 Consolidated from **10** individual files.
 
@@ -607,7 +607,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
-- [Modules/User/docs/traits.md](traits.md)  
+- [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes-8.md)
 - [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes.md](../../../docs/phpstan-fixes.md)
@@ -615,7 +615,7 @@ trait HasTeams
 
 *Ultimo aggiornamento: gennaio 2025* 
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
-- [Modules/User/docs/traits.md](traits.md)  
+- [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md)
 - [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes.md](../../phpstan-fixes.md)
@@ -1201,7 +1201,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
-- [Modules/User/project_docs/traits.md](traits.md)
+- [Modules/User/project_docs/traits.md](../../traits.md)
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
 - [Modules/User/project_docs/traits.md](../../traits.md)
 - [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
@@ -1763,7 +1763,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
-- [Modules/User/project_docs/traits.md](traits.md)  
+- [Modules/User/project_docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
 - [Modules/User/project_docs/traits.md](../../traits.md)  
 - [docs/phpstan-fixes.md](../../../../docs/project/phpstan-fixes.md)
@@ -1891,8 +1891,8 @@ class User extends Authenticatable
 
 ## Collegamenti
 
-- [Modulo User](./README.md)
-- [Xot Traits](../../Xot/docs/)
+- [Modulo User](./readme.md)
+- [Xot Traits](../../../../Xot/docs)
 - [Modulo User](./readme.md)
 - [Xot Traits](../../../../Xot/docs)
 
@@ -2851,7 +2851,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
-- [Modules/User/docs/traits.md](traits.md)  
+- [Modules/User/docs/traits.md](../../traits.md)  
 - [Modules/User/docs/traits.md](../../traits.md)  
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)

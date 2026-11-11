@@ -9,7 +9,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\User\Actions\Auth\ConsumeAuthSubmissionSlotAction;
+use Modules\User\Enums\AuthThrottleScope;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -64,6 +66,16 @@ class RegisterWidget extends XotBaseSchemaWidget
 
     public function submit(): void
     {
+        // Freno per IP e per email PRIMA di validare (SEC-012): senza, la registrazione crea utenti all'infinito e la regola
+        // `unique` sull'email diventa una query per ogni invio.
+        $typed = is_array($this->data) && is_string($this->data['email'] ?? null) ? $this->data['email'] : '';
+        $secondsToWait = app(ConsumeAuthSubmissionSlotAction::class)->execute(AuthThrottleScope::Register, $typed, request()->ip());
+        if ($secondsToWait > 0) {
+            $this->addError('data.email', __('user::throttle.auth_form.retry.message', ['seconds' => $secondsToWait]));
+
+            return;
+        }
+
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 

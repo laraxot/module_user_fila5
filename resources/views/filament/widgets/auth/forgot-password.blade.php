@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 ?>
+@push('head')
+    {{-- Widget Filament in FO: @filamentStyles non copre le pagine pubbliche
+         (nessun panel attivo), quindi il CSS Filament va linkato qui.
+         Il widget si auto-provisiona: dove viene montato, gli asset ci sono. --}}
+    <link rel="stylesheet" href="{{ asset('css/filament/filament/app.css') }}">
+@endpush
+
 <div class="space-y-6">
     <div class="text-center">
         <h2 class="text-2xl font-bold tracking-tight">
@@ -17,7 +24,7 @@ declare(strict_types=1);
 
         <div class="flex items-center justify-between">
             <div class="text-sm">
-                <a href="{{ route('login') }}" class="font-medium text-primary-600 hover:text-primary-500">
+                <a href="{{ route('login') }}" class="font-medium text-primary-700 hover:text-primary-800">
                     {{ __('user::auth.forgot-password.back_to_login') }}
                 </a>
             </div>

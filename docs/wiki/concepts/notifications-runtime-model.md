@@ -1,5 +1,5 @@
 ---
-title: "notifications — modello runtime User"
+title: "notifications: modello runtime User"
 type: concept
 tags: [user, notifications, database-notification, notification-schema]
 created: 2026-06-10
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# notifications — modello runtime User
+# notifications: modello runtime User
 
 ## Ruolo
 
@@ -40,11 +40,11 @@ status: draft
 
 `Modules\User\Support\NotificationSchema::isReadable()` verifica `Schema::connection(...)->hasTable('notifications')` prima di query nel header.
 
-Usare quando il DB legacy potrebbe non aver ancora migrato — evita 500 su `unreadNotifications()->count()`.
+Usare quando il DB legacy potrebbe non aver ancora migrato: evita 500 su `unreadNotifications()->count()`.
 
 ## Pagina Folio
 
-[notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`, non `area-personale.notifiche`.
+[notifications-folio-page.md](notifications-folio-page.md): `route('notifications')`, non `area-personale.notifiche`.
 
 ## Collegamenti
 

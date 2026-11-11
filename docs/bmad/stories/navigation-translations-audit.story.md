@@ -1,5 +1,5 @@
 ---
-title: "Audit traduzioni .navigation — modulo User"
+title: "Audit traduzioni .navigation: modulo User"
 type: story
 module: User
 epic: quality
@@ -18,7 +18,7 @@ tags: [docs, user, bmad]
 qmd: "audit traduzioni `.navigation`   modulo user user"
 ---
 
-# Audit traduzioni `.navigation` — modulo User
+# Audit traduzioni `.navigation`: modulo User
 
 Task utente 2026-09-29: trovare tutti i file di traduzione con la sottostringa
 `.navigation` o una chiave `'navigation'`, completare/migliorare per ogni
@@ -53,4 +53,4 @@ lingue del modulo non hanno `auth.php`: non creato (niente file fantasma).
 
 Confermato: `qmd://concepts/translation-discipline-rule.md`. Pattern nuovo
 scoperto (falso positivo euristica case-insensitive su valori Title Case) da
-consolidare in una memoria Xot condivisa — vedi sintesi cross-modulo §6.
+consolidare in una memoria Xot condivisa: vedi sintesi cross-modulo §6.

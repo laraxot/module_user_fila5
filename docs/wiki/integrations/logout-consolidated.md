@@ -1,5 +1,5 @@
 ---
-title: "logout — Consolidated Documentation"
+title: "logout: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "logout   consolidated documentation user"
 ---
 
-# logout — Consolidated Documentation
+# logout: Consolidated Documentation
 
 Consolidated from **42** individual files.
 
@@ -344,7 +344,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -888,7 +888,7 @@ related:
 - [Logout Blade Implementation](./logout-blade-implementation.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Volt Folio Logout](../../volt-folio-logout-panoramica.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](../../logout-blade-implementation-posizione-corretta.md)
@@ -2244,7 +2244,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -3358,7 +3358,7 @@ $logout = function () {
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
@@ -3807,7 +3807,7 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
@@ -3904,7 +3904,7 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
@@ -4259,7 +4259,7 @@ Questi errori evidenziano l'importanza di:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)
@@ -4884,7 +4884,7 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
@@ -5209,7 +5209,7 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)

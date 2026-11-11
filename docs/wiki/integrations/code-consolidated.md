@@ -1,5 +1,5 @@
 ---
-title: "code — Consolidated Documentation"
+title: "code: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "code   consolidated documentation user"
 ---
 
-# code — Consolidated Documentation
+# code: Consolidated Documentation
 
 Consolidated from **14** individual files.
 
@@ -782,7 +782,7 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 
@@ -1121,7 +1121,7 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 
@@ -1462,7 +1462,7 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 ---
@@ -1802,7 +1802,7 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 ---
@@ -2371,7 +2371,7 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](../../performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 
@@ -2867,7 +2867,7 @@ public function getTableColumns(): array
 
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
 - [optimization-analysis.md](./optimization-analysis.md)
-- [phpstan-compliance.md](./phpstan-compliance.md)
+- [phpstan-compliance.md](../../phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 
@@ -2939,9 +2939,9 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 - [architecture](./architecture.md)
 - [index](./index.md)
-- [module](./module.md)
+- [module](../../module.md)
 - [philosophy](./philosophy.md)
-- [README](./README.md)
+- [README](./readme.md)
 - [module](../../module.md)
 - [philosophy](./philosophy.md)
 - [README](./readme.md)

@@ -1,9 +1,6 @@
 ---
 module: theme
 topic: logout-implementation
-canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
-related:
-  - "./00-index.md"
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error-analisi-dell.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"

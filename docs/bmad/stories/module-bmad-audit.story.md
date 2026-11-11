@@ -1,6 +1,6 @@
 ---
 id: User/module-bmad-audit-20260928
-title: "User — baseline BMAD e analisi completa"
+title: "User: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: User
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "story   user: baseline bmad user"
 ---
-# Story — User: baseline BMAD
+# Story: User: baseline BMAD
 
 Come manutentore del modulo User, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

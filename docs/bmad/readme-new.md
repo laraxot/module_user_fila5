@@ -8,7 +8,7 @@ qmd: "readme-new user module - authentication & authorization"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "../00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "../2fa-guide.md"
   - "./2fa.md"
@@ -969,7 +969,7 @@ test('user can switch teams', function () {
 
 ### Troubleshooting
 - [Common Issues](./troubleshooting/common-issues.md) - Frequently encountered problems
-- [Login Component Troubleshooting](./troubleshooting-login-component.md) - Login widget issues
+- [Login Component Troubleshooting](../troubleshooting-login-component.md) - Login widget issues
 - [FAQ](./troubleshooting/faq.md) - Frequently asked questions
 
 ---
@@ -1014,8 +1014,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Internal Modules
 - [Xot Module](../../../Xot/docs/README.md) - Core foundation
-- [Activity Module](../../../Activity/docs/readme.md) - Activity tracking
-- [Lang Module](../../../Lang/docs/readme.md) - Translations
+- [Activity Module](../../../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../../../Lang/docs/README.md) - Translations
 - [Tenant Module](../../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation

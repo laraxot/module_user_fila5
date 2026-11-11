@@ -1,5 +1,5 @@
 ---
-title: "PHPStan Status — User Module"
+title: "PHPStan Status: User Module"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -10,7 +10,7 @@ status: superseded
 superseded_by: phpstan-status.md
 ---
 
-# PHPStan Status — User Module
+# PHPStan Status: User Module
 
 ## Latest Analysis
 

@@ -1,5 +1,5 @@
 ---
-title: "Quality Report — User"
+title: "Quality Report: User"
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: User
@@ -9,7 +9,7 @@ qmd: "User quality report phpstan pest coverage test ratio"
 status: draft
 ---
 
-# Quality Report — User
+# Quality Report: User
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh User`
 

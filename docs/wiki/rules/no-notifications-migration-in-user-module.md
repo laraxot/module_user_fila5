@@ -52,7 +52,7 @@ Contratto: [notifications-database-contract](../../../../Notify/docs/wiki/concep
 ## Se manca tabella su `fixcity_user`
 
 1. Edit file owner **Notify** + bump timestamp nel nome
-2. `cd laravel && php artisan migrate` — mai `--force`
+2. `cd laravel && php artisan migrate`: mai `--force`
 
 ## Collegamenti
 

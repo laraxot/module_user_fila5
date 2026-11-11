@@ -1,26 +1,26 @@
 ---
-title: "BMAD — Module Tests & Docs Directory Convention"
+title: "BMAD: Module Tests & Docs Directory Convention"
 type: bmad-fix
 theme: laravel-modules
 tags: [bmad, second-brain, module-structure, tests, docs, filament-blueprint]
 status: completed
 related:
-  - ../docs/second-brain-module-tests-docs-error.md
+  - ../second-brain-module-tests-docs-error.md
 updated: 2026-10-20
 qmd: "bmad   correzione percorso test/docs nei moduli user"
 ---
 
-# BMAD — Correzione percorso test/docs nei moduli
+# BMAD: Correzione percorso test/docs nei moduli
 
 ## Errore riconosciuto
 
 Il percorso `laravel/tests/Modules/` è **sbagliato**. La convenzione del progetto è:
 
-- `laravel/Modules/{ModuleName}/tests/` — test di ciascun modulo
-- `laravel/Modules/{ModuleName}/docs/` — documentazione di ciascun modulo
-- `laravel/Themes/Sixteen/docs/` — documentazione della tema
-- `laravel/Themes/Sixteen/tests/` — test della tema
-- `laravel/Modules/docs/` — documentazione di gruppo (opzionale, radice)
+- `laravel/Modules/{ModuleName}/tests/`: test di ciascun modulo
+- `laravel/Modules/{ModuleName}/docs/`: documentazione di ciascun modulo
+- `laravel/Themes/Sixteen/docs/`: documentazione della tema
+- `laravel/Themes/Sixteen/tests/`: test della tema
+- `laravel/Modules/docs/`: documentazione di gruppo (opzionale, radice)
 
 ## Perché l'errore è accaduto
 
@@ -40,4 +40,4 @@ Non ho verificato la struttura directory prima di impostare `phpstan.neon` (che 
 - Ogni componente `components/blocks/*` resta data-driven
 - `docs/` nel modulo documenta il contratto e le decisioni architetturali
 - `tests/` nel modulo contiene solo test relativi al modulo
-- Nessun percorso centralizzato `tests/Modules/` — mantiene separazione dei moduli
+- Nessun percorso centralizzato `tests/Modules/`: mantiene separazione dei moduli

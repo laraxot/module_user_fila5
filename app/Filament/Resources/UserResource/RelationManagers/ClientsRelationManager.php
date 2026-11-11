@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 use Filament\Actions\Action;
-use Filament\Actions\DetachAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -15,6 +14,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as AuthUser;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -46,7 +46,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         return [
             'name' => TextColumn::make('name')
                 ->label('Nome'),
-            'id' => TextColumn::make('id')
+            'id' => IDColumn::make('id')
                 ->label('Client ID')
                 ->copyable()
                 ->copyMessage('Client ID copiato')
@@ -122,6 +122,9 @@ class ClientsRelationManager extends XotBaseRelationManager
                     return;
                 }
 
+                // Passport 13 riconosce il proprietario da owner_id/owner_type (MorphTo `owner`):
+                // solo user_id lasciava il client fuori da `clients()` (issue #97).
+                $client->owner()->associate($owner);
                 $client->forceFill([
                     'user_id' => $owner->getKey(),
                 ]);
@@ -159,8 +162,13 @@ class ClientsRelationManager extends XotBaseRelationManager
 
                     return $me->canEdit($record);
                 }),
-            'detach' => DetachAction::make()
+            // `clients()` e' una MorphMany: DetachAction chiamerebbe detach(), che esiste solo su
+            // BelongsToMany (BadMethodCallException). Si dissocia azzerando owner e user_id (issue #97).
+            'dissociateClient' => Action::make('dissociateClient')
                 ->iconButton()
+                ->icon('heroicon-o-link-slash')
+                ->color('danger')
+                ->requiresConfirmation()
                 ->tooltip(trans('user::user.actions.detach.tooltip'))
                 ->visible(static function (?Model $record) use ($me): bool {
                     if ($record === null) {
@@ -168,6 +176,20 @@ class ClientsRelationManager extends XotBaseRelationManager
                     }
 
                     return $me->canDetach($record);
+                })
+                ->action(static function (Model $record): void {
+                    if (! $record instanceof OauthClient) {
+                        return;
+                    }
+
+                    $record->owner()->dissociate();
+                    $record->forceFill(['user_id' => null]);
+                    $record->save();
+
+                    Notification::make()
+                        ->title('Client scollegato dall\'utente.')
+                        ->success()
+                        ->send();
                 }),
         ];
     }

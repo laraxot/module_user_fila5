@@ -1,5 +1,5 @@
 ---
-title: "Socialite provider boundary — decision log"
+title: "Socialite provider boundary: decision log"
 type: decision-log
 module: User
 status: accepted
@@ -14,7 +14,7 @@ tags: [docs, user, bmad]
 qmd: "socialite provider boundary   decision log user"
 ---
 
-# Socialite provider boundary — decision log
+# Socialite provider boundary: decision log
 
 ## [2026-10-05] Socialite config belongs to SocialiteServiceProvider
 

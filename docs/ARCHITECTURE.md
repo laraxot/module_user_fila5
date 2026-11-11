@@ -9,7 +9,7 @@ status: superseded
 superseded_by: wiki/integrations/architecture.md
 ---
 
-# User Module — Architecture
+# User Module: Architecture
 
 ## System Boundary
 
@@ -40,10 +40,10 @@ app/Models/
 ```
 
 **Relazioni Critiche:**
-- `User` → `HasMany(Team)` — gestione team multipli
-- `User` → `BelongsToMany(Role)` — via `model_has_role`
-- `User` → `BelongsToMany(Tenant)` — isolamento multi-tenant
-- `Team` → `HasMany(User)` — team members
+- `User` → `HasMany(Team)`: gestione team multipli
+- `User` → `BelongsToMany(Role)`: via `model_has_role`
+- `User` → `BelongsToMany(Tenant)`: isolamento multi-tenant
+- `Team` → `HasMany(User)`: team members
 
 ### Layer 2: Actions (Reusable Business Logic)
 ```

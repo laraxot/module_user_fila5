@@ -1,5 +1,5 @@
 ---
-title: "User — brainstorming BMAD"
+title: "User: brainstorming BMAD"
 type: brainstorming
 status: active
 module: User
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "User brainstorming rischi opportunità domande aperte"
 tags: [docs, user, bmad]
 ---
-# User — brainstorming
+# User: brainstorming
 
 ## Punto di partenza
 

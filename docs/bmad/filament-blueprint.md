@@ -1,5 +1,5 @@
 ---
-title: "Filament Blueprint — User"
+title: "Filament Blueprint: User"
 type: filament-blueprint
 status: active
 module: User
@@ -19,7 +19,7 @@ i confini di dominio.
 
 ## Regole non negoziabili
 
-1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot — mai classi Filament dirette.
+1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot: mai classi Filament dirette.
 2. Nessun `->label()` hardcoded: chiavi in `lang/<locale>/` del modulo.
 3. Business logic nelle Actions del modulo, non nei form hooks grassi.
 4. FO: widget montati esplicitamente; non abusare `discoverWidgets` per chrome.
@@ -47,6 +47,9 @@ Un campo non nasce da una migration `*_column`.
 La colonna `users.type` è il discriminante Parental dichiarato in `UserData`.
 In tabella si mostra con la chiave di traduzione del modulo, non con una label
 nel form. La registrazione del cittadino persiste `customer_user`.
+
+«Ricordami» è `Checkbox::make('remember')` nello stesso schema: il controllo è
+`input.fi-checkbox-input` di Filament, non un checkbox scritto nel tema.
 
 La password del login è `TextInput::password()->revealable()` in
 `Widgets/Auth/Schemas/UserForm::getLoginFormSchema()`. Mostra e nascondi sono
@@ -81,7 +84,7 @@ cross-tenant per comodita admin.
 
 Widget auth/OAuth e Resource User condividono **`laravel/phpstan.neon` solo** (agenti: mai altri `.neon`, ignore o baseline). Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` a **zero** senza conferma.
 
-Prima del fix: leggere questo blueprint (scopo UI) e il contratto del widget/Resource; poi tipizzare alla **sorgente** — **mai zittire** (`@phpstan-ignore`, baseline, exclude).
+Prima del fix: leggere questo blueprint (scopo UI) e il contratto del widget/Resource; poi tipizzare alla **sorgente**: **mai zittire** (`@phpstan-ignore`, baseline, exclude).
 
 Track: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md), [00-start.md](../../../../../bashscripts/docs/prompts/00-start.md#ordine-permanente-dellutente), [11-phpstan.md](../../../../../bashscripts/docs/prompts/11-phpstan.md). Ratchet basi Filament: [NeverExtendFilamentDirectlyTest.php](../../../Xot/tests/Unit/Filament/NeverExtendFilamentDirectlyTest.php). Glob `*Service.php` non confonde Livewire (`TermsOfService.php`). `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md).
 

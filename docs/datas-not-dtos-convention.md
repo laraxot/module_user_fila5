@@ -23,7 +23,7 @@ Vedi `Modules/UI/docs/datas-not-dtos-convention.md` per la regola completa.
 
 `laravel/app/DTOs/UserContextDto.php` (root, non modulare, zero utilizzatori)
 è stato convertito e spostato in `Modules\User\Datas\UserContextData`
-(estende `Spatie\LaravelData\Data`, stesso comportamento — `fromUserModel()`,
+(estende `Spatie\LaravelData\Data`, stesso comportamento: `fromUserModel()`,
 `hasRole()`).
 
 Segue lo stile già presente in `Modules\User\Datas\SuperAdminData` (proprietà

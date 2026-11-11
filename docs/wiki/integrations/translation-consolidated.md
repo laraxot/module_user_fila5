@@ -1,5 +1,5 @@
 ---
-title: "translation — Consolidated Documentation"
+title: "translation: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "translation   consolidated documentation user"
 ---
 
-# translation — Consolidated Documentation
+# translation: Consolidated Documentation
 
 Consolidated from **22** individual files.
 
@@ -662,7 +662,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-3.md](../../translation-city-field-refactor.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -720,7 +720,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](../../translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"

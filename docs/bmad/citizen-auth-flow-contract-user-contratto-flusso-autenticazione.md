@@ -1,5 +1,5 @@
 ---
-title: "User — contratto flusso autenticazione cittadino"
+title: "User: contratto flusso autenticazione cittadino"
 type: bmad-flow-contract
 status: static-audit-complete-runtime-pending
 module: User
