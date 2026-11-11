@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;

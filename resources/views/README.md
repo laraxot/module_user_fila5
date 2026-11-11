@@ -53,7 +53,6 @@ npm run build
 6. Copia gli asset compilati:
 
 ```bash
-npm run copy
 ```
 
 ## Configurazione

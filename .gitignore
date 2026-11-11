@@ -509,3 +509,4 @@ graphify-out/
 docs/graphify
 resources/lang
 .merge_file_*
+audit-coverage/

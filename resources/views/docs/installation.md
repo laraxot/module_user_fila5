@@ -76,7 +76,6 @@ npm run build
 Copia gli assets compilati nella directory pubblica:
 
 ```bash
-npm run copy
 ```
 
 ## Configurazione
