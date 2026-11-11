@@ -15,7 +15,7 @@ beforeEach(function (): void {
 });
 
 /**
- * @param  array{login_at: string, login_successful?: bool}  $overrides
+ * @param  array{login_at?: string, login_successful?: bool}  $overrides
  */
 function insertAuthLoginLog(array $overrides = []): void
 {
@@ -24,7 +24,7 @@ function insertAuthLoginLog(array $overrides = []): void
         'authenticatable_id' => 1,
         'ip_address' => '127.0.0.1',
         'user_agent' => 'pest',
-        'login_at' => $overrides['login_at'],
+        'login_at' => $overrides['login_at'] ?? CarbonImmutable::now('UTC')->toDateTimeString(),
         'login_successful' => $overrides['login_successful'] ?? true,
         'logout_at' => null,
         'cleared_by_user' => false,
@@ -53,7 +53,7 @@ function seriesDiff(array $before, array $after): array
     );
 }
 
-test('day granularity counts only successful logins and zero-fills gaps', function (): void {
+test('day granularity counts every login attempt and zero-fills gaps', function (): void {
     $action = app(GetLoginHistoryAction::class);
     $today = CarbonImmutable::now('UTC')->startOfDay();
     $twoDaysAgo = $today->subDays(2);
@@ -72,7 +72,7 @@ test('day granularity counts only successful logins and zero-fills gaps', functi
 
     $after = $action->execute($twoDaysAgo, 'day');
 
-    expect(seriesDiff($before, $after))->toBe([1, 0, 2]);
+    expect(seriesDiff($before, $after))->toBe([1, 0, 3]);
 });
 
 test('month granularity groups logins by month', function (): void {
@@ -102,11 +102,14 @@ test('null since resolves the oldest login', function (): void {
 
     $index = array_search($old->format('m/Y'), $result['labels'], true);
 
-    expect($index)->not->toBeFalse()
-        ->and($result['data'][$index])->toBeGreaterThanOrEqual(1);
+    if ($index === false) {
+        throw new RuntimeException('Month bucket label not found in history labels.');
+    }
+
+    expect($result['data'][$index])->toBeGreaterThanOrEqual(1);
 });
 
-test('series total matches successful logins in range', function (): void {
+test('series total matches every authentication log row in range', function (): void {
     $since = CarbonImmutable::now('UTC')->subYear();
     $action = app(GetLoginHistoryAction::class);
 
@@ -122,7 +125,6 @@ test('series total matches successful logins in range', function (): void {
 
     $expected = DB::connection('user')->table('authentication_logs')
         ->whereNotNull('login_at')
-        ->where('login_successful', true)
         ->where('login_at', '>=', $since->toDateTimeString())
         ->where('login_at', '<=', CarbonImmutable::now('UTC')->toDateTimeString())
         ->count();

@@ -23,11 +23,11 @@ final class BackfillLoginPulseCommand extends Command
 
     protected $description = 'Ricostruisce la metrica user_login di Pulse da authentication_logs';
 
-    private const TYPE = 'user_login';
-    private const METRIC_KEY = 'all';
-    private const SOURCE_CONNECTION = 'user';
-    private const SOURCE_TABLE = 'authentication_logs';
-    private const PERIODS = [60 => '1 ora', 360 => '6 ore', 1440 => '24 ore', 10080 => '7 giorni'];
+    private const string TYPE = 'user_login';
+    private const string METRIC_KEY = 'all';
+    private const string SOURCE_CONNECTION = 'user';
+    private const string SOURCE_TABLE = 'authentication_logs';
+    private const array PERIODS = [60 => '1 ora', 360 => '6 ore', 1440 => '24 ore', 10080 => '7 giorni'];
 
     public function handle(Storage $storage): int
     {
@@ -44,14 +44,15 @@ final class BackfillLoginPulseCommand extends Command
             return self::FAILURE;
         }
 
-        // Questa implementazione usa lo storage database ufficiale di Pulse.
-        if (! $storage instanceof \Laravel\Pulse\Storage\DatabaseStorage) {
-            $this->error('Storage Pulse personalizzato: verificare compatibilità prima del backfill.');
-            return self::FAILURE;
-        }
-
+        // Lo storage è quello legato al contract Storage: store()/purge()
+        // sono nel contratto, nessun instanceof su classi @internal di Pulse.
         $source = DB::connection(self::SOURCE_CONNECTION);
-        $pulseConnection = config('pulse.storage.database.connection') ?: config('database.default');
+
+        $configuredConnection = config('pulse.storage.database.connection');
+        $defaultConnection = config('database.default');
+        $pulseConnection = is_string($configuredConnection) && $configuredConnection !== ''
+            ? $configuredConnection
+            : (is_string($defaultConnection) ? $defaultConnection : 'mysql');
         $pulseDb = DB::connection($pulseConnection);
 
         // authentication_logs.login_at è assunto in UTC: adeguare se usa un altro fuso.
@@ -62,14 +63,12 @@ final class BackfillLoginPulseCommand extends Command
 
         $query = static fn () => $source->table(self::SOURCE_TABLE)
             ->whereNotNull('login_at')
-            ->where('login_successful', true)
             ->where('login_at', '>=', $effectiveSince->toDateTimeString())
             ->where('login_at', '<=', $now->toDateTimeString());
 
         try {
             $requestedCount = $source->table(self::SOURCE_TABLE)
                 ->whereNotNull('login_at')
-                ->where('login_successful', true)
                 ->where('login_at', '>=', $requestedSince->toDateTimeString())
                 ->where('login_at', '<=', $now->toDateTimeString())
                 ->count();
@@ -123,12 +122,26 @@ final class BackfillLoginPulseCommand extends Command
                     $storage->purge([self::TYPE]);
 
                     $query()->chunkById($chunk, function ($logs) use ($storage, &$processed): void {
-                        $entries = $logs->map(static function ($log): Entry {
-                            $timestamp = CarbonImmutable::parse($log->login_at, 'UTC')->getTimestamp();
-                            return (new Entry($timestamp, self::TYPE, self::METRIC_KEY))
-                                ->count()
-                                ->onlyBuckets();
-                        });
+                        $entries = new \Illuminate\Support\Collection();
+
+                        foreach ($logs as $log) {
+                            $loginAt = $log->login_at ?? null;
+
+                            if (! $loginAt instanceof \DateTimeInterface && ! is_string($loginAt)) {
+                                continue;
+                            }
+
+                            $timestamp = CarbonImmutable::parse($loginAt, 'UTC')->getTimestamp();
+                            $entries->push(
+                                (new Entry($timestamp, self::TYPE, self::METRIC_KEY))
+                                    ->count()
+                                    ->onlyBuckets()
+                            );
+                        }
+
+                        if ($entries->isEmpty()) {
+                            return;
+                        }
 
                         // Chiamata diretta: gli errori dello storage NON vengono silenziati da Pulse::rescue().
                         $storage->store($entries);
@@ -187,7 +200,6 @@ final class BackfillLoginPulseCommand extends Command
 
             $expected = $source->table(self::SOURCE_TABLE)
                 ->whereNotNull('login_at')
-                ->where('login_successful', true)
                 ->where('login_at', '>=', $since->toDateTimeString())
                 ->where('login_at', '<=', $importEnd->toDateTimeString())
                 ->count();

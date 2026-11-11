@@ -7,12 +7,12 @@ namespace Modules\User\Filament\Widgets\Pulse;
 use Carbon\CarbonImmutable;
 use Carbon\CarbonInterval;
 use Filament\Widgets\ChartWidget;
-use Laravel\Pulse\Facades\Pulse;
+use Laravel\Pulse\Contracts\Storage;
 use Modules\User\Actions\Login\GetLoginHistoryAction;
 
 class LoginWidget extends ChartWidget
 {
-    private const PULSE_FILTERS = ['1h', '6h', '24h', '7d'];
+    private const array PULSE_FILTERS = ['1h', '6h', '24h', '7d'];
 
     protected ?string $heading = 'Accessi utenti';
 
@@ -76,24 +76,28 @@ class LoginWidget extends ChartWidget
             default => CarbonInterval::hours(24),
         };
 
-        $graphs = Pulse::graph(
-            ['user_login'],
-            'count',
-            $interval,
+        // Come Pulse::graph(): storage in rescue per non rompere la dashboard.
+        $graphs = rescue(
+            fn () => $this->pulseStorage()
+                ->graph(['user_login'], 'count', $interval),
         );
 
-        $readings = $graphs
-            ->get('all')
+        $readings = $graphs?->get('all')
             ?->get('user_login') ?? collect();
 
         return $this->chartData(
-            $readings->values()->all(),
-            $readings->keys()->all(),
+            array_values($readings->values()->all()),
+            array_values($readings->keys()->all()),
         );
     }
 
+    private function pulseStorage(): Storage
+    {
+        return app(Storage::class);
+    }
+
     /**
-     * @param  list<int|float>  $data
+     * @param  list<int|float|null>  $data
      * @param  list<string>  $labels
      * @return array{datasets: list<array<string, mixed>>, labels: list<string>}
      */

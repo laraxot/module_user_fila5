@@ -5,7 +5,7 @@ module: User
 epic: authentication-observability
 story_id: pulse-login-backfill-key-hash
 slug: pulse-login-backfill-key-hash
-status: in-progress
+status: done
 repository: laraxot/module_user_fila5
 created: 2026-11-11
 updated: 2026-11-11
@@ -84,16 +84,32 @@ restare limitata alla finestra recente.
   La richiesta parla di "tutto AuthenticationLog"; default proposto: mantenerli
   tutti nel grafico storico.
 
-## Fix
+## Fix (implementato)
 
-1. Migration Xot `fix_pulse_key_hash_generated_columns` (mysql/mariadb,
-   guard `hasTable`+driver, no-op altrove): `ALTER TABLE ... MODIFY key_hash
-   binary(16) GENERATED ALWAYS AS (unhex(md5(`key`))) VIRTUAL` su
-   `pulse_entries` e `pulse_aggregates`.
-2. Rieseguire `user:pulse-backfill-logins --days=7 --force` → 0 errori,
-   verifica aggregati OK.
-3. Documentare nel comando/story il cap dei 7 giorni (già presente come warn).
+1. Migration app `database/migrations/2026_11_11_000001_fix_pulse_key_hash_generated_columns.php`
+   (mysql/mariadb, guard `hasTable`/driver, no-op altrove): per
+   `pulse_entries` e `pulse_aggregates` drop indici su `key_hash`, ADD
+   `key_hash_new BINARY(16) GENERATED ALWAYS AS (UNHEX(MD5(`key`))) VIRTUAL`,
+   drop vecchia colonna, RENAME, ricrea indici. `MODIFY` diretto fallisce su
+   MariaDB con errore 1907 (colonna indicizzata): servono statement separati.
+2. `user:pulse-backfill-logins --days=7 --force` → 1 login elaborato, 3
+   aggregati `user_login`; verifica 1h/6h/24h/7g OK.
+3. Call site live: `RecordLoginPulseAction` invocata da `LoginListener` e
+   `FailedLoginListener` con lo stesso `$loginAt` di `RecordAuthenticationLogAction`
+   (semantica: anche i tentativi falliti, come backfill e stats).
+4. Storico completo oltre 7 giorni: `GetLoginHistoryAction` (bucket day/month)
+   su `authentication_logs`, letto con `toBase()` per evitare il cast datetime
+   del modello; `LoginWidget` ora dichiara `$view` e rende `LoginCard`
+   (stats + grafico), non più `ChartWidget` Pulse orfano.
 
 ## Esito
 
-In corso.
+Done (2026-11-11).
+
+- PHPStan mirato `Modules/User/app/Actions/Login`, `Listeners`, `Actions/Auth`: 0 errori.
+- Pint: passed.
+- Test `RecordAuthenticationLogActionTest`: 5 passed (24 assertions).
+- Test `GetLoginHistoryActionTest`: 5 passed (10 assertions) su DB reale:
+  serie day 786 bucket / totale 549, month 27 bucket / totale 549, coerente
+  con `GetLoginStatsAction` (total 549).
+- `pulse_aggregates` `user_login`: 3 righe dopo backfill.

@@ -27,6 +27,17 @@ login. Il modello è `Modules\User\Models\AuthenticationLog`.
 |----------|------|-----------|
 | Pulse (`user_login`, key `all`) | `RecordLoginPulseAction` live + `user:pulse-backfill-logins` | max 7 giorni |
 | `GetLoginStatsAction` | legge `authentication_logs` | tutto lo storico |
+| `GetLoginHistoryAction` | serie giorno/mese da `authentication_logs` | tutto lo storico |
+
+Semantica condivisa: si contano **tutte** le righe con timestamp valorizzato,
+anche `login_successful = false` (tentativi falliti). `LoginListener` e
+`FailedLoginListener` chiamano `RecordLoginPulseAction` con lo stesso `$loginAt`
+di `RecordAuthenticationLogAction`; il backfill non filtra il successo.
+
+`GetLoginHistoryAction` legge i timestamp con `toBase()`: `pluck()` su Eloquent
+restituirebbe oggetti Carbon (cast datetime) e i bucket risulterebbero vuoti.
+Con `toBase()` si ottengono le stringhe SQL e `substr()` produce chiavi `Y-m-d`
+o `Y-m`.
 
 Pulse non può conservare più di 7 giorni: `DatabaseStorage` aggrega solo i periodi
 60/360/1440/10080 minuti e `trim()` elimina entries/aggregati più vecchi. Il

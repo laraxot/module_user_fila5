@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Login;
 
 use Carbon\CarbonImmutable;
-use Illuminate\Database\Query\Expression;
 use InvalidArgumentException;
 use Modules\User\Actions\Login\Concerns\ResolvesLoginLogQuery;
 
@@ -25,7 +24,7 @@ final class GetLoginHistoryAction
 {
     use ResolvesLoginLogQuery;
 
-    private const MAX_BUCKETS = 5000;
+    private const int MAX_BUCKETS = 5000;
 
     /**
      * @return array{labels: list<string>, data: list<int>}
@@ -57,27 +56,28 @@ final class GetLoginHistoryAction
 
         $end = CarbonImmutable::now('UTC');
 
-        // SUBSTR e' portabile MySQL/SQLite: login_at e' 'Y-m-d H:i:s' UTC.
-        $expression = $granularity === 'month'
-            ? "SUBSTR({$column}, 1, 7)"
-            : "SUBSTR({$column}, 1, 10)";
+        // ponytail: scansione in PHP; authentication_logs e' nell'ordine di
+        // 10^3-10^5 righe. Se cresce, spostare l'aggregazione in SQL.
+        $bucketLength = $granularity === 'month' ? 7 : 10;
 
-        $counts = $query
+        $counts = [];
+
+        // toBase(): evita il cast datetime del modello e legge le stringhe
+        // SQL grezze, cosi' substr() produce bucket coerenti.
+        $timestamps = $query
+            ->toBase()
             ->where($column, '>=', $since->toDateTimeString())
             ->where($column, '<=', $end->toDateTimeString())
-            ->toBase()
-            ->select([
-                new Expression("{$expression} AS bucket"),
-                new Expression('COUNT(*) AS aggregate'),
-            ])
-            ->groupBy(new Expression($expression))
-            ->orderBy('bucket')
-            ->get()
-            ->mapWithKeys(
-                static fn (\stdClass $row): array => [
-                    strval($row->bucket) => intval($row->aggregate),
-                ]
-            );
+            ->pluck($column);
+
+        foreach ($timestamps as $timestamp) {
+            if (! is_string($timestamp)) {
+                continue;
+            }
+
+            $bucket = substr($timestamp, 0, $bucketLength);
+            $counts[$bucket] = ($counts[$bucket] ?? 0) + 1;
+        }
 
         $cursor = $granularity === 'month'
             ? $since->startOfMonth()
@@ -101,7 +101,7 @@ final class GetLoginHistoryAction
             $labels[] = $granularity === 'month'
                 ? $cursor->format('m/Y')
                 : $cursor->format('d/m/y');
-            $data[] = $counts->get($key, 0);
+            $data[] = $counts[$key] ?? 0;
 
             $cursor = $granularity === 'month'
                 ? $cursor->addMonth()
