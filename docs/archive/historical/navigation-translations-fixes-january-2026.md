@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_gPkcLj
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: note
 updated: 2026-10-27
@@ -8,12 +9,20 @@ status: superseded
 superseded_by: navigation-translations-fixes-january.md
 ---
 # Correzioni Traduzioni Navigation - Gennaio 2026
+=======
+title: "navigation-translations-fixes-january-2026"
+type: alias
+status: superseded
+canonical: "archive/historical/navigation-translations-fixes-january.md"
+qmd: "navigation-translations-fixes-january-2026 alias superseded"
+---
+>>>>>>> .merge_file_6QSpio
 
-## Data Intervento
-**2026-01-22** - Sistemazione completa traduzioni navigation secondo regole DRY + KISS
+# navigation-translations-fixes-january-2026
 
-## Problema Identificato
+Documento identico al canonico: [navigation-translations-fixes-january.md](navigation-translations-fixes-january.md).
 
+<<<<<<< .merge_file_gPkcLj
 Tutti i file di traduzione che contengono la stringa `.navigation` indicano traduzioni incomplete/placeholder che devono essere sistemate immediatamente.
 
 ## File Corretti
@@ -206,3 +215,6 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
+=======
+Canonico: `laravel/Modules/User/docs/archive/historical/navigation-translations-fixes-january.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_6QSpio

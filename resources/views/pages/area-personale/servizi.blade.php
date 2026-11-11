@@ -33,7 +33,7 @@ new class extends Component {
                 <p class="mt-2 text-lg text-slate-700">{{ __('pub_theme::ui.header_area_personale.my_services.description', ['default' => 'Elenco dei servizi disponibili per l\'utente']) }}</p>
             </header>
             <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <p class="text-slate-700">{{ __('I servizi disponibili saranno mostrati qui.') }}</p>
+                <p class="text-slate-700">{{ __('user::area_personale.services.placeholder.message') }}</p>
             </div>
         </main>
     @endvolt

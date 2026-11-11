@@ -1,5 +1,5 @@
 ---
-title: "User — epic roadmap BMAD"
+title: "User: epic roadmap BMAD"
 type: epic
 status: active
 module: User
@@ -8,21 +8,21 @@ updated: 2026-09-28
 qmd: "User epic roadmap qualità architettura test documentazione"
 tags: [docs, user, bmad]
 ---
-# User — epic roadmap
+# User: epic roadmap
 
-## Epic A — Contratto e architettura
+## Epic A: Contratto e architettura
 
 Documentare API pubbliche, dipendenze, confini e invarianti del modulo.
 
-## Epic B — Qualità verificabile
+## Epic B: Qualità verificabile
 
 Ridurre finding PHPStan, mantenere test Pest eseguibili e registrare evidence ripetibile.
 
-## Epic C — UX e integrazione
+## Epic C: UX e integrazione
 
 Verificare parità Form/Table, traduzioni, autorizzazioni, error handling e integrazioni dichiarate.
 
-## Epic D — Documentazione viva
+## Epic D: Documentazione viva
 
 Collegare ogni decisione a story BMAD, mantenere il second brain e chiudere i duplicati senza cancellare storia.
 

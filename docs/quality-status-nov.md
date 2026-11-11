@@ -1,9 +1,6 @@
 ---
 module: theme
 topic: quality-status-nov
-canonical: ../../../Themes/docs/shared-components/quality-status-user-module-november.md
-related:
-  - "./00-index.md"
 canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"

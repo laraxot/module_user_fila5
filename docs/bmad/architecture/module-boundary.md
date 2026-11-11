@@ -1,5 +1,5 @@
 ---
-title: "User — architettura BMAD"
+title: "User: architettura BMAD"
 type: architecture
 status: active
 module: User
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "User architettura confini componenti PHP Laravel Filament"
 tags: [docs, user, bmad]
 ---
-# User — architettura
+# User: architettura
 
 ## Scopo osservato
 

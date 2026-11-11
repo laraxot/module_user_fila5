@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6N2CUs
 ---
 title: "BaseUser Refactoring - Completato"
 type: note
@@ -345,9 +346,18 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 > **"Semplicità è la massima sofisticazione"**  
 > Codice semplice, pulito, mantenibile
 
+=======
+>>>>>>> .merge_file_Oqd6Fo
+---
+title: "baseuser-refactoring-completed"
+type: alias
+status: superseded
+canonical: "archive/baseuser-refactoring.md"
+qmd: "baseuser-refactoring-completed alias superseded"
 ---
 
-**Status**: ✅ PRODUCTION READY  
-**Risk Level**: 🟢 LOW  
-**Confidence**: 💯 HIGH
+# baseuser-refactoring-completed
 
+Documento identico al canonico: [baseuser-refactoring.md](../baseuser-refactoring.md).
+
+Canonico: `laravel/Modules/User/docs/archive/baseuser-refactoring.md`. Qui non ci sono istruzioni: seguire il file collegato.

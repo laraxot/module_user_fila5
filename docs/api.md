@@ -8,7 +8,7 @@ status: draft
 qmd: "user module   api reference user"
 ---
 
-# User Module — API Reference
+# User Module: API Reference
 
 ## Actions
 

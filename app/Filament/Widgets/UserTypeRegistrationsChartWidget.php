@@ -18,7 +18,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
     protected static ?int $sort = 1;
 
-    protected static bool $isLazy = true;
+    protected static ?bool $isLazyLoaded = true;
 
     #[\Override]
     public function getHeading(): string

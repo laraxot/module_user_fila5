@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_bH2CWc
 title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
 type: note
 status: draft
@@ -7,9 +8,18 @@ tags: [docs, user, archive]
 qmd: "filosofia dei console commands in laraxot (standard supremo) user"
 ---
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
+=======
+title: "console_commands_philosophy"
+type: alias
+status: superseded
+canonical: "archive/historical/console-commands-philosophy.md"
+qmd: "console_commands_philosophy alias superseded"
+---
+>>>>>>> .merge_file_lMPhjH
 
-## Filosofia Fondamentale
+# console_commands_philosophy
 
+<<<<<<< .merge_file_bH2CWc
 ### Principi Immutabili
 - **Strict Types**: `declare(strict_types=1);` sempre obbligatorio
 - **Laravel Prompts Moderni**: Solo `text()`, `select()`, `confirm()` - mai `ask()` o `choice()` obsolete
@@ -209,4 +219,8 @@ foreach ($types as $key => $type) {
 - [README.md](README.md)
 - [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
 - [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
+=======
+Documento identico al canonico: [console-commands-philosophy.md](historical/console-commands-philosophy.md).
+>>>>>>> .merge_file_lMPhjH
 
+Canonico: `laravel/Modules/User/docs/archive/historical/console-commands-philosophy.md`. Qui non ci sono istruzioni: seguire il file collegato.

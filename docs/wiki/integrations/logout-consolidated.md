@@ -1,5 +1,5 @@
 ---
-title: "logout — Consolidated Documentation"
+title: "logout: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "logout   consolidated documentation user"
 ---
 
-# logout — Consolidated Documentation
+# logout: Consolidated Documentation
 
 Consolidated from **42** individual files.
 

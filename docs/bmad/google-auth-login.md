@@ -17,12 +17,12 @@ references:
   - laravel/Modules/User/app/Filament/Widgets/Auth/LoginWidget.php
   - laravel/Modules/User/routes/socialite.php
   - laravel/Themes/Sixteen/resources/views/components/utilities/google-button.blade.php
-title: "Google auth login — senso e contratto"
+title: "Google auth login: senso e contratto"
 tags: [docs, user, bmad]
 qmd: "google auth login   senso e contratto user"
 ---
 
-# Google auth login — senso e contratto
+# Google auth login: senso e contratto
 
 ## Perché
 
@@ -106,4 +106,3 @@ Con solo `$provider`, Laravel legava il segmento `it` a `$provider` →
 - Aprire OAuth in un nuovo tab (rompe state/session)
 - Nuovi controller o duplicare la logica Socialite nel tema
 - Tipizzare la Facade `Request` nel `__invoke` OAuth
-

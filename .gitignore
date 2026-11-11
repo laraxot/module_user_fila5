@@ -481,8 +481,10 @@ tests/Unit/graphify-out/
 
 
 docs/_archive
-Application/
-Database/
+# solo le cartelle maiuscole nella radice del modulo (story uppercase-root-dirs-database-application);
+# senza "/" la regola nascondeva anche app/Actions/Database/ (classe mai committata, login in 500)
+/Application/
+/Database/
 tools/
 app/Models/Models
 
@@ -501,3 +503,10 @@ app/Models/Models
 node_modules
 # graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 graphify-out/
+
+# module-root-hygiene (story module-root-hygiene)
+/.github/skills/
+docs/graphify
+resources/lang
+.merge_file_*
+audit-coverage/

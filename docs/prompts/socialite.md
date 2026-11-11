@@ -1,5 +1,5 @@
 ---
-title: 'Socialite — risorse esterne'
+title: 'Socialite: risorse esterne'
 module: User
 type: reference
 slug: socialite
@@ -12,7 +12,7 @@ status: draft
 qmd: "socialite   risorse esterne user"
 ---
 
-# Socialite — risorse esterne
+# Socialite: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

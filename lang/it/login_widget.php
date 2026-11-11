@@ -20,4 +20,9 @@ return [
         ],
         'remember' => ['label' => 'Ricordami'],
     ],
+    'ui' => [
+        'errors_title' => 'Controlla i dati inseriti',
+        'login_button' => 'Accedi',
+        'forgot_password' => 'Password dimenticata?',
+    ],
 ];

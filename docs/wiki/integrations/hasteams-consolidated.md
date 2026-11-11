@@ -1,5 +1,5 @@
 ---
-title: "hasteams — Consolidated Documentation"
+title: "hasteams: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "hasteams   consolidated documentation user"
 ---
 
-# hasteams — Consolidated Documentation
+# hasteams: Consolidated Documentation
 
 Consolidated from **10** individual files.
 

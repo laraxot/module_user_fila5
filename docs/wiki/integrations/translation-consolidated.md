@@ -1,5 +1,5 @@
 ---
-title: "translation — Consolidated Documentation"
+title: "translation: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "translation   consolidated documentation user"
 ---
 
-# translation — Consolidated Documentation
+# translation: Consolidated Documentation
 
 Consolidated from **22** individual files.
 

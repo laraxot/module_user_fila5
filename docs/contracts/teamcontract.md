@@ -1,14 +1,6 @@
 ---
 title: "TeamContract"
 type: concept
-tags: [teamcontract]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "teamcontract teamcontract"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./hasteamsandusercontract.md"
 tags: [teamcontract, teams, nullability]
 created: 2026-07-14
 updated: 2026-10-20
@@ -92,8 +84,8 @@ Nota: `HasTeamsContract` storicamente dichiara `belongsToTeam(TeamContract)` non
 
 ### Utenti
 
-- `users(): BelongsToMany` — membri
-- `owner(): BelongsTo` — proprietario
+- `users(): BelongsToMany`: membri
+- `owner(): BelongsTo`: proprietario
 - `hasUser(UserContract $user): bool`
 - `addUser` / `removeUser`
 - `allUsers()` / `members()`

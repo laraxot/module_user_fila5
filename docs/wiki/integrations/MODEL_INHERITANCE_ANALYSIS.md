@@ -1,18 +1,14 @@
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
-module: user
-type: integration
-tags: [integrations, modules, user]
-created: 2026-08-24
-updated: 2026-08-24
-qmd: "analisi ereditarietà modelli - modulo user user"
+type: alias
 status: superseded
-superseded_by: model-inheritance-analysis.md
+canonical: "wiki/integrations/MODEL-INHERITANCE-ANALYSIS.md"
+qmd: "MODEL_INHERITANCE_ANALYSIS alias superseded"
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
 
-## Regola Fondamentale
+Documento identico al canonico: [MODEL-INHERITANCE-ANALYSIS.md](MODEL-INHERITANCE-ANALYSIS.md).
 
 **Nessun modello dentro i moduli deve estendere direttamente `Illuminate\Database\Eloquent\Model`.**
 
@@ -166,3 +162,5 @@ Dopo le modifiche, eseguire:
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
+Canonico: `laravel/Modules/User/docs/wiki/integrations/MODEL-INHERITANCE-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.
+Canonico: `laravel/Modules/User/docs/wiki/integrations/MODEL-INHERITANCE-ANALYSIS.md`. Qui non ci sono istruzioni: seguire il file collegato.

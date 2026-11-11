@@ -33,7 +33,7 @@ new class extends Component {
             <p class="mt-2 text-lg text-slate-700">{{ __('pub_theme::ui.header_area_personale.settings.description', ['default' => 'Impostazioni account e preferenze']) }}</p>
         </header>
         <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-            <p class="text-slate-700">{{ __('Le impostazioni disponibili saranno mostrate qui.') }}</p>
+            <p class="text-slate-700">{{ __('user::area_personale.settings.placeholder.message') }}</p>
         </div>
     </main>
     @endvolt

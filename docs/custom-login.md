@@ -110,5 +110,3 @@ class LoginWidget extends XotBaseWidget
 
 
 ---
-
-

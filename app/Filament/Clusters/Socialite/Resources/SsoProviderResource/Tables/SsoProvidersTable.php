@@ -9,6 +9,7 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Tables\Filters\IsActiveFilter;
@@ -34,7 +35,7 @@ class SsoProvidersTable extends XotBaseResourceTable
             'is_active' => IconColumn::make('is_active')->boolean()->sortable()->label(__('xot::table-filters.is_active.label')),
             'entity_id' => TextColumn::make('entity_id')->toggleable(isToggledHiddenByDefault: true),
             'redirect_url' => TextColumn::make('redirect_url')->toggleable(isToggledHiddenByDefault: true),
-            'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];

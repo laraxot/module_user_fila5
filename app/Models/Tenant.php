@@ -16,9 +16,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 /**
  * Modules\User\Models\Tenant.
  *
- * @method static Builder|Tenant newModelQuery()
- * @method static Builder|Tenant newQuery()
- * @method static Builder|Tenant query()
+ * @method static Builder<static>|Tenant newModelQuery()
+ * @method static Builder<static>|Tenant newQuery()
+ * @method static Builder<static>|Tenant query()
  *
  * @property EloquentCollection<int, Model&UserContract> $members
  * @property int|null $members_count
@@ -59,7 +59,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
- * @property string|null $settings
+ * @property array<string, mixed>|null $settings
  *
  * @method static \Modules\User\Database\Factories\TenantFactory factory($count = null, $state = [])
  * @method static Builder<static>|Tenant whereAddress($value)
@@ -73,10 +73,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Tenant whereSettings($value)
  * @method static Builder<static>|Tenant whereUpdatedBy($value)
  *
- * @property string|null $trial_ends_at
+ * @property Carbon|null $trial_ends_at
  *
  * @method static Builder<static>|Tenant whereTrialEndsAt($value)
  *
- * @mixin \Eloquent
  */
 class Tenant extends BaseTenant {}

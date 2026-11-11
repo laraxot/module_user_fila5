@@ -1,5 +1,5 @@
 ---
-title: "Login — il modulo User non veste la pagina"
+title: "Login: il modulo User non veste la pagina"
 type: concept
 confidence: high
 created: 2026-04-20
@@ -12,7 +12,7 @@ related:
   - "../../../../../Themes/Sixteen/docs/plans/auth-login-design-comuni.md"
 ---
 
-# Login — dominio User, vestito Sixteen
+# Login: dominio User, vestito Sixteen
 
 User possiede `LoginWidget`: email, password, «Ricordami», submit, esito. Non possiede il vestito della pagina pubblica.
 

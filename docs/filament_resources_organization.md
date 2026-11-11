@@ -47,11 +47,12 @@ qmd: "organization of filament resources user"
 ```
 Modules/
   User/
-    Filament/
-      Resources/
-        UserResource.php
-        UserResource/
-          Pages/
-            BaseViewUser.php
-            ViewUser.php
+    app/
+      Filament/
+        Resources/
+          UserResource.php
+          UserResource/
+            Pages/
+              BaseViewUser.php
+              ViewUser.php
 ```

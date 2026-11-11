@@ -1,5 +1,5 @@
 ---
-title: "login — Consolidated Documentation"
+title: "login: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "login   consolidated documentation user"
 ---
 
-# login — Consolidated Documentation
+# login: Consolidated Documentation
 
 Consolidated from **12** individual files.
 
@@ -207,6 +207,13 @@ related:
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets_structure.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md): Regole di struttura per widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md): Best practices per risorse Filament.
+- [login-widget-conversion.md](login-widget-conversion.md): Conversione del componente Livewire a LoginWidget.
+
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`
@@ -283,6 +290,13 @@ related:
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets_structure.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md): Regole di struttura per widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md): Best practices per risorse Filament.
+- [login-widget-conversion.md](login-widget-conversion.md): Conversione del componente Livewire a LoginWidget.
+
 ---
 
 ## login-widget-conversion
@@ -789,6 +803,11 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md): Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets_structure.md): Regole di struttura per widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md): Best practices per risorse Filament.
+- [login-widget-conversion.md](login-widget-conversion.md): Conversione del componente Livewire a LoginWidget.
+
 
 ---
 
@@ -892,6 +911,13 @@ class LoginWidget extends XotBaseWidget
 - [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md): Regole di struttura per i widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md): Best practices per risorse e widget Filament.
+- [login-improvements.md](../../../Themes/TwentyOne/docs/login-improvements.md): Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+- [WIDGETS_STRUCTURE.md](../../widgets_structure.md): Regole di struttura per i widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md): Best practices per risorse e widget Filament.
+- [login-improvements.md](../../../../../Themes/TwentyOne/docs/login-improvements.md): Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+
 
 ---
 

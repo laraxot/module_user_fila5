@@ -1,5 +1,5 @@
 ---
-title: "query — Consolidated Documentation"
+title: "query: Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "query   consolidated documentation user"
 ---
 
-# query — Consolidated Documentation
+# query: Consolidated Documentation
 
 Consolidated from **6** individual files.
 

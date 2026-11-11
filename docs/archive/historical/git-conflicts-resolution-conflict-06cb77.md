@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_fcT8TE
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: note
 status: draft
@@ -301,18 +302,17 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Widget Auth**: Rispettare struttura directory `Auth/` per organizzazione
 - **Traduzioni**: Assicurare struttura espansa completa
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
-
-### **Documentazione Aggiornata:**
-- [widgets_structure.md](./widgets-structure.md) - Regole per widget structure
-- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path_conventions.md](./path-conventions.md) - Convenzioni percorsi
-- [volt_blade_implementation.md](./volt-blade-implementation.md) - View patterns
-
-### **Post-Risoluzione TODO:**
-- [ ] Verificare funzionamento widget in contesto Filament panel
-- [ ] Testare widget con direttiva @livewire nelle view Blade
-- [ ] Validare traduzioni per tutti i widget
-- [ ] Aggiornare esempi in documentazione
-- [ ] Creare test di regressione per prevenire conflitti futuri
-
+=======
+title: "git-conflicts-resolution-conflict-06cb77"
+type: alias
+status: superseded
+canonical: "archive/historical/git-conflicts-resolution-conflict.md"
+qmd: "git-conflicts-resolution-conflict-06cb77 alias superseded"
 ---
+>>>>>>> .merge_file_tUFZmF
+
+# git-conflicts-resolution-conflict-06cb77
+
+Documento identico al canonico: [git-conflicts-resolution-conflict.md](git-conflicts-resolution-conflict.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/git-conflicts-resolution-conflict.md`. Qui non ci sono istruzioni: seguire il file collegato.

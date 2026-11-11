@@ -9,7 +9,7 @@ status: superseded
 superseded_by: patterns.md
 ---
 
-# User Module — Patterns & Best Practices
+# User Module: Patterns & Best Practices
 
 ## Authorization Pattern
 

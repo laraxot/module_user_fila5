@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_tmvX0q
 title: "PHPStan Fixes - Modulo User - Gennaio 2025"
 type: note
 status: draft
@@ -222,17 +223,17 @@ $subject = Lang::get('user::email.password_reset_subject');
 - [README.md Modulo User](./README.md)
 - [Authentication Guide](../../authentication.md)
 - [Best Practices](../../best-practices.md)
-
-### **Risorse Esterne**
-- [Laravel Authentication](https://laravel.com/docs/authentication)
-- [PHPStan Method Chaining](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.rules.phpstan.method-chaining)
-- [Laravel Notifications](https://laravel.com/docs/notifications)
-
+=======
+title: "phpstan-fixes-january"
+type: alias
+status: superseded
+canonical: "archive/old_tasks/phpstan-fixes-january.md"
+qmd: "phpstan-fixes-january alias superseded"
 ---
+>>>>>>> .merge_file_wlf9dD
 
-**🔄 Ultimo aggiornamento**: 27 Gennaio 2025
-**📦 Versione**: 1.0
-**🐛 PHPStan Level**: 9 ✅
-**🌐 Translation Standards**: IT/EN complete ✅
-**🚀 Performance**: 95/100 score
-**✨ Test Coverage**: 85% ✅
+# phpstan-fixes-january
+
+Documento identico al canonico: [phpstan-fixes-january.md](../old_tasks/phpstan-fixes-january.md).
+
+Canonico: `laravel/Modules/User/docs/archive/old_tasks/phpstan-fixes-january.md`. Qui non ci sono istruzioni: seguire il file collegato.

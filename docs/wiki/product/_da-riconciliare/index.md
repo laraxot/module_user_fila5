@@ -1,5 +1,5 @@
 ---
-title: "user — product"
+title: "user: product"
 module: user
 type: product
 tags: [product, modules, user]
@@ -9,7 +9,7 @@ status: draft
 qmd: "user   product user"
 ---
 
-# user — product
+# user: product
 
 Documentation for `user` module categorized as **product**.
 

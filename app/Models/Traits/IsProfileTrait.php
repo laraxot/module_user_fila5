@@ -75,6 +75,11 @@ trait IsProfileTrait
             return $value;
         }
 
+        return $this->getFullName();
+    }
+
+    public function getFullName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -104,6 +109,16 @@ trait IsProfileTrait
             return $value;
         }
 
+        $firstName = $this->getFirstName();
+        if ($firstName !== null) {
+            $this->update(['first_name' => $firstName]);
+        }
+
+        return $firstName;
+    }
+
+    public function getFirstName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -114,8 +129,6 @@ trait IsProfileTrait
         if (! \is_string($firstName) || $firstName === '') {
             return null;
         }
-
-        $this->update(['first_name' => $firstName]);
 
         return $firstName;
     }
@@ -133,6 +146,16 @@ trait IsProfileTrait
             return $value;
         }
 
+        $lastName = $this->getLastName();
+        if ($lastName !== null) {
+            $this->update(['last_name' => $lastName]);
+        }
+
+        return $lastName;
+    }
+
+    public function getLastName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -143,8 +166,6 @@ trait IsProfileTrait
         if (! \is_string($lastName) || $lastName === '') {
             return null;
         }
-
-        $this->update(['last_name' => $lastName]);
 
         return $lastName;
     }

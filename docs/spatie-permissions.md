@@ -1,9 +1,6 @@
 ---
 module: theme
 topic: spatie-permissions
-canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
-related:
-  - "./00-index.md"
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-documentation-themes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"

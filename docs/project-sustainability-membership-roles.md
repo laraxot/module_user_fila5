@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità — ruoli e membership"
+title: "Sostenibilità: ruoli e membership"
 type: concept
 module: User
 status: decision-input
@@ -18,8 +18,8 @@ o futura **membership ente** passa da ruoli e permessi, non da config Blade.
 ## Scopo business
 
 1. **Oggi (discovery):** chi può approvare pubblicazione partner/CTA sul tenant
-   (es. admin/supervisor) — da formalizzare in policy, non ancora in codice.
-2. **Domani (P2):** membership B2G/associazione — account ente con rinnovo, non
+   (es. admin/supervisor): da formalizzare in policy, non ancora in codice.
+2. **Domani (P2):** membership B2G/associazione: account ente con rinnovo, non
    paywall cittadino.
 
 ## Principi

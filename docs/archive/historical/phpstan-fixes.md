@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_y7GrLQ
 ---
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: note
@@ -232,11 +233,18 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - Correggere i file più critici prima (Models, Providers)
 - Lasciare seeders e test per ultimi
 
+=======
+---
+title: "phpstan-fixes"
+type: alias
+status: superseded
+canonical: "archive/phpstan-fixes.md"
+qmd: "phpstan-fixes alias superseded"
+>>>>>>> .merge_file_lIGJKx
 ---
 
-**Status**: ⚠️ IN PROGRESS  
-**PHPStan Level**: 9  
-**Prossima sessione**: 2 Ottobre 2025  
-**Obiettivo**: 0 errori User + Xot
+# phpstan-fixes
 
+Documento identico al canonico: [phpstan-fixes.md](../phpstan-fixes.md).
 
+Canonico: `laravel/Modules/User/docs/archive/phpstan-fixes.md`. Qui non ci sono istruzioni: seguire il file collegato.
