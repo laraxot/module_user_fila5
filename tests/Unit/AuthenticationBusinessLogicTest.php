@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit;
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
 use stdClass;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

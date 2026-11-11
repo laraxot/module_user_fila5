@@ -11,8 +11,7 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
 use Modules\User\Models\Tenant;
 use Mockery\MockInterface;
-use Tests\TestCase;
-
+use Modules\User\Tests\TestCase;
 
 uses(\Modules\User\Tests\TestCase::class);
 

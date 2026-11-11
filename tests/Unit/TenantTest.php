@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\User\Models\BaseTenant;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Filament\Models\Contracts\HasAvatar;

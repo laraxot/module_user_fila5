@@ -106,13 +106,9 @@ return [
             'description' => '',
         ],
         'new_password' => [
-            'label' => 'new_password',
             'fields' => [
                 'label' => 'new_password',
             ],
-            'description' => 'new_password',
-            'helper_text' => 'new_password',
-            'placeholder' => 'new_password',
             'tooltip' => '',
         ],
     ],
@@ -135,9 +131,6 @@ return [
                 'heading' => 'Passwort ändern',
                 'description' => 'Geben Sie das neue Passwort ein, um die Änderung zu bestätigen.',
             ],
-        ],
-        'updateDataAction' => [
-            'label' => 'updateDataAction',
         ],
     ],
     'label' => 'Missing Label',

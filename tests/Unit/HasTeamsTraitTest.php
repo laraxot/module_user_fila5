@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 use Modules\User\Models\Role;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
@@ -19,8 +19,11 @@ use Modules\User\Models\User;
  * - teams() usa belongsToManyX
  * - Tipizzazione rigorosa
  * - Metodi non-Jetstream rimossi
+ *
+ * @property User $user
+ * @property Team $team
+ * @property Team $personalTeam
  */
-
 uses(TestCase::class);
 
 beforeEach(function (): void {
