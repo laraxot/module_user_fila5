@@ -15,6 +15,7 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
+use Illuminate\Validation\Rules\Password;
 use Livewire\Component as LivewireComponent;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -242,6 +243,8 @@ class UserForm extends XotBaseResourceForm
                 ->revealable()
                 ->required()
                 ->minLength(8)
+                // Stessa policy della registrazione (`Password::defaults()` = `PasswordData`): con il solo minLength(8) `12345678` passava.
+                ->rule(Password::default())
                 ->same('password_confirmation')
                 ->autocomplete('new-password')
                 ->extraInputAttributes(['class' => 'fo-auth-input fo-auth-input--password']),
@@ -277,6 +280,7 @@ class UserForm extends XotBaseResourceForm
                 ->required()
                 ->revealable()
                 ->minLength(8)
+                ->rule(Password::default())
                 ->suffixIcon('heroicon-o-key')
                 ->extraInputAttributes(['class' => 'fo-auth-input fo-auth-input--password']),
             'password_confirmation' => TextInput::make('password_confirmation')

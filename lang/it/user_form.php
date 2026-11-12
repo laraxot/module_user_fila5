@@ -39,6 +39,9 @@ return [
             'description' => 'Mantieni la sessione attiva su questo dispositivo',
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
         ],
+        'token' => [
+            'label' => 'token',
+        ],
     ],
     'actions' => [
         'showPassword' => [
