@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Auth\EloquentUserProvider;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Modules\User\Actions\Auth\RevokeUserAccessAction;
@@ -30,6 +31,22 @@ test('the users provider is the one that excludes deleted accounts', function ()
 
     Assert::assertInstanceOf(EloquentUserProvider::class, $provider);
     Assert::assertNotNull($provider->getQueryCallback());
+});
+
+test('the users provider remains usable while a legacy users table lacks deleted_at', function (): void {
+    $provider = Auth::createUserProvider('users');
+    Assert::assertNotNull($provider);
+    $callback = $provider->getQueryCallback();
+    Assert::assertNotNull($callback);
+
+    $legacyModel = new User;
+    $legacyModel->setTable('users_legacy_provider_test');
+    $query = $legacyModel->newQuery();
+    Assert::assertInstanceOf(Builder::class, $query);
+
+    $callback($query);
+
+    Assert::assertStringNotContainsString('where `users_legacy_provider_test`.`deleted_at`', $query->toRawSql());
 });
 
 test('a deleted account is not found by id, credentials or remember token', function (): void {

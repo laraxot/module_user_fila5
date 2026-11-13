@@ -18,7 +18,7 @@ use Webmozart\Assert\Assert;
  * - Nome e cognome vanno in `first_name`/`last_name`; `name` è il nome completo.
  * - Senza email verificata si usa `<metodo>.<CF>@noemail.local` con `email_verified_at` null: l'identità è comunque
  *   garantita (HasVerifiedIdentityAction), ma al cittadino non partono email verso un indirizzo inesistente.
- * - Si conservano solo i dati necessari (vedi la migrazione `add_digital_identity_columns_to_users_table`).
+ * - Si conservano solo i dati necessari (vedi la migrazione owner `create_users_table`).
  */
 final class UpsertUserFromDigitalIdentityAction
 {

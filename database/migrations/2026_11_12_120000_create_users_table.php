@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
+/*
+ * Canonical owner migration for `User::users` (consolidated 2026-11-12).
+ * The tableUpdate block is also the forward-only repair path for legacy schemas.
+ */
 return new class extends XotBaseMigration
 {
+
     /**
      * Run the migrations.
      */
@@ -18,16 +24,24 @@ return new class extends XotBaseMigration
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable(); // se entra con sso
+            $table->text('two_factor_secret')->nullable();
+            $table->text('two_factor_recovery_codes')->nullable();
+            $table->timestamp('two_factor_confirmed_at')->nullable();
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
-            $table->softDeletes();
+            $table->string('lang', 3)->nullable();
+            $table->string('type')->index()->nullable();
+            $table->string('state')->index()->nullable();
+            $table->boolean('is_active')->default(true);
+            $table->boolean('is_otp')->default(false);
+            $table->timestamp('password_expires_at')->nullable();
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
@@ -55,6 +69,14 @@ return new class extends XotBaseMigration
                 $table->string('lang', 3)->nullable();
             }
 
+            if (! $this->hasColumn('type')) {
+                $table->string('type')->index()->nullable();
+            }
+
+            if (! $this->hasColumn('state')) {
+                $table->string('state')->index()->nullable();
+            }
+
             if (! $this->hasColumn('is_active')) {
                 $table->boolean('is_active')->default(true);
             }
@@ -66,6 +88,33 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('password_expires_at')) {
                 $table->timestamp('password_expires_at')->nullable();
             }
+
+            if (! $this->hasColumn('two_factor_secret')) {
+                $table->text('two_factor_secret')->nullable()->after('password');
+            }
+            if (! $this->hasColumn('two_factor_recovery_codes')) {
+                $table->text('two_factor_recovery_codes')->nullable()->after('two_factor_secret');
+            }
+            if (! $this->hasColumn('two_factor_confirmed_at')) {
+                $table->timestamp('two_factor_confirmed_at')->nullable()->after('two_factor_recovery_codes');
+            }
+
+            if (! $this->hasColumn('fiscal_code')) {
+                $table->string('fiscal_code', 16)->nullable()->unique();
+            }
+
+            if (! $this->hasColumn('auth_method')) {
+                $table->string('auth_method', 20)->nullable()->index();
+            }
+
+            if (! $this->hasColumn('identity_provider')) {
+                $table->string('identity_provider', 50)->nullable();
+            }
+
+            if (! $this->hasColumn('last_login_at')) {
+                $table->timestamp('last_login_at')->nullable();
+            }
+
             if ($this->hasColumn('password')) {
                 $table->string('password')->nullable()->change();
             }
@@ -80,7 +129,7 @@ return new class extends XotBaseMigration
                 Schema::enableForeignKeyConstraints();
             }
             // $this->updateUser($table);
-            $this->updateTimestamps($table, true);
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });
     }
 };

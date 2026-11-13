@@ -7,6 +7,7 @@ namespace Modules\User\Actions\Auth;
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Actions\Model\ModelHasColumnAction;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -34,7 +35,8 @@ final class BuildActiveUserProviderAction
 
         $provider->withQuery(static function (Builder $query): void {
             $user = $query->getModel();
-            if ($user instanceof UserContract) {
+            if ($user instanceof UserContract
+                && app(ModelHasColumnAction::class)->execute($user, 'deleted_at')) {
                 $query->whereNull($user->qualifyColumn('deleted_at'));
             }
         });

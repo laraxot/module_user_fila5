@@ -32,6 +32,7 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Actions\Model\ModelHasColumnAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Traits as XotTraits;
@@ -147,7 +148,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasXotFactory;
     use InteractsWithMedia;
 
-    // use SoftDeletes;
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
@@ -348,7 +348,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public static function findForPassport(string $username): ?self
     {
-        return static::where('email', $username)->whereNull('deleted_at')->first();
+        $query = static::where('email', $username);
+        $user = new static;
+
+        if (app(ModelHasColumnAction::class)->execute($user, 'deleted_at')) {
+            $query->whereNull($user->qualifyColumn('deleted_at'));
+        }
+
+        return $query->first();
     }
 
     /**
