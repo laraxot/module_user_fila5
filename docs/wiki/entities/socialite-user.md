@@ -46,4 +46,8 @@ CreateSocialiteUserAction->execute($provider, $oauthUser, $user);
 ## Link
 
 - [Architettura Socialite](../concepts/socialite-architecture.md)
+<<<<<<< .merge_file_J7oylg
 - [Migration](../../../database/migrations/2023_01_01_000003_create_socialite_user_table.php)
+=======
+- [Migration](../../../database/migrations/2026_11_12_120002_create_socialite_users_table.php)
+>>>>>>> .merge_file_AMkreE

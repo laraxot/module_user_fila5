@@ -1,36 +1,28 @@
 <?php
 
 declare(strict_types=1);
-// User — translation section (claude-audit doc ratio).
 
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: split from user.php for maintainability.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/en/user/fields.php
 return [
     'name' => [
+<<<<<<< .merge_file_MsSNwl
         'label' => 'First name',
         'placeholder' => 'Enter the first name',
         'description' => 'name',
+=======
+        'label' => 'Nome',
+        'placeholder' => 'Inserisci il nome',
+>>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
     'email' => [
         'label' => 'Email',
+<<<<<<< .merge_file_MsSNwl
         'placeholder' => 'Enter the email',
         'description' => 'email',
+=======
+        'placeholder' => 'Inserisci l\'email',
+>>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
@@ -66,8 +58,12 @@ return [
     ],
     'password' => [
         'label' => 'Password',
+<<<<<<< .merge_file_MsSNwl
         'placeholder' => 'Enter the password',
         'description' => 'password',
+=======
+        'placeholder' => 'Inserisci la password',
+>>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
@@ -157,85 +153,71 @@ return [
         'description' => '',
     ],
     'applyFilters' => [
-        'label' => 'applyFilters',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'toggleColumns' => [
-        'label' => 'toggleColumns',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'reorderRecords' => [
-        'label' => 'reorderRecords',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'resetFilters' => [
-        'label' => 'resetFilters',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'openFilters' => [
-        'label' => 'openFilters',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'isActive' => [
-        'label' => 'isActive',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'deactivate' => [
-        'label' => 'deactivate',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'delete' => [
-        'label' => 'delete',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'edit' => [
-        'label' => 'edit',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'view' => [
-        'label' => 'view',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'create' => [
-        'label' => 'create',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'detach' => [
-        'label' => 'detach',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'attach' => [
-        'label' => 'attach',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'changePassword' => [
-        'label' => 'changePassword',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',

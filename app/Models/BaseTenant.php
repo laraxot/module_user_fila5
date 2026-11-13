@@ -34,7 +34,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
 {
     use HasSlug;
     use HasUuids {
-        \Illuminate\Database\Eloquent\Concerns\HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
+        HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
     }
     use BaseTenantRelationsTrait;
     use InteractsWithMedia;
@@ -59,9 +59,30 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     ];
 
     /**
+<<<<<<< .merge_file_POWtpG
+     * @param  Builder<Model>|Model  $query
+     * @param  string|int  $value
+     * @param  string|null  $field
+=======
+     * `settings` e' una colonna JSON: senza cast un array in ingresso finisce nell'INSERT
+     * come stringa ("Array to string conversion").
+     *
+     * @return array<string, string>
+     */
+    #[\Override]
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'settings' => 'array',
+            'trial_ends_at' => 'datetime',
+        ]);
+    }
+
+    /**
      * @param Builder<Model>|Model $query
      * @param string|int $value
      * @param string|null $field
+>>>>>>> .merge_file_YnpcBA
      * @return Builder<Model>
      */
     public function resolveRouteBindingQuery($query, $value, $field = null): Builder
@@ -80,6 +101,10 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
 
     public function getFilamentAvatarUrl(): ?string
     {
-        return $this->getFirstMediaUrl('avatar');
+        // Senza media getFirstMediaUrl() restituisce '': Filament si aspetta null per
+        // mostrare l'avatar di ripiego, non un <img src="">.
+        $url = $this->getFirstMediaUrl('avatar');
+
+        return $url !== '' ? $url : null;
     }
 }

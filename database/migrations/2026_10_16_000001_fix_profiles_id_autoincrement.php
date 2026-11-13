@@ -12,11 +12,24 @@ use Illuminate\Support\Facades\Schema;
  * Profile creation at first login then fails. Converts the column only when it is still a
  * string type and the table is empty; otherwise it does nothing.
  */
+<<<<<<< .merge_file_1NnfLj
 return new class extends Migration {
     // No hardcoded `protected $connection = 'user'`: on a fresh install where the optional 'user'
     // connection has no database configured (see config/database.php), that would eagerly connect
     // to its placeholder-less mysql default and fail. Resolve it the same way XotBaseMigration does.
     public function getConnection(): ?string
+=======
+<<<<<<< .merge_file_4HgXIV
+return new class extends Migration
+{
+    protected $connection = 'user';
+
+=======
+return new class() extends Migration
+{
+>>>>>>> .merge_file_tlA1ka
+    public function up(): void
+>>>>>>> .merge_file_j0Yg1x
     {
         if (! DB::connection('user')->getDatabaseName()) {
             $default = config('database.default');
@@ -24,6 +37,7 @@ return new class extends Migration {
             return is_string($default) ? $default : 'mariadb';
         }
 
+<<<<<<< .merge_file_1NnfLj
         return 'user';
     }
 
@@ -31,6 +45,12 @@ return new class extends Migration {
     {
         $connection = $this->getConnection() ?? 'user';
         $schema = Schema::connection($connection);
+=======
+        // `MODIFY ... AUTO_INCREMENT` esiste solo in MySQL/MariaDB (SQLite dei test: niente da convertire).
+        if (! in_array(DB::connection('user')->getDriverName(), ['mysql', 'mariadb'], true)) {
+            return;
+        }
+>>>>>>> .merge_file_j0Yg1x
 
         if (! $schema->hasTable('profiles')) {
             return;

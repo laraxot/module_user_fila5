@@ -11,6 +11,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< .merge_file_h1ftRP
     'fields' => [
     ],
     'actions' => [
@@ -27,4 +28,6 @@ return [
         'refresh_tokens_total' => 'Refresh tokens',
         'refresh_tokens_description' => 'Refresh tokens issued',
     ],
+=======
+>>>>>>> .merge_file_ZCaA6G
 ];

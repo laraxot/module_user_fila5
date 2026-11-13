@@ -36,22 +36,35 @@ return [
     ],
     'fields' => [
         'name' => [
+<<<<<<< .merge_file_dwtFf5
             'label' => 'First name',
             'placeholder' => 'Enter the first name',
             'description' => 'name',
+=======
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
+>>>>>>> .merge_file_H7nERp
             'helper_text' => '',
             'tooltip' => '',
         ],
         'email' => [
             'label' => 'Email',
+<<<<<<< .merge_file_dwtFf5
             'placeholder' => 'Enter the email',
             'description' => 'email',
+=======
+            'placeholder' => 'Inserisci l\'email',
+>>>>>>> .merge_file_H7nERp
             'helper_text' => '',
         ],
         'password' => [
             'label' => 'Password',
+<<<<<<< .merge_file_dwtFf5
             'placeholder' => 'Enter the password',
             'description' => 'password',
+=======
+            'placeholder' => 'Inserisci la password',
+>>>>>>> .merge_file_H7nERp
             'helper_text' => '',
             'tooltip' => '',
         ],
