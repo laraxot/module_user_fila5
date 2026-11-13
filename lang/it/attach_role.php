@@ -12,7 +12,7 @@ return [
             'tooltip' => '',
         ],
         'team_id' => [
-            'label' => 'team_id',
+            'label' => 'Team',
             'placeholder' => 'team_id',
             'helper_text' => 'team_id',
             'description' => 'team_id',

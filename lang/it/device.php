@@ -26,7 +26,7 @@ return [
         'is_mobile' => ['label' => 'È Mobile', 'placeholder' => 'Seleziona se è mobile', 'tooltip' => 'Dispositivo mobile portatile', 'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile]', 'help' => 'Indica se è un dispositivo mobile (smartphone o tablet]', 'description' => ''],
         'is_tablet' => ['label' => 'È Tablet', 'placeholder' => 'Seleziona se è tablet', 'tooltip' => 'Dispositivo tablet con schermo touch', 'helper_text' => 'Indica se si tratta di un tablet o dispositivo con schermo di medie dimensioni', 'help' => 'Indica se è un tablet o dispositivo con schermo di medie dimensioni', 'description' => ''],
         'is_phone' => ['label' => 'È Telefono', 'placeholder' => 'Seleziona se è telefono', 'tooltip' => 'Smartphone o telefono cellulare', 'helper_text' => 'Specifica se il dispositivo è uno smartphone o telefono cellulare', 'help' => 'Indica se è uno smartphone o telefono cellulare', 'description' => ''],
-        'created_at' => ['label' => 'created_at'],
+        'created_at' => ['label' => 'Creato il'],
     ],
     'actions' => [
         'create' => [

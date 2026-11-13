@@ -10,10 +10,10 @@ return [
     'sections' => [
         'empty' => [
             'heading' => 'empty',
-            'label' => 'empty',
+            'label' => '',
         ],
         'worker' => [
-            'label' => 'worker',
+            'label' => 'Operatore',
             'heading' => 'worker',
         ],
     ],

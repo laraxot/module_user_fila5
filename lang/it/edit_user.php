@@ -27,19 +27,19 @@ return [
     ],
     'fields' => [
         'password' => [
-            'label' => 'password',
+            'label' => 'Password',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
+            'label' => 'E-mail',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

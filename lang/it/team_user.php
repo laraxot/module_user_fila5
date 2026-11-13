@@ -37,16 +37,16 @@ return [
         ],
         'team' => [
             'name' => [
-                'label' => 'team.name',
+                'label' => 'Team',
             ],
         ],
         'user' => [
             'name' => [
-                'label' => 'user.name',
+                'label' => 'Utente',
             ],
         ],
         'role' => [
-            'label' => 'role',
+            'label' => 'Ruolo',
         ],
     ],
     'actions' => [

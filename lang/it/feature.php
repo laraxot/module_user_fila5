@@ -27,9 +27,9 @@ return [
         'resetFilters' => ['label' => 'Reimposta Filtri', 'tooltip' => 'Reimposta i filtri', 'helper_text' => 'Azzera tutti i filtri attivi', 'description' => 'Reimposta i filtri ai valori predefiniti'],
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Applica i filtri alla tabella'],
         'openFilters' => ['label' => 'Apri Filtri', 'tooltip' => 'Apri il pannello filtri', 'helper_text' => 'Apre il pannello dei filtri', 'description' => 'Apre il pannello dei filtri'],
-        'type' => ['label' => 'type'],
-        'active' => ['label' => 'active'],
-        'created_at' => ['label' => 'created_at'],
+        'type' => ['label' => 'Tipo'],
+        'active' => ['label' => 'Attivo'],
+        'created_at' => ['label' => 'Creato il'],
     ],
     'actions' => [
         'import' => [

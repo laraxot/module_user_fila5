@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'id' => ['label' => 'id'],
-        'name' => ['label' => 'name'],
-        'created_at' => ['label' => 'created_at'],
-        'user_id' => ['label' => 'user_id'],
-        'client_id' => ['label' => 'client_id'],
-        'scopes' => ['label' => 'scopes'],
-        'revoked' => ['label' => 'revoked'],
-        'expires_at' => ['label' => 'expires_at'],
+        'id' => ['label' => 'ID'],
+        'name' => ['label' => 'Nome'],
+        'created_at' => ['label' => 'Creato il'],
+        'user_id' => ['label' => 'Utente'],
+        'client_id' => ['label' => 'Client ID'],
+        'scopes' => ['label' => 'Ambiti'],
+        'revoked' => ['label' => 'Revocato'],
+        'expires_at' => ['label' => 'Scade il'],
     ],
 ];

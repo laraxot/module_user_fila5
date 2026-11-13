@@ -20,7 +20,7 @@ return [
             'tooltip' => 'billing',
         ],
         'register' => [
-            'label' => 'register',
+            'label' => 'Registrati',
             'icon' => 'register',
             'tooltip' => 'register',
         ],

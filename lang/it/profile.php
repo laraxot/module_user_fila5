@@ -91,27 +91,27 @@ return [
             'placeholder' => 'matr',
         ],
         'photo' => [
-            'label' => 'photo',
+            'label' => 'Foto',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'user' => [
             'name' => [
-                'label' => 'user.name',
+                'label' => 'Utente',
             ],
         ],
         'created_at' => [
-            'label' => 'created_at',
+            'label' => 'Creato il',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
         ],
         'password' => [
-            'label' => 'password',
+            'label' => 'Password',
             'placeholder' => 'password',
             'helper_text' => 'password',
             'description' => 'password',
@@ -129,19 +129,19 @@ return [
             'description' => 'currentPassword',
         ],
         'email_verified_at' => [
-            'label' => 'email_verified_at',
+            'label' => 'E-mail verificata il',
             'placeholder' => 'email_verified_at',
             'helper_text' => 'email_verified_at',
             'description' => 'email_verified_at',
         ],
         'password_confirmation' => [
-            'label' => 'password_confirmation',
+            'label' => 'Conferma password',
             'placeholder' => 'password_confirmation',
             'helper_text' => 'password_confirmation',
             'description' => 'password_confirmation',
         ],
         'updated_at' => [
-            'label' => 'updated_at',
+            'label' => 'Modificato il',
         ],
     ],
     'actions' => [

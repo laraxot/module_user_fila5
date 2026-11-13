@@ -127,7 +127,7 @@ return [
         ],
         'export' => [
             'icon' => 'export',
-            'label' => 'export',
+            'label' => 'Esporta',
             'tooltip' => 'export',
         ],
         'changePassword' => [

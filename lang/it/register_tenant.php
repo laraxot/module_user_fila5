@@ -186,7 +186,7 @@ return [
             'error' => 'Errore durante il caricamento dei documenti',
         ],
         'register' => [
-            'label' => 'register',
+            'label' => 'Registrati',
             'icon' => 'register',
             'tooltip' => 'register',
         ],

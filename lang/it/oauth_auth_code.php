@@ -14,12 +14,12 @@ return [
         'revoked' => ['label' => 'Revocato', 'tooltip' => 'Stato di revoca', 'helper_text' => 'Indica se il codice è stato revocato', 'description' => 'Stato di revoca'],
         'expires_at' => ['label' => 'Scade il', 'tooltip' => 'Data di scadenza', 'placeholder' => 'Seleziona la data', 'helper_text' => 'Data e ora di scadenza del codice', 'description' => 'Data di scadenza'],
         'user' => [
-            'name' => ['label' => 'user.name'],
+            'name' => ['label' => 'Utente'],
         ],
         'client' => [
             'name' => ['label' => 'client.name'],
         ],
-        'created_at' => ['label' => 'created_at'],
+        'created_at' => ['label' => 'Creato il'],
     ],
     'actions' => [
         'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice', 'helper_text' => 'Revoca questo codice', 'description' => 'Azione per revocare il codice', 'success' => 'Codice di autorizzazione revocato con successo'],

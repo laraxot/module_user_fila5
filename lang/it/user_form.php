@@ -42,21 +42,21 @@ return [
         ],
         'state' => [
             'description' => 'state',
-            'label' => 'state',
+            'label' => 'Stato',
             'placeholder' => 'state',
             'helper_text' => 'state',
         ],
         'type' => [
-            'label' => 'type',
+            'label' => 'Tipo',
             'placeholder' => 'type',
             'helper_text' => 'type',
             'description' => 'type',
         ],
         'created_at' => [
-            'label' => 'created_at',
+            'label' => 'Creato il',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
@@ -64,7 +64,7 @@ return [
         'token' => [
             'description' => 'token',
             'helper_text' => 'token',
-            'label' => 'token',
+            'label' => 'Token',
             'placeholder' => 'token',
         ],
     ],
@@ -83,10 +83,10 @@ return [
     'sections' => [
         'empty' => [
             'heading' => 'empty',
-            'label' => 'empty',
+            'label' => '',
         ],
         'worker' => [
-            'label' => 'worker',
+            'label' => 'Operatore',
             'heading' => 'worker',
         ],
     ],

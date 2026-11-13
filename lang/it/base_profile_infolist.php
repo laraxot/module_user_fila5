@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'id' => ['label' => 'id'],
-        'name' => ['label' => 'name'],
-        'created_at' => ['label' => 'created_at'],
+        'id' => ['label' => 'ID'],
+        'name' => ['label' => 'Nome'],
+        'created_at' => ['label' => 'Creato il'],
     ],
 ];

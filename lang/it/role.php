@@ -114,7 +114,7 @@ return [
         ],
         'team' => [
             'name' => [
-                'label' => 'team.name',
+                'label' => 'Team',
             ],
             'label' => '',
             'tooltip' => '',

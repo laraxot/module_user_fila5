@@ -21,19 +21,19 @@ return [
             'description' => '',
         ],
         'login_at' => [
-            'label' => 'login_at',
+            'label' => 'Accesso il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'ip_address' => [
-            'label' => 'ip_address',
+            'label' => 'Indirizzo IP',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'user_agent' => [
-            'label' => 'user_agent',
+            'label' => 'Browser (user agent)',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -69,7 +69,7 @@ return [
             'description' => '',
         ],
         'user' => [
-            'label' => 'user',
+            'label' => 'Utente',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

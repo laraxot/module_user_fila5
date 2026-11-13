@@ -342,25 +342,25 @@ return [
             'description' => 'ente',
         ],
         'state' => [
-            'label' => 'state',
+            'label' => 'Stato',
         ],
         'user' => [
             'label' => 'Utente',
         ],
         'device' => [
-            'label' => 'device',
+            'label' => 'Dispositivo',
             'placeholder' => 'device',
             'helper_text' => 'device',
             'description' => 'device',
         ],
         'created_from' => [
-            'label' => 'created_from',
+            'label' => 'Creato dal',
             'placeholder' => 'created_from',
             'helper_text' => 'created_from',
             'description' => 'created_from',
         ],
         'created_until' => [
-            'label' => 'created_until',
+            'label' => 'Creato fino al',
             'placeholder' => 'created_until',
             'helper_text' => 'created_until',
             'description' => 'created_until',
@@ -484,7 +484,7 @@ return [
         ],
         'export' => [
             'icon' => 'export',
-            'label' => 'export',
+            'label' => 'Esporta',
             'tooltip' => 'export',
         ],
         'changePassword' => [
@@ -817,10 +817,10 @@ return [
     'sections' => [
         'empty' => [
             'heading' => 'empty',
-            'label' => 'empty',
+            'label' => '',
         ],
         'worker' => [
-            'label' => 'worker',
+            'label' => 'Operatore',
             'heading' => 'worker',
         ],
     ],

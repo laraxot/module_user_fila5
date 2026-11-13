@@ -17,7 +17,7 @@ return [
         ],
         'filter' => [
             'icon' => 'filter',
-            'label' => 'filter',
+            'label' => 'Filtro',
         ],
     ],
     'fields' => [
@@ -39,7 +39,7 @@ return [
     'sections' => [
         'empty' => [
             'heading' => 'empty',
-            'label' => 'empty',
+            'label' => '',
         ],
     ],
     'navigation' => [

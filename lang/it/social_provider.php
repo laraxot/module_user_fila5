@@ -26,7 +26,7 @@ return [
             'description' => '',
         ],
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Azione per applicare i filtri'],
-        'created_at' => ['label' => 'created_at'],
+        'created_at' => ['label' => 'Creato il'],
     ],
     'actions' => [
         'import' => [

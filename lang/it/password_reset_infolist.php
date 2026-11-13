@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'id' => ['label' => 'id'],
-        'uuid' => ['label' => 'uuid'],
-        'email' => ['label' => 'email'],
-        'user_id' => ['label' => 'user_id'],
-        'created_at' => ['label' => 'created_at'],
-        'updated_at' => ['label' => 'updated_at'],
+        'id' => ['label' => 'ID'],
+        'uuid' => ['label' => 'UUID'],
+        'email' => ['label' => 'E-mail'],
+        'user_id' => ['label' => 'Utente'],
+        'created_at' => ['label' => 'Creato il'],
+        'updated_at' => ['label' => 'Modificato il'],
     ],
 ];

@@ -16,7 +16,7 @@ return [
     ],
     'fields' => [
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

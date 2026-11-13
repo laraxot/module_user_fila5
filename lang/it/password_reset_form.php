@@ -11,13 +11,13 @@ return [
     ],
     'fields' => [
         'email' => [
-            'label' => 'email',
+            'label' => 'E-mail',
             'placeholder' => 'email',
             'helper_text' => 'email',
             'description' => 'email',
         ],
         'token' => [
-            'label' => 'token',
+            'label' => 'Token',
             'placeholder' => 'token',
             'helper_text' => 'token',
             'description' => 'token',

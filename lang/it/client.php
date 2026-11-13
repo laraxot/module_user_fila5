@@ -29,9 +29,9 @@ return [
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'openFilters' => ['label' => 'Apri Filtri', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'recordId' => ['label' => 'ID Record', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'client_id' => ['description' => 'client_id', 'helper_text' => 'client_id', 'placeholder' => 'client_id', 'label' => 'client_id', 'tooltip' => ''],
-        'secret' => ['label' => 'secret', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'id' => ['label' => 'id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'client_id' => ['description' => 'client_id', 'helper_text' => 'client_id', 'placeholder' => 'client_id', 'label' => 'Client ID', 'tooltip' => ''],
+        'secret' => ['label' => 'Segreto', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'id' => ['label' => 'ID', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
     ],
     'plural' => [
         'model' => ['label' => 'client.plural.model'],
