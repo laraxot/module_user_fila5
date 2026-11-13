@@ -730,5 +730,21 @@ return [
         ],
     ],
     'label' => 'Utente',
+<<<<<<< .merge_file_FfvEyq
+=======
+<<<<<<< .merge_file_N23cbn
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+        'worker' => [
+            'label' => 'worker',
+            'heading' => 'worker',
+        ],
+    ],
+=======
+>>>>>>> .merge_file_uX26zG
+>>>>>>> .merge_file_uHeFGQ
     'plural_label' => 'User (Plurale)',
 ];

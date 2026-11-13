@@ -55,4 +55,20 @@ return [
             'tooltip' => 'Nascondi password',
         ],
     ],
+<<<<<<< .merge_file_O8jegb
+=======
+<<<<<<< .merge_file_T3WJVU
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+        'worker' => [
+            'label' => 'worker',
+            'heading' => 'worker',
+        ],
+    ],
+=======
+>>>>>>> .merge_file_iPwtsu
+>>>>>>> .merge_file_0f2vw0
 ];

@@ -1,3 +1,11 @@
+---
+title: "Analisi metodi duplicati in HasTeams (trait)"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi metodi duplicati in hasteams (trait) user"
+---
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -76,7 +84,7 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./Models/User.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
-- [XotData helper](../../Xot/docs/standards/README.md)
+- [XotData helper](../../../Xot/docs/standards/README.md)
 
 ---
 

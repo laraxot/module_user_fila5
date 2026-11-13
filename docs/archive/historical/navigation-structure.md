@@ -1,3 +1,11 @@
+---
+title: "Struttura Navigazione"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura navigazione user"
+---
 # Struttura Navigazione
 
 ## Overview

@@ -28,7 +28,11 @@ Guard reali (`config/local/fixcity/auth.php`): `web` (sessione) e `api` (Passpor
 
 | File | Modifica |
 |---|---|
+<<<<<<< .merge_file_tjUuGv
 | `Modules/User/app/Actions/Auth/BuildActiveUserProviderAction.php` (nuovo) | `EloquentUserProvider` con `withQuery`: per i modelli `BaseUser` aggiunge `whereNull(deleted_at)`. Copre `retrieveByCredentials` (tutti i login, reset password), `retrieveById` (sessioni e token Passport) e `retrieveByToken` ("ricordami"). |
+=======
+| `Modules/User/app/Actions/Auth/BuildActiveUserProviderAction.php` (nuovo) | `EloquentUserProvider` con `withQuery`: per i modelli `BaseUser` aggiunge `whereNull(deleted_at)` quando la colonna è presente. Copre `retrieveByCredentials` (tutti i login, reset password), `retrieveById` (sessioni e token Passport) e `retrieveByToken` ("ricordami"). Il controllo di schema evita un 500 su installazioni legacy mentre la migrazione canonica completa `users`. |
+>>>>>>> .merge_file_ffSAHS
 | `Modules/User/app/Providers/UserServiceProvider.php` | `registerActiveUserProvider()`: `Auth::provider('eloquent', ...)` sostituisce il driver del framework, per ogni tenant e anche per la guard `api`, senza toccare i `config/<tenant>/auth.php`. |
 | `Modules/User/app/Actions/Auth/RevokeUserAccessAction.php` (nuovo) | Revoca i token Passport dell'utente e i loro refresh token e azzera `remember_token`. Restituisce quanti token ha revocato. |
 | `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php` | Chiama `RevokeUserAccessAction` nella stessa transazione, subito dopo `deleted_at`. |
@@ -46,6 +50,11 @@ Guard reali (`config/local/fixcity/auth.php`): `web` (sessione) e `api` (Passpor
 
 Utenti esistenti: nessuna migrazione. Chi ha gia' `email_verified_at` resta verificato.
 
+<<<<<<< .merge_file_tjUuGv
+=======
+La compatibilità legacy non sostituisce la migrazione: `2026_11_12_120000_create_users_table.php` deve essere eseguita per aggiungere `deleted_at` e ripristinare il blocco degli account cancellati. Finché manca, il database non può rappresentare un account cancellato e il provider considera attivi gli utenti della tabella legacy.
+
+>>>>>>> .merge_file_ffSAHS
 Flusso del cittadino: registrazione → login automatico e mail con link → "Segnala" → se non verificato, pagina di verifica con reinvio → link → di nuovo al wizard.
 
 ## Test

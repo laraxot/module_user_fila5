@@ -1,3 +1,11 @@
+---
+title: "Analisi Approfondita del Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi approfondita del modulo user user"
+---
 # Analisi Approfondita del Modulo User
 
 > **Generato**: [DATE]

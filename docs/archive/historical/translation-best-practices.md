@@ -1,3 +1,11 @@
+---
+title: "Best Practices per le Traduzioni"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per le traduzioni user"
+---
 # Best Practices per le Traduzioni
 
 ## Principi Generali

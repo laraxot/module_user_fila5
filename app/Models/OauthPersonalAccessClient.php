@@ -31,6 +31,11 @@ use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
  */
 class OauthPersonalAccessClient extends BaseModel
 {
+<<<<<<< .merge_file_o50TdI
+    use OauthPersonalAccessClientRelationsTrait;
+
+=======
+>>>>>>> .merge_file_Q65McG
     protected $table = 'oauth_personal_access_clients';
 
     protected $connection = 'user';

@@ -21,7 +21,8 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
-status: draft
+status: superseded
+superseded_by: ../console-commands/assign-module-command.md
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente
@@ -193,4 +194,3 @@ Result: No changes made to user modules.
 - ✅ **Feedback Migliorato**: Messaggi chiari per assegnazioni e revoche
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
-

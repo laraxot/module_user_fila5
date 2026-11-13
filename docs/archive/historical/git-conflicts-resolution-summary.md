@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti Git - Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti git - modulo user user"
+---
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione

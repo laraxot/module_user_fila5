@@ -1,3 +1,11 @@
+---
+title: "Regole per Widget di Autenticazione"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "regole per widget di autenticazione user"
+---
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -144,5 +152,5 @@ tests/Feature/Filament/Widgets/
 
 - [Widget Structure](widgets-structure.md)
 - [Filament Best Practices](filament_best_practices.md)
-- [Authentication Architecture](authentication.md)
+- [Authentication Architecture](../../authentication.md)
 - [Security Guidelines](security_guidelines.md)

@@ -1,3 +1,12 @@
+---
+title: "User Module - Charts Implementation"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - charts implementation user"
+status: superseded
+superseded_by: ../../charts-implementation.md
+---
 # User Module - Charts Implementation
 
 ## 📋 Panoramica

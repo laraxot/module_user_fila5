@@ -1,22 +1,28 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+/**
+ * Canonical owner migration for SocialiteUser on the user connection.
+ *
+ * The old singular migration could be marked as run against the wrong
+ * connection in legacy deployments; this forward-only owner repairs that
+ * drift without moving or deleting OAuth data.
+ */
 return new class extends XotBaseMigration
 {
-    /**
-     * Run the migrations.
-     */
+    protected ?string $model_class = SocialiteUser::class;
+
     public function up(): void
     {
-        $xot = XotData::make();
-        $userClass = $xot->getUserClass();
-        // -- CREATE --
+        $userClass = XotData::make()->getUserClass();
+
         $this->tableCreate(static function (Blueprint $table) use ($userClass): void {
-            // $table->uuid('id')->primary();
             $table->id();
             $table->foreignIdFor($userClass, 'user_id');
             $table->string('provider');
@@ -25,26 +31,14 @@ return new class extends XotBaseMigration
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('avatar')->nullable();
-
-            /*
-             * $table->unique([)
-             * 'provider',
-             * 'provider_id',
-             * ]);
-             */
         });
 
-        // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-            // if (! $this->hasColumn('email'))
-            //    $table->string('email')->nullable();
-            // }
             if ($this->getColumnType('token') === 'varchar') {
                 $table->text('token')->nullable()->change();
             }
-            $this->updateTimestamps($table);
 
-            // $this->updateUser($table);
+            $this->updateTimestamps($table);
         });
     }
 };

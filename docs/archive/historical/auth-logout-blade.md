@@ -1,7 +1,15 @@
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta di logout.blade.php user"
+---
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)

@@ -1,3 +1,11 @@
+---
+title: "UserFactory Advanced Integration - Modulo User & healthcare_app"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "userfactory advanced integration - modulo user & healthcare_app user"
+---
 # UserFactory Advanced Integration - Modulo User & healthcare_app
 
 ## Post Deep-Study Analysis 
@@ -288,7 +296,7 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration.md)
 - [Traits Complete Guide](./traits-complete-guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
 
 ### Root Documentation  
 - [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)

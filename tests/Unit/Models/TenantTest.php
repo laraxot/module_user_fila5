@@ -9,9 +9,21 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_I0TX9Q
 use Modules\User\Models\Tenant;
 use Mockery\MockInterface;
 use Modules\User\Tests\TestCase;
+=======
+use Mockery\MockInterface;
+<<<<<<< .merge_file_TfCeRB
+use Modules\User\Models\Tenant;
+use Tests\TestCase;
+
+use function Safe\json_encode;
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> .merge_file_3XWeQG
+>>>>>>> .merge_file_5dfYVs
 
 uses(\Modules\User\Tests\TestCase::class);
 
@@ -258,7 +270,11 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_preserve_slug_per_has_slug(): void
     {
+<<<<<<< .merge_file_I0TX9Q
         $tenant = new Tenant();
+=======
+        $tenant = new Tenant;
+>>>>>>> .merge_file_5dfYVs
 
         /** @var list<array{string, string|int}> $calls */
         $calls = [];
@@ -280,7 +296,11 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_uses_id_for_non_uuid_value(): void
     {
+<<<<<<< .merge_file_I0TX9Q
         $tenant = new Tenant();
+=======
+        $tenant = new Tenant;
+>>>>>>> .merge_file_5dfYVs
 
         /** @var list<array{string, string|int}> $calls */
         $calls = [];
@@ -302,7 +322,11 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_accetta_uuid_valido_sulla_chiave_univoca(): void
     {
+<<<<<<< .merge_file_I0TX9Q
         $tenant = new Tenant();
+=======
+        $tenant = new Tenant;
+>>>>>>> .merge_file_5dfYVs
 
         $uuid = (string) Str::uuid();
 

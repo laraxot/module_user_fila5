@@ -1,3 +1,11 @@
+---
+title: "Passport Complete Management - Implementation Summary"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "passport complete management - implementation summary user"
+---
 # Passport Complete Management - Implementation Summary
 
 > **Data**: 2026-01-27  

@@ -35,7 +35,11 @@ final class HasVerifiedIdentityAction
         }
 
         // Attributi grezzi, non getAttribute(): su un database non ancora migrato (`auth_method` arriva con
+<<<<<<< .merge_file_dIPIHI
         // 2026_11_11_000001_add_digital_identity_columns_to_users_table) Model::preventAccessingMissingAttributes() farebbe un 500.
+=======
+        // 2026_11_12_120000_create_users_table) Model::preventAccessingMissingAttributes() farebbe un 500.
+>>>>>>> .merge_file_3MFOeO
         return $user instanceof Model
             && in_array($user->getAttributes()['auth_method'] ?? null, self::TRUSTED_IDENTITY_METHODS, true);
     }

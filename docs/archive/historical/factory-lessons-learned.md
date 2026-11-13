@@ -1,3 +1,11 @@
+---
+title: "Factory Audit Lessons Learned - User Module"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "factory audit lessons learned - user module user"
+---
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER

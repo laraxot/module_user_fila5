@@ -1,3 +1,11 @@
+---
+title: "Actions Structure"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "actions structure user"
+---
 # Actions Structure 
 
 ## Directory Structure
@@ -74,4 +82,4 @@ class DeleteUserAction
 - [Path Conventions](./path-conventions.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure.md)
-- [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+- [Queueable Actions Best Practices](../best-practices/queueable-actions.md)

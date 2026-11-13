@@ -2,15 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_Fw3CHY
 use Modules\User\Tests\TestCase;
+=======
+<<<<<<< .merge_file_jr4ZUz
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> .merge_file_BzcmGC
+>>>>>>> .merge_file_ClDx0P
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
+use Tests\TestCase;
 
 /**
  * @property User $subjectUser
  */
-
 uses(TestCase::class);
 
 beforeEach(function (): void {

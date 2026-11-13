@@ -32,6 +32,7 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Actions\Model\ModelHasColumnAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Traits as XotTraits;
@@ -129,7 +130,11 @@ use Spatie\Permission\Models\Permission;
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
+<<<<<<< .merge_file_QMpwg2
     use BaseUserMutators, BaseUserRelations, HasSpatiePermission, HasTeams, Notifiable, HasAuthenticationLogTrait {
+=======
+    use BaseUserMutators, BaseUserRelations, HasAuthenticationLogTrait, HasSpatiePermission, HasTeams, Notifiable {
+>>>>>>> .merge_file_e5RQPu
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
         BaseUserRelations::notifications insteadof Notifiable;
@@ -147,7 +152,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasXotFactory;
     use InteractsWithMedia;
 
-    // use SoftDeletes;
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
@@ -348,7 +352,18 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public static function findForPassport(string $username): ?self
     {
+<<<<<<< .merge_file_QMpwg2
         return static::where('email', $username)->whereNull('deleted_at')->first();
+=======
+        $query = static::where('email', $username);
+        $user = new static;
+
+        if (app(ModelHasColumnAction::class)->execute($user, 'deleted_at')) {
+            $query->whereNull($user->qualifyColumn('deleted_at'));
+        }
+
+        return $query->first();
+>>>>>>> .merge_file_e5RQPu
     }
 
     /**

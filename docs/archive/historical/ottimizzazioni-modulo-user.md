@@ -1,3 +1,11 @@
+---
+title: "Ottimizzazioni Modulo User - DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "ottimizzazioni modulo user - dry + kiss user"
+---
 # Ottimizzazioni Modulo User - DRY + KISS
 
 ## Panoramica
@@ -335,7 +343,7 @@ echo "✅ Consolidamento completato!"
 ## Collegamenti Bidirezionali
 
 ### Documentazione Correlata
-- [README](../readme.md) - Panoramica modulo User
+- [README](../../README.md) - Panoramica modulo User
 - [Architettura](./core/architecture.md) - Architettura modulo
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 
@@ -344,8 +352,8 @@ echo "✅ Consolidamento completato!"
 - [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
 
 ### Documentazione Moduli Correlati
-- [Xot/docs/ottimizzazioni-modulo-xot.md](../../xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
-- [UI/docs/ottimizzazioni-modulo-ui.md](../../ui/docs/ottimizzazioni-modulo-ui.md) - Ottimizzazioni modulo UI
+- [Xot/docs/ottimizzazioni-modulo-xot.md](../../../../Xot/docs/ottimizzazioni-modulo-xot.md) - Ottimizzazioni modulo Xot
+- [UI/docs/ottimizzazioni-modulo-ui.md](../../../../UI/docs/ottimizzazioni-modulo-ui.md) - Ottimizzazioni modulo UI
 
 ---
 

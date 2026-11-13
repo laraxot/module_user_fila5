@@ -1,3 +1,11 @@
+---
+title: "Best Practices per l'Implementazione del Logout"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per l'implementazione del logout user"
+---
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati

@@ -76,6 +76,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property Carbon|null $trial_ends_at
  *
  * @method static Builder<static>|Tenant whereTrialEndsAt($value)
+<<<<<<< .merge_file_lfm89c
  *
+=======
+>>>>>>> .merge_file_qq8mTH
  */
 class Tenant extends BaseTenant {}

@@ -7,7 +7,15 @@ use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
+<<<<<<< .merge_file_GFhQlN
 use Modules\User\Tests\TestCase;
+=======
+<<<<<<< .merge_file_CfGXTZ
+use Tests\TestCase;
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> .merge_file_6nEM8h
+>>>>>>> .merge_file_HVVQXY
 
 /**
  * Test per il trait HasTeams corretto secondo filosofia Jetstream + Laraxot.
@@ -119,9 +127,15 @@ test('it correctly manages current team', function (): void {
 
 test('it correctly identifies current team', function (): void {
     ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsTraitTestFixture();
+<<<<<<< .merge_file_GFhQlN
 
     $user->switchTeam($personalTeam);
 
+=======
+
+    $user->switchTeam($personalTeam);
+
+>>>>>>> .merge_file_HVVQXY
     expect($user->isCurrentTeam($personalTeam))->toBeTrue();
     expect($user->isCurrentTeam($team))->toBeFalse();
 });
@@ -150,9 +164,15 @@ test('it returns owned teams', function (): void {
 
 test('it returns personal team', function (): void {
     ['user' => $user, 'personalTeam' => $personalTeam] = hasTeamsTraitTestFixture();
+<<<<<<< .merge_file_GFhQlN
 
     $resolvedPersonalTeam = $user->personalTeam();
 
+=======
+
+    $resolvedPersonalTeam = $user->personalTeam();
+
+>>>>>>> .merge_file_HVVQXY
     if (! $resolvedPersonalTeam instanceof TeamContract) {
         throw new RuntimeException('Expected the user to have a personal team.');
     }
@@ -271,8 +291,18 @@ test('it handles edge cases correctly', function (): void {
 });
 
 test('it validates assertions correctly', function (): void {
+<<<<<<< .merge_file_GFhQlN
+=======
+<<<<<<< .merge_file_CfGXTZ
+    expect(fn () => $this->user->ownsTeam(null))->toThrow(InvalidArgumentException::class, 'Team cannot be null');
+=======
+>>>>>>> .merge_file_HVVQXY
     ['user' => $user] = hasTeamsTraitTestFixture();
 
     // ownsTeam() accetta ?TeamContract: un team assente non e' posseduto, nessuna eccezione.
     expect($user->ownsTeam(null))->toBeFalse();
+<<<<<<< .merge_file_GFhQlN
+=======
+>>>>>>> .merge_file_6nEM8h
+>>>>>>> .merge_file_HVVQXY
 });

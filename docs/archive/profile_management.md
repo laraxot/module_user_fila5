@@ -1,3 +1,11 @@
+---
+title: "Profile Management in Laravel Modules"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "profile management in laravel modules user"
+---
 # Profile Management in Laravel Modules
 
 ## Overview

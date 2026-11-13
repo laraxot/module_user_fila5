@@ -10,6 +10,7 @@ use Modules\User\Actions\Database\IsUserDatabaseConfiguredAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\UserContract;
 use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\BaseUser;
 
 /**
  * Persist an authentication_logs row on the User connection (`user` / fixcity_user).
@@ -18,7 +19,15 @@ use Modules\User\Models\AuthenticationLog;
  * a failed/successful login into a 500 (BMAD: audit must not break auth UX).
  *
  * Identity = {@see UserContract}; capability = {@see HasAuthentications}.
+<<<<<<< .merge_file_vtyQx9
  * Never type-hint the concrete BaseUser: that is an internal
+=======
+<<<<<<< .merge_file_QRariS
+ * Never type-hint {@see BaseUser}: that is an internal
+=======
+ * Never type-hint the concrete BaseUser: that is an internal
+>>>>>>> .merge_file_yVylAm
+>>>>>>> .merge_file_DL36o5
  * abstract implementation, not the consumer boundary.
  */
 final class RecordAuthenticationLogAction

@@ -28,6 +28,18 @@ return [
             'tooltip' => '',
         ],
     ],
+<<<<<<< .merge_file_VAuFDm
+=======
+<<<<<<< .merge_file_szAFJk
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+    ],
+=======
+>>>>>>> .merge_file_xPLZFs
+>>>>>>> .merge_file_pkMpkA
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',

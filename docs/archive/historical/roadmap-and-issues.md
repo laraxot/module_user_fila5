@@ -1,3 +1,11 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - roadmap, issues & optimization user"
+---
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -371,8 +379,8 @@ php artisan queue:prune-failed --hours=48
 
 - [← User Module README](./README.md)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
-- [← Project Roadmap](../../../../docs/project-analysis-and-roadmap.md)
-- [← Root Documentation](../../../../docs/index.md)
+- [← Project Roadmap](../../../../../docs/project-analysis-and-roadmap.md)
+- [← Root Documentation](../../index.md)
 
 ---
 

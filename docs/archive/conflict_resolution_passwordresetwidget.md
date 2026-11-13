@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti passwordresetwidget.php user"
+---
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto

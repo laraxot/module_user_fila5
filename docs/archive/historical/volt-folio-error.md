@@ -1,3 +1,11 @@
+---
+title: "Errore VoltDirectiveMissingException in Folio"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore voltdirectivemissingexception in folio user"
+---
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema

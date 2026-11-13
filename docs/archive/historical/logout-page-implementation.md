@@ -1,3 +1,11 @@
+---
+title: "Implementazione della Pagina di Logout nel Tema One"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione della pagina di logout nel tema one user"
+---
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
