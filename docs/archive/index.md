@@ -1,3 +1,11 @@
+---
+title: "User Module Documentation"
+type: index
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module documentation user"
+---
 # User Module Documentation
 
 ## Overview
@@ -71,4 +79,4 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 
 # Indice Documentazione User
 
-- [filament-best-practices.mdc](./filament-best-practices.mdc): **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+- [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.

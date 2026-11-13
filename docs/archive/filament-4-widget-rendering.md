@@ -1,3 +1,12 @@
+---
+title: "Guida Rendering Widget Filament 4 - Modulo User"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "guida rendering widget filament 4 - modulo user user"
+status: superseded
+superseded_by: ../filament-4-widget-rendering.md
+---
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  

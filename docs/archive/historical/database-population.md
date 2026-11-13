@@ -1,3 +1,12 @@
+---
+title: "Popolamento Database - Modulo User"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "popolamento database - modulo user user"
+status: superseded
+superseded_by: ../../database-population.md
+---
 # Popolamento Database - Modulo User
 
 ## Panoramica

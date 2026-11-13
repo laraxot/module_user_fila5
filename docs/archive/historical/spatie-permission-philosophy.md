@@ -1,3 +1,11 @@
+---
+title: "FILOSOFIA SPATIE PERMISSION IN LARAXOT"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "filosofia spatie permission in laraxot user"
+---
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -213,7 +221,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 
 ## 📚 **RIFERIMENTI E REGOLE CORRELATE**
 
-- [Vendor Extension Pattern](vendor-extension-pattern.md) - Pattern generale per estendere classi vendor
+- [Vendor Extension Pattern](../../vendor-extension-pattern.md) - Pattern generale per estendere classi vendor
 - [BaseModel Philosophy](../xot/docs/models/model-architecture.md)
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)

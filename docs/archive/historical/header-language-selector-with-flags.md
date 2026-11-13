@@ -1,3 +1,11 @@
+---
+title: "Implementazione del Selettore di Lingua con Bandiere SVG"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del selettore di lingua con bandiere svg user"
+---
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati

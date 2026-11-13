@@ -1,3 +1,11 @@
+---
+title: "Migration Fix: create_tenants_table"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "migration fix: create_tenants_table user"
+---
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`

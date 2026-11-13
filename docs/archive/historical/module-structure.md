@@ -1,3 +1,11 @@
+---
+title: "Struttura del Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura del modulo user user"
+---
 # Struttura del Modulo User
 
 ## Panoramica

@@ -1,3 +1,11 @@
+---
+title: "Filament 5.x Nested Resources - Opportunità di Applicazione"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "filament 5.x nested resources - opportunità di applicazione user"
+---
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: 2026-01-22  

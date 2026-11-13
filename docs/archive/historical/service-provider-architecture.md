@@ -1,3 +1,11 @@
+---
+title: "Service Provider Architecture - Module Pattern"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "service provider architecture - module pattern user"
+---
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: [DATE]
@@ -366,7 +374,7 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [PASSPORT_INTEGRATION.md](./passport_integration.md) - Passport integration completa
+- [PASSPORT_INTEGRATION.md](../../passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
 - [README.md](./README.md) - Overview modulo
 

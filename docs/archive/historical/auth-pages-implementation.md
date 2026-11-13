@@ -1,7 +1,15 @@
+---
+title: "Implementazione Corretta delle Pagine Auth"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta delle pagine auth user"
+---
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)

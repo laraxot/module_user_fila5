@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti traduzioni tema two - modulo user user"
+---
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: 2025-01-06

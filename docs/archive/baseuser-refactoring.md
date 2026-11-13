@@ -1,3 +1,11 @@
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "baseuser refactoring - completato user"
+---
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -232,16 +240,16 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
-- [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
-- [Refactoring Plan](../../../docs/baseuser-dry-violation.md) - Piano esecutivo
+- [DRY Violation Analysis](../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 
 ### Modulo User
-- [BaseUser Model](./models/baseuser.md)
+- [BaseUser Model](../models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./README.md)
 
 ### Root Progetto
-- [Code Quality](../../../docs/code-quality-analysis.md)
+- [Code Quality](../code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 
 ### Spatie Documentation

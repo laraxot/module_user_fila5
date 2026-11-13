@@ -1,111 +1,250 @@
+<<<<<<< .merge_file_y7GrLQ
 ---
-title: "User, correzioni PHPStan di gennaio 2025"
-type: concept
-status: stale
-created: "2025-01"
-updated: 2026-11-06
-module: User
-story: collision-rewrite-complete-files
-tags: [phpstan, fixes, user, widgets, archive]
-qmd: "user module correzioni phpstan gennaio 2025 BaseListUsers getTableActions view-string PasswordResetConfirmWidget mixed string cast UserTypeRegistrationsChartWidget TrendValue falso positivo"
-related:
-  - ../phpstan-fixes.md
-  - ./phpstan-fixes-gennaio-complete.md
-  - ./phpstan-fixes-roadmap.md
-  - ./phpstan-fixes-passport.md
-  - ../../quality-roadmap.md
-  - ../../../../Xot/docs/stories/collision-rewrite-complete-files.story.md
+title: "User Module - PHPStan Fixes Session 2025-10-01"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - phpstan fixes session 2025-10-01 user"
+---
+# User Module - PHPStan Fixes Session 2025-10-01
+
+## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
+
+**Data correzione**: 1 Ottobre 2025  
+**Analizzati**: ~400 file  
+**Errori iniziali**: ~100+ (bloccavano analisi)  
+**Errori attuali**: 95  
+**Errori critici risolti**: 7 (syntax errors)
+
 ---
 
-# User, correzioni PHPStan di gennaio 2025
+## 🛠️ Correzioni Implementate
 
-Registro dei quattro errori PHPStan emersi nel modulo User a gennaio 2025: per ognuno che cosa diceva PHPStan, che cosa si e' deciso e che cosa ne e' rimasto. Serve a chi incontra di nuovo uno di questi messaggi e vuole sapere se e' un difetto del codice o un limite dell'analisi.
+### 1. BaseUser.php - Rimozione Codice Orfano (CRITICO)
 
-E' storia: i quattro punti sono oggi risolti o non esistono piu' nella forma descritta (colonna "Oggi").
+**File**: `app/Models/BaseUser.php`  
+**Linee**: 377-419  
+**Problema**: Blocchi di codice senza dichiarazione di metodo che causavano 7 errori di sintassi e bloccavano l'intera analisi PHPStan
 
-## Esito in sintesi
-
-| # | Dove | Errore | Esito allora | Oggi (verificato il 2026-11-06) |
-|---|------|--------|--------------|---------------------------------|
-| 1 | `BaseListUsers::getTableActions()` | tipo di ritorno incompatibile col padre | falso positivo, codice lasciato | `BaseListUsers` estende `XotBaseListRecords` e non dichiara piu' `getTableActions()` |
-| 2 | `PasswordResetConfirmWidget::$view` | `view-string` non accetta il valore di default | corretto con `@var view-string` | il widget estende `XotBaseSchemaWidget` e non ha piu' la proprieta' `$view` |
-| 3 | `RegisterWidget`, `ResetPasswordWidget`, `PasswordExpiredWidget`, `UpdateUserAction` | cast da `mixed` a `string` | corretto con controllo di tipo | il controllo `is_string` e' ancora in `RegisterWidget` e `ResetPasswordWidget`; `PasswordExpiredWidget` e `UpdateUserAction` sono stati riscritti e non lo usano piu' |
-| 4 | `UserTypeRegistrationsChartWidget` | callback di `Collection::map()` con tipo piu' stretto | falso positivo, codice lasciato | il callback accetta `mixed` e restringe con `instanceof TrendValue`: l'errore non si presenta piu' |
-
-## Dettaglio
-
-### 1. `BaseListUsers`, compatibilita' del tipo di ritorno
-
-```text
-Method BaseListUsers::getTableActions() should return array<string, Action|ActionGroup> but returns non-empty-array<string, ActionGroup|ChangePasswordAction|Action>.
+**Codice rimosso**:
+```php
+// Linee 377-381: Blocco orfano #1
+{
+    if ($value !== null) {
+        return $value;
+    }
+{
+    if ($value !== null) {
+        return $value;
+    }
+    if ($this->getKey() === null) {
+        return $this->email ?? 'User';
+    }
+    // ... altro codice orfano ...
+}
 ```
 
-Il metodo restituiva un array associativo con chiavi stringa e includeva `ChangePasswordAction`, che estende correttamente `Action`. L'errore riguardava solo la tipizzazione fine delle azioni. Decisione: analizzato, codice corretto, probabile falso positivo.
+**Impatto**: 
+- ✅ Eliminati 7 errori di sintassi
+- ✅ Sbloccata l'analisi PHPStan su TUTTI i moduli
+- ✅ Permesso il proseguimento delle correzioni
 
-### 2. `PasswordResetConfirmWidget`, proprieta' `view-string`
+### 2. BaseUser.php - Aggiunta Metodi Teams e Tenants
 
-```text
-Static property PasswordResetConfirmWidget::$view (view-string) does not accept default value of type string.
-```
+**Data**: 1 Ottobre 2025 (sera)  
+**Autore**: Utente  
 
-Soluzione: PHPDoc esplicito `view-string`, valore stringa invariato.
+Aggiunti metodi per gestione Teams e Tenants:
 
 ```php
-/** @var view-string */
-protected static string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
+/**
+ * Get all of the teams the user belongs to.
+ *
+ * @return BelongsToMany<Team, static>
+ */
+public function teams(): BelongsToMany
+{
+    return $this->belongsToMany(Team::class, 'team_user')
+        ->withPivot('role')
+        ->withTimestamps();
+}
+
+/**
+ * Get the current team of the user's context.
+ */
+public function currentTeam(): BelongsTo
+{
+    return $this->belongsTo(Team::class, 'current_team_id');
+}
+
+/**
+ * Determine if the given team is the current team.
+ */
+public function isCurrentTeam(\Modules\User\Contracts\TeamContract $teamContract): bool
+{
+    $current = $this->getAttribute('current_team_id');
+    return (string) $current === (string) $teamContract->getKey();
+}
+
+/**
+ * Get all of the tenants the user belongs to.
+ *
+ * @return BelongsToMany<Tenant, static>
+ */
+public function tenants(): BelongsToMany
+{
+    return $this->belongsToMany(Tenant::class, 'tenant_user')
+        ->withPivot('role')
+        ->withTimestamps();
+}
+
+/**
+ * Filament: return the tenants available to this user for the given Panel.
+ *
+ * @return \Illuminate\Support\Collection<int, Tenant>
+ */
+public function getTenants(Panel $panel): \Illuminate\Support\Collection
+{
+    return $this->tenants()->get();
+}
+
+/**
+ * Filament: determine if the user can access the given tenant.
+ */
+public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bool
+{
+    if ($tenant instanceof Tenant) {
+        return $this->tenants()->whereKey($tenant->getKey())->exists();
+    }
+    return false;
+}
 ```
 
-### 3. Cast da `mixed` a `string` nei widget di autenticazione
+**Implementato contratto**: `HasTeamsContract`
 
-File coinvolti: `RegisterWidget.php`, `ResetPasswordWidget.php`, `PasswordExpiredWidget.php`, `UpdateUserAction.php`. Soluzione: non convertire mai un valore non tipizzato, controllarne il tipo prima.
+---
 
-```php
-$value = config('some.config.key');
-$stringValue = is_string($value) ? $value : '';
-```
+## 📋 Errori Rimanenti (95)
 
-### 4. `UserTypeRegistrationsChartWidget`, callback della collezione
+### Categorie Principali
 
-```text
-Parameter #1 $callback of method Collection::map() expects callable(mixed, int|string): non-falsy-string, Closure(TrendValue): non-falsy-string given.
-```
+1. **Property Access Issues** (~50 errori)
+   - Accesso a proprietà non definite su Model generico
+   - Necessario: type hints più specifici
 
-Il parametro del callback (`TrendValue`) e' piu' specifico di quello atteso (`mixed`): tecnicamente corretto e sicuro. Decisione: analizzato, falso positivo. La forma attuale evita comunque il messaggio, senza soppressioni:
+2. **Type Safety** (~30 errori)
+   - Return types non precisi
+   - Mixed types da stringere
 
-```php
-$data->map(fn (mixed $value) => $value instanceof TrendValue ? $value->aggregate : 0)
-```
+3. **Method Calls** (~15 errori)
+   - Chiamate a metodi non garantiti
 
-## Pattern che ne sono usciti
+### Piano di Risoluzione
 
-1. **Valori di configurazione**: `config('chiave')` restituisce `mixed`; si controlla con `is_string` e si da' un valore di riserva esplicito.
-2. **Proprieta' vista**: dove una proprieta' contiene il nome di una vista, `@var view-string`. Dove si puo', la proprieta' non serve e la vista la decide la classe base XotBase.
-3. **Proprieta' di widget tipizzate**: `public ?string $token = null;`, `public string $currentState = 'default';`.
-4. **Callback di collezione**: accettare `mixed` e restringere dentro la funzione, invece di dichiarare il tipo specifico nel parametro.
+**Priorità ALTA**:
+- [ ] Correggere BaseUser property access
+- [ ] Migliorare type hints nei trait
+- [ ] Stringere return types nei service provider
 
-## Conformita' Laraxot
+**Priorità MEDIA**:
+- [ ] Correggere seeders
+- [ ] Migliorare factories
+- [ ] Sistemare helper functions
 
-- Tutti i widget estendono le classi base XotBase, mai Filament direttamente.
-- Gli stati dei widget di autenticazione restano un sistema di stati esplicito, non flag sparsi.
-- Le azioni personalizzate estendono le classi base appropriate; i metodi Filament restituiscono array associativi.
+**Priorità BASSA**:
+- [ ] Test type hints
+- [ ] Migration type safety
 
-## Raccomandazioni di allora
+---
 
-1. Tipizzare sempre le proprieta' di stato dei widget e validare i valori di configurazione prima del cast.
-2. Verificare la compatibilita' con le classi padre quando si ridefinisce un metodo Filament.
-3. Provare a mano i widget di autenticazione dopo ogni modifica di tipo.
-4. Per i falsi positivi confermati, allora si proponeva `@phpstan-ignore-next-line`.
+## 🎯 Architettura User Module
 
-La raccomandazione 4 e' **superata**: la regola del progetto vieta `@phpstan-ignore` e `@phpstan-ignore-next-line` (vedi `docs/wiki/rules/phpstan-l10-compliance.md`). Un falso positivo si risolve sulla causa, come e' successo per il punto 4 qui sopra, oppure resta nel report senza soppressione.
+### Models
+- **BaseUser** ⚠️ - In progress (95 errori rimanenti)
+- **User** - Estende BaseUser
+- **Team** - Gestione team
+- **Tenant** - Gestione tenant/organization
 
-## Altre cronache PHPStan del modulo
+### Traits
+- **HasTeams** - Gestione appartenenza team
+- **HasTenants** - Gestione multi-tenancy
+- **HasPermissions** - Integrazione Spatie permissions
 
-- [../phpstan-fixes.md](../phpstan-fixes.md): sessione del 1 ottobre 2025 (codice orfano in `BaseUser`, 95 errori rimasti).
-- [phpstan-fixes-gennaio-complete.md](./phpstan-fixes-gennaio-complete.md): chiusura di gennaio 2025 a zero errori.
-- [phpstan-fixes-roadmap.md](./phpstan-fixes-roadmap.md): piano per il livello 10.
-- [phpstan-fixes-passport.md](./phpstan-fixes-passport.md): decisioni per Passport e Socialite.
-- Copie dello stesso testo di questo documento, da ritirare quando si decide: `phpstan-fixes-2025.md`, `phpstan-fixes-conflict.md`, `phpstan-fixes-conflict-2e.md` in questa cartella e `../phpstan_fixes_2025.md`.
+### Contracts
+- **UserContract** - Interfaccia base utente
+- **HasTeamsContract** ✅ - Implementato in BaseUser
+- **HasTenants** - Multi-tenancy support
 
-## Cronologia del documento
+### Resources Filament
+- UserResource
+- TeamResource
+- RoleResource
+- PermissionResource
 
-Prima di questa riscrittura il nome `phpstan-fixes.md` era un rinvio ("identico al canonico") alla sessione di ottobre 2025, che pero' e' un altro documento. Il testo di gennaio 2025 stava in `phpstan-fixes-2.md` (senza front matter) e `phpstan-fixes-3.md` (con front matter e `related` verso file mai esistiti, piu' un riferimento a un issue di un altro repository, tolti). I due corpi erano identici riga per riga; qui sono unificati, collegati al codice di oggi e privati della raccomandazione superata. Gli originali sono ritirati come `.md.old` in questa cartella.
+---
+
+## 📊 Progressione
+
+| Fase | Errori | Status |
+|------|--------|--------|
+| **Inizio sessione** | 100+ (bloccato) | ❌ Analisi impossibile |
+| **Dopo fix sintassi** | 95 | ✅ Analisi possibile |
+| **Dopo aggiunta Teams/Tenants** | 95 | ⏳ Pronto per correzioni |
+| **Target finale** | 0 | 🎯 Obiettivo domani |
+
+---
+
+## 🔧 Best Practices Applicate
+
+### ✅ FATTO
+1. Rimosso codice orfano
+2. Aggiunti PHPDoc completi per relazioni
+3. Type hints espliciti per BelongsToMany
+4. Implementato contratto HasTeamsContract
+
+### ⏳ DA FARE
+1. Correggere property access su Model generico
+2. Migliorare type hints nei metodi legacy
+3. Stringere return types
+4. Aggiungere assertions PHPStan dove necessario
+
+---
+
+## 🔗 Collegamenti
+
+- [← User Module README](./README.md)
+- [← PHPStan Session Report](../../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Root Documentation](../../index.md)
+
+---
+
+## 📝 Note per Domani
+
+### Prossimi Step
+1. **Analizzare i 95 errori sistematicamente** - Creare categorizzazione dettagliata
+2. **Correggere property access** - Aggiungere type hints specifici
+3. **Migliorare type safety** - Usare union types e PHPStan assertions
+4. **Test di regressione** - Verificare che tutte le funzionalità funzionino
+
+### Strategie
+- Analizzare errori per file (non per tipo)
+- Correggere i file più critici prima (Models, Providers)
+- Lasciare seeders e test per ultimi
+
+=======
+---
+title: "phpstan-fixes"
+type: alias
+status: superseded
+canonical: "archive/phpstan-fixes.md"
+qmd: "phpstan-fixes alias superseded"
+>>>>>>> .merge_file_lIGJKx
+---
+
+# phpstan-fixes
+
+Documento identico al canonico: [phpstan-fixes.md](../phpstan-fixes.md).
+
+Canonico: `laravel/Modules/User/docs/archive/phpstan-fixes.md`. Qui non ci sono istruzioni: seguire il file collegato.

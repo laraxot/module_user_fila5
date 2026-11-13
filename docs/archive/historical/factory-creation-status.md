@@ -1,3 +1,11 @@
+---
+title: "Factory Creation Status - User Module"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "factory creation status - user module user"
+---
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO

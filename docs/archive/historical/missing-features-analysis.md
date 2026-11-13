@@ -1,3 +1,11 @@
+---
+title: "Analisi Funzionalità Mancanti - Modulo User"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi funzionalità mancanti - modulo user user"
+---
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: 2026-01-22  
