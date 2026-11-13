@@ -12,12 +12,18 @@ use Illuminate\Support\Facades\Schema;
  * Profile creation at first login then fails. Converts the column only when it is still a
  * string type and the table is empty; otherwise it does nothing.
  */
-return new class extends Migration {
+return new class extends Migration
+{
     protected $connection = 'user';
 
     public function up(): void
     {
         $schema = Schema::connection('user');
+
+        // `MODIFY ... AUTO_INCREMENT` esiste solo in MySQL/MariaDB (SQLite dei test: niente da convertire).
+        if (! in_array(DB::connection('user')->getDriverName(), ['mysql', 'mariadb'], true)) {
+            return;
+        }
 
         if (! $schema->hasTable('profiles')) {
             return;
