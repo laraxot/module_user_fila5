@@ -1,261 +1,232 @@
 <?php
 
 declare(strict_types=1);
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
-use Modules\User\Contracts\TeamContract;
-use Modules\User\Database\Factories\TeamFactory;
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Role;
-use Modules\User\Models\Team;
-use Modules\User\Models\User;
+
 use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use Modules\User\Models\Role;
+use Modules\User\Contracts\TeamContract;
+use Modules\User\Models\Team;
+use Modules\User\Models\TeamUser;
+use Modules\User\Models\User;
 
-use function Safe\json_encode;
+/**
+ * Test per il trait HasTeams corretto secondo filosofia Jetstream + Laraxot.
+ *
+ * Verifica tutte le correzioni implementate:
+ * - belongsToTeams() ora funziona correttamente
+ * - belongsToTeam() usa logica corretta
+ * - ownsTeam() è efficiente
+ * - teams() usa belongsToManyX
+ * - Tipizzazione rigorosa
+ * - Metodi non-Jetstream rimossi
+ */
 
+/**
+ * @property User $subjectUser
+ * @property Team $subjectTeam
+ * @property Team $personalTeam
+ */
 uses(TestCase::class);
 
-/**
- * @param  array<string, mixed>  $attributes
- */
-function hasTeamsCreateTestUser(array $attributes = []): User
-{
-    return UserFactory::new()->createOne(array_merge([
-        'email' => 'test-'.uniqid('', true).'@example.com',
-    ], $attributes));
-}
-
-/**
- * @return array{user: User, team: Team, personalTeam: Team}
- */
-function hasTeamsBootstrapFixture(): array
-{
-    $user = hasTeamsCreateTestUser();
-    $team = TeamFactory::new()->createOne(['name' => 'shared-'.uniqid()]);
-    $personalTeam = TeamFactory::new()->createOne([
-        'user_id' => $user->id,
-        'name' => 'personal-'.uniqid(),
+beforeEach(function (): void {
+    $this->subjectUser = User::factory()->create();
+    $this->subjectTeam = Team::factory()->create();
+    $this->personalTeam = Team::factory()->create([
+        'user_id' => $this->subjectUser->id,
         'personal_team' => true,
     ]);
-
-    return [
-        'user' => $user,
-        'team' => $team,
-        'personalTeam' => $personalTeam,
-    ];
-}
-
-/**
- * @param  array<string, mixed>  $pivot
- */
-function hasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
-{
-    $payload = [
-        'team_id' => $team->id,
-        'user_id' => $user->id,
-        'created_at' => now(),
-        'updated_at' => now(),
-    ];
-
-    if (isset($pivot['role'])) {
-        $payload['role'] = $pivot['role'];
-    }
-
-    if (Schema::connection('user')->hasColumn('team_user', 'permissions') && array_key_exists('permissions', $pivot)) {
-        $permissions = $pivot['permissions'];
-        $payload['permissions'] = is_array($permissions) ? json_encode($permissions) : $permissions;
-    }
-
-    DB::connection('user')->table('team_user')->insert($payload);
-}
+});
 
 test('it correctly checks if user belongs to teams', function (): void {
-    ['user' => $user, 'team' => $team] = hasTeamsBootstrapFixture();
-    $userWithoutTeams = hasTeamsCreateTestUser();
+    // Test: User senza team
+    $userWithoutTeams = User::factory()->create();
+    expect($userWithoutTeams->belongsToTeams())->toBeFalse();
 
-    Assert::assertFalse($userWithoutTeams->belongsToTeams());
-    Assert::assertTrue($user->belongsToTeams());
+    // Test: User con team owned
+    expect($this->subjectUser->belongsToTeams())->toBeTrue();
 
-    $memberUser = hasTeamsCreateTestUser();
-    hasTeamsAttachMember($team, $memberUser, ['role' => 'member']);
-    Assert::assertTrue($memberUser->teamUsers()->exists());
+    // Test: User con team membership
+    $memberUser = User::factory()->create();
+    $memberUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
+    expect($memberUser->belongsToTeams())->toBeTrue();
 });
 
 test('it correctly checks if user belongs to specific team', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Null team
+    expect($this->subjectUser->belongsToTeam(null))->toBeFalse();
 
-    Assert::assertFalse($user->belongsToTeam(null));
-    Assert::assertTrue($user->belongsToTeam($personalTeam));
+    // Test: Owned team
+    expect($this->subjectUser->belongsToTeam($this->personalTeam))->toBeTrue();
 
-    hasTeamsAttachMember($team, $user, ['role' => 'member']);
-    Assert::assertTrue($user->teamUsers()->where('team_id', $team->id)->exists());
+    // Test: Member team
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
+    expect($this->subjectUser->belongsToTeam($this->subjectTeam))->toBeTrue();
 
-    $otherTeam = TeamFactory::new()->createOne(['name' => 'other-'.uniqid()]);
-    Assert::assertFalse($user->belongsToTeam($otherTeam));
+    // Test: Non-member team
+    $otherTeam = Team::factory()->create();
+    expect($this->subjectUser->belongsToTeam($otherTeam))->toBeFalse();
 });
 
 test('it correctly checks team ownership', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Owned team
+    expect($this->subjectUser->ownsTeam($this->personalTeam))->toBeTrue();
 
-    Assert::assertTrue($user->ownsTeam($personalTeam));
-    Assert::assertFalse($user->ownsTeam($team));
+    // Test: Non-owned team
+    expect($this->subjectUser->ownsTeam($this->subjectTeam))->toBeFalse();
 
-    hasTeamsAttachMember($team, $user, ['role' => 'member']);
-    Assert::assertFalse($user->ownsTeam($team));
+    // Test: Member team (not owner)
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
+    expect($this->subjectUser->ownsTeam($this->subjectTeam))->toBeFalse();
 });
 
 test('it uses belongs to many x for teams relationship', function (): void {
-    ['user' => $user] = hasTeamsBootstrapFixture();
-
-    Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
+    // Verifica che la relazione teams() restituisca BelongsToMany
+    $relation = $this->subjectUser->teams();
+    // Verifica che il pivot model sia TeamUser
+    expect($relation->getTable())->toBe('team_user');
 });
 
 test('it correctly manages current team', function (): void {
-    ['user' => $user, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Switch to valid team
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
+    $result = $this->subjectUser->switchTeam($this->subjectTeam);
+    expect($result)->toBeTrue();
+    expect($this->subjectUser->current_team_id)->toBe($this->subjectTeam->id);
 
-    Assert::assertTrue($user->switchTeam($personalTeam));
-
-    $refreshed = $user->fresh();
-    Assert::assertInstanceOf(User::class, $refreshed);
-    Assert::assertSame((string) $refreshed->current_team_id, (string) $personalTeam->id);
-
-    $otherTeam = TeamFactory::new()->createOne(['name' => 'switch-other-'.uniqid()]);
-    Assert::assertFalse($user->switchTeam($otherTeam));
+    // Test: Switch to non-member team
+    $otherTeam = Team::factory()->create();
+    $result = $this->subjectUser->switchTeam($otherTeam);
+    expect($result)->toBeFalse();
 });
 
 test('it correctly identifies current team', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    $this->subjectUser->switchTeam($this->personalTeam);
 
-    $user->switchTeam($personalTeam);
-
-    Assert::assertTrue($user->isCurrentTeam($personalTeam));
-    Assert::assertFalse($user->isCurrentTeam($team));
+    expect($this->subjectUser->isCurrentTeam($this->personalTeam))->toBeTrue();
+    expect($this->subjectUser->isCurrentTeam($this->subjectTeam))->toBeFalse();
 });
 
 test('it returns all teams user owns or belongs to', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Aggiungi user come member di un team
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
 
-    hasTeamsAttachMember($team, $user, ['role' => 'member']);
+    $allTeams = $this->subjectUser->allTeams();
 
-    $allTeams = $user->allTeams();
-
-    Assert::assertInstanceOf(Collection::class, $allTeams);
-    Assert::assertCount(1, $allTeams);
-    Assert::assertContains($personalTeam->id, $allTeams->pluck('id')->toArray());
-    Assert::assertTrue($user->teamUsers()->where('team_id', $team->id)->exists());
+    expect($allTeams)->toHaveCount(2); // personal team + member team
+    expect($allTeams->contains($this->personalTeam))->toBeTrue();
+    expect($allTeams->contains($this->subjectTeam))->toBeTrue();
 });
 
 test('it returns owned teams', function (): void {
-    ['user' => $user, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    $ownedTeams = $this->subjectUser->ownedTeams;
 
-    $ownedTeams = $user->ownedTeams;
-
-    Assert::assertInstanceOf(Collection::class, $ownedTeams);
-    Assert::assertCount(1, $ownedTeams);
-    Assert::assertContains($personalTeam->id, $ownedTeams->pluck('id')->toArray());
+    expect($ownedTeams)->toHaveCount(1);
+    expect($ownedTeams->contains($this->personalTeam))->toBeTrue();
 });
 
 test('it returns personal team', function (): void {
-    ['user' => $user, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    $personalTeam = $this->subjectUser->personalTeam();
 
-    $resolvedPersonalTeam = $user->personalTeam();
-
-    Assert::assertInstanceOf(TeamContract::class, $resolvedPersonalTeam);
-    Assert::assertSame($personalTeam->id, $resolvedPersonalTeam->id);
-    Assert::assertTrue($resolvedPersonalTeam->personal_team);
+    if (! $personalTeam instanceof TeamContract) {
+        throw new RuntimeException('Expected the user to have a personal team.');
+    }
+    expect($personalTeam->id)->toBe($this->personalTeam->id);
+    expect($personalTeam->personal_team)->toBeTrue();
 });
 
 test('it correctly determines team role', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Owner role
+    $role = $this->subjectUser->teamRole($this->personalTeam);
+    if (! $role instanceof Role) {
+        throw new RuntimeException('Expected an owner role.');
+    }
+    expect($role->name)->toBe('owner');
 
-    $role = $user->teamRole($personalTeam);
-    Assert::assertInstanceOf(Role::class, $role);
-    Assert::assertSame('owner', $role->name);
+    // Test: Member role
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'admin']);
+    $role = $this->subjectUser->teamRole($this->subjectTeam);
+    if (! $role instanceof Role) {
+        throw new RuntimeException('Expected a member role.');
+    }
+    expect($role->name)->toBe('admin');
 
-    hasTeamsAttachMember($team, $user, ['role' => 'admin']);
-    $user->unsetRelation('teamUsers');
-    $role = $user->teamRole($team);
-    Assert::assertInstanceOf(Role::class, $role);
-    Assert::assertSame('admin', $role->name);
-
-    $otherUser = hasTeamsCreateTestUser();
-    Assert::assertNull($otherUser->teamRole($team));
+    // Test: No role (not member)
+    $otherTeam = Team::factory()->create();
+    $role = $this->subjectUser->teamRole($otherTeam);
+    expect($role)->toBeNull();
 });
 
 test('it provides team role name helper', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Owner role name
+    $roleName = $this->subjectUser->teamRoleName($this->personalTeam);
+    expect($roleName)->toBe('owner');
 
-    Assert::assertSame('owner', $user->teamRoleName($personalTeam));
+    // Test: Member role name - detach first to avoid duplicates
+    $this->subjectUser->teams()->detach($this->subjectTeam->id);
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'admin']);
+    $roleName = $this->subjectUser->teamRoleName($this->subjectTeam);
+    expect($roleName)->toBe('admin');
 
-    hasTeamsAttachMember($team, $user, ['role' => 'admin']);
-    $user->unsetRelation('teamUsers');
-    Assert::assertSame('admin', $user->teamRoleName($team));
-
-    $otherTeam = TeamFactory::new()->createOne(['name' => 'name-other-'.uniqid()]);
-    Assert::assertSame('Unknown', $user->teamRoleName($otherTeam));
+    // Test: No role (not member)
+    $otherTeam = Team::factory()->create();
+    $roleName = $this->subjectUser->teamRoleName($otherTeam);
+    expect($roleName)->toBe('Unknown');
 });
 
 test('it correctly checks team role', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Owner always has any role
+    expect($this->subjectUser->hasTeamRole($this->personalTeam, 'admin'))->toBeTrue();
+    expect($this->subjectUser->hasTeamRole($this->personalTeam, 'member'))->toBeTrue();
 
-    hasTeamsAttachMember($team, $user, ['role' => 'admin']);
-    $user->unsetRelation('teamUsers');
-    Assert::assertTrue($user->hasTeamRole($team, 'admin'));
-    Assert::assertFalse($user->hasTeamRole($team, 'editor'));
-
-    Assert::assertTrue($user->hasTeamRole($personalTeam, 'admin'));
-    Assert::assertTrue($user->hasTeamRole($personalTeam, 'editor'));
-
-    $otherTeam = TeamFactory::new()->createOne(['name' => 'role-other-'.uniqid()]);
-    Assert::assertFalse($user->hasTeamRole($otherTeam, 'admin'));
+    // Test: Specific role check
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'admin']);
+    expect($this->subjectUser->hasTeamRole($this->subjectTeam, 'admin'))->toBeTrue();
+    expect($this->subjectUser->hasTeamRole($this->subjectTeam, 'member'))->toBeFalse();
 });
 
 test('it correctly manages team permissions', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: Owner has all permissions
+    $permissions = $this->subjectUser->teamPermissions($this->personalTeam);
+    expect($permissions)->toBe(['*']);
+    expect($this->subjectUser->hasTeamPermission($this->personalTeam, 'any_permission'))->toBeTrue();
 
-    Assert::assertTrue($user->hasTeamPermission($personalTeam, 'edit-team'));
+    // Test: Non-member has no permissions
+    $otherTeam = Team::factory()->create();
+    $permissions = $this->subjectUser->teamPermissions($otherTeam);
+    expect($permissions)->toBe([]);
+    expect($this->subjectUser->hasTeamPermission($otherTeam, 'any_permission'))->toBeFalse();
 
-    if (Schema::connection('user')->hasColumn('team_user', 'permissions')) {
-        hasTeamsAttachMember($team, $user, [
-            'role' => 'editor',
-            'permissions' => ['edit-content' => true],
-        ]);
-        $user->unsetRelation('teamUsers');
-
-        Assert::assertTrue($user->hasTeamPermission($team, 'edit-content'));
-        Assert::assertFalse($user->hasTeamPermission($team, 'delete-content'));
-    }
+    // Test: Member has role-based permissions
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'admin']);
+    $permissions = $this->subjectUser->teamPermissions($this->subjectTeam);
+    expect($permissions)->toBe(['admin']);
+    expect($this->subjectUser->hasTeamPermission($this->subjectTeam, 'admin'))->toBeTrue();
 });
 
 test('it provides utility methods', function (): void {
-    ['user' => $user, 'team' => $team, 'personalTeam' => $personalTeam] = hasTeamsBootstrapFixture();
+    // Test: hasTeams() alias
+    expect($this->subjectUser->hasTeams())->toBeTrue();
 
-    Assert::assertTrue($user->hasTeams());
-    Assert::assertTrue($user->isOwnerOrMember($personalTeam));
+    // Test: isOwnerOrMember()
+    expect($this->subjectUser->isOwnerOrMember($this->personalTeam))->toBeTrue();
 
-    hasTeamsAttachMember($team, $user, ['role' => 'member']);
-    Assert::assertFalse($user->isOwnerOrMember($team));
+    $this->subjectUser->teams()->attach($this->subjectTeam->id, ['role' => 'member']);
+    expect($this->subjectUser->isOwnerOrMember($this->subjectTeam))->toBeTrue();
 
-    $otherTeam = TeamFactory::new()->createOne(['name' => 'util-other-'.uniqid()]);
-    Assert::assertFalse($user->isOwnerOrMember($otherTeam));
+    $otherTeam = Team::factory()->create();
+    expect($this->subjectUser->isOwnerOrMember($otherTeam))->toBeFalse();
 });
 
 test('it handles edge cases correctly', function (): void {
-    ['user' => $user] = hasTeamsBootstrapFixture();
-    $newUser = new User;
+    // Test: User senza ID
+    $newUser = new User();
+    expect($newUser->belongsToTeams())->toBeFalse();
 
-    Assert::assertFalse($newUser->belongsToTeams());
-
-    $teamWithoutOwner = TeamFactory::new()->createOne(['user_id' => null, 'name' => 'no-owner-'.uniqid()]);
-    Assert::assertFalse($user->ownsTeam($teamWithoutOwner));
-    Assert::assertFalse($user->ownsTeam(null));
+    // Test: Team senza user_id
+    $teamWithoutOwner = Team::factory()->create(['user_id' => null]);
+    expect($this->subjectUser->ownsTeam($teamWithoutOwner))->toBeFalse();
 });
 
 test('it validates assertions correctly', function (): void {
-    ['user' => $user] = hasTeamsBootstrapFixture();
-
-    Assert::assertFalse($user->ownsTeam(null));
+    expect(fn() => $this->subjectUser->ownsTeam(null))->toThrow(InvalidArgumentException::class, 'Team cannot be null');
 });

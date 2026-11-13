@@ -14,29 +14,44 @@ trait BaseUserUniqueNameAttribute
             return $value;
         }
 
+        $name = $this->getName();
+
+        if ($this->getKey() === null) {
+            return $name;
+        }
+
+        if ($this->shouldAvoidNamePersistenceDuringTests()) {
+            $this->attributes['name'] = $name;
+
+            return $name;
+        }
+
+        try {
+            $this->update(['name' => $name]);
+        } catch (\Throwable) {
+            $name = Str::of((string) $this->email)->before('@')->toString().'-1';
+            $this->attributes['name'] = $name;
+        }
+
+        return $name;
+    }
+
+    public function getName(): string
+    {
         if ($this->getKey() === null) {
             return $this->email ?? 'User';
         }
 
         $name = Str::of((string) $this->email)->before('@')->toString();
-        $candidate = $name.'-1';
 
         if ($this->shouldAvoidNamePersistenceDuringTests()) {
-            $this->attributes['name'] = $candidate;
-
-            return $candidate;
+            return $name.'-1';
         }
 
         try {
-            $uniqueName = $this->resolveUniqueUserName($name);
-
-            $this->update(['name' => $uniqueName]);
-
-            return $uniqueName;
+            return $this->resolveUniqueUserName($name);
         } catch (\Throwable) {
-            $this->attributes['name'] = $candidate;
-
-            return $candidate;
+            return $name.'-1';
         }
     }
 

@@ -86,7 +86,15 @@ return [
     ],
     'privacy_policy' => [
         'title' => 'Privacy policy',
+        'description' => 'How we handle your personal data.',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'delete_account' => [
+        'title' => 'Delete Account',
+        'description' => 'Once your account is deleted, all of its resources and data will be permanently deleted. Before proceeding, please download any data you wish to retain.',
+        'password_confirmation' => 'Confirm your password',
+        'button' => 'Delete Account',
+        'delete' => 'Delete Account',
+    ],
 ];

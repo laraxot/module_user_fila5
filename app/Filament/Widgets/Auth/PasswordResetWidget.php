@@ -8,7 +8,7 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Session;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -50,8 +50,8 @@ class PasswordResetWidget extends XotBaseSchemaWidget
             $this->emailSent = true;
 
             Notification::make()
-                ->title(__('user::auth.password_reset.email_sent.title'))
-                ->body(__('user::auth.password_reset.email_sent.message'))
+                ->title(__('user::auth.password.error.text_reset.email_sent.title'))
+                ->body(__('user::auth.password.error.text_reset.email_sent.message'))
                 ->success()
                 ->duration(10000)
                 ->send();
@@ -60,7 +60,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
             Notification::make()
-                ->title(__('user::auth.password_reset.email_failed.title'))
+                ->title(__('user::auth.password.error.text_reset.email_failed.title'))
                 ->body(trans($response))
                 ->danger()
                 ->send();

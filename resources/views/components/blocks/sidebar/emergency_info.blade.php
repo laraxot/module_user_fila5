@@ -3,7 +3,7 @@
 declare(strict_types=1);
 ?>
 @props([
-    'title' => 'Emergenza',
+    'title' => __('user::blocks.sections.emergency_info.title'),
     'content' => null,
     'emergency_number' => '112',
     'icon' => 'alert-circle'
@@ -37,7 +37,7 @@ declare(strict_types=1);
 
             @if($emergency_number)
                 <div class="flex items-center">
-                    <span class="font-bold text-red-800 mr-2">Numero:</span>
+                    <span class="font-bold text-red-800 mr-2">{{ __('user::blocks.emergency_info.number.label') }}</span>
                     <a href="tel:{{ $emergency_number }}" class="text-lg font-bold text-red-600 hover:underline">
                         {{ $emergency_number }}
                     </a>

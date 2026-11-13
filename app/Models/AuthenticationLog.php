@@ -8,9 +8,10 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -58,6 +59,8 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class AuthenticationLog extends BaseModel
 {
+    use MassPrunable;
+
     // public $timestamps = false;
 
     // protected $table = 'authentication_log';
@@ -87,11 +90,13 @@ class AuthenticationLog extends BaseModel
     // }
 
     /**
-     * @return MorphTo<Model, $this>
+     * Rows older than the access log retention (privacy notice: 12 months), removed by the scheduled `model:prune`.
+     *
+     * @return Builder<static>
      */
-    public function authenticatable(): MorphTo
+    public function prunable(): Builder
     {
-        return $this->morphTo();
+        return static::query()->where('created_at', '<', now()->subDays(config()->integer('gdpr.retention.authentication_log_days', 365)));
     }
 
     /** @return array<string, string> */
@@ -106,4 +111,6 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
+
+    use AuthenticationLogRelationsTrait;
 }

@@ -5,19 +5,24 @@ tags: [base, classes, corrections]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "base-classes-corrections- correzione estensioni classi base - modulo user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./base-classes-corrections-1.md"
-  - "./base-classes-corrections-2.md"
-  - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes-1.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
   - "./phpstanes.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections.md"
+  - "./base-classes-corrections-stato-rinominato.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes-correzioni-modulo-user.md"
+  - "./phpstan-fixes.md"
+  - "./phpstanes.md"
+status: draft
 ---
 
 # Correzione Estensioni Classi Base - Modulo User

@@ -12,9 +12,8 @@ uses(TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
-        $widget = new LoginWidget;
+        new LoginWidget;
 
-        Assert::assertInstanceOf(LoginWidget::class, $widget);
     });
 
     test('login widget has correct form schema', function (): void {
@@ -54,8 +53,6 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget extends xot base widget', function (): void {
-        $widget = new LoginWidget;
-
-        Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
+        Assert::assertSame(XotBaseSchemaWidget::class, get_parent_class(LoginWidget::class));
     });
 });

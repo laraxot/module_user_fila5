@@ -9,6 +9,7 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
+use Illuminate\Support\Facades\Gate;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Contracts\UserContract;
@@ -32,7 +33,14 @@ class UsersTable extends BaseUsersTable
             'deactivate' => Action::make('deactivate')
                 ->color('danger')
                 ->icon('heroicon-o-trash')
-                ->action(static fn (UserContract $record): ?bool => $record->delete()),
+                ->authorize('delete')
+                ->requiresConfirmation()
+                ->action(static function (UserContract $record): void {
+                    // Cancella (soft delete), non disattiva: BaseUserPolicy::delete vieta se stessi e i super-admin.
+                    Gate::authorize('delete', $record);
+
+                    $record->delete();
+                }),
         ];
     }
 

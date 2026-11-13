@@ -486,6 +486,11 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
+    // Un codice di recupero e' monouso: sconosciuto o gia' usato non verifica, e non consuma nulla.
+    if (! in_array($code, $codes, true)) {
+        return false;
+    }
+
     $codes = array_values(array_filter($codes, static fn (mixed $c): bool => $c !== $code));
     $user->two_factor_recovery_codes = encrypt(json_encode($codes));
     $user->save();

@@ -186,7 +186,13 @@ return [
             'error' => 'Errore durante il caricamento dei documenti',
         ],
         'register' => [
-            'label' => 'register',
+            'icon' => 'register',
+        ],
+        'profile' => [
+            'icon' => 'profile',
+        ],
+        'logout' => [
+            'icon' => 'logout',
         ],
     ],
     'steps' => [

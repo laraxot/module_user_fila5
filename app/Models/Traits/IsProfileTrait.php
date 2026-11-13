@@ -20,6 +20,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 use Filament\Notifications\Notification;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -74,6 +75,11 @@ trait IsProfileTrait
             return $value;
         }
 
+        return $this->getFullName();
+    }
+
+    public function getFullName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -103,6 +109,16 @@ trait IsProfileTrait
             return $value;
         }
 
+        $firstName = $this->getFirstName();
+        if ($firstName !== null) {
+            $this->update(['first_name' => $firstName]);
+        }
+
+        return $firstName;
+    }
+
+    public function getFirstName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -113,8 +129,6 @@ trait IsProfileTrait
         if (! \is_string($firstName) || $firstName === '') {
             return null;
         }
-
-        $this->update(['first_name' => $firstName]);
 
         return $firstName;
     }
@@ -132,6 +146,16 @@ trait IsProfileTrait
             return $value;
         }
 
+        $lastName = $this->getLastName();
+        if ($lastName !== null) {
+            $this->update(['last_name' => $lastName]);
+        }
+
+        return $lastName;
+    }
+
+    public function getLastName(): ?string
+    {
         $user = $this->user;
         if ($user === null) {
             return null;
@@ -142,8 +166,6 @@ trait IsProfileTrait
         if (! \is_string($lastName) || $lastName === '') {
             return null;
         }
-
-        $this->update(['last_name' => $lastName]);
 
         return $lastName;
     }
@@ -182,6 +204,7 @@ trait IsProfileTrait
      * Se l'utente non è super-admin, assegna super-admin e rimuove negate-super-admin.
      *
      * @throws \Exception Se l'utente non è disponibile
+     * @throws AuthorizationException Se l'utente non ha né super-admin né negate-super-admin
      */
     public function toggleSuperAdmin(): void
     {
@@ -190,6 +213,11 @@ trait IsProfileTrait
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
         Assert::isInstanceOf($user, UserContract::class);
+        // Si puo' invertire solo un ruolo che si ha gia' (criterio della vista del pulsante). Senza questo controllo l'azione Livewire pubblica
+        // `SuperAdminWidget::toggleSuperAdmin()`, resa nel menu utente di ogni pannello, dava `super-admin` a qualsiasi utente (audit DCP-181, A-3).
+        if (! $this->isSuperAdmin() && ! $this->isNegateSuperAdmin()) {
+            throw new AuthorizationException('Solo chi ha gia\' il ruolo super-admin o negate-super-admin puo\' cambiarlo.');
+        }
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {

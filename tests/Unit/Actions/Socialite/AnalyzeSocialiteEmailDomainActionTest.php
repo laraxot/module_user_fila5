@@ -30,7 +30,6 @@ describe('AnalyzeSocialiteEmailDomainAction', function () {
             app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, '');
             Assert::fail('Expected InvalidArgumentException');
         } catch (InvalidArgumentException $exception) {
-            Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
         }
     });
 

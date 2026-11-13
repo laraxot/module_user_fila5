@@ -1,27 +1,34 @@
 ---
-title: "Story: Create permissions tables in trade_user database"
+title: "Story: permissions tables on fixcity_user"
 type: story
 module: User
-status: in-progress
+status: done
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-18
+tags: [docs, user, bmad, permissions, connection]
+qmd: "story permissions tables fixcity_user connection user"
+related:
+  - ../permissions-connection-ownership.md
+  - ../authentication-logs-connection-ownership.md
 ---
 
-# Story: Create permissions tables in trade_user database
+# Story: permissions tables on `fixcity_user`
 
 ## Context
 
-Spatie Laravel Permission tables (roles, permissions, etc.) are missing from the `trade_user` (connection `user`) database, causing `Table 'trade_data.permissions' doesn't exist` (it tries to access them in default `trade_data`).
-
-## Scope
-
-Create a migration to add Spatie permission tables to `trade_user` database.
+Spatie tables (`permissions`, `roles`, pivots) belong on connection `user`
+(`DB_DATABASE_USER` / `fixcity_user`). Production symptom:
+`Table 'fixcity_data.permissions' doesn't exist` on `GET /it/tickets/1`
+via `BuildTicketTimelineAction` → `$viewer->can(...)`.
 
 ## Acceptance Criteria
 
-- [ ] Permissions tables exist in `trade_user` DB.
-- [ ] Admin dashboard (Filament) loads without permission errors.
+- [x] Models `Permission` / `Role` use `$connection = 'user'`.
+- [x] Canonical `create_*` migrations create the tables on the user DB.
+- [x] Ownership documented in [permissions-connection-ownership](../permissions-connection-ownership.md).
+- [x] Public ticket timeline soft-guards missing `permissions` table.
+- [x] Filament: `PermissionResource` stays in User panel.
 
-## Implementation Details
+## Implementation
 
-Create a migration in `Modules/User/database/migrations` to create the standard Spatie tables: `roles`, `permissions`, `model_has_permissions`, `model_has_roles`, `role_has_permissions`. Ensure they are created on `user` connection.
+See ownership doc. Deploy: fix `.env`, `config:clear`, run User migrations.

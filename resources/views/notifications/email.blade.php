@@ -11,9 +11,9 @@ declare(strict_types=1);
         # {{ $greeting }}
     @else
         @if ($level === 'error')
-            # @lang('Whoops!')
+            # @lang('user::notification_email.greeting.error.title')
         @else
-            # @lang('Hello!')
+            # @lang('user::notification_email.greeting.default.title')
         @endif
     @endif
 
@@ -45,7 +45,7 @@ declare(strict_types=1);
     @if (!empty($salutation))
         {{ $salutation }}
     @else
-        @lang('Regards'),<br>
+        @lang('user::notification_email.salutation.regards.text'),<br>
         {{ config('app.name') }}
     @endif
 

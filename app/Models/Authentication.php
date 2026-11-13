@@ -6,8 +6,8 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\AuthenticationRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -81,14 +81,6 @@ class Authentication extends BaseModel
     ];
 
     /**
-     * @return MorphTo<Model, $this>
-     */
-    public function authenticatable(): MorphTo
-    {
-        return $this->morphTo();
-    }
-
-    /**
      * The attributes that should be cast.
      *
      * @return array<string, string>
@@ -101,4 +93,6 @@ class Authentication extends BaseModel
             'login_successful' => 'boolean',
         ];
     }
+
+    use AuthenticationRelationsTrait;
 }

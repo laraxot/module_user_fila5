@@ -32,7 +32,7 @@ uses(TestCase::class);
 function superAdminWidgetProfileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
-    $connection = (new $profileClass)->getConnectionName();
+    $connection = (new $profileClass())->getConnectionName();
 
     if (is_string($connection) && $connection !== '') {
         return $connection;
@@ -102,6 +102,8 @@ beforeEach(function (): void {
     }
 
     $this->setupFilamentAdminPanel();
+
+    Assert::assertNotNull(Filament::getPanel('user::admin'));
 });
 
 describe('SuperAdminWidget visibility', function (): void {
@@ -196,8 +198,11 @@ describe('SuperAdminWidget toggle', function (): void {
         grantSuperAdminWidgetRole($user, 'super-admin');
         actingAs($user);
 
-        $widget = new SuperAdminWidget;
+        $widget = new SuperAdminWidget();
         $widget->mount();
+        // Dal controllo di DCP-181 il profilo deve vedere il ruolo: l'utente del profilo e' `Modules\Fixcity\Models\User`, quello della factory
+        // `Modules\User\Models\User`, e i ruoli Spatie sono legati alla classe del modello. Si collega il profilo all'utente che ha il ruolo.
+        XotData::make()->getProfileModel()->setRelation('user', $user);
 
         $response = $widget->toggleSuperAdmin();
 
@@ -206,9 +211,33 @@ describe('SuperAdminWidget toggle', function (): void {
     });
 });
 
+describe('SuperAdminWidget authorization (DCP-181, audit A-3)', function (): void {
+    test('a user with neither role cannot make himself super-admin by calling the Livewire action', function (): void {
+        /** @var TestCase $this */
+        $user = UserFactory::new()->createOne();
+        // i due ruoli esistono (come nel sistema reale); l'utente non ha ne' l'uno ne' l'altro
+        grantSuperAdminWidgetRole(UserFactory::new()->createOne(), 'super-admin');
+        actingAs($user);
+
+        try {
+            Livewire::test(SuperAdminWidget::class)->call('toggleSuperAdmin');
+        } catch (\Throwable) {
+            // un rifiuto con eccezione (403 / AuthorizationException) e' un esito valido: conta solo che il ruolo non sia stato dato
+        }
+
+        $fresh = $user->fresh();
+        Assert::assertInstanceOf(UserContract::class, $fresh);
+        Assert::assertFalse($fresh->hasRole('super-admin'));
+        Assert::assertFalse($fresh->hasRole('negate-super-admin'));
+    });
+});
+
 describe('SuperAdminWidget dashboard discovery', function (): void {
     test('dashboard widget list has no SuperAdminWidget card', function (): void {
         $panel = Filament::getPanel('user::admin');
+        if ($panel === null) {
+            Assert::fail('The User admin panel was not registered by the test bootstrap.');
+        }
 
         $widgetClasses = array_map(
             static fn (string|WidgetConfiguration $widget): string => is_string($widget) ? $widget : $widget::class,

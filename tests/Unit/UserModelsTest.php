@@ -11,7 +11,6 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Tenant;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -25,7 +24,6 @@ it('can create a user with basic attributes', function () {
         'password' => bcrypt('password123'),
     ]);
 
-    Assert::assertInstanceOf(User::class, $user);
     Assert::assertSame('John Doe', $user->name);
     Assert::assertSame($email, $user->email);
     Assert::assertTrue($user->exists);

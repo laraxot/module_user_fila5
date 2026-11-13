@@ -17,6 +17,7 @@ use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -64,7 +65,7 @@ class ProfileRelationManager extends XotBaseRelationManager
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id'),
+            'id' => IDColumn::make('id'),
             'ente' => TextColumn::make('ente'),
             'matr' => TextColumn::make('matr'),
             'first_name' => TextColumn::make('first_name'),

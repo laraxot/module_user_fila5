@@ -9,6 +9,7 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Filament\Tables\Columns\UserColumn;
 use Modules\User\Models\BaseProfile;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -40,7 +41,7 @@ class BaseProfilesTable extends XotBaseResourceTable
                 ->boolean()
                 ->sortable(),
             'photo' => SpatieMediaLibraryImageColumn::make('photo')->collection('profile'),
-            'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
         ];

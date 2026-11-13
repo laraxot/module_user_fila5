@@ -23,6 +23,13 @@ class DemoUserSeeder extends Seeder
 
     public function run(): void
     {
+        // Utenti demo con password note (tra cui un super-admin): mai fuori da sviluppo e test.
+        if (! app()->environment(['local', 'testing'])) {
+            $this->command?->warn('DemoUserSeeder: saltato fuori da local/testing.');
+
+            return;
+        }
+
         $userClass = XotData::make()->getUserClass();
         \assert(is_subclass_of($userClass, User::class));
 
@@ -48,6 +55,20 @@ class DemoUserSeeder extends Seeder
                 'password' => 'password123',
                 'type' => 'customer_user',
                 'role' => 'user',
+            ],
+            [
+                'email' => 'waiter1@example.test',
+                'name' => 'Mario Cameriere',
+                'password' => 'waiter123',
+                'type' => 'waiter_user',
+                'role' => 'waiter',
+            ],
+            [
+                'email' => 'waiter2@example.test',
+                'name' => 'Luisa Cameriera',
+                'password' => 'waiter123',
+                'type' => 'waiter_user',
+                'role' => 'waiter',
             ],
         ];
 

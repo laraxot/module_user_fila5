@@ -17,7 +17,6 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Enter your email address to log in',
-            'description' => 'email',
             'helper_text' => '',
             'tooltip' => '',
         ],
@@ -25,7 +24,6 @@ return [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'help' => 'Enter your account password',
-            'description' => 'password',
             'helper_text' => '',
             'tooltip' => '',
         ],
@@ -33,7 +31,6 @@ return [
             'label' => 'Remember me',
             'placeholder' => '',
             'help' => 'Keep me logged in on this device',
-            'description' => 'remember',
             'helper_text' => '',
             'tooltip' => '',
         ],
@@ -59,6 +56,7 @@ return [
             'label' => 'Login',
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
+            'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         ],
         'register' => [
             'label' => 'Register',
@@ -89,4 +87,10 @@ return [
         'general_error' => 'An error occurred. Please try again later.',
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
+    'page' => [
+        'title' => 'Log in to FixCity',
+        'subtitle' => 'Sign in to report a problem and follow your cases',
+    ],
+    'already_registered' => 'Don\'t have an account yet?',
+    'register' => 'Register now',
 ];

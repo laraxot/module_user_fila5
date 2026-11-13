@@ -3,7 +3,7 @@
 declare(strict_types=1);
 ?>
 @props([
-    'title' => 'Domande Frequenti',
+    'title' => __('user::blocks.sections.faq_accordion.title'),
     'description' => null,
     'questions' => []
 ])

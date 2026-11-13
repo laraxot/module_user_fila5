@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthClient;
 
 /**
@@ -29,7 +30,7 @@ class BackfillOauthClientOwnerCommand extends Command
 
         $clients = OauthClient::query()
             ->whereNotNull('user_id')
-            ->where(function ($query): void {
+            ->where(function (Builder $query): void {
                 $query->whereNull('owner_id')->orWhereNull('owner_type');
             })
             ->get();

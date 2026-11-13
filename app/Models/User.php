@@ -162,6 +162,7 @@ class User extends BaseUser
         'customer_user' => self::class,
         'system' => self::class,
         'technician' => self::class,
+        'waiter_user' => self::class,
     ];
 
     #[\Override]

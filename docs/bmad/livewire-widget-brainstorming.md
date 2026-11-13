@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming — solo widget vs Livewire HTTP"
+title: "Brainstorming: solo widget vs Livewire HTTP"
 type: brainstorming
 module: User
 status: done
@@ -7,6 +7,9 @@ related:
   - ./brainstorming.md
   - ./livewire-inventory.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: perché un solo contenitore user"
 ---
 
 # Brainstorming: perché un solo contenitore

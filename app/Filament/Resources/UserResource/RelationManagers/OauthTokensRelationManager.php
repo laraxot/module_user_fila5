@@ -59,7 +59,7 @@ class OauthTokensRelationManager extends XotBaseRelationManager
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
-                ->formatStateUsing(function ($state) {
+                ->formatStateUsing(function (mixed $state) {
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {

@@ -15,7 +15,8 @@ return new class extends XotBaseMigration
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->id();
-            $table->foreignId('tenant_id');
+            // tenants.id è una stringa (uuid o slug): un foreignId intero non la può contenere
+            $table->string('tenant_id', 36)->index();
             $table->uuid('user_id')->nullable()->index();
 
             // $table->foreignIdFor(\Modules\Xot\Datas\XotData::make()->getUserClass());
@@ -25,6 +26,10 @@ return new class extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+            if (\in_array($this->getColumnType('tenant_id'), ['bigint', 'integer', 'int'], true)) {
+                $table->string('tenant_id', 36)->change();
+            }
+
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });
     }

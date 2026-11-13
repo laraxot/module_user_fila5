@@ -88,13 +88,12 @@ class Password extends XotBasePage
             app(SaveTenantConfigAction::class)->execute('password', $data);
 
             // $this->handleRecordUpdate($this->getUser(), $data);
-        } catch (Halt $exception) {
-            dddx($exception->getMessage());
-
+        } catch (Halt) {
+            // Halt e' il segnale Filament di stop volontario: chi lo lancia ha gia' avvisato l'utente.
             return;
         }
         Notification::make()
-            ->title('Saved successfully')
+            ->title(__('user::notifications.settings_saved.title'))
             ->success()
             ->send();
     }

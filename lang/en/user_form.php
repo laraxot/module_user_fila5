@@ -43,14 +43,14 @@ return [
     ],
     'actions' => [
         'showPassword' => [
-            'label' => 'showPassword',
-            'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
+            'label' => 'Show password',
+            'icon' => 'heroicon-o-eye',
+            'tooltip' => 'Show password',
         ],
         'hidePassword' => [
-            'label' => 'hidePassword',
-            'icon' => 'hidePassword',
-            'tooltip' => 'hidePassword',
+            'label' => 'Hide password',
+            'icon' => 'heroicon-o-eye-slash',
+            'tooltip' => 'Hide password',
         ],
     ],
 ];
