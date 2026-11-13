@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_JOePDG
 return [
     'fields' => [
         'user_id' => ['label' => 'Utente', 'placeholder' => 'user_id', 'helper_text' => 'user_id', 'description' => 'user_id'],
@@ -16,3 +17,6 @@ return [
         'empty' => ['label' => '', 'heading' => 'empty'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_QVJyeZ

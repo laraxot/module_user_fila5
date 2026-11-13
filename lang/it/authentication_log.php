@@ -11,69 +11,43 @@ return [
     ],
     'actions' => [
         'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
         ],
         'openColumnManager' => [
-            'tooltip' => 'openColumnManager',
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
         ],
         'edit' => [
-            'label' => 'edit',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
-            'tooltip' => 'delete',
         ],
         'detach' => [
-            'label' => 'detach',
             'icon' => 'detach',
-            'tooltip' => 'detach',
         ],
         'attach' => [
-            'label' => 'attach',
             'icon' => 'attach',
-            'tooltip' => 'attach',
         ],
         'create' => [
-            'label' => 'create',
             'icon' => 'create',
-            'tooltip' => 'create',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
-            'label' => 'resetColumnManager',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'save',
-            'tooltip' => 'save',
         ],
     ],
     'label' => 'Authentication Log',
@@ -97,6 +71,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_iqDupR
         'ip_address' => [
             'label' => 'Indirizzo IP',
         ],
@@ -115,5 +90,7 @@ return [
         'location' => [
             'label' => 'Luogo',
         ],
+=======
+>>>>>>> .merge_file_dCU8NE
     ],
 ];

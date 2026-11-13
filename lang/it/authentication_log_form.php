@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_2em9Dx
 return [
     'sections' => [
         'Authentication Information' => [
@@ -60,3 +61,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_dZudux

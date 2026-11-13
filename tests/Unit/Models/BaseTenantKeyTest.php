@@ -24,7 +24,11 @@ it('loads BaseTenant with both HasUuids and HasSlug without a trait collision', 
 
 it('keeps tenants.id a string key that gets a UUID when none is given', function (): void {
     // Arrange
+<<<<<<< .merge_file_5bHSRD
     $tenant = new Tenant();
+=======
+    $tenant = new Tenant;
+>>>>>>> .merge_file_Mntc36
 
     // Act
     $generated = (string) $tenant->newUniqueId();
@@ -38,7 +42,11 @@ it('keeps tenants.id a string key that gets a UUID when none is given', function
 
 it('builds the slug from the name', function (): void {
     // Arrange
+<<<<<<< .merge_file_5bHSRD
     $options = (new Tenant())->getSlugOptions();
+=======
+    $options = (new Tenant)->getSlugOptions();
+>>>>>>> .merge_file_Mntc36
 
     // Act + Assert
     expect($options->generateSlugFrom)->toBe(['name'])

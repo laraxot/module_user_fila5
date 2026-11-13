@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_JjMXKq
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -14,11 +15,23 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
     ],
+=======
+>>>>>>> .merge_file_pCe2Te
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'edit' => ['tooltip' => 'edit', 'icon' => 'edit', 'label' => 'edit'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
     ],
 ];

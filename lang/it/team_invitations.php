@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_ogculZ
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -18,12 +19,26 @@ return [
         'created_by' => ['label' => 'Creato da'],
         'deleted_by' => ['label' => 'Eliminato da'],
     ],
+=======
+>>>>>>> .merge_file_SwMfPk
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
     ],
 ];

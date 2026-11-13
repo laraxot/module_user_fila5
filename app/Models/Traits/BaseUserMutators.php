@@ -98,12 +98,27 @@ trait BaseUserMutators
             return;
         }
 
-        if (\strlen($value) < 32) {
-            $this->attributes['password'] = Hash::make($value);
+<<<<<<< .merge_file_BJzMd1
+        // Un valore gia' hashato (bcrypt/argon, es. da seeder o import) si conserva; tutto il
+        // resto si hasha. Il vecchio criterio "lunghezza >= 32" salvava in chiaro le passphrase lunghe.
+        if (password_get_info($value)['algo'] !== null) {
+=======
+<<<<<<< .merge_file_2bZTrp
+        // Un valore già cifrato (bcrypt/argon, es. da Hash::make o da un import) resta com'è; tutto il resto viene cifrato.
+        // Prima il controllo era sulla lunghezza (< 32 caratteri): una password scelta di 32 o più caratteri
+        // finiva nel database IN CHIARO.
+        if (Hash::info($value)['algo'] !== null) {
+=======
+        // Un valore gia' hashato (bcrypt/argon, es. da seeder o import) si conserva; tutto il
+        // resto si hasha. Il vecchio criterio "lunghezza >= 32" salvava in chiaro le passphrase lunghe.
+        if (password_get_info($value)['algo'] !== null) {
+>>>>>>> .merge_file_xxLNbY
+>>>>>>> .merge_file_AodI3Y
+            $this->attributes['password'] = $value;
 
             return;
         }
 
-        $this->attributes['password'] = $value;
+        $this->attributes['password'] = Hash::make($value);
     }
 }

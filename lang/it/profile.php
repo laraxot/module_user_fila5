@@ -81,17 +81,18 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'ente',
         ],
         'matr' => [
             'label' => 'Matricola',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'matr',
         ],
         'photo' => [
+<<<<<<< .merge_file_Kcp93i
             'label' => 'Foto',
+=======
+>>>>>>> .merge_file_tJOT36
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -101,6 +102,7 @@ return [
                 'label' => 'Utente',
             ],
         ],
+<<<<<<< .merge_file_Kcp93i
         'created_at' => [
             'label' => 'Creato il',
         ],
@@ -143,6 +145,8 @@ return [
         'updated_at' => [
             'label' => 'Modificato il',
         ],
+=======
+>>>>>>> .merge_file_tJOT36
     ],
     'actions' => [
         'edit' => [
@@ -150,109 +154,69 @@ return [
             'success' => 'Profilo aggiornato con successo!',
             'error' => 'Errore durante l\'aggiornamento del profilo',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina',
             'success' => 'Profilo eliminato con successo!',
             'error' => 'Errore durante l\'eliminazione del profilo',
-            'tooltip' => 'delete',
             'icon' => 'delete',
         ],
         'layout' => [
-            'tooltip' => 'layout',
             'icon' => 'layout',
-            'label' => 'layout',
         ],
         'create' => [
-            'tooltip' => 'create',
             'icon' => 'create',
-            'label' => 'create',
         ],
         'showPassword' => [
-            'label' => 'showPassword',
             'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
         ],
         'hidePassword' => [
-            'label' => 'hidePassword',
             'icon' => 'hidePassword',
-            'tooltip' => 'hidePassword',
         ],
         'attach' => [
-            'label' => 'attach',
             'icon' => 'attach',
-            'tooltip' => 'attach',
         ],
         'detach' => [
-            'label' => 'detach',
             'icon' => 'detach',
-            'tooltip' => 'detach',
         ],
         'view' => [
-            'label' => 'view',
             'icon' => 'view',
-            'tooltip' => 'view',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'save',
-            'tooltip' => 'save',
         ],
         'back' => [
-            'label' => 'back',
             'icon' => 'back',
-            'tooltip' => 'back',
         ],
         'createAnother' => [
-            'label' => 'createAnother',
             'icon' => 'createAnother',
-            'tooltip' => 'createAnother',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'openColumnManager' => [
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'resetColumnManager' => [
-            'label' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
-            'tooltip' => 'resetColumnManager',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'submit' => [
-            'label' => 'submit',
             'icon' => 'submit',
-            'tooltip' => 'submit',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
-            'tooltip' => 'cancel',
         ],
     ],
     'messages' => [

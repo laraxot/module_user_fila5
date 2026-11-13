@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_aj0Dd5
 return [
     'fields' => [
         'ente' => [
@@ -36,3 +37,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_xcpvgp

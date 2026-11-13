@@ -74,6 +74,7 @@ class Role extends SpatieRole
 {
     use HasXotFactory;
     use RelationX;
+    use RoleRelationsTrait;
     use Updater;
 
     // use HasUuids;

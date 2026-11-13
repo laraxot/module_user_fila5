@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_0y5HED
 return [
     'sections' => [
         'empty' => ['label' => '', 'heading' => 'empty'],
@@ -18,3 +19,6 @@ return [
         'secondary_color' => ['label' => 'Colore secondario', 'placeholder' => 'secondary_color', 'helper_text' => 'secondary_color', 'description' => 'secondary_color'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_sVSqlv

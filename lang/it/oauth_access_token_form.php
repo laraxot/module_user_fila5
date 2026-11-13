@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_RJtlNF
 return [
     'sections' => [
         'OAuth Access Token Information' => ['label' => 'OAuth Access Token Information', 'heading' => 'OAuth Access Token Information'],
@@ -14,3 +15,6 @@ return [
         'scopes' => ['label' => 'Ambiti', 'placeholder' => 'scopes', 'helper_text' => 'scopes', 'description' => 'scopes'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_OH5FV7

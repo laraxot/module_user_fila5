@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_eSSnby
 return [
     'fields' => [
         'team_id' => [
@@ -30,3 +31,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_hnCMbC

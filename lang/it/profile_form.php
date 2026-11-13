@@ -12,6 +12,7 @@ return [
                 'description' => 'user.name',
             ],
         ],
+<<<<<<< .merge_file_UfBNg7
         'email' => [
             'label' => 'E-mail',
             'placeholder' => 'email',
@@ -36,5 +37,7 @@ return [
             'helper_text' => 'photo_profile',
             'description' => 'photo_profile',
         ],
+=======
+>>>>>>> .merge_file_UXteyc
     ],
 ];

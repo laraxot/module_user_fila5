@@ -28,7 +28,6 @@ return [
             'help' => 'Nome completo dell\'utente',
             'tooltip' => 'Nome e cognome dell\'utente',
             'helper_text' => '',
-            'description' => 'name',
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -52,7 +51,6 @@ return [
             'help' => 'Indirizzo email dell\'utente',
             'tooltip' => 'Email per l\'accesso e le comunicazioni',
             'helper_text' => '',
-            'description' => 'email',
         ],
         'password' => [
             'label' => 'Password',
@@ -60,7 +58,6 @@ return [
             'help' => 'Password per l\'accesso al sistema',
             'tooltip' => 'Password di accesso',
             'helper_text' => '',
-            'description' => 'password',
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -219,7 +216,6 @@ return [
             'tooltip' => 'Data verifica email',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'email_verified_at',
         ],
         'provider' => [
             'label' => 'Provider',
@@ -298,37 +294,28 @@ return [
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'layout' => [
-            'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'endDate' => [
-            'description' => 'endDate',
             'helper_text' => 'endDate1',
-            'placeholder' => 'endDate',
-            'label' => 'endDate',
             'tooltip' => '',
         ],
         'startDate' => [
-            'description' => 'startDate',
-            'helper_text' => 'startDate',
-            'placeholder' => 'startDate',
-            'label' => 'startDate',
             'tooltip' => '',
         ],
+<<<<<<< .merge_file_zPeePB
         'matr' => [
             'description' => 'matr',
             'label' => 'matr',
@@ -365,6 +352,11 @@ return [
             'helper_text' => 'created_until',
             'description' => 'created_until',
         ],
+=======
+        'user' => [
+            'label' => 'Utente',
+        ],
+>>>>>>> .merge_file_rWkcJZ
     ],
     'actions' => [
         'create' => [
@@ -443,92 +435,60 @@ return [
             'tooltip' => 'Disattiva l\'utente',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'export' => [
             'icon' => 'export',
+<<<<<<< .merge_file_zPeePB
             'label' => 'Esporta',
             'tooltip' => 'export',
+=======
+>>>>>>> .merge_file_rWkcJZ
         ],
         'changePassword' => [
             'icon' => 'changePassword',
-            'label' => 'changePassword',
-            'tooltip' => 'changePassword',
         ],
         'layout' => [
             'icon' => 'layout',
-            'label' => 'layout',
-            'tooltip' => 'layout',
         ],
         'export_xls' => [
             'icon' => 'export_xls',
-            'label' => 'export_xls',
-            'tooltip' => 'export_xls',
         ],
         'cancel' => [
             'icon' => 'cancel',
-            'label' => 'cancel',
-            'tooltip' => 'cancel',
         ],
         'save' => [
             'icon' => 'save',
-            'label' => 'save',
-            'tooltip' => 'save',
-        ],
-        'submit' => [
-            'tooltip' => 'submit',
         ],
         'createAnother' => [
-            'tooltip' => 'createAnother',
             'icon' => 'createAnother',
-            'label' => 'createAnother',
         ],
         'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
-            'label' => 'resetColumnManager',
         ],
         'removeAllFilters' => [
-            'label' => 'removeAllFilters',
             'icon' => 'removeAllFilters',
-            'tooltip' => 'removeAllFilters',
         ],
     ],
     'messages' => [
@@ -814,9 +774,16 @@ return [
         ],
     ],
     'label' => 'Utente',
+<<<<<<< .merge_file_FfvEyq
+=======
+<<<<<<< .merge_file_N23cbn
     'sections' => [
         'empty' => [
+<<<<<<< .merge_file_zPeePB
             'heading' => 'empty',
+=======
+            'heading' => '',
+>>>>>>> .merge_file_rWkcJZ
             'label' => '',
         ],
         'worker' => [
@@ -824,5 +791,8 @@ return [
             'heading' => 'worker',
         ],
     ],
+=======
+>>>>>>> .merge_file_uX26zG
+>>>>>>> .merge_file_uHeFGQ
     'plural_label' => 'User (Plurale)',
 ];

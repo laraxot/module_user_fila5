@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_v3qJWm
 return [
     'fields' => [
         'uuid' => [
@@ -84,3 +85,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_GcVYnV

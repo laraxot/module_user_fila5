@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< .merge_file_6a7lCI
         'name' => ['label' => 'Nome', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
         'user' => [
             'name' => ['label' => 'Utente', 'placeholder' => 'user.name', 'helper_text' => 'user.name', 'description' => 'user.name'],
@@ -15,5 +16,15 @@ return [
     ],
     'sections' => [
         'empty' => ['label' => '', 'heading' => 'empty'],
+=======
+        'user' => [
+            'name' => [
+                'label' => 'user.name',
+                'placeholder' => 'user.name',
+                'helper_text' => 'user.name',
+                'description' => 'user.name',
+            ],
+        ],
+>>>>>>> .merge_file_zc4Clu
     ],
 ];

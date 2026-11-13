@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_HExs3Y
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -24,7 +25,11 @@ return [
         'revoked' => ['label' => 'Revocato'],
         'scopes' => ['label' => 'Ambiti'],
     ],
+=======
+>>>>>>> .merge_file_ieicW7
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'create' => [
+            'icon' => 'create',
+        ],
     ],
 ];

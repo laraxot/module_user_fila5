@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_1jIWN5
 return [
     'fields' => [
         'id' => ['label' => 'ID'],
@@ -9,3 +10,6 @@ return [
         'created_at' => ['label' => 'Creato il'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_AhFrkU

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_RdTX4W
 return [
     'sections' => [
         'Password Reset Information' => [
@@ -24,3 +25,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_cxxK4l

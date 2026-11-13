@@ -6,9 +6,11 @@ namespace Modules\User\Actions\Auth;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
+use Modules\User\Actions\Database\IsUserDatabaseConfiguredAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\UserContract;
 use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\BaseUser;
 
 /**
  * Persist an authentication_logs row on the User connection (`user` / fixcity_user).
@@ -17,7 +19,15 @@ use Modules\User\Models\AuthenticationLog;
  * a failed/successful login into a 500 (BMAD: audit must not break auth UX).
  *
  * Identity = {@see UserContract}; capability = {@see HasAuthentications}.
- * Never type-hint {@see \Modules\User\Models\BaseUser}: that is an internal
+<<<<<<< .merge_file_vtyQx9
+ * Never type-hint the concrete BaseUser: that is an internal
+=======
+<<<<<<< .merge_file_QRariS
+ * Never type-hint {@see BaseUser}: that is an internal
+=======
+ * Never type-hint the concrete BaseUser: that is an internal
+>>>>>>> .merge_file_yVylAm
+>>>>>>> .merge_file_DL36o5
  * abstract implementation, not the consumer boundary.
  */
 final class RecordAuthenticationLogAction
@@ -30,6 +40,16 @@ final class RecordAuthenticationLogAction
         $log = new AuthenticationLog;
         $connection = $log->getConnectionName() ?? 'user';
         $table = $log->getTable();
+
+        if (! app(IsUserDatabaseConfiguredAction::class)->execute()) {
+            Log::warning('user database not configured; skip auth audit write', [
+                'connection' => $connection,
+                'table' => $table,
+                'user_id' => $user->getAuthIdentifier(),
+            ]);
+
+            return;
+        }
 
         if (! Schema::connection($connection)->hasTable($table)) {
             Log::warning('authentication_logs missing on user connection; skip auth audit write', [

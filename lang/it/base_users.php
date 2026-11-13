@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_czIB5e
     'fields' => [
         'id' => ['label' => 'ID'],
         'name' => ['label' => 'Nome'],
@@ -20,7 +21,11 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
     ],
+=======
+>>>>>>> .merge_file_EAihip
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'create' => [
+            'icon' => 'create',
+        ],
     ],
 ];

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_gbY0aC
 return [
     'fields' => [
         'deactivate' => [
@@ -9,3 +10,6 @@ return [
         ],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_qAuv3A

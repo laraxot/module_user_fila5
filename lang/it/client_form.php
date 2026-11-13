@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_2n5urL
 return [
     'fields' => [
         'name' => ['label' => 'Nome', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
@@ -14,3 +15,6 @@ return [
         'revoked' => ['label' => 'Revocato', 'placeholder' => 'revoked', 'helper_text' => 'revoked', 'description' => 'revoked'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_mJ5Juz

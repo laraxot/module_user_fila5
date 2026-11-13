@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_AQFygN
 return [
     'fields' => [
         'id' => ['label' => 'ID'],
@@ -12,3 +13,6 @@ return [
         'expires_at' => ['label' => 'Scade il'],
     ],
 ];
+=======
+return [];
+>>>>>>> .merge_file_61VQeN

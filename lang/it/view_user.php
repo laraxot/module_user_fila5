@@ -5,11 +5,9 @@ declare(strict_types=1);
 return [
     'actions' => [
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
         ],
         'cancel' => [
@@ -17,31 +15,39 @@ return [
         ],
         'filter' => [
             'icon' => 'filter',
+<<<<<<< .merge_file_0t5exB
             'label' => 'Filtro',
+=======
+>>>>>>> .merge_file_yQWYjM
         ],
     ],
     'fields' => [
         'endDate' => [
-            'description' => 'endDate',
             'helper_text' => 'endDate3',
-            'placeholder' => 'endDate',
-            'label' => 'endDate',
             'tooltip' => '',
         ],
         'startDate' => [
-            'description' => 'startDate',
             'helper_text' => 'startDate1',
-            'placeholder' => 'startDate',
             'label' => 'startDate1',
             'tooltip' => '',
         ],
     ],
+<<<<<<< .merge_file_VAuFDm
+=======
+<<<<<<< .merge_file_szAFJk
     'sections' => [
         'empty' => [
+<<<<<<< .merge_file_0t5exB
             'heading' => 'empty',
+=======
+            'heading' => '',
+>>>>>>> .merge_file_yQWYjM
             'label' => '',
         ],
     ],
+=======
+>>>>>>> .merge_file_xPLZFs
+>>>>>>> .merge_file_pkMpkA
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_oO25QW
     'fields' => [
         'id' => ['label' => 'ID'],
         'name' => ['label' => 'Nome'],
@@ -18,11 +19,23 @@ return [
         'team_id' => ['label' => 'Team'],
         'user_id' => ['label' => 'Utente'],
     ],
+=======
+>>>>>>> .merge_file_3kF2Mw
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'edit' => ['tooltip' => 'edit', 'icon' => 'edit', 'label' => 'edit'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
     ],
 ];

@@ -186,19 +186,17 @@ return [
             'error' => 'Errore durante il caricamento dei documenti',
         ],
         'register' => [
+<<<<<<< .merge_file_3kMFKP
             'label' => 'Registrati',
+=======
+>>>>>>> .merge_file_wjoqVZ
             'icon' => 'register',
-            'tooltip' => 'register',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
     ],
     'steps' => [

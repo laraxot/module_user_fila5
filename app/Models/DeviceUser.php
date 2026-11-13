@@ -55,6 +55,11 @@ use Modules\Xot\Contracts\UserContract;
  */
 class DeviceUser extends BasePivot
 {
+<<<<<<< .merge_file_kdQ9dz
+    use DeviceUserRelationsTrait;
+
+=======
+>>>>>>> .merge_file_HuR1tN
     /** @var list<string> */
     protected $fillable = [
         'id',
