@@ -46,7 +46,7 @@ class ClientsRelationManager extends XotBaseRelationManager
     {
         return [
             'name' => TextColumn::make('name')
-                ->label('Nome'),
+                ->label('Name'),
             'id' => IDColumn::make('id')
                 ->label('Client ID')
                 ->copyable()
@@ -55,7 +55,7 @@ class ClientsRelationManager extends XotBaseRelationManager
             'secret' => TextColumn::make('secret')
                 ->label('Client Secret')
                 ->formatStateUsing(static fn (): string => 'Mostrato solo alla creazione')
-                ->tooltip('Il secret viene cifrato e non è più recuperabile: copia quello in chiaro al momento della creazione.'),
+                ->tooltip('The secret is encrypted and cannot be recovered: copy the plain-text value when you create it.'),
         ];
     }
 
@@ -69,7 +69,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         $actions = parent::getTableHeaderActions();
 
         $actions['associateExistingClient'] = Action::make('associateExistingClient')
-            ->label('Associa client esistente')
+            ->label('Link existing client')
             ->icon('heroicon-o-link')
             ->schema([
                 Select::make('client_id')
@@ -101,7 +101,7 @@ class ClientsRelationManager extends XotBaseRelationManager
 
                 if (! $ownerRecord instanceof AuthUser) {
                     Notification::make()
-                        ->title('Utente non valido per l\'associazione del client.')
+                        ->title('Invalid user for the client association.')
                         ->danger()
                         ->send();
 
@@ -116,7 +116,7 @@ class ClientsRelationManager extends XotBaseRelationManager
 
                 if ($client === null) {
                     Notification::make()
-                        ->title('Client non trovato.')
+                        ->title('Client not found.')
                         ->danger()
                         ->send();
 
@@ -129,7 +129,7 @@ class ClientsRelationManager extends XotBaseRelationManager
                 $client->save();
 
                 Notification::make()
-                    ->title('Client associato all\'utente.')
+                    ->title('Client linked to the user.')
                     ->success()
                     ->send();
             });
@@ -152,7 +152,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         return [
             'edit' => EditAction::make()
                 ->iconButton()
-                ->tooltip(trans('user::user.actions.edit.tooltip'))
+                ->tooltip(trans('user::user.actions.edit_tooltip'))
                 ->visible(static function (?Model $record) use ($me): bool {
                     if ($record === null) {
                         return false;
@@ -162,7 +162,7 @@ class ClientsRelationManager extends XotBaseRelationManager
                 }),
             'detach' => DetachAction::make()
                 ->iconButton()
-                ->tooltip(trans('user::user.actions.detach.tooltip'))
+                ->tooltip(trans('user::user.actions.detach_tooltip'))
                 ->visible(static function (?Model $record) use ($me): bool {
                     if ($record === null) {
                         return false;

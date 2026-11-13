@@ -1,11 +1,3 @@
----
-title: "translation key prototype"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, user]
-qmd: "translation key prototype user"
----
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'

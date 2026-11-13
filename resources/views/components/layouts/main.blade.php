@@ -7,9 +7,9 @@ declare(strict_types=1);
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="- La piattaforma">
+        <meta name="description" content="- The platform">
         <meta name="keywords" content="">
-        <meta name="author" content="il progetto">
+        <meta name="author" content="the project">
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">

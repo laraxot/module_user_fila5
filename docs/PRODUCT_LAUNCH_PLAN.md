@@ -5,9 +5,6 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-qmd: "user module - product launch plan user"
-status: superseded
-superseded_by: product-launch-plan-user-module.md
 ---
 
 # User Module - Product Launch Plan

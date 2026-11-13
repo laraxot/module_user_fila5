@@ -1,11 +1,3 @@
----
-title: "MIGRATION_BEST_PRACTICES - Modulo User"
-type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, user]
-qmd: "migration_best_practices - modulo user user"
----
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

@@ -1,5 +1,5 @@
 ---
-title: "Product brief: SuperAdmin user-menu widget"
+title: "Product brief — SuperAdmin user-menu widget"
 type: product-brief
 module: User
 status: approved
@@ -9,9 +9,6 @@ related:
   - ./project-context.md
   - ./livewire-widget-product-brief.md
   - ./livewire-inventory.md
-updated: 2026-10-07
-tags: [docs, user, bmad]
-qmd: "product brief: superadmin nel menu filament user"
 ---
 
 # Product brief: SuperAdmin nel menu Filament

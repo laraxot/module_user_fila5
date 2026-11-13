@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming: SuperAdmin widget"
+title: "Brainstorming — SuperAdmin widget"
 type: brainstorming
 module: User
 status: done
@@ -8,9 +8,6 @@ related:
   - ./architecture.md
   - ./prd.md
   - ./livewire-widget-brainstorming.md
-updated: 2026-10-07
-tags: [docs, user, bmad]
-qmd: "brainstorming: dove vive il toggle superadmin user"
 ---
 
 # Brainstorming: dove vive il toggle SuperAdmin
@@ -19,9 +16,9 @@ qmd: "brainstorming: dove vive il toggle superadmin user"
 
 Il toggle non è una pagina e non è un form. È un **privilegio visibile** nel chrome del panel. Tre contenitori possibili:
 
-1. **Livewire HTTP** (oggi): generico, alias stringa, già rotto con `filament-jet`.
-2. **Badge Blade statico** (`user::badges.super-admin`, commentato nel provider): niente click, viola il bisogno.
-3. **Filament widget** (`XotBaseWidget`) montato sull’hook user-menu: chrome Filament, stesso Livewire sotto il cofano.
+1. **Livewire HTTP** (oggi) — generico, alias stringa, già rotto con `filament-jet`.
+2. **Badge Blade statico** (`user::badges.super-admin`, commentato nel provider) — niente click, viola il bisogno.
+3. **Filament widget** (`XotBaseWidget`) montato sull’hook user-menu — chrome Filament, stesso Livewire sotto il cofano.
 
 ## Scelta
 

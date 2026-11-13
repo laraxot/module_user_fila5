@@ -298,6 +298,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return true;
         }
 
+        // The owner also supervises HACCP (panel `respHACCP`), without being given the other work roles.
+        if ($panel->getId() === 'respHACCP' && $this->hasRole('restaurant::admin')) {
+            return true;
+        }
+
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
 
