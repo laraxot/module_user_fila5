@@ -265,7 +265,7 @@ public static function getTableColumns(): array
 
 - [XotBaseResource Source Code](../../../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [XotBaseResource Source Code](../../../../Xot/app/Filament/Resources/XotBaseResource.php)
-- [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
+- [Critical Filament Rule: getInfolistSchema String Keys](../../critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---
@@ -474,9 +474,9 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 
 ## Collegamenti
 
-- [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-- [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
+- [XotBaseResource getPages() Automatic](../../xotbase-resource-getpages-automatic.md)
+- [Resources Array Keys Philosophy](../../resources-array-keys-philosophy.md)
+- [Filament Resources Philosophical Debate](../../filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---
@@ -660,9 +660,9 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 
 ## Collegamenti
 
-- [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-- [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
+- [XotBaseResource getPages() Automatic](../../xotbase-resource-getpages-automatic.md)
+- [Resources Array Keys Philosophy](../../resources-array-keys-philosophy.md)
+- [Filament Resources Philosophical Debate](../../filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
 ---

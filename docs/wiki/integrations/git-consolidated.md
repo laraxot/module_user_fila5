@@ -333,7 +333,7 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 ## Riferimenti
 
 - [conflict_resolution_report](conflict-resolution-report.md)
-- [rules-index](rules-index.md)
+- [rules-index](../../rules-index.md)
 - [rules-index](../../rules-index.md)
 
 ---
@@ -3608,7 +3608,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [git-conflicts-resolution-.deprecated.md](git-conflicts-resolution-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [git-conflicts-resolution-.deprecated.md](../../git-conflicts-resolution-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -4394,7 +4394,7 @@ git -c core.editor="echo" rebase --continue
 ## Riferimenti
 
 - [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
-- [oauth-access-token-removal](oauth-access-token-removal.md)
+- [oauth-access-token-removal](../../oauth-access-token-removal.md)
 - [oauth-access-token-removal](../../oauth-access-token-removal.md)
 
 ---

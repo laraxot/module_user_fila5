@@ -7,12 +7,12 @@ tags: [structure, architecture, module]
 related:
   - "./00-index.md"
   - "./00-index.md"
-  - "./2fa-guide.md"
+  - "../../../2fa-guide.md"
   - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
+  - "../../../accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "../../../00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "../../../2fa-guide.md"
   - "./2fa.md"
@@ -121,11 +121,11 @@ graph TD
 
 ## Riferimenti Globali
 
-- [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
@@ -256,11 +256,11 @@ graph TD
 
 ## Riferimenti Globali
 
-- [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Project Wiki Root](../..)
+- [Global Rules](../../rules)
+- [Global Skills](../../skills)
+- [Global Commands](../../commands)
+- [Global Memories](../../memories)
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)

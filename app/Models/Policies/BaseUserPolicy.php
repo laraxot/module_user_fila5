@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
+use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Modules\User\Models\BaseUser as Model;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
@@ -39,7 +40,10 @@ class BaseUserPolicy extends XotBasePolicy
             return false;
         }
 
-        return parent::before($user, $ability);
+        // Solo il super-admin passa a priori. Il bypass generico di XotBasePolicy per il ruolo `{modulo}::admin`
+        // qui non vale: `user::admin` e' un amministratore come `admin` (ADMIN_ROLES) e le regole sotto
+        // gli vietano di toccare un super-admin, di ripristinare o eliminare definitivamente.
+        return $user->hasRole('super-admin') ? true : null;
     }
 
     /**
@@ -128,7 +132,11 @@ class BaseUserPolicy extends XotBasePolicy
         return false;
     }
 
-    public function replicate(UserContract $user, Model $model): bool
+    /**
+     * Replication is intentionally denied for every Eloquent model in this policy.
+     * Keep the base-policy parameter broad so the override remains substitutable.
+     */
+    public function replicate(UserContract $user, EloquentModel $model): bool
     {
         return false;
     }

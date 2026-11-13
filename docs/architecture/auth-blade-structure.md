@@ -11,7 +11,7 @@ related:
   - "./architecture-rules.md"
   - "./architecture.md"
   - "./component-registration.md"
-  - "./readme.md"
+  - "./README.md"
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
@@ -212,4 +212,4 @@ Ogni azione di autenticazione deve:
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md)
-- [Gestione Errori](./error_handling.md) 
+- [Gestione Errori](./error_handling.md)

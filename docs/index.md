@@ -4,7 +4,7 @@ slug: index
 status: superseded
 type: index
 superseded_by: ./00-index.md
-updated: 2026-10-21
+updated: 2026-10-27
 title: "Documentazione User: indice storico (superseded)"
 tags: [docs, user]
 qmd: "documentazione user   indice storico (superseded) user"
@@ -17,6 +17,8 @@ da [00-index.md](00-index.md) (indice canonico) e da [README.md](README.md) (pan
 Riferimenti attivi:
 - [00-index.md](00-index.md): ingresso canonico
 - [README.md](README.md): panoramica del modulo
+- [bmad/](bmad/) — storie, architettura, stato
+- [wiki/](wiki/) — regole, concetti
 - [bmad/](bmad/): storie, architettura, stato
 - [wiki/](wiki/): regole, concetti
 - [architecture/](architecture/)

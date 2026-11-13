@@ -10,7 +10,7 @@ issues:
 discussions:
 related:
   - "./agents.md"
-  - "./architecture.md"
+  - "./Architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"

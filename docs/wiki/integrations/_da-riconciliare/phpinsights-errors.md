@@ -10,12 +10,12 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index.md"
   - "./00-index.md"
-  - "./2fa-guide.md"
+  - "../../../2fa-guide.md"
   - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
+  - "../../../accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "../../../00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "../../../2fa-guide.md"
   - "./2fa.md"
@@ -389,6 +389,4 @@ Traits ......................................................... 2.9 %
 
  [ERROR] The architecture score is too low                                                              
 
- [ERROR] The style score is too low                                                                     
-
-
+ [ERROR] The style score is too low
