@@ -1,5 +1,6 @@
 ---
 title: "Filament 5.x Nested Resources - Opportunità di Applicazione"
+<<<<<<< .merge_file_B8CaaY
 type: concept
 tags: [filament, nesting, opportunities]
 created: 2026-07-14
@@ -21,6 +22,17 @@ related:
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: [DATE]  
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "filament 5.x nested resources - opportunità di applicazione user"
+---
+# Filament 5.x Nested Resources - Opportunità di Applicazione
+
+**Data Analisi**: 2026-01-22  
+>>>>>>> .merge_file_CGia0o
 **Versione Filament**: 5.x  
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/resources/nesting
 
@@ -270,10 +282,19 @@ Nessuna funzionalità critica - il modulo User funziona bene con relation manage
 ## Collegamenti
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
+<<<<<<< .merge_file_B8CaaY
 - [User Module README](./readme.md)
+=======
+- [User Module README](./README.md)
+>>>>>>> .merge_file_CGia0o
 - [Team System](./architecture/teams.md)
 - [Authentication Guide](./auth/authentication-flow.md)
 
 ---
 
+<<<<<<< .merge_file_B8CaaY
 **Prossima Revisione**: [DATE]
+=======
+**Ultimo Aggiornamento**: 2026-01-22  
+**Prossima Revisione**: 2026-02-22
+>>>>>>> .merge_file_CGia0o

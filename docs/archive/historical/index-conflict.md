@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_g826NU
 title: "User Module Documentation"
 type: concept
 tags: [index, conflict]
@@ -93,3 +94,28 @@ Ultimo aggiornamento: 14 Maggio 2025
 # Indice Documentazione User
 
 - [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+=======
+<<<<<<< .merge_file_je27mg
+title: "User Module Documentation"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module documentation user"
+---
+# User Module Documentation
+=======
+title: "index-conflict"
+type: alias
+status: superseded
+canonical: "archive/index.md"
+qmd: "index-conflict alias superseded"
+---
+>>>>>>> .merge_file_tVAdg6
+
+# index-conflict
+
+Documento identico al canonico: [index.md](../index.md).
+
+Canonico: `laravel/Modules/User/docs/archive/index.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_8h2dB5

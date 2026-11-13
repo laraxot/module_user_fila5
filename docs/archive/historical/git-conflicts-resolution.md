@@ -1,5 +1,6 @@
 ---
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
+<<<<<<< .merge_file_oEVHEu
 type: concept
 tags: [git, conflicts, resolution]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
+---
+>>>>>>> .merge_file_SUeprM
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -29,8 +38,13 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 ## Collegamenti correlati
 - [Indice documentazione User](/laravel/modules/user/project_docs/index.md)
 - [README User](/laravel/modules/user/project_docs/readme.md)
+<<<<<<< .merge_file_oEVHEu
 - [Auth Components Best Practices](/laravel/modules/user/project_docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/project_docs/widgets-structure-2.md)
+=======
+- [Auth Components Best Practices](/laravel/modules/user/project_docs/auth_components_best_practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/project_docs/widgets_structure.md)
+>>>>>>> .merge_file_SUeprM
 - [BaseUser Documentation](/laravel/modules/user/project_docs/baseuser.md)
 
 ## File Risolti
@@ -315,6 +329,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
+<<<<<<< .merge_file_oEVHEu
 - [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
@@ -638,6 +653,12 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+=======
+- [widgets_structure.md](./widgets-structure.md) - Regole per widget structure
+- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
+- [path_conventions.md](./path-conventions.md) - Convenzioni percorsi
+- [volt_blade_implementation.md](./volt-blade-implementation.md) - View patterns
+>>>>>>> .merge_file_SUeprM
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

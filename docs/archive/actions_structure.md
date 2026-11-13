@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_BD6pNx
+=======
+---
+title: "Actions Structure"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "actions structure user"
+---
+>>>>>>> .merge_file_Ykd656
 # Actions Structure 
 
 ## Directory Structure
@@ -39,7 +50,11 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 
 ## Pattern di Implementazione
 
+<<<<<<< .merge_file_BD6pNx
 SaluteOra utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+=======
+healthcare_app utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+>>>>>>> .merge_file_Ykd656
 
 ```php
 <?php
@@ -71,7 +86,14 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_BD6pNx
 - [Path Conventions](./path_conventions.md)
 - [Directory Structure Checklist](./directory_structure_checklist.md)
 - [Module Structure](./module_structure.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+=======
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
+- [Queueable Actions Best Practices](../best-practices/queueable-actions.md)
+>>>>>>> .merge_file_Ykd656

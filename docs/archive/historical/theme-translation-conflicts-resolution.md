@@ -1,5 +1,6 @@
 ---
 title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
+<<<<<<< .merge_file_hinGq4
 type: concept
 tags: [theme, translation, conflicts, resolution]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti traduzioni tema two - modulo user user"
+---
+>>>>>>> .merge_file_T9JRfw
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: 2025-01-06
@@ -212,8 +221,11 @@ I file di traduzione del tema Two presentavano conflitti Git che coinvolgevano s
 - Aggiunto `declare(strict_types=1);` dove mancante
 
 **Struttura Corretta**:
+<<<<<<< .merge_file_hinGq4
 ```
 
+=======
+>>>>>>> .merge_file_T9JRfw
 ```php
 <?php
 
@@ -416,11 +428,19 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
+<<<<<<< .merge_file_hinGq4
 - [Moderation Strategy](user-moderation-strategy-3.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../../docs/project/translation-standards.md)
+=======
+- [Moderation Strategy](user-moderation-strategy.md)
+- [Filament Best Practices](filament_best_practices.md)
+
+### Collegamenti Esterni
+- [Translation Standards](../../../project_docs/translation-standards.md)
+>>>>>>> .merge_file_T9JRfw
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

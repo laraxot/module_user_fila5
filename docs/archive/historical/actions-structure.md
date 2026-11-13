@@ -1,5 +1,6 @@
 ---
 title: "Actions Structure"
+<<<<<<< .merge_file_TTC2BV
 type: concept
 tags: [actions, structure]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "actions structure user"
+---
+>>>>>>> .merge_file_efuTGq
 # Actions Structure
 
 ## Directory Structure
@@ -91,10 +100,17 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_TTC2BV
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+=======
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
+- [Queueable Actions Best Practices](../../best-practices/queueable-actions.md)
+>>>>>>> .merge_file_efuTGq
 # Actions Structure
 
 ## Directory Structure
@@ -168,7 +184,14 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_TTC2BV
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+=======
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
+- [Queueable Actions Best Practices](../../best-practices/queueable-actions.md)
+>>>>>>> .merge_file_efuTGq

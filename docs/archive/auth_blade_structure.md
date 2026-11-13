@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_hY719C
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -182,3 +183,30 @@ Ogni azione di autenticazione deve:
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md)
 - [Gestione Errori](./error_handling.md) 
+=======
+---
+<<<<<<< .merge_file_LIklXX
+title: "Struttura delle Blade di Autenticazione con Volt"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura delle blade di autenticazione con volt user"
+status: superseded
+superseded_by: historical/auth-blade-structure.md
+---
+# Struttura delle Blade di Autenticazione con Volt
+=======
+title: "auth_blade_structure"
+type: alias
+status: superseded
+canonical: "archive/historical/auth-blade-structure.md"
+qmd: "auth_blade_structure alias superseded"
+---
+>>>>>>> .merge_file_VlLStP
+
+# auth_blade_structure
+
+Documento identico al canonico: [auth-blade-structure.md](historical/auth-blade-structure.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/auth-blade-structure.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_RLKt6Z

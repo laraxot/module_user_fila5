@@ -1,5 +1,6 @@
 ---
 title: "User Module - Roadmap, Issues & Optimization"
+<<<<<<< .merge_file_ZB9OiB
 type: concept
 tags: [roadmap, issues]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - roadmap, issues & optimization user"
+---
+>>>>>>> .merge_file_26NCQH
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -389,10 +398,17 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_ZB9OiB
 - [← User Module README](./readme.md)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
+=======
+- [← User Module README](./README.md)
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
+- [← Project Roadmap](../../../../../docs/project-analysis-and-roadmap.md)
+- [← Root Documentation](../../index.md)
+>>>>>>> .merge_file_26NCQH
 
 ---
 

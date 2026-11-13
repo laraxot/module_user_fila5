@@ -1,9 +1,25 @@
+<<<<<<< .merge_file_axxXmC
+=======
+---
+title: "Best Practices per l'Implementazione del Logout"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per l'implementazione del logout user"
+---
+>>>>>>> .merge_file_0KQhjL
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_axxXmC
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
+=======
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+>>>>>>> .merge_file_0KQhjL
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

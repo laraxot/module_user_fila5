@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_dsMy3d
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -174,3 +175,30 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Gestione Sessione](./session_management.md)
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+---
+<<<<<<< .merge_file_qBk6BM
+title: "Sicurezza nel Processo di Logout"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "sicurezza nel processo di logout user"
+status: superseded
+superseded_by: historical/logout-security.md
+---
+# Sicurezza nel Processo di Logout
+=======
+title: "logout_security"
+type: alias
+status: superseded
+canonical: "archive/historical/logout-security.md"
+qmd: "logout_security alias superseded"
+---
+>>>>>>> .merge_file_Si7pkL
+
+# logout_security
+
+Documento identico al canonico: [logout-security.md](historical/logout-security.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/logout-security.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_AlAhrB

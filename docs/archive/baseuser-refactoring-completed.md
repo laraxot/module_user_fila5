@@ -1,3 +1,16 @@
+<<<<<<< .merge_file_ZWbAdh
+=======
+<<<<<<< .merge_file_fqHxMn
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "baseuser refactoring - completato user"
+status: superseded
+superseded_by: baseuser-refactoring.md
+---
+>>>>>>> .merge_file_mX5DNp
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -232,17 +245,30 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< .merge_file_ZWbAdh
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+=======
+- [DRY Violation Analysis](../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../models/baseuser.md)
+>>>>>>> .merge_file_mX5DNp
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./README.md)
 
 ### Root Progetto
+<<<<<<< .merge_file_ZWbAdh
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
+=======
+- [Code Quality](../code-quality-analysis.md)
+- [DRY Violations](../../../docs/dry-violations-analysis.md)
+>>>>>>> .merge_file_mX5DNp
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)
@@ -337,9 +363,27 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 > **"Semplicità è la massima sofisticazione"**  
 > Codice semplice, pulito, mantenibile
 
+<<<<<<< .merge_file_ZWbAdh
 ---
 
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
 
+=======
+=======
+>>>>>>> .merge_file_lCn2XS
+---
+title: "baseuser-refactoring-completed"
+type: alias
+status: superseded
+canonical: "archive/baseuser-refactoring.md"
+qmd: "baseuser-refactoring-completed alias superseded"
+---
+
+# baseuser-refactoring-completed
+
+Documento identico al canonico: [baseuser-refactoring.md](baseuser-refactoring.md).
+
+Canonico: `laravel/Modules/User/docs/archive/baseuser-refactoring.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_mX5DNp

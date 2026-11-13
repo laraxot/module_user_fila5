@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_DGIC2g
 ---
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -18,6 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+<<<<<<< .merge_file_6N2CUs
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "baseuser refactoring - completato user"
+---
+>>>>>>> .merge_file_ehp4Tb
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -252,6 +264,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< .merge_file_DGIC2g
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 
@@ -259,6 +272,15 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
 - [User Module README](./readme.md)
+=======
+- [DRY Violation Analysis](../../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../../models/baseuser.md)
+- [Roles & Permissions](./roles-permissions.md)
+- [User Module README](./README.md)
+>>>>>>> .merge_file_ehp4Tb
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
@@ -357,9 +379,27 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 > **"Semplicità è la massima sofisticazione"**  
 > Codice semplice, pulito, mantenibile
 
+<<<<<<< .merge_file_DGIC2g
 ---
 
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
 
+=======
+=======
+>>>>>>> .merge_file_Oqd6Fo
+---
+title: "baseuser-refactoring-completed"
+type: alias
+status: superseded
+canonical: "archive/baseuser-refactoring.md"
+qmd: "baseuser-refactoring-completed alias superseded"
+---
+
+# baseuser-refactoring-completed
+
+Documento identico al canonico: [baseuser-refactoring.md](../baseuser-refactoring.md).
+
+Canonico: `laravel/Modules/User/docs/archive/baseuser-refactoring.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_ehp4Tb

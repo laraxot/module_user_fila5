@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_DoPTqX
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
@@ -8,6 +9,26 @@
 - [Analisi Errore Logout](LOGOUT_IMPLEMENTATION_ERROR.md)
 - [Struttura Widget](WIDGETS_STRUCTURE.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+=======
+---
+title: "Implementazione del Logout con Widget Filament"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del logout con widget filament user"
+---
+# Implementazione del Logout con Widget Filament
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/readme.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-implementation-error.md)
+- [Struttura Widget](widgets-structure.md)
+- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+>>>>>>> .merge_file_KRO1df
 
 ## Introduzione
 
@@ -227,7 +248,11 @@ FilamentView::registerRenderHook(
 
 ## Alternativa: Logout Immediato
 
+<<<<<<< .merge_file_DoPTqX
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> .merge_file_KRO1df
 
 ## Conclusione
 

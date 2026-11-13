@@ -1,10 +1,27 @@
+<<<<<<< .merge_file_blptbD
+=======
+---
+title: "Implementazione del Selettore di Lingua con Bandiere SVG"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del selettore di lingua con bandiere svg user"
+---
+>>>>>>> .merge_file_359mmH
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_blptbD
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+=======
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+>>>>>>> .merge_file_359mmH
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

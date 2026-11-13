@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_bVKIVd
 title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
 type: concept
 tags: [user, factory, advanced, integration]
@@ -21,6 +22,18 @@ related:
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
+=======
+title: "UserFactory Advanced Integration - Modulo User & healthcare_app"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "userfactory advanced integration - modulo user & healthcare_app user"
+---
+# UserFactory Advanced Integration - Modulo User & healthcare_app
+
+## Post Deep-Study Analysis 
+>>>>>>> .merge_file_4uR4Vl
 
 Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integrazione UserFactory ha raggiunto un livello di eccellenza enterprise-grade con supporto completo per:
 
@@ -29,15 +42,25 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
+<<<<<<< .merge_file_bVKIVd
 ├── User (<nome progetto>) - STI Base + Business Logic
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider
+=======
+├── User (healthcare_app) - STI Base + Business Logic  
+    ├── Patient (HasParent) - Healthcare Consumer
+    ├── Doctor (HasParent) - Healthcare Provider  
+>>>>>>> .merge_file_4uR4Vl
     └── Admin (HasParent) - System Administrator
 ```
 
 ### Cross-Module Compatibility Matrix
 
+<<<<<<< .merge_file_bVKIVd
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+=======
+| BaseUser Field | healthcare_app User | Business Logic | Factory Support |
+>>>>>>> .merge_file_4uR4Vl
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -67,7 +90,11 @@ User::factory()->patient()->eligibleForFreeServices()->create();
 User::factory()->patient()->pregnant()->create();
 User::factory()->patient()->lowIncome()->create();
 
+<<<<<<< .merge_file_bVKIVd
 // Doctor scenarios
+=======
+// Doctor scenarios  
+>>>>>>> .merge_file_4uR4Vl
 User::factory()->doctor()->withStudio()->create();
 User::factory()->doctor()->withWorkflow()->create();
 User::factory()->doctor()->specialist()->create();
@@ -87,7 +114,11 @@ User::factory()->gdprCompliant()->create();
 
 ### Italian Healthcare System
 - **Codice Fiscale**: Realistic generation algorithm
+<<<<<<< .merge_file_bVKIVd
 - **ISEE Integration**: Low-income eligibility logic
+=======
+- **ISEE Integration**: Low-income eligibility logic  
+>>>>>>> .merge_file_4uR4Vl
 - **Pregnancy Services**: Special healthcare pathways
 - **Professional Credentials**: Realistic doctor certifications
 
@@ -101,6 +132,7 @@ User::factory()->gdprCompliant()->create();
 
 ### Connection Strategy Perfezionata
 ```php
+<<<<<<< .merge_file_bVKIVd
 // BaseUser (User Module)
 protected $connection = 'user';
 
@@ -109,6 +141,16 @@ protected $connection = '<nome progetto>';
 
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses '<nome progetto>' connection
+=======
+// BaseUser (User Module) 
+protected $connection = 'user';
+
+// healthcare_app User (Healthcare Domain)
+protected $connection = 'salute_ora';
+
+// Factory automatically handles connection switching
+User::factory()->create(); // Uses 'salute_ora' connection
+>>>>>>> .merge_file_4uR4Vl
 ```
 
 ### Morph Relations Support
@@ -129,6 +171,7 @@ $address = $doctor->address; // Cross-module morph relation
 public function test_cross_module_compatibility()
 {
     $user = User::factory()->create();
+<<<<<<< .merge_file_bVKIVd
 
     // BaseUser contracts respected
     expect($user)->toHaveProperty('email');
@@ -136,18 +179,35 @@ public function test_cross_module_compatibility()
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
 
     // <nome progetto> domain contracts
+=======
+    
+    // BaseUser contracts respected
+    expect($user)->toHaveProperty('email');
+    expect($user)->toHaveProperty('password'); 
+    expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
+    
+    // healthcare_app domain contracts
+>>>>>>> .merge_file_4uR4Vl
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
 
+<<<<<<< .merge_file_bVKIVd
 // Business logic testing
+=======
+// Business logic testing  
+>>>>>>> .merge_file_4uR4Vl
 public function test_healthcare_workflows()
 {
     // Patient registration workflow
     $patient = User::factory()->patient()->pending()->create();
     $patient->requestIntegration();
     expect($patient->isIntegrationRequested())->toBeTrue();
+<<<<<<< .merge_file_bVKIVd
 
+=======
+    
+>>>>>>> .merge_file_4uR4Vl
     // Doctor onboarding workflow
     $doctor = User::factory()->doctorWithWorkflow()->create();
     expect($doctor->workflow)->toBeInstanceOf(DoctorRegistrationWorkflow::class);
@@ -238,7 +298,11 @@ public function run(): void
 ### Database Efficiency
 - **Single Table Inheritance**: Optimal queries
 - **Eager Loading**: Relationship optimization
+<<<<<<< .merge_file_bVKIVd
 - **Connection Pooling**: Cross-database efficiency
+=======
+- **Connection Pooling**: Cross-database efficiency  
+>>>>>>> .merge_file_4uR4Vl
 - **Index Strategy**: Query performance
 
 ### Memory Management
@@ -265,7 +329,11 @@ public function run(): void
 
 ### Phase 2 Roadmap
 - **Media Library Integration**: Real file attachments
+<<<<<<< .merge_file_bVKIVd
 - **API Testing Support**: RESTful endpoint testing
+=======
+- **API Testing Support**: RESTful endpoint testing  
+>>>>>>> .merge_file_4uR4Vl
 - **Multi-Language**: Internationalization support
 - **Advanced Workflows**: Complex business processes
 
@@ -281,7 +349,11 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
+<<<<<<< .merge_file_bVKIVd
 ### For <nome progetto> Module
+=======
+### For healthcare_app Module  
+>>>>>>> .merge_file_4uR4Vl
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -293,6 +365,7 @@ public function run(): void
 
 ---
 
+<<<<<<< .merge_file_bVKIVd
 **Status**: ✅ **PRODUCTION READY**
 **Last Updated**: Gennaio 2025
 **Maintenance**: Active development
@@ -591,10 +664,16 @@ public function run(): void
 **Status**: ✅ **PRODUCTION READY**
 **Last Updated**: Gennaio 2025
 **Maintenance**: Active development
+=======
+**Status**: ✅ **PRODUCTION READY**  
+
+**Maintenance**: Active development  
+>>>>>>> .merge_file_4uR4Vl
 **Support**: Enterprise-grade
 
 ## Link Documentazione
 
+<<<<<<< .merge_file_bVKIVd
 ### <nome progetto> Module
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
@@ -608,3 +687,18 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
+=======
+### healthcare_app Module
+- [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../healthcare_app/docs/models/states.md)
+
+### User Module
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
+
+### Root Documentation  
+- [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
+- [Testing Standards](../../../../../docs/testing_standards.md) 
+>>>>>>> .merge_file_4uR4Vl

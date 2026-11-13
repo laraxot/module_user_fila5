@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_SFV01k
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
@@ -9,14 +10,41 @@
 ## Panoramica
 
 Questo documento descrive come implementare nell'header di SaluteOra:
+=======
+---
+title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
+---
+# Implementazione del Selettore di Lingua e Avatar Utente nell'Header
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+
+## Panoramica
+
+Questo documento descrive come implementare nell'header di healthcare_app:
+>>>>>>> .merge_file_QxdnP3
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
+<<<<<<< .merge_file_SFV01k
 L'header di SaluteOra è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
+=======
+L'header di healthcare_app è gestito tramite:
+- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
+- **Configurazione JSON**: `/config/local/healthcare_app/database/content/sections/1.json`
+>>>>>>> .merge_file_QxdnP3
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -206,7 +234,11 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
+<<<<<<< .merge_file_SFV01k
                     "alt": "Logo SaluteOra",
+=======
+                    "alt": "Logo healthcare_app",
+>>>>>>> .merge_file_QxdnP3
                     "width": 150,
                     "height": 32
                 }
@@ -280,7 +312,11 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
+<<<<<<< .merge_file_SFV01k
                     "alt": "SaluteOra Logo",
+=======
+                    "alt": "healthcare_app Logo",
+>>>>>>> .merge_file_QxdnP3
                     "width": 150,
                     "height": 32
                 }

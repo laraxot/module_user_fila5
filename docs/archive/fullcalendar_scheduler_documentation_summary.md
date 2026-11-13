@@ -1,8 +1,23 @@
+<<<<<<< .merge_file_GQHw1m
+=======
+---
+title: "FullCalendar Scheduler - Documentazione Completa"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "fullcalendar scheduler - documentazione completa user"
+---
+>>>>>>> .merge_file_NRcnhB
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
 
+<<<<<<< .merge_file_GQHw1m
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto SaluteOra, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+=======
+Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto healthcare_app, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+>>>>>>> .merge_file_NRcnhB
 
 ## Documenti Disponibili
 
@@ -13,7 +28,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
 - Configurazione completa per Laravel/Filament
+<<<<<<< .merge_file_GQHw1m
 - Best practices per SaluteOra
+=======
+- Best practices per healthcare_app
+>>>>>>> .merge_file_NRcnhB
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
@@ -29,10 +48,17 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
 Documentazione base esistente per:
 - Panoramica generale licenze
+<<<<<<< .merge_file_GQHw1m
 - Configurazione di base in SaluteOra
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler_license_key.md)
+=======
+- Configurazione di base in healthcare_app
+- Problemi comuni basilari
+
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
+>>>>>>> .merge_file_NRcnhB
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -62,7 +88,11 @@ La documentazione è basata su ricerca approfondita di:
    - Problema: BASE_OPTION_DEFAULTS non esportato
    - Soluzione: Workaround con ignore directives
 
+<<<<<<< .merge_file_GQHw1m
 ### 🎯 Soluzioni Specifiche SaluteOra
+=======
+### 🎯 Soluzioni Specifiche healthcare_app
+>>>>>>> .merge_file_NRcnhB
 
 La documentazione include configurazioni specifiche per:
 - **Multi-tenancy**: Isolamento dati per studio
@@ -76,7 +106,11 @@ La documentazione include configurazioni specifiche per:
 ### 🏗️ Architettura
 
 ```
+<<<<<<< .merge_file_GQHw1m
 SaluteOra FullCalendar Implementation
+=======
+healthcare_app FullCalendar Implementation
+>>>>>>> .merge_file_NRcnhB
 ├── AdminPanelProvider.php (Configurazione centrale)
 ├── config/fullcalendar.php (Configurazioni avanzate)
 ├── .env (Variabili licenza)
@@ -123,21 +157,33 @@ La documentazione è aggiornata per:
 - **FullCalendar v6.1.17** (latest)
 - **Filament v3.x**
 - **Laravel 11.x/12.x**
+<<<<<<< .merge_file_GQHw1m
 - **SaluteOra current architecture**
+=======
+- **healthcare_app current architecture**
+>>>>>>> .merge_file_NRcnhB
 
 ### 🔄 Aggiornamenti Futuri
 
 Quando aggiornare la documentazione:
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
+<<<<<<< .merge_file_GQHw1m
 - Modifiche architettura SaluteOra
+=======
+- Modifiche architettura healthcare_app
+>>>>>>> .merge_file_NRcnhB
 - Nuovi requisiti sanitari/legali
 
 ### 📝 Contributi
 
 Per aggiornare la documentazione:
 1. Verificare issue GitHub FullCalendar
+<<<<<<< .merge_file_GQHw1m
 2. Testare soluzioni in ambiente SaluteOra
+=======
+2. Testare soluzioni in ambiente healthcare_app
+>>>>>>> .merge_file_NRcnhB
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo summary
 
@@ -160,7 +206,11 @@ Per aggiornare la documentazione:
 
 ## Conclusioni
 
+<<<<<<< .merge_file_GQHw1m
 Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in SaluteOra, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+=======
+Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in healthcare_app, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+>>>>>>> .merge_file_NRcnhB
 
 **Documenti chiave da consultare:**
 1. **Setup iniziale**: Quick Reference
@@ -168,4 +218,8 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 3. **Riferimento quotidiano**: Quick Reference checklist
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
+<<<<<<< .merge_file_GQHw1m
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di SaluteOra. 
+=======
+La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di healthcare_app. 
+>>>>>>> .merge_file_NRcnhB

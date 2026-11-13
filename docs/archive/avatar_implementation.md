@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gA27s9
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati
@@ -118,3 +119,30 @@ Il sistema di avatar può essere esteso in futuro per includere:
 - [Documentazione SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
 - [Architettura Modulare SaluteOra](/docs/architettura-modulare.md)
+=======
+---
+<<<<<<< .merge_file_Sjvcyg
+title: "Implementazione degli Avatar"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione degli avatar user"
+status: superseded
+superseded_by: historical/avatar-implementation.md
+---
+# Implementazione degli Avatar 
+=======
+title: "avatar_implementation"
+type: alias
+status: superseded
+canonical: "archive/historical/avatar-implementation.md"
+qmd: "avatar_implementation alias superseded"
+---
+>>>>>>> .merge_file_8e7U9F
+
+# avatar_implementation
+
+Documento identico al canonico: [avatar-implementation.md](historical/avatar-implementation.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/avatar-implementation.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_2btfty

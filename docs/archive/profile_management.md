@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_v5n6VX
+=======
+---
+title: "Profile Management in Laravel Modules"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "profile management in laravel modules user"
+---
+>>>>>>> .merge_file_mcfwMm
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -66,6 +77,12 @@ This document outlines the best practices for managing user profiles within a La
 ## Links to Related Documentation
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
+<<<<<<< .merge_file_v5n6VX
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
+=======
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
+>>>>>>> .merge_file_mcfwMm

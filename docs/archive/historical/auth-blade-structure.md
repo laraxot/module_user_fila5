@@ -1,5 +1,6 @@
 ---
 title: "Struttura delle Blade di Autenticazione con Volt"
+<<<<<<< .merge_file_bzZNAX
 type: concept
 tags: [auth, blade, structure]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "struttura delle blade di autenticazione con volt user"
+---
+>>>>>>> .merge_file_FvkGmE
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -198,10 +207,13 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
+<<<<<<< .merge_file_bzZNAX
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
+=======
+>>>>>>> .merge_file_FvkGmE
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md)

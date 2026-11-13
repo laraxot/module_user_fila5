@@ -1,4 +1,16 @@
+<<<<<<< .merge_file_HvrUPS
 # UserFactory Advanced Integration - Modulo User & SaluteOra
+=======
+---
+title: "UserFactory Advanced Integration - Modulo User & healthcare_app"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "userfactory advanced integration - modulo user & healthcare_app user"
+---
+# UserFactory Advanced Integration - Modulo User & healthcare_app
+>>>>>>> .merge_file_eEEksv
 
 ## Post Deep-Study Analysis 
 
@@ -9,7 +21,11 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
+<<<<<<< .merge_file_HvrUPS
 ├── User (SaluteOra) - STI Base + Business Logic  
+=======
+├── User (healthcare_app) - STI Base + Business Logic  
+>>>>>>> .merge_file_eEEksv
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -17,7 +33,11 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
+<<<<<<< .merge_file_HvrUPS
 | BaseUser Field | SaluteOra User | Business Logic | Factory Support |
+=======
+| BaseUser Field | healthcare_app User | Business Logic | Factory Support |
+>>>>>>> .merge_file_eEEksv
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -84,7 +104,11 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
+<<<<<<< .merge_file_HvrUPS
 // SaluteOra User (Healthcare Domain)
+=======
+// healthcare_app User (Healthcare Domain)
+>>>>>>> .merge_file_eEEksv
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -115,7 +139,11 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
+<<<<<<< .merge_file_HvrUPS
     // SaluteOra domain contracts
+=======
+    // healthcare_app domain contracts
+>>>>>>> .merge_file_eEEksv
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -261,7 +289,11 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
+<<<<<<< .merge_file_HvrUPS
 ### For SaluteOra Module  
+=======
+### For healthcare_app Module  
+>>>>>>> .merge_file_eEEksv
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -280,6 +312,7 @@ public function run(): void
 
 ## Link Documentazione
 
+<<<<<<< .merge_file_HvrUPS
 ### SaluteOra Module
 - [Advanced Improvements Analysis](../../saluteora/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../saluteora/docs/factories/userfactory_implementation_completed.md)
@@ -293,3 +326,18 @@ public function run(): void
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md) 
+=======
+### healthcare_app Module
+- [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../healthcare_app/docs/models/states.md)
+
+### User Module
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
+- [BaseUser Architecture](../parental-inheritance.md)
+
+### Root Documentation  
+- [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
+- [Testing Standards](../../../../../docs/testing_standards.md) 
+>>>>>>> .merge_file_eEEksv

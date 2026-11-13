@@ -1,5 +1,6 @@
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
+<<<<<<< .merge_file_HaEeJi
 type: concept
 tags: [fullcalendar, scheduler, documentation, summary]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "fullcalendar scheduler - documentazione completa user"
+---
+>>>>>>> .merge_file_DX15lN
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -47,7 +56,11 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
+<<<<<<< .merge_file_HaEeJi
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+=======
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
+>>>>>>> .merge_file_DX15lN
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -191,7 +204,11 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
+<<<<<<< .merge_file_HaEeJi
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+=======
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
+>>>>>>> .merge_file_DX15lN
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -328,5 +345,8 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
+<<<<<<< .merge_file_HaEeJi
 
 ```
+=======
+>>>>>>> .merge_file_DX15lN

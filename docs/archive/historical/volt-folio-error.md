@@ -1,5 +1,6 @@
 ---
 title: "Errore VoltDirectiveMissingException in Folio"
+<<<<<<< .merge_file_ZtyzCx
 type: concept
 tags: [volt, folio, error]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore voltdirectivemissingexception in folio user"
+---
+>>>>>>> .merge_file_wluXk9
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema
@@ -75,4 +84,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
+<<<<<<< .merge_file_ZtyzCx
 - [Best Practices Routing](./routing-best-practices-2.md) 
+=======
+>>>>>>> .merge_file_wluXk9

@@ -1,8 +1,23 @@
+<<<<<<< .merge_file_fP4N8A
+=======
+---
+title: "Implementazione degli Avatar"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione degli avatar user"
+---
+>>>>>>> .merge_file_wMxXmV
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_fP4N8A
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
+>>>>>>> .merge_file_wMxXmV
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

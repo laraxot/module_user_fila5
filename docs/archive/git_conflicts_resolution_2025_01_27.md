@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_hkj2D7
+=======
+---
+title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
+---
+>>>>>>> .merge_file_mahDX1
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -295,10 +306,17 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
+<<<<<<< .merge_file_hkj2D7
 - [widgets_structure.md](./widgets_structure.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path_conventions.md](./path_conventions.md) - Convenzioni percorsi
 - [volt_blade_implementation.md](./volt_blade_implementation.md) - View patterns
+=======
+- [widgets_structure.md](./widgets-structure.md) - Regole per widget structure
+- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
+- [path_conventions.md](./path-conventions.md) - Convenzioni percorsi
+- [volt_blade_implementation.md](./volt-blade-implementation.md) - View patterns
+>>>>>>> .merge_file_mahDX1
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

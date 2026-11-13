@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_fPhlVR
+=======
+---
+title: "Actions Structure"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "actions structure user"
+---
+>>>>>>> .merge_file_VFSOj9
 # Actions Structure
 
 ## Directory Structure
@@ -71,7 +82,14 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_fPhlVR
 - [Path Conventions](./PATH_CONVENTIONS.md)
 - [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
 - [Module Structure](./MODULE_STRUCTURE.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+=======
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)
+- [Queueable Actions Best Practices](../../best-practices/queueable-actions.md)
+>>>>>>> .merge_file_VFSOj9

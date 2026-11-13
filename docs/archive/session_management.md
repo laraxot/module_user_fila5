@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_PIOjUT
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -75,3 +76,30 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+---
+<<<<<<< .merge_file_ROeioE
+title: "Gestione delle Sessioni"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "gestione delle sessioni user"
+status: superseded
+superseded_by: historical/session-management.md
+---
+# Gestione delle Sessioni
+=======
+title: "session_management"
+type: alias
+status: superseded
+canonical: "archive/historical/session-management.md"
+qmd: "session_management alias superseded"
+---
+>>>>>>> .merge_file_ngeYao
+
+# session_management
+
+Documento identico al canonico: [session-management.md](historical/session-management.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/session-management.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_DPjmqP

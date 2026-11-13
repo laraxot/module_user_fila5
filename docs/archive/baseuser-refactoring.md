@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_diP1Hb
+=======
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "baseuser refactoring - completato user"
+---
+>>>>>>> .merge_file_3Hb00p
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -232,6 +243,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ## Documentazione Collegata
 
 ### Analisi Pre-Refactoring
+<<<<<<< .merge_file_diP1Hb
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 - [Refactoring Plan](../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 
@@ -243,6 +255,19 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
+=======
+- [DRY Violation Analysis](../baseuser-dry-violation-analysis.md) - Analisi completa del problema
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+
+### Modulo User
+- [BaseUser Model](../models/baseuser.md)
+- [Roles & Permissions](./roles-permissions.md)
+- [User Module README](./README.md)
+
+### Root Progetto
+- [Code Quality](../code-quality-analysis.md)
+- [DRY Violations](../../../docs/dry-violations-analysis.md)
+>>>>>>> .merge_file_3Hb00p
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

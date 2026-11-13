@@ -1,5 +1,6 @@
 ---
 title: "Implementazione del Selettore di Lingua con Bandiere SVG"
+<<<<<<< .merge_file_8oYwl1
 type: concept
 tags: [header, language, selector, flags]
 created: 2026-07-14
@@ -25,6 +26,21 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del selettore di lingua con bandiere svg user"
+---
+# Implementazione del Selettore di Lingua con Bandiere SVG
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+>>>>>>> .merge_file_DRQxoT
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -205,10 +221,17 @@ return [
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_8oYwl1
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
+=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+>>>>>>> .merge_file_DRQxoT
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

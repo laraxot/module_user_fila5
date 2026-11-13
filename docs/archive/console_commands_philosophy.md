@@ -1,7 +1,32 @@
+<<<<<<< .merge_file_027SFP
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
 
 ## Filosofia Fondamentale
 
+=======
+---
+<<<<<<< .merge_file_bH2CWc
+title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "filosofia dei console commands in laraxot (standard supremo) user"
+---
+# Filosofia dei Console Commands in Laraxot (Standard Supremo)
+=======
+title: "console_commands_philosophy"
+type: alias
+status: superseded
+canonical: "archive/historical/console-commands-philosophy.md"
+qmd: "console_commands_philosophy alias superseded"
+---
+>>>>>>> .merge_file_lMPhjH
+
+# console_commands_philosophy
+
+<<<<<<< .merge_file_bH2CWc
+>>>>>>> .merge_file_fdzfGo
 ### Principi Immutabili
 - **Strict Types**: `declare(strict_types=1);` sempre obbligatorio
 - **Laravel Prompts Moderni**: Solo `text()`, `select()`, `confirm()` - mai `ask()` o `choice()` obsolete
@@ -197,9 +222,21 @@ foreach ($types as $key => $type) {
 - [ ] Confirmation per azioni distruttive
 
 ## Collegamenti
+<<<<<<< .merge_file_027SFP
 - [ChangeTypeCommand.php](../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
 - [README.md](readme.md)
 - [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
 - [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
 
 *Ultimo aggiornamento: giugno 2025 - Standard estratto dal capolavoro ChangeTypeCommand.php*
+=======
+- [ChangeTypeCommand.php](../../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
+- [README.md](README.md)
+- [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
+- [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
+=======
+Documento identico al canonico: [console-commands-philosophy.md](historical/console-commands-philosophy.md).
+>>>>>>> .merge_file_lMPhjH
+
+Canonico: `laravel/Modules/User/docs/archive/historical/console-commands-philosophy.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_fdzfGo

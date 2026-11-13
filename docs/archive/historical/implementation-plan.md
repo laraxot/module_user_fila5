@@ -1,5 +1,6 @@
 ---
 title: "Piano di Implementazione Componenti Header"
+<<<<<<< .merge_file_nfxLqq
 type: concept
 tags: [implementation, plan]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "piano di implementazione componenti header user"
+---
+>>>>>>> .merge_file_vbr5F8
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -185,9 +194,12 @@ class NavigationTest extends TestCase
 ### 7.1 Aggiornare
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
+<<<<<<< .merge_file_nfxLqq
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
+=======
+>>>>>>> .merge_file_vbr5F8
 - [Security Best Practices](./security_best_practices.md)
 
 ## Timeline
@@ -217,7 +229,10 @@ class NavigationTest extends TestCase
 ## Collegamenti Correlati
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
+<<<<<<< .merge_file_nfxLqq
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
+=======
+>>>>>>> .merge_file_vbr5F8
 - [Security Best Practices](./security_best_practices.md) 

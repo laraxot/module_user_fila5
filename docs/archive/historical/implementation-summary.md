@@ -1,5 +1,6 @@
 ---
 title: "Implementation Summary - User Module Type Safety Improvements"
+<<<<<<< .merge_file_7wOfPV
 type: concept
 tags: [implementation, summary]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementation summary - user module type safety improvements user"
+---
+>>>>>>> .merge_file_XRekPB
 # Implementation Summary - User Module Type Safety Improvements
 
 ## Overview
@@ -173,7 +182,11 @@ All type casting operations now use safe methods:
 ### Updated Documentation Files
 
 1. **`README.md`**: Updated with type safety information
+<<<<<<< .merge_file_7wOfPV
 2. **`widgets-structure-2.md`**: Enhanced with type safety guidelines
+=======
+2. **`widgets-structure.md`**: Enhanced with type safety guidelines
+>>>>>>> .merge_file_XRekPB
 
 ## Best Practices Established
 
@@ -273,5 +286,8 @@ php artisan test --filter=User
 
 # Check for any new errors
 ./vendor/bin/phpstan analyse Modules
+<<<<<<< .merge_file_7wOfPV
 
 ```
+=======
+>>>>>>> .merge_file_XRekPB

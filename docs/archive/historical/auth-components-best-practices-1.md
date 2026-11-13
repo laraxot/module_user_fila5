@@ -1,9 +1,25 @@
+<<<<<<< .merge_file_LmDwLP
+=======
+---
+title: "Best Practices per i Componenti di Autenticazione"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per i componenti di autenticazione user"
+---
+>>>>>>> .merge_file_HVZMfp
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_LmDwLP
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
+=======
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+>>>>>>> .merge_file_HVZMfp
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

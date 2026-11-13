@@ -1,5 +1,6 @@
 ---
 title: "Componenti Header"
+<<<<<<< .merge_file_UNrTEx
 type: concept
 tags: [header, components]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "componenti header user"
+---
+>>>>>>> .merge_file_u8fOpO
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -107,4 +116,8 @@ related:
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_UNrTEx
 - [Gestione Sessione](./session-management-2.md) 
+=======
+- [Gestione Sessione](./session-management.md) 
+>>>>>>> .merge_file_u8fOpO

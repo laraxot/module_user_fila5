@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_12Pwpc
+=======
+---
+title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "userfactory advanced integration - modulo user & <nome progetto> user"
+---
+>>>>>>> .merge_file_3sxYQa
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -286,6 +297,7 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
+<<<<<<< .merge_file_12Pwpc
 - [User Factory Integration](./user_factory_integration.md)
 - [Traits Complete Guide](./traits_complete_guide.md)
 - [BaseUser Architecture](./parental_inheritance.md)
@@ -293,3 +305,12 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md)
+=======
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
+- [BaseUser Architecture](../../parental-inheritance.md)
+
+### Root Documentation
+- [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
+- [Testing Standards](../../../../../docs/testing_standards.md)
+>>>>>>> .merge_file_3sxYQa

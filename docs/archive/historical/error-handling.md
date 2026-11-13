@@ -1,5 +1,6 @@
 ---
 title: "Gestione degli Errori nelle Blade di Autenticazione"
+<<<<<<< .merge_file_VWOM3A
 type: concept
 tags: [error, handling]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "gestione degli errori nelle blade di autenticazione user"
+---
+>>>>>>> .merge_file_tKnyO5
 # Gestione degli Errori nelle Blade di Autenticazione
 
 ## Introduzione
@@ -187,6 +196,9 @@ public function register()
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
+<<<<<<< .merge_file_VWOM3A
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
+=======
+>>>>>>> .merge_file_tKnyO5

@@ -1,5 +1,6 @@
 ---
 title: "Regole per le Chiavi di Traduzione"
+<<<<<<< .merge_file_hqiTfy
 type: rule
 tags: [translation, keys, rules]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "regole per le chiavi di traduzione user"
+---
+>>>>>>> .merge_file_j5JUPe
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -132,9 +141,14 @@ return [
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_hqiTfy
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
+=======
+- [Best Practices per le Traduzioni](translation-best-practices.md)
+- [Struttura del Modulo](module-structure.md)
+>>>>>>> .merge_file_j5JUPe
 - [Convenzioni di Codice](code-conventions.md)

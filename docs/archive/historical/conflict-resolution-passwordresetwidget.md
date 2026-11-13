@@ -1,5 +1,6 @@
 ---
 title: "Risoluzione Conflitti PasswordResetWidget.php"
+<<<<<<< .merge_file_Ebg6Xj
 type: concept
 tags: [conflict, resolution, passwordresetwidget]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti passwordresetwidget.php user"
+---
+>>>>>>> .merge_file_iapMqD
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -77,11 +86,19 @@ Verificare che:
 - Il styling Tailwind sia disponibile nel contesto Filament
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
+<<<<<<< .merge_file_Ebg6Xj
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+=======
+- [User Module Documentation](README.md)
+- [Authentication Widgets Guide](auth_widgets.md)
+- [Filament Form Components](filament_form_components.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
+>>>>>>> .merge_file_iapMqD
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -173,7 +190,11 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
+<<<<<<< .merge_file_Ebg6Xj
 - [User Module Documentation](readme.md)
+=======
+- [User Module Documentation](README.md)
+>>>>>>> .merge_file_iapMqD
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)

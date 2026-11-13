@@ -1,5 +1,6 @@
 ---
 title: "Implementazione del Logout con Widget Filament"
+<<<<<<< .merge_file_eTuWqO
 type: concept
 tags: [logout, filament, widget]
 created: 2026-07-14
@@ -252,15 +253,29 @@ Se non è necessaria una conferma per il logout, è preferibile utilizzare l'app
 ## Conclusione
 
 L'implementazione del logout con un widget Filament offre un approccio flessibile e riutilizzabile, particolarmente utile quando si desidera mantenere una pagina di conferma. Tuttavia, per un'esperienza utente più fluida, è generalmente preferibile l'approccio di logout immediato con Folio e PHP puro.
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del logout con widget filament user"
+---
+>>>>>>> .merge_file_1qVluN
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
+<<<<<<< .merge_file_eTuWqO
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Errore Logout](logout-implementation-error-3.md)
 - [Struttura Widget](widgets-structure-2.md)
+=======
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-implementation-error.md)
+- [Struttura Widget](widgets-structure.md)
+>>>>>>> .merge_file_1qVluN
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
@@ -392,7 +407,11 @@ class LogoutWidget extends XotBaseWidget
                 {{ $this->form }}
 
                 <div class="mt-6 flex flex-col gap-3">
+<<<<<<< .merge_file_eTuWqO
                     <x-filament::button
+=======
+                    <x-filament::button 
+>>>>>>> .merge_file_1qVluN
                         type="submit"
                         color="danger"
                         size="lg"
@@ -401,8 +420,13 @@ class LogoutWidget extends XotBaseWidget
                         {{ __('Conferma Logout') }}
                     </x-filament::button>
 
+<<<<<<< .merge_file_eTuWqO
                     <x-filament::button
                         tag="a"
+=======
+                    <x-filament::button 
+                        tag="a" 
+>>>>>>> .merge_file_1qVluN
                         :href="'/' . app()->getLocale()"
                         color="gray"
                         size="lg"
@@ -477,11 +501,19 @@ FilamentView::registerRenderHook(
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
+<<<<<<< .merge_file_eTuWqO
 5. **Conformità alle convenzioni**: Segue le convenzioni di <nome progetto> per i widget Filament.
 
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+5. **Conformità alle convenzioni**: Segue le convenzioni di healthcare_app per i widget Filament.
+
+## Alternativa: Logout Immediato
+
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> .merge_file_1qVluN
 
 ## Conclusione
 

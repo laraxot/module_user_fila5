@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_0EuarT
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -412,3 +413,30 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 - **teamRole() contratto**: CORRETTO - ora restituisce `?Role` invece di `?string`
 - **teamRoleName() helper**: AGGIUNTO - per ottenere stringa del ruolo
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+=======
+---
+<<<<<<< .merge_file_Cs5PSR
+title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "guida completa ai trait del modulo user - aggiornato post-implementazione user"
+status: superseded
+superseded_by: historical/traits-complete-guide.md
+---
+# Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
+=======
+title: "traits_complete_guide"
+type: alias
+status: superseded
+canonical: "archive/historical/traits-complete-guide.md"
+qmd: "traits_complete_guide alias superseded"
+---
+>>>>>>> .merge_file_ZvI2yB
+
+# traits_complete_guide
+
+Documento identico al canonico: [traits-complete-guide.md](historical/traits-complete-guide.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/traits-complete-guide.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_oHnmGR

@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_3jr3aI
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
 tags: [git, conflicts, resolution, conflict]
@@ -18,6 +19,16 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+<<<<<<< .merge_file_fcT8TE
+title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "risoluzione conflitti git - modulo user (2025-01-27) user"
+---
+>>>>>>> .merge_file_qahkaA
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -29,8 +40,13 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 ## Collegamenti correlati
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
+<<<<<<< .merge_file_3jr3aI
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+=======
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
+>>>>>>> .merge_file_qahkaA
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
 
 ## File Risolti
@@ -313,6 +329,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Widget Auth**: Rispettare struttura directory `Auth/` per organizzazione
 - **Traduzioni**: Assicurare struttura espansa completa
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
+<<<<<<< .merge_file_3jr3aI
 
 ### **Documentazione Aggiornata:**
 - [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
@@ -328,3 +345,19 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 ---
+=======
+=======
+title: "git-conflicts-resolution-conflict-06cb77"
+type: alias
+status: superseded
+canonical: "archive/historical/git-conflicts-resolution-conflict.md"
+qmd: "git-conflicts-resolution-conflict-06cb77 alias superseded"
+---
+>>>>>>> .merge_file_tUFZmF
+
+# git-conflicts-resolution-conflict-06cb77
+
+Documento identico al canonico: [git-conflicts-resolution-conflict.md](git-conflicts-resolution-conflict.md).
+
+Canonico: `laravel/Modules/User/docs/archive/historical/git-conflicts-resolution-conflict.md`. Qui non ci sono istruzioni: seguire il file collegato.
+>>>>>>> .merge_file_qahkaA

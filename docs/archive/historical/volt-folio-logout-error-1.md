@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_7BRSSe
+=======
+---
+title: "Errore nel Logout con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "errore nel logout con volt e folio user"
+---
+>>>>>>> .merge_file_WuzPqb
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -114,6 +125,12 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
+<<<<<<< .merge_file_7BRSSe
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./volt_best_practices.md)
 - [Gestione Sessione](./session_management.md)
+=======
+- [Best Practices Folio](./routing-best-practices.md)
+- [Best Practices Volt](./volt_best_practices.md)
+- [Gestione Sessione](./session-management.md)
+>>>>>>> .merge_file_WuzPqb

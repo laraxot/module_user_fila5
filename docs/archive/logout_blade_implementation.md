@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_u4O0jX
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -9,6 +10,27 @@
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
 - [Auth Pages Implementation](./auth_pages_implementation.md)
+=======
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta di logout.blade.php user"
+---
+# Implementazione Corretta di logout.blade.php
+
+## Collegamenti correlati
+- [Documentazione centrale](../../../../../docs/README.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+>>>>>>> .merge_file_naxAUv
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -149,9 +171,15 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 - Permette di mostrare un messaggio di conferma durante il reindirizzamento
 - Utilizza il pattern mount per eseguire azioni all'inizializzazione del componente
 
+<<<<<<< .merge_file_u4O0jX
 ## Implementazione Raccomandata per SaluteOra
 
 Per SaluteOra, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+=======
+## Implementazione Raccomandata per healthcare_app
+
+Per healthcare_app, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il logout per i seguenti motivi:
+>>>>>>> .merge_file_naxAUv
 
 1. Il logout è un'operazione semplice che non richiede gestione dello stato
 2. Non è necessaria interazione con l'utente durante il processo
@@ -211,4 +239,8 @@ return redirect()->to('/' . $locale);
 ?>
 ```
 
+<<<<<<< .merge_file_u4O0jX
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
+=======
+Questa implementazione è semplice, sicura e segue tutte le best practices del progetto healthcare_app.
+>>>>>>> .merge_file_naxAUv

@@ -1,5 +1,6 @@
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+<<<<<<< .merge_file_dHfTp0
 type: concept
 tags: [header, language, avatar, implementation]
 created: 2026-07-14
@@ -25,6 +26,21 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
+---
+# Implementazione del Selettore di Lingua e Avatar Utente nell'Header
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+>>>>>>> .merge_file_5M1Cb3
 
 ## Panoramica
 
@@ -399,10 +415,17 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_dHfTp0
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
+=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+>>>>>>> .merge_file_5M1Cb3
 
 ## Panoramica
 

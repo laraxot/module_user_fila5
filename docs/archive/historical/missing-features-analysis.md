@@ -1,5 +1,6 @@
 ---
 title: "Analisi Funzionalità Mancanti - Modulo User"
+<<<<<<< .merge_file_siPbab
 type: concept
 tags: [missing, features, analysis]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi funzionalità mancanti - modulo user user"
+---
+>>>>>>> .merge_file_rfEvKs
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: 2026-01-22  
@@ -127,7 +136,11 @@ Il modulo **User** fornisce:
    - Mapping permessi
 
 2. **LimeParticipant** - Partecipanti survey
+<<<<<<< .merge_file_siPbab
    - Integrazione con Contact model Quaeris
+=======
+   - Integrazione con Contact model ExternalProject
+>>>>>>> .merge_file_rfEvKs
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -175,8 +188,13 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
+<<<<<<< .merge_file_siPbab
 - [Modulo Quaeris](../Quaeris/docs/README.md)
 - [Modulo Limesurvey](../Limesurvey/docs/README.md)
+=======
+- [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+- [Modulo Limesurvey](../limesurvey/docs/readme.md)
+>>>>>>> .merge_file_rfEvKs
 - [User README](./README.md)
 
 ---

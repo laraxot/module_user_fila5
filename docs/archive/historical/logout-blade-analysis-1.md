@@ -1,12 +1,31 @@
+<<<<<<< .merge_file_H39BDa
+=======
+---
+title: "Analisi del File logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi del file logout.blade.php user"
+---
+>>>>>>> .merge_file_ELxecY
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_H39BDa
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
+=======
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
+>>>>>>> .merge_file_ELxecY
 
 ## Panoramica
 

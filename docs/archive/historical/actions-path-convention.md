@@ -1,5 +1,6 @@
 ---
 title: "Convenzione dei Percorsi per le Actions"
+<<<<<<< .merge_file_HTkImE
 type: concept
 tags: [actions, path, convention]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-structure-1.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "convenzione dei percorsi per le actions user"
+---
+>>>>>>> .merge_file_lA7ibS
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -81,6 +90,10 @@ fi
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_HTkImE
 - [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
+=======
+- [Convenzioni Path nei Moduli Laravel](./path-conventions.md)
+>>>>>>> .merge_file_lA7ibS
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

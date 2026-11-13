@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_8txwET
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -5,6 +6,23 @@
 - [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+=======
+---
+title: "Implementazione dei Form con Widget Filament"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione dei form con widget filament user"
+---
+# Implementazione dei Form con Widget Filament
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
+>>>>>>> .merge_file_NhmWTz
 
 ## Introduzione
 
@@ -283,5 +301,9 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_8txwET
 - [Gestione Sessione](./session_management.md)
+=======
+- [Gestione Sessione](./session-management.md)
+>>>>>>> .merge_file_NhmWTz
 - [Tema One Documentation](../../themes/one/docs/readme.md)

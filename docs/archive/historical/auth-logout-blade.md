@@ -1,5 +1,6 @@
 ---
 title: "Implementazione Corretta di logout.blade.php"
+<<<<<<< .merge_file_zFxTIi
 type: concept
 tags: [auth, logout, blade]
 created: 2026-07-14
@@ -33,6 +34,23 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix-2.md)
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta di logout.blade.php user"
+---
+# Implementazione Corretta di logout.blade.php
+
+## Collegamenti correlati
+- [Documentazione centrale](../../README.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Struttura moduli](../../../../docs/architecture/modules-structure.md)
+- [Logout Page Fix](./logout-page-fix.md)
+>>>>>>> .merge_file_rGrGuk
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

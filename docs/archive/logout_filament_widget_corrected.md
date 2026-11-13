@@ -1,17 +1,39 @@
+<<<<<<< .merge_file_3nE6FT
+=======
+---
+title: "Implementazione Corretta del Logout con Widget Filament"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta del logout con widget filament user"
+---
+>>>>>>> .merge_file_97dUcX
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_3nE6FT
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Struttura Widget](widgets_structure.md)
+=======
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Struttura Widget](widgets-structure.md)
+>>>>>>> .merge_file_97dUcX
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
 
+<<<<<<< .merge_file_3nE6FT
 Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di SaluteOra e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
+=======
+Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di healthcare_app e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
+>>>>>>> .merge_file_97dUcX
 
 ## Errore Comune da Evitare
 
@@ -230,7 +252,11 @@ name('logout');
    - Implementare il metodo astratto `getFormSchema()` invece di tentare di sovrascrivere `form()`
    - Utilizzare correttamente i componenti Filament
 
+<<<<<<< .merge_file_3nE6FT
 2. **Convenzioni di SaluteOra per i Widget**:
+=======
+2. **Convenzioni di healthcare_app per i Widget**:
+>>>>>>> .merge_file_97dUcX
    - Namespace corretto: `Modules\User\Filament\Widgets`
    - Path della vista: `filament.widgets.auth.logout` (senza namespace del modulo per l'utilizzo diretto nelle Blade)
    - Due copie della vista: una con namespace del modulo e una senza
@@ -249,8 +275,16 @@ name('logout');
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
+<<<<<<< .merge_file_3nE6FT
 5. **Conformità alle convenzioni**: Segue le convenzioni di SaluteOra per i widget Filament.
 
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+5. **Conformità alle convenzioni**: Segue le convenzioni di healthcare_app per i widget Filament.
+
+## Alternativa: Logout Immediato
+
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> .merge_file_97dUcX

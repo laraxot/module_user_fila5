@@ -1,5 +1,6 @@
 ---
 title: "User Module - Charts Implementation"
+<<<<<<< .merge_file_fA7pvv
 type: concept
 tags: [charts, implementation]
 created: 2026-07-14
@@ -18,6 +19,15 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "user module - charts implementation user"
+status: superseded
+superseded_by: ../../charts-implementation.md
+---
+>>>>>>> .merge_file_WUBB4l
 # User Module - Charts Implementation
 
 ## 📋 Panoramica
@@ -570,7 +580,11 @@ class UsersChartWidgetTest extends TestCase
 ### Documentazione Correlata
 - [Filament Charts Complete Guide](../../xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../xot/docs/chart-export-guide.md)
+<<<<<<< .merge_file_fA7pvv
 - [User Module README](./readme.md)
+=======
+- [User Module README](./README.md)
+>>>>>>> .merge_file_WUBB4l
 
 ### Chart.js
 - [Chart.js Documentation](https://www.chartjs.org/docs/latest/)
@@ -581,7 +595,10 @@ class UsersChartWidgetTest extends TestCase
 
 ---
 
+<<<<<<< .merge_file_fA7pvv
 **Ultimo aggiornamento:** Dicembre 2025
+=======
+>>>>>>> .merge_file_WUBB4l
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x

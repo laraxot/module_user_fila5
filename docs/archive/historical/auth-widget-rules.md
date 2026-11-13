@@ -1,5 +1,6 @@
 ---
 title: "Regole per Widget di Autenticazione"
+<<<<<<< .merge_file_8i8j73
 type: rule
 tags: [auth, widget, rules]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "regole per widget di autenticazione user"
+---
+>>>>>>> .merge_file_dJoKOr
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -162,7 +171,13 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
+<<<<<<< .merge_file_8i8j73
 - [Widget Structure](widgets-structure-2.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
+=======
+- [Widget Structure](widgets-structure.md)
+- [Filament Best Practices](filament_best_practices.md)
+- [Authentication Architecture](../../authentication.md)
+>>>>>>> .merge_file_dJoKOr
 - [Security Guidelines](security_guidelines.md)

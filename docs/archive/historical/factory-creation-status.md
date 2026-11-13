@@ -1,5 +1,6 @@
 ---
 title: "Factory Creation Status - User Module"
+<<<<<<< .merge_file_JXxPQr
 type: concept
 tags: [factory, creation, status]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "factory creation status - user module user"
+---
+>>>>>>> .merge_file_ZIjNYU
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO
@@ -116,8 +125,13 @@ Questo errore è **GRAVISSIMO** perché:
 
 ## COLLEGAMENTI
 
+<<<<<<< .merge_file_JXxPQr
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 - [User Module README](./readme.md)
+=======
+- [Factory Audit Complete Analysis](../../../project_docs/factory-audit-complete-analysis.md)
+- [User Module README](./README.md)
+>>>>>>> .merge_file_ZIjNYU
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
 
@@ -130,4 +144,7 @@ Questo errore è **GRAVISSIMO** perché:
 5. ⏳ Documentare pattern e best practice
 
 *Creato: 2025-01-06*
+<<<<<<< .merge_file_JXxPQr
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> .merge_file_ZIjNYU

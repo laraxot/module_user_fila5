@@ -1,5 +1,6 @@
 ---
 title: "Service Provider Architecture - Module Pattern"
+<<<<<<< .merge_file_hDm6n3
 type: concept
 tags: [service, provider, architecture]
 created: 2026-07-14
@@ -21,6 +22,17 @@ related:
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: 2026-01-07
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "service provider architecture - module pattern user"
+---
+# Service Provider Architecture - Module Pattern
+
+> **Generato**: [DATE]
+>>>>>>> .merge_file_XM5gJH
 > **Filosofia**: L'Architetto Module-First (Vincitore del Dibattito)
 > **Pattern**: Laravel Modules + DRY + Separation of Concerns
 
@@ -386,9 +398,15 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< .merge_file_hDm6n3
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
 - [README.md](./readme.md) - Overview modulo
+=======
+- [PASSPORT_INTEGRATION.md](../../passport-integration.md) - Passport integration completa
+- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
+- [README.md](./README.md) - Overview modulo
+>>>>>>> .merge_file_XM5gJH
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)

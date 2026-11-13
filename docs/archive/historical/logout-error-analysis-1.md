@@ -1,3 +1,14 @@
+<<<<<<< .merge_file_D2HUty
+=======
+---
+title: "Analisi Errore Logout"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi errore logout user"
+---
+>>>>>>> .merge_file_fZiIOW
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -120,6 +131,11 @@ class LogoutWidget extends XotBaseWidget
 
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
+<<<<<<< .merge_file_D2HUty
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
+=======
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session-management.md)
+>>>>>>> .merge_file_fZiIOW
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

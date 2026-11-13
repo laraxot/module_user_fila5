@@ -1,8 +1,24 @@
+<<<<<<< .merge_file_PJNNqx
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+=======
+---
+title: "Best Practices per l'Implementazione del Logout"
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "best practices per l'implementazione del logout user"
+---
+# Best Practices per l'Implementazione del Logout 
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+>>>>>>> .merge_file_GLYYg6
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -187,7 +203,11 @@ Il template Blade associato al componente Volt dovrebbe gestire i diversi stati 
 
 ## Chiavi di Traduzione
 
+<<<<<<< .merge_file_PJNNqx
 Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+=======
+Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di healthcare_app:
+>>>>>>> .merge_file_GLYYg6
 
 ```php
 'logout' => [

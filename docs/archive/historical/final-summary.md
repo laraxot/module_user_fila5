@@ -1,5 +1,6 @@
 ---
 title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
+<<<<<<< .merge_file_WqO2Pv
 type: concept
 tags: [final, summary]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "final summary - user module passport integration & architecture refactoring user"
+---
+>>>>>>> .merge_file_7mv1GA
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: 2026-01-07
@@ -297,10 +306,17 @@ public function getHeaderActions(): array
 ## 📚 Documentation References
 
 ### Internal Documentation
+<<<<<<< .merge_file_WqO2Pv
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 - [README](./readme.md)
+=======
+- [Passport Integration](../../passport-integration.md)
+- [Service Provider Architecture](./service_provider_architecture.md)
+- [Filosofia Modulo User](./filosofia_modulo_user.md)
+- [README](./README.md)
+>>>>>>> .merge_file_7mv1GA
 
 ### External Documentation
 - [Laravel Modules](https://nwidart.com/laravel-modules)

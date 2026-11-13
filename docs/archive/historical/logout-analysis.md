@@ -1,5 +1,6 @@
 ---
 title: "Analisi del File Logout.blade.php"
+<<<<<<< .merge_file_ygRzOT
 type: concept
 tags: [logout, analysis]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "analisi del file logout.blade.php user"
+---
+>>>>>>> .merge_file_bK7XER
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -239,10 +248,15 @@ $logout = function () {
 
 ## Collegamenti Correlati
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< .merge_file_ygRzOT
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
+=======
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session-management.md)
+>>>>>>> .merge_file_bK7XER
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

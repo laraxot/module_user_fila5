@@ -1,5 +1,6 @@
 ---
 title: "Sicurezza nel Processo di Logout"
+<<<<<<< .merge_file_KW0oSy
 type: concept
 tags: [logout, security]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "sicurezza nel processo di logout user"
+---
+>>>>>>> .merge_file_YdNSFQ
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -191,6 +200,7 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_KW0oSy
 - [Gestione Sessione](./session-management-2.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
@@ -198,3 +208,8 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+=======
+- [Gestione Sessione](./session-management.md)
+- [Documentazione Volt](./volt-blade-implementation.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md) 
+>>>>>>> .merge_file_YdNSFQ

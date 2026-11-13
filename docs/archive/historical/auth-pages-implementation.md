@@ -1,5 +1,6 @@
 ---
 title: "Implementazione Corretta delle Pagine Auth"
+<<<<<<< .merge_file_TDxdwR
 type: concept
 tags: [auth, pages, implementation]
 created: 2026-07-14
@@ -32,6 +33,28 @@ related:
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "implementazione corretta delle pagine auth user"
+---
+# Implementazione Corretta delle Pagine Auth 
+
+## Collegamenti correlati
+- [Documentazione centrale](../../README.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+
+## Introduzione
+
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di healthcare_app, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+>>>>>>> .merge_file_HVX0lN
 
 ## Struttura delle Directory
 
@@ -83,7 +106,11 @@ laravel/Themes/One/resources/views/pages/auth/
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             session()->regenerate();
+<<<<<<< .merge_file_TDxdwR
 
+=======
+            
+>>>>>>> .merge_file_HVX0lN
             // Reindirizza alla home page localizzata
             return redirect()->to('/' . app()->getLocale());
         }
@@ -147,7 +174,11 @@ laravel/Themes/One/resources/views/pages/auth/
                 </div>
 
                 <div>
+<<<<<<< .merge_file_TDxdwR
                     <x-filament::button
+=======
+                    <x-filament::button 
+>>>>>>> .merge_file_HVX0lN
                         type="submit"
                         size="lg"
                         color="primary"
@@ -282,7 +313,11 @@ laravel/Themes/One/resources/views/pages/auth/
                 </div>
 
                 <div>
+<<<<<<< .merge_file_TDxdwR
                     <x-filament::button
+=======
+                    <x-filament::button 
+>>>>>>> .merge_file_HVX0lN
                         type="submit"
                         size="lg"
                         color="primary"
@@ -389,6 +424,7 @@ Quindi nel form:
             session()->invalidate();
             session()->regenerateToken();
         }
+<<<<<<< .merge_file_TDxdwR
 
         // Reindirizza alla home page localizzata
         $this->redirect('/' . app()->getLocale());
@@ -853,6 +889,9 @@ Quindi nel form:
             session()->regenerateToken();
         }
 
+=======
+        
+>>>>>>> .merge_file_HVX0lN
         // Reindirizza alla home page localizzata
         $this->redirect('/' . app()->getLocale());
     });
@@ -900,7 +939,11 @@ url(app()->getLocale() . '/percorso')
 Utilizzare sempre i componenti Blade nativi di Filament:
 
 ```blade
+<<<<<<< .merge_file_TDxdwR
 <x-filament::button
+=======
+<x-filament::button 
+>>>>>>> .merge_file_HVX0lN
     type="submit"
     size="lg"
     color="primary"

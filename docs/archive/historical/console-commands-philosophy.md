@@ -1,5 +1,6 @@
 ---
 title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
+<<<<<<< .merge_file_qKNvzO
 type: concept
 tags: [console, commands, philosophy]
 created: 2026-07-14
@@ -18,6 +19,14 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+type: note
+status: draft
+updated: 2026-10-27
+tags: [docs, user, archive]
+qmd: "filosofia dei console commands in laraxot (standard supremo) user"
+---
+>>>>>>> .merge_file_Kh92Ag
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
 
 ## Filosofia Fondamentale
@@ -217,6 +226,7 @@ foreach ($types as $key => $type) {
 - [ ] Confirmation per azioni distruttive
 
 ## Collegamenti
+<<<<<<< .merge_file_qKNvzO
 - [ChangeTypeCommand.php](../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
 - [README.md](readme.md)
 - [.cursor/rules/console-commands-philosophy.mdc](../../../.cursor/rules/console-commands-philosophy.mdc)
@@ -227,3 +237,10 @@ foreach ($types as $key => $type) {
 - [.windsurf/rules/console-commands-philosophy.mdc](../../../.windsurf/rules/console-commands-philosophy.mdc)
 
 *Ultimo aggiornamento: giugno 2025 - Standard estratto dal capolavoro ChangeTypeCommand.php*
+=======
+- [ChangeTypeCommand.php](../../../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
+- [README.md](README.md)
+- [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
+- [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
+
+>>>>>>> .merge_file_Kh92Ag
