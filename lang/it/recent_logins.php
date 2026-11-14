@@ -21,30 +21,18 @@ return [
             'description' => '',
         ],
         'login_at' => [
-<<<<<<< .merge_file_S7Bdzj
-            'label' => 'Accesso il',
-=======
->>>>>>> .merge_file_5Puhq8
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
             'label' => 'login_at',
         ],
         'ip_address' => [
-<<<<<<< .merge_file_S7Bdzj
-            'label' => 'Indirizzo IP',
-=======
->>>>>>> .merge_file_5Puhq8
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
             'label' => 'ip_address',
         ],
         'user_agent' => [
-<<<<<<< .merge_file_S7Bdzj
-            'label' => 'Browser (user agent)',
-=======
->>>>>>> .merge_file_5Puhq8
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,10 +64,6 @@ return [
             'description' => '',
         ],
         'user' => [
-<<<<<<< .merge_file_S7Bdzj
-            'label' => 'Utente',
-=======
->>>>>>> .merge_file_5Puhq8
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

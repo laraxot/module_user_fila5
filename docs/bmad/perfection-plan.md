@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_l76Bjc
 title: "Perfection Plan — Module User Absolute Perfection"
-=======
+
 title: "Perfection Plan: Module User Absolute Perfection"
->>>>>>> .merge_file_gdxXIS
 type: plan
 module: User
 status: draft
@@ -15,18 +13,15 @@ related:
   - ./epics.md
   - ./livewire-inventory.md
   - ./decision-log.md
-<<<<<<< .merge_file_l76Bjc
 ---
 
 # Perfection Plan — Module User Absolute Perfection
-=======
+
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "perfection plan   module user absolute perfection user"
----
 
 # Perfection Plan: Module User Absolute Perfection
->>>>>>> .merge_file_gdxXIS
 
 ## Purpose
 
@@ -63,7 +58,6 @@ This plan is the **single source of truth** for perfection of the User module. A
 
 ### 1.2 Key Directories (file counts)
 
-<<<<<<< .merge_file_l76Bjc
 - `app/Models/` — 60+ files (base models, traits, enums)
 - `app/Actions/` — 180+ files (all business logic is Actions, no Services — ✅)
 - `app/Filament/` — 60+ files (Clusters, Forms, Pages, Tables, Widgets)
@@ -72,7 +66,7 @@ This plan is the **single source of truth** for perfection of the User module. A
 - `tests/Feature/Filament/` — 120+ tests
 - `tests/Unit/` — 60+ tests
 - `docs/bmad/` — 80+ BMAD documents (see inventory)
-=======
+
 - `app/Models/`: 60+ files (base models, traits, enums)
 - `app/Actions/`: 180+ files (all business logic is Actions, no Services: ✅)
 - `app/Filament/`: 60+ files (Clusters, Forms, Pages, Tables, Widgets)
@@ -81,7 +75,6 @@ This plan is the **single source of truth** for perfection of the User module. A
 - `tests/Feature/Filament/`: 120+ tests
 - `tests/Unit/`: 60+ tests
 - `docs/bmad/`: 80+ BMAD documents (see inventory)
->>>>>>> .merge_file_gdxXIS
 
 ### 1.3 BMAD Document Landscape
 
@@ -257,7 +250,6 @@ All three must pass before declaring perfection complete:
 
 ## 4. References & Cross-Links
 
-<<<<<<< .merge_file_l76Bjc
 - `docs/bmad/architecture.md` — ADRs and architecture decisions
 - `docs/bmad/epics.md` — Epic definitions (Epic 9 + Epic 10)
 - `docs/bmad/prd.md` — Product requirements
@@ -273,7 +265,7 @@ All three must pass before declaring perfection complete:
 ---
 
 ## 5. Success Definition — Absolute Perfection ✅
-=======
+
 - `docs/bmad/architecture.md`: ADRs and architecture decisions
 - `docs/bmad/epics.md`: Epic definitions (Epic 9 + Epic 10)
 - `docs/bmad/prd.md`: Product requirements
@@ -286,10 +278,8 @@ All three must pass before declaring perfection complete:
 - `docs/sprint-status.yaml`: Sprint tracking (must be updated)
 - `module.json`: Module metadata
 
----
 
 ## 5. Success Definition: Absolute Perfection ✅
->>>>>>> .merge_file_gdxXIS
 
 The User module is **absolutely perfect** when ALL of the following are true:
 
@@ -310,11 +300,9 @@ The User module is **absolutely perfect** when ALL of the following are true:
 
 ---
 
-<<<<<<< .merge_file_l76Bjc
 *Perfection Plan v1.0 — 2026-09-22 — Module User — BMAD Track: Perfection*
-=======
+
 *Perfection Plan v1.0: 2026-09-22: Module User: BMAD Track: Perfection*
->>>>>>> .merge_file_gdxXIS
 *This document is the Single Source of Truth for User module perfection.*
 *All epics, stories, and tasks must reference this plan.*
 *Last updated: follow the workflow in Section 3 for any changes.*

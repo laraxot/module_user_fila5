@@ -2,14 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_GBPoYa
-=======
-<<<<<<< .merge_file_CjLNX8
-=======
->>>>>>> .merge_file_ekhq9S
-use Modules\User\Tests\TestCase;
-
->>>>>>> .merge_file_CwODSN
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;

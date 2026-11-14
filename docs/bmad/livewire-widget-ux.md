@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_pIgh87
 title: "UX — campagna widget-only"
-=======
+
 title: "UX: campagna widget-only"
->>>>>>> .merge_file_spjqNo
 type: ux-design
 module: User
 status: approved
@@ -11,12 +9,9 @@ related:
   - ./ux-design.md
   - ./livewire-widget-prd.md
   - ./livewire-inventory.md
-<<<<<<< .merge_file_pIgh87
-=======
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "ux: stesso chrome, contenitore giusto user"
->>>>>>> .merge_file_spjqNo
 ---
 
 # UX: stesso chrome, contenitore giusto

@@ -7,10 +7,7 @@ namespace Modules\User\Actions\Auth;
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_VvpRLl
-=======
 use Modules\Xot\Actions\Model\ModelHasColumnAction;
->>>>>>> .merge_file_TYWGCC
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -38,12 +35,8 @@ final class BuildActiveUserProviderAction
 
         $provider->withQuery(static function (Builder $query): void {
             $user = $query->getModel();
-<<<<<<< .merge_file_VvpRLl
-            if ($user instanceof UserContract) {
-=======
             if ($user instanceof UserContract
                 && app(ModelHasColumnAction::class)->execute($user, 'deleted_at')) {
->>>>>>> .merge_file_TYWGCC
                 $query->whereNull($user->qualifyColumn('deleted_at'));
             }
         });

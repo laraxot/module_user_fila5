@@ -1,22 +1,14 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_EfUsmM
-
-=======
->>>>>>> .merge_file_U6IT5Z
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
-<<<<<<< .merge_file_EfUsmM
-return new class extends XotBaseMigration {
-=======
 return new class extends XotBaseMigration
 {
->>>>>>> .merge_file_U6IT5Z
     /**
      * Run the migrations.
      */
@@ -82,11 +74,7 @@ return new class extends XotBaseMigration
                 $table->string('password')->nullable()->change();
             }
 
-<<<<<<< .merge_file_EfUsmM
-            if ('uuid' === $this->getColumnType('id')) {
-=======
             if ($this->getColumnType('id') === 'uuid') {
->>>>>>> .merge_file_U6IT5Z
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

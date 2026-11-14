@@ -22,31 +22,22 @@ return [
     ],
     'fields' => [
         'password' => [
-<<<<<<< .merge_file_hrC1HX
-            'label' => 'Password',
-=======
->>>>>>> .merge_file_Czfjnd
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Password',
         ],
         'email' => [
-<<<<<<< .merge_file_hrC1HX
-            'label' => 'E-mail',
-=======
->>>>>>> .merge_file_Czfjnd
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'E-mail',
         ],
         'name' => [
-<<<<<<< .merge_file_hrC1HX
-            'label' => 'Nome',
-=======
->>>>>>> .merge_file_Czfjnd
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
     ],
     'navigation' => [

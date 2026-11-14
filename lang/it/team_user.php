@@ -45,12 +45,9 @@ return [
                 'label' => 'Utente',
             ],
         ],
-<<<<<<< .merge_file_JTyiMY
         'role' => [
             'label' => 'Ruolo',
         ],
-=======
->>>>>>> .merge_file_9Ali1E
     ],
     'actions' => [
         'create' => [

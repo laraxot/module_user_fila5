@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_7nHEIt
 title: "Product brief — SuperAdmin user-menu widget"
-=======
+
 title: "Product brief: SuperAdmin user-menu widget"
->>>>>>> .merge_file_hV4fVs
 type: product-brief
 module: User
 status: approved
@@ -13,12 +11,9 @@ related:
   - ./project-context.md
   - ./livewire-widget-product-brief.md
   - ./livewire-inventory.md
-<<<<<<< .merge_file_7nHEIt
-=======
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "product brief: superadmin nel menu filament user"
->>>>>>> .merge_file_hV4fVs
 ---
 
 # Product brief: SuperAdmin nel menu Filament

@@ -32,7 +32,6 @@ return [
         'client_name' => [
             'label' => 'Nome cliente',
         ],
-<<<<<<< .merge_file_OB6AiR
         'force' => [
             'description' => 'force',
         ],
@@ -42,8 +41,6 @@ return [
             'helper_text' => 'name',
             'description' => 'name',
         ],
-=======
->>>>>>> .merge_file_u6avVi
     ],
     'actions' => [
         'new_credentials' => [

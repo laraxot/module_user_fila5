@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_or6z2m
 title: "Tech spec — campagna Livewire → widget"
-=======
+
 title: "Tech spec: campagna Livewire → widget"
->>>>>>> .merge_file_fHa4Kz
 type: tech-spec
 module: User
 status: approved
@@ -15,12 +13,9 @@ related:
   - ./tech-spec.md
   - ./livewire-inventory.md
   - ./epics.md
-<<<<<<< .merge_file_or6z2m
-=======
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "technical specification: campagna widget-only user"
->>>>>>> .merge_file_fHa4Kz
 ---
 
 # Technical specification: campagna widget-only
@@ -80,11 +75,9 @@ Eliminare le 8 classi auth HTTP e viste `livewire/auth/**` dopo grep:
 
 Scegliere SSoT logout: un file tra `Filament/Widgets/LogoutWidget.php` e `Filament/Widgets/Auth/LogoutWidget.php` (due classi oggi). La story **sceglie e documenta**, non ne crea una terza. Idem reset (`PasswordResetWidget` vs `ResetPasswordWidget`).
 
-<<<<<<< .merge_file_or6z2m
 Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt — fuori da questa story oltre il ritiro.
-=======
+
 Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt: fuori da questa story oltre il ritiro.
->>>>>>> .merge_file_fHa4Kz
 
 ### Cluster C (10.4)
 
@@ -94,13 +87,11 @@ Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt: fuori da quest
 
 ## Errori noti da non ripetere
 
-<<<<<<< .merge_file_or6z2m
 - Namespace `filament-jet::` — [filament_errors.md](../filament_errors.md).
 - `canView(): false` globale che spegne anche l’hook — usare `$isDiscovered`.
-=======
+
 - Namespace `filament-jet::`: [filament_errors.md](../filament_errors.md).
 - `canView(): false` globale che spegne anche l’hook: usare `$isDiscovered`.
->>>>>>> .merge_file_fHa4Kz
 - Registrare chrome widget in `->widgets()`.
 
 ## Testing strategia

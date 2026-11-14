@@ -71,7 +71,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_iqDupR
         'ip_address' => [
             'label' => 'Indirizzo IP',
         ],
@@ -90,7 +89,5 @@ return [
         'location' => [
             'label' => 'Luogo',
         ],
-=======
->>>>>>> .merge_file_dCU8NE
     ],
 ];

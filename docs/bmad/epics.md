@@ -1,6 +1,5 @@
-<<<<<<< .merge_file_dyRX39
 # User Module — Epics for Perfection
-=======
+
 ---
 title: "User Module: Epics for Perfection"
 type: note
@@ -10,7 +9,6 @@ tags: [docs, user, bmad]
 qmd: "user module   epics for perfection user"
 ---
 # User Module: Epics for Perfection
->>>>>>> .merge_file_Gcvtcr
 
 **Status**: ✅ Finalized
 **Last Update**: 2026-09-21
@@ -20,11 +18,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 1: Documentation Hygiene (P0 - Critical)
 **Goal**: Resolve documentation bloat and establish clean documentation standards
-<<<<<<< .merge_file_dyRX39
 **Priority**: P0 — Blocks all other improvements
-=======
+
 **Priority**: P0: Blocks all other improvements
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 2 weeks
 
 **Stories**:
@@ -51,11 +47,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 2: Quality Tooling Restoration (P0 - Critical)
 **Goal**: Make PHPMD, PHPInsights, and test suite fully functional
-<<<<<<< .merge_file_dyRX39
 **Priority**: P0 — Required for quality gates
-=======
+
 **Priority**: P0: Required for quality gates
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 1 week
 
 **Stories**:
@@ -81,11 +75,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 3: Architecture & Code Quality (P1 - High)
 **Goal**: Improve code consistency and architectural patterns
-<<<<<<< .merge_file_dyRX39
 **Priority**: P1 — Important for long-term maintainability
-=======
+
 **Priority**: P1: Important for long-term maintainability
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 2 weeks
 
 **Stories**:
@@ -113,11 +105,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 4: Test Coverage Enhancement (P1 - High)
 **Goal**: Achieve >95% test coverage with comprehensive test suite
-<<<<<<< .merge_file_dyRX39
 **Priority**: P1 — Required for reliability
-=======
+
 **Priority**: P1: Required for reliability
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 3 weeks
 
 **Stories**:
@@ -146,11 +136,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 5: Widget Visibility Pattern (P1 - High)
 **Goal**: Fix widget visibility control to follow correct architectural pattern
-<<<<<<< .merge_file_dyRX39
 **Priority**: P1 — Visibility logic belongs in widget layer
-=======
+
 **Priority**: P1: Visibility logic belongs in widget layer
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 2 days
 
 **Stories**:
@@ -176,11 +164,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 6: Security Hardening (P2 - Medium)
 **Goal**: Strengthen security posture and audit capabilities
-<<<<<<< .merge_file_dyRX39
 **Priority**: P2 — Important for compliance
-=======
+
 **Priority**: P2: Important for compliance
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 2 weeks
 
 **Stories**:
@@ -208,11 +194,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 7: Developer Experience (P2 - Medium)
 **Goal**: Improve developer onboarding and API ergonomics
-<<<<<<< .merge_file_dyRX39
 **Priority**: P2 — Enhances productivity
-=======
+
 **Priority**: P2: Enhances productivity
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 1 week
 
 **Stories**:
@@ -240,11 +224,9 @@ qmd: "user module   epics for perfection user"
 
 ### Epic 8: Performance Optimization (P3 - Low)
 **Goal**: Optimize module for scale and speed
-<<<<<<< .merge_file_dyRX39
 **Priority**: P3 — Nice-to-have optimization
-=======
+
 **Priority**: P3: Nice-to-have optimization
->>>>>>> .merge_file_Gcvtcr
 **Effort**: 2 weeks
 
 **Stories**:

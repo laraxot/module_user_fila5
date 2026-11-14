@@ -8,14 +8,11 @@ return [
             'tooltip' => '',
         ],
         'team_id' => [
-<<<<<<< .merge_file_PuxCqE
+            'tooltip' => '',
             'label' => 'Team',
             'placeholder' => 'team_id',
             'helper_text' => 'team_id',
             'description' => 'team_id',
-=======
->>>>>>> .merge_file_kBxggg
-            'tooltip' => '',
         ],
     ],
     'actions' => [

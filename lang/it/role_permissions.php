@@ -3,41 +3,51 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_bDZKEL
-    'fields' => [
-        'id' => ['label' => 'ID'],
-        'name' => ['label' => 'Nome', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
-        'created_at' => ['label' => 'Creato il'],
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'associate' => ['label' => 'Collega', 'icon' => 'associate', 'tooltip' => 'associate'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'dissociate' => ['label' => 'Scollega', 'icon' => 'dissociate', 'tooltip' => 'dissociate'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-=======
     'actions' => [
         'create' => [
             'icon' => 'create',
+            'label' => 'create',
+            'tooltip' => 'create',
         ],
         'associate' => [
             'icon' => 'associate',
+            'label' => 'Collega',
+            'tooltip' => 'associate',
         ],
         'edit' => [
             'icon' => 'edit',
+            'label' => 'edit',
+            'tooltip' => 'edit',
         ],
         'dissociate' => [
             'icon' => 'dissociate',
+            'label' => 'Scollega',
+            'tooltip' => 'dissociate',
         ],
         'delete' => [
             'icon' => 'delete',
+            'label' => 'delete',
+            'tooltip' => 'delete',
         ],
->>>>>>> .merge_file_rTF99N
     ],
     'label' => 'Permessi del ruolo',
     'navigation' => [
         'label' => 'Permessi ruolo',
         'icon' => 'Permessi ruolo',
         'sort' => 86,
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
     ],
 ];

@@ -49,49 +49,34 @@ return [
             'description' => '',
         ],
         'name' => [
-<<<<<<< .merge_file_muvWJM
-            'label' => 'Nome',
-=======
->>>>>>> .merge_file_w1ULrD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
         'scopes' => [
-<<<<<<< .merge_file_muvWJM
-            'label' => 'Ambiti',
-=======
->>>>>>> .merge_file_w1ULrD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Ambiti',
         ],
         'revoked' => [
-<<<<<<< .merge_file_muvWJM
-            'label' => 'Revocato',
-=======
->>>>>>> .merge_file_w1ULrD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Revocato',
         ],
         'created_at' => [
-<<<<<<< .merge_file_muvWJM
-            'label' => 'Creato il',
-=======
->>>>>>> .merge_file_w1ULrD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Creato il',
         ],
         'expires_at' => [
-<<<<<<< .merge_file_muvWJM
-            'label' => 'Scade il',
-=======
->>>>>>> .merge_file_w1ULrD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Scade il',
         ],
     ],
     'navigation' => [

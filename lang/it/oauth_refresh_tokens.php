@@ -3,17 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_I181ML
-    'fields' => [
-        'id' => ['label' => 'ID'],
-        'access_token_id' => ['label' => 'access_token_id'],
-        'revoked' => ['label' => 'Revocato'],
-        'expires_at' => ['label' => 'Scade il'],
-        'created_at' => ['label' => 'Creato il'],
-        'updated_at' => ['label' => 'Modificato il'],
-    ],
-=======
->>>>>>> .merge_file_JCzyn4
     'actions' => [
         'create' => [
             'icon' => 'create',
@@ -29,6 +18,26 @@ return [
         ],
         'edit' => [
             'icon' => 'edit',
+        ],
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'access_token_id' => [
+            'label' => 'access_token_id',
+        ],
+        'revoked' => [
+            'label' => 'Revocato',
+        ],
+        'expires_at' => [
+            'label' => 'Scade il',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Modificato il',
         ],
     ],
 ];

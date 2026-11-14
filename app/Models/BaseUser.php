@@ -131,11 +131,7 @@ use Spatie\Permission\Models\Permission;
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
-<<<<<<< .merge_file_QMpwg2
-    use BaseUserMutators, BaseUserRelations, HasSpatiePermission, HasTeams, Notifiable, HasAuthenticationLogTrait {
-=======
     use BaseUserMutators, BaseUserRelations, HasAuthenticationLogTrait, HasSpatiePermission, HasTeams, Notifiable {
->>>>>>> .merge_file_e5RQPu
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
         BaseUserRelations::notifications insteadof Notifiable;
@@ -358,9 +354,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public static function findForPassport(string $username): ?self
     {
-<<<<<<< .merge_file_QMpwg2
-        return static::where('email', $username)->whereNull('deleted_at')->first();
-=======
         $query = static::where('email', $username);
         $user = new static;
 
@@ -369,7 +362,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         }
 
         return $query->first();
->>>>>>> .merge_file_e5RQPu
     }
 
     /**

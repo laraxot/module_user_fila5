@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_VoznWh
 title: "Product brief — solo Filament widget"
-=======
+
 title: "Product brief: solo Filament widget"
->>>>>>> .merge_file_WRTqg1
 type: product-brief
 module: User
 status: approved
@@ -13,12 +11,9 @@ related:
   - ./livewire-widget-project-context.md
   - ./livewire-inventory.md
   - ./product-brief.md
-<<<<<<< .merge_file_VoznWh
-=======
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "product brief: un solo stack ui per identità user"
->>>>>>> .merge_file_WRTqg1
 ---
 
 # Product brief: un solo stack UI per identità

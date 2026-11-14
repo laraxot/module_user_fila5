@@ -15,10 +15,7 @@ return [
         ],
         'filter' => [
             'icon' => 'filter',
-<<<<<<< .merge_file_0t5exB
             'label' => 'Filtro',
-=======
->>>>>>> .merge_file_yQWYjM
         ],
     ],
     'fields' => [
@@ -32,22 +29,6 @@ return [
             'tooltip' => '',
         ],
     ],
-<<<<<<< .merge_file_VAuFDm
-=======
-<<<<<<< .merge_file_szAFJk
-    'sections' => [
-        'empty' => [
-<<<<<<< .merge_file_0t5exB
-            'heading' => 'empty',
-=======
-            'heading' => '',
->>>>>>> .merge_file_yQWYjM
-            'label' => '',
-        ],
-    ],
-=======
->>>>>>> .merge_file_xPLZFs
->>>>>>> .merge_file_pkMpkA
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',

@@ -3,10 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Auth\EloquentUserProvider;
-<<<<<<< .merge_file_1sHsM5
-=======
 use Illuminate\Database\Eloquent\Builder;
->>>>>>> .merge_file_lusDh9
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Modules\User\Actions\Auth\RevokeUserAccessAction;
@@ -36,8 +33,6 @@ test('the users provider is the one that excludes deleted accounts', function ()
     Assert::assertNotNull($provider->getQueryCallback());
 });
 
-<<<<<<< .merge_file_1sHsM5
-=======
 test('the users provider remains usable while a legacy users table lacks deleted_at', function (): void {
     $provider = Auth::createUserProvider('users');
     Assert::assertNotNull($provider);
@@ -54,7 +49,6 @@ test('the users provider remains usable while a legacy users table lacks deleted
     Assert::assertStringNotContainsString('where `users_legacy_provider_test`.`deleted_at`', $query->toRawSql());
 });
 
->>>>>>> .merge_file_lusDh9
 test('a deleted account is not found by id, credentials or remember token', function (): void {
     $provider = Auth::createUserProvider('users');
     Assert::assertNotNull($provider);

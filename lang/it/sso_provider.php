@@ -12,15 +12,6 @@ return [
     'label' => 'Provider SSO',
     'plural_label' => 'Provider SSO',
     'fields' => [
-<<<<<<< .merge_file_nj3A8Q
-        'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
-        'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'name' => ['label' => 'Nome'],
-        'display_name' => ['label' => 'Nome visualizzato'],
-        'type' => ['label' => 'Tipo'],
-        'is_active' => ['label' => 'Attivo'],
-=======
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -39,7 +30,18 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
->>>>>>> .merge_file_1UAi10
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'display_name' => [
+            'label' => 'Nome visualizzato',
+        ],
+        'type' => [
+            'label' => 'Tipo',
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+        ],
     ],
     'actions' => [
         'create' => [

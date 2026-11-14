@@ -54,23 +54,18 @@ return [
             'description' => 'Data di scadenza',
         ],
         'user' => [
-<<<<<<< .merge_file_AHFwAI
-            'name' => ['label' => 'Utente'],
-=======
             'name' => [
                 'label' => 'user.name',
             ],
->>>>>>> .merge_file_yCeZe4
         ],
         'client' => [
             'name' => [
                 'label' => 'client.name',
             ],
         ],
-<<<<<<< .merge_file_AHFwAI
-        'created_at' => ['label' => 'Creato il'],
-=======
->>>>>>> .merge_file_yCeZe4
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
     ],
     'actions' => [
         'revoke' => [

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_kSlvKe
-=======
 ---
 title: "User Module PRD (Product Requirements Document)"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "user module prd (product requirements document) user"
 ---
->>>>>>> .merge_file_HWsO45
 # User Module PRD (Product Requirements Document)
 
 **Status**: ✅ Finalized

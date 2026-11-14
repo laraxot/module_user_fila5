@@ -27,24 +27,6 @@ new class extends Component {
     </x-slot>
 
     @volt('area-personale.servizi')
-<<<<<<< .merge_file_Duib9p
-        <main id="main-container" class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
-                    <header class="cmp-heading mb-4">
-                        <h1 class="title-xxxlarge">{{ __('pub_theme::ui.header_area_personale.my_services.label') }}</h1>
-                        <p class="subtitle-small mb-0">
-                            {{ __('pub_theme::ui.header_area_personale.my_services.description', ['default' => 'Elenco dei servizi disponibili per l\'utente']) }}
-                        </p>
-                    </header>
-
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <p class="text-muted">Questa pagina mostrerà i servizi disponibili presto.</p>
-                        </div>
-                    </div>
-                </div>
-=======
         <main id="main-container" class="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
             <header class="mb-8 max-w-3xl">
                 <h1 class="text-3xl font-bold tracking-tight text-slate-950">{{ __('pub_theme::ui.header_area_personale.my_services.label') }}</h1>
@@ -52,7 +34,6 @@ new class extends Component {
             </header>
             <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                 <p class="text-slate-700">{{ __('user::area_personale.services.placeholder.message') }}</p>
->>>>>>> .merge_file_YbSUJK
             </div>
         </main>
     @endvolt

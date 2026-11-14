@@ -1,9 +1,7 @@
 ---
-<<<<<<< .merge_file_2nsEv0
 title: "Decision log — SuperAdmin widget"
-=======
+
 title: "Decision log: SuperAdmin widget"
->>>>>>> .merge_file_yXS5y1
 type: decision-log
 module: User
 status: active
@@ -15,16 +13,14 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
-<<<<<<< .merge_file_2nsEv0
 ---
 
 # Decision log — SuperAdmin Livewire → Filament widget
-=======
+
   - ./filament-blueprint.md
 updated: 2026-10-26
 tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
----
 
 # Decision log: User
 
@@ -145,7 +141,6 @@ campi ausiliari. Nessuna label hardcoded: anche il pulsante Google usa il
 catalogo `auth`.
 
 # Decision log: SuperAdmin Livewire → Filament widget
->>>>>>> .merge_file_yXS5y1
 
 ## [2026-09-21] Superman / Clark Kent, gli altri SVG restano
 
@@ -239,7 +234,6 @@ catalogo `auth`.
 
 **Scartato:** widget senza round-trip Livewire; `/admin` ancora rotto; UI/Lang in questa campagna; Socialite P3; nuova classe social 1:1; 303 team come epic proprio.
 
-<<<<<<< .merge_file_2nsEv0
 ## [2026-09-21] Icone SuperAdminWidget invisibili — root cause morph map
 
 **Sintomo:** `SuperAdminWidget` renderizzava `<div>` vuota per utenti super-admin — le icone `@svg('user-super-admin')`/`user-negate-super-admin` non apparivano mai nel chrome `USER_MENU_BEFORE`.
@@ -253,7 +247,7 @@ catalogo `auth`.
 **Verifica:** tinker — `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
 
 **Rationale:** regola contract-pattern — i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
-=======
+
 ## [2026-09-21] Icone SuperAdminWidget invisibili: root cause morph map
 
 **Sintomo:** `SuperAdminWidget` renderizzava `<div>` vuota per utenti super-admin: le icone `@svg('user-super-admin')`/`user-negate-super-admin` non apparivano mai nel chrome `USER_MENU_BEFORE`.
@@ -267,7 +261,6 @@ catalogo `auth`.
 **Verifica:** tinker: `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
 
 **Rationale:** regola contract-pattern: i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
->>>>>>> .merge_file_yXS5y1
 
 ## [2026-09-22] Campagna "module-excellence" additiva, non sovrascrittura
 
@@ -288,11 +281,9 @@ Livewire (`livewire-widget-*` prefix accanto ai file scoped Epic 9).
 
 **Perche' Epic 12 e non 11:** l'epic 11 esiste gia' come story singola
 (`11.1.team-change-widget.story.md`, correttamente `superseded_by:
-<<<<<<< .merge_file_2nsEv0
 10.1`) — numero occupato anche se la story e' superseded. 9 e 10 sono
-=======
+
 10.1`): numero occupato anche se la story e' superseded. 9 e 10 sono
->>>>>>> .merge_file_yXS5y1
 attivi. Il primo numero libero verificato e' 12.
 
 **Quali doc sono canone vs candidati a pulizia futura (non eseguita in
@@ -311,33 +302,27 @@ nessuna story esistente (9.x/10.x/11.1) rinumerata o cancellata, nessuna
 azione DB. Le 24 nuove story sono tutte `status: backlog`.
 
 **Fonte:** 5 ricerche parallele in sola lettura (`Agent
-<<<<<<< .merge_file_2nsEv0
 subagent_type: fork`), 2026-09-22 — dettaglio completo in
-=======
+
 subagent_type: fork`), 2026-09-22: dettaglio completo in
->>>>>>> .merge_file_yXS5y1
 [module-excellence-brainstorming.md](./module-excellence-brainstorming.md).
 
 ## [2026-09-22] Riconciliazione numerazione con campagna gemella perfection
 
 **Decision:** scoperta a posteriori una seconda campagna whole-module
 (`perfection-*`, stesso scope di `module-excellence`, prodotta in parallelo
-<<<<<<< .merge_file_2nsEv0
 senza coordinamento — verosimilmente un fork Agent della stessa richiesta
-=======
+
 senza coordinamento: verosimilmente un fork Agent della stessa richiesta
->>>>>>> .merge_file_yXS5y1
 utente). Nessun file di `module-excellence` toccato: Epic 12-14 restano suoi.
 La campagna `perfection` ha rinumerato il proprio draft (Epic 12-16 →
 15-19, mai promosso a file story individuali) per evitare collisione,
 mantenendo Epic 11 (sicurezza) invariata. Dettaglio completo in
 [perfection-decision-log.md](./perfection-decision-log.md).
 
-<<<<<<< .merge_file_2nsEv0
 **Rationale:** stesso principio gia' applicato sopra per Epic 12 vs 11 —
-=======
+
 **Rationale:** stesso principio gia' applicato sopra per Epic 12 vs 11 -
->>>>>>> .merge_file_yXS5y1
 primo numero libero verificato sul filesystem, non assunto dall'indice
 `epics.md`. Le due campagne restano additive fra loro come lo sono verso
 Epic 9/10.
@@ -367,29 +352,23 @@ individuali gia' scritti prima della scoperta.
 `filament-ux-*` sono un artefatto orfano della fase *precedente* alla
 rinumerazione di quella sessione (scritti insieme ai file
 `bmad/filament-ux-*.md`, prima che la campagna adottasse il prefisso
-<<<<<<< .merge_file_2nsEv0
 `perfection-` ed Epic 15) — la sua stessa nota di verifica li dichiara
 implicitamente superati ("le altre story Epic 12-16 non hanno file
 dedicato"), ma non li ha rinominati/rimossi fisicamente.
 
 **Decision:** nessuna azione su quei 6 file da questa sessione — non sono di
-=======
+
 `perfection-` ed Epic 15): la sua stessa nota di verifica li dichiara
-implicitamente superati ("le altre story Epic 12-16 non hanno file
-dedicato"), ma non li ha rinominati/rimossi fisicamente.
 
 **Decision:** nessuna azione su quei 6 file da questa sessione: non sono di
->>>>>>> .merge_file_yXS5y1
 nostra proprieta', potrebbero essere ancora in scrittura, e la regola
 progetto vieta di cancellare/rinominare documentazione di un'altra sessione
 senza conferma. I nostri 24 file (`12.1.phpstan-docs-corruption-cleanup.md`
 ... `14.8.provtv-remote-issue-tracker-divergence.story.md`) restano invariati
 e sono gia' l'unico set con tracciamento GitHub reale (issue #103, #105-116,
-<<<<<<< .merge_file_2nsEv0
 discussion #104) per l'epic 12-14 — nessuna rinumerazione necessaria da parte
-=======
+
 discussion #104) per l'epic 12-14: nessuna rinumerazione necessaria da parte
->>>>>>> .merge_file_yXS5y1
 nostra, confermato anche dalla verifica indipendente dell'altra sessione.
 Segnalato qui solo come nota di igiene per una futura story di pulizia
 (candidato naturale: story 12.3 "archive-folders-consolidation" o una nuova
@@ -397,16 +376,12 @@ story dedicata, non aperta ora).
 
 **Verifica:** `ls ../stories/ | grep -oE '^1[1-4]\.[0-9]+'` mostra le uniche
 collisioni residue essere quei 6 file orfani `12.x` + il file dash `11.1-*`
-<<<<<<< .merge_file_2nsEv0
 contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
-=======
+
 contro il gia'-superseded `11.1.team-change-widget.story.md`: entrambe
-generate e di competenza della sessione "perfection-", non di questa.
-Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
-scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
 
 ## [2026-10-18] LaravelLocalization: firma dei metodi URL
 
@@ -464,4 +439,3 @@ scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
 - **Mail di reset:** il testo di default lo possiede User (`EnsureResetPasswordMailTemplateAction`, `user::reset_password_email.*` in it/en/de/es), non Notify; mai sovrascrivere un testo personalizzato.
 - **Reinvio verifica email:** l'evento `Verified` si lancia solo dopo aver controllato id e hash, mai su un reinvio (`ResendEmailVerificationAction`).
 - **Revoca consensi:** si riconosce l'utente da `user_id` + `user_type` (classe e alias morph), mai da `subject_type`. Lo user agent della revoca richiede la colonna `revoked_user_agent`: SCHEMA-DA-CHIEDERE, nessuna migrazione creata.
->>>>>>> .merge_file_yXS5y1

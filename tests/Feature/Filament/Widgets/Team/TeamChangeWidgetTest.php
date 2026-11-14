@@ -2,19 +2,11 @@
 
 declare(strict_types=1);
 use Filament\Facades\Filament;
-<<<<<<< .merge_file_kVWZDo
-use Illuminate\Contracts\View\View;
-=======
->>>>>>> .merge_file_Kod4ZR
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Notification as NotificationFacade;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
 use Modules\User\Filament\Widgets\Team\TeamChangeWidget;
-<<<<<<< .merge_file_kVWZDo
-use Modules\User\Http\Livewire\Team\Change;
-=======
->>>>>>> .merge_file_Kod4ZR
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -60,11 +52,8 @@ beforeEach(function (): void {
     }
 
     $this->setupFilamentAdminPanel();
-<<<<<<< .merge_file_kVWZDo
-=======
 
     Assert::assertNotNull(Filament::getPanel('user::admin'));
->>>>>>> .merge_file_Kod4ZR
 });
 
 describe('TeamChangeWidget mount + render', function (): void {
@@ -93,13 +82,8 @@ describe('TeamChangeWidget mount + render', function (): void {
         $widget = $component->instance();
         Assert::assertInstanceOf(TeamChangeWidget::class, $widget);
         $rendered = $widget->render();
-<<<<<<< .merge_file_kVWZDo
-        Assert::assertInstanceOf(View::class, $rendered);
-        Assert::assertSame('ui::livewire.empty', $rendered->getData()['view'] ?? null);
-=======
         // render() sceglie la vista vuota condivisa: e' il nome della View, non un dato passato alla vista.
         Assert::assertSame('ui::livewire.empty', $rendered->name());
->>>>>>> .merge_file_Kod4ZR
         Assert::assertSame([], $component->get('teams'));
     });
 });
@@ -120,10 +104,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $fresh = $owner->fresh();
         Assert::assertInstanceOf(User::class, $fresh);
         Assert::assertSame($teamB->id, $fresh->current_team_id);
-<<<<<<< .merge_file_kVWZDo
-=======
         Assert::assertNotSame($teamA->id, $fresh->current_team_id);
->>>>>>> .merge_file_Kod4ZR
     });
 
     test('switchTeam returns a real 303 redirect response, not just a Livewire effect', function (): void {
@@ -132,11 +113,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $team = teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< .merge_file_kVWZDo
-        $widget = new TeamChangeWidget;
-=======
         $widget = new TeamChangeWidget();
->>>>>>> .merge_file_Kod4ZR
         $widget->mount();
 
         $response = $widget->switchTeam($team->id);
@@ -153,11 +130,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $otherOwnerTeam = teamChangeWidgetCreateTeam($stranger);
         actingAs($owner);
 
-<<<<<<< .merge_file_kVWZDo
-        $widget = new TeamChangeWidget;
-=======
         $widget = new TeamChangeWidget();
->>>>>>> .merge_file_Kod4ZR
         $widget->mount();
 
         try {
@@ -178,11 +151,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< .merge_file_kVWZDo
-        $widget = new TeamChangeWidget;
-=======
         $widget = new TeamChangeWidget();
->>>>>>> .merge_file_Kod4ZR
         $widget->mount();
 
         try {
@@ -197,12 +166,9 @@ describe('TeamChangeWidget switchTeam', function (): void {
 describe('TeamChangeWidget dashboard discovery', function (): void {
     test('dashboard widget list has no TeamChangeWidget card', function (): void {
         $panel = Filament::getPanel('user::admin');
-<<<<<<< .merge_file_kVWZDo
-=======
         if ($panel === null) {
             Assert::fail('The User admin panel was not registered by the test bootstrap.');
         }
->>>>>>> .merge_file_Kod4ZR
 
         $widgetClasses = array_map(
             static fn (mixed $widget): string => is_string($widget) ? $widget : $widget::class,
@@ -215,11 +181,7 @@ describe('TeamChangeWidget dashboard discovery', function (): void {
 
 describe('Http Livewire twin retired', function (): void {
     test('team change http component is gone', function (): void {
-<<<<<<< .merge_file_kVWZDo
-        Assert::assertFalse(class_exists(Change::class, false));
-=======
         Assert::assertFalse(class_exists('Modules\\User\\Http\\Livewire\\Team\\Change', false));
->>>>>>> .merge_file_Kod4ZR
         Assert::assertFileDoesNotExist(base_path('Modules/User/app/Http/Livewire/Team/Change.php'));
         Assert::assertFileDoesNotExist(base_path('Modules/User/resources/views/livewire/team/change.blade.php'));
     });

@@ -20,22 +20,6 @@ return [
         'description' => 'Gestione e monitoraggio dei dispositivi degli utenti',
     ],
     'fields' => [
-<<<<<<< .merge_file_2GsykG
-        'uuid' => ['label' => 'UUID', 'placeholder' => 'Inserisci l\'UUID del dispositivo', 'tooltip' => 'Identificativo univoco universale', 'helper_text' => 'Codice alfanumerico che identifica in modo univoco il dispositivo nel sistema', 'help' => 'Identificativo univoco del dispositivo', 'description' => ''],
-        'mobile_id' => ['label' => 'Mobile ID', 'placeholder' => 'Inserisci l\'ID mobile', 'tooltip' => 'Identificativo specifico per dispositivi mobili', 'helper_text' => 'Codice utilizzato per identificare il dispositivo nelle applicazioni mobile', 'help' => 'Identificativo mobile del dispositivo', 'description' => ''],
-        'languages' => ['label' => 'Lingue', 'placeholder' => 'Aggiungi una lingua', 'tooltip' => 'Lingue supportate dal dispositivo', 'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es]', 'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es]', 'description' => ''],
-        'device' => ['label' => 'Nome Dispositivo', 'placeholder' => 'Inserisci il nome del dispositivo', 'tooltip' => 'Nome identificativo del dispositivo', 'helper_text' => 'Nome descrittivo o modello del dispositivo utilizzato dall\'utente', 'help' => 'Nome del dispositivo', 'description' => ''],
-        'platform' => ['label' => 'Piattaforma', 'placeholder' => 'Inserisci la piattaforma', 'tooltip' => 'Sistema operativo del dispositivo', 'helper_text' => 'Sistema operativo o piattaforma su cui funziona il dispositivo', 'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS]', 'description' => ''],
-        'browser' => ['label' => 'Browser', 'placeholder' => 'Inserisci il browser', 'tooltip' => 'Browser web utilizzato', 'helper_text' => 'Applicazione browser utilizzata per navigare su internet', 'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge]', 'description' => ''],
-        'version' => ['label' => 'Versione', 'placeholder' => 'Inserisci la versione', 'tooltip' => 'Versione del software', 'helper_text' => 'Numero di versione del browser o del sistema operativo', 'help' => 'Versione del browser o sistema operativo', 'description' => ''],
-        'is_robot' => ['label' => 'È Robot', 'placeholder' => 'Seleziona se è un robot', 'tooltip' => 'Indica se è un bot automatizzato', 'helper_text' => 'Specifica se il dispositivo è utilizzato da un robot o sistema automatizzato', 'help' => 'Indica se il dispositivo è un robot o bot automatizzato', 'description' => ''],
-        'robot' => ['label' => 'Robot', 'placeholder' => 'Inserisci il tipo di robot', 'tooltip' => 'Tipo specifico di robot', 'helper_text' => 'Nome o tipo del robot/crawler se il dispositivo è automatizzato', 'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.]', 'description' => ''],
-        'is_desktop' => ['label' => 'È Desktop', 'placeholder' => 'Seleziona se è desktop', 'tooltip' => 'Dispositivo desktop o computer fisso', 'helper_text' => 'Indica se si tratta di un computer desktop o workstation fissa', 'help' => 'Indica se è un dispositivo desktop o computer fisso', 'description' => ''],
-        'is_mobile' => ['label' => 'È Mobile', 'placeholder' => 'Seleziona se è mobile', 'tooltip' => 'Dispositivo mobile portatile', 'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile]', 'help' => 'Indica se è un dispositivo mobile (smartphone o tablet]', 'description' => ''],
-        'is_tablet' => ['label' => 'È Tablet', 'placeholder' => 'Seleziona se è tablet', 'tooltip' => 'Dispositivo tablet con schermo touch', 'helper_text' => 'Indica se si tratta di un tablet o dispositivo con schermo di medie dimensioni', 'help' => 'Indica se è un tablet o dispositivo con schermo di medie dimensioni', 'description' => ''],
-        'is_phone' => ['label' => 'È Telefono', 'placeholder' => 'Seleziona se è telefono', 'tooltip' => 'Smartphone o telefono cellulare', 'helper_text' => 'Specifica se il dispositivo è uno smartphone o telefono cellulare', 'help' => 'Indica se è uno smartphone o telefono cellulare', 'description' => ''],
-        'created_at' => ['label' => 'Creato il'],
-=======
         'uuid' => [
             'label' => 'UUID',
             'placeholder' => 'Inserisci l\'UUID del dispositivo',
@@ -140,7 +124,9 @@ return [
             'help' => 'Indica se è uno smartphone o telefono cellulare',
             'description' => '',
         ],
->>>>>>> .merge_file_hR908z
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
     ],
     'actions' => [
         'create' => [
