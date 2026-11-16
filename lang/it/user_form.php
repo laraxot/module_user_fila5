@@ -39,6 +39,12 @@ return [
             'description' => 'Mantieni la sessione attiva su questo dispositivo',
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
         ],
+<<<<<<< .merge_file_mq1W9h
+=======
+        'token' => [
+            'label' => 'token',
+        ],
+>>>>>>> .merge_file_6tDMzJ
     ],
     'actions' => [
         'showPassword' => [

@@ -1,7 +1,13 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_DN1491
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+=======
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Http\RedirectResponse;
+>>>>>>> .merge_file_o3mwom
 use Livewire\Volt\Component;
 use Modules\User\Actions\Auth\ResendEmailVerificationAction;
 
@@ -12,7 +18,7 @@ middleware(['auth', 'throttle:6,1']);
 name('verification.notice');
 
 new class extends Component {
-    public function resend()
+    public function resend(): ?RedirectResponse
     {
         $user = auth()->user();
         abort_unless($user instanceof MustVerifyEmail, 403);
@@ -23,11 +29,13 @@ new class extends Component {
 
         $this->dispatch('resent');
         session()->flash('resent');
+
+        return null;
     }
 };
-
 ?>
 
+<<<<<<< .merge_file_DN1491
 <x-layouts.main>
 
     <div class="flex flex-col items-stretch justify-center w-screen min-h-screen py-10 sm:items-center">
@@ -72,7 +80,21 @@ new class extends Component {
             </div>
             @endvolt
 
+=======
+{{--
+  Verifica email: stesso guscio delle altre pagine di accesso (x-auth.shell via partial, DCP-290).
+  Prima era <x-layouts.main> legacy — niente header/footer CMS, card grigia.
+  Logica invariata: ResendEmailVerificationAction + throttle:6,1.
+  @volt deve stare direttamente in x-layouts.app: il markup va nel partial del tema attivo.
+--}}
+<x-layouts.app
+    :title="__('user::auth_pages.sections.verify.title')"
+    :meta-description="__('user::auth_pages.verify.check_email.description')"
+>
+    @volt('auth.verify')
+        <div class="page-content content" data-dc data-slug="auth.verify" data-side="content">
+            @include('pub_theme::components.pages.auth.verify')
+>>>>>>> .merge_file_o3mwom
         </div>
-    </div>
-
-</x-layouts.main>
+    @endvolt
+</x-layouts.app>

@@ -49,6 +49,10 @@ return [
         ],
         'request_another' => [
             'label' => 'click here to request another',
+<<<<<<< .merge_file_FQ1E1Y
+=======
+            'sending' => 'sending…',
+>>>>>>> .merge_file_thUcas
         ],
     ],
     'password_confirm' => [

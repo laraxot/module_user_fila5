@@ -11,6 +11,19 @@ uses(\Modules\User\Tests\TestCase::class);
 
 class PermissionTest extends TestCase
 {
+<<<<<<< .merge_file_U0x4IA
+=======
+    /*
+     * created_by/updated_by sono foreignIdFor(User) e l'utente ha chiave UUID: su MariaDB la
+     * colonna e' di tipo UUID nativo, che scarta valori come 'user123'. Si usano UUID validi.
+     */
+    private const string CREATOR_ID = '0195f4a2-0000-7000-8000-000000000123';
+
+    private const string UPDATER_ID = '0195f4a2-0000-7000-8000-000000000456';
+
+    private const string ADMIN_ID = '0195f4a2-0000-7000-8000-0000000000ad';
+
+>>>>>>> .merge_file_8JLSYR
     public function test_can_create_permission_with_minimal_data(): void
     {
         $permission = Permission::factory()->create([
@@ -22,7 +35,11 @@ class PermissionTest extends TestCase
             'id' => $permission->id,
             'name' => 'test.permission',
             'guard_name' => 'web',
+<<<<<<< .merge_file_U0x4IA
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_can_create_permission_with_all_fields(): void
@@ -30,8 +47,13 @@ class PermissionTest extends TestCase
         $permissionData = [
             'name' => 'full.permission',
             'guard_name' => 'web',
+<<<<<<< .merge_file_U0x4IA
             'created_by' => 'user123',
             'updated_by' => 'user456',
+=======
+            'created_by' => self::CREATOR_ID,
+            'updated_by' => self::UPDATER_ID,
+>>>>>>> .merge_file_8JLSYR
         ];
 
         $permission = Permission::factory()->create($permissionData);
@@ -40,9 +62,15 @@ class PermissionTest extends TestCase
             'id' => $permission->id,
             'name' => 'full.permission',
             'guard_name' => 'web',
+<<<<<<< .merge_file_U0x4IA
             'created_by' => 'user123',
             'updated_by' => 'user456',
         ]);
+=======
+            'created_by' => self::CREATOR_ID,
+            'updated_by' => self::UPDATER_ID,
+        ], 'user');
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_permission_has_connection_attribute(): void
@@ -112,9 +140,15 @@ class PermissionTest extends TestCase
 
     public function test_can_find_permission_by_created_by(): void
     {
+<<<<<<< .merge_file_U0x4IA
         $permission = Permission::factory()->create(['created_by' => 'user123']);
 
         $foundPermission = Permission::where('created_by', 'user123')->first();
+=======
+        $permission = Permission::factory()->create(['created_by' => self::CREATOR_ID]);
+
+        $foundPermission = Permission::where('created_by', self::CREATOR_ID)->first();
+>>>>>>> .merge_file_8JLSYR
 
         static::assertNotNull($foundPermission);
         static::assertSame($permission->id, $foundPermission->id);
@@ -122,9 +156,15 @@ class PermissionTest extends TestCase
 
     public function test_can_find_permission_by_updated_by(): void
     {
+<<<<<<< .merge_file_U0x4IA
         $permission = Permission::factory()->create(['updated_by' => 'user456']);
 
         $foundPermission = Permission::where('updated_by', 'user456')->first();
+=======
+        $permission = Permission::factory()->create(['updated_by' => self::UPDATER_ID]);
+
+        $foundPermission = Permission::where('updated_by', self::UPDATER_ID)->first();
+>>>>>>> .merge_file_8JLSYR
 
         static::assertNotNull($foundPermission);
         static::assertSame($permission->id, $foundPermission->id);
@@ -152,7 +192,11 @@ class PermissionTest extends TestCase
         $this->assertDatabaseHas('permissions', [
             'id' => $permission->id,
             'name' => 'new.permission',
+<<<<<<< .merge_file_U0x4IA
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_can_handle_null_values(): void
@@ -168,7 +212,11 @@ class PermissionTest extends TestCase
             'id' => $permission->id,
             'created_by' => null,
             'updated_by' => null,
+<<<<<<< .merge_file_U0x4IA
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_can_find_permissions_by_multiple_criteria(): void
@@ -176,12 +224,17 @@ class PermissionTest extends TestCase
         Permission::factory()->create([
             'name' => 'admin.user.create',
             'guard_name' => 'web',
+<<<<<<< .merge_file_U0x4IA
             'created_by' => 'admin',
+=======
+            'created_by' => self::ADMIN_ID,
+>>>>>>> .merge_file_8JLSYR
         ]);
 
         Permission::factory()->create([
             'name' => 'admin.user.update',
             'guard_name' => 'api',
+<<<<<<< .merge_file_U0x4IA
             'created_by' => 'admin',
         ]);
 
@@ -190,6 +243,16 @@ class PermissionTest extends TestCase
         static::assertCount(2, $permissions);
         static::assertTrue($permissions->every(
             fn (Permission $permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin'));
+=======
+            'created_by' => self::ADMIN_ID,
+        ]);
+
+        $permissions = Permission::where('name', 'like', 'admin.user.%')->where('created_by', self::ADMIN_ID)->get();
+
+        static::assertCount(2, $permissions);
+        static::assertTrue($permissions->every(
+            fn (Permission $permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === self::ADMIN_ID));
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_permission_has_roles_relationship(): void
@@ -210,22 +273,35 @@ class PermissionTest extends TestCase
     {
         $permission = Permission::factory()->create();
 
+<<<<<<< .merge_file_U0x4IA
         static::assertTrue(method_exists($permission, 'role'));
+=======
+        static::assertTrue($permission->hasNamedScope('role'));
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_permission_can_use_permission_scopes(): void
     {
         $permission = Permission::factory()->create();
 
+<<<<<<< .merge_file_U0x4IA
         static::assertTrue(method_exists($permission, 'permission'));
         static::assertTrue(method_exists($permission, 'withoutPermission'));
+=======
+        static::assertTrue($permission->hasNamedScope('permission'));
+        static::assertTrue($permission->hasNamedScope('withoutPermission'));
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_permission_can_use_without_role_scopes(): void
     {
         $permission = Permission::factory()->create();
 
+<<<<<<< .merge_file_U0x4IA
         static::assertTrue(method_exists($permission, 'withoutRole'));
+=======
+        static::assertTrue($permission->hasNamedScope('withoutRole'));
+>>>>>>> .merge_file_8JLSYR
     }
 
     public function test_permission_has_factory_method(): void

@@ -59,6 +59,24 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     ];
 
     /**
+<<<<<<< .merge_file_AD42vT
+=======
+     * `settings` e' una colonna JSON: senza cast un array in ingresso finisce nell'INSERT
+     * come stringa ("Array to string conversion").
+     *
+     * @return array<string, string>
+     */
+    #[\Override]
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'settings' => 'array',
+            'trial_ends_at' => 'datetime',
+        ]);
+    }
+
+    /**
+>>>>>>> .merge_file_T7avMM
      * @param Builder<Model>|Model $query
      * @param string|int $value
      * @param string|null $field
@@ -80,6 +98,14 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
 
     public function getFilamentAvatarUrl(): ?string
     {
+<<<<<<< .merge_file_AD42vT
         return $this->getFirstMediaUrl('avatar');
+=======
+        // Senza media getFirstMediaUrl() restituisce '': Filament si aspetta null per
+        // mostrare l'avatar di ripiego, non un <img src="">.
+        $url = $this->getFirstMediaUrl('avatar');
+
+        return $url !== '' ? $url : null;
+>>>>>>> .merge_file_T7avMM
     }
 }

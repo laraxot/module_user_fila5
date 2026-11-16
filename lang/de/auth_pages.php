@@ -59,6 +59,10 @@ return [
         ],
         'request_another' => [
             'label' => 'klicken Sie hier, um eine weitere anzufordern',
+<<<<<<< .merge_file_lJYTqp
+=======
+            'sending' => 'wird gesendet…',
+>>>>>>> .merge_file_oC5Yy7
         ],
     ],
 ];

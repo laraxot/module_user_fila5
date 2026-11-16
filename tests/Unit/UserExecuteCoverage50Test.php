@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Filament\Actions\Action as FilamentAction;
 use Filament\Actions\BulkAction;
 use Filament\Panel;
@@ -272,7 +273,10 @@ describe('User execute coverage floor 50', function (): void {
     });
 
     test('Filament UserResource legacy schema e pages', function (): void {
-        Assert::assertNotEmpty(app(UserResource::class)->getFormSchema());
+        // XotBaseResource::getFormSchema() e' final e vuoto: lo schema sta nella Schemas\\*Form della risorsa.
+        $userForm = app(UserResource::getFormClass());
+        Assert::assertInstanceOf(XotBaseResourceForm::class, $userForm);
+        Assert::assertNotEmpty($userForm->getFormSchema());
         Assert::assertNotEmpty(UserResource::getPages());
         Assert::assertTrue(class_exists(UserResource::getModel()));
     });
@@ -347,14 +351,11 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertSame('', userInvoke($page, 'maskSecret', null));
         Assert::assertSame('persisted-secret', userInvoke($page, 'resolveSecret', '••••1234', 'persisted-secret'));
         Assert::assertSame('new-secret', userInvoke($page, 'resolveSecret', 'new-secret', 'persisted-secret'));
-        Assert::assertSame('abcd1234', userInvoke($page, 'dehydrateSecret', '••••1234', 'services.google.client_secret'));
-        Assert::assertSame('', userInvoke($page, 'dehydrateSecret', null, 'services.google.client_secret'));
+        // dehydrateSecret()/providerClientId() non sono mai esistiti nella pagina (git log -S): asserzioni tolte.
         Assert::assertSame(['a', 'b'], userInvoke($page, 'stringList', ['a', '', 'b', 10]));
         Assert::assertSame([], userInvoke($page, 'stringList', 'not-an-array'));
         Assert::assertSame(['enabled' => true, 'client_id' => 'x'], userInvoke($page, 'providerData', ['enabled' => true, 'client_id' => 'x', 5 => 'skip']));
         Assert::assertSame([], userInvoke($page, 'providerData', 'bad'));
-        Assert::assertSame('google-client', userInvoke($page, 'providerClientId', ['client_id' => 'google-client']));
-        Assert::assertSame('', userInvoke($page, 'providerClientId', ['client_id' => 10]));
         Assert::assertSame(['openid', 'email'], userInvoke($page, 'configStringList', 'services.google.scopes', ['fallback']));
     });
 
@@ -362,7 +363,10 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableFilters());
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableActions());
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableBulkActions());
-        Assert::assertNotEmpty(app(OauthAccessTokenResource::class)->getFormSchema());
+        // XotBaseResource::getFormSchema() e' final e vuoto: lo schema sta nella Schemas\\*Form della risorsa.
+        $tokenForm = app(OauthAccessTokenResource::getFormClass());
+        Assert::assertInstanceOf(XotBaseResourceForm::class, $tokenForm);
+        Assert::assertNotEmpty($tokenForm->getFormSchema());
 
         $resource = new OauthAccessTokenResource();
         $columns = $resource->getTableColumns();
@@ -934,12 +938,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         Assert::assertNull(userCaptureFatal(static function () use ($passport): void {
             $passport->runConfigure();
         }));
-
-        $lifetime = new \ReflectionMethod(HasPassportConfiguration::class, 'tokenLifetime');
-        $lifetime->setAccessible(true);
-        Assert::assertSame(15, $lifetime->invoke(null, [], 'access_token', 15));
-        Assert::assertSame(7, $lifetime->invoke(null, ['access_token' => 7], 'access_token', 15));
-        Assert::assertSame(15, $lifetime->invoke(null, ['access_token' => 'nope'], 'access_token', 15));
+        // HasPassportConfiguration non ha mai avuto tokenLifetime() (git log -S): le durate stanno in configureTokens().
     });
 
     test('tenant traits espongono relazioni in memoria', function (): void {

@@ -13,10 +13,15 @@ use Modules\User\Models\Tenant;
 use Mockery\MockInterface;
 use Modules\User\Tests\TestCase;
 
+<<<<<<< .merge_file_S9zxRo
 use function Safe\json_encode;
 
 uses(\Modules\User\Tests\TestCase::class);
 
+=======
+uses(\Modules\User\Tests\TestCase::class);
+
+>>>>>>> .merge_file_zVqBla
 class TenantTest extends TestCase
 {
     public function test_can_create_tenant_with_minimal_data(): void
@@ -28,7 +33,11 @@ class TenantTest extends TestCase
         $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
             'name' => 'Test Tenant',
+<<<<<<< .merge_file_S9zxRo
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_zVqBla
     }
 
     public function test_can_create_tenant_with_all_fields(): void
@@ -52,11 +61,16 @@ class TenantTest extends TestCase
             'domain' => 'fulltenant.com',
             'database' => 'fulltenant_db',
             'is_active' => true,
+<<<<<<< .merge_file_S9zxRo
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_zVqBla
 
         // Verifica campi JSON
         static::assertSame(['theme' => 'dark', 'features' => ['chat', 'analytics']], $tenant->settings);
     }
+<<<<<<< .merge_file_S9zxRo
 
     public function test_tenant_has_soft_deletes(): void
     {
@@ -144,6 +158,95 @@ class TenantTest extends TestCase
         static::assertTrue($exampleTenants->every(fn (Tenant $tenant): bool => str_ends_with((string) $tenant->domain, '.example.com')));
     }
 
+=======
+
+    public function test_tenant_has_soft_deletes(): void
+    {
+        $this->markTestSkipped('Tenant model does not use SoftDeletes.');
+    }
+
+    public function test_can_restore_soft_deleted_tenant(): void
+    {
+        $this->markTestSkipped('Tenant model does not use SoftDeletes.');
+    }
+
+    public function test_can_find_tenant_by_name(): void
+    {
+        $tenant = Tenant::factory()->create(['name' => 'Unique Tenant Name']);
+
+        $foundTenant = Tenant::where('name', 'Unique Tenant Name')->first();
+
+        static::assertNotNull($foundTenant);
+        static::assertSame($tenant->id, $foundTenant->id);
+    }
+
+    public function test_can_find_tenant_by_slug(): void
+    {
+        $tenant = Tenant::factory()->create(['slug' => 'unique-tenant']);
+
+        $foundTenant = Tenant::where('slug', 'unique-tenant')->first();
+
+        static::assertNotNull($foundTenant);
+        static::assertSame($tenant->id, $foundTenant->id);
+    }
+
+    public function test_can_find_tenant_by_domain(): void
+    {
+        $tenant = Tenant::factory()->create(['domain' => 'uniquetenant.com']);
+
+        $foundTenant = Tenant::where('domain', 'uniquetenant.com')->first();
+
+        static::assertNotNull($foundTenant);
+        static::assertSame($tenant->id, $foundTenant->id);
+    }
+
+    public function test_can_find_tenant_by_database(): void
+    {
+        $tenant = Tenant::factory()->create(['database' => 'unique_db']);
+
+        $foundTenant = Tenant::where('database', 'unique_db')->first();
+
+        static::assertNotNull($foundTenant);
+        static::assertSame($tenant->id, $foundTenant->id);
+    }
+
+    public function test_can_find_active_tenants(): void
+    {
+        Tenant::factory()->create(['is_active' => true]);
+        Tenant::factory()->create(['is_active' => false]);
+        Tenant::factory()->create(['is_active' => true]);
+
+        $activeTenants = Tenant::where('is_active', true)->get();
+
+        static::assertCount(2, $activeTenants);
+        static::assertTrue($activeTenants->every(fn (Tenant $tenant): bool => (bool) $tenant->is_active));
+    }
+
+    public function test_can_find_tenants_by_name_pattern(): void
+    {
+        Tenant::factory()->create(['name' => 'Development Company']);
+        Tenant::factory()->create(['name' => 'Marketing Agency']);
+        Tenant::factory()->create(['name' => 'Sales Corporation']);
+
+        $companyTenants = Tenant::where('name', 'like', '%Company%')->get();
+
+        static::assertCount(1, $companyTenants);
+        static::assertTrue($companyTenants->every(fn (Tenant $tenant): bool => str_contains($tenant->name, 'Company')));
+    }
+
+    public function test_can_find_tenants_by_domain_pattern(): void
+    {
+        Tenant::factory()->create(['domain' => 'dev.example.com']);
+        Tenant::factory()->create(['domain' => 'staging.example.com']);
+        Tenant::factory()->create(['domain' => 'prod.example.com']);
+
+        $exampleTenants = Tenant::where('domain', 'like', '%.example.com')->get();
+
+        static::assertCount(3, $exampleTenants);
+        static::assertTrue($exampleTenants->every(fn (Tenant $tenant): bool => str_ends_with((string) $tenant->domain, '.example.com')));
+    }
+
+>>>>>>> .merge_file_zVqBla
     public function test_can_update_tenant(): void
     {
         $tenant = Tenant::factory()->create(['name' => 'Old Name']);
@@ -153,7 +256,11 @@ class TenantTest extends TestCase
         $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
             'name' => 'New Name',
+<<<<<<< .merge_file_S9zxRo
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_zVqBla
     }
 
     public function test_can_handle_null_values(): void
@@ -165,12 +272,22 @@ class TenantTest extends TestCase
             'database' => null,
         ]);
 
+<<<<<<< .merge_file_S9zxRo
         $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
             'slug' => null,
             'domain' => null,
             'database' => null,
         ]);
+=======
+        // Lo slug non resta mai null: HasSlug lo genera dal nome al salvataggio.
+        $this->assertDatabaseHas('tenants', [
+            'id' => $tenant->id,
+            'slug' => 'test-tenant',
+            'domain' => null,
+            'database' => null,
+        ], 'user');
+>>>>>>> .merge_file_zVqBla
     }
 
     public function test_can_find_tenants_by_multiple_criteria(): void
@@ -241,6 +358,7 @@ class TenantTest extends TestCase
 
     public function test_can_find_tenants_by_settings_value(): void
     {
+<<<<<<< .merge_file_S9zxRo
         // `tenants.settings` e' una colonna json (migration 2026_09_01_150110) ma il model
         // non ha il cast `array`: si scrive il json a mano e si cerca per id.
         $darkTenant = Tenant::factory()->create([
@@ -249,6 +367,16 @@ class TenantTest extends TestCase
 
         Tenant::factory()->create([
             'settings' => json_encode(['theme' => 'light', 'features' => ['analytics']]),
+=======
+        // `tenants.settings` e' una colonna json castata ad `array`: si passa l'array,
+        // una stringa json verrebbe codificata due volte.
+        $darkTenant = Tenant::factory()->create([
+            'settings' => ['theme' => 'dark', 'features' => ['chat']],
+        ]);
+
+        Tenant::factory()->create([
+            'settings' => ['theme' => 'light', 'features' => ['analytics']],
+>>>>>>> .merge_file_zVqBla
         ]);
 
         $darkThemeTenants = Tenant::whereJsonContains('settings->theme', 'dark')->get();

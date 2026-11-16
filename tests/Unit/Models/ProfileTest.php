@@ -26,7 +26,11 @@ class ProfileTest extends TestCase
             'last_name' => 'Doe',
             'user_name' => 'johndoe',
             'email' => 'john@example.com',
+<<<<<<< .merge_file_xThMcT
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_can_create_profile_with_all_fields(): void
@@ -60,11 +64,20 @@ class ProfileTest extends TestCase
             'timezone' => 'UTC',
             'locale' => 'en',
             'status' => 'active',
+<<<<<<< .merge_file_xThMcT
         ]);
 
         // Verifica campi JSON
         static::assertSame(['theme' => 'dark', 'notifications' => true], $profile->preferences);
         static::assertSame(['skills' => ['PHP', 'Laravel'], 'experience' => 5], $profile->extra);
+=======
+        ], 'user');
+
+        // Verifica campi JSON
+        static::assertSame(['theme' => 'dark', 'notifications' => true], $profile->preferences);
+        // `extra` e' un attributo schemaless (cast SchemalessAttributes), non un array.
+        static::assertSame(['skills' => ['PHP', 'Laravel'], 'experience' => 5], $profile->extra->all());
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_profile_has_schemaless_attributes(): void
@@ -201,7 +214,11 @@ class ProfileTest extends TestCase
         $this->assertDatabaseHas('profiles', [
             'id' => $profile->id,
             'first_name' => 'New Name',
+<<<<<<< .merge_file_xThMcT
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_can_handle_null_values(): void
@@ -225,7 +242,11 @@ class ProfileTest extends TestCase
             'avatar' => null,
             'timezone' => null,
             'locale' => null,
+<<<<<<< .merge_file_xThMcT
         ]);
+=======
+        ], 'user');
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_can_find_profiles_by_multiple_criteria(): void
@@ -294,23 +315,37 @@ class ProfileTest extends TestCase
     {
         $profile = Profile::factory()->create();
 
+<<<<<<< .merge_file_xThMcT
         static::assertTrue(method_exists($profile, 'permission'));
         static::assertTrue(method_exists($profile, 'withoutPermission'));
+=======
+        static::assertTrue($profile->hasNamedScope('permission'));
+        static::assertTrue($profile->hasNamedScope('withoutPermission'));
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_profile_can_use_role_scopes(): void
     {
         $profile = Profile::factory()->create();
 
+<<<<<<< .merge_file_xThMcT
         static::assertTrue(method_exists($profile, 'role'));
         static::assertTrue(method_exists($profile, 'withoutRole'));
+=======
+        static::assertTrue($profile->hasNamedScope('role'));
+        static::assertTrue($profile->hasNamedScope('withoutRole'));
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_profile_can_use_extra_attributes_scopes(): void
     {
         $profile = Profile::factory()->create();
 
+<<<<<<< .merge_file_xThMcT
         static::assertTrue(method_exists($profile, 'withExtraAttributes'));
+=======
+        static::assertTrue($profile->hasNamedScope('withExtraAttributes'));
+>>>>>>> .merge_file_ClMzuM
     }
 
     public function test_profile_has_factory(): void

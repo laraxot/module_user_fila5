@@ -52,7 +52,12 @@ test('user can be updated', function (): void {
     $this->subjectUser->refresh();
 
     expect($this->subjectUser->email)->toBe('updated@example.com');
+<<<<<<< .merge_file_nYJGeP
     expect($this->subjectUser->type)->toBe(UserType::BoUser);
+=======
+    // 'type' e' la colonna figlio di Parental (childTypes): nessun cast enum, dopo refresh() e' stringa.
+    expect($this->subjectUser->type)->toBe(UserType::BoUser->value);
+>>>>>>> .merge_file_WUyqBD
 });
 
 test('user can be deleted', function (): void {

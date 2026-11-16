@@ -11,6 +11,12 @@ return [
         ],
     ],
     'fields' => [
+        'password' => [
+            'label' => 'Password',
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+        ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
