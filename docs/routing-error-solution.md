@@ -49,7 +49,7 @@ Route::get('/profile', [ProfilePageController::class, 'show']);
   ```
   resources/views/pages/profile.blade.php
   ```
-- Il FolioServiceProvider del modulo la registra automaticamente.
+- `Cms\FolioVoltServiceProvider` monta già `resources/views/pages` di ogni modulo abilitato (mai `App\Providers\FolioServiceProvider`).
 - Rimuovi la rotta da `web.php`.
 
 ## 3. Volt (Componenti Livewire/Vue)
