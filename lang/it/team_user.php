@@ -37,14 +37,20 @@ return [
         ],
         'team' => [
             'name' => [
-                'label' => 'team.name',
+                'label' => 'Team',
             ],
         ],
         'user' => [
             'name' => [
-                'label' => 'user.name',
+                'label' => 'Utente',
             ],
         ],
+<<<<<<< .merge_file_JTyiMY
+        'role' => [
+            'label' => 'Ruolo',
+        ],
+=======
+>>>>>>> .merge_file_9Ali1E
     ],
     'actions' => [
         'create' => [

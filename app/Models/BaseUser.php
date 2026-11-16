@@ -19,6 +19,7 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
@@ -298,20 +299,20 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return true;
         }
 
-        // The owner also supervises HACCP (panel `respHACCP`), without being given the other work roles.
-        if ($panel->getId() === 'respHACCP' && $this->hasRole('restaurant::admin')) {
-            return true;
-        }
-
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
 
-            // App\Support\AccountFeatures non e' mai esistita (ne' la classe ne'
-            // config/account_features.php): riferimento morto fin dal commit
-            // iniziale del modulo, causava un Error fatale a runtime su ogni
-            // pannello diverso da "admin". hasRole($role) resta l'unico controllo
-            // reale, come gia' documentato qui sopra come fallback.
-            return $this->hasRole($role);
+            // Il super-admin entra in ogni pannello: le policy (XotBasePolicy::before) gli
+            // concedono gia' tutto, ma senza questo controllo restava fuori dai pannelli di
+            // modulo (AUTH-05). Il ruolo `{modulo}::operator` entra nel pannello del suo
+            // modulo con i permessi ridotti definiti dalle policy del modulo.
+            if ($this->hasRole('super-admin')) {
+                return true;
+            }
+
+            $operatorRole = Str::before($role, '::').'::operator';
+
+            return $this->hasRole(Str::contains($role, '::') ? [$role, $operatorRole] : $role);
         }
 
         return $this->hasAnyRole(['super-admin', 'admin', 'restaurant::admin']);
@@ -340,7 +341,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection;
+        return $this->membershipTeams ?? new Collection();
     }
 
     // public function authentications(): MorphMany
@@ -350,17 +351,22 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     /**
      * Utente per il password grant di Passport: un account cancellato dal titolare (`deleted_at`, SEC-05) non riceve token.
+     *
+     * Campi rilevanti: `email` (string), `deleted_at` (datetime|null). Esempio sintetico:
+     * email=`user@example.com`, deleted_at=`null` → match; deleted_at valorizzato → escluso.
      */
     public static function findForPassport(string $username): ?self
     {
-        $query = static::where('email', $username);
-        $user = new static;
+        $query = static::query()->where('email', $username);
+        $model = $query->getModel();
 
-        if (app(ModelHasColumnAction::class)->execute($user, 'deleted_at')) {
-            $query->whereNull($user->qualifyColumn('deleted_at'));
+        if (app(ModelHasColumnAction::class)->execute($model, 'deleted_at')) {
+            $query->whereNull($model->qualifyColumn('deleted_at'));
         }
 
-        return $query->first();
+        $user = $query->first();
+
+        return $user instanceof static ? $user : null;
     }
 
     /**

@@ -4,42 +4,31 @@ declare(strict_types=1);
 
 return [
     'name' => [
-<<<<<<< .merge_file_MsSNwl
-        'label' => 'First name',
-        'placeholder' => 'Enter the first name',
-        'description' => 'name',
-=======
         'label' => 'Nome',
         'placeholder' => 'Inserisci il nome',
->>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
     'email' => [
         'label' => 'Email',
-<<<<<<< .merge_file_MsSNwl
-        'placeholder' => 'Enter the email',
-        'description' => 'email',
-=======
         'placeholder' => 'Inserisci l\'email',
->>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
     'created_at' => [
-        'label' => 'Creation Date',
+        'label' => 'Data Creazione',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'updated_at' => [
-        'label' => 'Last Modified',
+        'label' => 'Ultima Modifica',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'role' => [
-        'label' => 'Role',
+        'label' => 'Ruolo',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
@@ -58,60 +47,55 @@ return [
     ],
     'password' => [
         'label' => 'Password',
-<<<<<<< .merge_file_MsSNwl
-        'placeholder' => 'Enter the password',
-        'description' => 'password',
-=======
         'placeholder' => 'Inserisci la password',
->>>>>>> .merge_file_Tsby3a
         'helper_text' => '',
         'tooltip' => '',
     ],
     'password_confirmation' => [
-        'label' => 'Confirm Password',
-        'placeholder' => 'Confirm the password',
+        'label' => 'Conferma Password',
+        'placeholder' => 'Conferma la password',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'email_verified_at' => [
-        'label' => 'Email Verified At',
+        'label' => 'Email Verificata il',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'current_password' => [
-        'label' => 'Current Password',
-        'placeholder' => 'Enter the current password',
+        'label' => 'Password Attuale',
+        'placeholder' => 'Inserisci la password attuale',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'roles' => [
-        'label' => 'Roles',
+        'label' => 'Ruoli',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'permissions' => [
-        'label' => 'Permissions',
+        'label' => 'Permessi',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'status' => [
-        'label' => 'Status',
+        'label' => 'Stato',
         'options' => [
-            'active' => 'Active',
-            'inactive' => 'Inactive',
-            'blocked' => 'Blocked',
+            'active' => 'Attivo',
+            'inactive' => 'Inattivo',
+            'blocked' => 'Bloccato',
         ],
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'last_login' => [
-        'label' => 'Last Login',
+        'label' => 'Ultimo Accesso',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
@@ -123,31 +107,31 @@ return [
         'description' => '',
     ],
     'language' => [
-        'label' => 'Language',
+        'label' => 'Lingua',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'timezone' => [
-        'label' => 'Time Zone',
+        'label' => 'Fuso Orario',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'password_expires_at' => [
-        'label' => 'Password Expiration',
+        'label' => 'Scadenza Password',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'verified' => [
-        'label' => 'Verified',
+        'label' => 'Verificato',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',
     ],
     'unverified' => [
-        'label' => 'Not Verified',
+        'label' => 'Non Verificato',
         'tooltip' => '',
         'helper_text' => '',
         'description' => '',

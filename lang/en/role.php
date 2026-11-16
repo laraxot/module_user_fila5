@@ -2,20 +2,18 @@
 
 declare(strict_types=1);
 
-// Display names of the role codes (spatie role `name`). The code stays the stored value.
 return [
-    'labels' => [
-        'super-admin' => 'Super admin',
-        'restaurant__admin' => 'Owner',
-        'admin' => 'Administrator',
-        'bar' => 'Bar',
-        'kitchen' => 'Kitchen',
-        'cashier' => 'Cashier',
-        'waiter' => 'Waiter',
-        'respHACCP' => 'HACCP manager',
+    'navigation' => [
+        'name' => 'Ruoli',
+        'plural' => 'Ruoli',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei ruoli e dei permessi associati',
+        ],
+        'label' => 'Ruoli',
+        'sort' => '26',
+        'icon' => 'user-role-animated',
     ],
-<<<<<<< .merge_file_jG3nGx
-=======
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
@@ -116,5 +114,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
->>>>>>> .merge_file_qWDUrn
 ];

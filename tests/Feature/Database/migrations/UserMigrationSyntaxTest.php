@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature\Database\Migrations;
 
 use Modules\User\Tests\TestCase;
+<<<<<<< .merge_file_EFHjK6
+=======
 use Modules\User\Models\SocialiteUser;
+>>>>>>> .merge_file_MrRdJx
 use PHPUnit\Framework\Assert;
 
 use function Safe\exec;
@@ -14,6 +17,8 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('User Migration Syntax', function (): void {
+<<<<<<< .merge_file_EFHjK6
+=======
     test('user model has one canonical owner migration', function (): void {
         $migrationPath = module_path('User', 'database/migrations');
         $migration = $migrationPath.'/2026_11_12_120000_create_users_table.php';
@@ -44,6 +49,7 @@ describe('User Migration Syntax', function (): void {
         Assert::assertSame('user', (new SocialiteUser())->getConnectionName());
     });
 
+>>>>>>> .merge_file_MrRdJx
     test('user migrations do not contain merge conflict markers', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);

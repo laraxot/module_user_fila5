@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_CYSt4D
+=======
 <<<<<<< .merge_file_mT0QGr
 =======
+>>>>>>> .merge_file_Dg6Bvy
 use Modules\User\Tests\TestCase;
 use Modules\User\Models\BaseTenant;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

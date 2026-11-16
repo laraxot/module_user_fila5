@@ -45,7 +45,7 @@ class ClientsRelationManager extends XotBaseRelationManager
     {
         return [
             'name' => TextColumn::make('name')
-                ->label('Name'),
+                ->label('Nome'),
             'id' => IDColumn::make('id')
                 ->label('Client ID')
                 ->copyable()
@@ -54,7 +54,7 @@ class ClientsRelationManager extends XotBaseRelationManager
             'secret' => TextColumn::make('secret')
                 ->label('Client Secret')
                 ->formatStateUsing(static fn (): string => 'Mostrato solo alla creazione')
-                ->tooltip('The secret is encrypted and cannot be recovered: copy the plain-text value when you create it.'),
+                ->tooltip('Il secret viene cifrato e non è più recuperabile: copia quello in chiaro al momento della creazione.'),
         ];
     }
 
@@ -68,7 +68,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         $actions = parent::getTableHeaderActions();
 
         $actions['associateExistingClient'] = Action::make('associateExistingClient')
-            ->label('Link existing client')
+            ->label('Associa client esistente')
             ->icon('heroicon-o-link')
             ->schema([
                 Select::make('client_id')
@@ -100,7 +100,7 @@ class ClientsRelationManager extends XotBaseRelationManager
 
                 if (! $ownerRecord instanceof AuthUser) {
                     Notification::make()
-                        ->title('Invalid user for the client association.')
+                        ->title('Utente non valido per l\'associazione del client.')
                         ->danger()
                         ->send();
 
@@ -115,7 +115,7 @@ class ClientsRelationManager extends XotBaseRelationManager
 
                 if ($client === null) {
                     Notification::make()
-                        ->title('Client not found.')
+                        ->title('Client non trovato.')
                         ->danger()
                         ->send();
 
@@ -131,7 +131,7 @@ class ClientsRelationManager extends XotBaseRelationManager
                 $client->save();
 
                 Notification::make()
-                    ->title('Client linked to the user.')
+                    ->title('Client associato all\'utente.')
                     ->success()
                     ->send();
             });
@@ -154,7 +154,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         return [
             'edit' => EditAction::make()
                 ->iconButton()
-                ->tooltip(trans('user::user.actions.edit_tooltip'))
+                ->tooltip(trans('user::user.actions.edit.tooltip'))
                 ->visible(static function (?Model $record) use ($me): bool {
                     if ($record === null) {
                         return false;
@@ -166,14 +166,10 @@ class ClientsRelationManager extends XotBaseRelationManager
             // BelongsToMany (BadMethodCallException). Si dissocia azzerando owner e user_id (issue #97).
             'dissociateClient' => Action::make('dissociateClient')
                 ->iconButton()
-<<<<<<< .merge_file_bVQpaC
-                ->tooltip(trans('user::user.actions.detach_tooltip'))
-=======
                 ->icon('heroicon-o-link-slash')
                 ->color('danger')
                 ->requiresConfirmation()
                 ->tooltip(trans('user::user.actions.detach.tooltip'))
->>>>>>> .merge_file_ENdak5
                 ->visible(static function (?Model $record) use ($me): bool {
                     if ($record === null) {
                         return false;

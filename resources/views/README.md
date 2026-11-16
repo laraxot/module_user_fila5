@@ -56,6 +56,9 @@ npm install
 npm run build
 ```
 
+<<<<<<< .merge_file_2nDU5w
+6. Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
+=======
 <<<<<<< .merge_file_3bAlGS
 6. Copia gli asset compilati:
 
@@ -65,6 +68,7 @@ npm run build
 =======
 6. Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
 >>>>>>> .merge_file_MGmMtG
+>>>>>>> .merge_file_uhbiQl
 
 ## Configurazione
 

@@ -7,7 +7,11 @@ use Symfony\Component\Finder\Finder;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_CWkGYM
+uses(\Modules\User\Tests\TestCase::class);
+=======
 uses(TestCase::class);
+>>>>>>> .merge_file_8UmJiG
 
 test('user boundaries depend on UserContract instead of BaseUser', function (): void {
     $root = dirname(__DIR__, 5);
