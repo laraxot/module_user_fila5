@@ -95,17 +95,15 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_GJp1d5
-        'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Azione per applicare i filtri'],
-        'created_at' => ['label' => 'Creato il'],
-=======
         'applyFilters' => [
             'label' => 'Applica Filtri',
             'tooltip' => 'Applica i filtri',
             'helper_text' => 'Applica i filtri selezionati',
             'description' => 'Azione per applicare i filtri',
         ],
->>>>>>> .merge_file_fcf4U2
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
     ],
     'actions' => [
         'import' => [

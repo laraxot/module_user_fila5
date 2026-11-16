@@ -100,11 +100,8 @@ return [
         ],
         'export' => [
             'icon' => 'export',
-<<<<<<< .merge_file_gi8Xtl
             'label' => 'Esporta',
             'tooltip' => 'export',
-=======
->>>>>>> .merge_file_iDGCqB
         ],
         'changePassword' => [
             'icon' => 'changePassword',

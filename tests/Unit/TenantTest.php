@@ -2,21 +2,12 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_CYSt4D
-=======
-<<<<<<< .merge_file_mT0QGr
-=======
->>>>>>> .merge_file_Dg6Bvy
-use Modules\User\Tests\TestCase;
-use Modules\User\Models\BaseTenant;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
->>>>>>> .merge_file_Mii9Oo
 use Filament\Models\Contracts\HasAvatar;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Spatie\MediaLibrary\HasMedia;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

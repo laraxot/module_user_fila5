@@ -2,17 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_kfazIo
-use Modules\User\Tests\TestCase;
-=======
-<<<<<<< .merge_file_MQy97j
-=======
-use Modules\User\Tests\TestCase;
->>>>>>> .merge_file_Z9AKRn
->>>>>>> .merge_file_D3p0YP
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

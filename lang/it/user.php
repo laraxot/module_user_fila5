@@ -315,7 +315,9 @@ return [
         'startDate' => [
             'tooltip' => '',
         ],
-<<<<<<< .merge_file_zPeePB
+        'user' => [
+            'label' => 'Utente',
+        ],
         'matr' => [
             'description' => 'matr',
             'label' => 'matr',
@@ -330,9 +332,6 @@ return [
         ],
         'state' => [
             'label' => 'Stato',
-        ],
-        'user' => [
-            'label' => 'Utente',
         ],
         'device' => [
             'label' => 'Dispositivo',
@@ -352,11 +351,6 @@ return [
             'helper_text' => 'created_until',
             'description' => 'created_until',
         ],
-=======
-        'user' => [
-            'label' => 'Utente',
-        ],
->>>>>>> .merge_file_rWkcJZ
     ],
     'actions' => [
         'create' => [
@@ -460,11 +454,8 @@ return [
         ],
         'export' => [
             'icon' => 'export',
-<<<<<<< .merge_file_zPeePB
             'label' => 'Esporta',
             'tooltip' => 'export',
-=======
->>>>>>> .merge_file_rWkcJZ
         ],
         'changePassword' => [
             'icon' => 'changePassword',
@@ -774,25 +765,5 @@ return [
         ],
     ],
     'label' => 'Utente',
-<<<<<<< .merge_file_FfvEyq
-=======
-<<<<<<< .merge_file_N23cbn
-    'sections' => [
-        'empty' => [
-<<<<<<< .merge_file_zPeePB
-            'heading' => 'empty',
-=======
-            'heading' => '',
->>>>>>> .merge_file_rWkcJZ
-            'label' => '',
-        ],
-        'worker' => [
-            'label' => 'Operatore',
-            'heading' => 'worker',
-        ],
-    ],
-=======
->>>>>>> .merge_file_uX26zG
->>>>>>> .merge_file_uHeFGQ
     'plural_label' => 'User (Plurale)',
 ];

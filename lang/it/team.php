@@ -78,62 +78,44 @@ return [
             'description' => '',
         ],
         'updated_at' => [
-<<<<<<< .merge_file_sZjJfT
-            'label' => 'Modificato il',
-=======
->>>>>>> .merge_file_XVmohQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Modificato il',
         ],
         'created_at' => [
-<<<<<<< .merge_file_sZjJfT
-            'label' => 'Creato il',
-=======
->>>>>>> .merge_file_XVmohQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Creato il',
         ],
         'users_count' => [
-<<<<<<< .merge_file_sZjJfT
-            'label' => 'Utenti',
-=======
->>>>>>> .merge_file_XVmohQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Utenti',
         ],
         'name' => [
-<<<<<<< .merge_file_sZjJfT
-            'label' => 'Nome',
-=======
->>>>>>> .merge_file_XVmohQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
         'recordId' => [
             'tooltip' => '',
         ],
         'personal_team' => [
-<<<<<<< .merge_file_sZjJfT
-            'label' => 'Team personale',
-=======
->>>>>>> .merge_file_XVmohQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Team personale',
         ],
         'role' => [
-<<<<<<< .merge_file_sZjJfT
+            'tooltip' => '',
             'label' => 'Ruolo',
             'description' => 'role',
             'helper_text' => 'role',
             'placeholder' => 'role',
-=======
->>>>>>> .merge_file_XVmohQ
-            'tooltip' => '',
         ],
         'description' => [
             'label' => '',

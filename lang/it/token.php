@@ -16,13 +16,10 @@ return [
     ],
     'fields' => [
         'name' => [
-<<<<<<< .merge_file_jZdoyF
-            'label' => 'Nome',
-=======
->>>>>>> .merge_file_rCeN4k
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
         'create' => [
             'tooltip' => '',
