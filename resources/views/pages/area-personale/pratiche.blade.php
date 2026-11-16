@@ -5,13 +5,13 @@ declare(strict_types=1);
 use Illuminate\Pagination\LengthAwarePaginator;
 use Livewire\Volt\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Modules\Cms\Http\Middleware\PageSlugMiddleware;
 use Modules\Fixcity\Actions\BuildAuthenticatedUserTicketsQueryAction;
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 name('area-personale.pratiche');
-middleware(PageSlugMiddleware::class);
+// PTVX: Cms assente — auth standard, nessun middleware del modulo Cms.
+middleware(['auth']);
 
 new class extends Component {
     /** @var LengthAwarePaginator<int, \Modules\Fixcity\Models\Ticket> */

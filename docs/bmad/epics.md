@@ -1,3 +1,11 @@
+---
+title: "Epic BMAD — User"
+type: epics
+status: active
+updated: 2026-11-16
+qmd: "epic BMAD User audit policy ruoli permessi"
+---
+
 # User Module — Epics for Perfection
 
 ---
@@ -293,3 +301,29 @@ Epic 7 (DX) ────────────┤                            �
 
 *Epics generated via BMAD methodology*
 *Next: Sprint planning with story breakdown*
+
+## Epic da audit 2026-11-16
+
+Ogni story nasce da un finding di [audits/user-audit.md](./audits/user-audit.md); prima del fix:
+lock (`bashscripts/lock/lock.sh`), Pest rosso, PHPStan max, poi `unlock.sh`. Nessun `migrate:fresh`, solo migrate additivo.
+
+### Epic USER-A — Chiudere l'escalation su ruoli e permessi (P0)
+
+| Story (da creare) | Cosa | Criterio di accettazione |
+|---|---|---|
+| `user-policy-role-permission-super-admin-only` | `before()` super-admin only su Role/Permission | Pest: mock `user::admin` → `before` null, `create/update/delete` false |
+| `user-permissionpolicy-deny-all` | `PermissionPolicy` tutto `false` | Pest su `PermissionPolicy` + `user::operator` non crea Permission |
+
+### Epic USER-B — Autorizzazione senza effetti collaterali (P1)
+
+| Story (da creare) | Cosa | Criterio di accettazione |
+|---|---|---|
+| `user-seed-permissions-no-runtime-create` | Rimuovere `hasPermissionToOrCreate` dalle 18 policy | nessun `findOrCreate` nel percorso `Gate::check`; seeder additivo |
+| `user-admin-roles-config` | Ruoli admin da config, via `restaurant::admin` | `rg restaurant Modules/User/app` = 0 |
+
+### Epic USER-C — Igiene (P2)
+
+| Story (da creare) | Cosa | Criterio di accettazione |
+|---|---|---|
+| `user-remove-dead-policy-and-labels` | Eliminare `UserPermissionBasePolicy`, blocco commentato `BaseUser`, 24 label letterali, 2 extends Filament diretti | PHPStan 0; nessuna label letterale in `app/` |
+
