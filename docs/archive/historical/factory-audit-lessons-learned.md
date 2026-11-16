@@ -1,6 +1,5 @@
 ---
 title: "Factory Audit Lessons Learned - User Module"
-<<<<<<< .merge_file_ScabS2
 type: concept
 tags: [factory, audit, lessons, learned]
 created: 2026-07-14
@@ -19,14 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "factory audit lessons learned - user module user"
----
->>>>>>> .merge_file_8WdBWX
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER
@@ -128,15 +119,9 @@ class DeviceProfileFactory extends DeviceUserFactory
 
 ## 🔗 COLLEGAMENTI
 
-<<<<<<< .merge_file_ScabS2
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./readme.md)
-=======
-- [Factory Lessons Learned CRITICAL](../../../project_docs/factory-lessons-learned-critical.md)
-- [Factory Creation Status](./factory-creation-status.md)
-- [User Module README](./README.md)
->>>>>>> .merge_file_8WdBWX
 
 ## ⚠️ REGOLE DA NON DIMENTICARE MAI
 

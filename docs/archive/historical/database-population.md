@@ -1,6 +1,5 @@
 ---
 title: "Popolamento Database - Modulo User"
-<<<<<<< .merge_file_IkVLSm
 type: concept
 tags: [database, population]
 created: 2026-07-14
@@ -19,15 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
-type: note
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "popolamento database - modulo user user"
-status: superseded
-superseded_by: ../../database-population.md
----
->>>>>>> .merge_file_fpktmD
 # Popolamento Database - Modulo User
 
 ## Panoramica
@@ -319,11 +309,7 @@ echo "User roles: " . $user->roles()->count() . "\n";
 
 ## Collegamenti
 
-<<<<<<< .merge_file_IkVLSm
 - [README Modulo User](./readme.md)
-=======
-- [README Modulo User](./README.md)
->>>>>>> .merge_file_fpktmD
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
 - [Database Schema](./database-schema.md)

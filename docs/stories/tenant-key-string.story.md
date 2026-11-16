@@ -46,11 +46,6 @@ così da **poter associare gli utenti ai tenant (`$user->tenants()`) e far funzi
   deve mantenere la generazione slug, la validazione UUID e il route binding Filament
   configurato con `slugAttribute: 'slug'`; implementazione in corso, il file model è
   temporaneamente lockato dalla story `user-model-relationships-to-traits`.
-<<<<<<< .merge_file_Fz8UHL
-<<<<<<< .merge_file_9oR95v
-=======
-=======
->>>>>>> .merge_file_OKr3qz
 
 ## Effetto collaterale su un figlio con chiave intera (trovato il 2026-11-10)
 
@@ -72,7 +67,3 @@ sezione "Seguito 2026-11-10".
 Risolto lato Quaeris il 2026-11-10: `Customer::uniqueIds()` restituisce `[]` (estensione prevista da Laravel
 per `HasUuids`), `BaseTenant` non toccata. Chi aggiunge un altro figlio di `BaseTenant` con chiave intera deve
 fare lo stesso. Test: `laravel/Modules/Quaeris/tests/Unit/Models/CustomerIntegerKeyTest.php`.
-<<<<<<< .merge_file_Fz8UHL
->>>>>>> .merge_file_nawHSC
-=======
->>>>>>> .merge_file_OKr3qz

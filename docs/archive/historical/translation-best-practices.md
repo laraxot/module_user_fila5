@@ -1,6 +1,5 @@
 ---
 title: "Best Practices per le Traduzioni"
-<<<<<<< .merge_file_ectC2H
 type: concept
 tags: [translation, best, practices]
 created: 2026-07-14
@@ -19,14 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "best practices per le traduzioni user"
----
->>>>>>> .merge_file_79N2c9
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -170,12 +161,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 
 ## Collegamenti Correlati
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
-<<<<<<< .merge_file_ectC2H
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module-structure-2.md) 
-=======
-- [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](./module-structure.md) 
->>>>>>> .merge_file_79N2c9
