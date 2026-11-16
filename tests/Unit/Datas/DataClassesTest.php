@@ -18,11 +18,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 test('PermissionData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PermissionData::from([
-=======
     expect(PermissionData::from([
->>>>>>> .merge_file_gf0pVY
         'models' => PermissionModelsData::from(['permission' => 'Modules\User\Models\Permission', 'role' => 'Modules\User\Models\Role']),
         'table_names' => PermissionTableNamesData::from(['permissions' => 'permissions', 'roles' => 'roles', 'model_has_permissions' => 'model_has_permissions', 'model_has_roles' => 'model_has_roles', 'role_has_permissions' => 'role_has_permissions']),
         'column_names' => PermissionColumnNamesData::from(['model_morph_key' => 'model_id']),
@@ -47,11 +43,7 @@ test('PermissionData can be instantiated', function () {
 });
 
 test('PermissionModelsData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PermissionModelsData::from([
-=======
     expect(PermissionModelsData::from([
->>>>>>> .merge_file_gf0pVY
         'permission' => 'Modules\User\Models\Permission',
         'role' => 'Modules\User\Models\Role',
     ]))->toEqual(PermissionModelsData::from([
@@ -62,11 +54,7 @@ test('PermissionModelsData can be instantiated', function () {
 });
 
 test('PermissionTableNamesData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PermissionTableNamesData::from([
-=======
     expect(PermissionTableNamesData::from([
->>>>>>> .merge_file_gf0pVY
         'permissions' => 'permissions',
         'roles' => 'roles',
         'model_has_permissions' => 'model_has_permissions',
@@ -83,11 +71,7 @@ test('PermissionTableNamesData can be instantiated', function () {
 });
 
 test('PermissionColumnNamesData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PermissionColumnNamesData::from([
-=======
     expect(PermissionColumnNamesData::from([
->>>>>>> .merge_file_gf0pVY
         'model_morph_key' => 'model_id',
     ]))->toEqual(PermissionColumnNamesData::from([
         'model_morph_key' => 'model_id',
@@ -96,11 +80,7 @@ test('PermissionColumnNamesData can be instantiated', function () {
 });
 
 test('PermissionCacheData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PermissionCacheData::from([
-=======
     expect(PermissionCacheData::from([
->>>>>>> .merge_file_gf0pVY
         'expiration_time' => DateInterval::createFromDateString('24 hours'),
         'key' => 'spatie.permission.cache',
         'store' => 'default',
@@ -113,15 +93,11 @@ test('PermissionCacheData can be instantiated', function () {
 });
 
 test('DeviceData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    DeviceData::from([
-=======
     expect(DeviceData::from([
         'id' => 1,
         'name' => 'Test Device',
         'user_id' => 1,
     ]))->toEqual(DeviceData::from([
->>>>>>> .merge_file_gf0pVY
         'id' => 1,
         'name' => 'Test Device',
         'user_id' => 1,
@@ -130,11 +106,7 @@ test('DeviceData can be instantiated', function () {
 });
 
 test('SocialProviderData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    SocialProviderData::from([
-=======
     expect(SocialProviderData::from([
->>>>>>> .merge_file_gf0pVY
         'id' => 1,
         'name' => 'google',
         'active' => true,
@@ -147,11 +119,7 @@ test('SocialProviderData can be instantiated', function () {
 });
 
 test('FilamentUserData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    FilamentUserData::from([
-=======
     expect(FilamentUserData::from([
->>>>>>> .merge_file_gf0pVY
         'id' => 1,
         'name' => 'Test User',
     ]))->toEqual(FilamentUserData::from([
@@ -162,14 +130,10 @@ test('FilamentUserData can be instantiated', function () {
 });
 
 test('SuperAdminData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    SuperAdminData::from([
-=======
     expect(SuperAdminData::from([
         'id' => 1,
         'name' => 'Super Admin',
     ]))->toEqual(SuperAdminData::from([
->>>>>>> .merge_file_gf0pVY
         'id' => 1,
         'name' => 'Super Admin',
     ]));
@@ -177,24 +141,16 @@ test('SuperAdminData can be instantiated', function () {
 });
 
 test('FilamentShieldData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    FilamentShieldData::from([
-=======
     expect(FilamentShieldData::from([
         'enabled' => true,
     ]))->toEqual(FilamentShieldData::from([
->>>>>>> .merge_file_gf0pVY
         'enabled' => true,
     ]));
 
 });
 
 test('PasswordData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    PasswordData::from([
-=======
     expect(PasswordData::from([
->>>>>>> .merge_file_gf0pVY
         'min' => 8,
         'max' => 100,
     ]))->toEqual(PasswordData::from([
@@ -205,14 +161,10 @@ test('PasswordData can be instantiated', function () {
 });
 
 test('ShieldResourceData can be instantiated', function () {
-<<<<<<< .merge_file_88vFLf
-    ShieldResourceData::from([
-=======
     expect(ShieldResourceData::from([
         'name' => 'users',
         'enabled' => true,
     ]))->toEqual(ShieldResourceData::from([
->>>>>>> .merge_file_gf0pVY
         'name' => 'users',
         'enabled' => true,
     ]));

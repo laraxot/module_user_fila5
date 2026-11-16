@@ -1,11 +1,32 @@
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
+<<<<<<< .merge_file_ehQ6tP
+type: concept
+tags: [navigation, translations, fixes, january]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation-translations-fixes-january correzioni traduzioni navigation - gennaio 2026"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "correzioni traduzioni navigation - gennaio 2026 user"
 ---
+>>>>>>> .merge_file_gsqFn6
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -191,9 +212,18 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ## Collegamenti
 
+<<<<<<< .merge_file_ehQ6tP
+- [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
+- [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./readme.md)
+=======
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
+>>>>>>> .merge_file_gsqFn6
 
 ## Note Tecniche
 

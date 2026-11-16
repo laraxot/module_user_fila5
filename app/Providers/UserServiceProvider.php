@@ -12,11 +12,8 @@ use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Cache\RateLimiting\Limit;
-<<<<<<< .merge_file_IHNJCV
-=======
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Hashing\Hasher;
->>>>>>> .merge_file_vMAGxa
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -24,10 +21,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Validation\Rules\Password;
 use Modules\Notify\Emails\SpatieEmail;
-<<<<<<< .merge_file_IHNJCV
-=======
 use Modules\User\Actions\Auth\BuildActiveUserProviderAction;
->>>>>>> .merge_file_vMAGxa
 use Modules\User\Actions\Auth\BuildApiLoginLimitAction;
 use Modules\User\Actions\Auth\BuildPasswordResetUrlAction;
 use Modules\User\Actions\Auth\EnsureResetPasswordMailTemplateAction;
@@ -85,13 +79,12 @@ class UserServiceProvider extends XotBaseServiceProvider
             // Il template `reset-password` non e' seminato: SpatieEmail lo creerebbe con il testo di registrazione (DCP-285, D-05).
             app(EnsureResetPasswordMailTemplateAction::class)->execute();
             $email = new SpatieEmail($notifiable, EnsureResetPasswordMailTemplateAction::SLUG);
+            $emailAddress = app(ResolveNotifiableEmailAction::class)->execute($notifiable);
             $email->mergeData([
                 'token' => $token,
-                // Radice da `app.url`, non dall'header Host della richiesta (SEC-007).
-                'reset_password_url' => app(BuildPasswordResetUrlAction::class)->execute($token),
+                // Radice da `app.url`, non dall'header Host della richiesta (SEC-007); email precompilata nella pagina.
+                'reset_password_url' => app(BuildPasswordResetUrlAction::class)->execute($token, $emailAddress),
             ]);
-
-            $emailAddress = app(ResolveNotifiableEmailAction::class)->execute($notifiable);
 
             if ($emailAddress === null) {
                 // Un reset password senza destinatario non arriva a nessuno: va registrato per trovare il modello senza email.
@@ -161,8 +154,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
-<<<<<<< .merge_file_IHNJCV
-=======
      * Sostituisce il driver `eloquent` dei provider utenti con quello che esclude gli account cancellati (SEC-05).
      * Il driver custom ha la precedenza su quello del framework (`AuthManager::createUserProvider`), quindi vale per ogni
      * `config/<tenant>/auth.php` e per la guard `api` di Passport. Dettagli in {@see BuildActiveUserProviderAction}.
@@ -200,7 +191,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
->>>>>>> .merge_file_vMAGxa
      * Limiter nominato `user-login` per `POST /api/user/login` (D-08, DCP-282): soglie e messaggio in {@see BuildApiLoginLimitAction}.
      */
     protected function registerApiLoginRateLimiter(): void

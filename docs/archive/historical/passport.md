@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_A3GBOQ
+module: theme
+topic: passport
+canonical: ../../../Themes/docs/shared-components/passport-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
+=======
 title: "Laravel Passport Documentation (Version 13.4.x)"
 type: note
 status: draft
@@ -119,3 +136,4 @@ php artisan passport:client --personal
 
 ---
 *Questa documentazione riflette la versione stabile 13.4.x di Laravel Passport (stato: gennaio 2026).*
+>>>>>>> .merge_file_pV5TuA

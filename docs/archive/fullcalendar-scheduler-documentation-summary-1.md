@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_OWLt0q
+=======
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "fullcalendar scheduler - documentazione completa user"
 ---
+>>>>>>> .merge_file_OMVSkF
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -40,7 +43,11 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
+<<<<<<< .merge_file_OWLt0q
+#### 4. [Scheduler License Key](./scheduler_license_key.md)
+=======
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+>>>>>>> .merge_file_OMVSkF
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

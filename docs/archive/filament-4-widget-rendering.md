@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_XwFD1E
+=======
 ---
 title: "Guida Rendering Widget Filament 4 - Modulo User"
 type: note
@@ -7,6 +9,7 @@ qmd: "guida rendering widget filament 4 - modulo user user"
 status: superseded
 superseded_by: ../filament-4-widget-rendering.md
 ---
+>>>>>>> .merge_file_LhOJds
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  
@@ -387,7 +390,11 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
+<<<<<<< .merge_file_XwFD1E
+- [Laraxot Widget Rules](./auth_widget_rules.md)
+=======
 - [Laraxot Widget Rules](./auth-widget-rules.md)
+>>>>>>> .merge_file_LhOJds
 
 ## 🎯 Conclusione
 

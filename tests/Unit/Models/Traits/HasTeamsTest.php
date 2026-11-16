@@ -111,14 +111,10 @@ test('has teams trait integration with real user model', function (): void {
 });
 
 test('has teams trait user model exposes teams relation', function (): void {
-<<<<<<< .merge_file_zz6LZd
-    Assert::assertSame(BelongsToMany::class, get_class((new User)->teams()));
-=======
     // Su BaseUser `teams()` e' quella di Spatie (MorphToMany su model_has_role, sottoclasse di
     // BelongsToMany); l'appartenenza Jetstream-style e' `membershipTeams()` su team_user.
     Assert::assertSame(config('permission.table_names.model_has_roles'), (new User)->teams()->getTable());
     Assert::assertSame('team_user', (new User)->membershipTeams()->getTable());
->>>>>>> .merge_file_92lJDe
 });
 
 test('has teams trait empty teams collection', function (): void {

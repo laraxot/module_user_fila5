@@ -11,25 +11,6 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 test('AssignRoleCommand can be instantiated', function () {
-<<<<<<< .merge_file_s0QD09
-    new AssignRoleCommand;
-});
-
-test('ChangeTypeCommand can be instantiated', function () {
-    new ChangeTypeCommand;
-});
-
-test('SuperAdminCommand can be instantiated', function () {
-    new SuperAdminCommand;
-});
-
-test('CreateTeamCommand can be instantiated', function () {
-    new CreateTeamCommand;
-});
-
-test('CreateTenantCommand can be instantiated', function () {
-    new CreateTenantCommand;
-=======
     expect(new AssignRoleCommand)->toEqual(new AssignRoleCommand);
 });
 
@@ -47,5 +28,4 @@ test('CreateTeamCommand can be instantiated', function () {
 
 test('CreateTenantCommand can be instantiated', function () {
     expect(new CreateTenantCommand)->toEqual(new CreateTenantCommand);
->>>>>>> .merge_file_pnyBJW
 });

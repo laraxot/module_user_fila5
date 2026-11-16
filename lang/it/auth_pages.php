@@ -36,7 +36,7 @@ return [
     ],
     'verify' => [
         'sign_out' => [
-            'label' => 'esci',
+            'label' => 'Esci',
         ],
         'resent' => [
             'message' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
@@ -49,10 +49,7 @@ return [
         ],
         'request_another' => [
             'label' => 'clicca qui per richiederne un altro',
-<<<<<<< .merge_file_TCVTXw
-=======
             'sending' => 'invio in corso…',
->>>>>>> .merge_file_dFrO1y
         ],
     ],
     'password_confirm' => [

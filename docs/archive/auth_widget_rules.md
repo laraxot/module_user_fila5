@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_FKFEk4
+# Regole per Widget di Autenticazione
+
+## ERRORE CRITICO DA NON RIPETERE MAI
+
+**NON usare mai componenti Blade senza verificarne l'esistenza nella documentazione ufficiale!**
+
+=======
 ---
 <<<<<<< .merge_file_ohOtdR
 title: "Regole per Widget di Autenticazione"
@@ -23,6 +31,7 @@ qmd: "auth_widget_rules alias superseded"
 Documento identico al canonico: [auth-widget-rules.md](historical/auth-widget-rules.md).
 
 <<<<<<< .merge_file_ohOtdR
+>>>>>>> .merge_file_ZWK4gf
 ### Componenti Filament NON Disponibili
 
 ❌ **NON USARE MAI**:
@@ -161,6 +170,12 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
+<<<<<<< .merge_file_FKFEk4
+- [Widget Structure](widgets_structure.md)
+- [Filament Best Practices](filament_best_practices.md)
+- [Authentication Architecture](authentication.md)
+- [Security Guidelines](security_guidelines.md)
+=======
 - [Widget Structure](widgets-structure.md)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](../authentication.md)
@@ -168,3 +183,4 @@ tests/Feature/Filament/Widgets/
 =======
 Canonico: `laravel/Modules/User/docs/archive/historical/auth-widget-rules.md`. Qui non ci sono istruzioni: seguire il file collegato.
 >>>>>>> .merge_file_8Jxiwu
+>>>>>>> .merge_file_ZWK4gf

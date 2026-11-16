@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_pQgDSF
+=======
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: note
@@ -7,6 +9,7 @@ qmd: "fullcalendar scheduler - documentazione completa user"
 status: superseded
 superseded_by: ../fullcalendar-scheduler-documentation-summary-1.md
 ---
+>>>>>>> .merge_file_9D8vOo
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -41,7 +44,11 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
+<<<<<<< .merge_file_pQgDSF
+#### 4. [Scheduler License Key](./scheduler_license_key.md)
+=======
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+>>>>>>> .merge_file_9D8vOo
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

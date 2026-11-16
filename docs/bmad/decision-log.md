@@ -1,4 +1,6 @@
 ---
+title: "Decision log — SuperAdmin widget"
+
 title: "Decision log: SuperAdmin widget"
 type: decision-log
 module: User
@@ -11,11 +13,14 @@ related:
   - ./architecture.md
   - ./livewire-inventory.md
   - ./epics.md
+---
+
+# Decision log — SuperAdmin Livewire → Filament widget
+
   - ./filament-blueprint.md
 updated: 2026-10-26
 tags: [docs, user, bmad]
 qmd: "decision log   superadmin livewire → filament widget user"
----
 
 # Decision log: User
 
@@ -229,6 +234,20 @@ catalogo `auth`.
 
 **Scartato:** widget senza round-trip Livewire; `/admin` ancora rotto; UI/Lang in questa campagna; Socialite P3; nuova classe social 1:1; 303 team come epic proprio.
 
+## [2026-09-21] Icone SuperAdminWidget invisibili — root cause morph map
+
+**Sintomo:** `SuperAdminWidget` renderizzava `<div>` vuota per utenti super-admin — le icone `@svg('user-super-admin')`/`user-negate-super-admin` non apparivano mai nel chrome `USER_MENU_BEFORE`.
+
+**Root cause (verificata, non ipotizzata):** `IsProfileTrait::isSuperAdmin()` chiama `$this->user->hasRole('super-admin')`, dove `Profile::user` risolve `Modules\Quaeris\Models\User` (la user class canonica, `XotData::getUserClass()`). La morph map registrata da `TenantServiceProvider::buildMorphMap()` leggeva `config('morph_map')` con `'user' => Modules\User\Models\User` (classe padre) — Quaeris\ServiceProvider la mappava correttamente a `Quaeris\Models\User` in `boot()`, ma il provider Tenant sovrascriveva dopo. Risultato: `Quaeris\User::getMorphClass()` = FQCN, mentre `model_has_role.model_type` contiene `'user'` → query `roles()` filtrava il morph sbagliato → ruoli invisibili → widget vuoto.
+
+**Decision:** in `buildMorphMap()` forzare `$typedMap['user'] = XotData::make()->getUserClass()` dopo il loop config — la chiave 'user' è sempre la classe canonica dell'install, mai la voce stantia. Allineato `config/localhost/morph_map.php`.
+
+**Data debt:** `model_has_role` contiene ancora 40 righe con `model_type='Modules\Quaeris\Models\User'` (scritte prima del fix) — richiedono `UPDATE model_has_role SET model_type='user' WHERE model_type='Modules\Quaeris\Models\User'`. Non eseguita: scrittura DB da approvare.
+
+**Verifica:** tinker — `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
+
+**Rationale:** regola contract-pattern — i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
+
 ## [2026-09-21] Icone SuperAdminWidget invisibili: root cause morph map
 
 **Sintomo:** `SuperAdminWidget` renderizzava `<div>` vuota per utenti super-admin: le icone `@svg('user-super-admin')`/`user-negate-super-admin` non apparivano mai nel chrome `USER_MENU_BEFORE`.
@@ -262,6 +281,8 @@ Livewire (`livewire-widget-*` prefix accanto ai file scoped Epic 9).
 
 **Perche' Epic 12 e non 11:** l'epic 11 esiste gia' come story singola
 (`11.1.team-change-widget.story.md`, correttamente `superseded_by:
+10.1`) — numero occupato anche se la story e' superseded. 9 e 10 sono
+
 10.1`): numero occupato anche se la story e' superseded. 9 e 10 sono
 attivi. Il primo numero libero verificato e' 12.
 
@@ -281,6 +302,8 @@ nessuna story esistente (9.x/10.x/11.1) rinumerata o cancellata, nessuna
 azione DB. Le 24 nuove story sono tutte `status: backlog`.
 
 **Fonte:** 5 ricerche parallele in sola lettura (`Agent
+subagent_type: fork`), 2026-09-22 — dettaglio completo in
+
 subagent_type: fork`), 2026-09-22: dettaglio completo in
 [module-excellence-brainstorming.md](./module-excellence-brainstorming.md).
 
@@ -288,12 +311,16 @@ subagent_type: fork`), 2026-09-22: dettaglio completo in
 
 **Decision:** scoperta a posteriori una seconda campagna whole-module
 (`perfection-*`, stesso scope di `module-excellence`, prodotta in parallelo
+senza coordinamento — verosimilmente un fork Agent della stessa richiesta
+
 senza coordinamento: verosimilmente un fork Agent della stessa richiesta
 utente). Nessun file di `module-excellence` toccato: Epic 12-14 restano suoi.
 La campagna `perfection` ha rinumerato il proprio draft (Epic 12-16 →
 15-19, mai promosso a file story individuali) per evitare collisione,
 mantenendo Epic 11 (sicurezza) invariata. Dettaglio completo in
 [perfection-decision-log.md](./perfection-decision-log.md).
+
+**Rationale:** stesso principio gia' applicato sopra per Epic 12 vs 11 —
 
 **Rationale:** stesso principio gia' applicato sopra per Epic 12 vs 11 -
 primo numero libero verificato sul filesystem, non assunto dall'indice
@@ -325,9 +352,13 @@ individuali gia' scritti prima della scoperta.
 `filament-ux-*` sono un artefatto orfano della fase *precedente* alla
 rinumerazione di quella sessione (scritti insieme ai file
 `bmad/filament-ux-*.md`, prima che la campagna adottasse il prefisso
-`perfection-` ed Epic 15): la sua stessa nota di verifica li dichiara
+`perfection-` ed Epic 15) — la sua stessa nota di verifica li dichiara
 implicitamente superati ("le altre story Epic 12-16 non hanno file
 dedicato"), ma non li ha rinominati/rimossi fisicamente.
+
+**Decision:** nessuna azione su quei 6 file da questa sessione — non sono di
+
+`perfection-` ed Epic 15): la sua stessa nota di verifica li dichiara
 
 **Decision:** nessuna azione su quei 6 file da questa sessione: non sono di
 nostra proprieta', potrebbero essere ancora in scrittura, e la regola
@@ -335,6 +366,8 @@ progetto vieta di cancellare/rinominare documentazione di un'altra sessione
 senza conferma. I nostri 24 file (`12.1.phpstan-docs-corruption-cleanup.md`
 ... `14.8.provtv-remote-issue-tracker-divergence.story.md`) restano invariati
 e sono gia' l'unico set con tracciamento GitHub reale (issue #103, #105-116,
+discussion #104) per l'epic 12-14 — nessuna rinumerazione necessaria da parte
+
 discussion #104) per l'epic 12-14: nessuna rinumerazione necessaria da parte
 nostra, confermato anche dalla verifica indipendente dell'altra sessione.
 Segnalato qui solo come nota di igiene per una futura story di pulizia
@@ -343,10 +376,12 @@ story dedicata, non aperta ora).
 
 **Verifica:** `ls ../stories/ | grep -oE '^1[1-4]\.[0-9]+'` mostra le uniche
 collisioni residue essere quei 6 file orfani `12.x` + il file dash `11.1-*`
-contro il gia'-superseded `11.1.team-change-widget.story.md`: entrambe
+contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
+
+contro il gia'-superseded `11.1.team-change-widget.story.md`: entrambe
 
 ## [2026-10-18] LaravelLocalization: firma dei metodi URL
 

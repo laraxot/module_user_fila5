@@ -1,5 +1,28 @@
 ---
 title: "Analisi Approfondita del Modulo User"
+<<<<<<< .merge_file_sxdlKk
+type: concept
+tags: [filosofia, modulo, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filosofia-modulo-user analisi approfondita del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Analisi Approfondita del Modulo User
+
+> **Generato**: 2025-12-24
+=======
 type: note
 status: draft
 updated: 2026-10-27
@@ -9,6 +32,7 @@ qmd: "analisi approfondita del modulo user user"
 # Analisi Approfondita del Modulo User
 
 > **Generato**: [DATE]
+>>>>>>> .merge_file_egTab2
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo User
 
 ---
@@ -481,5 +505,9 @@ BaseUser implements:
 
 - [Spatie Permission Documentation](https://spatie.be/docs/laravel-permission)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
+<<<<<<< .merge_file_sxdlKk
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
+=======
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business-logic-deep-dive.md)
+>>>>>>> .merge_file_egTab2
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

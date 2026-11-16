@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-use Modules\User\Tests\TestCase;
-use Modules\User\Models\BaseTenant;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Filament\Models\Contracts\HasAvatar;
-use Spatie\MediaLibrary\HasMedia;
 use Modules\User\Contracts\TenantContract;
-use Spatie\Sluggable\SlugOptions;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
+use Spatie\MediaLibrary\HasMedia;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
@@ -63,21 +60,13 @@ test('tenant slug is automatically generated', function (): void {
 });
 
 test('tenant has users relationship', function (): void {
-<<<<<<< .merge_file_0wWcR8
-    expect($this->tenant)->toHaveMethod('users');
-=======
     expect(method_exists($this->tenant, 'users'))->toBeTrue();
->>>>>>> .merge_file_UQCMOE
 
     expect($this->tenant->users()->getRelated())->toBeInstanceOf(User::class);
 });
 
 test('tenant has members relationship', function (): void {
-<<<<<<< .merge_file_0wWcR8
-    expect($this->tenant)->toHaveMethod('members');
-=======
     expect(method_exists($this->tenant, 'members'))->toBeTrue();
->>>>>>> .merge_file_UQCMOE
 
     expect($this->tenant->members()->getRelated())->toBeInstanceOf(User::class);
 });
@@ -91,21 +80,13 @@ test('tenant implements required interfaces', function (): void {
 });
 
 test('tenant has slug options configuration', function (): void {
-<<<<<<< .merge_file_0wWcR8
-    expect($this->tenant)->toHaveMethod('getSlugOptions');
-=======
     expect(method_exists($this->tenant, 'getSlugOptions'))->toBeTrue();
->>>>>>> .merge_file_UQCMOE
 
     expect($this->tenant->getSlugOptions()->slugField)->toBe('slug');
 });
 
 test('tenant has filament avatar url method', function (): void {
-<<<<<<< .merge_file_0wWcR8
-    expect($this->tenant)->toHaveMethod('getFilamentAvatarUrl');
-=======
     expect(method_exists($this->tenant, 'getFilamentAvatarUrl'))->toBeTrue();
->>>>>>> .merge_file_UQCMOE
 
     $avatarUrl = $this->tenant->getFilamentAvatarUrl();
     expect($avatarUrl)->toBeNull(); // Default implementation returns null
@@ -126,12 +107,8 @@ test('tenant has correct primary key', function (): void {
 });
 
 test('tenant has correct connection', function (): void {
-<<<<<<< .merge_file_0wWcR8
-    expect($this->tenant->getConnectionName())->toBe('default');
-=======
     // I modelli del modulo User vivono sulla connessione dedicata 'user' (BaseModel).
     expect($this->tenant->getConnectionName())->toBe('user');
->>>>>>> .merge_file_UQCMOE
 });
 
 test('tenant can be updated', function (): void {

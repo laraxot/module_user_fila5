@@ -59,10 +59,7 @@ return [
         ],
         'request_another' => [
             'label' => 'haz clic aquí para solicitar otro',
-<<<<<<< .merge_file_t3C3Yu
-=======
             'sending' => 'enviando…',
->>>>>>> .merge_file_w2xPbQ
         ],
     ],
 ];

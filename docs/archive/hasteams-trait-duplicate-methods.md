@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_tTNYTg
+=======
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "analisi metodi duplicati in hasteams (trait) user"
 ---
+>>>>>>> .merge_file_e0A6HK
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -80,11 +83,19 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [ ] Verificare la compatibilità con i moduli che usano il trait
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_tTNYTg
+- [Indice documentazione User](./INDEX.md)
+- [Modello User](./Models/User.md)
+- [Best practices trait](./best-practices-traits.md)
+- [Refactor checklist](./refactor-checklist.md)
+- [XotData helper](../../Xot/docs/standards/README.md)
+=======
 - [Indice documentazione User](./index.md)
 - [Modello User](./Models/User.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../../Xot/docs/standards/README.md)
+>>>>>>> .merge_file_e0A6HK
 
 ---
 

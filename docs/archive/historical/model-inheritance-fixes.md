@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_QrEjGd
+module: theme
+topic: model-inheritance-fixes
+canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
+=======
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: note
 status: draft
@@ -588,3 +605,4 @@ cd Modules/User
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
+>>>>>>> .merge_file_1EZ0Rx

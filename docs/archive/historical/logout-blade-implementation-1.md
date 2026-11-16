@@ -1,3 +1,16 @@
+<<<<<<< .merge_file_Y8RpzZ
+# Implementazione Corretta di logout.blade.php
+
+## Collegamenti correlati
+- [Documentazione centrale](../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Errors](./VOLT_ERRORS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+=======
 ---
 title: "Implementazione Corretta di logout.blade.php"
 type: note
@@ -17,6 +30,7 @@ qmd: "implementazione corretta di logout.blade.php user"
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Volt Logout Action](./volt-logout-action.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
+>>>>>>> .merge_file_3n7n1A
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

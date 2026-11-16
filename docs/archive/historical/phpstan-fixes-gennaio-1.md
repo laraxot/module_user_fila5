@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_LPGdXu
+=======
 ---
 title: "PHPStan Fixes - Modulo User - Gennaio 2025"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "phpstan fixes - modulo user - gennaio 2025 user"
 ---
+>>>>>>> .merge_file_thplWi
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -219,9 +222,15 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
+<<<<<<< .merge_file_LPGdXu
+- [README.md Modulo User](./readme.md)
+- [Authentication Guide](./authentication.md)
+- [Best Practices](./best-practices.md)
+=======
 - [README.md Modulo User](./README.md)
 - [Authentication Guide](../../authentication.md)
 - [Best Practices](../../best-practices.md)
+>>>>>>> .merge_file_thplWi
 
 ### **Risorse Esterne**
 - [Laravel Authentication](https://laravel.com/docs/authentication)

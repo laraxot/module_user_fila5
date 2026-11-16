@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_eBBX96
+module: theme
+topic: logout-blade-conclusions
+canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
+=======
 title: "Conclusioni e Raccomandazioni per logout.blade.php"
 type: note
 status: draft
@@ -186,3 +203,4 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 ## Conclusione
 
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto <nome progetto> per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
+>>>>>>> .merge_file_Fu5OZF

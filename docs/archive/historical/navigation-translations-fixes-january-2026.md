@@ -1,4 +1,32 @@
 ---
+<<<<<<< .merge_file_KCxt7j
+title: "Correzioni Traduzioni Navigation - Gennaio 2026"
+type: concept
+tags: [navigation, translations, fixes, january]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation-translations-fixes-january-2026 correzioni traduzioni navigation - gennaio 2026"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Correzioni Traduzioni Navigation - Gennaio 2026
+
+## Data Intervento
+**2026-01-22** - Sistemazione completa traduzioni navigation secondo regole DRY + KISS
+
+## Problema Identificato
+
+=======
 <<<<<<< .merge_file_gPkcLj
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: note
@@ -23,6 +51,7 @@ qmd: "navigation-translations-fixes-january-2026 alias superseded"
 Documento identico al canonico: [navigation-translations-fixes-january.md](navigation-translations-fixes-january.md).
 
 <<<<<<< .merge_file_gPkcLj
+>>>>>>> .merge_file_0nZovK
 Tutti i file di traduzione che contengono la stringa `.navigation` indicano traduzioni incomplete/placeholder che devono essere sistemate immediatamente.
 
 ## File Corretti
@@ -201,9 +230,18 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ## Collegamenti
 
+<<<<<<< .merge_file_KCxt7j
+- [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
+- [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./readme.md)
+=======
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
+>>>>>>> .merge_file_0nZovK
 
 ## Note Tecniche
 
@@ -215,6 +253,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*
+<<<<<<< .merge_file_KCxt7j
+=======
 =======
 Canonico: `laravel/Modules/User/docs/archive/historical/navigation-translations-fixes-january.md`. Qui non ci sono istruzioni: seguire il file collegato.
 >>>>>>> .merge_file_6QSpio
+>>>>>>> .merge_file_0nZovK

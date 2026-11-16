@@ -1,3 +1,15 @@
+<<<<<<< .merge_file_FdTp3V
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
+- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
+- [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+=======
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: note
@@ -16,6 +28,7 @@ qmd: "analisi dell'errore negli eventi di logout user"
 - [Analisi Errore Logout](logout-blade-error-analysis.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+>>>>>>> .merge_file_UggfJb
 
 ## Errore Identificato
 

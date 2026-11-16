@@ -1,3 +1,12 @@
+<<<<<<< .merge_file_xPB1RB
+# Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
+
+## Collegamenti correlati
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+=======
 ---
 title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
 type: note
@@ -13,6 +22,7 @@ qmd: "implementazione corretta delle pagine di autenticazione con volt e folio u
 - [Convenzioni Path](./path-conventions.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
+>>>>>>> .merge_file_gobybs
 
 ## Introduzione
 

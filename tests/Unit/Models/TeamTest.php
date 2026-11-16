@@ -25,11 +25,7 @@ class TeamTest extends TestCase
             'id' => $team->id,
             'user_id' => $user->id,
             'name' => 'Test Team',
-<<<<<<< .merge_file_XLGVpM
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_mLyFcl
     }
 
     public function test_can_create_team_with_all_fields(): void
@@ -55,11 +51,7 @@ class TeamTest extends TestCase
             'code' => 'TEAM001',
             'uuid' => '550e8400-e29b-41d4-a716-446655440000',
             'owner_id' => $user->id,
-<<<<<<< .merge_file_XLGVpM
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_mLyFcl
     }
 
     public function test_team_delete_is_hard_delete(): void
@@ -71,11 +63,7 @@ class TeamTest extends TestCase
 
         $team->delete();
 
-<<<<<<< .merge_file_XLGVpM
-        $this->assertDatabaseMissing('teams', ['id' => $teamId]);
-=======
         $this->assertDatabaseMissing('teams', ['id' => $teamId], 'user');
->>>>>>> .merge_file_mLyFcl
         static::assertNull(Team::find($teamId));
     }
 
@@ -156,11 +144,7 @@ class TeamTest extends TestCase
         $personalTeams = Team::where('personal_team', 1)->get();
 
         static::assertCount(1, $personalTeams);
-<<<<<<< .merge_file_XLGVpM
-        static::assertSame(1, $personalTeams->firstOrFail()->personal_team);
-=======
         static::assertTrue($personalTeams->firstOrFail()->personal_team);
->>>>>>> .merge_file_mLyFcl
     }
 
     public function test_can_find_teams_by_user_id(): void
@@ -204,11 +188,7 @@ class TeamTest extends TestCase
         $this->assertDatabaseHas('teams', [
             'id' => $team->id,
             'name' => 'New Name',
-<<<<<<< .merge_file_XLGVpM
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_mLyFcl
     }
 
     public function test_can_handle_null_values(): void
@@ -227,11 +207,7 @@ class TeamTest extends TestCase
             'code' => null,
             'uuid' => null,
             'owner_id' => null,
-<<<<<<< .merge_file_XLGVpM
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_mLyFcl
     }
 
     public function test_can_find_teams_by_multiple_criteria(): void
@@ -254,10 +230,6 @@ class TeamTest extends TestCase
         static::assertCount(1, $teams);
         $team = $teams->firstOrFail();
         static::assertSame('Development Team', $team->name);
-<<<<<<< .merge_file_XLGVpM
-        static::assertSame(0, $team->personal_team);
-=======
         static::assertFalse($team->personal_team);
->>>>>>> .merge_file_mLyFcl
     }
 }

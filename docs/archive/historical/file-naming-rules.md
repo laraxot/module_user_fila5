@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_qn4VU7
+module: theme
+topic: file-naming-rules
+canonical: ../../../Themes/docs/shared-components/file-naming-rules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
+=======
 title: "Regole di Naming per File"
 type: note
 status: draft
@@ -126,3 +143,4 @@ Se entrambi i file contengono contenuto diverso:
 - Laravel Naming Conventions
 - Filament Best Practices
 - Git Case Sensitivity Issues
+>>>>>>> .merge_file_LExx7C

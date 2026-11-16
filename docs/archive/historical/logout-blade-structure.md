@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_BWA3VC
+module: theme
+topic: logout-blade-structure
+canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
+=======
 title: "Struttura del Logout Blade nel Theme One"
 type: note
 status: draft
@@ -124,3 +141,4 @@ class LogoutPage
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
+>>>>>>> .merge_file_Oz8Akm

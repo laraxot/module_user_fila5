@@ -54,12 +54,8 @@ test('UserType getIcon method returns translated values', function (): void {
 });
 
 test('SystemRole enum can be instantiated', function (): void {
-<<<<<<< .merge_file_CedEYU
-    Assert::assertSame('super_admin', SystemRole::SuperAdmin->value);
-=======
     // SystemRole::SuperAdmin vale '%' (jolly), non il nome di un ruolo Spatie.
     Assert::assertSame('%', SystemRole::SuperAdmin->value);
->>>>>>> .merge_file_diYim8
 });
 
 test('SocialProviderEnum can be instantiated', function (): void {

@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_QRk7Vp
+module: theme
+topic: logout-implementation-error
+canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
+=======
 title: "Analisi dell'Errore nell'Implementazione del Logout"
 type: note
 status: draft
@@ -148,3 +165,4 @@ Se si desidera mantenere la conferma di logout, è preferibile utilizzare un wid
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di <nome progetto> per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
+>>>>>>> .merge_file_CTuAfk

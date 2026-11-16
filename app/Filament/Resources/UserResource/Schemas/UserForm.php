@@ -15,10 +15,7 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
-<<<<<<< .merge_file_xqB9mH
-=======
 use Illuminate\Validation\Rules\Password;
->>>>>>> .merge_file_y8agEo
 use Livewire\Component as LivewireComponent;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -96,12 +93,8 @@ class UserForm extends XotBaseResourceForm
             'email' => TextInput::make('email')
                 ->email()
                 ->required()
-<<<<<<< .merge_file_xqB9mH
-                ->autofocus()
-=======
                 // Niente autofocus (DCP-290, WCAG 3.2.1/2.4.3): spostare il focus al caricamento disorienta chi usa un
                 // lettore di schermo; il focus va al primo campo con errore dopo un invio fallito (script del tema).
->>>>>>> .merge_file_y8agEo
                 ->autocomplete('username')
                 ->helperText(null)
                 ->placeholder(null)
@@ -287,10 +280,7 @@ class UserForm extends XotBaseResourceForm
                 ->required()
                 ->revealable()
                 ->minLength(8)
-<<<<<<< .merge_file_xqB9mH
-=======
                 ->rule(Password::default())
->>>>>>> .merge_file_y8agEo
                 ->suffixIcon('heroicon-o-key')
                 ->extraInputAttributes(['class' => 'fo-auth-input fo-auth-input--password']),
             'password_confirmation' => TextInput::make('password_confirmation')

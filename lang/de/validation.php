@@ -11,10 +11,7 @@ return array_replace_recursive(
     [
         'date_equals' => 'Das Feld :attribute muss ein Datum gleich :date sein.',
         'ends_with' => 'Das Feld :attribute muss mit einem der folgenden Werte enden: :values.',
-<<<<<<< .merge_file_5Jne5w
-=======
         'file' => 'Das Feld :attribute muss eine Datei sein.',
->>>>>>> .merge_file_opusR0
         'gt' => [
             'numeric' => 'Das Feld :attribute muss größer als :value sein.',
             'file' => 'Das Feld :attribute muss größer als :value Kilobyte sein.',
@@ -52,11 +49,7 @@ return array_replace_recursive(
             'uncompromised' => 'Das angegebene :attribute ist in einem Datenleck aufgetaucht. Bitte wählen Sie ein anderes :attribute.',
         ],
         'starts_with' => 'Das Feld :attribute muss mit einem der folgenden Werte beginnen: :values.',
-<<<<<<< .merge_file_5Jne5w
-        'uploaded' => 'Das Hochladen von :attribute ist fehlgeschlagen.',
-=======
         'uploaded' => 'Hochladen fehlgeschlagen: Die Datei ist möglicherweise zu groß. Versuche es mit einer kleineren Datei.',
->>>>>>> .merge_file_opusR0
         'uuid' => 'Das Feld :attribute muss eine gültige UUID sein.',
         'email_already_taken' => 'Diese E-Mail-Adresse wird bereits von einem anderen Konto verwendet.',
         'password_confirmation' => 'Die Passwortbestätigung stimmt nicht überein.',

@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_NlVWx8
+module: theme
+topic: module-structure
+canonical: ../../../Themes/docs/shared-components/module-structure.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-structure.md
+=======
 title: "Struttura del Modulo User"
 type: note
 status: draft
@@ -596,3 +613,4 @@ find . -type d -name "Resources" -o -name "Lang"
 chmod -R 755 laravel/Modules/*/app/
 chmod -R 644 laravel/Modules/*/resources/
 ```
+>>>>>>> .merge_file_untLd2

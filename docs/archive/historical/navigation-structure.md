@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_ILuEkQ
+module: theme
+topic: navigation-structure
+canonical: ../../../Themes/docs/shared-components/navigation-structure.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
+=======
 title: "Struttura Navigazione"
 type: note
 status: draft
@@ -150,3 +167,4 @@ Event::dispatch('user.action', [
 - [Header Components](./header-components.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Session Management](./session-management.md) 
+>>>>>>> .merge_file_J511Sg

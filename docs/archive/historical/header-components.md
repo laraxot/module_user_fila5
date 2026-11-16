@@ -1,11 +1,32 @@
 ---
 title: "Componenti Header"
+<<<<<<< .merge_file_UNrTEx
+type: concept
+tags: [header, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-components componenti header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "componenti header user"
 ---
+>>>>>>> .merge_file_u8fOpO
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -95,4 +116,8 @@ qmd: "componenti header user"
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./security_best_practices.md)
+<<<<<<< .merge_file_UNrTEx
+- [Gestione Sessione](./session-management-2.md) 
+=======
 - [Gestione Sessione](./session-management.md) 
+>>>>>>> .merge_file_u8fOpO

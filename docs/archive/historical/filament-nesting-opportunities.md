@@ -1,5 +1,28 @@
 ---
 title: "Filament 5.x Nested Resources - Opportunità di Applicazione"
+<<<<<<< .merge_file_B8CaaY
+type: concept
+tags: [filament, nesting, opportunities]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-nesting-opportunities filament 5.x nested resources - opportunità di applicazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Filament 5.x Nested Resources - Opportunità di Applicazione
+
+**Data Analisi**: [DATE]  
+=======
 type: note
 status: draft
 updated: 2026-10-27
@@ -9,6 +32,7 @@ qmd: "filament 5.x nested resources - opportunità di applicazione user"
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: 2026-01-22  
+>>>>>>> .merge_file_CGia0o
 **Versione Filament**: 5.x  
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/resources/nesting
 
@@ -258,11 +282,19 @@ Nessuna funzionalità critica - il modulo User funziona bene con relation manage
 ## Collegamenti
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
+<<<<<<< .merge_file_B8CaaY
+- [User Module README](./readme.md)
+=======
 - [User Module README](./README.md)
+>>>>>>> .merge_file_CGia0o
 - [Team System](./architecture/teams.md)
 - [Authentication Guide](./auth/authentication-flow.md)
 
 ---
 
+<<<<<<< .merge_file_B8CaaY
+**Prossima Revisione**: [DATE]
+=======
 **Ultimo Aggiornamento**: 2026-01-22  
 **Prossima Revisione**: 2026-02-22
+>>>>>>> .merge_file_CGia0o

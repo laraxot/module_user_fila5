@@ -22,11 +22,7 @@ class DeviceTest extends TestCase
             'id' => $device->id,
             'device' => 'iPhone',
             'platform' => 'iOS',
-<<<<<<< .merge_file_2e37Zu
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_NYWRXn
     }
 
     public function test_can_create_device_with_all_fields(): void
@@ -62,11 +58,7 @@ class DeviceTest extends TestCase
             'is_mobile' => true,
             'is_tablet' => false,
             'is_phone' => true,
-<<<<<<< .merge_file_2e37Zu
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_NYWRXn
 
         // Verifica campi JSON
         static::assertSame(['en', 'it', 'de'], $device->languages);
@@ -240,11 +232,7 @@ class DeviceTest extends TestCase
         $this->assertDatabaseHas('devices', [
             'id' => $device->id,
             'device' => 'New Device',
-<<<<<<< .merge_file_2e37Zu
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_NYWRXn
     }
 
     public function test_can_handle_null_values(): void
@@ -265,11 +253,7 @@ class DeviceTest extends TestCase
             'browser' => null,
             'version' => null,
             'robot' => null,
-<<<<<<< .merge_file_2e37Zu
-        ]);
-=======
         ], 'user');
->>>>>>> .merge_file_NYWRXn
     }
 
     public function test_can_find_devices_by_multiple_criteria(): void

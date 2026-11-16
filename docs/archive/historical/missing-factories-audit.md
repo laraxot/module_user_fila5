@@ -1,11 +1,32 @@
 ---
 title: "Factory Mancanti - Modulo User"
+<<<<<<< .merge_file_f9uPio
+type: concept
+tags: [missing, factories, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "missing-factories-audit factory mancanti - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "factory mancanti - modulo user user"
 ---
+>>>>>>> .merge_file_kGHk17
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
@@ -141,9 +162,18 @@ qmd: "factory mancanti - modulo user user"
 
 ## Collegamenti
 
+<<<<<<< .merge_file_f9uPio
+- [README Modulo User](./readme.md)
+- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
+=======
 - [README Modulo User](./README.md)
 - [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+>>>>>>> .merge_file_kGHk17
 - [Models Documentation](./models/readme.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  
+<<<<<<< .merge_file_f9uPio
+*Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> .merge_file_kGHk17

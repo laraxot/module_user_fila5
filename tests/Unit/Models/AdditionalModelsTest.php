@@ -27,89 +27,6 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 test('Notification model can be instantiated', function () {
-<<<<<<< .merge_file_w5Bu02
-    new Notification;
-});
-
-test('OauthAccessToken model can be instantiated', function () {
-    new OauthAccessToken;
-});
-
-test('OauthClient model can be instantiated', function () {
-    new OauthClient;
-});
-
-test('OauthAuthCode model can be instantiated', function () {
-    new OauthAuthCode;
-});
-
-test('OauthRefreshToken model can be instantiated', function () {
-    new OauthRefreshToken;
-});
-
-test('OauthPersonalAccessClient model can be instantiated', function () {
-    new OauthPersonalAccessClient;
-});
-
-test('OauthToken model can be instantiated', function () {
-    new OauthToken;
-});
-
-test('OauthDeviceCode model can be instantiated', function () {
-    new OauthDeviceCode;
-});
-
-test('TeamPermission model can be instantiated', function () {
-    new TeamPermission;
-});
-
-test('TeamInvitation model can be instantiated', function () {
-    new TeamInvitation;
-});
-
-test('AuthenticationLog model can be instantiated', function () {
-    new AuthenticationLog;
-});
-
-test('Authentication model can be instantiated', function () {
-    new Authentication;
-});
-
-test('SocialiteUser model can be instantiated', function () {
-    new SocialiteUser;
-});
-
-test('SocialProvider model can be instantiated', function () {
-    new SocialProvider;
-});
-
-test('SsoProvider model can be instantiated', function () {
-    new SsoProvider;
-});
-
-test('Feature model can be instantiated', function () {
-    new Feature;
-});
-
-test('Extra model can be instantiated', function () {
-    new Extra;
-});
-
-test('Device model can be instantiated', function () {
-    new Device;
-});
-
-test('DeviceProfile model can be instantiated', function () {
-    new DeviceProfile;
-});
-
-test('DeviceUser model can be instantiated', function () {
-    new DeviceUser;
-});
-
-test('PasswordReset model can be instantiated', function () {
-    new PasswordReset;
-=======
     expect(new Notification)->toEqual(new Notification);
 });
 
@@ -191,5 +108,4 @@ test('DeviceUser model can be instantiated', function () {
 
 test('PasswordReset model can be instantiated', function () {
     expect(new PasswordReset)->toEqual(new PasswordReset);
->>>>>>> .merge_file_GcgSyM
 });

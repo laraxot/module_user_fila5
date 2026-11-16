@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_cMnQtH
+module: theme
+topic: logout-error-analysis
+canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-error-analysis.md
+=======
 title: "Analisi Errore Logout"
 type: note
 status: draft
@@ -256,3 +273,4 @@ class LogoutWidget extends XotBaseWidget
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
+>>>>>>> .merge_file_BOcN6v

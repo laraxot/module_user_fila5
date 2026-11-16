@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_EhUtMo
+module: theme
+topic: volt-folio-auth-implementation
+canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
+=======
 title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
 type: note
 status: draft
@@ -1080,3 +1097,4 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
+>>>>>>> .merge_file_uik3Mr

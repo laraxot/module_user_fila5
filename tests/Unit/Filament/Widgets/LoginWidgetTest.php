@@ -56,12 +56,8 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget extends xot base widget', function (): void {
-<<<<<<< .merge_file_Z7hpij
-        Assert::assertSame(XotBaseSchemaWidget::class, get_parent_class(LoginWidget::class));
-=======
         $parents = class_parents(new LoginWidget);
         Assert::assertContains(XotBaseSchemaWidget::class, $parents);
         Assert::assertContains(BaseAuthWidget::class, $parents);
->>>>>>> .merge_file_TFvcj8
     });
 });

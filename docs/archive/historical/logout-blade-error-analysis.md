@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_SyCKNT
+module: theme
+topic: logout-blade-error-analysis
+canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
+=======
 title: "Analisi Approfondita dell'Errore nell'Implementazione del Logout"
 type: note
 status: draft
@@ -230,3 +247,4 @@ Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
 - Rispettare le convenzioni e le strutture del progetto <nome progetto>
+>>>>>>> .merge_file_VYDR1h

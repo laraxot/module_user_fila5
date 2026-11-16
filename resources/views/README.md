@@ -56,6 +56,7 @@ npm install
 npm run build
 ```
 
+<<<<<<< .merge_file_6ePwFr
 <<<<<<< .merge_file_s0VPb8
 <<<<<<< .merge_file_JffMWg
 6. Copia gli asset compilati:
@@ -66,6 +67,14 @@ npm run build
 6. Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
 >>>>>>> .merge_file_DOgla6
 =======
+=======
+6. Copia gli asset compilati:
+
+```bash
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+```
+
+>>>>>>> .merge_file_jpfWCL
 6. Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
 >>>>>>> .merge_file_Mctqrc
 

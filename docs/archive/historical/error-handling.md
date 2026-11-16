@@ -1,11 +1,32 @@
 ---
 title: "Gestione degli Errori nelle Blade di Autenticazione"
+<<<<<<< .merge_file_VWOM3A
+type: concept
+tags: [error, handling]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "error-handling gestione degli errori nelle blade di autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "gestione degli errori nelle blade di autenticazione user"
 ---
+>>>>>>> .merge_file_tKnyO5
 # Gestione degli Errori nelle Blade di Autenticazione
 
 ## Introduzione
@@ -175,3 +196,9 @@ public function register()
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
+<<<<<<< .merge_file_VWOM3A
+- [Documentazione Volt](./volt-logout-2.md)
+- [Best Practices Routing](./routing-best-practices-2.md)
+- [Struttura Directory](./directory-structure-checklist.md) 
+=======
+>>>>>>> .merge_file_tKnyO5

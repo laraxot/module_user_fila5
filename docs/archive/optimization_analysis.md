@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_hnFsVZ
+=======
 ---
 title: "user module documentation optimization analysis"
 type: note
@@ -6,6 +8,7 @@ updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "user module documentation optimization analysis user"
 ---
+>>>>>>> .merge_file_njdHMl
 # user module documentation optimization analysis
 
 ## current state analysis
@@ -18,7 +21,11 @@ qmd: "user module documentation optimization analysis user"
 ## major problems identified
 
 ### 1. massive duplication
+<<<<<<< .merge_file_hnFsVZ
+- authentication: `auth-login-implementation.md` + `auth_login_implementation.md`
+=======
 - authentication: `auth-login-implementation.md` + `auth-login-implementation.md`
+>>>>>>> .merge_file_njdHMl
 - logout: 18+ files covering same logout functionality
 - filament: multiple duplicate filament documentation files
 

@@ -1,11 +1,32 @@
 ---
 title: "Best Practices per il Routing in Architettura Volt + Folio + Filament"
+<<<<<<< .merge_file_7c69jW
+type: concept
+tags: [routing, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "routing-best-practices best practices per il routing in architettura volt + folio + filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "best practices per il routing in architettura volt + folio + filament user"
 ---
+>>>>>>> .merge_file_65kcnx
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
 
 ## Il Principio Fondamentale
@@ -137,7 +158,16 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 - [Filosofia Zen Avanzata](../xot/docs/philosophy/getter_zen_advanced.md)
 - [La Via del Brand](../xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../xot/docs/tao/code_tao.md)
+<<<<<<< .merge_file_7c69jW
+- [Best Practices Filament](./filament-best-practices.md) 
+- [Filosofia dei Getter](../Xot/docs/philosophy/getter_zen.md)
+- [Filosofia Zen Avanzata](../Xot/docs/philosophy/getter_zen_advanced.md)
+- [La Via del Brand](../Xot/docs/brand/brand_way.md)
+- [Il Tao del Codice](../Xot/docs/tao/code_tao.md)
+- [Best Practices Filament](./filament-best-practices.md) 
+=======
 - [Best Practices Filament](./filament_best_practices.md) 
+>>>>>>> .merge_file_65kcnx
 
 ## Principi Fondamentali
 
@@ -355,7 +385,11 @@ class UserResource extends Resource
    - Riutilizzo dei componenti
 
 ## Collegamenti
+<<<<<<< .merge_file_7c69jW
+- [Filament Best Practices](./filament-best-practices.md)
+=======
 - [Filament Best Practices](./filament_best_practices.md)
+>>>>>>> .merge_file_65kcnx
 - [Volt Documentation](https://livewire.laravel.com/docs/volt)
 - [Folio Documentation](https://laravel.com/docs/folio)
 - [Filament Documentation](https://filamentphp.com/docs) 
@@ -475,3 +509,9 @@ public function logout()
 - [Documentazione Volt](./volt-logout.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
+<<<<<<< .merge_file_7c69jW
+- [Documentazione Volt](./volt-logout-2.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 
+=======
+>>>>>>> .merge_file_65kcnx

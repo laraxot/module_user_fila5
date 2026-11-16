@@ -1,3 +1,15 @@
+<<<<<<< .merge_file_gsRzPX
+# Analisi Approfondita dell'Errore nell'Implementazione del Logout
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
+- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
+- [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+=======
 ---
 title: "Analisi Approfondita dell'Errore nell'Implementazione del Logout"
 type: note
@@ -16,6 +28,7 @@ qmd: "analisi approfondita dell'errore nell'implementazione del logout user"
 - [Analisi Logout](logout-blade-analysis.md)
 - [Conclusioni Logout](logout-blade-conclusions.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+>>>>>>> .merge_file_yP0gLh
 
 ## Errore Fondamentale Identificato
 

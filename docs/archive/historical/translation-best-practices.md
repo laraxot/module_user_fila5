@@ -1,11 +1,32 @@
 ---
 title: "Best Practices per le Traduzioni"
+<<<<<<< .merge_file_ectC2H
+type: concept
+tags: [translation, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation-best-practices best practices per le traduzioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+=======
 type: note
 status: draft
 updated: 2026-10-27
 tags: [docs, user, archive]
 qmd: "best practices per le traduzioni user"
 ---
+>>>>>>> .merge_file_79N2c9
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -149,5 +170,12 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 
 ## Collegamenti Correlati
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
+<<<<<<< .merge_file_ectC2H
+- [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
+- [Struttura Moduli](./module-structure.md) 
+- [Best Practices di Codice](./code_best_practices.md)
+- [Struttura Moduli](./module-structure-2.md) 
+=======
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module-structure.md) 
+>>>>>>> .merge_file_79N2c9

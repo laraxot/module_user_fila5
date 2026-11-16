@@ -306,13 +306,9 @@ test('can force delete team', function (): void {
 });
 
 test('team invitations relation is has many', function (): void {
-<<<<<<< .merge_file_MW3j8S
-    Assert::assertTrue(method_exists(Team::class, 'invitations'));
-=======
     // Jetstream: la relazione si chiama teamInvitations() (BaseTeamRelationsTrait), non invitations().
     Assert::assertSame(
         'team_id',
         (new Team)->teamInvitations()->getForeignKeyName(),
     );
->>>>>>> .merge_file_dZkL5I
 });

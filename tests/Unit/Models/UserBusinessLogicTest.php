@@ -21,13 +21,9 @@ describe('User Business Logic', function () {
         $user->password = 'plain-password';
 
         Assert::assertSame('test@example.com', $user->email);
-<<<<<<< .merge_file_dirrTU
-        Assert::assertSame('hashed-password', $user->password);
-=======
         // Il mutator di BaseUser hasha la password: mai in chiaro sul modello.
         Assert::assertNotSame('plain-password', $user->password);
         Assert::assertTrue(\Illuminate\Support\Facades\Hash::check('plain-password', (string) $user->password));
->>>>>>> .merge_file_iH3IOx
     });
 
     test('user can have name components', function () {

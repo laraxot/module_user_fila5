@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_NDR5lg
+module: theme
+topic: logout-blade-analysis
+canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md
+=======
 title: "Analisi del File logout.blade.php"
 type: note
 status: draft
@@ -890,3 +907,4 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
+>>>>>>> .merge_file_JCDF7u

@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_8n7k6p
+module: theme
+topic: livewire-to-filament-widget-migration
+canonical: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+=======
 title: "ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card"
 type: note
 status: draft
@@ -143,3 +160,4 @@ class LoginWidget extends XotBaseWidget
 - [../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md](../../themes/sixteen/project_docs/login-agid-correct-implementation.md)
 ---
 **QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
+>>>>>>> .merge_file_IyCqIt

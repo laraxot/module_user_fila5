@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_NsMiJL
+module: theme
+topic: ottimizzazioni-modulo-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+=======
 title: "Ottimizzazioni Modulo User - DRY + KISS"
 type: note
 status: draft
@@ -360,3 +377,4 @@ echo "✅ Consolidamento completato!"
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo User
 **Priorità:** ALTA (duplicazioni massive identificate)
+>>>>>>> .merge_file_ojm95j
