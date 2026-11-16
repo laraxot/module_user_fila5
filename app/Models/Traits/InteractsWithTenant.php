@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Scopes\TenantScope;
+use Modules\User\Support\AuthenticatedTenantKey;
 use Modules\Xot\Datas\XotData;
 
 /**
@@ -50,7 +51,7 @@ trait InteractsWithTenant
                 return;
             }
 
-            $tenantId = Filament::getTenant()?->getKey();
+            $tenantId = Filament::getTenant()?->getKey() ?? AuthenticatedTenantKey::resolve();
             if ($tenantId !== null) {
                 $model->setAttribute('tenant_id', $tenantId);
             }
