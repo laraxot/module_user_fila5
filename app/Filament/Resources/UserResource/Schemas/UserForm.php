@@ -23,6 +23,7 @@ use Livewire\Component as LivewireComponent;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class UserForm extends XotBaseResourceForm
@@ -89,7 +90,7 @@ class UserForm extends XotBaseResourceForm
                         ->schema([
                             CheckboxList::make('roles')
                                 ->relationship('roles', 'name')
-                                ->getOptionLabelFromRecordUsing(static fn (Model $record): string => \Modules\User\Models\Role::displayName((string) $record->getAttribute('name')))
+                                ->getOptionLabelFromRecordUsing(static fn (Model $record): string => \Modules\User\Models\Role::displayName(SafeStringCastAction::cast($record->getAttribute('name'))))
                                 ->columns(['default' => 1, 'sm' => 2])
                                 ->bulkToggleable(),
                         ]),
