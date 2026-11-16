@@ -1,7 +1,12 @@
 ---
-qmd: ECC audit modulo User verification security testing workflow
-title: ECC audit operativo modulo User
-status: baseline-review
+id: User/ecc-audit
+title: "ECC — audit operativo del modulo User"
+status: in-progress
+module: User
+qmd: "User ECC audit verification security testing"
+references:
+  - ../bmad/audit.md
+  - 00-index.md
 ---
 
 # ECC audit operativo modulo User
@@ -53,3 +58,4 @@ correzione minima, source-first, con lock prima dell'edit e gate dopo l'edit.
 Baseline ECC creata. Il modulo non è dichiarato conforme finché gli acceptance
 criteria del documento BMAD corrispondente non risultano verificati con output
 dei gate.
+

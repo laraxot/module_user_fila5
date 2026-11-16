@@ -30,6 +30,24 @@ PHPStan/Pest proporzionati.
 | Marker di conflitto | 0 |
 | Label/tooltip letterali Filament | 24 |
 
+
+## Analisi Funzionale e Scopo di Dominio
+
+### Perché Esiste (Scopo Fondamentale)
+Gestione identità, autenticazione, profili e autorizzazioni RBAC dell'intero sistema.
+
+### Valore di Business e Utilità
+Protegge l'accesso applicativo supportando identità digitale (SPID/CIE) e garantendo granularità nei permessi per ciascun operatore.
+
+### Architettura e Pattern Laraxot
+Estensione di UserContract; spatie/laravel-permission; eventi di login/logout con audit integrato; widget profilazione e sicurezza.
+
+### Standard di Qualità e Conformità
+- **PHPStan**: Confermato a Level Max con 0 errori.
+- **Filament**: Conformità Filament 5 con estensione delle classi XotBase*.
+- **Naming**: Convenzione kebab-case rigorosa per tutti i documenti e classi PSR-4.
+- **Trans**: Traduzioni dinamiche via Lang, nessun testo hardcoded.
+
 ## Audit per dimensione
 
 ### Architettura e confini
