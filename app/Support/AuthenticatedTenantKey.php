@@ -31,7 +31,11 @@ final class AuthenticatedTenantKey
             return null;
         }
 
-        $userKey = (string) $user->getAuthIdentifier();
+        $authId = $user->getAuthIdentifier();
+        if (! \is_string($authId) && ! \is_int($authId)) {
+            return null;
+        }
+        $userKey = (string) $authId;
 
         /** @var string|int|null */
         return Context::remember('user.authenticated_tenant_key.'.$userKey, static function () use ($user): string|int|null {
