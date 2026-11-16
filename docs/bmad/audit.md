@@ -1,70 +1,32 @@
 ---
-id: User/module-audit
-title: "Audit brownfield del modulo User"
-status: in-progress
-epic: module-quality
+title: "Audit BMAD — User"
+type: audit
+status: review
+updated: 2026-11-16
 module: User
-qmd: "User audit architettura qualità PHPStan Pest BMAD"
-references:
-  - ../00-index.md
-  - ../../../../Xot/docs/ecc/00-index.md
+qmd: "audit BMAD User source-first qualità"
 ---
 
-# Audit del modulo User
+# Audit BMAD — User
 
-## Scopo e confini
+SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
 
-Questo documento è l'artefatto BMAD di ricognizione del modulo User. Descrive
-solo evidenze presenti nel worktree e separa i fatti verificati dalle attività
-ancora da eseguire. Il modulo appartiene all'applicazione Laravel modulare;
-le decisioni applicative devono restare nelle classi e nei test del modulo,
-mentre le convenzioni trasversali restano in Modules/Xot.
+## Sintesi (2026-11-16)
 
-## Inventario iniziale verificato
+| Metrica | Valore |
+|---|---:|
+| PHP `app/` | 713 |
+| Test | 233 |
+| Resources | 26 |
+| Actions | 83 |
+| Services | 0 |
+| Policy `return true` | 8 |
+| Marker | 0 |
 
-| Area | Conteggio | Evidenza/interpretazione |
-|---|---:|---|
-| PHP sotto app/ | 713 | superficie applicativa da mappare per responsabilità |
-| PHP sotto tests/ | 233 | contratti automatizzati presenti |
-| Markdown sotto docs/ | 3794 | patrimonio documentale da deduplicare e indicizzare |
-| Marker Git in PHP/JSON/YAML | 0 | controllo iniziale senza marker nei formati analizzati |
-| composer.json/module.json | validi | parsing JSON riuscito |
+## Lo scopo in una frase **User risponde a tre domande e non ad altre: chi sei, cosa puoi fare, per conto di chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.**
 
-## Audit BMAD
+## Gate
 
-- Analisi: identificare responsabilità, dipendenze, entry point, Actions,
-  modelli, policy, risorse Filament, rotte, migrazioni e flussi di test.
-- Architettura: verificare che la logica di dominio resti nelle Queueable
-  Actions e che le estensioni Filament usino le basi Xot previste.
-- Qualità: eseguire PHPStan level massimo sul solo modulo, Pint/PHP lint sui
-  file toccati e Pest in ambiente testing non produttivo.
-- Rischi: cercare duplicazioni, merge irrisolti, import morti, cast da mixed,
-  test vuoti, documentazione ridondante e nomi Markdown instabili.
-- Piano: ogni finding deve diventare una story BMAD nel modulo con owner,
-  acceptance criteria, evidenza e gate; nessun finding viene chiuso per il solo
-  fatto che PHPStan non lo segnali.
-
-## Gate ancora da eseguire
-
-    cd laravel
-    php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User --no-progress
-    php -l Modules/User/app/<file>.php
-    ./vendor/bin/pest Modules/User/tests --no-coverage
-
-Il risultato del comando PHPStan e del gate Pest non è dichiarato qui finché non
-è stato eseguito e registrato con output osservabile. Non usare baseline,
-ignoreErrors, database distruttivi o Git LFS.
-
-## Deliverable successivi
-
-1. mappa architetturale e confini del modulo;
-2. inventario dei flussi utente e dei contratti dati;
-3. registro dei finding classificati per rischio;
-4. backlog BMAD con stories verificabili;
-5. indice QMD aggiornato dopo ogni modifica documentale.
-
-## Stato
-
-**In progress.** L'inventario statico è verificato; l'audit semantico e i gate
-per-modulo devono ancora essere completati.
-
+- PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
+- Pest: da eseguire in ambiente testing non produttivo.
+- Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.

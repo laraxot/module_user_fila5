@@ -109,3 +109,8 @@ c'e' gia': manca la domanda.
 
 - `laravel/Modules/Tenant/docs/purpose.md` — l'altro asse di separazione
 - `laravel/Modules/Xot/docs/purpose.md` — `ProfileContract` e le classi base
+
+## Documentazione correlata
+
+- [Audit BMAD](./bmad/audit.md)
+- [ECC](./ecc/user-ecc-audit.md)

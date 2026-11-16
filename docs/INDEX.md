@@ -6913,3 +6913,8 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
 
+## Pack qualità (2026-11-16)
+
+- [BMAD](./bmad/00-index.md)
+- [ECC](./ecc/00-index.md)
+- [Audit](./bmad/audit.md)
