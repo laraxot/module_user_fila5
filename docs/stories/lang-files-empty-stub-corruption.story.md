@@ -48,6 +48,8 @@ che pero' non fa `return`. In PHP, `include()`/`require()` su un file che arriva
 fondo senza `return` esplicito **restituisce `int(1)`**. `Illuminate\Translation\FileLoader`
 fa `array_replace_recursive($base, include $path)` per fondere le traduzioni di piu'
 path — se uno qualsiasi dei path restituisce `1` invece di un array, l'intera chiamata
+
+path: se uno qualsiasi dei path restituisce `1` invece di un array, l'intera chiamata
 lancia `TypeError`. `php -l` non lo vede: il file e' sintatticamente perfetto, il difetto
 e' semantico (manca lo statement finale).
 
@@ -87,6 +89,8 @@ tree sporco".
 commit in cui tutti e 4 i file risultano gia' ridotti allo stub vuoto; nei commit
 immediatamente precedenti avevano contenuto reale. Il messaggio del commit non ha
 alcuna relazione apparente con file di lingua di User — sospetto che il commit abbia
+
+alcuna relazione apparente con file di lingua di User: sospetto che il commit abbia
 toccato altri file, in altri moduli, in modo non intenzionale. **Non verificato in
 questa sessione**: nessun `git show --stat 0701a777a` esaustivo ne' controllo di altri
 moduli. Rischio aperto, da chiudere con un audit dedicato se il team lo ritiene
@@ -97,6 +101,10 @@ prioritario.
 - [`Modules/Activity/docs/stories/lang-files-pipe-corruption.story.md`](../../Activity/docs/stories/lang-files-pipe-corruption.story.md) — stesso crash live, meccanismo di corruzione diverso (pipe, non stub vuoto)
 - [`Modules/Job/docs/stories/lang-files-pipe-corruption-job.story.md`](../../Job/docs/stories/lang-files-pipe-corruption-job.story.md) — idem
 - [`Modules/User/docs/stories/user-profile-volt-instanceof-wrong-user-class.md`](user-profile-volt-instanceof-wrong-user-class.md) — bug diverso, stessa sessione, stesso modulo
+
+- [`Modules/Activity/docs/stories/lang-files-pipe-corruption.story.md`](../../Activity/docs/stories/lang-files-pipe-corruption.story.md): stesso crash live, meccanismo di corruzione diverso (pipe, non stub vuoto)
+- [`Modules/Job/docs/stories/lang-files-pipe-corruption-job.story.md`](../../Job/docs/stories/lang-files-pipe-corruption-job.story.md): idem
+- [`Modules/User/docs/stories/user-profile-volt-instanceof-wrong-user-class.md`](user-profile-volt-instanceof-wrong-user-class.md): bug diverso, stessa sessione, stesso modulo
 
 ### Testing standards
 
@@ -113,6 +121,9 @@ Verifica e' `include()` + `gettype()`, ripetibile a mano, non automatizzata qui.
 - Crash live risolto: `Modules/Lang/app/Actions/Filament/AutoLabelAction.php:113` non
   riceve piu' `int` da `array_replace_recursive` per questi 4 path.
 - Non eseguito un audit repo-wide del commit `0701a777a` — segnalato come rischio
+
+  affidabile per questa classe di difetto: vedi Dev Notes).
+- Non eseguito un audit repo-wide del commit `0701a777a`: segnalato come rischio
   aperto, non chiuso.
 
 ### File List
@@ -121,3 +132,8 @@ Verifica e' `include()` + `gettype()`, ripetibile a mano, non automatizzata qui.
 - `laravel/Modules/User/lang/it/role.php` — ripristinato da `f62fd0acf`
 - `laravel/Modules/User/lang/it/login.php` — ripristinato da `f62fd0acf`
 - `laravel/Modules/User/lang/it/view_user.php` — ripristinato da `9d2362d94`
+
+- `laravel/Modules/User/lang/it/client.php`: ripristinato da `ee7791cfc`
+- `laravel/Modules/User/lang/it/role.php`: ripristinato da `f62fd0acf`
+- `laravel/Modules/User/lang/it/login.php`: ripristinato da `f62fd0acf`
+- `laravel/Modules/User/lang/it/view_user.php`: ripristinato da `9d2362d94`

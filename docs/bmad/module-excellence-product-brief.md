@@ -1,5 +1,7 @@
 ---
 title: "Product brief — User module: percorso verso la perfezione assoluta"
+
+title: "Product brief: User module: percorso verso la perfezione assoluta"
 type: product-brief
 module: User
 status: approved
@@ -14,6 +16,12 @@ related:
 ---
 
 # Product brief: User module — percorso verso la perfezione assoluta
+
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "product brief: user module   percorso verso la perfezione assoluta user"
+
+# Product brief: User module: percorso verso la perfezione assoluta
 
 ## 1. Executive summary
 
@@ -37,6 +45,8 @@ assoluta":
 3. **Permessi**: circa 30 classi Policy verificano permessi che non esistono
    nel seeder — un bug di sicurezza silenzioso (nega sempre, nessun errore).
 
+   nel seeder: un bug di sicurezza silenzioso (nega sempre, nessun errore).
+
 ## 2. Problem statement
 
 ### 2.1 Documentazione: rumore che nasconde il segnale
@@ -46,6 +56,8 @@ assoluta":
 - `docs/permissions.md`, che dovrebbe essere la matrice permessi del modulo
   User, contiene invece il dominio "Moderazione Medici" di un altro modulo
   (Patient/Gdpr) — copiato e mai adattato.
+
+  (Patient/Gdpr): copiato e mai adattato.
 - 270 file nominati "phpstan" in `docs/`, molti prodotti da uno script di
   generazione filename bacato che ha rimosso le sottostringhe `-fix` e `-d`
   dai nomi (es. `phpstan-fixes.md` -> `phpstanes.md`,
@@ -74,6 +86,8 @@ assoluta":
   banale come "puo' essere istanziato"), stima seriale 85-90 minuti.
   L'issue GitHub #31 ("coverage circa 0%, target 100%") resta pienamente
   attuale — con la causa pratica ora documentata.
+
+  attuale: con la causa pratica ora documentata.
 - `tests/Playwright/` ha un solo file (50 righe, un solo flusso: la
   registrazione): non e' una suite E2E, e' uno scaffold.
 
@@ -87,6 +101,8 @@ assoluta":
   Feature, SocialProvider, Tenant, TeamInvitation, TeamPermission,
   Membership, Extra, Notification, PasswordReset...) che verificano
   permessi in convenzione `{resource}.{ability}` — **nessuno di questi
+
+  permessi in convenzione `{resource}.{ability}`: **nessuno di questi
   permessi esiste nel seeder**. Ogni `can()`/`authorize()` su queste
   risorse nega sempre, in silenzio: sembra una scelta di sicurezza, e' un
   bug.
@@ -111,6 +127,8 @@ assoluta":
   `purpose.md` sottostimava questo punto, dicendo che nessuno li legge.
 - Team (ability/ownership check) e Tenant (query scope via global scope)
   **non si sovrappongono nel codice attuale** — solo non era mai stato
+
+  **non si sovrappongono nel codice attuale**: solo non era mai stato
   scritto da nessuna parte.
 - I marker di conflitto Git committati (issue #47, 114 originari) sono
   **quasi tutti risolti**: ne restano 2, entrambi file non-`.php` non
@@ -127,6 +145,8 @@ assoluta":
   utilizzabile).
 
 ## 5. Metriche di successo (per una futura fase di esecuzione — non in
+
+## 5. Metriche di successo (per una futura fase di esecuzione: non in
    questa sessione, solo documentazione)
 
 - `docs/index.md`: 0 link rotti, sostituito da mappa curata a 6 voci.

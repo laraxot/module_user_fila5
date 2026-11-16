@@ -1,5 +1,7 @@
 ---
 title: "UX — campagna widget-only"
+
+title: "UX: campagna widget-only"
 type: ux-design
 module: User
 status: approved
@@ -7,6 +9,9 @@ related:
   - ./ux-design.md
   - ./livewire-widget-prd.md
   - ./livewire-inventory.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "ux: stesso chrome, contenitore giusto user"
 ---
 
 # UX: stesso chrome, contenitore giusto

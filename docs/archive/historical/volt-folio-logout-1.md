@@ -1,17 +1,9 @@
----
-title: "Implementazione Corretta del Logout con Volt e Folio"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "implementazione corretta del logout con volt e folio user"
----
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Analisi Logout Blade](./logout-blade-analysis.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Analisi Logout Blade](./logout_blade_analysis.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica

@@ -1,5 +1,7 @@
 ---
 title: "Brainstorming — Perfezione assoluta del modulo User"
+
+title: "Brainstorming: Perfezione assoluta del modulo User"
 type: brainstorming
 module: User
 status: done
@@ -10,6 +12,9 @@ related:
   - ./perfection-decision-log.md
   - ./epics.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: audit a 360 gradi, modulo user verso la perfezione assoluta user"
 ---
 
 # Brainstorming: audit a 360 gradi, modulo User verso la perfezione assoluta
@@ -20,6 +25,8 @@ Audit read-only, 7 dimensioni indipendenti, eseguito da agenti `general-purpose`
 tool reali (Bash/Read/Grep, verificati `tool_uses > 0` in ogni notifica). Nessun file
 modificato, nessuna scrittura su DB, nessuna migration eseguita. Ogni finding qui sotto
 è citato a `file:riga` con il comando/verifica reale che lo ha prodotto — dove un claim
+
+è citato a `file:riga` con il comando/verifica reale che lo ha prodotto: dove un claim
 di documentazione preesistente non era riproducibile nel codice attuale, l'ho segnalato
 esplicitamente (git/codice batte la doc, standing order #3).
 
@@ -37,6 +44,16 @@ ritiro Livewire) già in corso — quella campagna resta autonoma e non viene to
 (pass-through vuoto verso `XotBasePolicy`) invece di `BaseUserPolicy.php` (classe
 sorella quasi omonima, ben scritta, a controllo di ruolo — `hasRole(['super-admin',
 'admin','hr-manager'])` — ma **mai estesa da nessuno**, `grep -rln "extends
+
+ritiro Livewire) già in corso: quella campagna resta autonoma e non viene toccata.
+
+
+## 1. Sicurezza (identity/auth): la dimensione più critica
+
+### 1.1 CRITICO: `UserPolicy` bypassa l'autorizzazione su view/create/update/delete
+
+sorella quasi omonima, ben scritta, a controllo di ruolo: `hasRole(['super-admin',
+'admin','hr-manager'])`: ma **mai estesa da nessuno**, `grep -rln "extends
 BaseUserPolicy"` → 0 risultati, dead code).
 
 Risultato: `view()`, `create()`, `update()`, `delete()` ritornano tutti `true`
@@ -61,6 +78,14 @@ progetto (`filament-hook-naming-collision.md`), qui si ripete sulle Policy.
 `grep -rn "throttle"` in tutto il modulo → un solo risultato, dentro
 `laravel/Modules/User/routes/auth.php`, il cui intero contenuto (righe 4-26) e'
 avvolto in un blocco di commento (`/* ... */`) — morto/inattivo. `grep -rn
+
+email/password (**account takeover**), eliminarne l'account: admin inclusi, nessun
+
+**Causa strutturale:** naming collision `BaseUserPolicy` / `UserBasePolicy`: due
+
+### 1.2 CRITICO: nessun rate limiting sul login
+
+avvolto in un blocco di commento (`/* ... */`): morto/inattivo. `grep -rn
 "RateLimiter::\|tooManyAttempts\|hit("` in `app/` → 0 risultati. `LoginWidget.php` /
 `BaseAuthWidget.php` (i componenti Filament che gestiscono davvero il login) non
 contengono `HasRateLimitedForms` ne' logica di throttling propria.
@@ -73,6 +98,10 @@ login reale.
 Nessun modulo `Gdpr` in questo repo (`find laravel/Modules -iname "*gdpr*"` → vuoto).
 Unico punto di cancellazione: `laravel/Modules/User/app/Actions/User/
 DeleteUserAction.php` — fa solo `$this->authGuard->logout()` (guard/sessione
+
+### 1.3 ALTO: cancellazione account (GDPR) non fa cascade, lascia PII orfane
+
+DeleteUserAction.php`: fa solo `$this->authGuard->logout()` (guard/sessione
 corrente) e `$user->delete()` (hard delete, `SoftDeletes` commentato in
 `BaseUser.php`).
 
@@ -80,6 +109,9 @@ Le migration di `oauth_access_tokens`, `oauth_auth_codes`, `socialite_user` usan
 `$table->foreignIdFor($userClass,'user_id')` **senza** `.constrained()`/
 `.cascadeOnDelete()` — nessun vincolo FK reale (verificato leggendo per intero
 `2023_01_01_000003_create_oauth_access_tokens_table.php` e
+`..._create_socialite_user_table.php`). `UserObserver::deleting()` pulisce solo il
+
+`.cascadeOnDelete()`: nessun vincolo FK reale (verificato leggendo per intero
 `..._create_socialite_users_table.php`). `UserObserver::deleting()` pulisce solo il
 personal team. `RevokeAllUserTokensAction.php` esiste gia' ma non e' mai chiamata da
 `DeleteUserAction` (unico consumer: `OauthAccessTokenResource.php`, azione manuale
@@ -91,12 +123,16 @@ token OAuth/Passport restano `revoked=false`.
 
 ### 1.4 ALTO — token OAuth Socialite salvati in chiaro
 
+### 1.4 ALTO: token OAuth Socialite salvati in chiaro
+
 `laravel/Modules/User/app/Models/SocialiteUser.php`: proprieta' `token` e' `fillable`
 ma **nessun cast** (`'token' => 'encrypted'` assente). La colonna `socialite_user.
 token` (TEXT) contiene il token OAuth del provider esterno (Google/Facebook/...) in
 chiaro.
 
 ### 1.5 MEDIO — mass assignment strutturale dormiente
+
+### 1.5 MEDIO: mass assignment strutturale dormiente
 
 `laravel/Modules/User/app/Actions/CreateUserAction.php` (top-level) fa
 `User::create([...$attributes, ...($this->data ?? [])])`. `Modules\User\Datas\
@@ -113,6 +149,16 @@ Vedi 1.1 — causa strutturale del bug critico, va risolta insieme al fix.
 
 Sulla connessione `user` coesistono entrambe le tabelle (singolare/plurale), 0 righe
 ciascuna — solo `model_has_role` (singolare) e' in uso con 482 righe. Duplicazione di
+
+`password_expires_at`, `is_otp`, `type`, `state`, incluso `id`: tutti `fillable` su
+
+### 1.6 MEDIO: naming collision `BaseUserPolicy` vs `UserBasePolicy`
+
+Vedi 1.1: causa strutturale del bug critico, va risolta insieme al fix.
+
+### 1.7 BASSO: schema drift `model_has_permission` vs `model_has_permissions`
+
+ciascuna: solo `model_has_role` (singolare) e' in uso con 482 righe. Duplicazione di
 schema da ripulire, non exploitable ora.
 
 ### Verifiche pulite (nessun finding)
@@ -127,6 +173,8 @@ schema da ripulire, non exploitable ora.
   `password`/`remember_token`/`two_factor_*` in `$hidden`.
 - Hashing password: cast `'password' => 'hashed'` commentato ma hashing forzato via
   mutator esplicito in `BaseUser.php` — rischio mitigato a livello model.
+
+  mutator esplicito in `BaseUser.php`: rischio mitigato a livello model.
 - Log dati sensibili: `ProfileEditVoltComponent.php` logga solo `password_length`,
   mai il valore.
 
@@ -146,6 +194,14 @@ schema da ripulire, non exploitable ora.
 
 ### 2.2 ALTO — `app/Adapters/**` e' codice morto byte-identico ad `app/Actions/**`
 
+### 2.1 ALTO: 3 classi `CreateUserAction` duplicate, responsabilita' sovrapposte
+
+- `Actions\CreateUserAction`: validazione + welcome email + audit log, model
+- `Actions\User\CreateUserAction`: one-liner `app(User::class)->create($data)`,
+- `Actions\Socialite\CreateUserAction`: **corretta**: `UserContract` +
+
+### 2.2 ALTO: `app/Adapters/**` e' codice morto byte-identico ad `app/Actions/**`
+
 3 coppie di classi duplicate (`Otp/Hasher.php`, `EmailDomainAnalyzer.php`,
 `UserNameFieldsResolver.php`), zero caller in produzione (unico consumer: il proprio
 test dedicato), ciascuna con test suite propria duplicata. `diff` conferma differenza
@@ -153,11 +209,15 @@ di solo namespace.
 
 ### 2.3 MEDIO — 4 punti type-hintano `User` concreto invece di `UserContract`
 
+### 2.3 MEDIO: 4 punti type-hintano `User` concreto invece di `UserContract`
+
 - `app/Actions/CreateUserAction.php:45` `handle(): User`
 - `app/Actions/User/CreateUserAction.php:19` `execute(array $data): User`
 - `app/Actions/Activity/LogRegistrationAction.php:19` `execute(User $user, ...)`
 - `app/Observers/UserObserver.php:25,67` `created(User $user)`, `deleting(User $user)`
   (Observer legato a evento Eloquent — severita' bassa, accettabile)
+
+  (Observer legato a evento Eloquent: severita' bassa, accettabile)
 
 Contro 20 Actions che usano correttamente `UserContract`. Contro-esempio virtuoso:
 `app/Actions/Socialite/CreateUserAction.php:20-31`.
@@ -165,12 +225,18 @@ Contro 20 Actions che usano correttamente `UserContract`. Contro-esempio virtuos
 ### 2.4 ALTO — fallback hardcoded a modulo di progetto specifico
 
 `app/Datas/DeviceData.php:78-80` — `DeviceData::getSynchronizationId()` genera un
+
+### 2.4 ALTO: fallback hardcoded a modulo di progetto specifico
+
+`app/Datas/DeviceData.php:78-80`: `DeviceData::getSynchronizationId()` genera un
 fatal error garantito in questo progetto: `Class "Modules\Egea\Models\Synchronization"
 not found` (Egea e' un modulo di un progetto sibling, non presente qui). Altri
 riferimenti cross-modulo (`Tenant`, `Media`, `Notify`) sono dipendenze infrastrutturali
 legittime, non leak specifici di progetto.
 
 ### 2.5 confermato conforme — boundary XotBase
+
+### 2.5 confermato conforme: boundary XotBase
 
 Tutte le 6 hit iniziali di un grep grezzo `extends Resource|Page|Widget` risalgono a
 XotBase una volta verificata la classe genitore effettiva (alias `use ... as
@@ -181,6 +247,10 @@ riattivato.
 
 ### 2.6 confermato conforme — SSoT morph map
 
+disabilitato (`.php.no`, fuori autoload): dead code che violerebbe la regola se
+
+### 2.6 confermato conforme: SSoT morph map
+
 `laravel/Modules/Tenant/app/Providers/TenantServiceProvider.php:179-194`
 (`buildMorphMap`) contiene il fix gia' descritto in `decision-log.md`: forza
 `$typedMap['user'] = XotData::make()->getUserClass()` dopo il loop config.
@@ -189,6 +259,8 @@ riattivato.
 propria in conflitto.
 
 ### 2.7 BASSO — migration `_bak/` clutter non eseguibile ma pericoloso
+
+### 2.7 BASSO: migration `_bak/` clutter non eseguibile ma pericoloso
 
 `database/migrations/_bak/2026_02_13_172135_add_lang_column.php` duplica esattamente
 il nome del migration live. Verificato non eseguibile (`glob()` non ricorsivo in
@@ -215,15 +287,30 @@ l'intero repo, non solo User.
 
 ### 3.2 ALTA — PHPStan "0 errori" con 11 soppressioni inline nascoste
 
+### 3.1 ALTA: PHPMD e PHPInsights entrambi inutilizzabili in questo ambiente
+
+  100 MB`: phar corrotto/troncato.
+  must be compatible with Symfony\...\ExtensionInterface::load()`: conflitto
+- `laravel/phpinsights.phar`: 0 byte (mai scaricato). Fallback `php artisan insights`
+  fallito al 99% (1281/1282) con `ComposerNotFound: composer.lock not found` -
+
+**Nessun dato PHPMD/PHPInsights ottenibile**: gate di qualita' incompleto per
+
+### 3.2 ALTA: PHPStan "0 errori" con 11 soppressioni inline nascoste
+
 `php -d memory_limit=2048M ./vendor/bin/phpstan analyse --memory-limit=-1
 --no-progress Modules/User` → `[OK] No errors` (level 10/max, verificato reale). Ma
 11 `@phpstan-ignore` inline in `Modules/User/app`, di cui **7 concentrate in
 `Modules/User/app/Models/Traits/HasTeams.php`** (righe 97, 184, 186, 188, 190, 192 —
+
+`Modules/User/app/Models/Traits/HasTeams.php`** (righe 97, 184, 186, 188, 190, 192 -
 `method.notFound`, `return.type`, `property.nonObject`, `argument.type`). Lo "zero"
 non e' pulizia totale, e' pulizia + soppressione mirata su un file hot-spot (lo
 stesso file e' flaggato anche da Pint).
 
 ### 3.3 Pint --test — FAIL, 5 file, 18 fixer
+
+### 3.3 Pint --test: FAIL, 5 file, 18 fixer
 
 `app/Models/Models/BaseUser.php` (3 fixer: `braces`, `braces_position`,
 `blank_lines_before_namespace`) e `app/Models/Traits/HasTeams.php` (4 fixer:
@@ -240,6 +327,14 @@ Table class). Unica violazione reale: `BaseAuthWidget.php.no` (vedi 2.5), dead c
 
 ### 3.5 BASSO — inconsistenza architetturale `getTableColumns` posizionamento
 
+`not_operator_with_successor_space`): gli stessi 2 file applicativi coinvolti nel
+
+### 3.4 XotBase compliance: quasi 100%, verificato per famiglia
+
+View Pages 28/28, RelationManagers 22/22, Widgets 26/26: tutti verificati con
+
+### 3.5 BASSO: inconsistenza architetturale `getTableColumns` posizionamento
+
 76 file totali con `getTableColumns`, la stragrande maggioranza su `Tables/
 *Table.php` dedicate. 4 eccezioni con l'hook sulla root della Resource/Widget:
 `OauthAccessTokenResource.php:166`, `OauthPersonalAccessClientResource.php:39`,
@@ -250,6 +345,10 @@ debito di migrazione verso il pattern usato dalle altre 39 Resource.
 
 ### 3.6 confermato — 0 violazioni reali "array una chiave per riga" in scope
 
+pre-separazione `Tables/`: non hard-violation (`XotBaseResource` permette entrambi),
+
+### 3.6 confermato: 0 violazioni reali "array una chiave per riga" in scope
+
 Regex mirata su `app/Filament` + `app/Actions`: tutti i match sono falsi positivi
 (riga commentata, arrow function `fn(...) => ...`). **Fuori scope pero' trovato per
 caso**: `Modules/User/lang/it/login.php:7-11` ha array annidati multi-chiave su riga
@@ -257,11 +356,17 @@ singola — violazione reale, ma fuori dal perimetro Filament/Actions di questo 
 
 ### 3.7 MEDIO — 41 `->label()` espliciti, 17 file, contro convenzione
 
+singola: violazione reale, ma fuori dal perimetro Filament/Actions di questo check.
+
+### 3.7 MEDIO: 41 `->label()` espliciti, 17 file, contro convenzione
+
 Contraddice la memoria di progetto "label autoconfigurate via LangServiceProvider".
 Hotspot: `ClientsRelationManager.php` (5), `OauthPersonalAccessClientResource.php`
 (5), `TokensRelationManager.php` (5), `OauthDeviceCodeResource.php` (4).
 
 ### 3.8 MEDIO — Livewire residuo, doc `livewire-inventory.md` con claim non riproducibili
+
+### 3.8 MEDIO: Livewire residuo, doc `livewire-inventory.md` con claim non riproducibili
 
 3 classi attive in `app/Http/Livewire` (`PrivacyPolicy.php`, `TermsOfService.php`,
 `Profile/DeleteAccount.php`) + `app/Livewire/Logout.php` orfano, come gia'
@@ -284,6 +389,17 @@ lavoro per 10.4 (attualmente `blocked`).
 
 ### 3.9 BASSO — dead code, glob del task intercetta solo 5 di ~19 file morti
 
+dentro un metodo `testfunction()`: debug code in produzione.
+
+- Doc dice "`DeleteAccountWidget::destroy()` usa `->run()` inesistente": verificato
+  riscritto nel commit `63d53469f8` (2026-09-21, stessa data della doc): claim non
+- Doc dice "`lang/it/login.php` troncato (ritorna int)": file attuale: 33 righe,
+- Doc dice "`login.blade.php` troncato a una riga": file attuale: 116 righe, ben
+
+bug non riscontrabili oggi: da verificare/correggere prima di usarla come base di
+
+### 3.9 BASSO: dead code, glob del task intercetta solo 5 di ~19 file morti
+
 Pattern richiesto (`*.bak|*.orig|*Old.php|*Legacy.php|*V2.php`): 5 file `.bak`. Find
 allargata mostra molti altri: 4 `.old` (`Contracts/CanComment.php.old`,
 `Contracts/PassportHasApiTokensContract.php.old`, `Models/OauthAccessToken.php.old`,
@@ -294,6 +410,8 @@ dentro `app/Filament`.
 
 ### 3.10 BASSO — 3 helper Actions fuori convenzione QueueableAction
 
+### 3.10 BASSO: 3 helper Actions fuori convenzione QueueableAction
+
 56/57 file in `app/Actions` usano `QueueableAction`. 3 eccezioni (`Otp/Hasher.php`,
 `Socialite/Utils/EmailDomainAnalyzer.php`, `Socialite/Utils/
 UserNameFieldsResolver.php`) sono helper/value-object senza `execute()`, ambiguita'
@@ -303,6 +421,10 @@ con la regola no-services/Actions-only.
 
 Namespace errato `Modules\User\Models\Models`, versione vecchia/minimale rispetto a
 `Models/BaseUser.php`. Non referenziato da autoload utile trovato — candidato a
+
+### 3.11 file orfano: `app/Models/Models/BaseUser.php`
+
+`Models/BaseUser.php`. Non referenziato da autoload utile trovato: candidato a
 rimozione (memoria "il duplicato si cancella, non si preserva").
 
 ---
@@ -311,10 +433,14 @@ rimozione (memoria "il duplicato si cancella, non si preserva").
 
 ### 4.1 ALTO — `UserPolicy` (la policy bypassata, vedi 1.1) ha zero copertura
 
+### 4.1 ALTO: `UserPolicy` (la policy bypassata, vedi 1.1) ha zero copertura
+
 `grep -rl "\bUserPolicy\b" tests/` → 0 risultati. La combinazione "logica permissiva
 + zero test" ha permesso al bug 1.1 di restare invisibile.
 
 ### 4.2 ALTO — intero namespace `Actions/Shield/*` sistematicamente scoperto
+
+### 4.2 ALTO: intero namespace `Actions/Shield/*` sistematicamente scoperto
 
 9/57 Actions a zero riferimenti in test, tutte confermate `QueueableAction`+
 `execute()`: `Authentication/GetAuthenticationLogQueryForAuthenticatableAction`,
@@ -335,11 +461,18 @@ Verifica statica: `login.blade.php` e' oggi 116 righe ben formate, `lang/it/
 login.php` ritorna un array valido. Il bug citato risulta gia' risolto (coerente con
 3.8) — questi 4 test bloccano copertura reale del `LoginWidget` senza motivo attuale.
 
+### 4.3 ALTO: 4 test skippati per un bug gia' risolto (skip stale)
+
+`tests/Feature/Filament/Widgets/Auth/LoginWidgetTest.php:60,81,94,115`: skip con
+3.8): questi 4 test bloccano copertura reale del `LoginWidget` senza motivo attuale.
+
 ### 4.4 10 model pivot/junction a zero riferimenti in test
 
 `Membership`, `ModelHasPermission`, `ModelHasRole`, `ModelRole`, `PermissionRole`,
 `PermissionUser`, `PersonalAccessToken`, `ProfileTeam`, `RoleHasPermission`,
 `TenantUser` — tutti hanno factory ma zero uso in test (verificato per riferimento di
+
+`TenantUser`: tutti hanno factory ma zero uso in test (verificato per riferimento di
 classe, non solo nome file, per evitare falsi negativi).
 
 ### 4.5 16/38 Policy solo "can be instantiated", zero assert su logica reale
@@ -369,16 +502,29 @@ policy coverage minimo.
 
 Conforme alla regola dati sacri, nessuna violazione trovata (21 skip/dead test in 11
 file, in gran parte skip condizionali legittimi su schema mancante — 4 dei quali
+
+garantita: vedi memoria `regola-senza-test-regredisce`), XotBase-only extension,
+
+### 4.8 positivo: factory 1:1 perfetto
+
+
+### 4.9 positivo: 0 occorrenze `RefreshDatabase`
+
+file, in gran parte skip condizionali legittimi su schema mancante: 4 dei quali
 sono lo skip stale del punto 4.3).
 
 ### 4.10 duplicazione infrastruttura test
 
 `tests/Helpers.php` (787 righe) vs `tests/Support/helpers.php` (530 righe) — diff
+
+`tests/Helpers.php` (787 righe) vs `tests/Support/helpers.php` (530 righe): diff
 mostra sovrapposizione quasi totale.
 
 ### 4.11 contaminazione cartella test
 
 `tests/Unit/graphify-out/cache/ast/v0.9.33/` — cache AST di `graphify` finita dentro
+
+`tests/Unit/graphify-out/cache/ast/v0.9.33/`: cache AST di `graphify` finita dentro
 `tests/Unit/` invece che in `graphify-out/` a root progetto.
 
 ---
@@ -388,6 +534,10 @@ mostra sovrapposizione quasi totale.
 ### 5.1 ALTO — N+1 attivo e confermato — `OauthClientResource` (cluster Passport)
 
 `Filament/Clusters/Passport/Resources/OauthClientResource.php:31-48` — `table()`
+
+### 5.1 ALTO: N+1 attivo e confermato: `OauthClientResource` (cluster Passport)
+
+`Filament/Clusters/Passport/Resources/OauthClientResource.php:31-48`: `table()`
 override reale (invocato da Filament) con `TextColumn::make('owner.name')` su
 relazione polimorfica `owner`, **nessun** `getEloquentQuery()` override in tutto il
 file (95 righe). Ogni riga della lista OAuth Clients lazy-loada `owner`
@@ -397,11 +547,17 @@ applicato in modo incoerente.
 
 ### 5.2 ALTO — `PassportStatsWidget` — polling 5s default, 5 COUNT non cachate
 
+**correttamente** eager-loadato: il fix e' gia' lo standard nel modulo, solo
+
+### 5.2 ALTO: `PassportStatsWidget`: polling 5s default, 5 COUNT non cachate
+
 Ne' il widget ne' `XotBaseStatsOverviewWidget` sovrascrivono `$pollingInterval`
 (default Filament `'5s'` via `CanPoll`). 5 query COUNT/aggregate non cachate eseguite
 ogni 5 secondi per ogni utente con la dashboard Passport aperta.
 
 ### 5.3 ALTO — cache assente su tutto il modulo (0/357 file)
+
+### 5.3 ALTO: cache assente su tutto il modulo (0/357 file)
 
 Zero `Cache::`/`remember()`/`cache()` in tutto `app/`. Colpisce in particolare
 `UsersChartWidget.php:94-103` e `UserTypeRegistrationsChartWidget.php:54-60` (query
@@ -410,17 +566,23 @@ hanno `pollingInterval = null`, quindi non c'e' repolling automatico.
 
 ### 5.4 MEDIO — 2 notifiche su 3 non in coda
 
+### 5.4 MEDIO: 2 notifiche su 3 non in coda
+
 `Notifications/Auth/ResetPassword.php` e `VerifyEmail.php` estendono le classi base
 Laravel (non `ShouldQueue`), inviano mail in modo sincrono bloccando la request.
 Confronto corretto: `Otp.php` implementa `ShouldQueue` esplicitamente.
 
 ### 5.5 MEDIO — bulk action con UPDATE per-utente in loop invece di batch
 
+### 5.5 MEDIO: bulk action con UPDATE per-utente in loop invece di batch
+
 Duplicato in `OauthAccessTokenResource.php:145-152` e `:293-300` (il secondo blocco
 e' dead code, vedi 5.7): `RevokeAllUserTokensAction::execute()` fa una `UPDATE ...
 WHERE user_id = ?` per ogni utente selezionato invece di `whereIn(...)->update(...)`.
 
 ### 5.6 MEDIO — eager loading dichiarato ma mai usato, 4 resource su 17
+
+### 5.6 MEDIO: eager loading dichiarato ma mai usato, 4 resource su 17
 
 `TeamUserResource.php:24` (`with(['team','user'])`), `TenantUserResource.php:24`
 (`with(['tenant','user'])`), `TeamInvitationResource.php:41` (`with(['team'])`),
@@ -432,6 +594,12 @@ load di lista.
 ### 5.7 MEDIO — 144 righe di codice morto duplicato su hook tabella
 
 `OauthAccessTokenResource.php:166-309` — `getTableColumns()`, `getTableFilters()`,
+
+polimorfica: 1 query extra per ogni `authenticatable_type` distinto): le rispettive
+
+### 5.7 MEDIO: 144 righe di codice morto duplicato su hook tabella
+
+`OauthAccessTokenResource.php:166-309`: `getTableColumns()`, `getTableFilters()`,
 `getTableActions()`, `getTableBulkActions()` mai invocati (la classe ha gia' un
 override completo di `table()` righe 38-165). Duplica in modo non sincronizzato la
 stessa logica di revoca-token del punto 5.5. Coerente con story gemella gia'
@@ -450,11 +618,23 @@ un singolo User, ≤ paginazione).
 
 ### 5.10 nota metodologica importante — dead code silenzioso da wiring Filament
 
+### 5.8 BASSO: `save()` ridondante dopo `sync()` in bulk action
+
+`PermissionResource/Pages/ListPermissions.php:90-105`: `save()` dopo `sync()` in
+
+### 5.9 BASSO: N+1 bounded su RelationManager
+
+`UserResource/RelationManagers/OauthTokensRelationManager.php:34-35`: colonna
+
+### 5.10 nota metodologica importante: dead code silenzioso da wiring Filament
+
 Un `getTableColumns()` scritto su una `ListRecords` page **non viene mai chiamato**
 se la Resource non ha un proprio `table()` override (Filament passa da
 `getTableClass()` → la classe `*Table` dedicata, vedi
 `XotBaseListRecords.php:17-21`). Due finding iniziali (`RoleResource/Pages/
 ListRoles.php:27`, `BaseProfileResource/Pages/ListProfiles.php:32-78` — quest'ultimo
+
+ListRoles.php:27`, `BaseProfileResource/Pages/ListProfiles.php:32-78`: quest'ultimo
 con un `$record->update()` pericoloso dentro una callback colonna) sono stati
 **declassati** dopo verifica: sono dead code silenzioso, non bug attivi in
 produzione. Resta comunque igiene del codice da bonificare (codice pericoloso che
@@ -476,6 +656,12 @@ dell'agente conservato nella cronologia task del run)*
 - **Morph map confermata corretta** anche dal punto di vista schema (coerente con
   2.6): risoluzione per-tenant, nessun FQCN hardcoded nello schema.
 - **`BaseTenant.php`** — gap nella generazione UUID segnalato, da verificare insieme
+
+*(sintesi dal report dell'agente eloquent: findings principali, testo integrale
+
+  non condividono lo stesso pattern di generazione: rischio di incoerenza tra
+  dall'audit sicurezza, punto 1.3, per `oauth_access_tokens`/`socialite_user`) -
+- **`BaseTenant.php`**: gap nella generazione UUID segnalato, da verificare insieme
   al punto 15.1/15.3 (drift profiles).
 - **Clutter migration directory**: file relitto `.boh`/`.wip`/`.old` oltre al gia'
   noto `_bak/` (punto 2.7).
@@ -491,11 +677,15 @@ dell'agente conservato nella cronologia task del run)*
 
 ### 7.1 CRITICO (per volume) — bug di self-nesting/naming patologico, 626 file (~16%)
 
+### 7.1 CRITICO (per volume): bug di self-nesting/naming patologico, 626 file (~16%)
+
 - 612 file vivono dentro un path con una cartella ripetuta immediatamente su se
   stessa (`X/X/...`). Hotspot: 573 file sotto `2fa/2fa/...` (dentro `-integration/`
   e `_integration/`), 39 sotto `bmad/bmad/...` (annidato fino a **8 livelli**:
   `bmad/bmad/bmad/bmad/bmad/bmad/bmad/bmad`).
 - `docs/docs/` (nesting a 4 livelli): confermato reale — diff tra
+
+- `docs/docs/` (nesting a 4 livelli): confermato reale: diff tra
   `docs/docs/decisions/2fa-user-model-decision.md` e
   `docs/docs/docs/docs/decisions/2fa-user-model-decision.md` e' **vuoto** (contenuto
   identico, solo path duplicato).
@@ -503,6 +693,8 @@ dell'agente conservato nella cronologia task del run)*
   (es. `Users should carefully review and align their data columns before
   uploading.md`).
 - 15 file con spazi nel nome — violazione grave della convenzione kebab-case.
+
+- 15 file con spazi nel nome: violazione grave della convenzione kebab-case.
 - **Causa radice probabile**: un tool di generazione automatica di documentazione
   (verosimilmente un'integrazione AI che genera nomi file da frammenti di
   testo/errore invece che da un titolo breve) auto-invocato ricorsivamente su
@@ -522,10 +714,16 @@ corrotto/duplicato (sezione `## Note` due volte). Elenca solo 6 cartelle
 
 ### 7.3 bug `.gitignore` — righe senza ancoraggio, gia' tracciato
 
+- non menziona nessuna delle cartelle piu' popolose: `bmad` (382 file), `errori`
+
+### 7.3 bug `.gitignore`: righe senza ancoraggio, gia' tracciato
+
 `docs/.gitignore` righe 13-14 (`archive/**`, `legacy/**`) senza slash iniziale
 (`/archive/**`), quindi non ancorate alla root di `docs/`. **Story gia' esistente**
 in `docs/sprint-status.yaml` (root, righe 52125-52130):
 `5.37-gitignore-archive-legacy-bug-user`, status `backlog`, owner `null` — da
+
+`5.37-gitignore-archive-legacy-bug-user`, status `backlog`, owner `null`: da
 riassegnare, non serve una nuova story.
 
 ### 7.4 cluster di cartelle sovrapposte (naming)
@@ -547,6 +745,13 @@ byte, `# adr\n\nAuto-generated directory documentation.`), non documentazione pe
 
 `business-logic-analysis-1.md`, `dry-kiss-analysis-1.md`,
 `architecture/architecture-1.md` — pattern classico di tool che duplica invece di
+
+- coerente con memoria di progetto `tiny-scaffold-docs-pattern.md`.
+
+### 7.6 naming convention: 19 file con suffisso numerico
+
+`business-logic-analysis-documentation-themes.md`, `dry-kiss-analysis-modulo-user.md`,
+`architecture/architecture-1.md`: pattern classico di tool che duplica invece di
 sovrascrivere. Zero violazioni per data nel nome (`YYYY-MM-DD`). La violazione piu'
 grave resta il punto 7.1 (nomi >100 caratteri, spazi).
 
@@ -566,6 +771,8 @@ grave resta il punto 7.1 (nomi >100 caratteri, spazi).
   visto da due angolazioni: la mancanza di test ha permesso al bug di restare
   invisibile.
 - 1.3 (GDPR no-cascade) dipende dal fix schema (FK cascade mancanti, sezione 6) —
+
+- 1.3 (GDPR no-cascade) dipende dal fix schema (FK cascade mancanti, sezione 6) -
   un fix Actions-only senza FK non e' sufficiente per garanzia strutturale.
 - 2.1/2.2 (duplicazione CreateUserAction/Adapters) e 3.10 (helper fuori convenzione
   Actions) sono la stessa area di debito: consolidamento namespace `Actions/`.
@@ -573,3 +780,5 @@ grave resta il punto 7.1 (nomi >100 caratteri, spazi).
   far atterrare la story di consolidamento.
 - 3.8 (claim doc non riproducibili) blocca la story esistente `10.4` (gia'
   `blocked`) — la doc va corretta prima di sbloccarla.
+
+  `blocked`): la doc va corretta prima di sbloccarla.

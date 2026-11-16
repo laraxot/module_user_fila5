@@ -1,5 +1,15 @@
 # Project context — SuperAdmin nel user menu
 
+---
+title: "Project context: SuperAdmin nel user menu"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "project context   superadmin nel user menu user"
+---
+# Project context: SuperAdmin nel user menu
+
 Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).
 
 ## Perché esiste
@@ -76,6 +86,8 @@ Markup: `x-filament::icon-button`. Stroke `currentColor` sul root. Outline origi
 - `toggleSuperAdmin()`: `$this->profile->toggleSuperAdmin()` + `redirect($this->url, 303)`.
 - `getViewData()`: `profile`.
 - `protected static bool $isDiscovered = false` — **obbligatorio** perché `discoverWidgets` scansiona `Filament/Widgets`.
+
+- `protected static bool $isDiscovered = false`: **obbligatorio** perché `discoverWidgets` scansiona `Filament/Widgets`.
 - Non dichiarare `$view` se la vista esiste al path convenzionale; altrimenti `user::filament.widgets.profile.super-admin`.
 
 **Non fare:** `XotBaseSchemaWidget`, form schema, registrazione in `->widgets([...])`.
@@ -92,6 +104,8 @@ Copiare il markup attuale di `livewire/profile/super-admin.blade.php` (due `x-fi
 (file lang da creare, struttura espansa).
 
 ### AdminPanelProvider — modifiche (9.2)
+
+### AdminPanelProvider: modifiche (9.2)
 
 File: `laravel/Modules/User/app/Providers/Filament/AdminPanelProvider.php`
 
@@ -115,6 +129,8 @@ FilamentView::registerRenderHook(
 
 - Non toccare `team.change`, `socialite.buttons`, `terms-of-service`, `database-notifications`.
 - Non modificare `XotBasePanelProvider` — solo il file `AdminPanelProvider.php`.
+
+- Non modificare `XotBasePanelProvider`: solo il file `AdminPanelProvider.php`.
 - Non aggiungere widget alla griglia dashboard (`discoverWidgets`).
 - Non cambiare `$panel->default()` o `pages()`.
 

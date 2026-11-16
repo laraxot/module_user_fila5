@@ -1,5 +1,15 @@
 # Coverage — User
 
+---
+title: "Coverage: User"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "coverage   user user"
+---
+# Coverage: User
+
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.
 
 - PHPStan `analyse Modules/User`: 1678 file, **0 errori** (level max, config repo).
@@ -10,6 +20,9 @@ Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.
   `feedback-phpmd-phar-dies-on-dnf-types.md`). Nessun conteggio finding producibile.
 - PHPInsights: non eseguito in questa sessione (scope git-hygiene, non code-quality;
   nessun file `.php` di produzione modificato — solo rimozione marker/file morti).
+
+  modulo, non introdotto da questa sessione: memoria second brain
+  nessun file `.php` di produzione modificato: solo rimozione marker/file morti).
 - Pest: **bloccato**, DB `10.100.200.53:3306` irraggiungibile (`nc -z -w3` fallito).
   Blocco infrastrutturale pre-esistente, non introdotto qui (memoria
   `project-test-db-unreachable-drives-skips.md`).

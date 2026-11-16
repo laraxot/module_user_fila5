@@ -1,5 +1,7 @@
 ---
 title: "Folio app pages — owner modulo (non tema)"
+
+title: "Folio app pages: owner modulo (non tema)"
 type: concept
 tags: [user, folio, area-personale, dashboard, pageslugmiddleware]
 created: 2026-07-13
@@ -10,12 +12,20 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/363"
 related:
-  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
-  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - ../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
   - folio-app-pages-owner.md
 ---
 
 # Folio app pages — owner `User`
+
+  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+  - ../../../../../Themes/Sixteen/docs/page-directory-structure.md
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
+status: draft
+
+# Folio app pages: owner `User`
 
 ## Perché non nel tema
 
@@ -41,7 +51,7 @@ Folio monta **tema prima**, poi **moduli** (`FolioVoltServiceProvider`). Rotte d
 - `new class extends Component` + `mount()` per query/redirect
 - `@volt('…')` statico = `name()`
 
-Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+Canon: [folio-volt-app-pages.md](../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
 
 ## Pratiche + Fixcity
 
@@ -49,5 +59,21 @@ Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concept
 
 ## Collegamenti
 
+- [page-directory-structure.md](../../../../Themes/Sixteen/docs/page-directory-structure.md)
+- [personal-area-routes.md](../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
+
+Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+- `PageSlugMiddleware` + JSON CMS (`pages/area-personale/pratiche.json` e le altre voci: lo slug nel file è solo `pratiche`, la cartella aggiunge `area-personale.`)
+- `new class extends Component` + `mount()` per query/redirect
+- `@volt('…')` statico = `name()`
+
+Canon: [folio-volt-app-pages.md](../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md).
+
+
+`area-personale.pratiche` usa `BuildAuthenticatedUserTicketsQueryAction` (modulo **Fixcity**): dipendenza consumer→dominio ticket, non spostare la blade in Fixcity se la UX è area utente.
+
+
+- [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
+- [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)
 - [page-directory-structure.md](../../../../../Themes/Sixteen/docs/page-directory-structure.md)
 - [personal-area-routes.md](../../../../../Themes/Sixteen/docs/wiki/concepts/personal-area-routes.md)

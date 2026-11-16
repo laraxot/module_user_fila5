@@ -1,11 +1,23 @@
 ---
 title: "User Module - Roadmap, Issues & Optimization"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "user module - roadmap, issues & optimization user"
+type: concept
+tags: [roadmap, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
+
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -377,10 +389,10 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./README.md)
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
-- [← Project Roadmap](../../../../../docs/project-analysis-and-roadmap.md)
-- [← Root Documentation](../../index.md)
+- [← User Module README](./readme.md)
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
+- [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
+- [← Root Documentation](../../../docs/index.md)
 
 ---
 

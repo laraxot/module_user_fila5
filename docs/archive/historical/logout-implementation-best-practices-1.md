@@ -1,17 +1,9 @@
----
-title: "Best Practices per l'Implementazione del Logout"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "best practices per l'implementazione del logout user"
----
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
-- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

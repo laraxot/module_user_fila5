@@ -1,5 +1,15 @@
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
+---
+title: "User: Analisi architetturale e gap (BMAD, 2026-09-22)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   analisi architetturale e gap (bmad, 2026-09-22) user"
+---
+# User: Analisi architetturale e gap (BMAD, 2026-09-22)
+
 Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + Filament 5, architettura Laraxot/Xot).
 
 ## 1. Inventario sintetico
@@ -8,6 +18,8 @@ Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + 
 |---|---|---|
 | Models `app/Models` | 50 classi top-level + 2 duplicati morti (`Models/Models/BaseUser`, `Passport/Client`) | 38 policy, 16 traits, 1 scope |
 | Actions `app/Actions` | 54 file PHP — 53 con `execute()`, 54 con `QueueableAction` | 8 domini + 2 duplicazioni |
+
+| Actions `app/Actions` | 54 file PHP: 53 con `execute()`, 54 con `QueueableAction` | 8 domini + 2 duplicazioni |
 | Adapters | 3 file | copie di `Actions/Otp` e `Actions/Socialite/Utils`, 0 consumatori (rimossi in clean-up) |
 | Contracts | 24 | ~20 senza implementor nel modulo (vestigia Fortify) |
 | Enums | 5 file, 4 enum | `LanguageEnum` duplicata (rimosse le copie) |
@@ -25,6 +37,8 @@ Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + 
 ## 2. Top gap architetturali
 
 1. **`app/Actions/CreateUserAction.php`** — non-Spatie (ctor + `handle()`), duplicato di `Actions/User/CreateUserAction.php`, 0 consumatori. *(rimosso in clean-up)*
+
+1. **`app/Actions/CreateUserAction.php`**: non-Spatie (ctor + `handle()`), duplicato di `Actions/User/CreateUserAction.php`, 0 consumatori. *(rimosso in clean-up)*
 2. **Modelli duplicati/morti**: `app/Models/Models/BaseUser.php` (ns errato, 0 usi), `app/Models/Passport/Client.php` (duplica `OauthClient`).
 3. **3 risorse sul tabella `oauth_clients`**: `ClientResource`, `OauthClientResource`, `Clusters/Passport/Resources/OauthClientResource`.
 4. **2 modelli per `oauth_access_tokens`**: `OauthAccessToken` e `OauthToken`; `PersonalAccessTokenResource` su `OauthAccessToken` con copie proprie di Form/Table.
@@ -35,6 +49,8 @@ Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + 
 9. **`UserObserver` mai registrato** + `config('user.create_personal_team')` inesistente.
 10. **Policy non registrate** (`registerPolicies()` vuoto in `UserServiceProvider`; commentato in `PassportServiceProvider`).
 11. **`app/Application/UseCases/Owners/`** — 2 contract, 0 impl/consumer.
+
+11. **`app/Application/UseCases/Owners/`**: 2 contract, 0 impl/consumer.
 12. **Eventi ombra** (custom `Login`/`Registered` vs `Illuminate\Auth\Events\*`): nessun listener sugli eventi custom.
 13. **~19 Eventi e ~20 Contracts senza consumatori** (Fortify).
 14. **Controller morti**: `Api/Login`, `Api/Register`, `Auth/EmailVerification`, `Auth/VerifyEmail`, `Upgrade`; `routes/auth.php` commentato; `routes/web_tall.php` non caricato (`XotBaseRouteServiceProvider` carica solo `web.php`+`api.php`).

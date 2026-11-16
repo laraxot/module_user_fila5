@@ -13,6 +13,11 @@ related:
 
 # User — `Application/` in root del modulo
 
+type: story
+tags: [docs, user, bmad]
+
+# User — `Application/` in root del modulo
+
 **Perché.** PSR-4 `Modules\User\` → `app/`. Il file `Application/UseCases/Owners/GetAllOwnersRelationshipUseCaseContract.php` in **root** era un duplicato di `app/Application/UseCases/Owners/...` (root senza `SaveOwnershipRelationUseCaseContract`). PascalCase in root viola l'igiene moduli.
 
 `UserMigrationSyntaxTest` **non** ha marker: l'assert cerca la stringa `<<<<<<<` nelle migration. Falso positivo degli scanner.

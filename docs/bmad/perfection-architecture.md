@@ -1,5 +1,7 @@
 ---
 title: "Architecture — Perfezione assoluta del modulo User"
+
+title: "Architecture: Perfezione assoluta del modulo User"
 type: architecture
 module: User
 status: draft
@@ -10,6 +12,9 @@ related:
   - ./perfection-epics.md
   - ./perfection-decision-log.md
   - ./architecture.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "architecture: perfezione assoluta del modulo user user"
 ---
 
 # Architecture: Perfezione assoluta del modulo User
@@ -32,6 +37,8 @@ Filament chrome (coperto da Epic 9/10).
 
 ## 2. Stato attuale — assessment per layer
 
+## 2. Stato attuale: assessment per layer
+
 | Layer | Stato | Evidenza |
 |---|---|---|
 | Contracts (`UserContract`/`ProfileContract`) | Pattern presente e corretto, applicato incompletamente | 20 Actions corrette vs 4 punti su concreto (brainstorming §2.3) |
@@ -45,11 +52,15 @@ Filament chrome (coperto da Epic 9/10).
 
 ## 3. ADR — decisioni architetturali per le epic 11-16
 
+## 3. ADR: decisioni architetturali per le epic 11-16
+
 ### ADR-P001: risoluzione naming collision `UserPolicy`/`BaseUserPolicy`
 
 **Contesto:** `UserPolicy` (attiva, auto-discovered) estende `UserBasePolicy`
 (pass-through vuoto) e bypassa l'autorizzazione. `BaseUserPolicy` (a controllo
 ruolo, corretta) esiste ma non e' mai estesa da nessuno — e' codice morto per un
+
+ruolo, corretta) esiste ma non e' mai estesa da nessuno: e' codice morto per un
 naming quasi-identico che ha portato a costruire la catena di ereditarietà sbagliata.
 
 **Decisione:** `UserPolicy` deve estendere `BaseUserPolicy` (non `UserBasePolicy`).
@@ -58,6 +69,8 @@ Rinominare le due classi per eliminare l'ambiguita' semantica: proposta
 esplicito solo se ha ancora consumer reali una volta corretto `UserPolicy`;
 `BaseUserPolicy` diventa la base a controllo ruolo con nome che non collida (es.
 `RoleBasedUserPolicy` o analogo — la scelta finale del nome spetta a chi implementa
+
+`RoleBasedUserPolicy` o analogo: la scelta finale del nome spetta a chi implementa
 la story, il vincolo e' "i due nomi non devono differire solo per l'ordine di due
 parole").
 
@@ -66,6 +79,10 @@ parole").
 `BaseUserPolicy` come dead code duplicato, stesso debito riprodotto.
 
 **Rationale:** memoria di progetto `filament-hook-naming-collision.md` — pattern
+
+`UserPolicy` senza toccare `BaseUserPolicy`: scartata perche' lascerebbe
+
+**Rationale:** memoria di progetto `filament-hook-naming-collision.md`: pattern
 gia' noto, qui si ripete sulle Policy invece che sugli hook. La cura e' rompere la
 somiglianza del nome, non solo il collegamento.
 
@@ -84,6 +101,8 @@ momento dell'implementazione che resti vero).
 
 **Alternative scartate:** mantenere 3 classi con responsabilita' esplicitamente
 distinte e nomi diversi — scartata perche' il nome identico e' esso stesso il bug
+
+distinte e nomi diversi: scartata perche' il nome identico e' esso stesso il bug
 (qualunque nuovo sviluppatore importa quella sbagliata per caso, come probabilmente
 gia' successo).
 
@@ -93,6 +112,9 @@ gia' successo).
 ma codice con zero caller di produzione — memoria [[il-duplicato-si-cancella-non-si-
 preserva]]). Verificare a tempo di implementazione che il grep "zero consumer" sia
 ancora vero (regola [[verify-before-edit-concurrent-sessions]] — altre sessioni
+
+ma codice con zero caller di produzione: memoria [[il-duplicato-si-cancella-non-si-
+ancora vero (regola [[verify-before-edit-concurrent-sessions]]: altre sessioni
 potrebbero aver toccato il modulo nel frattempo).
 
 ### ADR-P004: FK cascade per il flusso GDPR (RQ-SEC-003 + RQ-SCHEMA-002)
@@ -104,12 +126,16 @@ livello Action ne' a livello DB) che token/social/log vengano rimossi.
 1. **Action-level** (Epic 11): `DeleteUserAction` invoca esplicitamente
    `RevokeAllUserTokensAction` e le Action equivalenti per `SocialiteUser`/
    `AuthenticationLog`/pivot ruolo — comportamento esplicito, testabile,
+
+   `AuthenticationLog`/pivot ruolo: comportamento esplicito, testabile,
    indipendente dal motore DB.
 2. **Schema-level** (Epic 18, additivo): FK con `cascadeOnDelete()` come
    safety-net per i path che non passano da `DeleteUserAction` (script, tinker,
    comandi artisan futuri).
 
 **Rationale:** un solo livello non basta — solo Action-level e' bypassabile da
+
+**Rationale:** un solo livello non basta: solo Action-level e' bypassabile da
 scritture dirette; solo schema-level non da' controllo su anonimizzazione (alcuni
 dati vanno anonimizzati, non cancellati, per audit trail).
 
@@ -120,11 +146,15 @@ mai un `migrate:fresh`/wipe.
 
 ### ADR-P005: cache layer — dove e come
 
+### ADR-P005: cache layer: dove e come
+
 **Contesto:** 0/357 file usano cache nel modulo; 3 punti identificati (Stats
 widget, 2 chart widget) beneficerebbero di un TTL esplicito.
 
 **Decisione:** `Cache::remember()` con chiave che include il tenant (coerente con
 `morph-map-e-per-tenant` — mai una chiave cache condivisa fra tenant su dati
+
+`morph-map-e-per-tenant`: mai una chiave cache condivisa fra tenant su dati
 tenant-scoped) e TTL breve (60s per gli stat counter, 5-15 min per i grafici
 storici che cambiano lentamente). Niente cache layer nuovo/astrazione custom: uso
 diretto della facade `Cache` di Laravel, coerente con "niente Services, niente
@@ -142,11 +172,17 @@ test), cosi' la regola non "non scatta" piu' silenziosamente (memoria
 
 ### ADR-P007: consolidamento documentazione — non cancellare, mai
 
+[[memoria-non-scatta-guardia-si]]: una regola non testata regredisce, memoria
+
+### ADR-P007: consolidamento documentazione: non cancellare, mai
+
 **Decisione:** per il bug di self-nesting (626 file) e i cluster di cartelle
 sovrapposte, l'approccio e' sempre: designare canonico, linkare/marcare
 `superseded` le altre, **mai eliminare**. Per i 612 file self-nested
 specificamente, la story deve prima capire se sono *copie byte-identiche* (come
 verificato per il campione `docs/docs/`) — in quel caso un link/redirect verso il
+
+verificato per il campione `docs/docs/`): in quel caso un link/redirect verso il
 path corretto e' sufficiente senza perdita di informazione; se non sono identici,
 serve merge manuale prima di marcare superseded.
 
@@ -157,12 +193,16 @@ Epic 11 (Sicurezza)  ──depends on──> Epic 18.2 (FK cascade, ADR-P004 ste
      │
      └─ RQ-SEC-003 puo' partire con solo lo step Action-level (ADR-P004.1),
         non blocca su Epic 18 per iniziare — ma non si considera "chiuso"
+
+        non blocca su Epic 18 per iniziare: ma non si considera "chiuso"
         finche' anche lo step schema-level non e' fatto.
 
 Epic 15 (Architettura/Qualita') ──independent, puo' partire subito
 Epic 16 (Performance) ──independent, puo' partire subito
 Epic 17 (Test) ──RQ-TEST-001 dipende dal fix Epic 11.1 (altrimenti si testa
                   comportamento che si sta per cambiare) — resto indipendente
+
+                  comportamento che si sta per cambiare): resto indipendente
 Epic 18 (Schema) ──independent salvo il link con Epic 11 sopra
 Epic 19 (Documentazione) ──completamente indipendente dalle altre 5
 ```
@@ -174,6 +214,8 @@ che restano su un binario separato.
 
 - **Rischio di regressione su `HasTeams.php`**: il file e' hot-spot sia per
   PHPStan (7 `@phpstan-ignore`) sia per Pint (4 fixer) — qualunque story che lo
+
+  PHPStan (7 `@phpstan-ignore`) sia per Pint (4 fixer): qualunque story che lo
   tocca (Epic 15) deve passare da un lock esplicito (`bashscripts/lock/`) per
   evitare collisioni con sessioni concorrenti, storicamente frequenti su questo
   modulo (vedi `evidence-based-stale-lock-takeover`, `verify-before-edit-
@@ -184,5 +226,8 @@ che restano su un binario separato.
   fidarsi del solo audit (memoria [[grep-conta-le-menzioni-non-le-chiamate]]).
 - **Rischio disclosure**: la documentazione dettagliata del finding RQ-SEC-001
   (account takeover) vive in un repo pubblico (`laraxot/module_user_fila5`) — vedi
+
+  "zero caller trovato oggi": da riverificare a tempo di implementazione, non
+  (account takeover) vive in un repo pubblico (`laraxot/module_user_fila5`): vedi
   [perfection-decision-log.md](./perfection-decision-log.md) per la decisione presa
   su come tracciarlo senza divulgazione pubblica prematura.

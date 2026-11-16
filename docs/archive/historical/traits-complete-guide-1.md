@@ -1,11 +1,3 @@
----
-title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "guida completa ai trait del modulo user - aggiornato post-implementazione user"
----
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -354,11 +346,11 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
-- [jetstream_vs_laraxot_philosophy.md](jetstream-vs-laraxot-philosophy.md)
+- [jetstream_vs_laraxot_philosophy.md](jetstream_vs_laraxot_philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
 - [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
-- [docs/USER_TRAITS_GUIDELINES.md](../../../docs/user_traits_guidelines.md)
+- [docs/USER_TRAITS_GUIDELINES.md](../../docs/user_traits_guidelines.md)
 
 *Ultimo aggiornamento: 10 giugno 2025 - HasTeams trait completamente corretto e implementato*
 

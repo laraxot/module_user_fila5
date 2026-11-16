@@ -1,5 +1,7 @@
 ---
 title: "Project context — SuperAdmin widget"
+
+title: "Project context: SuperAdmin widget"
 type: constitution
 module: User
 status: approved
@@ -12,6 +14,12 @@ related:
 ---
 
 # Project context — SuperAdmin nel user menu
+
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "project context   superadmin nel user menu user"
+
+# Project context: SuperAdmin nel user menu
 
 Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).
 

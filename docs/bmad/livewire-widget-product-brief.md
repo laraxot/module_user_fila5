@@ -1,5 +1,7 @@
 ---
 title: "Product brief — solo Filament widget"
+
+title: "Product brief: solo Filament widget"
 type: product-brief
 module: User
 status: approved
@@ -9,6 +11,9 @@ related:
   - ./livewire-widget-project-context.md
   - ./livewire-inventory.md
   - ./product-brief.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "product brief: un solo stack ui per identità user"
 ---
 
 # Product brief: un solo stack UI per identità

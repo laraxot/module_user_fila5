@@ -1,22 +1,14 @@
----
-title: "Implementazione Corretta di logout.blade.php"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "implementazione corretta di logout.blade.php user"
----
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
-- [Documentazione centrale](../../README.md)
-- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [Documentazione centrale](../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Errors](./volt-errors.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
-- [Volt Logout Action](./volt-logout-action.md)
-- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Errors](./VOLT_ERRORS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

@@ -1,5 +1,7 @@
 ---
 title: "Tech spec — campagna Livewire → widget"
+
+title: "Tech spec: campagna Livewire → widget"
 type: tech-spec
 module: User
 status: approved
@@ -11,6 +13,9 @@ related:
   - ./tech-spec.md
   - ./livewire-inventory.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "technical specification: campagna widget-only user"
 ---
 
 # Technical specification: campagna widget-only
@@ -72,6 +77,8 @@ Scegliere SSoT logout: un file tra `Filament/Widgets/LogoutWidget.php` e `Filame
 
 Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt — fuori da questa story oltre il ritiro.
 
+Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt: fuori da questa story oltre il ritiro.
+
 ### Cluster C (10.4)
 
 - `DeleteAccount` → widget/schema su profilo; `DeleteUserAction` locked.
@@ -82,6 +89,9 @@ Verify HTTP: cancellare. Se FO serve verify, è pagina tema/Volt — fuori da qu
 
 - Namespace `filament-jet::` — [filament_errors.md](../filament_errors.md).
 - `canView(): false` globale che spegne anche l’hook — usare `$isDiscovered`.
+
+- Namespace `filament-jet::`: [filament_errors.md](../filament_errors.md).
+- `canView(): false` globale che spegne anche l’hook: usare `$isDiscovered`.
 - Registrare chrome widget in `->widgets()`.
 
 ## Testing strategia

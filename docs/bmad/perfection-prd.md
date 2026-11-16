@@ -1,5 +1,7 @@
 ---
 title: "PRD — Perfezione assoluta del modulo User"
+
+title: "PRD: Perfezione assoluta del modulo User"
 type: prd
 module: User
 status: draft
@@ -12,6 +14,9 @@ related:
   - ./perfection-decision-log.md
   - ./prd.md
   - ./epics.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "prd: perfezione assoluta del modulo user user"
 ---
 
 # PRD: Perfezione assoluta del modulo User
@@ -53,10 +58,16 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 
 ### RQ-SEC — Sicurezza (Epic 11, priorita' massima)
 
+## Requisiti: stato obiettivo per dimensione
+
+### RQ-SEC: Sicurezza (Epic 11, priorita' massima)
+
 - **RQ-SEC-001**: `UserPolicy::view/create/update/delete` applicano un controllo di
   autorizzazione reale (ruolo o self-check), non un `return true` incondizionato.
   *Verifica:* test comportamentale che asserisce `Gate::denies('update', $altroUser)`
   per un utente non-admin — oggi assente (vedi RQ-TEST-001), va scritto insieme al
+
+  per un utente non-admin: oggi assente (vedi RQ-TEST-001), va scritto insieme al
   fix.
 - **RQ-SEC-002**: il login Filament ha rate limiting attivo (per IP e/o per
   identificativo). *Verifica:* tentativi ripetuti oltre soglia restituiscono
@@ -74,6 +85,10 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 
 ### RQ-ARCH — Architettura (Epic 15)
 
+  (`is_active`, `email_verified_at`, `state`, `id`) a input non fidato: o vengono
+
+### RQ-ARCH: Architettura (Epic 15)
+
 - **RQ-ARCH-001**: una sola classe `CreateUserAction` nel modulo, basata sul
   pattern gia' corretto (`UserContract` + `XotData::make()->getUserClass()`).
   *Verifica:* `grep -rln "class CreateUserAction" app/Actions` → 1 risultato.
@@ -81,6 +96,8 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
   documentato). *Verifica:* directory assente.
 - **RQ-ARCH-003**: zero type-hint pubblici su `User`/`Profile` concreti dove il
   contratto (`UserContract`/`ProfileContract`) e' sufficiente — eccetto Observer
+
+  contratto (`UserContract`/`ProfileContract`) e' sufficiente: eccetto Observer
   legati a eventi Eloquent nativi. *Verifica:* grep mirato con lista di eccezioni
   esplicite e motivate.
 - **RQ-ARCH-004**: nessun fallback hardcoded verso un modulo di progetto specifico
@@ -96,6 +113,10 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 - **RQ-QUAL-001**: PHPMD e PHPInsights sono eseguibili nell'ambiente (phar
   funzionante o toolchain composer riparata) e producono un report reale, non un
   fatal error. *Nota:* riguarda l'intero repo, non solo User — la story va aperta
+
+### RQ-QUAL: Qualita' codice (Epic 15/16)
+
+  fatal error. *Nota:* riguarda l'intero repo, non solo User: la story va aperta
   a livello infrastruttura/tooling, referenziata da qui.
   Correlato: [[quality-tooling-entrypoints]].
 - **RQ-QUAL-002**: ogni `@phpstan-ignore` inline nel modulo ha un commento che
@@ -121,6 +142,10 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 
 ### RQ-TEST — Test coverage (Epic 17)
 
+  riproducibili nel codice attuale: correzione dei 2 claim falsi identificati,
+
+### RQ-TEST: Test coverage (Epic 17)
+
 - **RQ-TEST-001**: `UserPolicy` ha test comportamentale reale (non solo
   instanziazione) che copre tutti e 4 i metodi con asserzioni su casi
   autorizzato/non-autorizzato.
@@ -131,6 +156,8 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 - **RQ-TEST-004**: esiste almeno un guard test automatizzato per: no-
   `RefreshDatabase`, XotBase-only extension, array one-key-per-line (nello scope
   Filament/Actions del modulo). *Rationale:* [[regola-senza-test-regredisce]] — una
+
+  Filament/Actions del modulo). *Rationale:* [[regola-senza-test-regredisce]]: una
   regola vera "per fortuna" oggi puo' regredire silenziosamente domani.
 - **RQ-TEST-005**: `tests/Helpers.php` e `tests/Support/helpers.php` sono
   consolidati in un'unica fonte (la sovrapposizione quasi totale va risolta, non
@@ -142,10 +169,14 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 
 ### RQ-PERF — Performance (Epic 16)
 
+### RQ-PERF: Performance (Epic 16)
+
 - **RQ-PERF-001**: `OauthClientResource` (cluster Passport) carica `owner` con
   eager loading, allineato al gemello non-cluster.
 - **RQ-PERF-002**: `PassportStatsWidget` non esegue 5 query COUNT non cachate ogni
   5 secondi di default — polling interval aumentato e/o risultati cachati con TTL
+
+  5 secondi di default: polling interval aumentato e/o risultati cachati con TTL
   esplicito.
 - **RQ-PERF-003**: i widget grafico (`UsersChartWidget`, `
   UserTypeRegistrationsChartWidget`) cachano il risultato della query `Trend` con
@@ -167,6 +198,13 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 - **RQ-SCHEMA-002**: le tabelle collegate a un utente (`oauth_access_tokens`,
   `oauth_auth_codes`, `socialite_user`, e le altre identificate dall'agente schema)
   hanno FK con `cascadeOnDelete()` dove il flusso GDPR (RQ-SEC-003) lo richiede —
+
+  davvero all'utente finale: miglioramento UX collaterale accettabile).
+
+### RQ-SCHEMA: Schema/migrazioni (Epic 18)
+
+  autoincrement) in `Modules\Ptv` e `Modules\User`: nessun drift cross-modulo.
+  hanno FK con `cascadeOnDelete()` dove il flusso GDPR (RQ-SEC-003) lo richiede -
   additivo, mai una migration distruttiva su dati esistenti.
 - **RQ-SCHEMA-003**: `BaseTenant.php` genera UUID in modo coerente col resto del
   modulo (gap da verificare puntualmente).
@@ -183,6 +221,10 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
 - **RQ-DOCS-001**: zero cartelle self-nested (`X/X/...`) sotto `Modules/User/docs`.
   *Verifica:* script che cammina l'albero e segnala ogni path con un segmento
   ripetuto consecutivo — oggi 612 file coinvolti.
+
+### RQ-DOCS: Documentazione (Epic 19)
+
+  ripetuto consecutivo: oggi 612 file coinvolti.
 - **RQ-DOCS-002**: zero file con nome base >100 caratteri o con spazi.
   *Verifica:* `find docs -iname "*.md" | awk -F/ '{print length($NF), $0}' | sort
   -rn | head` → prima riga <100.
@@ -200,6 +242,12 @@ requisito sotto e' backlog per esecuzione futura, non lavoro gia' fatto.
   documentare qui, aprire l'issue sullo strumento altrove).
 
 ## Criteri di "perfezione assoluta" — definizione operativa
+
+  (`/archive/**`): riattiva la story esistente `5.37-gitignore-archive-legacy-bug-
+  marcate `superseded` con link: **mai cancellate**.
+  doc, fuori scope di questo modulo se lo strumento e' condiviso: solo
+
+## Criteri di "perfezione assoluta": definizione operativa
 
 Il modulo si considera "alla perfezione assoluta" quando, in un solo comando
 riproducibile per categoria:
@@ -220,4 +268,7 @@ riproducibile per categoria:
   autonome — questa campagna le referenzia ma non le assorbe.
 - Nessun refactor speculativo non ancorato a un finding reale dell'audit.
 - Nessuna modifica al modulo `Tenant` (morph map) — confermato conforme, out of
+
+  autonome: questa campagna le referenzia ma non le assorbe.
+- Nessuna modifica al modulo `Tenant` (morph map): confermato conforme, out of
   scope per definizione.

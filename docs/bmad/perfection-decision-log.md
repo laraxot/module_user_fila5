@@ -1,5 +1,7 @@
 ---
 title: "Decision log — Perfezione assoluta del modulo User"
+
+title: "Decision log: Perfezione assoluta del modulo User"
 type: decision-log
 module: User
 status: living
@@ -14,6 +16,12 @@ related:
 
 # Decision log: audit "perfezione assoluta" — 2026-09-22
 
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "decision log: audit 'perfezione assoluta'   2026-09-22 user"
+
+# Decision log: audit "perfezione assoluta": 2026-09-22
+
 ## [2026-09-22] Scope: audit dell'intero modulo, non solo la campagna widget
 
 **Decision:** richiesta utente ("studia a fondo il modulo User... porta alla
@@ -26,6 +34,8 @@ toccata.
 **Rationale:** Epic 9/10 copre solo il chrome UI del toggle SuperAdmin e la
 migrazione Livewire→Filament; il modulo ha 112 model, 357 file Filament, 59
 migration, 310 test — la richiesta di "perfezione assoluta" implica l'intero
+
+migration, 310 test: la richiesta di "perfezione assoluta" implica l'intero
 modulo, non un sottoinsieme gia' in lavorazione.
 
 ## [2026-09-22] Metodo: subagent paralleli, solo general-purpose
@@ -36,6 +46,8 @@ non con i tipi specializzati (`laravel-architecture-reviewer`,
 
 **Rationale:** i 7 agenti specializzati lanciati inizialmente hanno restituito
 risultati completamente **hallucinati** — narrazione di comandi mai eseguiti,
+
+risultati completamente **hallucinati**: narrazione di comandi mai eseguiti,
 verificato via ispezione diretta dei transcript JSONL (zero blocchi `tool_use` in
 tutti e 7, solo `thinking`/`text`). Un test diagnostico con `general-purpose`
 (comando reale via Bash, output verificato) ha confermato che quel tipo di agente
@@ -55,6 +67,10 @@ costo di verifica e' basso e l'impatto di un falso report e' alto.
 
 ## [2026-09-22] Disclosure pubblica dei finding di sicurezza critici — NON creato issue/discussion pubblico
 
+`tool_uses > 0` nella notifica: potrebbe essere un problema di ambiente
+
+## [2026-09-22] Disclosure pubblica dei finding di sicurezza critici: NON creato issue/discussion pubblico
+
 **Decision:** i finding RQ-SEC-001 (bypass totale autorizzazione `UserPolicy`,
 account takeover) e RQ-SEC-002 (nessun rate limiting login) **non sono stati
 pubblicati** come issue/discussion GitHub pubblici, contrariamente al pattern
@@ -69,6 +85,9 @@ account-takeover non ancora corretta sarebbe una disclosure irresponsabile —
 chiunque potrebbe leggerlo e sfruttarlo prima che il fix sia deployato. Questa e'
 un'azione visibile a terzi e difficile da revocare (anche cancellando l'issue,
 GitHub la mantiene nella cronologia/API e puo' essere stata indicizzata) — rientra
+
+account-takeover non ancora corretta sarebbe una disclosure irresponsabile -
+GitHub la mantiene nella cronologia/API e puo' essere stata indicizzata): rientra
 esplicitamente nella categoria di azioni che richiedono conferma esplicita
 dell'utente prima di procedere, non una decisione che un agente deve prendere da
 solo silenziosamente.
@@ -79,6 +98,8 @@ solo silenziosamente.
    maintainer finche' non viene pubblicata) invece di un issue pubblico.
 2. Per il resto della campagna (architettura, qualita', performance, test,
    schema, documentazione — nessuno di questi e' una vulnerabilita' sfruttabile):
+
+   schema, documentazione: nessuno di questi e' una vulnerabilita' sfruttabile):
    si puo' procedere con il pattern normale issue+discussion pubblico senza
    rischio di disclosure, se l'utente conferma.
 3. In alternativa, tracciare tutto solo internamente (`sprint-status.yaml` +
@@ -86,6 +107,8 @@ solo silenziosamente.
    il canale di lavoro preferito per debito noto non ancora risolto.
 
 **Non deciso in questa sessione** — richiede input esplicito dell'utente, non
+
+**Non deciso in questa sessione**: richiede input esplicito dell'utente, non
 presunto.
 
 ## [2026-09-22] Numerazione epic: 11-16, non riuso di 9/10
@@ -94,6 +117,8 @@ presunto.
 riutilizzano o rinumerano nulla di esistente.
 
 **Rationale:** standing order BMAD — mai cancellare/rinumerare story esistenti;
+
+**Rationale:** standing order BMAD: mai cancellare/rinumerare story esistenti;
 Epic 9/10 hanno gia' 8 story tracciate in `sprint-status.yaml` con stati reali
 (done/in-progress/blocked), toccarle avrebbe rotto la cronologia.
 
@@ -126,6 +151,11 @@ il dettaglio massimo prima dell'esecuzione.
 
 ## [2026-09-22] Data debt morph map — riverificato, non presente su Ptv
 
+esecuzione futura: meritano di essere gia' pronte (`backlog` → promuovibili a
+brainstorming): non e' un gap di documentazione, e' una scelta di dove investire
+
+## [2026-09-22] Data debt morph map: riverificato, non presente su Ptv
+
 **Decision:** il data debt documentato in `decision-log.md` (40 righe stantie
 `model_has_role.model_type='Modules\Quaeris\Models\User'`) e' stato riverificato
 con una query read-only reale su questa installazione (Ptv): 482/482 righe hanno
@@ -133,12 +163,16 @@ con una query read-only reale su questa installazione (Ptv): 482/482 righe hanno
 Quaeris, non questo. Nessuna azione necessaria su Ptv per questo punto specifico.
 
 **Rationale:** modulo condiviso fra progetti (Sigma/Ptv/Fila5/Quaeris) — un data
+
+**Rationale:** modulo condiviso fra progetti (Sigma/Ptv/Fila5/Quaeris): un data
 debt osservato su un tenant non implica lo stesso stato su un altro (memoria
 [[moduli-condivisi-fra-progetti]], [[il-morph-map-e-per-tenant]]).
 
 ## [2026-09-22] Nessuna scrittura DB, nessuna migration eseguita
 
 **Decision:** confermato a fine sessione — nessun file `app/`, `database/`,
+
+**Decision:** confermato a fine sessione: nessun file `app/`, `database/`,
 `config/`, `routes/`, `lang/` modificato; unica query eseguita e' stata una
 `SELECT ... GROUP BY` via tinker per il punto sopra. Vincolo "dati sacri"
 rispettato integralmente.
@@ -150,6 +184,8 @@ rispettato integralmente.
 Epic 11-16, un controllo `ls docs/stories/ | grep -oE '^[0-9]+\.[0-9]+'`
 ha rivelato 24 file `12.1.*` fino a `14.8.*` gia' presenti su disco, scritti
 alle 12:19:49 — circa 90 secondi dopo i file di questa sessione (12:18:19) —
+
+alle 12:19:49: circa 90 secondi dopo i file di questa sessione (12:18:19) -
 insieme a `docs/bmad/module-excellence-{product-brief,prd,architecture,
 brainstorming}.md` e a modifiche gia' fatte a `README.md`/`decision-log.md`/
 `epics.md` (i file canone, non quelli con prefisso `perfection-`).
@@ -158,6 +194,8 @@ brainstorming}.md` e a modifiche gia' fatte a `README.md`/`decision-log.md`/
 `decision-log.md` entry "Campagna module-excellence additiva" cita
 letteralmente "5 ricerche parallele in sola lettura (Agent subagent_type:
 fork)" — lo stesso meccanismo di fork usato in questa sessione. Ipotesi piu'
+
+fork)": lo stesso meccanismo di fork usato in questa sessione. Ipotesi piu'
 probabile: un `Agent` con `subagent_type: "fork"` lanciato prima della
 compattazione del contesto di questa conversazione, di cui il riassunto
 post-compattazione non ha conservato traccia, ha proseguito in background con
@@ -174,11 +212,15 @@ o rinumerato. Il draft di questa campagna (`perfection-epics.md`, mai
 promosso a file story individuali per Epic 12-16 prima di questo momento) e'
 stato rinumerato: Epic 12→15, 13→16, 14→17, 15→18, 16→19. Epic 11 resta
 invariata (nessuna collisione reale — l'unica story 11.1 pre-esistente e'
+
+invariata (nessuna collisione reale: l'unica story 11.1 pre-esistente e'
 gia' `superseded_by: 10.1`). Aggiunto un blocco "Cross-reference
 module-excellence" a ogni epic rinumerata per segnalare sovrapposizioni
 tematiche reali (Epic 19 vs Epic 12 module-excellence su docs hygiene, Epic
 15 vs Epic 13 module-excellence su code quality, Epic 17 vs 13.5/13.6 su test
 coverage) senza eseguire alcun merge — la riconciliazione dei contenuti resta
+
+coverage) senza eseguire alcun merge: la riconciliazione dei contenuti resta
 per la fase di esecuzione, non per questa sessione di sola documentazione.
 
 **Rationale:** standing order "non cancellare ne' rinumerare story esistenti:
@@ -191,17 +233,24 @@ gia' linkata da `README.md`) avrebbe richiesto toccare e rinominare 24 file
 oltre a 3 file canone condivisi. Riferimento: [[le-story-del-modulo-si-leggono-prima]]
 — lezione applicata qui prima di scrivere altro, non dopo.
 
+rinumerarlo prima della promozione e' l'azione meno distruttiva: l'alternativa
+- lezione applicata qui prima di scrivere altro, non dopo.
+
 **Verifica:** `ls docs/stories/ | grep -oE '^(1[1-9]|20)\.[0-9]+' | sort -u`
 non mostra piu' collisioni fra i due prefissi di campagna dopo la correzione
 di `perfection-epics.md` (i file individuali 12.x-14.x restano di proprieta'
 esclusiva di module-excellence, nessun file 15.x-19.x esiste ancora su disco
 per questa campagna — solo tabella in `perfection-epics.md`, come da nota
+
+per questa campagna: solo tabella in `perfection-epics.md`, come da nota
 "story dedicato completo solo per Epic 11").
 
 ## [2026-09-22] Chiusura riconciliazione: confermata analisi di module-excellence, verificato GitHub reale
 
 **Decision:** letta integralmente l'entry di `decision-log.md` "Riconciliazione
 con la campagna concorrente 'perfection-' (sessione parallela)" — conferma
+
+con la campagna concorrente 'perfection-' (sessione parallela)": conferma
 indipendente, dall'altro lato, della stessa riconciliazione fatta qui.
 Attribuisce correttamente i 6 file orfani `docs/stories/12.[1-6].filament-ux-
 *.story.md` (+ `bmad/filament-ux-{architecture,brainstorming}.md`) a un
@@ -215,6 +264,8 @@ segnalato dall'altra sessione.
 **GitHub verificato (non assunto):** `gh issue list`/`gh api discussions/104`
 confermano reali issue #103 (parent), #105-116, discussion #104 per
 `module-excellence` (Epic 12-14) — nessuna hallucination. Fra queste, #113
+
+`module-excellence` (Epic 12-14): nessuna hallucination. Fra queste, #113
 ("~30 Policy senza permesso nel seeder, silent-deny") e' adiacente ma
 qualitativamente diversa dai finding RQ-SEC-001/002 di questa campagna: un
 gap di permessi mancanti fallisce chiudendo l'accesso (silent-deny), mentre

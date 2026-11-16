@@ -1,5 +1,7 @@
 ---
 title: "Epics — Perfezione assoluta del modulo User"
+
+title: "Epics: Perfezione assoluta del modulo User"
 type: epics
 module: User
 status: draft
@@ -11,6 +13,9 @@ related:
   - ./perfection-decision-log.md
   - ./epics.md
   - ./module-excellence-prd.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "epics: perfezione assoluta del modulo user user"
 ---
 
 # Epics: Perfezione assoluta del modulo User
@@ -18,11 +23,16 @@ related:
 **Track:** Perfection campaign — continua la numerazione dopo Epic 9
 (SuperAdmin widget), Epic 10 (ritiro Livewire) ed Epic 12-14
 (`module-excellence`, campagna gemella scoperta in corso d'opera — vedi
+
+**Track:** Perfection campaign: continua la numerazione dopo Epic 9
+(`module-excellence`, campagna gemella scoperta in corso d'opera: vedi
 [perfection-decision-log.md](./perfection-decision-log.md), entry
 2026-09-22 "Riconciliazione numerazione con campagna module-excellence").
 **Numerazione:** Epic 11 (questa campagna) + Epic 15-19 (questa campagna).
 Epic 12-14 sono di **module-excellence** ([epics.md](./epics.md)), non di
 questa campagna — referenziate qui solo per cross-link.
+
+questa campagna: referenziate qui solo per cross-link.
 **Sources:** [perfection-brainstorming.md](./perfection-brainstorming.md),
 [perfection-prd.md](./perfection-prd.md),
 [perfection-architecture.md](./perfection-architecture.md)
@@ -30,6 +40,9 @@ questa campagna — referenziate qui solo per cross-link.
 Tutte le story sotto sono `backlog` (non ancora implementate — audit prodotto in
 sessione di sola documentazione). Story files individuali con AC completi esistono
 solo per Epic 11 (priorita' massima, sicurezza) — le altre epic hanno la
+
+Tutte le story sotto sono `backlog` (non ancora implementate: audit prodotto in
+solo per Epic 11 (priorita' massima, sicurezza): le altre epic hanno la
 descrizione/scope qui; un story file dedicato va creato al momento del claim,
 seguendo il template gia' in uso nel modulo.
 
@@ -41,6 +54,8 @@ seguendo il template gia' in uso nel modulo.
 rate limiting sul login; la cancellazione account e' strutturalmente completa.
 
 **Severita' del problema:** CRITICA — 2 finding critici attivi (account takeover,
+
+**Severita' del problema:** CRITICA: 2 finding critici attivi (account takeover,
 brute-force senza limite), 2 alti (PII orfane post-delete, token in chiaro).
 
 **In scope (cited):** RQ-SEC-001..005 [Source: perfection-prd.md#rq-sec],
@@ -53,6 +68,8 @@ com'e'), nuovo modulo Gdpr dedicato (fuori scope, si lavora dentro User).
 matrice permessi come gap *documentale* (~30 Policy scoperte, nessun seeder
 aggiornato); questa Epic 11 copre bug *comportamentali* attivi (bypass reale
 in produzione). Angoli distinti sullo stesso sottosistema — non duplicati,
+
+in produzione). Angoli distinti sullo stesso sottosistema: non duplicati,
 14.1 e 11.1 vanno eseguiti in sequenza (11.1 prima: non si documenta la
 matrice sopra una policy che sta per cambiare).
 
@@ -92,6 +109,9 @@ ma finding puntuali distinti — nessuna storia qui ripete un ID o uno slug di
 13.1-13.9. Eccezione da verificare in esecuzione: 15.10
 (`remove-debug-code-termsofservice`, dddx() in TermsOfService.php:32) vs
 12.3 module-excellence (`remove-dddx-debug`) — controllare se e' lo stesso
+
+ma finding puntuali distinti: nessuna storia qui ripete un ID o uno slug di
+12.3 module-excellence (`remove-dddx-debug`): controllare se e' lo stesso
 `dddx()` prima di lavorarci entrambe, per non duplicare il fix.
 
 **Stories (ordered):**
@@ -116,6 +136,9 @@ l'esecuzione tocca l'ambiente condiviso. 15.12 sblocca la story esistente
 `User/10.4-retire-gdpr-profile-livewire` (oggi `blocked`), stesso obiettivo di
 13.3 module-excellence — coordinare per non duplicare lo sblocco.
 
+**Cross-epic:** 15.11 e' repo-wide, non solo User: la story va aperta qui ma
+13.3 module-excellence: coordinare per non duplicare lo sblocco.
+
 ---
 
 ## Epic 16: Performance
@@ -130,6 +153,8 @@ ADR-P005 [Source: perfection-architecture.md]
 facade `Cache` diretta, niente astrazioni nuove).
 
 **Cross-reference module-excellence:** nessuna sovrapposizione — dimensione
+
+**Cross-reference module-excellence:** nessuna sovrapposizione: dimensione
 performance non coperta da nessuna delle 24 story di `module-excellence`.
 
 **Stories (ordered):**
@@ -146,6 +171,8 @@ performance non coperta da nessuna delle 24 story di `module-excellence`.
 | 16.8 | remove-redundant-save-after-sync | Rimuovere save() ridondante in ListPermissions bulk action | BASSA | backlog |
 
 **Cross-epic:** nessuna dipendenza da altre epic — puo' partire in parallelo a
+
+**Cross-epic:** nessuna dipendenza da altre epic: puo' partire in parallelo a
 tutte.
 
 ---
@@ -160,12 +187,16 @@ delle regole di progetto gia' note.
 ADR-P006 [Source: perfection-architecture.md]
 
 **Out of scope:** raggiungere una soglia di coverage percentuale generica — il
+
+**Out of scope:** raggiungere una soglia di coverage percentuale generica: il
 focus e' sui gap identificati, non un target astratto.
 
 **Cross-reference module-excellence:** 13.5 (`pest-coverage-resources-widgets-gap`)
 e 13.6 (`playwright-e2e-plan`) coprono la stessa carenza di coverage da un
 angolo Resource/Widget generico; questa Epic 17 e' specifica su
 autorizzazione/Shield/LoginWidget — nessun ID/slug duplicato, ma 17.1 e 13.5
+
+autorizzazione/Shield/LoginWidget: nessun ID/slug duplicato, ma 17.1 e 13.5
 condividono la superficie `tests/`: coordinare l'esecuzione per non
 sovrascrivere lo stesso file di test.
 
@@ -198,6 +229,10 @@ ADR-P004 step 2 [Source: perfection-architecture.md]
 migration additive, dati sacri.
 
 **Cross-reference module-excellence:** nessuna sovrapposizione diretta — la
+
+**Out of scope:** ogni migrazione distruttiva o `migrate:fresh`/wipe: solo
+
+**Cross-reference module-excellence:** nessuna sovrapposizione diretta: la
 dimensione schema/migrazioni non e' fra le 24 story di `module-excellence`
 (solo referenziata come "data debt gia' noto" fuori scope in 14 li').
 
@@ -226,6 +261,8 @@ perdita di contenuto.
 ADR-P007 [Source: perfection-architecture.md]
 
 **Out of scope:** cancellazione di qualunque file — solo merge/link/superseded,
+
+**Out of scope:** cancellazione di qualunque file: solo merge/link/superseded,
 mai delete (standing order BMAD).
 
 **Cross-reference module-excellence:** sovrapposizione reale con Epic 12
@@ -244,6 +281,10 @@ cancellazione/merge eseguita in questa sessione, solo audit):
   phpstan/archive/permissions/purpose specifici, non sul bug di
   self-nesting ricorsivo) — nessun duplicato su questi due.
 
+  `index.md` piatto): verificare se sono la stessa proposta prima di
+  archive/fixes/bug-*: idem.
+  self-nesting ricorsivo): nessun duplicato su questi due.
+
 **Stories (ordered):**
 
 | ID | Slug | Intent | Severita' | Status |
@@ -256,6 +297,8 @@ cancellazione/merge eseguita in questa sessione, solo audit):
 | 19.6 | investigate-doc-tooling-root-cause | Documentare/segnalare lo strumento che ha causato il self-nesting ricorsivo (fix fuori modulo se condiviso) | BASSA | backlog |
 
 **Cross-epic:** nessuna dipendenza dalle altre epic — completamente indipendente.
+
+**Cross-epic:** nessuna dipendenza dalle altre epic: completamente indipendente.
 19.4 non crea una nuova story, referenzia `docs/sprint-status.yaml` riga
 52125-52130.
 
@@ -268,6 +311,9 @@ cancellazione/merge eseguita in questa sessione, solo audit):
 - Epic 12-14 (24 story) sono di `module-excellence`, non di questa campagna — vedi [epics.md](./epics.md)
 - Done: 0
 - Ready-for-dev: 0 (tutte `backlog` — audit di sola documentazione)
+
+- Epic 12-14 (24 story) sono di `module-excellence`, non di questa campagna: vedi [epics.md](./epics.md)
+- Ready-for-dev: 0 (tutte `backlog`: audit di sola documentazione)
 - Story con file dedicato completo (AC): Epic 11 (5 story)
 
 ## Note
@@ -283,6 +329,11 @@ un fork Agent di questa stessa sessione perso nella compattazione del contesto,
 vedi [perfection-decision-log.md](./perfection-decision-log.md)). Epic
 12-13-14-15-16 originarie di questo documento sono state rinumerate 15-16-17-18-19
 per evitare collisione — nessuna story esistente di terzi e' stata cancellata o
+
+esecuzione: priorita' massima per severita' (account takeover attivo).
+
+`module-excellence` (Epic 12-14, 24 story, scritta in parallelo: verosimilmente
+per evitare collisione: nessuna story esistente di terzi e' stata cancellata o
 rinumerata, solo il draft di questa campagna (mai promosso a file story
 individuali prima della riconciliazione).
 

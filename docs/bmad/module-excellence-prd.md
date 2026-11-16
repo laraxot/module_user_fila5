@@ -1,5 +1,7 @@
 ---
 title: "PRD — User module: percorso verso la perfezione assoluta"
+
+title: "PRD: User module: percorso verso la perfezione assoluta"
 type: prd
 module: User
 status: approved
@@ -16,6 +18,12 @@ related:
 
 # PRD: User module — percorso verso la perfezione assoluta
 
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "prd: user module   percorso verso la perfezione assoluta user"
+
+# PRD: User module: percorso verso la perfezione assoluta
+
 > Scope: Enterprise (3 epic, 24 story, tocca doc/test/dominio). Additiva
 > alla campagna Quick Flow Epic 9/10 (SuperAdmin widget), non la sostituisce.
 
@@ -31,6 +39,8 @@ eseguira'.
 ## 2. Requisiti funzionali
 
 ### Epic 12 — Docs hygiene & consolidamento SSoT
+
+### Epic 12: Docs hygiene & consolidamento SSoT
 
 - **FR-12.1** Il cluster di file `docs/*phpstan*.md` (270 file, prodotti da
   uno script di rename bacato che ha strippato le sottostringhe `-fix`/`-d`
@@ -65,10 +75,14 @@ eseguira'.
 
 ### Epic 13 — Code quality, architettura Filament, test coverage
 
+### Epic 13: Code quality, architettura Filament, test coverage
+
 - **FR-13.1** Riverificare la discrepanza tra issue #91 ("XotBaseResourceTable
   audit gia' fatto, $model presente su tutti") e il riscontro diretto
   (0/30 classi `*Table.php` con `protected static ?string $model` esplicito)
   — nessuna delle due fonti va assunta vera senza un nuovo audit puntuale.
+
+ : nessuna delle due fonti va assunta vera senza un nuovo audit puntuale.
 - **FR-13.2** `OauthClientResource` punta al modello Passport vanilla
   invece del modello custom del modulo: va allineato (issue #90).
 - **FR-13.3** Completare la story bloccata 10.4: rimuovere
@@ -95,6 +109,8 @@ eseguira'.
 
 ### Epic 14 — Completezza dominio: permessi, team/tenant, OAuth, audit log
 
+### Epic 14: Completezza dominio: permessi, team/tenant, OAuth, audit log
+
 - **FR-14.1** Ogni classe Policy (~30) deve avere almeno un permesso
   corrispondente registrato nel seeder (oggi 28/33 permessi coprono solo
   authentication-log + oauth, 5 sono residui "doctors" estranei); i seeder
@@ -108,6 +124,9 @@ eseguira'.
   `AuthenticationLogResource`, `RecentLoginsWidget`, `DeviceResource`)
   necessitano di un'euristica di anomalia (nuovo dispositivo, orario
   inusuale) — il gap reale non e' la UI (gia' presente) ma la logica.
+
+  in un documento di dominio: oggi verificato solo leggendo il codice.
+  inusuale): il gap reale non e' la UI (gia' presente) ma la logica.
 - **FR-14.4** I bottoni Passport dashboard mancanti (nuove credenziali,
   nuovo client OAuth) vanno ripristinati, regressione da un refactor di
   massa AI (issue #98/#85/#99).
@@ -132,6 +151,8 @@ eseguira'.
   11.1 restano intatte).
 - **NFR-3** Ogni nuova story cita una fonte verificabile (issue GitHub,
   file, comando eseguito) — mai un'affermazione senza citazione, per
+
+  file, comando eseguito): mai un'affermazione senza citazione, per
   rispettare la regola "verifica sul codice batte la documentazione".
 - **NFR-4** Ogni story linka o crea un'issue/discussion GitHub sul remote
   `laraxot/module_user_fila5` (convenzione gia' in uso, vedi #100/#101).
@@ -142,6 +163,8 @@ eseguira'.
 
 - Sigma (dati di servizio), moduli di valutazione (evaluations), infra
   Filament condivisa (Xot), notifiche (Notify) — questi restano fuori dal
+
+  Filament condivisa (Xot), notifiche (Notify): questi restano fuori dal
   perimetro User, coerente con `purpose.md` §Confini.
 - La campagna Livewire->widget Epic 9/10 (in corso, non toccata da questo
   documento).

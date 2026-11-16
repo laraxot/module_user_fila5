@@ -1,5 +1,7 @@
 ---
 title: "Architecture — solo Filament widget"
+
+title: "Architecture: solo Filament widget"
 type: architecture
 module: User
 status: approved
@@ -10,6 +12,9 @@ related:
   - ./livewire-widget-tech-spec.md
   - ./livewire-inventory.md
   - ./decision-log.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "architecture: un albero ui filament user"
 ---
 
 # Architecture: un albero UI Filament
@@ -65,6 +70,26 @@ Copiare viste a runtime non è theming: è mutazione disco. Il tema vince a **co
 User non serve Privacy/Terms. L’hook commentato è già la decisione.
 
 ### ADR-C007 — Categoria: chrome vs pagina vs ritiro
+
+### ADR-C001: Widget è il contenitore, non “in più”
+
+
+### ADR-C002: Gemello esistente batte classe nuova
+
+
+### ADR-C003: Chrome: `$isDiscovered = false`
+
+
+### ADR-C004: Provider: un hook per story
+
+
+### ADR-C005: ViewCopyAction è un anti-pattern
+
+
+### ADR-C006: Gdpr possiede legal text
+
+
+### ADR-C007: Categoria: chrome vs pagina vs ritiro
 
 Widget = frammento nel panel. Pagina auth/legal ≠ widget forzato. HTTP gemello di un widget esistente = **ritiro**, non Page nuova. Legal = Gdpr. Notify vendor = fuori User (hook attivo nel modulo Notify).
 

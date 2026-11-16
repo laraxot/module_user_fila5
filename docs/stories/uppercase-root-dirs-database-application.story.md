@@ -1,5 +1,7 @@
 ---
 title: "User: cartelle maiuscole in root modulo — Database/ e Application/ duplicati orfani"
+
+title: "User: cartelle maiuscole in root modulo: Database/ e Application/ duplicati orfani"
 type: story
 module: User
 epic: null
@@ -25,6 +27,8 @@ owned_scope:
 
 Audit repo-wide (2026-09-22): nessuna cartella con caratteri maiuscoli deve stare
 nella root di un modulo — root ammette solo `app/`, `config/`, `database/`,
+
+nella root di un modulo: root ammette solo `app/`, `config/`, `database/`,
 `resources/`, `routes/`, `tests/`, `docs/` ecc. (lowercase); il PascalCase è
 riservato alle classi PSR-4 dentro `app/`. Trovate due violazioni nella root di
 `Modules/User`: `Database/` e `Application/`.
@@ -38,6 +42,8 @@ riservato alle classi PSR-4 dentro `app/`. Trovate due violazioni nella root di
   (`factories/DeviceProfileFactory.php`).
 - Confronto con l'equivalente lowercase `Modules/User/database/migrations/`:
   stessi nomi file, ma contenuto **diverso e più vecchio** — es.
+
+  stessi nomi file, ma contenuto **diverso e più vecchio**: es.
   `2014_10_12_100002_create_password_resets_table.php` nella versione
   maiuscola manca `updateTimestamps($table)` e il commento di regola
   `XotBaseMigration`/ponytail presenti nella versione attiva in `database/`.
@@ -46,6 +52,8 @@ riservato alle classi PSR-4 dentro `app/`. Trovate due violazioni nella root di
   `database/seeders/`: **nessuna mappatura per `Database/` (root, maiuscola)**.
   Le migration Laravel/nwidart-modules si caricano da `database/migrations/`
   per convenzione — `Database/Migrations/` in root non è mai stata caricata.
+
+  per convenzione: `Database/Migrations/` in root non è mai stata caricata.
 - Nessun riferimento nel codice al path `Database/Migrations` o
   `Database\Migrations`.
 - **Conclusione: snapshot morto/superato**, mai autoloadato né referenziato.
@@ -64,6 +72,9 @@ riservato alle classi PSR-4 dentro `app/`. Trovate due violazioni nella root di
 - `composer.json` mappa `Modules\User\` → `app/` soltanto: il namespace
   `Modules\User\Application\...` dichiarato nel file in root **non è coperto
   da nessuna regola PSR-4** — il file in root non è mai stato autoloadabile,
+
+  parametri PHPDoc, stile Pint): contenuto sostanzialmente identico.
+  da nessuna regola PSR-4**: il file in root non è mai stato autoloadabile,
   è un doppione orfano rispetto alla copia reale sotto `app/`.
 - **Conclusione: doppione orfano**, superato dalla copia in `app/Application/UseCases/Owners/`.
 
@@ -75,6 +86,8 @@ via composer.json/PSR-4, config/modules.php e diff di contenuto: entrambe le
 cartelle sono sicure da eliminare (nessun autoload, contenuto duplicato in
 `app/`, migrazioni identiche a livello di schema alla controparte
 `database/Migrations/` — solo differenze di formattazione, brace-style e
+
+`database/Migrations/`: solo differenze di formattazione, brace-style e
 Yoda-condition).
 
 **Non eseguito**: durante l'investigazione le due cartelle sono state
@@ -85,6 +98,8 @@ delle sessioni note (questa, b7, module-theme-root-hygiene-audit) rivendica
 l'azione; b7 ha esplicitamente escluso questi path dal proprio scope.
 `Modules/User/Database` è tornato a esistere con `Migrations/` e
 `factories/` popolati mentre `Modules/User/Application` restava assente —
+
+`factories/` popolati mentre `Modules/User/Application` restava assente -
 quindi non un semplice `git checkout` simmetrico.
 
 Dato il flapping attivo su un file system condiviso da più agenti, procedere
@@ -101,6 +116,11 @@ processo locale?) prima di rieseguire il delete.
 | `Modules/User/Database/` | Eliminare l'intera cartella | Basso — nessun autoload, nessun riferimento in codice |
 | `Modules/User/Application/` | Eliminare l'intera cartella | Basso — nessun autoload, contenuto duplicato in `app/Application/UseCases/Owners/` |
 
+## Raccomandazione (non eseguita in questa story: solo investigazione)
+
+| `Modules/User/Database/` | Eliminare l'intera cartella | Basso: nessun autoload, nessun riferimento in codice |
+| `Modules/User/Application/` | Eliminare l'intera cartella | Basso: nessun autoload, contenuto duplicato in `app/Application/UseCases/Owners/` |
+
 Nessuna modifica ai file è stata applicata in questa story: solo lettura e
 diff. L'esecuzione del fix (rimozione) va coordinata con l'audit degli altri
 moduli con lo stesso problema (Job/Config, Xot/Datas, Xot/View, Xot/Tests) e
@@ -114,6 +134,9 @@ vs `BUSINESS_LOGIC_ANALYSIS.md`, stesso per `CODE-QUALITY-ANALYSIS.md` /
 `CODE_QUALITY_ANALYSIS.md`) e più varianti di index
 (`00-INDEX.md`, `00-index.md`, `00-index-1.md`, `INDEX.md`,
 `INDEX_GENERATED.md`). Non toccato qui — da tracciare separatamente.
+
+(`00-INDEX.md`, `00-index.md`, `00-index.md`, `INDEX.md`,
+`INDEX_GENERATED.md`). Non toccato qui: da tracciare separatamente.
 
 ## Dev Agent Record (2026-09-22, sblocco finale)
 

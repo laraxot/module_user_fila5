@@ -11,12 +11,19 @@ related:
   - ./livewire-widget-architecture.md
   - ./livewire-widget-tech-spec.md
   - ../../Xot/docs/bmad/livewire-widget-advantages.md
+
+  - ../../../Xot/docs/bmad/livewire-widget-advantages.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "vantaggi di avere solo filament widget nel chrome del panel user"
 ---
 
 # Vantaggi di avere SOLO Filament widget nel chrome del panel
 
 > **Nota di canone:** il documento di piattaforma sui vantaggi widget-only è
 > [Xot/docs/bmad/livewire-widget-advantages.md](../../Xot/docs/bmad/livewire-widget-advantages.md).
+
+> [Xot/docs/bmad/livewire-widget-advantages.md](../../../Xot/docs/bmad/livewire-widget-advantages.md).
 > Questo file resta la vista **specifica del modulo User** (chrome `/admin`, auth, legal).
 > **Stato al 2026-09-21:** i tre hook di `AdminPanelProvider` montano già FQCN widget
 > (`AdminPanelProvider.php:25-38`); questo documento descrive il razionale della scelta, ormai
@@ -58,6 +65,8 @@ Questo causava:
 ### 3. Unico percorso di testing e manutenzione
 **Problema pre-campagna:** ogni funzionalità aveva due implementazioni:
 - Implementazione HTTP (spesso orfana, senza route — `routes/web_tall.php` non è mai stato caricato da `XotBaseRouteServiceProvider`)
+
+- Implementazione HTTP (spesso orfana, senza route: `routes/web_tall.php` non è mai stato caricato da `XotBaseRouteServiceProvider`)
 - Implementazione widget (SSoT, utilizzata realmente)
 
 Questo richiede:
@@ -100,6 +109,9 @@ Questo richiede:
 - `InvalidArgumentException: No hint path defined for [filament-jet]` (runtime error, già osservato)
 - Classi HTTP con `dddx('wip')` ancora eseguibili — residuo: `TermsOfService.php:32` (story 10.4)
 - ViewCopyAction che scriveva disco a ogni request — eliminato con le classi auth (2026-09-21)
+
+- Classi HTTP con `dddx('wip')` ancora eseguibili: residuo: `TermsOfService.php:32` (story 10.4)
+- ViewCopyAction che scriveva disco a ogni request: eliminato con le classi auth (2026-09-21)
 - Nomi hardcoded in tedesco/italiano nei toast
 
 **Vantaggio Filament-only:**
@@ -165,6 +177,8 @@ Il modulo User aveva:
 
 Le classi HTTP auth sono eliminate (2026-09-21). **Residuo aperto:** la decisione SSoT non è ancora
 chiusa — convivono `Filament/Widgets/LogoutWidget.php` e `Filament/Widgets/Auth/LogoutWidget.php`,
+
+chiusa: convivono `Filament/Widgets/LogoutWidget.php` e `Filament/Widgets/Auth/LogoutWidget.php`,
 e tre widget reset password (`PasswordResetWidget`, `ResetPasswordWidget`,
 `PasswordResetConfirmWidget`). Finché non si sceglie un SSoT per famiglia (AC 10.3 #4-#5), il
 vantaggio "una sola implementazione" è dimezzato.
@@ -193,6 +207,8 @@ La campagna è completata quando (stato verificato 2026-09-21):
 4. [ ] `phpstan analyse --memory-limit=-1` → 0 errori (livello max)
 5. [ ] `/admin` restituisce 200 per utente autenticato senza hint path error
 6. [ ] Zero `dddx` in qualsiasi componente UI User — `dddx('wip')` ancora in `TermsOfService.php:32`
+
+6. [ ] Zero `dddx` in qualsiasi componente UI User: `dddx('wip')` ancora in `TermsOfService.php:32`
 7. [ ] Tutti i lang UI usano chiavi `user::*` o `module::*` mai testi hardcoded
 
 ---

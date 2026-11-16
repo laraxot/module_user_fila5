@@ -1,5 +1,7 @@
 ---
 title: "Brainstorming — User module: findings grezzi (5 fork paralleli)"
+
+title: "Brainstorming: User module: findings grezzi (5 fork paralleli)"
 type: brainstorming
 module: User
 status: approved
@@ -13,16 +15,26 @@ related:
 
 # Brainstorming: User module — findings grezzi
 
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "brainstorming: user module   findings grezzi user"
+
+# Brainstorming: User module: findings grezzi
+
 Findings raccolti da 5 ricerche parallele (sola lettura, `Agent
 subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 [epics.md](./epics.md). Ordinati per fork, non per priorita'.
 
 ## Fork 1 — Docs hygiene
 
+## Fork 1: Docs hygiene
+
 - 3377 file `.md` in `docs/`; 1532 al primo livello.
 - Cluster di 270 file `*phpstan*.md`, molti chiaramente corrotti
   (`phpstanes.md`, `phpstanebate.md`, `phpstanry-kiss-improvements.md`,
   `phpstan-fixes-1-1.md`, `phpstan-level10es.md`). Root cause: uno script
+
+  `phpstan-fixes.md`, `phpstan-level10es.md`). Root cause: uno script
   di generazione slug ha rimosso le sottostringhe `-fix` e `-d` dai nomi
   file derivati dai titoli, eseguito almeno due volte nella stessa
   giornata (cluster di mtime alle 08:28 e 09:35). Originali e corrotti
@@ -32,6 +44,9 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
   tutti i 3138 link unici: 942 rotti (30.0%).
 - `docs/permissions.md`: 107 righe, ma e' contenuto copiato da un altro
   modulo — dominio "Moderazione Medici" (Patient/Gdpr), frontmatter
+
+  leggermente diverse: contenuto rigenerato, non solo il nome.
+  modulo: dominio "Moderazione Medici" (Patient/Gdpr), frontmatter
   `issues`/`discussions` che punta a `provtv/base_ptv_fila5` (repo
   sbagliata), link interni a `./00-index.md`, `./2fa-guide.md` che non
   hanno nulla a che fare col modulo User.
@@ -40,6 +55,9 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
   `bug-tracking/` — 1090+ file totali, nessuna relazione dichiarata.
 - `docs/.gitignore` linee 8-9: pattern bare `archive`/`legacy` (nessuno
   slash) — `git check-ignore -v` conferma che qualunque nuovo file sotto
+
+  `bug-tracking/`: 1090+ file totali, nessuna relazione dichiarata.
+  slash): `git check-ignore -v` conferma che qualunque nuovo file sotto
   `docs/archive/` o `docs/legacy/` viene ignorato silenziosamente da ora
   in poi. Story root gia' esistente: `5.37-gitignore-archive-legacy-bug-user`.
   Il `.gitignore` di root modulo (500 righe) ha lo stesso blocco
@@ -49,11 +67,15 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 
 ## Fork 2 — Codice/architettura/PHPStan
 
+## Fork 2: Codice/architettura/PHPStan
+
 - `./vendor/bin/phpstan analyse Modules/User --memory-limit=-1`: **0
   errori** a livello `max`. I doc storici che citano N errori residui
   sono tutti obsoleti.
 - 0/30 classi `*Table.php` con `protected static ?string $model`
   esplicito — in contraddizione diretta con issue #91 ("audit gia'
+
+  esplicito: in contraddizione diretta con issue #91 ("audit gia'
   fatto, $model presente su tutti" per 13 file). Nessuna delle due fonti
   assunta vera senza riverifica.
 - `OauthClientResource` referenzia il modello Passport vanilla, non il
@@ -72,6 +94,10 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 ## Fork 3 — Copertura test
 
 - Host verificato: non e' `10.100.200.15` (hostname `NOLWA004`) — via
+
+## Fork 3: Copertura test
+
+- Host verificato: non e' `10.100.200.15` (hostname `NOLWA004`): via
   libera per eseguire Pest secondo la regola dati sacri.
 - ~1054 casi Pest dichiarati nell'albero `tests/`.
 - Bootstrap anomalmente lento: 3-9 secondi per un'asserzione banale
@@ -79,6 +105,8 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
   nessuno; stima seriale 85-90 minuti.
 - Campione eseguito: alcuni test passano, alcuni falliscono, alcuni
   warning — non rappresentativo abbastanza per un numero di coverage
+
+  warning: non rappresentativo abbastanza per un numero di coverage
   affidabile senza prima risolvere il bootstrap lento.
 - 25 Filament Resource: 3 con test dedicato (12%) -> 22 scoperte (88%).
 - 22 Widget: 7 con test dedicato (32%) -> 15 scoperti (68%).
@@ -90,6 +118,12 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 
 - `laraxot/module_user_fila5`: 27 issue aperte, 13 discussion aperte.
 - `provtv/module_user_fila5`: 9 issue aperte, 4 discussion aperte —
+
+  (registrazione): scaffold, non suite E2E.
+
+## Fork 4: Catalogo GitHub
+
+- `provtv/module_user_fila5`: 9 issue aperte, 4 discussion aperte -
   **tracker separato e divergente**, non uno specchio del remote
   laraxot (numerazione diversa, contenuti diversi). Decisione di
   governance su quale remote e' canone: non presa, da documentare
@@ -106,6 +140,8 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
   del Fork 2) e coverage (#31/#30/#32, tre issue per lo stesso tema).
 
 ## Fork 5 — Dominio/sicurezza (verifica delle 5 azioni di `purpose.md`)
+
+## Fork 5: Dominio/sicurezza (verifica delle 5 azioni di `purpose.md`)
 
 1. README badge falsi: **FALSO/STALE**. Il README e' gia' stato
    corretto il 2026-09-02 (stesso giorno di `purpose.md`) con badge
@@ -137,4 +173,8 @@ subagent_type: fork`, 2026-09-22), prima della prioritizzazione in
 - `purpose.md` azione #1 (badge falsi) vs README gia' corretto — risolto
   nella sintesi correggendo `purpose.md`, non il README.
 - `purpose.md` azione #5 (nessuno legge auth log) vs UI gia' esistente —
+
+  (0/30 classi con `$model` esplicito): FR-13.1.
+- `purpose.md` azione #1 (badge falsi) vs README gia' corretto: risolto
+- `purpose.md` azione #5 (nessuno legge auth log) vs UI gia' esistente -
   risolto restringendo il gap alla sola euristica di anomalia.

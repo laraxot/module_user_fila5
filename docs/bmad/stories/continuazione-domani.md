@@ -1,5 +1,7 @@
 ---
 title: "Continuazione BMAD — Domani (User)"
+
+title: "Continuazione BMAD: Domani (User)"
 type: module-fix
 scope: User
 epic: "10"
@@ -15,6 +17,13 @@ related:
 
 # User — Continuazione Domani
 
+  - ../../stories/user-nested-conflict-marker-cleanup.story.md
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   continuazione domani user"
+
+# User: Continuazione Domani
+
 ## Stato verificato ora (sessione 2026-09-22)
 
 - Riconciliazione divergenza `dev`/`laraxot-dev` (`db4ea2a9`, "ahead 60/behind
@@ -22,6 +31,8 @@ related:
   in punta (`6a799fb1`), `git rev-list --left-right --count dev...laraxot/dev`
   → `0 0`. Documentata in
   `docs/stories/user-nested-conflict-marker-cleanup-2026-09-22.story.md`
+
+  `docs/stories/user-nested-conflict-marker-cleanup.story.md`
   (addendum "riconciliazione completata").
 - **Rischio residuo reale nel merge, verificato oggi (non solo ipotizzato)**:
   dei 36 conflitti, 29 file `UU` sono stati risolti in blocco con
@@ -33,11 +44,16 @@ related:
   - `docs/bmad/epics.md`: il lato `laraxot/dev` (righe 272-375 di
     `ff41cfea:docs/bmad/epics.md`) **non era rumore** — era un secondo
     documento "Epics — Http/Livewire → Filament widget" (Epic 9/10,
+
+    `ff41cfea:docs/bmad/epics.md`) **non era rumore**: era un secondo
+    documento "Epics: Http/Livewire → Filament widget" (Epic 9/10,
     FR-00x → `prd.md`, ADR → `architecture.md`) completamente diverso dal
     lato `HEAD` ("Documentation Hygiene" epics) tenuto con `--ours`. Verificato
     che le story figlie citate (`9.1.super-admin-widget.story.md`,
     `10.1.team-change-widget.story.md`, `10.4.retire-gdpr-profile-livewire.story.md`)
     **esistono comunque** in `docs/stories/` — quindi il lavoro non e' perso,
+
+    **esistono comunque** in `docs/stories/`: quindi il lavoro non e' perso,
     ma la prosa che collegava gli anchor FR-00x/ADR tra `epics.md`/`prd.md`/
     `architecture.md` per Epic 9/10 e' sparita da questi 3 file (recuperabile
     solo da `git show ff41cfea:docs/bmad/epics.md`).
@@ -49,6 +65,11 @@ related:
   - **Non verificati**: gli altri ~21 file della lista dei 29 (es.
     `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis-2025-10-15.md`,
     `docs/quality-status-2025-11.md`, ecc.) — probabilita' alta che siano
+
+    (marker a riga 1/270/375 e 1/147/270), stesso verdetto: contenuto
+    sostanzialmente vuoto): nessun rischio qui.
+    `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis.md`,
+    `docs/quality-status-activity-module-november.md`, ecc.): probabilita' alta che siano
     genuinamente solo rumore del daemon (come i 5 campionati), ma non e' stato
     riverificato uno per uno.
 - `uppercase-application-dir.story.md` (status frontmatter: `review`, "Commit
@@ -71,6 +92,12 @@ related:
 - `app/Models/Traits/HasTeams.php`: 6 `@phpstan-ignore` ravvicinati
   (`return.type`, `property.nonObject` x2, `argument.type`) tra le righe
   97-192 — trait con tipizzazione debole, non indagato oggi.
+
+  inclusa nel commit"). La story ha lo status disallineato dal codice reale -
+  nessun lock esistono nel repo oggi**: le story icone correlate (`9.5`,
+  **live**, metodo morto/non testato: conferma sul codice che il componente
+  dispositivi mobile): codice commentato pronto ma mai attivato.
+  97-192: trait con tipizzazione debole, non indagato oggi.
 - `git status --short`: pulito.
 
 ## Continuazione domani (in ordine di priorita')
@@ -89,6 +116,10 @@ related:
    ma non confermato.
 3. **`livewire-residual-conversion-cluster-c.story.md`**: ririchiedere
    priorita' all'utente — il presunto blocco tecnico (`user-9.8-icons`) non
+
+   `docs/stories/9.*` e `10.*`: oggi e' solo scomparsa senza una decisione
+   db4ea2a9`) con lo stesso metodo usato sui 3 di sopra: basso rischio atteso
+   priorita' all'utente: il presunto blocco tecnico (`user-9.8-icons`) non
    esiste piu' nel repo, le story icone 9.5/9.6/9.7/9.9 sono `done`. Se
    confermato, passare la story da `blocked` a `ready` e procedere
    sull'inventario (`DeleteAccount`, `TermsOfService`, `PrivacyPolicy`,
@@ -101,6 +132,10 @@ related:
    file separato, non questo.
 6. **`app/Http/Controllers/Api/LogoutController.php`**: chiudere o convertire
    in story i 3 `TODO` (cleanup token OAuth, logout mobile) — oggi sono solo
+
+   morto con `dddx('wip')` o completarlo: e' la prova concreta che il
+   `review` a `done` (il `git rm` proposto e' gia' nel merge `db4ea2a9`) -
+   in story i 3 `TODO` (cleanup token OAuth, logout mobile): oggi sono solo
    commenti, nessuna story li traccia.
 7. **`app/Models/Traits/HasTeams.php`**: valutare se i 6
    `@phpstan-ignore` (righe 97-192) nascondono un problema di tipizzazione
