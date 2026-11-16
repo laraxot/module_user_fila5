@@ -68,8 +68,8 @@ Solo `Modules/User/resources/svg/`. Prefisso auto-registrato: `user`. Non `publi
 
 | Stato | File | Nome Filament (`icon=`) | Colore |
 |-------|------|-------------------------|--------|
-| attivo | `resources/svg/superman.svg` | `user-superman` | `warning` |
-| negato | `resources/svg/clark-kent.svg` | `user-clark-kent` | `danger` |
+| attivo | `resources/svg/superman.svg` | `user::superman` | `warning` |
+| negato | `resources/svg/clark-kent.svg` | `user::clark-kent` | `danger` |
 
 Archivio (non cancellare, non usare nel bottone): `superadmin.svg`, `negate-superadmin.svg`, `user-super-admin.svg`, `user-negate-super-admin.svg`. Un file `user-superman.svg` si registra come `user-user-superman`.
 
