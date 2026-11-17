@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'actions' => [
         'submit' => [
-            'label' => 'submit',
             'icon' => 'submit',
+            'label' => 'submit',
             'tooltip' => 'submit',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
+            'label' => 'cancel',
             'tooltip' => 'cancel',
         ],
     ],

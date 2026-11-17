@@ -3,18 +3,51 @@
 declare(strict_types=1);
 
 return [
-    'fields' => [
-        'id' => ['label' => 'id'],
-        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
-        'created_at' => ['label' => 'created_at'],
-    ],
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'associate' => ['label' => 'associate', 'icon' => 'associate', 'tooltip' => 'associate'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'dissociate' => ['label' => 'dissociate', 'icon' => 'dissociate', 'tooltip' => 'dissociate'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'create' => [
+            'icon' => 'create',
+            'label' => 'create',
+            'tooltip' => 'create',
+        ],
+        'associate' => [
+            'icon' => 'associate',
+            'label' => 'Collega',
+            'tooltip' => 'associate',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+            'label' => 'edit',
+            'tooltip' => 'edit',
+        ],
+        'dissociate' => [
+            'icon' => 'dissociate',
+            'label' => 'Scollega',
+            'tooltip' => 'dissociate',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+            'label' => 'delete',
+            'tooltip' => 'delete',
+        ],
     ],
     'label' => 'Permessi del ruolo',
-    'navigation' => ['label' => 'Permessi ruolo', 'icon' => 'Permessi ruolo', 'sort' => 86],
+    'navigation' => [
+        'label' => 'Permessi ruolo',
+        'icon' => 'Permessi ruolo',
+        'sort' => 86,
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+    ],
 ];

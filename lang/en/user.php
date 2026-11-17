@@ -35,20 +35,17 @@ return [
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
-            'description' => 'name',
             'helper_text' => '',
             'tooltip' => '',
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
-            'description' => 'email',
             'helper_text' => '',
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
-            'description' => 'password',
             'helper_text' => '',
             'tooltip' => '',
         ],

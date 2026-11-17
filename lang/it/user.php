@@ -28,7 +28,6 @@ return [
             'help' => 'Nome completo dell\'utente',
             'tooltip' => 'Nome e cognome dell\'utente',
             'helper_text' => '',
-            'description' => 'name',
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -52,7 +51,6 @@ return [
             'help' => 'Indirizzo email dell\'utente',
             'tooltip' => 'Email per l\'accesso e le comunicazioni',
             'helper_text' => '',
-            'description' => 'email',
         ],
         'password' => [
             'label' => 'Password',
@@ -60,7 +58,6 @@ return [
             'help' => 'Password per l\'accesso al sistema',
             'tooltip' => 'Password di accesso',
             'helper_text' => '',
-            'description' => 'password',
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -219,7 +216,6 @@ return [
             'tooltip' => 'Data verifica email',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'email_verified_at',
         ],
         'provider' => [
             'label' => 'Provider',
@@ -298,36 +294,29 @@ return [
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'layout' => [
-            'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'endDate' => [
-            'description' => 'endDate',
             'helper_text' => 'endDate1',
-            'placeholder' => 'endDate',
-            'label' => 'endDate',
             'tooltip' => '',
         ],
         'startDate' => [
-            'description' => 'startDate',
-            'helper_text' => 'startDate',
-            'placeholder' => 'startDate',
-            'label' => 'startDate',
             'tooltip' => '',
+        ],
+        'user' => [
+            'label' => 'Utente',
         ],
         'matr' => [
             'description' => 'matr',
@@ -342,25 +331,22 @@ return [
             'description' => 'ente',
         ],
         'state' => [
-            'label' => 'state',
-        ],
-        'user' => [
-            'label' => 'Utente',
+            'label' => 'Stato',
         ],
         'device' => [
-            'label' => 'device',
+            'label' => 'Dispositivo',
             'placeholder' => 'device',
             'helper_text' => 'device',
             'description' => 'device',
         ],
         'created_from' => [
-            'label' => 'created_from',
+            'label' => 'Creato dal',
             'placeholder' => 'created_from',
             'helper_text' => 'created_from',
             'description' => 'created_from',
         ],
         'created_until' => [
-            'label' => 'created_until',
+            'label' => 'Creato fino al',
             'placeholder' => 'created_until',
             'helper_text' => 'created_until',
             'description' => 'created_until',
@@ -443,92 +429,57 @@ return [
             'tooltip' => 'Disattiva l\'utente',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'export' => [
             'icon' => 'export',
-            'label' => 'export',
+            'label' => 'Esporta',
             'tooltip' => 'export',
         ],
         'changePassword' => [
             'icon' => 'changePassword',
-            'label' => 'changePassword',
-            'tooltip' => 'changePassword',
         ],
         'layout' => [
             'icon' => 'layout',
-            'label' => 'layout',
-            'tooltip' => 'layout',
         ],
         'export_xls' => [
             'icon' => 'export_xls',
-            'label' => 'export_xls',
-            'tooltip' => 'export_xls',
         ],
         'cancel' => [
             'icon' => 'cancel',
-            'label' => 'cancel',
-            'tooltip' => 'cancel',
         ],
         'save' => [
             'icon' => 'save',
-            'label' => 'save',
-            'tooltip' => 'save',
-        ],
-        'submit' => [
-            'tooltip' => 'submit',
         ],
         'createAnother' => [
-            'tooltip' => 'createAnother',
             'icon' => 'createAnother',
-            'label' => 'createAnother',
         ],
         'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
-            'label' => 'resetColumnManager',
         ],
         'removeAllFilters' => [
-            'label' => 'removeAllFilters',
             'icon' => 'removeAllFilters',
-            'tooltip' => 'removeAllFilters',
         ],
     ],
     'messages' => [
@@ -814,15 +765,5 @@ return [
         ],
     ],
     'label' => 'Utente',
-    'sections' => [
-        'empty' => [
-            'heading' => 'empty',
-            'label' => 'empty',
-        ],
-        'worker' => [
-            'label' => 'worker',
-            'heading' => 'worker',
-        ],
-    ],
     'plural_label' => 'User (Plurale)',
 ];

@@ -3,20 +3,44 @@
 declare(strict_types=1);
 
 return [
-    'fields' => [
-        'id' => ['label' => 'id'],
-        'name' => ['label' => 'name'],
-        'guard_name' => ['label' => 'guard_name'],
-        'display_name' => ['label' => 'display_name'],
-        'description' => ['label' => 'description'],
-        'created_at' => ['label' => 'created_at'],
-        'updated_at' => ['label' => 'updated_at'],
-    ],
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+        ],
+        'display_name' => [
+            'label' => 'Nome visualizzato',
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Modificato il',
+        ],
     ],
 ];

@@ -3,10 +3,19 @@
 declare(strict_types=1);
 
 return [
-    'fields' => [
-        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
-    ],
     'actions' => [
-        'register' => ['label' => 'register', 'icon' => 'register', 'tooltip' => 'register'],
+        'register' => [
+            'icon' => 'register',
+            'label' => 'Registrati',
+            'tooltip' => 'register',
+        ],
+    ],
+    'fields' => [
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
+        ],
     ],
 ];

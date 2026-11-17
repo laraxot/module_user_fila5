@@ -1,15 +1,13 @@
 ---
-title: "translation: Consolidated Documentation"
+title: "translation — Consolidated Documentation"
 module: user
 type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
-qmd: "translation   consolidated documentation user"
 ---
 
-# translation: Consolidated Documentation
+# translation — Consolidated Documentation
 
 Consolidated from **22** individual files.
 
@@ -53,16 +51,13 @@ qmd: "translation-best-practices best practices per le traduzioni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -212,8 +207,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](./module-structure.md) 
-- [Struttura Moduli](../../module-structure-user.md) 
+- [Struttura Moduli](./module-structure-2.md) 
 ---
 
 ## translation-city-field-refactor-.deprecated
@@ -229,16 +223,13 @@ qmd: "translation-city-field-refactor-2025-08-08.deprecated refactor completo ca
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -440,16 +431,13 @@ qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -640,8 +628,7 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 
 ## translation-city-field-refactor-3
 
-*Consolidated from: `translation-city-field-refactor.md`*
-*Consolidated from: `translation-city-field-refactor-stato-rinominato.md`*
+*Consolidated from: `translation-city-field-refactor-3.md`*
 
 title: "translation-city-field-refactor-2025-08-08"
 type: concept
@@ -651,24 +638,17 @@ updated: 2026-07-14
 qmd: "translation-city-field-refactor-2025-08-08 deprecated"
 status: deprecated
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
----
-
-> Questo file è stato rinominato in [translation-city-field-refactor-3.md](../../translation-city-field-refactor.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-3.md](../../translation-city-field-refactor-stato-rinominato.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -680,16 +660,13 @@ module: theme
 topic: translation-city-field-refactor-conflict
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -709,24 +686,17 @@ updated: 2026-07-14
 qmd: "translation-city-field-refactor-2025-08-08.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
----
-
-> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](../../translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
-> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](../../translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -738,16 +708,13 @@ module: theme
 topic: translation-city-field-refactor
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -768,16 +735,13 @@ qmd: "translation-conflict-resolution-prototype translation conflict resolution 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -823,16 +787,13 @@ qmd: "translation-fields-key-importance understanding translation structure in l
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -867,16 +828,13 @@ module: theme
 topic: translation-fixes
 canonical: ../../../Themes/docs/shared-components/translation-fixes.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -897,16 +855,13 @@ qmd: "translation-key-prototype translation key prototype"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -944,16 +899,13 @@ qmd: "translation-keys-rules regole per le chiavi di traduzione"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1074,13 +1026,9 @@ return [
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Best Practices per le Traduzioni](translation-best-practices.md)
-- [Struttura del Modulo](module-structure.md)
+- [Best Practices per le Traduzioni](translation-best-practices-2.md)
+- [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
-- [Convenzioni di Codice](../../code_conventions.md)
-- [Best Practices per le Traduzioni](../../translation-best-practices-traduzioni.md)
-- [Struttura del Modulo](../../module-structure-user.md)
-- [Convenzioni di Codice](../../code-conventions.md)
 ---
 
 ## translation-keys
@@ -1091,16 +1039,13 @@ module: theme
 topic: translation-keys
 canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1121,16 +1066,13 @@ qmd: "translation-maintenance-log translation maintenance log - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1299,16 +1241,13 @@ module: theme
 topic: translation-resolution-prototype
 canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1324,16 +1263,13 @@ module: theme
 topic: translation-syntax-fixes-
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1354,16 +1290,13 @@ qmd: "translation-syntax-fixes correzioni errori di sintassi nei file di traduzi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1511,16 +1444,13 @@ qmd: "translation-syntaxes correzioni errori di sintassi nei file di traduzione 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1925,7 +1855,6 @@ return [
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
-- [Convenzioni di Codice](../../code_conventions.md)
 
 ---
 
@@ -1942,16 +1871,13 @@ qmd: "translationes correzioni file di traduzione user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2064,16 +1990,13 @@ module: theme
 topic: translations
 canonical: ../../../Themes/docs/shared-components/translations.md
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 

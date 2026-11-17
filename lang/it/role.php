@@ -99,8 +99,6 @@ return [
             'label' => 'Valori',
             'tooltip' => 'Valori associati al ruolo',
             'helper_text' => 'Valori aggiuntivi o configurazioni specifiche del ruolo',
-            'description' => 'values',
-            'placeholder' => 'values',
         ],
         'enabled' => [
             'label' => 'Abilitato',
@@ -114,7 +112,7 @@ return [
         ],
         'team' => [
             'name' => [
-                'label' => 'team.name',
+                'label' => 'Team',
             ],
             'label' => '',
             'tooltip' => '',
@@ -230,88 +228,54 @@ return [
         ],
         'reorderRecords' => [
             'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
             'icon' => 'openColumnManager',
-            'label' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
             'icon' => 'applyTableColumnManager',
-            'label' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
             'icon' => 'resetFilters',
-            'label' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
             'icon' => 'applyFilters',
-            'label' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
             'icon' => 'openFilters',
-            'label' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'detach' => [
             'icon' => 'detach',
-            'label' => 'detach',
-            'tooltip' => 'detach',
         ],
         'cancel' => [
             'icon' => 'cancel',
-            'tooltip' => 'cancel',
-            'label' => 'cancel',
         ],
         'attachRole' => [
             'icon' => 'attachRole',
-            'label' => 'attachRole',
-            'tooltip' => 'attachRole',
         ],
         'attach' => [
             'icon' => 'attach',
-            'label' => 'attach',
-            'tooltip' => 'attach',
         ],
         'logout' => [
-            'tooltip' => 'logout',
             'icon' => 'logout',
-            'label' => 'logout',
         ],
         'profile' => [
-            'tooltip' => 'profile',
             'icon' => 'profile',
-            'label' => 'profile',
         ],
         'layout' => [
-            'tooltip' => 'layout',
             'icon' => 'layout',
-            'label' => 'layout',
         ],
         'createAnother' => [
-            'tooltip' => 'createAnother',
-            'label' => 'createAnother',
             'icon' => 'createAnother',
         ],
         'submit' => [
-            'tooltip' => 'submit',
             'icon' => 'submit',
-            'label' => 'submit',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'save',
-            'tooltip' => 'save',
         ],
         'resetColumnManager' => [
-            'label' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
-            'tooltip' => 'resetColumnManager',
         ],
     ],
     'sections' => [
@@ -408,6 +372,23 @@ return [
         'manager' => 'Manager',
         'editor' => 'Editor',
         'user' => 'Utente',
+    ],
+    // Display names of the role codes (spatie role `name`). Il codice resta il valore salvato.
+    'labels' => [
+        'super-admin' => 'Super amministratore',
+        'restaurant__admin' => 'Titolare',
+        'restaurant__restaurateur' => 'Ristoratore',
+        'admin' => 'Amministratore',
+        'moderator' => 'Moderatore',
+        'editor' => 'Editor',
+        'manager' => 'Manager',
+        'user' => 'Utente',
+        'guest' => 'Ospite',
+        'bar' => 'Bancone',
+        'kitchen' => 'Cucina',
+        'cashier' => 'Cassiere',
+        'waiter' => 'Cameriere',
+        'respHACCP' => 'Responsabile HACCP',
     ],
     'label' => 'Ruolo',
     'plural_label' => 'Role (Plurale)',

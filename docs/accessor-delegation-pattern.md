@@ -8,23 +8,14 @@ qmd: "accessor-delegation-pattern accessor delegation pattern (sacro)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-structure.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
-  - "./actions-structure.md"
-status: draft
+  - "./actions-structure-1.md"
 ---
 
 # Accessor Delegation Pattern (SACRO)
@@ -70,4 +61,4 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
-- [INDEX.md](index.md)
+- [INDEX.md](INDEX.md)
