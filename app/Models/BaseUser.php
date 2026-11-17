@@ -148,7 +148,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
+<<<<<<< .merge_file_NmCAv5
 
+=======
+>>>>>>> .merge_file_zOyy67
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
@@ -288,15 +291,21 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-        // $panel->default('admin');
-        if ($panel->getId() === 'access') {
-            return true;
+        // P0: niente bypass cieco su panel `access`.
+        $deletedAt = $this->getAttribute('deleted_at');
+        if (is_string($deletedAt) || $deletedAt instanceof \DateTimeInterface) {
+            return false;
         }
 
         // Admin e super admin entrano solo nel pannello di amministrazione del ristorante (`restaurant::admin`): il pannello principale `admin`
         // li rimanderebbe alla home del sito. Comanda, cassa, cucina, banco e HACCP restano dei rispettivi ruoli.
         if ($panel->getId() === 'restaurant::admin' && $this->hasAnyRole(['super-admin', 'admin'])) {
             return true;
+        }
+
+        // Panel `access`: richiede almeno un ruolo applicativo (niente open-door).
+        if ($panel->getId() === 'access') {
+            return $this->roles()->exists();
         }
 
         if ($panel->getId() !== 'admin') {
