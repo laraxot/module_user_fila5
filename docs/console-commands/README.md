@@ -1,11 +1,3 @@
----
-title: "Comandi Console - Modulo User"
-type: index
-status: draft
-updated: 2026-10-08
-tags: [docs, user, console-commands]
-qmd: "comandi console - modulo user user"
----
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -270,8 +262,8 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy-1.md"
+  - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
 ---
@@ -489,10 +481,10 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
-- [User Models](../models/README.md)
+- [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
-- [README.md](../README.md)
+- [README.md](../readme.md)
 
 ## Aggiornamenti Recenti
 

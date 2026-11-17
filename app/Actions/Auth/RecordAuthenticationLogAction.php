@@ -10,6 +10,7 @@ use Modules\User\Actions\Database\IsUserDatabaseConfiguredAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Contracts\UserContract;
 use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\BaseUser;
 
 /**
  * Persist an authentication_logs row on the User connection (`user` / fixcity_user).

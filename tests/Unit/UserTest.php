@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-use Modules\User\Tests\TestCase;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 
 /**
  * @property User $subjectUser
  */
-
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -52,7 +51,8 @@ test('user can be updated', function (): void {
     $this->subjectUser->refresh();
 
     expect($this->subjectUser->email)->toBe('updated@example.com');
-    expect($this->subjectUser->type)->toBe(UserType::BoUser);
+    // 'type' e' la colonna figlio di Parental (childTypes): nessun cast enum, dopo refresh() e' stringa.
+    expect($this->subjectUser->type)->toBe(UserType::BoUser->value);
 });
 
 test('user can be deleted', function (): void {
