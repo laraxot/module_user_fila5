@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_hQ4nSE
+=======
 ---
 title: "Architettura BMAD — User"
 type: architecture
@@ -6,6 +8,7 @@ updated: 2026-11-16
 qmd: "architettura BMAD User modulo auth ruoli panel"
 ---
 
+>>>>>>> .merge_file_LLA0ZX
 # User Module Architecture (BMAD)
 
 **Status**: ✅ Finalized

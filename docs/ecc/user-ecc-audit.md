@@ -4,13 +4,31 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: User
+<<<<<<< .merge_file_U4GxZE
+qmd: "ECC audit User verification security testing laravel"
+=======
 qmd: "ECC audit User security-review clean-code laravel-verification verification-loop tdd-workflow"
+>>>>>>> .merge_file_gYJL8s
 ---
 
 # ECC audit operativo — User
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_U4GxZE
+ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
+PHPStan + Pest, aggiornamento docs/QMD.
+
+## Checklist
+
+- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
+- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
+- [ ] `laravel-verification`: route, config, migration additive, container
+- [ ] `verification-loop`: PHPStan level max + Pest mirato
+- [ ] `tdd-workflow`: regressione sui finding P0
+- [ ] `documentation-sync`: story + indici + qmd
+- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+=======
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -26,11 +44,38 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `tdd-workflow` (regressione sui P0) | aperto | scrivere prima il Pest rosso su `user::admin` → `RolePolicy::before` (null atteso) |
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/user-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
 | `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
+>>>>>>> .merge_file_gYJL8s
 
 ## Input misurato (2026-11-16)
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_U4GxZE
+| app PHP | 713 |
+| test | 233 |
+| resources | 26 |
+| actions | 83 |
+| services | 0 |
+| policies (files approx) | 78 |
+
+## Gate osservati
+
+- PHPStan `Modules` (2026-11-16): 0 errori
+- Pest: pending (ambiente testing)
+
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- migrate:fresh / RefreshDatabase / --force
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+## Riferimenti
+
+- [00-index](./00-index.md)
+- [BMAD audit](../bmad/audit.md)
+=======
 | PHP `app/` | 713 |
 | Test PHP | 233 |
 | Models | 123 |
@@ -61,3 +106,4 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 ## Riferimenti
 
 - [00-index](./00-index.md) · [BMAD audit](../bmad/audit.md) · [audit dettagliato](../bmad/audits/user-audit.md)
+>>>>>>> .merge_file_gYJL8s

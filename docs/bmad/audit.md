@@ -4,11 +4,38 @@ type: audit
 status: review
 updated: 2026-11-16
 module: User
+<<<<<<< .merge_file_GdZ9eJ
+qmd: "audit BMAD User source-first qualità"
+=======
 qmd: "audit BMAD User sintesi finding P0 P1 PHPStan Pest"
+>>>>>>> .merge_file_febhDU
 ---
 
 # Audit BMAD — User
 
+<<<<<<< .merge_file_GdZ9eJ
+SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
+
+## Sintesi (2026-11-16)
+
+| Metrica | Valore |
+|---|---:|
+| PHP `app/` | 713 |
+| Test | 233 |
+| Resources | 26 |
+| Actions | 83 |
+| Services | 0 |
+| Policy `return true` | 8 |
+| Marker | 0 |
+
+## Lo scopo in una frase **User risponde a tre domande e non ad altre: chi sei, cosa puoi fare, per conto di chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.**
+
+## Gate
+
+- PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
+- Pest: da eseguire in ambiente testing non produttivo.
+- Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
+=======
 SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md) · scopo: [purpose.md](./purpose.md)
 
 **In una frase:** chi è chi e cosa può fare: utenti, ruoli, permessi, team, OAuth, accesso ai pannelli.
@@ -45,3 +72,4 @@ SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md) · scopo: [purp
 ## Seguito
 
 [epics.md](./epics.md) · [decision-log.md](./decision-log.md) · [story](./stories/module-bmad-audit.story.md) · [ECC](../ecc/user-ecc-audit.md)
+>>>>>>> .merge_file_febhDU

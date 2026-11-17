@@ -1,3 +1,5 @@
+# User Module — Epics for Perfection
+
 ---
 title: "Epic BMAD — User"
 type: epics

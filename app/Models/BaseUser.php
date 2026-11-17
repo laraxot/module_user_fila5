@@ -148,6 +148,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
+<<<<<<< .merge_file_NmCAv5
+
+=======
+>>>>>>> .merge_file_zOyy67
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
@@ -346,7 +350,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection;
+        return $this->membershipTeams ?? new Collection();
     }
 
     // public function authentications(): MorphMany
