@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_hA0eIR
     'fields' => [
         'id' => ['label' => 'ID'],
         'user_id' => ['label' => 'Utente'],
@@ -20,8 +19,6 @@ return [
         'owner_id' => ['label' => 'owner_id'],
         'owner_type' => ['label' => 'owner_type'],
     ],
-=======
->>>>>>> .merge_file_usfBCO
     'actions' => [
         'create' => [
             'icon' => 'create',

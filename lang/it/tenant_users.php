@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_KFIY3f
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -18,8 +17,6 @@ return [
         'created_by' => ['label' => 'Creato da'],
         'deleted_by' => ['label' => 'Eliminato da'],
     ],
-=======
->>>>>>> .merge_file_T16JXM
     'actions' => [
         'create' => [
             'icon' => 'create',

@@ -9,11 +9,7 @@ use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-<<<<<<< .merge_file_7G1wmh
 uses(\Modules\User\Tests\TestCase::class);
-=======
-uses(TestCase::class);
->>>>>>> .merge_file_GenGyQ
 
 /*
  * Quali ruoli puo' assegnare chi opera dal pannello: il `super-admin` solo chi lo e' gia'.

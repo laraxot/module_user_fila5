@@ -186,10 +186,7 @@ return [
             'error' => 'Errore durante il caricamento dei documenti',
         ],
         'register' => [
-<<<<<<< .merge_file_3kMFKP
             'label' => 'Registrati',
-=======
->>>>>>> .merge_file_wjoqVZ
             'icon' => 'register',
         ],
         'profile' => [

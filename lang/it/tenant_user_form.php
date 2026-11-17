@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_jyVG5X
 return [
     'sections' => [
         'Tenant User Information' => [
@@ -31,6 +30,3 @@ return [
         ],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_nekaPd

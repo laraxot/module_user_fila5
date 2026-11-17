@@ -200,7 +200,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)

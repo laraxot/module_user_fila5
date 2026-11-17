@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_dCSs3W
 return [
     'fields' => [
         'id' => ['label' => 'ID'],
@@ -15,6 +14,3 @@ return [
         'expires_at' => ['label' => 'Scade il'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_KFG88v

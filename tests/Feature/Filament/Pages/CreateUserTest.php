@@ -2,69 +2,57 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_rnvYIb
-use Modules\User\Tests\TestCase;
-=======
-<<<<<<< .merge_file_BuEqcB
-=======
-use Modules\User\Tests\TestCase;
->>>>>>> .merge_file_UcomDz
->>>>>>> .merge_file_7Afbk5
+use Illuminate\Contracts\Support\Htmlable;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use PHPUnit\Framework\Assert;
 
 /**
- * @property CreateUser $page
+ * Verifica che CreateUser esponga il contratto Filament atteso
+ * (resource, model, form) senza dipendere dal tenant di rotta.
+ *
+ * Usa TestCase::$createUserPage (tipizzato) — non $this->page mistyped.
  */
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< .merge_file_rnvYIb
-    $this->page = new CreateUser();
-=======
-<<<<<<< .merge_file_BuEqcB
-    $this->createUserPage = new CreateUser;
-=======
-    $this->page = new CreateUser();
->>>>>>> .merge_file_UcomDz
->>>>>>> .merge_file_7Afbk5
+    TestCase::$createUserPage = new CreateUser;
 });
 
 test('create user page has correct resource', function (): void {
-    expect($this->page->getResource())->toBe(UserResource::class);
+    $page = TestCase::requireCreateUserPage();
+    Assert::assertSame(UserResource::class, $page->getResource());
 });
 
 test('create user page has correct navigation label', function (): void {
-    $label = $this->page->getNavigationLabel();
-
-    // The label should be defined or fall back to default
-    expect($label)->not->toBeNull();
+    $label = TestCase::requireCreateUserPage()->getNavigationLabel();
+    Assert::assertNotSame('', $label instanceof Htmlable ? $label->toHtml() : $label);
 });
 
 test('create user page has correct title', function (): void {
-    $title = $this->page->getTitle();
-
-    // The title should be defined or fall back to default
-    expect($title)->not->toBeNull();
+    $title = TestCase::requireCreateUserPage()->getTitle();
+    Assert::assertNotSame('', $title instanceof Htmlable ? $title->toHtml() : $title);
 });
 
 test('create user page has correct breadcrumbs structure', function (): void {
+    $page = TestCase::requireCreateUserPage();
+
     // Senza i parametri di rotta del tenant la generazione lancia: il test non e' applicabile.
     try {
-        $breadcrumbs = $this->page->getBreadcrumbs();
+        $breadcrumbs = $page->getBreadcrumbs();
     } catch (Exception) {
         $this->markTestSkipped('Breadcrumbs need route parameters not available in multi-tenant setup.');
     }
 
     // Filament aggiunge sempre almeno il breadcrumb della pagina corrente.
-    expect($breadcrumbs)->not->toBeEmpty();
+    Assert::assertNotEmpty($breadcrumbs);
 });
 
 test('create user page can create user with valid data', function (): void {
-    // Test that the page can handle user creation with valid data structure
     $userData = [
         'name' => 'Test User',
         'email' => 'test@example.com',
@@ -72,15 +60,13 @@ test('create user page can create user with valid data', function (): void {
         'type' => UserType::MasterAdmin,
     ];
 
-    // Test that the data structure is correct for user creation
-    expect($userData['name'])->toBe('Test User');
-    expect($userData['email'])->toBe('test@example.com');
-    expect($userData['password'])->toBe('password123');
-    expect($userData['type'])->toBe(UserType::MasterAdmin);
+    Assert::assertSame('Test User', $userData['name']);
+    Assert::assertSame('test@example.com', $userData['email']);
+    Assert::assertSame('password123', $userData['password']);
+    Assert::assertSame(UserType::MasterAdmin, $userData['type']);
 });
 
 test('create user page handles form submission structure', function (): void {
-    // Test form data structure that would be submitted
     $formData = [
         'name' => 'New User',
         'email' => 'newuser@example.com',
@@ -88,26 +74,27 @@ test('create user page handles form submission structure', function (): void {
         'type' => UserType::BoUser,
     ];
 
-    // Test form data structure
-    expect($formData)->toHaveKey('name');
-    expect($formData)->toHaveKey('email');
-    expect($formData)->toHaveKey('password');
-    expect($formData)->toHaveKey('type');
-
-    expect($formData['name'])->toBe('New User');
-    expect($formData['email'])->toBe('newuser@example.com');
-    expect($formData['password'])->toBe('newpassword123');
-    expect($formData['type'])->toBe(UserType::BoUser);
+    Assert::assertArrayHasKey('name', $formData);
+    Assert::assertArrayHasKey('email', $formData);
+    Assert::assertArrayHasKey('password', $formData);
+    Assert::assertArrayHasKey('type', $formData);
+    Assert::assertSame('New User', $formData['name']);
+    Assert::assertSame('newuser@example.com', $formData['email']);
+    Assert::assertSame('newpassword123', $formData['password']);
+    Assert::assertSame(UserType::BoUser, $formData['type']);
 });
 
 test('create user page has basic form functionality', function (): void {
-    // Test that the page has basic form capabilities
-    // Filament 5 non espone piu' `getFormModel()` (form -> schema): il modello e' verificato da `getModel()` sotto.
-    expect(method_exists($this->page, 'form'))->toBeTrue();
+    // Lo schema vive in Schemas\UserForm (UserResource::getFormClass()); uno schema vuoto
+    // svuota la pagina di creazione senza errori ne' log.
+    Assert::assertSame(UserResource::class, TestCase::requireCreateUserPage()->getResource());
+    $form = app(UserResource::getFormClass());
+    Assert::assertInstanceOf(XotBaseResourceForm::class, $form);
+    Assert::assertNotEmpty($form->getFormSchema());
 });
 
 test('create user page follows filament conventions', function (): void {
-    // Test that the page follows standard Filament conventions
-    expect($this->page->getResource())->toBe(UserResource::class);
-    expect($this->page->getModel())->toBe(User::class);
+    $page = TestCase::requireCreateUserPage();
+    Assert::assertSame(UserResource::class, $page->getResource());
+    Assert::assertSame(User::class, $page->getModel());
 });

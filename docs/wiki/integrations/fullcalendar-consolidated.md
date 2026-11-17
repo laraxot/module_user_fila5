@@ -433,7 +433,7 @@ Documentazione base esistente per:
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
-#### 4. [Scheduler License Key](./scheduler-license-key-fullcalendar.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key-fullcalendar.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

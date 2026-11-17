@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_2Gl04A
     'fields' => [
         'id' => ['label' => 'ID'],
         'user_id' => ['label' => 'Utente'],
@@ -25,8 +24,6 @@ return [
         'created_by' => ['label' => 'Creato da'],
         'deleted_by' => ['label' => 'Eliminato da'],
     ],
-=======
->>>>>>> .merge_file_QJgFd7
     'actions' => [
         'create' => [
             'icon' => 'create',

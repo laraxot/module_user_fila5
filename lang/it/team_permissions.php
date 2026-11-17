@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_j7bhGl
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -18,8 +17,6 @@ return [
         'name' => ['label' => 'Nome'],
         'permission' => ['label' => 'Permesso'],
     ],
-=======
->>>>>>> .merge_file_JLWcbd
     'actions' => [
         'create' => [
             'icon' => 'create',

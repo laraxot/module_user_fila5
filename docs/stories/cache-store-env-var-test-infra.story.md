@@ -32,7 +32,7 @@ Durante verifica del fix concorrente su `HasSpatiePermission::hasPermissionToOrC
 
 ```
 QueryException: SQLSTATE[42S02]: Base table or view not found:
-1146 Table 'quaeris_data_test.cache' doesn't exist
+1146 Table '<nome progetto>_data_test.cache' doesn't exist
 ```
 
 ## Causa radice
@@ -47,7 +47,7 @@ QueryException: SQLSTATE[42S02]: Base table or view not found:
   `CACHE_DRIVER=array` (riga 48): stesso bug, stesso nome sbagliato.
 - Risultato: nessuna delle due fonti setta `CACHE_STORE`. Laravel ripiega sul default
   `'database'`, che richiede la tabella `cache` (migration standard Laravel): assente
-  da `quaeris_data_test`.
+  da `<nome progetto>_data_test`.
 - Impatto: non solo questo test. **Qualsiasi test che tocchi `Cache::` fallisce** allo
   stesso modo (Spatie Permission usa la cache internamente per `hasPermissionTo()`).
 

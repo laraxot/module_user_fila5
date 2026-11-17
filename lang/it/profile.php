@@ -89,10 +89,7 @@ return [
             'description' => '',
         ],
         'photo' => [
-<<<<<<< .merge_file_Kcp93i
             'label' => 'Foto',
-=======
->>>>>>> .merge_file_tJOT36
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -102,7 +99,6 @@ return [
                 'label' => 'Utente',
             ],
         ],
-<<<<<<< .merge_file_Kcp93i
         'created_at' => [
             'label' => 'Creato il',
         ],
@@ -145,8 +141,6 @@ return [
         'updated_at' => [
             'label' => 'Modificato il',
         ],
-=======
->>>>>>> .merge_file_tJOT36
     ],
     'actions' => [
         'edit' => [

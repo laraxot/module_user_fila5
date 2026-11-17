@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< .merge_file_9bHmnm
         'id' => ['label' => 'ID'],
         'name' => ['label' => 'Nome'],
         'created_at' => ['label' => 'Creato il'],
@@ -16,13 +15,6 @@ return [
         'email' => ['label' => 'E-mail'],
         'is_active' => ['label' => 'Attivo'],
         'photo' => ['label' => 'Foto'],
-=======
-        'user' => [
-            'name' => [
-                'label' => 'user.name',
-            ],
-        ],
->>>>>>> .merge_file_Bt8Hiw
     ],
     'actions' => [
         'create' => [

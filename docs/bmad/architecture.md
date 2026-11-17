@@ -6,6 +6,7 @@ updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "user module architecture (bmad) user"
 ---
+>>>>>>> laraxot/dev
 # User Module Architecture (BMAD)
 
 **Status**: ✅ Finalized

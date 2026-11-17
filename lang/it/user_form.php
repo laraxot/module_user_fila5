@@ -38,7 +38,6 @@ return [
             'label' => 'Ricordami',
             'description' => 'Mantieni la sessione attiva su questo dispositivo',
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
-<<<<<<< .merge_file_S3QXvG
             'placeholder' => 'remember',
         ],
         'state' => [
@@ -67,11 +66,6 @@ return [
             'helper_text' => 'token',
             'label' => 'Token',
             'placeholder' => 'token',
-=======
-        ],
-        'token' => [
-            'label' => 'token',
->>>>>>> .merge_file_3uSgL1
         ],
     ],
     'actions' => [
@@ -86,24 +80,4 @@ return [
             'tooltip' => 'Nascondi password',
         ],
     ],
-<<<<<<< .merge_file_O8jegb
-=======
-<<<<<<< .merge_file_T3WJVU
-    'sections' => [
-        'empty' => [
-<<<<<<< .merge_file_S3QXvG
-            'heading' => 'empty',
-=======
-            'heading' => '',
->>>>>>> .merge_file_3uSgL1
-            'label' => '',
-        ],
-        'worker' => [
-            'label' => 'Operatore',
-            'heading' => 'worker',
-        ],
-    ],
-=======
->>>>>>> .merge_file_iPwtsu
->>>>>>> .merge_file_0f2vw0
 ];

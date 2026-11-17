@@ -14,14 +14,8 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-<<<<<<< .merge_file_DZQJgo
-=======
-<<<<<<< .merge_file_76oDSo
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-=======
->>>>>>> .merge_file_DeA5lu
->>>>>>> .merge_file_8ZY4jE
 
 uses(TestCase::class);
 
@@ -290,17 +284,8 @@ describe('User Permission System', function () {
 
 describe('User Media Management', function () {
     it('can have media attached', function () {
-<<<<<<< .merge_file_DZQJgo
         // Il modello media del progetto e' Modules\\Media\\Models\\Media (estende quello di Spatie).
         expect((new User())->media()->getMorphType())->toBe('model_type');
-=======
-<<<<<<< .merge_file_76oDSo
-        expect((new User)->media()->getRelated()::class)->toBe(Media::class);
-=======
-        // Il modello media del progetto e' Modules\\Media\\Models\\Media (estende quello di Spatie).
-        expect((new User())->media()->getMorphType())->toBe('model_type');
->>>>>>> .merge_file_DeA5lu
->>>>>>> .merge_file_8ZY4jE
     });
 });
 

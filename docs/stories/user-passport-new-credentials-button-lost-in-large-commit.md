@@ -77,7 +77,7 @@ Ma il suo diff completo (`git show --stat 9d2362d94`) tocca:
 ```
 
 - file in **ogni** modulo del progetto (AI, Activity, Cms, Job, Lang, Media,
-Notify, Tenant, UI, User, Quaeris...), inclusi `.codeclimate.yml`,
+Notify, Tenant, UI, User, <nome progetto>...), inclusi `.codeclimate.yml`,
 `.gitattributes`, `.github/dependabot.yml`, README, docs di decine di
 moduli. Questo non è compatibile con un refactor mirato: ha tutta l'aria di
 un merge/rebase di una branch lungamente divergente, o di una sincronizzazione

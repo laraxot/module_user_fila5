@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_vGdMN6
     'fields' => [
         'id' => ['label' => 'ID'],
         'name' => ['label' => 'Nome'],
@@ -13,8 +12,6 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
     ],
-=======
->>>>>>> .merge_file_TXt34I
     'actions' => [
         'create' => [
             'icon' => 'create',

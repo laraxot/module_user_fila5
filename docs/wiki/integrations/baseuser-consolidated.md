@@ -2568,7 +2568,7 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 ## Links to Related Documentation
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-- [Profile Management](./profile-management.md)
+- [Profile Management](../../profile-management.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 - [Profile Management](../../profile-management-laravel-modules.md)

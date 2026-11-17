@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_Wg2t0f
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -20,8 +19,6 @@ return [
         'updated_by' => ['label' => 'Modificato da'],
         'created_by' => ['label' => 'Creato da'],
     ],
-=======
->>>>>>> .merge_file_AwNrTY
     'actions' => [
         'create' => [
             'icon' => 'create',

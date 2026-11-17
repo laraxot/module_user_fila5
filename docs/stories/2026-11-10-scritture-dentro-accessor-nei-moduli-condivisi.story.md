@@ -6,7 +6,7 @@ priority: P2
 created: 2026-11-10
 module: User
 related:
-  - "../../../Quaeris/docs/stories/2026-11-05-token-failure-silently-breaks-invite-chain.story.md"
+  - "../../../<nome progetto>/docs/stories/2026-11-05-token-failure-silently-breaks-invite-chain.story.md"
 tags: [bmad, eloquent, performance, moduli-condivisi]
 ---
 
@@ -22,7 +22,7 @@ una `update()`, leggere una proprieta' scrive a database: una query in piu' per
 ogni riga disegnata in una tabella, per ogni elemento di una collection, per
 ogni contatto dentro un job.
 
-Il difetto e' gia' stato trovato e corretto due volte nel modulo Quaeris:
+Il difetto e' gia' stato trovato e corretto due volte nel modulo <nome progetto>:
 
 - `Contact::getSurveyIdAttribute()`, il 2026-11-05 — scattava dentro il job del
   token, una UPDATE per contatto;
@@ -58,7 +58,7 @@ che fanno cose diverse a seconda che il model sia gia' salvato.
 ## Perche' non e' stato corretto subito
 
 `User` e `Lang` sono moduli base della piattaforma Laraxot, usati da altri
-progetti oltre a Quaeris. Un accessor che persiste puo' essere load-bearing
+progetti oltre a <nome progetto>. Un accessor che persiste puo' essere load-bearing
 altrove: `getUniqueNameAttribute` genera un nome univoco, e se qualcuno conta
 sul fatto che dopo la prima lettura quel nome sia scritto a database, togliere
 la scrittura cambia il comportamento senza che nessun test di questo repository

@@ -14,10 +14,7 @@ return [
             'icon' => 'billing',
         ],
         'register' => [
-<<<<<<< .merge_file_6lufhi
             'label' => 'Registrati',
-=======
->>>>>>> .merge_file_SBHqIX
             'icon' => 'register',
         ],
         'logout' => [

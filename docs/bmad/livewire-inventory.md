@@ -57,7 +57,7 @@ widget Filament esistenti in `Modules/<Mod>/app/Filament/Widgets` (auto-discover
 
 ## Religione piattaforma
 
-Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire-widget-project-context.md).
+Constitution: [Xot livewire-widget-project-context](livewire-widget-project-context.md).
 
 1. Filament 5 è il panel. Un widget Filament **è** Livewire (`XotBaseWidget`). Si elimina il guscio
    `Http\Livewire` sbagliato, non Livewire.
@@ -77,10 +77,10 @@ Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire
 | **User** | 15 classi (14 `Http/Livewire` + `Livewire/Logout`), 3 hook panel | ✅ chrome convertito (9.x, 10.1–10.2) + auth HTTP ritirata (10.3); restano 4 classi su disco (Cluster C → 10.4 + `Livewire/Logout` orfano) | [User](./livewire-inventory.md) |
 | **UI** | DarkModeSwitcher, Toast | ritiro HTTP; widget già SSoT | [UI](../../../UI/docs/bmad/livewire-inventory.md) |
 | **Lang** | Change, Switcher | ritiro HTTP; `LanguageSwitcherWidget` | [Lang](../../../Lang/docs/bmad/livewire-inventory.md) |
-| **Xot** | `XotBaseComponent` + alias orfani | **non** convertire la base; 12.1 alias | [Xot](../../Xot/docs/bmad/livewire-inventory.md) |
+| **Xot** | `XotBaseComponent` + alias orfani | **non** convertire la base; 12.1 alias | [Xot](livewire-inventory.md) |
 | **Notify** | nessuno HTTP; hook vendor | FQCN su `DatabaseNotifications`; non forkare | [Notify](../../../Notify/docs/bmad/livewire-inventory.md) |
 | **Job** | Status, Schedule/*, Broad (`dd`) | ritiro orfani P0 Broad | [Job](../../../Job/docs/bmad/livewire-inventory.md) |
-| **Quaeris** | QuestionChart + QuestionCharts (Widget in HTTP) | spostare, non clonare | [Quaeris](../../Quaeris/docs/bmad/livewire-inventory.md) |
+| **<nome progetto>** | QuestionChart + QuestionCharts (Widget in HTTP) | spostare, non clonare | [<nome progetto>](../../<nome progetto>/docs/bmad/livewire-inventory.md) |
 | **Geo** | Test, FormSearchAddressCategories | FO / test ≠ widget dashboard | [Geo](../../../Geo/docs/bmad/livewire-inventory.md) |
 | **Cms** | Page/Show | pagina FO, non KPI | [Cms](../../../Cms/docs/bmad/livewire-inventory.md) |
 | **Media** | Card/Video/Clip | FO video, non KPI | [Media](../../../Media/docs/bmad/livewire-inventory.md) |

@@ -34,3 +34,4 @@ Come manutentore del modulo User, voglio una baseline BMAD verificabile, così d
 - [ ] Decomposizione epic in story più piccole.
 - [ ] Quality gate e second-brain write-back.
 
+>>>>>>> laraxot/dev

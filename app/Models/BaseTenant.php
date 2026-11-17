@@ -34,11 +34,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
 {
     use HasSlug;
     use HasUuids {
-<<<<<<< .merge_file_3Lb3FT
-        \Illuminate\Database\Eloquent\Concerns\HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
-=======
         HasUuids::resolveRouteBindingQuery as resolveRouteBindingQueryFromUuids;
->>>>>>> .merge_file_K3SB8z
     }
     use BaseTenantRelationsTrait;
     use InteractsWithMedia;
@@ -63,14 +59,6 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     ];
 
     /**
-<<<<<<< .merge_file_3Lb3FT
-=======
-<<<<<<< .merge_file_POWtpG
-     * @param  Builder<Model>|Model  $query
-     * @param  string|int  $value
-     * @param  string|null  $field
-=======
->>>>>>> .merge_file_K3SB8z
      * `settings` e' una colonna JSON: senza cast un array in ingresso finisce nell'INSERT
      * come stringa ("Array to string conversion").
      *
@@ -89,10 +77,6 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
      * @param Builder<Model>|Model $query
      * @param string|int $value
      * @param string|null $field
-<<<<<<< .merge_file_3Lb3FT
-=======
->>>>>>> .merge_file_YnpcBA
->>>>>>> .merge_file_K3SB8z
      * @return Builder<Model>
      */
     public function resolveRouteBindingQuery($query, $value, $field = null): Builder

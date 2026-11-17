@@ -24,4 +24,4 @@ allineandomi alla regola piattaforma gia' applicata in Ptv.
 ## Riferimenti
 
 - [form-column-parity.md](../form-column-parity.md)
-- [Ptv form-column-parity.md](../../Ptv/docs/form-column-parity.md)
+- [Ptv form-column-parity.md](../form-column-parity.md)

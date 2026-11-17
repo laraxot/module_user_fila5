@@ -73,17 +73,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_348GVW
-        'value' => ['label' => 'Valore', 'tooltip' => 'Valore della feature', 'placeholder' => 'Inserisci il valore', 'helper_text' => 'Valore associato alla feature', 'description' => 'Valore della feature'],
-        'toggleColumns' => ['label' => 'Colonne', 'tooltip' => 'Mostra/nascondi colonne', 'helper_text' => 'Azione per mostrare o nascondere le colonne', 'description' => 'Toggle per le colonne della tabella'],
-        'reorderRecords' => ['label' => 'Riordina', 'tooltip' => 'Riordina i record', 'helper_text' => 'Azione per riordinare i record', 'description' => 'Funzionalità di riordinamento'],
-        'resetFilters' => ['label' => 'Reimposta Filtri', 'tooltip' => 'Reimposta i filtri', 'helper_text' => 'Azzera tutti i filtri attivi', 'description' => 'Reimposta i filtri ai valori predefiniti'],
-        'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Applica i filtri alla tabella'],
-        'openFilters' => ['label' => 'Apri Filtri', 'tooltip' => 'Apri il pannello filtri', 'helper_text' => 'Apre il pannello dei filtri', 'description' => 'Apre il pannello dei filtri'],
-        'type' => ['label' => 'Tipo'],
-        'active' => ['label' => 'Attivo'],
-        'created_at' => ['label' => 'Creato il'],
-=======
         'value' => [
             'label' => 'Valore',
             'tooltip' => 'Valore della feature',
@@ -121,7 +110,6 @@ return [
             'helper_text' => 'Apre il pannello dei filtri',
             'description' => 'Apre il pannello dei filtri',
         ],
->>>>>>> .merge_file_CmQvLX
     ],
     'actions' => [
         'import' => [

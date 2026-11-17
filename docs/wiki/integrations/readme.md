@@ -1021,7 +1021,7 @@ test('user can switch teams', function () {
 - [User Model Architecture](./architecture/user-model.md) - User model design
 - [Permission System](./architecture/permission-system.md) - RBAC architecture
 - [Multi-Tenancy](./architecture/multi-tenancy.md) - Tenant isolation
-- [Team System](./architecture/teams.md) - Team collaboration
+- [Team System](../../teams.md) - Team collaboration
 - [Team System](../../teams.md) - Team collaboration
 
 ### Authentication

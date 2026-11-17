@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_lRSIvv
 return [
     'fields' => [
         'id' => ['label' => 'ID'],
@@ -26,6 +25,3 @@ return [
         'deleted_by' => ['label' => 'Eliminato da'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_ntn3RJ

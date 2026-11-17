@@ -47,4 +47,4 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
 - [Implementazione di UserServiceProvider](../../app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](../../../UI/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
-- [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)
+- [Documentazione principale sulla registrazione dei componenti](component-registration.md)

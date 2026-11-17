@@ -635,6 +635,9 @@ abstract class TestCase extends XotBaseTestCase
      * Effetto in CI su MariaDB: nessuna notifica di approvazione, scarto o chiusura (TicketLifecycleNotificationTest, area personale).
      * Lo skip del manager conta i nomi restituiti qui, quindi ogni nome deve corrispondere a una sola transazione aperta.
      *
+     * I nomi senza configurazione si saltano: la lista e' condivisa tra i progetti del monorepo e `fixcity` esiste solo
+     * dove il modulo Fixcity e' attivo; altrove `connection('fixcity')` lanciava «not configured» e nessun test partiva.
+     *
      * @return list<string>
      */
     protected function connectionsToTransact()
@@ -647,6 +650,10 @@ abstract class TestCase extends XotBaseTestCase
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
+            if (null === config('database.connections.'.$name)) {
+                continue;
+            }
+
             $id = spl_object_id($database->connection($name));
             if (isset($seen[$id])) {
                 continue;

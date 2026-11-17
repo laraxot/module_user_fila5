@@ -63,7 +63,7 @@ Dopo un update, ricontrollare che non si sia "spaccata" la coerenza tra moduli:
 ## Vedi Anche
 
 - [quick-reference](quick-reference.md)
-- [Project Context](../../_bmad-output/project-context.md)
+- [Project Context](project-context.md)
 
 ---
 

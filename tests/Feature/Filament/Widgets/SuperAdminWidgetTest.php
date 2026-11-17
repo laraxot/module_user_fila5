@@ -87,7 +87,7 @@ beforeEach(function (): void {
     // Il connettore di cache di default in questo ambiente di test risolve su 'database'
     // (CACHE_STORE non impostato in .env.testing/phpunit.xml, solo il legacy CACHE_DRIVER,
     // ignorato da Laravel 11+), puntando alla tabella `cache` sulla connessione `mysql`
-    // (quaeris_data_test), dove quella tabella non esiste. Spatie Permission invalida
+    // (<nome progetto>_data_test), dove quella tabella non esiste. Spatie Permission invalida
     // questa cache ad ogni assignRole()/removeRole() (config('permission.cache.store') = 'default').
     // Scope locale a questo processo di test, nessun file condiviso toccato: stesso sintomo
     // riprodotto anche su Modules/User/tests/Feature/UserBusinessLogicTest.php (pre-esistente,

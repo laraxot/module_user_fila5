@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_ChLBmk
 return [
     'sections' => [
         'Team User Information' => ['label' => 'Team User Information', 'heading' => 'Team User Information'],
@@ -13,6 +12,3 @@ return [
         'role' => ['label' => 'Ruolo', 'placeholder' => 'role', 'helper_text' => 'role', 'description' => 'role'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_OozQxL

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_ogculZ
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -19,8 +18,6 @@ return [
         'created_by' => ['label' => 'Creato da'],
         'deleted_by' => ['label' => 'Eliminato da'],
     ],
-=======
->>>>>>> .merge_file_SwMfPk
     'actions' => [
         'create' => [
             'icon' => 'create',

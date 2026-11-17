@@ -163,7 +163,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -186,7 +186,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -230,7 +230,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -348,7 +348,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -371,7 +371,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -415,7 +415,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -533,7 +533,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -556,7 +556,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -600,7 +600,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -718,7 +718,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -741,7 +741,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -785,7 +785,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -1017,12 +1017,12 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -1222,7 +1222,7 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -1231,7 +1231,7 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
-cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -1245,12 +1245,12 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -1283,7 +1283,7 @@ related:
 ---
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -1300,7 +1300,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-inheri
 ---
 
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -1735,7 +1735,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -1758,7 +1758,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -1802,7 +1802,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -2034,12 +2034,12 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -2233,12 +2233,12 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -2432,12 +2432,12 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [Analisi Completa](../../model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -2523,7 +2523,7 @@ Tabelle di relazione con colonne `*_type` e `*_id`:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user'; // ✓ Automatico per tutti
-    
+
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -2546,7 +2546,7 @@ abstract class BasePivot extends XotBasePivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user'; // ✓ Automatico per tutti i morph pivot
-    
+
     // ✓ Trait e configurazioni comuni
 }
 ```
@@ -2590,7 +2590,7 @@ Dopo le modifiche, eseguire:
 
 ## Collegamenti
 
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -2776,7 +2776,7 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -2785,7 +2785,7 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
-cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -2799,7 +2799,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
@@ -3066,7 +3066,7 @@ Core business models have factories. Missing factories are mainly abstract base 
 
 ### Models senza Factory ❌ (23/56) - Correctly Missing
 - All `Base*` classes (abstract infrastructure)
-- All `*Policy` classes (authorization logic) 
+- All `*Policy` classes (authorization logic)
 - `UserBasePolicy` (base authorization)
 - Infrastructure models that don't need testing
 

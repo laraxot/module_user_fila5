@@ -8,31 +8,26 @@ qmd: "limesurveyatabase-commands database analysis commands and tools for app_su
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
-status: draft
 ---
 
 # Database Analysis Commands and Tools for app_survey
-# Database Analysis Commands and Tools for quaeris_survey
+# Database Analysis Commands and Tools for <nome progetto>_survey
 
 ## Essential Database Queries
 
 ### 1. Survey Structure Analysis
 ```sql
 -- List all active surveys in the database
-SELECT sid, surveyls_title, startdate, expires 
-FROM lime_surveys 
+SELECT sid, surveyls_title, startdate, expires
+FROM lime_surveys
 WHERE active = 'Y';
 
 -- Get all questions for a specific survey
@@ -45,7 +40,7 @@ ORDER BY q.group_order, q.question_order;
 -- Identify sub-questions (child questions)
 SELECT q.qid, q.parent_qid, q.title, ql.question
 FROM lime_questions q
-LEFT JOIN lime_question_l10ns ql ON ql.qid = q.qid  
+LEFT JOIN lime_question_l10ns ql ON ql.qid = q.qid
 WHERE q.parent_qid IS NOT NULL
 AND q.sid = [SURVEY_ID];
 ```
@@ -58,7 +53,7 @@ FROM lime_survey_[SURVEY_ID]
 WHERE submitdate IS NOT NULL;
 
 -- Get response statistics by date range
-SELECT 
+SELECT
     DATE(submitdate) as response_date,
     COUNT(*) as daily_responses
 FROM lime_survey_[SURVEY_ID]
@@ -77,7 +72,7 @@ ORDER BY count DESC;
 ### 3. Participant Analysis
 ```sql
 -- Check token usage for a survey
-SELECT 
+SELECT
     COUNT(*) as total_tokens,
     SUM(CASE WHEN sent != 'N' THEN 1 ELSE 0 END) as tokens_sent,
     SUM(CASE WHEN completed != 'N' THEN 1 ELSE 0 END) as responses_completed
@@ -169,7 +164,7 @@ SELECT FOUND_ROWS();
 ### 1. Survey Consistency
 ```sql
 -- Verify token-response matching
-SELECT 
+SELECT
     t.token,
     CASE WHEN s.token IS NULL THEN 'NO_RESPONSE' ELSE 'RESPONDED' END as status
 FROM lime_tokens_[SURVEY_ID] t
@@ -207,14 +202,14 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10
 function validateSurveyData($surveyId) {
     $responseTable = "lime_survey_{$surveyId}";
     $tokenTable = "lime_tokens_{$surveyId}";
-    
+
     $responses = DB::connection('limesurvey')->table($responseTable)->count();
     $tokens = DB::connection('limesurvey')->table($tokenTable)->count();
     $questions = DB::connection('limesurvey')
         ->table('lime_questions')
         ->where('sid', $surveyId)
         ->count();
-    
+
     return [
         'responses' => $responses,
         'tokens' => $tokens,
@@ -229,7 +224,7 @@ function validateSurveyData($surveyId) {
 ### 1. Regular Checks
 ```sql
 -- Monitor survey response rates
-SELECT 
+SELECT
     s.sid,
     s.surveyls_title,
     COALESCE(t.total_tokens, 0) as total_tokens,
@@ -237,18 +232,18 @@ SELECT
     ROUND(COALESCE(r.responses, 0) * 100.0 / NULLIF(t.total_tokens, 0), 2) as response_rate
 FROM lime_surveys s
 LEFT JOIN (
-    SELECT 
+    SELECT
         SUBSTRING(table_name, 13) as sid,  -- Extract survey ID from lime_survey_XXXX
         COUNT(*) as responses
-    FROM information_schema.tables 
+    FROM information_schema.tables
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_app_survey'
 ) r ON s.sid = r.sid
 LEFT JOIN (
-    SELECT 
+    SELECT
         SUBSTRING(table_name, 12) as sid,  -- Extract survey ID from lime_tokens_XXXX
         COUNT(*) as total_tokens
-    FROM information_schema.tables 
+    FROM information_schema.tables
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_app_survey'
 ) t ON s.sid = t.sid

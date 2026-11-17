@@ -2,7 +2,7 @@
 id: story-assert-isinstanceof-usercontract-audit-2026-09-21
 slug: assert-isinstanceof-usercontract-audit-2026-09-21
 title: "STORY: Assert::isInstanceOf contro Model concreto invece di UserContract, audit repo-wide"
-description: "Modules\\User\\Models\\User e Modules\\Quaeris\\Models\\User sono sorelle (entrambe figlie di BaseUser), non genitore/figlio: instanceof/Assert contro il model concreto sbagliato e' sempre falso a runtime per l'auth model reale. Pattern ricorrente, gia' documentato in user-profile-volt-instanceof-wrong-user-class.md; oggi trovate altre occorrenze, una gia' corretta da sessione concorrente."
+description: "Modules\\User\\Models\\User e Modules\\<nome progetto>\\Models\\User sono sorelle (entrambe figlie di BaseUser), non genitore/figlio: instanceof/Assert contro il model concreto sbagliato e' sempre falso a runtime per l'auth model reale. Pattern ricorrente, gia' documentato in user-profile-volt-instanceof-wrong-user-class.md; oggi trovate altre occorrenze, una gia' corretta da sessione concorrente."
 document_type: story
 category: bmad
 scope: module:User
@@ -35,7 +35,7 @@ Utente, mid-turn su un altro task: "fare Assert::isInstanceOf($user,
 User::class); e' sbagliato meglio confrontare con UserContract!": stesso
 principio architetturale gia' documentato in
 `user-profile-volt-instanceof-wrong-user-class.md` (2026-09-03/04):
-`config/auth.php` usa `Modules\Quaeris\Models\User` come auth model reale,
+`config/auth.php` usa `Modules\<nome progetto>\Models\User` come auth model reale,
 `Modules\User\Models\User` e' una classe **sorella** (entrambe estendono
 `Modules\User\Models\BaseUser`), non genitore/figlio. `instanceof`/`Assert`
 contro il model concreto sbagliato fallisce sempre a runtime per l'utente

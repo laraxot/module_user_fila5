@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_IP6Faz
 return [
     'fields' => [
         'name' => ['label' => 'Nome', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
@@ -20,6 +19,3 @@ return [
         'Codice Dispositivo OAuth' => ['label' => 'Codice Dispositivo OAuth', 'heading' => 'Codice Dispositivo OAuth'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_wo0Wk7

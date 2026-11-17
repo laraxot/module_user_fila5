@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_mAvfPQ
 return [
     'fields' => [
         'access_token_id' => ['label' => 'access_token_id', 'placeholder' => 'access_token_id', 'helper_text' => 'access_token_id', 'description' => 'access_token_id'],
@@ -15,6 +14,3 @@ return [
         'Refresh Token OAuth' => ['label' => 'Refresh Token OAuth', 'heading' => 'Refresh Token OAuth'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_54Mi7w

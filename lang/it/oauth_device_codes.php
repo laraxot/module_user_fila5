@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_Wsljyp
     'fields' => [
         'id' => ['label' => 'ID'],
         'name' => ['label' => 'Nome'],
@@ -16,8 +15,6 @@ return [
         'last_polled_at' => ['label' => 'last_polled_at'],
         'scopes' => ['label' => 'Ambiti'],
     ],
-=======
->>>>>>> .merge_file_C6DpAM
     'actions' => [
         'create' => [
             'icon' => 'create',

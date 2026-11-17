@@ -1,11 +1,13 @@
 ---
 title: "BMAD + Second Brain: Session Summary (2026-09-04)"
 type: note
-status: draft
-updated: 2026-10-07
+updated: 2026-10-21
 tags: [docs, user]
 qmd: "bmad + second brain   session summary (2026-09-04) user"
+status: superseded
+superseded_by: bmad-session.md
 ---
+
 # BMAD + Second Brain: Session Summary (2026-09-04)
 
 ## Bootstrap
@@ -15,7 +17,7 @@ qmd: "bmad + second brain   session summary (2026-09-04) user"
 - SSoT contratti: `Modules\Xot\Contracts\UserContract`, `ProfileContract`
 
 ## Diagnose
-- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
 - `XotData::getProfileClass()`: `main_module=''` → `InvalidArgumentException`
 - `Profile.php`: `@property-read User|null $user` (non esistente)
 - `IsProfileTrait.php`: `use UserContract` duplicato
@@ -29,7 +31,7 @@ qmd: "bmad + second brain   session summary (2026-09-04) user"
 - Gdpr actions: `UserContract $user`
 - `BaseProfile.php`: `$incrementing=false`, `$keyType='string'`, UUID `id` in `booted()`
 - Test batch: `use Modules\User\Models\User;` in 8 file `tests/`
-- `Quaeris` → `User` sostituito nel codice
+- `<nome progetto>` → `User` sostituito nel codice
 
 ## Verify
 - `Profile::firstOrCreate()` → `id` UUID generato (len=36) ✅

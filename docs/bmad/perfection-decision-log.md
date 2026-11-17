@@ -130,12 +130,12 @@ il dettaglio massimo prima dell'esecuzione.
 ## [2026-09-22] Data debt morph map: riverificato, non presente su Ptv
 
 **Decision:** il data debt documentato in `decision-log.md` (40 righe stantie
-`model_has_role.model_type='Modules\Quaeris\Models\User'`) e' stato riverificato
+`model_has_role.model_type='Modules\<nome progetto>\Models\User'`) e' stato riverificato
 con una query read-only reale su questa installazione (Ptv): 482/482 righe hanno
 `model_type='user'` corretto, zero righe stantie. Il debito riguardava il tenant
-Quaeris, non questo. Nessuna azione necessaria su Ptv per questo punto specifico.
+<nome progetto>, non questo. Nessuna azione necessaria su Ptv per questo punto specifico.
 
-**Rationale:** modulo condiviso fra progetti (Sigma/Ptv/Fila5/Quaeris): un data
+**Rationale:** modulo condiviso fra progetti (Sigma/Ptv/Fila5/<nome progetto>): un data
 debt osservato su un tenant non implica lo stesso stato su un altro (memoria
 [[moduli-condivisi-fra-progetti]], [[il-morph-map-e-per-tenant]]).
 

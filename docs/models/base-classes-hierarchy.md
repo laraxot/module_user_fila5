@@ -384,7 +384,7 @@ Quando crei un nuovo modello nel modulo User:
 
 - [Architettura Core](../core/architecture.md)
 - [XotBasePivot Migration Guide](./xotbasepivot-migration.md)
-- [Best Practices](../best-practices/models.md)
+- [Best Practices](../models.md)
 - [Best Practices](../models.md)
 - [PHPStan Compliance](../development/phpstan-guide.md)
 

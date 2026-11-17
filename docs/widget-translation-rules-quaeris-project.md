@@ -1,10 +1,10 @@
 ---
-title: "Widget Translation Rules - Quaeris Project"
+title: "Widget Translation Rules - <nome progetto> Project"
 type: rule
 tags: [widget, translation, rules]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "widget-translation-rules-2 widget translation rules - quaeris project"
+qmd: "widget-translation-rules-2 widget translation rules - <nome progetto> project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Widget Translation Rules - Quaeris Project
+# Widget Translation Rules - <nome progetto> Project
 
 ## Core Principles
 
@@ -134,13 +134,13 @@ class EditUserWidget extends XotBaseWidget
     <h2 class="text-xl font-semibold mb-4">
         {{ __('user::widgets.edit_user.title') }}
     </h2>
-    
+
     <p class="text-gray-600 mb-6">
         {{ __('user::widgets.edit_user.description') }}
     </p>
-    
+
     {{ $this->form }}
-    
+
     <div class="mt-6 flex justify-end space-x-3">
         <button type="button" class="btn-secondary">
             {{ __('user::widgets.edit_user.actions.cancel.label') }}
@@ -207,7 +207,7 @@ protected static string $view = 'user::widgets.edit-user';
 - [User Module Widget Structure](widgets-structure-user.md)
 - [EditUserWidget Documentation](widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](widgets/translation-guidelines.md)
-- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
 
 ## Memory Integration
 
@@ -217,4 +217,4 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-All widget development should follow these rules to maintain consistency and quality across the Quaeris project.
+All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.

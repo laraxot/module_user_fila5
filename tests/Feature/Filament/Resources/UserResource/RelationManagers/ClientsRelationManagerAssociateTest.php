@@ -22,7 +22,7 @@ uses(TestCase::class);
  * solo `user_id`, mai `owner_id`/`owner_type` — il client associato non
  * ricompariva mai in questa stessa tab (che legge da `clients()`,
  * `morphMany` su `owner`, non da `user_id`), e restava bloccato su
- * `Modules\Quaeris\Http\Controllers\Api\SurveyController::createContacts()`
+ * `Modules\<nome progetto>\Http\Controllers\Api\SurveyController::createContacts()`
  * (l'endpoint reale usato dagli script clienti), che legge solo
  * `$client->owner`. Riprodotto dal vivo dall'utente: bottone senza errori,
  * ma lista sempre vuota. Fix: `$client->owner()->associate($owner)` prima
@@ -88,7 +88,7 @@ function getAssociateExistingClientActionFunction(User $owner): \Closure
 
 it('associates owner_id/owner_type (not just user_id) via the associate action (issue #97)', function (): void {
     // 'type' esplicito su User::class: il default della factory ('customer_user')
-    // e' un alias Parental risolto solo quando Modules/Quaeris e' bootstrappato
+    // e' un alias Parental risolto solo quando Modules/<nome progetto> e' bootstrappato
     // (child type registrato altrove) — qui, nel solo modulo User, resta non
     // risolvibile ("Class 'customer_user' not found") appena si tocca $client->owner
     // (rehydrata come User via lo stesso meccanismo Parental). Non e' oggetto di

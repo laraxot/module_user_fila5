@@ -54,7 +54,7 @@ in root).
 3. `TenantsTable.php:28-30` (`domain`, `is_active`, `trial_ends_at`) -
    esistono solo sul model nativo `Modules\User\Models\Tenant`, non sul
    model realmente attivo via `tenant_class`
-   (`Modules\Quaeris\Models\Customer`): probabile residuo di un vecchio
+   (`Modules\<nome progetto>\Models\Customer`): probabile residuo di un vecchio
    switch di config, verificare quale tenant model e' davvero in uso.
 4. `TenantUsersTable.php:27,29` (`role`, `uuid`): assenti da schema live
    e da entrambe le migration (`role` letteralmente commentata nel
@@ -78,7 +78,7 @@ dev.
 
 Nuovo pattern: verificare lo schema di un model con `Schema::` senza
 specificare `->connection()` e' cieco su un modulo che usa connection
-DB multiple (`user` vs default vs `quaeris`): produce falsi positivi
+DB multiple (`user` vs default vs `<nome progetto>`): produce falsi positivi
 sistematici, non solo occasionali.
 
 ## Risoluzione (2026-09-11, sessione follow-up)
@@ -159,7 +159,7 @@ rischio SQL a runtime. Probabile residuo di un vecchio switch
 `tenant_class: Tenant → Customer` mai ripulito. Raccomandazione:
 story separata per decidere se cancellare `TenantsTable.php` (non
 fatto qui: non era nell'elenco delle 2 story di partenza e tocca
-`Modules\Quaeris\Models\Customer`, modulo diverso da quello owner di
+`Modules\<nome progetto>\Models\Customer`, modulo diverso da quello owner di
 questa story).
 
 ### Task C: drift di migrazione, verificato e documentato (nessun fix necessario)
@@ -217,7 +217,7 @@ $connection = 'user';` a differenza dei 5 model Oauth* fratelli
 `OauthPersonalAccessClient`, `OauthRefreshToken`). Aggiunta la riga per
 coerenza col pattern. **Nota verificata**: la tabella
 `oauth_device_codes` non esiste oggi in NESSUNA connection configurata
-(`user`, `mysql`, `quaeris`, ecc.) ne' in nessuna migration del modulo
+(`user`, `mysql`, `<nome progetto>`, ecc.) ne' in nessuna migration del modulo
 `User`: esiste solo la migration vendor
 `vendor/laravel/passport/database/migrations/2024_06_01_000001_create_oauth_device_codes_table.php`,
 mai pubblicata/adattata alla connessione `user` come fatto per gli

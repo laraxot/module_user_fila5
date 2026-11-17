@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_5kSJlq
 return [
     'sections' => [
         'empty' => [
@@ -67,6 +66,3 @@ return [
         ],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_XZnzIl

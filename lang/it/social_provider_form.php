@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_i71Uc4
 return [
     'fields' => [
         'env_guide' => ['label' => 'env_guide'],
@@ -23,6 +22,3 @@ return [
         'empty' => ['label' => '', 'heading' => 'empty'],
     ],
 ];
-=======
-return [];
->>>>>>> .merge_file_2sPCH7

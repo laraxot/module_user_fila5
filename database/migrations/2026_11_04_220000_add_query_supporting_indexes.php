@@ -15,7 +15,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  *
  * Prove: audit statico del 2026-11-04, nessun `EXPLAIN` su volumi di produzione.
  *
- * @see ../../../Quaeris/docs/stories/quaeris-query-lente-e-indici.story.md
+ * @see ../../../<nome progetto>/docs/stories/<nome progetto>-query-lente-e-indici.story.md
  */
 return new class extends XotBaseMigration
 {

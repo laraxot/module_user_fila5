@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< .merge_file_RItRna
         'id' => ['label' => 'ID'],
         'user_id' => ['label' => 'Utente'],
         'name' => ['label' => 'Nome'],
@@ -17,12 +16,6 @@ return [
         'updated_at' => ['label' => 'Modificato il'],
         'user' => [
             'name' => ['label' => 'Utente'],
-=======
-        'user' => [
-            'name' => [
-                'label' => 'user.name',
-            ],
->>>>>>> .merge_file_17Vdjd
         ],
     ],
 ];

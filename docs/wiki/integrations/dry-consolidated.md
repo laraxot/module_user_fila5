@@ -1621,8 +1621,8 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../xot/docs/actions.md)
-- [Documentazione Actions](../../xot/project_docs/actions.md)
+- [Documentazione Actions](../../actions.md)
+- [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
 *Data correzione: 2025-01-06*
@@ -1720,8 +1720,8 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 ## Collegamenti
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../xot/docs/actions.md)
-- [Documentazione Actions](../../xot/project_docs/actions.md)
+- [Documentazione Actions](../../actions.md)
+- [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
 - [Documentazione Actions](../../actions.md)
 *Data correzione: [DATE]*

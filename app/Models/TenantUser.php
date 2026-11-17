@@ -46,10 +46,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_6Devgq
- *
-=======
->>>>>>> .merge_file_xS0rxP
  */
 class TenantUser extends BasePivot
 {

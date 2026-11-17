@@ -32,7 +32,7 @@ status: draft
 
 ## Errore Fondamentale Identificato
 
-L'implementazione attuale del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
+L'implementazione attuale del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
 
 ```php
 <?php
@@ -63,7 +63,7 @@ return redirect()->route('home');
 
 2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
 
-3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di Quaeris.
+3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di <nome progetto>.
 
 4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
 
@@ -130,4 +130,4 @@ L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
-- Rispettare le convenzioni e le strutture del progetto Quaeris
+- Rispettare le convenzioni e le strutture del progetto <nome progetto>

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_vkBEa7
     'fields' => [
         'id' => ['label' => 'ID'],
         'uuid' => ['label' => 'UUID'],
@@ -20,8 +19,6 @@ return [
         'entity_id' => ['label' => 'entity_id'],
         'redirect_url' => ['label' => 'URL di ritorno'],
     ],
-=======
->>>>>>> .merge_file_jDcPcg
     'actions' => [
         'create' => [
             'icon' => 'create',
