@@ -1,11 +1,3 @@
----
-title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "userfactory advanced integration - modulo user & <nome progetto> user"
----
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -294,10 +286,10 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration.md)
-- [Traits Complete Guide](./traits-complete-guide.md)
-- [BaseUser Architecture](../../parental-inheritance.md)
+- [User Factory Integration](./user_factory_integration.md)
+- [Traits Complete Guide](./traits_complete_guide.md)
+- [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation
-- [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../../docs/testing_standards.md)
+- [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
+- [Testing Standards](../../../../docs/testing_standards.md)

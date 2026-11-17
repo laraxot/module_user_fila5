@@ -1,18 +1,10 @@
----
-title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "implementazione del selettore di lingua e avatar utente nell'header user"
----
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
-- [Implementazione Logout](./logout-blade-implementation.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
 
 ## Panoramica
 

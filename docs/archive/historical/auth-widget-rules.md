@@ -1,11 +1,23 @@
 ---
 title: "Regole per Widget di Autenticazione"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "regole per widget di autenticazione user"
+type: rule
+tags: [auth, widget, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-widget-rules regole per widget di autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
+
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -150,7 +162,7 @@ tests/Feature/Filament/Widgets/
 
 ## Collegamenti
 
-- [Widget Structure](widgets-structure.md)
+- [Widget Structure](widgets-structure-2.md)
 - [Filament Best Practices](filament_best_practices.md)
-- [Authentication Architecture](../../authentication.md)
+- [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

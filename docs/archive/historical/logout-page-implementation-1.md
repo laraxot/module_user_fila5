@@ -1,11 +1,3 @@
----
-title: "Implementazione della Pagina di Logout nel Tema One"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "implementazione della pagina di logout nel tema one user"
----
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -107,6 +99,6 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing-best-practices.md)
-- [Gestione Sessione](./session-management.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md)
+- [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Tema One Documentation](../../Themes/One/docs/README.md)

@@ -1,16 +1,8 @@
----
-title: "Analisi dell'Errore di Implementazione Volt/Blade"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "analisi dell'errore di implementazione volt/blade user"
----
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Identificazione dell'Errore
