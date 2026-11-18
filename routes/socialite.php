@@ -18,12 +18,5 @@ Route::prefix('{lang}')
                     'RedirectToProviderController',
                 )->where('provider', 'google|microsoft|github')->name('oauth.redirect');
 
-                // Ritorno dal provider: senza questa rotta GetProviderRedirectUriAction (route('oauth.callback'))
-                // falliva e il pulsante "Accedi con Google" dava 500. Un errore del provider torna al login.
-                Route::get(
-                    '/auth/login/{provider}/callback',
-                    'ProcessCallbackController',
-                )->where('provider', 'google|microsoft|github')->name('oauth.callback');
-
             });
     });
