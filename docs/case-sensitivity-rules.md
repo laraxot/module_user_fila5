@@ -41,6 +41,16 @@ Questo include la rimozione completa di:
 - Database/seeders/ (tutti i seeder files)
 ```
 
+### Test della sintassi delle migrazioni (2026-11-19)
+```
+✗ Removed: tests/Feature/Database/migrations/
+✓ Kept:    tests/Feature/Database/Migrations/   (namespace ...\Database\Migrations, PSR-4)
+```
+La versione più ricca (namespace, `describe`, proprietario unico di `users` e `socialite_users`)
+è stata fusa in `Migrations/UserMigrationSyntaxTest.php`. Il controllo sul proprietario unico di
+`users` è ancora rosso finché esistono le migrazioni di repair e la seconda `create_users_table`:
+vedi [story Xot](../../Xot/docs/stories/case-only-duplicate-directories.story.md).
+
 ## Convenzioni
 
 ### Directory Structure
