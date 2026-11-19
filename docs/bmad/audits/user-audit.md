@@ -133,10 +133,7 @@ coprono Role/Team/User ma con mock senza `*::admin`/`*::operator`. Nessun test s
   `Resources/TenantUserResource/Schemas/TenantUserForm.php`): violano l'auto-traduzione Lang.
 - `LoginWidget` (ChartWidget) e `BaseEditUser` estendono Filament diretto: usare `XotBase*`.
 - `PassportServiceProvider` estende `ServiceProvider` anziché `XotBaseServiceProvider`.
-<<<<<<< .merge_file_NjOan8
-=======
 - Docs: 17 link relativi rotti preesistenti in `docs/bmad/decision-log.md` (es. `./filament-blueprint.md`, `../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md`, `./stories/dcp-269-…story.md`): da risolvere o rimuovere.
->>>>>>> .merge_file_kHnxpi
 - Vocabolario ruoli sparso: `admin`, `super-admin`, `user::admin`, `user::operator`,
   `restaurant::admin` — nessuna costante unica.
 
