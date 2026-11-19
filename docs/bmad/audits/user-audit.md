@@ -88,14 +88,9 @@ Pest con mock `['user::admin']` su `before/update/create/delete`.
 
 `app/Models/Policies/PermissionPolicy.php:25,33,41,50`: `view/create/update/delete` →
 `return true`, `viewAny` → `false`. Filament autorizza le pagine Create/Edit con
-<<<<<<< .merge_file_NjOan8
-`canCreate/canEdit`, non con `viewAny`. Dato `canAccessPanel`, un `user::operator`
-(panel con "permessi ridotti") raggiunge create/edit/delete dei Permission via URL.
-=======
 `canCreate/canEdit`, non con `viewAny`. Dato `canAccessPanel`, un `user::operator` (ruolo da
 creare a mano: `PanelRoleSeeder` semina solo `user::admin`) entra nel pannello "con permessi
 ridotti" e raggiunge create/edit/delete dei Permission via URL; `user::admin` li ha già da P0-U1.
->>>>>>> .merge_file_kHnxpi
 Fix: allineare a `RolePolicy` (tutto `false`, super-admin via `before`).
 
 ### P1-U3 — scritture DB dentro l'autorizzazione
