@@ -1,0 +1,125 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Utente',
+            'icon' => 'heroicon-o-plus',
+            'tooltip' => 'Crea un nuovo utente',
+        ],
+        'edit' => [
+            'label' => 'Modifica Utente',
+            'icon' => 'heroicon-o-pencil',
+            'tooltip' => 'Modifica l\'utente',
+        ],
+        'delete' => [
+            'label' => 'Elimina Utente',
+            'icon' => 'heroicon-o-trash',
+            'tooltip' => 'Elimina l\'utente',
+        ],
+        'view' => [
+            'label' => 'Visualizza Utente',
+            'icon' => 'heroicon-o-eye',
+            'tooltip' => 'Visualizza i dettagli dell\'utente',
+        ],
+        'impersonate' => [
+            'label' => 'Impersona Utente',
+            'icon' => 'heroicon-o-user-circle',
+            'tooltip' => 'Accedi come questo utente',
+        ],
+        'stop_impersonating' => [
+            'label' => 'Termina Impersonificazione',
+            'icon' => 'heroicon-o-arrow-left',
+            'tooltip' => 'Torna al tuo account',
+        ],
+        'block' => [
+            'label' => 'Blocca',
+            'icon' => 'heroicon-o-lock-closed',
+            'tooltip' => 'Blocca l\'utente',
+        ],
+        'unblock' => [
+            'label' => 'Sblocca',
+            'icon' => 'heroicon-o-lock-open',
+            'tooltip' => 'Sblocca l\'utente',
+        ],
+        'send_reset_link' => [
+            'label' => 'Invia Link Reset Password',
+            'icon' => 'heroicon-o-envelope',
+            'tooltip' => 'Invia link per reset password',
+        ],
+        'verify_email' => [
+            'label' => 'Verifica Email',
+            'icon' => 'heroicon-o-check-circle',
+            'tooltip' => 'Verifica l\'email dell\'utente',
+        ],
+        'attach' => [
+            'label' => 'Collega',
+            'icon' => 'heroicon-o-link',
+            'tooltip' => 'Collega record',
+        ],
+        'detach' => [
+            'label' => 'Scollega',
+            'icon' => 'heroicon-o-link-slash',
+            'tooltip' => 'Scollega record',
+        ],
+        'activate' => [
+            'label' => 'Attiva',
+            'icon' => 'heroicon-o-check',
+            'tooltip' => 'Attiva l\'utente',
+        ],
+        'deactivate' => [
+            'label' => 'Disattiva',
+            'icon' => 'heroicon-o-x-circle',
+            'tooltip' => 'Disattiva l\'utente',
+        ],
+        'logout' => [
+            'icon' => 'logout',
+        ],
+        'profile' => [
+            'icon' => 'profile',
+        ],
+        'reorderRecords' => [
+            'icon' => 'reorderRecords',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'icon' => 'openFilters',
+        ],
+        'export' => [
+            'icon' => 'export',
+            'label' => 'Esporta',
+            'tooltip' => 'export',
+        ],
+        'changePassword' => [
+            'icon' => 'changePassword',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'export_xls' => [
+            'icon' => 'export_xls',
+        ],
+        'cancel' => [
+            'icon' => 'cancel',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+    ],
+];
