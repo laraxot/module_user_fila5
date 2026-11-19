@@ -105,7 +105,7 @@ docs/
 ├── authentication/
 │   ├── overview.md
 │   ├── implementation.md
-│   ├── security.md
+│   ├── SECURITY.md
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
@@ -132,7 +132,7 @@ docs/
 │   ├── commands.md
 │   └── events.md
 └── best_practices/
-    ├── security.md
+    ├── SECURITY.md
     ├── performance.md
     ├── testing.md
     └── deployment.md
@@ -297,7 +297,7 @@ docs/
 ├── authentication/
 │   ├── overview.md
 │   ├── implementation.md
-│   ├── security.md
+│   ├── SECURITY.md
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
@@ -324,7 +324,7 @@ docs/
 │   ├── commands.md
 │   └── events.md
 └── best_practices/
-    ├── security.md
+    ├── SECURITY.md
     ├── performance.md
     ├── testing.md
     └── deployment.md
@@ -2391,7 +2391,7 @@ docs/
 ├── authentication/
 │   ├── overview.md
 │   ├── implementation.md
-│   ├── security.md
+│   ├── SECURITY.md
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
@@ -2418,7 +2418,7 @@ docs/
 │   ├── commands.md
 │   └── events.md
 └── best_practices/
-    ├── security.md
+    ├── SECURITY.md
     ├── performance.md
     ├── testing.md
     └── deployment.md
@@ -2843,7 +2843,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+- [authentication_performance_optimization.md](./performance/authentication_performance_optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

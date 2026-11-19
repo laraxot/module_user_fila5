@@ -117,7 +117,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "User Module - Authentication & Authorization"
@@ -1178,7 +1178,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [changelog.md](./CHANGELOG.md) for full history.
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
 
 ---
 
@@ -1196,7 +1196,7 @@ See [changelog.md](./CHANGELOG.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 
@@ -1209,8 +1209,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-- [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../../docs/security.md)
+- [CLAUDE.md](../../../claude.md) - Project architecture
+- [Security Guidelines](../../../../docs/SECURITY.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)
@@ -1231,7 +1231,7 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ---
 
-## Contenuto assorbito da `readme.md`
+## Contenuto assorbito da `README.md`
 
 # User Module - Authentication & Authorization
 
@@ -2290,7 +2290,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 
@@ -2303,8 +2303,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-- [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../../docs/security.md)
+- [CLAUDE.md](../../../claude.md) - Project architecture
+- [Security Guidelines](../../../../docs/SECURITY.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

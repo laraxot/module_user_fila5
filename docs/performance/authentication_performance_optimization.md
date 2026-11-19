@@ -221,7 +221,7 @@ This document provides the roadmap for resolving the performance issues in the U
 
 ---
 
-## Contenuto assorbito da `AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md`
+## Contenuto assorbito da `authentication_performance_optimization.md`
 
 # Documento unificato
 

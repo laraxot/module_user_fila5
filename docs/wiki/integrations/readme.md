@@ -1057,7 +1057,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [changelog.md](./changelog.md) for full history.
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
 
 ---
 
@@ -1075,7 +1075,7 @@ See [changelog.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 
@@ -1088,8 +1088,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Tenant Module](../../../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-- [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../../../../docs/security.md)
+- [CLAUDE.md](../../../../../claude.md) - Project architecture
+- [Security Guidelines](../../../../../../docs/SECURITY.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

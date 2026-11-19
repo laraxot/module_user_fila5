@@ -31,7 +31,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
-- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 
 ## File Risolti
 

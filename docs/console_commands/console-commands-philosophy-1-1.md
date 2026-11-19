@@ -14,7 +14,7 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./readme.md"
+  - "./README.md"
 ---
 
 # Filosofia dei Comandi Console - Modulo User

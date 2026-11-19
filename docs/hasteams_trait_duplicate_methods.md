@@ -74,7 +74,7 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 ## Collegamenti correlati
 - [Indice documentazione User](./index.md)
 
-- [Indice documentazione User](./INDEX.md)
+- [Indice documentazione User](./index.md)
 - [Modello User](./Models/User.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)

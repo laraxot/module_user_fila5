@@ -77,7 +77,7 @@ branch remoto.
 risolti a mano fondendo senza perdita di informazione:
 
 - 7 casi banali HEAD/dev entrambi vuoti → sola rimozione marker.
-- `docs/wiki/skills/INDEX.md` e `docs/wiki/skills/index.md`: entrambi i lati
+- `docs/wiki/skills/index.md` e `docs/wiki/skills/index.md`: entrambi i lati
   non identici (link a varianti case-diverse dello stesso file) → tenuti
   entrambi i bullet, rimossi solo i marker.
 - `docs/stories/user-passport-create-client-credentials-button.md`: lato
@@ -120,7 +120,7 @@ marker residui in tutti, script non li ha ritoccati.
 
 ## Root-md-files e index
 
-`docs/root-md-files/*.md` (7 file: changelog.md + 2 varianti numerate,
+`docs/root-md-files/*.md` (7 file: CHANGELOG.md + 2 varianti numerate,
 git-reset.md + 1 variante, pest-test-report.md, philosophy.md) verificato
 pulito — nessun artefatto tipo `(.)` a fine riga, nessuna intestazione H1
 
@@ -129,7 +129,7 @@ duplicata.
 
 `docs/index.md` (indice auto-generato, 3419 righe) aveva la sezione
 `## root-md-files` disallineata: elencava solo 2 dei 7 file `.md` presenti
-(`git-reset.md`, `pest-test-report.md`), mancavano `changelog.md`,
+(`git-reset.md`, `pest-test-report.md`), mancavano `CHANGELOG.md`,
 `changelog-1.md`, `changelog-2.md`, `git-reset-1.md`, `philosophy.md`.
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa —
 
@@ -142,7 +142,7 @@ riferimento stale a path root-modulo rimossi (`PHILOSOPHY.md`,
 
 ## Esclusioni deliberate
 
-- Duplicati case-only (`INDEX.md`/`index.md`, `00-INDEX.md`/`00-index.md`,
+- Duplicati case-only (`index.md`/`index.md`, `00-index.md`/`00-index.md`,
   ecc.): problema noto e già tracciato in `docs/case-conflicts.md`
   (issue #124, discussion #1). Non consolidato qui — richiede aggiornamento
 

@@ -684,7 +684,7 @@ docs/
 │   │   ├── overview.md                     # Panoramica completa (CONSOLIDATO)
 │   │   ├── implementation.md               # Implementazione (CONSOLIDATO)
 │   │   ├── troubleshooting.md              # Risoluzione problemi (CONSOLIDATO)
-│   │   └── security.md                     # Sicurezza (CONSOLIDATO)
+│   │   └── SECURITY.md                     # Sicurezza (CONSOLIDATO)
 │   └── registration/                       # Registrazione
 │       ├── overview.md                     # Panoramica
 │       ├── widget.md                       # Widget Filament
@@ -730,7 +730,7 @@ docs/
 │   ├── fullcalendar/                        # FullCalendar
 │   │   ├── overview.md                     # Panoramica (CONSOLIDATO)
 │   │   ├── scheduler.md                     # Scheduler (CONSOLIDATO)
-│   │   ├── license.md                       # Licenza (CONSOLIDATO)
+│   │   ├── LICENSE.md                       # Licenza (CONSOLIDATO)
 │   │   └── troubleshooting.md               # Troubleshooting (CONSOLIDATO)
 │   ├── mcp/                                 # MCP Server
 │   │   ├── overview.md                     # Panoramica

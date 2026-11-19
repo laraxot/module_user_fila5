@@ -247,7 +247,7 @@ Modules/User/
 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Comandi Console - Modulo User"
@@ -481,10 +481,10 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
-- [User Models](../models/readme.md)
+- [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
-- [README.md](../readme.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti Recenti
 

@@ -175,9 +175,9 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
-- [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
-- [Modulo Limesurvey](../limesurvey/docs/readme.md)
-- [User README](./readme.md)
+- [Modulo ExternalProject](../<nome progetto>/docs/README.md)
+- [Modulo Limesurvey](../limesurvey/docs/README.md)
+- [User README](./README.md)
 
 ---
 
