@@ -8,12 +8,12 @@ qmd: "filament-table-columns convenzione metodo gettablecolumns per filament tab
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./filament-table-columns-1.md"
-  - "./filament-table-columns-2.md"
-  - "./filament-table-columns-3.md"
-  - "./teams-relation-manager-1.md"
-  - "./teams-relation-manager-2.md"
-  - "./teams-relation-manager-3.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns-convenzione-metodo-gettablecolumns.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-teamsrelationmanager-user-module.md"
   - "./teams-relation-manager.md"
   - "./widgets-responsive-layout.md"
 ---

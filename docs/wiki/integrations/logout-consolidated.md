@@ -71,13 +71,13 @@ qmd: "logout-analysis analisi del file logout.blade.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -307,7 +307,7 @@ $logout = function () {
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 ---
 
@@ -324,13 +324,13 @@ qmd: "logout-blade-analysis-3 logout blade analysis 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -790,13 +790,13 @@ module: theme
 topic: logout-blade-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -812,13 +812,13 @@ module: theme
 topic: logout-blade-conclusions
 canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -839,13 +839,13 @@ qmd: "logout-blade-corrected-analysis-3 analisi corretta del file logout.blade.p
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -856,7 +856,7 @@ related:
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
@@ -1097,13 +1097,13 @@ module: theme
 topic: logout-blade-corrected-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1119,13 +1119,13 @@ module: theme
 topic: logout-blade-corrected
 canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1146,13 +1146,13 @@ qmd: "logout-blade-error-analysis-3 logout blade error analysis 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1282,13 +1282,13 @@ module: theme
 topic: logout-blade-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1304,13 +1304,13 @@ module: theme
 topic: logout-blade-implementation
 canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1326,13 +1326,13 @@ module: theme
 topic: logout-blade-structure
 canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1353,13 +1353,13 @@ qmd: "logout-blade analisi approfondita dell'errore nell'implementazione del log
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1598,13 +1598,13 @@ module: theme
 topic: logout-error-analysis
 canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1625,13 +1625,13 @@ qmd: "logout-event-error analisi dell'errore negli eventi di logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1949,13 +1949,13 @@ module: theme
 topic: logout-event
 canonical: ../../../Themes/docs/shared-components/logout-event-error.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1971,13 +1971,13 @@ module: theme
 topic: logout-implementation-best-practices
 canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1998,13 +1998,13 @@ qmd: "logout-implementation-error-3 analisi dell'errore nell'implementazione del
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2109,13 +2109,13 @@ module: theme
 topic: logout-implementation-error
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2136,13 +2136,13 @@ qmd: "logout-implementation-with-laravel-localization-3 logout implementation wi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2318,13 +2318,13 @@ module: theme
 topic: logout-implementation-with-laravel-localization
 canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2340,13 +2340,13 @@ module: theme
 topic: logout-implementation
 canonical: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2362,13 +2362,13 @@ module: theme
 topic: logout-page-fix
 canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2389,13 +2389,13 @@ qmd: "logout-page-implementation-3 logout page implementation 3"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2419,13 +2419,13 @@ module: theme
 topic: logout-page-implementation
 canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2446,13 +2446,13 @@ qmd: "logout-page correzione logout page nel theme twentyone"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2511,13 +2511,13 @@ qmd: "logout-security sicurezza nel processo di logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2694,7 +2694,7 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
@@ -2716,13 +2716,13 @@ qmd: "logout analisi errore logout"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2849,7 +2849,7 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -2974,7 +2974,7 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management-2.md)
+- [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 
 ---

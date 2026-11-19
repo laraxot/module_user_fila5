@@ -14,7 +14,7 @@ related:
 ## Source Cluster
 
 - `README.md`
-- `product-strategy-2.md`
+- `product-strategy-user-module.md`
 - `architecture/architecture-rules.md`
 - `advanced-user-architecture.md`
 

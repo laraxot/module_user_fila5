@@ -42,13 +42,13 @@ module: theme
 topic: model-classification
 canonical: ../../../Themes/docs/shared-components/model-classification-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -58,7 +58,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 
 ## model-inheritance-analysis-3
 
-*Consolidated from: `model-inheritance-analysis-3.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -69,13 +69,13 @@ qmd: "model-inheritance-analysis-3 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -234,7 +234,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-analysis-4
 
-*Consolidated from: `model-inheritance-analysis-4.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -245,13 +245,13 @@ qmd: "model-inheritance-analysis-4 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -410,7 +410,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-analysis-5
 
-*Consolidated from: `model-inheritance-analysis-5.md`*
+*Consolidated from: `model-inheritance-analysis.md`*
 
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -421,13 +421,13 @@ qmd: "model-inheritance-analysis-5 analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -597,13 +597,13 @@ qmd: "model-inheritance-analysis analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -762,7 +762,7 @@ Dopo le modifiche, eseguire:
 
 ## model-inheritance-fixes-3
 
-*Consolidated from: `model-inheritance-fixes-3.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -773,13 +773,13 @@ qmd: "model-inheritance-fixes-3 correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -972,7 +972,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -993,13 +993,13 @@ qmd: "model-inheritance-fixes-4 correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1192,7 +1192,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1213,17 +1213,17 @@ qmd: "model-inheritance-fixes-5 model inheritance fixes 5"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
-- [Analisi Completa](./model-inheritance-analysis-4.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -1245,13 +1245,13 @@ module: theme
 topic: model-inheritance-fixes
 canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1272,13 +1272,13 @@ qmd: "model-inheritance-rules regole di ereditarietà dei modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1563,13 +1563,13 @@ qmd: "model-inheritance analisi ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1739,13 +1739,13 @@ qmd: "model-inheritancees correzioni ereditarietà modelli - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1938,7 +1938,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2132,7 +2132,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2326,7 +2326,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis-5.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2698,13 +2698,13 @@ module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2921,13 +2921,13 @@ qmd: "models-analysis models analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3002,13 +3002,13 @@ module: theme
 topic: models
 canonical: ../../../Themes/docs/shared-components/models-analysis.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

@@ -8,13 +8,13 @@ qmd: "header-language-selector-with-flags-2 implementazione del selettore di lin
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -22,7 +22,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path-conventions-2.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [README modulo User](./README.md)

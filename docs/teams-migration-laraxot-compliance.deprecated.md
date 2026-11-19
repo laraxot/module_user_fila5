@@ -8,13 +8,13 @@ qmd: "2025-12-01-teams-migration-laraxot-compliance.deprecated teams migration -
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -210,7 +210,7 @@ Questo garantisce:
 
 ## Lesson Learned
 
-**SEMPRE seguire la checklist di migration-best-practices-2.md prima di committare una migration!**
+**SEMPRE seguire la checklist di migration-best-practices.md prima di committare una migration!**
 
 Le violazioni delle convenzioni laraxot rendono:
 - Più difficile il refactoring

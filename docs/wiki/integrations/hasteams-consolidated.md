@@ -39,13 +39,13 @@ qmd: "hasteams-currentteam-method-choice-3 choice of currentteam() method in has
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -93,13 +93,13 @@ qmd: "hasteams-currentteam-method-choice choice of currentteam() method in haste
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -177,13 +177,13 @@ qmd: "hasteams-trait-analysis hasteams trait analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -240,13 +240,13 @@ qmd: "hasteams-trait-filosofia-e-correzione-completa-3 hasteams trait - filosofi
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -528,11 +528,11 @@ Il trait `HasTeams` ora è:
 
 ### **📚 Documentazione Root**
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](../../../docs/phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](../../phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
@@ -573,13 +573,13 @@ qmd: "hasteams-trait-filosofia-e-correzione-completa hasteams trait - filosofia 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -861,7 +861,7 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](../../phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](../../phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
@@ -902,13 +902,13 @@ qmd: "hasteams-trait hasteams trait analysis"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -965,13 +965,13 @@ qmd: "hasteams-traituplicate-methods analisi metodi duplicati in hasteams (trait
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

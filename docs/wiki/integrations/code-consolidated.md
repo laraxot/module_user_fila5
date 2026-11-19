@@ -43,13 +43,13 @@ qmd: "code-conventions code conventions"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -69,13 +69,13 @@ qmd: "code-optimization-analysis user module code and documentation optimization
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -109,7 +109,7 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management-2.md
+│   ├── profile-management.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -261,13 +261,13 @@ qmd: "code-optimization user module code and documentation optimization analysis
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -301,7 +301,7 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management-2.md
+│   ├── profile-management.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -442,7 +442,7 @@ this optimization will create a more secure, maintainable, and performant user a
 
 ## code-quality-analysis-3
 
-*Consolidated from: `code-quality-analysis-3.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -453,13 +453,13 @@ qmd: "code-quality-analysis-3 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -769,7 +769,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -779,7 +779,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-4
 
-*Consolidated from: `code-quality-analysis-4.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -790,13 +790,13 @@ qmd: "code-quality-analysis-4 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1106,7 +1106,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1116,7 +1116,7 @@ This analysis provides a comprehensive roadmap for improving code quality in the
 
 ## code-quality-analysis-5
 
-*Consolidated from: `code-quality-analysis-5.md`*
+*Consolidated from: `code-quality-analysis.md`*
 
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -1127,13 +1127,13 @@ qmd: "code-quality-analysis-5 code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1443,8 +1443,8 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1464,13 +1464,13 @@ qmd: "code-quality-analysis code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1780,8 +1780,8 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -1801,13 +1801,13 @@ qmd: "code-quality-tools 🔍 code quality tools - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2031,13 +2031,13 @@ qmd: "code-quality code quality analysis - user module"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2347,7 +2347,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
@@ -2931,13 +2931,13 @@ module: theme
 topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

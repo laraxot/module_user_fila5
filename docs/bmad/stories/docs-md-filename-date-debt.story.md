@@ -37,15 +37,15 @@ I duplicati di un canonico restano come alias `superseded`.
 | `docs/login-widget-translation-audit-2025.md` | `docs/login-widget-translation-audit-historical.md` | superseded → `login-widget-translation-audit.md` |
 | `docs/navigation-translations-fixes-january-2026.md` | `docs/navigation-translations-fixes-january-historical.md` | superseded → `navigation-translations-fixes-january.md` |
 | `docs/password-translation-completion-2025.md` | `docs/password-translation-completion-historical.md` | superseded → `password-translation-completion.md` |
-| `docs/password-translation-completion-2025-1.md` | `docs/password-translation-completion-historical-1.md` | superseded → `password-translation-completion.md` |
+| `docs/password-translation-completion-2025-1.md` | `docs/password-translation-completion-historical.md` | superseded → `password-translation-completion.md` |
 | `docs/password_translation_completion_2025.md` | `docs/password-translation-completion-snake-historical.md` | superseded → `password-translation-completion.md` |
 | `docs/phpstan-fixes-2025.md` | `docs/phpstan-fixes-historical.md` | superseded → `phpstan-fixes.md` |
-| `docs/phpstan-fixes-2025-1.md` | `docs/phpstan-fixes-historical-1.md` | superseded → `phpstan-fixes.md` |
+| `docs/phpstan-fixes-2025-1.md` | `docs/phpstan-fixes-historical-alias.md` | superseded → `phpstan-fixes.md` |
 | `docs/quality-status-2025.md` | `docs/quality-status-historical.md` | superseded → `quality-status.md` |
 | `docs/updates-2025.md` | `docs/updates-historical.md` | superseded → `updates.md` |
 | `docs/redundancy-fixes-january-2026.md` | `docs/redundancy-fixes-january-historical.md` | superseded → `redundancy-fixes-january.md` |
 | `docs/stories/user-gap-analysis-2026.story.md` | `docs/stories/user-gap-analysis.story.md` | nuovo nome stabile (non superseded) |
 
 - Link aggiornati (solo path root / riferimenti espliciti): `docs/index.md`, `docs/INDEX.md`, `docs/wiki/concepts/ridondanze-docs-legacy-cluster.md`, `docs/wiki/integrations/ottimizzazioni-consolidated.md`, `docs/ottimizzazioniry-kiss.md`, `docs/stories/user-nested-conflict-marker-cleanup-.story.md`. Link verso `archive/` / `legacy/` lasciati intatti (file ancora dated lì).
-- Residui User docs con date nel nome dopo wave 1 (scan completo `docs/**/*.md`, esclusi `.bak`): **~107** — di cui root ~35, `docs/stories/` ~25, `docs/bmad/stories/` 8, `docs/roadmap/2025-q4-roadmap.md`, resto in `archive/`/`_archive`/`wiki`/`fixes`.
+- Residui User docs con date nel nome dopo wave 1 (scan completo `docs/**/*.md`, esclusi `.bak`): **~107** — di cui root ~35, `docs/stories/` ~25, `docs/bmad/stories/` 8, `docs/roadmap/roadmap.md`, resto in `archive/`/`_archive`/`wiki`/`fixes`.
 - Vietato in questa wave: delete, altri moduli, phpstan/pest, commit.

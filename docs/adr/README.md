@@ -46,6 +46,6 @@ Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un 
 - [contracts-and-lang-backup-archival-.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-.deprecated.md)
 - [contracts-and-lang-backup-archival-](../wiki/decisions/contracts-and-lang-backup-archival-.md)
 - [contracts-and-lang-backup-archival-30.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-30.deprecated.md)
-- [contracts-and-lang-backup-archival-30](../wiki/decisions/contracts-and-lang-backup-archival-30.md)
+- [contracts-and-lang-backup-archival-30](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)
 - [contracts-and-lang-backup-archival.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
 - [contracts-and-lang-backup-archival](../wiki/decisions/contracts-and-lang-backup-archival.md)

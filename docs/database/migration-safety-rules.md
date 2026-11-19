@@ -292,8 +292,8 @@ module: theme
 topic: migration-safety-rules
 canonical: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
 related:
-  - "./migration-safety-rules-1.md"
-  - "./profile-uuid-philosophy-1.md"
+  - "./migration-safety-rules-never-destroy-data.md"
+  - "./profile-uuid-philosophy.md"
   - "./profile-uuid-philosophy.md"
 ---
 
