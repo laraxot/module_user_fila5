@@ -8,12 +8,12 @@ qmd: "git-reset-1 git reset 1"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./changelog-1.md"
-  - "./changelog-2.md"
-  - "./changelog-3.md"
-  - "./changelog-4.md"
-  - "./changelog-5.md"
   - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog-5.md"
+  - "./CHANGELOG.md"
   - "./git-reset.md"
   - "./pest-test-report-1.md"
 ---

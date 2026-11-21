@@ -34,6 +34,8 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -74,6 +76,28 @@ abstract class TestCase extends XotBaseTestCase
      * Le migration girano una volta per processo, come in `Tests\TestCase`.
      */
     public static bool $userSchemaMigrated = false;
+
+    /**
+     * Mockery 1.6 returns a CompositeExpectation from shouldReceive()/allows(), which forwards
+     * once()/with()/andReturn() via __call and so is opaque to PHPStan. The composite holds no
+     * public accessor, so its single Expectation is read once here to keep chained calls typed.
+     *
+     * Sta qui e non in tests/Helpers.php: Pest carica `Pest.php`/`Helpers.php` solo dal
+     * `--test-directory` della run (laravel/tests), quindi in una run scoped sul modulo le
+     * funzioni globali dichiarate li' non esistono. Stessa scelta di Modules\Activity\Tests\TestCase.
+     */
+    public static function mockeryExpect(object $expectation): Expectation
+    {
+        if ($expectation instanceof CompositeExpectation) {
+            $expectations = (fn (): array => $this->_expectations)->call($expectation);
+            \assert(count($expectations) === 1, 'mockeryExpect() supports a single expected method');
+            $expectation = reset($expectations);
+        }
+
+        \assert($expectation instanceof Expectation);
+
+        return $expectation;
+    }
 
     /**
      * Su MariaDB (CI e sviluppo) lo schema del database `*_test` non viene costruito da
@@ -156,12 +180,20 @@ abstract class TestCase extends XotBaseTestCase
     public static ?Collection $users = null;
 
     /**
-     * Come `Tests\TestCase`: anche `mariadb` (default in CI) e `fixcity` (Profile del progetto)
-     * vanno in transazione, altrimenti le righe scritte dai test restano nel DB `_test`.
+     * Come `Tests\TestCase`: anche `mariadb` (default in CI) va in transazione, altrimenti le
+     * righe scritte dai test restano nel DB `_test`.
+     *
+     * Qui NON si elencano connessioni di progetto. `fixcity` era in questo elenco: e' il nome
+     * del modulo-progetto di `base_fixcity_fila5`, da cui questa TestCase e' stata copiata, e in
+     * `base_quaeris_fila5` non esiste nessuna connessione con quel nome. Effetto misurato:
+     * `InvalidArgumentException: Database connection [fixcity] not configured.` in `setUp()`,
+     * cioe' OGNI test del modulo User rosso prima di eseguire una sola asserzione.
+     * Il modulo User e' condiviso fra i progetti: la connessione del Profile la aggiunge il
+     * progetto, non il modulo. `connectionsToTransact()` scarta comunque i nomi non configurati.
      *
      * @var list<string>
      */
-    protected $connectionsToTransact = ['mysql', 'mariadb', 'user', 'fixcity'];
+    protected $connectionsToTransact = ['mysql', 'mariadb', 'user'];
 
     public function setupFilamentAdminPanel(): void
     {
@@ -644,9 +676,20 @@ abstract class TestCase extends XotBaseTestCase
             return $this->connectionsToTransact;
         }
 
+        /** @var array<string, mixed> $configured */
+        $configured = config('database.connections', []);
+
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
+            // Un nome non configurato fa lanciare `DatabaseManager::connection()`, e la
+            // DatabaseTransactions lo invoca dentro `setUp()`: l'intero file di test muore
+            // prima della prima asserzione. Un progetto che non monta un modulo e' uno
+            // scenario legittimo, non un errore: la connessione mancante si salta.
+            if (! \array_key_exists($name, $configured)) {
+                continue;
+            }
+
             $id = spl_object_id($database->connection($name));
             if (isset($seen[$id])) {
                 continue;

@@ -2,26 +2,30 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_CYSt4D
-=======
-<<<<<<< .merge_file_mT0QGr
-=======
->>>>>>> .merge_file_Dg6Bvy
-use Modules\User\Tests\TestCase;
-use Modules\User\Models\BaseTenant;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
->>>>>>> .merge_file_Mii9Oo
 use Filament\Models\Contracts\HasAvatar;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use Spatie\MediaLibrary\HasMedia;
-use Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->tenant = Tenant::factory()->create([
+/**
+ * Fixture del tenant su cui girano i test di questo file.
+ *
+ * Era una proprieta' dinamica impostata in `beforeEach()` (`$this->tenant`). Dentro una
+ * closure di Pest `$this` e' `Pest\PendingCalls\TestCall`, il cui `@mixin` e'
+ * `PHPUnit\Framework\TestCase`: la proprieta' non esiste per l'analizzatore e il valore
+ * letto e' `mixed`, quindi ogni accesso successivo (`->name`, `->users()`, `->getTable()`)
+ * era una segnalazione a sé. In piu' PHP 8.2 ha deprecato le proprieta' dinamiche.
+ *
+ * `createOne()` e non `create()`: `create()` e' dichiarato `TModel|Collection<int, TModel>`
+ * perche' con `count()` restituisce una collezione; qui serve un singolo model.
+ */
+function userTestTenant(): Tenant
+{
+    return Tenant::factory()->createOne([
         'name' => 'Test Tenant',
         'email_address' => 'test@tenant.com',
         'phone' => '+39 123 456 789',
@@ -30,20 +34,22 @@ beforeEach(function (): void {
         'primary_color' => '#FF0000',
         'secondary_color' => '#00FF00',
     ]);
-});
+}
 
 test('tenant can be created', function (): void {
-    expect($this->tenant->name)->toBe('Test Tenant');
-    expect($this->tenant->email_address)->toBe('test@tenant.com');
-    expect($this->tenant->phone)->toBe('+39 123 456 789');
-    expect($this->tenant->mobile)->toBe('+39 987 654 321');
-    expect($this->tenant->address)->toBe('Via Roma 123');
-    expect($this->tenant->primary_color)->toBe('#FF0000');
-    expect($this->tenant->secondary_color)->toBe('#00FF00');
+    $tenant = userTestTenant();
+
+    expect($tenant->name)->toBe('Test Tenant');
+    expect($tenant->email_address)->toBe('test@tenant.com');
+    expect($tenant->phone)->toBe('+39 123 456 789');
+    expect($tenant->mobile)->toBe('+39 987 654 321');
+    expect($tenant->address)->toBe('Via Roma 123');
+    expect($tenant->primary_color)->toBe('#FF0000');
+    expect($tenant->secondary_color)->toBe('#00FF00');
 });
 
 test('tenant has correct fillable attributes', function (): void {
-    $fillable = $this->tenant->getFillable();
+    $fillable = userTestTenant()->getFillable();
 
     expect($fillable)->toContain('id');
     expect($fillable)->toContain('name');
@@ -57,27 +63,27 @@ test('tenant has correct fillable attributes', function (): void {
 });
 
 test('tenant has slug generated from name', function (): void {
-    expect($this->tenant->slug)->toBe('test-tenant');
+    expect(userTestTenant()->slug)->toBe('test-tenant');
 });
 
 test('tenant slug is automatically generated', function (): void {
-    $newTenant = Tenant::factory()->create([
+    $newTenant = Tenant::factory()->createOne([
         'name' => 'Another Test Tenant',
     ]);
 
     expect($newTenant->slug)->toBe('another-test-tenant');
 });
 
+// I tre test che seguono verificavano prima `method_exists($this->tenant, 'users')`.
+// Con la fixture tipizzata quel controllo e' una tautologia — se il metodo non esistesse
+// il file non supererebbe l'analisi statica — e nascondeva l'asserzione vera, che e' la
+// riga successiva: la relazione punta al model giusto.
 test('tenant has users relationship', function (): void {
-    expect(method_exists($this->tenant, 'users'))->toBeTrue();
-
-    expect($this->tenant->users()->getRelated())->toBeInstanceOf(User::class);
+    expect(userTestTenant()->users()->getRelated())->toBeInstanceOf(User::class);
 });
 
 test('tenant has members relationship', function (): void {
-    expect(method_exists($this->tenant, 'members'))->toBeTrue();
-
-    expect($this->tenant->members()->getRelated())->toBeInstanceOf(User::class);
+    expect(userTestTenant()->members()->getRelated())->toBeInstanceOf(User::class);
 });
 
 test('tenant implements required interfaces', function (): void {
@@ -89,54 +95,56 @@ test('tenant implements required interfaces', function (): void {
 });
 
 test('tenant has slug options configuration', function (): void {
-    expect(method_exists($this->tenant, 'getSlugOptions'))->toBeTrue();
-
-    expect($this->tenant->getSlugOptions()->slugField)->toBe('slug');
+    expect(userTestTenant()->getSlugOptions()->slugField)->toBe('slug');
 });
 
 test('tenant has filament avatar url method', function (): void {
-    expect(method_exists($this->tenant, 'getFilamentAvatarUrl'))->toBeTrue();
+    $avatarUrl = userTestTenant()->getFilamentAvatarUrl();
 
-    $avatarUrl = $this->tenant->getFilamentAvatarUrl();
     expect($avatarUrl)->toBeNull(); // Default implementation returns null
 });
 
 test('tenant can be found by slug', function (): void {
+    $tenant = userTestTenant();
+
     $foundTenant = Tenant::where('slug', 'test-tenant')->firstOrFail();
-    expect($foundTenant->id)->toBe($this->tenant->id);
+    expect($foundTenant->id)->toBe($tenant->id);
     expect($foundTenant->name)->toBe('Test Tenant');
 });
 
 test('tenant has correct table name', function (): void {
-    expect($this->tenant->getTable())->toBe('tenants');
+    expect(userTestTenant()->getTable())->toBe('tenants');
 });
 
 test('tenant has correct primary key', function (): void {
-    expect($this->tenant->getKeyName())->toBe('id');
+    expect(userTestTenant()->getKeyName())->toBe('id');
 });
 
 test('tenant has correct connection', function (): void {
     // I modelli del modulo User vivono sulla connessione dedicata 'user' (BaseModel).
-    expect($this->tenant->getConnectionName())->toBe('user');
+    expect(userTestTenant()->getConnectionName())->toBe('user');
 });
 
 test('tenant can be updated', function (): void {
-    $this->tenant->update([
+    $tenant = userTestTenant();
+
+    $tenant->update([
         'name' => 'Updated Tenant Name',
         'email_address' => 'updated@tenant.com',
     ]);
 
-    $this->tenant->refresh();
+    $tenant->refresh();
 
-    expect($this->tenant->name)->toBe('Updated Tenant Name');
-    expect($this->tenant->email_address)->toBe('updated@tenant.com');
-    expect($this->tenant->slug)->toBe('updated-tenant-name');
+    expect($tenant->name)->toBe('Updated Tenant Name');
+    expect($tenant->email_address)->toBe('updated@tenant.com');
+    expect($tenant->slug)->toBe('updated-tenant-name');
 });
 
 test('tenant can be deleted', function (): void {
-    $tenantId = $this->tenant->id;
+    $tenant = userTestTenant();
+    $tenantId = $tenant->id;
 
-    $this->tenant->delete();
+    $tenant->delete();
 
     expect(Tenant::find($tenantId))->toBeNull();
 });

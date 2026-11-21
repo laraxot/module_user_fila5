@@ -19,15 +19,7 @@ use Modules\User\Models\BaseUser;
  * a failed/successful login into a 500 (BMAD: audit must not break auth UX).
  *
  * Identity = {@see UserContract}; capability = {@see HasAuthentications}.
-<<<<<<< .merge_file_vtyQx9
  * Never type-hint the concrete BaseUser: that is an internal
-=======
-<<<<<<< .merge_file_QRariS
- * Never type-hint {@see BaseUser}: that is an internal
-=======
- * Never type-hint the concrete BaseUser: that is an internal
->>>>>>> .merge_file_yVylAm
->>>>>>> .merge_file_DL36o5
  * abstract implementation, not the consumer boundary.
  */
 final class RecordAuthenticationLogAction
