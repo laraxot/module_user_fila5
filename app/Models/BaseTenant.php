@@ -59,11 +59,6 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     ];
 
     /**
-<<<<<<< .merge_file_POWtpG
-     * @param  Builder<Model>|Model  $query
-     * @param  string|int  $value
-     * @param  string|null  $field
-=======
      * `settings` e' una colonna JSON: senza cast un array in ingresso finisce nell'INSERT
      * come stringa ("Array to string conversion").
      *
@@ -82,7 +77,6 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
      * @param Builder<Model>|Model $query
      * @param string|int $value
      * @param string|null $field
->>>>>>> .merge_file_YnpcBA
      * @return Builder<Model>
      */
     public function resolveRouteBindingQuery($query, $value, $field = null): Builder
