@@ -21,7 +21,7 @@ related:
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
@@ -308,7 +308,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)

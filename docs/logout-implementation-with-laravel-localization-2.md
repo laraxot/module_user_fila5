@@ -18,10 +18,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
-# Implementazione del Logout con LaravelLocalization
+# Implementazione del Logout con LaravelLocalization 
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -67,11 +67,11 @@ mount(function() {
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
-
+        
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
-
+    
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -79,7 +79,7 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
-Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
 
 ```php
 // ERRATO
@@ -91,7 +91,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
 
 ## Template Blade con Componenti Filament
 
@@ -123,7 +123,7 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
 
 ## Chiavi di Traduzione per il Logout
 

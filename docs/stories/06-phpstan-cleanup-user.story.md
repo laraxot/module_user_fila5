@@ -63,7 +63,7 @@ Il runtime e' 8.4: serve alzare a `^8.3`/`^8.4` (file fuori scope User, tocca tu
 
 ## GitHub (tracciamento)
 
-- Issue: TODO (gh non installato su questa macchina)
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/34 (tracking «PHPStan level max: percorso verso zero errori su Modules/»; ogni commit di questo lavoro cita il link)
 - Discussion: TODO
 
 ## Ripresa 2026-11-17 — baseline 8 errori, 4 in User
@@ -109,3 +109,30 @@ Nuovo test `Rating/tests/Unit/HasRatingPivotTest.php`: `ratings()` usa `RatingMo
 - Rinomina di massa dei `.md` e miglioramento dei prompt in `bashscripts/docs/prompts`: altri agenti li stavano gia' modificando in massa (126 file prompt toccati in 30 minuti; commit Activity di 1189 file; 783 modifiche non committate): un `apply` ora collide e salterebbe quasi tutto come «sporco». Da fare quando il repo e' quieto: `python3 -I bashscripts/tools/docs/md-filenames.py plan` poi `apply --only <modulo>` un modulo alla volta.
 - 9 lock di sessioni vecchie (~11 giorni) in `Themes/Two`, `config`, `Seo`: stantii, non rimossi (decide l'utente).
 - Difetti 2, 3, 4 sopra (tool scratch, migrazione `CreatePostViewsTable`, `UserResourceTest`).
+
+### Chiusura 2026-11-17 (sera): detriti di merge e risultato a freddo
+
+Issue: https://github.com/laraxot/base_techplanner_fila5/issues/34
+
+**Risultato:** `phpstan analyse Modules` a cache pulita = **0 errori, exit 0** (16:49), dopo aver riparato i residui del merge. I tre agenti di sessione hanno tolto le annotazioni `@phpstan-ignore` dove nascondevano un difetto reale: UI (48 tolte, test dei modelli opzionali Asset/Theme/Component, mai esistiti in UI), Geo (8 su 10, `GeographicalScopes` con binding al posto dell'interpolazione SQL), Xot (2: generics di `CheckAccessorTwinsCommand` e `method.staticCall` in `FilamentSchemaCoverage`, il ramo «form» ora esegue davvero gli schemi).
+
+**Causa dei detriti:** `bashscripts/git/subtrees/merge_remote_repo_2.sh laraxot` (deprecato, 7 istanze) esegue `commit -am "."` + merge `--allow-unrelated-histories` + push in ogni repo di modulo: committa e spinge marker di conflitto e lascia `MERGE_HEAD` stantio (User 367 conflitti, Geo 1181, UI 30, Xot 8). Un secondo attore toglie i marker lasciando i due lati concatenati.
+
+**Come ho risolto (a mano, hunk per hunk, regola `laraxot-git-conflicts`):**
+
+| Cosa | Scelta | Perche' |
+|------|--------|---------|
+| Notify: 7 file PHP + 3 test/lang | lato con `Assert::string` in `TestMailtrap`; costanti in `CheckMailDnsAction` (usate nel corpo); lang in forma espansa | il lato scartato era codice morto o piu' debole |
+| Rating: `HasRating`, `HasRatingContract` | `pivotClass: RatingMorph::class` e `covariant Model` | evita `generics.notSubtype`; il contratto e' tornato alla forma `$this` due volte dopo i merge |
+| Employee: `EmployeeTest` | riscritto in avanti dal commit pre-merge `81b7d24` (18 test) | la versione unita aveva `toBeTrue()` e `toBeFalse()` sullo stesso oggetto e subordinati mai creati |
+| User: 33 lang `it` con chiavi duplicate | ricostruiti dagli stage dell'indice (`:2` locale, `:3` upstream), priorita' al locale + chiavi solo-upstream | 28 su 33 identici a cio' che l'app valutava gia' |
+| User: `CreateUserTest`, `PermissionTest`, `UserTest`, `TenantTest`, `BaseTenantKeyTest`, `passport_stats` | `use` deduplicati, import ripristinati, `new Tenant;` (forma prevalente nel codebase: 141 contro 52), `return []` morto tolto | detriti dell'unione |
+
+**Decisioni per l'utente (non prese da me):**
+1. `lang/it/users.php`: 12 etichette in conflitto, tenuto il locale (`Nome` / `Nome e cognome`, `E-mail` / `Email`, `Team attuale` / `Team corrente`...). Se prevale l'upstream va ribaltato.
+2. Fermare o no lo script di merge: l'utente ha risposto «FA ALTRO», quindi non l'ho toccato. Finche' gira i marker tornano e i remoti `laraxot/module_*` ricevono commit con marker.
+3. Repo a meta' merge (User, Geo, UI, Xot): abortire o chiudere il merge; da li' non si puo' committare in parziale. Le mie modifiche in quei moduli vivono solo nel repo radice.
+4. `Change.php` (e `Profile/SuperAdmin.php`, `Socialite/Buttons.php`): non tracciati, ma `RetiredChromeLivewireTest` pretende che non esistano.
+5. Le 5 `@phpstan-ignore trait.unused` residue (Geo `EnsuresGeoDatabaseSchema`, 7 trait Xot) e i 3 test UI sempre `skipped`.
+6. `Support/AuthenticatedTenantKey.php`: un altro attore ha tolto dal merge il blocco upstream (risolve la chiave con `Context::remember`, una query in meno per richiesta) e tenuto la versione locale, semplice. Se serve la memoizzazione va reintrodotta a mano.
+7. Test che non girano o sono rossi per l'ambiente, non per il codice: `Employee/tests/Unit/Models/EmployeeTest.php` non dichiara `uses(TestCase::class)` (mai dichiarato, nemmeno prima del merge: `Target class [config] does not exist`); `Notify/.../MailtrapBridgeConfigurationTest` pretende `mail.mailers.mailtrap-sdk`, definito da nessun file di config; `Notify/.../InboundMailWebhookTest` e `Rating` non trovano le tabelle nel DB scratch; `User/.../UserTest` cade su `CreatePostViewsTable`; i test strutturali di Xot (`EveryModuleHasSettingPageTest` ecc.) segnalano moduli senza `SettingPage` (DbForge, AI, Blog).

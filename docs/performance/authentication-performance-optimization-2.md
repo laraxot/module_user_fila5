@@ -1,3 +1,20 @@
+---
+title: "Authentication Performance Optimization - User Module"
+type: concept
+tags: [authentication, performance, optimization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "authentication-performance-optimization-2 authentication performance optimization - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./authentication-performance-optimization-1.md"
+  - "./authentication-performance-optimization-3.md"
+  - "./authentication-performance-optimization-4.md"
+  - "./authentication-performance-optimization-5.md"
+  - "./authentication-performance-optimization.md"
+---
+
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified
@@ -155,7 +172,7 @@ CREATE INDEX idx_sessions_last_activity ON sessions(last_activity);
 
 ## 📚 Related Documentation
 
-- [authentication.md](../authentication.md)
+- [authentication.md](./authentication.md)
 - [session-management.md](./session-management.md)
 - [roles-permissions.md](./roles-permissions.md)
 - [optimization-analysis.md](./optimization-analysis.md)

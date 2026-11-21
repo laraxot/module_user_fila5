@@ -23,7 +23,7 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix-2.md)

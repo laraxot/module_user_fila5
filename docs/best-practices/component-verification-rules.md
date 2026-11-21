@@ -16,8 +16,6 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
   - "./dependency.md"
-status: superseded
-superseded_by: component-verification.md
 ---
 
 # Regole per la Verifica dei Componenti Blade

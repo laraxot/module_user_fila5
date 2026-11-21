@@ -10,19 +10,11 @@ discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands.md"
-  - "./README.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands-philosophy.md"
-  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy-1.md"
+  - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-  - "./README.md"
-status: superseded
-superseded_by: ../console-commands/change-password-command.md
+  - "./readme.md"
 ---
 
 # ChangePasswordCommand
@@ -368,7 +360,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-- [README Comandi Console](README.md)
+- [README Comandi Console](./readme.md)
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)

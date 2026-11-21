@@ -60,7 +60,7 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 ## Collegamenti
 
 - [architecture](./architecture.md)
-- [index](./index.md)
+- [index](./README.md)
 - [module](./module.md)
 - [philosophy](./philosophy.md)
 - [README](./README.md)

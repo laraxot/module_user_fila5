@@ -21,7 +21,7 @@ related:
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
@@ -30,7 +30,7 @@ related:
 
 ## Panoramica
 
-Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di <nome progetto>.
+Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Quaeris.
 
 ## Analisi dell'Implementazione Attuale
 
@@ -207,7 +207,7 @@ Per il logout , si raccomanda di utilizzare l'approccio Folio con PHP puro, che 
 
 2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
 
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di <nome progetto> per le operazioni semplici.
+3. **Coerenza**: Questo approccio è coerente con le convenzioni di Quaeris per le operazioni semplici.
 
 4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
 

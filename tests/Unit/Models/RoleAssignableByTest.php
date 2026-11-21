@@ -9,7 +9,7 @@ use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /*
  * Quali ruoli puo' assegnare chi opera dal pannello: il `super-admin` solo chi lo e' gia'.

@@ -17,4 +17,4 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
-> Questo file è stato rinominato in [parse-error-orphan-methods-.deprecated.md](parse-error-orphan-methods-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [parse-error-orphan-methods-.deprecated.md](./parse-error-orphan-methods.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

@@ -17,4 +17,4 @@ related:
   - "./phpstanes.md"
 ---
 
-> Questo file è stato rinominato in [base-classes-corrections-.deprecated.md](base-classes-corrections-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [base-classes-corrections-.deprecated.md](./base-classes-corrections.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

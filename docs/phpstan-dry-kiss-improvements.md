@@ -257,3 +257,10 @@ When creating new models in User module:
 *Last Updated: 17 October 2025*
 *Status: ✅ PHPStan Level 10 Compliant*
 *Status: ✅ PHPStan Level 10 Compliant*
+
+
+---
+
+<!-- Contenuto unito da phpstan-dry-kiss-improvements-2025-10-17.md (rimozione date dai nomi file, issue #64) -->
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-dry-kiss-improvements-.md

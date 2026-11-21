@@ -15,4 +15,4 @@ Riorganizzare la mastodontica cartella docs del modulo User (550+ file) che cont
 - [ ] Spostamento massivo in `archive/` di analisi risalenti al 2024 o precedenti.
 
 ## 🔗 Riferimenti
-- [Index Documentazione](../00-index.md)
+- [Index Documentazione](../README.md)

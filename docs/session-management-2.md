@@ -87,7 +87,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - Aggiornare questo documento se vengono identificate nuove strategie di gestione delle sessioni o problemi.
 
 ## Collegamenti a Documentazione Correlata
-- [Indice del Modulo Utente](./index.md)
+- [Indice del Modulo Utente](./README.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management-2.md)
@@ -95,7 +95,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
-- [Indice del Modulo Utente](./INDEX.md)
+- [Indice del Modulo Utente](./README.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management.md)

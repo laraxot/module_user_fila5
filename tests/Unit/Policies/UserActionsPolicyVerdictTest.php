@@ -9,7 +9,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /*
  * Le azioni di riga sugli utenti (cambio password, verifica email, "deactivate") chiedono al Gate `update` o `delete`:

@@ -1,10 +1,30 @@
+---
+title: "Implementazione dei Form con Widget Filament"
+type: concept
+tags: [volt, blade, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-blade-implementation-2 implementazione dei form con widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
 ## Introduzione
 
@@ -23,7 +43,7 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
 ## Struttura delle Directory
 
 ```
-/var/www/html/<nome progetto>/laravel/
+/var/www/html/Quaeris/laravel/
 ├── Modules/
 │   └── User/
 │       └── app/
@@ -141,9 +161,9 @@ class LoginFormWidget extends XotBaseWidget
     use InteractsWithForms;
 
     protected static string $view = 'user::livewire.widgets.login-form-widget';
-
+    
     public ?array $data = [];
-
+    
     public function mount(): void
     {
         $this->form->fill();
@@ -163,21 +183,21 @@ class LoginFormWidget extends XotBaseWidget
             ])
             ->statePath('data');
     }
-
+    
     public function login(): void
     {
         $data = $this->form->getState();
-
+        
         if (Auth::attempt([
-            'email' => $data['email'],
+            'email' => $data['email'], 
             'password' => $data['password']
         ], $data['remember'] ?? false)) {
             session()->regenerate();
-
+            
             $locale = app()->getLocale();
             redirect('/' . $locale . '/dashboard');
         }
-
+        
         $this->addError('email', __('auth.failed'));
     }
 }
@@ -203,9 +223,9 @@ class RegisterFormWidget extends XotBaseWidget
     use InteractsWithForms;
 
     protected static string $view = 'user::livewire.widgets.register-form-widget';
-
+    
     public ?array $data = [];
-
+    
     public function mount(): void
     {
         $this->form->fill();
@@ -234,20 +254,20 @@ class RegisterFormWidget extends XotBaseWidget
             ])
             ->statePath('data');
     }
-
+    
     public function register(): void
     {
         $data = $this->form->getState();
-
+        
         $user = User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-
+        
         Auth::login($user);
-
+        
         $locale = app()->getLocale();
         redirect('/' . $locale . '/dashboard');
     }
@@ -283,5 +303,5 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md)
+- [Gestione Sessione](./session-management-2.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md) 

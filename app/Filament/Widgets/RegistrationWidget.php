@@ -11,6 +11,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\User\Actions\Filament\NormalizeFormSchemaAction;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -116,7 +117,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $schema = $this->resource::getFormSchemaWidget();
 
         return \is_array($schema)
-            ? self::normalizeFormSchema($schema)
+            ? app(NormalizeFormSchemaAction::class)->execute($schema)
             : [];
     }
 
@@ -144,23 +145,5 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
         // return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete','lang'=>$lang]);
         return redirect($route);
-    }
-
-    /**
-     * @param  array<int|string, mixed>  $schema
-     * @return array<int|string, Component>
-     */
-    private static function normalizeFormSchema(array $schema): array
-    {
-        $normalized = [];
-        foreach ($schema as $key => $component) {
-            if (! $component instanceof Component) {
-                return [];
-            }
-
-            $normalized[$key] = $component;
-        }
-
-        return $normalized;
     }
 }

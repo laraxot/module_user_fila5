@@ -282,7 +282,7 @@ Il trait `HasTeams` ora è:
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User
 - [authentication.md](authentication.md) - Sistema autenticazione User
-- [index.md](index.md) - Indice generale modulo User
+- [index.md](./README.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
 - [/.cursor/rules/hasteams-trait-laraxot.mdc](../../../.cursor/rules/hasteams-trait-laraxot.mdc)

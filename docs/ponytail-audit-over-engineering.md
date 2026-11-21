@@ -50,5 +50,5 @@ related:
 
 ## Collegamenti
 
-- [00-index-1.md](./00-index-1.md)
+- [00-index-1.md](./README.md)
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)

@@ -105,10 +105,8 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         }
 
         $userPassword = SafeStringCastAction::cast($user->getAttribute('password'));
-        // Cast esplicito di mixed a string per PHPStan
-        $userPasswordString = $userPassword;
 
-        if (! Hash::check($currentPassword, $userPasswordString)) {
+        if (! Hash::check($currentPassword, $userPassword)) {
             $this->addError('current_password', __('user::auth.password.error.text_current_incorrect'));
 
             return null;

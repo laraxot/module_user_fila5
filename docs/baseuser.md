@@ -67,7 +67,7 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - Update this document if significant changes are made to the `BaseUser` structure or functionality.
 
 ## Links to Related Documentation
-- [User Module Index](./index.md)
+- [User Module Index](./README.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Profile Management](./profile-management-2.md)
 - [Routing Best Practices](./routing-best-practices-2.md)

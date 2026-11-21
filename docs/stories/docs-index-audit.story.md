@@ -21,4 +21,4 @@ Come manutentore del modulo User, voglio un `docs/index.md` organizzato per argo
 
 ## Riferimenti
 
-- [../index.md](../index.md)
+- [../index.md](../README.md)

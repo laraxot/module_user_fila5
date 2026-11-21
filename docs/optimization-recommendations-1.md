@@ -1,3 +1,23 @@
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo User"
+type: concept
+tags: [optimization, recommendations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization-recommendations-1 raccomandazioni di ottimizzazione - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -10,8 +30,8 @@
 - **Collegamenti**: 500+ link nel README (confusione)
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
-#### 2. Riusabilità Compromessa
-- **141+ occorrenze hardcoded** di "<nome progetto>"
+#### 2. Riusabilità Compromessa  
+- **141+ occorrenze hardcoded** di "Quaeris"
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -47,7 +67,7 @@ Modulo riutilizzabile per gestione utenti, autenticazione e autorizzazione in pr
 
 ## Funzionalità Core
 - Single Table Inheritance (STI) con tighten/parental
-- OAuth2 con Laravel Passport
+- OAuth2 con Laravel Passport  
 - Social login con Socialite
 - Spatie Permission per ruoli/permessi
 - Filament widgets per admin panel
@@ -125,7 +145,7 @@ User/docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
-use Modules\<nome progetto>\Models\User;
+use Modules\Quaeris\Models\User;
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -144,7 +164,7 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
-3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/<nome progetto>/`
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -153,12 +173,12 @@ protected function createTestUser(): mixed
 // Documentazione trait migliorata
 /**
  * Trait HasTeams - Gestione team per utenti
- *
+ * 
  * REQUISITI:
  * - Modello deve estendere Authenticatable
  * - Tabella teams con colonna owner_id (uuid, nullable)
  * - Tabella pivot team_user
- *
+ * 
  * @property-read Collection<int, Team> $teams
  * @property-read Collection<int, Team> $ownedTeams
  */
@@ -212,7 +232,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
-- [ ] **0 occorrenze** hardcoded "<nome progetto>"
+- [ ] **0 occorrenze** hardcoded "Quaeris"
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -229,7 +249,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 - **Pomeriggio**: Organizzare file per categorie
 - **Sera**: Eliminare duplicazioni
 
-### Giorno 2: Riusabilità
+### Giorno 2: Riusabilità  
 - **Mattina**: Correggere widget auth
 - **Pomeriggio**: Aggiornare test files
 - **Sera**: Verificare script check
@@ -247,7 +267,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
-grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
+grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
 ```
 
 ### Post-Implementazione
@@ -265,7 +285,7 @@ php artisan user:benchmark  # Target: < 100ms
 ## 🎯 PRIORITÀ
 
 1. **CRITICO**: Ristrutturazione documentazione (blocca manutenibilità)
-2. **CRITICO**: Correzione riusabilità (blocca altri progetti)
+2. **CRITICO**: Correzione riusabilità (blocca altri progetti)  
 3. **IMPORTANTE**: Ottimizzazione trait (migliora DX)
 4. **NORMALE**: Performance optimization (migliora UX)
 

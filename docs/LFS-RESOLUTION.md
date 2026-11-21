@@ -11,3 +11,10 @@ updated: 2026-11-17
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+
+
+---
+
+<!-- Contenuto unito da LFS-RESOLUTION-.md (rimozione date dai nomi file, issue #64) -->
+
+Vedi [LFS-RESOLUTION.md](./LFS-RESOLUTION.md).

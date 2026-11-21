@@ -173,7 +173,7 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
-- [README.md](../readme.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti
 

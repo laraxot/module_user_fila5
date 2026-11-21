@@ -1,10 +1,30 @@
+---
+title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
+type: concept
+tags: [volt, folio, auth, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-auth-implementation-2 implementazione corretta delle pagine di autenticazione con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Errors](./volt-errors-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
 
 ## Introduzione
 
@@ -484,7 +504,7 @@ new class extends Component {
 3. **Struttura del Codice**
    - Separa la logica PHP dal template Blade
    - Usa l'approccio funzionale o la classe anonima in base alla complessità
-- Segui le convenzioni di naming e struttura di <nome progetto>
+- Segui le convenzioni di naming e struttura di Quaeris
 
 4. **Sicurezza**
    - Invalida e rigenera sempre la sessione dopo il logout
@@ -528,7 +548,7 @@ new class extends Component {
 
 ## Conclusione
 
-Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di <nome progetto>, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
+Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Quaeris, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
 
 ## Riferimenti
 

@@ -5,9 +5,6 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-qmd: "analisi ereditarietà modelli - modulo user user"
-status: superseded
-superseded_by: model-inheritance-analysis.md
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User

@@ -15,7 +15,7 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
         'user' => [
-            'name' => ['label' => 'Utente'],
+            'name' => ['label' => 'user.name'],
         ],
     ],
 ];

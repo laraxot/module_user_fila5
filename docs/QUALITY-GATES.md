@@ -11,3 +11,10 @@ updated: 2026-11-17
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+
+
+---
+
+<!-- Contenuto unito da QUALITY-GATES-.md (rimozione date dai nomi file, issue #64) -->
+
+Vedi [QUALITY-GATES.md](./QUALITY-GATES.md).

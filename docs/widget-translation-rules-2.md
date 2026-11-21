@@ -1,4 +1,24 @@
-# Widget Translation Rules - <nome progetto> Project
+---
+title: "Widget Translation Rules - Quaeris Project"
+type: rule
+tags: [widget, translation, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget-translation-rules-2 widget translation rules - quaeris project"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Widget Translation Rules - Quaeris Project
 
 ## Core Principles
 
@@ -113,13 +133,13 @@ class EditUserWidget extends XotBaseWidget
     <h2 class="text-xl font-semibold mb-4">
         {{ __('user::widgets.edit_user.title') }}
     </h2>
-
+    
     <p class="text-gray-600 mb-6">
         {{ __('user::widgets.edit_user.description') }}
     </p>
-
+    
     {{ $this->form }}
-
+    
     <div class="mt-6 flex justify-end space-x-3">
         <button type="button" class="btn-secondary">
             {{ __('user::widgets.edit_user.actions.cancel.label') }}
@@ -183,10 +203,10 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
-- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
-- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
-- [Filament Widget Conventions](best-practices/filament-widgets.md)
+- [User Module Widget Structure](widgets-structure-2.md)
+- [EditUserWidget Documentation](widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
 
 ## Memory Integration
 
@@ -196,4 +216,4 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
+All widget development should follow these rules to maintain consistency and quality across the Quaeris project.

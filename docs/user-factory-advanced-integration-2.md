@@ -1,6 +1,26 @@
-# UserFactory Advanced Integration - Modulo User & <nome progetto>
+---
+title: "UserFactory Advanced Integration - Modulo User & Quaeris"
+type: concept
+tags: [user, factory, advanced, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
 
-## Post Deep-Study Analysis
+# UserFactory Advanced Integration - Modulo User & Quaeris
+
+## Post Deep-Study Analysis 
 
 Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integrazione UserFactory ha raggiunto un livello di eccellenza enterprise-grade con supporto completo per:
 
@@ -9,15 +29,15 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
-├── User (<nome progetto>) - STI Base + Business Logic
+├── User (Quaeris) - STI Base + Business Logic
     ├── Patient (HasParent) - Healthcare Consumer
-    ├── Doctor (HasParent) - Healthcare Provider
+    ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
 ```
 
 ### Cross-Module Compatibility Matrix
 
-| BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+| BaseUser Field | Quaeris User | Business Logic | Factory Support |
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -47,7 +67,7 @@ User::factory()->patient()->eligibleForFreeServices()->create();
 User::factory()->patient()->pregnant()->create();
 User::factory()->patient()->lowIncome()->create();
 
-// Doctor scenarios
+// Doctor scenarios  
 User::factory()->doctor()->withStudio()->create();
 User::factory()->doctor()->withWorkflow()->create();
 User::factory()->doctor()->specialist()->create();
@@ -67,7 +87,7 @@ User::factory()->gdprCompliant()->create();
 
 ### Italian Healthcare System
 - **Codice Fiscale**: Realistic generation algorithm
-- **ISEE Integration**: Low-income eligibility logic
+- **ISEE Integration**: Low-income eligibility logic  
 - **Pregnancy Services**: Special healthcare pathways
 - **Professional Credentials**: Realistic doctor certifications
 
@@ -81,10 +101,10 @@ User::factory()->gdprCompliant()->create();
 
 ### Connection Strategy Perfezionata
 ```php
-// BaseUser (User Module)
+// BaseUser (User Module) 
 protected $connection = 'user';
 
-// <nome progetto> User (Healthcare Domain)
+// Quaeris User (Healthcare Domain)
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -109,18 +129,18 @@ $address = $doctor->address; // Cross-module morph relation
 public function test_cross_module_compatibility()
 {
     $user = User::factory()->create();
-
+    
     // BaseUser contracts respected
     expect($user)->toHaveProperty('email');
-    expect($user)->toHaveProperty('password');
+    expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
-
-// <nome progetto> domain contracts
+    
+// Quaeris domain contracts
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
 
-// Business logic testing
+// Business logic testing  
 public function test_healthcare_workflows()
 {
     // Patient registration workflow
@@ -144,11 +164,11 @@ public function test_bulk_sti_performance()
         ...User::factory()->doctor()->count(30)->make(),
         ...User::factory()->admin()->count(5)->make(),
     ]);
-
+    
     User::insert($users->toArray()); // Single query
-
+    
     expect(Patient::count())->toBe(100);
-    expect(Doctor::count())->toBe(30);
+    expect(Doctor::count())->toBe(30); 
     expect(Admin::count())->toBe(5);
 }
 ```
@@ -189,11 +209,11 @@ public function run(): void
     User::factory()->patient()->count(500)->create();
     User::factory()->patient()->pregnant()->count(50)->create();
     User::factory()->patient()->eligibleForFreeServices()->count(200)->create();
-
+    
     // Professional doctor network
     User::factory()->doctorWithStudio()->count(50)->create();
     User::factory()->doctor()->specialist()->count(20)->create();
-
+    
     // Administrative structure
     User::factory()->admin()->count(5)->create();
 }
@@ -218,7 +238,7 @@ public function run(): void
 ### Database Efficiency
 - **Single Table Inheritance**: Optimal queries
 - **Eager Loading**: Relationship optimization
-- **Connection Pooling**: Cross-database efficiency
+- **Connection Pooling**: Cross-database efficiency  
 - **Index Strategy**: Query performance
 
 ### Memory Management
@@ -245,7 +265,7 @@ public function run(): void
 
 ### Phase 2 Roadmap
 - **Media Library Integration**: Real file attachments
-- **API Testing Support**: RESTful endpoint testing
+- **API Testing Support**: RESTful endpoint testing  
 - **Multi-Language**: Internationalization support
 - **Advanced Workflows**: Complex business processes
 
@@ -261,7 +281,7 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
-### For <nome progetto> Module
+### For Quaeris Module
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -273,23 +293,23 @@ public function run(): void
 
 ---
 
-**Status**: ✅ **PRODUCTION READY**
-**Last Updated**: Gennaio 2025
-**Maintenance**: Active development
+**Status**: ✅ **PRODUCTION READY**  
+**Last Updated**: Gennaio 2025  
+**Maintenance**: Active development  
 **Support**: Enterprise-grade
 
 ## Link Documentazione
 
-### <nome progetto> Module
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../<nome progetto>/docs/models/states.md)
+### Quaeris Module
+- [Advanced Improvements Analysis](../../Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../Quaeris/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../Quaeris/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
+- [User Factory Integration](./user-factory-integration-2.md)
+- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [BaseUser Architecture](./parental-inheritance.md)
 
-### Root Documentation
-- [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../../docs/testing_standards.md)
+### Root Documentation  
+- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+- [Testing Standards](../../../../../docs/testing_standards.md) 
