@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_v5KXOL
 title: Quality Gates Analysis — User Module
 date: 2026-07-28
 status: completed-with-constraints
@@ -222,3 +223,17 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 **Document Status:** Complete  
 **Last Updated:** 2026-07-28 ~10:45 UTC  
 **Next Review:** After fixing Top 5 error sources (est. 2-3 hours work)
+=======
+title: "QUALITY-GATES.md"
+status: superseded
+source_of_truth: false
+qmd: "superseded stub bad rename recovery QUALITY-GATES.md"
+superseded_by: related dated original under docs/
+updated: 2026-11-17
+---
+
+<!-- recovery from broken basename `QUALITY-GATES-.md` after docs-guardian mass rename -->
+
+Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
+
+>>>>>>> .merge_file_cxFKfF

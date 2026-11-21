@@ -8,7 +8,11 @@ use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
+<<<<<<< .merge_file_uXal3P
 use Modules\User\Infrastructure\Tenant\AuthenticatedTenantKey;
+=======
+use Modules\User\Support\AuthenticatedTenantKey;
+>>>>>>> .merge_file_DF7LG8
 
 /**
  * Limita le query ai record del tenant corrente.

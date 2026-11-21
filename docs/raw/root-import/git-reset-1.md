@@ -8,10 +8,17 @@ qmd: "git-reset-1 git reset 1"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_VqJxKB
   - "./changelog.md"
   - "./changelog.md"
   - "./changelog.md"
   - "./changelog.md"
+=======
+  - "./changelog-1.md"
+  - "./changelog-2.md"
+  - "./changelog-3.md"
+  - "./changelog-4.md"
+>>>>>>> .merge_file_6e4VPF
   - "./changelog-5.md"
   - "./CHANGELOG.md"
   - "./git-reset.md"

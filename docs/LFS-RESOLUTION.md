@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_OSYIoT
 title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved
@@ -81,3 +82,17 @@ ls docs/img/      # ✅ Images preserved locally, untracked
    - Force-pushed to `provtv/dev` (commit `1dcd346`)
    - Verified: `git lfs ls-files` returns empty
 5. **Result:** Push now succeeds; images preserved locally (untracked)
+=======
+title: "LFS-RESOLUTION.md"
+status: superseded
+source_of_truth: false
+qmd: "superseded stub bad rename recovery LFS-RESOLUTION.md"
+superseded_by: related dated original under docs/
+updated: 2026-11-17
+---
+
+<!-- recovery from broken basename `LFS-RESOLUTION-.md` after docs-guardian mass rename -->
+
+Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
+
+>>>>>>> .merge_file_wPgH0g

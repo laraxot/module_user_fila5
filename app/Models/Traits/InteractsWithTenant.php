@@ -9,7 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Scopes\TenantScope;
+<<<<<<< .merge_file_0n2aHr
 use Modules\User\Infrastructure\Tenant\AuthenticatedTenantKey;
+=======
+use Modules\User\Support\AuthenticatedTenantKey;
+>>>>>>> .merge_file_xN5YgE
 use Modules\Xot\Datas\XotData;
 
 /**

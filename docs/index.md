@@ -142,7 +142,11 @@
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/header-components.md)
 - [header-language-avatar-implementation-1.md](./archive/header-language-avatar-implementation.md)
@@ -154,7 +158,11 @@
 - [jetstream-vs-laraxot-philosophy-1.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./archive/lang-link.md)
+=======
+- [lang-link-1.md](./archive/lang-link.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./archive/lang-link.md)
 - [livewire-namespace.md](./archive/livewire-namespace.md)
 - [login-filament-widget-error.md](./archive/login-filament-widget-error.md)
@@ -425,7 +433,11 @@
 - [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods.md](./archive/historical/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-laraxot-strategia.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-laraxot-strategia.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/historical/header-components.md)
 - [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-implementazione-selettore-lingua-utente.md)
@@ -442,7 +454,11 @@
 - [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
 - [js-conflicts.md](./archive/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./archive/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+=======
+- [lang-link-1.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./archive/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./archive/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./archive/historical/laraxot-migration-policy.md)
@@ -776,7 +792,11 @@
 - [phpstan-compliance.md](./archive/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -1153,7 +1173,11 @@
 - [hasteams-trait-analysis.md](./legacy/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./legacy/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./legacy/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/hasteams-trait-filosofia-e-correzione-completa-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./legacy/header-components.md)
 - [header-language-avatar-implementation-1.md](./legacy/header-language-avatar-implementation-1.md)
@@ -1165,7 +1189,11 @@
 - [jetstream-vs-laraxot-philosophy-1.md](./legacy/jetstream-vs-laraxot-philosophy-1.md)
 - [jetstream-vs-laraxot-philosophy.md](./legacy/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./legacy/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./legacy/lang-link.md)
+=======
+- [lang-link-1.md](./legacy/lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./legacy/lang-link.md)
 - [livewire-namespace.md](./legacy/livewire-namespace.md)
 - [login-filament-widget-error.md](./legacy/login-filament-widget-error.md)
@@ -1436,7 +1464,11 @@
 - [hasteams-currentteam-method-choice.md](./legacy/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./legacy/historical/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods.md](./legacy/historical/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./legacy/historical/header-components.md)
 - [header-language-avatar-implementation-1.md](./legacy/historical/header-language-avatar-implementation-1.md)
@@ -1453,7 +1485,11 @@
 - [jpgraph-integration.md](./legacy/historical/jpgraph-integration.md)
 - [js-conflicts.md](./legacy/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./legacy/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./legacy/historical/lang-link.md)
+=======
+- [lang-link-1.md](./legacy/historical/lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./legacy/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./legacy/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./legacy/historical/laraxot-migration-policy.md)
@@ -1626,7 +1662,11 @@
 - [phpstan-fixes-conflict.md](./legacy/historical/phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-1.md](./legacy/historical/phpstan-fixes-gennaio-1.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./legacy/historical/phpstan-fixes-gennaio-2025-complete.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./legacy/historical/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./legacy/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/historical/phpstan-fixes-gennaiocomplete.md)
@@ -1788,7 +1828,11 @@
 - [phpstan-corrections.md](./legacy/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-2025.md](./legacy/old_tasks/phpstan-fixes-2025.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./legacy/old_tasks/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./legacy/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -1921,10 +1965,17 @@
 
 ## raw/root-import
 
+<<<<<<< .merge_file_rKgPhW
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
+=======
+- [changelog-1.md](./raw/root-import/changelog-1.md)
+- [changelog-2.md](./raw/root-import/changelog-2.md)
+- [changelog-3.md](./raw/root-import/changelog-3.md)
+- [changelog-4.md](./raw/root-import/changelog-4.md)
+>>>>>>> .merge_file_EEsiUq
 - [changelog-5.md](./raw/root-import/changelog-5.md)
 - [CHANGELOG.md](./raw/root-import/changelog.md)
 - [git-reset-1.md](./raw/root-import/git-reset-1.md)
@@ -2342,8 +2393,13 @@
 - [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-analisi-metodi-duplicati.md)
 - [hasteams-trait-duplicate-methods.md](./hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa-2.md](./hasteams-trait-filosofia-e-correzione-completa-2.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa-3.md](./hasteams-trait-filosofia-e-correzione-completa-3.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait.md](./hasteams-trait.md)
@@ -2383,7 +2439,11 @@
 - [label-hardcoded-prevention-1.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention-2.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention.md](./label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./lang-link.md)
+=======
+- [lang-link-1.md](./lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link-2.md](./lang-link-2.md)
 - [lang-link-3.md](./lang-link-3.md)
 - [lang-link.md](./lang-link.md)
@@ -3627,7 +3687,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/header-components.md)
 - [header-language-avatar-implementation-1.md](./archive/header-language-avatar-implementation.md)
@@ -3639,7 +3703,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [jetstream-vs-laraxot-philosophy-1.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./archive/lang-link.md)
+=======
+- [lang-link-1.md](./archive/lang-link.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./archive/lang-link.md)
 - [livewire-namespace.md](./archive/livewire-namespace.md)
 - [login-filament-widget-error.md](./archive/login-filament-widget-error.md)
@@ -3910,7 +3978,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods.md](./archive/historical/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-laraxot-strategia.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-laraxot-strategia.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/historical/header-components.md)
 - [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-implementazione-selettore-lingua-utente.md)
@@ -3927,7 +3999,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
 - [js-conflicts.md](./archive/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./archive/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+=======
+- [lang-link-1.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./archive/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./archive/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./archive/historical/laraxot-migration-policy.md)
@@ -4255,7 +4331,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-compliance.md](./archive/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -4632,7 +4712,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-trait-analysis.md](./legacy/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./legacy/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./legacy/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/hasteams-trait-filosofia-e-correzione-completa-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./legacy/header-components.md)
 - [header-language-avatar-implementation-1.md](./legacy/header-language-avatar-implementation-1.md)
@@ -4644,7 +4728,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [jetstream-vs-laraxot-philosophy-1.md](./legacy/jetstream-vs-laraxot-philosophy-1.md)
 - [jetstream-vs-laraxot-philosophy.md](./legacy/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./legacy/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./legacy/lang-link.md)
+=======
+- [lang-link-1.md](./legacy/lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./legacy/lang-link.md)
 - [livewire-namespace.md](./legacy/livewire-namespace.md)
 - [login-filament-widget-error.md](./legacy/login-filament-widget-error.md)
@@ -4915,7 +5003,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-currentteam-method-choice.md](./legacy/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./legacy/historical/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods.md](./legacy/historical/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./legacy/historical/header-components.md)
 - [header-language-avatar-implementation-1.md](./legacy/historical/header-language-avatar-implementation-1.md)
@@ -4932,7 +5024,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [jpgraph-integration.md](./legacy/historical/jpgraph-integration.md)
 - [js-conflicts.md](./legacy/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./legacy/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./legacy/historical/lang-link.md)
+=======
+- [lang-link-1.md](./legacy/historical/lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link.md](./legacy/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./legacy/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./legacy/historical/laraxot-migration-policy.md)
@@ -5105,7 +5201,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-conflict.md](./legacy/historical/phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-1.md](./legacy/historical/phpstan-fixes-gennaio-1.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./legacy/historical/phpstan-fixes-gennaio-2025-complete.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./legacy/historical/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./legacy/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/historical/phpstan-fixes-gennaiocomplete.md)
@@ -5267,7 +5367,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-corrections.md](./legacy/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-2025.md](./legacy/old_tasks/phpstan-fixes-2025.md)
+<<<<<<< .merge_file_rKgPhW
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./legacy/old_tasks/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_EEsiUq
 - [phpstan-fixes-gennaio-complete.md](./legacy/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -5400,10 +5504,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## raw/root-import
 
+<<<<<<< .merge_file_rKgPhW
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
 - [changelog.md](./raw/root-import/changelog.md)
+=======
+- [changelog-1.md](./raw/root-import/changelog-1.md)
+- [changelog-2.md](./raw/root-import/changelog-2.md)
+- [changelog-3.md](./raw/root-import/changelog-3.md)
+- [changelog-4.md](./raw/root-import/changelog-4.md)
+>>>>>>> .merge_file_EEsiUq
 - [changelog-5.md](./raw/root-import/changelog-5.md)
 - [CHANGELOG.md](./raw/root-import/changelog.md)
 - [git-reset-1.md](./raw/root-import/git-reset-1.md)
@@ -5821,8 +5932,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-analisi-metodi-duplicati.md)
 - [hasteams-trait-duplicate-methods.md](./hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_rKgPhW
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa-2.md](./hasteams-trait-filosofia-e-correzione-completa-2.md)
+>>>>>>> .merge_file_EEsiUq
 - [hasteams-trait-filosofia-e-correzione-completa-3.md](./hasteams-trait-filosofia-e-correzione-completa-3.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait.md](./hasteams-trait.md)
@@ -5862,7 +5978,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [label-hardcoded-prevention-1.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention-2.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention.md](./label-hardcoded-prevention.md)
+<<<<<<< .merge_file_rKgPhW
 - [lang-link.md](./lang-link.md)
+=======
+- [lang-link-1.md](./lang-link-1.md)
+>>>>>>> .merge_file_EEsiUq
 - [lang-link-2.md](./lang-link-2.md)
 - [lang-link-3.md](./lang-link-3.md)
 - [lang-link.md](./lang-link.md)

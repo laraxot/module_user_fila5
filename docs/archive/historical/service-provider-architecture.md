@@ -1,14 +1,26 @@
 ---
 title: "Service Provider Architecture - Module Pattern"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "service provider architecture - module pattern user"
+type: concept
+tags: [service, provider, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "service-provider-architecture service provider architecture - module pattern"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
+
 # Service Provider Architecture - Module Pattern
 
-> **Generato**: [DATE]
+> **Generato**: 2026-01-07
 > **Filosofia**: L'Architetto Module-First (Vincitore del Dibattito)
 > **Pattern**: Laravel Modules + DRY + Separation of Concerns
 
@@ -374,9 +386,9 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [PASSPORT_INTEGRATION.md](../../passport-integration.md) - Passport integration completa
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
-- [README.md](./README.md) - Overview modulo
+- [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
+- [README.md](./readme.md) - Overview modulo
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)
