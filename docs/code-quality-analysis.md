@@ -313,7 +313,7 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+- [authentication_performance_optimization.md](./performance/authentication_performance_optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

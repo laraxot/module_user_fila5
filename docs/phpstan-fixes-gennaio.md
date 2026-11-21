@@ -8,13 +8,13 @@ qmd: "phpstan-fixes-gennaio- 🔧 phpstan fixes - modulo user - gennaio 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -232,7 +232,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ### **Documentazione Correlata**
 - [README.md Modulo User](./README.md)
-- [README.md Modulo User](./readme.md)
+- [README.md Modulo User](./README.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 
@@ -254,13 +254,13 @@ module: theme
 topic: phpstan-fixes-gennaio
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 

@@ -114,9 +114,18 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
+<<<<<<< .merge_file_eyWkJk
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
+=======
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
+
+---
+
+**Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+
+>>>>>>> .merge_file_1GkRnd

@@ -8,13 +8,13 @@ qmd: "git-path-does-not-have-our-version-fix fix: path does not have our version
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -71,10 +71,10 @@ git add app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource/Pages/
 
 ### 3. Risolvere altri conflitti
 
-Se c'è `both added` (es. docs/code-quality-analysis-3.md):
+Se c'è `both added` (es. docs/code-quality-analysis.md):
 
 ```bash
-git add docs/code-quality-analysis-3.md
+git add docs/code-quality-analysis.md
 ```
 
 ### 4. Continuare rebase
@@ -99,5 +99,5 @@ git -c core.editor="echo" rebase --continue
 
 ## Riferimenti
 
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
+- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
 - [oauth-access-token-removal](oauth-access-token-removal.md)

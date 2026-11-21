@@ -13,12 +13,12 @@ Documentation for `user` module categorized as **product**.
 
 ## Files
 
-- [`INDEX.md`](./index.md)
+- [`index.md`](./index.md)
 - [`generic-user-moderation-strategy.md`](./generic-user-moderation-strategy.md)
 - [`generic_user_moderation_strategy.md`](./generic_user_moderation_strategy.md)
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
-- [`user-moderation-strategy-3.md`](./user-moderation-strategy-3.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
 - [`user-moderation-strategy.md`](./user-moderation-strategy.md)
 - [`user_moderation_strategy.md`](./user_moderation_strategy.md)
 

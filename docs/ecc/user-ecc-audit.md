@@ -35,9 +35,9 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | Test PHP | 233 |
 | Models | 123 |
 | Policy | 39 |
-| Resource | 37 |
+| Resource | 37 (35 file `*Resource.php` ricontati il 2026-11-19) |
 | Widget | 31 |
-| Actions | 90 |
+| Actions | 90 (di cui 83 in `app/Actions`, il resto in `app/Filament/**/Actions`) |
 | Services | 0 |
 | Migration | 83 |
 | Lang IT | 264 |
@@ -56,7 +56,8 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 - baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
 - `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
 - nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
-- comportamento, schermate o numeri inventati.
+- comportamento, schermate o numeri inventati;
+- docs con date nel nome file.
 
 ## Riferimenti
 

@@ -8,13 +8,13 @@ qmd: "phpstan-syntaxes phpstan syntax fixes - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -163,7 +163,7 @@ use App\Models\User;
 
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
-- [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
+- [CLAUDE.md - Quality Guidelines](../../../claude.md)
 
 ## 📝 Note Tecniche
 
