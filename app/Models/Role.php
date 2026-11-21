@@ -19,7 +19,6 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
-use Modules\User\Models\Traits\RoleRelationsTrait;
 use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
@@ -73,9 +72,9 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
-    use RoleRelationsTrait;
     use HasXotFactory;
     use RelationX;
+    use RoleRelationsTrait;
     use Updater;
 
     // use HasUuids;
@@ -116,6 +115,15 @@ class Role extends SpatieRole
         return $actor instanceof UserContract && $actor->hasRole(self::SUPER_ADMIN);
     }
 
+    /** Human label of a role code; falls back to the code itself. */
+    public static function displayName(string $name): string
+    {
+        $key = 'user::role.labels.'.str_replace('::', '__', $name);
+        $label = trans($key);
+
+        return $label === $key ? $name : $label;
+    }
+
     /**
      * Toglie dalla query i ruoli che `$actor` non puo' assegnare. Si applica alle opzioni e alla lettura del valore
      * ricevuto: il form e' controllato dal client, l'elenco filtrato da solo non basta.
@@ -145,4 +153,6 @@ class Role extends SpatieRole
             'updated_at' => 'datetime',
         ];
     }
+
+    use RoleRelationsTrait;
 }

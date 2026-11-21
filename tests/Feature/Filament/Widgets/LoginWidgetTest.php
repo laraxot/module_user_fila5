@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\MessageBag;
 use Illuminate\Validation\ValidationException;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -22,7 +22,7 @@ uses(TestCase::class);
  * I campi del form non stanno nel widget ma in `UserForm::getLoginFormSchema()`.
  */
 test('it can render widget', function (): void {
-    $view = (new ReflectionProperty($widget = new LoginWidget(), 'view'))->getValue($widget);
+    $view = (new ReflectionProperty($widget = new LoginWidget, 'view'))->getValue($widget);
 
     expect($view)->toBe('user::filament.widgets.login');
 });
@@ -39,7 +39,7 @@ test('it can authenticate user', function (): void {
         'password' => Hash::make('password123'),
     ]);
 
-    $widget = new LoginWidget();
+    $widget = new LoginWidget;
     $widget->form->fill([
         'email' => 'test@example.com',
         'password' => 'password123',
@@ -57,7 +57,7 @@ test('it can authenticate user', function (): void {
 test('it validates credentials', function (): void {
     skipUnlessUsersTableReady();
 
-    $widget = new LoginWidget();
+    $widget = new LoginWidget;
     $widget->form->fill([
         'email' => 'nonexistent@example.com',
         'password' => 'wrongpassword',
@@ -72,7 +72,7 @@ test('it validates credentials', function (): void {
 });
 
 test('it requires email and password', function (): void {
-    $widget = new LoginWidget();
+    $widget = new LoginWidget;
     $widget->form->fill([
         'email' => '',
         'password' => '',

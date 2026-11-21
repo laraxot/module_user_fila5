@@ -12,8 +12,6 @@ use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\SocialiteUserRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Modules\User\Models\Traits\SocialiteUserRelationsTrait;
 
 /**
  * Modules\User\Models\SocialiteUser.
@@ -62,7 +60,6 @@ use Modules\User\Models\Traits\SocialiteUserRelationsTrait;
  */
 class SocialiteUser extends BaseModel
 {
-    use SocialiteUserRelationsTrait;
     /**
      * Il token OAuth non deve finire in `toArray()` ne' nello stato Livewire delle pagine Filament (audit DCP-181, D-3).
      *
@@ -82,14 +79,5 @@ class SocialiteUser extends BaseModel
         'avatar',
     ];
 
-    /**
-     * @return BelongsTo<Model, $this>
-     */
-    public function user(): BelongsTo
-    {
-        /** @var class-string<Model> */
-        $user_class = XotData::make()->getUserClass();
-
-        return $this->belongsTo($user_class);
-    }
+    use SocialiteUserRelationsTrait;
 }

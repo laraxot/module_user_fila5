@@ -5,33 +5,26 @@ declare(strict_types=1);
 return [
     'fields' => [
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
         'email' => [
-            'label' => 'email',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'E-mail',
         ],
         'password' => [
-            'label' => 'password',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Password',
         ],
     ],
     'actions' => [
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
-        ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
         ],
         'logout' => [

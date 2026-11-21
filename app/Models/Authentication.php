@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\AuthenticationRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\User\Models\Traits\AuthenticationRelationsTrait;
 
 /**
  * Authentication Model.
@@ -64,7 +63,6 @@ use Modules\User\Models\Traits\AuthenticationRelationsTrait;
  */
 class Authentication extends BaseModel
 {
-    use AuthenticationRelationsTrait;
     /**
      * The attributes that are mass assignable.
      *
@@ -95,4 +93,6 @@ class Authentication extends BaseModel
             'login_successful' => 'boolean',
         ];
     }
+
+    use AuthenticationRelationsTrait;
 }

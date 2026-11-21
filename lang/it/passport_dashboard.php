@@ -36,7 +36,7 @@ return [
             'description' => 'force',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
@@ -46,7 +46,6 @@ return [
         'new_credentials' => [
             'label' => 'Nuove credenziali',
             'icon' => 'new_credentials',
-            'tooltip' => 'new_credentials',
         ],
         'create' => [
             'label' => 'Crea Client',
@@ -72,49 +71,31 @@ return [
             'modal_description' => 'Applica l\'hashing a tutti i client secret esistenti.',
         ],
         'passport_install' => [
-            'label' => 'passport_install',
             'icon' => 'passport_install',
-            'tooltip' => 'passport_install',
         ],
         'passport_keys' => [
-            'label' => 'passport_keys',
             'icon' => 'passport_keys',
-            'tooltip' => 'passport_keys',
         ],
         'passport_purge' => [
-            'label' => 'passport_purge',
             'icon' => 'passport_purge',
-            'tooltip' => 'passport_purge',
         ],
         'passport_hash' => [
-            'label' => 'passport_hash',
             'icon' => 'passport_hash',
-            'tooltip' => 'passport_hash',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'save',
-            'tooltip' => 'save',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
         'submit' => [
-            'label' => 'submit',
             'icon' => 'submit',
-            'tooltip' => 'submit',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
-            'tooltip' => 'cancel',
         ],
     ],
     'status' => [

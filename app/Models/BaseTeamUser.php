@@ -9,7 +9,6 @@ use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\BaseTeamUserRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Parental\HasChildren;
-use Modules\User\Models\Traits\BaseTeamUserRelationsTrait;
 
 /**
  * Modules\User\Models\TeamUser.
@@ -54,35 +53,10 @@ use Modules\User\Models\Traits\BaseTeamUserRelationsTrait;
 abstract class BaseTeamUser extends BasePivot
 {
     use HasChildren;
-    use BaseTeamUserRelationsTrait;
 
     protected $connection = 'user';
 
     protected $table = 'team_user';
 
-    /**
-     * Relazione con User.
-     *
-     * @return BelongsTo<Model&UserContract, $this>
-     */
-    public function user(): BelongsTo
-    {
-        $userClass = XotData::make()->getUserClass();
-
-        /* @var BelongsTo<Model&UserContract, $this> */
-        return $this->belongsTo($userClass);
-    }
-
-    /**
-     * Relazione con Team.
-     *
-     * @return BelongsTo<Model&TeamContract, $this>
-     */
-    public function team(): BelongsTo
-    {
-        $teamClass = XotData::make()->getTeamClass();
-
-        /* @var BelongsTo<Model&TeamContract, $this> */
-        return $this->belongsTo($teamClass);
-    }
+    use BaseTeamUserRelationsTrait;
 }

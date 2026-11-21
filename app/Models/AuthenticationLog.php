@@ -13,7 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
 
 /**
  * @property int $id
@@ -61,7 +60,6 @@ use Modules\User\Models\Traits\AuthenticationLogRelationsTrait;
 class AuthenticationLog extends BaseModel
 {
     use MassPrunable;
-    use AuthenticationLogRelationsTrait;
 
     // public $timestamps = false;
 
@@ -113,4 +111,6 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
+
+    use AuthenticationLogRelationsTrait;
 }

@@ -19,7 +19,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
-use Modules\User\Models\Traits\ProfileRelationsTrait;
 
 /**
  * User Profile Model.
@@ -192,10 +191,9 @@ use Modules\User\Models\Traits\ProfileRelationsTrait;
  */
 class Profile extends BaseProfile implements HasMedia
 {
-    use ProfileRelationsTrait;
-    use HasRoles;
-    use HasSchemalessAttributes;
-    use InteractsWithMedia;
+    use HasRoles, HasSchemalessAttributes, InteractsWithMedia, ProfileRelationsTrait {
+        ProfileRelationsTrait::teams insteadof HasRoles;
+    }
 
     /**
      * The table associated with the model.

@@ -1,5 +1,11 @@
 # Installazione del Tema One
 
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
+
 ## Requisiti
 
 - PHP 8.1+
@@ -71,12 +77,11 @@ Compila gli assets con il comando seguente:
 npm run build
 ```
 
-### 8. Copia gli Assets Compilati
+### 8. Assets pubblici
 
 Copia gli assets compilati nella directory pubblica:
 
 ```bash
-npm run copy
 ```
 
 ## Configurazione

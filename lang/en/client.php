@@ -7,16 +7,12 @@ return [
         'name' => 'Client',
         'plural' => 'Clients',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei client e delle loro autorizzazioni',
+            'name' => 'User management',
+            'description' => 'Manage clients and their permissions',
         ],
         'label' => 'Client',
         'sort' => '92',
         'icon' => 'user-user-client',
-    ],
-    'fields' => [
-        'name' => [
-        ],
     ],
     'plural' => [
         'model' => [

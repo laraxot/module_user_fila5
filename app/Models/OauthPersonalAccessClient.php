@@ -31,7 +31,6 @@ use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
  */
 class OauthPersonalAccessClient extends BaseModel
 {
-    use OauthPersonalAccessClientRelationsTrait;
     protected $table = 'oauth_personal_access_clients';
 
     protected $connection = 'user';
@@ -42,11 +41,5 @@ class OauthPersonalAccessClient extends BaseModel
         'client_id',
     ];
 
-    /**
-     * @return BelongsTo<OauthClient, $this>
-     */
-    public function client(): BelongsTo
-    {
-        return $this->belongsTo(OauthClient::class, 'client_id');
-    }
+    use OauthPersonalAccessClientRelationsTrait;
 }

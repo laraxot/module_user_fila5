@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
 
 /**
  * Team Permission Model.
@@ -53,7 +52,6 @@ use Modules\User\Models\Traits\TeamPermissionRelationsTrait;
  */
 class TeamPermission extends BaseModel
 {
-    use TeamPermissionRelationsTrait;
     /**
      * The database connection that should be used by the model.
      */
@@ -70,19 +68,5 @@ class TeamPermission extends BaseModel
         'permission',
     ];
 
-    /**
-     * @return BelongsTo<Team, $this>
-     */
-    public function team(): BelongsTo
-    {
-        return $this->belongsTo(Team::class);
-    }
-
-    /**
-     * @return BelongsTo<User, $this>
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    use TeamPermissionRelationsTrait;
 }
