@@ -32,9 +32,9 @@ function getUserMigrationFiles(): array
 
 it('does not contain merge conflict markers in user migrations', function (): void {
     foreach (getUserMigrationFiles() as $migrationFile) {
+        // Safe\file_get_contents lancia un'eccezione se non legge il file: mai false.
         $contents = file_get_contents($migrationFile);
 
-        Assert::assertNotFalse($contents, "Could not read {$migrationFile}");
         Assert::assertStringNotContainsString('<<<<<<<', $contents, "Merge conflict marker in {$migrationFile}");
     }
 });

@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 ?>
+{{--
+  Filament 5 layout contract (PTVX owner User, non Cms):
+  https://filamentphp.com/docs/5.x/introduction/installation#configuring-your-layout
+  OBBLIGATORIO: @filamentStyles in head, @filamentScripts a fine body; notifications senza @auth.
+--}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>

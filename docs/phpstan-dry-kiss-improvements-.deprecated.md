@@ -1,7 +1,11 @@
 ---
-module: theme
-topic: phpstan-dry-kiss-improvements-2025-10-17
-canonical: ../../../Themes/docs/shared-components/phpstan-dry-kiss-improvements-.md
+title: "phpstan-dry-kiss-improvements-2025-10-17.deprecated"
+type: concept
+tags: [deprecated]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-dry-kiss-improvements-2025-10-17.deprecated deprecated"
+status: deprecated
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,4 +17,4 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-dry-kiss-improvements-.md
+> Questo file è stato rinominato in [phpstan-dry-kiss-improvements-.deprecated.md](phpstan-dry-kiss-improvements-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

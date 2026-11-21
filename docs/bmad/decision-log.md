@@ -439,3 +439,41 @@ contro il gia'-superseded `11.1.team-change-widget.story.md`: entrambe
 - **Mail di reset:** il testo di default lo possiede User (`EnsureResetPasswordMailTemplateAction`, `user::reset_password_email.*` in it/en/de/es), non Notify; mai sovrascrivere un testo personalizzato.
 - **Reinvio verifica email:** l'evento `Verified` si lancia solo dopo aver controllato id e hash, mai su un reinvio (`ResendEmailVerificationAction`).
 - **Revoca consensi:** si riconosce l'utente da `user_id` + `user_type` (classe e alias morph), mai da `subject_type`. Lo user agent della revoca richiede la colonna `revoked_user_agent`: SCHEMA-DA-CHIEDERE, nessuna migrazione creata.
+
+## Audit source-first 2026-11-16
+
+Decisioni proposte dall'audit. Formato: ADR breve (stato, impatto, decisione, perché, evidenza).
+
+### ADR-USER-01 — Ruoli, permessi e team: solo super-admin
+
+- **Data:** 2026-11-16
+- **Stato:** PROPOSTA (da approvare dal titolare del modulo; nessun codice cambiato dall'audit)
+- **Impatto:** Alto
+- **Decisione:** `RolePolicy` e `PermissionPolicy` sovrascrivono `before()` come `BaseUserPolicy` (solo `super-admin`); `PermissionPolicy` torna a tutto `false`. `TeamPolicy` ammette solo `ownsTeam`.
+- **Perché:** Il bypass ADR `{modulo}::admin` (Xot) vale per il contenuto del modulo, non per i privilegi del sistema: chi amministra gli utenti non deve poter modificare chi comanda.
+- **Evidenza:** [audits/user-audit.md](./audits/user-audit.md)
+
+### ADR-USER-02 — Permessi seminati, non creati a runtime
+
+- **Data:** 2026-11-16
+- **Stato:** PROPOSTA (da approvare dal titolare del modulo; nessun codice cambiato dall'audit)
+- **Impatto:** Medio
+- **Decisione:** `hasPermissionToOrCreate` sparisce dalle policy: i permessi nascono da seeder additivo.
+- **Perché:** Un controllo di autorizzazione non scrive su DB (replica, race, tabella che cresce).
+- **Evidenza:** [audits/user-audit.md](./audits/user-audit.md)
+
+### ADR-USER-03 — Ruoli amministrativi da config
+
+- **Data:** 2026-11-16
+- **Stato:** PROPOSTA (da approvare dal titolare del modulo; nessun codice cambiato dall'audit)
+- **Impatto:** Medio
+- **Decisione:** `restaurant::admin` esce da `BaseUser::canAccessPanel` e `ADMIN_ROLES`; elenco in `config/user.php`.
+- **Perché:** Il core User serve PTVX (HR); i nomi di ruolo di altri domini non vanno nel codice.
+- **Evidenza:** [audits/user-audit.md](./audits/user-audit.md)
+
+## [2026-11-16] P1 chiuso — niente import Cms nelle Folio pages User
+
+- **Decisione:** in PTVX Cms resta assente; User non importa `PageSlugMiddleware` / `Cms\Models\Page`. Area personale usa `middleware(['auth'])`. Rimossa cartella Folio phantom `resources/views/pages/pages/` (archivio CMS). Owner Folio FO = FolioVolt; App `FolioServiceProvider` stub no-op.
+- **Gate:** Pest `tests/Unit/NoCmsPhantomFolioImportsTest.php`.
+- **Non fare:** reintrodurre `Modules/Cms` o montare Folio da User.
+
