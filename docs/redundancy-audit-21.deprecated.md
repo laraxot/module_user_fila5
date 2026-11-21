@@ -7,13 +7,22 @@ updated: 2026-07-14
 qmd: "redundancy-audit-2026-05-21.deprecated deprecated"
 status: deprecated
 related:
+<<<<<<< .merge_file_JzbFw1
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_pU8tQn
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_JzbFw1
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_pU8tQn
   - "./actions-path-convention.md"
 ---
 

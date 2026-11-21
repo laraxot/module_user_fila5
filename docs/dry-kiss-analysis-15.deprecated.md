@@ -7,13 +7,22 @@ updated: 2026-07-14
 qmd: "dry-kiss-analysis-2025-10-15.deprecated deprecated"
 status: deprecated
 related:
+<<<<<<< .merge_file_FYk4xF
+  - "./00-index-1.md"
+=======
   - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_JoBajv
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_FYk4xF
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+=======
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_JoBajv
   - "./actions-path-convention.md"
 ---
 

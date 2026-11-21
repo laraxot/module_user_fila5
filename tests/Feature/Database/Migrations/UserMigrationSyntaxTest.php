@@ -42,6 +42,16 @@ describe('User Migration Syntax', function (): void {
         $migrationPath = module_path('User', 'database/migrations');
         $migration = $migrationPath.'/2026_11_12_120002_create_socialite_users_table.php';
 
+<<<<<<< .merge_file_S38Pk3
+it('does not contain merge conflict markers in user migrations', function (): void {
+    foreach (getUserMigrationFiles() as $migrationFile) {
+        // Safe\file_get_contents lancia un'eccezione se non legge il file: mai false.
+        $contents = file_get_contents($migrationFile);
+
+        Assert::assertStringNotContainsString('<<<<<<<', $contents, "Merge conflict marker in {$migrationFile}");
+    }
+});
+=======
         Assert::assertFileExists($migration);
         Assert::assertFileDoesNotExist($migrationPath.'/2023_01_01_000003_create_socialite_user_table.php');
 
@@ -50,6 +60,7 @@ describe('User Migration Syntax', function (): void {
         Assert::assertStringContainsString('$this->updateTimestamps($table);', $contents);
         Assert::assertSame('user', (new SocialiteUser)->getConnectionName());
     });
+>>>>>>> .merge_file_qKNqNe
 
     test('user migrations do not contain merge conflict markers', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {

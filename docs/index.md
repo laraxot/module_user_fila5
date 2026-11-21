@@ -2488,7 +2488,12 @@
 - [login-widget-livewire-binding.md](./login-widget-livewire-binding.md)
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
+<<<<<<< .merge_file_Eify5j
+- [login-widget-translation-audit-2025.md](./login-widget-translation-audit-historical.md)
+- [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive-1.md)
+=======
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
+>>>>>>> .merge_file_AS0opm
 - [login-widget-translation-audit-conflict.md](./login-widget-translation-audit-conflict.md)
 - [login-widget-translation-audit.md](./login-widget-translation-audit.md)
 - [login-widget-translation.md](./login-widget-translation.md)
@@ -2768,8 +2773,14 @@
 - [passport.md](./passport.md)
 - [password-translation-completion-.md](./password-translation-completion-.md)
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
+<<<<<<< .merge_file_Eify5j
+- [password-translation-completion-2.md](./password-translation-completion-2.md)
+- [password-translation-completion-2025-1.md](./password-translation-completion-historical-1.md)
+- [password-translation-completion-2025.md](./password-translation-completion-historical.md)
+=======
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-historical.md)
+>>>>>>> .merge_file_AS0opm
 - [password-translation-completion.md](./password-translation-completion.md)
 - [password.md](./password.md)
 - [path-conventions-1.md](./path-conventions.md)
@@ -2830,6 +2841,16 @@
 - [phpstan-fixes-1.md](./phpstan-fixes-1.md)
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-2.md](./phpstan-fixes-2.md)
+<<<<<<< .merge_file_Eify5j
+- [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-1.md)
+- [phpstan-fixes-2025-10-01.deprecated.md](./phpstan-fixes-2025-10-01.deprecated.md)
+- [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
+- [phpstan-fixes-3-1.md](./phpstan-fixes-3-1.md)
+- [phpstan-fixes-3-2.md](./phpstan-fixes-3-2.md)
+- [phpstan-fixes-3.md](./phpstan-fixes-3.md)
+- [phpstan-fixes-4.md](./phpstan-fixes-4.md)
+- [phpstan-fixes-5.md](./phpstan-fixes-5.md)
+=======
 - [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-alias.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
@@ -2838,6 +2859,7 @@
 - [phpstan-fixes-3.md](./phpstan-fixes.md)
 - [phpstan-fixes-4.md](./phpstan-fixes.md)
 - [phpstan-fixes-5.md](./phpstan-fixes.md)
+>>>>>>> .merge_file_AS0opm
 - [phpstan-fixes-6.md](./phpstan-fixes-6.md)
 - [phpstan-fixes-7.md](./phpstan-fixes-7.md)
 - [phpstan-fixes-8.md](./phpstan-fixes.md)
@@ -3173,8 +3195,13 @@
 - [two-factor-2.md](./two-factor-2.md)
 - [two-factor.md](./two-factor.md)
 - [type-safety-improvements.md](./type-safety-improvements.md)
+<<<<<<< .merge_file_Eify5j
+- [updates-1.md](./updates-1.md)
+- [updates-12.md](./updates-12.md)
+=======
 - [updates-1.md](./updates.md)
 - [updates-12.md](./updates.md)
+>>>>>>> .merge_file_AS0opm
 - [updates-2025.md](./updates-historical.md)
 - [updates-dec.md](./updates-dec.md)
 - [updates.md](./updates.md)
