@@ -36,7 +36,11 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 - Non embeddare Rules nei prompt di avvio
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
 
+<<<<<<< .merge_file_rK2Cfp
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+=======
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
+>>>>>>> .merge_file_yFMbPd
 
 ## Rules ricorrenti
 

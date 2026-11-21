@@ -61,4 +61,8 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
+<<<<<<< .merge_file_na7kGE
 - [INDEX.md](INDEX.md)
+=======
+- [index.md](index.md)
+>>>>>>> .merge_file_qvxnYd

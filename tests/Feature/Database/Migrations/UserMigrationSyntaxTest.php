@@ -50,7 +50,6 @@ describe('User Migration Syntax', function (): void {
         Assert::assertStringContainsString('$this->updateTimestamps($table);', $contents);
         Assert::assertSame('user', (new SocialiteUser)->getConnectionName());
     });
-
     test('user migrations do not contain merge conflict markers', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);

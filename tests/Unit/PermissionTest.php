@@ -8,20 +8,41 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->permission = Permission::factory()->create([
+/**
+ * Fixture del permesso su cui girano i test di questo file.
+ *
+ * Prima era una proprieta' dinamica assegnata in `beforeEach()` (`$this->permission`), e
+ * questo rompeva due cose insieme:
+ *
+ * - PHP 8.2 ha deprecato le proprieta' dinamiche: la TestCase non dichiara `$permission`,
+ *   quindi l'assegnazione vive solo grazie a una deprecation;
+ * - dentro una closure di Pest `$this` non e' la TestCase del modulo ma
+ *   `Pest\PendingCalls\TestCall`, il cui `@mixin` e' `PHPUnit\Framework\TestCase`. Il valore
+ *   letto era quindi `mixed`, e ogni `->name`, `->getFillable()`, `->assignRole()` su quel
+ *   `mixed` era una segnalazione a sé.
+ *
+ * Una funzione tipizzata da' a ogni test lo stesso oggetto nuovo di `beforeEach()` e un tipo
+ * vero a tutti i chiamanti. `createOne()` e non `create()`: `create()` e' dichiarato
+ * `TModel|Collection<int, TModel>` perche' con `count()` restituisce una collezione, mentre
+ * qui serve — ed e' sempre stato inteso — un singolo model.
+ */
+function userTestPermission(): Permission
+{
+    return Permission::factory()->createOne([
         'name' => 'test-permission',
         'guard_name' => 'web',
     ]);
-});
+}
 
 test('permission can be created', function (): void {
-    expect($this->permission->name)->toBe('test-permission');
-    expect($this->permission->guard_name)->toBe('web');
+    $permission = userTestPermission();
+
+    expect($permission->name)->toBe('test-permission');
+    expect($permission->guard_name)->toBe('web');
 });
 
 test('permission has correct fillable attributes', function (): void {
-    $fillable = $this->permission->getFillable();
+    $fillable = userTestPermission()->getFillable();
 
     expect($fillable)->toContain('name');
     expect($fillable)->toContain('guard_name');
@@ -32,13 +53,13 @@ test('permission has correct fillable attributes', function (): void {
 });
 
 test('permission has correct table configuration', function (): void {
-    $table = $this->permission->getTable();
+    $table = userTestPermission()->getTable();
 
     expect($table)->not->toBeEmpty();
 });
 
 test('permission has correct casts', function (): void {
-    $casts = $this->permission->getCasts();
+    $casts = userTestPermission()->getCasts();
 
     // permissions.id e' bigIncrements: il model dichiara solo il cast della chiave intera.
     expect($casts)->toHaveKey('id');
@@ -46,75 +67,88 @@ test('permission has correct casts', function (): void {
 });
 
 test('permission can be updated', function (): void {
-    $this->permission->update([
+    $permission = userTestPermission();
+
+    $permission->update([
         'name' => 'updated-permission',
         'guard_name' => 'api',
     ]);
 
-    $this->permission->refresh();
+    $permission->refresh();
 
-    expect($this->permission->name)->toBe('updated-permission');
-    expect($this->permission->guard_name)->toBe('api');
+    expect($permission->name)->toBe('updated-permission');
+    expect($permission->guard_name)->toBe('api');
 });
 
 test('permission can be deleted', function (): void {
-    $permissionId = $this->permission->id;
+    $permission = userTestPermission();
+    $permissionId = $permission->id;
 
-    $this->permission->delete();
+    $permission->delete();
 
     expect(Permission::find($permissionId))->toBeNull();
 });
 
 test('permission can be assigned to roles', function (): void {
-    $role = Role::factory()->create([
+    $permission = userTestPermission();
+
+    $role = Role::factory()->createOne([
         'name' => 'test-role',
         'guard_name' => 'web',
     ]);
 
-    $role->givePermissionTo($this->permission);
+    $role->givePermissionTo($permission);
 
-    expect($role->hasPermissionTo($this->permission))->toBeTrue();
-    expect($this->permission->roles)->toHaveCount(1);
+    expect($role->hasPermissionTo($permission))->toBeTrue();
+    expect($permission->roles)->toHaveCount(1);
 });
 
 test('permission can be assigned to multiple roles', function (): void {
-    $role1 = Role::factory()->create(['name' => 'role-1']);
-    $role2 = Role::factory()->create(['name' => 'role-2']);
+    $permission = userTestPermission();
 
-    $this->permission->assignRole($role1);
-    $this->permission->assignRole($role2);
+    $role1 = Role::factory()->createOne(['name' => 'role-1']);
+    $role2 = Role::factory()->createOne(['name' => 'role-2']);
 
-    expect($this->permission->roles)->toHaveCount(2);
-    expect($this->permission->hasRole($role1))->toBeTrue();
-    expect($this->permission->hasRole($role2))->toBeTrue();
+    $permission->assignRole($role1);
+    $permission->assignRole($role2);
+
+    expect($permission->roles)->toHaveCount(2);
+    expect($permission->hasRole($role1))->toBeTrue();
+    expect($permission->hasRole($role2))->toBeTrue();
 });
 
 test('permission can be found by name', function (): void {
+    $permission = userTestPermission();
+
     $foundPermission = Permission::where('name', 'test-permission')->firstOrFail();
-    expect($foundPermission->id)->toBe($this->permission->id);
+    expect($foundPermission->id)->toBe($permission->id);
 });
 
 test('permission can be found by guard', function (): void {
+    $permission = userTestPermission();
+
     $webPermissions = Permission::where('guard_name', 'web')->get();
 
     expect($webPermissions)->toHaveCount(1);
-    expect($webPermissions->firstOrFail()->id)->toBe($this->permission->id);
+    expect($webPermissions->firstOrFail()->id)->toBe($permission->id);
 });
 
 test('permission has timestamps', function (): void {
-    expect($this->permission->created_at)->not->toBeNull();
-    expect($this->permission->updated_at)->not->toBeNull();
+    $permission = userTestPermission();
+
+    expect($permission->created_at)->not->toBeNull();
+    expect($permission->updated_at)->not->toBeNull();
 });
 
 test('permission can be created with factory', function (): void {
-    $permission = Permission::factory()->create();
+    $permission = Permission::factory()->createOne();
 
     expect($permission->name)->not->toBeEmpty();
     expect($permission->guard_name)->not->toBeEmpty();
 });
 
 test('permission can be created with specific attributes', function (): void {
-    $permission = Permission::factory()->create([
+    $permission = Permission::factory()->createOne([
         'name' => 'custom-permission',
         'guard_name' => 'custom-guard',
     ]);
@@ -124,58 +158,68 @@ test('permission can be created with specific attributes', function (): void {
 });
 
 test('permission can check if it has role', function (): void {
-    $role = Role::factory()->create(['name' => 'test-role']);
+    $permission = userTestPermission();
 
-    expect($this->permission->hasRole($role))->toBeFalse();
+    $role = Role::factory()->createOne(['name' => 'test-role']);
 
-    $this->permission->assignRole($role);
+    expect($permission->hasRole($role))->toBeFalse();
 
-    expect($this->permission->hasRole($role))->toBeTrue();
+    $permission->assignRole($role);
+
+    expect($permission->hasRole($role))->toBeTrue();
 });
 
 test('permission can check if it has any roles', function (): void {
-    expect($this->permission->hasAnyRole([]))->toBeFalse();
+    $permission = userTestPermission();
 
-    $role = Role::factory()->create(['name' => 'test-role']);
-    $this->permission->assignRole($role);
+    expect($permission->hasAnyRole([]))->toBeFalse();
 
-    expect($this->permission->hasAnyRole([$role]))->toBeTrue();
+    $role = Role::factory()->createOne(['name' => 'test-role']);
+    $permission->assignRole($role);
+
+    expect($permission->hasAnyRole([$role]))->toBeTrue();
 });
 
 test('permission can check if it has all roles', function (): void {
-    $role1 = Role::factory()->create(['name' => 'role-1']);
-    $role2 = Role::factory()->create(['name' => 'role-2']);
+    $permission = userTestPermission();
 
-    $this->permission->syncRoles([$role1, $role2]);
+    $role1 = Role::factory()->createOne(['name' => 'role-1']);
+    $role2 = Role::factory()->createOne(['name' => 'role-2']);
 
-    expect($this->permission->hasAllRoles([$role1, $role2]))->toBeTrue();
-    expect($this->permission->hasAllRoles([$role1]))->toBeTrue();
-    expect($this->permission->hasAllRoles([$role1, $role2, 'non-existent']))->toBeFalse();
+    $permission->syncRoles([$role1, $role2]);
+
+    expect($permission->hasAllRoles([$role1, $role2]))->toBeTrue();
+    expect($permission->hasAllRoles([$role1]))->toBeTrue();
+    expect($permission->hasAllRoles([$role1, $role2, 'non-existent']))->toBeFalse();
 });
 
 test('permission can be revoked from role', function (): void {
-    $role = Role::factory()->create(['name' => 'test-role']);
+    $permission = userTestPermission();
 
-    $this->permission->assignRole($role);
-    expect($this->permission->hasRole($role))->toBeTrue();
+    $role = Role::factory()->createOne(['name' => 'test-role']);
 
-    $this->permission->removeRole($role);
-    expect($this->permission->hasRole($role))->toBeFalse();
+    $permission->assignRole($role);
+    expect($permission->hasRole($role))->toBeTrue();
+
+    $permission->removeRole($role);
+    expect($permission->hasRole($role))->toBeFalse();
 });
 
 test('permission can be synced with roles', function (): void {
-    $role1 = Role::factory()->create(['name' => 'role-1']);
-    $role2 = Role::factory()->create(['name' => 'role-2']);
-    $role3 = Role::factory()->create(['name' => 'role-3']);
+    $permission = userTestPermission();
+
+    $role1 = Role::factory()->createOne(['name' => 'role-1']);
+    $role2 = Role::factory()->createOne(['name' => 'role-2']);
+    $role3 = Role::factory()->createOne(['name' => 'role-3']);
 
     // Initially assign role1 and role2
-    $this->permission->syncRoles([$role1, $role2]);
-    expect($this->permission->roles)->toHaveCount(2);
+    $permission->syncRoles([$role1, $role2]);
+    expect($permission->roles)->toHaveCount(2);
 
     // Sync to only role2 and role3
-    $this->permission->syncRoles([$role2, $role3]);
-    expect($this->permission->roles)->toHaveCount(2);
-    expect($this->permission->hasRole($role1))->toBeFalse();
-    expect($this->permission->hasRole($role2))->toBeTrue();
-    expect($this->permission->hasRole($role3))->toBeTrue();
+    $permission->syncRoles([$role2, $role3]);
+    expect($permission->roles)->toHaveCount(2);
+    expect($permission->hasRole($role1))->toBeFalse();
+    expect($permission->hasRole($role2))->toBeTrue();
+    expect($permission->hasRole($role3))->toBeTrue();
 });

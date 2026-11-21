@@ -14,7 +14,11 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_IELkjg
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_vc1jXp
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente
@@ -174,7 +178,7 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
-- [User Models](models/readme.md)
+- [User Models](models/README.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
 

@@ -177,7 +177,11 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_Hyc7sc
 - [Documentazione centrale](/docs/readme.md)
+=======
+- [Documentazione centrale](/docs/README.md)
+>>>>>>> .merge_file_CxDoM5
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)

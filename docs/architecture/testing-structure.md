@@ -307,7 +307,11 @@ dump($variable);
 
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+<<<<<<< .merge_file_P6utO6
 - [Architettura Modulo User](../architecture/readme.md)
+=======
+- [Architettura Modulo User](../architecture/README.md)
+>>>>>>> .merge_file_gaUzmn
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---

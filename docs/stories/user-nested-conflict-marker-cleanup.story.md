@@ -35,7 +35,7 @@ uno script della famiglia `merge_remote_repo_2.sh`/`dummy_push()` ha eseguito me
 automatici che hanno committato marker letterali non risolti — **gia' presenti anche
 sul remote `laraxot/dev`** (verificato con `git show laraxot/dev:<path>`, non solo
 locale). Commit-hash ricorrenti nei marker: `87273113 (.)` (quasi tutti i file),
-piu' `f548be94 (.)` e `2024e2e7 (.)` annidati in `.github/contributing.md`.
+piu' `f548be94 (.)` e `2024e2e7 (.)` annidati in `.github/CONTRIBUTING.md`.
 
 Un agente precedente (`9fceb9ac fix(user): rimuovi marker di conflitto Git committati
 in app, test e docs`, 2026-09-21) aveva gia' ripulito gran parte dell'albero ma
@@ -43,17 +43,28 @@ in app, test e docs`, 2026-09-21) aveva gia' ripulito gran parte dell'albero ma
 `grep -rlE '^(<{7}|={7}|>{7})' . | grep -vE '/(vendor|node_modules|graphify-out)/'`.
 
 ## Inventario marker (23 file, tutti confermati reali — nessun falso positivo
+<<<<<<< .merge_file_3wxOxr
 doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-2025-01-27.md`,
+=======
+doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-.md`,
+>>>>>>> .merge_file_F22vxa
 che tratta l'argomento, ha marker reali fuori da blocchi di esempio)
 
 Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`):
 
 - **7 file — blocco "entrambi vuoti" (4 righe: `<<<<<<< HEAD` / `>>>>>>> 87273113 (.)` /
   `=======` / `>>>>>>> laraxot/dev`, nessun contenuto reale tra i marker su nessun lato)**:
+<<<<<<< .merge_file_3wxOxr
   `docs/quality-status.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
   `docs/baseuser-refactoring-completed-2025-10-15.md`, `docs/phpstan-fixes-2025-10-01.md`,
   `docs/dry-kiss-analysis-2025-10-15.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
   `docs/git-conflicts-resolution-2025-01-27.md`.
+=======
+  `docs/quality-status.md`, `docs/phpstan-fixes-gennaio-complete.md`,
+  `docs/baseuser-refactoring-completed-2025-10-15.md`, `docs/phpstan-fixes-2025-10-01.md`,
+  `docs/dry-kiss-analysis-2025-10-15.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
+  `docs/git-conflicts-resolution-.md`.
+>>>>>>> .merge_file_F22vxa
   Risoluzione: eliminazione delle 4 righe marker (nessuna decisione di contenuto, i due lati
   erano gia' vuoti).
 - **14 file — riga orfana singola `>>>>>>> 87273113 (.)`** (nessun `<<<<<<<`/`=======`
@@ -66,11 +77,15 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
   `app/Filament/Resources/UserResource/RelationManagers/ModulesRelationManager.wip`.
   Risoluzione: rimozione della singola riga marker (nessun contenuto in conflitto,
   solo rumore residuo).
+<<<<<<< .merge_file_3wxOxr
 - **1 file — nesting a 3 livelli con 3 commit-hash diversi**: `.github/contributing.md`
+=======
+- **1 file — nesting a 3 livelli con 3 commit-hash diversi**: `.github/CONTRIBUTING.md`
+>>>>>>> .merge_file_F22vxa
   (righe 43-58). Tutte le varianti annidate portano allo stesso bullet PSR-2, differiscono
   solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
-  `PSR-2-coding-style-guide.md`). Verificato con `git log --oneline -- .github/contributing.md`
-  + `git show <sha>:.github/contributing.md` sui commit pre-corruzione (`1d6d8dfc`, `6770b609`,
+  `PSR-2-coding-style-guide.md`). Verificato con `git log --oneline -- .github/CONTRIBUTING.md`
+  + `git show <sha>:.github/CONTRIBUTING.md` sui commit pre-corruzione (`1d6d8dfc`, `6770b609`,
   entrambi 0 marker): il contenuto originale, **mai corrotto**, usa l'URL minuscolo
   (`psr-2-coding-style-guide.md`). Risoluzione: ripristino identico da quei commit
   (memoria `feedback-restore-never-reinvent-signature`), non invenzione di una quarta
@@ -143,7 +158,7 @@ aggiuntiva vista la storia di reset distruttivi concorrenti su questo repo.
 
 Tutti i 23 file con marker risolti (grep finale: 0 marker in tutto l'albero, esclusi
 vendor/node_modules/graphify-out). `.wip` lasciato `.wip` (motivazione sopra, riga
-marker interna rimossa). `.corrected` rimosso (`git rm`). `.github/contributing.md`
+marker interna rimossa). `.corrected` rimosso (`git rm`). `.github/CONTRIBUTING.md`
 ripristinato dal contenuto pre-corruzione (URL PSR-2 minuscolo).
 
 Deletion staged pre-esistente in `Application/UseCases/Owners/
@@ -208,7 +223,7 @@ stata riconciliata in un secondo intervento nella stessa sessione:
     `laraxot/dev` (residuo daemon non ancora ripulito sul remoto) e 0 marker lato
     `dev` (gia' pulito dal cleanup sopra) — risolti sistematicamente con
     `git checkout --ours` dopo verifica puntuale del pattern su un campione
-    rappresentativo (`.github/contributing.md`, `docs/bmad/README.md`,
+    rappresentativo (`.github/CONTRIBUTING.md`, `docs/bmad/README.md`,
     `docs/purpose.md`, `tests/Unit/Datas/UserDatasAndEnumsCoverageTest.php`,
     `ModulesRelationManager.wip`).
   - `git grep` post-merge: 0 marker reali residui in tutto l'albero (15 falsi

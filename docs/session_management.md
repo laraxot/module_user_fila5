@@ -78,7 +78,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 ## Collegamenti a Documentazione Correlata
 - [Indice del Modulo Utente](./index.md)
 
+<<<<<<< .merge_file_Zr6SoS
 - [Indice del Modulo Utente](./INDEX.md)
+=======
+- [Indice del Modulo Utente](./index.md)
+>>>>>>> .merge_file_WKDFK2
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth_pages_implementation.md)
 - [Gestione del Profilo](./profile_management.md)

@@ -19,7 +19,7 @@
 **Related Documentation**:
 - [User Module Overview](../index.md)
 
-- [User Module Overview](../INDEX.md)
+- [User Module Overview](../index.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)

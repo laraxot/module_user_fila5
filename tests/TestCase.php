@@ -180,12 +180,20 @@ abstract class TestCase extends XotBaseTestCase
     public static ?Collection $users = null;
 
     /**
-     * Come `Tests\TestCase`: anche `mariadb` (default in CI) e `fixcity` (Profile del progetto)
-     * vanno in transazione, altrimenti le righe scritte dai test restano nel DB `_test`.
+     * Come `Tests\TestCase`: anche `mariadb` (default in CI) va in transazione, altrimenti le
+     * righe scritte dai test restano nel DB `_test`.
+     *
+     * Qui NON si elencano connessioni di progetto. `fixcity` era in questo elenco: e' il nome
+     * del modulo-progetto di `base_fixcity_fila5`, da cui questa TestCase e' stata copiata, e in
+     * `base_quaeris_fila5` non esiste nessuna connessione con quel nome. Effetto misurato:
+     * `InvalidArgumentException: Database connection [fixcity] not configured.` in `setUp()`,
+     * cioe' OGNI test del modulo User rosso prima di eseguire una sola asserzione.
+     * Il modulo User e' condiviso fra i progetti: la connessione del Profile la aggiunge il
+     * progetto, non il modulo. `connectionsToTransact()` scarta comunque i nomi non configurati.
      *
      * @var list<string>
      */
-    protected $connectionsToTransact = ['mysql', 'mariadb', 'user', 'fixcity'];
+    protected $connectionsToTransact = ['mysql', 'mariadb', 'user'];
 
     public function setupFilamentAdminPanel(): void
     {
@@ -668,9 +676,20 @@ abstract class TestCase extends XotBaseTestCase
             return $this->connectionsToTransact;
         }
 
+        /** @var array<string, mixed> $configured */
+        $configured = config('database.connections', []);
+
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
+            // Un nome non configurato fa lanciare `DatabaseManager::connection()`, e la
+            // DatabaseTransactions lo invoca dentro `setUp()`: l'intero file di test muore
+            // prima della prima asserzione. Un progetto che non monta un modulo e' uno
+            // scenario legittimo, non un errore: la connessione mancante si salta.
+            if (! \array_key_exists($name, $configured)) {
+                continue;
+            }
+
             $id = spl_object_id($database->connection($name));
             if (isset($seen[$id])) {
                 continue;

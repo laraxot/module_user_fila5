@@ -11,7 +11,11 @@ related:
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_FbcIt3
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_VTXQQp
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente
@@ -171,7 +175,7 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
-- [User Models](models/readme.md)
+- [User Models](models/README.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
 

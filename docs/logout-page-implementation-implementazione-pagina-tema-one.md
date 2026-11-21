@@ -121,4 +121,8 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 ## Collegamenti Correlati
 - [Best Practices Folio](./routing-best-practices.md)
 - [Gestione Sessione](./session-management.md)
+<<<<<<< .merge_file_76sYoD
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md) 
+>>>>>>> .merge_file_a6alGa

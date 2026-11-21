@@ -23,7 +23,11 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_RknqxA
 - [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_zgo6mn
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)

@@ -8,7 +8,11 @@ qmd: "socialite-architecture socialite authentication architecture"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_0bM51u
   - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_wls9Im
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

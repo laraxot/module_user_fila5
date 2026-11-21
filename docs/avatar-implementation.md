@@ -21,8 +21,13 @@ related:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_XkBbgV
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
+=======
+- [README modulo User](./README.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags.md)
+>>>>>>> .merge_file_zXYQ5z
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -141,8 +146,13 @@ Il sistema di avatar può essere esteso in futuro per includere:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_XkBbgV
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
+=======
+- [README modulo User](./README.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags.md)
+>>>>>>> .merge_file_zXYQ5z
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

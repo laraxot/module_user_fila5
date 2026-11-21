@@ -119,7 +119,7 @@ Questo errore è **GRAVISSIMO** perché:
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 - [User Module README](./readme.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
-- [Database Documentation](./database/readme.md)
+- [Database Documentation](./database/README.md)
 
 ## PROSSIMI PASSI
 

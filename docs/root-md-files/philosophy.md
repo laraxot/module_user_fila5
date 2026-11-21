@@ -99,8 +99,13 @@ If you think a rule is wrong:
 
 ## See Also
 
+<<<<<<< .merge_file_A1uLEo
 - `ARCHITECTURE.md` — multi-tenant identity design
 - `TESTING.md` — auth testing strategies
+=======
+- `architecture.md` — multi-tenant identity design
+- `testing.md` — auth testing strategies
+>>>>>>> .merge_file_tx2RoW
 - `docs/oauth2-flows.md` — Passport configuration
 - `docs/spatie-permissions-per-team.md` — role scoping rules
 - `docs/socialite-providers.md` — adding new social login providers

@@ -13,18 +13,32 @@
 - [profile.md](./-integration/profile.md)
 - [repos.md](./-integration/repos.md)
 - [socialite.md](./-integration/socialite.md)
+<<<<<<< .merge_file_aCPbkc
 - [spatie-permissions-1.md](./-integration/spatie-permissions.md)
 - [spatie-permissions-2.md](./-integration/spatie-permissions.md)
+=======
+- [spatie-permissions-1.md](./-integration/spatie-permissions-1.md)
+- [spatie-permissions-2.md](./-integration/spatie-permissions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [spatie-permissions.md](./-integration/spatie-permissions.md)
 - [sso.md](./-integration/sso.md)
 - [stats.md](./-integration/stats.md)
 - [tailwind.md](./-integration/tailwind.md)
+<<<<<<< .merge_file_aCPbkc
 - [terms-and-conditions-1.md](./-integration/terms-and-conditions.md)
 - [terms-and-conditions-2.md](./-integration/terms-and-conditions.md)
 - [terms-and-conditions.md](./-integration/terms-and-conditions.md)
 - [tips.md](./-integration/tips.md)
 - [two-factor-1.md](./-integration/two-factor.md)
 - [two-factor-2.md](./-integration/two-factor.md)
+=======
+- [terms-and-conditions-1.md](./-integration/terms-and-conditions-1.md)
+- [terms-and-conditions-2.md](./-integration/terms-and-conditions-2.md)
+- [terms-and-conditions.md](./-integration/terms-and-conditions.md)
+- [tips.md](./-integration/tips.md)
+- [two-factor-1.md](./-integration/two-factor-1.md)
+- [two-factor-2.md](./-integration/two-factor-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [two-factor.md](./-integration/two-factor.md)
 
 ## -integration/archive
@@ -58,6 +72,7 @@
 ## archive
 
 - [actions-path-convention.md](./archive/actions-path-convention.md)
+<<<<<<< .merge_file_aCPbkc
 - [actions-structure-1.md](./archive/actions-structure.md)
 - [actions-structure.md](./archive/actions-structure.md)
 - [architecture-rules.md](./archive/architecture-rules.md)
@@ -76,6 +91,26 @@
 - [auth-widgets-view-namespaces-1.md](./archive/auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./archive/avatar-implementation.md)
+=======
+- [actions-structure-1.md](./archive/actions-structure-1.md)
+- [actions-structure.md](./archive/actions-structure.md)
+- [architecture-rules.md](./archive/architecture-rules.md)
+- [auth-blade-structure.md](./archive/auth-blade-structure.md)
+- [auth-components-best-practices-1.md](./archive/auth-components-best-practices-1.md)
+- [auth-components-best-practices.md](./archive/auth-components-best-practices.md)
+- [auth-login-implementation-1.md](./archive/auth-login-implementation-1.md)
+- [auth-login-implementation.md](./archive/auth-login-implementation.md)
+- [auth-logout-blade.md](./archive/auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./archive/auth-logout-implementation-1.md)
+- [auth-logout-implementation.md](./archive/auth-logout-implementation.md)
+- [auth-logout.md](./archive/auth-logout.md)
+- [auth-pages-implementation-1.md](./archive/auth-pages-implementation-1.md)
+- [auth-pages-implementation.md](./archive/auth-pages-implementation.md)
+- [auth-widget-rules.md](./archive/auth-widget-rules.md)
+- [auth-widgets-view-namespaces-1.md](./archive/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
+- [avatar-implementation-1.md](./archive/avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation.md](./archive/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
@@ -85,18 +120,30 @@
 - [baseuser-spatie-duplicates-analysis.md](./archive/baseuser-spatie-duplicates-analysis.md)
 - [business-logic-analysis.md](./archive/business-logic-analysis.md)
 - [business-logic-deep-dive.md](./archive/business-logic-deep-dive.md)
+<<<<<<< .merge_file_aCPbkc
 - [cms-link-1.md](./archive/cms-link.md)
+=======
+- [cms-link-1.md](./archive/cms-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [cms-link.md](./archive/cms-link.md)
 - [code-conventions.md](./archive/code-conventions.md)
 - [code-optimization-analysis.md](./archive/code-optimization-analysis.md)
 - [code-quality-analysis.md](./archive/code-quality-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./archive/component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./archive/component-verification-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./archive/component-verification-rules.md)
 - [conflict-resolution-passwordresetwidget.md](./archive/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./archive/conflict-resolution-report.md)
 - [console-commands-philosophy.md](./archive/console-commands-philosophy.md)
 - [cross-database-relations-issue.md](./archive/cross-database-relations-issue.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./archive/custom-login.md)
+=======
+- [custom-login-1.md](./archive/custom-login-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-errors.md](./archive/database-errors.md)
 - [database-issues.md](./archive/database-issues.md)
 - [dentist-moderation-approach.md](./archive/dentist-moderation-approach.md)
@@ -113,6 +160,7 @@
 - [filament-4x-compatibility.md](./archive/filament-4x-compatibility.md)
 - [filament-components-reference.md](./archive/filament-components-reference.md)
 - [filament-errors.md](./archive/filament-errors.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-namespace-rules-1.md](./archive/filament-namespace-rules.md)
 - [filament-namespace-rules.md](./archive/filament-namespace-rules.md)
 - [filament-relation-managers-1.md](./archive/filament-relation-managers.md)
@@ -129,6 +177,24 @@
 - [fullcalendar-scheduler-quick-reference-1.md](./archive/fullcalendar-scheduler-quick-reference.md)
 - [fullcalendar-scheduler-quick-reference.md](./archive/fullcalendar-scheduler-quick-reference.md)
 - [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy.md)
+=======
+- [filament-namespace-rules-1.md](./archive/filament-namespace-rules-1.md)
+- [filament-namespace-rules.md](./archive/filament-namespace-rules.md)
+- [filament-relation-managers-1.md](./archive/filament-relation-managers-1.md)
+- [filament-relation-managers.md](./archive/filament-relation-managers.md)
+- [filament-resources-organization.md](./archive/filament-resources-organization.md)
+- [filament4-migration.md](./archive/filament4-migration.md)
+- [fullcalendar-scheduler-documentation-summary-1.md](./archive/fullcalendar-scheduler-documentation-summary-1.md)
+- [fullcalendar-scheduler-documentation-summary.md](./archive/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-license-1.md](./archive/fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-key-invalid.md](./archive/fullcalendar-scheduler-license-key-invalid.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./archive/fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./archive/fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./archive/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference.md](./archive/fullcalendar-scheduler-quick-reference.md)
+- [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
@@ -137,11 +203,16 @@
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./archive/git-conflicts-resolution-2025-01-27.deprecated.md)
 - [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-3.md)
 - [git-conflicts-resolution.md](./archive/git-conflicts-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [hasteams-currentteam-method-choice.md](./archive/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/header-components.md)
@@ -155,12 +226,28 @@
 - [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
 - [lang-link-1.md](./archive/lang-link.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+- [header-components.md](./archive/header-components.md)
+- [header-language-avatar-implementation-1.md](./archive/header-language-avatar-implementation-1.md)
+- [header-language-avatar-implementation.md](./archive/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1.md](./archive/header-language-selector-with-flags-1.md)
+- [header-language-selector-with-flags.md](./archive/header-language-selector-with-flags.md)
+- [implementation-plan.md](./archive/implementation-plan.md)
+- [index.md](./archive/index.md)
+- [jetstream-vs-laraxot-philosophy-1.md](./archive/jetstream-vs-laraxot-philosophy-1.md)
+- [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
+- [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
+- [lang-link-1.md](./archive/lang-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [lang-link.md](./archive/lang-link.md)
 - [livewire-namespace.md](./archive/livewire-namespace.md)
 - [login-filament-widget-error.md](./archive/login-filament-widget-error.md)
 - [login-widget-analysis.md](./archive/login-widget-analysis.md)
 - [login-widget-conversion.md](./archive/login-widget-conversion.md)
 - [logout-analysis.md](./archive/logout-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-analysis-1.md](./archive/logout-blade-analysis.md)
 - [logout-blade-analysis.md](./archive/logout-blade-analysis.md)
 - [logout-blade-conclusions-1.md](./archive/logout-blade-conclusions.md)
@@ -188,6 +275,35 @@
 - [logout-implementation-with-laravel-localization.md](./archive/logout-implementation-with-laravel-localization.md)
 - [logout-page-fix.md](./archive/logout-page-fix.md)
 - [logout-page-implementation-1.md](./archive/logout-page-implementation.md)
+=======
+- [logout-blade-analysis-1.md](./archive/logout-blade-analysis-1.md)
+- [logout-blade-analysis.md](./archive/logout-blade-analysis.md)
+- [logout-blade-conclusions-1.md](./archive/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions.md](./archive/logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./archive/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis.md](./archive/logout-blade-corrected-analysis.md)
+- [logout-blade-error-analysis-1.md](./archive/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis.md](./archive/logout-blade-error-analysis.md)
+- [logout-blade-implementation-1.md](./archive/logout-blade-implementation-1.md)
+- [logout-blade-implementation.md](./archive/logout-blade-implementation.md)
+- [logout-blade-structure.md](./archive/logout-blade-structure.md)
+- [logout-error-analysis-1.md](./archive/logout-error-analysis-1.md)
+- [logout-error-analysis.md](./archive/logout-error-analysis.md)
+- [logout-event-error-1.md](./archive/logout-event-error-1.md)
+- [logout-event-error.md](./archive/logout-event-error.md)
+- [logout-filament-widget-1.md](./archive/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./archive/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected.md](./archive/logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./archive/logout-filament-widget.md)
+- [logout-implementation-best-practices-1.md](./archive/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices.md](./archive/logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./archive/logout-implementation-error-1.md)
+- [logout-implementation-error.md](./archive/logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./archive/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization.md](./archive/logout-implementation-with-laravel-localization.md)
+- [logout-page-fix.md](./archive/logout-page-fix.md)
+- [logout-page-implementation-1.md](./archive/logout-page-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation.md](./archive/logout-page-implementation.md)
 - [logout-security.md](./archive/logout-security.md)
 - [mcp-integration.md](./archive/mcp-integration.md)
@@ -195,8 +311,13 @@
 - [metodi-duplicati-analisi.md](./archive/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./archive/metrics-dashboard.md)
 - [migration-duplicate-resolution.md](./archive/migration-duplicate-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [migration-filament-4.md](./archive/migration-filament.md)
 - [migrazione-filament-4.md](./archive/migrazione-filament.md)
+=======
+- [migration-filament-4.md](./archive/migration-filament-4.md)
+- [migrazione-filament-4.md](./archive/migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [model-inheritance-analysis.md](./archive/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./archive/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./archive/modelli-factory-seeder-analisi.md)
@@ -205,13 +326,22 @@
 - [module-analysis-1.md](./archive/module-analysis-1.md)
 - [module-analysis.md](./archive/module-analysis.md)
 - [module-structure.md](./archive/module-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-user-1.md](./archive/module-user.md)
 - [namespace-conventions-1.md](./archive/namespace-conventions.md)
+=======
+- [module-user-1.md](./archive/module-user-1.md)
+- [namespace-conventions-1.md](./archive/namespace-conventions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [namespace-conventions.md](./archive/namespace-conventions.md)
 - [navigation-structure.md](./archive/navigation-structure.md)
 - [optimization-analysis.md](./archive/optimization-analysis.md)
 - [optimization-recommendations.md](./archive/optimization-recommendations.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./archive/parental-inheritance.md)
+=======
+- [parental-inheritance-1.md](./archive/parental-inheritance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [password-translation-completion-2025.md](./archive/password-translation-completion-2025.md)
 - [password-translation-completion.md](./archive/password-translation-completion.md)
 - [path-conventions.md](./archive/path-conventions.md)
@@ -220,7 +350,11 @@
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./archive/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
 - [phpstan-dry-kiss-improvements.md](./archive/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-.md](./archive/phpstan-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./archive/phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fixes-1.md](./archive/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./archive/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/phpstan-fixes-2025.md)
@@ -230,6 +364,7 @@
 - [phpstan-relationship-fix.md](./archive/phpstan-relationship-fix.md)
 - [phpstan-roadmap.md](./archive/phpstan-roadmap.md)
 - [profile-management.md](./archive/profile-management.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-status-11.md](./archive/quality-status.md)
 - [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
 - [query-optimization-analysis.md](./archive/query-optimization-analysis.md)
@@ -241,6 +376,19 @@
 - [registration-widget-update.md](./archive/registration-widget-update.md)
 - [registration-widget.md](./archive/registration-widget.md)
 - [roles-permissions-1.md](./archive/roles-permissions.md)
+=======
+- [quality-status-11.md](./archive/quality-status-11.md)
+- [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
+- [query-optimization-analysis.md](./archive/query-optimization-analysis.md)
+- [readme-fullcalendar-scheduler-1.md](./archive/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler.md](./archive/readme-fullcalendar-scheduler.md)
+- [registration-widget-1.md](./archive/registration-widget-1.md)
+- [registration-widget-fileupload-fix-1.md](./archive/registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix.md](./archive/registration-widget-fileupload-fix.md)
+- [registration-widget-update.md](./archive/registration-widget-update.md)
+- [registration-widget.md](./archive/registration-widget.md)
+- [roles-permissions-1.md](./archive/roles-permissions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./archive/roles-permissions.md)
 - [routing-best-practices.md](./archive/routing-best-practices.md)
 - [routing-error-solution.md](./archive/routing-error-solution.md)
@@ -249,14 +397,24 @@
 - [session-management.md](./archive/session-management.md)
 - [spatie-permissions-methods.md](./archive/spatie-permissions-methods.md)
 - [sso-providers-implementation.md](./archive/sso-providers-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./archive/team-bindings-fix.md)
+=======
+- [team-bindings-fix-1.md](./archive/team-bindings-fix-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-bindings-fix.md](./archive/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./archive/team-contract-usage-reasoning.md)
 - [testing-rules.md](./archive/testing-rules.md)
 - [theme-translation-conflicts-resolution.md](./archive/theme-translation-conflicts-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./archive/traits-complete-guide.md)
 - [traits-complete-guide.md](./archive/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta.md)
+=======
+- [traits-complete-guide-1.md](./archive/traits-complete-guide-1.md)
+- [traits-complete-guide.md](./archive/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta.md](./archive/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./archive/translation-best-practices.md)
 - [translation-city-field-refactor-.md](./archive/translation-city-field-refactor-.md)
@@ -264,6 +422,7 @@
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
 - [translation-keys-rules.md](./archive/translation-keys-rules.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-12.md](./archive/updates.md)
 - [user-factory-advanced-integration-1.md](./archive/user-factory-advanced-integration.md)
 - [user-factory-advanced-integration.md](./archive/user-factory-advanced-integration.md)
@@ -286,13 +445,41 @@
 - [volt-folio-logout-1.md](./archive/volt-folio-logout.md)
 - [volt-folio-logout-debug.md](./archive/volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./archive/volt-folio-logout-error.md)
+=======
+- [updates-12.md](./archive/updates-12.md)
+- [user-factory-advanced-integration-1.md](./archive/user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration.md](./archive/user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1.md](./archive/user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration.md](./archive/user-factory-complete-ecosystem-integration.md)
+- [user-factory-integration-1.md](./archive/user-factory-integration-1.md)
+- [user-factory-integration.md](./archive/user-factory-integration.md)
+- [user-invitation.md](./archive/user-invitation.md)
+- [user-moderation-strategy-1.md](./archive/user-moderation-strategy-1.md)
+- [user-moderation-strategy.md](./archive/user-moderation-strategy.md)
+- [userfactory-advanced-implementation-complete.md](./archive/userfactory-advanced-implementation-complete.md)
+- [volt-blade-implementation-1.md](./archive/volt-blade-implementation-1.md)
+- [volt-blade-implementation-error-1.md](./archive/volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error.md](./archive/volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./archive/volt-blade-implementation.md)
+- [volt-errors.md](./archive/volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./archive/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation.md](./archive/volt-folio-auth-implementation.md)
+- [volt-folio-error.md](./archive/volt-folio-error.md)
+- [volt-folio-logout-1.md](./archive/volt-folio-logout-1.md)
+- [volt-folio-logout-debug.md](./archive/volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./archive/volt-folio-logout-error-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error.md](./archive/volt-folio-logout-error.md)
 - [volt-folio-logout.md](./archive/volt-folio-logout.md)
 - [volt-logout-action.md](./archive/volt-logout-action.md)
 - [volt-logout.md](./archive/volt-logout.md)
 - [volt-missing-directive.md](./archive/volt-missing-directive.md)
 - [widget-rendering-analysis.md](./archive/widget-rendering-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [widget-translation-rules-1.md](./archive/widget-translation-rules.md)
+=======
+- [widget-translation-rules-1.md](./archive/widget-translation-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [widget-translation-rules.md](./archive/widget-translation-rules.md)
 - [widgets-structure.md](./archive/widgets-structure.md)
 
@@ -306,6 +493,7 @@
 - [analysis.md](./archive/historical/analysis.md)
 - [architecture-rules.md](./archive/historical/architecture-rules.md)
 - [auth-blade-structure.md](./archive/historical/auth-blade-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-componenti-autenticazione.md)
 - [auth-components-best-practices.md](./archive/historical/auth-components-best-practices.md)
 - [auth-login-implementation-1.md](./archive/historical/auth-login-implementation-implementazione-corretta-pagina.md)
@@ -321,6 +509,23 @@
 - [auth-widgets-view-namespaces.md](./archive/historical/auth-widgets-view-namespaces.md)
 - [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
 - [avatar-implementation-1.md](./archive/historical/avatar-implementation-implementazione.md)
+=======
+- [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-1.md)
+- [auth-components-best-practices.md](./archive/historical/auth-components-best-practices.md)
+- [auth-login-implementation-1.md](./archive/historical/auth-login-implementation-1.md)
+- [auth-login-implementation.md](./archive/historical/auth-login-implementation.md)
+- [auth-logout-blade.md](./archive/historical/auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./archive/historical/auth-logout-implementation-1.md)
+- [auth-logout-implementation.md](./archive/historical/auth-logout-implementation.md)
+- [auth-logout.md](./archive/historical/auth-logout.md)
+- [auth-pages-implementation-1.md](./archive/historical/auth-pages-implementation-1.md)
+- [auth-pages-implementation.md](./archive/historical/auth-pages-implementation.md)
+- [auth-widget-rules.md](./archive/historical/auth-widget-rules.md)
+- [auth-widgets-view-namespaces-1.md](./archive/historical/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces.md](./archive/historical/auth-widgets-view-namespaces.md)
+- [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
+- [avatar-implementation-1.md](./archive/historical/avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation.md](./archive/historical/avatar-implementation.md)
 - [baseuser-conflicts.md](./archive/historical/baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./archive/historical/baseuser-dry-violation-analysis.md)
@@ -332,12 +537,20 @@
 - [case-sensitivity-rules.md](./archive/historical/case-sensitivity-rules.md)
 - [chartjs-datalabels-user-integration.md](./archive/historical/chartjs-datalabels-user-integration.md)
 - [charts-implementation.md](./archive/historical/charts-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [cms-link-1.md](./archive/historical/cms-link-collegamento-al-modulo.md)
+=======
+- [cms-link-1.md](./archive/historical/cms-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [cms-link.md](./archive/historical/cms-link.md)
 - [code-optimization-analysis.md](./archive/historical/code-optimization-analysis.md)
 - [code-quality-analysis.md](./archive/historical/code-quality-analysis.md)
 - [code-quality-tools.md](./archive/historical/code-quality-tools.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./archive/historical/component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./archive/historical/component-verification-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./archive/historical/component-verification-rules.md)
 - [conflict-resolution-passwordresetwidget.md](./archive/historical/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./archive/historical/conflict-resolution-report.md)
@@ -347,11 +560,19 @@
 - [coverage.md](./archive/historical/coverage.md)
 - [critical-filament-rule-getinfolistschema-string-keys.md](./archive/historical/critical-filament-rule-getinfolistschema-string-keys.md)
 - [cross-database-relations-issue.md](./archive/historical/cross-database-relations-issue.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./archive/historical/custom-login-implementazione-personalizzato.md)
 - [custom-login.md](./archive/historical/custom-login.md)
 - [cyclomatic-complexity-report.md](./archive/historical/cyclomatic-complexity-report.md)
 - [database-errors.md](./archive/historical/database-errors.md)
 - [database-issues-1.md](./archive/historical/database-issues-user-module.md)
+=======
+- [custom-login-1.md](./archive/historical/custom-login-1.md)
+- [custom-login.md](./archive/historical/custom-login.md)
+- [cyclomatic-complexity-report.md](./archive/historical/cyclomatic-complexity-report.md)
+- [database-errors.md](./archive/historical/database-errors.md)
+- [database-issues-1.md](./archive/historical/database-issues-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-issues.md](./archive/historical/database-issues.md)
 - [database-population.md](./archive/historical/database-population.md)
 - [dentist-moderation-approach.md](./archive/historical/dentist-moderation-approach.md)
@@ -361,7 +582,11 @@
 - [doctor-registration-widget.md](./archive/historical/doctor-registration-widget.md)
 - [doctor-registration.md](./archive/historical/doctor-registration.md)
 - [documentation-standards.md](./archive/historical/documentation-standards.md)
+<<<<<<< .merge_file_aCPbkc
 - [dry-kiss-analysis-1.md](./archive/historical/dry-kiss-analysis-modulo-user.md)
+=======
+- [dry-kiss-analysis-1.md](./archive/historical/dry-kiss-analysis-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [dry-kiss-analysis-conflict-018b09.md](./archive/historical/dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./archive/historical/dry-kiss-analysis-conflict.md)
 - [dry-kiss-analysis.md](./archive/historical/dry-kiss-analysis.md)
@@ -379,7 +604,11 @@
 - [features.md](./archive/historical/features.md)
 - [filament-4-actions-namespace.md](./archive/historical/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./archive/historical/filament-4-widget-rendering-guide.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-4x-compatibility-1.md](./archive/historical/filament-4x-compatibility-compatibilita-modulo-user.md)
+=======
+- [filament-4x-compatibility-1.md](./archive/historical/filament-4x-compatibility-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-4x-compatibility-conflict.md](./archive/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./archive/historical/filament-4x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./archive/historical/filament-auth-pages-exceptions.md)
@@ -388,10 +617,17 @@
 - [filament-components-reference.md](./archive/historical/filament-components-reference.md)
 - [filament-errors.md](./archive/historical/filament-errors.md)
 - [filament-filters-and-widgets.md](./archive/historical/filament-filters-and-widgets.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-namespace-rules-1.md](./archive/historical/filament-namespace-rules.md)
 - [filament-namespace-rules.md](./archive/historical/filament-namespace-rules.md)
 - [filament-nesting-opportunities.md](./archive/historical/filament-nesting-opportunities.md)
 - [filament-relation-managers-1.md](./archive/historical/filament-relation-managers-modulo-user.md)
+=======
+- [filament-namespace-rules-1.md](./archive/historical/filament-namespace-rules-1.md)
+- [filament-namespace-rules.md](./archive/historical/filament-namespace-rules.md)
+- [filament-nesting-opportunities.md](./archive/historical/filament-nesting-opportunities.md)
+- [filament-relation-managers-1.md](./archive/historical/filament-relation-managers-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-relation-managers.md](./archive/historical/filament-relation-managers.md)
 - [filament-resources-coverage-analysis.md](./archive/historical/filament-resources-coverage-analysis.md)
 - [filament-resources-organization.md](./archive/historical/filament-resources-organization.md)
@@ -403,6 +639,7 @@
 - [final-summary.md](./archive/historical/final-summary.md)
 - [fixes-user-module-phpstan.md](./archive/historical/fixes-user-module-phpstan.md)
 - [folio-volt-best-practices.md](./archive/historical/folio-volt-best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-documentation-summary-1.md](./archive/historical/fullcalendar-scheduler-documentation-summary-documentazione-completa.md)
 - [fullcalendar-scheduler-documentation-summary.md](./archive/historical/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./archive/historical/fullcalendar-scheduler-license.md)
@@ -413,6 +650,18 @@
 - [fullcalendar-scheduler-quick-reference.md](./archive/historical/fullcalendar-scheduler-quick-reference.md)
 - [gdpr.md](./archive/historical/gdpr.md)
 - [generic-user-moderation-strategy-1.md](./archive/historical/generic-user-moderation-strategy.md)
+=======
+- [fullcalendar-scheduler-documentation-summary-1.md](./archive/historical/fullcalendar-scheduler-documentation-summary-1.md)
+- [fullcalendar-scheduler-documentation-summary.md](./archive/historical/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-license-1.md](./archive/historical/fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./archive/historical/fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./archive/historical/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference.md](./archive/historical/fullcalendar-scheduler-quick-reference.md)
+- [gdpr.md](./archive/historical/gdpr.md)
+- [generic-user-moderation-strategy-1.md](./archive/historical/generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy.md](./archive/historical/generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./archive/historical/get-new-password-action-business-logic.md)
 - [git-conflict-resolution.md](./archive/historical/git-conflict-resolution.md)
@@ -421,6 +670,7 @@
 - [git-conflicts-resolution-summary.md](./archive/historical/git-conflicts-resolution-summary.md)
 - [git-conflicts-resolution.md](./archive/historical/git-conflicts-resolution.md)
 - [guida-migrazione-step-by-step.md](./archive/historical/guida-migrazione-step-by-step.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
@@ -431,18 +681,38 @@
 - [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-implementazione-selettore-lingua-utente.md)
 - [header-language-avatar-implementation.md](./archive/historical/header-language-avatar-implementation.md)
 - [header-language-selector-with-flags-1.md](./archive/historical/header-language-selector-with-flags-implementazione-selettore-lingua-bandiere.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./archive/historical/hasteams-currentteam-method-choice-1.md)
+- [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
+- [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
+- [hasteams-trait-duplicate-methods.md](./archive/historical/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa.md)
+- [header-components.md](./archive/historical/header-components.md)
+- [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-1.md)
+- [header-language-avatar-implementation.md](./archive/historical/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1.md](./archive/historical/header-language-selector-with-flags-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [header-language-selector-with-flags.md](./archive/historical/header-language-selector-with-flags.md)
 - [implementation-plan.md](./archive/historical/implementation-plan.md)
 - [implementation-summary.md](./archive/historical/implementation-summary.md)
 - [index-conflict.md](./archive/historical/index-conflict.md)
 - [index.md](./archive/historical/index.md)
 - [intelligent-login-redirect.md](./archive/historical/intelligent-login-redirect.md)
+<<<<<<< .merge_file_aCPbkc
 - [jetstream-vs-laraxot-philosophy-1.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1.md](./archive/historical/jetstream-vs-laraxot-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [jetstream-vs-laraxot-philosophy.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
 - [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
 - [js-conflicts.md](./archive/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./archive/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_aCPbkc
 - [lang-link-1.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+=======
+- [lang-link-1.md](./archive/historical/lang-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [lang-link.md](./archive/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./archive/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./archive/historical/laraxot-migration-policy.md)
@@ -455,7 +725,11 @@
 - [login-filament-widget-error.md](./archive/historical/login-filament-widget-error.md)
 - [login-issue-resolution-report.md](./archive/historical/login-issue-resolution-report.md)
 - [login-widget-analysis.md](./archive/historical/login-widget-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-conversione-livewire-auth-filament.md)
+=======
+- [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-conversion.md](./archive/historical/login-widget-conversion.md)
 - [login-widget-filament-schema-errors-roadmap.md](./archive/historical/login-widget-filament-schema-errors-roadmap.md)
 - [login-widget-livewire-binding-fix.md](./archive/historical/login-widget-livewire-binding-fix.md)
@@ -464,6 +738,7 @@
 - [login-widget-translation-audit.md](./archive/historical/login-widget-translation-audit.md)
 - [loginwidget-error-analysis.md](./archive/historical/loginwidget-error-analysis.md)
 - [logout-analysis.md](./archive/historical/logout-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-analisi-file-php.md)
 - [logout-blade-analysis.md](./archive/historical/logout-blade-analysis.md)
 - [logout-blade-conclusions-1.md](./archive/historical/logout-blade-conclusions-conclusioni-raccomandazioni-php.md)
@@ -491,6 +766,35 @@
 - [logout-implementation-with-laravel-localization.md](./archive/historical/logout-implementation-with-laravel-localization.md)
 - [logout-page-fix.md](./archive/historical/logout-page-fix.md)
 - [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-implementazione-pagina-tema-one.md)
+=======
+- [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-1.md)
+- [logout-blade-analysis.md](./archive/historical/logout-blade-analysis.md)
+- [logout-blade-conclusions-1.md](./archive/historical/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions.md](./archive/historical/logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./archive/historical/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis.md](./archive/historical/logout-blade-corrected-analysis.md)
+- [logout-blade-error-analysis-1.md](./archive/historical/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis.md](./archive/historical/logout-blade-error-analysis.md)
+- [logout-blade-implementation-1.md](./archive/historical/logout-blade-implementation-1.md)
+- [logout-blade-implementation.md](./archive/historical/logout-blade-implementation.md)
+- [logout-blade-structure.md](./archive/historical/logout-blade-structure.md)
+- [logout-error-analysis-1.md](./archive/historical/logout-error-analysis-1.md)
+- [logout-error-analysis.md](./archive/historical/logout-error-analysis.md)
+- [logout-event-error-1.md](./archive/historical/logout-event-error-1.md)
+- [logout-event-error.md](./archive/historical/logout-event-error.md)
+- [logout-filament-widget-1.md](./archive/historical/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./archive/historical/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected.md](./archive/historical/logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./archive/historical/logout-filament-widget.md)
+- [logout-implementation-best-practices-1.md](./archive/historical/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices.md](./archive/historical/logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./archive/historical/logout-implementation-error-1.md)
+- [logout-implementation-error.md](./archive/historical/logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./archive/historical/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization.md](./archive/historical/logout-implementation-with-laravel-localization.md)
+- [logout-page-fix.md](./archive/historical/logout-page-fix.md)
+- [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation.md](./archive/historical/logout-page-implementation.md)
 - [logout-security.md](./archive/historical/logout-security.md)
 - [mcp-database-tools.md](./archive/historical/mcp-database-tools.md)
@@ -517,7 +821,11 @@
 - [migration-unicity-rule.md](./archive/historical/migration-unicity-rule.md)
 - [migration-violations-analysis.md](./archive/historical/migration-violations-analysis.md)
 - [migration-violations-current-status.md](./archive/historical/migration-violations-current-status.md)
+<<<<<<< .merge_file_aCPbkc
 - [migrazione-filament-4.md](./archive/historical/migrazione-filament.md)
+=======
+- [migrazione-filament-4.md](./archive/historical/migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [missing-factories-audit.md](./archive/historical/missing-factories-audit.md)
 - [missing-features-analysis.md](./archive/historical/missing-features-analysis.md)
 - [missing-filament-resources-analysis.md](./archive/historical/missing-filament-resources-analysis.md)
@@ -531,6 +839,7 @@
 - [module-analysis-complete.md](./archive/historical/module-analysis-complete.md)
 - [module-analysis.md](./archive/historical/module-analysis.md)
 - [module-structure.md](./archive/historical/module-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-user-1.md](./archive/historical/module-user-modulo.md)
 - [module-user.md](./archive/historical/module-user.md)
 - [namespace-conventions-1.md](./archive/historical/namespace-conventions-convenzioni-modulo-user.md)
@@ -538,6 +847,15 @@
 - [navigation-structure.md](./archive/historical/navigation-structure.md)
 - [navigation-translations-completion-roadmap.md](./archive/historical/navigation-translations-completion-roadmap.md)
 - [navigation-translations-fixes-january-2026.md](./archive/historical/navigation-translations-fixes.md)
+=======
+- [module-user-1.md](./archive/historical/module-user-1.md)
+- [module-user.md](./archive/historical/module-user.md)
+- [namespace-conventions-1.md](./archive/historical/namespace-conventions-1.md)
+- [namespace-conventions.md](./archive/historical/namespace-conventions.md)
+- [navigation-structure.md](./archive/historical/navigation-structure.md)
+- [navigation-translations-completion-roadmap.md](./archive/historical/navigation-translations-completion-roadmap.md)
+- [navigation-translations-fixes-january-2026.md](./archive/historical/navigation-translations-fixes-january-2026.md)
+>>>>>>> .merge_file_5nGk0n
 - [navigation-translations-fixes-january.md](./archive/historical/navigation-translations-fixes-january.md)
 - [navigation-translations-fixes.md](./archive/historical/navigation-translations-fixes.md)
 - [nested-resources.md](./archive/historical/nested-resources.md)
@@ -556,7 +874,11 @@
 - [ottimizzazioni-super-dry-kiss.md](./archive/historical/ottimizzazioni-super-dry-kiss.md)
 - [ottimizzazioni-user.md](./archive/historical/ottimizzazioni-user.md)
 - [packages.md](./archive/historical/packages.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./archive/historical/parental-inheritance-ereditarieta-tabella-singola-nome.md)
+=======
+- [parental-inheritance-1.md](./archive/historical/parental-inheritance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [parental-inheritance.md](./archive/historical/parental-inheritance.md)
 - [parental.md](./archive/historical/parental.md)
 - [passport-admin-actions.md](./archive/historical/passport-admin-actions.md)
@@ -604,7 +926,11 @@
 - [phpstan-final-progress.md](./archive/historical/phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./archive/historical/phpstan-fix-plan-.md)
 - [phpstan-fix-roadmap.md](./archive/historical/phpstan-fix-roadmap.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-2.md](./archive/historical/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./archive/historical/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/historical/phpstan-fixes-2025.md)
@@ -613,8 +939,13 @@
 - [phpstan-fixes-conflict-276dc0.md](./archive/historical/phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./archive/historical/phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./archive/historical/phpstan-fixes-conflict.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-1.md](./archive/historical/phpstan-fixes-gennaio-modulo-user.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./archive/historical/phpstan-fixes-complete.md)
+=======
+- [phpstan-fixes-gennaio-1.md](./archive/historical/phpstan-fixes-gennaio-1.md)
+- [phpstan-fixes-gennaio-2025-complete.md](./archive/historical/phpstan-fixes-gennaio-2025-complete.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-2025.md](./archive/historical/phpstan-fixes-gennaio-2025.md)
 - [phpstan-fixes-gennaio-complete.md](./archive/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/historical/phpstan-fixes-gennaio.md)
@@ -642,13 +973,18 @@
 - [policies.md](./archive/historical/policies.md)
 - [policy-phpstan-errors.md](./archive/historical/policy-phpstan-errors.md)
 - [quality-improvements-summary.md](./archive/historical/quality-improvements-summary.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-status-11.md](./archive/historical/quality-status-user-module-november.md)
+=======
+- [quality-status-11.md](./archive/historical/quality-status-11.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-status.md](./archive/historical/quality-status.md)
 - [quality-tooling.md](./archive/historical/quality-tooling.md)
 - [quality-tools-final-report-.md](./archive/historical/quality-tools-final-report-.md)
 - [quality-tools-report.md](./archive/historical/quality-tools-report.md)
 - [quality-tools.md](./archive/historical/quality-tools.md)
 - [query-optimization-analysis.md](./archive/historical/query-optimization-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-documentation.md)
 - [readme-fullcalendar-scheduler.md](./archive/historical/readme-fullcalendar-scheduler.md)
 - [readme-new.md](./archive/historical/readme-new.md)
@@ -659,6 +995,18 @@
 - [registration-widget-fileupload-fix-1.md](./archive/historical/registration-widget-fileupload-fix-registrationwidget.md)
 - [registration-widget-fileupload-fix.md](./archive/historical/registration-widget-fileupload-fix.md)
 - [registration-widget-update-1.md](./archive/historical/registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
+=======
+- [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler.md](./archive/historical/readme-fullcalendar-scheduler.md)
+- [readme-new.md](./archive/historical/readme-new.md)
+- [redundancy-fixes-january-2026.md](./archive/historical/redundancy-fixes-january-2026.md)
+- [redundancy-fixes-january.md](./archive/historical/redundancy-fixes-january.md)
+- [redundancy-fixes.md](./archive/historical/redundancy-fixes.md)
+- [registration-widget-1.md](./archive/historical/registration-widget-1.md)
+- [registration-widget-fileupload-fix-1.md](./archive/historical/registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix.md](./archive/historical/registration-widget-fileupload-fix.md)
+- [registration-widget-update-1.md](./archive/historical/registration-widget-update-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [registration-widget-update.md](./archive/historical/registration-widget-update.md)
 - [registration-widget.md](./archive/historical/registration-widget.md)
 - [repositories.md](./archive/historical/repositories.md)
@@ -666,13 +1014,21 @@
 - [resource-translation-violation-critical-fix.md](./archive/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./archive/historical/resources-array-keys-philosophy.md)
 - [resources-corrections-summary-.md](./archive/historical/resources-corrections-summary-.md)
+<<<<<<< .merge_file_aCPbkc
 - [roadmap-1.md](./archive/historical/roadmap.md)
+=======
+- [roadmap-1.md](./archive/historical/roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roadmap-2025.md](./archive/historical/roadmap-2025.md)
 - [roadmap-and-issues.md](./archive/historical/roadmap-and-issues.md)
 - [roadmap-complete.md](./archive/historical/roadmap-complete.md)
 - [roadmap-conflict.md](./archive/historical/roadmap-conflict.md)
 - [roles-migration-philosophy-fix.md](./archive/historical/roles-migration-philosophy-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [roles-permissions-1.md](./archive/historical/roles-permissions-gestione-coerente-guard-name.md)
+=======
+- [roles-permissions-1.md](./archive/historical/roles-permissions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./archive/historical/roles-permissions.md)
 - [routing-best-practices.md](./archive/historical/routing-best-practices.md)
 - [routing-error-solution.md](./archive/historical/routing-error-solution.md)
@@ -690,7 +1046,11 @@
 - [structure.md](./archive/historical/structure.md)
 - [sushi-schema-fix.md](./archive/historical/sushi-schema-fix.md)
 - [syntax-errors-to-fix.md](./archive/historical/syntax-errors-to-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./archive/historical/team-bindings-fix-binding-models-modulo-user.md)
+=======
+- [team-bindings-fix-1.md](./archive/historical/team-bindings-fix-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-bindings-fix.md](./archive/historical/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./archive/historical/team-contract-usage-reasoning.md)
 - [team-user-composite-primary-key-fix.md](./archive/historical/team-user-composite-primary-key-fix.md)
@@ -704,9 +1064,15 @@
 - [theme-translation-conflicts-resolution.md](./archive/historical/theme-translation-conflicts-resolution.md)
 - [third-party-model-patterns.md](./archive/historical/third-party-model-patterns.md)
 - [todo.md](./archive/historical/todo.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./archive/historical/traits-complete-guide-guida-completa-ai-trait.md)
 - [traits-complete-guide.md](./archive/historical/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./archive/historical/traits-hasteams-analisi-corretta-trait-filosofia-laraxot.md)
+=======
+- [traits-complete-guide-1.md](./archive/historical/traits-complete-guide-1.md)
+- [traits-complete-guide.md](./archive/historical/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./archive/historical/traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta.md](./archive/historical/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analysis-corrected.md](./archive/historical/traits-hasteams-analysis-corrected.md)
 - [traits-hasteams-analysis-corretta.md](./archive/historical/traits-hasteams-analysis-corretta.md)
@@ -726,6 +1092,7 @@
 - [translations.md](./archive/historical/translations.md)
 - [troubleshooting-login-component.md](./archive/historical/troubleshooting-login-component.md)
 - [type-safety-improvements.md](./archive/historical/type-safety-improvements.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-12.md](./archive/historical/updates.md)
 - [updates.md](./archive/historical/updates.md)
 - [user-factory-advanced-integration-1.md](./archive/historical/user-factory-advanced-integration-userfactory-modulo-nome-progetto.md)
@@ -736,12 +1103,25 @@
 - [user-factory-integration.md](./archive/historical/user-factory-integration.md)
 - [user-management.md](./archive/historical/user-management.md)
 - [user-moderation-strategy-1.md](./archive/historical/user-moderation-strategy.md)
+=======
+- [updates-12.md](./archive/historical/updates-12.md)
+- [updates.md](./archive/historical/updates.md)
+- [user-factory-advanced-integration-1.md](./archive/historical/user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration.md](./archive/historical/user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1.md](./archive/historical/user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration.md](./archive/historical/user-factory-complete-ecosystem-integration.md)
+- [user-factory-integration-1.md](./archive/historical/user-factory-integration-1.md)
+- [user-factory-integration.md](./archive/historical/user-factory-integration.md)
+- [user-management.md](./archive/historical/user-management.md)
+- [user-moderation-strategy-1.md](./archive/historical/user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-profile-models.md](./archive/historical/user-profile-models.md)
 - [user-profile-separation.md](./archive/historical/user-profile-separation.md)
 - [userfactory-advanced-implementation-complete.md](./archive/historical/userfactory-advanced-implementation-complete.md)
 - [uuid-trait-conflict-resolution.md](./archive/historical/uuid-trait-conflict-resolution.md)
 - [vendor-extension-pattern.md](./archive/historical/vendor-extension-pattern.md)
 - [viewclient-infolist-implementation-philosophy.md](./archive/historical/viewclient-infolist-implementation-philosophy.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-blade-implementation-1.md](./archive/historical/volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-error-1.md](./archive/historical/volt-blade-implementation-error-analisi-dell-errore-implementazione.md)
 - [volt-blade-implementation-error.md](./archive/historical/volt-blade-implementation-error.md)
@@ -753,13 +1133,30 @@
 - [volt-folio-logout-1.md](./archive/historical/volt-folio-logout-implementazione-corretta.md)
 - [volt-folio-logout-debug.md](./archive/historical/volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./archive/historical/volt-folio-logout-error-errore.md)
+=======
+- [volt-blade-implementation-1.md](./archive/historical/volt-blade-implementation-1.md)
+- [volt-blade-implementation-error-1.md](./archive/historical/volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error.md](./archive/historical/volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./archive/historical/volt-blade-implementation.md)
+- [volt-errors.md](./archive/historical/volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./archive/historical/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation.md](./archive/historical/volt-folio-auth-implementation.md)
+- [volt-folio-error.md](./archive/historical/volt-folio-error.md)
+- [volt-folio-logout-1.md](./archive/historical/volt-folio-logout-1.md)
+- [volt-folio-logout-debug.md](./archive/historical/volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./archive/historical/volt-folio-logout-error-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error.md](./archive/historical/volt-folio-logout-error.md)
 - [volt-folio-logout.md](./archive/historical/volt-folio-logout.md)
 - [volt-logout-action.md](./archive/historical/volt-logout-action.md)
 - [volt-logout.md](./archive/historical/volt-logout.md)
 - [volt-missing-directive.md](./archive/historical/volt-missing-directive.md)
 - [widget-rendering-analysis.md](./archive/historical/widget-rendering-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [widget-translation-rules-1.md](./archive/historical/widget-translation-rules-nome-progetto-project.md)
+=======
+- [widget-translation-rules-1.md](./archive/historical/widget-translation-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [widget-translation-rules.md](./archive/historical/widget-translation-rules.md)
 - [widgets-structure.md](./archive/historical/widgets-structure.md)
 - [xotbase-resource-getpages-automatic.md](./archive/historical/xotbase-resource-getpages-automatic.md)
@@ -777,7 +1174,11 @@
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-2025.md](./archive/old_tasks/phpstan-fixes-2025.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -838,8 +1239,13 @@
 
 - [make-filament-user-crash-loop.md](./bug-fixes/make-filament-user-crash-loop.md)
 - [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-.md)
+<<<<<<< .merge_file_aCPbkc
 - [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods.md)
+=======
+- [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods-1-1.md)
+- [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [parse-error-orphan-methods-2.md](./bug-fixes/parse-error-orphan-methods-2.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-3.md](./bug-fixes/parse-error-orphan-methods-3.md)
@@ -908,7 +1314,11 @@
 - [assign-module-command.md](./console_commands/assign-module-command.md)
 - [change-password-command.md](./console_commands/change-password-command.md)
 - [console-commands-philosophy-1-1.md](./console_commands/console-commands-philosophy-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [console-commands-philosophy-1.md](./console_commands/console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-1.md](./console_commands/console-commands-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [console-commands-philosophy-2.md](./console_commands/console-commands-philosophy-2.md)
 - [console-commands-philosophy.md](./console_commands/console-commands-philosophy.md)
 - [console-commands.md](./console_commands/console-commands.md)
@@ -937,9 +1347,15 @@
 
 ## database
 
+<<<<<<< .merge_file_aCPbkc
 - [migration-safety-rules-1.md](./database/migration-safety-rules-never-destroy-data.md)
 - [migration-safety-rules.md](./database/migration-safety-rules.md)
 - [profile-uuid-philosophy-1.md](./database/profile-uuid-philosophy.md)
+=======
+- [migration-safety-rules-1.md](./database/migration-safety-rules-1.md)
+- [migration-safety-rules.md](./database/migration-safety-rules.md)
+- [profile-uuid-philosophy-1.md](./database/profile-uuid-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [profile-uuid-philosophy.md](./database/profile-uuid-philosophy.md)
 
 ## database/migrations
@@ -977,6 +1393,7 @@
 
 ## filament
 
+<<<<<<< .merge_file_aCPbkc
 - [filament-table-columns-1.md](./filament/filament-table-columns.md)
 - [filament-table-columns-2.md](./filament/filament-table-columns.md)
 - [filament-table-columns-3.md](./filament/filament-table-columns-convenzione-metodo-gettablecolumns.md)
@@ -984,6 +1401,15 @@
 - [teams-relation-manager-1.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-2.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-3.md](./filament/teams-relation-manager-teamsrelationmanager-user-module.md)
+=======
+- [filament-table-columns-1.md](./filament/filament-table-columns-1.md)
+- [filament-table-columns-2.md](./filament/filament-table-columns-2.md)
+- [filament-table-columns-3.md](./filament/filament-table-columns-3.md)
+- [filament-table-columns.md](./filament/filament-table-columns.md)
+- [teams-relation-manager-1.md](./filament/teams-relation-manager-1.md)
+- [teams-relation-manager-2.md](./filament/teams-relation-manager-2.md)
+- [teams-relation-manager-3.md](./filament/teams-relation-manager-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [teams-relation-manager.md](./filament/teams-relation-manager.md)
 - [widgets-responsive-layout.md](./filament/widgets-responsive-layout.md)
 
@@ -1025,7 +1451,11 @@
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections-3.md](./fixes/base-classes-corrections-3.md)
 - [base-classes-corrections.md](./fixes/base-classes-corrections.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./fixes/phpstan-fixes.md)
+=======
+- [phpstan-fixes-1.md](./fixes/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes.md](./fixes/phpstan-fixes.md)
 - [phpstanes.md](./fixes/phpstanes.md)
 
@@ -1885,11 +2315,19 @@
 
 ## performance
 
+<<<<<<< .merge_file_aCPbkc
 - [authentication-performance-optimization-1.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-3.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-4.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-5.md](./performance/authentication-performance-optimization.md)
+=======
+- [authentication-performance-optimization-1.md](./performance/authentication-performance-optimization-1.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-3.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-4.md](./performance/authentication-performance-optimization-4.md)
+- [authentication-performance-optimization-5.md](./performance/authentication-performance-optimization-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [authentication-performance-optimization.md](./performance/authentication-performance-optimization.md)
 
 ## performance/archive
@@ -1935,7 +2373,11 @@
 
 ## roadmap
 
+<<<<<<< .merge_file_aCPbkc
 - [00-index-1.md](./roadmap/00-index.md)
+=======
+- [00-index-1.md](./roadmap/00-index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [00-index.md](./roadmap/00-index.md)
 - [00-overview.md](./roadmap/00-overview.md)
 - [01-current-state.md](./roadmap/01-current-state.md)
@@ -1947,7 +2389,11 @@
 - [04-milestones.md](./roadmap/04-milestones.md)
 - [04-risks.md](./roadmap/04-risks.md)
 - [05-risks.md](./roadmap/05-risks.md)
+<<<<<<< .merge_file_aCPbkc
 - [2025-q4-roadmap.md](./roadmap/roadmap.md)
+=======
+- [2025-q4-roadmap.md](./roadmap/2025-q4-roadmap.md)
+>>>>>>> .merge_file_5nGk0n
 - [2fa.md](./roadmap/2fa.md)
 - [bottlenecks.md](./roadmap/bottlenecks.md)
 - [chaos-readiness.md](./roadmap/chaos-readiness.md)
@@ -1961,7 +2407,11 @@
 - [now.md](./roadmap/now.md)
 - [overview.md](./roadmap/overview.md)
 - [phases.md](./roadmap/phases.md)
+<<<<<<< .merge_file_aCPbkc
 - [q4-roadmap-1.md](./roadmap/q4-roadmap.md)
+=======
+- [q4-roadmap-1.md](./roadmap/q4-roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [q4-roadmap.md](./roadmap/q4-roadmap.md)
 - [quality.md](./roadmap/quality.md)
 - [risks-1.md](./roadmap/risks-1.md)
@@ -1985,7 +2435,11 @@
 
 ## roadmap/legacy
 
+<<<<<<< .merge_file_aCPbkc
 - [legacy-roadmap-1.md](./roadmap/legacy/legacy-roadmap-user-module.md)
+=======
+- [legacy-roadmap-1.md](./roadmap/legacy/legacy-roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [legacy-roadmap-and-issues.md](./roadmap/legacy/legacy-roadmap-and-issues.md)
 - [legacy-roadmap-ands.md](./roadmap/legacy/legacy-roadmap-ands.md)
 - [legacy-roadmap-complete.md](./roadmap/legacy/legacy-roadmap-complete.md)
@@ -1995,16 +2449,27 @@
 
 ## root
 
+<<<<<<< .merge_file_aCPbkc
 - [00-index-1.md](./00-index-indice-documentazione-modulo-user.md)
+=======
+- [00-index-1.md](./00-index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [00-index.md](./00-index.md)
 - [2025-12-01-teams-migration-laraxot-compliance.deprecated.md](./2025-12-01-teams-migration-laraxot-compliance.deprecated.md)
 - [2fa-guide.md](./2fa-guide.md)
 - [2fa.md](./2fa.md)
 - [accessor-delegation-pattern.md](./accessor-delegation-pattern.md)
+<<<<<<< .merge_file_aCPbkc
 - [actions-path-convention-1.md](./actions-path-convention.md)
 - [actions-path-convention-2.md](./actions-path-convention-convenzione-percorsi.md)
 - [actions-path-convention.md](./actions-path-convention.md)
 - [actions-structure-1.md](./actions-structure.md)
+=======
+- [actions-path-convention-1.md](./actions-path-convention-1.md)
+- [actions-path-convention-2.md](./actions-path-convention-2.md)
+- [actions-path-convention.md](./actions-path-convention.md)
+- [actions-structure-1.md](./actions-structure-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [actions-structure-2.md](./actions-structure-2.md)
 - [actions-structure-3.md](./actions-structure-3.md)
 - [actions-structure.md](./actions-structure.md)
@@ -2023,14 +2488,22 @@
 - [architecture-rules-2.md](./architecture-rules-2.md)
 - [architecture-rules.md](./architecture-rules.md)
 - [architecture.md](./architecture.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-blade-structure-1.md](./auth-blade-structure.md)
 - [auth-blade-structure-2.md](./auth-blade-structure.md)
 - [auth-blade-structure.md](./auth-blade-structure.md)
 - [auth-components-best-practices-1.md](./auth-components-best-practices.md)
+=======
+- [auth-blade-structure-1.md](./auth-blade-structure-1.md)
+- [auth-blade-structure-2.md](./auth-blade-structure-2.md)
+- [auth-blade-structure.md](./auth-blade-structure.md)
+- [auth-components-best-practices-1.md](./auth-components-best-practices-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-components-best-practices-2.md](./auth-components-best-practices-2.md)
 - [auth-components-best-practices-3.md](./auth-components-best-practices-3.md)
 - [auth-components-best-practices.md](./auth-components-best-practices.md)
 - [auth-header-button.md](./auth-header-button.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-login-implementation-1.md](./auth-login-implementation.md)
 - [auth-login-implementation-2.md](./auth-login-implementation-2.md)
 - [auth-login-implementation-3.md](./auth-login-implementation-3.md)
@@ -2041,11 +2514,24 @@
 - [auth-logout-blade-2.md](./auth-logout-blade.md)
 - [auth-logout-blade.md](./auth-logout-blade.md)
 - [auth-logout-implementation-1.md](./auth-logout-implementation.md)
+=======
+- [auth-login-implementation-1.md](./auth-login-implementation-1.md)
+- [auth-login-implementation-2.md](./auth-login-implementation-2.md)
+- [auth-login-implementation-3.md](./auth-login-implementation-3.md)
+- [auth-login-implementation.md](./auth-login-implementation.md)
+- [auth-logout-1.md](./auth-logout-1.md)
+- [auth-logout-2.md](./auth-logout-2.md)
+- [auth-logout-blade-1.md](./auth-logout-blade-1.md)
+- [auth-logout-blade-2.md](./auth-logout-blade-2.md)
+- [auth-logout-blade.md](./auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./auth-logout-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-logout-implementation-2.md](./auth-logout-implementation-2.md)
 - [auth-logout-implementation-3.md](./auth-logout-implementation-3.md)
 - [auth-logout-implementation.md](./auth-logout-implementation.md)
 - [auth-logout.md](./auth-logout.md)
 - [auth-pages-implementation-1-1.md](./auth-pages-implementation-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-pages-implementation-1.md](./auth-pages-implementation.md)
 - [auth-pages-implementation-2.md](./auth-pages-implementation-2.md)
 - [auth-pages-implementation.md](./auth-pages-implementation.md)
@@ -2057,11 +2543,28 @@
 - [auth-widgets-view-namespaces-1.md](./auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces-2.md](./auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces-3.md](./auth-widgets-view-namespaces-widget-autenticazione-namespace.md)
+=======
+- [auth-pages-implementation-1.md](./auth-pages-implementation-1.md)
+- [auth-pages-implementation-2.md](./auth-pages-implementation-2.md)
+- [auth-pages-implementation.md](./auth-pages-implementation.md)
+- [auth-social-login-translations.md](./auth-social-login-translations.md)
+- [auth-widget-rules-1.md](./auth-widget-rules-1.md)
+- [auth-widget-rules-2.md](./auth-widget-rules-2.md)
+- [auth-widget-rules.md](./auth-widget-rules.md)
+- [auth-widget.md](./auth-widget.md)
+- [auth-widgets-view-namespaces-1.md](./auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces-2.md](./auth-widgets-view-namespaces-2.md)
+- [auth-widgets-view-namespaces-3.md](./auth-widgets-view-namespaces-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-widgets-view-namespaces.md](./auth-widgets-view-namespaces.md)
 - [authentication-troubleshooting.md](./authentication-troubleshooting.md)
 - [authentication.md](./authentication.md)
 - [avatar-implementation-1-1.md](./avatar-implementation-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [avatar-implementation-1.md](./avatar-implementation.md)
+=======
+- [avatar-implementation-1.md](./avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation-2.md](./avatar-implementation-2.md)
 - [avatar-implementation.md](./avatar-implementation.md)
 - [baseuser-conflicts.md](./baseuser-conflicts.md)
@@ -2079,6 +2582,7 @@
 - [baseuserry-violation.md](./baseuserry-violation.md)
 - [baseusers.md](./baseusers.md)
 - [best-practices.md](./best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [boost-skill-fix-summary-1.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary-2.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
@@ -2095,6 +2599,24 @@
 - [business-logic-deep-dive-3.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-5.md](./business-logic-deep-dive.md)
+=======
+- [boost-skill-fix-summary-1.md](./boost-skill-fix-summary-1.md)
+- [boost-skill-fix-summary-2.md](./boost-skill-fix-summary-2.md)
+- [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
+- [bottlenecks.md](./bottlenecks.md)
+- [bugfix-phpmd-cleanup-2026-07.md](./bugfix-phpmd-cleanup-2026-07.md)
+- [business-logic-analysis-1.md](./business-logic-analysis-1.md)
+- [business-logic-analysis-2.md](./business-logic-analysis-2.md)
+- [business-logic-analysis-3.md](./business-logic-analysis-3.md)
+- [business-logic-analysis-4.md](./business-logic-analysis-4.md)
+- [business-logic-analysis-5.md](./business-logic-analysis-5.md)
+- [business-logic-analysis.md](./business-logic-analysis.md)
+- [business-logic-deep-dive-1.md](./business-logic-deep-dive-1.md)
+- [business-logic-deep-dive-2.md](./business-logic-deep-dive-2.md)
+- [business-logic-deep-dive-3.md](./business-logic-deep-dive-3.md)
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive-4.md)
+- [business-logic-deep-dive-5.md](./business-logic-deep-dive-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [business-logic-deep-dive.md](./business-logic-deep-dive.md)
 - [business-logic.md](./business-logic.md)
 - [business-logiceepive.md](./business-logiceepive.md)
@@ -2110,6 +2632,7 @@
 - [cms-link-1.md](./cms-link-1.md)
 - [cms-link-2.md](./cms-link-2.md)
 - [cms-link.md](./cms-link.md)
+<<<<<<< .merge_file_aCPbkc
 - [code-conventions-1.md](./code-conventions.md)
 - [code-conventions-2.md](./code-conventions-2.md)
 - [code-conventions.md](./code-conventions.md)
@@ -2122,14 +2645,34 @@
 - [code-quality-analysis-3.md](./code-quality-analysis.md)
 - [code-quality-analysis-4.md](./code-quality-analysis.md)
 - [code-quality-analysis-5.md](./code-quality-analysis.md)
+=======
+- [code-conventions-1.md](./code-conventions-1.md)
+- [code-conventions-2.md](./code-conventions-2.md)
+- [code-conventions.md](./code-conventions.md)
+- [code-optimization-analysis-1.md](./code-optimization-analysis-1.md)
+- [code-optimization-analysis-2.md](./code-optimization-analysis-2.md)
+- [code-optimization-analysis.md](./code-optimization-analysis.md)
+- [code-optimization.md](./code-optimization.md)
+- [code-quality-analysis-1.md](./code-quality-analysis-1.md)
+- [code-quality-analysis-2.md](./code-quality-analysis-2.md)
+- [code-quality-analysis-3.md](./code-quality-analysis-3.md)
+- [code-quality-analysis-4.md](./code-quality-analysis-4.md)
+- [code-quality-analysis-5.md](./code-quality-analysis-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [code-quality-analysis.md](./code-quality-analysis.md)
 - [code-quality-tools.md](./code-quality-tools.md)
 - [code-quality.md](./code-quality.md)
 - [code-redundancy-audit.md](./code-redundancy-audit.md)
 - [codex-error-fix.md](./codex-error-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./component-verification-rules.md)
 - [component-verification-rules-2.md](./component-verification-rules.md)
 - [component-verification-rules-3.md](./component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./component-verification-rules-1.md)
+- [component-verification-rules-2.md](./component-verification-rules-2.md)
+- [component-verification-rules-3.md](./component-verification-rules-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./component-verification-rules.md)
 - [component-verification.md](./component-verification.md)
 - [composer-dependencies.md](./composer-dependencies.md)
@@ -2143,8 +2686,13 @@
 - [conflict-resolution.md](./conflict-resolution.md)
 - [conflicts-analysis.md](./conflicts-analysis.md)
 - [conflicts.md](./conflicts.md)
+<<<<<<< .merge_file_aCPbkc
 - [console-commands-philosophy-1.md](./console-commands-philosophy.md)
 - [console-commands-philosophy-2.md](./console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-1.md](./console-commands-philosophy-1.md)
+- [console-commands-philosophy-2.md](./console-commands-philosophy-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [console-commands-philosophy.md](./console-commands-philosophy.md)
 - [console-commands.md](./console-commands.md)
 - [contracts-naming.md](./contracts-naming.md)
@@ -2161,6 +2709,7 @@
 - [crossatabase-relations.md](./crossatabase-relations.md)
 - [cursor-rules.md](./cursor-rules.md)
 - [cursor.md](./cursor.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./custom-login-implementazione-personalizzato.md)
 - [custom-login.md](./custom-login.md)
 - [cyclomatic-complexity-report.md](./cyclomatic-complexity-report.md)
@@ -2171,12 +2720,29 @@
 - [database-issues-1.md](./database-issues.md)
 - [database-issues-2.md](./database-issues.md)
 - [database-issues-3.md](./database-issues.md)
+=======
+- [custom-login-1.md](./custom-login-1.md)
+- [custom-login.md](./custom-login.md)
+- [cyclomatic-complexity-report.md](./cyclomatic-complexity-report.md)
+- [cyclomatic-complexity.md](./cyclomatic-complexity.md)
+- [database-errors-1.md](./database-errors-1.md)
+- [database-errors-2.md](./database-errors-2.md)
+- [database-errors.md](./database-errors.md)
+- [database-issues-1.md](./database-issues-1.md)
+- [database-issues-2.md](./database-issues-2.md)
+- [database-issues-3.md](./database-issues-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-issues.md](./database-issues.md)
 - [database-population.md](./database-population.md)
 - [databases.md](./databases.md)
 - [datas-not-dtos-convention.md](./datas-not-dtos-convention.md)
+<<<<<<< .merge_file_aCPbkc
 - [dentist-moderation-approach-1.md](./dentist-moderation-approach.md)
 - [dentist-moderation-approach-2.md](./dentist-moderation-approach.md)
+=======
+- [dentist-moderation-approach-1.md](./dentist-moderation-approach-1.md)
+- [dentist-moderation-approach-2.md](./dentist-moderation-approach-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [dentist-moderation-approach.md](./dentist-moderation-approach.md)
 - [dependencies.md](./dependencies.md)
 - [dependency-intelligence.md](./dependency-intelligence.md)
@@ -2191,17 +2757,29 @@
 - [docs-location-policy.md](./docs-location-policy.md)
 - [doctor-registration-widget.md](./doctor-registration-widget.md)
 - [doctor-registration.md](./doctor-registration.md)
+<<<<<<< .merge_file_aCPbkc
 - [documentation-standards-1.md](./documentation-standards.md)
 - [documentation-standards-2.md](./documentation-standards.md)
+=======
+- [documentation-standards-1.md](./documentation-standards-1.md)
+- [documentation-standards-2.md](./documentation-standards-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [documentation-standards.md](./documentation-standards.md)
 - [dor-registration-widget.md](./dor-registration-widget.md)
 - [dor-registration.md](./dor-registration.md)
 - [dry-kiss-018b09.md](./dry-kiss-018b09.md)
 - [dry-kiss-analysis-.md](./dry-kiss-analysis-.md)
+<<<<<<< .merge_file_aCPbkc
 - [dry-kiss-analysis-1.md](./dry-kiss-analysis-modulo-user.md)
 - [dry-kiss-analysis-2.md](./dry-kiss-analysis.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./dry-kiss-analysis-2025-10-15.deprecated.md)
 - [dry-kiss-analysis-3.md](./dry-kiss-analysis.md)
+=======
+- [dry-kiss-analysis-1.md](./dry-kiss-analysis-1.md)
+- [dry-kiss-analysis-2.md](./dry-kiss-analysis-2.md)
+- [dry-kiss-analysis-2025-10-15.deprecated.md](./dry-kiss-analysis-2025-10-15.deprecated.md)
+- [dry-kiss-analysis-3.md](./dry-kiss-analysis-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [dry-kiss-analysis-4.md](./dry-kiss-analysis-4.md)
 - [dry-kiss-analysis-conflict-018b09.md](./dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./dry-kiss-analysis-conflict.md)
@@ -2210,7 +2788,11 @@
 - [dry-kiss.md](./dry-kiss.md)
 - [dry-violation-fix.md](./dry-violation-fix.md)
 - [dry-violation.md](./dry-violation.md)
+<<<<<<< .merge_file_aCPbkc
 - [duplicate-methods-1.md](./duplicate-methods-metodi-duplicati-user.md)
+=======
+- [duplicate-methods-1.md](./duplicate-methods-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [duplicate-methods-analysis.md](./duplicate-methods-analysis.md)
 - [duplicate-methods-report.md](./duplicate-methods-report.md)
 - [duplicate-methods.md](./duplicate-methods.md)
@@ -2218,8 +2800,13 @@
 - [eloquent-properties-best-practices.md](./eloquent-properties-best-practices.md)
 - [email-doctor-registration.md](./email-doctor-registration.md)
 - [emailor-registration.md](./emailor-registration.md)
+<<<<<<< .merge_file_aCPbkc
 - [error-handling-1.md](./error-handling.md)
 - [error-handling-2.md](./error-handling.md)
+=======
+- [error-handling-1.md](./error-handling-1.md)
+- [error-handling-2.md](./error-handling-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [error-handling.md](./error-handling.md)
 - [external-packages-inheritance-pattern.md](./external-packages-inheritance-pattern.md)
 - [external-packages-inheritance.md](./external-packages-inheritance.md)
@@ -2234,7 +2821,11 @@
 - [filament-4-widget-rendering.md](./filament-4-widget-rendering.md)
 - [filament-4x-compatibility-1-1.md](./filament-4x-compatibility-1-1.md)
 - [filament-4x-compatibility-1.md](./filament-4x-compatibility-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-4x-compatibility-2.md](./filament-4x-compatibility-resources-user.md)
+=======
+- [filament-4x-compatibility-2.md](./filament-4x-compatibility-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-4x-compatibility-conflict.md](./filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./filament-4x-compatibility.md)
 - [filament-5-panel-governance-rule.md](./filament-5-panel-governance-rule.md)
@@ -2242,6 +2833,7 @@
 - [filament-auth-pages-exceptions.md](./filament-auth-pages-exceptions.md)
 - [filament-best-practices.md](./filament-best-practices.md)
 - [filament-charts-implementation.md](./filament-charts-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-components-reference-1.md](./filament-components-reference.md)
 - [filament-components-reference-2.md](./filament-components-reference.md)
 - [filament-components-reference.md](./filament-components-reference.md)
@@ -2252,17 +2844,38 @@
 - [filament-namespace-rules-1-1.md](./filament-namespace-rules.md)
 - [filament-namespace-rules-1.md](./filament-namespace-rules.md)
 - [filament-namespace-rules-2.md](./filament-namespace-rules.md)
+=======
+- [filament-components-reference-1.md](./filament-components-reference-1.md)
+- [filament-components-reference-2.md](./filament-components-reference-2.md)
+- [filament-components-reference.md](./filament-components-reference.md)
+- [filament-errors-1.md](./filament-errors-1.md)
+- [filament-errors-2.md](./filament-errors-2.md)
+- [filament-errors.md](./filament-errors.md)
+- [filament-filters-and-widgets.md](./filament-filters-and-widgets.md)
+- [filament-namespace-rules-1-1.md](./filament-namespace-rules-1-1.md)
+- [filament-namespace-rules-1.md](./filament-namespace-rules-1.md)
+- [filament-namespace-rules-2.md](./filament-namespace-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-namespace-rules.md](./filament-namespace-rules.md)
 - [filament-namespace.md](./filament-namespace.md)
 - [filament-nesting-opportunities.md](./filament-nesting-opportunities.md)
 - [filament-relation-managers-1-1.md](./filament-relation-managers-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-relation-managers-1.md](./filament-relation-managers.md)
+=======
+- [filament-relation-managers-1.md](./filament-relation-managers-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-relation-managers-2.md](./filament-relation-managers-2.md)
 - [filament-relation-managers.md](./filament-relation-managers.md)
 - [filament-resources-coverage-analysis.md](./filament-resources-coverage-analysis.md)
 - [filament-resources-coverage.md](./filament-resources-coverage.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-resources-organization-1.md](./filament-resources-organization.md)
 - [filament-resources-organization-2.md](./filament-resources-organization.md)
+=======
+- [filament-resources-organization-1.md](./filament-resources-organization-1.md)
+- [filament-resources-organization-2.md](./filament-resources-organization-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-resources-organization.md](./filament-resources-organization.md)
 - [filament-resources-philosophical-debate.md](./filament-resources-philosophical-debate.md)
 - [filament-resources-philosophicalebate.md](./filament-resources-philosophicalebate.md)
@@ -2280,11 +2893,16 @@
 - [fix-profile-id-uuid.md](./fix-profile-id-uuid.md)
 - [fixes-user-module-phpstan.md](./fixes-user-module-phpstan.md)
 - [folio-volt-best-practices.md](./folio-volt-best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-documentation-summary-1.md](./fullcalendar-scheduler-documentation-summary.md)
+=======
+- [fullcalendar-scheduler-documentation-summary-1.md](./fullcalendar-scheduler-documentation-summary-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [fullcalendar-scheduler-documentation-summary-2.md](./fullcalendar-scheduler-documentation-summary-2.md)
 - [fullcalendar-scheduler-documentation-summary-3.md](./fullcalendar-scheduler-documentation-summary-3.md)
 - [fullcalendar-scheduler-documentation-summary.md](./fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1-1.md](./fullcalendar-scheduler-license-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-license-1.md](./fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
 - [fullcalendar-scheduler-license-key-invalid-1.md](./fullcalendar-scheduler-license-key-invalid.md)
@@ -2296,17 +2914,38 @@
 - [fullcalendar-scheduler-license-troubleshooting.md](./fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license.md](./fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-quick-reference-1.md](./fullcalendar-scheduler-quick-reference.md)
+=======
+- [fullcalendar-scheduler-license-1.md](./fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
+- [fullcalendar-scheduler-license-key-invalid-1.md](./fullcalendar-scheduler-license-key-invalid-1.md)
+- [fullcalendar-scheduler-license-key-invalid-2.md](./fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-key-invalid.md](./fullcalendar-scheduler-license-key-invalid.md)
+- [fullcalendar-scheduler-license-troubleshooting-1-1.md](./fullcalendar-scheduler-license-troubleshooting-1-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-2.md](./fullcalendar-scheduler-license-troubleshooting-2.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./fullcalendar-scheduler-quick-reference-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [fullcalendar-scheduler-quick-reference-2.md](./fullcalendar-scheduler-quick-reference-2.md)
 - [fullcalendar-scheduler-quick-reference-3.md](./fullcalendar-scheduler-quick-reference-3.md)
 - [fullcalendar-scheduler-quick-reference.md](./fullcalendar-scheduler-quick-reference.md)
 - [fullcalendar-schedulerocumentation.md](./fullcalendar-schedulerocumentation.md)
+<<<<<<< .merge_file_aCPbkc
 - [gdpr-compliance-1.md](./gdpr-compliance-guide-registration.md)
+=======
+- [gdpr-compliance-1.md](./gdpr-compliance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [gdpr-compliance-complete.md](./gdpr-compliance-complete.md)
 - [gdpr-compliance.md](./gdpr-compliance.md)
 - [gdpr-register-enhancement.md](./gdpr-register-enhancement.md)
 - [gdpr.md](./gdpr.md)
 - [generic-user-moderation-strategy-1-1.md](./generic-user-moderation-strategy-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [generic-user-moderation-strategy-1.md](./generic-user-moderation-strategy.md)
+=======
+- [generic-user-moderation-strategy-1.md](./generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy-2.md](./generic-user-moderation-strategy-2.md)
 - [generic-user-moderation-strategy.md](./generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./get-new-password-action-business-logic.md)
@@ -2314,6 +2953,7 @@
 - [git-conflict-resolution-2.md](./git-conflict-resolution-2.md)
 - [git-conflict-resolution.md](./git-conflict-resolution.md)
 - [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
+<<<<<<< .merge_file_aCPbkc
 - [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
 - [git-conflicts-resolution-1.md](./git-conflicts-resolution.md)
@@ -2323,6 +2963,17 @@
 - [git-conflicts-resolution-4.md](./git-conflicts-resolution-4.md)
 - [git-conflicts-resolution-5.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-6.md](./git-conflicts-resolution.md)
+=======
+- [git-conflicts-resolution--1.md](./git-conflicts-resolution--1.md)
+- [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
+- [git-conflicts-resolution-1.md](./git-conflicts-resolution-1.md)
+- [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
+- [git-conflicts-resolution-2025-01-27.deprecated.md](./git-conflicts-resolution-2025-01-27.deprecated.md)
+- [git-conflicts-resolution-3.md](./git-conflicts-resolution-3.md)
+- [git-conflicts-resolution-4.md](./git-conflicts-resolution-4.md)
+- [git-conflicts-resolution-5.md](./git-conflicts-resolution-5.md)
+- [git-conflicts-resolution-6.md](./git-conflicts-resolution-6.md)
+>>>>>>> .merge_file_5nGk0n
 - [git-conflicts-resolution-conflict-06cb77.md](./git-conflicts-resolution-conflict-06cb77.md)
 - [git-conflicts-resolution-conflict.md](./git-conflicts-resolution-conflict.md)
 - [git-conflicts-resolution-summary.md](./git-conflicts-resolution-summary.md)
@@ -2333,6 +2984,7 @@
 - [gits-resolution-06cb77.md](./gits-resolution-06cb77.md)
 - [gits-resolution.md](./gits-resolution.md)
 - [guida-migrazione-step-by-step.md](./guida-migrazione-step-by-step.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
 - [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
@@ -2342,6 +2994,17 @@
 - [hasteams-trait-analysis.md](./hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-analisi-metodi-duplicati.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./hasteams-currentteam-method-choice-1.md)
+- [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
+- [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
+- [hasteams-currentteam-method-choice.md](./hasteams-currentteam-method-choice.md)
+- [hasteams-trait-analysis-1.md](./hasteams-trait-analysis-1.md)
+- [hasteams-trait-analysis-2.md](./hasteams-trait-analysis-2.md)
+- [hasteams-trait-analysis.md](./hasteams-trait-analysis.md)
+- [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods-1.md)
+- [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [hasteams-trait-duplicate-methods.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./hasteams-trait-filosofia-e-correzione-completa-1.md)
 - [hasteams-trait-filosofia-e-correzione-completa-2.md](./hasteams-trait-filosofia-e-correzione-completa-2.md)
@@ -2350,14 +3013,22 @@
 - [hasteams-trait.md](./hasteams-trait.md)
 - [hasteams-traituplicate-methods.md](./hasteams-traituplicate-methods.md)
 - [header-auth-button.md](./header-auth-button.md)
+<<<<<<< .merge_file_aCPbkc
 - [header-components-1.md](./header-components.md)
 - [header-components-2.md](./header-components-componenti.md)
 - [header-components.md](./header-components.md)
 - [header-language-avatar-implementation-1.md](./header-language-avatar-implementation.md)
+=======
+- [header-components-1.md](./header-components-1.md)
+- [header-components-2.md](./header-components-2.md)
+- [header-components.md](./header-components.md)
+- [header-language-avatar-implementation-1.md](./header-language-avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [header-language-avatar-implementation-2.md](./header-language-avatar-implementation-2.md)
 - [header-language-avatar-implementation-3.md](./header-language-avatar-implementation-3.md)
 - [header-language-avatar-implementation.md](./header-language-avatar-implementation.md)
 - [header-language-selector-with-flags-1-1.md](./header-language-selector-with-flags-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [header-language-selector-with-flags-1.md](./header-language-selector-with-flags.md)
 - [header-language-selector-with-flags-2.md](./header-language-selector-with-flags-2.md)
 - [header-language-selector-with-flags.md](./header-language-selector-with-flags.md)
@@ -2368,21 +3039,44 @@
 - [implementation-summary.md](./implementation-summary.md)
 - [implementation.md](./implementation.md)
 - [index-1.md](./index.md)
+=======
+- [header-language-selector-with-flags-1.md](./header-language-selector-with-flags-1.md)
+- [header-language-selector-with-flags-2.md](./header-language-selector-with-flags-2.md)
+- [header-language-selector-with-flags.md](./header-language-selector-with-flags.md)
+- [ide-helper-models-wave.md](./ide-helper-models-wave.md)
+- [implementation-plan-1.md](./implementation-plan-1.md)
+- [implementation-plan-2.md](./implementation-plan-2.md)
+- [implementation-plan.md](./implementation-plan.md)
+- [implementation-summary.md](./implementation-summary.md)
+- [implementation.md](./implementation.md)
+- [index-1.md](./index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [index-2.md](./index-2.md)
 - [index-conflict.md](./index-conflict.md)
 - [index.md](./index.md)
 - [intelligent-login-redirect.md](./intelligent-login-redirect.md)
+<<<<<<< .merge_file_aCPbkc
 - [jetstream-vs-laraxot-philosophy-1-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-2.md](./jetstream-vs-laraxot-philosophy.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1-1.md](./jetstream-vs-laraxot-philosophy-1-1.md)
+- [jetstream-vs-laraxot-philosophy-1.md](./jetstream-vs-laraxot-philosophy-1.md)
+- [jetstream-vs-laraxot-philosophy-2.md](./jetstream-vs-laraxot-philosophy-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [jetstream-vs-laraxot-philosophy.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot.md](./jetstream-vs-laraxot.md)
 - [jpgraph-integration.md](./jpgraph-integration.md)
 - [js-conflicts.md](./js-conflicts.md)
 - [json.md](./json.md)
 - [jss.md](./jss.md)
+<<<<<<< .merge_file_aCPbkc
 - [label-hardcoded-prevention-1.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention-2.md](./label-hardcoded-prevention.md)
+=======
+- [label-hardcoded-prevention-1.md](./label-hardcoded-prevention-1.md)
+- [label-hardcoded-prevention-2.md](./label-hardcoded-prevention-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [label-hardcoded-prevention.md](./label-hardcoded-prevention.md)
 - [lang-link-1.md](./lang-link-1.md)
 - [lang-link-2.md](./lang-link-2.md)
@@ -2400,6 +3094,7 @@
 - [livewire-filament-parameter-passing.md](./livewire-filament-parameter-passing.md)
 - [livewire-form-statepath-issue.md](./livewire-form-statepath-issue.md)
 - [livewire-form-statepath.md](./livewire-form-statepath.md)
+<<<<<<< .merge_file_aCPbkc
 - [livewire-namespace-1.md](./livewire-namespace.md)
 - [livewire-namespace-2.md](./livewire-namespace-2.md)
 - [livewire-namespace.md](./livewire-namespace.md)
@@ -2411,15 +3106,36 @@
 - [logging-performance.md](./logging-performance.md)
 - [login-filament-widget-error-1.md](./login-filament-widget-error.md)
 - [login-filament-widget-error-2.md](./login-filament-widget-error.md)
+=======
+- [livewire-namespace-1.md](./livewire-namespace-1.md)
+- [livewire-namespace-2.md](./livewire-namespace-2.md)
+- [livewire-namespace.md](./livewire-namespace.md)
+- [livewire-to-filament-widget-migration.md](./livewire-to-filament-widget-migration.md)
+- [logging-performance-1.md](./logging-performance-1.md)
+- [logging-performance-2.md](./logging-performance-2.md)
+- [logging-performance-3.md](./logging-performance-3.md)
+- [logging-performance-4.md](./logging-performance-4.md)
+- [logging-performance.md](./logging-performance.md)
+- [login-filament-widget-error-1.md](./login-filament-widget-error-1.md)
+- [login-filament-widget-error-2.md](./login-filament-widget-error-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-filament-widget-error.md](./login-filament-widget-error.md)
 - [login-filament-widget.md](./login-filament-widget.md)
 - [login-issue-resolution-report.md](./login-issue-resolution-report.md)
 - [login-resolution.md](./login-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-analysis-1.md](./login-widget-analysis.md)
 - [login-widget-analysis-2.md](./login-widget-analysis.md)
 - [login-widget-analysis.md](./login-widget-analysis.md)
 - [login-widget-conversion-1-1.md](./login-widget-conversion.md)
 - [login-widget-conversion-1.md](./login-widget-conversion-conversione-livewire-auth-filament.md)
+=======
+- [login-widget-analysis-1.md](./login-widget-analysis-1.md)
+- [login-widget-analysis-2.md](./login-widget-analysis-2.md)
+- [login-widget-analysis.md](./login-widget-analysis.md)
+- [login-widget-conversion-1-1.md](./login-widget-conversion-1-1.md)
+- [login-widget-conversion-1.md](./login-widget-conversion-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-conversion-2.md](./login-widget-conversion-2.md)
 - [login-widget-conversion.md](./login-widget-conversion.md)
 - [login-widget-filament-schema-errors-roadmap.md](./login-widget-filament-schema-errors-roadmap.md)
@@ -2430,7 +3146,11 @@
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
 - [login-widget-translation-audit-2025.md](./login-widget-translation-audit-historical.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
+=======
+- [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-translation-audit-conflict.md](./login-widget-translation-audit-conflict.md)
 - [login-widget-translation-audit.md](./login-widget-translation-audit.md)
 - [login-widget-translation.md](./login-widget-translation.md)
@@ -2438,6 +3158,7 @@
 - [loginwidget-error-analysis.md](./loginwidget-error-analysis.md)
 - [loginwidget.md](./loginwidget.md)
 - [logout-analysis-1.md](./logout-analysis-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-analysis-2.md](./logout-analysis.md)
 - [logout-analysis.md](./logout-analysis.md)
 - [logout-blade-analysis-1.md](./logout-blade-analysis.md)
@@ -2449,22 +3170,45 @@
 - [logout-blade-conclusions-2.md](./logout-blade-conclusions-2.md)
 - [logout-blade-conclusions.md](./logout-blade-conclusions.md)
 - [logout-blade-corrected-analysis-1.md](./logout-blade-corrected-analysis.md)
+=======
+- [logout-analysis-2.md](./logout-analysis-2.md)
+- [logout-analysis.md](./logout-analysis.md)
+- [logout-blade-analysis-1.md](./logout-blade-analysis-1.md)
+- [logout-blade-analysis-2.md](./logout-blade-analysis-2.md)
+- [logout-blade-analysis-3.md](./logout-blade-analysis-3.md)
+- [logout-blade-analysis.md](./logout-blade-analysis.md)
+- [logout-blade-conclusions-1-1.md](./logout-blade-conclusions-1-1.md)
+- [logout-blade-conclusions-1.md](./logout-blade-conclusions-1.md)
+- [logout-blade-conclusions-2.md](./logout-blade-conclusions-2.md)
+- [logout-blade-conclusions.md](./logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./logout-blade-corrected-analysis-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-blade-corrected-analysis-2.md](./logout-blade-corrected-analysis-2.md)
 - [logout-blade-corrected-analysis-3.md](./logout-blade-corrected-analysis-3.md)
 - [logout-blade-corrected-analysis.md](./logout-blade-corrected-analysis.md)
 - [logout-blade-corrected.md](./logout-blade-corrected.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-error-analysis-1.md](./logout-blade-error-analysis.md)
 - [logout-blade-error-analysis-2.md](./logout-blade-error-analysis-analisi-approfondita-dell-errore.md)
 - [logout-blade-error-analysis-3.md](./logout-blade-error-analysis-3.md)
 - [logout-blade-error-analysis.md](./logout-blade-error-analysis.md)
 - [logout-blade-implementation-1-1.md](./logout-blade-implementation-implementazione-corretta-php.md)
 - [logout-blade-implementation-1.md](./logout-blade-implementation.md)
+=======
+- [logout-blade-error-analysis-1.md](./logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis-2.md](./logout-blade-error-analysis-2.md)
+- [logout-blade-error-analysis-3.md](./logout-blade-error-analysis-3.md)
+- [logout-blade-error-analysis.md](./logout-blade-error-analysis.md)
+- [logout-blade-implementation-1-1.md](./logout-blade-implementation-1-1.md)
+- [logout-blade-implementation-1.md](./logout-blade-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-blade-implementation-2.md](./logout-blade-implementation-2.md)
 - [logout-blade-implementation.md](./logout-blade-implementation.md)
 - [logout-blade-structure-1.md](./logout-blade-structure-1.md)
 - [logout-blade-structure-2.md](./logout-blade-structure-2.md)
 - [logout-blade-structure.md](./logout-blade-structure.md)
 - [logout-blade.md](./logout-blade.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-error-analysis-1-1.md](./logout-error-analysis-analisi-errore.md)
 - [logout-error-analysis-1.md](./logout-error-analysis.md)
 - [logout-error-analysis-2.md](./logout-error-analysis-2.md)
@@ -2500,19 +3244,66 @@
 - [logout-page-fix.md](./logout-page-fix.md)
 - [logout-page-implementation-1.md](./logout-page-implementation.md)
 - [logout-page-implementation-2.md](./logout-page-implementation-implementazione-pagina-tema-one.md)
+=======
+- [logout-error-analysis-1-1.md](./logout-error-analysis-1-1.md)
+- [logout-error-analysis-1.md](./logout-error-analysis-1.md)
+- [logout-error-analysis-2.md](./logout-error-analysis-2.md)
+- [logout-error-analysis.md](./logout-error-analysis.md)
+- [logout-event-error-1-1.md](./logout-event-error-1-1.md)
+- [logout-event-error-1.md](./logout-event-error-1.md)
+- [logout-event-error-2.md](./logout-event-error-2.md)
+- [logout-event-error.md](./logout-event-error.md)
+- [logout-event.md](./logout-event.md)
+- [logout-filament-widget-1.md](./logout-filament-widget-1.md)
+- [logout-filament-widget-2.md](./logout-filament-widget-2.md)
+- [logout-filament-widget-3.md](./logout-filament-widget-3.md)
+- [logout-filament-widget-corrected-1.md](./logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected-2.md](./logout-filament-widget-corrected-2.md)
+- [logout-filament-widget-corrected-3.md](./logout-filament-widget-corrected-3.md)
+- [logout-filament-widget-corrected.md](./logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./logout-filament-widget.md)
+- [logout-implementation-best-practices-1-1.md](./logout-implementation-best-practices-1-1.md)
+- [logout-implementation-best-practices-1.md](./logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices-2.md](./logout-implementation-best-practices-2.md)
+- [logout-implementation-best-practices.md](./logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./logout-implementation-error-1.md)
+- [logout-implementation-error-2.md](./logout-implementation-error-2.md)
+- [logout-implementation-error-3.md](./logout-implementation-error-3.md)
+- [logout-implementation-error.md](./logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization-2.md](./logout-implementation-with-laravel-localization-2.md)
+- [logout-implementation-with-laravel-localization-3.md](./logout-implementation-with-laravel-localization-3.md)
+- [logout-implementation-with-laravel-localization.md](./logout-implementation-with-laravel-localization.md)
+- [logout-implementation.md](./logout-implementation.md)
+- [logout-page-fix-1.md](./logout-page-fix-1.md)
+- [logout-page-fix-2.md](./logout-page-fix-2.md)
+- [logout-page-fix.md](./logout-page-fix.md)
+- [logout-page-implementation-1.md](./logout-page-implementation-1.md)
+- [logout-page-implementation-2.md](./logout-page-implementation-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation-3.md](./logout-page-implementation-3.md)
 - [logout-page-implementation.md](./logout-page-implementation.md)
 - [logout-page.md](./logout-page.md)
 - [logout-security-1.md](./logout-security-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-security-2.md](./logout-security.md)
+=======
+- [logout-security-2.md](./logout-security-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-security.md](./logout-security.md)
 - [logout.md](./logout.md)
 - [mcp-configuration.md](./mcp-configuration.md)
 - [mcp-database-tools.md](./mcp-database-tools.md)
 - [mcp-integration-1.md](./mcp-integration-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [mcp-integration-2.md](./mcp-integration.md)
 - [mcp-integration.md](./mcp-integration.md)
 - [mcp-server-recommended-1.md](./mcp-server-recommended.md)
+=======
+- [mcp-integration-2.md](./mcp-integration-2.md)
+- [mcp-integration.md](./mcp-integration.md)
+- [mcp-server-recommended-1.md](./mcp-server-recommended-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [mcp-server-recommended-2.md](./mcp-server-recommended-2.md)
 - [mcp-server-recommended.md](./mcp-server-recommended.md)
 - [mcpatabase-tools.md](./mcpatabase-tools.md)
@@ -2524,6 +3315,7 @@
 - [memory-optimization.md](./memory-optimization.md)
 - [merge-conflict-files-list.md](./merge-conflict-files-list.md)
 - [merge-conflicts-list.md](./merge-conflicts-list.md)
+<<<<<<< .merge_file_aCPbkc
 - [metodi-duplicati-analisi-1.md](./metodi-duplicati-analisi.md)
 - [metodi-duplicati-analisi-2.md](./metodi-duplicati-analisi.md)
 - [metodi-duplicati-analisi-3.md](./metodi-duplicati-analisi.md)
@@ -2538,6 +3330,22 @@
 - [microsoft-oauth-socialite.md](./microsoft-oauth-socialite.md)
 - [migration-best-practices-1.md](./migration-best-practices.md)
 - [migration-best-practices-2.md](./migration-best-practices.md)
+=======
+- [metodi-duplicati-analisi-1.md](./metodi-duplicati-analisi-1.md)
+- [metodi-duplicati-analisi-2.md](./metodi-duplicati-analisi-2.md)
+- [metodi-duplicati-analisi-3.md](./metodi-duplicati-analisi-3.md)
+- [metodi-duplicati-analisi-4.md](./metodi-duplicati-analisi-4.md)
+- [metodi-duplicati-analisi-5.md](./metodi-duplicati-analisi-5.md)
+- [metodi-duplicati-analisi.md](./metodi-duplicati-analisi.md)
+- [metodiuplicati-analisi.md](./metodiuplicati-analisi.md)
+- [metrics-dashboard-1.md](./metrics-dashboard-1.md)
+- [metrics-dashboard-2.md](./metrics-dashboard-2.md)
+- [metrics-dashboard.md](./metrics-dashboard.md)
+- [metricsashboard.md](./metricsashboard.md)
+- [microsoft-oauth-socialite.md](./microsoft-oauth-socialite.md)
+- [migration-best-practices-1.md](./migration-best-practices-1.md)
+- [migration-best-practices-2.md](./migration-best-practices-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [migration-best-practices.md](./migration-best-practices.md)
 - [migration-consolidation-philosophy.md](./migration-consolidation-philosophy.md)
 - [migration-consolidation-plan.md](./migration-consolidation-plan.md)
@@ -2545,7 +3353,11 @@
 - [migration-dry-violations-report.md](./migration-dry-violations-report.md)
 - [migration-duplicate-resolution.md](./migration-duplicate-resolution.md)
 - [migration-execution-safety.md](./migration-execution-safety.md)
+<<<<<<< .merge_file_aCPbkc
 - [migration-filament-4.md](./migration-filament-user-module-migrazione.md)
+=======
+- [migration-filament-4.md](./migration-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [migration-filament.md](./migration-filament.md)
 - [migration-fix-tenants.md](./migration-fix-tenants.md)
 - [migration-internal.md](./migration-internal.md)
@@ -2569,7 +3381,11 @@
 - [migrationry-violations.md](./migrationry-violations.md)
 - [migrations.md](./migrations.md)
 - [migrationuplicate-resolution.md](./migrationuplicate-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [migrazione-filament-4.md](./migrazione-filament.md)
+=======
+- [migrazione-filament-4.md](./migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [migrazione-filament.md](./migrazione-filament.md)
 - [missing-factories-audit.md](./missing-factories-audit.md)
 - [missing-factories.md](./missing-factories.md)
@@ -2578,6 +3394,7 @@
 - [missing-filament-resources-analysis.md](./missing-filament-resources-analysis.md)
 - [missing-filament-resources.md](./missing-filament-resources.md)
 - [model-classification.md](./model-classification.md)
+<<<<<<< .merge_file_aCPbkc
 - [model-inheritance-analysis-1.md](./model-inheritance-analysis.md)
 - [model-inheritance-analysis-2.md](./model-inheritance-analysis-2.md)
 - [model-inheritance-analysis-3.md](./model-inheritance-analysis.md)
@@ -2587,13 +3404,28 @@
 - [model-inheritance-fixes-1.md](./model-inheritance-fixes-1.md)
 - [model-inheritance-fixes-2.md](./model-inheritance-fixes.md)
 - [model-inheritance-fixes-3.md](./model-inheritance-fixes.md)
+=======
+- [model-inheritance-analysis-1.md](./model-inheritance-analysis-1.md)
+- [model-inheritance-analysis-2.md](./model-inheritance-analysis-2.md)
+- [model-inheritance-analysis-3.md](./model-inheritance-analysis-3.md)
+- [model-inheritance-analysis-4.md](./model-inheritance-analysis-4.md)
+- [model-inheritance-analysis-5.md](./model-inheritance-analysis-5.md)
+- [model-inheritance-analysis.md](./model-inheritance-analysis.md)
+- [model-inheritance-fixes-1.md](./model-inheritance-fixes-1.md)
+- [model-inheritance-fixes-2.md](./model-inheritance-fixes-2.md)
+- [model-inheritance-fixes-3.md](./model-inheritance-fixes-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [model-inheritance-fixes-4.md](./model-inheritance-fixes-4.md)
 - [model-inheritance-fixes-5.md](./model-inheritance-fixes-5.md)
 - [model-inheritance-fixes.md](./model-inheritance-fixes.md)
 - [model-inheritance-rules.md](./model-inheritance-rules.md)
 - [model-inheritance.md](./model-inheritance.md)
 - [model-inheritancees.md](./model-inheritancees.md)
+<<<<<<< .merge_file_aCPbkc
 - [modelli-factory-seeder-analisi-1.md](./modelli-factory-seeder-analisi.md)
+=======
+- [modelli-factory-seeder-analisi-1.md](./modelli-factory-seeder-analisi-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [modelli-factory-seeder-analisi-2.md](./modelli-factory-seeder-analisi-2.md)
 - [modelli-factory-seeder-analisi.md](./modelli-factory-seeder-analisi.md)
 - [models-analysis.md](./models-analysis.md)
@@ -2601,15 +3433,24 @@
 - [moderation-actions.md](./moderation-actions.md)
 - [moderation-contracts.md](./moderation-contracts.md)
 - [moderation-doctor-1.md](./moderation-doctor-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [moderation-doctor-2.md](./moderation-doctor.md)
 - [moderation-doctor.md](./moderation-doctor.md)
 - [moderation-notifications.md](./moderation-notifications.md)
 - [moderation-wizard-generic-1.md](./moderation-wizard-generic.md)
 - [moderation-wizard-generic-2.md](./moderation-wizard-generic.md)
+=======
+- [moderation-doctor-2.md](./moderation-doctor-2.md)
+- [moderation-doctor.md](./moderation-doctor.md)
+- [moderation-notifications.md](./moderation-notifications.md)
+- [moderation-wizard-generic-1.md](./moderation-wizard-generic-1.md)
+- [moderation-wizard-generic-2.md](./moderation-wizard-generic-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [moderation-wizard-generic.md](./moderation-wizard-generic.md)
 - [moderationor.md](./moderationor.md)
 - [module-analysis-complete.md](./module-analysis-complete.md)
 - [module-analysis.md](./module-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-structure-1.md](./module-structure.md)
 - [module-structure-2.md](./module-structure-user.md)
 - [module-structure.md](./module-structure.md)
@@ -2619,6 +3460,17 @@
 - [namespace-conventions-1.md](./namespace-conventions.md)
 - [namespace-conventions-2.md](./namespace-conventions.md)
 - [namespace-conventions-3.md](./namespace-conventions-convenzioni-modulo-user.md)
+=======
+- [module-structure-1.md](./module-structure-1.md)
+- [module-structure-2.md](./module-structure-2.md)
+- [module-structure.md](./module-structure.md)
+- [module-user-1.md](./module-user-1.md)
+- [module-user.md](./module-user.md)
+- [module.md](./module.md)
+- [namespace-conventions-1.md](./namespace-conventions-1.md)
+- [namespace-conventions-2.md](./namespace-conventions-2.md)
+- [namespace-conventions-3.md](./namespace-conventions-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [namespace-conventions.md](./namespace-conventions.md)
 - [navigation-structure-1.md](./navigation-structure-1.md)
 - [navigation-structure-2.md](./navigation-structure-2.md)
@@ -2644,11 +3496,19 @@
 - [oauth-passport-model-wrappers.md](./oauth-passport-model-wrappers.md)
 - [oauth-token-relations-ide-helper.md](./oauth-token-relations-ide-helper.md)
 - [on-demand-pattern.md](./on-demand-pattern.md)
+<<<<<<< .merge_file_aCPbkc
 - [optimization-analysis-1.md](./optimization-analysis-user-module-documentation.md)
 - [optimization-analysis-2.md](./optimization-analysis.md)
 - [optimization-analysis-dry-kiss.md](./optimization-analysis-dry-kiss.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [optimization-recommendations-1.md](./optimization-recommendations-raccomandazioni-ottimizzazione-modulo-user.md)
+=======
+- [optimization-analysis-1.md](./optimization-analysis-1.md)
+- [optimization-analysis-2.md](./optimization-analysis-2.md)
+- [optimization-analysis-dry-kiss.md](./optimization-analysis-dry-kiss.md)
+- [optimization-analysis.md](./optimization-analysis.md)
+- [optimization-recommendations-1.md](./optimization-recommendations-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [optimization-recommendations-2.md](./optimization-recommendations-2.md)
 - [optimization-recommendations.md](./optimization-recommendations.md)
 - [optimization.md](./optimization.md)
@@ -2664,11 +3524,19 @@
 - [ottimizzazioniry-kiss.md](./ottimizzazioniry-kiss.md)
 - [overview-extended.md](./overview-extended.md)
 - [packages.md](./packages.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./parental-inheritance.md)
 - [parental-inheritance.md](./parental-inheritance.md)
 - [parental.md](./parental.md)
 - [passport-admin-actions-1.md](./passport-admin-actions.md)
 - [passport-admin-actions-2.md](./passport-admin-actions.md)
+=======
+- [parental-inheritance-1.md](./parental-inheritance-1.md)
+- [parental-inheritance.md](./parental-inheritance.md)
+- [parental.md](./parental.md)
+- [passport-admin-actions-1.md](./passport-admin-actions-1.md)
+- [passport-admin-actions-2.md](./passport-admin-actions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [passport-admin-actions.md](./passport-admin-actions.md)
 - [passport-cluster-completion-status.md](./passport-cluster-completion-status.md)
 - [passport-cluster-completion.md](./passport-cluster-completion.md)
@@ -2697,7 +3565,11 @@
 - [passport-complete-management-debate.md](./passport-complete-management-debate.md)
 - [passport-filament-cluster-proposal.md](./passport-filament-cluster-proposal.md)
 - [passport-implementation-summary-1.md](./passport-implementation-summary-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [passport-implementation-summary-2.md](./passport-implementation-summary.md)
+=======
+- [passport-implementation-summary-2.md](./passport-implementation-summary-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [passport-implementation-summary.md](./passport-implementation-summary.md)
 - [passport-implementation.md](./passport-implementation.md)
 - [passport-integration.md](./passport-integration.md)
@@ -2710,6 +3582,7 @@
 - [passport.md](./passport.md)
 - [password-translation-completion-.md](./password-translation-completion-.md)
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-historical.md)
 - [password-translation-completion-2025.md](./password-translation-completion-historical.md)
@@ -2717,6 +3590,15 @@
 - [password.md](./password.md)
 - [path-conventions-1.md](./path-conventions.md)
 - [path-conventions-2.md](./path-conventions-user.md)
+=======
+- [password-translation-completion-2.md](./password-translation-completion-2.md)
+- [password-translation-completion-2025-1.md](./password-translation-completion-historical-1.md)
+- [password-translation-completion-2025.md](./password-translation-completion-historical.md)
+- [password-translation-completion.md](./password-translation-completion.md)
+- [password.md](./password.md)
+- [path-conventions-1.md](./path-conventions-1.md)
+- [path-conventions-2.md](./path-conventions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [path-conventions.md](./path-conventions.md)
 - [payment.md](./payment.md)
 - [performance-issues.md](./performance-issues.md)
@@ -2732,7 +3614,11 @@
 - [phpinsightss.md](./phpinsightss.md)
 - [phpmd-errors.md](./phpmd-errors.md)
 - [phpmd-phpinsights-corrections-.md](./phpmd-phpinsights-corrections-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
+=======
+- [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
 - [phpmd-report.md](./phpmd-report.md)
 - [phpmd.md](./phpmd.md)
@@ -2749,7 +3635,11 @@
 - [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
 - [phpstan-corrections.md](./phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements-.md](./phpstan-dry-kiss-improvements-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements.md)
+=======
+- [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-dry-kiss-improvements-2.md](./phpstan-dry-kiss-improvements-2.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
 - [phpstan-dry-kiss-improvements-3.md](./phpstan-dry-kiss-improvements-3.md)
@@ -2760,15 +3650,24 @@
 - [phpstan-errors-roadmap.md](./phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./phpstan-fix-plan-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fix-plan-1.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-2.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-3.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-4.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-5.md](./phpstan-fix-plan.md)
+=======
+- [phpstan-fix-plan-1.md](./phpstan-fix-plan-1.md)
+- [phpstan-fix-plan-2.md](./phpstan-fix-plan-2.md)
+- [phpstan-fix-plan-3.md](./phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-4.md](./phpstan-fix-plan-4.md)
+- [phpstan-fix-plan-5.md](./phpstan-fix-plan-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fix-plan-user.md](./phpstan-fix-plan-user.md)
 - [phpstan-fix-plan.md](./phpstan-fix-plan.md)
 - [phpstan-fix-roadmap.md](./phpstan-fix-roadmap.md)
 - [phpstan-fixes-.md](./phpstan-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-1.md](./phpstan-fixes-1.md)
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
@@ -2786,12 +3685,35 @@
 - [phpstan-fixes-8.md](./phpstan-fixes.md)
 - [phpstan-fixes-archive-1.md](./phpstan-fixes-archive-1.md)
 - [phpstan-fixes-archive-2.md](./phpstan-fixes-archive.md)
+=======
+- [phpstan-fixes-1-1.md](./phpstan-fixes-1-1.md)
+- [phpstan-fixes-1.md](./phpstan-fixes-1.md)
+- [phpstan-fixes-2-1.md](./phpstan-fixes-2-1.md)
+- [phpstan-fixes-2.md](./phpstan-fixes-2.md)
+- [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-1.md)
+- [phpstan-fixes-2025-10-01.deprecated.md](./phpstan-fixes-2025-10-01.deprecated.md)
+- [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
+- [phpstan-fixes-3-1.md](./phpstan-fixes-3-1.md)
+- [phpstan-fixes-3-2.md](./phpstan-fixes-3-2.md)
+- [phpstan-fixes-3.md](./phpstan-fixes-3.md)
+- [phpstan-fixes-4.md](./phpstan-fixes-4.md)
+- [phpstan-fixes-5.md](./phpstan-fixes-5.md)
+- [phpstan-fixes-6.md](./phpstan-fixes-6.md)
+- [phpstan-fixes-7.md](./phpstan-fixes-7.md)
+- [phpstan-fixes-8.md](./phpstan-fixes-8.md)
+- [phpstan-fixes-archive-1.md](./phpstan-fixes-archive-1.md)
+- [phpstan-fixes-archive-2.md](./phpstan-fixes-archive-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-complete.md](./phpstan-fixes-complete.md)
 - [phpstan-fixes-conflict-276dc0.md](./phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-.md](./phpstan-fixes-gennaio-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-modulo-user.md)
+=======
+- [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-2.md](./phpstan-fixes-gennaio-2.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./phpstan-fixes-gennaio-2025-complete.md)
 - [phpstan-fixes-gennaio-2025.md](./phpstan-fixes-gennaio-2025.md)
@@ -2824,15 +3746,25 @@
 - [phpstan-progress-report.md](./phpstan-progress-report.md)
 - [phpstan-progress-summary.md](./phpstan-progress-summary.md)
 - [phpstan-progress.md](./phpstan-progress.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-relationship-fix-1.md](./phpstan-relationship-fix.md)
 - [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-correzione-type-hints.md)
+=======
+- [phpstan-relationship-fix-1.md](./phpstan-relationship-fix-1.md)
+- [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-relationship-fix.md](./phpstan-relationship-fix.md)
 - [phpstan-relationship.md](./phpstan-relationship.md)
 - [phpstan-report-initial.md](./phpstan-report-initial.md)
 - [phpstan-resolution-debate.md](./phpstan-resolution-debate.md)
 - [phpstan-resolutionebate.md](./phpstan-resolutionebate.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-roadmap-1.md](./phpstan-roadmap.md)
 - [phpstan-roadmap-2.md](./phpstan-roadmap.md)
+=======
+- [phpstan-roadmap-1.md](./phpstan-roadmap-1.md)
+- [phpstan-roadmap-2.md](./phpstan-roadmap-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-roadmap.md](./phpstan-roadmap.md)
 - [phpstan-success.md](./phpstan-success.md)
 - [phpstan-syntax-blockers.md](./phpstan-syntax-blockers.md)
@@ -2841,11 +3773,19 @@
 - [phpstan-user.md](./phpstan-user.md)
 - [phpstan.md](./phpstan.md)
 - [phpstanebate.md](./phpstanebate.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstanes-1.md](./phpstanes.md)
 - [phpstanes-2.md](./phpstanes.md)
 - [phpstanes-276dc0.md](./phpstanes-276dc0.md)
 - [phpstanes-2e.md](./phpstanes-2e.md)
 - [phpstanes-3.md](./phpstanes.md)
+=======
+- [phpstanes-1.md](./phpstanes-1.md)
+- [phpstanes-2.md](./phpstanes-2.md)
+- [phpstanes-276dc0.md](./phpstanes-276dc0.md)
+- [phpstanes-2e.md](./phpstanes-2e.md)
+- [phpstanes-3.md](./phpstanes-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstanes-passport.md](./phpstanes-passport.md)
 - [phpstanes.md](./phpstanes.md)
 - [phpstanry-kiss-improvements.md](./phpstanry-kiss-improvements.md)
@@ -2859,6 +3799,7 @@
 - [ponytail-audit-over-engineering.md](./ponytail-audit-over-engineering.md)
 - [ponytail-audit.md](./ponytail-audit.md)
 - [prd.md](./prd.md)
+<<<<<<< .merge_file_aCPbkc
 - [product-launch-plan-1.md](./product-launch-plan.md)
 - [product-launch-plan-2.md](./product-launch-plan-user-module.md)
 - [product-launch-plan.md](./product-launch-plan.md)
@@ -2871,11 +3812,26 @@
 - [product-strategy.md](./product-strategy.md)
 - [profile-management-1.md](./profile-management.md)
 - [profile-management-2.md](./profile-management.md)
+=======
+- [product-launch-plan-1.md](./product-launch-plan-1.md)
+- [product-launch-plan-2.md](./product-launch-plan-2.md)
+- [product-launch-plan.md](./product-launch-plan.md)
+- [product-requirements.md](./product-requirements.md)
+- [product-roadmap-1.md](./product-roadmap-1.md)
+- [product-roadmap-2.md](./product-roadmap-2.md)
+- [product-roadmap.md](./product-roadmap.md)
+- [product-strategy-1.md](./product-strategy-1.md)
+- [product-strategy-2.md](./product-strategy-2.md)
+- [product-strategy.md](./product-strategy.md)
+- [profile-management-1.md](./profile-management-1.md)
+- [profile-management-2.md](./profile-management-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [profile-management.md](./profile-management.md)
 - [profile.md](./profile.md)
 - [profiles-id-uuid-policy.md](./profiles-id-uuid-policy.md)
 - [project-structure.md](./project-structure.md)
 - [qmd-setup.md](./qmd-setup.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-1.md](./quality.md)
 - [quality-11.md](./quality.md)
 - [quality-improvements-summary.md](./quality-improvements-summary.md)
@@ -2884,28 +3840,56 @@
 - [quality-status-11.md](./quality-status.md)
 - [quality-status-2.md](./quality-status.md)
 - [quality-status-2025-11.md](./quality-status.md)
+=======
+- [quality-1.md](./quality-1.md)
+- [quality-11.md](./quality-11.md)
+- [quality-improvements-summary.md](./quality-improvements-summary.md)
+- [quality-improvements.md](./quality-improvements.md)
+- [quality-status-1.md](./quality-status-1.md)
+- [quality-status-11.md](./quality-status-11.md)
+- [quality-status-2.md](./quality-status-2.md)
+- [quality-status-2025-11.md](./quality-status-2025-11.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-status-nov.md](./quality-status-nov.md)
 - [quality-status.md](./quality-status.md)
 - [quality-tooling.md](./quality-tooling.md)
 - [quality-tools-final-report-.md](./quality-tools-final-report-.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-tools-final-report-1.md](./quality-tools-final-report.md)
+=======
+- [quality-tools-final-report-1.md](./quality-tools-final-report-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-tools-final-report.md](./quality-tools-final-report.md)
 - [quality-tools-final.md](./quality-tools-final.md)
 - [quality-tools-report.md](./quality-tools-report.md)
 - [quality-tools.md](./quality-tools.md)
 - [quality.md](./quality.md)
+<<<<<<< .merge_file_aCPbkc
 - [query-optimization-analysis-1.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-2.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-3.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-4.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-5.md](./query-optimization-analysis.md)
+=======
+- [query-optimization-analysis-1.md](./query-optimization-analysis-1.md)
+- [query-optimization-analysis-2.md](./query-optimization-analysis-2.md)
+- [query-optimization-analysis-3.md](./query-optimization-analysis-3.md)
+- [query-optimization-analysis-4.md](./query-optimization-analysis-4.md)
+- [query-optimization-analysis-5.md](./query-optimization-analysis-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [query-optimization-analysis.md](./query-optimization-analysis.md)
 - [query-optimization.md](./query-optimization.md)
 - [r1-form-fields-self-validate.md](./r1-form-fields-self-validate.md)
 - [readme-en.md](./readme-en.md)
+<<<<<<< .merge_file_aCPbkc
 - [readme-fullcalendar-scheduler-1-1.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler-1.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler-2.md](./readme-fullcalendar-scheduler.md)
+=======
+- [readme-fullcalendar-scheduler-1-1.md](./readme-fullcalendar-scheduler-1-1.md)
+- [readme-fullcalendar-scheduler-1.md](./readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler-2.md](./readme-fullcalendar-scheduler-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [readme-fullcalendar-scheduler.md](./readme-fullcalendar-scheduler.md)
 - [readme-new.md](./readme-new.md)
 - [readme.md](./readme.md)
@@ -2919,6 +3903,7 @@
 - [redundancy-fixes.md](./redundancy-fixes.md)
 - [redundancy-report.md](./redundancy-report.md)
 - [redundancyes.md](./redundancyes.md)
+<<<<<<< .merge_file_aCPbkc
 - [registration-widget-1.md](./registration-widget.md)
 - [registration-widget-2.md](./registration-widget-documentation.md)
 - [registration-widget-3.md](./registration-widget-3.md)
@@ -2929,6 +3914,18 @@
 - [registration-widget-fileupload.md](./registration-widget-fileupload.md)
 - [registration-widget-update-1-1.md](./registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
 - [registration-widget-update-1.md](./registration-widget-update.md)
+=======
+- [registration-widget-1.md](./registration-widget-1.md)
+- [registration-widget-2.md](./registration-widget-2.md)
+- [registration-widget-3.md](./registration-widget-3.md)
+- [registration-widget-fileupload-fix-1-1.md](./registration-widget-fileupload-fix-1-1.md)
+- [registration-widget-fileupload-fix-1.md](./registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix-2.md](./registration-widget-fileupload-fix-2.md)
+- [registration-widget-fileupload-fix.md](./registration-widget-fileupload-fix.md)
+- [registration-widget-fileupload.md](./registration-widget-fileupload.md)
+- [registration-widget-update-1-1.md](./registration-widget-update-1-1.md)
+- [registration-widget-update-1.md](./registration-widget-update-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [registration-widget-update-2.md](./registration-widget-update-2.md)
 - [registration-widget-update.md](./registration-widget-update.md)
 - [registration-widget.md](./registration-widget.md)
@@ -2943,48 +3940,84 @@
 - [resources-array-keys-philosophy.md](./resources-array-keys-philosophy.md)
 - [resources-array-keys.md](./resources-array-keys.md)
 - [resources-corrections-summary-.md](./resources-corrections-summary-.md)
+<<<<<<< .merge_file_aCPbkc
 - [resources-corrections-summary-1.md](./resources-corrections-summary.md)
+=======
+- [resources-corrections-summary-1.md](./resources-corrections-summary-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [resources-corrections-summary.md](./resources-corrections-summary.md)
 - [resources-corrections.md](./resources-corrections.md)
 - [roadmap-.md](./roadmap-.md)
 - [roadmap-1-1.md](./roadmap-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [roadmap-1.md](./roadmap.md)
 - [roadmap-2025.md](./roadmap-2025.md)
 - [roadmap-and-issues.md](./roadmap-and-issues.md)
 - [roadmap-ands.md](./roadmap-ands.md)
 - [roadmap-archive-1.md](./roadmap-archive.md)
+=======
+- [roadmap-1.md](./roadmap-1.md)
+- [roadmap-2025.md](./roadmap-2025.md)
+- [roadmap-and-issues.md](./roadmap-and-issues.md)
+- [roadmap-ands.md](./roadmap-ands.md)
+- [roadmap-archive-1.md](./roadmap-archive-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roadmap-complete.md](./roadmap-complete.md)
 - [roadmap-conflict.md](./roadmap-conflict.md)
 - [roadmap.md](./roadmap.md)
 - [roles-migration-philosophy-fix.md](./roles-migration-philosophy-fix.md)
 - [roles-migration.md](./roles-migration.md)
+<<<<<<< .merge_file_aCPbkc
 - [roles-permissions-1.md](./roles-permissions.md)
 - [roles-permissions-2.md](./roles-permissions.md)
 - [roles-permissions-3.md](./roles-permissions.md)
+=======
+- [roles-permissions-1.md](./roles-permissions-1.md)
+- [roles-permissions-2.md](./roles-permissions-2.md)
+- [roles-permissions-3.md](./roles-permissions-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./roles-permissions.md)
 - [root-file-policy.md](./root-file-policy.md)
 - [root-files-hygiene.md](./root-files-hygiene.md)
 - [routing-best-practices-1.md](./routing-best-practices-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [routing-best-practices-2.md](./routing-best-practices.md)
 - [routing-best-practices.md](./routing-best-practices.md)
 - [routing-error-solution-1.md](./routing-error-solution.md)
+=======
+- [routing-best-practices-2.md](./routing-best-practices-2.md)
+- [routing-best-practices.md](./routing-best-practices.md)
+- [routing-error-solution-1.md](./routing-error-solution-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [routing-error-solution-2.md](./routing-error-solution-2.md)
 - [routing-error-solution.md](./routing-error-solution.md)
 - [routing-solution.md](./routing-solution.md)
 - [rules-index.md](./rules-index.md)
 - [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md)
 - [scheduler-license-key-1.md](./scheduler-license-key-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [scheduler-license-key-2.md](./scheduler-license-key.md)
+=======
+- [scheduler-license-key-2.md](./scheduler-license-key-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [scheduler-license-key.md](./scheduler-license-key.md)
 - [schema-org-enhancements.md](./schema-org-enhancements.md)
 - [schema.md](./schema.md)
 - [second-brain.md](./second-brain.md)
 - [service-provider-architecture.md](./service-provider-architecture.md)
+<<<<<<< .merge_file_aCPbkc
 - [service-provider-warning-1.md](./service-provider-warning.md)
 - [service-provider-warning-2.md](./service-provider-warning-user.md)
 - [service-provider-warning.md](./service-provider-warning.md)
 - [session-management-1.md](./session-management-1.md)
 - [session-management-2.md](./session-management.md)
+=======
+- [service-provider-warning-1.md](./service-provider-warning-1.md)
+- [service-provider-warning-2.md](./service-provider-warning-2.md)
+- [service-provider-warning.md](./service-provider-warning.md)
+- [session-management-1.md](./session-management-1.md)
+- [session-management-2.md](./session-management-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [session-management.md](./session-management.md)
 - [setup-super-admin.md](./setup-super-admin.md)
 - [social-auth-architecture.md](./social-auth-architecture.md)
@@ -2995,6 +4028,7 @@
 - [socialite.md](./socialite.md)
 - [spatie-models-verification.md](./spatie-models-verification.md)
 - [spatie-permission-philosophy.md](./spatie-permission-philosophy.md)
+<<<<<<< .merge_file_aCPbkc
 - [spatie-permission-teams-laravel-13.md](./spatie-permission-teams-laravel.md)
 - [spatie-permission.md](./spatie-permission.md)
 - [spatie-permissions-1.md](./spatie-permissions-1.md)
@@ -3012,6 +4046,25 @@
 - [sprint-planning.md](./sprint-planning.md)
 - [sso-guide.md](./sso-guide.md)
 - [sso-providers-implementation-1.md](./sso-providers-implementation.md)
+=======
+- [spatie-permission-teams-laravel-13.md](./spatie-permission-teams-laravel-13.md)
+- [spatie-permission.md](./spatie-permission.md)
+- [spatie-permissions-1.md](./spatie-permissions-1.md)
+- [spatie-permissions-2.md](./spatie-permissions-2.md)
+- [spatie-permissions-methods-1.md](./spatie-permissions-methods-1.md)
+- [spatie-permissions-methods-2.md](./spatie-permissions-methods-2.md)
+- [spatie-permissions-methods-3.md](./spatie-permissions-methods-3.md)
+- [spatie-permissions-methods-4.md](./spatie-permissions-methods-4.md)
+- [spatie-permissions-methods-5.md](./spatie-permissions-methods-5.md)
+- [spatie-permissions-methods.md](./spatie-permissions-methods.md)
+- [spatie-permissions.md](./spatie-permissions.md)
+- [sprint-planning-1.md](./sprint-planning-1.md)
+- [sprint-planning-2.md](./sprint-planning-2.md)
+- [sprint-planning-meeting.md](./sprint-planning-meeting.md)
+- [sprint-planning.md](./sprint-planning.md)
+- [sso-guide.md](./sso-guide.md)
+- [sso-providers-implementation-1.md](./sso-providers-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [sso-providers-implementation-2.md](./sso-providers-implementation-2.md)
 - [sso-providers-implementation-3.md](./sso-providers-implementation-3.md)
 - [sso-providers-implementation-4.md](./sso-providers-implementation-4.md)
@@ -3034,6 +4087,7 @@
 - [task-schema-org-person-enhancement.md](./task-schema-org-person-enhancement.md)
 - [task-test-socialite-actions.md](./task-test-socialite-actions.md)
 - [tasks-schema-org-person.md](./tasks-schema-org-person.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./team-bindings-fix.md)
 - [team-bindings-fix-2.md](./team-bindings-fix-binding-models-modulo-user.md)
 - [team-bindings-fix-3.md](./team-bindings-fix-3.md)
@@ -3041,33 +4095,60 @@
 - [team-bindings.md](./team-bindings.md)
 - [team-contract-usage-reasoning-1.md](./team-contract-usage-reasoning.md)
 - [team-contract-usage-reasoning-2.md](./team-contract-usage-reasoning.md)
+=======
+- [team-bindings-fix-1.md](./team-bindings-fix-1.md)
+- [team-bindings-fix-2.md](./team-bindings-fix-2.md)
+- [team-bindings-fix-3.md](./team-bindings-fix-3.md)
+- [team-bindings-fix.md](./team-bindings-fix.md)
+- [team-bindings.md](./team-bindings.md)
+- [team-contract-usage-reasoning-1.md](./team-contract-usage-reasoning-1.md)
+- [team-contract-usage-reasoning-2.md](./team-contract-usage-reasoning-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
 - [team-user-composite-primary-key-fix.md](./team-user-composite-primary-key-fix.md)
 - [team-user-composite-priy-key.md](./team-user-composite-priy-key.md)
 - [team-user-permissions-fix.md](./team-user-permissions-fix.md)
 - [team-user-permissions.md](./team-user-permissions.md)
+<<<<<<< .merge_file_aCPbkc
 - [teams-migration-laraxot-compliance-1.md](./teams-migration-laraxot-compliance-fix.md)
+=======
+- [teams-migration-laraxot-compliance-1.md](./teams-migration-laraxot-compliance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [teams-migration-laraxot-compliance-2.md](./teams-migration-laraxot-compliance-2.md)
 - [teams-migration-laraxot-compliance.md](./teams-migration-laraxot-compliance.md)
 - [teams.md](./teams.md)
 - [terms-and-conditions-1.md](./terms-and-conditions-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [terms-and-conditions-2.md](./terms-and-conditions.md)
+=======
+- [terms-and-conditions-2.md](./terms-and-conditions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [terms-and-conditions.md](./terms-and-conditions.md)
 - [terms-conditions.md](./terms-conditions.md)
 - [testcase-hasusertestcase-property-conflict-fixed.md](./testcase-hasusertestcase-property-conflict-fixed.md)
 - [testcase-sqlite-to-mysql-fix.md](./testcase-sqlite-to-mysql-fix.md)
 - [testcase-sqlite-to-mysql.md](./testcase-sqlite-to-mysql.md)
 - [testing-phpstan-progress.md](./testing-phpstan-progress.md)
+<<<<<<< .merge_file_aCPbkc
 - [testing-rules-1.md](./testing-rules.md)
 - [testing-rules-2.md](./testing-rules.md)
+=======
+- [testing-rules-1.md](./testing-rules-1.md)
+- [testing-rules-2.md](./testing-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [testing-rules.md](./testing-rules.md)
 - [testing-strategy.md](./testing-strategy.md)
 - [testing-structure.md](./testing-structure.md)
 - [testing-user-command-integration-fix.md](./testing-user-command-integration-fix.md)
 - [testing-user-command-integration.md](./testing-user-command-integration.md)
 - [testing.md](./testing.md)
+<<<<<<< .merge_file_aCPbkc
 - [theme-translation-conflicts-resolution-1.md](./theme-translation-conflicts-resolution-user.md)
 - [theme-translation-conflicts-resolution-2.md](./theme-translation-conflicts-resolution.md)
+=======
+- [theme-translation-conflicts-resolution-1.md](./theme-translation-conflicts-resolution-1.md)
+- [theme-translation-conflicts-resolution-2.md](./theme-translation-conflicts-resolution-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [theme-translation-conflicts-resolution.md](./theme-translation-conflicts-resolution.md)
 - [theme-translations-resolution.md](./theme-translations-resolution.md)
 - [third-party-model-patterns.md](./third-party-model-patterns.md)
@@ -3076,10 +4157,17 @@
 - [tips.md](./tips.md)
 - [todo.md](./todo.md)
 - [traits-complete-guide-1-1.md](./traits-complete-guide-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./traits-complete-guide.md)
 - [traits-complete-guide-2.md](./traits-complete-guide-2.md)
 - [traits-complete-guide.md](./traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./traits-hasteams-analisi-corretta.md)
+=======
+- [traits-complete-guide-1.md](./traits-complete-guide-1.md)
+- [traits-complete-guide-2.md](./traits-complete-guide-2.md)
+- [traits-complete-guide.md](./traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta-2.md](./traits-hasteams-analisi-corretta-2.md)
 - [traits-hasteams-analisi-corretta-3.md](./traits-hasteams-analisi-corretta-3.md)
 - [traits-hasteams-analisi-corretta.md](./traits-hasteams-analisi-corretta.md)
@@ -3090,7 +4178,11 @@
 - [traits.md](./traits.md)
 - [translation-architecture.md](./translation-architecture.md)
 - [translation-best-practices-1.md](./translation-best-practices-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-best-practices-2.md](./translation-best-practices.md)
+=======
+- [translation-best-practices-2.md](./translation-best-practices-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-best-practices.md](./translation-best-practices.md)
 - [translation-city-field-refactor-.md](./translation-city-field-refactor-.md)
 - [translation-city-field-refactor-1.md](./translation-city-field-refactor-1.md)
@@ -3104,14 +4196,23 @@
 - [translation-fixes.md](./translation-fixes.md)
 - [translation-guidelines.md](./translation-guidelines.md)
 - [translation-key-prototype.md](./translation-key-prototype.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-keys-rules-1.md](./translation-keys-rules.md)
 - [translation-keys-rules-2.md](./translation-keys-rules.md)
+=======
+- [translation-keys-rules-1.md](./translation-keys-rules-1.md)
+- [translation-keys-rules-2.md](./translation-keys-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-keys-rules.md](./translation-keys-rules.md)
 - [translation-keys.md](./translation-keys.md)
 - [translation-maintenance-log.md](./translation-maintenance-log.md)
 - [translation-resolution-prototype.md](./translation-resolution-prototype.md)
 - [translation-syntax-fixes-.md](./translation-syntax-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
+=======
+- [translation-syntax-fixes-1.md](./translation-syntax-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-syntax-fixes-2025.md](./translation-syntax-fixes-2025.md)
 - [translation-syntax-fixes.md](./translation-syntax-fixes.md)
 - [translation-syntaxes.md](./translation-syntaxes.md)
@@ -3123,6 +4224,7 @@
 - [two-factor-2.md](./two-factor-2.md)
 - [two-factor.md](./two-factor.md)
 - [type-safety-improvements.md](./type-safety-improvements.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-1.md](./updates.md)
 - [updates-12.md](./updates.md)
 - [updates-2025.md](./updates-historical.md)
@@ -3148,13 +4250,44 @@
 - [user-moderation-strategy-1.md](./user-moderation-strategy.md)
 - [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
 - [user-moderation-strategy-3.md](./user-moderation-strategy.md)
+=======
+- [updates-1.md](./updates-1.md)
+- [updates-12.md](./updates-12.md)
+- [updates-2025.md](./updates-historical.md)
+- [updates-dec.md](./updates-dec.md)
+- [updates.md](./updates.md)
+- [user-factory-advanced-integration-1.md](./user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration-2.md](./user-factory-advanced-integration-2.md)
+- [user-factory-advanced-integration-3.md](./user-factory-advanced-integration-3.md)
+- [user-factory-advanced-integration.md](./user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1-1.md](./user-factory-complete-ecosystem-integration-1-1.md)
+- [user-factory-complete-ecosystem-integration-1.md](./user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration-2.md](./user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration.md](./user-factory-complete-ecosystem-integration.md)
+- [user-factory-ecosystem-integration.md](./user-factory-ecosystem-integration.md)
+- [user-factory-integration-1-1.md](./user-factory-integration-1-1.md)
+- [user-factory-integration-1.md](./user-factory-integration-1.md)
+- [user-factory-integration-2.md](./user-factory-integration-2.md)
+- [user-factory-integration.md](./user-factory-integration.md)
+- [user-invitation-1.md](./user-invitation-1.md)
+- [user-invitation-2.md](./user-invitation-2.md)
+- [user-invitation.md](./user-invitation.md)
+- [user-management.md](./user-management.md)
+- [user-moderation-strategy-1.md](./user-moderation-strategy-1.md)
+- [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
+- [user-moderation-strategy-3.md](./user-moderation-strategy-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-moderation-strategy.md](./user-moderation-strategy.md)
 - [user-profile-aration.md](./user-profile-aration.md)
 - [user-profile-models.md](./user-profile-models.md)
 - [user-profile-separation.md](./user-profile-separation.md)
 - [user-profile.md](./user-profile.md)
 - [user-research-1.md](./user-research-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [user-research-2.md](./user-research.md)
+=======
+- [user-research-2.md](./user-research-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-research.md](./user-research.md)
 - [user-states.md](./user-states.md)
 - [user-vs-profile.md](./user-vs-profile.md)
@@ -3168,6 +4301,7 @@
 - [vendor-extension.md](./vendor-extension.md)
 - [viewclient-infolist-implementation-philosophy.md](./viewclient-infolist-implementation-philosophy.md)
 - [viewclient-infolist-implementation.md](./viewclient-infolist-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-blade-implementation-1.md](./volt-blade-implementation.md)
 - [volt-blade-implementation-2.md](./volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
@@ -3194,6 +4328,34 @@
 - [volt-folio-logout-debug.md](./volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./volt-folio-logout-error.md)
 - [volt-folio-logout-error-2.md](./volt-folio-logout-error-errore.md)
+=======
+- [volt-blade-implementation-1.md](./volt-blade-implementation-1.md)
+- [volt-blade-implementation-2.md](./volt-blade-implementation-2.md)
+- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
+- [volt-blade-implementation-error-1.md](./volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error-2.md](./volt-blade-implementation-error-2.md)
+- [volt-blade-implementation-error-3.md](./volt-blade-implementation-error-3.md)
+- [volt-blade-implementation-error.md](./volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./volt-blade-implementation.md)
+- [volt-errors-1.md](./volt-errors-1.md)
+- [volt-errors-2.md](./volt-errors-2.md)
+- [volt-errors.md](./volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation-2.md](./volt-folio-auth-implementation-2.md)
+- [volt-folio-auth-implementation-3.md](./volt-folio-auth-implementation-3.md)
+- [volt-folio-auth-implementation.md](./volt-folio-auth-implementation.md)
+- [volt-folio-error-1.md](./volt-folio-error-1.md)
+- [volt-folio-error-2.md](./volt-folio-error-2.md)
+- [volt-folio-error.md](./volt-folio-error.md)
+- [volt-folio-logout-1-1.md](./volt-folio-logout-1-1.md)
+- [volt-folio-logout-1.md](./volt-folio-logout-1.md)
+- [volt-folio-logout-2.md](./volt-folio-logout-2.md)
+- [volt-folio-logout-debug-1.md](./volt-folio-logout-debug-1.md)
+- [volt-folio-logout-debug-2.md](./volt-folio-logout-debug-2.md)
+- [volt-folio-logout-debug.md](./volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./volt-folio-logout-error-1.md)
+- [volt-folio-logout-error-2.md](./volt-folio-logout-error-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error-3.md](./volt-folio-logout-error-3.md)
 - [volt-folio-logout-error.md](./volt-folio-logout-error.md)
 - [volt-folio-logout.md](./volt-folio-logout.md)
@@ -3201,6 +4363,7 @@
 - [volt-folio.md](./volt-folio.md)
 - [volt-logout-1.md](./volt-logout-1.md)
 - [volt-logout-2.md](./volt-logout-2.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-logout-action-1.md](./volt-logout-action.md)
 - [volt-logout-action-2.md](./volt-logout-action.md)
 - [volt-logout-action.md](./volt-logout-action.md)
@@ -3224,6 +4387,31 @@
 - [widget-translation.md](./widget-translation.md)
 - [widgets-structure-1.md](./widgets-structure.md)
 - [widgets-structure-2.md](./widgets-structure-user.md)
+=======
+- [volt-logout-action-1.md](./volt-logout-action-1.md)
+- [volt-logout-action-2.md](./volt-logout-action-2.md)
+- [volt-logout-action.md](./volt-logout-action.md)
+- [volt-logout.md](./volt-logout.md)
+- [volt-missing-directive-1.md](./volt-missing-directive-1.md)
+- [volt-missing-directive-2.md](./volt-missing-directive-2.md)
+- [volt-missing-directive.md](./volt-missing-directive.md)
+- [volt-missingirective.md](./volt-missingirective.md)
+- [volts.md](./volts.md)
+- [widget-rendering-analysis-1.md](./widget-rendering-analysis-1.md)
+- [widget-rendering-analysis-2.md](./widget-rendering-analysis-2.md)
+- [widget-rendering-analysis-3.md](./widget-rendering-analysis-3.md)
+- [widget-rendering-analysis-4.md](./widget-rendering-analysis-4.md)
+- [widget-rendering-analysis-5.md](./widget-rendering-analysis-5.md)
+- [widget-rendering-analysis.md](./widget-rendering-analysis.md)
+- [widget-rendering.md](./widget-rendering.md)
+- [widget-translation-rules-1.md](./widget-translation-rules-1.md)
+- [widget-translation-rules-2.md](./widget-translation-rules-2.md)
+- [widget-translation-rules-3.md](./widget-translation-rules-3.md)
+- [widget-translation-rules.md](./widget-translation-rules.md)
+- [widget-translation.md](./widget-translation.md)
+- [widgets-structure-1.md](./widgets-structure-1.md)
+- [widgets-structure-2.md](./widgets-structure-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [widgets-structure.md](./widgets-structure.md)
 - [windsurf-rules.md](./windsurf-rules.md)
 - [windsurf.md](./windsurf.md)
@@ -3508,18 +4696,32 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [profile.md](./-integration/profile.md)
 - [repos.md](./-integration/repos.md)
 - [socialite.md](./-integration/socialite.md)
+<<<<<<< .merge_file_aCPbkc
 - [spatie-permissions-1.md](./-integration/spatie-permissions.md)
 - [spatie-permissions-2.md](./-integration/spatie-permissions.md)
+=======
+- [spatie-permissions-1.md](./-integration/spatie-permissions-1.md)
+- [spatie-permissions-2.md](./-integration/spatie-permissions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [spatie-permissions.md](./-integration/spatie-permissions.md)
 - [sso.md](./-integration/sso.md)
 - [stats.md](./-integration/stats.md)
 - [tailwind.md](./-integration/tailwind.md)
+<<<<<<< .merge_file_aCPbkc
 - [terms-and-conditions-1.md](./-integration/terms-and-conditions.md)
 - [terms-and-conditions-2.md](./-integration/terms-and-conditions.md)
 - [terms-and-conditions.md](./-integration/terms-and-conditions.md)
 - [tips.md](./-integration/tips.md)
 - [two-factor-1.md](./-integration/two-factor.md)
 - [two-factor-2.md](./-integration/two-factor.md)
+=======
+- [terms-and-conditions-1.md](./-integration/terms-and-conditions-1.md)
+- [terms-and-conditions-2.md](./-integration/terms-and-conditions-2.md)
+- [terms-and-conditions.md](./-integration/terms-and-conditions.md)
+- [tips.md](./-integration/tips.md)
+- [two-factor-1.md](./-integration/two-factor-1.md)
+- [two-factor-2.md](./-integration/two-factor-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [two-factor.md](./-integration/two-factor.md)
 
 ## -integration/archive
@@ -3553,6 +4755,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 ## archive
 
 - [actions-path-convention.md](./archive/actions-path-convention.md)
+<<<<<<< .merge_file_aCPbkc
 - [actions-structure-1.md](./archive/actions-structure.md)
 - [actions-structure.md](./archive/actions-structure.md)
 - [architecture-rules.md](./archive/architecture-rules.md)
@@ -3571,6 +4774,26 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-widgets-view-namespaces-1.md](./archive/auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./archive/avatar-implementation.md)
+=======
+- [actions-structure-1.md](./archive/actions-structure-1.md)
+- [actions-structure.md](./archive/actions-structure.md)
+- [architecture-rules.md](./archive/architecture-rules.md)
+- [auth-blade-structure.md](./archive/auth-blade-structure.md)
+- [auth-components-best-practices-1.md](./archive/auth-components-best-practices-1.md)
+- [auth-components-best-practices.md](./archive/auth-components-best-practices.md)
+- [auth-login-implementation-1.md](./archive/auth-login-implementation-1.md)
+- [auth-login-implementation.md](./archive/auth-login-implementation.md)
+- [auth-logout-blade.md](./archive/auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./archive/auth-logout-implementation-1.md)
+- [auth-logout-implementation.md](./archive/auth-logout-implementation.md)
+- [auth-logout.md](./archive/auth-logout.md)
+- [auth-pages-implementation-1.md](./archive/auth-pages-implementation-1.md)
+- [auth-pages-implementation.md](./archive/auth-pages-implementation.md)
+- [auth-widget-rules.md](./archive/auth-widget-rules.md)
+- [auth-widgets-view-namespaces-1.md](./archive/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
+- [avatar-implementation-1.md](./archive/avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation.md](./archive/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
@@ -3580,18 +4803,30 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [baseuser-spatie-duplicates-analysis.md](./archive/baseuser-spatie-duplicates-analysis.md)
 - [business-logic-analysis.md](./archive/business-logic-analysis.md)
 - [business-logic-deep-dive.md](./archive/business-logic-deep-dive.md)
+<<<<<<< .merge_file_aCPbkc
 - [cms-link-1.md](./archive/cms-link.md)
+=======
+- [cms-link-1.md](./archive/cms-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [cms-link.md](./archive/cms-link.md)
 - [code-conventions.md](./archive/code-conventions.md)
 - [code-optimization-analysis.md](./archive/code-optimization-analysis.md)
 - [code-quality-analysis.md](./archive/code-quality-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./archive/component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./archive/component-verification-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./archive/component-verification-rules.md)
 - [conflict-resolution-passwordresetwidget.md](./archive/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./archive/conflict-resolution-report.md)
 - [console-commands-philosophy.md](./archive/console-commands-philosophy.md)
 - [cross-database-relations-issue.md](./archive/cross-database-relations-issue.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./archive/custom-login.md)
+=======
+- [custom-login-1.md](./archive/custom-login-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-errors.md](./archive/database-errors.md)
 - [database-issues.md](./archive/database-issues.md)
 - [dentist-moderation-approach.md](./archive/dentist-moderation-approach.md)
@@ -3608,6 +4843,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [filament-4x-compatibility.md](./archive/filament-4x-compatibility.md)
 - [filament-components-reference.md](./archive/filament-components-reference.md)
 - [filament-errors.md](./archive/filament-errors.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-namespace-rules-1.md](./archive/filament-namespace-rules.md)
 - [filament-namespace-rules.md](./archive/filament-namespace-rules.md)
 - [filament-relation-managers-1.md](./archive/filament-relation-managers.md)
@@ -3624,6 +4860,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [fullcalendar-scheduler-quick-reference-1.md](./archive/fullcalendar-scheduler-quick-reference.md)
 - [fullcalendar-scheduler-quick-reference.md](./archive/fullcalendar-scheduler-quick-reference.md)
 - [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy.md)
+=======
+- [filament-namespace-rules-1.md](./archive/filament-namespace-rules-1.md)
+- [filament-namespace-rules.md](./archive/filament-namespace-rules.md)
+- [filament-relation-managers-1.md](./archive/filament-relation-managers-1.md)
+- [filament-relation-managers.md](./archive/filament-relation-managers.md)
+- [filament-resources-organization.md](./archive/filament-resources-organization.md)
+- [filament4-migration.md](./archive/filament4-migration.md)
+- [fullcalendar-scheduler-documentation-summary-1.md](./archive/fullcalendar-scheduler-documentation-summary-1.md)
+- [fullcalendar-scheduler-documentation-summary.md](./archive/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-license-1.md](./archive/fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-key-invalid.md](./archive/fullcalendar-scheduler-license-key-invalid.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./archive/fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./archive/fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./archive/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference.md](./archive/fullcalendar-scheduler-quick-reference.md)
+- [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
@@ -3632,11 +4886,16 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [git-conflicts-resolution.deprecated.md](./archive/git-conflicts-resolution.deprecated.md)
 - [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-3.md)
 - [git-conflicts-resolution.md](./archive/git-conflicts-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [hasteams-currentteam-method-choice.md](./archive/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
 - [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
 - [header-components.md](./archive/header-components.md)
@@ -3650,12 +4909,28 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
 - [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
 - [lang-link-1.md](./archive/lang-link.md)
+=======
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
+- [header-components.md](./archive/header-components.md)
+- [header-language-avatar-implementation-1.md](./archive/header-language-avatar-implementation-1.md)
+- [header-language-avatar-implementation.md](./archive/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1.md](./archive/header-language-selector-with-flags-1.md)
+- [header-language-selector-with-flags.md](./archive/header-language-selector-with-flags.md)
+- [implementation-plan.md](./archive/implementation-plan.md)
+- [index.md](./archive/index.md)
+- [jetstream-vs-laraxot-philosophy-1.md](./archive/jetstream-vs-laraxot-philosophy-1.md)
+- [jetstream-vs-laraxot-philosophy.md](./archive/jetstream-vs-laraxot-philosophy.md)
+- [label-hardcoded-prevention.md](./archive/label-hardcoded-prevention.md)
+- [lang-link-1.md](./archive/lang-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [lang-link.md](./archive/lang-link.md)
 - [livewire-namespace.md](./archive/livewire-namespace.md)
 - [login-filament-widget-error.md](./archive/login-filament-widget-error.md)
 - [login-widget-analysis.md](./archive/login-widget-analysis.md)
 - [login-widget-conversion.md](./archive/login-widget-conversion.md)
 - [logout-analysis.md](./archive/logout-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-analysis-1.md](./archive/logout-blade-analysis.md)
 - [logout-blade-analysis.md](./archive/logout-blade-analysis.md)
 - [logout-blade-conclusions-1.md](./archive/logout-blade-conclusions.md)
@@ -3683,6 +4958,35 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [logout-implementation-with-laravel-localization.md](./archive/logout-implementation-with-laravel-localization.md)
 - [logout-page-fix.md](./archive/logout-page-fix.md)
 - [logout-page-implementation-1.md](./archive/logout-page-implementation.md)
+=======
+- [logout-blade-analysis-1.md](./archive/logout-blade-analysis-1.md)
+- [logout-blade-analysis.md](./archive/logout-blade-analysis.md)
+- [logout-blade-conclusions-1.md](./archive/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions.md](./archive/logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./archive/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis.md](./archive/logout-blade-corrected-analysis.md)
+- [logout-blade-error-analysis-1.md](./archive/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis.md](./archive/logout-blade-error-analysis.md)
+- [logout-blade-implementation-1.md](./archive/logout-blade-implementation-1.md)
+- [logout-blade-implementation.md](./archive/logout-blade-implementation.md)
+- [logout-blade-structure.md](./archive/logout-blade-structure.md)
+- [logout-error-analysis-1.md](./archive/logout-error-analysis-1.md)
+- [logout-error-analysis.md](./archive/logout-error-analysis.md)
+- [logout-event-error-1.md](./archive/logout-event-error-1.md)
+- [logout-event-error.md](./archive/logout-event-error.md)
+- [logout-filament-widget-1.md](./archive/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./archive/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected.md](./archive/logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./archive/logout-filament-widget.md)
+- [logout-implementation-best-practices-1.md](./archive/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices.md](./archive/logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./archive/logout-implementation-error-1.md)
+- [logout-implementation-error.md](./archive/logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./archive/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization.md](./archive/logout-implementation-with-laravel-localization.md)
+- [logout-page-fix.md](./archive/logout-page-fix.md)
+- [logout-page-implementation-1.md](./archive/logout-page-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation.md](./archive/logout-page-implementation.md)
 - [logout-security.md](./archive/logout-security.md)
 - [mcp-integration.md](./archive/mcp-integration.md)
@@ -3690,8 +4994,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [metodi-duplicati-analisi.md](./archive/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./archive/metrics-dashboard.md)
 - [migration-duplicate-resolution.md](./archive/migration-duplicate-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [migration-filament-4.md](./archive/migration-filament.md)
 - [migrazione-filament-4.md](./archive/migrazione-filament.md)
+=======
+- [migration-filament-4.md](./archive/migration-filament-4.md)
+- [migrazione-filament-4.md](./archive/migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [model-inheritance-analysis.md](./archive/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./archive/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./archive/modelli-factory-seeder-analisi.md)
@@ -3700,13 +5009,22 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [module-analysis-1.md](./archive/module-analysis-1.md)
 - [module-analysis.md](./archive/module-analysis.md)
 - [module-structure.md](./archive/module-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-user-1.md](./archive/module-user.md)
 - [namespace-conventions-1.md](./archive/namespace-conventions.md)
+=======
+- [module-user-1.md](./archive/module-user-1.md)
+- [namespace-conventions-1.md](./archive/namespace-conventions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [namespace-conventions.md](./archive/namespace-conventions.md)
 - [navigation-structure.md](./archive/navigation-structure.md)
 - [optimization-analysis.md](./archive/optimization-analysis.md)
 - [optimization-recommendations.md](./archive/optimization-recommendations.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./archive/parental-inheritance.md)
+=======
+- [parental-inheritance-1.md](./archive/parental-inheritance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [password-translation-completion-2025.md](./archive/password-translation-completion-2025.md)
 - [password-translation-completion.md](./archive/password-translation-completion.md)
 - [path-conventions.md](./archive/path-conventions.md)
@@ -3715,7 +5033,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-dry-kiss-improvements.deprecated.md](./archive/phpstan-dry-kiss-improvements.deprecated.md)
 - [phpstan-dry-kiss-improvements.md](./archive/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-.md](./archive/phpstan-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./archive/phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fixes-1.md](./archive/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
 - [phpstan-fixes.deprecated.md](./archive/phpstan-fixes.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/phpstan-fixes-2025.md)
@@ -3725,6 +5047,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-relationship-fix.md](./archive/phpstan-relationship-fix.md)
 - [phpstan-roadmap.md](./archive/phpstan-roadmap.md)
 - [profile-management.md](./archive/profile-management.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-status-11.md](./archive/quality-status.md)
 - [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
 - [query-optimization-analysis.md](./archive/query-optimization-analysis.md)
@@ -3736,6 +5059,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [registration-widget-update.md](./archive/registration-widget-update.md)
 - [registration-widget.md](./archive/registration-widget.md)
 - [roles-permissions-1.md](./archive/roles-permissions.md)
+=======
+- [quality-status-11.md](./archive/quality-status-11.md)
+- [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
+- [query-optimization-analysis.md](./archive/query-optimization-analysis.md)
+- [readme-fullcalendar-scheduler-1.md](./archive/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler.md](./archive/readme-fullcalendar-scheduler.md)
+- [registration-widget-1.md](./archive/registration-widget-1.md)
+- [registration-widget-fileupload-fix-1.md](./archive/registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix.md](./archive/registration-widget-fileupload-fix.md)
+- [registration-widget-update.md](./archive/registration-widget-update.md)
+- [registration-widget.md](./archive/registration-widget.md)
+- [roles-permissions-1.md](./archive/roles-permissions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./archive/roles-permissions.md)
 - [routing-best-practices.md](./archive/routing-best-practices.md)
 - [routing-error-solution.md](./archive/routing-error-solution.md)
@@ -3744,14 +5080,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [session-management.md](./archive/session-management.md)
 - [spatie-permissions-methods.md](./archive/spatie-permissions-methods.md)
 - [sso-providers-implementation.md](./archive/sso-providers-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./archive/team-bindings-fix.md)
+=======
+- [team-bindings-fix-1.md](./archive/team-bindings-fix-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-bindings-fix.md](./archive/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./archive/team-contract-usage-reasoning.md)
 - [testing-rules.md](./archive/testing-rules.md)
 - [theme-translation-conflicts-resolution.md](./archive/theme-translation-conflicts-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./archive/traits-complete-guide.md)
 - [traits-complete-guide.md](./archive/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta.md)
+=======
+- [traits-complete-guide-1.md](./archive/traits-complete-guide-1.md)
+- [traits-complete-guide.md](./archive/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta.md](./archive/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./archive/translation-best-practices.md)
 - [translation-city-field-refactor-.md](./archive/translation-city-field-refactor-.md)
@@ -3759,6 +5105,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translation-city-field-refactor.deprecated.md](./archive/translation-city-field-refactor.deprecated.md)
 - [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
 - [translation-keys-rules.md](./archive/translation-keys-rules.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-12.md](./archive/updates.md)
 - [user-factory-advanced-integration-1.md](./archive/user-factory-advanced-integration.md)
 - [user-factory-advanced-integration.md](./archive/user-factory-advanced-integration.md)
@@ -3781,13 +5128,41 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [volt-folio-logout-1.md](./archive/volt-folio-logout.md)
 - [volt-folio-logout-debug.md](./archive/volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./archive/volt-folio-logout-error.md)
+=======
+- [updates-12.md](./archive/updates-12.md)
+- [user-factory-advanced-integration-1.md](./archive/user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration.md](./archive/user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1.md](./archive/user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration.md](./archive/user-factory-complete-ecosystem-integration.md)
+- [user-factory-integration-1.md](./archive/user-factory-integration-1.md)
+- [user-factory-integration.md](./archive/user-factory-integration.md)
+- [user-invitation.md](./archive/user-invitation.md)
+- [user-moderation-strategy-1.md](./archive/user-moderation-strategy-1.md)
+- [user-moderation-strategy.md](./archive/user-moderation-strategy.md)
+- [userfactory-advanced-implementation-complete.md](./archive/userfactory-advanced-implementation-complete.md)
+- [volt-blade-implementation-1.md](./archive/volt-blade-implementation-1.md)
+- [volt-blade-implementation-error-1.md](./archive/volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error.md](./archive/volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./archive/volt-blade-implementation.md)
+- [volt-errors.md](./archive/volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./archive/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation.md](./archive/volt-folio-auth-implementation.md)
+- [volt-folio-error.md](./archive/volt-folio-error.md)
+- [volt-folio-logout-1.md](./archive/volt-folio-logout-1.md)
+- [volt-folio-logout-debug.md](./archive/volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./archive/volt-folio-logout-error-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error.md](./archive/volt-folio-logout-error.md)
 - [volt-folio-logout.md](./archive/volt-folio-logout.md)
 - [volt-logout-action.md](./archive/volt-logout-action.md)
 - [volt-logout.md](./archive/volt-logout.md)
 - [volt-missing-directive.md](./archive/volt-missing-directive.md)
 - [widget-rendering-analysis.md](./archive/widget-rendering-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [widget-translation-rules-1.md](./archive/widget-translation-rules.md)
+=======
+- [widget-translation-rules-1.md](./archive/widget-translation-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [widget-translation-rules.md](./archive/widget-translation-rules.md)
 - [widgets-structure.md](./archive/widgets-structure.md)
 
@@ -3801,6 +5176,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [analysis.md](./archive/historical/analysis.md)
 - [architecture-rules.md](./archive/historical/architecture-rules.md)
 - [auth-blade-structure.md](./archive/historical/auth-blade-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-componenti-autenticazione.md)
 - [auth-components-best-practices.md](./archive/historical/auth-components-best-practices.md)
 - [auth-login-implementation-1.md](./archive/historical/auth-login-implementation-implementazione-corretta-pagina.md)
@@ -3816,6 +5192,23 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-widgets-view-namespaces.md](./archive/historical/auth-widgets-view-namespaces.md)
 - [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
 - [avatar-implementation-1.md](./archive/historical/avatar-implementation-implementazione.md)
+=======
+- [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-1.md)
+- [auth-components-best-practices.md](./archive/historical/auth-components-best-practices.md)
+- [auth-login-implementation-1.md](./archive/historical/auth-login-implementation-1.md)
+- [auth-login-implementation.md](./archive/historical/auth-login-implementation.md)
+- [auth-logout-blade.md](./archive/historical/auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./archive/historical/auth-logout-implementation-1.md)
+- [auth-logout-implementation.md](./archive/historical/auth-logout-implementation.md)
+- [auth-logout.md](./archive/historical/auth-logout.md)
+- [auth-pages-implementation-1.md](./archive/historical/auth-pages-implementation-1.md)
+- [auth-pages-implementation.md](./archive/historical/auth-pages-implementation.md)
+- [auth-widget-rules.md](./archive/historical/auth-widget-rules.md)
+- [auth-widgets-view-namespaces-1.md](./archive/historical/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces.md](./archive/historical/auth-widgets-view-namespaces.md)
+- [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
+- [avatar-implementation-1.md](./archive/historical/avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation.md](./archive/historical/avatar-implementation.md)
 - [baseuser-conflicts.md](./archive/historical/baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./archive/historical/baseuser-dry-violation-analysis.md)
@@ -3827,12 +5220,20 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [case-sensitivity-rules.md](./archive/historical/case-sensitivity-rules.md)
 - [chartjs-datalabels-user-integration.md](./archive/historical/chartjs-datalabels-user-integration.md)
 - [charts-implementation.md](./archive/historical/charts-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [cms-link-1.md](./archive/historical/cms-link-collegamento-al-modulo.md)
+=======
+- [cms-link-1.md](./archive/historical/cms-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [cms-link.md](./archive/historical/cms-link.md)
 - [code-optimization-analysis.md](./archive/historical/code-optimization-analysis.md)
 - [code-quality-analysis.md](./archive/historical/code-quality-analysis.md)
 - [code-quality-tools.md](./archive/historical/code-quality-tools.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./archive/historical/component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./archive/historical/component-verification-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./archive/historical/component-verification-rules.md)
 - [conflict-resolution-passwordresetwidget.md](./archive/historical/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./archive/historical/conflict-resolution-report.md)
@@ -3842,11 +5243,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [coverage.md](./archive/historical/coverage.md)
 - [critical-filament-rule-getinfolistschema-string-keys.md](./archive/historical/critical-filament-rule-getinfolistschema-string-keys.md)
 - [cross-database-relations-issue.md](./archive/historical/cross-database-relations-issue.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./archive/historical/custom-login-implementazione-personalizzato.md)
 - [custom-login.md](./archive/historical/custom-login.md)
 - [cyclomatic-complexity-report.md](./archive/historical/cyclomatic-complexity-report.md)
 - [database-errors.md](./archive/historical/database-errors.md)
 - [database-issues-1.md](./archive/historical/database-issues-user-module.md)
+=======
+- [custom-login-1.md](./archive/historical/custom-login-1.md)
+- [custom-login.md](./archive/historical/custom-login.md)
+- [cyclomatic-complexity-report.md](./archive/historical/cyclomatic-complexity-report.md)
+- [database-errors.md](./archive/historical/database-errors.md)
+- [database-issues-1.md](./archive/historical/database-issues-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-issues.md](./archive/historical/database-issues.md)
 - [database-population.md](./archive/historical/database-population.md)
 - [dentist-moderation-approach.md](./archive/historical/dentist-moderation-approach.md)
@@ -3856,7 +5265,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [doctor-registration-widget.md](./archive/historical/doctor-registration-widget.md)
 - [doctor-registration.md](./archive/historical/doctor-registration.md)
 - [documentation-standards.md](./archive/historical/documentation-standards.md)
+<<<<<<< .merge_file_aCPbkc
 - [dry-kiss-analysis-1.md](./archive/historical/dry-kiss-analysis-modulo-user.md)
+=======
+- [dry-kiss-analysis-1.md](./archive/historical/dry-kiss-analysis-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [dry-kiss-analysis-conflict-018b09.md](./archive/historical/dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./archive/historical/dry-kiss-analysis-conflict.md)
 - [dry-kiss-analysis.md](./archive/historical/dry-kiss-analysis.md)
@@ -3874,7 +5287,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [features.md](./archive/historical/features.md)
 - [filament-4-actions-namespace.md](./archive/historical/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./archive/historical/filament-4-widget-rendering-guide.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-4x-compatibility-1.md](./archive/historical/filament-4x-compatibility-compatibilita-modulo-user.md)
+=======
+- [filament-4x-compatibility-1.md](./archive/historical/filament-4x-compatibility-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-4x-compatibility-conflict.md](./archive/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./archive/historical/filament-4x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./archive/historical/filament-auth-pages-exceptions.md)
@@ -3883,10 +5300,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [filament-components-reference.md](./archive/historical/filament-components-reference.md)
 - [filament-errors.md](./archive/historical/filament-errors.md)
 - [filament-filters-and-widgets.md](./archive/historical/filament-filters-and-widgets.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-namespace-rules-1.md](./archive/historical/filament-namespace-rules.md)
 - [filament-namespace-rules.md](./archive/historical/filament-namespace-rules.md)
 - [filament-nesting-opportunities.md](./archive/historical/filament-nesting-opportunities.md)
 - [filament-relation-managers-1.md](./archive/historical/filament-relation-managers-modulo-user.md)
+=======
+- [filament-namespace-rules-1.md](./archive/historical/filament-namespace-rules-1.md)
+- [filament-namespace-rules.md](./archive/historical/filament-namespace-rules.md)
+- [filament-nesting-opportunities.md](./archive/historical/filament-nesting-opportunities.md)
+- [filament-relation-managers-1.md](./archive/historical/filament-relation-managers-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-relation-managers.md](./archive/historical/filament-relation-managers.md)
 - [filament-resources-coverage-analysis.md](./archive/historical/filament-resources-coverage-analysis.md)
 - [filament-resources-organization.md](./archive/historical/filament-resources-organization.md)
@@ -3898,6 +5322,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [final-summary.md](./archive/historical/final-summary.md)
 - [fixes-user-module-phpstan.md](./archive/historical/fixes-user-module-phpstan.md)
 - [folio-volt-best-practices.md](./archive/historical/folio-volt-best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-documentation-summary-1.md](./archive/historical/fullcalendar-scheduler-documentation-summary-documentazione-completa.md)
 - [fullcalendar-scheduler-documentation-summary.md](./archive/historical/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./archive/historical/fullcalendar-scheduler-license.md)
@@ -3908,6 +5333,18 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [fullcalendar-scheduler-quick-reference.md](./archive/historical/fullcalendar-scheduler-quick-reference.md)
 - [gdpr.md](./archive/historical/gdpr.md)
 - [generic-user-moderation-strategy-1.md](./archive/historical/generic-user-moderation-strategy.md)
+=======
+- [fullcalendar-scheduler-documentation-summary-1.md](./archive/historical/fullcalendar-scheduler-documentation-summary-1.md)
+- [fullcalendar-scheduler-documentation-summary.md](./archive/historical/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-license-1.md](./archive/historical/fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./archive/historical/fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./archive/historical/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference.md](./archive/historical/fullcalendar-scheduler-quick-reference.md)
+- [gdpr.md](./archive/historical/gdpr.md)
+- [generic-user-moderation-strategy-1.md](./archive/historical/generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy.md](./archive/historical/generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./archive/historical/get-new-password-action-business-logic.md)
 - [git-conflict-resolution.md](./archive/historical/git-conflict-resolution.md)
@@ -3916,6 +5353,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [git-conflicts-resolution-summary.md](./archive/historical/git-conflicts-resolution-summary.md)
 - [git-conflicts-resolution.md](./archive/historical/git-conflicts-resolution.md)
 - [guida-migrazione-step-by-step.md](./archive/historical/guida-migrazione-step-by-step.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
@@ -3926,18 +5364,38 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-implementazione-selettore-lingua-utente.md)
 - [header-language-avatar-implementation.md](./archive/historical/header-language-avatar-implementation.md)
 - [header-language-selector-with-flags-1.md](./archive/historical/header-language-selector-with-flags-implementazione-selettore-lingua-bandiere.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./archive/historical/hasteams-currentteam-method-choice-1.md)
+- [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
+- [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
+- [hasteams-trait-duplicate-methods.md](./archive/historical/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa.md)
+- [header-components.md](./archive/historical/header-components.md)
+- [header-language-avatar-implementation-1.md](./archive/historical/header-language-avatar-implementation-1.md)
+- [header-language-avatar-implementation.md](./archive/historical/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1.md](./archive/historical/header-language-selector-with-flags-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [header-language-selector-with-flags.md](./archive/historical/header-language-selector-with-flags.md)
 - [implementation-plan.md](./archive/historical/implementation-plan.md)
 - [implementation-summary.md](./archive/historical/implementation-summary.md)
 - [index-conflict.md](./archive/historical/index-conflict.md)
 - [index.md](./archive/historical/index.md)
 - [intelligent-login-redirect.md](./archive/historical/intelligent-login-redirect.md)
+<<<<<<< .merge_file_aCPbkc
 - [jetstream-vs-laraxot-philosophy-1.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1.md](./archive/historical/jetstream-vs-laraxot-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [jetstream-vs-laraxot-philosophy.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
 - [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
 - [js-conflicts.md](./archive/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./archive/historical/label-hardcoded-prevention.md)
+<<<<<<< .merge_file_aCPbkc
 - [lang-link-1.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+=======
+- [lang-link-1.md](./archive/historical/lang-link-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [lang-link.md](./archive/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./archive/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./archive/historical/laraxot-migration-policy.md)
@@ -3950,7 +5408,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [login-filament-widget-error.md](./archive/historical/login-filament-widget-error.md)
 - [login-issue-resolution-report.md](./archive/historical/login-issue-resolution-report.md)
 - [login-widget-analysis.md](./archive/historical/login-widget-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-conversione-livewire-auth-filament.md)
+=======
+- [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-conversion.md](./archive/historical/login-widget-conversion.md)
 - [login-widget-filament-schema-errors-roadmap.md](./archive/historical/login-widget-filament-schema-errors-roadmap.md)
 - [login-widget-livewire-binding-fix.md](./archive/historical/login-widget-livewire-binding-fix.md)
@@ -3959,6 +5421,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [login-widget-translation-audit.md](./archive/historical/login-widget-translation-audit.md)
 - [loginwidget-error-analysis.md](./archive/historical/loginwidget-error-analysis.md)
 - [logout-analysis.md](./archive/historical/logout-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-analisi-file-php.md)
 - [logout-blade-analysis.md](./archive/historical/logout-blade-analysis.md)
 - [logout-blade-conclusions-1.md](./archive/historical/logout-blade-conclusions-conclusioni-raccomandazioni-php.md)
@@ -3986,6 +5449,35 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [logout-implementation-with-laravel-localization.md](./archive/historical/logout-implementation-with-laravel-localization.md)
 - [logout-page-fix.md](./archive/historical/logout-page-fix.md)
 - [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-implementazione-pagina-tema-one.md)
+=======
+- [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-1.md)
+- [logout-blade-analysis.md](./archive/historical/logout-blade-analysis.md)
+- [logout-blade-conclusions-1.md](./archive/historical/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions.md](./archive/historical/logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./archive/historical/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis.md](./archive/historical/logout-blade-corrected-analysis.md)
+- [logout-blade-error-analysis-1.md](./archive/historical/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis.md](./archive/historical/logout-blade-error-analysis.md)
+- [logout-blade-implementation-1.md](./archive/historical/logout-blade-implementation-1.md)
+- [logout-blade-implementation.md](./archive/historical/logout-blade-implementation.md)
+- [logout-blade-structure.md](./archive/historical/logout-blade-structure.md)
+- [logout-error-analysis-1.md](./archive/historical/logout-error-analysis-1.md)
+- [logout-error-analysis.md](./archive/historical/logout-error-analysis.md)
+- [logout-event-error-1.md](./archive/historical/logout-event-error-1.md)
+- [logout-event-error.md](./archive/historical/logout-event-error.md)
+- [logout-filament-widget-1.md](./archive/historical/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./archive/historical/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected.md](./archive/historical/logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./archive/historical/logout-filament-widget.md)
+- [logout-implementation-best-practices-1.md](./archive/historical/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices.md](./archive/historical/logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./archive/historical/logout-implementation-error-1.md)
+- [logout-implementation-error.md](./archive/historical/logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./archive/historical/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization.md](./archive/historical/logout-implementation-with-laravel-localization.md)
+- [logout-page-fix.md](./archive/historical/logout-page-fix.md)
+- [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation.md](./archive/historical/logout-page-implementation.md)
 - [logout-security.md](./archive/historical/logout-security.md)
 - [mcp-database-tools.md](./archive/historical/mcp-database-tools.md)
@@ -4012,7 +5504,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [migration-unicity-rule.md](./archive/historical/migration-unicity-rule.md)
 - [migration-violations-analysis.md](./archive/historical/migration-violations-analysis.md)
 - [migration-violations-current-status.md](./archive/historical/migration-violations-current-status.md)
+<<<<<<< .merge_file_aCPbkc
 - [migrazione-filament-4.md](./archive/historical/migrazione-filament.md)
+=======
+- [migrazione-filament-4.md](./archive/historical/migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [missing-factories-audit.md](./archive/historical/missing-factories-audit.md)
 - [missing-features-analysis.md](./archive/historical/missing-features-analysis.md)
 - [missing-filament-resources-analysis.md](./archive/historical/missing-filament-resources-analysis.md)
@@ -4026,6 +5522,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [module-analysis-complete.md](./archive/historical/module-analysis-complete.md)
 - [module-analysis.md](./archive/historical/module-analysis.md)
 - [module-structure.md](./archive/historical/module-structure.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-user-1.md](./archive/historical/module-user-modulo.md)
 - [module-user.md](./archive/historical/module-user.md)
 - [namespace-conventions-1.md](./archive/historical/namespace-conventions-convenzioni-modulo-user.md)
@@ -4033,6 +5530,15 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [navigation-structure.md](./archive/historical/navigation-structure.md)
 - [navigation-translations-completion-roadmap.md](./archive/historical/navigation-translations-completion-roadmap.md)
 - [navigation-translations-fixes-january-2026.md](./archive/historical/navigation-translations-fixes.md)
+=======
+- [module-user-1.md](./archive/historical/module-user-1.md)
+- [module-user.md](./archive/historical/module-user.md)
+- [namespace-conventions-1.md](./archive/historical/namespace-conventions-1.md)
+- [namespace-conventions.md](./archive/historical/namespace-conventions.md)
+- [navigation-structure.md](./archive/historical/navigation-structure.md)
+- [navigation-translations-completion-roadmap.md](./archive/historical/navigation-translations-completion-roadmap.md)
+- [navigation-translations-fixes-january-2026.md](./archive/historical/navigation-translations-fixes-january-2026.md)
+>>>>>>> .merge_file_5nGk0n
 - [navigation-translations-fixes-january.md](./archive/historical/navigation-translations-fixes-january.md)
 - [navigation-translations-fixes.md](./archive/historical/navigation-translations-fixes.md)
 - [nested-resources.md](./archive/historical/nested-resources.md)
@@ -4051,7 +5557,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [ottimizzazioni-super-dry-kiss.md](./archive/historical/ottimizzazioni-super-dry-kiss.md)
 - [ottimizzazioni-user.md](./archive/historical/ottimizzazioni-user.md)
 - [packages.md](./archive/historical/packages.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./archive/historical/parental-inheritance-ereditarieta-tabella-singola-nome.md)
+=======
+- [parental-inheritance-1.md](./archive/historical/parental-inheritance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [parental-inheritance.md](./archive/historical/parental-inheritance.md)
 - [parental.md](./archive/historical/parental.md)
 - [passport-admin-actions.md](./archive/historical/passport-admin-actions.md)
@@ -4099,7 +5609,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-final-progress.md](./archive/historical/phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./archive/historical/phpstan-fix-plan-.md)
 - [phpstan-fix-roadmap.md](./archive/historical/phpstan-fix-roadmap.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-2.md](./archive/historical/phpstan-fixes-2.md)
 - [phpstan-fixes.deprecated.md](./archive/historical/phpstan-fixes.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/historical/phpstan-fixes-2025.md)
@@ -4108,8 +5622,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-conflict-276dc0.md](./archive/historical/phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./archive/historical/phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./archive/historical/phpstan-fixes-conflict.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-1.md](./archive/historical/phpstan-fixes-gennaio-modulo-user.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./archive/historical/phpstan-fixes-complete.md)
+=======
+- [phpstan-fixes-gennaio-1.md](./archive/historical/phpstan-fixes-gennaio-1.md)
+- [phpstan-fixes-gennaio-2025-complete.md](./archive/historical/phpstan-fixes-gennaio-2025-complete.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-2025.md](./archive/historical/phpstan-fixes-gennaio-2025.md)
 - [phpstan-fixes-gennaio-complete.md](./archive/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/historical/phpstan-fixes-gennaio.md)
@@ -4137,13 +5656,18 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [policies.md](./archive/historical/policies.md)
 - [policy-phpstan-errors.md](./archive/historical/policy-phpstan-errors.md)
 - [quality-improvements-summary.md](./archive/historical/quality-improvements-summary.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-status-11.md](./archive/historical/quality-status-user-module-november.md)
+=======
+- [quality-status-11.md](./archive/historical/quality-status-11.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-status.md](./archive/historical/quality-status.md)
 - [quality-tooling.md](./archive/historical/quality-tooling.md)
 - [quality-tools-final-report-.md](./archive/historical/quality-tools-final-report-.md)
 - [quality-tools-report.md](./archive/historical/quality-tools-report.md)
 - [quality-tools.md](./archive/historical/quality-tools.md)
 - [query-optimization-analysis.md](./archive/historical/query-optimization-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-documentation.md)
 - [readme-fullcalendar-scheduler.md](./archive/historical/readme-fullcalendar-scheduler.md)
 - [readme-new.md](./archive/historical/readme-new.md)
@@ -4154,6 +5678,18 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [registration-widget-fileupload-fix-1.md](./archive/historical/registration-widget-fileupload-fix-registrationwidget.md)
 - [registration-widget-fileupload-fix.md](./archive/historical/registration-widget-fileupload-fix.md)
 - [registration-widget-update-1.md](./archive/historical/registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
+=======
+- [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler.md](./archive/historical/readme-fullcalendar-scheduler.md)
+- [readme-new.md](./archive/historical/readme-new.md)
+- [redundancy-fixes-january-2026.md](./archive/historical/redundancy-fixes-january-2026.md)
+- [redundancy-fixes-january.md](./archive/historical/redundancy-fixes-january.md)
+- [redundancy-fixes.md](./archive/historical/redundancy-fixes.md)
+- [registration-widget-1.md](./archive/historical/registration-widget-1.md)
+- [registration-widget-fileupload-fix-1.md](./archive/historical/registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix.md](./archive/historical/registration-widget-fileupload-fix.md)
+- [registration-widget-update-1.md](./archive/historical/registration-widget-update-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [registration-widget-update.md](./archive/historical/registration-widget-update.md)
 - [registration-widget.md](./archive/historical/registration-widget.md)
 - [repositories.md](./archive/historical/repositories.md)
@@ -4161,13 +5697,21 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [resource-translation-violation-critical-fix.md](./archive/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./archive/historical/resources-array-keys-philosophy.md)
 - [resources-corrections-summary-.md](./archive/historical/resources-corrections-summary-.md)
+<<<<<<< .merge_file_aCPbkc
 - [roadmap-1.md](./archive/historical/roadmap.md)
+=======
+- [roadmap-1.md](./archive/historical/roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roadmap-2025.md](./archive/historical/roadmap-2025.md)
 - [roadmap-and-issues.md](./archive/historical/roadmap-and-issues.md)
 - [roadmap-complete.md](./archive/historical/roadmap-complete.md)
 - [roadmap-conflict.md](./archive/historical/roadmap-conflict.md)
 - [roles-migration-philosophy-fix.md](./archive/historical/roles-migration-philosophy-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [roles-permissions-1.md](./archive/historical/roles-permissions-gestione-coerente-guard-name.md)
+=======
+- [roles-permissions-1.md](./archive/historical/roles-permissions-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./archive/historical/roles-permissions.md)
 - [routing-best-practices.md](./archive/historical/routing-best-practices.md)
 - [routing-error-solution.md](./archive/historical/routing-error-solution.md)
@@ -4185,7 +5729,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [structure.md](./archive/historical/structure.md)
 - [sushi-schema-fix.md](./archive/historical/sushi-schema-fix.md)
 - [syntax-errors-to-fix.md](./archive/historical/syntax-errors-to-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./archive/historical/team-bindings-fix-binding-models-modulo-user.md)
+=======
+- [team-bindings-fix-1.md](./archive/historical/team-bindings-fix-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-bindings-fix.md](./archive/historical/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./archive/historical/team-contract-usage-reasoning.md)
 - [team-user-composite-primary-key-fix.md](./archive/historical/team-user-composite-primary-key-fix.md)
@@ -4199,9 +5747,15 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [theme-translation-conflicts-resolution.md](./archive/historical/theme-translation-conflicts-resolution.md)
 - [third-party-model-patterns.md](./archive/historical/third-party-model-patterns.md)
 - [todo.md](./archive/historical/todo.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./archive/historical/traits-complete-guide-guida-completa-ai-trait.md)
 - [traits-complete-guide.md](./archive/historical/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./archive/historical/traits-hasteams-analisi-corretta-trait-filosofia-laraxot.md)
+=======
+- [traits-complete-guide-1.md](./archive/historical/traits-complete-guide-1.md)
+- [traits-complete-guide.md](./archive/historical/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./archive/historical/traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta.md](./archive/historical/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analysis-corrected.md](./archive/historical/traits-hasteams-analysis-corrected.md)
 - [traits-hasteams-analysis-corretta.md](./archive/historical/traits-hasteams-analysis-corretta.md)
@@ -4221,6 +5775,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translations.md](./archive/historical/translations.md)
 - [troubleshooting-login-component.md](./archive/historical/troubleshooting-login-component.md)
 - [type-safety-improvements.md](./archive/historical/type-safety-improvements.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-12.md](./archive/historical/updates.md)
 - [updates.md](./archive/historical/updates.md)
 - [user-factory-advanced-integration-1.md](./archive/historical/user-factory-advanced-integration-userfactory-modulo-nome-progetto.md)
@@ -4231,12 +5786,25 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [user-factory-integration.md](./archive/historical/user-factory-integration.md)
 - [user-management.md](./archive/historical/user-management.md)
 - [user-moderation-strategy-1.md](./archive/historical/user-moderation-strategy.md)
+=======
+- [updates-12.md](./archive/historical/updates-12.md)
+- [updates.md](./archive/historical/updates.md)
+- [user-factory-advanced-integration-1.md](./archive/historical/user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration.md](./archive/historical/user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1.md](./archive/historical/user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration.md](./archive/historical/user-factory-complete-ecosystem-integration.md)
+- [user-factory-integration-1.md](./archive/historical/user-factory-integration-1.md)
+- [user-factory-integration.md](./archive/historical/user-factory-integration.md)
+- [user-management.md](./archive/historical/user-management.md)
+- [user-moderation-strategy-1.md](./archive/historical/user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-profile-models.md](./archive/historical/user-profile-models.md)
 - [user-profile-separation.md](./archive/historical/user-profile-separation.md)
 - [userfactory-advanced-implementation-complete.md](./archive/historical/userfactory-advanced-implementation-complete.md)
 - [uuid-trait-conflict-resolution.md](./archive/historical/uuid-trait-conflict-resolution.md)
 - [vendor-extension-pattern.md](./archive/historical/vendor-extension-pattern.md)
 - [viewclient-infolist-implementation-philosophy.md](./archive/historical/viewclient-infolist-implementation-philosophy.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-blade-implementation-1.md](./archive/historical/volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-error-1.md](./archive/historical/volt-blade-implementation-error-analisi-dell-errore-implementazione.md)
 - [volt-blade-implementation-error.md](./archive/historical/volt-blade-implementation-error.md)
@@ -4248,13 +5816,30 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [volt-folio-logout-1.md](./archive/historical/volt-folio-logout-implementazione-corretta.md)
 - [volt-folio-logout-debug.md](./archive/historical/volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./archive/historical/volt-folio-logout-error-errore.md)
+=======
+- [volt-blade-implementation-1.md](./archive/historical/volt-blade-implementation-1.md)
+- [volt-blade-implementation-error-1.md](./archive/historical/volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error.md](./archive/historical/volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./archive/historical/volt-blade-implementation.md)
+- [volt-errors.md](./archive/historical/volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./archive/historical/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation.md](./archive/historical/volt-folio-auth-implementation.md)
+- [volt-folio-error.md](./archive/historical/volt-folio-error.md)
+- [volt-folio-logout-1.md](./archive/historical/volt-folio-logout-1.md)
+- [volt-folio-logout-debug.md](./archive/historical/volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./archive/historical/volt-folio-logout-error-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error.md](./archive/historical/volt-folio-logout-error.md)
 - [volt-folio-logout.md](./archive/historical/volt-folio-logout.md)
 - [volt-logout-action.md](./archive/historical/volt-logout-action.md)
 - [volt-logout.md](./archive/historical/volt-logout.md)
 - [volt-missing-directive.md](./archive/historical/volt-missing-directive.md)
 - [widget-rendering-analysis.md](./archive/historical/widget-rendering-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [widget-translation-rules-1.md](./archive/historical/widget-translation-rules-nome-progetto-project.md)
+=======
+- [widget-translation-rules-1.md](./archive/historical/widget-translation-rules-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [widget-translation-rules.md](./archive/historical/widget-translation-rules.md)
 - [widgets-structure.md](./archive/historical/widgets-structure.md)
 - [xotbase-resource-getpages-automatic.md](./archive/historical/xotbase-resource-getpages-automatic.md)
@@ -4272,7 +5857,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-2025.md](./archive/old_tasks/phpstan-fixes-2025.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
+=======
+- [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-gennaio-2025.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -4333,8 +5922,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 - [make-filament-user-crash-loop.md](./bug-fixes/make-filament-user-crash-loop.md)
 - [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-.md)
+<<<<<<< .merge_file_aCPbkc
 - [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods.md)
+=======
+- [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods-1-1.md)
+- [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [parse-error-orphan-methods-2.md](./bug-fixes/parse-error-orphan-methods-2.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-3.md](./bug-fixes/parse-error-orphan-methods-3.md)
@@ -4403,7 +5997,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [assign-module-command.md](./console_commands/assign-module-command.md)
 - [change-password-command.md](./console_commands/change-password-command.md)
 - [console-commands-philosophy-1-1.md](./console_commands/console-commands-philosophy-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [console-commands-philosophy-1.md](./console_commands/console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-1.md](./console_commands/console-commands-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [console-commands-philosophy-2.md](./console_commands/console-commands-philosophy-2.md)
 - [console-commands-philosophy.md](./console_commands/console-commands-philosophy.md)
 - [console-commands.md](./console_commands/console-commands.md)
@@ -4432,9 +6030,15 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## database
 
+<<<<<<< .merge_file_aCPbkc
 - [migration-safety-rules-1.md](./database/migration-safety-rules-never-destroy-data.md)
 - [migration-safety-rules.md](./database/migration-safety-rules.md)
 - [profile-uuid-philosophy-1.md](./database/profile-uuid-philosophy.md)
+=======
+- [migration-safety-rules-1.md](./database/migration-safety-rules-1.md)
+- [migration-safety-rules.md](./database/migration-safety-rules.md)
+- [profile-uuid-philosophy-1.md](./database/profile-uuid-philosophy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [profile-uuid-philosophy.md](./database/profile-uuid-philosophy.md)
 
 ## database/migrations
@@ -4472,6 +6076,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## filament
 
+<<<<<<< .merge_file_aCPbkc
 - [filament-table-columns-1.md](./filament/filament-table-columns.md)
 - [filament-table-columns-2.md](./filament/filament-table-columns.md)
 - [filament-table-columns-3.md](./filament/filament-table-columns-convenzione-metodo-gettablecolumns.md)
@@ -4479,6 +6084,15 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [teams-relation-manager-1.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-2.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-3.md](./filament/teams-relation-manager-teamsrelationmanager-user-module.md)
+=======
+- [filament-table-columns-1.md](./filament/filament-table-columns-1.md)
+- [filament-table-columns-2.md](./filament/filament-table-columns-2.md)
+- [filament-table-columns-3.md](./filament/filament-table-columns-3.md)
+- [filament-table-columns.md](./filament/filament-table-columns.md)
+- [teams-relation-manager-1.md](./filament/teams-relation-manager-1.md)
+- [teams-relation-manager-2.md](./filament/teams-relation-manager-2.md)
+- [teams-relation-manager-3.md](./filament/teams-relation-manager-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [teams-relation-manager.md](./filament/teams-relation-manager.md)
 - [widgets-responsive-layout.md](./filament/widgets-responsive-layout.md)
 
@@ -4520,7 +6134,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [base-classes-corrections.deprecated.md](./fixes/base-classes-corrections.deprecated.md)
 - [base-classes-corrections-3.md](./fixes/base-classes-corrections-3.md)
 - [base-classes-corrections.md](./fixes/base-classes-corrections.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1.md](./fixes/phpstan-fixes.md)
+=======
+- [phpstan-fixes-1.md](./fixes/phpstan-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes.md](./fixes/phpstan-fixes.md)
 - [phpstanes.md](./fixes/phpstanes.md)
 
@@ -5380,11 +6998,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## performance
 
+<<<<<<< .merge_file_aCPbkc
 - [authentication-performance-optimization-1.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-3.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-4.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-5.md](./performance/authentication-performance-optimization.md)
+=======
+- [authentication-performance-optimization-1.md](./performance/authentication-performance-optimization-1.md)
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
+- [authentication-performance-optimization-3.md](./performance/authentication-performance-optimization-3.md)
+- [authentication-performance-optimization-4.md](./performance/authentication-performance-optimization-4.md)
+- [authentication-performance-optimization-5.md](./performance/authentication-performance-optimization-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [authentication-performance-optimization.md](./performance/authentication-performance-optimization.md)
 
 ## performance/archive
@@ -5430,7 +7056,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## roadmap
 
+<<<<<<< .merge_file_aCPbkc
 - [00-index-1.md](./roadmap/00-index.md)
+=======
+- [00-index-1.md](./roadmap/00-index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [00-index.md](./roadmap/00-index.md)
 - [00-overview.md](./roadmap/00-overview.md)
 - [01-current-state.md](./roadmap/01-current-state.md)
@@ -5442,7 +7072,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [04-milestones.md](./roadmap/04-milestones.md)
 - [04-risks.md](./roadmap/04-risks.md)
 - [05-risks.md](./roadmap/05-risks.md)
+<<<<<<< .merge_file_aCPbkc
 - [2025-q4-roadmap.md](./roadmap/roadmap.md)
+=======
+- [2025-q4-roadmap.md](./roadmap/2025-q4-roadmap.md)
+>>>>>>> .merge_file_5nGk0n
 - [2fa.md](./roadmap/2fa.md)
 - [bottlenecks.md](./roadmap/bottlenecks.md)
 - [chaos-readiness.md](./roadmap/chaos-readiness.md)
@@ -5456,7 +7090,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [now.md](./roadmap/now.md)
 - [overview.md](./roadmap/overview.md)
 - [phases.md](./roadmap/phases.md)
+<<<<<<< .merge_file_aCPbkc
 - [q4-roadmap-1.md](./roadmap/q4-roadmap.md)
+=======
+- [q4-roadmap-1.md](./roadmap/q4-roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [q4-roadmap.md](./roadmap/q4-roadmap.md)
 - [quality.md](./roadmap/quality.md)
 - [risks-1.md](./roadmap/risks-1.md)
@@ -5480,7 +7118,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## roadmap/legacy
 
+<<<<<<< .merge_file_aCPbkc
 - [legacy-roadmap-1.md](./roadmap/legacy/legacy-roadmap-user-module.md)
+=======
+- [legacy-roadmap-1.md](./roadmap/legacy/legacy-roadmap-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [legacy-roadmap-and-issues.md](./roadmap/legacy/legacy-roadmap-and-issues.md)
 - [legacy-roadmap-ands.md](./roadmap/legacy/legacy-roadmap-ands.md)
 - [legacy-roadmap-complete.md](./roadmap/legacy/legacy-roadmap-complete.md)
@@ -5490,16 +7132,27 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## root
 
+<<<<<<< .merge_file_aCPbkc
 - [00-index-1.md](./00-index-indice-documentazione-modulo-user.md)
+=======
+- [00-index-1.md](./00-index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [00-index.md](./00-index.md)
 - [2025-12-01-teams-migration-laraxot-compliance.deprecated.md](./2025-12-01-teams-migration-laraxot-compliance.deprecated.md)
 - [2fa-guide.md](./2fa-guide.md)
 - [2fa.md](./2fa.md)
 - [accessor-delegation-pattern.md](./accessor-delegation-pattern.md)
+<<<<<<< .merge_file_aCPbkc
 - [actions-path-convention-1.md](./actions-path-convention.md)
 - [actions-path-convention-2.md](./actions-path-convention-convenzione-percorsi.md)
 - [actions-path-convention.md](./actions-path-convention.md)
 - [actions-structure-1.md](./actions-structure.md)
+=======
+- [actions-path-convention-1.md](./actions-path-convention-1.md)
+- [actions-path-convention-2.md](./actions-path-convention-2.md)
+- [actions-path-convention.md](./actions-path-convention.md)
+- [actions-structure-1.md](./actions-structure-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [actions-structure-2.md](./actions-structure-2.md)
 - [actions-structure-3.md](./actions-structure-3.md)
 - [actions-structure.md](./actions-structure.md)
@@ -5518,14 +7171,22 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [architecture-rules-2.md](./architecture-rules-2.md)
 - [architecture-rules.md](./architecture-rules.md)
 - [architecture.md](./architecture.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-blade-structure-1.md](./auth-blade-structure.md)
 - [auth-blade-structure-2.md](./auth-blade-structure.md)
 - [auth-blade-structure.md](./auth-blade-structure.md)
 - [auth-components-best-practices-1.md](./auth-components-best-practices.md)
+=======
+- [auth-blade-structure-1.md](./auth-blade-structure-1.md)
+- [auth-blade-structure-2.md](./auth-blade-structure-2.md)
+- [auth-blade-structure.md](./auth-blade-structure.md)
+- [auth-components-best-practices-1.md](./auth-components-best-practices-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-components-best-practices-2.md](./auth-components-best-practices-2.md)
 - [auth-components-best-practices-3.md](./auth-components-best-practices-3.md)
 - [auth-components-best-practices.md](./auth-components-best-practices.md)
 - [auth-header-button.md](./auth-header-button.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-login-implementation-1.md](./auth-login-implementation.md)
 - [auth-login-implementation-2.md](./auth-login-implementation-2.md)
 - [auth-login-implementation-3.md](./auth-login-implementation-3.md)
@@ -5536,11 +7197,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-logout-blade-2.md](./auth-logout-blade.md)
 - [auth-logout-blade.md](./auth-logout-blade.md)
 - [auth-logout-implementation-1.md](./auth-logout-implementation.md)
+=======
+- [auth-login-implementation-1.md](./auth-login-implementation-1.md)
+- [auth-login-implementation-2.md](./auth-login-implementation-2.md)
+- [auth-login-implementation-3.md](./auth-login-implementation-3.md)
+- [auth-login-implementation.md](./auth-login-implementation.md)
+- [auth-logout-1.md](./auth-logout-1.md)
+- [auth-logout-2.md](./auth-logout-2.md)
+- [auth-logout-blade-1.md](./auth-logout-blade-1.md)
+- [auth-logout-blade-2.md](./auth-logout-blade-2.md)
+- [auth-logout-blade.md](./auth-logout-blade.md)
+- [auth-logout-implementation-1.md](./auth-logout-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-logout-implementation-2.md](./auth-logout-implementation-2.md)
 - [auth-logout-implementation-3.md](./auth-logout-implementation-3.md)
 - [auth-logout-implementation.md](./auth-logout-implementation.md)
 - [auth-logout.md](./auth-logout.md)
 - [auth-pages-implementation-1-1.md](./auth-pages-implementation-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [auth-pages-implementation-1.md](./auth-pages-implementation.md)
 - [auth-pages-implementation-2.md](./auth-pages-implementation-2.md)
 - [auth-pages-implementation.md](./auth-pages-implementation.md)
@@ -5552,11 +7226,28 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-widgets-view-namespaces-1.md](./auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces-2.md](./auth-widgets-view-namespaces.md)
 - [auth-widgets-view-namespaces-3.md](./auth-widgets-view-namespaces-widget-autenticazione-namespace.md)
+=======
+- [auth-pages-implementation-1.md](./auth-pages-implementation-1.md)
+- [auth-pages-implementation-2.md](./auth-pages-implementation-2.md)
+- [auth-pages-implementation.md](./auth-pages-implementation.md)
+- [auth-social-login-translations.md](./auth-social-login-translations.md)
+- [auth-widget-rules-1.md](./auth-widget-rules-1.md)
+- [auth-widget-rules-2.md](./auth-widget-rules-2.md)
+- [auth-widget-rules.md](./auth-widget-rules.md)
+- [auth-widget.md](./auth-widget.md)
+- [auth-widgets-view-namespaces-1.md](./auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces-2.md](./auth-widgets-view-namespaces-2.md)
+- [auth-widgets-view-namespaces-3.md](./auth-widgets-view-namespaces-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [auth-widgets-view-namespaces.md](./auth-widgets-view-namespaces.md)
 - [authentication-troubleshooting.md](./authentication-troubleshooting.md)
 - [authentication.md](./authentication.md)
 - [avatar-implementation-1-1.md](./avatar-implementation-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [avatar-implementation-1.md](./avatar-implementation.md)
+=======
+- [avatar-implementation-1.md](./avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [avatar-implementation-2.md](./avatar-implementation-2.md)
 - [avatar-implementation.md](./avatar-implementation.md)
 - [baseuser-conflicts.md](./baseuser-conflicts.md)
@@ -5574,6 +7265,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [baseuserry-violation.md](./baseuserry-violation.md)
 - [baseusers.md](./baseusers.md)
 - [best-practices.md](./best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [boost-skill-fix-summary-1.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary-2.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
@@ -5590,6 +7282,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [business-logic-deep-dive-3.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-5.md](./business-logic-deep-dive.md)
+=======
+- [boost-skill-fix-summary-1.md](./boost-skill-fix-summary-1.md)
+- [boost-skill-fix-summary-2.md](./boost-skill-fix-summary-2.md)
+- [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
+- [bottlenecks.md](./bottlenecks.md)
+- [bugfix-phpmd-cleanup-2026-07.md](./bugfix-phpmd-cleanup-2026-07.md)
+- [business-logic-analysis-1.md](./business-logic-analysis-1.md)
+- [business-logic-analysis-2.md](./business-logic-analysis-2.md)
+- [business-logic-analysis-3.md](./business-logic-analysis-3.md)
+- [business-logic-analysis-4.md](./business-logic-analysis-4.md)
+- [business-logic-analysis-5.md](./business-logic-analysis-5.md)
+- [business-logic-analysis.md](./business-logic-analysis.md)
+- [business-logic-deep-dive-1.md](./business-logic-deep-dive-1.md)
+- [business-logic-deep-dive-2.md](./business-logic-deep-dive-2.md)
+- [business-logic-deep-dive-3.md](./business-logic-deep-dive-3.md)
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive-4.md)
+- [business-logic-deep-dive-5.md](./business-logic-deep-dive-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [business-logic-deep-dive.md](./business-logic-deep-dive.md)
 - [business-logic.md](./business-logic.md)
 - [business-logiceepive.md](./business-logiceepive.md)
@@ -5605,6 +7315,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [cms-link-1.md](./cms-link-1.md)
 - [cms-link-2.md](./cms-link-2.md)
 - [cms-link.md](./cms-link.md)
+<<<<<<< .merge_file_aCPbkc
 - [code-conventions-1.md](./code-conventions.md)
 - [code-conventions-2.md](./code-conventions-2.md)
 - [code-conventions.md](./code-conventions.md)
@@ -5617,14 +7328,34 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [code-quality-analysis-3.md](./code-quality-analysis.md)
 - [code-quality-analysis-4.md](./code-quality-analysis.md)
 - [code-quality-analysis-5.md](./code-quality-analysis.md)
+=======
+- [code-conventions-1.md](./code-conventions-1.md)
+- [code-conventions-2.md](./code-conventions-2.md)
+- [code-conventions.md](./code-conventions.md)
+- [code-optimization-analysis-1.md](./code-optimization-analysis-1.md)
+- [code-optimization-analysis-2.md](./code-optimization-analysis-2.md)
+- [code-optimization-analysis.md](./code-optimization-analysis.md)
+- [code-optimization.md](./code-optimization.md)
+- [code-quality-analysis-1.md](./code-quality-analysis-1.md)
+- [code-quality-analysis-2.md](./code-quality-analysis-2.md)
+- [code-quality-analysis-3.md](./code-quality-analysis-3.md)
+- [code-quality-analysis-4.md](./code-quality-analysis-4.md)
+- [code-quality-analysis-5.md](./code-quality-analysis-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [code-quality-analysis.md](./code-quality-analysis.md)
 - [code-quality-tools.md](./code-quality-tools.md)
 - [code-quality.md](./code-quality.md)
 - [code-redundancy-audit.md](./code-redundancy-audit.md)
 - [codex-error-fix.md](./codex-error-fix.md)
+<<<<<<< .merge_file_aCPbkc
 - [component-verification-rules-1.md](./component-verification-rules.md)
 - [component-verification-rules-2.md](./component-verification-rules.md)
 - [component-verification-rules-3.md](./component-verification-rules.md)
+=======
+- [component-verification-rules-1.md](./component-verification-rules-1.md)
+- [component-verification-rules-2.md](./component-verification-rules-2.md)
+- [component-verification-rules-3.md](./component-verification-rules-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [component-verification-rules.md](./component-verification-rules.md)
 - [component-verification.md](./component-verification.md)
 - [composer-dependencies.md](./composer-dependencies.md)
@@ -5638,8 +7369,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [conflict-resolution.md](./conflict-resolution.md)
 - [conflicts-analysis.md](./conflicts-analysis.md)
 - [conflicts.md](./conflicts.md)
+<<<<<<< .merge_file_aCPbkc
 - [console-commands-philosophy-1.md](./console-commands-philosophy.md)
 - [console-commands-philosophy-2.md](./console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-1.md](./console-commands-philosophy-1.md)
+- [console-commands-philosophy-2.md](./console-commands-philosophy-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [console-commands-philosophy.md](./console-commands-philosophy.md)
 - [console-commands.md](./console-commands.md)
 - [contracts-naming.md](./contracts-naming.md)
@@ -5656,6 +7392,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [crossatabase-relations.md](./crossatabase-relations.md)
 - [cursor-rules.md](./cursor-rules.md)
 - [cursor.md](./cursor.md)
+<<<<<<< .merge_file_aCPbkc
 - [custom-login-1.md](./custom-login-implementazione-personalizzato.md)
 - [custom-login.md](./custom-login.md)
 - [cyclomatic-complexity-report.md](./cyclomatic-complexity-report.md)
@@ -5666,12 +7403,29 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [database-issues-1.md](./database-issues.md)
 - [database-issues-2.md](./database-issues.md)
 - [database-issues-3.md](./database-issues.md)
+=======
+- [custom-login-1.md](./custom-login-1.md)
+- [custom-login.md](./custom-login.md)
+- [cyclomatic-complexity-report.md](./cyclomatic-complexity-report.md)
+- [cyclomatic-complexity.md](./cyclomatic-complexity.md)
+- [database-errors-1.md](./database-errors-1.md)
+- [database-errors-2.md](./database-errors-2.md)
+- [database-errors.md](./database-errors.md)
+- [database-issues-1.md](./database-issues-1.md)
+- [database-issues-2.md](./database-issues-2.md)
+- [database-issues-3.md](./database-issues-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [database-issues.md](./database-issues.md)
 - [database-population.md](./database-population.md)
 - [databases.md](./databases.md)
 - [datas-not-dtos-convention.md](./datas-not-dtos-convention.md)
+<<<<<<< .merge_file_aCPbkc
 - [dentist-moderation-approach-1.md](./dentist-moderation-approach.md)
 - [dentist-moderation-approach-2.md](./dentist-moderation-approach.md)
+=======
+- [dentist-moderation-approach-1.md](./dentist-moderation-approach-1.md)
+- [dentist-moderation-approach-2.md](./dentist-moderation-approach-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [dentist-moderation-approach.md](./dentist-moderation-approach.md)
 - [dependencies.md](./dependencies.md)
 - [dependency-intelligence.md](./dependency-intelligence.md)
@@ -5686,17 +7440,29 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [docs-location-policy.md](./docs-location-policy.md)
 - [doctor-registration-widget.md](./doctor-registration-widget.md)
 - [doctor-registration.md](./doctor-registration.md)
+<<<<<<< .merge_file_aCPbkc
 - [documentation-standards-1.md](./documentation-standards.md)
 - [documentation-standards-2.md](./documentation-standards.md)
+=======
+- [documentation-standards-1.md](./documentation-standards-1.md)
+- [documentation-standards-2.md](./documentation-standards-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [documentation-standards.md](./documentation-standards.md)
 - [dor-registration-widget.md](./dor-registration-widget.md)
 - [dor-registration.md](./dor-registration.md)
 - [dry-kiss-018b09.md](./dry-kiss-018b09.md)
 - [dry-kiss-analysis-.md](./dry-kiss-analysis-.md)
+<<<<<<< .merge_file_aCPbkc
 - [dry-kiss-analysis-1.md](./dry-kiss-analysis-modulo-user.md)
 - [dry-kiss-analysis-2.md](./dry-kiss-analysis.md)
 - [dry-kiss-analysis.deprecated.md](./dry-kiss-analysis.deprecated.md)
 - [dry-kiss-analysis-3.md](./dry-kiss-analysis.md)
+=======
+- [dry-kiss-analysis-1.md](./dry-kiss-analysis-1.md)
+- [dry-kiss-analysis-2.md](./dry-kiss-analysis-2.md)
+- [dry-kiss-analysis.deprecated.md](./dry-kiss-analysis.deprecated.md)
+- [dry-kiss-analysis-3.md](./dry-kiss-analysis-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [dry-kiss-analysis-4.md](./dry-kiss-analysis-4.md)
 - [dry-kiss-analysis-conflict-018b09.md](./dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./dry-kiss-analysis-conflict.md)
@@ -5705,7 +7471,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [dry-kiss.md](./dry-kiss.md)
 - [dry-violation-fix.md](./dry-violation-fix.md)
 - [dry-violation.md](./dry-violation.md)
+<<<<<<< .merge_file_aCPbkc
 - [duplicate-methods-1.md](./duplicate-methods-metodi-duplicati-user.md)
+=======
+- [duplicate-methods-1.md](./duplicate-methods-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [duplicate-methods-analysis.md](./duplicate-methods-analysis.md)
 - [duplicate-methods-report.md](./duplicate-methods-report.md)
 - [duplicate-methods.md](./duplicate-methods.md)
@@ -5713,8 +7483,13 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [eloquent-properties-best-practices.md](./eloquent-properties-best-practices.md)
 - [email-doctor-registration.md](./email-doctor-registration.md)
 - [emailor-registration.md](./emailor-registration.md)
+<<<<<<< .merge_file_aCPbkc
 - [error-handling-1.md](./error-handling.md)
 - [error-handling-2.md](./error-handling.md)
+=======
+- [error-handling-1.md](./error-handling-1.md)
+- [error-handling-2.md](./error-handling-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [error-handling.md](./error-handling.md)
 - [external-packages-inheritance-pattern.md](./external-packages-inheritance-pattern.md)
 - [external-packages-inheritance.md](./external-packages-inheritance.md)
@@ -5729,7 +7504,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [filament-4-widget-rendering.md](./filament-4-widget-rendering.md)
 - [filament-4x-compatibility-1-1.md](./filament-4x-compatibility-1-1.md)
 - [filament-4x-compatibility-1.md](./filament-4x-compatibility-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-4x-compatibility-2.md](./filament-4x-compatibility-resources-user.md)
+=======
+- [filament-4x-compatibility-2.md](./filament-4x-compatibility-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-4x-compatibility-conflict.md](./filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./filament-4x-compatibility.md)
 - [filament-5-panel-governance-rule.md](./filament-5-panel-governance-rule.md)
@@ -5737,6 +7516,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [filament-auth-pages-exceptions.md](./filament-auth-pages-exceptions.md)
 - [filament-best-practices.md](./filament-best-practices.md)
 - [filament-charts-implementation.md](./filament-charts-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-components-reference-1.md](./filament-components-reference.md)
 - [filament-components-reference-2.md](./filament-components-reference.md)
 - [filament-components-reference.md](./filament-components-reference.md)
@@ -5747,17 +7527,38 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [filament-namespace-rules-1-1.md](./filament-namespace-rules.md)
 - [filament-namespace-rules-1.md](./filament-namespace-rules.md)
 - [filament-namespace-rules-2.md](./filament-namespace-rules.md)
+=======
+- [filament-components-reference-1.md](./filament-components-reference-1.md)
+- [filament-components-reference-2.md](./filament-components-reference-2.md)
+- [filament-components-reference.md](./filament-components-reference.md)
+- [filament-errors-1.md](./filament-errors-1.md)
+- [filament-errors-2.md](./filament-errors-2.md)
+- [filament-errors.md](./filament-errors.md)
+- [filament-filters-and-widgets.md](./filament-filters-and-widgets.md)
+- [filament-namespace-rules-1-1.md](./filament-namespace-rules-1-1.md)
+- [filament-namespace-rules-1.md](./filament-namespace-rules-1.md)
+- [filament-namespace-rules-2.md](./filament-namespace-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-namespace-rules.md](./filament-namespace-rules.md)
 - [filament-namespace.md](./filament-namespace.md)
 - [filament-nesting-opportunities.md](./filament-nesting-opportunities.md)
 - [filament-relation-managers-1-1.md](./filament-relation-managers-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-relation-managers-1.md](./filament-relation-managers.md)
+=======
+- [filament-relation-managers-1.md](./filament-relation-managers-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-relation-managers-2.md](./filament-relation-managers-2.md)
 - [filament-relation-managers.md](./filament-relation-managers.md)
 - [filament-resources-coverage-analysis.md](./filament-resources-coverage-analysis.md)
 - [filament-resources-coverage.md](./filament-resources-coverage.md)
+<<<<<<< .merge_file_aCPbkc
 - [filament-resources-organization-1.md](./filament-resources-organization.md)
 - [filament-resources-organization-2.md](./filament-resources-organization.md)
+=======
+- [filament-resources-organization-1.md](./filament-resources-organization-1.md)
+- [filament-resources-organization-2.md](./filament-resources-organization-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [filament-resources-organization.md](./filament-resources-organization.md)
 - [filament-resources-philosophical-debate.md](./filament-resources-philosophical-debate.md)
 - [filament-resources-philosophicalebate.md](./filament-resources-philosophicalebate.md)
@@ -5775,11 +7576,16 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [fix-profile-id-uuid.md](./fix-profile-id-uuid.md)
 - [fixes-user-module-phpstan.md](./fixes-user-module-phpstan.md)
 - [folio-volt-best-practices.md](./folio-volt-best-practices.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-documentation-summary-1.md](./fullcalendar-scheduler-documentation-summary.md)
+=======
+- [fullcalendar-scheduler-documentation-summary-1.md](./fullcalendar-scheduler-documentation-summary-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [fullcalendar-scheduler-documentation-summary-2.md](./fullcalendar-scheduler-documentation-summary-2.md)
 - [fullcalendar-scheduler-documentation-summary-3.md](./fullcalendar-scheduler-documentation-summary-3.md)
 - [fullcalendar-scheduler-documentation-summary.md](./fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1-1.md](./fullcalendar-scheduler-license-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [fullcalendar-scheduler-license-1.md](./fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
 - [fullcalendar-scheduler-license-key-invalid-1.md](./fullcalendar-scheduler-license-key-invalid.md)
@@ -5791,17 +7597,38 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [fullcalendar-scheduler-license-troubleshooting.md](./fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license.md](./fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-quick-reference-1.md](./fullcalendar-scheduler-quick-reference.md)
+=======
+- [fullcalendar-scheduler-license-1.md](./fullcalendar-scheduler-license-1.md)
+- [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
+- [fullcalendar-scheduler-license-key-invalid-1.md](./fullcalendar-scheduler-license-key-invalid-1.md)
+- [fullcalendar-scheduler-license-key-invalid-2.md](./fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-key-invalid.md](./fullcalendar-scheduler-license-key-invalid.md)
+- [fullcalendar-scheduler-license-troubleshooting-1-1.md](./fullcalendar-scheduler-license-troubleshooting-1-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-2.md](./fullcalendar-scheduler-license-troubleshooting-2.md)
+- [fullcalendar-scheduler-license-troubleshooting.md](./fullcalendar-scheduler-license-troubleshooting.md)
+- [fullcalendar-scheduler-license.md](./fullcalendar-scheduler-license.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./fullcalendar-scheduler-quick-reference-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [fullcalendar-scheduler-quick-reference-2.md](./fullcalendar-scheduler-quick-reference-2.md)
 - [fullcalendar-scheduler-quick-reference-3.md](./fullcalendar-scheduler-quick-reference-3.md)
 - [fullcalendar-scheduler-quick-reference.md](./fullcalendar-scheduler-quick-reference.md)
 - [fullcalendar-schedulerocumentation.md](./fullcalendar-schedulerocumentation.md)
+<<<<<<< .merge_file_aCPbkc
 - [gdpr-compliance-1.md](./gdpr-compliance-guide-registration.md)
+=======
+- [gdpr-compliance-1.md](./gdpr-compliance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [gdpr-compliance-complete.md](./gdpr-compliance-complete.md)
 - [gdpr-compliance.md](./gdpr-compliance.md)
 - [gdpr-register-enhancement.md](./gdpr-register-enhancement.md)
 - [gdpr.md](./gdpr.md)
 - [generic-user-moderation-strategy-1-1.md](./generic-user-moderation-strategy-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [generic-user-moderation-strategy-1.md](./generic-user-moderation-strategy.md)
+=======
+- [generic-user-moderation-strategy-1.md](./generic-user-moderation-strategy-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [generic-user-moderation-strategy-2.md](./generic-user-moderation-strategy-2.md)
 - [generic-user-moderation-strategy.md](./generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./get-new-password-action-business-logic.md)
@@ -5809,6 +7636,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [git-conflict-resolution-2.md](./git-conflict-resolution-2.md)
 - [git-conflict-resolution.md](./git-conflict-resolution.md)
 - [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
+<<<<<<< .merge_file_aCPbkc
 - [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
 - [git-conflicts-resolution-1.md](./git-conflicts-resolution.md)
@@ -5818,6 +7646,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [git-conflicts-resolution-4.md](./git-conflicts-resolution-4.md)
 - [git-conflicts-resolution-5.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-6.md](./git-conflicts-resolution.md)
+=======
+- [git-conflicts-resolution--1.md](./git-conflicts-resolution--1.md)
+- [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
+- [git-conflicts-resolution-1.md](./git-conflicts-resolution-1.md)
+- [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
+- [git-conflicts-resolution.deprecated.md](./git-conflicts-resolution.deprecated.md)
+- [git-conflicts-resolution-3.md](./git-conflicts-resolution-3.md)
+- [git-conflicts-resolution-4.md](./git-conflicts-resolution-4.md)
+- [git-conflicts-resolution-5.md](./git-conflicts-resolution-5.md)
+- [git-conflicts-resolution-6.md](./git-conflicts-resolution-6.md)
+>>>>>>> .merge_file_5nGk0n
 - [git-conflicts-resolution-conflict-06cb77.md](./git-conflicts-resolution-conflict-06cb77.md)
 - [git-conflicts-resolution-conflict.md](./git-conflicts-resolution-conflict.md)
 - [git-conflicts-resolution-summary.md](./git-conflicts-resolution-summary.md)
@@ -5828,6 +7667,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [gits-resolution-06cb77.md](./gits-resolution-06cb77.md)
 - [gits-resolution.md](./gits-resolution.md)
 - [guida-migrazione-step-by-step.md](./guida-migrazione-step-by-step.md)
+<<<<<<< .merge_file_aCPbkc
 - [hasteams-currentteam-method-choice-1.md](./hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
 - [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
@@ -5837,6 +7677,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-trait-analysis.md](./hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-analisi-metodi-duplicati.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](./hasteams-currentteam-method-choice-1.md)
+- [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
+- [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
+- [hasteams-currentteam-method-choice.md](./hasteams-currentteam-method-choice.md)
+- [hasteams-trait-analysis-1.md](./hasteams-trait-analysis-1.md)
+- [hasteams-trait-analysis-2.md](./hasteams-trait-analysis-2.md)
+- [hasteams-trait-analysis.md](./hasteams-trait-analysis.md)
+- [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods-1.md)
+- [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [hasteams-trait-duplicate-methods.md](./hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./hasteams-trait-filosofia-e-correzione-completa-1.md)
 - [hasteams-trait-filosofia-e-correzione-completa-2.md](./hasteams-trait-filosofia-e-correzione-completa-2.md)
@@ -5845,14 +7696,22 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [hasteams-trait.md](./hasteams-trait.md)
 - [hasteams-traituplicate-methods.md](./hasteams-traituplicate-methods.md)
 - [header-auth-button.md](./header-auth-button.md)
+<<<<<<< .merge_file_aCPbkc
 - [header-components-1.md](./header-components.md)
 - [header-components-2.md](./header-components-componenti.md)
 - [header-components.md](./header-components.md)
 - [header-language-avatar-implementation-1.md](./header-language-avatar-implementation.md)
+=======
+- [header-components-1.md](./header-components-1.md)
+- [header-components-2.md](./header-components-2.md)
+- [header-components.md](./header-components.md)
+- [header-language-avatar-implementation-1.md](./header-language-avatar-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [header-language-avatar-implementation-2.md](./header-language-avatar-implementation-2.md)
 - [header-language-avatar-implementation-3.md](./header-language-avatar-implementation-3.md)
 - [header-language-avatar-implementation.md](./header-language-avatar-implementation.md)
 - [header-language-selector-with-flags-1-1.md](./header-language-selector-with-flags-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [header-language-selector-with-flags-1.md](./header-language-selector-with-flags.md)
 - [header-language-selector-with-flags-2.md](./header-language-selector-with-flags-2.md)
 - [header-language-selector-with-flags.md](./header-language-selector-with-flags.md)
@@ -5863,21 +7722,44 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [implementation-summary.md](./implementation-summary.md)
 - [implementation.md](./implementation.md)
 - [index-1.md](./index.md)
+=======
+- [header-language-selector-with-flags-1.md](./header-language-selector-with-flags-1.md)
+- [header-language-selector-with-flags-2.md](./header-language-selector-with-flags-2.md)
+- [header-language-selector-with-flags.md](./header-language-selector-with-flags.md)
+- [ide-helper-models-wave.md](./ide-helper-models-wave.md)
+- [implementation-plan-1.md](./implementation-plan-1.md)
+- [implementation-plan-2.md](./implementation-plan-2.md)
+- [implementation-plan.md](./implementation-plan.md)
+- [implementation-summary.md](./implementation-summary.md)
+- [implementation.md](./implementation.md)
+- [index-1.md](./index-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [index-2.md](./index-2.md)
 - [index-conflict.md](./index-conflict.md)
 - [index.md](./index.md)
 - [intelligent-login-redirect.md](./intelligent-login-redirect.md)
+<<<<<<< .merge_file_aCPbkc
 - [jetstream-vs-laraxot-philosophy-1-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-2.md](./jetstream-vs-laraxot-philosophy.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1-1.md](./jetstream-vs-laraxot-philosophy-1-1.md)
+- [jetstream-vs-laraxot-philosophy-1.md](./jetstream-vs-laraxot-philosophy-1.md)
+- [jetstream-vs-laraxot-philosophy-2.md](./jetstream-vs-laraxot-philosophy-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [jetstream-vs-laraxot-philosophy.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot.md](./jetstream-vs-laraxot.md)
 - [jpgraph-integration.md](./jpgraph-integration.md)
 - [js-conflicts.md](./js-conflicts.md)
 - [json.md](./json.md)
 - [jss.md](./jss.md)
+<<<<<<< .merge_file_aCPbkc
 - [label-hardcoded-prevention-1.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention-2.md](./label-hardcoded-prevention.md)
+=======
+- [label-hardcoded-prevention-1.md](./label-hardcoded-prevention-1.md)
+- [label-hardcoded-prevention-2.md](./label-hardcoded-prevention-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [label-hardcoded-prevention.md](./label-hardcoded-prevention.md)
 - [lang-link-1.md](./lang-link-1.md)
 - [lang-link-2.md](./lang-link-2.md)
@@ -5895,6 +7777,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [livewire-filament-parameter-passing.md](./livewire-filament-parameter-passing.md)
 - [livewire-form-statepath-issue.md](./livewire-form-statepath-issue.md)
 - [livewire-form-statepath.md](./livewire-form-statepath.md)
+<<<<<<< .merge_file_aCPbkc
 - [livewire-namespace-1.md](./livewire-namespace.md)
 - [livewire-namespace-2.md](./livewire-namespace-2.md)
 - [livewire-namespace.md](./livewire-namespace.md)
@@ -5906,15 +7789,36 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [logging-performance.md](./logging-performance.md)
 - [login-filament-widget-error-1.md](./login-filament-widget-error.md)
 - [login-filament-widget-error-2.md](./login-filament-widget-error.md)
+=======
+- [livewire-namespace-1.md](./livewire-namespace-1.md)
+- [livewire-namespace-2.md](./livewire-namespace-2.md)
+- [livewire-namespace.md](./livewire-namespace.md)
+- [livewire-to-filament-widget-migration.md](./livewire-to-filament-widget-migration.md)
+- [logging-performance-1.md](./logging-performance-1.md)
+- [logging-performance-2.md](./logging-performance-2.md)
+- [logging-performance-3.md](./logging-performance-3.md)
+- [logging-performance-4.md](./logging-performance-4.md)
+- [logging-performance.md](./logging-performance.md)
+- [login-filament-widget-error-1.md](./login-filament-widget-error-1.md)
+- [login-filament-widget-error-2.md](./login-filament-widget-error-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-filament-widget-error.md](./login-filament-widget-error.md)
 - [login-filament-widget.md](./login-filament-widget.md)
 - [login-issue-resolution-report.md](./login-issue-resolution-report.md)
 - [login-resolution.md](./login-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-analysis-1.md](./login-widget-analysis.md)
 - [login-widget-analysis-2.md](./login-widget-analysis.md)
 - [login-widget-analysis.md](./login-widget-analysis.md)
 - [login-widget-conversion-1-1.md](./login-widget-conversion.md)
 - [login-widget-conversion-1.md](./login-widget-conversion-conversione-livewire-auth-filament.md)
+=======
+- [login-widget-analysis-1.md](./login-widget-analysis-1.md)
+- [login-widget-analysis-2.md](./login-widget-analysis-2.md)
+- [login-widget-analysis.md](./login-widget-analysis.md)
+- [login-widget-conversion-1-1.md](./login-widget-conversion-1-1.md)
+- [login-widget-conversion-1.md](./login-widget-conversion-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-conversion-2.md](./login-widget-conversion-2.md)
 - [login-widget-conversion.md](./login-widget-conversion.md)
 - [login-widget-filament-schema-errors-roadmap.md](./login-widget-filament-schema-errors-roadmap.md)
@@ -5925,7 +7829,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
 - [login-widget-translation-audit-2025.md](./login-widget-translation-audit-historical.md)
+<<<<<<< .merge_file_aCPbkc
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
+=======
+- [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [login-widget-translation-audit-conflict.md](./login-widget-translation-audit-conflict.md)
 - [login-widget-translation-audit.md](./login-widget-translation-audit.md)
 - [login-widget-translation.md](./login-widget-translation.md)
@@ -5933,6 +7841,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [loginwidget-error-analysis.md](./loginwidget-error-analysis.md)
 - [loginwidget.md](./loginwidget.md)
 - [logout-analysis-1.md](./logout-analysis-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-analysis-2.md](./logout-analysis.md)
 - [logout-analysis.md](./logout-analysis.md)
 - [logout-blade-analysis-1.md](./logout-blade-analysis.md)
@@ -5944,22 +7853,45 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [logout-blade-conclusions-2.md](./logout-blade-conclusions-2.md)
 - [logout-blade-conclusions.md](./logout-blade-conclusions.md)
 - [logout-blade-corrected-analysis-1.md](./logout-blade-corrected-analysis.md)
+=======
+- [logout-analysis-2.md](./logout-analysis-2.md)
+- [logout-analysis.md](./logout-analysis.md)
+- [logout-blade-analysis-1.md](./logout-blade-analysis-1.md)
+- [logout-blade-analysis-2.md](./logout-blade-analysis-2.md)
+- [logout-blade-analysis-3.md](./logout-blade-analysis-3.md)
+- [logout-blade-analysis.md](./logout-blade-analysis.md)
+- [logout-blade-conclusions-1-1.md](./logout-blade-conclusions-1-1.md)
+- [logout-blade-conclusions-1.md](./logout-blade-conclusions-1.md)
+- [logout-blade-conclusions-2.md](./logout-blade-conclusions-2.md)
+- [logout-blade-conclusions.md](./logout-blade-conclusions.md)
+- [logout-blade-corrected-analysis-1.md](./logout-blade-corrected-analysis-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-blade-corrected-analysis-2.md](./logout-blade-corrected-analysis-2.md)
 - [logout-blade-corrected-analysis-3.md](./logout-blade-corrected-analysis-3.md)
 - [logout-blade-corrected-analysis.md](./logout-blade-corrected-analysis.md)
 - [logout-blade-corrected.md](./logout-blade-corrected.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-blade-error-analysis-1.md](./logout-blade-error-analysis.md)
 - [logout-blade-error-analysis-2.md](./logout-blade-error-analysis-analisi-approfondita-dell-errore.md)
 - [logout-blade-error-analysis-3.md](./logout-blade-error-analysis-3.md)
 - [logout-blade-error-analysis.md](./logout-blade-error-analysis.md)
 - [logout-blade-implementation-1-1.md](./logout-blade-implementation-implementazione-corretta-php.md)
 - [logout-blade-implementation-1.md](./logout-blade-implementation.md)
+=======
+- [logout-blade-error-analysis-1.md](./logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis-2.md](./logout-blade-error-analysis-2.md)
+- [logout-blade-error-analysis-3.md](./logout-blade-error-analysis-3.md)
+- [logout-blade-error-analysis.md](./logout-blade-error-analysis.md)
+- [logout-blade-implementation-1-1.md](./logout-blade-implementation-1-1.md)
+- [logout-blade-implementation-1.md](./logout-blade-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-blade-implementation-2.md](./logout-blade-implementation-2.md)
 - [logout-blade-implementation.md](./logout-blade-implementation.md)
 - [logout-blade-structure-1.md](./logout-blade-structure-1.md)
 - [logout-blade-structure-2.md](./logout-blade-structure-2.md)
 - [logout-blade-structure.md](./logout-blade-structure.md)
 - [logout-blade.md](./logout-blade.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-error-analysis-1-1.md](./logout-error-analysis-analisi-errore.md)
 - [logout-error-analysis-1.md](./logout-error-analysis.md)
 - [logout-error-analysis-2.md](./logout-error-analysis-2.md)
@@ -5995,19 +7927,66 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [logout-page-fix.md](./logout-page-fix.md)
 - [logout-page-implementation-1.md](./logout-page-implementation.md)
 - [logout-page-implementation-2.md](./logout-page-implementation-implementazione-pagina-tema-one.md)
+=======
+- [logout-error-analysis-1-1.md](./logout-error-analysis-1-1.md)
+- [logout-error-analysis-1.md](./logout-error-analysis-1.md)
+- [logout-error-analysis-2.md](./logout-error-analysis-2.md)
+- [logout-error-analysis.md](./logout-error-analysis.md)
+- [logout-event-error-1-1.md](./logout-event-error-1-1.md)
+- [logout-event-error-1.md](./logout-event-error-1.md)
+- [logout-event-error-2.md](./logout-event-error-2.md)
+- [logout-event-error.md](./logout-event-error.md)
+- [logout-event.md](./logout-event.md)
+- [logout-filament-widget-1.md](./logout-filament-widget-1.md)
+- [logout-filament-widget-2.md](./logout-filament-widget-2.md)
+- [logout-filament-widget-3.md](./logout-filament-widget-3.md)
+- [logout-filament-widget-corrected-1.md](./logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected-2.md](./logout-filament-widget-corrected-2.md)
+- [logout-filament-widget-corrected-3.md](./logout-filament-widget-corrected-3.md)
+- [logout-filament-widget-corrected.md](./logout-filament-widget-corrected.md)
+- [logout-filament-widget.md](./logout-filament-widget.md)
+- [logout-implementation-best-practices-1-1.md](./logout-implementation-best-practices-1-1.md)
+- [logout-implementation-best-practices-1.md](./logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices-2.md](./logout-implementation-best-practices-2.md)
+- [logout-implementation-best-practices.md](./logout-implementation-best-practices.md)
+- [logout-implementation-error-1.md](./logout-implementation-error-1.md)
+- [logout-implementation-error-2.md](./logout-implementation-error-2.md)
+- [logout-implementation-error-3.md](./logout-implementation-error-3.md)
+- [logout-implementation-error.md](./logout-implementation-error.md)
+- [logout-implementation-with-laravel-localization-1.md](./logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization-2.md](./logout-implementation-with-laravel-localization-2.md)
+- [logout-implementation-with-laravel-localization-3.md](./logout-implementation-with-laravel-localization-3.md)
+- [logout-implementation-with-laravel-localization.md](./logout-implementation-with-laravel-localization.md)
+- [logout-implementation.md](./logout-implementation.md)
+- [logout-page-fix-1.md](./logout-page-fix-1.md)
+- [logout-page-fix-2.md](./logout-page-fix-2.md)
+- [logout-page-fix.md](./logout-page-fix.md)
+- [logout-page-implementation-1.md](./logout-page-implementation-1.md)
+- [logout-page-implementation-2.md](./logout-page-implementation-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-page-implementation-3.md](./logout-page-implementation-3.md)
 - [logout-page-implementation.md](./logout-page-implementation.md)
 - [logout-page.md](./logout-page.md)
 - [logout-security-1.md](./logout-security-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [logout-security-2.md](./logout-security.md)
+=======
+- [logout-security-2.md](./logout-security-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [logout-security.md](./logout-security.md)
 - [logout.md](./logout.md)
 - [mcp-configuration.md](./mcp-configuration.md)
 - [mcp-database-tools.md](./mcp-database-tools.md)
 - [mcp-integration-1.md](./mcp-integration-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [mcp-integration-2.md](./mcp-integration.md)
 - [mcp-integration.md](./mcp-integration.md)
 - [mcp-server-recommended-1.md](./mcp-server-recommended.md)
+=======
+- [mcp-integration-2.md](./mcp-integration-2.md)
+- [mcp-integration.md](./mcp-integration.md)
+- [mcp-server-recommended-1.md](./mcp-server-recommended-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [mcp-server-recommended-2.md](./mcp-server-recommended-2.md)
 - [mcp-server-recommended.md](./mcp-server-recommended.md)
 - [mcpatabase-tools.md](./mcpatabase-tools.md)
@@ -6019,6 +7998,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [memory-optimization.md](./memory-optimization.md)
 - [merge-conflict-files-list.md](./merge-conflict-files-list.md)
 - [merge-conflicts-list.md](./merge-conflicts-list.md)
+<<<<<<< .merge_file_aCPbkc
 - [metodi-duplicati-analisi-1.md](./metodi-duplicati-analisi.md)
 - [metodi-duplicati-analisi-2.md](./metodi-duplicati-analisi.md)
 - [metodi-duplicati-analisi-3.md](./metodi-duplicati-analisi.md)
@@ -6033,6 +8013,22 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [microsoft-oauth-socialite.md](./microsoft-oauth-socialite.md)
 - [migration-best-practices-1.md](./migration-best-practices.md)
 - [migration-best-practices-2.md](./migration-best-practices.md)
+=======
+- [metodi-duplicati-analisi-1.md](./metodi-duplicati-analisi-1.md)
+- [metodi-duplicati-analisi-2.md](./metodi-duplicati-analisi-2.md)
+- [metodi-duplicati-analisi-3.md](./metodi-duplicati-analisi-3.md)
+- [metodi-duplicati-analisi-4.md](./metodi-duplicati-analisi-4.md)
+- [metodi-duplicati-analisi-5.md](./metodi-duplicati-analisi-5.md)
+- [metodi-duplicati-analisi.md](./metodi-duplicati-analisi.md)
+- [metodiuplicati-analisi.md](./metodiuplicati-analisi.md)
+- [metrics-dashboard-1.md](./metrics-dashboard-1.md)
+- [metrics-dashboard-2.md](./metrics-dashboard-2.md)
+- [metrics-dashboard.md](./metrics-dashboard.md)
+- [metricsashboard.md](./metricsashboard.md)
+- [microsoft-oauth-socialite.md](./microsoft-oauth-socialite.md)
+- [migration-best-practices-1.md](./migration-best-practices-1.md)
+- [migration-best-practices-2.md](./migration-best-practices-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [migration-best-practices.md](./migration-best-practices.md)
 - [migration-consolidation-philosophy.md](./migration-consolidation-philosophy.md)
 - [migration-consolidation-plan.md](./migration-consolidation-plan.md)
@@ -6040,7 +8036,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [migration-dry-violations-report.md](./migration-dry-violations-report.md)
 - [migration-duplicate-resolution.md](./migration-duplicate-resolution.md)
 - [migration-execution-safety.md](./migration-execution-safety.md)
+<<<<<<< .merge_file_aCPbkc
 - [migration-filament-4.md](./migration-filament-user-module-migrazione.md)
+=======
+- [migration-filament-4.md](./migration-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [migration-filament.md](./migration-filament.md)
 - [migration-fix-tenants.md](./migration-fix-tenants.md)
 - [migration-internal.md](./migration-internal.md)
@@ -6064,7 +8064,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [migrationry-violations.md](./migrationry-violations.md)
 - [migrations.md](./migrations.md)
 - [migrationuplicate-resolution.md](./migrationuplicate-resolution.md)
+<<<<<<< .merge_file_aCPbkc
 - [migrazione-filament-4.md](./migrazione-filament.md)
+=======
+- [migrazione-filament-4.md](./migrazione-filament-4.md)
+>>>>>>> .merge_file_5nGk0n
 - [migrazione-filament.md](./migrazione-filament.md)
 - [missing-factories-audit.md](./missing-factories-audit.md)
 - [missing-factories.md](./missing-factories.md)
@@ -6073,6 +8077,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [missing-filament-resources-analysis.md](./missing-filament-resources-analysis.md)
 - [missing-filament-resources.md](./missing-filament-resources.md)
 - [model-classification.md](./model-classification.md)
+<<<<<<< .merge_file_aCPbkc
 - [model-inheritance-analysis-1.md](./model-inheritance-analysis.md)
 - [model-inheritance-analysis-2.md](./model-inheritance-analysis-2.md)
 - [model-inheritance-analysis-3.md](./model-inheritance-analysis.md)
@@ -6082,13 +8087,28 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [model-inheritance-fixes-1.md](./model-inheritance-fixes-1.md)
 - [model-inheritance-fixes-2.md](./model-inheritance-fixes.md)
 - [model-inheritance-fixes-3.md](./model-inheritance-fixes.md)
+=======
+- [model-inheritance-analysis-1.md](./model-inheritance-analysis-1.md)
+- [model-inheritance-analysis-2.md](./model-inheritance-analysis-2.md)
+- [model-inheritance-analysis-3.md](./model-inheritance-analysis-3.md)
+- [model-inheritance-analysis-4.md](./model-inheritance-analysis-4.md)
+- [model-inheritance-analysis-5.md](./model-inheritance-analysis-5.md)
+- [model-inheritance-analysis.md](./model-inheritance-analysis.md)
+- [model-inheritance-fixes-1.md](./model-inheritance-fixes-1.md)
+- [model-inheritance-fixes-2.md](./model-inheritance-fixes-2.md)
+- [model-inheritance-fixes-3.md](./model-inheritance-fixes-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [model-inheritance-fixes-4.md](./model-inheritance-fixes-4.md)
 - [model-inheritance-fixes-5.md](./model-inheritance-fixes-5.md)
 - [model-inheritance-fixes.md](./model-inheritance-fixes.md)
 - [model-inheritance-rules.md](./model-inheritance-rules.md)
 - [model-inheritance.md](./model-inheritance.md)
 - [model-inheritancees.md](./model-inheritancees.md)
+<<<<<<< .merge_file_aCPbkc
 - [modelli-factory-seeder-analisi-1.md](./modelli-factory-seeder-analisi.md)
+=======
+- [modelli-factory-seeder-analisi-1.md](./modelli-factory-seeder-analisi-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [modelli-factory-seeder-analisi-2.md](./modelli-factory-seeder-analisi-2.md)
 - [modelli-factory-seeder-analisi.md](./modelli-factory-seeder-analisi.md)
 - [models-analysis.md](./models-analysis.md)
@@ -6096,15 +8116,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [moderation-actions.md](./moderation-actions.md)
 - [moderation-contracts.md](./moderation-contracts.md)
 - [moderation-doctor-1.md](./moderation-doctor-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [moderation-doctor-2.md](./moderation-doctor.md)
 - [moderation-doctor.md](./moderation-doctor.md)
 - [moderation-notifications.md](./moderation-notifications.md)
 - [moderation-wizard-generic-1.md](./moderation-wizard-generic.md)
 - [moderation-wizard-generic-2.md](./moderation-wizard-generic.md)
+=======
+- [moderation-doctor-2.md](./moderation-doctor-2.md)
+- [moderation-doctor.md](./moderation-doctor.md)
+- [moderation-notifications.md](./moderation-notifications.md)
+- [moderation-wizard-generic-1.md](./moderation-wizard-generic-1.md)
+- [moderation-wizard-generic-2.md](./moderation-wizard-generic-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [moderation-wizard-generic.md](./moderation-wizard-generic.md)
 - [moderationor.md](./moderationor.md)
 - [module-analysis-complete.md](./module-analysis-complete.md)
 - [module-analysis.md](./module-analysis.md)
+<<<<<<< .merge_file_aCPbkc
 - [module-structure-1.md](./module-structure.md)
 - [module-structure-2.md](./module-structure-user.md)
 - [module-structure.md](./module-structure.md)
@@ -6114,6 +8143,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [namespace-conventions-1.md](./namespace-conventions.md)
 - [namespace-conventions-2.md](./namespace-conventions.md)
 - [namespace-conventions-3.md](./namespace-conventions-convenzioni-modulo-user.md)
+=======
+- [module-structure-1.md](./module-structure-1.md)
+- [module-structure-2.md](./module-structure-2.md)
+- [module-structure.md](./module-structure.md)
+- [module-user-1.md](./module-user-1.md)
+- [module-user.md](./module-user.md)
+- [module.md](./module.md)
+- [namespace-conventions-1.md](./namespace-conventions-1.md)
+- [namespace-conventions-2.md](./namespace-conventions-2.md)
+- [namespace-conventions-3.md](./namespace-conventions-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [namespace-conventions.md](./namespace-conventions.md)
 - [navigation-structure-1.md](./navigation-structure-1.md)
 - [navigation-structure-2.md](./navigation-structure-2.md)
@@ -6139,11 +8179,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [oauth-passport-model-wrappers.md](./oauth-passport-model-wrappers.md)
 - [oauth-token-relations-ide-helper.md](./oauth-token-relations-ide-helper.md)
 - [on-demand-pattern.md](./on-demand-pattern.md)
+<<<<<<< .merge_file_aCPbkc
 - [optimization-analysis-1.md](./optimization-analysis-user-module-documentation.md)
 - [optimization-analysis-2.md](./optimization-analysis.md)
 - [optimization-analysis-dry-kiss.md](./optimization-analysis-dry-kiss.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [optimization-recommendations-1.md](./optimization-recommendations-raccomandazioni-ottimizzazione-modulo-user.md)
+=======
+- [optimization-analysis-1.md](./optimization-analysis-1.md)
+- [optimization-analysis-2.md](./optimization-analysis-2.md)
+- [optimization-analysis-dry-kiss.md](./optimization-analysis-dry-kiss.md)
+- [optimization-analysis.md](./optimization-analysis.md)
+- [optimization-recommendations-1.md](./optimization-recommendations-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [optimization-recommendations-2.md](./optimization-recommendations-2.md)
 - [optimization-recommendations.md](./optimization-recommendations.md)
 - [optimization.md](./optimization.md)
@@ -6159,11 +8207,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [ottimizzazioniry-kiss.md](./ottimizzazioniry-kiss.md)
 - [overview-extended.md](./overview-extended.md)
 - [packages.md](./packages.md)
+<<<<<<< .merge_file_aCPbkc
 - [parental-inheritance-1.md](./parental-inheritance.md)
 - [parental-inheritance.md](./parental-inheritance.md)
 - [parental.md](./parental.md)
 - [passport-admin-actions-1.md](./passport-admin-actions.md)
 - [passport-admin-actions-2.md](./passport-admin-actions.md)
+=======
+- [parental-inheritance-1.md](./parental-inheritance-1.md)
+- [parental-inheritance.md](./parental-inheritance.md)
+- [parental.md](./parental.md)
+- [passport-admin-actions-1.md](./passport-admin-actions-1.md)
+- [passport-admin-actions-2.md](./passport-admin-actions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [passport-admin-actions.md](./passport-admin-actions.md)
 - [passport-cluster-completion-status.md](./passport-cluster-completion-status.md)
 - [passport-cluster-completion.md](./passport-cluster-completion.md)
@@ -6192,7 +8248,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [passport-complete-management-debate.md](./passport-complete-management-debate.md)
 - [passport-filament-cluster-proposal.md](./passport-filament-cluster-proposal.md)
 - [passport-implementation-summary-1.md](./passport-implementation-summary-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [passport-implementation-summary-2.md](./passport-implementation-summary.md)
+=======
+- [passport-implementation-summary-2.md](./passport-implementation-summary-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [passport-implementation-summary.md](./passport-implementation-summary.md)
 - [passport-implementation.md](./passport-implementation.md)
 - [passport-integration.md](./passport-integration.md)
@@ -6205,6 +8265,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [passport.md](./passport.md)
 - [password-translation-completion-.md](./password-translation-completion-.md)
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-historical.md)
 - [password-translation-completion-2025.md](./password-translation-completion-historical.md)
@@ -6212,6 +8273,15 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [password.md](./password.md)
 - [path-conventions-1.md](./path-conventions.md)
 - [path-conventions-2.md](./path-conventions-user.md)
+=======
+- [password-translation-completion-2.md](./password-translation-completion-2.md)
+- [password-translation-completion-2025-1.md](./password-translation-completion-historical-1.md)
+- [password-translation-completion-2025.md](./password-translation-completion-historical.md)
+- [password-translation-completion.md](./password-translation-completion.md)
+- [password.md](./password.md)
+- [path-conventions-1.md](./path-conventions-1.md)
+- [path-conventions-2.md](./path-conventions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [path-conventions.md](./path-conventions.md)
 - [payment.md](./payment.md)
 - [performance-issues.md](./performance-issues.md)
@@ -6227,7 +8297,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpinsightss.md](./phpinsightss.md)
 - [phpmd-errors.md](./phpmd-errors.md)
 - [phpmd-phpinsights-corrections-.md](./phpmd-phpinsights-corrections-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
+=======
+- [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
 - [phpmd-report.md](./phpmd-report.md)
 - [phpmd.md](./phpmd.md)
@@ -6244,7 +8318,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
 - [phpstan-corrections.md](./phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements-.md](./phpstan-dry-kiss-improvements-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements.md)
+=======
+- [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-dry-kiss-improvements-2.md](./phpstan-dry-kiss-improvements-2.md)
 - [phpstan-dry-kiss-improvements.deprecated.md](./phpstan-dry-kiss-improvements.deprecated.md)
 - [phpstan-dry-kiss-improvements-3.md](./phpstan-dry-kiss-improvements-3.md)
@@ -6255,15 +8333,24 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-errors-roadmap.md](./phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./phpstan-fix-plan-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fix-plan-1.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-2.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-3.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-4.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-5.md](./phpstan-fix-plan.md)
+=======
+- [phpstan-fix-plan-1.md](./phpstan-fix-plan-1.md)
+- [phpstan-fix-plan-2.md](./phpstan-fix-plan-2.md)
+- [phpstan-fix-plan-3.md](./phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-4.md](./phpstan-fix-plan-4.md)
+- [phpstan-fix-plan-5.md](./phpstan-fix-plan-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fix-plan-user.md](./phpstan-fix-plan-user.md)
 - [phpstan-fix-plan.md](./phpstan-fix-plan.md)
 - [phpstan-fix-roadmap.md](./phpstan-fix-roadmap.md)
 - [phpstan-fixes-.md](./phpstan-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-1.md](./phpstan-fixes-1.md)
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
@@ -6281,12 +8368,35 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-8.md](./phpstan-fixes.md)
 - [phpstan-fixes-archive-1.md](./phpstan-fixes-archive-1.md)
 - [phpstan-fixes-archive-2.md](./phpstan-fixes-archive.md)
+=======
+- [phpstan-fixes-1-1.md](./phpstan-fixes-1-1.md)
+- [phpstan-fixes-1.md](./phpstan-fixes-1.md)
+- [phpstan-fixes-2-1.md](./phpstan-fixes-2-1.md)
+- [phpstan-fixes-2.md](./phpstan-fixes-2.md)
+- [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-1.md)
+- [phpstan-fixes.deprecated.md](./phpstan-fixes.deprecated.md)
+- [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
+- [phpstan-fixes-3-1.md](./phpstan-fixes-3-1.md)
+- [phpstan-fixes-3-2.md](./phpstan-fixes-3-2.md)
+- [phpstan-fixes-3.md](./phpstan-fixes-3.md)
+- [phpstan-fixes-4.md](./phpstan-fixes-4.md)
+- [phpstan-fixes-5.md](./phpstan-fixes-5.md)
+- [phpstan-fixes-6.md](./phpstan-fixes-6.md)
+- [phpstan-fixes-7.md](./phpstan-fixes-7.md)
+- [phpstan-fixes-8.md](./phpstan-fixes-8.md)
+- [phpstan-fixes-archive-1.md](./phpstan-fixes-archive-1.md)
+- [phpstan-fixes-archive-2.md](./phpstan-fixes-archive-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-complete.md](./phpstan-fixes-complete.md)
 - [phpstan-fixes-conflict-276dc0.md](./phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-.md](./phpstan-fixes-gennaio-.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-modulo-user.md)
+=======
+- [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-fixes-gennaio-2.md](./phpstan-fixes-gennaio-2.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./phpstan-fixes-gennaio-2025-complete.md)
 - [phpstan-fixes-gennaio-2025.md](./phpstan-fixes-gennaio-2025.md)
@@ -6319,15 +8429,25 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-progress-report.md](./phpstan-progress-report.md)
 - [phpstan-progress-summary.md](./phpstan-progress-summary.md)
 - [phpstan-progress.md](./phpstan-progress.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-relationship-fix-1.md](./phpstan-relationship-fix.md)
 - [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-correzione-type-hints.md)
+=======
+- [phpstan-relationship-fix-1.md](./phpstan-relationship-fix-1.md)
+- [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-relationship-fix.md](./phpstan-relationship-fix.md)
 - [phpstan-relationship.md](./phpstan-relationship.md)
 - [phpstan-report-initial.md](./phpstan-report-initial.md)
 - [phpstan-resolution-debate.md](./phpstan-resolution-debate.md)
 - [phpstan-resolutionebate.md](./phpstan-resolutionebate.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstan-roadmap-1.md](./phpstan-roadmap.md)
 - [phpstan-roadmap-2.md](./phpstan-roadmap.md)
+=======
+- [phpstan-roadmap-1.md](./phpstan-roadmap-1.md)
+- [phpstan-roadmap-2.md](./phpstan-roadmap-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstan-roadmap.md](./phpstan-roadmap.md)
 - [phpstan-success.md](./phpstan-success.md)
 - [phpstan-syntax-blockers.md](./phpstan-syntax-blockers.md)
@@ -6336,11 +8456,19 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-user.md](./phpstan-user.md)
 - [phpstan.md](./phpstan.md)
 - [phpstanebate.md](./phpstanebate.md)
+<<<<<<< .merge_file_aCPbkc
 - [phpstanes-1.md](./phpstanes.md)
 - [phpstanes-2.md](./phpstanes.md)
 - [phpstanes-276dc0.md](./phpstanes-276dc0.md)
 - [phpstanes-2e.md](./phpstanes-2e.md)
 - [phpstanes-3.md](./phpstanes.md)
+=======
+- [phpstanes-1.md](./phpstanes-1.md)
+- [phpstanes-2.md](./phpstanes-2.md)
+- [phpstanes-276dc0.md](./phpstanes-276dc0.md)
+- [phpstanes-2e.md](./phpstanes-2e.md)
+- [phpstanes-3.md](./phpstanes-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [phpstanes-passport.md](./phpstanes-passport.md)
 - [phpstanes.md](./phpstanes.md)
 - [phpstanry-kiss-improvements.md](./phpstanry-kiss-improvements.md)
@@ -6354,6 +8482,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [ponytail-audit-over-engineering.md](./ponytail-audit-over-engineering.md)
 - [ponytail-audit.md](./ponytail-audit.md)
 - [prd.md](./prd.md)
+<<<<<<< .merge_file_aCPbkc
 - [product-launch-plan-1.md](./product-launch-plan.md)
 - [product-launch-plan-2.md](./product-launch-plan-user-module.md)
 - [product-launch-plan.md](./product-launch-plan.md)
@@ -6366,11 +8495,26 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [product-strategy.md](./product-strategy.md)
 - [profile-management-1.md](./profile-management.md)
 - [profile-management-2.md](./profile-management.md)
+=======
+- [product-launch-plan-1.md](./product-launch-plan-1.md)
+- [product-launch-plan-2.md](./product-launch-plan-2.md)
+- [product-launch-plan.md](./product-launch-plan.md)
+- [product-requirements.md](./product-requirements.md)
+- [product-roadmap-1.md](./product-roadmap-1.md)
+- [product-roadmap-2.md](./product-roadmap-2.md)
+- [product-roadmap.md](./product-roadmap.md)
+- [product-strategy-1.md](./product-strategy-1.md)
+- [product-strategy-2.md](./product-strategy-2.md)
+- [product-strategy.md](./product-strategy.md)
+- [profile-management-1.md](./profile-management-1.md)
+- [profile-management-2.md](./profile-management-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [profile-management.md](./profile-management.md)
 - [profile.md](./profile.md)
 - [profiles-id-uuid-policy.md](./profiles-id-uuid-policy.md)
 - [project-structure.md](./project-structure.md)
 - [qmd-setup.md](./qmd-setup.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-1.md](./quality.md)
 - [quality-11.md](./quality.md)
 - [quality-improvements-summary.md](./quality-improvements-summary.md)
@@ -6379,28 +8523,56 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [quality-status-11.md](./quality-status.md)
 - [quality-status-2.md](./quality-status.md)
 - [quality-status-2025-11.md](./quality-status.md)
+=======
+- [quality-1.md](./quality-1.md)
+- [quality-11.md](./quality-11.md)
+- [quality-improvements-summary.md](./quality-improvements-summary.md)
+- [quality-improvements.md](./quality-improvements.md)
+- [quality-status-1.md](./quality-status-1.md)
+- [quality-status-11.md](./quality-status-11.md)
+- [quality-status-2.md](./quality-status-2.md)
+- [quality-status-2025-11.md](./quality-status-2025-11.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-status-nov.md](./quality-status-nov.md)
 - [quality-status.md](./quality-status.md)
 - [quality-tooling.md](./quality-tooling.md)
 - [quality-tools-final-report-.md](./quality-tools-final-report-.md)
+<<<<<<< .merge_file_aCPbkc
 - [quality-tools-final-report-1.md](./quality-tools-final-report.md)
+=======
+- [quality-tools-final-report-1.md](./quality-tools-final-report-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [quality-tools-final-report.md](./quality-tools-final-report.md)
 - [quality-tools-final.md](./quality-tools-final.md)
 - [quality-tools-report.md](./quality-tools-report.md)
 - [quality-tools.md](./quality-tools.md)
 - [quality.md](./quality.md)
+<<<<<<< .merge_file_aCPbkc
 - [query-optimization-analysis-1.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-2.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-3.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-4.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-5.md](./query-optimization-analysis.md)
+=======
+- [query-optimization-analysis-1.md](./query-optimization-analysis-1.md)
+- [query-optimization-analysis-2.md](./query-optimization-analysis-2.md)
+- [query-optimization-analysis-3.md](./query-optimization-analysis-3.md)
+- [query-optimization-analysis-4.md](./query-optimization-analysis-4.md)
+- [query-optimization-analysis-5.md](./query-optimization-analysis-5.md)
+>>>>>>> .merge_file_5nGk0n
 - [query-optimization-analysis.md](./query-optimization-analysis.md)
 - [query-optimization.md](./query-optimization.md)
 - [r1-form-fields-self-validate.md](./r1-form-fields-self-validate.md)
 - [readme-en.md](./readme-en.md)
+<<<<<<< .merge_file_aCPbkc
 - [readme-fullcalendar-scheduler-1-1.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler-1.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler-2.md](./readme-fullcalendar-scheduler.md)
+=======
+- [readme-fullcalendar-scheduler-1-1.md](./readme-fullcalendar-scheduler-1-1.md)
+- [readme-fullcalendar-scheduler-1.md](./readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler-2.md](./readme-fullcalendar-scheduler-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [readme-fullcalendar-scheduler.md](./readme-fullcalendar-scheduler.md)
 - [readme-new.md](./readme-new.md)
 - [readme.md](./readme.md)
@@ -6414,6 +8586,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [redundancy-fixes.md](./redundancy-fixes.md)
 - [redundancy-report.md](./redundancy-report.md)
 - [redundancyes.md](./redundancyes.md)
+<<<<<<< .merge_file_aCPbkc
 - [registration-widget-1.md](./registration-widget.md)
 - [registration-widget-2.md](./registration-widget-documentation.md)
 - [registration-widget-3.md](./registration-widget-3.md)
@@ -6424,6 +8597,18 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [registration-widget-fileupload.md](./registration-widget-fileupload.md)
 - [registration-widget-update-1-1.md](./registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
 - [registration-widget-update-1.md](./registration-widget-update.md)
+=======
+- [registration-widget-1.md](./registration-widget-1.md)
+- [registration-widget-2.md](./registration-widget-2.md)
+- [registration-widget-3.md](./registration-widget-3.md)
+- [registration-widget-fileupload-fix-1-1.md](./registration-widget-fileupload-fix-1-1.md)
+- [registration-widget-fileupload-fix-1.md](./registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix-2.md](./registration-widget-fileupload-fix-2.md)
+- [registration-widget-fileupload-fix.md](./registration-widget-fileupload-fix.md)
+- [registration-widget-fileupload.md](./registration-widget-fileupload.md)
+- [registration-widget-update-1-1.md](./registration-widget-update-1-1.md)
+- [registration-widget-update-1.md](./registration-widget-update-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [registration-widget-update-2.md](./registration-widget-update-2.md)
 - [registration-widget-update.md](./registration-widget-update.md)
 - [registration-widget.md](./registration-widget.md)
@@ -6438,48 +8623,84 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [resources-array-keys-philosophy.md](./resources-array-keys-philosophy.md)
 - [resources-array-keys.md](./resources-array-keys.md)
 - [resources-corrections-summary-.md](./resources-corrections-summary-.md)
+<<<<<<< .merge_file_aCPbkc
 - [resources-corrections-summary-1.md](./resources-corrections-summary.md)
+=======
+- [resources-corrections-summary-1.md](./resources-corrections-summary-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [resources-corrections-summary.md](./resources-corrections-summary.md)
 - [resources-corrections.md](./resources-corrections.md)
 - [roadmap-.md](./roadmap-.md)
 - [roadmap-1-1.md](./roadmap-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [roadmap-1.md](./roadmap.md)
 - [roadmap-2025.md](./roadmap-2025.md)
 - [roadmap-and-issues.md](./roadmap-and-issues.md)
 - [roadmap-ands.md](./roadmap-ands.md)
 - [roadmap-archive-1.md](./roadmap-archive.md)
+=======
+- [roadmap-1.md](./roadmap-1.md)
+- [roadmap-2025.md](./roadmap-2025.md)
+- [roadmap-and-issues.md](./roadmap-and-issues.md)
+- [roadmap-ands.md](./roadmap-ands.md)
+- [roadmap-archive-1.md](./roadmap-archive-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [roadmap-complete.md](./roadmap-complete.md)
 - [roadmap-conflict.md](./roadmap-conflict.md)
 - [roadmap.md](./roadmap.md)
 - [roles-migration-philosophy-fix.md](./roles-migration-philosophy-fix.md)
 - [roles-migration.md](./roles-migration.md)
+<<<<<<< .merge_file_aCPbkc
 - [roles-permissions-1.md](./roles-permissions.md)
 - [roles-permissions-2.md](./roles-permissions.md)
 - [roles-permissions-3.md](./roles-permissions.md)
+=======
+- [roles-permissions-1.md](./roles-permissions-1.md)
+- [roles-permissions-2.md](./roles-permissions-2.md)
+- [roles-permissions-3.md](./roles-permissions-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [roles-permissions.md](./roles-permissions.md)
 - [root-file-policy.md](./root-file-policy.md)
 - [root-files-hygiene.md](./root-files-hygiene.md)
 - [routing-best-practices-1.md](./routing-best-practices-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [routing-best-practices-2.md](./routing-best-practices.md)
 - [routing-best-practices.md](./routing-best-practices.md)
 - [routing-error-solution-1.md](./routing-error-solution.md)
+=======
+- [routing-best-practices-2.md](./routing-best-practices-2.md)
+- [routing-best-practices.md](./routing-best-practices.md)
+- [routing-error-solution-1.md](./routing-error-solution-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [routing-error-solution-2.md](./routing-error-solution-2.md)
 - [routing-error-solution.md](./routing-error-solution.md)
 - [routing-solution.md](./routing-solution.md)
 - [rules-index.md](./rules-index.md)
 - [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md)
 - [scheduler-license-key-1.md](./scheduler-license-key-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [scheduler-license-key-2.md](./scheduler-license-key.md)
+=======
+- [scheduler-license-key-2.md](./scheduler-license-key-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [scheduler-license-key.md](./scheduler-license-key.md)
 - [schema-org-enhancements.md](./schema-org-enhancements.md)
 - [schema.md](./schema.md)
 - [second-brain.md](./second-brain.md)
 - [service-provider-architecture.md](./service-provider-architecture.md)
+<<<<<<< .merge_file_aCPbkc
 - [service-provider-warning-1.md](./service-provider-warning.md)
 - [service-provider-warning-2.md](./service-provider-warning-user.md)
 - [service-provider-warning.md](./service-provider-warning.md)
 - [session-management-1.md](./session-management-1.md)
 - [session-management-2.md](./session-management.md)
+=======
+- [service-provider-warning-1.md](./service-provider-warning-1.md)
+- [service-provider-warning-2.md](./service-provider-warning-2.md)
+- [service-provider-warning.md](./service-provider-warning.md)
+- [session-management-1.md](./session-management-1.md)
+- [session-management-2.md](./session-management-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [session-management.md](./session-management.md)
 - [setup-super-admin.md](./setup-super-admin.md)
 - [social-auth-architecture.md](./social-auth-architecture.md)
@@ -6490,6 +8711,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [socialite.md](./socialite.md)
 - [spatie-models-verification.md](./spatie-models-verification.md)
 - [spatie-permission-philosophy.md](./spatie-permission-philosophy.md)
+<<<<<<< .merge_file_aCPbkc
 - [spatie-permission-teams-laravel-13.md](./spatie-permission-teams-laravel.md)
 - [spatie-permission.md](./spatie-permission.md)
 - [spatie-permissions-1.md](./spatie-permissions-1.md)
@@ -6507,6 +8729,25 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [sprint-planning.md](./sprint-planning.md)
 - [sso-guide.md](./sso-guide.md)
 - [sso-providers-implementation-1.md](./sso-providers-implementation.md)
+=======
+- [spatie-permission-teams-laravel-13.md](./spatie-permission-teams-laravel-13.md)
+- [spatie-permission.md](./spatie-permission.md)
+- [spatie-permissions-1.md](./spatie-permissions-1.md)
+- [spatie-permissions-2.md](./spatie-permissions-2.md)
+- [spatie-permissions-methods-1.md](./spatie-permissions-methods-1.md)
+- [spatie-permissions-methods-2.md](./spatie-permissions-methods-2.md)
+- [spatie-permissions-methods-3.md](./spatie-permissions-methods-3.md)
+- [spatie-permissions-methods-4.md](./spatie-permissions-methods-4.md)
+- [spatie-permissions-methods-5.md](./spatie-permissions-methods-5.md)
+- [spatie-permissions-methods.md](./spatie-permissions-methods.md)
+- [spatie-permissions.md](./spatie-permissions.md)
+- [sprint-planning-1.md](./sprint-planning-1.md)
+- [sprint-planning-2.md](./sprint-planning-2.md)
+- [sprint-planning-meeting.md](./sprint-planning-meeting.md)
+- [sprint-planning.md](./sprint-planning.md)
+- [sso-guide.md](./sso-guide.md)
+- [sso-providers-implementation-1.md](./sso-providers-implementation-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [sso-providers-implementation-2.md](./sso-providers-implementation-2.md)
 - [sso-providers-implementation-3.md](./sso-providers-implementation-3.md)
 - [sso-providers-implementation-4.md](./sso-providers-implementation-4.md)
@@ -6529,6 +8770,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [task-schema-org-person-enhancement.md](./task-schema-org-person-enhancement.md)
 - [task-test-socialite-actions.md](./task-test-socialite-actions.md)
 - [tasks-schema-org-person.md](./tasks-schema-org-person.md)
+<<<<<<< .merge_file_aCPbkc
 - [team-bindings-fix-1.md](./team-bindings-fix.md)
 - [team-bindings-fix-2.md](./team-bindings-fix-binding-models-modulo-user.md)
 - [team-bindings-fix-3.md](./team-bindings-fix-3.md)
@@ -6536,33 +8778,60 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [team-bindings.md](./team-bindings.md)
 - [team-contract-usage-reasoning-1.md](./team-contract-usage-reasoning.md)
 - [team-contract-usage-reasoning-2.md](./team-contract-usage-reasoning.md)
+=======
+- [team-bindings-fix-1.md](./team-bindings-fix-1.md)
+- [team-bindings-fix-2.md](./team-bindings-fix-2.md)
+- [team-bindings-fix-3.md](./team-bindings-fix-3.md)
+- [team-bindings-fix.md](./team-bindings-fix.md)
+- [team-bindings.md](./team-bindings.md)
+- [team-contract-usage-reasoning-1.md](./team-contract-usage-reasoning-1.md)
+- [team-contract-usage-reasoning-2.md](./team-contract-usage-reasoning-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
 - [team-user-composite-primary-key-fix.md](./team-user-composite-primary-key-fix.md)
 - [team-user-composite-priy-key.md](./team-user-composite-priy-key.md)
 - [team-user-permissions-fix.md](./team-user-permissions-fix.md)
 - [team-user-permissions.md](./team-user-permissions.md)
+<<<<<<< .merge_file_aCPbkc
 - [teams-migration-laraxot-compliance-1.md](./teams-migration-laraxot-compliance-fix.md)
+=======
+- [teams-migration-laraxot-compliance-1.md](./teams-migration-laraxot-compliance-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [teams-migration-laraxot-compliance-2.md](./teams-migration-laraxot-compliance-2.md)
 - [teams-migration-laraxot-compliance.md](./teams-migration-laraxot-compliance.md)
 - [teams.md](./teams.md)
 - [terms-and-conditions-1.md](./terms-and-conditions-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [terms-and-conditions-2.md](./terms-and-conditions.md)
+=======
+- [terms-and-conditions-2.md](./terms-and-conditions-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [terms-and-conditions.md](./terms-and-conditions.md)
 - [terms-conditions.md](./terms-conditions.md)
 - [testcase-hasusertestcase-property-conflict-fixed.md](./testcase-hasusertestcase-property-conflict-fixed.md)
 - [testcase-sqlite-to-mysql-fix.md](./testcase-sqlite-to-mysql-fix.md)
 - [testcase-sqlite-to-mysql.md](./testcase-sqlite-to-mysql.md)
 - [testing-phpstan-progress.md](./testing-phpstan-progress.md)
+<<<<<<< .merge_file_aCPbkc
 - [testing-rules-1.md](./testing-rules.md)
 - [testing-rules-2.md](./testing-rules.md)
+=======
+- [testing-rules-1.md](./testing-rules-1.md)
+- [testing-rules-2.md](./testing-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [testing-rules.md](./testing-rules.md)
 - [testing-strategy.md](./testing-strategy.md)
 - [testing-structure.md](./testing-structure.md)
 - [testing-user-command-integration-fix.md](./testing-user-command-integration-fix.md)
 - [testing-user-command-integration.md](./testing-user-command-integration.md)
 - [testing.md](./testing.md)
+<<<<<<< .merge_file_aCPbkc
 - [theme-translation-conflicts-resolution-1.md](./theme-translation-conflicts-resolution-user.md)
 - [theme-translation-conflicts-resolution-2.md](./theme-translation-conflicts-resolution.md)
+=======
+- [theme-translation-conflicts-resolution-1.md](./theme-translation-conflicts-resolution-1.md)
+- [theme-translation-conflicts-resolution-2.md](./theme-translation-conflicts-resolution-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [theme-translation-conflicts-resolution.md](./theme-translation-conflicts-resolution.md)
 - [theme-translations-resolution.md](./theme-translations-resolution.md)
 - [third-party-model-patterns.md](./third-party-model-patterns.md)
@@ -6571,10 +8840,17 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [tips.md](./tips.md)
 - [todo.md](./todo.md)
 - [traits-complete-guide-1-1.md](./traits-complete-guide-1-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [traits-complete-guide-1.md](./traits-complete-guide.md)
 - [traits-complete-guide-2.md](./traits-complete-guide-2.md)
 - [traits-complete-guide.md](./traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./traits-hasteams-analisi-corretta.md)
+=======
+- [traits-complete-guide-1.md](./traits-complete-guide-1.md)
+- [traits-complete-guide-2.md](./traits-complete-guide-2.md)
+- [traits-complete-guide.md](./traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./traits-hasteams-analisi-corretta-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [traits-hasteams-analisi-corretta-2.md](./traits-hasteams-analisi-corretta-2.md)
 - [traits-hasteams-analisi-corretta-3.md](./traits-hasteams-analisi-corretta-3.md)
 - [traits-hasteams-analisi-corretta.md](./traits-hasteams-analisi-corretta.md)
@@ -6585,7 +8861,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [traits.md](./traits.md)
 - [translation-architecture.md](./translation-architecture.md)
 - [translation-best-practices-1.md](./translation-best-practices-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-best-practices-2.md](./translation-best-practices.md)
+=======
+- [translation-best-practices-2.md](./translation-best-practices-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-best-practices.md](./translation-best-practices.md)
 - [translation-city-field-refactor-.md](./translation-city-field-refactor-.md)
 - [translation-city-field-refactor-1.md](./translation-city-field-refactor-1.md)
@@ -6599,14 +8879,23 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translation-fixes.md](./translation-fixes.md)
 - [translation-guidelines.md](./translation-guidelines.md)
 - [translation-key-prototype.md](./translation-key-prototype.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-keys-rules-1.md](./translation-keys-rules.md)
 - [translation-keys-rules-2.md](./translation-keys-rules.md)
+=======
+- [translation-keys-rules-1.md](./translation-keys-rules-1.md)
+- [translation-keys-rules-2.md](./translation-keys-rules-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-keys-rules.md](./translation-keys-rules.md)
 - [translation-keys.md](./translation-keys.md)
 - [translation-maintenance-log.md](./translation-maintenance-log.md)
 - [translation-resolution-prototype.md](./translation-resolution-prototype.md)
 - [translation-syntax-fixes-.md](./translation-syntax-fixes-.md)
+<<<<<<< .merge_file_aCPbkc
 - [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
+=======
+- [translation-syntax-fixes-1.md](./translation-syntax-fixes-1.md)
+>>>>>>> .merge_file_5nGk0n
 - [translation-syntax-fixes-2025.md](./translation-syntax-fixes-2025.md)
 - [translation-syntax-fixes.md](./translation-syntax-fixes.md)
 - [translation-syntaxes.md](./translation-syntaxes.md)
@@ -6618,6 +8907,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [two-factor-2.md](./two-factor-2.md)
 - [two-factor.md](./two-factor.md)
 - [type-safety-improvements.md](./type-safety-improvements.md)
+<<<<<<< .merge_file_aCPbkc
 - [updates-1.md](./updates.md)
 - [updates-12.md](./updates.md)
 - [updates-2025.md](./updates-historical.md)
@@ -6643,13 +8933,44 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [user-moderation-strategy-1.md](./user-moderation-strategy.md)
 - [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
 - [user-moderation-strategy-3.md](./user-moderation-strategy.md)
+=======
+- [updates-1.md](./updates-1.md)
+- [updates-12.md](./updates-12.md)
+- [updates-2025.md](./updates-historical.md)
+- [updates-dec.md](./updates-dec.md)
+- [updates.md](./updates.md)
+- [user-factory-advanced-integration-1.md](./user-factory-advanced-integration-1.md)
+- [user-factory-advanced-integration-2.md](./user-factory-advanced-integration-2.md)
+- [user-factory-advanced-integration-3.md](./user-factory-advanced-integration-3.md)
+- [user-factory-advanced-integration.md](./user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1-1.md](./user-factory-complete-ecosystem-integration-1-1.md)
+- [user-factory-complete-ecosystem-integration-1.md](./user-factory-complete-ecosystem-integration-1.md)
+- [user-factory-complete-ecosystem-integration-2.md](./user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration.md](./user-factory-complete-ecosystem-integration.md)
+- [user-factory-ecosystem-integration.md](./user-factory-ecosystem-integration.md)
+- [user-factory-integration-1-1.md](./user-factory-integration-1-1.md)
+- [user-factory-integration-1.md](./user-factory-integration-1.md)
+- [user-factory-integration-2.md](./user-factory-integration-2.md)
+- [user-factory-integration.md](./user-factory-integration.md)
+- [user-invitation-1.md](./user-invitation-1.md)
+- [user-invitation-2.md](./user-invitation-2.md)
+- [user-invitation.md](./user-invitation.md)
+- [user-management.md](./user-management.md)
+- [user-moderation-strategy-1.md](./user-moderation-strategy-1.md)
+- [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
+- [user-moderation-strategy-3.md](./user-moderation-strategy-3.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-moderation-strategy.md](./user-moderation-strategy.md)
 - [user-profile-aration.md](./user-profile-aration.md)
 - [user-profile-models.md](./user-profile-models.md)
 - [user-profile-separation.md](./user-profile-separation.md)
 - [user-profile.md](./user-profile.md)
 - [user-research-1.md](./user-research-1.md)
+<<<<<<< .merge_file_aCPbkc
 - [user-research-2.md](./user-research.md)
+=======
+- [user-research-2.md](./user-research-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [user-research.md](./user-research.md)
 - [user-states.md](./user-states.md)
 - [user-vs-profile.md](./user-vs-profile.md)
@@ -6663,6 +8984,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [vendor-extension.md](./vendor-extension.md)
 - [viewclient-infolist-implementation-philosophy.md](./viewclient-infolist-implementation-philosophy.md)
 - [viewclient-infolist-implementation.md](./viewclient-infolist-implementation.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-blade-implementation-1.md](./volt-blade-implementation.md)
 - [volt-blade-implementation-2.md](./volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
@@ -6689,6 +9011,34 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [volt-folio-logout-debug.md](./volt-folio-logout-debug.md)
 - [volt-folio-logout-error-1.md](./volt-folio-logout-error.md)
 - [volt-folio-logout-error-2.md](./volt-folio-logout-error-errore.md)
+=======
+- [volt-blade-implementation-1.md](./volt-blade-implementation-1.md)
+- [volt-blade-implementation-2.md](./volt-blade-implementation-2.md)
+- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
+- [volt-blade-implementation-error-1.md](./volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error-2.md](./volt-blade-implementation-error-2.md)
+- [volt-blade-implementation-error-3.md](./volt-blade-implementation-error-3.md)
+- [volt-blade-implementation-error.md](./volt-blade-implementation-error.md)
+- [volt-blade-implementation.md](./volt-blade-implementation.md)
+- [volt-errors-1.md](./volt-errors-1.md)
+- [volt-errors-2.md](./volt-errors-2.md)
+- [volt-errors.md](./volt-errors.md)
+- [volt-folio-auth-implementation-1.md](./volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation-2.md](./volt-folio-auth-implementation-2.md)
+- [volt-folio-auth-implementation-3.md](./volt-folio-auth-implementation-3.md)
+- [volt-folio-auth-implementation.md](./volt-folio-auth-implementation.md)
+- [volt-folio-error-1.md](./volt-folio-error-1.md)
+- [volt-folio-error-2.md](./volt-folio-error-2.md)
+- [volt-folio-error.md](./volt-folio-error.md)
+- [volt-folio-logout-1-1.md](./volt-folio-logout-1-1.md)
+- [volt-folio-logout-1.md](./volt-folio-logout-1.md)
+- [volt-folio-logout-2.md](./volt-folio-logout-2.md)
+- [volt-folio-logout-debug-1.md](./volt-folio-logout-debug-1.md)
+- [volt-folio-logout-debug-2.md](./volt-folio-logout-debug-2.md)
+- [volt-folio-logout-debug.md](./volt-folio-logout-debug.md)
+- [volt-folio-logout-error-1.md](./volt-folio-logout-error-1.md)
+- [volt-folio-logout-error-2.md](./volt-folio-logout-error-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [volt-folio-logout-error-3.md](./volt-folio-logout-error-3.md)
 - [volt-folio-logout-error.md](./volt-folio-logout-error.md)
 - [volt-folio-logout.md](./volt-folio-logout.md)
@@ -6696,6 +9046,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [volt-folio.md](./volt-folio.md)
 - [volt-logout-1.md](./volt-logout-1.md)
 - [volt-logout-2.md](./volt-logout-2.md)
+<<<<<<< .merge_file_aCPbkc
 - [volt-logout-action-1.md](./volt-logout-action.md)
 - [volt-logout-action-2.md](./volt-logout-action.md)
 - [volt-logout-action.md](./volt-logout-action.md)
@@ -6719,6 +9070,31 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [widget-translation.md](./widget-translation.md)
 - [widgets-structure-1.md](./widgets-structure.md)
 - [widgets-structure-2.md](./widgets-structure-user.md)
+=======
+- [volt-logout-action-1.md](./volt-logout-action-1.md)
+- [volt-logout-action-2.md](./volt-logout-action-2.md)
+- [volt-logout-action.md](./volt-logout-action.md)
+- [volt-logout.md](./volt-logout.md)
+- [volt-missing-directive-1.md](./volt-missing-directive-1.md)
+- [volt-missing-directive-2.md](./volt-missing-directive-2.md)
+- [volt-missing-directive.md](./volt-missing-directive.md)
+- [volt-missingirective.md](./volt-missingirective.md)
+- [volts.md](./volts.md)
+- [widget-rendering-analysis-1.md](./widget-rendering-analysis-1.md)
+- [widget-rendering-analysis-2.md](./widget-rendering-analysis-2.md)
+- [widget-rendering-analysis-3.md](./widget-rendering-analysis-3.md)
+- [widget-rendering-analysis-4.md](./widget-rendering-analysis-4.md)
+- [widget-rendering-analysis-5.md](./widget-rendering-analysis-5.md)
+- [widget-rendering-analysis.md](./widget-rendering-analysis.md)
+- [widget-rendering.md](./widget-rendering.md)
+- [widget-translation-rules-1.md](./widget-translation-rules-1.md)
+- [widget-translation-rules-2.md](./widget-translation-rules-2.md)
+- [widget-translation-rules-3.md](./widget-translation-rules-3.md)
+- [widget-translation-rules.md](./widget-translation-rules.md)
+- [widget-translation.md](./widget-translation.md)
+- [widgets-structure-1.md](./widgets-structure-1.md)
+- [widgets-structure-2.md](./widgets-structure-2.md)
+>>>>>>> .merge_file_5nGk0n
 - [widgets-structure.md](./widgets-structure.md)
 - [windsurf-rules.md](./windsurf-rules.md)
 - [windsurf.md](./windsurf.md)

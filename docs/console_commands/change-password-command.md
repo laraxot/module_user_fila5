@@ -14,7 +14,11 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_FzXgIs
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_jx1sx2
 ---
 
 # ChangePasswordCommand

@@ -1,11 +1,23 @@
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
-type: note
-status: draft
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "fullcalendar scheduler - documentazione completa user"
+type: concept
+tags: [fullcalendar, scheduler, documentation, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fullcalendar-scheduler-documentation-summary fullcalendar scheduler - documentazione completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
+
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -316,3 +328,5 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
+
+```

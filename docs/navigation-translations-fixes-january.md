@@ -208,7 +208,11 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Documentazione Modulo User](./README.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
+<<<<<<< .merge_file_68YK1H
 - [Documentazione Modulo User](./readme.md)
+=======
+- [Documentazione Modulo User](./README.md)
+>>>>>>> .merge_file_fbEKy9
 
 ## Note Tecniche
 

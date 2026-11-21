@@ -307,7 +307,7 @@ dump($variable);
 
 - [README Modulo User](../README.md)
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
-- [Architettura Modulo User](../architecture/readme.md)
+- [Architettura Modulo User](../architecture/README.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---

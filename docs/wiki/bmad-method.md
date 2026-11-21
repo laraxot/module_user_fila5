@@ -3,7 +3,11 @@ module: theme
 topic: bmad-method
 canonical: ../../../../Themes/docs/shared-components/bmad-method.md
 related:
+<<<<<<< .merge_file_wcap9Y
   - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_0W1v40
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./context-compression.md"

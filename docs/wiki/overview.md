@@ -5,7 +5,11 @@ type: overview
 created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
+<<<<<<< .merge_file_VbeBo9
   - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_ZuY4dH
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

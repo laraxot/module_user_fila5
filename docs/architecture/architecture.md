@@ -11,7 +11,11 @@ related:
   - "./architecture-rules.md"
   - "./auth-blade-structure.md"
   - "./component-registration.md"
+<<<<<<< .merge_file_SxcPgf
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_0zrlVn
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"

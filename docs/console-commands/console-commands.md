@@ -11,7 +11,11 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
+<<<<<<< .merge_file_GWs3U3
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_RzyRqZ
 ---
 
 # Filosofia dei Comandi Console - Modulo User

@@ -14,7 +14,11 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_dEnOsW
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_2JCn6Q
 ---
 
 # Filosofia dei Comandi Console - Modulo User

@@ -1,12 +1,3 @@
----
-title: "Guida Rendering Widget Filament 4 - Modulo User"
-type: note
-updated: 2026-10-27
-tags: [docs, user, archive]
-qmd: "guida rendering widget filament 4 - modulo user user"
-status: superseded
-superseded_by: ../filament-4-widget-rendering-guide.md
----
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Data**: 14 Ottobre 2025  
@@ -388,7 +379,7 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
-- [Laraxot Widget Rules](./auth-widget-rules.md)
+- [Laraxot Widget Rules](./auth_widget_rules.md)
 
 ## 🎯 Conclusione
 

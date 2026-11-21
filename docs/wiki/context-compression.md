@@ -8,7 +8,11 @@ qmd: "context-compression context compression - user module"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_67Ehdg
   - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_FxKxsp
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

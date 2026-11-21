@@ -8,11 +8,17 @@ qmd: "changelog-2 changelog"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_nJKEfw
+  - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog.md"
+=======
   - "./changelog-1.md"
   - "./changelog-3.md"
   - "./changelog-4.md"
+>>>>>>> .merge_file_DVsDbq
   - "./changelog-5.md"
-  - "./changelog.md"
+  - "./CHANGELOG.md"
   - "./git-reset-1.md"
   - "./git-reset.md"
   - "./pest-test-report-1.md"

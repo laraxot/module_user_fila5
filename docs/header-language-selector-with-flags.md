@@ -21,9 +21,13 @@ related:
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_YDCe3o
 - [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_aAMbpY
 - [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -205,9 +209,13 @@ return [
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_YDCe3o
 - [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_aAMbpY
 - [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

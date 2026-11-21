@@ -109,7 +109,11 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
+<<<<<<< .merge_file_v9sbyQ
 - [User Module Documentation](readme.md)
+=======
+- [User Module Documentation](README.md)
+>>>>>>> .merge_file_zETQZQ
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
