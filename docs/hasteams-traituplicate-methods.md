@@ -96,11 +96,19 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
+<<<<<<< .merge_file_KUQv5o
 <<<<<<< .merge_file_STITTe
 - [XotData helper](../../Xot/docs/standards/readme.md)
 =======
 - [XotData helper](../../Xot/docs/standards/README.md)
 >>>>>>> .merge_file_5GEtqs
+=======
+<<<<<<< .merge_file_jVAdEk
+- [XotData helper](../../Xot/docs/standards/readme.md)
+=======
+- [XotData helper](../../Xot/docs/standards/README.md)
+>>>>>>> .merge_file_OZFxLO
+>>>>>>> .merge_file_KiSoTG
 
 ---
 

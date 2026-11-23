@@ -14,10 +14,17 @@ Documentation for `user` module categorized as **integrations**.
 ## Files
 
 - [`00-index.md`](./00-index.md)
+<<<<<<< .merge_file_lD7tyJ
 <<<<<<< .merge_file_jTpc1K
 =======
 - [`00-index.md`](./00-index.md)
 >>>>>>> .merge_file_bgW6Qz
+=======
+<<<<<<< .merge_file_uuV2jd
+=======
+- [`00-index.md`](./00-index.md)
+>>>>>>> .merge_file_pTVASc
+>>>>>>> .merge_file_ZYJ04A
 - [`2fa-guide.md`](./2fa-guide.md)
 - [`2fa.md`](./2fa.md)
 - [`API.md`](./API.md)
@@ -44,7 +51,11 @@ Documentation for `user` module categorized as **integrations**.
 - [`PHPSTAN_FIX_PLAN.md`](./PHPSTAN_FIX_PLAN.md)
 - [`PHPSTAN_L10.md`](./PHPSTAN_L10.md)
 - [`PHPSTAN_STATUS.md`](./PHPSTAN_STATUS.md)
+<<<<<<< .merge_file_lD7tyJ
 <<<<<<< .merge_file_jTpc1K
+=======
+<<<<<<< .merge_file_uuV2jd
+>>>>>>> .merge_file_ZYJ04A
 - [`PRODUCT_LAUNCH_PLAN.md`](./PRODUCT_LAUNCH_PLAN.md)
 - [`PRODUCT_STRATEGY.md`](./PRODUCT_STRATEGY.md)
 - [`PROJECT-STRUCTURE.md`](./project-structure.md)
@@ -54,7 +65,11 @@ Documentation for `user` module categorized as **integrations**.
 - [`product_strategy.md`](./product_strategy.md)
 - [`project-structure.md`](./project-structure.md)
 - [`qmd-setup.md`](./qmd-setup.md)
+<<<<<<< .merge_file_lD7tyJ
 >>>>>>> .merge_file_bgW6Qz
+=======
+>>>>>>> .merge_file_pTVASc
+>>>>>>> .merge_file_ZYJ04A
 - [`QUALITY_STATUS.md`](./QUALITY_STATUS.md)
 - [`query-optimization-analysis.md`](./query-optimization-analysis.md)
 - [`QUERY_OPTIMIZATION_ANALYSIS.md`](./QUERY_OPTIMIZATION_ANALYSIS.md)
@@ -144,13 +159,21 @@ Documentation for `user` module categorized as **integrations**.
 - [`code_quality_analysis.md`](./code_quality_analysis.md)
 - [`codebase-overview.md`](./codebase-overview.md)
 - [`codex-error-fix.md`](./codex-error-fix.md)
+<<<<<<< .merge_file_lD7tyJ
 <<<<<<< .merge_file_jTpc1K
+=======
+<<<<<<< .merge_file_uuV2jd
+>>>>>>> .merge_file_ZYJ04A
 - [`component-verification-rules.md`](./component-verification-rules.md)
 - [`component-verification-rules.md`](./component-verification-rules.md)
 =======
 - [`component-verification-rules.md`](./component-verification-rules.md)
 - [`component-verification-rules.md`](./component-verification-rules.md)
+<<<<<<< .merge_file_lD7tyJ
 >>>>>>> .merge_file_bgW6Qz
+=======
+>>>>>>> .merge_file_pTVASc
+>>>>>>> .merge_file_ZYJ04A
 - [`component-verification.md`](./component-verification.md)
 - [`component_verification_rules.md`](./component_verification_rules.md)
 - [`composer-dependencies.md`](./composer-dependencies.md)

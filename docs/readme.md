@@ -1075,11 +1075,19 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
+<<<<<<< .merge_file_UsR1hl
 <<<<<<< .merge_file_YdYumW
 See [ROADMAP.md](./roadmap.md) for details.
 =======
 See [roadmap.md](./roadmap.md) for details.
 >>>>>>> .merge_file_kXsxww
+=======
+<<<<<<< .merge_file_ROl6Yz
+See [ROADMAP.md](./roadmap.md) for details.
+=======
+See [roadmap.md](./roadmap.md) for details.
+>>>>>>> .merge_file_lc0PmN
+>>>>>>> .merge_file_N0Tjal
 
 ---
 
@@ -1092,13 +1100,21 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
+<<<<<<< .merge_file_UsR1hl
 <<<<<<< .merge_file_YdYumW
+=======
+<<<<<<< .merge_file_ROl6Yz
+>>>>>>> .merge_file_N0Tjal
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../docs/security.md)
 =======
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/SECURITY.md)
+<<<<<<< .merge_file_UsR1hl
 >>>>>>> .merge_file_kXsxww
+=======
+>>>>>>> .merge_file_lc0PmN
+>>>>>>> .merge_file_N0Tjal
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

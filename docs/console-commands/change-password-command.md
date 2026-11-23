@@ -11,11 +11,19 @@ related:
   - "./assign-module-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_WJ3ko6
 <<<<<<< .merge_file_DBYLPd
   - "./readme.md"
 =======
   - "./README.md"
 >>>>>>> .merge_file_sUHTOK
+=======
+<<<<<<< .merge_file_1Oq15Q
+  - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_jAw8D4
+>>>>>>> .merge_file_oFLtqf
 ---
 
 # ChangePasswordCommand

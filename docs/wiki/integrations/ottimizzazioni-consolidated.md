@@ -624,7 +624,15 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ##### C. **PHPStan Fixes (5+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< .merge_file_L0AbO5
 ├── phpstan-fixes-historical-alias.md (4.4KB)
+=======
+<<<<<<< .merge_file_FOALSN
+├── phpstan-fixes-historical-1.md (4.4KB)
+=======
+├── phpstan-fixes-historical-alias.md (4.4KB)
+>>>>>>> .merge_file_RmaN6u
+>>>>>>> .merge_file_dL3NGU
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)

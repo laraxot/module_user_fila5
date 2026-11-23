@@ -175,7 +175,11 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
+<<<<<<< .merge_file_LTLzJU
 <<<<<<< .merge_file_aoTB7d
+=======
+<<<<<<< .merge_file_eVrekO
+>>>>>>> .merge_file_lsLKt0
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
@@ -183,7 +187,11 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 - [Modulo ExternalProject](../<nome progetto>/docs/README.md)
 - [Modulo Limesurvey](../limesurvey/docs/README.md)
 - [User README](./README.md)
+<<<<<<< .merge_file_LTLzJU
 >>>>>>> .merge_file_vuKcYV
+=======
+>>>>>>> .merge_file_aVRp4o
+>>>>>>> .merge_file_lsLKt0
 
 ---
 

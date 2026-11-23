@@ -31,11 +31,19 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
+<<<<<<< .merge_file_F17rHQ
 <<<<<<< .merge_file_wyEqiT
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
 =======
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 >>>>>>> .merge_file_UF6wcl
+=======
+<<<<<<< .merge_file_rOL4Hp
+- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+=======
+- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+>>>>>>> .merge_file_Soa1Jq
+>>>>>>> .merge_file_5pMYUd
 
 ## File Risolti
 

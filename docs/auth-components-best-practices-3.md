@@ -22,7 +22,11 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_CJsa8t
 <<<<<<< .merge_file_gK6dmV
+=======
+<<<<<<< .merge_file_ZrITgH
+>>>>>>> .merge_file_rslOEu
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [README modulo User](./readme.md)
@@ -34,7 +38,11 @@ related:
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+<<<<<<< .merge_file_CJsa8t
 >>>>>>> .merge_file_p9kH0j
+=======
+>>>>>>> .merge_file_QvuV77
+>>>>>>> .merge_file_rslOEu
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

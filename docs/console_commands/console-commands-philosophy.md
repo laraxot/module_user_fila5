@@ -14,11 +14,19 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_lfQQvf
 <<<<<<< .merge_file_rgERbE
   - "./readme.md"
 =======
   - "./README.md"
 >>>>>>> .merge_file_ZDICQ0
+=======
+<<<<<<< .merge_file_nNs3Y7
+  - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_obHkwU
+>>>>>>> .merge_file_NTudsG
 ---
 
 # Filosofia dei Comandi Console - Modulo User

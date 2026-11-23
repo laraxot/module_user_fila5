@@ -24,13 +24,21 @@ related:
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+<<<<<<< .merge_file_tEBtHF
 <<<<<<< .merge_file_AS9Ybk
+=======
+<<<<<<< .merge_file_uQeBtq
+>>>>>>> .merge_file_5VvYzW
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 =======
 - [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-3.md)
+<<<<<<< .merge_file_tEBtHF
 >>>>>>> .merge_file_H11ms5
+=======
+>>>>>>> .merge_file_9m0VIM
+>>>>>>> .merge_file_5VvYzW
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
@@ -230,13 +238,21 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+<<<<<<< .merge_file_tEBtHF
 <<<<<<< .merge_file_AS9Ybk
+=======
+<<<<<<< .merge_file_uQeBtq
+>>>>>>> .merge_file_5VvYzW
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 =======
 - [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-3.md)
+<<<<<<< .merge_file_tEBtHF
 >>>>>>> .merge_file_H11ms5
+=======
+>>>>>>> .merge_file_9m0VIM
+>>>>>>> .merge_file_5VvYzW
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

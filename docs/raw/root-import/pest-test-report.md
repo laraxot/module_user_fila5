@@ -8,10 +8,17 @@ qmd: "pest-test-report <nome progetto> user module - pest test implementation re
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< .merge_file_R5mS9F
+  - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog.md"
+  - "./changelog.md"
+=======
   - "./changelog-1.md"
   - "./changelog-2.md"
   - "./changelog-3.md"
   - "./changelog-4.md"
+>>>>>>> .merge_file_rhP07s
   - "./changelog-5.md"
   - "./CHANGELOG.md"
   - "./git-reset-1.md"

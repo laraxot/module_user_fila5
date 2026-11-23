@@ -27,7 +27,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_jJqbWG
 <<<<<<< .merge_file_TOM6jf
+=======
+<<<<<<< .merge_file_ETXxKL
+>>>>>>> .merge_file_5kPmUd
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -39,7 +43,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_jJqbWG
 >>>>>>> .merge_file_GOsJul
+=======
+>>>>>>> .merge_file_rrfZlE
+>>>>>>> .merge_file_5kPmUd
 
 ## File Risolti
 

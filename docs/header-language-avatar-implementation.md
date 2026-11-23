@@ -21,11 +21,19 @@ related:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_6cY7Y7
 <<<<<<< .merge_file_F6vhya
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_SGYJSs
+=======
+<<<<<<< .merge_file_l7Gnbs
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_TB0DR7
+>>>>>>> .merge_file_FKX5pg
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
@@ -403,11 +411,19 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_6cY7Y7
 <<<<<<< .merge_file_F6vhya
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_SGYJSs
+=======
+<<<<<<< .merge_file_l7Gnbs
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_TB0DR7
+>>>>>>> .merge_file_FKX5pg
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)

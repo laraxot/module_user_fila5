@@ -21,11 +21,19 @@ related:
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_sWfnxu
 <<<<<<< .merge_file_yAkZOu
 - [Documentazione centrale](/docs/readme.md)
 =======
 - [Documentazione centrale](/docs/README.md)
 >>>>>>> .merge_file_dC7dRE
+=======
+<<<<<<< .merge_file_WmVdJt
+- [Documentazione centrale](/docs/readme.md)
+=======
+- [Documentazione centrale](/docs/README.md)
+>>>>>>> .merge_file_OqkIDt
+>>>>>>> .merge_file_UWFtgX
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)

@@ -29,11 +29,19 @@ related:
 - [Logout Page Fix](./logout-page-fix.md)
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_BxPpoe
 <<<<<<< .merge_file_TeHtQ4
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_769Mtu
+=======
+<<<<<<< .merge_file_Ayom0O
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_45CvTo
+>>>>>>> .merge_file_rCAwkw
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)

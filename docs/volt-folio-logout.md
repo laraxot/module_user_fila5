@@ -21,11 +21,19 @@ related:
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_7Zivjx
 <<<<<<< .merge_file_TAvE07
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_JiM3SJ
+=======
+<<<<<<< .merge_file_M6PHQx
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_RYOUeA
+>>>>>>> .merge_file_khixFp
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -209,11 +217,19 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_7Zivjx
 <<<<<<< .merge_file_TAvE07
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_JiM3SJ
+=======
+<<<<<<< .merge_file_M6PHQx
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_RYOUeA
+>>>>>>> .merge_file_khixFp
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)

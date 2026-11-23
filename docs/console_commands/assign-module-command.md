@@ -14,11 +14,19 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_iMkDfg
 <<<<<<< .merge_file_saVZku
   - "./readme.md"
 =======
   - "./README.md"
 >>>>>>> .merge_file_yWeUGd
+=======
+<<<<<<< .merge_file_IELkjg
+  - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_vc1jXp
+>>>>>>> .merge_file_Gtnxk0
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

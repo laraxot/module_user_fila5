@@ -21,11 +21,19 @@ related:
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_kDAeLH
 <<<<<<< .merge_file_uHc89l
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_T96eLx
+=======
+<<<<<<< .merge_file_1ZYxQV
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_u7UAli
+>>>>>>> .merge_file_gjOjHO
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
@@ -308,7 +316,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
+<<<<<<< .merge_file_kDAeLH
 <<<<<<< .merge_file_uHc89l
+=======
+<<<<<<< .merge_file_1ZYxQV
+>>>>>>> .merge_file_gjOjHO
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 # Implementazione dei Form con Widget Filament
 
@@ -320,7 +332,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_kDAeLH
 >>>>>>> .merge_file_T96eLx
+=======
+>>>>>>> .merge_file_u7UAli
+>>>>>>> .merge_file_gjOjHO
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
@@ -603,11 +619,19 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
+<<<<<<< .merge_file_kDAeLH
 <<<<<<< .merge_file_uHc89l
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 =======
 - [Tema One Documentation](../../themes/one/docs/README.md)
 >>>>>>> .merge_file_T96eLx
+=======
+<<<<<<< .merge_file_1ZYxQV
+- [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md)
+>>>>>>> .merge_file_u7UAli
+>>>>>>> .merge_file_gjOjHO
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

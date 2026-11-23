@@ -365,11 +365,19 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
 =======
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 >>>>>>> .merge_file_oP8Trg
+=======
+<<<<<<< .merge_file_QqWFVR
+- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+=======
+- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -701,7 +709,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -713,7 +725,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -1019,7 +1035,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -1031,7 +1051,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -1363,7 +1387,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -1375,7 +1403,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -1733,7 +1765,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -1745,7 +1781,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -2077,7 +2117,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -2089,7 +2133,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -2420,7 +2468,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -2432,7 +2484,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -2764,7 +2820,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -2776,16 +2836,28 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
 =======
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 >>>>>>> .merge_file_oP8Trg
+=======
+<<<<<<< .merge_file_QqWFVR
+- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+=======
+- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -3116,7 +3188,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -3128,7 +3204,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 
@@ -3936,7 +4016,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -3948,7 +4032,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/Modules/User/project_docs/index.md)
 - [README User](/laravel/Modules/User/project_docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/project_docs/auth-components-best-practices.md)
@@ -4356,11 +4444,19 @@ git -c core.editor="echo" rebase --continue
 
 ## Riferimenti
 
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
 - [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
 =======
 - [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
 >>>>>>> .merge_file_oP8Trg
+=======
+<<<<<<< .merge_file_QqWFVR
+- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
+=======
+- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 - [oauth-access-token-removal](oauth-access-token-removal.md)
 
 ---
@@ -5012,7 +5108,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GDaZFY
 <<<<<<< .merge_file_Ge1oWY
+=======
+<<<<<<< .merge_file_QqWFVR
+>>>>>>> .merge_file_cCYITz
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
@@ -5024,7 +5124,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
+<<<<<<< .merge_file_GDaZFY
 >>>>>>> .merge_file_oP8Trg
+=======
+>>>>>>> .merge_file_k5osFg
+>>>>>>> .merge_file_cCYITz
 
 ## File Risolti
 

@@ -5,11 +5,19 @@ type: overview
 created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
+<<<<<<< .merge_file_SE5lx8
 <<<<<<< .merge_file_EiLHWp
   - "./agents.md"
 =======
   - "./AGENTS.md"
 >>>>>>> .merge_file_gTeilQ
+=======
+<<<<<<< .merge_file_VbeBo9
+  - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_ZuY4dH
+>>>>>>> .merge_file_e3jbEn
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

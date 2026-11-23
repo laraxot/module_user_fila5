@@ -100,7 +100,15 @@ Phase 2 (future session):
 ## Files
 
 ### Created/Modified
+<<<<<<< .merge_file_KsUFws
 - BMAD Story (User): `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md`
+=======
+<<<<<<< .merge_file_y048Gl
+- BMAD Story (User): `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-lang-fix-20261006.story.md`
+=======
+- BMAD Story (User): `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-lang-fix.story.md`
+>>>>>>> .merge_file_ScDdvl
+>>>>>>> .merge_file_c6Brcd
 - Story 8.11 (Lang): `laravel/Modules/Lang/docs/stories/8.11-phpstan-l10-test-types-fix.story.md`
 - Analysis (Lang): `laravel/Modules/Lang/docs/bmad/phpstan-l10-test-fixes-analysis.md`
 

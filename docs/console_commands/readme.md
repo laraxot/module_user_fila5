@@ -225,7 +225,11 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
+<<<<<<< .merge_file_EcM1vY
 <<<<<<< .merge_file_xpFfWo
+=======
+<<<<<<< .merge_file_txUozH
+>>>>>>> .merge_file_F5JQbp
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -235,7 +239,11 @@ Modules/User/
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../README.md)
+<<<<<<< .merge_file_EcM1vY
 >>>>>>> .merge_file_PqEKu6
+=======
+>>>>>>> .merge_file_8uJTye
+>>>>>>> .merge_file_F5JQbp
 
 ## Aggiornamenti Recenti
 

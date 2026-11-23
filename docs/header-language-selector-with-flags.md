@@ -21,11 +21,19 @@ related:
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GoNysT
 <<<<<<< .merge_file_G7Gscq
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_fTsIRa
+=======
+<<<<<<< .merge_file_YDCe3o
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_aAMbpY
+>>>>>>> .merge_file_ldppht
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
@@ -209,11 +217,19 @@ return [
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_GoNysT
 <<<<<<< .merge_file_G7Gscq
 - [README modulo User](./readme.md)
 =======
 - [README modulo User](./README.md)
 >>>>>>> .merge_file_fTsIRa
+=======
+<<<<<<< .merge_file_YDCe3o
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_aAMbpY
+>>>>>>> .merge_file_ldppht
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)

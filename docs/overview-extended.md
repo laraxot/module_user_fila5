@@ -1088,13 +1088,21 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
+<<<<<<< .merge_file_1oRINF
 <<<<<<< .merge_file_BppVwR
+=======
+<<<<<<< .merge_file_jEuWHe
+>>>>>>> .merge_file_Fbzvs1
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../docs/security.md)
 =======
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/SECURITY.md)
+<<<<<<< .merge_file_1oRINF
 >>>>>>> .merge_file_8O0Ucb
+=======
+>>>>>>> .merge_file_8xDd7F
+>>>>>>> .merge_file_Fbzvs1
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

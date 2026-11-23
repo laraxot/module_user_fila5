@@ -21,7 +21,11 @@ related:
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_NxecJP
 <<<<<<< .merge_file_yEtWCC
+=======
+<<<<<<< .merge_file_C2n5Bv
+>>>>>>> .merge_file_JfqNap
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
@@ -29,7 +33,11 @@ related:
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+<<<<<<< .merge_file_NxecJP
 >>>>>>> .merge_file_vTnhbm
+=======
+>>>>>>> .merge_file_wzaspo
+>>>>>>> .merge_file_JfqNap
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -220,7 +228,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_NxecJP
 <<<<<<< .merge_file_yEtWCC
+=======
+<<<<<<< .merge_file_C2n5Bv
+>>>>>>> .merge_file_JfqNap
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
@@ -228,7 +240,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+<<<<<<< .merge_file_NxecJP
 >>>>>>> .merge_file_vTnhbm
+=======
+>>>>>>> .merge_file_wzaspo
+>>>>>>> .merge_file_JfqNap
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

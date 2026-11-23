@@ -110,11 +110,19 @@ composer show filament/spatie-laravel-media-library-plugin
 - [TailwindCSS](https://tailwindcss.com/docs)
 
 ## Collegamenti tra versioni di filament-components.md
+<<<<<<< .merge_file_EpBoBL
 <<<<<<< .merge_file_EZASTi
 * [filament-components.md](../../../user/docs/best-practices/filament-components.md)
 =======
 * [filament-components.md](filament-components.md)
 >>>>>>> .merge_file_qp3tv6
+=======
+<<<<<<< .merge_file_ym7ghZ
+* [filament-components.md](../../../user/docs/best-practices/filament-components.md)
+=======
+* [filament-components.md](filament-components.md)
+>>>>>>> .merge_file_RkLIIL
+>>>>>>> .merge_file_bzfC7Y
 * [filament-components.md](../../../Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../../Cms/docs/filament-components.md)
 * [filament-components.md](laravel/docs/rules/filament-components.md)
