@@ -10,36 +10,16 @@ decision-makers: []
 <!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
 # <!-- Titolo: indice operativo User -->
 
-## Context and Problem Statement
+## Contratti di comportamento
 
-Definisce i contratti per i dati utente e le relazioni team-utente. Chiudi con la domanda su come gestire gli utenti nel sistema.
-
-## Driver della decisione
-
-- Privacy: ogni utente deve avere un'identità verificata (`HasVerifiedIdentityAction`).
-- Team membership: gestione ruoli e permessi granulari (`HasTeamsAndUserContract`).
-
-## Alternative considerate
-
-- Usare `UserContract` base; estendere per funzionalità aggiuntive.
-- Non duplicare contratti per codici non esistenti.
-
-## Decisione
-
-Scelta: **UserContract + HasTeamsContract**, perché centralizza gestione utenti e team senza duplicare contratti.
-
-### Consequenze
-
-- Positiva: gestione completa utenti e team in un'unica interfaccia.
-- Negativa/debito: richiede implementazione di metodi specifici e test associati.
-
-### Confirmation
-
-`vendor/bin/pest Modules/User/tests/Unit/...` e test unitari per UserContract.
+I contratti descritti qui sono i contratti di comportamento auditi per il modulo
+User. Legacy behavior è documentato così com'è e non è un modello per codice nuovo.
 
 | Operazione | Contract | Classe | Invarianti |
 |---|---|---|---|
-| Create user | hasverified-identity-action | `App\Actions\User\HasVerifiedIdentityAction` | USER-IDV-INV-1..3 |
-| Add user to team | hasteamsandusercontract | `HasTeamsAndUserContract` | TEAM-USER-INV-1..4 |
-| Get owner | teamcontract | `UserContract` | USER-OWNER-INV-1 |
-| Remove user from team | hasteamsandusercontract | `HasTeamsContract` | TEAM-REMOVE-INV-1 |
+| Create user | [hasverified-identity-action](hasverified-identity-action.md) | `App\Actions\User\HasVerifiedIdentityAction` | USER-IDV-INV-1..3 |
+| Add user to team | [hasteamsandusercontract](hasteamsandusercontract.md) | `HasTeamsAndUserContract` | TEAM-USER-INV-1..4 |
+| Get owner | [teamcontract](teamcontract.md) | `UserContract` | USER-OWNER-INV-1 |
+| Remove user from team | [hasteamsandusercontract](hasteamsandusercontract.md) | `HasTeamsContract` | TEAM-REMOVE-INV-1 |
+
+(End of file - total 21 lines)
