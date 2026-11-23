@@ -1,14 +1,45 @@
-# User behavioral contract index
+---
+title: "INDEX — User"
+type: index
+status: active
+created: 2026-11-23
+updated: 2026-11-23
+decision-makers: []
+---
 
-This is the machine-readable inventory of behavioral contracts owned by the **User** module.
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
+# <!-- Titolo: indice operativo User -->
 
-A contract describes an existing public operation or boundary. It names the owner, input, output, stable invariants, side effects and their order, errors, and non-goals. Every invariant gets a stable ID and a Pest group when a test exists; missing coverage is recorded as debt instead of being implied away.
+## Context and Problem Statement
 
-## Contracts
+Definisce i contratti per i dati utente e le relazioni team-utente. Chiudi con la domanda su come gestire gli utenti nel sistema.
 
-- [hasteamsandusercontract](hasteamsandusercontract.md)
-- [teamcontract](teamcontract.md)
+## Driver della decisione
 
-## Authoring
+- Privacy: ogni utente deve avere un'identità verificata (`HasVerifiedIdentityAction`).
+- Team membership: gestione ruoli e permessi granulari (`HasTeamsAndUserContract`).
 
-Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
+## Alternative considerate
+
+- Usare `UserContract` base; estendere per funzionalità aggiuntive.
+- Non duplicare contratti per codici non esistenti.
+
+## Decisione
+
+Scelta: **UserContract + HasTeamsContract**, perché centralizza gestione utenti e team senza duplicare contratti.
+
+### Consequenze
+
+- Positiva: gestione completa utenti e team in un'unica interfaccia.
+- Negativa/debito: richiede implementazione di metodi specifici e test associati.
+
+### Confirmation
+
+`vendor/bin/pest Modules/User/tests/Unit/...` e test unitari per UserContract.
+
+| Operazione | Contract | Classe | Invarianti |
+|---|---|---|---|
+| Create user | hasverified-identity-action | `App\Actions\User\HasVerifiedIdentityAction` | USER-IDV-INV-1..3 |
+| Add user to team | hasteamsandusercontract | `HasTeamsAndUserContract` | TEAM-USER-INV-1..4 |
+| Get owner | teamcontract | `UserContract` | USER-OWNER-INV-1 |
+| Remove user from team | hasteamsandusercontract | `HasTeamsContract` | TEAM-REMOVE-INV-1 |
