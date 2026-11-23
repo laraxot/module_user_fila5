@@ -36,3 +36,5 @@ Chi cambia il comportamento aggiorna il contratto nello stesso commit.
 
 ## Contratti
 
+- [HasVerifiedIdentityAction](has-verified-identity-action.md)
+
