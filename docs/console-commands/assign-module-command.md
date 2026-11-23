@@ -11,19 +11,7 @@ related:
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-<<<<<<< .merge_file_gO7SWz
-<<<<<<< .merge_file_eXlKAS
   - "./readme.md"
-=======
-  - "./README.md"
->>>>>>> .merge_file_vdFVQ8
-=======
-<<<<<<< .merge_file_FbcIt3
-  - "./readme.md"
-=======
-  - "./README.md"
->>>>>>> .merge_file_VTXQQp
->>>>>>> .merge_file_Iov2Ou
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente

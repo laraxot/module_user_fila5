@@ -20,19 +20,7 @@ related:
 
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
-<<<<<<< .merge_file_gBFSSg
-<<<<<<< .merge_file_hxqMlT
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_GMnP2Y
-=======
-<<<<<<< .merge_file_SIhjCN
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_dFrvtp
->>>>>>> .merge_file_wiMEfV
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

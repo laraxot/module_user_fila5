@@ -634,19 +634,7 @@ La connection `user` gestisce queste tabelle principali:
 - [DRY-KISS Analysis](../../../xot/docs/models/dry-kiss-analysis.md) - Analisi duplicazioni
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
-<<<<<<< .merge_file_Sn37rs
-<<<<<<< .merge_file_xQAJTU
-- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
-=======
 - [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
->>>>>>> .merge_file_hiWedg
-=======
-<<<<<<< .merge_file_J1CP6v
-- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
-=======
-- [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
->>>>>>> .merge_file_65YbEW
->>>>>>> .merge_file_FKywaX
 
 ## Changelog
 

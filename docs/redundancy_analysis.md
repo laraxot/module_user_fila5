@@ -1,19 +1,7 @@
 ---
 module: theme
 topic: REDUNDANCY_ANALYSIS
-<<<<<<< .merge_file_WwFKXe
-<<<<<<< .merge_file_mdKN6q
 canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
-=======
-canonical: ../../../Themes/docs/shared-components/redundancy_analysis.md
->>>>>>> .merge_file_3GXvBI
-=======
-<<<<<<< .merge_file_gpNuX6
-canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
-=======
-canonical: ../../../Themes/docs/shared-components/redundancy_analysis.md
->>>>>>> .merge_file_ouw10O
->>>>>>> .merge_file_Hdf3r3
 title: "REDUNDANCY ANALYSIS"
 type: note
 updated: 2026-10-07

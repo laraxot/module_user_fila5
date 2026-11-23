@@ -75,19 +75,7 @@ This document outlines the best practices for managing user profiles within a La
 ## Links to Related Documentation
 - [User Module Index](./index.md)
 
-<<<<<<< .merge_file_WxfVvc
-<<<<<<< .merge_file_H9Qf1O
-- [User Module Index](./INDEX.md)
-=======
 - [User Module Index](./index.md)
->>>>>>> .merge_file_aN1i6E
-=======
-<<<<<<< .merge_file_i8OtNJ
-- [User Module Index](./INDEX.md)
-=======
-- [User Module Index](./index.md)
->>>>>>> .merge_file_IPRwBP
->>>>>>> .merge_file_PHjJPO
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)

@@ -21,19 +21,7 @@ related:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_4RQGhP
-<<<<<<< .merge_file_Nb4UuL
-- [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_ExvwYp
-=======
-<<<<<<< .merge_file_sWkVGI
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_dEHRYp
->>>>>>> .merge_file_hAMEjq
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)

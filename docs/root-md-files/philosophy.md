@@ -1,3 +1,11 @@
+---
+title: "Philosophy"
+module: User
+type: note
+status: active
+updated: '2026-11-23'
+---
+
 # User Module Philosophy
 
 Centralized authentication, authorization, identity management, and multi-team roles for all 47 modules.
@@ -99,21 +107,10 @@ If you think a rule is wrong:
 
 ## See Also
 
-<<<<<<< .merge_file_i9TJQA
-<<<<<<< .merge_file_0IodgF
-=======
-<<<<<<< .merge_file_A1uLEo
->>>>>>> .merge_file_k8h9vQ
 - `ARCHITECTURE.md` — multi-tenant identity design
 - `TESTING.md` — auth testing strategies
-=======
 - `architecture.md` — multi-tenant identity design
 - `testing.md` — auth testing strategies
-<<<<<<< .merge_file_i9TJQA
->>>>>>> .merge_file_Zvdg8D
-=======
->>>>>>> .merge_file_tx2RoW
->>>>>>> .merge_file_k8h9vQ
 - `docs/oauth2-flows.md` — Passport configuration
 - `docs/spatie-permissions-per-team.md` — role scoping rules
 - `docs/socialite-providers.md` — adding new social login providers

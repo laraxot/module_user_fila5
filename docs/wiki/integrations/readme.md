@@ -13,23 +13,11 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_RfeUfB
-<<<<<<< .merge_file_C6SRHf
-=======
-<<<<<<< .merge_file_p35YXI
->>>>>>> .merge_file_yDuFMm
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_RfeUfB
->>>>>>> .merge_file_3owUDf
-=======
->>>>>>> .merge_file_2zKhGw
->>>>>>> .merge_file_yDuFMm
 ---
 
 # User Module - Authentication & Authorization
@@ -1102,21 +1090,10 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-<<<<<<< .merge_file_RfeUfB
-<<<<<<< .merge_file_C6SRHf
-=======
-<<<<<<< .merge_file_p35YXI
->>>>>>> .merge_file_yDuFMm
 - [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../../../docs/security.md)
-=======
 - [CLAUDE.md](../../../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../../../docs/SECURITY.md)
-<<<<<<< .merge_file_RfeUfB
->>>>>>> .merge_file_3owUDf
-=======
->>>>>>> .merge_file_2zKhGw
->>>>>>> .merge_file_yDuFMm
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

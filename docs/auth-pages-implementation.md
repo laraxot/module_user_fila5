@@ -23,19 +23,7 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_96aaCJ
-<<<<<<< .merge_file_dkgNbK
-- [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_1MuWkR
-=======
-<<<<<<< .merge_file_Gz2Zek
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_JyUYQQ
->>>>>>> .merge_file_w4pIGy
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
@@ -498,19 +486,7 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_96aaCJ
-<<<<<<< .merge_file_dkgNbK
-- [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_1MuWkR
-=======
-<<<<<<< .merge_file_Gz2Zek
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_JyUYQQ
->>>>>>> .merge_file_w4pIGy
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)

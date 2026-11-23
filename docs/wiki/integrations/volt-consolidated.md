@@ -812,19 +812,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
-<<<<<<< .merge_file_HexAiM
-<<<<<<< .merge_file_9garkc
-- [Tema One Documentation](../../themes/one/docs/readme.md)
-=======
 - [Tema One Documentation](../../themes/one/docs/README.md)
->>>>>>> .merge_file_GVrf07
-=======
-<<<<<<< .merge_file_eLaOIP
-- [Tema One Documentation](../../themes/one/docs/readme.md)
-=======
-- [Tema One Documentation](../../themes/one/docs/README.md)
->>>>>>> .merge_file_3BSrWv
->>>>>>> .merge_file_HsLrZh
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -1111,19 +1099,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
-<<<<<<< .merge_file_HexAiM
-<<<<<<< .merge_file_9garkc
-- [Tema One Documentation](../../themes/one/docs/readme.md)
-=======
 - [Tema One Documentation](../../themes/one/docs/README.md)
->>>>>>> .merge_file_GVrf07
-=======
-<<<<<<< .merge_file_eLaOIP
-- [Tema One Documentation](../../themes/one/docs/readme.md)
-=======
-- [Tema One Documentation](../../themes/one/docs/README.md)
->>>>>>> .merge_file_3BSrWv
->>>>>>> .merge_file_HsLrZh
 
 ---
 
@@ -1419,7 +1395,6 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
-- [Best Practices Routing](./routing-best-practices.md) 
 - [Best Practices Routing](./routing-best-practices.md) 
 ---
 
