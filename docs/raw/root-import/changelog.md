@@ -8,17 +8,10 @@ qmd: "changelog changelog"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_ky7M8j
-  - "./changelog.md"
-  - "./changelog.md"
-  - "./changelog.md"
-  - "./changelog.md"
-=======
   - "./changelog-1.md"
   - "./changelog-2.md"
   - "./changelog-3.md"
   - "./changelog-4.md"
->>>>>>> .merge_file_haomeF
   - "./changelog-5.md"
   - "./git-reset-1.md"
   - "./git-reset.md"

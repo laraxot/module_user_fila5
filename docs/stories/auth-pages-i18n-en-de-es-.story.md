@@ -1,3 +1,11 @@
+---
+title: "Auth Pages I18N En De Es .Story"
+module: User
+type: note
+status: active
+updated: '2026-11-23'
+---
+
 # Login e registrazione in inglese, tedesco e spagnolo
 
 - Stato: done (2026-10-07), con aperti elencati sotto
@@ -49,15 +57,7 @@ grezze minuscole (`email*`, `password*`, `remember` due volte). `de` e `es` avev
 
 - Sweep delle pagine pubbliche (`/en`, `/de`, `/es`, `/{lang}/tickets`, `/en/auth/password/reset`): chiusi i residui
   "Contatta il comune"/"Richiedi assistenza" (blocco contatti), `breadcrumb` e `Cerca` (controlli mappa, vedi
-<<<<<<< .merge_file_6x9YGV
-  [map-controls-i18n-it-en-de-es-2026-10-07.story.md](../../../Geo/docs/stories/map-controls-i18n-it-en-de-es.story.md)).
-=======
-<<<<<<< .merge_file_rwTMTA
-  [map-controls-i18n-it-en-de-es-2026-10-07.story.md](../../../Geo/docs/stories/map-controls-i18n-it-en-de-es.story.md)).
-=======
   [map-controls-i18n-it-en-de-es-2026-10-07.story.md](../../../Geo/docs/stories/map-controls-i18n-it-en-de-es-2026-10-07.story.md)).
->>>>>>> .merge_file_de6U8b
->>>>>>> .merge_file_nStRD7
 - Pulsante di login in inglese: "Login", mentre il titolo dice "Sign in".
 - Docblock di `LoginWidget` da correggere: le etichette vengono da `user_form`.
 - Le chiavi morte `register_cta_*` vanno rimosse dalla view o create in tutte le lingue.

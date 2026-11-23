@@ -22,19 +22,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_dy9tg6
-<<<<<<< .merge_file_8M0WO7
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-=======
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
->>>>>>> .merge_file_RYiJUF
-=======
-<<<<<<< .merge_file_ffNMhq
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-=======
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
->>>>>>> .merge_file_R6ASOa
->>>>>>> .merge_file_Mvjk7s
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

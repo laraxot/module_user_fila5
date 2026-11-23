@@ -36,19 +36,7 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 - Non embeddare Rules nei prompt di avvio
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
 
-<<<<<<< .merge_file_cb05J1
-<<<<<<< .merge_file_JXIeJn
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_rBzLDS
-=======
-<<<<<<< .merge_file_rK2Cfp
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_yFMbPd
->>>>>>> .merge_file_dzCFgI
 
 ## Rules ricorrenti
 
@@ -62,4 +50,3 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 2. Aggiungi la voce in `../rules/00-TRIGGER_MAP.md`
 3. Aggiorna questo indice se la Rules e' ricorrente
 4. Committa: `docs: add rules <nome>`
-

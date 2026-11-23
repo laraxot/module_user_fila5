@@ -11,19 +11,7 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands.md"
-<<<<<<< .merge_file_iQSLEM
-<<<<<<< .merge_file_vV4RfI
   - "./readme.md"
-=======
-  - "./README.md"
->>>>>>> .merge_file_49TQud
-=======
-<<<<<<< .merge_file_UjemsT
-  - "./readme.md"
-=======
-  - "./README.md"
->>>>>>> .merge_file_Zqtjgj
->>>>>>> .merge_file_opGRh9
 ---
 
 # Filosofia dei Comandi Console - Modulo User
