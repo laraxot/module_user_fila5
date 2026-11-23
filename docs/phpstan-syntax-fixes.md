@@ -164,7 +164,11 @@ use App\Models\User;
 
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< .merge_file_hMjxT0
 - [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
+=======
+- [CLAUDE.md - Quality Guidelines](../../../claude.md)
+>>>>>>> .merge_file_JahnQE
 
 ## 📝 Note Tecniche
 

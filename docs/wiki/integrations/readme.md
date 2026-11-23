@@ -13,9 +13,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_C6SRHf
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+>>>>>>> .merge_file_3owUDf
 ---
 
 # User Module - Authentication & Authorization
@@ -1057,7 +1063,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [changelog.md](./changelog.md) for full history.
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
 
 ---
 
@@ -1075,7 +1081,7 @@ See [changelog.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 
@@ -1088,8 +1094,13 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Tenant Module](../../../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
+<<<<<<< .merge_file_C6SRHf
 - [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../../../docs/security.md)
+=======
+- [CLAUDE.md](../../../../../claude.md) - Project architecture
+- [Security Guidelines](../../../../../../docs/SECURITY.md)
+>>>>>>> .merge_file_3owUDf
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

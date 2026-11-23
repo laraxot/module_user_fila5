@@ -1,10 +1,30 @@
+---
+title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+type: concept
+tags: [header, language, avatar, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-language-avatar-implementation implementazione del selettore di lingua e avatar utente nell'header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
-- [Implementazione Logout](./logout-blade-implementation.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
 
 ## Panoramica
 
@@ -379,10 +399,10 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Volt Folio Logout](./volt-folio-logout.md)
-- [Implementazione Logout](./logout-blade-implementation.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
 
 ## Panoramica
 

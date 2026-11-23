@@ -21,11 +21,19 @@ related:
 # Implementazione Corretta della Pagina di Login 
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_tTKyKO
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+=======
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-3.md)
+>>>>>>> .merge_file_kA8ota
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

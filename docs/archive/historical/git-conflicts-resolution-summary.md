@@ -1,3 +1,23 @@
+---
+title: "Risoluzione Conflitti Git - Modulo User"
+type: concept
+tags: [git, conflicts, resolution, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git-conflicts-resolution-summary risoluzione conflitti git - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -35,7 +55,7 @@
 - `docs/README.md` - Documentazione principale
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
-- `docs/phpstan_fixes.md` - Fix PHPStan
+- `docs/phpstan-fixes.md` - Fix PHPStan
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -101,7 +121,7 @@ Funzionalità team includono:
 
 ## Collegamenti
 
-- [Documentazione Root User](../../../project_docs/modules/user.md)
+- [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan-fixes.md)

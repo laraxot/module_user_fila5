@@ -29,7 +29,11 @@ related:
 - [Logout Page Fix](./logout-page-fix.md)
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_TeHtQ4
 - [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_769Mtu
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)

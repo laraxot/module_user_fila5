@@ -9,7 +9,11 @@ qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
 related:
+<<<<<<< .merge_file_wn9uYV
   - "./agents.md"
+=======
+  - "./AGENTS.md"
+>>>>>>> .merge_file_zH7ARM
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

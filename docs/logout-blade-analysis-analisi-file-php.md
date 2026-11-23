@@ -21,7 +21,11 @@ related:
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_7LeACv
 - [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> .merge_file_9DS0OA
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)

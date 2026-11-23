@@ -1,13 +1,16 @@
 ---
-title: "volt-blade-implementation-error"
-type: alias
-status: superseded
-canonical: "archive/historical/volt-blade-implementation.md"
-qmd: "volt-blade-implementation-error alias superseded"
+module: theme
+topic: volt-blade-implementation-error
+canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
 
-# volt-blade-implementation-error
-
-Documento identico al canonico: [volt-blade-implementation.md](volt-blade-implementation.md).
-
-Canonico: `laravel/Modules/User/docs/archive/historical/volt-blade-implementation.md`. Qui non ci sono istruzioni: seguire il file collegato.
+See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md

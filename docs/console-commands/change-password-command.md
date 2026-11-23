@@ -11,7 +11,11 @@ related:
   - "./assign-module-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_DBYLPd
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_sUHTOK
 ---
 
 # ChangePasswordCommand

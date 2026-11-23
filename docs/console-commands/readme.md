@@ -222,10 +222,17 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
+<<<<<<< .merge_file_rwzJ1m
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../readme.md)
+=======
+- [User Models](../models/README.md)
+- [Role Management](../models/role-management.md)
+- [Password Management](../password.md)
+- [README.md](../README.md)
+>>>>>>> .merge_file_GNaW6O
 
 ## Aggiornamenti Recenti
 

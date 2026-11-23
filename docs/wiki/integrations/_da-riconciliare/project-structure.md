@@ -53,7 +53,7 @@ At module root level, these folders MUST NOT exist:
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
-├── ARCHITECTURE.md               # (opzionale) Architettura modulo
+├── architecture.md               # (opzionale) Architettura modulo
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
 
@@ -141,7 +141,7 @@ git commit -m "docs: add wiki structure for User"
 
 ---
 
-<!-- Merged from PROJECT-STRUCTURE.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from project-structure.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Project Structure — Module User"
@@ -186,10 +186,17 @@ At module root level, these folders MUST NOT exist:
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
+<<<<<<< .merge_file_HRNVHF
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
+=======
+├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── qmd-setup.md                  # Configurazione QMD
+├── performance-optimization.md    # Metriche e best practice
+├── architecture.md               # (opzionale) Architettura modulo
+>>>>>>> .merge_file_maKpiY
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
 
@@ -201,7 +208,11 @@ At module root level, these folders MUST NOT exist:
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
+<<<<<<< .merge_file_HRNVHF
 | `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+=======
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+>>>>>>> .merge_file_maKpiY
 
 ## Convenzioni
 

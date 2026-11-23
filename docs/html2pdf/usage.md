@@ -6,7 +6,7 @@ related:
   - "./advanced.md"
   - "./index.md"
   - "./laravel.md"
-  - "./security.md"
+  - "./SECURITY.md"
   - "./styling.md"
 ---
 

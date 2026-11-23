@@ -812,7 +812,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
+<<<<<<< .merge_file_9garkc
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md)
+>>>>>>> .merge_file_GVrf07
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -1099,7 +1103,11 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
+<<<<<<< .merge_file_9garkc
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md)
+>>>>>>> .merge_file_GVrf07
 
 ---
 

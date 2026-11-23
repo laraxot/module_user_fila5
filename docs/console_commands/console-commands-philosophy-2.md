@@ -14,7 +14,11 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
+<<<<<<< .merge_file_wKqDsx
   - "./readme.md"
+=======
+  - "./README.md"
+>>>>>>> .merge_file_DqT9KK
 ---
 
 # Filosofia dei Comandi Console - Modulo User
@@ -459,7 +463,11 @@ private function getPasswordLegacy(): string
 
 ## Collegamenti
 - [README Comandi Console](README.md)
+<<<<<<< .merge_file_wKqDsx
 - [README Comandi Console](readme.md)
+=======
+- [README Comandi Console](README.md)
+>>>>>>> .merge_file_DqT9KK
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)

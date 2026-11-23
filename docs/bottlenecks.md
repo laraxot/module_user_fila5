@@ -440,7 +440,11 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
+<<<<<<< .merge_file_INsXJ8
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
+=======
+* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
+>>>>>>> .merge_file_bKCxsn
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/bottlenecks.md)

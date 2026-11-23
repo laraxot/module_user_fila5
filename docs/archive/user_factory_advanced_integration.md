@@ -1,4 +1,4 @@
-# UserFactory Advanced Integration - Modulo User & healthcare_app
+# UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
 
@@ -9,7 +9,7 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
-├── User (healthcare_app) - STI Base + Business Logic  
+├── User (SaluteOra) - STI Base + Business Logic  
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -17,7 +17,7 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
-| BaseUser Field | healthcare_app User | Business Logic | Factory Support |
+| BaseUser Field | SaluteOra User | Business Logic | Factory Support |
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -84,7 +84,7 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
-// healthcare_app User (Healthcare Domain)
+// SaluteOra User (Healthcare Domain)
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -115,7 +115,7 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
-    // healthcare_app domain contracts
+    // SaluteOra domain contracts
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -261,7 +261,7 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
-### For healthcare_app Module  
+### For SaluteOra Module  
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -280,16 +280,16 @@ public function run(): void
 
 ## Link Documentazione
 
-### healthcare_app Module
-- [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../healthcare_app/docs/models/states.md)
+### SaluteOra Module
+- [Advanced Improvements Analysis](../../saluteora/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../saluteora/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../saluteora/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user-factory-integration.md)
-- [Traits Complete Guide](./traits-complete-guide.md)
+- [User Factory Integration](./user_factory_integration.md)
+- [Traits Complete Guide](./traits_complete_guide.md)
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation  
-- [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
-- [Testing Standards](../../../../../docs/testing_standards.md) 
+- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
+- [Testing Standards](../../../../docs/testing_standards.md) 

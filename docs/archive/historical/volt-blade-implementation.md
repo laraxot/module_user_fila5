@@ -1,186 +1,594 @@
-# Analisi dell'Errore di Implementazione Volt/Blade
+---
+title: "Implementazione dei Form con Widget Filament"
+type: concept
+tags: [volt, blade, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-blade-implementation implementazione dei form con widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+# Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
-## Identificazione dell'Errore
+## Introduzione
 
-Durante l'analisi del file `Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+Questo documento descrive l'implementazione corretta dei form nel tema One utilizzando widget Filament invece di form personalizzati. Questo approccio garantisce coerenza, riutilizzabilità e adattabilità a diverse grafiche, evitando di "reinventare la ruota".
 
-### File Attuale (Corretto)
+## Approccio Raccomandato: Widget Filament
+
+Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament invece di implementare form personalizzati con Volt o Blade. Questo approccio offre numerosi vantaggi:
+
+1. **Riutilizzabilità**: I widget possono essere utilizzati in diverse parti dell'applicazione
+2. **Adattabilità**: Si adattano facilmente a diverse grafiche
+3. **Manutenibilità**: Sfruttano le funzionalità di Filament per la validazione e la gestione degli errori
+4. **Coerenza**: Mantengono uno stile coerente con il resto dell'applicazione
+5. **Accessibilità**: I componenti Filament sono progettati per essere accessibili
+
+## Struttura delle Directory
+
+```
+
+├── Modules/
+│   └── User/
+│       └── app/
+│           └── Filament/
+│               └── Widgets/
+│                   ├── LoginFormWidget.php
+│                   ├── RegisterFormWidget.php
+│                   └── PasswordResetFormWidget.php
+└── Themes/
+    └── One/
+        └── resources/
+            └── views/
+                ├── pages/
+                │   └── auth/
+                │       ├── login.blade.php
+                │       ├── register.blade.php
+                │       └── password/
+                │           ├── reset.blade.php
+                │           └── email.blade.php
+                └── livewire/
+                    └── widgets/
+                        ├── login-form-widget.blade.php
+                        ├── register-form-widget.blade.php
+                        └── password-reset-form-widget.blade.php
+```
+
+## Template Blade per i Widget
+
+### 1. Template per il Widget di Login (login-form-widget.blade.php)
+
+```blade
+<div>
+    <form wire:submit="login">
+        {{ $this->form }}
+
+        <div class="mt-4">
+            <x-filament::button type="submit" class="w-full">
+                {{ __('auth.login.submit_button') }}
+            </x-filament::button>
+        </div>
+
+        @if ($errors->any())
+            <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                <ul class="list-disc pl-5">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </form>
+</div>
+```
+
+### 2. Template per il Widget di Registrazione (register-form-widget.blade.php)
+
+```blade
+<div>
+    <form wire:submit="register">
+        {{ $this->form }}
+
+        <div class="mt-4">
+            <x-filament::button type="submit" class="w-full">
+                {{ __('auth.register.submit_button') }}
+            </x-filament::button>
+        </div>
+
+        @if ($errors->any())
+            <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                <ul class="list-disc pl-5">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </form>
+</div>
+```
+
+## Vantaggi dell'Utilizzo di Widget Filament
+
+1. **Riutilizzabilità**: I widget possono essere utilizzati in diverse parti dell'applicazione e in diversi temi.
+
+2. **Adattabilità**: Si adattano facilmente a diverse grafiche e layout senza dover modificare la logica.
+
+3. **Manutenibilità**: Il codice è organizzato in modo strutturato, con una chiara separazione tra logica e presentazione.
+
+4. **Coerenza UI/UX**: Utilizzo dei componenti nativi Filament garantisce coerenza visiva con il resto dell'applicazione.
+
+5. **Accessibilità**: I componenti Filament sono progettati per essere accessibili secondo gli standard WCAG.
+
+6. **Validazione integrata**: Gestione semplificata della validazione e degli errori.
+
+7. **Localizzazione**: Supporto completo per la localizzazione degli URL e dei contenuti.
+
+## Implementazione dei Widget Filament
+
+### 1. Widget di Login
 
 ```php
 <?php
 
+namespace Modules\User\Filament\Widgets;
+
+use Filament\Widgets\Widget;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Event;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
-if (!Auth::check()) {
-    return redirect()->route('login');
+class LoginFormWidget extends XotBaseWidget
+{
+    use InteractsWithForms;
+
+    protected static string $view = 'user::livewire.widgets.login-form-widget';
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+    {
+        return $form
+            ->schema([
+                'email' => TextInput::make('email')
+                    ->email()
+                    ->required(),
+                'password' => TextInput::make('password')
+                    ->password()
+                    ->required(),
+                'remember' => Checkbox::make('remember'),
+            ])
+            ->statePath('data');
+    }
+
+    public function login(): void
+    {
+        $data = $this->form->getState();
+
+        if (Auth::attempt([
+            'email' => $data['email'],
+            'password' => $data['password']
+        ], $data['remember'] ?? false)) {
+            session()->regenerate();
+
+            $locale = app()->getLocale();
+            redirect('/' . $locale . '/dashboard');
+        }
+
+        $this->addError('email', __('auth.failed'));
+    }
 }
-
-try {
-    Event::dispatch('auth.logout.attempting', [Auth::user()]);
-
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    Event::dispatch('auth.logout.successful');
-
-    Log::info('Utente disconnesso', [
-        'user_id' => Auth::id(),
-        'timestamp' => now()
-    ]);
-
-    return redirect()->route('home')
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-    return back()->with('error', __('Errore durante il logout'));
-}
-?>
-
-<x-layout>
-    <!-- Template Blade qui -->
-</x-layout>
 ```
 
-### Interpretazione Errata
-
-L'errore di analisi ha portato a raccomandazioni non corrette:
-
-1. Si è erroneamente indicato che il file iniziava con `@volt('auth.logout')` invece di `<?php`
-2. Si è suggerito di riorganizzare la struttura quando in realtà era già corretta
-3. Si è proposto di utilizzare Volt quando il file utilizza già correttamente PHP puro con Folio
-
-## Correzione dell'Analisi
-
-Il file attuale utilizza già l'approccio corretto di Folio con PHP puro, che è l'approccio raccomandato per operazioni semplici come il logout. Tuttavia, ci sono alcuni miglioramenti che possono essere apportati:
-
-1. **Localizzazione degli URL**: Utilizzare `app()->getLocale()` per generare URL localizzati invece di `route('home')`
-2. **Componenti UI**: Utilizzare i componenti Blade nativi di Filament invece di HTML diretto
-3. **Direttive Folio**: Aggiungere le direttive `middleware` e `name` di Folio per definire il middleware e il nome della rotta
-
-## Lezione Appresa
-
-Questo errore evidenzia l'importanza di:
-
-1. **Analisi Accurata**: Esaminare attentamente il codice esistente prima di proporre modifiche
-2. **Comprensione dei Framework**: Distinguere chiaramente tra i diversi approcci (PHP puro, Volt, Blade)
-3. **Verifica delle Assunzioni**: Non assumere che un file utilizzi un determinato approccio senza verificarlo
-
-## Approccio Corretto per l'Implementazione
-
-Per implementare correttamente le pagine di autenticazione , è necessario scegliere l'approccio più adatto in base alla complessità dell'operazione:
-
-1. **Folio con PHP puro**: Per operazioni semplici come il logout (già correttamente implementato)
-2. **Widget Filament**: Per form complessi che devono essere adattabili a diverse grafiche
-3. **Volt Action dedicata**: Per operazioni che richiedono validazione o logica complessa
-
-## Raccomandazione per i Form
-
-Come correttamente indicato, per i form è preferibile utilizzare un widget Filament invece di reinventare la ruota. Questo approccio offre numerosi vantaggi:
-
-1. **Riutilizzabilità**: Il widget può essere utilizzato in diverse parti dell'applicazione
-2. **Adattabilità**: Si adatta facilmente a diverse grafiche
-3. **Manutenibilità**: Sfrutta le funzionalità di Filament per la validazione e la gestione degli errori
-4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
-
-Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
-# Analisi dell'Errore di Implementazione Volt/Blade
-
-## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-
-## Identificazione dell'Errore
-
-Durante l'analisi del file `Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
-
-### File Attuale (Corretto)
+### 2. Widget di Registrazione
 
 ```php
 <?php
 
+namespace Modules\User\Filament\Widgets;
+
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\Models\User;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
-if (!Auth::check()) {
-    return redirect()->route('login');
+class RegisterFormWidget extends XotBaseWidget
+{
+    use InteractsWithForms;
+
+    protected static string $view = 'user::livewire.widgets.register-form-widget';
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+    {
+        return $form
+            ->schema([
+                'first_name' => TextInput::make('first_name')
+                    ->required(),
+                'last_name' => TextInput::make('last_name')
+                    ->required(),
+                'email' => TextInput::make('email')
+                    ->email()
+                    ->required()
+                    ->unique(User::class),
+                'password' => TextInput::make('password')
+                    ->password()
+                    ->required()
+                    ->minLength(8)
+                    ->confirmed(),
+                'password_confirmation' => TextInput::make('password_confirmation')
+                    ->password()
+                    ->required(),
+            ])
+            ->statePath('data');
+    }
+
+    public function register(): void
+    {
+        $data = $this->form->getState();
+
+        $user = User::create([
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
+
+        Auth::login($user);
+
+        $locale = app()->getLocale();
+        redirect('/' . $locale . '/dashboard');
+    }
 }
-
-try {
-    Event::dispatch('auth.logout.attempting', [Auth::user()]);
-
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    Event::dispatch('auth.logout.successful');
-
-    Log::info('Utente disconnesso', [
-        'user_id' => Auth::id(),
-        'timestamp' => now()
-    ]);
-
-    return redirect()->route('home')
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-    return back()->with('error', __('Errore durante il logout'));
-}
-?>
-
-<x-layout>
-    <!-- Template Blade qui -->
-</x-layout>
 ```
 
-### Interpretazione Errata
+## Conclusione
 
-L'errore di analisi ha portato a raccomandazioni non corrette:
+L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio coerente, manutenibile e riutilizzabile. Questo approccio evita di "reinventare la ruota" e garantisce che tutti i form seguano le stesse convenzioni e standard di qualità.
 
-1. Si è erroneamente indicato che il file iniziava con `@volt('auth.logout')` invece di `<?php`
-2. Si è suggerito di riorganizzare la struttura quando in realtà era già corretta
-3. Si è proposto di utilizzare Volt quando il file utilizza già correttamente PHP puro con Folio
+## Collegamenti Utili
 
-## Correzione dell'Analisi
+- [Documentazione Filament](https://filamentphp.com/docs)
+- [Documentazione Widgets Filament](https://filamentphp.com/docs/3.x/widgets/installation)
+- [Documentazione Forms Filament](https://filamentphp.com/docs/3.x/forms/installation)
+- [Documentazione Laravel Livewire](https://laravel-livewire.com/docs)
+- [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+1. **Widget vs Form**:
+   - Utilizzare widget per componenti riutilizzabili
+   - Evitare form personalizzati
+   - Sfruttare i componenti Filament
 
-Il file attuale utilizza già l'approccio corretto di Folio con PHP puro, che è l'approccio raccomandato per operazioni semplici come il logout. Tuttavia, ci sono alcuni miglioramenti che possono essere apportati:
+2. **Routing**:
+   - Utilizzare le rotte di Filament
+   - Evitare rotte personalizzate
+   - Mantenere coerenza URL
 
-1. **Localizzazione degli URL**: Utilizzare `app()->getLocale()` per generare URL localizzati invece di `route('home')`
-2. **Componenti UI**: Utilizzare i componenti Blade nativi di Filament invece di HTML diretto
-3. **Direttive Folio**: Aggiungere le direttive `middleware` e `name` di Folio per definire il middleware e il nome della rotta
+3. **Layout**:
+   - Utilizzare i layout Filament
+   - Mantenere coerenza UI
+   - Seguire le linee guida di design
 
-## Lezione Appresa
+## Collegamenti Correlati
+- [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session-management.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md)
+# Implementazione dei Form con Widget Filament
 
-Questo errore evidenzia l'importanza di:
+## Collegamenti correlati
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
-1. **Analisi Accurata**: Esaminare attentamente il codice esistente prima di proporre modifiche
-2. **Comprensione dei Framework**: Distinguere chiaramente tra i diversi approcci (PHP puro, Volt, Blade)
-3. **Verifica delle Assunzioni**: Non assumere che un file utilizzi un determinato approccio senza verificarlo
+## Introduzione
 
-## Approccio Corretto per l'Implementazione
+Questo documento descrive l'implementazione corretta dei form nel tema One utilizzando widget Filament invece di form personalizzati. Questo approccio garantisce coerenza, riutilizzabilità e adattabilità a diverse grafiche, evitando di "reinventare la ruota".
 
-Per implementare correttamente le pagine di autenticazione , è necessario scegliere l'approccio più adatto in base alla complessità dell'operazione:
+## Approccio Raccomandato: Widget Filament
 
-1. **Folio con PHP puro**: Per operazioni semplici come il logout (già correttamente implementato)
-2. **Widget Filament**: Per form complessi che devono essere adattabili a diverse grafiche
-3. **Volt Action dedicata**: Per operazioni che richiedono validazione o logica complessa
+Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament invece di implementare form personalizzati con Volt o Blade. Questo approccio offre numerosi vantaggi:
 
-## Raccomandazione per i Form
+1. **Riutilizzabilità**: I widget possono essere utilizzati in diverse parti dell'applicazione
+2. **Adattabilità**: Si adattano facilmente a diverse grafiche
+3. **Manutenibilità**: Sfruttano le funzionalità di Filament per la validazione e la gestione degli errori
+4. **Coerenza**: Mantengono uno stile coerente con il resto dell'applicazione
+5. **Accessibilità**: I componenti Filament sono progettati per essere accessibili
 
-Come correttamente indicato, per i form è preferibile utilizzare un widget Filament invece di reinventare la ruota. Questo approccio offre numerosi vantaggi:
+## Struttura delle Directory
 
-1. **Riutilizzabilità**: Il widget può essere utilizzato in diverse parti dell'applicazione
-2. **Adattabilità**: Si adatta facilmente a diverse grafiche
-3. **Manutenibilità**: Sfrutta le funzionalità di Filament per la validazione e la gestione degli errori
-4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
+```
 
-Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
+├── Modules/
+│   └── User/
+│       └── app/
+│           └── Filament/
+│               └── Widgets/
+│                   ├── LoginFormWidget.php
+│                   ├── RegisterFormWidget.php
+│                   └── PasswordResetFormWidget.php
+└── Themes/
+    └── One/
+        └── resources/
+            └── views/
+                ├── pages/
+                │   └── auth/
+                │       ├── login.blade.php
+                │       ├── register.blade.php
+                │       └── password/
+                │           ├── reset.blade.php
+                │           └── email.blade.php
+                └── livewire/
+                    └── widgets/
+                        ├── login-form-widget.blade.php
+                        ├── register-form-widget.blade.php
+                        └── password-reset-form-widget.blade.php
+```
+
+## Template Blade per i Widget
+
+### 1. Template per il Widget di Login (login-form-widget.blade.php)
+
+```blade
+<div>
+    <form wire:submit="login">
+        {{ $this->form }}
+
+        <div class="mt-4">
+            <x-filament::button type="submit" class="w-full">
+                {{ __('auth.login.submit_button') }}
+            </x-filament::button>
+        </div>
+
+        @if ($errors->any())
+            <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                <ul class="list-disc pl-5">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </form>
+</div>
+```
+
+### 2. Template per il Widget di Registrazione (register-form-widget.blade.php)
+
+```blade
+<div>
+    <form wire:submit="register">
+        {{ $this->form }}
+
+        <div class="mt-4">
+            <x-filament::button type="submit" class="w-full">
+                {{ __('auth.register.submit_button') }}
+            </x-filament::button>
+        </div>
+
+        @if ($errors->any())
+            <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                <ul class="list-disc pl-5">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </form>
+</div>
+```
+
+## Vantaggi dell'Utilizzo di Widget Filament
+
+1. **Riutilizzabilità**: I widget possono essere utilizzati in diverse parti dell'applicazione e in diversi temi.
+
+2. **Adattabilità**: Si adattano facilmente a diverse grafiche e layout senza dover modificare la logica.
+
+3. **Manutenibilità**: Il codice è organizzato in modo strutturato, con una chiara separazione tra logica e presentazione.
+
+4. **Coerenza UI/UX**: Utilizzo dei componenti nativi Filament garantisce coerenza visiva con il resto dell'applicazione.
+
+5. **Accessibilità**: I componenti Filament sono progettati per essere accessibili secondo gli standard WCAG.
+
+6. **Validazione integrata**: Gestione semplificata della validazione e degli errori.
+
+7. **Localizzazione**: Supporto completo per la localizzazione degli URL e dei contenuti.
+
+## Implementazione dei Widget Filament
+
+### 1. Widget di Login
+
+```php
+<?php
+
+namespace Modules\User\Filament\Widgets;
+
+use Filament\Widgets\Widget;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Auth;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+class LoginFormWidget extends XotBaseWidget
+{
+    use InteractsWithForms;
+
+    protected static string $view = 'user::livewire.widgets.login-form-widget';
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+    {
+        return $form
+            ->schema([
+                'email' => TextInput::make('email')
+                    ->email()
+                    ->required(),
+                'password' => TextInput::make('password')
+                    ->password()
+                    ->required(),
+                'remember' => Checkbox::make('remember'),
+            ])
+            ->statePath('data');
+    }
+
+    public function login(): void
+    {
+        $data = $this->form->getState();
+
+        if (Auth::attempt([
+            'email' => $data['email'],
+            'password' => $data['password']
+        ], $data['remember'] ?? false)) {
+            session()->regenerate();
+
+            $locale = app()->getLocale();
+            redirect('/' . $locale . '/dashboard');
+        }
+
+        $this->addError('email', __('auth.failed'));
+    }
+}
+```
+
+### 2. Widget di Registrazione
+
+```php
+<?php
+
+namespace Modules\User\Filament\Widgets;
+
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\Models\User;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+class RegisterFormWidget extends XotBaseWidget
+{
+    use InteractsWithForms;
+
+    protected static string $view = 'user::livewire.widgets.register-form-widget';
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
+    {
+        return $form
+            ->schema([
+                'first_name' => TextInput::make('first_name')
+                    ->required(),
+                'last_name' => TextInput::make('last_name')
+                    ->required(),
+                'email' => TextInput::make('email')
+                    ->email()
+                    ->required()
+                    ->unique(User::class),
+                'password' => TextInput::make('password')
+                    ->password()
+                    ->required()
+                    ->minLength(8)
+                    ->confirmed(),
+                'password_confirmation' => TextInput::make('password_confirmation')
+                    ->password()
+                    ->required(),
+            ])
+            ->statePath('data');
+    }
+
+    public function register(): void
+    {
+        $data = $this->form->getState();
+
+        $user = User::create([
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
+
+        Auth::login($user);
+
+        $locale = app()->getLocale();
+        redirect('/' . $locale . '/dashboard');
+    }
+}
+```
+
+## Conclusione
+
+L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio coerente, manutenibile e riutilizzabile. Questo approccio evita di "reinventare la ruota" e garantisce che tutti i form seguano le stesse convenzioni e standard di qualità.
+
+## Collegamenti Utili
+
+- [Documentazione Filament](https://filamentphp.com/docs)
+- [Documentazione Widgets Filament](https://filamentphp.com/docs/3.x/widgets/installation)
+- [Documentazione Forms Filament](https://filamentphp.com/docs/3.x/forms/installation)
+- [Documentazione Laravel Livewire](https://laravel-livewire.com/docs)
+- [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+1. **Widget vs Form**:
+   - Utilizzare widget per componenti riutilizzabili
+   - Evitare form personalizzati
+   - Sfruttare i componenti Filament
+
+2. **Routing**:
+   - Utilizzare le rotte di Filament
+   - Evitare rotte personalizzate
+   - Mantenere coerenza URL
+
+3. **Layout**:
+   - Utilizzare i layout Filament
+   - Mantenere coerenza UI
+   - Seguire le linee guida di design
+
+## Collegamenti Correlati
+- [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session-management.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md)

@@ -5,7 +5,7 @@ canonical: ../../../../Themes/docs/shared-components/advanced.md
 related:
   - "./index.md"
   - "./laravel.md"
-  - "./security.md"
+  - "./SECURITY.md"
   - "./styling.md"
   - "./usage.md"
 ---

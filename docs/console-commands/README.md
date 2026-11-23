@@ -247,7 +247,7 @@ Modules/User/
 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Comandi Console - Modulo User"

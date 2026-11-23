@@ -20,7 +20,11 @@ related:
 
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+<<<<<<< .merge_file_hxqMlT
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
+=======
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+>>>>>>> .merge_file_GMnP2Y
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

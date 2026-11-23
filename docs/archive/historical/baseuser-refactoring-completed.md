@@ -1,13 +1,20 @@
 ---
-title: "baseuser-refactoring-completed"
-type: alias
-status: superseded
-canonical: "archive/baseuser-refactoring.md"
-qmd: "baseuser-refactoring-completed alias superseded"
+title: "BaseUser Refactoring - Completato"
+type: concept
+tags: [baseuser, refactoring, completed]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser-refactoring-completed baseuser refactoring - completato"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
 
-# baseuser-refactoring-completed
-
-Documento identico al canonico: [baseuser-refactoring.md](../baseuser-refactoring.md).
-
-Canonico: `laravel/Modules/User/docs/archive/baseuser-refactoring.md`. Qui non ci sono istruzioni: seguire il file collegato.

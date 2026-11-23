@@ -193,7 +193,11 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
+<<<<<<< .merge_file_yl8bsK
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md) 
+>>>>>>> .merge_file_OjGd4V
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
