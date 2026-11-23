@@ -1,14 +1,25 @@
-# User behavioral contract index
+---
+title: "INDEX — User"
+type: index
+status: active
+created: 2026-11-23
+updated: 2026-11-23
+decision-makers: []
+---
 
-This is the machine-readable inventory of behavioral contracts owned by the **User** module.
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
+# <!-- Titolo: indice operativo User -->
 
-A contract describes an existing public operation or boundary. It names the owner, input, output, stable invariants, side effects and their order, errors, and non-goals. Every invariant gets a stable ID and a Pest group when a test exists; missing coverage is recorded as debt instead of being implied away.
+## Contratti di comportamento
 
-## Contracts
+I contratti descritti qui sono i contratti di comportamento auditi per il modulo
+User. Legacy behavior è documentato così com'è e non è un modello per codice nuovo.
 
-- [hasteamsandusercontract](hasteamsandusercontract.md)
-- [teamcontract](teamcontract.md)
+| Operazione | Contract | Classe | Invarianti |
+|---|---|---|---|
+| Create user | [hasverified-identity-action](hasverified-identity-action.md) | `App\Actions\User\HasVerifiedIdentityAction` | USER-IDV-INV-1..3 |
+| Add user to team | [hasteamsandusercontract](hasteamsandusercontract.md) | `HasTeamsAndUserContract` | TEAM-USER-INV-1..4 |
+| Get owner | [teamcontract](teamcontract.md) | `UserContract` | USER-OWNER-INV-1 |
+| Remove user from team | [hasteamsandusercontract](hasteamsandusercontract.md) | `HasTeamsContract` | TEAM-REMOVE-INV-1 |
 
-## Authoring
-
-Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
+(End of file - total 21 lines)
