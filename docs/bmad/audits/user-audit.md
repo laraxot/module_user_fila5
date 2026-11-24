@@ -88,14 +88,9 @@ Pest con mock `['user::admin']` su `before/update/create/delete`.
 
 `app/Models/Policies/PermissionPolicy.php:25,33,41,50`: `view/create/update/delete` →
 `return true`, `viewAny` → `false`. Filament autorizza le pagine Create/Edit con
-<<<<<<< .merge_file_NjOan8
-`canCreate/canEdit`, non con `viewAny`. Dato `canAccessPanel`, un `user::operator`
-(panel con "permessi ridotti") raggiunge create/edit/delete dei Permission via URL.
-=======
 `canCreate/canEdit`, non con `viewAny`. Dato `canAccessPanel`, un `user::operator` (ruolo da
 creare a mano: `PanelRoleSeeder` semina solo `user::admin`) entra nel pannello "con permessi
 ridotti" e raggiunge create/edit/delete dei Permission via URL; `user::admin` li ha già da P0-U1.
->>>>>>> .merge_file_kHnxpi
 Fix: allineare a `RolePolicy` (tutto `false`, super-admin via `before`).
 
 ### P1-U3 — scritture DB dentro l'autorizzazione
@@ -133,10 +128,7 @@ coprono Role/Team/User ma con mock senza `*::admin`/`*::operator`. Nessun test s
   `Resources/TenantUserResource/Schemas/TenantUserForm.php`): violano l'auto-traduzione Lang.
 - `LoginWidget` (ChartWidget) e `BaseEditUser` estendono Filament diretto: usare `XotBase*`.
 - `PassportServiceProvider` estende `ServiceProvider` anziché `XotBaseServiceProvider`.
-<<<<<<< .merge_file_NjOan8
-=======
 - Docs: 17 link relativi rotti preesistenti in `docs/bmad/decision-log.md` (es. `./filament-blueprint.md`, `../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md`, `./stories/dcp-269-…story.md`): da risolvere o rimuovere.
->>>>>>> .merge_file_kHnxpi
 - Vocabolario ruoli sparso: `admin`, `super-admin`, `user::admin`, `user::operator`,
   `restaurant::admin` — nessuna costante unica.
 
