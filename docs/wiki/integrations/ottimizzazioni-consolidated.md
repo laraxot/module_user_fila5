@@ -32,13 +32,13 @@ module: theme
 topic: ottimizzazioni-approfondite-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -54,13 +54,13 @@ module: theme
 topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -76,13 +76,13 @@ module: theme
 topic: ottimizzazioni-dry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -98,13 +98,13 @@ module: theme
 topic: ottimizzazioni-modulo-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -125,13 +125,13 @@ qmd: "ottimizzazioni-super-dry-kiss ottimizzazioni super dry + kiss - modulo use
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -508,13 +508,13 @@ module: theme
 topic: ottimizzazioni-superry-kiss
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -530,13 +530,13 @@ module: theme
 topic: ottimizzazioni-user
 canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -557,13 +557,13 @@ qmd: "ottimizzazioniry-kiss ottimizzazioni dry + kiss - modulo user"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -599,9 +599,9 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-implementation-best-practices-2.md (10KB)
 ├── logout-implementation-error-3.md (3.3KB)
 ├── logout-implementation-with-laravel-localization-3.md (6.2KB)
-├── logout-page-fix-2.md (1.3KB)
+├── logout-page-fix.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
-└── logout-security-2.md (4.1KB)
+└── logout-security.md (4.1KB)
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -613,7 +613,7 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ❌ DUPLICAZIONI CRITICHE:
 ├── userfactory-advanced-implementation-complete-2.md (11KB)
 ├── user-factory-advanced-integration-3.md (9.1KB)
-├── user-factory-complete-ecosystem-integration-2.md (14KB)
+├── user-factory-complete-ecosystem-integration.md (14KB)
 └── user-factory-integration-2.md (9.8KB)
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
@@ -624,12 +624,12 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ##### C. **PHPStan Fixes (5+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-├── phpstan-fixes-historical-1.md (4.4KB)
+├── phpstan-fixes-historical-alias.md (4.4KB)
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
-└── phpstan-fixes-8.md (2.5KB)
+└── phpstan-fixes.md (2.5KB)
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute
@@ -641,11 +641,11 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ❌ DUPLICAZIONI CRITICHE:
 ├── volt-blade-implementation-3.md (9.2KB)
 ├── volt-blade-implementation-error-3.md (3.8KB)
-├── volt-errors-2.md (5.6KB)
+├── volt-errors.md (5.6KB)
 ├── volt-folio-auth-implementation-3.md (17KB)
-├── volt-folio-error-2.md (1.6KB)
+├── volt-folio-error.md (1.6KB)
 ├── volt-folio-logout-2.md (5.0KB)
-├── volt-folio-logout-debug-2.md (3.0KB)
+├── volt-folio-logout-debug.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)
 └── volt-logout-2.md (5.2KB)
 
@@ -684,7 +684,7 @@ docs/
 │   │   ├── overview.md                     # Panoramica completa (CONSOLIDATO)
 │   │   ├── implementation.md               # Implementazione (CONSOLIDATO)
 │   │   ├── troubleshooting.md              # Risoluzione problemi (CONSOLIDATO)
-│   │   └── security.md                     # Sicurezza (CONSOLIDATO)
+│   │   └── SECURITY.md                     # Sicurezza (CONSOLIDATO)
 │   └── registration/                       # Registrazione
 │       ├── overview.md                     # Panoramica
 │       ├── widget.md                       # Widget Filament
@@ -730,7 +730,7 @@ docs/
 │   ├── fullcalendar/                        # FullCalendar
 │   │   ├── overview.md                     # Panoramica (CONSOLIDATO)
 │   │   ├── scheduler.md                     # Scheduler (CONSOLIDATO)
-│   │   ├── license.md                       # Licenza (CONSOLIDATO)
+│   │   ├── LICENSE.md                       # Licenza (CONSOLIDATO)
 │   │   └── troubleshooting.md               # Troubleshooting (CONSOLIDATO)
 │   ├── mcp/                                 # MCP Server
 │   │   ├── overview.md                     # Panoramica
@@ -1104,7 +1104,6 @@ class UserResource extends XotBaseResource
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
----
 ---
 
 **Consolidated by:** Phase 2f intelligent merging

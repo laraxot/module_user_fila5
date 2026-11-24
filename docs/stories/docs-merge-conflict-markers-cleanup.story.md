@@ -1,7 +1,5 @@
 ---
-title: "User: marker di conflitto git residui in docs/ (866 file) — pulizia + aggiornamento indice"
-
-title: "User: marker di conflitto git residui in docs/ (866 file): pulizia + aggiornamento indice"
+title: "User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice"
 type: story
 module: User
 epic: null
@@ -10,7 +8,7 @@ slug: docs-merge-conflict-markers-cleanup
 status: done
 cold_gate: null
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-11-23'
 repository: "git@github.com:provtv/module_user_fila5.git"
 github_issue: "https://github.com/provtv/module_user_fila5/issues/36"
 github_discussion: "https://github.com/provtv/module_user_fila5/discussions/37"
@@ -24,7 +22,20 @@ owned_scope:
 
 # User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice
 
-# User: marker di conflitto git residui in docs/: pulizia + aggiornamento indice
+## Coordinamento
+
+- Scope: solo `laravel/Modules/User/docs/**/*.md` (auth, RBAC Spatie, Filament
+  widgets login/register, pattern XotBase — business logic User, non codice PHP).
+- Storia correlata: [user-nested-conflict-marker-cleanup.story.md](./user-nested-conflict-marker-cleanup.story.md)
+  (marker annidati daemon `87273113`/`f548be94`); questa story resta il canone per
+  le ondate di pulizia marker in `docs/`.
+- Sessione 2026-11-23 (docs-guardian): recidiva con **154 file** / ~1409 aperture
+  `<<<<<<<` (quasi tutte annidate `.merge_file_*`). Risoluzione ricorsiva lato
+  più coerente (link lowercase salvo `README.md`, lato non vuoto / più completo).
+  Verifica finale: `/bin/grep -rIln --include='*.md' '^<<<<<<< \|^>>>>>>> \|^=======$'
+  laravel/Modules/User/docs` → **0**. Nessun commit in questa sessione.
+- Fuori scope: consolidamento duplicati case-only (`index.md`/`INDEX.md`,
+  `models/readme.md`/`models/README.md`), codice `app/`, lock intero modulo.
 
 ## Contesto
 
@@ -77,7 +88,7 @@ branch remoto.
 risolti a mano fondendo senza perdita di informazione:
 
 - 7 casi banali HEAD/dev entrambi vuoti → sola rimozione marker.
-- `docs/wiki/skills/INDEX.md` e `docs/wiki/skills/index.md`: entrambi i lati
+- `docs/wiki/skills/index.md` e `docs/wiki/skills/index.md`: entrambi i lati
   non identici (link a varianti case-diverse dello stesso file) → tenuti
   entrambi i bullet, rimossi solo i marker.
 - `docs/stories/user-passport-create-client-credentials-button.md`: lato
@@ -120,7 +131,7 @@ marker residui in tutti, script non li ha ritoccati.
 
 ## Root-md-files e index
 
-`docs/root-md-files/*.md` (7 file: changelog.md + 2 varianti numerate,
+`docs/root-md-files/*.md` (7 file: CHANGELOG.md + 2 varianti numerate,
 git-reset.md + 1 variante, pest-test-report.md, philosophy.md) verificato
 pulito — nessun artefatto tipo `(.)` a fine riga, nessuna intestazione H1
 
@@ -129,7 +140,7 @@ duplicata.
 
 `docs/index.md` (indice auto-generato, 3419 righe) aveva la sezione
 `## root-md-files` disallineata: elencava solo 2 dei 7 file `.md` presenti
-(`git-reset.md`, `pest-test-report.md`), mancavano `changelog.md`,
+(`git-reset.md`, `pest-test-report.md`), mancavano `CHANGELOG.md`,
 `changelog-1.md`, `changelog-2.md`, `git-reset-1.md`, `philosophy.md`.
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa —
 
@@ -142,7 +153,7 @@ riferimento stale a path root-modulo rimossi (`PHILOSOPHY.md`,
 
 ## Esclusioni deliberate
 
-- Duplicati case-only (`INDEX.md`/`index.md`, `00-INDEX.md`/`00-index.md`,
+- Duplicati case-only (`index.md`/`index.md`, `00-index.md`/`00-index.md`,
   ecc.): problema noto e già tracciato in `docs/case-conflicts.md`
   (issue #124, discussion #1). Non consolidato qui — richiede aggiornamento
 
@@ -173,4 +184,8 @@ Lock `laravel/Modules/User:docs` acquisito e rilasciato correttamente
 (`git add` con lista esplicita di path, mai `-A` — repo con ~5000
 modifiche non correlate di altre sessioni in corso).
 
-(`git add` con lista esplicita di path, mai `-A`: repo con ~5000
+## Follow-up 2026-11-23
+
+Ondata marker annidati ripulita in-place su 154 file `docs/` (vedi
+[Coordinamento](#coordinamento)). Residual markers: 0. Duplicati case-only e
+indice monolitico `INDEX.md` non consolidati (scope separato).

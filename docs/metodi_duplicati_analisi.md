@@ -554,13 +554,13 @@ public function getTableFilters(): array
 
 ---
 
-<!-- Merged from METODI_DUPLICATI_ANALISI.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from metodi_duplicati_analisi.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 module: User
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 ---
 
 # Metodi Duplicati — Analisi User

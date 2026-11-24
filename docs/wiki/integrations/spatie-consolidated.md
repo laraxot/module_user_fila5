@@ -36,13 +36,13 @@ module: theme
 topic: spatie-models-verification
 canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -58,13 +58,13 @@ module: theme
 topic: spatie-permission-philosophy
 canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -74,7 +74,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-permi
 
 ## spatie-permission-teams-laravel-13
 
-*Consolidated from: `spatie-permission-teams-laravel-13.md`*
+*Consolidated from: `spatie-permission-teams-laravel.md`*
 
 title: "Spatie Permission teams on Laravel 13"
 type: concept
@@ -85,13 +85,13 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -252,13 +252,13 @@ qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -419,13 +419,13 @@ qmd: "spatie-permission 🏛️ filosofia spatie permission in laraxot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -649,7 +649,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-- [Roles and Permissions](roles-permissions-3.md)
+- [Roles and Permissions](roles-permissions.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 
@@ -669,7 +669,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 
 ## spatie-permissions-methods-3
 
-*Consolidated from: `spatie-permissions-methods-3.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -680,13 +680,13 @@ qmd: "spatie-permissions-methods-3 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1164,7 +1164,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 
@@ -1184,7 +1184,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 ## spatie-permissions-methods-4
 
-*Consolidated from: `spatie-permissions-methods-4.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -1195,13 +1195,13 @@ qmd: "spatie-permissions-methods-4 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1679,7 +1679,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 
@@ -1699,7 +1699,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 ## spatie-permissions-methods-5
 
-*Consolidated from: `spatie-permissions-methods-5.md`*
+*Consolidated from: `spatie-permissions-methods.md`*
 
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -1710,13 +1710,13 @@ qmd: "spatie-permissions-methods-5 user module - spatie permission methods refer
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2194,7 +2194,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 
@@ -2225,13 +2225,13 @@ qmd: "spatie-permissions-methods user module - spatie permission methods referen
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -2709,7 +2709,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 
@@ -2735,13 +2735,13 @@ module: theme
 topic: spatie-permissions
 canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -3233,7 +3233,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 

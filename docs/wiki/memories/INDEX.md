@@ -36,7 +36,7 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 - Non embeddare Memories nei prompt di avvio
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
 
-- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
+- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
 
 ## Aggiungere una Nuova MEMORIES
 
@@ -44,4 +44,3 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 2. Aggiungi la voce in `../rules/00-TRIGGER_MAP.md`
 3. Aggiorna questo indice se la Memories e' ricorrente
 4. Committa: `docs: add memories <nome>`
-

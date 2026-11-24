@@ -11,7 +11,6 @@ related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
   - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"

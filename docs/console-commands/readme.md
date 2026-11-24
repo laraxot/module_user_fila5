@@ -226,6 +226,10 @@ Modules/User/
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../readme.md)
+- [User Models](../models/README.md)
+- [Role Management](../models/role-management.md)
+- [Password Management](../password.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti Recenti
 

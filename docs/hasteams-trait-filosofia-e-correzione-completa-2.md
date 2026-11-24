@@ -8,13 +8,13 @@ qmd: "hasteams-trait-filosofia-e-correzione-completa-2 hasteams trait - filosofi
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -296,7 +296,7 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan-fixes-8.md](phpstan-fixes-8.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](phpstan-fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**

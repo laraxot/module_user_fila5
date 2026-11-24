@@ -156,7 +156,7 @@ Related:
 
 ---
 
-## Contenuto assorbito da `agents.md`
+## Contenuto assorbito da `AGENTS.md`
 
 # User {{TYPE^}} LLM Wiki Agent Instructions
 
@@ -296,5 +296,5 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-- [Project Wiki Agent Instructions](../../docs/wiki/agents.md)
+- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)

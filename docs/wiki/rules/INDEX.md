@@ -36,7 +36,7 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 - Non embeddare Rules nei prompt di avvio
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
 
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
 
 ## Rules ricorrenti
 
@@ -50,4 +50,3 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 2. Aggiungi la voce in `../rules/00-TRIGGER_MAP.md`
 3. Aggiorna questo indice se la Rules e' ricorrente
 4. Committa: `docs: add rules <nome>`
-

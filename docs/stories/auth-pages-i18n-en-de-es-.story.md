@@ -1,3 +1,11 @@
+---
+title: "Auth Pages I18N En De Es .Story"
+module: User
+type: note
+status: active
+updated: '2026-11-23'
+---
+
 # Login e registrazione in inglese, tedesco e spagnolo
 
 - Stato: done (2026-10-07), con aperti elencati sotto

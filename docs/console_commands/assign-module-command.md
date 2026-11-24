@@ -10,8 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./change-password-command.md"
   - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
@@ -174,7 +172,7 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
-- [User Models](models/readme.md)
+- [User Models](models/README.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
 

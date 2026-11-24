@@ -8,13 +8,13 @@ qmd: "filament-namespace regole per i namespace filament"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -58,7 +58,7 @@ namespace Modules\User\Filament\Pages;
 class Dashboard extends Page
 ## Collegamenti
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../xot/project_docs/readme.md)
+- [Regole Generali Xot](../../xot/project_docs/README.md)
 - [Best Practices Filament](../../cms/project_docs/best-practices/filament.md)
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/docs/README.md)

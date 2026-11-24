@@ -197,7 +197,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Documentazione Modulo User](./README.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./readme.md)
+- [Documentazione Modulo User](./README.md)
 
 ## Note Tecniche
 
@@ -208,5 +208,4 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Sort order allineato con i Resource corrispondenti
 
 *Intervento completato il: 2026-01-22*
-*Conforme alle regole DRY + KISS*
 *Conforme alle regole DRY + KISS*

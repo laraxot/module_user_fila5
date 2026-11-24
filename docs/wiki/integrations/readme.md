@@ -8,13 +8,15 @@ qmd: "readme user module - authentication & authorization"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -1057,7 +1059,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [changelog.md](./changelog.md) for full history.
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
 
 ---
 
@@ -1075,7 +1077,7 @@ See [changelog.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 
@@ -1090,6 +1092,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../../../../docs/security.md)
+- [CLAUDE.md](../../../../../claude.md) - Project architecture
+- [Security Guidelines](../../../../../../docs/SECURITY.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

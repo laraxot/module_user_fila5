@@ -71,6 +71,11 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
   solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
   `PSR-2-coding-style-guide.md`). Verificato con `git log --oneline -- .github/contributing.md`
   + `git show <sha>:.github/contributing.md` sui commit pre-corruzione (`1d6d8dfc`, `6770b609`,
+- **1 file — nesting a 3 livelli con 3 commit-hash diversi**: `.github/CONTRIBUTING.md`
+  (righe 43-58). Tutte le varianti annidate portano allo stesso bullet PSR-2, differiscono
+  solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
+  `PSR-2-coding-style-guide.md`). Verificato con `git log --oneline -- .github/CONTRIBUTING.md`
+  + `git show <sha>:.github/CONTRIBUTING.md` sui commit pre-corruzione (`1d6d8dfc`, `6770b609`,
   entrambi 0 marker): il contenuto originale, **mai corrotto**, usa l'URL minuscolo
   (`psr-2-coding-style-guide.md`). Risoluzione: ripristino identico da quei commit
   (memoria `feedback-restore-never-reinvent-signature`), non invenzione di una quarta

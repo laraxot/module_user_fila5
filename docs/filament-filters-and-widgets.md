@@ -8,13 +8,13 @@ qmd: "filament-filters-and-widgets filament 4 — filtri pagina e widget (lezion
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -25,6 +25,9 @@ related:
 - Proprietà `$view` del Widget: NON statica in Filament 4 (il parent ha `$view` non static).
 - In Blade del widget leggere i valori con `data_get($this->pageFilters, 'startDate')` e `data_get($this->pageFilters, 'endDate')`.
 - Evitare `HasFiltersSchema` in questo caso (serve ai chart widget), e niente `->label()` / `->helperText()`.
+- Table filter (`BaseFilter`): su Filament tables ≥ 5.11.2 usare `->form([...])`, non `->schema([...])`
+  (vedi story `docs/bmad/stories/phpstan-filter-form-schema.story.md` e nota Xot
+  `filament-filter-schema-to-form.md`).
 
 Esempi minimi
 
