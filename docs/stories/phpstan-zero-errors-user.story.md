@@ -12,6 +12,10 @@ related:
   - "../../../../../docs/stories/all-modules-phpstan-zero-errors.story.md"
   - "../phpstan-fixes.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan zero errors user story errori"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan zero errors user story errori"
 >>>>>>> laraxot/dev

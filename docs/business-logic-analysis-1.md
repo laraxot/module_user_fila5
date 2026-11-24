@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "business logic analysis 1"
+>>>>>>> laraxot/dev
 =======
 qmd: "business logic analysis 1"
 >>>>>>> laraxot/dev

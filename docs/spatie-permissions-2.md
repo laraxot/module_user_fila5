@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "spatie permissions 2"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_MvfSpE
+qmd: "spatie permissions 2"
+=======
+>>>>>>> .merge_file_NLTXJ0
 >>>>>>> laraxot/dev
 ---
 

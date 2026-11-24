@@ -310,7 +310,11 @@ echo "User roles: " . $user->roles()->count() . "\n";
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Modulo User](./README.md)
+=======
+- [README Modulo User](./readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README Modulo User](./readme.md)
 >>>>>>> laraxot/dev

@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Struttura del Logout Blade nel Theme One"
 type: note
 qmd: "logout blade structure struttura theme"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Struttura del Logout Blade nel Theme One
 

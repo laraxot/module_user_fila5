@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "logout implementation with laravel localization"
+>>>>>>> laraxot/dev
 =======
 qmd: "logout implementation with laravel localization"
 >>>>>>> laraxot/dev

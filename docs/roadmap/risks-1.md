@@ -12,8 +12,15 @@ related:
   - "./02-next.md"
   - "./03-later.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "risks 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_MGVRYn
+qmd: "risks 1"
+=======
+>>>>>>> .merge_file_eLNJTU
 >>>>>>> laraxot/dev
 ---
 

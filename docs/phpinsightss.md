@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpinsightss"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_87Z5Up
+qmd: "phpinsightss"
+=======
+>>>>>>> .merge_file_qmAMkn
 >>>>>>> laraxot/dev
 ---
 

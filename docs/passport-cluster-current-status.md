@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "passport cluster current status"
+>>>>>>> laraxot/dev
 =======
 qmd: "passport cluster current status"
 >>>>>>> laraxot/dev

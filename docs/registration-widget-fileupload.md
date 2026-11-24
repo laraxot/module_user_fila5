@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "registration widget fileupload"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_LIy9Ss
+qmd: "registration widget fileupload"
+=======
+>>>>>>> .merge_file_d316z0
 >>>>>>> laraxot/dev
 ---
 

@@ -11,6 +11,10 @@ references:
   - ../brainstorming/module-opportunities.md
   - ../epics/module-roadmap.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "bmad audit user baseline analisi completa"
+>>>>>>> laraxot/dev
 =======
 qmd: "bmad audit user baseline analisi completa"
 >>>>>>> laraxot/dev

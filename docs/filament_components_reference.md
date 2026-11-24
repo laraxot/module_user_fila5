@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Riferimento Componenti Filament Verificati"
 type: note
 qmd: "filament components reference riferimento componenti verificati"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Riferimento Componenti Filament Verificati
 

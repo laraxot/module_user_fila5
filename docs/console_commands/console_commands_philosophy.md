@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: note
 qmd: "console commands philosophy filosofia comandi user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Filosofia dei Comandi Console - Modulo User
 
@@ -448,7 +454,11 @@ private function getPasswordLegacy(): string
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Comandi Console](README.md)
+=======
+- [README Comandi Console](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README Comandi Console](readme.md)
 >>>>>>> laraxot/dev

@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "metodi duplicati analisi"
+>>>>>>> laraxot/dev
 =======
 qmd: "metodi duplicati analisi"
 >>>>>>> laraxot/dev

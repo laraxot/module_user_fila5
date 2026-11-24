@@ -17,8 +17,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "legacy duplication pattern duplicazione user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Z8iy6a
+qmd: "legacy duplication pattern duplicazione user"
+=======
+>>>>>>> .merge_file_XFfj7Y
 >>>>>>> laraxot/dev
 ---
 

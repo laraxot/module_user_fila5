@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "model inheritance fixes correzioni ereditarietà modelli"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_qnqZqq
+qmd: "model inheritance fixes correzioni ereditarietà modelli"
+=======
+>>>>>>> .merge_file_un6jdH
 >>>>>>> laraxot/dev
 ---
 

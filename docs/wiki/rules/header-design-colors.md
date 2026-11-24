@@ -12,8 +12,15 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "header design colors"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_xoTNFx
+qmd: "header design colors"
+=======
+>>>>>>> .merge_file_sRArUZ
 >>>>>>> laraxot/dev
 ---
 

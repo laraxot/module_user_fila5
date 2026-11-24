@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "rules testing no migrate fresh"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_hOJnWJ
+qmd: "rules testing no migrate fresh"
+=======
+>>>>>>> .merge_file_OTvlRE
 >>>>>>> laraxot/dev
 ---
 

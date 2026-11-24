@@ -8,6 +8,10 @@ updated: 2026-07-16
 related:
   - "../../../../docs/wiki/rules/module-theme-root-cleanup.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "no ai tool scaffold dirs aitool"
+>>>>>>> laraxot/dev
 =======
 qmd: "no ai tool scaffold dirs aitool"
 >>>>>>> laraxot/dev

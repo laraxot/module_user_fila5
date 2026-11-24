@@ -18,6 +18,10 @@ use Spatie\QueueableAction\QueueableAction;
  * continuano a partire solo verso indirizzi confermati.
  *
  * @contract docs/contracts/has-verified-identity-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @see docs/contracts/has-verified-identity-action.md
  */
 final class HasVerifiedIdentityAction

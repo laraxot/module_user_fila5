@@ -11,6 +11,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/is-registration-enabled-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/is-registration-enabled-action.md
  */
 class IsRegistrationEnabledAction

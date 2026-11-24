@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "fullcalendar scheduler"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QooD0N
+qmd: "fullcalendar scheduler"
+=======
+>>>>>>> .merge_file_jk4Ivo
 >>>>>>> laraxot/dev
 ---
 

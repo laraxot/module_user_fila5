@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_BM3zB7
+>>>>>>> laraxot/dev
 ---
 title: "Ponytail-audit 2026-07-02: User module findings"
 type: audit
 qmd: "ponytail audit 02 ponytailaudit 20260702 user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_1pJL9G
 >>>>>>> laraxot/dev
 # Ponytail-audit 2026-07-02: User module findings
 

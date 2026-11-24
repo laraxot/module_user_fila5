@@ -12,8 +12,15 @@ related:
   - "./overview.md"
   - "./socialite-architecture.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "agents"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_UYK5jt
+qmd: "agents"
+=======
+>>>>>>> .merge_file_B9RqLP
 >>>>>>> laraxot/dev
 ---
 

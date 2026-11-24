@@ -25,7 +25,11 @@ related:
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README modulo User](./README.md)
+=======
+- [README modulo User](./readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README modulo User](./readme.md)
 >>>>>>> laraxot/dev

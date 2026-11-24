@@ -33,4 +33,8 @@ return new class extends XotBaseMigration
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "code conventions"
 type: note
@@ -13,3 +14,6 @@ status: placeholder
 # code conventions
 
 Placeholder vuoto: nessun contenuto disponibile. File preservato per compatibilita' dei link storici; se il documento serve, ripopolare o consolidare nel canonico di competenza.
+=======
+ 
+>>>>>>> laraxot/dev

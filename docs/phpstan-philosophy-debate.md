@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan philosophy debate"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_CyHmGF
+qmd: "phpstan philosophy debate"
+=======
+>>>>>>> .merge_file_ViEXzp
 >>>>>>> laraxot/dev
 ---
 

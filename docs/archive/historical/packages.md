@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "packages"
+>>>>>>> laraxot/dev
 =======
 qmd: "packages"
 >>>>>>> laraxot/dev

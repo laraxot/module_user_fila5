@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: Quality Gates Analysis: User Module
+=======
+title: "Quality Gates Analysis: User Module"
+>>>>>>> laraxot/dev
 =======
 title: "Quality Gates Analysis: User Module"
 >>>>>>> laraxot/dev

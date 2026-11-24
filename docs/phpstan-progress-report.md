@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
 =======
+>>>>>>> laraxot/dev
+=======
+*Ultimo aggiornamento: 2025-01-22*
 >>>>>>> laraxot/dev
 ---
 module: theme
@@ -16,8 +20,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan progress report"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Fv9UVL
+qmd: "phpstan progress report"
+=======
+>>>>>>> .merge_file_fD6xlU
 >>>>>>> laraxot/dev
 ---
 

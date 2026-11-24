@@ -9,6 +9,10 @@ related:
   - "./styling.md"
   - "./usage.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "laravel"
+>>>>>>> laraxot/dev
 =======
 qmd: "laravel"
 >>>>>>> laraxot/dev

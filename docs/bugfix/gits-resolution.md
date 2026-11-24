@@ -8,6 +8,10 @@ related:
   - "./git-conflicts-resolution.md"
   - "./multiple-bugs-resolution.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "gits resolution"
+>>>>>>> laraxot/dev
 =======
 qmd: "gits resolution"
 >>>>>>> laraxot/dev

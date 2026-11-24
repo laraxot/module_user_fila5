@@ -8,8 +8,15 @@ related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "rules"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_27qjrL
+qmd: "rules"
+=======
+>>>>>>> .merge_file_U6eHDk
 >>>>>>> laraxot/dev
 ---
 

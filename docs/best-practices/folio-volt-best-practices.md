@@ -12,6 +12,10 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "folio volt best practices"
+>>>>>>> laraxot/dev
 =======
 qmd: "folio volt best practices"
 >>>>>>> laraxot/dev

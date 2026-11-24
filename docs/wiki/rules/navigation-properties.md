@@ -12,8 +12,15 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "navigation properties"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_SAy1wC
+qmd: "navigation properties"
+=======
+>>>>>>> .merge_file_jOV8YJ
 >>>>>>> laraxot/dev
 ---
 

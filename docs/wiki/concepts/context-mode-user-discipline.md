@@ -14,8 +14,15 @@ related:
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "context mode user discipline contextmode"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Rpr7aN
+qmd: "context mode user discipline contextmode"
+=======
+>>>>>>> .merge_file_x4pNXt
 >>>>>>> laraxot/dev
 ---
 

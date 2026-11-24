@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user profile models"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_PeDrmO
+qmd: "user profile models"
+=======
+>>>>>>> .merge_file_4dhCyb
 >>>>>>> laraxot/dev
 ---
 

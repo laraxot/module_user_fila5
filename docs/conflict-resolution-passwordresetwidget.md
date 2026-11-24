@@ -78,7 +78,11 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module Documentation](readme.md)
 >>>>>>> laraxot/dev
@@ -178,7 +182,11 @@ Verificare che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module Documentation](readme.md)
 >>>>>>> laraxot/dev

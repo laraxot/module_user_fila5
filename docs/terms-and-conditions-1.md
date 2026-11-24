@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "terms and conditions 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_mpV6US
+qmd: "terms and conditions 1"
+=======
+>>>>>>> .merge_file_yEFb99
 >>>>>>> laraxot/dev
 ---
 

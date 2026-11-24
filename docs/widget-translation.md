@@ -161,9 +161,25 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 =======
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+<<<<<<< .merge_file_4e0KI6
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+=======
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+<<<<<<< HEAD
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HKSnfJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Memory Integration
 This document serves as a reference for:
@@ -361,9 +377,25 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 =======
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+<<<<<<< .merge_file_4e0KI6
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+=======
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+<<<<<<< HEAD
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HKSnfJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Memory Integration

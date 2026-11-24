@@ -4,6 +4,10 @@ date: 2026-07-28
 author: claude-ai
 status: BLOCKED_ON_SERVER_STATE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "git push lfs issue objects missing"
+>>>>>>> laraxot/dev
 =======
 qmd: "git push lfs issue objects missing"
 >>>>>>> laraxot/dev
@@ -200,6 +204,9 @@ Commits to push: 5 total
 **Last updated:** 2026-07-28T14:35Z  
 **Fallback:** Run PHPStan L10 locally while waiting for remote LFS fix
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -210,5 +217,8 @@ Commits to push: 5 total
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

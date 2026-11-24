@@ -9,6 +9,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/otp-hash-needs-rehash-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/otp-hash-needs-rehash-action.md
  */
 final class OtpHashNeedsRehashAction

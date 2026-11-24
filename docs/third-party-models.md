@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "third party models"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Uo4cR6
+qmd: "third party models"
+=======
+>>>>>>> .merge_file_wRNXbC
 >>>>>>> laraxot/dev
 ---
 

@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "quality status nov"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_9T3TX3
+qmd: "quality status nov"
+=======
+>>>>>>> .merge_file_HqVn5l
 >>>>>>> laraxot/dev
 ---
 

@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "vendor extension"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_6jbRBa
+qmd: "vendor extension"
+=======
+>>>>>>> .merge_file_kMxe4O
 >>>>>>> laraxot/dev
 ---
 

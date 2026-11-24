@@ -12,7 +12,19 @@ use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+<<<<<<< .merge_file_cbasGW
+uses(TestCase::class);
+=======
+<<<<<<< HEAD
+uses(TestCase::class);
+=======
+uses(\Modules\User\Tests\TestCase::class);
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kyE6AI
+>>>>>>> laraxot/dev
 
 class GetCurrentDeviceActionTest extends TestCase
 {

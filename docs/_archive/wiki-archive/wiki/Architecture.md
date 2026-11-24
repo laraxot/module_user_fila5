@@ -3,6 +3,10 @@ module: User
 concept: Architecture
 last_updated: 2026-04-15
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "architecture user"
+>>>>>>> laraxot/dev
 =======
 qmd: "architecture user"
 >>>>>>> laraxot/dev

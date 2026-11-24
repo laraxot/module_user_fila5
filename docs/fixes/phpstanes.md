@@ -11,6 +11,10 @@ related:
   - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstanes"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstanes"
 >>>>>>> laraxot/dev

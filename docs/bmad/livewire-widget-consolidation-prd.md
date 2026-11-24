@@ -5,6 +5,10 @@ related:
   - ./livewire-widget-prd.md
   - ./livewire-inventory.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation prd"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation prd"
 >>>>>>> laraxot/dev

@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "oauth cluster decision making"
+>>>>>>> laraxot/dev
 =======
 qmd: "oauth cluster decision making"
 >>>>>>> laraxot/dev

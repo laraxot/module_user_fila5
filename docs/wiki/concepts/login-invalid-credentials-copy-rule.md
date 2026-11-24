@@ -16,8 +16,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "login invalid credentials copy rule"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_9pAiVM
+qmd: "login invalid credentials copy rule"
+=======
+>>>>>>> .merge_file_SUUQom
 >>>>>>> laraxot/dev
 ---
 

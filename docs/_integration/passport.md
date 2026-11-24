@@ -12,6 +12,10 @@ related:
   - "./phpstan.md"
   - "./profile.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "passport"
+>>>>>>> laraxot/dev
 =======
 qmd: "passport"
 >>>>>>> laraxot/dev

@@ -3,8 +3,15 @@ module: User
 concept: Architecture
 last_updated: 2026-04-15
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "architecture user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_raTJ6j
+qmd: "architecture user"
+=======
+>>>>>>> .merge_file_Uh28MF
 >>>>>>> laraxot/dev
 ---
 

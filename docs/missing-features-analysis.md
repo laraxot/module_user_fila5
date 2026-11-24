@@ -128,7 +128,11 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Integrazione con Contact model <nome progetto>
+=======
+   - Integrazione con Contact model Quaeris
+>>>>>>> laraxot/dev
 =======
    - Integrazione con Contact model Quaeris
 >>>>>>> laraxot/dev
@@ -180,7 +184,11 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
+=======
+- [Modulo Quaeris](../Quaeris/docs/README.md)
+>>>>>>> laraxot/dev
 =======
 - [Modulo Quaeris](../Quaeris/docs/README.md)
 >>>>>>> laraxot/dev

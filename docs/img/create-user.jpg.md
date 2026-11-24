@@ -6,6 +6,10 @@ related:
   - "./roles-list.jpg.md"
   - "./set-password.jpg.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "create user jpg userjpg"
+>>>>>>> laraxot/dev
 =======
 qmd: "create user jpg userjpg"
 >>>>>>> laraxot/dev

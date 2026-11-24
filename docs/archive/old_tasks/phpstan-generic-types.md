@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione Problemi di Tipi Generici con PHPStan"
 type: note
 qmd: "phpstan generic types risoluzione problemi tipi"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Risoluzione Problemi di Tipi Generici con PHPStan
 

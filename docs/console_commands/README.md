@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Comandi Console - Modulo User"
 type: note
 qmd: "comandi console user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Comandi Console - Modulo User
 
@@ -219,10 +225,13 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../README.md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 

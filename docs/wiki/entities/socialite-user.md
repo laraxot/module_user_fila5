@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: SocialiteUser: Entità OAuth utente
+=======
+title: "SocialiteUser: Entità OAuth utente"
+>>>>>>> laraxot/dev
 =======
 title: "SocialiteUser: Entità OAuth utente"
 >>>>>>> laraxot/dev

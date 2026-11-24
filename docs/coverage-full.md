@@ -9,17 +9,23 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
+<<<<<<< HEAD
 
   - "./00-index-indice-documentazione-modulo-user.md"
+=======
+>>>>>>> laraxot/dev
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
 
   - "./actions-path-convention-convenzione-percorsi.md"
+=======
+>>>>>>> laraxot/dev
 status: draft
 ---
 
@@ -137,8 +143,12 @@ status: draft
   ✓ user resource has correct model                                      0.37s  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
    FAIL  Modules\User\tests\Feature\Filament\UserResourceTest
   ⨯ UserResource Configuration → it has correct model class
@@ -270,8 +280,12 @@ status: draft
   ✓ InteractsWithTenant Trait Behavior → it skips tenant assignment in…  0.37s  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
    FAIL  Modules\User\tests\Feature\TwoFactorServiceTest
   ⨯ enable generates secret and qr code
@@ -396,8 +410,12 @@ status: draft
   ✓ user model can create basic record                                   0.40s  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
    FAIL  Modules\User\tests\Feature\UserModelTest
   ⨯ User Model Creation → it can be created with valid data
@@ -443,6 +461,10 @@ status: draft
   ✓ Authentication Business Logic → User Authentication Logic → it trac… 0.25s  
   ✓ Authentication Business Logic → User Authentication Logic → it mana… 0.24s  
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  ✓ Authentication Business Logic → User Authentication Logic → it vali… 0.23s  
+>>>>>>> laraxot/dev
 =======
   ✓ Authentication Business Logic → User Authentication Logic → it vali… 0.23s  
 >>>>>>> laraxot/dev
@@ -452,7 +474,13 @@ status: draft
   ✓ Authentication Business Logic → Team Management Logic → it handles…  0.25s  
   ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
 <<<<<<< HEAD
+<<<<<<< HEAD
   ✓ Authentication Business Logic → Role-Based Access Control → it hand… 0.25s  
+=======
+  ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
+  ✓ Authentication Business Logic → Role-Based Access Control → it hand… 0.25s  
+  ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
+>>>>>>> laraxot/dev
 =======
   ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
   ✓ Authentication Business Logic → Role-Based Access Control → it hand… 0.25s  
@@ -469,15 +497,21 @@ status: draft
   ✓ Authentication Business Logic → Session Security Logic → it validat… 0.25s  
   ✓ Authentication Business Logic → Session Security Logic → it handles… 0.23s  
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    PASS  Modules\User\tests\Unit\ChangeTypeCommandTest
   ✓ ChangeTypeCommand → it can be instantiated                           0.01s  
 
 =======
+=======
+>>>>>>> laraxot/dev
   ✓ Authentication Business Logic → Session Security Logic → it validat… 0.25s  
 
    PASS  Modules\User\tests\Unit\ChangeTypeCommandTest
   ✓ ChangeTypeCommand → it can be instantiated                           0.01s  
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
   ✓ ChangeTypeCommand → it has correct command name
   ✓ ChangeTypeCommand → it has correct command description
@@ -545,7 +579,13 @@ status: draft
 
    FAIL  Modules\User\tests\Unit\HasTeamsTraitTest
 <<<<<<< HEAD
+<<<<<<< HEAD
   ✓ it correctly checks if user belongs to specific team                 0.26s  
+=======
+  ⨯ it correctly checks if user belongs to teams                         0.25s  
+  ✓ it correctly checks if user belongs to specific team                 0.26s  
+  ✓ it correctly checks team ownership                                   0.25s  
+>>>>>>> laraxot/dev
 =======
   ⨯ it correctly checks if user belongs to teams                         0.25s  
   ✓ it correctly checks if user belongs to specific team                 0.26s  
@@ -765,8 +805,12 @@ status: draft
   ✓ user can handle null values                                          0.39s  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
    FAIL  Modules\User\tests\Unit\PermissionTest
   ⨯ permission can be created
@@ -902,9 +946,14 @@ status: draft
   at Modules/User/tests/Feature/AuthComponentsTest.php:16
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     12▕
 >>>>>>> laraxot/dev
      13▕ describe('Auth Components Tests', function (): void {
      14▕     test('auth components exist and work correctly', function (): void {
@@ -1068,6 +1117,10 @@ Stack trace:
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Stack trace:
+>>>>>>> laraxot/dev
 =======
 Stack trace:
 >>>>>>> laraxot/dev
@@ -1145,6 +1198,10 @@ Stack trace:
 #71 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
 #72 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#73 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+>>>>>>> laraxot/dev
 =======
 #73 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
 >>>>>>> laraxot/dev
@@ -1196,7 +1253,10 @@ Stack trace:
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
 #1 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
@@ -1206,6 +1266,9 @@ Stack trace:
 #5 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
 #6 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
 #7 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 #8 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
 #9 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
@@ -1307,6 +1370,9 @@ Stack trace:
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 #0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
 #1 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/53c107abd3aaca46e6fb3de49c65857b.php(22): Illuminate\Foundation\Vite->__invoke()
@@ -1645,6 +1711,9 @@ Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/
 #104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #107 {main}
@@ -1653,8 +1722,12 @@ Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/
 
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 =======
+>>>>>>> laraxot/dev
+=======
+Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 >>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:31
@@ -1671,9 +1744,14 @@ Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/man
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponentsTest > `Auth Components…    
 <<<<<<< HEAD
+<<<<<<< HEAD
      33▕
 
 =======
+>>>>>>> laraxot/dev
+=======
+     33▕
+
 >>>>>>> laraxot/dev
   Expected response status code [200] but received 500.
 Failed asserting that 500 is identical to 200.
@@ -1812,6 +1890,10 @@ Stack trace:
 
 Next Illuminate\View\ViewException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Stack trace:
+>>>>>>> laraxot/dev
 =======
 Stack trace:
 >>>>>>> laraxot/dev
@@ -1925,6 +2007,9 @@ Stack trace:
 #107 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 #0 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php(21): Illuminate\Container\BoundMethod::addDependencyForCallParameter()
 #1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Livewire\ImplicitlyBoundMethod::getMethodDependencies()
@@ -2160,6 +2245,9 @@ Next Illuminate\View\ViewException: Unable to resolve dependency [Parameter #0 [
 #106 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #107 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #109 {main}
@@ -2168,8 +2256,12 @@ Next Illuminate\View\ViewException: Unable to resolve dependency [Parameter #0 [
 
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 =======
+>>>>>>> laraxot/dev
+=======
+Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 >>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:38
@@ -2186,9 +2278,14 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponen…  InvalidArgumentException   
 <<<<<<< HEAD
+<<<<<<< HEAD
      40▕
 
 =======
+>>>>>>> laraxot/dev
+=======
+     40▕
+
 >>>>>>> laraxot/dev
   View [components.auth-session-status] not found.
 
@@ -2201,10 +2298,16 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
     139▕     }
     140▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     137▕
     139▕     }
     140▕
 =======
+>>>>>>> laraxot/dev
+=======
+    137▕
+    139▕     }
+    140▕
 >>>>>>> laraxot/dev
     141▕     /**
     142▕      * Get an array of possible view files.
@@ -2224,9 +2327,14 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
   ➜  51▕         expect(View::exists('components.auth-header'))->toBeTrue();
      52▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      48▕
      52▕
 =======
+>>>>>>> laraxot/dev
+=======
+     48▕
+     52▕
 >>>>>>> laraxot/dev
      53▕         $html = view('components.auth-header', [
      54▕             'title' => 'Login Test',
@@ -2368,6 +2476,10 @@ Stack trace:
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Stack trace:
+>>>>>>> laraxot/dev
 =======
 Stack trace:
 >>>>>>> laraxot/dev
@@ -2445,6 +2557,10 @@ Stack trace:
 #71 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
 #72 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#73 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+>>>>>>> laraxot/dev
 =======
 #73 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
 >>>>>>> laraxot/dev
@@ -2496,7 +2612,10 @@ Stack trace:
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
 #1 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
@@ -2506,6 +2625,9 @@ Stack trace:
 #5 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
 #6 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
 #7 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 #8 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
 #9 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
@@ -2607,6 +2729,9 @@ Stack trace:
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 #0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
 #1 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/53c107abd3aaca46e6fb3de49c65857b.php(22): Illuminate\Foundation\Vite->__invoke()
@@ -2945,6 +3070,9 @@ Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/
 #104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #107 {main}
@@ -2953,8 +3081,12 @@ Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/
 
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 =======
+>>>>>>> laraxot/dev
+=======
+Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 >>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:69
@@ -3080,6 +3212,9 @@ Stack trace:
 #100 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 #0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
 #1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(102): Illuminate\Database\DatabaseManager->makeConnection()
@@ -3182,6 +3317,9 @@ InvalidArgumentException: Database connection [<nome progetto>] not configured. 
 #99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #100 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #102 {main}
@@ -3204,9 +3342,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponentsTest > `User Profile Com…   
 <<<<<<< HEAD
+<<<<<<< HEAD
      83▕
 
 =======
+>>>>>>> laraxot/dev
+=======
+     83▕
+
 >>>>>>> laraxot/dev
   Expected response status code [200] but received 500.
 Failed asserting that 500 is identical to 200.
@@ -3320,6 +3463,9 @@ Stack trace:
 #102 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 #0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
 #1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(102): Illuminate\Database\DatabaseManager->makeConnection()
@@ -3424,6 +3570,9 @@ InvalidArgumentException: Database connection [<nome progetto>] not configured. 
 #101 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #104 {main}
@@ -3437,10 +3586,16 @@ Database connection [ptvx] not configured.
      89▕         $response = actingAs($user)->get('/it/profile/edit');
      90▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      88▕ 
      90▕ 
      88▕
      90▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      91▕         /* @phpstan-ignore-next-line method.nonObject */
@@ -3463,10 +3618,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -3488,10 +3649,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -3513,10 +3680,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -3538,10 +3711,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -3562,10 +3741,16 @@ Database connection [ptvx] not configured.
     222▕         }
     223▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     217▕
     219▕
     223▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     224▕         return (new ConfigurationUrlParser)
@@ -3588,10 +3773,16 @@ Database connection [ptvx] not configured.
     222▕         }
     223▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     217▕
     219▕
     223▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     224▕         return (new ConfigurationUrlParser)
@@ -3777,10 +3968,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -3800,10 +3997,16 @@ Database connection [ptvx] not configured.
   ➜ 129▕     expect($passwordField->isRequired($createUserPage))->toBeTrue();
     130▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     126▕
     128▕
     130▕
 =======
+>>>>>>> laraxot/dev
+=======
+    126▕
+    128▕
+    130▕
 >>>>>>> laraxot/dev
     131▕     // Test with EditUser page
     132▕     $editUserPage = new EditUser();
@@ -3858,10 +4061,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -3882,10 +4091,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -3906,10 +4121,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -3930,10 +4151,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -3954,10 +4181,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -3978,10 +4211,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4002,10 +4241,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4026,10 +4271,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4050,10 +4301,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4074,10 +4331,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4098,10 +4361,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4122,10 +4391,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4146,10 +4421,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4170,10 +4451,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4194,10 +4481,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4218,10 +4511,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4242,10 +4541,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4266,10 +4571,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4290,10 +4601,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4314,10 +4631,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4338,10 +4661,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4362,10 +4691,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4386,10 +4721,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4410,10 +4751,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4434,10 +4781,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4458,10 +4811,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4482,10 +4841,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4506,10 +4871,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4530,10 +4901,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4554,10 +4931,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4578,10 +4961,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4602,10 +4991,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4626,10 +5021,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4650,10 +5051,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -4676,10 +5083,16 @@ Database connection [ptvx] not configured.
      29▕ });
      30▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      27▕
      29▕ });
      30▕
 =======
+>>>>>>> laraxot/dev
+=======
+     27▕
+     29▕ });
+     30▕
 >>>>>>> laraxot/dev
      31▕ test('it has correct form schema', function (): void {
      32▕     $form = $this->widget->getFormSchema();
@@ -4699,10 +5112,16 @@ Database connection [ptvx] not configured.
     222▕         }
     223▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     217▕
     219▕
     223▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     224▕         return (new ConfigurationUrlParser)
@@ -4715,8 +5134,12 @@ Database connection [ptvx] not configured.
    FAILED  Modules\User\tests\Feature\PasswordDataLabelsTest…   ViewException   
   Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
   Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 =======
+>>>>>>> laraxot/dev
+=======
+  Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 >>>>>>> laraxot/dev
 
   at vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:526
@@ -4728,10 +5151,16 @@ Database connection [ptvx] not configured.
     527▕     }
     528▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     525▕
     527▕     }
     528▕
 =======
+>>>>>>> laraxot/dev
+=======
+    525▕
+    527▕     }
+    528▕
 >>>>>>> laraxot/dev
     529▕     /**
     530▕      * Get the URL for a given route instance.
@@ -4891,10 +5320,16 @@ Database connection [ptvx] not configured.
      97▕     });
      98▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      93▕
      95▕
      97▕     });
      98▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      99▕     it('can check if user is team member', function () {
@@ -4930,10 +5365,16 @@ Database connection [ptvx] not configured.
     132▕     });
     133▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     128▕
     130▕
     133▕
 =======
+>>>>>>> laraxot/dev
+=======
+    128▕
+    130▕
+    133▕
 >>>>>>> laraxot/dev
     134▕     it('user can switch current team', function () {
     135▕         $this->member->teams()->attach($this->team);
@@ -4952,9 +5393,14 @@ Database connection [ptvx] not configured.
   ➜ 311▕             $value = $this->getDictionaryKey($result->{$this->accessor}->{$this->foreignPivotKey});
     312▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     309▕
     312▕
 =======
+>>>>>>> laraxot/dev
+=======
+    309▕
+    312▕
 >>>>>>> laraxot/dev
     313▕             $dictionary[$value][] = $result;
     314▕         }
@@ -4982,10 +5428,16 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TeamManagementTest > `Team Scopes and…    
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     274▕
     277▕ });
     278▕
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
   Failed asserting that 940 is identical to 2.
@@ -5000,10 +5452,16 @@ Database connection [ptvx] not configured.
     307▕ });
     308▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     302▕
     304▕
     307▕ });
     308▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     309▕ describe('Team Features', function () {
@@ -5024,10 +5482,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -5048,10 +5512,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -5070,10 +5540,16 @@ Database connection [ptvx] not configured.
   ➜ 174▕             expect($user->tenant_id)->toBe($this->tenant1->id);
     175▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     173▕ 
     175▕ 
     173▕
     175▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     176▕             // Verifica che l'utente sia effettivamente associato al tenant
@@ -5096,10 +5572,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -5115,10 +5597,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5138,10 +5626,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5161,10 +5655,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5184,10 +5684,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5207,10 +5713,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5230,10 +5742,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5253,10 +5771,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5276,10 +5800,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5299,10 +5829,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5322,10 +5858,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5345,10 +5887,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5368,10 +5916,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5391,10 +5945,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5414,10 +5974,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5437,10 +6003,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5460,10 +6032,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5483,10 +6061,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5506,10 +6090,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5529,10 +6119,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5552,10 +6148,16 @@ Database connection [ptvx] not configured.
      11▕ uses(TestCase::class);
      12▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      10▕
      12▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     10▕
+     12▕
 >>>>>>> laraxot/dev
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
@@ -5646,9 +6248,14 @@ Database connection [ptvx] not configured.
   ➜  67▕         $user = createUser(['is_otp' => true]);
      68▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      65▕
      68▕
 =======
+>>>>>>> laraxot/dev
+=======
+     65▕
+     68▕
 >>>>>>> laraxot/dev
      69▕         expect($user->is_otp)->toBeTrue();
      70▕     });
@@ -5669,10 +6276,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5693,10 +6306,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5717,10 +6336,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5741,10 +6366,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5765,10 +6396,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5789,10 +6426,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5813,10 +6456,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5837,10 +6486,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5861,10 +6516,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5885,10 +6546,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5909,10 +6576,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5933,10 +6606,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5957,10 +6636,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -5981,10 +6666,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6005,10 +6696,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6029,10 +6726,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6053,10 +6756,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6077,10 +6786,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6119,10 +6834,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6143,10 +6864,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6167,10 +6894,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6191,10 +6924,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6215,10 +6954,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6239,10 +6984,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6263,10 +7014,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6287,10 +7044,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6311,10 +7074,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6335,10 +7104,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6359,10 +7134,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6383,10 +7164,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6407,10 +7194,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6431,10 +7224,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6455,10 +7254,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6479,10 +7284,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6503,10 +7314,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6527,10 +7344,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6551,10 +7374,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6575,10 +7404,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6599,10 +7434,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6623,10 +7464,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6647,10 +7494,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6707,10 +7560,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6731,10 +7590,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6755,10 +7620,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6779,10 +7650,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6803,10 +7680,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6827,10 +7710,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -6851,10 +7740,16 @@ Database connection [ptvx] not configured.
      62▕ });
      63▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      58▕
      60▕
      62▕ });
      63▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      64▕ test('user model can filter records', function () {
@@ -6876,10 +7771,16 @@ Database connection [ptvx] not configured.
      73▕ });
      74▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      68▕
      70▕
      73▕ });
      74▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      75▕ test('user model can update records', function () {
@@ -6935,10 +7836,16 @@ Database connection [ptvx] not configured.
     1430▕     }
     1431▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     1428▕
     1430▕     }
     1431▕
 =======
+>>>>>>> laraxot/dev
+=======
+    1428▕
+    1430▕     }
+    1431▕
 >>>>>>> laraxot/dev
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
@@ -7349,10 +8256,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7374,10 +8287,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7399,10 +8318,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7424,10 +8349,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7449,10 +8380,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7474,10 +8411,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7492,9 +8435,14 @@ Database connection [ptvx] not configured.
   at Modules/User/tests/Unit/HasTeamsTraitPestTest.php:27
      23▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      23▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     23▕
 >>>>>>> laraxot/dev
      24▕ test('it correctly checks if user belongs to teams', function () {
      25▕     // Test: User without teams
@@ -7519,10 +8467,16 @@ Database connection [ptvx] not configured.
   ➜  82▕     expect($result)->toBeTrue()->and($this->user->current_team_id)->toBe((string) $this->team->id);
      83▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      81▕ 
      83▕ 
      81▕
      83▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      84▕     // Test: Switch to null
@@ -7543,9 +8497,14 @@ Database connection [ptvx] not configured.
   ➜ 112▕         ->toHaveCount(2);
     113▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     109▕
     113▕
 =======
+>>>>>>> laraxot/dev
+=======
+    109▕
+    113▕
 >>>>>>> laraxot/dev
     114▕     expect($allTeams->pluck('id')->toArray())
     115▕         ->toContain($this->personalTeam->id)
@@ -7639,10 +8598,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7657,9 +8622,14 @@ Database connection [ptvx] not configured.
   at Modules/User/tests/Unit/HasTeamsTraitTest.php:39
      35▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      35▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     35▕
 >>>>>>> laraxot/dev
      36▕ test('it correctly checks if user belongs to teams', function (): void {
      37▕     // Test: User senza team
@@ -7679,10 +8649,16 @@ Database connection [ptvx] not configured.
   at Modules/User/app/Models/Traits/HasTeams.php:420
     416▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
 
     416▕
 =======
+>>>>>>> laraxot/dev
+=======
+  Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
+
+    416▕
 >>>>>>> laraxot/dev
     417▕     /**
     418▕      * Switch the user's context to the given team.
@@ -7705,10 +8681,16 @@ Database connection [ptvx] not configured.
     116▕     $allTeams = $this->user->allTeams();
     117▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     115▕
     117▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    115▕
+    117▕
 >>>>>>> laraxot/dev
     118▕     expect($allTeams)->toBeInstanceOf(Collection::class);
   ➜ 119▕     expect($allTeams)->toHaveCount(2); // personal team + member team
@@ -7726,9 +8708,14 @@ Database connection [ptvx] not configured.
   at Modules/User/tests/Unit/HasTeamsTraitTest.php:172
     168▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     168▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    168▕
 >>>>>>> laraxot/dev
     169▕     // Test: No role (not member)
     170▕     $otherTeam = Team::factory()->create();
@@ -7755,10 +8742,16 @@ Database connection [ptvx] not configured.
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      50▕
      52▕
      54▕
      56▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      57▕             return $result;
@@ -7800,9 +8793,14 @@ Database connection [ptvx] not configured.
   ➜ 213▕     expect($this->user->isOwnerOrMember($this->team))->toBeTrue();
     214▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
     211▕
     214▕
 =======
+>>>>>>> laraxot/dev
+=======
+    211▕
+    214▕
 >>>>>>> laraxot/dev
     215▕     $otherTeam = Team::factory()->create();
     216▕     expect($this->user->isOwnerOrMember($otherTeam))->toBeFalse();
@@ -7835,10 +8833,16 @@ Database connection [ptvx] not configured.
      39▕     $traits = class_uses($this->baseUser);
      40▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      37▕
      40▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     37▕
+     40▕
 >>>>>>> laraxot/dev
   ➜  41▕     expect($traits)->toContain(User::class);
      42▕     expect($traits)->toContain(Notifiable::class);
@@ -7915,10 +8919,16 @@ Database connection [ptvx] not configured.
     160▕ });
     161▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     155▕
     157▕
     160▕ });
     161▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     162▕ test('can find mobile devices', function (): void {
@@ -7968,9 +8978,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -7980,10 +8995,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -7998,9 +9019,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8010,10 +9036,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8034,11 +9066,17 @@ Database connection [ptvx] not configured.
      42▕ });
      43▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      37▕
      40▕
      42▕ });
      43▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      44▕ test('permission has key type attribute', function (): void {
@@ -8059,11 +9097,17 @@ Database connection [ptvx] not configured.
      48▕ });
      49▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      43▕
      46▕
      48▕ });
      49▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      50▕ test('permission has fillable attributes', function (): void {
@@ -8081,10 +9125,16 @@ Database connection [ptvx] not configured.
      53▕     $fillable = $permission->getFillable();
      54▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      52▕ 
      54▕ 
      52▕
      54▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
   ➜  55▕     expect($fillable)->toContain('id');
@@ -8104,10 +9154,16 @@ Database connection [ptvx] not configured.
      63▕     $casts = $permission->getCasts();
      64▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      62▕
      64▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     62▕
+     64▕
 >>>>>>> laraxot/dev
      65▕     expect($casts)->toHaveKey('id');
   ➜  66▕     expect($casts)->toHaveKey('name');
@@ -8125,9 +9181,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8137,10 +9198,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8155,9 +9222,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8167,10 +9239,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8185,9 +9263,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8197,10 +9280,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8215,9 +9304,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8227,10 +9321,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8245,9 +9345,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8257,10 +9362,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8275,9 +9386,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8287,10 +9403,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8305,9 +9427,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8317,10 +9444,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8335,9 +9468,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8347,10 +9485,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8365,9 +9509,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8377,10 +9526,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8395,9 +9550,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8407,10 +9567,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8425,9 +9591,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8437,10 +9608,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8455,9 +9632,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8467,10 +9649,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8485,9 +9673,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8497,10 +9690,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8587,9 +9786,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8599,10 +9803,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8624,10 +9834,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -8647,11 +9863,17 @@ Database connection [ptvx] not configured.
      45▕ });
      46▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      40▕
      43▕
      45▕ });
      46▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      47▕ test('role has key type attribute', function (): void {
@@ -8672,11 +9894,17 @@ Database connection [ptvx] not configured.
      51▕ });
      52▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      46▕
      49▕
      51▕ });
      52▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      53▕ test('role constants are defined', function (): void {
@@ -8691,9 +9919,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8703,10 +9936,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8721,9 +9960,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8733,10 +9977,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8751,9 +10001,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8763,10 +10018,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8788,10 +10049,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -8805,9 +10072,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8817,10 +10089,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8835,9 +10113,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8847,10 +10130,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8872,10 +10161,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -8889,9 +10184,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8901,10 +10201,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8919,9 +10225,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8931,10 +10242,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8949,9 +10266,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8961,10 +10283,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -8979,9 +10307,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -8991,10 +10324,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9009,9 +10348,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9021,10 +10365,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9039,9 +10389,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9051,10 +10406,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9069,9 +10430,14 @@ Database connection [ptvx] not configured.
   at Modules/User/tests/Unit/Models/TeamTest.php:41
      37▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
      37▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+     37▕
 >>>>>>> laraxot/dev
      38▕     expect($team->id)->not->toBeNull();
      39▕     expect($team->user_id)->toBe($user->id);
@@ -9097,11 +10463,17 @@ Database connection [ptvx] not configured.
     115▕ });
     116▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     110▕
     112▕
     115▕ });
     116▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     117▕ test('can find teams by user id', function (): void {
@@ -9156,10 +10528,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -9191,6 +10569,10 @@ Database connection [ptvx] not configured.
   +'0cac6ff4-e546-3f0e-85a8-77426ea68dec'
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -9203,11 +10585,17 @@ Database connection [ptvx] not configured.
      87▕ });
      88▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      82▕
      84▕
      87▕ });
      88▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      89▕ it('can find tenant by slug', function () {
@@ -9222,6 +10610,10 @@ Database connection [ptvx] not configured.
   +'a5ddcf4e-73ca-37a0-87c3-2bee656d1a2d'
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -9234,11 +10626,17 @@ Database connection [ptvx] not configured.
      96▕ });
      97▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
      91▕
      93▕
      96▕ });
      97▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      98▕ it('can find tenant by domain', function () {
@@ -9253,6 +10651,10 @@ Database connection [ptvx] not configured.
   +'146f7c32-24f5-3115-84bb-4461b80bdc1d'
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -9265,11 +10667,17 @@ Database connection [ptvx] not configured.
     105▕ });
     106▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     100▕
     102▕
     105▕ });
     106▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     107▕ it('can find tenant by database', function () {
@@ -9284,6 +10692,10 @@ Database connection [ptvx] not configured.
   +'385f0a0b-4cec-3fff-bc7e-b46e2600aaca'
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -9296,11 +10708,17 @@ Database connection [ptvx] not configured.
     114▕ });
     115▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     109▕
     111▕
     114▕ });
     115▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     116▕ it('can find active tenants', function () {
@@ -9322,10 +10740,16 @@ Database connection [ptvx] not configured.
     125▕ });
     126▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     120▕
     122▕
     125▕ });
     126▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     127▕ it('can find tenants by name pattern', function () {
@@ -9346,10 +10770,16 @@ Database connection [ptvx] not configured.
     136▕ });
     137▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     131▕
     133▕
     136▕ });
     137▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     138▕ it('can find tenants by domain pattern', function () {
@@ -9370,10 +10800,16 @@ Database connection [ptvx] not configured.
     147▕ });
     148▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     142▕
     144▕
     147▕ });
     148▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     149▕ it('can update tenant', function () {
@@ -9426,10 +10862,16 @@ Database connection [ptvx] not configured.
     189▕     $tenants = Tenant::where('is_active', true)->where('domain', 'like', '%.com')->get();
     190▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     188▕ 
     190▕ 
     188▕
     190▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
   ➜ 191▕     expect($tenants)->toHaveCount(1)
@@ -9454,10 +10896,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -9478,10 +10926,16 @@ Database connection [ptvx] not configured.
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
      46▕
      48▕
      50▕
 =======
+>>>>>>> laraxot/dev
+=======
+     46▕
+     48▕
+     50▕
 >>>>>>> laraxot/dev
      51▕             $this->recordsHaveBeenModified();
 
@@ -9704,9 +11158,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9716,10 +11175,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9734,9 +11199,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9746,10 +11216,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9764,9 +11240,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9776,10 +11257,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9794,9 +11281,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9806,10 +11298,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9824,9 +11322,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9836,10 +11339,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9854,9 +11363,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9866,10 +11380,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9884,9 +11404,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9896,10 +11421,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9914,9 +11445,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9926,10 +11462,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9944,9 +11486,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9956,10 +11503,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -9974,9 +11527,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -9986,10 +11544,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10004,9 +11568,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10016,10 +11585,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10034,9 +11609,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10046,10 +11626,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10064,9 +11650,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10076,10 +11667,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10094,9 +11691,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10106,10 +11708,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10124,9 +11732,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10136,10 +11749,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10154,9 +11773,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10166,10 +11790,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10184,9 +11814,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10196,10 +11831,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10214,9 +11855,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10226,10 +11872,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10244,9 +11896,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10256,10 +11913,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10274,9 +11937,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10286,10 +11954,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10304,9 +11978,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10316,10 +11995,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10334,9 +12019,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10346,10 +12036,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10364,9 +12060,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10376,10 +12077,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10394,9 +12101,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10406,10 +12118,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10424,9 +12142,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10436,10 +12159,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10454,9 +12183,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10466,10 +12200,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10484,9 +12224,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10496,10 +12241,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10514,9 +12265,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10526,10 +12282,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10544,9 +12306,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10556,10 +12323,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10574,9 +12347,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10586,10 +12364,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10604,9 +12388,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10616,10 +12405,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10634,9 +12429,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10646,10 +12446,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10664,9 +12470,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10676,10 +12487,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10694,9 +12511,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10706,10 +12528,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10724,9 +12552,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10736,10 +12569,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10754,9 +12593,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10766,10 +12610,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10784,9 +12634,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10796,10 +12651,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10814,9 +12675,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10826,10 +12692,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();
@@ -10844,9 +12716,14 @@ Database connection [ptvx] not configured.
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     601▕
 =======
+>>>>>>> laraxot/dev
+=======
+
+    601▕
 >>>>>>> laraxot/dev
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
@@ -10856,10 +12733,16 @@ Database connection [ptvx] not configured.
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     606▕ 
     608▕ 
     606▕
     608▕
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     609▕             $statement->execute();

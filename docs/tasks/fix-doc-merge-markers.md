@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_84rtrK
+>>>>>>> laraxot/dev
 ---
 title: "Task: Fix Documentation Merge Markers (User Module)"
 type: note
 qmd: "fix merge markers task user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_oNHjv8
 >>>>>>> laraxot/dev
 # Task: Fix Documentation Merge Markers (User Module)
 

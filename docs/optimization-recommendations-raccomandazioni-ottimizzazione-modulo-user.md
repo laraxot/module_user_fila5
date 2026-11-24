@@ -17,8 +17,12 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 status: draft
 =======
+>>>>>>> laraxot/dev
+=======
+status: draft
 >>>>>>> laraxot/dev
 ---
 
@@ -35,11 +39,16 @@ status: draft
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 2. Riusabilità Compromessa
 - **141+ occorrenze hardcoded** di "<nome progetto>"
 =======
 #### 2. Riusabilità Compromessa  
 - **141+ occorrenze hardcoded** di "Quaeris"
+>>>>>>> laraxot/dev
+=======
+#### 2. Riusabilità Compromessa
+- **141+ occorrenze hardcoded** di "<nome progetto>"
 >>>>>>> laraxot/dev
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
@@ -155,9 +164,13 @@ User/docs/
 ```php
 // ❌ PROBLEMI ATTUALI
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
 =======
 use Modules\Quaeris\Models\User;
+>>>>>>> laraxot/dev
+=======
+use Modules\<nome progetto>\Models\User;
 >>>>>>> laraxot/dev
 $user = User::factory()->create();
 
@@ -178,9 +191,13 @@ protected function createTestUser(): mixed
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/<nome progetto>/`
 =======
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
+>>>>>>> laraxot/dev
+=======
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/<nome progetto>/`
 >>>>>>> laraxot/dev
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
@@ -250,9 +267,13 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ### Riusabilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] **0 occorrenze** hardcoded "<nome progetto>"
 =======
 - [ ] **0 occorrenze** hardcoded "Quaeris"
+>>>>>>> laraxot/dev
+=======
+- [ ] **0 occorrenze** hardcoded "<nome progetto>"
 >>>>>>> laraxot/dev
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
@@ -289,9 +310,13 @@ find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
 =======
 grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
+>>>>>>> laraxot/dev
+=======
+grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
 >>>>>>> laraxot/dev
 ```
 

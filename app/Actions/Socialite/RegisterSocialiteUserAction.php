@@ -20,6 +20,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/register-socialite-user-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/register-socialite-user-action.md
  */
 class RegisterSocialiteUserAction

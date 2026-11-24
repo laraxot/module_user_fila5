@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_WMV6lO
+>>>>>>> laraxot/dev
 ---
 title: "UserFactory Advanced Integration - Modulo User & SaluteOra"
 type: note
 qmd: "user factory advanced integration userfactory saluteora"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_WIw8pO
 >>>>>>> laraxot/dev
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 

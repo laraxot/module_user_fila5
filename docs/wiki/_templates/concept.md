@@ -16,7 +16,16 @@ related:
   - "./source.md"
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_pmWsPC
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "concept untitled"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_0hsJg0
 >>>>>>> laraxot/dev
 ---
 

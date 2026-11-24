@@ -15,6 +15,10 @@ use function Safe\class_uses;
  * Raggruppa: getFilamentAuthGuard, getAuthProviderFQCN, isAuthProviderConfigured
  *
  * @see docs/contracts/resolve-shield-authentication-configuration-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/resolve-shield-authentication-configuration-action.md
  */
 class ResolveShieldAuthenticationConfigurationAction

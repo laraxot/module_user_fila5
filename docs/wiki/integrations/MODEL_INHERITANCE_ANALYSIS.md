@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "model inheritance analysis analisi ereditarietà modelli"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ZiDmSx
+qmd: "model inheritance analysis analisi ereditarietà modelli"
+=======
+>>>>>>> .merge_file_tG4mMM
 >>>>>>> laraxot/dev
 ---
 

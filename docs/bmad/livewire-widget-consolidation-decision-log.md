@@ -5,6 +5,10 @@ related:
   - ./decision-log.md
   - ./livewire-widget-architecture.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation decision log"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation decision log"
 >>>>>>> laraxot/dev

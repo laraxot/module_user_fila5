@@ -571,7 +571,11 @@ class UsersChartWidgetTest extends TestCase
 - [Filament Charts Complete Guide](../../xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../xot/docs/chart-export-guide.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module README](./README.md)
+=======
+- [User Module README](./readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module README](./readme.md)
 >>>>>>> laraxot/dev

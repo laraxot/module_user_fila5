@@ -4,12 +4,21 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_q1iv7b
+>>>>>>> laraxot/dev
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'helper_text' => 'Nome visualizzato del profilo',
             'description' => 'Nome',
         ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_Ez5xjI
+>>>>>>> laraxot/dev
         'user' => [
             'name' => [
                 'label' => 'Utente',
@@ -18,6 +27,18 @@ return [
                 'description' => 'Nome utente',
             ],
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_q1iv7b
+=======
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
+            'helper_text' => 'Nome visualizzato del profilo',
+            'description' => 'Nome',
+        ],
+>>>>>>> .merge_file_Ez5xjI
+>>>>>>> laraxot/dev
         'email' => [
             'label' => 'E-mail',
             'placeholder' => 'Inserisci l\'e-mail',

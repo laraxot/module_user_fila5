@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "widget consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_KiDG0l
+qmd: "widget consolidated"
+=======
+>>>>>>> .merge_file_zACJJG
 >>>>>>> laraxot/dev
 ---
 
@@ -2436,9 +2443,25 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Widget Conventions](../../best-practices/filament-widgets.md)
 =======
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_KiDG0l
+- [Filament Widget Conventions](../../best-practices/filament-widgets.md)
+=======
+<<<<<<< HEAD
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+<<<<<<< HEAD
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](../../best-practices/filament-widgets.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zACJJG
 >>>>>>> laraxot/dev
 ## Memory Integration
 This document serves as a reference for:
@@ -3307,7 +3330,19 @@ Documentazione per widgets_structure nel modulo User.
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Modulo Principale](../README.md)
+=======
+<<<<<<< HEAD
+- [Modulo Principale](../README.md)
+=======
+<<<<<<< HEAD
+- [Modulo Principale](../README.md)
+=======
+- [Modulo Principale](../readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 
 ---

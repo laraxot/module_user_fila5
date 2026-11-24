@@ -57,7 +57,11 @@ class Change extends Component
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
+<<<<<<< HEAD
         if (null !== $team) {
+=======
+        if ($team !== null) {
+>>>>>>> laraxot/dev
             // TeamSwitched::dispatch($team->fresh(), $this->user);
             TeamSwitched::dispatch($team, $this->user);
         }
@@ -80,7 +84,11 @@ class Change extends Component
         $view_params = [
             'view' => $view,
         ];
+<<<<<<< HEAD
         if ([] === $this->teams) {
+=======
+        if ($this->teams === []) {
+>>>>>>> laraxot/dev
             /** @var view-string $view */
             $view = 'ui::livewire.empty';
         }

@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "resources array keys philosophy"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ARd2bd
+qmd: "resources array keys philosophy"
+=======
+>>>>>>> .merge_file_5SaO1H
 >>>>>>> laraxot/dev
 ---
 

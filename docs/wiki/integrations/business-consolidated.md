@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "business consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_OjYowa
+qmd: "business consolidated"
+=======
+>>>>>>> .merge_file_j55Zer
 >>>>>>> laraxot/dev
 ---
 
@@ -6549,9 +6556,19 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## Overview
 <<<<<<< HEAD
+<<<<<<< HEAD
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
 =======
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+=======
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+=======
+<<<<<<< HEAD
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+=======
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Business Purpose

@@ -11,6 +11,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/get-login-redirect-route-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/get-login-redirect-route-action.md
  */
 class GetLoginRedirectRouteAction

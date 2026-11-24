@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_r3Hi8t
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Product Roadmap"
 type: note
 qmd: "user product roadmap"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_QmztNy
 >>>>>>> laraxot/dev
 # User Module - Product Roadmap
 

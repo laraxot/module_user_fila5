@@ -4,6 +4,10 @@ type: "quality-report"
 date: 2026-07-08
 version: 1.2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "quality status user"
+>>>>>>> laraxot/dev
 =======
 qmd: "quality status user"
 >>>>>>> laraxot/dev

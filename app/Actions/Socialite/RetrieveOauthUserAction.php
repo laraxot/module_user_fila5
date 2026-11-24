@@ -17,6 +17,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/retrieve-oauth-user-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/retrieve-oauth-user-action.md
  */
 class RetrieveOauthUserAction

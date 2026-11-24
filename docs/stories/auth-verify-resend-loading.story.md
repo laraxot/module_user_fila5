@@ -9,8 +9,15 @@ discussions: []
 related:
   - "./auth-verify-confirm-design-comuni-shell.story.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "auth verify resend loading story page"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_aydQJm
+qmd: "auth verify resend loading story page"
+=======
+>>>>>>> .merge_file_nWIAzW
 >>>>>>> laraxot/dev
 ---
 

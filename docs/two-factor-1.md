@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "two factor 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_BjiZNT
+qmd: "two factor 1"
+=======
+>>>>>>> .merge_file_Fb0BkX
 >>>>>>> laraxot/dev
 ---
 

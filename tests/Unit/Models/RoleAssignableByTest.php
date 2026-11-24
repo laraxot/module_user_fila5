@@ -89,4 +89,8 @@ test('per un super-admin la query resta intatta', function (): void {
     $query->shouldNotReceive('where');
 
     expect(Role::restrictAssignableBy($query, roleAssignableActor('super-admin')))->toBe($query);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> laraxot/dev

@@ -8,8 +8,15 @@ related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "rules"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_kfa42z
+qmd: "rules"
+=======
+>>>>>>> .merge_file_UYnPFj
 >>>>>>> laraxot/dev
 ---
 
@@ -55,6 +62,10 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 3. Aggiorna questo indice se la Rules e' ricorrente
 4. Committa: `docs: add rules <nome>`
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev

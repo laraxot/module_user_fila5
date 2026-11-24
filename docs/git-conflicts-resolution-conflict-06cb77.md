@@ -302,7 +302,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Implementare test automatizzati
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 

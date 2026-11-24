@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta di logout.blade.php"
 type: note
 qmd: "auth logout blade implementazione corretta logoutbladephp"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Implementazione Corretta di logout.blade.php
 

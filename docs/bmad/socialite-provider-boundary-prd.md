@@ -10,6 +10,10 @@ related:
   - ./socialite-provider-boundary-architecture.md
   - ./stories/socialite-provider-boundary.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "socialite provider boundary prd"
+>>>>>>> laraxot/dev
 =======
 qmd: "socialite provider boundary prd"
 >>>>>>> laraxot/dev

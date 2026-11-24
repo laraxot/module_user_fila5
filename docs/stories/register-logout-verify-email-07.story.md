@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Registrazione, logout e verifica email (FO)"
 type: story
 qmd: "register logout verify email 07 story"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Registrazione, logout e verifica email (FO)
 

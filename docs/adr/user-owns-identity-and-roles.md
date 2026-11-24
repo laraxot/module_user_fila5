@@ -1,13 +1,20 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 title: "ADR — User possiede identità, ruoli e team"
 type: decision
 status: accepted
 module: User
 updated: 2026-11-24
+<<<<<<< HEAD
 =======
 status: accepted
 module: User
+qmd: "user owns identity and roles possiede"
+>>>>>>> laraxot/dev
+=======
 qmd: "user owns identity and roles possiede"
 >>>>>>> laraxot/dev
 ---
@@ -39,6 +46,9 @@ Le autorizzazioni restano centralizzate e verificabili; ogni dominio deve dichia
 
 Verificare UserContract, BaseUserPolicy, Role, team membership e test di autenticazione.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ## Verifica
 
@@ -49,5 +59,8 @@ Verificare UserContract, BaseUserPolicy, Role, team membership e test di autenti
 - Test: `Modules/User/tests/Feature/UserAuthenticationTest.php` e `Modules/User/tests/Feature/TeamManagementTest.php`.
 - Non esiste un test che impedisca a un altro modulo di definire ruoli propri o di equiparare un team al super-admin:
   resta revisione del codice.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

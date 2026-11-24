@@ -6,6 +6,10 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "label hardcoded prevention prevenzione user"
+>>>>>>> laraxot/dev
 =======
 qmd: "label hardcoded prevention prevenzione user"
 >>>>>>> laraxot/dev

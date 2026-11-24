@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "login widget livewire binding fix"
+>>>>>>> laraxot/dev
 =======
 qmd: "login widget livewire binding fix"
 >>>>>>> laraxot/dev

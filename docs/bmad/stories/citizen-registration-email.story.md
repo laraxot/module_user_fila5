@@ -9,6 +9,10 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "citizen registration email story registrazione cittadino"
+>>>>>>> laraxot/dev
 =======
 qmd: "citizen registration email story registrazione cittadino"
 >>>>>>> laraxot/dev

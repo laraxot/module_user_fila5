@@ -11,6 +11,10 @@ related:
   - ../../../config/permission.php
   - ./config/local/workorder/permission.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "bugfix permission table names singular spatielaravelpermission"
+>>>>>>> laraxot/dev
 =======
 qmd: "bugfix permission table names singular spatielaravelpermission"
 >>>>>>> laraxot/dev

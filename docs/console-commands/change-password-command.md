@@ -12,7 +12,11 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./README.md"
+=======
+  - "./readme.md"
+>>>>>>> laraxot/dev
 =======
   - "./readme.md"
 >>>>>>> laraxot/dev
@@ -362,7 +366,11 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Comandi Console](README.md)
+=======
+- [README Comandi Console](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README Comandi Console](readme.md)
 >>>>>>> laraxot/dev

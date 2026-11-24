@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "parental inheritance"
+>>>>>>> laraxot/dev
 =======
 qmd: "parental inheritance"
 >>>>>>> laraxot/dev

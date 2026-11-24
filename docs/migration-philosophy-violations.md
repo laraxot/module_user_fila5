@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "migration philosophy violations"
+>>>>>>> laraxot/dev
 =======
 qmd: "migration philosophy violations"
 >>>>>>> laraxot/dev

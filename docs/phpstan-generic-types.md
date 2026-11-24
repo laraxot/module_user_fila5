@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan generic types"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_93dC5e
+qmd: "phpstan generic types"
+=======
+>>>>>>> .merge_file_UKZ6qc
 >>>>>>> laraxot/dev
 ---
 

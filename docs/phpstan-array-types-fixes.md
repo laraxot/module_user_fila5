@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Xot - PHPStan Missing Array Types](../Xot/docs/phpstan-missing-array-types-fixes.md)
 - [Xot - PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md)
 - [docs_project - PHPStan Intouchable Rule](../../../docs_project/phpstan-intouchable-rule.md)
@@ -9,6 +12,9 @@
 **Errori Identificati**: ~45 errori nel modulo User  
 **phpstan.neon**: ✅ INTOCCATO  
 **Stato**: 📋 Analisi Completata - Pronto per Correzioni
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -25,8 +31,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan array types fixes"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_S8YlRC
+qmd: "phpstan array types fixes"
+=======
+>>>>>>> .merge_file_3iCmv1
 >>>>>>> laraxot/dev
 ---
 

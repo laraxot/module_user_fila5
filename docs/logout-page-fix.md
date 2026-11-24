@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzione Logout Page nel Theme TwentyOne"
 type: note
 qmd: "logout page fix correzione theme twentyone"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Correzione Logout Page nel Theme TwentyOne
 

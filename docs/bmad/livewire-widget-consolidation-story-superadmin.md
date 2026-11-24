@@ -5,6 +5,10 @@ related:
   - ../stories/9.1.super-admin-widget.story.md
   - ./tech-spec.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation story superadmin"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation story superadmin"
 >>>>>>> laraxot/dev

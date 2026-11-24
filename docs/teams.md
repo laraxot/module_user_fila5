@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "teams relazione utentiteam tabella pivot doctorteam"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_WT18d1
+qmd: "teams relazione utentiteam tabella pivot doctorteam"
+=======
+>>>>>>> .merge_file_Ly4G0k
 >>>>>>> laraxot/dev
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`

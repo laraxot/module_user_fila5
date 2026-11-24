@@ -61,6 +61,9 @@ Il primo caso viola `property.defaultValue`, il secondo puo' violare `view-strin
 - `Modules/Xot/app/Filament/Widgets/XotBaseWidget.php`
 - `Modules/User/docs/wiki/concepts/xotbasepage-inheritance-rules.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -71,5 +74,8 @@ Il primo caso viola `property.defaultValue`, il secondo puo' violare `view-strin
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

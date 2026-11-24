@@ -21,8 +21,12 @@ related:
 # Database Analysis Commands and Tools for app_survey
 # Database Analysis Commands and Tools for quaeris_survey
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for <nome progetto>_survey
 =======
+>>>>>>> laraxot/dev
+=======
+# Database Analysis Commands and Tools for <nome progetto>_survey
 >>>>>>> laraxot/dev
 
 ## Essential Database Queries
@@ -241,7 +245,10 @@ LEFT JOIN (
         COUNT(*) as responses
     FROM information_schema.tables 
 <<<<<<< HEAD
+<<<<<<< HEAD
     SELECT
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     WHERE table_name LIKE 'lime_survey_%'
@@ -253,7 +260,10 @@ LEFT JOIN (
         COUNT(*) as total_tokens
     FROM information_schema.tables 
 <<<<<<< HEAD
+<<<<<<< HEAD
     SELECT
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     WHERE table_name LIKE 'lime_tokens_%'

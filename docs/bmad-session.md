@@ -18,9 +18,13 @@ superseded_by: bmad-session.md
 
 ## Diagnose
 <<<<<<< HEAD
+<<<<<<< HEAD
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
 =======
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+>>>>>>> laraxot/dev
+=======
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
 >>>>>>> laraxot/dev
 - `XotData::getProfileClass()`: `main_module=''` → `InvalidArgumentException`
 - `Profile.php`: `@property-read User|null $user` (non esistente)
@@ -36,9 +40,13 @@ superseded_by: bmad-session.md
 - `BaseProfile.php`: `$incrementing=false`, `$keyType='string'`, UUID `id` in `booted()`
 - Test batch: `use Modules\User\Models\User;` in 8 file `tests/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<nome progetto>` → `User` sostituito nel codice
 =======
 - `Quaeris` → `User` sostituito nel codice
+>>>>>>> laraxot/dev
+=======
+- `<nome progetto>` → `User` sostituito nel codice
 >>>>>>> laraxot/dev
 
 ## Verify

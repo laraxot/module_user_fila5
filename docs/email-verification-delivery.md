@@ -5,6 +5,10 @@ module: User
 status: active
 tags: [email, verification, notify, production]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "email verification delivery"
+>>>>>>> laraxot/dev
 =======
 qmd: "email verification delivery"
 >>>>>>> laraxot/dev

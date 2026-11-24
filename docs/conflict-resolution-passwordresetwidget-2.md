@@ -116,7 +116,11 @@ Verificare che:
 
 *Ultimo aggiornamento: giugno 2025*
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module Documentation](readme.md)
 >>>>>>> laraxot/dev

@@ -13,8 +13,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "socialite architecture googleid column rule"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_KJRaCh
+qmd: "socialite architecture googleid column rule"
+=======
+>>>>>>> .merge_file_n3saxx
 >>>>>>> laraxot/dev
 ---
 

@@ -249,6 +249,13 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 **✨ Test Coverage**: 85% ✅
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_JjzI1h
+=======
+**✨ Test Coverage**: 85% ✅
+>>>>>>> .merge_file_29XQJC
 >>>>>>> laraxot/dev

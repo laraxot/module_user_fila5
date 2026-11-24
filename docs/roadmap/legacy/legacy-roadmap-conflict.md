@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: note
 qmd: "legacy roadmap conflict user 2025"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # 👥 USER MODULE - ROADMAP 2025
 

@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "type safety improvements"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_C9GiPf
+qmd: "type safety improvements"
+=======
+>>>>>>> .merge_file_Rkp8aw
 >>>>>>> laraxot/dev
 ---
 

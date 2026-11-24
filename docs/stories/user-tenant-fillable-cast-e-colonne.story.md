@@ -11,6 +11,10 @@ depends_on: []
 related: ["../../../Tenant/docs/stories/tenant-modello-cast-e-colonne-inesistenti.story.md (scritta da un'altra sessione, assente al 2026-10-20 13:50 UTC)", "14.2.team-vs-tenant-boundary-doc.story.md", "xotbaseresourcetable-model-audit-user-module-batch.story.md", "11.5-guard-privileged-fields-createuserdata.story.md", "user-test-senza-refresh-database.story.md"]
 tags: [bmad, tenant, model, cast, fillable, migration]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user tenant fillable cast colonne story"
+>>>>>>> laraxot/dev
 =======
 qmd: "user tenant fillable cast colonne story"
 >>>>>>> laraxot/dev

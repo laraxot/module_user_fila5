@@ -7,6 +7,10 @@ related:
   - ../../../../Ptv/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
   - ../../../../IndennitaResponsabilita/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "xot base resource navigation icon translation"
+>>>>>>> laraxot/dev
 =======
 qmd: "xot base resource navigation icon translation"
 >>>>>>> laraxot/dev

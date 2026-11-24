@@ -3,9 +3,13 @@ title: "PHPStan L10 User Module — Phase 2 (Resource constraints)"
 status: in_progress
 epic: code-quality
 <<<<<<< HEAD
+<<<<<<< HEAD
 parent_story: "phpstan-l10-user-lang-fix.story.md"
 =======
 parent_story: "phpstan-l10-user-lang-fix-20261006.story.md"
+>>>>>>> laraxot/dev
+=======
+parent_story: "phpstan-l10-user-lang-fix.story.md"
 >>>>>>> laraxot/dev
 created: 2026-10-06T14:30Z
 acceptance_criteria:
@@ -15,6 +19,10 @@ acceptance_criteria:
   - Update BMAD story with findings
   - One commit per fix with clear message
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan l10 user phase2 story phase"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan l10 user phase2 story phase"
 >>>>>>> laraxot/dev
@@ -62,9 +70,13 @@ qmd: "phpstan l10 user phase2 story phase"
 ## Files
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2.story.md`
 =======
 - Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2-20261006.story.md`
+>>>>>>> laraxot/dev
+=======
+- Story: `laravel/Modules/User/docs/bmad/stories/phpstan-l10-user-phase2.story.md`
 >>>>>>> laraxot/dev
 - Code: TBD (fixes staged per-commit)
 

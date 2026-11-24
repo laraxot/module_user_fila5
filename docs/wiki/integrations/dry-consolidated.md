@@ -7,7 +7,16 @@ created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_L2XRaW
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "dry consolidated"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_WkCY6h
 >>>>>>> laraxot/dev
 ---
 
@@ -322,7 +331,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 <<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 =======
+<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< .merge_file_L2XRaW
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< HEAD
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WkCY6h
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ---
@@ -474,7 +495,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 <<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 =======
+<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< .merge_file_L2XRaW
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< HEAD
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WkCY6h
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 
@@ -625,7 +658,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 <<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 =======
+<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< .merge_file_L2XRaW
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+<<<<<<< HEAD
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WkCY6h
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ---

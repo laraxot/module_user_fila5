@@ -15,6 +15,10 @@ use Spatie\QueueableAction\QueueableAction;
  * utile per logout forzato o revoca di accesso.
  *
  * @see docs/contracts/revoke-all-user-tokens-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/revoke-all-user-tokens-action.md
  */
 class RevokeAllUserTokensAction

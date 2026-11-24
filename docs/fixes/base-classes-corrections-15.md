@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzione Estensioni Classi Base - Modulo User"
 type: note
 qmd: "base classes corrections 15 correzione estensioni"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Correzione Estensioni Classi Base - Modulo User
 

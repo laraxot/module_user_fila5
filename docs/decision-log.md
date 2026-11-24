@@ -2,7 +2,12 @@
 type: decision-log
 title: "Decision Log — User"
 <<<<<<< HEAD
+<<<<<<< HEAD
 links: {github_issue: #XXX, discussion: #XXX}
+=======
+links: {github_issue: "#XXX", discussion: "#XXX"}
+qmd: "decision log user"
+>>>>>>> laraxot/dev
 =======
 links: {github_issue: "#XXX", discussion: "#XXX"}
 qmd: "decision log user"

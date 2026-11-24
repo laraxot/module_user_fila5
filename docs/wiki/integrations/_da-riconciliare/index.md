@@ -7,7 +7,16 @@ created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_AFhqFw
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "user integrations"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_bHYpeJ
 >>>>>>> laraxot/dev
 ---
 
@@ -19,8 +28,18 @@ Documentation for `user` module categorized as **integrations**.
 
 - [`00-index.md`](./00-index.md)
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 - [`00-index.md`](./00-index.md)
 =======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+- [`00-index.md`](./00-index.md)
+>>>>>>> .merge_file_bHYpeJ
 >>>>>>> laraxot/dev
 - [`2fa-guide.md`](./2fa-guide.md)
 - [`2fa.md`](./2fa.md)
@@ -48,10 +67,22 @@ Documentation for `user` module categorized as **integrations**.
 - [`PHPSTAN_FIX_PLAN.md`](./PHPSTAN_FIX_PLAN.md)
 - [`PHPSTAN_L10.md`](./PHPSTAN_L10.md)
 - [`PHPSTAN_STATUS.md`](./PHPSTAN_STATUS.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [`PRODUCT_LAUNCH_PLAN.md`](./PRODUCT_LAUNCH_PLAN.md)
 - [`PRODUCT_STRATEGY.md`](./PRODUCT_STRATEGY.md)
 - [`PROJECT-STRUCTURE.md`](./project-structure.md)
 - [`QMD-SETUP.md`](./QMD-SETUP.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 - [`product_launch_plan.md`](./product_launch_plan.md)
 - [`product_strategy.md`](./product_strategy.md)
 - [`project-structure.md`](./project-structure.md)
@@ -66,10 +97,27 @@ Documentation for `user` module categorized as **integrations**.
 - [`sprint_planning.md`](./sprint_planning.md)
 - [`SSO-PROVIDERS-IMPLEMENTATION.md`](./SSO-PROVIDERS-IMPLEMENTATION.md)
 - [`SSO_PROVIDERS_IMPLEMENTATION.md`](./SSO_PROVIDERS_IMPLEMENTATION.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+>>>>>>> laraxot/dev
 - [`testing.md`](./testing.md)
 <<<<<<< HEAD
 - [`TESTING.md`](../../../TESTING.md)
 =======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+- [`testing.md`](./testing.md)
+=======
+<<<<<<< .merge_file_vT0U4q
+- [`TESTING.md`](../../../TESTING.md)
+=======
+- [`testing.md`](./testing.md)
+>>>>>>> .merge_file_LfLxlK
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [`TIMESTAMPS_RULE.md`](./TIMESTAMPS_RULE.md)
 - [`TRANSLATION_KEY_PROTOTYPE.md`](./TRANSLATION_KEY_PROTOTYPE.md)
@@ -123,7 +171,15 @@ Documentation for `user` module categorized as **integrations**.
 - [`business-logic-deep-dive.md`](./business-logic-deep-dive.md)
 - [`business-logic-deep-dive.md`](./business-logic-deep-dive.md)
 - [`business-logic-deep-dive.md`](./business-logic-deep-dive.md)
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AFhqFw
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bHYpeJ
 >>>>>>> laraxot/dev
 - [`business-logic.md`](./business-logic.md)
 - [`business-logiceepive.md`](./business-logiceepive.md)
@@ -138,13 +194,44 @@ Documentation for `user` module categorized as **integrations**.
 - [`charts-implementation.md`](./charts-implementation.md)
 - [`cms-link.md`](./cms-link.md)
 - [`cms_link.md`](./cms_link.md)
+<<<<<<< HEAD
 - [`code-conventions.md`](./code-conventions.md)
 - [`code-optimization-analysis.md`](./code-optimization-analysis.md)
 - [`code-optimization.md`](./code-optimization.md)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+- [`code-conventions.md`](./code-conventions.md)
+- [`code-optimization-analysis.md`](./code-optimization-analysis.md)
+- [`code-optimization.md`](./code-optimization.md)
+<<<<<<< .merge_file_AFhqFw
+>>>>>>> laraxot/dev
 - [`code-quality-analysis.md`](./code-quality-analysis.md)
 <<<<<<< HEAD
 - [`code-conventions.md`](../../../code-conventions.md)
 =======
+<<<<<<< HEAD
+=======
+=======
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+<<<<<<< HEAD
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+=======
+=======
+- [`code-conventions.md`](../../../code-conventions.md)
+- [`code-optimization-analysis.md`](./code-optimization-analysis.md)
+- [`code-optimization.md`](./code-optimization.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+- [`code-quality-analysis.md`](./code-quality-analysis.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [`code-quality-tools.md`](./code-quality-tools.md)
 - [`code-quality.md`](./code-quality.md)
@@ -155,6 +242,13 @@ Documentation for `user` module categorized as **integrations**.
 - [`codex-error-fix.md`](./codex-error-fix.md)
 - [`component-verification-rules.md`](./component-verification-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 - [`component-verification-rules.md`](./component-verification-rules.md)
 =======
 >>>>>>> laraxot/dev
@@ -236,10 +330,27 @@ Documentation for `user` module categorized as **integrations**.
 - [`folio-volt-best-practices.md`](./folio-volt-best-practices.md)
 - [`fullcalendar-scheduler-documentation-summary-3.md`](./fullcalendar-scheduler-documentation-summary-3.md)
 - [`fullcalendar-scheduler-documentation-summary.md`](./fullcalendar-scheduler-documentation-summary.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+>>>>>>> laraxot/dev
 - [`fullcalendar-scheduler-license-key-invalid.md`](./fullcalendar-scheduler-license-key-invalid.md)
 <<<<<<< HEAD
 - [`fullcalendar-scheduler-license-key-invalid.md`](../../../fullcalendar-scheduler-license-key-invalid.md)
 =======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+- [`fullcalendar-scheduler-license-key-invalid.md`](./fullcalendar-scheduler-license-key-invalid.md)
+=======
+<<<<<<< HEAD
+- [`fullcalendar-scheduler-license-key-invalid.md`](./fullcalendar-scheduler-license-key-invalid.md)
+=======
+- [`fullcalendar-scheduler-license-key-invalid.md`](../../../fullcalendar-scheduler-license-key-invalid.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [`fullcalendar-scheduler-license-troubleshooting.md`](./fullcalendar-scheduler-license-troubleshooting.md)
 - [`fullcalendar-scheduler-license.md`](./fullcalendar-scheduler-license.md)
@@ -316,10 +427,27 @@ Documentation for `user` module categorized as **integrations**.
 - [`jss.md`](./jss.md)
 - [`label-hardcoded-prevention.md`](./label-hardcoded-prevention.md)
 - [`label_hardcoded_prevention.md`](./label_hardcoded_prevention.md)
+<<<<<<< HEAD
 - [`lang-link-3.md`](./lang-link-3.md)
 <<<<<<< HEAD
 - [`lang-link-3.md`](../../../lang-link-3.md)
 =======
+=======
+<<<<<<< HEAD
+- [`lang-link-3.md`](./lang-link-3.md)
+<<<<<<< .merge_file_AFhqFw
+<<<<<<< HEAD
+- [`lang-link-3.md`](../../../lang-link-3.md)
+=======
+=======
+=======
+<<<<<<< HEAD
+- [`lang-link-3.md`](./lang-link-3.md)
+=======
+- [`lang-link-3.md`](../../../lang-link-3.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [`lang-link.md`](./lang-link.md)
 - [`lang_link.md`](./lang-link.md)
@@ -569,7 +697,15 @@ Documentation for `user` module categorized as **integrations**.
 - [`query-optimization-analysis.md`](./query-optimization-analysis.md)
 - [`query-optimization-analysis.md`](./query-optimization-analysis.md)
 - [`query-optimization-analysis.md`](./query-optimization-analysis.md)
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AFhqFw
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bHYpeJ
 >>>>>>> laraxot/dev
 - [`query-optimization.md`](./query-optimization.md)
 - [`query_optimization_analysis.md`](./query_optimization_analysis.md)
@@ -638,6 +774,13 @@ Documentation for `user` module categorized as **integrations**.
 - [`spatie-permission-philosophy.md`](./spatie-permission-philosophy.md)
 - [`spatie-permission-teams-laravel.md`](./spatie-permission-teams-laravel.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AFhqFw
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_bHYpeJ
+>>>>>>> laraxot/dev
 - [`spatie-permission-teams-laravel.md`](./spatie-permission-teams-laravel.md)
 - [`spatie-permission.md`](./spatie-permission.md)
 - [`spatie-permissions-methods.md`](./spatie-permissions-methods.md)
@@ -785,7 +928,15 @@ Documentation for `user` module categorized as **integrations**.
 - [`widget-rendering-analysis.md`](./widget-rendering-analysis.md)
 - [`widget-rendering-analysis.md`](./widget-rendering-analysis.md)
 - [`widget-rendering-analysis.md`](./widget-rendering-analysis.md)
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AFhqFw
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bHYpeJ
 >>>>>>> laraxot/dev
 - [`widget-rendering.md`](./widget-rendering.md)
 - [`widget-translation-rules-3.md`](./widget-translation-rules-3.md)

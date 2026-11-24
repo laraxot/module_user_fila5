@@ -17,8 +17,12 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 status: draft
 =======
+>>>>>>> laraxot/dev
+=======
+status: draft
 >>>>>>> laraxot/dev
 ---
 
@@ -31,9 +35,13 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 ### 1. Posizione del File
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 =======
 /var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> laraxot/dev
+=======
+/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 >>>>>>> laraxot/dev
 ```
 
@@ -42,10 +50,13 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 @php
     use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     // Esegui il logout
     Auth::logout();
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
     

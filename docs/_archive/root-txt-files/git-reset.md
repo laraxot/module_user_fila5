@@ -9,6 +9,10 @@ converted_from: git-reset.txt
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "git reset"
+>>>>>>> laraxot/dev
 =======
 qmd: "git reset"
 >>>>>>> laraxot/dev

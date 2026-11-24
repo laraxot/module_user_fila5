@@ -5,8 +5,15 @@ type: note
 status: active
 updated: '2026-11-23'
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "auth pages i18n en de es"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_qVNgt1
+qmd: "auth pages i18n en de es"
+=======
+>>>>>>> .merge_file_D52IJC
 >>>>>>> laraxot/dev
 ---
 

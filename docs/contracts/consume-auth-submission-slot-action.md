@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Contratto — ConsumeAuthSubmissionSlotAction"
 type: contract
 action: "Modules\User\Actions\Auth\ConsumeAuthSubmissionSlotAction"
@@ -15,11 +16,25 @@ updated: 2026-11-24
 action: "Modules\\User\\Actions\\Auth\\ConsumeAuthSubmissionSlotAction"
 qmd: "ConsumeAuthSubmissionSlotAction freno invio registrazione recupero password SEC-012 rate limiter IP email"
 >>>>>>> laraxot/dev
+=======
+title: "Contratto — ConsumeAuthSubmissionSlotAction"
+type: contract
+action: "Modules\\User\\Actions\\Auth\\ConsumeAuthSubmissionSlotAction"
+tags: [contract, action, rate-limit, sicurezza]
+created: 2026-11-24
+updated: 2026-11-24
+owner: User
+status: accepted
+qmd: "ConsumeAuthSubmissionSlotAction freno invio registrazione recupero password SEC-012 rate limiter IP email"
+>>>>>>> laraxot/dev
 ---
 
 # ConsumeAuthSubmissionSlotAction
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR](../adr/auth-submission-throttle-before-validation.md).
 
 ## Input
@@ -54,6 +69,7 @@ Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR]
 - Non valida l'email e non tocca il database.
 - Non limita il login: il login ha il suo freno in `LoginWidget` (solo tentativi errati).
 - Non mostra il messaggio d'attesa: lo fa il widget chiamante con `user::throttle.auth_form.retry.message`.
+<<<<<<< HEAD
 =======
 Freno agli invii dei moduli di registrazione e recupero password (SEC-012): una finestra per IP e una per email. Codice: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php:17-48`.
 
@@ -88,4 +104,6 @@ Scrive solo nel `RateLimiter` (cache), nessun database, nessun evento. Il contro
 
 - Non valida il modulo né invia email.
 - Non distingue il successo dal fallimento del tentativo: ogni invio conta.
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_kHTVrE
+>>>>>>> laraxot/dev
 ---
 title: "User Module - User Research"
 type: note
 qmd: "user research"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_KnNzga
 >>>>>>> laraxot/dev
 # User Module - User Research
 

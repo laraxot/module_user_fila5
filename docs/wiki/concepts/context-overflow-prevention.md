@@ -12,8 +12,15 @@ related:
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "context overflow prevention"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Yg01JN
+qmd: "context overflow prevention"
+=======
+>>>>>>> .merge_file_ZTTG3Q
 >>>>>>> laraxot/dev
 ---
 

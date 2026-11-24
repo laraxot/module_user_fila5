@@ -10,8 +10,15 @@ related:
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "duplicated ratings relation manager ratingsrelationmanager occurrences"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_nKJ6NF
+qmd: "duplicated ratings relation manager ratingsrelationmanager occurrences"
+=======
+>>>>>>> .merge_file_Zs2U5t
 >>>>>>> laraxot/dev
 ---
 

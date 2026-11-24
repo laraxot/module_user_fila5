@@ -5,8 +5,15 @@ tags: [user, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "testing user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_1FgrcX
+qmd: "testing user"
+=======
+>>>>>>> .merge_file_SUxgz6
 >>>>>>> laraxot/dev
 ---
 

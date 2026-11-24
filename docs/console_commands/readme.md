@@ -13,8 +13,11 @@ related:
   - "./console-commands-philosophy-1-1.md"
   - "./console-commands-philosophy.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
   - "./console-commands.md"

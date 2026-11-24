@@ -89,6 +89,9 @@ ls docs/img/      # ✅ Images preserved locally, untracked
    - Verified: `git lfs ls-files` returns empty
 5. **Result:** Push now succeeds; images preserved locally (untracked)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -99,5 +102,8 @@ ls docs/img/      # ✅ Images preserved locally, untracked
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

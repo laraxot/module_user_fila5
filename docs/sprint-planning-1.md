@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "sprint planning 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Bv4Mh5
+qmd: "sprint planning 1"
+=======
+>>>>>>> .merge_file_otGjtN
 >>>>>>> laraxot/dev
 ---
 

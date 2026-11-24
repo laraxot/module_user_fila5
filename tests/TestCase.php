@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Database\DatabaseManager;
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -14,6 +18,10 @@ use Filament\Schemas\Schema as FilamentSchema;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\Kernel;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\DatabaseManager;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -22,6 +30,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+=======
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -117,7 +130,19 @@ abstract class TestCase extends XotBaseTestCase
             static::$userSchemaMigrated = true;
 
             if (config('database.default') !== 'sqlite') {
+<<<<<<< HEAD
                 $this->app?->make(\Illuminate\Contracts\Console\Kernel::class)
+=======
+<<<<<<< .merge_file_SXZy7A
+                $this->app?->make(Kernel::class)
+=======
+<<<<<<< HEAD
+                $this->app?->make(Kernel::class)
+=======
+                $this->app?->make(\Illuminate\Contracts\Console\Kernel::class)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vee3Sy
+>>>>>>> laraxot/dev
                     ->call('migrate', ['--force' => true]);
             }
         }
@@ -180,6 +205,20 @@ abstract class TestCase extends XotBaseTestCase
     public static ?Collection $users = null;
 
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_SXZy7A
+=======
+<<<<<<< HEAD
+     * Come `Tests\TestCase`: anche `mariadb` (default in CI) e `fixcity` (Profile del progetto)
+     * vanno in transazione, altrimenti le righe scritte dai test restano nel DB `_test`.
+     *
+     * @var list<string>
+     */
+    protected $connectionsToTransact = ['mysql', 'mariadb', 'user', 'fixcity'];
+=======
+>>>>>>> .merge_file_vee3Sy
+>>>>>>> laraxot/dev
      * Come `Tests\TestCase`: anche `mariadb` (default in CI) va in transazione, altrimenti le
      * righe scritte dai test restano nel DB `_test`.
      *
@@ -194,6 +233,13 @@ abstract class TestCase extends XotBaseTestCase
      * @var list<string>
      */
     protected $connectionsToTransact = ['mysql', 'mariadb', 'user'];
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_SXZy7A
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vee3Sy
+>>>>>>> laraxot/dev
 
     public function setupFilamentAdminPanel(): void
     {

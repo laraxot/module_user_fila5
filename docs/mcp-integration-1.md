@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "mcp integration 1"
+>>>>>>> laraxot/dev
 =======
 qmd: "mcp integration 1"
 >>>>>>> laraxot/dev

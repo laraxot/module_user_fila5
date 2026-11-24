@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Massimizzare il livello di confidenza"
 type: guide
 qmd: "confidence guidelines massimizzare livello confidenza"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Massimizzare il livello di confidenza
 

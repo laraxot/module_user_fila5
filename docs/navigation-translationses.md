@@ -99,7 +99,11 @@ related:
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Modulo User](README.md)
+=======
+- [Documentazione Modulo User](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [Documentazione Modulo User](readme.md)
 >>>>>>> laraxot/dev

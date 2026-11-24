@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "product roadmap 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_T8mgN3
+qmd: "product roadmap 1"
+=======
+>>>>>>> .merge_file_VJao7W
 >>>>>>> laraxot/dev
 ---
 

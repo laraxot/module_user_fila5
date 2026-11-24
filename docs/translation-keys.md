@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "translation keys"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_OWbFPN
+qmd: "translation keys"
+=======
+>>>>>>> .merge_file_C646kN
 >>>>>>> laraxot/dev
 ---
 

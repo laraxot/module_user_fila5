@@ -7,6 +7,10 @@ canonical: ../../../../Themes/docs/shared-components/set-password.jpg
 created: 2026-07-22
 updated: 2026-07-22
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "set password setpassword"
+>>>>>>> laraxot/dev
 =======
 qmd: "set password setpassword"
 >>>>>>> laraxot/dev

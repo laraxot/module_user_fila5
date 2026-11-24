@@ -14,8 +14,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "mariadb create table after rule"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_L7lVb6
+qmd: "mariadb create table after rule"
+=======
+>>>>>>> .merge_file_aPuykn
 >>>>>>> laraxot/dev
 ---
 

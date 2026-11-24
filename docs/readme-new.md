@@ -1014,11 +1014,30 @@ See [roadmap.md](./roadmap.md) for details.
 ### Internal Modules
 - [Xot Module](../../Xot/docs/README.md) - Core foundation
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_pkg0NH
+- [Activity Module](../../Activity/docs/readme.md) - Activity tracking
+- [Lang Module](../../Lang/docs/readme.md) - Translations
+=======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 - [Activity Module](../../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../../Lang/docs/README.md) - Translations
 =======
+<<<<<<< HEAD
 - [Activity Module](../../Activity/docs/readme.md) - Activity tracking
 - [Lang Module](../../Lang/docs/readme.md) - Translations
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+- [Activity Module](../../Activity/docs/readme.md) - Activity tracking
+- [Lang Module](../../Lang/docs/readme.md) - Translations
+=======
+- [Activity Module](../../Activity/docs/README.md) - Activity tracking
+- [Lang Module](../../Lang/docs/README.md) - Translations
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yEI9pO
 >>>>>>> laraxot/dev
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 

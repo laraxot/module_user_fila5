@@ -11,6 +11,10 @@ related:
   - "./parse-error-orphan-methods-3.md"
   - "./parse-orphan-methods.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "parse error orphan methods"
+>>>>>>> laraxot/dev
 =======
 qmd: "parse error orphan methods"
 >>>>>>> laraxot/dev

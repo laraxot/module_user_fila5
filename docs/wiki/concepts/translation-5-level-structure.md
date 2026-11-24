@@ -16,8 +16,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "translation 5 level structure 5level never"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_DWatyo
+qmd: "translation 5 level structure 5level never"
+=======
+>>>>>>> .merge_file_3jkk52
 >>>>>>> laraxot/dev
 ---
 

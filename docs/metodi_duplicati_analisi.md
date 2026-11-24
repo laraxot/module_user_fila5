@@ -6,6 +6,10 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "metodi duplicati analisi super mucca edition"
+>>>>>>> laraxot/dev
 =======
 qmd: "metodi duplicati analisi super mucca edition"
 >>>>>>> laraxot/dev

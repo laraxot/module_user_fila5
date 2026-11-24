@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "📚 Indice Documentazione Modulo User"
 type: note
 qmd: "00 indice user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # 📚 **Indice Documentazione Modulo User**
 
@@ -13,7 +19,11 @@ qmd: "00 indice user"
 
 ## 🎯 **Lettura Essenziale**
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [README.md](./README.md) - Panoramica completa del sistema di identità.
+=======
+1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
+>>>>>>> laraxot/dev
 =======
 1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
 >>>>>>> laraxot/dev

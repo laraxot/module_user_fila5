@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "spatie models verification"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QMShLT
+qmd: "spatie models verification"
+=======
+>>>>>>> .merge_file_tRo66x
 >>>>>>> laraxot/dev
 ---
 

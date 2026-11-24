@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_j7hmzR
+>>>>>>> laraxot/dev
 ---
 title: "PHPStan Roadmap: User Module"
 type: note
 qmd: "phpstan roadmap user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_hS61qT
 >>>>>>> laraxot/dev
 # PHPStan Roadmap: User Module
 

@@ -138,7 +138,11 @@ use Filament\Widgets\Concerns\CanPoll;
 - [UI - Form Filament Widgets](../../../ui/project_docs/form_filament_widgets.md) - Widget per form Filament
 ### Documentazione Interna
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README del modulo User](../README.md) - Indice principale del modulo User
+=======
+- [README del modulo User](../readme.md) - Indice principale del modulo User
+>>>>>>> laraxot/dev
 =======
 - [README del modulo User](../readme.md) - Indice principale del modulo User
 >>>>>>> laraxot/dev

@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_gfSY9Q
+>>>>>>> laraxot/dev
 ---
 title: "Changelog"
 type: note
 qmd: "changelog"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_1kbKZj
 >>>>>>> laraxot/dev
 # Changelog
 

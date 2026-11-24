@@ -1,8 +1,11 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 title: "Brainstorming — Perfezione assoluta del modulo User"
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 title: "Brainstorming: Perfezione assoluta del modulo User"
 type: brainstorming
@@ -168,9 +171,13 @@ schema da ripulire, non exploitable ora.
 
 - **Data debt morph map** (da `decision-log.md`, voce 2026-09-21): 40 righe stantie
 <<<<<<< HEAD
+<<<<<<< HEAD
   `model_type='Modules\<nome progetto>\Models\User'` riguardano il tenant **<nome progetto>**, non
 =======
   `model_type='Modules\Quaeris\Models\User'` riguardano il tenant **Quaeris**, non
+>>>>>>> laraxot/dev
+=======
+  `model_type='Modules\<nome progetto>\Models\User'` riguardano il tenant **<nome progetto>**, non
 >>>>>>> laraxot/dev
   questa installazione. Verifica read-only su Ptv (`SELECT ... GROUP BY` via tinker,
   connessione `user`, host 10.100.200.53): `model_has_role` ha **482/482 righe con

@@ -5,8 +5,15 @@ type: continuation
 scope: module:User
 github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discussions: "https://github.com/laraxot/module_xot_fila5/discussions/117"}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "continuation 11 story user table audit"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_fQZAnT
+qmd: "continuation 11 story user table audit"
+=======
+>>>>>>> .merge_file_nxwPEb
 >>>>>>> laraxot/dev
 ---
 # User Module — Continuation Task

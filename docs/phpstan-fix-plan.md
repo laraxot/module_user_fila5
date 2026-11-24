@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_gnYkkB
+>>>>>>> laraxot/dev
 ---
 title: "User Module - PHPStan Level 10 Fix Plan"
 type: note
 qmd: "phpstan fix plan user level"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_xWCJfJ
 >>>>>>> laraxot/dev
 # User Module - PHPStan Level 10 Fix Plan
 
@@ -639,6 +648,11 @@ This confirms that the project is using a version of Filament where Forms seem t
 - Search for `Grid.php`.
 - Update `OauthClientResource` imports.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gnYkkB
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -695,5 +709,9 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_xWCJfJ
 >>>>>>> laraxot/dev

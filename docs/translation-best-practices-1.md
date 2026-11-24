@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "translation best practices 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_16zLQB
+qmd: "translation best practices 1"
+=======
+>>>>>>> .merge_file_24MNzi
 >>>>>>> laraxot/dev
 ---
 

@@ -22,6 +22,10 @@ owned_scope:
 related:
   - "Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user closure 11 story chiusura 20260911"
+>>>>>>> laraxot/dev
 =======
 qmd: "user closure 11 story chiusura 20260911"
 >>>>>>> laraxot/dev

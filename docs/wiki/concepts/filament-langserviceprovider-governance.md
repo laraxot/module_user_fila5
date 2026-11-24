@@ -14,8 +14,15 @@ related:
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "filament langserviceprovider governance"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_zIbLIb
+qmd: "filament langserviceprovider governance"
+=======
+>>>>>>> .merge_file_POf94P
 >>>>>>> laraxot/dev
 ---
 

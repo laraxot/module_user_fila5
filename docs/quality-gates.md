@@ -230,6 +230,9 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 **Last Updated:** 2026-07-28 ~10:45 UTC  
 **Next Review:** After fixing Top 5 error sources (est. 2-3 hours work)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -240,5 +243,8 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

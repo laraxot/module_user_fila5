@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "modelli factory seeder analisi"
+>>>>>>> laraxot/dev
 =======
 qmd: "modelli factory seeder analisi"
 >>>>>>> laraxot/dev

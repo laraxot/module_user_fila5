@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "passport implementation summary 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_lagX5q
+qmd: "passport implementation summary 1"
+=======
+>>>>>>> .merge_file_ByEgr5
 >>>>>>> laraxot/dev
 ---
 

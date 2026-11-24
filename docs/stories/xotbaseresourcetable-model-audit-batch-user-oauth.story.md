@@ -172,9 +172,25 @@ Illuminate\Support\Facades\Schema::connection($model->getConnectionName())->getC
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila5/laravel
 =======
 cd /var/www/_bases/base_quaeris_fila5/laravel
+=======
+<<<<<<< .merge_file_YhBOax
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel
+=======
+cd /var/www/_bases/base_quaeris_fila5/laravel
+=======
+cd /var/www/_bases/base_quaeris_fila5/laravel
+=======
+<<<<<<< HEAD
+cd /var/www/_bases/base_quaeris_fila5/laravel
+=======
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PykaMA
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 php -l Modules/User/app/Filament/Resources/ClientResource/Tables/OauthClientsTable.php
 php -l Modules/User/app/Filament/Resources/PermissionResource/Tables/PermissionsTable.php
@@ -219,11 +235,30 @@ certezza al 100%).
 
 - `Schema::getColumnListing()` senza specificare la connessione del model usa la
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YhBOax
+>>>>>>> laraxot/dev
   connessione di default (`mysql`/`<nome progetto>_data`), che in questo modulo puo'
   essere un DB diverso da quello reale del model (`user`/`<nome progetto>_user`). Va
 =======
   connessione di default (`mysql`/`quaeris_data`), che in questo modulo puo'
   essere un DB diverso da quello reale del model (`user`/`quaeris_user`). Va
+<<<<<<< HEAD
+=======
+=======
+  connessione di default (`mysql`/`quaeris_data`), che in questo modulo puo'
+  essere un DB diverso da quello reale del model (`user`/`quaeris_user`). Va
+=======
+<<<<<<< HEAD
+  connessione di default (`mysql`/`quaeris_data`), che in questo modulo puo'
+  essere un DB diverso da quello reale del model (`user`/`quaeris_user`). Va
+=======
+  connessione di default (`mysql`/`<nome progetto>_data`), che in questo modulo puo'
+  essere un DB diverso da quello reale del model (`user`/`<nome progetto>_user`). Va
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PykaMA
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
   sempre passato `Schema::connection($model->getConnectionName())`, altrimenti il
   risultato e' silenziosamente sbagliato (nel caso di `features` e' risultato un

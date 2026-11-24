@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "merge conflict files list"
+>>>>>>> laraxot/dev
 =======
 qmd: "merge conflict files list"
 >>>>>>> laraxot/dev

@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan fixes conflict 276dc0"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan fixes conflict 276dc0"
 >>>>>>> laraxot/dev

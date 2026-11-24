@@ -100,4 +100,8 @@ class DemoUserSeeder extends Seeder
             $this->command->info('DemoUserSeeder: '.count($demoUsers).' utenti demo pronti.');
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev

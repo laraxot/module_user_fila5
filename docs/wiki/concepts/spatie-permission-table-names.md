@@ -12,8 +12,15 @@ related:
   - ../../../../../config/permission.php
   - ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "spatie permission table names contract"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_YdKmnS
+qmd: "spatie permission table names contract"
+=======
+>>>>>>> .merge_file_N9j84Z
 >>>>>>> laraxot/dev
 ---
 

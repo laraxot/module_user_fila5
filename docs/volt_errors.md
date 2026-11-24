@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_hVcP0r
+>>>>>>> laraxot/dev
 ---
 title: "Errori Comuni in Volt e Soluzioni"
 type: note
 qmd: "volt errors errori comuni soluzioni"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_fTHG9y
 >>>>>>> laraxot/dev
 # Errori Comuni in Volt e Soluzioni
 

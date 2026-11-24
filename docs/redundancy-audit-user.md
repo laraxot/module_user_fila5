@@ -7,8 +7,15 @@ created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "redundancy audit user 20260521"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_TN0g6t
+qmd: "redundancy audit user 20260521"
+=======
+>>>>>>> .merge_file_HwcaWW
 >>>>>>> laraxot/dev
 ---
 

@@ -50,5 +50,20 @@ related:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [00-index-1.md](./00-index-indice-documentazione-modulo-user.md)
+=======
+<<<<<<< .merge_file_4fBRhp
+=======
+<<<<<<< HEAD
+- [00-index-1.md](./00-index-indice-documentazione-modulo-user.md)
+=======
+<<<<<<< .merge_file_w9NAY7
+- [00-index-1.md](./README.md)
+=======
+>>>>>>> .merge_file_Jdybsk
+- [00-index-1.md](./00-index-indice-documentazione-modulo-user.md)
+>>>>>>> .merge_file_sRwKVB
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)

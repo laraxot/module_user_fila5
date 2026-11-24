@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user research"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_WH75Cw
+qmd: "user research"
+=======
+>>>>>>> .merge_file_mrqOzp
 >>>>>>> laraxot/dev
 ---
 

@@ -20,15 +20,23 @@ related:
   - ../../../../config/permission.php
   - ../../app/Models/Traits/HasRoles.php
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../<nome progetto>/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
 =======
   - ../../../Quaeris/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
+>>>>>>> laraxot/dev
+=======
+  - ../../../<nome progetto>/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
 >>>>>>> laraxot/dev
 github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
   discussions: https://github.com/laraxot/module_user_fila5/discussions
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "roles teams scoping disabled by override"
+>>>>>>> laraxot/dev
 =======
 qmd: "roles teams scoping disabled by override"
 >>>>>>> laraxot/dev
@@ -148,9 +156,13 @@ Due conseguenze, opposte fra loro:
   `model_type` e' corretto: non e' quello il difetto.
 - Il difetto e' emerso durante la verifica di un guard `hasRole('super-admin')` su
 <<<<<<< HEAD
+<<<<<<< HEAD
   un widget Filament del modulo <nome progetto> (vedi story correlata): il guard funziona
 =======
   un widget Filament del modulo Quaeris (vedi story correlata): il guard funziona
+>>>>>>> laraxot/dev
+=======
+  un widget Filament del modulo <nome progetto> (vedi story correlata): il guard funziona
 >>>>>>> laraxot/dev
   oggi e smetterebbe di funzionare al primo allineamento del team id.
 - Migrazione dati: `roles.team_id` e la colonna team sul pivot `model_has_roles`
@@ -190,9 +202,13 @@ Due conseguenze, opposte fra loro:
 
 - Trovato il 2026-08-07 durante la verifica adversarial di un fix su
 <<<<<<< HEAD
+<<<<<<< HEAD
   `Modules/<nome progetto>`. Non e' un difetto di <nome progetto>: e' del layer di autorizzazione,
 =======
   `Modules/Quaeris`. Non e' un difetto di Quaeris: e' del layer di autorizzazione,
+>>>>>>> laraxot/dev
+=======
+  `Modules/<nome progetto>`. Non e' un difetto di <nome progetto>: e' del layer di autorizzazione,
 >>>>>>> laraxot/dev
   e per questo la story vive in `module:User`.
 - Il difetto e' del tipo peggiore: oggi non produce sintomi. Si manifesta solo

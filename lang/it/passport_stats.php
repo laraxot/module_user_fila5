@@ -6,7 +6,15 @@ return [
     'sections' => [
         'empty' => [
             'label' => '',
+<<<<<<< HEAD
             'heading' => 'empty',
+=======
+<<<<<<< .merge_file_hXimrz
+            'heading' => 'empty',
+=======
+            'heading' => '',
+>>>>>>> .merge_file_OPXpGE
+>>>>>>> laraxot/dev
         ],
     ],
 ];

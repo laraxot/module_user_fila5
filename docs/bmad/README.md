@@ -7,6 +7,10 @@ documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 bmad_track: "core-identity"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user bmad method integration"
+>>>>>>> laraxot/dev
 =======
 qmd: "user bmad method integration"
 >>>>>>> laraxot/dev

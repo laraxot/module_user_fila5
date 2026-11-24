@@ -13,8 +13,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "method name homonyms censimento omonimi metodi"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_oxi1n0
+qmd: "method name homonyms censimento omonimi metodi"
+=======
+>>>>>>> .merge_file_ElA0HA
 >>>>>>> laraxot/dev
 ---
 

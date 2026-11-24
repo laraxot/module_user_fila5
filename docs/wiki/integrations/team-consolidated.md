@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "team consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_3uPzia
+qmd: "team consolidated"
+=======
+>>>>>>> .merge_file_QnWEA4
 >>>>>>> laraxot/dev
 ---
 

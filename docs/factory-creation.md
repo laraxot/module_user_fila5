@@ -118,7 +118,11 @@ Questo errore è **GRAVISSIMO** perché:
 
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module README](./README.md)
+=======
+- [User Module README](./readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module README](./readme.md)
 >>>>>>> laraxot/dev

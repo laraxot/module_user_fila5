@@ -12,6 +12,10 @@ related:
   - "./payment.md"
   - "./phpstan.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "terms and conditions 1"
+>>>>>>> laraxot/dev
 =======
 qmd: "terms and conditions 1"
 >>>>>>> laraxot/dev

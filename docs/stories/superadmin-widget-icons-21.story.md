@@ -21,6 +21,10 @@ github:
   repository: null
   issues: []
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "superadmin widget icons 21 story superadminwidget"
+>>>>>>> laraxot/dev
 =======
 qmd: "superadmin widget icons 21 story superadminwidget"
 >>>>>>> laraxot/dev

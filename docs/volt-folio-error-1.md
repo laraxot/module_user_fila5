@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "volt folio error 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wV1VK4
+qmd: "volt folio error 1"
+=======
+>>>>>>> .merge_file_LSvfTv
 >>>>>>> laraxot/dev
 ---
 

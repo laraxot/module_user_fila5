@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: note
 qmd: "fullcalendar scheduler summary completa"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # FullCalendar Scheduler - Documentazione Completa
 

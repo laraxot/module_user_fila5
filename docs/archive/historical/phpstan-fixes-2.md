@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan - Modulo User"
 type: note
 qmd: "phpstan fixes 2 correzioni user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo User
 

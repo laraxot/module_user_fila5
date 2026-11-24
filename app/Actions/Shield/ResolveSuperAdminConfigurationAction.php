@@ -14,6 +14,10 @@ use Spatie\QueueableAction\QueueableAction;
  * getSuperAdminGateInterceptionStatus
  *
  * @see docs/contracts/resolve-super-admin-configuration-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/resolve-super-admin-configuration-action.md
  */
 class ResolveSuperAdminConfigurationAction

@@ -9,6 +9,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/get-user-teams-option-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/get-user-teams-option-action.md
  */
 class GetUserTeamsOptionAction

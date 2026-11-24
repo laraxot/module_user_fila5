@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_rDjWRS
+>>>>>>> laraxot/dev
 ---
 title: "BMAD Story: User Module Audit Improvements"
 type: story
 qmd: "story user audit improvements bmad"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_qQELyh
 >>>>>>> laraxot/dev
 # BMAD Story: User Module Audit Improvements
 

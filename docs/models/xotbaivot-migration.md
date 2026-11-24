@@ -11,7 +11,11 @@ related:
   - "./base-classes-hierarchy.md"
   - "./baseuser.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./README.md"
+=======
+  - "./readme.md"
+>>>>>>> laraxot/dev
 =======
   - "./readme.md"
 >>>>>>> laraxot/dev

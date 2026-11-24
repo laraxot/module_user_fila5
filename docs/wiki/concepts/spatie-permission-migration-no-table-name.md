@@ -11,8 +11,15 @@ related:
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "spatie permission migration no table name"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_SgqidI
+qmd: "spatie permission migration no table name"
+=======
+>>>>>>> .merge_file_HYGKVZ
 >>>>>>> laraxot/dev
 ---
 

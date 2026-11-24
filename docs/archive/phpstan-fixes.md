@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: note
 qmd: "phpstan fixes user session 20251001"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # User Module - PHPStan Fixes Session 2025-10-01
 

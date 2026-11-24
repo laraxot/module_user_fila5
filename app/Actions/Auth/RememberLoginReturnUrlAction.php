@@ -20,6 +20,10 @@ use function Safe\preg_match;
  * ignored, so login never sends the user back to login or registration.
  *
  * @see docs/contracts/remember-login-return-url-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/remember-login-return-url-action.md
  */
 final class RememberLoginReturnUrlAction

@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_ts7XcB
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
 type: analysis
 qmd: "traits hasteams analisi corretta trait filosofia"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_nGkOQn
 >>>>>>> laraxot/dev
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 

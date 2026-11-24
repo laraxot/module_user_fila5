@@ -11,6 +11,10 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "auth register email registrazione cittadino posta"
+>>>>>>> laraxot/dev
 =======
 qmd: "auth register email registrazione cittadino posta"
 >>>>>>> laraxot/dev

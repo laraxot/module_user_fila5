@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "User — mai Filament\\*, sempre XotBase*"
+=======
+title: "User — mai Filament\*, sempre XotBase*"
+>>>>>>> laraxot/dev
 type: concept
 module: User
 tags: [user, filament, xotbase, architecture]

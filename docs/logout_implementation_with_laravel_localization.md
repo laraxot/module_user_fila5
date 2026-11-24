@@ -5,6 +5,10 @@ type: note
 status: active
 updated: '2026-11-23'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "logout implementation with laravel localization"
+>>>>>>> laraxot/dev
 =======
 qmd: "logout implementation with laravel localization"
 >>>>>>> laraxot/dev

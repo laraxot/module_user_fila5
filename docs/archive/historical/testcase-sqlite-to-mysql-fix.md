@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "testcase sqlite to mysql fix"
+>>>>>>> laraxot/dev
 =======
 qmd: "testcase sqlite to mysql fix"
 >>>>>>> laraxot/dev

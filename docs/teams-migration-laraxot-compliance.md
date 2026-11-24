@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_CO1Yqe
+>>>>>>> laraxot/dev
 ---
 title: "Teams Migration - Laraxot Compliance Fix"
 type: note
 qmd: "teams migration laraxot compliance"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_UTA8hl
 >>>>>>> laraxot/dev
 # Teams Migration - Laraxot Compliance Fix
 

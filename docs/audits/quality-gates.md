@@ -3,6 +3,10 @@ title: "User quality gate audit 2026-11-05"
 type: audit
 module: User
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "quality gates user gate audit 20261105"
+>>>>>>> laraxot/dev
 =======
 qmd: "quality gates user gate audit 20261105"
 >>>>>>> laraxot/dev

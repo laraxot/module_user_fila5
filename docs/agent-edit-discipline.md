@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "agent edit discipline"
+>>>>>>> laraxot/dev
 =======
 qmd: "agent edit discipline"
 >>>>>>> laraxot/dev

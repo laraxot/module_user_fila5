@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0wpptC
+>>>>>>> laraxot/dev
 ---
 title: "User Module — Analyst Report"
 type: report
 qmd: "analyst report user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_bVh413
 >>>>>>> laraxot/dev
 # User Module — Analyst Report
 

@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Profile UUID Philosophy - Zen Approach"
 type: note
 qmd: "profile uuid philosophy approach"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Profile UUID Philosophy - Zen Approach
 

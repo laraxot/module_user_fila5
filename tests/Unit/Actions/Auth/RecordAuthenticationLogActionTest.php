@@ -35,7 +35,19 @@ test('record authentication log action guards missing table', function (): void 
         ->toContain('hasTable')
         ->toContain('Log::warning')
         ->toContain('authentication_logs missing on user connection');
+<<<<<<< HEAD
 })->group('USER-AUTHLOG-INV-1');
+=======
+<<<<<<< .merge_file_eZ3itE
+})->group('USER-AUTHLOG-INV-1');
+=======
+<<<<<<< HEAD
+});
+=======
+})->group('USER-AUTHLOG-INV-1');
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ah0h66
+>>>>>>> laraxot/dev
 
 test('record authentication log action types UserContract and HasAuthentications not BaseUser', function (): void {
     $source = file_get_contents(
@@ -48,7 +60,19 @@ test('record authentication log action types UserContract and HasAuthentications
         ->toContain('use Modules\User\Contracts\HasAuthentications')
         ->not->toContain('use Modules\User\Models\BaseUser')
         ->not->toContain('BaseUser $user');
+<<<<<<< HEAD
 })->group('USER-AUTHLOG-INV-3');
+=======
+<<<<<<< .merge_file_eZ3itE
+})->group('USER-AUTHLOG-INV-3');
+=======
+<<<<<<< HEAD
+});
+=======
+})->group('USER-AUTHLOG-INV-3');
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ah0h66
+>>>>>>> laraxot/dev
 
 test('auth login listeners guard UserContract not BaseUser', function (): void {
     $login = file_get_contents(

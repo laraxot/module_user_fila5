@@ -15,6 +15,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/set-default-roles-by-socialite-user-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/set-default-roles-by-socialite-user-action.md
  */
 class SetDefaultRolesBySocialiteUserAction

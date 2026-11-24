@@ -24,6 +24,10 @@ github:
   issue: https://github.com/laraxot/module_user_fila5/issues/98
   discussion: https://github.com/laraxot/module_user_fila5/discussions/99
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user passport new credentials button lost"
+>>>>>>> laraxot/dev
 =======
 qmd: "user passport new credentials button lost"
 >>>>>>> laraxot/dev

@@ -14,8 +14,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "socialite provider governance"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_RLAi7D
+qmd: "socialite provider governance"
+=======
+>>>>>>> .merge_file_OQkzCq
 >>>>>>> laraxot/dev
 ---
 

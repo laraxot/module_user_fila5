@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "sprint planning user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_3uSjU4
+qmd: "sprint planning user"
+=======
+>>>>>>> .merge_file_MRgMpk
 >>>>>>> laraxot/dev
 ---
 

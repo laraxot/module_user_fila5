@@ -139,6 +139,9 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 **27 Gennaio 2025** - Correzione completa di tutti gli errori PHPStan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -146,5 +149,8 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 <!-- Contenuto unito da phpstan-fixes-gennaio-2025-complete.md (rimozione date dai nomi file, issue #64) -->
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

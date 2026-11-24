@@ -9,8 +9,15 @@ module: User
 related: [QA-01, SEC-05, dcp-285, issue-97]
 tags: [tests, ci, pest, mariadb, policy, security]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user test suite green story pest"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_BHgmqb
+qmd: "user test suite green story pest"
+=======
+>>>>>>> .merge_file_QKWBLa
 >>>>>>> laraxot/dev
 ---
 

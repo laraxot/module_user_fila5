@@ -10,6 +10,10 @@ related:
   - ./tech-spec-superadmin-widget.md
   - ./ux-design.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan user contract fix usercontract debito"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan user contract fix usercontract debito"
 >>>>>>> laraxot/dev

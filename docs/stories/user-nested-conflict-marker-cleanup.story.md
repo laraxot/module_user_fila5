@@ -16,15 +16,22 @@ tags: [git, conflict-markers, daemon-corruption, filament, cleanup]
 related:
   - Modules/User/docs/stories/12.5.filament-artifacts-cleanup.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
   - Modules/User/docs/stories/user-gap-analysis.story.md
 github:
   repository: null
   issues: []
+<<<<<<< HEAD
 =======
   - Modules/User/docs/stories/user-gap-analysis-2026.story.md
 github:
   repository: null
   issues: []
+qmd: "user nested conflict marker cleanup story"
+>>>>>>> laraxot/dev
+=======
 qmd: "user nested conflict marker cleanup story"
 >>>>>>> laraxot/dev
 ---
@@ -44,7 +51,11 @@ automatici che hanno committato marker letterali non risolti — **gia' presenti
 sul remote `laraxot/dev`** (verificato con `git show laraxot/dev:<path>`, non solo
 locale). Commit-hash ricorrenti nei marker: `87273113 (.)` (quasi tutti i file),
 <<<<<<< HEAD
+<<<<<<< HEAD
 piu' `f548be94 (.)` e `2024e2e7 (.)` annidati in `.github/contributing.md`.
+=======
+piu' `f548be94 (.)` e `2024e2e7 (.)` annidati in `.github/CONTRIBUTING.md`.
+>>>>>>> laraxot/dev
 =======
 piu' `f548be94 (.)` e `2024e2e7 (.)` annidati in `.github/CONTRIBUTING.md`.
 >>>>>>> laraxot/dev
@@ -56,7 +67,11 @@ in app, test e docs`, 2026-09-21) aveva gia' ripulito gran parte dell'albero ma
 
 ## Inventario marker (23 file, tutti confermati reali — nessun falso positivo
 <<<<<<< HEAD
+<<<<<<< HEAD
 doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-.md`,
+=======
+doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-2025-01-27.md`,
+>>>>>>> laraxot/dev
 =======
 doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-2025-01-27.md`,
 >>>>>>> laraxot/dev
@@ -82,6 +97,7 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
   `app/Filament/Resources/UserResource/RelationManagers/ModulesRelationManager.wip`.
   Risoluzione: rimozione della singola riga marker (nessun contenuto in conflitto,
   solo rumore residuo).
+<<<<<<< HEAD
 - **1 file — nesting a 3 livelli con 3 commit-hash diversi**: `.github/contributing.md`
   (righe 43-58). Tutte le varianti annidate portano allo stesso bullet PSR-2, differiscono
   solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
@@ -92,6 +108,11 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
   (righe 43-58). Tutte le varianti annidate portano allo stesso bullet PSR-2, differiscono
   solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
 =======
+>>>>>>> laraxot/dev
+=======
+- **1 file — nesting a 3 livelli con 3 commit-hash diversi**: `.github/CONTRIBUTING.md`
+  (righe 43-58). Tutte le varianti annidate portano allo stesso bullet PSR-2, differiscono
+  solo per maiuscole/minuscole nell'URL (`psr-2-coding-style-guide.md` vs
 >>>>>>> laraxot/dev
   `PSR-2-coding-style-guide.md`). Verificato con `git log --oneline -- .github/CONTRIBUTING.md`
   + `git show <sha>:.github/CONTRIBUTING.md` sui commit pre-corruzione (`1d6d8dfc`, `6770b609`,
@@ -168,7 +189,11 @@ aggiuntiva vista la storia di reset distruttivi concorrenti su questo repo.
 Tutti i 23 file con marker risolti (grep finale: 0 marker in tutto l'albero, esclusi
 vendor/node_modules/graphify-out). `.wip` lasciato `.wip` (motivazione sopra, riga
 <<<<<<< HEAD
+<<<<<<< HEAD
 marker interna rimossa). `.corrected` rimosso (`git rm`). `.github/contributing.md`
+=======
+marker interna rimossa). `.corrected` rimosso (`git rm`). `.github/CONTRIBUTING.md`
+>>>>>>> laraxot/dev
 =======
 marker interna rimossa). `.corrected` rimosso (`git rm`). `.github/CONTRIBUTING.md`
 >>>>>>> laraxot/dev
@@ -237,7 +262,11 @@ stata riconciliata in un secondo intervento nella stessa sessione:
     `dev` (gia' pulito dal cleanup sopra) — risolti sistematicamente con
     `git checkout --ours` dopo verifica puntuale del pattern su un campione
 <<<<<<< HEAD
+<<<<<<< HEAD
     rappresentativo (`.github/contributing.md`, `docs/bmad/README.md`,
+=======
+    rappresentativo (`.github/CONTRIBUTING.md`, `docs/bmad/README.md`,
+>>>>>>> laraxot/dev
 =======
     rappresentativo (`.github/CONTRIBUTING.md`, `docs/bmad/README.md`,
 >>>>>>> laraxot/dev

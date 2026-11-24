@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Completamento Traduzioni Password - 2025"
 type: note
 qmd: "password translation completion completamento traduzioni 2025"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Completamento Traduzioni Password - 2025
 

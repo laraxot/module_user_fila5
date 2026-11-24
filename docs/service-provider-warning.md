@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "service provider warning"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_YOImOQ
+qmd: "service provider warning"
+=======
+>>>>>>> .merge_file_HB5sym
 >>>>>>> laraxot/dev
 ---
 

@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire namespace 2"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire namespace 2"
 >>>>>>> laraxot/dev

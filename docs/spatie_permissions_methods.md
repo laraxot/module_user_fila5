@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_Cocj4g
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Spatie Permission Methods Reference"
 type: note
 qmd: "spatie permissions methods user permission reference"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_nVt3lI
 >>>>>>> laraxot/dev
 # User Module - Spatie Permission Methods Reference
 

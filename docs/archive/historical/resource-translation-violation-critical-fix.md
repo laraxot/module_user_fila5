@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "resource translation violation critical fix"
+>>>>>>> laraxot/dev
 =======
 qmd: "resource translation violation critical fix"
 >>>>>>> laraxot/dev

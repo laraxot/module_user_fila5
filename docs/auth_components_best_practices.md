@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Best Practices per i Componenti di Autenticazione"
 type: note
 qmd: "auth components best practices componenti autenticazione"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Best Practices per i Componenti di Autenticazione 
 

@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Choice of currentTeam() Method in HasTeams Trait"
 type: note
 qmd: "hasteams currentteam method choice trait"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Choice of currentTeam() Method in HasTeams Trait
 

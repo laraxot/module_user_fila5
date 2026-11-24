@@ -9,6 +9,10 @@ related:
   - ../../app/Models/BaseModel.php
   - ../contracts/record-authentication-log-action.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "authentication log never breaks login registro"
+>>>>>>> laraxot/dev
 =======
 qmd: "authentication log never breaks login registro"
 >>>>>>> laraxot/dev

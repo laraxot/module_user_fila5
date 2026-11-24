@@ -8,6 +8,10 @@ related:
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "registration widget fileupload"
+>>>>>>> laraxot/dev
 =======
 qmd: "registration widget fileupload"
 >>>>>>> laraxot/dev

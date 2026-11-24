@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_gP8JNl
+>>>>>>> laraxot/dev
 ---
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: analysis
 qmd: "widget rendering analysis analisi loginwidget docsitaliait"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_sFVTVK
 >>>>>>> laraxot/dev
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
 

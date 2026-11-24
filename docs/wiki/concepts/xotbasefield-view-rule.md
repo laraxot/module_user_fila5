@@ -12,8 +12,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "xotbasefield view rule calculation"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_eUhute
+qmd: "xotbasefield view rule calculation"
+=======
+>>>>>>> .merge_file_6Y7v5s
 >>>>>>> laraxot/dev
 ---
 

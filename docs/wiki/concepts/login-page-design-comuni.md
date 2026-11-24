@@ -16,8 +16,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "login page design comuni italiani alignment"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_nVRWgf
+qmd: "login page design comuni italiani alignment"
+=======
+>>>>>>> .merge_file_ymBZDt
 >>>>>>> laraxot/dev
 ---
 

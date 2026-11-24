@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "syntaxs to"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_DTOwTE
+qmd: "syntaxs to"
+=======
+>>>>>>> .merge_file_or0GAL
 >>>>>>> laraxot/dev
 ---
 

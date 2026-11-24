@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "testing user command integration fix"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_1k39DA
+qmd: "testing user command integration fix"
+=======
+>>>>>>> .merge_file_jg5gvR
 >>>>>>> laraxot/dev
 ---
 

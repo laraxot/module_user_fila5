@@ -11,8 +11,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user auth visibility admin list"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_mHPojb
+qmd: "user auth visibility admin list"
+=======
+>>>>>>> .merge_file_oy6IIq
 >>>>>>> laraxot/dev
 ---
 

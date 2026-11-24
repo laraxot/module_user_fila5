@@ -4,8 +4,15 @@ date: 2026-07-28
 author: claude-ai
 status: BLOCKED_AWAITING_INFRASTRUCTURE
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "status blockers user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_i70mWS
+qmd: "status blockers user"
+=======
+>>>>>>> .merge_file_QRjqpo
 >>>>>>> laraxot/dev
 ---
 
@@ -231,6 +238,9 @@ This constraint is well-applied for git operations but creates a hard ceiling wh
 **Last updated:** 2026-07-28T14:50Z  
 **Next action:** Administrator decision on LFS sync + PHPStan strategy choice
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -241,5 +251,8 @@ This constraint is well-applied for git operations but creates a hard ceiling wh
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

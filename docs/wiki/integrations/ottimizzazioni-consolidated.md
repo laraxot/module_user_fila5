@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "ottimizzazioni consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_O756hi
+qmd: "ottimizzazioni consolidated"
+=======
+>>>>>>> .merge_file_8ObHRc
 >>>>>>> laraxot/dev
 ---
 
@@ -1110,8 +1117,12 @@ class UserResource extends XotBaseResource
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 =======
+>>>>>>> laraxot/dev
+=======
+---
 >>>>>>> laraxot/dev
 
 **Consolidated by:** Phase 2f intelligent merging

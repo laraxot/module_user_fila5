@@ -13,6 +13,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/retrieve-socialite-user-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/retrieve-socialite-user-action.md
  */
 class RetrieveSocialiteUserAction

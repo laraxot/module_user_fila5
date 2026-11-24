@@ -14,10 +14,13 @@ related:
   - "./console-commands.md"
   - "./readme.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -366,9 +369,13 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Comandi Console](README.md)
 =======
 - [README Comandi Console](readme.md)
+>>>>>>> laraxot/dev
+=======
+- [README Comandi Console](README.md)
 >>>>>>> laraxot/dev
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
@@ -395,6 +402,9 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 *Ultimo aggiornamento: 2025-01-27*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

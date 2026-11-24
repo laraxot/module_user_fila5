@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
@@ -15,6 +18,7 @@ export default defineConfig({
     tailwindcss(),
   ],
 });
+<<<<<<< HEAD
 =======
 const dotenvExpand = require('dotenv-expand');
 dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/ }));
@@ -44,4 +48,6 @@ export default defineConfig(
         ],
     }
 );
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

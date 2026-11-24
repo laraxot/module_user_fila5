@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "two factor"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wOxFpz
+qmd: "two factor"
+=======
+>>>>>>> .merge_file_ajswF8
 >>>>>>> laraxot/dev
 ---
 

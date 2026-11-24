@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "sso consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_luqfIP
+qmd: "sso consolidated"
+=======
+>>>>>>> .merge_file_CHxWBa
 >>>>>>> laraxot/dev
 ---
 

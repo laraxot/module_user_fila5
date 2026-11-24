@@ -10,6 +10,10 @@ use Webmozart\Assert\Assert;
 
 /**
  * @see docs/contracts/get-permission-model-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/get-permission-model-action.md
  */
 class GetPermissionModelAction

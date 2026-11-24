@@ -12,8 +12,15 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "header auth flow"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_H5dB9p
+qmd: "header auth flow"
+=======
+>>>>>>> .merge_file_YIDTn3
 >>>>>>> laraxot/dev
 ---
 

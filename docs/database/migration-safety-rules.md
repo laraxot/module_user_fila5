@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Migration Safety Rules - NEVER Destroy Data"
 type: rule
 qmd: "migration safety rules never destroy data"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Migration Safety Rules - NEVER Destroy Data
 

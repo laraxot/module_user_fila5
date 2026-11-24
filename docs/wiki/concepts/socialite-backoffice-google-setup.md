@@ -14,8 +14,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "socialite backoffice google setup"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_c81is0
+qmd: "socialite backoffice google setup"
+=======
+>>>>>>> .merge_file_FqtQ12
 >>>>>>> laraxot/dev
 ---
 

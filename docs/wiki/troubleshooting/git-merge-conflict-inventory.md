@@ -23,6 +23,9 @@ status: draft
 # Git — inventario conflitti merge (User)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ## Stato 2026-11-24 (post merge_remote_repo_2)
 
 - `module.json` valido (providers User+AdminPanel+Passport+Socialite, requires Xot+UI).
@@ -31,6 +34,9 @@ status: draft
 - Verify: `php artisan about --only=environment` OK; `phpstan analyse Modules/User` → `errors=0`, `file_errors=0`.
 - Restano marker in `docs/` e `tests/` (fuori scope boot/PHPStan: tests esclusi da `phpstan.neon`).
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ## Stato 2026-11-16
@@ -62,6 +68,9 @@ File con marker (da risolvere forward-only se riappaiono):
 - Non risolvere in parallelo senza lock; preferire wiki canonico `docs/wiki/` rispetto a duplicati root `docs/*.md`.
 - Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -96,5 +105,8 @@ Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file
 
 - Inventory generated from `rg -l "^(<<<<<<<|=======|>>>>>>>)"`.
 - Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

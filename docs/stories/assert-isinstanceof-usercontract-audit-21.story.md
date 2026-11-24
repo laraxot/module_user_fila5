@@ -26,8 +26,15 @@ github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "assert isinstanceof usercontract audit 21 story"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_dFZx6N
+qmd: "assert isinstanceof usercontract audit 21 story"
+=======
+>>>>>>> .merge_file_HZorgP
 >>>>>>> laraxot/dev
 ---
 

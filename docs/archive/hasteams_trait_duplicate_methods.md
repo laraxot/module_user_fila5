@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: note
 qmd: "hasteams trait duplicate methods analisi metodi"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Analisi metodi duplicati in HasTeams (trait)
 

@@ -15,8 +15,15 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "agent confidence protocol user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_NAKPXs
+qmd: "agent confidence protocol user"
+=======
+>>>>>>> .merge_file_TAsVam
 >>>>>>> laraxot/dev
 ---
 

@@ -9,8 +9,15 @@ module: User
 related: [xotbase-migration-religion, one-migration-per-model, production-500-deleted-at]
 tags: [migrations, users, convention, production]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "users migrations consolidation story migrazioni consolidamento"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_pn7w4y
+qmd: "users migrations consolidation story migrazioni consolidamento"
+=======
+>>>>>>> .merge_file_EJ02ko
 >>>>>>> laraxot/dev
 ---
 

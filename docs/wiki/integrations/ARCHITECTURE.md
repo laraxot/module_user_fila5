@@ -5,8 +5,15 @@ tags: [module, architecture, design]
 created: 2026-07-28
 updated: 2026-07-28
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "architecture user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_RIqYMs
+qmd: "architecture user"
+=======
+>>>>>>> .merge_file_Tk3s5F
 >>>>>>> laraxot/dev
 ---
 

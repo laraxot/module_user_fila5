@@ -4,6 +4,10 @@ date: 2026-07-28
 author: claude-ai
 status: BLOCKED_ON_SERVER_STATE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "git push lfs issue 28 objects"
+>>>>>>> laraxot/dev
 =======
 qmd: "git push lfs issue 28 objects"
 >>>>>>> laraxot/dev

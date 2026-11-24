@@ -4,6 +4,10 @@ superseded: true
 related:
   - ./livewire-inventory.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation benefits"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation benefits"
 >>>>>>> laraxot/dev

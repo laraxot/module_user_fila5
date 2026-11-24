@@ -3,8 +3,15 @@ module: User
 concept: Two-Factor Authentication
 last_updated: 2026-04-15
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "twofactorauthentication twofactor authentication 2fa"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_eLPwjC
+qmd: "twofactorauthentication twofactor authentication 2fa"
+=======
+>>>>>>> .merge_file_SbExWG
 >>>>>>> laraxot/dev
 ---
 

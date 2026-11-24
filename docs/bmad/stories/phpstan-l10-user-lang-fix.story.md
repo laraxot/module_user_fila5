@@ -15,6 +15,10 @@ references:
   - laravel/Modules/Lang/docs/stories/8.10.phpstan-cluster2-lang-pdnd-ui-2026-10-06.story.md
   - laravel/Modules/Lang/docs/stories/8.11-phpstan-l10-test-types-fix.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan l10 user lang fix story"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan l10 user lang fix story"
 >>>>>>> laraxot/dev

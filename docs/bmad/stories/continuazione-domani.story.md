@@ -1,6 +1,10 @@
 ---
 status: backlog
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "continuazione domani story"
+>>>>>>> laraxot/dev
 =======
 qmd: "continuazione domani story"
 >>>>>>> laraxot/dev

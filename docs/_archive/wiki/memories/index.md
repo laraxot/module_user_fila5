@@ -8,6 +8,10 @@ related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "memories"
+>>>>>>> laraxot/dev
 =======
 qmd: "memories"
 >>>>>>> laraxot/dev

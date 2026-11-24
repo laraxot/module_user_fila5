@@ -12,8 +12,15 @@ related:
   - "./02-next.md"
   - "./03-later.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "workstreams"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wB3vcr
+qmd: "workstreams"
+=======
+>>>>>>> .merge_file_Twc51e
 >>>>>>> laraxot/dev
 ---
 

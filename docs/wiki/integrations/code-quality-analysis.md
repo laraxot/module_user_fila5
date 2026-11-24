@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "code quality analysis user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_SSRzKl
+qmd: "code quality analysis user"
+=======
+>>>>>>> .merge_file_CdDO2y
 >>>>>>> laraxot/dev
 ---
 

@@ -29,6 +29,10 @@ github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "dashboard lang collateral damage story reale"
+>>>>>>> laraxot/dev
 =======
 qmd: "dashboard lang collateral damage story reale"
 >>>>>>> laraxot/dev

@@ -14,6 +14,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/update-user-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/update-user-action.md
  */
 class UpdateUserAction

@@ -11,6 +11,10 @@ depends_on: []
 related: ["12.2.hardcoded-labels-translation.story.md (questa la continua, non la sostituisce)", "lang-files-empty-stub-corruption.story.md", "14.7.lang-stub-corruption-audit-scope.story.md", "auth-i18n-all-locales.story.md", "5.1.user-lang-phpstan-debt.story.md", "user-pagine-appearance-salvataggio-o-nascondi.story.md (porta le 6 righe di Clusters/Appearance/Pages)"]
 tags: [bmad, i18n, lang, filament, ui]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user stringhe ui tradotte story filament"
+>>>>>>> laraxot/dev
 =======
 qmd: "user stringhe ui tradotte story filament"
 >>>>>>> laraxot/dev

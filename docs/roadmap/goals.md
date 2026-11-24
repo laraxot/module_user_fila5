@@ -12,8 +12,15 @@ related:
   - "./02-next.md"
   - "./03-later.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "goals"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_ZnN5Ur
+qmd: "goals"
+=======
+>>>>>>> .merge_file_xljJK4
 >>>>>>> laraxot/dev
 ---
 

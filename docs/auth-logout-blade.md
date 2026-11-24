@@ -131,6 +131,9 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 - La pagina è accessibile all'URL `/{locale}/auth/logout`.
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

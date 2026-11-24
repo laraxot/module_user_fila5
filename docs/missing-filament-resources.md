@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "missing filament resources"
+>>>>>>> laraxot/dev
 =======
 qmd: "missing filament resources"
 >>>>>>> laraxot/dev

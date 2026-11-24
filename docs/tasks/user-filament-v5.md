@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_bZPfWO
+>>>>>>> laraxot/dev
 ---
 title: "Task: User Filament v5 Alignment (Clusters)"
 type: note
 qmd: "user filament v5 task alignment clusters"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_Oocj4f
 >>>>>>> laraxot/dev
 # Task: User Filament v5 Alignment (Clusters)
 

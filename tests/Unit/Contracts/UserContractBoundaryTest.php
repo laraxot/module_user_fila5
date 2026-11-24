@@ -31,4 +31,8 @@ test('user boundaries depend on UserContract instead of BaseUser', function (): 
     }
 
     expect($violations)->toBe([], 'Runtime boundaries must check UserContract, not BaseUser.');
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> laraxot/dev

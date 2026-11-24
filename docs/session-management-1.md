@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "session management 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_IwIMQY
+qmd: "session management 1"
+=======
+>>>>>>> .merge_file_v0yxRu
 >>>>>>> laraxot/dev
 ---
 

@@ -11,6 +11,9 @@ related:
 
 > Questo file è stato rinominato in [phpstan-belongstomany-covariance.md](phpstan-belongstomany-covariance.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -83,5 +86,8 @@ estendono `Model` e usano `HasTeams`, ma `HasTeams::teams()` chiama
 `$this->belongsToManyX()` che è definito in `RelationX` trait.
 
 **Fix:** Aggiungere `use Modules\Xot\Models\Traits\RelationX;` alle fixture.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

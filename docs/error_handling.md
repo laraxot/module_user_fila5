@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Gestione degli Errori nelle Blade di Autenticazione"
 type: note
 qmd: "error handling gestione errori nelle blade"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Gestione degli Errori nelle Blade di Autenticazione
 

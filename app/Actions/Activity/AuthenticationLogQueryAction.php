@@ -13,6 +13,10 @@ use Spatie\QueueableAction\QueueableAction;
  * ponytail: Query builder per AuthenticationLog.
  *
  * @see docs/contracts/authentication-log-query-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/authentication-log-query-action.md
  */
 final class AuthenticationLogQueryAction

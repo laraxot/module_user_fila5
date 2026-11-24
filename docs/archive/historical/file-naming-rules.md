@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "naming rules"
+>>>>>>> laraxot/dev
 =======
 qmd: "naming rules"
 >>>>>>> laraxot/dev

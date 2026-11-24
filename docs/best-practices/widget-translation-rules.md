@@ -161,9 +161,13 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Widget Conventions](filament-widgets.md)
 =======
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+>>>>>>> laraxot/dev
+=======
+- [Filament Widget Conventions](filament-widgets.md)
 >>>>>>> laraxot/dev
 ## Memory Integration
 This document serves as a reference for:

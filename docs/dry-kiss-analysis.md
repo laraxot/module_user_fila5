@@ -634,6 +634,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ---
@@ -762,5 +763,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

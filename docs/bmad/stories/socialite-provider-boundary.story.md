@@ -10,6 +10,10 @@ related:
   - ../socialite-provider-boundary-prd.md
   - ../socialite-provider-boundary-architecture.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "socialite provider boundary story move config"
+>>>>>>> laraxot/dev
 =======
 qmd: "socialite provider boundary story move config"
 >>>>>>> laraxot/dev

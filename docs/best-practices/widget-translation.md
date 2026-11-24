@@ -12,6 +12,10 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "widget translation"
+>>>>>>> laraxot/dev
 =======
 qmd: "widget translation"
 >>>>>>> laraxot/dev

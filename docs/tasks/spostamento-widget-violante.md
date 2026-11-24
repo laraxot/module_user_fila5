@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_R7qHFr
+>>>>>>> laraxot/dev
 ---
 title: "Task: Spostamento Widget Violante"
 type: note
 qmd: "spostamento widget violante task"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_aEYPYV
 >>>>>>> laraxot/dev
 # Task: Spostamento Widget Violante
 

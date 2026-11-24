@@ -14,6 +14,10 @@ use Spatie\QueueableAction\QueueableAction;
  * e lo emettono solo i controller che controllano id e hash prima di `markEmailAsVerified()`.
  *
  * @see docs/contracts/resend-email-verification-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/resend-email-verification-action.md
  */
 class ResendEmailVerificationAction

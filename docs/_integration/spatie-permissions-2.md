@@ -12,6 +12,10 @@ related:
   - "./payment.md"
   - "./phpstan.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "spatie permissions 2"
+>>>>>>> laraxot/dev
 =======
 qmd: "spatie permissions 2"
 >>>>>>> laraxot/dev

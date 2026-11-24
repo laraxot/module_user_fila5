@@ -9,8 +9,15 @@ module: User
 related: [DCP-290, front-office-audit]
 tags: [auth, design-comuni, folio, volt, ui-ux]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "auth verify confirm design comuni shell"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_kCXDpt
+qmd: "auth verify confirm design comuni shell"
+=======
+>>>>>>> .merge_file_zNgPYZ
 >>>>>>> laraxot/dev
 ---
 

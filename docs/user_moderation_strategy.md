@@ -6,8 +6,15 @@ tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user moderation strategy"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_1uCWV9
+qmd: "user moderation strategy"
+=======
+>>>>>>> .merge_file_ZcoXlU
 >>>>>>> laraxot/dev
 ---
 

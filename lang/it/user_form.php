@@ -6,8 +6,18 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome visualizzato',
+<<<<<<< HEAD
             'helper_text' => 'Il nome mostrato nel sito e nei pannelli.',
             'placeholder' => 'Inserisci il nome visualizzato',
+=======
+<<<<<<< .merge_file_ZnW0AC
+            'helper_text' => 'Il nome mostrato nel sito e nei pannelli.',
+            'placeholder' => 'Inserisci il nome visualizzato',
+=======
+            'placeholder' => 'Inserisci il nome visualizzato',
+            'helper_text' => 'Il nome mostrato nel sito e nei pannelli.',
+>>>>>>> .merge_file_A0xDyF
+>>>>>>> laraxot/dev
             'description' => 'Nome visualizzato',
         ],
         'created_at' => [
@@ -56,8 +66,18 @@ return [
             'placeholder' => 'Incolla il token',
         ],
         'state' => [
+<<<<<<< HEAD
             'description' => 'Stato corrente',
             'label' => 'Stato',
+=======
+<<<<<<< .merge_file_ZnW0AC
+            'description' => 'Stato corrente',
+            'label' => 'Stato',
+=======
+            'label' => 'Stato',
+            'description' => 'Stato corrente',
+>>>>>>> .merge_file_A0xDyF
+>>>>>>> laraxot/dev
             'placeholder' => 'Seleziona lo stato',
             'helper_text' => 'Stato del record',
         ],
@@ -66,6 +86,10 @@ return [
             'placeholder' => 'Seleziona il tipo',
             'helper_text' => 'Tipo di utente o record',
             'description' => 'Tipo',
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ZnW0AC
+>>>>>>> laraxot/dev
         ],
         'roles' => [
             'label' => 'Ruoli',
@@ -75,6 +99,11 @@ return [
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_A0xDyF
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [

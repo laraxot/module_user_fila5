@@ -20,6 +20,10 @@ excluded_scope:
   - app/Filament/Widgets/Profile/DeleteAccountWidget.php
   - app/Filament/Widgets/PrivacyPolicyWidget.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user clustering widgets actions audit story"
+>>>>>>> laraxot/dev
 =======
 qmd: "user clustering widgets actions audit story"
 >>>>>>> laraxot/dev

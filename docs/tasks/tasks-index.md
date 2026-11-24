@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_3sZFGf
+>>>>>>> laraxot/dev
 ---
 title: "Indice task - Modulo User"
 type: note
 qmd: "tasks indice task user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_YC1wkn
 >>>>>>> laraxot/dev
 # Indice task - Modulo User
 

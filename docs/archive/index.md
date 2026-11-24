@@ -1,13 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Documentation Index"
 type: note
 qmd: "index"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 

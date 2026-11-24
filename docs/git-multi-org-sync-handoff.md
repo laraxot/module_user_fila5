@@ -10,6 +10,10 @@ issues:
 discussions:
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "git multi org sync handoff multiorg"
+>>>>>>> laraxot/dev
 =======
 qmd: "git multi org sync handoff multiorg"
 >>>>>>> laraxot/dev

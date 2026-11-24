@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: analysis
 qmd: "dry kiss analysis user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo User
 

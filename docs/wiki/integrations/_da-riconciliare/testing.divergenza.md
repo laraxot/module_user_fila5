@@ -6,8 +6,15 @@ tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "testing divergenza riconciliare testingmd"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_pEe5hD
+qmd: "testing divergenza riconciliare testingmd"
+=======
+>>>>>>> .merge_file_8JE0rD
 >>>>>>> laraxot/dev
 ---
 

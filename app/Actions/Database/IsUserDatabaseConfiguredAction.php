@@ -21,6 +21,10 @@ use Spatie\QueueableAction\QueueableAction;
  * Legge solo la configurazione: non apre la connessione.
  *
  * @see docs/contracts/is-user-database-configured-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/is-user-database-configured-action.md
  */
 final class IsUserDatabaseConfiguredAction

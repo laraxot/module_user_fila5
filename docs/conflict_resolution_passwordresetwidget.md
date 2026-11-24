@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione Conflitti PasswordResetWidget.php"
 type: note
 qmd: "conflict resolution passwordresetwidget risoluzione conflitti passwordresetwidgetphp"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
@@ -98,7 +104,11 @@ Verificare che:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 =======
 - [User Module Documentation](readme.md)
 >>>>>>> laraxot/dev

@@ -14,8 +14,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "redundancy audit user 20260521"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_RbsDnZ
+qmd: "redundancy audit user 20260521"
+=======
+>>>>>>> .merge_file_wQAoGS
 >>>>>>> laraxot/dev
 ---
 
@@ -39,6 +46,9 @@ Suggested cleanup order:
 3. Move shared UI primitives to `Modules/UI`; leave only User-specific wrappers in User.
 4. Normalize docs to lowercase-kebab-case, then update local indexes.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 ---
@@ -74,5 +84,8 @@ Suggested cleanup order:
 2. Audit migrations by table name before deleting any duplicate timestamp.
 3. Move shared UI primitives to `Modules/UI`; leave only User-specific wrappers in User.
 4. Normalize docs to lowercase-kebab-case, then update local indexes.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

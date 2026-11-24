@@ -14,8 +14,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "ridondanze legacy cluster duplicata user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QZ6dwO
+qmd: "ridondanze legacy cluster duplicata user"
+=======
+>>>>>>> .merge_file_gGMLf3
 >>>>>>> laraxot/dev
 ---
 
@@ -44,9 +51,25 @@ Esempio `testing.md` (contenuti diversi, nome ambiguo):
 
 - `docs/bugs/testing.md` — bug `make:filament-user`, **non** guida test
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
 =======
 - `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/TESTING.md`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QZ6dwO
+- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
+=======
+<<<<<<< HEAD
+- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
+=======
+<<<<<<< HEAD
+- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/TESTING.md`
+=======
+- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_gGMLf3
 >>>>>>> laraxot/dev
 
 Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `testing.md` in `bugs/*`.

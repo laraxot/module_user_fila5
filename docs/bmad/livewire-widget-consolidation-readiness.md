@@ -5,6 +5,10 @@ related:
   - ./epics.md
   - ./livewire-inventory.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation readiness"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation readiness"
 >>>>>>> laraxot/dev

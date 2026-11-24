@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "redundancy analysis"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_30KeIf
+qmd: "redundancy analysis"
+=======
+>>>>>>> .merge_file_wBceu9
 >>>>>>> laraxot/dev
 ---
 

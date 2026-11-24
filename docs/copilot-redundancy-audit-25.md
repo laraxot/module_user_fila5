@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Copilot Redundancy Audit 25"
 type: audit
 qmd: "copilot redundancy audit 25"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 Copilot Redundancy Audit — 2026-05-25
 

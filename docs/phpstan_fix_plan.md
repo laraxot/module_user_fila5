@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_wORShD
+>>>>>>> laraxot/dev
 ---
 title: "User Module - PHPStan Level 10 Fix Plan"
 type: note
 qmd: "phpstan fix plan user level"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_5hhPEM
 >>>>>>> laraxot/dev
 # User Module - PHPStan Level 10 Fix Plan
 

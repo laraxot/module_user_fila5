@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "BMAD + Second Brain — Session Summary (2026-09-04)"
 type: story
 qmd: "bmad session second brain summary 20260904"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # BMAD + Second Brain — Session Summary (2026-09-04)
 
@@ -16,9 +22,13 @@ qmd: "bmad session second brain summary 20260904"
 
 ## Diagnose
 <<<<<<< HEAD
+<<<<<<< HEAD
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
 =======
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+>>>>>>> laraxot/dev
+=======
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
 >>>>>>> laraxot/dev
 - `XotData::getProfileClass()`: `main_module=''` → `InvalidArgumentException`
 - `Profile.php`: `@property-read User|null $user` (non esistente)
@@ -34,9 +44,13 @@ qmd: "bmad session second brain summary 20260904"
 - `BaseProfile.php`: `$incrementing=false`, `$keyType='string'`, UUID `id` in `booted()`
 - Test batch: `use Modules\User\Models\User;` in 8 file `tests/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<nome progetto>` → `User` sostituito nel codice
 =======
 - `Quaeris` → `User` sostituito nel codice
+>>>>>>> laraxot/dev
+=======
+- `<nome progetto>` → `User` sostituito nel codice
 >>>>>>> laraxot/dev
 
 ## Verify

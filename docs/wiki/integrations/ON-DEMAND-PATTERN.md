@@ -8,8 +8,15 @@ related:
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "on demand pattern ondemand user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_lHxenS
+qmd: "on demand pattern ondemand user"
+=======
+>>>>>>> .merge_file_WVBTAr
 >>>>>>> laraxot/dev
 ---
 

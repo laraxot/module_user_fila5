@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "uuid trait conflict resolution"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_UJauVh
+qmd: "uuid trait conflict resolution"
+=======
+>>>>>>> .merge_file_QB2APZ
 >>>>>>> laraxot/dev
 ---
 

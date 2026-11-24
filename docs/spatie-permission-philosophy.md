@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "spatie permission philosophy"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_0F2HWo
+qmd: "spatie permission philosophy"
+=======
+>>>>>>> .merge_file_BaGsG8
 >>>>>>> laraxot/dev
 ---
 

@@ -9,6 +9,10 @@ related:
   - ../../app/Actions/Auth/RevokeUserAccessAction.php
   - ../stories/account-deletion-and-email-verification.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "deleted account blocked user provider laccount"
+>>>>>>> laraxot/dev
 =======
 qmd: "deleted account blocked user provider laccount"
 >>>>>>> laraxot/dev

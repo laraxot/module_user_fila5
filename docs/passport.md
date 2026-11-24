@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "passport"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_akRMUD
+qmd: "passport"
+=======
+>>>>>>> .merge_file_QA4ONn
 >>>>>>> laraxot/dev
 ---
 

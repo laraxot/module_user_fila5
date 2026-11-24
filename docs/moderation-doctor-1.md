@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "moderation doctor 1"
+>>>>>>> laraxot/dev
 =======
 qmd: "moderation doctor 1"
 >>>>>>> laraxot/dev

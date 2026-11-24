@@ -8,8 +8,15 @@ related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "memories"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Rv6vW1
+qmd: "memories"
+=======
+>>>>>>> .merge_file_7kUkVB
 >>>>>>> laraxot/dev
 ---
 
@@ -49,6 +56,10 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 3. Aggiorna questo indice se la Memories e' ricorrente
 4. Committa: `docs: add memories <nome>`
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev

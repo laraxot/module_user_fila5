@@ -11,6 +11,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/analyze-socialite-email-domain-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/analyze-socialite-email-domain-action.md
  */
 final class AnalyzeSocialiteEmailDomainAction

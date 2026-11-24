@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "team user permissions fix"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_AR3UnK
+qmd: "team user permissions fix"
+=======
+>>>>>>> .merge_file_uNA5rc
 >>>>>>> laraxot/dev
 ---
 

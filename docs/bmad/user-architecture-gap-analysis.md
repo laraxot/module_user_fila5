@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
 =======
+>>>>>>> laraxot/dev
+=======
+# User — Analisi architetturale e gap (BMAD, 2026-09-22)
+
 >>>>>>> laraxot/dev
 ---
 title: "User: Analisi architetturale e gap (BMAD, 2026-09-22)"
@@ -12,6 +17,11 @@ tags: [docs, user, bmad]
 qmd: "user   analisi architetturale e gap (bmad, 2026-09-22) user"
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# User — Analisi architetturale e gap (BMAD, 2026-09-22)
+
+>>>>>>> laraxot/dev
 =======
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 

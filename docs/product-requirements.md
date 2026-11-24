@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "product requirements productrequirements puntatore"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_BgBKkd
+qmd: "product requirements productrequirements puntatore"
+=======
+>>>>>>> .merge_file_1Fssg1
 >>>>>>> laraxot/dev
 ---
 

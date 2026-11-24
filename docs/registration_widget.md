@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_DM9Xob
+>>>>>>> laraxot/dev
 ---
 title: "Registration Widget Documentation"
 type: note
 qmd: "registration widget"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_8hdAAy
 >>>>>>> laraxot/dev
 # Registration Widget Documentation
 

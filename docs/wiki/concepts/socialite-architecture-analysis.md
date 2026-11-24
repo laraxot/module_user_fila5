@@ -16,8 +16,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "socialite architecture analysis oauth integration without"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_bxd18Z
+qmd: "socialite architecture analysis oauth integration without"
+=======
+>>>>>>> .merge_file_urcgw3
 >>>>>>> laraxot/dev
 ---
 

@@ -7,6 +7,10 @@ related:
   - "./profile-uuid-philosophy-1.md"
   - "./profile-uuid-philosophy.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "migration safety rules"
+>>>>>>> laraxot/dev
 =======
 qmd: "migration safety rules"
 >>>>>>> laraxot/dev

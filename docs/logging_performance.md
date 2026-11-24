@@ -6,6 +6,10 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "logging performance optimization"
+>>>>>>> laraxot/dev
 =======
 qmd: "logging performance optimization"
 >>>>>>> laraxot/dev

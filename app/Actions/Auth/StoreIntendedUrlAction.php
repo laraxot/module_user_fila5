@@ -17,6 +17,10 @@ use function Safe\preg_match;
  * barra degli indirizzi, quindi senza questo controllo il login diventerebbe un redirect aperto verso un sito qualunque.
  *
  * @see docs/contracts/store-intended-url-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/store-intended-url-action.md
  */
 class StoreIntendedUrlAction

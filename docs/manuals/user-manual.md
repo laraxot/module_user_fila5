@@ -5,6 +5,10 @@ status: active
 module: User
 updated: 2026-11-23
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user manual manuale utente"
+>>>>>>> laraxot/dev
 =======
 qmd: "user manual manuale utente"
 >>>>>>> laraxot/dev

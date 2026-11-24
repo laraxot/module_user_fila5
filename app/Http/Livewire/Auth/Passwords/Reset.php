@@ -76,7 +76,11 @@ class Reset extends Component
         $translated = trans($response);
         Assert::string($translated);
 
+<<<<<<< HEAD
         if (Password::PASSWORD_RESET === $response) {
+=======
+        if ($response === Password::PASSWORD_RESET) {
+>>>>>>> laraxot/dev
             session()->flash($translated);
 
             return redirect(route('home'));

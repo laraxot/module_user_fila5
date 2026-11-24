@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "navigation consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_uY4icU
+qmd: "navigation consolidated"
+=======
+>>>>>>> .merge_file_jV7Tzv
 >>>>>>> laraxot/dev
 ---
 

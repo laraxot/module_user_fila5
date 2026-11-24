@@ -11,6 +11,10 @@ acceptance_criteria:
   - Update BMAD story with findings
   - One commit per fix with clear message
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan l10 user phase2 story phase"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan l10 user phase2 story phase"
 >>>>>>> laraxot/dev

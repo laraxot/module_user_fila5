@@ -5,6 +5,10 @@ tags: [user, authentication, quick-start]
 created: 2026-07-28
 updated: 2026-07-28
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "quick start user"
+>>>>>>> laraxot/dev
 =======
 qmd: "quick start user"
 >>>>>>> laraxot/dev

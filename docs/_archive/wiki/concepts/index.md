@@ -5,6 +5,10 @@ tags: [concepts, User]
 created: 2026-05-11
 updated: 2026-07-27
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "concepts user"
+>>>>>>> laraxot/dev
 =======
 qmd: "concepts user"
 >>>>>>> laraxot/dev

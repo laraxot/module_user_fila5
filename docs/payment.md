@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "payment"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_blBWZw
+qmd: "payment"
+=======
+>>>>>>> .merge_file_aixeCY
 >>>>>>> laraxot/dev
 ---
 

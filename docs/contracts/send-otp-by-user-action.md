@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Contratto — SendOtpByUserAction"
 type: contract
 action: "Modules\User\Actions\Otp\SendOtpByUserAction"
@@ -15,16 +16,31 @@ updated: 2026-11-24
 action: "Modules\\User\\Actions\\Otp\\SendOtpByUserAction"
 qmd: "SendOtpByUserAction OTP password temporanea invio email scadenza is_otp notifica Filament hash"
 >>>>>>> laraxot/dev
+=======
+title: "Contratto — SendOtpByUserAction"
+type: contract
+action: "Modules\\User\\Actions\\Otp\\SendOtpByUserAction"
+tags: [contract, action, otp, mail]
+created: 2026-11-24
+updated: 2026-11-24
+owner: User
+status: accepted
+qmd: "SendOtpByUserAction OTP password temporanea invio email scadenza is_otp notifica Filament hash"
+>>>>>>> laraxot/dev
 ---
 
 # SendOtpByUserAction
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Sorgente: `app/Actions/Otp/SendOtpByUserAction.php`.
 
 ## Input
 
 - `UserContract $user`: destinatario; dipendenze iniettate `PasswordData` (scadenza), `Str`, `Otp\Hasher`.
+<<<<<<< HEAD
 =======
 Genera una password temporanea (OTP), la salva come hash con scadenza e la invia all'utente via email. Codice: `app/Actions/Otp/SendOtpByUserAction.php:21-103`.
 
@@ -32,6 +48,8 @@ Genera una password temporanea (OTP), la salva come hash con scadenza e la invia
 
 - `UserContract $user`: destinatario (`execute`, riga 36).
 - Dipendenze: `PasswordData` (scadenza in minuti), `Str` (generatore casuale), `Otp\Hasher` (wrapper dello stesso namespace, righe 25-29).
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Output
@@ -41,6 +59,9 @@ Genera una password temporanea (OTP), la salva come hash con scadenza e la invia
 ## Invarianti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 | ID | Regola | Group Pest |
 |---|---|---|
 | USER-OTP-SEND-INV-1 | La password temporanea (12 caratteri casuali) si salva solo come hash; in chiaro esiste solo nella notifica. | — |
@@ -53,7 +74,11 @@ aggiunge quando il test gira verde.
 ## Effetti collaterali
 
 - `update()` dell'utente: **sostituisce la password** corrente con l'OTP.
+<<<<<<< HEAD
 - Notifica mail (`Notification::route('mail', ...)`), in coda o sincrona secondo la notifica.
+=======
+- Notifica mail (`Notification::route('mail', ...)`): `Notifications\Auth\Otp` implementa `ShouldQueue`, quindi l'invio è in coda.
+>>>>>>> laraxot/dev
 - Notifica Filament di successo nella sessione corrente.
 
 ## Errori
@@ -64,6 +89,7 @@ aggiunge quando il test gira verde.
 
 - Non verifica l'OTP (`VerifyOtpHashAction`) né forza il cambio password al login successivo (lo fa chi legge `is_otp`).
 - Non limita la frequenza degli invii: chi la espone in una pagina deve frenarla.
+<<<<<<< HEAD
 =======
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
@@ -85,4 +111,8 @@ Nell'ordine: UPDATE su `users` (password, `is_otp`, `password_expires_at`), poi 
 - Non verifica che `$user->email` sia valorizzato prima di inviare (dubbio: l'indirizzo può essere null).
 - Non applica limiti di frequenza.
 - Usa un'API UI (notifica Filament) dentro un'Action di dominio: effetto da spostare se l'Action deve girare in coda o via API.
+>>>>>>> laraxot/dev
+=======
+- Non verifica che `$user->email` sia valorizzato prima di inviare: l'indirizzo può essere null.
+- Mescola un effetto UI (notifica Filament di successo) con la logica di dominio: se l'Action deve girare in coda o via API, quell'effetto va spostato.
 >>>>>>> laraxot/dev

@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
@@ -20,6 +21,16 @@ See canonical documentation: ../../../Themes/docs/shared-components/redundancy-f
   - "./actions-path-convention.md"
 status: draft
 ---
+=======
+<<<<<<< .merge_file_GtWOLs
+qmd: "redundancy fixes"
+status: draft
+=======
+>>>>>>> .merge_file_cuKjnM
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+>>>>>>> laraxot/dev
 
 # Correzioni Ridondanze - Gennaio 2026
 
@@ -128,23 +139,35 @@ Prima di committare, verifica:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
+=======
+>>>>>>> laraxot/dev
 - [Redundancy Rules](../../Xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_GtWOLs
+=======
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: Gennaio 2026*
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+<<<<<<< HEAD
 =======
 qmd: "redundancy fixes"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cuKjnM
 >>>>>>> laraxot/dev

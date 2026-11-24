@@ -5,6 +5,10 @@ type: note
 status: active
 updated: '2026-11-23'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "git conflicts resolution"
+>>>>>>> laraxot/dev
 =======
 qmd: "git conflicts resolution"
 >>>>>>> laraxot/dev

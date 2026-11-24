@@ -6,8 +6,15 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "quality consolidated"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_H4SxcM
+qmd: "quality consolidated"
+=======
+>>>>>>> .merge_file_G7XAAj
 >>>>>>> laraxot/dev
 ---
 

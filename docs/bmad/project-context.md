@@ -1,6 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Project context — SuperAdmin widget"
 
+=======
+>>>>>>> laraxot/dev
 title: "Project context: SuperAdmin widget"
 type: constitution
 module: User
@@ -12,6 +15,10 @@ related:
   - ./architecture.md
   - ./tech-spec.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "project context superadmin widget"
+>>>>>>> laraxot/dev
 =======
 qmd: "project context superadmin widget"
 >>>>>>> laraxot/dev

@@ -9,6 +9,10 @@ converted_from: coverage_clean.txt
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "coverage clean"
+>>>>>>> laraxot/dev
 =======
 qmd: "coverage clean"
 >>>>>>> laraxot/dev

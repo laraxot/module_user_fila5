@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_z3gjUt
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Product Launch Plan"
 type: note
 qmd: "user product launch plan"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_FIWcWs
 >>>>>>> laraxot/dev
 # User Module - Product Launch Plan
 

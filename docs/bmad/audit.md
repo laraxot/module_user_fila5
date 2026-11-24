@@ -10,6 +10,9 @@ qmd: "audit BMAD User sintesi finding P0 P1 PHPStan Pest"
 # Audit BMAD — User
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
 
 ## Sintesi (2026-11-16)
@@ -31,6 +34,9 @@ SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md) · scopo: [purpose.md](./purpose.md)

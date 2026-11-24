@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan level 10es"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_xpjnKP
+qmd: "phpstan level 10es"
+=======
+>>>>>>> .merge_file_1u0std
 >>>>>>> laraxot/dev
 ---
 

@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "phpstan fix roadmap"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_BsIesz
+qmd: "phpstan fix roadmap"
+=======
+>>>>>>> .merge_file_HGCbyO
 >>>>>>> laraxot/dev
 ---
 

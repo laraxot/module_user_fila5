@@ -9,6 +9,10 @@ related:
   - "./styling.md"
   - "./usage.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "index"
+>>>>>>> laraxot/dev
 =======
 qmd: "index"
 >>>>>>> laraxot/dev

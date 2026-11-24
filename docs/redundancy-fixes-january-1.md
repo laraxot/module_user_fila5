@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "redundancy fixes january 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_SyBdgx
+qmd: "redundancy fixes january 1"
+=======
+>>>>>>> .merge_file_oGdvzO
 >>>>>>> laraxot/dev
 ---
 

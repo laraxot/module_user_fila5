@@ -3,8 +3,23 @@
 declare(strict_types=1);
 
 use Modules\User\Datas\PasswordData;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+=======
+<<<<<<< .merge_file_0qioLU
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+=======
+<<<<<<< HEAD
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+=======
+use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_rKDgy2
+>>>>>>> laraxot/dev
 
 use function Safe\file_get_contents;
 

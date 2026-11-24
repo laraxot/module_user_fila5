@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "ottimizzazioni superry kiss"
+>>>>>>> laraxot/dev
 =======
 qmd: "ottimizzazioni superry kiss"
 >>>>>>> laraxot/dev

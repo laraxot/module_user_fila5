@@ -128,11 +128,30 @@ applicabile), mai contro il nome del file.
 **Nota metodologica critica**: questo modulo usa connection DB per-model
 diverse da quella di default (`protected $connection = 'user'` → DB fisico
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_oVnze2
+>>>>>>> laraxot/dev
 `<nome progetto>_user`; `'<nome progetto>'` per il model `Profile` concreto → DB
 `<nome progetto>_data` ma schema separato). Un primo giro di verifica fatto con
 =======
 `quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
 `quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+<<<<<<< HEAD
+=======
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+<<<<<<< HEAD
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`<nome progetto>_user`; `'<nome progetto>'` per il model `Profile` concreto → DB
+`<nome progetto>_data` ma schema separato). Un primo giro di verifica fatto con
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ux2BXP
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 `Schema::getColumnListing()` (connection di default, senza specificarla) ha
 prodotto **8 falsi positivi** (`grant_types`, `redirect_uris`, `owner_id`,
@@ -167,9 +186,25 @@ BaseUsersTable, ClientsTable.
 - `BaseProfilesTable.php`: `user.name` (relazione, non verificabile via
   Schema, saltata). `first_name`/`last_name`/`email` presenti su
 <<<<<<< HEAD
+<<<<<<< HEAD
   `Schema::connection('<nome progetto>')->getColumnListing('profiles')`. `is_active`
 =======
   `Schema::connection('quaeris')->getColumnListing('profiles')`. `is_active`
+=======
+<<<<<<< .merge_file_oVnze2
+  `Schema::connection('<nome progetto>')->getColumnListing('profiles')`. `is_active`
+=======
+  `Schema::connection('quaeris')->getColumnListing('profiles')`. `is_active`
+=======
+  `Schema::connection('quaeris')->getColumnListing('profiles')`. `is_active`
+=======
+<<<<<<< HEAD
+  `Schema::connection('quaeris')->getColumnListing('profiles')`. `is_active`
+=======
+  `Schema::connection('<nome progetto>')->getColumnListing('profiles')`. `is_active`
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ux2BXP
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
   **non presente** sul DB dev corrente via la connection corretta, ma
   verificato come intenzionale: `$fillable`

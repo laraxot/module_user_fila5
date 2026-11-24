@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "migration violations current status"
+>>>>>>> laraxot/dev
 =======
 qmd: "migration violations current status"
 >>>>>>> laraxot/dev

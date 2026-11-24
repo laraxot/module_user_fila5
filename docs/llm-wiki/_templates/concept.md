@@ -6,6 +6,10 @@ related:
   - "./entity.md"
   - "./source.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "concept"
+>>>>>>> laraxot/dev
 =======
 qmd: "concept"
 >>>>>>> laraxot/dev

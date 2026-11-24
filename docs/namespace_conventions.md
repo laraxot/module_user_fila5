@@ -6,6 +6,10 @@ tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "namespace conventions convenzioni user"
+>>>>>>> laraxot/dev
 =======
 qmd: "namespace conventions convenzioni user"
 >>>>>>> laraxot/dev

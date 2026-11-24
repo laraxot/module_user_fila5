@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "userfactory advanced implementation complete"
+>>>>>>> laraxot/dev
 =======
 qmd: "userfactory advanced implementation complete"
 >>>>>>> laraxot/dev

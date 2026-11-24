@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_7PxTCx
+>>>>>>> laraxot/dev
 ---
 title: "User Module - SSO Providers Implementation"
 type: note
 qmd: "sso providers implementation user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_0vL9RG
 >>>>>>> laraxot/dev
 # User Module - SSO Providers Implementation
 

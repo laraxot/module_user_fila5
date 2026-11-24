@@ -5,8 +5,15 @@ canonical: ../../../../Themes/docs/shared-components/user-module-quality-report.
 related:
   - "./user-module-quality-report.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user quality"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_IfHk9A
+qmd: "user quality"
+=======
+>>>>>>> .merge_file_TQU5SV
 >>>>>>> laraxot/dev
 ---
 

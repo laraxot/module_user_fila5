@@ -389,9 +389,25 @@ test('user service provider only configures, not registers dependencies', functi
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](./README.md) - Overview modulo
 =======
 - [README.md](./readme.md) - Overview modulo
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_gnGzkx
+- [README.md](./readme.md) - Overview modulo
+=======
+<<<<<<< HEAD
+- [README.md](./README.md) - Overview modulo
+=======
+<<<<<<< HEAD
+- [README.md](./readme.md) - Overview modulo
+=======
+- [README.md](./README.md) - Overview modulo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8qHD0O
 >>>>>>> laraxot/dev
 
 ### Documentazione Esterna

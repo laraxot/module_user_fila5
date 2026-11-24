@@ -13,7 +13,11 @@ related:
   - "./auth-blade-structure.md"
   - "./component-registration.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./README.md"
+=======
+  - "./readme.md"
+>>>>>>> laraxot/dev
 =======
   - "./readme.md"
 >>>>>>> laraxot/dev
@@ -310,7 +314,11 @@ dump($variable);
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Modulo User](../README.md)
+=======
+- [README Modulo User](../readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README Modulo User](../readme.md)
 >>>>>>> laraxot/dev
@@ -321,6 +329,10 @@ dump($variable);
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev

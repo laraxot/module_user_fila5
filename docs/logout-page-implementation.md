@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione della Pagina di Logout nel Tema One"
 type: note
 qmd: "logout page implementation implementazione pagina tema"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Implementazione della Pagina di Logout nel Tema One
 

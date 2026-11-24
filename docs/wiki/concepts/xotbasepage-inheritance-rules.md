@@ -16,8 +16,15 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "xotbasepage inheritance rules autotranslation transtrait"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_4aTx8q
+qmd: "xotbasepage inheritance rules autotranslation transtrait"
+=======
+>>>>>>> .merge_file_WraNxy
 >>>>>>> laraxot/dev
 ---
 

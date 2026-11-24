@@ -18,8 +18,13 @@ use Spatie\QueueableAction\QueueableAction;
  * @see https://github.com/spatie/laravel-queueable-action
  * @see AGENTS.md#🏗️-ARCHITETTURA-LARAXOT---Queueable-Actions-Rules
  * @see AGENTS.md#🚨-COMANDO-CRITICO-GIT-git-remote--v - RICORDATI SEMPRE git remote -v prima di ogni push/pull!
+<<<<<<< HEAD
  *
  * @see docs/contracts/create-user-action.md
+=======
+ * @see docs/contracts/create-user-action.md
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/create-user-action.md
  */
 class CreateUserAction

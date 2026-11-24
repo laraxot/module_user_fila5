@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_Gky6i0
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Product Requirements Document (PRD)"
 type: note
 qmd: "user product requirements document prd"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_Mz4NHV
 >>>>>>> laraxot/dev
 # User Module - Product Requirements Document (PRD)
 

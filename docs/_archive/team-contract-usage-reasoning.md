@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "team contract usage reasoning"
+>>>>>>> laraxot/dev
 =======
 qmd: "team contract usage reasoning"
 >>>>>>> laraxot/dev

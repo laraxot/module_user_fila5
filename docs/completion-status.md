@@ -9,6 +9,10 @@ github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
 related:
   - ../../Xot/docs/project-completion-status.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "completion status user cosa manca completare"
+>>>>>>> laraxot/dev
 =======
 qmd: "completion status user cosa manca completare"
 >>>>>>> laraxot/dev

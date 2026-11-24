@@ -100,4 +100,8 @@ test('il super-admin agisce sugli altri, anche su un altro super-admin, ma non c
         ->and(userActionsAllows($root, 'update', userActionsTarget('root2', ['super-admin'])))->toBeTrue()
         ->and(userActionsAllows($root, 'delete', userActionsTarget('u2', [])))->toBeTrue()
         ->and(userActionsAllows($root, 'delete', userActionsTarget('root1', ['super-admin'])))->toBeFalse();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> laraxot/dev

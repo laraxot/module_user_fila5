@@ -6,8 +6,15 @@ tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "user product"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_WqHBqj
+qmd: "user product"
+=======
+>>>>>>> .merge_file_eUNISZ
 >>>>>>> laraxot/dev
 ---
 

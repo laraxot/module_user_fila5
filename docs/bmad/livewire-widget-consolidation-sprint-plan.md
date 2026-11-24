@@ -4,6 +4,10 @@ superseded: true
 related:
   - ./epics.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation sprint plan"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation sprint plan"
 >>>>>>> laraxot/dev

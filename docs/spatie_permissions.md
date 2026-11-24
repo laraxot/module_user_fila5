@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_Rdb8Fx
+>>>>>>> laraxot/dev
 ---
 title: "Spatie Permissions"
 type: note
 qmd: "spatie permissions"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_slVqVO
 >>>>>>> laraxot/dev
 https://jaydeepamethiya.medium.com/spatie-roles-and-permissions-in-laravel-10-a-comprehensive-guide-536d099d40ae
 

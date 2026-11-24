@@ -9,8 +9,15 @@ converted_from: fix02.txt
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "fix02"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_RRunUF
+qmd: "fix02"
+=======
+>>>>>>> .merge_file_E5lfsz
 >>>>>>> laraxot/dev
 ---
 

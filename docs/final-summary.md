@@ -301,7 +301,11 @@ public function getHeaderActions(): array
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README](./README.md)
+=======
+- [README](./readme.md)
+>>>>>>> laraxot/dev
 =======
 - [README](./readme.md)
 >>>>>>> laraxot/dev

@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Roadmap, Issues & Optimization"
 type: note
 qmd: "legacy roadmap and issues user optimization"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # User Module - Roadmap, Issues & Optimization
 

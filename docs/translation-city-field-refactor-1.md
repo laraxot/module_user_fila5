@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "translation city field refactor 1"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_iy1xkE
+qmd: "translation city field refactor 1"
+=======
+>>>>>>> .merge_file_7efleO
 >>>>>>> laraxot/dev
 ---
 

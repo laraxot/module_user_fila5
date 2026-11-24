@@ -7,7 +7,16 @@ created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_1Pn29c
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "model inheritance analysis analisi ereditarietà modelli"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4GjK2V
 >>>>>>> laraxot/dev
 ---
 
@@ -155,9 +164,25 @@ Dopo le modifiche, eseguire:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Qualità Codice](../../code-quality.md)
 =======
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+=======
+<<<<<<< .merge_file_1Pn29c
+- [Regole Qualità Codice](../../code-quality.md)
+=======
+- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+=======
+- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+=======
+<<<<<<< HEAD
+- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+=======
+- [Regole Qualità Codice](../../code-quality.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4GjK2V
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)

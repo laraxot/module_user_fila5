@@ -4,6 +4,10 @@ superseded: true
 related:
   - ./livewire-widget-product-brief.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "livewire widget consolidation brief"
+>>>>>>> laraxot/dev
 =======
 qmd: "livewire widget consolidation brief"
 >>>>>>> laraxot/dev

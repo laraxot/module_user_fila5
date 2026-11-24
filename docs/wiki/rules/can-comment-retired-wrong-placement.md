@@ -29,12 +29,18 @@ related:
 - `BaseUser` non deve implementare `CanComment` né usare trait/comment relations di moduli opzionali.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ## Verifica
 
 - `grep -rn "Modules\\\\Comment" laravel/Modules/User/app/` → 0 risultati
 - `grep -rn "CanComment" laravel/Modules/User/app/` → 0 risultati (solo `.old` archived)
 - Test `NoCommentModuleDependencyTest.php` passa
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 Non reintrodurre alias attivi in User.

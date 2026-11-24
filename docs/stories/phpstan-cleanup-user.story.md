@@ -6,6 +6,10 @@ priority: medium
 created: 2026-10-06
 module: User
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan cleanup user story scopo prima"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan cleanup user story scopo prima"
 >>>>>>> laraxot/dev

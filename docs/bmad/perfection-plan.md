@@ -1,6 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Perfection Plan — Module User Absolute Perfection"
 
+=======
+>>>>>>> laraxot/dev
 title: "Perfection Plan: Module User Absolute Perfection"
 type: plan
 module: User
@@ -14,6 +17,10 @@ related:
   - ./livewire-inventory.md
   - ./decision-log.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "perfection plan user absolute"
+>>>>>>> laraxot/dev
 =======
 qmd: "perfection plan user absolute"
 >>>>>>> laraxot/dev

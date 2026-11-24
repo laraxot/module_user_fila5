@@ -6,6 +6,10 @@ alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "quick reference user bmad"
+>>>>>>> laraxot/dev
 =======
 qmd: "quick reference user bmad"
 >>>>>>> laraxot/dev

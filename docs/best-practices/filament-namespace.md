@@ -12,6 +12,10 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "filament namespace"
+>>>>>>> laraxot/dev
 =======
 qmd: "filament namespace"
 >>>>>>> laraxot/dev

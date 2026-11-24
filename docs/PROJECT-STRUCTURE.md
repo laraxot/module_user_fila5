@@ -5,6 +5,10 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "project structure user"
+>>>>>>> laraxot/dev
 =======
 qmd: "project structure user"
 >>>>>>> laraxot/dev
@@ -65,9 +69,13 @@ At module root level, these folders MUST NOT exist:
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
 =======
 | `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+>>>>>>> laraxot/dev
+=======
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
 >>>>>>> laraxot/dev
 
 ## Convenzioni

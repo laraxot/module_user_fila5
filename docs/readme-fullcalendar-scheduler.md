@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_g2VZLI
+>>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler Documentation - README"
 type: note
 qmd: "fullcalendar scheduler"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_QV06eS
 >>>>>>> laraxot/dev
 # FullCalendar Scheduler Documentation - README
 

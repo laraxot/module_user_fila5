@@ -9,6 +9,10 @@ related:
   - ../../app/Enums/AuthThrottleScope.php
   - ../contracts/consume-auth-submission-slot-action.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "auth submission throttle before validation registrazione"
+>>>>>>> laraxot/dev
 =======
 qmd: "auth submission throttle before validation registrazione"
 >>>>>>> laraxot/dev

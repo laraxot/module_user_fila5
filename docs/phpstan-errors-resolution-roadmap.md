@@ -217,7 +217,12 @@ Tutti gli errori sono stati corretti:
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 *Ultimo aggiornamento: 2025-01-27*
 =======
+>>>>>>> laraxot/dev
+=======
+
+*Ultimo aggiornamento: 2025-01-27*
 >>>>>>> laraxot/dev

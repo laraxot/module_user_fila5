@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_jR9ShD
+>>>>>>> laraxot/dev
 ---
 title: "Task: Query Optimization User"
 type: note
 qmd: "query optimization user task"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_5m0mHk
 >>>>>>> laraxot/dev
 # Task: Query Optimization User
 

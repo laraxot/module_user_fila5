@@ -12,6 +12,10 @@ related:
   - "./payment.md"
   - "./phpstan.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "two factor 1"
+>>>>>>> laraxot/dev
 =======
 qmd: "two factor 1"
 >>>>>>> laraxot/dev

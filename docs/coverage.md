@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Coverage — User
 
 =======
+>>>>>>> laraxot/dev
+=======
+# Coverage — User
+
 >>>>>>> laraxot/dev
 ---
 title: "Coverage: User"
@@ -12,6 +17,11 @@ tags: [docs, user]
 qmd: "coverage   user user"
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Coverage — User
+
+>>>>>>> laraxot/dev
 =======
 # Coverage — User
 

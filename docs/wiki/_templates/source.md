@@ -16,7 +16,16 @@ related:
   - "./entity.md"
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_jmPsyh
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "source title"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_c5LiTL
 >>>>>>> laraxot/dev
 ---
 

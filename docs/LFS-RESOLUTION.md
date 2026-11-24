@@ -3,6 +3,10 @@ title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "lfs resolution corruption"
+>>>>>>> laraxot/dev
 =======
 qmd: "lfs resolution corruption"
 >>>>>>> laraxot/dev
@@ -97,6 +101,9 @@ updated: 2026-11-17
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 
 
@@ -105,5 +112,8 @@ Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file
 <!-- Contenuto unito da LFS-RESOLUTION-.md (rimozione date dai nomi file, issue #64) -->
 
 Vedi [LFS-RESOLUTION.md](./LFS-RESOLUTION.md).
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

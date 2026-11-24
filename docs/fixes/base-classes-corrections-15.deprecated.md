@@ -13,7 +13,11 @@ related:
   - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./phpstan-fixes.md"
+=======
+  - "./phpstan-fixes-1.md"
+>>>>>>> laraxot/dev
 =======
   - "./phpstan-fixes-1.md"
 >>>>>>> laraxot/dev

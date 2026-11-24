@@ -6,8 +6,15 @@ status: complete
 owner: module:User
 tags: [user, migration, convention, schema]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "users migration owner convention story user"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_LBZUXq
+qmd: "users migration owner convention story user"
+=======
+>>>>>>> .merge_file_yKNzbE
 >>>>>>> laraxot/dev
 ---
 

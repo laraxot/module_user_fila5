@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: note
 qmd: "phpstan fixes gennaio user 2025"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 

@@ -14,6 +14,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "contracts naming placement"
+>>>>>>> laraxot/dev
 =======
 qmd: "contracts naming placement"
 >>>>>>> laraxot/dev

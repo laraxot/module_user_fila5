@@ -12,8 +12,15 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "xotbasemigration laraxot philosophy"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_MrnAAN
+qmd: "xotbasemigration laraxot philosophy"
+=======
+>>>>>>> .merge_file_kL6hbf
 >>>>>>> laraxot/dev
 ---
 

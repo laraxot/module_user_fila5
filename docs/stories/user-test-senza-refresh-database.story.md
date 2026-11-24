@@ -11,6 +11,10 @@ depends_on: ["../../../Xot/docs/stories/test-database-guard.story.md (codice scr
 related: ["../../../Xot/docs/stories/dcp-45-isolamento-db-test-pest-scratch.story.md", "phpstan-test-wave-user-b.story.md", "7.2.phpstan-test-harness-contracts.story.md"]
 tags: [bmad, test, database, sicurezza, refresh-database]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user test senza refresh database story"
+>>>>>>> laraxot/dev
 =======
 qmd: "user test senza refresh database story"
 >>>>>>> laraxot/dev

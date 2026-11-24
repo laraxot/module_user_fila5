@@ -4,6 +4,10 @@ type: user-manual
 status: active
 screenshot: assets/auth-login.png
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "manuale utente user"
+>>>>>>> laraxot/dev
 =======
 qmd: "manuale utente user"
 >>>>>>> laraxot/dev

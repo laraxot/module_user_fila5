@@ -11,6 +11,10 @@ depends_on: ["decisione dell'utente tra opzione A e B (vedi Decisioni aperte)"]
 related: [./debug-calls-removal-user.story.md, ./12.3.remove-dddx-debug.story.md, ../navigation-groups.md, ../../../Xot/docs/stories/test-database-guard.story.md]
 tags: [bmad, appearance, filament, cluster, navigazione, tenant-config]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "user pagine appearance salvataggio o nascondi"
+>>>>>>> laraxot/dev
 =======
 qmd: "user pagine appearance salvataggio o nascondi"
 >>>>>>> laraxot/dev

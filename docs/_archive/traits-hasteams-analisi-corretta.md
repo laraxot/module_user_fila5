@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "traits hasteams analisi corretta"
+>>>>>>> laraxot/dev
 =======
 qmd: "traits hasteams analisi corretta"
 >>>>>>> laraxot/dev

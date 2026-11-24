@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Login FO /it/auth/login: traduzioni mancanti e copy errato"
 type: story
 qmd: "login page it translations fix story"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Login FO /it/auth/login: traduzioni mancanti e copy errato
 

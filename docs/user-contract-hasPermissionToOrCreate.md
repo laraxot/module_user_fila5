@@ -12,7 +12,16 @@ related:
   - ../../Xot/app/Contracts/UserContract.php
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_wv3JDr
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "user contract haspermissiontoorcreate usercontract"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_Yzfv0l
 >>>>>>> laraxot/dev
 ---
 

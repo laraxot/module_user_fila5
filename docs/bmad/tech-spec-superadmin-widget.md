@@ -2,6 +2,7 @@
 title: "Project context: SuperAdmin nel user menu"
 type: note
 status: draft
+<<<<<<< HEAD
 created: 2026-10-07
 updated: 2026-10-07
 tags: [docs, user, bmad]
@@ -10,6 +11,12 @@ issues: []
 discussions: []
 ---
 
+=======
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "project context   superadmin nel user menu user"
+---
+>>>>>>> laraxot/dev
 # Project context: SuperAdmin nel user menu
 
 Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).

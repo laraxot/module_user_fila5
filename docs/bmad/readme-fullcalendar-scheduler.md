@@ -2,6 +2,10 @@
 title: readme-fullcalendar-scheduler
 module: User
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "fullcalendar scheduler readmefullcalendarscheduler"
+>>>>>>> laraxot/dev
 =======
 qmd: "fullcalendar scheduler readmefullcalendarscheduler"
 >>>>>>> laraxot/dev

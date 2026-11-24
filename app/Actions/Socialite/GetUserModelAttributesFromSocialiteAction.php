@@ -11,6 +11,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/get-user-model-attributes-from-socialite-action.md
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @contract docs/contracts/get-user-model-attributes-from-socialite-action.md
  */
 class GetUserModelAttributesFromSocialiteAction

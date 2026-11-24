@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione dei Conflitti Git nel Modulo User"
 type: report
 qmd: "conflict resolution report risoluzione conflitti user"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Risoluzione dei Conflitti Git nel Modulo User
 
@@ -12,8 +18,12 @@ qmd: "conflict resolution report risoluzione conflitti user"
 
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md).
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila5_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila5_mono/docs/CONFLICT_RESOLUTION.md).
 =======
+>>>>>>> laraxot/dev
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila5_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila5_mono/docs/CONFLICT_RESOLUTION.md).
 >>>>>>> laraxot/dev
 
 ## Conflitti Risolti
@@ -53,8 +63,12 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 #### Motivazione
 Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md) del progetto.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila5_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila5_mono/docs/TRANSLATIONS_RULES.md) del progetto.
 =======
+>>>>>>> laraxot/dev
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila5_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila5_mono/docs/TRANSLATIONS_RULES.md) del progetto.
 >>>>>>> laraxot/dev
 
 ### 3. Dichiarazione strict_types
@@ -68,8 +82,12 @@ Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti
 #### Motivazione
 Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila5_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 =======
+>>>>>>> laraxot/dev
+=======
+Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila5_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 >>>>>>> laraxot/dev
 
 ## Impatto delle Modifiche
@@ -90,6 +108,9 @@ Le modifiche apportate garantiscono:
 - [Implementazione Login](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
 - [Implementazione Logout](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila5_mono/docs/DOCUMENTATION_PHILOSOPHY.md)
 - [Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila5_mono/docs/CONFLICT_RESOLUTION.md)
 - [Best Practices Filament](/var/www/html/_bases/base_predict_fila5_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
@@ -97,5 +118,8 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](/var/www/html/_bases/base_predict_fila5_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md)
 - [Implementazione Login](/var/www/html/_bases/base_predict_fila5_mono/laravel/Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
 - [Implementazione Logout](/var/www/html/_bases/base_predict_fila5_mono/laravel/Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

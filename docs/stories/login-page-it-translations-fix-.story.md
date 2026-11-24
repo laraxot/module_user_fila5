@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_rkOCpS
+>>>>>>> laraxot/dev
 ---
 title: "Login FO /it/auth/login: traduzioni mancanti e copy errato"
 type: story
 qmd: "login page it translations fix story"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> .merge_file_csFcwT
 >>>>>>> laraxot/dev
 # Login FO /it/auth/login: traduzioni mancanti e copy errato
 

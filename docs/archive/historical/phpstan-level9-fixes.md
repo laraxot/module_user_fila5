@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "phpstan level9 fixes"
+>>>>>>> laraxot/dev
 =======
 qmd: "phpstan level9 fixes"
 >>>>>>> laraxot/dev

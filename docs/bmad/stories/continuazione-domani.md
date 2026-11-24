@@ -1,6 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "Continuazione BMAD — Domani (User)"
 
+=======
+>>>>>>> laraxot/dev
 title: "Continuazione BMAD: Domani (User)"
 type: module-fix
 scope: User
@@ -14,6 +17,10 @@ related:
   - ./uppercase-application-dir.story.md
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "continuazione domani bmad user"
+>>>>>>> laraxot/dev
 =======
 qmd: "continuazione domani bmad user"
 >>>>>>> laraxot/dev

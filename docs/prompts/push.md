@@ -9,8 +9,15 @@ converted_from: push.txt
 created: 2026-08-24
 updated: 2026-08-24
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 qmd: "push"
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_c70rIF
+qmd: "push"
+=======
+>>>>>>> .merge_file_rYHOf8
 >>>>>>> laraxot/dev
 ---
 

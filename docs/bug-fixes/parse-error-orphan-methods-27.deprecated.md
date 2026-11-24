@@ -10,8 +10,13 @@ related:
   - "./make-filament-user-crash-loop.md"
   - "./parse-error-orphan-methods-.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
+=======
+  - "./parse-error-orphan-methods-1-1.md"
+  - "./parse-error-orphan-methods-1.md"
+>>>>>>> laraxot/dev
 =======
   - "./parse-error-orphan-methods-1-1.md"
   - "./parse-error-orphan-methods-1.md"

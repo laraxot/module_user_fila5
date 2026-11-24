@@ -12,6 +12,10 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+qmd: "codex error fix"
+>>>>>>> laraxot/dev
 =======
 qmd: "codex error fix"
 >>>>>>> laraxot/dev

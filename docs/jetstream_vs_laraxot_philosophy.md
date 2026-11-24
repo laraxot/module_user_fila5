@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team"
 type: note
 qmd: "jetstream vs laraxot philosophy filosofia religione"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 

@@ -3,9 +3,14 @@ module: User
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 <<<<<<< HEAD
+<<<<<<< HEAD
 canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 =======
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+qmd: "metodi duplicati analisi user"
+>>>>>>> laraxot/dev
+=======
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
 qmd: "metodi duplicati analisi user"
 >>>>>>> laraxot/dev
 ---

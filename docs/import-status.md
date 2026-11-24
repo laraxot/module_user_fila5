@@ -1,11 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Import Status"
 type: note
 qmd: "import status"
 ---
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Fix base 2026-08-30 — proprietà `$pivot` che oscurava la relation pivot
 

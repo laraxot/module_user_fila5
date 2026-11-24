@@ -15,7 +15,16 @@ related:
   - "./actions-path-convention.md"
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_9LhuRQ
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 qmd: "project structure user"
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_kSczmL
 >>>>>>> laraxot/dev
 ---
 
@@ -190,10 +199,25 @@ At module root level, these folders MUST NOT exist:
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9LhuRQ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_kSczmL
+>>>>>>> laraxot/dev
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9LhuRQ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kSczmL
+>>>>>>> laraxot/dev
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
@@ -212,7 +236,19 @@ At module root level, these folders MUST NOT exist:
 <<<<<<< HEAD
 | `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
 =======
+<<<<<<< HEAD
 | `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+=======
+<<<<<<< .merge_file_9LhuRQ
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+=======
+<<<<<<< HEAD
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+=======
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kSczmL
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Convenzioni
