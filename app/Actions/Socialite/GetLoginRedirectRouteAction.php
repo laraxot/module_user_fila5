@@ -9,6 +9,10 @@ namespace Modules\User\Actions\Socialite;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-login-redirect-route-action.md
+ * @contract docs/contracts/get-login-redirect-route-action.md
+ */
 class GetLoginRedirectRouteAction
 {
     use QueueableAction;

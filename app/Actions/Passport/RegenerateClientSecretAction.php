@@ -10,6 +10,9 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * RegenerateClientSecretAction: Rigenera il secret di un client OAuth2.
+ *
+ * @see docs/contracts/regenerate-client-secret-action.md
+ * @contract docs/contracts/regenerate-client-secret-action.md
  */
 class RegenerateClientSecretAction
 {

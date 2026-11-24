@@ -11,6 +11,10 @@ use Jenssegers\Agent\Agent;
 use Modules\User\Models\Device;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-current-device-action.md
+ * @contract docs/contracts/get-current-device-action.md
+ */
 class GetCurrentDeviceAction
 {
     use QueueableAction;

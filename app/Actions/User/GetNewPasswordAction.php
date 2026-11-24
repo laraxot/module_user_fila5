@@ -11,6 +11,10 @@ use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/get-new-password-action.md
+ * @contract docs/contracts/get-new-password-action.md
+ */
 class GetNewPasswordAction
 {
     use QueueableAction;

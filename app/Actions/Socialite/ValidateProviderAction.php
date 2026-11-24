@@ -7,6 +7,10 @@ namespace Modules\User\Actions\Socialite;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/validate-provider-action.md
+ * @contract docs/contracts/validate-provider-action.md
+ */
 class ValidateProviderAction
 {
     use QueueableAction;

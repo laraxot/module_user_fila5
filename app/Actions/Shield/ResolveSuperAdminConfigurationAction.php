@@ -12,6 +12,9 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Raggruppa: isSuperAdminEnabled, getSuperAdminName, isSuperAdminDefinedViaGate,
  * getSuperAdminGateInterceptionStatus
+ *
+ * @see docs/contracts/resolve-super-admin-configuration-action.md
+ * @contract docs/contracts/resolve-super-admin-configuration-action.md
  */
 class ResolveSuperAdminConfigurationAction
 {

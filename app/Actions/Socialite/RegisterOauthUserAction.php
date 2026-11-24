@@ -14,6 +14,10 @@ use Modules\User\Events\Registered;
 use Modules\User\Models\SocialiteUser;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/register-oauth-user-action.md
+ * @contract docs/contracts/register-oauth-user-action.md
+ */
 class RegisterOauthUserAction
 {
     use QueueableAction;

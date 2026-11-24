@@ -11,6 +11,10 @@ use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/retrieve-socialite-user-action.md
+ * @contract docs/contracts/retrieve-socialite-user-action.md
+ */
 class RetrieveSocialiteUserAction
 {
     use QueueableAction;

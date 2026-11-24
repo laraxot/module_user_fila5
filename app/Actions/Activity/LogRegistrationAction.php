@@ -7,6 +7,10 @@ namespace Modules\User\Actions\Activity;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/log-registration-action.md
+ * @contract docs/contracts/log-registration-action.md
+ */
 class LogRegistrationAction
 {
     use QueueableAction;

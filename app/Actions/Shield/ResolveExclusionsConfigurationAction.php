@@ -11,6 +11,9 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Raggruppa: isGeneralExcludeEnabled, enableGeneralExclude, disableGeneralExclude,
  * getExcludedResources, getExcludedPages, getExcludedWidgets
+ *
+ * @see docs/contracts/resolve-exclusions-configuration-action.md
+ * @contract docs/contracts/resolve-exclusions-configuration-action.md
  */
 class ResolveExclusionsConfigurationAction
 {

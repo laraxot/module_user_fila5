@@ -8,6 +8,10 @@ use Spatie\Permission\Models\Permission;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/shield-get-permission-model-action.md
+ * @contract docs/contracts/shield-get-permission-model-action.md
+ */
 final class GetPermissionModelAction
 {
     use QueueableAction;

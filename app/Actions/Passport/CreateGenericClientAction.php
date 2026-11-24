@@ -9,6 +9,10 @@ use Modules\User\Models\OauthClient;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/create-generic-client-action.md
+ * @contract docs/contracts/create-generic-client-action.md
+ */
 class CreateGenericClientAction
 {
     use QueueableAction;

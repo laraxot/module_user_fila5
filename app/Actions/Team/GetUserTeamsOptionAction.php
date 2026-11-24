@@ -7,6 +7,10 @@ namespace Modules\User\Actions\Team;
 use Modules\User\Models\TeamUser;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-user-teams-option-action.md
+ * @contract docs/contracts/get-user-teams-option-action.md
+ */
 class GetUserTeamsOptionAction
 {
     use QueueableAction;

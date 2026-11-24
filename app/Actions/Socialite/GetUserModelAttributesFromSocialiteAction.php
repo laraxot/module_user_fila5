@@ -9,6 +9,10 @@ use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-user-model-attributes-from-socialite-action.md
+ * @contract docs/contracts/get-user-model-attributes-from-socialite-action.md
+ */
 class GetUserModelAttributesFromSocialiteAction
 {
     use QueueableAction;

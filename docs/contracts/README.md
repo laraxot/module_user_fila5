@@ -1,40 +1,27 @@
 ---
-title: "Contratti"
+title: "Contratti — User"
 type: index
-tags: [contracts, actions, interfaces]
-created: 2026-11-18
-updated: 2026-11-18
+owner: User
+updated: 2026-11-24
+qmd: "User contract comportamentali autenticazione ruoli permessi SPID CIE invarianti USER-INV"
 ---
 
-# Contratti
+# Contratti — User
 
-## Metodo Harness
+Un contract descrive una singola operazione del modulo User che muove dati personali, permessi o accessi: input, output, invarianti, effetti collaterali, errori e confini. Documenta il comportamento **implementato**, non quello desiderato. Standard: [contract-authoring-standard](../../../Xot/docs/contracts/contract-authoring-standard.md); governance: [ADR 0012](../../../Xot/docs/adr/0012-behavioral-contract-governance.md).
 
-Un contratto descrive una singola operazione pubblica con effetti collaterali, chiamate esterne o invarianti di dominio. Documenta il comportamento osservabile, inclusi errori e non-goals, senza trasformare ogni metodo interno in un contratto.
+## Formato
 
-Ogni invariante ha un ID stabile nel formato `USER-INV-N`; il test Pest corrispondente usa lo stesso ID come group. La classe implementatrice deve contenere `@contract docs/contracts/<file>.md`; contratto, codice e test cambiano nello stesso commit.
+Frontmatter `type: contract` e `action: "Modules\\User\\Actions\\..."`; sezioni nell'ordine `## Input`, `## Output`, `## Invarianti`, `## Effetti collaterali`, `## Errori`, `## Non fa`. Ogni invariante ha ID `USER-<AREA>-INV-<N>` e un test Pest con `->group('<ID>')`. Il registro operativo con copertura e comandi è [INDEX.md](INDEX.md).
 
-Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
-effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
+## File presenti
 
-## Contratto di comportamento di un'Action
+Contract nel formato a sei sezioni:
 
-Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`), frontmatter `type: contract` e
-`action: <FQCN>`, e queste sei sezioni nell'ordine:
+- [has-verified-identity-action](has-verified-identity-action.md) (invariante in prosa, senza ID: da portare a `USER-IDV-INV-N`)
+- [build-active-user-provider-action](build-active-user-provider-action.md)
+- [revoke-user-access-action](revoke-user-access-action.md)
+- [upsert-user-from-digital-identity-action](upsert-user-from-digital-identity-action.md)
+- [set-default-roles-by-socialite-user-action](set-default-roles-by-socialite-user-action.md)
 
-```markdown
-## Input
-## Output
-## Invarianti
-## Effetti collaterali
-## Errori
-## Non fa
-```
-
-Il docblock dell'Action rimanda al file con la riga `Contratto di comportamento: docs/contracts/<file>.md`.
-Chi cambia il comportamento aggiorna il contratto nello stesso commit.
-
-## Contratti
-
-- [HasVerifiedIdentityAction](has-verified-identity-action.md)
-
+Documenti `type: concept` sulle interfacce (non sono contract formali, nessun ID): [hasteamsandusercontract](hasteamsandusercontract.md), [teamcontract](teamcontract.md). Template: [_template](_template.md). I file `*.md.bak` sono copie di lavoro, non contratti.

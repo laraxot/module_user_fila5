@@ -13,6 +13,9 @@ use function Safe\class_uses;
  * Action per risolvere la configurazione autenticazione Filament Shield.
  *
  * Raggruppa: getFilamentAuthGuard, getAuthProviderFQCN, isAuthProviderConfigured
+ *
+ * @see docs/contracts/resolve-shield-authentication-configuration-action.md
+ * @contract docs/contracts/resolve-shield-authentication-configuration-action.md
  */
 class ResolveShieldAuthenticationConfigurationAction
 {

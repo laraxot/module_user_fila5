@@ -11,6 +11,10 @@ use Modules\User\Datas\SocialiteNameFieldsData;
 use Modules\User\Enums\NameSearchEnum;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/resolve-user-name-fields-from-socialite-action.md
+ * @contract docs/contracts/resolve-user-name-fields-from-socialite-action.md
+ */
 final class ResolveUserNameFieldsFromSocialiteAction
 {
     use QueueableAction;

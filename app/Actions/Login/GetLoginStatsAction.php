@@ -7,6 +7,10 @@ namespace Modules\User\Actions\Login;
 use Carbon\CarbonImmutable;
 use Modules\User\Actions\Login\Concerns\ResolvesLoginLogQuery;
 
+/**
+ * @see docs/contracts/get-login-stats-action.md
+ * @contract docs/contracts/get-login-stats-action.md
+ */
 final class GetLoginStatsAction
 {
     use ResolvesLoginLogQuery;

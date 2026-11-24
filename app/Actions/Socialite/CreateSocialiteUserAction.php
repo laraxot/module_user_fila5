@@ -13,6 +13,10 @@ use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/create-socialite-user-action.md
+ * @contract docs/contracts/create-socialite-user-action.md
+ */
 class CreateSocialiteUserAction
 {
     use QueueableAction;

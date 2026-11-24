@@ -11,6 +11,9 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * ponytail: Query builder per AuthenticationLog.
+ *
+ * @see docs/contracts/authentication-log-query-action.md
+ * @contract docs/contracts/authentication-log-query-action.md
  */
 final class AuthenticationLogQueryAction
 {

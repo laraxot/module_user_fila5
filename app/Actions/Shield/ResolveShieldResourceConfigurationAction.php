@@ -14,6 +14,9 @@ use Spatie\QueueableAction\QueueableAction;
  * Raggruppa: getResourceSlug, isResourcePublished, isResourceNavigationRegistered,
  * getResourceNavigationSort, isResourceNavigationBadgeEnabled,
  * isResourceNavigationGroupEnabled, isResourceGloballySearchable
+ *
+ * @see docs/contracts/resolve-shield-resource-configuration-action.md
+ * @contract docs/contracts/resolve-shield-resource-configuration-action.md
  */
 class ResolveShieldResourceConfigurationAction
 {
