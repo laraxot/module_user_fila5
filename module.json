@@ -1,0 +1,34 @@
+{
+    "name": "User",
+    "alias": "user",
+    "description": "Gestione utenti, autenticazione, autorizzazioni e ruoli del sistema",
+    "keywords": [
+        "auth",
+        "users",
+        "roles",
+        "permissions",
+        "authentication"
+    ],
+    "priority": 0,
+    "active": 1,
+    "order": 3,
+    "providers": [
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider",
+        "Modules\\User\\Providers\\PassportServiceProvider",
+        "Modules\\User\\Providers\\SocialiteServiceProvider"
+    ],
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RoleSeeder"
+        ]
+    },
+    "files": [],
+    "aliases": {},
+    "requires": [
+        "Xot",
+        "UI"
+    ],
+    "minimumCoreVersion": "10.0",
+    "phpVersion": "^8.3"
+}

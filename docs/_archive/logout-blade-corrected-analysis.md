@@ -1,0 +1,20 @@
+---
+module: theme
+topic: logout-blade-corrected-analysis
+canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+<<<<<<< HEAD
+=======
+qmd: "logout blade corrected analysis"
+>>>>>>> laraxot/dev
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md

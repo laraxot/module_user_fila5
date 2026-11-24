@@ -1,0 +1,20 @@
+---
+module: theme
+topic: volt-folio-auth-implementation
+canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+<<<<<<< HEAD
+=======
+qmd: "volt folio auth implementation"
+>>>>>>> laraxot/dev
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
