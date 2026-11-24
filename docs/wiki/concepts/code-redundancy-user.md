@@ -61,12 +61,10 @@ Risorse presenti sia in `Filament/Resources/` sia in `Filament/Clusters/Passport
 ## Collegamenti
 
 - [Filosofia](../../../../Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_6NpRQ8
+<<<<<<< .merge_file_zEVUJy
 - [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit.md)
 =======
-- [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md)
-=======
+<<<<<<< HEAD
 - [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md)
 =======
 <<<<<<< HEAD
@@ -74,5 +72,5 @@ Risorse presenti sia in `Filament/Resources/` sia in `Filament/Clusters/Passport
 =======
 - [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit.md)
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_62JG3u
 >>>>>>> laraxot/dev
+>>>>>>> .merge_file_KgGceY

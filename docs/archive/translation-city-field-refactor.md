@@ -164,8 +164,8 @@ Tutti i file corretti mantengono:
 
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
 - [SaluteOra Translation Audit](../../saluteora/docs/translation_audit_city_fields.md)
-- [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
-- [User Module Widget Translation Rules](widget-translation-rules.md)
+- [Translation Syntax Fixes](../../../docs/translation-syntax-fixes-2.md)
+- [User Module Widget Translation Rules](widget-translation-rules-2.md)
 
 ## Prevenzione Futura
 

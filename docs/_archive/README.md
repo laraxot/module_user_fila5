@@ -112,6 +112,6 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Documentation
 
 - [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [QMD Setup](../../../Lang/docs/qmd-setup-3.md) — Configurazione ricerca locale
+- [Performance](../../../Lang/docs/performance-optimization-3.md) — Metriche e best practice
+- [Project Structure](../../../Lang/docs/project-structure-3.md) — Directory layout

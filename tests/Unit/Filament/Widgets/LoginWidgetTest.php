@@ -1,18 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_9GMXru
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
-=======
-<<<<<<< HEAD
-use Filament\Forms\Components\Checkbox;
-use Filament\Forms\Components\TextInput;
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Checkbox;
->>>>>>> laraxot/dev
->>>>>>> .merge_file_8cPFfT
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\BaseAuthWidget;
 use Modules\User\Filament\Widgets\LoginWidget;

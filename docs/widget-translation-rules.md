@@ -1,11 +1,11 @@
-<<<<<<< .merge_file_5YIGJd
+<<<<<<< .merge_file_NUAQ6j
 ---
 title: "Widget Translation Rules - SaluteOra Project"
 type: rule
 qmd: "widget translation rules saluteora project"
 ---
 =======
->>>>>>> .merge_file_eTs3FP
+>>>>>>> .merge_file_Mg6ZWJ
 # Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
@@ -142,7 +142,7 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
-- [User Module Widget Structure](../modules/user/project_docs/widgets_structure.md)
+- [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
@@ -150,24 +150,24 @@ protected static string $view = 'user::widgets.edit-user';
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
-- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-<<<<<<< .merge_file_5YIGJd
+<<<<<<< .merge_file_NUAQ6j
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 =======
 <<<<<<< HEAD
 =======
 =======
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
-- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_eTs3FP
+>>>>>>> .merge_file_Mg6ZWJ
 ## Memory Integration
 This document serves as a reference for:
 - Widget development standards
@@ -360,12 +360,12 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
+- [User Module Widget Structure](../Modules/User/docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 <<<<<<< HEAD
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
-<<<<<<< .merge_file_5YIGJd
+<<<<<<< .merge_file_NUAQ6j
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 =======
 =======
@@ -375,7 +375,7 @@ protected static string $view = 'user::widgets.edit-user';
 - [Filament Widget Conventions](best-practices/filament-widgets.md)
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_eTs3FP
+>>>>>>> .merge_file_Mg6ZWJ
 
 ## Memory Integration
 

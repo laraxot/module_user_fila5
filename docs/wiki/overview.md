@@ -6,17 +6,17 @@ created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
 <<<<<<< HEAD
-  - "./AGENTS.md"
+  - "./agents-2.md"
 =======
 <<<<<<< HEAD
   - "./agents.md"
-<<<<<<< .merge_file_rBIu5L
+<<<<<<< .merge_file_snqlmd
 =======
 =======
-  - "./AGENTS.md"
+  - "./agents-2.md"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_aJeEVt
+>>>>>>> .merge_file_uQangC
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
@@ -24,10 +24,10 @@ related:
   - "./index.md"
   - "./log.md"
   - "./socialite-architecture.md"
-<<<<<<< .merge_file_rBIu5L
+<<<<<<< .merge_file_snqlmd
 qmd: "overview wiki"
 =======
->>>>>>> .merge_file_aJeEVt
+>>>>>>> .merge_file_uQangC
 ---
 
 # User Wiki Overview

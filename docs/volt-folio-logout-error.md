@@ -1,11 +1,11 @@
-<<<<<<< .merge_file_cdmukX
+<<<<<<< .merge_file_bkEebP
 ---
 title: "Errore nel Logout con Volt e Folio"
 type: note
 qmd: "volt folio logout error errore"
 ---
 =======
->>>>>>> .merge_file_9JU6Gi
+>>>>>>> .merge_file_Ub8JIK
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -122,9 +122,9 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Folio](./routing-best-practices-2.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
-- [Gestione Sessione](./session_management.md) 
+- [Gestione Sessione](./session-management-3.md) 
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore

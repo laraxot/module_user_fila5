@@ -374,7 +374,7 @@ User/docs/
 │   ├── README.md
 │   ├── passport.md
 │   ├── socialite.md
-│   ├── two-factor.md
+│   ├── two-factor-3.md
 │   └── custom-login.md
 ├── authorization/
 │   ├── README.md

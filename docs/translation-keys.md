@@ -11,10 +11,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_OWbFPN
+<<<<<<< .merge_file_IycZnQ
 qmd: "translation keys"
 =======
->>>>>>> .merge_file_C646kN
+>>>>>>> .merge_file_pmfcEz
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md

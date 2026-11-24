@@ -68,12 +68,12 @@ This document serves as the central index for the User module, providing guidanc
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-- [Profile Management](./profile-management.md)
+- [Profile Management](../../profile-management-3.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-- [Profile Management](./profile-management.md)
+- [Profile Management](../../profile-management-3.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 - [Passport OAuth Wrapper Conformance](./passport-oauth-wrapper-conformance.md)
@@ -92,7 +92,7 @@ This document serves as the central index for the User module, providing guidanc
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/INDEX.md) - Documentazione sui template Blade
-- [Componenti](./components/INDEX.md) - Documentazione sui componenti
+- [Componenti](./components/index-2.md) - Documentazione sui componenti
 
 ## Roadmap e Sviluppo Futuro
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User

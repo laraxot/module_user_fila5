@@ -5,10 +5,10 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-<<<<<<< .merge_file_mMzmyD
+<<<<<<< .merge_file_N9shZy
 qmd: "user architecture sources"
 =======
->>>>>>> .merge_file_vNxynW
+>>>>>>> .merge_file_CLjuu2
 ---
 
 # User Architecture Sources

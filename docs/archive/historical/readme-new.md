@@ -959,10 +959,10 @@ test('user can switch teams', function () {
 ### Development
 - [Creating User Types](./development/user-types.md) - STI implementation
 - [Custom Authentication](./development/custom-auth.md) - Custom auth methods
-- [API Integration](./development/api.md) - API usage guide
+- [API Integration](../../api-2.md) - API usage guide
 
 ### Security
-- [Security Best Practices](./security/best-practices.md) - Security guidelines
+- [Security Best Practices](../../../../Activity/docs/best-practices-3.md) - Security guidelines
 - [Password Policies](./security/passwords.md) - Password requirements
 - [Audit Logging](./security/audit-log.md) - Security audit trail
 
@@ -987,7 +987,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [CHANGELOG.md](./changelog.md) for full history.
+See [CHANGELOG.md](../../../../UI/docs/changelog.md) for full history.
 
 ---
 
@@ -1018,8 +1018,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 - [Tenant Module](../tenant/docs/readme.md) - Enhanced tenancy
 
 ### Project Documentation
-- [CLAUDE.md](../../../claude.md) - Project architecture
-- [Security Guidelines](../../../../docs/security.md)
+- [CLAUDE.md](../../../../Geo/docs/root-md-files/claude.md) - Project architecture
+- [Security Guidelines](../../../../Geo/docs/root-md-files/security-2.md)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

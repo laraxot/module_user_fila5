@@ -5,10 +5,10 @@ sources:
 confidence: high
 updated: 2026-04-15
 related:
-<<<<<<< .merge_file_vElC1d
+<<<<<<< .merge_file_prF2Ds
 qmd: "user overview"
 =======
->>>>>>> .merge_file_PiDbbC
+>>>>>>> .merge_file_IgwqmU
 ---
 
 # User Module — Overview

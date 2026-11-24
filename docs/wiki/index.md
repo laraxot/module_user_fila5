@@ -10,17 +10,17 @@ issues:
 discussions:
 related:
 <<<<<<< HEAD
-  - "./AGENTS.md"
+  - "./agents-2.md"
 =======
 <<<<<<< HEAD
   - "./agents.md"
-<<<<<<< .merge_file_Z3RHM3
+<<<<<<< .merge_file_Nq500P
 =======
 =======
-  - "./AGENTS.md"
+  - "./agents-2.md"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_6nULn6
+>>>>>>> .merge_file_9WdIKs
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

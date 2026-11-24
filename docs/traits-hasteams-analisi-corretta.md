@@ -1,11 +1,11 @@
-<<<<<<< .merge_file_uWqxI6
+<<<<<<< .merge_file_loDSu6
 ---
 title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
 type: analysis
 qmd: "traits hasteams analisi corretta trait filosofia"
 ---
 =======
->>>>>>> .merge_file_wr3tbx
+>>>>>>> .merge_file_n8s9Py
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -535,7 +535,7 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
-- [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md)
+- [docs/phpstan-fixes-5.md](../../../../docs/phpstan-fixes-5.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 

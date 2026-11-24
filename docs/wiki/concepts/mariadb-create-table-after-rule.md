@@ -13,10 +13,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_L7lVb6
+<<<<<<< .merge_file_28MwsO
 qmd: "mariadb create table after rule"
 =======
->>>>>>> .merge_file_aPuykn
+>>>>>>> .merge_file_rasjbE
 ---
 
 # MariaDB create table `after()` rule

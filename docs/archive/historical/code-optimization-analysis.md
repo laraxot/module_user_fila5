@@ -44,18 +44,18 @@ docs/
 ├── authentication/
 │   ├── overview.md
 │   ├── implementation.md
-│   ├── security.md
+│   ├── security-2.md
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management.md
+│   ├── profile-management-3.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
 │   ├── resources.md
 │   ├── widgets.md
 │   ├── relation_managers.md
-│   └── best_practices.md
+│   └── best-practices-3.md
 ├── integrations/
 │   ├── socialite.md
 │   ├── passport.md
@@ -67,11 +67,11 @@ docs/
 │   └── webhook_api.md
 ├── reference/
 │   ├── configuration.md
-│   ├── database_schema.md
-│   ├── commands.md
+│   ├── database-schema-2.md
+│   ├── commands-2.md
 │   └── events.md
 └── best_practices/
-    ├── security.md
+    ├── security-2.md
     ├── performance.md
     ├── testing.md
     └── deployment.md

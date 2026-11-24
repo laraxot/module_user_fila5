@@ -242,7 +242,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
-- [Roles & Permissions](./roles-permissions.md)
+- [Roles & Permissions](../roles-permissions-2.md)
 - [User Module README](./readme.md)
 
 ### Root Progetto

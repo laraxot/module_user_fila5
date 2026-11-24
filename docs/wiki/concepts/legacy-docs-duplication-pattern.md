@@ -16,10 +16,10 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< .merge_file_Z8iy6a
+<<<<<<< .merge_file_77cdXC
 qmd: "legacy duplication pattern duplicazione user"
 =======
->>>>>>> .merge_file_XFfj7Y
+>>>>>>> .merge_file_nD5rzf
 ---
 
 # Pattern ridondanza in `Modules/User/docs/legacy`
@@ -51,5 +51,5 @@ Quando tocchi legacy per un refactor:
 
 ## Aggiorna anche
 
-Ridondanza **Filament/oauth** codice nel modulo è trattata in [`../redundancy-report.md`](../../redundancy-report.md) (sezione Oauth).
+Ridondanza **Filament/oauth** codice nel modulo è trattata in [`../../../../Geo/docs/redundancy-report-2.md`](../../redundancy-report.md) (sezione Oauth).
 

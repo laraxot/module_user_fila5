@@ -1,11 +1,11 @@
-<<<<<<< .merge_file_TNATFX
+<<<<<<< .merge_file_H0R7c8
 ---
 title: "Implementazione del Logout con Volt"
 type: note
 qmd: "volt logout implementazione"
 ---
 =======
->>>>>>> .merge_file_Mvpjmn
+>>>>>>> .merge_file_kI17NF
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -224,8 +224,8 @@ public function test_logout_clears_session()
 ## Collegamenti
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
-- [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
-- [Routing Best Practices](./routing_best_practices.md) 
+- [Best Practices Filament](../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [Routing Best Practices](./routing-best-practices-2.md) 
 ---
 module: theme
 topic: volt-logout

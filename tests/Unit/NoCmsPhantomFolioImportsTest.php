@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use App\Providers\FolioServiceProvider;
 use Symfony\Component\Finder\Finder;
 
 use function Safe\file_get_contents;
@@ -12,7 +11,7 @@ use function Safe\file_get_contents;
  * Il modulo e' condiviso: in questo progetto Modules/Cms esiste, quindi NON si asserisce l'assenza
  * della cartella Cms ne' quella di `resources/views/pages` (tracciata e popolata).
  *
- * @see FolioServiceProvider stub no-op
+ * @see Modules/Cms/app/Providers/FolioVoltServiceProvider.php (unico owner Folio+Volt)
  * @see Modules/User/docs/architecture/auth-blade-structure.md
  * @see Modules/User/docs/adr/frontoffice-login-page-ownership.md
  */

@@ -5,10 +5,10 @@ tags: [skill, user, filament, translations, langserviceprovider]
 module: "User"
 created: 2026-05-12
 updated: 2026-05-12
-<<<<<<< .merge_file_79Vhkn
+<<<<<<< .merge_file_7fwxv4
 qmd: "filament translation audit skill traduzioni user"
 =======
->>>>>>> .merge_file_AqF0Q8
+>>>>>>> .merge_file_wU9Scd
 ---
 
 # Skill — Audit traduzioni Filament User
@@ -71,6 +71,6 @@ Se il task tocca page/resource Filament, carica anche:
 
 ## Vedi anche
 
-- [Rules Index](../rules/INDEX.md)
+- [Rules Index](../rules/index-2.md)
 - [User Wiki Index](../index.md)
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

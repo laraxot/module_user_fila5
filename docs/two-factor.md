@@ -11,10 +11,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_cFjAy0
+<<<<<<< .merge_file_EWiVSn
 qmd: "two factor"
 =======
->>>>>>> .merge_file_fJuhcA
+>>>>>>> .merge_file_iAi8qL
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md

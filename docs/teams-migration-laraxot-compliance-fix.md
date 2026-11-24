@@ -1,11 +1,11 @@
-<<<<<<< .merge_file_p0TjOL
+<<<<<<< .merge_file_OAV7Dr
 ---
 title: "Teams Migration - Laraxot Compliance Fix"
 type: note
 qmd: "teams migration laraxot compliance fix"
 ---
 =======
->>>>>>> .merge_file_ghtpGq
+>>>>>>> .merge_file_KyvaGU
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data
@@ -68,7 +68,7 @@ Entrambe dovrebbero usare `uuid()` per coerenza con il sistema laraxot.
 
 ## Checklist Conformità Laraxot
 
-Riferimento: `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md`
+Riferimento: `/Modules/User/docs/migration-best-practices-2.md`
 
 ### Prima della Correzione
 
@@ -174,7 +174,7 @@ Questo garantisce:
 
 ## Riferimenti
 
-- `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md` - Standard migrations modulo User
+- `/Modules/User/docs/migration-best-practices-2.md` - Standard migrations modulo User
 - `/Modules/Xot/app/Database/Migrations/XotBaseMigration.php` - Classe base
 - `/Modules/Xot/docs/migration-standards.md` - Standard generali (se esiste)
 
@@ -198,7 +198,7 @@ Questo garantisce:
 
 ## Lesson Learned
 
-**SEMPRE seguire la checklist di MIGRATION_BEST_PRACTICES.md prima di committare una migration!**
+**SEMPRE seguire la checklist di migration-best-practices-2.md prima di committare una migration!**
 
 Le violazioni delle convenzioni laraxot rendono:
 - Più difficile il refactoring

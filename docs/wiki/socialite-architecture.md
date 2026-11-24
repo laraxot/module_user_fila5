@@ -9,17 +9,17 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 <<<<<<< HEAD
-  - "./AGENTS.md"
+  - "./agents-2.md"
 =======
 <<<<<<< HEAD
   - "./agents.md"
-<<<<<<< .merge_file_784uIe
+<<<<<<< .merge_file_Y4Q7li
 =======
 =======
-  - "./AGENTS.md"
+  - "./agents-2.md"
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> .merge_file_zuhjOB
+>>>>>>> .merge_file_NFekXM
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

@@ -54,4 +54,4 @@ vendor/bin/php-cs-fixer fix Modules/User --allow-risky=no
 ## Notes
 - After changes, verify: login, logout, 2FA flows, password change (`ChangeProfilePasswordAction`).
 - Track suppressions with rationale and re-evaluation date.
-- Align with `Modules/User/docs/ROADMAP.md` security tasks (2FA, Social Login, SSO).
+- Align with `Modules/User/docs/roadmap-2.md` security tasks (2FA, Social Login, SSO).

@@ -11,10 +11,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_5ltnJH
+<<<<<<< .merge_file_MeXsLP
 qmd: "viewclient infolist implementation"
 =======
->>>>>>> .merge_file_Z9Z9Cu
+>>>>>>> .merge_file_c2Cfyy
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md

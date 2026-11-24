@@ -11,10 +11,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_gr8EJZ
+<<<<<<< .merge_file_qHdEw7
 qmd: "translation fixes"
 =======
->>>>>>> .merge_file_a4S2oC
+>>>>>>> .merge_file_cjI0pT
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md

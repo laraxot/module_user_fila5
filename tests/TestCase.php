@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
-use Illuminate\Database\DatabaseManager;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -38,8 +37,6 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
-use Mockery\CompositeExpectation;
-use Mockery\Expectation;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -52,6 +49,8 @@ use function Safe\json_encode;
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+ *
+ * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md perche' `$connectionsToTransact` non elenca connessioni di progetto
  *
  * @property User|null $user
  * @property User|null $owner
@@ -113,6 +112,8 @@ abstract class TestCase extends XotBaseTestCase
      *
      * Nessun tipo di ritorno nativo: il metodo del trait non lo dichiara.
      *
+     * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md
+     *
      * @return void
      */
     public function beginDatabaseTransaction()
@@ -121,15 +122,7 @@ abstract class TestCase extends XotBaseTestCase
             static::$userSchemaMigrated = true;
 
             if (config('database.default') !== 'sqlite') {
-<<<<<<< .merge_file_SXZy7A
                 $this->app?->make(Kernel::class)
-=======
-<<<<<<< HEAD
-                $this->app?->make(Kernel::class)
-=======
-                $this->app?->make(\Illuminate\Contracts\Console\Kernel::class)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_vee3Sy
                     ->call('migrate', ['--force' => true]);
             }
         }
@@ -192,17 +185,6 @@ abstract class TestCase extends XotBaseTestCase
     public static ?Collection $users = null;
 
     /**
-<<<<<<< .merge_file_SXZy7A
-=======
-<<<<<<< HEAD
-     * Come `Tests\TestCase`: anche `mariadb` (default in CI) e `fixcity` (Profile del progetto)
-     * vanno in transazione, altrimenti le righe scritte dai test restano nel DB `_test`.
-     *
-     * @var list<string>
-     */
-    protected $connectionsToTransact = ['mysql', 'mariadb', 'user', 'fixcity'];
-=======
->>>>>>> .merge_file_vee3Sy
      * Come `Tests\TestCase`: anche `mariadb` (default in CI) va in transazione, altrimenti le
      * righe scritte dai test restano nel DB `_test`.
      *
@@ -217,10 +199,6 @@ abstract class TestCase extends XotBaseTestCase
      * @var list<string>
      */
     protected $connectionsToTransact = ['mysql', 'mariadb', 'user'];
-<<<<<<< .merge_file_SXZy7A
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_vee3Sy
 
     public function setupFilamentAdminPanel(): void
     {

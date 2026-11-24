@@ -7,10 +7,10 @@ related:
   - "./implementation-summary.md"
   - "./translation-guidelines.md"
   - "./translationlines.md"
-<<<<<<< .merge_file_gbHfXW
+<<<<<<< .merge_file_4LqFL8
 qmd: "implementation"
 =======
->>>>>>> .merge_file_QjilYG
+>>>>>>> .merge_file_pHW0qe
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/implementation-summary-Modules.md
