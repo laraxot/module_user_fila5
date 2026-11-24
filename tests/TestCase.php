@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
-use Illuminate\Database\DatabaseManager;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -15,7 +14,6 @@ use Filament\Schemas\Schema as FilamentSchema;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\Kernel;
-use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;

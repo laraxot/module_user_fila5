@@ -650,3 +650,7 @@ tests/coverage-*.*
 # graphify lanciato su tests/ scrive tests/graphify-out/: output rigenerabile, mai committare
 >>>>>>> laraxot/dev
 tests/graphify-out/
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

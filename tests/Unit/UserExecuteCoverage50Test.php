@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Filament\Actions\Action as FilamentAction;
 use Filament\Actions\BulkAction;
 use Filament\Panel;
@@ -56,7 +55,6 @@ use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
 use Modules\User\View\Components\Mail\Message;
 use Modules\User\View\Pages\ProfileEditVoltComponent;
-use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
