@@ -4,6 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
+qmd: "header language selector with flags"
 ---
 
 # Implementazione del Selettore di Lingua con Bandiere SVG

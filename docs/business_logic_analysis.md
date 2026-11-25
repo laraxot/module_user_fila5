@@ -1,6 +1,15 @@
 # User Module - Business Logic Analysis
 
 ## Overview
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
+---
+title: "User Module - Business Logic Analysis"
+type: analysis
+qmd: "business logic analysis user"
+---
+# User Module - Business Logic Analysis
+
+## Overview
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
 
 ## Business Purpose

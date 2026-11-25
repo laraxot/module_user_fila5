@@ -8,6 +8,7 @@ tags: [migrato-da-txt, user]
 converted_from: socialite.txt
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "socialite risorse esterne"
 ---
 
 # Socialite — risorse esterne

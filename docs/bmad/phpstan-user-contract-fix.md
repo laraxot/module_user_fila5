@@ -9,6 +9,7 @@ related:
   - ./decision-log.md
   - ./tech-spec-superadmin-widget.md
   - ./ux-design.md
+qmd: "phpstan user contract fix usercontract debito"
 ---
 
 # PHPStan User — chiusura

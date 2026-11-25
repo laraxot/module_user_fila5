@@ -1,3 +1,8 @@
+---
+title: "Analisi Completa del Modulo User"
+type: analysis
+qmd: "analisi completa user"
+---
 # Analisi Completa del Modulo User
 
 ## Filosofia e Religione del Modulo

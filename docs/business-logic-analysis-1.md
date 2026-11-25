@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "business logic analysis 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BUSINESS_LOGIC_ANALYSIS-Modules.md

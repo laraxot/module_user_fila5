@@ -1,3 +1,8 @@
+---
+title: "TeamsRelationManager in User Module"
+type: note
+qmd: "teams relation manager teamsrelationmanager user"
+---
 # TeamsRelationManager in User Module
 
 ## Panoramica

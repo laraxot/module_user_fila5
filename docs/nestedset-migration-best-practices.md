@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "nestedset migration best practices"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md

@@ -13,7 +13,7 @@ use Mockery\MockInterface;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 class TenantTest extends TestCase
 {

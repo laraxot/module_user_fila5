@@ -1,6 +1,7 @@
 ---
 title: team-permissions-sqlite-migration.story
 module: User
+qmd: "team permissions sqlite migration story teampermissionssqlitemigrationstory"
 ---
 
 # Story: team_permissions migration on SQLite

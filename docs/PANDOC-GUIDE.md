@@ -1,6 +1,7 @@
 ---
 title: Pandoc Documentation Generation Guide
 description: How to convert module documentation to multiple formats using Pandoc
+qmd: "pandoc guide generation"
 ---
 
 # Pandoc Documentation Generation

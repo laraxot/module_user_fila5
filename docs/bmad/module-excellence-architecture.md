@@ -11,6 +11,7 @@ related:
   - ./module-excellence-prd.md
   - ./epics.md
   - ../purpose.md
+qmd: "excellence architecture user stato attuale perfezione"
 ---
 
 # Architecture: User module — stato attuale vs target

@@ -8,6 +8,7 @@ owner: module:User
 module: User
 related: [QA-01, SEC-05, dcp-285, issue-97]
 tags: [tests, ci, pest, mariadb, policy, security]
+qmd: "user test suite green story pest"
 ---
 
 # Suite Pest del modulo User verde in CI

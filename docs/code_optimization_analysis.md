@@ -1,3 +1,8 @@
+---
+title: "user module code and documentation optimization analysis"
+type: analysis
+qmd: "code optimization analysis user"
+---
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis

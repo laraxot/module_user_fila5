@@ -11,6 +11,7 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+qmd: "header auth flow"
 ---
 
 ## Rule Overview

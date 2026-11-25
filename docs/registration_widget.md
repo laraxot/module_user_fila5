@@ -1,3 +1,8 @@
+---
+title: "Registration Widget Documentation"
+type: note
+qmd: "registration widget"
+---
 # Registration Widget Documentation
 
 ## Overview

@@ -4,23 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
-use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Carbon\Carbon;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\Entry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
+use Filament\Schemas\Contracts\HasSchemas;
+use Filament\Schemas\Schema;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules\Unique;
+use Livewire\Component as LivewireComponent;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
 uses(TestCase::class);
 
@@ -40,6 +52,62 @@ function userResourceFormSchema(): array
     $schema = $form->getFormSchema();
 
     return $schema;
+}
+
+/**
+ * Figli dichiarati di un componente (chiave = nome del blocco, es. 'main', 'signin'). A differenza di
+ * getChildComponents() non richiede un container Livewire.
+ *
+ * @return array<Component|Action|ActionGroup|string|Htmlable>
+ */
+function userResourceFormChildren(Component $component): array
+{
+    $children = $component->getDefaultChildComponents();
+    Assert::assertIsArray($children);
+
+    return $children;
+}
+
+/**
+ * Cerca per nome un campo (Field) o una voce (Entry), scendendo in Grid e Section annidate:
+ * il form e' una Grid -> Grid -> Section, quindi gli indici fissi si rompono a ogni riorganizzazione del layout.
+ *
+ * @param  array<Component|Action|ActionGroup|string|Htmlable>  $components
+ */
+function userResourceFormFindByName(array $components, string $name): Field|Entry|null
+{
+    foreach ($components as $component) {
+        if (! $component instanceof Component) {
+            continue;
+        }
+
+        if (($component instanceof Field || $component instanceof Entry) && $name === $component->getName()) {
+            return $component;
+        }
+
+        $found = userResourceFormFindByName(userResourceFormChildren($component), $name);
+        if (null !== $found) {
+            return $found;
+        }
+    }
+
+    return null;
+}
+
+/**
+ * Il campo come lo vede Filament a pagina aperta: dentro uno Schema legato alla pagina (e al record, se c'e'),
+ * perche' closure come `fn (Livewire $livewire) => ...` o `unique()` si risolvono solo con il container.
+ */
+function userResourceFormFieldOnPage(string $name, HasSchemas&LivewireComponent $page, ?User $record = null): Field|Entry
+{
+    $schema = Schema::make($page)
+        ->model($record ?? User::class)
+        ->components(userResourceFormSchema());
+
+    $field = userResourceFormFindByName($schema->getFlatComponents(withActions: false, withHidden: true), $name);
+    Assert::assertNotNull($field, sprintf('Field [%s] not found in the user form', $name));
+
+    return $field;
 }
 
 beforeEach(function (): void {

@@ -8,6 +8,7 @@ issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/572"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
+qmd: "citizen registration email story registrazione cittadino"
 ---
 
 # Registrazione cittadino: UX accessibile e verifica email locale

@@ -5,6 +5,7 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
+qmd: "user architecture sources"
 ---
 
 # User Architecture Sources

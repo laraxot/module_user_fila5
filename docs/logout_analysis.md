@@ -1,3 +1,8 @@
+---
+title: "Analisi del File Logout.blade.php"
+type: analysis
+qmd: "logout analysis analisi logoutbladephp"
+---
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale

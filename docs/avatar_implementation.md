@@ -1,3 +1,8 @@
+---
+title: "Implementazione degli Avatar"
+type: note
+qmd: "avatar implementation implementazione"
+---
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati

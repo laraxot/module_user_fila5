@@ -11,6 +11,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+qmd: "folio volt best practices"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md

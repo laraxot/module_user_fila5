@@ -1075,7 +1075,8 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
+See [roadmap.md](./roadmap.md) for details.
 
 ---
 

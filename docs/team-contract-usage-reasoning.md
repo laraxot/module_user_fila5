@@ -1,3 +1,8 @@
+---
+title: "TeamContract Usage Reasoning"
+type: contract
+qmd: "team contract usage reasoning teamcontract"
+---
 # TeamContract Usage Reasoning
 
 ## Overview

@@ -2,6 +2,7 @@
 title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved
+qmd: "lfs resolution corruption"
 ---
 
 # LFS Corruption Resolution (2026-07-28)
@@ -92,3 +93,11 @@ updated: 2026-11-17
 <!-- recovery from broken basename `LFS-RESOLUTION-.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
+
+
+
+---
+
+<!-- Contenuto unito da LFS-RESOLUTION-.md (rimozione date dai nomi file, issue #64) -->
+
+Vedi [LFS-RESOLUTION.md](./LFS-RESOLUTION.md).

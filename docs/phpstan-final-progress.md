@@ -72,3 +72,5 @@ Da identificare e correggere sistematicamente.
 - [OAuth Resources Corrections](./phpstan-corrections-oauth-resources.md)
 
 ---
+
+*Ultimo aggiornamento: 2025-01-22*

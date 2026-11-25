@@ -1,3 +1,8 @@
+---
+title: "Standard di Documentazione"
+type: note
+qmd: "standards standard"
+---
 # Standard di Documentazione
 
 ## Convenzioni di Naming

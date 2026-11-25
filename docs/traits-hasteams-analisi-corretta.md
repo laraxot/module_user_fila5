@@ -1,3 +1,8 @@
+---
+title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
+type: analysis
+qmd: "traits hasteams analisi corretta trait filosofia"
+---
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`

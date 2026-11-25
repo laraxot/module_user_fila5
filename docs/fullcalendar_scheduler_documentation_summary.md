@@ -1,3 +1,8 @@
+---
+title: "FullCalendar Scheduler - Documentazione Completa"
+type: note
+qmd: "fullcalendar scheduler summary completa"
+---
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica

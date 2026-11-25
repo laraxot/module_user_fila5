@@ -13,6 +13,7 @@ related:
   - ./epics.md
   - ./livewire-inventory.md
   - ./decision-log.md
+qmd: "perfection plan user absolute"
 ---
 
 # Perfection Plan — Module User Absolute Perfection

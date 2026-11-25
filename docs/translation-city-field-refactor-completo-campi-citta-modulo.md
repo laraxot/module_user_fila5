@@ -1,3 +1,8 @@
+---
+title: "Refactor Completo Campi \"Città\" - Modulo User"
+type: note
+qmd: "translation city field refactor completo campi"
+---
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

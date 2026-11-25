@@ -1,3 +1,8 @@
+---
+title: "Correzioni Ereditarietà Modelli - Modulo User"
+type: note
+qmd: "model inheritance fixes correzioni ereditarietà modelli"
+---
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione

@@ -1,3 +1,8 @@
+---
+title: "Gestione coerente di roles, permissions e guard_name"
+type: note
+qmd: "roles permissions gestione coerente guardname"
+---
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

@@ -8,6 +8,7 @@ owner: module:User
 module: User
 related: [DCP-290, front-office-audit]
 tags: [auth, design-comuni, folio, volt, ui-ux]
+qmd: "auth verify confirm design comuni shell"
 ---
 
 # Auth verify e password/confirm: allineamento al guscio Design Comuni

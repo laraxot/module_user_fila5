@@ -1,3 +1,8 @@
+---
+title: "Best Practices per le Traduzioni"
+type: note
+qmd: "translation best practices traduzioni"
+---
 # Best Practices per le Traduzioni
 
 ## Principi Generali

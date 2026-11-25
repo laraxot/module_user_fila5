@@ -14,6 +14,7 @@ related:
   - ../purpose.md
   - ../permissions.md
   - ../index.md
+qmd: "excellence prd user percorso verso perfezione"
 ---
 
 # PRD: User module — percorso verso la perfezione assoluta

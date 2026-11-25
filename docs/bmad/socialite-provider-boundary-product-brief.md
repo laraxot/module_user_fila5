@@ -9,6 +9,7 @@ related:
   - ./socialite-provider-boundary-prd.md
   - ./socialite-provider-boundary-architecture.md
   - ./stories/socialite-provider-boundary.story.md
+qmd: "socialite provider boundary product brief"
 ---
 
 # Socialite provider boundary — product brief

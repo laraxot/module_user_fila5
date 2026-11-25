@@ -1,3 +1,8 @@
+---
+title: "BMAD + Second Brain — Session Summary (2026-09-04)"
+type: story
+qmd: "bmad session second brain summary 20260904"
+---
 # BMAD + Second Brain — Session Summary (2026-09-04)
 
 ## Bootstrap

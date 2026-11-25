@@ -1,3 +1,8 @@
+---
+title: "Generic User Moderation Strategy in User Module"
+type: note
+qmd: "generic user moderation strategy"
+---
 # Generic User Moderation Strategy in User Module
 
 ## Overview

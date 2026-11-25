@@ -6,6 +6,7 @@ status: active
 related:
   - ./decision-log.md
   - ./architecture.md
+qmd: "socialite separation from userserviceprovider"
 ---
 
 # Decision: Separate Socialite logic

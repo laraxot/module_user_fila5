@@ -1,3 +1,8 @@
+---
+title: "Filament Resources - User"
+type: note
+qmd: "filament 4x compatibility resources user"
+---
 # Filament Resources - User
 
 ## Risorse Disponibili

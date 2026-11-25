@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "widget rendering analysis analisi loginwidget docsitaliait"
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style

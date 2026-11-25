@@ -1,5 +1,6 @@
 ---
-title: "User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice"
+title: "User: marker di conflitto git residui in docs/ (866 file) — pulizia + aggiornamento indice"
+
 type: story
 module: User
 epic: null
@@ -18,6 +19,7 @@ blocks: []
 supersedes: []
 owned_scope:
   - "laravel/Modules/User/docs/"
+qmd: "merge conflict markers cleanup story user"
 ---
 
 # User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice
@@ -181,11 +183,5 @@ di rilevazione (`grep -rlE '^<<<<<<< |^=======$|^>>>>>>> '` al posto di
 
 Lock `laravel/Modules/User:docs` acquisito e rilasciato correttamente
 (scope limitato a `docs/`, non l'intero modulo). Commit unico, 867 file
-(`git add` con lista esplicita di path, mai `-A` — repo con ~5000
+(`git add` con lista esplicita di path, mai `-A`: repo con ~5000
 modifiche non correlate di altre sessioni in corso).
-
-## Follow-up 2026-11-23
-
-Ondata marker annidati ripulita in-place su 154 file `docs/` (vedi
-[Coordinamento](#coordinamento)). Residual markers: 0. Duplicati case-only e
-indice monolitico `INDEX.md` non consolidati (scope separato).

@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "ottimizzazioni consolidated"
 ---
 
 # ottimizzazioni — Consolidated Documentation
@@ -1104,6 +1105,7 @@ class UserResource extends XotBaseResource
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
+---
 ---
 
 **Consolidated by:** Phase 2f intelligent merging

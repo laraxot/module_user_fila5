@@ -1,3 +1,8 @@
+---
+title: "Convenzione dei Percorsi per le Actions"
+type: note
+qmd: "actions path convention convenzione percorsi"
+---
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale

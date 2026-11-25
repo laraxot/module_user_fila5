@@ -1,3 +1,8 @@
+---
+title: "Regole per Widget di Autenticazione"
+type: rule
+qmd: "auth widget rules regole autenticazione"
+---
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

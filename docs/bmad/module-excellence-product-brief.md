@@ -13,6 +13,7 @@ related:
   - ./epics.md
   - ./decision-log.md
   - ../purpose.md
+qmd: "excellence product brief user percorso verso"
 ---
 
 # Product brief: User module — percorso verso la perfezione assoluta

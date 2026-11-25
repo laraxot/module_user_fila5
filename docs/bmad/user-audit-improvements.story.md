@@ -1,6 +1,7 @@
 ---
 title: user-audit-improvements.story
 module: User
+qmd: "user audit improvements story userauditimprovementsstory"
 ---
 
 # BMAD Story: User Module Audit Improvements

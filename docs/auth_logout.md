@@ -1,3 +1,8 @@
+---
+title: "Componente di Logout"
+type: note
+qmd: "auth logout componente"
+---
 # Componente di Logout
 
 ## Problemi Identificati

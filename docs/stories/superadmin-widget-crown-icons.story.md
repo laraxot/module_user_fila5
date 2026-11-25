@@ -19,6 +19,7 @@ related:
 github:
   repository: null
   issues: []
+qmd: "superadmin widget crown icons story superadminwidget"
 ---
 
 # SuperAdminWidget: icone corona + fix bug reale @svg()

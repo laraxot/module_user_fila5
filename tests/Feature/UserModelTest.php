@@ -15,6 +15,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 uses(TestCase::class);
 
@@ -284,7 +285,7 @@ describe('User Permission System', function () {
 describe('User Media Management', function () {
     it('can have media attached', function () {
         // Il modello media del progetto e' Modules\\Media\\Models\\Media (estende quello di Spatie).
-        expect((new User())->media()->getMorphType())->toBe('model_type');
+        expect((new User)->media()->getMorphType())->toBe('model_type');
     });
 });
 

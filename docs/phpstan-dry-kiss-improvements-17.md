@@ -1,3 +1,8 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Improvements - User Module"
+type: note
+qmd: "phpstan dry kiss improvements 17 level"
+---
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary

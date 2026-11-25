@@ -1,3 +1,8 @@
+---
+title: "Resources Corrections Summary - 2025-01-22"
+type: note
+qmd: "resources corrections summary 20250122"
+---
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo

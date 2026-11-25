@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "oauth cluster implementation summary"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md

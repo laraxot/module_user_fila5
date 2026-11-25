@@ -14,6 +14,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "laraxot migration policy user"
 ---
 
 # Laraxot Migration Policy — User Module

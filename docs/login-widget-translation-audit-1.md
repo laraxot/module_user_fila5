@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "login widget translation audit 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit-conflict.md

@@ -1,6 +1,7 @@
 ---
 title: status
 module: User
+qmd: "status"
 ---
 
 BMAD STATUS — User

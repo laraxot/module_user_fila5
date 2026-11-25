@@ -1,3 +1,8 @@
+---
+title: "Analisi Ereditarietà Modelli - Modulo User"
+type: analysis
+qmd: "model inheritance analysis analisi ereditarietà modelli"
+---
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

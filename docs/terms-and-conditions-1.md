@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "terms and conditions 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/terms_and_conditions.txt

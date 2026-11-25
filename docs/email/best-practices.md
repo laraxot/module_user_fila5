@@ -1,3 +1,8 @@
+---
+title: "📧 Email Deliverability Best Practices – User Module"
+type: note
+qmd: "best practices email deliverability user"
+---
 # 📧 Email Deliverability Best Practices – User Module
 
 **Module**: User (owner)  

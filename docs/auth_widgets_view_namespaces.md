@@ -1,3 +1,8 @@
+---
+title: "Widget di Autenticazione: Namespace delle View"
+type: note
+qmd: "auth widgets view namespaces widget autenticazione"
+---
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**

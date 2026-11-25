@@ -5,6 +5,7 @@ module: "User"
 alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+qmd: "quick reference user bmad"
 ---
 
 # User — BMAD Quick Reference

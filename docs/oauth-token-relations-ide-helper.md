@@ -19,6 +19,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "oauth token relations ide helper relazioni"
 ---
 
 # OAuth Token: Relazioni Nullable e IDE Helper

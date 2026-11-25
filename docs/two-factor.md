@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "two factor"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md

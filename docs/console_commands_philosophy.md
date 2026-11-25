@@ -1,3 +1,8 @@
+---
+title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
+type: note
+qmd: "console commands philosophy filosofia laraxot standard"
+---
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
 
 ## Filosofia Fondamentale

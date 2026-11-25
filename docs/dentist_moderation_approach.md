@@ -1,3 +1,8 @@
+---
+title: "Dentist Moderation Approach in User Module"
+type: note
+qmd: "dentist moderation approach user"
+---
 # Dentist Moderation Approach in User Module
 
 ## Overview

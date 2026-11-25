@@ -10,6 +10,7 @@ related:
   - "./base-classes-corrections.md"
   - "./phpstan-fixes.md"
   - "./phpstan-fixes.md"
+qmd: "phpstanes"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md

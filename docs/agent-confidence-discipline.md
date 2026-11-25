@@ -15,6 +15,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "agent confidence discipline disciplina agenti massimizzare"
 ---
 
 # Disciplina agenti per massimizzare la confidenza

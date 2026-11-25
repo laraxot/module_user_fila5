@@ -1,3 +1,8 @@
+---
+title: "Collisioni di nome per sola differenza di maiuscole"
+type: note
+qmd: "case variant collisions collisioni nome sola"
+---
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31

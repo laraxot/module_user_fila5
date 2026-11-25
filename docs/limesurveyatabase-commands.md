@@ -20,6 +20,7 @@ related:
 
 # Database Analysis Commands and Tools for app_survey
 # Database Analysis Commands and Tools for quaeris_survey
+# Database Analysis Commands and Tools for <nome progetto>_survey
 
 ## Essential Database Queries
 
@@ -236,6 +237,7 @@ LEFT JOIN (
         SUBSTRING(table_name, 13) as sid,  -- Extract survey ID from lime_survey_XXXX
         COUNT(*) as responses
     FROM information_schema.tables 
+    SELECT
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_app_survey'
 ) r ON s.sid = r.sid
@@ -244,6 +246,7 @@ LEFT JOIN (
         SUBSTRING(table_name, 12) as sid,  -- Extract survey ID from lime_tokens_XXXX
         COUNT(*) as total_tokens
     FROM information_schema.tables 
+    SELECT
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_app_survey'
 ) t ON s.sid = t.sid

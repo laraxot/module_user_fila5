@@ -7,13 +7,12 @@ namespace Modules\User\Filament\Resources\UserResource\Schemas;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\CheckboxList;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Grid;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
@@ -22,6 +21,7 @@ use Illuminate\Validation\Rules\Password;
 use Livewire\Component as LivewireComponent;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
@@ -42,7 +42,7 @@ class UserForm extends XotBaseResourceForm
             'main' => Grid::make(1)
                 ->schema([
                     'worker' => UserSection::make('worker')
-                        ->heading('Identity')
+                        ->heading(static fn (): string => (string) __('user::user_section.heading'))
                         ->description('Who this person is. The display name is shown across the panel.')
                         ->icon('heroicon-o-user')
                         ->schema([
@@ -90,7 +90,7 @@ class UserForm extends XotBaseResourceForm
                         ->schema([
                             CheckboxList::make('roles')
                                 ->relationship('roles', 'name')
-                                ->getOptionLabelFromRecordUsing(static fn (Model $record): string => \Modules\User\Models\Role::displayName(SafeStringCastAction::cast($record->getAttribute('name'))))
+                                ->getOptionLabelFromRecordUsing(static fn (Model $record): string => Role::displayName(SafeStringCastAction::cast($record->getAttribute('name'))))
                                 ->columns(['default' => 1, 'sm' => 2])
                                 ->bulkToggleable(),
                         ]),

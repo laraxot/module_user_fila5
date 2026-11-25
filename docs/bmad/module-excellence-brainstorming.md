@@ -11,6 +11,7 @@ related:
   - ./module-excellence-prd.md
   - ./module-excellence-architecture.md
   - ./epics.md
+qmd: "excellence brainstorming user findings grezzi fork"
 ---
 
 # Brainstorming: User module — findings grezzi

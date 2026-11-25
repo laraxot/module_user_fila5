@@ -1,3 +1,8 @@
+---
+title: "Ponytail-audit 2026-07-02: User module findings"
+type: audit
+qmd: "ponytail audit user findings ponytailaudit 20260702"
+---
 # Ponytail-audit 2026-07-02: User module findings
 
 Source: repo-wide ponytail-audit follow-up, published in module_user_fila5 discussion

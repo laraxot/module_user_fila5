@@ -11,6 +11,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+qmd: "index"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/00-index-Modules.md

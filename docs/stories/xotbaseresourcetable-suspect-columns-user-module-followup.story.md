@@ -1,11 +1,12 @@
 ---
-title: "Follow-up — colonne sospette/bug reale trovati nell'audit \$model (modulo User)"
+title: "Follow-up — colonne sospette/bug reale trovati nell'audit $model (modulo User)"
 type: story
 module: User
 epic: xotbaseresourcetable-model-property-and-column-audit
 created: '2026-09-11'
 updated: '2026-09-11'
 status: resolved
+qmd: "xotbaseresourcetable suspect columns user followup story"
 ---
 
 # Follow-up — colonne sospette e bug reale (modulo User)

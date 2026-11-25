@@ -1,3 +1,8 @@
+---
+title: "User Module - Business Logic Analysis"
+type: analysis
+qmd: "business logic analysis user"
+---
 # User Module - Business Logic Analysis
 
 ## Overview

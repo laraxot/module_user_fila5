@@ -8,6 +8,7 @@ related:
   - "./laravel.md"
   - "./SECURITY.md"
   - "./styling.md"
+qmd: "usage"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/usage-Modules.md

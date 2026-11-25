@@ -11,6 +11,7 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
   - ./decision-log.md
+qmd: "livewire widget project context solo filament"
 ---
 
 # Project context — campagna Livewire HTTP → widget

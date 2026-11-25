@@ -2,6 +2,7 @@
 title: "User front-office authentication production audit"
 type: bmad-evidence
 tags: [front-office, auth, verification, oauth, production]
+qmd: "front office auth production audit user"
 ---
 
 # User front-office authentication production audit

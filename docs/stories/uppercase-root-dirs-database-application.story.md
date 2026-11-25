@@ -21,6 +21,7 @@ supersedes: []
 owned_scope:
   - "laravel/Modules/User/Database/"
   - "laravel/Modules/User/Application/"
+qmd: "uppercase root dirs database application story"
 ---
 
 ## Contesto

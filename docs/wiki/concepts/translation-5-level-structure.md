@@ -15,6 +15,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+qmd: "translation 5 level structure 5level never"
 ---
 
 # Translation 5-Level Structure Rule

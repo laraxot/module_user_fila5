@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "mcp integration 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-integration-Modules.md

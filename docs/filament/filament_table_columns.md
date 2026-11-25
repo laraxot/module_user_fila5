@@ -1,3 +1,8 @@
+---
+title: "Convenzione Metodo getTableColumns per Filament Table"
+type: note
+qmd: "filament table columns convenzione metodo gettablecolumns"
+---
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica

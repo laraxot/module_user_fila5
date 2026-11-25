@@ -4,6 +4,7 @@ type: reference
 tags: [user, api, actions]
 created: 2026-07-28
 updated: 2026-07-28
+qmd: "api user reference"
 ---
 
 # User Module — API Reference

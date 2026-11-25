@@ -11,6 +11,7 @@ related:
   - ./prd.md
   - ./architecture.md
   - ./tech-spec.md
+qmd: "project context superadmin widget"
 ---
 
 # Project context — SuperAdmin nel user menu

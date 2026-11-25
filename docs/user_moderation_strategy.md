@@ -5,6 +5,7 @@ type: product
 tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "user moderation strategy"
 ---
 
 # User Moderation Strategy

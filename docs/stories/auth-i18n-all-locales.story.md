@@ -1,3 +1,8 @@
+---
+title: "Pagine auth e segnalazioni in tutte le lingue (it, en, de, es)"
+type: story
+qmd: "auth i18n all locales story pagine"
+---
 # Pagine auth e segnalazioni in tutte le lingue (it, en, de, es)
 
 - Stato: done (2026-10-07)

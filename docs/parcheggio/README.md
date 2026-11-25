@@ -5,12 +5,13 @@ category: documentation
 module: User
 status: active
 updated_at: '2026-11-18'
+qmd: "parcheggiati user"
 ---
 
 # File parcheggiati
 
 File `.wip` spostati qui da `app/` e da `database/migrations/` il 2026-11-12
-([module_quaeris_fila5#61](https://github.com/laraxot/module_quaeris_fila5/issues/61)).
+([module_<nome progetto>_fila5#61](https://github.com/laraxot/module_<nome progetto>_fila5/issues/61)).
 
 | File | Stato | Nota |
 |---|---|---|

@@ -1,3 +1,8 @@
+---
+title: "👥 USER MODULE - ROADMAP 2025"
+type: note
+qmd: "roadmap archive user 2025"
+---
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  

@@ -1,3 +1,8 @@
+---
+title: "Widget Translation Rules - SaluteOra Project"
+type: rule
+qmd: "widget translation rules saluteora project"
+---
 # Widget Translation Rules - SaluteOra Project
 
 ## Core Principles

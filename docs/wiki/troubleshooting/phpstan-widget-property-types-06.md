@@ -1,3 +1,8 @@
+---
+title: "PHPStan widget property types"
+type: guide
+qmd: "phpstan widget property types 06"
+---
 # PHPStan widget property types
 
 ## Contesto

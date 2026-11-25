@@ -33,6 +33,7 @@ owned_scope:
 related:
   - "docs/stories/xotbaseresourcetable-model-audit-batch-user-oauth.story.md"
   - "docs/stories/xotbaseresourcetable-model-audit-user-module-batch.story.md"
+qmd: "xotbaseresourcetable model audit passport socialite clusters"
 ---
 
 # XotBaseResourceTable: audit $model + verifica colonne (batch Passport/Socialite clusters + AuthLog/BaseProfile/BaseUser/Client)
@@ -123,6 +124,26 @@ applicabile), mai contro il nome del file.
 
 **Nota metodologica critica**: questo modulo usa connection DB per-model
 diverse da quella di default (`protected $connection = 'user'` → DB fisico
+`<nome progetto>_user`; `'<nome progetto>'` per il model `Profile` concreto → DB
+`<nome progetto>_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+`<nome progetto>_user`; `'<nome progetto>'` per il model `Profile` concreto → DB
+`<nome progetto>_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
+`quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
+`quaeris_data` ma schema separato). Un primo giro di verifica fatto con
+=======
 `quaeris_user`; `'quaeris'` per il model `Profile` concreto → DB
 `quaeris_data` ma schema separato). Un primo giro di verifica fatto con
 `Schema::getColumnListing()` (connection di default, senza specificarla) ha
@@ -157,7 +178,8 @@ BaseUsersTable, ClientsTable.
   `updated_at` nella tabella, e infatti la Table non li referenzia.
 - `BaseProfilesTable.php`: `user.name` (relazione, non verificabile via
   Schema, saltata). `first_name`/`last_name`/`email` presenti su
-  `Schema::connection('quaeris')->getColumnListing('profiles')`. `is_active`
+  `Schema::connection('<nome progetto>')->getColumnListing('profiles')`. `is_active`
+  `Schema::connection('<nome progetto>')->getColumnListing('profiles')`. `is_active`
   **non presente** sul DB dev corrente via la connection corretta, ma
   verificato come intenzionale: `$fillable`
   [Source: app/Models/BaseProfile.php#L101], cast boolean

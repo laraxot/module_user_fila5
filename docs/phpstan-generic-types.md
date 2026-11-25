@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "phpstan generic types"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-generic-types.md

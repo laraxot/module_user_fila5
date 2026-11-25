@@ -1,3 +1,8 @@
+---
+title: "Aggiornamento relativo a DoctorResource.php"
+type: note
+qmd: "registration widget update aggiornamento relativo doctorresourcephp"
+---
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15

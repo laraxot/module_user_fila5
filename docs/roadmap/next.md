@@ -11,6 +11,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+qmd: "next"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/02-next.md

@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "third party models"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md

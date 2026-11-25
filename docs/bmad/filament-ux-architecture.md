@@ -14,6 +14,7 @@ related:
   - ./livewire-widget-architecture.md
   - ./architecture.md
   - docs/wiki/rules pers. XotBase / lang
+qmd: "filament ux architecture audit uifilament user"
 ---
 
 # Architecture: epic 12 — gap UI/Filament modulo User

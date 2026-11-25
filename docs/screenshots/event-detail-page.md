@@ -6,6 +6,7 @@ topic: event-detail-page
 canonical: ../../../../Themes/docs/shared-components/event-detail-page.png
 created: 2026-07-22
 updated: 2026-07-22
+qmd: "event detail page eventdetailpage"
 ---
 
 # event-detail-page

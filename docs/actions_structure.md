@@ -1,3 +1,8 @@
+---
+title: "Actions Structure"
+type: note
+qmd: "actions structure"
+---
 # Actions Structure 
 
 ## Directory Structure

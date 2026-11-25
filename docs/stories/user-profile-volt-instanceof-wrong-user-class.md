@@ -22,6 +22,7 @@ related:
 github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
+qmd: "user profile volt instanceof wrong class"
 ---
 
 # STORY — ProfileEditVoltComponent controllava instanceof contro la classe User sbagliata

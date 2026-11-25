@@ -1,3 +1,8 @@
+---
+title: "BMAD + Second Brain — Fix Log"
+type: story
+qmd: "bmad second brain"
+---
 # BMAD + Second Brain — Fix Log
 
 ## Diagnosi

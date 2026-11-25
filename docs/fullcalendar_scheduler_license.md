@@ -1,3 +1,8 @@
+---
+title: "FullCalendar Scheduler License Configuration"
+type: note
+qmd: "fullcalendar scheduler license configuration"
+---
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

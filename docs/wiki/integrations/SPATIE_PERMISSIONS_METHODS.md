@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "spatie permissions methods user permission reference"
 ---
 
 # User Module - Spatie Permission Methods Reference
@@ -482,6 +483,7 @@ $user->assignRole(Role::findByName('admin', 'web'));
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
 - **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
 
 ## Version Information
 

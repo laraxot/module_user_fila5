@@ -4,6 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
+qmd: "logout implementation with laravel localization"
 ---
 
 # Implementazione del Logout con LaravelLocalization 

@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "traits hasteams corrected"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md

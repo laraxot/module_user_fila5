@@ -307,4 +307,5 @@ return [
 
 ---
 
+**Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS

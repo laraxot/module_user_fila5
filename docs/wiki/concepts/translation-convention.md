@@ -1,3 +1,8 @@
+---
+title: "Translation Convention - User Module"
+type: concept
+qmd: "translation convention user"
+---
 # Translation Convention - User Module
 
 ## Regola

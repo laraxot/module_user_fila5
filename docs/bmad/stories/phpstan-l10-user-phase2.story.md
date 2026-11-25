@@ -10,6 +10,7 @@ acceptance_criteria:
   - Verify with php -l for each file
   - Update BMAD story with findings
   - One commit per fix with clear message
+qmd: "phpstan l10 user phase2 story phase"
 ---
 
 # PHPStan L10 User Module — Phase 2

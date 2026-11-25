@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "mcp server recommended 2"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended-Modules.md

@@ -1,3 +1,8 @@
+---
+title: "Perfection Audit — User Module"
+type: audit
+qmd: "perfection audit user"
+---
 # Perfection Audit — User Module
 
 **Data**: 2026-09-01

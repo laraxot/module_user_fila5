@@ -8,6 +8,7 @@ owner: module:User
 module: User
 related: [xotbase-migration-religion, one-migration-per-model, production-500-deleted-at]
 tags: [migrations, users, convention, production]
+qmd: "users migrations consolidation story migrazioni consolidamento"
 ---
 
 # Migrazioni users: consolidamento in create_users_table

@@ -1,3 +1,8 @@
+---
+title: "Implementazione del Logout con Widget Filament"
+type: note
+qmd: "logout filament widget implementazione"
+---
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati

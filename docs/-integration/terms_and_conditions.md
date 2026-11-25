@@ -1,3 +1,8 @@
+---
+title: "terms_and_conditions"
+type: note
+qmd: "terms and conditions termsandconditions"
+---
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

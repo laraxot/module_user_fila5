@@ -136,6 +136,7 @@ status: draft
   ✓ user resource can be instantiated                                    0.38s  
   ✓ user resource has correct model                                      0.37s  
 
+
    FAIL  Modules\User\tests\Feature\Filament\UserResourceTest
   ⨯ UserResource Configuration → it has correct model class
   ⨯ UserResource Configuration → it has correct slug
@@ -265,6 +266,7 @@ status: draft
   ✓ InteractsWithTenant Trait Behavior → it does not crash when booting… 0.37s  
   ✓ InteractsWithTenant Trait Behavior → it skips tenant assignment in…  0.37s  
 
+
    FAIL  Modules\User\tests\Feature\TwoFactorServiceTest
   ⨯ enable generates secret and qr code
   ⨯ enable stores encrypted secret
@@ -387,6 +389,7 @@ status: draft
   ✓ user model can access connection                                     0.23s  
   ✓ user model can create basic record                                   0.40s  
 
+
    FAIL  Modules\User\tests\Feature\UserModelTest
   ⨯ User Model Creation → it can be created with valid data
   ⨯ User Model Creation → it generates uuid for id
@@ -436,9 +439,7 @@ status: draft
   ✓ Authentication Business Logic → Team Management Logic → it validate… 0.24s  
   ✓ Authentication Business Logic → Team Management Logic → it handles…  0.25s  
   ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
-  ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
   ✓ Authentication Business Logic → Role-Based Access Control → it hand… 0.25s  
-  ✓ Authentication Business Logic → Role-Based Access Control → it vali… 0.24s  
   ✓ Authentication Business Logic → OAuth Integration Logic → it valida… 0.23s  
   ✓ Authentication Business Logic → OAuth Integration Logic → it handle… 0.25s  
   ✓ Authentication Business Logic → OAuth Integration Logic → it valida… 0.24s  
@@ -449,6 +450,10 @@ status: draft
   ✓ Authentication Business Logic → Device Management Logic → it handle… 0.55s  
   ✓ Authentication Business Logic → Session Security Logic → it validat… 0.25s  
   ✓ Authentication Business Logic → Session Security Logic → it handles… 0.23s  
+
+   PASS  Modules\User\tests\Unit\ChangeTypeCommandTest
+  ✓ ChangeTypeCommand → it can be instantiated                           0.01s  
+
   ✓ Authentication Business Logic → Session Security Logic → it validat… 0.25s  
 
    PASS  Modules\User\tests\Unit\ChangeTypeCommandTest
@@ -518,9 +523,7 @@ status: draft
   ⨯ it handles edge cases
 
    FAIL  Modules\User\tests\Unit\HasTeamsTraitTest
-  ⨯ it correctly checks if user belongs to teams                         0.25s  
   ✓ it correctly checks if user belongs to specific team                 0.26s  
-  ✓ it correctly checks team ownership                                   0.25s  
   ✓ it uses belongs to many x for teams relationship                     0.24s  
   ⨯ it correctly manages current team                                    0.43s  
   ✓ it correctly identifies current team                                 0.40s  
@@ -734,6 +737,7 @@ status: draft
   ✓ user can be found by otp status                                      0.37s  
   ✓ user can handle null values                                          0.39s  
 
+
    FAIL  Modules\User\tests\Unit\PermissionTest
   ⨯ permission can be created
   ⨯ permission has correct fillable attributes
@@ -867,6 +871,8 @@ status: draft
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:16
      12▕ 
+
+     12▕
      13▕ describe('Auth Components Tests', function (): void {
      14▕     test('auth components exist and work correctly', function (): void {
      15▕         // Test existing auth components
@@ -1150,6 +1156,7 @@ Stack trace:
 #118 {main}
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+=======
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
 #1 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
@@ -1258,11 +1265,350 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
+#1 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/53c107abd3aaca46e6fb3de49c65857b.php(22): Illuminate\Foundation\Vite->__invoke()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(103): Illuminate\View\View->render()
+#12 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/bbae9269c8cc48f8eeeb47ad9dbd4f6e.php(101): Illuminate\View\Factory->renderComponent()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#29 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#52 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#101 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(29): Pest\Laravel\get()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#108 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(35): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#109 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Auth_Components_Tests__→_login_page_loads_correctly()
+#110 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#111 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#112 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#113 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#114 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#115 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#116 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#117 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#118 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#119 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#120 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+#121 {main}
+
+Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(103): Illuminate\View\View->render()
+#9 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/bbae9269c8cc48f8eeeb47ad9dbd4f6e.php(101): Illuminate\View\Factory->renderComponent()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#49 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#98 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(29): Pest\Laravel\get()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(35): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Auth_Components_Tests__→_login_page_loads_correctly()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#108 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#109 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#110 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#111 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#112 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#113 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#114 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#115 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#116 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#117 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+#118 {main}
+
+Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#87 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(29): Pest\Laravel\get()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(35): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Auth_Components_Tests__→_login_page_loads_correctly()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
+Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:31
      27▕     test('login page loads correctly', function (): void {
@@ -1277,6 +1623,8 @@ Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/buil
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponentsTest > `Auth Components…    
+     33▕
+
   Expected response status code [200] but received 500.
 Failed asserting that 500 is identical to 200.
 
@@ -1523,11 +1871,247 @@ Stack trace:
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #107 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php(21): Illuminate\Container\BoundMethod::addDependencyForCallParameter()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Livewire\ImplicitlyBoundMethod::getMethodDependencies()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Wrapped.php(23): Illuminate\Container\BoundMethod::call()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportLifecycleHooks/SupportLifecycleHooks.php(134): Livewire\Wrapped->__call()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportLifecycleHooks/SupportLifecycleHooks.php(20): Livewire\Features\SupportLifecycleHooks\SupportLifecycleHooks->callHook()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/ComponentHook.php(19): Livewire\Features\SupportLifecycleHooks\SupportLifecycleHooks->mount()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/ComponentHookRegistry.php(45): Livewire\ComponentHook->callMount()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/EventBus.php(60): Livewire\ComponentHookRegistry::Livewire\{closure}()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/helpers.php(98): Livewire\EventBus->trigger()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/HandleComponents/HandleComponents.php(50): Livewire\trigger()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/LivewireManager.php(73): Livewire\Mechanisms\HandleComponents\HandleComponents->mount()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/volt/src/LivewireManager.php(23): Livewire\LivewireManager->mount()
+#15 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/56605d057c4da24e39d52b2735540345.php(86): Livewire\Volt\LivewireManager->mount()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Auth/Middleware/RedirectIfAuthenticated.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Auth\Middleware\RedirectIfAuthenticated->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#57 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#106 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(36): Pest\Laravel\get()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#109 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#110 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#111 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#112 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#113 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(44): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#114 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Auth_Components_Tests__→_register_page_loads_correctly()
+#115 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#116 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#117 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#118 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#119 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#120 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#121 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#122 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#123 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#124 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#125 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+#126 {main}
+
+Next Illuminate\View\ViewException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/pages/auth/register.blade.php) in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Auth/Middleware/RedirectIfAuthenticated.php(47): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Auth\Middleware\RedirectIfAuthenticated->handle()
+#17 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#89 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(36): Pest\Laravel\get()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(44): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Auth_Components_Tests__→_register_page_loads_correctly()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#108 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
 #109 {main}
 
 ----------------------------------------------------------------------------------
 
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
+Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:38
      34▕     test('register page loads correctly', function (): void {
@@ -1542,6 +2126,8 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponen…  InvalidArgumentException   
+     40▕
+
   View [components.auth-session-status] not found.
 
   at vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:138
@@ -1552,6 +2138,9 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
   ➜ 138▕         throw new InvalidArgumentException("View [{$name}] not found.");
     139▕     }
     140▕ 
+    137▕
+    139▕     }
+    140▕
     141▕     /**
     142▕      * Get an array of possible view files.
 
@@ -1569,6 +2158,8 @@ Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class
      50▕         // Test the auth header component that exists
   ➜  51▕         expect(View::exists('components.auth-header'))->toBeTrue();
      52▕ 
+     48▕
+     52▕
      53▕         $html = view('components.auth-header', [
      54▕             'title' => 'Login Test',
      55▕             'description' => 'Test description',
@@ -1830,6 +2421,7 @@ Stack trace:
 #118 {main}
 
 Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+=======
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
 #1 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
@@ -1938,11 +2530,350 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
+#1 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/53c107abd3aaca46e6fb3de49c65857b.php(22): Illuminate\Foundation\Vite->__invoke()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(103): Illuminate\View\View->render()
+#12 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/bbae9269c8cc48f8eeeb47ad9dbd4f6e.php(101): Illuminate\View\Factory->renderComponent()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#29 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#52 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#101 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(66): Pest\Laravel\get()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#108 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(71): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#109 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Authentication_Flow_with_Reorganized_Components__→_login_form_components_work_after_reorganization()
+#110 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#111 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#112 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#113 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#114 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#115 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#116 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#117 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#118 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#119 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#120 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+#121 {main}
+
+Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(58): Illuminate\View\Engines\CompilerEngine->handleViewException()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(59): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->handleViewException()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesComponents.php(103): Illuminate\View\View->render()
+#9 /var/www/_bases/base_app_fila5/laravel/storage/framework/views/bbae9269c8cc48f8eeeb47ad9dbd4f6e.php(101): Illuminate\View\Factory->renderComponent()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\Filesystem\Filesystem->getRequire()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(22): Illuminate\View\Engines\PhpEngine->evaluatePath()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(76): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->evaluatePath()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Mechanisms/ExtendBlade/ExtendedCompilerEngine.php(10): Illuminate\View\Engines\CompilerEngine->get()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(208): Livewire\Mechanisms\ExtendBlade\ExtendedCompilerEngine->get()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\View\View->getContents()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#49 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#98 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(66): Pest\Laravel\get()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(71): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Authentication_Flow_with_Reorganized_Components__→_login_form_components_work_after_reorganization()
+#107 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#108 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#109 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#110 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#111 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#112 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#113 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#114 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#115 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#116 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#117 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
+#118 {main}
+
+Next Illuminate\View\ViewException: Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\View\View->render()
+#9 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\Http\Response->setContent()
+#10 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(939): Illuminate\Http\Response->__construct()
+#11 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(363): Illuminate\Routing\Router::toResponse()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(102): Illuminate\Support\Facades\Facade::__callStatic()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(62): Laravel\Folio\RequestHandler->toResponse()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Laravel\Folio\RequestHandler->Laravel\Folio\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/Modules/Cms/app/Providers/FolioVoltServiceProvider.php(97): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(201): Modules\Cms\Providers\FolioVoltServiceProvider->Modules\Cms\Providers\{closure}()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LaravelLocalizationRedirectFilter.php(45): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter->handle()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/mcamara/laravel-localization/src/Mcamara/LaravelLocalization/Middleware/LocaleSessionRedirect.php(32): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect->handle()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(13): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/Reflection.php(37): ReflectionMethod->invoke()
+#84 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderMessage.php(58): Pest\Support\Reflection::call()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/HigherOrderTapProxy.php(66): Pest\Support\HigherOrderMessage->call()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest-plugin-laravel/src/Http.php(189): Pest\Support\HigherOrderTapProxy->__call()
+#87 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(66): Pest\Laravel\get()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(71): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Authentication_Flow_with_Reorganized_Components__→_login_form_components_work_after_reorganization()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#104 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#105 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#106 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
+Vite manifest not found at: /var/www/_bases/base_app_fila5/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:69
      65▕         // Visit login page and ensure all reorganized components render
@@ -2066,6 +2997,108 @@ Stack trace:
 #99 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #100 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(102): Illuminate\Database\DatabaseManager->makeConnection()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1980): Illuminate\Database\DatabaseManager->connection()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1946): Illuminate\Database\Eloquent\Model::resolveConnection()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1713): Illuminate\Database\Eloquent\Model->getConnection()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1611): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1647): Illuminate\Database\Eloquent\Model->newModelQuery()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1600): Illuminate\Database\Eloquent\Model->newQueryWithoutScopes()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2540): Illuminate\Database\Eloquent\Model->newQuery()
+#9 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Datas/XotData.php(261): Illuminate\Database\Eloquent\Model->__call()
+#10 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Datas/XotData.php(301): Modules\Xot\Datas\XotData->getProfileModelByUserId()
+#11 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/View/Composers/XotComposer.php(81): Modules\Xot\Datas\XotData->getProfileModel()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(124): Modules\Xot\View\Composers\XotComposer->compose()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(162): Illuminate\View\Factory->Illuminate\View\Concerns\{closure}()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(485): Illuminate\View\Factory->Illuminate\View\Concerns\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(315): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(295): Illuminate\Events\Dispatcher->invokeListeners()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(178): Illuminate\Events\Dispatcher->dispatch()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(189): Illuminate\View\Factory->callComposer()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(43): Illuminate\View\View->render()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(27): Statikbe\CookieConsent\CookieConsentMiddleware->addCookieConsentScriptToResponse()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#82 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(79): Illuminate\Foundation\Testing\TestCase->get()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#86 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(80): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__Authentication_Flow_with_Reorganized_Components__→_password_confirmation_uses_reorganized_components()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
 #102 {main}
 
 ----------------------------------------------------------------------------------
@@ -2085,6 +3118,8 @@ Database connection [ptvx] not configured.
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\AuthComponentsTest > `User Profile Com…   
+     83▕
+
   Expected response status code [200] but received 500.
 Failed asserting that 500 is identical to 200.
 
@@ -2196,6 +3231,110 @@ Stack trace:
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #102 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
+#0 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
+#1 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(102): Illuminate\Database\DatabaseManager->makeConnection()
+#2 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1980): Illuminate\Database\DatabaseManager->connection()
+#3 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1946): Illuminate\Database\Eloquent\Model::resolveConnection()
+#4 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1713): Illuminate\Database\Eloquent\Model->getConnection()
+#5 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1611): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#6 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1647): Illuminate\Database\Eloquent\Model->newModelQuery()
+#7 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1600): Illuminate\Database\Eloquent\Model->newQueryWithoutScopes()
+#8 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(2540): Illuminate\Database\Eloquent\Model->newQuery()
+#9 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Datas/XotData.php(261): Illuminate\Database\Eloquent\Model->__call()
+#10 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Datas/XotData.php(301): Modules\Xot\Datas\XotData->getProfileModelByUserId()
+#11 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/View/Composers/XotComposer.php(81): Modules\Xot\Datas\XotData->getProfileModel()
+#12 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(124): Modules\Xot\View\Composers\XotComposer->compose()
+#13 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(162): Illuminate\View\Factory->Illuminate\View\Concerns\{closure}()
+#14 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(485): Illuminate\View\Factory->Illuminate\View\Concerns\{closure}()
+#15 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(315): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#16 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(295): Illuminate\Events\Dispatcher->invokeListeners()
+#17 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Concerns/ManagesEvents.php(178): Illuminate\Events\Dispatcher->dispatch()
+#18 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(189): Illuminate\View\Factory->callComposer()
+#19 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\View\View->renderContents()
+#20 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(43): Illuminate\View\View->render()
+#21 /var/www/_bases/base_app_fila5/laravel/vendor/statikbe/laravel-cookie-consent/src/CookieConsentMiddleware.php(27): Statikbe\CookieConsent\CookieConsentMiddleware->addCookieConsentScriptToResponse()
+#22 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Statikbe\CookieConsent\CookieConsentMiddleware->handle()
+#23 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#24 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#25 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#27 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(63): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#28 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate->handle()
+#29 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(87): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle()
+#31 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#32 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle()
+#33 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#34 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest()
+#35 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle()
+#36 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#37 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle()
+#38 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#39 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle()
+#40 /var/www/_bases/base_app_fila5/laravel/Modules/Xot/app/Http/Middleware/SetDefaultTenantForUrlsMiddleware.php(35): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#41 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware->handle()
+#42 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#43 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/RequestHandler.php(55): Illuminate\Pipeline\Pipeline->then()
+#44 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/folio/src/FolioManager.php(93): Laravel\Folio\RequestHandler->__invoke()
+#45 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/CallableDispatcher.php(39): Laravel\Folio\FolioManager->Laravel\Folio\{closure}()
+#46 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(243): Illuminate\Routing\CallableDispatcher->dispatch()
+#47 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php(214): Illuminate\Routing\Route->runCallable()
+#48 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate\Routing\Route->run()
+#49 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#50 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#51 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate\Pipeline\Pipeline->then()
+#52 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate\Routing\Router->runRouteWithinStack()
+#53 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate\Routing\Router->runRoute()
+#54 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate\Routing\Router->dispatchToRoute()
+#55 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#56 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#57 /var/www/_bases/base_app_fila5/laravel/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#59 /var/www/_bases/base_app_fila5/laravel/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(59): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Barryvdh\Debugbar\Middleware\InjectDebugbar->handle()
+#61 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#62 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#63 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#64 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#65 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#66 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#67 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#68 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle()
+#69 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#71 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle()
+#73 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#74 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle()
+#75 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#76 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle()
+#77 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle()
+#79 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#81 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#82 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel->handle()
+#83 /var/www/_bases/base_app_fila5/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call()
+#84 /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Feature/AuthComponentsTest.php(89): Illuminate\Foundation\Testing\TestCase->get()
+#85 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseMethodFactory.php(168): P\Modules\User\tests\Feature\AuthComponentsTest->{closure}()
+#87 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): call_user_func_array()
+#88 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Support/ExceptionTrace.php(26): P\Modules\User\tests\Feature\AuthComponentsTest->Pest\Concerns\{closure}()
+#89 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(419): Pest\Support\ExceptionTrace::ensure()
+#90 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Concerns/Testable.php(321): P\Modules\User\tests\Feature\AuthComponentsTest->__callClosure()
+#91 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(169) : eval()'d code(89): P\Modules\User\tests\Feature\AuthComponentsTest->__runTest()
+#92 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(1656): P\Modules\User\tests\Feature\AuthComponentsTest->__pest_evaluable__User_Profile_Components_Tests__→_profile_pages_use_reorganized_components_correctly()
+#93 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(514): PHPUnit\Framework\TestCase->runTest()
+#94 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestRunner/TestRunner.php(87): PHPUnit\Framework\TestCase->runBare()
+#95 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestCase.php(361): PHPUnit\Framework\TestRunner->run()
+#96 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestCase->run()
+#97 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/Framework/TestSuite.php(369): PHPUnit\Framework\TestSuite->run()
+#98 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#99 /var/www/_bases/base_app_fila5/laravel/vendor/phpunit/phpunit/src/TextUI/Application.php(211): PHPUnit\TextUI\TestRunner->run()
+#100 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/src/Kernel.php(103): PHPUnit\TextUI\Application->run()
+#101 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
+#102 /var/www/_bases/base_app_fila5/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
+#103 /var/www/_bases/base_app_fila5/laravel/vendor/bin/pest(119): include('...')
 #104 {main}
 
 ----------------------------------------------------------------------------------
@@ -2206,6 +3345,10 @@ Database connection [ptvx] not configured.
      88▕ 
      89▕         $response = actingAs($user)->get('/it/profile/edit');
      90▕ 
+     88▕ 
+     90▕ 
+     88▕
+     90▕
      91▕         /* @phpstan-ignore-next-line method.nonObject */
   ➜  92▕         $response->assertStatus(200);
      93▕     });
@@ -2225,6 +3368,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+15 vendor frames [22m
@@ -2243,6 +3390,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+15 vendor frames [22m
@@ -2261,6 +3412,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+15 vendor frames [22m
@@ -2279,6 +3434,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+15 vendor frames [22m
@@ -2296,6 +3455,10 @@ Database connection [ptvx] not configured.
   ➜ 221▕             throw new InvalidArgumentException("Database connection [{$name}] not configured.");
     222▕         }
     223▕ 
+
+    217▕
+    219▕
+    223▕
     224▕         return (new ConfigurationUrlParser)
     225▕             ->parseConfiguration($config);
 
@@ -2315,6 +3478,10 @@ Database connection [ptvx] not configured.
   ➜ 221▕             throw new InvalidArgumentException("Database connection [{$name}] not configured.");
     222▕         }
     223▕ 
+
+    217▕
+    219▕
+    223▕
     224▕         return (new ConfigurationUrlParser)
     225▕             ->parseConfiguration($config);
 
@@ -2497,6 +3664,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -2513,6 +3684,9 @@ Database connection [ptvx] not configured.
     128▕ 
   ➜ 129▕     expect($passwordField->isRequired($createUserPage))->toBeTrue();
     130▕ 
+    126▕
+    128▕
+    130▕
     131▕     // Test with EditUser page
     132▕     $editUserPage = new EditUser();
     133▕     expect($passwordField->isRequired($editUserPage))->toBeFalse();
@@ -2565,6 +3739,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2583,6 +3760,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2601,6 +3781,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2619,6 +3802,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2637,6 +3823,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2655,6 +3844,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2673,6 +3865,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2691,6 +3886,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2709,6 +3907,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2727,6 +3928,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2745,6 +3949,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2763,6 +3970,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2781,6 +3991,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2799,6 +4012,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2817,6 +4033,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2835,6 +4054,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2853,6 +4075,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2871,6 +4096,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2889,6 +4117,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2907,6 +4138,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2925,6 +4159,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2943,6 +4180,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2961,6 +4201,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2979,6 +4222,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -2997,6 +4243,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3015,6 +4264,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3033,6 +4285,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3051,6 +4306,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3069,6 +4327,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3087,6 +4348,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3105,6 +4369,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3123,6 +4390,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3141,6 +4411,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3159,6 +4432,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3179,6 +4455,9 @@ Database connection [ptvx] not configured.
   ➜  28▕     expect($view)->toContain('pub_theme::filament.widgets.auth.login');
      29▕ });
      30▕ 
+     27▕
+     29▕ });
+     30▕
      31▕ test('it has correct form schema', function (): void {
      32▕     $form = $this->widget->getFormSchema();
 
@@ -3196,6 +4475,10 @@ Database connection [ptvx] not configured.
   ➜ 221▕             throw new InvalidArgumentException("Database connection [{$name}] not configured.");
     222▕         }
     223▕ 
+
+    217▕
+    219▕
+    223▕
     224▕         return (new ConfigurationUrlParser)
     225▕             ->parseConfiguration($config);
 
@@ -3205,6 +4488,7 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\PasswordDataLabelsTest…   ViewException   
   Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
+  Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 
   at vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:526
     522▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
@@ -3214,6 +4498,9 @@ Database connection [ptvx] not configured.
   ➜ 526▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
     527▕     }
     528▕ 
+    525▕
+    527▕     }
+    528▕
     529▕     /**
     530▕      * Get the URL for a given route instance.
 
@@ -3371,6 +4658,10 @@ Database connection [ptvx] not configured.
   ➜  96▕         expect($this->team->users)->toHaveCount(3);
      97▕     });
      98▕ 
+     93▕
+     95▕
+     97▕     });
+     98▕
      99▕     it('can check if user is team member', function () {
     100▕         $this->team->users()->attach($this->member);
 
@@ -3403,6 +4694,9 @@ Database connection [ptvx] not configured.
   ➜ 131▕         expect($this->member->teams)->toHaveCount(2);
     132▕     });
     133▕ 
+    128▕
+    130▕
+    133▕
     134▕     it('user can switch current team', function () {
     135▕         $this->member->teams()->attach($this->team);
 
@@ -3419,6 +4713,8 @@ Database connection [ptvx] not configured.
     310▕         foreach ($results as $result) {
   ➜ 311▕             $value = $this->getDictionaryKey($result->{$this->accessor}->{$this->foreignPivotKey});
     312▕ 
+    309▕
+    312▕
     313▕             $dictionary[$value][] = $result;
     314▕         }
     315▕
@@ -3444,6 +4740,10 @@ Database connection [ptvx] not configured.
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TeamManagementTest > `Team Scopes and…    
+    274▕
+    277▕ });
+    278▕
+
   Failed asserting that 940 is identical to 2.
 
   at Modules/User/tests/Feature/TeamManagementTest.php:305
@@ -3455,6 +4755,10 @@ Database connection [ptvx] not configured.
     306▕     });
     307▕ });
     308▕ 
+    302▕
+    304▕
+    307▕ });
+    308▕
     309▕ describe('Team Features', function () {
 
   1   Modules/User/tests/Feature/TeamManagementTest.php:305
@@ -3472,6 +4776,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -3490,6 +4797,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -3506,6 +4816,10 @@ Database connection [ptvx] not configured.
     173▕ 
   ➜ 174▕             expect($user->tenant_id)->toBe($this->tenant1->id);
     175▕ 
+    173▕ 
+    175▕ 
+    173▕
+    175▕
     176▕             // Verifica che l'utente sia effettivamente associato al tenant
     177▕             $user->refresh();
     178▕             expect($user->tenant_id)->toBe($this->tenant1->id);
@@ -3525,6 +4839,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -3538,6 +4855,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3555,6 +4875,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3572,6 +4895,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3589,6 +4915,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3606,6 +4935,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3623,6 +4955,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3640,6 +4975,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3657,6 +4995,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3674,6 +5015,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3691,6 +5035,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3708,6 +5055,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3725,6 +5075,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3742,6 +5095,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3759,6 +5115,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3776,6 +5135,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3793,6 +5155,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3810,6 +5175,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3827,6 +5195,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3844,6 +5215,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3861,6 +5235,9 @@ Database connection [ptvx] not configured.
      10▕ 
      11▕ uses(TestCase::class);
      12▕ 
+
+     10▕
+     12▕
      13▕ beforeEach(function (): void {
   ➜  14▕     $this->service = new TwoFactorService();
      15▕     $this->user = User::factory()->create();
@@ -3949,6 +5326,8 @@ Database connection [ptvx] not configured.
      66▕     it('supports OTP authentication', function () {
   ➜  67▕         $user = createUser(['is_otp' => true]);
      68▕ 
+     65▕
+     68▕
      69▕         expect($user->is_otp)->toBeTrue();
      70▕     });
      71▕ });
@@ -3967,6 +5346,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -3985,6 +5367,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4003,6 +5388,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4021,6 +5409,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4039,6 +5430,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4057,6 +5451,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4075,6 +5472,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4093,6 +5493,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4111,6 +5514,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4129,6 +5535,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4147,6 +5556,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4165,6 +5577,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4183,6 +5598,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4201,6 +5619,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4219,6 +5640,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4237,6 +5661,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4255,6 +5682,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4273,6 +5703,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4309,6 +5742,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4327,6 +5763,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4345,6 +5784,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4363,6 +5805,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4381,6 +5826,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4399,6 +5847,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4417,6 +5868,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4435,6 +5889,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4453,6 +5910,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4471,6 +5931,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4489,6 +5952,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4507,6 +5973,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4525,6 +5994,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4543,6 +6015,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4561,6 +6036,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4579,6 +6057,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4597,6 +6078,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4615,6 +6099,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4633,6 +6120,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4651,6 +6141,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4669,6 +6162,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4687,6 +6183,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4705,6 +6204,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4759,6 +6261,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4777,6 +6282,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4795,6 +6303,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4813,6 +6324,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4831,6 +6345,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4849,6 +6366,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -4867,6 +6387,10 @@ Database connection [ptvx] not configured.
   ➜  61▕     expect($users)->toHaveCount(2);
      62▕ });
      63▕ 
+     58▕
+     60▕
+     62▕ });
+     63▕
      64▕ test('user model can filter records', function () {
      65▕     // Create test data
 
@@ -4885,6 +6409,10 @@ Database connection [ptvx] not configured.
      72▕     expect($activeUsers->first()->name)->toBe('Active User');
      73▕ });
      74▕ 
+     68▕
+     70▕
+     73▕ });
+     74▕
      75▕ test('user model can update records', function () {
 
   1   Modules/User/tests/Feature/UserModelBasicTest.php:71
@@ -4937,6 +6465,9 @@ Database connection [ptvx] not configured.
   ➜ 1429▕         throw new BindingResolutionException($message);
     1430▕     }
     1431▕ 
+    1428▕
+    1430▕     }
+    1431▕
     1432▕     /**
     1433▕      * Register a new before resolving callback for all types.
 
@@ -5345,6 +6876,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5363,6 +6898,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5381,6 +6920,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5399,6 +6942,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5417,6 +6964,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5435,6 +6986,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+13 vendor frames [22m
@@ -5446,6 +7001,8 @@ Database connection [ptvx] not configured.
 
   at Modules/User/tests/Unit/HasTeamsTraitPestTest.php:27
      23▕ 
+
+     23▕
      24▕ test('it correctly checks if user belongs to teams', function () {
      25▕     // Test: User without teams
      26▕     $userWithoutTeams = User::factory()->create();
@@ -5468,6 +7025,10 @@ Database connection [ptvx] not configured.
      81▕ 
   ➜  82▕     expect($result)->toBeTrue()->and($this->user->current_team_id)->toBe((string) $this->team->id);
      83▕ 
+     81▕ 
+     83▕ 
+     81▕
+     83▕
      84▕     // Test: Switch to null
      85▕     $result = $this->user->switchTeam(null);
      86▕     expect($result)->toBeTrue()->and($this->user->current_team_id)->toBeNull();
@@ -5485,6 +7046,8 @@ Database connection [ptvx] not configured.
     111▕         ->toBeInstanceOf(Collection::class)
   ➜ 112▕         ->toHaveCount(2);
     113▕ 
+    109▕
+    113▕
     114▕     expect($allTeams->pluck('id')->toArray())
     115▕         ->toContain($this->personalTeam->id)
     116▕         ->toContain($this->team->id); // personal team + member team
@@ -5576,6 +7139,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+22 vendor frames [22m
@@ -5587,6 +7154,8 @@ Database connection [ptvx] not configured.
 
   at Modules/User/tests/Unit/HasTeamsTraitTest.php:39
      35▕ 
+
+     35▕
      36▕ test('it correctly checks if user belongs to teams', function (): void {
      37▕     // Test: User senza team
      38▕     $userWithoutTeams = User::factory()->create();
@@ -5604,6 +7173,9 @@ Database connection [ptvx] not configured.
 
   at Modules/User/app/Models/Traits/HasTeams.php:420
     416▕ 
+  Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
+
+    416▕
     417▕     /**
     418▕      * Switch the user's context to the given team.
     419▕      */
@@ -5624,6 +7196,9 @@ Database connection [ptvx] not configured.
     115▕ 
     116▕     $allTeams = $this->user->allTeams();
     117▕ 
+
+    115▕
+    117▕
     118▕     expect($allTeams)->toBeInstanceOf(Collection::class);
   ➜ 119▕     expect($allTeams)->toHaveCount(2); // personal team + member team
     120▕     expect($allTeams->contains($this->personalTeam))->toBeTrue();
@@ -5639,6 +7214,8 @@ Database connection [ptvx] not configured.
 
   at Modules/User/tests/Unit/HasTeamsTraitTest.php:172
     168▕ 
+
+    168▕
     169▕     // Test: No role (not member)
     170▕     $otherTeam = Team::factory()->create();
     171▕     $roleName = $this->user->teamRoleName($otherTeam);
@@ -5663,6 +7240,10 @@ Database connection [ptvx] not configured.
      54▕ 
      55▕             $this->lastInsertId = $this->getPdo()->lastInsertId($sequence);
      56▕ 
+     50▕
+     52▕
+     54▕
+     56▕
      57▕             return $result;
 
       [2m+22 vendor frames [22m
@@ -5701,6 +7282,8 @@ Database connection [ptvx] not configured.
     212▕     $this->user->teams()->attach($this->team->id, ['role' => 'member']);
   ➜ 213▕     expect($this->user->isOwnerOrMember($this->team))->toBeTrue();
     214▕ 
+    211▕
+    214▕
     215▕     $otherTeam = Team::factory()->create();
     216▕     expect($this->user->isOwnerOrMember($otherTeam))->toBeFalse();
     217▕ });
@@ -5731,6 +7314,9 @@ Database connection [ptvx] not configured.
      38▕ test('base user has authentication traits', function () {
      39▕     $traits = class_uses($this->baseUser);
      40▕ 
+
+     37▕
+     40▕
   ➜  41▕     expect($traits)->toContain(User::class);
      42▕     expect($traits)->toContain(Notifiable::class);
      43▕ });
@@ -5805,6 +7391,10 @@ Database connection [ptvx] not configured.
     159▕     expect($desktopDevices->every(fn ($device) => $device->is_desktop))->toBeTrue();
     160▕ });
     161▕ 
+    155▕
+    157▕
+    160▕ });
+    161▕
     162▕ test('can find mobile devices', function (): void {
 
   1   Modules/User/tests/Unit/Models/DeviceTest.php:158
@@ -5851,6 +7441,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -5858,6 +7450,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -5869,6 +7465,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -5876,6 +7474,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -5893,6 +7495,11 @@ Database connection [ptvx] not configured.
   ➜  41▕     expect($permission->connection)->toBe('user');
      42▕ });
      43▕ 
+
+     37▕
+     40▕
+     42▕ });
+     43▕
      44▕ test('permission has key type attribute', function (): void {
      45▕     $permission = new Permission();
 
@@ -5910,6 +7517,11 @@ Database connection [ptvx] not configured.
   ➜  47▕     expect($permission->keyType)->toBe('string');
      48▕ });
      49▕ 
+
+     43▕
+     46▕
+     48▕ });
+     49▕
      50▕ test('permission has fillable attributes', function (): void {
      51▕     $permission = new Permission();
 
@@ -5924,6 +7536,10 @@ Database connection [ptvx] not configured.
      52▕ 
      53▕     $fillable = $permission->getFillable();
      54▕ 
+     52▕ 
+     54▕ 
+     52▕
+     54▕
   ➜  55▕     expect($fillable)->toContain('id');
      56▕     expect($fillable)->toContain('name');
      57▕     expect($fillable)->toContain('guard_name');
@@ -5940,6 +7556,9 @@ Database connection [ptvx] not configured.
      62▕ 
      63▕     $casts = $permission->getCasts();
      64▕ 
+
+     62▕
+     64▕
      65▕     expect($casts)->toHaveKey('id');
   ➜  66▕     expect($casts)->toHaveKey('name');
      67▕     expect($casts)->toHaveKey('guard_name');
@@ -5955,6 +7574,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -5962,6 +7583,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -5973,6 +7598,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -5980,6 +7607,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -5991,6 +7622,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -5998,6 +7631,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6009,6 +7646,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6016,6 +7655,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6027,6 +7670,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6034,6 +7679,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6045,6 +7694,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6052,6 +7703,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6063,6 +7718,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6070,6 +7727,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6081,6 +7742,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6088,6 +7751,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6099,6 +7766,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6106,6 +7775,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6117,6 +7790,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6124,6 +7799,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6135,6 +7814,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6142,6 +7823,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6153,6 +7838,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6160,6 +7847,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6171,6 +7862,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6178,6 +7871,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6261,6 +7958,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6268,6 +7967,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6286,6 +7989,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+15 vendor frames [22m
@@ -6303,6 +8009,11 @@ Database connection [ptvx] not configured.
   ➜  44▕     expect($role->connection)->toBe('user');
      45▕ });
      46▕ 
+
+     40▕
+     43▕
+     45▕ });
+     46▕
      47▕ test('role has key type attribute', function (): void {
      48▕     $role = new Role();
 
@@ -6320,6 +8031,11 @@ Database connection [ptvx] not configured.
   ➜  50▕     expect($role->keyType)->toBe('string');
      51▕ });
      52▕ 
+
+     46▕
+     49▕
+     51▕ });
+     52▕
      53▕ test('role constants are defined', function (): void {
      54▕     expect(Role::ROLE_ADMINISTRATOR)->toBe(1);
 
@@ -6331,6 +8047,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6338,6 +8056,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6349,6 +8071,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6356,6 +8080,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6367,6 +8095,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6374,6 +8104,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6392,6 +8126,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+15 vendor frames [22m
@@ -6403,6 +8140,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6410,6 +8149,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6421,6 +8164,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6428,6 +8173,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6446,6 +8195,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+15 vendor frames [22m
@@ -6457,6 +8209,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6464,6 +8218,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -6475,6 +8233,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6482,6 +8242,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6493,6 +8257,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6500,6 +8266,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6511,6 +8281,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6518,6 +8290,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6529,6 +8305,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6536,6 +8314,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6547,6 +8329,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -6554,6 +8338,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+21 vendor frames [22m
@@ -6565,6 +8353,8 @@ Database connection [ptvx] not configured.
 
   at Modules/User/tests/Unit/Models/TeamTest.php:41
      37▕ 
+
+     37▕
      38▕     expect($team->id)->not->toBeNull();
      39▕     expect($team->user_id)->toBe($user->id);
      40▕     expect($team->name)->toBe('Full Team');
@@ -6588,6 +8378,11 @@ Database connection [ptvx] not configured.
   ➜ 114▕     expect($personalTeams->first()->personal_team)->toBe(1);
     115▕ });
     116▕ 
+
+    110▕
+    112▕
+    115▕ });
+    116▕
     117▕ test('can find teams by user id', function (): void {
     118▕     $user1 = User::factory()->create();
 
@@ -6639,6 +8434,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -6668,7 +8466,6 @@ Database connection [ptvx] not configured.
   -'4941682b-2346-3ece-a6b8-22aca55f29c4'
   +'0cac6ff4-e546-3f0e-85a8-77426ea68dec'
   
-
   at Modules/User/tests/Unit/Models/TenantTest.php:86
      82▕ 
      83▕     $foundTenant = Tenant::where('name', 'Unique Tenant Name')->first();
@@ -6677,6 +8474,11 @@ Database connection [ptvx] not configured.
   ➜  86▕         ->and($foundTenant->id)->toBe($tenant->id);
      87▕ });
      88▕ 
+
+     82▕
+     84▕
+     87▕ });
+     88▕
      89▕ it('can find tenant by slug', function () {
      90▕     $tenant = Tenant::factory()->create(['slug' => 'unique-tenant']);
 
@@ -6688,7 +8490,6 @@ Database connection [ptvx] not configured.
   -'11de3251-6ed9-3753-8a34-b5862be43e57'
   +'a5ddcf4e-73ca-37a0-87c3-2bee656d1a2d'
   
-
   at Modules/User/tests/Unit/Models/TenantTest.php:95
      91▕ 
      92▕     $foundTenant = Tenant::where('slug', 'unique-tenant')->first();
@@ -6697,6 +8498,11 @@ Database connection [ptvx] not configured.
   ➜  95▕         ->and($foundTenant->id)->toBe($tenant->id);
      96▕ });
      97▕ 
+
+     91▕
+     93▕
+     96▕ });
+     97▕
      98▕ it('can find tenant by domain', function () {
      99▕     $tenant = Tenant::factory()->create(['domain' => 'uniquetenant.com']);
 
@@ -6708,7 +8514,6 @@ Database connection [ptvx] not configured.
   -'b4d45187-8d0b-3d47-a3ac-014642971f02'
   +'146f7c32-24f5-3115-84bb-4461b80bdc1d'
   
-
   at Modules/User/tests/Unit/Models/TenantTest.php:104
     100▕ 
     101▕     $foundTenant = Tenant::where('domain', 'uniquetenant.com')->first();
@@ -6717,6 +8522,11 @@ Database connection [ptvx] not configured.
   ➜ 104▕         ->and($foundTenant->id)->toBe($tenant->id);
     105▕ });
     106▕ 
+
+    100▕
+    102▕
+    105▕ });
+    106▕
     107▕ it('can find tenant by database', function () {
     108▕     $tenant = Tenant::factory()->create(['database' => 'unique_db']);
 
@@ -6728,7 +8538,6 @@ Database connection [ptvx] not configured.
   -'427724c0-67d8-3f8c-97d1-df05b14f7cd9'
   +'385f0a0b-4cec-3fff-bc7e-b46e2600aaca'
   
-
   at Modules/User/tests/Unit/Models/TenantTest.php:113
     109▕ 
     110▕     $foundTenant = Tenant::where('database', 'unique_db')->first();
@@ -6737,6 +8546,11 @@ Database connection [ptvx] not configured.
   ➜ 113▕         ->and($foundTenant->id)->toBe($tenant->id);
     114▕ });
     115▕ 
+
+    109▕
+    111▕
+    114▕ });
+    115▕
     116▕ it('can find active tenants', function () {
     117▕     Tenant::factory()->create(['is_active' => true]);
 
@@ -6755,6 +8569,10 @@ Database connection [ptvx] not configured.
     124▕         ->and($activeTenants->every(fn ($tenant) => $tenant->is_active))->toBeTrue();
     125▕ });
     126▕ 
+    120▕
+    122▕
+    125▕ });
+    126▕
     127▕ it('can find tenants by name pattern', function () {
 
   1   Modules/User/tests/Unit/Models/TenantTest.php:123
@@ -6772,6 +8590,10 @@ Database connection [ptvx] not configured.
     135▕         ->and($companyTenants->every(fn ($tenant) => str_contains($tenant->name, 'Company')))->toBeTrue();
     136▕ });
     137▕ 
+    131▕
+    133▕
+    136▕ });
+    137▕
     138▕ it('can find tenants by domain pattern', function () {
 
   1   Modules/User/tests/Unit/Models/TenantTest.php:134
@@ -6789,6 +8611,10 @@ Database connection [ptvx] not configured.
     146▕         ->and($exampleTenants->every(fn ($tenant) => str_ends_with($tenant->domain, '.example.com')))->toBeTrue();
     147▕ });
     148▕ 
+    142▕
+    144▕
+    147▕ });
+    148▕
     149▕ it('can update tenant', function () {
 
   1   Modules/User/tests/Unit/Models/TenantTest.php:145
@@ -6838,6 +8664,10 @@ Database connection [ptvx] not configured.
     188▕ 
     189▕     $tenants = Tenant::where('is_active', true)->where('domain', 'like', '%.com')->get();
     190▕ 
+    188▕ 
+    190▕ 
+    188▕
+    190▕
   ➜ 191▕     expect($tenants)->toHaveCount(1)
     192▕         ->and($tenants->first()->name)->toBe('Active Company')
     193▕         ->and($tenants->first()->is_active)->toBeTrue();
@@ -6859,6 +8689,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -6877,6 +8710,9 @@ Database connection [ptvx] not configured.
      48▕ 
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
      50▕ 
+     46▕
+     48▕
+     50▕
      51▕             $this->recordsHaveBeenModified();
 
       [2m+13 vendor frames [22m
@@ -7097,6 +8933,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7104,6 +8942,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7115,6 +8957,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7122,6 +8966,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7133,6 +8981,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7140,6 +8990,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7151,6 +9005,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7158,6 +9014,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7169,6 +9029,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7176,6 +9038,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7187,6 +9053,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7194,6 +9062,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7205,6 +9077,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7212,6 +9086,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7223,6 +9101,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7230,6 +9110,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7241,6 +9125,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7248,6 +9134,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7259,6 +9149,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7266,6 +9158,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7277,6 +9173,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7284,6 +9182,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7295,6 +9197,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7302,6 +9206,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7313,6 +9221,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7320,6 +9230,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7331,6 +9245,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7338,6 +9254,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7349,6 +9269,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7356,6 +9278,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7367,6 +9293,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7374,6 +9302,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7385,6 +9317,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7392,6 +9326,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7403,6 +9341,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7410,6 +9350,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7421,6 +9365,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7428,6 +9374,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7439,6 +9389,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7446,6 +9398,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7457,6 +9413,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7464,6 +9422,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7475,6 +9437,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7482,6 +9446,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7493,6 +9461,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7500,6 +9470,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7511,6 +9485,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7518,6 +9494,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7529,6 +9509,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7536,6 +9518,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7547,6 +9533,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7554,6 +9542,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7565,6 +9557,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7572,6 +9566,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7583,6 +9581,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7590,6 +9590,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7601,6 +9605,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7608,6 +9614,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7619,6 +9629,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7626,6 +9638,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7637,6 +9653,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7644,6 +9662,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7655,6 +9677,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7662,6 +9686,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7673,6 +9701,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7680,6 +9710,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7691,6 +9725,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7698,6 +9734,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7709,6 +9749,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7716,6 +9758,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7727,6 +9773,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7734,6 +9782,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7745,6 +9797,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7752,6 +9806,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7763,6 +9821,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7770,6 +9830,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m
@@ -7781,6 +9845,8 @@ Database connection [ptvx] not configured.
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
+
+    601▕
     602▕             // For update or delete statements, we want to get the number of rows affected
     603▕             // by the statement and return that back to the developer. We'll first need
     604▕             // to execute the statement and then we'll use PDO to fetch the affected.
@@ -7788,6 +9854,10 @@ Database connection [ptvx] not configured.
     606▕ 
     607▕             $this->bindValues($statement, $this->prepareBindings($bindings));
     608▕ 
+    606▕ 
+    608▕ 
+    606▕
+    608▕
     609▕             $statement->execute();
 
       [2m+22 vendor frames [22m

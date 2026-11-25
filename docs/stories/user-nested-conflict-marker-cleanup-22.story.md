@@ -19,6 +19,7 @@ related:
 github:
   repository: null
   issues: []
+qmd: "user nested conflict marker cleanup 22"
 ---
 
 # User: marker di conflitto annidati residui + disposizione .wip/.corrected

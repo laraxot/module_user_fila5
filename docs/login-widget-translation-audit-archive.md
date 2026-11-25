@@ -1,3 +1,8 @@
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: audit
+qmd: "login widget translation audit archive loginwidget"
+---
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

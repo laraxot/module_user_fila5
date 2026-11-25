@@ -1,3 +1,8 @@
+---
+title: "Logout via Volt Action"
+type: note
+qmd: "volt logout action"
+---
 # Logout via Volt Action
 
 ## Contesto

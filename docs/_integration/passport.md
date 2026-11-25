@@ -11,6 +11,7 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
+qmd: "passport"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/passport.md

@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "spatie permissions methods user permission reference"
 ---
 
 # User Module - Spatie Permission Methods Reference

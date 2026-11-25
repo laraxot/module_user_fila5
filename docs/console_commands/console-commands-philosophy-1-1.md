@@ -13,6 +13,10 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
 ---
 
 # Filosofia dei Comandi Console - Modulo User
@@ -473,4 +477,5 @@ private function getPasswordLegacy(): string
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
 *Ultimo aggiornamento: 2025-01-27*
+
 

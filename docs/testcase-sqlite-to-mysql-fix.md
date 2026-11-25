@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "testcase sqlite to mysql fix"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md

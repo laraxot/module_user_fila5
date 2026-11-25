@@ -7,6 +7,7 @@ related:
   - "./deviceuser-hasxotfactory.md"
   - "./git-conflicts-resolution.md"
   - "./multiple-bugs-resolution.md"
+qmd: "gits resolution"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md

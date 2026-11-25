@@ -7,6 +7,7 @@ related:
   - "./edit-user-widget.md"
   - "./registration-widget-fileupload-fix.md"
   - "./registration-widget.md"
+qmd: "registration widget fileupload"
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md

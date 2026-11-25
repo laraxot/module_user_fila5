@@ -27,6 +27,13 @@ related:
 **Errori iniziali**: ~100+ (bloccavano analisi)
 **Errori attuali**: 95
 **Errori critici risolti**: 7 (syntax errors)
+=======
+# Correzioni PHPStan — Modulo User
+
+## Scopo
+
+Il modulo User gestisce autenticazione, ruoli, team, tenant e OAuth. Gli errori PHPStan qui non sono "tipi da zittire": indicano contratti Filament/Livewire/lang corrotti o test che non tipizzano la pagina sotto test.
+=======
 
 ---
 
@@ -224,6 +231,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
+- [← User Module README](./README.md)
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
@@ -966,3 +974,6 @@ it('test name', function (): void {
 
 - [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
 - [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+- Story operativa: [phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md)
+- Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` (neon immutabile)
+- Prompt: [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md)

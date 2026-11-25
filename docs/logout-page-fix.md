@@ -1,3 +1,8 @@
+---
+title: "Correzione Logout Page nel Theme TwentyOne"
+type: note
+qmd: "logout page fix correzione theme twentyone"
+---
 # Correzione Logout Page nel Theme TwentyOne
 
 ## Errore Riscontrato

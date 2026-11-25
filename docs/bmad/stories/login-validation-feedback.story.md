@@ -9,6 +9,7 @@ updated: 2026-10-05
 tags: [bmad, ux, login, pest]
 related:
   - ../../../../Xot/docs/bmad/stories/project-quality-audit.story.md
+qmd: "login validation feedback story credenziali accesso"
 ---
 
 # Feedback delle credenziali di accesso errate

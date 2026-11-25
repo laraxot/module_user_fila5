@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "volt folio error 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-error.md

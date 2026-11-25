@@ -7,6 +7,7 @@ related:
   - "./tenant-test-fixes.md"
   - "./tenantfactory-fix.md"
   - "./tenanttest-fixes.md"
+qmd: "tenantfactory"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenantfactory-fix.md

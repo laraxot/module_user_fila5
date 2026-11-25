@@ -6,6 +6,7 @@ tags: [redundancy, duplicate-code, migrations, ui]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
+qmd: "redundancy audit user 20260521"
 ---
 
 # User redundancy audit 2026-05-21

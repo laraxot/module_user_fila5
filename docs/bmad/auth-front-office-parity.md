@@ -3,6 +3,7 @@ title: "User — contratto runtime per le pagine auth del tema"
 type: bmad-runtime-contract
 status: active
 updated: 2026-11-12
+qmd: "auth front office parity user contratto"
 ---
 
 # Contratto

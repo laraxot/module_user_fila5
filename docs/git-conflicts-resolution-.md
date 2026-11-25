@@ -4,6 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
+qmd: "git conflicts resolution"
 ---
 
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)

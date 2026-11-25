@@ -1,3 +1,8 @@
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: note
+qmd: "console commands philosophy filosofia comandi user"
+---
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

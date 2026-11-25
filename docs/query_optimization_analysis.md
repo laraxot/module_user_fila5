@@ -1,3 +1,8 @@
+---
+title: "User Module - Query Optimization Analysis"
+type: analysis
+qmd: "query optimization analysis user"
+---
 # User Module - Query Optimization Analysis
 
 ## Overview

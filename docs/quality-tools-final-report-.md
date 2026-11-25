@@ -1,3 +1,8 @@
+---
+title: "Quality Tools Final Report - 2025-01-22"
+type: report
+qmd: "quality tools final report 20250122"
+---
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo

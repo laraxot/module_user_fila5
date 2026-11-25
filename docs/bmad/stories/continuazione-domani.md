@@ -13,6 +13,7 @@ related:
   - ./livewire-residual-conversion-cluster-c.story.md
   - ./uppercase-application-dir.story.md
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
+qmd: "continuazione domani bmad user"
 ---
 
 # User — Continuazione Domani

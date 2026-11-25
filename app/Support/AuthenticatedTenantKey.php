@@ -18,6 +18,8 @@ use Modules\Xot\Contracts\UserContract;
  *
  * Il risultato e' memoizzato in Context (per richiesta, sicuro sotto Octane)
  * per non ripetere la query su `tenant_user` a ogni apply() dello scope.
+ *
+ * @deprecated Il duplicato canonico e' {@see \Modules\User\Infrastructure\Tenant\AuthenticatedTenantKey}.
  */
 final class AuthenticatedTenantKey
 {

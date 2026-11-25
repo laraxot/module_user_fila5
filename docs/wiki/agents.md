@@ -11,6 +11,7 @@ related:
   - "./log.md"
   - "./overview.md"
   - "./socialite-architecture.md"
+qmd: "agents"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

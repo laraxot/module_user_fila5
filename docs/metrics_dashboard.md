@@ -1,3 +1,8 @@
+---
+title: "User Module Metrics Dashboard"
+type: note
+qmd: "metrics dashboard user"
+---
 # User Module Metrics Dashboard
 
 ## Overview

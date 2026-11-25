@@ -1,3 +1,8 @@
+---
+title: "Analisi metodi duplicati in HasTeams (trait)"
+type: note
+qmd: "hasteams trait duplicate methods analisi metodi"
+---
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione

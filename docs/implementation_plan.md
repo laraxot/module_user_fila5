@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "implementation plan piano implementazione componenti header"
 ---
 
 # Piano di Implementazione Componenti Header

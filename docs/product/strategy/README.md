@@ -1,3 +1,8 @@
+---
+title: "User Module - Product Strategy Document"
+type: note
+qmd: "user product strategy document"
+---
 # User Module - Product Strategy Document
 
 ## Document Information

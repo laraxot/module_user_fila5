@@ -1,3 +1,4 @@
+*Ultimo aggiornamento: 2025-01-22*
 ---
 module: theme
 topic: phpstan-progress-report
@@ -11,6 +12,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "phpstan progress report"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md

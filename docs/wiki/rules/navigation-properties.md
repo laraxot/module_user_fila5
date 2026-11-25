@@ -11,6 +11,7 @@ related:
   - "./module-commit-push-after-change.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+qmd: "navigation properties"
 ---
 
 ## Rule Overview

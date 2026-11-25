@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "resources array keys philosophy"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md

@@ -3,6 +3,7 @@ title: "Manuale utente — User"
 type: user-manual
 status: active
 screenshot: assets/auth-login.png
+qmd: "manuale utente user"
 ---
 
 > Screenshot reale della pagina di login FixCity, verificato il 23 novembre 2026.

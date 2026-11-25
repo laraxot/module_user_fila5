@@ -1,3 +1,8 @@
+---
+title: "Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500"
+type: story
+qmd: "oauth access token permission self heal"
+---
 # Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
 
 Status: done

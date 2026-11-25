@@ -1,3 +1,8 @@
+---
+title: "RegistrationWidget FileUpload Fix"
+type: note
+qmd: "registration widget fileupload fix registrationwidget"
+---
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

@@ -1,3 +1,8 @@
+---
+title: "two_factor"
+type: note
+qmd: "two factor twofactor"
+---
 # two_factor
 
 <!-- Contenuto migrato da _docs/two_factor.txt -->

@@ -353,6 +353,7 @@ return [
         ],
     ],
     'actions' => [
+        'change_password' => 'Cambia password',
         'create' => [
             'label' => 'Crea Utente',
             'icon' => 'heroicon-o-plus',
@@ -459,6 +460,8 @@ return [
         ],
         'changePassword' => [
             'icon' => 'changePassword',
+            'label' => 'Cambia password',
+            'tooltip' => 'Cambia password',
         ],
         'layout' => [
             'icon' => 'layout',
@@ -765,5 +768,15 @@ return [
         ],
     ],
     'label' => 'Utente',
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+        'worker' => [
+            'label' => 'worker',
+            'heading' => 'worker',
+        ],
+    ],
     'plural_label' => 'User (Plurale)',
 ];

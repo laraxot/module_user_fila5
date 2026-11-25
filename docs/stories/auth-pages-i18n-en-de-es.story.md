@@ -1,3 +1,8 @@
+---
+title: "Login e registrazione in inglese, tedesco e spagnolo"
+type: story
+qmd: "auth pages i18n en de es"
+---
 # Login e registrazione in inglese, tedesco e spagnolo
 
 - Stato: done (2026-10-07), con aperti elencati sotto

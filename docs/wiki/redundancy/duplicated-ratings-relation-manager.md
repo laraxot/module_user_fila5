@@ -9,6 +9,7 @@ related:
   - "./duplicated-profile-form.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+qmd: "duplicated ratings relation manager ratingsrelationmanager occurrences"
 ---
 
 # Duplicated RatingsRelationManager

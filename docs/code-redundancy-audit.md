@@ -16,6 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "code redundancy audit user"
 ---
 
 # Code redundancy audit — User

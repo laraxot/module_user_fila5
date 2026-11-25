@@ -1,3 +1,8 @@
+---
+title: "Moderazione Dentista dal Modulo User"
+type: note
+qmd: "moderation doctor moderazione dentista user"
+---
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

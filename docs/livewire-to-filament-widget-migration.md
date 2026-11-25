@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "livewire to filament widget migration"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md

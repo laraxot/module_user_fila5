@@ -11,6 +11,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+qmd: "testing"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/testing-rules.md

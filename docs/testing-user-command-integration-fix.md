@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "testing user command integration fix"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md

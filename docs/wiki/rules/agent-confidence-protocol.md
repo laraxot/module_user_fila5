@@ -14,6 +14,7 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+qmd: "agent confidence protocol user"
 ---
 
 # Agent Confidence Protocol — User Module

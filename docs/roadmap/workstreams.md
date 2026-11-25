@@ -11,6 +11,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
+qmd: "workstreams"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/03-workstreams-Modules.md

@@ -1,3 +1,8 @@
+---
+title: "Laraxot Architecture Rules"
+type: rule
+qmd: "architecture rules laraxot"
+---
 # Laraxot Architecture Rules
 
 ## Core Principles

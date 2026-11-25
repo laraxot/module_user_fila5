@@ -21,6 +21,7 @@ owned_scope:
   - "laravel/Modules/User/app/Filament/Resources/BaseProfileResource/Tables/BaseProfilesTable.php"
 related:
   - "Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md"
+qmd: "user closure 11 story chiusura 20260911"
 ---
 
 # User: chiusura modulo 2026-09-11

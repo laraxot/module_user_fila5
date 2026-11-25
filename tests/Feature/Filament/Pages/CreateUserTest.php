@@ -14,7 +14,8 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    $this->page = new CreateUser();
+    TestCase::$createUserPage = new CreateUser;
+    $this->page = new CreateUser;
 });
 
 test('create user page has correct resource', function (): void {

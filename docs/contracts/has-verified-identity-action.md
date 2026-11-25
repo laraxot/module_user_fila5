@@ -1,24 +1,25 @@
 ---
-title: "HasVerifiedIdentityAction — contratto"
+title: "Contratto — HasVerifiedIdentityAction"
 type: contract
-owner: User
-status: accepted
-updated: 2026-11-24
 action: "Modules\\User\\Actions\\Auth\\HasVerifiedIdentityAction"
-qmd: "HasVerifiedIdentityAction identità verificata email confermata SPID CIE auth_method middleware verified PRD-02"
+created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # HasVerifiedIdentityAction
 
-Dice se l'identità dell'utente è verificata: email confermata oppure accesso con SPID o CIE (PRD-02). Codice: `app/Actions/Auth/HasVerifiedIdentityAction.php:23-45`.
-
 ## Input
-
-- `?Authenticatable $user`: l'utente, anche assente (`execute`, riga 31).
-
+- Utente autenticabile opzionale.
 ## Output
-
-- `bool`: `false` se l'utente è null (righe 33-35); `true` se non implementa `MustVerifyEmail` o ha già l'email verificata (riga 37); altrimenti `true` solo se l'attributo grezzo `auth_method` è `spid` o `cie` (righe 43-44).
+- `true` per email verificata o metodo `spid`/`cie`; `false` per utente assente o non verificato.
+## Invarianti
+- SPID/CIE attestano l'identità applicativa, ma non impostano `email_verified_at`.
+## Effetti collaterali
+- Nessuno: legge sessione e attributi grezzi.
+## Errori
+- Nessun errore applicativo per utente nullo: restituisce `false`.
+## Non fa
+- Non invia email, non modifica l'utente e non concede ruoli o permessi.
 
 ## Invarianti
 

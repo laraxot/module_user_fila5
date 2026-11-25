@@ -10,6 +10,7 @@ related:
   - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
+qmd: "parse error orphan methods 2"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-.md

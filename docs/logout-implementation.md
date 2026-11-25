@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "logout implementation"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md

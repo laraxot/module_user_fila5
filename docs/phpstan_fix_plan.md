@@ -1,3 +1,8 @@
+---
+title: "User Module - PHPStan Level 10 Fix Plan"
+type: note
+qmd: "phpstan fix plan user level"
+---
 # User Module - PHPStan Level 10 Fix Plan
 
 ## Analysis Date

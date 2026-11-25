@@ -1,3 +1,8 @@
+---
+title: "Regole per la Verifica dei Componenti Blade"
+type: rule
+qmd: "component verification rules regole verifica componenti"
+---
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

@@ -1,3 +1,8 @@
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+qmd: "baseuser refactoring completed completato"
+---
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  

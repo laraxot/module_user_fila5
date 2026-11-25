@@ -8,6 +8,7 @@ issues: []
 discussions: []
 related:
   - "./auth-verify-confirm-design-comuni-shell.story.md"
+qmd: "auth verify resend loading story page"
 ---
 
 # Verify page — spinner su "richiedine un altro"

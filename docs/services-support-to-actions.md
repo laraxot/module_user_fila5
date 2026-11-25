@@ -1,5 +1,6 @@
 ---
 title: User — Support → Actions
+qmd: "services support to actions user"
 ---
 
 # Migrazione `app/Support/` → `app/Actions/`

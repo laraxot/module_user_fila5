@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "quality status nov"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status-11.md

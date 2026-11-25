@@ -1,3 +1,8 @@
+---
+title: "Risoluzione dei Conflitti Git nel Modulo User"
+type: report
+qmd: "conflict resolution report risoluzione conflitti user"
+---
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica

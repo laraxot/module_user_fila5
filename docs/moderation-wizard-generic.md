@@ -1,3 +1,8 @@
+---
+title: "Moderazione e Wizard di Registrazione Generici per User"
+type: note
+qmd: "moderation wizard generic moderazione registrazione generici"
+---
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa

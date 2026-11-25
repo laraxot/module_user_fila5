@@ -11,6 +11,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+qmd: "two factor 1"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/two-factor.md

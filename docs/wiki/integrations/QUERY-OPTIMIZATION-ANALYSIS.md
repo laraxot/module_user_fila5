@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "query optimization analysis user"
 ---
 
 # User Module - Query Optimization Analysis

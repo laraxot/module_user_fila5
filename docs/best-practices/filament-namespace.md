@@ -11,6 +11,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
+qmd: "filament namespace"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-namespace-rules.md

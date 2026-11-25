@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "nested resources"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nested-resources.md

@@ -9,6 +9,7 @@ related:
   - ../socialite-provider-boundary-product-brief.md
   - ../socialite-provider-boundary-prd.md
   - ../socialite-provider-boundary-architecture.md
+qmd: "socialite provider boundary story move config"
 ---
 
 # Story: move Socialite config to SocialiteServiceProvider

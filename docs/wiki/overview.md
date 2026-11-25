@@ -13,6 +13,7 @@ related:
   - "./index.md"
   - "./log.md"
   - "./socialite-architecture.md"
+qmd: "overview wiki"
 ---
 
 # User Wiki Overview

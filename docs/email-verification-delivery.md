@@ -4,6 +4,7 @@ type: guide
 module: User
 status: active
 tags: [email, verification, notify, production]
+qmd: "email verification delivery"
 ---
 
 # Email verification delivery

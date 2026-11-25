@@ -2,6 +2,7 @@
 module: User
 concept: Two-Factor Authentication
 last_updated: 2026-04-15
+qmd: "twofactorauthentication twofactor authentication 2fa"
 ---
 
 # Two-Factor Authentication (2FA)

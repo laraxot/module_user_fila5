@@ -11,6 +11,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+qmd: "spatie permissions 2"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/spatie-permissions.md

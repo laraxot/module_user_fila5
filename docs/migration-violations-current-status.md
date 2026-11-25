@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "migration violations current status"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-current-status.md

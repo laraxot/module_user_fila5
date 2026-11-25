@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "resource translation violation critical fix"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md

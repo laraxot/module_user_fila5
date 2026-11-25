@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "business logic deep dive user"
 ---
 
 # User Module - Business Logic Deep Dive

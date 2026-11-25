@@ -1,3 +1,8 @@
+---
+title: "Analisi dell'Errore di Implementazione Volt/Blade"
+type: note
+qmd: "volt blade implementation error analisi dellerrore"
+---
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati

@@ -1,6 +1,7 @@
 ---
 title: analyst-report
 module: User
+qmd: "analyst report analystreport"
 ---
 
 # User Module — Analyst Report

@@ -1,6 +1,12 @@
 ---
+title: "ADR — User possiede identità, ruoli e team"
+type: decision
 status: accepted
 module: User
+updated: 2026-11-24
+status: accepted
+module: User
+qmd: "user owns identity and roles possiede"
 ---
 
 # User possiede identità, ruoli e team
@@ -29,3 +35,13 @@ Le autorizzazioni restano centralizzate e verificabili; ogni dominio deve dichia
 ## Conferma
 
 Verificare UserContract, BaseUserPolicy, Role, team membership e test di autenticazione.
+
+## Verifica
+
+- Contratto e policy base nel modulo owner: `Modules/User/app/Contracts/UserContract.php`,
+  `Modules/User/app/Models/Policies/BaseUserPolicy.php`, `Modules/User/app/Models/Role.php`,
+  `Modules/User/app/Models/TeamUser.php`.
+- Uso da parte degli altri moduli: `rg -l 'BaseUserPolicy|UserContract' laravel/Modules/*/app` (ad esempio le policy di Cms).
+- Test: `Modules/User/tests/Feature/UserAuthenticationTest.php` e `Modules/User/tests/Feature/TeamManagementTest.php`.
+- Non esiste un test che impedisca a un altro modulo di definire ruoli propri o di equiparare un team al super-admin:
+  resta revisione del codice.

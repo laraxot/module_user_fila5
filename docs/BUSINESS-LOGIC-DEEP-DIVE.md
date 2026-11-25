@@ -1,3 +1,8 @@
+---
+title: "User Module - Business Logic Deep Dive"
+type: note
+qmd: "business logic deep dive user"
+---
 # User Module - Business Logic Deep Dive
 
 ## 🎯 Module Overview

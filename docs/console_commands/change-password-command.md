@@ -13,6 +13,10 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
 ---
 
 # ChangePasswordCommand
@@ -358,7 +362,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)
@@ -382,4 +386,5 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
 *Ultimo aggiornamento: 2025-01-27*
+
 

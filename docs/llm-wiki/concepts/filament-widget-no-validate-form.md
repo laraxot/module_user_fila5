@@ -7,6 +7,7 @@ created: 2026-06-04
 updated: 2026-06-04
 tags: [user, filament, register, kiss]
 related:
+qmd: "filament widget no validate form register"
 ---
 
 # RegisterWidget KISS persist

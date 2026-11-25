@@ -1,3 +1,8 @@
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: note
+qmd: "auth logout blade implementazione corretta logoutbladephp"
+---
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati

@@ -1,6 +1,7 @@
 ---
 title: index
 module: User
+qmd: "index"
 ---
 
 # User Module — Documentation Index

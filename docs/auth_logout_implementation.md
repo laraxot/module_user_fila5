@@ -1,3 +1,8 @@
+---
+title: "Implementazione del Logout"
+type: note
+qmd: "auth logout implementation implementazione"
+---
 # Implementazione del Logout 
 
 ## Indice

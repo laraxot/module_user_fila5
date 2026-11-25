@@ -8,6 +8,7 @@ owner: module:User
 module: User
 related: [DCP-110, front-office-audit]
 tags: [cms, folio, area-personale, 404, design-comuni]
+qmd: "area personale servizi cms page story"
 ---
 
 # Area personale /servizi: pagina CMS mancante (404)

@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "ottimizzazioni correzioni"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md

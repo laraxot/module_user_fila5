@@ -1,3 +1,8 @@
+---
+title: "Massimizzare il livello di confidenza"
+type: guide
+qmd: "confidence guidelines massimizzare livello confidenza"
+---
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

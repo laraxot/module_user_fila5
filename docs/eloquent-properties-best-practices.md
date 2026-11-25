@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "eloquent properties best practices"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md

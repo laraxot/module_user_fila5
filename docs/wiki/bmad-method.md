@@ -11,6 +11,7 @@ related:
   - "./log.md"
   - "./overview.md"
   - "./socialite-architecture.md"
+qmd: "bmad method"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/bmad-method.md

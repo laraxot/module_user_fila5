@@ -1,3 +1,8 @@
+---
+title: "Testing Rules & Strategy"
+type: rule
+qmd: "testing rules strategy"
+---
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)

@@ -1,3 +1,8 @@
+---
+title: "Fix Binding Team Models nel Modulo User"
+type: note
+qmd: "team bindings fix binding models user"
+---
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica

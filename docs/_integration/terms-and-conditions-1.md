@@ -11,6 +11,7 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
+qmd: "terms and conditions 1"
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions.md

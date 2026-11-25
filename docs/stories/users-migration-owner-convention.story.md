@@ -5,6 +5,7 @@ bmad: true
 status: complete
 owner: module:User
 tags: [user, migration, convention, schema]
+qmd: "users migration owner convention story user"
 ---
 
 # User migration owner convention

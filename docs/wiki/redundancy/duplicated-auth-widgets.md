@@ -10,6 +10,7 @@ related:
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+qmd: "duplicated auth widgets widget duplicati loginwidget"
 ---
 
 # LoginWidget e LogoutWidget duplicati

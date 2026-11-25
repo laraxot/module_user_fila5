@@ -1,3 +1,8 @@
+---
+title: "📚 Indice Documentazione Modulo User"
+type: note
+qmd: "00 indice user"
+---
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant

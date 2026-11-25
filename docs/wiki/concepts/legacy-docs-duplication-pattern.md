@@ -16,6 +16,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+qmd: "legacy duplication pattern duplicazione user"
 ---
 
 # Pattern ridondanza in `Modules/User/docs/legacy`

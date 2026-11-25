@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "migration duplicate resolution"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md

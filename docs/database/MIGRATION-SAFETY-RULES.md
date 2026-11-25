@@ -1,3 +1,8 @@
+---
+title: "Migration Safety Rules - NEVER Destroy Data"
+type: rule
+qmd: "migration safety rules never destroy data"
+---
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA

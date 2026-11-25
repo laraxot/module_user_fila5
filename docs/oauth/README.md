@@ -1,3 +1,8 @@
+---
+title: "OAuth Documentation Index"
+type: note
+qmd: "oauth"
+---
 # OAuth Documentation Index
 
 > **Module**: User  

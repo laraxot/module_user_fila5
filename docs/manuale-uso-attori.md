@@ -1,3 +1,8 @@
+---
+title: "Manuale d'uso per attori — User"
+type: note
+qmd: "manuale uso attori duso user"
+---
 # Manuale d'uso per attori — User
 
 ## Scopo e perimetro

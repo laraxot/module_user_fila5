@@ -27,16 +27,16 @@ return [
             'label' => 'login_at',
         ],
         'ip_address' => [
+            'label' => 'Indirizzo IP',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'ip_address',
         ],
         'user_agent' => [
+            'label' => 'Browser (user agent)',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'user_agent',
         ],
         'toggleColumns' => [
             'tooltip' => '',
@@ -64,10 +64,10 @@ return [
             'description' => '',
         ],
         'user' => [
+            'label' => 'Utente',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'user',
         ],
     ],
     'actions' => [

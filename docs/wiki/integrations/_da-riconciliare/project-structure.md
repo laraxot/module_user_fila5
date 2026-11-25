@@ -5,14 +5,7 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+qmd: "project structure user"
 ---
 
 # Project Structure — Module **User**
@@ -205,7 +198,7 @@ At module root level, these folders MUST NOT exist:
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
 
 ## Convenzioni
 

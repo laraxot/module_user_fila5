@@ -6,7 +6,7 @@ priority: P2
 created: 2026-11-10
 module: User
 related:
-  - "../../../Quaeris/docs/stories/2026-11-05-token-failure-silently-breaks-invite-chain.story.md"
+  - "../../../Quaeris/docs/stories/token-failure-silently-breaks-invite-chain.story.md"
 tags: [bmad, eloquent, performance, moduli-condivisi]
 ---
 

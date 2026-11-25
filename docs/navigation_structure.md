@@ -1,3 +1,8 @@
+---
+title: "Struttura Navigazione"
+type: note
+qmd: "navigation structure struttura navigazione"
+---
 # Struttura Navigazione
 
 ## Overview

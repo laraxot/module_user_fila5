@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "logout analysis 1"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-analysis.md

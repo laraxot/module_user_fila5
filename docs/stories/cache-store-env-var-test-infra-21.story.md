@@ -20,6 +20,7 @@ related:
 github:
   repository: null
   issues: []
+qmd: "cache store env var test infra"
 ---
 
 # phpunit.xml: CACHE_DRIVER non ha effetto, serve CACHE_STORE

@@ -4,6 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
+qmd: "logout implementation with laravel localization"
 ---
 
 # Implementazione del Logout con LaravelLocalization 
@@ -17,7 +18,7 @@ updated: '2026-11-23'
 # Implementazione del Logout con LaravelLocalization
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

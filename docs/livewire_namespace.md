@@ -1,3 +1,8 @@
+---
+title: "Regole per i componenti Livewire in Windsurf/Xot"
+type: note
+qmd: "livewire namespace regole componenti windsurfxot"
+---
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

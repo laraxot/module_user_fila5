@@ -20,6 +20,7 @@ related:
 github:
   repository: null
   issues: []
+qmd: "superadmin widget icons 21 story superadminwidget"
 ---
 
 # SuperAdminWidget: icone piu' adeguate

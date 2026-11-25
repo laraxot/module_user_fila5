@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
-use Illuminate\Database\DatabaseManager;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -14,6 +13,8 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema as FilamentSchema;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Console\Kernel;
+use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -22,6 +23,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -34,8 +37,6 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
-use Mockery\CompositeExpectation;
-use Mockery\Expectation;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -117,7 +118,7 @@ abstract class TestCase extends XotBaseTestCase
             static::$userSchemaMigrated = true;
 
             if (config('database.default') !== 'sqlite') {
-                $this->app?->make(\Illuminate\Contracts\Console\Kernel::class)
+                $this->app?->make(Kernel::class)
                     ->call('migrate', ['--force' => true]);
             }
         }
@@ -666,6 +667,9 @@ abstract class TestCase extends XotBaseTestCase
      * non eseguiva piu' i callback "dopo il commit" (observer `ShouldHandleEventsAfterCommit`, eventi `ShouldDispatchAfterCommit`).
      * Effetto in CI su MariaDB: nessuna notifica di approvazione, scarto o chiusura (TicketLifecycleNotificationTest, area personale).
      * Lo skip del manager conta i nomi restituiti qui, quindi ogni nome deve corrispondere a una sola transazione aperta.
+     *
+     * I nomi senza configurazione si saltano: la lista e' condivisa tra i progetti del monorepo e `fixcity` esiste solo
+     * dove il modulo Fixcity e' attivo; altrove `connection('fixcity')` lanciava «not configured» e nessun test partiva.
      *
      * @return list<string>
      */

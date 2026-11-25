@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "user profile aration"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-separation.md

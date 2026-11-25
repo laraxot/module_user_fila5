@@ -1,3 +1,8 @@
+---
+title: "FullCalendar Scheduler License Key"
+type: note
+qmd: "scheduler license key fullcalendar"
+---
 # FullCalendar Scheduler License Key
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+title: "Logout: POST /{lang}/auth/logout rispondeva 405"
+type: story
+qmd: "logout post localized route story langauthlogout"
+---
 # Logout: POST /{lang}/auth/logout rispondeva 405
 
 - Stato: done (2026-10-07)

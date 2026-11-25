@@ -6,6 +6,7 @@ related:
   - ../../../../Xot/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
   - ../../../../Ptv/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
   - ../../../../IndennitaResponsabilita/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md
+qmd: "xot base resource navigation icon translation"
 ---
 
 # Story

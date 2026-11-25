@@ -1,3 +1,8 @@
+---
+title: "Implementazione Corretta del Logout con Widget Filament"
+type: note
+qmd: "logout filament widget corrected implementazione corretta"
+---
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati

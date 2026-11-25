@@ -14,6 +14,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "testcase hasusertestcase property conflict fixed fatal"
 ---
 
 # Fatal error risolto: `TestCase` vs `HasUserTestCase` — conflitto proprietà `$user`

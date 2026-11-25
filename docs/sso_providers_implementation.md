@@ -1,3 +1,8 @@
+---
+title: "User Module - SSO Providers Implementation"
+type: note
+qmd: "sso providers implementation user"
+---
 # User Module - SSO Providers Implementation
 
 ## Overview

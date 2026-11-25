@@ -4,6 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
+qmd: "dry kiss analysis"
 ---
 
 # DRY & KISS Analysis - Modulo User
@@ -122,8 +123,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
-- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+

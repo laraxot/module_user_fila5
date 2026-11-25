@@ -1,7 +1,8 @@
 ---
 module: theme
 topic: REDUNDANCY_ANALYSIS
-canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+canonical: ../../../Themes/docs/shared-components/redundancy_analysis.md
+canonical: ../../../Themes/docs/shared-components/redundancy_analysis.md
 title: "REDUNDANCY ANALYSIS"
 type: note
 updated: 2026-10-07

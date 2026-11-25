@@ -1,3 +1,8 @@
+---
+title: "Comandi Console - Modulo User"
+type: note
+qmd: "comandi console user"
+---
 # Comandi Console - Modulo User
 
 ## Panoramica

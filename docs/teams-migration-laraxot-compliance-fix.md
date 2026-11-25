@@ -1,3 +1,8 @@
+---
+title: "Teams Migration - Laraxot Compliance Fix"
+type: note
+qmd: "teams migration laraxot compliance fix"
+---
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data

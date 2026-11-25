@@ -15,7 +15,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
  * `MODIFY ... AUTO_INCREMENT` exists only on MySQL/MariaDB: on other drivers (sqlite used by
  * the test suites and CI) the migration does nothing instead of failing the whole migrate.
  */
-return new class() extends Migration
+return new class extends Migration
 {
     public function up(): void
     {

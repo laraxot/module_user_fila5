@@ -1,3 +1,8 @@
+---
+title: "PHPStan Roadmap: User Module"
+type: note
+qmd: "phpstan roadmap user"
+---
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12

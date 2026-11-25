@@ -11,6 +11,7 @@ related:
   - ./spatie-permission-migration-no-table-name.md
   - ../../../../../config/permission.php
   - ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+qmd: "spatie permission table names contract"
 ---
 
 # Spatie Permission — config `table_names` immutabile

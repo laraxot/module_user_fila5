@@ -1,3 +1,8 @@
+---
+title: "FullCalendar Scheduler Documentation - README"
+type: note
+qmd: "fullcalendar scheduler"
+---
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo

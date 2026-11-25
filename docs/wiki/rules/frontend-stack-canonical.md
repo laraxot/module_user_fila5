@@ -12,6 +12,7 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
+qmd: "frontend stack canonical canonico user stub"
 ---
 
 # Stack frontend — modulo User

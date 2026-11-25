@@ -2,6 +2,7 @@
 title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved
+qmd: "lfs resolution 28 corruption"
 ---
 
 # LFS Corruption Resolution (2026-07-28)

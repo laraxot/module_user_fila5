@@ -1,3 +1,8 @@
+---
+title: "Code Quality Analysis - User Module"
+type: analysis
+qmd: "code quality analysis user"
+---
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified

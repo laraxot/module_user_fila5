@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'label' => 'Profile',
+        'label' => 'Profiles',
         'plural' => 'Profiles',
         'group' => [
             'label' => 'User management',

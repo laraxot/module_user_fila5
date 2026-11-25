@@ -1,3 +1,8 @@
+---
+title: "Laravel Passport Implementation Summary - User Module"
+type: note
+qmd: "passport implementation summary laravel user"
+---
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

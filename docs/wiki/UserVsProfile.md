@@ -2,6 +2,7 @@
 module: User
 concept: User vs Profile
 last_updated: 2026-04-15
+qmd: "uservsprofile user profile models"
 ---
 
 # User vs Profile Models

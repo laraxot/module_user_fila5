@@ -1,3 +1,8 @@
+---
+title: "Errore VoltDirectiveMissingException in Folio"
+type: note
+qmd: "volt folio error errore voltdirectivemissingexception"
+---
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema

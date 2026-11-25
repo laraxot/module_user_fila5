@@ -1,3 +1,8 @@
+---
+title: "User Module PRD (Product Requirements Document)"
+type: story
+qmd: "prd user product requirements document"
+---
 # User Module PRD (Product Requirements Document)
 
 **Status**: ✅ Finalized

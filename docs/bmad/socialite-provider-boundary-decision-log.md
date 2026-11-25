@@ -10,6 +10,7 @@ related:
   - ./socialite-provider-boundary-prd.md
   - ./socialite-provider-boundary-architecture.md
   - ./stories/socialite-provider-boundary.story.md
+qmd: "socialite provider boundary decision log"
 ---
 
 # Socialite provider boundary — decision log

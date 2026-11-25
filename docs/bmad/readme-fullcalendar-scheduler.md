@@ -1,6 +1,7 @@
 ---
 title: readme-fullcalendar-scheduler
 module: User
+qmd: "fullcalendar scheduler readmefullcalendarscheduler"
 ---
 
 # FullCalendar Scheduler Documentation - README

@@ -1,3 +1,8 @@
+---
+title: "Organization of Filament Resources"
+type: note
+qmd: "filament resources organization"
+---
 # Organization of Filament Resources
 
 ## Namespace Structure

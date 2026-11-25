@@ -1,3 +1,8 @@
+---
+title: "Implementazione del Logout con Volt"
+type: note
+qmd: "volt logout implementazione"
+---
 # Implementazione del Logout con Volt
 
 ## Il Problema

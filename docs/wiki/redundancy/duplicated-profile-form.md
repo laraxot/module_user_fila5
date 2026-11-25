@@ -9,6 +9,7 @@ related:
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+qmd: "duplicated profile form profileform oauth forms"
 ---
 
 # Duplicated ProfileForm and OAuth Forms (User Module)

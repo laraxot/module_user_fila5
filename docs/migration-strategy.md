@@ -11,6 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+qmd: "migration strategy"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-strategy.md

@@ -10,6 +10,7 @@ related:
   - "./duplicated-profile-form.md"
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
+qmd: "oauth dual resource trees alberi filament"
 ---
 
 # OAuth: cluster vs `Filament/Resources/` root

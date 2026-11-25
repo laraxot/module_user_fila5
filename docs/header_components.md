@@ -1,3 +1,8 @@
+---
+title: "Componenti Header"
+type: note
+qmd: "header components componenti"
+---
 # Componenti Header
 
 ## Struttura e Convenzioni

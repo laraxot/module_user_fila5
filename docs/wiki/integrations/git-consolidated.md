@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "git consolidated"
 ---
 
 # git — Consolidated Documentation
@@ -971,6 +972,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
+5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -1284,6 +1286,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 2. Verificare funzionalità critiche
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
+5. Implementare test automatizzati
 5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
@@ -2673,6 +2676,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
+5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -2744,6 +2748,11 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+- [Indice documentazione User](/laravel/Modules/User/docs/index.md)
+- [README User](/laravel/Modules/User/docs/readme.md)
+- [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
+- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -3018,6 +3027,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
+5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -3048,6 +3058,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
+---
 ---
 
 ## git-conflicts-resolution-local-swarm-backup
@@ -4316,7 +4327,7 @@ git -c core.editor="echo" rebase --continue
 
 ## Riferimenti
 
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
+- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
 - [oauth-access-token-removal](oauth-access-token-removal.md)
 
 ---
@@ -5241,6 +5252,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 2. Verificare funzionalità critiche
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
+5. Implementare test automatizzati
 5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - [DATE] 15:30**

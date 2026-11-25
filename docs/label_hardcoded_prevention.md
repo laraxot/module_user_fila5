@@ -5,6 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "label hardcoded prevention prevenzione user"
 ---
 
 # Prevenzione ->label() Hardcoded - Modulo User

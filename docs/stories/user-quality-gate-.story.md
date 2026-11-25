@@ -1,3 +1,8 @@
+---
+title: "Story: Quality-gate closure — Modules/User (2026-09-04)"
+type: story
+qmd: "user quality gate story qualitygate closure"
+---
 # Story: Quality-gate closure — Modules/User (2026-09-04)
 
 ## BMAD phase

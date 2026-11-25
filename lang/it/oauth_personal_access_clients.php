@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'client_id' => [
+            'label' => 'Client ID',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Modificato il',
+        ],
+    ],
     'actions' => [
         'create' => [
             'icon' => 'create',
@@ -18,20 +32,6 @@ return [
         ],
         'edit' => [
             'icon' => 'edit',
-        ],
-    ],
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-        ],
-        'client_id' => [
-            'label' => 'Client ID',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
-        ],
-        'updated_at' => [
-            'label' => 'Modificato il',
         ],
     ],
 ];

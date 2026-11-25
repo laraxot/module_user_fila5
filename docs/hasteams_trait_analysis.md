@@ -1,3 +1,8 @@
+---
+title: "HasTeams Trait Analysis"
+type: analysis
+qmd: "hasteams trait analysis"
+---
 # HasTeams Trait Analysis
 
 ## Overview
