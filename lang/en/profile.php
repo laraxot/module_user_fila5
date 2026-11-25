@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< .merge_file_FJZRve
-        'label' => 'Profile',
-=======
         'label' => 'Profiles',
->>>>>>> .merge_file_nTIr9G
         'plural' => 'Profiles',
         'group' => [
             'label' => 'User management',
@@ -102,9 +98,5 @@ return [
         'delete' => 'Delete Account',
     ],
     'my_profile' => 'My Profile',
-<<<<<<< .merge_file_FJZRve
-    'subheading' => 'Your personal details and password',
-=======
     'subheading' => 'Manage your personal details and security',
->>>>>>> .merge_file_nTIr9G
 ];

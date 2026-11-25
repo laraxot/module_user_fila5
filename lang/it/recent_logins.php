@@ -25,19 +25,13 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< .merge_file_HyiAME
             'label' => 'Ora accesso',
         ],
         'ip_address' => [
-=======
-        ],
-        'ip_address' => [
             'label' => 'Indirizzo IP',
->>>>>>> .merge_file_xbHVYA
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'Indirizzo IP',
         ],
         'user_agent' => [
             'label' => 'Browser (user agent)',
@@ -71,14 +65,10 @@ return [
             'description' => '',
         ],
         'user' => [
-<<<<<<< .merge_file_HyiAME
-=======
             'label' => 'Utente',
->>>>>>> .merge_file_xbHVYA
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'Utente',
         ],
     ],
     'actions' => [
