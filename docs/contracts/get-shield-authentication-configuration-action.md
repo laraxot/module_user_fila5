@@ -1,16 +1,16 @@
 ---
-title: "ResolveShieldAuthenticationConfigurationAction — contratto"
+title: "GetShieldAuthenticationConfigurationAction — contratto"
 type: contract
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveShieldAuthenticationConfigurationAction"
-qmd: "ResolveShieldAuthenticationConfigurationAction guard auth provider HasRoles Filament Shield class_uses"
+action: "Modules\\User\\Actions\\Shield\\GetShieldAuthenticationConfigurationAction"
+qmd: "GetShieldAuthenticationConfigurationAction guard auth provider HasRoles Filament Shield class_uses"
 ---
 
-# ResolveShieldAuthenticationConfigurationAction
+# GetShieldAuthenticationConfigurationAction
 
-Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `app/Actions/Shield/ResolveShieldAuthenticationConfigurationAction.php`.
+Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `app/Actions/Shield/GetShieldAuthenticationConfigurationAction.php`.
 
 ## Input
 

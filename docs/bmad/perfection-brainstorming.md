@@ -446,12 +446,12 @@ rimozione (memoria "il duplicato si cancella, non si preserva").
 `execute()`: `Authentication/GetAuthenticationLogQueryForAuthenticatableAction`,
 `GetPermissionModelAction` (**e** il suo duplicato quasi identico in `Shield/`),
 `Notification/IsNotificationSchemaReadableAction`,
-`Shield/ResolveExclusionsConfigurationAction`,
-`Shield/ResolveFilamentUserConfigurationAction`,
-`Shield/ResolvePermissionsConfigurationAction`,
-`Shield/ResolveShieldAuthenticationConfigurationAction`,
-`Shield/ResolveShieldResourceConfigurationAction`,
-`Shield/ResolveSuperAdminConfigurationAction`.
+`Shield/GetExclusionsConfigurationAction`,
+`Shield/GetFilamentUserConfigurationAction`,
+`Shield/GetPermissionsConfigurationAction`,
+`Shield/GetShieldAuthenticationConfigurationAction`,
+`Shield/GetShieldResourceConfigurationAction`,
+`Shield/GetSuperAdminConfigurationAction`.
 
 ### 4.3 ALTO — 4 test skippati per un bug gia' risolto (skip stale)
 

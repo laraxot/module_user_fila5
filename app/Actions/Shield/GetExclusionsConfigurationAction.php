@@ -16,7 +16,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-exclusions-configuration-action.md
  */
-class ResolveExclusionsConfigurationAction
+class GetExclusionsConfigurationAction
 {
     use QueueableAction;
 

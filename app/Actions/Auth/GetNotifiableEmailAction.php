@@ -19,7 +19,7 @@ use Webmozart\Assert\Assert;
  *
  * @contract docs/contracts/resolve-notifiable-email-action.md
  */
-final class ResolveNotifiableEmailAction
+final class GetNotifiableEmailAction
 {
     use QueueableAction;
 

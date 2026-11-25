@@ -1,16 +1,16 @@
 ---
-title: "ResolveUserNameFieldsFromSocialiteAction — contratto"
+title: "GetUserNameFieldsFromSocialiteAction — contratto"
 type: contract
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Socialite\\ResolveUserNameFieldsFromSocialiteAction"
-qmd: "ResolveUserNameFieldsFromSocialiteAction nome cognome da identità OAuth NameSearchEnum email fallback reflection getRaw"
+action: "Modules\\User\\Actions\\Socialite\\GetUserNameFieldsFromSocialiteAction"
+qmd: "GetUserNameFieldsFromSocialiteAction nome cognome da identità OAuth NameSearchEnum email fallback reflection getRaw"
 ---
 
-# ResolveUserNameFieldsFromSocialiteAction
+# GetUserNameFieldsFromSocialiteAction
 
-Ricava nome e cognome da un'identità OAuth, con tre fonti in ordine: attributo `name`, campo `name` dei dati grezzi, parte locale dell'email. Codice: `app/Actions/Socialite/ResolveUserNameFieldsFromSocialiteAction.php`.
+Ricava nome e cognome da un'identità OAuth, con tre fonti in ordine: attributo `name`, campo `name` dei dati grezzi, parte locale dell'email. Codice: `app/Actions/Socialite/GetUserNameFieldsFromSocialiteAction.php`.
 
 ## Input
 
@@ -24,7 +24,7 @@ Ricava nome e cognome da un'identità OAuth, con tre fonti in ordine: attributo 
 
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
-| `SOCIALITE-NAME-FIELDS-INV-1` | Il nome viene dall'attributo `name` se produce un risultato non vuoto. | `determineNameField()` | `tests/Unit/Actions/Socialite/ResolveUserNameFieldsFromSocialiteActionTest.php:24,32,40` |
+| `SOCIALITE-NAME-FIELDS-INV-1` | Il nome viene dall'attributo `name` se produce un risultato non vuoto. | `determineNameField()` | `tests/Unit/Actions/Socialite/GetUserNameFieldsFromSocialiteActionTest.php:24,32,40` |
 | `SOCIALITE-NAME-FIELDS-INV-2` | Il campo grezzo `name` è scartato se sembra un'email. | `determineNameField()`, `FILTER_VALIDATE_EMAIL` | stesso file |
 | `SOCIALITE-NAME-FIELDS-INV-3` | Senza altre fonti, si usa la parte locale dell'email in formato titolo. | `analyzeEmailForNameSection()` | stesso file |
 

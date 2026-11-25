@@ -1,16 +1,16 @@
 ---
-title: "ResolveFilamentUserConfigurationAction — contratto"
+title: "GetFilamentUserConfigurationAction — contratto"
 type: contract
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveFilamentUserConfigurationAction"
-qmd: "ResolveFilamentUserConfigurationAction filament_user ruolo utente Filament Shield FilamentShieldData"
+action: "Modules\\User\\Actions\\Shield\\GetFilamentUserConfigurationAction"
+qmd: "GetFilamentUserConfigurationAction filament_user ruolo utente Filament Shield FilamentShieldData"
 ---
 
-# ResolveFilamentUserConfigurationAction
+# GetFilamentUserConfigurationAction
 
-Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `FilamentShieldData`. Codice: `app/Actions/Shield/ResolveFilamentUserConfigurationAction.php`.
+Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `FilamentShieldData`. Codice: `app/Actions/Shield/GetFilamentUserConfigurationAction.php`.
 
 ## Input
 

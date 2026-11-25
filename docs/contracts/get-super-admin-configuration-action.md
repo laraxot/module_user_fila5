@@ -1,16 +1,16 @@
 ---
-title: "ResolveSuperAdminConfigurationAction — contratto"
+title: "GetSuperAdminConfigurationAction — contratto"
 type: contract
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveSuperAdminConfigurationAction"
-qmd: "ResolveSuperAdminConfigurationAction super admin Filament Shield gate intercept_gate define_via_gate"
+action: "Modules\\User\\Actions\\Shield\\GetSuperAdminConfigurationAction"
+qmd: "GetSuperAdminConfigurationAction super admin Filament Shield gate intercept_gate define_via_gate"
 ---
 
-# ResolveSuperAdminConfigurationAction
+# GetSuperAdminConfigurationAction
 
-Riassume la configurazione del super admin di Filament Shield (abilitazione, nome, definizione via gate, stato di intercettazione del gate). Codice: `app/Actions/Shield/ResolveSuperAdminConfigurationAction.php`.
+Riassume la configurazione del super admin di Filament Shield (abilitazione, nome, definizione via gate, stato di intercettazione del gate). Codice: `app/Actions/Shield/GetSuperAdminConfigurationAction.php`.
 
 ## Input
 

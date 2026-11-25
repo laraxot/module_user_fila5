@@ -28,7 +28,7 @@ Nel modulo User **non** esiste più `app/Support/`. Ogni helper con comportament
 | Legacy `app/Support/` | Action / Data |
 |----------------------|-------------|
 | `Otp/Hasher` | `HashOtpValueAction`, `VerifyOtpHashAction`, `OtpHashNeedsRehashAction` |
-| `Socialite/Utils/UserNameFieldsResolver` | `ResolveUserNameFieldsFromSocialiteAction` → `SocialiteNameFieldsData` |
+| `Socialite/Utils/UserNameFieldsResolver` | `GetUserNameFieldsFromSocialiteAction` → `SocialiteNameFieldsData` |
 | `Socialite/Utils/EmailDomainAnalyzer` | `AnalyzeSocialiteEmailDomainAction` → `SocialiteEmailDomainAnalysisData` |
 | `NotificationSchema` | `IsNotificationSchemaReadableAction` |
 | `AuthenticationLogQuery` | `GetAuthenticationLogQueryForAuthenticatableAction` |

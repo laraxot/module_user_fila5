@@ -40,4 +40,4 @@ Nessuno.
 ## Non fa
 
 - Il controllo `if ($nameFieldsResolver === null)` non può essere vero: `app()` non restituisce null. È codice morto.
-- Risolve i nomi con `Utils/UserNameFieldsResolver`, che duplica la logica di `ResolveUserNameFieldsFromSocialiteAction`.
+- Risolve i nomi con `Utils/UserNameFieldsResolver`, che duplica la logica di `GetUserNameFieldsFromSocialiteAction`.

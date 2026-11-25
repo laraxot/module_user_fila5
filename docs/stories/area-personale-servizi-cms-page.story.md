@@ -22,7 +22,7 @@ sono pagine CMS JSON in `config/local/fixcity/database/content/pages/area-person
 
 Esiste anche un blade Volt `Modules/User/resources/views/pages/area-personale/servizi.blade.php`
 (route Folio `area-personale.servizi`), ma e' irraggiungibile: la catch-all del tema
-`[container0]/[slug0]` risolve prima via `ResolvePageAction` e, non trovando la pagina CMS
+`[container0]/[slug0]` risolve prima via `GetPageAction` e, non trovando la pagina CMS
 `area-personale.servizi`, abortisce 404. Lo stesso vale per i blade Volt delle altre pagine:
 il JSON CMS e' la SSoT, il blade e' codice legacy.
 

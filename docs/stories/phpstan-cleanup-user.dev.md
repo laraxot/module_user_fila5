@@ -26,7 +26,7 @@ qmd: "phpstan cleanup user dev"
 
 Codice (`laravel/Modules/User/`):
 - `app/Enums/NameSearchEnum.php` (nuovo), `DefaultRoleId.php` (nuovo), `FetchUserApiTokenExitCode.php` (nuovo), `UserType.php`
-- `app/Actions/Socialite/ResolveUserNameFieldsFromSocialiteAction.php`, `app/Actions/Socialite/Utils/UserNameFieldsResolver.php`, `app/Adapters/Socialite/UserNameFieldsResolver.php`
+- `app/Actions/Socialite/GetUserNameFieldsFromSocialiteAction.php`, `app/Actions/Socialite/Utils/UserNameFieldsResolver.php`, `app/Adapters/Socialite/UserNameFieldsResolver.php`
 - `app/Console/Commands/{AssignRole,AssignTenant,ChangeType,FetchUserApiToken}Command.php`
 - `app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource.php`, `app/Filament/Tables/Columns/{UserColumn,SingleRoleSelectColumn}.php`
 - `app/Http/Controllers/{UpgradeController,Socialite/ProcessCallbackController}.php`, `app/Http/Livewire/Auth/Passwords/Confirm.php`

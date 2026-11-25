@@ -16,7 +16,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-filament-user-configuration-action.md
  */
-class ResolveFilamentUserConfigurationAction
+class GetFilamentUserConfigurationAction
 {
     use QueueableAction;
 

@@ -16,7 +16,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-user-name-fields-from-socialite-action.md
  */
-final class ResolveUserNameFieldsFromSocialiteAction
+final class GetUserNameFieldsFromSocialiteAction
 {
     use QueueableAction;
 

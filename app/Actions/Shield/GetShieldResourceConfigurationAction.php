@@ -19,7 +19,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-shield-resource-configuration-action.md
  */
-class ResolveShieldResourceConfigurationAction
+class GetShieldResourceConfigurationAction
 {
     use QueueableAction;
 

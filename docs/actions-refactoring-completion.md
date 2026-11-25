@@ -24,33 +24,33 @@ Completed decomposition of legacy `Support\Utils` into 6 granular QueueableActio
 
 ### Action Groups (by actor/context)
 
-1. **ResolveShieldResourceConfigurationAction**
+1. **GetShieldResourceConfigurationAction**
    - Resolves Filament Shield resource registration and navigation settings
    - Methods: getResourceSlug, isResourcePublished, isResourceNavigationRegistered, getResourceNavigationSort, etc.
    - Returns: Associative array with 7 configuration keys
 
-2. **ResolveShieldAuthenticationConfigurationAction**
+2. **GetShieldAuthenticationConfigurationAction**
    - Resolves authentication provider and guard configuration
    - Methods: getFilamentAuthGuard, getAuthProviderFQCN, isAuthProviderConfigured
    - Returns: Associative array with 3 auth configuration keys
 
-3. **ResolveSuperAdminConfigurationAction**
+3. **GetSuperAdminConfigurationAction**
    - Resolves super admin role configuration
    - Methods: isSuperAdminEnabled, getSuperAdminName, isSuperAdminDefinedViaGate, getSuperAdminGateInterceptionStatus
    - Returns: Associative array with 4 super admin configuration keys
 
-4. **ResolveFilamentUserConfigurationAction**
+4. **GetFilamentUserConfigurationAction**
    - Resolves filament user role configuration
    - Methods: isFilamentUserRoleEnabled, getFilamentUserRoleName
    - Returns: Associative array with 2 filament user configuration keys
 
-5. **ResolvePermissionsConfigurationAction**
+5. **GetPermissionsConfigurationAction**
    - Resolves permissions model, entity enablement, and prefixes
    - Methods: getGeneralResourcePermissionPrefixes, getPagePermissionPrefix, getWidgetPermissionPrefix, etc.
    - Public methods: doesResourceHaveCustomPermissions, getResourcePermissionPrefixes
    - Returns: Associative array with 12 permissions configuration keys
 
-6. **ResolveExclusionsConfigurationAction**
+6. **GetExclusionsConfigurationAction**
    - Resolves exclusion settings for resources, pages, widgets
    - Methods: isGeneralExcludeEnabled, enableGeneralExclude, disableGeneralExclude, getExcludedResources, etc.
    - Returns: Associative array with 4 exclusion configuration keys
@@ -122,8 +122,8 @@ Example:
 $allConfig = app(ShieldUtilsAction::class)->execute();
 
 // Now:
-$resourceConfig = app(ResolveShieldResourceConfigurationAction::class)->execute();
-$permissionsConfig = app(ResolvePermissionsConfigurationAction::class)->execute();
+$resourceConfig = app(GetShieldResourceConfigurationAction::class)->execute();
+$permissionsConfig = app(GetPermissionsConfigurationAction::class)->execute();
 ```
 
 ### Why No Constructor Parameters?
@@ -156,8 +156,8 @@ use Modules\User\Support\Utils;
 Utils::getResourceSlug();  // ❌
 
 // NEW (same result)
-use Modules\User\Actions\Shield\ResolveShieldResourceConfigurationAction;
-$config = app(ResolveShieldResourceConfigurationAction::class)->execute();
+use Modules\User\Actions\Shield\GetShieldResourceConfigurationAction;
+$config = app(GetShieldResourceConfigurationAction::class)->execute();
 $slug = $config['slug'];  // ✅
 ```
 
@@ -196,12 +196,12 @@ $slug = $config['slug'];  // ✅
 ## Files Involved
 
 ### Created
-- `app/Actions/Shield/ResolveShieldResourceConfigurationAction.php`
-- `app/Actions/Shield/ResolveShieldAuthenticationConfigurationAction.php`
-- `app/Actions/Shield/ResolveSuperAdminConfigurationAction.php`
-- `app/Actions/Shield/ResolveFilamentUserConfigurationAction.php`
-- `app/Actions/Shield/ResolvePermissionsConfigurationAction.php`
-- `app/Actions/Shield/ResolveExclusionsConfigurationAction.php`
+- `app/Actions/Shield/GetShieldResourceConfigurationAction.php`
+- `app/Actions/Shield/GetShieldAuthenticationConfigurationAction.php`
+- `app/Actions/Shield/GetSuperAdminConfigurationAction.php`
+- `app/Actions/Shield/GetFilamentUserConfigurationAction.php`
+- `app/Actions/Shield/GetPermissionsConfigurationAction.php`
+- `app/Actions/Shield/GetExclusionsConfigurationAction.php`
 
 ### Deleted
 - `app/Actions/Shield/ShieldUtilsAction.php`

@@ -44,7 +44,7 @@ Opzione B (raccomandata), in ordine:
 Costo B: 1 file di app, 1 file di test.
 
 Opzione A (solo se serve davvero un aspetto per tenant):
-1. Una Action `Modules\User\Actions\Appearance\SaveAppearanceAction` (QueueableAction, `execute(string $group, array $data)`) che chiama `SaveTenantConfigAction::execute('appearance', [$group => $data])`; lettura con `ResolveTenantConfigValueAction`. Niente Service.
+1. Una Action `Modules\User\Actions\Appearance\SaveAppearanceAction` (QueueableAction, `execute(string $group, array $data)`) che chiama `SaveTenantConfigAction::execute('appearance', [$group => $data])`; lettura con `GetTenantConfigValueAction`. Niente Service.
 2. Riscrivere i form: Favicon (solo `favicon`), CustomCss (solo `custom_css`, area di testo), Alignment (`heading`, `container`) e Background (`background_color`, `background`, `overlay_color`, `overlay_opacity`); togliere i campi duplicati.
 3. Sostituire in ogni pagina il `LogicException` con `getState()` + Action + `Notification` (modello: `Pages\Password`), chiavi in `lang/{it,en,de}`, togliere le stringhe fisse di alignment.blade.php.
 4. Un lettore per ogni gruppo, altrimenti il salvataggio non cambia nulla: favicon in `metatag.favicon` (`SaveTenantConfigAction::execute('metatag', ['favicon' => ...])`, lettore gia' attivo: il gruppo piu' economico); logo in `metatag` duplicherebbe `MetatagPage` (meglio non costruirlo); colori in `PaDesignColors` (modulo Xot, oggi fissi); sfondo/allineamento/CSS in un render hook del login (Xot o tema).

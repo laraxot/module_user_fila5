@@ -1,16 +1,16 @@
 ---
-title: "ResolveExclusionsConfigurationAction — contratto"
+title: "GetExclusionsConfigurationAction — contratto"
 type: contract
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveExclusionsConfigurationAction"
-qmd: "ResolveExclusionsConfigurationAction filament-shield exclude risorse pagine widget esclusioni config"
+action: "Modules\\User\\Actions\\Shield\\GetExclusionsConfigurationAction"
+qmd: "GetExclusionsConfigurationAction filament-shield exclude risorse pagine widget esclusioni config"
 ---
 
-# ResolveExclusionsConfigurationAction
+# GetExclusionsConfigurationAction
 
-Legge da `config/filament-shield.php` la configurazione delle esclusioni (generale, risorse, pagine, widget) e la normalizza. Codice: `app/Actions/Shield/ResolveExclusionsConfigurationAction.php`.
+Legge da `config/filament-shield.php` la configurazione delle esclusioni (generale, risorse, pagine, widget) e la normalizza. Codice: `app/Actions/Shield/GetExclusionsConfigurationAction.php`.
 
 ## Input
 

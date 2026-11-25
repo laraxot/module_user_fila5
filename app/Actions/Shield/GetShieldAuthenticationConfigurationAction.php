@@ -18,7 +18,7 @@ use function Safe\class_uses;
  *
  * @contract docs/contracts/resolve-shield-authentication-configuration-action.md
  */
-class ResolveShieldAuthenticationConfigurationAction
+class GetShieldAuthenticationConfigurationAction
 {
     use QueueableAction;
 

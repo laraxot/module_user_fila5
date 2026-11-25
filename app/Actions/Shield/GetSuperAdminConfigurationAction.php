@@ -17,7 +17,7 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * @contract docs/contracts/resolve-super-admin-configuration-action.md
  */
-class ResolveSuperAdminConfigurationAction
+class GetSuperAdminConfigurationAction
 {
     use QueueableAction;
 

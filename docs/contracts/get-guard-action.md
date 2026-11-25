@@ -37,4 +37,4 @@ Nessuno.
 
 ## Non fa
 
-- Non è usato in produzione nel perimetro cercato. Il guard di `ResolveShieldAuthenticationConfigurationAction` è invece hardcoded a `'web'`.
+- Non è usato in produzione nel perimetro cercato. Il guard di `GetShieldAuthenticationConfigurationAction` è invece hardcoded a `'web'`.

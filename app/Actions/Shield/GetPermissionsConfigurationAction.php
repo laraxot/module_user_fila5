@@ -22,7 +22,7 @@ use function Safe\class_implements;
  *
  * @contract docs/contracts/resolve-permissions-configuration-action.md
  */
-class ResolvePermissionsConfigurationAction
+class GetPermissionsConfigurationAction
 {
     use QueueableAction;
 
