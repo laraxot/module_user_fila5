@@ -195,7 +195,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 - [Analisi Completa](./model_inheritance_analysis.md)
 
 - [Analisi Completa](./model_inheritance_analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)

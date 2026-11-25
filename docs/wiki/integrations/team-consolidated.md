@@ -46,15 +46,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 - [Critical Errors Documentation](../../SaluteOra/docs/critical-errors-resolved.md)
@@ -75,40 +69,23 @@ See canonical documentation: ../../../Themes/docs/shared-components/team-binding
 
 ## team-bindings-fix
 
-<<<<<<< HEAD
 *Consolidated from: `team-bindings-fix.md`*
 
 module: theme
 topic: team-bindings-fix
 canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
-=======
-*Consolidated from: `team-bindings-fix-2.md`*
-
-module: theme
-topic: team-bindings-fix
-canonical: ../../team-bindings-fix-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../team-bindings-fix-2.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -130,15 +107,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Fix Binding Team Models nel Modulo User
@@ -447,11 +418,7 @@ $this->assertTrue($user->belongsToTeam($team));
 
 ## team-contract-usage-reasoning
 
-<<<<<<< HEAD
 *Consolidated from: `team-contract-usage-reasoning.md`*
-=======
-*Consolidated from: `team-contract-usage-reasoning-2.md`*
->>>>>>> laraxot/dev
 
 module: theme
 topic: team-contract-usage-reasoning
@@ -462,15 +429,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
@@ -490,15 +451,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
@@ -523,15 +478,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Fix: team_user Composite Primary Key Implementation
@@ -812,15 +761,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
@@ -845,15 +788,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Team User Permissions Column Fix - Laraxot Philosophy Compliant
@@ -970,11 +907,7 @@ Added to permanent memory:
 
 ## team_bindings_fix
 
-<<<<<<< HEAD
 *Consolidated from: `team_bindings_fix.md`*
-=======
-*Consolidated from: `team-bindings-fix-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Panoramica
@@ -1154,11 +1087,7 @@ $this->assertTrue($user->belongsToTeam($team));
 
 ## team_contract_usage_reasoning
 
-<<<<<<< HEAD
 *Consolidated from: `team_contract_usage_reasoning.md`*
-=======
-*Consolidated from: `team-contract-usage-reasoning-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Overview
@@ -1198,15 +1127,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 

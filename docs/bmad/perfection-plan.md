@@ -259,7 +259,7 @@ All three must pass before declaring perfection complete:
 - `docs/wiki/rules/phpstan-max-rule.md` — PHPStan max level rule
 - `docs/wiki/rules/php-array-one-key-per-line.md` — Array convention
 - `docs/wiki/rules/eloquent-magic-properties-rule.md` — property_exists vs isset
-- `bashscripts/ai/wiki/memories/bmad-artifacts-live-in-module-docs.md` — Artifact SSoT
+- `bashscripts/ai/wiki/memories/bmad-workflow.md#bmad-artifacts-live-in-module-docs` — Artifact SSoT
 - `docs/sprint-status.yaml` — Sprint tracking (must be updated)
 - `module.json` — Module metadata
 
@@ -275,7 +275,7 @@ All three must pass before declaring perfection complete:
 - `docs/wiki/rules/phpstan-max-rule.md`: PHPStan max level rule
 - `docs/wiki/rules/php-array-one-key-per-line.md`: Array convention
 - `docs/wiki/rules/eloquent-magic-properties-rule.md`: property_exists vs isset
-- `bashscripts/ai/wiki/memories/bmad-artifacts-live-in-module-docs.md`: Artifact SSoT
+- `bashscripts/ai/wiki/memories/bmad-workflow.md#bmad-artifacts-live-in-module-docs`: Artifact SSoT
 - `docs/sprint-status.yaml`: Sprint tracking (must be updated)
 - `module.json`: Module metadata
 

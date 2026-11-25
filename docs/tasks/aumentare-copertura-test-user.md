@@ -1,14 +1,8 @@
-<<<<<<< .merge_file_KVtqhm
-<<<<<<< .merge_file_dSemCt
 ---
 title: "Task: Aumentare Copertura Test User"
 type: note
 qmd: "aumentare copertura test user task"
 ---
-=======
->>>>>>> .merge_file_BcP4NL
-=======
->>>>>>> .merge_file_yor4M8
 # Task: Aumentare Copertura Test User
 
 **Modulo**: User  

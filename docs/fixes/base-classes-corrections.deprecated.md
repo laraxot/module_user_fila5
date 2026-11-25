@@ -7,11 +7,7 @@ updated: 2026-07-14
 qmd: "base-classes-corrections-2025-10-15.deprecated deprecated"
 status: deprecated
 related:
-<<<<<<< HEAD
   - "./base-classes-corrections-.md"
-=======
-  - "./base-classes-corrections-4.md"
->>>>>>> laraxot/dev
   - "./base-classes-corrections-1.md"
   - "./base-classes-corrections-2.md"
   - "./base-classes-corrections-3.md"
@@ -21,8 +17,4 @@ related:
   - "./phpstanes.md"
 ---
 
-<<<<<<< HEAD
 > Questo file è stato rinominato in [base-classes-corrections-.deprecated.md](base-classes-corrections-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
-> Questo file è stato rinominato in [base-classes-corrections-2.deprecated.md](base-classes-corrections-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> laraxot/dev

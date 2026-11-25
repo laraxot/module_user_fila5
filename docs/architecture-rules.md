@@ -26,11 +26,7 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 - [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 - [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
-<<<<<<< HEAD
 - [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
-=======
-- [Filament Extension Rules](../../Xot/docs/filament-extension-rules-2.md)
->>>>>>> laraxot/dev
 
 ## Key Principles
 
@@ -80,8 +76,8 @@ User/
 
 ## Related Documentation
 
-- [Module Structure Organization Rule](../../../../docs/wiki/concepts/module-structure-organization-rule.md)
-- [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
+- [Module Structure Organization Rule](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#module-structure-organization-rule)
+- [No lang/lang/ and No _docs/ Rule](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule)
 
 ---
 

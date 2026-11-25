@@ -154,11 +154,7 @@ Result: No changes made to user modules.
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Console Commands Philosophy](console_commands_philosophy.md)
-=======
-- [Console Commands Philosophy](../console_commands/console-commands-philosophy-3.md)
->>>>>>> laraxot/dev
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)

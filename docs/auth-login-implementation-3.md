@@ -24,7 +24,6 @@ related:
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 - [Documentazione centrale](/docs/README.md)
@@ -32,15 +31,6 @@ related:
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Implementazione Auth Pages](/laravel/Modules/User/docs/AUTH_PAGES_IMPLEMENTATION.md)
 - [Volt Folio Auth](/laravel/Modules/User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-=======
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation-3.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/Modules/Lang/docs/translation-keys-rules-2.md)
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation-3.md)
-- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-4.md)
->>>>>>> laraxot/dev
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
@@ -48,17 +38,10 @@ related:
 - [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-3.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< HEAD
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Implementazione Auth Pages](/laravel/Modules/User/docs/auth_pages_implementation.md)
 - [Volt Folio Auth](/laravel/Modules/User/docs/volt_folio_auth_implementation.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
-=======
-- [Regole Traduzioni](/laravel/Modules/Lang/docs/translation-keys-rules-2.md)
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation-3.md)
-- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-4.md)
-- [Componenti Filament](/../../Cms/docs/filament-components-2.md)
->>>>>>> laraxot/dev
 
 ## Analisi e Miglioramenti della Pagina di Login
 

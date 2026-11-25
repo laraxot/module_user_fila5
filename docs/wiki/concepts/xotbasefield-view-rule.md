@@ -11,18 +11,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
 qmd: "xotbasefield view rule calculation"
-=======
-<<<<<<< .merge_file_JkpvbP
-<<<<<<< .merge_file_GyAb93
-qmd: "xotbasefield view rule calculation"
-=======
->>>>>>> .merge_file_eGKS2Q
-=======
-qmd: "xotbasefield view rule calculation"
->>>>>>> .merge_file_v6w7df
->>>>>>> laraxot/dev
 ---
 
 # XotBaseField View Calculation Rule

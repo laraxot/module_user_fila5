@@ -47,5 +47,5 @@ bash ../bashscripts/tools/audit-module-quality-gates.sh User --phpstan-only
 
 ## Collegamenti
 
-- [no-legacy-folders-code.md](../../../../../../docs/wiki/concepts/no-legacy-folders-code.md)
+- [modules-structure-rules.md#no-legacy-folders-code](../../../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code)
 - [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)

@@ -95,11 +95,7 @@ related:
 
 ---
 
-<<<<<<< HEAD
 <!-- Contenuto unito da bugfix-phpmd-cleanup-.md (rimozione date dai nomi file, issue #64) -->
-=======
-<!-- Contenuto unito da bugfix-phpmd-cleanup-2.md (rimozione date dai nomi file, issue #64) -->
->>>>>>> laraxot/dev
 
 <!-- recovery from broken basename `bugfix-phpmd-cleanup-.md.md` after docs-guardian mass rename -->
 

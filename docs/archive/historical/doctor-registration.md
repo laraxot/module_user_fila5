@@ -172,11 +172,7 @@ public static function getFormSchemaWidget(): array
 ## Collegamenti
 - [Documentazione Parental](https://github.com/tightenco/parental)
 - [Documentazione Filament](https://filamentphp.com/docs)
-<<<<<<< HEAD
-- [Best Practices](./best-practices.md)
-=======
 - [Best Practices](../../../../Activity/docs/best-practices-3.md)
->>>>>>> laraxot/dev
 
 ## Note
 - Testare la registrazione in ambiente di sviluppo

@@ -37,7 +37,7 @@ related:
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
-- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-.md.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
+- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-.md.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code)).
 
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
@@ -62,7 +62,7 @@ related:
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Riferimento completo](../../../../bashscripts/ai/wiki/memories/migrations-composer-modules.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `laravel/passport` - OAuth2 API
 - `socialiteproviders/microsoft`, `socialiteproviders/auth0` - OAuth
 - `flowframe/laravel-trend` - Statistiche

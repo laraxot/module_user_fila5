@@ -11,18 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
 qmd: "traits hasteams corretta"
-=======
-<<<<<<< .merge_file_aPD2IM
-<<<<<<< .merge_file_Wt1Zp4
-qmd: "traits hasteams corretta"
-=======
->>>>>>> .merge_file_LDAXoJ
-=======
-qmd: "traits hasteams corretta"
->>>>>>> .merge_file_Fe7KHn
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md

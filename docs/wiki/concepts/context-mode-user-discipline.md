@@ -13,18 +13,7 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-<<<<<<< HEAD
 qmd: "context mode user discipline contextmode"
-=======
-<<<<<<< .merge_file_wqIldK
-<<<<<<< .merge_file_Q7lN2D
-qmd: "context mode user discipline contextmode"
-=======
->>>>>>> .merge_file_R1ImCp
-=======
-qmd: "context mode user discipline contextmode"
->>>>>>> .merge_file_ZYbOxV
->>>>>>> laraxot/dev
 ---
 
 # User Module — Context-Mode Discipline
@@ -68,4 +57,4 @@ laravel/Modules/User/docs/wiki/
 ## Vedi anche
 
 - Lang module: `laravel/Modules/Lang/docs/wiki/concepts/context-mode-lang-discipline.md`
-- Root: `docs/wiki/concepts/context-mode-optimal-configuration.md`
+- Root: `bashscripts/ai/wiki/concepts/context-token-optimization.md#context-mode-optimal-configuration`

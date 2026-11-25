@@ -155,11 +155,7 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 - [La Via del Brand](../Xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../Xot/docs/tao/code_tao.md)
 - [Best Practices Filament](./filament-best-practices.md) 
-<<<<<<< HEAD
 - [Best Practices Filament](./filament_best_practices.md) 
-=======
-- [Best Practices Filament](./filament-best-practices-2.md) 
->>>>>>> laraxot/dev
 
 ## Principi Fondamentali
 
@@ -494,18 +490,9 @@ public function logout()
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Volt](./volt-logout.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt-logout-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
-=======
-- [Documentazione Volt](../volt-logout-3.md)
-- [Struttura Directory](../directory-structure-checklist-3.md)
-- [Gestione Errori](../error-handling-2.md) 
-- [Documentazione Volt](./volt-logout-2.md)
-- [Struttura Directory](../directory-structure-checklist-3.md)
-- [Gestione Errori](../error-handling-2.md) 
->>>>>>> laraxot/dev

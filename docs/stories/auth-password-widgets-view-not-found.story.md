@@ -22,10 +22,10 @@ related:
   - ./10.3.retire-auth-livewire-twins.story.md
   - ../auth-widgets-view-namespaces-widget-autenticazione-namespace.md
   - ../wiki/log.md
-  - ../../../../../bashscripts/ai/wiki/rules/filament-template-as-dress.md
-  - ../../../../../bashscripts/ai/wiki/rules/filament-auth-widgets-rule.md
-  - ../../../../../bashscripts/ai/wiki/memories/feedback_no_protected_view_xot_basewizard.md
-  - ../../../../../bashscripts/ai/wiki/rules/post-edit-quality-gate.md
+  - ../../../../../bashscripts/ai/wiki/rules/filament-general.md
+  - ../../../../../bashscripts/ai/wiki/rules/filament-widgets.md
+  - ../../../../../bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#feedback_no_protected_view_xot_basewizard
+  - ../../../../../bashscripts/ai/wiki/rules/quality-gates.md
   - ../../../../../docs/chat/user-auth-widgets-view-convention.md
 qmd: "auth password widgets view not found"
 ---
@@ -58,14 +58,14 @@ User/app/Filament/Widgets/Auth/ResetPasswordWidget.php:27
 
 | Fonte | Che cosa stabilisce |
 |---|---|
-| `bashscripts/ai/wiki/rules/filament-template-as-dress.md` (trigger map, riga "Filament Widget + template Blade") | Un widget che estende `XotBaseWidget` non dichiara `protected string $view` se segue la convenzione. La vista la risolve `XotBaseWidget::resolveView()` con `GetViewByClassAction`: prima `pub_theme::...`, poi `modulo::...`. Il blade mostra il form con `{{ $this->form }}`. |
-| `bashscripts/ai/wiki/memories/feedback_no_protected_view_xot_basewizard.md` | Un `$view` scritto a mano non e' innocuo: scavalca la risoluzione automatica e puo' bloccare l'override del tema. |
+| `bashscripts/ai/wiki/rules/filament-general.md` (trigger map, riga "Filament Widget + template Blade") | Un widget che estende `XotBaseWidget` non dichiara `protected string $view` se segue la convenzione. La vista la risolve `XotBaseWidget::resolveView()` con `GetViewByClassAction`: prima `pub_theme::...`, poi `modulo::...`. Il blade mostra il form con `{{ $this->form }}`. |
+| `bashscripts/ai/wiki/memories/filament-tables-forms-xotbase.md#feedback_no_protected_view_xot_basewizard` | Un `$view` scritto a mano non e' innocuo: scavalca la risoluzione automatica e puo' bloccare l'override del tema. |
 | Trigger map, riga "XotBaseWidget: no `$view` sul dominio (`GetViewByClassAction`)" | Stessa regola. La pagina di concetto che cita non esiste in questo repository. |
 | `laravel/Modules/User/docs/auth-widgets-view-namespaces-widget-autenticazione-namespace.md` | Le viste dei widget di autenticazione devono poter essere personalizzate dal tema (`pub_theme::`). |
-| `bashscripts/ai/wiki/rules/filament-auth-widgets-rule.md` | I form di autenticazione sono widget Filament del modulo User, non Blade o Volt scritti a mano. |
+| `bashscripts/ai/wiki/rules/filament-widgets.md` | I form di autenticazione sono widget Filament del modulo User, non Blade o Volt scritti a mano. |
 | Issue [module_user_fila5#18](https://github.com/laraxot/module_user_fila5/issues/18), chiusa | Stesso errore su `LoginWidget`. Avverte: se il file blade non esiste, il valore e' sbagliato a prescindere da PHPStan. |
 | Issue [module_user_fila5#25](https://github.com/laraxot/module_user_fila5/issues/25) e discussion [#26](https://github.com/laraxot/module_user_fila5/discussions/26), aperte | Migrazione dei 6 widget auth a `formClass()` e `schemaMethod()`. Non trattano le viste. |
-| `bashscripts/ai/wiki/rules/post-edit-quality-gate.md` e istruzioni di PHPStan | Vietati `@phpstan-ignore`, `@var` inline e cast messi solo per zittire l'errore. |
+| `bashscripts/ai/wiki/rules/quality-gates.md` e istruzioni di PHPStan | Vietati `@phpstan-ignore`, `@var` inline e cast messi solo per zittire l'errore. |
 
 Prima di iniziare: nessun lock sui file, nessun claim in `docs/chat/`, repository `module_user_fila5` e `theme_zero_fila5` allineati ai remoti.
 

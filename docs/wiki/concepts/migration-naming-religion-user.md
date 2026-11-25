@@ -13,8 +13,8 @@ discussions:
 related:
   - ./teams-owner-id-in-create-migration.md
   - ./model-migration-seeder-rule.md
-  - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
-  - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
+  - ../../../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion
+  - ../../../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion
   - ../../../../../laravel/Themes/docs/shared-components/xotbase-migration-religion.md
 ---
 

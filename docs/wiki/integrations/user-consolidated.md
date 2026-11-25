@@ -56,15 +56,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 - [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
@@ -106,15 +100,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
@@ -712,40 +700,23 @@ public function run(): void
 
 ## user-factory-complete-ecosystem-integration
 
-<<<<<<< HEAD
 *Consolidated from: `user-factory-complete-ecosystem-integration.md`*
 
 module: theme
 topic: user-factory-complete-ecosystem-integration
 canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
-=======
-*Consolidated from: `user-factory-complete-ecosystem-integration-2.md`*
-
-module: theme
-topic: user-factory-complete-ecosystem-integration
-canonical: ../../user-factory-complete-ecosystem-integration-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../user-factory-complete-ecosystem-integration-2.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -767,15 +738,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION
@@ -1607,11 +1572,7 @@ class MultiModuleSeeder extends Seeder {
 
 ## user-factory-integration
 
-<<<<<<< HEAD
 *Consolidated from: `user-factory-integration.md`*
-=======
-*Consolidated from: `user-factory-integration-3.md`*
->>>>>>> laraxot/dev
 
 title: "UserFactory Integration - Modulo User e <nome progetto>"
 type: concept
@@ -1627,15 +1588,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # UserFactory Integration - Modulo User e <nome progetto>
@@ -2373,15 +2328,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invitations
@@ -2402,15 +2351,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
@@ -2430,15 +2373,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-separation.md
@@ -2458,15 +2395,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
@@ -2491,15 +2422,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
@@ -2722,15 +2647,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # User vs Profile: Guida Completa alla Progettazione
@@ -3085,15 +3004,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # User Research: User Module
@@ -3124,15 +3037,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 # Configurazione Stati Utente (state)
 
@@ -3200,15 +3107,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # User vs Profile Models: Guida Completa
@@ -4025,11 +3926,7 @@ public function run(): void
 - [Model States](../../SaluteOra/docs/models/states.md)
 
 ### User Module
-<<<<<<< HEAD
 - [User Factory Integration](./user_factory_integration.md)
-=======
-- [User Factory Integration](../../user-factory-integration-3.md)
->>>>>>> laraxot/dev
 - [Traits Complete Guide](./traits_complete_guide.md)
 - [BaseUser Architecture](./parental_inheritance.md)
 
@@ -4041,11 +3938,7 @@ public function run(): void
 
 ## user_factory_complete_ecosystem_integration
 
-<<<<<<< HEAD
 *Consolidated from: `user_factory_complete_ecosystem_integration.md`*
-=======
-*Consolidated from: `user-factory-complete-ecosystem-integration-2.md`*
->>>>>>> laraxot/dev
 
 
 ## 🎯 Integration Achievement
@@ -4463,11 +4356,7 @@ class MultiModuleSeeder extends Seeder {
 
 ## user_factory_integration
 
-<<<<<<< HEAD
 *Consolidated from: `user_factory_integration.md`*
-=======
-*Consolidated from: `user-factory-integration-3.md`*
->>>>>>> laraxot/dev
 
 
 ## Overview
@@ -4816,11 +4705,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-<<<<<<< HEAD
 - [Traits Complete Guide](../../traits_complete_guide.md)
-=======
-- [Traits Complete Guide](../../traits-complete-guide-3.md)
->>>>>>> laraxot/dev
 - [Authentication Framework](../../authentication.md)
 
 ---
@@ -4834,11 +4719,7 @@ public function test_bulk_sti_creation()
 
 ## user_invitation
 
-<<<<<<< HEAD
 *Consolidated from: `user_invitation.md`*
-=======
-*Consolidated from: `user-invitation-2.md`*
->>>>>>> laraxot/dev
 
 
 
@@ -4846,40 +4727,23 @@ public function test_bulk_sti_creation()
 
 ## userfactory-advanced-implementation-complete
 
-<<<<<<< HEAD
 *Consolidated from: `userfactory-advanced-implementation-complete.md`*
 
 module: theme
 topic: userfactory-advanced-implementation-complete
 canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
-=======
-*Consolidated from: `userfactory-advanced-implementation-complete-3.md`*
-
-module: theme
-topic: userfactory-advanced-implementation-complete
-canonical: ../../userfactory-advanced-implementation-complete-3.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../userfactory-advanced-implementation-complete-3.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -4901,15 +4765,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # UserFactory Advanced Implementation - COMPLETE ✅
@@ -5514,11 +5372,7 @@ $gdprTests = [
 
 ## userfactory_advanced_implementation_complete
 
-<<<<<<< HEAD
 *Consolidated from: `userfactory_advanced_implementation_complete.md`*
-=======
-*Consolidated from: `userfactory-advanced-implementation-complete-3.md`*
->>>>>>> laraxot/dev
 
 
 ## 🎉 Mission Accomplished
@@ -5809,11 +5663,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [SaluteOra Factory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md)
-<<<<<<< HEAD
 - [User Module Integration](../laravel/Modules/User/docs/user_factory_advanced_integration.md)
-=======
-- [User Module Integration](../laravel/Modules/User/docs/user-factory-advanced-integration-4.md)
->>>>>>> laraxot/dev
 - [Advanced Analysis](../laravel/Modules/SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
 
 ### Technical References

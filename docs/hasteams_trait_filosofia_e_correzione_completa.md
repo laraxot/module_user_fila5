@@ -291,7 +291,7 @@ Il trait `HasTeams` ora è:
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
 - [/.cursor/rules/hasteams-trait-laraxot.mdc](../../../.cursor/rules/hasteams-trait-laraxot.mdc)
-- [/.windsurf/rules/hasteams-trait-laraxot.mdc](../../../.windsurf/rules/hasteams-trait-laraxot.mdc)
+- [/.windsurf/rules/xotbase-inheritance.md](../../../.windsurf/rules/xotbase-inheritance.md)
 - [/.cursor/rules/user-module-best-practices.mdc](../../../.cursor/rules/user-module-best-practices.mdc)
 
 ### **🔧 Script di Manutenzione**

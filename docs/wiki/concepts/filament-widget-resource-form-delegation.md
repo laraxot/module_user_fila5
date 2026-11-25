@@ -14,20 +14,9 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./folio-pages-owner-pattern.md"
-  - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
-  - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
-<<<<<<< HEAD
+  - "../../../../../../bashscripts/ai/wiki/concepts/filament-widgets.md#filament-v5-form-in-blade"
+  - "../../../../../../bashscripts/ai/wiki/memories/quality-gates-tooling.md#view-cache-gate-mandatory"
 qmd: "filament widget resource form delegation delega"
-=======
-<<<<<<< .merge_file_dqtqHG
-<<<<<<< .merge_file_plarFe
-qmd: "filament widget resource form delegation delega"
-=======
->>>>>>> .merge_file_j4VZfM
-=======
-qmd: "filament widget resource form delegation delega"
->>>>>>> .merge_file_ozjPLk
->>>>>>> laraxot/dev
 ---
 
 # Widget Filament → schema in `*Form` (SSoT)
@@ -36,7 +25,7 @@ Allineato a Filament 5:
 - [Schema](https://filamentphp.com/docs/5.x/components/schema) → `HasSchemas`, render `{{ $this->{method} }}`
 - [Form](https://filamentphp.com/docs/5.x/components/form) → widget `XotBaseSchemaWidget`, submit `$this->form->getState()`, Blade `<form wire:submit>` + `{{ $this->form }}`
 - Chiusura: `php artisan view:cache`
-- Canon: [schema](../../../../../../docs/wiki/concepts/filament-v5-schema-in-blade.md) · [form](../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md)
+- Canon: [schema](../../../../../../bashscripts/ai/wiki/concepts/filament-widgets.md#filament-v5-schema-in-blade) · [form](../../../../../../bashscripts/ai/wiki/concepts/filament-widgets.md#filament-v5-form-in-blade)
 
 ## Regola
 

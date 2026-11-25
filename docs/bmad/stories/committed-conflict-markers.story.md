@@ -44,6 +44,6 @@ Controllare sintassi PHP su tutto il modulo.
 
 ## Riferimenti
 
-- Regola: `bashscripts/ai/wiki/rules/committed-conflict-markers.md`
+- Regola: `bashscripts/ai/wiki/rules/git-conflicts-merge.md`
 - Migrazione: `laravel/Modules/User/database/migrations/2023_01_01_093340_create_permission_table.php`
 - Traduzioni: `laravel/Modules/User/lang/it/profile.php`

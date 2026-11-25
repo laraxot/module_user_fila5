@@ -84,11 +84,7 @@ return [
 
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
-<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
-=======
-- [Root Translation Guidelines](../../../../Lang/docs/translation-standards-3.md)
->>>>>>> laraxot/dev
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

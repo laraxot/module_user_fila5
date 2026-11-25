@@ -20,11 +20,7 @@ related:
 
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
-<<<<<<< HEAD
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
-=======
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel-localization-usage-2.md)
->>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

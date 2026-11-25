@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_JmG1v3
-<<<<<<< .merge_file_H0R7c8
-=======
->>>>>>> .merge_file_AB3glF
->>>>>>> laraxot/dev
 ---
 title: "Implementazione del Logout con Volt"
 type: note
 qmd: "volt logout implementazione"
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_JmG1v3
-=======
->>>>>>> .merge_file_kI17NF
-=======
->>>>>>> .merge_file_AB3glF
->>>>>>> laraxot/dev
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -236,13 +221,8 @@ public function test_logout_clears_session()
 ## Collegamenti
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
-<<<<<<< HEAD
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
 - [Routing Best Practices](./routing_best_practices.md) 
-=======
-- [Best Practices Filament](../../Xot/docs/consolidated/filament-best-practices-2.md)
-- [Routing Best Practices](./routing-best-practices-2.md) 
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-logout

@@ -21,25 +21,13 @@ return [
             'description' => '',
         ],
         'login_at' => [
+            'label' => 'Ora accesso',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PYk99O
-            'label' => 'Ora accesso',
-        ],
-        'ip_address' => [
-=======
->>>>>>> laraxot/dev
-            'label' => 'login_at',
         ],
         'ip_address' => [
             'label' => 'Indirizzo IP',
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_ucAOoc
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,14 +64,7 @@ return [
             'description' => '',
         ],
         'user' => [
-<<<<<<< HEAD
             'label' => 'Utente',
-=======
-<<<<<<< .merge_file_PYk99O
-=======
-            'label' => 'Utente',
->>>>>>> .merge_file_ucAOoc
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -92,9 +73,6 @@ return [
     'actions' => [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_PYk99O
             'label' => 'Riordina',
         ],
         'openColumnManager' => [
@@ -112,49 +90,26 @@ return [
         'applyFilters' => [
             'icon' => 'applyFilters',
             'label' => 'Applica filtri',
-=======
->>>>>>> laraxot/dev
-            'label' => 'reorderRecords',
-        ],
-        'openColumnManager' => [
-            'icon' => 'openColumnManager',
-            'label' => 'openColumnManager',
-        ],
-        'applyTableColumnManager' => [
-            'icon' => 'applyTableColumnManager',
-            'label' => 'applyTableColumnManager',
-        ],
-        'resetFilters' => [
-            'icon' => 'resetFilters',
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'icon' => 'applyFilters',
-            'label' => 'applyFilters',
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_ucAOoc
->>>>>>> laraxot/dev
         ],
         'openFilters' => [
             'icon' => 'openFilters',
-            'label' => 'openFilters',
+            'label' => 'Apri filtri',
         ],
         'resetColumnManager' => [
             'icon' => 'resetColumnManager',
-            'label' => 'resetColumnManager',
+            'label' => 'Reimposta colonne',
         ],
         'delete' => [
             'icon' => 'delete',
-            'label' => 'delete',
+            'label' => 'Elimina',
         ],
         'layout' => [
             'icon' => 'layout',
-            'label' => 'layout',
+            'label' => 'Layout',
         ],
         'create' => [
             'icon' => 'create',
-            'label' => 'create',
+            'label' => 'Crea',
         ],
     ],
     'navigation' => [

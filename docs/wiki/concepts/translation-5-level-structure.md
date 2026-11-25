@@ -257,7 +257,7 @@ return [
 
 `Modules/User/lang/it/auth.php` and `en/auth.php` implement the 5th level as
 `key/text/description/context/placeholder` records (per
-[`bashscripts/ai/wiki/rules/translation-5-elements.md`](../../../../../../bashscripts/ai/wiki/rules/translation-5-elements.md),
+[`bashscripts/ai/wiki/rules/translations-files-keys.md`](../../../../../../bashscripts/ai/wiki/rules/translations-files-keys.md),
 label vs text split), which differs from the `label/placeholder/help/button`
 shape shown as canonical in this doc. **The actually-deployed lang files use
 the `text`/`context`/`description` shape** — this doc's examples above are

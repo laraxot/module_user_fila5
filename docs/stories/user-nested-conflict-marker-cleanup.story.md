@@ -19,10 +19,6 @@ related:
 github:
   repository: null
   issues: []
-  - Modules/User/docs/stories/user-gap-analysis-2026.story.md
-github:
-  repository: null
-  issues: []
 qmd: "user nested conflict marker cleanup story"
 ---
 
@@ -48,15 +44,7 @@ in app, test e docs`, 2026-09-21) aveva gia' ripulito gran parte dell'albero ma
 `grep -rlE '^(<{7}|={7}|>{7})' . | grep -vE '/(vendor|node_modules|graphify-out)/'`.
 
 ## Inventario marker (23 file, tutti confermati reali — nessun falso positivo
-<<<<<<< HEAD
 doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-.md`,
-=======
-<<<<<<< .merge_file_Ht3Pg6
-doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-5.md`,
-=======
-doc-che-parla-di-conflitti; anche `docs/git-conflicts-resolution-.md`,
->>>>>>> .merge_file_uxLdwc
->>>>>>> laraxot/dev
 che tratta l'argomento, ha marker reali fuori da blocchi di esempio)
 
 Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`):
@@ -66,22 +54,14 @@ Contati per categoria (memoria `feedback-conflict-count-blocks-before-resolving`
   `docs/quality-status.md`, `docs/phpstan-fixes-gennaio-2025-complete.md`,
   `docs/baseuser-refactoring-completed-2025-10-15.md`, `docs/phpstan-fixes-2025-10-01.md`,
   `docs/dry-kiss-analysis-2025-10-15.md`, `docs/phpstan-dry-kiss-improvements-2025-10-17.md`,
-<<<<<<< HEAD
-  `docs/git-conflicts-resolution-2025-01-27.md`.
-=======
   `docs/git-conflicts-resolution-5.md`.
->>>>>>> laraxot/dev
   Risoluzione: eliminazione delle 4 righe marker (nessuna decisione di contenuto, i due lati
   erano gia' vuoti).
 - **14 file — riga orfana singola `>>>>>>> 87273113 (.)`** (nessun `<<<<<<<`/`=======`
   accoppiato: firma nota, vedi memoria `feedback-orphan-merge-markers-hide-from-grep`):
   `resources/views/vite.config.js`, `resources/views/README.md`,
   `resources/views/docs/folio-pages.md`, `resources/views/docs/architecture-rules.md`,
-<<<<<<< HEAD
-  `resources/views/docs/folio_pages.md`, `resources/views/docs/html2pdf/{index,styling,
-=======
   `resources/views/docs/folio-pages-2.md`, `resources/views/docs/html2pdf/{index,styling,
->>>>>>> laraxot/dev
   laravel,advanced,usage,security}.md`, `resources/views/pages/about.blade.php.no`,
   `resources/views/pages/pages/index.blade.php.no`,
   `app/Filament/Resources/UserResource/RelationManagers/ModulesRelationManager.wip`.

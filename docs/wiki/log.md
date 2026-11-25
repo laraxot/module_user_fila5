@@ -9,26 +9,7 @@ qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
 related:
-<<<<<<< HEAD
   - "./agents.md"
-=======
-<<<<<<< .merge_file_faCy52
-<<<<<<< HEAD
-  - "./agents-2.md"
-=======
-<<<<<<< HEAD
-  - "./agents.md"
-<<<<<<< .merge_file_2RBtzJ
-=======
-=======
-  - "./agents-2.md"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VNy3bD
-=======
-  - "./agents.md"
->>>>>>> .merge_file_fwPJ4J
->>>>>>> laraxot/dev
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
@@ -48,7 +29,7 @@ related:
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#hackernoon-ai-coding-tips-fixcity-map), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 # User Wiki Log

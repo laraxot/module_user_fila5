@@ -11,7 +11,7 @@ issues:
 related:
   - ./profile-migration-uuid-contract.md
   - ./migration-naming-religion-user.md
-  - ../../../../Xot/docs/wiki/concepts/basemodel-connection-religion.md
+  - ../../../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#basemodel-connection-religion
 ---
 
 # Profiles — errore 1364 `id` senza default

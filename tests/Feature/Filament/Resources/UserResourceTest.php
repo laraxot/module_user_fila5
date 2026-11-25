@@ -86,15 +86,7 @@ function userResourceFormFindByName(array $components, string $name): Field|Entr
         }
 
         $found = userResourceFormFindByName(userResourceFormChildren($component), $name);
-<<<<<<< HEAD
-        if (null !== $found) {
-=======
-<<<<<<< .merge_file_ZseMpJ
         if ($found !== null) {
-=======
-        if (null !== $found) {
->>>>>>> .merge_file_QdZsK8
->>>>>>> laraxot/dev
             return $found;
         }
     }
@@ -140,9 +132,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has correct form schema', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ZseMpJ
         $form = userResourceFormSchema();
 
         Assert::assertCount(1, $form);
@@ -172,8 +161,6 @@ describe('User Resource', function (): void {
             TextEntry::class,
             userResourceFormFindByName(userResourceFormChildren($recordInfo), 'created_at'),
         );
-=======
->>>>>>> laraxot/dev
         /** @var TestCase $this */
         $form = userResourceFormSchema();
 
@@ -197,10 +184,6 @@ describe('User Resource', function (): void {
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_QdZsK8
->>>>>>> laraxot/dev
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -212,9 +195,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ZseMpJ
         $root = userResourceFormSchema()[0];
         Assert::assertInstanceOf(Grid::class, $root);
         $columns = userResourceFormChildren($root);
@@ -258,19 +238,6 @@ describe('User Resource', function (): void {
         Assert::assertInstanceOf(TextInput::class, $onEdit);
         Assert::assertTrue($onCreate->isRequired());
         Assert::assertFalse($onEdit->isRequired());
-    });
-
-    test('user resource password field has correct type', function (): void {
-        $passwordField = userResourceFormFindByName(userResourceFormSchema(), 'password');
-=======
->>>>>>> laraxot/dev
-        $form = userResourceFormSchema();
-
-        $section01 = $form['section01'];
-        $section02 = $form['section02'];
-
-        Assert::assertInstanceOf(Section::class, $section01);
-        Assert::assertInstanceOf(Section::class, $section02);
     });
 
     test('user resource name field is required', function (): void {
@@ -325,10 +292,6 @@ describe('User Resource', function (): void {
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_QdZsK8
->>>>>>> laraxot/dev
 
         Assert::assertNotNull($passwordField);
         Assert::assertInstanceOf(TextInput::class, $passwordField);
@@ -336,9 +299,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field has unique validation', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_ZseMpJ
         $emailField = userResourceFormFieldOnPage('email', new CreateUser);
         Assert::assertInstanceOf(TextInput::class, $emailField);
 
@@ -359,8 +319,6 @@ describe('User Resource', function (): void {
 
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
         Assert::assertSame($createdAt->diffForHumans(), $createdAtField->getState());
-=======
->>>>>>> laraxot/dev
         /** @var TestCase $this */
         $form = userResourceFormSchema();
         $section01 = $form['section01'];
@@ -388,10 +346,6 @@ describe('User Resource', function (): void {
         }
 
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_QdZsK8
->>>>>>> laraxot/dev
     });
 
     test('user resource can be instantiated', function (): void {

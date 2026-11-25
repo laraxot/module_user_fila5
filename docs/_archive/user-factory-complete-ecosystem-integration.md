@@ -8,16 +8,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../actions-path-convention-2.md"
-qmd: "user factory complete ecosystem integration"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md

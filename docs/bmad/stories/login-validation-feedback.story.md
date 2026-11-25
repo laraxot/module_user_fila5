@@ -37,7 +37,7 @@ le credenziali sono errate, senza rivelare se un account esiste.
 - `LoginWidget::login()` registra invece `email`, quindi il campo non riceve l'errore.
 - `user::auth.messages.failed` manca in italiano e restituisce un array in inglese.
 - `user::login.actions.login.error` è già un messaggio generico scalare in entrambe le lingue.
-- L'audit second brain `login-page-ux-audit.md` riguarda FixCity/Sixteen e non prova lo stato PTVX.
+- L'audit second brain `frontend-design-comuni-themes.md#login-page-ux-audit` riguarda FixCity/Sixteen e non prova lo stato PTVX.
 - Il test isola autenticazione e schema; usa il vero catalogo traduzioni e l'error bag Livewire.
 
 ## Verifica

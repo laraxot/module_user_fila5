@@ -11,18 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
 qmd: "todo"
-=======
-<<<<<<< .merge_file_UD7a9e
-<<<<<<< .merge_file_tzkYnZ
-qmd: "todo"
-=======
->>>>>>> .merge_file_5fBb4j
-=======
-qmd: "todo"
->>>>>>> .merge_file_CVpDgL
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/todo.md

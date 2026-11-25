@@ -4,18 +4,7 @@ module: User
 type: quality-gate
 status: complete
 created: 2026-08-02
-<<<<<<< HEAD
 qmd: "phpstan l10 level compliance user"
-=======
-<<<<<<< .merge_file_eWsakD
-<<<<<<< .merge_file_xuiRhi
-qmd: "phpstan l10 level compliance user"
-=======
->>>>>>> .merge_file_Ui5g4P
-=======
-qmd: "phpstan l10 level compliance user"
->>>>>>> .merge_file_k2O8EG
->>>>>>> laraxot/dev
 ---
 
 # PHPStan Level 10 Compliance — User Module

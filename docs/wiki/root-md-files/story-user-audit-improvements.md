@@ -1,18 +1,7 @@
 ---
 title: story-user-audit-improvements
 module: User
-<<<<<<< HEAD
 qmd: "story user audit improvements storyuserauditimprovements"
-=======
-<<<<<<< .merge_file_I9h6aK
-<<<<<<< .merge_file_oKIxU7
-qmd: "story user audit improvements storyuserauditimprovements"
-=======
->>>>>>> .merge_file_bLXfbn
-=======
-qmd: "story user audit improvements storyuserauditimprovements"
->>>>>>> .merge_file_4Txnje
->>>>>>> laraxot/dev
 ---
 
 # BMAD Story: User Module Audit Improvements
@@ -232,11 +221,7 @@ This story addresses the critical and high-severity findings via a structured, p
 
 ## Related Documentation
 
-<<<<<<< HEAD
-- `/laravel/Modules/User/ANALYST_REPORT.md` — Detailed audit findings
-=======
 - `/laravel/Modules/User/docs/analyst-report.md` — Detailed audit findings
->>>>>>> laraxot/dev
 - `/laravel/Modules/User/docs/code-quality-analysis-2.md` — Code quality baseline
 - `/laravel/Modules/User/docs/dry-kiss-improvements.md` — DRY pattern reference
 - `/laravel/Modules/User/docs/phpstan-dry-kiss-improvements.md` — Type compliance

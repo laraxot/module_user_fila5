@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_WShtGX
-<<<<<<< .merge_file_hl3Uw6
-=======
->>>>>>> .merge_file_WTF3RS
->>>>>>> laraxot/dev
 ---
 title: "User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION"
 type: note
 qmd: "user factory complete ecosystem integration final"
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_WShtGX
-=======
->>>>>>> .merge_file_VthWaB
-=======
->>>>>>> .merge_file_WTF3RS
->>>>>>> laraxot/dev
 # User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION
 
 ## 🎯 Integration Achievement

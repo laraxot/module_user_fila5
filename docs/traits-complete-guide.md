@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_5eQhgE
-<<<<<<< .merge_file_FIFf8D
-=======
->>>>>>> .merge_file_Ch7qjq
->>>>>>> laraxot/dev
 ---
 title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
 type: guide
 qmd: "traits complete guide guida completa trait"
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_5eQhgE
-=======
->>>>>>> .merge_file_slWs6K
-=======
->>>>>>> .merge_file_Ch7qjq
->>>>>>> laraxot/dev
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO

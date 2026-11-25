@@ -59,7 +59,7 @@ tutti e 281 i file recuperabili.
 **Stato finale (convergenza con lavoro parallelo su questo stesso modulo)**: nel
 frattempo un altro agente ha applicato la convenzione canonica del progetto —
 niente cartelle `archive.bak/`/`Legacy`/`Old` sotto `lang/` (anti-pattern, vedi
-`docs/wiki/concepts/no-legacy-folders-code.md`) — spostando i 281 backup **in-place**
+`bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code`) — spostando i 281 backup **in-place**
 come `lang/{locale}/nome.php.bak` (stesso path del file attivo, solo suffisso `.bak`).
 Questa è la struttura finale attualmente sul disco; vedi dettagli e comando di verifica
 in

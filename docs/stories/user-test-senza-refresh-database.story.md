@@ -21,7 +21,7 @@ Fase BMAD: Dev (story pronta, esecuzione dei test bloccata fino alla guardia e a
 
 Come maintainer del modulo User voglio che nessun test del modulo possa lanciare `migrate:fresh`, cosi' che un agente o un CI che esegue Pest non possa mai cancellare lo schema di un database.
 
-Il 2026-10-20 un agente ha eseguito Pest su file User con `RefreshDatabase`. La regola di progetto lo vieta (`bashscripts/ai/wiki/rules/data-sacred-no-destructive-db.md`, sezione "Cosa fare invece / Test"): l'isolamento si ottiene con `DatabaseTransactions` nel `TestCase` del modulo.
+Il 2026-10-20 un agente ha eseguito Pest su file User con `RefreshDatabase`. La regola di progetto lo vieta (`bashscripts/ai/wiki/rules/database.md`, sezione "Cosa fare invece / Test"): l'isolamento si ottiene con `DatabaseTransactions` nel `TestCase` del modulo.
 
 ## Scopo
 

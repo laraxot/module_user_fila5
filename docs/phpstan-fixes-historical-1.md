@@ -7,8 +7,4 @@ updated: 2026-11-17
 qmd: "phpstan fixes historical alias one superseded user module"
 ---
 
-<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-2025.md
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-4.md
->>>>>>> laraxot/dev

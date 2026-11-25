@@ -45,15 +45,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Choice of currentTeam() Method in HasTeams Trait
@@ -89,11 +83,7 @@ This decision ensures the codebase remains maintainable, scalable, and consisten
 
 ## hasteams-currentteam-method-choice
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams-currentteam-method-choice.md`*
-=======
-*Consolidated from: `hasteams-currentteam-method-choice-4.md`*
->>>>>>> laraxot/dev
 
 title: "Choice of currentTeam() Method in HasTeams Trait"
 type: concept
@@ -109,15 +99,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Choice of currentTeam() Method in HasTeams Trait
@@ -183,11 +167,7 @@ This decision ensures the codebase remains maintainable, scalable, and consisten
 
 ## hasteams-trait-analysis
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams-trait-analysis.md`*
-=======
-*Consolidated from: `hasteams-trait-analysis-2.md`*
->>>>>>> laraxot/dev
 
 title: "HasTeams Trait Analysis"
 type: concept
@@ -203,15 +183,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # HasTeams Trait Analysis
@@ -272,15 +246,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
@@ -575,7 +543,7 @@ Il trait `HasTeams` ora è:
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
 - [/.cursor/rules/hasteams-trait-laraxot.mdc](../../../.cursor/rules/hasteams-trait-laraxot.mdc)
-- [/.windsurf/rules/hasteams-trait-laraxot.mdc](../../../.windsurf/rules/hasteams-trait-laraxot.mdc)
+- [/.windsurf/rules/xotbase-inheritance.md](../../../.windsurf/rules/xotbase-inheritance.md)
 - [/.cursor/rules/user-module-best-practices.mdc](../../../.cursor/rules/user-module-best-practices.mdc)
 
 ### **🔧 Script di Manutenzione**
@@ -595,11 +563,7 @@ Il trait `HasTeams` ora è:
 
 ## hasteams-trait-filosofia-e-correzione-completa
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams-trait-filosofia-e-correzione-completa.md`*
-=======
-*Consolidated from: `hasteams-trait-filosofia-e-correzione-completa-4.md`*
->>>>>>> laraxot/dev
 
 title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
 type: concept
@@ -615,15 +579,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
@@ -914,7 +872,7 @@ Il trait `HasTeams` ora è:
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
 - [/.cursor/rules/hasteams-trait-laraxot.mdc](../../../.cursor/rules/hasteams-trait-laraxot.mdc)
-- [/.windsurf/rules/hasteams-trait-laraxot.mdc](../../../.windsurf/rules/hasteams-trait-laraxot.mdc)
+- [/.windsurf/rules/xotbase-inheritance.md](../../../.windsurf/rules/xotbase-inheritance.md)
 - [/.cursor/rules/user-module-best-practices.mdc](../../../.cursor/rules/user-module-best-practices.mdc)
 
 ### **🔧 Script di Manutenzione**
@@ -950,15 +908,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # HasTeams Trait Analysis
@@ -1019,15 +971,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Analisi metodi duplicati in HasTeams (trait)
@@ -1127,11 +1073,7 @@ Per la motivazione dettagliata, vedi la sezione dedicata in [Team.md](./Models/T
 
 ## hasteams_currentteam_method_choice
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams_currentteam_method_choice.md`*
-=======
-*Consolidated from: `hasteams-currentteam-method-choice-4.md`*
->>>>>>> laraxot/dev
 
 
 ## Analysis and Decision
@@ -1166,11 +1108,7 @@ This decision ensures the codebase remains maintainable, scalable, and consisten
 
 ## hasteams_trait_analysis
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams_trait_analysis.md`*
-=======
-*Consolidated from: `hasteams-trait-analysis-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Overview
@@ -1213,11 +1151,7 @@ After reviewing the duplicate methods in the `HasTeams` trait, the recommendatio
 
 ## hasteams_trait_filosofia_e_correzione_completa
 
-<<<<<<< HEAD
 *Consolidated from: `hasteams_trait_filosofia_e_correzione_completa.md`*
-=======
-*Consolidated from: `hasteams-trait-filosofia-e-correzione-completa-4.md`*
->>>>>>> laraxot/dev
 
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -1496,11 +1430,7 @@ Il trait `HasTeams` ora è:
 ### **📚 Documentazione Root**
 - [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
-<<<<<<< HEAD
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
-=======
-- [docs/phpstan_fixes.md](../../../docs/phpstan-fixes-5.md) - Guide PHPStan
->>>>>>> laraxot/dev
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
@@ -1510,7 +1440,7 @@ Il trait `HasTeams` ora è:
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**
 - [/.cursor/rules/hasteams-trait-laraxot.mdc](../../../.cursor/rules/hasteams-trait-laraxot.mdc)
-- [/.windsurf/rules/hasteams-trait-laraxot.mdc](../../../.windsurf/rules/hasteams-trait-laraxot.mdc)
+- [/.windsurf/rules/xotbase-inheritance.md](../../../.windsurf/rules/xotbase-inheritance.md)
 - [/.cursor/rules/user-module-best-practices.mdc](../../../.cursor/rules/user-module-best-practices.mdc)
 
 ### **🔧 Script di Manutenzione**

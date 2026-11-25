@@ -8,11 +8,7 @@ qmd: "phpstan-fixes correzioni phpstan nel modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./base-classes-corrections-.md"
-=======
-  - "./base-classes-corrections-4.md"
->>>>>>> laraxot/dev
   - "./base-classes-corrections-1.md"
   - "./base-classes-corrections-2.md"
   - "./base-classes-corrections-3.md"

@@ -38,15 +38,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
@@ -66,15 +60,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
@@ -94,15 +82,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
@@ -122,15 +104,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
@@ -155,15 +131,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Ottimizzazioni Super DRY + KISS - Modulo User
@@ -348,11 +318,7 @@ app/Filament/
 **Regola:** Tutti i file in lowercase con hyphens
 **Esempi:**
 - ✅ `user-authentication.md`
-<<<<<<< HEAD
 - ✅ `filament-resources.md`
-=======
-- ✅ `filament-resources-3.md`
->>>>>>> laraxot/dev
 - ✅ `model-relationships.md`
 - ❌ `User_Authentication.md`
 - ❌ `FilamentResources.md`
@@ -523,11 +489,7 @@ class User extends Model
 ## 🔗 Collegamenti
 
 - [Documentazione Core](../../core)
-<<<<<<< HEAD
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
-=======
-- [Best Practices Filament](../../../../Xot/docs/consolidated/filament-best-practices-2.md)
->>>>>>> laraxot/dev
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
 
@@ -552,15 +514,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
@@ -580,15 +536,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
@@ -613,15 +563,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Ottimizzazioni DRY + KISS - Modulo User
@@ -656,15 +600,9 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-implementation-best-practices-2.md (10KB)
 ├── logout-implementation-error-3.md (3.3KB)
 ├── logout-implementation-with-laravel-localization-3.md (6.2KB)
-<<<<<<< HEAD
 ├── logout-page-fix.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
 └── logout-security.md (4.1KB)
-=======
-├── logout-page-fix-2.md (1.3KB)
-├── logout-page-implementation-3.md (3.2KB)
-└── logout-security-2.md (4.1KB)
->>>>>>> laraxot/dev
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -676,11 +614,7 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ❌ DUPLICAZIONI CRITICHE:
 ├── userfactory-advanced-implementation-complete-2.md (11KB)
 ├── user-factory-advanced-integration-3.md (9.1KB)
-<<<<<<< HEAD
 ├── user-factory-complete-ecosystem-integration.md (14KB)
-=======
-├── user-factory-complete-ecosystem-integration-2.md (14KB)
->>>>>>> laraxot/dev
 └── user-factory-integration-2.md (9.8KB)
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
@@ -692,11 +626,7 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ```
 ❌ DUPLICAZIONI CRITICHE:
 ├── phpstan-fixes-historical-alias.md (4.4KB)
-<<<<<<< HEAD
 ├── phpstan_generic_types.md (3.1KB)
-=======
-├── phpstan-generic-types-2.md (3.1KB)
->>>>>>> laraxot/dev
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
@@ -712,19 +642,11 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ❌ DUPLICAZIONI CRITICHE:
 ├── volt-blade-implementation-3.md (9.2KB)
 ├── volt-blade-implementation-error-3.md (3.8KB)
-<<<<<<< HEAD
 ├── volt-errors.md (5.6KB)
 ├── volt-folio-auth-implementation-3.md (17KB)
 ├── volt-folio-error.md (1.6KB)
 ├── volt-folio-logout-2.md (5.0KB)
 ├── volt-folio-logout-debug.md (3.0KB)
-=======
-├── volt-errors-2.md (5.6KB)
-├── volt-folio-auth-implementation-3.md (17KB)
-├── volt-folio-error-2.md (1.6KB)
-├── volt-folio-logout-2.md (5.0KB)
-├── volt-folio-logout-debug-2.md (3.0KB)
->>>>>>> laraxot/dev
 ├── volt-folio-logout-error-3.md (3.7KB)
 └── volt-logout-2.md (5.2KB)
 
@@ -758,11 +680,7 @@ docs/
 │   │   ├── overview.md                     # Panoramica completa
 │   │   ├── implementation.md               # Implementazione
 │   │   ├── troubleshooting.md              # Risoluzione problemi
-<<<<<<< HEAD
 │   │   └── best-practices.md               # Best practices
-=======
-│   │   └── best-practices-3.md               # Best practices
->>>>>>> laraxot/dev
 │   ├── logout/                             # Logout workflow
 │   │   ├── overview.md                     # Panoramica completa (CONSOLIDATO)
 │   │   ├── implementation.md               # Implementazione (CONSOLIDATO)
@@ -799,27 +717,16 @@ docs/
 │   │   ├── overview.md                     # Panoramica (CONSOLIDATO)
 │   │   ├── auth-implementation.md          # Auth (CONSOLIDATO)
 │   │   ├── errors.md                       # Errori (CONSOLIDATO)
-<<<<<<< HEAD
 │   │   └── best-practices.md               # Best practices
 │   └── testing/                             # Testing
 │       ├── overview.md                     # Panoramica
 │       └── best-practices.md               # Best practices
-=======
-│   │   └── best-practices-3.md               # Best practices
-│   └── testing/                             # Testing
-│       ├── overview.md                     # Panoramica
-│       └── best-practices-3.md               # Best practices
->>>>>>> laraxot/dev
 ├── filament/                                # Componenti Filament
 │   ├── resources.md                         # Risorse (CONSOLIDATO)
 │   ├── widgets.md                           # Widget (CONSOLIDATO)
 │   ├── relation-managers.md                 # Relation Managers
 │   ├── components.md                        # Componenti (CONSOLIDATO)
-<<<<<<< HEAD
 │   └── best-practices.md                    # Best practices (CONSOLIDATO)
-=======
-│   └── best-practices-3.md                    # Best practices (CONSOLIDATO)
->>>>>>> laraxot/dev
 ├── integrations/                             # Integrazioni
 │   ├── fullcalendar/                        # FullCalendar
 │   │   ├── overview.md                     # Panoramica (CONSOLIDATO)
@@ -831,22 +738,14 @@ docs/
 │   │   └── integration.md                   # Integrazione
 │   └── translations/                        # Traduzioni
 │       ├── overview.md                      # Panoramica (CONSOLIDATO)
-<<<<<<< HEAD
 │       ├── best-practices.md                # Best practices (CONSOLIDATO)
-=======
-│       ├── best-practices-3.md                # Best practices (CONSOLIDATO)
->>>>>>> laraxot/dev
 │       └── rules.md                         # Regole (CONSOLIDATO)
 └── architecture/                             # Architettura
     ├── overview.md                          # Panoramica modulo
     ├── structure.md                         # Struttura (CONSOLIDATO)
     ├── conventions.md                       # Convenzioni (CONSOLIDATO)
     ├── routing.md                           # Routing (CONSOLIDATO)
-<<<<<<< HEAD
     └── best-practices.md                    # Best practices (CONSOLIDATO)
-=======
-    └── best-practices-3.md                    # Best practices (CONSOLIDATO)
->>>>>>> laraxot/dev
 ```
 
 #### B. **Eliminazione Duplicati Specifica**

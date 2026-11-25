@@ -161,7 +161,7 @@ Per ogni nuovo widget di autenticazione:
 
 ## Aggiornamento del 2026-10-13: la vista non si dichiara
 
-Gli esempi qui sopra dichiarano `$view` a mano. La regola attuale e' `bashscripts/ai/wiki/rules/filament-template-as-dress.md`: un widget che estende `XotBaseWidget` non dichiara `$view`. La vista viene calcolata dal nome della classe, prima nel tema e poi nel modulo:
+Gli esempi qui sopra dichiarano `$view` a mano. La regola attuale e' `bashscripts/ai/wiki/rules/filament-general.md`: un widget che estende `XotBaseWidget` non dichiara `$view`. La vista viene calcolata dal nome della classe, prima nel tema e poi nel modulo:
 
 | Widget | Tema | Modulo |
 |---|---|---|

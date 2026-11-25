@@ -54,11 +54,7 @@ contratto nello stesso commit.
 - [BuildActiveUserProviderAction](build-active-user-provider-action.md) — provider utenti che esclude gli account cancellati (`deleted_at`).
 - [SetDefaultRolesBySocialiteUserAction](set-default-roles-by-socialite-user-action.md) — ruoli di default all'utente che entra con Socialite.
 
-<<<<<<< HEAD
-La cartella contiene un contratto per quasi ogni Action di `app/Actions`: qui sono elencati quelli di autenticazione e identità, i più sensibili; le Action senza contratto sono in [INDEX](INDEX.md).
-=======
 La cartella contiene un contratto per quasi ogni Action di `app/Actions`: qui sono elencati quelli di autenticazione e identità, i più sensibili; le Action senza contratto sono in [INDEX](index.md).
->>>>>>> laraxot/dev
 
 ## Interfacce (`app/Contracts`)
 
@@ -67,17 +63,5 @@ La cartella contiene un contratto per quasi ogni Action di `app/Actions`: qui so
 
 ## Indice e template
 
-<<<<<<< HEAD
 - [INDEX](INDEX.md) — tabella operativa operazione, contratto, classe, invarianti; è un elenco precedente a questo README e alcuni suoi nomi di file e classi non coincidono con i contratti qui sopra.
 - [Template di contratto](_template.md) — scheletro con le sei sezioni e la tabella degli invarianti, da copiare per una nuova Action.
-=======
-<<<<<<< .merge_file_AqARh9
-- [INDEX](index.md) — registro operativo: contratti di autenticazione con ID degli invarianti, group Pest presenti, comando per eseguirli, e le classi di `app/Actions` ancora senza contratto.
-- [Template di contratto](template.md) — scheletro con le sei sezioni e la tabella degli invarianti, da copiare per una nuova Action.
-
-I file `*.md.bak` sono copie di lavoro, non contratti.
-=======
-- [INDEX](INDEX.md) — tabella operativa operazione, contratto, classe, invarianti; è un elenco precedente a questo README e alcuni suoi nomi di file e classi non coincidono con i contratti qui sopra.
-- [Template di contratto](_template.md) — scheletro con le sei sezioni e la tabella degli invarianti, da copiare per una nuova Action.
->>>>>>> .merge_file_MrgTaL
->>>>>>> laraxot/dev

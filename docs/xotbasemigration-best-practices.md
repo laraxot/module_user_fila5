@@ -11,18 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
 qmd: "xotbasemigration best practices practice"
-=======
-<<<<<<< .merge_file_UVl4ui
-<<<<<<< .merge_file_WhL2tp
-qmd: "xotbasemigration best practices practice"
-=======
->>>>>>> .merge_file_ubSEIq
-=======
-qmd: "xotbasemigration best practices practice"
->>>>>>> .merge_file_4wzZNm
->>>>>>> laraxot/dev
 ---
 # Best Practice: XotBaseMigration
 

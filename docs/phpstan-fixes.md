@@ -27,13 +27,11 @@ related:
 **Errori iniziali**: ~100+ (bloccavano analisi)
 **Errori attuali**: 95
 **Errori critici risolti**: 7 (syntax errors)
-=======
 # Correzioni PHPStan — Modulo User
 
 ## Scopo
 
 Il modulo User gestisce autenticazione, ruoli, team, tenant e OAuth. Gli errori PHPStan qui non sono "tipi da zittire": indicano contratti Filament/Livewire/lang corrotti o test che non tipizzano la pagina sotto test.
-=======
 
 ---
 
@@ -642,11 +640,7 @@ public string $currentState = 'default';
 ## Collegamenti
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-<<<<<<< HEAD
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
-=======
-- [PHPStan Usage](../../Geo/docs/raw/history/phpstan-usage-2.md)
->>>>>>> laraxot/dev
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
 # PHPStan Fixes - Modulo User
@@ -981,10 +975,6 @@ it('test name', function (): void {
 - Story operativa: [phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md)
 - Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` (neon immutabile)
 - Prompt: [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_AW3Jvz
->>>>>>> .merge_file_rTtu9D
 
 ## Fix sessione ripresa (2026-11-17)
 
@@ -1004,8 +994,6 @@ Esistono decine di `phpstan*.md` storici in questa cartella (UPPERCASE, date nei
 - Mai `@phpstan-ignore` / baseline / edit `phpstan.neon`
 - `mixed` solo ultima spiaggia
 - Pest solo con DB `*_test`
-<<<<<<< .merge_file_C95mek
-=======
 
 
 ---
@@ -1528,9 +1516,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-4.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_rTtu9D
-=======
->>>>>>> .merge_file_9NkxG2
->>>>>>> laraxot/dev

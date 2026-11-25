@@ -8,11 +8,7 @@ qmd: "parse-error-orphan-methods-2025-01-27.deprecated deprecated"
 status: deprecated
 related:
   - "./make-filament-user-crash-loop.md"
-<<<<<<< HEAD
   - "./parse-error-orphan-methods-.md"
-=======
-  - "./parse-error-orphan-methods-4.md"
->>>>>>> laraxot/dev
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-2.md"
@@ -21,8 +17,4 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
-<<<<<<< HEAD
 > Questo file è stato rinominato in [parse-error-orphan-methods-.deprecated.md](parse-error-orphan-methods-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
-> Questo file è stato rinominato in [parse-error-orphan-methods-2.deprecated.md](parse-error-orphan-methods-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> laraxot/dev

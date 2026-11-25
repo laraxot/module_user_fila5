@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
@@ -12,7 +10,6 @@ related:
   - concepts/related.md
 qmd: "agents page title"
 ---
->>>>>>> laraxot/dev
 # User {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** User
@@ -99,11 +96,7 @@ Steps:
 1. Read source from raw/
 2. Extract key concepts, entities, data
 3. Create/update wiki pages
-<<<<<<< HEAD
 4. Update index.md and log.md
-=======
-4. Update index-3.md and log.md
->>>>>>> laraxot/dev
 5. Commit changes
 ```
 
@@ -155,9 +148,5 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-<<<<<<< HEAD
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
-=======
-- [Project Wiki Agent Instructions](../../../../Lang/docs/wiki/agents-3.md)
->>>>>>> laraxot/dev
 - [Module Documentation](../README.md)

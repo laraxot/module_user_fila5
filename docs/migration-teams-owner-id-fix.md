@@ -6,8 +6,8 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "teams owner_id migration violation add_owner_id_to_teams_table fold create_teams_table"
 related:
-  - "../../Xot/docs/wiki/concepts/xotbase-migration-religion.md"
-  - "../../../../docs/wiki/concepts/xotbase-migration-religion.md"
+  - "../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion"
+  - "../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion"
 ---
 
 # Teams — `owner_id`: fold-in fix
@@ -15,7 +15,7 @@ related:
 ## Cosa c'era di sbagliato
 
 `Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php`
-violava la [religione XotBaseMigration](../../Xot/docs/wiki/concepts/xotbase-migration-religion.md):
+violava la [religione XotBaseMigration](../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion):
 una migrazione separata per aggiungere una colonna a una tabella che ha già il suo
 `create_teams_table.php`. Inoltre il codice stesso conteneva un bug funzionale:
 `foreignIdFor(Team::class, 'owner_id')` — riferiva `Team::class` invece di `User::class`
@@ -47,4 +47,4 @@ duplicate sulla migrazione — vedi la religione XotBaseMigration linkata sopra.
 
 ## Riferimento
 
-Skill: `xotbase-migration-religion`. Canon: `Modules/Xot/docs/wiki/concepts/xotbase-migration-religion.md`.
+Skill: `xotbase-migration-religion`. Canon: `bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion`.

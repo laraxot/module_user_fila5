@@ -1,14 +1,8 @@
-<<<<<<< .merge_file_PhnGLI
-<<<<<<< .merge_file_DZ1zDE
 ---
 title: "Task: User Filament v5 Alignment (Clusters)"
 type: note
 qmd: "user filament v5 task alignment clusters"
 ---
-=======
->>>>>>> .merge_file_YP509M
-=======
->>>>>>> .merge_file_IOR7v9
 # Task: User Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

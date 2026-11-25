@@ -47,15 +47,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
@@ -487,15 +481,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
@@ -927,15 +915,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
@@ -1367,15 +1349,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
@@ -1807,15 +1783,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
@@ -2247,15 +2217,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 - [User Module Widget Structure](../Modules/User/docs/widgets-structure-user.md)
@@ -2283,11 +2247,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/widget-trans
 
 ## widget-translation-rules
 
-<<<<<<< HEAD
 *Consolidated from: `widget-translation-rules.md`*
-=======
-*Consolidated from: `widget-translation-rules-2.md`*
->>>>>>> laraxot/dev
 
 module: theme
 topic: widget-translation-rules
@@ -2298,15 +2258,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
@@ -2331,15 +2285,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Widget Translation Rules - <nome progetto> Project
@@ -3112,11 +3060,7 @@ return [
 
 ## widget_translation_rules
 
-<<<<<<< HEAD
 *Consolidated from: `widget_translation_rules.md`*
-=======
-*Consolidated from: `widget-translation-rules-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Core Principles
@@ -3302,11 +3246,7 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-<<<<<<< HEAD
 - [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
-=======
-- [User Module Widget Structure](../Modules/User/docs/widgets-structure-2.md)
->>>>>>> laraxot/dev
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
@@ -3325,50 +3265,29 @@ All widget development should follow these rules to maintain consistency and qua
 
 ## widgets-structure
 
-<<<<<<< HEAD
 *Consolidated from: `widgets-structure.md`*
 
 module: theme
 topic: widgets-structure
 canonical: ../../../Themes/docs/shared-components/widgets-structure.md
-=======
-*Consolidated from: `widgets-structure-2.md`*
-
-module: theme
-topic: widgets-structure
-canonical: ../../widgets-structure-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../widgets-structure-2.md
->>>>>>> laraxot/dev
 
 ---
 
 ## widgets_structure
 
-<<<<<<< HEAD
 *Consolidated from: `widgets_structure.md`*
-=======
-*Consolidated from: `widgets-structure-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Overview

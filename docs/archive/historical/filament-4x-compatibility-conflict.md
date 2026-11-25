@@ -151,11 +151,7 @@ $this->info("Current user type: " . $typeLabelString);
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
-=======
-- [Rapporto Aggiornamento Filament 4.x](../../../docs/filament-4x-upgrade-report-2.md)
->>>>>>> laraxot/dev
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Autenticazione](https://filamentphp.com/docs/panels/authentication)
 

@@ -1,18 +1,8 @@
-<<<<<<< .merge_file_nluyRt
-<<<<<<< .merge_file_2pz136
-=======
->>>>>>> .merge_file_g7cCqG
 ---
 title: "Task: User Docs Cleanup"
 type: note
 qmd: "user cleanup task"
 ---
-<<<<<<< .merge_file_nluyRt
-=======
->>>>>>> .merge_file_lxRTSt
-=======
-
->>>>>>> .merge_file_g7cCqG
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo

@@ -45,11 +45,7 @@ Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano ap
 
 ---
 
-<<<<<<< HEAD
 <!-- Contenuto unito da module-bmad-audit-.story.md (rimozione date dai nomi file, issue #64) -->
-=======
-<!-- Contenuto unito da module-bmad-audit-2.story.md (rimozione date dai nomi file, issue #64) -->
->>>>>>> laraxot/dev
 
 # Story — User: baseline BMAD
 

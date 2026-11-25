@@ -256,5 +256,5 @@ find Modules/User/app -type f ! -name '*.php' \
 - [parental-sti-filament-schemas](../../../../docs/wiki/rules/parental-sti-filament-schemas.md) — perché `BaseUser`/`BaseProfile` con `HasChildren` obbligano ogni figlio a una propria classe Form
 - [circular-dependency-prevention](../../../../docs/wiki/rules/circular-dependency-prevention.md) — il ciclo User → Ptv → User
 - [actions-over-services](../../../../docs/wiki/rules/actions-over-services.md) — la policy che User rispetta
-- [basemodel-connection-mandatory](../../../../docs/wiki/memories/basemodel-connection-mandatory.md) — la connection `user` non è opzionale
+- [basemodel-connection-mandatory](../../../../bashscripts/ai/wiki/memories/architecture-models-actions.md#basemodel-connection-mandatory) — la connection `user` non è opzionale
 - [Xot — scopo](../../Xot/docs/scopo.md) · [Tenant — scopo](../../Tenant/docs/scopo.md) · [Sigma — scopo](../../Sigma/docs/scopo.md)

@@ -11,18 +11,7 @@ related:
   - "./module-commit-push-after-change.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-<<<<<<< HEAD
 qmd: "navigation properties"
-=======
-<<<<<<< .merge_file_INIfOS
-<<<<<<< .merge_file_RIM8Y1
-qmd: "navigation properties"
-=======
->>>>>>> .merge_file_c4It66
-=======
-qmd: "navigation properties"
->>>>>>> .merge_file_uwZPxl
->>>>>>> laraxot/dev
 ---
 
 ## Rule Overview

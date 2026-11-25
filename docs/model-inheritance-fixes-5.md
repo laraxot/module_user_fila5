@@ -19,7 +19,7 @@ related:
 ---
 
 - [Analisi Completa](./model-inheritance-analysis.md)
-- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+- [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)

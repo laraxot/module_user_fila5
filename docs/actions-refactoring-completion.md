@@ -214,7 +214,7 @@ $slug = $config['slug'];  // ✅
 
 ## References
 
-- **Pattern**: `docs/wiki/patterns/services-support-to-actions-migration-pattern.md`
+- **Pattern**: `bashscripts/ai/wiki/patterns/patterns.md#services-support-to-actions-migration-pattern`
 - **Coordination Hub**: `docs/chat/services-support-to-actions-refactoring-coordination.md`
 - **QueueableAction**: https://github.com/spatie/laravel-queueable-action
 

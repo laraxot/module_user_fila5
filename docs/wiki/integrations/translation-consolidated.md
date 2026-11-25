@@ -41,11 +41,7 @@ Consolidated from **22** individual files.
 
 ## translation-best-practices
 
-<<<<<<< HEAD
 *Consolidated from: `translation-best-practices.md`*
-=======
-*Consolidated from: `translation-best-practices-2.md`*
->>>>>>> laraxot/dev
 
 title: "Best Practices per le Traduzioni"
 type: concept
@@ -61,15 +57,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Best Practices per le Traduzioni
@@ -223,11 +213,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 
 ## translation-city-field-refactor-.deprecated
 
-<<<<<<< HEAD
 *Consolidated from: `translation-city-field-refactor-.deprecated.md`*
-=======
-*Consolidated from: `translation-city-field-refactor-2.deprecated.md`*
->>>>>>> laraxot/dev
 
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -243,15 +229,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Refactor Completo Campi "Città" - Modulo User
@@ -415,13 +395,8 @@ Tutti i file corretti mantengono:
 
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
 - [SaluteOra Translation Audit](../../SaluteOra/docs/translation_audit_city_fields.md)
-<<<<<<< HEAD
 - [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
 - [User Module Widget Translation Rules](widget-translation-rules.md)
-=======
-- [Translation Syntax Fixes](../../../docs/translation-syntax-fixes-2.md)
-- [User Module Widget Translation Rules](widget-translation-rules-2.md)
->>>>>>> laraxot/dev
 
 ## Prevenzione Futura
 
@@ -462,15 +437,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Refactor Completo Campi "Città" - Modulo User
@@ -634,13 +603,8 @@ Tutti i file corretti mantengono:
 
 - [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
 - [<nome progetto> Translation Audit](../../<nome progetto>/docs/translation_audit_city_fields.md)
-<<<<<<< HEAD
 - [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
 - [User Module Widget Translation Rules](widget-translation-rules.md)
-=======
-- [Translation Syntax Fixes](../../../../docs/translation-syntax-fixes-2.md)
-- [User Module Widget Translation Rules](widget-translation-rules-2.md)
->>>>>>> laraxot/dev
 
 ## Prevenzione Futura
 
@@ -680,15 +644,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 > Questo file è stato rinominato in [translation-city-field-refactor-3.md](translation-city-field-refactor-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
@@ -708,15 +666,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
@@ -740,21 +692,12 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 > Questo file è stato rinominato in [translation-city-field-refactor-.deprecated.md](translation-city-field-refactor-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-> Questo file è stato rinominato in [translation-city-field-refactor-2.deprecated.md](translation-city-field-refactor-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> laraxot/dev
 
 ---
 
@@ -771,15 +714,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
@@ -804,15 +741,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Translation Conflict Resolution Prototype
@@ -862,15 +793,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Understanding Translation Structure in Laraxot Framework
@@ -909,15 +834,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
@@ -926,11 +845,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 
 ## translation-key-prototype
 
-<<<<<<< HEAD
 *Consolidated from: `translation-key-prototype.md`*
-=======
-*Consolidated from: `translation-key-prototype-2.md`*
->>>>>>> laraxot/dev
 
 title: "Translation Key Prototype"
 type: concept
@@ -946,15 +861,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 Translation key prototype
@@ -980,11 +889,7 @@ Follow-ups:
 
 ## translation-keys-rules
 
-<<<<<<< HEAD
 *Consolidated from: `translation-keys-rules.md`*
-=======
-*Consolidated from: `translation-keys-rules-3.md`*
->>>>>>> laraxot/dev
 
 title: "Regole per le Chiavi di Traduzione"
 type: rule
@@ -1000,15 +905,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Regole per le Chiavi di Traduzione
@@ -1125,21 +1024,12 @@ return [
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 - [Best Practices per le Traduzioni](translation-best-practices.md)
 - [Struttura del Modulo](module-structure-user.md)
 - [Convenzioni di Codice](code-conventions.md)
-=======
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](code-conventions-3.md)
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](module-structure-user.md)
-- [Convenzioni di Codice](code-conventions-3.md)
->>>>>>> laraxot/dev
 ---
 
 ## translation-keys
@@ -1148,32 +1038,19 @@ return [
 
 module: theme
 topic: translation-keys
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
-=======
-canonical: ../../../../Lang/docs/translation-keys-rules-3.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../../../Lang/docs/translation-keys-rules-3.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -1195,15 +1072,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Translation Maintenance Log - User Module
@@ -1376,15 +1247,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
@@ -1393,50 +1258,29 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 
 ## translation-syntax-fixes-
 
-<<<<<<< HEAD
 *Consolidated from: `translation-syntax-fixes-.md`*
 
 module: theme
 topic: translation-syntax-fixes-
 canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
-=======
-*Consolidated from: `translation-syntax-fixes-2.md`*
-
-module: theme
-topic: translation-syntax-fixes-
-canonical: ../../../../Lang/docs/translation-syntax-fixes-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../../../Lang/docs/translation-syntax-fixes-2.md
->>>>>>> laraxot/dev
 
 ---
 
 ## translation-syntax-fixes
 
-<<<<<<< HEAD
 *Consolidated from: `translation-syntax-fixes.md`*
-=======
-*Consolidated from: `translation-syntax-fixes-2.md`*
->>>>>>> laraxot/dev
 
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: concept
@@ -1452,15 +1296,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
@@ -1612,15 +1450,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
@@ -1755,11 +1587,7 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 
 ## translation_best_practices
 
-<<<<<<< HEAD
 *Consolidated from: `translation_best_practices.md`*
-=======
-*Consolidated from: `translation-best-practices-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Principi Generali
@@ -1910,11 +1738,7 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 
 ## translation_keys_rules
 
-<<<<<<< HEAD
 *Consolidated from: `translation_keys_rules.md`*
-=======
-*Consolidated from: `translation-keys-rules-3.md`*
->>>>>>> laraxot/dev
 
 
 ## Principi Fondamentali
@@ -2029,15 +1853,9 @@ return [
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
-=======
-- [Best Practices per le Traduzioni](translation-best-practices-2.md)
-- [Struttura del Modulo](MODULE_STRUCTURE.md)
-- [Convenzioni di Codice](code-conventions-3.md)
->>>>>>> laraxot/dev
 
 ---
 
@@ -2059,15 +1877,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni File di Traduzione User Module
@@ -2184,15 +1996,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translations.md

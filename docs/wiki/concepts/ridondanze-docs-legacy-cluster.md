@@ -13,18 +13,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
 qmd: "ridondanze legacy cluster duplicata user"
-=======
-<<<<<<< .merge_file_uvNbL6
-<<<<<<< .merge_file_MuT5yA
-qmd: "ridondanze legacy cluster duplicata user"
-=======
->>>>>>> .merge_file_HQ2UFR
-=======
-qmd: "ridondanze legacy cluster duplicata user"
->>>>>>> .merge_file_9KYIHX
->>>>>>> laraxot/dev
 ---
 
 # Ridondanza documentazione `Modules/User/docs`
@@ -51,27 +40,7 @@ Stesso flusso documentato con varianti `logout-*`, `volt-folio-logout`, `volt_fo
 Esempio `testing.md` (contenuti diversi, nome ambiguo):
 
 - `docs/bugs/testing.md` — bug `make:filament-user`, **non** guida test
-<<<<<<< HEAD
 - `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
-=======
-<<<<<<< .merge_file_uvNbL6
-<<<<<<< .merge_file_MuT5yA
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
-=======
-<<<<<<< HEAD
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
-=======
-<<<<<<< HEAD
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing-2.md`
-=======
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_HQ2UFR
-=======
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
->>>>>>> .merge_file_9KYIHX
->>>>>>> laraxot/dev
 
 Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `testing.md` in `bugs/*`.
 

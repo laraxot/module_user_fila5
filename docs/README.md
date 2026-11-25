@@ -10,11 +10,7 @@ updated: 2026-11-19
 
 ## Indice della documentazione
 
-<<<<<<< HEAD
 Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `INDEX.md`,
-=======
-Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `index-3.md`,
->>>>>>> laraxot/dev
 `00-index.md` generati automaticamente sono stati rimossi: elencavano file duplicati o non piu' esistenti).
 
 | Area | Dove |
@@ -134,7 +130,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Standard Rules & Workflow
 
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[Context Engineering](../../../../bashscripts/ai/wiki/concepts/context-token-optimization.md#context-engineering)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ## Documentation
@@ -1238,13 +1234,8 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-<<<<<<< HEAD
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/SECURITY.md)
-=======
-- [CLAUDE.md](../../Geo/docs/root-md-files/claude.md) - Project architecture
-- [Security Guidelines](../../Geo/docs/root-md-files/security-2.md)
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)
@@ -2338,13 +2329,8 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
-<<<<<<< HEAD
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/SECURITY.md)
-=======
-- [CLAUDE.md](../../Geo/docs/root-md-files/claude.md) - Project architecture
-- [Security Guidelines](../../Geo/docs/root-md-files/security-2.md)
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

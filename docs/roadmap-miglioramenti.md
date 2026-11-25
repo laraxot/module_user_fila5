@@ -44,11 +44,7 @@ non solo il risultato.
 `actions-path-convention.md` in QUATTRO varianti
 
 `actions-path-convention.md`, `actions-path-convention-convenzione-percorsi.md`,
-<<<<<<< HEAD
 `actions-path-convention.md`, `actions_path_convention.md` — stesso
-=======
-`actions-path-convention.md`, `actions-path-convention-2.md` — stesso
->>>>>>> laraxot/dev
 contenuto concettuale (probabilmente), quattro file, tre convenzioni di
 naming diverse (trattino, trattino basso, suffisso numerico) per lo STESSO
 argomento. Se un agente futuro cerca "action path convention" con `qmd`,

@@ -29,4 +29,4 @@ Per il modulo User valgono queste regole:
 
 La vecchia cartella duplicata individuata era `User/docs/_docs`.
 
-Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
+Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule).

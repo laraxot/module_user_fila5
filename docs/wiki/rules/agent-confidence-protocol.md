@@ -14,18 +14,7 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-<<<<<<< HEAD
 qmd: "agent confidence protocol user"
-=======
-<<<<<<< .merge_file_BbxdcZ
-<<<<<<< .merge_file_g6iWuI
-qmd: "agent confidence protocol user"
-=======
->>>>>>> .merge_file_qcVZrm
-=======
-qmd: "agent confidence protocol user"
->>>>>>> .merge_file_Zy9pm8
->>>>>>> laraxot/dev
 ---
 
 # Agent Confidence Protocol — User Module

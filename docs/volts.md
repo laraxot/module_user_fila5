@@ -11,18 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
 qmd: "volts"
-=======
-<<<<<<< .merge_file_hA1F6Y
-<<<<<<< .merge_file_hSXxRr
-qmd: "volts"
-=======
->>>>>>> .merge_file_u6vgCu
-=======
-qmd: "volts"
->>>>>>> .merge_file_zLlAa8
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md

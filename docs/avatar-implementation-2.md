@@ -22,17 +22,10 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< HEAD
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header_language_selector_with_flags.md)
-=======
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags-3.md)
-- [README modulo User](./readme.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags-3.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags-3.md)
->>>>>>> laraxot/dev
 - [README modulo User](./README.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

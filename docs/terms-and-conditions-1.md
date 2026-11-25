@@ -11,18 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
 qmd: "terms and conditions 1"
-=======
-<<<<<<< .merge_file_KKkNwZ
-<<<<<<< .merge_file_r3TYDr
-qmd: "terms and conditions 1"
-=======
->>>>>>> .merge_file_OuOOGs
-=======
-qmd: "terms and conditions 1"
->>>>>>> .merge_file_nDDaog
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/terms_and_conditions.txt

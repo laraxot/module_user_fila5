@@ -30,17 +30,10 @@ related:
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
-=======
-- [Implementazione Auth Pages](auth-pages-implementation-3.md)
-- [Implementazione Logout](logout-blade-implementation-3.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-2.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-4.md)
->>>>>>> laraxot/dev
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato
@@ -189,17 +182,10 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
-=======
-- [Implementazione Auth Pages](auth-pages-implementation-3.md)
-- [Implementazione Logout](logout-blade-implementation-3.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-2.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-4.md)
->>>>>>> laraxot/dev
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato

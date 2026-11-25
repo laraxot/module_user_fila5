@@ -205,6 +205,6 @@ foreach ($types as $key => $type) {
 - [ChangeTypeCommand.php](../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
 - [README.md](README.md)
 - [.cursor/rules/console_commands_philosophy.mdc](../../../.cursor/rules/console_commands_philosophy.mdc)
-- [.windsurf/rules/console_commands_philosophy.mdc](../../../.windsurf/rules/console_commands_philosophy.mdc)
+- [.windsurf/rules/service-providers.md](../../../.windsurf/rules/service-providers.md)
 
 *Ultimo aggiornamento: giugno 2025 - Standard estratto dal capolavoro ChangeTypeCommand.php*

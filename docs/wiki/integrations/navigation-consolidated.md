@@ -25,40 +25,23 @@ Consolidated from **6** individual files.
 
 ## navigation-structure
 
-<<<<<<< HEAD
 *Consolidated from: `navigation-structure.md`*
 
 module: theme
 topic: navigation-structure
 canonical: ../../../Themes/docs/shared-components/navigation-structure.md
-=======
-*Consolidated from: `navigation-structure-3.md`*
-
-module: theme
-topic: navigation-structure
-canonical: ../../navigation-structure-3.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../navigation-structure-3.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -80,15 +63,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Navigation Translations Completion Roadmap - User Module
@@ -258,11 +235,7 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
-=======
-- [Translation Standards](../../../../Lang/docs/translation-standards-3.md)
->>>>>>> laraxot/dev
 - [Navigation Translations Fixes](../../../../Lang/docs/navigation-translations-fixes.md)
 
 ---
@@ -291,15 +264,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni Traduzioni Navigation - Gennaio 2026
@@ -488,17 +455,10 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
-<<<<<<< HEAD
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
-=======
-- [Standard Traduzioni](../../../../Lang/docs/translation-standards-3.md)
-- [Documentazione Modulo User](./readme.md)
-- [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../../../Lang/docs/translation-standards-3.md)
->>>>>>> laraxot/dev
 - [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche
@@ -531,15 +491,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni Traduzioni Navigation - Gennaio 2026
@@ -731,11 +685,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-<<<<<<< HEAD
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
-=======
-- [Standard Traduzioni](../../../../Lang/docs/translation-standards-3.md)
->>>>>>> laraxot/dev
 - [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche
@@ -768,15 +718,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Correzioni Traduzioni Navigation - Modulo User
@@ -875,11 +819,7 @@ related:
 
 ## navigation_structure
 
-<<<<<<< HEAD
 *Consolidated from: `navigation_structure.md`*
-=======
-*Consolidated from: `navigation-structure-3.md`*
->>>>>>> laraxot/dev
 
 
 ## Overview
@@ -1021,15 +961,9 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
-=======
-- [Header Components](../../header-components-2.md)
-- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-- [Session Management](../../session-management-3.md) 
->>>>>>> laraxot/dev
 
 ---
 

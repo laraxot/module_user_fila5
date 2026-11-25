@@ -57,11 +57,7 @@ class UserResource extends Resource
 namespace Modules\User\Filament\Pages;
 class Dashboard extends Page
 ## Collegamenti
-<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md)
-=======
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament-2.md)
->>>>>>> laraxot/dev
 - [Regole Generali Xot](../../xot/project_docs/README.md)
 - [Best Practices Filament](../../cms/project_docs/best-practices/filament.md)
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)

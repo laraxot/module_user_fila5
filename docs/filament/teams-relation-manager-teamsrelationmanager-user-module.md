@@ -56,7 +56,7 @@ TextColumn::make('name')->label('Nome');
 ## Collegamenti
 - [../teams.php](../../lang/it/teams.php)
 - [../../../../.cursor/rules/xotbaserelationmanager.mdc](../../../../.cursor/rules/xotbaserelationmanager.mdc)
-- [../../../../.windsurf/rules/xotbaserelationmanager.mdc](../../../../.windsurf/rules/xotbaserelationmanager.mdc)
+- [../../../../.windsurf/rules/xotbase-inheritance.md](../../../../.windsurf/rules/xotbase-inheritance.md)
 
 ## Regole Fondamentali per Laraxot PTVX
 

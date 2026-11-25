@@ -305,8 +305,8 @@ Before committing migration changes:
 
 ## Related Documentation
 
-- **Pattern Reference**: `docs/wiki/patterns/migration-naming-and-parity-convention.md`
-- **XotBaseMigration Mechanics**: `docs/wiki/patterns/migration-xot-base-pattern.md`
+- **Pattern Reference**: `bashscripts/ai/wiki/patterns/patterns.md#migration-naming-and-parity-convention`
+- **XotBaseMigration Mechanics**: `bashscripts/ai/wiki/patterns/patterns.md#migration-xot-base-pattern`
 - **Module Independence**: `docs/wiki/patterns/module-independence.md`
 - **RBAC & Permissions**: `Modules/User/docs/RBAC.md` (see Spatie Laravel Permission)
 

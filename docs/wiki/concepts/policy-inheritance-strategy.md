@@ -107,4 +107,4 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 
 - `Modules/Xot/docs/wiki/concepts/xotbasepolicy-architecture.md`
 - `Modules/User/docs/wiki/concepts/userpolicy-domain-specific.md`
-- Root wiki: `docs/wiki/concepts/laraxot-policy-inheritance.md`
+- Root wiki: `bashscripts/ai/wiki/concepts/architecture-philosophy.md#laraxot-policy-inheritance`

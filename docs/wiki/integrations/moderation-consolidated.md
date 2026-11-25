@@ -38,15 +38,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 # Azioni di Moderazione (Action class)
 
@@ -110,15 +104,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 # Contratti e Interfacce per la Moderazione Utenti
 
@@ -155,11 +143,7 @@ interface ModeratableUser
 
 ## moderation-doctor
 
-<<<<<<< HEAD
 *Consolidated from: `moderation-doctor.md`*
-=======
-*Consolidated from: `moderation-doctor-2.md`*
->>>>>>> laraxot/dev
 
 title: "Moderazione Dentista dal Modulo User"
 type: concept
@@ -175,15 +159,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Moderazione Dentista dal Modulo User
@@ -288,15 +266,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 # Notifiche Moderazione
 
@@ -345,50 +317,29 @@ class UserApprovedNotification extends Notification
 
 ## moderation-wizard-generic
 
-<<<<<<< HEAD
 *Consolidated from: `moderation-wizard-generic.md`*
 
 module: theme
 topic: moderation-wizard-generic
 canonical: ../../../Themes/docs/shared-components/moderation-wizard-generic.md
-=======
-*Consolidated from: `moderation-wizard-generic-2.md`*
-
-module: theme
-topic: moderation-wizard-generic
-canonical: ../../moderation-wizard-generic-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-wizard-generic.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../moderation-wizard-generic-2.md
->>>>>>> laraxot/dev
 
 ---
 
 ## moderation_doctor
 
-<<<<<<< HEAD
 *Consolidated from: `moderation_doctor.md`*
-=======
-*Consolidated from: `moderation-doctor-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Premessa
@@ -480,11 +431,7 @@ class DoctorPolicy {
 
 ## moderation_wizard_generic
 
-<<<<<<< HEAD
 *Consolidated from: `moderation_wizard_generic.md`*
-=======
-*Consolidated from: `moderation-wizard-generic-2.md`*
->>>>>>> laraxot/dev
 
 
 ## Premessa
@@ -589,15 +536,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Moderazione Dentista dal Modulo User

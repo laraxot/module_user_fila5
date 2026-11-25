@@ -35,15 +35,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
@@ -68,15 +62,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Resources Array Keys Philosophy: String Keys Always
@@ -270,50 +258,29 @@ public static function getTableColumns(): array
 
 - [XotBaseResource Source Code](../../../../Xot/app/Filament/Resources/XotBaseResource.php)
 - [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
-<<<<<<< HEAD
 - [Filament Best Practices](./filament-best-practices.md)
-=======
-- [Filament Best Practices](../../../../Xot/docs/consolidated/filament-best-practices-2.md)
->>>>>>> laraxot/dev
 
 ---
 
 ## resources-corrections-summary-
 
-<<<<<<< HEAD
 *Consolidated from: `resources-corrections-summary-.md`*
 
 module: theme
 topic: resources-corrections-summary-
 canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
-=======
-*Consolidated from: `resources-corrections-summary-2.md`*
-
-module: theme
-topic: resources-corrections-summary-
-canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-2.md
->>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/resources-corrections-summary-2.md
->>>>>>> laraxot/dev
 
 ---
 
@@ -335,15 +302,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Resources Corrections Summary - 2025-01-22
@@ -502,11 +463,7 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
 - [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
-<<<<<<< HEAD
 - [Filament Best Practices](./filament-best-practices.md)
-=======
-- [Filament Best Practices](../../../../Xot/docs/consolidated/filament-best-practices-2.md)
->>>>>>> laraxot/dev
 
 ---
 
@@ -528,15 +485,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-=======
-  - "../../actions-path-convention-2.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention-2.md"
->>>>>>> laraxot/dev
 ---
 
 # Resources Corrections Summary - [DATE]
@@ -695,11 +646,7 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
 - [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
-<<<<<<< HEAD
 - [Filament Best Practices](./filament-best-practices.md)
-=======
-- [Filament Best Practices](../../../../Xot/docs/consolidated/filament-best-practices-2.md)
->>>>>>> laraxot/dev
 
 ---
 

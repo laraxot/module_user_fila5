@@ -86,11 +86,7 @@ qmd: "index"
 - [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./archive/avatar-implementation.md)
 - [avatar-implementation.md](./archive/avatar-implementation.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./archive/baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./archive/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
@@ -115,11 +111,7 @@ qmd: "index"
 - [dentist-moderation-approach.md](./archive/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./archive/directory-structure-checklist.md)
 - [documentation-standards.md](./archive/documentation-standards.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./archive/dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./archive/dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./archive/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./archive/dry-kiss-analysis-2025-10-15.deprecated.md)
 - [dry-kiss-analysis.md](./archive/dry-kiss-analysis.md)
@@ -148,11 +140,7 @@ qmd: "index"
 - [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy.md)
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-2.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./archive/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./archive/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./archive/git-conflicts-resolution-2025-01-27.deprecated.md)
@@ -236,7 +224,6 @@ qmd: "index"
 - [password-translation-completion-2025.md](./archive/password-translation-completion-2025.md)
 - [password-translation-completion.md](./archive/password-translation-completion.md)
 - [path-conventions.md](./archive/path-conventions.md)
-<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./archive/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./archive/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -246,17 +233,6 @@ qmd: "index"
 - [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./archive/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/phpstan-fixes-2025.md)
-=======
-- [phpstan-dry-kiss-improvements-4.md](./archive/phpstan-dry-kiss-improvements-4.md)
-- [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
-- [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./archive/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
-- [phpstan-dry-kiss-improvements.md](./archive/phpstan-dry-kiss-improvements.md)
-- [phpstan-fixes-3.md](./archive/phpstan-fixes-2.md)
-- [phpstan-fixes-1.md](./archive/phpstan-fixes-correzioni-livello-modulo-user.md)
-- [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
-- [phpstan-fixes-2025-10-01.deprecated.md](./archive/phpstan-fixes-2025-10-01.deprecated.md)
-- [phpstan-fixes-4.md](./archive/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./archive/phpstan-fixes-3.md)
 - [phpstan-fixes.md](./archive/phpstan-fixes.md)
 - [phpstan-level-10-fixes.md](./archive/phpstan-level-10-fixes.md)
@@ -292,11 +268,7 @@ qmd: "index"
 - [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analisi-corretta.md](./archive/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./archive/translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./archive/translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./archive/translation-city-field-refactor-2.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./archive/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
@@ -624,11 +596,7 @@ qmd: "index"
 - [performance-issues.md](./archive/historical/performance-issues.md)
 - [philosophy-complete.md](./archive/historical/philosophy-complete.md)
 - [phpinsights-report.md](./archive/historical/phpinsights-report.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./archive/historical/phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./archive/historical/phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./archive/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./archive/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./archive/historical/phpstan-complete-success.md)
@@ -643,11 +611,7 @@ qmd: "index"
 - [phpstan-errors-resolution-roadmap.md](./archive/historical/phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./archive/historical/phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./archive/historical/phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./archive/historical/phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./archive/historical/phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-roadmap.md](./archive/historical/phpstan-fix-roadmap.md)
 - [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-2.md](./archive/historical/phpstan-fixes-2.md)
@@ -669,11 +633,7 @@ qmd: "index"
 - [phpstan-fixes-passport.md](./archive/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./archive/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./archive/historical/phpstan-fixes.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./archive/historical/phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./archive/historical/phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-generic-types.md](./archive/historical/phpstan-generic-types.md)
 - [phpstan-level-10-fixes.md](./archive/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./archive/historical/phpstan-level10-analysis.md)
@@ -694,11 +654,7 @@ qmd: "index"
 - [quality-status-11.md](./archive/historical/quality-status-user-module-november.md)
 - [quality-status.md](./archive/historical/quality-status.md)
 - [quality-tooling.md](./archive/historical/quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./archive/historical/quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./archive/historical/quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-report.md](./archive/historical/quality-tools-report.md)
 - [quality-tools.md](./archive/historical/quality-tools.md)
 - [query-optimization-analysis.md](./archive/historical/query-optimization-analysis.md)
@@ -718,11 +674,7 @@ qmd: "index"
 - [resource-implementation-philosophy.md](./archive/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./archive/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./archive/historical/resources-array-keys-philosophy.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./archive/historical/resources-corrections-summary-.md)
-=======
-- [resources-corrections-summary-2.md](./archive/historical/resources-corrections-summary-2.md)
->>>>>>> laraxot/dev
 - [roadmap-1.md](./archive/historical/roadmap.md)
 - [roadmap-archive.md](./roadmap-archive.md)
 - [roadmap-and-issues.md](./archive/historical/roadmap-and-issues.md)
@@ -833,13 +785,8 @@ qmd: "index"
 - [phpstan-compliance.md](./archive/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./archive/old_tasks/phpstan-fixes-2025.md)
 - [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
-=======
-- [phpstan-fixes-4.md](./archive/old_tasks/phpstan-fixes-4.md)
-- [phpstan-fixes-gennaio-4.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -869,11 +816,7 @@ qmd: "index"
 - [dependency.md](./best-practices/dependency.md)
 - [eloquent-properties-best-practices.md](./best-practices/eloquent-properties-best-practices.md)
 - [filament-best-practices.md](./best-practices/filament-best-practices.md)
-<<<<<<< HEAD
 - [filament-components.md](./best-practices/filament-components.md)
-=======
-- [filament-components-2.md](./best-practices/filament-components.md)
->>>>>>> laraxot/dev
 - [filament-namespace-rules.md](./best-practices/filament-namespace-rules.md)
 - [filament-namespace.md](./best-practices/filament-namespace.md)
 - [filament-widgets.md](./best-practices/filament-widgets.md)
@@ -886,11 +829,7 @@ qmd: "index"
 - [model-inheritance.md](./best-practices/model-inheritance.md)
 - [namespace-conventions.md](./best-practices/namespace-conventions.md)
 - [nestedset-migration-best-practices.md](./best-practices/nestedset-migration-best-practices.md)
-<<<<<<< HEAD
 - [queueable-actions.md](./best-practices/queueable-actions.md)
-=======
-- [queueable-actions-2.md](./best-practices/queueable-actions.md)
->>>>>>> laraxot/dev
 - [routing-best-practices.md](./best-practices/routing-best-practices.md)
 - [testing-rules.md](./best-practices/testing-rules.md)
 - [testing.md](./best-practices/testing.md)
@@ -907,11 +846,7 @@ qmd: "index"
 ## bug-fixes
 
 - [make-filament-user-crash-loop.md](./bug-fixes/make-filament-user-crash-loop.md)
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-4.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-2.md](./bug-fixes/parse-error-orphan-methods-2.md)
@@ -922,22 +857,14 @@ qmd: "index"
 
 ## bug-fixes/archive
 
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/archive/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-2.md](./bug-fixes/archive/parse-error-orphan-methods-2.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/archive/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/archive/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods.md](./bug-fixes/archive/parse-error-orphan-methods.md)
 
 ## bug-fixes/legacy
 
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/legacy/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-2.md](./bug-fixes/legacy/parse-error-orphan-methods-2.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/legacy/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/legacy/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-archive-1.md](./bug-fixes/legacy/parse-error-orphan-methods-archive-1.md)
@@ -1073,17 +1000,10 @@ qmd: "index"
 
 - [filament-table-columns-1.md](./filament/archive/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/archive/filament-table-columns-2.md)
-<<<<<<< HEAD
 - [filament-table-columns.md](./filament/archive/filament-table-columns.md)
 - [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/archive/teams-relation-manager.md)
-=======
-- [filament-table-columns-2.md](./filament/archive/filament-table-columns.md)
-- [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
-- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
-- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager.md)
->>>>>>> laraxot/dev
 
 ## filament/errors
 
@@ -1093,11 +1013,7 @@ qmd: "index"
 
 - [filament-table-columns-1.md](./filament/legacy/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/legacy/filament-table-columns-2.md)
-<<<<<<< HEAD
 - [filament-table-columns.md](./filament/legacy/filament-table-columns.md)
-=======
-- [filament-table-columns-2.md](filament/archive/filament-table-columns-2.md)
->>>>>>> laraxot/dev
 - [teams-relation-manager-1.md](./filament/legacy/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/legacy/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/legacy/teams-relation-manager.md)
@@ -1112,11 +1028,7 @@ qmd: "index"
 
 ## fixes
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-.md](./fixes/base-classes-corrections-4.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/base-classes-corrections-1.md)
 - [base-classes-corrections-2.md](./fixes/base-classes-corrections-2.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/base-classes-corrections-2025-10-15.deprecated.md)
@@ -1128,22 +1040,14 @@ qmd: "index"
 
 ## fixes/archive
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/archive/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-2.md](./fixes/archive/base-classes-corrections-2.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/archive/base-classes-corrections-1.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/archive/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections.md](./fixes/archive/base-classes-corrections.md)
 
 ## fixes/legacy
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/legacy/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-2.md](./fixes/legacy/base-classes-corrections-2.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/legacy/base-classes-corrections-1.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/legacy/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections-archive-1.md](./fixes/legacy/base-classes-corrections-archive-1.md)
@@ -1158,11 +1062,7 @@ qmd: "index"
 - [advanced.md](./html2pdf/advanced.md)
 - [index.md](./html2pdf/index.md)
 - [laravel.md](./html2pdf/laravel.md)
-<<<<<<< HEAD
 - [security.md](./html2pdf/security.md)
-=======
-- [security-2.md](./html2pdf/security.md)
->>>>>>> laraxot/dev
 - [styling.md](./html2pdf/styling.md)
 - [usage.md](./html2pdf/usage.md)
 
@@ -1198,11 +1098,7 @@ qmd: "index"
 - [auth-widgets-view-namespaces.md](./legacy/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./legacy/avatar-implementation-1.md)
 - [avatar-implementation.md](./legacy/avatar-implementation.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./legacy/baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./legacy/baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./legacy/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./legacy/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./legacy/baseuser-refactoring-completed.md)
@@ -1227,11 +1123,7 @@ qmd: "index"
 - [dentist-moderation-approach.md](./legacy/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./legacy/directory-structure-checklist.md)
 - [documentation-standards.md](./legacy/documentation-standards.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./legacy/dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./legacy/dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./legacy/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./legacy/dry-kiss-analysis-2025-10-15.deprecated.md)
 - [dry-kiss-analysis.md](./legacy/dry-kiss-analysis.md)
@@ -1260,11 +1152,7 @@ qmd: "index"
 - [generic-user-moderation-strategy-1.md](./legacy/generic-user-moderation-strategy-1.md)
 - [generic-user-moderation-strategy.md](./legacy/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./legacy/git-conflict-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./legacy/git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./legacy/git-conflicts-resolution-3.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./legacy/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./legacy/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./legacy/git-conflicts-resolution-2025-01-27.deprecated.md)
@@ -1348,7 +1236,6 @@ qmd: "index"
 - [password-translation-completion-2025.md](./legacy/password-translation-completion-2025.md)
 - [password-translation-completion.md](./legacy/password-translation-completion.md)
 - [path-conventions.md](./legacy/path-conventions.md)
-<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./legacy/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./legacy/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -1358,17 +1245,6 @@ qmd: "index"
 - [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./legacy/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./legacy/phpstan-fixes-2025.md)
-=======
-- [phpstan-dry-kiss-improvements-4.md](./legacy/phpstan-dry-kiss-improvements-4.md)
-- [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
-- [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./legacy/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
-- [phpstan-dry-kiss-improvements.md](./legacy/phpstan-dry-kiss-improvements.md)
-- [phpstan-fixes-3.md](./legacy/phpstan-fixes-3.md)
-- [phpstan-fixes-1.md](./legacy/phpstan-fixes-1.md)
-- [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
-- [phpstan-fixes-2025-10-01.deprecated.md](./legacy/phpstan-fixes-2025-10-01.deprecated.md)
-- [phpstan-fixes-4.md](./legacy/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./legacy/phpstan-fixes-3.md)
 - [phpstan-fixes.md](./legacy/phpstan-fixes.md)
 - [phpstan-level-10-fixes.md](./legacy/phpstan-level-10-fixes.md)
@@ -1404,11 +1280,7 @@ qmd: "index"
 - [traits-hasteams-analisi-corretta-1.md](./legacy/traits-hasteams-analisi-corretta-1.md)
 - [traits-hasteams-analisi-corretta.md](./legacy/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./legacy/translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./legacy/translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./legacy/translation-city-field-refactor-4.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./legacy/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./legacy/translation-city-field-refactor.md)
@@ -1736,11 +1608,7 @@ qmd: "index"
 - [performance-issues.md](./legacy/historical/performance-issues.md)
 - [philosophy-complete.md](./legacy/historical/philosophy-complete.md)
 - [phpinsights-report.md](./legacy/historical/phpinsights-report.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./legacy/historical/phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./legacy/historical/phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./legacy/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./legacy/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./legacy/historical/phpstan-complete-success.md)
@@ -1755,20 +1623,12 @@ qmd: "index"
 - [phpstan-errors-resolution-roadmap.md](./legacy/historical/phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./legacy/historical/phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./legacy/historical/phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./legacy/historical/phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./legacy/historical/phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-roadmap.md](./legacy/historical/phpstan-fix-roadmap.md)
 - [phpstan-fixes-1.md](./legacy/historical/phpstan-fixes-1.md)
 - [phpstan-fixes-2.md](./legacy/historical/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./legacy/historical/phpstan-fixes-2025-10-01.deprecated.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./legacy/historical/phpstan-fixes-2025.md)
-=======
-- [phpstan-fixes-4.md](./legacy/historical/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./legacy/historical/phpstan-fixes-3.md)
 - [phpstan-fixes-4.md](./legacy/historical/phpstan-fixes-4.md)
 - [phpstan-fixes-conflict-276dc0.md](./legacy/historical/phpstan-fixes-conflict-276dc0.md)
@@ -1776,11 +1636,7 @@ qmd: "index"
 - [phpstan-fixes-conflict.md](./legacy/historical/phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-1.md](./legacy/historical/phpstan-fixes-gennaio-1.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./legacy/historical/phpstan-fixes-gennaio-2025-complete.md)
-<<<<<<< HEAD
 - [phpstan-fixes-gennaio-2025.md](./legacy/historical/phpstan-fixes-gennaio-2025.md)
-=======
-- [phpstan-fixes-gennaio-4.md](./legacy/historical/phpstan-fixes-gennaio-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./legacy/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/historical/phpstan-fixes-gennaiocomplete.md)
@@ -1789,11 +1645,7 @@ qmd: "index"
 - [phpstan-fixes-passport.md](./legacy/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./legacy/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./legacy/historical/phpstan-fixes.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./legacy/historical/phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./legacy/historical/phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-generic-types.md](./legacy/historical/phpstan-generic-types.md)
 - [phpstan-level-10-fixes.md](./legacy/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./legacy/historical/phpstan-level10-analysis.md)
@@ -1814,11 +1666,7 @@ qmd: "index"
 - [quality-status-11.md](./legacy/historical/quality-status-11.md)
 - [quality-status.md](./legacy/historical/quality-status.md)
 - [quality-tooling.md](./legacy/historical/quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./legacy/historical/quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./legacy/historical/quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-report.md](./legacy/historical/quality-tools-report.md)
 - [quality-tools.md](./legacy/historical/quality-tools.md)
 - [query-optimization-analysis.md](./legacy/historical/query-optimization-analysis.md)
@@ -1838,15 +1686,9 @@ qmd: "index"
 - [resource-implementation-philosophy.md](./legacy/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./legacy/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./legacy/historical/resources-array-keys-philosophy.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./legacy/historical/resources-corrections-summary-.md)
 - [roadmap-1.md](./legacy/historical/roadmap-1.md)
 - [roadmap-2025.md](./legacy/historical/roadmap-2025.md)
-=======
-- [resources-corrections-summary-2.md](./legacy/historical/resources-corrections-summary-2.md)
-- [roadmap-1.md](./legacy/historical/roadmap-1.md)
-- [roadmap-3.md](./legacy/historical/roadmap-3.md)
->>>>>>> laraxot/dev
 - [roadmap-and-issues.md](./legacy/historical/roadmap-and-issues.md)
 - [roadmap-complete.md](./legacy/historical/roadmap-complete.md)
 - [roadmap-conflict.md](./legacy/historical/roadmap-conflict.md)
@@ -1900,11 +1742,7 @@ qmd: "index"
 - [translation-fixes.md](./legacy/historical/translation-fixes.md)
 - [translation-keys-rules.md](./legacy/historical/translation-keys-rules.md)
 - [translation-maintenance-log.md](./legacy/historical/translation-maintenance-log.md)
-<<<<<<< HEAD
 - [translation-syntax-fixes-2025.md](./legacy/historical/translation-syntax-fixes-2025.md)
-=======
-- [translation-syntax-fixes-3.md](./legacy/historical/translation-syntax-fixes-3.md)
->>>>>>> laraxot/dev
 - [translation-syntax-fixes.md](./legacy/historical/translation-syntax-fixes.md)
 - [translations.md](./legacy/historical/translations.md)
 - [troubleshooting-login-component.md](./legacy/historical/troubleshooting-login-component.md)
@@ -1959,13 +1797,8 @@ qmd: "index"
 - [phpstan-compliance.md](./legacy/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./legacy/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./legacy/old_tasks/phpstan-fixes-2025.md)
 - [phpstan-fixes-gennaio-2025.md](./legacy/old_tasks/phpstan-fixes-gennaio-2025.md)
-=======
-- [phpstan-fixes-4.md](./legacy/old_tasks/phpstan-fixes-4.md)
-- [phpstan-fixes-gennaio-4.md](./legacy/old_tasks/phpstan-fixes-gennaio-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./legacy/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -2245,11 +2078,7 @@ qmd: "index"
 - [avatar-implementation.md](./avatar-implementation.md)
 - [baseuser-conflicts.md](./baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./baseuser-dry-violation-analysis.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2.md](./baseuser-refactoring-completed-2.md)
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./baseuser-refactoring-completed-2025-10-15.deprecated.md)
@@ -2380,11 +2209,7 @@ qmd: "index"
 - [dor-registration-widget.md](./dor-registration-widget.md)
 - [dor-registration.md](./dor-registration.md)
 - [dry-kiss-018b09.md](./dry-kiss-018b09.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./dry-kiss-analysis-modulo-user.md)
 - [dry-kiss-analysis-2.md](./dry-kiss-analysis.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./dry-kiss-analysis-2025-10-15.deprecated.md)
@@ -2502,11 +2327,7 @@ qmd: "index"
 - [git-conflict-resolution.md](./git-conflict-resolution.md)
 - [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
 - [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./git-conflicts-resolution-3.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./git-conflicts-resolution-2025-01-27.deprecated.md)
@@ -2618,11 +2439,7 @@ qmd: "index"
 - [login-widget-fix.md](./login-widget-fix.md)
 - [login-widget-livewire-binding-fix.md](./login-widget-livewire-binding-fix.md)
 - [login-widget-livewire-binding.md](./login-widget-livewire-binding.md)
-<<<<<<< HEAD
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
-=======
-- [login-widget-translation-audit-2.md](./login-widget-translation-audit-2.md)
->>>>>>> laraxot/dev
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
 - [login-widget-translation-audit-conflict.md](./login-widget-translation-audit-conflict.md)
@@ -2902,11 +2719,7 @@ qmd: "index"
 - [passport-oauth-wrapper-convention.md](./passport-oauth-wrapper-convention.md)
 - [passport-vs-socialite-clarification.md](./passport-vs-socialite-clarification.md)
 - [passport.md](./passport.md)
-<<<<<<< HEAD
 - [password-translation-completion-.md](./password-translation-completion-.md)
-=======
-- [password-translation-completion-2.md](./password-translation-completion-2.md)
->>>>>>> laraxot/dev
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-historical.md)
@@ -2928,11 +2741,7 @@ qmd: "index"
 - [phpinsights.md](./phpinsights.md)
 - [phpinsightss.md](./phpinsightss.md)
 - [phpmd-errors.md](./phpmd-errors.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
 - [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
 - [phpmd-report.md](./phpmd-report.md)
@@ -2945,19 +2754,11 @@ qmd: "index"
 - [phpstan-compliance-status.md](./phpstan-compliance-status.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 - [phpstan-corrections-oauth-resources.md](./phpstan-corrections-oauth-resources.md)
-<<<<<<< HEAD
 - [phpstan-corrections-summary-.md](./phpstan-corrections-summary-.md)
 - [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
 - [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
 - [phpstan-corrections.md](./phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements-.md](./phpstan-dry-kiss-improvements-.md)
-=======
-- [phpstan-corrections-summary-2.md](./phpstan-corrections-summary-2.md)
-- [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
-- [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
-- [phpstan-corrections.md](./phpstan-corrections.md)
-- [phpstan-dry-kiss-improvements-4.md](./phpstan-dry-kiss-improvements-4.md)
->>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements.md)
 - [phpstan-dry-kiss-improvements-2.md](./phpstan-dry-kiss-improvements-2.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -2968,11 +2769,7 @@ qmd: "index"
 - [phpstan-errors-resolution-roadmap.md](./phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-plan-1.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-2.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-3.md](./phpstan-fix-plan.md)
@@ -2981,22 +2778,14 @@ qmd: "index"
 - [phpstan-fix-plan-user.md](./phpstan-fix-plan-user.md)
 - [phpstan-fix-plan.md](./phpstan-fix-plan.md)
 - [phpstan-fix-roadmap.md](./phpstan-fix-roadmap.md)
-<<<<<<< HEAD
 - [phpstan-fixes-.md](./phpstan-fixes-.md)
-=======
-- [phpstan-fixes-3.md](./phpstan-fixes-3.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-1.md](./phpstan-fixes-1.md)
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-2.md](./phpstan-fixes-2.md)
 - [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-1.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./phpstan-fixes-2025-10-01.deprecated.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
-=======
-- [phpstan-fixes-4.md](./phpstan-fixes-historical.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3-1.md](./phpstan-fixes-3-1.md)
 - [phpstan-fixes-3-2.md](./phpstan-fixes-3-2.md)
 - [phpstan-fixes-3.md](./phpstan-fixes-3.md)
@@ -3004,11 +2793,7 @@ qmd: "index"
 - [phpstan-fixes-5.md](./phpstan-fixes-5.md)
 - [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-alias.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./phpstan-fixes-2025-10-01.deprecated.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
-=======
-- [phpstan-fixes-4.md](./phpstan-fixes-historical.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-3-2.md](./phpstan-fixes.md)
 - [phpstan-fixes-3.md](./phpstan-fixes.md)
@@ -3023,19 +2808,11 @@ qmd: "index"
 - [phpstan-fixes-conflict-276dc0.md](./phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./phpstan-fixes-conflict.md)
-<<<<<<< HEAD
 - [phpstan-fixes-gennaio-.md](./phpstan-fixes-gennaio-.md)
 - [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-modulo-user.md)
 - [phpstan-fixes-gennaio-2.md](./phpstan-fixes-gennaio-2.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./phpstan-fixes-gennaio-2025-complete.md)
 - [phpstan-fixes-gennaio-2025.md](./phpstan-fixes-gennaio-2025.md)
-=======
-- [phpstan-fixes-gennaio-3.md](./phpstan-fixes-gennaio-3.md)
-- [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-modulo-user.md)
-- [phpstan-fixes-gennaio-2.md](./phpstan-fixes-gennaio-2.md)
-- [phpstan-fixes-gennaio-2025-complete.md](./phpstan-fixes-gennaio-2025-complete.md)
-- [phpstan-fixes-gennaio-4.md](./phpstan-fixes-gennaio-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./phpstan-fixes-gennaiocomplete.md)
@@ -3044,11 +2821,7 @@ qmd: "index"
 - [phpstan-fixes-passport.md](./phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./phpstan-fixes.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-furious-debate-1.md](./phpstan-furious-debate-1.md)
 - [phpstan-furious-debate.md](./phpstan-furious-debate.md)
 - [phpstan-furiousebate.md](./phpstan-furiousebate.md)
@@ -3132,11 +2905,7 @@ qmd: "index"
 - [quality-status-nov.md](./quality-status-nov.md)
 - [quality-status.md](./quality-status.md)
 - [quality-tooling.md](./quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-final-report-1.md](./quality-tools-final-report.md)
 - [quality-tools-final-report.md](./quality-tools-final-report.md)
 - [quality-tools-final.md](./quality-tools-final.md)
@@ -3191,7 +2960,6 @@ qmd: "index"
 - [resource-translation-violation-critical.md](./resource-translation-violation-critical.md)
 - [resources-array-keys-philosophy.md](./resources-array-keys-philosophy.md)
 - [resources-array-keys.md](./resources-array-keys.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./resources-corrections-summary-.md)
 - [resources-corrections-summary-1.md](./resources-corrections-summary.md)
 - [resources-corrections-summary.md](./resources-corrections-summary.md)
@@ -3200,16 +2968,6 @@ qmd: "index"
 - [roadmap-1-1.md](./roadmap-1-1.md)
 - [roadmap-1.md](./roadmap.md)
 - [roadmap-2025.md](./roadmap-2025.md)
-=======
-- [resources-corrections-summary-2.md](./resources-corrections-summary-2.md)
-- [resources-corrections-summary-1.md](./resources-corrections-summary.md)
-- [resources-corrections-summary.md](./resources-corrections-summary.md)
-- [resources-corrections.md](./resources-corrections.md)
-- [roadmap-2.md](./roadmap-2.md)
-- [roadmap-1-1.md](./roadmap-1-1.md)
-- [roadmap-1.md](./roadmap.md)
-- [roadmap-3.md](./roadmap-3.md)
->>>>>>> laraxot/dev
 - [roadmap-and-issues.md](./roadmap-and-issues.md)
 - [roadmap-ands.md](./roadmap-ands.md)
 - [roadmap-archive-1.md](./roadmap-archive.md)
@@ -3352,11 +3110,7 @@ qmd: "index"
 - [translation-best-practices-1.md](./translation-best-practices-1.md)
 - [translation-best-practices-2.md](./translation-best-practices.md)
 - [translation-best-practices.md](./translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./translation-city-field-refactor-4.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2.md](./translation-city-field-refactor-2.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./translation-city-field-refactor-2025-08-08.deprecated.md)
@@ -3374,15 +3128,9 @@ qmd: "index"
 - [translation-keys.md](./translation-keys.md)
 - [translation-maintenance-log.md](./translation-maintenance-log.md)
 - [translation-resolution-prototype.md](./translation-resolution-prototype.md)
-<<<<<<< HEAD
 - [translation-syntax-fixes-.md](./translation-syntax-fixes-.md)
 - [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
 - [translation-syntax-fixes-2025.md](./translation-syntax-fixes-2025.md)
-=======
-- [translation-syntax-fixes-2.md](./translation-syntax-fixes-2.md)
-- [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
-- [translation-syntax-fixes-3.md](./translation-syntax-fixes-3.md)
->>>>>>> laraxot/dev
 - [translation-syntax-fixes.md](./translation-syntax-fixes.md)
 - [translation-syntaxes.md](./translation-syntaxes.md)
 - [translationes.md](./translationes.md)
@@ -3544,15 +3292,9 @@ qmd: "index"
 
 ## traits
 
-<<<<<<< HEAD
 - [has-authentication-log.md](./traits/has-authentication-log.md)
 - [has-teams.md](./traits/has-teams.md)
 - [has-tenants.md](./traits/has-tenants.md)
-=======
-- [has-authentication-log-2.md](./traits/has-authentication-log.md)
-- [has-teams-2.md](./traits/has-teams.md)
-- [has-tenants-2.md](./traits/has-tenants.md)
->>>>>>> laraxot/dev
 
 ## widgets
 
@@ -3743,17 +3485,10 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
-<<<<<<< HEAD
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Profile Management](./profile_management.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
-=======
-- [Authentication Pages Implementation](./auth-pages-implementation-3.md)
-- [Profile Management](./profile-management-3.md)
-- [Routing Best Practices](./routing-best-practices-2.md)
-- [Session Management](./session-management-3.md)
->>>>>>> laraxot/dev
 
 ## Sottocartelle
 
@@ -3855,11 +3590,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./archive/avatar-implementation.md)
 - [avatar-implementation.md](./archive/avatar-implementation.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./archive/baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed.deprecated.md](./archive/baseuser-refactoring-completed.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
@@ -3884,11 +3615,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [dentist-moderation-approach.md](./archive/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./archive/directory-structure-checklist.md)
 - [documentation-standards.md](./archive/documentation-standards.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./archive/dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./archive/dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./archive/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis.deprecated.md](./archive/dry-kiss-analysis.deprecated.md)
 - [dry-kiss-analysis.md](./archive/dry-kiss-analysis.md)
@@ -3917,11 +3644,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [generic-user-moderation-strategy-1.md](./archive/generic-user-moderation-strategy.md)
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-2.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./archive/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./archive/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution.deprecated.md](./archive/git-conflicts-resolution.deprecated.md)
@@ -4005,7 +3728,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [password-translation-completion-2025.md](./archive/password-translation-completion-2025.md)
 - [password-translation-completion.md](./archive/password-translation-completion.md)
 - [path-conventions.md](./archive/path-conventions.md)
-<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./archive/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements.deprecated.md](./archive/phpstan-dry-kiss-improvements.deprecated.md)
@@ -4015,17 +3737,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
 - [phpstan-fixes.deprecated.md](./archive/phpstan-fixes.deprecated.md)
 - [phpstan-fixes-2025.md](./archive/phpstan-fixes-2025.md)
-=======
-- [phpstan-dry-kiss-improvements-4.md](./archive/phpstan-dry-kiss-improvements-4.md)
-- [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
-- [phpstan-dry-kiss-improvements.deprecated.md](./archive/phpstan-dry-kiss-improvements.deprecated.md)
-- [phpstan-dry-kiss-improvements.md](./archive/phpstan-dry-kiss-improvements.md)
-- [phpstan-fixes-3.md](./archive/phpstan-fixes-2.md)
-- [phpstan-fixes-1.md](./archive/phpstan-fixes-correzioni-livello-modulo-user.md)
-- [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
-- [phpstan-fixes.deprecated.md](./archive/phpstan-fixes.deprecated.md)
-- [phpstan-fixes-4.md](./archive/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./archive/phpstan-fixes-3.md)
 - [phpstan-fixes.md](./archive/phpstan-fixes.md)
 - [phpstan-level-10-fixes.md](./archive/phpstan-level-10-fixes.md)
@@ -4061,11 +3772,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [traits-hasteams-analisi-corretta-1.md](./archive/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analisi-corretta.md](./archive/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./archive/translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./archive/translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./archive/translation-city-field-refactor-2.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./archive/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor.deprecated.md](./archive/translation-city-field-refactor.deprecated.md)
 - [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
@@ -4391,11 +4098,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [performance-issues.md](./archive/historical/performance-issues.md)
 - [philosophy-complete.md](./archive/historical/philosophy-complete.md)
 - [phpinsights-report.md](./archive/historical/phpinsights-report.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./archive/historical/phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./archive/historical/phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./archive/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./archive/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./archive/historical/phpstan-complete-success.md)
@@ -4410,11 +4113,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-errors-resolution-roadmap.md](./archive/historical/phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./archive/historical/phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./archive/historical/phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./archive/historical/phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./archive/historical/phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-roadmap.md](./archive/historical/phpstan-fix-roadmap.md)
 - [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-2.md](./archive/historical/phpstan-fixes-2.md)
@@ -4434,11 +4133,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-passport.md](./archive/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./archive/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./archive/historical/phpstan-fixes.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./archive/historical/phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./archive/historical/phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-generic-types.md](./archive/historical/phpstan-generic-types.md)
 - [phpstan-level-10-fixes.md](./archive/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./archive/historical/phpstan-level10-analysis.md)
@@ -4459,11 +4154,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [quality-status-11.md](./archive/historical/quality-status-user-module-november.md)
 - [quality-status.md](./archive/historical/quality-status.md)
 - [quality-tooling.md](./archive/historical/quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./archive/historical/quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./archive/historical/quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-report.md](./archive/historical/quality-tools-report.md)
 - [quality-tools.md](./archive/historical/quality-tools.md)
 - [query-optimization-analysis.md](./archive/historical/query-optimization-analysis.md)
@@ -4483,11 +4174,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [resource-implementation-philosophy.md](./archive/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./archive/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./archive/historical/resources-array-keys-philosophy.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./archive/historical/resources-corrections-summary-.md)
-=======
-- [resources-corrections-summary-2.md](./archive/historical/resources-corrections-summary-2.md)
->>>>>>> laraxot/dev
 - [roadmap-1.md](./archive/historical/roadmap.md)
 - [roadmap-and-issues.md](./archive/historical/roadmap-and-issues.md)
 - [roadmap-complete.md](./archive/historical/roadmap-complete.md)
@@ -4596,11 +4283,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-compliance.md](./archive/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
-<<<<<<< HEAD
 - [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
-=======
-- [phpstan-fixes-gennaio-4.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./archive/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./archive/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -4630,11 +4313,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [dependency.md](./best-practices/dependency.md)
 - [eloquent-properties-best-practices.md](./best-practices/eloquent-properties-best-practices.md)
 - [filament-best-practices.md](./best-practices/filament-best-practices.md)
-<<<<<<< HEAD
 - [filament-components.md](./best-practices/filament-components.md)
-=======
-- [filament-components-2.md](./best-practices/filament-components.md)
->>>>>>> laraxot/dev
 - [filament-namespace-rules.md](./best-practices/filament-namespace-rules.md)
 - [filament-namespace.md](./best-practices/filament-namespace.md)
 - [filament-widgets.md](./best-practices/filament-widgets.md)
@@ -4647,11 +4326,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [model-inheritance.md](./best-practices/model-inheritance.md)
 - [namespace-conventions.md](./best-practices/namespace-conventions.md)
 - [nestedset-migration-best-practices.md](./best-practices/nestedset-migration-best-practices.md)
-<<<<<<< HEAD
 - [queueable-actions.md](./best-practices/queueable-actions.md)
-=======
-- [queueable-actions-2.md](./best-practices/queueable-actions.md)
->>>>>>> laraxot/dev
 - [routing-best-practices.md](./best-practices/routing-best-practices.md)
 - [testing-rules.md](./best-practices/testing-rules.md)
 - [testing.md](./best-practices/testing.md)
@@ -4668,11 +4343,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 ## bug-fixes
 
 - [make-filament-user-crash-loop.md](./bug-fixes/make-filament-user-crash-loop.md)
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-4.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-2.md](./bug-fixes/parse-error-orphan-methods-2.md)
@@ -4683,22 +4354,14 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## bug-fixes/archive
 
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/archive/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-2.md](./bug-fixes/archive/parse-error-orphan-methods-2.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/archive/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/archive/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods.md](./bug-fixes/archive/parse-error-orphan-methods.md)
 
 ## bug-fixes/legacy
 
-<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/legacy/parse-error-orphan-methods-.md)
-=======
-- [parse-error-orphan-methods-2.md](./bug-fixes/legacy/parse-error-orphan-methods-2.md)
->>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/legacy/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/legacy/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-archive-1.md](./bug-fixes/legacy/parse-error-orphan-methods-archive-1.md)
@@ -4834,17 +4497,10 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 - [filament-table-columns-1.md](./filament/archive/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/archive/filament-table-columns-2.md)
-<<<<<<< HEAD
 - [filament-table-columns.md](./filament/archive/filament-table-columns.md)
 - [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/archive/teams-relation-manager.md)
-=======
-- [filament-table-columns-2.md](./filament/archive/filament-table-columns.md)
-- [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
-- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
-- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager.md)
->>>>>>> laraxot/dev
 
 ## filament/errors
 
@@ -4854,11 +4510,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 - [filament-table-columns-1.md](./filament/legacy/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/legacy/filament-table-columns-2.md)
-<<<<<<< HEAD
 - [filament-table-columns.md](./filament/legacy/filament-table-columns.md)
-=======
-- [filament-table-columns-2.md](filament/archive/filament-table-columns-2.md)
->>>>>>> laraxot/dev
 - [teams-relation-manager-1.md](./filament/legacy/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/legacy/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/legacy/teams-relation-manager.md)
@@ -4873,11 +4525,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## fixes
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-.md](./fixes/base-classes-corrections-4.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/base-classes-corrections-1.md)
 - [base-classes-corrections-2.md](./fixes/base-classes-corrections-2.md)
 - [base-classes-corrections.deprecated.md](./fixes/base-classes-corrections.deprecated.md)
@@ -4889,22 +4537,14 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## fixes/archive
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/archive/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-2.md](./fixes/archive/base-classes-corrections-2.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/archive/base-classes-corrections-1.md)
 - [base-classes-corrections.deprecated.md](./fixes/archive/base-classes-corrections.deprecated.md)
 - [base-classes-corrections.md](./fixes/archive/base-classes-corrections.md)
 
 ## fixes/legacy
 
-<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/legacy/base-classes-corrections-.md)
-=======
-- [base-classes-corrections-2.md](./fixes/legacy/base-classes-corrections-2.md)
->>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/legacy/base-classes-corrections-1.md)
 - [base-classes-corrections.deprecated.md](./fixes/legacy/base-classes-corrections.deprecated.md)
 - [base-classes-corrections-archive-1.md](./fixes/legacy/base-classes-corrections-archive-1.md)
@@ -4955,11 +4595,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [auth-widgets-view-namespaces.md](./legacy/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./legacy/avatar-implementation-1.md)
 - [avatar-implementation.md](./legacy/avatar-implementation.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./legacy/baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./legacy/baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./legacy/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed.deprecated.md](./legacy/baseuser-refactoring-completed.deprecated.md)
 - [baseuser-refactoring-completed.md](./legacy/baseuser-refactoring-completed.md)
@@ -4984,11 +4620,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [dentist-moderation-approach.md](./legacy/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./legacy/directory-structure-checklist.md)
 - [documentation-standards.md](./legacy/documentation-standards.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./legacy/dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./legacy/dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./legacy/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis.deprecated.md](./legacy/dry-kiss-analysis.deprecated.md)
 - [dry-kiss-analysis.md](./legacy/dry-kiss-analysis.md)
@@ -5017,11 +4649,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [generic-user-moderation-strategy-1.md](./legacy/generic-user-moderation-strategy-1.md)
 - [generic-user-moderation-strategy.md](./legacy/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./legacy/git-conflict-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./legacy/git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./legacy/git-conflicts-resolution-3.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./legacy/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./legacy/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution.deprecated.md](./legacy/git-conflicts-resolution.deprecated.md)
@@ -5105,7 +4733,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [password-translation-completion-2025.md](./legacy/password-translation-completion-2025.md)
 - [password-translation-completion.md](./legacy/password-translation-completion.md)
 - [path-conventions.md](./legacy/path-conventions.md)
-<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./legacy/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements.deprecated.md](./legacy/phpstan-dry-kiss-improvements.deprecated.md)
@@ -5115,17 +4742,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
 - [phpstan-fixes.deprecated.md](./legacy/phpstan-fixes.deprecated.md)
 - [phpstan-fixes-2025.md](./legacy/phpstan-fixes-2025.md)
-=======
-- [phpstan-dry-kiss-improvements-4.md](./legacy/phpstan-dry-kiss-improvements-4.md)
-- [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
-- [phpstan-dry-kiss-improvements.deprecated.md](./legacy/phpstan-dry-kiss-improvements.deprecated.md)
-- [phpstan-dry-kiss-improvements.md](./legacy/phpstan-dry-kiss-improvements.md)
-- [phpstan-fixes-3.md](./legacy/phpstan-fixes-3.md)
-- [phpstan-fixes-1.md](./legacy/phpstan-fixes-1.md)
-- [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
-- [phpstan-fixes.deprecated.md](./legacy/phpstan-fixes.deprecated.md)
-- [phpstan-fixes-4.md](./legacy/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./legacy/phpstan-fixes-3.md)
 - [phpstan-fixes.md](./legacy/phpstan-fixes.md)
 - [phpstan-level-10-fixes.md](./legacy/phpstan-level-10-fixes.md)
@@ -5161,11 +4777,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [traits-hasteams-analisi-corretta-1.md](./legacy/traits-hasteams-analisi-corretta-1.md)
 - [traits-hasteams-analisi-corretta.md](./legacy/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./legacy/translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./legacy/translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./legacy/translation-city-field-refactor-4.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./legacy/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor.deprecated.md](./legacy/translation-city-field-refactor.deprecated.md)
 - [translation-city-field-refactor.md](./legacy/translation-city-field-refactor.md)
@@ -5493,11 +5105,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [performance-issues.md](./legacy/historical/performance-issues.md)
 - [philosophy-complete.md](./legacy/historical/philosophy-complete.md)
 - [phpinsights-report.md](./legacy/historical/phpinsights-report.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./legacy/historical/phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./legacy/historical/phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./legacy/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./legacy/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./legacy/historical/phpstan-complete-success.md)
@@ -5512,20 +5120,12 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-errors-resolution-roadmap.md](./legacy/historical/phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./legacy/historical/phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./legacy/historical/phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./legacy/historical/phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./legacy/historical/phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-roadmap.md](./legacy/historical/phpstan-fix-roadmap.md)
 - [phpstan-fixes-1.md](./legacy/historical/phpstan-fixes-1.md)
 - [phpstan-fixes-2.md](./legacy/historical/phpstan-fixes-2.md)
 - [phpstan-fixes.deprecated.md](./legacy/historical/phpstan-fixes.deprecated.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./legacy/historical/phpstan-fixes-2025.md)
-=======
-- [phpstan-fixes-4.md](./legacy/historical/phpstan-fixes-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./legacy/historical/phpstan-fixes-3.md)
 - [phpstan-fixes-4.md](./legacy/historical/phpstan-fixes-4.md)
 - [phpstan-fixes-conflict-276dc0.md](./legacy/historical/phpstan-fixes-conflict-276dc0.md)
@@ -5533,11 +5133,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-conflict.md](./legacy/historical/phpstan-fixes-conflict.md)
 - [phpstan-fixes-gennaio-1.md](./legacy/historical/phpstan-fixes-gennaio-1.md)
 - [phpstan-fixes-gennaio-2025-complete.md](./legacy/historical/phpstan-fixes-gennaio-2025-complete.md)
-<<<<<<< HEAD
 - [phpstan-fixes-gennaio-2025.md](./legacy/historical/phpstan-fixes-gennaio-2025.md)
-=======
-- [phpstan-fixes-gennaio-4.md](./legacy/historical/phpstan-fixes-gennaio-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./legacy/historical/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/historical/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/historical/phpstan-fixes-gennaiocomplete.md)
@@ -5546,11 +5142,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-passport.md](./legacy/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./legacy/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./legacy/historical/phpstan-fixes.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./legacy/historical/phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./legacy/historical/phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-generic-types.md](./legacy/historical/phpstan-generic-types.md)
 - [phpstan-level-10-fixes.md](./legacy/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./legacy/historical/phpstan-level10-analysis.md)
@@ -5571,11 +5163,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [quality-status-11.md](./legacy/historical/quality-status-11.md)
 - [quality-status.md](./legacy/historical/quality-status.md)
 - [quality-tooling.md](./legacy/historical/quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./legacy/historical/quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./legacy/historical/quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-report.md](./legacy/historical/quality-tools-report.md)
 - [quality-tools.md](./legacy/historical/quality-tools.md)
 - [query-optimization-analysis.md](./legacy/historical/query-optimization-analysis.md)
@@ -5595,15 +5183,9 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [resource-implementation-philosophy.md](./legacy/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./legacy/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./legacy/historical/resources-array-keys-philosophy.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./legacy/historical/resources-corrections-summary-.md)
 - [roadmap-1.md](./legacy/historical/roadmap-1.md)
 - [roadmap-2025.md](./legacy/historical/roadmap-2025.md)
-=======
-- [resources-corrections-summary-2.md](./legacy/historical/resources-corrections-summary-2.md)
-- [roadmap-1.md](./legacy/historical/roadmap-1.md)
-- [roadmap-3.md](./legacy/historical/roadmap-3.md)
->>>>>>> laraxot/dev
 - [roadmap-and-issues.md](./legacy/historical/roadmap-and-issues.md)
 - [roadmap-complete.md](./legacy/historical/roadmap-complete.md)
 - [roadmap-conflict.md](./legacy/historical/roadmap-conflict.md)
@@ -5657,11 +5239,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translation-fixes.md](./legacy/historical/translation-fixes.md)
 - [translation-keys-rules.md](./legacy/historical/translation-keys-rules.md)
 - [translation-maintenance-log.md](./legacy/historical/translation-maintenance-log.md)
-<<<<<<< HEAD
 - [translation-syntax-fixes-2025.md](./legacy/historical/translation-syntax-fixes-2025.md)
-=======
-- [translation-syntax-fixes-3.md](./legacy/historical/translation-syntax-fixes-3.md)
->>>>>>> laraxot/dev
 - [translation-syntax-fixes.md](./legacy/historical/translation-syntax-fixes.md)
 - [translations.md](./legacy/historical/translations.md)
 - [troubleshooting-login-component.md](./legacy/historical/troubleshooting-login-component.md)
@@ -5716,13 +5294,8 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-compliance.md](./legacy/old_tasks/phpstan-compliance.md)
 - [phpstan-corrections.md](./legacy/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./legacy/old_tasks/phpstan-fixes-2025.md)
 - [phpstan-fixes-gennaio-2025.md](./legacy/old_tasks/phpstan-fixes-gennaio-2025.md)
-=======
-- [phpstan-fixes-4.md](./legacy/old_tasks/phpstan-fixes-4.md)
-- [phpstan-fixes-gennaio-4.md](./legacy/old_tasks/phpstan-fixes-gennaio-4.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-complete.md](./legacy/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
 - [phpstan-fixes-gennaiocomplete.md](./legacy/old_tasks/phpstan-fixes-gennaiocomplete.md)
@@ -5741,11 +5314,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## llm-wiki
 
-<<<<<<< HEAD
 - [AGENTS.md](./llm-wiki/AGENTS.md)
-=======
-- [AGENTS.md](llm-wiki/agents-2.md)
->>>>>>> laraxot/dev
 - [index.md](./llm-wiki/index.md)
 - [log.md](./llm-wiki/log.md)
 
@@ -6003,11 +5572,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [avatar-implementation.md](./avatar-implementation.md)
 - [baseuser-conflicts.md](./baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./baseuser-dry-violation-analysis.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-.md](./baseuser-refactoring-completed-.md)
-=======
-- [baseuser-refactoring-completed-4.md](./baseuser-refactoring-completed-4.md)
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-1.md](./baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2.md](./baseuser-refactoring-completed-2.md)
 - [baseuser-refactoring-completed.deprecated.md](./baseuser-refactoring-completed.deprecated.md)
@@ -6138,11 +5703,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [dor-registration-widget.md](./dor-registration-widget.md)
 - [dor-registration.md](./dor-registration.md)
 - [dry-kiss-018b09.md](./dry-kiss-018b09.md)
-<<<<<<< HEAD
 - [dry-kiss-analysis-.md](./dry-kiss-analysis-.md)
-=======
-- [dry-kiss-analysis-2.md](./dry-kiss-analysis-2.md)
->>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./dry-kiss-analysis-modulo-user.md)
 - [dry-kiss-analysis-2.md](./dry-kiss-analysis.md)
 - [dry-kiss-analysis.deprecated.md](./dry-kiss-analysis.deprecated.md)
@@ -6260,11 +5821,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [git-conflict-resolution.md](./git-conflict-resolution.md)
 - [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
 - [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
-<<<<<<< HEAD
 - [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
-=======
-- [git-conflicts-resolution-3.md](./git-conflicts-resolution-3.md)
->>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
 - [git-conflicts-resolution.deprecated.md](./git-conflicts-resolution.deprecated.md)
@@ -6376,11 +5933,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [login-widget-fix.md](./login-widget-fix.md)
 - [login-widget-livewire-binding-fix.md](./login-widget-livewire-binding-fix.md)
 - [login-widget-livewire-binding.md](./login-widget-livewire-binding.md)
-<<<<<<< HEAD
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
-=======
-- [login-widget-translation-audit-2.md](./login-widget-translation-audit-2.md)
->>>>>>> laraxot/dev
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
 - [login-widget-translation-audit-conflict.md](./login-widget-translation-audit-conflict.md)
@@ -6660,11 +6213,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [passport-oauth-wrapper-convention.md](./passport-oauth-wrapper-convention.md)
 - [passport-vs-socialite-clarification.md](./passport-vs-socialite-clarification.md)
 - [passport.md](./passport.md)
-<<<<<<< HEAD
 - [password-translation-completion-.md](./password-translation-completion-.md)
-=======
-- [password-translation-completion-2.md](./password-translation-completion-2.md)
->>>>>>> laraxot/dev
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-historical.md)
@@ -6686,11 +6235,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpinsights.md](./phpinsights.md)
 - [phpinsightss.md](./phpinsightss.md)
 - [phpmd-errors.md](./phpmd-errors.md)
-<<<<<<< HEAD
 - [phpmd-phpinsights-corrections-.md](./phpmd-phpinsights-corrections-.md)
-=======
-- [phpmd-phpinsights-corrections-2.md](./phpmd-phpinsights-corrections-2.md)
->>>>>>> laraxot/dev
 - [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
 - [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
 - [phpmd-report.md](./phpmd-report.md)
@@ -6703,19 +6248,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-compliance-status.md](./phpstan-compliance-status.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 - [phpstan-corrections-oauth-resources.md](./phpstan-corrections-oauth-resources.md)
-<<<<<<< HEAD
 - [phpstan-corrections-summary-.md](./phpstan-corrections-summary-.md)
 - [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
 - [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
 - [phpstan-corrections.md](./phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements-.md](./phpstan-dry-kiss-improvements-.md)
-=======
-- [phpstan-corrections-summary-2.md](./phpstan-corrections-summary-2.md)
-- [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
-- [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
-- [phpstan-corrections.md](./phpstan-corrections.md)
-- [phpstan-dry-kiss-improvements-4.md](./phpstan-dry-kiss-improvements-4.md)
->>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements.md)
 - [phpstan-dry-kiss-improvements-2.md](./phpstan-dry-kiss-improvements-2.md)
 - [phpstan-dry-kiss-improvements.deprecated.md](./phpstan-dry-kiss-improvements.deprecated.md)
@@ -6726,11 +6263,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-errors-resolution-roadmap.md](./phpstan-errors-resolution-roadmap.md)
 - [phpstan-errors-roadmap.md](./phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./phpstan-final-progress.md)
-<<<<<<< HEAD
 - [phpstan-fix-plan-.md](./phpstan-fix-plan-.md)
-=======
-- [phpstan-fix-plan-2.md](./phpstan-fix-plan-2.md)
->>>>>>> laraxot/dev
 - [phpstan-fix-plan-1.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-2.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-3.md](./phpstan-fix-plan.md)
@@ -6739,22 +6272,14 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fix-plan-user.md](./phpstan-fix-plan-user.md)
 - [phpstan-fix-plan.md](./phpstan-fix-plan.md)
 - [phpstan-fix-roadmap.md](./phpstan-fix-roadmap.md)
-<<<<<<< HEAD
 - [phpstan-fixes-.md](./phpstan-fixes-.md)
-=======
-- [phpstan-fixes-3.md](./phpstan-fixes-3.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-1.md](./phpstan-fixes-1.md)
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-2.md](./phpstan-fixes-2.md)
 - [phpstan-fixes-2025-1.md](./phpstan-fixes-historical-alias.md)
 - [phpstan-fixes.deprecated.md](./phpstan-fixes.deprecated.md)
-<<<<<<< HEAD
 - [phpstan-fixes-2025.md](./phpstan-fixes-historical.md)
-=======
-- [phpstan-fixes-4.md](./phpstan-fixes-historical.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-3-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-3-2.md](./phpstan-fixes.md)
 - [phpstan-fixes-3.md](./phpstan-fixes.md)
@@ -6769,11 +6294,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-conflict-276dc0.md](./phpstan-fixes-conflict-276dc0.md)
 - [phpstan-fixes-conflict-2e.md](./phpstan-fixes-conflict-2e.md)
 - [phpstan-fixes-conflict.md](./phpstan-fixes-conflict.md)
-<<<<<<< HEAD
 - [phpstan-fixes-gennaio-.md](./phpstan-fixes-gennaio-.md)
-=======
-- [phpstan-fixes-gennaio-3.md](./phpstan-fixes-gennaio-3.md)
->>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-1.md](./phpstan-fixes-gennaio-modulo-user.md)
 - [phpstan-fixes-gennaio-2.md](./phpstan-fixes-gennaio-2.md)
 - [phpstan-fixes-gennaiocomplete.md](./phpstan-fixes-gennaiocomplete.md)
@@ -6781,11 +6302,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-fixes-january.md](./phpstan-fixes-january.md)
 - [phpstan-fixes-passport.md](./phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./phpstan-fixes-roadmap.md)
-<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./phpstan-furious-debate-.md)
-=======
-- [phpstan-furious-debate-2.md](./phpstan-furious-debate-2.md)
->>>>>>> laraxot/dev
 - [phpstan-furious-debate-1.md](./phpstan-furious-debate-1.md)
 - [phpstan-furious-debate.md](./phpstan-furious-debate.md)
 - [phpstan-furiousebate.md](./phpstan-furiousebate.md)
@@ -6869,11 +6386,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [quality-status-nov.md](./quality-status-nov.md)
 - [quality-status.md](./quality-status.md)
 - [quality-tooling.md](./quality-tooling.md)
-<<<<<<< HEAD
 - [quality-tools-final-report-.md](./quality-tools-final-report-.md)
-=======
-- [quality-tools-final-report-2.md](./quality-tools-final-report-2.md)
->>>>>>> laraxot/dev
 - [quality-tools-final-report-1.md](./quality-tools-final-report.md)
 - [quality-tools-final-report.md](./quality-tools-final-report.md)
 - [quality-tools-final.md](./quality-tools-final.md)
@@ -6928,19 +6441,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [resource-translation-violation-critical.md](./resource-translation-violation-critical.md)
 - [resources-array-keys-philosophy.md](./resources-array-keys-philosophy.md)
 - [resources-array-keys.md](./resources-array-keys.md)
-<<<<<<< HEAD
 - [resources-corrections-summary-.md](./resources-corrections-summary-.md)
 - [resources-corrections-summary-1.md](./resources-corrections-summary.md)
 - [resources-corrections-summary.md](./resources-corrections-summary.md)
 - [resources-corrections.md](./resources-corrections.md)
 - [roadmap-.md](./roadmap-.md)
-=======
-- [resources-corrections-summary-2.md](./resources-corrections-summary-2.md)
-- [resources-corrections-summary-1.md](./resources-corrections-summary.md)
-- [resources-corrections-summary.md](./resources-corrections-summary.md)
-- [resources-corrections.md](./resources-corrections.md)
-- [roadmap-2.md](./roadmap-2.md)
->>>>>>> laraxot/dev
 - [roadmap-1-1.md](./roadmap-1-1.md)
 - [roadmap-1.md](./roadmap.md)
 - [roadmap-and-issues.md](./roadmap-and-issues.md)
@@ -7085,11 +6590,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translation-best-practices-1.md](./translation-best-practices-1.md)
 - [translation-best-practices-2.md](./translation-best-practices.md)
 - [translation-best-practices.md](./translation-best-practices.md)
-<<<<<<< HEAD
 - [translation-city-field-refactor-.md](./translation-city-field-refactor-.md)
-=======
-- [translation-city-field-refactor-4.md](./translation-city-field-refactor-4.md)
->>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2.md](./translation-city-field-refactor-2.md)
 - [translation-city-field-refactor.deprecated.md](./translation-city-field-refactor.deprecated.md)
@@ -7107,11 +6608,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [translation-keys.md](./translation-keys.md)
 - [translation-maintenance-log.md](./translation-maintenance-log.md)
 - [translation-resolution-prototype.md](./translation-resolution-prototype.md)
-<<<<<<< HEAD
 - [translation-syntax-fixes-.md](./translation-syntax-fixes-.md)
-=======
-- [translation-syntax-fixes-2.md](./translation-syntax-fixes-2.md)
->>>>>>> laraxot/dev
 - [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
 - [translation-syntaxes.md](./translation-syntaxes.md)
 - [translationes.md](./translationes.md)
@@ -7273,15 +6770,9 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## traits
 
-<<<<<<< HEAD
 - [has-authentication-log.md](./traits/has-authentication-log.md)
 - [has-teams.md](./traits/has-teams.md)
 - [has-tenants.md](./traits/has-tenants.md)
-=======
-- [has-authentication-log-2.md](./traits/has-authentication-log.md)
-- [has-teams-2.md](./traits/has-teams.md)
-- [has-tenants-2.md](./traits/has-tenants.md)
->>>>>>> laraxot/dev
 
 ## widgets
 
@@ -7293,11 +6784,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## wiki
 
-<<<<<<< HEAD
 - [AGENTS.md](./wiki/AGENTS.md)
-=======
-- [AGENTS.md](wiki/agents-2.md)
->>>>>>> laraxot/dev
 - [architecture.md](./wiki/architecture.md)
 - [auth-patterns.md](./wiki/auth-patterns.md)
 - [bmad-method.md](./wiki/bmad-method.md)

@@ -272,7 +272,7 @@ Quando un altro agente AI incontra problemi di schema:
 
 - `Modules/Xot/docs/MIGRATION_PHILOSOPHY.md`
 - `Modules/User/docs/database/migration-safety-rules-never-destroy-data.md`
-- `.opencode/rules/migration-safety.md`
+- `.opencode/rules/migrations.md`
 - `.opencode/skills/safe-migrations/SKILL.md`
 
 ---
@@ -282,7 +282,7 @@ Quando un altro agente AI incontra problemi di schema:
 - **GitHub Issue**: #24 (Migration Safety Rules)
 - **GitHub Discussion**: Forward-Only Database Evolution
 - **Skill**: `.opencode/skills/safe-migrations/SKILL.md`
-- **Memory**: `.opencode/memories/never-use-migrate-fresh.md`
+- **Memory**: `bashscripts/ai/wiki/memories/testing-pest-database.md`
 - **Docs**: `Modules/Xot/docs/MIGRATION_PHILOSOPHY.md`
 
 ---

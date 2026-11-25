@@ -12,8 +12,8 @@ discussions:
   - "https://github.com/laraxot/base_workorder_fila5/discussions/8"
 related:
   - ./migration-naming-religion-user.md
-  - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md
-  - ../../../../../../docs/wiki/concepts/xotbase-migration-religion.md
+  - ../../../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion
+  - ../../../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion
 ---
 
 # Teams — `owner_id` nella create (non in `add_*`)

@@ -36,7 +36,7 @@ TextColumn::make('name')->label('Nome');
 ## Collegamenti
 - [../teams.php](../../lang/it/teams.php)
 - [../../../../.cursor/rules/xotbaserelationmanager.mdc](../../../../.cursor/rules/xotbaserelationmanager.mdc)
-- [../../../../.windsurf/rules/xotbaserelationmanager.mdc](../../../../.windsurf/rules/xotbaserelationmanager.mdc)
+- [../../../../.windsurf/rules/xotbase-inheritance.md](../../../../.windsurf/rules/xotbase-inheritance.md)
 
 ## Regole Fondamentali per Laraxot PTVX
 
@@ -184,7 +184,4 @@ public function getTableActions(): array
 - [HasXotTable Trait](/laravel/modules/xot/docs/filament/xot_table.md)
 - [Regole di Traduzione per Filament](/laravel/modules/xot/docs/translation_rules.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
-=======
->>>>>>> laraxot/dev

@@ -62,15 +62,9 @@ protected function getConfirmationRoute(): string
 ```
 ## References
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
-<<<<<<< HEAD
-- [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
-- [Namespace Issues](../../../../docs/references/namespace-issues.md)
-- [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
-=======
 - [Filament Resource Guidelines](../../Activity/docs/filament-resource-guidelines-3.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../Activity/docs/filament-resource-guidelines-3.md)
->>>>>>> laraxot/dev
 # Registration Widget Documentation
 
 ## Overview
@@ -135,8 +129,4 @@ protected function getConfirmationRoute(): string
 ## References
 
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
-<<<<<<< HEAD
-- [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
-=======
 - [Filament Resource Guidelines](../../Activity/docs/filament-resource-guidelines-3.md)
->>>>>>> laraxot/dev

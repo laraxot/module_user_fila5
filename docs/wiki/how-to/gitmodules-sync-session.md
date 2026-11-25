@@ -10,7 +10,7 @@ issues:
 discussions: []
 related:
   - "../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md"
-  - "../../../../../../docs/chat/gitmodules-sync.md"
+  - "../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync"
 ---
 
 # Gitmodules sync session
@@ -20,7 +20,7 @@ Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md
 User (e ogni altro path in `gitmodules.ini`) è una **repository Git autonoma**,
 non un submodule. Lo status si legge con `git -C laravel/Modules/User`, mai
 dalla root e mai tramite Shell `working_directory`. Verificare
-`rev-parse --show-toplevel`. Canon: [no-git-submodules-module-repos.md](../../../../../../docs/wiki/memories/no-git-submodules-module-repos.md).
+`rev-parse --show-toplevel`. Canon: [git-sync-fleet-remotes.md#no-git-submodules-module-repos](../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#no-git-submodules-module-repos).
 
 ## Cosa fare su questo owner
 
@@ -31,5 +31,5 @@ dalla root e mai tramite Shell `working_directory`. Verificare
 ## Canon
 
 - Story: [../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md](../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md)
-- Report: [../../../../../../docs/chat/gitmodules-sync.md](../../../../../../docs/chat/gitmodules-sync.md)
+- Report: [../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync](../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync)
 - Issue base: https://github.com/provtv/base_ptv_fila5/issues/201

@@ -5,18 +5,7 @@ bmad: true
 status: complete
 owner: module:User
 tags: [user, migration, convention, schema]
-<<<<<<< HEAD
 qmd: "users migration owner convention story user"
-=======
-<<<<<<< .merge_file_HB80df
-<<<<<<< .merge_file_wgHRku
-qmd: "users migration owner convention story user"
-=======
->>>>>>> .merge_file_AGRIsL
-=======
-qmd: "users migration owner convention story user"
->>>>>>> .merge_file_PVFNhX
->>>>>>> laraxot/dev
 ---
 
 # User migration owner convention

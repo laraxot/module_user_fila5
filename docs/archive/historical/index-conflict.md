@@ -68,11 +68,7 @@ This document serves as the central index for the User module, providing guidanc
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
-<<<<<<< HEAD
 - [Profile Management](./profile-management.md)
-=======
-- [Profile Management](../../profile-management-3.md)
->>>>>>> laraxot/dev
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 

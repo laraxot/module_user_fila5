@@ -368,7 +368,7 @@ trait HasTeams
 
 - [jetstream-vs-laraxot-philosophy.md](jetstream-vs-laraxot-philosophy.md)
 - [/.cursor/rules/hasteams_jetstream_philosophy.mdc](../../.cursor/rules/hasteams_jetstream_philosophy.mdc)
-- [/.windsurf/rules/hasteams_jetstream_philosophy.mdc](../../.windsurf/rules/hasteams_jetstream_philosophy.mdc)
+- [/.windsurf/rules/principles-dry-kiss.md](../../.windsurf/rules/principles-dry-kiss.md)
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../Xot/docs/RELATION_X_USAGE.md)
 - [docs/USER_TRAITS_GUIDELINES.md](../../docs/USER_TRAITS_GUIDELINES.md)
 

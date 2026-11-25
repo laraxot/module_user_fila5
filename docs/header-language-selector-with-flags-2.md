@@ -23,7 +23,6 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
-<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [README modulo User](./README.md)
@@ -38,22 +37,6 @@ related:
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
-=======
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices-2.md)
-- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation-4.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation-keys-best-practices-2.md)
-- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation-4.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation-keys-best-practices-2.md)
-- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation-4.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation-keys-best-practices-2.md)
-- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation-4.md)
->>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
