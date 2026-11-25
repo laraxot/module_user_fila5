@@ -13,7 +13,18 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< HEAD
 qmd: "user operating focus"
+=======
+<<<<<<< .merge_file_plZgmU
+<<<<<<< .merge_file_wGTjf6
+qmd: "user operating focus"
+=======
+>>>>>>> .merge_file_T8PiPb
+=======
+qmd: "user operating focus"
+>>>>>>> .merge_file_NkWFET
+>>>>>>> laraxot/dev
 ---
 
 # User Module Operating Focus

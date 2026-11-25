@@ -27,17 +27,29 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 - Non va mai aggiunto `App` nel namespace
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md) nel modulo Cms
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+=======
+- [Convenzioni Namespace Filament](../../../../Cms/docs/convenzioni-namespace-filament-2.md) nel modulo Cms
+- [Convenzioni Namespace Filament](../../../../Cms/docs/convenzioni-namespace-filament-2.md) nel modulo Cms
+>>>>>>> laraxot/dev
 ## Punti di Integrazione
 - **Autenticazione e UI**: I componenti di autenticazione del modulo User sono integrati con l'interfaccia utente del modulo Cms
 - **Widgets condivisi**: Alcuni widget del modulo User sono utilizzati nelle dashboard del modulo Cms
 - **Filament Resources**: I resource di entrambi i moduli interagiscono in diverse parti dell'applicazione
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament nel modulo Cms](../../cms/project_docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../cms/project_docs/user-link.md)
 - [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
+=======
+- [Convenzioni Namespace Filament nel modulo Cms](../../../../Cms/docs/convenzioni-namespace-filament-2.md)
+- [Collegamento User-Cms nel modulo Cms](../../../../Lang/docs/user-link-3.md)
+- [Convenzioni Namespace Filament nel modulo Cms](../../../../Cms/docs/convenzioni-namespace-filament-2.md)
+- [Collegamento User-Cms nel modulo Cms](../../../../Lang/docs/user-link-3.md)
+>>>>>>> laraxot/dev
 ---
 ### Nota Importante
 Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
@@ -66,7 +78,11 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+=======
+- [Convenzioni Namespace Filament](../../../../Cms/docs/convenzioni-namespace-filament-2.md) nel modulo Cms
+>>>>>>> laraxot/dev
 
 ## Punti di Integrazione
 
@@ -76,8 +92,13 @@ Per dettagli specifici, consulta:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
+=======
+- [Convenzioni Namespace Filament nel modulo Cms](../../../../Cms/docs/convenzioni-namespace-filament-2.md)
+- [Collegamento User-Cms nel modulo Cms](../../../../Lang/docs/user-link-3.md)
+>>>>>>> laraxot/dev
 
 ---
 

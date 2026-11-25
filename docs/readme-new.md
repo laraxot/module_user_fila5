@@ -1018,8 +1018,13 @@ See [roadmap.md](./roadmap.md) for details.
 - [Tenant Module](../../Tenant/docs/README.md) - Enhanced tenancy
 
 ### Project Documentation
+<<<<<<< HEAD
 - [CLAUDE.md](../../../claude.md) - Project architecture
 - [Security Guidelines](../../../../docs/SECURITY.md)
+=======
+- [CLAUDE.md](../../Geo/docs/root-md-files/claude.md) - Project architecture
+- [Security Guidelines](../../Geo/docs/root-md-files/security-2.md)
+>>>>>>> laraxot/dev
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

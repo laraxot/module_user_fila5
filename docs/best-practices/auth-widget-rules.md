@@ -163,6 +163,10 @@ tests/Feature/Filament/Widgets/
 ## Collegamenti
 
 - [Widget Structure](widgets-structure-user.md)
+<<<<<<< HEAD
 - [Filament Best Practices](filament_best_practices.md)
+=======
+- [Filament Best Practices](filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

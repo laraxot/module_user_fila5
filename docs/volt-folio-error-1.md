@@ -11,7 +11,18 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 qmd: "volt folio error 1"
+=======
+<<<<<<< .merge_file_tp7mOK
+<<<<<<< .merge_file_7bn7lj
+qmd: "volt folio error 1"
+=======
+>>>>>>> .merge_file_YyMGH7
+=======
+qmd: "volt folio error 1"
+>>>>>>> .merge_file_rIb4Zm
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-error.md

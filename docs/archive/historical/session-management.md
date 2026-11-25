@@ -90,7 +90,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
+<<<<<<< HEAD
 - [Gestione del Profilo](./profile-management.md)
+=======
+- [Gestione del Profilo](../../profile-management-3.md)
+>>>>>>> laraxot/dev
 - [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
@@ -98,7 +102,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Indice del Modulo Utente](./INDEX.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
+<<<<<<< HEAD
 - [Gestione del Profilo](./profile-management.md)
+=======
+- [Gestione del Profilo](../../profile-management-3.md)
+>>>>>>> laraxot/dev
 - [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)

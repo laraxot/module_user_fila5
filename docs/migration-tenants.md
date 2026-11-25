@@ -218,7 +218,11 @@ done
 
 ### Laraxot Rules
 
+<<<<<<< HEAD
 - [Migration Rules](../../xot/docs/migration-rules.md)
+=======
+- [Migration Rules](../../Notify/docs/migration-rules-2.md)
+>>>>>>> laraxot/dev
 - [XotBaseMigration Guide](../../xot/docs/xotbasemigration-guide.md)
 - [Database Best Practices](../../xot/docs/database-best-practices.md)
 

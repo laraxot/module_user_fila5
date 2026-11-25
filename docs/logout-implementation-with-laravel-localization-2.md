@@ -23,10 +23,17 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+<<<<<<< HEAD
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
+=======
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel-localization-usage-2.md)
+- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Componenti Filament](/../../Cms/docs/filament-components-2.md)
+>>>>>>> laraxot/dev
 
 ## Panoramica
 

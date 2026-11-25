@@ -233,9 +233,15 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 
 ---
 
+<<<<<<< HEAD
 <!-- Contenuto unito da quality-gates-.md (rimozione date dai nomi file, issue #64) -->
 
 <!-- recovery from broken basename `quality-gates-.md` after docs-guardian mass rename -->
+=======
+<!-- Contenuto unito da quality-gates-4.md (rimozione date dai nomi file, issue #64) -->
+
+<!-- recovery from broken basename `quality-gates-4.md` after docs-guardian mass rename -->
+>>>>>>> laraxot/dev
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 

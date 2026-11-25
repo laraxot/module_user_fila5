@@ -37,9 +37,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
@@ -64,9 +70,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # User Module - SSO Providers Implementation
@@ -395,9 +407,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # User Module - SSO Providers Implementation
@@ -726,9 +744,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # User Module - SSO Providers Implementation
@@ -1057,9 +1081,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # User Module - SSO Providers Implementation
@@ -1388,9 +1418,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE

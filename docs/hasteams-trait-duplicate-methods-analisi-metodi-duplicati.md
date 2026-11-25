@@ -97,7 +97,11 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../Xot/docs/standards/readme.md)
+<<<<<<< HEAD
 - [Indice documentazione User](./INDEX.md)
+=======
+- [Indice documentazione User](./index-3.md)
+>>>>>>> laraxot/dev
 - [XotData helper](../../Xot/docs/standards/README.md)
 - [Indice documentazione User](./index.md)
 - [Modello User](./Models/User.md)

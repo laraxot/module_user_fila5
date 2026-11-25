@@ -24,10 +24,22 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PYk99O
+            'label' => 'Ora accesso',
+        ],
+        'ip_address' => [
+=======
+>>>>>>> laraxot/dev
             'label' => 'login_at',
         ],
         'ip_address' => [
             'label' => 'Indirizzo IP',
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ucAOoc
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -64,7 +76,14 @@ return [
             'description' => '',
         ],
         'user' => [
+<<<<<<< HEAD
             'label' => 'Utente',
+=======
+<<<<<<< .merge_file_PYk99O
+=======
+            'label' => 'Utente',
+>>>>>>> .merge_file_ucAOoc
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,6 +92,28 @@ return [
     'actions' => [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PYk99O
+            'label' => 'Riordina',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
+            'label' => 'Gestisci colonne',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+            'label' => 'Applica colonne',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+            'label' => 'Reimposta filtri',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+            'label' => 'Applica filtri',
+=======
+>>>>>>> laraxot/dev
             'label' => 'reorderRecords',
         ],
         'openColumnManager' => [
@@ -90,6 +131,10 @@ return [
         'applyFilters' => [
             'icon' => 'applyFilters',
             'label' => 'applyFilters',
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ucAOoc
+>>>>>>> laraxot/dev
         ],
         'openFilters' => [
             'icon' => 'openFilters',

@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_qB820a
+<<<<<<< .merge_file_bkEebP
+=======
+>>>>>>> .merge_file_bJ78vV
+>>>>>>> laraxot/dev
 ---
 title: "Errore nel Logout con Volt e Folio"
 type: note
 qmd: "volt folio logout error errore"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_qB820a
+=======
+>>>>>>> .merge_file_Ub8JIK
+=======
+>>>>>>> .merge_file_bJ78vV
+>>>>>>> laraxot/dev
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -119,9 +134,15 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md) 
+=======
+- [Best Practices Folio](./routing-best-practices-2.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./session-management-3.md) 
+>>>>>>> laraxot/dev
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore

@@ -65,7 +65,11 @@ Critical dependencies for User module:
 
 - `/docs/BOOST_SKILL_INSTALLATION_ERROR.md` - Issue analysis
 - `/docs/BOOST_SKILL_SOLUTION_PLAN.md` - Solution plan
+<<<<<<< HEAD
 - `Modules/Xot/docs/boost_skill_fix_summary.md` - Core module fix
+=======
+- `Modules/Xot/docs/boost-skill-fix-summary-2.md` - Core module fix
+>>>>>>> laraxot/dev
 
 ## Lessons Learned
 

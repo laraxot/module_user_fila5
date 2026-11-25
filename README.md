@@ -488,7 +488,11 @@ php artisan test --filter=TeamTest
 - [⚙️ Configurazione](docs/configuration.md)
 - [🧪 Testing](docs/testing.md)
 - [🚀 Deployment](docs/deployment.md)
+<<<<<<< HEAD
 - [🔒 Sicurezza](docs/SECURITY.md)
+=======
+- [🔒 Sicurezza](../Geo/docs/root-md-files/security-2.md)
+>>>>>>> laraxot/dev
 
 ### 🎨 **Guide Architetturali**
 - [🏗️ Multi-Type Architecture](docs/multi-type-architecture.md)

@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_EHZ43R
+<<<<<<< .merge_file_o5df8B
+=======
+>>>>>>> .merge_file_T8UYvu
+>>>>>>> laraxot/dev
 ---
 title: "Refactor Completo Campi \"Città\" - Modulo User"
 type: note
 qmd: "translation city field refactor 08 completo"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_EHZ43R
+=======
+>>>>>>> .merge_file_YNVSsZ
+=======
+>>>>>>> .merge_file_T8UYvu
+>>>>>>> laraxot/dev
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -164,7 +179,11 @@ Tutti i file corretti mantengono:
 
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
 - [SaluteOra Translation Audit](../../SaluteOra/docs/translation_audit_city_fields.md)
+<<<<<<< HEAD
 - [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
+=======
+- [Translation Syntax Fixes](../../../docs/translation-syntax-fixes-2.md)
+>>>>>>> laraxot/dev
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
 ## Prevenzione Futura

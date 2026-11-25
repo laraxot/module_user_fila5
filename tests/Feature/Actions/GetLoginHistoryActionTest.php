@@ -4,7 +4,14 @@ declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use InvalidArgumentException;
+=======
+<<<<<<< .merge_file_uFE9hz
+=======
+use InvalidArgumentException;
+>>>>>>> .merge_file_AFoRPC
+>>>>>>> laraxot/dev
 use Modules\User\Actions\Login\GetLoginHistoryAction;
 use Modules\User\Tests\TestCase;
 

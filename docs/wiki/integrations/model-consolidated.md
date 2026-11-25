@@ -48,9 +48,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
@@ -75,9 +81,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -251,9 +263,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -427,9 +445,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -603,9 +627,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -779,9 +809,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -999,9 +1035,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -1219,9 +1261,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 - [Analisi Completa](./model-inheritance-analysis.md)
@@ -1251,9 +1299,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
@@ -1278,9 +1332,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Regole di Ereditarietà dei Modelli - Modulo User
@@ -1569,9 +1629,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Ereditarietà Modelli - Modulo User
@@ -1745,9 +1811,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -2493,7 +2565,11 @@ Dopo le modifiche, eseguire:
 
 ## model_inheritance_fixes
 
+<<<<<<< HEAD
 *Consolidated from: `model_inheritance_fixes.md`*
+=======
+*Consolidated from: `model-inheritance-fixes-4.md`*
+>>>>>>> laraxot/dev
 
 
 ## Data Implementazione
@@ -2683,7 +2759,22 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+=======
+<<<<<<< .merge_file_v7EcpL
+<<<<<<< HEAD
+- [Analisi Completa](./model-inheritance-analysis-3.md)
+- [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
+<<<<<<< .merge_file_Edg1kc
+=======
+=======
+<<<<<<< HEAD
+- [Analisi Completa](./model-inheritance-analysis-3.md)
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> .merge_file_BQMhDZ
+>>>>>>> laraxot/dev
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2704,9 +2795,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
@@ -2902,7 +2999,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../Tenant/docs/modelli_factory_seeder_analisi.md)
+<<<<<<< HEAD
 - [Notify Module](../../../../Notify/docs/modelli_factory_seeder_analisi.md)
+=======
+- [Notify Module](../../../../Notify/docs/modelli-factory-seeder-analisi-2.md)
+>>>>>>> laraxot/dev
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
@@ -2927,9 +3028,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Models Analysis - User Module
@@ -3008,9 +3115,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/models-analysis.md

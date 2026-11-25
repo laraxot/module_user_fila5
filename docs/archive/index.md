@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -14,6 +15,30 @@
 - [gdpr.md](./-integration/gdpr.md)
 - [json.md](./-integration/json.md)
 - [links.md](./-integration/links.md)
+=======
+# User Module Documentation
+
+## Overview
+This document serves as the central index for the User module, providing guidance on managing user-related functionality within a Laravel application. The User module handles authentication, authorization, profile management, and related features in a modular and reusable way.
+
+## Key Principles
+1. **Modularity**: The User module is designed to be reusable across different projects, maintaining generic functionality.
+2. **Extensibility**: Allows for customization and extension to meet specific project needs without altering core code.
+3. **Security**: Implements best practices for authentication, session management, and data protection.
+
+## Core Features
+- **Authentication**: Handles user login, logout, and session management.
+- **Authorization**: Manages roles and permissions for access control.
+- **Profile Management**: Provides functionality for user profile creation and updates.
+- **Integration**: Works seamlessly with other modules like Notify for notifications.
+
+<<<<<<< .merge_file_oNVEUM
+- [eav.md](./-integration/eav.md)
+- [filament-3.md](../../../Activity/docs/filament-3.md)
+- [gdpr.md](./-integration/gdpr.md)
+- [json.md](./-integration/json.md)
+- [links-2.md](../../../Gdpr/docs/links-2.md)
+>>>>>>> laraxot/dev
 - [passport.md](./-integration/passport.md)
 - [payment.md](./-integration/payment.md)
 - [phpstan.md](./-integration/phpstan.md)
@@ -33,6 +58,7 @@
 - [two-factor-1.md](./-integration/two-factor.md)
 - [two-factor-2.md](./-integration/two-factor.md)
 - [two-factor.md](./-integration/two-factor.md)
+<<<<<<< HEAD
 
 ## -integration/archive
 
@@ -55,12 +81,64 @@
 - [architecture-rules.md](./architecture/architecture-rules.md)
 - [architecture.md](./architecture/architecture.md)
 - [auth-blade-structure.md](./architecture/auth-blade-structure.md)
+=======
+=======
+## Implementation Guidelines
+>>>>>>> .merge_file_YHHjXF
+
+### 1. Module Structure
+- The User module follows a standard structure with directories for models, controllers, services, and views to ensure clarity and maintainability.
+
+<<<<<<< .merge_file_oNVEUM
+- [spatie-permissions.md](../-integration/archive/spatie-permissions.md)
+- [terms-and-conditions.md](../-integration/archive/terms-and-conditions.md)
+- [two-factor.md](../-integration/archive/two-factor.md)
+=======
+### 2. BaseUser Model
+- Use the `BaseUser` model as the foundation for user-related data and logic, extending it as needed for specific types.
+  ```php
+  namespace Modules\User\Models;
+>>>>>>> .merge_file_YHHjXF
+
+  class User extends BaseUser
+  {
+      // Custom user logic
+  }
+  ```
+
+<<<<<<< .merge_file_oNVEUM
+- [spatie-permissions.md](../-integration/archive/spatie-permissions.md)
+- [terms-and-conditions.md](../-integration/archive/terms-and-conditions.md)
+- [two-factor.md](../-integration/archive/two-factor.md)
+=======
+### 3. Authentication
+- Implement authentication using Laravel's built-in systems or custom solutions integrated with Filament for admin interfaces.
+>>>>>>> .merge_file_YHHjXF
+
+### 4. Routing
+- Define user-related routes in a dedicated `routes` directory, ensuring they are prefixed with the appropriate locale.
+
+## Common Issues and Fixes
+- **Authentication Failures**: Ensure correct configuration of auth providers and middleware for user routes.
+- **Permission Conflicts**: Verify role and permission assignments to avoid access issues.
+- **Session Expiry**: Implement proper session management to handle user logout and timeouts securely.
+
+## Documentation and Updates
+- Document any custom implementations or deviations from standard User module practices in the relevant documentation folder.
+- Update this index if new features or significant changes are introduced to the User module.
+
+<<<<<<< .merge_file_oNVEUM
+- [architecture-rules.md](./architecture/architecture-rules.md)
+- [architecture.md](./architecture/architecture.md)
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+>>>>>>> laraxot/dev
 - [component-registration.md](./architecture/component-registration.md)
 - [readme.md](./architecture/readme.md)
 - [structure.md](./architecture/structure.md)
 - [testing-structure.md](./architecture/testing-structure.md)
 - [user-gdpr-decoupling.md](./architecture/user-gdpr-decoupling.md)
 - [user-gdpr-oupling.md](./architecture/user-gdpr-oupling.md)
+<<<<<<< HEAD
 
 ## archive
 
@@ -84,12 +162,47 @@
 - [auth-widgets-view-namespaces.md](./archive/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./archive/avatar-implementation.md)
 - [avatar-implementation.md](./archive/avatar-implementation.md)
+=======
+=======
+## Links to Related Documentation
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth_pages_implementation.md)
+- [Profile Management](./profile_management.md)
+- [Routing Best Practices](./routing_best_practices.md)
+- [Session Management](./session_management.md)
+>>>>>>> .merge_file_YHHjXF
+
+## Sottocartelle
+
+<<<<<<< .merge_file_oNVEUM
+- [actions-path-convention-2.md](../actions-path-convention-2.md)
+- [actions-structure-1.md](../actions-structure-4.md)
+- [actions-structure-4.md](../actions-structure-4.md)
+- [architecture-rules.md](./archive/architecture-rules.md)
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-components-best-practices-1.md](../auth-components-best-practices-4.md)
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-login-implementation-1.md](../auth-login-implementation-4.md)
+- [auth-login-implementation-4.md](../auth-login-implementation-4.md)
+- [auth-logout-blade-3.md](../auth-logout-blade-3.md)
+- [auth-logout-implementation-1.md](../auth-logout-implementation-4.md)
+- [auth-logout-implementation-4.md](../auth-logout-implementation-4.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-pages-implementation-1.md](../auth-pages-implementation-3.md)
+- [auth-pages-implementation-3.md](../auth-pages-implementation-3.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widgets-view-namespaces-1.md](../auth-widgets-view-namespaces-2.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [avatar-implementation-1.md](../avatar-implementation-3.md)
+- [avatar-implementation-3.md](../avatar-implementation-3.md)
+>>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./archive/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./archive/baseuser-refactoring.md)
 - [baseuser-spatie-duplicates-analysis.md](./archive/baseuser-spatie-duplicates-analysis.md)
+<<<<<<< HEAD
 - [business-logic-analysis.md](./archive/business-logic-analysis.md)
 - [business-logic-deep-dive.md](./archive/business-logic-deep-dive.md)
 - [cms-link-1.md](./archive/cms-link.md)
@@ -109,15 +222,41 @@
 - [dentist-moderation-approach.md](./archive/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./archive/directory-structure-checklist.md)
 - [documentation-standards.md](./archive/documentation-standards.md)
+=======
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+- [business-logic-deep-dive.md](./archive/business-logic-deep-dive.md)
+- [cms-link-1-2.md](./archive/cms-link.md)
+- [cms-link.md](./archive/cms-link.md)
+- [code-conventions-3.md](../code-conventions-3.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [component-verification-rules-1.md](../component-verification-rules-2.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [conflict-resolution-passwordresetwidget-3.md](../conflict-resolution-passwordresetwidget-3.md)
+- [conflict-resolution-report-3.md](../conflict-resolution-report-3.md)
+- [console-commands-philosophy.md](./archive/console-commands-philosophy.md)
+- [cross-database-relations-issue-3.md](../cross-database-relations-issue-3.md)
+- [custom-login-1.md](../../../Geo/docs/raw/history/custom-login-2.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+- [directory-structure-checklist-3.md](../directory-structure-checklist-3.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+>>>>>>> laraxot/dev
 - [dry-kiss-analysis-.md](./archive/dry-kiss-analysis-.md)
 - [dry-kiss-analysis-1.md](./archive/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./archive/dry-kiss-analysis-2025-10-15.deprecated.md)
 - [dry-kiss-analysis.md](./archive/dry-kiss-analysis.md)
+<<<<<<< HEAD
 - [error-handling.md](./archive/error-handling.md)
+=======
+- [error-handling-2.md](../error-handling-2.md)
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./archive/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./archive/filament-4-widget-rendering-guide.md)
 - [filament-4-widget-rendering.md](./archive/filament-4-widget-rendering.md)
 - [filament-4x-compatibility.md](./archive/filament-4x-compatibility.md)
+<<<<<<< HEAD
 - [filament-components-reference.md](./archive/filament-components-reference.md)
 - [filament-errors.md](./archive/filament-errors.md)
 - [filament-namespace-rules-1.md](./archive/filament-namespace-rules.md)
@@ -139,11 +278,35 @@
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
+=======
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-errors-3.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-namespace-rules-1.md](../filament-namespace-rules-2.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-relation-managers-1.md](../filament-relation-managers-3.md)
+- [filament-relation-managers-3.md](../filament-relation-managers-3.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+- [filament4-migration.md](./archive/filament4-migration.md)
+- [fullcalendar-scheduler-documentation-summary-1.md](./archive/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-documentation-summary.md](./archive/fullcalendar-scheduler-documentation-summary.md)
+- [fullcalendar-scheduler-license-1.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-license-key-invalid-2.md](../fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-troubleshooting-3.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-3.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-quick-reference-1.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [fullcalendar-scheduler-quick-reference-4.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [generic-user-moderation-strategy-1.md](../generic-user-moderation-strategy-3.md)
+- [generic-user-moderation-strategy-3.md](../generic-user-moderation-strategy-3.md)
+- [git-conflict-resolution-3.md](../git-conflict-resolution-3.md)
+- [git-conflicts-resolution-2.md](./archive/git-conflicts-resolution-2.md)
+>>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./archive/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./archive/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./archive/git-conflicts-resolution-2025-01-27.deprecated.md)
 - [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-3.md)
 - [git-conflicts-resolution.md](./archive/git-conflicts-resolution.md)
+<<<<<<< HEAD
 - [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice.md](./archive/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
@@ -201,12 +364,72 @@
 - [mcp-server-recommended.md](./archive/mcp-server-recommended.md)
 - [metodi-duplicati-analisi.md](./archive/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./archive/metrics-dashboard.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-currentteam-method-choice-4.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
+- [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [hasteams-trait-filosofia-e-correzione-completa-4.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [header-components-2.md](../header-components-2.md)
+- [header-language-avatar-implementation-1-2.md](./archive/header-language-avatar-implementation.md)
+- [header-language-avatar-implementation.md](./archive/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1-2.md](./archive/header-language-selector-with-flags.md)
+- [header-language-selector-with-flags.md](./archive/header-language-selector-with-flags.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+- [index.md](./archive/index.md)
+- [jetstream-vs-laraxot-philosophy-1.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [lang-link-1-2.md](./archive/lang-link.md)
+- [lang-link.md](./archive/lang-link.md)
+- [livewire-namespace-3.md](../livewire-namespace-3.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-conversion-3.md](../login-widget-conversion-3.md)
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-blade-analysis-1.md](../logout-blade-analysis-4.md)
+- [logout-blade-analysis-4.md](../logout-blade-analysis-4.md)
+- [logout-blade-conclusions-1.md](../logout-blade-conclusions-3.md)
+- [logout-blade-conclusions-3.md](../logout-blade-conclusions-3.md)
+- [logout-blade-corrected-analysis-1.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-corrected-analysis-4.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-error-analysis-1.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-error-analysis-2.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-implementation-1.md](../logout-blade-implementation-3.md)
+- [logout-blade-implementation-3.md](../logout-blade-implementation-3.md)
+- [logout-blade-structure-3.md](../logout-blade-structure-3.md)
+- [logout-error-analysis-1.md](../logout-error-analysis-3.md)
+- [logout-error-analysis-3.md](../logout-error-analysis-3.md)
+- [logout-event-error-1.md](../logout-event-error-3.md)
+- [logout-event-error-3.md](../logout-event-error-3.md)
+- [logout-filament-widget-1.md](../logout-filament-widget-2.md)
+- [logout-filament-widget-corrected-1.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-corrected-4.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-2.md](../logout-filament-widget-2.md)
+- [logout-implementation-best-practices-1.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-error-1.md](../logout-implementation-error-4.md)
+- [logout-implementation-error-4.md](../logout-implementation-error-4.md)
+- [logout-implementation-with-laravel-localization-1.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-implementation-with-laravel-localization-4.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-implementation-1.md](../logout-page-implementation-2.md)
+- [logout-page-implementation-2.md](../logout-page-implementation-2.md)
+- [logout-security-2.md](../logout-security-2.md)
+- [mcp-integration.md](./archive/mcp-integration.md)
+- [mcp-server-recommended.md](./archive/mcp-server-recommended.md)
+- [metodi-duplicati-analisi.md](./archive/metodi-duplicati-analisi.md)
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+>>>>>>> laraxot/dev
 - [migration-duplicate-resolution.md](./archive/migration-duplicate-resolution.md)
 - [migration-filament-4.md](./archive/migration-filament.md)
 - [migrazione-filament-4.md](./archive/migrazione-filament.md)
 - [model-inheritance-analysis.md](./archive/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./archive/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./archive/modelli-factory-seeder-analisi.md)
+<<<<<<< HEAD
 - [moderation-doctor.md](./archive/moderation-doctor.md)
 - [moderation-wizard-generic.md](./archive/moderation-wizard-generic.md)
 - [module-analysis-1.md](./archive/module-analysis-1.md)
@@ -216,12 +439,24 @@
 - [namespace-conventions-1.md](./archive/namespace-conventions.md)
 - [namespace-conventions.md](./archive/namespace-conventions.md)
 - [navigation-structure.md](./archive/navigation-structure.md)
+=======
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [module-analysis-1.md](./archive/module-analysis-1.md)
+- [module-analysis-3.md](../../../Activity/docs/module-analysis-3.md)
+- [module-structure.md](./archive/module-structure.md)
+- [module-user-1.md](../../../Geo/docs/raw/history/module-user-2.md)
+- [namespace-conventions-1.md](./archive/namespace-conventions.md)
+- [namespace-conventions.md](./archive/namespace-conventions.md)
+- [navigation-structure-3.md](../navigation-structure-3.md)
+>>>>>>> laraxot/dev
 - [optimization-analysis.md](./archive/optimization-analysis.md)
 - [optimization-recommendations.md](./archive/optimization-recommendations.md)
 - [parental-inheritance-1.md](./archive/parental-inheritance.md)
 - [password-translation-completion-2025.md](./archive/password-translation-completion-2025.md)
 - [password-translation-completion.md](./archive/password-translation-completion.md)
 - [path-conventions.md](./archive/path-conventions.md)
+<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./archive/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./archive/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -308,10 +543,107 @@
 - [actions-path-convention.md](./archive/historical/actions-path-convention.md)
 - [actions-structure-1.md](./archive/historical/actions-structure-1.md)
 - [actions-structure.md](./archive/historical/actions-structure.md)
+=======
+- [phpstan-dry-kiss-improvements-4.md](../phpstan-dry-kiss-improvements-4.md)
+- [phpstan-dry-kiss-improvements-1.md](./archive/phpstan-dry-kiss-improvements-1.md)
+- [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./archive/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
+- [phpstan-dry-kiss-improvements.md](./archive/phpstan-dry-kiss-improvements.md)
+- [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
+- [phpstan-fixes-1-2.md](./archive/phpstan-fixes-correzioni-livello-modulo-user.md)
+- [phpstan-fixes-2.md](./archive/phpstan-fixes-2.md)
+- [phpstan-fixes-2025-10-01.deprecated.md](./archive/phpstan-fixes-2025-10-01.deprecated.md)
+- [phpstan-fixes-4.md](../phpstan-fixes-4.md)
+- [phpstan-fixes-3.md](./archive/phpstan-fixes-3.md)
+- [phpstan-fixes.md](./archive/phpstan-fixes.md)
+- [phpstan-level-10-fixes.md](./archive/phpstan-level-10-fixes.md)
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+- [profile-management-3.md](../profile-management-3.md)
+- [quality-status-11.md](./archive/quality-status.md)
+- [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [readme-fullcalendar-scheduler-1.md](../readme-fullcalendar-scheduler-2.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+- [registration-widget-1.md](../registration-widget-2.md)
+- [registration-widget-fileupload-fix-1.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-update-3.md](../registration-widget-update-3.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+- [roles-permissions-1.md](../roles-permissions-2.md)
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-error-solution-3.md](../routing-error-solution-3.md)
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [service-provider-warning-2.md](../service-provider-warning-2.md)
+- [session-management-3.md](../session-management-3.md)
+- [spatie-permissions-methods.md](./archive/spatie-permissions-methods.md)
+- [sso-providers-implementation.md](./archive/sso-providers-implementation.md)
+- [team-bindings-fix-1.md](../team-bindings-fix-2.md)
+- [team-bindings-fix-2.md](../team-bindings-fix-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+- [testing-rules-2.md](../testing-rules-2.md)
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+- [traits-complete-guide-1.md](./archive/traits-complete-guide.md)
+- [traits-complete-guide.md](./archive/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](../traits-hasteams-analisi-corretta-4.md)
+- [traits-hasteams-analisi-corretta-4.md](../traits-hasteams-analisi-corretta-4.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+- [translation-city-field-refactor-2.md](./archive/translation-city-field-refactor-2.md)
+- [translation-city-field-refactor-1.md](./archive/translation-city-field-refactor-1.md)
+- [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/translation-city-field-refactor-2025-08-08.deprecated.md)
+- [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [updates-12.md](./archive/updates.md)
+- [user-factory-advanced-integration-1.md](./archive/user-factory-advanced-integration.md)
+- [user-factory-advanced-integration.md](./archive/user-factory-advanced-integration.md)
+- [user-factory-complete-ecosystem-integration-1.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-integration-1.md](../user-factory-integration-3.md)
+- [user-factory-integration-3.md](../user-factory-integration-3.md)
+- [user-invitation.md](./archive/user-invitation.md)
+- [user-moderation-strategy-1.md](../user-moderation-strategy-3.md)
+- [user-moderation-strategy-3.md](../user-moderation-strategy-3.md)
+- [userfactory-advanced-implementation-complete-3.md](../userfactory-advanced-implementation-complete-3.md)
+- [volt-blade-implementation-1.md](../volt-blade-implementation-4.md)
+- [volt-blade-implementation-error-1.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-error-4.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-4.md](../volt-blade-implementation-4.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-folio-auth-implementation-1.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-auth-implementation-4.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-logout-1.md](../volt-folio-logout-3.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-error-1.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-error-2.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-3.md](../volt-folio-logout-3.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-3.md](../volt-logout-3.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+- [widget-rendering-analysis.md](./archive/widget-rendering-analysis.md)
+- [widget-translation-rules-1.md](../widget-translation-rules-2.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+- [widgets-structure-2.md](../widgets-structure-2.md)
+=======
+### Models
+- [Index](./models/index.md) - Indice della documentazione sui modelli
+- [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
+>>>>>>> .merge_file_YHHjXF
+
+### Folio e Blade
+- [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
+- [Componenti](./components/index.md) - Documentazione sui componenti
+
+<<<<<<< .merge_file_oNVEUM
+- [actions-path-convention-2.md](../actions-path-convention-2.md)
+- [actions-structure-1.md](./archive/historical/actions-structure-1.md)
+- [actions-structure-4.md](../actions-structure-4.md)
+>>>>>>> laraxot/dev
 - [advanced-user-architecture.md](./archive/historical/advanced-user-architecture.md)
 - [analisi-metodi-duplicati.md](./archive/historical/analisi-metodi-duplicati.md)
 - [analysis.md](./archive/historical/analysis.md)
 - [architecture-rules.md](./archive/historical/architecture-rules.md)
+<<<<<<< HEAD
 - [auth-blade-structure.md](./archive/historical/auth-blade-structure.md)
 - [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-componenti-autenticazione.md)
 - [auth-components-best-practices.md](./archive/historical/auth-components-best-practices.md)
@@ -329,16 +661,40 @@
 - [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
 - [avatar-implementation-1.md](./archive/historical/avatar-implementation-implementazione.md)
 - [avatar-implementation.md](./archive/historical/avatar-implementation.md)
+=======
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-components-best-practices-1.md](./archive/historical/auth-components-best-practices-componenti-autenticazione.md)
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-login-implementation-1.md](./archive/historical/auth-login-implementation-implementazione-corretta-pagina.md)
+- [auth-login-implementation-4.md](../auth-login-implementation-4.md)
+- [auth-logout-blade-3.md](../auth-logout-blade-3.md)
+- [auth-logout-implementation-1.md](../auth-logout-implementation-4.md)
+- [auth-logout-implementation-4.md](../auth-logout-implementation-4.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-pages-implementation-1.md](./archive/historical/auth-pages-implementation-implementazione-corretta-pagine.md)
+- [auth-pages-implementation-3.md](../auth-pages-implementation-3.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widgets-view-namespaces-1.md](./archive/historical/auth-widgets-view-namespaces-widget-autenticazione-namespace.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [authentication-troubleshooting.md](./archive/historical/authentication-troubleshooting.md)
+- [avatar-implementation-1.md](./archive/historical/avatar-implementation-implementazione.md)
+- [avatar-implementation-3.md](../avatar-implementation-3.md)
+>>>>>>> laraxot/dev
 - [baseuser-conflicts.md](./archive/historical/baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./archive/historical/baseuser-dry-violation-analysis.md)
 - [baseuser-refactoring-completed.md](./archive/historical/baseuser-refactoring-completed.md)
 - [baseuser-spatie-duplicates-analysis.md](./archive/historical/baseuser-spatie-duplicates-analysis.md)
 - [bottlenecks.md](./archive/historical/bottlenecks.md)
+<<<<<<< HEAD
 - [business-logic-analysis.md](./archive/historical/business-logic-analysis.md)
+=======
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+>>>>>>> laraxot/dev
 - [business-logic-deep-dive.md](./archive/historical/business-logic-deep-dive.md)
 - [case-sensitivity-rules.md](./archive/historical/case-sensitivity-rules.md)
 - [chartjs-datalabels-user-integration.md](./archive/historical/chartjs-datalabels-user-integration.md)
 - [charts-implementation.md](./archive/historical/charts-implementation.md)
+<<<<<<< HEAD
 - [cms-link-1.md](./archive/historical/cms-link-collegamento-al-modulo.md)
 - [cms-link.md](./archive/historical/cms-link.md)
 - [code-optimization-analysis.md](./archive/historical/code-optimization-analysis.md)
@@ -349,10 +705,23 @@
 - [conflict-resolution-passwordresetwidget.md](./archive/historical/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./archive/historical/conflict-resolution-report.md)
 - [conflict-resolution.md](./archive/historical/conflict-resolution.md)
+=======
+- [cms-link-1-2.md](./archive/historical/cms-link-collegamento-al-modulo.md)
+- [cms-link.md](./archive/historical/cms-link.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-tools.md](./archive/historical/code-quality-tools.md)
+- [component-verification-rules-1.md](../component-verification-rules-2.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [conflict-resolution-passwordresetwidget-3.md](../conflict-resolution-passwordresetwidget-3.md)
+- [conflict-resolution-report-3.md](../conflict-resolution-report-3.md)
+- [conflict-resolution-2.md](../../../Geo/docs/conflict-resolution-2.md)
+>>>>>>> laraxot/dev
 - [conflicts.md](./archive/historical/conflicts.md)
 - [console-commands-philosophy.md](./archive/historical/console-commands-philosophy.md)
 - [coverage.md](./archive/historical/coverage.md)
 - [critical-filament-rule-getinfolistschema-string-keys.md](./archive/historical/critical-filament-rule-getinfolistschema-string-keys.md)
+<<<<<<< HEAD
 - [cross-database-relations-issue.md](./archive/historical/cross-database-relations-issue.md)
 - [custom-login-1.md](./archive/historical/custom-login-implementazione-personalizzato.md)
 - [custom-login.md](./archive/historical/custom-login.md)
@@ -368,6 +737,23 @@
 - [doctor-registration-widget.md](./archive/historical/doctor-registration-widget.md)
 - [doctor-registration.md](./archive/historical/doctor-registration.md)
 - [documentation-standards.md](./archive/historical/documentation-standards.md)
+=======
+- [cross-database-relations-issue-3.md](../cross-database-relations-issue-3.md)
+- [custom-login-1.md](./archive/historical/custom-login-implementazione-personalizzato.md)
+- [custom-login-2.md](../../../Geo/docs/raw/history/custom-login-2.md)
+- [cyclomatic-complexity-report.md](./archive/historical/cyclomatic-complexity-report.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-issues-1.md](./archive/historical/database-issues-user-module.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [database-population.md](./archive/historical/database-population.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+- [dependency-rules.md](./archive/historical/dependency-rules.md)
+- [directory-structure-checklist-3.md](../directory-structure-checklist-3.md)
+- [docs-location-policy.md](./archive/historical/docs-location-policy.md)
+- [doctor-registration-widget.md](./archive/historical/doctor-registration-widget.md)
+- [doctor-registration.md](./archive/historical/doctor-registration.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+>>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./archive/historical/dry-kiss-analysis-modulo-user.md)
 - [dry-kiss-analysis-conflict-018b09.md](./archive/historical/dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./archive/historical/dry-kiss-analysis-conflict.md)
@@ -378,7 +764,11 @@
 - [eav.md](./archive/historical/eav.md)
 - [eloquent-properties-best-practices.md](./archive/historical/eloquent-properties-best-practices.md)
 - [email-doctor-registration.md](./archive/historical/email-doctor-registration.md)
+<<<<<<< HEAD
 - [error-handling.md](./archive/historical/error-handling.md)
+=======
+- [error-handling-2.md](../error-handling-2.md)
+>>>>>>> laraxot/dev
 - [external-packages-inheritance-pattern.md](./archive/historical/external-packages-inheritance-pattern.md)
 - [factory-audit-lessons-learned.md](./archive/historical/factory-audit-lessons-learned.md)
 - [factory-creation-status.md](./archive/historical/factory-creation-status.md)
@@ -390,6 +780,7 @@
 - [filament-4x-compatibility-conflict.md](./archive/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./archive/historical/filament-4x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./archive/historical/filament-auth-pages-exceptions.md)
+<<<<<<< HEAD
 - [filament-best-practices.md](./archive/historical/filament-best-practices.md)
 - [filament-charts-implementation.md](./archive/historical/filament-charts-implementation.md)
 - [filament-components-reference.md](./archive/historical/filament-components-reference.md)
@@ -404,6 +795,22 @@
 - [filament-resources-organization.md](./archive/historical/filament-resources-organization.md)
 - [filament-resources-philosophical-debate.md](./archive/historical/filament-resources-philosophical-debate.md)
 - [filament.md](./archive/historical/filament.md)
+=======
+- [filament-best-practices-2.md](../../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [filament-charts-implementation.md](./archive/historical/filament-charts-implementation.md)
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-errors-3.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-filters-and-widgets.md](./archive/historical/filament-filters-and-widgets.md)
+- [filament-namespace-rules-1.md](../filament-namespace-rules-2.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-nesting-opportunities.md](./archive/historical/filament-nesting-opportunities.md)
+- [filament-relation-managers-1.md](./archive/historical/filament-relation-managers-modulo-user.md)
+- [filament-relation-managers-3.md](../filament-relation-managers-3.md)
+- [filament-resources-coverage-analysis.md](./archive/historical/filament-resources-coverage-analysis.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+- [filament-resources-philosophical-debate.md](./archive/historical/filament-resources-philosophical-debate.md)
+- [filament-3.md](../../../Activity/docs/filament-3.md)
+>>>>>>> laraxot/dev
 - [filament4-migration.md](./archive/historical/filament4-migration.md)
 - [file-naming-rules.md](./archive/historical/file-naming-rules.md)
 - [filosofia-modulo-user.md](./archive/historical/filosofia-modulo-user.md)
@@ -412,6 +819,7 @@
 - [folio-volt-best-practices.md](./archive/historical/folio-volt-best-practices.md)
 - [fullcalendar-scheduler-documentation-summary-1.md](./archive/historical/fullcalendar-scheduler-documentation-summary-documentazione-completa.md)
 - [fullcalendar-scheduler-documentation-summary.md](./archive/historical/fullcalendar-scheduler-documentation-summary.md)
+<<<<<<< HEAD
 - [fullcalendar-scheduler-license-1.md](./archive/historical/fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license-troubleshooting.md](./archive/historical/fullcalendar-scheduler-license-troubleshooting.md)
@@ -423,11 +831,25 @@
 - [generic-user-moderation-strategy.md](./archive/historical/generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./archive/historical/get-new-password-action-business-logic.md)
 - [git-conflict-resolution.md](./archive/historical/git-conflict-resolution.md)
+=======
+- [fullcalendar-scheduler-license-1.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-troubleshooting-3.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-3.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-quick-reference-1.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [fullcalendar-scheduler-quick-reference-4.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [gdpr.md](./archive/historical/gdpr.md)
+- [generic-user-moderation-strategy-1.md](../generic-user-moderation-strategy-3.md)
+- [generic-user-moderation-strategy-3.md](../generic-user-moderation-strategy-3.md)
+- [get-new-password-action-business-logic.md](./archive/historical/get-new-password-action-business-logic.md)
+- [git-conflict-resolution-3.md](../git-conflict-resolution-3.md)
+>>>>>>> laraxot/dev
 - [git-conflicts-resolution-conflict-06cb77.md](./archive/historical/git-conflicts-resolution-conflict-06cb77.md)
 - [git-conflicts-resolution-conflict.md](./archive/historical/git-conflicts-resolution-conflict.md)
 - [git-conflicts-resolution-summary.md](./archive/historical/git-conflicts-resolution-summary.md)
 - [git-conflicts-resolution.md](./archive/historical/git-conflicts-resolution.md)
 - [guida-migrazione-step-by-step.md](./archive/historical/guida-migrazione-step-by-step.md)
+<<<<<<< HEAD
 - [hasteams-currentteam-method-choice-1.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice.md](./archive/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/historical/hasteams-trait-analysis.md)
@@ -440,20 +862,44 @@
 - [header-language-selector-with-flags-1.md](./archive/historical/header-language-selector-with-flags-implementazione-selettore-lingua-bandiere.md)
 - [header-language-selector-with-flags.md](./archive/historical/header-language-selector-with-flags.md)
 - [implementation-plan.md](./archive/historical/implementation-plan.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-currentteam-method-choice-4.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-duplicate-methods.md](./archive/historical/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/historical/hasteams-trait-filosofia-e-correzione-completa-laraxot-strategia.md)
+- [hasteams-trait-filosofia-e-correzione-completa-4.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [header-components-2.md](../header-components-2.md)
+- [header-language-avatar-implementation-1-2.md](./archive/historical/header-language-avatar-implementation-implementazione-selettore-lingua-utente.md)
+- [header-language-avatar-implementation.md](./archive/historical/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1-2.md](./archive/historical/header-language-selector-with-flags-implementazione-selettore-lingua-bandiere.md)
+- [header-language-selector-with-flags.md](./archive/historical/header-language-selector-with-flags.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+>>>>>>> laraxot/dev
 - [implementation-summary.md](./archive/historical/implementation-summary.md)
 - [index-conflict.md](./archive/historical/index-conflict.md)
 - [index.md](./archive/historical/index.md)
 - [intelligent-login-redirect.md](./archive/historical/intelligent-login-redirect.md)
+<<<<<<< HEAD
 - [jetstream-vs-laraxot-philosophy-1.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy.md](./archive/historical/jetstream-vs-laraxot-philosophy.md)
 - [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
 - [js-conflicts.md](./archive/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./archive/historical/label-hardcoded-prevention.md)
 - [lang-link-1.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jpgraph-integration.md](./archive/historical/jpgraph-integration.md)
+- [js-conflicts.md](./archive/historical/js-conflicts.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [lang-link-1-2.md](./archive/historical/lang-link-collegamento-alle-traduzioni-modulo.md)
+>>>>>>> laraxot/dev
 - [lang-link.md](./archive/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./archive/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./archive/historical/laraxot-migration-policy.md)
 - [limesurvey-database-commands.md](./archive/historical/limesurvey-database-commands.md)
+<<<<<<< HEAD
 - [links.md](./archive/historical/links.md)
 - [livewire-filament-parameter-passing.md](./archive/historical/livewire-filament-parameter-passing.md)
 - [livewire-form-statepath-issue.md](./archive/historical/livewire-form-statepath-issue.md)
@@ -464,12 +910,25 @@
 - [login-widget-analysis.md](./archive/historical/login-widget-analysis.md)
 - [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-conversione-livewire-auth-filament.md)
 - [login-widget-conversion.md](./archive/historical/login-widget-conversion.md)
+=======
+- [links-2.md](../../../Gdpr/docs/links-2.md)
+- [livewire-filament-parameter-passing.md](./archive/historical/livewire-filament-parameter-passing.md)
+- [livewire-form-statepath-issue.md](./archive/historical/livewire-form-statepath-issue.md)
+- [livewire-namespace-3.md](../livewire-namespace-3.md)
+- [livewire-to-filament-widget-migration.md](./archive/historical/livewire-to-filament-widget-migration.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-issue-resolution-report.md](./archive/historical/login-issue-resolution-report.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-conversion-1.md](./archive/historical/login-widget-conversion-conversione-livewire-auth-filament.md)
+- [login-widget-conversion-3.md](../login-widget-conversion-3.md)
+>>>>>>> laraxot/dev
 - [login-widget-filament-schema-errors-roadmap.md](./archive/historical/login-widget-filament-schema-errors-roadmap.md)
 - [login-widget-livewire-binding-fix.md](./archive/historical/login-widget-livewire-binding-fix.md)
 - [login-widget-translation-audit-historical.md](./login-widget-translation-audit-historical.md)
 - [login-widget-translation-audit-conflict.md](./archive/historical/login-widget-translation-audit-conflict.md)
 - [login-widget-translation-audit.md](./archive/historical/login-widget-translation-audit.md)
 - [loginwidget-error-analysis.md](./archive/historical/loginwidget-error-analysis.md)
+<<<<<<< HEAD
 - [logout-analysis.md](./archive/historical/logout-analysis.md)
 - [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-analisi-file-php.md)
 - [logout-blade-analysis.md](./archive/historical/logout-blade-analysis.md)
@@ -500,6 +959,38 @@
 - [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-implementazione-pagina-tema-one.md)
 - [logout-page-implementation.md](./archive/historical/logout-page-implementation.md)
 - [logout-security.md](./archive/historical/logout-security.md)
+=======
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-blade-analysis-1.md](./archive/historical/logout-blade-analysis-analisi-file-php.md)
+- [logout-blade-analysis-4.md](../logout-blade-analysis-4.md)
+- [logout-blade-conclusions-1.md](./archive/historical/logout-blade-conclusions-conclusioni-raccomandazioni-php.md)
+- [logout-blade-conclusions-3.md](../logout-blade-conclusions-3.md)
+- [logout-blade-corrected-analysis-1.md](./archive/historical/logout-blade-corrected-analysis-analisi-corretta-file-php.md)
+- [logout-blade-corrected-analysis-4.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-error-analysis-1.md](./archive/historical/logout-blade-error-analysis-analisi-approfondita-dell-errore.md)
+- [logout-blade-error-analysis-2.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-implementation-1.md](./archive/historical/logout-blade-implementation-implementazione-corretta-php.md)
+- [logout-blade-implementation-3.md](../logout-blade-implementation-3.md)
+- [logout-blade-structure-3.md](../logout-blade-structure-3.md)
+- [logout-error-analysis-1.md](./archive/historical/logout-error-analysis-analisi-errore.md)
+- [logout-error-analysis-3.md](../logout-error-analysis-3.md)
+- [logout-event-error-1.md](../logout-event-error-3.md)
+- [logout-event-error-3.md](../logout-event-error-3.md)
+- [logout-filament-widget-1.md](./archive/historical/logout-filament-widget-implementazione.md)
+- [logout-filament-widget-corrected-1.md](./archive/historical/logout-filament-widget-corrected-implementazione-corretta.md)
+- [logout-filament-widget-corrected-4.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-2.md](../logout-filament-widget-2.md)
+- [logout-implementation-best-practices-1.md](./archive/historical/logout-implementation-best-practices-implementazione.md)
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-error-1.md](./archive/historical/logout-implementation-error-analisi-dell-errore-nell.md)
+- [logout-implementation-error-4.md](../logout-implementation-error-4.md)
+- [logout-implementation-with-laravel-localization-1.md](./archive/historical/logout-implementation-with-laravel-localization-implementazione-laravellocalization.md)
+- [logout-implementation-with-laravel-localization-4.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-implementation-1.md](./archive/historical/logout-page-implementation-implementazione-pagina-tema-one.md)
+- [logout-page-implementation-2.md](../logout-page-implementation-2.md)
+- [logout-security-2.md](../logout-security-2.md)
+>>>>>>> laraxot/dev
 - [mcp-database-tools.md](./archive/historical/mcp-database-tools.md)
 - [mcp-integration.md](./archive/historical/mcp-integration.md)
 - [mcp-server-recommended.md](./archive/historical/mcp-server-recommended.md)
@@ -507,8 +998,13 @@
 - [membership-uuid-fix.md](./archive/historical/membership-uuid-fix.md)
 - [memory-optimization-summary.md](./archive/historical/memory-optimization-summary.md)
 - [metodi-duplicati-analisi.md](./archive/historical/metodi-duplicati-analisi.md)
+<<<<<<< HEAD
 - [metrics-dashboard.md](./archive/historical/metrics-dashboard.md)
 - [migration-best-practices.md](./archive/historical/migration-best-practices.md)
+=======
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+- [migration-best-practices-3.md](../../../Lang/docs/migration-best-practices-3.md)
+>>>>>>> laraxot/dev
 - [migration-consolidation-philosophy.md](./archive/historical/migration-consolidation-philosophy.md)
 - [migration-consolidation-plan.md](./archive/historical/migration-consolidation-plan.md)
 - [migration-consolidation.md](./archive/historical/migration-consolidation.md)
@@ -533,6 +1029,7 @@
 - [model-inheritance-fixes.md](./archive/historical/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./archive/historical/modelli-factory-seeder-analisi.md)
 - [models-analysis.md](./archive/historical/models-analysis.md)
+<<<<<<< HEAD
 - [moderation-doctor.md](./archive/historical/moderation-doctor.md)
 - [moderation-wizard-generic.md](./archive/historical/moderation-wizard-generic.md)
 - [module-analysis-complete.md](./archive/historical/module-analysis-complete.md)
@@ -543,6 +1040,18 @@
 - [namespace-conventions-1.md](./archive/historical/namespace-conventions-convenzioni-modulo-user.md)
 - [namespace-conventions.md](./archive/historical/namespace-conventions.md)
 - [navigation-structure.md](./archive/historical/navigation-structure.md)
+=======
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [module-analysis-complete.md](./archive/historical/module-analysis-complete.md)
+- [module-analysis-3.md](../../../Activity/docs/module-analysis-3.md)
+- [module-structure.md](./archive/historical/module-structure.md)
+- [module-user-1.md](./archive/historical/module-user-modulo.md)
+- [module-user-2.md](../../../Geo/docs/raw/history/module-user-2.md)
+- [namespace-conventions-1.md](./archive/historical/namespace-conventions-convenzioni-modulo-user.md)
+- [namespace-conventions.md](./archive/historical/namespace-conventions.md)
+- [navigation-structure-3.md](../navigation-structure-3.md)
+>>>>>>> laraxot/dev
 - [navigation-translations-completion-roadmap.md](./archive/historical/navigation-translations-completion-roadmap.md)
 - [navigation-translations-fixes-january-2026.md](./archive/historical/navigation-translations-fixes.md)
 - [navigation-translations-fixes-january.md](./archive/historical/navigation-translations-fixes-january.md)
@@ -566,7 +1075,11 @@
 - [parental-inheritance-1.md](./archive/historical/parental-inheritance-ereditarieta-tabella-singola-nome.md)
 - [parental-inheritance.md](./archive/historical/parental-inheritance.md)
 - [parental.md](./archive/historical/parental.md)
+<<<<<<< HEAD
 - [passport-admin-actions.md](./archive/historical/passport-admin-actions.md)
+=======
+- [passport-admin-actions-2.md](../passport-admin-actions-2.md)
+>>>>>>> laraxot/dev
 - [passport-cluster-completion-status.md](./archive/historical/passport-cluster-completion-status.md)
 - [passport-cluster-current-status.md](./archive/historical/passport-cluster-current-status.md)
 - [passport-cluster-implementation-completed.md](./archive/historical/passport-cluster-implementation-completed.md)
@@ -584,7 +1097,11 @@
 - [passport-complete-implementation.md](./archive/historical/passport-complete-implementation.md)
 - [passport-complete-management-debate.md](./archive/historical/passport-complete-management-debate.md)
 - [passport-filament-cluster-proposal.md](./archive/historical/passport-filament-cluster-proposal.md)
+<<<<<<< HEAD
 - [passport-implementation-summary.md](./archive/historical/passport-implementation-summary.md)
+=======
+- [passport-implementation-summary-2.md](../passport-implementation-summary-2.md)
+>>>>>>> laraxot/dev
 - [passport-vs-socialite-clarification.md](./archive/historical/passport-vs-socialite-clarification.md)
 - [passport.md](./archive/historical/passport.md)
 - [password-translation-completion-historical.md](./password-translation-completion-historical.md)
@@ -593,8 +1110,13 @@
 - [path-conventions.md](./archive/historical/path-conventions.md)
 - [performance-issues.md](./archive/historical/performance-issues.md)
 - [philosophy-complete.md](./archive/historical/philosophy-complete.md)
+<<<<<<< HEAD
 - [phpinsights-report.md](./archive/historical/phpinsights-report.md)
 - [phpmd-phpinsights-corrections-.md](./archive/historical/phpmd-phpinsights-corrections-.md)
+=======
+- [phpinsights-report-2.md](../phpinsights-report-2.md)
+- [phpmd-phpinsights-corrections-2.md](../phpmd-phpinsights-corrections-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./archive/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./archive/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./archive/historical/phpstan-complete-success.md)
@@ -602,7 +1124,11 @@
 - [phpstan-compliance.md](./archive/historical/phpstan-compliance.md)
 - [phpstan-corrections-oauth-resources.md](./archive/historical/phpstan-corrections-oauth-resources.md)
 - [phpstan-corrections-summary.md](./archive/historical/phpstan-corrections-summary.md)
+<<<<<<< HEAD
 - [phpstan-corrections.md](./archive/historical/phpstan-corrections.md)
+=======
+- [phpstan-corrections-2.md](../../../Geo/docs/development/phpstan-corrections-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements.md](./archive/historical/phpstan-dry-kiss-improvements.md)
 - [phpstan-error-roadmap.md](./archive/historical/phpstan-error-roadmap.md)
 - [phpstan-errors-philosophy.md](./archive/historical/phpstan-errors-philosophy.md)
@@ -611,7 +1137,11 @@
 - [phpstan-final-progress.md](./archive/historical/phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./archive/historical/phpstan-fix-plan-.md)
 - [phpstan-fix-roadmap.md](./archive/historical/phpstan-fix-roadmap.md)
+<<<<<<< HEAD
 - [phpstan-fixes-1.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fixes-1-2.md](./archive/historical/phpstan-fixes-correzioni-livello-modulo-user.md)
+>>>>>>> laraxot/dev
 - [phpstan-fixes-2.md](./archive/historical/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./archive/historical/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes.md](./phpstan-fixes.md)
@@ -631,8 +1161,13 @@
 - [phpstan-fixes-passport.md](./archive/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./archive/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./archive/historical/phpstan-fixes.md)
+<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./archive/historical/phpstan-furious-debate-.md)
 - [phpstan-generic-types.md](./archive/historical/phpstan-generic-types.md)
+=======
+- [phpstan-furious-debate-2.md](./archive/historical/phpstan-furious-debate-2.md)
+- [phpstan-generic-types-2.md](../../../Xot/docs/consolidated/phpstan/phpstan-generic-types-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-level-10-fixes.md](./archive/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./archive/historical/phpstan-level10-analysis.md)
 - [phpstan-level10-fixes.md](./archive/historical/phpstan-level10-fixes.md)
@@ -641,9 +1176,15 @@
 - [phpstan-progress-report.md](./archive/historical/phpstan-progress-report.md)
 - [phpstan-progress-summary.md](./archive/historical/phpstan-progress-summary.md)
 - [phpstan-progress.md](./archive/historical/phpstan-progress.md)
+<<<<<<< HEAD
 - [phpstan-relationship-fix.md](./archive/historical/phpstan-relationship-fix.md)
 - [phpstan-resolution-debate.md](./archive/historical/phpstan-resolution-debate.md)
 - [phpstan-roadmap.md](./archive/historical/phpstan-roadmap.md)
+=======
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-resolution-debate.md](./archive/historical/phpstan-resolution-debate.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-syntax-fixes.md](./archive/historical/phpstan-syntax-fixes.md)
 - [phpstan.md](./archive/historical/phpstan.md)
 - [policies.md](./archive/historical/policies.md)
@@ -652,27 +1193,47 @@
 - [quality-status-11.md](./archive/historical/quality-status-user-module-november.md)
 - [quality-status.md](./archive/historical/quality-status.md)
 - [quality-tooling.md](./archive/historical/quality-tooling.md)
+<<<<<<< HEAD
 - [quality-tools-final-report-.md](./archive/historical/quality-tools-final-report-.md)
 - [quality-tools-report.md](./archive/historical/quality-tools-report.md)
 - [quality-tools.md](./archive/historical/quality-tools.md)
 - [query-optimization-analysis.md](./archive/historical/query-optimization-analysis.md)
 - [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-documentation.md)
 - [readme-fullcalendar-scheduler.md](./archive/historical/readme-fullcalendar-scheduler.md)
+=======
+- [quality-tools-final-report-2.md](./archive/historical/quality-tools-final-report-2.md)
+- [quality-tools-report.md](./archive/historical/quality-tools-report.md)
+- [quality-tools.md](./archive/historical/quality-tools.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [readme-fullcalendar-scheduler-1.md](./archive/historical/readme-fullcalendar-scheduler-documentation.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+>>>>>>> laraxot/dev
 - [readme-new.md](./archive/historical/readme-new.md)
 - [redundancy-fixes-january-2026.md](./archive/historical/redundancy-fixes.md)
 - [redundancy-fixes-january.md](./archive/historical/redundancy-fixes-january.md)
 - [redundancy-fixes.md](./archive/historical/redundancy-fixes.md)
 - [registration-widget-1.md](./archive/historical/registration-widget-documentation.md)
 - [registration-widget-fileupload-fix-1.md](./archive/historical/registration-widget-fileupload-fix-registrationwidget.md)
+<<<<<<< HEAD
 - [registration-widget-fileupload-fix.md](./archive/historical/registration-widget-fileupload-fix.md)
 - [registration-widget-update-1.md](./archive/historical/registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
 - [registration-widget-update.md](./archive/historical/registration-widget-update.md)
 - [registration-widget.md](./archive/historical/registration-widget.md)
+=======
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-update-1.md](./archive/historical/registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
+- [registration-widget-update-3.md](../registration-widget-update-3.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+>>>>>>> laraxot/dev
 - [repositories.md](./archive/historical/repositories.md)
 - [resource-implementation-philosophy.md](./archive/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./archive/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./archive/historical/resources-array-keys-philosophy.md)
+<<<<<<< HEAD
 - [resources-corrections-summary-.md](./archive/historical/resources-corrections-summary-.md)
+=======
+- [resources-corrections-summary-2.md](./archive/historical/resources-corrections-summary-2.md)
+>>>>>>> laraxot/dev
 - [roadmap-1.md](./archive/historical/roadmap.md)
 - [roadmap-archive.md](./roadmap-archive.md)
 - [roadmap-and-issues.md](./archive/historical/roadmap-and-issues.md)
@@ -680,6 +1241,7 @@
 - [roadmap-conflict.md](./archive/historical/roadmap-conflict.md)
 - [roles-migration-philosophy-fix.md](./archive/historical/roles-migration-philosophy-fix.md)
 - [roles-permissions-1.md](./archive/historical/roles-permissions-gestione-coerente-guard-name.md)
+<<<<<<< HEAD
 - [roles-permissions.md](./archive/historical/roles-permissions.md)
 - [routing-best-practices.md](./archive/historical/routing-best-practices.md)
 - [routing-error-solution.md](./archive/historical/routing-error-solution.md)
@@ -688,6 +1250,16 @@
 - [service-provider-architecture.md](./archive/historical/service-provider-architecture.md)
 - [service-provider-warning.md](./archive/historical/service-provider-warning.md)
 - [session-management.md](./archive/historical/session-management.md)
+=======
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-error-solution-3.md](../routing-error-solution-3.md)
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [schema-org-enhancements.md](./archive/historical/schema-org-enhancements.md)
+- [service-provider-architecture.md](./archive/historical/service-provider-architecture.md)
+- [service-provider-warning-2.md](../service-provider-warning-2.md)
+- [session-management-3.md](../session-management-3.md)
+>>>>>>> laraxot/dev
 - [setup-super-admin.md](./archive/historical/setup-super-admin.md)
 - [spatie-models-verification.md](./archive/historical/spatie-models-verification.md)
 - [spatie-permission-philosophy.md](./archive/historical/spatie-permission-philosophy.md)
@@ -698,27 +1270,47 @@
 - [sushi-schema-fix.md](./archive/historical/sushi-schema-fix.md)
 - [syntax-errors-to-fix.md](./archive/historical/syntax-errors-to-fix.md)
 - [team-bindings-fix-1.md](./archive/historical/team-bindings-fix-binding-models-modulo-user.md)
+<<<<<<< HEAD
 - [team-bindings-fix.md](./archive/historical/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./archive/historical/team-contract-usage-reasoning.md)
+=======
+- [team-bindings-fix-2.md](../team-bindings-fix-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+>>>>>>> laraxot/dev
 - [team-user-composite-primary-key-fix.md](./archive/historical/team-user-composite-primary-key-fix.md)
 - [team-user-permissions-fix.md](./archive/historical/team-user-permissions-fix.md)
 - [teams-migration-laraxot-compliance.md](./archive/historical/teams-migration-laraxot-compliance.md)
 - [testcase-sqlite-to-mysql-fix.md](./archive/historical/testcase-sqlite-to-mysql-fix.md)
 - [testing-phpstan-progress.md](./archive/historical/testing-phpstan-progress.md)
+<<<<<<< HEAD
 - [testing-rules.md](./archive/historical/testing-rules.md)
 - [testing-structure.md](./archive/historical/testing-structure.md)
 - [testing-user-command-integration-fix.md](./archive/historical/testing-user-command-integration-fix.md)
 - [theme-translation-conflicts-resolution.md](./archive/historical/theme-translation-conflicts-resolution.md)
+=======
+- [testing-rules-2.md](../testing-rules-2.md)
+- [testing-structure.md](./archive/historical/testing-structure.md)
+- [testing-user-command-integration-fix.md](./archive/historical/testing-user-command-integration-fix.md)
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+>>>>>>> laraxot/dev
 - [third-party-model-patterns.md](./archive/historical/third-party-model-patterns.md)
 - [todo.md](./archive/historical/todo.md)
 - [traits-complete-guide-1.md](./archive/historical/traits-complete-guide-guida-completa-ai-trait.md)
 - [traits-complete-guide.md](./archive/historical/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./archive/historical/traits-hasteams-analisi-corretta-trait-filosofia-laraxot.md)
+<<<<<<< HEAD
 - [traits-hasteams-analisi-corretta.md](./archive/historical/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analysis-corrected.md](./archive/historical/traits-hasteams-analysis-corrected.md)
 - [traits-hasteams-analysis-corretta.md](./archive/historical/traits-hasteams-analysis-corretta.md)
 - [translation-architecture.md](./archive/historical/translation-architecture.md)
 - [translation-best-practices.md](./archive/historical/translation-best-practices.md)
+=======
+- [traits-hasteams-analisi-corretta-4.md](../traits-hasteams-analisi-corretta-4.md)
+- [traits-hasteams-analysis-corrected.md](./archive/historical/traits-hasteams-analysis-corrected.md)
+- [traits-hasteams-analysis-corretta.md](./archive/historical/traits-hasteams-analysis-corretta.md)
+- [translation-architecture.md](./archive/historical/translation-architecture.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./archive/historical/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/historical/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor-conflict.md](./archive/historical/translation-city-field-refactor-conflict.md)
@@ -726,10 +1318,17 @@
 - [translation-conflict-resolution-prototype.md](./archive/historical/translation-conflict-resolution-prototype.md)
 - [translation-fields-key-importance.md](./archive/historical/translation-fields-key-importance.md)
 - [translation-fixes.md](./archive/historical/translation-fixes.md)
+<<<<<<< HEAD
 - [translation-keys-rules.md](./archive/historical/translation-keys-rules.md)
 - [translation-maintenance-log.md](./archive/historical/translation-maintenance-log.md)
 - [translation-syntax-fixes.md](./translation-syntax-fixes.md)
 - [translation-syntax-fixes.md](./archive/historical/translation-syntax-fixes.md)
+=======
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-maintenance-log.md](./archive/historical/translation-maintenance-log.md)
+- [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+- [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+>>>>>>> laraxot/dev
 - [translations.md](./archive/historical/translations.md)
 - [troubleshooting-login-component.md](./archive/historical/troubleshooting-login-component.md)
 - [type-safety-improvements.md](./archive/historical/type-safety-improvements.md)
@@ -738,6 +1337,7 @@
 - [user-factory-advanced-integration-1.md](./archive/historical/user-factory-advanced-integration-userfactory-modulo-nome-progetto.md)
 - [user-factory-advanced-integration.md](./archive/historical/user-factory-advanced-integration.md)
 - [user-factory-complete-ecosystem-integration-1.md](./archive/historical/user-factory-complete-ecosystem-integration-final-documentation.md)
+<<<<<<< HEAD
 - [user-factory-complete-ecosystem-integration.md](./archive/historical/user-factory-complete-ecosystem-integration.md)
 - [user-factory-integration-1.md](./archive/historical/user-factory-integration-userfactory-modulo-nome-progetto.md)
 - [user-factory-integration.md](./archive/historical/user-factory-integration.md)
@@ -746,11 +1346,22 @@
 - [user-profile-models.md](./archive/historical/user-profile-models.md)
 - [user-profile-separation.md](./archive/historical/user-profile-separation.md)
 - [userfactory-advanced-implementation-complete.md](./archive/historical/userfactory-advanced-implementation-complete.md)
+=======
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-integration-1.md](./archive/historical/user-factory-integration-userfactory-modulo-nome-progetto.md)
+- [user-factory-integration-3.md](../user-factory-integration-3.md)
+- [user-management.md](./archive/historical/user-management.md)
+- [user-moderation-strategy-1.md](../user-moderation-strategy-3.md)
+- [user-profile-models.md](./archive/historical/user-profile-models.md)
+- [user-profile-separation.md](./archive/historical/user-profile-separation.md)
+- [userfactory-advanced-implementation-complete-3.md](../userfactory-advanced-implementation-complete-3.md)
+>>>>>>> laraxot/dev
 - [uuid-trait-conflict-resolution.md](./archive/historical/uuid-trait-conflict-resolution.md)
 - [vendor-extension-pattern.md](./archive/historical/vendor-extension-pattern.md)
 - [viewclient-infolist-implementation-philosophy.md](./archive/historical/viewclient-infolist-implementation-philosophy.md)
 - [volt-blade-implementation-1.md](./archive/historical/volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-error-1.md](./archive/historical/volt-blade-implementation-error-analisi-dell-errore-implementazione.md)
+<<<<<<< HEAD
 - [volt-blade-implementation-error.md](./archive/historical/volt-blade-implementation-error.md)
 - [volt-blade-implementation.md](./archive/historical/volt-blade-implementation.md)
 - [volt-errors.md](./archive/historical/volt-errors.md)
@@ -775,13 +1386,49 @@
 
 ## archive/old_tasks
 
+=======
+- [volt-blade-implementation-error-4.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-4.md](../volt-blade-implementation-4.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-folio-auth-implementation-1.md](./archive/historical/volt-folio-auth-implementation-implementazione-corretta-pagine-autenticazione.md)
+- [volt-folio-auth-implementation-4.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-logout-1.md](./archive/historical/volt-folio-logout-implementazione-corretta.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-error-1.md](./archive/historical/volt-folio-logout-error-errore.md)
+- [volt-folio-logout-error-2.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-3.md](../volt-folio-logout-3.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-3.md](../volt-logout-3.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+- [widget-rendering-analysis.md](./archive/historical/widget-rendering-analysis.md)
+- [widget-translation-rules-1.md](./archive/historical/widget-translation-rules-nome-progetto-project.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+- [widgets-structure-2.md](../widgets-structure-2.md)
+- [xotbase-resource-getpages-automatic.md](./archive/historical/xotbase-resource-getpages-automatic.md)
+- [xotbasemigration-laraxot-philosophy.md](./archive/historical/xotbasemigration-laraxot-philosophy.md)
+- [xotbaseresource-violations-removal.md](./archive/historical/xotbaseresource-violations-removal.md)
+=======
+## Roadmap e Sviluppo Futuro
+- [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User
+>>>>>>> .merge_file_YHHjXF
+
+## Note sulla Manutenzione
+Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
+
+<<<<<<< .merge_file_oNVEUM
+>>>>>>> laraxot/dev
 - [login-widget-translation-audit.md](./archive/old_tasks/login-widget-translation-audit.md)
 - [password-translation-completion.md](./archive/old_tasks/password-translation-completion.md)
 - [phpstan-analysis-user.md](./archive/old_tasks/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./archive/old_tasks/phpstan-array-types-fixes.md)
 - [phpstan-compliance-status.md](./archive/old_tasks/phpstan-compliance-status.md)
 - [phpstan-compliance.md](./archive/old_tasks/phpstan-compliance.md)
+<<<<<<< HEAD
 - [phpstan-corrections.md](./archive/old_tasks/phpstan-corrections.md)
+=======
+- [phpstan-corrections-2.md](../../../Geo/docs/development/phpstan-corrections-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements.md](./archive/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-gennaio-2025.md](./archive/old_tasks/phpstan-fixes-modulo-user-gennaio.md)
 - [phpstan-fixes-gennaio-complete.md](./archive/old_tasks/phpstan-fixes-gennaio-complete.md)
@@ -790,11 +1437,16 @@
 - [phpstan-fixes-january-complete.md](./archive/old_tasks/phpstan-fixes-january-complete.md)
 - [phpstan-fixes-january.md](./archive/old_tasks/phpstan-fixes-january.md)
 - [phpstan-fixes.md](./archive/old_tasks/phpstan-fixes.md)
+<<<<<<< HEAD
 - [phpstan-generic-types.md](./archive/old_tasks/phpstan-generic-types.md)
+=======
+- [phpstan-generic-types-2.md](../../../Xot/docs/consolidated/phpstan/phpstan-generic-types-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-level-10-fixes.md](./archive/old_tasks/phpstan-level-10-fixes.md)
 - [phpstan-level10-fixes.md](./archive/old_tasks/phpstan-level10-fixes.md)
 - [phpstan-level10-user-fixes.md](./archive/old_tasks/phpstan-level10-user-fixes.md)
 - [phpstan-level9-fixes.md](./archive/old_tasks/phpstan-level9-fixes.md)
+<<<<<<< HEAD
 - [phpstan-relationship-fix.md](./archive/old_tasks/phpstan-relationship-fix.md)
 - [phpstan-syntax-fixes.md](./archive/old_tasks/phpstan-syntax-fixes.md)
 - [roadmap.md](./archive/old_tasks/roadmap.md)
@@ -808,24 +1460,54 @@
 - [case-sensitivity-rules.md](./best-practices/case-sensitivity-rules.md)
 - [case-sensitivity.md](./best-practices/case-sensitivity.md)
 - [component-verification-rules.md](./best-practices/component-verification-rules.md)
+=======
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-syntax-fixes.md](./archive/old_tasks/phpstan-syntax-fixes.md)
+- [roadmap.md](./archive/old_tasks/roadmap.md)
+- [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+=======
+>>>>>>> .merge_file_YHHjXF
+
+# Indice Documentazione User
+
+<<<<<<< .merge_file_oNVEUM
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widget.md](./best-practices/auth-widget.md)
+- [case-sensitivity-rules.md](./best-practices/case-sensitivity-rules.md)
+- [case-sensitivity.md](./best-practices/case-sensitivity.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+>>>>>>> laraxot/dev
 - [component-verification.md](./best-practices/component-verification.md)
 - [dependency-rules.md](./best-practices/dependency-rules.md)
 - [dependency.md](./best-practices/dependency.md)
 - [eloquent-properties-best-practices.md](./best-practices/eloquent-properties-best-practices.md)
+<<<<<<< HEAD
 - [filament-best-practices.md](./best-practices/filament-best-practices.md)
 - [filament-components.md](./best-practices/filament-components.md)
 - [filament-namespace-rules.md](./best-practices/filament-namespace-rules.md)
+=======
+- [filament-best-practices-2.md](../../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [filament-components-2.md](../../../Cms/docs/filament-components-2.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+>>>>>>> laraxot/dev
 - [filament-namespace.md](./best-practices/filament-namespace.md)
 - [filament-widgets.md](./best-practices/filament-widgets.md)
 - [file-naming-rules.md](./best-practices/file-naming-rules.md)
 - [file-naming.md](./best-practices/file-naming.md)
 - [folio-volt-best-practices.md](./best-practices/folio-volt-best-practices.md)
+<<<<<<< HEAD
 - [logout-implementation-best-practices.md](./best-practices/logout-implementation-best-practices.md)
 - [migration-best-practices.md](./best-practices/migration-best-practices.md)
+=======
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [migration-best-practices-3.md](../../../Lang/docs/migration-best-practices-3.md)
+>>>>>>> laraxot/dev
 - [model-inheritance-rules.md](./best-practices/model-inheritance-rules.md)
 - [model-inheritance.md](./best-practices/model-inheritance.md)
 - [namespace-conventions.md](./best-practices/namespace-conventions.md)
 - [nestedset-migration-best-practices.md](./best-practices/nestedset-migration-best-practices.md)
+<<<<<<< HEAD
 - [queueable-actions.md](./best-practices/queueable-actions.md)
 - [routing-best-practices.md](./best-practices/routing-best-practices.md)
 - [testing-rules.md](./best-practices/testing-rules.md)
@@ -834,6 +1516,16 @@
 - [translation-keys-rules.md](./best-practices/translation-keys-rules.md)
 - [translation-keys.md](./best-practices/translation-keys.md)
 - [widget-translation-rules.md](./best-practices/widget-translation-rules.md)
+=======
+- [queueable-actions-2.md](../../../Notify/docs/queueable-actions-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [testing-rules-2.md](../testing-rules-2.md)
+- [testing.md](./best-practices/testing.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-keys.md](./best-practices/translation-keys.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+>>>>>>> laraxot/dev
 - [widget-translation.md](./best-practices/widget-translation.md)
 
 ## blade
@@ -843,7 +1535,11 @@
 ## bug-fixes
 
 - [make-filament-user-crash-loop.md](./bug-fixes/make-filament-user-crash-loop.md)
+<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-.md)
+=======
+- [parse-error-orphan-methods-.md](./bug-fixes/parse-error-orphan-methods-4.md)
+>>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-1.md](./bug-fixes/parse-error-orphan-methods.md)
 - [parse-error-orphan-methods-2.md](./bug-fixes/parse-error-orphan-methods-2.md)
@@ -854,14 +1550,22 @@
 
 ## bug-fixes/archive
 
+<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/archive/parse-error-orphan-methods-.md)
+=======
+- [parse-error-orphan-methods-2.md](./bug-fixes/archive/parse-error-orphan-methods-2.md)
+>>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/archive/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/archive/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods.md](./bug-fixes/archive/parse-error-orphan-methods.md)
 
 ## bug-fixes/legacy
 
+<<<<<<< HEAD
 - [parse-error-orphan-methods-.md](./bug-fixes/legacy/parse-error-orphan-methods-.md)
+=======
+- [parse-error-orphan-methods-2.md](./bug-fixes/legacy/parse-error-orphan-methods-2.md)
+>>>>>>> laraxot/dev
 - [parse-error-orphan-methods-1.md](./bug-fixes/legacy/parse-error-orphan-methods-1.md)
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/legacy/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-archive-1.md](./bug-fixes/legacy/parse-error-orphan-methods-archive-1.md)
@@ -882,11 +1586,19 @@
 
 ## bugs/archive
 
+<<<<<<< HEAD
 - [testing.md](./bugs/archive/testing.md)
 
 ## bugs/legacy
 
 - [testing.md](./bugs/legacy/testing.md)
+=======
+- [testing-2.md](../bugs/archive/testing-2.md)
+
+## bugs/legacy
+
+- [testing-2.md](../bugs/archive/testing-2.md)
+>>>>>>> laraxot/dev
 
 ## clusters
 
@@ -923,13 +1635,21 @@
 ## console_commands/archive
 
 - [console-commands-philosophy-1.md](./console_commands/archive/console-commands-philosophy-1.md)
+<<<<<<< HEAD
 - [console-commands-philosophy.md](./console_commands/archive/console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-2.md](../console_commands/archive/console-commands-philosophy-2.md)
+>>>>>>> laraxot/dev
 - [console-commands.md](./console_commands/archive/console-commands.md)
 
 ## console_commands/legacy
 
 - [console-commands-philosophy-1.md](./console_commands/legacy/console-commands-philosophy-1.md)
+<<<<<<< HEAD
 - [console-commands-philosophy.md](./console_commands/legacy/console-commands-philosophy.md)
+=======
+- [console-commands-philosophy-2.md](../console_commands/archive/console-commands-philosophy-2.md)
+>>>>>>> laraxot/dev
 - [console-commands.md](./console_commands/legacy/console-commands.md)
 
 ## contracts
@@ -974,7 +1694,11 @@
 
 ## docs
 
+<<<<<<< HEAD
 - [confidence-guidelines.md](./docs/confidence-guidelines.md)
+=======
+- [confidence-guidelines-3.md](./docs/confidence-guidelines.md)
+>>>>>>> laraxot/dev
 - [filament-version.md](./docs/filament-version.md)
 
 ## errori
@@ -983,10 +1707,17 @@
 
 ## filament
 
+<<<<<<< HEAD
 - [filament-table-columns-1.md](./filament/filament-table-columns.md)
 - [filament-table-columns-2.md](./filament/filament-table-columns.md)
 - [filament-table-columns-3.md](./filament/filament-table-columns-convenzione-metodo-gettablecolumns.md)
 - [filament-table-columns.md](./filament/filament-table-columns.md)
+=======
+- [filament-table-columns-1.md](../filament/filament-table-columns-2.md)
+- [filament-table-columns-2.md](../filament/filament-table-columns-2.md)
+- [filament-table-columns-3.md](./filament/filament-table-columns-convenzione-metodo-gettablecolumns.md)
+- [filament-table-columns-2.md](../filament/filament-table-columns-2.md)
+>>>>>>> laraxot/dev
 - [teams-relation-manager-1.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-2.md](./filament/teams-relation-manager.md)
 - [teams-relation-manager-3.md](./filament/teams-relation-manager-teamsrelationmanager-user-module.md)
@@ -997,10 +1728,17 @@
 
 - [filament-table-columns-1.md](./filament/archive/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/archive/filament-table-columns-2.md)
+<<<<<<< HEAD
 - [filament-table-columns.md](./filament/archive/filament-table-columns.md)
 - [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/archive/teams-relation-manager.md)
+=======
+- [filament-table-columns-2.md](../filament/archive/filament-table-columns-2.md)
+- [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
+- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
+- [teams-relation-manager-2.md](../filament/archive/teams-relation-manager-2.md)
+>>>>>>> laraxot/dev
 
 ## filament/errors
 
@@ -1010,7 +1748,11 @@
 
 - [filament-table-columns-1.md](./filament/legacy/filament-table-columns-1.md)
 - [filament-table-columns-2.md](./filament/legacy/filament-table-columns-2.md)
+<<<<<<< HEAD
 - [filament-table-columns.md](./filament/legacy/filament-table-columns.md)
+=======
+- [filament-table-columns-2.md](../filament/archive/filament-table-columns-2.md)
+>>>>>>> laraxot/dev
 - [teams-relation-manager-1.md](./filament/legacy/teams-relation-manager-1.md)
 - [teams-relation-manager-2.md](./filament/legacy/teams-relation-manager-2.md)
 - [teams-relation-manager.md](./filament/legacy/teams-relation-manager.md)
@@ -1019,6 +1761,7 @@
 
 - [dashboard-filters-integration.md](./filament/widgets/dashboard-filters-integration.md)
 - [edit-user-widget.md](./filament/widgets/edit-user-widget.md)
+<<<<<<< HEAD
 - [registration-widget-fileupload-fix.md](./filament/widgets/registration-widget-fileupload-fix.md)
 - [registration-widget-fileupload.md](./filament/widgets/registration-widget-fileupload.md)
 - [registration-widget.md](./filament/widgets/registration-widget.md)
@@ -1026,25 +1769,46 @@
 ## fixes
 
 - [base-classes-corrections-.md](./fixes/base-classes-corrections-.md)
+=======
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-fileupload.md](./filament/widgets/registration-widget-fileupload.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+
+## fixes
+
+- [base-classes-corrections-.md](./fixes/base-classes-corrections-4.md)
+>>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/base-classes-corrections-1.md)
 - [base-classes-corrections-2.md](./fixes/base-classes-corrections-2.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections-3.md](./fixes/base-classes-corrections-3.md)
 - [base-classes-corrections.md](./fixes/base-classes-corrections.md)
+<<<<<<< HEAD
 - [phpstan-fixes-1.md](./fixes/phpstan-fixes.md)
+=======
+- [phpstan-fixes-1-2.md](./fixes/phpstan-fixes.md)
+>>>>>>> laraxot/dev
 - [phpstan-fixes.md](./fixes/phpstan-fixes.md)
 - [phpstanes.md](./fixes/phpstanes.md)
 
 ## fixes/archive
 
+<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/archive/base-classes-corrections-.md)
+=======
+- [base-classes-corrections-2.md](./fixes/archive/base-classes-corrections-2.md)
+>>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/archive/base-classes-corrections-1.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/archive/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections.md](./fixes/archive/base-classes-corrections.md)
 
 ## fixes/legacy
 
+<<<<<<< HEAD
 - [base-classes-corrections-.md](./fixes/legacy/base-classes-corrections-.md)
+=======
+- [base-classes-corrections-2.md](./fixes/legacy/base-classes-corrections-2.md)
+>>>>>>> laraxot/dev
 - [base-classes-corrections-1.md](./fixes/legacy/base-classes-corrections-1.md)
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/legacy/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections-archive-1.md](./fixes/legacy/base-classes-corrections-archive-1.md)
@@ -1059,7 +1823,11 @@
 - [advanced.md](./html2pdf/advanced.md)
 - [index.md](./html2pdf/index.md)
 - [laravel.md](./html2pdf/laravel.md)
+<<<<<<< HEAD
 - [security.md](./html2pdf/security.md)
+=======
+- [security-2.md](../../../Geo/docs/root-md-files/security-2.md)
+>>>>>>> laraxot/dev
 - [styling.md](./html2pdf/styling.md)
 - [usage.md](./html2pdf/usage.md)
 
@@ -1075,6 +1843,7 @@
 
 ## legacy
 
+<<<<<<< HEAD
 - [actions-path-convention.md](./legacy/actions-path-convention.md)
 - [actions-structure-1.md](./legacy/actions-structure-1.md)
 - [actions-structure.md](./legacy/actions-structure.md)
@@ -1095,12 +1864,35 @@
 - [auth-widgets-view-namespaces.md](./legacy/auth-widgets-view-namespaces.md)
 - [avatar-implementation-1.md](./legacy/avatar-implementation-1.md)
 - [avatar-implementation.md](./legacy/avatar-implementation.md)
+=======
+- [actions-path-convention-2.md](../actions-path-convention-2.md)
+- [actions-structure-1.md](./legacy/actions-structure-1.md)
+- [actions-structure-4.md](../actions-structure-4.md)
+- [architecture-rules.md](./legacy/architecture-rules.md)
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-components-best-practices-1.md](./legacy/auth-components-best-practices-1.md)
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-login-implementation-1.md](./legacy/auth-login-implementation-1.md)
+- [auth-login-implementation-4.md](../auth-login-implementation-4.md)
+- [auth-logout-blade-3.md](../auth-logout-blade-3.md)
+- [auth-logout-implementation-1.md](./legacy/auth-logout-implementation-1.md)
+- [auth-logout-implementation-4.md](../auth-logout-implementation-4.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-pages-implementation-1.md](./legacy/auth-pages-implementation-1.md)
+- [auth-pages-implementation-3.md](../auth-pages-implementation-3.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widgets-view-namespaces-1.md](./legacy/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [avatar-implementation-1.md](./legacy/avatar-implementation-1.md)
+- [avatar-implementation-3.md](../avatar-implementation-3.md)
+>>>>>>> laraxot/dev
 - [baseuser-refactoring-completed-.md](./legacy/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./legacy/baseuser-refactoring-completed-1.md)
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./legacy/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./legacy/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./legacy/baseuser-refactoring.md)
 - [baseuser-spatie-duplicates-analysis.md](./legacy/baseuser-spatie-duplicates-analysis.md)
+<<<<<<< HEAD
 - [business-logic-analysis.md](./legacy/business-logic-analysis.md)
 - [business-logic-deep-dive.md](./legacy/business-logic-deep-dive.md)
 - [cms-link-1.md](./legacy/cms-link-1.md)
@@ -1120,15 +1912,41 @@
 - [dentist-moderation-approach.md](./legacy/dentist-moderation-approach.md)
 - [directory-structure-checklist.md](./legacy/directory-structure-checklist.md)
 - [documentation-standards.md](./legacy/documentation-standards.md)
+=======
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+- [business-logic-deep-dive.md](./legacy/business-logic-deep-dive.md)
+- [cms-link-1-2.md](../../../UI/docs/cms-link-1-2.md)
+- [cms-link.md](./legacy/cms-link.md)
+- [code-conventions-3.md](../code-conventions-3.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [component-verification-rules-1.md](./legacy/component-verification-rules-1.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [conflict-resolution-passwordresetwidget-3.md](../conflict-resolution-passwordresetwidget-3.md)
+- [conflict-resolution-report-3.md](../conflict-resolution-report-3.md)
+- [console-commands-philosophy.md](./legacy/console-commands-philosophy.md)
+- [cross-database-relations-issue-3.md](../cross-database-relations-issue-3.md)
+- [custom-login-1.md](./legacy/custom-login-1.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+- [directory-structure-checklist-3.md](../directory-structure-checklist-3.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+>>>>>>> laraxot/dev
 - [dry-kiss-analysis-.md](./legacy/dry-kiss-analysis-.md)
 - [dry-kiss-analysis-1.md](./legacy/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis-2025-10-15.deprecated.md](./legacy/dry-kiss-analysis-2025-10-15.deprecated.md)
 - [dry-kiss-analysis.md](./legacy/dry-kiss-analysis.md)
+<<<<<<< HEAD
 - [error-handling.md](./legacy/error-handling.md)
+=======
+- [error-handling-2.md](../error-handling-2.md)
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./legacy/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./legacy/filament-4-widget-rendering-guide.md)
 - [filament-4-widget-rendering.md](./legacy/filament-4-widget-rendering.md)
 - [filament-4x-compatibility.md](./legacy/filament-4x-compatibility.md)
+<<<<<<< HEAD
 - [filament-components-reference.md](./legacy/filament-components-reference.md)
 - [filament-errors.md](./legacy/filament-errors.md)
 - [filament-namespace-rules-1.md](./legacy/filament-namespace-rules-1.md)
@@ -1136,10 +1954,20 @@
 - [filament-relation-managers-1.md](./legacy/filament-relation-managers-1.md)
 - [filament-relation-managers.md](./legacy/filament-relation-managers.md)
 - [filament-resources-organization.md](./legacy/filament-resources-organization.md)
+=======
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-errors-3.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-namespace-rules-1.md](./legacy/filament-namespace-rules-1.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-relation-managers-1.md](./legacy/filament-relation-managers-1.md)
+- [filament-relation-managers-3.md](../filament-relation-managers-3.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+>>>>>>> laraxot/dev
 - [filament4-migration.md](./legacy/filament4-migration.md)
 - [fullcalendar-scheduler-documentation-summary-1.md](./legacy/fullcalendar-scheduler-documentation-summary-1.md)
 - [fullcalendar-scheduler-documentation-summary.md](./legacy/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./legacy/fullcalendar-scheduler-license-1.md)
+<<<<<<< HEAD
 - [fullcalendar-scheduler-license-key-invalid.md](./legacy/fullcalendar-scheduler-license-key-invalid.md)
 - [fullcalendar-scheduler-license-troubleshooting-1.md](./legacy/fullcalendar-scheduler-license-troubleshooting-1.md)
 - [fullcalendar-scheduler-license-troubleshooting.md](./legacy/fullcalendar-scheduler-license-troubleshooting.md)
@@ -1150,12 +1978,25 @@
 - [generic-user-moderation-strategy.md](./legacy/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./legacy/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./legacy/git-conflicts-resolution-.md)
+=======
+- [fullcalendar-scheduler-license-key-invalid-2.md](../fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](./legacy/fullcalendar-scheduler-license-troubleshooting-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-3.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-3.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./legacy/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference-4.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [generic-user-moderation-strategy-1.md](./legacy/generic-user-moderation-strategy-1.md)
+- [generic-user-moderation-strategy-3.md](../generic-user-moderation-strategy-3.md)
+- [git-conflict-resolution-3.md](../git-conflict-resolution-3.md)
+- [git-conflicts-resolution-2.md](./legacy/git-conflicts-resolution-2.md)
+>>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./legacy/git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](./legacy/git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./legacy/git-conflicts-resolution-2025-01-27.deprecated.md)
 - [git-conflicts-resolution-3.md](./legacy/git-conflicts-resolution-3.md)
 - [git-conflicts-resolution.md](./legacy/git-conflicts-resolution.md)
 - [hasteams-currentteam-method-choice-1.md](./legacy/hasteams-currentteam-method-choice-1.md)
+<<<<<<< HEAD
 - [hasteams-currentteam-method-choice.md](./legacy/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./legacy/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods-1.md](./legacy/hasteams-trait-duplicate-methods-1.md)
@@ -1212,27 +2053,97 @@
 - [mcp-server-recommended.md](./legacy/mcp-server-recommended.md)
 - [metodi-duplicati-analisi.md](./legacy/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./legacy/metrics-dashboard.md)
+=======
+- [hasteams-currentteam-method-choice-4.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-duplicate-methods-1.md](./legacy/hasteams-trait-duplicate-methods-1.md)
+- [hasteams-trait-duplicate-methods.md](./legacy/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa-4.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [header-components-2.md](../header-components-2.md)
+- [header-language-avatar-implementation-1-2.md](../../../Cms/docs/sections/header-language-avatar-implementation-1-2.md)
+- [header-language-avatar-implementation.md](./legacy/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1-2.md](../../../Cms/docs/sections/header-language-selector-with-flags-1-2.md)
+- [header-language-selector-with-flags.md](./legacy/header-language-selector-with-flags.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+- [index.md](./legacy/index.md)
+- [jetstream-vs-laraxot-philosophy-1.md](./legacy/jetstream-vs-laraxot-philosophy-1.md)
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [lang-link-1-2.md](../../../UI/docs/lang-link-1-2.md)
+- [lang-link.md](./legacy/lang-link.md)
+- [livewire-namespace-3.md](../livewire-namespace-3.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-conversion-3.md](../login-widget-conversion-3.md)
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-blade-analysis-1.md](./legacy/logout-blade-analysis-1.md)
+- [logout-blade-analysis-4.md](../logout-blade-analysis-4.md)
+- [logout-blade-conclusions-1.md](./legacy/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions-3.md](../logout-blade-conclusions-3.md)
+- [logout-blade-corrected-analysis-1.md](./legacy/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis-4.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-error-analysis-1.md](./legacy/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis-2.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-implementation-1.md](./legacy/logout-blade-implementation-1.md)
+- [logout-blade-implementation-3.md](../logout-blade-implementation-3.md)
+- [logout-blade-structure-3.md](../logout-blade-structure-3.md)
+- [logout-error-analysis-1.md](./legacy/logout-error-analysis-1.md)
+- [logout-error-analysis-3.md](../logout-error-analysis-3.md)
+- [logout-event-error-1.md](./legacy/logout-event-error-1.md)
+- [logout-event-error-3.md](../logout-event-error-3.md)
+- [logout-filament-widget-1.md](./legacy/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./legacy/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected-4.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-2.md](../logout-filament-widget-2.md)
+- [logout-implementation-best-practices-1.md](./legacy/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-error-1.md](./legacy/logout-implementation-error-1.md)
+- [logout-implementation-error-4.md](../logout-implementation-error-4.md)
+- [logout-implementation-with-laravel-localization-1.md](./legacy/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization-4.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-implementation-1.md](./legacy/logout-page-implementation-1.md)
+- [logout-page-implementation-2.md](../logout-page-implementation-2.md)
+- [logout-security-2.md](../logout-security-2.md)
+- [mcp-integration.md](./legacy/mcp-integration.md)
+- [mcp-server-recommended.md](./legacy/mcp-server-recommended.md)
+- [metodi-duplicati-analisi.md](./legacy/metodi-duplicati-analisi.md)
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+>>>>>>> laraxot/dev
 - [migration-duplicate-resolution.md](./legacy/migration-duplicate-resolution.md)
 - [migration-filament-4.md](./legacy/migration-filament-4.md)
 - [migrazione-filament-4.md](./legacy/migrazione-filament-4.md)
 - [model-inheritance-analysis.md](./legacy/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./legacy/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./legacy/modelli-factory-seeder-analisi.md)
+<<<<<<< HEAD
 - [moderation-doctor.md](./legacy/moderation-doctor.md)
 - [moderation-wizard-generic.md](./legacy/moderation-wizard-generic.md)
 - [module-analysis-1.md](./legacy/module-analysis-1.md)
 - [module-analysis.md](./legacy/module-analysis.md)
+=======
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [module-analysis-1.md](./legacy/module-analysis-1.md)
+- [module-analysis-3.md](../../../Activity/docs/module-analysis-3.md)
+>>>>>>> laraxot/dev
 - [module-structure.md](./legacy/module-structure.md)
 - [module-user-1.md](./legacy/module-user-1.md)
 - [namespace-conventions-1.md](./legacy/namespace-conventions-1.md)
 - [namespace-conventions.md](./legacy/namespace-conventions.md)
+<<<<<<< HEAD
 - [navigation-structure.md](./legacy/navigation-structure.md)
+=======
+- [navigation-structure-3.md](../navigation-structure-3.md)
+>>>>>>> laraxot/dev
 - [optimization-analysis.md](./legacy/optimization-analysis.md)
 - [optimization-recommendations.md](./legacy/optimization-recommendations.md)
 - [parental-inheritance-1.md](./legacy/parental-inheritance-1.md)
 - [password-translation-completion-2025.md](./legacy/password-translation-completion-2025.md)
 - [password-translation-completion.md](./legacy/password-translation-completion.md)
 - [path-conventions.md](./legacy/path-conventions.md)
+<<<<<<< HEAD
 - [phpstan-dry-kiss-improvements-.md](./legacy/phpstan-dry-kiss-improvements-.md)
 - [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./legacy/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -1282,10 +2193,62 @@
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./legacy/translation-city-field-refactor.md)
 - [translation-keys-rules.md](./legacy/translation-keys-rules.md)
+=======
+- [phpstan-dry-kiss-improvements-4.md](../phpstan-dry-kiss-improvements-4.md)
+- [phpstan-dry-kiss-improvements-1.md](./legacy/phpstan-dry-kiss-improvements-1.md)
+- [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./legacy/phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
+- [phpstan-dry-kiss-improvements.md](./legacy/phpstan-dry-kiss-improvements.md)
+- [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
+- [phpstan-fixes-1-2.md](../../../UI/docs/phpstan-fixes-1-2.md)
+- [phpstan-fixes-2.md](./legacy/phpstan-fixes-2.md)
+- [phpstan-fixes-2025-10-01.deprecated.md](./legacy/phpstan-fixes-2025-10-01.deprecated.md)
+- [phpstan-fixes-4.md](../phpstan-fixes-4.md)
+- [phpstan-fixes-3.md](./legacy/phpstan-fixes-3.md)
+- [phpstan-fixes.md](./legacy/phpstan-fixes.md)
+- [phpstan-level-10-fixes.md](./legacy/phpstan-level-10-fixes.md)
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+- [profile-management-3.md](../profile-management-3.md)
+- [quality-status-11.md](./legacy/quality-status-11.md)
+- [quality-status-2025-11.md](./legacy/quality-status-2025-11.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [readme-fullcalendar-scheduler-1.md](./legacy/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+- [registration-widget-1.md](./legacy/registration-widget-1.md)
+- [registration-widget-fileupload-fix-1.md](./legacy/registration-widget-fileupload-fix-1.md)
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-update-3.md](../registration-widget-update-3.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+- [roles-permissions-1.md](./legacy/roles-permissions-1.md)
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-error-solution-3.md](../routing-error-solution-3.md)
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [service-provider-warning-2.md](../service-provider-warning-2.md)
+- [session-management-3.md](../session-management-3.md)
+- [spatie-permissions-methods.md](./legacy/spatie-permissions-methods.md)
+- [sso-providers-implementation.md](./legacy/sso-providers-implementation.md)
+- [team-bindings-fix-1.md](./legacy/team-bindings-fix-1.md)
+- [team-bindings-fix-2.md](../team-bindings-fix-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+- [testing-rules-2.md](../testing-rules-2.md)
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+- [traits-complete-guide-1.md](./legacy/traits-complete-guide-1.md)
+- [traits-complete-guide.md](./legacy/traits-complete-guide.md)
+- [traits-hasteams-analisi-corretta-1.md](./legacy/traits-hasteams-analisi-corretta-1.md)
+- [traits-hasteams-analisi-corretta-4.md](../traits-hasteams-analisi-corretta-4.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+- [translation-city-field-refactor-2.md](./legacy/translation-city-field-refactor-2.md)
+- [translation-city-field-refactor-1.md](./legacy/translation-city-field-refactor-1.md)
+- [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/translation-city-field-refactor-2025-08-08.deprecated.md)
+- [translation-city-field-refactor.md](./legacy/translation-city-field-refactor.md)
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+>>>>>>> laraxot/dev
 - [updates-12.md](./legacy/updates-12.md)
 - [user-factory-advanced-integration-1.md](./legacy/user-factory-advanced-integration-1.md)
 - [user-factory-advanced-integration.md](./legacy/user-factory-advanced-integration.md)
 - [user-factory-complete-ecosystem-integration-1.md](./legacy/user-factory-complete-ecosystem-integration-1.md)
+<<<<<<< HEAD
 - [user-factory-complete-ecosystem-integration.md](./legacy/user-factory-complete-ecosystem-integration.md)
 - [user-factory-integration-1.md](./legacy/user-factory-integration-1.md)
 - [user-factory-integration.md](./legacy/user-factory-integration.md)
@@ -1319,10 +2282,46 @@
 - [actions-path-convention.md](./legacy/historical/actions-path-convention.md)
 - [actions-structure-1.md](./legacy/historical/actions-structure-1.md)
 - [actions-structure.md](./legacy/historical/actions-structure.md)
+=======
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-integration-1.md](./legacy/user-factory-integration-1.md)
+- [user-factory-integration-3.md](../user-factory-integration-3.md)
+- [user-invitation.md](./legacy/user-invitation.md)
+- [user-moderation-strategy-1.md](./legacy/user-moderation-strategy-1.md)
+- [user-moderation-strategy-3.md](../user-moderation-strategy-3.md)
+- [userfactory-advanced-implementation-complete-3.md](../userfactory-advanced-implementation-complete-3.md)
+- [volt-blade-implementation-1.md](./legacy/volt-blade-implementation-1.md)
+- [volt-blade-implementation-error-1.md](./legacy/volt-blade-implementation-error-1.md)
+- [volt-blade-implementation-error-4.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-4.md](../volt-blade-implementation-4.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-folio-auth-implementation-1.md](./legacy/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation-4.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-logout-1.md](./legacy/volt-folio-logout-1.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-error-1.md](./legacy/volt-folio-logout-error-1.md)
+- [volt-folio-logout-error-2.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-3.md](../volt-folio-logout-3.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-3.md](../volt-logout-3.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+- [widget-rendering-analysis.md](./legacy/widget-rendering-analysis.md)
+- [widget-translation-rules-1.md](./legacy/widget-translation-rules-1.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+- [widgets-structure-2.md](../widgets-structure-2.md)
+
+## legacy/historical
+
+- [actions-path-convention-2.md](../actions-path-convention-2.md)
+- [actions-structure-1.md](./legacy/historical/actions-structure-1.md)
+- [actions-structure-4.md](../actions-structure-4.md)
+>>>>>>> laraxot/dev
 - [advanced-user-architecture.md](./legacy/historical/advanced-user-architecture.md)
 - [analisi-metodi-duplicati.md](./legacy/historical/analisi-metodi-duplicati.md)
 - [analysis.md](./legacy/historical/analysis.md)
 - [architecture-rules.md](./legacy/historical/architecture-rules.md)
+<<<<<<< HEAD
 - [auth-blade-structure.md](./legacy/historical/auth-blade-structure.md)
 - [auth-components-best-practices-1.md](./legacy/historical/auth-components-best-practices-1.md)
 - [auth-components-best-practices.md](./legacy/historical/auth-components-best-practices.md)
@@ -1340,16 +2339,40 @@
 - [authentication-troubleshooting.md](./legacy/historical/authentication-troubleshooting.md)
 - [avatar-implementation-1.md](./legacy/historical/avatar-implementation-1.md)
 - [avatar-implementation.md](./legacy/historical/avatar-implementation.md)
+=======
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-components-best-practices-1.md](./legacy/historical/auth-components-best-practices-1.md)
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-login-implementation-1.md](./legacy/historical/auth-login-implementation-1.md)
+- [auth-login-implementation-4.md](../auth-login-implementation-4.md)
+- [auth-logout-blade-3.md](../auth-logout-blade-3.md)
+- [auth-logout-implementation-1.md](./legacy/historical/auth-logout-implementation-1.md)
+- [auth-logout-implementation-4.md](../auth-logout-implementation-4.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-pages-implementation-1.md](./legacy/historical/auth-pages-implementation-1.md)
+- [auth-pages-implementation-3.md](../auth-pages-implementation-3.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widgets-view-namespaces-1.md](./legacy/historical/auth-widgets-view-namespaces-1.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [authentication-troubleshooting.md](./legacy/historical/authentication-troubleshooting.md)
+- [avatar-implementation-1.md](./legacy/historical/avatar-implementation-1.md)
+- [avatar-implementation-3.md](../avatar-implementation-3.md)
+>>>>>>> laraxot/dev
 - [baseuser-conflicts.md](./legacy/historical/baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./legacy/historical/baseuser-dry-violation-analysis.md)
 - [baseuser-refactoring-completed.md](./legacy/historical/baseuser-refactoring-completed.md)
 - [baseuser-spatie-duplicates-analysis.md](./legacy/historical/baseuser-spatie-duplicates-analysis.md)
 - [bottlenecks.md](./legacy/historical/bottlenecks.md)
+<<<<<<< HEAD
 - [business-logic-analysis.md](./legacy/historical/business-logic-analysis.md)
+=======
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+>>>>>>> laraxot/dev
 - [business-logic-deep-dive.md](./legacy/historical/business-logic-deep-dive.md)
 - [case-sensitivity-rules.md](./legacy/historical/case-sensitivity-rules.md)
 - [chartjs-datalabels-user-integration.md](./legacy/historical/chartjs-datalabels-user-integration.md)
 - [charts-implementation.md](./legacy/historical/charts-implementation.md)
+<<<<<<< HEAD
 - [cms-link-1.md](./legacy/historical/cms-link-1.md)
 - [cms-link.md](./legacy/historical/cms-link.md)
 - [code-optimization-analysis.md](./legacy/historical/code-optimization-analysis.md)
@@ -1360,10 +2383,23 @@
 - [conflict-resolution-passwordresetwidget.md](./legacy/historical/conflict-resolution-passwordresetwidget.md)
 - [conflict-resolution-report.md](./legacy/historical/conflict-resolution-report.md)
 - [conflict-resolution.md](./legacy/historical/conflict-resolution.md)
+=======
+- [cms-link-1-2.md](../../../UI/docs/cms-link-1-2.md)
+- [cms-link.md](./legacy/historical/cms-link.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-tools.md](./legacy/historical/code-quality-tools.md)
+- [component-verification-rules-1.md](./legacy/historical/component-verification-rules-1.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [conflict-resolution-passwordresetwidget-3.md](../conflict-resolution-passwordresetwidget-3.md)
+- [conflict-resolution-report-3.md](../conflict-resolution-report-3.md)
+- [conflict-resolution-2.md](../../../Geo/docs/conflict-resolution-2.md)
+>>>>>>> laraxot/dev
 - [conflicts.md](./legacy/historical/conflicts.md)
 - [console-commands-philosophy.md](./legacy/historical/console-commands-philosophy.md)
 - [coverage.md](./legacy/historical/coverage.md)
 - [critical-filament-rule-getinfolistschema-string-keys.md](./legacy/historical/critical-filament-rule-getinfolistschema-string-keys.md)
+<<<<<<< HEAD
 - [cross-database-relations-issue.md](./legacy/historical/cross-database-relations-issue.md)
 - [custom-login-1.md](./legacy/historical/custom-login-1.md)
 - [custom-login.md](./legacy/historical/custom-login.md)
@@ -1379,6 +2415,23 @@
 - [doctor-registration-widget.md](./legacy/historical/doctor-registration-widget.md)
 - [doctor-registration.md](./legacy/historical/doctor-registration.md)
 - [documentation-standards.md](./legacy/historical/documentation-standards.md)
+=======
+- [cross-database-relations-issue-3.md](../cross-database-relations-issue-3.md)
+- [custom-login-1.md](./legacy/historical/custom-login-1.md)
+- [custom-login-2.md](../../../Geo/docs/raw/history/custom-login-2.md)
+- [cyclomatic-complexity-report.md](./legacy/historical/cyclomatic-complexity-report.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-issues-1.md](./legacy/historical/database-issues-1.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [database-population.md](./legacy/historical/database-population.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+- [dependency-rules.md](./legacy/historical/dependency-rules.md)
+- [directory-structure-checklist-3.md](../directory-structure-checklist-3.md)
+- [docs-location-policy.md](./legacy/historical/docs-location-policy.md)
+- [doctor-registration-widget.md](./legacy/historical/doctor-registration-widget.md)
+- [doctor-registration.md](./legacy/historical/doctor-registration.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+>>>>>>> laraxot/dev
 - [dry-kiss-analysis-1.md](./legacy/historical/dry-kiss-analysis-1.md)
 - [dry-kiss-analysis-conflict-018b09.md](./legacy/historical/dry-kiss-analysis-conflict-018b09.md)
 - [dry-kiss-analysis-conflict.md](./legacy/historical/dry-kiss-analysis-conflict.md)
@@ -1389,7 +2442,11 @@
 - [eav.md](./legacy/historical/eav.md)
 - [eloquent-properties-best-practices.md](./legacy/historical/eloquent-properties-best-practices.md)
 - [email-doctor-registration.md](./legacy/historical/email-doctor-registration.md)
+<<<<<<< HEAD
 - [error-handling.md](./legacy/historical/error-handling.md)
+=======
+- [error-handling-2.md](../error-handling-2.md)
+>>>>>>> laraxot/dev
 - [external-packages-inheritance-pattern.md](./legacy/historical/external-packages-inheritance-pattern.md)
 - [factory-audit-lessons-learned.md](./legacy/historical/factory-audit-lessons-learned.md)
 - [factory-creation-status.md](./legacy/historical/factory-creation-status.md)
@@ -1401,6 +2458,7 @@
 - [filament-4x-compatibility-conflict.md](./legacy/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./legacy/historical/filament-4x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./legacy/historical/filament-auth-pages-exceptions.md)
+<<<<<<< HEAD
 - [filament-best-practices.md](./legacy/historical/filament-best-practices.md)
 - [filament-charts-implementation.md](./legacy/historical/filament-charts-implementation.md)
 - [filament-components-reference.md](./legacy/historical/filament-components-reference.md)
@@ -1415,6 +2473,22 @@
 - [filament-resources-organization.md](./legacy/historical/filament-resources-organization.md)
 - [filament-resources-philosophical-debate.md](./legacy/historical/filament-resources-philosophical-debate.md)
 - [filament.md](./legacy/historical/filament.md)
+=======
+- [filament-best-practices-2.md](../../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [filament-charts-implementation.md](./legacy/historical/filament-charts-implementation.md)
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-errors-3.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-filters-and-widgets.md](./legacy/historical/filament-filters-and-widgets.md)
+- [filament-namespace-rules-1.md](./legacy/historical/filament-namespace-rules-1.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-nesting-opportunities.md](./legacy/historical/filament-nesting-opportunities.md)
+- [filament-relation-managers-1.md](./legacy/historical/filament-relation-managers-1.md)
+- [filament-relation-managers-3.md](../filament-relation-managers-3.md)
+- [filament-resources-coverage-analysis.md](./legacy/historical/filament-resources-coverage-analysis.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+- [filament-resources-philosophical-debate.md](./legacy/historical/filament-resources-philosophical-debate.md)
+- [filament-3.md](../../../Activity/docs/filament-3.md)
+>>>>>>> laraxot/dev
 - [filament4-migration.md](./legacy/historical/filament4-migration.md)
 - [file-naming-rules.md](./legacy/historical/file-naming-rules.md)
 - [filosofia-modulo-user.md](./legacy/historical/filosofia-modulo-user.md)
@@ -1425,6 +2499,7 @@
 - [fullcalendar-scheduler-documentation-summary.md](./legacy/historical/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./legacy/historical/fullcalendar-scheduler-license-1.md)
 - [fullcalendar-scheduler-license-troubleshooting-1.md](./legacy/historical/fullcalendar-scheduler-license-troubleshooting-1.md)
+<<<<<<< HEAD
 - [fullcalendar-scheduler-license-troubleshooting.md](./legacy/historical/fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license.md](./legacy/historical/fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-quick-reference-1.md](./legacy/historical/fullcalendar-scheduler-quick-reference-1.md)
@@ -1434,12 +2509,24 @@
 - [generic-user-moderation-strategy.md](./legacy/historical/generic-user-moderation-strategy.md)
 - [get-new-password-action-business-logic.md](./legacy/historical/get-new-password-action-business-logic.md)
 - [git-conflict-resolution.md](./legacy/historical/git-conflict-resolution.md)
+=======
+- [fullcalendar-scheduler-license-troubleshooting-3.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-3.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-quick-reference-1.md](./legacy/historical/fullcalendar-scheduler-quick-reference-1.md)
+- [fullcalendar-scheduler-quick-reference-4.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [gdpr.md](./legacy/historical/gdpr.md)
+- [generic-user-moderation-strategy-1.md](./legacy/historical/generic-user-moderation-strategy-1.md)
+- [generic-user-moderation-strategy-3.md](../generic-user-moderation-strategy-3.md)
+- [get-new-password-action-business-logic.md](./legacy/historical/get-new-password-action-business-logic.md)
+- [git-conflict-resolution-3.md](../git-conflict-resolution-3.md)
+>>>>>>> laraxot/dev
 - [git-conflicts-resolution-conflict-06cb77.md](./legacy/historical/git-conflicts-resolution-conflict-06cb77.md)
 - [git-conflicts-resolution-conflict.md](./legacy/historical/git-conflicts-resolution-conflict.md)
 - [git-conflicts-resolution-summary.md](./legacy/historical/git-conflicts-resolution-summary.md)
 - [git-conflicts-resolution.md](./legacy/historical/git-conflicts-resolution.md)
 - [guida-migrazione-step-by-step.md](./legacy/historical/guida-migrazione-step-by-step.md)
 - [hasteams-currentteam-method-choice-1.md](./legacy/historical/hasteams-currentteam-method-choice-1.md)
+<<<<<<< HEAD
 - [hasteams-currentteam-method-choice.md](./legacy/historical/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./legacy/historical/hasteams-trait-analysis.md)
 - [hasteams-trait-duplicate-methods.md](./legacy/historical/hasteams-trait-duplicate-methods.md)
@@ -1451,20 +2538,42 @@
 - [header-language-selector-with-flags-1.md](./legacy/historical/header-language-selector-with-flags-1.md)
 - [header-language-selector-with-flags.md](./legacy/historical/header-language-selector-with-flags.md)
 - [implementation-plan.md](./legacy/historical/implementation-plan.md)
+=======
+- [hasteams-currentteam-method-choice-4.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-duplicate-methods.md](./legacy/historical/hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/historical/hasteams-trait-filosofia-e-correzione-completa-1.md)
+- [hasteams-trait-filosofia-e-correzione-completa-4.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [header-components-2.md](../header-components-2.md)
+- [header-language-avatar-implementation-1-2.md](../../../Cms/docs/sections/header-language-avatar-implementation-1-2.md)
+- [header-language-avatar-implementation.md](./legacy/historical/header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1-2.md](../../../Cms/docs/sections/header-language-selector-with-flags-1-2.md)
+- [header-language-selector-with-flags.md](./legacy/historical/header-language-selector-with-flags.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+>>>>>>> laraxot/dev
 - [implementation-summary.md](./legacy/historical/implementation-summary.md)
 - [index-conflict.md](./legacy/historical/index-conflict.md)
 - [index.md](./legacy/historical/index.md)
 - [intelligent-login-redirect.md](./legacy/historical/intelligent-login-redirect.md)
 - [jetstream-vs-laraxot-philosophy-1.md](./legacy/historical/jetstream-vs-laraxot-philosophy-1.md)
+<<<<<<< HEAD
 - [jetstream-vs-laraxot-philosophy.md](./legacy/historical/jetstream-vs-laraxot-philosophy.md)
 - [jpgraph-integration.md](./legacy/historical/jpgraph-integration.md)
 - [js-conflicts.md](./legacy/historical/js-conflicts.md)
 - [label-hardcoded-prevention.md](./legacy/historical/label-hardcoded-prevention.md)
 - [lang-link-1.md](./legacy/historical/lang-link-1.md)
+=======
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jpgraph-integration.md](./legacy/historical/jpgraph-integration.md)
+- [js-conflicts.md](./legacy/historical/js-conflicts.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [lang-link-1-2.md](../../../UI/docs/lang-link-1-2.md)
+>>>>>>> laraxot/dev
 - [lang-link.md](./legacy/historical/lang-link.md)
 - [laraxot-migration-philosophy.md](./legacy/historical/laraxot-migration-philosophy.md)
 - [laraxot-migration-policy.md](./legacy/historical/laraxot-migration-policy.md)
 - [limesurvey-database-commands.md](./legacy/historical/limesurvey-database-commands.md)
+<<<<<<< HEAD
 - [links.md](./legacy/historical/links.md)
 - [livewire-filament-parameter-passing.md](./legacy/historical/livewire-filament-parameter-passing.md)
 - [livewire-form-statepath-issue.md](./legacy/historical/livewire-form-statepath-issue.md)
@@ -1475,12 +2584,25 @@
 - [login-widget-analysis.md](./legacy/historical/login-widget-analysis.md)
 - [login-widget-conversion-1.md](./legacy/historical/login-widget-conversion-1.md)
 - [login-widget-conversion.md](./legacy/historical/login-widget-conversion.md)
+=======
+- [links-2.md](../../../Gdpr/docs/links-2.md)
+- [livewire-filament-parameter-passing.md](./legacy/historical/livewire-filament-parameter-passing.md)
+- [livewire-form-statepath-issue.md](./legacy/historical/livewire-form-statepath-issue.md)
+- [livewire-namespace-3.md](../livewire-namespace-3.md)
+- [livewire-to-filament-widget-migration.md](./legacy/historical/livewire-to-filament-widget-migration.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-issue-resolution-report.md](./legacy/historical/login-issue-resolution-report.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-conversion-1.md](./legacy/historical/login-widget-conversion-1.md)
+- [login-widget-conversion-3.md](../login-widget-conversion-3.md)
+>>>>>>> laraxot/dev
 - [login-widget-filament-schema-errors-roadmap.md](./legacy/historical/login-widget-filament-schema-errors-roadmap.md)
 - [login-widget-livewire-binding-fix.md](./legacy/historical/login-widget-livewire-binding-fix.md)
 - [login-widget-translation-audit-2025.md](./legacy/historical/login-widget-translation-audit-2025.md)
 - [login-widget-translation-audit-conflict.md](./legacy/historical/login-widget-translation-audit-conflict.md)
 - [login-widget-translation-audit.md](./legacy/historical/login-widget-translation-audit.md)
 - [loginwidget-error-analysis.md](./legacy/historical/loginwidget-error-analysis.md)
+<<<<<<< HEAD
 - [logout-analysis.md](./legacy/historical/logout-analysis.md)
 - [logout-blade-analysis-1.md](./legacy/historical/logout-blade-analysis-1.md)
 - [logout-blade-analysis.md](./legacy/historical/logout-blade-analysis.md)
@@ -1511,6 +2633,38 @@
 - [logout-page-implementation-1.md](./legacy/historical/logout-page-implementation-1.md)
 - [logout-page-implementation.md](./legacy/historical/logout-page-implementation.md)
 - [logout-security.md](./legacy/historical/logout-security.md)
+=======
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-blade-analysis-1.md](./legacy/historical/logout-blade-analysis-1.md)
+- [logout-blade-analysis-4.md](../logout-blade-analysis-4.md)
+- [logout-blade-conclusions-1.md](./legacy/historical/logout-blade-conclusions-1.md)
+- [logout-blade-conclusions-3.md](../logout-blade-conclusions-3.md)
+- [logout-blade-corrected-analysis-1.md](./legacy/historical/logout-blade-corrected-analysis-1.md)
+- [logout-blade-corrected-analysis-4.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-error-analysis-1.md](./legacy/historical/logout-blade-error-analysis-1.md)
+- [logout-blade-error-analysis-2.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-implementation-1.md](./legacy/historical/logout-blade-implementation-1.md)
+- [logout-blade-implementation-3.md](../logout-blade-implementation-3.md)
+- [logout-blade-structure-3.md](../logout-blade-structure-3.md)
+- [logout-error-analysis-1.md](./legacy/historical/logout-error-analysis-1.md)
+- [logout-error-analysis-3.md](../logout-error-analysis-3.md)
+- [logout-event-error-1.md](./legacy/historical/logout-event-error-1.md)
+- [logout-event-error-3.md](../logout-event-error-3.md)
+- [logout-filament-widget-1.md](./legacy/historical/logout-filament-widget-1.md)
+- [logout-filament-widget-corrected-1.md](./legacy/historical/logout-filament-widget-corrected-1.md)
+- [logout-filament-widget-corrected-4.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-2.md](../logout-filament-widget-2.md)
+- [logout-implementation-best-practices-1.md](./legacy/historical/logout-implementation-best-practices-1.md)
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-error-1.md](./legacy/historical/logout-implementation-error-1.md)
+- [logout-implementation-error-4.md](../logout-implementation-error-4.md)
+- [logout-implementation-with-laravel-localization-1.md](./legacy/historical/logout-implementation-with-laravel-localization-1.md)
+- [logout-implementation-with-laravel-localization-4.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-implementation-1.md](./legacy/historical/logout-page-implementation-1.md)
+- [logout-page-implementation-2.md](../logout-page-implementation-2.md)
+- [logout-security-2.md](../logout-security-2.md)
+>>>>>>> laraxot/dev
 - [mcp-database-tools.md](./legacy/historical/mcp-database-tools.md)
 - [mcp-integration.md](./legacy/historical/mcp-integration.md)
 - [mcp-server-recommended.md](./legacy/historical/mcp-server-recommended.md)
@@ -1518,8 +2672,13 @@
 - [membership-uuid-fix.md](./legacy/historical/membership-uuid-fix.md)
 - [memory-optimization-summary.md](./legacy/historical/memory-optimization-summary.md)
 - [metodi-duplicati-analisi.md](./legacy/historical/metodi-duplicati-analisi.md)
+<<<<<<< HEAD
 - [metrics-dashboard.md](./legacy/historical/metrics-dashboard.md)
 - [migration-best-practices.md](./legacy/historical/migration-best-practices.md)
+=======
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+- [migration-best-practices-3.md](../../../Lang/docs/migration-best-practices-3.md)
+>>>>>>> laraxot/dev
 - [migration-consolidation-philosophy.md](./legacy/historical/migration-consolidation-philosophy.md)
 - [migration-consolidation-plan.md](./legacy/historical/migration-consolidation-plan.md)
 - [migration-consolidation.md](./legacy/historical/migration-consolidation.md)
@@ -1544,6 +2703,7 @@
 - [model-inheritance-fixes.md](./legacy/historical/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./legacy/historical/modelli-factory-seeder-analisi.md)
 - [models-analysis.md](./legacy/historical/models-analysis.md)
+<<<<<<< HEAD
 - [moderation-doctor.md](./legacy/historical/moderation-doctor.md)
 - [moderation-wizard-generic.md](./legacy/historical/moderation-wizard-generic.md)
 - [module-analysis-complete.md](./legacy/historical/module-analysis-complete.md)
@@ -1554,6 +2714,18 @@
 - [namespace-conventions-1.md](./legacy/historical/namespace-conventions-1.md)
 - [namespace-conventions.md](./legacy/historical/namespace-conventions.md)
 - [navigation-structure.md](./legacy/historical/navigation-structure.md)
+=======
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [module-analysis-complete.md](./legacy/historical/module-analysis-complete.md)
+- [module-analysis-3.md](../../../Activity/docs/module-analysis-3.md)
+- [module-structure.md](./legacy/historical/module-structure.md)
+- [module-user-1.md](./legacy/historical/module-user-1.md)
+- [module-user-2.md](../../../Geo/docs/raw/history/module-user-2.md)
+- [namespace-conventions-1.md](./legacy/historical/namespace-conventions-1.md)
+- [namespace-conventions.md](./legacy/historical/namespace-conventions.md)
+- [navigation-structure-3.md](../navigation-structure-3.md)
+>>>>>>> laraxot/dev
 - [navigation-translations-completion-roadmap.md](./legacy/historical/navigation-translations-completion-roadmap.md)
 - [navigation-translations-fixes-january-2026.md](./legacy/historical/navigation-translations-fixes-january-2026.md)
 - [navigation-translations-fixes-january.md](./legacy/historical/navigation-translations-fixes-january.md)
@@ -1577,7 +2749,11 @@
 - [parental-inheritance-1.md](./legacy/historical/parental-inheritance-1.md)
 - [parental-inheritance.md](./legacy/historical/parental-inheritance.md)
 - [parental.md](./legacy/historical/parental.md)
+<<<<<<< HEAD
 - [passport-admin-actions.md](./legacy/historical/passport-admin-actions.md)
+=======
+- [passport-admin-actions-2.md](../passport-admin-actions-2.md)
+>>>>>>> laraxot/dev
 - [passport-cluster-completion-status.md](./legacy/historical/passport-cluster-completion-status.md)
 - [passport-cluster-current-status.md](./legacy/historical/passport-cluster-current-status.md)
 - [passport-cluster-implementation-completed.md](./legacy/historical/passport-cluster-implementation-completed.md)
@@ -1595,7 +2771,11 @@
 - [passport-complete-implementation.md](./legacy/historical/passport-complete-implementation.md)
 - [passport-complete-management-debate.md](./legacy/historical/passport-complete-management-debate.md)
 - [passport-filament-cluster-proposal.md](./legacy/historical/passport-filament-cluster-proposal.md)
+<<<<<<< HEAD
 - [passport-implementation-summary.md](./legacy/historical/passport-implementation-summary.md)
+=======
+- [passport-implementation-summary-2.md](../passport-implementation-summary-2.md)
+>>>>>>> laraxot/dev
 - [passport-vs-socialite-clarification.md](./legacy/historical/passport-vs-socialite-clarification.md)
 - [passport.md](./legacy/historical/passport.md)
 - [password-translation-completion-2025.md](./legacy/historical/password-translation-completion-2025.md)
@@ -1604,8 +2784,13 @@
 - [path-conventions.md](./legacy/historical/path-conventions.md)
 - [performance-issues.md](./legacy/historical/performance-issues.md)
 - [philosophy-complete.md](./legacy/historical/philosophy-complete.md)
+<<<<<<< HEAD
 - [phpinsights-report.md](./legacy/historical/phpinsights-report.md)
 - [phpmd-phpinsights-corrections-.md](./legacy/historical/phpmd-phpinsights-corrections-.md)
+=======
+- [phpinsights-report-2.md](../phpinsights-report-2.md)
+- [phpmd-phpinsights-corrections-2.md](../phpmd-phpinsights-corrections-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-analysis-user.md](./legacy/historical/phpstan-analysis-user.md)
 - [phpstan-array-types-fixes.md](./legacy/historical/phpstan-array-types-fixes.md)
 - [phpstan-complete-success.md](./legacy/historical/phpstan-complete-success.md)
@@ -1613,7 +2798,11 @@
 - [phpstan-compliance.md](./legacy/historical/phpstan-compliance.md)
 - [phpstan-corrections-oauth-resources.md](./legacy/historical/phpstan-corrections-oauth-resources.md)
 - [phpstan-corrections-summary.md](./legacy/historical/phpstan-corrections-summary.md)
+<<<<<<< HEAD
 - [phpstan-corrections.md](./legacy/historical/phpstan-corrections.md)
+=======
+- [phpstan-corrections-2.md](../../../Geo/docs/development/phpstan-corrections-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements.md](./legacy/historical/phpstan-dry-kiss-improvements.md)
 - [phpstan-error-roadmap.md](./legacy/historical/phpstan-error-roadmap.md)
 - [phpstan-errors-philosophy.md](./legacy/historical/phpstan-errors-philosophy.md)
@@ -1622,10 +2811,17 @@
 - [phpstan-final-progress.md](./legacy/historical/phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./legacy/historical/phpstan-fix-plan-.md)
 - [phpstan-fix-roadmap.md](./legacy/historical/phpstan-fix-roadmap.md)
+<<<<<<< HEAD
 - [phpstan-fixes-1.md](./legacy/historical/phpstan-fixes-1.md)
 - [phpstan-fixes-2.md](./legacy/historical/phpstan-fixes-2.md)
 - [phpstan-fixes-2025-10-01.deprecated.md](./legacy/historical/phpstan-fixes-2025-10-01.deprecated.md)
 - [phpstan-fixes-2025.md](./legacy/historical/phpstan-fixes-2025.md)
+=======
+- [phpstan-fixes-1-2.md](../../../UI/docs/phpstan-fixes-1-2.md)
+- [phpstan-fixes-2.md](./legacy/historical/phpstan-fixes-2.md)
+- [phpstan-fixes-2025-10-01.deprecated.md](./legacy/historical/phpstan-fixes-2025-10-01.deprecated.md)
+- [phpstan-fixes-4.md](../phpstan-fixes-4.md)
+>>>>>>> laraxot/dev
 - [phpstan-fixes-3.md](./legacy/historical/phpstan-fixes-3.md)
 - [phpstan-fixes-4.md](./legacy/historical/phpstan-fixes-4.md)
 - [phpstan-fixes-conflict-276dc0.md](./legacy/historical/phpstan-fixes-conflict-276dc0.md)
@@ -1642,8 +2838,13 @@
 - [phpstan-fixes-passport.md](./legacy/historical/phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./legacy/historical/phpstan-fixes-roadmap.md)
 - [phpstan-fixes.md](./legacy/historical/phpstan-fixes.md)
+<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./legacy/historical/phpstan-furious-debate-.md)
 - [phpstan-generic-types.md](./legacy/historical/phpstan-generic-types.md)
+=======
+- [phpstan-furious-debate-2.md](./legacy/historical/phpstan-furious-debate-2.md)
+- [phpstan-generic-types-2.md](../../../Xot/docs/consolidated/phpstan/phpstan-generic-types-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-level-10-fixes.md](./legacy/historical/phpstan-level-10-fixes.md)
 - [phpstan-level10-analysis.md](./legacy/historical/phpstan-level10-analysis.md)
 - [phpstan-level10-fixes.md](./legacy/historical/phpstan-level10-fixes.md)
@@ -1652,9 +2853,15 @@
 - [phpstan-progress-report.md](./legacy/historical/phpstan-progress-report.md)
 - [phpstan-progress-summary.md](./legacy/historical/phpstan-progress-summary.md)
 - [phpstan-progress.md](./legacy/historical/phpstan-progress.md)
+<<<<<<< HEAD
 - [phpstan-relationship-fix.md](./legacy/historical/phpstan-relationship-fix.md)
 - [phpstan-resolution-debate.md](./legacy/historical/phpstan-resolution-debate.md)
 - [phpstan-roadmap.md](./legacy/historical/phpstan-roadmap.md)
+=======
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-resolution-debate.md](./legacy/historical/phpstan-resolution-debate.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-syntax-fixes.md](./legacy/historical/phpstan-syntax-fixes.md)
 - [phpstan.md](./legacy/historical/phpstan.md)
 - [policies.md](./legacy/historical/policies.md)
@@ -1663,27 +2870,47 @@
 - [quality-status-11.md](./legacy/historical/quality-status-11.md)
 - [quality-status.md](./legacy/historical/quality-status.md)
 - [quality-tooling.md](./legacy/historical/quality-tooling.md)
+<<<<<<< HEAD
 - [quality-tools-final-report-.md](./legacy/historical/quality-tools-final-report-.md)
 - [quality-tools-report.md](./legacy/historical/quality-tools-report.md)
 - [quality-tools.md](./legacy/historical/quality-tools.md)
 - [query-optimization-analysis.md](./legacy/historical/query-optimization-analysis.md)
 - [readme-fullcalendar-scheduler-1.md](./legacy/historical/readme-fullcalendar-scheduler-1.md)
 - [readme-fullcalendar-scheduler.md](./legacy/historical/readme-fullcalendar-scheduler.md)
+=======
+- [quality-tools-final-report-2.md](./legacy/historical/quality-tools-final-report-2.md)
+- [quality-tools-report.md](./legacy/historical/quality-tools-report.md)
+- [quality-tools.md](./legacy/historical/quality-tools.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [readme-fullcalendar-scheduler-1.md](./legacy/historical/readme-fullcalendar-scheduler-1.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+>>>>>>> laraxot/dev
 - [readme-new.md](./legacy/historical/readme-new.md)
 - [redundancy-fixes-january-2026.md](./legacy/historical/redundancy-fixes-january-2026.md)
 - [redundancy-fixes-january.md](./legacy/historical/redundancy-fixes-january.md)
 - [redundancy-fixes.md](./legacy/historical/redundancy-fixes.md)
 - [registration-widget-1.md](./legacy/historical/registration-widget-1.md)
 - [registration-widget-fileupload-fix-1.md](./legacy/historical/registration-widget-fileupload-fix-1.md)
+<<<<<<< HEAD
 - [registration-widget-fileupload-fix.md](./legacy/historical/registration-widget-fileupload-fix.md)
 - [registration-widget-update-1.md](./legacy/historical/registration-widget-update-1.md)
 - [registration-widget-update.md](./legacy/historical/registration-widget-update.md)
 - [registration-widget.md](./legacy/historical/registration-widget.md)
+=======
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-update-1.md](./legacy/historical/registration-widget-update-1.md)
+- [registration-widget-update-3.md](../registration-widget-update-3.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+>>>>>>> laraxot/dev
 - [repositories.md](./legacy/historical/repositories.md)
 - [resource-implementation-philosophy.md](./legacy/historical/resource-implementation-philosophy.md)
 - [resource-translation-violation-critical-fix.md](./legacy/historical/resource-translation-violation-critical-fix.md)
 - [resources-array-keys-philosophy.md](./legacy/historical/resources-array-keys-philosophy.md)
+<<<<<<< HEAD
 - [resources-corrections-summary-.md](./legacy/historical/resources-corrections-summary-.md)
+=======
+- [resources-corrections-summary-2.md](./legacy/historical/resources-corrections-summary-2.md)
+>>>>>>> laraxot/dev
 - [roadmap-1.md](./legacy/historical/roadmap-1.md)
 - [roadmap-2025.md](./legacy/historical/roadmap-2025.md)
 - [roadmap-and-issues.md](./legacy/historical/roadmap-and-issues.md)
@@ -1691,6 +2918,7 @@
 - [roadmap-conflict.md](./legacy/historical/roadmap-conflict.md)
 - [roles-migration-philosophy-fix.md](./legacy/historical/roles-migration-philosophy-fix.md)
 - [roles-permissions-1.md](./legacy/historical/roles-permissions-1.md)
+<<<<<<< HEAD
 - [roles-permissions.md](./legacy/historical/roles-permissions.md)
 - [routing-best-practices.md](./legacy/historical/routing-best-practices.md)
 - [routing-error-solution.md](./legacy/historical/routing-error-solution.md)
@@ -1699,6 +2927,16 @@
 - [service-provider-architecture.md](./legacy/historical/service-provider-architecture.md)
 - [service-provider-warning.md](./legacy/historical/service-provider-warning.md)
 - [session-management.md](./legacy/historical/session-management.md)
+=======
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-error-solution-3.md](../routing-error-solution-3.md)
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [schema-org-enhancements.md](./legacy/historical/schema-org-enhancements.md)
+- [service-provider-architecture.md](./legacy/historical/service-provider-architecture.md)
+- [service-provider-warning-2.md](../service-provider-warning-2.md)
+- [session-management-3.md](../session-management-3.md)
+>>>>>>> laraxot/dev
 - [setup-super-admin.md](./legacy/historical/setup-super-admin.md)
 - [spatie-models-verification.md](./legacy/historical/spatie-models-verification.md)
 - [spatie-permission-philosophy.md](./legacy/historical/spatie-permission-philosophy.md)
@@ -1709,27 +2947,47 @@
 - [sushi-schema-fix.md](./legacy/historical/sushi-schema-fix.md)
 - [syntax-errors-to-fix.md](./legacy/historical/syntax-errors-to-fix.md)
 - [team-bindings-fix-1.md](./legacy/historical/team-bindings-fix-1.md)
+<<<<<<< HEAD
 - [team-bindings-fix.md](./legacy/historical/team-bindings-fix.md)
 - [team-contract-usage-reasoning.md](./legacy/historical/team-contract-usage-reasoning.md)
+=======
+- [team-bindings-fix-2.md](../team-bindings-fix-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+>>>>>>> laraxot/dev
 - [team-user-composite-primary-key-fix.md](./legacy/historical/team-user-composite-primary-key-fix.md)
 - [team-user-permissions-fix.md](./legacy/historical/team-user-permissions-fix.md)
 - [teams-migration-laraxot-compliance.md](./legacy/historical/teams-migration-laraxot-compliance.md)
 - [testcase-sqlite-to-mysql-fix.md](./legacy/historical/testcase-sqlite-to-mysql-fix.md)
 - [testing-phpstan-progress.md](./legacy/historical/testing-phpstan-progress.md)
+<<<<<<< HEAD
 - [testing-rules.md](./legacy/historical/testing-rules.md)
 - [testing-structure.md](./legacy/historical/testing-structure.md)
 - [testing-user-command-integration-fix.md](./legacy/historical/testing-user-command-integration-fix.md)
 - [theme-translation-conflicts-resolution.md](./legacy/historical/theme-translation-conflicts-resolution.md)
+=======
+- [testing-rules-2.md](../testing-rules-2.md)
+- [testing-structure.md](./legacy/historical/testing-structure.md)
+- [testing-user-command-integration-fix.md](./legacy/historical/testing-user-command-integration-fix.md)
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+>>>>>>> laraxot/dev
 - [third-party-model-patterns.md](./legacy/historical/third-party-model-patterns.md)
 - [todo.md](./legacy/historical/todo.md)
 - [traits-complete-guide-1.md](./legacy/historical/traits-complete-guide-1.md)
 - [traits-complete-guide.md](./legacy/historical/traits-complete-guide.md)
 - [traits-hasteams-analisi-corretta-1.md](./legacy/historical/traits-hasteams-analisi-corretta-1.md)
+<<<<<<< HEAD
 - [traits-hasteams-analisi-corretta.md](./legacy/historical/traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analysis-corrected.md](./legacy/historical/traits-hasteams-analysis-corrected.md)
 - [traits-hasteams-analysis-corretta.md](./legacy/historical/traits-hasteams-analysis-corretta.md)
 - [translation-architecture.md](./legacy/historical/translation-architecture.md)
 - [translation-best-practices.md](./legacy/historical/translation-best-practices.md)
+=======
+- [traits-hasteams-analisi-corretta-4.md](../traits-hasteams-analisi-corretta-4.md)
+- [traits-hasteams-analysis-corrected.md](./legacy/historical/traits-hasteams-analysis-corrected.md)
+- [traits-hasteams-analysis-corretta.md](./legacy/historical/traits-hasteams-analysis-corretta.md)
+- [translation-architecture.md](./legacy/historical/translation-architecture.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./legacy/historical/translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/historical/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor-conflict.md](./legacy/historical/translation-city-field-refactor-conflict.md)
@@ -1737,10 +2995,17 @@
 - [translation-conflict-resolution-prototype.md](./legacy/historical/translation-conflict-resolution-prototype.md)
 - [translation-fields-key-importance.md](./legacy/historical/translation-fields-key-importance.md)
 - [translation-fixes.md](./legacy/historical/translation-fixes.md)
+<<<<<<< HEAD
 - [translation-keys-rules.md](./legacy/historical/translation-keys-rules.md)
 - [translation-maintenance-log.md](./legacy/historical/translation-maintenance-log.md)
 - [translation-syntax-fixes-2025.md](./legacy/historical/translation-syntax-fixes-2025.md)
 - [translation-syntax-fixes.md](./legacy/historical/translation-syntax-fixes.md)
+=======
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-maintenance-log.md](./legacy/historical/translation-maintenance-log.md)
+- [translation-syntax-fixes-3.md](../translation-syntax-fixes-3.md)
+- [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+>>>>>>> laraxot/dev
 - [translations.md](./legacy/historical/translations.md)
 - [troubleshooting-login-component.md](./legacy/historical/troubleshooting-login-component.md)
 - [type-safety-improvements.md](./legacy/historical/type-safety-improvements.md)
@@ -1749,19 +3014,30 @@
 - [user-factory-advanced-integration-1.md](./legacy/historical/user-factory-advanced-integration-1.md)
 - [user-factory-advanced-integration.md](./legacy/historical/user-factory-advanced-integration.md)
 - [user-factory-complete-ecosystem-integration-1.md](./legacy/historical/user-factory-complete-ecosystem-integration-1.md)
+<<<<<<< HEAD
 - [user-factory-complete-ecosystem-integration.md](./legacy/historical/user-factory-complete-ecosystem-integration.md)
 - [user-factory-integration-1.md](./legacy/historical/user-factory-integration-1.md)
 - [user-factory-integration.md](./legacy/historical/user-factory-integration.md)
+=======
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-integration-1.md](./legacy/historical/user-factory-integration-1.md)
+- [user-factory-integration-3.md](../user-factory-integration-3.md)
+>>>>>>> laraxot/dev
 - [user-management.md](./legacy/historical/user-management.md)
 - [user-moderation-strategy-1.md](./legacy/historical/user-moderation-strategy-1.md)
 - [user-profile-models.md](./legacy/historical/user-profile-models.md)
 - [user-profile-separation.md](./legacy/historical/user-profile-separation.md)
+<<<<<<< HEAD
 - [userfactory-advanced-implementation-complete.md](./legacy/historical/userfactory-advanced-implementation-complete.md)
+=======
+- [userfactory-advanced-implementation-complete-3.md](../userfactory-advanced-implementation-complete-3.md)
+>>>>>>> laraxot/dev
 - [uuid-trait-conflict-resolution.md](./legacy/historical/uuid-trait-conflict-resolution.md)
 - [vendor-extension-pattern.md](./legacy/historical/vendor-extension-pattern.md)
 - [viewclient-infolist-implementation-philosophy.md](./legacy/historical/viewclient-infolist-implementation-philosophy.md)
 - [volt-blade-implementation-1.md](./legacy/historical/volt-blade-implementation-1.md)
 - [volt-blade-implementation-error-1.md](./legacy/historical/volt-blade-implementation-error-1.md)
+<<<<<<< HEAD
 - [volt-blade-implementation-error.md](./legacy/historical/volt-blade-implementation-error.md)
 - [volt-blade-implementation.md](./legacy/historical/volt-blade-implementation.md)
 - [volt-errors.md](./legacy/historical/volt-errors.md)
@@ -1780,6 +3056,26 @@
 - [widget-translation-rules-1.md](./legacy/historical/widget-translation-rules-1.md)
 - [widget-translation-rules.md](./legacy/historical/widget-translation-rules.md)
 - [widgets-structure.md](./legacy/historical/widgets-structure.md)
+=======
+- [volt-blade-implementation-error-4.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-4.md](../volt-blade-implementation-4.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-folio-auth-implementation-1.md](./legacy/historical/volt-folio-auth-implementation-1.md)
+- [volt-folio-auth-implementation-4.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-logout-1.md](./legacy/historical/volt-folio-logout-1.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-error-1.md](./legacy/historical/volt-folio-logout-error-1.md)
+- [volt-folio-logout-error-2.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-3.md](../volt-folio-logout-3.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-3.md](../volt-logout-3.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+- [widget-rendering-analysis.md](./legacy/historical/widget-rendering-analysis.md)
+- [widget-translation-rules-1.md](./legacy/historical/widget-translation-rules-1.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+- [widgets-structure-2.md](../widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [xotbase-resource-getpages-automatic.md](./legacy/historical/xotbase-resource-getpages-automatic.md)
 - [xotbasemigration-laraxot-philosophy.md](./legacy/historical/xotbasemigration-laraxot-philosophy.md)
 - [xotbaseresource-violations-removal.md](./legacy/historical/xotbaseresource-violations-removal.md)
@@ -1792,9 +3088,15 @@
 - [phpstan-array-types-fixes.md](./legacy/old_tasks/phpstan-array-types-fixes.md)
 - [phpstan-compliance-status.md](./legacy/old_tasks/phpstan-compliance-status.md)
 - [phpstan-compliance.md](./legacy/old_tasks/phpstan-compliance.md)
+<<<<<<< HEAD
 - [phpstan-corrections.md](./legacy/old_tasks/phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
 - [phpstan-fixes-2025.md](./legacy/old_tasks/phpstan-fixes-2025.md)
+=======
+- [phpstan-corrections-2.md](../../../Geo/docs/development/phpstan-corrections-2.md)
+- [phpstan-dry-kiss-improvements.md](./legacy/old_tasks/phpstan-dry-kiss-improvements.md)
+- [phpstan-fixes-4.md](../phpstan-fixes-4.md)
+>>>>>>> laraxot/dev
 - [phpstan-fixes-gennaio-2025.md](./legacy/old_tasks/phpstan-fixes-gennaio-2025.md)
 - [phpstan-fixes-gennaio-complete.md](./legacy/old_tasks/phpstan-fixes-gennaio-complete.md)
 - [phpstan-fixes-gennaio.md](./legacy/old_tasks/phpstan-fixes-gennaio.md)
@@ -1802,15 +3104,26 @@
 - [phpstan-fixes-january-complete.md](./legacy/old_tasks/phpstan-fixes-january-complete.md)
 - [phpstan-fixes-january.md](./legacy/old_tasks/phpstan-fixes-january.md)
 - [phpstan-fixes.md](./legacy/old_tasks/phpstan-fixes.md)
+<<<<<<< HEAD
 - [phpstan-generic-types.md](./legacy/old_tasks/phpstan-generic-types.md)
+=======
+- [phpstan-generic-types-2.md](../../../Xot/docs/consolidated/phpstan/phpstan-generic-types-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-level-10-fixes.md](./legacy/old_tasks/phpstan-level-10-fixes.md)
 - [phpstan-level10-fixes.md](./legacy/old_tasks/phpstan-level10-fixes.md)
 - [phpstan-level10-user-fixes.md](./legacy/old_tasks/phpstan-level10-user-fixes.md)
 - [phpstan-level9-fixes.md](./legacy/old_tasks/phpstan-level9-fixes.md)
+<<<<<<< HEAD
 - [phpstan-relationship-fix.md](./legacy/old_tasks/phpstan-relationship-fix.md)
 - [phpstan-syntax-fixes.md](./legacy/old_tasks/phpstan-syntax-fixes.md)
 - [roadmap.md](./legacy/old_tasks/roadmap.md)
 - [translation-syntax-fixes.md](./legacy/old_tasks/translation-syntax-fixes.md)
+=======
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+- [phpstan-syntax-fixes.md](./legacy/old_tasks/phpstan-syntax-fixes.md)
+- [roadmap.md](./legacy/old_tasks/roadmap.md)
+- [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+>>>>>>> laraxot/dev
 
 ## llm-wiki
 
@@ -1933,7 +3246,11 @@
 - [changelog-3.md](./raw/root-import/changelog-3.md)
 - [changelog-4.md](./raw/root-import/changelog-4.md)
 - [changelog-5.md](./raw/root-import/changelog-5.md)
+<<<<<<< HEAD
 - [changelog.md](./raw/root-import/changelog.md)
+=======
+- [changelog.md](../../../UI/docs/changelog.md)
+>>>>>>> laraxot/dev
 - [git-reset-1.md](./raw/root-import/git-reset-1.md)
 - [git-reset.md](./raw/root-import/git-reset.md)
 - [pest-test-report-1.md](./raw/root-import/pest-test-report-1.md)
@@ -2007,6 +3324,7 @@
 - [2fa-guide.md](./2fa-guide.md)
 - [2fa.md](./2fa.md)
 - [accessor-delegation-pattern.md](./accessor-delegation-pattern.md)
+<<<<<<< HEAD
 - [actions-path-convention-1.md](./actions-path-convention.md)
 - [actions-path-convention-2.md](./actions-path-convention-convenzione-percorsi.md)
 - [actions-path-convention.md](./actions-path-convention.md)
@@ -2014,6 +3332,15 @@
 - [actions-structure-2.md](./actions-structure-2.md)
 - [actions-structure-3.md](./actions-structure-3.md)
 - [actions-structure.md](./actions-structure.md)
+=======
+- [actions-path-convention-1.md](../actions-path-convention-2.md)
+- [actions-path-convention-2.md](./actions-path-convention-convenzione-percorsi.md)
+- [actions-path-convention-2.md](../actions-path-convention-2.md)
+- [actions-structure-1.md](../actions-structure-4.md)
+- [actions-structure-2.md](./actions-structure-2.md)
+- [actions-structure-3.md](./actions-structure-3.md)
+- [actions-structure-4.md](../actions-structure-4.md)
+>>>>>>> laraxot/dev
 - [actions.md](./actions.md)
 - [activitylog-moderation-best-practices.md](./activitylog-moderation-best-practices.md)
 - [activitylog.md](./activitylog.md)
@@ -2029,6 +3356,7 @@
 - [architecture-rules-2.md](./architecture-rules-2.md)
 - [architecture-rules.md](./architecture-rules.md)
 - [architecture.md](./architecture.md)
+<<<<<<< HEAD
 - [auth-blade-structure-1.md](./auth-blade-structure.md)
 - [auth-blade-structure-2.md](./auth-blade-structure.md)
 - [auth-blade-structure.md](./auth-blade-structure.md)
@@ -2070,6 +3398,49 @@
 - [avatar-implementation-1.md](./avatar-implementation.md)
 - [avatar-implementation-2.md](./avatar-implementation-2.md)
 - [avatar-implementation.md](./avatar-implementation.md)
+=======
+- [auth-blade-structure-1.md](../auth-blade-structure-2.md)
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-blade-structure-2.md](../auth-blade-structure-2.md)
+- [auth-components-best-practices-1.md](../auth-components-best-practices-4.md)
+- [auth-components-best-practices-2.md](./auth-components-best-practices-2.md)
+- [auth-components-best-practices-3.md](./auth-components-best-practices-3.md)
+- [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
+- [auth-header-button.md](./auth-header-button.md)
+- [auth-login-implementation-1.md](../auth-login-implementation-4.md)
+- [auth-login-implementation-2.md](./auth-login-implementation-2.md)
+- [auth-login-implementation-3.md](./auth-login-implementation-3.md)
+- [auth-login-implementation-4.md](../auth-login-implementation-4.md)
+- [auth-logout-1.md](../auth-logout-2.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-logout-blade-1.md](../auth-logout-blade-3.md)
+- [auth-logout-blade-2.md](../auth-logout-blade-3.md)
+- [auth-logout-blade-3.md](../auth-logout-blade-3.md)
+- [auth-logout-implementation-1.md](../auth-logout-implementation-4.md)
+- [auth-logout-implementation-2.md](./auth-logout-implementation-2.md)
+- [auth-logout-implementation-3.md](./auth-logout-implementation-3.md)
+- [auth-logout-implementation-4.md](../auth-logout-implementation-4.md)
+- [auth-logout-2.md](../auth-logout-2.md)
+- [auth-pages-implementation-1-1.md](./auth-pages-implementation-1-1.md)
+- [auth-pages-implementation-1.md](../auth-pages-implementation-3.md)
+- [auth-pages-implementation-2.md](./auth-pages-implementation-2.md)
+- [auth-pages-implementation-3.md](../auth-pages-implementation-3.md)
+- [auth-social-login-translations.md](./auth-social-login-translations.md)
+- [auth-widget-rules-1.md](../auth-widget-rules-2.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widget-rules-2.md](../auth-widget-rules-2.md)
+- [auth-widget.md](./auth-widget.md)
+- [auth-widgets-view-namespaces-1.md](../auth-widgets-view-namespaces-2.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [auth-widgets-view-namespaces-3.md](./auth-widgets-view-namespaces-widget-autenticazione-namespace.md)
+- [auth-widgets-view-namespaces-2.md](../auth-widgets-view-namespaces-2.md)
+- [authentication-troubleshooting.md](./authentication-troubleshooting.md)
+- [authentication.md](./authentication.md)
+- [avatar-implementation-1-1.md](./avatar-implementation-1-1.md)
+- [avatar-implementation-1.md](../avatar-implementation-3.md)
+- [avatar-implementation-2.md](./avatar-implementation-2.md)
+- [avatar-implementation-3.md](../avatar-implementation-3.md)
+>>>>>>> laraxot/dev
 - [baseuser-conflicts.md](./baseuser-conflicts.md)
 - [baseuser-dry-violation-analysis.md](./baseuser-dry-violation-analysis.md)
 - [baseuser-refactoring-completed-.md](./baseuser-refactoring-completed-.md)
@@ -2084,18 +3455,32 @@
 - [baseuser.md](./baseuser.md)
 - [baseuserry-violation.md](./baseuserry-violation.md)
 - [baseusers.md](./baseusers.md)
+<<<<<<< HEAD
 - [best-practices.md](./best-practices.md)
 - [boost-skill-fix-summary-1.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary-2.md](./boost-skill-fix-summary.md)
 - [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
+=======
+- [best-practices-3.md](../../../Activity/docs/best-practices-3.md)
+- [boost-skill-fix-summary-1.md](../../../Activity/docs/boost-skill-fix-summary-3.md)
+- [boost-skill-fix-summary-2.md](../../../Activity/docs/boost-skill-fix-summary-3.md)
+- [boost-skill-fix-summary-3.md](../../../Activity/docs/boost-skill-fix-summary-3.md)
+>>>>>>> laraxot/dev
 - [bottlenecks.md](./bottlenecks.md)
 - [bugfix-phpmd-cleanup-2026-07.md](./bugfix-phpmd-cleanup.md)
 - [business-logic-analysis-1.md](./business-logic-analysis-1.md)
 - [business-logic-analysis-2.md](./business-logic-analysis-2.md)
+<<<<<<< HEAD
 - [business-logic-analysis-3.md](./business-logic-analysis.md)
 - [business-logic-analysis-4.md](./business-logic-analysis-4.md)
 - [business-logic-analysis-5.md](./business-logic-analysis-5.md)
 - [business-logic-analysis.md](./business-logic-analysis.md)
+=======
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+- [business-logic-analysis-4.md](./business-logic-analysis-4.md)
+- [business-logic-analysis-5.md](./business-logic-analysis-5.md)
+- [business-logic-analysis-3.md](../../../Activity/docs/business-logic-analysis-3.md)
+>>>>>>> laraxot/dev
 - [business-logic-deep-dive-1.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-2.md](./business-logic-deep-dive.md)
 - [business-logic-deep-dive-3.md](./business-logic-deep-dive.md)
@@ -2108,11 +3493,16 @@
 - [case-sensitivity-rules.md](./case-sensitivity-rules.md)
 - [case-sensitivity.md](./case-sensitivity.md)
 - [cases.md](./cases.md)
+<<<<<<< HEAD
 - [changelog.md](./changelog.md)
+=======
+- [changelog.md](../../../UI/docs/changelog.md)
+>>>>>>> laraxot/dev
 - [chartjs-datalabels-user-integration.md](./chartjs-datalabels-user-integration.md)
 - [chartjsatalabels-user-integration.md](./chartjsatalabels-user-integration.md)
 - [charts-implementation.md](./charts-implementation.md)
 - [cms-link-1-1.md](./cms-link-1-1.md)
+<<<<<<< HEAD
 - [cms-link-1.md](./cms-link.md)
 - [cms-link-2.md](./cms-link-2.md)
 - [cms-link.md](./cms-link.md)
@@ -2129,10 +3519,29 @@
 - [code-quality-analysis-4.md](./code-quality-analysis.md)
 - [code-quality-analysis-5.md](./code-quality-analysis.md)
 - [code-quality-analysis.md](./code-quality-analysis.md)
+=======
+- [cms-link-1-2.md](./cms-link.md)
+- [cms-link-2.md](./cms-link-2.md)
+- [cms-link.md](./cms-link.md)
+- [code-conventions-1.md](../code-conventions-3.md)
+- [code-conventions-2.md](./code-conventions-2.md)
+- [code-conventions-3.md](../code-conventions-3.md)
+- [code-optimization-analysis-1.md](../code-optimization-analysis-2.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-optimization-analysis-2.md](../code-optimization-analysis-2.md)
+- [code-optimization.md](./code-optimization.md)
+- [code-quality-analysis-1.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-analysis-2.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-analysis-4.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-analysis-5.md](../../../Activity/docs/code-quality-analysis-3.md)
+- [code-quality-analysis-3.md](../../../Activity/docs/code-quality-analysis-3.md)
+>>>>>>> laraxot/dev
 - [code-quality-tools.md](./code-quality-tools.md)
 - [code-quality.md](./code-quality.md)
 - [code-redundancy-audit.md](./code-redundancy-audit.md)
 - [codex-error-fix.md](./codex-error-fix.md)
+<<<<<<< HEAD
 - [component-verification-rules-1.md](./component-verification-rules.md)
 - [component-verification-rules-2.md](./component-verification-rules.md)
 - [component-verification-rules-3.md](./component-verification-rules.md)
@@ -2147,6 +3556,22 @@
 - [conflict-resolution-report-2.md](./conflict-resolution-report-2.md)
 - [conflict-resolution-report.md](./conflict-resolution-report.md)
 - [conflict-resolution.md](./conflict-resolution.md)
+=======
+- [component-verification-rules-1.md](../component-verification-rules-2.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [component-verification-rules-3.md](../component-verification-rules-2.md)
+- [component-verification-rules-2.md](../component-verification-rules-2.md)
+- [component-verification.md](./component-verification.md)
+- [composer-dependencies.md](./composer-dependencies.md)
+- [confidence-guidelines-3.md](../../../Activity/docs/confidence-guidelines-3.md)
+- [conflict-resolution-passwordresetwidget-1.md](./conflict-resolution-passwordresetwidget-1.md)
+- [conflict-resolution-passwordresetwidget-2.md](./conflict-resolution-passwordresetwidget-2.md)
+- [conflict-resolution-passwordresetwidget-3.md](../conflict-resolution-passwordresetwidget-3.md)
+- [conflict-resolution-report-1.md](./conflict-resolution-report-1.md)
+- [conflict-resolution-report-2.md](./conflict-resolution-report-2.md)
+- [conflict-resolution-report-3.md](../conflict-resolution-report-3.md)
+- [conflict-resolution-2.md](../../../Geo/docs/conflict-resolution-2.md)
+>>>>>>> laraxot/dev
 - [conflicts-analysis.md](./conflicts-analysis.md)
 - [conflicts.md](./conflicts.md)
 - [console-commands-philosophy-1.md](./console-commands-philosophy.md)
@@ -2158,11 +3583,16 @@
 - [copilot-redundancy-audit-2026-05-25.deprecated.md](./copilot-redundancy-audit-2026-05-25.deprecated.md)
 - [copilot-redundancy-audit.md](./copilot-redundancy-audit.md)
 - [coverage-clean.md](./coverage-clean.md)
+<<<<<<< HEAD
 - [coverage-full.md](./coverage-full.md)
+=======
+- [coverage-full-2.md](../../../Geo/docs/coverage-full-2.md)
+>>>>>>> laraxot/dev
 - [coverage.md](./coverage.md)
 - [critical-filament-rule-getinfolistschema-string-keys.md](./critical-filament-rule-getinfolistschema-string-keys.md)
 - [cross-database-relations-issue-1.md](./cross-database-relations-issue-1.md)
 - [cross-database-relations-issue-2.md](./cross-database-relations-issue-2.md)
+<<<<<<< HEAD
 - [cross-database-relations-issue.md](./cross-database-relations-issue.md)
 - [crossatabase-relations.md](./crossatabase-relations.md)
 - [cursor-rules.md](./cursor-rules.md)
@@ -2184,22 +3614,55 @@
 - [dentist-moderation-approach-1.md](./dentist-moderation-approach.md)
 - [dentist-moderation-approach-2.md](./dentist-moderation-approach.md)
 - [dentist-moderation-approach.md](./dentist-moderation-approach.md)
+=======
+- [cross-database-relations-issue-3.md](../cross-database-relations-issue-3.md)
+- [crossatabase-relations.md](./crossatabase-relations.md)
+- [cursor-rules.md](./cursor-rules.md)
+- [cursor.md](./cursor.md)
+- [custom-login-1.md](../../../Geo/docs/raw/history/custom-login-2.md)
+- [custom-login-2.md](../../../Geo/docs/raw/history/custom-login-2.md)
+- [cyclomatic-complexity-report.md](./cyclomatic-complexity-report.md)
+- [cyclomatic-complexity.md](./cyclomatic-complexity.md)
+- [database-errors-1.md](../database-errors-2.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-errors-2.md](../database-errors-2.md)
+- [database-issues-1.md](../database-issues-2.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [database-issues-3.md](../database-issues-2.md)
+- [database-issues-2.md](../database-issues-2.md)
+- [database-population.md](./database-population.md)
+- [databases.md](./databases.md)
+- [datas-not-dtos-convention.md](./datas-not-dtos-convention.md)
+- [dentist-moderation-approach-1.md](../dentist-moderation-approach-2.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+- [dentist-moderation-approach-2.md](../dentist-moderation-approach-2.md)
+>>>>>>> laraxot/dev
 - [dependencies.md](./dependencies.md)
 - [dependency-intelligence.md](./dependency-intelligence.md)
 - [dependency-rules.md](./dependency-rules.md)
 - [dependency.md](./dependency.md)
 - [directory-structure-checklist-1.md](./directory-structure-checklist-1.md)
 - [directory-structure-checklist-2.md](./directory-structure-checklist-2.md)
+<<<<<<< HEAD
 - [directory-structure-checklist.md](./directory-structure-checklist.md)
+=======
+- [directory-structure-checklist-3.md](../directory-structure-checklist-3.md)
+>>>>>>> laraxot/dev
 - [directory-structure-rules.md](./directory-structure-rules.md)
 - [docs-archive-policy.md](./docs-archive-policy.md)
 - [docs-health.md](./docs-health.md)
 - [docs-location-policy.md](./docs-location-policy.md)
 - [doctor-registration-widget.md](./doctor-registration-widget.md)
 - [doctor-registration.md](./doctor-registration.md)
+<<<<<<< HEAD
 - [documentation-standards-1.md](./documentation-standards.md)
 - [documentation-standards-2.md](./documentation-standards.md)
 - [documentation-standards.md](./documentation-standards.md)
+=======
+- [documentation-standards-1.md](../documentation-standards-2.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+- [documentation-standards-2.md](../documentation-standards-2.md)
+>>>>>>> laraxot/dev
 - [dor-registration-widget.md](./dor-registration-widget.md)
 - [dor-registration.md](./dor-registration.md)
 - [dry-kiss-018b09.md](./dry-kiss-018b09.md)
@@ -2218,15 +3681,26 @@
 - [dry-violation.md](./dry-violation.md)
 - [duplicate-methods-1.md](./duplicate-methods-metodi-duplicati-user.md)
 - [duplicate-methods-analysis.md](./duplicate-methods-analysis.md)
+<<<<<<< HEAD
 - [duplicate-methods-report.md](./duplicate-methods-report.md)
 - [duplicate-methods.md](./duplicate-methods.md)
+=======
+- [duplicate-methods-report-3.md](../../../Activity/docs/duplicate-methods-report-3.md)
+- [duplicate-methods-3.md](../../../Activity/docs/duplicate-methods-3.md)
+>>>>>>> laraxot/dev
 - [eav.md](./eav.md)
 - [eloquent-properties-best-practices.md](./eloquent-properties-best-practices.md)
 - [email-doctor-registration.md](./email-doctor-registration.md)
 - [emailor-registration.md](./emailor-registration.md)
+<<<<<<< HEAD
 - [error-handling-1.md](./error-handling.md)
 - [error-handling-2.md](./error-handling.md)
 - [error-handling.md](./error-handling.md)
+=======
+- [error-handling-1.md](../error-handling-2.md)
+- [error-handling-2.md](../error-handling-2.md)
+- [error-handling-2.md](../error-handling-2.md)
+>>>>>>> laraxot/dev
 - [external-packages-inheritance-pattern.md](./external-packages-inheritance-pattern.md)
 - [external-packages-inheritance.md](./external-packages-inheritance.md)
 - [external-resources.md](./external-resources.md)
@@ -2244,6 +3718,7 @@
 - [filament-4x-compatibility-conflict.md](./filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./filament-4x-compatibility.md)
 - [filament-5-panel-governance-rule.md](./filament-5-panel-governance-rule.md)
+<<<<<<< HEAD
 - [filament-5x-compatibility.md](./filament-5x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./filament-auth-pages-exceptions.md)
 - [filament-best-practices.md](./filament-best-practices.md)
@@ -2270,11 +3745,43 @@
 - [filament-resources-organization-1.md](./filament-resources-organization.md)
 - [filament-resources-organization-2.md](./filament-resources-organization.md)
 - [filament-resources-organization.md](./filament-resources-organization.md)
+=======
+- [filament-5x-compatibility-2.md](../../../Cms/docs/filament-5x-compatibility-2.md)
+- [filament-auth-pages-exceptions.md](./filament-auth-pages-exceptions.md)
+- [filament-best-practices-2.md](../../../Xot/docs/consolidated/filament-best-practices-2.md)
+- [filament-charts-implementation.md](./filament-charts-implementation.md)
+- [filament-components-reference-1.md](../filament-components-reference-2.md)
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-components-reference-2.md](../filament-components-reference-2.md)
+- [filament-errors-1.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-errors-2.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-errors-3.md](../../../Activity/docs/filament-errors-3.md)
+- [filament-filters-and-widgets.md](./filament-filters-and-widgets.md)
+- [filament-namespace-rules-1-1.md](../filament-namespace-rules-2.md)
+- [filament-namespace-rules-1.md](../filament-namespace-rules-2.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-namespace-rules-2.md](../filament-namespace-rules-2.md)
+- [filament-namespace.md](./filament-namespace.md)
+- [filament-nesting-opportunities.md](./filament-nesting-opportunities.md)
+- [filament-relation-managers-1-1.md](./filament-relation-managers-1-1.md)
+- [filament-relation-managers-1.md](../filament-relation-managers-3.md)
+- [filament-relation-managers-2.md](./filament-relation-managers-2.md)
+- [filament-relation-managers-3.md](../filament-relation-managers-3.md)
+- [filament-resources-coverage-analysis.md](./filament-resources-coverage-analysis.md)
+- [filament-resources-coverage.md](./filament-resources-coverage.md)
+- [filament-resources-organization-1.md](../filament-resources-organization-2.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+- [filament-resources-organization-2.md](../filament-resources-organization-2.md)
+>>>>>>> laraxot/dev
 - [filament-resources-philosophical-debate.md](./filament-resources-philosophical-debate.md)
 - [filament-resources-philosophicalebate.md](./filament-resources-philosophicalebate.md)
 - [filament-resources-updated.md](./filament-resources-updated.md)
 - [filament-version.md](./filament-version.md)
+<<<<<<< HEAD
 - [filament.md](./filament.md)
+=======
+- [filament-3.md](../../../Activity/docs/filament-3.md)
+>>>>>>> laraxot/dev
 - [filament4-migration.md](./filament4-migration.md)
 - [filaments.md](./filaments.md)
 - [file-naming-rules.md](./file-naming-rules.md)
@@ -2291,6 +3798,7 @@
 - [fullcalendar-scheduler-documentation-summary-3.md](./fullcalendar-scheduler-documentation-summary-3.md)
 - [fullcalendar-scheduler-documentation-summary.md](./fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1-1.md](./fullcalendar-scheduler-license-1-1.md)
+<<<<<<< HEAD
 - [fullcalendar-scheduler-license-1.md](./fullcalendar-scheduler-license.md)
 - [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
 - [fullcalendar-scheduler-license-key-invalid-1.md](./fullcalendar-scheduler-license-key-invalid.md)
@@ -2322,6 +3830,39 @@
 - [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
 - [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-.md](./git-conflicts-resolution-.md)
+=======
+- [fullcalendar-scheduler-license-1.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-license-2.md](./fullcalendar-scheduler-license-2.md)
+- [fullcalendar-scheduler-license-key-invalid-1.md](../fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-key-invalid-2.md](../fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-key-invalid-2.md](../fullcalendar-scheduler-license-key-invalid-2.md)
+- [fullcalendar-scheduler-license-troubleshooting-1-1.md](./fullcalendar-scheduler-license-troubleshooting-1-1.md)
+- [fullcalendar-scheduler-license-troubleshooting-1.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-troubleshooting-2.md](./fullcalendar-scheduler-license-troubleshooting-2.md)
+- [fullcalendar-scheduler-license-troubleshooting-3.md](../fullcalendar-scheduler-license-troubleshooting-3.md)
+- [fullcalendar-scheduler-license-3.md](../fullcalendar-scheduler-license-3.md)
+- [fullcalendar-scheduler-quick-reference-1.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [fullcalendar-scheduler-quick-reference-2.md](./fullcalendar-scheduler-quick-reference-2.md)
+- [fullcalendar-scheduler-quick-reference-3.md](./fullcalendar-scheduler-quick-reference-3.md)
+- [fullcalendar-scheduler-quick-reference-4.md](../fullcalendar-scheduler-quick-reference-4.md)
+- [fullcalendar-schedulerocumentation.md](./fullcalendar-schedulerocumentation.md)
+- [gdpr-compliance-1.md](./gdpr-compliance-guide-registration.md)
+- [gdpr-compliance-complete.md](./gdpr-compliance-complete.md)
+- [gdpr-compliance-2.md](../gdpr-compliance-2.md)
+- [gdpr-register-enhancement.md](./gdpr-register-enhancement.md)
+- [gdpr.md](./gdpr.md)
+- [generic-user-moderation-strategy-1-1.md](./generic-user-moderation-strategy-1-1.md)
+- [generic-user-moderation-strategy-1.md](../generic-user-moderation-strategy-3.md)
+- [generic-user-moderation-strategy-2.md](./generic-user-moderation-strategy-2.md)
+- [generic-user-moderation-strategy-3.md](../generic-user-moderation-strategy-3.md)
+- [get-new-password-action-business-logic.md](./get-new-password-action-business-logic.md)
+- [git-conflict-resolution-1.md](./git-conflict-resolution-1.md)
+- [git-conflict-resolution-2.md](./git-conflict-resolution-2.md)
+- [git-conflict-resolution-3.md](../git-conflict-resolution-3.md)
+- [git-conflicts-models-phpdoc.md](./git-conflicts-models-phpdoc.md)
+- [git-conflicts-resolution--1.md](./git-conflicts-resolution.md)
+- [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
+>>>>>>> laraxot/dev
 - [git-conflicts-resolution-1.md](./git-conflicts-resolution.md)
 - [git-conflicts-resolution-2.md](./git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./git-conflicts-resolution-2025-01-27.deprecated.md)
@@ -2339,6 +3880,7 @@
 - [gits-resolution-06cb77.md](./gits-resolution-06cb77.md)
 - [gits-resolution.md](./gits-resolution.md)
 - [guida-migrazione-step-by-step.md](./guida-migrazione-step-by-step.md)
+<<<<<<< HEAD
 - [hasteams-currentteam-method-choice-1.md](./hasteams-currentteam-method-choice.md)
 - [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
 - [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
@@ -2371,6 +3913,40 @@
 - [implementation-plan-1.md](./implementation-plan.md)
 - [implementation-plan-2.md](./implementation-plan.md)
 - [implementation-plan.md](./implementation-plan.md)
+=======
+- [hasteams-currentteam-method-choice-1.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-currentteam-method-choice-2.md](./hasteams-currentteam-method-choice-2.md)
+- [hasteams-currentteam-method-choice-3.md](./hasteams-currentteam-method-choice-3.md)
+- [hasteams-currentteam-method-choice-4.md](../hasteams-currentteam-method-choice-4.md)
+- [hasteams-trait-analysis-1.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-analysis-2.md](../hasteams-trait-analysis-2.md)
+- [hasteams-trait-duplicate-methods-1.md](./hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-duplicate-methods-2.md](./hasteams-trait-duplicate-methods-analisi-metodi-duplicati.md)
+- [hasteams-trait-duplicate-methods.md](./hasteams-trait-duplicate-methods.md)
+- [hasteams-trait-filosofia-e-correzione-completa-1.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [hasteams-trait-filosofia-e-correzione-completa-2.md](./hasteams-trait-filosofia-e-correzione-completa-2.md)
+- [hasteams-trait-filosofia-e-correzione-completa-3.md](./hasteams-trait-filosofia-e-correzione-completa-3.md)
+- [hasteams-trait-filosofia-e-correzione-completa-4.md](../hasteams-trait-filosofia-e-correzione-completa-4.md)
+- [hasteams-trait.md](./hasteams-trait.md)
+- [hasteams-traituplicate-methods.md](./hasteams-traituplicate-methods.md)
+- [header-auth-button.md](./header-auth-button.md)
+- [header-components-1.md](../header-components-2.md)
+- [header-components-2.md](./header-components-componenti.md)
+- [header-components-2.md](../header-components-2.md)
+- [header-language-avatar-implementation-1-2.md](./header-language-avatar-implementation.md)
+- [header-language-avatar-implementation-2.md](../../../Cms/docs/sections/header-language-avatar-implementation-2.md)
+- [header-language-avatar-implementation-3.md](./header-language-avatar-implementation-3.md)
+- [header-language-avatar-implementation.md](./header-language-avatar-implementation.md)
+- [header-language-selector-with-flags-1-1.md](./header-language-selector-with-flags-1-1.md)
+- [header-language-selector-with-flags-1-2.md](./header-language-selector-with-flags.md)
+- [header-language-selector-with-flags-2.md](../../../Cms/docs/sections/header-language-selector-with-flags-2.md)
+- [header-language-selector-with-flags.md](./header-language-selector-with-flags.md)
+- [ide-helper-models-wave.md](./ide-helper-models-wave.md)
+- [implementation-plan-1.md](../implementation-plan-2.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+- [implementation-plan-2.md](../implementation-plan-2.md)
+>>>>>>> laraxot/dev
 - [implementation-summary.md](./implementation-summary.md)
 - [implementation.md](./implementation.md)
 - [index-1.md](./index.md)
@@ -2378,19 +3954,33 @@
 - [index-conflict.md](./index-conflict.md)
 - [index.md](./index.md)
 - [intelligent-login-redirect.md](./intelligent-login-redirect.md)
+<<<<<<< HEAD
 - [jetstream-vs-laraxot-philosophy-1-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-1.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy-2.md](./jetstream-vs-laraxot-philosophy.md)
 - [jetstream-vs-laraxot-philosophy.md](./jetstream-vs-laraxot-philosophy.md)
+=======
+- [jetstream-vs-laraxot-philosophy-1-1.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jetstream-vs-laraxot-philosophy-1.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+- [jetstream-vs-laraxot-philosophy-2.md](../jetstream-vs-laraxot-philosophy-2.md)
+>>>>>>> laraxot/dev
 - [jetstream-vs-laraxot.md](./jetstream-vs-laraxot.md)
 - [jpgraph-integration.md](./jpgraph-integration.md)
 - [js-conflicts.md](./js-conflicts.md)
 - [json.md](./json.md)
 - [jss.md](./jss.md)
+<<<<<<< HEAD
 - [label-hardcoded-prevention-1.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention-2.md](./label-hardcoded-prevention.md)
 - [label-hardcoded-prevention.md](./label-hardcoded-prevention.md)
 - [lang-link-1.md](./lang-link.md)
+=======
+- [label-hardcoded-prevention-1.md](../label-hardcoded-prevention-2.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [label-hardcoded-prevention-2.md](../label-hardcoded-prevention-2.md)
+- [lang-link-1-2.md](./lang-link.md)
+>>>>>>> laraxot/dev
 - [lang-link-2.md](./lang-link-2.md)
 - [lang-link-3.md](./lang-link-3.md)
 - [lang-link.md](./lang-link.md)
@@ -2402,6 +3992,7 @@
 - [launch-plan.md](./launch-plan.md)
 - [limesurvey-database-commands.md](./limesurvey-database-commands.md)
 - [limesurveyatabase-commands.md](./limesurveyatabase-commands.md)
+<<<<<<< HEAD
 - [links.md](./links.md)
 - [livewire-filament-parameter-passing.md](./livewire-filament-parameter-passing.md)
 - [livewire-form-statepath-issue.md](./livewire-form-statepath-issue.md)
@@ -2428,12 +4019,44 @@
 - [login-widget-conversion-1.md](./login-widget-conversion-conversione-livewire-auth-filament.md)
 - [login-widget-conversion-2.md](./login-widget-conversion-2.md)
 - [login-widget-conversion.md](./login-widget-conversion.md)
+=======
+- [links-2.md](../../../Gdpr/docs/links-2.md)
+- [livewire-filament-parameter-passing.md](./livewire-filament-parameter-passing.md)
+- [livewire-form-statepath-issue.md](./livewire-form-statepath-issue.md)
+- [livewire-form-statepath.md](./livewire-form-statepath.md)
+- [livewire-namespace-1.md](../livewire-namespace-3.md)
+- [livewire-namespace-2.md](./livewire-namespace-2.md)
+- [livewire-namespace-3.md](../livewire-namespace-3.md)
+- [livewire-to-filament-widget-migration.md](./livewire-to-filament-widget-migration.md)
+- [logging-performance-1.md](../logging-performance-2.md)
+- [logging-performance-2.md](../logging-performance-2.md)
+- [logging-performance-3.md](../logging-performance-2.md)
+- [logging-performance-4.md](../logging-performance-2.md)
+- [logging-performance-2.md](../logging-performance-2.md)
+- [login-filament-widget-error-1.md](../login-filament-widget-error-2.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-filament-widget-error-2.md](../login-filament-widget-error-2.md)
+- [login-filament-widget.md](./login-filament-widget.md)
+- [login-issue-resolution-report.md](./login-issue-resolution-report.md)
+- [login-resolution.md](./login-resolution.md)
+- [login-widget-analysis-1.md](../login-widget-analysis-2.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-analysis-2.md](../login-widget-analysis-2.md)
+- [login-widget-conversion-1-1.md](../login-widget-conversion-3.md)
+- [login-widget-conversion-1.md](./login-widget-conversion-conversione-livewire-auth-filament.md)
+- [login-widget-conversion-2.md](./login-widget-conversion-2.md)
+- [login-widget-conversion-3.md](../login-widget-conversion-3.md)
+>>>>>>> laraxot/dev
 - [login-widget-filament-schema-errors-roadmap.md](./login-widget-filament-schema-errors-roadmap.md)
 - [login-widget-filament-schemas.md](./login-widget-filament-schemas.md)
 - [login-widget-fix.md](./login-widget-fix.md)
 - [login-widget-livewire-binding-fix.md](./login-widget-livewire-binding-fix.md)
 - [login-widget-livewire-binding.md](./login-widget-livewire-binding.md)
+<<<<<<< HEAD
 - [login-widget-translation-audit-.md](./login-widget-translation-audit-.md)
+=======
+- [login-widget-translation-audit-2.md](../login-widget-translation-audit-2.md)
+>>>>>>> laraxot/dev
 - [login-widget-translation-audit-1.md](./login-widget-translation-audit-1.md)
 - [login-widget-translation-audit-2025.md](./login-widget-translation-audit-2025.md)
 - [login-widget-translation-audit-archive-1.md](./login-widget-translation-audit-archive.md)
@@ -2444,6 +4067,7 @@
 - [loginwidget-error-analysis.md](./loginwidget-error-analysis.md)
 - [loginwidget.md](./loginwidget.md)
 - [logout-analysis-1.md](./logout-analysis-1.md)
+<<<<<<< HEAD
 - [logout-analysis-2.md](./logout-analysis.md)
 - [logout-analysis.md](./logout-analysis.md)
 - [logout-blade-analysis-1.md](./logout-blade-analysis.md)
@@ -2512,6 +4136,76 @@
 - [logout-security-1.md](./logout-security-1.md)
 - [logout-security-2.md](./logout-security.md)
 - [logout-security.md](./logout-security.md)
+=======
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-analysis-2.md](../logout-analysis-2.md)
+- [logout-blade-analysis-1.md](../logout-blade-analysis-4.md)
+- [logout-blade-analysis-2.md](./logout-blade-analysis-analisi-file-php.md)
+- [logout-blade-analysis-3.md](./logout-blade-analysis-3.md)
+- [logout-blade-analysis-4.md](../logout-blade-analysis-4.md)
+- [logout-blade-conclusions-1-1.md](./logout-blade-conclusions-conclusioni-raccomandazioni-php.md)
+- [logout-blade-conclusions-1.md](../logout-blade-conclusions-3.md)
+- [logout-blade-conclusions-2.md](./logout-blade-conclusions-2.md)
+- [logout-blade-conclusions-3.md](../logout-blade-conclusions-3.md)
+- [logout-blade-corrected-analysis-1.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-corrected-analysis-2.md](./logout-blade-corrected-analysis-2.md)
+- [logout-blade-corrected-analysis-3.md](./logout-blade-corrected-analysis-3.md)
+- [logout-blade-corrected-analysis-4.md](../logout-blade-corrected-analysis-4.md)
+- [logout-blade-corrected.md](./logout-blade-corrected.md)
+- [logout-blade-error-analysis-1.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-error-analysis-2.md](./logout-blade-error-analysis-analisi-approfondita-dell-errore.md)
+- [logout-blade-error-analysis-3.md](./logout-blade-error-analysis-3.md)
+- [logout-blade-error-analysis-2.md](../logout-blade-error-analysis-2.md)
+- [logout-blade-implementation-1-1.md](./logout-blade-implementation-implementazione-corretta-php.md)
+- [logout-blade-implementation-1.md](../logout-blade-implementation-3.md)
+- [logout-blade-implementation-2.md](./logout-blade-implementation-2.md)
+- [logout-blade-implementation-3.md](../logout-blade-implementation-3.md)
+- [logout-blade-structure-1.md](./logout-blade-structure-1.md)
+- [logout-blade-structure-2.md](./logout-blade-structure-2.md)
+- [logout-blade-structure-3.md](../logout-blade-structure-3.md)
+- [logout-blade.md](./logout-blade.md)
+- [logout-error-analysis-1-1.md](./logout-error-analysis-analisi-errore.md)
+- [logout-error-analysis-1.md](../logout-error-analysis-3.md)
+- [logout-error-analysis-2.md](./logout-error-analysis-2.md)
+- [logout-error-analysis-3.md](../logout-error-analysis-3.md)
+- [logout-event-error-1-1.md](../logout-event-error-3.md)
+- [logout-event-error-1.md](../logout-event-error-3.md)
+- [logout-event-error-2.md](./logout-event-error-2.md)
+- [logout-event-error-3.md](../logout-event-error-3.md)
+- [logout-event.md](./logout-event.md)
+- [logout-filament-widget-1.md](../logout-filament-widget-2.md)
+- [logout-filament-widget-2.md](./logout-filament-widget-implementazione.md)
+- [logout-filament-widget-3.md](./logout-filament-widget-3.md)
+- [logout-filament-widget-corrected-1.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-corrected-2.md](./logout-filament-widget-corrected-implementazione-corretta.md)
+- [logout-filament-widget-corrected-3.md](./logout-filament-widget-corrected-3.md)
+- [logout-filament-widget-corrected-4.md](../logout-filament-widget-corrected-4.md)
+- [logout-filament-widget-2.md](../logout-filament-widget-2.md)
+- [logout-implementation-best-practices-1-1.md](./logout-implementation-best-practices-implementazione.md)
+- [logout-implementation-best-practices-1.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-best-practices-2.md](./logout-implementation-best-practices-2.md)
+- [logout-implementation-best-practices-3.md](../logout-implementation-best-practices-3.md)
+- [logout-implementation-error-1.md](../logout-implementation-error-4.md)
+- [logout-implementation-error-2.md](./logout-implementation-error-2.md)
+- [logout-implementation-error-3.md](./logout-implementation-error-3.md)
+- [logout-implementation-error-4.md](../logout-implementation-error-4.md)
+- [logout-implementation-with-laravel-localization-1.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-implementation-with-laravel-localization-2.md](./logout-implementation-with-laravel-localization-implementazione-laravellocalization.md)
+- [logout-implementation-with-laravel-localization-3.md](./logout-implementation-with-laravel-localization-3.md)
+- [logout-implementation-with-laravel-localization-4.md](../logout-implementation-with-laravel-localization-4.md)
+- [logout-implementation.md](./logout-implementation.md)
+- [logout-page-fix-1.md](../logout-page-fix-2.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-fix-2.md](../logout-page-fix-2.md)
+- [logout-page-implementation-1.md](../logout-page-implementation-2.md)
+- [logout-page-implementation-2.md](./logout-page-implementation-implementazione-pagina-tema-one.md)
+- [logout-page-implementation-3.md](./logout-page-implementation-3.md)
+- [logout-page-implementation-2.md](../logout-page-implementation-2.md)
+- [logout-page.md](./logout-page.md)
+- [logout-security-1.md](./logout-security-1.md)
+- [logout-security-2.md](../logout-security-2.md)
+- [logout-security-2.md](../logout-security-2.md)
+>>>>>>> laraxot/dev
 - [logout.md](./logout.md)
 - [mcp-configuration.md](./mcp-configuration.md)
 - [mcp-database-tools.md](./mcp-database-tools.md)
@@ -2537,6 +4231,7 @@
 - [metodi-duplicati-analisi-5.md](./metodi-duplicati-analisi.md)
 - [metodi-duplicati-analisi.md](./metodi-duplicati-analisi.md)
 - [metodiuplicati-analisi.md](./metodiuplicati-analisi.md)
+<<<<<<< HEAD
 - [metrics-dashboard-1.md](./metrics-dashboard.md)
 - [metrics-dashboard-2.md](./metrics-dashboard.md)
 - [metrics-dashboard.md](./metrics-dashboard.md)
@@ -2545,6 +4240,16 @@
 - [migration-best-practices-1.md](./migration-best-practices.md)
 - [migration-best-practices-2.md](./migration-best-practices.md)
 - [migration-best-practices.md](./migration-best-practices.md)
+=======
+- [metrics-dashboard-1.md](../metrics-dashboard-2.md)
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+- [metrics-dashboard-2.md](../metrics-dashboard-2.md)
+- [metricsashboard.md](./metricsashboard.md)
+- [microsoft-oauth-socialite.md](./microsoft-oauth-socialite.md)
+- [migration-best-practices-1.md](../../../Lang/docs/migration-best-practices-3.md)
+- [migration-best-practices-2.md](../../../Lang/docs/migration-best-practices-3.md)
+- [migration-best-practices-3.md](../../../Lang/docs/migration-best-practices-3.md)
+>>>>>>> laraxot/dev
 - [migration-consolidation-philosophy.md](./migration-consolidation-philosophy.md)
 - [migration-consolidation-plan.md](./migration-consolidation-plan.md)
 - [migration-consolidation.md](./migration-consolidation.md)
@@ -2573,7 +4278,11 @@
 - [migration-violations.md](./migration-violations.md)
 - [migration.md](./migration.md)
 - [migrationry-violations.md](./migrationry-violations.md)
+<<<<<<< HEAD
 - [migrations.md](./migrations.md)
+=======
+- [migrations-3.md](../../../Lang/docs/migrations-3.md)
+>>>>>>> laraxot/dev
 - [migrationuplicate-resolution.md](./migrationuplicate-resolution.md)
 - [migrazione-filament-4.md](./migrazione-filament.md)
 - [migrazione-filament.md](./migrazione-filament.md)
@@ -2607,6 +4316,7 @@
 - [moderation-actions.md](./moderation-actions.md)
 - [moderation-contracts.md](./moderation-contracts.md)
 - [moderation-doctor-1.md](./moderation-doctor-1.md)
+<<<<<<< HEAD
 - [moderation-doctor-2.md](./moderation-doctor.md)
 - [moderation-doctor.md](./moderation-doctor.md)
 - [moderation-notifications.md](./moderation-notifications.md)
@@ -2621,6 +4331,22 @@
 - [module-structure.md](./module-structure.md)
 - [module-user-1.md](./module-user.md)
 - [module-user.md](./module-user.md)
+=======
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-doctor-2.md](../moderation-doctor-2.md)
+- [moderation-notifications.md](./moderation-notifications.md)
+- [moderation-wizard-generic-1.md](../moderation-wizard-generic-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [moderation-wizard-generic-2.md](../moderation-wizard-generic-2.md)
+- [moderationor.md](./moderationor.md)
+- [module-analysis-complete.md](./module-analysis-complete.md)
+- [module-analysis-3.md](../../../Activity/docs/module-analysis-3.md)
+- [module-structure-1.md](./module-structure.md)
+- [module-structure-2.md](./module-structure-user.md)
+- [module-structure.md](./module-structure.md)
+- [module-user-1.md](../../../Geo/docs/raw/history/module-user-2.md)
+- [module-user-2.md](../../../Geo/docs/raw/history/module-user-2.md)
+>>>>>>> laraxot/dev
 - [module.md](./module.md)
 - [namespace-conventions-1.md](./namespace-conventions.md)
 - [namespace-conventions-2.md](./namespace-conventions.md)
@@ -2628,7 +4354,11 @@
 - [namespace-conventions.md](./namespace-conventions.md)
 - [navigation-structure-1.md](./navigation-structure-1.md)
 - [navigation-structure-2.md](./navigation-structure-2.md)
+<<<<<<< HEAD
 - [navigation-structure.md](./navigation-structure.md)
+=======
+- [navigation-structure-3.md](../navigation-structure-3.md)
+>>>>>>> laraxot/dev
 - [navigation-translations-completion-roadmap.md](./navigation-translations-completion-roadmap.md)
 - [navigation-translations-completion.md](./navigation-translations-completion.md)
 - [navigation-translations-fixes-january-1.md](./navigation-translations-fixes-january-1.md)
@@ -2654,7 +4384,11 @@
 - [optimization-analysis-2.md](./optimization-analysis.md)
 - [optimization-analysis-dry-kiss.md](./optimization-analysis-dry-kiss.md)
 - [optimization-analysis.md](./optimization-analysis.md)
+<<<<<<< HEAD
 - [optimization-recommendations-1.md](./optimization-recommendations-raccomandazioni-ottimizzazione-modulo-user.md)
+=======
+- [optimization-recommendations-1-2.md](./optimization-recommendations-raccomandazioni-ottimizzazione-modulo-user.md)
+>>>>>>> laraxot/dev
 - [optimization-recommendations-2.md](./optimization-recommendations-2.md)
 - [optimization-recommendations.md](./optimization-recommendations.md)
 - [optimization.md](./optimization.md)
@@ -2673,9 +4407,15 @@
 - [parental-inheritance-1.md](./parental-inheritance.md)
 - [parental-inheritance.md](./parental-inheritance.md)
 - [parental.md](./parental.md)
+<<<<<<< HEAD
 - [passport-admin-actions-1.md](./passport-admin-actions.md)
 - [passport-admin-actions-2.md](./passport-admin-actions.md)
 - [passport-admin-actions.md](./passport-admin-actions.md)
+=======
+- [passport-admin-actions-1.md](../passport-admin-actions-2.md)
+- [passport-admin-actions-2.md](../passport-admin-actions-2.md)
+- [passport-admin-actions-2.md](../passport-admin-actions-2.md)
+>>>>>>> laraxot/dev
 - [passport-cluster-completion-status.md](./passport-cluster-completion-status.md)
 - [passport-cluster-completion.md](./passport-cluster-completion.md)
 - [passport-cluster-current-status.md](./passport-cluster-current-status.md)
@@ -2703,8 +4443,13 @@
 - [passport-complete-management-debate.md](./passport-complete-management-debate.md)
 - [passport-filament-cluster-proposal.md](./passport-filament-cluster-proposal.md)
 - [passport-implementation-summary-1.md](./passport-implementation-summary-1.md)
+<<<<<<< HEAD
 - [passport-implementation-summary-2.md](./passport-implementation-summary.md)
 - [passport-implementation-summary.md](./passport-implementation-summary.md)
+=======
+- [passport-implementation-summary-2.md](../passport-implementation-summary-2.md)
+- [passport-implementation-summary-2.md](../passport-implementation-summary-2.md)
+>>>>>>> laraxot/dev
 - [passport-implementation.md](./passport-implementation.md)
 - [passport-integration.md](./passport-integration.md)
 - [passport-managementebate.md](./passport-managementebate.md)
@@ -2714,7 +4459,11 @@
 - [passport-oauth-wrapper-convention.md](./passport-oauth-wrapper-convention.md)
 - [passport-vs-socialite-clarification.md](./passport-vs-socialite-clarification.md)
 - [passport.md](./passport.md)
+<<<<<<< HEAD
 - [password-translation-completion-.md](./password-translation-completion-.md)
+=======
+- [password-translation-completion-2.md](../password-translation-completion-2.md)
+>>>>>>> laraxot/dev
 - [password-translation-completion-1.md](./password-translation-completion-1.md)
 - [password-translation-completion-2.md](./password-translation-completion.md)
 - [password-translation-completion-2025-1.md](./password-translation-completion-2025-1.md)
@@ -2731,6 +4480,7 @@
 - [permissions.md](./permissions.md)
 - [pest-test-report.md](./pest-test-report.md)
 - [philosophy-complete.md](./philosophy-complete.md)
+<<<<<<< HEAD
 - [philosophy.md](./philosophy.md)
 - [phpinsights-errors.md](./phpinsights-errors.md)
 - [phpinsights-report.md](./phpinsights-report.md)
@@ -2741,6 +4491,18 @@
 - [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
 - [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
 - [phpmd-report.md](./phpmd-report.md)
+=======
+- [../philosophy-2.md](../philosophy-2.md)
+- [phpinsights-errors-2.md](../phpinsights-errors-2.md)
+- [phpinsights-report-2.md](../phpinsights-report-2.md)
+- [phpinsights.md](./phpinsights.md)
+- [phpinsightss.md](./phpinsightss.md)
+- [phpmd-errors-2.md](../phpmd-errors-2.md)
+- [phpmd-phpinsights-corrections-2.md](../phpmd-phpinsights-corrections-2.md)
+- [phpmd-phpinsights-corrections-1.md](./phpmd-phpinsights-corrections-php-insights.md)
+- [phpmd-phpinsights-corrections.md](./phpmd-phpinsights-corrections.md)
+- [phpmd-report-2.md](../phpmd-report-2.md)
+>>>>>>> laraxot/dev
 - [phpmd.md](./phpmd.md)
 - [phpmds.md](./phpmds.md)
 - [phpstan-analysis-user.md](./phpstan-analysis-user.md)
@@ -2750,11 +4512,19 @@
 - [phpstan-compliance-status.md](./phpstan-compliance-status.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 - [phpstan-corrections-oauth-resources.md](./phpstan-corrections-oauth-resources.md)
+<<<<<<< HEAD
 - [phpstan-corrections-summary-.md](./phpstan-corrections-summary-.md)
 - [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
 - [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
 - [phpstan-corrections.md](./phpstan-corrections.md)
 - [phpstan-dry-kiss-improvements-.md](./phpstan-dry-kiss-improvements-.md)
+=======
+- [phpstan-corrections-summary-2.md](../phpstan-corrections-summary-2.md)
+- [phpstan-corrections-summary-1.md](./phpstan-corrections-summary-1.md)
+- [phpstan-corrections-summary.md](./phpstan-corrections-summary.md)
+- [phpstan-corrections-2.md](../../../Geo/docs/development/phpstan-corrections-2.md)
+- [phpstan-dry-kiss-improvements-4.md](../phpstan-dry-kiss-improvements-4.md)
+>>>>>>> laraxot/dev
 - [phpstan-dry-kiss-improvements-1.md](./phpstan-dry-kiss-improvements.md)
 - [phpstan-dry-kiss-improvements-2.md](./phpstan-dry-kiss-improvements-2.md)
 - [phpstan-dry-kiss-improvements-2025-10-17.deprecated.md](./phpstan-dry-kiss-improvements-2025-10-17.deprecated.md)
@@ -2766,6 +4536,7 @@
 - [phpstan-errors-roadmap.md](./phpstan-errors-roadmap.md)
 - [phpstan-final-progress.md](./phpstan-final-progress.md)
 - [phpstan-fix-plan-.md](./phpstan-fix-plan-.md)
+<<<<<<< HEAD
 - [phpstan-fix-plan-1.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-2.md](./phpstan-fix-plan.md)
 - [phpstan-fix-plan-3.md](./phpstan-fix-plan.md)
@@ -2777,6 +4548,19 @@
 - [phpstan-fixes-.md](./phpstan-fixes-.md)
 - [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
 - [phpstan-fixes-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
+=======
+- [phpstan-fix-plan-1.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-2.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-3.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-4.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-5.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-plan-user.md](./phpstan-fix-plan-user.md)
+- [phpstan-fix-plan-3.md](../phpstan-fix-plan-3.md)
+- [phpstan-fix-roadmap.md](./phpstan-fix-roadmap.md)
+- [phpstan-fixes-2.md](./phpstan-fixes-2.md)
+- [phpstan-fixes-1-1.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
+- [phpstan-fixes-1-2.md](./phpstan-fixes-correzioni-livello-modulo-user.md)
+>>>>>>> laraxot/dev
 - [phpstan-fixes-2-1.md](./phpstan-fixes.md)
 - [phpstan-fixes-2.md](./phpstan-fixes-2.md)
 - [phpstan-fixes-2025-1.md](./phpstan-fixes-2025-1.md)
@@ -2804,11 +4588,19 @@
 - [phpstan-fixes-january.md](./phpstan-fixes-january.md)
 - [phpstan-fixes-passport.md](./phpstan-fixes-passport.md)
 - [phpstan-fixes-roadmap.md](./phpstan-fixes-roadmap.md)
+<<<<<<< HEAD
 - [phpstan-furious-debate-.md](./phpstan-furious-debate-.md)
 - [phpstan-furious-debate-1.md](./phpstan-furious-debate-1.md)
 - [phpstan-furious-debate.md](./phpstan-furious-debate.md)
 - [phpstan-furiousebate.md](./phpstan-furiousebate.md)
 - [phpstan-generic-types.md](./phpstan-generic-types.md)
+=======
+- [phpstan-furious-debate-2.md](./phpstan-furious-debate-2.md)
+- [phpstan-furious-debate-1.md](./phpstan-furious-debate-1.md)
+- [phpstan-furious-debate.md](./phpstan-furious-debate.md)
+- [phpstan-furiousebate.md](./phpstan-furiousebate.md)
+- [phpstan-generic-types-2.md](../../../Xot/docs/consolidated/phpstan/phpstan-generic-types-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-level-10-fixes.md](./phpstan-level-10-fixes.md)
 - [phpstan-level-10es.md](./phpstan-level-10es.md)
 - [phpstan-level10-analysis.md](./phpstan-level10-analysis.md)
@@ -2825,16 +4617,28 @@
 - [phpstan-progress-report.md](./phpstan-progress-report.md)
 - [phpstan-progress-summary.md](./phpstan-progress-summary.md)
 - [phpstan-progress.md](./phpstan-progress.md)
+<<<<<<< HEAD
 - [phpstan-relationship-fix-1.md](./phpstan-relationship-fix.md)
 - [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-correzione-type-hints.md)
 - [phpstan-relationship-fix.md](./phpstan-relationship-fix.md)
+=======
+- [phpstan-relationship-fix-1.md](../phpstan-relationship-fix-2.md)
+- [phpstan-relationship-fix-2.md](./phpstan-relationship-fix-correzione-type-hints.md)
+- [phpstan-relationship-fix-2.md](../phpstan-relationship-fix-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-relationship.md](./phpstan-relationship.md)
 - [phpstan-report-initial.md](./phpstan-report-initial.md)
 - [phpstan-resolution-debate.md](./phpstan-resolution-debate.md)
 - [phpstan-resolutionebate.md](./phpstan-resolutionebate.md)
+<<<<<<< HEAD
 - [phpstan-roadmap-1.md](./phpstan-roadmap.md)
 - [phpstan-roadmap-2.md](./phpstan-roadmap.md)
 - [phpstan-roadmap.md](./phpstan-roadmap.md)
+=======
+- [phpstan-roadmap-1.md](../phpstan-roadmap-2.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+- [phpstan-roadmap-2.md](../phpstan-roadmap-2.md)
+>>>>>>> laraxot/dev
 - [phpstan-success.md](./phpstan-success.md)
 - [phpstan-syntax-blockers.md](./phpstan-syntax-blockers.md)
 - [phpstan-syntax-fixes.md](./phpstan-syntax-fixes.md)
@@ -2870,6 +4674,7 @@
 - [product-strategy-1.md](./product-strategy-1.md)
 - [product-strategy-2.md](./product-strategy-user-module.md)
 - [product-strategy.md](./product-strategy.md)
+<<<<<<< HEAD
 - [profile-management-1.md](./profile-management.md)
 - [profile-management-2.md](./profile-management.md)
 - [profile-management.md](./profile-management.md)
@@ -2877,6 +4682,15 @@
 - [profiles-id-uuid-policy.md](./profiles-id-uuid-policy.md)
 - [project-structure.md](./project-structure.md)
 - [qmd-setup.md](./qmd-setup.md)
+=======
+- [profile-management-1.md](../profile-management-3.md)
+- [profile-management-2.md](../profile-management-3.md)
+- [profile-management-3.md](../profile-management-3.md)
+- [profile.md](./profile.md)
+- [profiles-id-uuid-policy.md](./profiles-id-uuid-policy.md)
+- [project-structure.md](./project-structure.md)
+- [qmd-setup-3.md](../../../Lang/docs/qmd-setup-3.md)
+>>>>>>> laraxot/dev
 - [quality-1.md](./quality.md)
 - [quality-11.md](./quality.md)
 - [quality-improvements-summary.md](./quality-improvements-summary.md)
@@ -2888,13 +4702,18 @@
 - [quality-status-nov.md](./quality-status-nov.md)
 - [quality-status.md](./quality-status.md)
 - [quality-tooling.md](./quality-tooling.md)
+<<<<<<< HEAD
 - [quality-tools-final-report-.md](./quality-tools-final-report-.md)
+=======
+- [quality-tools-final-report-2.md](./quality-tools-final-report-2.md)
+>>>>>>> laraxot/dev
 - [quality-tools-final-report-1.md](./quality-tools-final-report.md)
 - [quality-tools-final-report.md](./quality-tools-final-report.md)
 - [quality-tools-final.md](./quality-tools-final.md)
 - [quality-tools-report.md](./quality-tools-report.md)
 - [quality-tools.md](./quality-tools.md)
 - [quality.md](./quality.md)
+<<<<<<< HEAD
 - [query-optimization-analysis-1.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-2.md](./query-optimization-analysis.md)
 - [query-optimization-analysis-3.md](./query-optimization-analysis.md)
@@ -2908,6 +4727,21 @@
 - [readme-fullcalendar-scheduler-1.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler-2.md](./readme-fullcalendar-scheduler.md)
 - [readme-fullcalendar-scheduler.md](./readme-fullcalendar-scheduler.md)
+=======
+- [query-optimization-analysis-1.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization-analysis-2.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization-analysis-4.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization-analysis-5.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization-analysis-3.md](../../../Activity/docs/query-optimization-analysis-3.md)
+- [query-optimization.md](./query-optimization.md)
+- [r1-form-fields-self-validate.md](./r1-form-fields-self-validate.md)
+- [readme-en.md](./readme-en.md)
+- [readme-fullcalendar-scheduler-1-1.md](../readme-fullcalendar-scheduler-2.md)
+- [readme-fullcalendar-scheduler-1.md](../readme-fullcalendar-scheduler-2.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+- [readme-fullcalendar-scheduler-2.md](../readme-fullcalendar-scheduler-2.md)
+>>>>>>> laraxot/dev
 - [readme-new.md](./readme-new.md)
 - [readme.md](./readme.md)
 - [redundancy-analysis.md](./redundancy-analysis.md)
@@ -2918,6 +4752,7 @@
 - [redundancy-fixes-january-2026.md](./redundancy-fixes-january-2026.md)
 - [redundancy-fixes-january.md](./redundancy-fixes-january.md)
 - [redundancy-fixes.md](./redundancy-fixes.md)
+<<<<<<< HEAD
 - [redundancy-report.md](./redundancy-report.md)
 - [redundancyes.md](./redundancyes.md)
 - [registration-widget-1.md](./registration-widget.md)
@@ -2933,6 +4768,23 @@
 - [registration-widget-update-2.md](./registration-widget-update-2.md)
 - [registration-widget-update.md](./registration-widget-update.md)
 - [registration-widget.md](./registration-widget.md)
+=======
+- [redundancy-report-2.md](../../../Geo/docs/redundancy-report-2.md)
+- [redundancyes.md](./redundancyes.md)
+- [registration-widget-1.md](../registration-widget-2.md)
+- [registration-widget-2.md](./registration-widget-documentation.md)
+- [registration-widget-3.md](./registration-widget-3.md)
+- [registration-widget-fileupload-fix-1-1.md](./registration-widget-fileupload-fix-registrationwidget.md)
+- [registration-widget-fileupload-fix-1.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-fileupload-fix-2.md](./registration-widget-fileupload-fix-2.md)
+- [registration-widget-fileupload-fix-3.md](../registration-widget-fileupload-fix-3.md)
+- [registration-widget-fileupload.md](./registration-widget-fileupload.md)
+- [registration-widget-update-1-1.md](./registration-widget-update-aggiornamento-relativo-doctorresource-php.md)
+- [registration-widget-update-1.md](../registration-widget-update-3.md)
+- [registration-widget-update-2.md](./registration-widget-update-2.md)
+- [registration-widget-update-3.md](../registration-widget-update-3.md)
+- [registration-widget-2.md](../registration-widget-2.md)
+>>>>>>> laraxot/dev
 - [relazioni-utenti-team.md](./relazioni-utenti-team.md)
 - [release-marketing-standard.md](./release-marketing-standard.md)
 - [repos.md](./repos.md)
@@ -2943,11 +4795,19 @@
 - [resource-translation-violation-critical.md](./resource-translation-violation-critical.md)
 - [resources-array-keys-philosophy.md](./resources-array-keys-philosophy.md)
 - [resources-array-keys.md](./resources-array-keys.md)
+<<<<<<< HEAD
 - [resources-corrections-summary-.md](./resources-corrections-summary-.md)
 - [resources-corrections-summary-1.md](./resources-corrections-summary.md)
 - [resources-corrections-summary.md](./resources-corrections-summary.md)
 - [resources-corrections.md](./resources-corrections.md)
 - [roadmap-.md](./roadmap-.md)
+=======
+- [resources-corrections-summary-2.md](./resources-corrections-summary-2.md)
+- [resources-corrections-summary-1.md](./resources-corrections-summary.md)
+- [resources-corrections-summary.md](./resources-corrections-summary.md)
+- [resources-corrections.md](./resources-corrections.md)
+- [roadmap-3.md](../../../Activity/docs/roadmap-3.md)
+>>>>>>> laraxot/dev
 - [roadmap-1-1.md](./roadmap-1-1.md)
 - [roadmap-1.md](./roadmap.md)
 - [roadmap-and-issues.md](./roadmap-and-issues.md)
@@ -2958,6 +4818,7 @@
 - [roadmap.md](./roadmap.md)
 - [roles-migration-philosophy-fix.md](./roles-migration-philosophy-fix.md)
 - [roles-migration.md](./roles-migration.md)
+<<<<<<< HEAD
 - [roles-permissions-1.md](./roles-permissions.md)
 - [roles-permissions-2.md](./roles-permissions.md)
 - [roles-permissions-3.md](./roles-permissions.md)
@@ -2970,10 +4831,25 @@
 - [routing-error-solution-1.md](./routing-error-solution.md)
 - [routing-error-solution-2.md](./routing-error-solution-2.md)
 - [routing-error-solution.md](./routing-error-solution.md)
+=======
+- [roles-permissions-1.md](../roles-permissions-2.md)
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [roles-permissions-3.md](../roles-permissions-2.md)
+- [roles-permissions-2.md](../roles-permissions-2.md)
+- [root-file-policy.md](./root-file-policy.md)
+- [root-files-hygiene.md](./root-files-hygiene.md)
+- [routing-best-practices-1.md](./routing-best-practices-1.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-best-practices-2.md](../routing-best-practices-2.md)
+- [routing-error-solution-1.md](../routing-error-solution-3.md)
+- [routing-error-solution-2.md](./routing-error-solution-2.md)
+- [routing-error-solution-3.md](../routing-error-solution-3.md)
+>>>>>>> laraxot/dev
 - [routing-solution.md](./routing-solution.md)
 - [rules-index.md](./rules-index.md)
 - [rules-testing-no-migrate-fresh.md](./rules-testing-no-migrate-fresh.md)
 - [scheduler-license-key-1.md](./scheduler-license-key-1.md)
+<<<<<<< HEAD
 - [scheduler-license-key-2.md](./scheduler-license-key.md)
 - [scheduler-license-key.md](./scheduler-license-key.md)
 - [schema-org-enhancements.md](./schema-org-enhancements.md)
@@ -2986,6 +4862,20 @@
 - [session-management-1.md](./session-management-1.md)
 - [session-management-2.md](./session-management.md)
 - [session-management.md](./session-management.md)
+=======
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [scheduler-license-key-2.md](../scheduler-license-key-2.md)
+- [schema-org-enhancements.md](./schema-org-enhancements.md)
+- [schema-3.md](../../../Lang/docs/wiki/schema-3.md)
+- [second-brain.md](./second-brain.md)
+- [service-provider-architecture.md](./service-provider-architecture.md)
+- [service-provider-warning-1.md](../service-provider-warning-2.md)
+- [service-provider-warning-2.md](./service-provider-warning-user.md)
+- [service-provider-warning-2.md](../service-provider-warning-2.md)
+- [session-management-1.md](./session-management-1.md)
+- [session-management-2.md](../session-management-3.md)
+- [session-management-3.md](../session-management-3.md)
+>>>>>>> laraxot/dev
 - [setup-super-admin.md](./setup-super-admin.md)
 - [social-auth-architecture.md](./social-auth-architecture.md)
 - [social-login-icons.md](./social-login-icons.md)
@@ -3034,6 +4924,7 @@
 - [task-schema-org-person-enhancement.md](./task-schema-org-person-enhancement.md)
 - [task-test-socialite-actions.md](./task-test-socialite-actions.md)
 - [tasks-schema-org-person.md](./tasks-schema-org-person.md)
+<<<<<<< HEAD
 - [team-bindings-fix-1.md](./team-bindings-fix.md)
 - [team-bindings-fix-2.md](./team-bindings-fix-binding-models-modulo-user.md)
 - [team-bindings-fix-3.md](./team-bindings-fix-3.md)
@@ -3042,6 +4933,16 @@
 - [team-contract-usage-reasoning-1.md](./team-contract-usage-reasoning.md)
 - [team-contract-usage-reasoning-2.md](./team-contract-usage-reasoning.md)
 - [team-contract-usage-reasoning.md](./team-contract-usage-reasoning.md)
+=======
+- [team-bindings-fix-1.md](../team-bindings-fix-2.md)
+- [team-bindings-fix-2.md](./team-bindings-fix-binding-models-modulo-user.md)
+- [team-bindings-fix-3.md](./team-bindings-fix-3.md)
+- [team-bindings-fix-2.md](../team-bindings-fix-2.md)
+- [team-bindings.md](./team-bindings.md)
+- [team-contract-usage-reasoning-1.md](../team-contract-usage-reasoning-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+- [team-contract-usage-reasoning-2.md](../team-contract-usage-reasoning-2.md)
+>>>>>>> laraxot/dev
 - [team-user-composite-primary-key-fix.md](./team-user-composite-primary-key-fix.md)
 - [team-user-composite-priy-key.md](./team-user-composite-priy-key.md)
 - [team-user-permissions-fix.md](./team-user-permissions-fix.md)
@@ -3053,36 +4954,62 @@
 - [terms-and-conditions-1.md](./terms-and-conditions-1.md)
 - [terms-and-conditions-2.md](./terms-and-conditions.md)
 - [terms-and-conditions.md](./terms-and-conditions.md)
+<<<<<<< HEAD
 - [terms-conditions.md](./terms-conditions.md)
+=======
+- [terms-conditions-2.md](../../../Geo/docs/raw/history/terms-conditions-2.md)
+>>>>>>> laraxot/dev
 - [testcase-hasusertestcase-property-conflict-fixed.md](./testcase-hasusertestcase-property-conflict-fixed.md)
 - [testcase-sqlite-to-mysql-fix.md](./testcase-sqlite-to-mysql-fix.md)
 - [testcase-sqlite-to-mysql.md](./testcase-sqlite-to-mysql.md)
 - [testing-phpstan-progress.md](./testing-phpstan-progress.md)
+<<<<<<< HEAD
 - [testing-rules-1.md](./testing-rules.md)
 - [testing-rules-2.md](./testing-rules.md)
 - [testing-rules.md](./testing-rules.md)
+=======
+- [testing-rules-1.md](../testing-rules-2.md)
+- [testing-rules-2.md](../testing-rules-2.md)
+- [testing-rules-2.md](../testing-rules-2.md)
+>>>>>>> laraxot/dev
 - [testing-strategy.md](./testing-strategy.md)
 - [testing-structure.md](./testing-structure.md)
 - [testing-user-command-integration-fix.md](./testing-user-command-integration-fix.md)
 - [testing-user-command-integration.md](./testing-user-command-integration.md)
 - [testing.md](./testing.md)
 - [theme-translation-conflicts-resolution-1.md](./theme-translation-conflicts-resolution-user.md)
+<<<<<<< HEAD
 - [theme-translation-conflicts-resolution-2.md](./theme-translation-conflicts-resolution.md)
 - [theme-translation-conflicts-resolution.md](./theme-translation-conflicts-resolution.md)
 - [theme-translations-resolution.md](./theme-translations-resolution.md)
 - [third-party-model-patterns.md](./third-party-model-patterns.md)
 - [third-party-models.md](./third-party-models.md)
 - [timestamps-rule.md](./timestamps-rule.md)
+=======
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+- [theme-translation-conflicts-resolution-2.md](../theme-translation-conflicts-resolution-2.md)
+- [theme-translations-resolution.md](./theme-translations-resolution.md)
+- [third-party-model-patterns.md](./third-party-model-patterns.md)
+- [third-party-models.md](./third-party-models.md)
+- [timestamps-rule-2.md](../timestamps-rule-2.md)
+>>>>>>> laraxot/dev
 - [tips.md](./tips.md)
 - [todo.md](./todo.md)
 - [traits-complete-guide-1-1.md](./traits-complete-guide-1-1.md)
 - [traits-complete-guide-1.md](./traits-complete-guide.md)
 - [traits-complete-guide-2.md](./traits-complete-guide-2.md)
 - [traits-complete-guide.md](./traits-complete-guide.md)
+<<<<<<< HEAD
 - [traits-hasteams-analisi-corretta-1.md](./traits-hasteams-analisi-corretta.md)
 - [traits-hasteams-analisi-corretta-2.md](./traits-hasteams-analisi-corretta-2.md)
 - [traits-hasteams-analisi-corretta-3.md](./traits-hasteams-analisi-corretta-3.md)
 - [traits-hasteams-analisi-corretta.md](./traits-hasteams-analisi-corretta.md)
+=======
+- [traits-hasteams-analisi-corretta-1.md](../traits-hasteams-analisi-corretta-4.md)
+- [traits-hasteams-analisi-corretta-2.md](./traits-hasteams-analisi-corretta-2.md)
+- [traits-hasteams-analisi-corretta-3.md](./traits-hasteams-analisi-corretta-3.md)
+- [traits-hasteams-analisi-corretta-4.md](../traits-hasteams-analisi-corretta-4.md)
+>>>>>>> laraxot/dev
 - [traits-hasteams-analysis-corrected.md](./traits-hasteams-analysis-corrected.md)
 - [traits-hasteams-analysis-corretta.md](./traits-hasteams-analysis-corretta.md)
 - [traits-hasteams-corrected.md](./traits-hasteams-corrected.md)
@@ -3090,9 +5017,15 @@
 - [traits.md](./traits.md)
 - [translation-architecture.md](./translation-architecture.md)
 - [translation-best-practices-1.md](./translation-best-practices-1.md)
+<<<<<<< HEAD
 - [translation-best-practices-2.md](./translation-best-practices.md)
 - [translation-best-practices.md](./translation-best-practices.md)
 - [translation-city-field-refactor-.md](./translation-city-field-refactor-.md)
+=======
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+- [translation-best-practices-2.md](../translation-best-practices-2.md)
+- [translation-city-field-refactor-2.md](./translation-city-field-refactor-2.md)
+>>>>>>> laraxot/dev
 - [translation-city-field-refactor-1.md](./translation-city-field-refactor-1.md)
 - [translation-city-field-refactor-2.md](./translation-city-field-refactor-2.md)
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./translation-city-field-refactor-2025-08-08.deprecated.md)
@@ -3103,6 +5036,7 @@
 - [translation-fields-key-importance.md](./translation-fields-key-importance.md)
 - [translation-fixes.md](./translation-fixes.md)
 - [translation-guidelines.md](./translation-guidelines.md)
+<<<<<<< HEAD
 - [translation-key-prototype.md](./translation-key-prototype.md)
 - [translation-keys-rules-1.md](./translation-keys-rules.md)
 - [translation-keys-rules-2.md](./translation-keys-rules.md)
@@ -3112,6 +5046,17 @@
 - [translation-resolution-prototype.md](./translation-resolution-prototype.md)
 - [translation-syntax-fixes-.md](./translation-syntax-fixes-.md)
 - [translation-syntax-fixes-1.md](./translation-syntax-fixes.md)
+=======
+- [translation-key-prototype-2.md](../translation-key-prototype-2.md)
+- [translation-keys-rules-1.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-keys-rules-2.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-keys-rules-3.md](../../../Lang/docs/translation-keys-rules-3.md)
+- [translation-keys.md](./translation-keys.md)
+- [translation-maintenance-log.md](./translation-maintenance-log.md)
+- [translation-resolution-prototype.md](./translation-resolution-prototype.md)
+- [translation-syntax-fixes-2.md](../translation-syntax-fixes-2.md)
+- [translation-syntax-fixes-1.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+>>>>>>> laraxot/dev
 - [translation-syntaxes.md](./translation-syntaxes.md)
 - [translationes.md](./translationes.md)
 - [translations.md](./translations.md)
@@ -3130,6 +5075,7 @@
 - [user-factory-advanced-integration-2.md](./user-factory-advanced-integration-userfactory-modulo-quaeris.md)
 - [user-factory-advanced-integration-3.md](./user-factory-advanced-integration-3.md)
 - [user-factory-advanced-integration.md](./user-factory-advanced-integration.md)
+<<<<<<< HEAD
 - [user-factory-complete-ecosystem-integration-1-1.md](./user-factory-complete-ecosystem-integration.md)
 - [user-factory-complete-ecosystem-integration-1.md](./user-factory-complete-ecosystem-integration.md)
 - [user-factory-complete-ecosystem-integration-2.md](./user-factory-complete-ecosystem-integration.md)
@@ -3139,14 +5085,32 @@
 - [user-factory-integration-1.md](./user-factory-integration.md)
 - [user-factory-integration-2.md](./user-factory-integration-2.md)
 - [user-factory-integration.md](./user-factory-integration.md)
+=======
+- [user-factory-complete-ecosystem-integration-1-1.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration-1.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-complete-ecosystem-integration-2.md](../user-factory-complete-ecosystem-integration-2.md)
+- [user-factory-ecosystem-integration.md](./user-factory-ecosystem-integration.md)
+- [user-factory-integration-1-1.md](./user-factory-integration-userfactory-modulo-saluteora.md)
+- [user-factory-integration-1.md](../user-factory-integration-3.md)
+- [user-factory-integration-2.md](./user-factory-integration-2.md)
+- [user-factory-integration-3.md](../user-factory-integration-3.md)
+>>>>>>> laraxot/dev
 - [user-invitation-1.md](./user-invitation.md)
 - [user-invitation-2.md](./user-invitation.md)
 - [user-invitation.md](./user-invitation.md)
 - [user-management.md](./user-management.md)
+<<<<<<< HEAD
 - [user-moderation-strategy-1.md](./user-moderation-strategy.md)
 - [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
 - [user-moderation-strategy-3.md](./user-moderation-strategy.md)
 - [user-moderation-strategy.md](./user-moderation-strategy.md)
+=======
+- [user-moderation-strategy-1.md](../user-moderation-strategy-3.md)
+- [user-moderation-strategy-2.md](./user-moderation-strategy-2.md)
+- [user-moderation-strategy-3.md](../user-moderation-strategy-3.md)
+- [user-moderation-strategy-3.md](../user-moderation-strategy-3.md)
+>>>>>>> laraxot/dev
 - [user-profile-aration.md](./user-profile-aration.md)
 - [user-profile-models.md](./user-profile-models.md)
 - [user-profile-separation.md](./user-profile-separation.md)
@@ -3158,7 +5122,11 @@
 - [user-vs-profile.md](./user-vs-profile.md)
 - [userfactory-advanced-implementation-complete-1.md](./userfactory-advanced-implementation-complete-1.md)
 - [userfactory-advanced-implementation-complete-2.md](./userfactory-advanced-implementation-complete-2.md)
+<<<<<<< HEAD
 - [userfactory-advanced-implementation-complete.md](./userfactory-advanced-implementation-complete.md)
+=======
+- [userfactory-advanced-implementation-complete-3.md](../userfactory-advanced-implementation-complete-3.md)
+>>>>>>> laraxot/dev
 - [userfactory-advanced-implementation.md](./userfactory-advanced-implementation.md)
 - [uuid-trait-conflict-resolution.md](./uuid-trait-conflict-resolution.md)
 - [uuid-trait-resolution.md](./uuid-trait-resolution.md)
@@ -3166,6 +5134,7 @@
 - [vendor-extension.md](./vendor-extension.md)
 - [viewclient-infolist-implementation-philosophy.md](./viewclient-infolist-implementation-philosophy.md)
 - [viewclient-infolist-implementation.md](./viewclient-infolist-implementation.md)
+<<<<<<< HEAD
 - [volt-blade-implementation-1.md](./volt-blade-implementation.md)
 - [volt-blade-implementation-2.md](./volt-blade-implementation-implementazione-form-widget-filament.md)
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
@@ -3195,10 +5164,42 @@
 - [volt-folio-logout-error-3.md](./volt-folio-logout-error-3.md)
 - [volt-folio-logout-error.md](./volt-folio-logout-error.md)
 - [volt-folio-logout.md](./volt-folio-logout.md)
+=======
+- [volt-blade-implementation-1.md](../volt-blade-implementation-4.md)
+- [volt-blade-implementation-2.md](./volt-blade-implementation-implementazione-form-widget-filament.md)
+- [volt-blade-implementation-3.md](./volt-blade-implementation-3.md)
+- [volt-blade-implementation-error-1.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-error-2.md](./volt-blade-implementation-error-analisi-dell-errore-implementazione.md)
+- [volt-blade-implementation-error-3.md](./volt-blade-implementation-error-3.md)
+- [volt-blade-implementation-error-4.md](../volt-blade-implementation-error-4.md)
+- [volt-blade-implementation-4.md](../volt-blade-implementation-4.md)
+- [volt-errors-1.md](../volt-errors-2.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-errors-2.md](../volt-errors-2.md)
+- [volt-folio-auth-implementation-1.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-auth-implementation-2.md](./volt-folio-auth-implementation-implementazione-corretta-pagine-autenticazione.md)
+- [volt-folio-auth-implementation-3.md](./volt-folio-auth-implementation-3.md)
+- [volt-folio-auth-implementation-4.md](../volt-folio-auth-implementation-4.md)
+- [volt-folio-error-1.md](./volt-folio-error-1.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-error-2.md](../volt-folio-error-2.md)
+- [volt-folio-logout-1-1.md](./volt-folio-logout-implementazione-corretta.md)
+- [volt-folio-logout-1.md](../volt-folio-logout-3.md)
+- [volt-folio-logout-2.md](./volt-folio-logout-2.md)
+- [volt-folio-logout-debug-1.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-debug-2.md](../volt-folio-logout-debug-2.md)
+- [volt-folio-logout-error-1.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-error-2.md](./volt-folio-logout-error-errore.md)
+- [volt-folio-logout-error-3.md](./volt-folio-logout-error-3.md)
+- [volt-folio-logout-error-2.md](../volt-folio-logout-error-2.md)
+- [volt-folio-logout-3.md](../volt-folio-logout-3.md)
+>>>>>>> laraxot/dev
 - [volt-folio-logoutebug.md](./volt-folio-logoutebug.md)
 - [volt-folio.md](./volt-folio.md)
 - [volt-logout-1.md](./volt-logout-1.md)
 - [volt-logout-2.md](./volt-logout-2.md)
+<<<<<<< HEAD
 - [volt-logout-action-1.md](./volt-logout-action.md)
 - [volt-logout-action-2.md](./volt-logout-action.md)
 - [volt-logout-action.md](./volt-logout-action.md)
@@ -3206,6 +5207,15 @@
 - [volt-missing-directive-1.md](./volt-missing-directive.md)
 - [volt-missing-directive-2.md](./volt-missing-directive.md)
 - [volt-missing-directive.md](./volt-missing-directive.md)
+=======
+- [volt-logout-action-1.md](../volt-logout-action-2.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-action-2.md](../volt-logout-action-2.md)
+- [volt-logout-3.md](../volt-logout-3.md)
+- [volt-missing-directive-1.md](../volt-missing-directive-2.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+- [volt-missing-directive-2.md](../volt-missing-directive-2.md)
+>>>>>>> laraxot/dev
 - [volt-missingirective.md](./volt-missingirective.md)
 - [volts.md](./volts.md)
 - [widget-rendering-analysis-1.md](./widget-rendering-analysis.md)
@@ -3215,6 +5225,7 @@
 - [widget-rendering-analysis-5.md](./widget-rendering-analysis.md)
 - [widget-rendering-analysis.md](./widget-rendering-analysis.md)
 - [widget-rendering.md](./widget-rendering.md)
+<<<<<<< HEAD
 - [widget-translation-rules-1.md](./widget-translation-rules.md)
 - [widget-translation-rules-2.md](./widget-translation-rules-quaeris-project.md)
 - [widget-translation-rules-3.md](./widget-translation-rules-3.md)
@@ -3227,6 +5238,20 @@
 - [windsurf.md](./windsurf.md)
 - [xotbase-resource-getpages-automatic.md](./xotbase-resource-getpages-automatic.md)
 - [xotbasemigration-best-practices.md](./xotbasemigration-best-practices.md)
+=======
+- [widget-translation-rules-1.md](../widget-translation-rules-2.md)
+- [widget-translation-rules-2.md](./widget-translation-rules-quaeris-project.md)
+- [widget-translation-rules-3.md](./widget-translation-rules-3.md)
+- [widget-translation-rules-2.md](../widget-translation-rules-2.md)
+- [widget-translation.md](./widget-translation.md)
+- [widgets-structure-1.md](../widgets-structure-2.md)
+- [widgets-structure-2.md](./widgets-structure-user.md)
+- [widgets-structure-2.md](../widgets-structure-2.md)
+- [windsurf-rules.md](./windsurf-rules.md)
+- [windsurf.md](./windsurf.md)
+- [xotbase-resource-getpages-automatic.md](./xotbase-resource-getpages-automatic.md)
+- [xotbasemigration-best-practices-2.md](../../../Notify/docs/mail-templates/xotbasemigration-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [xotbasemigration-laraxot-philosophy.md](./xotbasemigration-laraxot-philosophy.md)
 - [xotbasemigration-laraxot.md](./xotbasemigration-laraxot.md)
 - [xotbaseresource-violations-removal.md](./xotbaseresource-violations-removal.md)
@@ -3272,9 +5297,15 @@
 
 ## traits
 
+<<<<<<< HEAD
 - [has-authentication-log.md](./traits/has-authentication-log.md)
 - [has-teams.md](./traits/has-teams.md)
 - [has-tenants.md](./traits/has-tenants.md)
+=======
+- [has-authentication-log-2.md](../../../Geo/docs/traits/has-authentication-log-2.md)
+- [has-teams-2.md](../../../Geo/docs/traits/has-teams-2.md)
+- [has-tenants-2.md](../../../Geo/docs/traits/has-tenants-2.md)
+>>>>>>> laraxot/dev
 
 ## widgets
 
@@ -3415,3 +5446,9 @@
 - [phpstan-widget-property-types-2026-05-06.deprecated.md](./wiki/troubleshooting/phpstan-widget-property-types-2026-05-06.deprecated.md)
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
+<<<<<<< HEAD
+=======
+=======
+- [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+>>>>>>> .merge_file_YHHjXF
+>>>>>>> laraxot/dev

@@ -8,7 +8,11 @@ qmd: "log user activity log"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./AGENTS.md"
+=======
+  - "./agents-2.md"
+>>>>>>> laraxot/dev
   - "./index.md"
 ---
 
@@ -22,7 +26,11 @@ related:
 
 ## [2026-04-15] maintenance | Initial wiki setup
 - Created: llm-wiki/ directory structure
+<<<<<<< HEAD
 - Created: AGENTS.md (agent instructions)
+=======
+- Created: agents-2.md (agent instructions)
+>>>>>>> laraxot/dev
 - Created: index.md (content catalog)
 - Created: log.md (this file)
 - Directories initialized:

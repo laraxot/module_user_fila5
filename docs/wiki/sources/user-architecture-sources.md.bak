@@ -15,7 +15,11 @@ related:
 ## Source Cluster
 
 - `README.md`
+<<<<<<< HEAD
 - `PRODUCT_STRATEGY.md`
+=======
+- `product-strategy-2.md`
+>>>>>>> laraxot/dev
 - `architecture/architecture-rules.md`
 - `advanced-user-architecture.md`
 

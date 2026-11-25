@@ -1,13 +1,32 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VcG2Ik
+<<<<<<< .merge_file_lvPh2K
+=======
+>>>>>>> .merge_file_1kRmdi
+>>>>>>> laraxot/dev
 ---
 title: "Analisi dell'Errore di Implementazione Volt/Blade"
 type: note
 qmd: "volt blade implementation error analisi dellerrore"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VcG2Ik
+=======
+>>>>>>> .merge_file_7Ls347
+=======
+>>>>>>> .merge_file_1kRmdi
+>>>>>>> laraxot/dev
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./path_conventions.md)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+>>>>>>> laraxot/dev
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Identificazione dell'Errore
@@ -95,7 +114,11 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 3. **Manutenibilità**: Sfrutta le funzionalità di Filament per la validazione e la gestione degli errori
 4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
 
+<<<<<<< HEAD
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
+=======
+Questo approccio sarà documentato in dettaglio nel file `volt-blade-implementation-4.md`.
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-blade-implementation-error

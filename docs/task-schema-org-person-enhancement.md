@@ -109,7 +109,11 @@ Based on comprehensive research of Schema.org documentation, I've identified key
 ## Related Files
 
 - [tasks-schema-org-person.md](./tasks-schema-org-person.md) - Existing person tasks
+<<<<<<< HEAD
 - [place-address-schemaorg.md](../../Geo/docs/place-address-schemaorg.md) - Address documentation
+=======
+- [place-address-schemaorg-2.md](../../Geo/docs/place-address-schemaorg.md) - Address documentation
+>>>>>>> laraxot/dev
 - [architecture.md](./architecture.md) - User module architecture
 
 ## Implementation Details

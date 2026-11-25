@@ -144,9 +144,15 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Header Components](./header_components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./session_management.md) 
+=======
+- [Header Components](./header-components-2.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
+- [Session Management](./session-management-3.md) 
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: navigation-structure

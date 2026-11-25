@@ -8,9 +8,16 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../actions-path-convention-2.md"
+qmd: "volt blade implementation error"
+>>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md

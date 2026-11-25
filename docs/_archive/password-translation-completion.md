@@ -13,9 +13,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Completamento Traduzioni Password - 2025
@@ -124,9 +130,15 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 ## Collegamenti
 
 - [Documentazione Modulo User](../README.md)
+<<<<<<< HEAD
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
+=======
+- [Best Practices Traduzioni](../../Lang/docs/translation-standards-2.md)
+- [Documentazione Modulo User](../readme.md)
+- [Best Practices Traduzioni](../../lang/docs/translation-standards-2.md)
+>>>>>>> laraxot/dev
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro

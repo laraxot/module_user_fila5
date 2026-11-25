@@ -92,9 +92,15 @@ ls docs/img/      # ✅ Images preserved locally, untracked
 
 ---
 
+<<<<<<< HEAD
 <!-- Contenuto unito da lfs-resolution-.md (rimozione date dai nomi file, issue #64) -->
 
 <!-- recovery from broken basename `lfs-resolution-.md` after docs-guardian mass rename -->
+=======
+<!-- Contenuto unito da lfs-resolution-4.md (rimozione date dai nomi file, issue #64) -->
+
+<!-- recovery from broken basename `lfs-resolution-4.md` after docs-guardian mass rename -->
+>>>>>>> laraxot/dev
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 

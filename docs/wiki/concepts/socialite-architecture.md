@@ -12,7 +12,18 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
+<<<<<<< HEAD
 qmd: "socialite architecture googleid column rule"
+=======
+<<<<<<< .merge_file_zoMCeL
+<<<<<<< .merge_file_fkA0S1
+qmd: "socialite architecture googleid column rule"
+=======
+>>>>>>> .merge_file_6wleTL
+=======
+qmd: "socialite architecture googleid column rule"
+>>>>>>> .merge_file_FWxtiF
+>>>>>>> laraxot/dev
 ---
 
 # Socialite Architecture

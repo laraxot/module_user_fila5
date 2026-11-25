@@ -200,7 +200,11 @@ app/Filament/
 **Regola:** Tutti i file in lowercase con hyphens
 **Esempi:**
 - ✅ `user-authentication.md`
+<<<<<<< HEAD
 - ✅ `filament-resources.md`
+=======
+- ✅ `filament-resources-3.md`
+>>>>>>> laraxot/dev
 - ✅ `model-relationships.md`
 - ❌ `User_Authentication.md`
 - ❌ `FilamentResources.md`

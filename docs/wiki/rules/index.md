@@ -7,7 +7,18 @@ tags: [rules, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
+<<<<<<< HEAD
 qmd: "rules"
+=======
+<<<<<<< .merge_file_f2pN33
+<<<<<<< .merge_file_S2yF4G
+qmd: "rules"
+=======
+>>>>>>> .merge_file_6FPNHt
+=======
+qmd: "rules"
+>>>>>>> .merge_file_7uRDjr
+>>>>>>> laraxot/dev
 ---
 
 # Rules Index

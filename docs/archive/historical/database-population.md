@@ -312,7 +312,11 @@ echo "User roles: " . $user->roles()->count() . "\n";
 - [README Modulo User](./readme.md)
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
+<<<<<<< HEAD
 - [Database Schema](./database-schema.md)
+=======
+- [Database Schema](../../database-schema-2.md)
+>>>>>>> laraxot/dev
 
 ---
 

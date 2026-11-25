@@ -36,7 +36,11 @@ qmd: "merge conflict markers cleanup story user"
   più coerente (link lowercase salvo `README.md`, lato non vuoto / più completo).
   Verifica finale: `/bin/grep -rIln --include='*.md' '^<<<<<<< \|^>>>>>>> \|^=======$'
   laravel/Modules/User/docs` → **0**. Nessun commit in questa sessione.
+<<<<<<< HEAD
 - Fuori scope: consolidamento duplicati case-only (`index.md`/`INDEX.md`,
+=======
+- Fuori scope: consolidamento duplicati case-only (`index-3.md`/`index-3.md`,
+>>>>>>> laraxot/dev
   `models/readme.md`/`models/README.md`), codice `app/`, lock intero modulo.
 
 ## Contesto
@@ -134,7 +138,11 @@ marker residui in tutti, script non li ha ritoccati.
 ## Root-md-files e index
 
 `docs/root-md-files/*.md` (7 file: CHANGELOG.md + 2 varianti numerate,
+<<<<<<< HEAD
 git-reset.md + 1 variante, pest-test-report.md, philosophy.md) verificato
+=======
+git-reset.md + 1 variante, pest-test-report.md, ../philosophy-2.md) verificato
+>>>>>>> laraxot/dev
 pulito — nessun artefatto tipo `(.)` a fine riga, nessuna intestazione H1
 
 pulito: nessun artefatto tipo `(.)` a fine riga, nessuna intestazione H1
@@ -143,14 +151,22 @@ duplicata.
 `docs/index.md` (indice auto-generato, 3419 righe) aveva la sezione
 `## root-md-files` disallineata: elencava solo 2 dei 7 file `.md` presenti
 (`git-reset.md`, `pest-test-report.md`), mancavano `CHANGELOG.md`,
+<<<<<<< HEAD
 `changelog-1.md`, `changelog-2.md`, `git-reset-1.md`, `philosophy.md`.
+=======
+`changelog-1.md`, `changelog-2.md`, `git-reset-1.md`, `../philosophy-2.md`.
+>>>>>>> laraxot/dev
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa —
 
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa -
 fuori scope per questa story).
 
 `docs/00-index.md`, `docs/README.md`, `docs/purpose.md`: verificati, nessun
+<<<<<<< HEAD
 riferimento stale a path root-modulo rimossi (`PHILOSOPHY.md`,
+=======
+riferimento stale a path root-modulo rimossi (`../philosophy-2.md`,
+>>>>>>> laraxot/dev
 `CHANGELOG.MD`, ecc.).
 
 ## Esclusioni deliberate

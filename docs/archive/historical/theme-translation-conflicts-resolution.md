@@ -416,11 +416,19 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
+<<<<<<< HEAD
 - [Moderation Strategy](user-moderation-strategy.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../../docs/project/translation-standards.md)
+=======
+- [Moderation Strategy](user-moderation-strategy-3.md)
+- [Filament Best Practices](filament-best-practices-2.md)
+
+### Collegamenti Esterni
+- [Translation Standards](../../../../Lang/docs/translation-standards-3.md)
+>>>>>>> laraxot/dev
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

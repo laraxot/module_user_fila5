@@ -22,11 +22,19 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+=======
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices-2.md)
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel-localization-usage-2.md)
+- [README modulo User](./README.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation-keys-best-practices-2.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel-localization-usage-2.md)
+>>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -218,11 +226,19 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+=======
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices-2.md)
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel-localization-usage-2.md)
+- [README modulo User](./README.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation-keys-best-practices-2.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel-localization-usage-2.md)
+>>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

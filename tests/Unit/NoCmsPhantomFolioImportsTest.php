@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use App\Providers\FolioServiceProvider;
+=======
+>>>>>>> laraxot/dev
 use Symfony\Component\Finder\Finder;
 
 use function Safe\file_get_contents;
@@ -12,7 +15,11 @@ use function Safe\file_get_contents;
  * Il modulo e' condiviso: in questo progetto Modules/Cms esiste, quindi NON si asserisce l'assenza
  * della cartella Cms ne' quella di `resources/views/pages` (tracciata e popolata).
  *
+<<<<<<< HEAD
  * @see FolioServiceProvider stub no-op
+=======
+ * @see Modules/Cms/app/Providers/FolioVoltServiceProvider.php (unico owner Folio+Volt)
+>>>>>>> laraxot/dev
  * @see Modules/User/docs/architecture/auth-blade-structure.md
  * @see Modules/User/docs/adr/frontoffice-login-page-ownership.md
  */

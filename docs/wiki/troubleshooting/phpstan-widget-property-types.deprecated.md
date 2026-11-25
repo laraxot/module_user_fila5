@@ -17,4 +17,24 @@ related:
   - "./spatie-permission-team-model-not-configured.md"
 ---
 
+<<<<<<< HEAD
 > Questo file è stato rinominato in [phpstan-widget-property-types-.deprecated.md](phpstan-widget-property-types-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+<<<<<<< .merge_file_S7y2LG
+<<<<<<< .merge_file_uqgAMY
+> Questo file è stato rinominato in [phpstan-widget-property-types-2.deprecated.md](phpstan-widget-property-types-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+<<<<<<< HEAD
+> Questo file è stato rinominato in [phpstan-widget-property-types-2.deprecated.md](phpstan-widget-property-types-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+<<<<<<< HEAD
+> Questo file è stato rinominato in [phpstan-widget-property-types-2.deprecated.md](phpstan-widget-property-types-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+> Questo file è stato rinominato in [phpstan-widget-property-types-2.deprecated.md](./phpstan-widget-property-types.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_swEvLa
+=======
+> Questo file è stato rinominato in [phpstan-widget-property-types-.deprecated.md](phpstan-widget-property-types-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> .merge_file_QAIt6T
+>>>>>>> laraxot/dev

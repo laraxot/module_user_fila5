@@ -1,7 +1,11 @@
 ---
 module: theme
 topic: baseuser-refactoring-completed-2
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/baseuser-refactoring-completed-.md
+=======
+canonical: ../../../Themes/docs/shared-components/baseuser-refactoring-completed-4.md
+>>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -14,4 +18,8 @@ related:
 qmd: "baseuser refactoring completed 2"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/baseuser-refactoring-completed-.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/baseuser-refactoring-completed-4.md
+>>>>>>> laraxot/dev

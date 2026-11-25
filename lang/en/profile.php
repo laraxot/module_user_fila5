@@ -4,7 +4,15 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Profiles',
+=======
+<<<<<<< .merge_file_qILhim
+        'label' => 'Profile',
+=======
+        'label' => 'Profiles',
+>>>>>>> .merge_file_tzqnN0
+>>>>>>> laraxot/dev
         'plural' => 'Profiles',
         'group' => [
             'label' => 'User management',
@@ -98,5 +106,13 @@ return [
         'delete' => 'Delete Account',
     ],
     'my_profile' => 'My Profile',
+<<<<<<< HEAD
     'subheading' => 'Manage your personal details and security',
+=======
+<<<<<<< .merge_file_qILhim
+    'subheading' => 'Your personal details and password',
+=======
+    'subheading' => 'Manage your personal details and security',
+>>>>>>> .merge_file_tzqnN0
+>>>>>>> laraxot/dev
 ];

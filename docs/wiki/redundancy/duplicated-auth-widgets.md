@@ -10,7 +10,18 @@ related:
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
+<<<<<<< HEAD
 qmd: "duplicated auth widgets widget duplicati loginwidget"
+=======
+<<<<<<< .merge_file_zMc3mM
+<<<<<<< .merge_file_sbZzOo
+qmd: "duplicated auth widgets widget duplicati loginwidget"
+=======
+>>>>>>> .merge_file_vRZga8
+=======
+qmd: "duplicated auth widgets widget duplicati loginwidget"
+>>>>>>> .merge_file_7WzdpZ
+>>>>>>> laraxot/dev
 ---
 
 # LoginWidget e LogoutWidget duplicati

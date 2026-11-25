@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ZWB2Ct
+<<<<<<< .merge_file_SvbV8s
+=======
+>>>>>>> .merge_file_jwZ5Ei
+>>>>>>> laraxot/dev
 ---
 title: "PHPStan widget property types"
 type: guide
 qmd: "phpstan widget property types 06"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ZWB2Ct
+=======
+>>>>>>> .merge_file_jyR3eb
+=======
+>>>>>>> .merge_file_jwZ5Ei
+>>>>>>> laraxot/dev
 # PHPStan widget property types
 
 ## Contesto

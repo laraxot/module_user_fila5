@@ -118,9 +118,15 @@ class LogoutPage
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md) 
+=======
+- [Documentazione Volt](./volt-logout-3.md)
+- [Best Practices Routing](./routing-best-practices-2.md)
+- [Struttura Directory](./directory-structure-checklist-3.md) 
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: logout-blade-structure

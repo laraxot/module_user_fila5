@@ -127,7 +127,15 @@ function userTestAuthDeviceData(): array
 describe('Authentication Business Logic', function () {
     describe('User Authentication Logic', function () {
         it('validates user account status', function () {
+<<<<<<< HEAD
             $user = (object) $this->userData;
+=======
+<<<<<<< .merge_file_OjD8Ph
+            $user = (object) userTestAuthUserData();
+=======
+            $user = (object) $this->userData;
+>>>>>>> .merge_file_wzQdYB
+>>>>>>> laraxot/dev
 
             // Business Logic: User must be active and verified
             Assert::assertTrue($user->is_active);

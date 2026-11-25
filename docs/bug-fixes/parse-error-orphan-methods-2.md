@@ -1,10 +1,17 @@
 ---
 module: theme
 topic: parse-error-orphan-methods-2
+<<<<<<< HEAD
 canonical: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-.md
 related:
   - "./make-filament-user-crash-loop.md"
   - "./parse-error-orphan-methods-.md"
+=======
+canonical: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-4.md
+related:
+  - "./make-filament-user-crash-loop.md"
+  - "./parse-error-orphan-methods-4.md"
+>>>>>>> laraxot/dev
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-3.md"
@@ -13,4 +20,8 @@ related:
 qmd: "parse error orphan methods 2"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-.md
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods-4.md
+>>>>>>> laraxot/dev

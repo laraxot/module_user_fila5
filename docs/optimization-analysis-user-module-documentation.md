@@ -67,22 +67,38 @@ docs/
 ├── guides/
 │   ├── authentication.md
 │   ├── user_management.md
+<<<<<<< HEAD
 │   ├── filament_integration.md
+=======
+│   ├── filament-integration-3.md
+>>>>>>> laraxot/dev
 │   ├── phpstan_implementation.md
 │   └── moderation_system.md
 ├── reference/
 │   ├── api_endpoints.md
 │   ├── configuration.md
+<<<<<<< HEAD
 │   ├── database_schema.md
 │   └── best_practices.md
 ├── components/
 │   ├── authentication_components.md
 │   ├── filament_components.md
+=======
+│   ├── database-schema-2.md
+│   └── best-practices-3.md
+├── components/
+│   ├── authentication_components.md
+│   ├── filament-components-2.md
+>>>>>>> laraxot/dev
 │   └── livewire_components.md
 ├── troubleshooting/
 │   ├── common_errors.md
 │   ├── filament-errors.md
+<<<<<<< HEAD
 │   └── phpstan_errors.md
+=======
+│   └── phpstan-errors-2.md
+>>>>>>> laraxot/dev
 └── integrations/
     ├── spatie-permissions-2.md
     ├── socialite_integration.md

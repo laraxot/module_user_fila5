@@ -150,7 +150,11 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
+<<<<<<< HEAD
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+=======
+- [Project Wiki Agent Instructions](../../docs/wiki/agents-2.md)
+>>>>>>> laraxot/dev
 - [Module Documentation](../README.md)
 
 

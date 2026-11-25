@@ -18,7 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Filament Resource Guidelines](../../Activity/docs/filament-resource-guidelines-3.md)
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: registration_widget

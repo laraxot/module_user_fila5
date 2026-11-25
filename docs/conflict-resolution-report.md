@@ -22,7 +22,11 @@ related:
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict-resolution-2.md).
+>>>>>>> laraxot/dev
 
 ## Conflitti Risolti
 
@@ -59,7 +63,11 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 - Mantenimento dei componenti Filament per coerenza con le best practices del progetto
 
 #### Motivazione
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament-best-practices-2.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> laraxot/dev
 
 ### 3. Dichiarazione strict_types
 
@@ -83,8 +91,13 @@ Le modifiche apportate garantiscono:
 ## Collegamenti alla Documentazione
 
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
+<<<<<<< HEAD
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
+=======
+- [Risoluzione dei Conflitti](docs/conflict-resolution-2.md)
+- [Best Practices Filament](modules/user/docs/filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)
@@ -93,7 +106,11 @@ Le modifiche apportate garantiscono:
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict-resolution-2.md).
+>>>>>>> laraxot/dev
 
 ## Conflitti Risolti
 
@@ -130,7 +147,11 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 - Mantenimento dei componenti Filament per coerenza con le best practices del progetto
 
 #### Motivazione
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament-best-practices-2.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> laraxot/dev
 
 ### 3. Dichiarazione strict_types
 
@@ -154,8 +175,13 @@ Le modifiche apportate garantiscono:
 ## Collegamenti alla Documentazione
 
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
+<<<<<<< HEAD
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
+=======
+- [Risoluzione dei Conflitti](docs/conflict-resolution-2.md)
+- [Best Practices Filament](modules/user/docs/filament-best-practices-2.md)
+>>>>>>> laraxot/dev
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)

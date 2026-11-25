@@ -38,10 +38,17 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
 ## Collegamenti tra versioni di phpstan_fixes.md
 * [phpstan_fixes.md](../../../xot/project_docs/phpstan/phpstan_fixes.md)
+<<<<<<< HEAD
 * [phpstan_fixes.md](../../../xot/project_docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/project_docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../ui/project_docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../media/project_docs/phpstan_fixes.md)
+=======
+* [phpstan-fixes-5.md](../../../xot/project_docs/phpstan-fixes-5.md)
+* [phpstan-fixes-5.md](../../../user/project_docs/phpstan-fixes-5.md)
+* [phpstan-fixes-5.md](../../../ui/project_docs/phpstan-fixes-5.md)
+* [phpstan-fixes-5.md](../../../media/project_docs/phpstan-fixes-5.md)
+>>>>>>> laraxot/dev
 
 
 ### Versione Incoming

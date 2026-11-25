@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_59iViG
+<<<<<<< .merge_file_rU8nWc
+=======
+>>>>>>> .merge_file_LOUUmX
+>>>>>>> laraxot/dev
 ---
 title: "Errore VoltDirectiveMissingException"
 type: note
 qmd: "volt missing directive errore voltdirectivemissingexception"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_59iViG
+=======
+>>>>>>> .merge_file_V75Kp4
+=======
+>>>>>>> .merge_file_LOUUmX
+>>>>>>> laraxot/dev
 # Errore VoltDirectiveMissingException
 
 ## Descrizione

@@ -200,9 +200,15 @@ Commits to push: 5 total
 
 ---
 
+<<<<<<< HEAD
 <!-- Contenuto unito da git-push-lfs-issue-.md (rimozione date dai nomi file, issue #64) -->
 
 <!-- recovery from broken basename `git-push-lfs-issue-.md` after docs-guardian mass rename -->
+=======
+<!-- Contenuto unito da git-push-lfs-issue-2.md (rimozione date dai nomi file, issue #64) -->
+
+<!-- recovery from broken basename `git-push-lfs-issue-2.md` after docs-guardian mass rename -->
+>>>>>>> laraxot/dev
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 

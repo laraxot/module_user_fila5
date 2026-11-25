@@ -33,9 +33,15 @@ related:
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./path_conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Struttura moduli](../../../docs/architecture/modules-structure.md)
+- [Logout Page Fix](./logout-page-fix-2.md)
+>>>>>>> laraxot/dev
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

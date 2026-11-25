@@ -5,7 +5,18 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 qmd: "sso providers implementation user"
+=======
+<<<<<<< .merge_file_na8Ubn
+<<<<<<< .merge_file_uXBm4V
+qmd: "sso providers implementation user"
+=======
+>>>>>>> .merge_file_2DYahz
+=======
+qmd: "sso providers implementation user"
+>>>>>>> .merge_file_rYJFr4
+>>>>>>> laraxot/dev
 ---
 
 # User Module - SSO Providers Implementation

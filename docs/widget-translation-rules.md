@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YDJ9Yc
+<<<<<<< .merge_file_NUAQ6j
+=======
+>>>>>>> .merge_file_snaG7y
+>>>>>>> laraxot/dev
 ---
 title: "Widget Translation Rules - SaluteOra Project"
 type: rule
 qmd: "widget translation rules saluteora project"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YDJ9Yc
+=======
+>>>>>>> .merge_file_Mg6ZWJ
+=======
+>>>>>>> .merge_file_snaG7y
+>>>>>>> laraxot/dev
 # Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
@@ -139,6 +154,7 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
+<<<<<<< HEAD
 - [User Module Widget Structure](../modules/user/project_docs/widgets_structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
@@ -147,6 +163,33 @@ protected static string $view = 'user::widgets.edit-user';
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+=======
+- [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
+- [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
+<<<<<<< .merge_file_YDJ9Yc
+<<<<<<< .merge_file_NUAQ6j
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+=======
+<<<<<<< HEAD
+=======
+=======
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Mg6ZWJ
+=======
+>>>>>>> .merge_file_snaG7y
+>>>>>>> laraxot/dev
 ## Memory Integration
 This document serves as a reference for:
 - Widget development standards
@@ -339,10 +382,33 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+=======
+- [User Module Widget Structure](../Modules/User/docs/widgets-structure-2.md)
+- [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
+<<<<<<< .merge_file_YDJ9Yc
+<<<<<<< HEAD
+- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+<<<<<<< .merge_file_NUAQ6j
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+=======
+=======
+<<<<<<< HEAD
+- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+=======
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Mg6ZWJ
+=======
+- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+>>>>>>> .merge_file_snaG7y
+>>>>>>> laraxot/dev
 
 ## Memory Integration
 

@@ -9,7 +9,26 @@ qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
 related:
+<<<<<<< HEAD
   - "./agents.md"
+=======
+<<<<<<< .merge_file_faCy52
+<<<<<<< HEAD
+  - "./agents-2.md"
+=======
+<<<<<<< HEAD
+  - "./agents.md"
+<<<<<<< .merge_file_2RBtzJ
+=======
+=======
+  - "./agents-2.md"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VNy3bD
+=======
+  - "./agents.md"
+>>>>>>> .merge_file_fwPJ4J
+>>>>>>> laraxot/dev
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

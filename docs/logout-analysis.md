@@ -246,7 +246,13 @@ $logout = function () {
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/README.md) 
+<<<<<<< HEAD
 - [Documentazione Volt](./volt_blade_implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session_management.md)
+=======
+- [Documentazione Volt](./volt-blade-implementation-4.md)
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./session-management-3.md)
+>>>>>>> laraxot/dev
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

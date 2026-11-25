@@ -43,12 +43,21 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+---
+
+- [Filament Resource Guidelines](../../../../Activity/docs/filament-resource-guidelines-3.md)
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: registration_widget
@@ -60,7 +69,11 @@ See canonical documentation: ../../../Themes/docs/shared-components/registration
 
 ## registration-widget-fileupload-fix
 
+<<<<<<< HEAD
 *Consolidated from: `registration-widget-fileupload-fix.md`*
+=======
+*Consolidated from: `registration-widget-fileupload-fix-3.md`*
+>>>>>>> laraxot/dev
 
 title: "RegistrationWidget FileUpload Fix"
 type: concept
@@ -76,9 +89,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # RegistrationWidget FileUpload Fix
@@ -206,7 +225,11 @@ Per evitare simili problemi in futuro:
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+<<<<<<< HEAD
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+- [Registration Widget base: registration-widget-2.md](../../registration-widget-2.md)
+>>>>>>> laraxot/dev
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -426,7 +449,11 @@ Per evitare simili problemi in futuro:
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+<<<<<<< HEAD
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+- [Registration Widget base: registration-widget-2.md](../../registration-widget-2.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -436,25 +463,42 @@ Per evitare simili problemi in futuro:
 
 module: theme
 topic: registration-widget-fileupload
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+=======
+canonical: ../../registration-widget-fileupload-fix-3.md
+>>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+---
+
+See canonical documentation: ../../registration-widget-fileupload-fix-3.md
+>>>>>>> laraxot/dev
 
 ---
 
 ## registration-widget-update
 
+<<<<<<< HEAD
 *Consolidated from: `registration-widget-update.md`*
+=======
+*Consolidated from: `registration-widget-update-3.md`*
+>>>>>>> laraxot/dev
 
 title: "Aggiornamento relativo a DoctorResource.php"
 type: concept
@@ -470,9 +514,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Aggiornamento relativo a DoctorResource.php
@@ -518,7 +568,11 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 
 ## registration-widget
 
+<<<<<<< HEAD
 *Consolidated from: `registration-widget.md`*
+=======
+*Consolidated from: `registration-widget-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Registration Widget Documentation"
 type: concept
@@ -534,9 +588,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Registration Widget Documentation
@@ -583,9 +643,15 @@ protected function getConfirmationRoute(): string
 ```
 ## References
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Filament Resource Guidelines](../../../../Activity/docs/filament-resource-guidelines-3.md)
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../../Activity/docs/filament-resource-guidelines-3.md)
+>>>>>>> laraxot/dev
 # Registration Widget Documentation
 
 ## Overview
@@ -650,13 +716,21 @@ protected function getConfirmationRoute(): string
 ## References
 
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Filament Resource Guidelines](../../../../Activity/docs/filament-resource-guidelines-3.md)
+>>>>>>> laraxot/dev
 
 ---
 
 ## registration_widget
 
+<<<<<<< HEAD
 *Consolidated from: `registration_widget.md`*
+=======
+*Consolidated from: `registration-widget-2.md`*
+>>>>>>> laraxot/dev
 
 
 ## Overview
@@ -721,13 +795,21 @@ protected function getConfirmationRoute(): string
 ## References
 
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Filament Resource Guidelines](../../../../Activity/docs/filament-resource-guidelines-3.md)
+>>>>>>> laraxot/dev
 
 ---
 
 ## registration_widget_fileupload_fix
 
+<<<<<<< HEAD
 *Consolidated from: `registration_widget_fileupload_fix.md`*
+=======
+*Consolidated from: `registration-widget-fileupload-fix-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## Problema Risolto
@@ -947,14 +1029,22 @@ Per evitare simili problemi in futuro:
 
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
+<<<<<<< HEAD
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+- [Registration Widget base: registration-widget-2.md](../../registration-widget-2.md)
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## registration_widget_update
 
+<<<<<<< HEAD
 *Consolidated from: `registration_widget_update.md`*
+=======
+*Consolidated from: `registration-widget-update-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## Nota del 2025-05-15

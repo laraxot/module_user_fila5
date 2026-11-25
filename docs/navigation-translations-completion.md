@@ -185,7 +185,11 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
+=======
+- [Translation Standards](../../Lang/docs/translation-standards-3.md)
+>>>>>>> laraxot/dev
 - [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
 
 ---

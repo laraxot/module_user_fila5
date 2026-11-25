@@ -8,13 +8,29 @@ qmd: "parse-error-orphan-methods-2025-01-27.deprecated deprecated"
 status: deprecated
 related:
   - "./make-filament-user-crash-loop.md"
+<<<<<<< HEAD
   - "./parse-error-orphan-methods-.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
+=======
+<<<<<<< .merge_file_Y2s6cV
+  - "./parse-error-orphan-methods-4.md"
+  - "./parse-error-orphan-methods-1-1.md"
+  - "./parse-error-orphan-methods-1.md"
+=======
+  - "./parse-error-orphan-methods-.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+>>>>>>> .merge_file_juS6eP
+>>>>>>> laraxot/dev
   - "./parse-error-orphan-methods-2.md"
   - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
 > Questo file è stato rinominato in [parse-error-orphan-methods-.deprecated.md](parse-error-orphan-methods-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+> Questo file è stato rinominato in [parse-error-orphan-methods-2.deprecated.md](parse-error-orphan-methods-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> laraxot/dev

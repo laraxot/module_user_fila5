@@ -109,7 +109,11 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 -   [Super Cow Methodology](../../xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../xot/docs/php_quality_guide.md)
+<<<<<<< HEAD
 -   [Filament Extension Rules](../../xot/docs/filament_extension_rules.md)
+=======
+-   [Filament Extension Rules](../../xot/docs/filament-extension-rules-2.md)
+>>>>>>> laraxot/dev
 
 **Key Principles:**
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.

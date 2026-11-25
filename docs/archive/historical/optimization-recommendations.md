@@ -374,7 +374,11 @@ User/docs/
 │   ├── README.md
 │   ├── passport.md
 │   ├── socialite.md
+<<<<<<< HEAD
 │   ├── two-factor.md
+=======
+│   ├── two-factor-3.md
+>>>>>>> laraxot/dev
 │   └── custom-login.md
 ├── authorization/
 │   ├── README.md

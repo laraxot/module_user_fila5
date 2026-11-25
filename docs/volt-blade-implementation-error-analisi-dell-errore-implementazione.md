@@ -16,21 +16,70 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 status: draft
 status: draft
+=======
+<<<<<<< .merge_file_31t3CY
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_zgLdy1
+status: draft
+=======
+>>>>>>> .merge_file_L1pYDU
+>>>>>>> laraxot/dev
+=======
+status: draft
+status: draft
+>>>>>>> .merge_file_AgyogX
+>>>>>>> laraxot/dev
 ---
 
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_31t3CY
+=======
+<<<<<<< HEAD
+- [README modulo User](./readme.md)
+=======
+- [README modulo User](./README.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AgyogX
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Identificazione dell'Errore
 
+<<<<<<< HEAD
 Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
 Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+=======
+<<<<<<< .merge_file_31t3CY
+<<<<<<< .merge_file_gLrGKd
+Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+=======
+<<<<<<< HEAD
+Durante l'analisi del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+=======
+<<<<<<< .merge_file_zgLdy1
+Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+=======
+Durante l'analisi del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+>>>>>>> .merge_file_L1pYDU
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_udRDUr
+=======
+Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+>>>>>>> .merge_file_AgyogX
+>>>>>>> laraxot/dev
 
 ### File Attuale (Corretto)
 
@@ -113,4 +162,8 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 3. **Manutenibilità**: Sfrutta le funzionalità di Filament per la validazione e la gestione degli errori
 4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
 
+<<<<<<< HEAD
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
+=======
+Questo approccio sarà documentato in dettaglio nel file `volt-blade-implementation-4.md`.
+>>>>>>> laraxot/dev

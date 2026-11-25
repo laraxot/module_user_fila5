@@ -117,6 +117,10 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Modulo User](module_user.md)
+=======
+- [Documentazione Modulo User](module-user-2.md)
+>>>>>>> laraxot/dev
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Alpine.js](https://alpinejs.dev/) 

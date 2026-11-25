@@ -47,9 +47,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti in BaseUser.php
@@ -169,9 +175,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser - Analisi Violazione Principio DRY
@@ -600,7 +612,11 @@ test('hasRole works with guard parameter', function () {
 
 ### Documentazione Locale
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
 
 ### Documentazione Spatie
@@ -638,7 +654,11 @@ La rimozione dei metodi duplicati in `BaseUser`:
 
 ## baseuser-refactoring-completed-.deprecated
 
+<<<<<<< HEAD
 *Consolidated from: `baseuser-refactoring-completed-.deprecated.md`*
+=======
+*Consolidated from: `baseuser-refactoring-completed-2.deprecated.md`*
+>>>>>>> laraxot/dev
 
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -654,9 +674,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser Refactoring - Completato
@@ -898,7 +924,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [User Module README](./readme.md)
 
 ### Root Progetto
@@ -1025,9 +1055,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser Refactoring - Completato
@@ -1269,7 +1305,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [User Module README](./readme.md)
 
 ### Root Progetto
@@ -1394,9 +1434,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 > Questo file è stato rinominato in [baseuser-refactoring-completed-3.md](baseuser-refactoring-completed-3.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
@@ -1420,12 +1466,21 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 > Questo file è stato rinominato in [baseuser-refactoring-completed-.deprecated.md](baseuser-refactoring-completed-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+---
+
+> Questo file è stato rinominato in [baseuser-refactoring-completed-2.deprecated.md](baseuser-refactoring-completed-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1447,9 +1502,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser Refactoring - Completato
@@ -1691,7 +1752,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [User Module README](./readme.md)
 
 ### Root Progetto
@@ -1818,9 +1883,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser Refactoring - Completato
@@ -2061,7 +2132,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [User Module README](./readme.md)
 
 ### Root Progetto
@@ -2188,9 +2263,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Metodi Duplicati in BaseUser.php
@@ -2452,9 +2533,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser Model in Laravel Modules
@@ -2507,10 +2594,17 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 
 ## Links to Related Documentation
 - [User Module Index](./index.md)
+<<<<<<< HEAD
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Profile Management](./profile-management.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
+=======
+- [Authentication Pages Implementation](../../auth-pages-implementation-3.md)
+- [Profile Management](../../profile-management-3.md)
+- [Routing Best Practices](../../routing-best-practices-2.md)
+- [Session Management](../../session-management-3.md)
+>>>>>>> laraxot/dev
 - [[HasTeamsContract]]
 - [[UserContract]]
 - [[Team]]
@@ -2540,9 +2634,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # BaseUser - Analisi Violazione Principio DRY
@@ -2970,7 +3070,11 @@ test('hasRole works with guard parameter', function () {
 
 ### Documentazione Locale
 - [BaseUser Model](./models/baseuser.md)
+<<<<<<< HEAD
 - [Roles & Permissions](./roles-permissions.md)
+=======
+- [Roles & Permissions](../../roles-permissions-2.md)
+>>>>>>> laraxot/dev
 - [DRY Kiss Analysis](./dry-kiss-analysis.md)
 
 ### Documentazione Spatie
@@ -3024,9 +3128,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti in BaseUser.php

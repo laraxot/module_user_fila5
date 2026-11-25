@@ -213,7 +213,11 @@ $subject = Lang::get('user::email.password_reset_subject');
 ### **Documentazione Correlata**
 - [README.md Modulo User](./readme.md)
 - [Authentication Guide](./authentication.md)
+<<<<<<< HEAD
 - [Best Practices](./best-practices.md)
+=======
+- [Best Practices](../../../../Activity/docs/best-practices-3.md)
+>>>>>>> laraxot/dev
 
 ### **Risorse Esterne**
 - [Laravel Authentication](https://laravel.com/docs/authentication)

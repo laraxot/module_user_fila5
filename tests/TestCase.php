@@ -50,6 +50,11 @@ use function Safe\json_encode;
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
  *
+<<<<<<< HEAD
+=======
+ * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md perche' `$connectionsToTransact` non elenca connessioni di progetto
+ *
+>>>>>>> laraxot/dev
  * @property User|null $user
  * @property User|null $owner
  * @property User|null $member
@@ -110,6 +115,11 @@ abstract class TestCase extends XotBaseTestCase
      *
      * Nessun tipo di ritorno nativo: il metodo del trait non lo dichiara.
      *
+<<<<<<< HEAD
+=======
+     * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md
+     *
+>>>>>>> laraxot/dev
      * @return void
      */
     public function beginDatabaseTransaction()

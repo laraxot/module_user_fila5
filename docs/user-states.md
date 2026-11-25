@@ -11,7 +11,18 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 qmd: "user states configurazione stati utente state"
+=======
+<<<<<<< .merge_file_o5dyZX
+<<<<<<< .merge_file_Xaxtn4
+qmd: "user states configurazione stati utente state"
+=======
+>>>>>>> .merge_file_dc2mre
+=======
+qmd: "user states configurazione stati utente state"
+>>>>>>> .merge_file_kkg2Jb
+>>>>>>> laraxot/dev
 ---
 # Configurazione Stati Utente (state)
 

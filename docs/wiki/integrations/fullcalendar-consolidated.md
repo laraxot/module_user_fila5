@@ -48,9 +48,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler - Documentazione Completa
@@ -63,7 +69,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📚 Documentazione Principale
 
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -72,7 +82,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
@@ -81,13 +95,21 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📖 Documentazione Esistente (Aggiornata)
 
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in healthcare_app
 - Problemi comuni basilari
 
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -154,8 +176,13 @@ La documentazione copre tutti i livelli:
 
 ### 🚀 Per Sviluppatori
 
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 
 ### 🔧 Per Troubleshooting
@@ -244,9 +271,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler - Documentazione Completa
@@ -256,7 +289,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto <nome progetto>, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
 ## Documenti Disponibili
 ### 📚 Documentazione Principale
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -265,20 +302,32 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Best practices per <nome progetto>
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
 - Configurazioni essenziali
 - Comandi di debug
 ### 📖 Documentazione Esistente (Aggiornata)
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -330,8 +379,13 @@ La documentazione copre tutti i livelli:
 5. **Frontend** (JavaScript callbacks)
 ## Utilizzo della Documentazione
 ### 🚀 Per Sviluppatori
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 ### 🔧 Per Troubleshooting
 1. **Errore immediato**: Usare Quick Reference per fix rapidi
@@ -398,7 +452,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📚 Documentazione Principale
 
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -407,7 +465,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
@@ -416,13 +478,21 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📖 Documentazione Esistente (Aggiornata)
 
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -489,8 +559,13 @@ La documentazione copre tutti i livelli:
 
 ### 🚀 Per Sviluppatori
 
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 
 ### 🔧 Per Troubleshooting
@@ -564,7 +639,11 @@ La documentazione è progettata per essere autosufficiente e ridurre la necessit
 
 ## fullcalendar-scheduler-license-key-invalid
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar-scheduler-license-key-invalid.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-key-invalid-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Fullcalendar Scheduler License Key Invalid"
 type: concept
@@ -580,9 +659,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
  
@@ -591,7 +676,11 @@ related:
 
 ## fullcalendar-scheduler-license-troubleshooting
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar-scheduler-license-troubleshooting.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-troubleshooting-3.md`*
+>>>>>>> laraxot/dev
 
 title: "FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata"
 type: concept
@@ -607,9 +696,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata
@@ -1464,7 +1559,11 @@ La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare
 
 ## fullcalendar-scheduler-license
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar-scheduler-license.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-3.md`*
+>>>>>>> laraxot/dev
 
 title: "FullCalendar Scheduler License Configuration"
 type: concept
@@ -1480,9 +1579,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler License Configuration
@@ -1641,9 +1746,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler - Riferimento Rapido
@@ -1864,7 +1975,11 @@ slotDuration: '00:30:00', // 30 min slots
 
 ## fullcalendar-scheduler-quick-reference
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar-scheduler-quick-reference.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-quick-reference-4.md`*
+>>>>>>> laraxot/dev
 
 title: "FullCalendar Scheduler - Riferimento Rapido"
 type: concept
@@ -1880,9 +1995,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler - Riferimento Rapido
@@ -2263,9 +2384,15 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< HEAD
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+=======
+  - "../../actions-path-convention-2.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "../../actions-path-convention-2.md"
+>>>>>>> laraxot/dev
 ---
 
 # FullCalendar Scheduler - Documentazione Completa
@@ -2275,7 +2402,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto <nome progetto>, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
 ## Documenti Disponibili
 ### 📚 Documentazione Principale
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -2284,20 +2415,32 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Best practices per <nome progetto>
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
 - Configurazioni essenziali
 - Comandi di debug
 ### 📖 Documentazione Esistente (Aggiornata)
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2349,8 +2492,13 @@ La documentazione copre tutti i livelli:
 5. **Frontend** (JavaScript callbacks)
 ## Utilizzo della Documentazione
 ### 🚀 Per Sviluppatori
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 ### 🔧 Per Troubleshooting
 1. **Errore immediato**: Usare Quick Reference per fix rapidi
@@ -2417,7 +2565,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📚 Documentazione Principale
 
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -2426,7 +2578,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
@@ -2435,13 +2591,21 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📖 Documentazione Esistente (Aggiornata)
 
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2508,8 +2672,13 @@ La documentazione copre tutti i livelli:
 
 ### 🚀 Per Sviluppatori
 
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 
 ### 🔧 Per Troubleshooting
@@ -2594,7 +2763,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📚 Documentazione Principale
 
+<<<<<<< HEAD
 #### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -2603,7 +2776,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
+<<<<<<< HEAD
 #### 2. [FullCalendar Quick Reference](./fullcalendar-scheduler-quick-reference.md)
+=======
+#### 2. [FullCalendar Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+>>>>>>> laraxot/dev
 **Riferimento rapido** - Soluzioni immediate per:
 - Errori più comuni con fix immediati
 - Checklist di verifica
@@ -2612,13 +2789,21 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📖 Documentazione Esistente (Aggiornata)
 
+<<<<<<< HEAD
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+=======
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license-3.md)
+>>>>>>> laraxot/dev
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in SaluteOra
 - Problemi comuni basilari
 
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler_license_key.md)
+=======
+#### 4. [Scheduler License Key](../../scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -2685,8 +2870,13 @@ La documentazione copre tutti i livelli:
 
 ### 🚀 Per Sviluppatori
 
+<<<<<<< HEAD
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
 2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+=======
+1. **Primo setup**: Leggere [Quick Reference](../../fullcalendar-scheduler-quick-reference-4.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting-3.md)
+>>>>>>> laraxot/dev
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 
 ### 🔧 Per Troubleshooting
@@ -2760,7 +2950,11 @@ La documentazione è progettata per essere autosufficiente e ridurre la necessit
 
 ## fullcalendar_scheduler_license
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar_scheduler_license.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## License Key Overview
@@ -2849,14 +3043,22 @@ Ensure your license key is compatible with the version of FullCalendar Scheduler
 
 ## fullcalendar_scheduler_license_key_invalid
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar_scheduler_license_key_invalid.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-key-invalid-2.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## fullcalendar_scheduler_license_troubleshooting
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar_scheduler_license_troubleshooting.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-license-troubleshooting-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## Panoramica
@@ -3281,7 +3483,11 @@ La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare
 
 ## fullcalendar_scheduler_quick_reference
 
+<<<<<<< HEAD
 *Consolidated from: `fullcalendar_scheduler_quick_reference.md`*
+=======
+*Consolidated from: `fullcalendar-scheduler-quick-reference-4.md`*
+>>>>>>> laraxot/dev
 
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

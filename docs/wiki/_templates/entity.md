@@ -3,12 +3,32 @@ title: "Entity Name"
 type: entity
 sources: ["raw/articles/source-filename.md"]
 confidence: high
+<<<<<<< HEAD
 created: {{date}}
 updated: {{date}}
+=======
+<<<<<<< .merge_file_sc1UXi
+created: "{{date}}"
+updated: "{{date}}"
+>>>>>>> laraxot/dev
 tags: [person, organization, module]
 related:
   - "./concept.md"
   - "./source.md"
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_AbWzJB
+qmd: "entity name"
+=======
+>>>>>>> .merge_file_lzB5yj
+=======
+created: {{date}}
+updated: {{date}}
+tags: [person, organization, module]
+related:
+qmd: "entity name"
+>>>>>>> .merge_file_ctj71R
+>>>>>>> laraxot/dev
 ---
 
 # {{title}}

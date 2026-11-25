@@ -793,4 +793,16 @@ docs/visual-comparison/
 =======
 # graphify lanciato su tests/ scrive tests/graphify-out/: output rigenerabile, mai committare
 tests/graphify-out/
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Cfo0uy
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+ruvector.db
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_P1OL94
 >>>>>>> laraxot/dev

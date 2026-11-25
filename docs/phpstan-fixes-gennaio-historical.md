@@ -1,7 +1,11 @@
 ---
 module: theme
 topic: phpstan-fixes-gennaio-2025
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025.md
+=======
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-4.md
+>>>>>>> laraxot/dev
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -14,4 +18,8 @@ related:
 qmd: "phpstan fixes gennaio historical"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-4.md
+>>>>>>> laraxot/dev

@@ -31,11 +31,18 @@ public function getTableColumns(): array
 - Aggiornare anche override, chiamate e test.
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
+=======
+- [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
+>>>>>>> laraxot/dev
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** 2025-05-13
+=======
+>>>>>>> laraxot/dev
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.
