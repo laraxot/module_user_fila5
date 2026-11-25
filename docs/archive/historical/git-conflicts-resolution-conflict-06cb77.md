@@ -1,20 +1,14 @@
 ---
-title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
-type: concept
-tags: [git, conflicts, resolution, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git-conflicts-resolution-conflict-06cb77 risoluzione conflitti git - modulo user (2025-01-27)"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "../../actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "../../actions-path-convention.md"
+title: "git-conflicts-resolution-conflict-06cb77.md (alias)"
+status: superseded
+superseded_by: "../../git-conflicts-resolution.md"
+type: alias
+updated: 2026-11-25
+qmd: "git conflicts resolution alias superseded user consolidate"
 ---
 
+# Alias (superseded)
+
+Canonico: [`../../git-conflicts-resolution.md`](../../git-conflicts-resolution.md).
+
+Cluster compresso: vedi sezione *Alias storici* nel canone.

@@ -1,20 +1,14 @@
 ---
-title: "git-conflicts-resolution-2025-01-27"
-type: concept
-tags: [deprecated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git-conflicts-resolution-2025-01-27 deprecated"
-status: deprecated
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+title: "git-conflicts-resolution-4.md (alias)"
+status: superseded
+superseded_by: "./git-conflicts-resolution.md"
+type: alias
+updated: 2026-11-25
+qmd: "git conflicts resolution 4 alias superseded"
 ---
 
-> Questo file è stato rinominato in [git-conflicts-resolution-4.md](git-conflicts-resolution-4.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+# Alias (superseded)
+
+Canonico: [`./git-conflicts-resolution.md`](./git-conflicts-resolution.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.

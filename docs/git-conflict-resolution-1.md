@@ -1,34 +1,14 @@
 ---
-title: "git_conflict_resolution - User"
-type: concept
-tags: [git, conflict, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git-conflict-resolution-1 git_conflict_resolution - user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+title: "git-conflict-resolution-1.md (alias)"
+status: superseded
+superseded_by: "./git-conflicts-resolution.md"
+type: alias
+updated: 2026-11-25
+qmd: "git conflict resolution 1 alias superseded user consolidate"
 ---
 
-# git_conflict_resolution - User
+# Alias (superseded)
 
-## Overview
+Canonico: [`./git-conflicts-resolution.md`](./git-conflicts-resolution.md).
 
-Documentazione per git_conflict_resolution nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
+Cluster compresso: vedi sezione *Storico path alias* nel canone.

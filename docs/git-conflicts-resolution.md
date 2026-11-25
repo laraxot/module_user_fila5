@@ -1283,12 +1283,23 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
----
 
-## Contenuto fuso da `git-conflicts-resolution.md`
+## Storico path alias
 
-# Alias (superseded)
+Cluster compresso 2026-11-25. Canone = questo file. Copie/varianti → stub `superseded_by`.
 
-Canonico: [`./git-conflicts-resolution.md`](./git-conflicts-resolution.md).
+Path alias (non aggiungere nuove varianti; aggiorna qui):
 
-Questo path resta solo per link storici; non aggiungere contenuto qui.
+- `git-conflicts-resolution-summary.md`, `-2.md`, `-4.md`, `-27.md`, `-conflict*.md`, `-local-swarm-backup.md`, `.deprecated.md`
+- `bugfixes/git-conflicts-resolution.md` (+ `.bak`)
+- `archive/`, `archive/historical/`, `_archive/` (copie stesso topic)
+- placeholder thin: `git-conflict-resolution-1.md`, `-2.md`, `_archive/git-conflict-resolution.md`
+
+Ondata 2025-12-16 (da `.bak`; solo inventario path — dettaglio operativo già nel corpo):
+
+- Models: `ModelHasRole`, `Extra`, `ModelHasPermission`, `PermissionRole`, `DeviceProfile`, `ProfileTeam`
+- Migrations teams/permissions; `PassportHasApiTokensContract`; `ResetPassword` notification; `RegisterController`; `PasswordExpiredWidget`
+- Pattern: PHPDoc `@mixin IdeHelper*` + `ProfileContract|null $deleter`; Fix Forward; PHPStan L10 OK
+
+Residuo distinto (non stubbato): `git-conflict-resolution.md` — howto generale Git, topic diverso dal diario risoluzione User.
+
