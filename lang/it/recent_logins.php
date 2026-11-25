@@ -12,10 +12,9 @@ return [
     ],
     'fields' => [
         'authenticatable' => [
-            'name' => [
-                'label' => 'Utente autenticato',
-            ],
+'name' => [
             'label' => 'Utente autenticato',
+        ],
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -25,7 +24,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'Ora accesso',
         ],
         'ip_address' => [
             'label' => 'Indirizzo IP',
