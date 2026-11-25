@@ -6,7 +6,7 @@ screenshot: assets/auth-login.png
 qmd: "manuale utente user"
 ---
 
-> Screenshot reale della pagina di login, verificato il 23 novembre 2026.
+> Screenshot reale della pagina di login, verificato il 25 novembre 2026 (emoji titolo login rimossa).
 
 ![Screenshot reale](assets/auth-login.png)
 
