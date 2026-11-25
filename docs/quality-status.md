@@ -222,7 +222,6 @@ After fixes:
 ---
 module: theme
 topic: quality-status
-canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -234,12 +233,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
 
 
 ---
 
-<!-- Contenuto unito da quality-status-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da quality-status.md (rimozione date dai nomi file, issue #64) -->
 
 <!-- recovery from broken basename `quality-status-.md.md` after docs-guardian mass rename -->
 
@@ -743,3 +741,7 @@ After fixes:
 *PHPStan: IMPROVED (13 → ~5 errors)*
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
+
+## Contenuto fuso da `quality-status.md`
+
+# Modulo User: Stato Qualità

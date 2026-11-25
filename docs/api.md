@@ -65,3 +65,7 @@ Provides `teams()` and `currentTeam()` methods (requires HasRoles).
 
 ### HasTenants
 Provides `tenants()` and `currentTenant()` methods (requires HasRoles).
+
+## Contenuto fuso da `api.md`
+
+# User Module — API Reference

@@ -1,3 +1,9 @@
+---
+title: "User Module — Epics for Perfection"
+type: note
+qmd: "epics perfection epic master list documentation hygiene critical quality tooling restoration architecture code high test coverage"
+---
+
 # User Module — Epics for Perfection
 
 ---

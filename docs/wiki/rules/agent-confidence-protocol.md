@@ -15,6 +15,7 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 qmd: "agent confidence protocol user"
+title: "Agent Confidence Protocol — User Module"
 ---
 
 # Agent Confidence Protocol — User Module

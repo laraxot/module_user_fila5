@@ -6541,7 +6541,7 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## business_logic_analysis
 
-*Consolidated from: `business_logic_analysis.md`*
+*Consolidated from: `business-logic-analysis.md`*
 
 
 ## Overview

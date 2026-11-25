@@ -262,3 +262,13 @@ Il sistema di avatar può essere esteso in futuro per includere:
 - [Documentazione SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
 - [Architettura Modulare <nome progetto>](/docs/architettura-modulare.md)
+
+## Contenuto fuso da `avatar-implementation.md`
+
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags.md)
+
+Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di SaluteOra per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
+
+Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di SaluteOra.
+
+- [Architettura Modulare SaluteOra](/docs/architettura-modulare.md)

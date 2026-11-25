@@ -354,10 +354,8 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ---
 module: theme
 topic: volt_blade_implementation
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md
 ---
 
 ## volt-blade-implementation-error-3
@@ -476,10 +474,8 @@ Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTAT
 ---
 module: theme
 topic: volt_blade_implementation_error
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md
 ---
 
 ## volt-blade-implementation-error
@@ -488,7 +484,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-i
 
 module: theme
 topic: volt-blade-implementation-error
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -500,7 +495,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 
 ---
 
@@ -1313,7 +1307,7 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
-- [Routing Best Practices](../../routing_best_practices.md) 
+- [Routing Best Practices](../../routing-best-practices.md) 
 - [Routing Best Practices](../../routing-best-practices.md) 
 ---
 
@@ -1406,7 +1400,6 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 
 module: theme
 topic: volt-folio-logout-debug
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1418,7 +1411,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
 
 ---
 
@@ -1451,10 +1443,8 @@ related:
 ---
 module: theme
 topic: volt_folio_logout_error
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error-3.md
 ---
 
 ## volt-folio-logout-error
@@ -1463,7 +1453,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-l
 
 module: theme
 topic: volt-folio-logout-error
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1475,7 +1464,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 
 ---
 
@@ -2134,7 +2122,6 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 
 module: theme
 topic: volt-logout-action
-canonical: ../../../Themes/docs/shared-components/volt-logout-action.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2146,7 +2133,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-logout-action.md
 
 ---
 
@@ -2156,7 +2142,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-logout-
 
 module: theme
 topic: volt-logout
-canonical: ../../../Themes/docs/shared-components/volt-logout.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2168,7 +2153,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-logout.md
 
 ---
 
@@ -2178,7 +2162,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-logout.
 
 module: theme
 topic: volt-missing-directive
-canonical: ../../../Themes/docs/shared-components/volt-missing-directive.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2190,7 +2173,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-missing-directive.md
 
 ---
 
@@ -2833,7 +2815,7 @@ class LogoutPage
 ### Link Correlati
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
-- [Routing Best Practices](../../routing_best_practices.md) 
+- [Routing Best Practices](../../routing-best-practices.md) 
 
 ---
 
@@ -3634,7 +3616,6 @@ php artisan view:clear && php artisan route:clear
 
 module: theme
 topic: volts
-canonical: ../../../Themes/docs/shared-components/volt-errors.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -3646,7 +3627,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md
 
 ---
 

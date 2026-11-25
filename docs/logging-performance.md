@@ -1,21 +1,11 @@
 ---
 title: "Logging Performance Optimization"
-type: concept
-tags: [logging, performance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "logging-performance logging performance optimization"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+qmd: "logging performance optimization"
 ---
 
 # Logging Performance Optimization
@@ -95,3 +85,12 @@ Metrics::increment('tickets.created');
 - [ ] All logs are errors or warnings
 - [ ] Audit trails use database tables
 - [ ] Monitoring uses Telescope/Pulse
+
+
+---
+
+## Contenuto assorbito da `LOGGING_PERFORMANCE.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [logging_performance.md](./logging-performance.md).

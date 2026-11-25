@@ -12,6 +12,7 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 qmd: "header auth flow"
+title: "header auth flow"
 ---
 
 ## Rule Overview

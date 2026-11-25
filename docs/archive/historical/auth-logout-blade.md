@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Implementazione Corretta di logout.blade.php
@@ -24,15 +24,12 @@ related:
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout-page-fix.md)
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout-page-fix.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

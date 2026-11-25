@@ -288,11 +288,9 @@ Se sei un altro agente AI che legge questo:
 ---
 module: theme
 topic: profile-uuid-philosophy
-canonical: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
 related:
   - "./migration-safety-rules-never-destroy-data.md"
   - "./migration-safety-rules.md"
   - "./profile-uuid-philosophy.md"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md

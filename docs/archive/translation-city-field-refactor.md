@@ -1,3 +1,9 @@
+---
+title: "Refactor Completo Campi \"Città\" - Modulo User"
+type: note
+qmd: "refactor completo campi città riepilogo intervento file corretti lang registration php register_tenant struttura standard applicata terminologia"
+---
+
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

@@ -7,11 +7,11 @@ qmd: "logout blade conclusions conclusioni raccomandazioni logoutbladephp"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Logout Blade Analysis](./logout_blade_analysis.md)
-- [Convenzioni Path](./path_conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Logout Blade Analysis](./logout-blade-analysis.md)
+- [Convenzioni Path](./path-conventions.md)
 
 ## Sintesi dell'Analisi
 
@@ -96,7 +96,6 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 ---
 module: theme
 topic: logout-blade-conclusions
-canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -108,4 +107,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md

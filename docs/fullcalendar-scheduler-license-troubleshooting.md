@@ -863,3 +863,13 @@ La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare
 3. **Workaround disponibili** per bug noti nelle versioni 5.x-6.x
 4. **Configurazione ambiente-specifica** per sviluppo vs produzione
 5. **Monitoring e logging** per troubleshooting proattivo
+
+## Contenuto fuso da `fullcalendar-scheduler-license-troubleshooting.md`
+
+namespace Modules\SaluteOra\app\Providers\Filament;
+
+            // Configurazioni specifiche per SaluteOra
+
+## Best Practices per SaluteOra
+
+La gestione delle licenze FullCalendar Scheduler richiede attenzione particolare, specialmente in ambienti di produzione sanitari come SaluteOra. Seguire questa guida garantisce una configurazione corretta e la risoluzione dei problemi più comuni.

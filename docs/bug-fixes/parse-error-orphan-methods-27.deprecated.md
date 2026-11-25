@@ -8,10 +8,10 @@ qmd: "parse-error-orphan-methods-2025-01-27.deprecated deprecated"
 status: deprecated
 related:
   - "./make-filament-user-crash-loop.md"
-  - "./parse-error-orphan-methods-.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods.md"
-  - "./parse-error-orphan-methods-2.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"

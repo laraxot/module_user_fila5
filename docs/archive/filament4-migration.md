@@ -1,3 +1,9 @@
+---
+title: "🔄 Migrazione da Filament 3 a Filament 4"
+type: note
+qmd: "migrazione filament panoramica problemi risolti logo duplicato pagina login input visibili modifiche implementate view personalizzata components"
+---
+
 # 🔄 Migrazione da Filament 3 a Filament 4
 
 ## Panoramica

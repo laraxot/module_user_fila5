@@ -104,13 +104,12 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Best Practices Folio](./routing-best-practices.md)
+- [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 ---
 module: theme
 topic: logout-page-implementation
-canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -122,4 +121,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation.md

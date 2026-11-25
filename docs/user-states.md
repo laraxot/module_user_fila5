@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "user states configurazione stati utente state"
+title: "Configurazione Stati Utente (state)"
 ---
 # Configurazione Stati Utente (state)
 

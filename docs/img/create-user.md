@@ -3,7 +3,6 @@ title: "create_user"
 type: source
 module: User
 topic: create_user
-canonical: ../../../../Themes/docs/shared-components/create-user.jpg
 created: 2026-07-22
 updated: 2026-07-22
 qmd: "create user createuser"

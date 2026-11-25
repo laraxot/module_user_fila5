@@ -36,7 +36,7 @@ superseded_by: bmad-session.md
 ## Verify
 - `Profile::firstOrCreate()` → `id` UUID generato (len=36) ✅
 - PHPStan: `class.notFound` ridotti (test `User` importato)
-- DOC: `Modules/User/docs/BMAD-SECOND-BRAIN.md` creato
+- DOC: `Modules/User/docs/bmad-second-brain.md` creato
 
 ## Learn
 - Non estendere `Filament` diretto → `XotBase` / `LangBase`
@@ -48,3 +48,12 @@ superseded_by: bmad-session.md
 - `mysql -e "CREATE DATABASE IF NOT EXISTS restaurant_data;"`
 - `php artisan migrate --force`
 - `php artisan make:filament-user` (interattivo)
+
+## Contenuto fuso da `bmad-session.md`
+
+# BMAD + Second Brain — Session Summary (2026-09-04)
+
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+
+## Fix (SSoT — mai concrete in public type-hints)
+- `Quaeris` → `User` sostituito nel codice

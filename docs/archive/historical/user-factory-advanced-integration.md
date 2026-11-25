@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
@@ -308,7 +308,6 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -603,7 +602,6 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)

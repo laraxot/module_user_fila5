@@ -123,3 +123,18 @@ context-mode ctx-stats
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*
+
+## Contenuto fuso da `performance-optimization.md`
+
+# Performance Optimization — Module **User**
+
++ 0 rules embeddate — tutte on-demand
+
+# ❌ Troppo generico — risultati enormi
+
+# ✅ Specifico — risultati precisi
+
+1. **Auto-index rebuild** — Dopo 500 file changes, `qmd index rebuild`
+2. **Hooks pre-task** — Auto-memory sync
+3. **Context-mode batch** — Convertire script in batch exec
+4. **Permissions allowlist** — .claude/settings.json

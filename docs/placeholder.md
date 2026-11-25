@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: placeholder
-canonical: ../../../Themes/docs/shared-components/placeholder.txt
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -12,7 +11,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "placeholder"
+title: "placeholder"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
 https://jsonplaceholder.typicode.com/users

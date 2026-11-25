@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # PHPStan Level 10 - Progresso Finale
@@ -66,9 +66,8 @@ Da identificare e correggere sistematicamente.
 
 ## 📚 Riferimenti
 
-- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [PHPStan Furious Debate](./phpstan-furious-debate-2025.md)
-- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
+- [Filament 4 Actions Namespace](../../filament-4-actions-namespace.md)
 - [OAuth Resources Corrections](./phpstan-corrections-oauth-resources.md)
 
 ---

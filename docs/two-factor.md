@@ -1,17 +1,20 @@
 ---
-module: theme
-topic: two-factor
-canonical: ../../../Themes/docs/shared-components/two-factor-2.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+title: "two factor"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
 qmd: "two factor"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
+https://engineering.teknasyon.com/two-factor-authentication-in-laravel-applications-dbee2c8eab98
+
+
+## Appendice — contenuto migrato
+
+---
+module: theme
+topic: two_factor
+---
+

@@ -732,3 +732,55 @@ public function test_bulk_sti_creation()
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
+
+## Contenuto fuso da `user-factory-integration.md`
+
+# UserFactory Integration - Modulo User e SaluteOra
+
+Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteOra e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
+
+├── User (Modules\SaluteOra\Models\User) - Base for STI
+    ├── Patient (Modules\SaluteOra\Models\Patient) - uses HasParent
+    ├── Doctor (Modules\SaluteOra\Models\Doctor) - uses HasParent
+    └── Admin (Modules\SaluteOra\Models\Admin) - uses HasParent
+
+// User (Modulo SaluteOra)
+protected $connection = 'salute_ora'; // Override for healthcare domain
+
+### Modulo SaluteOra (User)
+
+// In SaluteOra\Models\User
+
+La `UserFactory` è implementata **nel modulo SaluteOra** perché:
+
+2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo SaluteOra
+4. **Connection Override**: Usa database 'salute_ora'
+
+// Factory nel modulo SaluteOra
+namespace Modules\SaluteOra\Database\Factories;
+
+    protected $model = \Modules\SaluteOra\Models\User::class;
+
+            // Campi User SaluteOra (specifici dominio)
+
+| BaseUser (User Module) | SaluteOra User | Usage |
+
+// SaluteOra User - Domain-specific casts
+
+- **SaluteOra User**: Campi specifici del dominio sanitario
+
+- **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
+
+- Modulo SaluteOra: Specifics per dominio sanitario
+
+- Test specifici sanitari nel modulo SaluteOra
+
+- Healthcare-specific changes isolati nel modulo SaluteOra
+
+### SaluteOra Module
+- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
+- [Model Architecture](../SaluteOra/docs/model-architecture.md)
+- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
+
+- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
+- [Traits Complete Guide](traits-complete-guide.md)

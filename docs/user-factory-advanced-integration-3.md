@@ -25,7 +25,6 @@ related:
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
@@ -33,7 +32,5 @@ related:
 ---
 module: theme
 topic: user_factory_advanced_integration
-canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md

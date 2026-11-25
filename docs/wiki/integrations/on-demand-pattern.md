@@ -88,3 +88,9 @@ qmd search "<topic>"
 
 ---
 *Ultimo aggiornamento: 2026-05-11 | Pattern: on-demand via QMD*
+
+## Contenuto fuso da `on-demand-pattern.md`
+
+├── skills/index.md     # Indice skills modulo-specifiche
+    ├── commands/index.md   # Indici commands
+    └── memories/index.md   # Indice memories

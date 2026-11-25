@@ -136,3 +136,15 @@ git commit -m "docs: add wiki structure for User"
 
 ---
 *Pattern: On-Demand | Source: docs/wiki/*
+
+## Contenuto fuso da `project-structure.md`
+
+# Project Structure — Module **User**
+
+├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── qmd-setup.md                  # Configurazione QMD
+├── performance-optimization.md    # Metriche e best practice
+├── wiki/integrations/architecture.md               # (opzionale) Architettura modulo
+├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |

@@ -1,3 +1,9 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo User"
+type: note
+qmd: "correzioni phpstan livello errori identificati effettuate uso tipo mixed checkotpexpiredrule php problemi tipizzazione modelcontract miglioramenti passworddata"
+---
+
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

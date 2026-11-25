@@ -57,7 +57,6 @@ Consolidated from **34** individual files.
 
 module: theme
 topic: passport-admin-actions
-canonical: ../../../Themes/docs/shared-components/passport-admin-actions.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -69,7 +68,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-admin-actions.md
 
 ---
 
@@ -79,7 +77,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-adm
 
 module: theme
 topic: passport-cluster-completion-status
-canonical: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -91,7 +88,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
 
 ---
 
@@ -325,7 +321,6 @@ Alcune risorse non hanno tutte le pages standard:
 
 module: theme
 topic: passport-cluster-current-status
-canonical: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -337,7 +332,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
 
 ---
 
@@ -475,7 +469,6 @@ Modules/User/app/Filament/Clusters/Passport/
 
 module: theme
 topic: passport-cluster-implementation-completed
-canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -487,7 +480,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 
 ---
 
@@ -722,7 +714,6 @@ class ListOauthClients extends XotBaseListRecords
 
 module: theme
 topic: passport-cluster-implementation-status
-canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -734,7 +725,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
 
 ---
 
@@ -1219,7 +1209,6 @@ La Voce della Ragione ha vinto perché ha presentato argomenti concreti basati s
 
 module: theme
 topic: passport-cluster-innerebate
-canonical: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1231,7 +1220,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-inner-debate.md
 
 ---
 
@@ -1241,7 +1229,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-clu
 
 module: theme
 topic: passport-cluster-litigation
-canonical: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1253,7 +1240,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
 
 ---
 
@@ -1263,7 +1249,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-clu
 
 module: theme
 topic: passport-cluster-namespace-fix
-canonical: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1275,7 +1260,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
 
 ---
 
@@ -1549,7 +1533,6 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*.php" -type f
 
 module: theme
 topic: passport-cluster-philosophy
-canonical: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1561,7 +1544,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-philosophy.md
 
 ---
 
@@ -1571,7 +1553,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-clu
 
 module: theme
 topic: passport-cluster-proposal
-canonical: ../../../Themes/docs/shared-components/passport-cluster-proposal.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1583,7 +1564,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-proposal.md
 
 ---
 
@@ -2444,7 +2424,6 @@ Tutte le risorse OAuth saranno configurate per utilizzare il cluster Passport tr
 
 module: theme
 topic: passport-complete-implementation
-canonical: ../../../Themes/docs/shared-components/passport-complete-implementation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2456,7 +2435,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-implementation.md
 
 ---
 
@@ -2466,7 +2444,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-com
 
 module: theme
 topic: passport-complete-management-debate
-canonical: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2478,7 +2455,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
 
 ---
 
@@ -3730,7 +3706,6 @@ find Modules/User/app/Filament/Resources -name "SocialProviderResource.php"
 
 module: theme
 topic: passport
-canonical: ../../../Themes/docs/shared-components/passport-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -3742,7 +3717,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
 
 ---
 

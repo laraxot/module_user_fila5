@@ -78,7 +78,6 @@ gantt
 ---
 module: theme
 topic: metrics-dashboard
-canonical: ../../../Themes/docs/shared-components/metrics-dashboard.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -90,4 +89,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard.md

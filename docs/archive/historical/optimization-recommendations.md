@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Raccomandazioni di Ottimizzazione - Modulo User
@@ -98,11 +98,11 @@ User/project_docs/
 │   ├── passport.md
 │   ├── socialite.md
 │   ├── two-factor.md
-│   └── custom-login.md
+│   └── ../../custom-login.md
 ├── authorization/
 │   ├── README.md
 │   ├── roles-permissions.md
-│   ├── policies.md
+│   ├── ../../policies.md
 │   ├── teams.md
 │   └── spatie-integration.md
 ├── models/
@@ -375,11 +375,11 @@ User/docs/
 │   ├── passport.md
 │   ├── socialite.md
 │   ├── two-factor-3.md
-│   └── custom-login.md
+│   └── ../../custom-login.md
 ├── authorization/
 │   ├── README.md
 │   ├── roles-permissions.md
-│   ├── policies.md
+│   ├── ../../policies.md
 │   ├── teams.md
 │   └── spatie-integration.md
 ├── models/

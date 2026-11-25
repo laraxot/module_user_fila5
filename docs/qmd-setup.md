@@ -73,3 +73,9 @@ qmd search "form" -c user  # Solo questo modulo
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
+
+## Contenuto fuso da `qmd-setup.md`
+
+- **Fuori dal repo**: ✅ OK — non committata
+
+3. **Evita query troppo generiche** — più specifico = risultati migliori

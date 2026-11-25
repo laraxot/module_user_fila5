@@ -944,3 +944,15 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Documentazione ufficiale Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+
+## Contenuto fuso da `auth-pages-implementation.md`
+
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Volt Logout Action](./volt-logout-action.md)
+
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+
+    use Modules\Xot\Contracts\UserContract;

@@ -128,3 +128,7 @@ if ($user->hasPermissionTo('edit-post')) { ... }
 // ✅ GOOD: With tenant isolation
 Gate::authorize('edit', [$targetUser, $currentTenant]);
 ```
+
+## Contenuto fuso da `patterns.md`
+
+# User Module — Patterns & Best Practices

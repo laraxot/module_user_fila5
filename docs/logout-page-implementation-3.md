@@ -24,7 +24,5 @@ related:
 ---
 module: theme
 topic: logout_page_implementation
-canonical: ../../../Themes/docs/shared-components/logout-page-implementation-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation-3.md

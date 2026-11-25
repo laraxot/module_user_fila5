@@ -410,3 +410,7 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Livewire](https://livewire.laravel.com/)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+
+## Contenuto fuso da `auth-components-best-practices.md`
+
+3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione

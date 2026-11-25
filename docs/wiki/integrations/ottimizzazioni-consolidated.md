@@ -31,7 +31,6 @@ Consolidated from **8** individual files.
 
 module: theme
 topic: ottimizzazioni-approfondite-modulo-user
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -43,7 +42,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 
 ---
 
@@ -53,7 +51,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 module: theme
 topic: ottimizzazioni-correzioni
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -65,7 +62,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
 
 ---
 
@@ -75,7 +71,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 module: theme
 topic: ottimizzazioni-dry-kiss
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -87,7 +82,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
 
 ---
 
@@ -97,7 +91,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 module: theme
 topic: ottimizzazioni-modulo-user
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -109,7 +102,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 
 ---
 
@@ -507,7 +499,6 @@ class User extends Model
 
 module: theme
 topic: ottimizzazioni-superry-kiss
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -519,7 +510,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
 
 ---
 
@@ -529,7 +519,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 module: theme
 topic: ottimizzazioni-user
-canonical: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -541,7 +530,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 
 ---
 

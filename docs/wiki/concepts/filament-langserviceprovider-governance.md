@@ -9,11 +9,11 @@ related:
   - "./baseuser-hierarchy.md"
   - "./code-redundancy-user.md"
   - "./context-mode-user-discipline.md"
-  - "./context-overflow-prevention.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
 qmd: "filament langserviceprovider governance"
+title: "filament langserviceprovider governance"
 ---
 
 # filament langserviceprovider governance

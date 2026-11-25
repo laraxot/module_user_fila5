@@ -1,3 +1,9 @@
+---
+title: "Changelog"
+type: note
+qmd: "changelog unreleased fixed added changed static teamsrelationmanager loginwidget _archive"
+---
+
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

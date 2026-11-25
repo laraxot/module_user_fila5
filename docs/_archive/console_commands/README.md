@@ -1,3 +1,9 @@
+---
+title: "Comandi Console - Modulo User"
+type: note
+qmd: "comandi console panoramica disponibili changepasswordcommand interattivo email specificata assignmodulecommand assignrolecommand is_otp updated_by admin performance model_has_roles command"
+---
+
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -205,7 +211,7 @@ Modules/User/
 ```
 
 ## Collegamenti
-- [Console Commands Philosophy](console-commands-philosophy.md)
+- [Console Commands Philosophy](../commands/console-commands-philosophy.md)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

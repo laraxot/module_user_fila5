@@ -130,3 +130,10 @@ protected function getConfirmationRoute(): string
 
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../Activity/docs/filament-resource-guidelines-3.md)
+
+## Contenuto fuso da `registration-widget.md`
+
+Il file `RegistrationWidget.php` si trova in `/var/www/html/saluteora/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

@@ -1,3 +1,9 @@
+---
+title: "Glossario di dominio User"
+type: note
+qmd: "glossario dominio usercontract baseuser spid email_verified_at deleted_at"
+---
+
 # Glossario di dominio User
 
 <!-- Le parole del dominio e dove stanno nel codice. Topology di AGENTS.md punta qui.

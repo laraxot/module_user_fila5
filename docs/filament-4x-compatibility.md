@@ -230,3 +230,20 @@ if (is_object($notifiable)) {
 
 *Ultimo aggiornamento: 2025-01-27*
 *Completato con successo - Filament 4.0.20 operativo*
+
+## Contenuto fuso da `filament-4x-compatibility.md`
+
+# Filament Resources - User
+
+## Risorse Disponibili
+
+### ListResources
+
+### Create/Edit Pages
+
+## Widget
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+- [Xot Filament](../../Xot/docs/filament/)

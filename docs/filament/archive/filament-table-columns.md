@@ -1,3 +1,9 @@
+---
+title: "Convenzione Metodo getTableColumns per Filament Table"
+type: note
+qmd: "convenzione metodo gettablecolumns filament table motivazione modifica esempio refactoring applicazione collegamenti getlisttablecolumns archive"
+---
+
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -32,6 +38,10 @@ public function getTableColumns(): array
 
 ## Collegamenti
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
+- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+
+---
+
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ---

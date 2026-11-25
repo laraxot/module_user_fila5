@@ -3,6 +3,7 @@ module: User
 concept: Architecture
 last_updated: 2026-04-15
 qmd: "architecture user"
+title: "User Module Architecture"
 ---
 
 # User Module Architecture

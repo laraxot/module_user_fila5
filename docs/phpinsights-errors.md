@@ -378,6 +378,12 @@ Traits ......................................................... 2.9 %
 
  [ERROR] The architecture score is too low                                                              
 
- [ERROR] The style score is too low                                                                     
+ [ERROR] The style score is too low
 
+## Contenuto fuso da `phpinsights-errors.md`
 
+# Phpinsights errors
+
+---
+module: theme
+topic: phpinsights_errors

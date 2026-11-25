@@ -108,7 +108,5 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 ---
 module: theme
 topic: logout_blade_conclusions
-canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions-2.md

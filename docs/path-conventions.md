@@ -1,17 +1,24 @@
 ---
-module: theme
-topic: path-conventions
-canonical: ../../../Themes/docs/shared-components/path-conventions.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
-qmd: "path conventions"
+title: "path_conventions - User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+qmd: "path conventions pathconventions user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/path-conventions.md
+# path_conventions - User
+
+## Overview
+
+Documentazione per path_conventions nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+

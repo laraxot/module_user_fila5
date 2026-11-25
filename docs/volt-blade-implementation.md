@@ -598,5 +598,15 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Gestione Sessione](./session-management.md)
 - [Tema One Documentation](../../themes/one/docs/README.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./session_management.md)
-- [Tema One Documentation](../../Themes/One/docs/README.md) 
+- [Gestione Sessione](./session-management.md)
+- [Tema One Documentation](../../Themes/One/docs/README.md)
+
+## Contenuto fuso da `volt-blade-implementation.md`
+
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
+
+/var/www/html/saluteora/laravel/
+
+use Modules\Xot\Contracts\UserContract;

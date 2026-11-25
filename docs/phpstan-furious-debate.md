@@ -190,3 +190,7 @@ Ogni modulo corretto è un traguardo.
 *"La type safety non è un optional - è un REQUISITO. Ogni errore PHPStan è un bug potenziale. Correggiamoli tutti, uno alla volta, con pazienza e determinazione."*
 
 **Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
+
+## Contenuto fuso da `phpstan-furious-debate.md`
+
+- [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)

@@ -166,3 +166,7 @@ tests/Feature/Filament/Widgets/
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)
+
+## Contenuto fuso da `auth-widget-rules.md`
+
+- [Widget Structure](widgets-structure.md)

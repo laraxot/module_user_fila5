@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: phpstan-report-initial
-canonical: ../../../Themes/docs/shared-components/phpstan_report.txt
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -12,8 +11,8 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "phpstan report initial"
+title: "phpstan report initial"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
 
  [OK] No errors        

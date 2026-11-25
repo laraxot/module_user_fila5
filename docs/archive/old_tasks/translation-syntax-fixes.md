@@ -1,3 +1,9 @@
+---
+title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
+type: note
+qmd: "correzioni errori sintassi nei file traduzione data problema identificato risolti resource php italiano registration inglese standard"
+---
+
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

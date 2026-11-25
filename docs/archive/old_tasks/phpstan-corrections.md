@@ -1,3 +1,9 @@
+---
+title: "Correzioni PHPStan - Modulo User"
+type: note
+qmd: "correzioni phpstan panoramica file corretti changetypecommand php devicedata actions changepasswordaction changepasswordheaderaction changeprofilepasswordaction myprofilepage registertenant old_tasks"
+---
+
 # Correzioni PHPStan - Modulo User
 
 ## Panoramica

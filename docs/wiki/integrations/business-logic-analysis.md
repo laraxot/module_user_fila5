@@ -483,3 +483,11 @@ class ApiRateLimitingMiddleware
 - User satisfaction scores
 - Security incident reduction
 - Team collaboration effectiveness
+
+## Contenuto fuso da `business-logic-analysis.md`
+
+public function getFormSchema(): array
+
+## Contenuto fuso da `business-logic-analysis.md`
+
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the healthcare_app platform. It serves as the foundation for all user-related operations across the entire application.

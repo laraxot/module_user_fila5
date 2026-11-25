@@ -4,6 +4,7 @@ description: How push to laraxot/dev was blocked by 33 SVG files turned into orp
 metadata:
   type: troubleshooting
 qmd: "git lfs orphan pointer svg fix"
+title: "Git LFS Orphan Pointer SVG Fix"
 ---
 
 # Git LFS Orphan Pointer SVG Fix

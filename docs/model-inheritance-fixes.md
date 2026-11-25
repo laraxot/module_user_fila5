@@ -192,8 +192,8 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -387,7 +387,7 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -581,8 +581,22 @@ cd Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+
+## Contenuto fuso da `model-inheritance-fixes.md`
+
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+
+## Contenuto fuso da `model-inheritance-fixes.md`
+
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+
+## Contenuto assorbito da `model-inheritance-fixes.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_fixes.md](./model-inheritance-fixes.md).

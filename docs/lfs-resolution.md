@@ -92,9 +92,33 @@ ls docs/img/      # ✅ Images preserved locally, untracked
 
 ---
 
-<!-- Contenuto unito da lfs-resolution-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da lfs-resolution.md (rimozione date dai nomi file, issue #64) -->
 
-<!-- recovery from broken basename `lfs-resolution-.md` after docs-guardian mass rename -->
+<!-- recovery from broken basename `lfs-resolution.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+## Contenuto fuso da `lfs-resolution.md`
+
+Vedi [LFS-RESOLUTION.md](./lfs-resolution.md).
+
+## Contenuto fuso da `lfs-resolution.md`
+
+title: "lfs-resolution.md"
+status: superseded
+source_of_truth: false
+qmd: "superseded stub bad rename recovery lfs-resolution.md"
+superseded_by: related dated original under docs/
+updated: 2026-11-17
+
+<!-- recovery from broken basename `lfs-resolution.md` after docs-guardian mass rename -->
+
+<!-- Contenuto unito da lfs-resolution.md (rimozione date dai nomi file, issue #64) -->
+
+## Contenuto fuso da `lfs-resolution.md`
+
+# LFS Corruption Resolution
+
+Documento identico al canonico: [lfs-resolution-corruption.md](lfs-resolution-corruption.md).
+
+Canonico: `laravel/Modules/User/docs/lfs-resolution-corruption.md`. Qui non ci sono istruzioni: seguire il file collegato.

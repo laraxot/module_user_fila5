@@ -1,3 +1,9 @@
+---
+title: "🗺️ ROADMAP COMPLETA - Modulo User"
+type: note
+qmd: "roadmap completa business logic scopo principale responsabilità funzionalità implementate core authentication authorization system models legacy"
+---
+
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic

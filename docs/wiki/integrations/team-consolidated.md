@@ -61,10 +61,8 @@ related:
 ---
 module: theme
 topic: team_bindings_fix
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
 ---
 
 ## team-bindings-fix
@@ -73,7 +71,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/team-binding
 
 module: theme
 topic: team-bindings-fix
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -85,7 +82,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
 
 ---
 
@@ -422,7 +418,6 @@ $this->assertTrue($user->belongsToTeam($team));
 
 module: theme
 topic: team-contract-usage-reasoning
-canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -434,7 +429,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
 
 ---
 
@@ -444,7 +438,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/team-contrac
 
 module: theme
 topic: team-user-composite-primary-key-fix
-canonical: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -456,7 +449,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
 
 ---
 
@@ -754,7 +746,6 @@ $membership = Membership::where('team_id', $team->id)
 
 module: theme
 topic: team-user-permissions-fix
-canonical: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -766,7 +757,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
 
 ---
 

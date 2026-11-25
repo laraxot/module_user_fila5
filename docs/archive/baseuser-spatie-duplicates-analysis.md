@@ -1,3 +1,9 @@
+---
+title: "Analisi Metodi Duplicati in BaseUser.php"
+type: note
+qmd: "analisi metodi duplicati baseuser php data problema forniti dai trait spatie hasroles haspermissions hasrole linee loadmissing"
+---
+
 # Analisi Metodi Duplicati in BaseUser.php
 
 ## Data Analisi

@@ -472,3 +472,7 @@ This document outlines a comprehensive strategy for implementing a generic moder
 
 ## Conclusion
 By implementing a generic, configuration-driven moderation system within the `User` module, we achieve a reusable, maintainable, and scalable solution that aligns with the unified registration approach. This strategy ensures the module remains agnostic to specific user types, making it suitable for diverse projects while allowing individual applications to define their moderation requirements through configuration.
+
+## Contenuto fuso da `generic-user-moderation-strategy.md`
+
+- **Example for SaluteOra**: In the context of the SaluteOra project, a user type of 'dentist' can be configured with specific moderation requirements (like license verification) in the project's configuration, without altering the `User` module's generic approach. Similarly, other user types can have their own rules.

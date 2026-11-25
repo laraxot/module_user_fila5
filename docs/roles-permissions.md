@@ -37,7 +37,6 @@ Vedi anche: ../../Xot/docs/roles-permissions.md
 ---
 module: theme
 topic: roles-permissions
-canonical: ../../../Themes/docs/shared-components/roles-permissions.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -49,4 +48,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/roles-permissions.md

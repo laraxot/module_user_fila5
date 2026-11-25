@@ -31,7 +31,5 @@ related:
 ---
 module: theme
 topic: userfactory_advanced_implementation_complete
-canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete-2.md

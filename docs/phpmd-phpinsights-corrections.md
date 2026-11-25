@@ -119,5 +119,20 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 ## Collegamenti
 
 - [Resources Corrections Summary](./resources-corrections-summary-[date].md)
-- [Quality Tools Report](./quality-tools-report.md)
-- [PHPStan Complete Success](./phpstan-complete-success.md)
+
+## Contenuto fuso da `phpmd-phpinsights-corrections.md`
+
+# PHPMD e PHP Insights Corrections - 2025-01-22
+
+- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
+---
+module: theme
+topic: phpmd-phpinsights-corrections-
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"

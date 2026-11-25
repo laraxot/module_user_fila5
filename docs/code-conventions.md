@@ -1,19 +1,15 @@
 ---
-title: "Code Conventions"
-type: concept
-tags: [code, conventions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code-conventions code conventions"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+title: "code conventions"
+type: note
+tags: [documentation]
+created: 2026-11-24
+updated: 2026-11-24
+qmd: "code_conventions placeholder file vuoto"
+issues: []
+discussions: []
+status: placeholder
 ---
+
+# code conventions
+
+Placeholder vuoto: nessun contenuto disponibile. File preservato per compatibilita' dei link storici; se il documento serve, ripopolare o consolidare nel canonico di competenza.

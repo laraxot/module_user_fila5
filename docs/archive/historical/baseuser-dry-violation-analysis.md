@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # BaseUser - Analisi Violazione Principio DRY
@@ -444,8 +444,7 @@ test('hasRole works with guard parameter', function () {
 
 ### Documentazione Locale
 - [BaseUser Model](./models/baseuser.md)
-- [Roles & Permissions](./roles-permissions.md)
-- [DRY Kiss Analysis](./dry-kiss-analysis.md)
+- [DRY Kiss Analysis](../../_archive/dry-kiss-analysis.md)
 
 ### Documentazione Spatie
 - [Laravel Permission - HasRoles](https://spatie.be/docs/laravel-permission/v6/basic-usage/role-permissions)

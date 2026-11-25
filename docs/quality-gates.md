@@ -233,9 +233,33 @@ dealerdirect/phpcodesniffer-composer-installer is blocked by allow-plugins confi
 
 ---
 
-<!-- Contenuto unito da quality-gates-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da quality-gates.md (rimozione date dai nomi file, issue #64) -->
 
-<!-- recovery from broken basename `quality-gates-.md` after docs-guardian mass rename -->
+<!-- recovery from broken basename `quality-gates.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
+## Contenuto fuso da `quality-gates.md`
+
+Vedi [QUALITY-GATES.md](./quality-gates.md).
+
+## Contenuto fuso da `quality-gates.md`
+
+title: "quality-gates.md"
+status: superseded
+source_of_truth: false
+qmd: "superseded stub bad rename recovery quality-gates.md"
+superseded_by: related dated original under docs/
+updated: 2026-11-17
+
+<!-- recovery from broken basename `quality-gates.md` after docs-guardian mass rename -->
+
+<!-- Contenuto unito da quality-gates.md (rimozione date dai nomi file, issue #64) -->
+
+## Contenuto fuso da `quality-gates.md`
+
+# Quality Gates Analysis: User Module
+
+Documento identico al canonico: [quality-gates-analysis-user-module.md](quality-gates-analysis-user-module.md).
+
+Canonico: `laravel/Modules/User/docs/quality-gates-analysis-user-module.md`. Qui non ci sono istruzioni: seguire il file collegato.

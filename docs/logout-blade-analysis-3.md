@@ -460,7 +460,5 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ---
 module: theme
 topic: logout_blade_analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md

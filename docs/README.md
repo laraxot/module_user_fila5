@@ -4,13 +4,14 @@ type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-11-19
+qmd: "documentazione completa indice overview funzionalità principali autenticazione autorizzazione modelli trait disponibili created updated hasteams hasroles hastenants"
 ---
 
 # Modulo User - Documentazione Completa
 
 ## Indice della documentazione
 
-Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `INDEX.md`,
+Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `index.md`,
 `00-index.md` generati automaticamente sono stati rimossi: elencavano file duplicati o non piu' esistenti).
 
 | Area | Dove |

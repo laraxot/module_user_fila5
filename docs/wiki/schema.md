@@ -34,3 +34,7 @@ docs/
 - Frontmatter: title, description, tags, created
 - Cross-ref: `[Link](../concepts/name.md)`
 - NON modificare mai `docs/raw/`
+
+## Contenuto fuso da `schema.md`
+
+│   ├── schema.md          # Questo file

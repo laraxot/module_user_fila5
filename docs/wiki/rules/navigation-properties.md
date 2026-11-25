@@ -12,6 +12,7 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 qmd: "navigation properties"
+title: "navigation properties"
 ---
 
 ## Rule Overview

@@ -478,3 +478,9 @@ mount(function() {
     @endvolt
 </x-filament::layouts.card>
 ```
+
+## Contenuto fuso da `auth-logout-implementation.md`
+
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:

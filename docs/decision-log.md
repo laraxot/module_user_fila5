@@ -1,7 +1,8 @@
 ---
 type: decision-log
 title: "Decision Log — User"
-links: {github_issue: #XXX, discussion: #XXX}
+links: '{github_issue: #XXX, discussion: #XXX}'
+qmd: "decision log decisions eliminata migrazione 2026_10_05_174817_create_permission_tables php riallineamento dell intero all ultimo commit buono 45c62e86c ripristino"
 ---
 # Decision Log — User
 

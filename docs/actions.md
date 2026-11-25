@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "actions linee guida luso spatie queueable"
+title: "Linee guida per l'uso di Spatie Queueable Action"
 ---
 # Linee guida per l'uso di Spatie Queueable Action
 

@@ -28,7 +28,6 @@ Consolidated from **5** individual files.
 
 module: theme
 topic: resources-array-keys-philosophy
-canonical: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -40,7 +39,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
 
 ---
 
@@ -268,7 +266,6 @@ public static function getTableColumns(): array
 
 module: theme
 topic: resources-corrections-summary-
-canonical: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -280,7 +277,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
 
 ---
 

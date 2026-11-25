@@ -369,3 +369,7 @@ selectConstraint: 'businessHours',
 eventConstraint: 'businessHours',
 slotDuration: '00:30:00', // 30 min slots
 ```
+
+## Contenuto fuso da `fullcalendar-scheduler-quick-reference.md`
+
+## 🚀 SaluteOra Specifico

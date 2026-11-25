@@ -464,8 +464,6 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+## Contenuto fuso da `console-commands-philosophy.md`
 
-
-
-
-
+- [README Comandi Console](readme.md)

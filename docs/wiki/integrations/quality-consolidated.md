@@ -33,7 +33,6 @@ Consolidated from **10** individual files.
 
 module: theme
 topic: quality-11
-canonical: ../../../Themes/docs/shared-components/quality-1.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -45,7 +44,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-1.md
 
 ---
 
@@ -55,7 +53,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-1.md
 
 module: theme
 topic: quality-improvements-summary
-canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -67,7 +64,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 
 ---
 
@@ -521,7 +517,6 @@ After fixes:
 
 module: theme
 topic: quality-status-nov
-canonical: ../../../Themes/docs/shared-components/quality-status-11.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -533,7 +528,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-status-11.md
 
 ---
 
@@ -543,7 +537,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-stat
 
 module: theme
 topic: quality-status
-canonical: ../../../Themes/docs/shared-components/quality-status.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -555,7 +548,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
 
 ---
 
@@ -565,7 +557,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-stat
 
 module: theme
 topic: quality-tooling
-canonical: ../../../Themes/docs/shared-components/quality-tooling.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -577,7 +568,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
 
 ---
 

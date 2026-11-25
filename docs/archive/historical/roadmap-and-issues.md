@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # User Module - Roadmap, Issues & Optimization
@@ -390,7 +390,7 @@ php artisan queue:prune-failed --hours=48
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
+- [← PHPStan Fixes 2025-10-01](../../_archive/phpstan-fixes.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 

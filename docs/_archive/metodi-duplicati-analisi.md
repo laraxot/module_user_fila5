@@ -1,3 +1,9 @@
+---
+title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
+type: note
+qmd: "analisi metodi duplicati super mucca edition executive summary dati chiave verificati quantitativa reale basemodel confronto statistiche"
+---
+
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  
@@ -536,3 +542,699 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+
+## Contenuto fuso da `metodi-duplicati-analisi.md`
+
+# Metodi Duplicati — Analisi User
+
+Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **User**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
+
+## Metodo: `via` (14 occorrenze)
+
+**Moduli coinvolti:** Job, Notify, Progressioni, Ptv, User
+
+**File in User:**
+
+- `./laravel/Modules/User/app/Notifications/Auth/Otp.php`
+
+[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `getUser` (14 occorrenze)
+
+**Moduli coinvolti:** Notify, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Pages/MyProfilePage.php`
+
+[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
+
+## Metodo: `getFormActions` (14 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, Media, Pdnd, Ptv, Sigma, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Pages/Auth/PasswordExpired.php`
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/LogoutWidget.php`
+- `./laravel/Modules/User/app/Filament/Widgets/LogoutWidget.php`
+- `./laravel/Modules/User/app/Filament/Widgets/PasswordExpiredWidget.php`
+
+## Metodo: `before` (14 occorrenze)
+
+**Moduli coinvolti:** Activity, Gdpr, Job, Lang, Media, Performance, Progressioni, Setting, Sigma, Tenant, UI, User, Xot
+
+- `./laravel/Modules/User/app/Models/Policies/UserPermissionBasePolicy.php`
+
+[Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `__invoke` (14 occorrenze)
+
+**Moduli coinvolti:** Media, User
+
+- `./laravel/Modules/User/app/Http/Controllers/Api/GetLoggedUserController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Api/LoginController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Api/LogoutController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Api/RegisterController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Auth/EmailVerificationController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Auth/LogoutController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Auth/VerifyEmailController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Socialite/ProcessCallbackController.php`
+- `./laravel/Modules/User/app/Http/Controllers/Socialite/RedirectToProviderController.php`
+- `./laravel/Modules/User/app/Http/Controllers/UpgradeController.php`
+- `./laravel/Modules/User/app/Http/Volt/LogoutAction.php`
+
+[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `getWidgets` (13 occorrenze)
+
+**Moduli coinvolti:** IndennitaCondizioniLavoro, Job, Ptv, Sigma, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Pages/Dashboard.php`
+- `./laravel/Modules/User/app/Filament/Resources/BaseUserResource.php`
+- `./laravel/Modules/User/app/Filament/Resources/UserResource.php`
+
+## Metodo: `getModel` (13 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, Media, Notify, Ptv, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource.php`
+- `./laravel/Modules/User/app/Filament/Resources/ClientResource.php`
+- `./laravel/Modules/User/app/Filament/Resources/TeamResource.php`
+- `./laravel/Modules/User/app/Filament/Resources/TenantResource.php`
+
+## Metodo: `getHeaderWidgets` (13 occorrenze)
+
+**Moduli coinvolti:** Job, Media, Notify, Ptv, UI, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Resources/UserResource/Pages/BaseListUsers.php`
+- `./laravel/Modules/User/app/Filament/Resources/UserResource/Pages/ListUsers.php`
+
+## Metodo: `form` (13 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, Ptv, Sigma, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php`
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Login.php`
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Register.php`
+
+## Metodo: `active` (13 occorrenze)
+
+**Moduli coinvolti:** DbForge, Setting, Tenant, UI, User, Xot
+
+- `./laravel/Modules/User/database/factories/OauthAccessTokenFactory.php`
+- `./laravel/Modules/User/database/factories/OauthClientFactory.php`
+- `./laravel/Modules/User/database/factories/UserFactory.php`
+
+[Riflessione: Presente in 6 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `getRows` (11 occorrenze)
+
+**Moduli coinvolti:** Lang, Setting, Sigma, Tenant, User, Xot
+
+- `./laravel/Modules/User/app/Models/SocialProvider.php`
+
+## Metodo: `getNavigationLabel` (11 occorrenze)
+
+**Moduli coinvolti:** User, Xot
+
+- `./laravel/Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource/Pages/CreateOauthAccessToken.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource/Pages/EditOauthAccessToken.php`
+- `./laravel/Modules/User/app/Filament/Resources/OauthAccessTokenResource.php`
+
+## Metodo: `user` (10 occorrenze)
+
+**Moduli coinvolti:** Activity, Job, Rating, User, Xot
+
+- `./laravel/Modules/User/app/Models/BaseTeamUser.php`
+- `./laravel/Modules/User/app/Models/DeviceUser.php`
+- `./laravel/Modules/User/app/Models/SocialiteUser.php`
+- `./laravel/Modules/User/app/Models/TeamPermission.php`
+- `./laravel/Modules/User/app/Models/Traits/IsProfileTrait.php`
+
+## Metodo: `toMail` (10 occorrenze)
+
+## Metodo: `getType` (10 occorrenze)
+
+**Moduli coinvolti:** Performance, Seo, UI, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Widgets/UserTypeRegistrationsChartWidget.php`
+- `./laravel/Modules/User/app/Filament/Widgets/UsersChartWidget.php`
+
+## Metodo: `validate` (9 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, Job, Pdnd, Progressioni, UI, User
+
+- `./laravel/Modules/User/app/Rules/CheckOtpExpiredRule.php`
+
+## Metodo: `inactive` (9 occorrenze)
+
+## Metodo: `handleRecordUpdate` (8 occorrenze)
+
+**Moduli coinvolti:** User
+
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/Alignment.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/Background.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/Colors.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/CustomCss.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/Favicon.php`
+- `./laravel/Modules/User/app/Filament/Clusters/Appearance/Pages/Logo.php`
+- `./laravel/Modules/User/app/Filament/Pages/Password.php`
+
+[Riflessione: Duplicato interno al modulo User — valutare estrazione in trait di modulo o classe base]
+
+## Metodo: `getHeading` (8 occorrenze)
+
+## Metodo: `getData` (8 occorrenze)
+
+**Moduli coinvolti:** Lang, UI, User, Xot
+
+## Metodo: `authenticate` (8 occorrenze)
+
+**Moduli coinvolti:** IndennitaCondizioniLavoro, IndennitaResponsabilita, Performance, Progressioni, Sigma, User
+
+- `./laravel/Modules/User/resources/views/pages/auth/login.blade.php`
+
+[Riflessione: Presente in 7 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `users` (7 occorrenze)
+
+**Moduli coinvolti:** Tenant, User
+
+- `./laravel/Modules/User/app/Contracts/TeamContract.php`
+- `./laravel/Modules/User/app/Models/BaseTeam.php`
+- `./laravel/Modules/User/app/Models/BaseTenant.php`
+- `./laravel/Modules/User/app/Models/Device.php`
+- `./laravel/Modules/User/app/Models/SsoProvider.php`
+- `./laravel/Modules/User/app/Models/Traits/IsTenant.php`
+
+[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
+
+## Metodo: `error` (7 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, User, Xot
+
+- `./laravel/Modules/User/database/seeders/UserMassSeeder.php`
+
+[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
+
+## Metodo: `canView` (7 occorrenze)
+
+**Moduli coinvolti:** Gdpr, Lang, UI, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php`
+
+## Metodo: `updateData` (6 occorrenze)
+
+## Metodo: `removeTeamMember` (6 occorrenze)
+
+**Moduli coinvolti:** Job, User
+
+- `./laravel/Modules/User/app/Models/Policies/RolePolicy.php`
+- `./laravel/Modules/User/app/Models/Policies/TeamPolicy.php`
+- `./laravel/Modules/User/app/Models/Traits/HasTeams.php`
+
+## Metodo: `getUpdateFormActions` (6 occorrenze)
+
+## Metodo: `getPluralModelLabel` (6 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Resources/PermissionResource/RelationManager/RoleRelationManager.php`
+
+## Metodo: `getFormModel` (6 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Widgets/EditUserWidget.php`
+- `./laravel/Modules/User/app/Filament/Widgets/LoginWidget.php`
+- `./laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`
+
+## Metodo: `destroy` (6 occorrenze)
+
+**Moduli coinvolti:** Job, Performance, Progressioni, Sigma, User
+
+- `./laravel/Modules/User/app/Http/Livewire/Profile/DeleteAccount.php`
+
+## Metodo: `broadcastOn` (6 occorrenze)
+
+**Moduli coinvolti:** IndennitaResponsabilita, Job, User, Xot
+
+- `./laravel/Modules/User/app/Events/NewPasswordSet.php`
+
+## Metodo: `booted` (6 occorrenze)
+
+**Moduli coinvolti:** Gdpr, Incentivi, Sigma, User
+
+- `./laravel/Modules/User/app/Models/BaseProfile.php`
+
+## Metodo: `afterSave` (6 occorrenze)
+
+**Moduli coinvolti:** Incentivi, Lang, Setting, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Resources/RoleResource/Pages/EditRole.php`
+
+## Metodo: `addTeamMember` (6 occorrenze)
+
+## Metodo: `updateTeamMember` (5 occorrenze)
+
+## Metodo: `teams` (5 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/HasTeamsContract.php`
+- `./laravel/Modules/User/app/Contracts/UserContract.php`
+- `./laravel/Modules/User/app/Models/Profile.php`
+
+## Metodo: `switchTeam` (5 occorrenze)
+
+- `./laravel/Modules/User/app/Http/Livewire/Team/Change.php`
+
+## Metodo: `submit` (5 occorrenze)
+
+**Moduli coinvolti:** Gdpr, IndennitaResponsabilita, User, Xot
+
+## Metodo: `revoked` (5 occorrenze)
+
+- `./laravel/Modules/User/database/factories/OauthAuthCodeFactory.php`
+- `./laravel/Modules/User/database/factories/OauthRefreshTokenFactory.php`
+- `./laravel/Modules/User/database/factories/OauthTokenFactory.php`
+
+## Metodo: `resetPassword` (5 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/ResetPasswordWidget.php`
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Passwords/Reset.php`
+- `./laravel/Modules/User/resources/views/pages/auth/password/[token].blade.php`
+
+## Metodo: `profile` (5 occorrenze)
+
+**Moduli coinvolti:** Rating, User, Xot
+
+- `./laravel/Modules/User/app/Models/BaseUser.php`
+
+## Metodo: `mutateFormDataBeforeSave` (5 occorrenze)
+
+**Moduli coinvolti:** Lang, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Resources/UserResource/Pages/BaseEditUser.php`
+- `./laravel/Modules/User/app/Filament/Resources/UserResource/Pages/EditUser.php`
+
+## Metodo: `logout` (5 occorrenze)
+
+**Moduli coinvolti:** Activity, User
+
+- `./laravel/Modules/User/app/Filament/Widgets/UserDropdown.php`
+- `./laravel/Modules/User/app/Livewire/Logout.php`
+
+## Metodo: `isValid` (5 occorrenze)
+
+**Moduli coinvolti:** Pdnd, User
+
+- `./laravel/Modules/User/app/Datas/DeviceData.php`
+
+## Metodo: `isSuperAdmin` (5 occorrenze)
+
+## Metodo: `getStats` (5 occorrenze)
+
+**Moduli coinvolti:** Rating, UI, User, Xot
+
+- `./laravel/Modules/User/app/Filament/Clusters/Passport/Widgets/PassportStatsWidget.php`
+
+## Metodo: `getRedirectUrl` (5 occorrenze)
+
+**Moduli coinvolti:** Incentivi, Setting, User
+
+## Metodo: `getModelLabel` (5 occorrenze)
+
+**Moduli coinvolti:** Incentivi, User, Xot
+
+## Metodo: `getFormFill` (5 occorrenze)
+
+## Metodo: `getConnectionName` (5 occorrenze)
+
+**Moduli coinvolti:** MobilitaVolontaria, Tenant, User, Xot
+
+- `./laravel/Modules/User/app/Models/Extra.php`
+
+## Metodo: `forUser` (5 occorrenze)
+
+**Moduli coinvolti:** Notify, User
+
+- `./laravel/Modules/User/database/factories/MembershipFactory.php`
+
+## Metodo: `canAccessSocialite` (5 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/HasSocialite.php`
+- `./laravel/Modules/User/app/Models/User.php`
+
+## Metodo: `token` (4 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/PassportHasApiTokensContract.php`
+
+## Metodo: `team` (4 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Role.php`
+- `./laravel/Modules/User/app/Models/TeamInvitation.php`
+
+## Metodo: `roles` (4 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/HasRoles.php`
+- `./laravel/Modules/User/app/Models/Traits/HasSpatiePermission.php`
+
+## Metodo: `ownsTeam` (4 occorrenze)
+
+## Metodo: `mutateFormDataBeforeCreate` (4 occorrenze)
+
+**Moduli coinvolti:** IndennitaCondizioniLavoro, User
+
+- `./laravel/Modules/User/app/Filament/Resources/BaseProfileResource/Pages/CreateProfile.php`
+- `./laravel/Modules/User/app/Filament/Resources/RoleResource/Pages/CreateRole.php`
+- `./laravel/Modules/User/app/Filament/Resources/TeamResource/Pages/CreateTeam.php`
+
+## Metodo: `message` (4 occorrenze)
+
+**Moduli coinvolti:** Media, Performance, User, Xot
+
+## Metodo: `hasTeamPermission` (4 occorrenze)
+
+## Metodo: `hasRole` (4 occorrenze)
+
+## Metodo: `getTable` (4 occorrenze)
+
+**Moduli coinvolti:** Job, User, Xot
+
+- `./laravel/Modules/User/app/Models/PermissionRole.php`
+
+## Metodo: `getSubheading` (4 occorrenze)
+
+**Moduli coinvolti:** Notify, Ptv, Sigma, User
+
+## Metodo: `getSlugOptions` (4 occorrenze)
+
+**Moduli coinvolti:** Lang, Notify, Rating, User
+
+## Metodo: `getNavigationIcon` (4 occorrenze)
+
+## Metodo: `getModules` (4 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/HasModules.php`
+
+## Metodo: `getFullNameAttribute` (4 occorrenze)
+
+**Moduli coinvolti:** Incentivi, Sigma, User
+
+## Metodo: `createToken` (4 occorrenze)
+
+## Metodo: `check` (4 occorrenze)
+
+**Moduli coinvolti:** Performance, Progressioni, User
+
+- `./laravel/Modules/User/app/Actions/Otp/Hasher.php`
+
+## Metodo: `belongsToTeam` (4 occorrenze)
+
+## Metodo: `withScopes` (3 occorrenze)
+
+## Metodo: `toggleSuperAdmin` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Http/Livewire/Profile/SuperAdmin.php`
+
+## Metodo: `tenant` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/InteractsWithTenant.php`
+
+## Metodo: `tenants` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/HasTenants.php`
+
+## Metodo: `teamRole` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/HasTeamsAndUserContract.php`
+
+## Metodo: `teamPermissions` (3 occorrenze)
+
+## Metodo: `socialiteUsers` (3 occorrenze)
+
+## Metodo: `sendResetPasswordLink` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/PasswordResetWidget.php`
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Passwords/Email.php`
+- `./laravel/Modules/User/resources/views/pages/auth/password/reset.blade.php`
+
+## Metodo: `scopeWithExtraAttributes` (3 occorrenze)
+
+## Metodo: `personalTeam` (3 occorrenze)
+
+## Metodo: `permissions` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Team.php`
+
+## Metodo: `owner` (3 occorrenze)
+
+## Metodo: `ownedTeams` (3 occorrenze)
+
+## Metodo: `normalizeFormSchema` (3 occorrenze)
+
+**Moduli coinvolti:** UI, User
+
+## Metodo: `members` (3 occorrenze)
+
+## Metodo: `login` (3 occorrenze)
+
+**Moduli coinvolti:** Activity, Notify, User
+
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/LoginWidget.php`
+
+## Metodo: `isResourceFormComponentsEnabled` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Resources/ClientResource/Schemas/ClientForm.php`
+
+## Metodo: `info` (3 occorrenze)
+
+## Metodo: `hasCombinedRelationManagerTabsWithContent` (3 occorrenze)
+
+## Metodo: `getResourceFormComponents` (3 occorrenze)
+
+## Metodo: `getFacadeAccessor` (3 occorrenze)
+
+**Moduli coinvolti:** Seo, User, Xot
+
+- `./laravel/Modules/User/app/Facades/FilamentShield.php`
+
+## Metodo: `extendTableCallback` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Resources/OauthAuthCodeResource.php`
+- `./laravel/Modules/User/app/Filament/Resources/OauthRefreshTokenResource.php`
+
+## Metodo: `expired` (3 occorrenze)
+
+## Metodo: `devices` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Traits/HasDevices.php`
+
+## Metodo: `currentTeam` (3 occorrenze)
+
+## Metodo: `created` (3 occorrenze)
+
+**Moduli coinvolti:** Activity, Job, User
+
+- `./laravel/Modules/User/app/Observers/UserObserver.php`
+
+## Metodo: `clients` (3 occorrenze)
+
+## Metodo: `authentications` (3 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/HasAuthentications.php`
+- `./laravel/Modules/User/app/Models/Traits/HasAuthenticationLogTrait.php`
+
+## Metodo: `allTeams` (3 occorrenze)
+
+## Metodo: `withAccessToken` (2 occorrenze)
+
+## Metodo: `validateForPassportPasswordGrant` (2 occorrenze)
+
+## Metodo: `userHasPermission` (2 occorrenze)
+
+## Metodo: `updateUser` (2 occorrenze)
+
+## Metodo: `updateProfile` (2 occorrenze)
+
+- `./laravel/Modules/User/resources/views/pages/profile/edit.blade.php`
+
+## Metodo: `updatePassword` (2 occorrenze)
+
+## Metodo: `unverified` (2 occorrenze)
+
+## Metodo: `tokens` (2 occorrenze)
+
+## Metodo: `tokenCan` (2 occorrenze)
+
+## Metodo: `teamUsers` (2 occorrenze)
+
+## Metodo: `teamInvitations` (2 occorrenze)
+
+## Metodo: `resetForm` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
+
+## Metodo: `resend` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Verify.php`
+- `./laravel/Modules/User/resources/views/pages/auth/verify.blade.php`
+
+## Metodo: `replaceRecoveryCode` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/TwoFactorAuthenticatableContract.php`
+
+## Metodo: `removeUser` (2 occorrenze)
+
+## Metodo: `removeRole` (2 occorrenze)
+
+## Metodo: `registerPolicies` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Providers/PassportServiceProvider.php`
+- `./laravel/Modules/User/app/Providers/UserServiceProvider.php`
+
+## Metodo: `redirectAfterLogout` (2 occorrenze)
+
+## Metodo: `recoveryCodes` (2 occorrenze)
+
+## Metodo: `purge` (2 occorrenze)
+
+## Metodo: `performLogout` (2 occorrenze)
+
+## Metodo: `notifications` (2 occorrenze)
+
+## Metodo: `logLogoutSuccess` (2 occorrenze)
+
+## Metodo: `latestAuthentication` (2 occorrenze)
+
+## Metodo: `isCurrentTeam` (2 occorrenze)
+
+## Metodo: `hasUser` (2 occorrenze)
+
+## Metodo: `hasUserWithEmail` (2 occorrenze)
+
+## Metodo: `hasTeamRole` (2 occorrenze)
+
+## Metodo: `hasLogo` (2 occorrenze)
+
+## Metodo: `handleRegistration` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Pages/Tenancy/RegisterTeam.php`
+- `./laravel/Modules/User/app/Filament/Pages/Tenancy/RegisterTenant.php`
+
+## Metodo: `handleCommandStarted` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php`
+
+## Metodo: `handleCommandOutput` (2 occorrenze)
+
+## Metodo: `handleCommandFailed` (2 occorrenze)
+
+## Metodo: `handleCommandError` (2 occorrenze)
+
+## Metodo: `getResourceSlug` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Support/Utils.php`
+
+## Metodo: `getResetPasswordFormAction` (2 occorrenze)
+
+## Metodo: `getProviderField` (2 occorrenze)
+
+## Metodo: `getPluralLabel` (2 occorrenze)
+
+## Metodo: `getMobileDeviceTokens` (2 occorrenze)
+
+## Metodo: `getLogoutAction` (2 occorrenze)
+
+## Metodo: `getLocalizedHomeUrl` (2 occorrenze)
+
+## Metodo: `getKey` (2 occorrenze)
+
+## Metodo: `getHelperText` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Datas/PasswordData.php`
+
+## Metodo: `getFilamentAvatarUrl` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Contracts/HasProfilePhotoContract.php`
+
+## Metodo: `getCurrentPasswordFormComponent` (2 occorrenze)
+
+## Metodo: `getConsoleCommand` (2 occorrenze)
+
+- `./laravel/Modules/User/database/seeders/RolesSeeder.php`
+
+## Metodo: `getCancelAction` (2 occorrenze)
+
+## Metodo: `getAvatarUrl` (2 occorrenze)
+
+## Metodo: `forRole` (2 occorrenze)
+
+- `./laravel/Modules/User/database/factories/PermissionRoleFactory.php`
+- `./laravel/Modules/User/database/factories/RoleHasPermissionFactory.php`
+
+## Metodo: `forPermission` (2 occorrenze)
+
+## Metodo: `forClient` (2 occorrenze)
+
+## Metodo: `findForPassport` (2 occorrenze)
+
+## Metodo: `executeCommand` (2 occorrenze)
+
+## Metodo: `displaySummary` (2 occorrenze)
+
+## Metodo: `dispatchPreLogoutEvent` (2 occorrenze)
+
+## Metodo: `dispatchPostLogoutEvent` (2 occorrenze)
+
+## Metodo: `confirm` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Http/Livewire/Auth/Passwords/Confirm.php`
+- `./laravel/Modules/User/resources/views/pages/auth/password/confirm.blade.php`
+
+## Metodo: `configureScopes` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Providers/Traits/HasPassportConfiguration.php`
+
+## Metodo: `configureRoutes` (2 occorrenze)
+
+## Metodo: `configureModels` (2 occorrenze)
+
+## Metodo: `canUpdateTeamMember` (2 occorrenze)
+
+## Metodo: `canRemoveTeamMember` (2 occorrenze)
+
+## Metodo: `broker` (2 occorrenze)
+
+## Metodo: `avatar` (2 occorrenze)
+
+## Metodo: `authenticatable` (2 occorrenze)
+
+- `./laravel/Modules/User/app/Models/Authentication.php`
+- `./laravel/Modules/User/app/Models/AuthenticationLog.php`
+
+## Metodo: `allUsers` (2 occorrenze)
+
+## Metodo: `add` (2 occorrenze)
+
+**Moduli coinvolti:** Ptv, User
+
+- `./laravel/Modules/User/app/Contracts/AddsTeamMembers.php`
+
+## Riflessioni per User
+
+- **Totale metodi duplicati che coinvolgono User:** 165
+- **Di cui cross-modulo:** 97
+- **Di cui interni al modulo:** 68
+
+### Pattern di riflessione
+
+- **refactoring in trait/classe base/helper:** 126 metodi
+- **altro:** 39 metodi
+
+### Moduli con maggiori duplicazioni incrociate
+
+- **Xot:** 119 metodi in comune
+- **Notify:** 37 metodi in comune
+- **Job:** 26 metodi in comune
+- **Tenant:** 19 metodi in comune
+- **Ptv:** 13 metodi in comune
+- **UI:** 12 metodi in comune
+- **Sigma:** 10 metodi in comune
+- **Pdnd:** 9 metodi in comune
+- **Performance:** 9 metodi in comune
+- **IndennitaResponsabilita:** 8 metodi in comune
+
+_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_

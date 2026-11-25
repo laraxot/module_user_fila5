@@ -1,3 +1,9 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: note
+qmd: "roadmap issues optimization stato attuale completezza funzionale errori phpstan correggere categorizzazione errore critico risolto miglioramento implementato"
+---
+
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  

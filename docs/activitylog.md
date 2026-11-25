@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "activitylog linee guida luso spatie"
+title: "Linee guida per l'uso di Spatie Activitylog"
 ---
 # Linee guida per l'uso di Spatie Activitylog
 

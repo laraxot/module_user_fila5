@@ -11,7 +11,6 @@ related:
   - "./dashboard-filters-integration.md"
   - "./edit-user-widget.md"
   - "./registration-widget-fileupload-fix.md"
-  - "./registration-widget-fileupload.md"
 ---
 
 # RegistrationWidget: Widget generico per la registrazione utente

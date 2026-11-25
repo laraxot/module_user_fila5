@@ -1,3 +1,9 @@
+---
+title: "Guida Rendering Widget Filament 4 - Modulo User"
+type: note
+qmd: "guida rendering widget filament obiettivo problema sintomo causa root soluzione corretta struttura php view blade xotbasewidget"
+---
+
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Data**: 14 Ottobre 2025  

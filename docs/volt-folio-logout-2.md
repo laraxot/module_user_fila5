@@ -202,7 +202,5 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 ---
 module: theme
 topic: volt_folio_logout
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-2.md

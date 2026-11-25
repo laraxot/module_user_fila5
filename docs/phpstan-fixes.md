@@ -1503,7 +1503,6 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ---
 module: theme
 topic: phpstan-fixes-gennaio-2025
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-4.md
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -1515,4 +1514,189 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-4.md
+## Contenuto fuso da `phpstan-fixes.md`
+
+# Alias (superseded)
+
+Canonico: [`./phpstan-fixes.md`](./phpstan-fixes.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.
+=======
+
+## Contenuto fuso da `phpstan-fixes.md`
+
+# 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
+
+**Data**: 27 Gennaio 2025
+**Status**: ✅ COMPLETATO CON SUCCESSO
+**Errori Corretti**: 3 errori di sintassi method chaining e object instantiation
+
+## 📋 Panoramica Correzioni
+
+### ✅ **Errori Risolti**
+
+#### **1. Otp.php - Method Chaining**
+- **File**: `app/Notifications/Auth/Otp.php`
+- **Linea**: 53
+- **Problema**: Sintassi method chaining non riconosciuta da PHPStan
+- **Soluzione**: Convertito a sintassi esplicita con assegnazioni separate
+
+**Prima (ERRATO):**
+return new MailMessage()
+    ->template('user::notifications.email')
+    ->subject(__('user::otp.mail.subject'))
+    ->greeting(__('user::otp.mail.greeting'))
+    ->line(__('user::otp.mail.line1', ['code' => $this->code]))
+    ->line(__('user::otp.mail.line2', ['minutes' => $pwd->otp_expiration_minutes]))
+    ->line(__('user::otp.mail.line3'))
+    ->action('vai', url('/'))
+
+**Dopo (CORRETTO):**
+$mailMessage = new MailMessage();
+$mailMessage = $mailMessage->template('user::notifications.email');
+$mailMessage = $mailMessage->subject(__('user::otp.mail.subject'));
+$mailMessage = $mailMessage->greeting(__('user::otp.mail.greeting'));
+$mailMessage = $mailMessage->line(__('user::otp.mail.line1', ['code' => $this->code]));
+$mailMessage = $mailMessage->line(__('user::otp.mail.line2', ['minutes' => $pwd->otp_expiration_minutes]));
+$mailMessage = $mailMessage->line(__('user::otp.mail.line3'));
+$mailMessage = $mailMessage->action('vai', url('/'));
+
+return $mailMessage
+    ->salutation(__('user::otp.mail.salutation', ['app_name' => $app_name]));
+
+#### **2. ResetPassword.php - Method Chaining**
+- **File**: `app/Notifications/Auth/ResetPassword.php`
+- **Linea**: 34
+- **Soluzione**: Convertito a sintassi esplicita
+
+    ->subject($subject)
+    ->line(Lang::get('user::email.password_cause_of_email'))
+    ->action($action, $url)
+    ->line(Lang::get('user::email.password_if_not_requested'));
+
+$mailMessage = $mailMessage->subject($subject);
+$mailMessage = $mailMessage->line(Lang::get('user::email.password_cause_of_email'));
+$mailMessage = $mailMessage->action($action, $url);
+$mailMessage = $mailMessage->line(Lang::get('user::email.password_if_not_requested'));
+
+return $mailMessage;
+
+#### **3. UserModelTest.php - Object Instantiation**
+- **File**: `tests/Unit/UserModelTest.php`
+- **Linea**: 88
+- **Problema**: Chiamata metodo su istanza inline non riconosciuta da PHPStan
+- **Soluzione**: Separata creazione istanza da chiamata metodo
+
+$hidden = new User()->getHidden();
+
+$user = new User();
+$hidden = $user->getHidden();
+
+### 🎯 **Impatto delle Correzioni**
+
+#### **Performance**
+- ✅ **Nessun impatto negativo** sulle performance
+- ✅ **Compatibilità PHPStan** migliorata
+- ✅ **Type safety** mantenuta
+
+#### **Funzionalità**
+- ✅ **Notifiche OTP** funzionano correttamente
+- ✅ **Reset Password** funziona correttamente
+- ✅ **Test User Model** passano correttamente
+- ✅ **Autenticazione** mantenuta
+
+#### **Architettura**
+- ✅ **Pattern Notification** mantenuto
+- ✅ **Type hints** preservati
+- ✅ **Documentazione PHPDoc** migliorata
+
+## 🔍 **Analisi Tecnica**
+
+### **Problema Identificato**
+PHPStan aveva difficoltà nel riconoscere la sintassi method chaining e object instantiation inline in alcuni contesti, causando errori di parsing.
+
+### **Soluzione Implementata**
+- **Sintassi esplicita**: Separazione delle chiamate ai metodi
+- **Assegnazioni multiple**: Ogni chiamata metodo in riga separata
+- **Object instantiation**: Separazione creazione da utilizzo
+
+### **Benefici**
+- ✅ **PHPStan Level 9**: Compatibilità completa
+- ✅ **Leggibilità**: Codice più esplicito e chiaro
+- ✅ **Type Safety**: Mantenuta con type hints espliciti
+- ✅ **Debugging**: Più facile identificare problemi
+
+## 📊 **Metriche Post-Correzione**
+
+| Metrica | Prima | Dopo | Status |
+|---------|-------|------|--------|
+| **PHPStan Errors** | 3 | 0 | ✅ Risolto |
+| **Type Safety** | 90% | 100% | ✅ Migliorato |
+| **Performance** | 95/100 | 95/100 | ✅ Mantenuto |
+| **Test Coverage** | 85% | 85% | ✅ Mantenuto |
+
+## 🧪 **Test di Verifica**
+
+### **Test Eseguiti**
+# Test PHPStan
+./vendor/bin/phpstan analyse Modules/User --level=9
+# ✅ Nessun errore
+
+# Test funzionali
+php artisan test --filter=User
+# ✅ Tutti i test passano
+
+# Test autenticazione
+php artisan user:test-auth
+# ✅ Autenticazione funziona correttamente
+
+### **Verifica Funzionalità**
+- ✅ **OTP Notifications**: Invio OTP funziona correttamente
+- ✅ **Password Reset**: Reset password funziona correttamente
+- ✅ **User Model**: Test passano correttamente
+- ✅ **Authentication**: Sistema autenticazione funziona
+
+## 🎯 **Best Practices Applicate**
+
+### **1. Method Chaining Pattern**
+// ✅ CORRETTO - Sintassi esplicita e compatibile PHPStan
+$mailMessage = $mailMessage->line($message);
+
+// ❌ EVITARE - Method chaining può causare problemi PHPStan
+$mailMessage = new MailMessage()
+    ->line($message);
+
+### **2. Object Instantiation**
+// ✅ CORRETTO - Separazione creazione e utilizzo
+
+// ❌ EVITARE - Chiamata metodo su istanza inline
+
+### **3. Type Hints**
+// ✅ CORRETTO - Type hints espliciti
+public function toMail($notifiable): MailMessage
+
+### **4. Translation Usage**
+// ✅ CORRETTO - Uso corretto delle traduzioni
+
+// ✅ CORRETTO - Uso Lang::get per traduzioni
+$subject = Lang::get('user::email.password_reset_subject');
+
+## 🔄 **Prossimi Passi**
+
+### **Monitoraggio**
+- [ ] **Verifica PHPStan**: Eseguire analisi settimanale
+- [ ] **Performance Monitoring**: Controllo metriche mensile
+- [ ] **Test Coverage**: Mantenere copertura >85%
+
+### **Miglioramenti Futuri**
+- [ ] **Authentication Security**: Miglioramenti sicurezza
+- [ ] **OTP Optimization**: Ottimizzazioni sistema OTP
+- [ ] **User Management**: Miglioramenti gestione utenti
+
+## 📚 **Riferimenti**
+
+### **Documentazione Correlata**
+
+## Contenuto fuso da `phpstan-fixes.md`
+
+Canonico: [`./phpstan-fixes-gennaio.md`](./phpstan-fixes-gennaio.md).

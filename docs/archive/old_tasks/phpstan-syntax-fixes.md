@@ -1,3 +1,9 @@
+---
+title: "PHPStan Syntax Fixes - Modulo User"
+type: note
+qmd: "phpstan syntax fixes correzione implementata baseusertest php namespace declaration order soluzione prima dopo psr ordering rules"
+---
+
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  

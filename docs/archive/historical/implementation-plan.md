@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Piano di Implementazione Componenti Header
@@ -183,10 +183,9 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-- [Header Components](./header-components.md)
-- [Navigation Structure](./navigation-structure.md)
+- [Header Components](../../header-components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-- [Header Components](./header-components.md)
+- [Header Components](../../header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md)
 
@@ -215,9 +214,8 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-- [Header Components](./header-components.md)
-- [Navigation Structure](./navigation-structure.md)
+- [Header Components](../../header-components.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
-- [Header Components](./header-components.md)
+- [Header Components](../../header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md) 

@@ -328,3 +328,27 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
+
+## Contenuto fuso da `fullcalendar-scheduler-documentation-summary.md`
+
+Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto SaluteOra, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+
+- Best practices per SaluteOra
+
+- Configurazione di base in SaluteOra
+
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
+
+### 🎯 Soluzioni Specifiche SaluteOra
+
+SaluteOra FullCalendar Implementation
+
+- **SaluteOra current architecture**
+
+- Modifiche architettura SaluteOra
+
+2. Testare soluzioni in ambiente SaluteOra
+
+Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in SaluteOra, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+
+La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di SaluteOra.

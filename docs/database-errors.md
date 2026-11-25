@@ -52,3 +52,7 @@ related:
 - [Xot Module Database Guidelines](../../../Modules/Xot/docs/DATABASE_GUIDELINES.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+
+## Contenuto fuso da `database-errors.md`
+
+- [Root Documentation](../../../docs/collegamenti-documentazione.md)

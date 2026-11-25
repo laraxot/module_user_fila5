@@ -10,8 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./remaining-tenant-failures.md"
   - "./tenantfactory-fix.md"
-  - "./tenantfactory.md"
-  - "./tenanttest-fixes.md"
 ---
 
 # TenantTest Fixes - Reasoning

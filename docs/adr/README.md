@@ -76,10 +76,10 @@ Almeno un ADR per pacchetto e' "sostanziale": ha anche `## Driver` e `## Conferm
 
 - [contracts-and-lang-backup-archival](../wiki/decisions/contracts-and-lang-backup-archival.md)
 - [contracts-and-lang-backup-archival.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
-- [contracts-and-lang-backup-archival-](../wiki/decisions/contracts-and-lang-backup-archival-.md)
-- [contracts-and-lang-backup-archival-.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-.deprecated.md)
+- [contracts-and-lang-backup-archival-](../wiki/decisions/contracts-and-lang-backup-archival.md)
+- [contracts-and-lang-backup-archival-.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
 - [contracts-and-lang-backup-archival-30](../wiki/decisions/contracts-and-lang-backup-archival-30.md)
-- [contracts-and-lang-backup-archival-30.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-30.deprecated.md)
+- [contracts-and-lang-backup-archival-30.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
 - [archiviazione orfani (ponytail audit)](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)
 title: "ADR — User"
 type: index
@@ -98,6 +98,6 @@ Frontmatter (`title`, `type: decision`, `status`, `created`, `updated`, `decisio
 
 ## ADR presenti
 
-Elenco con stato: [INDEX.md](INDEX.md). Presenti: [user-owns-identity-and-roles](user-owns-identity-and-roles.md), [frontoffice-login-page-ownership](frontoffice-login-page-ownership.md), [deleted-accounts-are-filtered-by-auth-provider](deleted-accounts-are-filtered-by-auth-provider.md).
+Elenco con stato: [INDEX.md](index.md). Presenti: [user-owns-identity-and-roles](user-owns-identity-and-roles.md), [frontoffice-login-page-ownership](frontoffice-login-page-ownership.md), [deleted-accounts-are-filtered-by-auth-provider](deleted-accounts-are-filtered-by-auth-provider.md).
 
 Policy trasversale su dati sacri e test isolati: [0013-dati-sacri-migrazioni-e-test](../../../Xot/docs/adr/0013-dati-sacri-migrazioni-e-test.md).

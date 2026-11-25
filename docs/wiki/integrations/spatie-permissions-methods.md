@@ -497,3 +497,11 @@ $user->assignRole(Role::findByName('admin', 'web'));
 **Autore**: Claude Code
 **Data**: 2025-10-15
 **Versione**: 1.0.0
+
+## Contenuto fuso da `spatie-permissions-methods.md`
+
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+
+## Contenuto fuso da `spatie-permissions-methods.md`
+
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md

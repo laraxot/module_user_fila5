@@ -1,3 +1,9 @@
+---
+title: "BMAD Story: User Module Audit Improvements"
+type: note
+qmd: "bmad story audit improvements title description acceptance criteria phase critical migration fixes permission caching performance dry"
+---
+
 # BMAD Story: User Module Audit Improvements
 
 **Story ID**: USER-2026-AUDIT-001  

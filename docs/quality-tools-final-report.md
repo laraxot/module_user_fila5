@@ -172,12 +172,25 @@ $user_class = XotData::make()->getUserClass();
 ## Collegamenti
 
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
 - [Resources Corrections Summary](./resources-corrections-summary.md)
 - [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections.md)
-- [Quality Tools Report](./quality-tools-report.md)
-- [PHPStan Complete Success](./phpstan-complete-success.md)
 
 ---
 
 **Status**: ✅ **COMPLETATO** - Modulo User: 0 errori PHPStan, 0 errori critici PHPMD, warning PHP Insights accettabili.
+
+## Contenuto fuso da `quality-tools-final-report.md`
+
+- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
+- [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections-2025-01-22.md)
+
+module: theme
+topic: quality-tools-final-report-
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"

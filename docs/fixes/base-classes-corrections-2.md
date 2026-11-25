@@ -8,13 +8,12 @@ qmd: "base-classes-corrections-2 correzione estensioni classi base - modulo user
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./base-classes-corrections-.md"
+  - "./base-classes-corrections.md"
   - "./base-classes-corrections-1.md"
   - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
-  - "./phpstan-fixes.md"
-  - "./phpstan-fixes.md"
-  - "./phpstanes.md"
+  - "../bug-tracking/phpstan-fixes.md"
+  - "../bug-tracking/phpstan-fixes.md"
 ---
 
 # Correzione Estensioni Classi Base - Modulo User
@@ -328,7 +327,6 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 - [Base Classes Hierarchy](../models/base-classes-hierarchy.md)
 - [Architecture Guide](../core/architecture.md)
-- [XotBasePivot Migration](../models/xotbasepivot-migration.md)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---

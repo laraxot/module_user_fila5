@@ -785,3 +785,7 @@ class UserMetadata implements CastsAttributes
 3. Security audits
 
 Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particular attenzione per refactoring e ottimizzazione seguendo principi SOLID e DRY.
+
+## Contenuto fuso da `business-logic-deep-dive.md`
+
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns

@@ -641,7 +641,6 @@ This confirms that the project is using a version of Filament where Forms seem t
 
 <!-- Contenuto unito da phpstan-fix-plan-2.md (rimozione date dai nomi file, issue #64) -->
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-2.md
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status
@@ -678,7 +677,6 @@ This confirms that the project is using a version of Filament where Forms seem t
 ---
 module: theme
 topic: phpstan-fix-plan-
-canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-2.md
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -690,4 +688,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-2.md

@@ -8,10 +8,10 @@ qmd: "logout blade error analysis analisi approfondita"
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Logout](logout-blade-analysis.md)
+- [Conclusioni Logout](logout-blade-conclusions.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Fondamentale Identificato
@@ -118,7 +118,6 @@ Questi errori evidenziano l'importanza di:
 ---
 module: theme
 topic: logout-blade-error-analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -130,4 +129,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md

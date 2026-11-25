@@ -1,3 +1,9 @@
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: note
+qmd: "phpstan level fixes duplicate method declaration fix issue solution before after result dry kiss compliance archive"
+---
+
 # PHPStan Level 10 Fixes - User Module
 
 ## Duplicate Method Declaration Fix

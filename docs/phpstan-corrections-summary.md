@@ -281,7 +281,6 @@ return $this->hasAnyPermission($permissions);
 
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
-- [Migration Consolidation Philosophy](./migration-consolidation-philosophy.md)
 
 ---
 
@@ -289,7 +288,6 @@ return $this->hasAnyPermission($permissions);
 ---
 module: theme
 topic: phpstan-corrections-summary
-canonical: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -301,4 +299,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md

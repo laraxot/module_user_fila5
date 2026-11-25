@@ -95,5 +95,4 @@ related:
 
 - [passport-model-wrappers](passport-model-wrappers.md)
 - [oauth-passport-model-wrappers](oauth-passport-model-wrappers.md)
-- [passport-cluster-completion-status](passport-cluster-completion-status.md)
 - [oauth-access-token-removal](oauth-access-token-removal.md)

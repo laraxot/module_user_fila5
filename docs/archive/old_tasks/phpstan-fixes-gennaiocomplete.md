@@ -1,3 +1,9 @@
+---
+title: "PHPStan Fixes Complete - Gennaio 2025"
+type: note
+qmd: "phpstan fixes complete gennaio riepilogo errori risolti cms app http controllers admin xotpanelcontroller php middleware pageslugmiddleware"
+---
+
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

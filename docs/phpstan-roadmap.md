@@ -64,7 +64,6 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 ---
 module: theme
 topic: phpstan-roadmap
-canonical: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -76,4 +75,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md

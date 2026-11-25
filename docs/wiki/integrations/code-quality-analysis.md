@@ -319,3 +319,11 @@ public function getTableColumns(): array
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
+
+## Contenuto fuso da `code-quality-analysis.md`
+
+- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+
+## Contenuto fuso da `code-quality-analysis.md`
+
+- [authentication_performance_optimization.md](./performance/authentication_performance_optimization.md)

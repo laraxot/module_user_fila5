@@ -571,3 +571,20 @@ php artisan user:benchmark  # Target: < 100ms
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
+
+## Contenuto fuso da `optimization-recommendations.md`
+
+- **141+ occorrenze hardcoded** di "saluteora"
+
+use Modules\SaluteOra\Models\User;
+
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/saluteora/`
+
+- [ ] **0 occorrenze** hardcoded "saluteora"
+
+grep -r -i "saluteora" Modules/User/ --include="*.php" | wc -l
+
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
+
+*Ultimo aggiornamento: gennaio 2025*

@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Gestione delle Sessioni
@@ -91,7 +91,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management.md)
-- [Best Practices per il Routing](./routing-best-practices.md)
+- [Best Practices per il Routing](../../routing-best-practices.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
@@ -99,7 +99,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management.md)
-- [Best Practices per il Routing](./routing-best-practices.md)
+- [Best Practices per il Routing](../../routing-best-practices.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 

@@ -1,10 +1,11 @@
 ---
 title: "Contratto — ConsumeAuthSubmissionSlotAction"
 type: contract
-action: "Modules\User\Actions\Auth\ConsumeAuthSubmissionSlotAction"
+action: 'Modules\User\Actions\Auth\ConsumeAuthSubmissionSlotAction'
 tags: [contract, action, rate-limit, sicurezza]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "consumeauthsubmissionslotaction input output invarianti effetti collaterali errori register forgotpassword unknown max_per_ip decay_seconds loginwidget trim contracts"
 ---
 
 # ConsumeAuthSubmissionSlotAction

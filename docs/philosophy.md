@@ -951,3 +951,46 @@ Everything else belongs elsewhere.
 **Module Version**: 2.5.0+  
 **Last Updated**: 2026-09-06  
 **Status**: Active, Visionary
+
+## Contenuto fuso da `philosophy.md`
+
+# User — Philosophy: The Identity Foundation
+
+**The Grand Vision**: User is not a user management system. It is the identity spine of FixCity — the answer to three questions and only three: **who are you, what are you allowed to do, and for which organization.** Everything else belongs elsewhere.
+
+## RELIGIONE — The Non-Negotiable Commandments
+
+All user types — User, Doctor, Patient, Client, Admin — live in one `users` table with a `type` column. STI via `Parental\HasChildren` is not optional; it's the foundational pattern.
+
+`BaseModel::$connection = 'user'` points to the `ptv_user` database — declared by hand in `config/local/ptvx/database.php`. Identity is separate infrastructure. This is not a performance optimization; it is a domain boundary.
+
+## FILOSOFIA — The Design Philosophy
+
+## POLITICA — The Rules, Constraints, and Best Practices
+
+1. **BaseUser and BaseProfile are abstract.** They define the interface for all user types. Concrete classes live in child modules (Ptv, Employee, etc.) — not in User itself.
+
+3. No file in `app/` larger than 500 lines (currently violated by `BaseUser.php:514` and `HasTeams.php:621` — a technical debt).
+
+## SCOPO — What Problem It Solves in FixCity
+
+## ZEN — The Essence and the Magic
+
+## LIBRERIE DA INSTALLARE — Proposed New Dependencies
+
+## FUTURE IMPLEMENTAZIONI — Roadmap
+
+## FALSE FRIENDS — Common Gotchas
+
+## COME USARLO — Practical Examples
+
+## COME INSTALLARLO — Setup Guide
+
+## COVERAGE ANALYSIS — Based on the Test Suite
+
+- [scopo.md](./scopo.md) — Scope, boundaries, and improvement roadmap
+- [README.md](../README.md) — Module overview
+- [authentication.md](./authentication.md) — Authentication flow details
+- [permissions.md](./permissions.md) — Spatie permissions deep dive
+- [passport-integration.md](./passport-integration.md) — OAuth2 and API token handling
+- [2fa-guide.md](./2fa-guide.md) — Two-factor authentication setup

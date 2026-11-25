@@ -29,7 +29,6 @@ Consolidated from **6** individual files.
 
 module: theme
 topic: navigation-structure
-canonical: ../../../Themes/docs/shared-components/navigation-structure.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -41,7 +40,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
 
 ---
 

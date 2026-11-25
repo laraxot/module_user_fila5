@@ -52,10 +52,8 @@ related:
 ---
 module: theme
 topic: registration_widget
-canonical: ../../../Themes/docs/shared-components/registration-widget-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-3.md
 ---
 
 ## registration-widget-fileupload-fix
@@ -436,7 +434,6 @@ Per evitare simili problemi in futuro:
 
 module: theme
 topic: registration-widget-fileupload
-canonical: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -448,7 +445,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
 
 ---
 

@@ -79,7 +79,6 @@ Se vuoi mostrare una conferma, usa un pulsante con `wire:click="logout"` che ric
 ---
 module: theme
 topic: volt-folio-logout-debug
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -91,4 +90,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md

@@ -82,3 +82,9 @@ Merge file duplicati in un solo indice.
 
 - `laravel/Modules/docs/documentation-audit.md`
 - `docs/super-mucca/SKILL.md`
+
+## Contenuto fuso da `perfection-audit.md`
+
+Identico a Notify (vedi `PERFECTION_AUDIT.md` in Notify/docs/).
+
+- `laravel/Modules/docs/DOCUMENTATION_AUDIT.md`

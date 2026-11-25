@@ -179,7 +179,5 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 ---
 module: theme
 topic: logout_implementation_with_laravel_localization
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md

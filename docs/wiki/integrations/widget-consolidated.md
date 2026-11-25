@@ -2239,10 +2239,8 @@ All widget development should follow these rules to maintain consistency and qua
 ---
 module: theme
 topic: widget_translation_rules
-canonical: ../../../Themes/docs/shared-components/widget-translation-rules-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-3.md
 ---
 
 ## widget-translation-rules
@@ -2251,7 +2249,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/widget-trans
 
 module: theme
 topic: widget-translation-rules
-canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2263,7 +2260,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
 
 ---
 
@@ -3246,7 +3242,7 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
+- [User Module Widget Structure](../Modules/User/docs/widgets-structure.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
@@ -3269,7 +3265,6 @@ All widget development should follow these rules to maintain consistency and qua
 
 module: theme
 topic: widgets-structure
-canonical: ../../../Themes/docs/shared-components/widgets-structure.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -3281,7 +3276,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
 
 ---
 

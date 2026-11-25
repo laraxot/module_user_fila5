@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Collegamento al Modulo Cms
@@ -26,7 +26,6 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 - Il namespace corretto è sempre `Modules\<NomeModulo>\Filament`, anche se i file si trovano in `app/Filament`
 - Non va mai aggiunto `App` nel namespace
 Per dettagli specifici, consulta:
-- [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md) nel modulo Cms
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
 ## Punti di Integrazione
@@ -65,7 +64,6 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 - Non va mai aggiunto `App` nel namespace
 
 Per dettagli specifici, consulta:
-- [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
 
 ## Punti di Integrazione

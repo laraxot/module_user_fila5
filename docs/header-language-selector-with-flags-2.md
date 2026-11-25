@@ -36,7 +36,7 @@ related:
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
-- [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

@@ -1,10 +1,11 @@
 ---
 title: "Contratto — SendOtpByUserAction"
 type: contract
-action: "Modules\User\Actions\Otp\SendOtpByUserAction"
+action: 'Modules\User\Actions\Otp\SendOtpByUserAction'
 tags: [contract, action, otp, mail]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "sendotpbyuseraction input output invarianti effetti collaterali errori passworddata hasher execute void otp verifyotphashaction contracts"
 ---
 
 # SendOtpByUserAction

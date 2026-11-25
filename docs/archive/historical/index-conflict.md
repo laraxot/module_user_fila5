@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # User Module Documentation
@@ -69,7 +69,7 @@ This document serves as the central index for the User module, providing guidanc
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Profile Management](./profile-management.md)
-- [Routing Best Practices](./routing-best-practices.md)
+- [Routing Best Practices](../../routing-best-practices.md)
 - [Session Management](./session-management.md)
 
 ## Sottocartelle

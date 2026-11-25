@@ -311,7 +311,6 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -606,8 +605,34 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
+
+## Contenuto fuso da `user-factory-advanced-integration.md`
+
+├── User (SaluteOra) - STI Base + Business Logic
+
+| BaseUser Field | SaluteOra User | Business Logic | Factory Support |
+
+// SaluteOra User (Healthcare Domain)
+protected $connection = 'salute_ora';
+
+User::factory()->create(); // Uses 'salute_ora' connection
+
+    // SaluteOra domain contracts
+
+### For SaluteOra Module
+
+### SaluteOra Module
+- [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../SaluteOra/docs/models/states.md)
+
+- [User Factory Integration](./user-factory-integration.md)
+- [Traits Complete Guide](./traits-complete-guide.md)
+- [BaseUser Architecture](./parental_inheritance.md)
+
+- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
+- [Testing Standards](../../../../docs/testing_standards.md)

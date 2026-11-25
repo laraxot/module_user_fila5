@@ -21,7 +21,7 @@ related:
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.
-> Vedi [membership-autoincrement-fix.md](./membership-autoincrement-fix.md) per la soluzione corretta.
+> Vedi membership-autoincrement-fix.md per la soluzione corretta.
 
 ## Data Intervento
 **[DATE]** - Correzione gestione UUID nella tabella pivot team_user (SOLUZIONE DEPRECATA)

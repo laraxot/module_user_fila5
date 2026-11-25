@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Code Quality Analysis - User Module
@@ -326,7 +326,7 @@ public function getTableColumns(): array
 
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization.md)
-- [optimization-analysis.md](./optimization-analysis.md)
+- [optimization-analysis.md](../../optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.

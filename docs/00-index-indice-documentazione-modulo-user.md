@@ -59,7 +59,6 @@ related:
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
 
 ## 🧹 **Manutenzione**
-- 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
 
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../bashscripts/ai/wiki/memories/migrations-composer-modules.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)

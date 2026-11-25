@@ -159,3 +159,7 @@ Dopo le modifiche, eseguire:
 - [XotBaseModel](../../../../Xot/app/Models/XotBaseModel.php)
 - [XotBasePivot](../../../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../../../Xot/app/Models/XotBaseMorphPivot.php)
+
+## Contenuto fuso da `model-inheritance-analysis.md`
+
+- [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)

@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Implementation Summary - User Module Type Safety Improvements
@@ -166,7 +166,7 @@ All type casting operations now use safe methods:
 
 ### New Documentation Files
 
-1. **`phpstan-fixes.md`**: Comprehensive guide to PHPStan fixes
+1. **`../../_archive/phpstan-fixes.md`**: Comprehensive guide to PHPStan fixes
 2. **`type-safety-improvements.md`**: Detailed type safety implementation guide
 3. **`implementation-summary.md`**: This summary document
 
@@ -257,7 +257,7 @@ All changes follow established architectural patterns and maintain the high qual
 
 ### Documentation Files
 - `README.md`
-- `phpstan-fixes.md`
+- `../../_archive/phpstan-fixes.md`
 - `type-safety-improvements.md`
 - `implementation-summary.md`
 

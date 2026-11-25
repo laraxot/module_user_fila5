@@ -313,8 +313,22 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
-- [authentication_performance_optimization.md](./performance/authentication_performance_optimization.md)
+- [authentication_performance_optimization.md](./performance/authentication-performance-optimization.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
+
+## Contenuto fuso da `code-quality-analysis.md`
+
+- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/authentication-performance-optimization.md)
+
+## Contenuto fuso da `code-quality-analysis.md`
+
+---
+
+## Contenuto assorbito da `CODE_QUALITY_ANALYSIS.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [code_quality_analysis.md](./code-quality-analysis.md).

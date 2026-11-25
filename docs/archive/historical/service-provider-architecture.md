@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Service Provider Architecture - Module Pattern
@@ -387,7 +387,7 @@ test('user service provider only configures, not registers dependencies', functi
 
 ### Documentazione Correlata
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
-- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
+- [FILOSOFIA_MODULO_USER.md](../../filosofia-modulo-user.md) - Filosofia generale modulo
 - [README.md](./readme.md) - Overview modulo
 
 ### Documentazione Esterna

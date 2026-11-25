@@ -418,7 +418,6 @@ class MultiModuleSeeder extends Seeder {
 ---
 module: theme
 topic: user-factory-complete-ecosystem-integration
-canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -430,4 +429,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md

@@ -7,7 +7,7 @@ qmd: "volt blade implementation error analisi dellerrore"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path_conventions.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Identificazione dell'Errore
@@ -99,7 +99,6 @@ Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTAT
 ---
 module: theme
 topic: volt-blade-implementation-error
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -111,4 +110,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error.md

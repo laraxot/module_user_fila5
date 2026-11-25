@@ -1,3 +1,9 @@
+---
+title: "User Module - PHPStan Fixes Session 2025-10-01"
+type: note
+qmd: "phpstan fixes session stato progress errori rimanenti correzioni implementate baseuser php rimozione codice orfano critico aggiunta"
+---
+
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -231,4 +237,10 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **Prossima sessione**: 2 Ottobre 2025  
 **Obiettivo**: 0 errori User + Xot
 
+## Contenuto fuso da `phpstan-fixes.md`
 
+# Alias (superseded)
+
+Canonico: [`../phpstan-fixes.md`](../phpstan-fixes.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.

@@ -217,3 +217,7 @@ return [
 **🎯 Obiettivo**: Zero ->label() hardcoded  
 **✅ Status**: Prevenzione attiva e monitorata
 **✅ Status**: Prevenzione attiva e monitorata
+
+## Contenuto fuso da `label-hardcoded-prevention.md`
+
+- [Best Practices](best-practices.md)

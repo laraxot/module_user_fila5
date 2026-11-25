@@ -6,6 +6,7 @@ confidence: high
 updated: 2026-04-15
 related:
 qmd: "user overview"
+title: "User Module — Overview"
 ---
 
 # User Module — Overview

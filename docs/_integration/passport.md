@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: passport
-canonical: ../../../../Themes/docs/shared-components/passport.md
 related:
   - "./eav.md"
   - "./filament.md"
@@ -12,9 +11,9 @@ related:
   - "./phpstan.md"
   - "./profile.md"
 qmd: "passport"
+title: "passport"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
 # passport
 
 <!-- Contenuto migrato da _docs/passport.txt -->

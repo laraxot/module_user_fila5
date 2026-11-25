@@ -93,3 +93,10 @@ I duplicati di un canonico restano come alias `superseded`.
   `archive/phpstan-fixes-2025.md`, `_archive/phpstan-fixes-2025.md`
   (proposte → `*-historical` + stub verso canon già esistente).
   Parent: Xot story + [docs-md-hygiene-debt.md](../../../../Xot/docs/wiki/docs-md-hygiene-debt.md).
+
+- 2026-11-25b (docs-guardian boy-scout): `git-conflicts-resolution-2025-01-27.md`
+  già stub→`git-conflicts-resolution.md` (no edit). Convertiti a stub (max quota
+  shared): `archive/password-translation-completion-2025.md`,
+  `archive/phpstan-fixes-2025.md`, `_archive/phpstan-fixes-2025.md`.
+  Residui ACTIVE User dated year/ISO in scope find: **0**.
+  Parent: Xot `docs-md-filename-date-debt` boy-scout markers Notify/Job.

@@ -1,3 +1,9 @@
+---
+title: "git reset 2"
+type: note
+qmd: "git reset root import"
+---
+
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

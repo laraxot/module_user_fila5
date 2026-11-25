@@ -774,3 +774,17 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Filament](https://filamentphp.com/docs) - Per i componenti UI
 - [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization) - Per la gestione delle lingue
+
+## Contenuto fuso da `header-language-avatar-implementation.md`
+
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+
+Questo documento descrive come implementare nell'header di SaluteOra:
+
+L'header di SaluteOra è gestito tramite:
+- **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
+
+                    "alt": "Logo SaluteOra",
+                    "alt": "SaluteOra Logo",

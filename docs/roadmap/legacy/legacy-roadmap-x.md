@@ -1,3 +1,9 @@
+---
+title: "👥 USER MODULE - ROADMAP 2025"
+type: note
+qmd: "roadmap overview architettura completed features authentication system profile management authorization admin interface legacy"
+---
+
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  

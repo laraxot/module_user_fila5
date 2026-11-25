@@ -1,3 +1,9 @@
+---
+title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
+type: note
+qmd: "risoluzione conflitti git data riepilogo collegamenti correlati file risolti modelli trait widget filament livewire volt archive"
+---
+
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -307,4 +313,12 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
---- 
+---
+
+## Contenuto fuso da `git-conflicts-resolution.md`
+
+# git_conflicts_resolution
+
+Documento identico al canonico: [git-conflicts-resolution-.md](../_archive/git-conflicts-resolution.md).
+
+Canonico: `laravel/Modules/User/docs/_archive/git-conflicts-resolution.md`. Qui non ci sono istruzioni: seguire il file collegato.

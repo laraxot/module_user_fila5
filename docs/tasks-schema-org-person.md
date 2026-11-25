@@ -32,7 +32,6 @@ related:
 Implement Schema.org **Person** type for user profiles, speakers, and attendees to improve SEO, knowledge graph presence, and author attribution.
 
 **Reference Links:**
-- [schema-org-enhancements](schema-org-enhancements.md)
 - [Schema.org Person](https://schema.org/Person)
 - [Meetup schema-org-enhancement-recommendations](../../meetup/docs/schema-org-enhancement-recommendations.md)
 - [Meetup schema-org-research-comprehensive](../../meetup/docs/schema-org-research-comprehensive.md)
@@ -203,7 +202,6 @@ public function toPersonSchemaWithOrganization(): array
 
 - [ ] Add `memberOf` support for Team membership
 - [ ] Document Organization-Person relationship pattern
-- [ ] Update [schema-org-enhancements](schema-org-enhancements.md)
 
 ---
 
@@ -251,7 +249,6 @@ public function toPersonSchemaWithOrganization(): array
 
 ## Links
 
-- [schema-org-enhancements](schema-org-enhancements.md)
 - [profile-management](profile-management.md)
 - [Meetup schema-org-research-comprehensive](../../meetup/docs/schema-org-research-comprehensive.md)
 - [Meetup task-rsvp-actions](../../meetup/docs/task-rsvp-actions.md)

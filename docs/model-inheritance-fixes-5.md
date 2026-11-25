@@ -26,7 +26,5 @@ related:
 ---
 module: theme
 topic: model_inheritance_fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md

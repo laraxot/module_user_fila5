@@ -107,4 +107,9 @@ related:
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management.md) 
+- [Gestione Sessione](./session-management.md)
+
+## Contenuto fuso da `header-components.md`
+
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./session-management.md)

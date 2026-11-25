@@ -1,3 +1,9 @@
+---
+title: "User Module - Complete Roadmap 2026"
+type: note
+qmd: "complete roadmap identity domain authentication authorization purpose enterprise grade security management foundation philosophy not feature deep"
+---
+
 # User Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02

@@ -1,3 +1,9 @@
+---
+title: "PHPStan Array Types Fixes - Modulo User"
+type: note
+qmd: "phpstan array types fixes regola critica rispettata problema identificato errori identificati categoria console commands contracts datas"
+---
+
 # PHPStan Array Types Fixes - Modulo User
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

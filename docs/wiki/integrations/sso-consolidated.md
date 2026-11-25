@@ -30,7 +30,6 @@ Consolidated from **7** individual files.
 
 module: theme
 topic: sso-guide
-canonical: ../../../Themes/docs/shared-components/sso-guide.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -42,7 +41,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 
 ---
 

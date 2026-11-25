@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: phpstan-level10es
-canonical: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -12,9 +11,9 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "phpstan level10es correzioni livello user"
+title: "Correzioni PHPStan Livello 10 - Modulo User"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

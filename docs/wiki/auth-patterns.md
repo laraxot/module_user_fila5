@@ -143,3 +143,7 @@ POST /api/auth/logout
 
 - [Project Roadmap](../../../Activity/docs/wiki/project-roadmap.md)
 - [Tenant Module](../../../Tenant/docs/wiki/)
+
+## Contenuto fuso da `auth-patterns.md`
+
+- [Project Roadmap](../../../Activity/docs/wiki/PROJECT-ROADMAP.md)

@@ -15,7 +15,6 @@ related:
   - "./README.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
-  - "./user-gdpr-oupling.md"
 ---
 
 # Modulo User

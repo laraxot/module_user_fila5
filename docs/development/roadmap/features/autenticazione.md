@@ -8,12 +8,12 @@ qmd: "autenticazione autenticazione"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./audit-logging.md"
-  - "./autorizzazione.md"
-  - "./gestione-teams.md"
-  - "./gestione-utenti.md"
+  - "../../../roadmap/features/audit-logging.md"
+  - "../../../roadmap/features/autorizzazione.md"
+  - "../../../roadmap/features/gestione-teams.md"
+  - "../../../roadmap/features/gestione-utenti.md"
   - "./legacy-code-cleanup.md"
-  - "./user-analytics.md"
+  - "../../../roadmap/features/user-analytics.md"
   - "./user-traits.md"
 ---
 
@@ -92,10 +92,10 @@ Sistema di autenticazione completo con supporto per multiple strategie di login,
 | User Experience | Medium | Low | UX testing |
 
 ## Related Features
-- [Gestione Utenti](./gestione-utenti.md)
+- [Gestione Utenti](../../../roadmap/features/gestione-utenti.md)
 ### Versione HEAD
 
-- [Autorizzazione](./autorizzazione.md) 
+- [Autorizzazione](../../../roadmap/features/autorizzazione.md) 
 ## Collegamenti tra versioni di autenticazione.md
 * [autenticazione.md](docs/regole/autenticazione.md)
 * [autenticazione.md](docs/roadmap/core/autenticazione.md)
@@ -104,7 +104,7 @@ Sistema di autenticazione completo con supporto per multiple strategie di login,
 
 ### Versione Incoming
 
-- [Autorizzazione](./autorizzazione.md) 
+- [Autorizzazione](../../../roadmap/features/autorizzazione.md) 
 
 ---
 

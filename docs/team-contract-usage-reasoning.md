@@ -29,7 +29,6 @@ The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns wit
 ---
 module: theme
 topic: team-contract-usage-reasoning
-canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -41,4 +40,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md

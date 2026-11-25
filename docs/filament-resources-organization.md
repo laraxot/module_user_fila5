@@ -89,7 +89,7 @@ Modules/
 
 **Pattern**: Le risorse dentro un cluster seguono il namespace `Modules\{Module}\Filament\Clusters\{Cluster}\Resources`
 
-**Documentazione**: [Passport Cluster Pattern](./passport-cluster-resources-pattern.md)
+**Documentazione**: Passport Cluster Pattern
 # Organization of Filament Resources
 
 ## Namespace Structure

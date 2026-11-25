@@ -308,7 +308,6 @@ public function run(): void
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
-- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
 - [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)

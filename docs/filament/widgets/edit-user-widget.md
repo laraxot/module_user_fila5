@@ -10,7 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./dashboard-filters-integration.md"
   - "./registration-widget-fileupload-fix.md"
-  - "./registration-widget-fileupload.md"
   - "./registration-widget.md"
 ---
 

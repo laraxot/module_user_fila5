@@ -172,3 +172,13 @@ class DeleteUserAction
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-user.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
+
+## Contenuto fuso da `actions-structure.md`
+
+SaluteOra utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+
+use Modules\Xot\Contracts\UserContract;
+
+- [Path Conventions](./path-conventions.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure.md)

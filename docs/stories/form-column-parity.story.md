@@ -4,6 +4,7 @@ scope: module:User
 type: architecture
 updated: 2026-09-01
 qmd: "user form column parity UserColumn SingleRoleSelectColumn"
+title: "Story: parita' Forms/Components ↔ Tables/Columns (User)"
 ---
 
 # Story: parita' Forms/Components ↔ Tables/Columns (User)

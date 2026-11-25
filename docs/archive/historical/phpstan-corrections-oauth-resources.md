@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # PHPStan Corrections - OAuth Resources
@@ -123,8 +123,7 @@ TextColumn::make('name')
 ## 📚 Riferimenti
 
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
-- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
-- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
+- [Filament 4 Actions Namespace](../../filament-4-actions-namespace.md)
 
 ---
 

@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "moderation notifications notifiche moderazione"
+title: "Notifiche Moderazione"
 ---
 # Notifiche Moderazione
 

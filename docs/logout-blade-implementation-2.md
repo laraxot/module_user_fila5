@@ -232,7 +232,5 @@ Questa implementazione è semplice, sicura e segue tutte le best practices del p
 ---
 module: theme
 topic: logout_blade_implementation
-canonical: ../../../Themes/docs/shared-components/logout-blade-implementation-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-implementation-2.md

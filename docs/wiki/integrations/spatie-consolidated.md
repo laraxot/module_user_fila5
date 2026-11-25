@@ -35,7 +35,6 @@ Consolidated from **12** individual files.
 
 module: theme
 topic: spatie-models-verification
-canonical: ../../../Themes/docs/shared-components/spatie-models-verification.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -47,7 +46,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/spatie-models-verification.md
 
 ---
 
@@ -57,7 +55,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-model
 
 module: theme
 topic: spatie-permission-philosophy
-canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -69,7 +66,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
 
 ---
 
@@ -2734,7 +2730,6 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 module: theme
 topic: spatie-permissions
-canonical: ../../../Themes/docs/shared-components/spatie-permissions-2.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2746,7 +2741,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md
 
 ---
 

@@ -76,10 +76,8 @@ related:
 ---
 module: theme
 topic: user_factory_advanced_integration
-canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-3.md
 ---
 
 ## user-factory-advanced-integration
@@ -704,7 +702,6 @@ public function run(): void
 
 module: theme
 topic: user-factory-complete-ecosystem-integration
-canonical: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -716,7 +713,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md
 
 ---
 
@@ -2344,7 +2340,6 @@ https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invita
 
 module: theme
 topic: user-management
-canonical: ../../../Themes/docs/shared-components/user-management.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2356,7 +2351,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
 
 ---
 
@@ -2366,7 +2360,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/user-managem
 
 module: theme
 topic: user-profile-aration
-canonical: ../../../Themes/docs/shared-components/user-profile-separation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2378,7 +2371,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-profile-separation.md
 
 ---
 
@@ -2388,7 +2380,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/user-profile
 
 module: theme
 topic: user-profile-models
-canonical: ../../../Themes/docs/shared-components/user-profile-models.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2400,7 +2391,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
 
 ---
 
@@ -4705,7 +4695,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../../traits_complete_guide.md)
+- [Traits Complete Guide](../../traits-complete-guide.md)
 - [Authentication Framework](../../authentication.md)
 
 ---
@@ -4731,7 +4721,6 @@ public function test_bulk_sti_creation()
 
 module: theme
 topic: userfactory-advanced-implementation-complete
-canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -4743,7 +4732,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
 
 ---
 
@@ -5663,7 +5651,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [SaluteOra Factory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md)
-- [User Module Integration](../laravel/Modules/User/docs/user_factory_advanced_integration.md)
+- [User Module Integration](../laravel/Modules/User/docs/user-factory-advanced-integration.md)
 - [Advanced Analysis](../laravel/Modules/SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
 
 ### Technical References

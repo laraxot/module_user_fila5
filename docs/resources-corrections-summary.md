@@ -1,23 +1,8 @@
 ---
 title: "Resources Corrections Summary - 2025-01-22"
-type: concept
-tags: [resources, corrections, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "resources-corrections-summary resources corrections summary - 2025-01-22"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+type: note
+qmd: "resources corrections summary 20250122"
 ---
-
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo
@@ -172,6 +157,18 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 ## Collegamenti
 
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
-- [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
-- [Filament Best Practices](./filament-best-practices.md)
+---
+module: theme
+topic: resources-corrections-summary-
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+

@@ -35,7 +35,7 @@ related:
 - filament: multiple duplicate filament documentation files
 
 ### 2. structural issues
-- excessive nesting: `models/models/models/models/team.md`
+- excessive nesting: `models/team.md`
 - mixed file types: `.php`, `.json`, config files in docs directory
 - inconsistent organization
 

@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: redundancy-fixes
-canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -11,9 +10,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+title: "Correzioni Ridondanze - Gennaio 2026"
+qmd: "correzioni ridondanze gennaio problema identificato applicate rimozione hasxottable ridondante spostamento policy passport verifica qualità codice phpstan"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -144,11 +144,9 @@ Prima di committare, verifica:
 qmd: "redundancy fixes"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
 =======
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -279,5 +277,4 @@ Prima di committare, verifica:
 qmd: "redundancy fixes"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
 =======

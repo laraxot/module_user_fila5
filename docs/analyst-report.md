@@ -1,3 +1,9 @@
+---
+title: "User Module — Analyst Report"
+type: note
+qmd: "analyst report audit results summary top findings severity critical migration architecture violations core files high dry"
+---
+
 # User Module — Analyst Report
 
 **Date**: 2026-07-09  

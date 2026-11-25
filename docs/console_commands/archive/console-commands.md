@@ -1,3 +1,9 @@
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: note
+qmd: "filosofia comandi console principi fondamentali interattività moderna type safety rigorosa gestione errori robusta return codes standardizzati"
+---
+
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

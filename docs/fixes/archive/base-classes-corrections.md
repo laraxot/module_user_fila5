@@ -1,3 +1,9 @@
+---
+title: "Correzione Estensioni Classi Base - Modulo User"
+type: note
+qmd: "correzione estensioni classi base problema identificato regola violata analisi file corretti già verificati motivazioni correzioni tenant"
+---
+
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  

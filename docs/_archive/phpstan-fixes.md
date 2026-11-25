@@ -116,3 +116,11 @@ it('test name', function (): void {
 
 - [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
 - [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+
+## Contenuto fuso da `phpstan-fixes.md`
+
+# Alias (superseded)
+
+Canonico: [`../phpstan-fixes.md`](../phpstan-fixes.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.

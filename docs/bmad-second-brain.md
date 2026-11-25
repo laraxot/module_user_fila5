@@ -127,3 +127,11 @@ php artisan tinker --execute='foreach (["permissions", "roles", "model_has_permi
 - Deploy: `DB_DATABASE_USER=fixcity_user` + `config:clear` + migrate delle
   migration canoniche `create_*` sul modulo User.
 - Soft-guard: `BuildTicketTimelineAction` non chiama Spatie se manca la tabella.
+
+## Contenuto fuso da `bmad-second-brain.md`
+
+# BMAD + Second Brain — Fix Log
+
+- PHPStan: 309 `class.notFound` (mancanti `User`/`Profile` nei test, Riferimenti `Quaeris`)
+
+- Eseguire `php artisan migrate` per DB `restaurant_data`

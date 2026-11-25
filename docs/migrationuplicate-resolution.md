@@ -173,7 +173,6 @@ find Modules/User/database/migrations/ -name "*create_*_table.php" | \
 
 ## 📚 Riferimenti
 
-- [Migration Unicity Rule](./migration-unicity-rule.md)
 - [XotBaseMigration Commandment](../xot/docs/migration-unicity-commandment.md)
 - [Laraxot Philosophy](../xot/docs/philosophy.md)
 

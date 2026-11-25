@@ -182,8 +182,6 @@ cd laravel
 
 ## References
 
-- [Passport Cluster Proposal](./passport-cluster-proposal.md)
-- [Passport Cluster Philosophy](./passport-cluster-philosophy.md)
 - [Passport Cluster Inner Debate](./passport-cluster-inner-debate.md)
 - [Xot Filament Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)

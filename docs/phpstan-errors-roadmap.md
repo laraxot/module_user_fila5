@@ -1,3 +1,9 @@
+---
+title: "phpstan errors roadmap"
+type: note
+qmd: "phpstan errors roadmap strategia"
+---
+
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
 - [Property Exists vs Isset](../../Xot/docs/phpstan-code-quality-guide.md#5-property-access-su-mixed-eloquent---regola-critica)
@@ -12,7 +18,6 @@
 ---
 module: theme
 topic: phpstan-errors-roadmap
-canonical: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -25,4 +30,3 @@ related:
 qmd: "phpstan errors roadmap"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md

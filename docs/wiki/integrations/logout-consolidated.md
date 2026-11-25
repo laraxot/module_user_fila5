@@ -777,10 +777,8 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ---
 module: theme
 topic: logout_blade_analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-3.md
 ---
 
 ## logout-blade-analysis
@@ -789,7 +787,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -801,7 +798,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 
 ---
 
@@ -811,7 +807,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-conclusions
-canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -823,7 +818,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
 
 ---
 
@@ -1096,7 +1090,6 @@ return redirect()->to('/' . $locale);
 
 module: theme
 topic: logout-blade-corrected-analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1108,7 +1101,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
 
 ---
 
@@ -1118,7 +1110,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-corrected
-canonical: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1130,7 +1121,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
 
 ---
 
@@ -1269,10 +1259,8 @@ Questi errori evidenziano l'importanza di:
 ---
 module: theme
 topic: logout_blade_error_analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis-3.md
 ---
 
 ## logout-blade-error-analysis
@@ -1281,7 +1269,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-error-analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1293,7 +1280,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
 
 ---
 
@@ -1303,7 +1289,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-implementation
-canonical: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1315,7 +1300,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-implementation.md
 
 ---
 
@@ -1325,7 +1309,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-blade
 
 module: theme
 topic: logout-blade-structure
-canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1337,7 +1320,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
 
 ---
 
@@ -1597,7 +1579,6 @@ Questi errori evidenziano l'importanza di:
 
 module: theme
 topic: logout-error-analysis
-canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1609,7 +1590,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-error-analysis.md
 
 ---
 
@@ -1948,7 +1928,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 module: theme
 topic: logout-event
-canonical: ../../../Themes/docs/shared-components/logout-event-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1960,7 +1939,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error.md
 
 ---
 
@@ -1970,7 +1948,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-event
 
 module: theme
 topic: logout-implementation-best-practices
-canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1982,7 +1959,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 
 ---
 
@@ -2108,7 +2084,6 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 
 module: theme
 topic: logout-implementation-error
-canonical: ../../../Themes/docs/shared-components/logout-implementation-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2120,7 +2095,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
 
 ---
 
@@ -2305,10 +2279,8 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 ---
 module: theme
 topic: logout_implementation_with_laravel_localization
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization-3.md
 ---
 
 ## logout-implementation-with-laravel-localization
@@ -2317,7 +2289,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 module: theme
 topic: logout-implementation-with-laravel-localization
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2329,7 +2300,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 
 ---
 
@@ -2339,7 +2309,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 module: theme
 topic: logout-implementation
-canonical: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2351,7 +2320,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
 
 ---
 
@@ -2361,7 +2329,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-imple
 
 module: theme
 topic: logout-page-fix
-canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2373,7 +2340,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md
 
 ---
 
@@ -2406,10 +2372,8 @@ related:
 ---
 module: theme
 topic: logout_page_implementation
-canonical: ../../../Themes/docs/shared-components/logout-page-implementation-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation-3.md
 ---
 
 ## logout-page-implementation
@@ -2418,7 +2382,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/logout-page-
 
 module: theme
 topic: logout-page-implementation
-canonical: ../../../Themes/docs/shared-components/logout-page-implementation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2430,7 +2393,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation.md
 
 ---
 

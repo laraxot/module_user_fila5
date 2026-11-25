@@ -22,7 +22,7 @@ related:
 
 **Status**: ✅ COMPLETATO
 **Metodologia**: Super Mucca
-**Vedi**: [passport-cluster-implementation-completed.md](./passport-cluster-implementation-completed.md)
+**Vedi**: passport-cluster-implementation-completed.md
 
 ---
 

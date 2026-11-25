@@ -20,10 +20,10 @@ related:
 
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Errore Logout](logout_blade_error_analysis.md)
-- [Widget Filament Corretto](logout_filament_widget_corrected.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Widget Filament Corretto](logout-filament-widget-corrected.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato
@@ -163,7 +163,5 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 ---
 module: theme
 topic: logout_event_error
-canonical: ../../../Themes/docs/shared-components/logout-event-error-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error-2.md

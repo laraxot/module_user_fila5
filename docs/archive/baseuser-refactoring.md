@@ -1,3 +1,9 @@
+---
+title: "BaseUser Refactoring - Completato"
+type: note
+qmd: "baseuser refactoring completato eseguito risultati metodi rimossi spatie permission già trait laravel auth parent traits helper"
+---
+
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  

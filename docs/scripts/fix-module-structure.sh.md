@@ -1,11 +1,10 @@
 ---
 module: theme
 topic: fix-module-structure.sh
-canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 qmd: "fix structure sh configurazione"
+title: "Configurazione"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 #!/bin/bash
 
 # Configurazione

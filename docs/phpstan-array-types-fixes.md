@@ -1,3 +1,9 @@
+---
+title: "phpstan array types fixes"
+type: note
+qmd: "phpstan array types fixes"
+---
+
 - [Xot - PHPStan Missing Array Types](../Xot/docs/phpstan-missing-array-types-fixes.md)
 - [Xot - PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md)
 - [docs_project - PHPStan Intouchable Rule](../../../docs_project/phpstan-intouchable-rule.md)
@@ -11,7 +17,6 @@
 ---
 module: theme
 topic: phpstan-array-types-fixes
-canonical: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -24,4 +29,3 @@ related:
 qmd: "phpstan array types fixes"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md

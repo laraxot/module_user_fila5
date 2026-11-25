@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Analisi Dettagliata di LoginWidget
@@ -91,7 +91,6 @@ related:
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
-- [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`
@@ -165,4 +164,3 @@ related:
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
-- [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.

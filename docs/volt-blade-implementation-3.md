@@ -305,7 +305,5 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ---
 module: theme
 topic: volt_blade_implementation
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-3.md

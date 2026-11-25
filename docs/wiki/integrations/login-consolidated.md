@@ -194,7 +194,7 @@ related:
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
@@ -268,7 +268,7 @@ related:
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../../widgets-structure-user.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
@@ -280,7 +280,6 @@ related:
 
 module: theme
 topic: login-widget-conversion
-canonical: ../../../Themes/docs/shared-components/login-widget-conversion.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -292,7 +291,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-conversion.md
 
 ---
 
@@ -495,7 +493,6 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 module: theme
 topic: login-widget-livewire-binding-fix
-canonical: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -507,7 +504,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 
 ---
 
@@ -641,7 +637,6 @@ Tutti i widget senza modello devono:
 
 module: theme
 topic: login-widget-translation
-canonical: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -653,7 +648,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
 
 ---
 
@@ -663,7 +657,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 
 module: theme
 topic: login-widget
-canonical: ../../../Themes/docs/shared-components/login-widget-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -675,7 +668,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-analysis.md
 
 ---
 
@@ -752,7 +744,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 8. Utilizzare `Notification::make()->danger()` per messaggi utente-friendly.
 
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
 
@@ -852,7 +844,7 @@ class LoginWidget extends XotBaseWidget
 - Alcune funzionalità (es. `render()`) non sono necessarie nel widget.
 
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../../widgets-structure.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
 
@@ -1069,7 +1061,6 @@ class LoginWidget extends XotBaseWidget
 
 module: theme
 topic: loginwidget
-canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1081,7 +1072,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
 
 ---
 

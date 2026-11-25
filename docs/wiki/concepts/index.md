@@ -59,3 +59,8 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - Cms: [folio-list-vs-route-list](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md) — `folio:list` audit
 - Cms: [folio-filesystem-routing-no-web-php](../../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md) — religione routing
 
+## Contenuto fuso da `index.md`
+
+- [filament-widget-no-validate-form](filament-widget-no-validate-form.md) — validazione solo in `UserForm`; submit = `getState()`, no `validateForm()`
+
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity

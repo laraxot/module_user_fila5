@@ -363,3 +363,8 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
 
+## Contenuto fuso da `baseuser-refactoring-completed.md`
+
+- [Refactoring Plan](../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+
+- [DRY Violations](../../docs/dry-violations-analysis.md)

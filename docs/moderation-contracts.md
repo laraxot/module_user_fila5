@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "moderation contracts contratti interfacce moderazione utenti"
+title: "Contratti e Interfacce per la Moderazione Utenti"
 ---
 # Contratti e Interfacce per la Moderazione Utenti
 

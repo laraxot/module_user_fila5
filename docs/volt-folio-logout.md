@@ -386,3 +386,15 @@ invece di:
 ## Conclusione
 
 Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . Assicurarsi di includere sempre la localizzazione negli URL e di utilizzare i componenti Filament per la UI.
+
+## Contenuto fuso da `volt-folio-logout.md`
+
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+
+Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
+
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
+
+Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:

@@ -386,3 +386,14 @@ return [
 - [Documentazione Blade Icons](https://github.com/blade-ui-kit/blade-icons)
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
+
+## Contenuto fuso da `header-language-selector-with-flags.md`
+
+- [Convenzioni Path](./path-conventions.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Implementazione Header](/laravel/Modules/User/docs/header-language-avatar-implementation.md)
+
+Questo documento descrive come migliorare il selettore di lingua nell'header di SaluteOra utilizzando le bandiere SVG disponibili nel modulo UI, rendendo il componente più visibile e accattivante.
+
+Le bandiere SVG sono disponibili in `/var/www/html/saluteora/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade tramite il sistema di registrazione delle icone di Blade. Questo avviene grazie al metodo `registerBladeIcons()` nel `XotBaseServiceProvider`.

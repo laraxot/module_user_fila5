@@ -14,9 +14,9 @@ related:
 
 ---
 
-<!-- Contenuto unito da phpstan-belongstomany-covariance-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da phpstan-belongstomany-covariance.md (rimozione date dai nomi file, issue #64) -->
 
-<!-- recovery from broken basename `phpstan-belongstomany-covariance-.md` after docs-guardian mass rename -->
+<!-- recovery from broken basename `phpstan-belongstomany-covariance.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
@@ -24,7 +24,7 @@ Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file
 
 ---
 
-<!-- Contenuto unito da phpstan-belongstomany-covariance-06.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da phpstan-belongstomany-covariance-covarianza-hasteams-usercontract.md (rimozione date dai nomi file, issue #64) -->
 
 # PHPStan: BelongsToMany covarianza — HasTeams / UserContract
 

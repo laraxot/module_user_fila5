@@ -70,7 +70,6 @@ Volt scoprirà automaticamente la rotta `logout` grazie all’Attribute.
 ---
 module: theme
 topic: volt-logout-action
-canonical: ../../../Themes/docs/shared-components/volt-logout-action.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -82,4 +81,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-logout-action.md

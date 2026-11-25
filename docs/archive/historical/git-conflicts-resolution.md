@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
@@ -316,7 +316,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ### **Documentazione Aggiornata:**
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
-- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-user.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
 
@@ -635,7 +634,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ### **Documentazione Aggiornata:**
 - [widgets-structure-2.md](./widgets-structure-user.md) - Regole per widget structure
-- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-user.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
 

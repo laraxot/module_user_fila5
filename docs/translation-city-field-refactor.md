@@ -203,7 +203,6 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 ---
 module: theme
 topic: translation-city-field-refactor
-canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -215,4 +214,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md

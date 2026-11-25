@@ -1,3 +1,9 @@
+---
+title: "PHPStan Analysis - User Module"
+type: note
+qmd: "phpstan analysis status overview progress history historical documentation current key issues remaining error old_tasks"
+---
+
 # PHPStan Analysis - User Module
 
 ## 📊 Status

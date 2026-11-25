@@ -202,3 +202,12 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
+
+## Contenuto fuso da `model-inheritance-fixes.md`
+
+- [Analisi Completa](./model-inheritance-analysis.md)
+- [Regole Qualità Codice](../../../.windsurf/rules/quality-gates.md)
+
+## Contenuto fuso da `model-inheritance-fixes.md`
+
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User

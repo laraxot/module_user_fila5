@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # FullCalendar Scheduler - Documentazione Completa
@@ -25,7 +25,7 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto <nome progetto>, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
 ## Documenti Disponibili
 ### 📚 Documentazione Principale
-#### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting.md)
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -41,13 +41,13 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Configurazioni essenziali
 - Comandi di debug
 ### 📖 Documentazione Esistente (Aggiornata)
-#### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license.md)
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-#### 4. [Scheduler License Key](./scheduler-license-key.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -100,7 +100,7 @@ La documentazione copre tutti i livelli:
 ## Utilizzo della Documentazione
 ### 🚀 Per Sviluppatori
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
-2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting.md)
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 ### 🔧 Per Troubleshooting
 1. **Errore immediato**: Usare Quick Reference per fix rapidi
@@ -167,7 +167,7 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📚 Documentazione Principale
 
-#### 1. [FullCalendar Scheduler Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+#### 1. [FullCalendar Scheduler Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting.md)
 **Documento principale** - Guida completa e dettagliata che copre:
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
@@ -185,13 +185,13 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 
 ### 📖 Documentazione Esistente (Aggiornata)
 
-#### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
+#### 3. [FullCalendar Scheduler License](../../fullcalendar-scheduler-license.md)
 Documentazione base esistente per:
 - Panoramica generale licenze
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key.md)
+#### 4. [Scheduler License Key](../../scheduler-license-key.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -259,7 +259,7 @@ La documentazione copre tutti i livelli:
 ### 🚀 Per Sviluppatori
 
 1. **Primo setup**: Leggere [Quick Reference](./fullcalendar-scheduler-quick-reference.md)
-2. **Problemi specifici**: Consultare [Troubleshooting](./fullcalendar-scheduler-license-troubleshooting.md)
+2. **Problemi specifici**: Consultare [Troubleshooting](../../fullcalendar-scheduler-license-troubleshooting.md)
 3. **Configurazione avanzata**: Seguire esempi completi nel troubleshooting
 
 ### 🔧 Per Troubleshooting

@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "relazioni utenti team relazione utentiteam tabella"
+title: "Relazione utenti-team: tabella pivot `doctor_team`"
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 

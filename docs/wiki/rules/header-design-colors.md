@@ -12,6 +12,7 @@ related:
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
 qmd: "header design colors"
+title: "header design colors"
 ---
 
 ## Rule Overview

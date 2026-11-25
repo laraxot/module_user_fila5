@@ -11,7 +11,7 @@ qmd: "logout implementation with laravel localization"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
@@ -19,7 +19,7 @@ qmd: "logout implementation with laravel localization"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
@@ -176,7 +176,6 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 ---
 module: theme
 topic: logout-implementation-with-laravel-localization
-canonical: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -188,4 +187,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md

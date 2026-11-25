@@ -28,7 +28,5 @@ related:
 ---
 module: theme
 topic: team_bindings_fix
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix-3.md

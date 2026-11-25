@@ -555,7 +555,5 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 ---
 module: theme
 topic: volt_folio_auth_implementation
-canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-auth-implementation-3.md

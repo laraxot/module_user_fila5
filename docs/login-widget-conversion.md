@@ -100,7 +100,6 @@ class LoginWidget extends XotBaseWidget
 ---
 module: theme
 topic: login-widget-conversion
-canonical: ../../../Themes/docs/shared-components/login-widget-conversion.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -112,4 +111,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/login-widget-conversion.md
+## Contenuto fuso da `login-widget-conversion.md`
+
+- [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.

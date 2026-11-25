@@ -13,7 +13,6 @@ related:
   - "./README.md"
   - "./team.md"
   - "./teampermission.md"
-  - "./xotbasepivot-migration.md"
 ---
 
 # User Module - XotBasePivot Migration

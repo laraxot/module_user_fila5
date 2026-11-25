@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "best practices migrazioni xotbasemigration"
+title: "Best Practices Migrazioni XotBaseMigration"
 ---
 # Best Practices Migrazioni XotBaseMigration
 

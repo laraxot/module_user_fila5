@@ -7,11 +7,11 @@ qmd: "logout blade analysis analisi logoutbladephp"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
 ## Panoramica
 
@@ -448,7 +448,6 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ---
 module: theme
 topic: logout-blade-analysis
-canonical: ../../../Themes/docs/shared-components/logout-blade-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -460,4 +459,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md

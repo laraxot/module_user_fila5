@@ -252,7 +252,6 @@ $subject = Lang::get('user::email.password_reset_subject');
 ---
 module: theme
 topic: phpstan-fixes-gennaio
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -264,4 +263,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md

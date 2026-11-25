@@ -11,11 +11,9 @@ related:
   - "./assign-module-command.md"
   - "./console-commands-philosophy-1-1.md"
   - "./console-commands-philosophy.md"
-  - "./console-commands.md"
   - "./readme.md"
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
-  - "./console-commands.md"
   - "./README.md"
 ---
 
@@ -366,7 +364,6 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)
-- [Password Management](../password.md)
 
 ## Aggiornamenti
 

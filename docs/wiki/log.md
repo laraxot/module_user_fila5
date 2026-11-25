@@ -9,10 +9,8 @@ qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
 related:
-  - "./agents.md"
   - "./architecture.md"
   - "./auth-patterns.md"
-  - "./bmad-method.md"
   - "./context-compression.md"
   - "./index.md"
   - "./overview.md"

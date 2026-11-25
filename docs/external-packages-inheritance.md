@@ -158,7 +158,6 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 
 ## 📚 Riferimenti
 
-- [Filosofia Spatie Permission](./spatie-permission-philosophy.md)
 - [Architettura Modelli](../xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../xot/docs/critical-architecture-rules.md)
 

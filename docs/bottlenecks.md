@@ -429,7 +429,6 @@ class AuthLogAnalyticsService
 Implementando queste soluzioni, il modulo User potrà superare i principali colli di bottiglia e migliorare significativamente le performance dell'applicazione. È consigliabile implementare le soluzioni in modo incrementale, misurando l'impatto di ciascuna modifica per garantire miglioramenti effettivi.
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-- [Best Practices Filament](./filament-best-practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module-structure-2.md)
 ## Collegamenti tra versioni di BOTTLENECKS.md

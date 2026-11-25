@@ -287,7 +287,6 @@ Se una delle risposte è "no", la migration **non rispetta la filosofia Laraxot*
 ---
 module: theme
 topic: migration-best-practices
-canonical: ../../../Themes/docs/shared-components/migration-best-practices-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -299,4 +298,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/migration-best-practices-Modules.md
+## Contenuto fuso da `migration-best-practices.md`
+
+- **Non dichiarare `$model_class` se il file è `*_create_{modello}_table.php`**
+  - `XotBaseMigration::getModelClass()` ricava modulo e modello dal path e dal nome file.
+  - `create_users_table` nel modulo Fixcity è `Modules\Fixcity\Models\User`.
+  - `$model_class` solo se il nome file non è quel contratto.
+
+- niente `$model_class`: `create_teams_table` risolve già `Team`
+
+2. Il file è `*_create_{modello}_table.php`, senza `$model_class`?

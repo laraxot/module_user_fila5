@@ -1,7 +1,8 @@
 ---
 type: investigation
 title: "Investigation Teams & Roles"
-links: {github_issue: #XXX}
+links: '{github_issue: #XXX}'
+qmd: "investigation teams roles problem statement current state feature missing proposed solution acceptance criteria next steps"
 ---
 # Investigation: Teams & Roles
 

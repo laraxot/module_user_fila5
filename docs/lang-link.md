@@ -92,3 +92,15 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../Activity/docs/lang-link.md)
 * [lang-link.md](../../../patient/docs/lang-link.md)
 * [lang-link.md](../../Cms/docs/lang-link.md)
+
+## Contenuto fuso da `lang-link.md`
+
+- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+
+* [lang-link.md](../../../Chart/docs/lang-link.md)
+* [lang-link.md](../../../Reporting/docs/lang-link.md)
+* [lang-link.md](../../../Xot/docs/lang-link.md)
+* [lang-link.md](../../../Dental/docs/lang-link.md)
+* [lang-link.md](lang-link.md)
+* [lang-link.md](../../../UI/docs/lang-link.md)
+* [lang-link.md](../../../Patient/docs/lang-link.md)

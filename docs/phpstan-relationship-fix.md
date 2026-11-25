@@ -99,3 +99,7 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
+
+## Contenuto fuso da `phpstan-relationship-fix.md`
+
+- [Eloquent Relationships](https://laravel.com/docs/12.x/eloquent-relationships)

@@ -8,6 +8,7 @@ module: User
 related:
   - "../../../Quaeris/docs/stories/token-failure-silently-breaks-invite-chain.story.md"
 tags: [bmad, eloquent, performance, moduli-condivisi]
+qmd: "sei accessor nei moduli condivisi scrivono database quando vengono letti scopo stato misurato perche corretto subito"
 ---
 
 # Sei accessor nei moduli condivisi scrivono a database quando vengono letti

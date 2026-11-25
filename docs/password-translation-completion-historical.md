@@ -113,7 +113,7 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 ## Collegamenti
 
 - [Documentazione Modulo User](../README.md)
-- [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
+- [Best Practices Traduzioni](../../Lang/docs/translation-standards.md)
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro
@@ -129,7 +129,6 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 ---
 module: theme
 topic: password-translation-completion-2025
-canonical: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -141,4 +140,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/password-translation-completion-2025.md

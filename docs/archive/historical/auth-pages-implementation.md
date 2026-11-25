@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Implementazione Corretta delle Pagine Auth
@@ -27,7 +27,6 @@ related:
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Volt Logout Action](./volt-logout-action.md)
 
 ## Introduzione
 
@@ -490,7 +489,6 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Volt Logout Action](./volt-logout-action.md)
 
 ## Introduzione
 

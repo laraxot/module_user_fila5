@@ -10,7 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./edit-user-widget.md"
   - "./implementation-summary.md"
-  - "./implementation.md"
   - "./translation-guidelines.md"
 ---
 

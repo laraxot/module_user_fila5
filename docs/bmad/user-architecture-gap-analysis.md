@@ -1,3 +1,9 @@
+---
+title: "User — Analisi architetturale e gap (BMAD, 2026-09-22)"
+type: note
+qmd: "analisi architetturale gap bmad inventario sintetico top architetturali punti sani work item esito clean fase queueableaction"
+---
+
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
 ---

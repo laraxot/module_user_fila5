@@ -96,3 +96,19 @@ find Modules/User -type d -name "Resources" -o -name "Lang" -o -name "Config" -o
 - [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
 - [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
 - Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
+
+## Contenuto fuso da `directory-structure-checklist.md`
+
+# directory_structure_checklist - User
+
+## Overview
+
+Documentazione per directory_structure_checklist nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)

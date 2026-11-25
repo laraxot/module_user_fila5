@@ -1,3 +1,9 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Improvements - User Module"
+type: note
+qmd: "phpstan level dry kiss improvements summary risultati fixes applied phpdoc references fixed duplicate connection properties removed"
+---
+
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary

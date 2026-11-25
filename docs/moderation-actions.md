@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "moderation actions azioni moderazione action class"
+title: "Azioni di Moderazione (Action class)"
 ---
 # Azioni di Moderazione (Action class)
 

@@ -1,3 +1,9 @@
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: note
+qmd: "phpstan level fixes riepilogo intervento correzioni applicate passwordresetconfirmwidget php registrationwidget hasteams hastenants resetpassword old_tasks"
+---
+
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento

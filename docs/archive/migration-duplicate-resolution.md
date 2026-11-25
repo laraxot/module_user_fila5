@@ -1,3 +1,9 @@
+---
+title: "📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES"
+type: note
+qmd: "risoluzione completa duplicati migration roles problema identificato analisi filosofica violazione sistemica filosofia laraxot religione politica azione"
+---
+
 # 📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES
 
 ## 🚨 PROBLEMA IDENTIFICATO

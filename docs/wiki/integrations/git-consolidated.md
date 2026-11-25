@@ -4645,8 +4645,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 ## Collegamenti correlati
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/README.md)
-- [Auth Components Best Practices](/laravel/Modules/User/docs/auth_components_best_practices.md)
-- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
+- [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
 
 ## File Risolti
@@ -5294,7 +5294,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 module: theme
 topic: gits-resolution
-canonical: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -5306,7 +5305,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
 
 ---
 

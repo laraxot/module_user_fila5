@@ -1,17 +1,24 @@
 ---
-module: theme
-topic: service-provider-warning
-canonical: ../../../Themes/docs/shared-components/service-provider-warning.md
-related:
-  - "./00-index-indice-documentazione-modulo-user.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
-qmd: "service provider warning"
+title: "service_provider_warning - User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+qmd: "service provider warning serviceproviderwarning user"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
+# service_provider_warning - User
+
+## Overview
+
+Documentazione per service_provider_warning nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+

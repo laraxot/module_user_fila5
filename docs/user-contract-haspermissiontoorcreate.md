@@ -27,3 +27,7 @@ Metodo richiesto da `Modules\Xot\Contracts\UserContract::hasPermissionToOrCreate
 Implementato in `BaseUser` (modulo User), quindi disponibile anche a Predict.
 
 Workflow BMAD + Second Brain applicato: consultati `docs/tools/bmad-method.md`, `wiki/concepts/second-brain-max-power.md`, `../../Xot/docs/consolidated/phpstan/phpstan-workflow-2.md`.
+
+## Contenuto fuso da `user-contract-haspermissiontoorcreate.md`
+
+Workflow BMAD + Second Brain applicato: consultati `docs/tools/bmad-method.md`, `wiki/concepts/second-brain-max-power.md`, `rules/phpstan-workflow.md`.

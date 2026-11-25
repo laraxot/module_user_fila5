@@ -37,6 +37,8 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 - Non embeddare Commands nei prompt di avvio
 - Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/index.md)
 
+- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
+
 ## Aggiungere una Nuova COMMANDS
 
 1. Crea `../commands/<nome>.md` con contenuto completo

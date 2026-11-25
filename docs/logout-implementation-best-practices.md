@@ -11,13 +11,13 @@ qmd: "logout implementation best practices"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -257,7 +257,6 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 ---
 module: theme
 topic: logout-implementation-best-practices
-canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -269,4 +268,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md

@@ -12,6 +12,7 @@ related:
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 qmd: "cursor rules regola migrazioni xotbasemigration"
+title: "Regola Cursor: Migrazioni XotBaseMigration"
 ---
 # Regola Cursor: Migrazioni XotBaseMigration
 

@@ -22,9 +22,9 @@ related:
 
 ---
 
-<!-- Contenuto unito da ponytail-audit-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da ponytail-audit.md (rimozione date dai nomi file, issue #64) -->
 
-<!-- recovery from broken basename `ponytail-audit-.md` after docs-guardian mass rename -->
+<!-- recovery from broken basename `ponytail-audit.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 

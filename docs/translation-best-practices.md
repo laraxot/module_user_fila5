@@ -164,4 +164,8 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](./module-structure-user.md) 
+- [Struttura Moduli](./module-structure-user.md)
+
+## Contenuto fuso da `translation-best-practices.md`
+
+- [Struttura Moduli](./module-structure.md)

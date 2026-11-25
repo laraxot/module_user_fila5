@@ -1,3 +1,9 @@
+---
+title: "TeamsRelationManager in User Module"
+type: note
+qmd: "teamsrelationmanager panoramica regola fondamentale esempio corretto anti pattern evitare checklist warning collegamenti final archive"
+---
+
 # TeamsRelationManager in User Module
 
 ## Panoramica

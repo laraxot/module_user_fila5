@@ -1064,7 +1064,7 @@ Provide a secure, highly-scalable authentication and authorization system for th
 
 ---
 
-<!-- Contenuto unito da roadmap-2025.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da roadmap.md (rimozione date dai nomi file, issue #64) -->
 
 # 👥 USER MODULE - ROADMAP 2025
 
@@ -1546,3 +1546,15 @@ User Module
 ---
 
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+
+## Contenuto fuso da `roadmap.md`
+
+### 🎫 <nome progetto> Module
+
+## Contenuto fuso da `roadmap.md`
+
+# Alias (superseded)
+
+Canonico: [`./roadmap.md`](./roadmap.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.

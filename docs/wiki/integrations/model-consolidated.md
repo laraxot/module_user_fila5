@@ -41,7 +41,6 @@ Consolidated from **18** individual files.
 
 module: theme
 topic: model-classification
-canonical: ../../../Themes/docs/shared-components/model-classification-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -53,7 +52,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
 
 ---
 
@@ -1232,10 +1230,8 @@ related:
 ---
 module: theme
 topic: model_inheritance_fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes-5.md
 ---
 
 ## model-inheritance-fixes
@@ -1244,7 +1240,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-inheri
 
 module: theme
 topic: model-inheritance-fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1256,7 +1251,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
 
 ---
 
@@ -2493,7 +2487,7 @@ Dopo le modifiche, eseguire:
 
 ## model_inheritance_fixes
 
-*Consolidated from: `model_inheritance_fixes.md`*
+*Consolidated from: `model-inheritance-fixes.md`*
 
 
 ## Data Implementazione
@@ -2683,7 +2677,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+- [Analisi Completa](./model-inheritance-analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
@@ -2697,7 +2691,6 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 module: theme
 topic: modelli-factory-seeder-analisi
-canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2709,7 +2702,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 
 ---
 
@@ -2902,7 +2894,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../Tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../../../Notify/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../../../Notify/docs/modelli-factory-seeder-analisi.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
@@ -3001,7 +2993,6 @@ All business models have factories. Infrastructure correctly excluded.
 
 module: theme
 topic: models
-canonical: ../../../Themes/docs/shared-components/models-analysis.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -3013,7 +3004,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/models-analysis.md
 
 ---
 

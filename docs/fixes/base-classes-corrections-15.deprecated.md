@@ -13,8 +13,7 @@ related:
   - "./base-classes-corrections-3.md"
   - "./base-classes-corrections.md"
   - "../../../UI/docs/phpstan-fixes-1-2.md"
-  - "./phpstan-fixes.md"
-  - "./phpstanes.md"
+  - "../bug-tracking/phpstan-fixes.md"
 ---
 
 > Questo file è stato rinominato in [base-classes-corrections-2.deprecated.md](base-classes-corrections-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

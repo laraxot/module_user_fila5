@@ -112,7 +112,6 @@ To maintain PHPStan compliance:
 5. Re-run `./vendor/bin/phpstan analyse Modules` before considering the work complete
 
 ## Related Documentation
-- [User Management Guide](user-management.md)
 - [Authentication Patterns](authentication-patterns.md)
 - [Role and Permissions](role-permissions.md)
 - [Team Management](team-management.md)

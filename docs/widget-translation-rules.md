@@ -349,7 +349,6 @@ All widget development should follow these rules to maintain consistency and qua
 ---
 module: theme
 topic: widget-translation-rules
-canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -361,4 +360,9 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+## Contenuto fuso da `widget-translation-rules.md`
+
+- [User Module Widget Structure](widgets-structure.md)
+- [EditUserWidget Documentation](widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

@@ -44,4 +44,3 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 ## Riferimenti
 
 - [conflict_resolution_report](conflict-resolution-report.md)
-- [rules-index](rules-index.md)

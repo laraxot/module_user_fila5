@@ -421,3 +421,15 @@ rules([
 ## Conclusione
 
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+
+## Contenuto fuso da `auth-login-implementation.md`
+
+- [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation.md)
+
+La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di SaluteOra. Ecco i principali miglioramenti apportati:
+
+Secondo le regole di SaluteOra, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
+
+Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di SaluteOra, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.

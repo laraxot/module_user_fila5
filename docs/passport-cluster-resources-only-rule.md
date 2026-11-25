@@ -120,7 +120,6 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 ## 📚 Riferimenti
 
 - [Passport Cluster Summary](./passport-cluster-summary.md)
-- [Passport Cluster Implementation](./passport-cluster-implementation-completed.md)
 - [Filament Clusters Documentation](../../xot/docs/filament-class-extension-rules.md)
 
 ---

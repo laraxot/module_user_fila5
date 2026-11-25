@@ -228,7 +228,6 @@ class CustomModel extends VendorModelAlias
 
 ## 📚 RIFERIMENTI
 
-- [Spatie Permission Philosophy](spatie-permission-philosophy.md)
 - [BaseModel Philosophy](../Xot/docs/basemodel-philosophy.md)
 - [External Package Integration](../Xot/docs/external-packages.md)
 - [Class Responsibility Separation](../Xot/docs/class-responsibility.md)

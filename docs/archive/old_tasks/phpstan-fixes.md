@@ -1,3 +1,9 @@
+---
+title: "Correzioni PHPStan Livello 7 - Modulo User"
+type: note
+qmd: "correzioni phpstan livello errori identificati profile php soluzioni implementate correzione versione head collegamenti tra versioni phpstan_fixes"
+---
+
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.

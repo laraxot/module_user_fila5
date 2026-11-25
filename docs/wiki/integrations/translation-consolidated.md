@@ -659,7 +659,6 @@ related:
 
 module: theme
 topic: translation-city-field-refactor-conflict
-canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -671,7 +670,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
 
 ---
 
@@ -707,7 +705,6 @@ related:
 
 module: theme
 topic: translation-city-field-refactor
-canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -719,7 +716,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
 
 ---
 
@@ -827,7 +823,6 @@ NEVER remove the 'fields' key from translation files as it is critical for the F
 
 module: theme
 topic: translation-fixes
-canonical: ../../../Themes/docs/shared-components/translation-fixes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -839,7 +834,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
 
 ---
 
@@ -1038,7 +1032,6 @@ return [
 
 module: theme
 topic: translation-keys
-canonical: ../../../Themes/docs/shared-components/translation-keys-rules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1050,7 +1043,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md
 
 ---
 
@@ -1240,7 +1232,6 @@ Ogni intervento deve essere documentato seguendo questo template per mantenere l
 
 module: theme
 topic: translation-resolution-prototype
-canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1252,7 +1243,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 
 ---
 
@@ -1262,7 +1252,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 
 module: theme
 topic: translation-syntax-fixes-
-canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1274,7 +1263,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
 
 ---
 
@@ -1989,7 +1977,6 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 
 module: theme
 topic: translations
-canonical: ../../../Themes/docs/shared-components/translations.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2001,7 +1988,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/translations.md
 
 ---
 

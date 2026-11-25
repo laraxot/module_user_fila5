@@ -2930,7 +2930,6 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 module: theme
 topic: codex-error-fix
-canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -2942,7 +2941,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/codex-error-fix.md
 
 ---
 

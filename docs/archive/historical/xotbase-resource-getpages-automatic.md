@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # XotBaseResource getPages() Automatic: Filosofia DRY
@@ -123,5 +123,4 @@ public static function getPages(): array
 ## Collegamenti
 
 - [XotBaseResource Source Code](../../../Xot/app/Filament/Resources/XotBaseResource.php)
-- [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
-- [Filament Best Practices](./filament-best-practices.md)
+- [Filament Resources Philosophical Debate](../../filament-resources-philosophical-debate.md)

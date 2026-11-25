@@ -8,13 +8,13 @@ qmd: "user-traits user traits implementation"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./audit-logging.md"
+  - "../../../roadmap/features/audit-logging.md"
   - "./autenticazione.md"
-  - "./autorizzazione.md"
-  - "./gestione-teams.md"
-  - "./gestione-utenti.md"
+  - "../../../roadmap/features/autorizzazione.md"
+  - "../../../roadmap/features/gestione-teams.md"
+  - "../../../roadmap/features/gestione-utenti.md"
   - "./legacy-code-cleanup.md"
-  - "./user-analytics.md"
+  - "../../../roadmap/features/user-analytics.md"
 ---
 
 # User Traits Implementation

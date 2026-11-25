@@ -18,7 +18,6 @@ related:
 ## Prerequisiti
 
 - Account GitHub attivo
-- Applicazione Laravel con [Laravel Passport](../passport.md) configurato correttamente
 - Modulo User installato e configurato
 
 ## Procedura di Configurazione
@@ -44,7 +43,6 @@ GITHUB_REDIRECT_URI=https://<nome progetto>.it/{locale}/auth/callback/github
 
 ## Documentazione Correlata
 
-- [Integrazione Laravel Passport](../passport.md) - Configurazione completa di OAuth2
 - [Autenticazione Social](../socialite.txt) - Integrazione con altri provider OAuth
 
 ### Versione Incoming

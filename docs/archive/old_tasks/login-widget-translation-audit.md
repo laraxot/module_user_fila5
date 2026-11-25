@@ -1,3 +1,9 @@
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: note
+qmd: "loginwidget translation audit gennaio obiettivo traduzioni analizzate chiavi traduzione utilizzate stato pre azioni intraprese creazione file"
+---
+
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

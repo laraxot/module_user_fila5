@@ -111,7 +111,5 @@ Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTAT
 ---
 module: theme
 topic: volt_blade_implementation_error
-canonical: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error-3.md

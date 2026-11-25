@@ -1,8 +1,13 @@
+---
+title: "phpstan progress report"
+type: note
+qmd: "phpstan progress report"
+---
+
 *Ultimo aggiornamento: 2025-01-22*
 ---
 module: theme
 topic: phpstan-progress-report
-canonical: ../../../Themes/docs/shared-components/phpstan-progress-report.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -15,4 +20,3 @@ related:
 qmd: "phpstan progress report"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md

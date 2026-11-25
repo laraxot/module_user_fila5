@@ -9,10 +9,8 @@ qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
 discussions:
 related:
-  - "./agents.md"
   - "./architecture.md"
   - "./auth-patterns.md"
-  - "./bmad-method.md"
   - "./context-compression.md"
   - "./log.md"
   - "./overview.md"

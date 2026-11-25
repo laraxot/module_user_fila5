@@ -24,7 +24,5 @@ related:
 ---
 module: theme
 topic: registration_widget_fileupload_fix
-canonical: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix-2.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix-2.md

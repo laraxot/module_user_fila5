@@ -15,7 +15,6 @@ related:
   - "./README.md"
   - "./structure.md"
   - "./testing-structure.md"
-  - "./user-gdpr-oupling.md"
 ---
 
 # Decoupling User-GDPR via Event/Listener Pattern

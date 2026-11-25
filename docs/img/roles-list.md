@@ -3,7 +3,6 @@ title: "roles_list"
 type: source
 module: User
 topic: roles_list
-canonical: ../../../../Themes/docs/shared-components/roles-list.jpg
 created: 2026-07-22
 updated: 2026-07-22
 qmd: "roles list roleslist"

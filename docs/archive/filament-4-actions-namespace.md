@@ -1,3 +1,9 @@
+---
+title: "Filament 4: Namespace Actions - Filosofia Laraxot"
+type: note
+qmd: "filament namespace actions filosofia laraxot comandamento sacro principio fondamentale logica logic perché cambiamento manifestazione codice religione"
+---
+
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22

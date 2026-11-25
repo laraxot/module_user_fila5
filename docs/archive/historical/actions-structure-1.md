@@ -1,3 +1,9 @@
+---
+title: "Actions Structure"
+type: note
+qmd: "actions structure directory esempi percorsi corretti errati namespace pattern implementazione vantaggi questa struttura documentazione correlata queueableaction"
+---
+
 # Actions Structure
 
 ## Directory Structure

@@ -13,9 +13,9 @@ related:
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
+  - "../../actions-path-convention.md"
 ---
 
 # Final Summary - User Module Passport Integration & Architecture Refactoring
@@ -299,7 +299,7 @@ public function getHeaderActions(): array
 ### Internal Documentation
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
-- [Filosofia Modulo User](./filosofia-modulo-user.md)
+- [Filosofia Modulo User](../../filosofia-modulo-user.md)
 - [README](./readme.md)
 
 ### External Documentation

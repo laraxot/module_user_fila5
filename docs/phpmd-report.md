@@ -319,3 +319,11 @@ Modules/User/tests/Unit/Models/TenantTest.php:11                                
 Modules/User/tests/Unit/Models/TenantTest.php:248                                              UnusedLocalVariable       Avoid unused local variables such as '$expiredTenant'.
 Modules/User/tests/Unit/UserModelTest.php:36                                                   ShortVariable             Avoid variables with short names like $u. Configured minimum length is 3.
 Modules/User/tests/Unit/UserModulePhpstanFixesTest.php:125                                     LongVariable              Avoid excessively long variable names like $socialiteUserConnected. Keep variable name length under 20.
+
+## Contenuto fuso da `phpmd-report.md`
+
+# Phpmd report
+
+---
+module: theme
+topic: phpmd_report

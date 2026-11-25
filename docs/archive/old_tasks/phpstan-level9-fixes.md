@@ -1,3 +1,9 @@
+---
+title: "Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php"
+type: note
+qmd: "correzione conflitto miglioramento phpstan livello filament resources userresource php problema analisi soluzione applicata collegamenti old_tasks"
+---
+
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** 2025-04-16

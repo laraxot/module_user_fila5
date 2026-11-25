@@ -7,7 +7,7 @@ tags: [skills, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
-qmd: "skills"
+qmd: "skills regola pattern caricamento note aggiungere nuova"
 ---
 
 # Skills Index
@@ -36,6 +36,8 @@ Le Skills progettuali vivono qui, nel wiki del Module **User**, e vengono carica
 - La sorgente di verita' per le Skills e' sempre il wiki locale
 - Non embeddare Skills nei prompt di avvio
 - Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/index.md)
+
+- Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/INDEX.md)
 
 ## Aggiungere una Nuova SKILLS
 

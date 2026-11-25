@@ -1,11 +1,10 @@
 ---
 module: theme
 topic: fix-paths.sh
-canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
 qmd: "fix paths sh configurazione"
+title: "Configurazione"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
 #!/bin/bash
 
 # Configurazione

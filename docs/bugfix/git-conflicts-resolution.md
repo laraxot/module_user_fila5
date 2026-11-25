@@ -10,7 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./deviceuser-hasxotfactory-fix.md"
   - "./deviceuser-hasxotfactory.md"
-  - "./gits-resolution.md"
   - "./multiple-bugs-resolution.md"
 ---
 

@@ -33,7 +33,6 @@ Consolidated from **10** individual files.
 
 module: theme
 topic: traits-complete-guide
-canonical: ../../../Themes/docs/shared-components/traits-complete-guide.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -45,7 +44,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/traits-complete-guide.md
 
 ---
 
@@ -617,7 +615,6 @@ trait HasTeams
 
 module: theme
 topic: traits-hasteams-analisi-corretta
-canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -629,7 +626,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
 
 ---
 
@@ -1754,7 +1750,6 @@ trait HasTeams
 
 module: theme
 topic: traits-hasteams-corrected
-canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1766,7 +1761,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
 
 ---
 
@@ -1776,7 +1770,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/traits-haste
 
 module: theme
 topic: traits-hasteams-corretta
-canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -1788,7 +1781,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corretta.md
 
 ---
 
@@ -2817,7 +2809,7 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
-- [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
+- [docs/phpstan_fixes.md](../../phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 

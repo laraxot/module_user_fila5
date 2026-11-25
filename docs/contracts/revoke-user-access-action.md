@@ -1,10 +1,11 @@
 ---
 title: "Contratto — RevokeUserAccessAction"
 type: contract
-action: "Modules\User\Actions\Auth\RevokeUserAccessAction"
+action: 'Modules\User\Actions\Auth\RevokeUserAccessAction'
 tags: [contract, action, passport, account, sicurezza]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "revokeuseraccessaction input output invarianti effetti collaterali errori remember_token deleted_at buildactiveuserprovideraction execute contracts"
 ---
 
 # RevokeUserAccessAction

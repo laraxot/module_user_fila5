@@ -232,4 +232,3 @@ vs
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
-- [Filament Best Practices](./filament-best-practices.md)

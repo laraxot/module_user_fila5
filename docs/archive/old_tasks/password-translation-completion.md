@@ -1,3 +1,9 @@
+---
+title: "Completamento Traduzioni Password - 2025"
+type: note
+qmd: "completamento traduzioni password problema identificato analisi pattern errore file corretti struttura standardizzata corretto new_password_confirmation lingue tooltip"
+---
+
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato

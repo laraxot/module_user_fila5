@@ -12,7 +12,6 @@ language: it-IT
 related:
   - architecture.md
   - index.md
-  - module.md
   - philosophy.md
   - README.md
 tags: [codebase, architecture, user, documentation]
@@ -27,7 +26,6 @@ github:
     - https://github.com/laraxot/base_<nome progetto>_fila5/issues/123
   discussions:
     - https://github.com/laraxot/base_<nome progetto>_fila5/discussions/124
-  - https://github.com/laraxot/base_quaeris_fila5/issues/123
 discussions:
   - https://github.com/laraxot/base_quaeris_fila5/discussions/124
 github:
@@ -70,6 +68,5 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 - [architecture](./architecture.md)
 - [index](./index.md)
-- [module](./module.md)
 - [philosophy](./philosophy.md)
 - [README](./README.md)

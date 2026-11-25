@@ -13,7 +13,6 @@ related:
   - "./README.md"
   - "./team.md"
   - "./xotbaivot-migration.md"
-  - "./xotbasepivot-migration.md"
 ---
 
 # TeamPermission

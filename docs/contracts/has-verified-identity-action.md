@@ -4,6 +4,7 @@ type: contract
 action: "Modules\\User\\Actions\\Auth\\HasVerifiedIdentityAction"
 created: 2026-11-23
 updated: 2026-11-23
+qmd: "hasverifiedidentityaction input output invarianti effetti collaterali errori true spid false email_verified_at contracts"
 ---
 
 # HasVerifiedIdentityAction

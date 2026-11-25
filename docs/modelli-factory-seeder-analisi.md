@@ -189,14 +189,13 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 ### Moduli Collegati
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md)
 - [Tenant Module](../../Tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md)
+- [Notify Module](../../Notify/docs/modelli-factory-seeder-analisi.md)
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
 ---
 module: theme
 topic: modelli-factory-seeder-analisi
-canonical: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -208,4 +207,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/modelli-factory-seeder-analisi-Modules.md
+## Contenuto fuso da `modelli-factory-seeder-analisi.md`
+
+- [SaluteOra Module](../../saluteora/docs/modelli_factory_seeder_analisi.md)
+- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)

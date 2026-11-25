@@ -30,7 +30,7 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 # Implementazione Login Personalizzato
 
 > **Collegamenti Correlati:**
-> - [Passport Integration](passport.md) - Integrazione OAuth2 con Passport
+> - Passport Integration - Integrazione OAuth2 con Passport
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 > - [Filament Best Practices](filament_best_practices.md) - Best practices Filament

@@ -1,10 +1,11 @@
 ---
 title: "Contratto — UpsertUserFromDigitalIdentityAction"
 type: contract
-action: "Modules\User\Actions\Auth\UpsertUserFromDigitalIdentityAction"
+action: 'Modules\User\Actions\Auth\UpsertUserFromDigitalIdentityAction'
 tags: [contract, action, spid, cie, identita-digitale]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "upsertuserfromdigitalidentityaction input output invarianti effetti collaterali errori spid fiscal_code name surname email email_verified_at users contracts"
 ---
 
 # UpsertUserFromDigitalIdentityAction

@@ -1,3 +1,9 @@
+---
+title: "Risoluzione Problemi di Tipi Generici con PHPStan"
+type: note
+qmd: "risoluzione problemi tipi generici phpstan problema template type covariance nelle relazioni eloquent causa soluzione esempio corretto"
+---
+
 # Risoluzione Problemi di Tipi Generici con PHPStan
 
 ## Problema: Template Type Covariance nelle Relazioni Eloquent

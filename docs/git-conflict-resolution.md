@@ -230,4 +230,20 @@ git config --global alias.theirs '!f() { git checkout --theirs "$@" && git add "
 2. Mantenere commit atomici e descrittivi
 3. Usare tag per le release
 4. Documentare le decisioni di merge
-5. Testare dopo ogni risoluzione 
+5. Testare dopo ogni risoluzione
+
+## Contenuto fuso da `git-conflict-resolution.md`
+
+# git_conflict_resolution - User
+
+## Overview
+
+Documentazione per git_conflict_resolution nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)

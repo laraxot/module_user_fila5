@@ -637,7 +637,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ---
 
-<!-- Contenuto unito da dry-kiss-analysis-.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da dry-kiss-analysis.md (rimozione date dai nomi file, issue #64) -->
 
 # DRY & KISS Analysis - Modulo User
 
@@ -761,3 +761,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 
+## Contenuto fuso da `dry-kiss-analysis.md`
+
+- [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)

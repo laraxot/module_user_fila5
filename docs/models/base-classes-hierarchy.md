@@ -13,7 +13,6 @@ related:
   - "./team.md"
   - "./teampermission.md"
   - "./xotbaivot-migration.md"
-  - "./xotbasepivot-migration.md"
 ---
 
 # Gerarchia delle Classi Base - Modulo User
@@ -382,7 +381,6 @@ Quando crei un nuovo modello nel modulo User:
 ## Risorse
 
 - [Architettura Core](../core/architecture.md)
-- [XotBasePivot Migration Guide](./xotbasepivot-migration.md)
 - [Best Practices](../best-practices/models.md)
 - [PHPStan Compliance](../development/phpstan-guide.md)
 

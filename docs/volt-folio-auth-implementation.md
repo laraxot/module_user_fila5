@@ -7,9 +7,9 @@ qmd: "volt folio auth implementation implementazione corretta"
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
 
 ## Introduzione
 
@@ -543,7 +543,6 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 ---
 module: theme
 topic: volt-folio-auth-implementation
-canonical: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -555,4 +554,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-auth-implementation.md
+## Contenuto fuso da `volt-folio-auth-implementation.md`
+
+use Modules\Xot\Contracts\UserContract;

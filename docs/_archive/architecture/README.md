@@ -1,3 +1,9 @@
+---
+title: "User Module - Architecture Documentation"
+type: note
+qmd: "architecture documentation panoramica architetturale componenti principali layer autenticazione autorizzazione multi tenant pattern architetturali repository actions type"
+---
+
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

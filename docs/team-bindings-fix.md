@@ -180,7 +180,6 @@ $this->assertTrue($user->belongsToTeam($team));
 ---
 module: theme
 topic: team-bindings-fix
-canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -192,4 +191,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
+## Contenuto fuso da `team-bindings-fix.md`
+
+- [Critical Errors Documentation](../../saluteora/docs/critical-errors-resolved.md)

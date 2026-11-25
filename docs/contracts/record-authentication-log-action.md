@@ -1,10 +1,11 @@
 ---
 title: "Contratto — RecordAuthenticationLogAction"
 type: contract
-action: "Modules\User\Actions\Auth\RecordAuthenticationLogAction"
+action: 'Modules\User\Actions\Auth\RecordAuthenticationLogAction'
 tags: [contract, action, audit, login]
 created: 2026-11-24
 updated: 2026-11-24
+qmd: "recordauthenticationlogaction input output invarianti effetti collaterali errori loginlistener failedloginlistener ip_address user_agent login_at login_successful location authentication_logs contracts"
 ---
 
 # RecordAuthenticationLogAction

@@ -84,3 +84,9 @@ fi
 - [Convenzioni Path nei Moduli Laravel](./path-conventions-user.md)
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)
+
+## Contenuto fuso da `actions-path-convention.md`
+
+- [Convenzioni Path nei Moduli Laravel](./path-conventions.md)
+- [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
+- [Analisi Errore: Gestione Percorsi](../../../docs/error_analysis/path_management.md)

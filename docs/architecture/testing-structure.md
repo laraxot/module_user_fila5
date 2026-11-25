@@ -15,7 +15,6 @@ related:
   - "./README.md"
   - "./structure.md"
   - "./user-gdpr-decoupling.md"
-  - "./user-gdpr-oupling.md"
 ---
 
 # Struttura dei Tests del Modulo User

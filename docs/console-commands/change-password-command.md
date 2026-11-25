@@ -361,7 +361,6 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)
-- [Password Management](../password.md)
 
 ## Aggiornamenti
 

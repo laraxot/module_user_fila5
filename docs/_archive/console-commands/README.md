@@ -1,3 +1,9 @@
+---
+title: "Comandi Console - Modulo User"
+type: note
+qmd: "comandi console panoramica disponibili changepasswordcommand interattivo email specificata assignmodulecommand assignrolecommand is_otp updated_by admin performance model_has_roles command"
+---
+
 # Comandi Console - Modulo User
 
 ## Panoramica

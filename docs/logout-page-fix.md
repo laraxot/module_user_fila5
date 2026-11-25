@@ -45,7 +45,6 @@ Convertire `logout.blade.php` in una **pagina Folio statica**:
 ---
 module: theme
 topic: logout-page-fix
-canonical: ../../../Themes/docs/shared-components/logout-page-fix.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -57,4 +56,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md

@@ -4,6 +4,7 @@ scope: module:User
 type: docs
 updated: 2026-09-03
 qmd: "user docs index audit duplicati storico"
+title: "Story: audit indice documentazione (Modules/User/docs)"
 ---
 
 # Story: audit indice documentazione (Modules/User/docs)

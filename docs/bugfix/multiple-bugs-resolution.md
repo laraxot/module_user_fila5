@@ -11,7 +11,6 @@ related:
   - "./deviceuser-hasxotfactory-fix.md"
   - "./deviceuser-hasxotfactory.md"
   - "./git-conflicts-resolution.md"
-  - "./gits-resolution.md"
 ---
 
 # Multiple Bugs Resolution - 16 Dicembre 2025

@@ -39,8 +39,8 @@ related:
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth_pages_implementation.md)
-- [Volt Folio Auth](/laravel/Modules/User/docs/volt_folio_auth_implementation.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

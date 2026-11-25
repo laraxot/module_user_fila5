@@ -1,3 +1,9 @@
+---
+title: "Correzione PHPStan - Relationship Type Hints"
+type: note
+qmd: "correzione phpstan relationship type hints errore risolto problema causa soluzione implementata pattern relazioni eloquent morphmany morphone"
+---
+
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto

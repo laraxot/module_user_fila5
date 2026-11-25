@@ -58,3 +58,10 @@ public function getTableColumns(): array
 
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.
+
+## Contenuto fuso da `filament-table-columns.md`
+
+- [Regola Generale - Modulo Xot](../../../Xot/docs/FILAMENT_TABLE_COLUMNS.md)
+- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
+
+**Ultimo aggiornamento:** 2025-05-13

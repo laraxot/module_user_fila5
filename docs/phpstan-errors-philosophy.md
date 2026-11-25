@@ -1,3 +1,9 @@
+---
+title: "phpstan errors philosophy"
+type: note
+qmd: "phpstan errors philosophy"
+---
+
 - [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
 - [Type Safety Best Practices](../../Xot/docs/type-safety-best-practices.md)
 
@@ -7,7 +13,6 @@
 ---
 module: theme
 topic: phpstan-errors-philosophy
-canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -20,4 +25,3 @@ related:
 qmd: "phpstan errors philosophy"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md

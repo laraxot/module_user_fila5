@@ -36,7 +36,5 @@ All widget development should follow these rules to maintain consistency and qua
 ---
 module: theme
 topic: widget_translation_rules
-canonical: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-memory-integration.md

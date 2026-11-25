@@ -142,6 +142,12 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 
 ---
 
-<!-- Contenuto unito da phpstan-fixes-gennaio-2025-complete.md (rimozione date dai nomi file, issue #64) -->
+<!-- Contenuto unito da phpstan-fixes-complete.md (rimozione date dai nomi file, issue #64) -->
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
+## Contenuto fuso da `phpstan-fixes-complete.md`
+
+# Alias (superseded)
+
+Canonico: [`./phpstan-fixes-gennaio-complete.md`](./phpstan-fixes-gennaio-complete.md).
+
+Questo path resta solo per link storici; non aggiungere contenuto qui.

@@ -119,9 +119,9 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Folio](./routing-best-practices.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
-- [Gestione Sessione](./session_management.md) 
+- [Gestione Sessione](./session-management.md) 
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore
@@ -171,7 +171,6 @@ use function Livewire\Volt\{state, mount};
 ---
 module: theme
 topic: volt-folio-logout-error
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -183,4 +182,3 @@ related:
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
