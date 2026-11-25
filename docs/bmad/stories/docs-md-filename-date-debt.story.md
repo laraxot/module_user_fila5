@@ -11,8 +11,25 @@ acceptance_criteria:
   - "Duplicati → status superseded + superseded_by; nessun delete"
   - "Frontmatter YAML + qmd sui file toccati"
 ---
-
 # Docs md filename date debt — User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## GateGuard facts (first touch)
 
@@ -100,3 +117,13 @@ I duplicati di un canonico restano come alias `superseded`.
   `archive/phpstan-fixes-2025.md`, `_archive/phpstan-fixes-2025.md`.
   Residui ACTIVE User dated year/ISO in scope find: **0**.
   Parent: Xot `docs-md-filename-date-debt` boy-scout markers Notify/Job.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -5,6 +5,24 @@ qmd: "superadmin widget negate icon fix 21"
 ---
 # SuperAdminWidget: icona "negato" ambigua, ripristinata a simbolo di divieto standard
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 Status: done
 Data: 2026-09-21
 Modulo owner: User
@@ -68,3 +86,18 @@ Nessuno. Corona attiva gia' adeguata, non toccata (evitato scope creep su qualco
 rotto).
 
 **SUPERSEDED 2026-09-21**: design/stato descritto qui non e' quello finito a HEAD. Stato finale reale + regressione trovata e corretta: `9.7.super-admin-widget-icons-final.story.md`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `svg('user-negate-superadmin')->toHtml()` via tinker: risolve, nessuna eccezione.
+- Render a PNG (`convert` ImageMagick, sfondo scuro, colore reale al posto di `currentColor`):
+  confermato visivamente cerchio-slash + corona, simbolo di divieto standard riconoscibile.
+- Test esistenti (nessuno tocca il markup icona, solo visibilita'/toggle):
+  `Modules/User/tests/Feature/Filament/Widgets/SuperAdminWidgetTest.php` +
+  `Modules/User/tests/Unit/Filament/Widgets/SuperAdminWidgetTest.php`: 12/12 pass (31 assertions).

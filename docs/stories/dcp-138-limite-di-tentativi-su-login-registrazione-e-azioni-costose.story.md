@@ -12,8 +12,25 @@ updated: 2026-10-13
 qmd: "rate limit throttle login brute force livewire loginwidget throttleauthentication security.php ticket save geocoding 429"
 related: [dcp-112, dcp-102, dcp-139]
 ---
-
 # DCP-138: il login e le azioni costose hanno un tetto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Nata da DCP-112 (matrice normativa N-13).
 
@@ -41,3 +58,13 @@ GDPR art. 32 (misure adeguate al rischio, riservatezza); Garante provv. 7.12.202
 
 ## Dipendenze e priorita'
 DCP-102 (tracciamento), DCP-139 (intestazioni). P1: da chiudere prima della produzione.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -19,8 +19,25 @@ context:
 related:
   - ../../../../Xot/docs/bmad/stories/phpstan-modules-remediation.story.md
 ---
-
 # Pulse login metric: fix schema key_hash e backfill
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo (cosa voleva fare l'utente)
 
@@ -113,3 +130,13 @@ Done (2026-11-11).
   serie day 786 bucket / totale 549, month 27 bucket / totale 549, coerente
   con `GetLoginStatsAction` (total 549).
 - `pulse_aggregates` `user_login`: 3 righe dopo backfill.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

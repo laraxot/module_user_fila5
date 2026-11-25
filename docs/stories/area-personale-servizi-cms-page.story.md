@@ -10,8 +10,25 @@ related: [DCP-110, front-office-audit]
 tags: [cms, folio, area-personale, 404, design-comuni]
 qmd: "area personale servizi cms page story"
 ---
-
 # Area personale /servizi: pagina CMS mancante (404)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -60,3 +77,16 @@ Home › Area personale, hero e una card verso `/services`. Non e' linkata dai 4
 - 2026-11-19: creato `config/local/fixcity/database/content/pages/area-personale/servizi.json`
   (unico file di contenuto; i blade Volt in `Modules/User/resources/views/pages/area-personale/`
   restano legacy irraggiungibili perche' la catch-all CMS del tema risolve prima).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `GET /it/area-personale/servizi` guest → 302 a `/it/auth/login` (anche `/en`)
+- `GET /it/area-personale/servizi` auth → 200, H1 "I miei servizi", title "I miei servizi | FixCity"
+- `php artisan view:cache` → exit 0
+- `vendor/bin/pest Modules/Fixcity/tests/Feature/Pages/PersonalAreaPagesTest.php` → 34 pass, 233 assertions

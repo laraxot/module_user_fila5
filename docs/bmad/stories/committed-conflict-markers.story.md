@@ -7,8 +7,25 @@ created: 2026-10-06
 updated: 2026-10-06
 qmd: "committed conflict markers story ripristino migrazione"
 ---
-
 # Claim ed esito
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Claim
 
@@ -47,3 +64,13 @@ Controllare sintassi PHP su tutto il modulo.
 - Regola: `bashscripts/ai/wiki/rules/git-conflicts-merge.md`
 - Migrazione: `laravel/Modules/User/database/migrations/2023_01_01_093340_create_permission_table.php`
 - Traduzioni: `laravel/Modules/User/lang/it/profile.php`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

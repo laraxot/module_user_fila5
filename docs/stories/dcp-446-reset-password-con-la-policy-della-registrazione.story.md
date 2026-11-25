@@ -17,8 +17,25 @@ related:
 issues: []
 discussions: ["https://github.com/laraxot/theme_sixteen_fila5/discussions/94"]
 ---
-
 # DCP-446: il reset password applica la stessa policy della registrazione
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Status: **done con decisioni aperte** (codice chiuso il 2026-11-11 nell'audit L-11, riga E-01; documentato qui il 2026-11-12). La correzione chiude
 il punto 7 di DCP-290 («password policy di reset… DA DECIDERE, non cambiati») **solo per la parte di coerenza**; il valore della regola e il
@@ -89,3 +106,19 @@ bashscripts/tools/pest-scratch-db.sh Modules/User/tests/Unit/Filament/Schemas/Pa
 
 Una regola di sicurezza che esiste in due posti si disallinea: qui la registrazione era stata rinforzata e il reset no, e nessun test li confrontava. La
 guardia confronta i due schemi con la stessa policy invece di fissare un valore, così non cambia quando cambia DEC-15.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Esito del 2026-11-12, lanciato dalla radice del monorepo con DB di prova:
+
+```
+bashscripts/tools/pest-scratch-db.sh Modules/User/tests/Unit/Filament/Schemas/PasswordResetUsesPasswordPolicyTest.php
+```
+
+2 test passati, 14 asserzioni, 6,9 s. La prova al contrario (guardia rossa con il solo `minLength(8)`) non è stata rifatta oggi.

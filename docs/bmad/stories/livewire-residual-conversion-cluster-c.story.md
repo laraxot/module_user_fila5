@@ -14,8 +14,30 @@ related:
   - ../../docs/bmad/advantages-filament-only.md
   - ../../docs/bmad/livewire-widget-admin-panel-provider.md
 ---
-
 # 10.4 — residui Livewire Cluster C
+
+## Context and Problem Statement
+
+Epic 9 done (SuperAdmin widget ecc.), ma restano componenti HTTP Livewire
+da convertire/eliminare verso il target "solo Filament widget" — vantaggi
+
+da convertire/eliminare verso il target "solo Filament widget": vantaggi
+documentati in `advantages-filament-only.md` (SPOF 500 su /admin, doppia
+manutenzione, no `canView()`/lazy).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
   - ../livewire-inventory.md
   - ../advantages-filament-only.md
@@ -60,3 +82,13 @@ manutenzione, no `canView()`/lazy).
 ## Nota
 
 Status blocked: attendere esito lock peer `user-9.8-icons` + priorità utente.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

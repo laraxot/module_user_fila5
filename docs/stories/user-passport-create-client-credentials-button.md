@@ -30,8 +30,25 @@ github:
   discussions: https://github.com/laraxot/module_user_fila5/discussions
 qmd: "user passport create client credentials button"
 ---
-
 # STORY — Pulsante "Nuovo cliente OAuth" nella Passport Dashboard
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -269,3 +286,13 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_<nome progetto>_fila5/issues/181 |
 | Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
 | Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

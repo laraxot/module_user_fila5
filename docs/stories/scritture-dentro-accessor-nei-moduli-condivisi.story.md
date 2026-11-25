@@ -10,8 +10,34 @@ related:
 tags: [bmad, eloquent, performance, moduli-condivisi]
 qmd: "sei accessor nei moduli condivisi scrivono database quando vengono letti scopo stato misurato perche corretto subito"
 ---
-
 # Sei accessor nei moduli condivisi scrivono a database quando vengono letti
+
+## Context and Problem Statement
+
+`User` e `Lang` sono moduli base della piattaforma Laraxot, usati da altri
+progetti oltre a Quaeris. Un accessor che persiste puo' essere load-bearing
+altrove: `getUniqueNameAttribute` genera un nome univoco, e se qualcuno conta
+sul fatto che dopo la prima lettura quel nome sia scritto a database, togliere
+la scrittura cambia il comportamento senza che nessun test di questo repository
+se ne accorga — la suite e' ferma (vedi `docs/audit/RISK_REGISTER.md`, TEST-01).
+
+Correggere alla cieca sei accessor in moduli condivisi, senza test che girano e
+senza sapere chi altro li usa, e' piu' rischioso del difetto. Per questo la
+story e' aperta e il lavoro va coordinato, non fatto di nascosto.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Analisi fatta, sviluppo **non** iniziato di proposito. Vedi "Perche'
 non e' stato corretto subito".
@@ -103,3 +129,13 @@ verificabile e non va iniziata.
 Su questo repository lavorano piu' agenti in parallelo. Se prendi in carico
 questa story, dichiaralo qui cambiando `status` e lavora un modulo alla volta:
 `Lang` e `User` sono indipendenti fra loro e si possono dividere.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

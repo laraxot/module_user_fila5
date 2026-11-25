@@ -5,6 +5,24 @@ qmd: "register page ui ux 07 story"
 ---
 # Registrazione FO /it/auth/register: traduzioni, struttura card, mobile
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: done (2026-10-07). Parte posta: vedi `../auth-register-email.md`
 - Fase BMAD: Quick Flow (analisi, fix, verifica nel browser)
 - Owner: Modules/User (lang, widget), tema Sixteen (view e CSS)
@@ -40,3 +58,14 @@ CTA come contorno bianco mentre il login ha il CTA pieno.
 - Su mobile il placeholder della password ("Inserisci una password sicura") viene troncato dal pulsante "Mostra password".
 - Registrazione end-to-end (submit reale + email di verifica) non provata in questa sessione: crea un utente nel DB di sviluppo.
 - Lingue en/de/es: `register_page` e `registration.*` mancano.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Render https: 0 chiavi grezze, HTTP 200. Screenshot 1280 e 390 controllati. CTA computato: bg `rgb(0,122,82)`, testo bianco, come il login.
+- Pest: 23 passed.

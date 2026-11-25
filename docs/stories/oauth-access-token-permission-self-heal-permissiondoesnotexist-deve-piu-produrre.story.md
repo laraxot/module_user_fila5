@@ -5,6 +5,24 @@ qmd: "oauth access token permission self heal"
 ---
 # Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 Status: done
 Data: 2026-09-21
 Modulo owner: User
@@ -136,3 +154,33 @@ volte, stato finale stabile e confermato per iscritto qui.
 - `Modules/User/app/Models/Policies/UserPermissionBasePolicy.php` (rimosso, dead code ridondante)
 - `Modules/User/app/Actions/Permission/EnsurePermissionExistsAction.php` (rimosso, reso orfano dal refactor
   verso la chiamata diretta inline)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Test: `Modules/User/tests/Feature/HasSpatiePermissionAutoCreateTest.php` (5 casi):
+1. Permesso esistente: comportamento identico a Spatie standard.
+2. Permesso mancante via `hasPermissionToOrCreate()`: non esplode, viene creato, accesso negato.
+3. `hasPermissionTo()` standard (senza opt-in): continua a esplodere su permesso mancante: conferma che il
+   blast radius resta contenuto al solo `hasPermissionToOrCreate()`.
+4. Permesso auto-creato: assegnabile via ruolo dopo, funziona normalmente.
+5. `OauthAccessTokenPolicy::viewAny()` end-to-end: non esplode piu' su permesso mancante.
+
+Esecuzione:
+```
+APP_ENV=testing CACHE_STORE=array vendor/bin/pest Modules/User/tests/Feature/HasSpatiePermissionAutoCreateTest.php --no-coverage
+Tests:    5 passed (9 assertions)
+```
+
+PHPStan sui file finali (`HasSpatiePermission.php`, `OauthAccessTokenPolicy.php`, il test): `[OK] No errors`.
+
+Nota di processo: piu' sessioni concorrenti hanno lavorato sullo stesso file `HasSpatiePermission.php` durante
+questo task, riscrivendone l'architettura piu' volte (override silenzioso -> metodo esplicito con Action
+separata -> metodo esplicito inline) senza coordinamento diretto. Una corsa di test intermedia ha mostrato 3
+falliti su 5, non un bug del fix ma uno snapshot letto a meta' di una riscrittura concorrente. Rimisurato piu'
+volte, stato finale stabile e confermato per iscritto qui.

@@ -13,8 +13,25 @@ related:
   - "../phpstan-fixes.md"
 qmd: "phpstan zero errors user story errori"
 ---
-
 # Story: PHPStan zero errori: modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -69,3 +86,13 @@ Scelte sui tipi (nessun `mixed` di comodo):
 ## Ripresa 2026-11-17
 
 Riaperta: residuali da baseline593 (lang duplicate keys, Livewire tipizzazione, CreateUserTest mistyped `$page`, Reset `@phpstan-ignore`). Fix purpose-first applicati; rimisurare `Modules/User` quando host `pgrep phpstan` ≤6. Docs: canonico [phpstan-fixes.md](../phpstan-fixes.md) — non aggiungere altri file phpstan*.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

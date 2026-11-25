@@ -8,6 +8,24 @@ qmd: "continuation story user table audit model"
 ---
 # User Module — Continuation Task
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## Stato
 Modulo con modifiche non ancora sincronizzate nel proprio .git.
 
@@ -21,3 +39,13 @@ Modulo con modifiche non ancora sincronizzate nel proprio .git.
 ## Modelli attesi (da verificare)
 - Tabella: `Modules\$m\Filament\Resources\*`
 - Modello: `Modules\$m\Models\*`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

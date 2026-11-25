@@ -21,8 +21,25 @@ github:
   issues: []
 qmd: "superadmin widget crown icons 21 story"
 ---
-
 # SuperAdminWidget: icone corona + fix bug reale @svg()
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -103,3 +120,22 @@ versione e' stata verificata a runtime (`tinker` + `svg()->toHtml()`), non solo 
 runtime, non di sintassi).
 
 **SUPERSEDED 2026-09-21**: design/stato descritto qui non e' quello finito a HEAD. Stato finale reale + regressione trovata e corretta: `9.7.super-admin-widget-icons-final.story.md`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```
+php artisan tinker --execute="echo svg('user-superadmin','w-7 h-7')->toHtml();"
+php artisan tinker --execute="echo svg('user-negate-superadmin','w-7 h-7')->toHtml();"
+```
+Entrambe risolvono senza eccezioni (prima del fix: `SvgNotFound`).
+
+`xmllint --noout` pulito su entrambi gli SVG. `php -l` pulito sul blade.
+`Modules/User/tests/Unit/Filament/Widgets/SuperAdminWidgetTest.php` +
+`Modules/User/tests/Feature/Filament/Widgets/SuperAdminWidgetTest.php`:
+**12 passed (31 assertions)**.

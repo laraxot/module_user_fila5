@@ -3,8 +3,28 @@ title: team-permissions-sqlite-migration.story
 module: User
 qmd: "team permissions sqlite migration story teampermissionssqlitemigrationstory"
 ---
-
 # Story: team_permissions migration on SQLite
+
+## Context and Problem Statement
+
+The `2026_08_06_150000_create_team_permissions_table` migration queried
+MySQL's `information_schema.table_constraints` while running against the
+project's SQLite test/development database. SQLite consequently aborted the
+migration before the schema could be completed.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Context
 
@@ -29,6 +49,22 @@ Replaced the local `information_schema` helper with
 the active database grammar, including SQLite.
 
 ## Verification
+
+- `php -l Modules/User/database/migrations/2026_08_06_150000_create_team_permissions_table.php`
+- `php artisan migrate --no-interaction`
+- `php artisan migrate:status --no-interaction`
+
+PHPStan was attempted for `Modules/User`, but the current local environment
+cannot bootstrap Laravel because its configured MySQL database `trade_data`
+does not exist; this is unrelated to the migration change.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - `php -l Modules/User/database/migrations/2026_08_06_150000_create_team_permissions_table.php`
 - `php artisan migrate --no-interaction`

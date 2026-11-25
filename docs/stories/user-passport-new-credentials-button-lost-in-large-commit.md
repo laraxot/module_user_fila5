@@ -25,8 +25,25 @@ github:
   discussion: https://github.com/laraxot/module_user_fila5/discussions/99
 qmd: "user passport new credentials button lost"
 ---
-
 # STORY — Il bottone "Nuove credenziali" è scomparso dalla Passport Dashboard
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -217,3 +234,13 @@ issue https://github.com/laraxot/module_xot_fila5/issues/131.
 - [Source: commit 9d2362d941ffa669c8445c58352b4e3c95811098] (cancellazione)
 - [Source: laravel/Modules/User/tests/Feature/Filament/Clusters/Passport/Pages/PassportDashboardNewCredentialsTest.php]
   (perché il test non ha rilevato la regressione)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

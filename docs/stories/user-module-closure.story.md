@@ -23,8 +23,25 @@ related:
   - "Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md"
 qmd: "user closure story chiusura 20260911 quality"
 ---
-
 # User: chiusura modulo 2026-09-11
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -124,3 +141,13 @@ Claude Sonnet 5
 - 2026-09-11: story creata, indagine in corso.
 - 2026-09-11 (sessione 2): AC 1 e 6 chiusi con causa reale identificata (non piu' "mistero"): commit ROOT `b5ac7b595` (2026-08-25, Marco Sottana) ha cancellato 624 file monorepo-wide, inclusi questi 26 di Modules/User, ma SOLO nell'indice della repo ROOT — la repo separata del modulo non ha mai avuto un commit equivalente, quindi i file restano tracciati/invariati nel suo `HEAD` e sul remote `laraxot/dev`; la cancellazione fisica su disco (side-effect dell'operazione root su filesystem condiviso) ha prodotto il "deleted in working tree, not staged" osservato. Contenuto confermato legittimo e specifico del progetto. Ripristinati su disco nel modulo via `git checkout HEAD -- <path>` (nessun commit necessario, gia' identici a `HEAD`). Root NON risincronizzata su questi 26 path: lasciata la scelta esplicita (seppur dubbia — bundlata con rimozione di codice applicativo reale senza decision-log dedicato) di Marco Sottana del 2026-08-25 as-is, senza revert unilaterale. Conflitto di policy root-vs-modulo documentato in Dev Notes e lasciato a decisione umana. `phpstan analyse Modules/User` [OK]. `phpstan analyse` root ha 1 errore pre-esistente non correlato in `Modules/Activity` (altra sessione concorrente, fuori scope, non toccato). Story NON marcata come chiusura definitiva della questione root-tracking: quella parte resta aperta per decisione umana.
 - 2026-09-11 (sessione 2, push): commit di questa investigazione (`72c45d75` nel modulo, `45324ba82` in root) fatti e PUSHATI CON SUCCESSO in root (`laraxot`+`origin`). Nel modulo User, root ha gia' un secondo push di questa sessione (`2c2f1ace`) andato a buon fine; il commit successivo `72c45d75` e' rimasto BLOCCATO (non pushato) perche' durante il turno un'altra sessione concorrente ha tenuto in stage (non committato) un ampio set di cancellazioni di Table class (`BaseProfilesTable.php`, `BaseUserResource*`, `ClientsTable.php`, `PersonalAccessTokensTable.php`, ecc. — comparse in stage DOPO il mio primo `git status` iniziale, quindi sessione live, non residuo). `git fetch laraxot && git merge laraxot/dev --no-edit` rifiuta con "Your local changes... would be overwritten by merge" perche' il merge ricostruirebbe l'intero albero risultante e sovrascriverebbe quelle modifiche in stage altrui. Per la standing order "mai operazioni distruttive / mai stash senza capire" NON ho fatto `git stash`/`git checkout --` su quei file: ho lasciato lo stage dell'altra sessione intatto. Risultato: `72c45d75` esiste, e' safe, locale, 1 commit ahead / 1 behind rispetto a `laraxot/dev` — il push va ritentato in un turno successivo quando l'altra sessione avra' committato o liberato lo stage. Nessuna perdita di lavoro, nessuna azione distruttiva eseguita.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

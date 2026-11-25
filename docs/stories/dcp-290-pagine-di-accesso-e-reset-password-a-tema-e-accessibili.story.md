@@ -13,8 +13,25 @@ qmd: "password dimenticata reset password token a tema Sixteen aria-invalid aria
 related: [dcp-285, dcp-271, dcp-269, dcp-124, dcp-200, fo-3-wizard-e-autenticazione, fo-5-a11y-responsive]
 tags: [auth, accessibilita, i18n, tema, password-reset, google, a11y]
 ---
-
 # DCP-290: pagine di accesso e reset password
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Nata dagli audit FO-3 (FO-3-01) e FO-5 (FO-5-02, FO-5-10, FO-5-11, FO-5-26, FO-5-30, FO-5-25 in parte). Ogni affermazione dell'audit e' stata riverificata sull'istanza di prova `http://127.0.0.1:8091` (DB usa-e-getta) prima di toccare. Etichette: **MISURATO** (eseguito da me, con l'output), **DEDOTTO** (letto nel codice, non eseguito).
 
@@ -117,3 +134,13 @@ Non toccati: `Modules/Comment/**`, `UserServiceProvider.php`, `UserPolicy`, `rou
 ## Esito
 
 (da compilare a fine lavoro)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

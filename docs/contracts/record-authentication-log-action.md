@@ -11,7 +11,7 @@ qmd: "recordauthenticationlogaction input output invarianti effetti collaterali 
 # RecordAuthenticationLogAction
 
 Sorgente: `app/Actions/Auth/RecordAuthenticationLogAction.php`. Chiamata da `LoginListener` e `FailedLoginListener`.
-Perché: [ADR](../adr/authentication-log-never-breaks-login.md).
+Perché: [ADR](../adr/0002-authentication-log-never-breaks-login.md).
 
 ## Input
 

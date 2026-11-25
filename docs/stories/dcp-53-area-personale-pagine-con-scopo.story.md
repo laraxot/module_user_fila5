@@ -13,8 +13,25 @@ tags: [area-personale, ux, i18n, mobile]
 related: [Themes/Sixteen/docs/bmad/stories/2026-10-13-dcp-52-header-accesso-e-menu-utente.story.md]
 qmd: "dcp-53 Area personale: ogni pagina ha uno scopo e una funzione"
 ---
-
 # DCP-53: area personale con scopo e funzione
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta (2026-10-13, utente)
 Riferimenti: `sito/segnalazione-area-personale`, `servizi/graduatoria-area-personale`, `graduatoria-messaggio`, `permessi-area-personale`, `vantaggi-area-personale`, `pagamenti-multa-area-personale`, `pagamenti-imu-area-personale` (https://italia.github.io/design-comuni-pagine-statiche/). Il contenuto deve essere sensato (non «Mario Rossi»), con scopo e funzione, multilingua, ottimizzato per cellulare e tablet.
@@ -173,3 +190,20 @@ Ogni pagina ha breadcrumb "Home / <titolo>" e una frase che dice a che serve (es
 Causa radice confermata: `pages/[container0]/index.blade.php` e `Modules/Fixcity/resources/views/pages/lista-categorie.blade.php` includevano `pub_theme::pages.services.categories-content`, esistente solo in `pages_old/services/` (spostata con `pages` -> `pages_old`). Correzione: il partial vive ora in `Themes/Sixteen/resources/views/components/pages/categories.blade.php` (come faq, sitemap, services) e i due include puntano li'. La copia in `pages_old/` resta (cronologia, nessuna cancellazione). Il partial usa `<div>` e non `<main>`: il layout ne ha gia' uno, quindi la vecchia versione avrebbe prodotto due landmark principali.
 Prova: `Modules/Fixcity/tests/Feature/Pages/ServiceCategoriesPageTest.php` (it, en, de, es: 200, un solo `main`, un solo `h1`, link localizzato a `/tickets`, nessuna chiave di traduzione a vista). ROSSO con `View [pages.services.categories-content] not found`, poi `8 passed (24 assertions)`; PHPStan sul test 0 errori; GET reale 200 nelle 4 lingue. Il test omonimo di `Themes/Sixteen/tests/Feature/ComunePagesTest.php` non e' una prova: viene saltato per una classe inesistente (`Modules\Fixcity\App\Models\Ticket`, quella vera e' `Modules\Fixcity\Models\Ticket`); da correggere dal proprietario del tema.
 Axe (`a11y-page-probe.mjs`, 375 e 1440, debugbar esclusa): 0 nodi serious/critical su `/it/lista-categorie`; i livelli minor/moderate non sono stati guardati. Non verificato: parity visiva contro un riferimento (la pagina non ha un riferimento Design Comuni dedicato; le classi sono quelle del vecchio tema Tailwind). Il punto 8 della lista sopra e' chiuso solo per il 500.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+La sessione tema ha creato `config/local/fixcity/database/content/pages/area-personale.{pratiche,seguite,notifiche,impostazioni}.json` (pagine CMS con login richiesto: da ospite `/it/area-personale/pratiche` -> 302 `/it/auth/login`). Verificato dal lead, sito di sviluppo, utente loggato, HTML reale:
+| Pagina | it: h1 | en: h1 | `<main>` | chiavi grezze |
+|---|---|---|---|---|
+| pratiche | Le mie segnalazioni | My reports | 1 | 0 |
+| seguite | Segnalazioni che seguo | Reports I follow | 1 | 0 |
+| notifiche | Notifiche | Notifications | 1 | 0 |
+| impostazioni | Impostazioni e privacy | Settings and privacy | 1 | 0 |
+Ogni pagina ha breadcrumb "Home / <titolo>" e una frase che dice a che serve (es. notifiche: "Gli aggiornamenti di stato che hai ricevuto sulle tue segnalazioni e su quelle che segui"); impostazioni rimanda ai diritti dell'interessato. Rete di sicurezza: `Modules/Fixcity/tests/Feature/Pages/HeaderAccountMenuTest.php` passa da 9/10 a **10/10 (75 asserzioni)**, compreso "links every menu entry to a page that works and has something to show". Non verificato dal lead: de/es (studio I18N-MOBILE), mobile 375/768, contenuto con ticket reali (l'utente di prova non ne ha), correttezza dei dati in "Impostazioni". DB di sviluppo invariato (9 utenti, 4 ticket). Non rimane aperta la voce 2 di DCP-52 (pagine vuote).

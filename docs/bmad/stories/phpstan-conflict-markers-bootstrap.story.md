@@ -14,8 +14,25 @@ related:
   - ../../git-conflicts-resolution.md
   - ../../wiki/troubleshooting/git-merge-conflict-inventory.md
 ---
-
 # PHPStan — marker conflitto Git e bootstrap User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perché
 
@@ -99,3 +116,19 @@ icone/nav dove presenti). Nessun `@phpstan-ignore`, nessun `phpstan.neon`.
 
 Fuori scope ancora conflittuali: `tests/` (~35), `docs/` (~301),
 `package.json` / `vite.config.js` / `tailwind.config.js`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+bash bashscripts/lock/lock.sh user-conflict-markers 45
+rg -n '^(<<<<<<< |=======|>>>>>>> )' laravel/Modules/User -g '*.php' -g '*.blade.php'
+# → NONE
+cd laravel && php -l Modules/User/app/Providers/UserServiceProvider.php
+cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User --no-progress
+```

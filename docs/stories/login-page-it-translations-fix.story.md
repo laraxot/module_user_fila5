@@ -5,6 +5,24 @@ qmd: "login page it translations fix story"
 ---
 # Login FO /it/auth/login: traduzioni mancanti e copy errato
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: done (2026-10-07)
 - Fase BMAD: Quick Flow (analisi, fix, verifica)
 - Owner: Modules/User (lang, UserForm), tema Sixteen (view widget)
@@ -48,3 +66,15 @@ di registrazione ("Minimo 12 caratteri...") sotto la password del login.
 - Bottone CTA verde chiaro con testo scuro: contrasto basso, e' un token tema (vedi regola
   `pa-design-colors-no-hex-overrides`), non toccato.
 - `Modules/User/tests/TestCase.php` richiede il DB `fixcity_user_test`, assente in questo ambiente.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Render: 0 chiavi `user::` grezze, HTTP 200, titolo "Accedi | FixCity".
+- Pest: 13 passed; rosso con il vecchio `login.php`.
+- Screenshot desktop 1280 e mobile 390 controllati.

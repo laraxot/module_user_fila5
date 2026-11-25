@@ -5,6 +5,24 @@ qmd: "login unknown database fixcity user story"
 ---
 # Login FO: Unknown database 'fixcity_user'
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: parziale (2026-10-07)
 - Fase BMAD: Quick Flow (investigate, fix, verifica)
 - Owner: Modules/User (connessione `user`), toccati Media, Rating, Fixcity (migrazioni)
@@ -45,3 +63,14 @@ Non e' un bug di codice. Lo script citato dalla wiki (`provision-local-mysql.sh`
   successive (`align_ticket_subscribers_and_coordinates`, `profiles`, `permission_tables`, `create_mobile_tables`).
   Serve correggere i `create` dei ticket per usare uuid fin dall'inizio.
 - Nessun utente FO in `users`: serve crearne uno con password nota.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Query `User::where('email', ...)->first()` su connessione `user`: nessuna eccezione, risultato null.
+- `fixcity_user`: 34 tabelle, `users` presente e vuota.

@@ -12,8 +12,25 @@ related: [./debug-calls-removal-user.story.md, ./12.3.remove-dddx-debug.story.md
 tags: [bmad, appearance, filament, cluster, navigazione, tenant-config]
 qmd: "user pagine appearance salvataggio o nascondi"
 ---
-
 # Pagine Appearance di User: implementare il salvataggio o nasconderle
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Analisi chiusa, in attesa della decisione dell'utente; poi Dev.
 
@@ -81,3 +98,15 @@ Costo A: 1 Action, 6 pagine, 6 viste, 18 file lang, 6 test, piu' 2-3 file in Xot
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User && rg -n "LogicException" app/Filament/Clusters/Appearance/Pages` e rileggere "Stato misurato": i numeri vanno rimisurati.
 2. Con B deciso: `bashscripts/lock/check.sh laravel/Modules/User/app/Filament/Clusters/Appearance.php`, poi aggiungere la proprieta' e il test per riflessione in `AppearanceClusterTest.php`.
 3. `php -l` sui due file, PHPStan gated su `Modules/User/app/Filament/Clusters/Appearance.php` e sul test, poi annotare l'esito in questa story e aggiornare `status`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `cd laravel/Modules/User && rg -n "LogicException" app/Filament/Clusters/Appearance/Pages | wc -l` atteso 6 (B lo lascia a 6, A lo porta a 0). Controprova: `rg -c 'non implementato' tests/Feature/Filament/Clusters/AppearanceClusterTest.php` = 1.
+- `cd laravel && php -l Modules/User/app/Filament/Clusters/Appearance.php` atteso "No syntax errors".
+- Menu reale (solo a guardia dentro): `Appearance::shouldRegisterNavigation()` falso; non eseguire `artisan`.

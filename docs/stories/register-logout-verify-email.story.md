@@ -5,6 +5,24 @@ qmd: "register logout verify email story registrazione"
 ---
 # Registrazione, logout e verifica email (FO)
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: done (2026-10-07)
 - Fase BMAD: Quick Flow (investigate, fix, verifica nel browser reale)
 - Owner: Modules/User; toccati Notify (mail), Themes/Sixteen (Folio, header)
@@ -38,3 +56,15 @@ qmd: "register logout verify email story registrazione"
 
 - Consegna a caselle esterne: serve un relay SMTP autenticato (vedi `Notify/docs/wiki/how-to/mail-postfix-locale.md`).
 - 6 migrazioni ancora bloccate su `ticket_comments.user_id` bigint -> uuid (vedi story login-unknown-database).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Login + logout `/it` e `/en`: `POST ... -> 302` verso la home del locale, sessione chiusa.
+- Registrazione: redirect, mail consegnata in `/var/mail/zorin` con link `https://192.168.1.40:8080/it/auth/verify/...`.
+- Link da ospite: pagina di login; da loggato: `email_verified_at` valorizzato, redirect `/it/tickets`; firma manomessa: 403.

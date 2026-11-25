@@ -29,8 +29,36 @@ related:
   - ../../../../../docs/chat/user-auth-widgets-view-convention.md
 qmd: "13 auth password widgets view not"
 ---
-
 # [STORY] ForgotPasswordWidget e ResetPasswordWidget dichiaravano una vista che non esiste
+
+## Context and Problem Statement
+
+Larastan accetta una stringa come `view-string` solo se la vista esiste. Aggiungere `/** @var view-string */`, come proponeva l'opzione A della issue 18, avrebbe fatto sparire l'errore e lasciato il difetto.
+
+### Il secondo difetto
+
+Con la vista finalmente trovata, il test di rendering ha fallito cosi':
+
+```text
+ViewException
+Undefined variable $getForm (View: .../Modules/User/resources/views/filament/widgets/auth/forgot-password.blade.php)
+```
+
+I due blade cominciavano con `$form = $getForm();`. `$getForm` e' una variabile delle viste dei campi Filament, non di un widget Livewire. Nessun altro blade del progetto la usa. Quei due file non potevano renderizzarsi nemmeno prima dell'11 ottobre.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: implementazione chiusa, in attesa di revisione. Story scritta prima del codice e aggiornata con l'esito.
 
@@ -234,3 +262,55 @@ Non verificato a schermo: nessuna prova nel browser. Non provato l'invio reale d
 - Un `property.defaultValue` su `$view (view-string)` vuol dire quasi sempre che la vista non esiste. Il primo controllo e' `view()->exists()`, non il docblock.
 - Trovare la vista non basta: va renderizzata. Il test con `Livewire::test()` ha trovato un difetto che l'analisi statica e il controllo sull'esistenza non potevano vedere.
 - Prima di spostare un file va aperto. Il blade di `RegisterWidget` era un resto di sei righe, e per pochi minuti lo avevo messo in un punto dove sarebbe stato usato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Test scritto prima della correzione. Rosso, 8 falliti su 9:
+
+```text
+$ ./vendor/bin/pest --no-coverage Modules/User/tests/Unit/Filament/Widgets/Auth/AuthWidgetsResolveConventionalViewTest.php
+  Manca la vista user::filament.widgets.auth.forgot-password per Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget
+  Exception  View not found: pub_theme::filament.widgets.auth.forgot-password, user::filament.widgets.auth.forgot-password
+exit=2
+```
+
+Dopo la correzione (2026-10-13, 12:33 CEST):
+
+```text
+$ bash ../bashscripts/quality-gates/class-load-fatals/find-class-load-fatals.sh
+files=3453 problems=0
+
+$ ./vendor/bin/phpstan analyse --no-progress --memory-limit=-1 <i 2 widget e il test>
+ [OK] No errors
+
+$ ./vendor/bin/pint --test <gli stessi 3 file>
+{"tool":"pint","result":"passed"}
+
+$ ./vendor/bin/pest --no-coverage Modules/User/tests/Unit/Filament/Widgets/Auth/AuthWidgetsResolveConventionalViewTest.php
+  ✓ il widget auth non dichiara $view                                  (forgot password, reset password)
+  ✓ il modulo fornisce la vista convenzionale del widget auth          (forgot password, reset password)
+  ✓ il widget auth risolve la vista convenzionale                      (forgot password, reset password)
+  ✓ il widget auth si renderizza con il form della sua vista           (forgot password, reset password)
+  Tests:    8 passed (18 assertions)
+```
+
+L'ultimo test monta il widget con Livewire e controlla che nell'HTML ci sia `wire:submit="sendResetLink"` o `wire:submit="resetPassword"`.
+
+PHPStan su tutto `Modules`, lo stesso comando dell'utente, finito alle 12:34 CEST: `exit=0`, nessun errore.
+
+PHPMD: il modulo User non ha un ruleset. Con quello di Quaeris escono due note, entrambe in metodi non toccati e gia' presenti in `HEAD`:
+
+```text
+ForgotPasswordWidget.php  ElseExpression         The method sendResetLink uses an else expression.
+ResetPasswordWidget.php   CamelCaseVariableName  The variable $reset_data is not named in camelCase.
+```
+
+PHP Insights sui due widget: `exit=0`, code 100, complexity 100, architecture 88.2, style 98.7, nessun problema di sicurezza.
+
+Non verificato a schermo: nessuna prova nel browser. Non provato l'invio reale del link ne' il reset con un token vero.

@@ -11,8 +11,25 @@ related:
   - ../socialite-provider-boundary-architecture.md
 qmd: "socialite provider boundary story move config"
 ---
-
 # Story: move Socialite config to SocialiteServiceProvider
+
+## Context and Problem Statement
+
+The User module already has a dedicated `SocialiteServiceProvider`, but `UserServiceProvider` still contains Socialite-specific configuration merge logic. This blurs provider responsibilities and makes the generic User bootstrap aware of OAuth provider details.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Context
 
@@ -34,6 +51,18 @@ Move the `services.*` → `user.social-providers.*` credential merge from `UserS
 Keep existing provider registration in `module.json`. Do not add controllers or new dependencies.
 
 ## Verification
+
+- `php -l` passes for both providers.
+- `php artisan package:discover --ansi` passes.
+- Targeted PHPStan for both providers passes with no errors.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - `php -l` passes for both providers.
 - `php artisan package:discover --ansi` passes.

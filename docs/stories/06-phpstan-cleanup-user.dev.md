@@ -11,8 +11,25 @@ related:
   - "../../../../bashscripts/ai/wiki/rules/database.md"
 qmd: "06 phpstan cleanup user dev"
 ---
-
 # [DEV] PHPStan cleanup modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Technical Plan
 
@@ -82,3 +99,17 @@ for f in $(git status --short Modules/User | awk '{print $2}' | grep '\.php$'); 
 4. **Test senza assert sono bugie**: Una dozzina di test "has X" non verificavano nulla. Un assert su un tipo gia' noto a PHPStan (`method_exists` su classe nota) viene segnalato `alreadyNarrowedType`: usare `ReflectionClass::hasMethod/isSubclassOf`.
 5. **Il working tree puo' contenere de-tipizzazioni fatte per zittire un'altra regola**: le costanti erano state private del tipo nativo per evitare `classConstant.nativeTypeNotSupported`, generando `constantTypeCoverage`. La causa e' `composer.json` `^8.2`, non le costanti: segnalare, non rimbalzare tra le due regole.
 6. Duplicati non toccati (vedi report): `Listeners/` vs `app/Listeners/`, `Database/Migrations` vs `database/migrations/_legacy`, `Actions/Socialite/Utils` vs `Adapters/Socialite` resolver, `tests/Feature/user-management-business-logic.php`, helper 2FA definito 3 volte.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd laravel
+./vendor/bin/phpstan analyse Modules/User --memory-limit=-1 --no-progress   # 108 -> 4 (solo classConstant.nativeTypeNotSupported)
+for f in $(git status --short Modules/User | awk '{print $2}' | grep '\.php$'); do php -l "../$f"; done
+```

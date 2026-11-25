@@ -11,7 +11,7 @@ qmd: "revokeuseraccessaction input output invarianti effetti collaterali errori 
 # RevokeUserAccessAction
 
 Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Chiamata da `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`.
-Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
+Perché: [ADR](../adr/0003-deleted-account-blocked-in-user-provider.md).
 
 ## Input
 

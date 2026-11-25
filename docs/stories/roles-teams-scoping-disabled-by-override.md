@@ -26,8 +26,25 @@ github:
   discussions: https://github.com/laraxot/module_user_fila5/discussions
 qmd: "roles teams scoping disabled by override"
 ---
-
 # Story: il team scoping dei ruoli e' disattivato da un override di `roles()`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## GitHub (tracciamento)
 
@@ -182,3 +199,13 @@ Due conseguenze, opposte fra loro:
   e per questo la story vive in `module:User`.
 - Il difetto e' del tipo peggiore: oggi non produce sintomi. Si manifesta solo
   quando qualcuno fa la cosa giusta.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

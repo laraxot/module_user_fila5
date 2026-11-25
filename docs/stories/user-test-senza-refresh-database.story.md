@@ -12,8 +12,25 @@ related: ["../../../Xot/docs/stories/dcp-45-isolamento-db-test-pest-scratch.stor
 tags: [bmad, test, database, sicurezza, refresh-database]
 qmd: "user test senza refresh database story"
 ---
-
 # Test User senza RefreshDatabase
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Dev (story pronta, esecuzione dei test bloccata fino alla guardia e al verdetto utente).
 
@@ -109,3 +126,15 @@ Fuori ordine, nessuna modifica obbligatoria: `Feature/MigrateDbTest.php` (16 rig
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel && rg -n -P -e "$P" Modules/User/tests --glob '*.php'` (definire `$P` come sopra): confermare le 16 righe e partire da `BaseUserTest.php`.
 2. Applicare i passi 1-8 nell'ordine, con `php -l` dopo ogni file; saltare `TenantTest.php` finche' la story `user-tenant-fillable-cast-e-colonne.story.md` non e' chiusa.
 3. Chiudere con gli AC statici (nessun test lanciato); aggiornare questo file con le cifre finali e scrivere nel report "Pest non eseguito, in attesa della guardia e del verdetto utente".
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+1. Prima di ogni edit: `bashscripts/lock/check.sh <file>`; a fine edit i comandi AC sopra.
+2. `git -C Modules/User diff --stat -- tests` deve toccare solo gli 8 file (piu' `TenantTest` solo dopo la story Tenant).
+3. Dopo il via libera: output atteso di `pest-scratch-db.sh` sul primo file = test verdi o skip, mai `migrate`/`1061` nel log; l'ultima riga dello script e' `scratch eliminato: 0 rimasti`. Controprova: se lo script esce prima (exit 3) nessun test e' partito e nessun DB va ripulito.

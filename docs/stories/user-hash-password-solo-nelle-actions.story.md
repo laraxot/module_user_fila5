@@ -12,8 +12,25 @@ related: ["10.3.retire-auth-livewire-twins.story.md", "11.5-guard-privileged-fie
 tags: [bmad, sicurezza, password, actions, filament]
 qmd: "user hash password solo nelle actions"
 ---
-
 # Password hashate solo in un'Action
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Dev (analisi chiusa, pronta per l'implementazione senza DB).
 
@@ -87,3 +104,15 @@ I 18 file (riga): Actions: `CreateUserAction.php:51` (root, `handle()`, nessun c
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel && sed -n 466,482p Modules/User/app/Models/BaseUser.php`: confermare il `< 32` e chiedere all'utente la decisione 1.
 2. Eseguire il passo 1 e il test dei 40 caratteri (solo statico fino al via libera), poi creare `SetUserPasswordAction` con una `execute()` sola.
 3. Sostituire i siti nell'ordine del passo 3 uno per volta con `php -l` e, a gruppi, PHPStan; chiudere con gli AC e riportare le cifre finali nello "Stato misurato".
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+1. Statica: i comandi AC; `php -l` su ogni file toccato.
+2. Dopo guardia e verdetto utente: `bash bashscripts/tools/pest-scratch-db.sh Modules/User/tests/Unit/Models/BaseUserTest.php`, poi i test che toccano la password (`Feature/UserManagementBusinessLogicTest.php`, `Feature/Filament/Actions/ChangePasswordActionTest.php`). Controprova: con il vecchio `strlen < 32` il test dei 40 caratteri deve fallire.
+3. Letture di verifica (nessun accesso al DB per un agente): vedi decisione 1.

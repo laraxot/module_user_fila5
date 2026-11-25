@@ -8,8 +8,25 @@ updated: '2026-09-11'
 status: resolved
 qmd: "xotbaseresourcetable suspect columns user followup story"
 ---
-
 # Follow-up — colonne sospette e bug reale (modulo User)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -234,3 +251,18 @@ futura del modulo Passport/User.
 - Tutti i file toccati/cancellati sono stati lockati prima della
   modifica con `bashscripts/lock/lock.sh` e sbloccati dopo, come da
   regola di sicurezza multi-agente.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Tutte le colonne sopra sono state verificate con
+`Schema::connection($model->getConnectionName())->getColumnListing(...)`
+(mai senza specificare la connection — un primo giro senza aveva
+prodotto 8 falsi positivi, vedi commit `095973bd`), e incrociate con
+`git log -S`/le migration reali dove la tabella era assente nell'ambiente
+dev.

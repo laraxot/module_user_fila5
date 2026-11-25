@@ -11,8 +11,25 @@ related:
   - ../../../../Xot/docs/bmad/stories/project-quality-audit.story.md
 qmd: "login validation feedback story credenziali accesso"
 ---
-
 # Feedback delle credenziali di accesso errate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Il login deve mostrare un errore generico tradotto accanto al campo email quando
 le credenziali sono errate, senza rivelare se un account esiste.
@@ -56,3 +73,20 @@ le credenziali sono errate, senza rivelare se un account esiste.
 - [Widget di accesso](../../../app/Filament/Widgets/Auth/LoginWidget.php).
 - [Regressione Pest](../../../tests/Unit/Filament/Widgets/AuthLoginFeedbackTest.php).
 - [Story di coordinamento](../../../../Xot/docs/bmad/stories/project-quality-audit.story.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Pest prima della correzione: 4 fallimenti per errore assente su `data.email`.
+- Pest finale: 4 test superati, 32 asserzioni (`it`/`en` × `login`/`save`).
+- Comando: `./vendor/bin/pest Modules/User/tests/Unit/Filament/Widgets/AuthLoginFeedbackTest.php --compact`.
+- Pint e `php -l` sui due PHP: superati.
+- PHPStan max sul widget e sul test, con configurazione repository e `--debug --no-progress`: zero errori.
+- Test senza bootstrap applicativo, connessioni database o modifiche ai dati.
+- Gli skip preesistenti nei test feature non sono stati modificati.
+- Nessuna verifica browser: nessun tool browser disponibile e `ptvx.local` non risponde entro 8 secondi.

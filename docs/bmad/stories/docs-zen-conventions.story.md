@@ -9,8 +9,28 @@ created: 2026-11-25
 updated: 2026-11-25
 qmd: "user docs bonifica kebab-case frontmatter qmd duplicati md5 stub canonical shared-components morti models/models annidamento -integration _integration template product roadmap prd sprint planning"
 ---
-
 # User: bonifica docs `.md` (lane B swarm docs-zen)
+
+## Context and Problem Statement
+
+`laravel/Modules/User/docs` era la cartella docs piu' inquinata del progetto (3207 `.md`):
+annidamenti generati da bug, ~480 stub "See canonical documentation" verso
+`Themes/docs/shared-components/*` (percorso **mai esistito**), coppie `snake_case`/kebab,
+template prodotto fabbricati, frontmatter YAML rotti. Rumore per QMD e per gli agenti.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -81,3 +101,13 @@ le story non si eliminano/rinominano per policy; 1 terna di `README.md` placehol
 Solo `.md`: PHPStan/Pint/Pest non applicabili (skip documentato), PHPStan gia' 0.
 Validazione: tutti i 2108 frontmatter parsati con PyYAML come mapping.
 Backup pre-bonifica: scratchpad sessione `laneB/user-docs-backup.tgz`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

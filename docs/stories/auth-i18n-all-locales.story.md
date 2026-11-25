@@ -5,6 +5,24 @@ qmd: "auth i18n all locales story pagine"
 ---
 # Pagine auth e segnalazioni in tutte le lingue (it, en, de, es)
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: done (2026-10-07)
 - Fase BMAD: Quick Flow (audit sistematico, fix, test di regressione)
 - Owner: Modules/User (lang auth), Modules/Fixcity (lang ticket/global), tema Sixteen (lang navigation, view logout)
@@ -41,3 +59,14 @@ visibili con la stessa pagina in italiano (identiche = non tradotte) e cerca chi
 - Il resto del modulo Fixcity (wizard di segnalazione, notifiche, enum) ha ancora poche chiavi in de/es: lanciare l'audit sulle altre pagine.
 - Il logout dagli header faceva POST su una rotta Folio solo GET (405): rotta POST aggiunta da un'altra sessione in `Modules/User/routes/web.php`;
   senza CSRF risponde 419 (atteso). Prova end-to-end con utente di test ancora da fare.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `LoginPageTranslationsTest.php`: 31 chiavi x 4 lingue = 124 test, senza DB.
+- Audit a pagina intera pulito su `/auth/login`, `/auth/register`, `/auth/password/reset`, `/auth/logout`, `/tickets`, home.

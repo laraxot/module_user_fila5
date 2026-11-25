@@ -38,8 +38,25 @@ related:
   - "database/migrations/2026_09_01_150112_create_permissions_table.php"
 qmd: "xotbaseresourcetable model audit batch user oauth"
 ---
-
 # Audit $model + schema colonne su 13 XotBaseResourceTable (OAuth/Passport/Permission)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -266,3 +283,13 @@ Claude Sonnet 5
 - `app/Filament/Resources/PasswordResetResource/Tables/PasswordResetsTable.php` (solo letto/verificato)
 - `app/Filament/Resources/PersonalAccessTokenResource/Tables/OauthAccessTokensTable.php` (solo letto/verificato)
 - `app/Filament/Resources/PersonalAccessTokenResource/Tables/PersonalAccessTokensTable.php` (solo letto/verificato, dead code segnalato)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

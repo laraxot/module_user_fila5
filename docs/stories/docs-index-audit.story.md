@@ -6,8 +6,25 @@ updated: 2026-09-03
 qmd: "user docs index audit duplicati storico"
 title: "Story: audit indice documentazione (Modules/User/docs)"
 ---
-
 # Story: audit indice documentazione (Modules/User/docs)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User story
 
@@ -23,3 +40,13 @@ Come manutentore del modulo User, voglio un `docs/index.md` organizzato per argo
 ## Riferimenti
 
 - [../index.md](../index.md)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

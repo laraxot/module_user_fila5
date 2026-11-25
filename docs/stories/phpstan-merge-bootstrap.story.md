@@ -17,8 +17,25 @@ related:
   - "./phpstan-zero-errors-user.story.md"
 qmd: "phpstan merge bootstrap story user mergemarker"
 ---
-
 # User: PHP merge-marker bootstrap
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## GateGuard (first touch)
 
@@ -94,3 +111,13 @@ I marker residuali bloccano il bootstrap PHPStan (`unexpected token "<<"`) e spe
 **File.** `en/profile.php` (`navigation.label` = `Profile`, il plurale è già in `plural`), `en/widgets.php` (`users_chart.heading` = `Users`, la serie è `label` = `New users`), `en/user_overview_widget.php` e `it/user_overview_widget.php` (descrizioni ripristinate: erano state perse tenendo solo il blocco con la sola etichetta), `it/base_profile_form.php` e `it/base_profiles.php` (etichetta `Utente` al posto di `user.name`, campi fusi), `it/oauth_personal_access_clients.php` e `it/password_resets.php` (blocco `fields` curato fuso con `actions`), `it/recent_logins.php` (`Browser (user agent)` e `Utente` al posto di `user_agent` e `user`), `it/user_form.php` (`name` = `Nome visualizzato`, `token` = `Token`), `it/passport_stats.php` (un solo `return`, nessun codice legge questo file).
 
 **Aperto.** `it/widgets.php` non ha `users_chart.label` e `recent_logins.heading`, che il codice legge; `de/profile.php` non ha `my_profile` e `subheading`. Fuori da questa lane.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -12,8 +12,25 @@ acceptance_criteria:
   - One commit per fix with clear message
 qmd: "phpstan l10 user phase2 story phase"
 ---
-
 # PHPStan L10 User Module — Phase 2
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 **Status: IN PROGRESS** — Resource constraints (WSL2 memory) prevent full-module analysis; using targeted file-by-file review.
 
@@ -74,3 +91,13 @@ qmd: "phpstan l10 user phase2 story phase"
   `normalizeFormSchema()` e dal ritorno del metodo; nessun cambio di comportamento.
 - Verifica: `php -l` ok, `class_exists` true, PHPStan mirato sul file: 0 errori.
 - Lezione: un `@var` senza variabile e' un residuo di refactor, non un'informazione: toglierlo, non inventare una variabile.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

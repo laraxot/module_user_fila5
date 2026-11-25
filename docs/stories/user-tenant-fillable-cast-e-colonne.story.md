@@ -12,8 +12,25 @@ related: ["../../../Tenant/docs/stories/tenant-modello-cast-e-colonne-inesistent
 tags: [bmad, tenant, model, cast, fillable, migration]
 qmd: "user tenant fillable cast colonne story"
 ---
-
 # Tenant User: fillable, cast e colonne allineati alla migration
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Dev (verifica dei fatti fatta, pronta per l'implementazione senza DB).
 
@@ -85,3 +102,15 @@ Misure del 2026-10-20 tra le 13:44 e le 13:48 UTC, dalla cartella `laravel`.
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel && sed -n 1,20p Modules/User/app/Models/BaseModel.php && sed -n 76,82p Modules/User/app/Models/Tenant.php`: confermare che `casts()` e la classe vuota siano ancora quelle.
 2. Applicare i passi 1-4 di "Lavoro" (lock sui due file prima di scrivere), poi `php -l` e PHPStan sui 4 file.
 3. Eseguire gli AC statici e scrivere nella sezione "Stato misurato" i nuovi conteggi; lasciare la verifica dinamica segnata "in attesa della guardia".
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+1. Statica: i comandi AC sopra, piu' `php -l Modules/User/app/Models/Tenant.php` e `php -l Modules/User/tests/Unit/Models/TenantTest.php`.
+2. Dinamica, solo dopo guardia e verdetto utente (vedi vincoli): `bash bashscripts/tools/pest-scratch-db.sh Modules/User/tests/Unit/Models/TenantTest.php`. Atteso: nessun errore su `settings`, `is_active` e `trial_ends_at` con `assertSame` su tipi (array, bool, `Carbon`). Controprova: ripristinando temporaneamente `json_encode` alla riga 242 il test sulle impostazioni deve fallire.
+3. Schema vivo: leggere le colonne di `tenants` sulla connessione `user` dello scratch (l'unione attesa e' quella sopra) e annotare qui il risultato.

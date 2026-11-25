@@ -9,8 +9,25 @@ tags: [docs, organizzazione, user, link, bmad]
 related: [bmad-output/stories/docs-organization/README.md, bmad-output/docs-architecture/module-theme-docs-contract.md, laravel/Modules/Fixcity/docs/stories/dcp-56-organizzazione-docs-moduli-e-temi.story.md]
 qmd: "user docs studio ingressi 00-INDEX README link rotti cause campione duplicati archive generated index phpstan"
 ---
-
 # User: studio del modulo, ingressi docs e cause dei link rotti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: documentazione e qualita' (DOC-010 e DOC-002 del piano `bmad-output/stories/docs-organization/`).
 
@@ -102,3 +119,25 @@ Non rieseguiti i test Pest di User (con la config cache colpiscono il database d
 6. `README.md`: eliminare la ripetizione del corpo (righe 1257-2352) quando sara' ammessa una modifica distruttiva.
 7. Difetti del tool: `--annotate` senza filtro per file; l'evento `unresolved` non distingue un link gia' annotato; `stale` rifiuta i file senza
    front matter.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```
+phpstan analyse Modules/User (da laravel/)   exit 1: 3 errori
+  Modules/User/lang/de/validation.php:8  argument.type  array_replace_recursive expects array, mixed given
+  Modules/User/lang/en/validation.php:8  idem
+  Modules/User/lang/es/validation.php:8  idem
+php artisan route:list --json               461 rotte; user/admin 111; POST logout -> Volt\LogoutAction
+conteggi find/ls: modelli 50, policy 39, trait 14, Actions 59, migrazioni 102, lang 32, console 16, test 185 .php su 316 file
+docs-organizer links --by-name --busy-minutes 0 (dry-run)
+  perimetro: 14194 -> 14189 eventi unresolved (14189 sono nei file non toccati)
+  00-INDEX.md 5 -> 0   README.md 40 -> 40 (tutti e 40 annotati sulla riga: il tool non riconosce le annotazioni)
+```
+
+Non rieseguiti i test Pest di User (con la config cache colpiscono il database di sviluppo; ricetta `pest-scratch-db`).

@@ -10,8 +10,25 @@ related:
   - "./auth-verify-confirm-design-comuni-shell.story.md"
 qmd: "auth verify resend loading story page"
 ---
-
 # Verify page — spinner su "richiedine un altro"
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -41,3 +58,13 @@ Nel parziale condiviso
 - `Themes/TwentyOne/resources/views/pages/auth/verify.blade.php` (stesso pattern)
 - `Modules/User/resources/views/livewire/auth/verify.blade.php` (fallback legacy)
 - `Modules/User/lang/{it,en,de,es}/auth_pages.php`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

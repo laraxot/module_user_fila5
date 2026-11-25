@@ -12,8 +12,25 @@ related: ["12.2.hardcoded-labels-translation.story.md (questa la continua, non l
 tags: [bmad, i18n, lang, filament, ui]
 qmd: "user stringhe ui tradotte story filament"
 ---
-
 # Stringhe UI del Filament User tradotte
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Dev (inventario completo, lavoro diviso in 5 tranche con PHPStan).
 
@@ -113,3 +130,15 @@ Rischio: i test che asseriscono le stringhe inglesi vanno aggiornati (lo dice gi
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User && rg -c -P -e "$PA" app/Filament --glob '*.php'` (definire `$PA` come sopra): confermare 83 righe e 19 file.
 2. `sed -n 15,80p app/Filament/Resources/TenantResource/Schemas/TenantForm.php` e `sed -n 1,60p lang/it/tenant_form.php`: partire dalla tranche T1 (decisione 2 prima).
 3. Scrivere le chiavi in `lang/{it,en,de}/tenant_form.php`, sostituire le 14 stringhe con `__('user::tenant_form.fields.<campo>.<tipo>')`, poi `php -l`, lo script lang e PHPStan.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User && rg -c -P -e "$PA" app/Filament --glob '*.php' | awk -F: '{s+=$2;n++} END{print n" file, "s" righe"}'` dopo ogni tranche.
+2. Lo script lang sui file della tranche, nelle tre lingue.
+3. Test del pannello solo dopo guardia e verdetto utente; fino ad allora nessuno (Pest fermo).

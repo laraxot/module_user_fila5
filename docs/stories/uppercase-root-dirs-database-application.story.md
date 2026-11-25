@@ -23,6 +23,25 @@ owned_scope:
   - "laravel/Modules/User/Application/"
 qmd: "uppercase root dirs database application story"
 ---
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -151,3 +170,13 @@ entrambe le cartelle assenti dal disco con esattamente lo stesso set di 10
 file già verificato sicuro nelle 3 verifiche indipendenti sopra (8 migration
 + 1 factory in `Database/`, 1 use case contract in `Application/`). Nessuna
 nuova ricomparsa osservata. Staged e committato senza ulteriori modifiche.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

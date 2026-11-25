@@ -10,7 +10,7 @@ qmd: "upsertuserfromdigitalidentityaction input output invarianti effetti collat
 
 # UpsertUserFromDigitalIdentityAction
 
-Sorgente: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php`. Perché: [ADR](../adr/digital-identity-upsert-by-fiscal-code.md).
+Sorgente: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php`. Perché: [ADR](../adr/0005-digital-identity-upsert-by-fiscal-code.md).
 
 ## Input
 

@@ -10,8 +10,25 @@ related: [xotbase-migration-religion, one-migration-per-model, production-500-de
 tags: [migrations, users, convention, production]
 qmd: "users migrations consolidation story migrazioni consolidamento"
 ---
-
 # Migrazioni users: consolidamento in create_users_table
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -69,6 +86,18 @@ delle chiavi UUID con `Schema` resta invariata; nessun `down()` distruttivo.
   `2026_11_12_000002_repair_users_deleted_at_column.php`
 
 ## Verifica
+
+- `php -l` sui file toccati
+- `php artisan module:migrate User --pretend` (o migrate:status) per confermare
+  che la migrazione è vista come pending e genera le colonne attese
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
 
 - `php -l` sui file toccati
 - `php artisan module:migrate User --pretend` (o migrate:status) per confermare

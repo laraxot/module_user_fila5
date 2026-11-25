@@ -10,8 +10,25 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/573"
 qmd: "citizen registration email story registrazione cittadino"
 ---
-
 # Registrazione cittadino: UX accessibile e verifica email locale
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -41,3 +58,13 @@ del gestore e non può essere dedotto dall'ambiente locale.
 `laravel/Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php`,
 `laravel/config/auth.php`, `laravel/config/mail.php` e
 `laravel/Themes/Sixteen/resources/views/filament/widgets/auth/register.blade.php`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

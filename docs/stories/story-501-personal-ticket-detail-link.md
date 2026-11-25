@@ -14,8 +14,25 @@ related:
   - ../wiki/concepts/folio-app-pages-owner.md
   - ../../Fixcity/docs/stories/STORY-500-ticket-status-audit-timeline.md
 ---
-
 # STORY-501 — Dettaglio dalla lista “Le mie pratiche”
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User story
 
@@ -42,3 +59,13 @@ la visibilità al proprietario autenticato tramite `isVisibleOnPublicFrontoffice
 
 Modificare solo la pagina owner User e usare URL localizzato `/tickets/{id}`. Il controllo di
 ownership resta nel modulo Fixcity; non duplicarlo nella view User.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

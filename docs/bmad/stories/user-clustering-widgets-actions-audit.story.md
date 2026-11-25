@@ -21,8 +21,25 @@ excluded_scope:
   - app/Filament/Widgets/PrivacyPolicyWidget.php
 qmd: "user clustering widgets actions audit story"
 ---
-
 # Story: audit + interventi su clustering, widget e action di UserResource
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -121,3 +138,18 @@ Vedi elenco completo in `docs/wiki/user-resource-clustering-widgets-actions-audi
   filtro reale (es. su `AuthenticationLogsRelationManager`) o rimozione.
 - `BaseUserResource.php` risulta non estesa da nessuna classe (probabile dead code),
   fuori scope di questa story.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` su tutti i file PHP toccati: nessun errore di sintassi.
+- Lettura vendor Filament (`RelationGroup.php`, `HasRelationManagers.php`,
+  `InteractsWithRelationshipTable.php`, `Stat.php`) per confermare le API usate
+  esistono con la firma attesa nella versione installata.
+- Grep sull'intero monorepo per riusabilita' Actions e per riferimenti residui ai file
+  rimossi (`TokensRelationManager`, `UserWidget`): nessun riferimento orfano trovato.

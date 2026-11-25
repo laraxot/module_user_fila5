@@ -15,8 +15,25 @@ related:
   - ../../stories/12.5.filament-artifacts-cleanup.story.md
 qmd: "continuazione domani bmad user"
 ---
-
 # User — Continuazione Domani
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
   - ../../stories/user-nested-conflict-marker-cleanup.story.md
 updated: 2026-10-07
@@ -147,3 +164,13 @@ qmd: "user   continuazione domani user"
 
 `qmd query "User dev laraxot-dev riconciliazione merge db4ea2a9 epics.md
 scartato"` prima di riprendere il punto 1-2; `qmd update` dopo ogni chiusura.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

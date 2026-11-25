@@ -5,6 +5,24 @@ qmd: "logout post localized route story langauthlogout"
 ---
 # Logout: POST /{lang}/auth/logout rispondeva 405
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 - Stato: done (2026-10-07)
 - Fase BMAD: Quick Flow (errore da trace, causa, fix, verifica HTTP)
 - Owner: Modules/User (`LogoutAction`), route dell'app (`laravel/routes/web.php`)
@@ -41,3 +59,15 @@ GET `/de/auth/logout` -> 200 (pagina Folio intatta); POST senza CSRF -> 419.
 - Il corpo di `LogoutAction` non e' stato esercitato con un utente loggato (nessun utente di test).
 - `Modules/User/routes/web.php` contiene ancora la vecchia `Route::post('logout')`, mai raggiungibile.
 - Regola da ricordare: le route nei file `Modules/*/routes/*.php` non sono caricate.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+POST con cookie e token CSRF reali contro `https://192.168.1.40:8080`:
+it, en, de, es -> 302 verso `/{lang}/auth/login` (redirect dei guest del middleware `auth`);
+GET `/de/auth/logout` -> 200 (pagina Folio intatta); POST senza CSRF -> 419.

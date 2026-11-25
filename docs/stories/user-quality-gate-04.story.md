@@ -5,6 +5,24 @@ qmd: "user quality gate 04 story qualitygate"
 ---
 # Story: Quality-gate closure — Modules/User (2026-09-04)
 
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
 ## BMAD phase
 Build + Measure (standing order pillar 5 — chiusura gate qualità di modulo).
 
@@ -101,3 +119,13 @@ rispecchiano colonne DB snake_case), `ExcessiveParameterList` su DTO Spatie Lara
 - `app/Actions/Socialite/RetrieveSocialiteUserAction.php`
 - `docs/coverage.md`
 - `docs/stories/user-quality-gate-2026-09-04.story.md` (questo file)
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

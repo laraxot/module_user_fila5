@@ -15,8 +15,25 @@ owned_scope: [app/Models/BaseTenant.php, database/migrations/2023_01_01_000003_c
 tags: [tenancy, tenant, migration, uuid]
 qmd: "user tenant tenant_user tenant_id stringa uuid HasUuids HasSlug resolveRouteBindingQuery BaseTenant"
 ---
-
 # User: chiave stringa del tenant coerente fra tenants e tenant_user
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Story
 
@@ -67,3 +84,13 @@ sezione "Seguito 2026-11-10".
 Risolto lato <nome progetto> il 2026-11-10: `Customer::uniqueIds()` restituisce `[]` (estensione prevista da Laravel
 per `HasUuids`), `BaseTenant` non toccata. Chi aggiunge un altro figlio di `BaseTenant` con chiave intera deve
 fare lo stesso. Test: `laravel/Modules/<nome progetto>/tests/Unit/Models/CustomerIntegerKeyTest.php`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

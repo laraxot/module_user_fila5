@@ -21,8 +21,25 @@ owned_scope:
   - "laravel/Modules/User/docs/"
 qmd: "merge conflict markers cleanup story user"
 ---
-
 # User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Coordinamento
 
@@ -185,3 +202,18 @@ Lock `laravel/Modules/User:docs` acquisito e rilasciato correttamente
 (scope limitato a `docs/`, non l'intero modulo). Commit unico, 867 file
 (`git add` con lista esplicita di path, mai `-A`: repo con ~5000
 modifiche non correlate di altre sessioni in corso).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```
+grep -rlE '^<<<<<<< |^=======$|^>>>>>>> ' docs/   # 0 file
+```
+
+Verificati anche i 10 file già corretti a mano prima dello script bulk: 0
+marker residui in tutti, script non li ha ritoccati.

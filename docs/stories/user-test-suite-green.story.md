@@ -10,8 +10,25 @@ related: [QA-01, SEC-05, dcp-285, issue-97]
 tags: [tests, ci, pest, mariadb, policy, security]
 qmd: "user test suite green story pest"
 ---
-
 # Suite Pest del modulo User verde in CI
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -119,3 +136,13 @@ Rischiosi (74): 49 erano test "can be instantiated" senza asserzioni; ora usano 
 
 - `app/Models/Traits/HasTeams.php:211` usa gia' `new Collection($items)->unique()` (sintassi PHP 8.4, preesistente): `php -l` 8.3 locale fallisce, la CI (8.4) no.
 - Da verificare alla prossima CI: refresh token (dipende dalla nuova migration), SuperAdminWidget (morph class utente del progetto).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

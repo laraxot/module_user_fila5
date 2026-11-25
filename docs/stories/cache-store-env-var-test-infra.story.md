@@ -22,8 +22,25 @@ github:
   issues: []
 qmd: "cache store env var test infra"
 ---
-
 # phpunit.xml: CACHE_DRIVER non ha effetto, serve CACHE_STORE
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -103,3 +120,22 @@ necessaria.
 
 - `HasSpatiePermission.php`, `OauthAccessTokenPolicy.php`,
   `HasSpatiePermissionAutoCreateTest.php`, cancellazione `EnsurePermissionExistsAction.php`
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+XDEBUG_MODE=coverage vendor/bin/pest Modules/User/tests/Feature/HasSpatiePermissionAutoCreateTest.php
+```
+
+Prima del fix: 3/5 test falliti su `QueryException` tabella `cache` mancante (bypassato
+solo con `CACHE_STORE=array` via CLI, non persistito).
+Dopo il fix (nessun override CLI): **5 passed (9 assertions)**.
+
+Nota tooling: `XDEBUG_MODE=off` fa uscire Pest senza eseguire nulla (silenzioso) — vedi
+memoria `pest-coverage-xdebug-mode-coverage-non-off.md`. Serve `XDEBUG_MODE=coverage`.

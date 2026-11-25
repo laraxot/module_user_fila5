@@ -22,8 +22,25 @@ github:
   issues: []
 qmd: "superadmin widget icons story superadminwidget icone"
 ---
-
 # SuperAdminWidget: icone piu' adeguate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -94,3 +111,18 @@ per buona a occhio. Vedi [[multi-agent-same-repo-race]],
   (icone; contenuto finale non scritto da me nell'ultimo giro, ma verificato da me)
 
 **SUPERSEDED 2026-09-21**: design/stato descritto qui non e' quello finito a HEAD. Stato finale reale + regressione trovata e corretta: `9.7.super-admin-widget-icons-final.story.md`.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` pulito
+- `o-shield-exclamation.svg` e `o-shield-check.svg` presenti in vendor
+- Test invariati (nessuna asserzione sulla stringa icona, solo su
+  `data-super-admin-state`): **12 passed (31 assertions)**
+  (`Modules/User/tests/Unit/Filament/Widgets/SuperAdminWidgetTest.php` +
+  `Modules/User/tests/Feature/Filament/Widgets/SuperAdminWidgetTest.php`)

@@ -12,8 +12,25 @@ updated: 2026-10-13
 qmd: "spid cie identificazione informatica cad art 64 comma 2-quater 3-bis art 65 istanze decreto 76 2020 login cittadino oidc eidas"
 related: [dcp-112, dcp-42, dcp-48]
 ---
-
 # DCP-144: come si identifica il cittadino che segnala
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Nata da DCP-112 (matrice normativa N-24, N-25, N-26, N-31).
 
@@ -41,3 +58,13 @@ B) Motivare per iscritto che il login di FixCity non e' «identificazione inform
 
 ## Dipendenze e priorita'
 Decisione del Comune e dell'RTD; DCP-42, DCP-48, DCP-124. P1 (alto rischio ma bloccato da una decisione, non da codice).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -30,8 +30,25 @@ github:
   issues: https://github.com/laraxot/module_user_fila5/issues
 qmd: "dashboard lang collateral damage 21 story"
 ---
-
 # STORY — 500 reale su /user/admin da file lang troncato, audit blast radius commit 0701a777a
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -151,3 +168,13 @@ lezioni complete (memoria che documenta senza correggere non e' sufficiente;
 `git diff --numstat` sul commit sospetto misura il raggio reale, non
 assumerlo piccolo; `.gitignore` aggiunto nella stessa commit puo' essere
 cleanup intenzionale, non danno).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

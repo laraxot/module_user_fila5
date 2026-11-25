@@ -8,8 +8,25 @@ updated: 2026-11-19
 issues: ["https://github.com/laraxot/base_techplanner_fila5/issues/64"]
 qmd: "audit qualita story user"
 ---
-
 # Story: audit qualita' del modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -64,3 +81,13 @@ Da non toccare: `BaseUser::canAccessPanel` (ruoli `<module>::operator`), flusso 
       contratti stile Jetstream in `Contracts/` (`CreatesTeams`, `DeletesUsers`, ...).
 - [ ] `docs/` ha ancora ~1000 file in radice con nomi quasi uguali (`actions-structure-1.md`, `-2.md`, ...):
       non sono duplicati esatti, vanno uniti leggendo il contenuto.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

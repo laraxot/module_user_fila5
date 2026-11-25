@@ -5,8 +5,25 @@ type: story
 updated: 2026-11-17
 qmd: "user gap analysis story clean-up phase one architecture report"
 ---
-
 # Story — Gap analysis utente + clean-up fase 1 (2026-09-22)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 - **Epic**: USER-GAP-2026
 - **Status**: done
@@ -34,3 +51,12 @@ Rimossi (git rm, 49 file tracked) tra cui:
 - Rimozione fisica (non versionato): `resources/views/node_modules` (92 MB), `tests/Unit/graphify-out`.
 
 **Da fare in follow-up**: deduplicazione risorse Passport/Socialite (cotern hero), unificazione pivot su Xot, harden BaseUser (write-on-read, hash password, tipi chiave), registrazione observer/policy, cleanup eventi+contract Fortify, unificazione logout Livewire/Volt, migrazioni "owner", seeders duplicati.
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -12,8 +12,25 @@ related:
 tags: [docs, user, bmad]
 qmd: "story   user: dedup baseuserstable orfano + audit clustering/widget/action user"
 ---
-
 # Story: User: dedup BaseUsersTable orfano + audit clustering/widget/action
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -105,3 +122,20 @@ configurato:
 > state portate nel `BaseUsersTable` canonico (`UserResource/Tables/`), come
 > colonne secondarie `toggleable`. PHPStan modulo User: 0 errori dopo la
 > modifica. Nessuna colonna persa, nessun chiamante rotto.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```
+./vendor/bin/phpstan analyse Modules/User/app/Filament/Resources/UserResource/Tables/BaseUsersTable.php \
+  Modules/User/app/Filament/Resources/UserResource/Tables/UsersTable.php --memory-limit=2G
+[OK] No errors
+
+./vendor/bin/phpstan analyse Modules/User --memory-limit=4G
+[OK] No errors (1560 file)
+```

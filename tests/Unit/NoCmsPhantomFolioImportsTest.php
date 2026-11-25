@@ -15,7 +15,7 @@ use function Safe\file_get_contents;
  * @see FolioServiceProvider stub no-op
  * @see Modules/Cms/app/Providers/FolioVoltServiceProvider.php (unico owner Folio+Volt)
  * @see Modules/User/docs/architecture/auth-blade-structure.md
- * @see Modules/User/docs/adr/frontoffice-login-page-ownership.md
+ * @see Modules/User/docs/adr/0006-frontoffice-login-page-ownership.md
  */
 test('user folio pages do not import modules cms', function (): void {
     $pagesPath = dirname(__DIR__, 2).'/resources/views/pages';

@@ -10,7 +10,7 @@ qmd: "consumeauthsubmissionslotaction input output invarianti effetti collateral
 
 # ConsumeAuthSubmissionSlotAction
 
-Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR](../adr/auth-submission-throttle-before-validation.md).
+Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR](../adr/0001-auth-submission-throttle-before-validation.md).
 
 ## Input
 

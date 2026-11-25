@@ -12,8 +12,25 @@ related: [./user-test-senza-refresh-database.story.md, ./7.3.test-mai-eseguiti-s
 tags: [bmad, test, pest, phpunit, tautologie, igiene]
 qmd: "user test igiene phpunit testcase svuotati"
 ---
-
 # Igiene dei test User: file non eseguiti, tautologie, stile PHPUnit
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Fase BMAD: Dev (story pronta; i test non si lanciano finche' la guardia DB non e' dentro).
 
@@ -76,3 +93,14 @@ Ordine, dal meno rischioso. Nessun Pest: la verifica e' `php -l` + PHPStan sui f
 1. `cd /mnt/nas07/var/www/_bases/base_<nome progetto>_fila5/laravel && /usr/bin/find Modules/User/tests -name '*.php' ! -name '*Test.php' -print0 | xargs -0 rg -P -l '^\s*(test|it|describe)\s*\('` e `rg -P -c 'assertTrue\(true\) removed' Modules/User/tests`: rimisurare 2 e 26.
 2. Passo 1 (duplicato `ClientCredentials.php`) e passo 3 sul file piu' piccolo, `Unit/Facades/FacadesTest.php`, poi `php -l`.
 3. Annotare qui le cifre finali e che Pest non e' stato eseguito.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- Prima e dopo: i quattro comandi di "Stato misurato"; ogni "0" ha la controprova (`rg` sul file `ClientCredentialsTest.php`, `git grep -P` per le tautologie).
+- Dopo il via libera: `bash bashscripts/tools/pest-scratch-db.sh <file>` un file per volta (lo cita la gemella); atteso verde o skip esplicito, mai `migrate`.

@@ -1141,14 +1141,14 @@ qmd: "index"
 
 - [0000-template.md](./adr/0000-template.md)
 - [README.md](./adr/README.md)
-- [auth-submission-throttle-before-validation.md](./adr/auth-submission-throttle-before-validation.md)
-- [authentication-log-never-breaks-login.md](./adr/authentication-log-never-breaks-login.md)
-- [deleted-account-blocked-in-user-provider.md](./adr/deleted-account-blocked-in-user-provider.md)
-- [deleted-accounts-are-filtered-by-auth-provider.md](./adr/deleted-accounts-are-filtered-by-auth-provider.md)
-- [digital-identity-upsert-by-fiscal-code.md](./adr/digital-identity-upsert-by-fiscal-code.md)
-- [frontoffice-login-page-ownership.md](./adr/frontoffice-login-page-ownership.md)
+- [0001-auth-submission-throttle-before-validation.md](./adr/0001-auth-submission-throttle-before-validation.md)
+- [0002-authentication-log-never-breaks-login.md](./adr/0002-authentication-log-never-breaks-login.md)
+- [0003-deleted-account-blocked-in-user-provider.md](./adr/0003-deleted-account-blocked-in-user-provider.md)
+- [0004-deleted-accounts-are-filtered-by-auth-provider.md](./adr/0004-deleted-accounts-are-filtered-by-auth-provider.md)
+- [0005-digital-identity-upsert-by-fiscal-code.md](./adr/0005-digital-identity-upsert-by-fiscal-code.md)
+- [0006-frontoffice-login-page-ownership.md](./adr/0006-frontoffice-login-page-ownership.md)
 - [index.md](./adr/index.md)
-- [user-owns-identity-and-roles.md](./adr/user-owns-identity-and-roles.md)
+- [0007-user-owns-identity-and-roles.md](./adr/0007-user-owns-identity-and-roles.md)
 
 ## architecture
 

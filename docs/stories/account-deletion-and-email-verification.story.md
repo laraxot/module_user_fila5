@@ -10,8 +10,25 @@ related: [SEC-05, SEC-14, PRD-02, DEC-11, dcp-285]
 tags: [security, gdpr, auth, passport, email-verification]
 qmd: "account deletion and email verification story"
 ---
-
 # Account cancellati senza accesso e verifica email reale
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Problema
 
@@ -110,3 +127,26 @@ Verifica manuale:
 - **Guard gia' risolte (M5).** Il provider che esclude gli account cancellati si registra in `register()` con
   `afterResolving('auth')` e `forgetGuards()`: una guard risolta da un altro modulo durante il boot non tiene piu' il
   provider di serie.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd laravel
+vendor/bin/pest Modules/User/tests/Feature/Auth/DeletedAccountAccessTest.php Modules/User/tests/Feature/Auth/EmailVerificationFlowTest.php
+vendor/bin/pest Modules/Gdpr/tests Modules/Fixcity/tests/Feature/Privacy Modules/Fixcity/tests/Feature/Api/UserApiLoginThrottleTest.php Modules/Cms/tests/Feature/Auth/EmailVerificationTest.pest.php
+./vendor/bin/phpstan analyse Modules/User Modules/Gdpr
+php artisan route:list --name=verification
+```
+
+Verifica manuale:
+
+1. Registrarsi e controllare che arrivi la mail con il link.
+2. Aprire `/it/tickets/create` prima del link: si deve finire su `/it/auth/verify`.
+3. Aprire il link e controllare di tornare al wizard.
+4. Eliminare l'account e chiamare `POST /api/user/login`: deve rispondere 401. Un vecchio bearer token su `/api/v2/user` deve rispondere 401.

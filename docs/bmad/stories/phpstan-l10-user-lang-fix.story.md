@@ -16,8 +16,25 @@ references:
   - laravel/Modules/Lang/docs/stories/8.11-phpstan-l10-test-types-fix.story.md
 qmd: "phpstan l10 user lang fix story"
 ---
-
 # PHPStan L10 User + Lang Modules Fix
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Status: DONE
 
@@ -124,3 +141,23 @@ Phase 2 (future session):
 - Xot module dependencies cause cascade timeouts on dependent modules
 - Test file complexity necessitated per-fixture analysis rather than full module analysis
 - Pattern-based approach proves efficient for identifying systematic type issues
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+✅ **User Module**:
+- Story 8.1 migration file: PHPStan L10 `[OK] No errors`
+- Type casting and narrowing properly applied
+- No regression detected
+- All other permission migrations properly typed
+
+✅ **Lang Module**:
+- All test files: php -l syntax 100% pass
+- Fixtures follow proper type declaration patterns
+- 2 files fixed in this session
+- Comprehensive analysis documented for phase 2

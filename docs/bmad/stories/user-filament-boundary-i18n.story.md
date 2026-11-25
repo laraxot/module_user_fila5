@@ -8,8 +8,25 @@ created: 2026-09-29
 updated: 2026-09-29
 qmd: "user filament boundary i18n story confine"
 ---
-
 # Story — User: Table boundary, traduzioni e riuso
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Obiettivo
 
@@ -83,3 +100,18 @@ tabella effettiva è quindi già `StabiDirigenteResource/Tables/StabiDirigentesT
 Creare una seconda Table class violerebbe DRY e potrebbe disallineare l'alias.
 Sono stati inclusi anche i percorsi annidati già presenti nei moduli; il controllo
 ha distinto i metodi reali dai soli commenti e dalle fixture di test.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Audit AST/rg: nessun metodo `getTable*` residuo nelle pagine `List*.php` dei moduli
+(restano solo fixture di test e commenti). PHPStan User e PHPStan globale `Modules/`:
+**verdi, 0 errori**.
+Pest User è stato avviato fuori dall'host vietato ma non ha prodotto output dopo
+oltre due minuti; è stato interrotto per evitare un processo appeso e resta il gate
+da ripetere in un ambiente test stabile.

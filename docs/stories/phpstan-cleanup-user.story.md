@@ -7,8 +7,25 @@ created: 2026-10-06
 module: User
 qmd: "phpstan cleanup user story scopo prima"
 ---
-
 # [STORY] PHPStan cleanup modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User Request
 
@@ -66,3 +83,13 @@ Il runtime e' 8.4: serve alzare a `^8.3`/`^8.4` (file fuori scope User, tocca tu
 
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

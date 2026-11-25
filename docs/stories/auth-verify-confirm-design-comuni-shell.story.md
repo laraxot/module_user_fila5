@@ -10,8 +10,25 @@ related: [DCP-290, front-office-audit]
 tags: [auth, design-comuni, folio, volt, ui-ux]
 qmd: "auth verify confirm design comuni shell"
 ---
-
 # Auth verify e password/confirm: allineamento al guscio Design Comuni
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -109,3 +126,15 @@ Nessun controller, nessun widget nuovo: la logica esistente (ResendEmailVerifica
   tema non attivo (out of scope). `Modules/User/pages/notifications` usa card
   Bootstrap ma la rotta e' irraggiungibile (404, widget esposto in
   `area-personale/notifiche`): dead code, nessuna azione.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `GET /{lang}/auth/verify` auth → 200, header/footer CMS, h1 nel guscio auth
+- `GET /{lang}/auth/password/confirm` → 200 stesso guscio
+- `php artisan view:cache` exit 0
