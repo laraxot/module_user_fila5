@@ -15,10 +15,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/process-callback-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/process-callback-action.md
  */
 final class ProcessCallbackAction

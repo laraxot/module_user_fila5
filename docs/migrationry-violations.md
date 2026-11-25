@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "migrationry violations"
->>>>>>> laraxot/dev
-=======
-qmd: "migrationry violations"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-dry-violations-report.md

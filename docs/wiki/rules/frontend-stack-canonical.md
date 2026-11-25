@@ -12,17 +12,7 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "frontend stack canonical canonico user stub"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_l6igSF
-qmd: "frontend stack canonical canonico user stub"
-=======
->>>>>>> .merge_file_SaKX8k
->>>>>>> laraxot/dev
 ---
 
 # Stack frontend — modulo User

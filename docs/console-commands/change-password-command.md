@@ -11,15 +11,7 @@ related:
   - "./assign-module-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
   - "./README.md"
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
 ---
 
 # ChangePasswordCommand
@@ -365,15 +357,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README Comandi Console](README.md)
-=======
-- [README Comandi Console](readme.md)
->>>>>>> laraxot/dev
-=======
-- [README Comandi Console](readme.md)
->>>>>>> laraxot/dev
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)

@@ -43,10 +43,7 @@ class RegisterWidget extends XotBaseSchemaWidget
 
     /**
      * @return class-string<UserForm>
-<<<<<<< HEAD
-=======
      *
->>>>>>> laraxot/dev
      * @see ../../../../Xot/docs/bmad/livewire-widget-decision-log.md
      */
     protected static function formClass(): string

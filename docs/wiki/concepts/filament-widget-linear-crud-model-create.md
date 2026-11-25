@@ -14,17 +14,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "filament widget linear crud model create"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_FA4JZb
-qmd: "filament widget linear crud model create"
-=======
->>>>>>> .merge_file_tFcysf
->>>>>>> laraxot/dev
 ---
 
 # Persistenza register — `::create($data)`

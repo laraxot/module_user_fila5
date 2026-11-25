@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "schema"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_yCZjZq
-qmd: "schema"
-=======
->>>>>>> .merge_file_5JcUdv
->>>>>>> laraxot/dev
 ---
 
 # User Module Schema

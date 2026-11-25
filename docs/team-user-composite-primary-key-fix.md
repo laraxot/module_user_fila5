@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "team user composite primary key fix"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_pVuUnJ
-qmd: "team user composite primary key fix"
-=======
->>>>>>> .merge_file_hxaABU
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md

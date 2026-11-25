@@ -6,17 +6,7 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "schema wiki"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_hDiSLb
-qmd: "schema wiki"
-=======
->>>>>>> .merge_file_tB1mX7
->>>>>>> laraxot/dev
 ---
 
 # Wiki Schema - User

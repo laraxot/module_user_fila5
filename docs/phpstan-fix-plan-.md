@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_qfGCwY
->>>>>>> laraxot/dev
 ---
 title: "PHPStan Analysis - User Module (Jan 2026)"
 type: note
 qmd: "phpstan fix plan analysis user jan"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_k8bGE5
->>>>>>> laraxot/dev
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

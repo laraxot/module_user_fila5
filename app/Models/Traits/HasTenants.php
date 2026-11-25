@@ -62,8 +62,4 @@ trait HasTenants
 
         return $relation;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> laraxot/dev

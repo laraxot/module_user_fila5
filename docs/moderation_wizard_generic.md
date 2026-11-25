@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Moderazione e Wizard di Registrazione Generici per User"
 type: note
 qmd: "moderation wizard generic moderazione registrazione generici"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa

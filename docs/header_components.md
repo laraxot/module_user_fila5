@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Componenti Header"
 type: note
 qmd: "header components componenti"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Componenti Header
 
 ## Struttura e Convenzioni

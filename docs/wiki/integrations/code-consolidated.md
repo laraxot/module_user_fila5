@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "code consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_18YQ3n
-qmd: "code consolidated"
-=======
->>>>>>> .merge_file_PPZgof
->>>>>>> laraxot/dev
 ---
 
 # code — Consolidated Documentation

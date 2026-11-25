@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_3zXdz3
->>>>>>> laraxot/dev
----
-title: "Task: Aumentare Copertura Test User"
-type: note
-qmd: "aumentare copertura test user task"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_M4Oqxm
->>>>>>> laraxot/dev
 # Task: Aumentare Copertura Test User
 
 **Modulo**: User  

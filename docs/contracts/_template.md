@@ -2,14 +2,7 @@
 type: contract
 status: proposed
 action: <FQCN>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "template operazione contratto comportamentale"
->>>>>>> laraxot/dev
-=======
-qmd: "template operazione contratto comportamentale"
->>>>>>> laraxot/dev
 ---
 
 # <operazione> — contratto comportamentale

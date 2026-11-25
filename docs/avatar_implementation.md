@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Implementazione degli Avatar"
 type: note
 qmd: "avatar implementation implementazione"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati

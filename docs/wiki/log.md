@@ -9,22 +9,7 @@ qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
 related:
-<<<<<<< HEAD
   - "./agents.md"
-=======
-<<<<<<< HEAD
-  - "./AGENTS.md"
-=======
-<<<<<<< HEAD
-  - "./agents.md"
-<<<<<<< .merge_file_2RBtzJ
-=======
-=======
-  - "./AGENTS.md"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VNy3bD
->>>>>>> laraxot/dev
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
@@ -147,27 +132,7 @@ related:
 - Struttura wiki/log.md inizializzata.
 - Layer raw: tutti i file in `docs/` (eccetto `wiki/`).
 - Layer wiki: `docs/wiki/` — LLM-maintained, sintesi ad alto riuso.
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Schema: `docs/.schema/wiki_schema.md`
-=======
-- Schema: `docs/.schema/WIKI_SCHEMA.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_2RBtzJ
-- Schema: `docs/.schema/wiki_schema.md`
-=======
-<<<<<<< HEAD
-- Schema: `docs/.schema/wiki_schema.md`
-=======
-<<<<<<< HEAD
-- Schema: `docs/.schema/WIKI_SCHEMA.md`
-=======
-- Schema: `docs/.schema/wiki_schema.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VNy3bD
->>>>>>> laraxot/dev
 - Adozione moduli: `docs/project/llm-wiki-module-adoption.md`
 
 ## [2026-04-20] bugfix | profiles.uuid nella migrazione canonica unica

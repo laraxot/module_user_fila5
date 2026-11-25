@@ -6,14 +6,7 @@ status: Superseded
 priority: High
 created: 2026-09-06
 superseded_by: 01.User-phpstan-fix.story.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan user fix"
->>>>>>> laraxot/dev
-=======
-qmd: "phpstan user fix"
->>>>>>> laraxot/dev
 ---
 
 > Superseded 2026-09-07: stesso obiettivo (PHPStan zero su Modules/User)

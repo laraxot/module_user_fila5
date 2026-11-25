@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "User Module - Architecture Documentation"
 type: architecture
 qmd: "user architecture"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

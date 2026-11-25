@@ -11,15 +11,7 @@ related:
   - "./change-password-command.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
   - "./README.md"
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
 ---
 
 # AssignModuleCommand - Gestione Moduli Utente
@@ -181,15 +173,7 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/README.md)
 - [Role Management](models/role-management.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README.md](../README.md)
-=======
-- [README.md](../readme.md)
->>>>>>> laraxot/dev
-=======
-- [README.md](../readme.md)
->>>>>>> laraxot/dev
 
 ## Aggiornamenti
 

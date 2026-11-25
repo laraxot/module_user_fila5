@@ -1,12 +1,6 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 title: "Inventario piattaforma — Livewire HTTP → Filament widget"
 
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 title: "Inventario piattaforma: Livewire HTTP → Filament widget"
 type: inventory
 module: User
@@ -65,15 +59,7 @@ widget Filament esistenti in `Modules/<Mod>/app/Filament/Widgets` (auto-discover
 
 ## Religione piattaforma
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Constitution: [Xot livewire-widget-project-context](livewire-widget-project-context.md).
-=======
-Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire-widget-project-context.md).
->>>>>>> laraxot/dev
-=======
-Constitution: [Xot livewire-widget-project-context](livewire-widget-project-context.md).
->>>>>>> laraxot/dev
 
 1. Filament 5 è il panel. Un widget Filament **è** Livewire (`XotBaseWidget`). Si elimina il guscio
    `Http\Livewire` sbagliato, non Livewire.

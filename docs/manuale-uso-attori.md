@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Manuale d'uso per attori — User"
 type: note
 qmd: "manuale uso attori duso user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Manuale d'uso per attori — User
 
 ## Scopo e perimetro

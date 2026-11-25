@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "logout page fix"
->>>>>>> laraxot/dev
-=======
-qmd: "logout page fix"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md

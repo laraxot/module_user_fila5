@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_JDXsX8
->>>>>>> laraxot/dev
 ---
 title: "Changelog"
 type: note
 qmd: "changelog 7"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_KD9LEx
->>>>>>> laraxot/dev
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

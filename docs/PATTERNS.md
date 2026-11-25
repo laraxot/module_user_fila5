@@ -4,14 +4,7 @@ type: guide
 tags: [user, patterns, best-practices]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "patterns user best practices"
->>>>>>> laraxot/dev
-=======
-qmd: "patterns user best practices"
->>>>>>> laraxot/dev
 ---
 
 # User Module — Patterns & Best Practices

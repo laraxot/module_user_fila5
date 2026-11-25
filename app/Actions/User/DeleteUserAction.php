@@ -11,10 +11,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/delete-user-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/delete-user-action.md
  */
 class DeleteUserAction

@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "user module code and documentation optimization analysis"
 type: analysis
 qmd: "code optimization analysis user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis

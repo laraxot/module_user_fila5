@@ -7,17 +7,7 @@ tags:
   - phpstan
   - larastan
   - user
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan user relations"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_s7YUhn
-qmd: "phpstan user relations"
-=======
->>>>>>> .merge_file_aF6RWS
->>>>>>> laraxot/dev
 ---
 
 # PHPStan User Relations

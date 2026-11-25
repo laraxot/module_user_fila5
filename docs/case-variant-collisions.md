@@ -1,30 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Collisioni di nome per sola differenza di maiuscole"
 type: note
 qmd: "case variant collisions collisioni nome sola"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31
 **Regola violata**: `no-case-variations`, `case_sensitive_naming_critical`
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Quadro generale**: [Modules/Xot/docs/stato-qualita-progetto-2026-08-31.md](../../Xot/docs/stato-qualita-progetto.md)
-=======
 **Quadro generale**: [Modules/Xot/docs/stato-qualita-progetto-2026-08-31.md](../../Xot/docs/stato-qualita-progetto-2026-08-31.md)
->>>>>>> laraxot/dev
-=======
-**Quadro generale**: [Modules/Xot/docs/stato-qualita-progetto.md](../../Xot/docs/stato-qualita-progetto.md)
->>>>>>> laraxot/dev
 
 ## Il problema
 

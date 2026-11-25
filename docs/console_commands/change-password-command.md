@@ -13,16 +13,10 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
   - "./console-commands-philosophy.md"
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 
 # ChangePasswordCommand
@@ -368,15 +362,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README Comandi Console](README.md)
-=======
-- [README Comandi Console](readme.md)
->>>>>>> laraxot/dev
-=======
-- [README Comandi Console](README.md)
->>>>>>> laraxot/dev
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)
@@ -401,10 +387,4 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 
 *Ultimo aggiornamento: 2025-01-27*
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

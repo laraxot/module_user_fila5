@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_K6CE80
->>>>>>> laraxot/dev
 ---
 title: "Fix Binding Team Models nel Modulo User"
 type: note
 qmd: "team bindings fix binding models user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_QvCThd
->>>>>>> laraxot/dev
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica

@@ -23,10 +23,7 @@ use Modules\User\Models\BaseUser;
  * abstract implementation, not the consumer boundary.
  *
  * @see docs/contracts/record-authentication-log-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/record-authentication-log-action.md
  */
 final class RecordAuthenticationLogAction

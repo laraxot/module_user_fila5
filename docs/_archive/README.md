@@ -4,14 +4,7 @@ type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-07-27
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user"
->>>>>>> laraxot/dev
-=======
-qmd: "user"
->>>>>>> laraxot/dev
 ---
 
 # Modulo User - Documentazione Completa

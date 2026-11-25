@@ -5,17 +5,7 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "project structure divergenza riconciliare projectstructuremd"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_MGVKhs
-qmd: "project structure divergenza riconciliare projectstructuremd"
-=======
->>>>>>> .merge_file_Tue6kh
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `project-structure.md`

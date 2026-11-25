@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "widget translation rules"
->>>>>>> laraxot/dev
-=======
-qmd: "widget translation rules"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md

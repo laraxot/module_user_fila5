@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Correzioni PHPStan - Modulo User"
-type: note
-qmd: "phpstan corrections correzioni user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo User
 
 ## Panoramica

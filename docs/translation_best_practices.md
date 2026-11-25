@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_wuLAXr
->>>>>>> laraxot/dev
 ---
 title: "Best Practices per le Traduzioni"
 type: note
 qmd: "translation best practices traduzioni"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_vV4uvI
->>>>>>> laraxot/dev
 # Best Practices per le Traduzioni
 
 ## Principi Generali

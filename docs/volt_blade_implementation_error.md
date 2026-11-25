@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_wCqy6t
->>>>>>> laraxot/dev
 ---
 title: "Analisi dell'Errore di Implementazione Volt/Blade"
 type: note
 qmd: "volt blade implementation error analisi dellerrore"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_sTF5At
->>>>>>> laraxot/dev
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati

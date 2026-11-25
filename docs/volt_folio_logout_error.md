@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_svooA7
->>>>>>> laraxot/dev
 ---
 title: "Errore nel Logout con Volt e Folio"
 type: note
 qmd: "volt folio logout error errore"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_9t633W
->>>>>>> laraxot/dev
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema

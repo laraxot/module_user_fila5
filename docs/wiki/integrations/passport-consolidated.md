@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "passport consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_xPF4N0
-qmd: "passport consolidated"
-=======
->>>>>>> .merge_file_ONwXXv
->>>>>>> laraxot/dev
 ---
 
 # passport — Consolidated Documentation

@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_XeSrzs
->>>>>>> laraxot/dev
 ---
 title: "Logout via Volt Action"
 type: note
 qmd: "volt logout action"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_xnMf1z
->>>>>>> laraxot/dev
 # Logout via Volt Action
 
 ## Contesto

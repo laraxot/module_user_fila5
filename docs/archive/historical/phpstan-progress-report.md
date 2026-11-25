@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan progress report"
->>>>>>> laraxot/dev
-=======
-qmd: "phpstan progress report"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md

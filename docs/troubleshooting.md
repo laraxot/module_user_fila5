@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "troubleshooting"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_2x5a7l
-qmd: "troubleshooting"
-=======
->>>>>>> .merge_file_KiQt3d
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/troubleshooting.md

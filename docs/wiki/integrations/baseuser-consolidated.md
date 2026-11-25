@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "baseuser consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_19KPj5
-qmd: "baseuser consolidated"
-=======
->>>>>>> .merge_file_k1rLXI
->>>>>>> laraxot/dev
 ---
 
 # baseuser — Consolidated Documentation

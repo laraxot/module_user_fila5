@@ -2,14 +2,7 @@
 module: theme
 topic: fix-paths.sh
 canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "fix paths sh configurazione"
->>>>>>> laraxot/dev
-=======
-qmd: "fix paths sh configurazione"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh

@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_a4tQ8y
->>>>>>> laraxot/dev
 ---
 title: "PHPStan Level 10 + DRY/KISS Improvements - User Module"
 type: note
 qmd: "phpstan dry kiss improvements level drykiss"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_dzBBzb
->>>>>>> laraxot/dev
 # PHPStan Level 10 + DRY/KISS Improvements - User Module
 
 ## Summary

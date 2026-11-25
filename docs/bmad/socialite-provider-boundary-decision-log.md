@@ -10,14 +10,7 @@ related:
   - ./socialite-provider-boundary-prd.md
   - ./socialite-provider-boundary-architecture.md
   - ./stories/socialite-provider-boundary.story.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "socialite provider boundary decision log"
->>>>>>> laraxot/dev
-=======
-qmd: "socialite provider boundary decision log"
->>>>>>> laraxot/dev
 ---
 
 # Socialite provider boundary — decision log

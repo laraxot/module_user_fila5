@@ -11,10 +11,6 @@ qmd: "ECC audit User security-review clean-code laravel-verification verificatio
 
 ## Contratto PTVX
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -27,11 +23,6 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `tdd-workflow`: regressione sui finding P0
 - [ ] `documentation-sync`: story + indici + qmd
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -52,10 +43,6 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 | Voce | N |
 |---|---:|
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 | app PHP | 713 |
 | test | 233 |
 | resources | 26 |
@@ -80,11 +67,6 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 | PHP `app/` | 713 |
 | Test PHP | 233 |
 | Models | 123 |

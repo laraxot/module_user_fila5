@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_10Qrzz
->>>>>>> laraxot/dev
 ---
 title: "User Module - Product Strategy Document"
 type: note
 qmd: "user product strategy document"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_s4EQDP
->>>>>>> laraxot/dev
 # User Module - Product Strategy Document
 
 ## Document Information

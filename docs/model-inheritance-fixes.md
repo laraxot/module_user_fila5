@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: note
 qmd: "model inheritance fixes correzioni ereditarietà modelli"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione

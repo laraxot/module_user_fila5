@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Authentication Performance Optimization - User Module"
-type: note
-qmd: "authentication performance optimization user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified

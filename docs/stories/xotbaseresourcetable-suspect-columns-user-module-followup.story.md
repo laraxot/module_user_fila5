@@ -1,23 +1,12 @@
 ---
-<<<<<<< HEAD
 title: "Follow-up — colonne sospette/bug reale trovati nell'audit $model (modulo User)"
-=======
-title: "Follow-up — colonne sospette/bug reale trovati nell'audit \$model (modulo User)"
->>>>>>> laraxot/dev
 type: story
 module: User
 epic: xotbaseresourcetable-model-property-and-column-audit
 created: '2026-09-11'
 updated: '2026-09-11'
 status: resolved
-<<<<<<< HEAD
 qmd: "xotbaseresourcetable suspect columns user followup story"
-=======
-<<<<<<< HEAD
-=======
-qmd: "xotbaseresourcetable suspect columns user followup story"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 
 # Follow-up — colonne sospette e bug reale (modulo User)

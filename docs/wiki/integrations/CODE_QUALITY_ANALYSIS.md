@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "code quality analysis user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_H70KnU
-qmd: "code quality analysis user"
-=======
->>>>>>> .merge_file_Jms2OP
->>>>>>> laraxot/dev
 ---
 
 # Code Quality Analysis - User Module

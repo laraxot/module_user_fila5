@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpmds"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_VNjSVm
-qmd: "phpmds"
-=======
->>>>>>> .merge_file_epSwRi
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-errors.md

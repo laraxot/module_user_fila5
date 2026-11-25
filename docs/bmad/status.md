@@ -1,14 +1,7 @@
 ---
 title: status
 module: User
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "status"
->>>>>>> laraxot/dev
-=======
-qmd: "status"
->>>>>>> laraxot/dev
 ---
 
 BMAD STATUS — User

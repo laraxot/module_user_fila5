@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "BMAD Story: User Module Audit Improvements"
 type: story
 qmd: "story user audit improvements bmad"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # BMAD Story: User Module Audit Improvements
 
 **Story ID**: USER-2026-AUDIT-001  

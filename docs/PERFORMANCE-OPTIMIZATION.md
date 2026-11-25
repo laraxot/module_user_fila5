@@ -6,14 +6,7 @@ updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "performance optimization user"
->>>>>>> laraxot/dev
-=======
-qmd: "performance optimization user"
->>>>>>> laraxot/dev
 ---
 
 # Performance Optimization — Module **User**

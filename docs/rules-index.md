@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "rules"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_y6iHFf
-qmd: "rules"
-=======
->>>>>>> .merge_file_cJOqCU
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-index.md

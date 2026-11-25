@@ -15,10 +15,7 @@ use Spatie\QueueableAction\QueueableAction;
  * rendendoli immediatamente non validi.
  *
  * @see docs/contracts/revoke-client-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/revoke-client-action.md
  */
 class RevokeClientAction

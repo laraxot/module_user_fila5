@@ -3,30 +3,11 @@ title: "Untitled Concept"
 type: concept
 sources: ["raw/articles/source-filename.md"]
 confidence: medium
-<<<<<<< HEAD
 created: {{date}}
 updated: {{date}}
-=======
-created: "{{date}}"
-updated: "{{date}}"
->>>>>>> laraxot/dev
 tags: [tag1, tag2]
 related:
-  - "./entity.md"
-  - "./source.md"
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pmWsPC
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 qmd: "concept untitled"
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_0hsJg0
->>>>>>> laraxot/dev
 ---
 
 # {{title}}

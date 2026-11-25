@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "terms and conditions"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_kpBeFa
-qmd: "terms and conditions"
-=======
->>>>>>> .merge_file_67fnDQ
->>>>>>> laraxot/dev
 ---
 
 https://github.com/nowendwell/laravel-terms

@@ -9,10 +9,7 @@ use Laravel\Pulse\Facades\Pulse;
 
 /**
  * @see docs/contracts/record-login-pulse-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/record-login-pulse-action.md
  */
 class RecordLoginPulseAction

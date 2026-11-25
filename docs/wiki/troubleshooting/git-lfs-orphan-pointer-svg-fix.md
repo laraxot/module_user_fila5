@@ -3,17 +3,7 @@ name: git-lfs-orphan-pointer-svg-fix
 description: How push to laraxot/dev was blocked by 33 SVG files turned into orphan Git LFS pointers, and how it was fixed forward-only
 metadata:
   type: troubleshooting
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "git lfs orphan pointer svg fix"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_9giKiw
-qmd: "git lfs orphan pointer svg fix"
-=======
->>>>>>> .merge_file_kRJhkE
->>>>>>> laraxot/dev
 ---
 
 # Git LFS Orphan Pointer SVG Fix

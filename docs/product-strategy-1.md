@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "product strategy 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_G0dElg
-qmd: "product strategy 1"
-=======
->>>>>>> .merge_file_Mk82l0
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/PRODUCT_STRATEGY-Modules.md

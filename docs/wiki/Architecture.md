@@ -2,17 +2,7 @@
 module: User
 concept: Architecture
 last_updated: 2026-04-15
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "architecture user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_xBSG6Q
-qmd: "architecture user"
-=======
->>>>>>> .merge_file_XPvF6S
->>>>>>> laraxot/dev
 ---
 
 # User Module Architecture

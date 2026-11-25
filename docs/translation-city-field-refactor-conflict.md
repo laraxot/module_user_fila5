@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "translation city field refactor conflict"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_oaKS99
-qmd: "translation city field refactor conflict"
-=======
->>>>>>> .merge_file_ZZ8Jm5
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md

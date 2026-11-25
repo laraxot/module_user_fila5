@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Guida Rendering Widget Filament 4 - Modulo User"
-type: note
-qmd: "filament 4 widget rendering guida user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  

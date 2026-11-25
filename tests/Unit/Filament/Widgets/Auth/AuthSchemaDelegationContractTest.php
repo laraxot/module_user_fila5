@@ -44,11 +44,4 @@ test('auth schema widgets use the shared UserForm contract', function (string $w
     expect(method_exists(UserForm::class, $schemaMethod))->toBeTrue();
     expect(UserForm::{$schemaMethod}())->toBeArray()->not->toBeEmpty();
 })->with('auth schema widgets');
-<<<<<<< HEAD
 
-=======
-<<<<<<< .merge_file_UBFNYV
-=======
-
->>>>>>> .merge_file_WRb4NQ
->>>>>>> laraxot/dev

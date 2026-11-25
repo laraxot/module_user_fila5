@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "resource translation violation critical fix"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_vpSrKk
-qmd: "resource translation violation critical fix"
-=======
->>>>>>> .merge_file_YmmkNU
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md

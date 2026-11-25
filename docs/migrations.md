@@ -12,14 +12,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "migrations user schema"
->>>>>>> laraxot/dev
-=======
-qmd: "migrations user schema"
->>>>>>> laraxot/dev
 ---
 
 # User Module — Migrations & Schema Parity
@@ -265,10 +258,6 @@ return new class extends XotBaseMigration {
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ## Verdetto: migrazioni `create_users_table` duplicate (solo analisi, nessun file toccato)
 
 Canonica: `2026_11_17_114812_create_users_table.php` (unica `users` nella root dello snapshot pulito `dd46996a4`, più
@@ -297,11 +286,6 @@ la canonica lo vuole nullable (non verificato su un DB vuoto: manca un database 
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ## Verification Checklist
 
 Before committing migration changes:

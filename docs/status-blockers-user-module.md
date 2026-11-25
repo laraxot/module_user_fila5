@@ -3,17 +3,7 @@ title: "User Module Status & Blockers"
 date: 2026-07-28
 author: claude-ai
 status: BLOCKED_AWAITING_INFRASTRUCTURE
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "status blockers user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_9dtgba
-qmd: "status blockers user"
-=======
->>>>>>> .merge_file_zeiIIV
->>>>>>> laraxot/dev
 ---
 
 # User Module — Status & Critical Blockers (2026-07-28)

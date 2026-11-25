@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Docs archive policy"
 type: note
 qmd: "archive policy"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Docs archive policy
 
 `docs/archive/` is local-only scratch/history and must not be used as a canonical documentation source.

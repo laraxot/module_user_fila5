@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_cEvaez
->>>>>>> laraxot/dev
----
-title: "Two-Factor Authentication (2FA) - User"
-type: note
-qmd: "two factor authentication twofactor 2fa user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_aTsoAI
->>>>>>> laraxot/dev
 # Two-Factor Authentication (2FA) - User
 
 **Task ID**: USER-FEATURE-001

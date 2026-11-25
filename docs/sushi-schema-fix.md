@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "sushi schema fix"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_iXAZ7L
-qmd: "sushi schema fix"
-=======
->>>>>>> .merge_file_t74hLB
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sushi-schema-fix.md

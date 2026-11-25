@@ -5,17 +5,7 @@ sources:
 confidence: high
 updated: 2026-04-15
 related:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user overview"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_vElC1d
-qmd: "user overview"
-=======
->>>>>>> .merge_file_PiDbbC
->>>>>>> laraxot/dev
 ---
 
 # User Module — Overview

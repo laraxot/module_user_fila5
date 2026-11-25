@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_IcGQ6a
->>>>>>> laraxot/dev
 ---
 title: "Resources Corrections Summary - 2025-01-22"
 type: note
 qmd: "resources corrections summary 20250122"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_gO9UGW
->>>>>>> laraxot/dev
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo

@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan status user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_f0aUNz
-qmd: "phpstan status user"
-=======
->>>>>>> .merge_file_zBIY9J
->>>>>>> laraxot/dev
 ---
 
 # PHPStan Status — User Module

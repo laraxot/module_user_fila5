@@ -4,14 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "dry kiss analysis"
->>>>>>> laraxot/dev
-=======
-qmd: "dry kiss analysis"
->>>>>>> laraxot/dev
 ---
 
 # DRY & KISS Analysis - Modulo User
@@ -130,23 +123,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
-=======
-- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
->>>>>>> laraxot/dev
-=======
-- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
->>>>>>> laraxot/dev
 
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

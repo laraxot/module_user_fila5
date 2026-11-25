@@ -10,14 +10,7 @@ related:
   - "./parse-error-orphan-methods-2.md"
   - "./parse-error-orphan-methods-3.md"
   - "./parse-orphan-methods.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "parse error orphan methods"
->>>>>>> laraxot/dev
-=======
-qmd: "parse error orphan methods"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md

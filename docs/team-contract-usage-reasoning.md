@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_kIgp3n
->>>>>>> laraxot/dev
 ---
 title: "TeamContract Usage Reasoning"
 type: contract
 qmd: "team contract usage reasoning teamcontract"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_1jSdBW
->>>>>>> laraxot/dev
 # TeamContract Usage Reasoning
 
 ## Overview

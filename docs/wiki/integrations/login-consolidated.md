@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "login consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_wTdWbj
-qmd: "login consolidated"
-=======
->>>>>>> .merge_file_dhfCO3
->>>>>>> laraxot/dev
 ---
 
 # login — Consolidated Documentation

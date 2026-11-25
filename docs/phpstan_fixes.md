@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_Z44Ogc
->>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan - Modulo User"
 type: note
 qmd: "phpstan fixes correzioni user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_c5DSei
->>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.

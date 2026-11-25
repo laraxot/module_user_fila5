@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "translation fixes"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_gr8EJZ
-qmd: "translation fixes"
-=======
->>>>>>> .merge_file_a4S2oC
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md

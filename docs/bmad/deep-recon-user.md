@@ -2,7 +2,6 @@
 title: "User Module: Deep Recon (BMAD Deep Dive)"
 type: note
 status: draft
-<<<<<<< HEAD
 created: 2026-10-07
 updated: 2026-10-07
 tags: [docs, user, bmad]
@@ -11,12 +10,6 @@ issues: []
 discussions: []
 ---
 
-=======
-updated: 2026-10-07
-tags: [docs, user, bmad]
-qmd: "user module   deep recon (bmad deep dive) user"
----
->>>>>>> laraxot/dev
 # User Module: Deep Recon (BMAD Deep Dive)
 
 **Status**: ⏳ In Progress

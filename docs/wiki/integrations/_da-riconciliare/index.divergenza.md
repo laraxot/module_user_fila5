@@ -5,17 +5,7 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "divergenza riconciliare indexmd"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_kAqy9R
-qmd: "divergenza riconciliare indexmd"
-=======
->>>>>>> .merge_file_mbhcxX
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `index.md`

@@ -16,30 +16,17 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
-=======
-status: draft
->>>>>>> laraxot/dev
 ---
 
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-posizione-corretta.md)
 - [Analisi Errore Logout](logout-implementation-error-analisi-dell.md)
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
@@ -262,17 +249,11 @@ FilamentView::registerRenderHook(
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
-<<<<<<< HEAD
-<<<<<<< HEAD
 5. **Conformità alle convenzioni**: Segue le convenzioni di <nome progetto> per i widget Filament.
 
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-posizione-corretta.md), che esegue il logout immediatamente senza richiedere conferma.
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 5. **Conformità alle convenzioni**: Segue le convenzioni di Quaeris per i widget Filament.
 
 ## Alternativa: Logout Immediato

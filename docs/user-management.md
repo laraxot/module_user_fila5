@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user management"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_LQqyhf
-qmd: "user management"
-=======
->>>>>>> .merge_file_QRfSBt
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md

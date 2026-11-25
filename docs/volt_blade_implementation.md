@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_7DrgaV
->>>>>>> laraxot/dev
 ---
 title: "Implementazione dei Form con Widget Filament"
 type: note
 qmd: "volt blade implementation implementazione form widget"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_K9gGRe
->>>>>>> laraxot/dev
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati

@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "logout consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_egxdwm
-qmd: "logout consolidated"
-=======
->>>>>>> .merge_file_6YQz0J
->>>>>>> laraxot/dev
 ---
 
 # logout — Consolidated Documentation

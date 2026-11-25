@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Correzioni PHPStan Livello 10 - Modulo User"
-type: note
-qmd: "phpstan level10 fixes correzioni livello user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

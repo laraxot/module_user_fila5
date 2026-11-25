@@ -11,17 +11,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "current state"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_vytOFh
-qmd: "current state"
-=======
->>>>>>> .merge_file_Pey7KN
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/01-current-state-Modules.md

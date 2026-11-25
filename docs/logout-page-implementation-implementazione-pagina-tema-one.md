@@ -16,14 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
-=======
-status: draft
->>>>>>> laraxot/dev
 ---
 
 # Implementazione della Pagina di Logout nel Tema One
@@ -34,31 +27,17 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
 /var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
-=======
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> laraxot/dev
-=======
-/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> laraxot/dev
 ```
 
 ### 2. Implementazione Corretta
 ```blade
 @php
     use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     // Esegui il logout
     Auth::logout();
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     
     // Esegui il logout
     Auth::logout();

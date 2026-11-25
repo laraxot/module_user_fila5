@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ---
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
@@ -13,9 +10,6 @@ related:
   - concepts/related.md
 qmd: "agents page title"
 ---
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # User {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** User
@@ -39,10 +33,6 @@ You are the **User Wiki Maintainer**. Your job is to:
 ## Frontmatter Schema
 
 ```yaml
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ---
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
@@ -54,11 +44,6 @@ tags: [tag1, tag2]
 related:
   - concepts/related.md
 ---
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ```
 
 ## Naming Conventions

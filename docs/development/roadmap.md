@@ -3,14 +3,7 @@ title: "roadmap — puntatore"
 type: reference
 updated: 2026-05-21
 related:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "roadmap puntatore"
->>>>>>> laraxot/dev
-=======
-qmd: "roadmap puntatore"
->>>>>>> laraxot/dev
 ---
 
 # Policy globale (puntatore)

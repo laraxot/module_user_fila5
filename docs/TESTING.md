@@ -4,14 +4,7 @@ type: guide
 tags: [user, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "testing user"
->>>>>>> laraxot/dev
-=======
-qmd: "testing user"
->>>>>>> laraxot/dev
 ---
 
 # User Module — Testing

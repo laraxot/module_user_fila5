@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Project context — solo Filament widget"
 
-=======
->>>>>>> laraxot/dev
 title: "Project context: solo Filament widget"
 type: constitution
 module: User
@@ -14,14 +11,7 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
   - ./decision-log.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "livewire widget project context solo filament"
->>>>>>> laraxot/dev
-=======
-qmd: "livewire widget project context solo filament"
->>>>>>> laraxot/dev
 ---
 
 # Project context — campagna Livewire HTTP → widget

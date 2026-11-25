@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_IoiXaO
-qmd: "user consolidated"
-=======
->>>>>>> .merge_file_iF67SL
->>>>>>> laraxot/dev
 ---
 
 # user — Consolidated Documentation

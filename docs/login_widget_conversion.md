@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Conversione Livewire Auth/Login a Filament LoginWidget"
 type: note
 qmd: "login widget conversion conversione livewire authlogin"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire

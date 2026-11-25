@@ -15,10 +15,7 @@ use Spatie\QueueableAction\QueueableAction;
  * Invocazione: app(CreateClientAction::class)->execute(...)
  *
  * @see docs/contracts/create-personal-access-client-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/create-personal-access-client-action.md
  */
 class CreatePersonalAccessClientAction

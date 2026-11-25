@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan fix roadmap"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_BsIesz
-qmd: "phpstan fix roadmap"
-=======
->>>>>>> .merge_file_HGCbyO
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-roadmap.md

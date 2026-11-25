@@ -19,10 +19,7 @@ use Spatie\QueueableAction\QueueableAction;
  * successiva, perche' il provider non trova piu' l'utente.
  *
  * @see docs/contracts/revoke-user-access-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/revoke-user-access-action.md
  */
 final class RevokeUserAccessAction

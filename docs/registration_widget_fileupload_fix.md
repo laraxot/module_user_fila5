@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_BcVfHw
->>>>>>> laraxot/dev
 ---
 title: "RegistrationWidget FileUpload Fix"
 type: note
 qmd: "registration widget fileupload fix registrationwidget"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_AaSWbe
->>>>>>> laraxot/dev
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

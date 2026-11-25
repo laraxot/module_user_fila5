@@ -5,17 +5,7 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpinsights errors divergenza riconciliare phpinsightserrorsmd"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_aN7YUD
-qmd: "phpinsights errors divergenza riconciliare phpinsightserrorsmd"
-=======
->>>>>>> .merge_file_4wWJa0
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `phpinsights-errors.md`

@@ -2,14 +2,7 @@
 title: LFS Corruption Resolution
 date: 2026-07-28
 status: resolved
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "lfs resolution 28 corruption"
->>>>>>> laraxot/dev
-=======
-qmd: "lfs resolution 28 corruption"
->>>>>>> laraxot/dev
 ---
 
 # LFS Corruption Resolution (2026-07-28)

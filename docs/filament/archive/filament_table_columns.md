@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Convenzione Metodo getTableColumns per Filament Table"
-type: note
-qmd: "filament table columns convenzione metodo gettablecolumns"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -46,10 +32,6 @@ public function getTableColumns(): array
 
 ## Collegamenti
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
-- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
-
----
-
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ---

@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_5WzCnX
->>>>>>> laraxot/dev
 ---
 title: "Story: Quality-gate closure — Modules/User (2026-09-04)"
 type: story
 qmd: "user quality gate story qualitygate closure"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_gPtwYM
->>>>>>> laraxot/dev
 # Story: Quality-gate closure — Modules/User (2026-09-04)
 
 ## BMAD phase

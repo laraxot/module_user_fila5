@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_ypBNPC
->>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler License Key"
 type: note
 qmd: "scheduler license key fullcalendar"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_IiKcTi
->>>>>>> laraxot/dev
 # FullCalendar Scheduler License Key
 
 ## Overview

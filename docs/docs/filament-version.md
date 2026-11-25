@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Filament Version Declaration — {ModuleOrThemeName}"
 type: note
 qmd: "filament version declaration moduleorthemename"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

@@ -12,10 +12,7 @@ use Spatie\QueueableAction\QueueableAction;
  * lingua della pagina. La guida «provider non configurato» e la pagina del back office leggono da qui.
  *
  * @see docs/contracts/get-provider-redirect-uri-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/get-provider-redirect-uri-action.md
  */
 class GetProviderRedirectUriAction

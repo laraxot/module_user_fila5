@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
-type: note
-qmd: "translation syntax fixes correzioni errori sintassi"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

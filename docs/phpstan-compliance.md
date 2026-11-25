@@ -22,14 +22,7 @@ related:
 
 ## Status: ✅ FULLY COMPLIANT
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
-=======
->>>>>>> laraxot/dev
-=======
-**Analysis Date:** September 22, 2025
->>>>>>> laraxot/dev
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0

@@ -7,17 +7,7 @@ tags: [memories, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "memories"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_CqOcGl
-qmd: "memories"
-=======
->>>>>>> .merge_file_h2JTMv
->>>>>>> laraxot/dev
 ---
 
 # Memories Index

@@ -16,45 +16,15 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
 status: draft
-=======
-=======
-=======
-<<<<<<< .merge_file_epYril
 status: draft
-=======
->>>>>>> .merge_file_wQBSAm
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 
 # Registration Widget Documentation
 
 ## Overview
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Il file `RegistrationWidget.php` si trova in `/var/www/html/<nome progetto>/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
-=======
-Il file `RegistrationWidget.php` si trova in `/var/www/html/Quaeris/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_3bcZmG
-Il file `RegistrationWidget.php` si trova in `/var/www/html/<nome progetto>/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
-=======
-<<<<<<< HEAD
-Il file `RegistrationWidget.php` si trova in `/var/www/html/Quaeris/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
-=======
-<<<<<<< .merge_file_epYril
-Il file `RegistrationWidget.php` si trova in `/var/www/html/<nome progetto>/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
-=======
-Il file `RegistrationWidget.php` si trova in `/var/www/html/Quaeris/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
->>>>>>> .merge_file_wQBSAm
->>>>>>> laraxot/dev
->>>>>>> .merge_file_oggQsn
->>>>>>> laraxot/dev
 
 ## Current Issues
 

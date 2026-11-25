@@ -8,14 +8,7 @@ tags: [migrato-da-txt, user]
 converted_from: git_reset.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "git reset"
->>>>>>> laraxot/dev
-=======
-qmd: "git reset"
->>>>>>> laraxot/dev
 ---
 
 #!/bin/sh

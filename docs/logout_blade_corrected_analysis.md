@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Analisi Corretta del File logout.blade.php"
 type: analysis
 qmd: "logout blade corrected analysis analisi corretta"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati

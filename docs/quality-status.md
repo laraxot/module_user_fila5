@@ -3,17 +3,7 @@ title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08
 version: 1.2
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "quality status user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_qggq6O
-qmd: "quality status user"
-=======
->>>>>>> .merge_file_d4yg9n
->>>>>>> laraxot/dev
 ---
 
 # Modulo User — Stato Qualità
@@ -245,10 +235,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 
 ---
@@ -757,8 +743,3 @@ After fixes:
 *PHPStan: IMPROVED (13 → ~5 errors)*
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

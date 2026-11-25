@@ -4,17 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "philosophy"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_SLQDyI
-qmd: "philosophy"
-=======
->>>>>>> .merge_file_hHdgwc
->>>>>>> laraxot/dev
 ---
 
 # User Module Philosophy

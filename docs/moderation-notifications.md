@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "moderation notifications notifiche moderazione"
->>>>>>> laraxot/dev
-=======
-qmd: "moderation notifications notifiche moderazione"
->>>>>>> laraxot/dev
 ---
 # Notifiche Moderazione
 

@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Registrazione, logout e verifica email (FO)"
 type: story
 qmd: "register logout verify email story registrazione"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Registrazione, logout e verifica email (FO)
 
 - Stato: done (2026-10-07)

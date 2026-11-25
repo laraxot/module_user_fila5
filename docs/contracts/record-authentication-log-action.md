@@ -1,40 +1,14 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
 title: "Contratto — RecordAuthenticationLogAction"
 type: contract
 action: "Modules\User\Actions\Auth\RecordAuthenticationLogAction"
 tags: [contract, action, audit, login]
 created: 2026-11-24
 updated: 2026-11-24
-=======
-title: "RecordAuthenticationLogAction — contratto"
-type: contract
-owner: User
-status: accepted
-updated: 2026-11-24
-action: "Modules\\User\\Actions\\Auth\\RecordAuthenticationLogAction"
-qmd: "RecordAuthenticationLogAction authentication_logs audit login connessione user tabella mancante skip"
->>>>>>> laraxot/dev
-=======
-title: "Contratto — RecordAuthenticationLogAction"
-type: contract
-action: "Modules\\User\\Actions\\Auth\\RecordAuthenticationLogAction"
-tags: [contract, action, audit, login]
-created: 2026-11-24
-updated: 2026-11-24
-owner: User
-status: accepted
-qmd: "RecordAuthenticationLogAction authentication_logs audit login connessione user tabella mancante skip"
->>>>>>> laraxot/dev
 ---
 
 # RecordAuthenticationLogAction
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 Sorgente: `app/Actions/Auth/RecordAuthenticationLogAction.php`. Chiamata da `LoginListener` e `FailedLoginListener`.
 Perché: [ADR](../adr/authentication-log-never-breaks-login.md).
 
@@ -42,17 +16,12 @@ Perché: [ADR](../adr/authentication-log-never-breaks-login.md).
 
 - `UserContract&HasAuthentications $user`.
 - `$attributes`: `ip_address`, `user_agent`, `login_at`, `login_successful`, `location`.
-<<<<<<< HEAD
-=======
 Scrive una riga in `authentication_logs` sulla connessione `user` per ogni tentativo di accesso. Codice: `app/Actions/Auth/RecordAuthenticationLogAction.php:25-58`.
 
 ## Input
 
 - `UserContract&HasAuthentications $user`: l'utente (`execute`, riga 30).
 - `array $attributes`: `ip_address`, `user_agent`, `login_at`, `login_successful`, `location` (riga 28).
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ## Output
 
@@ -60,10 +29,6 @@ Scrive una riga in `authentication_logs` sulla connessione `user` per ogni tenta
 
 ## Invarianti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 | ID | Regola | Group Pest |
 |---|---|---|
 | USER-AUTHLOG-INV-1 | Connessione `user` non configurata o tabella `authentication_logs` assente: `Log::warning` e ritorno, mai eccezione. | `USER-AUTHLOG-INV-1` |
@@ -84,8 +49,6 @@ Scrive una riga in `authentication_logs` sulla connessione `user` per ogni tenta
 - Non registra la metrica Pulse (`RecordLoginPulseAction`, chiamata dai listener).
 - Non geolocalizza l'IP: `location` arriva già pronta.
 - Non applica retention né cancella righe vecchie.
-<<<<<<< HEAD
-=======
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
 | `RECORD-AUTH-INV-1` | Se la connessione user non ha database configurato la scrittura è saltata, con warning, senza eccezione. | righe 36-44 | `tests/Unit/Actions/Auth/RecordAuthenticationLogActionTest.php` (riferimento alla classe) |
@@ -104,7 +67,3 @@ Al massimo un INSERT in `authentication_logs` (connessione user). Log di warning
 
 - Non valida `$attributes`: la forma è dichiarata solo nel docblock.
 - Non legge né modifica l'utente.
->>>>>>> laraxot/dev
-=======
-- Non valida `$attributes`: la forma è dichiarata solo nel docblock.
->>>>>>> laraxot/dev

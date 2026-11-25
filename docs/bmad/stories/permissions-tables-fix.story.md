@@ -5,14 +5,7 @@ module: User
 status: in-progress
 created: 2026-10-05
 updated: 2026-10-05
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "permissions tables fix story create tradeuser"
->>>>>>> laraxot/dev
-=======
-qmd: "permissions tables fix story create tradeuser"
->>>>>>> laraxot/dev
 ---
 
 # Story: Create permissions tables in trade_user database

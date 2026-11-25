@@ -28,17 +28,7 @@ related:
 github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "dashboard lang collateral damage story reale"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_kMvVmz
-qmd: "dashboard lang collateral damage story reale"
-=======
->>>>>>> .merge_file_BkcS8v
->>>>>>> laraxot/dev
 ---
 
 # STORY — 500 reale su /user/admin da file lang troncato, audit blast radius commit 0701a777a

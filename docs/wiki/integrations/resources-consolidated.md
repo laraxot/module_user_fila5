@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "resources consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ffV40m
-qmd: "resources consolidated"
-=======
->>>>>>> .merge_file_4DO5H9
->>>>>>> laraxot/dev
 ---
 
 # resources — Consolidated Documentation

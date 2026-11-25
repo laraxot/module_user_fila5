@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_1woenR
->>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
 type: note
 qmd: "volt folio auth implementation implementazione corretta"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_I9Xl0F
->>>>>>> laraxot/dev
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati

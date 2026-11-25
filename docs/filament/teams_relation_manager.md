@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "TeamsRelationManager in User Module"
 type: note
 qmd: "teams relation manager teamsrelationmanager user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # TeamsRelationManager in User Module
 
 ## Panoramica

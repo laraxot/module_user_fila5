@@ -7,17 +7,7 @@ tags: [on-demand, pattern, wiki, qmd]
 related:
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "on demand pattern ondemand user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_vY38WW
-qmd: "on demand pattern ondemand user"
-=======
->>>>>>> .merge_file_QAmvYj
->>>>>>> laraxot/dev
 ---
 
 # On-Demand Pattern — Module **User**
@@ -84,23 +74,7 @@ qmd search "<topic>"
 
 ## Regole Critiche per Module
 
-<<<<<<< HEAD
 1. **Nessun bootstrap pesante** — Non elencare rules in agents.md o CLAUDE.md
-=======
-<<<<<<< .merge_file_vY38WW
-1. **Nessun bootstrap pesante** — Non elencare rules in agents.md o CLAUDE.md
-=======
-<<<<<<< HEAD
-1. **Nessun bootstrap pesante** — Non elencare rules in AGENTS.md o CLAUDE.md
-=======
-<<<<<<< HEAD
-1. **Nessun bootstrap pesante** — Non elencare rules in agents.md o CLAUDE.md
-=======
-1. **Nessun bootstrap pesante** — Non elencare rules in AGENTS.md o CLAUDE.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_QAmvYj
->>>>>>> laraxot/dev
 2. **Carica only what you need** — Ogni task carica max 3-5 file
 3. **Mantieni la wiki aggiornata** — Dopo ogni task, aggiorna ./laravel/Modules/User/docs/wiki/log.md
 4. **Rispetta la trigger map** — Se esiste, usala; altrimenti usa qmd search

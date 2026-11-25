@@ -10,17 +10,7 @@ related:
   - "./duplicated-profile-form.md"
   - "./duplicated-ratings-relation-manager.md"
   - "./duplicated-users-relation-manager.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "oauth dual resource trees alberi filament"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_uUFGs1
-qmd: "oauth dual resource trees alberi filament"
-=======
->>>>>>> .merge_file_hsewYS
->>>>>>> laraxot/dev
 ---
 
 # OAuth: cluster vs `Filament/Resources/` root

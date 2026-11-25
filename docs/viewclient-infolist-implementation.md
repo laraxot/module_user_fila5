@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "viewclient infolist implementation"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_5ltnJH
-qmd: "viewclient infolist implementation"
-=======
->>>>>>> .merge_file_Z9Z9Cu
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md

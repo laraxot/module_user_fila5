@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "path conventions"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_3PJpt8
-qmd: "path conventions"
-=======
->>>>>>> .merge_file_5oWFSh
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/path-conventions.md

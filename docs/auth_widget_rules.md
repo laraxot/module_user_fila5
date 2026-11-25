@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Regole per Widget di Autenticazione"
 type: rule
 qmd: "auth widget rules regole autenticazione"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

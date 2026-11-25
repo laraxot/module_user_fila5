@@ -4,11 +4,7 @@ status: superseded
 superseded_by: "./git-conflicts-resolution.md"
 type: alias
 updated: 2026-11-24
-<<<<<<< HEAD
 qmd: "git conflicts resolution 2025 01 27 alias superseded"
-=======
-qmd: "git-conflicts-resolution-2025-01-27 alias superseded"
->>>>>>> laraxot/dev
 ---
 
 # Alias (superseded)

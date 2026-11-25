@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "query optimization analysis user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_XZkPmM
-qmd: "query optimization analysis user"
-=======
->>>>>>> .merge_file_qsEn8B
->>>>>>> laraxot/dev
 ---
 
 # User Module - Query Optimization Analysis

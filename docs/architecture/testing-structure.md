@@ -12,15 +12,7 @@ related:
   - "./architecture.md"
   - "./auth-blade-structure.md"
   - "./component-registration.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
   - "./README.md"
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
-=======
-  - "./readme.md"
->>>>>>> laraxot/dev
   - "./structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
@@ -313,26 +305,11 @@ dump($variable);
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [README Modulo User](../README.md)
-=======
-- [README Modulo User](../readme.md)
->>>>>>> laraxot/dev
-=======
-- [README Modulo User](../readme.md)
->>>>>>> laraxot/dev
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/README.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev

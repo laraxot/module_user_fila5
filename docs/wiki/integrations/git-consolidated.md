@@ -5,19 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 qmd: "git consolidated"
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 ---
 
 # git — Consolidated Documentation
@@ -710,23 +698,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -996,10 +972,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
-<<<<<<< HEAD
 5. Implementare test automatizzati
-=======
->>>>>>> laraxot/dev
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -1040,23 +1013,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -1326,10 +1287,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
-<<<<<<< HEAD
 5. Implementare test automatizzati
-=======
->>>>>>> laraxot/dev
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -1396,23 +1354,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -1775,23 +1721,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -2128,23 +2062,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -2480,23 +2402,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -2766,10 +2676,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
-<<<<<<< HEAD
 5. Implementare test automatizzati
-=======
->>>>>>> laraxot/dev
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -2836,25 +2743,16 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -3129,10 +3027,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
-<<<<<<< HEAD
 5. Implementare test automatizzati
-=======
->>>>>>> laraxot/dev
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 
@@ -3164,10 +3059,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 ---
-<<<<<<< HEAD
 ---
-=======
->>>>>>> laraxot/dev
 
 ## git-conflicts-resolution-local-swarm-backup
 
@@ -3201,23 +3093,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -4030,23 +3910,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -4459,23 +4327,7 @@ git -c core.editor="echo" rebase --continue
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
-=======
-<<<<<<< HEAD
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
-=======
-<<<<<<< .merge_file_qYIMyW
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
-=======
-<<<<<<< HEAD
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix-2026-03-17.md)
-=======
-- [passport-pages-fix](../../../docs/FIX_REPORTS/passport-pages-fix.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [oauth-access-token-removal](oauth-access-token-removal.md)
 
 ---
@@ -4774,19 +4626,7 @@ Documentazione per git_conflict_resolution nel modulo User.
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Modulo Principale](../README.md)
-=======
-<<<<<<< HEAD
-- [Modulo Principale](../README.md)
-=======
-<<<<<<< HEAD
-- [Modulo Principale](../README.md)
-=======
-- [Modulo Principale](../readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 
 ---
@@ -5139,23 +4979,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_qYIMyW
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_ZQMNCK
->>>>>>> laraxot/dev
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
@@ -5425,10 +5253,7 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati
-<<<<<<< HEAD
 5. Implementare test automatizzati
-=======
->>>>>>> laraxot/dev
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - [DATE] 15:30**
 

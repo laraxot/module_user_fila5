@@ -13,10 +13,7 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\User\Filament\Actions\Header\AttachRoleAction;
-<<<<<<< HEAD
-=======
 use Modules\User\Models\Role;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class RolesRelationManager extends XotBaseRelationManager
@@ -47,11 +44,7 @@ class RolesRelationManager extends XotBaseRelationManager
     {
         return [
             'id' => IDColumn::make('id'),
-<<<<<<< HEAD
-            'name' => TextColumn::make('name')->formatStateUsing(static fn (string $state): string => \Modules\User\Models\Role::displayName($state)),
-=======
             'name' => TextColumn::make('name')->formatStateUsing(static fn (string $state): string => Role::displayName($state)),
->>>>>>> laraxot/dev
             'team_id' => TextColumn::make('team_id'),
         ];
     }

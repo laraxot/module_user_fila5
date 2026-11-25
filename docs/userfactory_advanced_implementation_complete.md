@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_sfJiqP
->>>>>>> laraxot/dev
 ---
 title: "UserFactory Advanced Implementation - COMPLETE ✅"
 type: note
 qmd: "userfactory advanced implementation complete"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_sgsWVr
->>>>>>> laraxot/dev
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished

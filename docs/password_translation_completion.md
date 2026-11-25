@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_iTYTrO
->>>>>>> laraxot/dev
 ---
 title: "Completamento Traduzioni Password - 2025"
 type: note
 qmd: "password translation completion completamento traduzioni 2025"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_0x3Xi3
->>>>>>> laraxot/dev
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato

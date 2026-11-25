@@ -11,21 +11,9 @@ return [
             'tooltip' => '',
         ],
         'team_id' => [
-<<<<<<< HEAD
             'tooltip' => '',
             'label' => 'Team',
             'helper_text' => 'Facoltativo: lascia vuoto se il ruolo vale per tutto il sito.',
-=======
-<<<<<<< .merge_file_USk1Lg
-            'tooltip' => '',
-            'label' => 'Team',
-            'helper_text' => 'Facoltativo: lascia vuoto se il ruolo vale per tutto il sito.',
-=======
-            'label' => 'Team',
-            'helper_text' => 'Facoltativo: lascia vuoto se il ruolo vale per tutto il sito.',
-            'tooltip' => '',
->>>>>>> .merge_file_Fu0OJi
->>>>>>> laraxot/dev
             'placeholder' => 'team_id',
             'description' => 'team_id',
         ],

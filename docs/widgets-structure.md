@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "widgets structure"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_Q6IYPd
-qmd: "widgets structure"
-=======
->>>>>>> .merge_file_kcbmXP
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md

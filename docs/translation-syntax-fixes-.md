@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_I2Iq0K
->>>>>>> laraxot/dev
 ---
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: note
 qmd: "translation syntax fixes correzioni errori sintassi"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_AYtIS1
->>>>>>> laraxot/dev
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

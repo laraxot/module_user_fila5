@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "business logic deep dive user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_a0cmfY
-qmd: "business logic deep dive user"
-=======
->>>>>>> .merge_file_1vh7Qq
->>>>>>> laraxot/dev
 ---
 
 # User Module - Business Logic Deep Dive

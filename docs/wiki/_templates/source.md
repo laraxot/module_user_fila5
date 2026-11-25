@@ -3,30 +3,11 @@ title: "Source Title"
 type: source
 sources: ["raw/articles/source-filename.md"]
 confidence: high
-<<<<<<< HEAD
 created: {{date}}
 updated: {{date}}
-=======
-created: "{{date}}"
-updated: "{{date}}"
->>>>>>> laraxot/dev
 tags: [article, paper, documentation]
 related:
-  - "./concept.md"
-  - "./entity.md"
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_jmPsyh
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 qmd: "source title"
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_c5LiTL
->>>>>>> laraxot/dev
 ---
 
 # {{title}}

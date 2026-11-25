@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: analysis
 qmd: "model inheritance analysis analisi ereditarietà modelli"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

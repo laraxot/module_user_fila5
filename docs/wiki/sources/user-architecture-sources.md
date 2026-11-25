@@ -5,17 +5,7 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user architecture sources"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_mMzmyD
-qmd: "user architecture sources"
-=======
->>>>>>> .merge_file_vNxynW
->>>>>>> laraxot/dev
 ---
 
 # User Architecture Sources

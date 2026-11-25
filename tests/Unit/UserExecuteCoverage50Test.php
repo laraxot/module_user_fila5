@@ -55,10 +55,7 @@ use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
 use Modules\User\View\Components\Mail\Message;
 use Modules\User\View\Pages\ProfileEditVoltComponent;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
@@ -428,7 +425,6 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertSame(User::class, ShieldUtilsAction::showModelPath($resourceClass));
         Assert::assertSame(Role::class, ShieldUtilsAction::getRoleModel());
         Assert::assertSame(Permission::class, ShieldUtilsAction::getPermissionModel());
-
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {

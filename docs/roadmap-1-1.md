@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "roadmap 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_GT5VWK
-qmd: "roadmap 1"
-=======
->>>>>>> .merge_file_6LoCWW
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap.md

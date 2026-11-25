@@ -14,14 +14,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "agent confidence protocol massima confidenza agente"
->>>>>>> laraxot/dev
-=======
-qmd: "agent confidence protocol massima confidenza agente"
->>>>>>> laraxot/dev
 ---
 
 # Massima confidenza agente

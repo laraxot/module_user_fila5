@@ -1,17 +1,7 @@
 ---
 title: analyst-report
 module: User
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "analyst report analystreport"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_MIUYhp
-qmd: "analyst report analystreport"
-=======
->>>>>>> .merge_file_rrcD2t
->>>>>>> laraxot/dev
 ---
 
 # User Module — Analyst Report

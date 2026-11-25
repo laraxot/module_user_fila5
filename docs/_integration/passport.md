@@ -11,14 +11,7 @@ related:
   - "./payment.md"
   - "./phpstan.md"
   - "./profile.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "passport"
->>>>>>> laraxot/dev
-=======
-qmd: "passport"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/passport.md

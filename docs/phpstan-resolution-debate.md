@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan resolution debate"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_BGIPgN
-qmd: "phpstan resolution debate"
-=======
->>>>>>> .merge_file_B9o2Fi
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md

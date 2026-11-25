@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Story: file di lingua User svuotati a stub senza return"
 type: story
 qmd: "lang files empty stub corruption story"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Story: file di lingua User svuotati a stub senza return
 
 Status: done

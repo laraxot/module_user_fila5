@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler License Configuration"
 type: note
 qmd: "fullcalendar scheduler license configuration"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

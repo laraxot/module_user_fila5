@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Front office: avatar senza siti terzi, profilo pubblico, reset password"
 type: note
 qmd: "front office privacy avatar password reset"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Front office: avatar senza siti terzi, profilo pubblico, reset password
 
 Decisioni prese con l'audit del front office di LaravelPizza (12/11/2026). Valgono per ogni progetto che usa

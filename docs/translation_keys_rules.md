@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_hlLEDC
->>>>>>> laraxot/dev
 ---
 title: "Regole per le Chiavi di Traduzione"
 type: rule
 qmd: "translation keys rules regole chiavi traduzione"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_08xj1Q
->>>>>>> laraxot/dev
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali

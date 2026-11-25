@@ -5,17 +5,7 @@ type: product
 tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user product"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_AaAq1e
-qmd: "user product"
-=======
->>>>>>> .merge_file_0WV4gD
->>>>>>> laraxot/dev
 ---
 
 # user — product

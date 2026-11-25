@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_Oh4RzD
->>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: note
 qmd: "volt folio logout implementazione corretta"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_By9psJ
->>>>>>> laraxot/dev
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati

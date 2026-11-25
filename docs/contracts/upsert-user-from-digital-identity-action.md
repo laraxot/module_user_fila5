@@ -1,36 +1,14 @@
 ---
 title: "Contratto — UpsertUserFromDigitalIdentityAction"
 type: contract
-<<<<<<< HEAD
-<<<<<<< HEAD
 action: "Modules\User\Actions\Auth\UpsertUserFromDigitalIdentityAction"
 tags: [contract, action, spid, cie, identita-digitale]
 created: 2026-11-24
 updated: 2026-11-24
-=======
-action: "Modules\\User\\Actions\\Auth\\UpsertUserFromDigitalIdentityAction"
-owner: User
-status: accepted
-updated: 2026-11-24
-qmd: "UpsertUserFromDigitalIdentityAction SPID CIE codice fiscale email verificata noemail.local"
->>>>>>> laraxot/dev
-=======
-action: "Modules\\User\\Actions\\Auth\\UpsertUserFromDigitalIdentityAction"
-tags: [contract, action, spid, cie, identita-digitale]
-created: 2026-11-24
-updated: 2026-11-24
-owner: User
-status: accepted
-qmd: "UpsertUserFromDigitalIdentityAction SPID CIE codice fiscale email verificata noemail.local"
->>>>>>> laraxot/dev
 ---
 
 # UpsertUserFromDigitalIdentityAction
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 Sorgente: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php`. Perché: [ADR](../adr/digital-identity-upsert-by-fiscal-code.md).
 
 ## Input
@@ -73,8 +51,6 @@ test migrato con le colonne d'identità: il group si aggiunge quando quei casi g
 - Non assegna ruoli o team.
 - Non salva altri attributi SAML/OIDC (data di nascita, indirizzo...): minimizzazione, vedi la migrazione owner `create_users_table`.
 - Non verifica la firma della risposta dell'IdP: arriva già validata.
-<<<<<<< HEAD
-=======
 Trova o crea l'utente che ha fatto accesso con SPID o CIE e ne aggiorna i dati d'identità. Dati personali: codice fiscale, nome, cognome, email. Codice: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php:81-168`.
 
 ## Input
@@ -113,7 +89,3 @@ Un solo `forceFill(...)->save()` sulla tabella utenti (riga 131 o 137), con `aut
 - Non conserva dati oltre quelli elencati (docblock, riga 79).
 - Marker `@contract` e `@see` presenti nel docblock della classe.
 - Dubbio da verificare: la riga 51 scrive sempre `fiscal_code` anche quando l'utente è stato trovato per email verificata; un account esistente con un altro codice fiscale verrebbe riassegnato.
->>>>>>> laraxot/dev
-=======
-- Dubbio da verificare: un account trovato per email verificata riceve comunque il `fiscal_code` dell'accesso (`$data['fiscal_code']` si scrive sempre), anche se ne aveva già un altro.
->>>>>>> laraxot/dev

@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "volt consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_QRt0T0
-qmd: "volt consolidated"
-=======
->>>>>>> .merge_file_uRRoaw
->>>>>>> laraxot/dev
 ---
 
 # volt — Consolidated Documentation
@@ -1407,17 +1397,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices Routing](./routing-best-practices.md) 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Best Practices Routing](./routing-best-practices.md) 
-=======
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_QRt0T0
-=======
-- [Best Practices Routing](./routing-best-practices.md) 
->>>>>>> .merge_file_uRRoaw
->>>>>>> laraxot/dev
 ---
 
 ## volt-folio-logout-debug

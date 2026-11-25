@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "🗺️ ROADMAP COMPLETA - Modulo User"
-type: note
-qmd: "legacy roadmap complete completa user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic

@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_ECiEhZ
->>>>>>> laraxot/dev
 ---
 title: "Widget Translation Rules - SaluteOra Project"
 type: rule
 qmd: "widget translation rules saluteora project"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_IJSo2r
->>>>>>> laraxot/dev
 # Widget Translation Rules - SaluteOra Project
 
 ## Core Principles
@@ -203,26 +191,7 @@ protected static string $view = 'user::widgets.edit-user';
 - [User Module Widget Structure](widgets_structure.md)
 - [EditUserWidget Documentation](widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](widgets/translation-guidelines.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament Widget Conventions](best-practices/filament-widgets.md)
-=======
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-=======
-<<<<<<< .merge_file_ECiEhZ
-- [Filament Widget Conventions](best-practices/filament-widgets.md)
-=======
-<<<<<<< HEAD
-- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_IJSo2r
-- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
-=======
-- [Filament Widget Conventions](best-practices/filament-widgets.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [User Module Widget Structure](widgets_structure.md)
 - [EditUserWidget Documentation](widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](widgets/translation-guidelines.md)

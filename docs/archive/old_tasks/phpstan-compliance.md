@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "PHPStan Compliance - User Module"
-type: note
-qmd: "phpstan compliance user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT

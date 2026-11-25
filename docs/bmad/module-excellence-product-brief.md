@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Product brief — User module: percorso verso la perfezione assoluta"
 
-=======
->>>>>>> laraxot/dev
 title: "Product brief: User module: percorso verso la perfezione assoluta"
 type: product-brief
 module: User
@@ -16,14 +13,7 @@ related:
   - ./epics.md
   - ./decision-log.md
   - ../purpose.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "excellence product brief user percorso verso"
->>>>>>> laraxot/dev
-=======
-qmd: "excellence product brief user percorso verso"
->>>>>>> laraxot/dev
 ---
 
 # Product brief: User module — percorso verso la perfezione assoluta

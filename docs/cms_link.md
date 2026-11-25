@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Collegamento al Modulo Cms"
 type: note
 qmd: "cms link collegamento"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo User e il modulo Cms per quanto riguarda i componenti Filament e le convenzioni di namespace.

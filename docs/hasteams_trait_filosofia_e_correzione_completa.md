@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
 type: note
 qmd: "hasteams trait filosofia correzione completa laraxot"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`

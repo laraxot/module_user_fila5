@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "PHPStan Fixes Complete - Gennaio 2025"
-type: note
-qmd: "phpstan fixes january complete gennaio 2025"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

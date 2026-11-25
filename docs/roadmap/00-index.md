@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_FnVBui
->>>>>>> laraxot/dev
 ---
 title: "Roadmap Index - User"
 type: note
 qmd: "00 roadmap user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_vX202H
->>>>>>> laraxot/dev
 # Roadmap Index - User
 
 ## Scope

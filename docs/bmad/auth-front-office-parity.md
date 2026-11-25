@@ -3,14 +3,7 @@ title: "User — contratto runtime per le pagine auth del tema"
 type: bmad-runtime-contract
 status: active
 updated: 2026-11-12
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "auth front office parity user contratto"
->>>>>>> laraxot/dev
-=======
-qmd: "auth front office parity user contratto"
->>>>>>> laraxot/dev
 ---
 
 # Contratto

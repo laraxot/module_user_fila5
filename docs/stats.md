@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "stats"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_DVTsEM
-qmd: "stats"
-=======
->>>>>>> .merge_file_FR6Hc0
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/stats.md

@@ -6,14 +6,7 @@ epic: "USER-MODULE-EXCELLENCE"
 module: User
 created: 2026-09-29
 updated: 2026-09-29
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user filament boundary i18n story confine"
->>>>>>> laraxot/dev
-=======
-qmd: "user filament boundary i18n story confine"
->>>>>>> laraxot/dev
 ---
 
 # Story — User: Table boundary, traduzioni e riuso

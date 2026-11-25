@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_BBtS89
->>>>>>> laraxot/dev
 ---
 title: "Testing Rules & Strategy"
 type: rule
 qmd: "testing rules strategy"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_GGKFfJ
->>>>>>> laraxot/dev
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)

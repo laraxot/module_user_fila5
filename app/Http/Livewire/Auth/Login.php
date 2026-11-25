@@ -148,11 +148,7 @@ class Login extends Component implements HasActions, HasForms
         );
 
         $adminCount = $adminRoles->count();
-<<<<<<< HEAD
         if (1 === $adminCount) {
-=======
-        if ($adminCount === 1) {
->>>>>>> laraxot/dev
             $role = $adminRoles->first();
             Assert::isInstanceOf($role, Role::class);
             $moduleName = str_replace('::admin', '', $role->name);

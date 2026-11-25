@@ -6,17 +6,7 @@ topic: event-detail-page
 canonical: ../../../../Themes/docs/shared-components/event-detail-page.png
 created: 2026-07-22
 updated: 2026-07-22
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "event detail page eventdetailpage"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_np44w2
-qmd: "event detail page eventdetailpage"
-=======
->>>>>>> .merge_file_wGXrDl
->>>>>>> laraxot/dev
 ---
 
 # event-detail-page

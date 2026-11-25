@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_9Hs7ur
->>>>>>> laraxot/dev
 ---
 title: "Laravel Passport Implementation Summary - User Module"
 type: note
 qmd: "passport implementation summary laravel user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_esN4t2
->>>>>>> laraxot/dev
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

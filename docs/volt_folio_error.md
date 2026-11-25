@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_i5mRML
->>>>>>> laraxot/dev
 ---
 title: "Errore VoltDirectiveMissingException in Folio"
 type: note
 qmd: "volt folio error errore voltdirectivemissingexception"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_af1a3r
->>>>>>> laraxot/dev
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema

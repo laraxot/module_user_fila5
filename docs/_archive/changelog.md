@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Changelog"
-type: note
-qmd: "changelog"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

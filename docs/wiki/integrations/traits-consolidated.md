@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "traits consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_RywlD0
-qmd: "traits consolidated"
-=======
->>>>>>> .merge_file_MwaAas
->>>>>>> laraxot/dev
 ---
 
 # traits — Consolidated Documentation

@@ -9,10 +9,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/hash-otp-value-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/hash-otp-value-action.md
  */
 final class HashOtpValueAction

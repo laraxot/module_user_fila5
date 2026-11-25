@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_jaf6rO
->>>>>>> laraxot/dev
 ---
 title: "Refactor Completo Campi \"Città\" - Modulo User"
 type: note
 qmd: "translation city field refactor 08 completo"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_JmNSd0
->>>>>>> laraxot/dev
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

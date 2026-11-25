@@ -15,17 +15,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "socialite admin configuration oauth provider settings"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_rJxRnM
-qmd: "socialite admin configuration oauth provider settings"
-=======
->>>>>>> .merge_file_AYqDao
->>>>>>> laraxot/dev
 ---
 
 # Socialite Admin Configuration

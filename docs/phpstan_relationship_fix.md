@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_UQe960
->>>>>>> laraxot/dev
 ---
 title: "Correzione PHPStan - Relationship Type Hints"
 type: note
 qmd: "phpstan relationship fix correzione type hints"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_IPq0ML
->>>>>>> laraxot/dev
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto

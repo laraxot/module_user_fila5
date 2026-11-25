@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "spatie consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_OzcSy3
-qmd: "spatie consolidated"
-=======
->>>>>>> .merge_file_XImUqv
->>>>>>> laraxot/dev
 ---
 
 # spatie — Consolidated Documentation

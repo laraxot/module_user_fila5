@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_KkKvOf
->>>>>>> laraxot/dev
 ---
 title: "Quality Tools Final Report - 2025-01-22"
 type: report
 qmd: "quality tools final report 20250122"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_oNaCxz
->>>>>>> laraxot/dev
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo

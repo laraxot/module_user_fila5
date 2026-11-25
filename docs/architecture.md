@@ -4,14 +4,7 @@ type: architecture
 tags: [module, architecture, design]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "architecture user"
->>>>>>> laraxot/dev
-=======
-qmd: "architecture user"
->>>>>>> laraxot/dev
 ---
 
 # User Module — Architecture

@@ -3,25 +3,11 @@ title: "User Module Documentation"
 type: documentation
 tags: [module, documentation]
 created: 2026-06-05
-<<<<<<< HEAD
-<<<<<<< HEAD
 updated: 2026-11-19
-=======
-updated: 2026-07-27
-qmd: "user"
->>>>>>> laraxot/dev
-=======
-updated: 2026-11-19
-qmd: "user"
->>>>>>> laraxot/dev
 ---
 
 # Modulo User - Documentazione Completa
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ## Indice della documentazione
 
 Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `INDEX.md`,
@@ -37,11 +23,6 @@ Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi 
 
 Regole sui nomi: kebab-case, **nessuna data nel nome** di file o cartelle (la data va nel frontmatter `created:`/`updated:`).
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ## Overview
 
 Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
@@ -98,10 +79,6 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 - **app/**: Home for all PHP functional code (mapped via PSR-4).
 - **database/**: Strictly lowercase for migrations/factories/seeders.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ### PHPStan — dove guardare (DRY)
 
 | Ruolo | Path |
@@ -112,14 +89,9 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 | Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
 
 Memoria: `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1` (da `laravel/`). Non lanciare `analyse Modules` se host saturo.
-<<<<<<< HEAD
-=======
 ### PHPStan Memory Management
 Per evitare crash dei parallel workers su analisi massive, usare sempre:
 `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### Profiles migration governance (workorder)
 
@@ -150,15 +122,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Requisiti
 
 - PHP 8.3+
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Laravel 13
-=======
-- Laravel 11/12
->>>>>>> laraxot/dev
-=======
-- Laravel 13
->>>>>>> laraxot/dev
 - Spatie Laravel Permission
 - Filament v5
 
@@ -1278,14 +1242,7 @@ See [roadmap.md](./roadmap.md) for details.
 - [Laravel Authorization](https://laravel.com/docs/12.x/authorization)
 - [Spatie Permission](https://spatie.be/docs/laravel-permission)
 - [Laravel Sanctum](https://laravel.com/docs/12.x/sanctum)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Filament Authentication](https://filamentphp.com/docs/5.x/users/overview)
-=======
->>>>>>> laraxot/dev
-=======
-- [Filament Authentication](https://filamentphp.com/docs/5.x/users/overview)
->>>>>>> laraxot/dev
 - [Filament Authentication](https://filamentphp.com/docs/4.x/panels/users)
 
 ---
@@ -2386,15 +2343,7 @@ See [roadmap.md](./roadmap.md) for details.
 
 **Module**: User (Authentication & Authorization)
 **Version**: 2.5.0
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Framework**: Laravel 13 + Filament 5
-=======
-**Framework**: Laravel 12 + Filament 4
->>>>>>> laraxot/dev
-=======
-**Framework**: Laravel 13 + Filament 5
->>>>>>> laraxot/dev
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅

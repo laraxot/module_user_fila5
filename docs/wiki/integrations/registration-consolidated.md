@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "registration consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_3Peqxh
-qmd: "registration consolidated"
-=======
->>>>>>> .merge_file_pnNrDG
->>>>>>> laraxot/dev
 ---
 
 # registration — Consolidated Documentation

@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Coverage — User
 
-=======
->>>>>>> laraxot/dev
-=======
-# Coverage — User
-
->>>>>>> laraxot/dev
 ---
 title: "Coverage: User"
 type: note
@@ -16,16 +8,8 @@ updated: 2026-10-07
 tags: [docs, user]
 qmd: "coverage   user user"
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Coverage — User
 
->>>>>>> laraxot/dev
-=======
-# Coverage — User
-
->>>>>>> laraxot/dev
 # Coverage: User
 
 Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.

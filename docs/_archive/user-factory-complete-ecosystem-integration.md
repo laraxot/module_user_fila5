@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "user factory complete ecosystem integration"
->>>>>>> laraxot/dev
-=======
-qmd: "user factory complete ecosystem integration"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-complete-ecosystem-integration.md

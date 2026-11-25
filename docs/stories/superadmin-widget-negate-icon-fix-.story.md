@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "SuperAdminWidget: icona \"negato\" ambigua, ripristinata a simbolo di divieto standard"
 type: story
 qmd: "superadmin widget negate icon fix story"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # SuperAdminWidget: icona "negato" ambigua, ripristinata a simbolo di divieto standard
 
 Status: done

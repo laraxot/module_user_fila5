@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_OBNiUo
->>>>>>> laraxot/dev
 ---
 title: "Task: User Docs Cleanup"
 type: note
 qmd: "user cleanup task"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_zvsZ4V
->>>>>>> laraxot/dev
+
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo
@@ -32,4 +21,4 @@ Riorganizzare la mastodontica cartella docs del modulo User (550+ file) che cont
 - [ ] Spostamento massivo in `archive/` di analisi risalenti al 2024 o precedenti.
 
 ## 🔗 Riferimenti
-- [Index Documentazione](../README.md)
+- [Index Documentazione](../00-index.md)

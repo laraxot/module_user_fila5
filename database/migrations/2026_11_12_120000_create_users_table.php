@@ -14,10 +14,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration
 {
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */

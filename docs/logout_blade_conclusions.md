@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Conclusioni e Raccomandazioni per logout.blade.php"
 type: note
 qmd: "logout blade conclusions conclusioni raccomandazioni logoutbladephp"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati

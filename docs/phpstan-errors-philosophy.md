@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
 - [Type Safety Best Practices](../../Xot/docs/type-safety-best-practices.md)
 
 ---
 
 *Ricorda: La type safety è sacra. Non profanarla mai.*
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-errors-philosophy
@@ -26,17 +17,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan errors philosophy"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_KbeQMG
-qmd: "phpstan errors philosophy"
-=======
->>>>>>> .merge_file_C1vTvF
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md

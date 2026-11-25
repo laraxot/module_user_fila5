@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "translation resolution prototype"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_5gmGkk
-qmd: "translation resolution prototype"
-=======
->>>>>>> .merge_file_f5Jl5W
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md

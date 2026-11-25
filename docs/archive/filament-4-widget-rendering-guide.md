@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Guida Rendering Widget Filament 4 - Modulo User"
-type: guide
-qmd: "filament 4 widget rendering guide guida"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Data**: 14 Ottobre 2025  

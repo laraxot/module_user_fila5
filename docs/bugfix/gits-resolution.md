@@ -7,14 +7,7 @@ related:
   - "./deviceuser-hasxotfactory.md"
   - "./git-conflicts-resolution.md"
   - "./multiple-bugs-resolution.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "gits resolution"
->>>>>>> laraxot/dev
-=======
-qmd: "gits resolution"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md

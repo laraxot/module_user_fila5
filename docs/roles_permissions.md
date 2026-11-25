@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_M4FP7G
->>>>>>> laraxot/dev
 ---
 title: "Gestione coerente di roles, permissions e guard_name"
 type: note
 qmd: "roles permissions gestione coerente guardname"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_n5ydaF
->>>>>>> laraxot/dev
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

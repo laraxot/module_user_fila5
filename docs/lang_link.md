@@ -5,14 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "lang link collegamento alle traduzioni user"
->>>>>>> laraxot/dev
-=======
-qmd: "lang link collegamento alle traduzioni user"
->>>>>>> laraxot/dev
 ---
 
 # Collegamento alle Traduzioni del Modulo User

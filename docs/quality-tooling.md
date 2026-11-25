@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "quality tooling"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_wNZket
-qmd: "quality tooling"
-=======
->>>>>>> .merge_file_tTmV6b
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md

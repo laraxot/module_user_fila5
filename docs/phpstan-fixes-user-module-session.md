@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_G392IB
->>>>>>> laraxot/dev
 ---
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: note
 qmd: "phpstan fixes user session 20251001"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_nFH0lf
->>>>>>> laraxot/dev
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti

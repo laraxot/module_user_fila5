@@ -7,17 +7,7 @@ related:
   - "./tenant-test-fixes.md"
   - "./tenantfactory-fix.md"
   - "./tenanttest-fixes.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "tenantfactory"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ZEu4g2
-qmd: "tenantfactory"
-=======
->>>>>>> .merge_file_4htvap
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenantfactory-fix.md

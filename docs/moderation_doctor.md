@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Moderazione Dentista dal Modulo User"
 type: note
 qmd: "moderation doctor moderazione dentista user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

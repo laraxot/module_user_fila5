@@ -14,10 +14,7 @@ use Webmozart\Assert\Assert;
 
 /**
  * @see docs/contracts/get-guard-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/get-guard-action.md
  */
 class GetGuardAction

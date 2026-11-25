@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 type: note
 qmd: "namespace conventions convenzioni user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali

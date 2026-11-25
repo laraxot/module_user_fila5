@@ -13,10 +13,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/resolve-user-name-fields-from-socialite-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/resolve-user-name-fields-from-socialite-action.md
  */
 final class ResolveUserNameFieldsFromSocialiteAction

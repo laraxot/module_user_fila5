@@ -1060,10 +1060,6 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 
 ---
@@ -1550,8 +1546,3 @@ User Module
 ---
 
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

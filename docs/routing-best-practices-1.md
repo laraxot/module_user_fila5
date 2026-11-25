@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "routing best practices 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_Rs2pMF
-qmd: "routing best practices 1"
-=======
->>>>>>> .merge_file_aVjEXq
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/routing-best-practices.md

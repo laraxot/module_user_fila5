@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_FgcMUT
->>>>>>> laraxot/dev
 ---
 title: "Authentication Performance Optimization - User Module"
 type: note
 qmd: "authentication performance optimization user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_g07D7O
->>>>>>> laraxot/dev
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified

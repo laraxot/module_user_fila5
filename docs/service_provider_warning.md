@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "service provider warning serviceproviderwarning user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_HPFTmr
-qmd: "service provider warning serviceproviderwarning user"
-=======
->>>>>>> .merge_file_cHvG4b
->>>>>>> laraxot/dev
 ---
 
 # service_provider_warning - User

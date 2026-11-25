@@ -1,12 +1,6 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 title: "Puntatore — epics campagna widget"
 
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 title: "Puntatore: epics campagna widget"
 canonical: ./epics.md
 superseded: true
@@ -23,12 +17,4 @@ qmd: "livewire widget epics user"
 
 Canon epic modulo: [epics.md](./epics.md) (Epic 9 SuperAdmin + Epic 10 restante). Non usare le
 lettere A–D; non esiste Epic 11.
-<<<<<<< HEAD
-<<<<<<< HEAD
 Canon piattaforma: [Xot/docs/bmad/livewire-widget-epics.md](livewire-widget-epics.md).
-=======
-Canon piattaforma: [Xot/docs/bmad/livewire-widget-epics.md](../../Xot/docs/bmad/livewire-widget-epics.md).
->>>>>>> laraxot/dev
-=======
-Canon piattaforma: [Xot/docs/bmad/livewire-widget-epics.md](livewire-widget-epics.md).
->>>>>>> laraxot/dev

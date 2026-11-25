@@ -113,15 +113,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $team = teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< HEAD
         $widget = new TeamChangeWidget;
-=======
-<<<<<<< HEAD
-        $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $widget->mount();
 
         $response = $widget->switchTeam($team->id);
@@ -138,15 +130,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $otherOwnerTeam = teamChangeWidgetCreateTeam($stranger);
         actingAs($owner);
 
-<<<<<<< HEAD
         $widget = new TeamChangeWidget;
-=======
-<<<<<<< HEAD
-        $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $widget->mount();
 
         try {
@@ -167,15 +151,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-<<<<<<< HEAD
         $widget = new TeamChangeWidget;
-=======
-<<<<<<< HEAD
-        $widget = new TeamChangeWidget;
-=======
-        $widget = new TeamChangeWidget();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $widget->mount();
 
         try {

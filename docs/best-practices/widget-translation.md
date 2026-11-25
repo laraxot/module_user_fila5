@@ -11,14 +11,7 @@ related:
   - "./component-verification-rules.md"
   - "./component-verification.md"
   - "./dependency-rules.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "widget translation"
->>>>>>> laraxot/dev
-=======
-qmd: "widget translation"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/widget-translation-rules.md

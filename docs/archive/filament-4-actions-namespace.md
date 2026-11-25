@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Filament 4: Namespace Actions - Filosofia Laraxot"
-type: note
-qmd: "filament 4 actions namespace filosofia laraxot"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22

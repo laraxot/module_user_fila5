@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "hasteams consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_rQsCzr
-qmd: "hasteams consolidated"
-=======
->>>>>>> .merge_file_jmlAjW
->>>>>>> laraxot/dev
 ---
 
 # hasteams — Consolidated Documentation

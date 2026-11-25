@@ -5,14 +5,7 @@ module: "User"
 alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "setup guide user bmad"
->>>>>>> laraxot/dev
-=======
-qmd: "setup guide user bmad"
->>>>>>> laraxot/dev
 ---
 
 # User — BMAD Setup Guide
@@ -66,15 +59,7 @@ Dopo un update, ricontrollare che non si sia "spaccata" la coerenza tra moduli:
 ## Vedi Anche
 
 - [quick-reference](quick-reference.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Project Context](project-context.md)
-=======
-- [Project Context](../../_bmad-output/project-context.md)
->>>>>>> laraxot/dev
-=======
-- [Project Context](project-context.md)
->>>>>>> laraxot/dev
 
 ---
 

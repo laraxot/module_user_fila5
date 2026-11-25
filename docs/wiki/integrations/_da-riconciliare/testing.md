@@ -4,17 +4,7 @@ type: guide
 tags: [user, testing, pest]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "testing user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_RODnSp
-qmd: "testing user"
-=======
->>>>>>> .merge_file_h8hOD1
->>>>>>> laraxot/dev
 ---
 
 # User Module — Testing

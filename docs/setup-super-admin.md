@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "setup super admin"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ry1hE7
-qmd: "setup super admin"
-=======
->>>>>>> .merge_file_vAL6xU
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/setup-super-admin.md

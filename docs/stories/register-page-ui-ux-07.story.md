@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Registrazione FO /it/auth/register: traduzioni, struttura card, mobile"
 type: story
 qmd: "register page ui ux 07 story"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Registrazione FO /it/auth/register: traduzioni, struttura card, mobile
 
 - Stato: done (2026-10-07). Parte posta: vedi `../auth-register-email.md`

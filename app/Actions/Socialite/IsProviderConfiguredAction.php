@@ -11,10 +11,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * @see docs/contracts/is-provider-configured-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/is-provider-configured-action.md
  */
 class IsProviderConfiguredAction

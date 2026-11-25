@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "sprint planning 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_Bv4Mh5
-qmd: "sprint planning 1"
-=======
->>>>>>> .merge_file_otGjtN
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/SPRINT_PLANNING-Modules.md

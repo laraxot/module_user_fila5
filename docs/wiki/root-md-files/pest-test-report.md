@@ -1,17 +1,7 @@
 ---
 title: pest-test-report-2
 module: User
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "pest test report pesttestreport2"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_WB0u8Z
-qmd: "pest test report pesttestreport2"
-=======
->>>>>>> .merge_file_bzJ1bt
->>>>>>> laraxot/dev
 ---
 
 # <nome progetto> User Module - Pest Test Implementation Report

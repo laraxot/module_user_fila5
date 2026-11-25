@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Correzione PHPStan - Relationship Type Hints"
-type: note
-qmd: "phpstan relationship fix correzione type hints"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto

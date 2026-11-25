@@ -127,15 +127,7 @@ Il modulo **User** fornisce:
    - Mapping permessi
 
 2. **LimeParticipant** - Partecipanti survey
-<<<<<<< HEAD
-<<<<<<< HEAD
    - Integrazione con Contact model <nome progetto>
-=======
-   - Integrazione con Contact model Quaeris
->>>>>>> laraxot/dev
-=======
-   - Integrazione con Contact model Quaeris
->>>>>>> laraxot/dev
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -183,15 +175,7 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
-=======
-- [Modulo Quaeris](../Quaeris/docs/README.md)
->>>>>>> laraxot/dev
-=======
-- [Modulo Quaeris](../Quaeris/docs/README.md)
->>>>>>> laraxot/dev
 - [Modulo Limesurvey](../Limesurvey/docs/README.md)
 - [User README](./README.md)
 

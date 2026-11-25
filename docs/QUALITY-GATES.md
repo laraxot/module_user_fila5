@@ -2,14 +2,7 @@
 title: Quality Gates Analysis — User Module
 date: 2026-07-28
 status: completed-with-constraints
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "quality gates analysis user"
->>>>>>> laraxot/dev
-=======
-qmd: "quality gates analysis user"
->>>>>>> laraxot/dev
 ---
 
 # Quality Gates Analysis — laravel/Modules/User
@@ -241,10 +234,6 @@ updated: 2026-11-17
 <!-- recovery from broken basename `QUALITY-GATES-.md` after docs-guardian mass rename -->
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 
 
@@ -253,8 +242,3 @@ Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file
 <!-- Contenuto unito da QUALITY-GATES-.md (rimozione date dai nomi file, issue #64) -->
 
 Vedi [QUALITY-GATES.md](./QUALITY-GATES.md).
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "PHPStan Analysis - User Module"
-type: analysis
-qmd: "phpstan analysis user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis - User Module
 
 ## 📊 Status

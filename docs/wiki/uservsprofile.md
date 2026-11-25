@@ -2,17 +2,7 @@
 module: User
 concept: User vs Profile
 last_updated: 2026-04-15
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "uservsprofile user profile models"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_XjPl4W
-qmd: "uservsprofile user profile models"
-=======
->>>>>>> .merge_file_X9yfzv
->>>>>>> laraxot/dev
 ---
 
 # User vs Profile Models

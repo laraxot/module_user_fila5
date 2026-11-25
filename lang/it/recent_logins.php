@@ -13,15 +13,9 @@ return [
     'fields' => [
         'authenticatable' => [
             'name' => [
-<<<<<<< HEAD
                 'label' => 'authenticatable.name',
             ],
             'label' => '',
-=======
-                'label' => 'Utente autenticato',
-            ],
-            'label' => 'Utente autenticato',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -30,29 +24,13 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_8H2wxP
->>>>>>> laraxot/dev
             'label' => 'login_at',
         ],
         'ip_address' => [
             'label' => 'Indirizzo IP',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-=======
-            'label' => 'Ora accesso',
-        ],
-        'ip_address' => [
->>>>>>> .merge_file_qmQbv3
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-            'label' => 'Indirizzo IP',
->>>>>>> laraxot/dev
         ],
         'user_agent' => [
             'label' => 'Browser (user agent)',
@@ -86,30 +64,15 @@ return [
             'description' => '',
         ],
         'user' => [
-<<<<<<< HEAD
             'label' => 'Utente',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-<<<<<<< .merge_file_8H2wxP
-            'label' => 'Utente',
-=======
->>>>>>> .merge_file_qmQbv3
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-            'label' => 'Utente',
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_8H2wxP
->>>>>>> laraxot/dev
             'label' => 'reorderRecords',
         ],
         'openColumnManager' => [
@@ -127,7 +90,6 @@ return [
         'applyFilters' => [
             'icon' => 'applyFilters',
             'label' => 'applyFilters',
-<<<<<<< HEAD
         ],
         'openFilters' => [
             'icon' => 'openFilters',
@@ -148,47 +110,6 @@ return [
         'create' => [
             'icon' => 'create',
             'label' => 'create',
-=======
-=======
-            'label' => 'Riordina',
-        ],
-        'openColumnManager' => [
-            'icon' => 'openColumnManager',
-            'label' => 'Gestisci colonne',
-        ],
-        'applyTableColumnManager' => [
-            'icon' => 'applyTableColumnManager',
-            'label' => 'Applica colonne',
-        ],
-        'resetFilters' => [
-            'icon' => 'resetFilters',
-            'label' => 'Reimposta filtri',
-        ],
-        'applyFilters' => [
-            'icon' => 'applyFilters',
-            'label' => 'Applica filtri',
->>>>>>> .merge_file_qmQbv3
-        ],
-        'openFilters' => [
-            'icon' => 'openFilters',
-            'label' => 'Apri filtri',
-        ],
-        'resetColumnManager' => [
-            'icon' => 'resetColumnManager',
-            'label' => 'Reimposta colonne',
-        ],
-        'delete' => [
-            'icon' => 'delete',
-            'label' => 'Elimina',
-        ],
-        'layout' => [
-            'icon' => 'layout',
-            'label' => 'Layout',
-        ],
-        'create' => [
-            'icon' => 'create',
-            'label' => 'Crea',
->>>>>>> laraxot/dev
         ],
     ],
     'navigation' => [

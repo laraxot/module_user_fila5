@@ -11,10 +11,6 @@ updated: 2026-11-17
 
 Stub: il contenuto utile resta nei path datati ripristinati da HEAD. Questo file evita nomi `*-.md`.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 
 ---
@@ -60,8 +56,3 @@ database e mail sink funzionanti.
 - login: credenziali errate, account inattivo/non verificato, remember, intended;
 - lingua: `it`, `en`, `de`, `es`, nessun testo hardcoded nella pagina attiva;
 - accessibilità: label, focus, error summary, tastiera e target 44px.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

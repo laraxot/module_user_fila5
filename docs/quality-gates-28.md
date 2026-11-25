@@ -2,17 +2,7 @@
 title: Quality Gates Analysis — User Module
 date: 2026-07-28
 status: completed-with-constraints
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "quality gates 28 analysis user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_I1Lrel
-qmd: "quality gates 28 analysis user"
-=======
->>>>>>> .merge_file_9MwnlE
->>>>>>> laraxot/dev
 ---
 
 # Quality Gates Analysis — laravel/Modules/User

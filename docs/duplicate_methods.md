@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Metodi duplicati — User"
 type: note
 qmd: "duplicate methods metodi duplicati user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Metodi duplicati — User
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

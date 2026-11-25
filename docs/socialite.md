@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "socialite"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_HHXovf
-qmd: "socialite"
-=======
->>>>>>> .merge_file_Sw4AT0
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/socialite.md

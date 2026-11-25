@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_ruVTU3
->>>>>>> laraxot/dev
 ---
 title: "Git Conflict Inventory"
 type: guide
 qmd: "git merge conflict inventory 28"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_9iIl2v
->>>>>>> laraxot/dev
 # Git Conflict Inventory
 
 - Date: 2026-04-28

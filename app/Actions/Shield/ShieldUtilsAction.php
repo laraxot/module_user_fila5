@@ -23,10 +23,7 @@ use function Safe\class_uses;
  * QueueableAction, in attesa di essere suddivisi in action granulari.
  *
  * @see docs/contracts/shield-utils-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/shield-utils-action.md
  */
 class ShieldUtilsAction

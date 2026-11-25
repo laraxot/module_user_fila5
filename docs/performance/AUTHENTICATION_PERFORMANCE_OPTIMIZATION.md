@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_l2dMWP
->>>>>>> laraxot/dev
 ---
 title: "Authentication Performance Optimization - User Module"
 type: note
 qmd: "authentication performance optimization user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_La2P3l
->>>>>>> laraxot/dev
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified

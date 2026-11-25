@@ -7,14 +7,7 @@ created: 2026-06-04
 updated: 2026-06-04
 tags: [user, filament, register, kiss]
 related:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "filament widget no validate form register"
->>>>>>> laraxot/dev
-=======
-qmd: "filament widget no validate form register"
->>>>>>> laraxot/dev
 ---
 
 # RegisterWidget KISS persist

@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "business logic analysis user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_MLQLVN
-qmd: "business logic analysis user"
-=======
->>>>>>> .merge_file_2FHB8u
->>>>>>> laraxot/dev
 ---
 
 # User Module - Business Logic Analysis

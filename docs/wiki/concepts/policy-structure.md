@@ -10,17 +10,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "policy structure user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_v4CyJe
-qmd: "policy structure user"
-=======
->>>>>>> .merge_file_8ZYBp3
->>>>>>> laraxot/dev
 ---
 # User vs Xot Policy Structure
 

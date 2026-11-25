@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata"
 type: guide
 qmd: "fullcalendar scheduler license troubleshooting configurazione avanzata"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata
 
 ## Panoramica

@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpstan fixes 6"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_MJOYgr
-qmd: "phpstan fixes 6"
-=======
->>>>>>> .merge_file_sGbNyh
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-.md.md

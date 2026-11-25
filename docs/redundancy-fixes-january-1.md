@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "redundancy fixes january 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_SyBdgx
-qmd: "redundancy fixes january 1"
-=======
->>>>>>> .merge_file_oGdvzO
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january-2026.md

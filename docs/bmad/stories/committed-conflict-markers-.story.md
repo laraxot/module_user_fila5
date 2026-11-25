@@ -5,14 +5,7 @@ module: User
 status: review
 created: 2026-10-06
 updated: 2026-10-06
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "committed conflict markers story ripristino migrazione"
->>>>>>> laraxot/dev
-=======
-qmd: "committed conflict markers story ripristino migrazione"
->>>>>>> laraxot/dev
 ---
 
 # Claim ed esito

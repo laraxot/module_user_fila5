@@ -1,18 +1,10 @@
 ---
-<<<<<<< HEAD
 title: "Refactor Completo Campi Città - Modulo User"
-=======
-title: "Refactor Completo Campi "Città" - Modulo User"
->>>>>>> laraxot/dev
 type: concept
 tags: [translation, city, field, refactor]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "translation city field refactor refactor completo campi citta modulo user"
-=======
-qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo user"
->>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

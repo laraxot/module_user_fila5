@@ -2,14 +2,7 @@
 module: theme
 topic: fix-module-structure.sh
 canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "fix structure sh configurazione"
->>>>>>> laraxot/dev
-=======
-qmd: "fix structure sh configurazione"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh

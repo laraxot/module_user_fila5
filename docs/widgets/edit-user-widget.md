@@ -143,11 +143,6 @@ All widget text follows the expanded translation structure:
 ## Related Documentation
 * [User Module Widget Structure](../widgets-structure-user.md)
 * [Widget Translation Guidelines](./translation-guidelines.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Kc0AQF
->>>>>>> laraxot/dev
 * [Filament Widget Conventions](../best-practices/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../best-practices/filament-widgets.md)
@@ -155,23 +150,27 @@ All widget text follows the expanded translation structure:
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
-<<<<<<< HEAD
-=======
 =======
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 =======
-<<<<<<< HEAD
+* [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
+* [Translation System Overview](../../xot/docs/translations.md)
+* [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
+* [Filament Widget Conventions](../best-practices/filament-widgets.md)
+* [Translation System Overview](../../xot/docs/translations.md)
+* [Filament Widget Conventions](../best-practices/filament-widgets.md)
+=======
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 =======
-* [Filament Widget Conventions](../best-practices/filament-widgets.md)
+* [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
-* [Filament Widget Conventions](../best-practices/filament-widgets.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_lzlhek
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+* [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
+=======
+* [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
+* [Translation System Overview](../../xot/docs/translations.md)
+* [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 * [Translation System Overview](../../xot/project_docs/translations.md)

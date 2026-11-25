@@ -11,17 +11,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "organizzativa money"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_fmFYjh
-qmd: "organizzativa money"
-=======
->>>>>>> .merge_file_vdHSz5
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/organizzativa-money-Modules.md

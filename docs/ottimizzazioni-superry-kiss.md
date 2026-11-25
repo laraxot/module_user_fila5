@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "ottimizzazioni superry kiss"
->>>>>>> laraxot/dev
-=======
-qmd: "ottimizzazioni superry kiss"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md

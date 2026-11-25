@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: note
 qmd: "logout event error analisi dellerrore negli"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati

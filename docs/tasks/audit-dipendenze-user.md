@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_bKw3AM
->>>>>>> laraxot/dev
----
-title: "Task: Audit Completo Dipendenze User"
-type: audit
-qmd: "audit dipendenze user task completo"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_WcyHuZ
->>>>>>> laraxot/dev
 # Task: Audit Completo Dipendenze User
 
 **Modulo**: User  

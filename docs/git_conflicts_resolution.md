@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: note
 qmd: "git conflicts resolution risoluzione conflitti user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data

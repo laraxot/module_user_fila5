@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "User: cartelle maiuscole in root modulo — Database/ e Application/ duplicati orfani"
 
-=======
->>>>>>> laraxot/dev
 title: "User: cartelle maiuscole in root modulo: Database/ e Application/ duplicati orfani"
 type: story
 module: User
@@ -24,14 +21,7 @@ supersedes: []
 owned_scope:
   - "laravel/Modules/User/Database/"
   - "laravel/Modules/User/Application/"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "uppercase root dirs database application story"
->>>>>>> laraxot/dev
-=======
-qmd: "uppercase root dirs database application story"
->>>>>>> laraxot/dev
 ---
 
 ## Contesto

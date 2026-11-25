@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "spatie permissions 1"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_YcJzrn
-qmd: "spatie permissions 1"
-=======
->>>>>>> .merge_file_J4TawL
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie_permissions.txt

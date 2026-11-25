@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_TNATFX
->>>>>>> laraxot/dev
 ---
 title: "Implementazione del Logout con Volt"
 type: note
 qmd: "volt logout implementazione"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_Mvpjmn
->>>>>>> laraxot/dev
 # Implementazione del Logout con Volt
 
 ## Il Problema

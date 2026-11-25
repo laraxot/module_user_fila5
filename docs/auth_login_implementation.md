@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: note
 qmd: "auth login implementation implementazione corretta pagina"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Implementazione Corretta della Pagina di Login 
 
 ## Collegamenti correlati

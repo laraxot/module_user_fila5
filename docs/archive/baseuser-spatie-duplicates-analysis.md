@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Analisi Metodi Duplicati in BaseUser.php"
-type: analysis
-qmd: "baseuser spatie duplicates analysis analisi metodi"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Analisi Metodi Duplicati in BaseUser.php
 
 ## Data Analisi

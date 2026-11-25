@@ -1,36 +1,14 @@
 ---
 title: "Contratto — RevokeUserAccessAction"
 type: contract
-<<<<<<< HEAD
-<<<<<<< HEAD
 action: "Modules\User\Actions\Auth\RevokeUserAccessAction"
 tags: [contract, action, passport, account, sicurezza]
 created: 2026-11-24
 updated: 2026-11-24
-=======
-action: "Modules\\User\\Actions\\Auth\\RevokeUserAccessAction"
-owner: User
-status: accepted
-updated: 2026-11-24
-qmd: "RevokeUserAccessAction revoca token Passport refresh token remember token account cancellato SEC-05"
->>>>>>> laraxot/dev
-=======
-action: "Modules\\User\\Actions\\Auth\\RevokeUserAccessAction"
-tags: [contract, action, passport, account, sicurezza]
-created: 2026-11-24
-updated: 2026-11-24
-owner: User
-status: accepted
-qmd: "RevokeUserAccessAction revoca token Passport refresh token remember token account cancellato SEC-05"
->>>>>>> laraxot/dev
 ---
 
 # RevokeUserAccessAction
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Chiamata da `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`.
 Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
 
@@ -48,11 +26,7 @@ Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
 |---|---|---|
 | USER-REVOKE-INV-1 | Revoca tutti i token di accesso non revocati dell'utente, e solo i suoi. | — |
 | USER-REVOKE-INV-2 | Revoca i refresh token di **tutti** i token dell'utente, anche di quelli già revocati. | — |
-<<<<<<< HEAD
 | USER-REVOKE-INV-3 | Il remember token si ruota (nuova stringa casuale), mai si azzera; se era vuoto l'utente non si salva. | — |
-=======
-| USER-REVOKE-INV-3 | Il remember token si ruota (nuova stringa casuale di 60 caratteri), mai si azzera; se era vuoto l'utente non si salva. | — |
->>>>>>> laraxot/dev
 
 Provate da `tests/Feature/Auth/DeletedAccountAccessTest.php` (`revoking access ...`), che richiede un database di test
 migrato: il group si aggiunge quando quei casi girano verdi.
@@ -71,8 +45,6 @@ migrato: il group si aggiunge quando quei casi girano verdi.
 - Non valorizza `deleted_at` e non blocca il login: lo fa il provider di `BuildActiveUserProviderAction`.
 - Non distrugge le sessioni web aperte: cadono alla richiesta successiva perché il provider non trova più l'utente.
 - Non cancella righe: i token restano come registro.
-<<<<<<< HEAD
-=======
 Chiude ogni accesso già concesso a un utente (SEC-05). Codice: `app/Actions/Auth/RevokeUserAccessAction.php:21-57`.
 
 ## Input
@@ -104,6 +76,3 @@ Ordine di esecuzione: lettura degli id dei token attivi, update dei refresh toke
 - Non valorizza né azzera `deleted_at` e non cancella l'utente (il blocco dell'account è del provider, vedi [build-active-user-provider-action](build-active-user-provider-action.md)).
 - Non invalida le sessioni web: cadono alla richiesta successiva perché il provider non trova più l'utente (docblock, righe 16-19).
 - Marker `@contract` e `@see` presenti nel docblock della classe.
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev

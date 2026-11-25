@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_0a8Z3v
->>>>>>> laraxot/dev
 ---
 title: "Translation Convention - User Module"
 type: concept
 qmd: "translation convention user"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_voG9QC
->>>>>>> laraxot/dev
 # Translation Convention - User Module
 
 ## Regola

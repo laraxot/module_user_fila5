@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "path conventions pathconventions user"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_GEs6ka
-qmd: "path conventions pathconventions user"
-=======
->>>>>>> .merge_file_GJOsAR
->>>>>>> laraxot/dev
 ---
 
 # path_conventions - User

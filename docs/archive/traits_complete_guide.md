@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE"
-type: guide
-qmd: "traits complete guide guida completa trait"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -366,7 +352,6 @@ trait HasTeams
 - [Modules/Xot/docs/RELATION_X_USAGE.md](../xot/docs/relation_x_usage.md)
 - [docs/USER_TRAITS_GUIDELINES.md](../../docs/user_traits_guidelines.md)
 
-*Ultimo aggiornamento: 10 giugno 2025 - HasTeams trait completamente corretto e implementato*
 
 ## Analisi del Conflitto con HasTeamsContract
 

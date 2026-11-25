@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_j63hnp
->>>>>>> laraxot/dev
 ---
 title: "Aggiornamento relativo a DoctorResource.php"
 type: note
 qmd: "registration widget update aggiornamento relativo doctorresourcephp"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_XZm3P5
->>>>>>> laraxot/dev
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15

@@ -11,14 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "business logic analysis 1"
->>>>>>> laraxot/dev
-=======
-qmd: "business logic analysis 1"
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/BUSINESS_LOGIC_ANALYSIS-Modules.md

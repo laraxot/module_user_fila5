@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_GS2mkn
->>>>>>> laraxot/dev
 ---
 title: "Debug: Perché logout.blade.php non funziona (Volt + Folio)"
 type: note
 qmd: "volt folio logout debug perché logoutbladephp"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_WCAaNY
->>>>>>> laraxot/dev
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema

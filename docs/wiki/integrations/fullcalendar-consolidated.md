@@ -5,17 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "fullcalendar consolidated"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_hLmfWC
-qmd: "fullcalendar consolidated"
-=======
->>>>>>> .merge_file_TviBYO
->>>>>>> laraxot/dev
 ---
 
 # fullcalendar — Consolidated Documentation

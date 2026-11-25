@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "User Module PRD (Product Requirements Document)"
 type: story
 qmd: "prd user product requirements document"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # User Module PRD (Product Requirements Document)
 
 **Status**: ✅ Finalized

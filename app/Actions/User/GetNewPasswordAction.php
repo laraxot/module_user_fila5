@@ -13,10 +13,7 @@ use Webmozart\Assert\Assert;
 
 /**
  * @see docs/contracts/get-new-password-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/get-new-password-action.md
  */
 class GetNewPasswordAction

@@ -5,14 +5,7 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "structure modulestructure user"
->>>>>>> laraxot/dev
-=======
-qmd: "structure modulestructure user"
->>>>>>> laraxot/dev
 ---
 
 # module_structure - User

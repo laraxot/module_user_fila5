@@ -12,17 +12,7 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "profile migration uuid contract"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_T6KiUc
-qmd: "profile migration uuid contract"
-=======
->>>>>>> .merge_file_NBE8st
->>>>>>> laraxot/dev
 ---
 
 # Profile Migration UUID Contract

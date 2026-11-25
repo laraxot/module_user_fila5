@@ -11,17 +11,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "phpinsights report"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_t2EUuq
-qmd: "phpinsights report"
-=======
->>>>>>> .merge_file_ysjZ4t
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md

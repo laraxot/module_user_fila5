@@ -4,14 +4,7 @@ module: User
 type: note
 status: active
 updated: '2026-11-23'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "logout implementation best practices"
->>>>>>> laraxot/dev
-=======
-qmd: "logout implementation best practices"
->>>>>>> laraxot/dev
 ---
 
 # Best Practices per l'Implementazione del Logout 

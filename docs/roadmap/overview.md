@@ -11,17 +11,7 @@ related:
   - "./02-goals.md"
   - "./02-next.md"
   - "./03-later.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "overview"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_dqzZ5U
-qmd: "overview"
-=======
->>>>>>> .merge_file_dVMoJO
->>>>>>> laraxot/dev
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/00-overview-Modules.md

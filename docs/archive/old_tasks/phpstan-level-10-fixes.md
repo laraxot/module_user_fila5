@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
----
-title: "PHPStan Level 10 Fixes - User Module"
-type: note
-qmd: "phpstan level 10 fixes user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 Fixes - User Module
 
 ## Duplicate Method Declaration Fix

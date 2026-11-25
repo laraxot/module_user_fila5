@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_Mf5hhm
->>>>>>> laraxot/dev
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: note
 qmd: "roadmap archive user 2025"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_MaGTqv
->>>>>>> laraxot/dev
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  

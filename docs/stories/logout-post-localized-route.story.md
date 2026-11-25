@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Logout: POST /{lang}/auth/logout rispondeva 405"
 type: story
 qmd: "logout post localized route story langauthlogout"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Logout: POST /{lang}/auth/logout rispondeva 405
 
 - Stato: done (2026-10-07)

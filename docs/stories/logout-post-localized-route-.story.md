@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_apvhna
->>>>>>> laraxot/dev
 ---
 title: "Logout: POST /{lang}/auth/logout rispondeva 405"
 type: story
 qmd: "logout post localized route story langauthlogout"
 ---
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_aTgmLH
->>>>>>> laraxot/dev
 # Logout: POST /{lang}/auth/logout rispondeva 405
 
 - Stato: done (2026-10-07)

@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_3sZFGf
->>>>>>> laraxot/dev
----
-title: "Indice task - Modulo User"
-type: note
-qmd: "tasks indice task user"
----
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_YC1wkn
->>>>>>> laraxot/dev
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.
@@ -41,5 +24,5 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 ## Collegamenti
 
 - [Roadmap User](../roadmap.md)
-- [README User](../README.md)
+- [README User](../readme.md)
 - [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)

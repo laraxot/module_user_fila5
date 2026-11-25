@@ -86,15 +86,7 @@ function userResourceFormFindByName(array $components, string $name): Field|Entr
         }
 
         $found = userResourceFormFindByName(userResourceFormChildren($component), $name);
-<<<<<<< HEAD
         if (null !== $found) {
-=======
-<<<<<<< .merge_file_fvwLjs
-        if ($found !== null) {
-=======
-        if (null !== $found) {
->>>>>>> .merge_file_axtCvi
->>>>>>> laraxot/dev
             return $found;
         }
     }
@@ -140,10 +132,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has correct form schema', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         /** @var TestCase $this */
         $form = userResourceFormSchema();
 
@@ -167,40 +155,6 @@ describe('User Resource', function (): void {
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-<<<<<<< HEAD
-=======
-=======
-        $form = userResourceFormSchema();
-
-        Assert::assertCount(1, $form);
-        $root = $form[0];
-        Assert::assertInstanceOf(Grid::class, $root);
-
-        $columns = userResourceFormChildren($root);
-        Assert::assertSame(['main', 'side'], array_keys($columns));
-        $main = $columns['main'];
-        $side = $columns['side'];
-        Assert::assertInstanceOf(Grid::class, $main);
-        Assert::assertInstanceOf(Grid::class, $side);
-
-        $mainBlocks = userResourceFormChildren($main);
-        Assert::assertSame(['worker', 'signin', 'access'], array_keys($mainBlocks));
-        $signin = $mainBlocks['signin'];
-        Assert::assertInstanceOf(Section::class, $signin);
-        $signinFields = userResourceFormChildren($signin);
-        Assert::assertInstanceOf(TextInput::class, userResourceFormFindByName($signinFields, 'email'));
-        Assert::assertInstanceOf(TextInput::class, userResourceFormFindByName($signinFields, 'password'));
-
-        $sideBlocks = userResourceFormChildren($side);
-        Assert::assertSame(['status', 'record_info'], array_keys($sideBlocks));
-        $recordInfo = $sideBlocks['record_info'];
-        Assert::assertInstanceOf(Section::class, $recordInfo);
-        Assert::assertInstanceOf(
-            TextEntry::class,
-            userResourceFormFindByName(userResourceFormChildren($recordInfo), 'created_at'),
-        );
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -212,13 +166,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_fvwLjs
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_axtCvi
->>>>>>> laraxot/dev
         $form = userResourceFormSchema();
 
         $section01 = $form['section01'];
@@ -280,58 +227,6 @@ describe('User Resource', function (): void {
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
-<<<<<<< HEAD
-=======
-=======
-        $root = userResourceFormSchema()[0];
-        Assert::assertInstanceOf(Grid::class, $root);
-        $columns = userResourceFormChildren($root);
-
-        $main = $columns['main'];
-        $side = $columns['side'];
-        Assert::assertInstanceOf(Component::class, $main);
-        Assert::assertInstanceOf(Component::class, $side);
-
-        Assert::assertSame(['default' => 1, 'lg' => 8], $main->getColumnSpan());
-        Assert::assertSame(['default' => 1, 'lg' => 4], $side->getColumnSpan());
-        // main + side riempiono esattamente la griglia a 12 colonne del form
-        Assert::assertSame(12, $root->getColumns('lg'));
-    });
-
-    test('user resource name field is optional and falls back to the email on creation', function (): void {
-        $nameField = userResourceFormFieldOnPage('name', new CreateUser);
-
-        Assert::assertInstanceOf(TextInput::class, $nameField);
-        Assert::assertFalse($nameField->isRequired());
-
-        // Un name opzionale e' sicuro solo perche' CreateUser lo riempie con l'email.
-        $mutate = new ReflectionMethod(CreateUser::class, 'mutateFormDataBeforeCreate');
-        $data = $mutate->invoke(new CreateUser, ['name' => '', 'email' => 'new.user@example.com']);
-        Assert::assertIsArray($data);
-        Assert::assertSame('new.user@example.com', $data['name']);
-    });
-
-    test('user resource email field is required', function (): void {
-        $emailField = userResourceFormFieldOnPage('email', new CreateUser);
-
-        Assert::assertInstanceOf(TextInput::class, $emailField);
-        Assert::assertTrue($emailField->isRequired());
-    });
-
-    test('user resource password field is required only on create', function (): void {
-        $onCreate = userResourceFormFieldOnPage('password', new CreateUser);
-        $onEdit = userResourceFormFieldOnPage('password', new EditUser);
-
-        Assert::assertInstanceOf(TextInput::class, $onCreate);
-        Assert::assertInstanceOf(TextInput::class, $onEdit);
-        Assert::assertTrue($onCreate->isRequired());
-        Assert::assertFalse($onEdit->isRequired());
-    });
-
-    test('user resource password field has correct type', function (): void {
-        $passwordField = userResourceFormFindByName(userResourceFormSchema(), 'password');
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
         Assert::assertNotNull($passwordField);
         Assert::assertInstanceOf(TextInput::class, $passwordField);
@@ -339,10 +234,6 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field has unique validation', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
         /** @var TestCase $this */
         $form = userResourceFormSchema();
         $section01 = $form['section01'];
@@ -370,31 +261,6 @@ describe('User Resource', function (): void {
         }
 
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-<<<<<<< HEAD
-=======
-=======
-        $emailField = userResourceFormFieldOnPage('email', new CreateUser);
-        Assert::assertInstanceOf(TextInput::class, $emailField);
-
-        $uniqueRules = array_values(array_filter(
-            $emailField->getValidationRules(),
-            static fn (mixed $rule): bool => $rule instanceof Unique,
-        ));
-
-        Assert::assertCount(1, $uniqueRules);
-        Assert::assertStringContainsString(',email', (string) $uniqueRules[0]);
-    });
-
-    test('user resource created at field shows diff for humans', function (): void {
-        $createdAt = Carbon::now()->subHours(3);
-        $record = UserFactory::new()->makeOne(['created_at' => $createdAt]);
-
-        $createdAtField = userResourceFormFieldOnPage('created_at', new EditUser, $record);
-
-        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-        Assert::assertSame($createdAt->diffForHumans(), $createdAtField->getState());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     });
 
     test('user resource can be instantiated', function (): void {

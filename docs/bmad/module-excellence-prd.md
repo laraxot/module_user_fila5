@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "PRD — User module: percorso verso la perfezione assoluta"
 
-=======
->>>>>>> laraxot/dev
 title: "PRD: User module: percorso verso la perfezione assoluta"
 type: prd
 module: User
@@ -17,14 +14,7 @@ related:
   - ../purpose.md
   - ../permissions.md
   - ../index.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "excellence prd user percorso verso perfezione"
->>>>>>> laraxot/dev
-=======
-qmd: "excellence prd user percorso verso perfezione"
->>>>>>> laraxot/dev
 ---
 
 # PRD: User module — percorso verso la perfezione assoluta

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
 title: "Architecture — Audit UI/Filament modulo User (epic 12)"
 
-=======
->>>>>>> laraxot/dev
 title: "Architecture: Audit UI/Filament modulo User (epic 12)"
 type: architecture
 module: User
@@ -17,14 +14,7 @@ related:
   - ./livewire-widget-architecture.md
   - ./architecture.md
   - docs/wiki/rules pers. XotBase / lang
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "filament ux architecture audit uifilament user"
->>>>>>> laraxot/dev
-=======
-qmd: "filament ux architecture audit uifilament user"
->>>>>>> laraxot/dev
 ---
 
 # Architecture: epic 12 — gap UI/Filament modulo User

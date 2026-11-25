@@ -5,22 +5,7 @@ type: overview
 created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
-<<<<<<< HEAD
   - "./agents.md"
-=======
-<<<<<<< HEAD
-  - "./AGENTS.md"
-=======
-<<<<<<< HEAD
-  - "./agents.md"
-<<<<<<< .merge_file_rBIu5L
-=======
-=======
-  - "./AGENTS.md"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_aJeEVt
->>>>>>> laraxot/dev
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
@@ -28,17 +13,7 @@ related:
   - "./index.md"
   - "./log.md"
   - "./socialite-architecture.md"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 qmd: "overview wiki"
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_rBIu5L
-qmd: "overview wiki"
-=======
->>>>>>> .merge_file_aJeEVt
->>>>>>> laraxot/dev
 ---
 
 # User Wiki Overview

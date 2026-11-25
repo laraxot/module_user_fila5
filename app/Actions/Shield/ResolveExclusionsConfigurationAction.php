@@ -13,10 +13,7 @@ use Spatie\QueueableAction\QueueableAction;
  * getExcludedResources, getExcludedPages, getExcludedWidgets
  *
  * @see docs/contracts/resolve-exclusions-configuration-action.md
-<<<<<<< HEAD
-=======
  *
->>>>>>> laraxot/dev
  * @contract docs/contracts/resolve-exclusions-configuration-action.md
  */
 class ResolveExclusionsConfigurationAction
