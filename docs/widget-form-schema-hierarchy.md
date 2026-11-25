@@ -8,7 +8,7 @@ created: 2026-08-18
 updated: 2026-08-18
 qmd: "widget user getFormSchema getFormSchemaOld XotBaseWidget XotBaseSchemaWidget form vuoto"
 related:
-  - "../../../../docs/wiki/filament/xotbaseresource-formschema-old-pattern.md"
+  - "../../../../docs/wiki/filament-resource-patterns.md"
   - "../../../../docs/chat/formschema-widget-hierarchy-regression.md"
 ---
 
@@ -58,5 +58,5 @@ Niente `mixed` aggiunto. Censimento storico: [formschema-widget-hierarchy-regres
 
 ## Riferimenti
 
-- [Pattern getFormSchema / getFormSchemaOld](../../../../docs/wiki/filament/xotbaseresource-formschema-old-pattern.md)
+- [Pattern getFormSchema / getFormSchemaOld](../../../../docs/wiki/filament-resource-patterns.md)
 - [Story 5.7 — PHPStan Modules green](../../Xot/docs/stories/5.7.phpstan-modules-green.story.md)

@@ -102,4 +102,4 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User --no-progres
 
 - Stesso pattern modulo UI: [UI git-push-lfs-missing-objects](../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md)
 - Inventario conflitti: [git-merge-conflict-inventory](./git-merge-conflict-inventory.md)
-- Prevenzione push monorepo: [push-error-prevention](../../../../../docs/wiki/git/push-error-prevention.md)
+- Prevenzione push monorepo: [push-error-prevention](../../../../../docs/wiki/git-push-error-prevention.md)
