@@ -223,7 +223,7 @@ describe('User Resource', function (): void {
         Assert::assertSame('new.user@example.com', $data['name']);
     });
 
-    test('user resource email field is required', function (): void {
+    test('user resource email field is required on CreateUser page', function (): void {
         $emailField = userResourceFormFieldOnPage('email', new CreateUser);
 
         Assert::assertInstanceOf(TextInput::class, $emailField);
@@ -255,7 +255,7 @@ describe('User Resource', function (): void {
         Assert::assertInstanceOf(TextInput::class, $nameField);
     });
 
-    test('user resource email field is required', function (): void {
+    test('user resource email field exists in schema', function (): void {
         /** @var TestCase $this */
         $form = userResourceFormSchema();
         $section01 = $form['section01'];
@@ -270,7 +270,7 @@ describe('User Resource', function (): void {
         Assert::assertInstanceOf(TextInput::class, $emailField);
     });
 
-    test('user resource password field is required only on create', function (): void {
+    test('user resource password field exists in schema', function (): void {
         /** @var TestCase $this */
         $form = userResourceFormSchema();
         $section01 = $form['section01'];
@@ -333,7 +333,7 @@ describe('User Resource', function (): void {
         Assert::assertInstanceOf(TextInput::class, $emailField);
     });
 
-    test('user resource created at field shows diff for humans', function (): void {
+    test('user resource created at field exists in schema', function (): void {
         /** @var TestCase $this */
         $form = userResourceFormSchema();
         $section02 = $form['section02'];

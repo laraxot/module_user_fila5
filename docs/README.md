@@ -17,7 +17,7 @@ Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi 
 | Area | Dove |
 |------|------|
 | Story BMAD del modulo | [stories/](./stories/) · [bmad/stories/](./bmad/stories/) |
-| Audit qualita' corrente | [stories/audit-qualita.story.md](./stories/audit-qualita.story.md) |
+| Audit qualita' corrente | [stories/audit-qualita.story.md](stories/0084-audit-qualita.story.md) |
 | Wiki (concetti, decisioni, troubleshooting) | [wiki/](./wiki/) |
 | Roadmap | [roadmap.md](./roadmap.md) |
 | Storico / documenti superati | [legacy/](./legacy/) |
@@ -85,7 +85,7 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 | Ruolo | Path |
 |-------|------|
 | Procedura / saturazione host | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
-| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md) |
+| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](stories/0130-phpstan-zero-errors-user.story.md) |
 | Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
 | Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
 
