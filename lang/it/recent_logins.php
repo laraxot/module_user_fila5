@@ -21,12 +21,19 @@ return [
             'description' => '',
         ],
         'login_at' => [
+            'label' => 'Ora accesso',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< .merge_file_HyiAME
             'label' => 'Ora accesso',
         ],
         'ip_address' => [
+=======
+        ],
+        'ip_address' => [
+            'label' => 'Indirizzo IP',
+>>>>>>> .merge_file_xbHVYA
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -64,6 +71,10 @@ return [
             'description' => '',
         ],
         'user' => [
+<<<<<<< .merge_file_HyiAME
+=======
+            'label' => 'Utente',
+>>>>>>> .merge_file_xbHVYA
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

@@ -32,10 +32,17 @@ _Fonte: `00-index-indice-documentazione-modulo-user.md`_
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
+<<<<<<< .merge_file_CkEJnT
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-.md.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EA
+=======
+- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-.md.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code)).
+
+## 👤 **Profilo & Moderazione**
+- 🧑‍🎨 **[Profile Management](./profile-management.md)** - G
+>>>>>>> .merge_file_pQm64f
 
 ## 📚 **Indice Documentazione Modulo User**
 
@@ -60,10 +67,17 @@ _Fonte: `00-index.md`_
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
+<<<<<<< .merge_file_CkEJnT
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati ute
+=======
+- 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-legacy-folders-code)).
+
+## 👤 **Profilo & Moderazione**
+- 🧑‍🎨 **[Profile Management](./profile-management.md
+>>>>>>> .merge_file_pQm64f
 
 ## Indice BMAD — User
 
@@ -78,7 +92,11 @@ _Fonte: `bmad/00-index.md`_
 - [Epic e story](./epics.md)
 - [Decision log](./decision-log.md)
 - [Brainstorming](./brainstorming.md)
+<<<<<<< .merge_file_CkEJnT
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
+=======
+- [Story audit modulo](stories/0014-module-bmad-audit-2.story.md)
+>>>>>>> .merge_file_pQm64f
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)
 

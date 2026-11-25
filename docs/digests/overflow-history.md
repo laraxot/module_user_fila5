@@ -7,17 +7,73 @@ qmd: "digest ceiling 100 overflow-history"
 
 # Overflow history (ceiling 100)
 
+<<<<<<< .merge_file_3g8mQA
 Overflow force-cap: 1158 file oltre target 100.
 
 ### `-integration/eav.md` — eav
+=======
+Overflow force-cap: 992 file oltre target 100.
+
+### `2fa-guide.md` — 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
+
+
+# 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
+
+**Versione**: 1.0  
+**Status**: 🚧 60% Implementato  
+**Data**: 2025-10-01  
+
+---
+
+## 🎯 OVERVIEW
+
+Implementazione completa del sistema di autenticazione a due fattori (2FA) per FixCity utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
+
+---
+
+## 🏗️ ARCHITETTURA
+
+### Componenti Principali
+
+```
+
+### `2fa.md` — 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
+
+
+# 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
+
+**Versione**: 1.0  
+**Status**: 🚧 60% Implementato  
+
+---
+
+## 🎯 OVERVIEW
+
+Implementazione completa del sistema di autenticazione a due fattori (2FA) per FixCity utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
+
+---
+
+## 🏗️ ARCHITETTURA
+
+### Componenti Principali
+
+```
+User 2FA System
+
+### `_integration/eav.md` — eav
+>>>>>>> .merge_file_tfGS8i
 
 
 # eav
 
 <!-- Contenuto migrato da _docs/eav.txt -->
 
+<<<<<<< .merge_file_3g8mQA
 https://laraveldaily.com/post/laravel-custom-fields-json-eav-model-same-table 
 
+=======
+https://laraveldaily.com/post/laravel-custom-fields-json-eav-model-same-table
+>>>>>>> .merge_file_tfGS8i
 
 https://github.com/yemenpoint/filament-custom-fields
 
@@ -29,10 +85,18 @@ https://github.com/rinvex/laravel-attributes
 
 https://github.com/spatie/laravel-schemaless-attributes
 
+<<<<<<< .merge_file_3g8mQA
 
 //---- >getEmailFormComponent,getPasswordFormComponent 
 
 ### `-integration/filament.md` — filament
+=======
+//---- >getEmailFormComponent,getPasswordFormComponent
+---
+https://laraveldaily.com/post/filament-registration-form-extra-fields-choose-user-role
+
+### `_integration/filament.md` — filament
+>>>>>>> .merge_file_tfGS8i
 
 
 # filament
@@ -44,9 +108,13 @@ https://github.com/ryangjchandler/filament-profile
 
 https://github.com/andrewdwallo/filament-companies
 
+<<<<<<< .merge_file_3g8mQA
 
 
 ### `-integration/gdpr.md` — gdpr
+=======
+### `_integration/gdpr.md` — gdpr
+>>>>>>> .merge_file_tfGS8i
 
 
 # gdpr
@@ -58,6 +126,7 @@ https://github.com/scify/laravel-cookies-consent
 
 https://codebrisk.com/blog/make-your-laravel-app-compliant-with-the-eu-gdpr-cookie-law
 
+<<<<<<< .merge_file_3g8mQA
 
 pagine di esempio
 https://forge.laravel.com/data-processing-agreement
@@ -70,6 +139,20 @@ https://github.com/statikbe/laravel-cookie-consent
 
 
 ### `-integration/json.md` — json
+=======
+pagine di esempio
+https://forge.laravel.com/data-processing-agreement
+
+//------------ COOKIE LAW
+https://github.com/spatie/laravel-cookie-consent
+https://github.com/statikbe/laravel-cookie-consent
+
+///-------------------- pagina esempio privacy-policy
+https://laravel.io/privacy
+https://laravelarticle.com/page/privacy-policy
+
+### `_integration/json.md` — json
+>>>>>>> .merge_file_tfGS8i
 
 
 # json
@@ -78,8 +161,12 @@ https://github.com/statikbe/laravel-cookie-consent
 
 https://medium.com/@prevailexcellent/how-to-handle-json-data-in-laravel-with-eloquent-and-json-columns-complete-guide-2023-480741120059
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `-integration/links.md` — links
+=======
+### `_integration/links.md` — links
+>>>>>>> .merge_file_tfGS8i
 
 
 # links
@@ -88,6 +175,7 @@ https://medium.com/@prevailexcellent/how-to-handle-json-data-in-laravel-with-elo
 
 https://packagist.org/packages/althinect/filament-spatie-roles-permissions
 
+<<<<<<< .merge_file_3g8mQA
 
 https://github.com/chiiya/filament-access-control
 
@@ -103,6 +191,31 @@ Easily Add Face Authentication to Your Laravel Applications
 https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applications
 
 ### `-integration/payment.md` — payment
+=======
+https://github.com/chiiya/filament-access-control
+
+use Filament\Facades\Filament;
+return Filament::auth()->user()->can(static::getPermissionName());
+
+https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
+
+Easily Add Face Authentication to Your Laravel Applications
+https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applications
+
+----- molti pacchetti interessanti --
+https://codebrisk.com/blog/categories/laravel-packages
+
+### `_integration/passport.md` — passport
+
+
+# passport
+
+<!-- Contenuto migrato da _docs/passport.txt -->
+
+https://medium.com/@mrcyna/laravel-passport-and-microservice-architecture-ef6be7fcc79f
+
+### `_integration/payment.md` — payment
+>>>>>>> .merge_file_tfGS8i
 
 
 # payment
@@ -111,8 +224,12 @@ https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applic
 
 https://bunhere.medium.com/whats-a-laravel-saas-boilerplate-bd05fe616433
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `-integration/phpstan.md` — phpstan
+=======
+### `_integration/phpstan.md` — phpstan
+>>>>>>> .merge_file_tfGS8i
 
 
 # phpstan
@@ -121,8 +238,12 @@ https://bunhere.medium.com/whats-a-laravel-saas-boilerplate-bd05fe616433
 
 https://staabm.github.io/2024/01/15/phpstan-require-extends-implements.html
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `-integration/profile.md` — profile
+=======
+### `_integration/profile.md` — profile
+>>>>>>> .merge_file_tfGS8i
 
 
 # profile
@@ -131,7 +252,11 @@ https://staabm.github.io/2024/01/15/phpstan-require-extends-implements.html
 
 https://learn.userfrosting.com/recipes/extending-the-user-model
 
+<<<<<<< .merge_file_3g8mQA
 ### `-integration/sso.md` — sso
+=======
+### `_integration/sso.md` — sso
+>>>>>>> .merge_file_tfGS8i
 
 
 # sso
@@ -140,7 +265,11 @@ https://learn.userfrosting.com/recipes/extending-the-user-model
 
 https://fusionauth.io/blog/single-sign-on-laravel-fusionauth
 
+<<<<<<< .merge_file_3g8mQA
 ### `-integration/stats.md` — stats
+=======
+### `_integration/stats.md` — stats
+>>>>>>> .merge_file_tfGS8i
 
 
 # stats
@@ -149,8 +278,12 @@ https://fusionauth.io/blog/single-sign-on-laravel-fusionauth
 
 https://github.com/spatie/filament-simple-stats/blob/main/src/SimpleStat.php
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `-integration/tailwind.md` — tailwind
+=======
+### `_integration/tailwind.md` — tailwind
+>>>>>>> .merge_file_tfGS8i
 
 
 # tailwind
@@ -159,14 +292,19 @@ https://github.com/spatie/filament-simple-stats/blob/main/src/SimpleStat.php
 
 https://tailwindflex.com/@sophia-baker/responsive-registration-form
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `-integration/tips.md` — tips
+=======
+### `_integration/tips.md` — tips
+>>>>>>> .merge_file_tfGS8i
 
 
 # tips
 
 <!-- Contenuto migrato da _docs/tips.txt -->
 
+<<<<<<< .merge_file_3g8mQA
 
 https://medium.com/@prevailexcellent/deep-dive-into-eloquent-40-rarely-used-eloquent-orm-methods-every-laravel-developer-must-know-9c75b58f456b
 
@@ -239,6 +377,10 @@ Implementazione completa del sistema di autenticazione a due fattori (2FA) per F
 ```
 User 2FA System
 
+=======
+https://medium.com/@prevailexcellent/deep-dive-into-eloquent-40-rarely-used-eloquent-orm-methods-every-laravel-developer-must-know-9c75b58f456b
+
+>>>>>>> .merge_file_tfGS8i
 ### `accessor-delegation-pattern.md` — Accessor Delegation Pattern (SACRO)
 
 
@@ -327,7 +469,11 @@ Completed decomposition of legacy `Support\Utils` into 6 granular QueueableActio
 
 ### Action Groups (by actor/context)
 
+<<<<<<< .merge_file_3g8mQA
 1. **ResolveShieldResourceConfigurationAction**
+=======
+1. **GetShieldResourceConfigurationAction**
+>>>>>>> .merge_file_tfGS8i
 
 ### `actions.md` — Linee guida per l'uso di Spatie Queueable Action
 
@@ -439,6 +585,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 
+<<<<<<< .merge_file_3g8mQA
 ### `agent-edit-discipline.md` — agent-edit-discipline
 
 
@@ -449,6 +596,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/agent-edit-d
 
 See canonical documentation: ../../../Themes/docs/shared-components/ai-methodologies.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `analisi-metodi-duplicati.md` — Analisi Metodi Duplicati - Modulo User
 
 
@@ -640,11 +789,14 @@ The original implementation had these issues:
 
 ## Solution Arc
 
+<<<<<<< .merge_file_3g8mQA
 ### `architecture/user-gdpr-oupling.md` — user-gdpr-oupling
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-gdpr-decoupling.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `auth-blade-structure.md` — Struttura delle Blade di Autenticazione con Volt
 
 
@@ -737,6 +889,32 @@ Le traduzioni per i provider social **devono** usare la chiave `auth.social.*`:
     'github' => 'GitHub',
     'microsoft' => 'Microsoft',
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `auth-widget-rules.md` — Regole per Widget di Autenticazione
+
+
+# Regole per Widget di Autenticazione
+
+## ERRORE CRITICO DA NON RIPETERE MAI
+
+**NON usare mai componenti Blade senza verificarne l'esistenza nella documentazione ufficiale!**
+
+### Componenti Filament NON Disponibili
+
+❌ **NON USARE MAI**:
+- `x-filament::layouts.card`
+- `x-filament::section`
+- `x-filament::input.wrapper`
+- `x-filament::input`
+- `x-filament::button`
+- `x-filament::link`
+
+### Componenti Disponibili nel Progetto
+
+✅ **USA QUESTI**:
+
+>>>>>>> .merge_file_tfGS8i
 ### `auth-widget.md` — Regole per Widget di Autenticazione
 
 
@@ -1101,11 +1279,14 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class UserStatsWidget extends XotBaseWidget
 {
 
+<<<<<<< .merge_file_3g8mQA
 ### `best-practices/folio-volt-best-practices.md` — folio-volt-best-practices
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `best-practices/migration-best-practices.md` — MIGRATION_BEST_PRACTICES - Modulo User
 
 
@@ -1175,6 +1356,32 @@ We use `spatie/laravel-queueable-action` instead of traditional Service classes 
 
 ### 2. Implementation
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `best-practices/routing-best-practices.md` — Best Practices per il Routing in Architettura Volt + Folio + Filament
+
+
+# Best Practices per il Routing in Architettura Volt + Folio + Filament
+
+## Il Principio Fondamentale
+
+In un'architettura che utilizza Volt + Folio + Filament, il routing tradizionale attraverso `web.php` è sostituito da un approccio più moderno e dichiarativo. Questo documento spiega come gestire correttamente il routing in questa architettura.
+
+## I Tre Livelli del Routing
+
+### 1. Filament (Admin Panel)
+```php
+// ✅ CORRETTO: Routing dichiarativo nelle risorse Filament
+class UserResource extends XotBaseResource
+{
+    // Il routing è gestito automaticamente da Filament
+    // Non è necessario definire rotte in web.php
+}
+
+// ❌ ERRATO: Definire rotte in web.php per Filament
+Route::get('/admin/users', [UserController::class, 'index']);
+
+>>>>>>> .merge_file_tfGS8i
 ### `best-practices/testing-rules.md` — Testing Rules Summary
 
 
@@ -1198,6 +1405,32 @@ We use `spatie/laravel-queueable-action` instead of traditional Service classes 
 - PHPStan usa configurazione da `phpstan.neon` (non passare livello come parametro)
 - Script di conversione vanno in `bashscripts/`, non nella root di Laravel
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `best-practices/translation-best-practices.md` — Best Practices per le Traduzioni
+
+
+# Best Practices per le Traduzioni
+
+## Principi Generali
+
+1. **Coerenza**: Mantenere una nomenclatura coerente per le chiavi di traduzione
+2. **Completezza**: Tradurre tutte le chiavi in tutte le lingue supportate
+3. **Struttura**: Mantenere una struttura gerarchica chiara e logica
+4. **Manutenibilità**: Organizzare le traduzioni in file separati per ogni contesto
+5. **Riusabilità**: Evitare duplicazioni di chiavi e contenuti
+
+## Struttura dei File
+
+### Organizzazione
+
+- `lang/{locale}/auth.php`: Autenticazione e autorizzazione
+- `lang/{locale}/registration.php`: Registrazione utenti
+- `lang/{locale}/change_password.php`: Gestione password
+- `lang/{locale}/password.php`: Configurazione password
+- `lang/{locale}/user.php`: Gestione utenti
+
+>>>>>>> .merge_file_tfGS8i
 ### `best-practices.md` — Best Practices Migrazioni XotBaseMigration
 
 # Best Practices Migrazioni XotBaseMigration
@@ -1246,6 +1479,32 @@ Nel progetto , **abbiamo l'obbligo di utilizzare i componenti Blade forniti da F
 > La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/project_docs/blade/component-registration.md).
 Nel progetto <nome progetto>, **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti pe
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `bmad/0001-user-audit-improvements.story.md` — BMAD Story: User Module Audit Improvements
+
+
+# BMAD Story: User Module Audit Improvements
+
+**Story ID**: USER-2026-AUDIT-001  
+**Status**: Ready for Backlog  
+**Priority**: High  
+**Epic**: Technical Debt — Code Quality & Performance  
+**Team**: Backend + Infrastructure  
+
+---
+
+## Title
+**User module audit improvements: fix critical architecture and performance issues**
+
+---
+
+## User Story
+
+As a **developer maintaining the User module**,  
+I want to **fix architectural violations and performance bottlenecks**,  
+
+>>>>>>> .merge_file_tfGS8i
 ### `bmad/advantages-filament-only.md` — Vantaggi di avere SOLO Filament widget nel chrome del panel
 
 
@@ -1574,6 +1833,10 @@ Collegare ogni decisione a story BMAD, mantenere il second brain e chiudere i du
 
 ### `bmad/epics.md` — User Module — Epics for Perfection
 
+<<<<<<< .merge_file_3g8mQA
+=======
+
+>>>>>>> .merge_file_tfGS8i
 # User Module — Epics for Perfection
 
 ---
@@ -1593,7 +1856,10 @@ status: draft
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "user module   epics for perfection user"
+<<<<<<< .merge_file_3g8mQA
 ---
+=======
+>>>>>>> .merge_file_tfGS8i
 
 ### `bmad/filament-blueprint.md` — Scopo
 
@@ -1966,6 +2232,7 @@ bmad-create-architecture  # Architettura DB separata
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
 [![FixCity Platform](https://im
 
+<<<<<<< .merge_file_3g8mQA
 ### `bmad/readme-fullcalendar-scheduler.md` — FullCalendar Scheduler Documentation - README
 
 
@@ -1989,6 +2256,8 @@ Questa documentazione è stata creata per risolvere i problemi comuni relativi a
 - **200+ righe** di soluzioni immediate
 - Fix rapidi per errori comuni
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `bmad/readme-new.md` — User Module - Authentication & Authorization
 
 
@@ -2072,6 +2341,7 @@ BMAD STATUS — User
 - PHPStan: 0 errori (OK)
 - Wiki aggiornata: docs/wiki/scope.md (scopo: utenti/profili/auth/GDPR decoupling)
 
+<<<<<<< .merge_file_3g8mQA
 ### `bmad/stories/01.35.profile-migration-deleted.story.md` — Cancellazione migrazione errata per profiles (User)
 
 
@@ -2196,6 +2466,174 @@ tags: [docs, user, bmad]
 # 10.4: residui Livewire Cluster C
 
 ## Perche'
+=======
+### `bmad/stories/0001-profile-migration-deleted.story.md` — Cancellazione migrazione errata per profiles (User)
+
+# Cancellazione migrazione errata per profiles (User)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0002-citizen-registration-email.story.md` — Registrazione cittadino: UX accessibile e verifica email locale
+
+# Registrazione cittadino: UX accessibile e verifica email locale
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0005-continuazione-domani.story.md` — Continuazione domani
+
+# Continuazione domani
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0006-docs-consolidate-redundant-md.story.md` — Docs consolidate redundant md — User
+
+# Docs consolidate redundant md — User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0007-docs-md-filename-date-debt.story.md` — Docs md filename date debt — User
+
+# Docs md filename date debt — User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0008-docs-zen-conventions.story.md` — User: bonifica docs `.md` (lane B swarm docs-zen)
+
+# User: bonifica docs `.md` (lane B swarm docs-zen)
+
+## Context and Problem Statement
+
+`laravel/Modules/User/docs` era la cartella docs piu' inquinata del progetto (3207 `.md`):
+annidamenti generati da bug, ~480 stub "See canonical documentation" verso
+`Themes/docs/shared-components/*` (percorso **mai esistito**), coppie `snake_case`/kebab,
+template prodotto fabbricati, frontmatter YAML rotti. Rumore per QMD e per gli agenti.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+### `bmad/stories/0009-english-login-localization.story.md` — Login inglese senza fallback italiano
+
+# Login inglese senza fallback italiano
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0010-livewire-residual-conversion-cluster-c.story.md` — 10.4 — residui Livewire Cluster C
+
+# 10.4 — residui Livewire Cluster C
+
+## Context and Problem Statement
+>>>>>>> .merge_file_tfGS8i
 
 Epic 9 done (SuperAdmin widget ecc.), ma restano componenti HTTP Livewire
 da convertire/eliminare verso il target "solo Filament widget" — vantaggi
@@ -2204,6 +2642,7 @@ da convertire/eliminare verso il target "solo Filament widget": vantaggi
 documentati in `advantages-filament-only.md` (SPOF 500 su /admin, doppia
 manutenzione, no `canView()`/lazy).
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `bmad/stories/login-validation-feedback.story.md` — Feedback delle credenziali di accesso errate
 
@@ -2407,12 +2846,260 @@ Move the `services.*` → `user.social-providers.*` credential merge from `UserS
 # Story: team_permissions migration on SQLite
 
 ## Context
+=======
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+### `bmad/stories/0011-login-validation-feedback.story.md` — Feedback delle credenziali di accesso errate
+
+# Feedback delle credenziali di accesso errate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0012-module-bmad-audit.story.md` — Story — User: baseline BMAD
+
+# Story — User: baseline BMAD
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0015-navigation-translations-audit.story.md` — Audit traduzioni `.navigation` — modulo User
+
+# Audit traduzioni `.navigation` — modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0017-passport-oauth-docs-dedup-2.story.md` — Story — Dedup documentazione "passport/oauth cluster"
+
+# Story — Dedup documentazione "passport/oauth cluster"
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0021-phpstan-filter-form-schema.story.md` — Scopo
+
+# Scopo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0023-phpstan-l10-user-lang-fix-2.story.md` — PHPStan L10 User + Lang Modules Fix
+
+# PHPStan L10 User + Lang Modules Fix
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0025-phpstan-l10-user-phase2-2.story.md` — PHPStan L10 User Module — Phase 2
+
+# PHPStan L10 User Module — Phase 2
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0027-phpstan-zero-merge-markers-user.story.md` — PHPStan zero + merge markers — User
+
+# PHPStan zero + merge markers — User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0028-pulse-login-backfill-key-hash.story.md` — Pulse login metric: fix schema key_hash e backfill
+
+# Pulse login metric: fix schema key_hash e backfill
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0029-socialite-provider-boundary.story.md` — Story: move Socialite config to SocialiteServiceProvider
+
+# Story: move Socialite config to SocialiteServiceProvider
+
+## Context and Problem Statement
+
+The User module already has a dedicated `SocialiteServiceProvider`, but `UserServiceProvider` still contains Socialite-specific configuration merge logic. This blurs provider responsibilities and makes the generic User bootstrap aware of OAuth provider details.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/0030-team-permissions-sqlite-migration.story.md` — Story: team_permissions migration on SQLite
+
+# Story: team_permissions migration on SQLite
+
+## Context and Problem Statement
+>>>>>>> .merge_file_tfGS8i
 
 The `2026_08_06_150000_create_team_permissions_table` migration queried
 MySQL's `information_schema.table_constraints` while running against the
 project's SQLite test/development database. SQLite consequently aborted the
 migration before the schema could be completed.
 
+<<<<<<< .merge_file_3g8mQA
 ## Acceptance criteria
 
 - [x] Foreign-key existence checks use Laravel's connection-independent schema
@@ -2440,6 +3127,65 @@ Come utente del modulo User, voglio che le Resource basate su `XotBaseResource` 
 ## Dipendenza
 
 La regola comune e il censimento fleet sono definiti in `laravel/Modules/Xot/docs/bmad/stories/xot-base-resource-navigation-icon-translation.story.md`.
+=======
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+### `bmad/stories/0038-xot-base-resource-navigation-icon-translation.story.md` — Story
+
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `bmad/stories/continuazione-domani.md` — User — Continuazione Domani
+
+# User — Continuazione Domani
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `bmad/tech-spec-superadmin-widget.md` — Project context: SuperAdmin nel user menu
 
@@ -2486,6 +3232,10 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 
 ### `bmad/user-architecture-gap-analysis.md` — User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
+<<<<<<< .merge_file_3g8mQA
+=======
+
+>>>>>>> .merge_file_tfGS8i
 # User — Analisi architetturale e gap (BMAD, 2026-09-22)
 
 ---
@@ -2505,7 +3255,10 @@ Ricerca a sola lettura condotta sul modulo `laravel/Modules/User` (Laravel 13 + 
 ## 1. Inventario sintetico
 
 | Area | Conteggio | Note |
+<<<<<<< .merge_file_3g8mQA
 |---|---|---|
+=======
+>>>>>>> .merge_file_tfGS8i
 
 ### `bmad/ux-design.md` — UX design: emblema hero nel user menu
 
@@ -2794,6 +3547,32 @@ public function currentTeam(): BelongsTo
     }
 
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `business-logiceepive.md` — User Module - Business Logic Deep Dive
+
+
+# User Module - Business Logic Deep Dive
+
+## 🎯 Module Overview
+
+Il modulo User è il foundation layer per l'authentication, authorization e multi-tenancy dell'intera applicazione. Gestisce utenti, ruoli, permessi, team e tenant con integrazione sociale OAuth.
+
+## 🏗️ Core Architecture
+
+### Authentication Layer
+```
+BaseUser (Authenticatable)
+├── HasApiTokens (Passport)
+├── MustVerifyEmail
+├── HasFactory
+├── Notifiable
+├── HasRoles (Spatie)
+├── HasPermissions (Spatie)
+├── HasTeams (Custom)
+├── HasMedia (Spatie)
+
+>>>>>>> .merge_file_tfGS8i
 ### `case-conflicts.md` — Case-Insensitive File Conflicts
 
 
@@ -2831,11 +3610,14 @@ cd laravel && find Modules/User -name '*.php' -not -path '*/vendor/*' \
   | awk '{print tolower($0)}' | sort | uniq -d
 ```
 
+<<<<<<< .merge_file_3g8mQA
 ### `cases.md` — cases
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `chartjsatalabels-user-integration.md` — Chart.js Datalabels Plugin for User Module Charts
 
 
@@ -2899,6 +3681,7 @@ Questo documento elenca le operazioni **obbligatorie** che il cluster `Passport`
 | --- | --- | --- |
 | Creazione Client standard | Docs § "Managing Clients" | Page `ListOauthClients` → header action che richiama `CreateClientAction
 
+<<<<<<< .merge_file_3g8mQA
 ### `code-conventions-2.md` — code-conventions-2
 
 
@@ -2907,6 +3690,37 @@ See canonical documentation: ../../Geo/docs/sushi-command-2.md
 ### `code-conventions.md` — code-conventions
 
 
+=======
+### `code-conventions.md` — code conventions
+
+
+# code conventions
+
+Placeholder vuoto: nessun contenuto disponibile. File preservato per compatibilita' dei link storici; se il documento serve, ripopolare o consolidare nel canonico di competenza.
+
+### `code-optimization-analysis.md` — user module code and documentation optimization analysis
+
+
+# user module code and documentation optimization analysis
+
+## comprehensive analysis
+
+### current state overview
+- **documentation files**: 390 md files with significant duplication
+- **code files**: complex authentication and user management system
+- **structural issues**: mixed patterns, duplicate functionality
+- **maintenance challenges**: difficult to navigate authentication flows
+
+## documentation optimization
+
+### documentation problems identified
+1. **authentication duplication**: 18+ files covering logout functionality
+2. **mixed patterns**: underscore and hyphen naming conventions
+3. **scattered best practices**: security guidelines across multiple files
+4. **outdated content**: mixed current and legacy approaches
+
+### documentation optimization strategy
+>>>>>>> .merge_file_tfGS8i
 
 ### `code-optimization.md` — user module code and documentation optimization analysis
 
@@ -2977,11 +3791,14 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 ## Confini
 
+<<<<<<< .merge_file_3g8mQA
 ### `codex-error-fix.md` — codex-error-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/codex-error-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `commands/assign-module-command.md` — AssignModuleCommand - Gestione Moduli Utente
 
 
@@ -3127,6 +3944,7 @@ mirror, va creato in Xot prima di usarlo qui, mai come scorciatoia nel modulo.
 
 Non pre-caricare questo file: leggi la fonte canonica solo quando il task lo richiede.
 
+<<<<<<< .merge_file_3g8mQA
 ### `confidence-guidelines.md` — Massimizzare il livello di confidenza
 
 
@@ -3140,6 +3958,8 @@ Non pre-caricare questo file: leggi la fonte canonica solo quando il task lo ric
 6. **Documentazione**: mantieni aggiornati doc e changelog.
 7. **Rollback rapido**: feature flags e versioni per tornare indietro.
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `conflicts-analysis.md` — Analisi Conflitti - module.json
 
 
@@ -3310,7 +4130,11 @@ Costruisce l'URL assoluto del link di reset password inserito nell'email (SEC-00
 
 # ConsumeAuthSubmissionSlotAction
 
+<<<<<<< .merge_file_3g8mQA
 Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR](../adr/auth-submission-throttle-before-validation.md).
+=======
+Sorgente: `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php`. Perché: [ADR](../adr/0001-auth-submission-throttle-before-validation.md).
+>>>>>>> .merge_file_tfGS8i
 
 ## Input
 
@@ -3598,6 +4422,54 @@ Restituisce la lista dei domini ammessi al login SSO da `config('socialite.domai
 | `SOCIALITE-ALLOW-INV-1` | Una stringa diventa lista di un elemento. | `execute()`, ramo `is_string` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:31` |
 | `SOCIALITE-ALLOW-INV-2` | Elementi non scalari né `Stringable` sono scartati; resta una lista indicizzata. | `execute()`, `array_filter` | `SocialiteUtil
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `contracts/get-exclusions-configuration-action.md` — GetExclusionsConfigurationAction
+
+
+# GetExclusionsConfigurationAction
+
+Legge da `config/filament-shield.php` la configurazione delle esclusioni (generale, risorse, pagine, widget) e la normalizza. Codice: `app/Actions/Shield/GetExclusionsConfigurationAction.php`.
+
+## Input
+
+- Nessuno in `execute()`. I metodi pubblici `enableGeneralExclude()` e `disableGeneralExclude()` non hanno parametri.
+
+## Output
+
+- `execute()`: array con `general_exclude_enabled` (bool), `excluded_resources`, `excluded_pages`, `excluded_widgets` (`list<string>`).
+
+## Invarianti
+
+| ID | Regola | Prova nel codice | Test |
+|---|---|---|---|
+| `SHIELD-EXCL-INV-1` | Un valore non booleano di `exclude.enabled` diventa `true`. | `isGeneralExcludeEnabled()` | nessuno |
+| `SHIELD-EXCL-INV-2` | Liste non-array diventano `[]`; gli elementi non stringa sono scart
+
+### `contracts/get-filament-user-configuration-action.md` — GetFilamentUserConfigurationAction
+
+
+# GetFilamentUserConfigurationAction
+
+Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `FilamentShieldData`. Codice: `app/Actions/Shield/GetFilamentUserConfigurationAction.php`.
+
+## Input
+
+- Nessuno.
+
+## Output
+
+- `array{enabled: bool, name: string}`.
+
+## Invarianti
+
+| ID | Regola | Prova nel codice | Test |
+|---|---|---|---|
+| `SHIELD-FILAMENT-USER-INV-1` | `enabled` è `false` se la proprietà manca o è null. | `execute()`, `?? false` | nessuno |
+| `SHIELD-FILAMENT-USER-INV-2` | `name` vale `'Filament User'` se la proprietà manca. | `execute()`, `?? 'Filament User'` | nessuno |
+
+
+>>>>>>> .merge_file_tfGS8i
 ### `contracts/get-guard-action.md` — GetGuardAction
 
 
@@ -3665,6 +4537,32 @@ Genera una nuova password temporanea pronunciabile, ne salva l'hash sull'utente 
 | `NEW-PWD-INV-2` | Il valore restituito è quello generato da `GetPronounceablePasswordAction` (Xot) con lunghezza 12. | riga 26 | come sopra |
 | `NEW-PWD-I
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `contracts/get-notifiable-email-action.md` — GetNotifiableEmailAction
+
+
+# GetNotifiableEmailAction
+
+Risolve l'indirizzo a cui spedire le email di autenticazione (reset password, verifica email). Codice: `app/Actions/Auth/GetNotifiableEmailAction.php:18-40`.
+
+## Input
+
+- `Model $notifiable` (`execute`, riga 22).
+
+## Output
+
+- `?string`: l'indirizzo, oppure `null` se il modello non ne ha.
+
+## Invarianti
+
+| ID | Regola | Prova nel codice | Test |
+|---|---|---|---|
+| `RESOLVE-EMAIL-INV-1` | Se il modello espone `getEmailForPasswordReset()` il suo valore ha la precedenza sull'attributo `email`. | righe 24-29 | `tests/Unit/Actions/Auth/GetNotifiableEmailActionTest.php` (riferimento alla classe) |
+| `RESOLVE-EMAIL-INV-2` | Un valore non stringa lancia un'eccezione (`Webmozart Assert`) e la mail non parte. | righe 26, 36 | come sopra |
+| `RESOLVE-EMAIL-INV-3` | Senza
+
+>>>>>>> .merge_file_tfGS8i
 ### `contracts/get-permission-model-action.md` — GetPermissionModelAction
 
 
@@ -3688,6 +4586,27 @@ Restituisce il nome della classe modello dei permessi, da config, con default Sp
 | `PERM-MODEL-INV-2` | Il valore deve essere una stringa e una classe esistente, altrimenti eccezione Webmozart. | righe 20-21 | Test: nessuno. |
 
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `contracts/get-permissions-configuration-action.md` — GetPermissionsConfigurationAction
+
+
+# GetPermissionsConfigurationAction
+
+Raccoglie in un array la configurazione di permessi ed entità di Filament Shield (prefissi, flag di entità, modelli Role/Permission) e fornisce due helper per i permessi delle singole risorse. Codice: `app/Actions/Shield/GetPermissionsConfigurationAction.php`.
+
+## Input
+
+- `execute()`: nessuno.
+- `doesResourceHaveCustomPermissions(string $resourceClass)`, `getResourcePermissionPrefixes(string $resourceFQCN)`: FQCN di una risorsa Filament.
+
+## Output
+
+- `execute()`: array con 13 chiavi (prefissi `list<string>`, prefissi page/widget `string`, flag entità `bool`, `generator_option`, `role_policy_registered`, `role_model`, `permission_model`, `role_resource_exists`).
+- `doesResourceHaveCustomPermissions()`: `bool`; `false` se la classe non esiste.
+- `getRe
+
+>>>>>>> .merge_file_tfGS8i
 ### `contracts/get-post-login-url-action.md` — GetPostLoginUrlAction
 
 
@@ -3710,6 +4629,7 @@ Restituisce la pagina d'arrivo dopo login e registrazione quando nessuna pagina 
 | `POST-LOGIN-INV-1` | Se la lingua corrente non è tra quelle supportate si usa `app.locale` (default `it`). | righe 28-31 | `tests/Feature/Auth/AuthFlowRedirectsTest.php` e `tests/Unit/Filament/Widgets/Auth/LoginWidgetLocalizationTest.php` (riferimento alla classe) |
 | `POST-LOGIN-INV-2` | Il percorso è letto da `auth.post_login_path`, con default `/area-pers
 
+<<<<<<< .merge_file_3g8mQA
 ### `contracts/get-user-model-attributes-from-socialite-action.md` — GetUserModelAttributesFromSocialiteAction
 
 
@@ -3724,11 +4644,51 @@ Traduce l'identità OAuth in un DTO di attributi per il modello utente, con vali
 ## Output
 
 - `SocialiteUserAttributesData`: `name`, `firstName`, `lastName`, `email`, `provider`.
+=======
+### `contracts/get-shield-authentication-configuration-action.md` — GetShieldAuthenticationConfigurationAction
+
+
+# GetShieldAuthenticationConfigurationAction
+
+Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `app/Actions/Shield/GetShieldAuthenticationConfigurationAction.php`.
+
+## Input
+
+- Nessuno.
+
+## Output
+
+- `array{auth_guard: string, auth_provider_fqcn: string, auth_provider_configured: bool}`.
 
 ## Invarianti
 
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
+| `SHIELD-AUTH-CFG-INV-1` | `auth_guard` è sempre `'web'`. | `getFilamentAuthGuard()` | nessuno |
+| `SHIELD-AUTH-CFG-INV-2` | `auth_provider_configured` è `true` solo se la classe esiste e usa direttamente il trait `HasRoles`. | `isAuthProviderConfigured()` | nessuno |
+| `SHIELD-AUTH-CFG-INV-3` | Se `fqcn` non è stringa, vale `Illuminate\Foundation\Auth\User`. | `getAuthProviderFQCN()` | nessuno |
+
+### `contracts/get-shield-resource-configuration-action.md` — GetShieldResourceConfigurationAction
+
+
+# GetShieldResourceConfigurationAction
+
+Riassume la configurazione della risorsa Shield (slug, navigazione, ricerca globale) e verifica se la RoleResource è pubblicata. Codice: `app/Actions/Shield/GetShieldResourceConfigurationAction.php`.
+
+## Input
+
+- Nessuno.
+
+## Output
+
+- `array{slug: string, published: bool, navigation_registered: bool, navigation_sort: int, navigation_badge: bool, navigation_group: bool, globally_searchable: bool}`.
+>>>>>>> .merge_file_tfGS8i
+
+## Invarianti
+
+| ID | Regola | Prova nel codice | Test |
+|---|---|---|---|
+<<<<<<< .merge_file_3g8mQA
 | `SOCIALITE-USER-ATTR-INV-1` | `provider` vuoto: `InvalidArgumentException`. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:44` |
 | `SOCIALITE-USER-ATTR-INV-2` | Nome o cognome non stringa: `RuntimeException`. | `execute()` | `SocialiteCoreActionsCoverageTest.php:58` |
 | `SOCIALITE-USER-ATTR-INV
@@ -3747,14 +4707,40 @@ Costruisce le opzioni di una Select con i team dell'utente corrente. Codice: `ap
 ## Output
 
 - `array<int|string, string>`: placeholder `'' => '--- Select ---'` seguito da `id team => nome team` (righe 22-29).
+=======
+| `SHIELD-RES-CFG-INV-1` | `slug` vale `'shield'` se la configurazione non è stringa. | `execute()` | nessuno |
+| `SHIELD-RES-CFG-INV-2` | `published` è vero se il file `app/Filament/Resources/Shield/RoleResource.php` esiste. | `isResourcePublished()` | nessuno |
+| `SHIELD-RES-CFG
+
+### `contracts/get-super-admin-configuration-action.md` — GetSuperAdminConfigurationAction
+
+
+# GetSuperAdminConfigurationAction
+
+Riassume la configurazione del super admin di Filament Shield (abilitazione, nome, definizione via gate, stato di intercettazione del gate). Codice: `app/Actions/Shield/GetSuperAdminConfigurationAction.php`.
+
+## Input
+
+- Nessuno.
+
+## Output
+
+- `array{enabled: bool, name: string, defined_via_gate: bool, gate_interception_status: string}`.
+>>>>>>> .merge_file_tfGS8i
 
 ## Invarianti
 
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
+<<<<<<< .merge_file_3g8mQA
 | `TEAMS-OPT-INV-1` | Il placeholder è sempre la prima voce. | riga 22 | `tests/Unit/Actions/Team/GetUserTeamsOptionActionTest.php` (riferimento alla classe) |
 | `TEAMS-OPT-INV-2` | Compaiono solo i team collegati tramite `team_user` all'utente corrente. | riga 19 | come sopra |
 | `TEAMS-OPT-INV-3` | Le righe orfane (team cancellato) sono saltate. | r
+=======
+| `SHIELD-SUPER-ADMIN-INV-1` | I valori mancanti valgono: `enabled` e `defined_via_gate` `false`, `name` `'Super Admin'`, `gate_interception_status` `'block'`. | `execute()`, operatori `??` | nessuno |
+
+## Effetti collaterali
+>>>>>>> .merge_file_tfGS8i
 
 ### `contracts/has-verified-identity-action.md` — HasVerifiedIdentityAction
 
@@ -4061,7 +5047,11 @@ Gestisce il ritorno dal provider OAuth: valida il provider, recupera l'utente, a
 # RecordAuthenticationLogAction
 
 Sorgente: `app/Actions/Auth/RecordAuthenticationLogAction.php`. Chiamata da `LoginListener` e `FailedLoginListener`.
+<<<<<<< .merge_file_3g8mQA
 Perché: [ADR](../adr/authentication-log-never-breaks-login.md).
+=======
+Perché: [ADR](../adr/0002-authentication-log-never-breaks-login.md).
+>>>>>>> .merge_file_tfGS8i
 
 ## Input
 
@@ -4236,6 +5226,7 @@ Reinvia la mail di verifica dell'indirizzo, senza verificare nulla (DCP-285, D-0
 | `RESEND-VERIFY-INV-2` | L'Action non emette l'evento `Verified`: lo emettono solo i controller che hanno validato id e hash. | docblock righe 13-14, nessun dispatch nel corpo | Test: nessuno. |
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `contracts/resolve-exclusions-configuration-action.md` — ResolveExclusionsConfigurationAction
 
 
@@ -4250,11 +5241,28 @@ Legge da `config/filament-shield.php` la configurazione delle esclusioni (genera
 ## Output
 
 - `execute()`: array con `general_exclude_enabled` (bool), `excluded_resources`, `excluded_pages`, `excluded_widgets` (`list<string>`).
+=======
+### `contracts/retrieve-oauth-user-action.md` — RetrieveOauthUserAction
+
+
+# RetrieveOauthUserAction
+
+Completa lo scambio OAuth con il provider e restituisce l'utente. Su `InvalidStateException` dispatcha `InvalidState` e ritorna `null`. Codice: `app/Actions/Socialite/RetrieveOauthUserAction.php`.
+
+## Input
+
+- `string $provider`.
+
+## Output
+
+- `?SocialiteUserContract`: utente del provider, oppure `null` in caso di stato OAuth non valido.
+>>>>>>> .merge_file_tfGS8i
 
 ## Invarianti
 
 | ID | Regola | Prova nel codice | Test |
 |---|---|---|---|
+<<<<<<< .merge_file_3g8mQA
 | `SHIELD-EXCL-INV-1` | Un valore non booleano di `exclude.enabled` diventa `true`. | `isGeneralExcludeEnabled()` | nessuno |
 | `SHIELD-EXCL-INV-2` | Liste non-array diventano `[]`; gli elementi non stringa so
 
@@ -4440,6 +5448,16 @@ Completa lo scambio OAuth con il provider e restituisce l'utente. Su `InvalidSta
 
 
 # RetrieveSocialiteUserAction
+=======
+| `SOCIALITE-RETRIEVE-OAUTH-INV-1` | `InvalidStateException` produce evento `InvalidState` e `null`. | `execute()`, `handleInvalidStateException()` | `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:86,115` |
+| `SOCIALITE-RETRIEVE-OAUTH-INV-2` | Ogni altra eccezione si propaga. | `execute()` | nessuno |
+
+
+### `contracts/retrieve-socialite-user-action.md` — RetrieveSocialiteUserAction
+
+
+# RetrieveSocialiteUserAction
+>>>>>>> .merge_file_tfGS8i
 
 Cerca il collegamento SSO per provider e id esterno e ne aggiorna il campo `token` con il token ricevuto dal provider. Codice: `app/Actions/Socialite/RetrieveSocialiteUserAction.php`.
 
@@ -4557,7 +5575,11 @@ Revoca un access token Passport e, se presente, il suo refresh token. Codice: `a
 # RevokeUserAccessAction
 
 Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Chiamata da `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`.
+<<<<<<< .merge_file_3g8mQA
 Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
+=======
+Perché: [ADR](../adr/0003-deleted-account-blocked-in-user-provider.md).
+>>>>>>> .merge_file_tfGS8i
 
 ## Input
 
@@ -4778,7 +5800,11 @@ Aggiorna un utente dentro una transazione: esclude i campi di sistema, gestisce 
 
 # UpsertUserFromDigitalIdentityAction
 
+<<<<<<< .merge_file_3g8mQA
 Sorgente: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php`. Perché: [ADR](../adr/digital-identity-upsert-by-fiscal-code.md).
+=======
+Sorgente: `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php`. Perché: [ADR](../adr/0005-digital-identity-upsert-by-fiscal-code.md).
+>>>>>>> .merge_file_tfGS8i
 
 ## Input
 
@@ -4936,6 +5962,10 @@ un autoloader dimezzato e non valgono.
 
 ### `coverage.md` — Coverage — User
 
+<<<<<<< .merge_file_3g8mQA
+=======
+
+>>>>>>> .merge_file_tfGS8i
 # Coverage — User
 
 ---
@@ -4955,7 +5985,10 @@ Stato onesto (2026-09-22), campagna git-hygiene/marker-cleanup.
 - PHPStan `analyse Modules/User`: 1678 file, **0 errori** (level max, config repo).
 - PHPMD (`tools/phpmd.phar Modules/User`): **crash pre-esistente**, fatal error
   `Call to a member function getParent() on null` in
+<<<<<<< .merge_file_3g8mQA
   `PHPMD/Rule/AbstractLocalVariable.php:297` (bug noto phpmd.phar su costrutti del
+=======
+>>>>>>> .merge_file_tfGS8i
 
 ### `critical-filament-rule-getinfolistschema-string-keys.md` — Critical Filament Rule: getInfolistSchema String Keys
 
@@ -5063,10 +6096,17 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 # Implementazione Login Personalizzato
 
 > **Collegamenti Correlati:**
+<<<<<<< .merge_file_3g8mQA
 > - [Passport Integration](passport.md) - Integrazione OAuth2 con Passport
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 > - [Filament Best Practices](filament-best-practices-2.md) - Best practices Filament
+=======
+> - Passport Integration - Integrazione OAuth2 con Passport
+> - [Socialite Integration](socialite.txt) - Integrazione con provider social
+> - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
+> - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
+>>>>>>> .merge_file_tfGS8i
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
 
 ## Implementazione con Filament
@@ -5087,10 +6127,17 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 # Implementazione Login Personalizzato
 
 > **Collegamenti Correlati:**
+<<<<<<< .merge_file_3g8mQA
 > - [Passport Integration](passport.md) - Integrazione OAuth2 con Passport
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 > - [Filament Best Practices](filament-best-practices-2.md) - Best practices Filament
+=======
+> - Passport Integration - Integrazione OAuth2 con Passport
+> - [Socialite Integration](socialite.txt) - Integrazione con provider social
+> - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
+> - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
+>>>>>>> .merge_file_tfGS8i
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
 
 ## Implementazione con Filament
@@ -5450,6 +6497,7 @@ Sistema di autenticazione completo con supporto per multiple strategie di login,
 - Sistema di login
 - Implementazione 2FA
 
+<<<<<<< .merge_file_3g8mQA
 ### `development/roadmap/features/gestione-teams.md` — Gestione Teams
 
 
@@ -5473,6 +6521,8 @@ Sistema di gestione dei team utente con supporto per ruoli, permessi e multi-ten
 ## Guida Step-by-Step
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `development/roadmap/features/legacy-code-cleanup.md` — Legacy Code Cleanup
 
 
@@ -5519,6 +6569,7 @@ Implementation of core traits for user management, authentication, and authoriza
 /**
  * @property-read Collection<Team> $teams
 
+<<<<<<< .merge_file_3g8mQA
 ### `docs/filament-version.md` — Filament Version Declaration — {ModuleOrThemeName}
 
 # Filament Version Declaration — {ModuleOrThemeName}
@@ -5539,6 +6590,8 @@ All resources, forms, tables, infolists, widgets and actions must follow the v5 
 
 **Firmato:** Cursor Agent (Composer) — template propagato ai package `docs/`
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `docs-archive-policy.md` — Docs archive policy
 
 # Docs archive policy
@@ -5701,6 +6754,7 @@ La funzione `safeStringCast()` era duplicata in **15+ file** del progetto, viola
 - `Modules/Geo/app/Filament/Forms/Components/AddressesField.php`
 - `Modules/Geo/database/facto
 
+<<<<<<< .merge_file_3g8mQA
 ### `eav.md` — eav
 
 
@@ -5711,6 +6765,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `email/best-practices.md` — 📧 Email Deliverability Best Practices – User Module
 
 # 📧 Email Deliverability Best Practices – User Module
@@ -6176,11 +7232,14 @@ Le seguenti pagine estendono direttamente le classi Filament perché sono pagine
 
 ```php
 
+<<<<<<< .merge_file_3g8mQA
 ### `filament-best-practices.md` — filament-best-practices
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-best-practices.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `filament-charts-implementation.md` — Filament Installation and Chart Widget Implementation Guide
 
 
@@ -6354,11 +7413,14 @@ Rimuovere il modificatore `static` dal metodo:
 ```php
 // ❌ ERRATO
 
+<<<<<<< .merge_file_3g8mQA
 ### `file-naming-rules.md` — file-naming-rules
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `file-naming.md` — Regole di Naming per File
 
 
@@ -6497,11 +7559,14 @@ $table->uuid('uuid')->unique()->after('id');
 - Per API/Android: usare `Profile::where('uuid', $uuid)->first()`
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `fixes/phpstanes.md` — phpstanes
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `fixes-user-module-phpstan.md` — Correzioni PHPStan per il Modulo User
 
 
@@ -6525,11 +7590,14 @@ Questo documento descrive le correzioni implementate per risolvere gli errori PH
 - `app/Events/Login.php`
 - `app/Events/NewPasswordSet.php`
 
+<<<<<<< .merge_file_3g8mQA
 ### `folio-volt-best-practices.md` — folio-volt-best-practices
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `form-column-parity.md` — Parita' Forms/Components ↔ Tables/Columns (User)
 
 
@@ -6642,11 +7710,14 @@ Enhanced the RegisterWidget with full GDPR compliance following 2025 best practi
 - **Clear Labels**: Detailed explanations for each consent type
 - **Helper Text**: Legal
 
+<<<<<<< .merge_file_3g8mQA
 ### `gdpr.md` — gdpr
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/gdpr.txt
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `get-new-password-action-business-logic.md` — GetNewPasswordAction - Business Logic Analysis
 
 
@@ -6670,6 +7741,7 @@ L'`GetNewPasswordAction` è responsabile della generazione sicura di nuove passw
 [$password, $password_hash] = once(function () {
     $password = app(\Modules\Xot\Actions\String\GetPronounceablePasswordAction::class)->execute();
 
+<<<<<<< .merge_file_3g8mQA
 ### `git-conflict-resolution-1.md` — git_conflict_resolution - User
 
 
@@ -6686,6 +7758,75 @@ Documentazione per git_conflict_resolution nel modulo User.
 ## Collegamenti
 
 - [Modulo Principale](../README.md)
+=======
+### `git-conflict-resolution.md` — Gestione Avanzata dei Conflitti Git
+
+
+# Gestione Avanzata dei Conflitti Git
+
+## Approccio Sicuro alla Risoluzione dei Conflitti
+
+### 1. Strategie di Prevenzione
+
+```bash
+
+# Pre-commit hook per verificare conflitti potenziali
+git diff --check
+
+# Aggiornamento regolare del branch
+git fetch origin
+git rebase origin/main
+
+# Verifica dello stato prima del merge
+git status
+git diff origin/main...HEAD
+```
+
+### `git-conflicts-models-phpdoc.md` — Risoluzione conflitti Git: PHPDoc modelli User
+
+
+# Risoluzione conflitti Git: PHPDoc modelli User
+
+## Contesto
+
+Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merge tra branch con IdeHelper/PHPDoc aggiornati.
+
+## File risolti
+
+- Authentication, TeamPermission, Extra, DeviceUser, PasswordReset, Notification
+- ProfileTeam, Role, SsoProvider, OauthClient, ModelRole, PersonalAccessToken
+- OauthAccessToken, TenantUser, ModelHasRole, ModelHasPermission, TeamInvitation
+- SocialiteUser, DeviceProfile, Feature, TeamUser, PermissionUser, Permission
+- Passport/Client, Membership, OauthPersonalAccessClient, Tenant, OauthToken
+- Geo: County
+- _ide_helper_models.php
+
+## Criteri di risoluzione
+
+1. **ProfileContract vs Meetup\Profile**: mantenuto `ProfileContract` (modulo User generico, non dipende da Meetup)
+
+### `git-conflicts-resolution.md` — Risoluzione Conflitti Git - Modulo User (2025-01-27)
+
+
+# Risoluzione Conflitti Git - Modulo User (2025-01-27)
+
+## Data
+2025-01-27
+
+## Riepilogo
+Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
+
+## Collegamenti correlati
+- [Indice documentazione User](/laravel/modules/user/project_docs/index.md)
+- [README User](/laravel/modules/user/project_docs/README.md)
+- [Auth Components Best Practices](/laravel/modules/user/project_docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/project_docs/widgets-structure-2.md)
+- [BaseUser Documentation](/laravel/modules/user/project_docs/baseuser.md)
+
+## File Risolti
+
+### 1. Modelli e Trait
+>>>>>>> .merge_file_tfGS8i
 
 
 ### `git-multi-org-sync-handoff.md` — Handoff — multi-org sync (STORY-003)
@@ -6776,12 +7917,43 @@ git status
 git diff origin/main...HEAD
 ```
 
+<<<<<<< .merge_file_3g8mQA
 ### `glossary.md` — Glossario di dominio User
 
 # Glossario di dominio User
 
 <!-- Le parole del dominio e dove stanno nel codice. Topology di AGENTS.md punta qui.
      Un termine per riga; se glossario e codice non coincidono, vale il codice e si corregge il glossario. -->
+=======
+### `gits-resolution-06cb77.md` — Risoluzione Conflitti Git - Modulo User ([DATE])
+
+
+# Risoluzione Conflitti Git - Modulo User ([DATE])
+
+## Data
+[DATE]
+
+## Riepilogo
+Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
+
+## Collegamenti correlati
+- [Indice documentazione User](/laravel/modules/user/docs/index.md)
+- [README User](/laravel/modules/user/docs/readme.md)
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+- [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+- [Indice documentazione User](/laravel/Modules/User/docs/index.md)
+- [README User](/laravel/Modules/User/docs/readme.md)
+- [Auth Components Best Practices](/laravel/M
+
+### `glossary.md` — Glossario di dominio User
+
+
+# Glossario di dominio User
+
+<!-- Le parole del dominio e dove stanno nel codice. Topology di AGENTS.md punta qui.
+     Un termine per riga; se glossario e codice non coincidono, vale il codice e si corregge il glossario. -->
+>>>>>>> .merge_file_tfGS8i
 
 | Termine | Significato | Nel codice |
 |---|---|---|
@@ -6798,7 +7970,10 @@ qmd: "glossario User identità SPID CIE ruolo permesso team tenant token Passpor
 
 Se glossario e codice divergono vale il codice. Percorsi relativi a `laravel/Modules/User/` salvo indicazione.
 
+<<<<<<< .merge_file_3g8mQA
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `guida-migrazione-step-by-step.md` — Guida Migrazione Step-by-Step: Modulo User - Filament 4
 
 
@@ -6914,6 +8089,7 @@ Modules/User/resources/views/components/ui/app/
 ### 3. Struttura Componenti
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `html2pdf/advanced.md` — advanced
 
 
@@ -6939,6 +8115,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/styling.m
 
 See canonical documentation: ../../../../Themes/docs/shared-components/usage-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `ide-helper-models-wave.md` — IDE Helper Models Wave
 
 
@@ -6962,11 +8140,14 @@ Dopo il rerun con accesso DB reale, la wave `ide-helper` ha completato la rigene
 
 ### Impatto
 
+<<<<<<< .merge_file_3g8mQA
 ### `img/create-user.jpg.md` — create-user.jpg
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/create-user.jpg
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `img/create-user.md` — create_user
 
 
@@ -6980,11 +8161,14 @@ L'asset canonico è previsto in `../../../../Themes/docs/shared-components/creat
 
 - [Documentazione User](../../README.md)
 
+<<<<<<< .merge_file_3g8mQA
 ### `img/roles-list.jpg.md` — roles-list.jpg
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/roles-list.jpg
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `img/roles-list.md` — roles_list
 
 
@@ -6998,11 +8182,14 @@ L'asset canonico è previsto in `../../../../Themes/docs/shared-components/roles
 
 - [Documentazione User](../../README.md)
 
+<<<<<<< .merge_file_3g8mQA
 ### `img/set-password.jpg.md` — set-password.jpg
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/set-password.jpg
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `img/set-password.md` — set_password
 
 
@@ -7080,11 +8267,14 @@ attributi/relazioni Eloquent — vale per `pivot` come per le colonne.
 - TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
   MariaDB dedicato) + `connectionsToTransact = ['user']` quando de
 
+<<<<<<< .merge_file_3g8mQA
 ### `index-2.md` — index-2
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/00-index-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `index-conflict.md` — User Module Documentation
 
 
@@ -7189,11 +8379,14 @@ In sintesi: dalla root Laravel `cd laravel && composer require amenadiel/jpgraph
 
 1. [Panoramica](#panoram
 
+<<<<<<< .merge_file_3g8mQA
 ### `json.md` — json
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/json.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `jss.md` — Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 
@@ -7303,6 +8496,7 @@ L'upgrade a Laravel 13 per il modulo **User** non è un mero aggiornamento tecni
 - [x] **PHP ^8.4**: Allineamento ai requisiti di Laravel 13.
 - [x] **composer.json**: Aggiornato con `laravel/framework: ^13.0` e `nwid
 
+<<<<<<< .merge_file_3g8mQA
 ### `launch-plan.md` — Product Launch Plan: User Module v1.0
 
 
@@ -7323,6 +8517,8 @@ L'upgrade a Laravel 13 per il modulo **User** non è un mero aggiornamento tecni
 ## 📈 Post-Launch Tracking
 Monitor login success rates and permission check latency.
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `lfs-resolution-28.md` — LFS Corruption Resolution (2026-07-28)
 
 
@@ -7369,11 +8565,14 @@ LFS objects can become missing when:
 1. Working tree is fresh-cloned but LFS objects not downloaded (missing `git lfs pull`)
 2. LFS tracking rules changed but objects not migrated
 
+<<<<<<< .merge_file_3g8mQA
 ### `limesurvey-database-commands.md` — limesurvey-database-commands
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `limesurveyatabase-commands.md` — Database Analysis Commands and Tools for app_survey
 
 
@@ -7397,6 +8596,7 @@ LEFT JOIN lime_question_l10ns ql ON ql.qid = q.qid
 WHERE q.sid = [SURVEY_ID]
 ORDER BY q.group_order, q.question_order;
 
+<<<<<<< .merge_file_3g8mQA
 ### `links.md` — links
 
 
@@ -7412,6 +8612,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/livewire-fil
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `livewire-form-statepath.md` — Problema di Binding nei Componenti Livewire con statePath('data')
 
 
@@ -7431,11 +8633,14 @@ Nel componente di login Livewire (`Modules/User/app/Http/Livewire/Auth/Login.php
 // Nel componente Livewire
 public function 
 
+<<<<<<< .merge_file_3g8mQA
 ### `livewire-namespace-2.md` — livewire-namespace-2
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-namespace.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `livewire-namespace.md` — Regole per i componenti Livewire in Windsurf/Xot
 
 
@@ -7459,6 +8664,7 @@ namespace Modules\User\App\Http\Livewire\Auth;
 La directory `app` è un contenitore fisico, NON un elemento logico del namespace. Questa regola è fondamentale per l'autoloading PSR-4 e la compatibilità con PHPStan.
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `livewire-to-filament-widget-migration.md` — livewire-to-filament-widget-migration
 
 
@@ -7479,6 +8685,8 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/entity
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/source.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `logging-performance.md` — Logging Performance Optimization
 
 
@@ -7525,6 +8733,7 @@ Questo errore si verifica quando il sistema non riesce a trovare la vista del wi
 
 ### 1. Dichiarazione Errata della Vista nel Widget
 
+<<<<<<< .merge_file_3g8mQA
 ### `login-filament-widget.md` — login-filament-widget
 
 
@@ -7535,6 +8744,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-filame
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-issue-resolution-report.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `login-resolution.md` — Risoluzione Problema Login - Report Finale (Aggiornato)
 
 
@@ -7572,6 +8783,7 @@ public function login(): void
     }
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `loginwidget.md` — loginwidget
 
 
@@ -7582,6 +8794,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-analysis.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `logout-analysis.md` — Analisi del File Logout.blade.php
 
 
@@ -7605,10 +8819,56 @@ Il file `logout.blade.php` attualmente implementa un componente Volt per la gest
 use function Livewire\Volt\{mount};
 use Illuminate\Support\Facades\Auth;
 
+<<<<<<< .merge_file_3g8mQA
 ### `logout-security-1.md` — logout-security-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-security.md
+=======
+### `logout-event-error-2.md` — Errore Identificato
+
+
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Widget Filament Corretto](logout-filament-widget-corrected.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+
+## Errore Identificato
+
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+
+```
+Call to a member function getAuthIdentifier() on null
+
+  at Modules/User/app/Listeners/LogoutListener.php:59
+     55▕         // Session::flash('login-success', 'Hello ' 
+
+### `logout-event-error.md` — Analisi dell'Errore negli Eventi di Logout
+
+
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-blade-error-analysis.md)
+- [Widget Filament Corretto](logout-filament-widget-corrected.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+
+## Errore Identificato
+
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+
+```
+>>>>>>> .merge_file_tfGS8i
 
 ### `logout-security.md` — Sicurezza nel Processo di Logout
 
@@ -7767,11 +9027,14 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ```
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `mcp-integration-1.md` — mcp-integration-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-integration-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `mcp-integration.md` — Integrazione dei Server MCP con il Modulo User
 
 
@@ -7795,11 +9058,14 @@ Per il modulo User, si consigliano i seguenti server MCP:
 - Memorizzazione di dati temporanei dell'utente
 - Caching delle informazioni del profilo
 
+<<<<<<< .merge_file_3g8mQA
 ### `mcp-server-recommended-2.md` — mcp-server-recommended-2
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-server-recommended-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `mcp-server-recommended.md` — MCP Server Consigliati per il Modulo User
 
 
@@ -7823,6 +9089,7 @@ Gestione utenti, autenticazione, profili e permessi.
   }
 }
 
+<<<<<<< .merge_file_3g8mQA
 ### `mcpatabase-tools.md` — mcpatabase-tools
 
 
@@ -7833,6 +9100,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/mcp-database
 
 See canonical documentation: ../../../Themes/docs/shared-components/membership-autoincrement-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `membership-autoincrement.md` — Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement
 
 
@@ -7854,18 +9123,25 @@ La tabella `team_user` ha `id` come PRIMARY KEY di tipo UUID (`char(36)`), ma qu
 class Membership extends BasePivot
 {
 
+<<<<<<< .merge_file_3g8mQA
 ### `membership-uuid-fix.md` — membership-uuid-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/membership-uuid-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `membership-uuid.md` — Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.
+<<<<<<< .merge_file_3g8mQA
 > Vedi [membership-autoincrement-fix.md](./membership-autoincrement-fix.md) per la soluzione corretta.
+=======
+> Vedi membership-autoincrement-fix.md per la soluzione corretta.
+>>>>>>> .merge_file_tfGS8i
 
 ## Data Intervento
 **[DATE]** - Correzione gestione UUID nella tabella pivot team_user (SOLUZIONE DEPRECATA)
@@ -7879,12 +9155,17 @@ Errore: `SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '
 La tabella `team_user` ha `id` come PRIMARY KEY di tipo UUID (`char(36)`), ma il modello `Membership` aveva `$incrementing = true`, causando un conflitto:
 
 ```php
+<<<<<<< .merge_file_3g8mQA
 // ❌ ERRATO - Prima della correzio
 
 ### `memory-optimization-summary.md` — memory-optimization-summary
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/memory-optimization-summary.md
+=======
+// ❌ ERRATO - Prima della correzione
+class Membership extends BasePivot
+>>>>>>> .merge_file_tfGS8i
 
 ### `memory-optimization.md` — User Module - Memory Optimization Summary
 
@@ -7909,6 +9190,7 @@ protected function getEssentialResources(): array
         \Modules\User\Filament\Resources\UserResource::class,
         \Modules\User\Filament\Resources\TeamResource::class,
 
+<<<<<<< .merge_file_3g8mQA
 ### `merge-conflict-files-list.md` — merge-conflict-files-list
 
 
@@ -7946,6 +9228,30 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modules.md
+=======
+### `metodi-duplicati-analisi.md` — 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+
+
+# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+
+**Powered by**: Super Mucca AI 🐄✨  
+**Data**: 15 Ottobre 2025  
+**Versione**: 2.0 ULTIMATE  
+**Confidenza**: 99.9% (Dati Reali dal Codice)
+
+---
+
+## 🎯 Executive Summary
+
+Analisi **REALE e APPROFONDITA** di **18 moduli** + **2 temi** del framework Laraxot/Filament.
+
+### Dati Chiave (VERIFICATI)
+
+| Metrica | Valore | Fonte |
+|---------|--------|-------|
+| **Moduli Analizzati** | 18 | Directory scan |
+| **Temi Analizzati** | 2 (Sixteen, TwentyOne) | Directory scan |
+>>>>>>> .merge_file_tfGS8i
 
 ### `metrics-dashboard.md` — User Module Metrics Dashboard
 
@@ -8032,6 +9338,29 @@ Questo documento specializza gli standard generali di `Modules/Xot/docs/migratio
   - `tableCreate()` per creare tabelle
 
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `migration-consolidation.md` — Migration Consolidation Strategy - User Module
+
+
+# Migration Consolidation Strategy - User Module
+
+## The Furious Argument: One File vs. Multiple Incremental Files
+
+### The Problem
+The `Modules/User/database/migrations` directory contains multiple files targeting the same tables (e.g., `teams`, `roles`, `permissions`, `users`). This violates the Laraxot principle of **"1 Table, 1 Migration File"**. It leads to confusion, redundancy, and potential conflicts during installation or updates.
+
+### The Alternatives
+
+#### Option 1: The Standard Laravel Way (Incremental)
+Keep all migrations as they are. Each file represents a point in time.
+- **Pros**: Matches standard Laravel behavior.
+- **Cons**: Becomes a "file swamp" quickly. Hard to see the final schema in one place. Violates Laraxot Zen.
+
+#### Option 2: Consolidation (The Laraxot Way)
+Mer
+
+>>>>>>> .merge_file_tfGS8i
 ### `migration-dry-violations-report.md` — User Module Migration Policy - DRY Violations Report
 
 
@@ -8055,11 +9384,14 @@ The following tables have multiple creation migrations in `/Modules/User/databas
 - 2023_01_01_000011_create_role_has_permissions_table.php
 - 2023_01_01_000012_create_roles_table.php
 
+<<<<<<< .merge_file_3g8mQA
 ### `migration-duplicate-resolution.md` — migration-duplicate-resolution
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `migration-execution-safety.md` — Migration Execution Safety Rule
 
 
@@ -8082,6 +9414,7 @@ The correct approach is:
 
 This preserves local state, avoids collateral damage across modules, and keeps debugging reproducible.
 
+<<<<<<< .merge_file_3g8mQA
 ### `migration-filament.md` — migration-filament
 
 
@@ -8092,6 +9425,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/migrazione-f
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-fix-tenants.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `migration-internal.md` — Internal Analysis: Migration Philosophy Approaches
 
 
@@ -8136,11 +9471,14 @@ return new class extends XotBaseMigration
 {
     public function up(): void
 
+<<<<<<< .merge_file_3g8mQA
 ### `migration-primary-key-fix.md` — migration-primary-key-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `migration-priy-key.md` — Fix Primary Key Constraint - team_user Table
 
 
@@ -8164,11 +9502,14 @@ Nella migrazione `2023_01_01_000004_create_team_user_table.php`, la colonna `use
 In MySQL, **tutte le colonne che fanno parte di una PRIMARY KEY devono essere NOT NULL**.
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `migration-strategy.md` — migration-strategy
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-strategy.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `migration-tenants.md` — 🔧 Migration Fix: create_tenants_table
 
 
@@ -8192,6 +9533,7 @@ return new class extends Migration
 ```
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `migration-unicity-rule.md` — migration-unicity-rule
 
 
@@ -8206,6 +9548,52 @@ See canonical documentation: ../../../Themes/docs/shared-components/migration-ph
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-dry-violations-report.md
+=======
+### `migration-violations-analysis.md` — Migration Violations Analysis - User Module
+
+
+# Migration Violations Analysis - User Module
+
+## Executive Summary
+
+The User module contains multiple violations of the Laraxot migration philosophy "ONE TABLE, ONE MIGRATION, ONE MODULE". This document catalogues all duplicate migrations and their specific violations.
+
+## Duplicate Migration Analysis
+
+### 1. Devices Table Violations
+**Files:**
+- `2023_01_01_000000_create_devices_table.php`
+- `2023_01_01_000001_create_devices_table.php`
+
+**Issue:** Two migrations creating the same `devices` table
+
+### 2. Team User Table Violations
+**Files:**
+- `2023_01_01_000004_create_team_user_table.php`
+- `2023_01_01_000006_create_team_user_table.php`
+
+### `migration-violations-current.md` — Updated Migration Violations Analysis - User Module
+
+
+# Updated Migration Violations Analysis - User Module
+
+## Current State vs. Initial Analysis
+
+Upon re-evaluation, I found that many of the duplicates identified in the initial analysis have already been resolved. The current migration directory shows that significant cleanup work has been done since the initial analysis.
+
+## Current Duplicate Situations
+
+### 1. Tenants Table (Real Duplicate)
+**Files:**
+- `2023_01_01_000008_create_tenants_table.php` (864 bytes)
+- `2023_01_01_000008_create_tenants_table.php.old` (1237 bytes)
+
+**Issue:** The .old file is a backup that should not be in the migrations directory as it will cause the table to be created twice.
+
+### 2. Permissions Table (Not Actual Duplicates)
+**Files:**
+- `2023_01_01_093340_create_permission_table.php` - Cache management for spa
+>>>>>>> .merge_file_tfGS8i
 
 ### `migrations.md` — User Module — Migrations & Schema Parity
 
@@ -8390,6 +9778,7 @@ After comprehensive analysis of the User module, we identified several entity mo
 - `PasswordReset.php` → `PasswordResetResource.php`
 - `Permissio
 
+<<<<<<< .merge_file_3g8mQA
 ### `missing-filament-resources.md` — missing-filament-resources
 
 
@@ -8400,6 +9789,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/missing-fila
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `model-inheritancees.md` — Correzioni Ereditarietà Modelli - Modulo User
 
 
@@ -8446,6 +9837,32 @@ Classe base per il modello User che implementa le interfacce `UserContract` e `H
 - `email_verified_at` (DateTime|null): Data di verifica email
 - `remember_token` (st
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `models/team.md` — Team
+
+
+# Team
+
+Il modello `Team` rappresenta un team nel sistema, implementando l'interfaccia `TeamContract`.
+
+## Proprietà
+
+- `id` - UUID del team
+- `name` - Nome del team
+- `owner_id` - ID del proprietario del team
+- `personal_team` - Flag che indica se è un team personale
+
+## Relazioni
+
+- `owner` - BelongsTo con `User`, rappresenta il proprietario del team
+- `users` - BelongsToMany con `User`, rappresenta i membri del team
+- `teamPermissions` - HasMany con `TeamPermission`, rappresenta i permessi specifici del team
+
+## Metodi
+
+
+>>>>>>> .merge_file_tfGS8i
 ### `models/teampermission.md` — TeamPermission
 
 
@@ -8492,11 +9909,14 @@ Il modulo User è il modulo **più impattato** dalla migration a XotBasePivot.
 
 **File:** `Modules/User/app/Models/DeviceUser.php`
 
+<<<<<<< .merge_file_3g8mQA
 ### `models/xotbasepivot-migration.md` — xotbasepivot-migration
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `models-analysis.md` — Models Analysis - User Module
 
 
@@ -8520,11 +9940,14 @@ Core business models have factories. Missing factories are mainly abstract base 
 2. **Profile** - User profiles ✅
 3. **Team** - User teams ✅
 
+<<<<<<< .merge_file_3g8mQA
 ### `models.md` — models
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/models-analysis.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `moderation-actions.md` — Azioni di Moderazione (Action class)
 
 # Azioni di Moderazione (Action class)
@@ -8571,11 +9994,14 @@ interface ModeratableUser
 - Consente l'integrazione con action, policy, notifiche e activitylog
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `moderation-doctor-1.md` — moderation-doctor-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-doctor.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `moderation-notifications.md` — Notifiche Moderazione
 
 # Notifiche Moderazione
@@ -8629,11 +10055,14 @@ La moderazione del dentista, pur essendo più articolata rispetto ad altri utent
    - Il moderatore accede a una dashboard Filament (User Panel) e visualizza i dettagli del dentista.
    - Può approvare
 
+<<<<<<< .merge_file_3g8mQA
 ### `module-analysis-complete.md` — module-analysis-complete
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-complete.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `module-analysis.md` — User Module - Comprehensive Analysis
 
 
@@ -8657,7 +10086,11 @@ The User module provides comprehensive user management functionality:
 - GDPR compliance for user data
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `module-structure-user.md` — module_structure - User
+=======
+### `module-structure.md` — module_structure - User
+>>>>>>> .merge_file_tfGS8i
 
 
 # module_structure - User
@@ -8675,6 +10108,7 @@ Documentazione per module_structure nel modulo User.
 - [Modulo Principale](../README.md)
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `module-structure.md` — module-structure
 
 
@@ -8690,6 +10124,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-user.
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `multi-org-sync-laraxot-provtv.md` — Sincronizzazione multi-organizzazione (laraxot + provtv)
 
 
@@ -8775,6 +10211,7 @@ qu
 
 **Soluzione**: Traduzioni localizzate e appropriate
 
+<<<<<<< .merge_file_3g8mQA
 ### `nested-resources.md` — nested-resources
 
 
@@ -8785,6 +10222,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/nested-resou
 
 See canonical documentation: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `no-ai-tool-scaffold-dirs.md` — Perché queste cartelle non devono esistere qui
 
 
@@ -8860,7 +10299,10 @@ All were removed. The `handleRegistrationError()` method was simplified to re-th
 ## Prerequisiti
 
 - Account GitHub attivo
+<<<<<<< .merge_file_3g8mQA
 - Applicazione Laravel con [Laravel Passport](../passport.md) configurato correttamente
+=======
+>>>>>>> .merge_file_tfGS8i
 - Modulo User installato e configurato
 
 ## Procedura di Configurazione
@@ -8872,6 +10314,10 @@ All were removed. The `handleRegistrationError()` method was simplified to re-th
    - **Homepage URL**: URL della tua applicazione (es. `https://<nome progetto>.it`)
    - **Authorization callback URL**: URL di callback per GitHub (es. `https://<nome progetto>.it/{locale}/auth/callback/github`)
 4. Fare clic su "Register Application"
+<<<<<<< .merge_file_3g8mQA
+=======
+5. Copiare il **Client ID** e il **Client Secret** generati
+>>>>>>> .merge_file_tfGS8i
 
 ### `oauth/oauth-architecture.md` — OAuth Architecture - User Module
 
@@ -8985,6 +10431,7 @@ Entrambi i modelli ereditano da `Laravel\Passport\Token`.
 
 **In Passport** (`vendor/laravel/passport/src/Token.php`):
 
+<<<<<<< .merge_file_3g8mQA
 ### `optimization.md` — optimization
 
 
@@ -9037,6 +10484,76 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+=======
+### `optimization-analysis-user-module-documentation.md` — user module documentation optimization analysis
+
+
+# user module documentation optimization analysis
+
+## current state analysis
+- **total md files**: 390
+- **extreme duplication**: multiple files for same topics with underscore/hyphen variations
+- **structural chaos**: deeply nested directories with redundant content
+- **dry violations**: repeated content across authentication, logout, filament topics
+- **mixed content**: configuration files, php files mixed with documentation
+
+## major problems identified
+
+### 1. massive duplication
+- authentication: `auth-login-implementation.md` + `auth-login-implementation.md`
+- logout: 18+ files covering same logout functionality
+- filament: multiple duplicate filament documentation files
+
+### 2. structural issues
+- excessive nesting: `models/team.md`
+- mixed file types: `.php`, `.json`, config files
+
+### `optimization-analysis.md` — Analisi di Ottimizzazione - Modulo User
+
+
+# Analisi di Ottimizzazione - Modulo User
+
+## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
+
+### 📊 Stato Attuale del Modulo
+
+Il modulo User rappresenta il sistema di autenticazione e autorizzazione centrale, gestendo:
+- **Autenticazione** multi-tipo con STI (Single Table Inheritance)
+- **Autorizzazione** con Spatie Permission e RBAC
+- **Multi-tenancy** con team e tenant
+- **Security** con 2FA, audit trail e session management
+- **API** con Laravel Passport e JWT
+
+---
+
+## 🚨 Problemi Critici Identificati
+
+### 1. **VIOLAZIONE DRY - Enum Inconsistente**
+
+
+### `optimizationry-kiss.md` — Analisi Ottimizzazioni Modulo User - DRY + KISS
+
+
+# Analisi Ottimizzazioni Modulo User - DRY + KISS
+
+## 🎯 Obiettivo Analisi
+Identificazione sistematica di codice replicato e opportunità di ottimizzazione nel modulo User, seguendo principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid).
+
+## 🔍 Aree di Ottimizzazione Identificate
+
+### 1. **Policy Pattern Duplication - CRITICO** 🚨
+
+#### Problema Attuale
+- **35+ policy classes** con logica di autorizzazione simile
+- Pattern `hasPermissionTo` + `super-admin` duplicato in ogni policy
+- Logica di controllo ownership replicata (`user_id`, `team_id`, `tenant_id`)
+
+#### Pattern Replicato Identificato
+```php
+// RIPETUTO IN 35+ FILES
+public function view(UserContract $user, $model): bool
+{
+>>>>>>> .merge_file_tfGS8i
 
 ### `ottimizzazioni-super-dry-kiss.md` — Ottimizzazioni Super DRY + KISS - Modulo User
 
@@ -9061,6 +10578,7 @@ app/
 │   └── ...
 ├── Models/       # ❌ DUPLICAZIONE
 
+<<<<<<< .merge_file_3g8mQA
 ### `ottimizzazioni-superry-kiss.md` — ottimizzazioni-superry-kiss
 
 
@@ -9071,6 +10589,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazio
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `ottimizzazioniry-kiss.md` — Ottimizzazioni DRY + KISS - Modulo User
 
 
@@ -9117,11 +10637,14 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 - [API & Integration](#-api--integration)
 - [Testing](#-testing)
 
+<<<<<<< .merge_file_3g8mQA
 ### `packages.md` — packages
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `pandoc-guide.md` — Pandoc Documentation Generation
 
 
@@ -9145,6 +10668,7 @@ Convert markdown files to standalone HTML:
 
 ```bash
 
+<<<<<<< .merge_file_3g8mQA
 ### `parental-inheritance.md` — parental-inheritance
 
 
@@ -9155,6 +10679,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/parental-inh
 
 See canonical documentation: ../../../Themes/docs/shared-components/parental.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `passport-admin-actions.md` — Passport Administrative Actions in UI
 
 # Passport Administrative Actions in UI
@@ -9170,6 +10696,7 @@ The Passport Dashboard (`/admin/user/passport/passport-dashboard`) provides high
 - **Hash Secrets**: Executes `php artisan passport:hash`. Hashes all existing client secrets. **Warning: This is a one-way operation.**
 - **Install Passport**: Executes `php artisan passport:install --uuids`. Performs the initi
 
+<<<<<<< .merge_file_3g8mQA
 ### `passport-complete-implementation.md` — passport-complete-implementation
 
 
@@ -9180,6 +10707,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/passport-com
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `passport-filament-cluster-proposal.md` — Passport Filament Cluster Proposal - User Module
 
 
@@ -9203,11 +10732,14 @@ Attualmente le risorse sono sparse nella navigazione:
 5. **OauthPersonalAccessClientResource** - Personal access clients
 6. **ClientResource** - Client generici (se diverso da OauthClient)
 
+<<<<<<< .merge_file_3g8mQA
 ### `passport-implementation-summary-1.md` — passport-implementation-summary-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-implementation-summary.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `passport-implementation.md` — Laravel Passport Implementation Summary - User Module
 
 
@@ -9323,11 +10855,14 @@ deve avere un wrapper omonimo con prefisso `Oauth` in:
 - `OauthAuthCode` - Authorization codes per OAuth flow
 - `OauthPersonalAccessClient` - Client per personal access tokens
 
+<<<<<<< .merge_file_3g8mQA
 ### `password-translation-completion-1.md` — password-translation-completion-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/password-translation-completion.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `password-translation-completion.md` — Completamento Traduzioni Password - 2025
 
 
@@ -9351,12 +10886,16 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
    - **IT**: ✅ Completo con tooltip, icon, color
    - **EN**: ✅ Completo con tooltip, icon, color
 
+<<<<<<< .merge_file_3g8mQA
 ### `password.md` — password
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/password.md
 
 ### `path-conventions-user.md` — path_conventions - User
+=======
+### `path-conventions.md` — path_conventions - User
+>>>>>>> .merge_file_tfGS8i
 
 
 # path_conventions - User
@@ -9374,6 +10913,7 @@ Documentazione per path_conventions nel modulo User.
 - [Modulo Principale](../README.md)
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `path-conventions.md` — path-conventions
 
 
@@ -9384,6 +10924,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/path-convent
 
 See canonical documentation: ../../../Themes/docs/shared-components/payment.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `perfection-audit.md` — Perfection Audit — User Module
 
 # Perfection Audit — User Module
@@ -9409,6 +10951,10 @@ User ha **1,465 file .md** (100% uppercase) con **48 stub vuoti**. Terzo modulo 
 
 ### `performance/archive/authentication-performance-optimization.md` — Authentication Performance Optimization - User Module
 
+<<<<<<< .merge_file_3g8mQA
+=======
+
+>>>>>>> .merge_file_tfGS8i
 # Authentication Performance Optimization - User Module
 
 ## 🚨 Critical Issues Identified
@@ -9427,7 +10973,11 @@ foreach ($user->authentications()->whereLoginSuccessful(true)->whereNull('logout
         $log->update([
             'cleared_by_user' => true,
             'logout_at' => now(),
+<<<<<<< .merge_file_3g8mQA
         ]); // 💀 INDIVIDUAL UPDATE
+=======
+        ]); // 💀 INDIVIDUAL UPDAT
+>>>>>>> .merge_file_tfGS8i
 
 ### `performance/authentication-performance-optimization.md` — Authentication Performance Optimization - User Module
 
@@ -9474,11 +11024,14 @@ $users = User::all();  // ❌
 ```
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `performances.md` — performances
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/performance-issues.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `permissions.md` — Gestione dei Permessi
 
 
@@ -9502,11 +11055,14 @@ Il ruolo `moderator` ha i seguenti permessi:
 ### Seeder
 I permessi e i ruoli vengono creati tramite il seeder `PermissionsSeeder`:
 
+<<<<<<< .merge_file_3g8mQA
 ### `philosophy-complete.md` — philosophy-complete
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/philosophy-complete.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `philosophy.md` — User: Philosophy: The Identity Foundation
 
 
@@ -9530,10 +11086,44 @@ class BaseUser extends Authenticatable {
 
 class Doctor extends User {
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpinsights-report.md` — phpinsights-report
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
+=======
+### `phpinsights-errors.md` — Contenuto fuso da `phpinsights-errors.md`
+
+
+
+[[DATE] 21:05:06] `Modules/User/app`
+
+                                                                                                    
+              82.0%                 91.9%                 76.5%                 88.0%               
+                                                                                                    
+                                                                                                    
+               Code               Complexity           Architecture             Style               
+
+
+Score scale: ◼ 1-49 ◼ 50-79 ◼ 80-100
+
+[CODE] 82 pts within 14237 lines
+
+Comments ...................................................... 53.7 %
+Classes ....................................................... 23.7 %
+Functions .............................
+
+### `phpinsights-report.md` — Phpinsights report
+
+
+# Phpinsights report
+
+---
+module: theme
+topic: phpinsights_report
+---
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `phpinsights.md` — phpinsights report
 
@@ -9553,12 +11143,16 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-
 - comando: `./vendor/bin/phpmd Modules/User/app text phpmd.xml`
 - warning tipici: `CamelCaseVar
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpinsightss.md` — phpinsightss
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-errors.md
 
 ### `phpmd-errors.md` — phpmd-errors
+=======
+### `phpmd-errors.md` — Contenuto fuso da `phpmd-errors.md`
+>>>>>>> .merge_file_tfGS8i
 
 
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CyclomaticComplexity    The method execute() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
@@ -9612,7 +11206,11 @@ Correggere warning PHPMD e PHP Insights nel modulo User, mantenendo PHPStan a 0 
 ### Parametri Non Utilizzati
 1. ✅ **ViewOauthRefreshToken.php**: `$state` → `$_state` (prefisso `_` per parametri non utilizzati)
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpmd-report.md` — phpmd-report
+=======
+### `phpmd-report.md` — Contenuto fuso da `phpmd-report.md`
+>>>>>>> .merge_file_tfGS8i
 
 
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                         CyclomaticComplexity      The method execute() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
@@ -9620,6 +11218,7 @@ Modules/User/app/Actions/GetCurrentDeviceAction.php:23                          
 Modules/User/app/Actions/GetCurrentDeviceAction.php:42                                         ShortVariable             Avoid variables with short names like $up. Configured minimum length is 3.
 Modules/User/app/Actions/Socialite/GetUserModelAttributesFromSocialiteAction.php:11            LongClassName             Avoid excessively long clas
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpmd.md` — phpmd
 
 
@@ -9637,6 +11236,11 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-anal
 
 ### `phpstan-array-types-fixes.md` — phpstan-array-types-fixes
 
+=======
+### `phpstan-array-types-fixes.md` — phpstan-array-types-fixes
+
+
+>>>>>>> .merge_file_tfGS8i
 - [Xot - PHPStan Missing Array Types](../Xot/docs/phpstan-missing-array-types-fixes.md)
 - [Xot - PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md)
 - [docs_project - PHPStan Intouchable Rule](../../../docs_project/phpstan-intouchable-rule.md)
@@ -9650,7 +11254,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-anal
 ---
 module: theme
 topic: phpstan-array-types-fixes
+<<<<<<< .merge_file_3g8mQA
 canonical: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md
+=======
+>>>>>>> .merge_file_tfGS8i
 related:
   - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
@@ -9681,11 +11288,14 @@ Il modulo User presenta numerosi errori PHPStan `missingType.iterableValue` per 
 ### 2. **Contracts** (14 errori)
 - `CreatesNewUsers.php` - parametro `$input`
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-complete-success.md` — phpstan-complete-success
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-complete-success.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `phpstan-compliance-status.md` — PHPStan Level 10 Compliance Status
 
 
@@ -9721,10 +11331,58 @@ The User module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Safe function usage
 - ✅ Strict types declaration
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-error-roadmap.md` — phpstan-error-roadmap
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-roadmap.md
+=======
+### `phpstan-corrections-oauth-resources.md` — PHPStan Corrections - OAuth Resources
+
+
+# PHPStan Corrections - OAuth Resources
+
+**Data**: 2025-01-22
+**Status**: In Progress
+**Versione**: 1.0.0
+
+## Correzioni Applicate
+
+### OauthAccessTokenResource.php
+
+#### Correzioni Namespace Filament 4
+- `Forms\Components\Section` → `Schemas\Components\Section`
+- `Forms\Components\Grid` → `Schemas\Components\Grid`
+- Rimossi tutti i `->label()` hardcoded
+
+#### Correzioni Type Safety
+- Tipizzato `$record` come `OauthAccessToken` invece di `mixed`
+- Corretto accesso a `$user->exists` con `method_exists()` check
+- Tipizzato `$state` in `formatStateUsing` per `Carbon`
+
+### `phpstan-corrections-summary.md` — PHPStan Corrections Summary - Modulo User
+
+
+# PHPStan Corrections Summary - Modulo User
+
+**Data**: 2025-01-22
+**Status**: In Progress
+**Versione**: 1.0.0
+
+## 📊 Stato Attuale
+
+### Errori Corretti
+
+1. **AuthenticationLogResource.php**
+   - ✅ Tipizzato array `$data` con shape type per `login_from` e `login_until`
+   - ✅ Corretto controllo `isset()` e `!== null` con type narrowing
+
+2. **ViewAuthenticationLog.php**
+   - ✅ Aggiunto import `Safe\json_encode` per sicurezza
+   - ✅ Tipizzato `$record` come `AuthenticationLog` invece di `mixed`
+   - ✅ Corretto accesso a `$authenticatable->exists` con `method_exists()` check
+   - ✅ Tipizzato `$state` in `formatStateUsing` per `json_encode`
+>>>>>>> .merge_file_tfGS8i
 
 ### `phpstan-final-progress.md` — PHPStan Level 10 - Progresso Finale
 
@@ -9749,6 +11407,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-erro
 
 ### Categoria 1: Namespace Filament 4
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-fixes.deprecated.md` — phpstan-fixes.deprecated
 
 
@@ -9773,6 +11432,58 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-erro
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-furious-debate-2.md
+=======
+### `phpstan-fix-plan-user.md` — User Module - PHPStan Level 10 Fix Plan
+
+
+# User Module - PHPStan Level 10 Fix Plan
+
+## Analysis Date
+2026-03-02
+
+## Error Summary
+**Total Errors**: 7+ errors across 10+ files
+
+## Error Analysis
+
+### 1. UserContract Property/Method Access (Major Impact)
+
+**Files Affected**:
+- `app/Models/Policies/UserPolicy.php` (Multiple lines)
+- `app/Models/Policies/TeamPolicy.php` (Multiple lines)
+- `app/Models/Policies/BaseUserPolicy.php` (Multiple lines)
+- `app/Console/Commands/**/*.php` (Multiple lines)
+- `app/Actions/Passport/**/*.php` (Multiple lines)
+- `app/Actions/Socialite/**/*.php` (Multiple lines)
+
+### `phpstan-fix-plan.md` — User Module - PHPStan Level 10 Fix Plan
+
+# User Module - PHPStan Level 10 Fix Plan
+
+## Analysis Date
+2026-03-02
+
+## Error Summary
+**Total Errors**: 7+ errors across 10+ files
+
+## Error Analysis
+
+### 1. UserContract Property/Method Access (Major Impact)
+
+**Files Affected**:
+- `app/Models/Policies/UserPolicy.php` (Multiple lines)
+- `app/Models/Policies/TeamPolicy.php` (Multiple lines)
+- `app/Models/Policies/BaseUserPolicy.php` (Multiple lines)
+- `app/Console/Commands/**/*.php` (Multiple lines)
+- `app/Actions/Passport/**/*.php` (Multiple lines)
+- `app/Actions/Socialite/**/*.php` (Multiple lines)
+
+
+### `phpstan-fixes.deprecated.md` — phpstan-fixes.deprecated
+
+
+> Questo file è stato rinominato in [phpstan-fixes-.deprecated.md](phpstan-fixes.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> .merge_file_tfGS8i
 
 ### `phpstan-furious-debate.md` — Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
@@ -9820,11 +11531,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-furi
 6. **Filosofia Laraxot**: "La type safety è sacra. Non profanarla mai."
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-generic-types.md` — phpstan-generic-types
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-generic-types.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `phpstan-level-10-fixes.md` — PHPStan Level 10 Fixes - User Module
 
 
@@ -9848,6 +11562,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-gene
 #[\Override]
 public function token(): Token|TransientToken|null
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-level-10es.md` — phpstan-level-10es
 
 
@@ -9857,6 +11572,11 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-leve
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
+=======
+### `phpstan-level10es.md` — Correzioni PHPStan Livello 10 - Modulo User
+
+
+>>>>>>> .merge_file_tfGS8i
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.
@@ -9875,11 +11595,15 @@ public function validate(string $attribute, mixed $value, \Closure $fail): void
 1. Aggiunta di documentazione PHPDoc per specificare che `$value` è un `string|int`:
    ```php
    /**
+<<<<<<< .merge_file_3g8mQA
 
 ### `phpstan-level9-fixes.md` — phpstan-level9-fixes
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
+=======
+    * @param string $attribute L'attributo che viene validato
+>>>>>>> .merge_file_tfGS8i
 
 ### `phpstan-level9es.md` — Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
@@ -9925,11 +11649,14 @@ return $this->stringHelper->of($email)
 
 ###✅ Correct Pattern: Explicit Conditional Logic
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-philosophy-debate.md` — phpstan-philosophy-debate
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `phpstan-plan.md` — PHPStan Analysis - User Module (Jan 2026)
 
 
@@ -9950,6 +11677,7 @@ This confirms that the project is using a version of Filament where Forms seem t
     - Change `Filament\Forms\Components\Grid` to `Filament\Schemas\Components\Grid`.
     - Ensure `getFormSchema` returns an array with string keys (Use
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstan-report-initial.md` — phpstan-report-initial
 
 
@@ -9961,6 +11689,102 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan_repo
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md
+=======
+### `phpstan-progress-report.md` — phpstan-progress-report
+
+
+*Ultimo aggiornamento: 2025-01-22*
+---
+module: theme
+topic: phpstan-progress-report
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+qmd: "phpstan progress report"
+---
+
+
+### `phpstan-progress.md` — PHPStan Fixes Progress - 2026-01-09
+
+
+# PHPStan Fixes Progress - 2026-01-09
+
+**Start Time**: 14:00
+**Current Progress**: 35 → 26 errors (9 fixed)
+**Status**: 🟡 IN PROGRESS
+
+## Fixed So Far
+
+### Batch 1: class.notFound (11 errors) ✅
+- **Files**: PasswordResetConfirmWidget.php, ResetPasswordWidget.php
+- **Fix**: Added `use Illuminate\Database\Eloquent\Model;`  
+- **Time**: 10 minutes
+- **Verified**: ✅ [OK] No errors
+
+### Batch 2: RegisterTenant return type (2 errors) ✅  
+- **File**: RegisterTenant.php:59
+- **Fix**: Created `$schema` variable for type narrowing
+- **Verified**: ✅ [OK] No errors
+
+
+### `phpstan-relationship-fix-correzione-type-hints.md` — Correzione PHPStan - Relationship Type Hints
+
+
+# Correzione PHPStan - Relationship Type Hints
+
+## 🚨 Errore PHPStan Risolto
+
+**File**: `User/app/Models/Traits/HasAuthenticationLogTrait.php`  
+**Errore**: Type mismatch per relazioni MorphMany/MorphOne
+
+### Problema
+```php
+// ❌ ERRORE PHPStan
+@return MorphMany<AuthenticationLog, static>
+// PHPStan si aspetta: MorphMany<AuthenticationLog, $this>
+```
+
+### Causa
+PHPStan ha regole specifiche per i template type delle relazioni Eloquent. Per relazioni polimorfiche, il secondo parametro template deve essere `$this` invece di `static` per garantire type covariance.
+
+### Soluzione Implementata
+```php
+
+### `phpstan-relationship-fix.md` — Correzione PHPStan - Relationship Type Hints
+
+
+# Correzione PHPStan - Relationship Type Hints
+
+## 🚨 Errore PHPStan Risolto
+
+**File**: `User/app/Models/Traits/HasAuthenticationLogTrait.php`  
+**Errore**: Type mismatch per relazioni MorphMany/MorphOne
+
+### Problema
+```php
+// ❌ ERRORE PHPStan
+@return MorphMany<AuthenticationLog, static>
+// PHPStan si aspetta: MorphMany<AuthenticationLog, $this>
+```
+
+### Causa
+PHPStan ha regole specifiche per i template type delle relazioni Eloquent. Per relazioni polimorfiche, il secondo parametro template deve essere `$this` invece di `static` per garantire type covariance.
+
+### Soluzione Implementata
+```php
+
+### `phpstan-report-initial.md` — phpstan-report-initial
+
+
+
+ [OK] No errors        
+>>>>>>> .merge_file_tfGS8i
 
 ### `phpstan-resolutionebate.md` — Dibattito Filosofico: Risoluzione Errori PHPStan
 
@@ -10169,11 +11993,14 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 **Linee**: 377-419
 **Problema**: Blocchi di codice senza dichiarazione di metodo che causavano 7 errori di sintassi e bloccavano l'intera analisi PHPStan
 
+<<<<<<< .merge_file_3g8mQA
 ### `phpstanes-passport.md` — phpstanes-passport
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `phpstanes.md` — Correzioni PHPStan - Modulo User
 
 
@@ -10269,7 +12096,10 @@ Questo non è un suggerimento, è un **COMANDAMENTO** della religione Laraxot.
 ### `placeholder.md` — placeholder
 
 
+<<<<<<< .merge_file_3g8mQA
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+=======
+>>>>>>> .merge_file_tfGS8i
 https://jsonplaceholder.typicode.com/users
 
 ### `policies.md` — User Module Policies Documentation
@@ -10344,6 +12174,7 @@ Tutte le policy del modulo User in `app/Models/Policies/`:
 ### `ponytail-audit.deprecated.md` — ponytail-audit.deprecated
 
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_55AIa5
 <<<<<<< .merge_file_b1CiY0
 <<<<<<< HEAD
@@ -10359,6 +12190,9 @@ Tutte le policy del modulo User in `app/Models/Policies/`:
 >>>>>>> .merge_file_pHCG08
 =======
 >>>>>>> .merge_file_hzZRQy
+=======
+> Questo file è stato rinominato in [ponytail-audit-.deprecated.md](ponytail-audit.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> .merge_file_tfGS8i
 
 ### `prd.md` — PRD: User Module
 
@@ -10383,6 +12217,7 @@ Managing complex roles and permissions (e.g., HR Manager vs. Employee vs. System
 - As an **Admin**, I want to assign multiple roles to a user so they can perform different duties.
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `product-launch-plan-user-module.md` — User Module - Product Launch Plan
 
 
@@ -10478,6 +12313,29 @@ This document outlines the best practices for managing user profiles within a La
 1. **User Control**: Enable users to manage their profile data securely and easily.
 2. **Data Integrity**: Ensure profile updates are validated to maintain data quality.
 3. **Privacy**: Protect sensitive user information with appropriate access controls.
+=======
+### `product-requirements.md` — Policy globale (puntatore)
+
+
+# Policy globale (puntatore)
+
+Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
+
+→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+
+### `profile-management-2.md` — Profile Management in Laravel Modules
+
+
+# Profile Management in Laravel Modules
+
+## Overview
+This document outlines the best practices for managing user profiles within a Laravel module, allowing users to view and update their personal information.
+
+## Key Principles
+1. **User Control**: Enable users to manage their profile data securely and easily.
+2. **Data Integrity**: Ensure profile updates are validated to maintain data quality.
+3. **Privacy**: Protect sensitive user information with appropriate access controls.
+>>>>>>> .merge_file_tfGS8i
 
 ## Implementation Guidelines
 ### 1. Profile View
@@ -10512,11 +12370,14 @@ This document outlines the best practices for managing user profiles within a La
       <p>Email: {{ auth()->user()->email }}</p>
   </div>
 
+<<<<<<< .merge_file_3g8mQA
 ### `profile.md` — profile
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `profiles-id-uuid-policy.md` — Profiles Id/Uuid Policy
 
 
@@ -10656,11 +12517,14 @@ rifare e contestare.
 | PHPInsights — Code | 91.8 % |
 | PHPInsights — Complexity | 100.0 % |
 
+<<<<<<< .merge_file_3g8mQA
 ### `quality-improvements-summary.md` — quality-improvements-summary
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `quality-improvements.md` — Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 
@@ -10730,10 +12594,35 @@ Modulo **foundation** — non è un modulo GC importato ma è prerequisito di pe
 1. **D17** — tabella `roles` + permission su DB test (sblocca tutta la piattaforma).
 2. **D12** — ownership migrazione `users` vs Auth.
 
+<<<<<<< .merge_file_3g8mQA
 ### `quality-tooling.md` — quality-tooling
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
+=======
+### `quality-status.md` — Modulo User — Stato Qualità
+
+
+# Modulo User — Stato Qualità
+
+## Status Summary
+
+| Aspetto | Status | Ultimo Aggiornamento |
+|---------|--------|----------------------|
+| **Merge Conflicts** | ✅ Risolti | 2026-07-08 |
+| **PHPStan `app/` lvl10** | ✅ OK | 2026-07-08 |
+| **PHP Insights `app/`** | ✅ OK | 2026-07-08 |
+| **PHPMD** | ⚠️ Warning noti (StaticAccess, complexity) | 2026-07-08 |
+| **Pest** | ✅ Unit HasTeams + DebugConfig su MySQL | 2026-07-08 |
+| **Git push** | ⚠️ Richiede `pull --rebase` prima di push | 2026-07-08 |
+| **Documentazione** | ✅ Aggiornata | 2026-07-08 |
+
+## PHPStan
+
+```bash
+cd laravel
+XDEBUG_MODE=off ./vendor/bin/phpstan analyse Modules/User/app --level=10
+>>>>>>> .merge_file_tfGS8i
 
 ### `quality.md` — User Module - Quality Status (November 2025)
 
@@ -10865,6 +12754,7 @@ Questa documentazione è stata creata per risolvere i problemi comuni relativi a
 - [API & Integration](#-api--integration)
 - [Testing](#-testing)
 
+<<<<<<< .merge_file_3g8mQA
 ### `redundancy-analysis.md` — redundancy-analysis
 
 
@@ -10888,6 +12778,58 @@ See canonical documentation: ../../../Themes/docs/shared-components/redundancy-a
 >>>>>>> .merge_file_Rr6zcI
 =======
 >>>>>>> .merge_file_OGrhYN
+=======
+### `redundancy-audit.deprecated.md` — redundancy-audit.deprecated
+
+
+> Questo file è stato rinominato in [redundancy-audit-.deprecated.md](redundancy-audit.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+### `redundancy-fixes-january.md` — Correzioni Ridondanze - Gennaio 2026
+
+
+# Correzioni Ridondanze - Gennaio 2026
+
+## Problema Identificato
+
+Durante l'implementazione della gestione completa di Passport, sono state introdotte due ridondanze critiche che violano il principio DRY:
+
+1. **HasXotTable ridondante** in RelationManager
+2. **Passport policies** registrate in `UserServiceProvider` invece che in `PassportServiceProvider`
+
+## Correzioni Applicate
+
+### 1. Rimozione HasXotTable Ridondante
+
+**Problema**: `UsersRelationManager` aveva `use HasXotTable;` anche se `XotBaseRelationManager` già lo include.
+
+**Correzione**: Rimosso `use HasXotTable;` da `UsersRelationManager` (non era presente nel file, ma era stato aggiunto in precedenza).
+
+**File**: `laravel/Modules/User/app/Filament/Resources/SsoProviderResource/RelationManagers/UsersRelationManager.php`
+
+
+### `redundancy-fixes.md` — Correzioni Ridondanze - Gennaio 2026
+
+
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+# Correzioni Ridondanze - Gennaio 2026
+
+## Problema Identificato
+
+Durante l'implementazione della gestione completa di Passport, sono state introdotte due ridondanze critiche che violano il principio DRY:
+
+1. **HasXotTable ridondante** in RelationManager
+2. **Passport policies** registrate in `UserServiceProvider` invece che in `PassportServiceProvider`
+
+## Correzioni Applicate
+
+### 1. Rimozione HasXotTable Ridondante
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `redundancy-report.md` — Redundancy Report — Modulo User
 
@@ -10951,9 +12893,17 @@ Questa documentazione descrive la relazione many-to-many tra utenti e team nel m
 
 ## Collegamenti
 - [Documentazione generale sulle migrazioni](mdc:../../../../docs/database-migrations.md)
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_UwZDMS
 =======
 - [Best practice XotBaseMigration](mdc:../../xo
+=======
+- [Best practice XotBaseMigration](migrations.md)
+
+---
+
+**Collegamento bidireziona
+>>>>>>> .merge_file_tfGS8i
 
 ### `release-marketing-standard.md` — Release e README marketing — User
 
@@ -10984,11 +12934,14 @@ La configurazione usa semantic-release con Conventional Commits, changelog, GitH
 
 https://github.com/solutionforest/filament-access-management
 
+<<<<<<< .merge_file_3g8mQA
 ### `repositories.md` — repositories
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/repositories.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `resource-implementation-philosophy.md` — Internal Analysis: Approaches to Missing Filament Resources
 
 
@@ -11010,6 +12963,7 @@ See canonical documentation: ../../../Themes/docs/shared-components/repositories
 - **Politics**: Prioritize based on actual business needs
 - **Religion**: Quality over quantity in admin inter
 
+<<<<<<< .merge_file_3g8mQA
 ### `resource-implementation.md` — resource-implementation
 
 
@@ -11020,6 +12974,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/resource-imp
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `resource-translation-violation-critical.md` — CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 
@@ -11043,11 +12999,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/resource-tra
 
 **Violation Type**: Override methods from `NavigationLabelTrait` with hardcoded strings
 
+<<<<<<< .merge_file_3g8mQA
 ### `resources-array-keys-philosophy.md` — resources-array-keys-philosophy
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `resources-array-keys.md` — Resources Array Keys Philosophy: String Keys Always
 
 
@@ -11073,7 +13032,10 @@ vs
 
 ### `resources-corrections-summary.md` — Resources Corrections Summary - 2025-01-22
 
+<<<<<<< .merge_file_3g8mQA
 
+=======
+>>>>>>> .merge_file_tfGS8i
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo
@@ -11091,7 +13053,11 @@ Correggere errori PHPStan livello 10, PHPMD e PHP Insights nelle Resources Filam
 - **Tipi Corretti**: Usato tipi base (`BaseFilter`, `Action`) invece di sottotipi specifici
 
 ### Type Safety
+<<<<<<< .merge_file_3g8mQA
 - **Array Keys**
+=======
+- **Array Keys**:
+>>>>>>> .merge_file_tfGS8i
 
 ### `resources-corrections.md` — Resources Corrections Summary - [DATE]
 
@@ -11300,11 +13266,14 @@ Implementazione dell'autenticazione a due fattori per aumentare la sicurezza deg
 - Inject missing OAuth provider classes and validate graceful degradation.
 - Add regression tests for register widget logging/error paths.
 
+<<<<<<< .merge_file_3g8mQA
 ### `roadmap/current-state.md` — current-state
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/01-current-state-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `roadmap/features/audit-logging.md` — Audit Logging
 
 
@@ -11489,6 +13458,7 @@ Implementation of core traits for user management, authentication, and authoriza
 trait HasTeams
 {
 
+<<<<<<< .merge_file_3g8mQA
 ### `roadmap/goals.md` — goals
 
 
@@ -11519,6 +13489,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/01-now-Mo
 
 See canonical documentation: ../../../../Themes/docs/shared-components/00-overview-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `roadmap/phases.md` — Fasi di sviluppo - User Module
 
 
@@ -11572,6 +13544,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/00-overvi
 - [ ] 100% test coverage sui flussi critici di Auth
 - [ ] Auditing delle chiavi segrete e dei token (Passport/Sanctum)
 
+<<<<<<< .merge_file_3g8mQA
 ### `roadmap/risks-1.md` — risks-1
 
 
@@ -11582,6 +13555,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/05-risks-
 
 See canonical documentation: ../../../../Themes/docs/shared-components/04-risks-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `roadmap/technical-debt.md` — Technical Debt - User Module
 
 
@@ -11611,6 +13586,7 @@ Diventare un identity provider completo (IdP) che supporta:
 - Esperienza di login fluida e sicura
 - Modelli di moderazione proattiva basati su AI
 
+<<<<<<< .merge_file_3g8mQA
 ### `roadmap/workstreams.md` — workstreams
 
 
@@ -11621,6 +13597,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/03-workst
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `roadmap-and-issues.md` — User Module - Roadmap, Issues & Optimization
 
 
@@ -11745,11 +13723,14 @@ Il file `@Modules/User/database/migrations/2025_09_18_000000_create_roles_table.
 
 3. **Incompatibilità con il sistema esistente**: Le colonne aggiuntive e la struttura personalizzata potevano caus
 
+<<<<<<< .merge_file_3g8mQA
 ### `roles-migration.md` — roles-migration
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/roles-migration-philosophy-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `roles-permissions.md` — Gestione coerente di roles, permissions e guard_name
 
 # Gestione coerente di roles, permissions e guard_name
@@ -11805,10 +13786,35 @@ Root normalized to keep no `.txt` files, at most four Markdown files, and a sing
 
 - created `User.code-workspace` as the single canonical root workspace file.
 
+<<<<<<< .merge_file_3g8mQA
 ### `routing-error-solution-2.md` — routing-error-solution-2
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/routing-error-solution.md
+=======
+### `routing-best-practices.md` — Best Practices per il Routing in Architettura Volt + Folio + Filament
+
+
+# Best Practices per il Routing in Architettura Volt + Folio + Filament
+
+## Il Principio Fondamentale
+
+In un'architettura che utilizza Volt + Folio + Filament, il routing tradizionale attraverso `web.php` è sostituito da un approccio più moderno e dichiarativo. Questo documento spiega come gestire correttamente il routing in questa architettura.
+
+## I Tre Livelli del Routing
+
+### 1. Filament (Admin Panel)
+```php
+// ✅ CORRETTO: Routing dichiarativo nelle risorse Filament
+class UserResource extends XotBaseResource
+{
+    // Il routing è gestito automaticamente da Filament
+    // Non è necessario definire rotte in web.php
+}
+
+// ❌ ERRATO: Definire rotte in web.php per Filament
+Route::get('/admin/users', [UserController::class, 'index']);
+>>>>>>> .merge_file_tfGS8i
 
 ### `routing-solution.md` — Soluzione Errori di Routing nel Frontoffice
 
@@ -11833,6 +13839,7 @@ Route::get('/admin/users', [UserController::class, 'index']);
   ```
 - Rimuovi la rotta da `web.php`.
 
+<<<<<<< .merge_file_3g8mQA
 ### `rules-index.md` — rules-index
 
 
@@ -11848,6 +13855,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/rules-testin
 
 See canonical documentation: ../../../Themes/docs/shared-components/scheduler-license-key.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `scheduler-license-key.md` — FullCalendar Scheduler License Key
 
 
@@ -11871,11 +13880,14 @@ var calendar = new Calendar(calendarEl, {
 ## Common Issues
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `schema-org-enhancements.md` — schema-org-enhancements
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/schema-org-enhancements.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `schema.md` — User Module Schema
 
 
@@ -11933,7 +13945,10 @@ L'asset canonico è previsto in `../../../../Themes/docs/shared-components/event
 ### `scripts/fix-module-structure.sh.md` — !/bin/bash
 
 
+<<<<<<< .merge_file_3g8mQA
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
+=======
+>>>>>>> .merge_file_tfGS8i
 #!/bin/bash
 
 # Configurazione
@@ -11952,11 +13967,18 @@ fix_directory_case() {
     declare -A dir_mapping=(
         ["Resources"]="resources"
         ["Lang"]="lang"
+<<<<<<< .merge_file_3g8mQA
+=======
+        ["Views"]="views"
+>>>>>>> .merge_file_tfGS8i
 
 ### `scripts/fix-paths.sh.md` — !/bin/bash
 
 
+<<<<<<< .merge_file_3g8mQA
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
+=======
+>>>>>>> .merge_file_tfGS8i
 #!/bin/bash
 
 # Configurazione
@@ -11975,11 +13997,15 @@ fix_module_paths() {
     local module_path="$1"
     local module_name=$(basename "$module_path")
     
+<<<<<<< .merge_file_3g8mQA
 
 ### `second-brain.md` — second-brain
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/second-brain.md
+=======
+    log "INFO" "Processando modulo: $module_name"
+>>>>>>> .merge_file_tfGS8i
 
 ### `services-support-to-actions.md` — Migrazione `app/Support/` → `app/Actions/`
 
@@ -12000,10 +14026,46 @@ See canonical documentation: ../../../Themes/docs/shared-components/second-brain
 
 Verifica `rg`/`grep` su ogni metodo pubblico: solo `getPermissionM
 
+<<<<<<< .merge_file_3g8mQA
 ### `setup-super-admin.md` — setup-super-admin
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/setup-super-admin.md
+=======
+### `session-management-2.md` — Gestione delle Sessioni
+
+
+# Gestione delle Sessioni
+
+## Panoramica
+Questo documento fornisce linee guida per la gestione delle sessioni utente all'interno di un modulo Laravel, garantendo una gestione sicura ed efficiente dello stato utente.
+
+## Principi Chiave
+1. **Sicurezza**: Proteggere i dati di sessione per prevenire l'accesso o la manipolazione non autorizzati.
+2. **Esperienza Utente**: Mantenere lo stato di sessione per fornire un'esperienza senza interruzioni tra le pagine.
+3. **Prestazioni**: Ottimizzare l'archiviazione delle sessioni per minimizzare l'impatto sulla velocità dell'applicazione.
+
+## Linee Guida per l'Implementazione
+### 1. Configurazione della Sessione
+- Configurare le impostazioni della sessione nel file `config/session.php` di Laravel per definire le opzioni di archiviazione, durata e sic
+
+### `session-management.md` — Gestione delle Sessioni
+
+
+# Gestione delle Sessioni
+
+## Panoramica
+Questo documento fornisce linee guida per la gestione delle sessioni utente all'interno di un modulo Laravel, garantendo una gestione sicura ed efficiente dello stato utente.
+
+## Principi Chiave
+1. **Sicurezza**: Proteggere i dati di sessione per prevenire l'accesso o la manipolazione non autorizzati.
+2. **Esperienza Utente**: Mantenere lo stato di sessione per fornire un'esperienza senza interruzioni tra le pagine.
+3. **Prestazioni**: Ottimizzare l'archiviazione delle sessioni per minimizzare l'impatto sulla velocità dell'applicazione.
+
+## Linee Guida per l'Implementazione
+### 1. Configurazione della Sessione
+- Configurare le impostazioni della sessione nel file `config/session.php` di Laravel per definire le opzioni di archiviazione, durata e sic
+>>>>>>> .merge_file_tfGS8i
 
 ### `social-auth-architecture.md` — Social Authentication Architecture
 
@@ -12114,6 +14176,7 @@ composer require laravel/socialite
 ### Configurazione (config/services.php)
 ```php
 
+<<<<<<< .merge_file_3g8mQA
 ### `spatie-models-verification.md` — spatie-models-verification
 
 
@@ -12124,6 +14187,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/spatie-model
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `sso.md` — 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 
@@ -12147,11 +14212,14 @@ Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID 
 ```
 SSO Implementation
 
+<<<<<<< .merge_file_3g8mQA
 ### `stats.md` — stats
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/stats.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `status-blockers-28.md` — User Module — Status & Critical Blockers (2026-07-28)
 
 
@@ -12198,6 +14266,7 @@ Both require escalation beyond forward-only git discipline.
 **Severity:** CRITICAL
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `stories/01.user-phpstan-fix.story.md` — BMAD Story - User PHPStan Fix
 
 # BMAD Story - User PHPStan Fix
@@ -14817,6 +16886,2784 @@ model custom del progetto (`Modules\User\Models\OauthClient`, connessione
 `user`). Conseguenza verificata: `grant_types`, `redirect_uris`,
 `owner_id`, `owner_type` — colonne dichiarate in
 `OauthClientResource/Tables/Oaut
+=======
+### `stories/0002-user-phpstan-fix-2.story.md` — BMAD Story - User PHPStan Fix
+
+# BMAD Story - User PHPStan Fix
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0003-phpstan-cleanup-user.story.md` — [STORY] PHPStan cleanup modulo User
+
+# [STORY] PHPStan cleanup modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0005-team-change-widget.story.md` — 10.1: TeamChangeWidget + hook user-menu
+
+# 10.1: TeamChangeWidget + hook user-menu
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0006-socialite-buttons-widget.story.md` — 10.2: Socialite Buttons → SocialLoginWidget esistente
+
+# 10.2: Socialite Buttons → SocialLoginWidget esistente
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0007-retire-auth-livewire-twins.story.md` — 10.3: Ritiro auth Livewire HTTP (gemelli)
+
+# 10.3: Ritiro auth Livewire HTTP (gemelli)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0008-retire-gdpr-profile-livewire.story.md` — 10.4: DeleteAccount Filament + Privacy/Terms fuori User
+
+# 10.4: DeleteAccount Filament + Privacy/Terms fuori User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0009-fix-userpolicy-authorization-bypass.story.md` — Story 11.1: fix UserPolicy authorization bypass
+
+# Story 11.1: fix UserPolicy authorization bypass
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0011-login-rate-limiting.story.md` — Story 11.2: rate limiting sul login
+
+# Story 11.2: rate limiting sul login
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0012-gdpr-cascade-delete-user.story.md` — Story 11.3: cascade delete GDPR-compliant
+
+# Story 11.3: cascade delete GDPR-compliant
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0013-encrypt-socialite-token.story.md` — Story 11.4: cifrare il token Socialite a riposo
+
+# Story 11.4: cifrare il token Socialite a riposo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0014-guard-privileged-fields-createuserdata.story.md` — Story 11.5: guardia sui campi privilegiati di CreateUserData
+
+# Story 11.5: guardia sui campi privilegiati di CreateUserData
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0015-filament-xotbase-inheritance.story.md` — 12.1: BaseEditUser e UserColumn conformi a XotBase
+
+# 12.1: BaseEditUser e UserColumn conformi a XotBase
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0016-phpstan-docs-corruption-cleanup.story.md` — 12.1: Consolidare cluster docs/*phpstan*.md corrotto
+
+# 12.1: Consolidare cluster docs/*phpstan*.md corrotto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0017-gitignore-archive-legacy-bug-fix.story.md` — 12.2: Fix pattern bare archive/legacy in docs/.gitignore
+
+# 12.2: Fix pattern bare archive/legacy in docs/.gitignore
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0018-hardcoded-labels-translation.story.md` — 12.2: Label e testi hardcoded → lang `user::`
+
+# 12.2: Label e testi hardcoded → lang `user::`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0019-archive-folders-consolidation.story.md` — 12.3: Unificare le cartelle archive/fixes/bug-* sovrapposte
+
+# 12.3: Unificare le cartelle archive/fixes/bug-* sovrapposte
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0021-docs-index-curated-map.story.md` — 12.4: Sostituire docs/index.md con mappa curata a 6 voci
+
+# 12.4: Sostituire docs/index.md con mappa curata a 6 voci
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0022-oauth-dup-resources-ssot.story.md` — 12.4: Resource Passport SSoT nel cluster (fine doppioni radice)
+
+# 12.4: Resource Passport SSoT nel cluster (fine doppioni radice)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0023-filament-artifacts-cleanup.story.md` — 12.5: Igiene fs del modulo: no junk committato
+
+# 12.5: Igiene fs del modulo: no junk committato
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0024-permissions-doc-wrong-module-content.story.md` — 12.5: Sostituire docs/permissions.md (contenuto del modulo sbagliato)
+
+# 12.5: Sostituire docs/permissions.md (contenuto del modulo sbagliato)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0025-policies-resources-linking.story.md` — 12.6: Policy collegate ai Resource Filament
+
+# 12.6: Policy collegate ai Resource Filament
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0026-purpose-scopo-duplicate-and-stale.story.md` — 12.6: Unificare purpose.md/scopo.md e correggere i claim stale
+
+# 12.6: Unificare purpose.md/scopo.md e correggere i claim stale
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0027-readme-frontmatter-qmd-and-issue-consolidation.story.md` — 12.7: Consolidare le issue duplicate PHPStan/coverage
+
+# 12.7: Consolidare le issue duplicate PHPStan/coverage
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0033-oauthclientresource-wrong-model.story.md` — 13.2: Allineare OauthClientResource al modello custom del modulo
+
+# 13.2: Allineare OauthClientResource al modello custom del modulo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0034-retire-gdpr-profile-livewire-completion.story.md` — 13.3: Completare la story bloccata 10.4 (ritiro Livewire GDPR/ToS/Privacy)
+
+# 13.3: Completare la story bloccata 10.4 (ritiro Livewire GDPR/ToS/Privacy)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0035-login-logout-widget-duplication.story.md` — 13.4: Chiarire la duplicazione LoginWidget/LogoutWidget vs Auth/*
+
+# 13.4: Chiarire la duplicazione LoginWidget/LogoutWidget vs Auth/*
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0036-pest-coverage-resources-widgets-gap.story.md` — 13.5: Copertura test Resource/Widget scoperti + causa bootstrap lento
+
+# 13.5: Copertura test Resource/Widget scoperti + causa bootstrap lento
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0037-playwright-e2e-plan.story.md` — 13.6: Piano suite E2E Playwright oltre la registrazione
+
+# 13.6: Piano suite E2E Playwright oltre la registrazione
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0038-fortify-jetstream-contract-audit.story.md` — 13.7: Audit contratti Fortify/Jetstream e policy stub
+
+# 13.7: Audit contratti Fortify/Jetstream e policy stub
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0039-socialite-buttons-renderhook-dead-code.story.md` — 13.8: Risolvere o rimuovere il RenderHook socialite.buttons morto
+
+# 13.8: Risolvere o rimuovere il RenderHook socialite.buttons morto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0040-baseuser-trait-consolidation.story.md` — 13.9: Decisione di design: consolidamento trait su BaseUser
+
+# 13.9: Decisione di design: consolidamento trait su BaseUser
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0041-permissions-matrix-silent-deny-gap.story.md` — 14.1: Matrice permessi reale: coprire le ~30 Policy scoperte
+
+# 14.1: Matrice permessi reale: coprire le ~30 Policy scoperte
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0042-team-vs-tenant-boundary-doc.story.md` — 14.2: Documentare il confine Team vs Tenant
+
+# 14.2: Documentare il confine Team vs Tenant
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0043-auth-log-device-anomaly-view.story.md` — 14.3: Euristica di anomalia su AuthenticationLog/Device
+
+# 14.3: Euristica di anomalia su AuthenticationLog/Device
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0044-passport-dashboard-missing-buttons.story.md` — 14.4: Ripristinare i bottoni Passport dashboard regrediti
+
+# 14.4: Ripristinare i bottoni Passport dashboard regrediti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0045-oauth-client-user-association-incomplete.story.md` — 14.5: Completare l'associazione OAuth client <-> user
+
+# 14.5: Completare l'associazione OAuth client <-> user
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0046-google-oauth-fo-routing-decision.story.md` — 14.6: Decisione di design: routing login Google per cittadini FO
+
+# 14.6: Decisione di design: routing login Google per cittadini FO
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0047-lang-stub-corruption-audit-scope.story.md` — 14.7: Verificare l'ampiezza reale del commit che ha svuotato i lang stub
+
+# 14.7: Verificare l'ampiezza reale del commit che ha svuotato i lang stub
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0048-provtv-remote-issue-tracker-divergence.story.md` — 14.8: Decisione di governance: remote laraxot vs provtv
+
+# 14.8: Decisione di governance: remote laraxot vs provtv
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0049-user-sync-marker-repair.story.md` — 14.9: Marcatori di conflitto nei PHP di lingua e test del modulo User
+
+# 14.9: Marcatori di conflitto nei PHP di lingua e test del modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0050-profile-contract-migration.story.md` — Story 2.1: User/Profile Contract Migration — User Module
+
+# Story 2.1: User/Profile Contract Migration — User Module
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0051-rbac-evaluator-role.story.md` — 3.1: RBAC: Evaluator role (create/edit own Scheda)
+
+# 3.1: RBAC: Evaluator role (create/edit own Scheda)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0052-login-audit.story.md` — 3.10: Login audit: log all auth events
+
+# 3.10: Login audit: log all auth events
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0053-admin-manual-email-verification.story.md` — 3.11: Admin — verifica manuale email account (nessuna mail inviata)
+
+# 3.11: Admin — verifica manuale email account (nessuna mail inviata)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0054-rbac-staff-role.story.md` — 3.2: RBAC: Staff role (read-only own Scheda)
+
+# 3.2: RBAC: Staff role (read-only own Scheda)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0055-rbac-admin-role.story.md` — 3.3: RBAC: Admin role (all CRUD, user mgmt)
+
+# 3.3: RBAC: Admin role (all CRUD, user mgmt)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0056-rbac-senior-mgmt-role.story.md` — 3.4: RBAC: Senior Mgmt role (approve Progressioni)
+
+# 3.4: RBAC: Senior Mgmt role (approve Progressioni)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0057-verify-data-residency.story.md` — 3.9: Data residency: verify EU-only deployment
+
+# 3.9: Data residency: verify EU-only deployment
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0058-user-lang-phpstan-debt.story.md` — 5.1: PHPStan Level 10: resolve remaining User/Lang type debt
+
+# 5.1: PHPStan Level 10: resolve remaining User/Lang type debt
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0059-user-invite-workflow.story.md` — 6.2: User invite workflow: admin creates staff + evaluators
+
+# 6.2: User invite workflow: admin creates staff + evaluators
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0060-permission-seeding-invite-batch.story.md` — 6.3: Permission seeding: auto-assign roles to invite batch
+
+# 6.3: Permission seeding: auto-assign roles to invite batch
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0061-phpstan-application-contracts.story.md` — Story 7.1-USER — Contratti applicativi PHPStan
+
+# Story 7.1-USER — Contratti applicativi PHPStan
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0062-phpstan-test-harness-contracts.story.md` — Story 7.2-USER — Harness e test PHPStan
+
+# Story 7.2-USER — Harness e test PHPStan
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0063-test-mai-eseguiti-suffisso-mancante.story.md` — 7.3: due test di User non venivano eseguiti da nessuno
+
+# 7.3: due test di User non venivano eseguiti da nessuno
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0064-phpstan-paramtype-coverage.story.md` — USER-7.4 — Param type mancanti nel modulo User
+
+# USER-7.4 — Param type mancanti nel modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0065-mixed-type-reduction.story.md` — USER-7.5 — Ridurre `mixed` dove possibile
+
+# USER-7.5 — Ridurre `mixed` dove possibile
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0066-phpstan-l10-user-config-offset-access.story.md` — Story 8.1: PHPStan L10 User Module — Config offsetAccess Resolution
+
+# Story 8.1: PHPStan L10 User Module — Config offsetAccess Resolution
+
+## Context and Problem Statement
+
+The User module's migration file (`2026_10_05_174817_create_permission_tables.php`) had 77 PHPStan L10 errors, all stemming from:
+- `config()` helper returning `mixed` type
+- Offset access on `mixed` without type narrowing: `config('...')['key']` 
+
+Root cause: Spatie permission config values accessed via offset without static type declarations.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+
+### `stories/0067-module-remote-git-object-corruption.story.md` — 8.1: module_user_fila5 remote git object corruption
+
+# 8.1: module_user_fila5 remote git object corruption
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0068-phpstan-pest-void-chain-false-positives.story.md` — 8.2 — PHPStan: falsi positivi `it()->todo()` / `uses()->group()` (void chain)
+
+# 8.2 — PHPStan: falsi positivi `it()->todo()` / `uses()->group()` (void chain)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0069-uppercase-root-folders-and-changelog-dup.story.md` — 8.3 — Cartelle maiuscole in root (`Application/`, `Database/`)
+
+# 8.3 — Cartelle maiuscole in root (`Application/`, `Database/`)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0070-phpstan-bootstrap-import-stripping-corruption.story.md` — Story
+
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0071-super-admin-widget.story.md` — 9.1: SuperAdmin XotBaseWidget + vista + lang
+
+# 9.1: SuperAdmin XotBaseWidget + vista + lang
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0072-admin-panel-provider-hook.story.md` — 9.2: AdminPanelProvider — hook SuperAdmin sul widget
+
+# 9.2: AdminPanelProvider — hook SuperAdmin sul widget
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0073-remove-livewire-superadmin.story.md` — 9.3: Rimuovere Livewire HTTP SuperAdmin
+
+# 9.3: Rimuovere Livewire HTTP SuperAdmin
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0074-super-admin-widget-tests.story.md` — 9.4: Test Pest SuperAdmin widget
+
+# 9.4: Test Pest SuperAdmin widget
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0075-super-admin-widget-icons.story.md` — 9.5: Icone semantiche SuperAdmin widget
+
+# 9.5: Icone semantiche SuperAdmin widget
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0076-super-admin-widget-marvel-icons.story.md` — 9.6: icone crown Marvel-style animate per SuperAdmin widget
+
+# 9.6: icone crown Marvel-style animate per SuperAdmin widget
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0077-super-admin-widget-icons-final.story.md` — 9.7: SuperAdminWidget, stato finale icone + regressione risolta
+
+# 9.7: SuperAdminWidget, stato finale icone + regressione risolta
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0078-super-admin-widget-docs-verification.story.md` — 9.9: verifica documentazione campagna + diagnosi residua icone
+
+# 9.9: verifica documentazione campagna + diagnosi residua icone
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0080-area-personale-servizi-cms-page.story.md` — Area personale /servizi: pagina CMS mancante (404)
+
+# Area personale /servizi: pagina CMS mancante (404)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0087-auth-i18n-all-locales-2.story.md` — Pagine auth e segnalazioni in tutte le lingue (it, en, de, es)
+
+# Pagine auth e segnalazioni in tutte le lingue (it, en, de, es)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0089-auth-pages-i18n-en-de-es-07.story.md` — Login e registrazione in inglese, tedesco e spagnolo
+
+# Login e registrazione in inglese, tedesco e spagnolo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0090-auth-pages-i18n-en-de-es-2.story.md` — Login e registrazione in inglese, tedesco e spagnolo
+
+# Login e registrazione in inglese, tedesco e spagnolo
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0092-auth-verify-confirm-design-comuni-shell.story.md` — Auth verify e password/confirm: allineamento al guscio Design Comuni
+
+# Auth verify e password/confirm: allineamento al guscio Design Comuni
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0093-auth-verify-resend-loading.story.md` — Verify page — spinner su "richiedine un altro"
+
+# Verify page — spinner su "richiedine un altro"
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0096-cache-store-env-var-test-infra-2.story.md` — phpunit.xml: CACHE_DRIVER non ha effetto, serve CACHE_STORE
+
+# phpunit.xml: CACHE_DRIVER non ha effetto, serve CACHE_STORE
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0099-continuation-2.story.md` — User Module — Continuation Task
+
+# User Module — Continuation Task
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0102-dashboard-lang-collateral-damage-2.story.md` — STORY — 500 reale su /user/admin da file lang troncato, audit blast radius commit 0701a777a
+
+# STORY — 500 reale su /user/admin da file lang troncato, audit blast radius commit 0701a777a
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0103-dcp-138-limite-di-tentativi-su-login-registrazione-e-azioni-costose-2.story.md` — DCP-138: il login e le azioni costose hanno un tetto
+
+# DCP-138: il login e le azioni costose hanno un tetto
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0104-dcp-144-accesso-del-cittadino-con-spid-cie-o-decisione-motivata-2.story.md` — DCP-144: come si identifica il cittadino che segnala
+
+# DCP-144: come si identifica il cittadino che segnala
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0106-dcp-446-reset-password-con-la-policy-della-registrazione.story.md` — DCP-446: il reset password applica la stessa policy della registrazione
+
+# DCP-446: il reset password applica la stessa policy della registrazione
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0108-docs-index-audit.story.md` — Story: audit indice documentazione (Modules/User/docs)
+
+# Story: audit indice documentazione (Modules/User/docs)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0109-docs-merge-conflict-markers-cleanup.story.md` — User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice
+
+# User: marker di conflitto git residui in docs/ — pulizia + aggiornamento indice
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0110-docs-user-studio-e-ingressi.story.md` — User: studio del modulo, ingressi docs e cause dei link rotti
+
+# User: studio del modulo, ingressi docs e cause dei link rotti
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0111-form-column-parity.story.md` — Story: parita' Forms/Components ↔ Tables/Columns (User)
+
+# Story: parita' Forms/Components ↔ Tables/Columns (User)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0112-lang-files-empty-stub-corruption.story.md` — Story: file di lingua User svuotati a stub senza return
+
+# Story: file di lingua User svuotati a stub senza return
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0115-login-page-it-translations-fix-2.story.md` — Login FO /it/auth/login: traduzioni mancanti e copy errato
+
+# Login FO /it/auth/login: traduzioni mancanti e copy errato
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0118-login-unknown-database-fixcity-user-2.story.md` — Login FO: Unknown database 'fixcity_user'
+
+# Login FO: Unknown database 'fixcity_user'
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0121-logout-post-localized-route-2.story.md` — Logout: POST /{lang}/auth/logout rispondeva 405
+
+# Logout: POST /{lang}/auth/logout rispondeva 405
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0124-oauth-access-token-permission-self-heal-permissiondoesnotexist-deve-piu-produrre.story.md` — Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
+
+# Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0125-oauth-access-token-permission-self-heal-2.story.md` — Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
+
+# Permission self-heal: PermissionDoesNotExist non deve piu' produrre 500
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0126-phpstan-cleanup-user-2.story.md` — [STORY] PHPStan cleanup modulo User
+
+# [STORY] PHPStan cleanup modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0127-phpstan-fix-user.story.md` — Story
+
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0129-phpstan-merge-bootstrap.story.md` — User: PHP merge-marker bootstrap
+
+# User: PHP merge-marker bootstrap
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0131-placeholder-translations-cleanup.story.md` — Via le traduzioni segnaposto dai file di lingua
+
+# Via le traduzioni segnaposto dai file di lingua
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0134-register-logout-verify-email-2.story.md` — Registrazione, logout e verifica email (FO)
+
+# Registrazione, logout e verifica email (FO)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0137-register-page-ui-ux-2.story.md` — Registrazione FO /it/auth/register: traduzioni, struttura card, mobile
+
+# Registrazione FO /it/auth/register: traduzioni, struttura card, mobile
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0138-scritture-dentro-accessor-nei-moduli-condivisi-2.story.md` — Sei accessor nei moduli condivisi scrivono a database quando vengono letti
+
+# Sei accessor nei moduli condivisi scrivono a database quando vengono letti
+
+## Context and Problem Statement
+
+`User` e `Lang` sono moduli base della piattaforma Laraxot, usati da altri
+progetti oltre a Quaeris. Un accessor che persiste puo' essere load-bearing
+altrove: `getUniqueNameAttribute` genera un nome univoco, e se qualcuno conta
+sul fatto che dopo la prima lettura quel nome sia scritto a database, togliere
+la scrittura cambia il comportamento senza che nessun test di questo repository
+se ne accorga — la suite e' ferma (vedi `docs/audit/RISK_REGISTER.md`, TEST-01).
+
+Correggere alla cieca sei accessor in moduli condivisi, senza test che girano e
+senza sapere chi altro li usa, e' piu' rischioso del difetto. Per questo la
+story e' aperta e il lavoro va coordinato, non fatto di nascos
+
+### `stories/0141-superadmin-widget-crown-icons-2.story.md` — SuperAdminWidget: icone corona + fix bug reale @svg()
+
+# SuperAdminWidget: icone corona + fix bug reale @svg()
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0144-superadmin-widget-icons-2.story.md` — SuperAdminWidget: icone piu' adeguate
+
+# SuperAdminWidget: icone piu' adeguate
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0147-superadmin-widget-negate-icon-fix-2.story.md` — SuperAdminWidget: icona "negato" ambigua, ripristinata a simbolo di divieto standard
+
+# SuperAdminWidget: icona "negato" ambigua, ripristinata a simbolo di divieto standard
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0149-uppercase-root-dirs-database-application.story.md` — Story
+
+# Story
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0150-user-gap-analysis.story.md` — Story — Gap analysis utente + clean-up fase 1 (2026-09-22)
+
+# Story — Gap analysis utente + clean-up fase 1 (2026-09-22)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0151-user-hash-password-solo-nelle-actions.story.md` — Password hashate solo in un'Action
+
+# Password hashate solo in un'Action
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0154-user-module-closure-2.story.md` — User: chiusura modulo 2026-09-11
+
+# User: chiusura modulo 2026-09-11
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0158-user-pagine-appearance-salvataggio-o-nascondi.story.md` — Pagine Appearance di User: implementare il salvataggio o nasconderle
+
+# Pagine Appearance di User: implementare il salvataggio o nasconderle
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0159-user-quality-gate.story.md` — Story: Quality-gate closure — Modules/User (2026-09-04)
+
+# Story: Quality-gate closure — Modules/User (2026-09-04)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0161-user-quality-gate-2.story.md` — Story: Quality-gate closure — Modules/User (2026-09-04)
+
+# Story: Quality-gate closure — Modules/User (2026-09-04)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0162-user-stringhe-ui-tradotte.story.md` — Stringhe UI del Filament User tradotte
+
+# Stringhe UI del Filament User tradotte
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0163-user-tenant-fillable-cast-e-colonne.story.md` — Tenant User: fillable, cast e colonne allineati alla migration
+
+# Tenant User: fillable, cast e colonne allineati alla migration
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0164-user-test-igiene-phpunit-testcase-e-svuotati.story.md` — Igiene dei test User: file non eseguiti, tautologie, stile PHPUnit
+
+# Igiene dei test User: file non eseguiti, tautologie, stile PHPUnit
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0165-user-test-senza-refresh-database.story.md` — Test User senza RefreshDatabase
+
+# Test User senza RefreshDatabase
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0167-users-migration-owner-convention.story.md` — User migration owner convention
+
+# User migration owner convention
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0168-users-migrations-consolidation.story.md` — Migrazioni users: consolidamento in create_users_table
+
+# Migrazioni users: consolidamento in create_users_table
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/0172-xotbaseresourcetable-suspect-columns-user-module-followup.story.md` — Follow-up — colonne sospette e bug reale (modulo User)
+
+# Follow-up — colonne sospette e bug reale (modulo User)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/9.2.admin-panel-provider-hook.dev.md` — 9.2 development record
+
+# 9.2 development record
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/phpstan-cleanup-user.dev.md` — [DEV] PHPStan cleanup modulo User
+
+# [DEV] PHPStan cleanup modulo User
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/roles-teams-scoping-disabled-by-override.md` — Story: il team scoping dei ruoli e' disattivato da un override di `roles()`
+
+# Story: il team scoping dei ruoli e' disattivato da un override di `roles()`
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/story-501-personal-ticket-detail-link.md` — STORY-501 — Dettaglio dalla lista “Le mie pratiche”
+
+# STORY-501 — Dettaglio dalla lista “Le mie pratiche”
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/user-passport-create-client-credentials-button.md` — STORY — Pulsante "Nuovo cliente OAuth" nella Passport Dashboard
+
+# STORY — Pulsante "Nuovo cliente OAuth" nella Passport Dashboard
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+
+### `stories/user-passport-new-credentials-button-lost-in-large-commit.md` — STORY — Il bottone "Nuove credenziali" è scomparso dalla Passport Dashboard
+
+# STORY — Il bottone "Nuove credenziali" è scomparso dalla Passport Dashboard
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `strategy.md` — Product Strategy: User Module
 
@@ -14860,11 +19707,14 @@ Marco Sottana
 .git/hooks
 .git/info
 
+<<<<<<< .merge_file_3g8mQA
 ### `sushi-schema-fix.md` — sushi-schema-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/sushi-schema-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `sushi-schema.md` — User Module - Sushi Schema Fix (`SocialProvider` Model)
 
 
@@ -14918,6 +19768,7 @@ lavoro) e **perché** ogni scelta, così il prossimo agente non rifà il ragiona
 **Contesto** (linee 125-182):
 ```php
 
+<<<<<<< .merge_file_3g8mQA
 ### `syntaxs-to.md` — syntaxs-to
 
 
@@ -14928,6 +19779,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/syntax-error
 
 See canonical documentation: ../../../Themes/docs/shared-components/tailwind.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `task-completare-2fa.md` — Task: Completare 2FA Implementation - User
 
 
@@ -15091,6 +19944,7 @@ Le 13 Socialite Actions gestiscono il flusso OAuth social login ma hanno copertu
 
 ### `tasks/001-user-management-system.md` — Task 001: Implement User Management and Authentication System
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_4nXBB4
 <<<<<<< .merge_file_FFiI1H
 <<<<<<< .merge_file_79UVIF
@@ -15256,10 +20110,125 @@ qmd: "tasks indice task user"
 >>>>>>> .merge_file_lJ30NW
 =======
 >>>>>>> .merge_file_VQt6y1
+=======
+# Task 001: Implement User Management and Authentication System
+
+## Description
+Create comprehensive user management system with authentication, authorization, profiles, teams, and social authentication.
+
+## Context
+The User module is critical for the entire system. It needs robust user management, authentication, authorization, and team functionality with security best practices.
+
+## Requirements
+
+### Functional Requirements
+- User management (CRUD)
+- Authentication (login, logout, registration, password reset)
+- Authorization (roles, permissions, policies)
+- User profiles
+- Team management
+- Social authentication (OAuth)
+- Two-factor authentication
+- User settings and preferences
+- User activity tracking
+
+### `tasks/audit-dipendenze-user.md` — Task: Audit Completo Dipendenze User
+
+# Task: Audit Completo Dipendenze User
+
+**Modulo**: User  
+**Fase**: 1 - Correzione Violazioni Architetturali  
+**Priorità**: Alta  
+**Stima**: 4-6 ore
+
+## Obiettivo
+
+Verificare che il modulo User non dipenda da moduli business specifici e sia riutilizzabile al 100%.
+
+## Sottotask
+
+- [ ] Analizzare tutti gli import nel modulo User
+- [ ] Identificare dipendenze circolari
+- [ ] Verificare che User sia modulo base riutilizzabile
+- [ ] Correggere eventuali violazioni
+- [ ] Documentare regole dipendenze
+
+## Dipendenze
+
+### `tasks/aumentare-copertura-test-user.md` — Task: Aumentare Copertura Test User
+
+# Task: Aumentare Copertura Test User
+
+**Modulo**: User  
+**Fase**: 2 - Testing e Qualità  
+**Priorità**: Media  
+**Stima**: 10-15 ore
+
+## Obiettivo
+
+Portare la copertura test del modulo User da ~85% a > 95%.
+
+## Sottotask
+
+- [ ] Test unitari per tutti i Models
+- [ ] Test feature per Actions
+- [ ] Test integration per Resources Filament
+- [ ] Test widget authentication (Login, Register, Logout)
+- [ ] Test team management
+- [ ] Test permission system
+
+
+### `tasks/fix-doc-merge-markers.md` — Task: Fix Documentation Merge Markers (User Module)
+
+# Task: Fix Documentation Merge Markers (User Module)
+
+## 📋 Obiettivo
+Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i file di documentazione del modulo User, garantendo una lettura pulita e professionale.
+
+## 🚨 File Identificati (Esempi)
+- `Modules/User/docs/README.md`
+- `Modules/User/docs/roadmap.md` (già creato pulito, ma verificare altri)
+- Molti altri file nella directory `docs/`.
+
+## ✅ Checklist
+- [ ] Cercare ricorsivamente i marker `<<<<<<<`, `=======`, `>>>>>>>` in `Modules/User/docs/`.
+- [ ] Per ogni file trovato:
+    - [ ] Analizzare le due versioni in conflitto.
+    - [ ] Scegliere la versione più recente/corretta (spesso quella post-upgrade).
+    - [ ] Rimuovere i marker e unificare il testo.
+- [ ] Verificare la formattazione Markdown dopo la puli
+
+### `tasks/spostamento-widget-violante.md` — Task: Spostamento Widget Violante
+
+# Task: Spostamento Widget Violante
+
+**Modulo**: User  
+**Fase**: 1 - Correzione Violazioni Architetturali  
+**Priorità**: Critica  
+**Stima**: 2-3 ore
+
+## Obiettivo
+
+Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
+
+## Sottotask
+
+- [ ] Identificare widget `UserTypeRegistrationsChartWidget` e sue dipendenze
+- [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
+- [ ] Spostare widget e aggiornare namespace
+- [ ] Rimuovere file originale da User
+- [ ] Verificare con script controllo dipendenze
+- [ ] Test di regressione
+- [ ] Aggiornare documentazione
+
+### `tasks/tasks-index.md` — Indice task - Modulo User
+
+>>>>>>> .merge_file_tfGS8i
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.
 
+<<<<<<< .merge_file_3g8mQA
 ### `tasks/user-cleanup-docs.md` — Task: User Docs Cleanup
 
 <<<<<<< .merge_file_oVpwVK
@@ -15338,6 +20307,84 @@ qmd: "user filament v5 task alignment clusters"
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/001-user-management-system.md
+=======
+## Fase 1: Correzione Violazioni Architetturali
+
+| Task | File | Priorità | Stima |
+|------|------|----------|-------|
+| Spostamento Widget Violante | [spostamento-widget-violante.md](spostamento-widget-violante.md) | Critica | 2-3 h |
+| Audit Completo Dipendenze | [audit-dipendenze-user.md](audit-dipendenze-user.md) | Alta | 4-6 h |
+
+## Fase 2: Testing e Qualità
+
+| Task | File | Priorità | Stima |
+|------|------|----------|-------|
+| Aumentare Copertura Test | [aumentare-copertura-test-user.md](aumentare-copertura-test-user.md) | Media | 10-15 h |
+
+## Fase 3: Performance
+
+| Task | File | Priorità | Stima |
+
+### `tasks/user-cleanup-docs.md` — Task: User Docs Cleanup
+
+# Task: User Docs Cleanup
+
+## 📋 Obiettivo
+Riorganizzare la mastodontica cartella docs del modulo User (550+ file) che contiene anni di analisi sovrapposte.
+
+## 🚨 Problemi Identificati
+- Ripetizioni infinite di analisi (es. `logout-blade-analysis-1.md`, `logout-blade-analysis-4.md`, `logout-blade-corrected-analysis-4.md`).
+- File duplicati per conflitti Git non risolti (`dry-kiss-analysis-conflict-018b09.md`).
+- File temporanei e log di coverage enormi (`coverage_full.txt` da 600kb).
+
+## ✅ Checklist
+- [ ] Eliminazione di tutti i file `.txt` di log pesanti (se non necessari per auditing storico).
+- [ ] Consolidamento delle 10+ guide sul logout in un unico "Logout Architecture Guide".
+- [ ] Rimozione sistematica dei duplicati `-1.md` e `-2.md`.
+- [ ] Spostamento massivo in `archive/` di anali
+
+### `tasks/user-filament-v5-alignment.md` — Task: User Filament v5 Alignment (Clusters)
+
+# Task: User Filament v5 Alignment (Clusters)
+
+## 📋 Obiettivo
+Utilizzare la nuova funzionalità "Clusters" di Filament v5 per organizzare le numerose risorse del modulo User in gruppi logici, migliorando la navigazione e l'esperienza utente nell'Admin Panel.
+
+## 🏗️ Struttura Proposta
+- **IdentityCluster**: User, Profile, AuthenticationLog.
+- **AccessControlCluster**: Role, Permission.
+- **ApiCluster**: Passport Clients, Tokens, OAuth resources.
+- **OrganizationCluster**: Team, Tenant.
+
+## ✅ Checklist
+- [ ] Creazione delle classi Cluster in `app/Filament/Clusters/`.
+- [ ] Assegnazione di ogni risorsa al rispettivo Cluster.
+- [ ] Aggiornamento delle icone e dei label dei Cluster (utilizzando traduzioni automatiche).
+- [ ] Verifica che i permessi (Spatie) funzionino correttamente con la nuova 
+
+### `tasks/user-filament-v5.md` — Task: User Filament v5 Alignment (Clusters)
+
+# Task: User Filament v5 Alignment (Clusters)
+
+## 📋 Obiettivo
+Organizzare la gestione degli utenti e della sicurezza in Cluster dedicati per una navigazione più pulita.
+
+## 🏗️ Struttura Proposta
+- **IdentityCluster**:
+    - **UserResource**: Gestione anagrafica utenti.
+    - **RoleResource**: Gestione ruoli (Spatie).
+    - **PermissionResource**: Gestione permessi granulari.
+- **SecurityCluster**:
+    - **OauthClientResource**: Gestione client Passport.
+    - **AuditLogResource**: Storico accessi e modifiche.
+    - **SessionResource**: Gestione sessioni attive.
+
+## ✅ Checklist
+- [ ] Registrazione dei due nuovi Cluster.
+- [ ] Migrazione delle risorse esistenti.
+- [ ] Aggiornamento dei link nelle dashboard.
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `tasks-schema-org-person.md` — Task: Schema.org Person (profilo utente e speaker)
 
@@ -15356,11 +20403,15 @@ See canonical documentation: ../../../../Themes/docs/shared-components/001-user-
 Implement Schema.org **Person** type for user profiles, speakers, and attendees to improve SEO, knowledge graph presence, and author attribution.
 
 **Reference Links:**
+<<<<<<< .merge_file_3g8mQA
 - [schema-org-enhancements](schema-org-enhancements.md)
+=======
+>>>>>>> .merge_file_tfGS8i
 - [Schema.org Person](https://schema.org/Person)
 - [Meetup schema-org-enhancement-recommendations](../../meetup/docs/schema-org-enhancement-recommendations.md)
 - [Meetup schema-org-research-comprehensive](../../meetup/docs/schema-org-research-comprehensive.md)
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `team-contract-usage-reasoning.md` — TeamContract Usage Reasoning
 
@@ -15384,6 +20435,68 @@ qmd: "team contract usage reasoning teamcontract"
 >>>>>>> .merge_file_9OmX6Y
 =======
 >>>>>>> .merge_file_srKeuc
+=======
+---
+
+### `team-contract-usage-reasoning.md` — TeamContract Usage Reasoning
+
+# TeamContract Usage Reasoning
+
+## Overview
+This document explains the rationale behind using `TeamContract` instead of `Team` in the `HasTeams` trait within the User module. The purpose is to ensure that the codebase adheres to best practices for dependency management and future-proofing.
+
+## Reasoning for Using TeamContract
+
+1. **Dependency Inversion Principle**: By referencing `TeamContract` (likely an interface or abstract class), the `HasTeams` trait is not tightly coupled to a specific `Team` class implementation. This allows for multiple implementations of team functionality without requiring changes to the trait itself.
+
+2. **Flexibility and Maintainability**: Using an interface or contract enables the system to support different team models or structures in the future. For instanc
+
+### `team-user-composite-priy-key.md` — Fix: team_user Composite Primary Key Implementation
+
+
+# Fix: team_user Composite Primary Key Implementation
+
+## Data Intervento
+
+**[DATE]** - Implementazione chiave primaria composita per tabella pivot team_user
+
+## Problema Identificato
+
+Errore: `SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'` quando si cerca di associare un team a un utente tramite `AttachAction` di Filament.
+
+### Causa Radice
+
+La tabella `team_user` aveva una struttura in conflitto:
+
+- Migrazione usava `$table->id()` (auto-increment integer) come PRIMARY KEY
+- Modello `Membership` aveva `$incrementing = false` e generava UUID
+- Questo creava un conflitto: il modello tentava di inserire stringhe UUID vuote in un campo auto-increment
+
+### Stack Trace dell'Errore
+
+### `team-user-permissions.md` — Team User Permissions Column Fix - Laraxot Philosophy Compliant
+
+
+# Team User Permissions Column Fix - Laraxot Philosophy Compliant
+
+**Date**: [DATE]  
+**Status**: ✅ **FIXED** (Following Laraxot Philosophy)  
+**Severity**: 🔴 **CRITICAL** (Production down)
+
+## Laraxot Philosophy: 1 Table = 1 Migration File
+
+> **Regola Fondamentale**: In Laraxot, **non devono mai esistere più migration files per la stessa tabella all'interno dello stesso modulo**.
+
+## Problem
+
+Production site (`sottana.net`) was throwing a SQL error:
+
+```
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'team_user.permissions' in 'field list'
+```
+
+**Error Location**: `Modules/User/app/Models/Traits/HasTeams.php:57` → `teams()` relationship  
+>>>>>>> .merge_file_tfGS8i
 
 ### `teams.md` — Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -15414,9 +20527,15 @@ https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-fila
 ### Versione HEAD
 
 
+<<<<<<< .merge_file_3g8mQA
 ## Collegamenti tra versioni di terms-conditions-2.md
 * [terms-conditions-2.md](../../../gdpr/docs/terms-conditions-2.md)
 * [terms-conditions-2.md](../../../user/docs/terms-conditions-2.md)
+=======
+## Collegamenti tra versioni di terms_conditions.md
+* [terms_conditions.md](../../../gdpr/docs/terms_conditions.md)
+* [terms_conditions.md](../../../user/docs/terms_conditions.md)
+>>>>>>> .merge_file_tfGS8i
 
 
 ### Versione Incoming
@@ -15442,11 +20561,14 @@ uses(TestCase::class, HasUserTestCase::class);
 ```
 `TestCase` dichiara già `public ?User $user = null;` (riga 82). `HasUserTestCase` (trait) dichiara `protected User $user;` — tipo non-nullable e visibilità diversa. Comporre le due nella stessa classe di test è illegale in PHP (property redeclaration in
 
+<<<<<<< .merge_file_3g8mQA
 ### `testcase-sqlite-to-mysql-fix.md` — testcase-sqlite-to-mysql-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `testcase-sqlite-to-mysql.md` — TestCase SQLite to MySQL Fix - User Module
 
 
@@ -15535,6 +20657,7 @@ In Laravel factories, the `definition()` method runs FIRST, then the attributes 
 
 The factory should NOT generate the slug i
 
+<<<<<<< .merge_file_3g8mQA
 ### `testing/tenantfactory.md` — tenantfactory
 
 
@@ -15545,6 +20668,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/tenantfac
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `testing-coverage-floor.md` — Coverage floor 50% — perimetro offline User
 
 
@@ -15584,6 +20709,7 @@ This is the core principle: tests must reflect ACTUAL production code, not imagi
 
 ### `testing-rules.md` — Testing Rules & Strategy
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_Vn5UVu
 <<<<<<< .merge_file_DbcsFQ
 <<<<<<< .merge_file_Jeo3nP
@@ -15604,6 +20730,24 @@ qmd: "testing rules strategy"
 >>>>>>> .merge_file_msdh6a
 =======
 >>>>>>> .merge_file_uSbgGh
+=======
+# Testing Rules & Strategy
+
+## Strict Guidelines (Super Mucca / Laraxot)
+
+1.  **Framework**: All tests MUST be written in **Pest**. 
+    *   If you find PHPUnit tests, convert them to Pest immediately.
+    *   Run tests from the `laravel/` root using: `./vendor/bin/pest`.
+
+2.  **Database Strategy**:
+    *   **NEVER use `Illuminate\Foundation\Testing\RefreshDatabase`**. 
+    *   Understand the "why": We avoid full refreshes to handle complex seeders, existing data, and potential parallel testing issues in this modular mono-repo.
+    *   Use `.env.testing` for environment configuration.
+    *   Ensure `.env.testing` uses the **same database driver/dialect** as `.env` to avoid compatibility issues.
+
+3.  **Philosophy**:
+    *   **"The Site Works"**: If a test fails claiming functionality is mi
+>>>>>>> .merge_file_tfGS8i
 
 ### `testing-strategy.md` — Testing Strategy for the User Module and Laraxot Applications
 
@@ -15643,11 +20787,14 @@ class LoginTest extends TestCase
     public function test_login_page_renders_correctly()
     {
 
+<<<<<<< .merge_file_3g8mQA
 ### `testing-user-command-integration-fix.md` — testing-user-command-integration-fix
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `testing-user-command-integration.md` — Fix: UserCommandIntegrationTest - Application and Config Issues
 
 
@@ -15758,11 +20905,14 @@ class Role extends SpatieRole
 {
     protected $connection = 'user';
 
+<<<<<<< .merge_file_3g8mQA
 ### `third-party-models.md` — third-party-models
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `timestamps-rule.md` — User Module Timestamps Rule
 
 
@@ -15786,6 +20936,7 @@ Eliminare qualsiasi uso combinato di:
 
 ## Rationale
 
+<<<<<<< .merge_file_3g8mQA
 ### `tips.md` — tips
 
 
@@ -15796,6 +20947,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/tips.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/todo.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `traits/has-authentication-log.md` — Trait HasAuthenticationLogTrait
 
 
@@ -15911,11 +21064,14 @@ Both had translation **keys** instead of **actual translations**:
 
 ```php
 
+<<<<<<< .merge_file_3g8mQA
 ### `translation-best-practices-1.md` — translation-best-practices-1
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-best-practices.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `translation-best-practices.md` — Best Practices per le Traduzioni
 
 
@@ -15980,7 +21136,10 @@ The 'fields' key in translation files is essential for the Filament translation 
 ### `translation-fixes.md` — 2. Sintassi Array Inconsistente
 
 
+<<<<<<< .merge_file_3g8mQA
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
+=======
+>>>>>>> .merge_file_tfGS8i
 - `>>>>>>> 199538c (.)`
 
 **Soluzione**: Rimossi tutti i marcatori di conflitto e mantenuto solo il contenuto corretto.
@@ -15999,6 +21158,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 - `modal_heading`
 - `modal_description`
 - `success`
+<<<<<<< .merge_file_3g8mQA
+=======
+- `error`
+>>>>>>> .merge_file_tfGS8i
 
 ### `translation-guidelines.md` — translation-guidelines
 
@@ -16029,10 +21192,15 @@ return [
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'
+<<<<<<< .merge_file_3g8mQA
+=======
+Project convention: '<namespace>::<context>.<collection>.<key>.<type>' (exactly five elements, counting the namespace)
+>>>>>>> .merge_file_tfGS8i
 
 Examples:
 - user::auth.register.actions.submit.label -> label for the submit button in registration form
 - user::auth.login.page.meta_title.label -> page meta title label for login
+<<<<<<< .merge_file_3g8mQA
 
 Why:
 - Ensures predictable namespacing across modules and themes
@@ -16045,6 +21213,19 @@ Action performed:
 Follow-ups:
 - Run a repo-wide grep for occurrences of less-structured keys and standardize them.
 - Add CI check to enforce prototype for new keys.
+=======
+- user::auth.login.password.text -> password field label/text in the login collection
+
+Invalid examples:
+- user::auth.password
+- user::auth.login.password
+- pub_theme::accessibility.title
+
+For the accessibility statement the theme uses
+`pub_theme::accessibility.page.title.text`: `accessibility` is the context,
+`page` the collection, `title` the key and `text` the type.
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `translation-maintenance-log.md` — Translation Maintenance Log - User Module
 
@@ -16069,6 +21250,7 @@ Il `LoginWidget` utilizzava 4 chiavi di traduzione che non esistevano:
 3. **Documentazione completa** dell'audit process
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `translation-resolution-prototype.md` — translation-resolution-prototype
 
 
@@ -16079,6 +21261,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/translation-
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes-3.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `translation-syntax-fixes.md` — Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 
@@ -16148,11 +21332,14 @@ Errori di sintassi PHP nei file di traduzione del modulo User che impedivano il 
 **Soluzione**: Standardizzata tutta la sintassi utilizzando la sintassi breve `[]` conforme alle regole Laraxot.
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `translations.md` — translations
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/translations.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `troubleshooting-login-component.md` — Troubleshooting: Login Component Not Found
 
 
@@ -16168,6 +21355,7 @@ Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/
 
 **
 
+<<<<<<< .merge_file_3g8mQA
 ### `troubleshooting.md` — troubleshooting
 
 
@@ -16178,6 +21366,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/troubleshoot
 
 See canonical documentation: ../../../Themes/docs/shared-components/type-safety-improvements.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `type-safety-refactoring.md` — Type Safety Refactoring: Elimination of `mixed` Types
 
 # Type Safety Refactoring: Elimination of `mixed` Types
@@ -16233,6 +21423,7 @@ Implementato in `BaseUser` (modulo User), quindi disponibile anche a Predict.
 
 Workflow BMAD + Second Brain applicato: consultati `docs/tools/bmad-method.md`, `wiki/concepts/second-brain-max-power.md`, `../../Xot/docs/consolidated/phpstan/phpstan-workflow-2.md`.
 
+<<<<<<< .merge_file_3g8mQA
 ### `user-invitation.md` — user-invitation
 
 
@@ -16243,6 +21434,17 @@ https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invita
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
+=======
+## Contenuto fuso da `user-contract-haspermissiontoorcreate.md`
+
+Workflow
+
+### `user-invitation.md` — user-invitation
+
+
+https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invitations
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `user-moderation-strategy-2.md` — User Moderation Strategy
 
@@ -16268,6 +21470,7 @@ In the healthcare_app system, and across various projects utilizing the `User` m
 Given that the `User` module serves as the central hub for user management across multiple projects, it is logical to embed moderation functionalities within this module. This approach ensures:
 - **Consistency**: A single point of tru
 
+<<<<<<< .merge_file_3g8mQA
 ### `user-research-1.md` — user-research-1
 
 
@@ -16296,6 +21499,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/USER_RESEARC
 
 ## Research Questions
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `user-states.md` — Configurazione Stati Utente (state)
 
 # Configurazione Stati Utente (state)
@@ -16342,11 +21547,14 @@ Questo documento analizza quando usare il modello **User** rispetto al modello *
 │                                                                 │
 │ ✓ email, password, token                                      │
 
+<<<<<<< .merge_file_3g8mQA
 ### `uuid-trait-conflict-resolution.md` — uuid-trait-conflict-resolution
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `uuid-trait-resolution.md` — User Module - UUID Trait Conflict Resolution
 
 
@@ -16393,11 +21601,14 @@ namespace Modules\User\Models;
 use Spatie\Permission\Models\Permission as SpatiePermission;
 use Modules\Xot\Models\Traits\RelationX;
 
+<<<<<<< .merge_file_3g8mQA
 ### `vendor-extension.md` — vendor-extension
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/vendor-extension-pattern.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `viewclient-infolist-implementation-philosophy.md` — Internal Analysis: Approaches to ViewClient Infolist Implementation
 
 
@@ -16419,11 +21630,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/vendor-exten
 - **Politics**: Maintain system consistency across modules
 - **Religion**: Architecture > immed
 
+<<<<<<< .merge_file_3g8mQA
 ### `viewclient-infolist-implementation.md` — viewclient-infolist-implementation
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `volt-errors.md` — Errori Comuni in Volt e Soluzioni
 
 
@@ -16449,6 +21663,7 @@ Per risolvere questo errore, è necessario:
 
 ### `volt-missing-directive.md` — Errore VoltDirectiveMissingException
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_kSTXG5
 <<<<<<< .merge_file_59iViG
 <<<<<<< .merge_file_rU8nWc
@@ -16469,6 +21684,28 @@ qmd: "volt missing directive errore voltdirectivemissingexception"
 >>>>>>> .merge_file_LOUUmX
 =======
 >>>>>>> .merge_file_5mw5Qc
+=======
+# Errore VoltDirectiveMissingException
+
+## Descrizione
+In una pagina Folio con componenti Volt anonimi, è obbligatorio includere la direttiva `@volt` all'inizio del file Blade. L'assenza di questo directive genera:
+
+```
+Livewire\Volt\Exceptions\VoltDirectiveMissingException
+The [@volt] directive is required when using Volt anonymous components in Folio pages.
+```
+
+## Dove correggere
+File: `Themes/TwentyOne/resources/views/pages/auth/logout.blade.php`
+
+## Soluzione
+Aggiungere la direttiva `@volt` in testa al file, prima di qualsiasi codice Blade o HTML:
+
+```blade
+@volt
+@php
+    // ... logout logic
+>>>>>>> .merge_file_tfGS8i
 
 ### `volt-missingirective.md` — Errore VoltDirectiveMissingException
 
@@ -16493,11 +21730,14 @@ Aggiungere la direttiva `@volt` in testa al file, prima di qualsiasi codice Blad
 @volt
 @php
 
+<<<<<<< .merge_file_3g8mQA
 ### `volts.md` — volts
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `widget-form-schema-hierarchy.md` — Widget del modulo `User`: il form sta su `getFormSchema()`
 
 
@@ -16518,6 +21758,32 @@ See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.
 Nessuna delle tre dichiara `getFormSchemaOld()`. Un widget che lo definisce sta scrivendo
 un metodo morto. `#[Override]` su quel 
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### `widget-rendering-analysis.md` — 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
+
+# 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
+
+## 📋 Problema Analizzato
+
+Il login dovrebbe apparire come in https://docs.italia.it/accounts/login/ - design pulito, professionale, conforme Bootstrap Italia.
+
+### 🎯 Requisiti
+
+1. **Design Conforme**: Seguire le linee guida Bootstrap Italia / Design Comuni
+2. **Widget Filament 4**: Incorporare correttamente il widget Filament
+3. **Form Rendering**: Il form deve renderizzarsi dentro il widget
+
+## 🔍 Analisi Architetturale
+
+### Componenti Coinvolti
+
+#### 1. LoginWidget (PHP)
+**Path**: `Modules/User/Filament/Widgets/Auth/LoginWidget.php`
+
+```php
+
+>>>>>>> .merge_file_tfGS8i
 ### `widgets/edit-user-widget.md` — EditUserWidget Documentation
 
 
@@ -16552,11 +21818,14 @@ The EditUserWidget development and localization has been successfully completed 
 - **Namespace**: Proper `Modules\User\Filament\Widgets` namespace
 - **Translation Integration**: No hardcoded lab
 
+<<<<<<< .merge_file_3g8mQA
 ### `widgets/implementation.md` — implementation
 
 
 See canonical documentation: ../../../../Themes/docs/shared-components/implementation-summary-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `widgets/translation-guidelines.md` — Widget Translation Guidelines
 
 
@@ -16603,8 +21872,12 @@ return [
         'title' => 'Widget Title',
         'description' => 'Widget Description',
 
+<<<<<<< .merge_file_3g8mQA
 ### `widgets-structure-user.md` — widgets_structure - User
 
+=======
+### `widgets-structure.md` — widgets_structure - User
+>>>>>>> .merge_file_tfGS8i
 
 # widgets_structure - User
 
@@ -16621,11 +21894,14 @@ Documentazione per widgets_structure nel modulo User.
 - [Modulo Principale](../README.md)
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `widgets-structure.md` — widgets-structure
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/_templates/concept.md` — {{title}}
 
 
@@ -16649,6 +21925,7 @@ _How this concept is implemented in our codebase (with file references)._
 
 ## Benefits
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/_templates/entity.md` — {{title}}
 
 
@@ -16695,6 +21972,8 @@ _2-3 sentence summary of what this source covers._
 3. **Takeaway 3**: Brief explanation
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/concepts/ai-harness-user-discipline.md` — AI harness — User
 
 
@@ -16787,11 +22066,14 @@ laravel/Modules/User/docs/wiki/
 ```
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/concepts/context-overflow-prevention.md` — context-overflow-prevention
 
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/context-overflow-prevention-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/concepts/duplicate-method-bodies.md` — Corpi metodo duplicati — User
 
 
@@ -17148,11 +22430,19 @@ Nel modulo User **non** esiste più `app/Support/`. Ogni helper con comportament
 | Legacy `app/Support/` | Action / Data |
 |----------------------|-------------|
 | `Otp/Hasher` | `HashOtpValueAction`, `VerifyOtpHashAction`, `OtpHashNeedsRehashAction` |
+<<<<<<< .merge_file_3g8mQA
 | `Socialite/Utils/UserNameFieldsResolver` | `ResolveUserNameFieldsFromSocialiteAction` → `SocialiteNameFieldsData` |
 | `Socialite/Utils/EmailDomainAnalyzer` | `AnalyzeSocialiteEmailDomainAction` → `SocialiteEmailDomainAnalysisData` |
 | `NotificationSchema` | `IsNotificationSchemaReadableAction` |
 | `AuthenticationLogQuery` | `GetAuthenticationLogQueryForAuthenticatableAction` |
 | 
+=======
+| `Socialite/Utils/UserNameFieldsResolver` | `GetUserNameFieldsFromSocialiteAction` → `SocialiteNameFieldsData` |
+| `Socialite/Utils/EmailDomainAnalyzer` | `AnalyzeSocialiteEmailDomainAction` → `SocialiteEmailDomainAnalysisData` |
+| `NotificationSchema` | `IsNotificationSchemaReadableAction` |
+| `AuthenticationLogQuery` | `GetAuthenticationLogQueryForAuthenticatableAction` |
+| `Uti
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/concepts/no-comment-module-dependency.md` — User non dipende da Comment
 
@@ -17276,11 +22566,14 @@ Owner esempi: `2026_11_12_120000_create_users_table.php`,
 `2026_09_01_150108_create_profiles_table.php`,
 `2026_09_01_150109_create_teams_table.php`.
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/concepts/organizzativa-money.md` — organizzativa-money
 
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/organizzativa-money-Modules.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/concepts/pest-helpers-bootfiles.md` — Helper di dominio in `tests/Helpers.php`
 
 
@@ -17507,7 +22800,11 @@ Stesso flusso documentato con varianti `logout-*`, `
 |---------|------|
 | **Canon** | [Xot second-brain-local-discipline.md](../../../../Xot/docs/wiki/concepts/second-brain-local-discipline.md) |
 | **Harness moduli** | [ai-harness-module-discipline.md](../../../../docs/wiki/concepts/ai-harness-module-discipline.md) |
+<<<<<<< .merge_file_3g8mQA
 | **Tips 001–022** | [hackernoon map](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) |
+=======
+| **Tips 001–022** | [hackernoon map](../../../../../../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#hackernoon-ai-coding-tips-fixcity-map) |
+>>>>>>> .merge_file_tfGS8i
 | **Prompt router** | [llm-wiki.txt](../../../../../../bashscripts/tools/prompts/llm-wiki.txt) |
 
 **Harness locale:** [ai-harness-user-discipline](./ai-harness-user-discipline.md)
@@ -17654,6 +22951,7 @@ trait HasSpatiePermission
 
 ### `wiki/concepts/translation-convention.md` — Translation Convention - User Module
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_bMHf0E
 <<<<<<< .merge_file_sNAXD7
 <<<<<<< .merge_file_Lnk62d
@@ -17674,6 +22972,28 @@ qmd: "translation convention user"
 >>>>>>> .merge_file_zhw04S
 =======
 >>>>>>> .merge_file_X7SWdG
+=======
+# Translation Convention - User Module
+
+## Regola
+Tutte le traduzioni seguono la convenzione a 5 elementi:
+```
+__('<namespace>::<context>.<collection>.<key>.<type>')
+```
+
+## Struttura
+| Elemento | Descrizione | Esempio |
+|----------|-------------|---------|
+| namespace | modulo/componente | `user`, `pub_theme`, `gdpr` |
+| context | area funzionale | `auth`, `login`, `register` |
+| collection | raggruppamento logico | `login`, `fields`, `actions` |
+| key | chiave specifica | `title`, `submit`, `welcome_back` |
+| type | tipo metadato | `text`, `label`, `key`, `description`, `context`, `placeholder` |
+
+## Esempio corretto
+```php
+__('user::auth.login.title.label')
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/concepts/user-auth-visibility.md` — Admin – User List Visibility
 
@@ -17842,12 +23162,17 @@ Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md
 User (e ogni altro path in `gitmodules.ini`) è una **repository Git autonoma**,
 non un submodule. Lo status si legge con `git -C laravel/Modules/User`, mai
 dalla root e mai tramite Shell `working_directory`. Verificare
+<<<<<<< .merge_file_3g8mQA
 `rev-parse --show-toplevel`. Canon: [no-git-submodules-module-repos.md](../../../../../../docs/wiki/memories/no-git-submodules-module-repos.md).
+=======
+`rev-parse --show-toplevel`. Canon: [git-sync-fleet-remotes.md#no-git-submodules-module-repos](../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#no-git-submodules-module-repos).
+>>>>>>> .merge_file_tfGS8i
 
 ## Cosa fare su questo owner
 
 1. `git -C . remote -v` — remote reale del modulo (`laraxot/module_user_fila5`), non la root.
 2. Quality gates da `laravel/`: phpstan → phpmd → phpinsights (`--composer=composer.lock`).
+<<<<<<< .merge_file_3g8mQA
 3. Marker Git: risoluzione manuale forward-only (no `git restore`).
 
 ## Canon
@@ -17855,13 +23180,24 @@ dalla root e mai tramite Shell `working_directory`. Verificare
 - 
 
 ### `wiki/integrations/_da-riconciliare/index.divergenza.md` — Divergenza: `index.md`
+=======
+3. Marker Git: risoluzion
+
+### `wiki/integrations/_da-riconciliare/index-divergenza.md` — Divergenza: `index.md`
+>>>>>>> .merge_file_tfGS8i
 
 
 # Divergenza: `index.md`
 
+<<<<<<< .merge_file_3g8mQA
 Questo file veniva da `docs/wiki/integrations/modules/user/index.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
 - versione del modulo: `laravel/Modules/User/docs/archive/index.md`
+=======
+Questo file veniva da `docs/wiki/integrations/modules/user/INDEX.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
+
+- versione del modulo: `laravel/Modules/User/docs/archive/INDEX.md`
+>>>>>>> .merge_file_tfGS8i
 - versione recuperata: `laravel/Modules/User/docs/wiki/integrations/_da-riconciliare/index.md`
 
 Vanno confrontate e fuse a mano. Quando la fusione e' fatta, questo file e la nota vanno rimossi.
@@ -17942,12 +23278,20 @@ At module root level, these folders MUST NOT exist:
 │   ├── log.md                    # Activity log
 │   ├── concepts/                 # Topic/theme pages
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/integrations/_da-riconciliare/testing.divergenza.md` — Divergenza: `testing.md`
+=======
+### `wiki/integrations/_da-riconciliare/testing-divergenza.md` — Divergenza: `testing.md`
+>>>>>>> .merge_file_tfGS8i
 
 
 # Divergenza: `testing.md`
 
+<<<<<<< .merge_file_3g8mQA
 Questo file veniva da `docs/wiki/integrations/modules/user/testing.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
+=======
+Questo file veniva da `docs/wiki/integrations/modules/user/TESTING.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
+>>>>>>> .merge_file_tfGS8i
 
 - versione del modulo: `laravel/Modules/User/docs/bugs/archive/testing.md`
 - versione recuperata: `laravel/Modules/User/docs/wiki/integrations/_da-riconciliare/testing.md`
@@ -18247,7 +23591,11 @@ Consolidated from **6** individual files.
 
 ## navigation-structure
 
+<<<<<<< .merge_file_3g8mQA
 *Consolidated from: `navigation-structure-3.md`*
+=======
+*Consolidated from: `navigation-structure.md`*
+>>>>>>> .merge_file_tfGS8i
 
 
 ### `wiki/integrations/on-demand-pattern.md` — On-Demand Pattern — Module **User**
@@ -18411,6 +23759,7 @@ Consolidated from **6** individual files.
 *Consolidated from: `query-optimization-analysis.md`*
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/integrations/query-optimization-analysis.md` — User Module - Query Optimization Analysis
 
 
@@ -18434,6 +23783,8 @@ foreach ($user->authentications()->whereLoginSuccessful(true)->whereNull('logout
         ]);
     }
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/integrations/registration-consolidated.md` — registration — Consolidated Documentation
 
 
@@ -19155,7 +24506,11 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 -   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
+<<<<<<< .merge_file_3g8mQA
 -   [Filament Extension Rules](../../Xot/docs/filament-extension-rules-2.md)
+=======
+-   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
+>>>>>>> .merge_file_tfGS8i
 -   [Super Cow Methodology](../../xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../xot/docs/php_quality_guide.md)
 
@@ -19197,14 +24552,20 @@ _Fonte: `auth-components-best-practices-1.md`_
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_3g8mQA
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices-2.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel-localization-usage-2.md)
+=======
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+>>>>>>> .merge_file_tfGS8i
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
 
 Questo documento descrive le best practices per implementare e utilizzare i componenti di autenticazione , con particolare attenzione alle chiavi di traduzione e alla struttura dei componenti.
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/auth-login.md` — Topic auth-login
 
 
@@ -19228,6 +24589,8 @@ _Fonte: `auth-login-implementation-2.md`_
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-ru
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/auth-logout.md` — Topic auth-logout
 
 
@@ -19251,6 +24614,7 @@ _Fonte: `auth-logout-blade-1.md`_
 
 ## Posizione Corretta
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/auth-pages.md` — Topic auth-pages
 
 
@@ -19274,6 +24638,8 @@ _Fonte: `auth-pages-implementation-1-1.md`_
 - [Volt Logout Action](./volt-logout-action.md)
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/avatar-implementation.md` — Topic avatar-implementation
 
 
@@ -19289,7 +24655,11 @@ _Fonte: `avatar-implementation-1-1.md`_
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_3g8mQA
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags-3.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/header-language-selector-with-flags.md)
+>>>>>>> .merge_file_tfGS8i
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -19302,7 +24672,11 @@ Questo documento descrive l'implementazione degli avatar utente , con particolar
 
 # Topic base-classes
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 7 documenti (chiave `base-classes`).
+=======
+Sintesi automatica di 11 documenti (chiave `base-classes`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Correzione Estensioni Classi Base - Modulo User
 
@@ -19325,7 +24699,11 @@ Diversi modelli nel modulo User estendevano direttamente `Illuminate\Database\El
 
 # Topic baseuser-refactoring
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `baseuser-refactoring`).
+=======
+Sintesi automatica di 4 documenti (chiave `baseuser-refactoring`).
+>>>>>>> .merge_file_tfGS8i
 
 ## BaseUser Refactoring - Completato
 
@@ -19371,6 +24749,7 @@ Il modulo User utilizza un processo di autenticazione non ottimizzato, con tropp
 
 # Topic business-logic
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `business-logic`).
 
 ## business-logic-analysis-1
@@ -19378,6 +24757,9 @@ Sintesi automatica di 6 documenti (chiave `business-logic`).
 _Fonte: `business-logic-analysis-1.md`_
 
 See canonical documentation: ../../../Themes/docs/shared-components/BUSINESS_LOGIC_ANALYSIS-Modules.md
+=======
+Sintesi automatica di 8 documenti (chiave `business-logic`).
+>>>>>>> .merge_file_tfGS8i
 
 ## User Module - Business Logic Analysis
 
@@ -19388,6 +24770,15 @@ _Fonte: `business-logic-analysis-2.md`_
 ## Overview
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
 
+<<<<<<< .merge_file_3g8mQA
+=======
+## Business Purpose
+- **Authentication**: Secure user authentication with multiple options
+- **Authorization**: Role-based access control (RBAC) system
+- **Team Management**: Team-based collaboration and access control
+- **Multi-factor Authentication**: Enhanced security with 2FA
+- **Social Login**: OAuth integration for ease of access
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/case-sensitivity.md` — Topic case-sensitivity
 
@@ -19486,7 +24877,11 @@ Il conflitto riguarda l'aggiunta di un componente per la visualizzazione degli e
 
 # Topic console-commands
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 10 documenti (chiave `console-commands`).
+=======
+Sintesi automatica di 9 documenti (chiave `console-commands`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Filosofia dei Comandi Console - Modulo User
 
@@ -19509,6 +24904,7 @@ use function Laravel\Prompts\password;
 
 # Topic contracts-and
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `contracts-and`).
 
 ## contracts-and-lang-backup-archival-30.deprecated
@@ -19516,6 +24912,9 @@ Sintesi automatica di 4 documenti (chiave `contracts-and`).
 _Fonte: `wiki/decisions/contracts-and-lang-backup-archival-30.deprecated.md`_
 
 > Questo file è stato rinominato in [contracts-and-lang-backup-archival-2.deprecated.md](contracts-and-lang-backup-archival-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+Sintesi automatica di 3 documenti (chiave `contracts-and`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Archiviazione Contracts orfani e backup lang (ponytail audit)
 
@@ -19526,6 +24925,15 @@ _Fonte: `wiki/decisions/contracts-and-lang-backup-archival-30.md`_
 ## Contesto
 
 L'audit ponytail (`docs/audit/ponytail-audit.md`) segnalava in `Modules/User/`:
+<<<<<<< .merge_file_3g8mQA
+=======
+1. `app/Contracts/`: 7 file contratto senza implementatori nel repo.
+2. `lang/`: 281 file `*.backup_*` ridondanti (backup di traduzioni già storicizzate in git).
+
+Regola d'oro applicata: nessun contratto è stato rimosso senza prima tracciare TUTTI i
+chiamanti/implementatori con `rg` sull'intero repository (non solo `Modules/User`).
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/copilot-redundancy.md` — Topic copilot-redundancy
 
@@ -19619,6 +25027,7 @@ Questo documento identifica i metodi duplicati nel modulo **User** che potrebber
 ### Statistiche
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/filament-4.md` — Topic filament-4
 
 
@@ -19642,6 +25051,8 @@ _Fonte: `filament-4-actions-namespace.md`_
 
 **"In Filament 4, tutte le Actions sono in `Filament\Actions\*`, NON in `Filament\Tables\Actions\*`"**
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/filament-4x.md` — Topic filament-4x
 
 
@@ -19670,7 +25081,11 @@ _Fonte: `filament-4x-compatibility-1-1.md`_
 
 # Topic filament-namespace
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `filament-namespace`).
+=======
+Sintesi automatica di 3 documenti (chiave `filament-namespace`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Regole per i Namespace Filament
 
@@ -19716,11 +25131,19 @@ Gestisce la relazione tra Users e Teams.
 
 # Topic filament-resources
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 8 documenti (chiave `filament-resources`).
 
 ## Filament Resources Coverage Analysis - Modulo User
 
 _Fonte: `bmad/filament-resources-coverage-analysis.md`_
+=======
+Sintesi automatica di 6 documenti (chiave `filament-resources`).
+
+## Filament Resources Coverage Analysis - Modulo User
+
+_Fonte: `filament-resources-coverage-analysis.md`_
+>>>>>>> .merge_file_tfGS8i
 
 # Filament Resources Coverage Analysis - Modulo User
 
@@ -19739,11 +25162,19 @@ Analizzare la copertura completa delle Filament Resources per tutti i modelli de
 
 # Topic filament-table
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `filament-table`).
 
 ## Convenzione Metodo getTableColumns per Filament Table
 
 _Fonte: `filament/archive/filament-table-columns-2.md`_
+=======
+Sintesi automatica di 4 documenti (chiave `filament-table`).
+
+## Convenzione Metodo getTableColumns per Filament Table
+
+_Fonte: `filament/archive/filament-table-columns.md`_
+>>>>>>> .merge_file_tfGS8i
 
 # Convenzione Metodo getTableColumns per Filament Table
 
@@ -19785,7 +25216,11 @@ _Fonte: `wiki/concepts/filament-widget-linear-crud-model-create.md`_
 
 # Topic fullcalendar-scheduler
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 13 documenti (chiave `fullcalendar-scheduler`).
+=======
+Sintesi automatica di 14 documenti (chiave `fullcalendar-scheduler`).
+>>>>>>> .merge_file_tfGS8i
 
 ## FullCalendar Scheduler - Documentazione Completa
 
@@ -19847,6 +25282,7 @@ This document outlines a comprehensive strategy for implementing a generic moder
 ### Understanding User Types as Variants of User
 - **User as a Base Entity**: In this system, a
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/get-login.md` — Topic get-login
 
 
@@ -19870,6 +25306,8 @@ Serie storica degli accessi, bucket per giorno o per mese, letta da `authenticat
 ## Output
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/get-provider.md` — Topic get-provider
 
 
@@ -19893,6 +25331,7 @@ Dovrebbe restituire i pulsanti di login per i provider. Oggi restituisce sempre 
 
 - `array<int, never>`: sempre `[]`.
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/git-conflicts.md` — Topic git-conflicts
 
 
@@ -19962,6 +25401,8 @@ _Fonte: `gits-resolution-06cb77.md`_
 [DATE]
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/hasteams-currentteam.md` — Topic hasteams-currentteam
 
 
@@ -19988,7 +25429,11 @@ In the `HasTeams.php` trait, there are two definitions of the `currentTeam()` me
 
 # Topic hasteams-trait
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 7 documenti (chiave `hasteams-trait`).
+=======
+Sintesi automatica di 9 documenti (chiave `hasteams-trait`).
+>>>>>>> .merge_file_tfGS8i
 
 ## HasTeams Trait Analysis
 
@@ -20029,6 +25474,7 @@ _Fonte: `header-language-avatar-implementation-1.md`_
 
 Questo documento descrive come implementare nell'header di <nome progetto>:
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/lang-link.md` — Topic lang-link
 
 
@@ -20052,6 +25498,8 @@ Consulta la documentazione delle traduzioni:
 ## Collegamento Bidirezionale
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/laraxot-migration.md` — Topic laraxot-migration
 
 
@@ -20125,7 +25573,11 @@ attivo oltre a `parent::panel($panel)` (r. 23). Zero alias stringa nel chrome.
 
 # Topic login-widget
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 15 documenti (chiave `login-widget`).
+=======
+Sintesi automatica di 10 documenti (chiave `login-widget`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Analisi Dettagliata di LoginWidget
 
@@ -20148,7 +25600,11 @@ _Fonte: `login-widget-analysis.md`_
 
 # Topic logout-blade
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 21 documenti (chiave `logout-blade`).
+=======
+Sintesi automatica di 20 documenti (chiave `logout-blade`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Analisi del File logout.blade.php
 
@@ -20183,6 +25639,7 @@ _Fonte: `logout-error-analysis-2.md`_
 ---
 module: theme
 topic: logout_error_analysis
+<<<<<<< .merge_file_3g8mQA
 canonical: ../../../Themes/docs/shared-components/logout-error-analysis-2.md
 ---
 
@@ -20211,6 +25668,13 @@ _Fonte: `logout-event-error-2.md`_
 ## Errore Identificato
 
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+---
+
+## Analisi Errore Logout
+
+_Fonte: `logout-error-analysis-analisi-errore.md`_
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/logout-filament.md` — Topic logout-filament
 
@@ -20225,22 +25689,37 @@ _Fonte: `logout-filament-widget-3.md`_
 
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_3g8mQA
 - [Implementazione Auth Pages](auth-pages-implementation-3.md)
 - [Implementazione Logout](logout-blade-implementation-3.md)
 - [Analisi Errore Logout](logout-implementation-error-4.md)
 - [Struttura Widget](widgets-structure-2.md)
+=======
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation.md)
+- [Analisi Errore Logout](logout-implementation-error.md)
+- [Struttura Widget](widgets-structure.md)
+>>>>>>> .merge_file_tfGS8i
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Introduzione
 
+<<<<<<< .merge_file_3g8mQA
 Questo documento descrive l'implementazione del logout utilizzando un widget Filament, un approccio che offre maggiore flessibilità e riutilizzabilità rispetto a un'implementazione Volt personalizzata. Questo approccio è part
+=======
+Questo documento descrive l'implementazione del logout utilizzando un widget Filament, un approccio che offre maggiore flessibilità e riutilizzabilità rispetto a un'implementazione Volt personalizzata. Questo approccio è particolarme
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/logout-implementation.md` — Topic logout-implementation
 
 
 # Topic logout-implementation
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 13 documenti (chiave `logout-implementation`).
+=======
+Sintesi automatica di 12 documenti (chiave `logout-implementation`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Best Practices per l'Implementazione del Logout
 
@@ -20251,11 +25730,20 @@ _Fonte: `best-practices/logout-implementation-best-practices.md`_
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+<<<<<<< .merge_file_3g8mQA
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel-localization-usage-2.md)
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel-localization-usage-2.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.
+=======
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+- [README modulo User](./README.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
+- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/logout-page.md` — Topic logout-page
 
@@ -20280,6 +25768,7 @@ Il file `resources/views/pages/auth/logout.blade.php`:
 Mix errato di:
 - Volt anonymous component (senza `@volt` e senza PHP tags)
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/migration-consolidation.md` — Topic migration-consolidation
 
 
@@ -20303,11 +25792,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/migration-co
 
 _Fonte: `migration-consolidation.md`_
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/migration-philosophy.md` — Topic migration-philosophy
 
 
 # Topic migration-philosophy
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `migration-philosophy`).
 
 ## migration-philosophy-internal-analysis
@@ -20315,6 +25807,9 @@ Sintesi automatica di 5 documenti (chiave `migration-philosophy`).
 _Fonte: `migration-philosophy-internal-analysis.md`_
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-internal-analysis.md
+=======
+Sintesi automatica di 3 documenti (chiave `migration-philosophy`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Laraxot Migration Philosophy & Strategy
 
@@ -20325,6 +25820,15 @@ _Fonte: `migration-philosophy-strategy.md`_
 ## Core Principles
 
 ### 1. ONE Migration Per Table Rule
+<<<<<<< .merge_file_3g8mQA
+=======
+- Each table must have exactly ONE migration responsible for its creation
+- Multiple migrations creating the same table violates Laraxot philosophy
+- Subsequent changes should extend existing tables using `tableUpdate()`
+
+### 2. DRY (Don't Repeat Yourself)
+- Avoid duplicating table structure definitions
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/migration-teams.md` — Topic migration-teams
 
@@ -20342,11 +25846,16 @@ _Fonte: `migration-teams-owner-id-fix.md`_
 ## Cosa c'era di sbagliato
 
 `Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php`
+<<<<<<< .merge_file_3g8mQA
 violava la [religione XotBaseMigration](../../Xot/docs/wiki/concepts/xotbase-migration-religion.md):
+=======
+violava la [religione XotBaseMigration](../../../../bashscripts/ai/wiki/concepts/architecture-philosophy.md#xotbase-migration-religion):
+>>>>>>> .merge_file_tfGS8i
 una migrazione separata per aggiungere una colonna a una tabella che ha già il suo
 `create_teams_table.php`. Inoltre il codice stesso conteneva un bug funzionale:
 `foreignIdFor(Team::class, 'owner_id')` — riferiva `Team::class` invece di `User::class`
 per una colonna che semanticamente rappresenta il proprietario (`User`) del team
+<<<<<<< .merge_file_3g8mQA
 (vedi `@property User|null $owner` in `Modules/Us
 
 ### `wiki/topics/migration-violations.md` — Topic migration-violations
@@ -20371,6 +25880,9 @@ The User module contains multiple violations of the Laraxot migration philosophy
 ### 1. Devices Table Violations
 **Files:**
 - `2023_01_01_000000_create_devices_table.php`
+=======
+(vedi `@prope
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/model-inheritance.md` — Topic model-inheritance
 
@@ -20415,9 +25927,15 @@ _Fonte: `modelli-factory-seeder-analisi-2.md`_
 ---
 module: theme
 topic: modelli_factory_seeder_analisi
+<<<<<<< .merge_file_3g8mQA
 canonical: ../../../Themes/docs/shared-components/modelli_factory_seeder_analisi-Modules.md
 ---
 
+=======
+---
+
+
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/module-excellence.md` — Topic module-excellence
 
 
@@ -20492,6 +26010,7 @@ La navigazione è composta da tre componenti principali:
 
 # Topic navigation-translations
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `navigation-translations`).
 
 ## navigation-translations-completion-roadmap
@@ -20499,6 +26018,9 @@ Sintesi automatica di 5 documenti (chiave `navigation-translations`).
 _Fonte: `navigation-translations-completion-roadmap.md`_
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+=======
+Sintesi automatica di 3 documenti (chiave `navigation-translations`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Navigation Translations Completion Roadmap - User Module
 
@@ -20509,6 +26031,7 @@ _Fonte: `navigation-translations-completion.md`_
 **Modulo**: User  
 **Status**: 📝 **ROADMAP CREATA**
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `wiki/topics/oauth-cluster.md` — Topic oauth-cluster
 
@@ -20555,6 +26078,37 @@ _Fonte: `optimization-analysis-user-module-documentation.md`_
 ## current state analysis
 - **total md files**: 390
 - **extreme duplication**: multiple files for same topics with underscore/hyphen variations
+=======
+---
+
+## 📊 Executive Summary
+
+Completamento e miglioramento delle traduzioni per i file con sezione `.navigation` nel modulo User per le **6 lingue più parlate al mondo**:
+1. Italiano (it) ✅ - Base
+
+### `wiki/topics/oauth-cluster.md` — Topic oauth-cluster
+
+
+# Topic oauth-cluster
+
+Sintesi automatica di 3 documenti (chiave `oauth-cluster`).
+
+## OAuth Cluster Implementation Summary
+
+_Fonte: `oauth-cluster-implementation.md`_
+
+# OAuth Cluster Implementation Summary
+
+**Metodologia**: Super Mucca
+**Filosofia**: DRY + KISS + Organizzazione Logica
+**Status**: ✅ Completato
+
+---
+
+## 🎯 Obiettivo Raggiunto
+
+Creare cluster Filament `Passport` per raggruppare tutte le risorse OAuth/Passport nel modulo User, migliorando organizzazione e navigazione.
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/optimization-recommendations.md` — Topic optimization-recommendations
 
@@ -20584,6 +26138,7 @@ _Fonte: `optimization-recommendations-1.md`_
 
 # Topic parse-error
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 7 documenti (chiave `parse-error`).
 
 ## parse-error-orphan-methods-2
@@ -20591,6 +26146,9 @@ Sintesi automatica di 7 documenti (chiave `parse-error`).
 _Fonte: `bug-fixes/archive/parse-error-orphan-methods-2.md`_
 
 
+=======
+Sintesi automatica di 6 documenti (chiave `parse-error`).
+>>>>>>> .merge_file_tfGS8i
 
 ## parse-error-orphan-methods-2025-01-27 - User
 
@@ -20602,6 +26160,7 @@ _Fonte: `bug-fixes/archive/parse-error-orphan-methods.md`_
 
 Documentazione per parse-error-orphan-methods-2025-01-27 nel modulo User.
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/passport-cluster.md` — Topic passport-cluster
 
 
@@ -20614,6 +26173,20 @@ Sintesi automatica di 23 documenti (chiave `passport-cluster`).
 _Fonte: `passport-cluster-completion-status.md`_
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
+=======
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+### `wiki/topics/passport-cluster.md` — Topic passport-cluster
+
+
+# Topic passport-cluster
+
+Sintesi automatica di 13 documenti (chiave `passport-cluster`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Passport Cluster - Status Completamento
 
@@ -20624,6 +26197,15 @@ _Fonte: `passport-cluster-completion.md`_
 **Status**: ✅ Completato e Verificato
 **Metodologia**: Super Mucca
 
+<<<<<<< .merge_file_3g8mQA
+=======
+---
+
+## 📋 Panoramica
+
+Tutte le risorse OAuth (Laravel Passport) sono state spostate nel cluster `Passport` seguendo il pattern standardizzato di Laraxot, completando il lavoro iniziato da un altro agente.
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/passport-oauth.md` — Topic passport-oauth
 
@@ -20653,6 +26235,7 @@ _Fonte: `passport-oauth-audit.md`_
 
 # Topic phpstan-belongstomany
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `phpstan-belongstomany`).
 
 ## phpstan-belongstomany-covariance-06.deprecated
@@ -20706,6 +26289,32 @@ Sintesi automatica di 6 documenti (chiave `phpstan-dry`).
 _Fonte: `phpstan-dry-kiss-improvements-17.deprecated.md`_
 
 > Questo file è stato rinominato in [phpstan-dry-kiss-improvements-2.deprecated.md](phpstan-dry-kiss-improvements-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+Sintesi automatica di 3 documenti (chiave `phpstan-belongstomany`).
+
+## PHPStan: BelongsToMany covarianza — HasTeams / UserContract
+
+_Fonte: `wiki/memories/phpstan-belongstomany-covariance-covarianza-hasteams-usercontract.md`_
+
+# PHPStan: BelongsToMany covarianza — HasTeams / UserContract
+
+## Problema
+
+`HasTeams::teams()` (aliasato come `membershipTeams()` in `BaseUser`) chiama
+`$this->belongsToManyX($teamClass)` che ha `@return BelongsToMany<TRelated, $this, Pivot>`.
+
+Il parametro `TDeclaringModel` di `BelongsToMany` **non è covariante** — PHPStan
+non accetta `$this(BaseUser)` quando il contratto dichiara `Model` come owner.
+
+**Errore PHPStan:**
+
+### `wiki/topics/phpstan-dry.md` — Topic phpstan-dry
+
+
+# Topic phpstan-dry
+
+Sintesi automatica di 4 documenti (chiave `phpstan-dry`).
+>>>>>>> .merge_file_tfGS8i
 
 ## PHPStan Level 10 + DRY/KISS Improvements - User Module
 
@@ -20717,6 +26326,15 @@ _Fonte: `phpstan-dry-kiss-improvements-17.md`_
 
 Il modulo User è stato analizzato e migliorato per conformità PHPStan Level 10, principi DRY e KISS.
 
+<<<<<<< .merge_file_3g8mQA
+=======
+### Risultati User Module
+
+- ✅ **PHPStan Level 10**: 0 errori (da 16)
+- ✅ **Duplicate $connection rimosse**: 7 file
+- ✅ **PHPDoc corretti**: 8 file
+
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/phpstan-errors.md` — Topic phpstan-errors
 
 
@@ -20737,6 +26355,7 @@ _Fonte: `phpstan-errors-philosophy.md`_
 ---
 module: theme
 topic: phpstan-errors-philosophy
+<<<<<<< .merge_file_3g8mQA
 canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
 related:
 
@@ -20762,13 +26381,21 @@ _Fonte: `phpstan-fix-plan-user.md`_
 ## Error Analysis
 
 ### 1. UserContract Property/Method Access (Major Impact)
+=======
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/phpstan-fixes.md` — Topic phpstan-fixes
 
 
 # Topic phpstan-fixes
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 20 documenti (chiave `phpstan-fixes`).
+=======
+Sintesi automatica di 11 documenti (chiave `phpstan-fixes`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Correzioni PHPStan nel Modulo User
 
@@ -20791,14 +26418,21 @@ Sono stati rilevati problemi di compatibilità tra i metodi del modello `Team` e
 
 # Topic phpstan-level10
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `phpstan-level10`).
+=======
+Sintesi automatica di 4 documenti (chiave `phpstan-level10`).
+>>>>>>> .merge_file_tfGS8i
 
 ## phpstan-level10-analysis
 
 _Fonte: `phpstan-level10-analysis.md`_
 
+<<<<<<< .merge_file_3g8mQA
 - [Passport Documentation](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ---
 
 **Status**: 📋 Ready for Implementation  
@@ -20808,6 +26442,7 @@ _Fonte: `phpstan-level10-analysis.md`_
 ---
 module: theme
 topic: phpstan-level10-analysis
+<<<<<<< .merge_file_3g8mQA
 
 ### `wiki/topics/phpstan-progress.md` — Topic phpstan-progress
 
@@ -20854,6 +26489,10 @@ _Fonte: `phpstan-relationship-fix-correzione-type-hints.md`_
 ```php
 // ❌ ERRORE PHPStan
 @return MorphMany<AuthenticationLog, static>
+=======
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/phpstan-user.md` — Topic phpstan-user
 
@@ -20883,6 +26522,7 @@ Il leaf auth è `XotData::make()->getUserClass()` (spesso `Modules\Quaeris\Model
 
 # Topic phpstan-widget
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `phpstan-widget`).
 
 ## phpstan-widget-property-types-06.deprecated
@@ -20890,11 +26530,15 @@ Sintesi automatica di 5 documenti (chiave `phpstan-widget`).
 _Fonte: `wiki/troubleshooting/phpstan-widget-property-types-06.deprecated.md`_
 
 > Questo file è stato rinominato in [phpstan-widget-property-types-2.deprecated.md](phpstan-widget-property-types-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+Sintesi automatica di 4 documenti (chiave `phpstan-widget`).
+>>>>>>> .merge_file_tfGS8i
 
 ## PHPStan widget property types
 
 _Fonte: `wiki/troubleshooting/phpstan-widget-property-types-06.md`_
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_kOAf3u
 <<<<<<< .merge_file_ZWB2Ct
 <<<<<<< .merge_file_SvbV8s
@@ -20913,6 +26557,26 @@ Sintesi automatica di 6 documenti (chiave `ponytail-audit`).
 _Fonte: `ponytail-audit-02.deprecated.md`_
 
 > Questo file è stato rinominato in [ponytail-audit-2.deprecated.md](ponytail-audit-2.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+# PHPStan widget property types
+
+## Contesto
+
+Durante la scansione `./vendor/bin/phpstan analyse Modules`, diversi widget del modulo User fallivano per proprieta' Livewire non tipizzate e per valori dinamici restituiti da resource/action.
+
+File coinvolti nel batch:
+
+- `app/Filament/Clusters/Passport/Pages/PassportDashboard.php`
+- `app/Filament/Widgets/EditUserWidget.php`
+- `app/Filament/Widgets/RegistrationWidget.php`
+
+### `wiki/topics/ponytail-audit.md` — Topic ponytail-audit
+
+
+# Topic ponytail-audit
+
+Sintesi automatica di 5 documenti (chiave `ponytail-audit`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Ponytail-audit 2026-07-02: User module findings
 
@@ -20923,6 +26587,7 @@ _Fonte: `ponytail-audit-02.md`_
 Source: repo-wide ponytail-audit follow-up, published in module_user_fila5 discussion
 (see Related section below).
 
+<<<<<<< .merge_file_3g8mQA
 
 ### `wiki/topics/product-strategy.md` — Topic product-strategy
 
@@ -20946,6 +26611,14 @@ _Fonte: `product-strategy-user-module.md`_
 **Module:** User  
 **Version:** 1.0.0  
 **Last Updated:** March 12, 2026  
+=======
+## Finding
+
+`app/Contracts/UserContract.php.to_xot` was an orphaned rename artifact: a `.to_xot`
+suffixed file (117 lines, an abandoned draft of a migration toward
+`Modules\Xot\Contracts\UserContract`) sitting next to the real, active
+`app/Contracts/UserContract.php`.
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/quality-gates.md` — Topic quality-gates
 
@@ -20970,6 +26643,7 @@ _Fonte: `quality-gates-28.md`_
 # Quality Gates Analysis — laravel/Modules/User
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/quality-status.md` — Topic quality-status
 
 
@@ -20993,12 +26667,18 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-stat
 
 _Fonte: `quality-status.md`_
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/quality-tools.md` — Topic quality-tools
 
 
 # Topic quality-tools
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `quality-tools`).
+=======
+Sintesi automatica di 3 documenti (chiave `quality-tools`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Quality Tools Final Report - 2025-01-22
 
@@ -21016,6 +26696,7 @@ Completare la correzione di tutti gli errori PHPStan, PHPMD e PHP Insights nel m
 - Tutti i tipi di ritorno corretti
 - Tutti i PHPDoc completi e corretti
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/redundancy-audit.md` — Topic redundancy-audit
 
 
@@ -21061,13 +26742,64 @@ _Fonte: `redundancy-fixes-january.md`_
 ## Problema Identificato
 
 Durante l'implementazione della gestione completa di Passport, sono state introdotte due ridondanze critiche che violano il principio DRY:
+=======
+### `wiki/topics/query-optimization.md` — Topic query-optimization
+
+
+# Topic query-optimization
+
+Sintesi automatica di 3 documenti (chiave `query-optimization`).
+
+## User Module - Query Optimization Analysis
+
+_Fonte: `query-optimization-analysis.md`_
+
+# User Module - Query Optimization Analysis
+
+## Overview
+The User module has several critical performance issues related to authentication, authorization, and user management. As the foundation for all user operations, these inefficiencies cascade throughout the entire application.
+
+## Critical Query Issues Identified
+
+### 1. Authentication Log Processing (CRITICAL IMPACT)
+
+**File**: `Modules/User/app/Listeners/OtherDeviceLogoutListener.php:42`
+**Current Implementation**:
+
+### `wiki/topics/redundancy-audit.md` — Topic redundancy-audit
+
+
+# Topic redundancy-audit
+
+Sintesi automatica di 3 documenti (chiave `redundancy-audit`).
+
+## redundancy-audit-1
+
+_Fonte: `redundancy-audit-1.md`_
+
+> Questo file è stato rinominato in [redundancy-audit-1.md](redundancy-audit-1.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+## User redundancy audit 2026-05-21
+
+_Fonte: `redundancy-audit-21.md`_
+
+# User redundancy audit 2026-05-21
+
+High-risk findings:
+- Duplicate FQCNs exist in both root-level folders and `app/`: `CreateUserAction`, `UserRegistered`, ownership use-case contracts.
+- Duplicate factory path: `Database/factories/DeviceProfileFactory.php` and `database/factories/DeviceProfileFactory.php`.
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/registration-widget.md` — Topic registration-widget
 
 
 # Topic registration-widget
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 13 documenti (chiave `registration-widget`).
+=======
+Sintesi automatica di 11 documenti (chiave `registration-widget`).
+>>>>>>> .merge_file_tfGS8i
 
 ## RegistrationWidget FileUpload Error Fix
 
@@ -21085,6 +26817,7 @@ Il problema si verifica quando:
 1. Un utente già registrato accede alla pagina di registrazione con email e token validi
 2. Il `RegistrationWidget.getFormFill()` carica i dati dal database tramite `$model->toArray()`
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/routing-best.md` — Topic routing-best
 
 
@@ -21108,12 +26841,18 @@ In un'architettura che utilizza Volt + Folio + Filament, il routing tradizionale
 ```php
 // ✅ CORRETTO: Routing dichiarativo nelle risorse Filament
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/service-provider.md` — Topic service-provider
 
 
 # Topic service-provider
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 5 documenti (chiave `service-provider`).
+=======
+Sintesi automatica di 3 documenti (chiave `service-provider`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
@@ -21131,6 +26870,7 @@ Nel progetto Laraxot, ogni ServiceProvider ha una **responsabilità unica e ben 
 
 ```php
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/session-management.md` — Topic session-management
 
 
@@ -21154,6 +26894,8 @@ _Fonte: `session-management-2.md`_
 Questo documento fornisce linee guida per la gestione delle sessioni utente all'interno di un modulo Laravel, garantendo una gestione sicura ed efficiente dello stato utente.
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/socialite-architecture.md` — Topic socialite-architecture
 
 
@@ -21200,6 +26942,7 @@ _Fonte: `bmad/socialite-provider-boundary-architecture.md`_
 
 ## Decisione
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/socialite.md` — Topic socialite
 
 
@@ -21223,11 +26966,14 @@ https://dev.to/mfazail/how-to-customize-laravel-filament-login-page-455n
 https://github.com/DutchCodingCompany/filament-socialite
 
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/spatie-permission.md` — Topic spatie-permission
 
 
 # Topic spatie-permission
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `spatie-permission`).
 
 ## spatie-permission-philosophy
@@ -21235,6 +26981,9 @@ Sintesi automatica di 6 documenti (chiave `spatie-permission`).
 _Fonte: `spatie-permission-philosophy.md`_
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+=======
+Sintesi automatica di 5 documenti (chiave `spatie-permission`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Spatie Permission teams on Laravel 13
 
@@ -21246,11 +26995,21 @@ _Fonte: `spatie-permission-teams-laravel.md`_
 
 After the Laravel 13 upgrade the project resolves `spatie/laravel-permission` 7.x. In this line, when `permission.teams` is enabled, the package asks `PermissionRegistrar` for `permission.models.team`.
 
+<<<<<<< .merge_file_3g8mQA
+=======
+Local package facts checked on 2026-05-05:
+
+- installed package: `spatie/laravel-permission 7.4.1`;
+- package requirement: PHP `^8.3`;
+- Laravel compatibility: `illuminate/* ^12.0|^13.0`;
+
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/spatie-permissions.md` — Topic spatie-permissions
 
 
 # Topic spatie-permissions
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `spatie-permissions`).
 
 ## spatie_permissions
@@ -21314,12 +27073,78 @@ Il modulo User include il supporto completo per Single Sign-On (SSO) tramite pro
 ### Tabella: `sso_providers`
 
 **Migration**: `2025_10_15_153835_create_sso_providers_table.php`
+=======
+Sintesi automatica di 7 documenti (chiave `spatie-permissions`).
+
+## spatie_permissions - User
+
+_Fonte: `_integration/archive/spatie-permissions.md`_
+
+# spatie_permissions - User
+
+## Overview
+
+Documentazione per spatie_permissions nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+### `wiki/topics/sso-providers.md` — Topic sso-providers
+
+
+# Topic sso-providers
+
+Sintesi automatica di 3 documenti (chiave `sso-providers`).
+
+## User Module - SSO Providers Implementation
+
+_Fonte: `sso-providers-implementation-2.md`_
+
+# User Module - SSO Providers Implementation
+
+## Overview
+
+Il modulo User include il supporto completo per Single Sign-On (SSO) tramite provider esterni. Questa documentazione descrive l'implementazione della tabella `sso_providers` e le relative funzionalità.
+
+## Database Schema
+
+### Tabella: `sso_providers`
+
+**Migration**: `2025_10_15_153835_create_sso_providers_table.php`
+
+### `wiki/topics/stories:user-nested-conflict-mar.md` — Topic stories:user-nested-conflict-mar
+
+
+# Topic stories:user-nested-conflict-mar
+
+Sintesi automatica di 3 documenti (chiave `stories:user-nested-conflict-mar`).
+
+## User: marker di conflitto annidati residui + disposizione .wip/.corrected
+
+_Fonte: `stories/0155-user-nested-conflict-marker-cleanup.story.md`_
+
+# User: marker di conflitto annidati residui + disposizione .wip/.corrected
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/stories:xotbaseresourcetable-mod.md` — Topic stories:xotbaseresourcetable-mod
 
 
 # Topic stories:xotbaseresourcetable-mod
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 3 documenti (chiave `stories:xotbaseresourcetable-mod`).
 
 ## Audit $model + schema colonne su 13 XotBaseResourceTable (OAuth/Passport/Permission)
@@ -21336,6 +27161,25 @@ dalla Resource sorella, mai indovinato dal nome del file) e che le colonne in
 `getTableColumns()` siano verificate contro lo schema reale della connessione
 corretta, cosi' che non si scoprano a runtime colonne inesistenti o Table duplicate
 mai
+=======
+Sintesi automatica di 4 documenti (chiave `stories:xotbaseresourcetable-mod`).
+
+## 13.1: Riaudit reale $model su 30 classi Table (contraddice #91)
+
+_Fonte: `stories/0032-xotbaseresourcetable-model-audit-verification.story.md`_
+
+# 13.1: Riaudit reale $model su 30 classi Table (contraddice #91)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/team-bindings.md` — Topic team-bindings
 
@@ -21358,6 +27202,7 @@ _Fonte: `team-bindings-fix-3.md`_
 ---
 module: theme
 topic: team_bindings_fix
+<<<<<<< .merge_file_3g8mQA
 canonical: ../../../Themes/docs/shared-components/team-bindings-fix-3.md
 
 ### `wiki/topics/team-user.md` — Topic team-user
@@ -21382,6 +27227,9 @@ _Fonte: `team-user-composite-priy-key.md`_
 ## Data Intervento
 
 **[DATE]** - Implementazione chiave primaria composita per tabella pivot team_user
+=======
+---
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/teams-migration.md` — Topic teams-migration
 
@@ -21400,11 +27248,19 @@ _Fonte: `teams-migration-laraxot-compliance-2.md`_
 
 _Fonte: `teams-migration-laraxot-compliance-fix.md`_
 
+<<<<<<< .merge_file_3g8mQA
 <<<<<<< .merge_file_Ya27kN
 <<<<<<< .merge_file_T4I7GX
 <<<<<<< .merge_file_OAV7Dr
 =======
 >>>>>>> .merge_file_TusCCZ
+=======
+# Teams Migration - Laraxot Compliance Fix
+
+## Data
+2025-12-01
+
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/teams-relation.md` — Topic teams-relation
 
@@ -21429,6 +27285,7 @@ Il `TeamsRelationManager` gestisce la relazione many-to-many tra utenti e team a
 La traduzione è automatica tramite la struttura espansa dei file di traduzione. Ogni override nel codice è un errore grave e va corretto subito.
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `wiki/topics/terms-and.md` — Topic terms-and
 
 
@@ -21452,6 +27309,8 @@ https://dev.to/filamentmastery/adding-terms-and-conditions-acceptance-to-filamen
 
 ## terms-and-conditions-1
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `wiki/topics/traits-complete.md` — Topic traits-complete
 
 
@@ -21480,7 +27339,11 @@ _Fonte: `traits-complete-guide-1-1.md`_
 
 # Topic traits-hasteams
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `traits-hasteams`).
+=======
+Sintesi automatica di 4 documenti (chiave `traits-hasteams`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
@@ -21503,6 +27366,7 @@ _Fonte: `traits-hasteams-analisi-corretta-2.md`_
 
 # Topic translation-city
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 9 documenti (chiave `translation-city`).
 
 ## translation-city-field-refactor-08.deprecated
@@ -21520,13 +27384,36 @@ _Fonte: `translation-city-field-refactor-08.md`_
 <<<<<<< .merge_file_o5df8B
 =======
 >>>>>>> .merge_file_T8UYvu
+=======
+Sintesi automatica di 4 documenti (chiave `translation-city`).
+
+## Refactor Completo Campi "Città" - Modulo User
+
+_Fonte: `translation-city-field-refactor-08.md`_
+
+# Refactor Completo Campi "Città" - Modulo User
+
+## Riepilogo Intervento
+
+Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot SaluteOra.
+
+## File Corretti
+
+### 1. `/lang/de/registration.php`
+**Problema**: Campo 'city' conteneva testo in italiano invece di tedesco
+**Soluzione**: Applicata struttura completa con traduzione tedesca corretta
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/translation-keys.md` — Topic translation-keys
 
 
 # Topic translation-keys
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `translation-keys`).
+=======
+Sintesi automatica di 3 documenti (chiave `translation-keys`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Regole per le Chiavi di Traduzione
 
@@ -21549,6 +27436,7 @@ _Fonte: `best-practices/translation-keys-rules.md`_
 
 # Topic two-factor
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `two-factor`).
 
 ## two_factor
@@ -21566,6 +27454,25 @@ https://engineering.teknasyon.com/two-factor-authentication-in-laravel-applicati
 _Fonte: `_integration/two-factor-1.md`_
 
 See canonical documentation: ../../../../Themes/docs/shared-components/two-factor.md
+=======
+Sintesi automatica di 5 documenti (chiave `two-factor`).
+
+## two_factor - User
+
+_Fonte: `_integration/legacy/two-factor.md`_
+
+# two_factor - User
+
+## Overview
+
+Documentazione per two_factor nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+>>>>>>> .merge_file_tfGS8i
 
 ### `wiki/topics/user-factory.md` — Topic user-factory
 
@@ -21595,7 +27502,11 @@ BaseUser (User Module)
 
 # Topic user-module
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 4 documenti (chiave `user-module`).
+=======
+Sintesi automatica di 3 documenti (chiave `user-module`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Analisi Qualità - Modulo User
 
@@ -21618,7 +27529,11 @@ _Fonte: `quality-analysis/user-module-quality-report.md`_
 
 # Topic user-profile
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 6 documenti (chiave `user-profile`).
+=======
+Sintesi automatica di 4 documenti (chiave `user-profile`).
+>>>>>>> .merge_file_tfGS8i
 
 ## STORY — ProfileEditVoltComponent controllava instanceof contro la classe User sbagliata
 
@@ -21626,6 +27541,7 @@ _Fonte: `stories/user-profile-volt-instanceof-wrong-user-class.md`_
 
 # STORY — ProfileEditVoltComponent controllava instanceof contro la classe User sbagliata
 
+<<<<<<< .merge_file_3g8mQA
 ## Contesto
 
 Emersa due volte, in modo indipendente, in due sessioni concorrenti lo stesso
@@ -21634,6 +27550,16 @@ errori `cast.string` / `argument.type` / `method.nonObject` su
 `ProfileEditVoltComponent.php` (mount/updateProfile/updatePassword/deleteAccount).
 
 ## Problema
+=======
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+>>>>>>> .merge_file_tfGS8i
 
 
 ### `wiki/topics/userfactory-advanced.md` — Topic userfactory-advanced
@@ -21687,7 +27613,11 @@ Questo documento descrive l'implementazione corretta dei form nel tema One utili
 
 # Topic volt-folio
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 15 documenti (chiave `volt-folio`).
+=======
+Sintesi automatica di 14 documenti (chiave `volt-folio`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
@@ -21733,7 +27663,11 @@ L'errore `Route [logout] not defined` si verifica perché stiamo cercando di uti
 
 # Topic widget-translation
 
+<<<<<<< .merge_file_3g8mQA
 Sintesi automatica di 7 documenti (chiave `widget-translation`).
+=======
+Sintesi automatica di 6 documenti (chiave `widget-translation`).
+>>>>>>> .merge_file_tfGS8i
 
 ## Widget Translation Rules - FixCity Project
 
@@ -21953,11 +27887,14 @@ if (! $this->hasColumn('state')) {
 ```
 
 
+<<<<<<< .merge_file_3g8mQA
 ### `xotbasemigration-laraxot-philosophy.md` — xotbasemigration-laraxot-philosophy
 
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-laraxot-philosophy.md
 
+=======
+>>>>>>> .merge_file_tfGS8i
 ### `xotbasemigration-laraxot.md` — XotBaseMigration - La Filosofia Laraxot nel Modulo User
 
 

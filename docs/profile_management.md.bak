@@ -64,4 +64,4 @@ This document outlines the best practices for managing user profiles within a La
 - Update this document if new profile management functionalities are introduced.
 
 ## Links to Related Documentation
-- [Session Management](session-management-3.md)
+- [Session Management](./SESSION_MANAGEMENT.md)

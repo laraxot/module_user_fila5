@@ -37,7 +37,7 @@
 #### OtherDeviceLogoutListener - N+1 Updates
 **File**: `Listeners/OtherDeviceLogoutListener.php:42`
 **Problema**: Loop con update individuali (50+ query)
-**Soluzione**: Bulk update (già documentata in `code-quality-analysis-3.md`)
+**Soluzione**: Bulk update (già documentata in `code_quality_analysis.md`)
 
 ### 2. Code Duplication (MEDIUM Priority)
 

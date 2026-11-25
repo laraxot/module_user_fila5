@@ -4,7 +4,7 @@
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-- [Convenzioni Path](path-conventions-2.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](logout-page-fix-2.md)
+- [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.

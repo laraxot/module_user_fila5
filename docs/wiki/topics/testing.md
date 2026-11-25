@@ -7,6 +7,7 @@ qmd: "digest ceiling 100 testing"
 
 # Topic testing
 
+<<<<<<< .merge_file_rJ7Xmj
 Sintesi automatica di 6 documenti (chiave `testing`).
 
 ## testing
@@ -14,6 +15,9 @@ Sintesi automatica di 6 documenti (chiave `testing`).
 _Fonte: `best-practices/testing.md`_
 
 See canonical documentation: ../../../../Themes/docs/shared-components/testing-rules.md
+=======
+Sintesi automatica di 5 documenti (chiave `testing`).
+>>>>>>> .merge_file_R6LD0i
 
 ## Testing del Bug Fix: Infinite Loop in make:filament-user
 
