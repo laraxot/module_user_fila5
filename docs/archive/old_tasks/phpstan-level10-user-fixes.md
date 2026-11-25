@@ -1,8 +1,3 @@
----
-title: "PHPStan Level 10 Fixes - User Module"
-type: note
-qmd: "phpstan level10 user fixes level"
----
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento

@@ -1,8 +1,3 @@
----
-title: "PHPStan Fixes Complete - Gennaio 2025"
-type: note
-qmd: "phpstan fixes january complete gennaio 2025"
----
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

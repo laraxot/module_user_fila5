@@ -1,8 +1,3 @@
----
-title: "User Module - Architecture Documentation"
-type: architecture
-qmd: "user architecture"
----
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

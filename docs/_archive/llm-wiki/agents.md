@@ -1,3 +1,15 @@
+---
+title: "Page Title"
+type: concept|entity|source|comparison|decision|troubleshooting
+sources: ["raw/articles/filename.md"]
+confidence: high|medium|low
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags: [tag1, tag2]
+related:
+  - concepts/related.md
+qmd: "agents page title"
+---
 # User {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** User

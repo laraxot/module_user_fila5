@@ -1,8 +1,3 @@
----
-title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
-type: note
-qmd: "translation syntax fixes correzioni errori sintassi"
----
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

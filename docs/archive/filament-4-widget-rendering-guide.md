@@ -1,8 +1,3 @@
----
-title: "Guida Rendering Widget Filament 4 - Modulo User"
-type: guide
-qmd: "filament 4 widget rendering guide guida"
----
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Data**: 14 Ottobre 2025  

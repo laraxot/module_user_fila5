@@ -1,8 +1,3 @@
----
-title: "Refactor Completo Campi \"Città\" - Modulo User"
-type: note
-qmd: "translation city field refactor completo campi"
----
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -163,9 +158,15 @@ Tutti i file corretti mantengono:
 ## Collegamenti Bidirezionali
 
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
+<<<<<<< .merge_file_pK43xY
 - [SaluteOra Translation Audit](../../saluteora/docs/translation_audit_city_fields.md)
 - [Translation Syntax Fixes](../../../docs/translation-syntax-fixes-2.md)
 - [User Module Widget Translation Rules](widget-translation-rules-2.md)
+=======
+- [SaluteOra Translation Audit](../../SaluteOra/docs/translation_audit_city_fields.md)
+- [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
+- [User Module Widget Translation Rules](widget-translation-rules.md)
+>>>>>>> .merge_file_3uQEY0
 
 ## Prevenzione Futura
 

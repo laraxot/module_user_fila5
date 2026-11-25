@@ -1,8 +1,3 @@
----
-title: "PHPStan Analysis - User Module"
-type: analysis
-qmd: "phpstan analysis user"
----
 # PHPStan Analysis - User Module
 
 ## 📊 Status

@@ -1,8 +1,3 @@
----
-title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
-type: note
-qmd: "phpstan fixes gennaio user 2025"
----
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  

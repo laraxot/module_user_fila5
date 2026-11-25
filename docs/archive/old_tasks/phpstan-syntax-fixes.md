@@ -1,8 +1,3 @@
----
-title: "PHPStan Syntax Fixes - Modulo User"
-type: note
-qmd: "phpstan syntax fixes user"
----
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  

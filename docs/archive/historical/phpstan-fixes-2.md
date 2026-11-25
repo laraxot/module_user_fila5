@@ -1,8 +1,3 @@
----
-title: "Correzioni PHPStan - Modulo User"
-type: note
-qmd: "phpstan fixes 2 correzioni user"
----
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.

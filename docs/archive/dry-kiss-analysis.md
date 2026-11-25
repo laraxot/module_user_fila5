@@ -1,8 +1,3 @@
----
-title: "DRY & KISS Analysis - Modulo User"
-type: analysis
-qmd: "dry kiss analysis user"
----
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025  

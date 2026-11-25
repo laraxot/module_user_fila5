@@ -1,8 +1,3 @@
----
-title: "Guida Rendering Widget Filament 4 - Modulo User"
-type: note
-qmd: "filament 4 widget rendering guida user"
----
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  

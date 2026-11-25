@@ -1,8 +1,3 @@
----
-title: "Filament 4: Namespace Actions - Filosofia Laraxot"
-type: note
-qmd: "filament 4 actions namespace filosofia laraxot"
----
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22

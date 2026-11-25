@@ -1,8 +1,3 @@
----
-title: "PHPStan Compliance - User Module"
-type: note
-qmd: "phpstan compliance user"
----
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT

@@ -1,16 +1,20 @@
----
-title: "Documentation Index"
-type: note
-qmd: "index"
----
----
+# User Module Documentation
 
-## Contenuto assorbito da `INDEX.md`
+## Overview
+This document serves as the central index for the User module, providing guidance on managing user-related functionality within a Laravel application. The User module handles authentication, authorization, profile management, and related features in a modular and reusable way.
 
-# Documentation Index
+## Key Principles
+1. **Modularity**: The User module is designed to be reusable across different projects, maintaining generic functionality.
+2. **Extensibility**: Allows for customization and extension to meet specific project needs without altering core code.
+3. **Security**: Implements best practices for authentication, session management, and data protection.
 
-## -integration
+## Core Features
+- **Authentication**: Handles user login, logout, and session management.
+- **Authorization**: Manages roles and permissions for access control.
+- **Profile Management**: Provides functionality for user profile creation and updates.
+- **Integration**: Works seamlessly with other modules like Notify for notifications.
 
+<<<<<<< .merge_file_oNVEUM
 - [eav.md](./-integration/eav.md)
 - [filament-3.md](../../../Activity/docs/filament-3.md)
 - [gdpr.md](./-integration/gdpr.md)
@@ -35,25 +39,52 @@ qmd: "index"
 - [two-factor-1.md](./-integration/two-factor.md)
 - [two-factor-2.md](./-integration/two-factor.md)
 - [two-factor.md](./-integration/two-factor.md)
+=======
+## Implementation Guidelines
+>>>>>>> .merge_file_YHHjXF
 
-## -integration/archive
+### 1. Module Structure
+- The User module follows a standard structure with directories for models, controllers, services, and views to ensure clarity and maintainability.
 
+<<<<<<< .merge_file_oNVEUM
 - [spatie-permissions.md](../-integration/archive/spatie-permissions.md)
 - [terms-and-conditions.md](../-integration/archive/terms-and-conditions.md)
 - [two-factor.md](../-integration/archive/two-factor.md)
+=======
+### 2. BaseUser Model
+- Use the `BaseUser` model as the foundation for user-related data and logic, extending it as needed for specific types.
+  ```php
+  namespace Modules\User\Models;
+>>>>>>> .merge_file_YHHjXF
 
-## -integration/legacy
+  class User extends BaseUser
+  {
+      // Custom user logic
+  }
+  ```
 
+<<<<<<< .merge_file_oNVEUM
 - [spatie-permissions.md](../-integration/archive/spatie-permissions.md)
 - [terms-and-conditions.md](../-integration/archive/terms-and-conditions.md)
 - [two-factor.md](../-integration/archive/two-factor.md)
+=======
+### 3. Authentication
+- Implement authentication using Laravel's built-in systems or custom solutions integrated with Filament for admin interfaces.
+>>>>>>> .merge_file_YHHjXF
 
-## admin
+### 4. Routing
+- Define user-related routes in a dedicated `routes` directory, ensuring they are prefixed with the appropriate locale.
 
-- [socialite-configuration.md](./admin/socialite-configuration.md)
+## Common Issues and Fixes
+- **Authentication Failures**: Ensure correct configuration of auth providers and middleware for user routes.
+- **Permission Conflicts**: Verify role and permission assignments to avoid access issues.
+- **Session Expiry**: Implement proper session management to handle user logout and timeouts securely.
 
-## architecture
+## Documentation and Updates
+- Document any custom implementations or deviations from standard User module practices in the relevant documentation folder.
+- Update this index if new features or significant changes are introduced to the User module.
 
+<<<<<<< .merge_file_oNVEUM
 - [architecture-rules.md](./architecture/architecture-rules.md)
 - [architecture.md](./architecture/architecture.md)
 - [auth-blade-structure-2.md](../auth-blade-structure-2.md)
@@ -63,9 +94,18 @@ qmd: "index"
 - [testing-structure.md](./architecture/testing-structure.md)
 - [user-gdpr-decoupling.md](./architecture/user-gdpr-decoupling.md)
 - [user-gdpr-oupling.md](./architecture/user-gdpr-oupling.md)
+=======
+## Links to Related Documentation
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth_pages_implementation.md)
+- [Profile Management](./profile_management.md)
+- [Routing Best Practices](./routing_best_practices.md)
+- [Session Management](./session_management.md)
+>>>>>>> .merge_file_YHHjXF
 
-## archive
+## Sottocartelle
 
+<<<<<<< .merge_file_oNVEUM
 - [actions-path-convention-2.md](../actions-path-convention-2.md)
 - [actions-structure-1.md](../actions-structure-4.md)
 - [actions-structure-4.md](../actions-structure-4.md)
@@ -304,9 +344,17 @@ qmd: "index"
 - [widget-translation-rules-1.md](../widget-translation-rules-2.md)
 - [widget-translation-rules-2.md](../widget-translation-rules-2.md)
 - [widgets-structure-2.md](../widgets-structure-2.md)
+=======
+### Models
+- [Index](./models/index.md) - Indice della documentazione sui modelli
+- [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
+>>>>>>> .merge_file_YHHjXF
 
-## archive/historical
+### Folio e Blade
+- [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
+- [Componenti](./components/index.md) - Documentazione sui componenti
 
+<<<<<<< .merge_file_oNVEUM
 - [actions-path-convention-2.md](../actions-path-convention-2.md)
 - [actions-structure-1.md](./archive/historical/actions-structure-1.md)
 - [actions-structure-4.md](../actions-structure-4.md)
@@ -774,9 +822,15 @@ qmd: "index"
 - [xotbase-resource-getpages-automatic.md](./archive/historical/xotbase-resource-getpages-automatic.md)
 - [xotbasemigration-laraxot-philosophy.md](./archive/historical/xotbasemigration-laraxot-philosophy.md)
 - [xotbaseresource-violations-removal.md](./archive/historical/xotbaseresource-violations-removal.md)
+=======
+## Roadmap e Sviluppo Futuro
+- [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User
+>>>>>>> .merge_file_YHHjXF
 
-## archive/old_tasks
+## Note sulla Manutenzione
+Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
+<<<<<<< .merge_file_oNVEUM
 - [login-widget-translation-audit.md](./archive/old_tasks/login-widget-translation-audit.md)
 - [password-translation-completion.md](./archive/old_tasks/password-translation-completion.md)
 - [phpstan-analysis-user.md](./archive/old_tasks/phpstan-analysis-user.md)
@@ -801,9 +855,12 @@ qmd: "index"
 - [phpstan-syntax-fixes.md](./archive/old_tasks/phpstan-syntax-fixes.md)
 - [roadmap.md](./archive/old_tasks/roadmap.md)
 - [translation-syntax-fixes-2.md](../../../Lang/docs/translation-syntax-fixes-2.md)
+=======
+>>>>>>> .merge_file_YHHjXF
 
-## best-practices
+# Indice Documentazione User
 
+<<<<<<< .merge_file_oNVEUM
 - [auth-components-best-practices-4.md](../auth-components-best-practices-4.md)
 - [auth-widget-rules-2.md](../auth-widget-rules-2.md)
 - [auth-widget.md](./best-practices/auth-widget.md)
@@ -3417,3 +3474,6 @@ qmd: "index"
 - [phpstan-widget-property-types-2026-05-06.deprecated.md](./wiki/troubleshooting/phpstan-widget-property-types-2026-05-06.deprecated.md)
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
+=======
+- [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+>>>>>>> .merge_file_YHHjXF

@@ -1,8 +1,3 @@
----
-title: "Correzioni PHPStan - Modulo User"
-type: note
-qmd: "phpstan corrections correzioni user"
----
 # Correzioni PHPStan - Modulo User
 
 ## Panoramica

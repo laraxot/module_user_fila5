@@ -1,8 +1,3 @@
----
-title: "PHPStan Array Types Fixes - Modulo User"
-type: note
-qmd: "phpstan array types fixes user"
----
 # PHPStan Array Types Fixes - Modulo User
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

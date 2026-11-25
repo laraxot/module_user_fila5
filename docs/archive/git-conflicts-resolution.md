@@ -1,8 +1,3 @@
----
-title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
-type: note
-qmd: "git conflicts resolution risoluzione conflitti user"
----
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -12,11 +7,19 @@ qmd: "git conflicts resolution risoluzione conflitti user"
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< .merge_file_LfpaCw
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices-4.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+=======
+- [Indice documentazione User](/laravel/modules/user/docs/index.md)
+- [README User](/laravel/modules/user/docs/readme.md)
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
+- [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+>>>>>>> .merge_file_UGiL6t
 
 ## File Risolti
 

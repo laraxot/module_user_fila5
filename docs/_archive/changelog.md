@@ -1,8 +1,3 @@
----
-title: "Changelog"
-type: note
-qmd: "changelog"
----
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

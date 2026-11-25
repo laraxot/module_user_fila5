@@ -1,8 +1,3 @@
----
-title: "Analisi Metodi Duplicati in BaseUser.php"
-type: analysis
-qmd: "baseuser spatie duplicates analysis analisi metodi"
----
 # Analisi Metodi Duplicati in BaseUser.php
 
 ## Data Analisi
