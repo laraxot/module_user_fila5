@@ -1,0 +1,94 @@
+name: ci
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev]
+
+concurrency:
+  group: ci-user-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  manifest:
+    name: Manifest sanity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate composer.json
+        run: |
+          php -r 'json_decode(file_get_contents("composer.json"), true, 512, JSON_THROW_ON_ERROR); echo "ok composer.json\n";'
+          composer validate --no-check-publish
+
+      - name: Guard against committed secrets
+        run: |
+          if git grep -nE '(API_KEY|SECRET|PRIVATE_KEY)\s*=\s*["'"'"'][^$"'"'"']+["'"'"']' \
+            -- ':!.github' ':!docs' ':!tests' ':!*.md' ':!*.example' ':!*.dist' >/tmp/secret-hits.txt; then
+            echo "Possible hardcoded secrets:"
+            cat /tmp/secret-hits.txt
+            exit 1
+          fi
+          echo "ok no obvious secrets"
+
+      - name: Conflict markers
+        run: |
+          if git grep -nE '^(<{7}|>{7})( |$)|^={7}$' -- ':!docs' ':!*.md' >/tmp/markers.txt; then
+            echo "Conflict markers found:"
+            cat /tmp/markers.txt
+            exit 1
+          fi
+          echo "ok no conflict markers"
+
+  php-lint:
+    name: PHP lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: php -l sweep
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            php -l "$f" >/dev/null || { echo "LINT FAIL: $f"; fail=1; }
+          done < <(find app config database routes tests Providers -name '*.php' -type f 2>/dev/null)
+          exit $fail
+
+  static-analysis:
+    name: PHPStan (when deps install)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: manifest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Composer install
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: PHPStan
+        run: |
+          if [ -f vendor/bin/phpstan ]; then
+            vendor/bin/phpstan analyse --no-progress
+          else
+            echo "::notice::phpstan non installato nel modulo — skip (eseguito dall'host laravel/)"
+          fi
+
+  tests:
+    name: Pest (host-context documented)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: manifest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect runnable Pest
+        run: |
+          # I test del modulo girano nel contesto host laravel/ (Testbench), non standalone.
+          if [ -f phpunit.xml ] || [ -f phpunit.xml.dist ]; then
+            echo "phpunit config presente"
+          else
+            echo "::notice::nessun phpunit.xml nel modulo — Pest gira dall'host; vedi docs/ per il comando"
+          fi
