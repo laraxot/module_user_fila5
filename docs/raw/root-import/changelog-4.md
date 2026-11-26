@@ -8,17 +8,11 @@ qmd: "changelog-4 changelog"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_RXzmTr
-  - "./changelog.md"
-  - "./changelog.md"
-  - "./changelog.md"
-=======
   - "./changelog-1.md"
   - "./changelog-2.md"
   - "./changelog-3.md"
->>>>>>> .merge_file_4AmCP0
   - "./changelog-5.md"
-  - "./CHANGELOG.md"
+  - "./changelog.md"
   - "./git-reset-1.md"
   - "./git-reset.md"
   - "./pest-test-report-1.md"
@@ -38,7 +32,6 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Aggiornata la documentazione degli errori comuni di Filament
 - Aggiunta checklist per la correzione degli errori nei RelationManager
 - Rimosso il modificatore `static` dal metodo `getFormSchema()` in `LoginWidget` per risolvere l'errore di compatibilità con Filament
-- Aggiornata la documentazione degli errori comuni di Filament
 - Aggiunta checklist per la correzione degli errori nei Widget
 
 ### Added
@@ -46,15 +39,12 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Esempi di implementazione corretta per i RelationManager
 - Checklist per la verifica delle correzioni
 - Esempi di implementazione corretta per i Widget
-- Checklist per la verifica delle correzioni
 
 ### Changed
 - Migliorata la struttura della documentazione Filament
 - Aggiornate le best practices per i metodi di RelationManager
 - Aggiunte note sulla verifica del codice e la manutenibilità
-- Migliorata la struttura della documentazione Filament
 - Aggiornate le best practices per i metodi di Widget
-- Aggiunte note sulla verifica del codice e la manutenibilità
 
 ## [1.0.0] - 2024-03-XX
 
@@ -65,4 +55,3 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Documentazione base del modulo
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
-- Documentazione base del modulo

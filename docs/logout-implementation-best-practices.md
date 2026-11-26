@@ -3,19 +3,8 @@
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
-<<<<<<< .merge_file_BSfoKs
-<<<<<<< .merge_file_AD1Maw
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_q65Vgo
-=======
-<<<<<<< .merge_file_tP3Aka
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_zAo9S2
->>>>>>> .merge_file_SyoHwF
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -269,7 +258,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md

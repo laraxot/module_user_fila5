@@ -21,23 +21,12 @@ related:
 # Best Practices per i Componenti di Autenticazione 
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_5oECVL
-<<<<<<< .merge_file_OvX7g7
-=======
-<<<<<<< .merge_file_vv5DIV
->>>>>>> .merge_file_XqJSAM
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
-=======
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
-<<<<<<< .merge_file_5oECVL
->>>>>>> .merge_file_e1aVrG
-=======
->>>>>>> .merge_file_i2HE57
->>>>>>> .merge_file_XqJSAM
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

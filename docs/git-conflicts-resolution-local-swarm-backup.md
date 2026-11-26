@@ -27,27 +27,16 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_F7R2OM
-<<<<<<< .merge_file_6f4CTv
-=======
-<<<<<<< .merge_file_Bal8of
->>>>>>> .merge_file_5a9yW8
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-=======
 - [Indice documentazione User](/laravel/Modules/User/docs/index.md)
 - [README User](/laravel/Modules/User/docs/readme.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
-<<<<<<< .merge_file_F7R2OM
->>>>>>> .merge_file_610whp
-=======
->>>>>>> .merge_file_ufm4ag
->>>>>>> .merge_file_5a9yW8
 
 ## File Risolti
 
@@ -312,7 +301,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati 
-5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 

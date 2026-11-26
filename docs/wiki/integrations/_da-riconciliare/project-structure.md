@@ -151,19 +151,6 @@ updated: 2026-05-11
 tags: [structure, architecture, module]
 ---
 
-# Project Structure — Module **User**
-
-## Directory Structure
-
-### ❌ Forbidden Root Folders
-
-At module root level, these folders MUST NOT exist:
-- ❌ `Actions/` (move to `app/Actions/`)
-- ❌ `Application/` (move to `app/Application/`)
-- ❌ `Events/` (move to `app/Events/`)
-- ❌ `Listeners/` (move to `app/Listeners/`)
-- ❌ `Database/` (rename to lowercase `database/`)
-
 \`\`\`
 ./laravel/Modules/User/docs/
 ├── wiki/                          # Knowledge base locale (LLM Wiki)
@@ -186,29 +173,16 @@ At module root level, these folders MUST NOT exist:
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< .merge_file_qjeplg
-<<<<<<< .merge_file_HRNVHF
-=======
-<<<<<<< .merge_file_ZGeChp
->>>>>>> .merge_file_6ObGbf
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
-=======
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
 ├── architecture.md               # (opzionale) Architettura modulo
-<<<<<<< .merge_file_qjeplg
->>>>>>> .merge_file_maKpiY
-=======
->>>>>>> .merge_file_RT9u7Z
->>>>>>> .merge_file_6ObGbf
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
-
-## File Chiave
 
 | File | Purpose |
 |------|---------|
@@ -216,88 +190,5 @@ At module root level, these folders MUST NOT exist:
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-<<<<<<< .merge_file_qjeplg
-<<<<<<< .merge_file_HRNVHF
 | `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
-=======
 | `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
->>>>>>> .merge_file_maKpiY
-=======
-<<<<<<< .merge_file_ZGeChp
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
-=======
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
->>>>>>> .merge_file_RT9u7Z
->>>>>>> .merge_file_6ObGbf
-
-## Convenzioni
-
-### Naming
-
-- **Filenames**: lowercase-kebab-case.md
-- **Directories**: lowercase
-- **Titles**: Title Case
-
-### Frontmatter Schema
-
-\`\`\`yaml
----
-title: "Page Title"
-type: concept|entity|source|comparison|decision|troubleshooting
-sources: []  # Solo per raw sources
-confidence: high|medium|low
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-tags: [tag1, tag2]
-related:
-  - ../concepts/related.md
----
-\`\`\`
-
-### Link Rules
-
-- **Interno modulo**: `[[concepts/page]]` o `[link](./concepts/page.md)`
-- **Modulo altro**: `[[../../OtherModule/docs/wiki/concepts/page]]`
-- **Project wiki**: `[Global rule](../../docs/wiki/rules/rule.md)`
-
-## Workflow con On-Demand Pattern
-
-\`\`\`mermaid
-graph TD
-    A[Task Received] --> B{Has trigger?}
-    B -->|Yes| C[Read trigger_map]
-    C --> D[Load specific file]
-    B -->|No| E[qmd search]
-    E --> D
-    D --> F[Apply knowledge]
-    F --> G[Update wiki/log]
-\`\`\`
-
-## Riferimenti Globali
-
-- [Project Wiki Root](../..)
-- [Global Rules](../../rules)
-- [Global Skills](../../skills)
-- [Global Commands](../../commands)
-- [Global Memories](../../memories)
-
-## Setup Iniziale (per nuovi moduli)
-
-\`\`\`bash
-# 1. Crea struttura wiki
-mkdir -p docs/wiki/{rules,skills,commands,memories,concepts,entities,decisions,troubleshooting}
-
-# 2. Crea INDEX files (già creati)
-cp docs/wiki/rules/index.md docs/wiki/rules/
-# ... etc
-
-# 3. Aggiungi a QMD collection (opzionale, già incluso global)
-# Il .qmd/index.yml include automaticamente docs/**/wiki/
-
-# 4. Committa
-git add docs/
-git commit -m "docs: add wiki structure for User"
-\`\`\`
-
----
-*Pattern: On-Demand | Source: docs/wiki/*

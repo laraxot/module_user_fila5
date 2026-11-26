@@ -21,27 +21,14 @@ related:
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_DKq9XS
-<<<<<<< .merge_file_nnWgsk
 - [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_KrkNBE
-=======
-<<<<<<< .merge_file_PFA3kV
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_NsmIEZ
->>>>>>> .merge_file_2yyR41
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
-- [README modulo User](./README.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
-- [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
@@ -49,9 +36,6 @@ related:
 ## Panoramica
 
 Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
-
-
-## Panoramica
 
 Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Laraxot.
 ## Analisi dell'Implementazione Attuale

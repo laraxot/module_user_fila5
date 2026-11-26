@@ -21,19 +21,8 @@ related:
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_dR5Nlk
-<<<<<<< .merge_file_CODV4Y
 - [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_Pe7HC4
-=======
-<<<<<<< .merge_file_R3gxGH
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_2XkVMv
->>>>>>> .merge_file_g7AHFu
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)

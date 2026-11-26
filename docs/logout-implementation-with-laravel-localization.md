@@ -3,19 +3,8 @@
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
-<<<<<<< .merge_file_zsNvuV
-<<<<<<< .merge_file_K3S8i0
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_NtK5No
-=======
-<<<<<<< .merge_file_PzthHi
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_QSMLGI
->>>>>>> .merge_file_a3SQws
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 # Implementazione del Logout con LaravelLocalization
@@ -188,7 +177,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md

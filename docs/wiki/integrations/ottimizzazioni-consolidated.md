@@ -39,7 +39,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
@@ -61,7 +60,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
@@ -83,7 +81,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss-Modules.md
@@ -105,7 +102,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
@@ -132,7 +128,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Ottimizzazioni Super DRY + KISS - Modulo User
@@ -397,7 +392,6 @@ class User extends Model
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<string>
      */
     protected $hidden = [
         'password',
@@ -515,7 +509,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
@@ -537,7 +530,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-user.md
@@ -564,7 +556,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Ottimizzazioni DRY + KISS - Modulo User
@@ -624,15 +615,8 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ##### C. **PHPStan Fixes (5+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
-<<<<<<< .merge_file_L0AbO5
 ├── phpstan-fixes-historical-alias.md (4.4KB)
-=======
-<<<<<<< .merge_file_FOALSN
-├── phpstan-fixes-historical-1.md (4.4KB)
-=======
 ├── phpstan-fixes-historical-alias.md (4.4KB)
->>>>>>> .merge_file_RmaN6u
->>>>>>> .merge_file_dL3NGU
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
@@ -1063,7 +1047,6 @@ class UserResource extends XotBaseResource
 - [ ] **Filament Components**: 7 file → 5 file (-29%)
   - [ ] Consolidamento risorse
   - [ ] Consolidamento widget
-  - [ ] Best practices unificate
 - [ ] **FullCalendar**: 6 file → 4 file (-33%)
   - [ ] Consolidamento scheduler
   - [ ] Consolidamento troubleshooting

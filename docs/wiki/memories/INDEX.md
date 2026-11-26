@@ -36,19 +36,8 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 - Non embeddare Memories nei prompt di avvio
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
 
-<<<<<<< .merge_file_LCDgml
-<<<<<<< .merge_file_m0fu8y
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
-=======
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
->>>>>>> .merge_file_baXBh3
-=======
-<<<<<<< .merge_file_vOpLFg
-- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
-=======
-- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
->>>>>>> .merge_file_ys2tyO
->>>>>>> .merge_file_JKyrAz
 
 ## Aggiungere una Nuova MEMORIES
 

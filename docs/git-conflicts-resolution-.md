@@ -11,23 +11,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/Modules/User/docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
-<<<<<<< .merge_file_ATh9Yu
-<<<<<<< .merge_file_CB8DUr
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
-=======
 - [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
->>>>>>> .merge_file_YEhcuh
-=======
-<<<<<<< .merge_file_fXq50E
-- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
-=======
-<<<<<<< .merge_file_4CJVIK
-- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
-=======
-- [BaseUser Documentation](/laravel/Modules/User/docs/baseuser.md)
->>>>>>> .merge_file_b33J7d
->>>>>>> .merge_file_wZprQI
->>>>>>> .merge_file_ju1xB7
 
 ## File Risolti
 
@@ -292,7 +277,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
 5. Implementare test automatizzati 
-5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
 

@@ -27,26 +27,11 @@ related:
 - [Convenzioni Path](./path-conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)
-- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-<<<<<<< .merge_file_BxPpoe
-<<<<<<< .merge_file_TeHtQ4
 - [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_769Mtu
-=======
-<<<<<<< .merge_file_Ayom0O
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_45CvTo
->>>>>>> .merge_file_rCAwkw
 - [Convenzioni Path](./path-conventions-user.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout-page-fix.md)
 - [Convenzioni Path](./path_conventions.md)
-- [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout_page_fix.md)
 
 ## Posizione Corretta
@@ -141,5 +126,4 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 
 - Il file `logout.blade.php` è una pagina Folio e non richiede configurazioni aggiuntive in `routes/web.php`.
 - La pagina è accessibile all'URL `/{locale}/auth/logout`.
-- Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.

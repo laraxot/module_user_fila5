@@ -21,23 +21,11 @@ related:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_4RQGhP
-<<<<<<< .merge_file_Nb4UuL
 - [README modulo User](./readme.md)
-=======
 - [README modulo User](./README.md)
->>>>>>> .merge_file_ExvwYp
-=======
-<<<<<<< .merge_file_sWkVGI
-- [README modulo User](./readme.md)
-=======
-- [README modulo User](./README.md)
->>>>>>> .merge_file_dEHRYp
->>>>>>> .merge_file_hAMEjq
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
-- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
 - [Implementazione Logout](./logout-blade-implementation.md)
@@ -45,8 +33,6 @@ related:
 ## Panoramica
 
 Questo documento descrive come implementare nell'header di SaluteOra:
-
-## Panoramica
 
 Questo documento descrive come implementare nell'header di healthcare_app:
 1. Un selettore di lingua
@@ -132,8 +118,6 @@ Aggiungere un nuovo blocco nel file JSON dell'header:
 
 ## Implementazione del Dropdown Avatar Utente
 
-### 1. Creazione del Componente Blade
-
 Creare un nuovo componente per l'avatar utente con dropdown:
 
 ```php
@@ -205,10 +189,6 @@ Creare un nuovo componente per l'avatar utente con dropdown:
     </div>
 @endauth
 ```
-
-### 2. Aggiornamento del File JSON
-
-Aggiungere un nuovo blocco nel file JSON dell'header:
 
 ```json
 {

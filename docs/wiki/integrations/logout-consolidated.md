@@ -78,7 +78,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi del File Logout.blade.php
@@ -307,20 +306,8 @@ $logout = function () {
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session-management.md)
-<<<<<<< .merge_file_8xkZ2S
-<<<<<<< .merge_file_NYLxks
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
-=======
 - [Tema One Documentation](../../themes/one/docs/README.md) 
->>>>>>> .merge_file_Gypa83
-=======
-<<<<<<< .merge_file_4xhBAK
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
-=======
-- [Tema One Documentation](../../themes/one/docs/README.md) 
->>>>>>> .merge_file_W0paZr
->>>>>>> .merge_file_W4WYYT
 ---
 
 ## logout-blade-analysis-3
@@ -343,7 +330,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./readme.md)
@@ -809,7 +795,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md
@@ -831,7 +816,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions.md
@@ -858,7 +842,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi Corretta del File logout.blade.php
@@ -870,24 +853,15 @@ related:
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
-- [README modulo User](./readme.md)
 - [Volt Folio Logout](./volt-folio-logout.md)
-- [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation.md)
 - [Convenzioni Path](./path-conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error.md)
 
-## Panoramica
-
 Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
-
-
-## Panoramica
 
 Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Laraxot.
 ## Analisi dell'Implementazione Attuale
-
-### Struttura del File
 
 ```php
 <?php
@@ -963,15 +937,9 @@ try {
 </x-layout>
 ```
 
-### Problemi Identificati
-
 1. **Incoerenza tra Logica e UI**: Il file contiene sia logica PHP che esegue direttamente il logout, sia una UI che chiede conferma all'utente. Questa incoerenza crea confusione e potrebbe portare a comportamenti imprevisti.
 
-2. **Mancanza di Direttive Folio**: Non vengono utilizzate le direttive di Folio come `middleware` e `name` per definire il middleware e il nome della rotta.
-
 3. **Localizzazione degli URL**: Il reindirizzamento utilizza `route('home')` e `route('login')` invece di URL localizzati con `app()->getLocale()`.
-
-4. **Componenti UI Non Standard**: Viene utilizzato HTML diretto per i pulsanti invece dei componenti Blade nativi di Filament.
 
 5. **Mancanza di Dichiarazione Strict Types**: Non viene utilizzata la dichiarazione `declare(strict_types=1);` all'inizio del file.
 
@@ -983,82 +951,11 @@ try {
 
 ### 1. Approccio Folio con PHP Puro (Raccomandato)
 
-Questo approccio è il più semplice e diretto per il logout, poiché non richiede gestione dello stato o interazione con l'utente:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-### 2. Volt Action dedicata
-
-Questo approccio utilizza una Volt Action dedicata con attributi PHP 8 per definire la rotta `logout`:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\User\Http\Volt;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Volt\Routing\Attribute\Post;
-
-#[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
-final class LogoutAction
-{
-    public function __invoke(): RedirectResponse
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        // Reindirizza alla home page localizzata
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-}
-```
-
-Quindi nel form:
-
-```blade
-<form action="{{ route('logout') }}" method="post">
-    @csrf
-    <x-filament::button type="submit" color="danger">
-        {{ __('Logout') }}
-    </x-filament::button>
-</form>
-```
-
 ## Raccomandazione Finale
 
 Per il logout , si raccomanda di utilizzare l'approccio Folio con PHP puro, che è il più semplice e diretto. Questo approccio offre diversi vantaggi:
 
 1. **Semplicità**: Il codice è semplice e facile da comprendere.
-
-2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
 
 3. **Coerenza**: Questo approccio è coerente con le convenzioni di Laraxot per le operazioni semplici.
 4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
@@ -1116,7 +1013,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis.md
@@ -1138,7 +1034,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
@@ -1165,7 +1060,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 - [Documentazione centrale](/docs/README.md)
@@ -1301,7 +1195,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-error-analysis.md
@@ -1323,7 +1216,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-implementation.md
@@ -1345,7 +1237,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
@@ -1372,7 +1263,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
@@ -1386,214 +1276,15 @@ related:
 - [Conclusioni Logout](logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
-## Errore Fondamentale Identificato
-
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
 
-```php
-<?php
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
-
-// Esegui il logout
-Auth::logout();
-
-// Invalida la sessione
-Session::invalidate();
-
-// Rigenera il token CSRF
-Session::regenerateToken();
-
-// Redirect alla home
-return redirect()->route('home');
-?>
-
-<x-layout>
-    <!-- Contenuto HTML che non viene mai visualizzato -->
-</x-layout>
-```
-
-### Problemi nell'implementazione attuale:
-
-1. **Problema strutturale**: Il file inizia correttamente con `<?php`, ma include HTML che non verrà mai visualizzato perché il codice PHP esegue un redirect prima che il rendering HTML possa avvenire.
-
-2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
-
 3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di <nome progetto>.
-
-4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
-
-## Errore nell'Implementazione del Widget Filament
-
-Nell'implementazione proposta per il widget Filament, è stato commesso un errore critico:
-
-```php
-public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema([
-            Component::make()
-                ->columnSpan('full')
-                ->extraAttributes(['class' => 'text-center'])
-                ->view('filament.widgets.auth.logout-message'),
-        ])
-        ->statePath('data');
-}
-```
-
-Questo metodo tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseWidget`:
-
-```php
-final public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema($this->getFormSchema())
-        ->columns(2)
-        ->statePath('data');
-}
-```
-
-Un metodo dichiarato come `final` non può essere sovrascritto nelle classi derivate, causando un errore fatale:
-
-```
-PHP Fatal error: Cannot override final method Modules\Xot\Filament\Widgets\XotBaseWidget::form()
-```
-
-## Soluzione Corretta
-
-### 1. Per il file logout.blade.php
-
-L'implementazione corretta dovrebbe:
-- Iniziare con `<?php` (già corretto)
-- Utilizzare le direttive di Laravel Folio
-- Implementare la localizzazione URL
-- Includere gestione errori e logging
-- Non includere HTML che non verrà mai visualizzato
-
-### 2. Per il Widget Filament
-
-L'implementazione corretta dovrebbe:
-- Implementare il metodo astratto `getFormSchema()` invece di tentare di sovrascrivere `form()`
-- Rispettare la struttura e le convenzioni di `XotBaseWidget`
-- Utilizzare correttamente i componenti Filament
-
-## Conclusione
-
-L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
-1. L'implementazione attuale inizia correttamente con `<?php`
-2. Il metodo `form()` in `XotBaseWidget` è dichiarato come `final` e non può essere sovrascritto
 
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
 - Rispettare le convenzioni e le strutture del progetto <nome progetto>
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
-
-## Collegamenti correlati
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Logout](logout-blade-analysis-3.md)
-- [Conclusioni Logout](logout-blade-conclusions-2.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-
-## Errore Fondamentale Identificato
-
-L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
-
-```php
-<?php
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
-
-// Esegui il logout
-Auth::logout();
-
-// Invalida la sessione
-Session::invalidate();
-
-// Rigenera il token CSRF
-Session::regenerateToken();
-
-// Redirect alla home
-return redirect()->route('home');
-?>
-
-<x-layout>
-    <!-- Contenuto HTML che non viene mai visualizzato -->
-</x-layout>
-```
-
-### Problemi nell'implementazione attuale:
-
-1. **Problema strutturale**: Il file inizia correttamente con `<?php`, ma include HTML che non verrà mai visualizzato perché il codice PHP esegue un redirect prima che il rendering HTML possa avvenire.
-
-2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
-
-3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di <nome progetto>.
-
-4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
-
-## Errore nell'Implementazione del Widget Filament
-
-Nell'implementazione proposta per il widget Filament, è stato commesso un errore critico:
-
-```php
-public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema([
-            Component::make()
-                ->columnSpan('full')
-                ->extraAttributes(['class' => 'text-center'])
-                ->view('filament.widgets.auth.logout-message'),
-        ])
-        ->statePath('data');
-}
-```
-
-Questo metodo tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseWidget`:
-
-```php
-final public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema($this->getFormSchema())
-        ->columns(2)
-        ->statePath('data');
-}
-```
-
-Un metodo dichiarato come `final` non può essere sovrascritto nelle classi derivate, causando un errore fatale:
-
-```
-PHP Fatal error: Cannot override final method Modules\Xot\Filament\Widgets\XotBaseWidget::form()
-```
-
-## Soluzione Corretta
-
-### 1. Per il file logout.blade.php
-
-L'implementazione corretta dovrebbe:
-- Iniziare con `<?php` (già corretto)
-- Utilizzare le direttive di Laravel Folio
-- Implementare la localizzazione URL
-- Includere gestione errori e logging
-- Non includere HTML che non verrà mai visualizzato
-
-### 2. Per il Widget Filament
-
-L'implementazione corretta dovrebbe:
-- Implementare il metodo astratto `getFormSchema()` invece di tentare di sovrascrivere `form()`
-- Rispettare la struttura e le convenzioni di `XotBaseWidget`
-- Utilizzare correttamente i componenti Filament
-
-## Conclusione
-
-L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
-1. L'implementazione attuale inizia correttamente con `<?php`
-2. Il metodo `form()` in `XotBaseWidget` è dichiarato come `final` e non può essere sovrascritto
 
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
@@ -1617,7 +1308,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-error-analysis.md
@@ -1644,7 +1334,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi dell'Errore negli Eventi di Logout
@@ -1657,8 +1346,6 @@ related:
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
@@ -1698,8 +1385,6 @@ Event::dispatch('auth.logout.successful');
 ```
 
 2. Nel `LogoutListener`, il codice tenta di accedere a `$user->getAuthIdentifier()`, ma `$user` è `null` perché l'utente è già stato disconnesso quando l'evento è stato inviato.
-
-## Soluzione Corretta
 
 La soluzione corretta è modificare l'ordine delle operazioni nel file `logout.blade.php` per garantire che l'evento `auth.logout.successful` includa l'utente prima della disconnessione, oppure modificare il `LogoutListener` per gestire correttamente il caso in cui `$user` sia `null`.
 
@@ -1800,155 +1485,6 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 # Analisi dell'Errore negli Eventi di Logout
-
-## Collegamenti correlati
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
-- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
-- [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
-- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
-
-## Errore Identificato
-
-L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
-
-```
-Call to a member function getAuthIdentifier() on null
-
-  at Modules/User/app/Listeners/LogoutListener.php:59
-     55▕         // Session::flash('login-success', 'Hello ' . $event->user->name . ', welcome back!');
-     56▕         $device = app(GetCurrentDeviceAction::class)->execute();
-     57▕         $user = $event->user;
-     58▕
-  ➜  59▕         $pivot = DeviceUser::firstOrCreate(['user_id' => $user->getAuthIdentifier(), 'device_id' => $device->id]);
-     60▕         $pivot->update(['logout_at' => now()]);
-```
-
-### Causa dell'errore
-
-Il problema si verifica perché:
-
-1. Nel file `logout.blade.php`, l'evento `auth.logout.successful` viene inviato **dopo** che l'utente è già stato disconnesso:
-
-```php
-// Esegui il logout
-Auth::logout();
-request()->session()->invalidate();
-request()->session()->regenerateToken();
-
-// Dispatch dell'evento dopo il logout
-Event::dispatch('auth.logout.successful');
-```
-
-2. Nel `LogoutListener`, il codice tenta di accedere a `$user->getAuthIdentifier()`, ma `$user` è `null` perché l'utente è già stato disconnesso quando l'evento è stato inviato.
-
-## Soluzione Corretta
-
-La soluzione corretta è modificare l'ordine delle operazioni nel file `logout.blade.php` per garantire che l'evento `auth.logout.successful` includa l'utente prima della disconnessione, oppure modificare il `LogoutListener` per gestire correttamente il caso in cui `$user` sia `null`.
-
-### Opzione 1: Modificare l'ordine degli eventi nel file logout.blade.php
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Event;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-try {
-    // Ottieni l'utente prima del logout
-    $user = Auth::user();
-
-    // Dispatch dell'evento prima del logout
-    Event::dispatch('auth.logout.attempting', [$user]);
-
-    // Esegui il logout
-    Auth::logout();
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-
-    // Dispatch dell'evento dopo il logout, passando l'utente salvato
-    Event::dispatch('auth.logout.successful', [$user]);
-
-    // Reindirizzamento con localizzazione
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale)
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    // Log dell'errore
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-
-    // Reindirizzamento con messaggio di errore
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale)
-        ->with('error', __('Errore durante il logout'));
-}
-?>
-```
-
-### Opzione 2: Modificare il LogoutListener per gestire il caso in cui $user sia null
-
-```php
-/**
- * Handle the event.
- */
-public function handle(Logout $event): void
-{
-    try {
-        // Verifica se l'utente esiste prima di procedere
-        if (!$event->user) {
-            Log::warning('Tentativo di logout per un utente non autenticato');
-            return;
-        }
-
-        $device = app(GetCurrentDeviceAction::class)->execute();
-
-        // Aggiorna il pivot solo se abbiamo sia l'utente che il device
-        if ($device) {
-            try {
-                $pivot = DeviceUser::firstOrCreate([
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-                $pivot->update(['logout_at' => now()]);
-            } catch (\Exception $e) {
-                Log::error('Errore durante l\'aggiornamento del pivot device-user', [
-                    'error' => $e->getMessage(),
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-            }
-        }
-
-        // Resto del codice...
-    } catch (\Exception $e) {
-        Log::error('Errore durante la gestione dell\'evento di logout', [
-            'error' => $e->getMessage()
-        ]);
-    }
-}
-```
-
-## Raccomandazione
-
-Si raccomanda di implementare l'**Opzione 1** perché:
-
-1. È più corretto concettualmente salvare l'utente prima del logout e passarlo all'evento
-2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
-3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 ---
@@ -1968,7 +1504,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error.md
@@ -1990,7 +1525,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
@@ -2017,7 +1551,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi dell'Errore nell'Implementazione del Logout
@@ -2030,15 +1563,11 @@ related:
 - [Analisi Logout](logout-blade-analysis-3.md)
 - [Conclusioni Logout](logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
 - [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
-
-## Errore Identificato
 
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta i seguenti problemi:
 
@@ -2052,18 +1581,11 @@ L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/r
 
 5. **Mancato utilizzo di widget Filament**: Per form complessi, SaluteOra raccomanda l'utilizzo di widget Filament invece di reinventare la ruota con implementazioni personalizzate.
 
-
-## Errore Identificato
-
 L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta i seguenti problemi:
-
-1. **Approccio non ottimale**: L'implementazione attuale utilizza Volt per gestire il logout, ma richiede una conferma da parte dell'utente, aggiungendo un passaggio non necessario al processo di logout.
 
 2. **Violazione delle convenzioni di Laraxot**: Secondo le memorie del progetto, per il logout è raccomandato l'approccio "Folio con PHP puro" che esegue il logout immediatamente senza richiedere conferma.
 
 3. **Mancanza di localizzazione URL**: L'implementazione attuale non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di Laraxot.
-
-4. **Struttura non ottimale**: La struttura attuale combina Volt e PHP in modo non ottimale, definendo la logica PHP dopo il template Blade.
 
 5. **Mancato utilizzo di widget Filament**: Per form complessi, Laraxot raccomanda l'utilizzo di widget Filament invece di reinventare la ruota con implementazioni personalizzate.
 ## Soluzione Raccomandata
@@ -2071,31 +1593,6 @@ L'implementazione attuale del file `/var/www/html/ptvx/laravel/Themes/One/resour
 ### 1. Per il logout immediato (approccio raccomandato)
 
 Utilizzare l'approccio "Folio con PHP puro" che esegue il logout immediatamente senza richiedere conferma:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
 
 ### 2. Per il logout con conferma (alternativa con widget Filament)
 
@@ -2106,8 +1603,6 @@ Se si desidera mantenere la conferma di logout, è preferibile utilizzare un wid
    - `Modules/User/resources/views/filament/widgets/auth/logout.blade.php` (per pannelli Filament)
    - `resources/views/filament/widgets/auth/logout.blade.php` (per integrazione diretta nelle viste)
 3. Utilizzare il widget nella pagina di logout tramite `@livewire`
-
-## Conclusione
 
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di Laraxot per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
@@ -2128,7 +1623,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error.md
@@ -2155,7 +1649,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 - [README modulo User](./readme.md)
@@ -2164,8 +1657,6 @@ related:
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
-
-## Panoramica
 
 Questo documento descrive l'implementazione corretta del processo di logout , con particolare attenzione all'utilizzo di Livewire Volt, LaravelLocalization e componenti Filament.
 
@@ -2310,8 +1801,6 @@ Queste chiavi devono essere definite nel file di traduzione `auth.php` per ogni 
    - Utilizzare sempre i componenti Blade nativi di Filament
    - Evitare di utilizzare componenti UI personalizzati
 
-## Conclusione
-
 Seguendo queste best practices, è possibile implementare un processo di logout robusto e user-friendly , che rispetta le convenzioni del progetto per la localizzazione e l'utilizzo dei componenti Filament.
 ---
 module: theme
@@ -2337,7 +1826,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
@@ -2359,7 +1847,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
@@ -2381,7 +1868,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md
@@ -2408,7 +1894,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 - [Best Practices Folio](./routing-best-practices.md)
@@ -2438,7 +1923,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-implementation.md
@@ -2465,7 +1949,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Correzione Logout Page nel Theme TwentyOne
@@ -2530,7 +2013,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Sicurezza nel Processo di Logout
@@ -2708,21 +2190,9 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
-<<<<<<< .merge_file_8xkZ2S
-<<<<<<< .merge_file_NYLxks
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
-=======
 - [Tema One Documentation](../../themes/one/docs/README.md) 
->>>>>>> .merge_file_Gypa83
-=======
-<<<<<<< .merge_file_4xhBAK
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
-=======
-- [Tema One Documentation](../../themes/one/docs/README.md) 
->>>>>>> .merge_file_W0paZr
->>>>>>> .merge_file_W4WYYT
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 ---
@@ -2747,7 +2217,6 @@ related:
   - "./accessor-delegation-pattern.md"
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
 ---
 
 # Analisi Errore Logout
@@ -2853,8 +2322,6 @@ class LogoutWidget extends XotBaseWidget
    - Facile da estendere e modificare
    - Documentazione chiara
 
-## Note di Implementazione
-
 1. **Ereditarietà**:
    - Rispettare i metodi final della classe base
    - Utilizzare i metodi protetti per l'estensione
@@ -2876,124 +2343,6 @@ class LogoutWidget extends XotBaseWidget
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
-
-## Problema Identificato
-
-Il file `Themes/One/resources/views/pages/auth/logout.blade.php` presenta un errore fondamentale nella sua implementazione:
-
-1. **Errore di Sintassi**:
-   - Uso errato della direttiva `@volt` quando il file dovrebbe essere una semplice blade template
-   - Il file dovrebbe iniziare con `<?php` per la logica PHP
-   - La sintassi Volt non è appropriata per una pagina di logout statica
-
-2. **Errore di Implementazione Widget**:
-   - Tentativo di sovrascrivere il metodo `form()` che è dichiarato come `final` in `XotBaseWidget`
-   - Implementazione errata dell'estensione del widget base
-   - Violazione del principio di ereditarietà
-
-3. **Problemi di Sicurezza**:
-   - Gestione manuale delle sessioni non necessaria
-   - Validazione CSRF implementata manualmente
-   - Rischio di vulnerabilità nella gestione delle sessioni
-
-## Soluzione Proposta
-
-### 1. Implementazione Corretta del Widget
-```php
-<?php
-
-namespace Modules\User\Filament\Widgets;
-
-use Filament\Widgets\Widget;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
-class LogoutWidget extends XotBaseWidget
-{
-    protected static string $view = 'user::widgets.logout';
-
-    protected function getViewData(): array
-    {
-        return [
-            'title' => __('Logout'),
-            'description' => __('Sei sicuro di voler uscire?'),
-        ];
-    }
-
-    public function logout()
-    {
-        auth()->logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        return redirect()->route('home');
-    }
-}
-```
-
-### 2. Template Widget
-```blade
-<x-filament::widget>
-    <x-filament::card>
-        <div class="p-4">
-            <h3 class="text-lg font-medium">
-                {{ $title }}
-            </h3>
-
-            <p class="mt-2 text-sm text-gray-600">
-                {{ $description }}
-            </p>
-
-            <div class="mt-4 flex space-x-4">
-                <x-filament::button
-                    wire:click="logout"
-                    color="danger">
-                    {{ __('Logout') }}
-                </x-filament::button>
-
-                <x-filament::button
-                    color="secondary"
-                    href="{{ route('home') }}">
-                    {{ __('Annulla') }}
-                </x-filament::button>
-            </div>
-        </div>
-    </x-filament::card>
-</x-filament::widget>
-```
-
-## Vantaggi della Nuova Implementazione
-
-1. **Correttezza Architetturale**:
-   - Rispetto dell'ereditarietà delle classi base
-   - Nessun tentativo di sovrascrivere metodi final
-   - Implementazione pulita del widget
-
-2. **Sicurezza**:
-   - Utilizzo delle funzioni native di Laravel per il logout
-   - Gestione sicura delle sessioni
-   - Protezione CSRF integrata
-
-3. **Manutenibilità**:
-   - Codice più pulito e standardizzato
-   - Facile da estendere e modificare
-   - Documentazione chiara
-
-## Note di Implementazione
-
-1. **Ereditarietà**:
-   - Rispettare i metodi final della classe base
-   - Utilizzare i metodi protetti per l'estensione
-   - Implementare correttamente l'interfaccia del widget
-
-2. **Gestione Sessione**:
-   - Utilizzare le funzioni native di Laravel
-   - Evitare la gestione manuale delle sessioni
-   - Sfruttare il sistema di autenticazione integrato
-
-3. **Routing**:
-   - Utilizzare le rotte di Filament
-   - Mantenere la coerenza con le altre rotte
-   - Implementare correttamente i redirect
 
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
@@ -3007,224 +2356,6 @@ class LogoutWidget extends XotBaseWidget
 
 *Consolidated from: `logout_analysis.md`*
 
-
-## Analisi Attuale
-
-Il file `logout.blade.php` attualmente implementa un componente Volt per la gestione del logout. Ecco un'analisi dettagliata:
-
-### 1. Struttura Attuale
-```blade
-@volt('auth.logout')
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-        <!-- Contenuto -->
-    </div>
-</div>
-@endvolt
-
-@php
-use function Livewire\Volt\{mount};
-use Illuminate\Support\Facades\Auth;
-
-$logout = function () {
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-    
-    return redirect()->route('home');
-};
-@endphp
-```
-
-### 2. Punti di Forza
-- Utilizzo corretto di Volt per la gestione reattiva
-- Gestione appropriata della sessione (invalidate e regenerateToken)
-- UI pulita e moderna con Tailwind CSS
-- Supporto per le traduzioni con `__()`
-- Layout responsive e centrato
-
-### 3. Aree di Miglioramento
-
-#### 3.1. Gestione dello Stato
-```php
-// Mancante: Gestione dello stato del logout
-state(['isLoggingOut' => false]);
-```
-
-#### 3.2. Feedback Utente
-```php
-// Mancante: Notifiche di successo/errore
-$logout = function () {
-    try {
-        $this->isLoggingOut = true;
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        return redirect()->route('home')->with('success', __('Logout effettuato con successo'));
-    } catch (\Exception $e) {
-        $this->isLoggingOut = false;
-        return back()->with('error', __('Errore durante il logout'));
-    }
-};
-```
-
-#### 3.3. Lifecycle Hooks
-```php
-// Mancante: Hook per il controllo dell'autenticazione
-mount(function () {
-    if (!Auth::check()) {
-        return redirect()->route('login');
-    }
-});
-```
-
-#### 3.4. Validazione
-```php
-// Mancante: Validazione del token CSRF
-rules([
-    '_token' => ['required', 'string'],
-]);
-```
-
-## Proposte di Miglioramento
-
-### 1. Implementazione Completa
-```blade
-@volt('auth.logout')
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-        <div class="text-center">
-            <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                {{ __('Sei sicuro di voler uscire?') }}
-            </h2>
-            <p class="mt-2 text-sm text-gray-600">
-                {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-            </p>
-        </div>
-
-        @if (session('error'))
-            <div class="rounded-md bg-red-50 p-4">
-                <div class="text-sm text-red-700">
-                    {{ session('error') }}
-                </div>
-            </div>
-        @endif
-
-        <div class="mt-8 flex space-x-4">
-            <a href="{{ route('home') }}" 
-               class="flex-1 flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Annulla') }}
-            </a>
-            <button wire:click="logout"
-                    wire:loading.attr="disabled"
-                    class="flex-1 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50">
-                <span wire:loading.remove>{{ __('Logout') }}</span>
-                <span wire:loading>{{ __('Uscita in corso...') }}</span>
-            </button>
-        </div>
-    </div>
-</div>
-@endvolt
-
-@php
-use function Livewire\Volt\{state, mount, rules};
-use Illuminate\Support\Facades\Auth;
-
-state(['isLoggingOut' => false]);
-
-rules([
-    '_token' => ['required', 'string'],
-]);
-
-mount(function () {
-    if (!Auth::check()) {
-        return redirect()->route('login');
-    }
-});
-
-$logout = function () {
-    try {
-        $this->isLoggingOut = true;
-        $this->validate();
-
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        return redirect()->route('home')->with('success', __('Logout effettuato con successo'));
-    } catch (\Exception $e) {
-        $this->isLoggingOut = false;
-        return back()->with('error', __('Errore durante il logout'));
-    }
-};
-@endphp
-```
-
-### 2. Miglioramenti Proposti
-
-#### 2.1. Sicurezza
-- Aggiunta validazione del token CSRF
-- Controllo dell'autenticazione prima del logout
-- Gestione delle eccezioni
-- Protezione contro attacchi CSRF
-
-#### 2.2. UX/UI
-- Indicatore di caricamento durante il logout
-- Disabilitazione del pulsante durante il processo
-- Messaggi di feedback per successo/errore
-- Animazioni di transizione
-
-#### 2.3. Performance
-- Lazy loading del componente
-- Ottimizzazione del rendering
-- Caching appropriato
-
-#### 2.4. Manutenibilità
-- Separazione chiara tra logica e vista
-- Documentazione inline
-- Gestione degli stati più robusta
-- Lifecycle hooks appropriati
-
-## Best Practices Implementate
-
-1. **Sicurezza**
-   - Validazione del token CSRF
-   - Gestione sicura della sessione
-   - Protezione contro attacchi XSS
-
-2. **UX**
-   - Feedback visivo durante le operazioni
-   - Messaggi di errore chiari
-   - Pulsanti con stati di loading
-
-3. **Performance**
-   - Componente Volt ottimizzato
-   - Gestione efficiente dello stato
-   - Caching appropriato
-
-4. **Manutenibilità**
-   - Codice ben strutturato
-   - Separazione delle responsabilità
-   - Documentazione chiara
-
-## Note di Implementazione
-
-1. **Layout**
-   - Utilizzo di Tailwind CSS per lo styling
-   - Design responsive
-   - Componenti riutilizzabili
-
-2. **Traduzioni**
-   - Supporto multilingua con `__()`
-   - Messaggi di errore localizzati
-   - Testi UI tradotti
-
-3. **Testing**
-   - Test unitari per la logica
-   - Test di integrazione per il flusso
-   - Test di UI per l'interfaccia
-
 ## Collegamenti Correlati
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
@@ -3237,7 +2368,6 @@ $logout = function () {
 
 *Consolidated from: `logout_blade_analysis.md`*
 
-
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
@@ -3245,434 +2375,6 @@ $logout = function () {
 - [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
-
-## Panoramica
-
-Questo documento analizza l'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
-
-## Analisi dell'Implementazione Attuale
-
-### Struttura del File
-
-```php
-<?php
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Event;
-
-if (!Auth::check()) {
-    return redirect()->route('login');
-}
-
-try {
-    Event::dispatch('auth.logout.attempting', [Auth::user()]);
-
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    Event::dispatch('auth.logout.successful');
-
-    Log::info('Utente disconnesso', [
-        'user_id' => Auth::id(),
-        'timestamp' => now()
-    ]);
-
-    return redirect()->route('home')
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-    return back()->with('error', __('Errore durante il logout'));
-}
-?>
-
-<x-layout>
-    <!-- Template Blade qui -->
-</x-layout>
-        <div class="text-center">
-            <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                {{ __('Sei sicuro di voler uscire?') }}
-            </h2>
-            <p class="mt-2 text-sm text-gray-600">
-                {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-            </p>
-        </div>
-
-        <div class="mt-8 flex space-x-4">
-            <a href="{{ route('home') }}"
-               class="flex-1 flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Annulla') }}
-            </a>
-            <button wire:click="logout"
-                    class="flex-1 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Logout') }}
-            </button>
-        </div>
-    </div>
-</div>
-@endvolt
-
-@php
-use function Livewire\Volt\{mount};
-use Illuminate\Support\Facades\Auth;
-
-$logout = function () {
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    return redirect()->route('home');
-};
-@endphp
-```
-
-### Problemi Identificati
-
-1. **Struttura Invertita**: La logica PHP (`@php`) è posizionata dopo il template Blade, mentre dovrebbe essere all'inizio del file per una migliore leggibilità e manutenibilità.
-
-2. **Mancanza di Direttive Folio**: Non vengono utilizzate le direttive di Folio come `middleware` e `name` per definire il middleware e il nome della rotta.
-
-3. **Localizzazione degli URL**: Il reindirizzamento utilizza `route('home')` invece di un URL localizzato con `app()->getLocale()`.
-
-4. **Componenti UI Non Standard**: Viene utilizzato HTML diretto per i pulsanti invece dei componenti Blade nativi di Filament.
-
-5. **Funzione `mount` Importata ma Non Utilizzata**: La funzione `mount` viene importata ma non viene utilizzata nel codice.
-
-6. **Struttura Volt Non Ottimale**: L'approccio utilizzato per Volt non sfrutta appieno le capacità dell'API funzionale.
-
-7. **Mancanza di Dichiarazione Strict Types**: Non viene utilizzata la dichiarazione `declare(strict_types=1);` all'inizio del file.
-
-8. **Mancanza di Layout Wrapper**: Il componente non è avvolto in un layout, come `<x-layouts.main>`.
-
-## Approcci Possibili
-
-In base alle convenzioni di SaluteOra, ci sono tre approcci principali per implementare il logout:
-
-### 1. Folio con PHP puro (Raccomandato)
-
-Questo approccio è il più semplice e diretto per il logout, poiché non richiede gestione dello stato o interazione con l'utente:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-### 2. Volt Action dedicata
-
-Questo approccio utilizza una Volt Action dedicata con attributi PHP 8 per definire la rotta `logout`:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\User\Http\Volt;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Volt\Routing\Attribute\Post;
-
-#[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
-final class LogoutAction
-{
-    public function __invoke(): RedirectResponse
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        // Reindirizza alla home page localizzata
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-}
-```
-
-Quindi nel form:
-
-```blade
-<form action="{{ route('logout') }}" method="post">
-    @csrf
-    <x-filament::button type="submit" color="danger">
-        {{ __('Logout') }}
-    </x-filament::button>
-</form>
-```
-
-### 3. Folio con Volt
-
-Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il logout:
-
-```blade
-@volt('auth.logout')
-    use Illuminate\Support\Facades\Auth;
-    use function Livewire\Volt\{mount};
-
-    mount(function() {
-        if(Auth::check()) {
-            Auth::logout();
-            session()->invalidate();
-            session()->regenerateToken();
-        }
-        
-        // Reindirizza alla home page localizzata
-        $this->redirect('/' . app()->getLocale());
-    });
-@endvolt
-
-<x-layout>
-    <x-slot:title>
-        {{ __('Logout') }}
-    </x-slot>
-
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-            <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                    {{ __('Logout in corso...') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    {{ __('Verrai reindirizzato alla home page.') }}
-                </p>
-            </div>
-        </div>
-    </div>
-</x-layout>
-```
-
-## Analisi Dettagliata dell'Implementazione Attuale
-
-L'implementazione attuale del file `logout.blade.php` presenta diversi problemi che devono essere corretti per allinearsi alle convenzioni del progetto SaluteOra:
-
-### 1. Struttura e Organizzazione
-
-L'attuale implementazione utilizza un approccio misto che combina Volt con PHP puro in modo non ottimale:
-
-```php
-@volt('auth.logout')
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-        <div class="text-center">
-            <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                {{ __('Sei sicuro di voler uscire?') }}
-            </h2>
-            <p class="mt-2 text-sm text-gray-600">
-                {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-            </p>
-        </div>
-
-        <div class="mt-8 flex space-x-4">
-            <a href="{{ route('home') }}"
-               class="flex-1 flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Annulla') }}
-            </a>
-            <button wire:click="logout"
-                    class="flex-1 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                {{ __('Logout') }}
-            </button>
-        </div>
-    </div>
-</div>
-@endvolt
-
-@php
-use function Livewire\Volt\{mount};
-use Illuminate\Support\Facades\Auth;
-
-$logout = function () {
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    return redirect()->route('home');
-};
-@endphp
-```
-
-### 2. Problemi Specifici
-
-1. **Separazione Incorretta**: La logica PHP è definita dopo il template Blade, mentre dovrebbe essere all'inizio del file o all'interno del blocco `@volt`.
-
-2. **Utilizzo Errato di Volt**: La direttiva `@volt` è utilizzata, ma la funzione `$logout` è definita al di fuori di essa in un blocco `@php` separato.
-
-3. **Mancanza di Direttive Folio**: Non vengono utilizzate le direttive di Folio come `middleware` e `name`.
-
-4. **URL Non Localizzati**: Viene utilizzato `route('home')` invece di un URL localizzato con `app()->getLocale()`.
-
-5. **Componenti UI Non Standard**: Vengono utilizzati tag HTML diretti invece dei componenti Blade nativi di Filament.
-
-6. **Mancanza di Layout**: Il componente non è avvolto in un layout appropriato come `<x-layout>`.
-
-7. **Interazione Utente Non Necessaria**: L'implementazione richiede un'interazione dell'utente (conferma) per il logout, mentre un reindirizzamento diretto sarebbe più efficiente.
-
-8. **Funzione `mount` Importata ma Non Utilizzata**: La funzione `mount` viene importata ma non viene utilizzata nel codice.
-
-### 3. Valutazione dell'Approccio
-
-L'implementazione attuale utilizza un approccio Volt con conferma utente, che non è l'approccio più efficiente per il logout . Secondo le convenzioni del progetto, il logout dovrebbe essere un'operazione diretta che non richiede conferma dell'utente.
-
-## Raccomandazioni Specifiche
-
-In base all'analisi e alle convenzioni del progetto SaluteOra, si raccomanda di adottare l'**Approccio 1: Folio con PHP puro** per le seguenti ragioni:
-
-1. **Semplicità**: Il logout è un'operazione semplice che non richiede gestione dello stato o interazione con l'utente.
-
-2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
-
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di SaluteOra per le operazioni semplici.
-
-4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
-
-### Implementazione Raccomandata
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-use function Livewire\Volt\{state};
-
-middleware(['auth']);
-name('logout');
-
-// Stato del componente
-state([
-    'isConfirming' => true,
-]);
-
-// Azione di logout
-$logout = function () {
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-    
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale);
-};
-
-// Azione per annullare
-$cancel = function () {
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale);
-};
-?>
-
-<x-layouts.main>
-    @volt('auth.logout')
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-            <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                    {{ __('Sei sicuro di voler uscire?') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-                </p>
-            </div>
-
-            <div class="mt-8 flex space-x-4">
-                <x-filament::button
-                    wire:click="cancel"
-                    color="secondary"
-                    class="flex-1"
-                >
-                    {{ __('Annulla') }}
-                </x-filament::button>
-                
-                <x-filament::button
-                    wire:click="logout"
-                    color="primary"
-                    class="flex-1"
-                >
-                    {{ __('Logout') }}
-                </x-filament::button>
-            </div>
-        </div>
-    </div>
-    @endvolt
-</x-layouts.main>
-```
-
-## Approccio Alternativo con Classe Anonima
-
-Per componenti più complessi, l'approccio con classe anonima potrebbe essere più adatto:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-use Livewire\Volt\Component;
-
-middleware(['auth']);
-name('logout');
-
-new class extends Component {
-    public function logout()
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-    
-    public function cancel()
-    {
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-};
-?>
-
-<x-layouts.main>
-    @volt('auth.logout')
-    <!-- Template Blade qui -->
-    @endvolt
-</x-layouts.main>
-```
-
-## Conclusioni
-
-L'implementazione attuale del file `logout.blade.php` presenta diverse aree di miglioramento. Riorganizzando la struttura, utilizzando i componenti Filament, implementando la localizzazione degli URL e sfruttando appieno le capacità di Volt e Folio, è possibile creare un'implementazione più robusta, manutenibile e conforme alle convenzioni di SaluteOra.
-
-La versione migliorata proposta risolve tutti i problemi identificati e offre un'esperienza utente coerente con il resto dell'applicazione.
-
-## Raccomandazioni
-
-1. **Adottare l'Implementazione Migliorata**: Sostituire l'implementazione attuale con quella proposta in questo documento.
-
-2. **Standardizzare l'Approccio**: Utilizzare lo stesso approccio per tutte le pagine di autenticazione per garantire coerenza.
-
-3. **Documentare le Convenzioni**: Aggiornare la documentazione del progetto per riflettere le convenzioni utilizzate.
-
-4. **Revisione del Codice**: Implementare una revisione del codice per garantire che tutte le pagine di autenticazione seguano le stesse convenzioni.
-
-## Riferimenti
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
@@ -3684,7 +2386,6 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 ## logout_blade_conclusions
 
 *Consolidated from: `logout_blade_conclusions.md`*
-
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
@@ -3708,44 +2409,7 @@ Dopo un'attenta analisi del file `logout.blade.php` attuale in `Themes/One/resou
 
 5. **Interazione utente non necessaria**: L'implementazione attuale richiede una conferma da parte dell'utente per il logout, mentre un reindirizzamento diretto sarebbe più efficiente.
 
-## Raccomandazione Finale
-
 In base alle convenzioni del progetto SaluteOra e all'analisi effettuata, si raccomanda di adottare l'**Approccio Folio con PHP puro** per l'implementazione del logout. Questo approccio è preferibile per le seguenti ragioni:
-
-1. **Semplicità**: Il logout è un'operazione semplice che non richiede gestione dello stato o interazione con l'utente.
-
-2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
-
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di SaluteOra per le operazioni semplici.
-
-4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
-
-## Implementazione Raccomandata
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
 
 ## Passi per l'Implementazione
 
@@ -3771,8 +2435,6 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 
 3. **Eventi**: Considerare l'emissione di eventi Laravel per il logout, che potrebbero essere ascoltati da altri componenti dell'applicazione.
 
-## Conclusione
-
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto SaluteOra per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
 
 ---
@@ -3781,240 +2443,11 @@ L'implementazione raccomandata rappresenta la soluzione più semplice, efficient
 
 *Consolidated from: `logout_blade_corrected_analysis.md`*
 
-
-## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
-
-## Panoramica
-
-Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
-
-## Analisi dell'Implementazione Attuale
-
-### Struttura del File
-
-```php
-<?php
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Event;
-
-if (!Auth::check()) {
-    return redirect()->route('login');
-}
-
-try {
-    Event::dispatch('auth.logout.attempting', [Auth::user()]);
-
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-
-    Event::dispatch('auth.logout.successful');
-
-    Log::info('Utente disconnesso', [
-        'user_id' => Auth::id(),
-        'timestamp' => now()
-    ]);
-
-    return redirect()->route('home')
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-    return back()->with('error', __('Errore durante il logout'));
-}
-?>
-
-<x-layout>
-    <x-slot:title>
-        {{ __('Logout') }}
-    </x-slot>
-
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-            <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                    {{ __('Sei sicuro di voler uscire?') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-                </p>
-            </div>
-
-            @if (session('error'))
-                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-                    <span class="block sm:inline">{{ session('error') }}</span>
-                </div>
-            @endif
-
-            <div class="mt-8 flex space-x-4">
-                <a href="{{ route('home') }}"
-                   class="flex-1 flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    {{ __('Annulla') }}
-                </a>
-                
-                <form action="{{ url()->current() }}" method="post" class="flex-1">
-                    @csrf
-                    <button type="submit"
-                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                        {{ __('Logout') }}
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</x-layout>
-```
-
-### Problemi Identificati
-
-1. **Incoerenza tra Logica e UI**: Il file contiene sia logica PHP che esegue direttamente il logout, sia una UI che chiede conferma all'utente. Questa incoerenza crea confusione e potrebbe portare a comportamenti imprevisti.
-
-2. **Mancanza di Direttive Folio**: Non vengono utilizzate le direttive di Folio come `middleware` e `name` per definire il middleware e il nome della rotta.
-
-3. **Localizzazione degli URL**: Il reindirizzamento utilizza `route('home')` e `route('login')` invece di URL localizzati con `app()->getLocale()`.
-
-4. **Componenti UI Non Standard**: Viene utilizzato HTML diretto per i pulsanti invece dei componenti Blade nativi di Filament.
-
-5. **Mancanza di Dichiarazione Strict Types**: Non viene utilizzata la dichiarazione `declare(strict_types=1);` all'inizio del file.
-
-6. **Gestione Eventi Non Standard**: Vengono utilizzati eventi personalizzati ('auth.logout.attempting', 'auth.logout.successful') invece degli eventi nativi di Laravel.
-
-7. **Logging Eccessivo**: Il logging di ogni operazione di logout potrebbe generare troppi log in un'applicazione con molti utenti.
-
-## Approcci Raccomandati
-
-### 1. Approccio Folio con PHP Puro (Raccomandato)
-
-Questo approccio è il più semplice e diretto per il logout, poiché non richiede gestione dello stato o interazione con l'utente:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-### 2. Volt Action dedicata
-
-Questo approccio utilizza una Volt Action dedicata con attributi PHP 8 per definire la rotta `logout`:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\User\Http\Volt;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Volt\Routing\Attribute\Post;
-
-#[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
-final class LogoutAction
-{
-    public function __invoke(): RedirectResponse
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        // Reindirizza alla home page localizzata
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-}
-```
-
-Quindi nel form:
-
-```blade
-<form action="{{ route('logout') }}" method="post">
-    @csrf
-    <x-filament::button type="submit" color="danger">
-        {{ __('Logout') }}
-    </x-filament::button>
-</form>
-```
-
-## Raccomandazione Finale
-
-Per il logout , si raccomanda di utilizzare l'approccio Folio con PHP puro, che è il più semplice e diretto. Questo approccio offre diversi vantaggi:
-
-1. **Semplicità**: Il codice è semplice e facile da comprendere.
-
-2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
-
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di SaluteOra per le operazioni semplici.
-
-4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
-
-## Implementazione Raccomandata
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Event;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-// Dispatch dell'evento prima del logout
-Event::dispatch('auth.logout.attempting', [Auth::user()]);
-
-// Esegui il logout
-Auth::logout();
-request()->session()->invalidate();
-request()->session()->regenerateToken();
-
-// Dispatch dell'evento dopo il logout
-Event::dispatch('auth.logout.successful');
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-## Collegamenti Utili
-
-- [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
-- [Documentazione Folio](https://laravel.com/docs/10.x/folio)
-- [Documentazione Filament](https://filamentphp.com/docs)
-
 ---
 
 ## logout_blade_error_analysis
 
 *Consolidated from: `logout_blade_error_analysis.md`*
-
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
@@ -4024,103 +2457,6 @@ return redirect()->to('/' . $locale);
 - [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
 - [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
-
-## Errore Fondamentale Identificato
-
-L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
-
-```php
-<?php
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
-
-// Esegui il logout
-Auth::logout();
-
-// Invalida la sessione
-Session::invalidate();
-
-// Rigenera il token CSRF
-Session::regenerateToken();
-
-// Redirect alla home
-return redirect()->route('home');
-?>
-
-<x-layout>
-    <!-- Contenuto HTML che non viene mai visualizzato -->
-</x-layout>
-```
-
-### Problemi nell'implementazione attuale:
-
-1. **Problema strutturale**: Il file inizia correttamente con `<?php`, ma include HTML che non verrà mai visualizzato perché il codice PHP esegue un redirect prima che il rendering HTML possa avvenire.
-
-2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
-
-3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di SaluteOra.
-
-4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
-
-## Errore nell'Implementazione del Widget Filament
-
-Nell'implementazione proposta per il widget Filament, è stato commesso un errore critico:
-
-```php
-public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema([
-            Component::make()
-                ->columnSpan('full')
-                ->extraAttributes(['class' => 'text-center'])
-                ->view('filament.widgets.auth.logout-message'),
-        ])
-        ->statePath('data');
-}
-```
-
-Questo metodo tenta di sovrascrivere il metodo `form()` che è dichiarato come `final` nella classe base `XotBaseWidget`:
-
-```php
-final public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-{
-    return $form
-        ->schema($this->getFormSchema())
-        ->columns(2)
-        ->statePath('data');
-}
-```
-
-Un metodo dichiarato come `final` non può essere sovrascritto nelle classi derivate, causando un errore fatale:
-
-```
-PHP Fatal error: Cannot override final method Modules\Xot\Filament\Widgets\XotBaseWidget::form()
-```
-
-## Soluzione Corretta
-
-### 1. Per il file logout.blade.php
-
-L'implementazione corretta dovrebbe:
-- Iniziare con `<?php` (già corretto)
-- Utilizzare le direttive di Laravel Folio
-- Implementare la localizzazione URL
-- Includere gestione errori e logging
-- Non includere HTML che non verrà mai visualizzato
-
-### 2. Per il Widget Filament
-
-L'implementazione corretta dovrebbe:
-- Implementare il metodo astratto `getFormSchema()` invece di tentare di sovrascrivere `form()`
-- Rispettare la struttura e le convenzioni di `XotBaseWidget`
-- Utilizzare correttamente i componenti Filament
-
-## Conclusione
-
-L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
-1. L'implementazione attuale inizia correttamente con `<?php`
-2. Il metodo `form()` in `XotBaseWidget` è dichiarato come `final` e non può essere sovrascritto
 
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
@@ -4132,7 +2468,6 @@ Questi errori evidenziano l'importanza di:
 ## logout_blade_implementation
 
 *Consolidated from: `logout_blade_implementation.md`*
-
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
@@ -4154,129 +2489,25 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 , ci sono tre approcci principali per implementare il logout:
 
-### 1. Folio con PHP puro (Raccomandato)
-
 Questo approccio è il più semplice e diretto per il logout, poiché non richiede gestione dello stato o interazione con l'utente.
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
 
 **Vantaggi:**
 - Semplice e diretto
 - Non richiede componenti aggiuntivi
 - Esegue immediatamente il logout e reindirizza
 
-### 2. Volt Action dedicata
-
 Questo approccio utilizza una Volt Action dedicata con attributi PHP 8 per definire la rotta `logout`.
 
 **Step 1:** Creare il file `Modules/User/app/Http/Volt/LogoutAction.php`:
 
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\User\Http\Volt;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Volt\Routing\Attribute\Post;
-
-#[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
-final class LogoutAction
-{
-    public function __invoke(): RedirectResponse
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        // Reindirizza alla home page localizzata
-        $locale = app()->getLocale();
-        return redirect()->to('/' . $locale);
-    }
-}
-```
-
 **Step 2:** Utilizzare un form con metodo POST nel template:
-
-```blade
-<form action="{{ route('logout') }}" method="post">
-    @csrf
-    <x-filament::button type="submit" color="danger">
-        {{ __('Logout') }}
-    </x-filament::button>
-</form>
-```
 
 **Vantaggi:**
 - Supporta il metodo POST (più sicuro per il logout)
 - Definisce una rotta dedicata
 - Può essere riutilizzato in più punti dell'applicazione
 
-### 3. Folio con Volt
-
 Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il logout.
-
-```blade
-@volt('auth.logout')
-    use Illuminate\Support\Facades\Auth;
-    use function Livewire\Volt\{mount};
-
-    mount(function() {
-        if(Auth::check()) {
-            Auth::logout();
-            session()->invalidate();
-            session()->regenerateToken();
-        }
-        
-        // Reindirizza alla home page localizzata
-        $this->redirect('/' . app()->getLocale());
-    });
-@endvolt
-
-<x-layout>
-    <x-slot:title>
-        {{ __('Logout') }}
-    </x-slot>
-
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-            <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                    {{ __('Logout in corso...') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    {{ __('Verrai reindirizzato alla home page.') }}
-                </p>
-            </div>
-        </div>
-    </div>
-</x-layout>
-```
 
 **Vantaggi:**
 - Coerente con l'approccio Volt utilizzato in altre pagine auth
@@ -4320,31 +2551,6 @@ Per SaluteOra, **l'approccio 1 (Folio con PHP puro)** è raccomandato per il log
 
 ## Implementazione Finale Raccomandata
 
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
 Questa implementazione è semplice, sicura e segue tutte le best practices del progetto SaluteOra.
 
 ---
@@ -4352,7 +2558,6 @@ Questa implementazione è semplice, sicura e segue tutte le best practices del p
 ## logout_blade_structure
 
 *Consolidated from: `logout_blade_structure.md`*
-
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -4436,8 +2641,6 @@ class LogoutPage
    - Invalidazione della sessione
    - Rigenerazione del token CSRF
 
-## Best Practices
-
 1. **Gestione degli Errori**
    ```php
    try {
@@ -4477,124 +2680,7 @@ class LogoutPage
 
 *Consolidated from: `logout_error_analysis.md`*
 
-
-## Problema Identificato
-
 Il file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta un errore fondamentale nella sua implementazione:
-
-1. **Errore di Sintassi**:
-   - Uso errato della direttiva `@volt` quando il file dovrebbe essere una semplice blade template
-   - Il file dovrebbe iniziare con `<?php` per la logica PHP
-   - La sintassi Volt non è appropriata per una pagina di logout statica
-
-2. **Errore di Implementazione Widget**:
-   - Tentativo di sovrascrivere il metodo `form()` che è dichiarato come `final` in `XotBaseWidget`
-   - Implementazione errata dell'estensione del widget base
-   - Violazione del principio di ereditarietà
-
-3. **Problemi di Sicurezza**:
-   - Gestione manuale delle sessioni non necessaria
-   - Validazione CSRF implementata manualmente
-   - Rischio di vulnerabilità nella gestione delle sessioni
-
-## Soluzione Proposta
-
-### 1. Implementazione Corretta del Widget
-```php
-<?php
-
-namespace Modules\User\Filament\Widgets;
-
-use Filament\Widgets\Widget;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
-class LogoutWidget extends XotBaseWidget
-{
-    protected static string $view = 'user::widgets.logout';
-    
-    protected function getViewData(): array
-    {
-        return [
-            'title' => __('Logout'),
-            'description' => __('Sei sicuro di voler uscire?'),
-        ];
-    }
-    
-    public function logout()
-    {
-        auth()->logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        return redirect()->route('home');
-    }
-}
-```
-
-### 2. Template Widget
-```blade
-<x-filament::widget>
-    <x-filament::card>
-        <div class="p-4">
-            <h3 class="text-lg font-medium">
-                {{ $title }}
-            </h3>
-            
-            <p class="mt-2 text-sm text-gray-600">
-                {{ $description }}
-            </p>
-            
-            <div class="mt-4 flex space-x-4">
-                <x-filament::button
-                    wire:click="logout"
-                    color="danger">
-                    {{ __('Logout') }}
-                </x-filament::button>
-                
-                <x-filament::button
-                    color="secondary"
-                    href="{{ route('home') }}">
-                    {{ __('Annulla') }}
-                </x-filament::button>
-            </div>
-        </div>
-    </x-filament::card>
-</x-filament::widget>
-```
-
-## Vantaggi della Nuova Implementazione
-
-1. **Correttezza Architetturale**:
-   - Rispetto dell'ereditarietà delle classi base
-   - Nessun tentativo di sovrascrivere metodi final
-   - Implementazione pulita del widget
-
-2. **Sicurezza**:
-   - Utilizzo delle funzioni native di Laravel per il logout
-   - Gestione sicura delle sessioni
-   - Protezione CSRF integrata
-
-3. **Manutenibilità**:
-   - Codice più pulito e standardizzato
-   - Facile da estendere e modificare
-   - Documentazione chiara
-
-## Note di Implementazione
-
-1. **Ereditarietà**:
-   - Rispettare i metodi final della classe base
-   - Utilizzare i metodi protetti per l'estensione
-   - Implementare correttamente l'interfaccia del widget
-
-2. **Gestione Sessione**:
-   - Utilizzare le funzioni native di Laravel
-   - Evitare la gestione manuale delle sessioni
-   - Sfruttare il sistema di autenticazione integrato
-
-3. **Routing**:
-   - Utilizzare le rotte di Filament
-   - Mantenere la coerenza con le altre rotte
-   - Implementare correttamente i redirect
 
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
@@ -4608,7 +2694,6 @@ class LogoutWidget extends XotBaseWidget
 
 *Consolidated from: `logout_event_error.md`*
 
-
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
@@ -4618,138 +2703,7 @@ class LogoutWidget extends XotBaseWidget
 - [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
-## Errore Identificato
-
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
-
-```
-Call to a member function getAuthIdentifier() on null
-
-  at Modules/User/app/Listeners/LogoutListener.php:59
-     55▕         // Session::flash('login-success', 'Hello ' . $event->user->name . ', welcome back!');
-     56▕         $device = app(GetCurrentDeviceAction::class)->execute();
-     57▕         $user = $event->user;
-     58▕
-  ➜  59▕         $pivot = DeviceUser::firstOrCreate(['user_id' => $user->getAuthIdentifier(), 'device_id' => $device->id]);
-     60▕         $pivot->update(['logout_at' => now()]);
-```
-
-### Causa dell'errore
-
-Il problema si verifica perché:
-
-1. Nel file `logout.blade.php`, l'evento `auth.logout.successful` viene inviato **dopo** che l'utente è già stato disconnesso:
-
-```php
-// Esegui il logout
-Auth::logout();
-request()->session()->invalidate();
-request()->session()->regenerateToken();
-
-// Dispatch dell'evento dopo il logout
-Event::dispatch('auth.logout.successful');
-```
-
-2. Nel `LogoutListener`, il codice tenta di accedere a `$user->getAuthIdentifier()`, ma `$user` è `null` perché l'utente è già stato disconnesso quando l'evento è stato inviato.
-
-## Soluzione Corretta
-
-La soluzione corretta è modificare l'ordine delle operazioni nel file `logout.blade.php` per garantire che l'evento `auth.logout.successful` includa l'utente prima della disconnessione, oppure modificare il `LogoutListener` per gestire correttamente il caso in cui `$user` sia `null`.
-
-### Opzione 1: Modificare l'ordine degli eventi nel file logout.blade.php
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Event;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-try {
-    // Ottieni l'utente prima del logout
-    $user = Auth::user();
-    
-    // Dispatch dell'evento prima del logout
-    Event::dispatch('auth.logout.attempting', [$user]);
-    
-    // Esegui il logout
-    Auth::logout();
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-    
-    // Dispatch dell'evento dopo il logout, passando l'utente salvato
-    Event::dispatch('auth.logout.successful', [$user]);
-    
-    // Reindirizzamento con localizzazione
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale)
-        ->with('success', __('Logout effettuato con successo'));
-} catch (\Exception $e) {
-    // Log dell'errore
-    Log::error('Errore durante il logout: ' . $e->getMessage());
-    
-    // Reindirizzamento con messaggio di errore
-    $locale = app()->getLocale();
-    return redirect()->to('/' . $locale)
-        ->with('error', __('Errore durante il logout'));
-}
-?>
-```
-
-### Opzione 2: Modificare il LogoutListener per gestire il caso in cui $user sia null
-
-```php
-/**
- * Handle the event.
- */
-public function handle(Logout $event): void
-{
-    try {
-        // Verifica se l'utente esiste prima di procedere
-        if (!$event->user) {
-            Log::warning('Tentativo di logout per un utente non autenticato');
-            return;
-        }
-
-        $device = app(GetCurrentDeviceAction::class)->execute();
-
-        // Aggiorna il pivot solo se abbiamo sia l'utente che il device
-        if ($device) {
-            try {
-                $pivot = DeviceUser::firstOrCreate([
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-                $pivot->update(['logout_at' => now()]);
-            } catch (\Exception $e) {
-                Log::error('Errore durante l\'aggiornamento del pivot device-user', [
-                    'error' => $e->getMessage(),
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-            }
-        }
-        
-        // Resto del codice...
-    } catch (\Exception $e) {
-        Log::error('Errore durante la gestione dell\'evento di logout', [
-            'error' => $e->getMessage()
-        ]);
-    }
-}
-```
-
-## Raccomandazione
-
-Si raccomanda di implementare l'**Opzione 1** perché:
-
-1. È più corretto concettualmente salvare l'utente prima del logout e passarlo all'evento
-2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
-3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 
@@ -4759,25 +2713,13 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 *Consolidated from: `logout_implementation_best_practices.md`*
 
-
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
-## Panoramica
-
 Questo documento descrive le best practices per implementare il processo di logout , con particolare attenzione all'utilizzo di Livewire Volt e alla gestione corretta degli eventi di autenticazione.
-
-## Problematiche del Logout Diretto
-
-L'implementazione del logout direttamente nel codice PHP di una pagina Folio causa diversi problemi:
-
-1. **Logout Automatico**: Il logout viene eseguito automaticamente al caricamento della pagina, senza conferma dell'utente
-2. **Reindirizzamento Immediato**: L'utente viene reindirizzato immediatamente, senza feedback
-3. **Gestione Errori Limitata**: Non c'è una gestione adeguata degli errori che potrebbero verificarsi durante il processo di logout
-4. **Problemi di UX**: L'utente non ha la possibilità di annullare l'operazione
 
 ## Implementazione Corretta con Livewire Volt
 
@@ -4993,8 +2935,6 @@ $locale = LaravelLocalization::getCurrentLocale();
 $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 ```
 
-## Riferimenti
-
 - [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
@@ -5006,72 +2946,7 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 
 *Consolidated from: `logout_implementation_error.md`*
 
-
-## Collegamenti correlati
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
-- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Analisi Logout](LOGOUT_BLADE_ANALYSIS.md)
-- [Conclusioni Logout](LOGOUT_BLADE_CONCLUSIONS.md)
-- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
-
-## Errore Identificato
-
-L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` presenta i seguenti problemi:
-
-1. **Approccio non ottimale**: L'implementazione attuale utilizza Volt per gestire il logout, ma richiede una conferma da parte dell'utente, aggiungendo un passaggio non necessario al processo di logout.
-
-2. **Violazione delle convenzioni di SaluteOra**: Secondo le memorie del progetto, per il logout è raccomandato l'approccio "Folio con PHP puro" che esegue il logout immediatamente senza richiedere conferma.
-
-3. **Mancanza di localizzazione URL**: L'implementazione attuale non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di SaluteOra.
-
-4. **Struttura non ottimale**: La struttura attuale combina Volt e PHP in modo non ottimale, definendo la logica PHP dopo il template Blade.
-
-5. **Mancato utilizzo di widget Filament**: Per form complessi, SaluteOra raccomanda l'utilizzo di widget Filament invece di reinventare la ruota con implementazioni personalizzate.
-
 ## Soluzione Raccomandata
-
-### 1. Per il logout immediato (approccio raccomandato)
-
-Utilizzare l'approccio "Folio con PHP puro" che esegue il logout immediatamente senza richiedere conferma:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use function Laravel\Folio\{middleware, name};
-
-middleware(['auth']);
-name('logout');
-
-if(Auth::check()) {
-    // Esegui il logout
-    Auth::logout();
-
-    // Invalida e rigenera la sessione per prevenire session fixation
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
-}
-
-// Reindirizza l'utente alla home page localizzata
-$locale = app()->getLocale();
-return redirect()->to('/' . $locale);
-?>
-```
-
-### 2. Per il logout con conferma (alternativa con widget Filament)
-
-Se si desidera mantenere la conferma di logout, è preferibile utilizzare un widget Filament invece di un'implementazione Volt personalizzata:
-
-1. Creare un widget Filament dedicato in `Modules/User/app/Filament/Widgets/LogoutWidget.php`
-2. Creare le viste Blade corrispondenti in:
-   - `Modules/User/resources/views/filament/widgets/auth/logout.blade.php` (per pannelli Filament)
-   - `resources/views/filament/widgets/auth/logout.blade.php` (per integrazione diretta nelle viste)
-3. Utilizzare il widget nella pagina di logout tramite `@livewire`
-
-## Conclusione
 
 L'errore principale nell'implementazione attuale è l'utilizzo di un approccio non ottimale e non conforme alle convenzioni di SaluteOra per il logout. La soluzione raccomandata è utilizzare l'approccio "Folio con PHP puro" per un logout immediato, o in alternativa, implementare un widget Filament per il logout con conferma.
 
@@ -5083,7 +2958,6 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 
 *Consolidated from: `logout_implementation_with_laravel_localization.md`*
 
-
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
@@ -5091,153 +2965,6 @@ La documentazione è stata aggiornata per riflettere queste raccomandazioni e pe
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
-
-## Panoramica
-
-Questo documento descrive l'implementazione corretta del processo di logout , con particolare attenzione all'utilizzo di Livewire Volt, LaravelLocalization e componenti Filament.
-
-## Problematiche del Logout Diretto
-
-L'implementazione del logout direttamente nel codice PHP di una pagina Folio causa diversi problemi:
-
-1. **Logout Automatico**: Il logout viene eseguito automaticamente al caricamento della pagina, senza conferma dell'utente
-2. **Reindirizzamento Immediato**: L'utente viene reindirizzato immediatamente, senza feedback
-3. **Gestione Errori Limitata**: Non c'è una gestione adeguata degli errori che potrebbero verificarsi durante il processo di logout
-4. **Problemi di UX**: L'utente non ha la possibilità di annullare l'operazione
-
-## Soluzione Raccomandata: Volt con mount()
-
-La soluzione raccomandata per implementare il logout  è utilizzare un componente Volt con il metodo `mount()` per gestire il processo di logout:
-
-```php
-<?php
-declare(strict_types=1);
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Event;
-use function Laravel\Folio\{middleware, name};
-use function Livewire\Volt\{mount};
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-
-middleware(['auth']);
-name('logout');
-
-mount(function() {
-    if (Auth::check()) {
-        // Dispatch dell'evento prima del logout
-        Event::dispatch('auth.logout.attempting', [Auth::user()]);
-        
-        // Esegui il logout
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        // Dispatch dell'evento dopo il logout
-        Event::dispatch('auth.logout.successful');
-    }
-    
-    // Reindirizza l'utente alla home page localizzata
-    $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
-});
-```
-
-## Utilizzo Corretto di LaravelLocalization
-
-Per garantire la compatibilità con il sistema di localizzazione di SaluteOra, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
-
-```php
-// ERRATO
-$locale = app()->getLocale();
-$this->redirect('/' . $locale);
-
-// CORRETTO
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-$this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
-```
-
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
-
-## Template Blade con Componenti Filament
-
-Il template Blade per il logout dovrebbe utilizzare i componenti Filament e mostrare un indicatore di caricamento durante il processo di logout:
-
-```blade
-<x-filament::layouts.card>
-    @volt('auth.logout')
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="max-w-md w-full space-y-8 p-8">
-            <div class="text-center">
-                <x-filament::loading-indicator class="h-12 w-12 mx-auto" />
-                <h2 class="mt-6 text-2xl font-bold text-gray-900 dark:text-white">
-                    {{ __('auth.logout.title') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                    {{ __('auth.logout.message') }}
-                </p>
-            </div>
-        </div>
-    </div>
-    @endvolt
-</x-filament::layouts.card>
-```
-
-## Vantaggi dell'Approccio con mount()
-
-1. **Esecuzione Automatica**: Il logout viene eseguito automaticamente al caricamento della pagina, ma in modo controllato
-2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
-3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
-4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di SaluteOra per la localizzazione
-
-## Chiavi di Traduzione per il Logout
-
-Per garantire la coerenza nelle traduzioni, è importante utilizzare chiavi di traduzione strutturate per tutti i testi relativi al logout, seguendo la convenzione `modulo::risorsa.fields.campo.label`:
-
-```php
-// Errato
-__('Logout')
-__('Logout effettuato')
-__('Sei stato disconnesso con successo.')
-
-// Corretto
-__('auth.logout.title')
-__('auth.logout.message')
-```
-
-Queste chiavi devono essere definite nel file di traduzione `auth.php` per ogni lingua supportata:
-
-```php
-'logout' => [
-    'title' => 'Logout in corso...',
-    'message' => 'Verrai reindirizzato alla home page.',
-    'success_title' => 'Logout effettuato',
-    'success_message' => 'Sei stato disconnesso con successo.',
-    'error_title' => 'Errore durante il logout',
-    'error_message' => 'Si è verificato un errore durante il logout.',
-    'back_to_home' => 'Torna alla Home',
-],
-```
-
-## Regole Fondamentali da Ricordare
-
-1. **MAI creare rotte aggiungendole in web.php**
-   - Filament e Folio gestiscono automaticamente le rotte
-   - Non creare file di rotte personalizzati
-
-2. **MAI creare controller personalizzati**
-   - Utilizzare le funzionalità di Filament e Folio
-   - Evitare di creare controller HTTP tradizionali
-
-3. **Utilizzo Corretto di LaravelLocalization**
-   - Utilizzare `LaravelLocalization::getCurrentLocale()` invece di `app()->getLocale()`
-   - Utilizzare `LaravelLocalization::getSupportedLocales()` per le lingue supportate
-   - Utilizzare `LaravelLocalization::getLocalizedURL()` per generare URL localizzati
-
-4. **Utilizzo dei Componenti Filament**
-   - Utilizzare sempre i componenti Blade nativi di Filament
-   - Evitare di utilizzare componenti UI personalizzati
-
-## Conclusione
 
 Seguendo queste best practices, è possibile implementare un processo di logout robusto e user-friendly , che rispetta le convenzioni del progetto per la localizzazione e l'utilizzo dei componenti Filament.
 
@@ -5247,51 +2974,11 @@ Seguendo queste best practices, è possibile implementare un processo di logout 
 
 *Consolidated from: `logout_page_fix.md`*
 
-
-## Errore Riscontrato
-Il file `resources/views/pages/auth/logout.blade.php`:
-- Contiene la definizione di una classe `LogoutPage` senza il tag PHP `<?php`.
-- Usa `@endvolt` e `@livewire('auth.logout')`, ma non è un componente Volt né un Livewire registrato.
-- Genera errori 500 (`Internal Server Error`) e `VoltDirectiveMissingException`.
-
-## Causa
-Mix errato di:
-- Volt anonymous component (senza `@volt` e senza PHP tags)
-- Livewire component inesistente
-- Folio page statica in cui non servono né Volt né Livewire
-
-## Soluzione
-Convertire `logout.blade.php` in una **pagina Folio statica**:
-1. Rimuovere tutta la parte di classe e le direttive Volt/Livewire.
-2. Aggiungere un blocco `@php … @endphp` in cima per eseguire il logout.
-3. Mantenere solo il markup Blade e lo script di redirect.
-4. Non toccare `routes/web.php`.
-
-### Esempio di struttura corretta
-```blade
-@php
-    use Illuminate\Support\Facades\Auth;
-    Auth::logout();
-    session()->invalidate();
-    session()->regenerateToken();
-@endphp
-
-<x-layouts.app>
-    <div class="min-h-screen flex items-center justify-center">
-        <!-- markup di conferma logout -->
-    </div>
-    <script>
-        setTimeout(() => window.location.href = "{{ route('home') }}", 3000);
-    </script>
-</x-layouts.app>
-```
-
 ---
 
 ## logout_page_implementation
 
 *Consolidated from: `logout_page_implementation.md`*
-
 
 ## Struttura Corretta
 
@@ -5367,8 +3054,6 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 - Include un reindirizzamento automatico dopo 3 secondi
 - Offre un pulsante per tornare alla home immediatamente
 
-## Best Practices
-
 ### 1. Sicurezza
 - Invalida sempre la sessione dopo il logout
 - Rigenera il token CSRF
@@ -5401,176 +3086,6 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 ## logout_security
 
 *Consolidated from: `logout_security.md`*
-
-
-## Analisi della Sicurezza
-
-### 1. Vulnerabilità Identificate
-- Mancanza di validazione CSRF
-- Nessun controllo dell'autenticazione
-- Gestione delle eccezioni incompleta
-- Possibili attacchi di session hijacking
-
-### 2. Contromisure Implementate
-
-#### 2.1. Validazione CSRF
-```php
-rules([
-    '_token' => ['required', 'string'],
-]);
-```
-- Verifica del token CSRF per ogni richiesta
-- Protezione contro attacchi cross-site request forgery
-- Validazione automatica con Volt
-
-#### 2.2. Controllo Autenticazione
-```php
-mount(function () {
-    if (!Auth::check()) {
-        return redirect()->route('login');
-    }
-});
-```
-- Verifica dello stato di autenticazione
-- Reindirizzamento automatico se non autenticato
-- Prevenzione accessi non autorizzati
-
-#### 2.3. Gestione Sessione
-```php
-Auth::logout();
-session()->invalidate();
-session()->regenerateToken();
-```
-- Logout completo dell'utente
-- Invalidazione della sessione corrente
-- Rigenerazione del token CSRF
-- Prevenzione session fixation
-
-#### 2.4. Gestione Errori
-```php
-try {
-    // Operazioni di logout
-} catch (\Exception $e) {
-    return back()->with('error', __('Errore durante il logout'));
-}
-```
-- Gestione sicura delle eccezioni
-- Feedback appropriato all'utente
-- Logging degli errori
-- Prevenzione information disclosure
-
-## Best Practices di Sicurezza
-
-### 1. Autenticazione
-- Verifica sempre lo stato di autenticazione
-- Implementa timeout di sessione
-- Usa HTTPS per tutte le comunicazioni
-- Implementa rate limiting
-
-### 2. Sessione
-- Invalida sempre la sessione al logout
-- Rigenera i token di sicurezza
-- Usa cookie sicuri
-- Implementa session binding
-
-### 3. CSRF
-- Usa sempre token CSRF
-- Valida ogni richiesta
-- Implementa SameSite cookies
-- Usa header di sicurezza appropriati
-
-### 4. Errori
-- Non esporre dettagli tecnici
-- Logga gli errori in modo sicuro
-- Fornisci feedback appropriato
-- Implementa monitoring
-
-## Implementazione Consigliata
-
-### 1. Middleware di Sicurezza
-```php
-// app/Http/Middleware/SecureLogout.php
-public function handle($request, Closure $next)
-{
-    if (!Auth::check()) {
-        return redirect()->route('login');
-    }
-
-    if (!$request->hasValidSignature()) {
-        abort(403);
-    }
-
-    return $next($request);
-}
-```
-
-### 2. Validazione Avanzata
-```php
-rules([
-    '_token' => ['required', 'string'],
-    'session_id' => ['required', 'string'],
-    'timestamp' => ['required', 'integer'],
-]);
-```
-
-### 3. Gestione Sessione Avanzata
-```php
-$logout = function () {
-    try {
-        $this->validate();
-        
-        // Logout e pulizia
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-        
-        // Pulizia cookie
-        Cookie::queue(Cookie::forget('remember_token'));
-        
-        // Logging
-        Log::info('Logout effettuato', [
-            'user_id' => Auth::id(),
-            'ip' => request()->ip(),
-            'user_agent' => request()->userAgent()
-        ]);
-        
-        return redirect()->route('home')
-            ->with('success', __('Logout effettuato con successo'))
-            ->withCookie(Cookie::forget('remember_token'));
-    } catch (\Exception $e) {
-        Log::error('Errore durante il logout', [
-            'error' => $e->getMessage(),
-            'user_id' => Auth::id()
-        ]);
-        
-        return back()->with('error', __('Errore durante il logout'));
-    }
-};
-```
-
-## Monitoraggio e Logging
-
-### 1. Eventi da Monitorare
-- Tentativi di logout
-- Errori durante il logout
-- Sessioni invalide
-- Token CSRF non validi
-
-### 2. Logging
-```php
-Log::channel('auth')->info('Logout effettuato', [
-    'user_id' => Auth::id(),
-    'ip' => request()->ip(),
-    'user_agent' => request()->userAgent(),
-    'timestamp' => now()
-]);
-```
-
-### 3. Alerting
-- Notifiche per tentativi sospetti
-- Alert per errori critici
-- Monitoraggio rate limiting
-- Tracking sessioni anomale
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)

@@ -39,19 +39,8 @@ Stesso flusso documentato con varianti `logout-*`, `volt-folio-logout`, `volt_fo
 Esempio `testing.md` (contenuti diversi, nome ambiguo):
 
 - `docs/bugs/testing.md` — bug `make:filament-user`, **non** guida test
-<<<<<<< .merge_file_Wy7T84
-<<<<<<< .merge_file_YYpTHO
 - `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/TESTING.md`
-=======
 - `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
->>>>>>> .merge_file_nEjtpj
-=======
-<<<<<<< .merge_file_wGmtYx
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/TESTING.md`
-=======
-- `docs/bugs/legacy/testing.md`, `docs/bugs/archive/testing.md`, `docs/bugs/testing.md`
->>>>>>> .merge_file_roQdxB
->>>>>>> .merge_file_nJP53E
 
 Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `testing.md` in `bugs/*`.
 

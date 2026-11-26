@@ -177,72 +177,21 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_GcEMpC
-<<<<<<< .merge_file_r7HHrN
 - [Documentazione centrale](/docs/readme.md)
-=======
 - [Documentazione centrale](/docs/README.md)
->>>>>>> .merge_file_JjoV7k
-=======
-<<<<<<< .merge_file_Hyc7sc
-- [Documentazione centrale](/docs/readme.md)
-=======
-- [Documentazione centrale](/docs/README.md)
->>>>>>> .merge_file_CxDoM5
->>>>>>> .merge_file_TU2ldk
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-- [Documentazione centrale](/docs/README.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
-## Errore Identificato
-
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
-
-```
-Call to a member function getAuthIdentifier() on null
-
-  at Modules/User/app/Listeners/LogoutListener.php:59
-     55▕         // Session::flash('login-success', 'Hello ' . $event->user->name . ', welcome back!');
-     56▕         $device = app(GetCurrentDeviceAction::class)->execute();
-     57▕         $user = $event->user;
-     58▕
-  ➜  59▕         $pivot = DeviceUser::firstOrCreate(['user_id' => $user->getAuthIdentifier(), 'device_id' => $device->id]);
-     60▕         $pivot->update(['logout_at' => now()]);
-```
-
-### Causa dell'errore
-
-Il problema si verifica perché:
-
-1. Nel file `logout.blade.php`, l'evento `auth.logout.successful` viene inviato **dopo** che l'utente è già stato disconnesso:
-
-```php
-// Esegui il logout
-Auth::logout();
-request()->session()->invalidate();
-request()->session()->regenerateToken();
-
-// Dispatch dell'evento dopo il logout
-Event::dispatch('auth.logout.successful');
-```
-
-2. Nel `LogoutListener`, il codice tenta di accedere a `$user->getAuthIdentifier()`, ma `$user` è `null` perché l'utente è già stato disconnesso quando l'evento è stato inviato.
-
-## Soluzione Corretta
-
-La soluzione corretta è modificare l'ordine delle operazioni nel file `logout.blade.php` per garantire che l'evento `auth.logout.successful` includa l'utente prima della disconnessione, oppure modificare il `LogoutListener` per gestire correttamente il caso in cui `$user` sia `null`.
-
-### Opzione 1: Modificare l'ordine degli eventi nel file logout.blade.php
 
 ```php
 <?php
@@ -285,56 +234,5 @@ try {
 }
 ?>
 ```
-
-### Opzione 2: Modificare il LogoutListener per gestire il caso in cui $user sia null
-
-```php
-/**
- * Handle the event.
- */
-public function handle(Logout $event): void
-{
-    try {
-        // Verifica se l'utente esiste prima di procedere
-        if (!$event->user) {
-            Log::warning('Tentativo di logout per un utente non autenticato');
-            return;
-        }
-
-        $device = app(GetCurrentDeviceAction::class)->execute();
-
-        // Aggiorna il pivot solo se abbiamo sia l'utente che il device
-        if ($device) {
-            try {
-                $pivot = DeviceUser::firstOrCreate([
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-                $pivot->update(['logout_at' => now()]);
-            } catch (\Exception $e) {
-                Log::error('Errore durante l\'aggiornamento del pivot device-user', [
-                    'error' => $e->getMessage(),
-                    'user_id' => $event->user->getAuthIdentifier(),
-                    'device_id' => $device->id
-                ]);
-            }
-        }
-
-        // Resto del codice...
-    } catch (\Exception $e) {
-        Log::error('Errore durante la gestione dell\'evento di logout', [
-            'error' => $e->getMessage()
-        ]);
-    }
-}
-```
-
-## Raccomandazione
-
-Si raccomanda di implementare l'**Opzione 1** perché:
-
-1. È più corretto concettualmente salvare l'utente prima del logout e passarlo all'evento
-2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
-3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.

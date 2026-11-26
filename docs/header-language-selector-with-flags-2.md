@@ -21,11 +21,6 @@ related:
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_aqYgA8
-<<<<<<< .merge_file_cc2HX6
-=======
-<<<<<<< .merge_file_WdIHpC
->>>>>>> .merge_file_VAUY5h
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
@@ -34,20 +29,8 @@ related:
 - [Convenzioni Path](./path-conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header](/laravel/Modules/User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
-=======
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
-- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/Modules/User/docs/header_language_avatar_implementation.md)
-<<<<<<< .merge_file_aqYgA8
->>>>>>> .merge_file_9m9Fl3
-=======
->>>>>>> .merge_file_uSskYE
->>>>>>> .merge_file_VAUY5h
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

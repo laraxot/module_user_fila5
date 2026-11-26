@@ -231,19 +231,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< .merge_file_d1LEvi
-<<<<<<< .merge_file_svZWw8
 - [README.md Modulo User](./readme.md)
-=======
-- [README.md Modulo User](./README.md)
->>>>>>> .merge_file_w5085H
-=======
-<<<<<<< .merge_file_zNmMI3
-- [README.md Modulo User](./readme.md)
-=======
-- [README.md Modulo User](./README.md)
->>>>>>> .merge_file_YNfkha
->>>>>>> .merge_file_W0ltho
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 

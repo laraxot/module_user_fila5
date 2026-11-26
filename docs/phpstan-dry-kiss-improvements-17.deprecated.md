@@ -7,31 +7,13 @@ updated: 2026-07-14
 qmd: "phpstan-dry-kiss-improvements-2025-10-17.deprecated deprecated"
 status: deprecated
 related:
-<<<<<<< .merge_file_J4lyf9
   - "./00-index-indice-documentazione-modulo-user.md"
-=======
-<<<<<<< .merge_file_idRlJb
-  - "./00-index-1.md"
-=======
-  - "./00-index-indice-documentazione-modulo-user.md"
->>>>>>> .merge_file_N0l2bN
->>>>>>> .merge_file_a5UVIr
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-<<<<<<< .merge_file_J4lyf9
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
-=======
-<<<<<<< .merge_file_idRlJb
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-=======
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
->>>>>>> .merge_file_N0l2bN
->>>>>>> .merge_file_a5UVIr
   - "./actions-path-convention.md"
 ---
 

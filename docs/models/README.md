@@ -409,14 +409,6 @@ $pending = TeamInvitation::whereNull('accepted_at')
 - `permission` (string) - Nome permesso
 - `enabled` (boolean)
 
-**Relazioni**:
-```php
-public function team()
-{
-    return $this->belongsTo(Team::class);
-}
-```
-
 **Uso**:
 ```php
 // Abilitare permesso per team
@@ -634,19 +626,8 @@ La connection `user` gestisce queste tabelle principali:
 - [DRY-KISS Analysis](../../../xot/docs/models/dry-kiss-analysis.md) - Analisi duplicazioni
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
-<<<<<<< .merge_file_nGDJrX
-<<<<<<< .merge_file_PAW9as
 - [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
-=======
 - [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
->>>>>>> .merge_file_j2pZsL
-=======
-<<<<<<< .merge_file_ueRLN0
-- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
-=======
-- [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
->>>>>>> .merge_file_LR6Mm5
->>>>>>> .merge_file_Svfwwj
 
 ## Changelog
 

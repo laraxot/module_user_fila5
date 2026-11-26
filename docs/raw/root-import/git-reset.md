@@ -8,19 +8,12 @@ qmd: "git-reset git reset"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< .merge_file_5Gvrnw
-  - "./changelog.md"
-  - "./changelog.md"
-  - "./changelog.md"
-  - "./changelog.md"
-=======
   - "./changelog-1.md"
   - "./changelog-2.md"
   - "./changelog-3.md"
   - "./changelog-4.md"
->>>>>>> .merge_file_O8o5S6
   - "./changelog-5.md"
-  - "./CHANGELOG.md"
+  - "./changelog.md"
   - "./git-reset-1.md"
   - "./pest-test-report-1.md"
 ---

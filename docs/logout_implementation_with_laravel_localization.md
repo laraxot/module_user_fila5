@@ -3,19 +3,8 @@
 ## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
-<<<<<<< .merge_file_0R2Bts
-<<<<<<< .merge_file_labRJH
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_zgLkev
-=======
-<<<<<<< .merge_file_qULusZ
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-=======
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/laravel_localization_usage.md)
->>>>>>> .merge_file_ZA97ou
->>>>>>> .merge_file_MXTZez
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
 - [Componenti Filament](/docs/rules/filament-components.md)

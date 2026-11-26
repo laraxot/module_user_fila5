@@ -132,25 +132,14 @@ richiede lock (`bashscripts/lock/`) prima dell'edit.
 nomi duplicati con solo case/separatore diverso (`BUSINESS-LOGIC-ANALYSIS.md`
 vs `business_logic_analysis.md`, stesso per `code-quality-analysis.md` /
 `CODE_QUALITY_ANALYSIS.md`) e più varianti di index
-<<<<<<< .merge_file_sQ0sMS
-<<<<<<< .merge_file_L9IjdF
-=======
-<<<<<<< .merge_file_8qhwdg
->>>>>>> .merge_file_AzsXsg
 (`00-INDEX.md`, `00-index.md`, `00-index-1.md`, `INDEX.md`,
 `INDEX_GENERATED.md`). Non toccato qui — da tracciare separatamente.
 
 (`00-INDEX.md`, `00-index.md`, `00-index.md`, `INDEX.md`,
-=======
 (`00-index.md`, `00-index.md`, `00-index-1.md`, `index.md`,
 `INDEX_GENERATED.md`). Non toccato qui — da tracciare separatamente.
 
 (`00-index.md`, `00-index.md`, `00-index.md`, `index.md`,
-<<<<<<< .merge_file_sQ0sMS
->>>>>>> .merge_file_0zDOQV
-=======
->>>>>>> .merge_file_eVaC8G
->>>>>>> .merge_file_AzsXsg
 `INDEX_GENERATED.md`). Non toccato qui: da tracciare separatamente.
 
 ## Dev Agent Record (2026-09-22, sblocco finale)

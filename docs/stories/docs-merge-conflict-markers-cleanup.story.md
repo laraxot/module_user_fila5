@@ -130,14 +130,8 @@ duplicata.
 `docs/index.md` (indice auto-generato, 3419 righe) aveva la sezione
 `## root-md-files` disallineata: elencava solo 2 dei 7 file `.md` presenti
 (`git-reset.md`, `pest-test-report.md`), mancavano `CHANGELOG.md`,
-<<<<<<< .merge_file_T7Hpow
 `changelog.md`, `changelog.md`, `git-reset-1.md`, `philosophy.md`.
-=======
 `changelog-1.md`, `changelog-2.md`, `git-reset-1.md`, `philosophy.md`.
-<<<<<<< .merge_file_1cQKmo
-=======
->>>>>>> .merge_file_u5f3qV
->>>>>>> .merge_file_F7607G
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa —
 
 Corretta chirurgicamente (solo quella sezione, non rigenerazione completa -

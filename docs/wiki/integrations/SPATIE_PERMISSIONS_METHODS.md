@@ -481,19 +481,8 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
-<<<<<<< .merge_file_4FMhMX
-<<<<<<< .merge_file_ClGnyI
 - **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
-=======
 - **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
->>>>>>> .merge_file_aoj2bs
-=======
-<<<<<<< .merge_file_xKPx9x
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
-=======
-- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
->>>>>>> .merge_file_AXsXog
->>>>>>> .merge_file_434Q2A
 
 ## Version Information
 
