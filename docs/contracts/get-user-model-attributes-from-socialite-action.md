@@ -1,6 +1,7 @@
 ---
 title: "GetUserModelAttributesFromSocialiteAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,12 +23,12 @@ Traduce l'identità OAuth in un DTO di attributi per il modello utente, con vali
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-USER-ATTR-INV-1` | `provider` vuoto: `InvalidArgumentException`. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:44` |
-| `SOCIALITE-USER-ATTR-INV-2` | Nome o cognome non stringa: `RuntimeException`. | `execute()` | `SocialiteCoreActionsCoverageTest.php:58` |
-| `SOCIALITE-USER-ATTR-INV-3` | Email non stringa o vuota: `RuntimeException`. | `execute()` | `SocialiteCoreActionsCoverageTest.php:58` |
-| `SOCIALITE-USER-ATTR-INV-4` | `firstName` coincide con `name` (nome completo), non con il primo nome. | `execute()` | `SocialiteCoreActionsCoverageTest.php:28` (riferimento) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-USER-ATTR-INV-1 | `provider` vuoto: `InvalidArgumentException`. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:44`. | — (non dimostrato) |
+| SOCIALITE-USER-ATTR-INV-2 | Nome o cognome non stringa: `RuntimeException`. Prova nel codice: `execute()`. Test esistente senza group: `SocialiteCoreActionsCoverageTest.php:58`. | — (non dimostrato) |
+| SOCIALITE-USER-ATTR-INV-3 | Email non stringa o vuota: `RuntimeException`. Prova nel codice: `execute()`. Test esistente senza group: `SocialiteCoreActionsCoverageTest.php:58`. | — (non dimostrato) |
+| SOCIALITE-USER-ATTR-INV-4 | `firstName` coincide con `name` (nome completo), non con il primo nome. Prova nel codice: `execute()`. Test esistente senza group: `SocialiteCoreActionsCoverageTest.php:28` (riferimento). | — (non dimostrato) |
 
 ## Effetti collaterali
 
@@ -40,4 +41,4 @@ Nessuno.
 ## Non fa
 
 - Il controllo `if ($nameFieldsResolver === null)` non può essere vero: `app()` non restituisce null. È codice morto.
-- Risolve i nomi con `Utils/UserNameFieldsResolver`, che duplica la logica di `ResolveUserNameFieldsFromSocialiteAction`.
+- Risolve i nomi con `Utils/UserNameFieldsResolver`, che duplica la logica di `GetUserNameFieldsFromSocialiteAction`.

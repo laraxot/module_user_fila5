@@ -1,6 +1,7 @@
 ---
 title: "GetProviderButtonsAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Dovrebbe restituire i pulsanti di login per i provider. Oggi restituisce sempre 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-BUTTONS-INV-1` | Il risultato è sempre vuoto. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:114` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-BUTTONS-INV-1 | Il risultato è sempre vuoto. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:114`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,6 +1,7 @@
 ---
 title: "GetDomainAllowListAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce la lista dei domini ammessi al login SSO da `config('socialite.domai
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-ALLOW-INV-1` | Una stringa diventa lista di un elemento. | `execute()`, ramo `is_string` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:31` |
-| `SOCIALITE-ALLOW-INV-2` | Elementi non scalari né `Stringable` sono scartati; resta una lista indicizzata. | `execute()`, `array_filter` | `SocialiteUtilityActionsTest.php:39,47` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-ALLOW-INV-1 | Una stringa diventa lista di un elemento. Prova nel codice: `execute()`, ramo `is_string`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:31`. | — (non dimostrato) |
+| SOCIALITE-ALLOW-INV-2 | Elementi non scalari né `Stringable` sono scartati; resta una lista indicizzata. Prova nel codice: `execute()`, `array_filter`. Test esistente senza group: `SocialiteUtilityActionsTest.php:39,47`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

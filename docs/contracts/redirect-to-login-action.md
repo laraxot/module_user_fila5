@@ -1,6 +1,7 @@
 ---
 title: "RedirectToLoginAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,11 +24,11 @@ Riporta l'utente alla pagina di login FO con un messaggio di errore, mostrato si
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-REDIRECT-LOGIN-INV-1` | L'URL di login è localizzato nella lingua corrente. | `execute()`, `localizeURL` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:166` (chiamata) |
-| `SOCIALITE-REDIRECT-LOGIN-INV-2` | Il testo ha i segnaposti sostituiti e i bordi tagliati. | `execute()`, `strtr` | nessuno |
-| `SOCIALITE-REDIRECT-LOGIN-INV-3` | Ogni chiamata invia una notifica persistente di tipo danger. | `Notification::make()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-REDIRECT-LOGIN-INV-1 | L'URL di login è localizzato nella lingua corrente. Prova nel codice: `execute()`, `localizeURL`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:166` (chiamata). | — (non dimostrato) |
+| SOCIALITE-REDIRECT-LOGIN-INV-2 | Il testo ha i segnaposti sostituiti e i bordi tagliati. Prova nel codice: `execute()`, `strtr`. | — (non dimostrato) |
+| SOCIALITE-REDIRECT-LOGIN-INV-3 | Ogni chiamata invia una notifica persistente di tipo danger. Prova nel codice: `Notification::make()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

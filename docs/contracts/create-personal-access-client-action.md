@@ -1,6 +1,7 @@
 ---
 title: "CreatePersonalAccessClientAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Crea un client OAuth2 di tipo *personal access* delegando a `CreateGenericClient
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-PAT-CLIENT-INV-1` | Il client restituito ha `personal_access_client = true` e `password_client = false`. | `execute()`, argomenti fissi | `tests/Unit/Actions/Passport/CreateSpecificClientActionsTest.php:45` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-PAT-CLIENT-INV-1 | Il client restituito ha `personal_access_client = true` e `password_client = false`. Prova nel codice: `execute()`, argomenti fissi. Test esistente senza group: `tests/Unit/Actions/Passport/CreateSpecificClientActionsTest.php:45`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

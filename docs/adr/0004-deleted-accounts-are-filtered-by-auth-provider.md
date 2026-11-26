@@ -3,7 +3,7 @@ title: "ADR — Gli account cancellati si escludono nel provider di autenticazio
 type: decision
 status: accepted
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-26
 decision-makers: [User module owner]
 module: User
 qmd: "ADR account cancellato deleted_at provider autenticazione SoftDeletes scope globale SEC-05 UserServiceProvider"
@@ -41,5 +41,18 @@ Scelta: **filtro `deleted_at IS NULL` in un `EloquentUserProvider` dedicato**, p
 
 ## Conferma
 
-- Test esistenti (senza `->group`): `Modules/User/tests/Feature/Auth/DeletedAccountAccessTest.php` (provider, ricerca per id/credenziali/remember token, login web e API, grant password Passport, revoca token).
+- Test Pest: `cd laravel && vendor/bin/pest --group=USER-PROVIDER-INV-1` (e `-INV-2`, `-INV-3`, `-INV-4`; revoca: `--group=USER-REVOKE-INV-1`, `-INV-2`, `-INV-3`)
+  esegue `Modules/User/tests/Feature/Auth/DeletedAccountAccessTest.php`. Copre provider, ricerca per id/credenziali/remember token, login web e API,
+  grant password Passport e revoca dei token; i test che creano utenti richiedono un database di test migrato.
 - Contract: [build-active-user-provider-action](../contracts/build-active-user-provider-action.md), [revoke-user-access-action](../contracts/revoke-user-access-action.md).
+- Non dimostrato oggi: il comportamento con un provider custom o un driver diverso da `eloquent` (aggira il filtro); resta revisione del codice.
+
+## Stato attuale
+
+Verificato il 2026-11-26. La quarta conseguenza («il modulo Gdpr non esiste») non è più vera: `laravel/Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`
+esiste, valorizza `deleted_at` (riga 80) e chiama `RevokeUserAccessAction` (riga 85) nella sua transazione.
+
+Resta un secondo percorso di cancellazione nel modulo User, che non rispetta questa decisione: `Modules/User/app/Actions/User/DeleteUserAction.php` esegue
+`$user->delete()` (riga 43, cancellazione fisica, nessuna revoca di token), chiamata da `Http/Livewire/Profile/DeleteAccount.php:49` e
+`Filament/Widgets/Profile/DeleteAccountWidget.php:52`. Vedi [delete-user-action](../contracts/delete-user-action.md). Decisione aperta, da prendere con un
+umano: unificare i due percorsi o dichiarare quale è quello del front office.

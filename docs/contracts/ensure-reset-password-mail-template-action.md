@@ -1,6 +1,7 @@
 ---
 title: "EnsureResetPasswordMailTemplateAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,12 +23,12 @@ Garantisce il template `reset-password` della mail di reimpostazione password, i
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `MAIL-TPL-INV-1` | Il template è identificato da `mailable` = `SpatieEmail` e `slug` = `reset-password`; se manca viene creato con layout `base.html`. | righe 24, 38-41 | Test: nessuno. |
-| `MAIL-TPL-INV-2` | Per ogni lingua in `it`, `en`, `de`, `es` il testo è scritto solo se la lingua è vuota oppure contiene ancora il default legacy e non il segnaposto URL. | righe 27-30, 43-45, 56-65 | Test: nessuno. |
-| `MAIL-TPL-INV-3` | Un testo personalizzato non viene mai sovrascritto. | righe 60-64 | Test: nessuno. |
-| `MAIL-TPL-INV-4` | Il salvataggio avviene solo se il modello è sporco: una seconda esecuzione a contenuto invariato non scrive. | righe 49-51 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| MAIL-TPL-INV-1 | Il template è identificato da `mailable` = `SpatieEmail` e `slug` = `reset-password`; se manca viene creato con layout `base.html`. Prova nel codice: righe 24, 38-41. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| MAIL-TPL-INV-2 | Per ogni lingua in `it`, `en`, `de`, `es` il testo è scritto solo se la lingua è vuota oppure contiene ancora il default legacy e non il segnaposto URL. Prova nel codice: righe 27-30, 43-45, 56-65. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| MAIL-TPL-INV-3 | Un testo personalizzato non viene mai sovrascritto. Prova nel codice: righe 60-64. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| MAIL-TPL-INV-4 | Il salvataggio avviene solo se il modello è sporco: una seconda esecuzione a contenuto invariato non scrive. Prova nel codice: righe 49-51. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

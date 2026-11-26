@@ -1,6 +1,7 @@
 ---
 title: "RememberLoginReturnUrlAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,12 +23,12 @@ Ricorda la pagina che ha mandato l'utente al login, così che `redirectIntended(
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `REMEMBER-RET-INV-1` | Sono accettati solo URL http/https sullo stesso host della richiesta; `//`, backslash, caratteri di controllo e altri schemi sono rifiutati. | righe 46-78 | `tests/Feature/Auth/AuthFlowRedirectsTest.php` (riferimento alla classe) |
-| `REMEMBER-RET-INV-2` | Percorsi che contengono un segmento `auth` non sono mai memorizzati (non si torna al login). | righe 72-74 | come sopra |
-| `REMEMBER-RET-INV-3` | Il parametro `redirect` esplicito prevale e sovrascrive `url.intended` già presente. | righe 29-34 | come sopra |
-| `REMEMBER-RET-INV-4` | Senza `redirect` valido, un `url.intended` già presente non viene sovrascritto dal Referer. | righe 36-38 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| REMEMBER-RET-INV-1 | Sono accettati solo URL http/https sullo stesso host della richiesta; `//`, backslash, caratteri di controllo e altri schemi sono rifiutati. Prova nel codice: righe 46-78. Test esistente senza group: `tests/Feature/Auth/AuthFlowRedirectsTest.php` (riferimento alla classe). | — (non dimostrato) |
+| REMEMBER-RET-INV-2 | Percorsi che contengono un segmento `auth` non sono mai memorizzati (non si torna al login). Prova nel codice: righe 72-74. Test esistente senza group: come sopra. | — (non dimostrato) |
+| REMEMBER-RET-INV-3 | Il parametro `redirect` esplicito prevale e sovrascrive `url.intended` già presente. Prova nel codice: righe 29-34. Test esistente senza group: come sopra. | — (non dimostrato) |
+| REMEMBER-RET-INV-4 | Senza `redirect` valido, un `url.intended` già presente non viene sovrascritto dal Referer. Prova nel codice: righe 36-38. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

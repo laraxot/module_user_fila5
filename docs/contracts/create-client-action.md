@@ -1,6 +1,7 @@
 ---
 title: "CreateClientAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -25,11 +26,11 @@ Crea e salva un client OAuth2 Passport (`oauth_clients`). Codice: `app/Actions/P
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-CREATE-CLIENT-INV-1` | `id` è un UUID generato a ogni chiamata. | `execute()`, `Str::uuid()` | chiamata in `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:36` |
-| `PASSPORT-CREATE-CLIENT-INV-2` | Il client nasce non revocato (`revoked = false`). | `execute()` | stesso file |
-| `PASSPORT-CREATE-CLIENT-INV-3` | `provider` vale `'users'` quando l'argomento è `null`. | `execute()`, `?? 'users'` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-CREATE-CLIENT-INV-1 | `id` è un UUID generato a ogni chiamata. Prova nel codice: `execute()`, `Str::uuid()`. Test esistente senza group: chiamata in `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:36`. | — (non dimostrato) |
+| PASSPORT-CREATE-CLIENT-INV-2 | Il client nasce non revocato (`revoked = false`). Prova nel codice: `execute()`. Test esistente senza group: stesso file. | — (non dimostrato) |
+| PASSPORT-CREATE-CLIENT-INV-3 | `provider` vale `'users'` quando l'argomento è `null`. Prova nel codice: `execute()`, `?? 'users'`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

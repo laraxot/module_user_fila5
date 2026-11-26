@@ -1,6 +1,7 @@
 ---
 title: "GetNewPasswordAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Genera una nuova password temporanea pronunciabile, ne salva l'hash sull'utente 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `NEW-PWD-INV-1` | Sul modello è salvato solo l'hash `Hash::make`, mai il valore in chiaro. | righe 28-30 | `tests/Unit/Actions/User/GetNewPasswordActionTest.php` (riferimento alla classe) |
-| `NEW-PWD-INV-2` | Il valore restituito è quello generato da `GetPronounceablePasswordAction` (Xot) con lunghezza 12. | riga 26 | come sopra |
-| `NEW-PWD-INV-3` | Un record che non è un `Model` lancia `InvalidArgumentException`. | riga 24 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| NEW-PWD-INV-1 | Sul modello è salvato solo l'hash `Hash::make`, mai il valore in chiaro. Prova nel codice: righe 28-30. Test esistente senza group: `tests/Unit/Actions/User/GetNewPasswordActionTest.php` (riferimento alla classe). | — (non dimostrato) |
+| NEW-PWD-INV-2 | Il valore restituito è quello generato da `GetPronounceablePasswordAction` (Xot) con lunghezza 12. Prova nel codice: riga 26. Test esistente senza group: come sopra. | — (non dimostrato) |
+| NEW-PWD-INV-3 | Un record che non è un `Model` lancia `InvalidArgumentException`. Prova nel codice: riga 24. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

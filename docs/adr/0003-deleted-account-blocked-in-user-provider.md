@@ -1,13 +1,16 @@
 ---
 title: "ADR — L'account cancellato si blocca nel provider utenti, non con SoftDeletes"
 type: decision
-status: accepted
+module: User
+decision-makers: [User module owner]
+status: superseded
+superseded_by: 0004-deleted-accounts-are-filtered-by-auth-provider.md
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-26
 related:
   - ../../app/Actions/Auth/BuildActiveUserProviderAction.php
   - ../../app/Actions/Auth/RevokeUserAccessAction.php
-  - ../stories/account-deletion-and-email-verification.story.md
+  - ../stories/0079-account-deletion-and-email-verification.story.md
 qmd: "deleted account blocked user provider laccount"
 ---
 
@@ -21,6 +24,20 @@ qmd: "deleted account blocked user provider laccount"
   Filament, Volt, `POST /api/user/login`, sessioni già aperte, cookie "ricordami", token Passport (SEC-05).
 - Domanda: dove mettere un solo filtro che copra tutte le strade d'ingresso senza nascondere l'utente al back office?
 
+## Driver della decisione
+
+- Sicurezza e privacy (SEC-05): l'account cancellato non deve piu' entrare da nessuna strada: web, Filament, Volt,
+  API, sessioni e cookie gia' aperti, token Passport.
+- Back office: l'utente cancellato deve restare visibile per la purga differita e la gestione.
+- Manutenibilita': un solo punto di controllo copre le sei vie d'ingresso senza dipendere dalla memoria di chi
+  aggiunge la prossima.
+
+## Alternative scartate
+
+- `SoftDeletes` su `BaseUser`: nasconderebbe l'utente a back office, purga differita e relazioni di tutti i moduli.
+- Scope globale: stesso effetto, più difficile da escludere caso per caso.
+- Controllo in ogni punto di login: almeno sei punti d'ingresso, basta dimenticarne uno.
+
 ## Decisione
 
 - Il filtro sta nel provider: `BuildActiveUserProviderAction` costruisce un `EloquentUserProvider` con `withQuery()` che
@@ -31,19 +48,20 @@ qmd: "deleted account blocked user provider laccount"
 - In più `RevokeUserAccessAction` revoca token e refresh token Passport e ruota il remember token, così il registro dei
   token resta vero anche se `deleted_at` venisse azzerato.
 
-## Alternative scartate
-
-- `SoftDeletes` su `BaseUser`: nasconderebbe l'utente a back office, purga differita e relazioni di tutti i moduli.
-- Scope globale: stesso effetto, più difficile da escludere caso per caso.
-- Controllo in ogni punto di login: almeno sei punti d'ingresso, basta dimenticarne uno.
-
 ## Conseguenze
 
 - Pro: un solo punto, che copre anche sessioni e token già emessi alla richiesta successiva.
 - Contro: chi interroga `User::query()` direttamente vede anche gli account cancellati: è voluto, ma va ricordato
   quando si contano gli utenti attivi.
 
-## Verifica
+## Conferma
 
-`Modules/User/tests/Feature/Auth/DeletedAccountAccessTest.php`: i due test sul provider (`the users provider ...`) girano
-verdi; quelli che creano utenti richiedono un database di test migrato (colonna `state` di `users`).
+Vedi la Conferma di [0004](0004-deleted-accounts-are-filtered-by-auth-provider.md): stessa decisione, stesso codice, stessi test
+(`Modules/User/tests/Feature/Auth/DeletedAccountAccessTest.php`, groups `USER-PROVIDER-INV-1..4` e `USER-REVOKE-INV-1..3`).
+
+## Stato attuale
+
+Questo ADR e [0004](0004-deleted-accounts-are-filtered-by-auth-provider.md) descrivono la stessa decisione (filtro `deleted_at` nel provider utenti
+con `BuildActiveUserProviderAction`, revoca con `RevokeUserAccessAction`) sullo stesso codice. 0004 è la versione mantenuta (ha la Conferma e registra lo
+stato attuale del modulo Gdpr); 0003 resta come storia e nessun comportamento cambia tra i due. Scelta del 2026-11-26, reversibile: se il proprietario
+preferisce 0003 come canonico, invertire `status` e `superseded_by`.

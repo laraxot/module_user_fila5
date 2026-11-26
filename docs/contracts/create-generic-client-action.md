@@ -1,6 +1,7 @@
 ---
 title: "CreateGenericClientAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -24,10 +25,10 @@ Crea e salva un client OAuth2 Passport con i flag di tipo passati dal chiamante.
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-GENERIC-CLIENT-INV-1` | `personal_access_client` e `password_client` riflettono esattamente i due argomenti. | `execute()` | `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:66`, `CreateSpecificClientActionsTest.php` |
-| `PASSPORT-GENERIC-CLIENT-INV-2` | `id` UUID, `secret` 40 caratteri, `revoked = false`, `provider` default `'users'`. | `execute()` | nessuno sulle asserzioni specifiche |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-GENERIC-CLIENT-INV-1 | `personal_access_client` e `password_client` riflettono esattamente i due argomenti. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:66`, `CreateSpecificClientActionsTest.php`. | — (non dimostrato) |
+| PASSPORT-GENERIC-CLIENT-INV-2 | `id` UUID, `secret` 40 caratteri, `revoked = false`, `provider` default `'users'`. Prova nel codice: `execute()`. Test esistente senza group: nessuno sulle asserzioni specifiche. | — (non dimostrato) |
 
 ## Effetti collaterali
 

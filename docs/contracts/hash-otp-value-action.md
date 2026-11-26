@@ -1,6 +1,7 @@
 ---
 title: "HashOtpValueAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Calcola l'hash di un valore OTP con l'hasher Illuminate. Codice: `app/Actions/Ot
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `HASH-OTP-INV-1` | Il risultato è esattamente `make()` dell'hasher iniettato (contratto Illuminate, non il wrapper `Otp\Hasher`). | righe 14-20 | `tests/Unit/Actions/Otp/OtpHashActionsTest.php` (riferimento alla classe) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| HASH-OTP-INV-1 | Il risultato è esattamente `make()` dell'hasher iniettato (contratto Illuminate, non il wrapper `Otp\Hasher`). Prova nel codice: righe 14-20. Test esistente senza group: `tests/Unit/Actions/Otp/OtpHashActionsTest.php` (riferimento alla classe). | — (non dimostrato) |
 
 ## Effetti collaterali
 

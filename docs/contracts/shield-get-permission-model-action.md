@@ -1,6 +1,7 @@
 ---
 title: "GetPermissionModelAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce il FQCN del modello Permission da usare, letto da `config('permissio
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SHIELD-PERM-MODEL-INV-1` | Il valore restituito è sempre una stringa. | `Assert::string()` | nessuno (0 riferimenti per nome classe nei test) |
-| `SHIELD-PERM-MODEL-INV-2` | Se la chiave è assente, vale il default Spatie. | `config(..., Permission::class)` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SHIELD-PERM-MODEL-INV-1 | Il valore restituito è sempre una stringa. Prova nel codice: `Assert::string()`. Test esistente senza group: nessuno (0 riferimenti per nome classe nei test). | — (non dimostrato) |
+| SHIELD-PERM-MODEL-INV-2 | Se la chiave è assente, vale il default Spatie. Prova nel codice: `config(..., Permission::class)`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

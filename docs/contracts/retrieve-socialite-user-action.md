@@ -1,6 +1,7 @@
 ---
 title: "RetrieveSocialiteUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Cerca il collegamento SSO per provider e id esterno e ne aggiorna il campo `toke
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-RETRIEVE-SU-INV-1` | Provider vuoto: `InvalidArgumentException`. | `execute()` | nessuno |
-| `SOCIALITE-RETRIEVE-SU-INV-2` | ID non stringa né intero: `RuntimeException`. | `execute()` | nessuno |
-| `SOCIALITE-RETRIEVE-SU-INV-3` | Senza token leggibile, il campo riceve `'no_token_'.time()`. | `execute()`, fallback | `tests/Unit/UserGapAttackCoverageTest.php:175-187` (istanza) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-RETRIEVE-SU-INV-1 | Provider vuoto: `InvalidArgumentException`. Prova nel codice: `execute()`. | — (non dimostrato) |
+| SOCIALITE-RETRIEVE-SU-INV-2 | ID non stringa né intero: `RuntimeException`. Prova nel codice: `execute()`. | — (non dimostrato) |
+| SOCIALITE-RETRIEVE-SU-INV-3 | Senza token leggibile, il campo riceve `'no_token_'.time()`. Prova nel codice: `execute()`, fallback. Test esistente senza group: `tests/Unit/UserGapAttackCoverageTest.php:175-187` (istanza). | — (non dimostrato) |
 
 ## Effetti collaterali
 

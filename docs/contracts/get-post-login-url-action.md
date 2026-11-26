@@ -1,6 +1,7 @@
 ---
 title: "GetPostLoginUrlAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce la pagina d'arrivo dopo login e registrazione quando nessuna pagina 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `POST-LOGIN-INV-1` | Se la lingua corrente non è tra quelle supportate si usa `app.locale` (default `it`). | righe 28-31 | `tests/Feature/Auth/AuthFlowRedirectsTest.php` e `tests/Unit/Filament/Widgets/Auth/LoginWidgetLocalizationTest.php` (riferimento alla classe) |
-| `POST-LOGIN-INV-2` | Il percorso è letto da `auth.post_login_path`, con default `/area-personale`. | righe 35-37 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| POST-LOGIN-INV-1 | Se la lingua corrente non è tra quelle supportate si usa `app.locale` (default `it`). Prova nel codice: righe 28-31. Test esistente senza group: `tests/Feature/Auth/AuthFlowRedirectsTest.php` e `tests/Unit/Filament/Widgets/Auth/LoginWidgetLocalizationTest.php` (riferimento alla classe). | — (non dimostrato) |
+| POST-LOGIN-INV-2 | Il percorso è letto da `auth.post_login_path`, con default `/area-personale`. Prova nel codice: righe 35-37. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

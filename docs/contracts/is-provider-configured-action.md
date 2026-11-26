@@ -1,6 +1,7 @@
 ---
 title: "IsProviderConfiguredAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Dice se un provider OAuth ha tutte le impostazioni reali. Codice: `app/Actions/S
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-IS-CONFIGURED-INV-1` | `true` se e solo se la lista delle mancanti è vuota. | `execute()` | `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:65,68` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-IS-CONFIGURED-INV-1 | `true` se e solo se la lista delle mancanti è vuota. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:65,68`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

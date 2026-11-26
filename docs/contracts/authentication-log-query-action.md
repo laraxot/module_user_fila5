@@ -1,6 +1,7 @@
 ---
 title: "AuthenticationLogQueryAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Costruisce la query dei log di autenticazione di un modello autenticabile. Codic
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `AUTH-LOG-QUERY-INV-1` | Il filtro usa solo morph class e chiave del modello passato; nessun altro vincolo. | righe 22-24 | Test: nessuno (nessun riferimento alla classe in `tests/`). |
-| `AUTH-LOG-QUERY-INV-2` | Il builder non viene eseguito: la query parte solo al consumo del chiamante. | riga 22 (nessun `get`/`count`) | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| AUTH-LOG-QUERY-INV-1 | Il filtro usa solo morph class e chiave del modello passato; nessun altro vincolo. Prova nel codice: righe 22-24. Test esistente senza group: Test: nessuno (nessun riferimento alla classe in `tests/`). | — (non dimostrato) |
+| AUTH-LOG-QUERY-INV-2 | Il builder non viene eseguito: la query parte solo al consumo del chiamante. Prova nel codice: riga 22 (nessun `get`/`count`). Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

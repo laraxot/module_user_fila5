@@ -1,6 +1,7 @@
 ---
 title: "GetGuardAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Restituisce il guard di autenticazione indicato da `config('filament.auth.guard'
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-GUARD-INV-1` | Il nome del guard deve essere una stringa. | `Assert::string()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:102` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-GUARD-INV-1 | Il nome del guard deve essere una stringa. Prova nel codice: `Assert::string()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:102`. | — (non dimostrato) |
 
 ## Effetti collaterali
 
@@ -37,4 +38,4 @@ Nessuno.
 
 ## Non fa
 
-- Non è usato in produzione nel perimetro cercato. Il guard di `ResolveShieldAuthenticationConfigurationAction` è invece hardcoded a `'web'`.
+- Non è usato in produzione nel perimetro cercato. Il guard di `GetShieldAuthenticationConfigurationAction` è invece hardcoded a `'web'`.

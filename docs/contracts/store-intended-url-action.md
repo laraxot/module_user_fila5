@@ -1,6 +1,7 @@
 ---
 title: "StoreIntendedUrlAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Ricorda la pagina a cui tornare dopo il login, per gli ospiti che non passano da
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `STORE-INTENDED-INV-1` | Sono accettati solo stringhe che iniziano con un singolo `/`, senza `\` e senza spazi o caratteri di controllo. | righe 25, 34-40 | Test: nessuno. |
-| `STORE-INTENDED-INV-2` | Un input rifiutato non tocca la sessione. | righe 25-27 | Test: nessuno. |
-| `STORE-INTENDED-INV-3` | Il valore salvato è `url($target)`, cioè assoluto sull'host della richiesta. | riga 29 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| STORE-INTENDED-INV-1 | Sono accettati solo stringhe che iniziano con un singolo `/`, senza `\` e senza spazi o caratteri di controllo. Prova nel codice: righe 25, 34-40. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| STORE-INTENDED-INV-2 | Un input rifiutato non tocca la sessione. Prova nel codice: righe 25-27. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| STORE-INTENDED-INV-3 | Il valore salvato è `url($target)`, cioè assoluto sull'host della richiesta. Prova nel codice: riga 29. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

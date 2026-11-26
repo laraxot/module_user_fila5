@@ -67,7 +67,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $revoked = app(RevokeAllUserTokensAction::class)->execute($user);
 
         Assert::assertSame(0, $revoked);
-    });
+    })->group('PASSPORT-REVOKE-ALL-INV-2');
 
     test('revokes tokens by user id string', function (): void {
         $user = UserFactory::new()->createOne();
@@ -154,7 +154,7 @@ describe('RevokeAllUserTokensAction', function (): void {
 
         Assert::assertSame(1, $revoked);
         Assert::assertSame(2, DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user->id)->where('revoked', 1)->count());
-    });
+    })->group('PASSPORT-REVOKE-ALL-INV-1');
 
     test('returns count of revoked tokens', function (): void {
         $user = UserFactory::new()->createOne();
@@ -196,7 +196,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $revoked = app(RevokeAllUserTokensAction::class)->execute($user);
 
         Assert::assertSame($tokenCount, $revoked);
-    });
+    })->group('PASSPORT-REVOKE-ALL-INV-2');
 
     test('revokes tokens for specific user only', function (): void {
         $user1 = UserFactory::new()->createOne();
@@ -246,7 +246,7 @@ describe('RevokeAllUserTokensAction', function (): void {
 
         Assert::assertSame(0, DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user1->id)->where('revoked', 0)->count());
         Assert::assertSame(1, DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user2->id)->where('revoked', 0)->count());
-    });
+    })->group('PASSPORT-REVOKE-ALL-INV-1');
 
     test('handles multiple consecutive revocations', function (): void {
         $user = UserFactory::new()->createOne();

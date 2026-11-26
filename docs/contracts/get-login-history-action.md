@@ -1,6 +1,7 @@
 ---
 title: "GetLoginHistoryAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,12 +24,12 @@ Serie storica degli accessi, bucket per giorno o per mese, letta da `authenticat
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `LOGIN-HIST-INV-1` | Granularità diverse da `day` e `month` sono rifiutate con `InvalidArgumentException`. | righe 36-40 | `tests/Feature/Actions/GetLoginHistoryActionTest.php` (riferimento alla classe) |
-| `LOGIN-HIST-INV-2` | Sono contate tutte le righe con timestamp valorizzato, anche con `login_successful` false. | righe 61-71, docblock righe 17-19 | come sopra |
-| `LOGIN-HIST-INV-3` | I bucket sono continui: ogni giorno o mese tra inizio e ora compare, anche se vuoto. | righe 90-110 | come sopra |
-| `LOGIN-HIST-INV-4` | Oltre 5000 bucket l'Action lancia `InvalidArgumentException` (il messaggio cita solo il giorno, ma il limite vale per entrambe le granularità). | righe 91-96 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| LOGIN-HIST-INV-1 | Granularità diverse da `day` e `month` sono rifiutate con `InvalidArgumentException`. Prova nel codice: righe 36-40. Test esistente senza group: `tests/Feature/Actions/GetLoginHistoryActionTest.php` (riferimento alla classe). | — (non dimostrato) |
+| LOGIN-HIST-INV-2 | Sono contate tutte le righe con timestamp valorizzato, anche con `login_successful` false. Prova nel codice: righe 61-71, docblock righe 17-19. Test esistente senza group: come sopra. | — (non dimostrato) |
+| LOGIN-HIST-INV-3 | I bucket sono continui: ogni giorno o mese tra inizio e ora compare, anche se vuoto. Prova nel codice: righe 90-110. Test esistente senza group: come sopra. | — (non dimostrato) |
+| LOGIN-HIST-INV-4 | Oltre 5000 bucket l'Action lancia `InvalidArgumentException` (il messaggio cita solo il giorno, ma il limite vale per entrambe le granularità). Prova nel codice: righe 91-96. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

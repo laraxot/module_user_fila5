@@ -1,6 +1,7 @@
 ---
 title: "LogoutUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Chiude l'accesso di un utente: revoca il suo access token Passport e i refresh t
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-LOGOUT-INV-1` | Senza token: `AssertionFailedException`. | `Assert::notNull` | nessuno |
-| `SOCIALITE-LOGOUT-INV-2` | I refresh token con `access_token_id` del token sono revocati (non cancellati). | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:152` (chiamata) |
-| `SOCIALITE-LOGOUT-INV-3` | I `DeviceUser` dell'utente hanno `logout_at` = ora. | `execute()` | stesso riferimento |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-LOGOUT-INV-1 | Senza token: `AssertionFailedException`. Prova nel codice: `Assert::notNull`. | — (non dimostrato) |
+| SOCIALITE-LOGOUT-INV-2 | I refresh token con `access_token_id` del token sono revocati (non cancellati). Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:152` (chiamata). | — (non dimostrato) |
+| SOCIALITE-LOGOUT-INV-3 | I `DeviceUser` dell'utente hanno `logout_at` = ora. Prova nel codice: `execute()`. Test esistente senza group: stesso riferimento. | — (non dimostrato) |
 
 ## Effetti collaterali
 

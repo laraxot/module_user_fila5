@@ -1,6 +1,7 @@
 ---
 title: "GetProviderRedirectUriAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce l'URI di callback da registrare presso il provider, costruito nella 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-REDIRECT-URI-INV-1` | L'URI è generato con la lingua predefinita di `LaravelLocalization`. | `execute()`, `setLocale` | `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:86-87` |
-| `SOCIALITE-REDIRECT-URI-INV-2` | La lingua corrente è ripristinata anche se `route()` lancia eccezione (`finally`). | `execute()`, `try/finally` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-REDIRECT-URI-INV-1 | L'URI è generato con la lingua predefinita di `LaravelLocalization`. Prova nel codice: `execute()`, `setLocale`. Test esistente senza group: `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:86-87`. | — (non dimostrato) |
+| SOCIALITE-REDIRECT-URI-INV-2 | La lingua corrente è ripristinata anche se `route()` lancia eccezione (`finally`). Prova nel codice: `execute()`, `try/finally`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

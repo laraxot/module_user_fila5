@@ -1,6 +1,7 @@
 ---
 title: "CreatePasswordClientAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Crea un client OAuth2 di tipo *password grant* delegando a `CreateGenericClientA
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-PWD-CLIENT-INV-1` | Il client restituito ha `password_client = true` e `personal_access_client = false`. | `execute()`, argomenti fissi | `tests/Unit/Actions/Passport/CreateSpecificClientActionsTest.php:29` |
-| `PASSPORT-PWD-CLIENT-INV-2` | Nessun comportamento proprio: tutto il resto è delegato. | `execute()` | stesso file |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-PWD-CLIENT-INV-1 | Il client restituito ha `password_client = true` e `personal_access_client = false`. Prova nel codice: `execute()`, argomenti fissi. Test esistente senza group: `tests/Unit/Actions/Passport/CreateSpecificClientActionsTest.php:29`. | — (non dimostrato) |
+| PASSPORT-PWD-CLIENT-INV-2 | Nessun comportamento proprio: tutto il resto è delegato. Prova nel codice: `execute()`. Test esistente senza group: stesso file. | — (non dimostrato) |
 
 ## Effetti collaterali
 

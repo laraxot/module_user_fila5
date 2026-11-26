@@ -1,6 +1,7 @@
 ---
 title: "GetMissingProviderSettingsAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Elenca le variabili d'ambiente che mancano, o sono segnaposto, perché un provid
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-MISSING-ENV-INV-1` | Una chiave è "reale" solo se è stringa, non vuota dopo `trim` e non corrisponde al pattern segnaposto. | `isRealValue()` | `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:27,34,47` |
-| `SOCIALITE-MISSING-ENV-INV-2` | Lista vuota se e solo se tutte e tre le chiavi sono reali. | `execute()` | `ProviderSettingsActionsTest.php:47` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-MISSING-ENV-INV-1 | Una chiave è "reale" solo se è stringa, non vuota dopo `trim` e non corrisponde al pattern segnaposto. Prova nel codice: `isRealValue()`. Test esistente senza group: `tests/Unit/Actions/Socialite/ProviderSettingsActionsTest.php:27,34,47`. | — (non dimostrato) |
+| SOCIALITE-MISSING-ENV-INV-2 | Lista vuota se e solo se tutte e tre le chiavi sono reali. Prova nel codice: `execute()`. Test esistente senza group: `ProviderSettingsActionsTest.php:47`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

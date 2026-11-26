@@ -1,6 +1,7 @@
 ---
 title: "IsNotificationSchemaReadableAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Verifica che la tabella `notifications` esista sulla connessione del modello pri
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `NOTIF-SCHEMA-INV-1` | Se il modello non dichiara connessione si usa la connessione di default (`mysql` se la config non è una stringa). | righe 22-26 | `tests/Unit/UserExecuteCoverage50Test.php` (riferimento alla classe) |
-| `NOTIF-SCHEMA-INV-2` | Restituisce solo l'esistenza della tabella, non le colonne. | riga 28 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| NOTIF-SCHEMA-INV-1 | Se il modello non dichiara connessione si usa la connessione di default (`mysql` se la config non è una stringa). Prova nel codice: righe 22-26. Test esistente senza group: `tests/Unit/UserExecuteCoverage50Test.php` (riferimento alla classe). | — (non dimostrato) |
+| NOTIF-SCHEMA-INV-2 | Restituisce solo l'esistenza della tabella, non le colonne. Prova nel codice: riga 28. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,9 +1,11 @@
 ---
 title: "ADR — la pagina login del front office segue il tema"
 type: decision
+module: User
+decision-makers: [User module owner]
 status: accepted
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-26
 issues: []
 qmd: "frontoffice login page ownership pagina front"
 ---
@@ -22,23 +24,31 @@ Sixteen/Design Comuni. La domanda è quale sia il proprietario della resa e qual
 - Il tema attivo deve poter possedere markup, accessibilità e stile senza dipendere da Sixteen.
 - Un fallback deve restare disponibile senza riattivare pagine Folio concorrenti.
 
-## Decisione
-
-La logica di autenticazione resta nel `Modules\\User\\Filament\\Widgets\\Auth\\LoginWidget`.
-La pagina front office usa `pub_theme::components.pages.auth-login` quando il tema la espone; il fallback del modulo monta lo stesso
-widget senza ricreare una form o un metodo `authenticate` Volt.
-
 ## Alternative scartate
 
 - Mantenere una seconda form Volt nel modulo: duplicava autenticazione, stile e link OAuth.
 - Forzare sempre il markup Sixteen nel modulo: impediva ai temi alternativi di possedere il proprio design.
 - Rimuovere il fallback: i progetti senza una pagina login del tema avrebbero perso una pagina funzionante.
 
+## Decisione
+
+La logica di autenticazione resta nel `Modules\\User\\Filament\\Widgets\\Auth\\LoginWidget`.
+La pagina front office usa `pub_theme::components.pages.auth-login` quando il tema la espone; il fallback del modulo monta lo stesso
+widget senza ricreare una form o un metodo `authenticate` Volt.
+
 ## Conseguenze
 
 - La grafica Design Comuni e il pulsante Google seguono il componente del tema.
 - Il widget User resta la singola fonte per schema, throttling, sessione e redirect.
 - Il fallback generico resta volutamente minimale; i temi possono sostituirlo senza modificare il modulo.
+
+## Conferma
+
+- `Modules/User/tests/Feature/Socialite/OauthLocalizedLoginFlowTest.php` verifica il link Google localizzato nella pagina di login (file esistente).
+- `Modules/User/app/Filament/Widgets/Auth/LoginWidget.php`: unico proprietario di schema, throttling, sessione e redirect (conferma per revisione).
+- Controllo ripetibile: `rg 'wire:submit="authenticate"' laravel/Modules/User/resources` non deve trovare nulla. Oggi trova `pages/auth/login.blade.php:50`:
+  la conferma fallisce (vedi Stato attuale).
+- Nessuna conferma automatica oggi della proprietà della pagina; proposta: un test che fallisca se un file sotto `Modules/User/resources/views/pages` contiene `wire:submit="authenticate"`.
 
 ## Stato delle viste Folio del modulo
 
@@ -50,17 +60,13 @@ vergini; non sono sorgenti runtime e non devono essere usati come prova che una 
 Quando uno stub diventerà una pagina reale, la sua proprietà runtime dovrà essere decisa esplicitamente (tema o modulo),
 documentata in un ADR/storia del proprietario e verificata con il mount Folio effettivo.
 
-## Conferma
+## Stato attuale
 
-- `Modules/User/tests/Feature/Socialite/OauthLocalizedLoginFlowTest.php` verifica il link Google localizzato.
-- La pagina non deve contenere una form Volt con `wire:submit="authenticate"`; il metodo pubblico appartiene al widget.
+Verificato il 2026-11-26. Il codice contraddice la sezione «Stato delle viste Folio del modulo»:
 
-## Verifica
+- `Modules/User/resources/views/pages/` esiste ed è popolata (`auth/`, `profile/`, `dashboard/`, `index.blade.php`, …).
+- `pages/auth/login.blade.php:50` contiene una form Volt `wire:submit="authenticate"`, cioè la seconda form che la Decisione vieta.
+- `tests/Unit/NoCmsPhantomFolioImportsTest.php:13` descrive `resources/views/pages` come «tracciata e popolata»: il test non protegge più l'assenza della cartella.
 
-- `Modules/User/tests/Feature/Socialite/OauthLocalizedLoginFlowTest.php`: link Google localizzato nella pagina di login.
-- `Modules/User/app/Filament/Widgets/Auth/LoginWidget.php`: unico proprietario di schema, throttling, sessione e redirect.
-- `Modules/User/tests/Unit/NoCmsPhantomFolioImportsTest.php`: pretende `resources/views/pages` assente e `pages_old`
-  presente. Al 2026-11-24 la cartella `resources/views/pages` esiste nel modulo (con `auth/login.blade.php`, che contiene
-  `wire:submit="authenticate"`): lo stato del codice contraddice la sezione «Stato delle viste Folio del modulo» e la
-  seconda voce di Conferma. Decisione aperta, da riallineare nel codice o con un nuovo ADR.
-- Controllo manuale: `rg 'wire:submit="authenticate"' laravel/Modules/User/resources` non deve trovare nulla.
+Nessun ADR successivo sostituisce questa decisione: lo stato `accepted` resta per la parte di proprietà del widget; la parte «cartella assente» è superata dal codice.
+Decisione aperta, da prendere con un umano: riallineare il codice (togliere la form Volt) oppure scrivere un nuovo ADR che dichiari il fallback del modulo.

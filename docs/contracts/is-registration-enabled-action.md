@@ -1,6 +1,7 @@
 ---
 title: "IsRegistrationEnabledAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Dice se la registrazione di nuovi utenti via SSO è abilitata. Codice: `app/Acti
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-REG-ENABLED-INV-1` | Config assente o null: registrazione attiva. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:55,63` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-REG-ENABLED-INV-1 | Config assente o null: registrazione attiva. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:55,63`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

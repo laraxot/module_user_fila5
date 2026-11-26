@@ -1,6 +1,7 @@
 ---
 title: "ResendEmailVerificationAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Reinvia la mail di verifica dell'indirizzo, senza verificare nulla (DCP-285, D-0
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `RESEND-VERIFY-INV-1` | Un indirizzo già verificato non riceve alcuna notifica. | righe 25-27 | Test: nessuno. |
-| `RESEND-VERIFY-INV-2` | L'Action non emette l'evento `Verified`: lo emettono solo i controller che hanno validato id e hash. | docblock righe 13-14, nessun dispatch nel corpo | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| RESEND-VERIFY-INV-1 | Un indirizzo già verificato non riceve alcuna notifica. Prova nel codice: righe 25-27. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| RESEND-VERIFY-INV-2 | L'Action non emette l'evento `Verified`: lo emettono solo i controller che hanno validato id e hash. Prova nel codice: docblock righe 13-14, nessun dispatch nel corpo. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

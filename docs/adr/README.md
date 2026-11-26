@@ -1,103 +1,71 @@
 ---
 title: "ADR — modulo User"
 type: index
+module: User
 tags: [adr, decisioni, user, autenticazione]
 created: 2026-11-18
-updated: 2026-11-24
+updated: 2026-11-26
 owner: User
-qmd: "User ADR architecture decision record MADR formato decisioni identità ruoli"
+qmd: "User ADR architecture decision record MADR formato decisioni identità ruoli conferma copertura"
 ---
 
 # ADR del modulo User
 
 Il **perché** delle scelte di autenticazione e identità: come si riconosce un utente che entra con SPID/CIE, dove si blocca un account cancellato, come si frenano i moduli aperti agli anonimi, perché l'audit degli accessi non può rompere il login, chi possiede la pagina di login del front office e chi possiede identità, ruoli e team.
 
-Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o il provider utenti, e prima di "semplificare" un controllo che sembra ridondante.
+Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o il provider utenti, e prima di «semplificare» un controllo che sembra ridondante. Cosa promettono le singole Action: [contratti](../contracts/README.md).
 
-## Metodo Harness
+## Metodo
 
-Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Un ADR deve rendere leggibili contesto, driver, alternative, decisione, conseguenze e una conferma ripetibile; non e' un diario ne' una spiegazione retroattiva inventata.
-
-Le decisioni vanno verificate contro codice e test correnti. Una modifica sostanziale crea un nuovo ADR e collega il precedente come `superseded` o `deprecated`.
-
-Il nome del file e' l'argomento in kebab-case, senza date ne' numeri (la data sta nella frontmatter). Questo README e' l'indice della cartella: ogni ADR compare qui come `[titolo](file.md)`; la tabella con lo stato di ciascuno e' in [index.md](index.md).
-
-Regola canonica del formato: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md).
+Un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Non è un diario né una spiegazione retroattiva. Una modifica sostanziale crea un nuovo ADR e segna il vecchio `superseded` (con `superseded_by`).
+Il nome del file è `NNNN-argomento-in-kebab-case.md`, senza date (la data sta nella frontmatter): lo impone `Modules/Xot/tests/Unit/Docs/AdrFilenamesAreNumberedTest.php`. Intestazioni in italiano, imposte da `PackagesHaveContractsAndAdrTest.php`.
+Regola canonica: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md); template: [0000-template](0000-template.md).
 
 ## Formato
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: proposed | accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
+Frontmatter: `title`, `type: decision`, `status` (`proposed`, `accepted`, `superseded`, `deprecated`), `superseded_by` se superato, `created`, `updated`, `module`, `decision-makers`. Sezioni `##` in quest'ordine:
 
-# ADR: <decisione>
+1. `Contesto`: fatti, vincoli e la domanda.
+2. `Driver della decisione`.
+3. `Alternative scartate`: ogni alternativa seria con il motivo.
+4. `Decisione`: cosa si fa e dove sta nel codice.
+5. `Conseguenze`: buone e cattive.
+6. `Conferma`: come si controlla che il codice rispetti la decisione (test con percorso che esiste, comando eseguibile da `laravel/`, o regola di review). Se non c'è un controllo automatico lo dice: «Nessuna conferma automatica oggi; proposta: …».
 
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Driver
-Facoltativa: vincoli, rischi e obiettivi che pesano sulla scelta.
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-
-## Conferma
-Facoltativa: controllo ripetibile (test, guard source-level, review). La presenza dell'ADR non prova l'implementazione.
-
-## Verifica
-Comandi e test che esistono davvero; i path `Modules/...php` citati devono esistere.
-```
-
-Almeno un ADR per pacchetto e' "sostanziale": ha anche `## Driver` e `## Conferma`.
+Se il codice di oggi contraddice l'ADR si aggiunge `## Stato attuale` con ciò che il codice fa davvero (file e riga); la storia non si riscrive.
 
 ## Decisioni
 
-- [L'utente SPID/CIE si riconosce dal codice fiscale](0005-digital-identity-upsert-by-fiscal-code.md) — CF prima, email solo se verificata, segnaposto `@noemail.local`.
-- [L'account cancellato si blocca nel provider utenti](0003-deleted-account-blocked-in-user-provider.md) — filtro `deleted_at` nel provider, niente `SoftDeletes`, token revocati.
-- [Freno per IP ed email prima di validare](0001-auth-submission-throttle-before-validation.md) — registrazione e recupero password contano ogni invio, chiavi hashate.
-- [Il registro degli accessi non rompe mai il login](0002-authentication-log-never-breaks-login.md) — connessione `user`, tabella assente = warning.
-- [La pagina login del front office segue il tema](0006-frontoffice-login-page-ownership.md) — logica nel `LoginWidget`, resa del tema attivo, fallback del modulo che monta lo stesso widget.
-- [User possiede identità, ruoli e team](0007-user-owns-identity-and-roles.md) — gli altri moduli usano policy e contratti User.
-- [Gli account cancellati si escludono nel provider di autenticazione](0004-deleted-accounts-are-filtered-by-auth-provider.md) — ADR in formato MADR sullo stesso tema dell'account cancellato (`deleted_at`, provider utenti).
+| ADR | Stato | Decisione in una riga | Conferma |
+|---|---|---|---|
+| [0001](0001-auth-submission-throttle-before-validation.md) | accepted | Registrazione e recupero password contano ogni invio per IP ed email, prima di validare; chiavi hashate. | test con group `USER-AUTH-THROTTLE-INV-1..4`; l'ordine nei widget è solo revisione |
+| [0002](0002-authentication-log-never-breaks-login.md) | accepted | Il registro degli accessi sta sulla connessione `user`; tabella o connessione assenti sono un warning, mai un 500. | test source-level, group `USER-AUTHLOG-INV-1`, `-3`; il runtime non è provato |
+| [0003](0003-deleted-account-blocked-in-user-provider.md) | superseded da 0004 | L'account cancellato si blocca nel provider utenti, non con `SoftDeletes` (duplicato di 0004). | rinvio a 0004 |
+| [0004](0004-deleted-accounts-are-filtered-by-auth-provider.md) | accepted | Filtro `deleted_at IS NULL` in un `EloquentUserProvider` dedicato; revoca di token e remember token alla cancellazione. | test con group `USER-PROVIDER-INV-1..4`, `USER-REVOKE-INV-1..3` (database di test) |
+| [0005](0005-digital-identity-upsert-by-fiscal-code.md) | accepted | L'utente SPID/CIE si riconosce dal codice fiscale; l'email solo se verificata; segnaposto `@noemail.local`. | test con group `USER-SPID-UPSERT-INV-1..5` |
+| [0006](0006-frontoffice-login-page-ownership.md) | accepted (contraddetto dal codice) | La logica di login resta nel `LoginWidget`; la resa della pagina segue il tema; il fallback del modulo monta lo stesso widget. | `rg 'wire:submit="authenticate"'` oggi trova 1 occorrenza: fallisce |
+| [0007](0007-user-owns-identity-and-roles.md) | accepted | User possiede identità, autenticazione, ruoli, permessi e team; gli altri moduli usano policy e contratti User. | revisione; nessun controllo automatico |
 
-## Decisioni precedenti (formato libero, non ancora ADR)
+## Stato di copertura (misurato il 2026-11-26)
 
-- [contracts-and-lang-backup-archival](../wiki/decisions/contracts-and-lang-backup-archival.md)
-- [contracts-and-lang-backup-archival.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
-- [contracts-and-lang-backup-archival-](../wiki/decisions/contracts-and-lang-backup-archival.md)
-- [contracts-and-lang-backup-archival-.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
-- [contracts-and-lang-backup-archival-30](../wiki/decisions/contracts-and-lang-backup-archival-30.md)
-- [contracts-and-lang-backup-archival-30.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
-- [archiviazione orfani (ponytail audit)](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)
-title: "ADR — User"
-type: index
-owner: User
-updated: 2026-11-24
-qmd: "User ADR architecture decision record MADR formato decisioni identità ruoli"
----
+- 7 ADR: 6 `accepted`, 1 `superseded` (0003). Tutti hanno le sei sezioni nell'ordine e `created`/`updated`; l'audit dei documenti non riporta gap su `docs/adr`.
+- Conferma con un test Pest esistente: 0001, 0002 (source-level), 0004, 0005. Nessuna conferma automatica: 0007; 0006 ha una conferma che oggi **fallisce**.
+- ADR con `## Stato attuale` (il codice dice altro o la decisione è duplicata): 0003, 0004, 0005, 0006.
 
-# ADR — User
+## Decisioni aperte (servono un umano)
 
-Un ADR del modulo User registra una scelta difficile da invertire, sorprendente o frutto di un trade-off reale su identità, autenticazione, ruoli, permessi e team. Non è un diario né una spiegazione retroattiva: ogni affermazione ha un file di prova. Template condiviso: [0000-template](../../../Xot/docs/adr/0000-template.md); standard: [Xot ADR](../../../Xot/docs/adr/README.md).
+- **0003 e 0004** sono la stessa decisione: scelto 0004 come canonico il 2026-11-26 (reversibile); 0003 è `superseded`.
+- **0004**: due percorsi di cancellazione dell'account (`Modules/Gdpr` con `deleted_at` e revoca dei token; `DeleteUserAction` con cancellazione fisica, senza revoca): unificare.
+- **0005**: l'account trovato per email verificata con un `fiscal_code` diverso viene sovrascritto (`UpsertUserFromDigitalIdentityAction.php:77`): rifiutare il collegamento?
+- **0006**: `Modules/User/resources/views/pages/auth/login.blade.php:50` contiene la form Volt che la decisione vieta: togliere la form o scrivere un nuovo ADR sul fallback.
+- Senza ADR e da decidere: login OAuth aperto a ogni account del provider di serie (`config/socialite.php:11,14`, allowlist vuota, registrazione abilitata) e aggancio per sola uguaglianza di email in `ProcessCallbackAction.php:54-57`. Entrambe sono scelte sorprendenti con un trade-off reale.
 
-## Formato MADR
+## Decisioni precedenti (formato libero, archiviate)
 
-Frontmatter (`title`, `type: decision`, `status`, `created`, `updated`, `decision-makers`, `module`, `qmd`) e sezioni nell'ordine: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Nome file in kebab-case senza data né numero. Una decisione nuova supersede la vecchia e la marca `superseded`.
+- [contracts-and-lang-backup-archival (deprecated)](../wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.deprecated.md.old)
 
-## ADR presenti
+## Riferimenti
 
-Elenco con stato: [INDEX.md](index.md). Presenti: [user-owns-identity-and-roles](0007-user-owns-identity-and-roles.md), [frontoffice-login-page-ownership](0006-frontoffice-login-page-ownership.md), [deleted-accounts-are-filtered-by-auth-provider](0004-deleted-accounts-are-filtered-by-auth-provider.md).
-
-Policy trasversale su dati sacri e test isolati: [0013-dati-sacri-migrazioni-e-test](../../../Xot/docs/adr/0013-dati-sacri-migrazioni-e-test.md).
+- Standard ADR condiviso: [Xot ADR](../../../Xot/docs/adr/README.md).
+- Policy trasversale su dati sacri e test isolati: [0013-dati-sacri-migrazioni-e-test](../../../Xot/docs/adr/0013-dati-sacri-migrazioni-e-test.md).
+- Stato di ciascun ADR: [index.md](index.md).

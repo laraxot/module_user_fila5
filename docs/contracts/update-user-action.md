@@ -1,6 +1,7 @@
 ---
 title: "UpdateUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,12 +24,12 @@ Aggiorna un utente dentro una transazione: esclude i campi di sistema, gestisce 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `UPDATE-USER-INV-1` | Non si aggiornano `id`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`. | righe 87-95 | `tests/Unit/Actions/User/UpdateUserActionTest.php`, `tests/Unit/Actions/AdditionalActionsTest.php` (riferimenti alla classe) |
-| `UPDATE-USER-INV-2` | Una password vuota non cambia la password; una non vuota è salvata come hash. | righe 98-107 | come sopra |
-| `UPDATE-USER-INV-3` | L'email è salvata in minuscolo e non può coincidere con quella di un altro utente; altrimenti `ValidationException` sulla chiave `email`. | righe 110-113, 127-138 | come sopra |
-| `UPDATE-USER-INV-4` | Un'eccezione dopo l'avvio della transazione fa rollback e viene rilanciata. | righe 36-75 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| UPDATE-USER-INV-1 | Non si aggiornano `id`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`. Prova nel codice: righe 87-95. Test esistente senza group: `tests/Unit/Actions/User/UpdateUserActionTest.php`, `tests/Unit/Actions/AdditionalActionsTest.php` (riferimenti alla classe). | — (non dimostrato) |
+| UPDATE-USER-INV-2 | Una password vuota non cambia la password; una non vuota è salvata come hash. Prova nel codice: righe 98-107. Test esistente senza group: come sopra. | — (non dimostrato) |
+| UPDATE-USER-INV-3 | L'email è salvata in minuscolo e non può coincidere con quella di un altro utente; altrimenti `ValidationException` sulla chiave `email`. Prova nel codice: righe 110-113, 127-138. Test esistente senza group: come sopra. | — (non dimostrato) |
+| UPDATE-USER-INV-4 | Un'eccezione dopo l'avvio della transazione fa rollback e viene rilanciata. Prova nel codice: righe 36-75. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

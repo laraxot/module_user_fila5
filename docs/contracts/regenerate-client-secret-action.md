@@ -1,6 +1,7 @@
 ---
 title: "RegenerateClientSecretAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Sostituisce il `secret` di un client OAuth2 con uno nuovo casuale e lo restituis
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-REGEN-SECRET-INV-1` | Il secret precedente è sovrascritto: dopo il `save()` non è più valido. | `execute()`, assegnazione e `save()` | riferimento in `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:107` (verifica asserzioni non eseguita) |
-| `PASSPORT-REGEN-SECRET-INV-2` | Un id inesistente produce `ModelNotFoundException`. | `findOrFail` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-REGEN-SECRET-INV-1 | Il secret precedente è sovrascritto: dopo il `save()` non è più valido. Prova nel codice: `execute()`, assegnazione e `save()`. Test esistente senza group: riferimento in `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:107` (verifica asserzioni non eseguita). | — (non dimostrato) |
+| PASSPORT-REGEN-SECRET-INV-2 | Un id inesistente produce `ModelNotFoundException`. Prova nel codice: `findOrFail`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

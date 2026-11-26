@@ -1,6 +1,7 @@
 ---
 title: "GetProviderScopesAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce gli scope OAuth configurati per un provider in `config('services.<pr
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-SCOPES-INV-1` | Scalari e `Stringable` sono convertiti in stringa; `null` e altri tipi sono scartati. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:71,79` |
-| `SOCIALITE-SCOPES-INV-2` | Scope mancanti: `[]`. | `execute()` | stesso file |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-SCOPES-INV-1 | Scalari e `Stringable` sono convertiti in stringa; `null` e altri tipi sono scartati. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:71,79`. | — (non dimostrato) |
+| SOCIALITE-SCOPES-INV-2 | Scope mancanti: `[]`. Prova nel codice: `execute()`. Test esistente senza group: stesso file. | — (non dimostrato) |
 
 ## Effetti collaterali
 

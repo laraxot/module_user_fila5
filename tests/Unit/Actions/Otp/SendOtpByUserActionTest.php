@@ -64,5 +64,5 @@ describe('SendOtpByUserAction', function () {
         );
 
         Carbon::setTestNow();
-    });
+    })->group('USER-OTP-SEND-INV-1', 'USER-OTP-SEND-INV-2');
 });

@@ -1,6 +1,7 @@
 ---
 title: "IsUserDatabaseConfiguredAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Dice se la connessione `user` ha un database configurato, senza aprirla. Codice:
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `USER-DB-CONFIGURED-INV-1` | Non apre la connessione né interroga lo schema. | righe 27-32 | `tests/Unit/Actions/Database/IsUserDatabaseConfiguredActionTest.php` (riferimento alla classe) |
-| `USER-DB-CONFIGURED-INV-2` | Un valore non stringa o vuoto dà `false`. | riga 31 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| USER-DB-CONFIGURED-INV-1 | Non apre la connessione né interroga lo schema. Prova nel codice: righe 27-32. Test esistente senza group: `tests/Unit/Actions/Database/IsUserDatabaseConfiguredActionTest.php` (riferimento alla classe). | — (non dimostrato) |
+| USER-DB-CONFIGURED-INV-2 | Un valore non stringa o vuoto dà `false`. Prova nel codice: riga 31. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

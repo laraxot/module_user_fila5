@@ -1,6 +1,7 @@
 ---
 title: "OtpHashNeedsRehashAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Dice se un hash OTP va ricalcolato con l'algoritmo corrente. Codice: `app/Action
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `OTP-REHASH-INV-1` | Il risultato è esattamente `needsRehash()` dell'hasher Illuminate. | riga 20 | `tests/Unit/Actions/Otp/OtpHashActionsTest.php` (riferimento alla classe) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| OTP-REHASH-INV-1 | Il risultato è esattamente `needsRehash()` dell'hasher Illuminate. Prova nel codice: riga 20. Test esistente senza group: `tests/Unit/Actions/Otp/OtpHashActionsTest.php` (riferimento alla classe). | — (non dimostrato) |
 
 ## Effetti collaterali
 

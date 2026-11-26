@@ -1,6 +1,7 @@
 ---
 title: "RevokeTokenAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Revoca un access token Passport e, se presente, il suo refresh token. Codice: `a
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-REVOKE-TOKEN-INV-1` | L'access token è revocato tramite `OauthToken::revoke()`. | `execute()` | riferimento in `tests/Unit/Actions/AdditionalActionsTest.php:76-79` (solo istanziazione) |
-| `PASSPORT-REVOKE-TOKEN-INV-2` | Se la relazione `refreshToken` esiste, anche il refresh token è revocato tramite `revoke()`. | `execute()`, ramo `if ($token->refreshToken)` | nessuno |
-| `PASSPORT-REVOKE-TOKEN-INV-3` | Id inesistente: `false`, nessuna scrittura. | `execute()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-REVOKE-TOKEN-INV-1 | L'access token è revocato tramite `OauthToken::revoke()`. Prova nel codice: `execute()`. Test esistente senza group: riferimento in `tests/Unit/Actions/AdditionalActionsTest.php:76-79` (solo istanziazione). | — (non dimostrato) |
+| PASSPORT-REVOKE-TOKEN-INV-2 | Se la relazione `refreshToken` esiste, anche il refresh token è revocato tramite `revoke()`. Prova nel codice: `execute()`, ramo `if ($token->refreshToken)`. | — (non dimostrato) |
+| PASSPORT-REVOKE-TOKEN-INV-3 | Id inesistente: `false`, nessuna scrittura. Prova nel codice: `execute()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,6 +1,7 @@
 ---
 title: "CreateUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Crea un nuovo utente con nome, email e password hashata; include due passi che o
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `CREATE-USER-INV-1` | Nome e email non vuoti ed email valida, altrimenti `InvalidArgumentException` alla costruzione. | righe 36-42 | Test: riferimenti per nome in `tests/Unit/Actions/AdditionalActionsTest.php`, `tests/Unit/Actions/User/CreateUserActionTest.php`, `tests/Unit/QuickWins/UserQuickWinsCoverageTest.php`; non attribuiti con certezza a questa classe (esiste anche `User/CreateUserAction`). |
-| `CREATE-USER-INV-2` | La password è salvata solo come hash `Hash::make`, salvo che `$data` contenga una chiave `password` che la sovrascrive (spread dopo). | righe 48-53 | come sopra |
-| `CREATE-USER-INV-3` | `$data` può sovrascrivere anche `name` ed `email` già impostati. | riga 52 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| CREATE-USER-INV-1 | Nome e email non vuoti ed email valida, altrimenti `InvalidArgumentException` alla costruzione. Prova nel codice: righe 36-42. Test esistente senza group: Test: riferimenti per nome in `tests/Unit/Actions/AdditionalActionsTest.php`, `tests/Unit/Actions/User/CreateUserActionTest.php`, `tests/Unit/QuickWins/UserQuickWinsCoverageTest.php`; non attribuiti con certezza a questa classe (esiste anche `User/CreateUserAction`). | — (non dimostrato) |
+| CREATE-USER-INV-2 | La password è salvata solo come hash `Hash::make`, salvo che `$data` contenga una chiave `password` che la sovrascrive (spread dopo). Prova nel codice: righe 48-53. Test esistente senza group: come sopra. | — (non dimostrato) |
+| CREATE-USER-INV-3 | `$data` può sovrascrivere anche `name` ed `email` già impostati. Prova nel codice: riga 52. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

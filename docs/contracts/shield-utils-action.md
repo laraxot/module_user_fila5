@@ -1,6 +1,7 @@
 ---
 title: "ShieldUtilsAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Contenitore legacy di una cinquantina di metodi statici che leggono la configura
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SHIELD-UTILS-INV-1` | Gli accessi a configurazione usano `Assert::*`: un tipo errato solleva eccezione. | metodi `get*`/`is*` con `Assert` | `tests/Unit/UserExecuteCoverage50Test.php:404-406` (solo alcuni metodi) |
-| `SHIELD-UTILS-INV-2` | `showModelPath()` ritorna `''` se `show_model_path` è disattivo, altrimenti il modello verificato con `classExists`. | `showModelPath()` | nessuno |
-| `SHIELD-UTILS-INV-3` | `getResourcePermissionPrefixes()` usa i prefissi della risorsa se implementa `HasShieldPermissions`. | `getResourcePermissionPrefixes()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SHIELD-UTILS-INV-1 | Gli accessi a configurazione usano `Assert::*`: un tipo errato solleva eccezione. Prova nel codice: metodi `get*`/`is*` con `Assert`. Test esistente senza group: `tests/Unit/UserExecuteCoverage50Test.php:404-406` (solo alcuni metodi). | — (non dimostrato) |
+| SHIELD-UTILS-INV-2 | `showModelPath()` ritorna `''` se `show_model_path` è disattivo, altrimenti il modello verificato con `classExists`. Prova nel codice: `showModelPath()`. | — (non dimostrato) |
+| SHIELD-UTILS-INV-3 | `getResourcePermissionPrefixes()` usa i prefissi della risorsa se implementa `HasShieldPermissions`. Prova nel codice: `getResourcePermissionPrefixes()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,6 +1,7 @@
 ---
 title: "BuildPasswordResetUrlAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,12 +24,12 @@ Costruisce l'URL assoluto del link di reset password inserito nell'email (SEC-00
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PWD-URL-INV-1` | La radice dell'URL viene da `config('app.url')`, mai dall'header `Host` della richiesta. | righe 23, 40 | Test: nessuno. |
-| `PWD-URL-INV-2` | Se la lingua della richiesta è tra quelle supportate, il prefisso `/xx` del percorso è sostituito con quella lingua. | righe 25-34 | Test: nessuno. |
-| `PWD-URL-INV-3` | `email` viene aggiunta solo se non vuota, con `&` se il percorso ha già una query. | righe 36-38 | Test: nessuno. |
-| `PWD-URL-INV-4` | Il locale dell'applicazione è ripristinato dopo la generazione del percorso. | righe 25-27 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PWD-URL-INV-1 | La radice dell'URL viene da `config('app.url')`, mai dall'header `Host` della richiesta. Prova nel codice: righe 23, 40. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| PWD-URL-INV-2 | Se la lingua della richiesta è tra quelle supportate, il prefisso `/xx` del percorso è sostituito con quella lingua. Prova nel codice: righe 25-34. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| PWD-URL-INV-3 | `email` viene aggiunta solo se non vuota, con `&` se il percorso ha già una query. Prova nel codice: righe 36-38. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| PWD-URL-INV-4 | Il locale dell'applicazione è ripristinato dopo la generazione del percorso. Prova nel codice: righe 25-27. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

@@ -1,16 +1,19 @@
 ---
-title: "ResolveFilamentUserConfigurationAction — contratto"
+title: "GetFilamentUserConfigurationAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveFilamentUserConfigurationAction"
-qmd: "ResolveFilamentUserConfigurationAction filament_user ruolo utente Filament Shield FilamentShieldData"
+action: "Modules\\User\\Actions\\Shield\\GetFilamentUserConfigurationAction"
+qmd: "GetFilamentUserConfigurationAction filament_user ruolo utente Filament Shield FilamentShieldData"
 ---
 
-# ResolveFilamentUserConfigurationAction
+# GetFilamentUserConfigurationAction
 
-Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `FilamentShieldData`. Codice: `app/Actions/Shield/ResolveFilamentUserConfigurationAction.php`.
+Nome file storico: la classe si chiamava `ResolveFilamentUserConfigurationAction` e il docblock di `GetFilamentUserConfigurationAction` cita ancora `docs/contracts/resolve-filament-user-configuration-action.md`.
+
+Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `FilamentShieldData`. Codice: `app/Actions/Shield/GetFilamentUserConfigurationAction.php`.
 
 ## Input
 
@@ -22,10 +25,10 @@ Riassume la configurazione del ruolo "filament user" di Shield, leggendola da `F
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SHIELD-FILAMENT-USER-INV-1` | `enabled` è `false` se la proprietà manca o è null. | `execute()`, `?? false` | nessuno |
-| `SHIELD-FILAMENT-USER-INV-2` | `name` vale `'Filament User'` se la proprietà manca. | `execute()`, `?? 'Filament User'` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SHIELD-FILAMENT-USER-INV-1 | `enabled` è `false` se la proprietà manca o è null. Prova nel codice: `execute()`, `?? false`. | — (non dimostrato) |
+| SHIELD-FILAMENT-USER-INV-2 | `name` vale `'Filament User'` se la proprietà manca. Prova nel codice: `execute()`, `?? 'Filament User'`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

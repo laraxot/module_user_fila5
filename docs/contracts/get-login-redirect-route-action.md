@@ -1,6 +1,7 @@
 ---
 title: "GetLoginRedirectRouteAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Restituisce il nome di rotta verso cui reindirizzare dopo il login SSO. Codice: 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-LOGIN-ROUTE-INV-1` | Il valore è costante. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:108` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-LOGIN-ROUTE-INV-1 | Il valore è costante. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:108`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

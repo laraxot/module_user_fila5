@@ -1,6 +1,7 @@
 ---
 title: "GetProviderSetupGuideAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Prepara i segnaposto del testo di guida `user::auth.provider-setup-guide`: nome 
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-SETUP-GUIDE-INV-1` | Per Google un redirect con IP, senza dominio o non https è sostituito con `http://localhost[:porta]` e `hint` contiene il testo LAN. | `execute()`, `isAcceptedByGoogle()` | nessuno |
-| `SOCIALITE-SETUP-GUIDE-INV-2` | `provider` è l'etichetta nota o `ucfirst`; `console` è vuota per i provider sconosciuti. | `execute()` | nessuno |
-| `SOCIALITE-SETUP-GUIDE-INV-3` | `admin` è vuoto se la rotta del back office non esiste (`Route::has`). | `execute()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-SETUP-GUIDE-INV-1 | Per Google un redirect con IP, senza dominio o non https è sostituito con `http://localhost[:porta]` e `hint` contiene il testo LAN. Prova nel codice: `execute()`, `isAcceptedByGoogle()`. | — (non dimostrato) |
+| SOCIALITE-SETUP-GUIDE-INV-2 | `provider` è l'etichetta nota o `ucfirst`; `console` è vuota per i provider sconosciuti. Prova nel codice: `execute()`. | — (non dimostrato) |
+| SOCIALITE-SETUP-GUIDE-INV-3 | `admin` è vuoto se la rotta del back office non esiste (`Route::has`). Prova nel codice: `execute()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

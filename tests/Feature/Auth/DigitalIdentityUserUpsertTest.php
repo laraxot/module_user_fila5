@@ -62,7 +62,7 @@ it('uses a placeholder email for CIE without a verified email but still trusts t
     Assert::assertNull($raw['email_verified_at']);
     Assert::assertSame('cie', $raw['identity_provider']);
     Assert::assertTrue(app(HasVerifiedIdentityAction::class)->execute(User::query()->whereKey($user->getKey())->firstOrFail()));
-});
+})->group('USER-SPID-UPSERT-INV-5');
 
 it('finds the same user again by fiscal code instead of creating a duplicate', function (): void {
     $first = app(UpsertUserFromDigitalIdentityAction::class)->execute('spid', digitalIdentityAttributes(), emailVerified: true);
@@ -71,7 +71,7 @@ it('finds the same user again by fiscal code instead of creating a duplicate', f
     Assert::assertSame($first->getKey(), $second->getKey());
     Assert::assertSame(1, User::query()->where('fiscal_code', 'RSSMRA80A01H501U')->count());
     Assert::assertSame('cie', User::query()->whereKey($first->getKey())->firstOrFail()->getAttributes()['auth_method']);
-});
+})->group('USER-SPID-UPSERT-INV-3');
 
 it('links an existing email account when the identity provider verifies the same email', function (): void {
     $existing = User::factory()->create(['email' => 'mario.rossi.spid@example.org', 'email_verified_at' => null]);
@@ -82,7 +82,7 @@ it('links an existing email account when the identity provider verifies the same
     $raw = User::query()->whereKey($existing->getKey())->firstOrFail()->getAttributes();
     Assert::assertSame('RSSMRA80A01H501U', $raw['fiscal_code']);
     Assert::assertNotNull($raw['email_verified_at']);
-});
+})->group('USER-SPID-UPSERT-INV-4');
 
 it('rejects a missing or malformed fiscal code', function (mixed $fiscalCode): void {
     app(UpsertUserFromDigitalIdentityAction::class)->execute('spid', digitalIdentityAttributes(['fiscal_code' => $fiscalCode]), emailVerified: false);

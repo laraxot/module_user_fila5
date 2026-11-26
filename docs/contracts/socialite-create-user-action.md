@@ -1,6 +1,7 @@
 ---
 title: "CreateUserAction (Socialite) — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Crea un utente locale a partire dagli attributi dell'identità OAuth, gli assegn
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-CREATE-USER-INV-1` | `first_name` riceve il nome completo risolto, non il solo primo nome. | `execute()`, array di `create()` | nessuno sul valore |
-| `SOCIALITE-CREATE-USER-INV-2` | Il modello creato deve essere `Model` e `UserContract`, altrimenti asserzione fallita. | `Assert::isInstanceOf` | nessuno |
-| `SOCIALITE-CREATE-USER-INV-3` | Ruoli assegnati da `SetDefaultRolesBySocialiteUserAction` prima del `refresh()`. | `execute()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-CREATE-USER-INV-1 | `first_name` riceve il nome completo risolto, non il solo primo nome. Prova nel codice: `execute()`, array di `create()`. Test esistente senza group: nessuno sul valore. | — (non dimostrato) |
+| SOCIALITE-CREATE-USER-INV-2 | Il modello creato deve essere `Model` e `UserContract`, altrimenti asserzione fallita. Prova nel codice: `Assert::isInstanceOf`. | — (non dimostrato) |
+| SOCIALITE-CREATE-USER-INV-3 | Ruoli assegnati da `SetDefaultRolesBySocialiteUserAction` prima del `refresh()`. Prova nel codice: `execute()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

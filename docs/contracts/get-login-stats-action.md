@@ -1,6 +1,7 @@
 ---
 title: "GetLoginStatsAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,12 +23,12 @@ Statistiche di accesso per il widget di monitoraggio: totale, oggi, ieri, ultimi
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `LOGIN-STATS-INV-1` | Ogni conteggio è un numero di righe del modello configurato con colonna non nulla. | righe 59, 65-68, 99 | Test: nessuno. |
-| `LOGIN-STATS-INV-2` | Se entrambi i periodi valgono 0 la variazione è `0.0`; se il periodo precedente è 0 è `100.0`; altrimenti variazione arrotondata a due decimali. | righe 89-96 | Test: nessuno. |
-| `LOGIN-STATS-INV-3` | Le finestre sono calcolate sui giorni locali del fuso configurato e convertite in UTC per il confronto. | righe 38-52 | Test: nessuno. |
-| `LOGIN-STATS-INV-4` | Nessuna cache: scelta esplicita per evitare fughe fra tenant (righe 54-58). | righe 54-58 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| LOGIN-STATS-INV-1 | Ogni conteggio è un numero di righe del modello configurato con colonna non nulla. Prova nel codice: righe 59, 65-68, 99. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| LOGIN-STATS-INV-2 | Se entrambi i periodi valgono 0 la variazione è `0.0`; se il periodo precedente è 0 è `100.0`; altrimenti variazione arrotondata a due decimali. Prova nel codice: righe 89-96. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| LOGIN-STATS-INV-3 | Le finestre sono calcolate sui giorni locali del fuso configurato e convertite in UTC per il confronto. Prova nel codice: righe 38-52. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| LOGIN-STATS-INV-4 | Nessuna cache: scelta esplicita per evitare fughe fra tenant (righe 54-58). Prova nel codice: righe 54-58. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

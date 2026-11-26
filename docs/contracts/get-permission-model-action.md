@@ -1,6 +1,7 @@
 ---
 title: "GetPermissionModelAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Restituisce il nome della classe modello dei permessi, da config, con default Sp
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PERM-MODEL-INV-1` | Senza config il risultato è `Spatie\Permission\Models\Permission`. | riga 20 | Test: nessuno. |
-| `PERM-MODEL-INV-2` | Il valore deve essere una stringa e una classe esistente, altrimenti eccezione Webmozart. | righe 20-21 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PERM-MODEL-INV-1 | Senza config il risultato è `Spatie\Permission\Models\Permission`. Prova nel codice: riga 20. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| PERM-MODEL-INV-2 | Il valore deve essere una stringa e una classe esistente, altrimenti eccezione Webmozart. Prova nel codice: righe 20-21. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

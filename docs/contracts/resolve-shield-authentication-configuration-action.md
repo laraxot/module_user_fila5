@@ -1,16 +1,19 @@
 ---
-title: "ResolveShieldAuthenticationConfigurationAction — contratto"
+title: "GetShieldAuthenticationConfigurationAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
-action: "Modules\\User\\Actions\\Shield\\ResolveShieldAuthenticationConfigurationAction"
-qmd: "ResolveShieldAuthenticationConfigurationAction guard auth provider HasRoles Filament Shield class_uses"
+action: "Modules\\User\\Actions\\Shield\\GetShieldAuthenticationConfigurationAction"
+qmd: "GetShieldAuthenticationConfigurationAction guard auth provider HasRoles Filament Shield class_uses"
 ---
 
-# ResolveShieldAuthenticationConfigurationAction
+# GetShieldAuthenticationConfigurationAction
 
-Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `app/Actions/Shield/ResolveShieldAuthenticationConfigurationAction.php`.
+Nome file storico: la classe si chiamava `ResolveShieldAuthenticationConfigurationAction` e il docblock di `GetShieldAuthenticationConfigurationAction` cita ancora `docs/contracts/resolve-shield-authentication-configuration-action.md`.
+
+Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `app/Actions/Shield/GetShieldAuthenticationConfigurationAction.php`.
 
 ## Input
 
@@ -22,11 +25,11 @@ Riassume guard e modello di autenticazione usati da Filament Shield. Codice: `ap
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SHIELD-AUTH-CFG-INV-1` | `auth_guard` è sempre `'web'`. | `getFilamentAuthGuard()` | nessuno |
-| `SHIELD-AUTH-CFG-INV-2` | `auth_provider_configured` è `true` solo se la classe esiste e usa direttamente il trait `HasRoles`. | `isAuthProviderConfigured()` | nessuno |
-| `SHIELD-AUTH-CFG-INV-3` | Se `fqcn` non è stringa, vale `Illuminate\Foundation\Auth\User`. | `getAuthProviderFQCN()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SHIELD-AUTH-CFG-INV-1 | `auth_guard` è sempre `'web'`. Prova nel codice: `getFilamentAuthGuard()`. | — (non dimostrato) |
+| SHIELD-AUTH-CFG-INV-2 | `auth_provider_configured` è `true` solo se la classe esiste e usa direttamente il trait `HasRoles`. Prova nel codice: `isAuthProviderConfigured()`. | — (non dimostrato) |
+| SHIELD-AUTH-CFG-INV-3 | Se `fqcn` non è stringa, vale `Illuminate\Foundation\Auth\User`. Prova nel codice: `getAuthProviderFQCN()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

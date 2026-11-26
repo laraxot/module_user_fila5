@@ -1,6 +1,7 @@
 ---
 title: "BuildApiLoginLimitAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Costruisce il limite di frequenza del `POST /api/user/login` (D-08, DCP-282), re
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `API-LOGIN-LIMIT-INV-1` | Il limite è `MAX_ATTEMPTS = 5` richieste per `DECAY_SECONDS = 60` secondi. | righe 21-25, 32 | Test: nessuno (il docblock cita un test di coerenza con `LoginWidget` non trovato in `tests/`). |
-| `API-LOGIN-LIMIT-INV-2` | Se l'email non è una stringa la parte email della chiave è vuota: tutte le richieste senza email dallo stesso IP condividono il contatore. | riga 30 | Test: nessuno. |
-| `API-LOGIN-LIMIT-INV-3` | Alla risposta di blocco il corpo è JSON con `success` false, `data` vuoto, stato 429 e header `Retry-After` inoltrati; i secondi vengono dall'header o da `DECAY_SECONDS`. | righe 33-41 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| API-LOGIN-LIMIT-INV-1 | Il limite è `MAX_ATTEMPTS = 5` richieste per `DECAY_SECONDS = 60` secondi. Prova nel codice: righe 21-25, 32. Test esistente senza group: Test: nessuno (il docblock cita un test di coerenza con `LoginWidget` non trovato in `tests/`). | — (non dimostrato) |
+| API-LOGIN-LIMIT-INV-2 | Se l'email non è una stringa la parte email della chiave è vuota: tutte le richieste senza email dallo stesso IP condividono il contatore. Prova nel codice: riga 30. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
+| API-LOGIN-LIMIT-INV-3 | Alla risposta di blocco il corpo è JSON con `success` false, `data` vuoto, stato 429 e header `Retry-After` inoltrati; i secondi vengono dall'header o da `DECAY_SECONDS`. Prova nel codice: righe 33-41. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

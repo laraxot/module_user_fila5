@@ -12,7 +12,7 @@ tags: [contract, action, token, passport, account-cancellato, sec-05]
 # RevokeUserAccessAction
 
 Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`. Perché esiste: [ADR 0004](../adr/0004-deleted-accounts-are-filtered-by-auth-provider.md).
-Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Unico chiamante nel repo: `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php:83`, dentro la
+Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Unico chiamante nel repo: `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php:85`, dentro la
 transazione di cancellazione dell'account. Chiude gli accessi già concessi: token Passport, refresh token, cookie «ricordami».
 
 ## Input

@@ -1,6 +1,7 @@
 ---
 title: "GetUserTeamsOptionAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,11 +23,11 @@ Costruisce le opzioni di una Select con i team dell'utente corrente. Codice: `ap
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `TEAMS-OPT-INV-1` | Il placeholder è sempre la prima voce. | riga 22 | `tests/Unit/Actions/Team/GetUserTeamsOptionActionTest.php` (riferimento alla classe) |
-| `TEAMS-OPT-INV-2` | Compaiono solo i team collegati tramite `team_user` all'utente corrente. | riga 19 | come sopra |
-| `TEAMS-OPT-INV-3` | Le righe orfane (team cancellato) sono saltate. | riga 24 | come sopra; anche `tests/Unit/QuickWins/UserQuickWinsCoverageTest.php` (riferimento) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| TEAMS-OPT-INV-1 | Il placeholder è sempre la prima voce. Prova nel codice: riga 22. Test esistente senza group: `tests/Unit/Actions/Team/GetUserTeamsOptionActionTest.php` (riferimento alla classe). | — (non dimostrato) |
+| TEAMS-OPT-INV-2 | Compaiono solo i team collegati tramite `team_user` all'utente corrente. Prova nel codice: riga 19. Test esistente senza group: come sopra. | — (non dimostrato) |
+| TEAMS-OPT-INV-3 | Le righe orfane (team cancellato) sono saltate. Prova nel codice: riga 24. Test esistente senza group: come sopra; anche `tests/Unit/QuickWins/UserQuickWinsCoverageTest.php` (riferimento). | — (non dimostrato) |
 
 ## Effetti collaterali
 

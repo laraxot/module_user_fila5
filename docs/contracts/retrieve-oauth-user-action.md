@@ -1,6 +1,7 @@
 ---
 title: "RetrieveOauthUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Completa lo scambio OAuth con il provider e restituisce l'utente. Su `InvalidSta
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-RETRIEVE-OAUTH-INV-1` | `InvalidStateException` produce evento `InvalidState` e `null`. | `execute()`, `handleInvalidStateException()` | `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:86,115` |
-| `SOCIALITE-RETRIEVE-OAUTH-INV-2` | Ogni altra eccezione si propaga. | `execute()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-RETRIEVE-OAUTH-INV-1 | `InvalidStateException` produce evento `InvalidState` e `null`. Prova nel codice: `execute()`, `handleInvalidStateException()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:86,115`. | — (non dimostrato) |
+| SOCIALITE-RETRIEVE-OAUTH-INV-2 | Ogni altra eccezione si propaga. Prova nel codice: `execute()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

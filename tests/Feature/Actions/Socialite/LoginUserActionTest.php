@@ -148,7 +148,7 @@ describe('Login User Action', function (): void {
             $this->fail('Expected InvalidArgumentException was not thrown');
         } catch (\InvalidArgumentException $exception) {
         }
-    });
+    })->group('SOCIALITE-LOGIN-INV-1');
 
     test('preserves user attributes after login', function (): void {
         $user = UserFactory::new()->createOne([

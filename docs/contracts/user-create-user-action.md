@@ -1,6 +1,7 @@
 ---
 title: "User/CreateUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -24,11 +25,11 @@ Nota: esiste anche una `CreateUserAction` nella radice di `Actions/` con altro c
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `USER-CREATE-INV-1` | Se `name` manca o è vuoto: nome = `first_name last_name` (trim); se vuoto, la parte prima di `@` dell'email; se anche quella manca, l'email intera. | righe 23-30 | `tests/Unit/Actions/User/CreateUserActionTest.php` (riferimento per nome, non verificato per singolo caso) |
-| `USER-CREATE-INV-2` | Un `name` non vuoto fornito è mantenuto invariato. | riga 23 | come sopra |
-| `USER-CREATE-INV-3` | L'Action non cifra la password né valida l'email: sono responsabilità del chiamante. | righe 33-35 | Test: nessuno. |
+| ID | Regola | Group Pest |
+|---|---|---|
+| USER-CREATE-INV-1 | Se `name` manca o è vuoto: nome = `first_name last_name` (trim); se vuoto, la parte prima di `@` dell'email; se anche quella manca, l'email intera. Prova nel codice: righe 23-30. Test esistente senza group: `tests/Unit/Actions/User/CreateUserActionTest.php` (riferimento per nome, non verificato per singolo caso). | — (non dimostrato) |
+| USER-CREATE-INV-2 | Un `name` non vuoto fornito è mantenuto invariato. Prova nel codice: riga 23. Test esistente senza group: come sopra. | — (non dimostrato) |
+| USER-CREATE-INV-3 | L'Action non cifra la password né valida l'email: sono responsabilità del chiamante. Prova nel codice: righe 33-35. Test esistente senza group: Test: nessuno. | — (non dimostrato) |
 
 ## Effetti collaterali
 

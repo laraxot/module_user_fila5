@@ -1,6 +1,7 @@
 ---
 title: "ValidateProviderAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Si assicura che il provider OAuth sia configurato, altrimenti lancia `ProviderNo
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-VALIDATE-PROVIDER-INV-1` | Con variabili mancanti o segnaposto: `ProviderNotConfigured` con provider e elenco. | `execute()` | `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:93` |
-| `SOCIALITE-VALIDATE-PROVIDER-INV-2` | Provider configurato: nessuna eccezione. | `execute()` | `SocialiteUtilityActionsTest.php:88` |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-VALIDATE-PROVIDER-INV-1 | Con variabili mancanti o segnaposto: `ProviderNotConfigured` con provider e elenco. Prova nel codice: `execute()`. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteUtilityActionsTest.php:93`. | — (non dimostrato) |
+| SOCIALITE-VALIDATE-PROVIDER-INV-2 | Provider configurato: nessuna eccezione. Prova nel codice: `execute()`. Test esistente senza group: `SocialiteUtilityActionsTest.php:88`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

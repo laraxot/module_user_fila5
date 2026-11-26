@@ -1,6 +1,7 @@
 ---
 title: "RevokeClientAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,11 +24,11 @@ Marca un client OAuth2 come revocato e, se richiesto, revoca in blocco i suoi ac
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PASSPORT-REVOKE-CLIENT-INV-1` | Con id inesistente ritorna `false` senza scritture. | `execute()`, controllo `instanceof` | `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:282` |
-| `PASSPORT-REVOKE-CLIENT-INV-2` | Con `$revokeTokens = true` i token non revocati del client sono revocati prima del client. | `execute()`, primo blocco | nessuno sull'ordine |
-| `PASSPORT-REVOKE-CLIENT-INV-3` | Il client finisce con `revoked = true`. | `execute()`, `save()` | stesso file (riferimento) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PASSPORT-REVOKE-CLIENT-INV-1 | Con id inesistente ritorna `false` senza scritture. Prova nel codice: `execute()`, controllo `instanceof`. Test esistente senza group: `tests/Unit/Actions/Passport/PassportActionsCoverageBatch2Test.php:282`. | — (non dimostrato) |
+| PASSPORT-REVOKE-CLIENT-INV-2 | Con `$revokeTokens = true` i token non revocati del client sono revocati prima del client. Prova nel codice: `execute()`, primo blocco. Test esistente senza group: nessuno sull'ordine. | — (non dimostrato) |
+| PASSPORT-REVOKE-CLIENT-INV-3 | Il client finisce con `revoked = true`. Prova nel codice: `execute()`, `save()`. Test esistente senza group: stesso file (riferimento). | — (non dimostrato) |
 
 ## Effetti collaterali
 

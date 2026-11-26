@@ -1,6 +1,7 @@
 ---
 title: "CreateSocialiteUserAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Crea il record `SocialiteUser` che collega un utente locale a un'identità del p
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SOCIALITE-CREATE-SU-INV-1` | Il record ha `user_id`, `provider`, `provider_id`, `name`, `email`, `avatar` presi da input e provider. | `execute()`, array attributi | `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:133` |
-| `SOCIALITE-CREATE-SU-INV-2` | Il nickname non è salvato (riga commentata). | `execute()` | nessuno |
+| ID | Regola | Group Pest |
+|---|---|---|
+| SOCIALITE-CREATE-SU-INV-1 | Il record ha `user_id`, `provider`, `provider_id`, `name`, `email`, `avatar` presi da input e provider. Prova nel codice: `execute()`, array attributi. Test esistente senza group: `tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php:133`. | — (non dimostrato) |
+| SOCIALITE-CREATE-SU-INV-2 | Il nickname non è salvato (riga commentata). Prova nel codice: `execute()`. | — (non dimostrato) |
 
 ## Effetti collaterali
 

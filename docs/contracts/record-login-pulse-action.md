@@ -1,6 +1,7 @@
 ---
 title: "RecordLoginPulseAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,10 +23,10 @@ Registra un accesso nel contatore aggregato di Laravel Pulse. Codice: `app/Actio
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `PULSE-LOGIN-INV-1` | Registra il tipo `user_login` con chiave `all`, come conteggio. | righe 14-19 | `tests/Unit/Actions/Auth/RecordAuthenticationLogActionTest.php` (riferimento alla classe, non dedicato) |
-| `PULSE-LOGIN-INV-2` | Scrive solo bucket aggregati (`onlyBuckets`), nessuna riga di dettaglio. | riga 20 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| PULSE-LOGIN-INV-1 | Registra il tipo `user_login` con chiave `all`, come conteggio. Prova nel codice: righe 14-19. Test esistente senza group: `tests/Unit/Actions/Auth/RecordAuthenticationLogActionTest.php` (riferimento alla classe, non dedicato). | — (non dimostrato) |
+| PULSE-LOGIN-INV-2 | Scrive solo bucket aggregati (`onlyBuckets`), nessuna riga di dettaglio. Prova nel codice: riga 20. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 

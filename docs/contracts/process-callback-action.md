@@ -31,9 +31,9 @@ decide **chi entra e chi viene registrato** dopo il consenso OAuth. Orchestra al
 
 | ID | Regola | Group Pest |
 |---|---|---|
-| USER-SOCIAL-CALLBACK-INV-1 | La lingua d'ingresso è letta e **consumata** dalla sessione e usata solo se è tra le lingue supportate; altrimenti vale `$lang` (righe 27-29). | `USER-SOCIAL-CALLBACK-INV-1` |
+| USER-SOCIAL-CALLBACK-INV-1 | La lingua d'ingresso è letta e **consumata** dalla sessione e usata solo se è tra le lingue supportate; altrimenti vale `$lang` (righe 27-29). | `USER-SOCIAL-CALLBACK-INV-1` (il test prova lettura, consumo e uso di `en`; non il ripiego su `$lang`) |
 | USER-SOCIAL-CALLBACK-INV-2 | Un provider senza `client_id`, `client_secret` o `redirect` validi lancia `ProviderNotConfigured` prima di leggere l'utente OAuth (riga 31). | — (non dimostrato) |
-| USER-SOCIAL-CALLBACK-INV-3 | Se il provider non restituisce un utente (stato non valido, consenso negato, `code` assente) il cittadino torna al login localizzato con `auth.login-failed`: nessun utente letto o creato (righe 32-35). | `USER-SOCIAL-CALLBACK-INV-3` |
+| USER-SOCIAL-CALLBACK-INV-3 | Se il provider non restituisce un utente (stato non valido, consenso negato, `code` assente) il cittadino torna al login localizzato con `auth.login-failed`: nessun utente letto o creato (righe 32-35). | `USER-SOCIAL-CALLBACK-INV-3` (il test prova il redirect 302 a `/it/auth/login` senza `code`; non la chiave del messaggio) |
 | USER-SOCIAL-CALLBACK-INV-4 | Se `IsUserAllowedAction` rifiuta (dominio fuori allowlist), parte l'evento `UserNotAllowed` e si torna al login con `auth.user-not-allowed`: nessun login, nessuna creazione (righe 36-40). | — (non dimostrato) |
 | USER-SOCIAL-CALLBACK-INV-5 | Un collegamento già esistente (`provider` + `provider_id`) porta direttamente al login, senza creare né cercare utenti per email (righe 42-45). | — (non dimostrato) |
 | USER-SOCIAL-CALLBACK-INV-6 | Con `socialite.registration` falso e nessun collegamento, parte `RegistrationNotEnabled` e si torna al login con `auth.registration-not-enabled`: nessuna creazione (righe 46-50). | — (non dimostrato) |

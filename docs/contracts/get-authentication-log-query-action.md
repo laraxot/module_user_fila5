@@ -1,6 +1,7 @@
 ---
 title: "GetAuthenticationLogQueryAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -22,9 +23,9 @@ Restituisce il query builder dei log di autenticazione di un modello autenticabi
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `GET-AUTH-LOG-INV-1` | Il filtro è esattamente morph class e chiave del modello; nessun altro vincolo. | righe 24-26 | Test: nessuno (nessun riferimento alla classe in `tests/`). |
+| ID | Regola | Group Pest |
+|---|---|---|
+| GET-AUTH-LOG-INV-1 | Il filtro è esattamente morph class e chiave del modello; nessun altro vincolo. Prova nel codice: righe 24-26. Test esistente senza group: Test: nessuno (nessun riferimento alla classe in `tests/`). | — (non dimostrato) |
 
 ## Effetti collaterali
 

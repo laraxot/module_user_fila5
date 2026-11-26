@@ -1,6 +1,7 @@
 ---
 title: "LogRegistrationAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,10 +24,10 @@ Scrive nel log di attività la registrazione di un nuovo utente. Codice: `app/Ac
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `LOG-REG-INV-1` | Le proprietà registrate sono `type` dell'utente, `ip_address` e `user_agent` della richiesta, unite con `$properties`; in caso di chiave uguale vince `$properties`. | righe 22-26 | `tests/Unit/Actions/Activity/LogRegistrationActionTest.php` (riferimento alla classe) |
-| `LOG-REG-INV-2` | La descrizione del log è fissa: `User registered via GDPR-compliant RegisterWidget`. | riga 27 | `tests/Unit/Actions/Activity/LogRegistrationActionTest.php` (riferimento alla classe) |
+| ID | Regola | Group Pest |
+|---|---|---|
+| LOG-REG-INV-1 | Le proprietà registrate sono `type` dell'utente, `ip_address` e `user_agent` della richiesta, unite con `$properties`; in caso di chiave uguale vince `$properties`. Prova nel codice: righe 22-26. Test esistente senza group: `tests/Unit/Actions/Activity/LogRegistrationActionTest.php` (riferimento alla classe). | — (non dimostrato) |
+| LOG-REG-INV-2 | La descrizione del log è fissa: `User registered via GDPR-compliant RegisterWidget`. Prova nel codice: riga 27. Test esistente senza group: `tests/Unit/Actions/Activity/LogRegistrationActionTest.php` (riferimento alla classe). | — (non dimostrato) |
 
 ## Effetti collaterali
 

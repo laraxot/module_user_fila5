@@ -1,6 +1,7 @@
 ---
 title: "GetCurrentDeviceAction — contratto"
 type: contract
+module: User
 owner: User
 status: accepted
 updated: 2026-11-24
@@ -23,11 +24,11 @@ Trova o crea la riga `Device` del dispositivo che sta facendo la richiesta, e ne
 
 ## Invarianti
 
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `DEVICE-INV-1` | Con `$mobileId` non null il dispositivo si cerca per `mobile_id`; con stringa vuota (anche `"0"`) lancia `InvalidArgumentException`. | righe 31-36 | `tests/Unit/Actions/GetCurrentDeviceActionTest.php`, `tests/Unit/Actions/User/UserMiscActionsTest.php` (riferimento alla classe) |
-| `DEVICE-INV-2` | Senza `$mobileId` il dispositivo si cerca per tutti i dati di `getDeviceInfo()`. | righe 45-46 | come sopra |
-| `DEVICE-INV-3` | Ad ogni chiamata browser, versione e robot sono riscritti sulla riga trovata. | righe 40, 49, 84-90 | come sopra |
+| ID | Regola | Group Pest |
+|---|---|---|
+| DEVICE-INV-1 | Con `$mobileId` non null il dispositivo si cerca per `mobile_id`; con stringa vuota (anche `"0"`) lancia `InvalidArgumentException`. Prova nel codice: righe 31-36. Test esistente senza group: `tests/Unit/Actions/GetCurrentDeviceActionTest.php`, `tests/Unit/Actions/User/UserMiscActionsTest.php` (riferimento alla classe). | — (non dimostrato) |
+| DEVICE-INV-2 | Senza `$mobileId` il dispositivo si cerca per tutti i dati di `getDeviceInfo()`. Prova nel codice: righe 45-46. Test esistente senza group: come sopra. | — (non dimostrato) |
+| DEVICE-INV-3 | Ad ogni chiamata browser, versione e robot sono riscritti sulla riga trovata. Prova nel codice: righe 40, 49, 84-90. Test esistente senza group: come sopra. | — (non dimostrato) |
 
 ## Effetti collaterali
 
