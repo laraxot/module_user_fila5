@@ -1,89 +1,71 @@
-# User — identità, autenticazione e autorizzazione
+---
+title: "User"
+type: readme
+status: active
+created: 2026-11-26
+updated: 2026-11-26
+---
 
-[![PHP ^8.3](https://img.shields.io/badge/PHP-%5E8.3-777BB4.svg)](composer.json)
-[![Laravel ^13](https://img.shields.io/badge/Laravel-%5E13-FF2D20.svg)](../../composer.json)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Pull requests welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/laraxot/module_user_fila5/pulls)
+<div align="center">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/laraxot/module_user_fila5/dev/docs/manuals/assets/auth-login.png" alt="User authentication" width="800">
-</p>
+# 👤 User
 
-> Modulo Laravel riusabile per gestire identità, autenticazione, ruoli,
-> permessi, team, tenant, Passport e Socialite.
+**Identità, autenticazione, autorizzazione, ruoli, team, tenant e OAuth per applicazioni Laravel.**
 
-User è un pacchetto Composer indipendente. Non contiene concetti di dominio
-specifici di un ente, prodotto o progetto: l'applicazione ospitante decide
-profili verticali, branding, ruoli applicativi e flussi pubblici.
+[![CI](https://img.shields.io/github/actions/workflow/status/laraxot/module_user_fila5/ci.yml?branch=dev&label=CI)](https://github.com/laraxot/module_user_fila5/actions)
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D8.4-777BB4?logo=php&logoColor=white)](https://www.php.net/)<br>
+[![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?logo=laravel&logoColor=white)](https://laravel.com/)<br>
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/laraxot/module_user_fila5/pulls)
 
-## Confini
+<img src="https://raw.githubusercontent.com/laraxot/module_user_fila5/dev/docs/manuals/assets/user-admin-dashboard.webp" alt="Dashboard del pannello User" width="880">
 
-Il modulo risponde a tre domande:
+</div>
 
-1. **Chi sei?** — account, identità verificata, dispositivi e accessi.
-2. **Cosa puoi fare?** — ruoli, permessi, policy e pannello Filament.
-3. **Per conto di chi?** — team, tenant e contesto organizzativo.
+User è un modulo Laravel **standalone e riusabile**: nessuna dipendenza da un
+progetto specifico. L'applicazione ospitante decide branding, tenant, ruoli,
+permessi, provider OAuth e percorso del pannello.
 
-Non definisce il mestiere, il settore o i dati operativi dell'utente. Un
-progetto può estendere `BaseUser` e i contratti del modulo senza modificare il
-nucleo riusabile.
+## ✨ Cosa fa
 
-## Capacità
+- **Autenticazione** web e API: login, registrazione, verifica email, recupero e reset password.
+- **Autorizzazione**: ruoli e permessi (Shield) con policy configurabili.
+- **Organizzazione**: team, appartenenze e tenant multi-tenant.
+- **Integrazioni**: OAuth/Passport per le API, Socialite per i provider social.
+- **Sicurezza e audit**: log di autenticazione, dispositivi collegati, template email di reset.
+- **Back office**: pannello Filament completo per la gestione utenti.
 
-- autenticazione web e front office;
-- registrazione, verifica email e recupero password;
-- login OAuth con Passport e provider Socialite configurati dall'host;
-- ruoli e permessi con policy granulari;
-- team, inviti e tenant;
-- log autenticazione e dispositivi;
-- risorse e dashboard Filament per gli amministratori autorizzati.
+## 📖 Manuali per figura
 
-## Installazione
+| Figura | Guida |
+| --- | --- |
+| Utente finale | [Accesso e profilo](docs/manuals/manuale-utente-frontoffice.md) |
+| Amministratore | [Gestione del pannello](docs/manuals/manuale-admin.md) |
+| Super amministratore | [OAuth, provider e configurazione](docs/manuals/manuale-super-admin.md) |
+| Operatore / altre figure | [Viste e permessi](docs/manuals/manuale-altre-figure.md) |
+| Riferimento completo | [Manuale utente — `/user/admin`](docs/manuals/manuale-utente.md) · [Indice](docs/manuals/README.md) |
 
-```bash
-composer require laraxot/module_user_fila5
-php artisan module:enable User
-php artisan migrate
-```
+## 🗂 Documentazione
 
-Le credenziali OAuth, il dominio applicativo, i provider e i ruoli iniziali
-vanno configurati nell'applicazione ospitante. Non copiare configurazioni da
-un altro progetto.
+- **[Indice docs](docs/index.md)** — mappa di tutta la documentazione del modulo
+- **[ADR](docs/adr/)** — decisioni architetturali e il perché
+- **[Contratti](docs/contracts/)** — cosa promettono le Action pubbliche
+- **[Stories](docs/stories/)** — lavoro tracciato
 
-## Manuali
+## 🛠 Sviluppo
 
-- [Manuale utente front office](docs/manuals/manuale-utente-frontoffice.md)
-- [Manuale utente](docs/manuals/manuale-utente.md)
-- [Manuale admin](docs/manuals/manuale-admin.md)
-- [Manuale super admin](docs/manuals/manuale-super-admin.md)
-- [Manuale per altre figure](docs/manuals/manuale-altre-figure.md)
-- [Contratti delle Action](docs/contracts/README.md)
-- [Decisioni architetturali](docs/adr/README.md)
+- Repository autonomo (`laraxot/module_user_fila5`), branch di lavoro `dev`.
+- Conventional Commits; ogni commit cita la sua issue `(#N)`.
+- Test e analisi statica girano nel contesto dell'applicazione Laravel host
+  (Pest/PHPUnit, PHPStan, Pint): nessun `vendor/` nel repository.
+- `docs/` resta sotto **100 file `.md`**.
 
-I manuali descrivono capacità generiche. URL, ruoli visibili e integrazioni
-effettive dipendono dall'applicazione che installa il modulo.
+## 🤝 Contribuire
 
-## Sviluppo e verifica
+Issue e pull request benvenute: descrivi il problema o la proposta, collega
+l'issue nel PR. Per segnalazioni di sicurezza usa la scheda
+**[Security](https://github.com/laraxot/module_user_fila5/security)**.
+Mappa delle superfici GitHub: [`.github/README.md`](.github/README.md).
 
-Dal progetto Laravel host:
-
-```bash
-./vendor/bin/phpstan analyse Modules/User
-./vendor/bin/pest Modules/User
-./vendor/bin/pint --dirty
-```
-
-Per una modifica che cambia una promessa di un'Action, aggiorna prima il
-contratto corrispondente in `docs/contracts/` e la story owner in
-`docs/stories/`.
-
-## Collaborare
-
-Apri una [issue](https://github.com/laraxot/module_user_fila5/issues) con
-contesto e riproduzione minima, oppure una
-[discussion](https://github.com/laraxot/module_user_fila5/discussions) per una
-proposta. Le pull request devono citare l'issue, mantenere il modulo
-agnostico e includere la verifica pertinente.
-
-Per segnalazioni riservate usa [Security](https://github.com/laraxot/module_user_fila5/security).
+---
+<sub>Maintained in <a href="https://github.com/laraxot/module_user_fila5">laraxot/module_user_fila5</a> · MIT License</sub>
