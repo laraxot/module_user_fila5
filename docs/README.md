@@ -19,7 +19,7 @@ curata a sei voci e' in [index.md](./index.md); l'archivio storico (ex `docs/bma
 | Area | Dove |
 |------|------|
 | Indice curato | [index.md](./index.md) |
-| Decisioni (ADR) | [adr/](./adr/) · [indice](./adr/index.md) |
+| Decisioni (ADR) | [adr/](./adr/) · [indice](./adr/README.md) |
 | Contratti delle Action | [contracts/](./contracts/) · [copertura](./contracts/README.md) |
 | Story attive | [stories/](./stories/) — le concluse sono in `archive/docs-legacy/stories/` |
 | Manuali utente | [manuals/README.md](./manuals/README.md) — [frontoffice](./manuals/manuale-utente-frontoffice.md), [admin](./manuals/manuale-admin.md), [super admin](./manuals/manuale-super-admin.md), [altre figure](./manuals/manuale-altre-figure.md), [riferimento](./manuals/manuale-utente.md) |
