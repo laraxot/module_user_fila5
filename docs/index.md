@@ -23,7 +23,7 @@ eliminati il 2026-11-26 — vedi issue #117 e #105-#110).
 | 2 | **Decisioni (ADR)** | [adr/](./adr/) — [indice ADR](./adr/index.md) e [metodo](./adr/README.md); 0001-0007 |
 | 3 | **Contratti delle Action** | [contracts/](./contracts/) — [registro e copertura](./contracts/README.md), [indice](./contracts/index.md), scheletro [_template](./contracts/_template.md) |
 | 4 | **Story attive** | [stories/](./stories/) — solo le story non concluse; quelle finite sono in `archive/docs-legacy/stories/` |
-| 5 | **Manuale utente** | [manuals/manuale-utente.md](./manuals/manuale-utente.md) — pannello `/user/admin`, screenshot reali |
+| 5 | **Manuali utente** | [manuals/README.md](./manuals/README.md) — indice per figura: [frontoffice](./manuals/manuale-utente-frontoffice.md), [admin](./manuals/manuale-admin.md), [super admin](./manuals/manuale-super-admin.md), [altre figure](./manuals/manuale-altre-figure.md), [riferimento pannello](./manuals/manuale-utente.md) |
 | 6 | **Archivio legacy** | [archive/docs-legacy/](../archive/docs-legacy/) — BMAD, wiki, contratti/storie superati, report |
 
 ## Regole
