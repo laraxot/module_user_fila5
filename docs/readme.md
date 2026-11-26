@@ -1076,8 +1076,6 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Advanced audit reporting
 
 See [roadmap](./product/roadmap/README.md) for details.
-See [ROADMAP.md](./roadmap.md) for details.
-See [roadmap.md](./roadmap.md) for details.
 
 ---
 
