@@ -7,13 +7,22 @@ updated: 2026-07-14
 qmd: "copilot-redundancy-audit-2026-05-25.deprecated deprecated"
 status: deprecated
 related:
+<<<<<<< .merge_file_YZyZVX
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_JIjrqQ
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_YZyZVX
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_JIjrqQ
   - "./actions-path-convention.md"
 ---
 

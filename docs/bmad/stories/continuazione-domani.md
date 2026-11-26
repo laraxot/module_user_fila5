@@ -64,7 +64,7 @@ qmd: "user   continuazione domani user"
     sostanzialmente vuoto) — nessun rischio qui.
   - **Non verificati**: gli altri ~21 file della lista dei 29 (es.
     `resources/views/docs/html2pdf/*.md`, `docs/dry-kiss-analysis-2025-10-15.md`,
-    `docs/quality-status-2025-11.md`, ecc.) — probabilita' alta che siano
+    `docs/quality-status.md`, ecc.) — probabilita' alta che siano
 
     (marker a riga 1/270/375 e 1/147/270), stesso verdetto: contenuto
     sostanzialmente vuoto): nessun rischio qui.

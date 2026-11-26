@@ -9,8 +9,8 @@ status: deprecated
 related:
   - "./make-filament-user-crash-loop.md"
   - "./parse-error-orphan-methods-.md"
-  - "./parse-error-orphan-methods-1-1.md"
-  - "./parse-error-orphan-methods-1.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-2.md"
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"

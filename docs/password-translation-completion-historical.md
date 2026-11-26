@@ -131,13 +131,22 @@ module: theme
 topic: password-translation-completion-2025
 canonical: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
 related:
+<<<<<<< .merge_file_gJfasd
   - "./00-index-1.md"
+=======
+  - "./00-index-indice-documentazione-modulo-user.md"
+>>>>>>> .merge_file_DpMVMI
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_gJfasd
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_DpMVMI
   - "./actions-path-convention.md"
 ---
 

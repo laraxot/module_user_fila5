@@ -8,13 +8,13 @@ qmd: "fullcalendar-scheduler-documentation-summary-3 fullcalendar scheduler - do
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -52,7 +52,7 @@ Documentazione base esistente per:
 - Configurazione di base in healthcare_app
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+#### 4. [Scheduler License Key](./scheduler-license-key.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

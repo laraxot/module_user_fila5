@@ -8,13 +8,13 @@ qmd: "final final summary - user module passport integration & architecture refa
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -300,7 +300,7 @@ public function getHeaderActions(): array
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
-- [README](./readme.md)
+- [README](./README.md)
 
 ### External Documentation
 - [Laravel Modules](https://nwidart.com/laravel-modules)

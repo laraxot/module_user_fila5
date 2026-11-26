@@ -8,13 +8,13 @@ qmd: "quality-tools quality tools usage (user)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -54,4 +54,4 @@ vendor/bin/php-cs-fixer fix Modules/User --allow-risky=no
 ## Notes
 - After changes, verify: login, logout, 2FA flows, password change (`ChangeProfilePasswordAction`).
 - Track suppressions with rationale and re-evaluation date.
-- Align with `Modules/User/docs/ROADMAP.md` security tasks (2FA, Social Login, SSO).
+- Align with `Modules/User/docs/roadmap.md` security tasks (2FA, Social Login, SSO).

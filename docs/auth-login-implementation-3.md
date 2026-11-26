@@ -8,29 +8,29 @@ qmd: "auth-login-implementation-3 implementazione corretta della pagina di login
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
 # Implementazione Corretta della Pagina di Login 
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
-- [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
-- [Implementazione Auth Pages](/laravel/Modules/User/docs/AUTH_PAGES_IMPLEMENTATION.md)
-- [Volt Folio Auth](/laravel/Modules/User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/volt-folio-auth-implementation-3.md)
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Regole Traduzioni](/laravel/Modules/Lang/docs/translation_keys_rules.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/auth_pages_implementation.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/volt_folio_auth_implementation.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

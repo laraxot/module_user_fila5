@@ -4,23 +4,34 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: User
+<<<<<<< .merge_file_xwFula
 <<<<<<< .merge_file_U4GxZE
 qmd: "ECC audit User verification security testing laravel"
 =======
 qmd: "ECC audit User security-review clean-code laravel-verification verification-loop tdd-workflow"
 >>>>>>> .merge_file_gYJL8s
+=======
+qmd: "ECC audit User security-review clean-code laravel-verification verification-loop tdd-workflow"
+>>>>>>> .merge_file_n3dQnk
 ---
 
 # ECC audit operativo — User
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_xwFula
 <<<<<<< .merge_file_U4GxZE
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
+=======
+ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
+fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
+(`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
+>>>>>>> .merge_file_n3dQnk
 
-## Checklist
+## Esito per skill (2026-11-16)
 
+<<<<<<< .merge_file_xwFula
 - [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
 - [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
 - [ ] `laravel-verification`: route, config, migration additive, container
@@ -35,6 +46,8 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 ## Esito per skill (2026-11-16)
 
+=======
+>>>>>>> .merge_file_n3dQnk
 | Skill ECC | Stato | Evidenza |
 |---|---|---|
 | `clean-code` (DRY/KISS, Actions-over-Services) | parziale | classe morta `UserPermissionBasePolicy`; 24 label letterali; 2 `extends` Filament diretti |
@@ -44,12 +57,16 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `tdd-workflow` (regressione sui P0) | aperto | scrivere prima il Pest rosso su `user::admin` → `RolePolicy::before` (null atteso) |
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/user-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
 | `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
+<<<<<<< .merge_file_xwFula
 >>>>>>> .merge_file_gYJL8s
+=======
+>>>>>>> .merge_file_n3dQnk
 
 ## Input misurato (2026-11-16)
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_xwFula
 <<<<<<< .merge_file_U4GxZE
 | app PHP | 713 |
 | test | 233 |
@@ -57,22 +74,39 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | actions | 83 |
 | services | 0 |
 | policies (files approx) | 78 |
+=======
+| PHP `app/` | 713 |
+| Test PHP | 233 |
+| Models | 123 |
+| Policy | 39 |
+| Resource | 37 (35 file `*Resource.php` ricontati il 2026-11-19) |
+| Widget | 31 |
+| Actions | 90 (di cui 83 in `app/Actions`, il resto in `app/Filament/**/Actions`) |
+| Services | 0 |
+| Migration | 83 |
+| Lang IT | 264 |
+| `->label('..')` letterali | 24 |
+| `@phpstan-ignore` | 1 |
+>>>>>>> .merge_file_n3dQnk
 
-## Gate osservati
+## Finding da trasformare in story
 
-- PHPStan `Modules` (2026-11-16): 0 errori
-- Pest: pending (ambiente testing)
+- **P0-U1** `user::admin` scavalca `RolePolicy/PermissionPolicy/TeamPolicy` (before → true, verificato a runtime): escalation — `Xot/app/Models/Policies/XotBasePolicy.php:21; User/app/Models/Policies/RolePolicy.php`
+- **P0-U2** `PermissionPolicy` view/create/update/delete = true (solo `viewAny` false) — `User/app/Models/Policies/PermissionPolicy.php:25,33,41,50`
+- **P1-U3** 18 policy scrivono su DB durante l'autorizzazione (`hasPermissionToOrCreate`) — `User/app/Models/Traits/HasSpatiePermission.php:14`
+- **P1-U4** `restaurant::admin` cablato nel core HR (`canAccessPanel`, `ADMIN_ROLES`) — `User/app/Models/BaseUser.php:~298,~318`
 
 ## Anti-pattern vietati
 
-- baseline/`@phpstan-ignore` senza motivazione
-- test svuotati per silenziare errori
-- migrate:fresh / RefreshDatabase / --force
-- docs con date nel nome file
-- comportamento o screenshot inventati
+- baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
+- `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
+- nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
+- comportamento, schermate o numeri inventati;
+- docs con date nel nome file.
 
 ## Riferimenti
 
+<<<<<<< .merge_file_xwFula
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
 =======
@@ -107,3 +141,6 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 - [00-index](./00-index.md) · [BMAD audit](../bmad/audit.md) · [audit dettagliato](../bmad/audits/user-audit.md)
 >>>>>>> .merge_file_gYJL8s
+=======
+- [00-index](./00-index.md) · [BMAD audit](../bmad/audit.md) · [audit dettagliato](../bmad/audits/user-audit.md)
+>>>>>>> .merge_file_n3dQnk
