@@ -1,3 +1,8 @@
+---
+title: "User Module - Spring Planning Meeting"
+type: note
+qmd: "user spring planning meeting"
+---
 # User Module - Spring Planning Meeting
 
 ## Meeting Overview

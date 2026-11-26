@@ -96,7 +96,7 @@ class AuthenticationLog extends BaseModel
      */
     public function prunable(): Builder
     {
-        return static::query()->where('created_at', '<', now()->subDays(config()->integer('gdpr.retention.authentication_log_days', 365)));
+        return static::query()->where('created_at', '<', now()->subDays(config()->integer('user.retention.authentication_log_days', 365)));
     }
 
     /** @return array<string, string> */

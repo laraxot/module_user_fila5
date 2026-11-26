@@ -19,9 +19,9 @@ related:
   - "./socialite-architecture.md"
 ---
 
----
+# User Wiki Log
 
-- 2026-10-13: widget auth — `ForgotPasswordWidget` e `ResetPasswordWidget` dichiaravano una vista inesistente (`View not found` a runtime, 2 errori PHPStan `property.defaultValue`). Tolto `$view`, blade spostati in `filament/widgets/auth/` e corretti (`$getForm()` -> `$this->form`). Guardia: `tests/Unit/Filament/Widgets/Auth/AuthWidgetsResolveConventionalViewTest.php`. Story: `../stories/2026-10-13-auth-password-widgets-view-not-found.story.md`
+- 2026-10-13: widget auth — `ForgotPasswordWidget` e `ResetPasswordWidget` dichiaravano una vista inesistente (`View not found` a runtime, 2 errori PHPStan `property.defaultValue`). Tolto `$view`, blade spostati in `filament/widgets/auth/` e corretti (`$getForm()` -> `$this->form`). Guardia: `tests/Unit/Filament/Widgets/Auth/AuthWidgetsResolveConventionalViewTest.php`. Story: [auth-password-widgets-view-not-found](../stories/auth-password-widgets-view-not-found.story.md)
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
@@ -29,10 +29,8 @@ related:
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#hackernoon-ai-coding-tips-fixcity-map), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
-
-# User Wiki Log
 
 ## [2026-06-05] arch | profiles schema — owner Fixcity, non User
 - migrazioni `create_profiles_table` User archiviate in `database/migrations/_bak/*.merged`

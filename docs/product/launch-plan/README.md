@@ -1,3 +1,8 @@
+---
+title: "User Module - Product Launch Plan"
+type: note
+qmd: "user product launch plan"
+---
 # User Module - Product Launch Plan
 
 ## Launch Overview

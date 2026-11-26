@@ -14,6 +14,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/redirect-to-login-action.md
+ *
+ * @contract docs/contracts/redirect-to-login-action.md
+ */
 class RedirectToLoginAction
 {
     use QueueableAction;

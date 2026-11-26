@@ -16,6 +16,8 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
 
 # User Module - Authentication & Authorization
@@ -1029,10 +1031,10 @@ test('user can switch teams', function () {
 ### Development
 - [Creating User Types](./development/user-types.md) - STI implementation
 - [Custom Authentication](./development/custom-auth.md) - Custom auth methods
-- [API Integration](./development/api.md) - API usage guide
+- [API Integration](../../api-2.md) - API usage guide
 
 ### Security
-- [Security Best Practices](./security/best-practices.md) - Security guidelines
+- [Security Best Practices](../../../../Activity/docs/best-practices-3.md) - Security guidelines
 - [Password Policies](./security/passwords.md) - Password requirements
 - [Audit Logging](./security/audit-log.md) - Security audit trail
 

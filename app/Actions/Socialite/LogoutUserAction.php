@@ -14,6 +14,11 @@ use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/logout-user-action.md
+ *
+ * @contract docs/contracts/logout-user-action.md
+ */
 class LogoutUserAction
 {
     use QueueableAction;

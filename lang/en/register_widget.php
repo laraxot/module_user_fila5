@@ -3,6 +3,12 @@
 declare(strict_types=1);
 
 return [
+    'sections' => [
+        'empty' => [
+            'label' => '',
+            'heading' => '',
+        ],
+    ],
     'fields' => [
         'first_name' => [
             'label' => 'First Name',

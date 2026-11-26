@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use stdClass;
-use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
@@ -127,7 +127,7 @@ function userTestAuthDeviceData(): array
 describe('Authentication Business Logic', function () {
     describe('User Authentication Logic', function () {
         it('validates user account status', function () {
-            $user = (object) userTestAuthUserData();
+            $user = (object) $this->userData;
 
             // Business Logic: User must be active and verified
             Assert::assertTrue($user->is_active);
@@ -377,7 +377,6 @@ describe('Authentication Business Logic', function () {
             foreach ($requiredScopes as $scope) {
                 Assert::assertContains($scope, $oauth->scopes);
             }
-
         });
 
         it('handles OAuth provider fallbacks', function () {

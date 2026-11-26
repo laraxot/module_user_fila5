@@ -1,3 +1,8 @@
+---
+title: "User Module - Product Requirements Document (PRD)"
+type: note
+qmd: "user product requirements document prd"
+---
 # User Module - Product Requirements Document (PRD)
 
 ## Document Information

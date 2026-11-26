@@ -1,3 +1,8 @@
+---
+title: "User Module - Architecture Documentation"
+type: architecture
+qmd: "user architecture"
+---
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.
@@ -415,7 +420,6 @@ related:
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
-  - "./user-gdpr-oupling.md"
 ---
 
 # User Module - Architecture Documentation

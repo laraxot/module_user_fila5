@@ -10,6 +10,11 @@ namespace Modules\User\Actions\Socialite;
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-provider-scopes-action.md
+ *
+ * @contract docs/contracts/get-provider-scopes-action.md
+ */
 class GetProviderScopesAction
 {
     use QueueableAction;

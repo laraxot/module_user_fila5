@@ -1,3 +1,8 @@
+---
+title: "Comandi Console - Modulo User"
+type: note
+qmd: "comandi console user"
+---
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -208,7 +213,6 @@ Modules/User/
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
-- [Password Management](../password.md)
 - [README.md](../README.md)
 
 ## Aggiornamenti Recenti
@@ -247,7 +251,7 @@ Modules/User/
 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Comandi Console - Modulo User"
@@ -478,7 +482,6 @@ Modules/User/
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
-- [Password Management](../password.md)
 - [README.md](../README.md)
 
 ## Aggiornamenti Recenti

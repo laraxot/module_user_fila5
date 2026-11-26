@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-use Modules\Xot\Models\Traits\HasExtraTrait;
+use Modules\Xot\Models\InteractsWithExtra as XotInteractsWithExtra;
 
 /**
- * Class BaseInteractsWithExtra.
+ * Alias User verso lo SSoT Xot (HasExtraTrait).
  */
-abstract class BaseInteractsWithExtra extends BaseModel
-{
-    use HasExtraTrait;
-}
+abstract class BaseInteractsWithExtra extends XotInteractsWithExtra {}

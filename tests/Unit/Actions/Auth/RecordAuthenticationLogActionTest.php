@@ -35,7 +35,7 @@ test('record authentication log action guards missing table', function (): void 
         ->toContain('hasTable')
         ->toContain('Log::warning')
         ->toContain('authentication_logs missing on user connection');
-});
+})->group('USER-AUTHLOG-INV-1');
 
 test('record authentication log action types UserContract and HasAuthentications not BaseUser', function (): void {
     $source = file_get_contents(
@@ -48,7 +48,7 @@ test('record authentication log action types UserContract and HasAuthentications
         ->toContain('use Modules\User\Contracts\HasAuthentications')
         ->not->toContain('use Modules\User\Models\BaseUser')
         ->not->toContain('BaseUser $user');
-});
+})->group('USER-AUTHLOG-INV-3');
 
 test('auth login listeners guard UserContract not BaseUser', function (): void {
     $login = file_get_contents(

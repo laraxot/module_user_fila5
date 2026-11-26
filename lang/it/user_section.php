@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
+// Sezione "dati personali" del form utente (Filament/Forms/Components/UserSection).
 return [
+    'heading' => 'Dati personali',
     'fields' => [
         'ente' => [
             'label' => 'ente',

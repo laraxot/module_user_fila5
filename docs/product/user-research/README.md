@@ -1,3 +1,8 @@
+---
+title: "User Module - User Research"
+type: note
+qmd: "user research"
+---
 # User Module - User Research
 
 ## Research Overview

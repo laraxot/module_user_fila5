@@ -12,6 +12,10 @@ use function Safe\preg_replace;
  * La radice viene da `config('app.url')`, mai dalla richiesta: `url()` usa l'header `Host`, che chi chiede il reset puo' scegliere,
  * e il link nella casella della vittima punterebbe a un dominio dell'attaccante. Il percorso e' relativo (`route(..., false)`),
  * quindi non dipende dalla richiesta.
+ *
+ * @see docs/contracts/build-password-reset-url-action.md
+ *
+ * @contract docs/contracts/build-password-reset-url-action.md
  */
 final class BuildPasswordResetUrlAction
 {
