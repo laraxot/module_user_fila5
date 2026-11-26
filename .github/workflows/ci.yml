@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Validate composer.json
         run: |
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: php -l sweep
         run: |
@@ -63,7 +63,7 @@ jobs:
     timeout-minutes: 20
     needs: manifest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Composer install
         run: composer install --no-interaction --prefer-dist --no-progress
@@ -82,7 +82,7 @@ jobs:
     timeout-minutes: 15
     needs: manifest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Detect runnable Pest
         run: |
