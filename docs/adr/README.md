@@ -62,7 +62,8 @@ Se il codice di oggi contraddice l'ADR si aggiunge `## Stato attuale` con ciò c
 
 ## Decisioni precedenti (formato libero, archiviate)
 
-- [contracts-and-lang-backup-archival (deprecated)](../wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.deprecated.md.old)
+Le decisioni precedenti in formato libero sono state eliminate come file stale
+(`.deprecated.md.old`) nella bonifica docs del 2026-11-26; la storia resta in git.
 
 ## Riferimenti
 

@@ -11,16 +11,19 @@ qmd: "documentazione completa indice overview funzionalità principali autentica
 
 ## Indice della documentazione
 
-Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `index.md`,
-`00-index.md` generati automaticamente sono stati rimossi: elencavano file duplicati o non piu' esistenti).
+Questo README e' la porta d'ingresso della cartella `docs/` del modulo. La mappa
+curata a sei voci e' in [index.md](./index.md); l'archivio storico (ex `docs/bmad`,
+`docs/wiki`, `docs/stories` concluse, analisi e file stale) e' in
+[archive/docs-legacy/](../archive/docs-legacy/).
 
 | Area | Dove |
 |------|------|
-| Story BMAD del modulo | [stories/](./stories/) · [bmad/stories/](./bmad/stories/) |
-| Audit qualita' corrente | [stories/audit-qualita.story.md](stories/0084-audit-qualita.story.md) |
-| Wiki (concetti, decisioni, troubleshooting) | [wiki/](./wiki/) |
-| Roadmap | [roadmap.md](./roadmap.md) |
-| Storico / documenti superati | [legacy/](./legacy/) |
+| Indice curato | [index.md](./index.md) |
+| Decisioni (ADR) | [adr/](./adr/) · [indice](./adr/index.md) |
+| Contratti delle Action | [contracts/](./contracts/) · [copertura](./contracts/README.md) |
+| Story attive | [stories/](./stories/) — le concluse sono in `archive/docs-legacy/stories/` |
+| Manuale utente | [manuals/manuale-utente.md](./manuals/manuale-utente.md) |
+| Storico / documenti superati | [archive/docs-legacy/](../archive/docs-legacy/) |
 
 Regole sui nomi: kebab-case, **nessuna data nel nome** di file o cartelle (la data va nel frontmatter `created:`/`updated:`).
 
@@ -85,7 +88,7 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 | Ruolo | Path |
 |-------|------|
 | Procedura / saturazione host | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
-| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](stories/0130-phpstan-zero-errors-user.story.md) |
+| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](../archive/docs-legacy/stories/0130-phpstan-zero-errors-user.story.md) |
 | Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
 | Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
 
