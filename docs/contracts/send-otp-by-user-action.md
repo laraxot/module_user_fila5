@@ -1,25 +1,24 @@
 ---
 title: "Contratto — SendOtpByUserAction"
 type: contract
-action: "Modules\User\Actions\Otp\SendOtpByUserAction"
-tags: [contract, action, otp, mail]
-created: 2026-11-24
-updated: 2026-11-24
+action: "Modules\\User\\Actions\\Otp\\SendOtpByUserAction"
+module: User
+status: accepted
+created: 2026-11-26
+updated: 2026-11-26
+tags: [contract, action, otp, password, email, credenziali]
 ---
 
 # SendOtpByUserAction
 
-Sorgente: `app/Actions/Otp/SendOtpByUserAction.php`.
+Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`. Sorgente: `app/Actions/Otp/SendOtpByUserAction.php`.
+Unico chiamante: l'azione di tabella Filament `app/Filament/Resources/UserResource/Actions/SendOtpAction.php:24` (richiede conferma nel modale).
+**Sostituisce la password dell'utente**: è un'operazione sulle credenziali, da usare solo dietro l'autorizzazione della risorsa Filament.
 
 ## Input
 
-- `UserContract $user`: destinatario; dipendenze iniettate `PasswordData` (scadenza), `Str`, `Otp\Hasher`.
-Genera una password temporanea (OTP), la salva come hash con scadenza e la invia all'utente via email. Codice: `app/Actions/Otp/SendOtpByUserAction.php:21-103`.
-
-## Input
-
-- `UserContract $user`: destinatario (`execute`, riga 36).
-- Dipendenze: `PasswordData` (scadenza in minuti), `Str` (generatore casuale), `Otp\Hasher` (wrapper dello stesso namespace, righe 25-29).
+- `Modules\Xot\Contracts\UserContract $user`: l'utente che riceve la password temporanea.
+- Dipendenze del costruttore: `PasswordData` (`otp_expiration_minutes`, default 5), `Str`, `Modules\User\Actions\Otp\Hasher`.
 
 ## Output
 
@@ -29,44 +28,35 @@ Genera una password temporanea (OTP), la salva come hash con scadenza e la invia
 
 | ID | Regola | Group Pest |
 |---|---|---|
-| USER-OTP-SEND-INV-1 | La password temporanea (12 caratteri casuali) si salva solo come hash; in chiaro esiste solo nella notifica. | — |
-| USER-OTP-SEND-INV-2 | `is_otp = true` e `password_expires_at = now + PasswordData::otp_expiration_minutes`. | — |
-| USER-OTP-SEND-INV-3 | La notifica `Notifications\Auth\Otp` parte on-demand verso `$user->email`. | — |
+| USER-OTP-SEND-INV-1 | Dopo l'esecuzione `users.password` è l'**hash** della password temporanea (12 caratteri casuali), `is_otp` è `true` e `password_expires_at` è adesso + `otp_expiration_minutes` (righe 55-83). | `USER-OTP-SEND-INV-1` |
+| USER-OTP-SEND-INV-2 | La password temporanea in chiaro non viene salvata: sta solo nella notifica `Otp`, mandata via route mail on-demand all'indirizzo `$user->email` (righe 92-95). | `USER-OTP-SEND-INV-2` |
+| USER-OTP-SEND-INV-3 | L'ordine è: aggiornamento dell'utente, poi la mail, poi la notifica Filament di successo; se l'`update` fallisce non parte nessuna mail (righe 44-46). | — (non dimostrato) |
 
-Provate da `tests/Unit/Actions/Otp/SendOtpByUserActionTest.php`, che richiede un database di test migrato: il group si
-aggiunge quando il test gira verde.
-
-## Effetti collaterali
-
-- `update()` dell'utente: **sostituisce la password** corrente con l'OTP.
-- Notifica mail (`Notification::route('mail', ...)`), in coda o sincrona secondo la notifica.
-- Notifica Filament di successo nella sessione corrente.
-
-## Errori
-
-- Errori del database o del mailer si propagano; nessun rollback: se la mail fallisce, la password è già cambiata.
-
-## Non fa
-
-- Non verifica l'OTP (`VerifyOtpHashAction`) né forza il cambio password al login successivo (lo fa chi legge `is_otp`).
-- Non limita la frequenza degli invii: chi la espone in una pagina deve frenarla.
-| ID | Regola | Prova nel codice | Test |
-|---|---|---|---|
-| `SEND-OTP-INV-1` | Nel database finisce solo l'hash della password temporanea, mai il valore in chiaro. | righe 38, 75-79 | `tests/Unit/Actions/User/UserMiscActionsTest.php`, `tests/Unit/Actions/AdditionalActionsTest.php`, `tests/Unit/Actions/Otp/SendOtpByUserActionTest.php` (riferimenti alla classe) |
-| `SEND-OTP-INV-2` | Il campo `password` dell'utente è sostituito: la password precedente smette di valere. | riga 76 | come sopra |
-| `SEND-OTP-INV-3` | La scadenza è `now + otp_expiration_minutes` di `PasswordData`. | righe 61-63, 78 | come sopra |
-| `SEND-OTP-INV-4` | L'ordine è: aggiornamento utente, poi notifica mail, poi notifica Filament. | righe 41-43 | come sopra |
+Test: `tests/Unit/Actions/Otp/SendOtpByUserActionTest.php` (database di test e `Notification::fake()`; `Str` e `Hasher` sono finti, il test non prova la casualità della password).
+(Il vecchio ID `SEND-OTP-INV-*` di una bozza precedente non è mai stato usato in un test: vale `USER-OTP-SEND-INV-*`.)
 
 ## Effetti collaterali
 
-Nell'ordine: UPDATE su `users` (password, `is_otp`, `password_expires_at`), poi `Notification::route('mail')->notify(Otp)` (la notifica implementa `ShouldQueue`, quindi l'invio è in coda), poi notifica di successo Filament a schermo. Nessuna transazione: se la notifica fallisce la password è già cambiata.
+In quest'ordine:
+
+1. `UPDATE users SET password = <hash>, is_otp = 1, password_expires_at = <scadenza>` (`$user->update([...])`, riga 79): scattano gli eventi Eloquent e gli observer del modello utente.
+2. Notifica mail on-demand `Modules\User\Notifications\Auth\Otp` all'email dell'utente (`Notification::route('mail', ...)->notify(...)`, riga 94). Se la notifica è in coda dipende dalla classe `Otp`, non da questa Action.
+3. Notifica Filament di successo alla sessione del chiamante (`FilamentNotification::make()->success()->send()`, riga 102).
 
 ## Errori
 
-- Nessuna gestione esplicita: errori di database o di coda si propagano.
+- Nessuna eccezione propria. Errori del database, della mail o della sessione risalgono al chiamante.
+- Se la mail fallisce dopo l'`UPDATE`, la password è già stata sostituita (nessuna transazione, nessun rollback): l'utente non ha più la vecchia password e non ha ricevuto la nuova.
 
 ## Non fa
 
-- Non verifica che `$user->email` sia valorizzato prima di inviare (dubbio: l'indirizzo può essere null).
-- Non applica limiti di frequenza.
-- Usa un'API UI (notifica Filament) dentro un'Action di dominio: effetto da spostare se l'Action deve girare in coda o via API.
+- Non controlla chi la invoca né se il destinatario è l'utente corrente: l'autorizzazione è del chiamante (policy della risorsa Filament).
+- Non limita la frequenza: richiamarla due volte sostituisce di nuovo la password.
+- Non verifica né consuma l'OTP: lo fanno `VerifyOtpHashAction`, `HashOtpValueAction`, `OtpHashNeedsRehashAction`.
+- Non invalida sessioni, remember token o token Passport esistenti dell'utente.
+- Non verifica che `$user->email` sia un indirizzo reale (un utente SPID/CIE ha `@noemail.local`).
+
+## Limiti noti
+
+- Limite noto: nessuna transazione tra `UPDATE` e invio mail (vedi Errori).
+- Limite noto: con email segnaposto `@noemail.local` (utenti SPID/CIE, [UpsertUserFromDigitalIdentityAction](upsert-user-from-digital-identity-action.md)) la password viene sostituita e la mail non arriva a nessuno.

@@ -1,78 +1,62 @@
 ---
 title: "Contratto — RevokeUserAccessAction"
 type: contract
-action: "Modules\User\Actions\Auth\RevokeUserAccessAction"
-tags: [contract, action, passport, account, sicurezza]
-created: 2026-11-24
-updated: 2026-11-24
+action: "Modules\\User\\Actions\\Auth\\RevokeUserAccessAction"
+module: User
+status: accepted
+created: 2026-11-26
+updated: 2026-11-26
+tags: [contract, action, token, passport, account-cancellato, sec-05]
 ---
 
 # RevokeUserAccessAction
 
-Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Chiamata da `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`.
-Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
+Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`. Perché esiste: [ADR 0004](../adr/0004-deleted-accounts-are-filtered-by-auth-provider.md).
+Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Unico chiamante nel repo: `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php:83`, dentro la
+transazione di cancellazione dell'account. Chiude gli accessi già concessi: token Passport, refresh token, cookie «ricordami».
 
 ## Input
 
-- `BaseUser $user`: l'utente a cui togliere ogni accesso già concesso.
+- `Modules\User\Models\BaseUser $user`: l'utente (già salvato) di cui chiudere gli accessi.
 
 ## Output
 
-- `int`: numero di token di accesso Passport revocati (quelli ancora attivi prima della chiamata).
+- `int`: numero di **access token** revocati ora (i refresh token non sono contati).
 
 ## Invarianti
 
 | ID | Regola | Group Pest |
 |---|---|---|
-| USER-REVOKE-INV-1 | Revoca tutti i token di accesso non revocati dell'utente, e solo i suoi. | — |
-| USER-REVOKE-INV-2 | Revoca i refresh token di **tutti** i token dell'utente, anche di quelli già revocati. | — |
-| USER-REVOKE-INV-3 | Il remember token si ruota (nuova stringa casuale), mai si azzera; se era vuoto l'utente non si salva. | — |
+| USER-REVOKE-INV-1 | Tutti gli access token non revocati dell'utente passano a `revoked = true`, i suoi refresh token pure, e i token di altri utenti restano intatti; il ritorno è il numero di access token revocati (righe 34-51). | `USER-REVOKE-INV-1` |
+| USER-REVOKE-INV-2 | Se l'utente ha un remember token, questo è **ruotato** (nuova stringa casuale di 60 caratteri, `save()`), non azzerato: il vecchio cookie «ricordami» non vale più (righe 55-58). | `USER-REVOKE-INV-2` |
+| USER-REVOKE-INV-3 | Un utente senza remember token (stringa vuota) non viene salvato né modificato (riga 55). | `USER-REVOKE-INV-3` |
+| USER-REVOKE-INV-4 | I refresh token sono revocati per **tutti** i token dell'utente, anche per quelli già revocati: un refresh token valido rigenererebbe l'accesso (righe 42-45, sottoquery su `oauth_access_tokens`). | — (non dimostrato) |
 
-Provate da `tests/Feature/Auth/DeletedAccountAccessTest.php` (`revoking access ...`), che richiede un database di test
-migrato: il group si aggiunge quando quei casi girano verdi.
-
-## Effetti collaterali
-
-- `UPDATE oauth_refresh_tokens SET revoked = 1`, `UPDATE oauth_access_tokens SET revoked = 1` (connessione dei modelli User).
-- Eventuale `save()` dell'utente con il nuovo `remember_token`.
-
-## Errori
-
-- Nessuna gestione: un errore del database si propaga al chiamante (che lavora in transazione).
-
-## Non fa
-
-- Non valorizza `deleted_at` e non blocca il login: lo fa il provider di `BuildActiveUserProviderAction`.
-- Non distrugge le sessioni web aperte: cadono alla richiesta successiva perché il provider non trova più l'utente.
-- Non cancella righe: i token restano come registro.
-Chiude ogni accesso già concesso a un utente (SEC-05). Codice: `app/Actions/Auth/RevokeUserAccessAction.php:21-57`.
-
-## Input
-
-- `BaseUser $user`: l'utente di cui chiudere gli accessi (`execute`, riga 28).
-
-## Output
-
-- `int`: numero di access token Passport che erano attivi e sono stati revocati (riga 56).
-
-## Invarianti
-
-| ID | Regola | Prova nel codice | Test esistente (senza group) |
-|---|---|---|---|
-| `USER-REVOKE-INV-1` | Sono revocati solo gli access token dell'utente con `revoked = false`; il ritorno è il loro numero. | righe 30-34, 43-47, 56 | `tests/Feature/Auth/DeletedAccountAccessTest.php:99` |
-| `USER-REVOKE-INV-2` | Sono revocati i refresh token di tutti i token dell'utente, anche di quelli già revocati. | righe 38-41 | `tests/Feature/Auth/DeletedAccountAccessTest.php:99` |
-| `USER-REVOKE-INV-3` | Il remember token è ruotato (stringa casuale di 60 caratteri) solo se non è vuoto; se è vuoto l'utente non è salvato. | righe 51-54 | `tests/Feature/Auth/DeletedAccountAccessTest.php:99,145` |
+I test (`tests/Feature/Auth/DeletedAccountAccessTest.php`) creano righe in `oauth_access_tokens` e `oauth_refresh_tokens` e richiedono un database di test migrato.
 
 ## Effetti collaterali
 
-Ordine di esecuzione: lettura degli id dei token attivi, update dei refresh token, update degli access token (solo se ce n'è almeno uno), eventuale `save()` dell'utente per il remember token. Nessuna transazione esplicita, nessun evento dispatchato dall'Action (gli eventi Eloquent del `save()` restano quelli del modello), nessuna coda, nessun servizio esterno.
+In quest'ordine:
+
+1. `SELECT id FROM oauth_access_tokens WHERE user_id = ? AND revoked = 0` (elenco in memoria).
+2. `UPDATE oauth_refresh_tokens SET revoked = 1` per tutti i refresh token non revocati dei token dell'utente (una sola query con sottoquery).
+3. `UPDATE oauth_access_tokens SET revoked = 1` per gli id letti al punto 1 (solo se l'elenco non è vuoto).
+4. `users.remember_token` ruotato con `save()` sul modello passato (solo se non vuoto): scattano gli eventi Eloquent del modello utente.
+
+Nessuna transazione propria (la apre il chiamante), nessuna coda, nessuna email, nessuna chiamata esterna.
 
 ## Errori
 
-- L'Action non lancia eccezioni proprie; gli errori del database si propagano.
+- Nessuna eccezione propria. Errori del database (connessione `user`, tabelle Passport assenti) risalgono al chiamante e, in `DeleteAccountAction`, annullano la transazione.
 
 ## Non fa
 
-- Non valorizza né azzera `deleted_at` e non cancella l'utente (il blocco dell'account è del provider, vedi [build-active-user-provider-action](build-active-user-provider-action.md)).
-- Non invalida le sessioni web: cadono alla richiesta successiva perché il provider non trova più l'utente (docblock, righe 16-19).
-- Marker `@contract` e `@see` presenti nel docblock della classe.
+- Non cancella l'utente né imposta `deleted_at`: lo fa il chiamante (`DeleteAccountAction`, modulo Gdpr).
+- Non chiude le sessioni web su altri dispositivi: cadono alla richiesta successiva perché [BuildActiveUserProviderAction](build-active-user-provider-action.md) non trova più l'utente.
+- Non revoca i client OAuth dell'utente né altri token (Sanctum, personal access token fuori da `oauth_access_tokens`).
+- Non controlla i permessi di chi la invoca.
+
+## Limiti noti
+
+- Limite noto: il tipo del parametro è la classe interna `BaseUser`, non `UserContract`. Un modello utente di progetto che non estende `BaseUser` non può usarla.
+- Esiste [RevokeAllUserTokensAction](revoke-all-user-tokens-action.md) (solo access token, senza refresh né remember token): non è un sostituto di questa.
