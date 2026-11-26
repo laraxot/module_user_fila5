@@ -3,10 +3,29 @@ title: "User Module Documentation"
 type: documentation
 tags: [module, documentation]
 created: 2026-06-05
-updated: 2026-07-27
+updated: 2026-11-19
+qmd: "documentazione completa indice overview funzionalità principali autenticazione autorizzazione modelli trait disponibili created updated hasteams hasroles hastenants"
 ---
 
 # Modulo User - Documentazione Completa
+
+## Indice della documentazione
+
+Questo README e' la porta d'ingresso della cartella `docs/` del modulo. La mappa
+curata a sei voci e' in [index.md](./index.md); l'archivio storico (ex `docs/bmad`,
+`docs/wiki`, `docs/stories` concluse, analisi e file stale) e' in
+[archive/docs-legacy/](../archive/docs-legacy/).
+
+| Area | Dove |
+|------|------|
+| Indice curato | [index.md](./index.md) |
+| Decisioni (ADR) | [adr/](./adr/) · [indice](./adr/README.md) |
+| Contratti delle Action | [contracts/](./contracts/) · [copertura](./contracts/README.md) |
+| Story attive | [stories/](./stories/) — le concluse sono in `archive/docs-legacy/stories/` |
+| Manuali utente | [manuals/README.md](./manuals/README.md) — [frontoffice](./manuals/manuale-utente-frontoffice.md), [admin](./manuals/manuale-admin.md), [super admin](./manuals/manuale-super-admin.md), [altre figure](./manuals/manuale-altre-figure.md), [riferimento](./manuals/manuale-utente.md) |
+| Storico / documenti superati | [archive/docs-legacy/](../archive/docs-legacy/) |
+
+Regole sui nomi: kebab-case, **nessuna data nel nome** di file o cartelle (la data va nel frontmatter `created:`/`updated:`).
 
 ## Overview
 
@@ -64,6 +83,16 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 - **app/**: Home for all PHP functional code (mapped via PSR-4).
 - **database/**: Strictly lowercase for migrations/factories/seeders.
 
+### PHPStan — dove guardare (DRY)
+
+| Ruolo | Path |
+|-------|------|
+| Procedura / saturazione host | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
+| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](../archive/docs-legacy/stories/0130-phpstan-zero-errors-user.story.md) |
+| Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
+| Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
+
+Memoria: `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1` (da `laravel/`). Non lanciare `analyse Modules` se host saturo.
 ### PHPStan Memory Management
 Per evitare crash dei parallel workers su analisi massive, usare sempre:
 `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
@@ -97,7 +126,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Requisiti
 
 - PHP 8.3+
-- Laravel 11/12
+- Laravel 13
 - Spatie Laravel Permission
 - Filament v5
 
@@ -105,7 +134,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Standard Rules & Workflow
 
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[Context Engineering](../../../../bashscripts/ai/wiki/concepts/context-token-optimization.md#context-engineering)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ## Documentation
@@ -1217,6 +1246,7 @@ See [roadmap.md](./roadmap.md) for details.
 - [Laravel Authorization](https://laravel.com/docs/12.x/authorization)
 - [Spatie Permission](https://spatie.be/docs/laravel-permission)
 - [Laravel Sanctum](https://laravel.com/docs/12.x/sanctum)
+- [Filament Authentication](https://filamentphp.com/docs/5.x/users/overview)
 - [Filament Authentication](https://filamentphp.com/docs/4.x/panels/users)
 
 ---
@@ -2317,7 +2347,7 @@ See [roadmap.md](./roadmap.md) for details.
 
 **Module**: User (Authentication & Authorization)
 **Version**: 2.5.0
-**Framework**: Laravel 12 + Filament 4
+**Framework**: Laravel 13 + Filament 5
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅

@@ -46,7 +46,7 @@ test('the callback page answers with a real redirect, not an empty 200', functio
 
     // senza `code` Google non e' tornato: il cittadino rientra nel login, con status 302 (mai una pagina vuota con 200)
     get('/it/auth/login/google/callback')->assertStatus(302)->assertRedirect('/it/auth/login');
-});
+})->group('USER-SOCIAL-CALLBACK-INV-3');
 
 test('the entry language is read and consumed by the Action', function (): void {
     config(['services.google' => ['client_id' => 'test-client', 'client_secret' => 'test-secret', 'redirect' => 'http://localhost/it/auth/login/google/callback']]);
@@ -56,4 +56,4 @@ test('the entry language is read and consumed by the Action', function (): void 
         ->assertRedirect('/en/auth/login');
 
     expect(session()->has(ProcessCallbackSession::KEY))->toBeFalse();
-});
+})->group('USER-SOCIAL-CALLBACK-INV-1');

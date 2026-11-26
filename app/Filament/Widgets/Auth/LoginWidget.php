@@ -40,12 +40,15 @@ class LoginWidget extends BaseAuthWidget
 
     /**
      * @return class-string<UserForm>
+     *
+     * @see docs/bmad/livewire-widget-decision-log.md
      */
     protected static function formClass(): string
     {
         return UserForm::class;
     }
 
+    /** @see docs/bmad/livewire-widget-decision-log.md */
     protected static function schemaMethod(): string
     {
         return 'getLoginFormSchema';

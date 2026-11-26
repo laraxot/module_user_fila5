@@ -10,6 +10,11 @@ namespace Modules\User\Actions\Socialite;
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-domain-allow-list-action.md
+ *
+ * @contract docs/contracts/get-domain-allow-list-action.md
+ */
 class GetDomainAllowListAction
 {
     use QueueableAction;

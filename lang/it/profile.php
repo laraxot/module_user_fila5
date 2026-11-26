@@ -230,4 +230,6 @@ return [
         'button' => 'Elimina account',
         'delete' => 'Elimina account',
     ],
+    'my_profile' => 'Il mio profilo',
+    'subheading' => 'I tuoi dati personali e la password',
 ];

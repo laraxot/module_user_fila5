@@ -6,7 +6,7 @@ return [
     'fields' => [
         'user' => [
             'name' => [
-                'label' => 'user.name',
+                'label' => 'Utente',
             ],
         ],
         'id' => [

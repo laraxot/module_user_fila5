@@ -31,10 +31,11 @@ test('the users provider is the one that excludes deleted accounts', function ()
 
     Assert::assertInstanceOf(EloquentUserProvider::class, $provider);
     Assert::assertNotNull($provider->getQueryCallback());
-});
+})->group('USER-PROVIDER-INV-3');
 
 test('the users provider remains usable while a legacy users table lacks deleted_at', function (): void {
     $provider = Auth::createUserProvider('users');
+    Assert::assertNotNull($provider);
     Assert::assertInstanceOf(EloquentUserProvider::class, $provider);
     $callback = $provider->getQueryCallback();
     Assert::assertNotNull($callback);
@@ -47,7 +48,7 @@ test('the users provider remains usable while a legacy users table lacks deleted
     $callback($query);
 
     Assert::assertStringNotContainsString('where `users_legacy_provider_test`.`deleted_at`', $query->toRawSql());
-});
+})->group('USER-PROVIDER-INV-2');
 
 test('a deleted account is not found by id, credentials or remember token', function (): void {
     $provider = Auth::createUserProvider('users');
@@ -64,14 +65,14 @@ test('a deleted account is not found by id, credentials or remember token', func
     Assert::assertNull($provider->retrieveById($user->getKey()));
     Assert::assertNull($provider->retrieveByCredentials(['email' => $email]));
     Assert::assertNull($provider->retrieveByToken($user->getKey(), $rememberToken));
-});
+})->group('USER-PROVIDER-INV-1');
 
 test('web login fails for a deleted account with the right password', function (): void {
     $user = UserFactory::new()->createOne(['deleted_at' => now()]);
 
     Assert::assertFalse(Auth::guard('web')->attempt(['email' => (string) $user->email, 'password' => 'password123']));
     Assert::assertTrue(Auth::guard('web')->guest());
-});
+})->group('USER-PROVIDER-INV-4');
 
 test('web login still works for an active account', function (): void {
     $user = UserFactory::new()->createOne();
@@ -88,13 +89,13 @@ test('api login answers 401 for a deleted account and issues no token', function
         ->assertJsonPath('success', false);
 
     Assert::assertSame(0, OauthToken::query()->where('user_id', $user->getKey())->count());
-});
+})->group('USER-PROVIDER-INV-4');
 
 test('the passport password grant does not find a deleted account', function (): void {
     $user = UserFactory::new()->createOne(['deleted_at' => now()]);
 
     Assert::assertNull(User::findForPassport((string) $user->email));
-});
+})->group('USER-PROVIDER-INV-4');
 
 test('revoking access revokes access and refresh tokens and rotates the remember token', function (): void {
     $oldRememberToken = Str::random(20);
@@ -140,7 +141,7 @@ test('revoking access revokes access and refresh tokens and rotates the remember
     Assert::assertIsString($newRememberToken);
     Assert::assertNotSame($oldRememberToken, $newRememberToken);
     Assert::assertNull(Auth::createUserProvider('users')?->retrieveByToken($user->getKey(), $oldRememberToken));
-});
+})->group('USER-REVOKE-INV-1', 'USER-REVOKE-INV-2');
 
 test('revoking access leaves a user without a remember token untouched', function (): void {
     $user = UserFactory::new()->createOne(['remember_token' => null]);
@@ -148,4 +149,4 @@ test('revoking access leaves a user without a remember token untouched', functio
     app(RevokeUserAccessAction::class)->execute($user);
 
     Assert::assertNull($user->fresh()?->remember_token);
-});
+})->group('USER-REVOKE-INV-3');

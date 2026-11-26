@@ -4,7 +4,7 @@ declare(strict_types=1);
 // ⚠️ CRITICAL RULE: NEVER use ->label(), ->placeholder(), ->helperText()
 // Translations are handled automatically by LangServiceProvider via 5-level keys:
 // user::socialite.settings.form.{field}.{type}
-// See: .windsurf/rules/no-filament-labels.mdc
+// See: .windsurf/rules/translations.md
 
 namespace Modules\User\Filament\Pages;
 
@@ -64,6 +64,14 @@ class SocialiteProviderSettingsPage extends XotBasePage
     public function mount(): void
     {
         $this->loadProviderConfigs();
+
+        // Il form legge e salva in $this->data (statePath 'data'): senza questa riga i campi restavano vuoti e
+        // Livewire segnalava "property data.google.enabled cannot be found".
+        $this->data = [
+            'google' => $this->google,
+            'github' => $this->github,
+            'microsoft' => $this->microsoft,
+        ];
     }
 
     /**

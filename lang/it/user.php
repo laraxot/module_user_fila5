@@ -353,6 +353,7 @@ return [
         ],
     ],
     'actions' => [
+        'change_password' => 'Cambia password',
         'create' => [
             'label' => 'Crea Utente',
             'icon' => 'heroicon-o-plus',
@@ -430,18 +431,22 @@ return [
         ],
         'logout' => [
             'icon' => 'logout',
+            'label' => 'logout',
         ],
         'profile' => [
             'icon' => 'profile',
+            'label' => 'profile',
         ],
         'reorderRecords' => [
             'icon' => 'reorderRecords',
         ],
         'openColumnManager' => [
             'icon' => 'openColumnManager',
+            'label' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
             'icon' => 'applyTableColumnManager',
+            'label' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
             'icon' => 'resetFilters',
@@ -459,12 +464,15 @@ return [
         ],
         'changePassword' => [
             'icon' => 'changePassword',
+            'label' => 'Cambia password',
+            'tooltip' => 'Cambia password',
         ],
         'layout' => [
             'icon' => 'layout',
         ],
         'export_xls' => [
             'icon' => 'export_xls',
+            'label' => 'export_xls',
         ],
         'cancel' => [
             'icon' => 'cancel',
@@ -477,9 +485,14 @@ return [
         ],
         'resetColumnManager' => [
             'icon' => 'resetColumnManager',
+            'label' => 'resetColumnManager',
         ],
         'removeAllFilters' => [
             'icon' => 'removeAllFilters',
+            'label' => 'removeAllFilters',
+        ],
+        'deselectAll' => [
+            'label' => 'deselectAll',
         ],
     ],
     'messages' => [
@@ -765,5 +778,15 @@ return [
         ],
     ],
     'label' => 'Utente',
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+        'worker' => [
+            'label' => 'worker',
+            'heading' => 'worker',
+        ],
+    ],
     'plural_label' => 'User (Plurale)',
 ];

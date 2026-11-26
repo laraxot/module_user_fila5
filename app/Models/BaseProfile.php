@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\Media\Models\Media;
 use Modules\User\Models\Traits\IsProfileTrait;
@@ -62,7 +63,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  *
  * @mixin \Eloquent
  */
-// @see Modules/Xot/docs/spatie-schemaless-attributes.md
+// @see Modules/Xot/docs/models.md
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
@@ -210,12 +211,64 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         });
     }
 
-    /** @return array<string, string> */
+    /**
+     * Tipo PK letto dallo schema reale: alcuni tenant/progetti hanno `profiles.id`
+     * UUID/ULID (stringa). Con `int` fisso un UUID "01a1…" diventava `1` e i link
+     * "modifica" Filament andavano in 404.
+     *
+     * Senza return type nativo: i figli con HasUuids/HasUlids ridefiniscono la
+     * firma del trait; una firma più stretta qui causerebbe errore fatale.
+     *
+     * @see docs/wiki/concepts/profile-id-bigint-uuid-fix.md
+     *
+     * @return string
+     */
+    #[\Override]
+    public function getKeyType()
+    {
+        return $this->hasStringKey() ? 'string' : 'int';
+    }
+
+    /**
+     * @see docs/wiki/concepts/profile-id-bigint-uuid-fix.md
+     *
+     * @return bool
+     */
+    #[\Override]
+    public function getIncrementing()
+    {
+        return ! $this->hasStringKey();
+    }
+
+    /** @var array<string, bool> chiave "connessione.tabella" → id stringa (UUID/ULID) */
+    private static array $stringKeyByTable = [];
+
+    private function hasStringKey(): bool
+    {
+        $default = config('database.default');
+        $connection = $this->getConnectionName() ?? (\is_string($default) ? $default : '');
+        $cacheKey = $connection.'.'.$this->getTable();
+
+        if (! \array_key_exists($cacheKey, self::$stringKeyByTable)) {
+            try {
+                $type = Schema::connection($connection)->getColumnType($this->getTable(), $this->getKeyName());
+                self::$stringKeyByTable[$cacheKey] = \in_array($type, ['varchar', 'char', 'string', 'uuid', 'guid', 'text'], true);
+            } catch (\Throwable) {
+                // Tabella non migrata o DB irraggiungibile: storico = intero.
+                self::$stringKeyByTable[$cacheKey] = false;
+            }
+        }
+
+        return self::$stringKeyByTable[$cacheKey];
+    }
+
+    /**
+     * @return array<string, string>
+     */
     #[\Override]
     protected function casts(): array
     {
         return [
-            'id' => 'integer',
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

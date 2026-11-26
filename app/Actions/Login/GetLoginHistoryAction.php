@@ -19,6 +19,10 @@ use Modules\User\Actions\Login\Concerns\ResolvesLoginLogQuery;
  * GetLoginStatsAction ("tutto AuthenticationLog").
  *
  * I bucket sono calcolati sul timestamp UTC della colonna configurata.
+ *
+ * @see docs/contracts/get-login-history-action.md
+ *
+ * @contract docs/contracts/get-login-history-action.md
  */
 final class GetLoginHistoryAction
 {

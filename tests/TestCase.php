@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
-use Illuminate\Database\DatabaseManager;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -14,6 +13,8 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema as FilamentSchema;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
+use Illuminate\Contracts\Console\Kernel;
+use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -22,6 +23,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -34,8 +37,6 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
-use Mockery\CompositeExpectation;
-use Mockery\Expectation;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -48,6 +49,8 @@ use function Safe\json_encode;
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+ *
+ * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md perche' `$connectionsToTransact` non elenca connessioni di progetto
  *
  * @property User|null $user
  * @property User|null $owner
@@ -109,6 +112,8 @@ abstract class TestCase extends XotBaseTestCase
      *
      * Nessun tipo di ritorno nativo: il metodo del trait non lo dichiara.
      *
+     * @see Modules/User/docs/sync-marker-repair-php-lang-tests.md
+     *
      * @return void
      */
     public function beginDatabaseTransaction()
@@ -117,7 +122,7 @@ abstract class TestCase extends XotBaseTestCase
             static::$userSchemaMigrated = true;
 
             if (config('database.default') !== 'sqlite') {
-                $this->app?->make(\Illuminate\Contracts\Console\Kernel::class)
+                $this->app?->make(Kernel::class)
                     ->call('migrate', ['--force' => true]);
             }
         }
@@ -180,12 +185,20 @@ abstract class TestCase extends XotBaseTestCase
     public static ?Collection $users = null;
 
     /**
-     * Come `Tests\TestCase`: anche `mariadb` (default in CI) e `fixcity` (Profile del progetto)
-     * vanno in transazione, altrimenti le righe scritte dai test restano nel DB `_test`.
+     * Come `Tests\TestCase`: anche `mariadb` (default in CI) va in transazione, altrimenti le
+     * righe scritte dai test restano nel DB `_test`.
+     *
+     * Qui NON si elencano connessioni di progetto. `fixcity` era in questo elenco: e' il nome
+     * del modulo-progetto di `base_fixcity_fila5`, da cui questa TestCase e' stata copiata, e in
+     * `base_quaeris_fila5` non esiste nessuna connessione con quel nome. Effetto misurato:
+     * `InvalidArgumentException: Database connection [fixcity] not configured.` in `setUp()`,
+     * cioe' OGNI test del modulo User rosso prima di eseguire una sola asserzione.
+     * Il modulo User e' condiviso fra i progetti: la connessione del Profile la aggiunge il
+     * progetto, non il modulo. `connectionsToTransact()` scarta comunque i nomi non configurati.
      *
      * @var list<string>
      */
-    protected $connectionsToTransact = ['mysql', 'mariadb', 'user', 'fixcity'];
+    protected $connectionsToTransact = ['mysql', 'mariadb', 'user'];
 
     public function setupFilamentAdminPanel(): void
     {
@@ -659,6 +672,9 @@ abstract class TestCase extends XotBaseTestCase
      * Effetto in CI su MariaDB: nessuna notifica di approvazione, scarto o chiusura (TicketLifecycleNotificationTest, area personale).
      * Lo skip del manager conta i nomi restituiti qui, quindi ogni nome deve corrispondere a una sola transazione aperta.
      *
+     * I nomi senza configurazione si saltano: la lista e' condivisa tra i progetti del monorepo e `fixcity` esiste solo
+     * dove il modulo Fixcity e' attivo; altrove `connection('fixcity')` lanciava «not configured» e nessun test partiva.
+     *
      * @return list<string>
      */
     protected function connectionsToTransact()
@@ -668,9 +684,20 @@ abstract class TestCase extends XotBaseTestCase
             return $this->connectionsToTransact;
         }
 
+        /** @var array<string, mixed> $configured */
+        $configured = config('database.connections', []);
+
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
+            // Un nome non configurato fa lanciare `DatabaseManager::connection()`, e la
+            // DatabaseTransactions lo invoca dentro `setUp()`: l'intero file di test muore
+            // prima della prima asserzione. Un progetto che non monta un modulo e' uno
+            // scenario legittimo, non un errore: la connessione mancante si salta.
+            if (! \array_key_exists($name, $configured)) {
+                continue;
+            }
+
             $id = spl_object_id($database->connection($name));
             if (isset($seen[$id])) {
                 continue;

@@ -16,6 +16,10 @@ use Spatie\QueueableAction\QueueableAction;
  * `spid.<CF>@noemail.local` con `email_verified_at` null, e il middleware `verified` di Laravel li bloccherebbe per sempre
  * (il link di verifica andrebbe a un indirizzo inesistente). Non rende l'email "verificata": le mail al cittadino
  * continuano a partire solo verso indirizzi confermati.
+ *
+ * @contract docs/contracts/has-verified-identity-action.md
+ *
+ * @see docs/contracts/has-verified-identity-action.md
  */
 final class HasVerifiedIdentityAction
 {
@@ -24,6 +28,7 @@ final class HasVerifiedIdentityAction
     /** Valori di `users.auth_method` scritti dai controller SPID/CIE del tema Sixteen. */
     public const array TRUSTED_IDENTITY_METHODS = ['spid', 'cie'];
 
+    /** @see docs/contracts/has-verified-identity-action.md */
     public function execute(?Authenticatable $user): bool
     {
         if ($user === null) {

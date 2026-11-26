@@ -37,7 +37,7 @@ describe('Login User Action', function (): void {
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
-    });
+    })->group('SOCIALITE-LOGIN-INV-4');
 
     test('refuses a Google login for an account its owner deleted', function (): void {
         /* @var TestCase $this */
@@ -59,7 +59,7 @@ describe('Login User Action', function (): void {
         Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertGuest();
         Event::assertNotDispatched(SocialiteUserConnected::class);
-    });
+    })->group('SOCIALITE-LOGIN-INV-3');
 
     test('throws when related user is not authenticatable', function (): void {
         /** @var TestCase $this */

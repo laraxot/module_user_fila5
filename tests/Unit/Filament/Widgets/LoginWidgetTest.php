@@ -1,8 +1,8 @@
 <?php
 
 declare(strict_types=1);
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\TextInput;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\BaseAuthWidget;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -17,7 +17,6 @@ uses(TestCase::class);
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
         new LoginWidget;
-
     });
 
     test('login widget has correct form schema', function (): void {

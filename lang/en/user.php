@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'actions' => [
+        'change_password' => 'Change password',
         'attach_user' => 'Attach User',
         'associate_user' => 'Associate User',
         'user_actions' => 'User Actions',
@@ -182,4 +183,6 @@ return [
             'label' => 'Organization',
         ],
     ],
+    'label' => 'User',
+    'plural_label' => 'Users',
 ];

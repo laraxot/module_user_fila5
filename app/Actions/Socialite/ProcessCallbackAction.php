@@ -13,6 +13,11 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/process-callback-action.md
+ *
+ * @contract docs/contracts/process-callback-action.md
+ */
 final class ProcessCallbackAction
 {
     use QueueableAction;

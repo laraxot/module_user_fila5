@@ -36,7 +36,7 @@ describe('SetDefaultRolesBySocialiteUserAction', function (): void {
         $assignedRole = $user->roles()->first();
         Assert::assertInstanceOf(Role::class, $assignedRole);
         Assert::assertSame($role->id, $assignedRole->getKey());
-    });
+    })->group('SOCIALITE-DEFAULT-ROLES-INV-1');
 
     test('does nothing for unrecognized domain', function () use ($getMockUser): void {
         $user = UserFactory::new()->createOne();
@@ -45,7 +45,7 @@ describe('SetDefaultRolesBySocialiteUserAction', function (): void {
         app(SetDefaultRolesBySocialiteUserAction::class)->execute('google', $user, $oauthUser);
 
         Assert::assertSame(0, $user->roles()->count());
-    });
+    })->group('SOCIALITE-DEFAULT-ROLES-INV-2');
 
     test('assigns default roles for first party domain', function () use ($getMockUser): void {
         $user = UserFactory::new()->createOne();
