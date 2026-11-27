@@ -41,11 +41,17 @@ class RegisterWidget extends XotBaseSchemaWidget
 
     protected static ?string $maxHeight = '600px';
 
+    /**
+     * @return class-string<UserForm>
+     *
+     * @see docs/bmad/livewire-widget-decision-log.md
+     */
     protected static function formClass(): string
     {
         return UserForm::class;
     }
 
+    /** @see docs/bmad/livewire-widget-decision-log.md */
     protected static function schemaMethod(): string
     {
         return 'getRegisterFormSchema';

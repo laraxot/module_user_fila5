@@ -13,7 +13,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * 2024_01_01_000007_create_users_table.php nel metodo tableUpdate()
  * Questa migrazione è ridondante e può essere eliminata dopo verifica.
  */
+<<<<<<< .merge_file_vKqMEF
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_W7eUUS
     /**
      * Run the migrations.
      */
@@ -85,7 +90,11 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
+<<<<<<< .merge_file_vKqMEF
             if ('uuid' === $this->getColumnType('id')) {
+=======
+            if ($this->getColumnType('id') === 'uuid') {
+>>>>>>> .merge_file_W7eUUS
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

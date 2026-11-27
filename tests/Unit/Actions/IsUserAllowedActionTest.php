@@ -30,7 +30,7 @@ describe('IsUserAllowedAction', function (): void {
         $oauthUser = $getMockUser('user@example.com');
 
         Assert::assertTrue($action->execute($oauthUser));
-    });
+    })->group('SOCIALITE-ALLOWED-INV-1');
 
     test('can be resolved from container', function (): void {
         $action = app(IsUserAllowedAction::class);

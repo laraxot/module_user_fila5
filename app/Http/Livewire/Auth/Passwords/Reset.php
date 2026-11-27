@@ -76,7 +76,11 @@ class Reset extends Component
         $translated = trans($response);
         Assert::string($translated);
 
+<<<<<<< .merge_file_gl6d70
         if (Password::PASSWORD_RESET === $response) {
+=======
+        if ($response === Password::PASSWORD_RESET) {
+>>>>>>> .merge_file_kx4jFW
             session()->flash($translated);
 
             return redirect(route('home'));

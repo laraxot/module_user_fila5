@@ -9,6 +9,11 @@ namespace Modules\User\Actions\Socialite;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/is-registration-enabled-action.md
+ *
+ * @contract docs/contracts/is-registration-enabled-action.md
+ */
 class IsRegistrationEnabledAction
 {
     use QueueableAction;

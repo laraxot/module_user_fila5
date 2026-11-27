@@ -13,6 +13,10 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Questa action crea un nuovo client OAuth2 con le configurazioni specificate.
  * Invocazione: app(CreateClientAction::class)->execute(...)
+ *
+ * @see docs/contracts/create-personal-access-client-action.md
+ *
+ * @contract docs/contracts/create-personal-access-client-action.md
  */
 class CreatePersonalAccessClientAction
 {

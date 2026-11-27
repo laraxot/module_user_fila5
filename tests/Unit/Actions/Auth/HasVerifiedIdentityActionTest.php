@@ -15,19 +15,19 @@ uses(TestCase::class);
 
 test('a guest has no verified identity', function (): void {
     Assert::assertFalse(app(HasVerifiedIdentityAction::class)->execute(null));
-});
+})->group('USER-VERIFIED-INV-1');
 
 test('a confirmed email is a verified identity', function (): void {
     $user = UserFactory::new()->makeOne(['email_verified_at' => now()]);
 
     Assert::assertTrue(app(HasVerifiedIdentityAction::class)->execute($user));
-});
+})->group('USER-VERIFIED-INV-2');
 
 test('an unconfirmed email without SPID or CIE is not a verified identity', function (): void {
     $user = UserFactory::new()->makeOne(['email_verified_at' => null]);
 
     Assert::assertFalse(app(HasVerifiedIdentityAction::class)->execute($user));
-});
+})->group('USER-VERIFIED-INV-2');
 
 test('SPID and CIE logins are verified identities even without an email', function (string $method): void {
     $user = UserFactory::new()->makeOne([
@@ -38,4 +38,4 @@ test('SPID and CIE logins are verified identities even without an email', functi
 
     Assert::assertTrue(app(HasVerifiedIdentityAction::class)->execute($user));
     Assert::assertFalse($user->hasVerifiedEmail(), 'the email itself must stay unverified: no mail goes to @noemail.local');
-})->with(['spid', 'cie']);
+})->with(['spid', 'cie'])->group('USER-VERIFIED-INV-3');

@@ -7,6 +7,11 @@ namespace Modules\User\Actions\User;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/user-create-user-action.md
+ *
+ * @contract docs/contracts/user-create-user-action.md
+ */
 class CreateUserAction
 {
     use QueueableAction;

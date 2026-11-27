@@ -36,7 +36,7 @@ describe('RegisterOauthUserAction', function (): void {
         $user = User::where('email', $email)->first();
         Assert::assertNotNull($user);
         Assert::assertSame('Mario', $user->name);
-    });
+    })->group('SOCIALITE-REGISTER-OAUTH-INV-1');
 
     test('dispatches registered event', function () use ($getMockUser): void {
         $oauthUser = $getMockUser();
@@ -52,7 +52,7 @@ describe('RegisterOauthUserAction', function (): void {
 
         Assert::assertCount(1, $dispatchedEvents);
         Assert::assertSame($socialiteUser->id, $dispatchedEvents[0]->socialiteUser->id);
-    });
+    })->group('SOCIALITE-REGISTER-OAUTH-INV-2');
 
     test('registers users with different emails successfully', function () use ($getMockUser): void {
         $email1 = 'user1-'.uniqid().'@example.com';

@@ -4,6 +4,14 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< .merge_file_OmxBeu
+=======
+        'user' => [
+            'name' => [
+                'label' => 'Utente',
+            ],
+        ],
+>>>>>>> .merge_file_IoTfm0
         'id' => [
             'label' => 'ID',
         ],

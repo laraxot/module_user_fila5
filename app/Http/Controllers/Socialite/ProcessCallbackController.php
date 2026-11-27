@@ -42,7 +42,11 @@ class ProcessCallbackController extends Controller
 
         // Try to retrieve existing user
         $oauthUser = app(RetrieveOauthUserAction::class)->execute($provider);
+<<<<<<< .merge_file_ihBSoG
         if (null === $oauthUser) {
+=======
+        if ($oauthUser === null) {
+>>>>>>> .merge_file_AZvxas
             return app(RedirectToLoginAction::class)->execute('auth.login-failed');
         }
 
@@ -57,7 +61,11 @@ class ProcessCallbackController extends Controller
         $socialiteUser = app(RetrieveSocialiteUserAction::class)->execute($provider, $oauthUser);
         if ($socialiteUser) {
             $socialiteUserObj = $socialiteUser->user;
+<<<<<<< .merge_file_ihBSoG
             if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
+=======
+            if ($socialiteUserObj === null || ! $socialiteUserObj->canAccessSocialite()) {
+>>>>>>> .merge_file_AZvxas
                 return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
             }
             // Associate default roles to the existing "real" user, if needed
@@ -80,21 +88,33 @@ class ProcessCallbackController extends Controller
         $user = $user_class::query()->firstWhere(['email' => $oauthUser->getEmail()]);
 
         // Handle registration
+<<<<<<< .merge_file_ihBSoG
         if (null !== $user) {
+=======
+        if ($user !== null) {
+>>>>>>> .merge_file_AZvxas
             $socialiteUser = app(RegisterSocialiteUserAction::class)->execute($provider, $oauthUser, $user);
         } else {
             $socialiteUser = app(RegisterOauthUserAction::class)->execute($provider, $oauthUser);
         }
 
         $socialiteUserObj = $socialiteUser->user;
+<<<<<<< .merge_file_ihBSoG
         if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
+=======
+        if ($socialiteUserObj === null || ! $socialiteUserObj->canAccessSocialite()) {
+>>>>>>> .merge_file_AZvxas
             return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
         }
 
         // Verifichiamo prima se l'utente può accedere al socialite
         /** @var UserContract|null $authUser */
         $authUser = Auth::user();
+<<<<<<< .merge_file_ihBSoG
         if (null !== $authUser && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
+=======
+        if ($authUser !== null && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
+>>>>>>> .merge_file_AZvxas
             return redirect()->route(
                 optional(Auth::check()) ? 'filament.user.pages.dashboard' : 'filament.user.auth.login',
             );

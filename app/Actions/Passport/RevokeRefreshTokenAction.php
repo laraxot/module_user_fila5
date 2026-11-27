@@ -9,6 +9,10 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * RevokeRefreshTokenAction: Revoca un refresh token OAuth2.
+ *
+ * @see docs/contracts/revoke-refresh-token-action.md
+ *
+ * @contract docs/contracts/revoke-refresh-token-action.md
  */
 class RevokeRefreshTokenAction
 {

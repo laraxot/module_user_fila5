@@ -21,6 +21,11 @@ use Modules\User\Models\AuthenticationLog;
  * Never type-hint the concrete BaseUser: that is an internal
  * abstract implementation, not the consumer boundary.
  *
+<<<<<<< .merge_file_kuhygn
+=======
+ * @see docs/contracts/record-authentication-log-action.md
+ *
+>>>>>>> .merge_file_E9vb1h
  * @contract docs/contracts/record-authentication-log-action.md
  */
 final class RecordAuthenticationLogAction

@@ -86,7 +86,11 @@ function userResourceFormFindByName(array $components, string $name): Field|Entr
         }
 
         $found = userResourceFormFindByName(userResourceFormChildren($component), $name);
+<<<<<<< .merge_file_ZMUsnq
         if (null !== $found) {
+=======
+        if ($found !== null) {
+>>>>>>> .merge_file_ZAAJQ8
             return $found;
         }
     }

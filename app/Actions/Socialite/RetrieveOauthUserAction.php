@@ -15,6 +15,11 @@ use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Events\InvalidState;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/retrieve-oauth-user-action.md
+ *
+ * @contract docs/contracts/retrieve-oauth-user-action.md
+ */
 class RetrieveOauthUserAction
 {
     use QueueableAction;

@@ -20,4 +20,4 @@ it('returns failure when password is incorrect', function (): void {
 
     Assert::assertFalse($result['success']);
     Assert::assertStringContainsString((string) 'password', (string) $result['message']);
-});
+})->group('DELETE-USER-INV-1');

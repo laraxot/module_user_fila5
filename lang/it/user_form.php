@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+        'name' => [
+            'label' => 'Nome visualizzato',
+            'helper_text' => 'Il nome mostrato nel sito e nei pannelli.',
+            'placeholder' => 'Inserisci il nome visualizzato',
+            'description' => 'Nome visualizzato',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Mario',
@@ -38,28 +47,37 @@ return [
             'label' => 'Ricordami',
             'description' => 'Mantieni la sessione attiva su questo dispositivo',
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
-            'placeholder' => 'remember',
+            'placeholder' => '',
         ],
+<<<<<<< .merge_file_EdWTPr
+=======
+        'token' => [
+            'label' => 'Token',
+            'description' => 'Token di sicurezza',
+            'helper_text' => 'Token usato per la verifica o il reset',
+            'placeholder' => 'Incolla il token',
+        ],
+>>>>>>> .merge_file_pr2QKO
         'state' => [
-            'description' => 'state',
+            'description' => 'Stato corrente',
             'label' => 'Stato',
-            'placeholder' => 'state',
-            'helper_text' => 'state',
+            'placeholder' => 'Seleziona lo stato',
+            'helper_text' => 'Stato del record',
         ],
         'type' => [
             'label' => 'Tipo',
-            'placeholder' => 'type',
-            'helper_text' => 'type',
-            'description' => 'type',
+            'placeholder' => 'Seleziona il tipo',
+            'helper_text' => 'Tipo di utente o record',
+            'description' => 'Tipo',
         ],
-        'created_at' => [
-            'label' => 'Creato il',
+        'roles' => [
+            'label' => 'Ruoli',
         ],
-        'name' => [
-            'label' => 'Nome',
-            'placeholder' => 'name',
-            'helper_text' => 'name',
-            'description' => 'name',
+        'is_active' => [
+            'label' => 'Attivo',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
         ],
         'token' => [
             'description' => 'token',
@@ -78,6 +96,16 @@ return [
             'label' => 'Nascondi password',
             'icon' => 'heroicon-o-eye-slash',
             'tooltip' => 'Nascondi password',
+        ],
+    ],
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+        'worker' => [
+            'label' => 'Lavoratore',
+            'heading' => 'Lavoratore',
         ],
     ],
 ];

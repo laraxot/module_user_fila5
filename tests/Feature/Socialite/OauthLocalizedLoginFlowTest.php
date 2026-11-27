@@ -25,12 +25,18 @@ uses(TestCase::class);
  * 200 vuoto e un abort() li' rompe route('login'): il redirect sta in mount() (OauthCallbackFolioPageTest).
  */
 
-/** Il modulo User e' condiviso: una lingua che il progetto non offre (es. de su Trade) si salta, non fallisce. */
+/**
+ * Il modulo User e' condiviso: una lingua che il progetto non offre (es. de su Trade) si salta, non fallisce.
+ *
+ * `Assert::markTestSkipped()` (statico) e non `test()->markTestSkipped()`: `test()` e' tipizzato
+ * `TestCall|HigherOrderTapProxy` e nessuno dei due dichiara il metodo, anche se a runtime il proxy
+ * lo gira al TestCase. Lancia la stessa `SkippedWithMessageException`.
+ */
 function oauthSkipUnsupportedLocale(string $lang): void
 {
     $supported = config('laravellocalization.supportedLocales');
     if (! is_array($supported) || ! array_key_exists($lang, $supported)) {
-        test()->markTestSkipped('Lingua '.$lang.' non offerta da questo progetto');
+        Assert::markTestSkipped('Lingua '.$lang.' non offerta da questo progetto');
     }
 }
 
@@ -104,7 +110,7 @@ test('invented languages and providers are a 404, not a server error', function 
 
 test('the login page shows the social login error to the citizen', function (): void {
     $message = 'Sign-in failed, please try again.';
-    $errors = (new ViewErrorBag)->put('default', new MessageBag(['email' => [$message]]));
+    $errors = (new ViewErrorBag())->put('default', new MessageBag(['email' => [$message]]));
 
     $html = withSession(['errors' => $errors])->get('/en/auth/login')->assertOk()->getContent();
 

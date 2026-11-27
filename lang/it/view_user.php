@@ -29,6 +29,12 @@ return [
             'tooltip' => '',
         ],
     ],
+    'sections' => [
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
+    ],
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',

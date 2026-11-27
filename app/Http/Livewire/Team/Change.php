@@ -57,7 +57,11 @@ class Change extends Component
         if (! $this->user->switchTeam($team)) {
             abort(403);
         }
+<<<<<<< .merge_file_PPivIP
         if (null !== $team) {
+=======
+        if ($team !== null) {
+>>>>>>> .merge_file_jHS21J
             // TeamSwitched::dispatch($team->fresh(), $this->user);
             TeamSwitched::dispatch($team, $this->user);
         }
@@ -80,7 +84,11 @@ class Change extends Component
         $view_params = [
             'view' => $view,
         ];
+<<<<<<< .merge_file_PPivIP
         if ([] === $this->teams) {
+=======
+        if ($this->teams === []) {
+>>>>>>> .merge_file_jHS21J
             /** @var view-string $view */
             $view = 'ui::livewire.empty';
         }

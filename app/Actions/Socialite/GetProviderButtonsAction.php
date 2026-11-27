@@ -9,6 +9,11 @@ namespace Modules\User\Actions\Socialite;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-provider-buttons-action.md
+ *
+ * @contract docs/contracts/get-provider-buttons-action.md
+ */
 class GetProviderButtonsAction
 {
     use QueueableAction;

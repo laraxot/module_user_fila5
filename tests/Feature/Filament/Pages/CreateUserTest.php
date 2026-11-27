@@ -21,7 +21,11 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     TestCase::$createUserPage = new CreateUser;
+<<<<<<< .merge_file_LDertf
     $this->page = new CreateUser();
+=======
+    $this->page = new CreateUser;
+>>>>>>> .merge_file_P2ei3t
 });
 
 test('create user page has correct resource', function (): void {

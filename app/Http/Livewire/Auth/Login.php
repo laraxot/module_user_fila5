@@ -148,7 +148,11 @@ class Login extends Component implements HasActions, HasForms
         );
 
         $adminCount = $adminRoles->count();
+<<<<<<< .merge_file_4P1qK7
         if (1 === $adminCount) {
+=======
+        if ($adminCount === 1) {
+>>>>>>> .merge_file_oozgN1
             $role = $adminRoles->first();
             Assert::isInstanceOf($role, Role::class);
             $moduleName = str_replace('::admin', '', $role->name);

@@ -9,15 +9,24 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
+<<<<<<< .merge_file_wHVcw2
 
 use function Safe\class_implements;
 use function Safe\class_uses;
 
+=======
+>>>>>>> .merge_file_W8uP64
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_wHVcw2
+=======
+use function Safe\class_implements;
+use function Safe\class_uses;
+
+>>>>>>> .merge_file_W8uP64
 /**
  * ---.
  */
@@ -38,7 +47,11 @@ class Utils
             '/',
         ));
 
+<<<<<<< .merge_file_wHVcw2
         $filesystem = new Filesystem();
+=======
+        $filesystem = new Filesystem;
+>>>>>>> .merge_file_W8uP64
 
         return $filesystem->exists($roleResourcePath);
     }

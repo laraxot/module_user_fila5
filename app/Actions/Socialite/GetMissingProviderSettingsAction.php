@@ -13,6 +13,10 @@ use function Safe\preg_match;
  *
  * `config/services.php` dichiara sempre `services.<provider>` con env() = null: la sola presenza della chiave
  * non dice che il provider sia configurato, e Socialite costruisce comunque l'URL, senza `client_id`.
+ *
+ * @see docs/contracts/get-missing-provider-settings-action.md
+ *
+ * @contract docs/contracts/get-missing-provider-settings-action.md
  */
 class GetMissingProviderSettingsAction
 {
