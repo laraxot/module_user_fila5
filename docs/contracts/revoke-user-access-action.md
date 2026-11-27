@@ -1,35 +1,16 @@
 ---
 title: "Contratto — RevokeUserAccessAction"
 type: contract
-<<<<<<< .merge_file_FWdsCl
-action: "Modules\User\Actions\Auth\RevokeUserAccessAction"
-tags: [contract, action, passport, account, sicurezza]
-created: 2026-11-24
-updated: 2026-11-24
-=======
 action: "Modules\\User\\Actions\\Auth\\RevokeUserAccessAction"
 module: User
 status: accepted
 created: 2026-11-26
 updated: 2026-11-26
 tags: [contract, action, token, passport, account-cancellato, sec-05]
->>>>>>> .merge_file_YAAtXr
 ---
 
 # RevokeUserAccessAction
 
-<<<<<<< .merge_file_FWdsCl
-Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Chiamata da `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php`.
-Perché: [ADR](../adr/deleted-account-blocked-in-user-provider.md).
-
-## Input
-
-- `BaseUser $user`: l'utente a cui togliere ogni accesso già concesso.
-
-## Output
-
-- `int`: numero di token di accesso Passport revocati (quelli ancora attivi prima della chiamata).
-=======
 Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`. Perché esiste: [ADR 0004](../adr/0004-deleted-accounts-are-filtered-by-auth-provider.md).
 Sorgente: `app/Actions/Auth/RevokeUserAccessAction.php`. Unico chiamante nel repo: `Modules/Gdpr/app/Actions/Account/DeleteAccountAction.php:85`, dentro la
 transazione di cancellazione dell'account. Chiude gli accessi già concessi: token Passport, refresh token, cookie «ricordami».
@@ -41,35 +22,11 @@ transazione di cancellazione dell'account. Chiude gli accessi già concessi: tok
 ## Output
 
 - `int`: numero di **access token** revocati ora (i refresh token non sono contati).
->>>>>>> .merge_file_YAAtXr
 
 ## Invarianti
 
 | ID | Regola | Group Pest |
 |---|---|---|
-<<<<<<< .merge_file_FWdsCl
-| USER-REVOKE-INV-1 | Revoca tutti i token di accesso non revocati dell'utente, e solo i suoi. | — |
-| USER-REVOKE-INV-2 | Revoca i refresh token di **tutti** i token dell'utente, anche di quelli già revocati. | — |
-| USER-REVOKE-INV-3 | Il remember token si ruota (nuova stringa casuale), mai si azzera; se era vuoto l'utente non si salva. | — |
-
-Provate da `tests/Feature/Auth/DeletedAccountAccessTest.php` (`revoking access ...`), che richiede un database di test
-migrato: il group si aggiunge quando quei casi girano verdi.
-
-## Effetti collaterali
-
-- `UPDATE oauth_refresh_tokens SET revoked = 1`, `UPDATE oauth_access_tokens SET revoked = 1` (connessione dei modelli User).
-- Eventuale `save()` dell'utente con il nuovo `remember_token`.
-
-## Errori
-
-- Nessuna gestione: un errore del database si propaga al chiamante (che lavora in transazione).
-
-## Non fa
-
-- Non valorizza `deleted_at` e non blocca il login: lo fa il provider di `BuildActiveUserProviderAction`.
-- Non distrugge le sessioni web aperte: cadono alla richiesta successiva perché il provider non trova più l'utente.
-- Non cancella righe: i token restano come registro.
-=======
 | USER-REVOKE-INV-1 | Tutti gli access token non revocati dell'utente passano a `revoked = true`, i suoi refresh token pure, e i token di altri utenti restano intatti; il ritorno è il numero di access token revocati (righe 34-51). | `USER-REVOKE-INV-1` |
 | USER-REVOKE-INV-2 | Se l'utente ha un remember token, questo è **ruotato** (nuova stringa casuale di 60 caratteri, `save()`), non azzerato: il vecchio cookie «ricordami» non vale più (righe 55-58). | `USER-REVOKE-INV-2` |
 | USER-REVOKE-INV-3 | Un utente senza remember token (stringa vuota) non viene salvato né modificato (riga 55). | `USER-REVOKE-INV-3` |
@@ -103,4 +60,7 @@ Nessuna transazione propria (la apre il chiamante), nessuna coda, nessuna email,
 
 - Limite noto: il tipo del parametro è la classe interna `BaseUser`, non `UserContract`. Un modello utente di progetto che non estende `BaseUser` non può usarla.
 - Esiste [RevokeAllUserTokensAction](revoke-all-user-tokens-action.md) (solo access token, senza refresh né remember token): non è un sostituto di questa.
->>>>>>> .merge_file_YAAtXr
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Auth/RevokeUserAccessAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
