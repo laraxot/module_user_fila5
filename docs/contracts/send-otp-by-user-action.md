@@ -1,30 +1,16 @@
 ---
 title: "Contratto — SendOtpByUserAction"
 type: contract
-<<<<<<< .merge_file_JWEShM
-action: "Modules\User\Actions\Otp\SendOtpByUserAction"
-tags: [contract, action, otp, mail]
-created: 2026-11-24
-updated: 2026-11-24
-=======
 action: "Modules\\User\\Actions\\Otp\\SendOtpByUserAction"
 module: User
 status: accepted
 created: 2026-11-26
 updated: 2026-11-26
 tags: [contract, action, otp, password, email, credenziali]
->>>>>>> .merge_file_sg2riZ
 ---
 
 # SendOtpByUserAction
 
-<<<<<<< .merge_file_JWEShM
-Sorgente: `app/Actions/Otp/SendOtpByUserAction.php`.
-
-## Input
-
-- `UserContract $user`: destinatario; dipendenze iniettate `PasswordData` (scadenza), `Str`, `Otp\Hasher`.
-=======
 Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`. Sorgente: `app/Actions/Otp/SendOtpByUserAction.php`.
 Unico chiamante: l'azione di tabella Filament `app/Filament/Resources/UserResource/Actions/SendOtpAction.php:24` (richiede conferma nel modale).
 **Sostituisce la password dell'utente**: è un'operazione sulle credenziali, da usare solo dietro l'autorizzazione della risorsa Filament.
@@ -33,7 +19,6 @@ Unico chiamante: l'azione di tabella Filament `app/Filament/Resources/UserResour
 
 - `Modules\Xot\Contracts\UserContract $user`: l'utente che riceve la password temporanea.
 - Dipendenze del costruttore: `PasswordData` (`otp_expiration_minutes`, default 5), `Str`, `Modules\User\Actions\Otp\Hasher`.
->>>>>>> .merge_file_sg2riZ
 
 ## Output
 
@@ -43,29 +28,6 @@ Unico chiamante: l'azione di tabella Filament `app/Filament/Resources/UserResour
 
 | ID | Regola | Group Pest |
 |---|---|---|
-<<<<<<< .merge_file_JWEShM
-| USER-OTP-SEND-INV-1 | La password temporanea (12 caratteri casuali) si salva solo come hash; in chiaro esiste solo nella notifica. | — |
-| USER-OTP-SEND-INV-2 | `is_otp = true` e `password_expires_at = now + PasswordData::otp_expiration_minutes`. | — |
-| USER-OTP-SEND-INV-3 | La notifica `Notifications\Auth\Otp` parte on-demand verso `$user->email`. | — |
-
-Provate da `tests/Unit/Actions/Otp/SendOtpByUserActionTest.php`, che richiede un database di test migrato: il group si
-aggiunge quando il test gira verde.
-
-## Effetti collaterali
-
-- `update()` dell'utente: **sostituisce la password** corrente con l'OTP.
-- Notifica mail (`Notification::route('mail', ...)`), in coda o sincrona secondo la notifica.
-- Notifica Filament di successo nella sessione corrente.
-
-## Errori
-
-- Errori del database o del mailer si propagano; nessun rollback: se la mail fallisce, la password è già cambiata.
-
-## Non fa
-
-- Non verifica l'OTP (`VerifyOtpHashAction`) né forza il cambio password al login successivo (lo fa chi legge `is_otp`).
-- Non limita la frequenza degli invii: chi la espone in una pagina deve frenarla.
-=======
 | USER-OTP-SEND-INV-1 | Dopo l'esecuzione `users.password` è l'**hash** della password temporanea (12 caratteri casuali), `is_otp` è `true` e `password_expires_at` è adesso + `otp_expiration_minutes` (righe 55-83). | `USER-OTP-SEND-INV-1` |
 | USER-OTP-SEND-INV-2 | La password temporanea in chiaro non viene salvata: sta solo nella notifica `Otp`, mandata via route mail on-demand all'indirizzo `$user->email` (righe 92-95). | `USER-OTP-SEND-INV-2` |
 | USER-OTP-SEND-INV-3 | L'ordine è: aggiornamento dell'utente, poi la mail, poi la notifica Filament di successo; se l'`update` fallisce non parte nessuna mail (righe 44-46). | — (non dimostrato) |
@@ -98,4 +60,7 @@ In quest'ordine:
 
 - Limite noto: nessuna transazione tra `UPDATE` e invio mail (vedi Errori).
 - Limite noto: con email segnaposto `@noemail.local` (utenti SPID/CIE, [UpsertUserFromDigitalIdentityAction](upsert-user-from-digital-identity-action.md)) la password viene sostituita e la mail non arriva a nessuno.
->>>>>>> .merge_file_sg2riZ
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Otp/SendOtpByUserAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
