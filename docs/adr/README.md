@@ -1,37 +1,16 @@
 ---
 title: "ADR — modulo User"
 type: index
-<<<<<<< .merge_file_fCxg3S
-tags: [adr, decisioni, user, autenticazione]
-created: 2026-11-18
-updated: 2026-11-24
-=======
 module: User
 tags: [adr, decisioni, user, autenticazione]
 created: 2026-11-18
 updated: 2026-11-26
 owner: User
 qmd: "User ADR architecture decision record MADR formato decisioni identità ruoli conferma copertura"
->>>>>>> .merge_file_f5aNC9
 ---
 
 # ADR del modulo User
 
-<<<<<<< .merge_file_fCxg3S
-Il **perché** delle scelte di autenticazione e identità: come si riconosce un utente che entra con SPID/CIE, dove si
-blocca un account cancellato, come si frenano i moduli aperti agli anonimi, perché l'audit degli accessi non può
-rompere il login.
-
-Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o il provider utenti, e prima di
-"semplificare" un controllo che sembra ridondante. Formato e regole: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
-
-## Decisioni
-
-- [L'utente SPID/CIE si riconosce dal codice fiscale](digital-identity-upsert-by-fiscal-code.md) — CF prima, email solo se verificata, segnaposto `@noemail.local`.
-- [L'account cancellato si blocca nel provider utenti](deleted-account-blocked-in-user-provider.md) — filtro `deleted_at` nel provider, niente `SoftDeletes`, token revocati.
-- [Freno per IP ed email prima di validare](auth-submission-throttle-before-validation.md) — registrazione e recupero password contano ogni invio, chiavi hashate.
-- [Il registro degli accessi non rompe mai il login](authentication-log-never-breaks-login.md) — connessione `user`, tabella assente = warning.
-=======
 Il **perché** delle scelte di autenticazione e identità: come si riconosce un utente che entra con SPID/CIE, dove si blocca un account cancellato, come si frenano i moduli aperti agli anonimi, perché l'audit degli accessi non può rompere il login, chi possiede la pagina di login del front office e chi possiede identità, ruoli e team.
 
 Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o il provider utenti, e prima di «semplificare» un controllo che sembra ridondante. Cosa promettono le singole Action: [contratti](../contracts/README.md).
@@ -85,15 +64,27 @@ Se il codice di oggi contraddice l'ADR si aggiunge `## Stato attuale` con ciò c
 
 Le decisioni precedenti in formato libero sono state eliminate come file stale
 (`.deprecated.md.old`) nella bonifica docs del 2026-11-26; la storia resta in git.
->>>>>>> .merge_file_f5aNC9
 
 ## Riferimenti
 
-<<<<<<< .merge_file_fCxg3S
-- [contracts-and-lang-backup-archival](../wiki/decisions/contracts-and-lang-backup-archival.md)
-- [archiviazione orfani (ponytail audit)](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)
-=======
 - Standard ADR condiviso: [Xot ADR](../../../Xot/docs/adr/README.md).
 - Policy trasversale su dati sacri e test isolati: [0013-dati-sacri-migrazioni-e-test](../../../Xot/docs/adr/0013-dati-sacri-migrazioni-e-test.md).
 - Stato di ciascun ADR: [index.md](index.md).
->>>>>>> .merge_file_f5aNC9
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_user_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [Freno per IP ed email prima di validare](./auth-submission-throttle-before-validation.md)
+- [Il registro degli accessi non rompe mai il login](./authentication-log-never-breaks-login.md)
+- [L'account cancellato si blocca nel provider utenti](./deleted-account-blocked-in-user-provider.md)
+- [L'utente SPID/CIE si riconosce dal codice fiscale](./digital-identity-upsert-by-fiscal-code.md)
