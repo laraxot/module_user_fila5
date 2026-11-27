@@ -8,13 +8,13 @@ qmd: "session-management gestione delle sessioni"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -90,12 +90,17 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Indice del Modulo Utente](./README.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
-- [Gestione del Profilo](./profile-management-2.md)
-- [Best Practices per il Routing](./routing-best-practices-2.md)
+- [Gestione del Profilo](./profile-management.md)
+- [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
+<<<<<<< .merge_file_rGgdrv
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 - [Indice del Modulo Utente](./README.md)
+=======
+- [Tema One Documentation](../../themes/one/docs/README.md) 
+- [Indice del Modulo Utente](./index.md)
+>>>>>>> .merge_file_OPvJiW
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management.md)
@@ -103,7 +108,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+<<<<<<< .merge_file_rGgdrv
 - [Indice del Modulo Utente](./README.md)
+=======
+- [Indice del Modulo Utente](./index.md)
+>>>>>>> .merge_file_OPvJiW
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth_pages_implementation.md)
 - [Gestione del Profilo](./profile_management.md)

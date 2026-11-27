@@ -8,13 +8,13 @@ qmd: "profile-management profile management in laravel modules"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -87,14 +87,24 @@ This document outlines the best practices for managing user profiles within a La
 - [User Module Index](./README.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
+<<<<<<< .merge_file_GLzszX
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
 - [User Module Index](./README.md)
+=======
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
+- [User Module Index](./index.md)
+>>>>>>> .merge_file_buyDSl
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
+<<<<<<< .merge_file_GLzszX
 - [User Module Index](./README.md)
+=======
+- [User Module Index](./index.md)
+>>>>>>> .merge_file_buyDSl
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)

@@ -11,6 +11,7 @@ qmd: "ECC audit User security-review clean-code laravel-verification verificatio
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_ixPCnu
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -23,6 +24,8 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `tdd-workflow`: regressione sui finding P0
 - [ ] `documentation-sync`: story + indici + qmd
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+=======
+>>>>>>> .merge_file_HPEFpd
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -43,6 +46,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_ixPCnu
 | app PHP | 713 |
 | test | 233 |
 | resources | 26 |
@@ -67,13 +71,15 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
+=======
+>>>>>>> .merge_file_HPEFpd
 | PHP `app/` | 713 |
 | Test PHP | 233 |
 | Models | 123 |
 | Policy | 39 |
-| Resource | 37 |
+| Resource | 37 (35 file `*Resource.php` ricontati il 2026-11-19) |
 | Widget | 31 |
-| Actions | 90 |
+| Actions | 90 (di cui 83 in `app/Actions`, il resto in `app/Filament/**/Actions`) |
 | Services | 0 |
 | Migration | 83 |
 | Lang IT | 264 |
@@ -92,7 +98,8 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 - baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
 - `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
 - nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
-- comportamento, schermate o numeri inventati.
+- comportamento, schermate o numeri inventati;
+- docs con date nel nome file.
 
 ## Riferimenti
 

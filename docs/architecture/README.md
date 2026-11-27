@@ -396,7 +396,7 @@ php artisan vendor:publish --tag=user-assets
 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "User Module - Architecture Documentation"

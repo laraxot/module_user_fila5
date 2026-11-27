@@ -8,13 +8,13 @@ qmd: "traits-hasteams-analisi-corretta-2 analisi corretta del trait hasteams - f
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -547,6 +547,6 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
 - [Modules/User/docs/traits.md](traits.md)  
-- [docs/phpstan-fixes-8.md](phpstan-fixes-8.md)
+- [docs/phpstan-fixes-8.md](phpstan-fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 

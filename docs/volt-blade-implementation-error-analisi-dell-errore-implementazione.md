@@ -16,7 +16,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+<<<<<<< .merge_file_zgLdy1
 status: draft
+=======
+>>>>>>> .merge_file_L1pYDU
 ---
 
 # Analisi dell'Errore di Implementazione Volt/Blade
@@ -28,7 +31,11 @@ status: draft
 
 ## Identificazione dell'Errore
 
+<<<<<<< .merge_file_zgLdy1
 Durante l'analisi del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+=======
+Durante l'analisi del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php`, è stato commesso un errore fondamentale di interpretazione. Il file è stato erroneamente analizzato come se utilizzasse la direttiva `@volt`, mentre in realtà utilizza correttamente la sintassi PHP standard con `<?php` all'inizio del file.
+>>>>>>> .merge_file_L1pYDU
 
 ### File Attuale (Corretto)
 

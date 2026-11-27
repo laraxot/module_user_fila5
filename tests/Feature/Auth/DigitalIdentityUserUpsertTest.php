@@ -90,8 +90,8 @@ it('rejects a missing or malformed fiscal code', function (mixed $fiscalCode): v
     'missing' => [null],
     'too short' => ['ABC'],
     'symbols' => ['RSSMRA80A01H50;U'],
-])->throws(InvalidArgumentException::class);
+])->throws(InvalidArgumentException::class)->group('USER-SPID-UPSERT-INV-2');
 
 it('only accepts spid and cie as identity methods', function (): void {
     app(UpsertUserFromDigitalIdentityAction::class)->execute('password', digitalIdentityAttributes(), emailVerified: true);
-})->throws(InvalidArgumentException::class);
+})->throws(InvalidArgumentException::class)->group('USER-SPID-UPSERT-INV-1');

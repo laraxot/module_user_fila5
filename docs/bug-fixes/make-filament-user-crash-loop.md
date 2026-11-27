@@ -9,8 +9,8 @@ issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./parse-error-orphan-methods-.md"
-  - "./parse-error-orphan-methods-1-1.md"
-  - "./parse-error-orphan-methods-1.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
   - "./parse-error-orphan-methods-2.md"
   - "./parse-error-orphan-methods-3.md"
   - "./parse-error-orphan-methods.md"
@@ -292,7 +292,7 @@ class CreateTenantUserCommand extends Command
 
 ### Documentazione Root Progetto
 
-- [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
+- [../../../../docs/modules/user/README.md](../../../../docs/modules/user/README.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
 
 ## 🎓 Lezioni Apprese

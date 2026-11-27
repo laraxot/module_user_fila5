@@ -8,13 +8,13 @@ qmd: "auth-pages-implementation-2 implementazione corretta delle pagine auth"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -24,10 +24,15 @@ related:
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_2n9Rdq
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
+=======
+- [Convenzioni Path](./path-conventions-user.md)
+- [Volt Errors](./volt-errors.md)
+>>>>>>> .merge_file_BAqu3A
 - [Volt Folio Logout](./volt-folio-logout-2.md)
-- [Volt Logout Action](./volt-logout-action-2.md)
+- [Volt Logout Action](./volt-logout-action.md)
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)

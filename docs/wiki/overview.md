@@ -5,7 +5,7 @@ type: overview
 created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
 related:
-  - "./agents.md"
+  - "./AGENTS.md"
   - "./architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"

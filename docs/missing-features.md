@@ -8,13 +8,13 @@ qmd: "missing-features analisi funzionalità mancanti - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
 ---
 
@@ -175,8 +175,13 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
+<<<<<<< .merge_file_Jz90yz
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
+=======
+- [Modulo ExternalProject](../<nome progetto>/docs/README.md)
+- [Modulo Limesurvey](../limesurvey/docs/README.md)
+>>>>>>> .merge_file_jRNQRB
 - [User README](./README.md)
 
 ---

@@ -476,7 +476,7 @@ class ApiRateLimitingMiddleware
 
 ---
 
-<!-- Merged from BUSINESS_LOGIC_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from business_logic_analysis.md, which collided with this file on case-insensitive filesystems. -->
 
 # User Module - Business Logic Analysis
 

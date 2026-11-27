@@ -16,7 +16,10 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
+<<<<<<< .merge_file_RRt184
 status: draft
+=======
+>>>>>>> .merge_file_0F3Tza
 ---
 
 # Implementazione della Pagina di Logout nel Tema One
@@ -27,17 +30,28 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
+<<<<<<< .merge_file_RRt184
 /var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> .merge_file_0F3Tza
 ```
 
 ### 2. Implementazione Corretta
 ```blade
 @php
     use Illuminate\Support\Facades\Auth;
+<<<<<<< .merge_file_RRt184
 
     // Esegui il logout
     Auth::logout();
 
+=======
+    
+    // Esegui il logout
+    Auth::logout();
+    
+>>>>>>> .merge_file_0F3Tza
     // Invalida e rigenera la sessione
     session()->invalidate();
     session()->regenerateToken();
@@ -60,7 +74,11 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
             </div>
 
             <div class="mt-8">
+<<<<<<< .merge_file_RRt184
                 <a href="{{ route('home') }}"
+=======
+                <a href="{{ route('home') }}" 
+>>>>>>> .merge_file_0F3Tza
                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     {{ __('Torna alla Home') }}
                 </a>
@@ -120,6 +138,12 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
+<<<<<<< .merge_file_RRt184
 - [Best Practices Folio](./routing-best-practices-architettura-volt-folio-filament.md)
 - [Gestione Sessione](./session-management-gestione-sessioni.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+- [Best Practices Folio](./routing-best-practices.md)
+- [Gestione Sessione](./session-management.md)
+- [Tema One Documentation](../../themes/one/docs/README.md) 
+>>>>>>> .merge_file_0F3Tza

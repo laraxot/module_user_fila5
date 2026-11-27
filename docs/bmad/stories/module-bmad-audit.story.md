@@ -4,6 +4,7 @@ type: story
 status: review
 updated: 2026-11-16
 module: User
+bmad: true
 qmd: "story BMAD audit modulo User inventario gate finding P0 P1"
 ---
 
@@ -22,7 +23,12 @@ Rendere verificabile lo stato di User: chi è chi e cosa può fare: utenti, ruol
 - [ ] Pest modulo eseguito su DB `*_test` raggiungibile (oggi: skip documentato).
 - [ ] Finding P0-U1, P0-U2 chiusi con regressione Pest.
 - [x] Finding P1 «Cms phantom imports User FO pages» chiuso (2026-11-16): niente `Modules\Cms` nelle Folio pages; rimossa `pages/pages/`; Pest `NoCmsPhantomFolioImportsTest`. Vedi [decision-log](../decision-log.md).
-- [x] Finding P1 «Cms phantom imports User FO pages» chiuso (2026-11-16): niente `Modules\Cms` nelle Folio pages; rimossa `pages/pages/`; Pest `NoCmsPhantomFolioImportsTest`. Vedi [decision-log](../decision-log.md).
+
+## Riferimenti
+
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/user-ecc-audit.md)
 
 ## Story figlie (da creare, vedi [epics](../epics.md))
 
@@ -35,6 +41,7 @@ Rendere verificabile lo stato di User: chi è chi e cosa può fare: utenti, ruol
 ## Esito (2026-11-16)
 
 Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano aperti (gate DB test).
+<<<<<<< .merge_file_1ketNX
 
 
 ---
@@ -60,3 +67,5 @@ Come manutentore del modulo User, voglio una baseline BMAD verificabile, così d
 - [ ] Decomposizione epic in story più piccole.
 - [ ] Quality gate e second-brain write-back.
 
+=======
+>>>>>>> .merge_file_CCUMLH
