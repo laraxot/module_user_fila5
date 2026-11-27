@@ -184,7 +184,7 @@ Per le bozze ereditate, gli ID senza group sono elencati nella tabella `Invarian
 
 ## Altri file della cartella
 
-- [INDEX](../../archive/docs-legacy/contracts/INDEX.md): elenco alfabetico dei file di contratto. [index](index.md): registro dei contratti sensibili con i comandi per i group.
+- [INDEX](INDEX.md): inventario machine-readable di tutti i contratti. [index](index.md): registro operativo di tutti i contratti con invarianti e comandi per i group. L'elenco storico resta in [../../archive/docs-legacy/contracts/INDEX.md](../../archive/docs-legacy/contracts/INDEX.md).
 - `hasteamsandusercontract.md` e `teamcontract.md` (con le copie `.bak`): appunti sulle interfacce `HasTeamsAndUserContract` e `TeamContract`, `type: concept` e senza invarianti: non sono contratti di Action e l'audit li segnala. Proposta: spostarli in `docs/models/` (non spostati in questo passaggio).
 
 ## Harness minimo: ownership, evidenza e recupero (2026-11-27)

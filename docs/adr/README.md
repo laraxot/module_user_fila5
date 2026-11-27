@@ -19,7 +19,7 @@ Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o
 
 Un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Non è un diario né una spiegazione retroattiva. Una modifica sostanziale crea un nuovo ADR e segna il vecchio `superseded` (con `superseded_by`).
 Il nome del file è `NNNN-argomento-in-kebab-case.md`, senza date (la data sta nella frontmatter): lo impone `Modules/Xot/tests/Unit/Docs/AdrFilenamesAreNumberedTest.php`. Intestazioni in italiano, imposte da `PackagesHaveContractsAndAdrTest.php`.
-Regola canonica: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md); template: [0000-template](0000-template.md).
+Regola canonica: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md); il formato e' descritto nella sezione «Formato» qui sotto (il modulo non ha un `0000-template.md` locale).
 
 ## Formato
 
@@ -79,12 +79,3 @@ Questo indice appartiene a **module_user_fila5**: ogni decisione su codice, domi
 - **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
 - **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
 - **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
-
-## Documenti del package da riconciliare nell'indice
-
-I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
-
-- [Freno per IP ed email prima di validare](./auth-submission-throttle-before-validation.md)
-- [Il registro degli accessi non rompe mai il login](./authentication-log-never-breaks-login.md)
-- [L'account cancellato si blocca nel provider utenti](./deleted-account-blocked-in-user-provider.md)
-- [L'utente SPID/CIE si riconosce dal codice fiscale](./digital-identity-upsert-by-fiscal-code.md)
