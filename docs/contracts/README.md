@@ -1,43 +1,16 @@
 ---
 title: "Contratti — modulo User"
 type: index
-<<<<<<< .merge_file_yR2oHc
-tags: [contracts, actions, interfaces, user]
-created: 2026-11-18
-updated: 2026-11-24
-=======
 module: User
 tags: [contracts, actions, user, autenticazione]
 created: 2026-11-18
 updated: 2026-11-26
 owner: User
 qmd: "User contract comportamentali autenticazione ruoli permessi SPID CIE invarianti pest group copertura backlog"
->>>>>>> .merge_file_gy4515
 ---
 
 # Contratti del modulo User
 
-<<<<<<< .merge_file_yR2oHc
-Cosa promettono le Action di User che scrivono utenti, token, log o mandano email, e le interfacce di `app/Contracts`
-documentate qui. Ogni invariante ha un ID stabile; il group Pest, se c'è, la prova
-(`vendor/bin/pest Modules/User/tests --group=<ID>`), «—» è debito dichiarato.
-
-Leggili prima di chiamare, modificare o imitare un'Action di autenticazione. Formato:
-`Modules/Xot/docs/rules/action-behavioral-contract.md`.
-
-## Contratti di Action
-
-- [UpsertUserFromDigitalIdentityAction](upsert-user-from-digital-identity-action.md) — trova o crea l'utente SPID/CIE per codice fiscale.
-- [RevokeUserAccessAction](revoke-user-access-action.md) — revoca token Passport, refresh token e cookie "ricordami".
-- [ConsumeAuthSubmissionSlotAction](consume-auth-submission-slot-action.md) — conta un invio di registrazione/recupero per IP ed email.
-- [SendOtpByUserAction](send-otp-by-user-action.md) — sostituisce la password con un OTP hashato e lo manda per email.
-- [RecordAuthenticationLogAction](record-authentication-log-action.md) — scrive il registro degli accessi senza mai rompere il login.
-
-## Interfacce (`app/Contracts`)
-
-- [HasTeamsAndUserContract](hasteamsandusercontract.md) — unione di `HasTeamsContract` e `UserContract`, con i metodi di ruolo nel team.
-- [TeamContract](teamcontract.md) — cosa deve offrire un modello team (membri, permessi, inviti).
-=======
 Un contratto descrive cosa **promette** un'Action (input, output, invarianti con ID stabile, effetti collaterali, errori, cosa non fa) e distingue il
 **promesso** dal **dimostrato**: la colonna `Group Pest` contiene l'ID solo se esiste un test con `->group('<ID>')`
 (`cd laravel && vendor/bin/pest --group=<ID>`), altrimenti «— (non dimostrato)». Regola e formato:
@@ -213,4 +186,18 @@ Per le bozze ereditate, gli ID senza group sono elencati nella tabella `Invarian
 
 - [INDEX](../../archive/docs-legacy/contracts/INDEX.md): elenco alfabetico dei file di contratto. [index](index.md): registro dei contratti sensibili con i comandi per i group.
 - `hasteamsandusercontract.md` e `teamcontract.md` (con le copie `.bak`): appunti sulle interfacce `HasTeamsAndUserContract` e `TeamContract`, `type: concept` e senza invarianti: non sono contratti di Action e l'audit li segnala. Proposta: spostarli in `docs/models/` (non spostati in questo passaggio).
->>>>>>> .merge_file_gy4515
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_user_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [HasTeamsAndUserContract](./hasteamsandusercontract.md)
+- [TeamContract](./teamcontract.md)
