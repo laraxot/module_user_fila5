@@ -6,12 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-<<<<<<< .merge_file_fvVHiL
-return new class extends XotBaseMigration {
-=======
 return new class extends XotBaseMigration
 {
->>>>>>> .merge_file_BpHe86
     /**
      * Run the migrations.
      */
@@ -44,11 +40,7 @@ return new class extends XotBaseMigration
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
-<<<<<<< .merge_file_fvVHiL
-            if ('varchar' === $this->getColumnType('token')) {
-=======
             if ($this->getColumnType('token') === 'varchar') {
->>>>>>> .merge_file_BpHe86
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

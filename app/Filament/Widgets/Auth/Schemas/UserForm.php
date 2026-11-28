@@ -6,10 +6,7 @@ namespace Modules\User\Filament\Widgets\Auth\Schemas;
 
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
-<<<<<<< .merge_file_2SmTYH
-=======
 use Filament\Schemas\Components\Component;
->>>>>>> .merge_file_zNtKws
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
@@ -37,29 +34,17 @@ class UserForm extends XotBaseResourceForm
      * (getLoginFormSchema, getRegisterFormSchema, …). Questo metodo soddisfa
      * l'astratto e resta deliberatamente vuoto per non mischiare i flussi.
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public function getFormSchema(): array
     {
         return [];
     }
 
-<<<<<<< .merge_file_2SmTYH
-
-    /**
-     * FO auth login — SSoT campi per `LoginWidget`.
-     *
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
     /**
      * FO auth login — SSoT campi per `LoginWidget`.
      *
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getLoginFormSchema(): array
     {
@@ -89,11 +74,7 @@ class UserForm extends XotBaseResourceForm
      *  l'hash pronto, non ri-applica Hash::make. R2: password + confirm stacked
      *  verticali (no Grid(2)).
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getRegisterFormSchema(): array
     {
@@ -142,11 +123,7 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('new-password')
                 ->confirmed()
                 ->dehydrateStateUsing(static function (?string $state): ?string {
-<<<<<<< .merge_file_2SmTYH
-                    if (null === $state || '' === $state) {
-=======
                     if ($state === null || $state === '') {
->>>>>>> .merge_file_zNtKws
                         return null;
                     }
 
@@ -170,11 +147,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth forgot-password — SSoT campi per `ForgotPasswordWidget`.
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getForgotPasswordFormSchema(): array
     {
@@ -192,11 +165,7 @@ class UserForm extends XotBaseResourceForm
     /**
      * FO auth password-reset (send link) — SSoT campi per `PasswordResetWidget`.
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getPasswordResetFormSchema(): array
     {
@@ -217,11 +186,7 @@ class UserForm extends XotBaseResourceForm
      * R1: `password` usa `dehydrateStateUsing(Hash::make)`. R2: password +
      *  confirm stacked.
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getResetPasswordFormSchema(): array
     {
@@ -238,11 +203,7 @@ class UserForm extends XotBaseResourceForm
                 ->same('password_confirmation')
                 ->autocomplete('new-password')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
-<<<<<<< .merge_file_2SmTYH
-                    if (null === $state || '' === $state) {
-=======
                     if ($state === null || $state === '') {
->>>>>>> .merge_file_zNtKws
                         return null;
                     }
 
@@ -263,11 +224,7 @@ class UserForm extends XotBaseResourceForm
      *
      * R1 + R2.
      *
-<<<<<<< .merge_file_2SmTYH
-     * @return array<string, \Filament\Schemas\Components\Component>
-=======
      * @return array<string, Component>
->>>>>>> .merge_file_zNtKws
      */
     public static function getPasswordResetConfirmFormSchema(): array
     {
@@ -286,11 +243,7 @@ class UserForm extends XotBaseResourceForm
                 ->minLength(8)
                 ->suffixIcon('heroicon-o-key')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
-<<<<<<< .merge_file_2SmTYH
-                    if (null === $state || '' === $state) {
-=======
                     if ($state === null || $state === '') {
->>>>>>> .merge_file_zNtKws
                         return null;
                     }
 

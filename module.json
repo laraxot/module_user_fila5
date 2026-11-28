@@ -18,10 +18,6 @@
         "Modules\\User\\Providers\\PassportServiceProvider",
         "Modules\\User\\Providers\\SocialiteServiceProvider"
     ],
-<<<<<<< .merge_file_Wn3Vz2
-    "aliases": {},
-    "files": [],
-=======
     "migration": {
         "seeds": [
             "Modules\\User\\Database\\Seeders\\RoleSeeder"
@@ -29,7 +25,6 @@
     },
     "files": [],
     "aliases": {},
->>>>>>> .merge_file_qjYgcS
     "requires": [
         "Xot",
         "UI"

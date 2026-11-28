@@ -218,11 +218,7 @@ foreach ($types as $key => $type) {
 
 ## Collegamenti
 - [ChangeTypeCommand.php](../app/Console/Commands/ChangeTypeCommand.php) - Il comando supremo di riferimento
-<<<<<<< .merge_file_VBAUhX
 - [README.md](./README.md)
-=======
-- [README.md](README.md)
->>>>>>> .merge_file_xeFc4d
 - [.cursor/rules/console-commands-philosophy.mdc](../../../.cursor/rules/console-commands-philosophy.mdc)
 - [.windsurf/rules/console-commands-philosophy.mdc](../../../.windsurf/rules/console-commands-philosophy.mdc)
 

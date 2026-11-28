@@ -9,10 +9,6 @@ use Filament\Models\Contracts\HasAvatar;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
-<<<<<<< .merge_file_AVfQ8t
-=======
-use Modules\User\Tests\TestCase;
->>>>>>> .merge_file_Q9XuvO
 use Spatie\MediaLibrary\HasMedia;
 
 uses(TestCase::class);

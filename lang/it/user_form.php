@@ -49,15 +49,12 @@ return [
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
             'placeholder' => '',
         ],
-<<<<<<< .merge_file_EdWTPr
-=======
         'token' => [
             'label' => 'Token',
             'description' => 'Token di sicurezza',
             'helper_text' => 'Token usato per la verifica o il reset',
             'placeholder' => 'Incolla il token',
         ],
->>>>>>> .merge_file_pr2QKO
         'state' => [
             'description' => 'Stato corrente',
             'label' => 'Stato',
@@ -78,12 +75,6 @@ return [
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
-        ],
-        'token' => [
-            'description' => 'token',
-            'helper_text' => 'token',
-            'label' => 'Token',
-            'placeholder' => 'token',
         ],
     ],
     'actions' => [

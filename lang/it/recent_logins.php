@@ -20,11 +20,7 @@ return [
             'description' => '',
         ],
         'login_at' => [
-<<<<<<< .merge_file_41PhSG
-            'label' => 'Accesso il',
-=======
             'label' => 'Ora accesso',
->>>>>>> .merge_file_WocJ2d
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',

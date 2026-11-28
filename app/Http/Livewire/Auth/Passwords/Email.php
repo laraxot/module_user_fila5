@@ -29,11 +29,7 @@ class Email extends Component
         $broker = $this->broker();
         $response = $broker->sendResetLink(['email' => $this->email]);
 
-<<<<<<< .merge_file_6NllEE
-        if (Password::RESET_LINK_SENT === $response) {
-=======
         if ($response === Password::RESET_LINK_SENT) {
->>>>>>> .merge_file_KMzsiZ
             $this->emailSentMessage = trans('user::'.$response);
 
             return;

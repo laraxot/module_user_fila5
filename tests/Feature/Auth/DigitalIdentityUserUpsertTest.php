@@ -13,13 +13,8 @@ uses(TestCase::class);
 
 /*
  * PRD-02: accesso con SPID e CIE. I controller del tema Sixteen delegano a UpsertUserFromDigitalIdentityAction, che usa le
-<<<<<<< .merge_file_4NrKVi
- * colonne aggiunte da `2026_11_11_000001_add_digital_identity_columns_to_users_table` (prima l'accesso falliva con errore SQL).
- * colonne aggiunte dalla migrazione owner `2026_11_12_120000_create_users_table` (prima l'accesso falliva con errore SQL).
-=======
  * colonne dell'identita' digitale, definite nella migrazione owner `2026_11_12_120000_create_users_table` e in
  * `2026_11_11_000001_add_digital_identity_columns_to_users_table` (prima l'accesso falliva con errore SQL).
->>>>>>> .merge_file_GjRxjM
  */
 beforeEach(function (): void {
     config(['activitylog.enabled' => false]);

@@ -22,13 +22,8 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_PV4DzZ
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
->>>>>>> .merge_file_wcKiWM
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions.md)

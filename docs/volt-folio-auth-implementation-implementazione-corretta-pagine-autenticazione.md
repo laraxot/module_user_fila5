@@ -16,10 +16,7 @@ related:
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
-<<<<<<< .merge_file_zK151y
 status: draft
-=======
->>>>>>> .merge_file_VoiMkm
 ---
 
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
@@ -28,11 +25,7 @@ status: draft
 - [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-user.md)
 - [Volt Errors](./volt-errors.md)
-<<<<<<< .merge_file_zK151y
 - [Volt Folio Logout](./volt-folio-logout-panoramica.md)
-=======
-- [Volt Folio Logout](./volt-folio-logout-2.md)
->>>>>>> .merge_file_VoiMkm
 
 ## Introduzione
 
@@ -86,11 +79,7 @@ $logout = function () {
         request()->session()->invalidate();
         request()->session()->regenerateToken();
     }
-<<<<<<< .merge_file_zK151y
 
-=======
-    
->>>>>>> .merge_file_VoiMkm
     // Reindirizzamento localizzato
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale);
@@ -126,11 +115,7 @@ $logout = function () {
     <script>
         // Esegui il logout immediatamente
         window.livewire.dispatch('logout');
-<<<<<<< .merge_file_zK151y
 
-=======
-        
->>>>>>> .merge_file_VoiMkm
         // Reindirizza dopo 3 secondi
         setTimeout(() => {
             window.location.href = "{{ url('/' . app()->getLocale()) }}";
@@ -164,21 +149,13 @@ new class extends Component {
             request()->session()->regenerateToken();
         }
     }
-<<<<<<< .merge_file_zK151y
 
-=======
-    
->>>>>>> .merge_file_VoiMkm
     public function logout()
     {
         $locale = app()->getLocale();
         return redirect()->to('/' . $locale);
     }
-<<<<<<< .merge_file_zK151y
 
-=======
-    
->>>>>>> .merge_file_VoiMkm
     public function render()
     {
         return <<<'BLADE'
@@ -528,11 +505,7 @@ new class extends Component {
 3. **Struttura del Codice**
    - Separa la logica PHP dal template Blade
    - Usa l'approccio funzionale o la classe anonima in base alla complessità
-<<<<<<< .merge_file_zK151y
 - Segui le convenzioni di naming e struttura di <nome progetto>
-=======
-- Segui le convenzioni di naming e struttura di Quaeris
->>>>>>> .merge_file_VoiMkm
 
 4. **Sicurezza**
    - Invalida e rigenera sempre la sessione dopo il logout
@@ -576,11 +549,7 @@ new class extends Component {
 
 ## Conclusione
 
-<<<<<<< .merge_file_zK151y
 Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di <nome progetto>, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
-=======
-Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Quaeris, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
->>>>>>> .merge_file_VoiMkm
 
 ## Riferimenti
 

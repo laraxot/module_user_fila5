@@ -216,7 +216,6 @@ v8-compile-cache-*
 *:Zone.Identifier
 # graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 # module-root-hygiene (story module-root-hygiene)
-<<<<<<< .merge_file_VkgV8E
 /.github/skills/
 docs/graphify
 resources/lang
@@ -230,17 +229,13 @@ audit-coverage/
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
-<<<<<<< .merge_file_IjwLyQ
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 docs/legacy/
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_vfpg4M
-=======
 # screenshot di comparazione visiva (artefatti locali)
 # Regole portate dal remoto laraxot/dev (sync del 24/11), unite alla base senza perdere nulla
 # graphify lanciato su tests/ scrive tests/graphify-out/: output rigenerabile, mai committare
@@ -265,4 +260,3 @@ docs/**/backup/
 docs/backups/
 docs/**/backups/
 .docs-archive/
->>>>>>> .merge_file_AjTjEg

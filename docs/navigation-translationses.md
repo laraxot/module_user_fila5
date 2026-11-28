@@ -98,11 +98,7 @@ related:
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
-<<<<<<< .merge_file_UdvDdy
 - [Documentazione Modulo User](./README.md)
-=======
-- [Documentazione Modulo User](README.md)
->>>>>>> .merge_file_X89x9d
 
 ## Note Tecniche
 

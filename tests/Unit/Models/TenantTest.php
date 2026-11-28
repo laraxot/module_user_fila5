@@ -13,11 +13,7 @@ use Mockery\MockInterface;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 
-<<<<<<< .merge_file_rCBPJH
-use function Safe\json_encode;
-=======
 uses(TestCase::class);
->>>>>>> .merge_file_VyQzSg
 
 class TenantTest extends TestCase
 {

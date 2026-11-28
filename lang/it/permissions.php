@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_KrMfIx
-=======
     'actions' => [
         'create' => [
             'icon' => 'create',
@@ -30,7 +28,6 @@ return [
             'label' => 'Attach Role',
         ],
     ],
->>>>>>> .merge_file_ci6CIF
     'fields' => [
         'id' => [
             'label' => 'ID',
@@ -58,23 +55,6 @@ return [
         ],
         'role' => [
             'label' => 'role',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'icon' => 'create',
-        ],
-        'layout' => [
-            'icon' => 'layout',
-        ],
-        'delete' => [
-            'icon' => 'delete',
-        ],
-        'view' => [
-            'icon' => 'view',
-        ],
-        'edit' => [
-            'icon' => 'edit',
         ],
     ],
 ];

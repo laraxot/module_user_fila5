@@ -690,15 +690,11 @@ abstract class TestCase extends XotBaseTestCase
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
-<<<<<<< .merge_file_ud2pif
-            if (null === config('database.connections.'.$name)) {
-=======
             // Un nome non configurato fa lanciare `DatabaseManager::connection()`, e la
             // DatabaseTransactions lo invoca dentro `setUp()`: l'intero file di test muore
             // prima della prima asserzione. Un progetto che non monta un modulo e' uno
             // scenario legittimo, non un errore: la connessione mancante si salta.
             if (! \array_key_exists($name, $configured)) {
->>>>>>> .merge_file_EpJ5m7
                 continue;
             }
 

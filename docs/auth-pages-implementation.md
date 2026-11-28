@@ -24,13 +24,8 @@ related:
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_VyZEpC
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
-- [Volt Errors](./volt-errors.md)
->>>>>>> .merge_file_iBeex3
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action.md)
 
@@ -492,13 +487,8 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_VyZEpC
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
-- [Volt Errors](./volt-errors.md)
->>>>>>> .merge_file_iBeex3
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action.md)
 

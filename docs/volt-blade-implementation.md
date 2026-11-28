@@ -22,11 +22,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_RhK6fV
 - [Convenzioni Path](./path-conventions-2.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
->>>>>>> .merge_file_egEwoJ
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
@@ -313,11 +309,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_RhK6fV
 - [Convenzioni Path](./path-conventions-2.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
->>>>>>> .merge_file_egEwoJ
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 

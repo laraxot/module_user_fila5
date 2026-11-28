@@ -6,28 +6,16 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
-<<<<<<< .merge_file_FQbyIe
-            'placeholder' => 'name',
-            'helper_text' => 'name',
-            'description' => 'name',
-=======
             'placeholder' => 'Inserisci il nome',
             'helper_text' => 'Nome visualizzato del profilo',
             'description' => 'Nome',
->>>>>>> .merge_file_NjwRI4
         ],
         'user' => [
             'name' => [
                 'label' => 'Utente',
-<<<<<<< .merge_file_FQbyIe
-                'placeholder' => 'user.name',
-                'helper_text' => 'user.name',
-                'description' => 'user.name',
-=======
                 'placeholder' => 'Seleziona l\'utente',
                 'helper_text' => 'Utente collegato al profilo',
                 'description' => 'Nome utente',
->>>>>>> .merge_file_NjwRI4
             ],
         ],
         'email' => [

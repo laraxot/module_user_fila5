@@ -22,11 +22,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_AKnyry
 - [Convenzioni Path](./path-conventions-2.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
->>>>>>> .merge_file_Kenw07
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
 

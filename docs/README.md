@@ -4,28 +4,13 @@ type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-11-19
-<<<<<<< .merge_file_HdMrpH
-=======
 qmd: "documentazione completa indice overview funzionalità principali autenticazione autorizzazione modelli trait disponibili created updated hasteams hasroles hastenants"
->>>>>>> .merge_file_QGJKC4
 ---
 
 # Modulo User - Documentazione Completa
 
 ## Indice della documentazione
 
-<<<<<<< .merge_file_HdMrpH
-Questo README e' l'**unico indice** della cartella `docs/` del modulo (i vecchi `index.md`, `INDEX.md`,
-`00-index.md` generati automaticamente sono stati rimossi: elencavano file duplicati o non piu' esistenti).
-
-| Area | Dove |
-|------|------|
-| Story BMAD del modulo | [stories/](./stories/) · [bmad/stories/](./bmad/stories/) |
-| Audit qualita' corrente | [stories/audit-qualita.story.md](./stories/audit-qualita.story.md) |
-| Wiki (concetti, decisioni, troubleshooting) | [wiki/](./wiki/) |
-| Roadmap | [roadmap.md](./roadmap.md) |
-| Storico / documenti superati | [legacy/](./legacy/) |
-=======
 Questo README e' la porta d'ingresso della cartella `docs/` del modulo. La mappa
 curata a sei voci e' in [index.md](./index.md); l'archivio storico (ex `docs/bmad`,
 `docs/wiki`, `docs/stories` concluse, analisi e file stale) e' in
@@ -39,7 +24,7 @@ curata a sei voci e' in [index.md](./index.md); l'archivio storico (ex `docs/bma
 | Story attive | [stories/](./stories/) — le concluse sono in `archive/docs-legacy/stories/` |
 | Manuali utente | [manuals/README.md](./manuals/README.md) — [frontoffice](./manuals/manuale-utente-frontoffice.md), [admin](./manuals/manuale-admin.md), [super admin](./manuals/manuale-super-admin.md), [altre figure](./manuals/manuale-altre-figure.md), [riferimento](./manuals/manuale-utente.md) |
 | Storico / documenti superati | [archive/docs-legacy/](../archive/docs-legacy/) |
->>>>>>> .merge_file_QGJKC4
+
 
 Regole sui nomi: kebab-case, **nessuna data nel nome** di file o cartelle (la data va nel frontmatter `created:`/`updated:`).
 
@@ -104,21 +89,15 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 | Ruolo | Path |
 |-------|------|
 | Procedura / saturazione host | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
-<<<<<<< .merge_file_HdMrpH
 | Story zero errori User | [stories/phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md) |
-=======
-| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](../archive/docs-legacy/stories/0130-phpstan-zero-errors-user.story.md) |
->>>>>>> .merge_file_QGJKC4
+
 | Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
 | Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
 
 Memoria: `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1` (da `laravel/`). Non lanciare `analyse Modules` se host saturo.
-<<<<<<< .merge_file_HdMrpH
-=======
 ### PHPStan Memory Management
 Per evitare crash dei parallel workers su analisi massive, usare sempre:
 `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
->>>>>>> .merge_file_QGJKC4
 
 ### Profiles migration governance (workorder)
 
@@ -1269,13 +1248,7 @@ See [roadmap.md](./roadmap.md) for details.
 - [Laravel Authorization](https://laravel.com/docs/12.x/authorization)
 - [Spatie Permission](https://spatie.be/docs/laravel-permission)
 - [Laravel Sanctum](https://laravel.com/docs/12.x/sanctum)
-<<<<<<< .merge_file_HdMrpH
-<<<<<<< .merge_file_e9kYsT
 - [Filament Authentication](https://filamentphp.com/docs/5.x/users/overview)
-=======
-=======
-- [Filament Authentication](https://filamentphp.com/docs/5.x/users/overview)
->>>>>>> .merge_file_QGJKC4
 - [Filament Authentication](https://filamentphp.com/docs/4.x/panels/users)
 
 ---
@@ -2371,7 +2344,6 @@ See [roadmap.md](./roadmap.md) for details.
 - [Spatie Permission](https://spatie.be/docs/laravel-permission)
 - [Laravel Sanctum](https://laravel.com/docs/12.x/sanctum)
 - [Filament Authentication](https://filamentphp.com/docs/4.x/panels/users)
->>>>>>> .merge_file_Caiats
 
 ---
 

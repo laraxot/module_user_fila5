@@ -15,15 +15,10 @@ use Modules\Xot\Contracts\UserContract;
  * non c'e' un tenant Filament corrente: i pannelli operativi senza tenancy
  * (es. cameriere, cassa, cucina) vedono comunque solo il proprio tenant.
  *
-<<<<<<< .merge_file_xwPQqA
- * Per utenti con piu' tenant si prende il primo in ordine di appartenenza:
- * il caso d'uso target e' l'utente operativo legato a un solo tenant.
-=======
  * Il risultato e' memoizzato in Context (per richiesta, sicuro sotto Octane)
  * per non ripetere la query su `tenant_user` a ogni apply() dello scope.
  *
  * @deprecated Il duplicato canonico e' {@see \Modules\User\Infrastructure\Tenant\AuthenticatedTenantKey}.
->>>>>>> .merge_file_AeRHcr
  */
 final class AuthenticatedTenantKey
 {

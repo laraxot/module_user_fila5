@@ -22,13 +22,8 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_ABMvOU
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
->>>>>>> .merge_file_ve0HQ1
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -211,13 +206,8 @@ return [
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< .merge_file_ABMvOU
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
-=======
-- [Convenzioni Path](./path-conventions-user.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/translation_keys_best_practices.md)
->>>>>>> .merge_file_ve0HQ1
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

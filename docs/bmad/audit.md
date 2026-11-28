@@ -9,7 +9,6 @@ qmd: "audit BMAD User sintesi finding P0 P1 PHPStan Pest"
 
 # Audit BMAD — User
 
-<<<<<<< .merge_file_SYrERi
 SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
 
 ## Sintesi (2026-11-16)
@@ -31,8 +30,6 @@ SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md)
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-=======
->>>>>>> .merge_file_To6cft
 SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md) · scopo: [purpose.md](./purpose.md)
 
 **In una frase:** chi è chi e cosa può fare: utenti, ruoli, permessi, team, OAuth, accesso ai pannelli.
@@ -73,8 +70,4 @@ SSoT dettagliata: [audits/user-audit.md](./audits/user-audit.md) · scopo: [purp
 
 ## Seguito
 
-<<<<<<< .merge_file_SYrERi
 [epics.md](./epics.md) · [decision-log.md](./decision-log.md) · [story](./stories/module-bmad-audit.story.md) · [ECC](../ecc/user-ecc-audit.md)
-=======
-[epics.md](./epics.md) · [decision-log.md](./decision-log.md) · [story](./stories/module-bmad-audit.story.md) · [piano](./piano-miglioramento.md) · [ECC](../ecc/user-ecc-audit.md)
->>>>>>> .merge_file_To6cft

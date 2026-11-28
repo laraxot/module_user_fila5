@@ -78,11 +78,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 ## Collegamenti a Documentazione Correlata
 - [Indice del Modulo Utente](./README.md)
 
-<<<<<<< .merge_file_kJt7x3
-- [Indice del Modulo Utente](./README.md)
-=======
 - [Indice del Modulo Utente](./index.md)
->>>>>>> .merge_file_qv7iAp
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth_pages_implementation.md)
 - [Gestione del Profilo](./profile_management.md)

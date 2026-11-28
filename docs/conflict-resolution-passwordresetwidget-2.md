@@ -115,11 +115,7 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-<<<<<<< .merge_file_JTq4i2
 - [User Module Documentation](./README.md)
-=======
-- [User Module Documentation](README.md)
->>>>>>> .merge_file_vpNHqo
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)

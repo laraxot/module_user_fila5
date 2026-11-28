@@ -18,11 +18,8 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Handles the creation and dispatch of a One-Time Password (OTP) for secure user authentication.
  *
-<<<<<<< .merge_file_5ucmU7
-=======
  * @see docs/contracts/send-otp-by-user-action.md
  *
->>>>>>> .merge_file_gmFkl0
  * @contract docs/contracts/send-otp-by-user-action.md
  */
 class SendOtpByUserAction
